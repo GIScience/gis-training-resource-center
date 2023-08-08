@@ -1,0 +1,14 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: content/intro
+parts:
+  - caption: Allgemeines
+    chapters:
+      - file: content/chapter_1/geodatenbeschaffung.md
+      - file: content/chapter_1/qgis-installation.md
+      - file: content/chapter_1/geodatenformate.md
+  - caption: Vektor 1
+    chapters:
+      - file: content/chapter_2/vektorsignaturen.md
