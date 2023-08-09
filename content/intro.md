@@ -1,3 +1,5 @@
+
+![Logos](../fig/TRC_RC_Logos.svg)
 # Welcome to the GIS Learning Hub for Humanitarian Empowerment
 
 ![GIS Learning Hub](link_to_image)

@@ -3,6 +3,7 @@
 
 title: GIS Resource Training Center
 author: HeiGIT gGmbH
+copyright: "2023"
 logo: HeiGIT_Logo_compact.svg
 
 # Force re-execution of notebooks on each build.

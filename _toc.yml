@@ -4,11 +4,31 @@
 format: jb-book
 root: content/intro
 parts:
-  - caption: Allgemeines
+  - caption: Wiki
     chapters:
-      - file: content/chapter_1/geodatenbeschaffung.md
-      - file: content/chapter_1/qgis-installation.md
-      - file: content/chapter_1/geodatenformate.md
+      - file: content/Wiki/en_qgis_installation_wiki.md
+  - caption: Getting started with QGIS
+    chapters:
+      - file: content/Modul_1/en_qgis_installation.md
+        sections:
+          - file: content/Modul_1/en_qgis_installation_ex1.md
+      - file: content/Modul_1/en_qgis_concept.md      
+      - file: content/Modul_1/geodatenbeschaffung.md
+      - file: content/Modul_1/geodatenformate.md
   - caption: Vektor 1
     chapters:
-      - file: content/chapter_2/vektorsignaturen.md
+      - file: content/Modul_2/vektorsignaturen.md
+  - caption: Geodata
+    chapters:
+      - file: content/Modul_3/geodata.md
+  - caption: Trainers corner
+    chapters:
+      - file: content/Trainers_corner/en_how_to_training.md
+      - file: content/Trainers_corner/en_training_plans.md      
+  - caption: About
+    chapters:
+      - file: content/About/about_1.md
+  - caption: Glossary
+    chapters:
+      - file: content/Glossary/en_glossary_1.md
+
