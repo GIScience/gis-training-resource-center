@@ -11,6 +11,8 @@ The markdown files are built to a static webpage via `jupyter-book`.
 
 ## :tractor: Dev setup
 
+* clone the repo: `git clone https://github.com/GIScience/gis-training-resource-center`
+* `cd gis-training-resource-center`
 * set up a python environment, e.g. `python3 -m venv venv`
 * activate the environment: `source venv/bin/activate`
 * install dependencies: `pip install -r requirements.txt
