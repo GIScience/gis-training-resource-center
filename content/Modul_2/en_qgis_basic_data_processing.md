@@ -1,4 +1,10 @@
-# Vektorsignaturen
+# Basic Geodata  processing
+**Competences:**
+* Layer concept
+* Projections
+* Vector and raster data (basic concepts)
+* Vector file formats
+* Data sources
 Die kartographische Darstellung von Vektor-Layern im GIS ist ein weites und komplexes Themenfeld. Wir betrachten hier daher nur einige grundlegende Funktionen.  
 
 * [Single Symbol](qgis-Vektorsignaturen#single-symbol)

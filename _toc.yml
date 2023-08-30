@@ -6,21 +6,61 @@ root: content/intro
 parts:
   - caption: Wiki
     chapters:
-      - file: content/Wiki/en_qgis_installation_wiki.md
-  - caption: Getting started with QGIS
+      - file: content/Wiki/en_qgis_qgis_basics_wiki.md
+        sections:
+          - file: content/Wiki/en_qgis_installation_wiki.md
+          - file: content/Wiki/en_qgis_interface_wiki.md
+          - file: content/Wiki/en_qgis_basemaps_wiki.md
+          - file: content/Wiki/en_qgis_projections_wiki.md
+          - file: content/Wiki/en_qgis_plugins_wiki.md
+          - file: content/Wiki/en_qgis_data_sources_wiki.md
+      - file: content/Wiki/en_qgis_geodata_wiki.md
+        sections:
+          - file: content/Wiki/en_qgis_import_geodata_wiki.md
+          - file: content/Wiki/en_qgis_layer_concept_wiki.md
+          - file: content/Wiki/en_qgis_attribute_table_wiki.md
+          - file: content/Wiki/en_qgis_digitalization_wiki.md   
+      - file: content/Wiki/en_qgis_data_classification_wiki.md
+        sections:
+          - file: content/Wiki/en_qgis_single_symbol_wiki.md
+          - file: content/Wiki/en_qgis_categorized_wiki.md
+          - file: content/Wiki/en_qgis_graduated_wiki.md
+      - file: content/Wiki/en_qgis_geoprocessing_wiki.md
+      - file: content/Wiki/en_qgis_queries_wiki.md
+        sections:
+          - file: content/Wiki/en_qgis_spatial_queries_wiki.md
+          - file: content/Wiki/en_qgis_non_spatial_queries_wiki.md
+      - file: content/Wiki/en_qgis_table_functions_wiki.md
+      - file: content/Wiki/en_qgis_joins_wiki.md
+        sections:
+          - file: content/Wiki/en_qgis_spatial_joins_wiki.md
+          - file: content/Wiki/en_qgis_non_spatial_joins_wiki.md      
+  - caption: Modul 1- Introduction GIS
     chapters:
-      - file: content/Modul_1/en_qgis_installation.md
+      - file: content/Modul_1/en_gis_theorie.md
         sections:
           - file: content/Modul_1/en_qgis_installation_ex1.md
-      - file: content/Modul_1/en_qgis_concept.md      
-      - file: content/Modul_1/geodatenbeschaffung.md
-      - file: content/Modul_1/geodatenformate.md
-  - caption: Vektor 1
+      - file: content/Modul_1/en_qgis_start.md      
+  - caption: Modul 2- Working with Geodata
     chapters:
-      - file: content/Modul_2/vektorsignaturen.md
-  - caption: Geodata
+      - file: content/Modul_2/en_qgis_geodata_concept.md
+      - file: content/Modul_2/en_qgis_basic_data_processing.md      
+      - file: content/Modul_2/en_data_sources.md   
+  - caption: Modul 3- Basic GIS operations
     chapters:
-      - file: content/Modul_3/geodata.md
+      - file: content/Modul_3/en_qgis_digitalisation.md
+      - file: content/Modul_3/en_qgis_data_classification.md
+      - file: content/Modul_3/en_qgis_data_queries.md
+  - caption: Modul 4- Representation
+    chapters:
+      - file: content/Modul_4/en_qgis_map_design_I.md
+  - caption: Modul 5- Intermediate GIS operation
+    chapters:
+      - file: content/Modul_5/en_qgis_spatial_tools.md
+      - file: content/Modul_5/en_qgis_non_spatial_tools.md
+  - caption: Modul 6- Data analysis with QGIS
+    chapters:
+      - file: content/Modul_6/en_qgis_data_analysis_theorie.md         
   - caption: Trainers corner
     chapters:
       - file: content/Trainers_corner/en_how_to_training.md

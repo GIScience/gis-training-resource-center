@@ -1,1 +1,1 @@
-# Exercise QGIS Installation
+# Getting started with QGIS
