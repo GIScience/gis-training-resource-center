@@ -15,7 +15,7 @@ The markdown files are built to a static webpage via `jupyter-book`.
 * `cd gis-training-resource-center`
 * set up a python environment, e.g. `python3 -m venv venv`
 * activate the environment: `source venv/bin/activate`
-* install dependencies: `pip install -r requirements.txt
+* install dependencies: `pip install -r requirements.txt`
 * do your changes to the book in `contents`
 * build it locally `jupyter-book build .`
 * verify changes `cd _build/html/ && python3 -m http.server 8080`
