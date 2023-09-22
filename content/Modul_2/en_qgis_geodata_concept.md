@@ -1,4 +1,4 @@
-# Geodata and Geodata processing
+# Geodata Concept
 **Competences:**
 * Data Import
 * Feature selection
