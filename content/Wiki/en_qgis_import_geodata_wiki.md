@@ -37,7 +37,7 @@ Import via drag-and-drop
 ::::
 
 ## Raster data Import 
-Raster data can have the 
+Raster data can have the following data formats:
 | Filename extension| Name | Dscription |
 | ----- | --- | --- |
 |.tif/.tiff/.geotiff|Tag Image File Format|Common raster and image data format. Does not necessarily have georeference information. If a .tif file has georeferenc information it is referred to as GeoTIFF.|
@@ -66,6 +66,8 @@ Import via drag-and-drop
 
 :::{figure} /fig/qgis_import_NetCDF_raster.mp4
 :width: 300px
+:align: center
+
 Import via drag-and-drop
 1. Layer -> Add Layer -> Add Raster Layer -> Select your file -> click "add" 
 2. A window will open and you have to select the exact dataset you want to use. -> Click "add Layers"
@@ -76,6 +78,47 @@ Import via drag-and-drop
 
 ::::
 
+## Text data import
+
+Geodata can cum in common text and table data formats like csv. and EXCEL. To import such data directly into QGIS one has to follow specific steps.
+
+| Filename extension| Name | Dscription |
+| ----- | --- | --- |
+|.csv|comma-separated values|Very common data format which separates data with commas or other delimiters.|
+|.xls|EXCEL|Data format used for EXCEL. EXCEL is a widely used spreadsheet program.|
+
+```{Tip}
+To directly load .csv or EXCEL data into QGIS, the datasets need to have columns containing geometry in the form of latitude (Y-field) and longitude (X-field). 
+```
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Open csv. data in QGIS
+:::{figure} /fig/qgis_open_textfile.mp4
+:width: 300px
+Import data from a .csv file
+
+:::
+
+:::{grid-item-card} Open .xlsx files in QGIS
+
+:::{figure} /fig/qgis_open_xlsx.mp4
+:width: 300px
+Import .xlsx
+
+1. Drag and drop the .xlsx file in QGIS.
+2. If the file contains multible tables, select the table you want to work with. Click "add Layers"
+3. click on the "Processing" tab -> Toolbox -> search for the tool "Creat points layer from table"
+4. Select you table as "Input Layer"
+5. Select the  longitude column for "X field" and the latitude column for "Y field"
+6. Click Run
+
+```{Tip}
+A other option is always to transform the .xlsx file into a .csv, which is eaysier to open in QGIS.
+```
+:::
+
+::::
 
 *QGGIS Version 3.22.15*
 
