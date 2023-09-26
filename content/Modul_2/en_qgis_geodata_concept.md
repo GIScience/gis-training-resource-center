@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-# Geodata Concept
-=======
 # Basic Geodata  processing
->>>>>>> 605a55c1fdb5e2942a54231558c6cc4abb930b81
+
 **Competences:**
 * Projections
 * Layer concept
