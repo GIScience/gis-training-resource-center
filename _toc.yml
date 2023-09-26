@@ -16,6 +16,7 @@ parts:
           - file: content/Wiki/en_qgis_data_sources_wiki.md
       - file: content/Wiki/en_qgis_geodata_wiki.md
         sections:
+          - file: content/Wiki/en_qgis_geodata_types_wiki.md      
           - file: content/Wiki/en_qgis_import_geodata_wiki.md
           - file: content/Wiki/en_qgis_layer_concept_wiki.md
           - file: content/Wiki/en_qgis_attribute_table_wiki.md
