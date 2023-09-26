@@ -52,7 +52,6 @@ Raster data can have the
 :::{figure} /fig/qgis_open_raster.mp4
 :width: 300px
 Import via Layer Tab
-
 :::
 
 :::{grid-item-card} Open raster data via drag-and-drop
@@ -65,15 +64,15 @@ Import via drag-and-drop
 
 :::{grid-item-card} Open NetCDF raster files 
 
-:::{figure} /fig/qgis_import_NetCDFraster.mp4
+:::{figure} /fig/qgis_import_NetCDF_raster.mp4
 :width: 300px
 Import via drag-and-drop
-
-
 1. Layer -> Add Layer -> Add Raster Layer -> Select your file -> click "add" 
 2. A window will open and you have to select the exact dataset you want to use. -> Click "add Layers"
 3. Click on the ? in the Layers window. The window "Coordination Reference System Selectir" will open. -> Select the correct reference system.-> Click “OK”
+
 :::
+
 
 ::::
 
