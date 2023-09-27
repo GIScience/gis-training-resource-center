@@ -10,10 +10,10 @@
 
 ## Why are spatial analyses important?
 
-```
-{Note} 
+```{Note} 
 Discuss in groups:
 ```
+
  - Situations in which you benefitted from spatial analyses.
  - Situations in which you could may be have benefitted from spatial analyses.
  - Main areas where you see potential for spatial analyses in your work.
@@ -62,8 +62,8 @@ GIS has many applications in the __humanitarian field__:
  - Support operations planning
  - Identify areas most affected by disasters
   
-```
-{Tip} A few examples:
+```{Tip}
+A few examples:
 ```
 
  - [REACH Initiativehttps](www.reachresourcecentre.info/search/)  
@@ -87,8 +87,7 @@ GIS has many applications in the __humanitarian field__:
 In 1854 an __outbreak of cholera__ occurred in London, England. The most common theory was that the disease was spread through the air. Dr.John Snow believed that the danger was __in the water__. He made a map to analyse the __number of deaths__ in Soho per house block. He added the __location of water pumps__ on the map.
 He found a __correlation__ between one specific water pump and the number of infections.
 
-```
-{Tip}
+```{Tip}
 Example:
 ```
  - [Let’s explore John Snow’s map](https://www.arcgis.com/apps/PublicInformation/index.html?appid=d7deb67f810d46dfacb80ff80ac224e9)
@@ -185,7 +184,6 @@ Infrastructure map of Nigeria
 For further information have a look here: 
  
 [PDF documentation](../QGIS-Dokumente/221013-Module-formation-cartographie-SIG_CartONG_EN-6-10.pdf) Mapping and GIS, p. 6 - 10
-
  
 ## Examples for GIS created maps 
 
@@ -204,8 +202,7 @@ __2 methods__ for the control of vector-borne diseases
 
 ### Indoor Residual Spraying (IRS)
 
-This involves spraying the inside of houses, usually once or twice a year. However, in order to obtain significant community protection, a high level of coverage is required. IRS provides community protection when at least 85% of homes in a targeted area are
-sprayed.
+This involves spraying the inside of houses, usually once or twice a year. However, in order to obtain significant community protection, a high level of coverage is required. IRS provides community protection when at least 85% of homes in a targeted area are sprayed.
 
 ### Gis for coordination in the camps
 
@@ -219,8 +216,8 @@ For further information have a look here:
 
 [PDF documentation](../QGIS-Dokumente/21013-Module-formation-cartographie-SIG_CartONG_EN-43-53.pdf) Examples for GIS created maps, p. 45 - 53
 
-```
-{Tip} Some more examples
+```{Tip} 
+Some more examples:
 ```
 The examples presented below illustrate __some more map productions by indentiying the need, software, key steps and deliverables__ associated with them. They are not exhaustive but allow to __have a vision of the different possibilities of cartographic rendering__ through different requests and various tools discussed in the toolbox.
 
@@ -280,8 +277,8 @@ See also:
 
 ## Why are spatial analyses so important?
 
-```
-{Tip} Discuss in groups:
+```{Tip}
+Discuss in groups:
 ```
 - Situations in which you benefitted from spatial analyses
 - Situations in which you could maybe have benefitted from spatial analyses
@@ -446,8 +443,8 @@ Geoprocessing Tools (Selection) in QGIS
 
 ![Geoprocessing tools](/fig/en_geoprocessing_tools.png)
 
-```
-{Tip} Example: Clip
+```{Tip}
+Example for a clip:
 ```
 Creates a __selection__ based on the spatial relationship between each feature in the input layer and the features in an additional layer.
 
@@ -459,8 +456,8 @@ Step by step:
 
 ![Clip](/fig/en_clip.png)
 
-```
-{Tip} Example: Buffer
+```{Tip}
+Example for a buffer:
 ```
 - __Computes (a) buffer area(s)__ for all the features in an input layer, using a specified distance
 
@@ -475,8 +472,8 @@ Step by step:
 
 ![Buffer](/fig/en_buffer.png)
 
-```
-{Tip} Examples for buffer usage 
+```{Tip}
+Examples for buffer usage: 
 ```
 Philippines: Taal Volcano, Base surge hazard map
 [https://www.phivolcs.dost.gov.ph/vault/1BaseSurge_Layout-Jan2020_A0_v5.jpg](https://www.phivolcs.dost.gov.ph/vault/1BaseSurge_Layout-Jan2020_A0_v5.jpg)
@@ -524,8 +521,8 @@ Step by step:
 
 ![Join attributes by field value](/fig/en_join_attributes_by_field_value.png)
 
-```
-{Tip} Hint
+```{Tip} 
+Hint
 ```
 If a table join does not work via the “Join Attributes by Field Value” tool, a join can also be performed via the __layer properties__ (right-click, Properties) under the Join tab.
 

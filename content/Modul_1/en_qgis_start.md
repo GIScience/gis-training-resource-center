@@ -15,8 +15,8 @@
 ![QGIS_User_Interface](/fig/en_QGIS_User_Interface.png)
 User interface
 
-```
-{Tip} Exercise 1: Create a new QGIS project  
+```{Tip}
+Exercise 1: Create a new QGIS project  
 ```
   - In your “GIS_Training” folder, create a __subfolder__ called __“Projects”__
   - Open __QGIS__
@@ -30,8 +30,8 @@ User interface
 ![Project template](/fig/en_project_template_BRC.png)
 Project template
 
-```
-{Tip} Exercise 2: Add a vector file
+```{Tip}
+Exercise 2: Add a vector file
 ```
 
 - In the menu, click on __Layer "Add Layer" Add Vector Layer__
@@ -44,8 +44,8 @@ Project template
 ![Add a vector file](/fig/en_Add_a_vector_file_a.png)
 Add a vector file 
 
-```
-{Tip} Exercise 3: Add basemaps
+```{Tip}
+Exercise 3: Add basemaps
 ```
 - In the browser pane scroll to __XYZ Tiles__
 - Click on __OpenStreetMap__ and drag it to the layers pane
@@ -70,8 +70,8 @@ Add basemaps
 - You can also __export data__ from GIS into Excel. 
 - Excel tables have to be __cleaned and formatted__ in a specific way before being loaded into GIS.
 
-```
-{Tip} Exercise: Load data from Excel into QGIS
+```{Tip}
+Exercise: Load data from Excel into QGIS
 ```
 
 - In your “GIS_Training” folder, create a __subfolder__ called __“Datasets”__
@@ -133,8 +133,8 @@ Add basemaps
 
 - Features in the table can be __searched, selected, moved or even edited__
 
-```
-{Tip} Exercise: Open and explore the Attribute Table
+```{Tip} 
+Exercise: Open and explore the Attribute Table
 ```
 - In the Layers pane, right-click on the NGA_Security Incidents layer and select __“Open Attribute Table”__
 - Explore the Attribute Table. As you can see, __it looks like any table in Excel__. Infact, it looks exactly like the Excel file you originally used to create this layer
@@ -159,8 +159,8 @@ For our introduction, the standalone installers from OSGeo4W packages are suffic
 
 For Windows operating systems, there is always a 32-bit version and a 64-bit version of each QGIS version available for download. __Which version to install depends on your computer and operating system__. If it is not clear how many bits your operating system has, you can easily find out: Left-click on the Windows icon at the bottom left of the screen (alternatively, open the Windows search function). Type "System" on the keyboard, click on the entry "System" in the search results. Under the item "System type" you can read the bit number.
 
-```
-{Tip} Exercise: Get to know QGIS and familiarize yourself with geodata
+```{Tip}
+Exercise: Get to know QGIS and familiarize yourself with geodata
 ```
 
  [https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/tree/main/Exercise_0](https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/tree/main/Exercise_0)
@@ -198,8 +198,8 @@ See also:
 
 ## QGIS interface description
 
-```
-{Tip} Exercise: Take the first steps
+```{Tip}
+Exercise: Take the first steps
 ```
  [https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/tree/main/Exercise_1](https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/tree/main/Exercise_1)
 
@@ -236,8 +236,8 @@ Steps:
 - View the __attribute data__ of the layers. For this purpose look at the attribute table
 - Changes the projection in the map view to __WGS 84 / Pseudo-Mercator - EPSG:3857__. Note that this does not change the projection (the coordinates) of the files, but only affects the projection of the map view.  Check this in the properties of the point layer. __Which projection is indicated there?__
 
- ```
- {Tip} You can use the search bar on the top
+ ``` {Tip}
+ You can use the search bar on the top
  ```
 - Now __save the health layer__ in the projection __WGS 84 / Pseudo-Mercator - EPSG:3857__. This changes the projection of the file. Check this in the properties of the newly created layer.
 - __Save your project__
@@ -274,47 +274,50 @@ This (or similar) is what it looks like in the end:
 - __Locator bar__. Here you can search for tools and layers. If you don't know where to find a tool, you can try here.
 
 ### Videos  
-*> plus Videos?*
 
   - Move the map view
 
-https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/490534e96bdd471b6924cd39e28859a2/qgis_move.mp4
+<video width="80%" controls src="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/490534e96bdd471b6924cd39e28859a2/qgis_move.mp4"></video>
 
   - Zooming in the map view
 
-https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/a64f7271eb2a23e876ada002ea89f7f0/qgis_zoom.mp4
+<video width="80%" controls src="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/a64f7271eb2a23e876ada002ea89f7f0/qgis_zoom.mp4"></video>
 
   - Show properties of objects
 
-https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/6566c2b8127c7f697619ddcb55831840/qgis_identify.mp4
+<video width="80%" controls src="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/6566c2b8127c7f697619ddcb55831840/qgis_identify.mp4"></video>
 
+
+ ``` {Tip}
+ Make sure to select the layer you want identify features in
  ```
- {Tip} Make sure to select the layer you want identify features in
- ```
+
   - Set the projection of the map view (project CRS)
 
-  https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/325cb2d70b0154c1bd5f38a899cd2b40/qgis_map_projection.mp4
+<video width="80%" controls src="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/325cb2d70b0154c1bd5f38a899cd2b40/qgis_map_projection.mp4"></video>
 
-  - Save and open project
+  - Save project
 
-https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/8e2bb629d9c3189f8f635a4cf1381d2c/qgis_save_project.mp4
+<video width="80%" controls src="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/8e2bb629d9c3189f8f635a4cf1381d2c/qgis_save_project.mp4"></video>
 
-https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/1655b97b741749bfa46c6c08ee3d0be6/qgis_open_project.mp4
+  - Open project
 
- ```
- {Tip} The layer data used in the project is not saved in the project file
+<video width="80%" controls src="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/1655b97b741749bfa46c6c08ee3d0be6/qgis_open_project.mp4"></video>
+
+ ``` {Tip}
+ The layer data used in the project is not saved in the project file
  ```
 Instead, the project file only contains the file paths where the layer data were located at the time the project was last saved on the PC. If the location of this layer data is subsequently changed, the error message "handle unavailable layers" will appear when the project is opened again.
 Good data organisation with a fixed and well thought-out folder structure prevents such problems.
 
  - Show and hide displays
 
- https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/b9ccebc4bd584fdbc5092b4804d8a742/Anzeigen_einblenden_ausblenden.mp4
+<video width="80%" controls src="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/b9ccebc4bd584fdbc5092b4804d8a742/Anzeigen_einblenden_ausblenden.mp4"></video>
 
-  - Move and arrange toolbars
+   - Move and arrange toolbars
 
-  https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/07bbf031499eb8da30daaa3bebd24769/qgis_arrange_toolbars.mp4
-
+ <video width="80%" controls src="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/07bbf031499eb8da30daaa3bebd24769/qgis_arrange_toolbars.mp4"></video> 
+  
   At each toolbar there is a field of two dotted lines. If you move the mouse pointer over it until an arrow cross appears and then hold down the left mouse button, you can move the toolbar. This allows an individualised arrangement of your own tools. By compressing all toolbars into a few lines, the map view window can also be enlarged.
 
 See also: 
