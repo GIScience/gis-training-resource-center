@@ -20,19 +20,15 @@ When importing a shapefile by drag-and-drop you have to use the file with the en
 :gutter: 2
 
 :::{grid-item-card} Open vector data via Layer Tab
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_vector.mp4"></video>
 
-:::{figure} /fig/qgis_open_vector.mp4
-:width: 300px
-Import via Layer Tab
+
 
 :::
 
 :::{grid-item-card} Open vector data via drag-and-drop
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_vector_d_d.mp4"></video>
 
-:::{figure} /fig/qgis_import_vector_d_d.mp4
-:width: 300px
-Import via drag-and-drop
-:::
 
 ::::
 
@@ -45,38 +41,29 @@ Raster data can have the following data formats:
 |.asc|Esri ASCII Grid files|Old simple raster file format, always with georeference informations|
 
 ::::{grid}
-:gutter: 3
+:gutter: 2
 
 :::{grid-item-card} Open raster data via Layer Tab
-
-:::{figure} /fig/qgis_open_raster.mp4
-:width: 300px
-Import via Layer Tab
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_raster.mp4"></video>
 :::
+
 
 :::{grid-item-card} Open raster data via drag-and-drop
 
-
-:::{figure} /fig/qgis_import_raster_d_d.mp4
-:width: 300px
-Import via drag-and-drop
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_raster_d_d.mp4"></video>
 :::
 
-:::{grid-item-card} Open NetCDF raster files 
+::::
 
-:::{figure} /fig/qgis_import_NetCDF_raster.mp4
-:width: 300px
-:align: center
+
+:::{grid-item-card} Open NetCDF raster files 
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_NetCDF_raster.mp4"></video>
 
 Import via drag-and-drop
 1. Layer -> Add Layer -> Add Raster Layer -> Select your file -> click "add" 
 2. A window will open and you have to select the exact dataset you want to use. -> Click "add Layers"
 3. Click on the ? in the Layers window. The window "Coordination Reference System Selectir" will open. -> Select the correct reference system.-> Click “OK”
-
 :::
-
-
-::::
 
 ## Text data import
 
@@ -94,17 +81,13 @@ To directly load .csv or EXCEL data into QGIS, the datasets need to have columns
 :gutter: 2
 
 :::{grid-item-card} Open csv. data in QGIS
-:::{figure} /fig/qgis_open_textfile.mp4
-:width: 300px
-Import data from a .csv file
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_textfile.mp4"></video>
 
 :::
 
 :::{grid-item-card} Open .xlsx files in QGIS
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_xlsx.mp4"></video>
 
-:::{figure} /fig/qgis_open_xlsx.mp4
-:width: 300px
-Import .xlsx
 
 1. Drag and drop the .xlsx file in QGIS.
 2. If the file contains multible tables, select the table you want to work with. Click "add Layers"
