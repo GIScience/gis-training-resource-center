@@ -11,7 +11,8 @@
 ## Why are spatial analyses important?
 
 ```
-{Tip} Discuss in groups:
+{Note} 
+Discuss in groups:
 ```
  - Situations in which you benefitted from spatial analyses.
  - Situations in which you could may be have benefitted from spatial analyses.
@@ -87,7 +88,8 @@ In 1854 an __outbreak of cholera__ occurred in London, England. The most common 
 He found a __correlation__ between one specific water pump and the number of infections.
 
 ```
-{Tip} Example:
+{Tip}
+Example:
 ```
  - [Let’s explore John Snow’s map](https://www.arcgis.com/apps/PublicInformation/index.html?appid=d7deb67f810d46dfacb80ff80ac224e9)
 
