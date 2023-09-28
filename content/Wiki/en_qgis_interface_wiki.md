@@ -52,7 +52,7 @@
 
 ![](/fig/Geschlossene_Toolbox_01.png)
 * You can also zoom by scrolling
-* Or with Ctrl+ or Ctrl-
+* Or with Ctrl+ or Ctrl- 
 
 :::
 
