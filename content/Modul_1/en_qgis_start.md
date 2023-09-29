@@ -170,9 +170,9 @@ Data:
 -  __Download the data__: [https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/blob/main/Exercise_0/Ex0_data.zip](https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/blob/main/Exercise_0/Ex0_data.zip)
  - __Save__ it on your PC. Create a __local folder__ and __save the above data there__ (.zip folders must be unzipped beforehand).
 
- - [https://hub.arcgis.com/datasets/2b93b06dc0dc4e809d3c8db5cb96ba69_0/explore](World Countries (Generalized)) (Polygon/Shapefile)
- - [https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ngdc.mgg.hazards:G012153](Significant Earthquake Database) (CSV)
- - [https://datasets.wri.org/dataset/globalpowerplantdatabase](Global Power Plant Database)) (Points/GeoPackage)
+ - [https://hub.arcgis.com/datasets/2b93b06dc0dc4e809d3c8db5cb96ba69_0/explore](World Countries -Generalized) Polygon/Shapefile
+ - [https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ngdc.mgg.hazards:G012153](Significant Earthquake Database) CSV
+ - [https://datasets.wri.org/dataset/globalpowerplantdatabase](Global Power Plant Database) Points/GeoPackage
 
 Steps: 
 
@@ -194,7 +194,12 @@ This (or similar) is what it looks like in the end:
 
 See also:
 
-[PDF documentation](../QGIS-Dokumente/2022_Tutoriel_QGIS_CartONG_EN_p06.pdf) Presentation of the interface,cartONG QGIS-Tutorial, p. 6
+[PDF documentation](/QGIS-Training/QGIS-Dokumente/2022_Tutoriel_QGIS_CartONG_EN_p06.pdf) Presentation of the interface,cartONG QGIS-Tutorial, p. 6
+
+
+<a href=/QGIS-Training/QGIS-Dokumente/2022_Tutoriel_QGIS_CartONG_EN_p06.pdf>
+Presentation of the interface, cartONG QGIS-Tutorial, p. 6</a>
+ 
 
 ## QGIS interface description
 
@@ -322,4 +327,7 @@ Good data organisation with a fixed and well thought-out folder structure preven
 
 See also: 
 
-[PDF documentation](../QGIS-Dokumente/2022_Tutoriel_QGIS_CartONG_EN_p07-09) Structuring a QGIS Project, cartONG QGIS-Tutorial, p. 7 - 9 
+[PDF documentation](/QGIS-Training/QGIS-Dokumente/2022_Tutoriel_QGIS_CartONG_EN_p07-09.pdf) Structuring a QGIS Project, cartONG QGIS-Tutorial, p. 7 - 9 
+
+<a href=/QGIS-Training/QGIS-Dokumente/2022_Tutoriel_QGIS_CartONG_EN_p07-09.pdf>
+Structuring a QGIS Project, cartONG QGIS-Tutorial, p. 7 - 9 </a>
