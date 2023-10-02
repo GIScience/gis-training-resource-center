@@ -66,7 +66,7 @@ GIS has many applications in the __humanitarian field__:
 A few examples:
 ```
 
- - [REACH Initiative](www.reachresourcecentre.info/search/)  
+ - [REACH Initiative](https://www.reachresourcecentre.info/search/)  
  - [World Food Programme(WFP)](https://hungermap.wfp.org/) 
  - [Médecins Sans Frontières (MSF)](https://geo.msf.org/catalogue) 
  - [iMMAP](https://immap.org/products/) 
@@ -181,7 +181,9 @@ Infrastructure map of Nigeria
 ![Graphic information](/fig/en_Graphic_information_CartONG04.png) Graphic information
 
 For further information have a look here: 
- 
+
+Share link:
+
 [PDF documentation](/QGIS-Training/QGIS-Dokumente/221013-Module-formation-cartographie-SIG_CartONG_EN-6-10.pdf) Mapping and GIS, p. 6 - 10
 
 <a href=/QGIS-Training/QGIS-Dokumente/221013-Module-formation-cartographie-SIG_CartONG_EN-6-10.pdf>
@@ -214,6 +216,8 @@ to help field teams move around in such a huge camp without getting lost
 - __Planning support:__ 
 Population estimate, distribution of tents and infrastructure, risk assessment, …
 
+Share link:
+
 For further information have a look here: 
 
 [PDF documentation](/QGIS-Training/QGIS-Dokumente/21013-Module-formation-cartographie-SIG_CartONG_EN-43-53.pdf) Examples for GIS created maps, p. 45 - 53
@@ -235,6 +239,8 @@ https://cartong.pages.gitlab.cartong.org/learning-corner/en/2_mobilize_mapping_g
 https://cartong.pages.gitlab.cartong.org/learning-corner/en/2_mobilize_mapping_gis/2_3_field)
 
 For further information have a look here:
+
+Share link:
 
 [PDF documentation](/QGIS-Training/QGIS-Dokumente/GIS_Toolbox-2_Mobilizing_mapping_and_GIS-13-Sept-2022.pdf) Mobilizing mapping and GIS
 
@@ -273,6 +279,8 @@ Using OSM basemap, it’s a good app for __offline navigation__. You can upload 
 Combines __ODK with a geo app__. You can collect data through ODK surveys and display them on a map, in addition to easily create polygons and add information to them.
 
 See also:
+
+Share link:
 
 [PDF documentation](https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_4_examples_tools_mdc/3_4_3_tools_webmappin) Webmapping tools
   
@@ -569,6 +577,8 @@ As opposed to the previous ones, these more advanced tools are very comprehensiv
 These tools make it possible to manipulate and create maps online in a very simple way directly in a web browser.
 
 For further detalied information have a look here:
+
+Share link:
 
 [PDF documentation](/QGIS-Training/QGIS-Dokumente/221013-Module-formation-cartographie-SIG_CartONG_EN-36-41.pdf) GIS-related tools, p. 36 -41
 

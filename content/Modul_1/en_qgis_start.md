@@ -51,7 +51,7 @@ Exercise 3: Add basemaps
 - Click on __OpenStreetMap__ and drag it to the layers pane
 - Now in the browser pane right-click on XYZ Tiles and select __“New Connection”__
 - In __Name__ type “Google Satellite”
-- In __url__ copy and paste the following: [http://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}](http://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z})
+- In __url__ copy and paste the following: [https://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}](https://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}) (original link is broken)
 - Click __Ok__ then drag the newly created layer from XYZ Tiles to the layers pane
 - Repeat for __Google Terrain__, you will find the url at [this link](https://socalgis.org/2019/11/06/add-google-maps-to-qgis-3/)
 
@@ -146,6 +146,8 @@ Exercise: Open and explore the Attribute Table
 
 See also:
 
+Share link:
+
 <a href=”./HeiGIT_Slides_28_44”>HeiGIT_Slides, p. 28 - 44</a>: Project structure
 
 
@@ -193,6 +195,8 @@ This (or similar) is what it looks like in the end:
 ![Excercise0_b](/fig/en_Excercise_0_b.png)
 
 See also:
+
+Share link:
 
 [PDF documentation](/QGIS-Training/QGIS-Dokumente/2022_Tutoriel_QGIS_CartONG_EN_p06.pdf) Presentation of the interface,cartONG QGIS-Tutorial, p. 6
 
@@ -326,6 +330,8 @@ Good data organisation with a fixed and well thought-out folder structure preven
   At each toolbar there is a field of two dotted lines. If you move the mouse pointer over it until an arrow cross appears and then hold down the left mouse button, you can move the toolbar. This allows an individualised arrangement of your own tools. By compressing all toolbars into a few lines, the map view window can also be enlarged.
 
 See also: 
+
+Share link:
 
 [PDF documentation](/QGIS-Training/QGIS-Dokumente/2022_Tutoriel_QGIS_CartONG_EN_p07-09.pdf) Structuring a QGIS Project, cartONG QGIS-Tutorial, p. 7 - 9 
 
