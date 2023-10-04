@@ -16,6 +16,7 @@ parts:
           - file: content/Wiki/en_qgis_data_sources_wiki.md
       - file: content/Wiki/en_qgis_geodata_wiki.md
         sections:
+          - file: content/Wiki/en_qgis_geodata_types_wiki.md      
           - file: content/Wiki/en_qgis_import_geodata_wiki.md
           - file: content/Wiki/en_qgis_layer_concept_wiki.md
           - file: content/Wiki/en_qgis_attribute_table_wiki.md
@@ -44,16 +45,32 @@ parts:
   - caption: Modul 2- Working with Geodata
     chapters:
       - file: content/Modul_2/en_qgis_geodata_concept.md
-      - file: content/Modul_2/en_qgis_basic_data_processing.md      
-      - file: content/Modul_2/en_data_sources.md   
+        sections:
+          - file: content/Modul_2/en_qgis_geodata_concept_ex1.md
+      - file: content/Modul_2/en_qgis_basic_data_processing.md
+        sections:
+          - file: content/Modul_2/en_qgis_basic_data_processing_ex1.md
+      - file: content/Modul_2/en_data_sources.md
+        sections:
+          - file: content/Modul_2/en_qgis_data_sources_ex1.md
   - caption: Modul 3- Basic GIS operations
     chapters:
       - file: content/Modul_3/en_qgis_digitalisation.md
+        sections:
+          - file: content/Modul_3/en_qgis_digitalisation_ex1.md  
       - file: content/Modul_3/en_qgis_data_classification.md
+        sections:
+          - file: content/Modul_3/en_qgis_classification_ex1.md
       - file: content/Modul_3/en_qgis_data_queries.md
+        sections:
+          - file: content/Modul_3/en_qgis_data_queries_ex1.md
   - caption: Modul 4- Representation
     chapters:
       - file: content/Modul_4/en_qgis_map_design_I.md
+      - file: en_qgis_map_design_2.md
+        sections:
+          - file: content/Modul_3/en_qgis_map_design_I_ex1.md
+          - file: content/Modul_3/en_qgis_map_design_I_ex2.md
   - caption: Modul 5- Intermediate GIS operation
     chapters:
       - file: content/Modul_5/en_qgis_spatial_tools.md
