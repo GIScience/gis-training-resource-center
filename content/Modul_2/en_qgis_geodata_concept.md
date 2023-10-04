@@ -1,4 +1,4 @@
-# Basic Geodata  processing
+# Geodata concept
 **Competences:**
 * Projections
 * Layer concept
@@ -6,19 +6,26 @@
 * Vector file formats
 
 
-Die kartographische Darstellung von Vektor-Layern im GIS ist ein weites und komplexes Themenfeld. Wir betrachten hier daher nur einige grundlegende Funktionen.  
 
 
 
+## Projections 
+### Theory
 
+The earth is a sphere and cannot be represented on a flat map without being distorted. To able able to display the earth on a flat map for example as a rectangle it needs to be projected. For further explanation, watch this [video](https://www.youtube.com/watch?v=kIID5FDi2JQ). 
 
+For this translation, from a curved on a flat surface, thousands of different methods exist. These are called **Coordinate Reference Systems (CRS)**.
 
+![Different Coordinate Reference Systems](../../fig/en_examples_projections.png)
 
-The earth is a sphere and cannot be represented on a flat map without being distorted. For this translation, from a curved on a flat surface, thousands of different methods exist. These are called **Coordinate Reference Systems (CRS)**.
+Every projection comes with a trade-off in shape, direction, distance and area. That's why it is important to choose different types of CRS for different use cases.
+For example, Mercator projections don´t represent the area correctly. Google Maps still uses the Mercator to be able to represent streets correctly, since it works well on a small scale. On a big scale, the shape of the countries stay the same but the area is mispresented. You can check the true size in comparison to different placements on the map on this [website](https://www.thetruesize.com). A popular example is Greenland in comparison with Africa, which seem on the map to be about the same size, but in reality Africa is a lot bigger.
 
-![Different Coordinate Reference Systems](../../fig/en_different_crs.gif)
+![Comparison Greenland - Africa](../../fig/en_greenland_africa.png)
 
-The different types of CRS should be used for different use cases. For example, Mercator projections don´t represent the area correctly. This table shows an overview on which projections to use for which needed characteristic:
+It's important to work with the right projections, if not we will produce wrong results!
+
+This table shows an overview on which projections to use for which needed characteristic:
 
 | Mercator (cylindrical) | Lambert cylindrical | Albers conic |
 | :--------------------: | :-----------------: | :----------: |
@@ -26,18 +33,44 @@ The different types of CRS should be used for different use cases. For example, 
 | [x] rotation           | [x] rotation        | [ ] rotation |
 | [ ] area               | [x] area            | [x] area     |
 
-For smaller areas local coordinate systems should be used since they give a more accurate display at the expense of more distortion at the global level. 
+For smaller areas local projections should be used, since they give a more accurate display at the expense of more distortion at the global level. 
 
 ![Local Coordinate Reference Systems](../../fig/en_local_crs.png)
+
+### Application
+
+You can find all the projections and their CRS code at this [website](http://epsg.io). 
+
 
 To change the projection of a **vector file**, click on *Vector*, *Data Management Tools*, *Reproject Layer*. Select your input layer and the target crs. Click on the three dots to *Save to File...* and click *Run*. For a detailed instruction click on this [video](https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/7e7a28698859062d1b832b558b2721c6/qgis_reproject_vector.mp4).
 
 To change the projection of a **raster file**, clickclick on *Raster*, *Projections*, *Warp (Reproject)*. Choose your input layer and target crs. Click on the three dots to *Save to File...* and click *Run*. For a detailed instruction click on this [video](https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/3b7a1bb2408f4453f22d73f54156888b/qgis_reproject_raster.mp4).
 
+It is crucial that you are aware of the difference in data projection and project projection. They should always be the same, or else you will get wrong results! You can change the data projection by following the steps explained above. The project projection is on the bottom left corner, as seen [here](../../fig/en_QGIS_User_Interface.png). The interface then will be the same and by searching for the right EPSG you can change the projection. 
+
+## Excercises
+
+Now it's your turn! 
+
+You can apply your knowledge on this excercise by getting used to the interface and changing the projections. 
+
+[Exercise 1](https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/tree/main/Exercise_1) 
+--> in future link to HeiCloud
+
+
+
+==explain and show often made mistakes?==
+
+This [Website](https://ihatecoordinatesystems.com/) provides explanations und solutions for often made mistakes.
+
+In the [Wiki](../../content/Wiki/en_qgis_projections_wiki.md) are further tips.
+
+
+
 
 ## Layer concept
 
-```{admonition}
+
 
 ## Vector and raster data
 
@@ -48,82 +81,3 @@ To change the projection of a **raster file**, clickclick on *Raster*, *Projecti
 
 
 
-* [Single Symbol](qgis-Vektorsignaturen#single-symbol)
-* [Nominale Daten - Categorized](qgis-Vektorsignaturen#nominale-daten-categorized)
-* [Intervallskalierte Daten - Graduated](qgis-Vektorsignaturen#intervallskalierte-daten-graduated)
-* [Signaturen speichern und laden](qgis-Vektorsignaturen#signaturen-speichern-und-laden)
-* [Beschriftung](qgis-Vektorsignaturen#beschriftung)
-* [Weitere Ressourcen](qgis-Vektorsignaturen#weitere-ressourcen)
-
-
-**Hinweis:**  
-Die getätigten Veränderungen bei der Darstellung eines Layers werden nur lokal in eurer Projektdatei gespeichert und nicht in der Layer-Datei direkt. Wird die Layer-Datei also außerhalb eures Projektes geöffnet (zum Beispiel wenn ihr sie als Teil einer Abgabe in Moodle hochgeladen habt), sind die Darstellungseinstellungen verloren.  
-Ihr könnt die Darstellung jedoch getrennt als Datei abspeichern (siehe [Signaturen speichern und laden](qgis-Vektorsignaturen#signaturen-speichern-und-laden)). Für die Abgaben empfehlen sich aber stattdessen Screenshots in der Dokumentation.
-
-## Single Symbol
-* alle Features im Layer werden auf die gleiche Art und Weise (Farbe, Größe, etc.) dargestellt
-* Rechtsklick auf Layer --> Symbology --> Single Symbol
-
-### Farbe ändern
-![qgis_change_color_point_video](uploads/QGIS/videos/qgis_change_color_point.mp4)
-
-### Größe ändern
-![qgis_change_size_point_video](uploads/QGIS/videos/qgis_change_size_point.mp4)
-* diese Einstellung gibt es nur für Punkte und Linien
-
-### Punkt-Icon ändern
-![qgis_change_icon_point_video](uploads/QGIS/videos/qgis_change_icon_point.mp4)
-* auch für Linien könnt ihr unterschiedliche bestehende Styles wählen
-
-### Polygon Füllung ändern
-![qgis_change_polygon_fill_video](uploads/QGIS/videos/qgis_change_polygon_fill.mp4)
-* auch hier könnt ihr unterschiedliche bestehende Styles wählen
-
-### Transparenz einstellen
-![qgis_layer_opacity_video](uploads/QGIS/videos/qgis_layer_opacity.mp4)
-
-## Nominale Daten - Categorized
-* alle Feature einer Kategorie sollen auf gleiche Art und Weise dargestellt werden
-* Rechtsklick auf Layer --> Symbology --> Categorized
-* für jede Kategorie kann die Darstellung angepasst werden (auf ähnliche Art und Weise wie im Abschnitt *Single Symbol* dargestellt)
-
-![qgis_symbology_categorized_polygon_video](uploads/QGIS/videos/qgis_symbology_categorized_polygon.mp4)
-
-## Intervallskalierte Daten - Graduated
-* Features sollen entsprechend einer Skala dargestellt werden
-* Darstellung über Farbverlauf oder Größe
-* Daten werden in Klassen eingeteilt nach einer bestimmten Methode (z.B. `equal interval` oder `equal count`) oder manuell
-* Für jede Klasse kann die Darstellung angepasst werden (auf ähnliche Art und Weise wie im Abschnitt *Single Symbol* dargestellt)
-
-![qgis_symbology_graduated_point_video](uploads/QGIS/videos/qgis_symbology_graduated_point.mp4)
-
-## Signaturen speichern und laden
-In QGIS könnt ihr die Signaturen auch als Datei speichern und so für verschiedene Projekte und Layer nutzen.
-* Rechtsklick auf Layer --> Export --> Save as QGIS Layer Style File
-
-Für ein neues Layer könnt ihr dann die Signatur wie folgt laden, möglicherweise müsst ihr dann noch den Namen des Feldes mit den Attributen anpassen.
-
-![qgis_symbology_load_style_video](uploads/QGIS/videos/qgis_symbology_load_style.mp4)
-
-## Beschriftung
-* jedes Feature kann mit Werten aus der Attributtabelle beschriftet werden
-* Rechtsklick auf Layer --> Labels
-
-### Automatische Platzierung
-* automatische Platzierung von Labels funktioniert manchmal nur semi-optimal, geht dafür aber sehr einfach und schnell
-
-![qgis_labels_video](uploads/QGIS/videos/qgis_labels.mp4)
-
-### Manuelle Platzierung
-* man startet mit einer automatischen Platzierung und passt dann die Position manuell an
-* ermöglicht kartographisch besser platzierte Label, nimmt aber oft sehr viel Zeit in Anspruch
-* Nutzung der *Labeling Toolbar*
-
-![labeling_toolbar](uploads/QGIS/labeling_toolbar.PNG)
-
-
-![qgis_labels_by_hand_video](uploads/QGIS/videos/qgis_labels_by_hand.mp4)
-
----
-# Weitere Ressourcen
-* [QGIS Doku: Symbology](https://docs.qgis.org/testing/en/docs/training_manual/basic_map/symbology.html)
