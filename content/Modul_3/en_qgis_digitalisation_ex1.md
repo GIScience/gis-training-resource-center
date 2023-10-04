@@ -1,1 +1,0 @@
-# Digitalisation Exercise 1
