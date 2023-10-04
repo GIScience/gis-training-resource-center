@@ -133,7 +133,7 @@ Create a new Print Layout
 ## Understanding the Print Layout Composer
 
 
-```{figure} ../../../fig/understanding_the_print_layout_composer.png
+```{figure} ../../fig/en_30.30.2_understanding_the_print_layout_composer.png
 ---
 name: New Print Layout
 ---
