@@ -133,9 +133,8 @@ Create a new Print Layout
 ## Understanding the Print Layout Composer
 
 
-```{figure} ../../fig/understanding_the_print_layout_composer.png
+```{figure} ../../../fig/understanding_the_print_layout_composer.png
 ---
-width: 500px
 name: New Print Layout
 ---
 The interface of the Print Layout Composer
