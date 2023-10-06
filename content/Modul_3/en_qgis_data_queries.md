@@ -43,4 +43,123 @@ You can see the features of those countries by attribute table and show selected
 
 
 
-* Non-spatial queries (I/basic)
+
+**Non-spatial queries**
+
+Non-spatial queries describe characteristics of the features and this query show a place or feature irrespective of its location i.e. **what** instead of **where**. It is totally independent of geographic location and not relating to, occupying, or having the character of space. Non-spatial queries are crucial for analyzing and understanding the data associated with the spatial features in a GIS project, providing insights and facilitating decision-making based on non-spatial attributes. Non-spatial data is also known as attribute data.
+
+There are two ways by which you can select and show the features of non-spatial data. Among which are manual selection or just by click and select by expression (arithmetic operators, string operators, logical operator etc.).
+
+
+**Manual selection**
+
+We want to manually select three regions in the below vector layer through the attribute table. Open the attribute table, select any of the place you would like to select, press control bottom on your PC and click on any other features you would like to select. Then, you can click on show selected features and it will be automatically highlighted in yellow color on the Qgis display panel.
+
+
+![](/fig/Manual_select_by_attribute_table.png)
+
+
+
+
+**Select by Expression**
+
+You can use the “Select by expression” option in the **layer properties** (see icon 1) or through the **Select** menu in the attribute table (see icon 2) to apply an expression to a layer. Sometimes, you can also find the icon of select by expression at (see icon 3) by click on it and choose select features by expression or just by Ctrl plus F3 on your key board. This option can be used to select features based on attribute data. Icon 4 is the select by expression command prompt where your expression will be written.
+
+![](/fig/Opening_Select_by_Expression.png)
+
+
+
+
+**Select by Expression** - Arithmetic operators (integer, float fields).
+
+•	>, <, =, !=
+
+•	Note that your command in the select by expression depend on the attribute features on the shape file you want express.
+
+•	For example, imagine that you want to show the State that has more than 10 million **shape-length** in the below map of Nigeria showing its 37 States.
+
+1.	Firstly, select your file from the layer panel, open the select by expression table, click on Fields and Values (don’t forget that these fields and values depends on the characteristics of the file you are opening).
+2.	Scroll down to shape length and double click on it, you can then see it at the expression layer display.
+3.	Go back to the search bar layer by click on the operators to select the arithmetic command you would like to use. In this case, we are using > sign because we want to figure out the state that has more than 10 million for instance.
+4.	After double click on the greater than sign, then input the numeric command that you want to use. In this case we enter 10.
+5.	Lastly, click on select features. It will automatically select all the states that have more than 10 million in its shape length. You can as well see the number of selected features at the top of the select by expression command prompt layer. Then open the attribute table to see the selected features.
+
+
+![](/fig/Select_by_Expression_greater_a.png)
+
+
+
+The below are the thelve features selected.
+
+![](/fig/Select_by_Expression_greater_b.png)
+
+
+
+**Select by Expression** - String operators (text fields e.g “Like”)
+
+•	Imagine you want to select a country like Nigeria.
+
+![](/fig/Select_by_Expression_like.png)
+
+To select by expression by like, please follow this steps:
+1.	Select the file you would like to run
+2.	Click on select by expression
+3.	Click on Fields and Values
+4.	Select admin0Name (This means names of the countries according to the attribute table fields names)
+5.	Click on Operators to select the command you would like to use
+6.	Select ‘Like’
+7.	Click again on the Fields and Values
+8.	Click on All Unique
+9.	Select Nigeria i.e. we want to express to select a country like Nigeria
+10.	Click on select features
+11.	You call all see the expression command here
+12.	A country like Nigeria has been selected and you can open the attribute table to see the selected feature(s).
+
+
+
+**Select by Expression** - Placeholder (e.g %)
+•	Imagine you want to select all the countries that ends with **’a’**
+
+![](/fig/Select_by_Expression_placeholder.png)
+
+1.	Follow the previous steps.
+2.	You have three input to express here. Click on Fields and Values to select admin0RefName (Name of the countries title as per the attribute table)
+3.	Go to operators to select Like
+4.	You can enter manually at the expression layer ‘%a’ (i.e. the countries that ends with a)
+5.	Click on Select features to see all the countries that ends with **a**.
+
+
+
+**Select by Expression** - Logical operators (AND, OR)
+
+This selection adds one or two command expression together. For example, you want to select the state that has more than 12 million in shape length AND that has more than 3 million shape area simultaneously from the map of 37 States of Nigeria. Then this command holds: **"Shape Length" > 12 AND  "Shape_Area" > 3** .
+
+
+![](/fig/Select_by_Expression_AND.png)
+
+
+You can get it down by a click on Fields and Values, proceed to click on Shape length and input your arithmetic operator > with the figure of your choice via Operators, then add the connector which is **AND** and go back to Fields and Values to input the second command of Shape area and add the arithmetic operator of > with the figure you want. Lastly, click on select features to see the states that have shape length of more than 12 million and at the same time having shape area of more than 3 million. Visit the attribute table to see the selected features.
+
+
+
+
+**Save selected features as a new file**
+You can save the selected features as a new shape file.
+1.	Click on Layer properties
+2.	Click on Export
+3.	Save only selected features
+
+
+![](/fig/Save_selected_features_by_export.png)
+
+•	Right click on the shape file you want to save the selected features from in the Layers panel
+•	Click on export
+•	Save selected features as
+•	A save vector layer will pump up and you can change the Format if you want but in this case we are using GeoPackage format
+•	Click on file name to properly save it in the folder of your choice on your PC
+•	Click on save only selected features
+•	Click on Ok.
+•	Then, it will automatically appear on your Layer panel as seen below.
+
+![](/fig/Save_selected_features_by_export_a.png)
+
