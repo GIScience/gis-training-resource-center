@@ -39,7 +39,7 @@ Examples for thematic maps
 
 ## Graphic Semiology
 
-__Definition__: A set of rules allowing the use of a __graphic sign systems__ to convey information
+__Definition__: A set of rules allowing the use of a __graphic sign systems__ to convey information. Graphic semiology uses visual variables to construct a system of signs, allowing the graphic translation of information.
 
 Our brain is capable of interpreting graphic relationships between entities in just seconds. Semiology attempts to theorise these interpretation to make the map more effective and relevant.
 
@@ -52,16 +52,24 @@ Depending on the type of information you want to display, you can use different 
 ```
 
 
-
 ### Visual variables
 
-__visual variables are the graphical means for visually transcribing information. 
+Visual variables are the __graphical means for visually transcribing information__. The visual variables are __shape, size, hue, value, texture, and orientation__. You can vary these variables to appropriately represent the data at your disposal.  
+It allows for the expression of __relationship of difference, order, association, or quantity__ between each element. 
 
-__BUT__ visual perception varies from one person to the next according to various capabilities:
+```{figure} ../../fig/en_visual_variables.png
+---
+width: 500 px
+name: Visual variables
+---
+Visual variables according to Bertin (1967)
+```
+
+```{Caution} 
+Visual perception varies from one person to the next according to various capabilities:
 - Physiological (e.g.: colour blindness)
 - Transcultural (green = nature, blue = water)
-
-
+```
 
 > Check Uni HD cartography slides
 
@@ -94,9 +102,11 @@ In the styling panel, you can change the symbology (1) and the labels (2).
 > Should I continue this?
 
 
-### Styling of vector data
+### Symbology for vector data
 
-### Styling of raster data
+
+
+### Symbology for raster data
 
 ### Labels
 
@@ -282,7 +292,7 @@ name: Create an Overview
 Add a the extent of the main map to your overview map (the red rectangle on the overview)
 ```
 
-``` {note} Caution
+``` {Caution}
 This method requires you to be sure that you are not going to modify the oveview map, as once the layers are locked, they will keep the style, and any updates will not affect the overview map
 ```
 
@@ -362,7 +372,7 @@ It is possible to give the source of each data under the legend, or to do it in 
 #### 1. Proportional circles vs. solid colors
 
 ```{caution}
-DO NOT represent __quantitative__ stock character/data with a solid color
+DO NOT represent __quantitative__ stock character/data with a __solid color__.
 ```
 
 This is one of the most common mistakes in mapping. While this representation is graphically appealing, it is still false and distracts from the message of the map.
@@ -372,3 +382,41 @@ It is a mistake because:
 - You lose the __order relationship between the data__ (a circle can be twice as big as another one, a color cannot be "twice as dark")
 - Countries with a large surface area stand out visually (eg.: Russia in the example below)
 - We are trying to represent __data that has nothing to do with the area of a country__, but rather speaks of individual elements 
+>Add different example
+
+#### Color gradient vs. distinct color palette
+
+```{caution}
+DO NOT use a __separate__ color palette to represent __ordered entities__
+```
+A representatin that "feels right" because it seems logical that a "low" rate would be represented differently than a "high" rate.
+
+It is a mistake because:
+- By using a differentiating color variable, __you lose the ordinal relationship between entities__. Instead, a __gradient of the same color__ that should be used.
+- Different colors are used to differentiate between distinct entities.
+
+#### Gradient in a single color vs. Gradient between two colors
+```{Caution}
+DO NOT use a gradient across two colors for an always positive data.
+```
+This is a mistake that is often found because our brais are used to prioritizing certain colors, especially green to red, or blue to red. We must remember that __if our values are always positive, we must stay in the same color that will degrade into several shades. 
+>What about height?
+
+A gradient between two colors can be used when it is necessary to show a gradation that can go from negative to positive. As for temperatures, it makes sense to distinguish negative values (in shades of blue for example) and positive values (in shades of red). 
+
+It is a mistake because: 
+- By choosing different colors for values that are linked to each other, our eyes perceive a difference between the elements, and not an order.
+- Darker colors stand out more than lighter colors, and can be perceived as more important.
+- The map will send a message of divergence, of opposition between certain values, when we are simply trying to represent a hierarchy between values
+- In this way, the color itself directly indicates information about the trend (positive/negative or increasing/decreasing).
+
+#### Limited geometric symbols vs. complex icons and symbols
+```{Caution}
+DO NOT use __too many symbols__ in a thematic map
+```
+Incorportating a multitude of symbols (and data) for a informative map is a common desire. However, too many symbols can __overload the map__ and __reduce the readability__ of the map. Using too many symbols (especially geometric ones) can make it difficult to read and understand the map.  
+__The eye can easily distinguish 4 to 5 different symbols. Beyond that, it is difficult to dinstinguish the elements. This is a less serious error because it does not convey false information on the map. 
+
+It is a mistake because:
+- It complicates the map and limits its impact. 
+- Sometimes you are forced to represent several symbols, so you must be careful about overlapping points and overloading the map.
