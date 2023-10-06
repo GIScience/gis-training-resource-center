@@ -269,7 +269,6 @@ To create an overview map, you need to follow these steps:
 ---
 width: 200px
 name: Overview map preparation
-alignment: right
 ---
 Create an overview map with important landmarks and borders
 ```
@@ -339,7 +338,6 @@ __The legend__ is key to interpreting the information represented on the map. Wi
 ---
 width: 500px
 name: Organized Legend
-alignment: right
 ---
 Example of a well organized legend
 ```
