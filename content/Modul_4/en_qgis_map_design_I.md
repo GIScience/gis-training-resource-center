@@ -118,10 +118,21 @@ In the styling panel, you can change the symbology (1) and the labels (2).
 **Add labels to a layer**
 >This is exercise 2 in the PPP
 
-1. In the styling panel, click on the "Labels" tab
-2. Select *Single Labels* 
-3. "Value" is where you choose the attribute that will be displayed as a label. For example "NAME". This will display the "NAME" attribute for each feature.
+1. In the styling panel, click on the "Labels" tab.
+2. Select *Single Labels*. 
+3. "Value" is where you choose the attribute that will be displayed as a label. For example "NAME". This will display the "NAME" attribute for each feature. In the example (figure X), *ADM1_EN* will display the English names of Nigerian states.
+>change figure number
+4. Let's change the font: make it Arial, bold, dark grey, 8 pt
+5. Let's add a white buffer around the label.
+7. Click Apply and Ok.
 
+```{figure} ../../fig/en_30.30.2_setting_up_labels
+---
+width: 750px
+name: Setting up labels
+---
+Setting up labels in QGIS 30.30.2
+```
 
 # Print layout
 
@@ -269,7 +280,7 @@ To create an overview map, you need to follow these steps:
 ---
 width: 200px
 name: Overview map preparation
-alignment: right
+align: left
 ---
 Create an overview map with important landmarks and borders
 ```
