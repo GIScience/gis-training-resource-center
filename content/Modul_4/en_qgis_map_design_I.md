@@ -115,7 +115,7 @@ In the styling panel, you can change the symbology (1) and the labels (2).
 - You can change the font, colour and size of labels
 - When you create a map you always add labels to help the final user reading the map
 
-**Add labels to a layer**
+#### Adding labels to a layer
 >This is exercise 2 in the PPP
 
 1. In the styling panel, click on the "Labels" tab.
@@ -132,6 +132,39 @@ width: 750px
 name: Setting up labels
 ---
 Setting up labels in QGIS 30.30.2
+```
+
+#### Adding 2 different label styles to the same layer
+>This is exercise 3 in PPP
+
+Sometimes you will need to create two different label styles for different features of a single layer. In this example, we will create one label style for the *Country Capital*, and another one for the *State Capitals*
+
+1. Open the styling panel and click on the Labels tab
+2. Select __Rule-based Labeling__
+3. Click on the __Add Rule__ button at the bottom (the "+"-sign) and create the first rule
+4. For __Value__, select __"NAME"__ (so that the labels will show the name of each city), then click on the "ε"-button next to the "Filter" bar.
+
+```{figure} ../../fig/en.30.30.2_adding_rule-based_labels
+---
+width: 500px
+name: adding rule-based labels
+---
+To add rule-based labels, you need to enter an expression
+```
+
+5. In the central column, expand ==__Fields and Values__== to display a list of all the fields in your layer and double-click on _Class__ to add it to the expression frame on the left.
+6. In the right column, click on __All unique__ to list all unique values contained in the Class field
+7. Click on the "`=`" operator, then doube-click on the _value 1_ (which represent the Country capital in this case). Click OK.
+8. Scroll down to *change the label style*. Make it Arial, bold, black, 12pt and add a white buffer.
+9. Repeat steps 4 to 9, but select *Value 2* (State capitals) and make the label black, bold, 10pt, no buffer.
+10. Click **Apply**, the OK.
+
+```{figure} ../../fig/en_30.30.2_adding_rule-based_labels_expression_builder.png
+---
+width: 500px
+name: rule-based labels expression builder
+---
+The expression builder: Expression (left); building blocks, operators, fields and values(center); unique values (right)
 ```
 
 # Print layout
@@ -178,7 +211,7 @@ _A4 and A3 are the most commonly used sizes for maps_
 
 ## Adding elements to the print layout
 
-### Add a new map
+### Adding a new map
 
 - Add a new map by clicking on the __Add map__ button on the __toolbar on the left__ and __drag a rectangle on the map canvas.  
 - To move the map on the canvas, simply __select the map__ and __drag__ it with your mouse
@@ -194,7 +227,7 @@ name: Add a new map
 Adding a new map to the Print Layout
 ```
 
-### Add a text box
+### Adding a text box
 
 - To add text (title, explanations), use the __Add Label__ tool and draw a rectangle of the desired size.
 - In the __Item Properties__ panel (on the right of your screen) you can __enter your text__ and __change the font, style, colour, etc.__ (_Remember to use the scroll bar in the window to see all the options). 
@@ -208,7 +241,7 @@ name: Add text to the print layout
 Adding text to the print Layout
 ```
 
-### Add a legend
+### Adding a legend
 
 Before adding a legend, make sure that:
 
@@ -229,7 +262,7 @@ Adding a legend to the print layout
 In the __item properties__ panel, if you keep the __'Auto update'__ option checked, new layers added to your project will automatically be added to the legend but you cannot control them individually (rename if necessary, reorder ot remove items).  
 Once the option is unchecked, you can update the name of the layers, group them, reorganise them, etc.
 
-### Add a scale bar
+### Adding a scale bar
 
 Before adding a scale bar, select your main map and check in the __Item Properties__ panel that the __Scale__ fielld has a __round number__ 
 
@@ -280,12 +313,8 @@ To create an overview map, you need to follow these steps:
 ---
 width: 200px
 name: Overview map preparation
-<<<<<<< HEAD
-align: left
-=======
->>>>>>> 5602d59e20c01e4793afe482db277ab83713da0a
 ---
-Create an overview map with important landmarks and borders
+An overview map should show important landmarks and borders
 ```
 
 
@@ -294,7 +323,7 @@ Create an overview map with important landmarks and borders
 width: 500px
 name: Add Overview map
 ---
-Add an overview map and lock the layer
+Add an overview map and __lock the layer__
 ```
 
 
