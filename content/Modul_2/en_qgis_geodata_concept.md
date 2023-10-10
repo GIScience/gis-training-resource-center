@@ -71,10 +71,66 @@ In the [Wiki](../../content/Wiki/en_qgis_projections_wiki.md) are further tips.
 
 ## Layer concept
 
+Geodata represents a real-world object on a map as a feature. A feature consists of two types of information: the location and attributes, f. e. name or ID. Those informations are collected in layers. A layer can only consist of geographic objects of the same type. [^1]
+
+
+[^1]: https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_1_layers
+
+By superpositioning different layers, you build your map and can obtain information of different sources. With those you then can perform analyses or adapt the representation by using symbols and colors.
+
+![Layer concept](../../fig/en_layer.png)
 
 
 ## Vector and raster data
 
+There are two file types of geographic data: **vector and raster**.  
+
+![Vector and raster data](../../fig/en_vector_raster.png)
+  
+
+> **Vector**  
+Vector data contains a shape or a geometry. By using geometry objects (points, lines and polygons) the real world is represented. Each object stores the location (as adress or coordinates) and further attributes, f. e. name or ID. Which geometry is used, depends on the feature it represents. 
+![Geometry vector data](../../fig/en_vector_geometry.png)
+  >>Examples: buildings, streets 
+
+
+> **Raster**  
+Raster data are images which contain a matrix of pixels. Each pixel stores a value. 
+Since a raster is based on an image, the resolution is crucial. It defines the accuracy of the data and size of the pixels. 
+![Raster data quality](../../fig/en_quality_raster.png)
+>> Examples (stored as a value): elevation, temperature, land cover
+
+
+In this picture you can see the same location, on the left as vector data, visualising streets and urban area, and on the right hand as raster data (satellite image), showing the land cover.
+
+vector                     |  raster
+:-------------------------:|:-------------------------:
+![same location as vector data](../../fig/en_same_location_vector.png)  |  ![same location as raster data](../../fig/en_same_location_raster.png)  
+
+
+<div class="pull-left">
+
+## Vector
+
+---
+Vector data contains a shape or a geometry. By using geometry objects (points, lines and polygons) the real world is represented. Each object stores the location (as adress or coordinates) and further attributes, f. e. name or ID. Which geometry is used, depends on the feature it represents. 
+![Geometry vector data](../../fig/en_vector_geometry.png)
+  >Examples: buildings, streets 
+
+---
+</div>
+<div class="pull-right">
+
+## Raster
+
+---
+Raster data are images which contain a matrix of pixels. Each pixel stores a value. 
+Since a raster is based on an image, the resolution is crucial. It defines the accuracy of the data and size of the pixels. 
+![Raster data quality](../../fig/en_quality_raster.png)
+> Examples (stored as a value): elevation, temperature, land cover
+
+---
+</div>
 
 ## Vector file formats
 
