@@ -193,7 +193,8 @@ This (or similar) is what it looks like in the end:
 --------------------
 ### Move and Zoom
 
-::::{grid}:gutter:2
+::::{grid}
+:gutter:2
 
 :::{grid-item-card} Move the map view
 
@@ -216,7 +217,8 @@ This (or similar) is what it looks like in the end:
 
 ### Properties and Toolbars
 
-::::{grid}:gutter:2
+::::{grid}
+:gutter:2
 
 :::{grid-item-card} Show properties of objects
 
@@ -238,7 +240,8 @@ This (or similar) is what it looks like in the end:
 
 ### Save and Open Project
 
-::::{grid}:gutter:2
+::::{grid}
+:gutter:2
 
 :::{grid-item-card} Save project
 
@@ -257,7 +260,8 @@ This (or similar) is what it looks like in the end:
 
  ### Configuration
 
-::::{grid}:gutter:2
+::::{grid}
+:gutter:2
 
 :::{grid-item-card} Show and hide displays
 
@@ -274,7 +278,8 @@ This (or similar) is what it looks like in the end:
   
 ### Projection of map view (project CRS)
 
-::::{grid}:gutter:2
+::::{grid}
+:gutter:2
 
 :::{grid-item-card} Projection of map view (project CRS)
 
