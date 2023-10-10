@@ -108,33 +108,19 @@ vector                     |  raster
 ![same location as vector data](../../fig/en_same_location_vector.png)  |  ![same location as raster data](../../fig/en_same_location_raster.png)  
 
 
-<div class="pull-left">
-
-## Vector
-
----
-Vector data contains a shape or a geometry. By using geometry objects (points, lines and polygons) the real world is represented. Each object stores the location (as adress or coordinates) and further attributes, f. e. name or ID. Which geometry is used, depends on the feature it represents. 
-![Geometry vector data](../../fig/en_vector_geometry.png)
-  >Examples: buildings, streets 
-
----
-</div>
-<div class="pull-right">
-
-## Raster
-
----
-Raster data are images which contain a matrix of pixels. Each pixel stores a value. 
-Since a raster is based on an image, the resolution is crucial. It defines the accuracy of the data and size of the pixels. 
-![Raster data quality](../../fig/en_quality_raster.png)
-> Examples (stored as a value): elevation, temperature, land cover
-
----
-</div>
-
 ## Vector file formats
 
+Vector data can have the following data formats:
 
+| Filename extension| Name | Description |
+| ----- | --- | --- |
+|.shp | Shapefile |Old but still widely used geodataformat. Can only contain one dataset. The file has to consist of at least three different files (.shp, .shx, .dbf)|
+|.gpkg| GeoPackage  | Very versatile geodata format and the new standard for geodata. Can contain multiple datafiles (vector, raster and not spatial data like tables)|
+|.kml |Keyhole Markup Language | Geodata format for use with [Google Earth]( https://earth.google.com/web/)|
+| .gpx| GPS Exchange Format|Geodata format for the exchange of coordinates. For example for waypoints of tracks. |
+| .geojson|GeoJSON|Similar to shapefiles, but stores all information in a single file. 
+  
 
+![data formats](../../fig/en_data_formats.png)
 
 
