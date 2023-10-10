@@ -47,7 +47,9 @@ To change the projection of a **vector file**, click on *Vector*, *Data Manageme
 
 To change the projection of a **raster file**, clickclick on *Raster*, *Projections*, *Warp (Reproject)*. Choose your input layer and target crs. Click on the three dots to *Save to File...* and click *Run*. For a detailed instruction click on this [video](https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/3b7a1bb2408f4453f22d73f54156888b/qgis_reproject_raster.mp4).
 
-It is crucial that you are aware of the difference in data projection and project projection. They should always be the same, or else you will get wrong results! You can change the data projection by following the steps explained above. The project projection is on the bottom left corner, as seen here. ![QGIS Interface](../../fig/en_QGIS_User_Interface.png) The interface then will be the same and by searching for the right EPSG you can change the projection. 
+It is crucial that you are aware of the difference in data projection and project projection. They should always be the same, or else you will get wrong results! You can change the data projection by following the steps explained above. The project projection is on the bottom left corner, as seen here. 
+![QGIS Interface](../../fig/en_QGIS_User_Interface.png) 
+The interface then will be the same and by searching for the right EPSG you can change the projection. 
 
 ## Excercises
 
