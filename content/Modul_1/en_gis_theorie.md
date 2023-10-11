@@ -2,6 +2,8 @@
 
 ## General information: 
 
+- A Geographic Information System (GIS) is a __digital system that connects data to maps__.
+
 - Geoinformatics in general focus on the __visualisation, organisation and processing of spatial data__. 
 
 - Spatial analyses furthermore allow __to reveal circumstances and connections between spatial data features__: 
@@ -19,30 +21,6 @@ Discuss in groups:
  - Main areas where you see potential for spatial analyses in your work.
 
 ## Introduction to GIS: 
-
-### An informal definition
-
-- Geographic Information System (GIS) uses maps to show __complex information__ clearly and efficiently. 
-- For example, in an __emergency context__, GIS can be used to __visualize on a map__ what is happening, where, how many people are affected, and what their main needs are. 
-- It can help to __summarize information__ from many different sources. 
-- This helps peoples to __quickly understand__ the situation and make better informed decisions.
-
-### A formal definition
-
-- A Geographic Information System (GIS) is a __digital system that connects data to maps__. 
-- It allows us to __collect, manage, analyse, and visualise data__ assigning them a position on __Earth’s surface__. 
-- GIS reveals __deeper insights__ into data, clearly demonstrating patterns and helping us to understand __geographic context__. 
-- Benefits include more __insightful analysis, improved communication, and ultimately better evidence-based decision-making__. 
-- It’s rooted in __geography__, the field of science devoted to the study of the lands, features, inhabitants, and phenomena of the Earth. 
-- GIS software can display __multiple types of data on a map__.
-
-### GIS components
-
- - Hardware
- - Software
- - Data
- - People 
- - Workflows
 
 ### We use GIS for:
 
@@ -75,24 +53,31 @@ A few examples:
 
 # Paper maps and cartography 
 
-### What is spatial analysis?
+## What is spatial analysis?
 
 - Spatial analysis __studies entities and events__ using their topological, geometric, or geographic properties. 
 - It includes a __variety of techniques__ to analyse geographic data. 
-- Data can be added to a map as layers and they can interact with each other. 
+- Data can be __added to a map as layers and they can interact with each other__. 
 - GIS enables you to work with these __layers__ to explore critically important questions and __find answers__ to those questions.
 
-### An example from the past: John Snow’s Cholera map
+### An example from the past: John Snows' Cholera map
 
 In 1854 an __outbreak of cholera__ occurred in London, England. The most common theory was that the disease was spread through the air. Dr.John Snow believed that the danger was __in the water__. He made a map to analyse the __number of deaths__ in Soho per house block. He added the __location of water pumps__ on the map.
 He found a __correlation__ between one specific water pump and the number of infections.
 
+__Dr. Snow's map of the Cholera outbreak of 1854__, and the reports that it accompanied, __won over the predominant "Miasma Theory"__ that the disease __was spread through the air__. Residents were now warned to __boil their water__, and so ended the last Cholera outbreak London has seen.
+
+![John Snows' Map](/fig/en_John_Snows_Map.png) John Snows' Map
+
+__Using GIS__, several measures of spatial central tendency have been applied to the dataset, revealing that the Spatial Mean (the geographic center of the distribution of deaths) of the outbreak lies __within 35 meters of the Broad Street Pump__, identified as the __source of contamination__ in the 1854 outbreak. 
+
+
 ```{Tip}
-Example:
+Further information:
 ```
  - [Let’s explore John Snow’s map](https://www.arcgis.com/apps/PublicInformation/index.html?appid=d7deb67f810d46dfacb80ff80ac224e9)
 
-### GIS vs Cartography
+## GIS vs Cartography
 
 - __Cartography__ is the study and practice of __making maps__.
 - A GIS is a __modern extension__ of traditional cartography. 
@@ -164,32 +149,8 @@ Infrastructure map of Nigeria
 
 ![Situation map from Tilkaif to Mosul](/fig/en_Situation_Map_Tilkaif_Mosul.png)Situation map from Tilkaif to Mosul
  
-### Mapping and GIS
 
-- __Mapping__ focuses on representing spatial phenomena statically (paper formats) or dynamically (web formats) It is a major component of GIS.
-
-- __Geographic Information Systems__ refer to a set of systems related to the processing of geographic information (spatial data) GIS have their own unique software capable of storing, processing, representing and analysing geographical data.
-
-<tagName>  <tagName>
-
-![Structure GIS System](/fig/en_GIS_CartONG01.png) Structure GIS System
-
-![Data behind the Map](/fig/en_Data_behind_the_Map_CartONG02.png) Data behind the Map
-
-![Mapping and GIS - Spreadsheet](/fig/en_Spreadsheet_CartONG03.png) Mapping and GIS-Spreadsheet
-
-![Graphic information](/fig/en_Graphic_information_CartONG04.png) Graphic information
-
-For further information have a look here: 
-
-Share link:
-
-[PDF documentation](/QGIS-Training/QGIS-Dokumente/221013-Module-formation-cartographie-SIG_CartONG_EN-6-10.pdf) Mapping and GIS, p. 6 - 10
-
-<a href=/QGIS-Training/QGIS-Dokumente/221013-Module-formation-cartographie-SIG_CartONG_EN-6-10.pdf>
-Mapping and GIS, p. 6 - 10</a>
- 
-## Examples for GIS created maps 
+## (Further examples for GIS created maps) 
 
 ```
 The battle against Malaria - Burundi -- Coordination in camps - Bangladesh
@@ -286,73 +247,7 @@ Share link:
   
 <a href="https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_4_examples_tools_mdc/3_4_3_tools_webmapping">Webmapping tools</a>
 
-#  Geo Mobile Apps overview (general understanding)
-
-## Why are spatial analyses so important?
-
-```{Tip}
-Discuss in groups:
-```
-- Situations in which you benefitted from spatial analyses
-- Situations in which you could maybe have benefitted from spatial analyses
-- Main areas where you see potential for spatial analyses in your work
-
-## Spatial analyses in QGIS  
-
-### Manual selection of features in QGIS
-
-- Click on the __respective features__ directly in the map: Selection when highlighted in the map and in the attribute table
-
-- Select feature __by polygon__: Choose „Select feature by polygon“ tool and draw a polygon around the feature of interest
-
-<tagName>  <tagName>
-
-![Select Feature](/fig/en_select_feature.png)
-
-### Save selection (same for all selection types)
-
- - Save selected features as __new layer/ file__: 
-   - Right click on layer, choose __„Export“ and „Save selected features as… “__
-   - Choose location where the __data should be saved in__,  
-   - Make sure that the mark at __„Save only selected features“__ is set
-
-  <tagName>  <tagName> 
-   
-![Save vector layer](/fig/en_save_vector_layer.png)
-
-### Select by Location Tool
-
-- Select all features that meet __one or more criteria__ with regard to a spatial reference
-
- <tagName>  <tagName>
-
-![Select by location](/fig/en_select_by_location.png)
-
-- __All features__ that meet one or more criteria with regard to a spatial reference
-
-  - __Example__: Select all features in the Dakar and Thies region.
-
-Step by step:
-
-- Select __features from input layer__ (in example select “healthsites”)
-- Check __all geometric predicates__ that are relevant
-- Select __second input layer__ (in example “Dakar_Thies”)
-- Create __new selection__
-
- <tagName>  <tagName>
-
-![Research tools](/fig/en_research_tools.png)
-
-Combination of spatial queries by choosing in dropdown menu (__„Modify current selection by“__, if multiple selections are conducted in a row)
-
-- Adding to current selection (OR)
-  - __Example__: To identify and select all features that meet only one of the selected criteria
-
-- Selecting within current selection (AND)
-  - __Example__: To identify and select all features that meet all of the selected criteria
-
-- Remove from current selection (AND NOT)
-  - __Example__: To identify and select all features that meet one of the selected criteria but not the other
+#  (Geo Mobile Apps overview (general understanding))
 
 ## Non-Spatial Analyses in QGIS 
 
@@ -555,7 +450,7 @@ Choose __“Join Attributes by Location”__ Tool:
 
 ![Spatial joins](/fig/en_spatial_joins.png)
 
-## A galaxy of tools
+# A galaxy of tools
 GIS comes with a __galaxy of tools__ that are constantly evolving. An increasing number of traditional tools are now capable of supporting geographic information (Excel, Power BI, Adobe Illustrator…)
 
 ### An overview: 
