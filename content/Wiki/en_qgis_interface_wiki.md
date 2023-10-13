@@ -19,13 +19,14 @@
 :gutter: 2
 
 :::{grid-item-card} Move the map view
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_move.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_move.mp4"></video>
+
 
 ![](/fig/qgis_move_symbol.png)
 * You can also move with the arrow keys
 :::
 :::{grid-item-card} Zooming in the map view
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zoom.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zoom.mp4"></video>
 
 ![](/fig/qgis_zoom_symbol.png)
 * You can also zoom by scrolling

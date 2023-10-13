@@ -39,9 +39,8 @@ parts:
   - caption: Modul 1- Introduction GIS
     chapters:
       - file: content/Modul_1/en_gis_theorie.md
-        sections:
-          - file: content/Modul_1/en_qgis_installation_ex1.md
-      - file: content/Modul_1/en_qgis_start.md      
+      - file: content/Modul_1/en_qgis_start.md
+      - file: content/Modul_1/en_qgis_installation.md      
   - caption: Modul 2- Working with Geodata
     chapters:
       - file: content/Modul_2/en_qgis_geodata_concept.md
