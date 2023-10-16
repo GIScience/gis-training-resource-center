@@ -61,31 +61,119 @@ Project template
 
 Have a look at the video examples below:
 
-XXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ````{tab-set}
 ```{tab-item} Move and Zoom
 Move and Zoom
+
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Move the map view
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_move.mp4"></video>
+
+![](/fig/qgis_move_symbol.png)
+* You can also move with the arrow keys
+
+:::
+:::{grid-item-card} Zooming in the map view
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zoom.mp4"></video>
+
+![](/fig/qgis_zoom_symbol.png)
+* You can also zoom by scrolling
+* Or with Ctrl+ or Ctrl-
+
+:::
+
+::::
+
 ```
 
 ```{tab-item} Properties and Toolbars
 Properties and Toolbars
+
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Show properties of objects
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_identify.mp4"></video>
+
+* Make sure to select the layer you want identify features in 
+
+:::
+:::{grid-item-card} Open Toolbar
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_toolbars.mp4"></video>
+
+![](/fig/Geschlossene_Toolbox_01.png)
+* You can also zoom by scrolling
+* Or with Ctrl+ or Ctrl- 
+
+:::
+
+::::
+
 ```
 
 ```{tab-item} Save and Open Project
 Save and Open Project
+
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Save project
+<video width="100%" controls src="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/8e2bb629d9c3189f8f635a4cf1381d2c/qgis_save_project.mp4"></video>
+
+* The layer data used in the project are not saved in the project file
+
+:::
+:::{grid-item-card} Open project
+<video width="100%" controls src="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/1655b97b741749bfa46c6c08ee3d0be6/qgis_open_project.mp4"></video>
+
+:::
+
+::::
+
 ```
 
 ```{tab-item} Configuration
 Configuration
+
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Save project
+<video width="100%" controls src="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/8e2bb629d9c3189f8f635a4cf1381d2c/qgis_save_project.mp4"></video>
+
+* The layer data used in the project are not saved in the project file
+
+:::
+:::{grid-item-card} Open project
+<video width="100%" controls src="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/1655b97b741749bfa46c6c08ee3d0be6/qgis_open_project.mp4"></video>
+
+:::
+
+::::
+
 ```
 
 ```{tab-item} Projection of Map View
 Projection of Map View
+
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Projection of map view (project CRS)
+<video width="100%" controls src="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/325cb2d70b0154c1bd5f38a899cd2b40/qgis_map_projection.mp4"></video> 
+
+:::
+
+::::
+
 ```
 ````
 
-XXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 #### Move and Zoom
 
