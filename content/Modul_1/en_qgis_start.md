@@ -7,13 +7,6 @@
 QGIS is an __open source geoinformation system software__. That means the source code is available for everyone, making QGIS a free application. 
 You may __view, edit, capture and analyze spatial data or create printable maps__ with it. QGIS was created in 2002 and is a project of volunteers. And it is __constantly changing__.
 
-
-## Installation of QGIS  (als separates Kapitel?)
-
-QGIS is open source and therefore freely available to everyone at no cost. You can install QGIS for Windows, Mac and Linux computers. __The actual Long Term Release is QGIS 3.28.11 Firenze__. Generally we recommend to use the __latest Long Term Release__, because it is the most stable and contains the fewest bugs. You can __download__ the latest version here: [https://www.qgis.org/en/site/forusers/download.html](https://www.qgis.org/en/site/forusers/download.html)
-
-For our introduction, the standalone installers from OSGeo4W packages are sufficient for Windows.
-
 ### 32 Bit or 64 Bit?
 
 For Windows operating systems, there is always a 32-bit version and a 64-bit version of each QGIS version available for download. __Which version to install depends on your computer and operating system__. If it is not clear how many bits your operating system has, you can easily find out: Left-click on the Windows icon at the bottom left of the screen (alternatively, open the Windows search function). Type "System" on the keyboard, click on the entry "System" in the search results. Under the item "System type" you can read the bit number.
@@ -26,11 +19,8 @@ For Windows operating systems, there is always a 32-bit version and a 64-bit ver
 
 ### Overview of QGIS Interface
 
-![QGIS_User_Interface](/fig/en_QGIS_User_Interface.png)
-User interface 1 (wird zusammengefasst mit 2)
-
-![GIS_User_Interface01](/fig/en_Interface_01.png)
-User interface 2 (wird zusammengefasst mit 1)
+![QGIS_User_Interface](/fig/en_QGIS_GUI.png)
+User interface 
 
 1. __Layers List / Browser Panel:__ The __layers list__ shows __all layers/files__ that are __loaded in the project__. You can show/hide layers and set other properties.
 
@@ -39,7 +29,9 @@ User interface 2 (wird zusammengefasst mit 1)
  <tagName>  <tagName>
 
 ![Alt text](/fig/en_Interface_02.png)
-User interface
+ <br>
+<tagName>  <tagName>
+Toolbox
 
 3. __Map View:__ The __map view__ is the __central component__ of every GIS programme. This is where the __geodata__ are displayed. The map view has a projection which does not always have to correspond to the projection of the layers.
 
@@ -65,11 +57,13 @@ Exercise: Create a new QGIS project
 Project template
 
 
-### Try out Further Functionalities of QGIS (Video Examples)
+### Try out Further Functionalities of QGIS 
 
-(with collapsable Panels and Links to Wiki: wird ergänzt) 
+Have a look at the tabbed video examples below:
 
-#### Move and Zoom
+````{tab-set}
+```{tab-item} Move and Zoom
+Move and Zoom
 
 ::::{grid}
 :gutter: 2
@@ -92,7 +86,10 @@ Project template
 
 ::::
 
-#### Properties and Toolbars
+```
+
+```{tab-item} Properties and Toolbars
+Properties and Toolbars
 
 ::::{grid}
 :gutter: 2
@@ -103,7 +100,7 @@ Project template
 * Make sure to select the layer you want identify features in 
 
 :::
-:::{grid-item-card} Open Toolbar
+:::{grid-item-card} Open toolbar
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_toolbars.mp4"></video>
 
 ![](/fig/Geschlossene_Toolbox_01.png)
@@ -114,7 +111,10 @@ Project template
 
 ::::
 
-#### Save and Open Project
+```
+
+```{tab-item} Save and Open Project
+Save and Open Project
 
 ::::{grid}
 :gutter: 2
@@ -132,25 +132,10 @@ Project template
 
 ::::
 
+```
 
- #### Configuration
-
-::::{grid}
-:gutter: 2
-
-:::{grid-item-card} Show and hide displays
-<video width="100%" controls src="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/b9ccebc4bd584fdbc5092b4804d8a742/Anzeigen_einblenden_ausblenden.mp4"></video>
-
-:::
-:::{grid-item-card} Move and arrange toolbars
- <video width="100%" controls src="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/07bbf031499eb8da30daaa3bebd24769/qgis_arrange_toolbars.mp4"></video> 
-
-:::
-
-::::
-
-  
-#### Projection of Map View (Project CRS)
+```{tab-item} Projection of Map View
+Projection of Map View
 
 ::::{grid}
 :gutter: 2
@@ -161,4 +146,7 @@ Project template
 :::
 
 ::::
+
+```
+````
 
