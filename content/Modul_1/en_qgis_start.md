@@ -7,13 +7,6 @@
 QGIS is an __open source geoinformation system software__. That means the source code is available for everyone, making QGIS a free application. 
 You may __view, edit, capture and analyze spatial data or create printable maps__ with it. QGIS was created in 2002 and is a project of volunteers. And it is __constantly changing__.
 
-
-## Installation of QGIS  (als separates Kapitel?)
-
-QGIS is open source and therefore freely available to everyone at no cost. You can install QGIS for Windows, Mac and Linux computers. __The actual Long Term Release is QGIS 3.28.11 Firenze__. Generally we recommend to use the __latest Long Term Release__, because it is the most stable and contains the fewest bugs. You can __download__ the latest version here: [https://www.qgis.org/en/site/forusers/download.html](https://www.qgis.org/en/site/forusers/download.html)
-
-For our introduction, the standalone installers from OSGeo4W packages are sufficient for Windows.
-
 ### 32 Bit or 64 Bit?
 
 For Windows operating systems, there is always a 32-bit version and a 64-bit version of each QGIS version available for download. __Which version to install depends on your computer and operating system__. If it is not clear how many bits your operating system has, you can easily find out: Left-click on the Windows icon at the bottom left of the screen (alternatively, open the Windows search function). Type "System" on the keyboard, click on the entry "System" in the search results. Under the item "System type" you can read the bit number.
@@ -26,11 +19,8 @@ For Windows operating systems, there is always a 32-bit version and a 64-bit ver
 
 ### Overview of QGIS Interface
 
-![QGIS_User_Interface](/fig/en_QGIS_User_Interface.png)
-User interface 1 (wird zusammengefasst mit 2)
-
-![GIS_User_Interface01](/fig/en_Interface_01.png)
-User interface 2 (wird zusammengefasst mit 1)
+![QGIS_User_Interface](/fig/en_QGIS_GUI.png)
+User interface 
 
 1. __Layers List / Browser Panel:__ The __layers list__ shows __all layers/files__ that are __loaded in the project__. You can show/hide layers and set other properties.
 
@@ -39,7 +29,9 @@ User interface 2 (wird zusammengefasst mit 1)
  <tagName>  <tagName>
 
 ![Alt text](/fig/en_Interface_02.png)
-User interface
+ <br>
+<tagName>  <tagName>
+Toolbox
 
 3. __Map View:__ The __map view__ is the __central component__ of every GIS programme. This is where the __geodata__ are displayed. The map view has a projection which does not always have to correspond to the projection of the layers.
 
@@ -65,9 +57,35 @@ Exercise: Create a new QGIS project
 Project template
 
 
-### Try out Further Functionalities of QGIS (Video Examples)
+### Try out Further Functionalities of QGIS 
 
-(with collapsable Panels and Links to Wiki: wird ergänzt) 
+Have a look at the video examples below:
+
+XXXXXXXXXXXXXXXXXXXXXXX
+
+````{tab-set}
+```{tab-item} Move and Zoom
+Move and Zoom
+```
+
+```{tab-item} Properties and Toolbars
+Properties and Toolbars
+```
+
+```{tab-item} Save and Open Project
+Save and Open Project
+```
+
+```{tab-item} Configuration
+Configuration
+```
+
+```{tab-item} Projection of Map View
+Projection of Map View
+```
+````
+
+XXXXXXXXXXXXXXXXXXXXXXXX
 
 #### Move and Zoom
 

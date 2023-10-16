@@ -1,6 +1,16 @@
 # QGIS Installation
 QGIS ist Open Source und daher frei und ohne Kosten für jeden verfügbar. Ihr könnt QGIS für Windows, Mac und Linux Rechner installieren. 
 
+xxxxxxxxx
+
+## Installation of QGIS  (als separates Kapitel?)
+
+QGIS is open source and therefore freely available to everyone at no cost. You can install QGIS for Windows, Mac and Linux computers. __The actual Long Term Release is QGIS 3.28.11 Firenze__. Generally we recommend to use the __latest Long Term Release__, because it is the most stable and contains the fewest bugs. You can __download__ the latest version here: [https://www.qgis.org/en/site/forusers/download.html](https://www.qgis.org/en/site/forusers/download.html)
+
+For our introduction, the standalone installers from OSGeo4W packages are sufficient for Windows.
+
+xxxxxxxxxx
+
 ## Windows
 Für die Installation unter Windows verwenden wir den OSGeo4W Netzwerkinstaller. OSGeo4W ist ein Projekt, das Open Geo bezogene Software für Windows einfach zu installieren anbietet. Besucht die Projektseite [https://trac.osgeo.org/osgeo4w/](https://trac.osgeo.org/osgeo4w/) und klickt dort auf den link `Download the ​OSGeo4W network installer`. 
 
