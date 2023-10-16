@@ -100,7 +100,7 @@ Properties and Toolbars
 * Make sure to select the layer you want identify features in 
 
 :::
-:::{grid-item-card} Open Toolbar
+:::{grid-item-card} Open toolbar
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_toolbars.mp4"></video>
 
 ![](/fig/Geschlossene_Toolbox_01.png)
@@ -115,27 +115,6 @@ Properties and Toolbars
 
 ```{tab-item} Save and Open Project
 Save and Open Project
-
-::::{grid}
-:gutter: 2
-
-:::{grid-item-card} Save project
-<video width="100%" controls src="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/8e2bb629d9c3189f8f635a4cf1381d2c/qgis_save_project.mp4"></video>
-
-* The layer data used in the project are not saved in the project file
-
-:::
-:::{grid-item-card} Open project
-<video width="100%" controls src="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/1655b97b741749bfa46c6c08ee3d0be6/qgis_open_project.mp4"></video>
-
-:::
-
-::::
-
-```
-
-```{tab-item} Configuration
-Configuration
 
 ::::{grid}
 :gutter: 2
