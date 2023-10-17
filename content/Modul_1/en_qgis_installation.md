@@ -1,54 +1,50 @@
 # QGIS Installation
-QGIS ist Open Source und daher frei und ohne Kosten für jeden verfügbar. Ihr könnt QGIS für Windows, Mac und Linux Rechner installieren. 
 
-xxxxxxxxx
 
-## Installation of QGIS  (als separates Kapitel?)
-
-QGIS is open source and therefore freely available to everyone at no cost. You can install QGIS for Windows, Mac and Linux computers. __The actual Long Term Release is QGIS 3.28.11 Firenze__. Generally we recommend to use the __latest Long Term Release__, because it is the most stable and contains the fewest bugs. You can __download__ the latest version here: [https://www.qgis.org/en/site/forusers/download.html](https://www.qgis.org/en/site/forusers/download.html)
+QGIS is open source and therefore freely available to everyone at no cost. You can install QGIS for Windows, Mac and Linux computers. The actual __Long Term Release__ is __QGIS 3.28.11 Firenze__. Generally we recommend to use the __latest Long Term Release__, because it is the most stable and contains the fewest bugs. You can __download__ the latest version here: [https://www.qgis.org/en/site/forusers/download.html](https://www.qgis.org/en/site/forusers/download.html)
 
 For our introduction, the standalone installers from OSGeo4W packages are sufficient for Windows.
 
-xxxxxxxxxx
+
+# 32 Bit or 64 Bit?
+For __Windows operating systems__, there is always a 32-bit version and a 64-bit version of each QGIS version available for download. Which version to install depends on your computer and operating system. If it is not clear how many bits your operating system has, you can easily find out: Left-click on the __Windows icon at__ the bottom left of the screen (alternatively, open the Windows search function). Type __"System"__ on the keyboard, click on the entry __"System"__ in the search results. Under the item __"System type"__ you can read the bit number.
 
 ## Windows
-Für die Installation unter Windows verwenden wir den OSGeo4W Netzwerkinstaller. OSGeo4W ist ein Projekt, das Open Geo bezogene Software für Windows einfach zu installieren anbietet. Besucht die Projektseite [https://trac.osgeo.org/osgeo4w/](https://trac.osgeo.org/osgeo4w/) und klickt dort auf den link `Download the ​OSGeo4W network installer`. 
+For the installation under Windows we use the __OSGeo4W network installer__. OSGeo4W is a project that offers __Open Geo related software for Windows__ easy to install. Visit the project page [https://trac.osgeo.org/osgeo4w/](https://trac.osgeo.org/osgeo4w/) click there on the link `Download the ​OSGeo4W network installer`. 
 
-* Achtet darauf während des Installationsprozesses _Advanced Install_ / _Fortgeschrittene Installation_ zu wählen. Nur dann können die für diesen Kurs relevante Software präzise wählen:
+* Make sure to select _Advanced Install_ / _Fortgeschrittene Installation_ during the installation process. 
    - QGIS Desktop
    - GRASS GIS
    - SAGA
   
-Videotutorial: https://www.youtube.com/watch?v=pja_EX0tVZA
+Video tutorial: https://www.youtube.com/watch?v=pja_EX0tVZA
 
-Die gewählte Software wird dann über das Internet heruntergeladen und on-the-fly installiert.
+The selected software is then downloaded via the Internet and installed on-the-fly.
 
 
 ## Mac
 
-__**Ab Version 3.30 muss SAGA per plugin eingebunden werden**__
+__**From version 3.30 SAGA must be integrated via plugin**__
 
- Unter https://qgis.org/en/site/forusers/download.html `Download for macOS` wählen. Dann den Link _Download QGIS_ nutzen. 
+At https://qgis.org/en/site/forusers/download.html select _Download for macOS_. Then use the link  _Download QGIS_. 
 
-In QGIS dann das Plugin _Processing Saga NextGen Provider_ installieren. 
-
-Mehr zu wie man Plugins in QGIS installiert und aktiviert findet ihr hier:
+More about how to install and activate plugins in QGIS can be found here:
 [qgis-Interface#erweiterungen-plugins-installieren](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/qgis-Interface#erweiterungen-plugins-installieren)
 
 ## Linux
 
 __**Ab Version 3.30 muss SAGA per plugin eingebunden werden**__
 
-Für die installation unter Linux Systemen mit apt könnt ihr QGIS installieren:
+For installation on Linux systems with apt you can install QGIS:
 
 ```
 sudo apt install qgis qgis-plugin-grass
 ```
 
-In den herkömmlichen apt Paketquellen wird vermutlich eine ältere Version von QGIS installiert sein. Solltet ihr die Paketquelle [Ubuntugis](https://launchpad.net/~ubuntugis/+archive/ubuntu/ppa) nutzen, beachtet die folgenden installations Hinweise auf https://qgis.org/en/site/forusers/alldownloads.html#repositories
+In the conventional apt package sources, an older version of QGIS will probably be installed. If you are using the package source [Ubuntugis](https://launchpad.net/~ubuntugis/+archive/ubuntu/ppa), observe the following installation notes on https://qgis.org/en/site/forusers/alldownloads.html#repositories
 
-Solltet ihr hierüber eine QGIS Version >3.30 installieren müsst ihr das Plugin _Processing Saga NextGen Provider_ noch installieren. 
+If you install a QGIS version >3.30 you have to install the plugin _Processing Saga NextGen Provider_ . 
 
-Mehr zu wie man Plugins in QGIS installiert und aktiviert findet ihr hier:
+More about how to install and activate plugins in QGIS can be found here:
 [qgis-Interface#erweiterungen-plugins-installieren](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/qgis-Interface#erweiterungen-plugins-installieren)
  
