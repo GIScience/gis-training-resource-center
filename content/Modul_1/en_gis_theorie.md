@@ -45,7 +45,7 @@ A few examples:
 ```
 
  - [REACH Initiative](https://www.reachresourcecentre.info/search/)  
- - [World Food Programme(WFP)](https://hungermap.wfp.org/) 
+ - [World Food Programme (WFP)](https://hungermap.wfp.org/) 
  - [Médecins Sans Frontières (MSF)](https://geo.msf.org/catalogue) 
  - [iMMAP](https://immap.org/products/) 
  - [MapAction](https://maps.mapaction.org/)
@@ -176,7 +176,7 @@ Infrastructure map of Nigeria
 ### GIS Applications
 
 - You can use GIS through __multiple applications__, from desktop software, to online platforms, to mobile apps. 
-- At a basic level, you can perform limited geospatial tasks with apps such as Google Earth or Google Maps.
+- At a basic level, you can perform limited geospatial tasks with apps such as __Google Earth__ or __Google Maps__.
 - As a GIS professional, you will mostly use a __desktop software__, which could be either: Proprietary or Open source.
 
 - __Open Street Maps (OSM)__: 
@@ -197,7 +197,7 @@ Limited, but it allows to upload layers, create and export features, __share sim
 
 - __Qfield__: [https://docs.qfield.org/](https://docs.qfield.org/)
 Through QFieldCloud, you can __open your QGIS projects__ on Qfield on your mobile device. Any edit made on the map in the app can then be synced and displayed in QGIS.
-- __OsmAnd__: [https://osmand.net/](https://osmand.net/).
+- __OsmAnd__: [https://osmand.net/](https://osmand.net/)
 Using OSM basemap, it’s a good app for __offline navigation__. You can upload kml-files to display on the map, as well as recording your trips and then export them to kml.
 - __GeoODK__: [http://geoodk.com/index.html](http://geoodk.com/index.html)
 Combines __ODK with a geo app__. You can collect data through ODK surveys and display them on a map, in addition to easily create polygons and add information to them.
@@ -205,10 +205,10 @@ Combines __ODK with a geo app__. You can collect data through ODK surveys and di
 <tagName>  <tagName>
 
 
-### Non-Spatial Analyses in QGIS 
+## Non-Spatial Analyses in QGIS 
 
 
-#### Geoprocessing Tools - Overview and Selection
+### Geoprocessing Tools - Overview and Selection
 
 ![Geoprocessing icons](/fig/en_geoprocessing_icons.png)
 
@@ -261,7 +261,7 @@ Fukushima: may 2011, Integrated doce results<br>
 
 ![Aerial measuring results](/fig/en_Aerial_measuring_results.jpg)
 
-#### Buffer: with and without “Dissolve”
+### Buffer: with and without “Dissolve”
 
 With dissolve results:
 
@@ -271,7 +271,7 @@ Without dissolve results:
 
 ![Without dissolve results](/fig/en_without_dissolve_results.png) 
 
-#### Non-Spatial Joins in QGIS
+## Non-Spatial Joins in QGIS
 
 - Choose __“Join Attributes by Field Value”__ Tool (use search tool):
 
@@ -301,7 +301,7 @@ If a table join does not work via the “Join Attributes by Field Value” tool,
 
 ![Add vector join](/fig/en_add_vector_join.png)
 
-#### Spatial Joins in QGIS
+## Spatial Joins in QGIS
 
 Choose __“Join Attributes by Location”__ Tool:
 - Adds __additional attributes__ of the join layer to the input layer based on the spatial relationship
