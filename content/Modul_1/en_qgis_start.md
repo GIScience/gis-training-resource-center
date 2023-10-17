@@ -150,3 +150,6 @@ Projection of Map View
 ```
 ````
 
+See also:
+ [corresponding page in the Wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
+
