@@ -13,7 +13,7 @@ You may __view, edit, capture and analyze spatial data or create printable maps_
 
 - QGIS is backed by a __large community of users__, so it’s easy to find solutions to technical issues by using QGIS forums, blog and subreddit.
 
-### Overview of QGIS Interface
+### QGIS Interface
 
 ![QGIS_User_Interface](/fig/en_QGIS_GUI.png)
 User interface 
@@ -52,99 +52,54 @@ Exercise: Create a new QGIS project
 ![Project template](/fig/en_project_template_BRC.png)
 Project template
 
+### Move and Zoom
 
-### Try out Further Functionalities of QGIS 
+#### Move the map view
 
-Have a look at the tabbed video examples below:
-
-````{tab-set}
-```{tab-item} Move and Zoom
-Move and Zoom
-
-::::{grid}
-:gutter: 2
-
-:::{grid-item-card} Move the map view
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_move.mp4"></video>
 
 ![](/fig/qgis_move_symbol.png)
-* You can also move with the arrow keys
+* You can also move with the _arrow keys_
 
-:::
-:::{grid-item-card} Zooming in the map view
+#### Zooming in the map view
+
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zoom.mp4"></video>
 
 ![](/fig/qgis_zoom_symbol.png)
 * You can also zoom by scrolling
 * Or with Ctrl+ or Ctrl-
 
-:::
+#### Show properties of objects
 
-::::
-
-```
-
-```{tab-item} Properties and Toolbars
-Properties and Toolbars
-
-::::{grid}
-:gutter: 2
-
-:::{grid-item-card} Show properties of objects
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_identify.mp4"></video>
 
 * Make sure to select the layer you want identify features in 
 
-:::
-:::{grid-item-card} Open toolbar
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_toolbars.mp4"></video>
+#### Set the projection of the map view (project CRS)
 
-![](/fig/Geschlossene_Toolbox_01.png)
-* You can also zoom by scrolling
-* Or with Ctrl+ or Ctrl- 
+<video width="100%" controls src="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/325cb2d70b0154c1bd5f38a899cd2b40/qgis_map_projection.mp4"></video>
 
-:::
+#### Save and Open Project
 
-::::
-
-```
-
-```{tab-item} Save and Open Project
-Save and Open Project
-
-::::{grid}
-:gutter: 2
-
-:::{grid-item-card} Save project
 <video width="100%" controls src="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/8e2bb629d9c3189f8f635a4cf1381d2c/qgis_save_project.mp4"></video>
 
-* The layer data used in the project are not saved in the project file
-
-:::
-:::{grid-item-card} Open project
 <video width="100%" controls src="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/1655b97b741749bfa46c6c08ee3d0be6/qgis_open_project.mp4"></video>
 
-:::
 
-::::
+*  The layer data used in the project is not saved in the project file. Instead, the project file only contains the file paths where the layer data were located at the time the project was last saved on the PC. If the location of this layer data is subsequently changed, the error message "handle unavailable layers" will appear when the project is opened again.
+Good data organisation with a fixed and well thought-out folder structure prevents such problems.
 
-```
+#### Show and hide displays
 
-```{tab-item} Projection of Map View
-Projection of Map View
+<video width="100%" controls src="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/b9ccebc4bd584fdbc5092b4804d8a742/Anzeigen_einblenden_ausblenden.mp4"></video> 
 
-::::{grid}
-:gutter: 2
+#### Move and arrange toolbars
 
-:::{grid-item-card} Projection of map view (project CRS)
-<video width="100%" controls src="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/325cb2d70b0154c1bd5f38a899cd2b40/qgis_map_projection.mp4"></video> 
+*   At each toolbar there is a field of two dotted lines. If you move the mouse pointer over it until an arrow cross appears and then hold down the left mouse button, you can move the toolbar. This allows an individualised arrangement of your own tools. By compressing all toolbars into a few lines, the map view window can also be enlarged.
 
-:::
+<tagName>  <tagName>
 
-::::
-
-```
-````
+<video width="100%" controls src="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/07bbf031499eb8da30daaa3bebd24769/qgis_arrange_toolbars.mp4"></video>
 
 See also:
  [corresponding page in the Wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
