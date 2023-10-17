@@ -1,13 +1,9 @@
-# Map design- Basic
-**Competences:**
-* Map design
-
-
-# Representation
+# Graphical Variables and Symbology
 
 The representation of geodata in maps is crucial in order to provide useful location-based insights. This subchapter will cover the basics of good map design, how to create a map design in QGIS as well as common mistakes when designing or interpreting maps.
 
 ## Types of maps
+>remove probably
 
 In general, there are two main types of maps: __topographic maps__ and __thematic maps__.
 
@@ -97,8 +93,6 @@ For each layer in QGIS, there is a styling panel where you can change the symbol
 
 ~~In the styling panel, you can change the symbology (1) and the labels (2).~~
 
-## Colors
-
 
 ## Symbology
 
@@ -108,21 +102,105 @@ For each layer in QGIS, there is a styling panel where you can change the symbol
 - Symbology is applied to layers, but within the same layer we can assign multiple styles to features
 - the symbology of a layer can be __changed based on one of its attributes__
 
-### Symbology for Vector data
+## Colours
 
-As we have already learned, vector data can be either points, lines, or polygons. There are multiple ways these 
+Colours are arguably the most striking visual variables as they are easily disinguishable. However, depending on the type of data and the information you wish to convey, there are a few things to consider when choosing a colour scheme for your map. The most important variables for colours are the __hue__ and the __value__ (saturation, transparency). 
+> look for correct words  
 
+Colours schemes can be __categorial, sequential, or diverging__. If you wish to display different types of buildings or roads, the colour schemes should be categorial. Colour gradients, either sequential or diverging, are used for numerical data or data that can be ordered. For example, for the population sizes of districts a sequential colouring schemes is best to show the relative difference between the values. However, if the data has positive __and__ negative values, a diverging colour gradient should be used.
+
+``` {figure} ../../fig/en_Colour_Gradients_6.png
+---
+name: Colouring schemes
+width: 750px
+---
+Different types of colouring schemes
+```
+
+When choosing colour gradients, a clear gradient from lighter to darker colours is the best most of the times as the gradation is easily distinguishable and translates well into black and white. In the figure below, example A) and B) are not ideal as it is difficult to make out the gradation and it does not translate into black and white. You can achieve a clear sequence by grading the __saturation__ of the colour gradient.
+
+``` {figure} ../../fig/en_colour_gradients_saturation
+---
+name: colour gradients saturation example
+width: 800px
+---
+Examples for different colour gradients translated into black and white. Pay attention to the saturation gradient
+```
+
+Colour gradients can also encompass several hues
+
+```{figure} ../../fig/Colour_Gradients_2
+---
+name: colour gradient hues
+width: 750px
+---
+Single hue gradient on the left; Multiple hue gradient on the right
+```
+
+
+### Colour Blindness
+
+When choosing the colours, you have to keep in mind that colour gradients (especially diverging Red-Green gradients) can be hard or impossible to distinguish for persons with colour blindness.
+
+``` {figure} ../../fig/Colour_Blindness
+---
+name: colour blindness examples
+width: 750px
+---
+Different Colour schemes for the Colour Vision Impaired; Source: Jenny, Bernhard, and Nathaniel Vaughn Kelso. (2007). Color Design for the Color Vision Impaired. *Cartographic Perspectives*, no. 58 (September 1, 2007): 61-67. https://doi.org/10.14714/CP58.270 
+```
+
+
+## Symbology for Vector data
+
+You can use graphical variables to style vector data. As we have already learned, vector data can be either points, lines, or polygons. There are different options to symbolize these different types of vector data.
+
+
+``` {figure} ../../fig/en_symbolization_vector_data
+---
+name: symbolization for vector data
+width: 750px
+---
+Symbolization for vector data; Source: White, T. (2017). Symbolization and the Visual Variables. *The Geographic Information Science & Technology Body of Knowledge (2nd Quarter 2017 Edition), John P. Wilson (ed.). DOI: 10.2222/gistbok/2017.2.3 
+```
 
 ---
-> Move these exercises into the excercise.md? 
 
+### Symbology for points
 
+For point data, you can 
 
-### Symbology for raster data
+### Symbology for lines
 
+### Symbology for polygons
 
+## Symbology for raster data
 
-### Labels
+As we have already learned, raster data are basically a grid of pixels with different (numerical) values. As such, you can't style the shape, fill or outline of raster data. It is only possible to assign colours to the different values of the pixels.
+
+### Assigning a colour gradient to raster data
+
+To assign a colour gradient for raster data, you need to:
+
+1. Open the styling panel for the raster layer
+2. Navigate to the Symbology tab  
+3. By default, the colour scheme is set to Singleband gray (if you only have one colour band in the data set). Click on __Singleband gray__ and switch to __Singleband pseudocolour__
+4. Click on the arrow to the right of the colour ramp. Here you can choose a premade colour ramp
+5. You can modify the colour ramp by clicking on the colour ramp itself
+
+``` {figure} ../../fig/en_30.30.2_raster_data_colour_gradient.png
+---
+name: raster data colour gradient
+width 750px
+---
+Colour Ramp Selector
+```
+
+In the colour ramp selector, you can adjust each colour step. On the bottom, you can see a plot for the Hue, __Saturation__, __Lightness__ and __Opacity__. Especially latter three are useful to see how your colour ramp will translate.
+
+>
+
+## Labels
 
 - Labels are text that show a specific attribute of features. 
 - It is useful to add labels to features to easily identify them. For example, the name of a settlement.
@@ -180,4 +258,4 @@ name: rule-based labels expression builder
 ---
 The expression builder: Expression (left); building blocks, operators, fields and values(center); unique values (right)
 ```
-
+>Add underligned labels and an example on how to add the street names
