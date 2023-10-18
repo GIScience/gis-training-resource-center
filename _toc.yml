@@ -39,7 +39,7 @@ parts:
           - file: content/Wiki/en_qgis_non_spatial_joins_wiki.md      
   - caption: Modul 1- Introduction GIS
     chapters:
-      - file: content/Modul_1/en_gis_theorie.md
+      - file: content/Modul_1/en_qgis_theorie.md
       - file: content/Modul_1/en_qgis_start.md
       - file: content/Modul_1/en_qgis_installation.md      
   - caption: Modul 2- Working with Geodata
