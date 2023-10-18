@@ -5,11 +5,12 @@ QGIS is open source and therefore freely available to everyone at no cost. You c
 
 For our introduction, the standalone installers from OSGeo4W packages are sufficient for Windows.
 
+## Windows
 
-## 32 Bit or 64 Bit?
+### 32 Bit or 64 Bit?
 For __Windows operating systems__, there is always a 32-bit version and a 64-bit version of each QGIS version available for download. Which version to install depends on your computer and operating system. If it is not clear how many bits your operating system has, you can easily find out: Left-click on the __Windows icon at__ the bottom left of the screen (alternatively, open the Windows search function). Type __"System"__ on the keyboard, click on the entry __"System"__ in the search results. Under the item __"System type"__ you can read the bit number.
 
-## Windows
+### Installation 
 For the installation under Windows we use the __OSGeo4W network installer__. OSGeo4W is a project that offers __Open Geo related software for Windows__ easy to install. Visit the project page [https://trac.osgeo.org/osgeo4w/](https://trac.osgeo.org/osgeo4w/) select there _Download the ​OSGeo4W network installer_. 
 
 * Make sure to select _Advanced Install_ / _Fortgeschrittene Installation_ during the installation process. 
@@ -33,7 +34,7 @@ More about how to install and activate plugins in QGIS can be found here:
 
 ## Linux
 
-__**Ab Version 3.30 muss SAGA per plugin eingebunden werden**__
+__**From version 3.30 SAGA must be integrated via plugin**__
 
 For installation on Linux systems with apt you can install QGIS:
 

@@ -52,7 +52,7 @@ Exercise: Create a new QGIS project
 ![Project template](/fig/en_project_template_BRC.png)
 Project template
 
-### Move and Zoom
+### Further Functionalities
 
 #### Move the map view
 
@@ -79,14 +79,17 @@ Project template
 
 <video width="100%" controls src="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/325cb2d70b0154c1bd5f38a899cd2b40/qgis_map_projection.mp4"></video>
 
-#### Save and Open Project
+* Geodata concepts are explained in detail in [module 2](../Modul_2/en_qgis_geodata_concept.md)
 
-<video width="100%" controls src="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/8e2bb629d9c3189f8f635a4cf1381d2c/qgis_save_project.mp4"></video>
+#### Open Project
 
 <video width="100%" controls src="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/1655b97b741749bfa46c6c08ee3d0be6/qgis_open_project.mp4"></video>
 
+#### Save Project
 
-*  The layer data used in the project is not saved in the project file. Instead, the project file only contains the file paths where the layer data were located at the time the project was last saved on the PC. If the location of this layer data is subsequently changed, the error message "handle unavailable layers" will appear when the project is opened again.
+<video width="100%" controls src="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/8e2bb629d9c3189f8f635a4cf1381d2c/qgis_save_project.mp4"></video>
+
+*  The layer data used in the project are not saved in the project file. Instead, the project file only contains the file paths where the layer data were located at the time the project was last saved on the PC. If the location of this layer data is subsequently changed, the error message "handle unavailable layers" will appear when the project is opened again.
 Good data organisation with a fixed and well thought-out folder structure prevents such problems.
 
 #### Show and hide displays
