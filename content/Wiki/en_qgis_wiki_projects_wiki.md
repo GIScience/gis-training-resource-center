@@ -16,7 +16,7 @@ __Create a new QGIS Project__
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_new_project.mp4"></video>
 
-3. Safe the new project in the `Project` folder in the standard folder structure and give the project a suitable name. Click on `Project` -> `Save As`
+3. Safe the new project in the `Project` folder in the standard folder structure and git pus. Click on `Project` -> `Save As`
 ```{Tip}
 Do not use spaces ` ` in the name. instet always use underscors `_`
 ```
@@ -48,3 +48,5 @@ __Open QGIS Project__
 ## Standard Folder Structure 
 
 ![](/fig/Standard_folder_structure.svg)
+
+![](/fig/Standard_project_folder_structure.drawio)
