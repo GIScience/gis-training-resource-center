@@ -1,11 +1,11 @@
-# QGIS manage Projects and Geodata
+# Projects and Folder Structure 
 
 In this wiki article, best practices for the creation and management of QGIS projects and geodata is presented.
 
 ## Step-by-step: Setting up a new QGIS project from scratch
 
 ```{Tip}
-It is good practice to use a standardized folder structure for QGIS projects in which the project, all used geodata, styling files and documentation is stored
+It is good practice to use a __standard folder structure__ for QGIS projects in which the project, all used geodata, styling files and documentation is stored
 ```
 
 1. Copy the standard folder structure for QGIS projects to the place you want to store your whole project. You can download the standard folder structure *here*.
@@ -47,5 +47,11 @@ __Open QGIS Project__
 
 ## Standard Folder Structure 
 
+The standard folder structure has two principal advantages:
+1. By sharing the whole project folder, we can be certain that the project will run without problems on a different computer.
+2. The folder structure supports the proper organization of geodata and supports the stable function of a QGIS project. 
+
+The folder structure template can be downloaded [__here__](/fig/GIS_Project_folder_template.zip).
 
 ![](/fig/Standard_project_folder_structure.drawio.svg)
+
