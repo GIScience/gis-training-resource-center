@@ -1,26 +1,33 @@
 # Geodata Selection and Queries
 
-**Geodata queries**
+## Geodata queries
 
 Spatial queries allows you to select features in layers by their spatial relationships (intersect, contain, touch etc.) with features from another layer. In Qgis, this functionality is available via the selection by location and extract by location processing tools.
 
-**Spatial queries**: select by click
+### Spatial queries: select by click
 
 This section demonstrate how to select an area or location by just a click and view its spatial features. Below is a map of Nigeria. Click on the icon number 1 which is the select feature and click on any part of the map that you want to select. See point number 2 which has already shown yellow as the selected area. Open the attribute table through the layer pannel, number 3 and click on number 4 to just view the feature of the selected part by clicking on selected features, then you arrive at number 6 which display only selected features.
 
 ![](/fig/Select_by_click.png)
 
+See video of select by click
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Select_by_click.mp4"></video>
 
 
 
-**Spatial queries**: select by polygon
+### Spatial queries: select by polygon
 
 This section is similar to selection by click. Only that you will select features by polygon from number 1 and draw the polygon on the area you want to cover or view and then right click. you will see that the polygon area will be selected in yellow color just like number 3. View the attribute table and click on number 6 to show only selected features in the polygon that you have created. You can use icon number 7 to deselect features. 
 
 ![](/fig/Select_by_polygon.png)
 
+See video of select by radius
 
-**Spatial queries**: select by location
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Select_by_radius.mp4"></video>
+
+
+### Spatial queries: select by location
 
 This section can not only be used to show the features but also to get visual idea of the spatial relationship of different areas together. It has several spatial query operations which includes intersect, contain, disjoint, equal, touch, overlap, are within and cross.
 
@@ -34,6 +41,12 @@ This section can not only be used to show the features but also to get visual id
 
 ![](/fig/Select_by_location_intersect_output.png)
 
+
+See video of select by location with intersect
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Select_by_location_intersect.mp4"></video>
+
+
 Additionally, you can play around all the geometric predictions of the features to be familiar with them. The example below shows selection by location by disjoint. We loaded neighboring countires to be disjointed from Nigerian map and now you can see all the disjointed countries in yellow color. 
 
 ![](/fig/Select_by_location_disjoint.png)
@@ -42,16 +55,14 @@ You can see the features of those countries by attribute table and show selected
 
 
 
-
-
-**Non-spatial queries**
+## Non-spatial queries
 
 Non-spatial queries describe characteristics of the features and this query show a place or feature irrespective of its location i.e. **what** instead of **where**. It is totally independent of geographic location and not relating to, occupying, or having the character of space. Non-spatial queries are crucial for analyzing and understanding the data associated with the spatial features in a GIS project, providing insights and facilitating decision-making based on non-spatial attributes. Non-spatial data is also known as attribute data.
 
 There are two ways by which you can select and show the features of non-spatial data. Among which are manual selection or just by click and select by expression (arithmetic operators, string operators, logical operator etc.).
 
 
-**Manual selection**
+### Manual selection
 
 We want to manually select three regions in the below vector layer through the attribute table. Open the attribute table, select any of the place you would like to select, press control bottom on your PC and click on any other features you would like to select. Then, you can click on show selected features and it will be automatically highlighted in yellow color on the Qgis display panel.
 
@@ -59,9 +70,13 @@ We want to manually select three regions in the below vector layer through the a
 ![](/fig/Manual_select_by_attribute_table.png)
 
 
+See video
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Manual_selection.mp4"></video>
 
 
-**Select by Expression**
+
+
+### Select by Expression
 
 You can use the “Select by expression” option in the **layer properties** (see icon 1) or through the **Select** menu in the attribute table (see icon 2) to apply an expression to a layer. Sometimes, you can also find the icon of select by expression at (see icon 3) by click on it and choose select features by expression or just by Ctrl plus F3 on your key board. This option can be used to select features based on attribute data. Icon 4 is the select by expression command prompt where your expression will be written.
 
@@ -69,8 +84,7 @@ You can use the “Select by expression” option in the **layer properties** (s
 
 
 
-
-**Select by Expression** - Arithmetic operators (integer, float fields).
+### Select by Expression- Arithmetic operators (integer, float fields)
 
 •	>, <, =, !=
 
@@ -88,14 +102,18 @@ You can use the “Select by expression” option in the **layer properties** (s
 ![](/fig/Select_by_Expression_greater_a.png)
 
 
-
 The below are the thelve features selected.
 
 ![](/fig/Select_by_Expression_greater_b.png)
 
 
+See video
 
-**Select by Expression** - String operators (text fields e.g “Like”)
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Select_by_expression_arithmetic_operators.mp4"></video>
+
+
+
+### Select by Expression- String operators (text fields e.g “Like”)
 
 •	Imagine you want to select a country like Nigeria.
 
@@ -117,7 +135,8 @@ To select by expression by like, please follow this steps:
 
 
 
-**Select by Expression** - Placeholder (e.g %)
+### Select by Expression- Placeholder (e.g %)
+
 •	Imagine you want to select all the countries that ends with **’a’**
 
 ![](/fig/Select_by_Expression_placeholder.png)
@@ -129,8 +148,7 @@ To select by expression by like, please follow this steps:
 5.	Click on Select features to see all the countries that ends with **a**.
 
 
-
-**Select by Expression** - Logical operators (AND, OR)
+### Select by Expression- Logical operators (AND, OR)
 
 This selection adds one or two command expression together. For example, you want to select the state that has more than 12 million in shape length AND that has more than 3 million shape area simultaneously from the map of 37 States of Nigeria. Then this command holds: **"Shape Length" > 12 AND  "Shape_Area" > 3** .
 
@@ -141,14 +159,14 @@ This selection adds one or two command expression together. For example, you wan
 You can get it down by a click on Fields and Values, proceed to click on Shape length and input your arithmetic operator > with the figure of your choice via Operators, then add the connector which is **AND** and go back to Fields and Values to input the second command of Shape area and add the arithmetic operator of > with the figure you want. Lastly, click on select features to see the states that have shape length of more than 12 million and at the same time having shape area of more than 3 million. Visit the attribute table to see the selected features.
 
 
+## Save selected features
 
+How to save selected features as a new file?
 
-**Save selected features as a new file**
 You can save the selected features as a new shape file.
 1.	Click on Layer properties
 2.	Click on Export
 3.	Save only selected features
-
 
 ![](/fig/Save_selected_features_by_export.png)
 
@@ -162,4 +180,9 @@ You can save the selected features as a new shape file.
 •	Then, it will automatically appear on your Layer panel as seen below.
 
 ![](/fig/Save_selected_features_by_export_a.png)
+
+
+The video below shows how to export and save selected features.
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Saved_selected_features.mp4"></video>
 
