@@ -51,7 +51,7 @@ The standard folder structure has two principal advantages:
 1. By sharing the whole project folder, we can be certain that the project will run without problems on a different computer.
 2. The folder structure supports the proper organization of geodata and supports the stable function of a QGIS project. 
 
-The folder structure template can be downloaded [__here__](/fig/GIS_Project_folder_template.zip).
+The folder structure template can be downloaded [__here__](https://github.com/GIScience/gis-training-resource-center/blob/main/fig/GIS_Project_folder_template.zip).
 
 ![](/fig/Standard_project_folder_structure.drawio.svg)
 

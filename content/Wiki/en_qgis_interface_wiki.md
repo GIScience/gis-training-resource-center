@@ -63,6 +63,6 @@ Make sure to select the layer you want identify featuers in
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Show_display.mp4"></video>
 
-### Move and arrange toolbars
+### Move and arrange toolbars and panels
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_arrange_toolbars.mp4"></video>
