@@ -31,3 +31,9 @@ Raster data can have the following data formats:
 | ----- | --- | --- |
 |.csv|comma-separated values|Very common data format which separates data with commas or other delimiters.|
 |.xls|EXCEL|Data format used for EXCEL. EXCEL is a widely used spreadsheet program.|
+
+## Good practices
+
+The video below gives a good overview of geodata formats and gives tips on file naming and other good practices.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kggwFZHXCl4?si=i2lLEo0u0wGdB759" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
