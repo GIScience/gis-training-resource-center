@@ -48,4 +48,4 @@ __Open QGIS Project__
 ## Standard Folder Structure 
 
 
-![](/fig/standard_project_folder_structure.svg)
+![](/fig/Standard_project_folder_structure.drawio.svg)
