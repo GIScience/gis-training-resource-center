@@ -19,8 +19,6 @@ ___
 
 ## Move & Zoom
 
-
-
 ### Move the map view
 
 ![](/fig/qgis_move_symbol.png)
@@ -35,11 +33,9 @@ ___
 * Or with Ctrl+ or Ctrl-
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zoom.mp4"></video>
-
 ___
 
 ## Properties
-
 
 ### Show properties of objects
 
@@ -66,3 +62,5 @@ Make sure to select the layer you want identify featuers in
 ### Move and arrange toolbars and panels
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_arrange_toolbars.mp4"></video>
+
+*QGGIS Version 3.22.15*
