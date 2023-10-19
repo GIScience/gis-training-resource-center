@@ -10,7 +10,7 @@ parts:
         sections:
           - file: content/Wiki/en_qgis_installation_wiki.md
           - file: content/Wiki/en_qgis_interface_wiki.md
-          - file: content/Wiki/en_qgis_wiki_projects_wiki.md
+          - file: content/Wiki/en_qgis_projects_folder_structure_wiki.md
           - file: content/Wiki/en_qgis_projections_wiki.md
           - file: content/Wiki/en_qgis_basemaps_wiki.md
           - file: content/Wiki/en_qgis_plugins_wiki.md
@@ -39,7 +39,7 @@ parts:
           - file: content/Wiki/en_qgis_non_spatial_joins_wiki.md      
   - caption: Modul 1- Introduction GIS
     chapters:
-      - file:# content/Modul_1/en_qgis_theorie.md
+      - file: content/Modul_1/en_qgis_theorie.md
       - file: content/Modul_1/en_qgis_start.md
       - file: content/Modul_1/en_qgis_installation.md      
   - caption: Modul 2- Working with Geodata
