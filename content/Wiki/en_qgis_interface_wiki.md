@@ -3,7 +3,7 @@
 ## Overview of QGIS Interface
 
 
-![](/fig/gui_numbered.png)   
+![](/fig/en_QGIS_GUI.png)   
 
 1. __Layers List / Browser Panel:__ The layers list shows all layers/files that are loaded in the project. You can show/hide layers and set other properties.
 2. __Toolbars:__  Toolbars are shortcuts to execute frequently used commands. For example, there are special toolbars for vector and raster files, but also general ones for saving your project, etc. The toolbar contains, among other things, a list of all the commands you can use. The toolbar also contains the toolbox, which is used later in many of the wiki videos.
@@ -13,49 +13,54 @@
 5. __Side Toolbar__: You may see a side toolbar. This is another way to easily open vector and raster files in QGIS.
 6. __Locator bar:__ Here you can search for tools and layers. If you don't know where to find a tool, you can try here.
 
+__Offical QGIS Documentation: [An Overview of the Interface](https://docs.qgis.org/3.4/de/docs/training_manual/introduction/overview.html)__
+
+___
+
 ## Move & Zoom
 
-::::{grid}
-:gutter: 2
-
-:::{grid-item-card} Move the map view
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_move.mp4"></video>
+### Move the map view
 
 ![](/fig/qgis_move_symbol.png)
 * You can also move with the arrow keys
-:::
-:::{grid-item-card} Zooming in the map view
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zoom.mp4"></video>
+
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_move.mp4"></video>
+
+### Zooming in the map view
 
 ![](/fig/qgis_zoom_symbol.png)
 * You can also zoom by scrolling
 * Or with Ctrl+ or Ctrl-
 
-:::
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zoom.mp4"></video>
+___
 
-::::
+## Properties
 
-# Properties and Toolbars
+### Show properties of objects
 
+```{Note}
+Make sure to select the layer you want identify featuers in 
+```
 
-
-::::{grid}
-:gutter: 2
-
-:::{grid-item-card} Show properties of objects
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_identify.mp4"></video>
 
-* Hint: make sure to select the layer you want identify featuers in 
-:::
-:::{grid-item-card} Open Toolbar
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_toolbars.mp4"></video>
+## Toolbars
+
+### Open Toolbox
 
 ![](/fig/Geschlossene_Toolbox_01.png)
 * You can also zoom by scrolling
 * Or with Ctrl+ or Ctrl- 
 
-:::
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_toolbars.mp4"></video>
 
-::::
+### Show and hide displays and toolbars
 
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Show_display.mp4"></video>
 
+### Move and arrange toolbars and panels
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_arrange_toolbars.mp4"></video>
+
+*QGGIS Version 3.22.15*

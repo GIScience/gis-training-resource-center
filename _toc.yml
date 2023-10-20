@@ -10,8 +10,9 @@ parts:
         sections:
           - file: content/Wiki/en_qgis_installation_wiki.md
           - file: content/Wiki/en_qgis_interface_wiki.md
-          - file: content/Wiki/en_qgis_basemaps_wiki.md
+          - file: content/Wiki/en_qgis_projects_folder_structure_wiki.md
           - file: content/Wiki/en_qgis_projections_wiki.md
+          - file: content/Wiki/en_qgis_basemaps_wiki.md
           - file: content/Wiki/en_qgis_plugins_wiki.md
           - file: content/Wiki/en_qgis_data_sources_wiki.md
       - file: content/Wiki/en_qgis_geodata_wiki.md
@@ -38,10 +39,9 @@ parts:
           - file: content/Wiki/en_qgis_non_spatial_joins_wiki.md      
   - caption: Modul 1- Introduction GIS
     chapters:
-      - file: content/Modul_1/en_gis_theorie.md
-        sections:
-          - file: content/Modul_1/en_qgis_installation_ex1.md
-      - file: content/Modul_1/en_qgis_start.md      
+      - file: content/Modul_1/en_qgis_theorie.md
+      - file: content/Modul_1/en_qgis_start.md
+      - file: content/Modul_1/en_qgis_installation.md      
   - caption: Modul 2- Working with Geodata
     chapters:
       - file: content/Modul_2/en_qgis_geodata_concept.md
@@ -67,10 +67,10 @@ parts:
   - caption: Modul 4- Representation
     chapters:
       - file: content/Modul_4/en_qgis_map_design_I.md
-      - file: en_qgis_map_design_2.md
+      - file: content/Modul_4/en_qgis_map_design_2.md
         sections:
-          - file: content/Modul_3/en_qgis_map_design_I_ex1.md
-          - file: content/Modul_3/en_qgis_map_design_I_ex2.md
+          - file: content/Modul_4/en_qgis_map_design_I_ex1.md
+          - file: content/Modul_4/en_qgis_map_design_I_ex2.md
   - caption: Modul 5- Intermediate GIS operation
     chapters:
       - file: content/Modul_5/en_qgis_spatial_tools.md
