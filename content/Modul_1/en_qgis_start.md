@@ -54,7 +54,7 @@ Project template
 
 ### Further Functionalities
 
-#### Move the map view
+#### Moving the map view
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_move.mp4"></video>
 
@@ -77,24 +77,25 @@ Project template
 
 #### Set the projection of the map view (project CRS)
 
-<video width="100%" controls src="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/325cb2d70b0154c1bd5f38a899cd2b40/qgis_map_projection.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_map_projection.mp4"></video>
 
 * Geodata concepts are explained in detail in [module 2](../Modul_2/en_qgis_geodata_concept.md)
 
 #### Open Project
 
-<video width="100%" controls src="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/1655b97b741749bfa46c6c08ee3d0be6/qgis_open_project.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_project.mp4">
+</video>
 
 #### Save Project
 
-<video width="100%" controls src="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/8e2bb629d9c3189f8f635a4cf1381d2c/qgis_save_project.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_save_project.mp4"></video>
 
 *  The layer data used in the project are not saved in the project file. Instead, the project file only contains the file paths where the layer data were located at the time the project was last saved on the PC. If the location of this layer data is subsequently changed, the error message "handle unavailable layers" will appear when the project is opened again.
 Good data organisation with a fixed and well thought-out folder structure prevents such problems.
 
 #### Show and hide displays
 
-<video width="100%" controls src="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/b9ccebc4bd584fdbc5092b4804d8a742/Anzeigen_einblenden_ausblenden.mp4"></video> 
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Anzeigen_einblenden_ausblenden.mp4"></video> 
 
 #### Move and arrange toolbars
 
@@ -102,7 +103,7 @@ Good data organisation with a fixed and well thought-out folder structure preven
 
 <tagName>  <tagName>
 
-<video width="100%" controls src="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/uploads/07bbf031499eb8da30daaa3bebd24769/qgis_arrange_toolbars.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_arrange_toolbars.mp4"></video>
 
 See also:
  [corresponding page in the Wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
