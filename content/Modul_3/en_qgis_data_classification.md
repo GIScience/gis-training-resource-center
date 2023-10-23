@@ -54,6 +54,9 @@ The picture below shows the Sierra Leone food insecurity 2015 shapefile that we 
 
 ![](/fig/Change_feature_color.png)
 
+
+### Categorized classification
+
 * The below screenshot shows the overview of the categorized map
 
 ![](/fig/Categorized_district_map_SierraLeone.png)
@@ -63,6 +66,11 @@ See video of classification by categorized
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Classify_by_categorized.mp4"></video>
 
 
+### Graduated classification
 
+Graduated styles are based on continuous values of an attribute field that define how each feature should be rendered. You can assign a range of symbols, colors, or sizes to each value, and QGIS will automatically classify your data into intervals or classes. Graduated symbols are most useful when you want to show clear differences between features with attribute values in different value ranges. The GIS Application will analyse the attribute data (e.g. height) and, based on the number of classes you request, create groupings for you.
 
+See the below video of graduated classes classification
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Graduated_classification.mp4"></video>
 
