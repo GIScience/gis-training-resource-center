@@ -5,6 +5,13 @@ Non-spatial geodataprocessing in QGIS refers to the manipulation, subsetting and
 
 This segment of Module 5 will start with the introduction of table functions. It will then progress into techniques for querying data, ultimately introducing the important concept of non-spatial joins.
 
+```{figure} /fig/en_attribute_table_large.png
+---
+height: 500px
+name: attribute_table_all
+---
+Screenshot of an attribute table for QGIS version 3.28.4
+```
 ## Table functions
 
 ### Add field
@@ -65,54 +72,83 @@ __Questions that need to be considered when doing these calculations:__
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_stats_by_category.mp4"></video>
 ````
 
+
 ## Non-spatial queries
+In GIS you can __query__ (filter) data based on specific attribute information. Once the filtering is successful, only the desired features that __correspond__ to the chosen attribute are displayed. Data filtering is a valuable technique for creating __subsets__ of features that can be exported as a new layer.
 
 ### Manual selection
-It is possible to manually select specific rows by clicking on the number in front of it. This can be easily used to select a small number of rows. If they are selected successfully, they will appear in yellow.
+It is possible to manually select specific rows by clicking on the number on the left side of it. This can be easily used to select a small number of rows. If they are selected successfully, they will appear in __yellow__.
 
-# VIDEO?
+````{dropdown} Manual selection of rows
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_attribute_table.mp4"></video>
+````
 
 ### Select by expression
+In this dialog, you can build your expressions to query the data. There are several operators that can be used to filter your vector layer.
 
+::::{tab-set}
 
+:::{tab-item} Arithmetic operators
+| operator | functionality          |
+|----------|------------------------|
+| __+__    | addition               |
+| __-__    | substraction           |
+| __*__    | multiplication         |
+| __/__    | division               |
+| __%__    | remainder of division  |
+:::
 
-#### Querying data:
-In GIS one can __query__ (filter) data based on specific information (attribute). After successfull filtering only the wanted features that represent the __attribute__ are displayed. Data filtering can be used to create a __subset__ of features and export them as a new layer.
+:::{tab-item} Comparison operators
+| operator | functionality            |
+|----------|--------------------------|
+| __=__    | equals                   |
+| __!=__   | not equal                |
+| __<__    | less than                |
+| __>__    | greater than             |
+| __<=__   | less than or equal to    |
+| __>=__   | greater than or equal to |
+:::
 
-#### Query Builder
-* The Query Builder is a tool for querying (filtering) data or layers using their attributes to define a subset of the features in the layer.
-* The querying is based on __SQL__ (Structured Query Language) expressions to use one or more conditions to filter a layer.
+:::{tab-item} Logical operators
+Operators such as AND, OR can be used to combine different queris or criteria
+| operator | functionality          |
+|----------|------------------------|
+| __AND__  | logical AND            |
+| __OR__   | logical OR             |
+| __NOT__  | logical NOT            |
+:::
 
-Built a drop-down menu for SQL: 
-SQL is a standardized programming language that is used to manage databases and perform various operations on the data in them
+:::{tab-item} Special operators
+| operator      | functionality                                  |
+|---------------|------------------------------------------------|
+| __LIKE__      | pattern matching                               |
+| __IN__        | checks if a value is in a list of values       |
+| __IS NULL__   | checks for null values                         |
+| __BETWEEN__   | checks if a value is within a specified range  |
+| __CASE WHEN__ | conditional expressions                        |
+:::
 
-* As long as a query is active, only the features corresponding to its result are available in the project.
+::::
 
-```{Note} 
-The Query Builder dialog is accessible through the Layer Properties dialog (maybe hint to Wiki?), at the bottom right of the Source section tab.
-```
-![Query Builder location](/fig/en_query_builder_location.png) Location of the Query Builder
-
-#### Query operators
-Within the Query Builder we use different __operators__ to build query expressions and filter our layers. Some operators are __mathematical__ and others are __logical__.
-
-Important examples:
-* "field" __=__ "value" : use the __=__ operator to show only features which include the value
-* "field" __!=__ "value" : use the __!=__ operator to show all features that don’t include the value
-* "field" = "value1" __OR__ "field" = "value2" : use __OR__ to show all features that include either value1 or value2
-* "field1" = "value" __AND__ "field2" = "value" : use __AND__ to show all features that include both values indicated
-
-![Query Builder](/fig/en_query_builder.png) Query Builder
+````{dropdown} Build query for the question: Cities that were not yet cities of one million inhabitants in 1950 but already had more than 10 million inhabitants in 2015.
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_expression_and.mp4"></video>
+````
 
 ## Non-spatial joins
 A lot of analysis can be done with just a single layer. But sometimes the necessary information we need for our analysis is __split across__ different datasets/layers. With QGIS, these layers can be __combined__ to perform the analysis we want. The simplest way to combine layers is via an __attribute join__. This operation looks up information from a second data source based on a __shared attribute value__. This value functions as a common unique identifier, also known as an ID, UID or key.
 
 In QGIS the tool __Join attributes by field value__ is often used for such operations:
 
-![Join attributes by field value](/fig/en_join_attributes_by_field_values.png) Screenshot of the Join attributes by field value tool
+```{figure} /fig/en_join_attributes_by_field_values.png
+---
+height: 500px
+name: join_attributes_by_field_value
+---
+Screenshot of the Join attributes by field value tool
+```
 
 
-```{Note} 
+```{Attention} 
 - An attribute join in QGIS only works properly, when the attributes **match exactly**.
 - For example: **"S. Sudan"** will not match with **"South Sudan"**.
 - Where possible it’s best to **use attributes that have been designed for joining**, such as **P-codes** or **ID's** which are not susceptible to spelling mistakes.
