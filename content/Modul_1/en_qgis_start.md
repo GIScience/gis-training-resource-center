@@ -13,7 +13,7 @@ You may __view, edit, capture and analyze spatial data or create printable maps_
 
 - QGIS is backed by a __large community of users__, so it’s easy to find solutions to technical issues by using QGIS forums, blog and subreddit.
 
-### QGIS Interface
+### Overview of QGIS Interface
 
 ![QGIS_User_Interface](/fig/en_QGIS_GUI.png)
 User interface 
@@ -56,18 +56,18 @@ Project template
 
 #### Moving the map view
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_move.mp4"></video>
-
 ![](/fig/qgis_move_symbol.png)
 * You can also move with the _arrow keys_
 
-#### Zooming in the map view
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_move.mp4"></video>
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zoom.mp4"></video>
+#### Zooming in the map view
 
 ![](/fig/qgis_zoom_symbol.png)
 * You can also zoom by scrolling
 * Or with Ctrl+ or Ctrl-
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zoom.mp4"></video>
 
 #### Show properties of objects
 
@@ -93,17 +93,25 @@ Project template
 *  The layer data used in the project are not saved in the project file. Instead, the project file only contains the file paths where the layer data were located at the time the project was last saved on the PC. If the location of this layer data is subsequently changed, the error message "handle unavailable layers" will appear when the project is opened again.
 Good data organisation with a fixed and well thought-out folder structure prevents such problems.
 
-#### Show and hide displays
+#### Open Toolbox
+
+![](/fig/Geschlossene_Toolbox_01.png)
+* You can also zoom by scrolling
+* Or with Ctrl+ or Ctrl- 
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_toolbars.mp4"></video>
+
+#### Show and hide displays and toolbars
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Anzeigen_einblenden_ausblenden.mp4"></video> 
 
 #### Move and arrange toolbars
 
-*   At each toolbar there is a field of two dotted lines. If you move the mouse pointer over it until an arrow cross appears and then hold down the left mouse button, you can move the toolbar. This allows an individualised arrangement of your own tools. By compressing all toolbars into a few lines, the map view window can also be enlarged.
-
 <tagName>  <tagName>
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_arrange_toolbars.mp4"></video>
+
+*   At each toolbar there is a field of two dotted lines. If you move the mouse pointer over it until an arrow cross appears and then hold down the left mouse button, you can move the toolbar. This allows an individualised arrangement of your own tools. By compressing all toolbars into a few lines, the map view window can also be enlarged.
 
 See also:
  [corresponding page in the Wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
