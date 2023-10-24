@@ -153,5 +153,3 @@ Screenshot of the Join attributes by field value tool
 - For example: **"S. Sudan"** will not match with **"South Sudan"**.
 - Where possible it’s best to **use attributes that have been designed for joining**, such as **P-codes** or **ID's** which are not susceptible to spelling mistakes.
 ```
-
-Test Test
