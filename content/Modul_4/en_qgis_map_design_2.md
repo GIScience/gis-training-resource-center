@@ -8,7 +8,7 @@ The print layout in QGIS is where you design and finalize the map in order to pr
 
 ```{figure} ../../fig/en_30.30.2_create_print_layout.png
 ---
-width: 500px
+width: 700px
 name: Create Print Layout
 ---
 Create a new Print Layout
@@ -51,7 +51,7 @@ _A4 and A3 are the most commonly used sizes for maps_
 
 ```{figure} ../../fig/en_30.30.2_adding_a_map.png
 ---
-width: 500px
+width: 750px
 name: Add a new map
 ---
 Adding a new map to the Print Layout
@@ -68,7 +68,7 @@ A title should describe the phenomenen represented on the map.
 
 ```{figure} ../../fig/en_30.30.2_print_layout_add_text.png
 ---
-width: 500px
+width: 750px
 name: Add text to the print layout
 ---
 Adding text to the print Layout
@@ -86,7 +86,7 @@ To add a legend, you can use the __add legend__ button on the __left toolbar__.
 
 ```{figure} ../../fig/en_30.30.2_print_layout_add_legend.png
 ---
-width: 500px
+width: 750px
 name: Add a legend to the print layout
 ---
 Adding a legend to the print layout
@@ -102,7 +102,7 @@ Before adding a scale bar, select your main map and check in the __Item Properti
 
 ```{figure} ../../fig/en_30.30.2_print_layout_scale.png
 ---
-width: 500px
+width: 750px
 name: Round number for scale
 ---
 Make sure that the scale is at a round number
@@ -120,7 +120,7 @@ _There are many other options to customize the scale bar (change the font, colou
 
 ```{figure} ../../fig/en_30.30.2_print_layout_add_scale_bar.png
 ---
-width: 500px
+width: 750px
 name: Add scale bar
 ---
 Add and customize the scale bar
@@ -144,7 +144,7 @@ To create an overview map, you need to follow these steps:
 
 ```{figure} ../../fig/en_30.30.2_print_layout_overview_map_preparations.png
 ---
-width: 200px
+width: 500px
 name: Overview map preparation
 ---
 An overview map should show important landmarks and borders
@@ -153,7 +153,7 @@ An overview map should show important landmarks and borders
 
 ```{figure} ../../fig/en_30.30.2_print_layout_add_overview_map.png
 ---
-width: 500px
+width: 750px
 name: Add Overview map
 ---
 Add an overview map and __lock the layer__
@@ -162,7 +162,7 @@ Add an overview map and __lock the layer__
 
 ```{figure} ../../fig/en_30.30.2_print_layout_add_map_extent_overview_map.png
 ---
-width: 500px
+width: 750px
 name: Create an Overview
 ---
 Add a the extent of the main map to your overview map (the red rectangle on the overview)
@@ -190,7 +190,13 @@ A map is never complete without the following elements:
 - Localization (Overview) Map
 - Author
 
-> Image?
+```{figure} ../../fig/en_good_map_composition_example.png
+---
+name: good map composition example
+width: 750px
+---
+Elements of good map composition
+```
 
 ----
 
@@ -213,7 +219,7 @@ __The legend__ is key to interpreting the information represented on the map. Wi
 
 ```{figure} ../../fig/en_legend_good_practice.png
 ---
-width: 500px
+width: 750px
 name: Organized Legend
 ---
 Example of a well organized legend
@@ -225,7 +231,7 @@ __The scale bar__ is essential to a map since it gives the correspondence betwee
 
 - __the graphical scale__ is expressed by a line on the map, with an associated distance value. This scale is very useful to have an idea of the distances on the ground. The graphical scale will always be the correct size, even if a different printing format is used, since it will undergo the same transformation as the rest of the map
 
-```{figure} ../../fig/example_scale_bar.png" 
+```{figure} ../../fig/example_scale_bar.png
 ---
 name: scale bar
 ---
@@ -295,4 +301,3 @@ __The eye can easily distinguish 4 to 5 different symbols. Beyond that, it is di
 It is a mistake because:
 - It complicates the map and limits its impact. 
 - Sometimes you are forced to represent several symbols, so you must be careful about overlapping points and overloading the map.
-

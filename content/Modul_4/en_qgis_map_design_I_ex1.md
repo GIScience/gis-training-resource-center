@@ -59,11 +59,12 @@ We can use symbology to __show the difference between features__ in the same lay
 > Categorized symbology is used when you have ***discrete*** variables.
 ```{figure} ../../figure/en_30.30.2_categorized_layer_symbology_1.png
 ---
-name:categorized layer symbology 1
+name: categorized layer symbology 1
 width: 500px
 ---
 Change the symbology type to "categorized" and choose the Value (variable) you wish to display
 ```
+
 3. Now we need to __choose which attributes we want to display through the symbology__. In this case, it could be the number of casualtiees, or the actor who perpetrated the act. Let's categorize the features by **event_type**
 4. Click on __"Classify" to list all the unique values contained in the event_type field__ (i.e. all the possible types of security incidents recorded in our table)
 5. Now we can __change the style of each single value__
