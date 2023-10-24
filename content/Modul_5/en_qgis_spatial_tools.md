@@ -1,13 +1,32 @@
 # Spatial Geodataprocessing
 **Competences:**
 
+## Buffer
+The concept of __buffering__ in QGIS for vector data, refers to the process of creating a new polygon layer with areas that represent a __certain distance__ or __buffer around existing vector features__. This buffer zone is typically uniform and extends outward from the original features, making it useful for various spatial analyses and mapping applications. Examples for such analyses could be the creation of buffer zones to protect the environment, analyse greenbelts around residential areas or create risk areas for natural disasters. Buffer can be created around points, lines and polygons as shown in the figure below.
+
+```{figure} /fig/en_buffer_point_line_polygon.png
+---
+height: 300px
+name: spatial_relations
+---
+Different kinds of buffer zones
+```
+There are several variations in buffering. The __buffer distance__ or __buffer size can vary__ according to the numerical values provided. The numerical values have to be defined in map units according to the Coordinate Reference System (CRS) used with the data. 
+
+```{Attention}
+If you are trying to make a buffer on a layer with a Geographical Coordinate System, processing will warn you and suggest to reproject the layer to a __metric Coordinate System__.
+```
+
+For instance, when creating a buffer zone along a riverbank, the buffer's width may vary, contingent upon the nature of the surrounding land use. In cases of intense cultivation, the buffer distance might be more extensive compared to areas dedicated to organic farming.
+
+## Dissolve
+The dissolve tool combines features in a vector layer to make new ones. You can pick one or more attributes to group together features that share the same value for those attributes. Alternatively, you can combine all features into one. The tool will convert the shapes into multi-geometries, and if you're working with polygons, it'll remove shared boundaries between them.
+
+If you turn on the "Keep disjoint features separate" option when running the tool, it'll make sure that features or parts that don't overlap or touch each other are saved as separate features instead of being part of one big feature. This allows you to create several vector layers.
+
 ## Clip
 
-
-
-* Clip, Buffer, Dissolve
-* Spatial joins
-* Clip by extent & mask
+This tool is used to cut a vector layer with the boundaries of another polygon layer. It keeps only the parts of the features in the input layer that are inside the polygons of the overlay layer, creating a refined dataset. While the core attributes of the features remain the same, some properties like area or length may change after the clipping operation. If you've stored these properties as attributes, you might need to update them manually.
 
 ## Clip vector by extent
 
@@ -26,7 +45,6 @@ Other option are:
 
 This operation uses a mask polygon layer to clip any vector layer.
 
-# AUCH FÜR RASTER DATEN??
 
 ## Spatial joins
 Spatial joins in QGIS enhance the attributes of the input layer by adding additional information from the join layer, relying on their __spatial relationship__. This process enriches your data by incorporating relevant details from one layer into another based on their geographical associations.
