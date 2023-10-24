@@ -53,9 +53,3 @@ If you install a QGIS version >3.30 you have to install the plugin _Processing S
 More about how to install and activate plugins in QGIS can be found here:
 [qgis-Interface#erweiterungen-plugins-installieren](https://courses.gistools.geog.uni-heidelberg.de/giscience/gis-einfuehrung/-/wikis/qgis-Interface#erweiterungen-plugins-installieren)
  
-
- xxxxxxxxxxxxxxxxxxxxxxxxxxx
-
- Button-Test
-
- [<kbd><br>top<br></kbd>][/content/en_qgis_installation.md]
