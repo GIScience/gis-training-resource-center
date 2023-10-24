@@ -45,7 +45,7 @@ You can find all the projections and their CRS code at this [website](http://eps
 
 
 To change the projection of a **vector file**, click on *Vector*, *Data Management Tools*, *Reproject Layer*. Select your input layer and the target crs. Click on the three dots to *Save to File...* and click *Run*. For a detailed instruction click on this video.
-<video width="100%" controls src="/Users/celinathome/Desktop/HeiGIT/visualstudiocode/gis-training-resource-center/fig/qgis_reproject_vector.mp4"></video>
+<video width="100%" controls src=""></video>
 
 To change the projection of a **raster file**, clickclick on *Raster*, *Projections*, *Warp (Reproject)*. Choose your input layer and target crs. Click on the three dots to *Save to File...* and click *Run*. For a detailed instruction click on this video. <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/blob/main/fig/qgis_reproject_raster.mp4"></video>
 
