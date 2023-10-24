@@ -47,7 +47,7 @@ You can find all the projections and their CRS code at this [website](http://eps
 To change the projection of a **vector file**, click on *Vector*, *Data Management Tools*, *Reproject Layer*. Select your input layer and the target crs. Click on the three dots to *Save to File...* and click *Run*. For a detailed instruction click on this video.
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/blob/main/fig/qgis_reproject_vector.mp4"></video>
 
-To change the projection of a **raster file**, clickclick on *Raster*, *Projections*, *Warp (Reproject)*. Choose your input layer and target crs. Click on the three dots to *Save to File...* and click *Run*. For a detailed instruction click on this video. <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/blob/main/fig/qgis_reproject_raster.mp4"></video>
+To change the projection of a **raster file**, clickclick on *Raster*, *Projections*, *Warp (Reproject)*. Choose your input layer and target crs. Click on the three dots to *Save to File...* and click *Run*. For a detailed instruction click on this video. <video width="100%" controls src="fig/qgis_reproject_raster.mp4"></video>
 
 
 It is crucial that you are aware of the difference in data projection and project projection. They should always be the same, or else you will get wrong results! You can change the data projection by following the steps explained above. The project projection is on the bottom left corner, as seen [here](../../fig/en_QGIS_User_Interface.png). 
