@@ -13,7 +13,8 @@
 ## Projections 
 ### Theory
 
-The earth is a sphere and cannot be represented on a flat map without being distorted. To able able to display the earth on a flat map for example as a rectangle it needs to be projected. For further explanation, watch this [video](https://www.youtube.com/watch?v=kIID5FDi2JQ). 
+The earth is a sphere and cannot be represented on a flat map without being distorted. To able able to display the earth on a flat map for example as a rectangle it needs to be projected. For further explanation, watch this video.
+[![preview video](../../fig/screenshot_video_every_world_map_is_wrong.png)](https://www.youtube.com/watch?v=kIID5FDi2JQ "Why every world map is wrong")
 
 For this translation, from a curved on a flat surface, thousands of different methods exist. These are called **Coordinate Reference Systems (CRS)**.
 
