@@ -1,8 +1,11 @@
 # Getting started with QGIS
 
-## Intro QGIS concept
+#### Competences:
 
-### What is QGIS?
+- What is QGIS?
+- Introducing QGIS: Interface and further basic functionalities
+
+## What is QGIS?
 
 QGIS is an __open source geoinformation system software__. That means the source code is available for everyone, making QGIS a free application. 
 You may __view, edit, capture and analyze spatial data or create printable maps__ with it. QGIS was created in 2002 and is a project of volunteers. And it is __constantly changing__.
