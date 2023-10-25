@@ -1,6 +1,6 @@
 # Getting started with QGIS
 
-#### Competences:
+**Competences:**
 
 - What is QGIS?
 - Introducing QGIS: Interface and further basic functionalities
