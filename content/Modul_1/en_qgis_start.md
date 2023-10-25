@@ -40,9 +40,10 @@ Toolbox
 
 6. __Locator bar__. Here you can __search for tools and layers__. If you don't know where to find a tool, you can try here.
 
-```{Tip}
-Exercise: Create a new QGIS project  
-```
+  <tagName>  <tagName>
+
+> **Exercise: Create a new QGIS project**  
+
   - In your “GIS_Training” folder, create a __subfolder__ called __“Projects”__
   - Open __QGIS__
   - Click on __New Empty Project__
