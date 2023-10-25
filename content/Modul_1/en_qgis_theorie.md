@@ -1,5 +1,15 @@
 # What is GIS? (Theory)
 
+**Competences**
+
+- General Information
+- Why are Spatial Analyses important?
+- Introduction to GIS
+- A Galaxy of Tools
+- Paper Maps and Cartography
+- GIS vs Cartography
+- Web GIS Platforms
+
 ## General Information: 
 
 - A Geographic Information System (GIS) is a __digital system that connects data to maps__.
