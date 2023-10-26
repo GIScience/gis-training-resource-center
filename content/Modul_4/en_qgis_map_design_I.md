@@ -82,6 +82,12 @@ align: left
 Styling panel in QGIS 3.30.2
 ```
 
+:::{dropdown} Video: Opening the styling panel
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_opening_the_styling_panel.mp4"></video>
+
+:::
+
 For each layer in QGIS, there is a styling panel where you can change the symbology, colour and label for the features in that layer. There are two ways to open the layer styling options in QGIS:  
 1. Right click on the layer you wish to style and select properties
 2. Open the layer styling panel by enabling it under "View">"Panels">"Layer Styling"
@@ -89,6 +95,7 @@ For each layer in QGIS, there is a styling panel where you can change the symbol
 On the left of the styling panel you can choose the different tabs to access different styling options.
 
 In the styling panel you can change the styling for all features of a layer, set up categories for different symbols, create labels, and create colour ramps to differentiate between features with variable values.
+
 
 <br/><br/>
 
@@ -433,3 +440,6 @@ Sometimes the placement of labels is not ideal and can obstruct the readability 
 
 >VIDEO
 :::
+
+
+# Examples for Map design
