@@ -82,11 +82,7 @@ align: left
 Styling panel in QGIS 3.30.2
 ```
 
-:::{dropdown} Video: Opening the styling panel
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_opening_the_styling_panel.mp4"></video>
-
-:::
 
 For each layer in QGIS, there is a styling panel where you can change the symbology, colour and label for the features in that layer. There are two ways to open the layer styling options in QGIS:  
 1. Right click on the layer you wish to style and select properties
@@ -95,6 +91,8 @@ For each layer in QGIS, there is a styling panel where you can change the symbol
 On the left of the styling panel you can choose the different tabs to access different styling options.
 
 In the styling panel you can change the styling for all features of a layer, set up categories for different symbols, create labels, and create colour ramps to differentiate between features with variable values.
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_opening_the_styling_panel.mp4"></video>
 
 
 <br/><br/>
@@ -109,8 +107,7 @@ In the styling panel you can change the styling for all features of a layer, set
 
 ## Colours
 
-Colours are arguably the most striking visual variables as they are easily disinguishable. However, depending on the type of data and the information you wish to convey, there are a few things to consider when choosing a colour scheme for your map. The most important variables for colours are the __hue__ and the __value__ (saturation) and __transparency__. 
-> look for correct words  
+Colours are arguably the most striking visual variables as they are easily disinguishable. However, depending on the type of data and the information you wish to convey, there are a few things to consider when choosing a colour scheme for your map. The most important variables for colours are the __hue__, the __value__ (saturation) and the __transparency__. 
 
 Colours schemes can be __categorial, sequential, or diverging__. If you wish to display different types of buildings or roads, the colour schemes should be categorial. Colour gradients, either sequential or diverging, are used for numerical data or data that can be ordered. For example, for the population sizes of districts a sequential colouring schemes is best to show the relative difference between the values. However, if the data has positive __and__ negative values, a diverging colour gradient should be used.
 
@@ -132,7 +129,7 @@ width: 800px
 Examples for different colour gradients translated into black and white. Pay attention to the saturation gradient
 ```
 
-- Colour gradients can also encompass multiple hues
+Colour gradients can also encompass multiple hues:
 
 ```{figure} ../../fig/Colour_Gradients_2.png
 ---
@@ -163,18 +160,18 @@ You can use graphical variables to style vector data. As we have already learned
 ``` {figure} ../../fig/en_symbolization_vector_data.png
 ---
 name: symbolization for vector data
-width: 500px
+width: 750px
 ---
 Symbolization for vector data; Source: White, T. (2017). Symbolization and the Visual Variables. *The Geographic Information Science & Technology Body of Knowledge (2nd Quarter 2017 Edition), John P. Wilson (ed.). DOI: 10.2222/gistbok/2017.2.3 
 ```
 
-In the dropdowns below you can find examples on how to set up common vector data styling.
+In the dropdowns below you can find examples on how to set up common vector data styling. Make sure you have downloaded the Exercise XX data from the github repository!
+
+>Link the files and github repository
 
 :::{dropdown} Exercise: Only display the outlines of polygons
 
 In this example, wewant to change the symbology of a single layer so that __only the outlines of the polygons are visible__. 
-
-> Insert 2 small example images
 
 To change the symbology of a single layer:
 1. Open the styling panel and navigate to the symbology tab. By default, the symbology will be set to __Single Symbol__. This means that the same colours and contours will be applied to all the features in that layer.
@@ -188,11 +185,14 @@ name: layer styling transparent
 ---
 ```
 
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_make_only_outlines_visible.mp4"></video>
+
 :::
 
 :::{dropdown} Change the styling for multiple overlayed layers
 
->This is exercise 7 in the PPP. Participants will need the specific data.
+>This is exercise 7 in the PPP. Participants will need the specific data. 
+
 In this exercise, we will apply the same style to all features in a layer, but we will change multiple layers and overlay them so each is visible in a different style. We have the polygons for 3 administrative levels.
 
 ```{figure} ../../fig/en_30.30.2_changing_layer_style_1.png
@@ -238,6 +238,9 @@ name: change layer style 3
 The styling of a vector data consists of the colour and the outline
 ```
 
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_change_style_for_multiple_layers
+.mp4"></video>
+
 ```{note} 
 Remember that __the layer's symbology is saved within your project file, not within your shapefile!__ If you share a shapefile with a colleague, it will have a different style when they add it to their own project.
 ```
@@ -245,6 +248,14 @@ Remember that __the layer's symbology is saved within your project file, not wit
 :::
 
 :::{dropdown} Use different styles in a single layer
+
+```{note}For this exercise, you must have convertet the excel-spreadsheet "ACLED_Nigeria_2022-2023" into a .csv-file. Read how you can do this [here](/gis-training-resource-center/content/Modul_2/en_qgis_basic_data_processing.html#delimited-text-import). 
+
+>Check if the others have the same issue with importing the .csv file (excel export as csv delimits with ";" instead of ",". QGIS expects ",", if you replace all the ";" with "," the coordinates do not work any longer because the degree are delimited with a "," as well. You can fix it in VSC)
+```
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_rule_based_styling
+.mp4"></video>
 
 We can use symbology to __show the difference between features__ in the same layer. For example, it could be different types of buildings, quantities of Covid cases by district, or types of roads. We can choose a specific attribute of a dataset to assign different colors, outlines, or sizes to features:
 
@@ -288,14 +299,18 @@ Regions affected by explosions in Nigeria
 ```
 :::
 
-:::{dropdown} Style data based on variable ranges
+:::{dropdown} Style data based on variable ranges (graduated styling)
+
 If a layer contains numeric values that are continuous, they can be organized in intervals. These intervals can be displayed in graduated colours. In this exercise, we assign colours to Adm1 polygons based on the total population of each State.
 
 > Don't forget to check that they have access to the data
 
-1. From __Sharepoint__, download the NGA_Adm1_Pop shapefile and save it in your shapefile folder
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_graduated_styling
+.mp4"></video>
+
+1. Download the NGA_Adm1_Pop shapefile [link!!] and save it in your shapefile folder
 2. In QGIS, turn off the Adm1 and Adm2 layer, leaving only Adm0
-3. Drag the shapefile you just downloaded into your map
+3. Drag the shapefile NGA_Adm1_Pop into your map
 4. Open its Symbology options and choose "__Graduated__"
 5. Select the value you want to use to assign colours, in this case, it will be "__population__"
 
@@ -321,14 +336,14 @@ width: 500px
 You can categorize the continuous values into classes and assign a colour ramp 
 ```
 
-The following map shows the most populated States of Nigeria using a graduated colour categorization.
+The following map shows the most populated States of Nigeria using a graduated colour categorization. These types of maps are called __Coropleth maps__. 
 
 ```{figure} ../../fig/en_map_design_example_variable_ranges.png
 ---
 name: map design example_state population Nigeria
 width: 500px
 ---
-An unfinished map showing the population of Nigerian states
+A map showing the population of Nigerian states
 ```
 :::
 
@@ -354,7 +369,9 @@ width: 600px
 Colour Ramp Selector
 ```
 
-In the colour ramp selector, you can adjust each colour step. On the bottom, you can see a plot for the Hue, __Saturation__, __Lightness__ and __Opacity__. Especially latter three are useful to see how your colour ramp will translate.
+In the colour ramp selector, you can adjust each colour step. On the bottom, you can see a plot for the Hue, __Saturation__, __Lightness__ and __Opacity__. Especially latter three are useful to see how your colour ramp will translate. Gradients from light to dark are easier to read: Check if the plot for the __Lightness__ has a more or less linear plot. 
+
+>Examples Video!
 
 ## Labels
 
@@ -440,6 +457,5 @@ Sometimes the placement of labels is not ideal and can obstruct the readability 
 
 >VIDEO
 :::
-
 
 # Examples for Map design
