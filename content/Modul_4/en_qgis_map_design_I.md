@@ -90,6 +90,8 @@ On the left of the styling panel you can choose the different tabs to access dif
 
 In the styling panel you can change the styling for all features of a layer, set up categories for different symbols, create labels, and create colour ramps to differentiate between features with variable values.
 
+<br/><br/>
+
 ## Symbology
 
 - Symbology is used to change the look of features on a map
@@ -100,7 +102,7 @@ In the styling panel you can change the styling for all features of a layer, set
 
 ## Colours
 
-Colours are arguably the most striking visual variables as they are easily disinguishable. However, depending on the type of data and the information you wish to convey, there are a few things to consider when choosing a colour scheme for your map. The most important variables for colours are the __hue__ and the __value__ (saturation, transparency). 
+Colours are arguably the most striking visual variables as they are easily disinguishable. However, depending on the type of data and the information you wish to convey, there are a few things to consider when choosing a colour scheme for your map. The most important variables for colours are the __hue__ and the __value__ (saturation) and __transparency__. 
 > look for correct words  
 
 Colours schemes can be __categorial, sequential, or diverging__. If you wish to display different types of buildings or roads, the colour schemes should be categorial. Colour gradients, either sequential or diverging, are used for numerical data or data that can be ordered. For example, for the population sizes of districts a sequential colouring schemes is best to show the relative difference between the values. However, if the data has positive __and__ negative values, a diverging colour gradient should be used.
@@ -154,7 +156,7 @@ You can use graphical variables to style vector data. As we have already learned
 ``` {figure} ../../fig/en_symbolization_vector_data.png
 ---
 name: symbolization for vector data
-width: 750px
+width: 500px
 ---
 Symbolization for vector data; Source: White, T. (2017). Symbolization and the Visual Variables. *The Geographic Information Science & Technology Body of Knowledge (2nd Quarter 2017 Edition), John P. Wilson (ed.). DOI: 10.2222/gistbok/2017.2.3 
 ```
@@ -164,6 +166,8 @@ In the dropdowns below you can find examples on how to set up common vector data
 :::{dropdown} Exercise: Only display the outlines of polygons
 
 In this example, wewant to change the symbology of a single layer so that __only the outlines of the polygons are visible__. 
+
+> Insert 2 small example images
 
 To change the symbology of a single layer:
 1. Open the styling panel and navigate to the symbology tab. By default, the symbology will be set to __Single Symbol__. This means that the same colours and contours will be applied to all the features in that layer.
@@ -213,6 +217,9 @@ Change the Fill type
 8. __Repeat the same process__ for the Adm1 layer, using the same colour as for Adm0 (it will be in "Recent colors) and leave the stroke width at 0.26.
 9. Now we can see the boundaries of the country and its states, and behind that we cann see the districs (Adm2).
 10. Let's make the districs layer's style consistent with the others.
+
+<br/>
+
 11. Choose a __Fill Color__
 12. Use the same __Stroke color__ as for Adm0 and Adm1, but make the width 0.1 Millimeters and the Stroke Style a __Dash Line__
 13. Click OK and look at yout map: hopefully it's starting to look nicer!
@@ -404,7 +411,7 @@ The expression builder: Expression (left); building blocks, operators, fields an
 ```
 :::
 
-:::{dopdown} Add underligned labels
+:::{dropdown} Add underligned labels
 
 1. Set up the labels by following the same steps as before.
 2. TO underlign labels, click on the underlign-button
