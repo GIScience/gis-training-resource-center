@@ -56,15 +56,23 @@ name: Add a new map
 ---
 Adding a new map to the Print Layout
 ```
+:::: {tab-set}
+::: {tab-item} Adding a new map
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_new_map
+.mp4"></video>
+:::
 
+::: {tab-item} Moving and scaling the map
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_moving_and_scaling_the_map
+.mp4"></video>
+:::
+::::
 ### Adding a title or a text box
 
 A title should describe the phenomenen represented on the map.
 
 - To add text (title, explanations), use the __Add Label__ tool and draw a rectangle of the desired size.
 - In the __Item Properties__ panel (on the right of your screen) you can __enter your text__ and __change the font, style, colour, etc.__ (_Remember to use the scroll bar in the window to see all the options). 
-
-
 
 ```{figure} ../../fig/en_30.30.2_print_layout_add_text.png
 ---
@@ -73,6 +81,8 @@ name: Add text to the print layout
 ---
 Adding text to the print Layout
 ```
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_print_layout_adding_a_title
+.mp4"></video>
 
 ### Adding a legend
 

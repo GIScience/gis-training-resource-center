@@ -97,8 +97,6 @@ In the styling panel you can change the styling for all features of a layer, set
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_opening_the_styling_panel.mp4"></video>
 
 
-<br/><br/>
-
 ## Symbology
 
 - Symbology is used to change the look of features on a map
