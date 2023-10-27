@@ -165,7 +165,7 @@ width: 750px
 Symbolization for vector data; Source: White, T. (2017). Symbolization and the Visual Variables. *The Geographic Information Science & Technology Body of Knowledge (2nd Quarter 2017 Edition), John P. Wilson (ed.). DOI: 10.2222/gistbok/2017.2.3 
 ```
 
-In the dropdowns below you can find examples on how to set up common vector data styling. Make sure you have downloaded the Exercise XX data from the github repository!
+In the dropdowns below you can find examples on how to set up common vector data styling. Make sure you have downloaded the Exercise XX data from the github repository if you want to follow along!
 
 >Link the files and github repository
 
@@ -182,6 +182,7 @@ To change the symbology of a single layer:
 ```{figure} ../../fig/en_30.30.2_vector_layer_styling_transparent.png
 ---
 name: layer styling transparent
+width: 500 px
 ---
 ```
 
@@ -225,7 +226,7 @@ Change the Fill type
 9. Now we can see the boundaries of the country and its states, and behind that we cann see the districs (Adm2).
 10. Let's make the districs layer's style consistent with the others.
 
-<br/>
+<br/><br/>
 
 11. Choose a __Fill Color__
 12. Use the same __Stroke color__ as for Adm0 and Adm1, but make the width 0.1 Millimeters and the Stroke Style a __Dash Line__
@@ -347,32 +348,6 @@ A map showing the population of Nigerian states
 ```
 :::
 
-## Symbology for raster data
-
-As we have already learned, raster data are basically a grid of pixels with different (numerical) values. As such, you can't style the shape, fill or outline of raster data. It is only possible to assign colours to the different values of the pixels.
-
-### Assigning a colour gradient to raster data
-
-To assign a colour gradient for raster data, you need to:
-
-1. Open the styling panel for the raster layer
-2. Navigate to the Symbology tab  
-3. By default, the colour scheme is set to Singleband gray (if you only have one colour band in the data set). Click on __Singleband gray__ and switch to __Singleband pseudocolour__
-4. Click on the arrow to the right of the colour ramp. Here you can choose a premade colour ramp
-5. You can modify the colour ramp by clicking on the colour ramp itself
-
-``` {figure} ../../fig/en_30.30.2_raster_data_colour_gradient.png
----
-name: raster data colour gradient
-width: 600px
----
-Colour Ramp Selector
-```
-
-In the colour ramp selector, you can adjust each colour step. On the bottom, you can see a plot for the Hue, __Saturation__, __Lightness__ and __Opacity__. Especially latter three are useful to see how your colour ramp will translate. Gradients from light to dark are easier to read: Check if the plot for the __Lightness__ has a more or less linear plot. 
-
->Examples Video! and how to invert ramp
-
 ## Labels
 
 - Labels are text that show a specific attribute of features. 
@@ -469,6 +444,33 @@ Sometimes the placement of labels is not ideal and can obstruct the readability 
 .mp4"></video>
 
 :::
+
+## Symbology for raster data
+
+As we have already learned, raster data are basically a grid of pixels with different (numerical) values. As such, you can't style the shape, fill or outline of raster data. It is only possible to assign colours to the different values of the pixels.
+
+### Assigning a colour gradient to raster data
+
+To assign a colour gradient for raster data, you need to:
+
+1. Open the styling panel for the raster layer
+2. Navigate to the Symbology tab  
+3. By default, the colour scheme is set to Singleband gray (if you only have one colour band in the data set). Click on __Singleband gray__ and switch to __Singleband pseudocolour__
+4. Click on the arrow to the right of the colour ramp. Here you can choose a premade colour ramp
+5. You can modify the colour ramp by clicking on the colour ramp itself
+
+``` {figure} ../../fig/en_30.30.2_raster_data_colour_gradient.png
+---
+name: raster data colour gradient
+width: 600px
+---
+Colour Ramp Selector
+```
+
+In the colour ramp selector, you can adjust each colour step. On the bottom, you can see a plot for the Hue, __Saturation__, __Lightness__ and __Opacity__. Especially latter three are useful to see how your colour ramp will translate. Gradients from light to dark are easier to read: Check if the plot for the __Lightness__ has a more or less linear plot. 
+
+>Examples Video! and how to invert ramp
+
 
 # Exporting and Importing Styles
 
