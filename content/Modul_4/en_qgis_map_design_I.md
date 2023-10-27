@@ -2,6 +2,8 @@
 
 The representation of geodata in maps is crucial in order to provide useful location-based insights. This subchapter will cover the basics of good map design, how to create a map design in QGIS as well as common mistakes when designing or interpreting maps.
 
+>Overview?
+
 ## Types of maps
 
 In general, there are two main types of maps: __topographic maps__ and __thematic maps__.
@@ -371,7 +373,7 @@ Colour Ramp Selector
 
 In the colour ramp selector, you can adjust each colour step. On the bottom, you can see a plot for the Hue, __Saturation__, __Lightness__ and __Opacity__. Especially latter three are useful to see how your colour ramp will translate. Gradients from light to dark are easier to read: Check if the plot for the __Lightness__ has a more or less linear plot. 
 
->Examples Video!
+>Examples Video! and how to invert ramp
 
 ## Labels
 
@@ -385,33 +387,34 @@ In the colour ramp selector, you can adjust each colour step. On the bottom, you
 
 1. In the styling panel, click on the "Labels" tab.
 2. Select *Single Labels*. 
-3. "Value" is where you choose the attribute that will be displayed as a label. For example "NAME". This will display the "NAME" attribute for each feature. In the example (figure X), *ADM1_EN* will display the English names of Nigerian states.
->change figure number
+3. `"Value"` is where you choose the attribute that will be displayed as a label. For example `*ADM1_EN*` will display the English names of Nigerian states for each feature in the data set.
 4. Let's change the font: make it Arial, bold, dark grey, 8 pt
 5. Let's add a white buffer around the label.
 7. Click Apply and Ok.
 
 ```{figure} ../../fig/en_30.30.2_setting_up_labels.png
 ---
-width: 750px
+width: 500px
 name: Setting up labels
 ---
 Setting up labels in QGIS 30.30.2
 ```
 
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_setting_up_labels
+.mp4"></video>
+
 :::
 
 :::{dropdown} Adding different label styles to the same layer
->This is exercise 3 in PPP
 
 Sometimes you will need to create two different label styles for different features of a single layer. In this example, we will create one label style for the *Country Capital*, and another one for the *State Capitals*
 
-1. Open the styling panel and click on the Labels tab
+1. Open the styling panel for the `"NGA_settlements_nga"` layer and click on the Labels tab
 2. Select __Rule-based Labeling__
 3. Click on the __Add Rule__ button at the bottom (the "+"-sign) and create the first rule
 4. For __Value__, select __"NAME"__ (so that the labels will show the name of each city), then click on the "ε"-button next to the "Filter" bar.
 
-```{figure} ../../fig/en.30.30.2_adding_rule-based_labels.png
+```{figure} ../../fig/en_30.30.2_adding_rule-based_labels.png
 ---
 width: 500px
 name: adding rule-based labels
@@ -419,9 +422,9 @@ name: adding rule-based labels
 To add rule-based labels, you need to enter an expression
 ```
 
-5. In the central column, expand ==__Fields and Values__== to display a list of all the fields in your layer and double-click on _Class__ to add it to the expression frame on the left.
-6. In the right column, click on __All unique__ to list all unique values contained in the Class field
-7. Click on the "`=`" operator, then doube-click on the _value 1_ (which represent the Country capital in this case). Click OK.
+5. In the central column, expand __Fields and Values__ to display a list of all the fields in your layer and double-click on __Class__ to add it to the expression frame on the left.
+6. In the right column, click on __All unique__ to list all unique values contained in the Class field. In this dataset, `"CLASS"=1` designates the capital city, whereas `"CLASS"=2` designate other major cities. 
+7. Click on the `"="` operator, then doube-click on the _value 1_ (which represent the Country capital in this case). Click OK.
 8. Scroll down to *change the label style*. Make it Arial, bold, black, 12pt and add a white buffer.
 9. Repeat steps 4 to 9, but select *Value 2* (State capitals) and make the label black, bold, 10pt, no buffer.
 10. Click **Apply**, the OK.
@@ -433,12 +436,18 @@ name: rule-based labels expression builder
 ---
 The expression builder: Expression (left); building blocks, operators, fields and values(center); unique values (right)
 ```
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_rule_based_labelling
+.mp4"></video>
+
 :::
 
 :::{dropdown} Add underligned labels
 
 1. Set up the labels by following the same steps as before.
 2. TO underlign labels, click on the underlign-button
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_underlign_labels
+.mp4"></video>
 
 :::
 
@@ -447,15 +456,26 @@ Sometimes the placement of labels is not ideal and can obstruct the readability 
 
 1. On the label toolbar, there is an option to move labels independently. Click on it to activate it. (Note: In some cases, the label toolbar might not be visible. In this case, turn it on by navigating to "View">"Toolbars">activate the Label toolbar)
 2. Click on the label you want to move.
-3. You will be prompted to select the primary key for joining with internal data storage. You do not need to change it, or select the ID of the feature and click on OK.
+3. You will be prompted to select the primary key for joining with internal data storage. You do not need to change it (you can select the ID field of the dataset) and click OK.
 4. Click on the label again, now you can move it freely.
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_move_labels_independently
+.mp4"></video>
 
 :::
 
 :::{dropdown} Add labels to roads
 >When working with line features, the labels will align themselves parallel to the line representing the feature. 
 
->VIDEO
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_add_road_labels
+.mp4"></video>
+
 :::
 
+# Exporting and Importing Styles
+
+As we have already learned, the layers in QGIS are saved separately from the settings and styles of a QGIS Project. Therefore, it can be useful to 
+
 # Examples for Map design
+
+>insert maps and discuss how to achieve this
