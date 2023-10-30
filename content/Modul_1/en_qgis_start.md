@@ -1,8 +1,11 @@
 # Getting started with QGIS
 
-## Intro QGIS concept
+**Competences:**
 
-### What is QGIS?
+- What is QGIS?
+- Introducing QGIS: Interface and further basic functionalities
+
+## What is QGIS?
 
 QGIS is an __open source geoinformation system software__. That means the source code is available for everyone, making QGIS a free application. 
 You may __view, edit, capture and analyze spatial data or create printable maps__ with it. QGIS was created in 2002 and is a project of volunteers. And it is __constantly changing__.
@@ -20,7 +23,7 @@ User interface
 
 1. __Layers List / Browser Panel:__ The __layers list__ shows __all layers/files__ that are __loaded in the project__. You can show/hide layers and set other properties.
 
-2. __Toolsbars: __ __Toolbars__ are shortcuts__ to execute frequently used commands. For example, there are special toolbars for __vector and raster files__, but also general ones for saving your project, etc. The toolbar contains, among other things, a list of all the commands you can use. The toolbar also contains the __toolbox__, which is used later in many of the wiki videos.
+2. __Toolsbars:  __Toolbars__ are shortcuts__ to execute frequently used commands. For example, there are special toolbars for __vector and raster files__, but also general ones for saving your project, etc. The toolbar contains, among other things, a list of all the commands you can use. The toolbar also contains the __toolbox__, which is used later in many of the wiki videos.
 
  <tagName>  <tagName>
 
@@ -37,9 +40,10 @@ Toolbox
 
 6. __Locator bar__. Here you can __search for tools and layers__. If you don't know where to find a tool, you can try here.
 
-```{Tip}
-Exercise: Create a new QGIS project  
-```
+  <tagName>  <tagName>
+
+> **Exercise: Create a new QGIS project**  
+
   - In your “GIS_Training” folder, create a __subfolder__ called __“Projects”__
   - Open __QGIS__
   - Click on __New Empty Project__
