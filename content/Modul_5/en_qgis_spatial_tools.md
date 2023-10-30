@@ -78,7 +78,7 @@ This tool takes an input vector layer and creates a new vector layer that is an 
 
 The additional attributes and their values are taken from a second vector layer. For this layer a spatial criteria is applied to select the values from it that are added to each feature from the first layer.
 
-```{figure} /fig/en_join_attributes_by_location.png
+```{figure} /fig/en_join_attributes_by_location.PNG
 ---
 height: 500px
 name: join_attribute_by_location
