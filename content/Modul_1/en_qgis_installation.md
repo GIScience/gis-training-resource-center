@@ -14,6 +14,10 @@ or:
 <video width="100%" controls src="../../fig/QGIS_Installation.mp4">
 </video>
 
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/QGIS_Installation.mp4"></video>
+
+
 ## Windows
 
 ### 32 Bit or 64 Bit?
