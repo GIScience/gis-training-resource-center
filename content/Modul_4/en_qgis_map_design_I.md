@@ -105,6 +105,8 @@ In the styling panel you can change the styling for all features of a layer, set
 - Symbology is applied to layers, but within the same layer we can assign multiple styles to features
 - the symbology of a layer can be __changed based on one of its attributes__
 
+>different visualisation for different types of data (discrete vs. continuous values, insert image). For example the amount of rainfall/temperature is a continuous value. Which means that the 
+
 ## Colours
 
 Colours are arguably the most striking visual variables as they are easily disinguishable. However, depending on the type of data and the information you wish to convey, there are a few things to consider when choosing a colour scheme for your map. The most important variables for colours are the __hue__, the __value__ (saturation) and the __transparency__. 
