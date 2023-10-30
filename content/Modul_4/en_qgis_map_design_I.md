@@ -131,7 +131,7 @@ Examples for different colour gradients translated into black and white. Pay att
 
 Colour gradients can also encompass multiple hues:
 
-```{figure} ../../fig/colour_gradients_mutiple_hues.png
+```{figure} ../../fig/colour_gradients_hues.png
 ---
 name: colour gradients with multiple hues
 width: 750px
