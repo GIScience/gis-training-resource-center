@@ -319,8 +319,8 @@ If a layer contains numeric values that are continuous, they can be organized in
 
 ```{figure} ../../fig/en_30.30.2_symbology_variable_ranges_1.png
 ---
-name: symbology of variable ranges 1
-width: 500px
+name: symbology of variable ranges
+width: 550px
 ---
 With variable ranges, select __Graduated__ symbology and choose the attribute with continuous values
 ```
