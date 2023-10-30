@@ -111,7 +111,7 @@ Colours are arguably the most striking visual variables as they are easily disin
 
 Colours schemes can be __categorial, sequential, or diverging__. If you wish to display different types of buildings or roads, the colour schemes should be categorial. Colour gradients, either sequential or diverging, are used for numerical data or data that can be ordered. For example, for the population sizes of districts a sequential colouring schemes is best to show the relative difference between the values. However, if the data has positive __and__ negative values, a diverging colour gradient should be used.
 
-``` {figure} ../../fig/en_Colour_Gradients_6.png
+``` {figure} ../../fig/en_colour_gradients_qualities.png
 ---
 name: Colouring schemes
 width: 750px
