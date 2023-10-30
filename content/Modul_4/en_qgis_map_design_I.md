@@ -2,7 +2,7 @@
 
 The representation of geodata in maps is crucial in order to provide useful location-based insights. This subchapter will cover the basics of good map design, how to create a map design in QGIS as well as common mistakes when designing or interpreting maps.
 
->Overview?
+>Overview of the chapter:
 
 ## Types of maps
 
@@ -121,19 +121,19 @@ Different types of colouring schemes
 
 When choosing colour gradients, a clear gradient from lighter to darker colours is the best most of the times as the gradation is easily distinguishable and translates well into black and white. In the figure below, example A and B are not ideal as it is difficult to make out the gradation and it does not translate into black and white. You can achieve a clear sequence by grading the __saturation__ of the colour gradient.
 
-``` {figure} ../../fig/en_colour_gradients_saturation.png
+``` {figure} ../../fig/de_colour_gradients_saturation.png
 ---
 name: colour gradients saturation example
-width: 800px
+width: 750px
 ---
-Examples for different colour gradients translated into black and white. Pay attention to the saturation gradient
+Examples for different colour gradients translated into black and white. Pay attention to the saturation gradient under each example.
 ```
 
 Colour gradients can also encompass multiple hues:
 
-```{figure} ../../fig/Colour_Gradients_2.png
+```{figure} ../../fig/colour_gradients_mutiple_hues.png
 ---
-name: colour gradient hues
+name: colour gradients with multiple hues
 width: 750px
 ---
 Single hue gradient on the left; Multiple hue gradient on the right
@@ -165,7 +165,7 @@ width: 750px
 Symbolization for vector data; Source: White, T. (2017). Symbolization and the Visual Variables. *The Geographic Information Science & Technology Body of Knowledge (2nd Quarter 2017 Edition), John P. Wilson (ed.). DOI: 10.2222/gistbok/2017.2.3 
 ```
 
-In the dropdowns below you can find examples on how to set up common vector data styling. Make sure you have downloaded the Exercise XX data from the github repository if you want to follow along!
+In the dropdowns below you can find examples on how to set up common vector data styling. Make sure you have downloaded the Exercise XX data from the github repository if you wantto follow!
 
 >Link the files and github repository
 
@@ -474,8 +474,8 @@ In the colour ramp selector, you can adjust each colour step. On the bottom, you
 
 # Exporting and Importing Styles
 
-As we have already learned, the layers in QGIS are saved separately from the settings and styles of a QGIS Project. Therefore, it can be useful to 
+As we have already learned, the layers in QGIS are saved separately from the settings and styles of a QGIS Project. Therefore, it can be useful to prepare template styles that you can load into your QGIS project or send to a colleage. 
 
 # Examples for Map design
 
->insert maps and discuss how to achieve this
+>insert map examples and discuss how to achieve the map design
