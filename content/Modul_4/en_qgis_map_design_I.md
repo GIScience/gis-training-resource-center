@@ -2,7 +2,7 @@
 
 The representation of geodata in maps is crucial in order to provide useful location-based insights. This subchapter will cover the basics of good map design, how to create a map design in QGIS as well as common mistakes when designing or interpreting maps.
 
->Overview?
+>Overview of the chapter:
 
 ## Types of maps
 
@@ -105,13 +105,15 @@ In the styling panel you can change the styling for all features of a layer, set
 - Symbology is applied to layers, but within the same layer we can assign multiple styles to features
 - the symbology of a layer can be __changed based on one of its attributes__
 
+>different visualisation for different types of data (discrete vs. continuous values, insert image). For example the amount of rainfall/temperature is a continuous value. Which means that the 
+
 ## Colours
 
 Colours are arguably the most striking visual variables as they are easily disinguishable. However, depending on the type of data and the information you wish to convey, there are a few things to consider when choosing a colour scheme for your map. The most important variables for colours are the __hue__, the __value__ (saturation) and the __transparency__. 
 
 Colours schemes can be __categorial, sequential, or diverging__. If you wish to display different types of buildings or roads, the colour schemes should be categorial. Colour gradients, either sequential or diverging, are used for numerical data or data that can be ordered. For example, for the population sizes of districts a sequential colouring schemes is best to show the relative difference between the values. However, if the data has positive __and__ negative values, a diverging colour gradient should be used.
 
-``` {figure} ../../fig/en_Colour_Gradients_6.png
+``` {figure} ../../fig/en_colour_gradients_qualities.png
 ---
 name: Colouring schemes
 width: 750px
@@ -121,19 +123,19 @@ Different types of colouring schemes
 
 When choosing colour gradients, a clear gradient from lighter to darker colours is the best most of the times as the gradation is easily distinguishable and translates well into black and white. In the figure below, example A and B are not ideal as it is difficult to make out the gradation and it does not translate into black and white. You can achieve a clear sequence by grading the __saturation__ of the colour gradient.
 
-``` {figure} ../../fig/en_colour_gradients_saturation.png
+``` {figure} ../../fig/de_colour_gradients_saturation.png
 ---
 name: colour gradients saturation example
-width: 800px
+width: 750px
 ---
-Examples for different colour gradients translated into black and white. Pay attention to the saturation gradient
+Examples for different colour gradients translated into black and white. Pay attention to the saturation gradient under each example.
 ```
 
 Colour gradients can also encompass multiple hues:
 
-```{figure} ../../fig/Colour_Gradients_2.png
+```{figure} ../../fig/colour_gradients_hues.png
 ---
-name: colour gradient hues
+name: colour gradients with multiple hues
 width: 750px
 ---
 Single hue gradient on the left; Multiple hue gradient on the right
@@ -165,7 +167,7 @@ width: 750px
 Symbolization for vector data; Source: White, T. (2017). Symbolization and the Visual Variables. *The Geographic Information Science & Technology Body of Knowledge (2nd Quarter 2017 Edition), John P. Wilson (ed.). DOI: 10.2222/gistbok/2017.2.3 
 ```
 
-In the dropdowns below you can find examples on how to set up common vector data styling. Make sure you have downloaded the Exercise XX data from the github repository if you want to follow along!
+In the dropdowns below you can find examples on how to set up common vector data styling. Make sure you have downloaded the Exercise XX data from the github repository if you wantto follow!
 
 >Link the files and github repository
 
@@ -317,8 +319,8 @@ If a layer contains numeric values that are continuous, they can be organized in
 
 ```{figure} ../../fig/en_30.30.2_symbology_variable_ranges_1.png
 ---
-name: symbology of variable ranges 1
-width: 500px
+name: symbology of variable ranges
+width: 550px
 ---
 With variable ranges, select __Graduated__ symbology and choose the attribute with continuous values
 ```
@@ -474,8 +476,8 @@ In the colour ramp selector, you can adjust each colour step. On the bottom, you
 
 # Exporting and Importing Styles
 
-As we have already learned, the layers in QGIS are saved separately from the settings and styles of a QGIS Project. Therefore, it can be useful to 
+As we have already learned, the layers in QGIS are saved separately from the settings and styles of a QGIS Project. Therefore, it can be useful to prepare template styles that you can load into your QGIS project or send to a colleage. 
 
 # Examples for Map design
 
->insert maps and discuss how to achieve this
+>insert map examples and discuss how to achieve the map design
