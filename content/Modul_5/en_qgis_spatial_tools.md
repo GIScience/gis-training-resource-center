@@ -1,5 +1,75 @@
 # Spatial Geodataprocessing
-**Competences:**
+
+#### Introduction:
+The first part of this module explores overlay operations, focusing specifically on the operations of __Clip__, __Dissolve__, and __Buffer__. These operations enable us to combine geometries from two layers in various ways. In addition to these, we will cover __Spatial joins__ in this section. Spatial joins offer opportunities to enhance the attributes of the input layer by incorporating additional information from the join layer, utilizing their spatial relationship. All of these operations make use of the spatial information in the provided input data to either enrich the data or perform various analyses.
+
+## Clip
+
+This tool is used to cut a vector layer with the boundaries of another polygon layer. It keeps only the parts of the features in the input layer that are inside the polygons of the overlay layer, creating a refined dataset. While the core attributes of the features remain the same, some properties like area or length may change after the clipping operation. If you've stored these properties as attributes, you might need to update them manually.
+
+The tool has two different input option:
+* Input layer: Layer from which the selection is clipped
+* Overlay layer: Area of interest that the input layer will be clipped to.
+
+```{figure} /fig/en_clip_sudan.PNG
+---
+height: 300px
+name: en_clip_sudan
+---
+Screenshot of the Clip tool with the input data
+```
+Information on road infrastructure for humanitarian aid operations is of great importance and can be easily retrieved from open-source data sources like OpenStreetMap. However, this information is often included in extensive datasets that contain a significant amount of irrelevant details for specific operations. To make working with this data more efficient, it is common practice to clip the data to the area of interest. In addition to clipping, data can often be filtered, as described in the first part of Module 5
+
+### Exercise: Clipping a roads layer to administrative boundaries
+
+1. Load the OSM roads data from the [HOT Export tool](https://export.hotosm.org/v3/exports/918cf68d-dfd7-40f1-ab46-4f0426dfaf68/) (part of the Humanitarian OpenStreetMap Team) as a new layer __Road_infrastructure_Sudan.geojson__.
+```{figure} /fig/en_screenshot_hot_export_tool.PNG
+---
+height: 280px
+name: en_screenshot_hot_export_tool
+---
+Screenshot of the HOT Export tool to download your OSM data
+```
+2. Filter the layer by using the __query builder__ to only show __primary and residential roads__ ("highway" = 'primary' OR "highway" = 'residential')
+3. Load the admin1 layer for Sudan which contains the district White Nile, __ne_10m_admin_1_Sudan_White_Nile.geojson__
+4. Select the roads layer and open the __Clip__ dialogue from Vector > Geoprocessing Tools
+    - Set roads as the __input layer__ and the district boundaries of White Nile as the __overlay layer__
+    - Click __Run__ to generate a temporary layer called Clipped
+7. You now have a tidy roads layer which contains the necessary information
+
+````{dropdown} Solution: Clipping a roads layer to administrative boundaries
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_clip_roads.mp4"></video>
+````
+
+In addition to the standard QGIS operation __Clip__, there are two other, more advanced tools for performing clipping processes. These tools are GDAL operations, which enable the definition of the clipping extent. This extent can be either a specific area or a mask layer. The second option is quite similar to the standard clipping process provided by QGIS.
+
+```{figure} /fig/en_gdal_clipping_tools.PNG
+---
+height: 60px
+name: gdal_clipping_tools
+---
+The GDAL tools Clip vector by extent and Clip vector by mask layer
+```
+
+::::{tab-set}
+
+:::{tab-item} Clip vector by extent
+This operation clips any vector file to a given extent. This clip extent will be defined by a bounding box that should be used for the vector output file. It also has to be defined in the target CRS coordinates. There are different methods to define the bounding box:
+* Calculate from a layer: this uses the extent of a layer loaded into the current project
+* Calculate from layout map: uses the extent of a layout map item in the active project
+* Calculate from bookmark: uses the extent of a saved bookmark
+* Use map canvas extent
+* Draw on canvas: click and drag a rectangle delimiting the area to take into account
+* Enter the coordinates as xmin, xmax, ymin, ymax
+:::
+
+:::{tab-item} Clip vector by mask layer
+This operation uses a mask polygon layer to clip any vector layer. This operation only takes two input:
+1. The input layer
+2. The mask layer which is used as the clipping extent for the input vector layer
+:::
+
+::::
 
 ## Buffer
 The concept of __buffering__ in QGIS for vector data, refers to the process of creating a new polygon layer with areas that represent a __certain distance__ or __buffer around existing vector features__. This buffer zone is typically uniform and extends outward from the original features, making it useful for various spatial analyses and mapping applications. Examples for such analyses could be the creation of buffer zones to protect the environment, analyse greenbelts around residential areas or create risk areas for natural disasters. Buffer can be created around points, lines and polygons as shown in the figure below.
@@ -17,34 +87,32 @@ There are several variations in buffering. The __buffer distance__ or __buffer s
 If you are trying to make a buffer on a layer with a Geographical Coordinate System, processing will warn you and suggest to reproject the layer to a __metric Coordinate System__.
 ```
 
-For instance, when creating a buffer zone along a riverbank, the buffer's width may vary, contingent upon the nature of the surrounding land use. In cases of intense cultivation, the buffer distance might be more extensive compared to areas dedicated to organic farming.
+In the case of humanitarian action buffering can be used to create a map which provides information about the coverage of health sites in the distance of 10 km. The health sites are points and can be buffered with 10 km. In a next step, the results can be dissolved if two buffer zones overlap and create a homogoneous area. This examples will be done in the next step.
+
+### Exercise: Create 10km buffer around health centres
+
+1. Download the Sudan health sites data from [HDX](https://data.humdata.org/dataset/sudan-healthsites) as a shapefile
+2. Load your new data into QGIS. Also add the district boundaries of Khartoum, __ne_10m_admin_1_Sudan_Khartoum.geojson__
+3. Clip your health sites to the boundaries of Karthoum district
+4. __Reproject__ the health sites layer to a local coordinate system to enable setting distances in km
+    - Vector menu > Data Management Tools > __Reproject Layer__
+    - Select the __health sites__ layer as the input layer
+    - Set the target __CRS to WGS 84 / UTM zone 36N__ (click the projections icon to search the full list of options)
+    - Click Run to reproject
+5. Open the __Buffer__ tool by accessing Vector > Geoprocessing Tools > Buffer
+    - Select the __reprojected layer__ as the input layer
+    - Set the distance to __10km__
+    - Check the option to __dissolve__ result
+    - Leave the other options as defaults and click Run
+
+````{dropdown} Solution: Create 10km buffer around health centres
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_buffer_health.mp4"></video>
+````
 
 ## Dissolve
-The dissolve tool combines features in a vector layer to make new ones. You can pick one or more attributes to group together features that share the same value for those attributes. Alternatively, you can combine all features into one. The tool will convert the shapes into multi-geometries, and if you're working with polygons, it'll remove shared boundaries between them.
+The dissolve operation was already mentioned in the later part of the previous exercise. The dissolve tool combines features in a vector layer to make new ones. You can pick one or more attributes to group together features that share the same value for those attributes. Alternatively, you can combine all features into one. The tool will convert the shapes into multi-geometries, and if you're working with polygons, it'll remove shared boundaries between them.
 
 If you turn on the "Keep disjoint features separate" option when running the tool, it'll make sure that features or parts that don't overlap or touch each other are saved as separate features instead of being part of one big feature. This allows you to create several vector layers.
-
-## Clip
-
-This tool is used to cut a vector layer with the boundaries of another polygon layer. It keeps only the parts of the features in the input layer that are inside the polygons of the overlay layer, creating a refined dataset. While the core attributes of the features remain the same, some properties like area or length may change after the clipping operation. If you've stored these properties as attributes, you might need to update them manually.
-
-## Clip vector by extent
-
-This operation clips any vector file to a given extent. This clip extent will be defined by a bounding box that should be used for the vector output file. It also has to be defined in the target CRS coordinates. There are different methods to define the bounding box of which the following is the most prominent:
-* Calculate from a layer: this uses the extent of a layer loaded into the current project
-
-# DROPDOWN HERE OR TABS
-Other option are:
-* Calculate from layout map: uses the extent of a layout map item in the active project
-* Calculate from bookmark: uses the extent of a saved bookmark
-* Use map canvas extent
-* Draw on canvas: click and drag a rectangle delimiting the area to take into account
-* Enter the coordinates as xmin, xmax, ymin, ymax
-
-## Clip vector by mask layer
-
-This operation uses a mask polygon layer to clip any vector layer.
-
 
 ## Spatial joins
 Spatial joins in QGIS enhance the attributes of the input layer by adding additional information from the join layer, relying on their __spatial relationship__. This process enriches your data by incorporating relevant details from one layer into another based on their geographical associations.
@@ -101,3 +169,9 @@ Content 2
 Further helpful information on this process can be found on the QGIS documentation under [Join attributes by location](https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html?highlight=join%20attributes%20location#join-attributes-by-location).
 
 For performing additional calculations in combination with a spatial join, the QGIS tool  __Join attributes by location (summary)__ is really helpful. This functionality closely resembles the previously outlined workflow; however, the algorithm extends its capabilities by calculating statistical summaries for the values from matching features in the second layer. These summaries encompass a wide range of options, including __minimum__ and __maximum values__, __mean values__, as well as __counts__, __sums__, __standard deviation__, and more.
+
+
+## Data sources
+
+HOT Export tool for road infrastructure
+Natural Earth Data for country and district boundaries (Admin 1 - States, Provinces) and then Download states and provinces
