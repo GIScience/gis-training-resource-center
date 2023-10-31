@@ -50,6 +50,21 @@ An example could be to calculate the population density based on the already exi
 
 A very important tool for such calculations is the __Field Calculator__. It allows you to __perform calculations based on existing attribute values or defined functions__, for example, to calculate the length or area of a geometry feature. The results of these calculations can be written into a new field or update an existing field.
 
+
+```{figure} /fig/en_field_calculator_red_boxes.png
+---
+height: 350px
+name: field_calculator
+---
+Screenshot of the Field calculator
+```
+
+The most important groups that are provided with the field calculator are listed below:
+- Fields and Values
+- Geometry
+    - $area
+    - $length
+
 ````{dropdown} Calculate the population density based on the already existing fields Population and Area
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_calculate_field.mp4"></video>
 ````
