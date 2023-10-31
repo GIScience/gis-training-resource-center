@@ -122,6 +122,7 @@ In the case of humanitarian action buffering can be used to create a map which p
     - Set the distance to __10km__
     - Check the option to __dissolve__ result
     - Leave the other options as defaults and click Run
+6. Now you have a rough overview over the coverage with health sites for the district of Khartoum
 
 ````{dropdown} Solution: Create 10km buffer around health centres
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_buffer_health.mp4"></video>
@@ -143,14 +144,7 @@ Buffer zones with dissolved (left) and with intact boundaries (right) showing ov
 ## Spatial joins
 Spatial joins in QGIS enhance the attributes of the input layer by adding additional information from the join layer, relying on their __spatial relationship__. This process enriches your data by incorporating relevant details from one layer into another based on their geographical associations.
 
-```{figure} /fig/en_select_by_location.png
----
-height: 300px
-name: spatial_relations
----
-Looking for spatial relations between layers <br /> (Source: [QGIS Documentation](https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html?highlight=join%20attributes%20location), Version 3.28)
-```
-Various types of spatial relations exist between the source feature and the target feature, enabling their potential linkage. The subsequent list outlines these distinct options and provides descriptions, all oriented around the upper figure for clarity.
+Various types of spatial relations exist between the source feature and the target feature, enabling their potential linkage. The subsequent list outlines these distinct options and provides descriptions, all oriented around the lower figure for clarity.
 
 ::::{tab-set}
 
@@ -187,6 +181,14 @@ Returns 1 (true) if the supplied geometries have some, but not all, interior poi
 :::
 
 ::::
+
+```{figure} /fig/en_select_by_location.png
+---
+height: 300px
+name: spatial_relations
+---
+Looking for spatial relations between layers <br /> (Source: [QGIS Documentation](https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html?highlight=join%20attributes%20location), Version 3.28)
+```
 
 QGIS provides a range of tools that allow users to delve into spatial relationships and leverage them for enhancing their datasets.
 
@@ -239,10 +241,33 @@ Screenshot of the tool Join attributes by nearest
 
 ::::
 
-Further helpful information on the processes of spatial joins can be found on the QGIS documentation under [Join attributes by location](https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html?highlight=join%20attributes%20location#join-attributes-by-location).
+In the aftermath of flooding events, data on the affected population and the extent of flooding is crucial. This information can be refined from a nationwide dataset to provide specific numbers for individual districts or states. This can aid in identifying the areas most heavily impacted, leading to more efficient relief operations. In the upcoming exercise, we will calculate the total flooding extent in square kilometers and the affected population for the state of Unity State, South Sudan. To accomplish this, we will utilize the __Join attributes by location (summary)__ tool.
+
+### Exercise: Calculate sum of affected population and flooded area for the Area of interest
+
+1. Load the necessary data for this exercise into your QGIS. Both datasets were downloaded from HDX:
+    - __State_Unity_South_Sudan.geojson__
+    - __VIIRS_20230811_20230815_MaximumFloodWaterExtent_SouthSudan.geojson__
+2. Locate the tool named __Join attribute by location (summary)__
+    - Choose __state boundaries__ as the target layer for joining features
+    - Set __intersect__ as the spatial relationship
+    - Select  __flood extent layer__ as the comparison layer
+    - Specify the fields to be summarized as __Area_km2__ and __Pop__
+    - Choose __sum__ as the type of summaries to be calculated
+    - Click Run to start the process
+3. Once completed, you will have access to information on the __total affected population__ and __flooded areas__ for the entire state of Unity.
+
+
+````{dropdown} Solution: Calculate sum of affected population and flooded area for the Area of interest
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_spatial_join.mp4"></video>
+````
+
+You can find further information about spatial joins by referring to the QGIS documentation, specifically in the section [Join attributes by location](https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html?highlight=join%20attributes%20location#join-attributes-by-location).
 
 ## Data sources
 
 HOT Export tool for road infrastructure
 Natural Earth Data for country and district boundaries (Admin 1 - States, Provinces) and then Download states and provinces
 HDX for health sites
+HDX for flood water extent https://data.humdata.org/dataset/satellite-detected-water-extents-between-11-and-15-august-2023-over-south-sudan
+HDX for admin boundaries https://data.humdata.org/dataset/cod-ab-ssd
