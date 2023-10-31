@@ -54,19 +54,37 @@ The GDAL tools Clip vector by extent and Clip vector by mask layer
 ::::{tab-set}
 
 :::{tab-item} Clip vector by extent
-This operation clips any vector file to a given extent. This clip extent will be defined by a bounding box that should be used for the vector output file. It also has to be defined in the target CRS coordinates. There are different methods to define the bounding box:
+This operation clips any vector file to a given extent. This clip extent will be defined by a bounding box that should be used for the vector output file. It also has to be defined in the target CRS coordinates. There are different methods to define the bounding box, which are the great difference between this tool and the standard clipping process:
 * Calculate from a layer: this uses the extent of a layer loaded into the current project
 * Calculate from layout map: uses the extent of a layout map item in the active project
 * Calculate from bookmark: uses the extent of a saved bookmark
 * Use map canvas extent
 * Draw on canvas: click and drag a rectangle delimiting the area to take into account
 * Enter the coordinates as xmin, xmax, ymin, ymax
+
+```{figure} /fig/en_clip_vector_by_extent.PNG
+---
+height: 350px
+name: en_clip_vector_by_extent
+---
+Screenshot of the tool Clip vector by extent
+```
+
 :::
 
 :::{tab-item} Clip vector by mask layer
 This operation uses a mask polygon layer to clip any vector layer. This operation only takes two input:
 1. The input layer
 2. The mask layer which is used as the clipping extent for the input vector layer
+
+```{figure} /fig/en_clip_vector_by_mask_layer.PNG
+---
+height: 350px
+name: clip_vector_by_mask_layer
+---
+Screenshot of the tool Clip vector by mask layer
+```
+
 :::
 
 ::::
@@ -76,10 +94,10 @@ The concept of __buffering__ in QGIS for vector data, refers to the process of c
 
 ```{figure} /fig/en_buffer_point_line_polygon.png
 ---
-height: 300px
+height: 350px
 name: spatial_relations
 ---
-Different kinds of buffer zones
+Different kinds of buffer zones <br /> (Adapted after [QGIS Documentation](https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve), Version 3.28)
 ```
 There are several variations in buffering. The __buffer distance__ or __buffer size can vary__ according to the numerical values provided. The numerical values have to be defined in map units according to the Coordinate Reference System (CRS) used with the data. 
 
@@ -114,28 +132,61 @@ The dissolve operation was already mentioned in the later part of the previous e
 
 If you turn on the "Keep disjoint features separate" option when running the tool, it'll make sure that features or parts that don't overlap or touch each other are saved as separate features instead of being part of one big feature. This allows you to create several vector layers.
 
+```{figure} /fig/en_buffer_dissolve.png
+---
+height: 175px
+name: buffer_dissolve
+---
+Buffer zones with dissolved (left) and with intact boundaries (right) showing overlapping areas <br /> (Source: [QGIS Documentation](https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve), Version 3.28)
+```
+
 ## Spatial joins
 Spatial joins in QGIS enhance the attributes of the input layer by adding additional information from the join layer, relying on their __spatial relationship__. This process enriches your data by incorporating relevant details from one layer into another based on their geographical associations.
 
 ```{figure} /fig/en_select_by_location.png
 ---
-height: 500px
+height: 300px
 name: spatial_relations
 ---
-Looking for spatial relations between layers (source: QGIS Documentation)
+Looking for spatial relations between layers <br /> (Source: [QGIS Documentation](https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html?highlight=join%20attributes%20location), Version 3.28)
 ```
 Various types of spatial relations exist between the source feature and the target feature, enabling their potential linkage. The subsequent list outlines these distinct options and provides descriptions, all oriented around the upper figure for clarity.
 
-| spatial relation | description
-|------------------|---------------------------------
-| __Intersect__    | Tests whether the geometry of the two layers intersects with one another. Returns 1 (true) if the geometries spatially intersect (share any portion of space, could be overlap or touch) and 0 if they don’t. In the picture above, this will return circles 1, 2 and 3.
-| __Contain__      | Returns 1 (true) if and only if no points of b lie in the exterior of a, and at least one point of the interior of b lies in the interior of a. In the picture, no circle is returned, but the rectangle would be if you would look for it the other way around, as it contains circle 1 completely. This is the opposite of are within.
-| __Disjoint__     | Returns 1 (true) if the geometries do not share any portion of space (no overlap, not touching). Only circle 4 is returned.
-| __Equal__        | Returns 1 (true) if the geometries are exactly the same. No circles will be returned.
-| __Touch__        | Tests whether a geometry touches another. Returns 1 (true) if the geometries have at least one point in common, but their interiors do not intersect. Only circle 3 is returned.
-| __Overlap__      |Tests whether geometries overlap. Returns 1 (true) if the geometries share space, are of the same dimension, but are not completely contained by each other. Only circle 2 is returned.
-| __Are within__   | Tests whether one geometry is within another. Returns 1 (true) if geometry a is completely inside geometry b. Only circle 1 is returned.
-| __Cross__        | Returns 1 (true) if the supplied geometries have some, but not all, interior points in common and the actual crossing is of a lower dimension than the highest supplied geometry. For example, a line crossing a polygon will cross as a line (true). Two lines crossing will cross as a point (true). Two polygons cross as a polygon (false). In the picture, no circles will be returned.
+::::{tab-set}
+
+:::{tab-item} Intersect
+Tests whether the geometry of the two layers intersects with one another. Returns 1 (true) if the geometries spatially intersect (share any portion of space, could be overlap or touch) and 0 if they don’t. In the picture above, this will return circles 1, 2 and 3.
+:::
+
+:::{tab-item} Contain
+Returns 1 (true) if and only if no points of b lie in the exterior of a, and at least one point of the interior of b lies in the interior of a. In the picture, no circle is returned, but the rectangle would be if you would look for it the other way around, as it contains circle 1 completely. This is the opposite of are within.
+:::
+
+:::{tab-item} Disjoint
+Returns 1 (true) if the geometries do not share any portion of space (no overlap, not touching). Only circle 4 is returned.
+:::
+
+:::{tab-item} Equal
+Returns 1 (true) if the geometries are exactly the same. No circles will be returned.
+:::
+
+:::{tab-item} Touch
+Tests whether a geometry touches another. Returns 1 (true) if the geometries have at least one point in common, but their interiors do not intersect. Only circle 3 is returned.
+:::
+
+:::{tab-item} Overlap
+Tests whether geometries overlap. Returns 1 (true) if the geometries share space, are of the same dimension, but are not completely contained by each other. Only circle 2 is returned.
+:::
+
+:::{tab-item} Are within
+Tests whether one geometry is within another. Returns 1 (true) if geometry a is completely inside geometry b. Only circle 1 is returned.
+:::
+
+:::{tab-item} Cross
+Returns 1 (true) if the supplied geometries have some, but not all, interior points in common and the actual crossing is of a lower dimension than the highest supplied geometry. For example, a line crossing a polygon will cross as a line (true). Two lines crossing will cross as a point (true). Two polygons cross as a polygon (false). In the picture, no circles will be returned.
+:::
+
+::::
 
 QGIS provides a range of tools that allow users to delve into spatial relationships and leverage them for enhancing their datasets.
 
@@ -157,21 +208,41 @@ Screenshot of the tool Join attributes by location
 :::
 
 :::{tab-item} Join attributes by location (summary)
-Content 2
+For performing additional calculations in combination with a spatial join, the QGIS tool  __Join attributes by location (summary)__ is really helpful. This functionality closely resembles the previously outlined workflow; however, the algorithm extends its capabilities by calculating statistical summaries for the values from matching features in the second layer. These summaries encompass a wide range of options, including __minimum__ and __maximum values__, __mean values__, as well as __counts__, __sums__, __standard deviation__, and more.
+
+```{figure} /fig/en_join_attributes_by_location_summary.PNG
+---
+height: 500px
+name: join_attribute_by_location
+---
+Screenshot of the tool Join attributes by location (summary)
+```
+
 :::
 
 :::{tab-item} Join attributes by nearest
-Content 2
+It takes an input vector layer and uses this information to create a new vector layer. The new layer incorporates additional fields in its attribute table, and these supplementary attributes are obtained from a second vector layer. The joining of features occurs by identifying the closest features from each of these layers.
+
+By default, this operation connects each feature with its nearest counterpart. However, it also offers the flexibility to join with the k-nearest neighboring features if needed.
+
+Furthermore, if a maximum distance is specified, only the features that are within this designated distance will be considered as suitable matches for the joining process.
+
+```{figure} /fig/en_join_attributes_by_nearest.PNG
+---
+height: 500px
+name: join_attribute_by_location
+---
+Screenshot of the tool Join attributes by nearest
+```
+
 :::
 
 ::::
 
-Further helpful information on this process can be found on the QGIS documentation under [Join attributes by location](https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html?highlight=join%20attributes%20location#join-attributes-by-location).
-
-For performing additional calculations in combination with a spatial join, the QGIS tool  __Join attributes by location (summary)__ is really helpful. This functionality closely resembles the previously outlined workflow; however, the algorithm extends its capabilities by calculating statistical summaries for the values from matching features in the second layer. These summaries encompass a wide range of options, including __minimum__ and __maximum values__, __mean values__, as well as __counts__, __sums__, __standard deviation__, and more.
-
+Further helpful information on the processes of spatial joins can be found on the QGIS documentation under [Join attributes by location](https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html?highlight=join%20attributes%20location#join-attributes-by-location).
 
 ## Data sources
 
 HOT Export tool for road infrastructure
 Natural Earth Data for country and district boundaries (Admin 1 - States, Provinces) and then Download states and provinces
+HDX for health sites
