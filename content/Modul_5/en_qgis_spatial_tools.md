@@ -31,7 +31,7 @@ name: en_screenshot_hot_export_tool
 Screenshot of the HOT Export tool to download your OSM data
 ```
 2. Filter the layer by using the __query builder__ to only show __primary and residential roads__ ("highway" = 'primary' OR "highway" = 'residential')
-3. Load the admin1 layer for Sudan which contains the district White Nile, __ne_10m_admin_1_Sudan_White_Nile.geojson__
+3. Load the admin1 layer for Sudan which contains the district White Nile, __ne_10m_admin_1_Sudan_White_Nile.geojson__. They are downloaded and adapted from [Natural Earth Data](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/).
 4. Select the roads layer and open the __Clip__ dialogue from Vector > Geoprocessing Tools
     - Set roads as the __input layer__ and the district boundaries of White Nile as the __overlay layer__
     - Click __Run__ to generate a temporary layer called Clipped
@@ -109,8 +109,8 @@ In the case of humanitarian action buffering can be used to create a map which p
 
 ### Exercise: Create 10km buffer around health centres
 
-1. Download the Sudan health sites data from [HDX](https://data.humdata.org/dataset/sudan-healthsites) as a shapefile
-2. Load your new data into QGIS. Also add the district boundaries of Khartoum, __ne_10m_admin_1_Sudan_Khartoum.geojson__
+1. Download the __Sudan health sites__ data from [HDX](https://data.humdata.org/dataset/sudan-healthsites) as a shapefile
+2. Load your new data into QGIS. Also add the district boundaries of Khartoum, __ne_10m_admin_1_Sudan_Khartoum.geojson__. They are also downloaded and adapted from [Natural Earth Data](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/).
 3. Clip your health sites to the boundaries of Karthoum district
 4. __Reproject__ the health sites layer to a local coordinate system to enable setting distances in km
     - Vector menu > Data Management Tools > __Reproject Layer__
@@ -246,8 +246,8 @@ In the aftermath of flooding events, data on the affected population and the ext
 ### Exercise: Calculate sum of affected population and flooded area for the Area of interest
 
 1. Load the necessary data for this exercise into your QGIS. Both datasets were downloaded from HDX:
-    - __State_Unity_South_Sudan.geojson__
-    - __VIIRS_20230811_20230815_MaximumFloodWaterExtent_SouthSudan.geojson__
+    - [South Sudan - Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-ssd):<br /> __State_Unity_South_Sudan.geojson__
+    - [Satellite detected water extents between 11 and 15 August 2023 over South Sudan](https://data.humdata.org/dataset/satellite-detected-water-extents-between-11-and-15-august-2023-over-south-sudan): __VIIRS_20230811_20230815_MaximumFloodWaterExtent_SouthSudan.geojson__
 2. Locate the tool named __Join attribute by location (summary)__
     - Choose __state boundaries__ as the target layer for joining features
     - Set __intersect__ as the spatial relationship
@@ -263,11 +263,3 @@ In the aftermath of flooding events, data on the affected population and the ext
 ````
 
 You can find further information about spatial joins by referring to the QGIS documentation, specifically in the section [Join attributes by location](https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html?highlight=join%20attributes%20location#join-attributes-by-location).
-
-## Data sources
-
-HOT Export tool for road infrastructure
-Natural Earth Data for country and district boundaries (Admin 1 - States, Provinces) and then Download states and provinces
-HDX for health sites
-HDX for flood water extent https://data.humdata.org/dataset/satellite-detected-water-extents-between-11-and-15-august-2023-over-south-sudan
-HDX for admin boundaries https://data.humdata.org/dataset/cod-ab-ssd
