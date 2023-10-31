@@ -5,7 +5,7 @@ Non-spatial geodataprocessing in QGIS refers to the manipulation, subsetting and
 
 This segment of Module 5 will start with the introduction of table functions. It will then progress into techniques for querying data, ultimately introducing the important concept of non-spatial joins.
 
-```{figure} /fig/en_attribute_table_large.png
+```{figure} /fig/en_attribute_table_large.PNG
 ---
 height: 500px
 name: attribute_table_all
@@ -139,7 +139,7 @@ A lot of analysis can be done with just a single layer. But sometimes the necess
 
 In QGIS the tool __Join attributes by field value__ is often used for such operations:
 
-```{figure} /fig/en_join_attributes_by_field_values.png
+```{figure} /fig/en_join_attributes_by_field_values.PNG
 ---
 height: 500px
 name: join_attributes_by_field_value

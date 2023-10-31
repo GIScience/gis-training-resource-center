@@ -9,6 +9,11 @@ For our introduction, the standalone installers from OSGeo4W packages are suffic
 
 [![QGIS 3.28 - installation and basic setup](/fig/image_QGIS_3.28_download.png)](https://www.youtube.com/watch?v=tSJMT96HsAo)
 
+or:
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/QGIS_Installation.mp4"></video>
+
+
 ## Windows
 
 ### 32 Bit or 64 Bit?

@@ -84,6 +84,10 @@ Adding text to the print Layout
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_print_layout_adding_a_title
 .mp4"></video>
 
+### Adding an image
+
+VIDEO
+
 ### Adding a legend
 
 Before adding a legend, make sure that:
@@ -104,6 +108,22 @@ Adding a legend to the print layout
 
 In the __item properties__ panel, if you keep the __'Auto update'__ option checked, new layers added to your project will automatically be added to the legend but you cannot control them individually (rename if necessary, reorder ot remove items).  
 Once the option is unchecked, you can update the name of the layers, group them, reorganise them, etc.
+
+:::: {tab-set}
+::: {tab-item} Adding a legend
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_legend
+.mp4"></video>
+
+:::
+
+:::{tab-item} Editing the legend
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_editing_the_legend
+.mp4"></video>
+
+:::
+::::
 
 ### Adding a scale bar
 
@@ -135,6 +155,9 @@ name: Add scale bar
 ---
 Add and customize the scale bar
 ```
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_scale_bar
+.mp4"></video>
 
 ### Adding an overview map
 
@@ -179,19 +202,33 @@ Add a the extent of the main map to your overview map (the red rectangle on the 
 ```
 
 ``` {Caution}
-This method requires you to be sure that you are not going to modify the oveview map, as once the layers are locked, they will keep the style, and any updates will not affect the overview map
+This method requires you to be sure that you are not going to modify the oveview map, as once the layers are locked, they will keep the style, and any updates will not affect the overview map.
 ```
 
+## Exporting the print layout
+
+Once you are finished with the map composition, it is time to export export the print layout as a PDF or SVG file. 
+
+1. On the Toolbar click on the `Export as PDF`-button.
+2. Give the new file a name and select the location you want to save it.
+3. Click on `Save`.
+4. A new window "PDF Export Options" will open. Here you can adjust the compression algorithm. For the best results, select the lossless image compression. 
+5. Click `Save` again.
+6. A new green bar will pop up underneath the toolbars. Click on the file link to __review the exported map__.
+
+```{note}
+Make sure to check the map after exporting the PDF as some design elements might have changed in the exporting process.
+```
 
 # Good practices and common mistakes in mapping
 
 In order to produce good maps, there are some __basic rules__ to follow and common __semiological mistakes__ to avoid. 
 
-### Map composition
+## Map composition
 
-#### Key elements of a map
+### Key elements of a map
 
-A map is never complete without the following elements: 
+A map is __never complete without the following elements__: 
 - Title
 - Legend
 - Scale
@@ -247,7 +284,7 @@ name: scale bar
 ---
 A scale bar
 ``` 
-__Orientation__
+### Orientation
 
 Even if by default the majority of the maps are oriented to the North, it is still necessary to specify the orientation of the map. It is often indicated by an arrow to the North. Sometimes the orientation of different in order to optimize the representation of the study area on the map.
 
@@ -258,9 +295,9 @@ Any data represented on a map should have its sources indicated. This provides a
 It is possible to give the source of each data under the legend, or to do it in a dedicated space in the map. The level of precision of the sources varies according to the author or the precision of the data.
 
 
-### The 4 semiological errors
+## The 4 semiological errors
 
-#### 1. Proportional circles vs. solid colors
+### 1. Proportional circles vs. solid colors
 
 ```{caution}
 DO NOT represent __quantitative__ stock character/data with a __solid color__.
@@ -273,9 +310,10 @@ It is a mistake because:
 - You lose the __order relationship between the data__ (a circle can be twice as big as another one, a color cannot be "twice as dark")
 - Countries with a large surface area stand out visually (eg.: Russia in the example below)
 - We are trying to represent __data that has nothing to do with the area of a country__, but rather speaks of individual elements 
+
 >Add different example
 
-#### Color gradient vs. distinct color palette
+### 2. Color gradient vs. distinct color palette
 
 ```{caution}
 DO NOT use a __separate__ color palette to represent __ordered entities__
@@ -286,7 +324,7 @@ It is a mistake because:
 - By using a differentiating color variable, __you lose the ordinal relationship between entities__. Instead, a __gradient of the same color__ that should be used.
 - Different colors are used to differentiate between distinct entities.
 
-#### Gradient in a single color vs. Gradient between two colors
+### 3. Gradient in a single color vs. Gradient between two colors
 ```{Caution}
 DO NOT use a gradient across two colors for an always positive data.
 ```
@@ -301,7 +339,7 @@ It is a mistake because:
 - The map will send a message of divergence, of opposition between certain values, when we are simply trying to represent a hierarchy between values
 - In this way, the color itself directly indicates information about the trend (positive/negative or increasing/decreasing).
 
-#### Limited geometric symbols vs. complex icons and symbols
+### 4. Limited geometric symbols vs. complex icons and symbols
 ```{Caution}
 DO NOT use __too many symbols__ in a thematic map
 ```
