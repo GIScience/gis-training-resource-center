@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-11-02T17:04:49.473Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="iKjV2lGgvYXcy6o5Rngt" version="22.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-02T17:07:01.367Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="3SQ0mShlEFhQ_3o8bksJ" version="22.0.8" type="github">
   <diagram name="Page-1" id="befe702f-0dee-7ce4-ef18-aae07000cfe7">
-    <mxGraphModel dx="4276" dy="2762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="3369" dy="2216" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -136,9 +136,6 @@
         <mxCell id="A9gymC7fybR9dy0JzckG-48" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 26px;&quot;&gt;Keep track of field&lt;br style=&quot;font-size: 26px;&quot;&gt;operations&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=26;fontStyle=1;fontColor=#FFFFFF;" parent="1" vertex="1">
           <mxGeometry x="754" y="-160" width="250" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="A9gymC7fybR9dy0JzckG-49" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 26px;&quot;&gt;Market Monitoring&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=26;fontStyle=1;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="828" y="-90" width="250" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="A9gymC7fybR9dy0JzckG-50" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 26px;&quot;&gt;Situation Overview&lt;br style=&quot;font-size: 26px;&quot;&gt;Maps&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=26;fontStyle=1;fontColor=#FFFFFF;" parent="1" vertex="1">
           <mxGeometry x="425" y="-270" width="250" height="60" as="geometry" />
         </mxCell>
@@ -211,14 +208,17 @@
         <mxCell id="A9gymC7fybR9dy0JzckG-71" value="" style="rounded=0;whiteSpace=wrap;html=1;rotation=-30;strokeColor=none;fillColor=#A8AAAC;" parent="1" vertex="1">
           <mxGeometry x="748.78" y="73.84" width="503.65" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="A9gymC7fybR9dy0JzckG-78" value="&lt;b&gt;&lt;font style=&quot;font-size: 30px;&quot; face=&quot;Verdana&quot;&gt;GIS Techniques&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#EFF2F3;align=center;" parent="1" vertex="1">
-          <mxGeometry x="1180" y="-80" width="448" height="45" as="geometry" />
+        <mxCell id="A9gymC7fybR9dy0JzckG-78" value="&lt;b&gt;&lt;font style=&quot;font-size: 26px;&quot; face=&quot;Verdana&quot;&gt;GIS Techniques&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#EFF2F3;align=center;" parent="1" vertex="1">
+          <mxGeometry x="1180" y="-80" width="400" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="A9gymC7fybR9dy0JzckG-79" value="&lt;font face=&quot;Verdana&quot; size=&quot;1&quot; color=&quot;#ffffff&quot; style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 30px;&quot;&gt;GIS Products and Services&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#F5333F;align=center;" parent="1" vertex="1">
-          <mxGeometry x="1180" y="-130" width="448" height="50" as="geometry" />
+        <mxCell id="A9gymC7fybR9dy0JzckG-79" value="&lt;font face=&quot;Verdana&quot; size=&quot;1&quot; color=&quot;#ffffff&quot; style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 26px;&quot;&gt;GIS Products and Services&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#F5333F;align=center;" parent="1" vertex="1">
+          <mxGeometry x="1180" y="-130" width="400" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="A9gymC7fybR9dy0JzckG-76" value="&lt;b&gt;&lt;font style=&quot;font-size: 30px;&quot; color=&quot;#ffffff&quot; face=&quot;Verdana&quot;&gt;Core GIS functionality&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#A8AAAC;align=center;" parent="1" vertex="1">
-          <mxGeometry x="1180" y="-35" width="448" height="45" as="geometry" />
+        <mxCell id="A9gymC7fybR9dy0JzckG-76" value="&lt;b&gt;&lt;font style=&quot;font-size: 26px;&quot; color=&quot;#ffffff&quot; face=&quot;Verdana&quot;&gt;Core GIS functionality&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#A8AAAC;align=center;" parent="1" vertex="1">
+          <mxGeometry x="1180" y="-35" width="400" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="A9gymC7fybR9dy0JzckG-49" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 26px;&quot;&gt;Market Monitoring&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=26;fontStyle=1;fontColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="828" y="-90" width="250" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
