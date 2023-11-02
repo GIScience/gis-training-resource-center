@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2023-11-02T13:49:43.817Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="Hrpxb4rOGL1HH1Kb1Pvp" version="22.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-02T13:53:11.188Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="sln7w7Z8PMAN-LWbGraM" version="22.0.8" type="github">
   <diagram name="Page-1" id="befe702f-0dee-7ce4-ef18-aae07000cfe7">
     <mxGraphModel dx="934" dy="1412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="A9gymC7fybR9dy0JzckG-1" value="&#xa;&lt;span style=&quot;color: rgb(55, 65, 81); font-family: Söhne, ui-sans-serif, system-ui, -apple-system, &amp;quot;Segoe UI&amp;quot;, Roboto, Ubuntu, Cantarell, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(247, 247, 248); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Spatial Statistics&lt;/span&gt;&#xa;&#xa;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#eff2f3;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="A9gymC7fybR9dy0JzckG-1" value="Georeff" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#eff2f3;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="41.75" y="-50" width="972.5" height="972.5" as="geometry" />
         </mxCell>
         <mxCell id="70666756c84bb93c-1" value="" style="ellipse;whiteSpace=wrap;html=1;rounded=0;shadow=0;comic=0;strokeWidth=1;fontFamily=Verdana;fontSize=14;strokeColor=none;fillColor=#a8aaac;" parent="1" vertex="1">
@@ -108,6 +108,12 @@
         </mxCell>
         <mxCell id="A9gymC7fybR9dy0JzckG-35" value="Geodata digitalisation" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="530" y="10" width="198" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A9gymC7fybR9dy0JzckG-36" value="Mobile data collection" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="602" y="40" width="198" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A9gymC7fybR9dy0JzckG-37" value="Georeferencing" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="662" y="70" width="198" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
