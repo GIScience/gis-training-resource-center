@@ -10,6 +10,14 @@
 - GIS vs Cartography
 - Web GIS Platforms
 
+```{figure} /fig/GIS_SIMS.drawio.svg
+---
+height: 300px
+name: en_qgis_GIS_HA
+---
+GIS in Humanitarian Assistance
+```
+
 ## General Information: 
 
 - A Geographic Information System (GIS) is a __digital system that connects data to maps__.
