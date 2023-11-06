@@ -51,12 +51,8 @@ Airport Text Layer
 
 ### Result: 
 
->This (or similar) is what it looks like in the end:
-
-:::{dropdown} Airport Text Layer
-
+:::{dropdown} This (or similar) is what it looks like in the end:
 ![QGIS_User_Interface](/fig/en_eExercise_1_result.png)
-Airport Text Layer 
 :::
 
 
