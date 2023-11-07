@@ -1,6 +1,6 @@
 # Print layout
 
-The print layout in QGIS is where you design and finalize the map in order to print or export it as a pdf or format of your choice. Here you can add important elements such as the legend, a title, an explanatory text and everything you need to create a comprehensive map. A QGIS project is not a map until all the layout elements (legend, title, scale bar, sources, etc.) are added. 
+The print layout in QGIS is where you design and finalize the map in order to print or export it as a PDF or format of your choice. Here you can add important elements such as the legend, a title, an explanatory text and everything you need to create a comprehensive map. A QGIS project is not a map until all the layout elements (legend, title, scale bar, sources, etc.) are added. 
 
 1. Go to __Project > New Print Layout > enter a name for the new print layout > click OK__
 2. A new window witha blank print playout will appear.
@@ -8,7 +8,7 @@ The print layout in QGIS is where you design and finalize the map in order to pr
 
 ```{figure} ../../fig/en_30.30.2_create_print_layout.png
 ---
-width: 500px
+width: 700px
 name: Create Print Layout
 ---
 Create a new Print Layout
@@ -51,12 +51,22 @@ _A4 and A3 are the most commonly used sizes for maps_
 
 ```{figure} ../../fig/en_30.30.2_adding_a_map.png
 ---
-width: 500px
+width: 750px
 name: Add a new map
 ---
 Adding a new map to the Print Layout
 ```
+:::: {tab-set}
+::: {tab-item} Adding a new map
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_new_map
+.mp4"></video>
+:::
 
+::: {tab-item} Moving and scaling the map
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_moving_and_scaling_the_map
+.mp4"></video>
+:::
+::::
 ### Adding a title or a text box
 
 A title should describe the phenomenen represented on the map.
@@ -64,15 +74,19 @@ A title should describe the phenomenen represented on the map.
 - To add text (title, explanations), use the __Add Label__ tool and draw a rectangle of the desired size.
 - In the __Item Properties__ panel (on the right of your screen) you can __enter your text__ and __change the font, style, colour, etc.__ (_Remember to use the scroll bar in the window to see all the options). 
 
-
-
 ```{figure} ../../fig/en_30.30.2_print_layout_add_text.png
 ---
-width: 500px
+width: 750px
 name: Add text to the print layout
 ---
 Adding text to the print Layout
 ```
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_print_layout_adding_a_title
+.mp4"></video>
+
+### Adding an image
+
+VIDEO
 
 ### Adding a legend
 
@@ -86,7 +100,7 @@ To add a legend, you can use the __add legend__ button on the __left toolbar__.
 
 ```{figure} ../../fig/en_30.30.2_print_layout_add_legend.png
 ---
-width: 500px
+width: 750px
 name: Add a legend to the print layout
 ---
 Adding a legend to the print layout
@@ -95,6 +109,22 @@ Adding a legend to the print layout
 In the __item properties__ panel, if you keep the __'Auto update'__ option checked, new layers added to your project will automatically be added to the legend but you cannot control them individually (rename if necessary, reorder ot remove items).  
 Once the option is unchecked, you can update the name of the layers, group them, reorganise them, etc.
 
+:::: {tab-set}
+::: {tab-item} Adding a legend
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_legend
+.mp4"></video>
+
+:::
+
+:::{tab-item} Editing the legend
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_editing_the_legend
+.mp4"></video>
+
+:::
+::::
+
 ### Adding a scale bar
 
 Before adding a scale bar, select your main map and check in the __Item Properties__ panel that the __Scale__ fielld has a __round number__ 
@@ -102,7 +132,7 @@ Before adding a scale bar, select your main map and check in the __Item Properti
 
 ```{figure} ../../fig/en_30.30.2_print_layout_scale.png
 ---
-width: 500px
+width: 750px
 name: Round number for scale
 ---
 Make sure that the scale is at a round number
@@ -120,11 +150,14 @@ _There are many other options to customize the scale bar (change the font, colou
 
 ```{figure} ../../fig/en_30.30.2_print_layout_add_scale_bar.png
 ---
-width: 500px
+width: 750px
 name: Add scale bar
 ---
 Add and customize the scale bar
 ```
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_scale_bar
+.mp4"></video>
 
 ### Adding an overview map
 
@@ -144,7 +177,7 @@ To create an overview map, you need to follow these steps:
 
 ```{figure} ../../fig/en_30.30.2_print_layout_overview_map_preparations.png
 ---
-width: 200px
+width: 500px
 name: Overview map preparation
 ---
 An overview map should show important landmarks and borders
@@ -153,7 +186,7 @@ An overview map should show important landmarks and borders
 
 ```{figure} ../../fig/en_30.30.2_print_layout_add_overview_map.png
 ---
-width: 500px
+width: 750px
 name: Add Overview map
 ---
 Add an overview map and __lock the layer__
@@ -162,26 +195,50 @@ Add an overview map and __lock the layer__
 
 ```{figure} ../../fig/en_30.30.2_print_layout_add_map_extent_overview_map.png
 ---
-width: 500px
+width: 750px
 name: Create an Overview
 ---
 Add a the extent of the main map to your overview map (the red rectangle on the overview)
 ```
 
 ``` {Caution}
-This method requires you to be sure that you are not going to modify the oveview map, as once the layers are locked, they will keep the style, and any updates will not affect the overview map
+This method requires you to be sure that you are not going to modify the oveview map, as once the layers are locked, they will keep the style, and any updates will not affect the overview map.
 ```
+
+## Exporting the print layout
+
+Once you are finished with the map composition, it is time to export export the print layout as a PDF or SVG file. 
+
+1. On the Toolbar click on the `Export as PDF`-button.
+2. Give the new file a name and select the location you want to save it.
+3. Click on `Save`.
+4. A new window "PDF Export Options" will open. Here you can adjust the compression algorithm. For the best results, select the lossless image compression. 
+5. Click `Save` again.
+6. A new green bar will pop up underneath the toolbars. Click on the file link to __review the exported map__.
+
+```{note}
+Make sure to check the map after exporting the PDF as some design elements might have changed in the exporting process.
+```
+
+# The Atlas function (automatic map generation)
+
+## Generate an Atlas
+
+
+
+## Setting up Overview maps with an atlas
+
 
 
 # Good practices and common mistakes in mapping
 
 In order to produce good maps, there are some __basic rules__ to follow and common __semiological mistakes__ to avoid. 
 
-### Map composition
+## Map composition
 
-#### Key elements of a map
+### Key elements of a map
 
-A map is never complete without the following elements: 
+A map is __never complete without the following elements__: 
 - Title
 - Legend
 - Scale
@@ -190,7 +247,13 @@ A map is never complete without the following elements:
 - Localization (Overview) Map
 - Author
 
-> Image?
+```{figure} ../../fig/en_good_map_composition_example.png
+---
+name: good map composition example
+width: 750px
+---
+Elements of good map composition
+```
 
 ----
 
@@ -213,7 +276,7 @@ __The legend__ is key to interpreting the information represented on the map. Wi
 
 ```{figure} ../../fig/en_legend_good_practice.png
 ---
-width: 500px
+width: 750px
 name: Organized Legend
 ---
 Example of a well organized legend
@@ -225,13 +288,13 @@ __The scale bar__ is essential to a map since it gives the correspondence betwee
 
 - __the graphical scale__ is expressed by a line on the map, with an associated distance value. This scale is very useful to have an idea of the distances on the ground. The graphical scale will always be the correct size, even if a different printing format is used, since it will undergo the same transformation as the rest of the map
 
-```{figure} ../../fig/example_scale_bar.png" 
+```{figure} ../../fig/example_scale_bar.png
 ---
 name: scale bar
 ---
-A scale bar
+Scale bar examples
 ``` 
-__Orientation__
+### Orientation
 
 Even if by default the majority of the maps are oriented to the North, it is still necessary to specify the orientation of the map. It is often indicated by an arrow to the North. Sometimes the orientation of different in order to optimize the representation of the study area on the map.
 
@@ -242,9 +305,9 @@ Any data represented on a map should have its sources indicated. This provides a
 It is possible to give the source of each data under the legend, or to do it in a dedicated space in the map. The level of precision of the sources varies according to the author or the precision of the data.
 
 
-### The 4 semiological errors
+## The 4 semiological errors
 
-#### 1. Proportional circles vs. solid colors
+### 1. Proportional circles vs. solid colors
 
 ```{caution}
 DO NOT represent __quantitative__ stock character/data with a __solid color__.
@@ -257,9 +320,10 @@ It is a mistake because:
 - You lose the __order relationship between the data__ (a circle can be twice as big as another one, a color cannot be "twice as dark")
 - Countries with a large surface area stand out visually (eg.: Russia in the example below)
 - We are trying to represent __data that has nothing to do with the area of a country__, but rather speaks of individual elements 
+
 >Add different example
 
-#### Color gradient vs. distinct color palette
+### 2. Color gradient vs. distinct color palette
 
 ```{caution}
 DO NOT use a __separate__ color palette to represent __ordered entities__
@@ -270,7 +334,7 @@ It is a mistake because:
 - By using a differentiating color variable, __you lose the ordinal relationship between entities__. Instead, a __gradient of the same color__ that should be used.
 - Different colors are used to differentiate between distinct entities.
 
-#### Gradient in a single color vs. Gradient between two colors
+### 3. Gradient in a single color vs. Gradient between two colors
 ```{Caution}
 DO NOT use a gradient across two colors for an always positive data.
 ```
@@ -285,7 +349,7 @@ It is a mistake because:
 - The map will send a message of divergence, of opposition between certain values, when we are simply trying to represent a hierarchy between values
 - In this way, the color itself directly indicates information about the trend (positive/negative or increasing/decreasing).
 
-#### Limited geometric symbols vs. complex icons and symbols
+### 4. Limited geometric symbols vs. complex icons and symbols
 ```{Caution}
 DO NOT use __too many symbols__ in a thematic map
 ```
@@ -295,4 +359,3 @@ __The eye can easily distinguish 4 to 5 different symbols. Beyond that, it is di
 It is a mistake because:
 - It complicates the map and limits its impact. 
 - Sometimes you are forced to represent several symbols, so you must be careful about overlapping points and overloading the map.
-

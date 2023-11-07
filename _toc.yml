@@ -41,6 +41,8 @@ parts:
     chapters:
       - file: content/Modul_1/en_qgis_theorie.md
       - file: content/Modul_1/en_qgis_start.md
+        sections:
+          - file: content/Modul_1/en_qgis_interface_ex1.md
       - file: content/Modul_1/en_qgis_installation.md      
   - caption: Modul 2- Working with Geodata
     chapters:
@@ -74,7 +76,13 @@ parts:
   - caption: Modul 5- Intermediate GIS operation
     chapters:
       - file: content/Modul_5/en_qgis_spatial_tools.md
+        sections:
+          - file: content/Modul_5/en_qgis_spatial_tools_ex1.md
+          - file: content/Modul_5/en_qgis_spatial_tools_ex2.md   
       - file: content/Modul_5/en_qgis_non_spatial_tools.md
+        sections:
+          - file: content/Modul_5/en_qgis_non_spatial_tools_ex1.md
+          - file: content/Modul_5/en_qgis_non_spatial_tools_ex2.md 
   - caption: Modul 6- Data analysis with QGIS
     chapters:
       - file: content/Modul_6/en_qgis_data_analysis_theorie.md         

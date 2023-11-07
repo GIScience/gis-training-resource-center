@@ -5,6 +5,10 @@ QGIS is open source and therefore freely available to everyone at no cost. You c
 
 For our introduction, the standalone installers from OSGeo4W packages are sufficient for Windows.
 
+#### QGIS tutorial: QGIS 3.28 - installation and basic setup
+
+[![QGIS 3.28 - installation and basic setup](/fig/image_QGIS_3.28_download.png)](https://www.youtube.com/watch?v=tSJMT96HsAo)
+
 ## Windows
 
 ### 32 Bit or 64 Bit?

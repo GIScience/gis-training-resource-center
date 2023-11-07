@@ -27,9 +27,17 @@ Go to the data source manager and choose vector on the right. By clicking on the
 ![import raster data](../../fig/en_import_raster.png)
 
 ### Delimited Text import
+Go to the data source manager and choose vector on the right. By clicking on the three dots you can browse your files and choose the ones you want to import. Next, choose your file format and expand the geometry definition section to select **latitude (Y field)** and **longitude (X field)**. Usually there is one column each that contains the geometry ot coordinates.  
+ Click on Geometry CRS (5) and select the Project CRS.
+![import text data](../../fig/en_import_delimeted_text.png)
+ When you choose custom delimiters in the file format (3 & 3.1), you can change the delimiters.
+![file format](../../fig/en_delimited_text_fileformat.png)
 
 ### GeoPackage import
 
+### quick osm plugin
+
+### overpass turbo
 
 ### Adding basemap
 
