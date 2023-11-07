@@ -14,20 +14,24 @@ Screenshot of an attribute table for QGIS version 3.28.4
 ```
 ## Table functions
 
+For a comprehensive overview on the attribute table's functionality and its purpose, you're invited to explore the [Wiki](/content/Wiki/en_qgis_attribute_table_wiki.md) article on it.
+
 ### Add field
-The information of a vector layer can be accessed through its attribute table, and it can be enriched by adding new fields to this table.
+The information within a vector layer can be accessed through its attribute table, and it can be enhanced by introducing new fields to this table. These additional fields may be derived from calculations, as exemplified in the following case where population density is computed to provide deeper insights into spatial population distribution.
 
 ```{Attention}
 Depending on the information that will be added to the created attribute field, the correct data type must be selected.
 ```
 __Possible data types:__
+
+The most common ones are:
 - __Whole number: Integer (32 and 64 bit)__
 - __Decimal number (real)__
 - __Text (string)__
+
+Additional options:
 - Date and Date and time
 - Boolean
-
-The most common data types are the first three.
 
 ````{dropdown} Add a field for population density; the data type should be Decimal number (real)
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_add_field.mp4"></video>
@@ -59,11 +63,18 @@ name: field_calculator
 Screenshot of the Field calculator
 ```
 
-The most important groups that are provided with the field calculator are listed below:
-- Fields and Values
-- Geometry
-    - $area
-    - $length
+The most important groups and their respective functionality that are provided with the field calculator are listed below:
+- __Fields and Values__
+    - Contains a list of fields from the layer
+- __Geometry__
+    - Calculates the area of a polygon feature: `$area`
+    - Calculates the length of a line feature: `$length`
+    - Calculates the centroid of a polygon feature: `centroid($geometry)`
+    - Calculates the bounding box of a feature: `bounds($geometry)`
+    - Calculates the distance between two points: `distance(point_a, point_b)`
+- __Maths__
+    - Calculates the square root of a field: `sqrt("field")`
+    - Calculate `min` and `max`
 
 ````{dropdown} Calculate the population density based on the already existing fields Population and Area
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_calculate_field.mp4"></video>
@@ -141,6 +152,22 @@ Operators such as AND, OR can be used to combine different queris or criteria
 | __IS NULL__   | checks for null values                         |
 | __BETWEEN__   | checks if a value is within a specified range  |
 | __CASE WHEN__ | conditional expressions                        |
+:::
+
+::::
+
+##### SQL
+
+Another possibility to build your expressions is to utilize SQL.
+
+::::{tab-set}
+
+:::{tab-item} SQL introduction
+SQL in QGIS, often referred to as "Spatial SQL" or "Spatial Query Language," is a specialized version of SQL used for querying and manipulating geospatial data. It allows users to interact with geographic information by writing SQL queries that can filter, analyze, and visualize spatial data. With Spatial SQL in QGIS, you can work with various types of geospatial datasets and perform operations specific to geographic data, such as selecting features within a certain area, calculating spatial relationships, and much more. This capability makes SQL a valuable tool for geospatial data management and analysis in the QGIS environment.
+:::
+
+:::{tab-item} SQL Cheat sheet
+SQL in QGIS, often referred to as "Spatial SQL" or "Spatial Query Language," is a specialized version of SQL used for querying and manipulating geospatial data. It allows users to interact with geographic information by writing SQL queries that can filter, analyze, and visualize spatial data. With Spatial SQL in QGIS, you can work with various types of geospatial datasets and perform operations specific to geographic data, such as selecting features within a certain area, calculating spatial relationships, and much more. This capability makes SQL a valuable tool for geospatial data management and analysis in the QGIS environment.
 :::
 
 ::::
