@@ -87,8 +87,8 @@ Styling panel in QGIS 3.30.2
 
 
 For each layer in QGIS, there is a styling panel where you can change the symbology, colour and label for the features in that layer. There are two ways to open the layer styling options in QGIS:  
-1. Right click on the layer you wish to style and select properties
-2. Open the layer styling panel by enabling it under "View">"Panels">"Layer Styling"
+1. Right click on the layer you wish to style and select `properties`. A new window will open up with a vertical tab section on the left. Navigate to the `symbology` tab. 
+2. Open the layer styling panel by enabling it under `View`>`Panels`>`Styling Panel`. Usually, the 
 
 On the left of the styling panel you can choose the different tabs to access different styling options.
 
@@ -176,10 +176,10 @@ In the dropdowns below you can find examples on how to set up common vector data
 In this example, wewant to change the symbology of a single layer so that __only the outlines of the polygons are visible__. 
 
 To change the symbology of a single layer:
-1. Open the styling panel and navigate to the symbology tab. By default, the symbology will be set to __Single Symbol__. This means that the same colours and contours will be applied to all the features in that layer.
-2. Click on __"Simple Fill"__
-3. Click on the arrow to the right of __Fill Colour__
-4. Check the __"Transparent Fill"__ option
+1. Open the `Styling panel` and navigate to the symbology tab. By default, the symbology will be set to `Single Symbol`. This means that the same colours and contours will be applied to all the features in that layer.
+2. Click on `Simple Fill`
+3. Click on the arrow to the right of `Fill Colour`
+4. Check the `Transparent Fill` option
 
 ```{figure} ../../fig/en_30.30.2_vector_layer_styling_transparent.png
 ---
@@ -206,8 +206,8 @@ height: 400px
 Order the layers and navigate to the styling panel of the topmost layer
 ```
 
-1. Add the "Adm0", "Adm1" and "Adm2" shapefiles to your Session 2 project.
-2. Order the layers so they are all visible: Put the Adm2 at the bottom, then the Adm1 then Adm0. At first, this might look weird because Adm0 will cover everything.
+1. Add the `Adm0`, `Adm1` and `Adm2` shapefiles to your Session 2 project.
+2. Order the layers so they are all visible: Put the `Adm2` layer at the bottom, then the `Adm1` then `Adm0`. At first, this might look weird because `Adm0` will cover everything.
 3. Change the symbology of the Adm0 layer by opening the stlying panel and navigating to the Symbology tab. 
 
 
@@ -220,9 +220,9 @@ align: left
 Change the Fill type
 ```
 
-4. Click on "__Simple Fill__" to open the style options.
-5. Expand the "__Fill Color__" menu and check the __Transparent Fill__ option. This will make only the boundaries visible, so __we will be able to see the layer under this one__.
-6. Choose a __Stroke color__, and make the __Stroke width__ 0.66 Millimeters.
+4. Click on `Simple Fill` to open the style options.
+5. Expand the `Fill Colour` menu and check the `Transparent Fill` option. This will make only the boundaries visible, so __we will be able to see the layer under this one__.
+6. Choose a `Stroke Colour`, and make the `Stroke Width` 0.66 Millimeters.
 7. Click OK
 8. __Repeat the same process__ for the Adm1 layer, using the same colour as for Adm0 (it will be in "Recent colors) and leave the stroke width at 0.26.
 9. Now we can see the boundaries of the country and its states, and behind that we cann see the districs (Adm2).
@@ -230,8 +230,8 @@ Change the Fill type
 
 <br/><br/>
 
-11. Choose a __Fill Color__
-12. Use the same __Stroke color__ as for Adm0 and Adm1, but make the width 0.1 Millimeters and the Stroke Style a __Dash Line__
+11. Choose a `Fill Color`
+12. Use the same Stroke Colour` as for Adm0 and Adm1, but make the width 0.1 Millimeters and the Stroke Style a __Dash Line__
 13. Click OK and look at yout map: hopefully it's starting to look nicer!
 
 ```{figure} ../../fig/en_30.30.2_changing_layer_style_3.png
@@ -252,10 +252,7 @@ Remember that __the layer's symbology is saved within your project file, not wit
 
 :::{dropdown} Use different styles in a single layer
 
-```{note}For this exercise, you must have convertet the excel-spreadsheet "ACLED_Nigeria_2022-2023" into a .csv-file. Read how you can do this [here](/gis-training-resource-center/content/Modul_2/en_qgis_basic_data_processing.html#delimited-text-import). 
-
->Check if the others have the same issue with importing the .csv file (excel export as csv delimits with ";" instead of ",". QGIS expects ",", if you replace all the ";" with "," the coordinates do not work any longer because the degree are delimited with a "," as well. You can fix it in VSC)
-```
+>For this exercise, you must have convertet the excel-spreadsheet "ACLED_Nigeria_2022-2023" into a .csv-file. Read how you can do this [here](/gis-training-resource-center/content/Modul_2/en_qgis_basic_data_processing.html#delimited-text-import).  Check if the others have the same issue with importing the .csv file (excel export as csv delimits with ";" instead of ",". QGIS expects ",", if you replace all the ";" with "," the coordinates do not work any longer because the degree are delimited with a "," as well. You can fix it in VSC)
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_rule_based_styling
 .mp4"></video>
@@ -263,7 +260,7 @@ Remember that __the layer's symbology is saved within your project file, not wit
 We can use symbology to __show the difference between features__ in the same layer. For example, it could be different types of buildings, quantities of Covid cases by district, or types of roads. We can choose a specific attribute of a dataset to assign different colors, outlines, or sizes to features:
 
 1. From your shapefile folder, __drag te ACLED security incidents shapefile onto your map__
-2. Open the layer __Symbology__ and choose __Categorized__ instead of Single Symbol.   
+2. Open the `Symbology tab` for that layer and choose `Categorized` instead of Single Symbol.   
 ```{note} 
 Categorized symbology is used when you have ***discrete*** variables.
 ```
@@ -275,13 +272,13 @@ width: 500px
 ---
 Change the symbology type to "categorized" and choose the Value (variable) you wish to display
 ```
-3. Now we need to __choose which attributes we want to display through the symbology__. In this case, it could be the number of casualtiees, or the actor who perpetrated the act. Let's categorize the features by **event_type**
-4. Click on __"Classify" to list all the unique values contained in the event_type field__ (i.e. all the possible types of security incidents recorded in our table)
+3. Now we need to __choose which attributes we want to display through the symbology__. In this case, it could be the number of casualtiees, or the actor who perpetrated the act. Let's categorize the features by `event_type`
+4. Click on `Classify` to __list all the unique values contained__ in the `event_type` field (i.e. all the possible types of security incidents recorded in our table)
 5. Now we can __change the style of each single value__
-6. Double click on Explosions
+6. Double click on the value `Explosions`
 7. At the bottom of the __Symbol selector__ window, choose a symbol to make Explosion points stand our
-8. Click on OK, then Apply to preview what the layer will look like
-9. Click OK again
+8. Click on `OK`, then Apply to preview what the layer will look like
+9. Click `OK` again
 
 ```{figure} ../../fig/en_30.30.2_categorized_layer_symbology_2.png
 ---
@@ -314,10 +311,10 @@ If a layer contains numeric values that are continuous, they can be organized in
 1. Download the NGA_Adm1_Pop shapefile [link!!] and save it in your shapefile folder
 2. In QGIS, turn off the Adm1 and Adm2 layer, leaving only Adm0
 3. Drag the shapefile NGA_Adm1_Pop into your map
-4. Open its Symbology options and choose "__Graduated__"
-5. Select the value you want to use to assign colours, in this case, it will be "__population__"
+4. Open its `Symbology` options and choose `Graduated`
+5. __Select the value you want to use to assign colours__, in this case, it will be `Population`
 
-```{figure} ../../fig/en_30.30.2_symbology_variable_ranges_1.png
+```{figure} ../../fig/en_30.30.2_symbology_variable_ranges.png
 ---
 name: symbology of variable ranges
 width: 550px
@@ -325,11 +322,11 @@ width: 550px
 With variable ranges, select __Graduated__ symbology and choose the attribute with continuous values
 ```
 
-6. Click on __Classify__ to list all valued, divided in classes
+6. Click on `Classify` to __list all values divided in classes__
 7. Choose __how many classes__ you want the data to be divided into ‒ let's say 4
-8. By default, the colour ramp will be red. However, red is not the rivht colour to use for population count, as it is generally used to communicate negative elements, such as food insecurity or cholera cases
-9. Click on the arrow next to __Color Ramp__ to choose another combination of colours - let's say a color ramp from white to blue
-10. Click Apply to preview the look of your layer, then OK
+8. By default, the colour ramp will be red. However, red is not the right colour to use for population count, as it is generally used to communicate negative elements, such as food insecurity or cholera cases
+9. Click on __the arrow next to the colour ramp__ to choose another combination of colours - let's say a color ramp from white to blue
+10. Click `Apply` to preview the look of your layer, then `OK`
 
 ```{figure} ../../fig/en_30.30.2_symbology_variable_ranges_2.png
 ---
@@ -360,12 +357,12 @@ A map showing the population of Nigerian states
 :::{dropdown} Adding labels to a layer
 >This is exercise 2 in the PPP, also review 
 
-1. In the styling panel, click on the "Labels" tab.
-2. Select *Single Labels*. 
+1. In the styling panel, click on the `Labels` tab underneath the Symbology tab.
+2. Select `Single labels`. 
 3. `"Value"` is where you choose the attribute that will be displayed as a label. For example `*ADM1_EN*` will display the English names of Nigerian states for each feature in the data set.
-4. Let's change the font: make it Arial, bold, dark grey, 8 pt
-5. Let's add a white buffer around the label.
-7. Click Apply and Ok.
+4. Let's __change the font__: Open the Font dropdown menu and select Arial. Make the text `Bold` in the Style dropdown menu. Change the colour by clicking on `Colour`, and change the `Size` to 8 pt
+5. Let's __add a white buffer__ around the label. In the `Labels` tab, you will find a list with different options to style the labels. Right now, we are in the `Text` menu. Select `Buffer` and check the `Draw text buffer` option. This will make the labels stand out more on dark or crowded maps.
+7. Click `Apply` and `OK`.
 
 ```{figure} ../../fig/en_30.30.2_setting_up_labels.png
 ---
@@ -384,10 +381,10 @@ Setting up labels in QGIS 30.30.2
 
 Sometimes you will need to create two different label styles for different features of a single layer. In this example, we will create one label style for the *Country Capital*, and another one for the *State Capitals*
 
-1. Open the styling panel for the `"NGA_settlements_nga"` layer and click on the Labels tab
-2. Select __Rule-based Labeling__
-3. Click on the __Add Rule__ button at the bottom (the "+"-sign) and create the first rule
-4. For __Value__, select __"NAME"__ (so that the labels will show the name of each city), then click on the "ε"-button next to the "Filter" bar.
+1. Open the styling panel for the `"NGA_settlements_nga"` layer and click on the `Labels` tab
+2. Select `Rule-based Labelling`
+3. Click on the __Add Rule__ button at the bottom (the "+"-sign) and __create the first rule__
+4. For __Value__, select `"NAME"` (so that the labels will show the name of each city), then click on the `"ε"-button` next to the __Filter__ bar.
 
 ```{figure} ../../fig/en_30.30.2_adding_rule-based_labels.png
 ---
@@ -397,12 +394,12 @@ name: adding rule-based labels
 To add rule-based labels, you need to enter an expression
 ```
 
-5. In the central column, expand __Fields and Values__ to display a list of all the fields in your layer and double-click on __Class__ to add it to the expression frame on the left.
-6. In the right column, click on __All unique__ to list all unique values contained in the Class field. In this dataset, `"CLASS"=1` designates the capital city, whereas `"CLASS"=2` designate other major cities. 
-7. Click on the `"="` operator, then doube-click on the _value 1_ (which represent the Country capital in this case). Click OK.
-8. Scroll down to *change the label style*. Make it Arial, bold, black, 12pt and add a white buffer.
-9. Repeat steps 4 to 9, but select *Value 2* (State capitals) and make the label black, bold, 10pt, no buffer.
-10. Click **Apply**, the OK.
+5. In the central column, expand `Fields and Values` to display a list of all the fields in your layer and double-click on `"CLASS"` to __add it to the expression frame__ on the left.
+6. In the right column, click on `All unique` to list all unique values contained in the Class field. In this dataset, `"CLASS"=1` designates the capital city, whereas `"CLASS"=2` designate other major cities. Make sure to familiarise yourself with the dataset at your disposal, so you know what the different attributes represent.
+7. Click on the `"="` operator, then doube-click on the `value 1` (which represent the Country capital in this case). Click `OK`.
+8. Scroll down to __change the label style__. Make it Arial, bold, black, 12pt and add a white buffer.
+9. __Repeat steps 4 to 9__, but select `Value 2` (State capitals) and make the label black, bold, 10pt, no buffer.
+10. Click `Apply`, the `OK`.
 
 ```{figure} ../../fig/en_30.30.2_adding_rule-based_labels_expression_builder.png
 ---
@@ -429,9 +426,9 @@ The expression builder: Expression (left); building blocks, operators, fields an
 :::{dropdown} Move labels independently
 Sometimes the placement of labels is not ideal and can obstruct the readability of the map. In this case, you can move labels independently. 
 
-1. On the label toolbar, there is an option to move labels independently. Click on it to activate it. (Note: In some cases, the label toolbar might not be visible. In this case, turn it on by navigating to "View">"Toolbars">activate the Label toolbar)
-2. Click on the label you want to move.
-3. You will be prompted to select the primary key for joining with internal data storage. You do not need to change it (you can select the ID field of the dataset) and click OK.
+1. On the `label toolbar`, there is an option to __move labels independently__. Click on it to activate the tool. (Note: In some cases, the label toolbar might not be visible. In this case, turn it on by navigating to `View`>`Toolbars`>activate the Label toolbar)
+2. Click on the __label you want to move__.
+3. You will be prompted to select the primary key for joining with internal data storage. __You do not need to change it__ (you can select the ID field of the dataset) and click `OK`.
 4. Click on the label again, now you can move it freely.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_move_labels_independently
@@ -455,11 +452,11 @@ As we have already learned, raster data are basically a grid of pixels with diff
 
 To assign a colour gradient for raster data, you need to:
 
-1. Open the styling panel for the raster layer
-2. Navigate to the Symbology tab  
-3. By default, the colour scheme is set to Singleband gray (if you only have one colour band in the data set). Click on __Singleband gray__ and switch to __Singleband pseudocolour__
-4. Click on the arrow to the right of the colour ramp. Here you can choose a premade colour ramp
-5. You can modify the colour ramp by clicking on the colour ramp itself
+1. Open the `styling panel` for the raster layer
+2. Navigate to the `Symbology tab`  
+3. By default, the colour scheme is set to Singleband gray (if you only have one colour band in the data set). Click on `Singleband Gray` and switch to `Singleband pseudocolour`
+4. Click on __the arrow to the right of the colour ramp__. Here you can choose a premade colour ramp
+5. You can modify the colour ramp by __clicking on the colour ramp__.
 
 ``` {figure} ../../fig/en_30.30.2_raster_data_colour_gradient.png
 ---
@@ -471,12 +468,28 @@ Colour Ramp Selector
 
 In the colour ramp selector, you can adjust each colour step. On the bottom, you can see a plot for the Hue, __Saturation__, __Lightness__ and __Opacity__. Especially latter three are useful to see how your colour ramp will translate. Gradients from light to dark are easier to read: Check if the plot for the __Lightness__ has a more or less linear plot. 
 
->Examples Video! and how to invert ramp
+:::{dropdown} Styling an elevation model
+
+Elevation data sets are frequently used to communicate the terrain on a map. By default, an elevation model will be displayed with a gray colour ramp. However, if you don't need the to know the elevation at certain points, you can choose to display the __hillshade__ of the terrain. Hillshading will simulate the shadow of the terrain as if it would be exposed to a lightsource. In this example, we will use the elevation raster data (.tiff) of Algeria from the Humanitarian Data Exchange platform (humdata.org) To achieve this,
+
+ 1. Open the `symbology` tab
+ 2. Click on `Render type` and select `Hillshade`. You will have an option to select the direction of the light. Conventionally, the lightsource is positioned in the North-West, so we can keep the default settings. In some cases with rough terrain, it can be useful to make the Hillshade __Multidirectional__.
+ 3. The Hillshade will be very dark and cover most of the map. We need to make it lighter...
+
+>Example Video and continue explanation, maybe an algorithm would be better?
+
+:::
+
+### Inverting the colour ramp
+
+In some cases, the colour ramp should be inverted to make it easier to read the map:
+1. Click on the __arrow next to the Colour ramp__ to open the dropdown menu.
+2. Click on `Invert Colour Ramp`.
 
 
 # Exporting and Importing Styles
 
-As we have already learned, the layers in QGIS are saved separately from the settings and styles of a QGIS Project. Therefore, it can be useful to prepare template styles that you can load into your QGIS project or send to a colleage. 
+As we have already learned, the layers in QGIS are saved separately from the settings and styles of a QGIS Project. Therefore, it can be useful to prepare template styles that you can load into your QGIS project or send to a colleague. 
 
 # Examples for Map design
 

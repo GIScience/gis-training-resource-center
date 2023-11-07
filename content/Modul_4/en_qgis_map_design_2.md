@@ -1,6 +1,6 @@
 # Print layout
 
-The print layout in QGIS is where you design and finalize the map in order to print or export it as a pdf or format of your choice. Here you can add important elements such as the legend, a title, an explanatory text and everything you need to create a comprehensive map. A QGIS project is not a map until all the layout elements (legend, title, scale bar, sources, etc.) are added. 
+The print layout in QGIS is where you design and finalize the map in order to print or export it as a PDF or format of your choice. Here you can add important elements such as the legend, a title, an explanatory text and everything you need to create a comprehensive map. A QGIS project is not a map until all the layout elements (legend, title, scale bar, sources, etc.) are added. 
 
 1. Go to __Project > New Print Layout > enter a name for the new print layout > click OK__
 2. A new window witha blank print playout will appear.
@@ -219,6 +219,8 @@ Once you are finished with the map composition, it is time to export export the 
 ```{note}
 Make sure to check the map after exporting the PDF as some design elements might have changed in the exporting process.
 ```
+
+# The Atlas function (automatic map generation)
 
 # Good practices and common mistakes in mapping
 

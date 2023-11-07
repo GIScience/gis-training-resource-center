@@ -15,7 +15,7 @@ Reproject vector data (i.e. change the projection of the data).
 
 ### Data:
 
-Download the data (link!) and save it on your PC. Create a local folder and save the above data there. (.zip folders must be unzipped beforehand.)
+Download the data (zip-file: 83.23 KB) and save it on your PC. Create a local folder and save the above data there. (.zip folders must be unzipped beforehand.)
 
 - Sierra Leone Border (Polygon/Lines) GeoPacked
 
@@ -51,14 +51,8 @@ Airport Text Layer
 
 ### Result: 
 
-:::{dropdown} 
->Have a look at the tabbed example below
-
-This (or similar) is what it looks like in the end:
-
+:::{dropdown} This (or similar) is what it looks like in the end:
 ![QGIS_User_Interface](/fig/en_eExercise_1_result.png)
-Airport Text Layer 
-
 :::
 
 
