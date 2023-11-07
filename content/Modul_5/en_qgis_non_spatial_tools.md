@@ -20,7 +20,7 @@ For a comprehensive overview on the attribute table's functionality and its purp
 The information within a vector layer can be accessed through its attribute table, and it can be enhanced by introducing new fields to this table. These additional fields may be derived from calculations, as exemplified in the following case where population density is computed to provide deeper insights into spatial population distribution.
 
 ```{Attention}
-Depending on the information that will be added to the created attribute field, the correct data type must be selected.
+The selection of the appropriate data type should align with the information being added to the new attribute field. Please keep this in mind while watching the example video.
 ```
 __Possible data types:__
 
@@ -33,14 +33,14 @@ Additional options:
 - Date and Date and time
 - Boolean
 
-````{dropdown} Add a field for population density; the data type should be Decimal number (real)
+````{dropdown} Example: Add a field for population density
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_add_field.mp4"></video>
 ````
 
 ### Delete field
 It is also possible to __delete fields__ from the attribute table. A commonly used practice is to __remove all unused or unnecessary fields__ from a layer before starting to work on it. This __makes the dataset much more organized__.
 
-````{dropdown} Delete all unused/unnecessary fields from the vector layer
+````{dropdown} Example: Delete all unused/unnecessary fields from a vector layer
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_delete_field.mp4"></video>
 ````
 
@@ -52,8 +52,7 @@ It is necessary to __check if the data type of the field__ (new or updated) __an
 ```
 An example could be to calculate the population density based on the already existing fields Population and Area.
 
-A very important tool for such calculations is the __Field Calculator__. It allows you to __perform calculations based on existing attribute values or defined functions__, for example, to calculate the length or area of a geometry feature. The results of these calculations can be written into a new field or update an existing field.
-
+A very important tool for such calculations is the __Field Calculator__. It allows you to __perform calculations based on existing attribute values or defined functions__, for example, to calculate the length or area of a geometry feature or in the given example, could be used to calculate the population density based on the already existing fields Population and Area. The results of these calculations can be written into a new field or update an existing field.
 
 ```{figure} /fig/en_field_calculator_red_boxes.png
 ---
@@ -76,14 +75,14 @@ The most important groups and their respective functionality that are provided w
     - Calculates the square root of a field: `sqrt("field")`
     - Calculate `min` and `max`
 
-````{dropdown} Calculate the population density based on the already existing fields Population and Area
+````{dropdown} Example: Calculate the population density
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_calculate_field.mp4"></video>
 ````
 
 ### Basic statistics for fields
-The tool __Basic statistics for fields__ generates statistics for a specific field of the attribute table of a vector layer. The results are generated as an HTML file and can be accessed by using the __file path link__ in the __Results Viewer__. 
+The tool __Basic statistics for fields__ generates statistics for a specific field of the attribute table of a vector layer. The results are generated as an HTML file and can be accessed by using the __file path link__ in the __Results Viewer__. This operation is highly valuable for gaining a comprehensive understanding of the data you intend to work with. It allows you to determine the range of values, pinpoint the minimum and maximum values. In the provided example, this operation is applied to calculate the global population density, enabling you to easily identify the most densely populated region worldwide.
 
-````{dropdown} Calculate statistics for the field population density for all the countries. What are the max./min. values, average, etc.?
+````{dropdown} Example: Calculate statistics for the field population density for countries worldwide.
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_field_stats.mp4"></video>
 ````
 
@@ -94,10 +93,11 @@ __Questions that need to be considered when doing these calculations:__
 * For which fields should the statistics be calculated in the attribute table?
 * Which field in the attribute table contains which information?
 
-````{dropdown} How many cities per country have more than 300.000 inhabitants? For each country: how many people live in the largest agglomeration?
+For greater precision in these calculations, statistics by categories offer more comprehensive insights than those mentioned earlier. In this case, it becomes simple to determine the number of cities per country with over 300,000 inhabitants and, for each country, the population living in the largest urban agglomeration.
+
+````{dropdown} Example: Cities with more than 300.000 inhabitants and the amount of population in the largest agglomerations
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_stats_by_category.mp4"></video>
 ````
-
 
 ## Non-spatial queries
 In GIS you can __query__ (filter) data based on specific attribute information. Once the filtering is successful, only the desired features that __correspond__ to the chosen attribute are displayed. Data filtering is a valuable technique for creating __subsets__ of features that can be exported as a new layer.
@@ -105,7 +105,7 @@ In GIS you can __query__ (filter) data based on specific attribute information. 
 ### Manual selection
 It is possible to manually select specific rows by clicking on the number on the left side of it. This can be easily used to select a small number of rows. If they are selected successfully, they will appear in __yellow__.
 
-````{dropdown} Manual selection of rows
+````{dropdown} Example: Manual selection of rows
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_attribute_table.mp4"></video>
 ````
 
@@ -156,6 +156,12 @@ Operators such as AND, OR can be used to combine different queris or criteria
 
 ::::
 
+Querying your data to answer more complex question is of great importance. This can be accomplished using the "Select by expression" tool. In the provided example, we aim to answer the question: Which cities, not having a population of one million inhabitants in 1950, had surged to over 10 million inhabitants by 2015?
+
+````{dropdown} Example: Cities, not having a population of one million inhabitants in 1950, had surged to over 10 million inhabitants by 2015?
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_expression_and.mp4"></video>
+````
+
 ##### SQL
 
 Another possibility to build your expressions is to utilize SQL.
@@ -163,17 +169,44 @@ Another possibility to build your expressions is to utilize SQL.
 ::::{tab-set}
 
 :::{tab-item} SQL introduction
-SQL in QGIS, often referred to as "Spatial SQL" or "Spatial Query Language," is a specialized version of SQL used for querying and manipulating geospatial data. It allows users to interact with geographic information by writing SQL queries that can filter, analyze, and visualize spatial data. With Spatial SQL in QGIS, you can work with various types of geospatial datasets and perform operations specific to geographic data, such as selecting features within a certain area, calculating spatial relationships, and much more. This capability makes SQL a valuable tool for geospatial data management and analysis in the QGIS environment.
+SQL (Structured Query Language) is a standardized programming language that is used to manage databases and perform various operations on the data in them. In the Query Builder in QGIS, you can use SQL expressions to use one or more conditions to filter a layer.
 :::
 
-:::{tab-item} SQL Cheat sheet
-SQL in QGIS, often referred to as "Spatial SQL" or "Spatial Query Language," is a specialized version of SQL used for querying and manipulating geospatial data. It allows users to interact with geographic information by writing SQL queries that can filter, analyze, and visualize spatial data. With Spatial SQL in QGIS, you can work with various types of geospatial datasets and perform operations specific to geographic data, such as selecting features within a certain area, calculating spatial relationships, and much more. This capability makes SQL a valuable tool for geospatial data management and analysis in the QGIS environment.
+:::{tab-item} SQL Cheat Sheet
+You can easily access essential SQL statements by referring to this handy [Cheat Sheet](https://www.sqltutorial.org/sql-cheat-sheet/). This offers a concise overview of the core functionalities.
 :::
 
 ::::
 
-````{dropdown} Build query for the question: Cities that were not yet cities of one million inhabitants in 1950 but already had more than 10 million inhabitants in 2015.
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_expression_and.mp4"></video>
+### Query Builder
+
+The Query Builder provides an interface that allows you to define a __subset of the features__ in the layer using SQL-like statements and to display the results in the main window. As long as the query is active, only the __features corresponding__ to its result are available in the project. You can use one or more layer attributes to define the filter in the Query Builder. The Query Builder is built as follows:
+
+```{figure} /fig/en_query_builder_comment.png
+---
+height: 350px
+name: query_builder
+---
+Screenshot of the Query Builder
+```
+
+1. The __Fields list__ contains all the fields of the layer. To add an attribute column to the expression window, double-click its name or just type it into the box.
+2. The __Values__ frame lists the values of the currently selected field. 
+    - To list __all unique values__ of a field, click the __All__ button.
+    - To list the __first 25__ unique values of the column, click the __Sample__ button.
+    - To add a value to the expression window, double click it in the Values list. You can use the __search box__ at the top of the Values frame to easily browse and find attribute values in the list.
+3. The __Operators__ section contains all usable operators. To add an operator, click the appropriate button.
+4. The __Test__ button helps you to check your query and __displays a message box with the number of features__ satisfying the current query. 
+5. Use the __Clear__ button to revert the layer to its original state.
+
+```{Note}
+When a filter is applied with the Query Builder, QGIS treats the resulting subset as if it were the __entire layer__.
+```
+
+In this short video, you'll discover the location of the query builder and learn how to create a straightforward query for isolating a particular state from a dataset that covers the entire country. The example focuses on a dataset related to South Sudan and serves as a basic illustration.
+
+````{dropdown} Examplpe: Simple usage of the Query Builder.
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_query_builder.mp4"></video>
 ````
 
 ## Non-spatial joins
@@ -188,7 +221,6 @@ name: join_attributes_by_field_value
 ---
 Screenshot of the Join attributes by field value tool
 ```
-
 
 ```{Attention} 
 - An attribute join in QGIS only works properly, when the attributes **match exactly**.
