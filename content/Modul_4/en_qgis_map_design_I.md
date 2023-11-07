@@ -94,8 +94,9 @@ On the left of the styling panel you can choose the different tabs to access dif
 
 In the styling panel you can change the styling for all features of a layer, set up categories for different symbols, create labels, and create colour ramps to differentiate between features with variable values.
 
+:::{dropdown} Video: Opening the styling panel
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_opening_the_styling_panel.mp4"></video>
-
+:::
 
 ## Symbology
 
@@ -490,6 +491,61 @@ In some cases, the colour ramp should be inverted to make it easier to read the 
 # Exporting and Importing Styles
 
 As we have already learned, the layers in QGIS are saved separately from the settings and styles of a QGIS Project. Therefore, it can be useful to prepare template styles that you can load into your QGIS project or send to a colleague. 
+
+:::{dropdown} sending a style for a layer to a colleague
+
+1. Open the styling panel and click on `styles`. A dropdown menu will open with the option to export the layer styling.
+2. Check the data of the styling you wish to export. For example, if you want your colleague to see a dataset you sent in the same styling, you can check the corresponding options. If you want to save a styling for for example road networks...
+
+:::
+
+:::{dropdown} loading a style into your QGIS-project
+
+1. Open the style manager: `Settings` > `Style manager`
+2. Click on `import/export` and select `import items`
+3. Navigate to the folder where the style is saved and click import.
+4. The style should now be available as a preset in the styling panel.
+
+```{note} 
+You can also import styles directly in the styling panel of a layer. But it will not be added to your style library unless you save it.
+```
+:::
+
+:::{dropdown} Using Red Cross and UN symbols
+
+With the plugin __"Plugin Resource Sharing"__, you can install symbol and icon libraries used by the Red Cross and UN, as well as a plethora of other symbols.
+
+1. Install the __"Plugin Resource Sharing"__ by opening the plugin installation window and searching for the plugin.
+2. Once installed, open the plugin interface by clicking on `plugin` > `Plugin Resource Sharing`
+3. Search for packages by the Red Cross and UN
+4. Install the packages.
+
+Now the symbols should be available in the styling manager in the SVG folder.
+
+>VIDEO
+
+:::
+
+:::{dropdown} Using SVG-symbols
+
+1. Open the styling panel and open the `single marker` options.
+2. Under `Symbol layer type`, select __"SVG Marker"__
+3. Scroll down to the SVG-Browser. Here you will find all the folder of your installed SVG-libraries.
+
+VIDEO
+
+:::
+
+:::{dropdown} Adding an external SVG-library
+
+If you have a library of SVG-symbols as a folder you can add them to your Styling manager.
+
+1. Open the style manager: `setting` > `style manager`
+2. Click on `Import / Export` and select `Import from file`
+3. Select the folder with the svg-library
+4. Click on `Import`
+
+:::
 
 # Examples for Map design
 

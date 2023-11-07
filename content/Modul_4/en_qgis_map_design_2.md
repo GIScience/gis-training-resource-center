@@ -222,6 +222,14 @@ Make sure to check the map after exporting the PDF as some design elements might
 
 # The Atlas function (automatic map generation)
 
+## Generate an Atlas
+
+
+
+## Setting up Overview maps with an atlas
+
+
+
 # Good practices and common mistakes in mapping
 
 In order to produce good maps, there are some __basic rules__ to follow and common __semiological mistakes__ to avoid. 
@@ -284,7 +292,7 @@ __The scale bar__ is essential to a map since it gives the correspondence betwee
 ---
 name: scale bar
 ---
-A scale bar
+Scale bar examples
 ``` 
 ### Orientation
 
