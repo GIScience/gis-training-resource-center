@@ -1,83 +1,84 @@
 # What is GIS? (Theory)
 
-**Competences**
+At its core GIS is a computer-based system to organises data with any spatial component. Also, call geodata. There are three core functions of GIS. 
 
-- General Information
-- Why are Spatial Analyses important?
-- Introduction to GIS
-- A Galaxy of Tools
-- Paper Maps and Cartography
-- GIS vs Cartography
-- Web GIS Platforms
+```{figure} /fig/GIS_Core_functunality.drawio.svg
+---
+height: 1000px
+name: GIS_Core_functunality
+align: center
+---
+GIS COre functunality
+```
+Around this core of GIS evolves a galaxy of techniques, tools and applications. Some are listed in the graphic below. As a GIS user, you need to know which techniques and tools you need to use to achieve a specific result. Although there are so many techniques and tools out there, a surprisingly small number of them are sufficient to fulfil most tasks in the field of GIS.
+At the GIS Training Resource Center, you can learn exactly these basic techniques.
 
 ```{figure} /fig/GIS_SIMS.drawio.svg
 ---
-height: 300px
+height: 1000px
 name: en_qgis_GIS_HA
+align: center
 ---
 GIS in Humanitarian Assistance
 ```
+In the world of GIS, the product of your work will be most of the time a map. In the humanitarian work, the range of published maps is huge. Just have a look at the graphic above.
+However, most of them can be produced with the basic techniques you will learn here, depending on the available data. 
 
-## General Information: 
+Here you can find the map products of important humanitarian organisations that use GIS. You will find many examples of maps shown in the graphic above.
 
-- A Geographic Information System (GIS) is a __digital system that connects data to maps__.
+::::{tab-set}
 
-- Geoinformatics in general focus on the __visualisation, organisation and processing of spatial data__. 
+:::{tab-item} IFRC
 
-- Spatial analyses furthermore allow __to reveal circumstances and connections between spatial data features__: 
+The IFRC publishes a wide variety of maps in many different contexts. You can find some of those on [RelifeWeb](IFRC Maps on RelifeWeb).
+:::
 
-  - by making use of their spatial location, __information layers__ (or features within a layer) can be analyzed in regard to each other to obtain new information. 
+:::{tab-item} ICRC
+The ICRC has a specialised GIS Support Unit. They run the GIS Resource Center and ICRC GeoPortal. ICRC utilized the ArcGIS of Esri. ArcGIS is not free, however, very versatile.
+:::
 
-## Why are Spatial Analyses important?
+:::{tab-item} Lebanese Red Cross
+The Lebanese Red Cross (LRC) has used GIS for years and produces stunning results. Here is talk of LBC staff, have a look.
 
-> **Discuss in groups**  
-- Situations in which you benefitted from spatial analyses.
-- Situations in which you could may be have benefitted from spatial analyses.
-- Main areas where you see potential for spatial analyses in your work.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BNOgW9Koz7A?si=gpXNpFRmjfoPV1dX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+:::
 
+:::{tab-item} REACH Initiative
+[REACH Initiative](https://www.reachresourcecentre.info/search/)  
+:::
 
-## Introduction to GIS: 
+:::
 
-### We use GIS for:
+:::{tab-item} Médecins Sans Frontières
+[Médecins Sans Frontières (MSF)](https://geo.msf.org/catalogue)
+:::
 
- - Creating interactive queries __(Querying)__
- - Analysing spatial information __(Spatial analysis)__
- - Editing and visualizing data in maps __(Editing)__
- - Present the results of all these operations __(Map making)__
+:::{tab-item} World Food Programme (WFP)
+[World Food Programme (WFP)](https://hungermap.wfp.org/) 
+:::
 
-### GIS in Humanitarian Responses
+:::
 
-GIS has many applications in the __humanitarian field__:
+:::{tab-item} iMMAP
+[iMMAP](https://immap.org/products/) 
+:::
 
- - Refugee/IDP camp planning
- - Mapping remote areas to facilitate access
- - Keep track of field operations
- - Support security decisions
- - Support operations planning
- - Identify areas most affected by disasters
+:::
 
-  <tagName>  <tagName>
+:::{tab-item} MapAction
+[MapAction](https://maps.mapaction.org/)
+:::
+
+::::
 
 > **A few examples:** 
 
- - [REACH Initiative](https://www.reachresourcecentre.info/search/)  
- - [World Food Programme (WFP)](https://hungermap.wfp.org/) 
- - [Médecins Sans Frontières (MSF)](https://geo.msf.org/catalogue) 
- - [iMMAP](https://immap.org/products/) 
- - [MapAction](https://maps.mapaction.org/)
+ - 
+ - 
+ -  
+ - 
+ - 
 
-
-## A Galaxy of Tools
-GIS comes with a __galaxy of tools__ that are constantly evolving. An increasing number of traditional tools are now capable of supporting geographic information (Excel, Power BI, Adobe Illustrator…)
-
-### An Overview: 
-
-| Name | Description |
-| --- | --- |
-| Mobile Data Collection Tools |The latter make it possible to collect data via mobile or tablet, and often to visualize and exchange it with other platforms according to a common format.|
-| Mapping Tools | These tools provide a simple vizualisation of geographic data, and allow for the production of maps.|
-|GIS Tools| As opposed to the previous ones, these more advanced tools are very comprehensive and allow for advanced analyses to be carried out on the geographical components of data.|
-| Webmapping Tools|These tools make it possible to manipulate and create maps online in a very simple way directly in a web browser. |
 
 
  ## Paper Maps and Cartography 
@@ -117,6 +118,13 @@ __Using GIS__, several measures of spatial central tendency have been applied to
 - Cartographic maps are often extremely simplified as there are limits to the amount of data that can be physically and meaningfully stored on a small map. 
 - GIS uses __analysis and statistics__ to present data in support of particular arguments which a cartographic map cannot do. 
 - You can use GIS __for__ cartography.
+
+## Why are Spatial Analyses important?
+
+> **Discuss in groups**  
+- Situations in which you benefitted from spatial analyses.
+- Situations in which you could may be have benefitted from spatial analyses.
+- Main areas where you see potential for spatial analyses in your work.
 
 <tagName>  <tagName>
 
