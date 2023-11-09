@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-09T13:29:05.748Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="S2tPKuUkiHl0DhRMeVDs" version="22.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-09T13:44:25.351Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="aZpc2CP-al2X91bjtSxO" version="22.0.8" type="github">
   <diagram name="Page-1" id="befe702f-0dee-7ce4-ef18-aae07000cfe7">
     <mxGraphModel dx="3968" dy="2366" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
@@ -26,73 +26,73 @@
           <mxGeometry x="655.3100000000001" y="336" width="79.38" height="99" as="geometry" />
         </mxCell>
         <mxCell id="A9gymC7fybR9dy0JzckG-44" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 29px;&quot;&gt;Shelter and Camp&lt;br style=&quot;font-size: 29px;&quot;&gt;Management&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=29;fontStyle=1;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="-170" y="220" width="220" height="40" as="geometry" />
+          <mxGeometry x="-170" y="150" width="220" height="40" as="geometry" />
         </mxCell>
         <mxCell id="A9gymC7fybR9dy0JzckG-46" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 29px;&quot;&gt;Operations planning&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=29;fontStyle=1;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="112" y="-230" width="280" height="60" as="geometry" />
+          <mxGeometry x="107" y="-200" width="348" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="A9gymC7fybR9dy0JzckG-47" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 29px;&quot;&gt;Support security&lt;br style=&quot;font-size: 29px;&quot;&gt;decisions&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=29;fontStyle=1;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="650" y="-250" width="250" height="60" as="geometry" />
+        <mxCell id="A9gymC7fybR9dy0JzckG-47" value="&lt;p class=&quot;MsoNormal&quot;&gt;Safety and Security Maps&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=29;fontStyle=1;fontColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="534.25" y="-200" width="400" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A9gymC7fybR9dy0JzckG-48" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 29px;&quot;&gt;Keep track of field&lt;br style=&quot;font-size: 29px;&quot;&gt;operations&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=29;fontStyle=1;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="784" y="-130" width="250" height="60" as="geometry" />
+          <mxGeometry x="750" y="-110" width="284" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A9gymC7fybR9dy0JzckG-50" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 29px;&quot;&gt;Situation Overview Maps&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=29;fontStyle=1;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="315" y="-280" width="335" height="60" as="geometry" />
+          <mxGeometry x="315" y="-280" width="375" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A9gymC7fybR9dy0JzckG-51" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 29px;&quot;&gt;Risk Assessment&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=29;fontStyle=1;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="1014.25" y="290" width="250" height="60" as="geometry" />
+          <mxGeometry x="1013" y="260" width="250" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A9gymC7fybR9dy0JzckG-52" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 29px;&quot;&gt;Risk Communication&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=29;fontStyle=1;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="1002.43" y="405" width="250" height="60" as="geometry" />
+          <mxGeometry x="1002.43" y="345" width="250" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A9gymC7fybR9dy0JzckG-54" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 29px;&quot;&gt;Health Access Analysis&amp;nbsp;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=29;fontStyle=1;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="974.78" y="560" width="250" height="60" as="geometry" />
+          <mxGeometry x="989" y="490" width="250" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A9gymC7fybR9dy0JzckG-55" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 29px;&quot;&gt;Siete Selection&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=29;fontStyle=1;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="910" y="680" width="250" height="60" as="geometry" />
+          <mxGeometry x="-100" width="250" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A9gymC7fybR9dy0JzckG-56" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 29px;&quot;&gt;Monitoring&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=29;fontStyle=1;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="840" y="770" width="250" height="60" as="geometry" />
+          <mxGeometry x="-207" y="260" width="250" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A9gymC7fybR9dy0JzckG-58" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 29px;&quot;&gt;Community Mapping&amp;nbsp;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=29;fontStyle=1;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="-22" y="-120.9" width="282" height="60" as="geometry" />
+          <mxGeometry x="-135" y="680" width="320" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A9gymC7fybR9dy0JzckG-59" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 29px;&quot;&gt;Rapid Assessment&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=29;fontStyle=1;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="-207" y="330" width="250" height="60" as="geometry" />
+          <mxGeometry x="890" y="680" width="310" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A9gymC7fybR9dy0JzckG-60" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 29px;&quot;&gt;Logistics Plans&lt;br style=&quot;font-size: 29px;&quot;&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=29;fontStyle=1;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="631" y="950" width="250" height="60" as="geometry" />
+          <mxGeometry x="-22" y="-110" width="250" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A9gymC7fybR9dy0JzckG-61" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 29px;&quot;&gt;Community Engagement&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=29;fontStyle=1;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="-110" y="-14.36" width="250" height="60" as="geometry" />
+          <mxGeometry x="580" y="880" width="391" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A9gymC7fybR9dy0JzckG-62" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 29px;&quot;&gt;Tracking disease&lt;br style=&quot;font-size: 29px;&quot;&gt;outbreaks&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=29;fontStyle=1;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="989" y="180" width="250" height="60" as="geometry" />
+          <mxGeometry x="974.78" y="140" width="250" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A9gymC7fybR9dy0JzckG-63" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 29px;&quot;&gt;WASH Planning&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=29;fontStyle=1;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="764.25" y="850" width="250" height="60" as="geometry" />
+          <mxGeometry x="960.8" y="590" width="250" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A9gymC7fybR9dy0JzckG-64" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 29px;&quot;&gt;Maps for reports&amp;nbsp;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=29;fontStyle=1;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="-184" y="430" width="250" height="60" as="geometry" />
+          <mxGeometry x="-208.25" y="345" width="250" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A9gymC7fybR9dy0JzckG-65" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 29px;&quot;&gt;Beneficiary selection&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=29;fontStyle=1;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="-154" y="100" width="250" height="60" as="geometry" />
+          <mxGeometry x="756.5" y="780" width="329" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A9gymC7fybR9dy0JzckG-66" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 29px;&quot;&gt;3W Maps&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=29;fontStyle=1;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="-164" y="520" width="250" height="60" as="geometry" />
+          <mxGeometry x="-200" y="470" width="250" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A9gymC7fybR9dy0JzckG-67" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 29px;&quot;&gt;Needs Tracking&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=29;fontStyle=1;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="-130" y="630" width="250" height="60" as="geometry" />
+          <mxGeometry x="-140" y="590" width="250" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A9gymC7fybR9dy0JzckG-68" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 29px;&quot;&gt;Reference maps&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=29;fontStyle=1;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="-60" y="730" width="250" height="60" as="geometry" />
+          <mxGeometry x="-30" y="780" width="250" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A9gymC7fybR9dy0JzckG-69" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 29px;&quot;&gt;Humanitarian Access Maps&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=29;fontStyle=1;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="30.88" y="860" width="359.12" height="60" as="geometry" />
+          <mxGeometry x="30" y="880" width="419.12" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A9gymC7fybR9dy0JzckG-70" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 29px;&quot;&gt;Mine and Hazard Awareness&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=29;fontStyle=1;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="289.25" y="970" width="250" height="60" as="geometry" />
+          <mxGeometry x="320" y="960" width="400.75" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A9gymC7fybR9dy0JzckG-74" value="" style="rounded=0;whiteSpace=wrap;html=1;rotation=-30;strokeColor=none;fillColor=#F5333F;" parent="1" vertex="1">
           <mxGeometry x="928.57" y="-60.9" width="282.23" height="45.2" as="geometry" />
