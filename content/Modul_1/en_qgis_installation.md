@@ -44,6 +44,7 @@ Since QGIS 3.20 there are only 64-bit Windows executables.
 
 ## Mac specialties
 
+
 ```{Note} 
 From version 3.30 SAGA must be integrated via plugin.
 ```
