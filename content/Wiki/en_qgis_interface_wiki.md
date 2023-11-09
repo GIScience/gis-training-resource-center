@@ -49,13 +49,16 @@ Make sure to select the layer you want identify featuers in
 
 ### Open Toolbox
 
+To open the Toolbox in QGIS click on the gearwheel button. Or click on `Processing` -> `Toolbox`
+
 ![](/fig/Geschlossene_Toolbox_01.png)
-* You can also zoom by scrolling
-* Or with Ctrl+ or Ctrl- 
+
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_toolbars.mp4"></video>
 
 ### Show and hide displays and toolbars
+
+*  `View` -> `Toolbars` -> Check or uncheck the toolboxes you want to add or remove
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Show_display.mp4"></video>
 
