@@ -41,35 +41,7 @@ The ICRC has a specialised GIS Support Unit. They run the GIS Resource Center an
 The Lebanese Red Cross (LRC) has used GIS for years and produces stunning results. Here is talk of LBC staff, have a look.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BNOgW9Koz7A?si=gpXNpFRmjfoPV1dX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-:::
 
-:::{tab-item} REACH Initiative
-[REACH Initiative](https://www.reachresourcecentre.info/search/)  
-:::
-
-:::
-
-:::{tab-item} Médecins Sans Frontières
-[Médecins Sans Frontières (MSF)](https://geo.msf.org/catalogue)
-:::
-
-:::{tab-item} World Food Programme (WFP)
-[World Food Programme (WFP)](https://hungermap.wfp.org/) 
-:::
-
-:::
-
-:::{tab-item} iMMAP
-[iMMAP](https://immap.org/products/) 
-:::
-
-:::
-
-:::{tab-item} MapAction
-[MapAction](https://maps.mapaction.org/)
-:::
-
-::::
 
 > **A few examples:** 
 
