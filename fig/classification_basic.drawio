@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-11-10T10:41:38.700Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="qgSRTUTygbzx7j_SYquZ" version="22.1.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-10T10:53:43.329Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="v74mAnPFhbsjzL3gwnLy" version="22.1.0" type="github">
   <diagram name="Seite-1" id="5j-T2ay0NRmo94tfC0bt">
-    <mxGraphModel dx="1491" dy="2129" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="614" dy="876" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -434,20 +434,8 @@
         <mxCell id="Hre0k5CdGtxkCVLCbG9s-196" value="" style="shape=mxgraph.signs.healthcare.hospital_1;html=1;pointerEvents=1;fillColor=#FF0000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontFamily=Verdana;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="850" y="485" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Hre0k5CdGtxkCVLCbG9s-198" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/medic-outline/32/Medical_Pill-128.png;fontFamily=Verdana;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="850" y="445" width="30" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="Hre0k5CdGtxkCVLCbG9s-199" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn3.iconfinder.com/data/icons/clinical-3/96/dental-128.png;fontFamily=Verdana;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="850" y="405" width="30" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="Hre0k5CdGtxkCVLCbG9s-200" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn3.iconfinder.com/data/icons/clinical-3/96/dental-128.png" vertex="1" parent="1">
-          <mxGeometry x="1333" y="770" width="30" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="Hre0k5CdGtxkCVLCbG9s-202" value="" style="shape=mxgraph.signs.healthcare.first_aid;html=1;pointerEvents=1;fillColor=#F5333F;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
           <mxGeometry x="1293" y="680" width="30" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="Hre0k5CdGtxkCVLCbG9s-203" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/medic-outline/32/Medical_Pill-128.png" vertex="1" parent="1">
-          <mxGeometry x="1273" y="910" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Hre0k5CdGtxkCVLCbG9s-204" value="" style="shape=mxgraph.signs.healthcare.hospital_1;html=1;pointerEvents=1;fillColor=#FF0000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
           <mxGeometry x="1393" y="910" width="30" height="30" as="geometry" />
@@ -469,6 +457,18 @@
         </mxCell>
         <mxCell id="Hre0k5CdGtxkCVLCbG9s-224" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.239;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=5;" edge="1" parent="1" source="Hre0k5CdGtxkCVLCbG9s-189" target="Hre0k5CdGtxkCVLCbG9s-124">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hre0k5CdGtxkCVLCbG9s-230" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn3.iconfinder.com/data/icons/clinical-3/96/dental-128.png;fontFamily=Verdana;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="850" y="405" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hre0k5CdGtxkCVLCbG9s-231" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn3.iconfinder.com/data/icons/clinical-3/96/dental-128.png;fontFamily=Verdana;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1333" y="770" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hre0k5CdGtxkCVLCbG9s-233" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/medic-outline/32/Medical_Pill-128.png;fontFamily=Verdana;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1273" y="910" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hre0k5CdGtxkCVLCbG9s-234" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/medic-outline/32/Medical_Pill-128.png;fontFamily=Verdana;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="850" y="445" width="30" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
