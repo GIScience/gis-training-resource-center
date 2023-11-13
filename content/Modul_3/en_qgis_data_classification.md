@@ -63,18 +63,17 @@ __To classify data in categories…__
 1.  Right-click on your layer
 2. Click on `Symbology`
 3. Click on `Categorized`
-4. Further down the window click on `Classify`.  Now you should see all unique values or attributes of the selected column in `Value`. Do add or delete single values use the `-` and `+` buttons. 
-In the `Value` dropdown menu select the column based on which you want to categorize your data
-5. *Optional*: In the `Symbol` dropdown menu you can select the colours and symbols you want to use
-6. *Optional*: In the `Color ramp` dropdown menu you can specify the range of colours you want to use
-7. *Optional*: You can open the panel `Layer Rendering` on the button of the window. Here you can adjust the opacity/ transparency of the layer.
-8. Clic__k `Apply` to put your adjustment into effect.
-9. Click `OK` to close the window.
+4. In the `Value` dropdown menu select the column based on which you want to categorize your data.
+5. Further down the window click on `Classify`.  Now you should see all unique values or attributes of the selected column in `Value`. To add or delete single values use the `-` and `+` buttons. 
+6. *Optional*: In the `Symbol` dropdown menu you can select the colours and symbols you want to use
+7. *Optional*: In the `Color ramp` dropdown menu you can specify the range of colours you want to use
+8. *Optional*: You can open the panel `Layer Rendering` on the button of the window. Here you can adjust the opacity/ transparency of the layer.
+9. Click `Apply` to put your adjustment into effect.
+10. Click `OK` to close the window.
 
 
 ```{figure} /fig/Categorized_district_map_SierraLeone.png
 ---
-width: 900px
 name: Categorized classification
 align: center
 ---
@@ -119,7 +118,7 @@ There are __seven__ ways in QGIS you can split quantitative data into classes.  
 Let's have a look at how the classes of the district population would look like if we split the data into three classes using these methods.
 
 
-```{figure} /fig/classification_methods_basic.png
+```{figure} /fig/classification_method_map.drawio.svg
 ---
 width: 900px
 name: Categorized classification
@@ -161,28 +160,45 @@ ___
 
 ### How to Graduated classification in QGIS
 
+To perform a graduated classification in QGIS is easy. However, unlike the categorised classification, here you have to decide on how many classes and which method you want to use. 
+
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Graduated_classification.mp4"></video>
 
+__To classify data in classes…__
+1.  Right-click on your layer
+2. Click on `Symbology`
+3. Click on `Graduated`
+ 4. In the `Value` dropdown menu select the column based on which you want to classify your data.
+5. Downright select the number of classes you want to use.
+6. Under `Mode` select the classification method you want to use e.g. Equal count (Quantile).
+7. Click on `Classify`.  Now you should see all classes and the distribution of values. To add or delete single classes use the `-` and `+` buttons. 
+8. *Optional*: Click on `Histogram` -> `Load Values`. Now you can see the exact distribution of values over the classes. This is very practical to decide on a classification method. You can also check the mean value and standard deviation.
+```{figure} /fig/Graduated_histogram.png
+---
+width: 900px
+name: raduated classification
+align: center
+---
+```
+9. *Optional*: In the `Symbol` dropdown menu you can select the colours and symbols you want to use.
+```{tip} 
+When you use a point layer you can also use the __size__ of the symbols to visualize the classes, not just the color. To do that select a point layer and do steps 1 to 7. Under `Method` select `Size`.
+```
+10. *Optional*: In the `Color ramp` dropdown menu you can specify the range of colours you want to use. To see all color ramps click on the down arrow of the `Color ramp` -> `All Color Ramps`.
+11. *Optional*: Under `Legend Format` you can adjust how precise the range of the classes will be displayed in the legend. Usually, it is practical to not use too complicated numbers in the legend.
+12. *Optional*: You can open the panel `Layer Rendering` on the button of the window. Here you can adjust the opacity/ transparency of the layer.
+13. Click `Apply` to put your adjustment into effect.
+14. Click `OK` to close the window.
 
 
-![](/fig/Graduated_classify_classes.png)
 
-From **step 1** where you select graduated uptill **step 13** where you can see the classified outcome. You can play and change variables within the stages and use any parameter that suits your goal. 
-
-More so, there is no single correct number of classes, there is no single best way to classify you data into ranges. To acheive the goal of classification, the data can be best classify by **equal interval, quantile, natural breaks and or manual** depending on what suits your purpose.
-
-![](/fig/Classification_methods.PNG)
-
-* Graduated classification by histogram
-
-![](/fig/Graduated_classify_histogram.png)
-You can show the mean value and standard deviation through this classification. 
-See outlook of histogram by graduated classification.
-
-![](/fig/Graduated_histogram.png)
+```{figure} /fig/classification_graduated_basic.png
+---
+width: 900px
+name: raduated classification
+align: center
+---
+```
 
 
-See the video of graduated classes and histogram classification.
-
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Graduated_classes_histogram.mp4"></video>
 
