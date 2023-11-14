@@ -25,7 +25,9 @@ For example, Mercator projections don´t represent the area correctly. Google Ma
 
 ![Comparison Greenland - Africa](../../fig/en_greenland_africa.png)
 
+```{Attention}
 It's important to work with the right projections, if not we will produce wrong results!
+```
 
 This table shows an overview on which projections to use for which needed characteristic:
 
