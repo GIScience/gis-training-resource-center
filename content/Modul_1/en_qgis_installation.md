@@ -19,7 +19,7 @@ The current __Long Term Release__ is __QGIS 3.28.11 Firenze__
 ### QGIS Download
 
 1. Go to the [__QGIS download page__](https://www.qgis.org/en/site/forusers/download.html).
-2. Select `Download for Windows`, `Download for macOS` or `Dowload for Linus`, depending on your system.
+2. Select `Download for Windows`, `Download for macOS` or `Dowload for Linux`, depending on your system.
 3. Click on `Looking for the most stable version? Get QGIS 3.28 LTR`
 
 ```{figure} /fig/QGIS_download_LTR_version.png
