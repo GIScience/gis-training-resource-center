@@ -32,7 +32,7 @@ align: center
 4. The download will start.
 5. Install QGIS!
 
-## Windows specialties
+## Windows specialities
 
 ### 32 Bit or 64 Bit?
 For __Windows operating systems__, there is always a 32-bit version and a 64-bit version of each QGIS version available for download. Which version to install depends on your computer and operating system. If it is not clear how many bits your operating system has, you can easily find out: Left-click on the __Windows icon at__ the bottom left of the screen (alternatively, open the Windows search function). Type __"System"__ on the keyboard, click on the entry __"System"__ in the search results. Under the item __"System type"__ you can read the bit number.
@@ -42,14 +42,14 @@ Since QGIS 3.20 there are only 64-bit Windows executables.
 ```
 
 
-## Mac specialties
+## Mac specialities
 
 
 ```{Note} 
 From version 3.30 SAGA must be integrated via plugin.
 ```
 
-## Linux specialties
+## Linux specialities
 
 ```{Note} 
 From version 3.30 SAGA must be integrated via plugin.
