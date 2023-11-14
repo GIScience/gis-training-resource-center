@@ -1,12 +1,7 @@
 # Geoprocessing
-## Subsection to be created:
-* Clip
-* Buffer
-* Dissolve
-* ....
 
 ## Buffer
-- Calculate a ![](/fig/mAlgorithmBuffer.png) `buffer` with a defined distance
+- Calculate a ![](/fig/mAlgorithmBuffer.png) `buffer` with a defined distance.
 - Dissolve: if 2 or more buffer areas overlap, they can be combined.
 
 ```{Attention}
@@ -25,7 +20,7 @@ If you're dealing with really large "megabuffers" or if you can only choose buff
 ## Clip
 - With the ![](/fig/mAlgorithmClip.png) `Clip` tool you can extract and retain the spatial extent of one vector layer based on the boundaries of another layer. 
 - `Input Layer`: refers to the specific __layer to be clipped__, for instance, a road network.
-- `Overlay Layer`: e.g. a polygon layer of the region (e.g. borders of Heidelberg)
+- `Overlay Layer`: e.g. a polygon layer of the region (e.g. borders of Heidelberg).
 
 :::{dropdown} Example: Extract the rail network of Germany
 :open:
@@ -33,8 +28,8 @@ If you're dealing with really large "megabuffers" or if you can only choose buff
 :::
 
 ## Dissolve
-- The ![](/fig/mAlgorithmDissolve.png) `dissolve` tool aggregates geometries with the same attribute values
-- When 2 or more buffer areas overlap, they can be combined using dissolve
+- The ![](/fig/mAlgorithmDissolve.png) `dissolve` tool aggregates geometries with the same attribute values.
+- When 2 or more buffer areas overlap, they can be combined using dissolve.
 
 :::{dropdown} Example: Extract the rail network of Germany
 :open:

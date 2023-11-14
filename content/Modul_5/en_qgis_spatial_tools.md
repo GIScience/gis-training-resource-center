@@ -1,5 +1,7 @@
 # Spatial Geodataprocessing
 
+# Select by location missing
+
 #### Introduction:
 The first part of this module explores overlay operations, focusing specifically on the operations of __Clip__, __Dissolve__, and __Buffer__. These operations enable us to combine geometries from two layers in various ways. In addition to these, we will cover __Spatial joins__ in this section. Spatial joins offer opportunities to enhance the attributes of the input layer by incorporating additional information from the join layer, utilizing their spatial relationship. All of these operations make use of the spatial information in the provided input data to either enrich the data or perform various analyses.
 
@@ -13,7 +15,7 @@ The tool has two different input option:
 
 ```{figure} /fig/en_clip_sudan.PNG
 ---
-height: 300px
+width: 75%
 name: en_clip_sudan
 ---
 Screenshot of the Clip tool with the input data
@@ -25,7 +27,7 @@ Information on road infrastructure for humanitarian aid operations is of great i
 1. Load the OSM roads data from the [HOT Export tool](https://export.hotosm.org/v3/exports/918cf68d-dfd7-40f1-ab46-4f0426dfaf68/) (part of the Humanitarian OpenStreetMap Team) as a new layer __Road_infrastructure_Sudan.geojson__.
 ```{figure} /fig/en_screenshot_hot_export_tool.PNG
 ---
-height: 280px
+width: 75%
 name: en_screenshot_hot_export_tool
 ---
 Screenshot of the HOT Export tool to download your OSM data
@@ -45,7 +47,7 @@ In addition to the standard QGIS operation __Clip__, there are two other, more a
 
 ```{figure} /fig/en_gdal_clipping_tools.PNG
 ---
-height: 60px
+width: 40%  
 name: gdal_clipping_tools
 ---
 The GDAL tools Clip vector by extent and Clip vector by mask layer
@@ -64,7 +66,7 @@ This operation clips any vector file to a given extent. This clip extent will be
 
 ```{figure} /fig/en_clip_vector_by_extent.PNG
 ---
-height: 350px
+width: 75%
 name: en_clip_vector_by_extent
 ---
 Screenshot of the tool Clip vector by extent
@@ -79,7 +81,7 @@ This operation uses a mask polygon layer to clip any vector layer. This operatio
 
 ```{figure} /fig/en_clip_vector_by_mask_layer.PNG
 ---
-height: 350px
+width: 100%
 name: clip_vector_by_mask_layer
 ---
 Screenshot of the tool Clip vector by mask layer
@@ -94,7 +96,7 @@ The concept of __buffering__ in QGIS for vector data, refers to the process of c
 
 ```{figure} /fig/en_buffer_point_line_polygon.png
 ---
-height: 350px
+width: 100%
 name: spatial_relations
 ---
 Different kinds of buffer zones <br /> (Adapted after [QGIS Documentation](https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve), Version 3.28)
@@ -135,7 +137,7 @@ If you turn on the "Keep disjoint features separate" option when running the too
 
 ```{figure} /fig/en_buffer_dissolve.png
 ---
-height: 175px
+width: 100%
 name: buffer_dissolve
 ---
 Buffer zones with dissolved (left) and with intact boundaries (right) showing overlapping areas <br /> (Source: [QGIS Documentation](https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve), Version 3.28)
@@ -184,7 +186,7 @@ Returns 1 (true) if the supplied geometries have some, but not all, interior poi
 
 ```{figure} /fig/en_select_by_location.png
 ---
-height: 300px
+width: 100%
 name: spatial_relations
 ---
 Looking for spatial relations between layers <br /> (Source: [QGIS Documentation](https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html?highlight=join%20attributes%20location), Version 3.28)
@@ -201,7 +203,7 @@ The additional attributes and their values are taken from a second vector layer.
 
 ```{figure} /fig/en_join_attributes_by_location.PNG
 ---
-height: 500px
+width: 75%
 name: join_attribute_by_location
 ---
 Screenshot of the tool Join attributes by location
@@ -214,7 +216,7 @@ For performing additional calculations in combination with a spatial join, the Q
 
 ```{figure} /fig/en_join_attributes_by_location_summary.PNG
 ---
-height: 500px
+width: 75%
 name: join_attribute_by_location
 ---
 Screenshot of the tool Join attributes by location (summary)
@@ -231,7 +233,7 @@ Furthermore, if a maximum distance is specified, only the features that are with
 
 ```{figure} /fig/en_join_attributes_by_nearest.PNG
 ---
-height: 500px
+width: 75%
 name: join_attribute_by_location
 ---
 Screenshot of the tool Join attributes by nearest
@@ -263,3 +265,20 @@ In the aftermath of flooding events, data on the affected population and the ext
 ````
 
 You can find further information about spatial joins by referring to the QGIS documentation, specifically in the section [Join attributes by location](https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html?highlight=join%20attributes%20location#join-attributes-by-location).
+
+## Centroids
+This process creates a new point layer, with points representing the centroids of the geometries of the input layer. 
+
+The centroid is a single point that shows the middle of all the parts of a feature. It can be outside the feature or on each part of it. An example would be a point, representing a polygon. 
+
+The attributes of the points in the output layer are the same as for the original features.
+
+Centroids can be used in spatial operations such as __spatial joins__ to represent a polygon as points.
+
+```{figure} /fig/en_qgis_centroids.png
+---
+width: 100%
+name: en_qgis_centroids
+---
+The red stars represent the centroids of the features of the input layer.
+```

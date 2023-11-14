@@ -56,7 +56,7 @@ A very important tool for such calculations is the __Field Calculator__. It allo
 
 ```{figure} /fig/en_field_calculator_red_boxes.png
 ---
-height: 350px
+width: 100%
 name: field_calculator
 ---
 Screenshot of the Field calculator
@@ -184,7 +184,7 @@ The Query Builder provides an interface that allows you to define a __subset of 
 
 ```{figure} /fig/en_query_builder_comment.png
 ---
-height: 350px
+width: 100%
 name: query_builder
 ---
 Screenshot of the Query Builder
@@ -205,7 +205,7 @@ When a filter is applied with the Query Builder, QGIS treats the resulting subse
 
 In this short video, you'll discover the location of the query builder and learn how to create a straightforward query for isolating a particular state from a dataset that covers the entire country. The example focuses on a dataset related to South Sudan and serves as a basic illustration.
 
-````{dropdown} Examplpe: Simple usage of the Query Builder.
+````{dropdown} Example: Simple usage of the Query Builder.
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_query_builder.mp4"></video>
 ````
 
@@ -216,7 +216,7 @@ In QGIS the tool __Join attributes by field value__ is often used for such opera
 
 ```{figure} /fig/en_join_attributes_by_field_values.PNG
 ---
-height: 500px
+width: 75%
 name: join_attributes_by_field_value
 ---
 Screenshot of the Join attributes by field value tool
