@@ -490,16 +490,29 @@ In some cases, the colour ramp should be inverted to make it easier to read the 
 
 # Exporting and Importing Styles
 
-As we have already learned, the layers in QGIS are saved separately from the settings and styles of a QGIS Project. Therefore, it can be useful to prepare template styles that you can load into your QGIS project or send to a colleague. 
+As we have already learned, the layers in QGIS are saved separately from the settings and styles of a QGIS Project. However, when working with similar data (e.g.: building types or flooding risk), it is useful to have template styles, that can be automatically or quickly loaded into your QGIS-project. In QGIS, styles are saved as `.qml`-files.
 
-:::{dropdown} sending a style for a layer to a colleague
+You can also export a style into the same folder as the data so your colleagues can apply the same styling when loading the data into QGIS.
+Some organisations may also use standarized symbols or colours in their maps. 
+
+
+```{Tip}
+When a styling is saved in the same location as the data and has the same name as the corresponding dataset, the styling will be automatically applied to the layer when loading the data into QGIS!
+```
+
+>Convert into tab group
+
+:::{dropdown} Exporting a styling to send to a colleague
 
 1. Open the styling panel and click on `styles`. A dropdown menu will open with the option to export the layer styling.
-2. Check the data of the styling you wish to export. For example, if you want your colleague to see a dataset you sent in the same styling, you can check the corresponding options. If you want to save a styling for for example road networks...
+2. Since in this case, the styling is for exactly that dataset, you can leave all the boxes checked.
+3. Select a location and name for the styling. The styling will be saved as a `.qml` file. __Make sure it is saved in the same folder as the dataset and give it the same name as the corresponding dataset. This way it will, when loading the data into QGIS, the styling will automatically be applied.__
 
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_exporting_style_to_send_to_colleague
+.mp4"></video>
 :::
 
-:::{dropdown} loading a style into your QGIS-project
+:::{dropdown} Loading a style into your QGIS-project
 
 1. Open the style manager: `Settings` > `Style manager`
 2. Click on `import/export` and select `import items`
@@ -507,7 +520,7 @@ As we have already learned, the layers in QGIS are saved separately from the set
 4. The style should now be available as a preset in the styling panel.
 
 ```{note} 
-You can also import styles directly in the styling panel of a layer. But it will not be added to your style library unless you save it.
+You can also import styles directly in the styling panel of a layer. But it will not be added to your style library unless you save it into your library.
 ```
 :::
 
@@ -544,6 +557,9 @@ If you have a library of SVG-symbols as a folder you can add them to your Stylin
 2. Click on `Import / Export` and select `Import from file`
 3. Select the folder with the svg-library
 4. Click on `Import`
+The new SVG-symbols are in your SVG library.
+
+VIDEO
 
 :::
 

@@ -201,6 +201,11 @@ name: Create an Overview
 Add a the extent of the main map to your overview map (the red rectangle on the overview)
 ```
 
+:::{dropdown} Video: Setting up an overview map
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_setting_up_overview_maps
+.mp4"></video>
+:::
+
 ``` {Caution}
 This method requires you to be sure that you are not going to modify the oveview map, as once the layers are locked, they will keep the style, and any updates will not affect the overview map.
 ```
@@ -222,13 +227,47 @@ Make sure to check the map after exporting the PDF as some design elements might
 
 # The Atlas function (automatic map generation)
 
+In some cases, it can be necessary to create multiple maps for different locations with the same layers. For example, if you have a detailed dataset on affected flood areas in Nigeria, you can create a more detailed map for each subnational district. In QGIS, this can be done automatically with the __Atlas Function__. 
+
+The Atlas Function can be found in the __Print Layout Composer__ on the toolbar. 
+
+```{figure} ../../fig/en_atlas_toolbar
+---
+name: Atlas Toolbar
+width: 500 px
+---
+Atlas Toolbar
+```
+
+If you can't see the Atlas Tools, you must first activate the Atlas Toolbar under `View` > `Toolbars` > `Atlas Toolbar`
+
 ## Generate an Atlas
 
+An Atlas will generate a new page with the same map layout for each feature in a layer. For most purposes, it useful to first create a map layout with the elements such as legend, sources and overview map and then insert the map item that will be controlled by the Atlas. To generate an Atlas:
 
+1. Click on the Atlas Settings icon in the Atlas Toolbar
+2. In the new window, activate the __Generate an Atlas__ option
+3. Select the __Coverage Layer__. This will determine the features or polygons that will be displayed on a page. In our example, we will use the subnational administrative districts in Nigeria (`Adm1`). 
+4. Select the __Page Name__. This should be the name of the subnational district or location that is displayed on that page. To display the name of the district, we will choose `ADM1_REF`.
+5. Now let's add a map to the empty print layout.
+6. Click on the map and navigate to the __Layer Properties__ window on the right.
+7. Scroll down until you see the option `Controlled by Atlas` and activate it.
+8. Now activate the preview of the Atlas in the __Atlas Toolbar__. Otherwise, the print layout will not update to show you the atlas page. You can click through each page to see how it looks. Depending on the amount of features on your map, they may take a while to render.
+9. Now you can adjust the __Margin options__ to best fit the readibility of the map. By default, it is set to 10% and this should fit most purposes.
+10. Before printing or exporting the atlas make sure to check every page that other elements of the map do not cover the represented region.
+
+```{Note} 
+For now the only item in the print layout that is being controlled by the Atlas is the Map we added. The other elements of the Map are the same on every page.
+```
+
+:::{dropdown} Video: Setting up an Atlas
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_setting_up_an_atlas
+.mp4"></video>
+:::
 
 ## Setting up Overview maps with an atlas
 
-
+Setting up Overview maps with an atlas works in the same way as setting it up for a normal map. As long as you select the Map controlled by the atlas as the `map frame`, it will update automatically.
 
 # Good practices and common mistakes in mapping
 
