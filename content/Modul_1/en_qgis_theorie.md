@@ -11,7 +11,7 @@ align: center
 GIS Core functunality
 ```
 Around this core of GIS evolves a galaxy of techniques, tools and applications. Some are listed in the graphic below. As a GIS user, you need to know which techniques and tools you need to use to achieve a specific result. Although there are so many techniques and tools out there, a surprisingly small number of them are sufficient to fulfil most tasks in the field of GIS.
-At the GIS Training Resource Center, you can learn exactly these basic techniques. 
+Here at our GIS Training Resource Center, you can learn exactly these basic techniques. 
 
 ```{figure} /fig/GIS_SIMS.drawio.svg
 ---
