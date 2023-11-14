@@ -1,9 +1,7 @@
 # Non-Spatial Queries
 
-alle videos fehlen noch
-
 ## Manual selection
-- Select the features manually in the attribute table by clicking on it.
+- Select the features manually in the __attribute table__ by clicking on it.
 
 :::{dropdown} Example: Manually select countries with the attribute table
 :open:
@@ -45,4 +43,4 @@ alle videos fehlen noch
 :::
 
 ## Further resources
-The QGIS documentation on logical operators can be found at the [following link](https://docs.qgis.org/3.28/en/docs/user_manual/working_with_vector/attribute_table.html#selecting-features).
+You can access information about logical operators in QGIS documentation through the [following link](https://docs.qgis.org/3.28/en/docs/user_manual/working_with_vector/attribute_table.html#selecting-features).
