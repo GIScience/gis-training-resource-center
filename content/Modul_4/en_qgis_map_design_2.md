@@ -86,7 +86,13 @@ Adding text to the print Layout
 
 ### Adding an image
 
-VIDEO
+If you are working for an organisation, most likely you will add the logo of that organization on the maps you produce. 
+
+1. Click on `Add image` in the left toolbar.
+2. Drag a rectangle on the canvas.
+3. In the `Item properties` tab, you will have the option to choose an SVG image from your SVG-library in QGIS or choose a __Raster image__. Most image files are Raster images. 
+4. Select `Raster image` and click on the `...` to choose the location of the image.
+5. Your image will appear in the print layout. In order to make sure that the image does not get distorted, leave the `Resize Mode` on "Zoom".
 
 ### Adding a legend
 
@@ -231,7 +237,7 @@ In some cases, it can be necessary to create multiple maps for different locatio
 
 The Atlas Function can be found in the __Print Layout Composer__ on the toolbar. 
 
-```{figure} ../../fig/en_atlas_toolbar
+```{figure} ../../fig/en_atlas_toolbar.png
 ---
 name: Atlas Toolbar
 width: 500 px
@@ -321,7 +327,7 @@ name: Organized Legend
 Example of a well organized legend
 ```
 
-__The scale bar__ is essential to a map since it gives the correspondence between a distance measured on the map and the distance in the real world. There are two types of scales:
+__The scale bar__ is essential to a map since it gives the correspondence between a distance meas ured on the map and the distance in the real world. There are two types of scales:
 - __The numerical Scale__ is expressed as a fraction (1/25000 or 1:25000) which indicates the equivalence between 1 centimeter on the map and the real distance. It is a scale that can be calculated with GIS software, and is often found in topographic maps
     - A scale of 1:25000 means that 1 cm represents 25000 cm (or 250 meters) on the gound. 
 
