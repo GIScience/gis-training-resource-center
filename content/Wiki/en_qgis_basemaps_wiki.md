@@ -12,7 +12,7 @@ You can always add the standard OpenStreetMap as a basemap to your map canvas.
 
 There are two ways to add the OpenStreetMap as a basemap.
 
-1. Find in the `Browser` panel `XYZ Tiles`. Open the dropdown by clikcing on it and seletc OpenStreetMap or another basemap.
+1. Find in the `Browser` panel `XYZ Tiles`. Open the dropdown by clicking on it and seletc OpenStreetMap or another basemap.
 2. `Layer` -> `Add Layer` -> `Add XYZ layer...` -> Select the OpenStreetMap or another basemap.
 
 __Add standard OpenStreetMap as Basemap__
@@ -38,7 +38,7 @@ Name| Info | URL |
 |Google alternative Road map||https://mt1.google.com/vt/lyrs=r&x={x}&y={y}&z={z}|
 |Bing Aerial||http://ecn.t3.tiles.virtualearth.net/tiles/a{q}.jpeg?g=1|
 
-Advantages of using basemaps from XYZ Tile are:
+Advantages of using basemaps from XYZ Tiles are:
 * Load faster
 * Support reprojection
 * Support printing
@@ -66,7 +66,7 @@ After installing the plugin (Plugin Wiki) you need to configure the plugin to ac
 With the OSM Place Search Plugin, you can find places all around the world based on OpenStreetMap. This means the place search is independent from whatever basemap you are using, it is always based on OpenStreetMap.
 
 ```{Tip}
-If the plugin is installed and activated but the panel is not visible check Wiki [Move and arrange toolbars and panels]( https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#show-and-hide-displays-and-toolbars)
+If the plugin is installed and activated but the panel is not visible check Wiki [Move and arrange toolbars and panels](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#show-and-hide-displays-and-toolbars)
 ```
 
 __Functionality of OSM Place Search Plugin__
