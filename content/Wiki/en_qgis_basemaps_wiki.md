@@ -59,7 +59,7 @@ __Functionality of QuickMapServices Plugin__
 ### Configuration of QuickMapServices
 After installing the plugin (Plugin Wiki) you need to configure the plugin to access all basemaps.
 
-`Web` -> `QuickMapService` -> `Settings` -> Use the horizontal arrows to navigate to `More Services` -> `Get Contributed Pack`
+`Web` -> `QuickMapServices` -> `Settings` -> Use the horizontal arrows to navigate to `More Services` -> `Get Contributed Pack`
 
 ## Navigation on Basemap with OSM Place Search Plugin
 
