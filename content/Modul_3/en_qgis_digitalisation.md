@@ -71,7 +71,7 @@ The advanced digitalisation toolbar allows you to move features, delete parts of
 |Tool|Purpose|Tool|Purpose|
 |---|---|-----|---|
 |![](/fig/cad.png)|Enable Advanced Digitizing Tools|||
-|![](/fig/mActionMoveFeature-1.png)![](/fig/mActionMoveFeatureLine.png)![Alt text](/fig/mActionMoveFeaturePoint.png)|Move Feature(s)|![Alt text]/fig/(mActionMoveFeatureCopy.png) ![Alt text](/fig/mActionMoveFeatureCopyLine.png)![Alt text](/fig/mActionMoveFeatureCopyPoint-2.png)|Copy and Move Feature(s)|
+|![](/fig/mActionMoveFeature-1.png)![](/fig/mActionMoveFeatureLine.png)![](/fig/mActionMoveFeaturePoint.png)|Move Feature(s)|![Alt text](/fig/mActionMoveFeatureCopy.png) ![](/fig/mActionMoveFeatureCopyLine.png) ![](/fig/mActionMoveFeatureCopyPoint-2.png)|Copy and Move Feature(s)|
 |![Alt text](/fig/mActionRotateFeature.png)|Rotate Feature(s)|![Alt text](/fig/mActionSimplify.png)|Simplify Feature|
 |![Alt text](/fig/mActionScaleFeature.png)|Scale Feature||
 |![Alt text](/fig/mActionCapturePolygon.png)|Add Ring|![Alt text](/fig/mActionAddPart.png)|Add Part|
@@ -89,7 +89,7 @@ The advanced digitalisation toolbar allows you to move features, delete parts of
 
 To digitise data for a new dataset you always have to start with creating the dataset before filling it with digitised data.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Create_new_vector_data.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_create_layer.mp4"></video>
 
 1. `Layer` --> `Create Layer` -> `New GeoPackage Layer` or `New Shapefile Layer`
 2. Click on ![](/fig/Three_points.png) and navigate to the folder where you want to save the dataset.
@@ -113,52 +113,68 @@ align: center
 ---
 ```
 
+```{attention} 
+One important concept to understand before starting to add data to datasets is that whenever you make changes to a dataset other than styling, you have to put it in editing mode. This is done by selecting the layer and clicking on![](/fig/mActionToggleEditing.png). Now the buttons for many functions of the digitalisation toolbar are clickable. 
+After you are done manipulating the layer click on ![](/fig/mActionSaveEdits.png) to save your edits. 
+
+```
+
 ### Creation of point data
 
-Click on the following numbers bottons as seen in the picture below. Number **1** will switch to edit mode, number **2** is to create a new entry point, number **3** is to move or copy point and number **4** is to delete entry point.
+To digitalise points, first you need an existing point layer or you need to create one (check out [Digital Data Creation]( https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation.html#digital-data-creation) above).
 
-![](/fig/New_point_creation_data.png)
+1.	Select the point layer you want to add data to in the Layer panel
+2.	Go to the digitalisation toolbar and click on![](/fig/mActionToggleEditing.png). No the layer is in the editing mode.
+3.	Click on ![](/fig/mActionCapturePoint.png). 
+4.	Left-click on the feature you want to digitalise.
+5.	Once you click, a window will appear `[Your Layer Name]- Feature Attribute`. Here you can add the information about this feature to the different columns, based on the attribute table of the layer.
+6.	Once you are done with digitalisation ![](/fig/mActionSaveEdits.png).
 
-* Create  a  new  point:  Use  the  "Create  a  new  entity"  button  >  left-click  on  the  map > enter the attributes > click OK > a new point is created.
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_point_feature.mp4"></video>
 
-![](/fig/Naming_of_point_created.png)
 
-You can name the point as you want and enter any number in the ID and click ok. The new point feature has been created and named which can be easily seen on the map.
+Creat_point_feature.mp4
 
+```{figure} /fig/point_creation.png 
+---
+width: 500px
+name: Point creation
+align: center
+---
+```
 
 #### Creation of line data
 
-The  method  is  similar  to  digitising  a  point  (see  above).This can be possible when you have firstly created a new line shapefiles layer. Remember to change the geometry type into lines because we are creating lines data now.
+The  method  is  similar  to  digitising  a  point  (see  above). First you have to created a new line layer or use an existing one. 
 
-![](/fig/Creation_of_line_data.png)
-
-
-See video of line data creation
-
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Line_data_creation.mp4"></video>
-
-
-```{Note} 
-Try:
+```{attention} 
+If you create a new line layer remember to change the geometry type into lines because we are creating lines data now.
 ```
-Use  the  "Create  new  line"  button  and  click  several  times  on  the  map  (left  button)  to  draw  the  different parts of your line. When this is done, right-click to complete your line and access the Attributes window.> Complete the attributes and click OK
+1.	Select the line layer you want to add data to in the Layer panel
+2.	Go to the digitalisation toolbar and click on![](/fig/mActionToggleEditing.png). No the layer is in the editing mode.
+3.	Click on ![](/fig/mActionCaptureLine.png). 
+4.	To digitalise line features, click along the line. When you are done, right-click on the last point of the line to finish the feature.
+5.	Once you click, a window will appear `[Your Layer Name]- Feature Attribute`. Here you can add the information about this feature to the different columns, based on the attribute table of the layer.
+6.	Once you are done with digitalisation ![](/fig/mActionSaveEdits.png).
+
+
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_line_feature.mp4"></video>
+
 
 #### Creation of polygon data
 
-The method is similar to digitising a point or a line (see above).  Only  the  fourth  icon  changes  slightly:  this  one  corresponds to "Create a new polygon"
+The method is similar to digitising a point or a line (see above).
 
-![](/fig/polygon_data_creation.png)
+1.	Select the polygon layer you want to add data to in the Layer panel
+2.	Go to the digitalisation toolbar and click on![](/fig/mActionToggleEditing.png). No the layer is in the editing mode.
+3.	Click on ![](/fig/mActionCapturePoint.png). 
+4.	To digitalise polygon features, left-click around the area you want do digitise. When you are done, right-click on the last point of the area to finish the feature.
+5.	Once you click, a window will appear `[Your Layer Name]- Feature Attribute`. Here you can add the information about this feature to the different columns, based on the attribute table of the layer.
+6.	Once you are done with digitalisation ![](/fig/mActionSaveEdits.png).
 
-```{Tip}
-Caution:
-```
 
-Please remember to firstly created a new polygon shapefiles layer so thatthe icon to create a polygon can be active and ensure you change the geometry type into polygons because we are creating polygon data now.
-
-
-See video of polygon data creation
-
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/polygon_data_creation.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_digitize_add_feature.mp4"></video>
 
 
 ### Creation of new shapefile data
