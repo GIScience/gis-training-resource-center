@@ -46,7 +46,7 @@ Advantages of using basemaps from XYZ Tiles are:
 
 ## Basemaps from [QuickMapServices](https://nextgis.com/blog/quickmapservices/) Plugin
 
-The QuickMapService Plugin allows to access a wide range of basemaps. 
+The QuickMapServices Plugin allows to access a wide range of basemaps. 
 
 ```{Note}
 There can be problems when printing some basemaps from the QuickMapServices!
