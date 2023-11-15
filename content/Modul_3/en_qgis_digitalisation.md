@@ -134,7 +134,6 @@ To digitalise points, first you need an existing point layer or you need to crea
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_point_feature.mp4"></video>
 
 
-Creat_point_feature.mp4
 
 ```{figure} /fig/point_creation.png 
 ---
@@ -205,7 +204,7 @@ Not that this is only possible __before__ you save the changes.
 5.	Once you are done with editing click on ![](/fig/mActionSaveEdits.png) to save your edits.
 6.	Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/delete_feature.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/delet_feature_geometry.mp4"></video>
 
 ### Moving features
 
@@ -219,7 +218,7 @@ For that you need the Advanced Digitalisation Toolbox.
 4.	Once you are done with editing click on ![](/fig/mActionSaveEdits.png) to save your edits.
 5.	Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Move_feature.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/move_feature_geometry.mp4"></video>
 
 ### Modifying geometries of feature
 
@@ -229,6 +228,9 @@ For that you need the Advanced Digitalisation Toolbox.
 4.	Now you can now move every vertex (corner) of a feature. Click on the vertex/corner you want to move and then click on the location where you want to move the vertex to.
 5.	Once you are done with editing click on ![](/fig/mActionSaveEdits.png) to save your edits.
 6.	Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_digitize_move_vertices.mp4"></video>
+
 
 ### Add a ring to a polygon feature
 
@@ -245,10 +247,19 @@ A ring in QGIS is part inside a polygon that is not part of the polygon. Image a
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_digitize_add_ring.mp4"></video>
 
 
+
+
 ## Digitization Errors in QGIS
 
 Positional errors are inevitable when data are manually digitized. The most common examples include undershooting and overshooting.  When your coordinates do not connect as they should, and overshooting, when the lines go past where they should. Often these errors are not visible unless you zoom in quite a bit on the coordinates. Setting a fuzzy tolerance (snapping tolerance) is used to reduce undershoots and overshoots. The snapping tolerance is the minimum tolerated distance between nodes, lines and/or vertices.
 
-![](/fig/Digitization_Errors.PNG)
+```{figure} /fig/Digitization_Errors.PNG
+---
+width: 500px
+name: Point creation
+align: center
+---
+```
+
 
 
