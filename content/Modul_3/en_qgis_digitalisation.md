@@ -200,7 +200,7 @@ Not that this is only possible __before__ you save the changes.
 1.	Select the line layer you want to add data to in the Layer panel.
 2.	Go to the digitalisation toolbar and click on![](/fig/mActionToggleEditing.png). 
 3.	Clicking on ![](/fig/mActionSelectRectangle.png) and selecting the feature you want to delete (see [wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_queries_wiki.html#manual-selection)).
-4.	Once you have selected the features click on to delete the feature.
+4.	Once you have selected the features click on ![](/fig/mActionDeleteSelectedFeatures.png) to delete the feature.
 5.	Once you are done with editing click on ![](/fig/mActionSaveEdits.png) to save your edits.
 6.	Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
 
