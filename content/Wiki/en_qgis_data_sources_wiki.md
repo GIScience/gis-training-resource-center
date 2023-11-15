@@ -2,9 +2,7 @@
 
 ## (Geo) Data Sources Overview
 
-### A selection of useful (geo) data sources:
-
-[A selection of useful (geo) data sources]__(https://docs.google.com/document/d/1apsMZ1ecM6rylRszP8rZfIj-yj14ARs86iQ5ZtkrLZ4/edit#)__
+__[A selection of useful (geo) data sources](https://docs.google.com/document/d/1apsMZ1ecM6rylRszP8rZfIj-yj14ARs86iQ5ZtkrLZ4/edit#)__
 
 This selection includes vector, raster and text data sets, as well as stats and diagrams. If you would like to add to the list, please feel free to add your data set.
 
