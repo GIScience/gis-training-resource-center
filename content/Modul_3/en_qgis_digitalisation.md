@@ -74,9 +74,9 @@ The advanced digitalisation toolbar allows you to move features, delete parts of
 |![](/fig/mActionMoveFeature-1.png)![](/fig/mActionMoveFeatureLine.png)![](/fig/mActionMoveFeaturePoint.png)|Move Feature(s)|![Alt text](/fig/mActionMoveFeatureCopy.png) ![](/fig/mActionMoveFeatureCopyLine.png) ![](/fig/mActionMoveFeatureCopyPoint-2.png)|Copy and Move Feature(s)|
 |![Alt text](/fig/mActionRotateFeature.png)|Rotate Feature(s)|![Alt text](/fig/mActionSimplify.png)|Simplify Feature|
 |![Alt text](/fig/mActionScaleFeature.png)|Scale Feature||
-|![Alt text](/fig/mActionCapturePolygon.png)|Add Ring|![Alt text](/fig/mActionAddPart.png)|Add Part|
-|![Alt text](mActionFillRing.png)|Fill Ring|![Alt text](/fig/mActionReverseLine.png)|Swap direction|
-|![Alt text](/fig/mActionDeleteRing-1.png)|Delete Ring|![Alt text](/fig/mActionDeletePart.png)|Delete Part|
+|![Alt text](/fig/mActionAddRing.png)|Add Ring|![Alt text](/fig/mActionAddPart.png)|Add Part|
+|![Alt text](/fig/mActionFillRing.png)|Fill Ring|![Alt text](/fig/mActionReverseLine.png)|Swap direction|
+|![Alt text](/fig/mActionDeleteRing.png)|Delete Ring|![Alt text](/fig/mActionDeletePart.png)|Delete Part|
 |![Alt text](/fig/mActionOffsetCurve.png)|Offset Curve|![Alt text](/fig/mActionReshape.png)|Reshape Features|
 |![Alt text](/fig/mActionSplitParts.png)|Split Parts|![Alt text](/fig/mActionSplitFeatures.png)|Split Features|
 |![Alt text](/fig/mActionMergeFeatureAttributes.png)|Merge Attributes of Selected Features|![Alt text](/fig/mActionMergeFeatures.png)|Merge Selected Features|
@@ -128,7 +128,8 @@ To digitalise points, first you need an existing point layer or you need to crea
 3.	Click on ![](/fig/mActionCapturePoint.png). 
 4.	Left-click on the feature you want to digitalise.
 5.	Once you click, a window will appear `[Your Layer Name]- Feature Attribute`. Here you can add the information about this feature to the different columns, based on the attribute table of the layer.
-6.	Once you are done with digitalisation ![](/fig/mActionSaveEdits.png).
+5.	Once you are done with digitalisation ![](/fig/mActionSaveEdits.png) to save your edits.
+6.	Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_point_feature.mp4"></video>
 
@@ -155,8 +156,8 @@ If you create a new line layer remember to change the geometry type into lines b
 3.	Click on ![](/fig/mActionCaptureLine.png). 
 4.	To digitalise line features, click along the line. When you are done, right-click on the last point of the line to finish the feature.
 5.	Once you click, a window will appear `[Your Layer Name]- Feature Attribute`. Here you can add the information about this feature to the different columns, based on the attribute table of the layer.
-6.	Once you are done with digitalisation ![](/fig/mActionSaveEdits.png).
-
+6.	Once you are done with digitalisation ![](/fig/mActionSaveEdits.png) to save your edits.
+7.	Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
 
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_line_feature.mp4"></video>
@@ -168,82 +169,80 @@ The method is similar to digitising a point or a line (see above).
 
 1.	Select the polygon layer you want to add data to in the Layer panel
 2.	Go to the digitalisation toolbar and click on![](/fig/mActionToggleEditing.png). No the layer is in the editing mode.
-3.	Click on ![](/fig/mActionCapturePoint.png). 
+3.	Click on ![](/fig/mActionCapturePolygon.png). 
 4.	To digitalise polygon features, left-click around the area you want do digitise. When you are done, right-click on the last point of the area to finish the feature.
 5.	Once you click, a window will appear `[Your Layer Name]- Feature Attribute`. Here you can add the information about this feature to the different columns, based on the attribute table of the layer.
-6.	Once you are done with digitalisation ![](/fig/mActionSaveEdits.png).
-
+6.	Once you are done with digitalisation ![](/fig/mActionSaveEdits.png) to save your edits.
+7.	Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_digitize_add_feature.mp4"></video>
 
 
-### Creation of new shapefile data
-
-+ Go to Layer, Create Layer, New Shapefile Layer in the top menu.
-+ In the New Shapefile dialog, specify the name and location for the new shapefile.
-+ Select the geometry type for the shapefile from the Type dropdown (e.g. Point, line, Polygon).
-+ Click the OK button to create the shapefile
-
-![](/fig/New_shapefile_layer_creation.png)
-
-* The new shapefile layer
-
-![](/fig/New_shapefile_layer_naming.png)
-
-## Create Layer
-
-Now add some layers for drawing. Click layer in the menu bar, select create layer and select **new spatialite layer** or select **new shapefile layer** if you have to digitize a single feature like some places or roads or buildings. We are choosing new spatialite layer because we want to draw more than one feature in single file and it is easy to transfer this file.
-
-**Next**
-
-Click ‘…’ browse button and save your database. Give name to your layer, select type of layer and specify attributes and their type such as text or numerals and click add attributes to the list and click OK. Specify CRS of the layer same as the CRS of Raster data.
-
- ![](/fig/New_spatialite_layer.png)
-
-
 ## Digital data editing
 
-Select the layer in the Layers panel and click on Toggle Editing under Layer. Alternatively, you can right-click on a layer in the Layers panel and choose Toggle Editing from the context menu. Multiple layers can be edited at a time. The layer currently being edited is the one selected in the Layers panel.
+For editing existing geodata you use the same toolbars as for the creation. This chapter will cover the change of geometries of data, not covering changing data in the attribute table.
 
-![](/fig/Toggle_editingbox.png)
+For all cases...
+
+1. You first have to select the layer you want to edit.
+2. Click on ![](/fig/mActionToggleEditing.png) to activate editing mode.
+3. Do you editing.
+4. Save your edit by clicking on ![](/fig/mActionSaveEdits.png).
+5. Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
+
+```{Tip} 
+You can use the ![](/fig/mActionUndo.png) & ![](/fig/mActionRedo.png) buttons to reverse changes easily.
+
+Not that this is only possible __before__ you save the changes.
+```
+
+### Deleting features
+
+1.	Select the line layer you want to add data to in the Layer panel.
+2.	Go to the digitalisation toolbar and click on![](/fig/mActionToggleEditing.png). 
+3.	Clicking on ![](/fig/mActionSelectRectangle.png) and selecting the feature you want to delete (see [wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_queries_wiki.html#manual-selection)).
+4.	Once you have selected the features click on to delete the feature.
+5.	Once you are done with editing click on ![](/fig/mActionSaveEdits.png) to save your edits.
+6.	Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/delete_feature.mp4"></video>
+
+### Moving features
+
+There are multiple methods to move features. Here we show the method that works for point, line and polygon features the same.
+For that you need the Advanced Digitalisation Toolbox.
 
 
-### Feature attribute selection and editing
+1.	Select the line layer you want to add data to in the Layer panel.
+2.	Go to the digitalisation toolbar and click on![](/fig/mActionToggleEditing.png). 
+3.	Click on ![](/fig/mActionMoveFeaturePoint.png) and click on the feature you want to move. Then click on the location you want to move the feature to.
+4.	Once you are done with editing click on ![](/fig/mActionSaveEdits.png) to save your edits.
+5.	Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
 
-The first group of tools in the Attributes toolbar allows us to select features on the map using the mouse. The following screenshot shows the Select Feature(s) tool. We can select a single feature by clicking on it, or select multiple features by drawing a rectangle.
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Move_feature.mp4"></video>
 
-![](/fig/Select_Feature(s)_tool.png)
+### Modifying geometries of feature
 
-* How to export selected features
+1.	Select the line layer you want to add data to in the Layer panel.
+2.	Go to the digitalisation toolbar and click on![](/fig/mActionToggleEditing.png). 
+3.	Click on ![](/fig/mActionVertexToolActiveLayer.png).
+4.	Now you can now move every vertex (corner) of a feature. Click on the vertex/corner you want to move and then click on the location where you want to move the vertex to.
+5.	Once you are done with editing click on ![](/fig/mActionSaveEdits.png) to save your edits.
+6.	Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
 
-![](/fig/Export_selected_features.png)
+### Add a ring to a polygon feature
+
+A ring in QGIS is part inside a polygon that is not part of the polygon. Image a polygon representing a lake. The ring is an island in the lake. For a better understanding, watch the video below.
+
+1.	Select the line layer you want to add data to in the Layer panel.
+2.	Go to the digitalisation toolbar and click on![](/fig/mActionToggleEditing.png). 
+3.	Click on ![Alt text](/fig/mActionAddRing.png).
+4.	Create a ring by clicking the area you want to exclude. To close the ring do a right-click.
+5.	Once you are done with editing ![](/fig/mActionSaveEdits.png) to save your edits.
+6.	Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
 
 
-## Editing data - Data creation and deletion
-
-* To create or delete a field in your attribute table you need to be in edit mode, click on the Switch to edit mode button.
-
-![](/fig/Switch_to_edit_mode_of_attribute_table.png)
-
-
-* To add new data field; click on symbol circle 1 and to delete a data field; click on symbol circle 2
-
-![](/fig/add_delete_data_in_attribute_table.png)
-
-
-## Attributes table editing
-
-The attribute table displays information on features of a selected layer. Features in the table can be searched, selected, moved or even edited. It is also possible to right-click on the layer and choose openTable Open Attribute Table from the drop-down menu, or to click on the openTable Open Attribute Table button in the Attributes toolbar. 
-
-If you prefer shortcuts, **F6** will open the attribute table. **Shift+F6** will open the attribute table filtered to selected features and **Ctrl+F6** will open the attribute table filtered to visible features.
-
-![](/fig/Opening_attribute_table.png)
-
-* Right click the layer in the Layers Panel then click the Open Attribute Table menu option. Click the Toggle Editing Mode button. Click the New Field button. Input the field's Name, Type, and Length, then click the OK button.
-
-![](/fig/New_fieldcolumn_creation_in_attribute_table.png)
-
-![](/fig/Input_newfield_and_to_save_editing.png)
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_digitize_add_ring.mp4"></video>
 
 
 ## Digitization Errors in QGIS
