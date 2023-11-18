@@ -67,6 +67,7 @@ Adding a new map to the Print Layout
 .mp4"></video>
 :::
 ::::
+
 ### Adding a title or a text box
 
 A title should describe the phenomenen represented on the map.
@@ -84,7 +85,7 @@ Adding text to the print Layout
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_print_layout_adding_a_title
 .mp4"></video>
 
-### Adding an image
+### Adding an image or logo
 
 If you are working for an organisation, most likely you will add the logo of that organization on the maps you produce. 
 
@@ -93,6 +94,9 @@ If you are working for an organisation, most likely you will add the logo of tha
 3. In the `Item properties` tab, you will have the option to choose an SVG image from your SVG-library in QGIS or choose a __Raster image__. Most image files are Raster images. 
 4. Select `Raster image` and click on the `...` to choose the location of the image.
 5. Your image will appear in the print layout. In order to make sure that the image does not get distorted, leave the `Resize Mode` on "Zoom".
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_raster_image.mp4"></video>
+
 
 ### Adding a legend
 
@@ -113,7 +117,9 @@ Adding a legend to the print layout
 ```
 
 In the __item properties__ panel, if you keep the __'Auto update'__ option checked, new layers added to your project will automatically be added to the legend but you cannot control them individually (rename if necessary, reorder ot remove items).  
-Once the option is unchecked, you can update the name of the layers, group them, reorganise them, etc.
+Once the option is unchecked, you can update the name of the layers, group them, remove or reorganise them, etc. 
+
+If you have to many items on your legend, and they don't fit on your map horizontally, you can also split the legend into several columns by navigating through the `Item Properties`-panel, expand the `Columns`-section and increase the __Count__.
 
 :::: {tab-set}
 ::: {tab-item} Adding a legend
@@ -129,6 +135,14 @@ Once the option is unchecked, you can update the name of the layers, group them,
 .mp4"></video>
 
 :::
+
+:::{tab-item} 2-Column legend
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_multiple_columns_legend
+.mp4"></video>
+
+:::
+
 ::::
 
 ### Adding a scale bar
@@ -229,6 +243,63 @@ Once you are finished with the map composition, it is time to export export the 
 
 ```{note}
 Make sure to check the map after exporting the PDF as some design elements might have changed in the exporting process.
+```
+
+# Map templates
+
+Map templates can facilitate and reduce the creation of a print layout. Map templates save the arrangement of elements in the print layout. However, they do not save the layers and images of the project. These will need to be reconfigured again.
+~~If you work for an organisation that frequently publishes maps, or you need to create several maps on the same topics but in different regions or times, you can use map templates to skip the arrangement of elements.~~ 
+
+```{note}
+The individual layers, maps and images are not saved in the template. However, if you have the same layers in the project you load the template into, the legend will update accordingly. 
+```
+
+::::{tab-set}
+:::{tab-item} Saving a template
+
+1. Once you are satisfied with your map layout, click on the [](../../fig/en_30.30.2_save_as_template.png)-symbol to save it as a new template.
+2. Choose a location where you want to save the template. Ideally, you should choose the template directory (see tip).
+3. Click `Save`. 
+4. You can open the template by dragging it into a QGIS-project.
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_saving_layout_template
+.mp4"></video>
+
+
+:::
+
+:::{tab-item} Opening a template
+
+You can drag and drop template-files (`.qpt`, QGIS template file) into QGIS or use the __Layout manager__.
+
+1. Open the Layout manager under `Layout` > `Layout Manager`
+2. Navigate to the section "__New from Template__"
+3. Choose `Specific` and select the location where you saved your template
+4. Click open.
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_opening_template
+.mp4"></video>
+
+:::
+
+:::{tab-item} Template directory
+
+The template directory is where QGIS is looking for layout templates. If you have templates saved here, you can load templates directly through the layout manager without selecting the file.   
+On windows, the file path is `\Users\AppData\Roaming\QGIS\QGIS3\profiles\default\composer_templates`.
+On mac, 
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_template_directory
+.mp4"></video>
+
+:::
+
+::::
+
+```{tip}
+The layout manager in QGIS already has a dedicated location for map templates. On windows, the file path is `\Users\AppData\Roaming\QGIS\QGIS3\profiles\default\composer_templates`.
+On mac, 
+If you save templates here, you can load templates directly through the layout manager without looking for the file.
+You can also add file paths 
 ```
 
 # The Atlas function (automatic map generation)
