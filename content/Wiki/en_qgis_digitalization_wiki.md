@@ -44,7 +44,7 @@ To digitize data for a new dataset you always have to start with creating the da
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/fig/raw/main/en_qgis_digitize_move_vertices.mp4"></video>
 
-Further resources:
+__Further resources:__
 
 [![Digitizing shapefile QGIS](/fig/en_digitizing_shapefiles.png)](https://www.youtube.com/watch?v=Zer558SnKX4)
 
