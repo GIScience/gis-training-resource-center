@@ -2,7 +2,7 @@
 
 The representation of geodata in maps is crucial in order to provide useful location-based insights. This subchapter will cover the basics of good map design, how to create a map design in QGIS as well as common mistakes when designing or interpreting maps.
 
->Overview of the chapter:
+In this chapter we will go over the basics of symbology, colours and how to adjust individual layers in QGIS to create comprehensive maps.
 
 ## Types of maps
 
@@ -245,9 +245,6 @@ The styling of a vector data consists of the colour and the outline
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_change_style_for_multiple_layers
 .mp4"></video>
 
-```{note} 
-Remember that __the layer's symbology is saved within your project file, not within your shapefile!__ If you share a shapefile with a colleague, it will have a different style when they add it to their own project.
-```
 
 :::
 
@@ -347,6 +344,10 @@ width: 500px
 A map showing the population of Nigerian states
 ```
 :::
+
+```{note} 
+Remember that __the layer's symbology is saved within your project file, not within your shapefile!__ If you share a shapefile with a colleague, it will have a different style when they add it to their own project.
+```
 
 ## Labels
 
@@ -500,9 +501,8 @@ Some organisations may also use standarized symbols or colours in their maps.
 When a styling is saved in the same location as the data and has the same name as the corresponding dataset, the styling will be automatically applied to the layer when loading the data into QGIS!
 ```
 
->Convert into tab group
-
-:::{dropdown} Exporting a styling to send to a colleague
+::::{tab-set}
+:::{tab-item} Exporting a styling
 
 1. Open the styling panel and click on `styles`. A dropdown menu will open with the option to export the layer styling.
 2. Since in this case, the styling is for exactly that dataset, you can leave all the boxes checked.
@@ -512,7 +512,7 @@ When a styling is saved in the same location as the data and has the same name a
 .mp4"></video>
 :::
 
-:::{dropdown} Loading a style into your QGIS-project
+:::{tab-item} Loading a style into your QGIS-project
 
 1. Open the style manager: `Settings` > `Style manager`
 2. Click on `import/export` and select `import items`
@@ -524,9 +524,9 @@ You can also import styles directly in the styling panel of a layer. But it will
 ```
 :::
 
-:::{dropdown} Using Red Cross and UN symbols
+:::{tab-item} Using Red Cross symbols
 
-With the plugin __"Plugin Resource Sharing"__, you can install symbol and icon libraries used by the Red Cross and UN, as well as a plethora of other symbols.
+With the plugin __"Plugin Resource Sharing"__, you can install symbol and icon libraries used by the Red Cross and UN, as well as other useful symbols.
 
 1. Install the __"Plugin Resource Sharing"__ by opening the plugin installation window and searching for the plugin.
 2. Once installed, open the plugin interface by clicking on `plugin` > `Plugin Resource Sharing`
@@ -535,33 +535,39 @@ With the plugin __"Plugin Resource Sharing"__, you can install symbol and icon l
 
 Now the symbols should be available in the styling manager in the SVG folder.
 
->VIDEO
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_resource_sharing_plugin.mp4"></video>
 
+
+```{tip}
+Make sure to check out the other resources available in the resource sharing plugin and see if they are useful to you.
+```
 :::
 
-:::{dropdown} Using SVG-symbols
+:::{tab-item} Using SVG-symbols
 
 1. Open the styling panel and open the `single marker` options.
 2. Under `Symbol layer type`, select __"SVG Marker"__
 3. Scroll down to the SVG-Browser. Here you will find all the folder of your installed SVG-libraries.
 
-VIDEO
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video>
 
 :::
 
-:::{dropdown} Adding an external SVG-library
+:::{tab-item} Adding an external SVG-library or other style libraries
 
 If you have a library of SVG-symbols as a folder you can add them to your Styling manager.
 
 1. Open the style manager: `setting` > `style manager`
-2. Click on `Import / Export` and select `Import from file`
-3. Select the folder with the svg-library
+2. Click on `Import / Export` and select `Import items`
+3. Navigate to the location where you have saved the library or style and select the file (in most cases .qml but the file type can also be .xml)
+4. Now you can select which symbols you wish to import. In most cases, you can select all symbols.
 4. Click on `Import`
 The new SVG-symbols are in your SVG library.
 
-VIDEO
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video>
 
 :::
+::::
 
 # Examples for Map design
 

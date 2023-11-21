@@ -63,7 +63,7 @@ Adding a new map to the Print Layout
 :::
 
 ::: {tab-item} Moving and scaling the map
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_moving_and_scaling_the_map
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_moving_the_map
 .mp4"></video>
 :::
 ::::
@@ -82,8 +82,10 @@ name: Add text to the print layout
 ---
 Adding text to the print Layout
 ```
+:::{dropdown} Video: Adding a textbox
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_print_layout_adding_a_title
 .mp4"></video>
+:::
 
 ### Adding an image or logo
 
@@ -95,8 +97,9 @@ If you are working for an organisation, most likely you will add the logo of tha
 4. Select `Raster image` and click on the `...` to choose the location of the image.
 5. Your image will appear in the print layout. In order to make sure that the image does not get distorted, leave the `Resize Mode` on "Zoom".
 
+:::{dropdown}
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_raster_image.mp4"></video>
-
+:::
 
 ### Adding a legend
 
@@ -175,9 +178,10 @@ name: Add scale bar
 ---
 Add and customize the scale bar
 ```
-
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_scale_bar
+:::{dropdown}
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_print_layout_adding_scalebar
 .mp4"></video>
+:::
 
 ### Adding an overview map
 
@@ -222,7 +226,7 @@ Add a the extent of the main map to your overview map (the red rectangle on the 
 ```
 
 :::{dropdown} Video: Setting up an overview map
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_setting_up_overview_maps
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_overview_maps
 .mp4"></video>
 :::
 
@@ -257,7 +261,7 @@ The individual layers, maps and images are not saved in the template. However, i
 ::::{tab-set}
 :::{tab-item} Saving a template
 
-1. Once you are satisfied with your map layout, click on the [](../../fig/en_30.30.2_save_as_template.png)-symbol to save it as a new template.
+1. Once you are satisfied with your map layout, click on the ![](../../fig/en_30.30.2_save_as_template.png)-symbol to save it as a new template.
 2. Choose a location where you want to save the template. Ideally, you should choose the template directory (see tip).
 3. Click `Save`. 
 4. You can open the template by dragging it into a QGIS-project.
@@ -299,7 +303,7 @@ On mac,
 The layout manager in QGIS already has a dedicated location for map templates. On windows, the file path is `\Users\AppData\Roaming\QGIS\QGIS3\profiles\default\composer_templates`.
 On mac, 
 If you save templates here, you can load templates directly through the layout manager without looking for the file.
-You can also add file paths 
+You can also add file paths in the QGIS-template setting ()
 ```
 
 # The Atlas function (automatic map generation)
