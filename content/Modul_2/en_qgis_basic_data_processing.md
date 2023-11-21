@@ -47,6 +47,52 @@ Go to the data source manager and choose vector on the right. By clicking on the
 
 ### overpass turbo
 
+Overpass turbo is a web based data mining tool for OSM. By running a query, you can download the data and import it into your project. You can either run it by writing your query on the left or by using the wizard which will assist you in writing your queries. One can export the results in various ways.
+
+::::{tab-set}
+
+:::{tab-item} Data
+By exporting the data as f.e. GeoJSON you can later on import them in your QGIS project.
+```{figure} /fig/en_overpass_turbo_data.png
+---
+height: 500px
+name: overpass_turbo_data
+---
+Screenshot of how to export data in overpassturbo
+```
+
+:::
+
+:::{tab-item} Map
+By exporting the query as map, you can share your current view as link or image.
+
+```{figure} /fig/en_overpass_turbo_map.png
+---
+height: 500px
+name: overpass_turbo_map
+---
+Screenshot of how to export map in overpassturbo
+```
+:::
+
+:::{tab-item} Query
+By exporting your query you can get the text or convert it to an OverpassXML or OverpassQL formated query.
+
+```{figure} /fig/en_overpass_turbo_query.png
+---
+height: 500px
+name: overpass_turbo_query
+---
+Screenshot of how to export query in overpassturbo
+```
+:::
+
+::::
+
+For more information, check out the [wiki](https://wiki.openstreetmap.org/wiki/Overpass_turbo).
+
+
+
 ### quick osm plugin
 
 By installing the QuickOSM plugin you can run the query directly in QGIS to download data from OpenStreetMap. 
