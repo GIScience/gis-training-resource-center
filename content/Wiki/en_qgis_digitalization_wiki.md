@@ -18,7 +18,7 @@ To digitize data for a new dataset you always have to start with creating the da
     * Click on ![](/fig/mActionNewAttribute.png) to add the new column to the `Fields List`.
 - Click `OK`.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/fig/raw/main/en_qgis_create_layer.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_create_layer.mp4"></video>
 
 ## Add geometries to a layer
 
@@ -27,14 +27,14 @@ To digitize data for a new dataset you always have to start with creating the da
 - Draw geometries and enter `feature attributes`, like *id* and *name*.
 - Save edits ![](/fig/mActionSaveEdits.png) , exit `edit mode`. 
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/fig/raw/main/en_qgis_digitize_add_feature.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_digitize_add_feature.mp4"></video>
 
 - Clicking on ![](/fig/mActionToggleEditing.png) start `edit mode`.
 - Add Feature: `Add Ring`![](/fig/mActionAddRing.png) (e.g. map the inner courtyard of a building, or -  as shown in the video - create a cercle to mark an isle in the lake).
 - To open the `Advanced Digitizing Toolbar` go to `View > Toolboxes > Advanced Digitizing Toolbar`.
 - To add rectangles 'automatically' go to `View > Toolbars > Shape Digitizing Toolbar`.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/fig/raw/main/en_qgis_digitize_add_ring.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_digitize_add_ring.mp4"></video>
 
 ## Modify existing geometries in the layer
 
@@ -42,7 +42,7 @@ To digitize data for a new dataset you always have to start with creating the da
 - `Move vertices` and `add new vertices`.
 - Save edits ![](/fig/mActionSaveEdits.png), exit `edit mode`. 
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/fig/raw/main/en_qgis_digitize_move_vertices.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_digitize_move_vertices.mp4"></video>
 
 __Further resources:__
 
