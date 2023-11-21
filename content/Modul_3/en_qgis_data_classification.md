@@ -12,8 +12,6 @@ align: center
 ---
 ```
 
-
-
 ## Single symbol classification
 
 By default, QGIS visualizes all layers in the `Single symbol` setting. This means all the features of a layer are visualised the same. In this setting, you can change many parameters like colour or opacity __but you can not classify any data!__
@@ -54,9 +52,6 @@ Categorized classification is usually used for __nominal__ and __ordinal__ scale
 | Ordinal Scale                | Categories with a meaningful order or ranking            | Ranks (e.g., low, medium)   | Text ("high") or Integer (5)      |
 
 
-
-
-
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Classify_by_categorized.mp4"></video>
 
 __To classify data in categories…__
@@ -92,7 +87,7 @@ Graduated classification is used for quantitative data usually __interval__ or _
 | Interval Scale               | Equal intervals between values, no true zero point       | Temperature (Celsius)       | Float (44.5 Degree)                |
 | Ratio Scale                  | Equal intervals with a true zero point                    | Population, Length, Number of trees          | Integer (5 Trees) or Float (12.5 km of Road)     |
 
-To classify quantitative data there are many methods how to set up the classes. There is no single best way to select a method or to decide how many classes you like to use. It all coms down to what you want to show.
+To classify quantitative data there are many methods how to set up the classes. There is no single best way to select a method or to decide how many classes you like to use. It all comes down to what you want to show.
 
 ```{tip} 
 A good range for number of classes is __3 to 7__. Do not use more than __9__ classes. 
@@ -181,9 +176,6 @@ align: center
 ---
 ```
 9. *Optional*: In the `Symbol` dropdown menu you can select the colours and symbols you want to use.
-```{tip} 
-When you use a point layer you can also use the __size__ of the symbols to visualize the classes, not just the color. To do that select a point layer and do steps 1 to 7. Under `Method` select `Size`.
-```
 10. *Optional*: In the `Color ramp` dropdown menu you can specify the range of colours you want to use. To see all color ramps click on the down arrow of the `Color ramp` -> `All Color Ramps`.
 11. *Optional*: Under `Legend Format` you can adjust how precise the range of the classes will be displayed in the legend. Usually, it is practical to not use too complicated numbers in the legend.
 12. *Optional*: You can open the panel `Layer Rendering` on the button of the window. Here you can adjust the opacity/ transparency of the layer.

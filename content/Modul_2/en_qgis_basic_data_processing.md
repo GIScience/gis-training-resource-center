@@ -39,21 +39,110 @@ Go to the data source manager and choose vector on the right. By clicking on the
 :::
 
 :::{tab-item} GeoPackage import
+Go to the data source manager and choose GeoPackage on the right. Click on New to add a connection. Browse through your data to the Geopackage and add. By clicking on Connect and Add you can add the data to your project.
 
 
+![datasource manager](../../fig/en_datasourcemanager_qgis.png)
+![import gpkg](../../fig/en_import_gpkg.png)
 :::
 
 ::::
 
+### overpass turbo
 
+Overpass turbo is a web based data mining tool for OSM. By running a query, you can download the data and import it into your project. You can either run it by writing your query on the left or by using the wizard which will assist you in writing your queries. One can export the results in various ways.
+
+::::{tab-set}
+
+:::{tab-item} Data
+By exporting the data as f.e. GeoJSON you can later on import them in your QGIS project.
+```{figure} /fig/en_overpass_turbo_data.png
+---
+height: 500px
+name: overpass_turbo_data
+---
+Screenshot of how to export data in overpassturbo
+```
+
+:::
+
+:::{tab-item} Map
+By exporting the query as map, you can share your current view as link or image.
+
+```{figure} /fig/en_overpass_turbo_map.png
+---
+height: 500px
+name: overpass_turbo_map
+---
+Screenshot of how to export map in overpassturbo
+```
+:::
+
+:::{tab-item} Query
+By exporting your query you can get the text or convert it to an OverpassXML or OverpassQL formated query.
+
+```{figure} /fig/en_overpass_turbo_query.png
+---
+height: 500px
+name: overpass_turbo_query
+---
+Screenshot of how to export query in overpassturbo
+```
+:::
+
+::::
+
+For more information, check out the [wiki](https://wiki.openstreetmap.org/wiki/Overpass_turbo).
 
 
 
 ### quick osm plugin
 
-### overpass turbo
+By installing the QuickOSM plugin you can run the query directly in QGIS to download data from OpenStreetMap. 
+First download the plugin by following the steps: 
 
-### Adding basemap
+```{figure} /fig/en_install_plugin.png
+---
+width: 250
+name: install_plugin
+---
+Screenshot of how to install plugins
+```
+
+
+```{figure} /fig/en_search_plugin.png
+---
+height: 500px
+name: search_plugin
+---
+Screenshot of how to search for plugins
+```
+
+You will see a new icon on your toolbar on the top. Now it is possible to search for your key:value in a given location and run the query. If you are unsure which key and value are used, take a look in the [OSM wiki](https://wiki.openstreetmap.org/wiki/Tags). 
+
+```{figure} /fig/en_quickosmplugin.png
+---
+height: 500px
+name: quickosmplugin
+---
+Screenshot of the QuickOSM plugin
+```
+
+<details>
+<summary>What do i do if there is no new icon?</summary>
+<br>
+If you can't find your new icon for the plugin, select view - toolbars and check that the QuickOSM plugin has a tick to be shown.
+
+```{figure} /fig/en_no_new_icon.png
+---
+height: 500px
+name: no_new_icon
+---
+Screenshot of how to add a new icon
+```
+
+</details>
+
 
 
 ## Geo features and attributes
@@ -63,3 +152,20 @@ Go to the data source manager and choose vector on the right. By clicking on the
 
 
 ## Basemap selection
+
+### OpenStreetMap
+
+If you are using version 3.4 or higher in QGIS, it is by default possible to add the OSM base map to your project. Unfold the XYZ tiles, right-click on OpenStreetMap and select add layer to project.
+
+```{figure} /fig/en_add_osm_basemap.png
+---
+height: 500px
+name: add_osm_basemap
+---
+Screenshot of how to add OSM basemap
+```
+
+### QuickMapServices
+BRC exc 1.3
+
+## Data organization

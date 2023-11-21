@@ -12,7 +12,7 @@ You can always add the standard OpenStreetMap as a basemap to your map canvas.
 
 There are two ways to add the OpenStreetMap as a basemap.
 
-1. Find in the `Browser` panel `XYZ Tiles`. Open the dropdown by clicking on it and seletc OpenStreetMap or another basemap.
+1. Find in the `Browser` panel `XYZ Tiles`. Open the dropdown by clicking on it and select OpenStreetMap or another basemap.
 2. `Layer` -> `Add Layer` -> `Add XYZ layer...` -> Select the OpenStreetMap or another basemap.
 
 __Add standard OpenStreetMap as Basemap__
