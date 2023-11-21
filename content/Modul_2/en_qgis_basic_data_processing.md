@@ -100,7 +100,7 @@ First download the plugin by following the steps:
 
 ```{figure} /fig/en_install_plugin.png
 ---
-height: 500px
+width: 250
 name: install_plugin
 ---
 Screenshot of how to install plugins
