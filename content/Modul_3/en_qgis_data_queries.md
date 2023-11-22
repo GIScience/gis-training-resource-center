@@ -1,5 +1,44 @@
 # Geodata Selection and Queries
 
+Geodata selection and non-spatial queries in QGIS involve the targeted extraction of specific information from spatial datasets. This process enables users to choose and analyze relevant geographic features based on defined criteria. Imagine you have a large dataset but you only want to work with specific data from that dataset. For example all villages in a district or all villages with a health station.
+
+In general, there are two ways to select features in QGIS. 
+
+1.	Based on the location of the feature 	-> Spatial Queries
+
+OR
+
+2.	 Based on criteria you can specify	-> Non-spatial Queries
+
+
+## Spatial queries
+
+Spatial queries are all methods you use to select features based on their location. Here we will start explaining the easier methods and then move to the more complex ones. 
+
+
+### Spatial queries: select by click
+
+1.	Select the layer you want to query from.
+2. Click on at ![](/fig/mActionSelectRectangle.png) the toolbar.
+3. No click on the features you want to select. To select multiple features press and hold `Shift` on your keyboard.The features you selected will turn yellow.
+4. *Optional*: Open the attribute table. Here the selected features will be marked in blue. To only see selected features click in the down left corner on the dropdown menu and select `Show selected Features`.
+5. 
+
+
+```{Note} 
+To deselect features click on in the toolbar.
+```
+
+
+This section demonstrate how to select an area or location by just a click and view its spatial features. Below is a map of Nigeria. Click on the icon number 1 which is the select feature and click on any part of the map that you want to select. See point number 2 which has already shown yellow as the selected area. Open the attribute table through the layer pannel, number 3 and click on number 4 to just view the feature of the selected part by clicking on selected features, then you arrive at number 6 which display only selected features.
+
+![](/fig/Select_by_click.png)
+
+See video of select by click
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Select_by_click.mp4"></video>
+
+
 ## Geodata queries
 
 Spatial queries allows you to select features in layers by their spatial relationships (intersect, contain, touch etc.) with features from another layer. In Qgis, this functionality is available via the selection by location and extract by location processing tools.
