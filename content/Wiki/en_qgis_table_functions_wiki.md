@@ -2,7 +2,10 @@
 ## Add field
 
 - Add a field to the attribute table.
-- __Attention:__ depending on the information to be entered in the attribute field, the correct data type must be selected.
+
+```{Attention}
+Depending on the information to be entered in the attribute field, the correct data type must be selected.
+```
 
 :::{dropdown} Example: Add a field for population density, data type: Float or Double or Real (floating point numbers)
 :open:
@@ -23,7 +26,9 @@
 - Calculate the attribute values for a field, e.g. based on the values of other fields.
 - In QGIS you can create a new field or update an existing field.
 
-- __Attention:__ Check if the data type of the field and your calculation match. For example, if you are calculating a ratio (e.g. density), the field should not be of type integer.
+```{Attention}
+Check if the data type of the field and your calculation match. For example, if you are calculating a ratio (e.g. density), the field should not be of type integer.
+```
 
 :::{dropdown} Example: Calculate the population density using the already existing fields Population and Area.
 :open:
@@ -41,7 +46,7 @@
 
 ## Statistics by Categories
 
-- Create aggregated statistics for categories
+- Create aggregated statistics for categories.
 - For which fields in the attribute table should statistics be calculated?
 - Which field in the attribute table contains the category?
 
