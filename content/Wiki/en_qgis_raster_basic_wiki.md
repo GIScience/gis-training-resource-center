@@ -25,6 +25,8 @@ It calculates the statistics for each vector feature on the basis of the raster 
 
 
 
+
+
 1.	Click `´Processing` -> `Toolbox` -> Search for `Zonal Statistics`
 2.	`Input Layer`: Select your vector layer
 3.	`Raster Layer`: Select your raster layer
