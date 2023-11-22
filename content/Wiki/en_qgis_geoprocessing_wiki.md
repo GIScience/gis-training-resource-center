@@ -65,9 +65,8 @@ name: Intersction concept
 
 Source: GISGeography.com
 ```
-:::{dropdown} Example: Extract the rail network of Germany
-:open:
+
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_intersect.mp4"></video>
-:::
+
 
 
