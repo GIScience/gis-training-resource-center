@@ -39,3 +39,35 @@ If you're dealing with really large "megabuffers" or if you can only choose buff
 ```{Attention}
 In QGIS, only the attributes selected for the dissolve operation will receive the accurate attribute, while the remaining attributes remain unaggregated; hence, in this example, the name is not accurately represented (e.g. the name for Western Europe might be mistakenly assigned as "Netherlands").
 ```
+
+## Intersection
+
+The ![](/fig/intersection_icon.png) `interstion` tool extracts the part of layers which overlap.
+
+1. Click `Vector` -> `Geoprocessing Tool` -> `Intersection` OR `Toolbox` -> Search for `Intersection`
+2. `Input layer`: select layer one 
+3. `Overlay layer`: select layer two
+4. `Intersection`: Speficiy where you want to save the results and give it a good name 
+
+```{Note}
+* Order of input layer and overlay layer does not matter here
+* Possibility to keep only certain fields of the output layer
+* ⚠️ Attention: Attribute values that refer to output areas (e.g. population) are no longer meaningful after the intersect
+
+```
+
+```{figure} /fig/Intersect_concept_2.png
+---
+width: 500px
+name: Intersction concept
+---
+`Intersection` operation between a two-features input layer and a single feature overlay layer (left) - resulting features are moved for clarity (right)
+
+Source: GISGeography.com
+```
+:::{dropdown} Example: Extract the rail network of Germany
+:open:
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_intersect.mp4"></video>
+:::
+
+
