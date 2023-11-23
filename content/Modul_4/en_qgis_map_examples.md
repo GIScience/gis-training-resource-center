@@ -9,12 +9,6 @@ In this section, we will present some well designed maps and discuss how to crea
 - [geo.msf.org maps](https://geo.msf.org/catalogue/DOCID-1877329211-4979?from=0&sort=_score&desc=true)
 - [reliefweb.int maps](https://reliefweb.int/updates?advanced-search=%28S1242%29_%28F12%29)
 
-```{figure} ../../fig/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png
----
-name:Somali Ethiopia Flood Areas 2023
-width:750 px
----
-```
 
 The map above shows the flood affected areas, as well as the important road networks in the Somali Region, Ethtopia, in November 2023. Maps such as these are crucial for humanitarian aid workers when planning relief or aid operations and need to be up to date. They display important settlements, and most importantly, the accessibility of roads and airstrips. 
 
@@ -37,5 +31,3 @@ The colour scheme of the roads makes an intuitive reading of the map possible, a
 
 ---
 
-```{figure} ../../fig/REACH_CAF_Susceptibilite_inondations_CF32_Juillet2023_A3_FR.png
-```
