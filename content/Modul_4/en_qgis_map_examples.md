@@ -9,7 +9,7 @@ In this section, we will present some well designed maps and discuss how to crea
 - [geo.msf.org maps](https://geo.msf.org/catalogue/DOCID-1877329211-4979?from=0&sort=_score&desc=true)
 - [reliefweb.int maps](https://reliefweb.int/updates?advanced-search=%28S1242%29_%28F12%29)
 
-```{figure} ../../fig/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.pdf"
+```{figure} ../../fig/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png
 ---
 name:Somali Ethiopia Flood Areas 2023
 width:750 px
@@ -20,17 +20,22 @@ The map above shows the flood affected areas, as well as the important road netw
 
 This is a thematic map with a clear purpose and the elements on the map are reduced to the most necessary elements relevant to the purpose of the map.
 
+>Insert links to the tutorial content/wiki
+
 - A shapefile for the flood affected areas was given a hashed fill. In QGIS, you can find this symbology 
 - A layer with the road network has been put above the layer with the flood-affected areas. The road symbology has been __categorized__ into three categories: Accessible road (green), partially accessible road (grey), and hard to reach road (red).
 - The topmost layer is a point-layer with information on unaccessible roads or bridges as well as the location of airstrips and which airstrips are accessible. The points have been symbolized with SVG-symbols. 
+- (The administrative boundaries of Ethiopia are set apart from the surrounding countries by making the polygon a clear white and the surrounding countries in a shade of grey. This can be achieved by copying the polygon of Ethiopia into a new layer, and changing the symbology respectively)
 
 ```{note} 
 The colour scheme of the roads makes an intuitive reading of the map possible, as red is associated with negative qualities, whereas green with positive qualities. It should be noted, however, that persons with colourblindness will have trouble reading the map.
 ```
 
-(- The administrative boundaries of Ethiopia are set apart from the surrounding countries by making the polygon a clear white and the surrounding countries in a shade of grey. This can be achieved by copying the polygon of Ethiopia into a new layer, and changing the symbology respectively)
 :::{dropdown} Context: Situation in Ethiopia
 
-Floodings can further exacerbate famines and destabilize...
-
 :::
+
+---
+
+```{figure} ../../fig/REACH_CAF_Susceptibilite_inondations_CF32_Juillet2023_A3_FR.png
+```
