@@ -1,9 +1,12 @@
-<mxfile host="app.diagrams.net" modified="2023-11-23T12:12:18.499Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="FAVMVBu0cawcWBjQ4u8l" version="22.1.3" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-23T12:18:46.671Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="cQm2G9Xuf5ovPMRVOTEO" version="22.1.3" type="github">
   <diagram id="1b6ddaa2-a5fa-0841-a249-ffc654eaa1b7" name="Page-1">
-    <mxGraphModel dx="2440" dy="3068.5" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="826" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="6913" dy="5480.5" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="826" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" style=";html=1;" />
         <mxCell id="1" style=";html=1;" parent="0" />
+        <mxCell id="cOcfP2GvxwVNDIPguZ_v-103" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=6;strokeColor=#F5333F;" vertex="1" parent="1">
+          <mxGeometry x="1665.63" y="140" width="2334.37" height="2840" as="geometry" />
+        </mxCell>
         <mxCell id="5d17adbdfd248a57-142" value="" style="line;strokeWidth=2;direction=south;html=1;rounded=0;shadow=0;dashed=0;fillColor=none;fontFamily=Lucida Console;fontSize=14;align=left;strokeColor=#CCCCCC;" parent="1" vertex="1">
           <mxGeometry x="181" y="470" width="10" height="250" as="geometry" />
         </mxCell>
@@ -334,7 +337,7 @@
         <mxCell id="cOcfP2GvxwVNDIPguZ_v-99" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=60;notch=60;rounded=1;strokeWidth=1;fillColor=#0D5B9D;fontSize=30;rotation=90;strokeColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
           <mxGeometry x="1760" y="150" width="280" height="280" as="geometry" />
         </mxCell>
-        <mxCell id="cOcfP2GvxwVNDIPguZ_v-100" value="STEP 2" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;dashed=0;fontSize=40;fontFamily=Helvetica;fontColor=#FFFFFF;fontStyle=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+        <mxCell id="cOcfP2GvxwVNDIPguZ_v-100" value="STEP 4" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;dashed=0;fontSize=40;fontFamily=Helvetica;fontColor=#FFFFFF;fontStyle=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
           <mxGeometry x="1760" y="241" width="280" height="60" as="geometry" />
         </mxCell>
         <mxCell id="cOcfP2GvxwVNDIPguZ_v-101" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 21px;&quot;&gt;Loading data into QGIS&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=4;fontStyle=1;fontSize=21;fontColor=#FFFFFF;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
