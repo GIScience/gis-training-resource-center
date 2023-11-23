@@ -10,6 +10,14 @@ In this section, we will present some well designed maps and discuss how to crea
 - [reliefweb.int maps](https://reliefweb.int/updates?advanced-search=%28S1242%29_%28F12%29)
 
 
+```{figure} ../../fig/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png
+---
+name: Flood affected Areas in Somali
+width: 750 px
+---
+Flood affected areas and roads in Somali Region, Ethiopia
+```
+
 The map above shows the flood affected areas, as well as the important road networks in the Somali Region, Ethtopia, in November 2023. Maps such as these are crucial for humanitarian aid workers when planning relief or aid operations and need to be up to date. They display important settlements, and most importantly, the accessibility of roads and airstrips. 
 
 This is a thematic map with a clear purpose and the elements on the map are reduced to the most necessary elements relevant to the purpose of the map.
