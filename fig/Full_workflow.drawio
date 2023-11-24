@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-11-24T10:14:35.950Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="nd85GzYR3w2N4G5dKcIQ" version="22.1.3" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-24T13:11:20.881Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="8PiQOeZspzy-TWnxBcJq" version="22.1.3" type="github">
   <diagram id="1b6ddaa2-a5fa-0841-a249-ffc654eaa1b7" name="Page-1">
-    <mxGraphModel dx="5293" dy="4940.5" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="826" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="4097" dy="3919.5" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="826" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" style=";html=1;" />
         <mxCell id="1" style=";html=1;" parent="0" />
@@ -71,10 +71,10 @@
           <mxGeometry x="2080" y="2403" width="2000" height="220" as="geometry" />
         </mxCell>
         <mxCell id="p65A_TA5HtvjUqE9cYRo-18" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.07;dx=5.67;notch=60;rounded=1;strokeWidth=1;fillColor=#0D5B9D;fontSize=30;rotation=90;strokeColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
-          <mxGeometry x="1785.625" y="2645.63" width="228.75" height="303.5" as="geometry" />
+          <mxGeometry x="1785.625" y="3520" width="228.75" height="303.5" as="geometry" />
         </mxCell>
         <mxCell id="p65A_TA5HtvjUqE9cYRo-19" value="" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;align=left;fontSize=14;spacingLeft=5;spacingTop=5;" parent="1" vertex="1">
-          <mxGeometry x="2080" y="2683" width="2000" height="220" as="geometry" />
+          <mxGeometry x="2080" y="3557.37" width="2000" height="220" as="geometry" />
         </mxCell>
         <mxCell id="p65A_TA5HtvjUqE9cYRo-22" value="STEP 2" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;dashed=0;fontSize=40;fontFamily=Helvetica;fontColor=#FFFFFF;fontStyle=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
           <mxGeometry x="1760" y="530" width="280" height="60" as="geometry" />
@@ -101,7 +101,7 @@
           <mxGeometry x="1760" y="2483" width="280" height="60" as="geometry" />
         </mxCell>
         <mxCell id="p65A_TA5HtvjUqE9cYRo-30" value="STEP 10" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;dashed=0;fontSize=40;fontFamily=Helvetica;fontColor=#FFFFFF;fontStyle=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
-          <mxGeometry x="1760" y="2763" width="280" height="60" as="geometry" />
+          <mxGeometry x="1760" y="3637.37" width="280" height="60" as="geometry" />
         </mxCell>
         <mxCell id="p65A_TA5HtvjUqE9cYRo-33" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 40px;&quot;&gt;Input&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=40;fillColor=#fff2cc;strokeColor=#d6b656;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
           <mxGeometry x="2060" y="-940" width="402" height="120" as="geometry" />
@@ -140,7 +140,7 @@
           <mxGeometry x="1770" y="2553" width="260" height="70" as="geometry" />
         </mxCell>
         <mxCell id="cOcfP2GvxwVNDIPguZ_v-10" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 21px;&quot;&gt;Loading data into QGIS&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=4;fontStyle=1;fontSize=21;fontColor=#FFFFFF;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
-          <mxGeometry x="1770" y="2833" width="260" height="70" as="geometry" />
+          <mxGeometry x="1770" y="3707.37" width="260" height="70" as="geometry" />
         </mxCell>
         <mxCell id="cOcfP2GvxwVNDIPguZ_v-11" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 21px;&quot;&gt;&lt;b&gt;Calculate IPC Index per District&lt;/b&gt;&lt;span style=&quot;font-size:12.0pt;&lt;br/&gt;font-family:&amp;quot;Calibri&amp;quot;,sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:&lt;br/&gt;Calibri;mso-fareast-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;&lt;br/&gt;mso-bidi-font-family:&amp;quot;Times New Roman&amp;quot;;mso-bidi-theme-font:minor-bidi;&lt;br/&gt;mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA&quot; lang=&quot;EN-US&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=4;fontStyle=1;fontSize=21;fontColor=#FFFFFF;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
           <mxGeometry x="1770" y="1711" width="260" height="70" as="geometry" />
@@ -214,28 +214,28 @@
         <mxCell id="cOcfP2GvxwVNDIPguZ_v-34" value="In this step, we calculate the mean IPC-Index for the districts based on the&lt;br&gt;intersection polygons from the previous step.&lt;br&gt;&lt;ol&gt;&lt;li&gt;Click “Processing” -&amp;gt; “Toolbox”-&amp;gt; Search for “&lt;span style=&quot;font-size: 10.5pt; line-height: 107%; font-family: Helvetica, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;&quot;&gt;Join attribute by location (summary)&lt;/span&gt;”&lt;/li&gt;&lt;li&gt;“Input Layer”: Select your “district_pop_som” layer&lt;/li&gt;&lt;li&gt;“Input Layer 2”: Select your layer “Intersection_population_weighted_percentage&lt;br&gt;Polygons”&amp;nbsp;&lt;/li&gt;&lt;li&gt;“Geometric predicate”: Select “Intersection”&lt;/li&gt;&lt;li&gt;“Field to summarise”: Select “Index_per_IPCPolygon_ML1”&lt;/li&gt;&lt;li&gt;“Summaries to calculate“: Chose only the option “mean”&lt;p class=&quot;MsoNormal&quot;&gt;&lt;/p&gt;&amp;nbsp;&lt;br&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;&lt;br&gt;&lt;br&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span lang=&quot;EN-US&quot;&gt;&lt;/span&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#d5e8d4;strokeColor=#82b366;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" parent="1" vertex="1">
           <mxGeometry x="3460" y="1561" width="620" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="cOcfP2GvxwVNDIPguZ_v-35" value="Input data:&lt;br&gt;&lt;ul&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;District Boarders (district_pop_som)&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;SPI Forecast&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" parent="1" vertex="1">
+        <mxCell id="cOcfP2GvxwVNDIPguZ_v-35" value="Input data:&lt;br&gt;&lt;ul&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;IPC_Index_district ML1&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;IPC_Index_district ML 2&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" parent="1" vertex="1">
           <mxGeometry x="2080" y="1841" width="400" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="cOcfP2GvxwVNDIPguZ_v-36" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#ffe6cc;strokeColor=#d79b00;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" parent="1" vertex="1">
+        <mxCell id="cOcfP2GvxwVNDIPguZ_v-36" value="The result is a layer of the districts with both ML1 and ML 2 IPC-Index columns.&lt;br&gt;&lt;br&gt;Output data:&lt;br&gt;&lt;ul&gt;&lt;li&gt;IPC_index_district_ML2_ML2&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#ffe6cc;strokeColor=#d79b00;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" parent="1" vertex="1">
           <mxGeometry x="2540" y="1841" width="400" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="cOcfP2GvxwVNDIPguZ_v-37" value="QGIS Tool: Zonal Statistics" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#f8cecc;strokeColor=#b85450;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" parent="1" vertex="1">
+        <mxCell id="cOcfP2GvxwVNDIPguZ_v-37" value="QGIS Tool:Join attributes by field value&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&amp;nbsp;&lt;br&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span lang=&quot;EN-US&quot;&gt;&lt;/span&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#f8cecc;strokeColor=#b85450;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" parent="1" vertex="1">
           <mxGeometry x="3000" y="1841" width="400" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="cOcfP2GvxwVNDIPguZ_v-38" value="The mean value of the SPI12 raster data is calculated for each district and stored&lt;br&gt;in a new column (“SPI12_mean”)." style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#d5e8d4;strokeColor=#82b366;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" parent="1" vertex="1">
+        <mxCell id="cOcfP2GvxwVNDIPguZ_v-38" value="The&lt;br/&gt;Index based on the mid-term IPC projection (ML1) is added to the file with the&lt;br/&gt;short-term projection (ML”) based IPC Index by matching district names.&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#d5e8d4;strokeColor=#82b366;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" parent="1" vertex="1">
           <mxGeometry x="3460" y="1841" width="620" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="cOcfP2GvxwVNDIPguZ_v-39" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" parent="1" vertex="1">
+        <mxCell id="cOcfP2GvxwVNDIPguZ_v-39" value="Input data:&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;ul style=&quot;border-color: var(--border-color);&quot;&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;District Boarders (district_pop_som)&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;SPI Forecast&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" parent="1" vertex="1">
           <mxGeometry x="2080" y="2122" width="400" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="cOcfP2GvxwVNDIPguZ_v-40" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#ffe6cc;strokeColor=#d79b00;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" parent="1" vertex="1">
+        <mxCell id="cOcfP2GvxwVNDIPguZ_v-40" value="The result will be the districts with the mena SPI-12 value in the column “SPI12_mean”.&lt;br&gt;&lt;br&gt;Output data:&lt;br&gt;&lt;ul&gt;&lt;li&gt;SPI12_districts&lt;/li&gt;&lt;/ul&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span lang=&quot;EN-US&quot;&gt;&lt;/span&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#ffe6cc;strokeColor=#d79b00;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" parent="1" vertex="1">
           <mxGeometry x="2540" y="2122" width="400" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="cOcfP2GvxwVNDIPguZ_v-41" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#f8cecc;strokeColor=#b85450;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" parent="1" vertex="1">
+        <mxCell id="cOcfP2GvxwVNDIPguZ_v-41" value="QGIS Tool: Zonal Statistics" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#f8cecc;strokeColor=#b85450;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" parent="1" vertex="1">
           <mxGeometry x="3000" y="2122" width="400" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="cOcfP2GvxwVNDIPguZ_v-42" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#d5e8d4;strokeColor=#82b366;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" parent="1" vertex="1">
+        <mxCell id="cOcfP2GvxwVNDIPguZ_v-42" value="The mean value of the SPI12 raster data is calculated for each district and stored&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;in a new column (“SPI12_mean”).&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;ol style=&quot;border-color: var(--border-color);&quot;&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;&quot;Click “Processing “-&amp;gt; “Toolbox” -&amp;gt; Search for “Zonal Statistics”&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;“Input Layer”:&amp;nbsp;district_pop_som&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); text-align: justify; background-color: initial;&quot;&gt;Raster Layer”:&amp;nbsp;&lt;/span&gt;SPI Forecast&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;&quot;Output column prefix&quot;: Use&amp;nbsp; &quot;SPI12_&quot;&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Statistics to calculate: “Mean”&lt;/li&gt;&lt;/ol&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#d5e8d4;strokeColor=#82b366;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" parent="1" vertex="1">
           <mxGeometry x="3460" y="2122" width="620" height="220" as="geometry" />
         </mxCell>
         <mxCell id="cOcfP2GvxwVNDIPguZ_v-43" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" parent="1" vertex="1">
@@ -251,16 +251,16 @@
           <mxGeometry x="3460" y="2402" width="620" height="220" as="geometry" />
         </mxCell>
         <mxCell id="cOcfP2GvxwVNDIPguZ_v-47" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" parent="1" vertex="1">
-          <mxGeometry x="2080" y="2683" width="400" height="220" as="geometry" />
+          <mxGeometry x="2080" y="3557.37" width="400" height="220" as="geometry" />
         </mxCell>
         <mxCell id="cOcfP2GvxwVNDIPguZ_v-48" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#ffe6cc;strokeColor=#d79b00;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" parent="1" vertex="1">
-          <mxGeometry x="2540" y="2683" width="400" height="220" as="geometry" />
+          <mxGeometry x="2540" y="3557.37" width="400" height="220" as="geometry" />
         </mxCell>
         <mxCell id="cOcfP2GvxwVNDIPguZ_v-49" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#f8cecc;strokeColor=#b85450;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" parent="1" vertex="1">
-          <mxGeometry x="3000" y="2683" width="400" height="220" as="geometry" />
+          <mxGeometry x="3000" y="3557.37" width="400" height="220" as="geometry" />
         </mxCell>
         <mxCell id="cOcfP2GvxwVNDIPguZ_v-50" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#d5e8d4;strokeColor=#82b366;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" parent="1" vertex="1">
-          <mxGeometry x="3460" y="2683" width="620" height="220" as="geometry" />
+          <mxGeometry x="3460" y="3557.37" width="620" height="220" as="geometry" />
         </mxCell>
         <mxCell id="cOcfP2GvxwVNDIPguZ_v-75" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=60;notch=0;rounded=1;strokeWidth=1;fillColor=#0D5B9D;fontSize=30;rotation=90;strokeColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
           <mxGeometry x="1760" y="-690" width="280" height="280" as="geometry" />
@@ -417,6 +417,78 @@
         </mxCell>
         <mxCell id="Vji4ugp31_4n16cxdv0u-3" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/material-core/22/warning-128.png" vertex="1" parent="Vji4ugp31_4n16cxdv0u-1">
           <mxGeometry x="10" y="15" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Vji4ugp31_4n16cxdv0u-4" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=60;notch=60;rounded=1;strokeWidth=1;fillColor=#0D5B9D;fontSize=30;rotation=90;strokeColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="1760" y="2691" width="280" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="Vji4ugp31_4n16cxdv0u-5" value="" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;align=left;fontSize=14;spacingLeft=5;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="2080" y="2691" width="2000" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Vji4ugp31_4n16cxdv0u-6" value="STEP 9" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;dashed=0;fontSize=40;fontFamily=Helvetica;fontColor=#FFFFFF;fontStyle=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="1760" y="2771" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Vji4ugp31_4n16cxdv0u-7" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 21px;&quot;&gt;Loading data into QGIS&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=4;fontStyle=1;fontSize=21;fontColor=#FFFFFF;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="1770" y="2841" width="260" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Vji4ugp31_4n16cxdv0u-8" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="2080" y="2690" width="400" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Vji4ugp31_4n16cxdv0u-9" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#ffe6cc;strokeColor=#d79b00;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="2540" y="2690" width="400" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Vji4ugp31_4n16cxdv0u-10" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#f8cecc;strokeColor=#b85450;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="3000" y="2690" width="400" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Vji4ugp31_4n16cxdv0u-11" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#d5e8d4;strokeColor=#82b366;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="3460" y="2690" width="620" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Vji4ugp31_4n16cxdv0u-12" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=60;notch=60;rounded=1;strokeWidth=1;fillColor=#0D5B9D;fontSize=30;rotation=90;strokeColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="1760" y="2981" width="280" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="Vji4ugp31_4n16cxdv0u-13" value="" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;align=left;fontSize=14;spacingLeft=5;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="2080" y="2981" width="2000" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Vji4ugp31_4n16cxdv0u-14" value="STEP 9" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;dashed=0;fontSize=40;fontFamily=Helvetica;fontColor=#FFFFFF;fontStyle=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="1760" y="3061" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Vji4ugp31_4n16cxdv0u-15" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 21px;&quot;&gt;Loading data into QGIS&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=4;fontStyle=1;fontSize=21;fontColor=#FFFFFF;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="1770" y="3131" width="260" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Vji4ugp31_4n16cxdv0u-16" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="2080" y="2980" width="400" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Vji4ugp31_4n16cxdv0u-17" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#ffe6cc;strokeColor=#d79b00;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="2540" y="2980" width="400" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Vji4ugp31_4n16cxdv0u-18" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#f8cecc;strokeColor=#b85450;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="3000" y="2980" width="400" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Vji4ugp31_4n16cxdv0u-19" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#d5e8d4;strokeColor=#82b366;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="3460" y="2980" width="620" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Vji4ugp31_4n16cxdv0u-20" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=60;notch=60;rounded=1;strokeWidth=1;fillColor=#0D5B9D;fontSize=30;rotation=90;strokeColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="1760" y="3271" width="280" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="Vji4ugp31_4n16cxdv0u-21" value="" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;align=left;fontSize=14;spacingLeft=5;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="2080" y="3271" width="2000" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Vji4ugp31_4n16cxdv0u-22" value="STEP 9" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;dashed=0;fontSize=40;fontFamily=Helvetica;fontColor=#FFFFFF;fontStyle=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="1760" y="3351" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Vji4ugp31_4n16cxdv0u-23" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 21px;&quot;&gt;Loading data into QGIS&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=4;fontStyle=1;fontSize=21;fontColor=#FFFFFF;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="1770" y="3421" width="260" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Vji4ugp31_4n16cxdv0u-24" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="2080" y="3270" width="400" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Vji4ugp31_4n16cxdv0u-25" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#ffe6cc;strokeColor=#d79b00;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="2540" y="3270" width="400" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Vji4ugp31_4n16cxdv0u-26" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#f8cecc;strokeColor=#b85450;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="3000" y="3270" width="400" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Vji4ugp31_4n16cxdv0u-27" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;fillColor=#d5e8d4;strokeColor=#82b366;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="3460" y="3270" width="620" height="220" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
