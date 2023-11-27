@@ -84,7 +84,6 @@ ICPAC will provide the SPI-12 forecasts on their FTP (File Transfer Protocol). T
 
 
 
-
 HOST: 197.254.13.228
 
 USER: ftpuser
@@ -109,14 +108,28 @@ align: center
 ---
 ```
 
-Once downloaded the ZIP folder, right click on it and unzip it. You will see various datasets. We are interested in the ML1 and ML2 projections. The filename is composed of "SO" for Somalia, year and month of the report month of the respective projection
+Once downloaded the ZIP folder, right click on it and unzip it. You will see various datasets. We are interested in the ML1 and ML2 projections. The filename is composed of "SO" for Somalia, year and month of the report month of the respective projection and _ML1 or _ML2 forn the respective projection. This is what the the dataname for ML1 and ML2 projections published in August would look like:
 
-
-"SO_202308_ML1.shp"
-
+"SO_202308_ML1.shp",
 "SO_202308_ML2.shp"
 
+You can then copy the respective shapefiles to you folder 
 
+.../Input_Trigger_model/Variable_data/IPC_ML1 and
+.../Input_Trigger_model/Variable_data/IPC_ML2
+
+Remember that you need to copy over all components that the respective [shapefile](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_types_wiki.html#vector-data) is composed of. Most probably it has 5 components: .cpg, .dbf, .prj, .shp, and .shx.
+
+
+```{figure} /fig/IPC_zip.PNG
+---
+height: 100px
+name: Content of .zip file downloaded containing ML1 and ML2 IPC projections
+align: center
+---
+```
+
+```{tip}
 On the [main FEWSNET page](https://fews.net/) you can also sign up for information on latest updates via email. For this option scroll down to the end of the page and click on "Sign up for Emails". You will then get the option to choose updates only for Somalia.
 
 ```{figure} /fig/IPC_Newsletter.png
@@ -127,4 +140,15 @@ align: center
 ---
 ```
 
+```
 
+
+
+
+# Visualization
+
+In order to easily visualize the outout of the trigger analysis we provide you with a [map template](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html#map-templates) that you can use as a base for your visualization.
+
+Check [here](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html#map-templates) how to open templates and how to use them in QGIS.
+
+You can also adapt the template to your needs and preferences. You can find help [here](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html#print-layout).
