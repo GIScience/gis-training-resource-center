@@ -128,7 +128,7 @@ __Tool:__  [`Field Calculator`](https://giscience.github.io/gis-training-resourc
 2. Check “Create new field"
 3. `Output field name`: Name the new column “pop_sum_weighted”
 4. `Result field type`: Decimal
-5. Add the code block from Input into the "Expression" field
+5. Add the code block from Input into the `Expression` field
 Click `ok`
 ``````{list-table}
 :header-rows: 1
@@ -195,14 +195,14 @@ __Purpose:__
 You need to perform this step two times. One time for ML 1 and a second time for ML 2.
 ```
 
-__Tool:__
+__Tool:__[`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field)
 
 1. Right-click on Intersection_population Polygons layer -> “Attribute Table”-> click on  [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field) ![](/fig/mActionCalculateField.png)to open the field calculator
 2. Check “Create new field"
 3. “Output field name”: Name the new column “Index_per_IPCPolygon_ML1” (or "Index_per_IPCPolygon_ML2”)
 4. “Result field type”: Decimal
-5. Add the code block from Input into the "Expression" field
-6. Click "ok"
+5. Add the code: `"pop_sum_weighted"/"districtpo"` into the `Expression` field
+6. Click `ok`
 7. Save the new column by clicking on ![](/fig/mActionSaveEdits.png) in the attribute table
 
 ### Step 9.: Calculate IPC Index per District
@@ -219,7 +219,7 @@ __Purpose:__
 __Tool:__
 
 ### Step 10.: Join ML1 and ML2 I
-```{figure} /fig/
+```{figure} /fig/Drought_EAP_Worklow_Step_10_1.png
 ---
 width: 1000px
 name: 
@@ -229,10 +229,18 @@ align: center
 
 __Purpose:__ 
 
-__Tool:__
+__Tool:__ [`Join attributes by field value`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html#join-attributes-by-field-value)
+
+1. `Processing` -> `Toolbox`-> Search for [`Join attributes by field value`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html#join-attributes-by-field-value)
+2. `Input Layer`: Select your “IPC_Index_district” layer for ML 1
+3. `Table field`: Select “admin2Name”
+4. `Input Layer 2`: Select your “IPC_Index_district” layer for ML 2
+5. `Table field 2`: Select “admin2Name”
+6. `Layer 2 field to copy`: Click on the three points and  select “Index_per_IPCPolygon_ML2_mean”
+7. `Join type`: Select the option “Take attributes of the first matching feature only (one-to-one)
 
 ### Step 11.: Calculation of SPI12 Mean per District
-```{figure} /fig/
+```{figure} /fig/Drought_EAP_Worklow_Step_11_1.png
 ---
 width: 1000px
 name: 
@@ -242,10 +250,16 @@ align: center
 
 __Purpose:__ 
 
-__Tool:__
+__Tool:__ [`Zonal Statistics`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics)
+
+1. Click `Processing`-> `Toolbox` -> Search for  [`Zonal Statistics`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics)
+2. `Input Layer`: district_pop_som
+3. `Raster Layer`: SPI Forecast
+4. `Output column prefix`: Use  "SPI12_"
+5. `Statistics to calculate`: “Mean”
 
 ### Step 12.: Join SPI12 Mean to the IPC Index
-```{figure} /fig/
+```{figure} /fig/Drought_EAP_Worklow_Step_12_1.png
 ---
 width: 1000px
 name: 
@@ -255,7 +269,15 @@ align: center
 
 __Purpose:__ 
 
-__Tool:__
+__Tool:__[`Join attributes by field value`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html#join-attributes-by-field-value)
+
+
+1. Click `Processing` -> `Toolbox`-> Search for [`Join attributes by field value`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html#join-attributes-by-field-value)
+2. `Input Layer`´`: Select your “IPC_index_district_ML2_ML2”
+3. `Table field`: Select “admin2Name”
+4. `Input Layer 2`: Select your “SPI12_districts”
+5. `Table field 2`: Select “admin2Name”
+6. `Join type`: Select the option “Take attributes of the first matching feature only (one-to-one)
 
 ### Step 13.: Evaluate Trigger Activation 
 ```{figure} /fig/
@@ -269,6 +291,30 @@ align: center
 __Purpose:__ 
 
 __Tool:__
+
+
+1. Right-click on Intersection_population Polygons layer -> “Attribute Table”-> click on  [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field) ![](/fig/mActionCalculateField.png) to open the field calculator
+2. Check `Create new field`
+3. `Output field name`: Name the new column “Trigger_activation”
+4. `Result field type`: Text
+5. Add the code below into the `Expression` field
+``````{list-table}
+:header-rows: 1
+:widths: 15
+
+* - Code
+* - ```md
+    `CASE
+    WHEN "Index_per_IPCPolygon_ML1_mean" >0.7 AND "Index_per_IPCPolygon_ML2_mean" > 0.7
+    AND
+    "SPI12_mean" < -1
+    THEN 'yes'
+    ELSE 'no'
+    END`
+    ```
+``````
+6. Click "ok"
+7. Save the new column by clicking on ![](/fig/mActionSaveEdits.png) in the attribute table
 
 ### Step 14.: Visualisation of results
 ```{figure} /fig/
