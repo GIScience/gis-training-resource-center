@@ -12,7 +12,7 @@ It is good practice to use a __standard folder structure__ for QGIS projects in 
 
 2. Open QGIS and create a new project. Click on `Project` -> `New Project`
 
-__Create a new QGIS Project__
+### Create a new QGIS Project
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_new_project.mp4"></video>
 
@@ -28,7 +28,7 @@ __Save Project__
 
 4. Check the Coordinate Reference System (CRS)/EPSG code of the project to the CRS/EPSG you want to use. For more information check the wiki article on [Projection](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html#how-to-check-epsg-code-crs-of-your-qgis-project-and-change-it).
 
-__Check and change CRS/EPSG__
+### Check and change CRS/EPSG
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_change_project_CRS.mp4"></video>
 
