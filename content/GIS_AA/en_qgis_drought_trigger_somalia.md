@@ -13,15 +13,16 @@ The chapter Workflow Automated explains the process and how it is intended in pr
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_1_1.png
 ---
+width: 1000px
 name: 
 align: center
 ---
 ```
 
 
-Purpose: 
+__Purpose:__ 
 
-Tool:
+__Tool:__
 
 
 
@@ -32,10 +33,3 @@ Tool:
 
 
 # Trigger Workflow Automated 
-
-#```{figure} /fig/Full_workflow.drawio.svg
-#---
-#name: 
-#align: center
-#---
-#```
