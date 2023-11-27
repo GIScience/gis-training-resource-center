@@ -1,23 +1,45 @@
 
-## Trigger Statement
+# Trigger Statement
 
 When ICPAC issues a SPI-12 forecast of less than -1 for a district AND the current FEWSNET food insecurity projection reaches at least 0.7 in its 
 derived population weighted index in the same district, then we will act in this district. We expect the lead-time to be 90 days.
 
 
+
 ##  Trigger Input Data
 
-The drought trigger mechanism is based on two datasets: The SPI-12 forecast produced by ICPAC and the Food Insecurity projection produced by FEWSNET. 
-The SPI-12 is used to capture hazard forecast while the Food Insecurity Projection captures the dynamic vulnerability. 
-In this way upcoming drought events (SPI) that most probably will lead to food insecurity (IPC) will be captur
+For the trigger mechanism to work properly we currently use different datasets: data that we assume to be fixed in the near term, and variable data which describe the datasets that will be checked for triggering on a monthly base. 
+
+## Fixed Data
+
+By fixed data we mean datasets that are needed for the trigger to work, that will most probably not change in the near term. In the long term these datasets can be adapted easily.
+
+| Dataset| Source | Description |
+| ----- | --- | --- |
+|Adminstrative bounderies | [HDX](https://data.humdata.org/dataset/cod-ab-som?) |The administrative bounderies on level 0-2 for Somalia and Somaliland can be accessed via HDX. For this trigger mechanism we provide the administrative bounderies on level 2 (district level) as a shapefile. We have added the population number for each district derived from Worldpop.|
+|Population Counts| [Worldpop](https://hub.worldpop.org/doi/10.5258/SOTON/WP00534) |The worldpop dataset in .geotif rasterformat provides population estimates per hectar for the year 2020 |
+
+
+
+## Variable Data
+
+
+The drought trigger mechanism is based on two variable datasets updated monthly: The SPI-12 forecast produced by ICPAC and the Food Insecurity projection produced by FEWSNET. The SPI-12 is used to capture hazard forecasts while the Food Insecurity Projection captures the dynamic vulnerability. 
+In this way upcoming drought events (SPI) that most probably will lead to food insecurity (IPC) will be captured.
+
+| Dataset| Source | Description |
+| ----- | --- | --- |
+|SPI-12 forecast| [ICPAC](https://www.icpac.net/) |meteorological drought indicator to monitor precipitation anomalies over 12-month accumulation periods|
+|IPC Projections| [FEWSNET](https://fews.net/) | five-phase scale providing common standards for classifying the severity of acute or anticipated acute food insecurity. |
+
+
 
 
 
 ### What is the Standarized Precipitation Index (SPI-12)?
 
 The Standardized Precipitation Index (SPI) is a widely used index to characterize meteorological drought.
-The Standarized Precipitation Index (SPI-12) compares the total rainfall received at a particular location during the 
-last 12 months with the long-term rainfall mean (42 years) for the same period of time at that location.
+The Standarized Precipitation Index (SPI-12) compares the total rainfall received at a particular location during the last 12 months with the long-term rainfall mean (42 years) for the same period of time at that location.
 
 
 
@@ -54,21 +76,15 @@ $ IPC\ Index =  Weights \times \frac{District\ Pop\ per\ IPC\ Phase}{Total\ Dist
 
 Where the weights are defined as:
 
-IPC 1 = 0
-
-IPC 2 = 0
-
-IPC 3 = 1 
-
-IPC 4 = 3
-
+IPC 1 = 0\
+IPC 2 = 0\
+IPC 3 = 1\
+IPC 4 = 3\
 IPC 4 = 6 
 
 
 
 The IPC Index represents low-population districts equal to high-population districts. No underrepresentation of high food insecurity of small districts occurs.
-
-
 
 
 
@@ -84,13 +100,6 @@ ICPAC will provide the SPI-12 forecasts on their FTP (File Transfer Protocol). T
 
 
 
-HOST: 197.254.13.228
-
-USER: ftpuser
-
-PASS: ftp#234
-
-PORT: leave blank
 
 
 
@@ -145,7 +154,8 @@ align: center
 
 
 
-# Visualization
+
+# Making print map
 
 In order to easily visualize the outout of the trigger analysis we provide you with a [map template](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html#map-templates) that you can use as a base for your visualization.
 
