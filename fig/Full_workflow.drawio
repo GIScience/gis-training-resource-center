@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-11-27T10:31:31.733Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="4apX5aPFC5I3p9So-EVX" version="22.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-27T14:55:48.519Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="IKL9uePOcKFue5ukOQuO" version="22.1.4" type="github">
   <diagram id="1b6ddaa2-a5fa-0841-a249-ffc654eaa1b7" name="Page-1">
-    <mxGraphModel dx="13827" dy="9540.5" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="826" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="7502" dy="5407.5" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="826" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" style=";html=1;" />
         <mxCell id="1" style=";html=1;" parent="0" />
@@ -139,7 +139,7 @@
         <mxCell id="cOcfP2GvxwVNDIPguZ_v-9" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 20px;&quot;&gt;&lt;b style=&quot;font-size: 20px;&quot;&gt;Join SPI12 Mean to the IPC Index&lt;/b&gt;&lt;span style=&quot;font-size: 20px;&quot; lang=&quot;EN-US&quot;&gt;&lt;/span&gt;&lt;br style=&quot;font-size: 20px;&quot;&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=4;fontStyle=1;fontSize=20;fontColor=#FFFFFF;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;strokeColor=none;" parent="1" vertex="1">
           <mxGeometry x="1770" y="2553" width="260" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="cOcfP2GvxwVNDIPguZ_v-10" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 20px;&quot;&gt;Loading data into QGIS&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=4;fontStyle=1;fontSize=20;fontColor=#FFFFFF;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;strokeColor=none;" parent="1" vertex="1">
+        <mxCell id="cOcfP2GvxwVNDIPguZ_v-10" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 20px;&quot;&gt;Exporting Map&amp;nbsp;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=4;fontStyle=1;fontSize=20;fontColor=#FFFFFF;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;strokeColor=none;" parent="1" vertex="1">
           <mxGeometry x="1770" y="3707.37" width="260" height="70" as="geometry" />
         </mxCell>
         <mxCell id="cOcfP2GvxwVNDIPguZ_v-11" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 20px;&quot;&gt;&lt;b style=&quot;font-size: 20px;&quot;&gt;Calculate IPC Index per District&lt;/b&gt;&lt;span style=&quot;font-size: 20px;&quot; lang=&quot;EN-US&quot;&gt;&lt;/span&gt;&lt;br style=&quot;font-size: 20px;&quot;&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=4;fontStyle=1;fontSize=20;fontColor=#FFFFFF;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;strokeColor=none;" parent="1" vertex="1">
@@ -292,7 +292,7 @@
         <mxCell id="cOcfP2GvxwVNDIPguZ_v-85" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 20px;&quot;&gt;Setting up folder&lt;br style=&quot;font-size: 20px;&quot;&gt;structure&amp;nbsp;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=4;fontStyle=1;fontSize=20;fontColor=#FFFFFF;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;strokeColor=none;" parent="1" vertex="1">
           <mxGeometry x="1770" y="-590" width="260" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="cOcfP2GvxwVNDIPguZ_v-86" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 20px;&quot;&gt;Donwload of the forecast data&lt;br style=&quot;font-size: 20px;&quot;&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=4;fontStyle=1;fontSize=20;fontColor=#FFFFFF;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;strokeColor=none;" parent="1" vertex="1">
+        <mxCell id="cOcfP2GvxwVNDIPguZ_v-86" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 20px;&quot;&gt;Download of the forecast data&lt;br style=&quot;font-size: 20px;&quot;&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=4;fontStyle=1;fontSize=20;fontColor=#FFFFFF;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;strokeColor=none;" parent="1" vertex="1">
           <mxGeometry x="1770" y="-261" width="260" height="70" as="geometry" />
         </mxCell>
         <mxCell id="cOcfP2GvxwVNDIPguZ_v-87" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 20px;&quot;&gt;Loading data into QGIS&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=4;fontStyle=1;fontSize=20;fontColor=#FFFFFF;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;strokeColor=none;" parent="1" vertex="1">
@@ -495,6 +495,123 @@
         </mxCell>
         <mxCell id="Vji4ugp31_4n16cxdv0u-30" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/png,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAOxAAADsQH1g+1JAAAAB3RJTUUH4AIOASch1+FdfQAAA35JREFUSMe1lV1sU2UYx3/vOW/PaTu6dutO52SsIgGiFBJxQVlAEogmKCS9IBGNoN5qiBou9MILvPHCGE2M0V2p8cJovFDiAiaKmS4aNNkGc6BbW6YwnNB2du363XNeL9A57NZ9RJ+7N/k/z/88z/O+vwP/cwiA5145sic97fskk5V+pZRYbbG1oZp97LHElQ3riq+53QNvzhkcPv50ptXa7m8LttDhpAFnhaU1prQgqVSaamGIN14cVUoTu7yub76TALN56dt0RysuXUe3NQ48+BCOszwTTdPoO3Ualy5ps9oYHnTd+HCbHuCGwUIzGRoaIplMNixuWRbd3d0Lz14oF4BcLDkSiVCr1RoaSCmX7HBRRTweJ51ON0wOBoNEIpHVGXR2dmJZVsNk0zRX30EymSSTyTRMDgQCBAKBubNPVNizbQuVyiiGUV3YQDk2sVhsrsBSEYvFUI4NOmyu/sZdBw5x6ae11MTIrhMn9mk3GSihkdN8DMWnVvQKHL0Z6+owt0z0cdm+jHfrfkJdj+7v3vrDZ3UdFKRv5Thwamwb/xJzTZZw/lPOv3uWP3YcdChUfpT/BW82XOgj5Joh0FHi1wk3eqmE//w7sb298RdkPZwUATuDvkwiaYUZwskRREsBhM7MtIG3qcy6p1pO0rvAkoVy8JsaPTt7mI89u1KmXC7XGUy99Tw+d562jirxn5uQmo61w8G32T2z6DX1eDzYwJlzEwCsb28hEg7R3Nx8k640Nky1eB2jo0A2a1AuSnJVxT1HWudhcJGo2YpUtkAqW2C2VKkXKEXm5NsYTQUCQcXkLwa6JhlsCiMkSxssFdmvPkbOTuK1ikxNmuC4yBl+Rtbc9i+QL7Y8ITCkjiF1pF4vu/7FR2Dm8Xo0ktckAo3EnQcXRkVrS9VJpdKa3+9Hx6FsOnhMnYd3b/lnZNUKpb/omsvlcI6+hD09xsVTvehCMu3rJKZ8tAer9b/Mc+MPjPd+cPvG7KxE1zTu7trYEMUzmQz3791HIpEgdfUKbYN9nGnfhCsgeebxBOFbSyB40mMMvCcACuXdhwW8D7iWM//PTzcR7nqZ/v5+8vlLHH1ilFDIni+54DacnUJ8m5MAXnPgw2Lxvu+VpraDWnLxg4Ptx679fvbeTObi8LPHx153u5Wt/t6dElnT1L8WYqC0ajREo9FXo9HoI8vR/gnOTUKSaMiJdQAAAABJRU5ErkJggg==;direction=south;spacing=5;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="3621.5" y="2880" width="17" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-1" value="" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;align=left;fontSize=30;spacingLeft=5;spacingTop=5;spacingRight=5;spacing=5;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-3610" y="960" width="1890" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-2" value="Input data:&lt;p style=&quot;border-color: var(--border-color); font-size: 30px;&quot; class=&quot;MsoNormal&quot;&gt;&lt;/p&gt;&lt;ul style=&quot;border-color: var(--border-color); font-size: 30px;&quot;&gt;&lt;li style=&quot;border-color: var(--border-color); font-size: 30px;&quot;&gt;ML 1 and ML 2&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color); font-size: 30px;&quot;&gt;District Boarders (district_pop_som)&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=30;fillColor=#fff2cc;strokeColor=#d6b656;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;spacingRight=5;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="-3610" y="960" width="400" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-3" value="The results are polygons that share both the borders and the attributes of both input layers.&lt;br style=&quot;font-size: 30px;&quot;&gt;&lt;br style=&quot;font-size: 30px;&quot;&gt;Output data;&lt;br style=&quot;font-size: 30px;&quot;&gt;&lt;ul style=&quot;font-size: 30px;&quot;&gt;&lt;li style=&quot;font-size: 30px;&quot;&gt;Intersection Polygons&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=30;fillColor=#ffe6cc;strokeColor=#d79b00;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;spacingRight=5;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="-3150" y="960" width="400" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-4" value="QGIS Tool: Intersection" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=30;fillColor=#f8cecc;strokeColor=#b85450;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;spacingRight=5;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="-2690" y="960" width="300" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-5" value="In this step, the polygons delivered in the IPC classification are intersected with the polygons of the administrative&lt;br style=&quot;font-size: 30px;&quot;&gt;districts.&lt;br style=&quot;font-size: 30px;&quot;&gt;&lt;span style=&quot;font-size: 30px;&quot;&gt;&lt;span style=&quot;font-size: 30px;&quot;&gt;&amp;nbsp;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=30;fillColor=#d5e8d4;strokeColor=#82b366;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;spacingRight=5;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="-2340" y="960" width="620" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-6" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=60;notch=60;rounded=1;strokeWidth=1;fillColor=#0D5B9D;fontSize=30;rotation=90;strokeColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="-3950" y="990" width="340" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-7" value="STEP 4" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;dashed=0;fontSize=30;fontFamily=Helvetica;fontColor=#FFFFFF;fontStyle=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="-3940" y="1051" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-8" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 25px;&quot;&gt;Intersection of ML 1&lt;br style=&quot;font-size: 25px;&quot;&gt;&amp;amp; ML 2 data with the district polygons&amp;nbsp;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=4;fontStyle=1;fontSize=25;fontColor=#FFFFFF;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-3910" y="1159" width="260" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-12" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 35px;&quot;&gt;Input&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=35;fillColor=#fff2cc;strokeColor=#d6b656;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="-3610" y="890" width="400" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-13" value="Output" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=35;fillColor=#ffe6cc;strokeColor=#d79b00;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="-3150" y="890" width="400" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-14" value="Tool" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=35;fillColor=#f8cecc;strokeColor=#b85450;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="-2690" y="890" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-15" value="Explanation" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=35;fillColor=#d5e8d4;strokeColor=#82b366;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="-2231" y="890" width="402" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-10" value="&lt;span style=&quot;border-color: var(--border-color); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); font-size: 14px;&quot;&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;border-color: var(--border-color); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); font-size: 14px;&quot;&gt;&amp;nbsp; &amp;nbsp;&lt;span style=&quot;white-space: pre; font-size: 14px;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;You need to perform the steps below two&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;border-color: var(--border-color); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;times. &lt;span style=&quot;white-space: pre; font-size: 14px;&quot;&gt;&#x9;&lt;/span&gt;One time for ML 1 and a second time for ML 2&lt;/span&gt;&lt;span style=&quot;border-color: var(--border-color); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: initial; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;.&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=5;fillColor=#ffff88;strokeColor=#36393d;spacingTop=-11;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="790" y="-251" width="360" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-11" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/material-core/22/warning-128.png;spacing=5;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="912" y="-241" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-16" value="&lt;p class=&quot;MsoNormal&quot;&gt;FbF Drought Trigger Workflow manually&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;dashed=0;fontSize=45;fontFamily=Tahoma;fontColor=#0D5B9D;fontStyle=1;strokeWidth=9;" vertex="1" parent="1">
+          <mxGeometry x="-3365" y="-700" width="1400" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-17" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 35px;&quot;&gt;Input&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=35;fillColor=#fff2cc;strokeColor=#d6b656;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="-3610" y="-593.5" width="400" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-18" value="Output" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=35;fillColor=#ffe6cc;strokeColor=#d79b00;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="-3150" y="-593.5" width="400" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-19" value="Tool" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=35;fillColor=#f8cecc;strokeColor=#b85450;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="-2690" y="-593.5" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-20" value="Explanation" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=35;fillColor=#d5e8d4;strokeColor=#82b366;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="-2231" y="-593.5" width="402" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-21" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=60;notch=0;rounded=1;strokeWidth=1;fillColor=#0D5B9D;fontSize=30;rotation=90;strokeColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="-3930" y="-513.5" width="280" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-22" value="STEP 1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;dashed=0;fontSize=30;fontFamily=Helvetica;fontColor=#FFFFFF;fontStyle=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="-3930" y="-463.5" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-23" value="" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;spacingLeft=5;align=left;verticalAlign=top;spacingRight=5;spacing=5;fontSize=14;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-3610" y="-513.5" width="1890" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-24" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 25px;&quot;&gt;Setting up folder&lt;br style=&quot;font-size: 25px;&quot;&gt;structure&amp;nbsp;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=4;fontStyle=1;fontSize=25;fontColor=#FFFFFF;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-3920" y="-413.5" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-25" value="The results will be the folder structure for the month you want to do the monitoring. These folders can be filled with the forecast data in the next step." style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=30;fillColor=#ffe6cc;strokeColor=#d79b00;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingRight=5;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="-3150" y="-513.5" width="400" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-26" value="No special tools or programs are needed." style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=30;fillColor=#f8cecc;strokeColor=#b85450;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;spacingLeft=5;verticalAlign=top;spacingRight=5;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="-2690" y="-513.5" width="300" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-27" value="Setting up the folder structure:&lt;br style=&quot;border-color: var(--border-color); font-size: 30px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=30;fillColor=#d5e8d4;strokeColor=#82b366;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;spacingLeft=5;verticalAlign=top;spacingRight=5;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="-2340" y="-513.5" width="620" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-28" value="You need the original “FbF_Drought_&lt;br&gt;Monitoring_Trigger”&lt;br style=&quot;border-color: var(--border-color); font-size: 30px;&quot;&gt;Folder structure" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=30;fillColor=#fff2cc;strokeColor=#d6b656;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;spacingRight=5;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="-3612" y="-513.5" width="400" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-29" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=60;notch=60;rounded=1;strokeWidth=1;fillColor=#0D5B9D;fontSize=30;rotation=90;strokeColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="-4045" y="464.5" width="510" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-30" value="" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;align=left;fontSize=30;spacingLeft=5;spacingTop=5;spacing=5;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-3610" y="349.5" width="1890" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-31" value="STEP 3" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;dashed=0;fontSize=30;fontFamily=Helvetica;fontColor=#FFFFFF;fontStyle=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="-3930" y="439.5" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-32" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 25px;&quot;&gt;Loading data into QGIS&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=4;fontStyle=1;fontSize=25;fontColor=#FFFFFF;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-3920" y="499.5" width="260" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-33" value="Data input in QGIS Project&#x9;&lt;br style=&quot;border-color: var(--border-color); font-size: 30px;&quot;&gt;Fixed Data:&lt;br style=&quot;border-color: var(--border-color); font-size: 30px;&quot;&gt;&lt;ul style=&quot;border-color: var(--border-color); font-size: 30px;&quot;&gt;&lt;li style=&quot;border-color: var(--border-color); font-size: 30px;&quot;&gt;District Boarders (district_pop_som.gpkg)&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color); font-size: 30px;&quot;&gt;Population raster data&amp;nbsp;&lt;br style=&quot;border-color: var(--border-color); font-size: 30px;&quot;&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div style=&quot;border-color: var(--border-color); font-size: 30px;&quot;&gt;Forecast data:&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); font-size: 30px;&quot;&gt;&lt;ul style=&quot;border-color: var(--border-color); font-size: 30px;&quot;&gt;&lt;li style=&quot;border-color: var(--border-color); font-size: 30px;&quot;&gt;ML 1&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color); font-size: 30px;&quot;&gt;ML 2&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color); font-size: 30px;&quot;&gt;SPI Forecast&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=30;fillColor=#fff2cc;strokeColor=#d6b656;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="-3610" y="349.5" width="400" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-34" value="The result will be a QGIS Project in the correct folder with all the data you need in the next steps&lt;br style=&quot;font-size: 30px;&quot;&gt;&lt;br style=&quot;font-size: 30px;&quot;&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 30px;&quot;&gt;Now all the data we need is in QGIS !&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=30;fillColor=#ffe6cc;strokeColor=#d79b00;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="-3150" y="349.5" width="400" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-35" value="You will need QGIS" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=30;fillColor=#f8cecc;strokeColor=#b85450;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=5;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="-2690" y="349.5" width="300" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-36" value="&lt;p style=&quot;border-color: var(--border-color); font-size: 30px;&quot; class=&quot;MsoNormal&quot;&gt;Create a new QGIS Project and load the data:&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=30;fillColor=#d5e8d4;strokeColor=#82b366;opacity=50;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;verticalAlign=top;spacingLeft=5;spacingTop=-5;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="-2340" y="349.5" width="620" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-38" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-size: 35px;&quot;&gt;Input&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=35;fillColor=#fff2cc;strokeColor=#d6b656;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="-3610" y="280" width="400" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-39" value="Output" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=35;fillColor=#ffe6cc;strokeColor=#d79b00;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="-3150" y="280" width="400" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-40" value="Tool" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=35;fillColor=#f8cecc;strokeColor=#b85450;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="-2690" y="280" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QgtgavGpO6iROQ7banwP-41" value="Explanation" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=35;fillColor=#d5e8d4;strokeColor=#82b366;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="-2340" y="280" width="620" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
