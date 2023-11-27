@@ -11,7 +11,7 @@ Set a tick in the Layers panel
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_show_hide_layer.mp4"></video>
 
-## Have you "lost" you layer?
+## Have you "lost" your layer?
 
 Right click on your layer -> `Zoom to layer(s)`
 
