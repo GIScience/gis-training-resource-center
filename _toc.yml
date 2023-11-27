@@ -40,6 +40,10 @@ parts:
       - file: content/Wiki/en_qgis_raster_wiki.md
         sections:
           - file: content/Wiki/en_qgis_raster_basic_wiki.md
+      - file: content/Wiki/en_qgis_automatisation_wiki.md
+        sections:
+          - file: content/Wiki/en_qgis_model_builder_wiki.md
+
   - caption: Modul 1- Introduction GIS
     chapters:
       - file: content/Modul_1/en_qgis_theorie.md
