@@ -42,6 +42,17 @@ align: center
 ```
 
 __Purpose:__ 
+__Tool:__ FileZilla
+
+#### SPI-12:
+
+1. [Download FileZilla](https://filezilla-project.org/download.php?platform=win64) and establish the connection to the FTP-Server
+2. Select the latest SPI-12 data and drag and drop to your predefined directory for Monitoring data
+
+#### IPC-Projection
+
+1. Navigate to the FEWSNET website, then "Data" -> "Acute Food Insecurity Data" and download the provided .zip folder for the latest timestamp. 
+2. Select the ML1 and ML2 procection shapefiles from the folder an save them in the predefined directory for monitoring data
 
 
 ### Step 3: Loading data into QGIS
@@ -277,7 +288,7 @@ __Tool:__[`Join attributes by field value`](https://giscience.github.io/gis-trai
 3. `Table field`: Select “admin2Name”
 4. `Input Layer 2`: Select your “SPI12_districts”
 5. `Table field 2`: Select “admin2Name”
-6. `Join type`: Select the option “Take attributes of the first matching feature only (one-to-one)
+6. `Join type`: Select the option “Take attributes of the first matching feature only (one-to-one)"
 
 ### Step 13.: Evaluate Trigger Activation 
 ```{figure} /fig/Drought_EAP_Worklow_Step_13_1.png
@@ -293,7 +304,7 @@ __Purpose:__
 __Tool:__
 
 
-1. Right-click on Intersection_population Polygons layer -> “Attribute Table”-> click on  [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field) ![](/fig/mActionCalculateField.png) to open the field calculator
+1. Right-click on Intersection_population Polygons layer -> `Attribute Table`-> click on  [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field) ![](/fig/mActionCalculateField.png) to open the field calculator
 2. Check `Create new field`
 3. `Output field name`: Name the new column “Trigger_activation”
 4. `Result field type`: Text
@@ -313,7 +324,7 @@ __Tool:__
     END`
     ```
 ``````
-6. Click "ok"
+6. Click `ok`
 7. Save the new column by clicking on ![](/fig/mActionSaveEdits.png) in the attribute table
 
 
@@ -335,7 +346,7 @@ __Tool:__ [Symbology](https://giscience.github.io/gis-training-resource-center/c
 2. In the drop-down menu on the top choose `Categorized`
 3. In the down left corner click on `Style` -> `Load Style`
 4. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger” folder and select the file “Style_Model_Output.qml”.
-5. Click “Open”. Then click on “Load Style”
+5. Click `Open`. Then click on `Load Style`
 6. Back in the “Layer Properties” Window click `Apply` and `OK`
 
 ### Step 15.: Making print map
