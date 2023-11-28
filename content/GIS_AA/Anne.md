@@ -21,7 +21,7 @@ By fixed data we mean datasets that are needed for the trigger to work, that wil
 
 
 ## Variable Data
-
+btrgtr
 
 The drought trigger mechanism is based on two variable datasets updated monthly: The SPI-12 forecast produced by ICPAC and the Food Insecurity projection produced by FEWSNET. The SPI-12 is used to capture hazard forecasts while the Food Insecurity Projection captures the dynamic vulnerability. 
 In this way upcoming drought events (SPI) that most probably will lead to food insecurity (IPC) will be captured.
