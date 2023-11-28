@@ -24,10 +24,9 @@ __Purpose:__
 
 __Tool:__ No special tools or programs are needed
 
-1. Open the Folder “FbF_Drought_Monitoring_Trigger
+1. Open the Folder “FbF_Drought_Monitoring_Trigger"
 2. Open the subfolder "Monitoring"
-3. Copy the Template folder “TEMPLATE_Year_Month” and change the name to the current year and month.
-The result could be the folder "2022_05" 
+3. Copy the Template folder “TEMPLATE_Year_Month” and change the name to the current year and month. The result could be the folder "2022_05" 
 
 
 
@@ -61,7 +60,6 @@ __Purpose:__
 2. Once the project is created save the project in the folder you created in Step 1 (e.g. 2022_05). To do that click on `Project` -> `Save as` and navigate to the folder. Give the project the same name as the folder you created (e.g. 2022_05). Then click `Save`
 3. Load all input data in QGIS by [drag and drop](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-raster-data-via-drag-and-drop). Click on `Project` -> `Save` 
 
-:::{dropdown} Steps covered by the QGIS Model
 
 ### Step 4: Intersection of ML 1 & ML 2 data with the district polygons 
 
@@ -318,7 +316,7 @@ __Tool:__
 6. Click "ok"
 7. Save the new column by clicking on ![](/fig/mActionSaveEdits.png) in the attribute table
 
-:::
+
 
 ### Step 14.: Visualisation of results
 ```{figure} /fig/Drought_EAP_Worklow_Step_14_1.png
