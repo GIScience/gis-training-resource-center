@@ -169,7 +169,6 @@ align: center
 
 
 
-
 ## Making print map
 
 In order to easily visualize the outout of the trigger analysis we provide you with a 
