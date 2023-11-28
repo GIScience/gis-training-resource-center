@@ -115,7 +115,7 @@ In order to pass the data from the FTP Server to your own machine you can simply
 
 ```{figure} /fig/FileZilla.PNG
 ---
-height: 100px
+height: 400px
 name: FileZilla Interface
 align: center
 ---
@@ -129,7 +129,7 @@ On the website you will have to click on Somalia to acess the data. Alternativle
 
 ```{figure} /fig/IPC_Projections_website.png
 ---
-height: 300px
+height: 400px
 name: FEWSNET IPC - Download IPC Projections
 align: center
 ---
@@ -150,7 +150,7 @@ Remember that you need to copy over all components that the respective [shapefil
 
 ```{figure} /fig/IPC_zip.PNG
 ---
-height: 300px
+height: 400px
 name: Content of .zip file downloaded containing ML1 and ML2 IPC projections
 align: center
 ---
@@ -161,21 +161,19 @@ On the [main FEWSNET page](https://fews.net/) you can also sign up for informati
 
 ```{figure} /fig/IPC_Newsletter.png
 ---
-height: 100px
+height: 60px
 name: FEWSNET Newsletter
 align: center
 ---
 ```
 
-```
 
 
 
+## Making print map
 
-
-# Making print map
-
-In order to easily visualize the outout of the trigger analysis we provide you with a [map template](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html#map-templates) that you can use as a base for your visualization.
+In order to easily visualize the outout of the trigger analysis we provide you with a 
+[map template](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html#map-templates) that you can be used as a base for your visualization.
 
 Check [here](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html#map-templates) how to open templates and how to use them in QGIS.
 
