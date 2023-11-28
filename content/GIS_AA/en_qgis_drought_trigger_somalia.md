@@ -529,7 +529,6 @@ align: center
 ---
 ```
 
-
 In order to easily visualize the outout of the trigger analysis we provide you with a 
 [map template](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html#map-templates) that you can be used as a base for your visualization.
 
