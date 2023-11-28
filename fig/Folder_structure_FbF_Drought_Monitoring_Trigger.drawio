@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-11-28T12:54:00.761Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="1KHgho9vLMr8WKuzLiDy" version="22.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-28T13:13:09.411Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="L8QU4jL1kBQIPyJ46nGq" version="22.1.4" type="github">
   <diagram name="Seite-1" id="DYmZpvFpW-R7Gg1HzHR1">
-    <mxGraphModel dx="882" dy="2327" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4232" dy="6729" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -9,7 +9,7 @@
         </mxCell>
         <mxCell id="rBDyEaz7XUgaB_4zMnyu-3" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="240" y="1080" as="sourcePoint" />
+            <mxPoint x="240" y="1220" as="sourcePoint" />
             <mxPoint x="240" y="330" as="targetPoint" />
           </mxGeometry>
         </mxCell>
@@ -36,7 +36,7 @@
         <mxCell id="8eLrpo6SyWcruf2TeNTN-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="rBDyEaz7XUgaB_4zMnyu-10" target="rBDyEaz7XUgaB_4zMnyu-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="rBDyEaz7XUgaB_4zMnyu-10" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;b&gt;Monitoring&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;QGIS Project and Scripts&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;fontStyle=0" parent="1" vertex="1">
+        <mxCell id="rBDyEaz7XUgaB_4zMnyu-10" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;b&gt;Monitoring&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;fontStyle=0" parent="1" vertex="1">
           <mxGeometry x="390" y="600" width="210" height="40" as="geometry" />
         </mxCell>
         <mxCell id="rBDyEaz7XUgaB_4zMnyu-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="1" source="rBDyEaz7XUgaB_4zMnyu-12" target="rBDyEaz7XUgaB_4zMnyu-10" edge="1">
@@ -77,26 +77,26 @@
         </mxCell>
         <mxCell id="rBDyEaz7XUgaB_4zMnyu-42" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="240" y="1120" as="sourcePoint" />
-            <mxPoint x="240" y="1070" as="targetPoint" />
+            <mxPoint x="240" y="1265" as="sourcePoint" />
+            <mxPoint x="240" y="1215" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="8eLrpo6SyWcruf2TeNTN-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="DHKMJk7bjbN0Lc8U2Itu-2" target="rBDyEaz7XUgaB_4zMnyu-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DHKMJk7bjbN0Lc8U2Itu-2" value="maps_somalia_template_risk_assessment.qpt" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#F5F5F5;fontStyle=1" parent="1" vertex="1">
+        <mxCell id="DHKMJk7bjbN0Lc8U2Itu-2" value="maps_somalia_template_risk_assessment.qpt&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;font size=&quot;1&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Template for final map&lt;/span&gt;&lt;/font&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#F5F5F5;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="390" y="995" width="300" height="40" as="geometry" />
         </mxCell>
         <mxCell id="8eLrpo6SyWcruf2TeNTN-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="DHKMJk7bjbN0Lc8U2Itu-9" target="rBDyEaz7XUgaB_4zMnyu-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DHKMJk7bjbN0Lc8U2Itu-9" value="Triggermodel_Somalia.model3" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#F5F5F5;fontStyle=1" parent="1" vertex="1">
+        <mxCell id="DHKMJk7bjbN0Lc8U2Itu-9" value="Triggermodel_Somalia.model3&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;font size=&quot;1&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;QGIS Trigger model file&lt;/span&gt;&lt;/font&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#F5F5F5;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="390" y="1055" width="300" height="40" as="geometry" />
         </mxCell>
         <mxCell id="8eLrpo6SyWcruf2TeNTN-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="DHKMJk7bjbN0Lc8U2Itu-10" target="rBDyEaz7XUgaB_4zMnyu-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DHKMJk7bjbN0Lc8U2Itu-10" value="Style_Model_Output.qml" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#F5F5F5;fontStyle=1" parent="1" vertex="1">
+        <mxCell id="DHKMJk7bjbN0Lc8U2Itu-10" value="Style_Model_Output.qml&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;font size=&quot;1&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Style file containg color for final map&lt;/span&gt;&lt;/font&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#F5F5F5;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="390" y="1115" width="300" height="40" as="geometry" />
         </mxCell>
         <mxCell id="8eLrpo6SyWcruf2TeNTN-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="8eLrpo6SyWcruf2TeNTN-1" target="rBDyEaz7XUgaB_4zMnyu-6">
@@ -108,25 +108,25 @@
         <mxCell id="8eLrpo6SyWcruf2TeNTN-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="8eLrpo6SyWcruf2TeNTN-11" target="rBDyEaz7XUgaB_4zMnyu-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8eLrpo6SyWcruf2TeNTN-11" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;b&gt;IPC_ML1&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Styling files&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;fontStyle=0" vertex="1" parent="1">
+        <mxCell id="8eLrpo6SyWcruf2TeNTN-11" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;b&gt;IPC_ML1&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Shapefile with IPC near-term projections&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;fontStyle=0" vertex="1" parent="1">
           <mxGeometry x="650" y="720" width="210" height="40" as="geometry" />
         </mxCell>
         <mxCell id="8eLrpo6SyWcruf2TeNTN-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="8eLrpo6SyWcruf2TeNTN-12" target="rBDyEaz7XUgaB_4zMnyu-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8eLrpo6SyWcruf2TeNTN-12" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;b&gt;IPC_ML2&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Styling files&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;fontStyle=0" vertex="1" parent="1">
+        <mxCell id="8eLrpo6SyWcruf2TeNTN-12" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;b&gt;IPC_ML2&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;span style=&quot;font-size: 7.5pt; line-height: 107%; font-family: Helvetica, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;&quot;&gt;Shapefile with IPC mid-term projections&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;fontStyle=0" vertex="1" parent="1">
           <mxGeometry x="650" y="785" width="210" height="40" as="geometry" />
         </mxCell>
         <mxCell id="8eLrpo6SyWcruf2TeNTN-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="8eLrpo6SyWcruf2TeNTN-13" target="rBDyEaz7XUgaB_4zMnyu-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8eLrpo6SyWcruf2TeNTN-13" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;b&gt;SPI_12&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Styling files&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;fontStyle=0" vertex="1" parent="1">
+        <mxCell id="8eLrpo6SyWcruf2TeNTN-13" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;b&gt;SPI_12&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;NetCDF file with SPI-12 forecast&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;fontStyle=0" vertex="1" parent="1">
           <mxGeometry x="650" y="855" width="210" height="40" as="geometry" />
         </mxCell>
         <mxCell id="8eLrpo6SyWcruf2TeNTN-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="8eLrpo6SyWcruf2TeNTN-14" target="rBDyEaz7XUgaB_4zMnyu-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8eLrpo6SyWcruf2TeNTN-14" value="Year_month.qgz" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#F5F5F5;fontStyle=1" vertex="1" parent="1">
+        <mxCell id="8eLrpo6SyWcruf2TeNTN-14" value="Year_month.qgz&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;font size=&quot;1&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;QGIS project to be created&lt;/span&gt;&lt;/font&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#F5F5F5;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="650" y="925" width="210" height="40" as="geometry" />
         </mxCell>
         <mxCell id="8eLrpo6SyWcruf2TeNTN-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="8eLrpo6SyWcruf2TeNTN-22" target="rBDyEaz7XUgaB_4zMnyu-8">
