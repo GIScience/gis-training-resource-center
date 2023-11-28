@@ -14,7 +14,7 @@ You can also open a existing model via "Model > Open Model" and navigating to th
 **Inputs/Outputs**: The model starts with input data and produces output filesi
 **Algorithms**: Algorithms or Tools are specific geoprocessing steps that perform specific tasks, such as clipping, reprojecting or buffering.
 
-### Create and save model
+### Create and Save the Model
 #### Add Inputs and Processing Steps
 You can add Spaces for input files via the "Inputs" Window on the left. Expand "Parameters" and choose the kind of Input type you need. For example "Vector Layer" for a layer with administrative districts or "CRS" for a coordinate refernece system that is needed for multiple reprojections in the model.
 
