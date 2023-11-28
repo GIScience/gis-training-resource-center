@@ -96,7 +96,42 @@ The IPC Index represents low-population districts equal to high-population distr
 
 
 
-## Trigger Input Data Download
+## Trigger Workflow Manually 
+
+### Step 1: Setting up folder structure 
+
+
+```{figure} /fig/Drought_EAP_Worklow_Step_1_1.png
+---
+width: 1000px
+name: 
+align: center
+---
+```
+__Purpose:__ 
+
+__Tool:__ No special tools or programs are needed
+
+1. Open the Folder “FbF_Drought_Monitoring_Trigger"
+2. Open the subfolder "Monitoring"
+3. Copy the Template folder “TEMPLATE_Year_Month” and change the name to the current year and month. The result could be the folder "2022_05" 
+
+
+
+
+### Step 2: Download of the forecast data
+
+```{figure} /fig/Drought_EAP_Worklow_Step_2_1.png
+---
+width: 1000px
+name: 
+align: center
+---
+```
+
+__Purpose:__ 
+
+__Tool:__ FileZilla
 
 The current plans provide that ICPAC will monthly provide the SPI-12 Forcast whereas the IPC data will be pulled from the FEWSNET website. FEWS NET publishes IPC data on its website. 
 The main publications plus the updates of the IPC data amount to the publication of new data almost monthly.
@@ -174,56 +209,6 @@ name: FEWSNET Newsletter
 align: center
 ---
 ```
-
-
-
-
-
-## Trigger Workflow Manually 
-
-### Step 1: Setting up folder structure 
-
-
-```{figure} /fig/Drought_EAP_Worklow_Step_1_1.png
----
-width: 1000px
-name: 
-align: center
----
-```
-__Purpose:__ 
-
-__Tool:__ No special tools or programs are needed
-
-1. Open the Folder “FbF_Drought_Monitoring_Trigger"
-2. Open the subfolder "Monitoring"
-3. Copy the Template folder “TEMPLATE_Year_Month” and change the name to the current year and month. The result could be the folder "2022_05" 
-
-
-
-
-### Step 2: Download of the forecast data
-
-```{figure} /fig/Drought_EAP_Worklow_Step_2_1.png
----
-width: 1000px
-name: 
-align: center
----
-```
-
-__Purpose:__ 
-__Tool:__ FileZilla
-
-#### SPI-12:
-
-1. [Download FileZilla](https://filezilla-project.org/download.php?platform=win64) and establish the connection to the FTP-Server
-2. Select the latest SPI-12 data and drag and drop to your predefined directory for Monitoring data
-
-#### IPC-Projection
-
-1. Navigate to the FEWSNET website, then "Data" -> "Acute Food Insecurity Data" and download the provided .zip folder for the latest timestamp. 
-2. Select the ML1 and ML2 procection shapefiles from the folder an save them in the predefined directory for monitoring data
 
 
 ### Step 3: Loading data into QGIS
@@ -529,7 +514,7 @@ align: center
 ---
 ```
 
-In order to easily visualize the outout of the trigger analysis we provide you with a 
+In order to easily visualize the output of the trigger analysis we provide you with a 
 [map template](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html#map-templates) that you can be used as a base for your visualization.
 
 Check [here](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html#map-templates) how to open templates and how to use them in QGIS.
