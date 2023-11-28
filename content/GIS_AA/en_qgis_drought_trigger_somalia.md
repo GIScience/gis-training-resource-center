@@ -22,12 +22,11 @@ align: center
 ```
 __Purpose:__ 
 
-__Tool:__
+__Tool:__ No special tools or programs are needed
 
-1. Open the Folder “FbF_Drought_Monitoring_Trigger
+1. Open the Folder “FbF_Drought_Monitoring_Trigger"
 2. Open the subfolder "Monitoring"
-3. Copy the Template folder “TEMPLATE_Year_Month” and change the name to the current year and month.
-The result could be the folder "2022_05" 
+3. Copy the Template folder “TEMPLATE_Year_Month” and change the name to the current year and month. The result could be the folder "2022_05" 
 
 
 
@@ -43,6 +42,17 @@ align: center
 ```
 
 __Purpose:__ 
+__Tool:__ FileZilla
+
+#### SPI-12:
+
+1. [Download FileZilla](https://filezilla-project.org/download.php?platform=win64) and establish the connection to the FTP-Server
+2. Select the latest SPI-12 data and drag and drop to your predefined directory for Monitoring data
+
+#### IPC-Projection
+
+1. Navigate to the FEWSNET website, then "Data" -> "Acute Food Insecurity Data" and download the provided .zip folder for the latest timestamp. 
+2. Select the ML1 and ML2 procection shapefiles from the folder an save them in the predefined directory for monitoring data
 
 
 ### Step 3: Loading data into QGIS
@@ -60,6 +70,7 @@ __Purpose:__
 1. Open QGIS and create a [new project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`
 2. Once the project is created save the project in the folder you created in Step 1 (e.g. 2022_05). To do that click on `Project` -> `Save as` and navigate to the folder. Give the project the same name as the folder you created (e.g. 2022_05). Then click `Save`
 3. Load all input data in QGIS by [drag and drop](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-raster-data-via-drag-and-drop). Click on `Project` -> `Save` 
+
 
 ### Step 4: Intersection of ML 1 & ML 2 data with the district polygons 
 
@@ -273,14 +284,14 @@ __Tool:__[`Join attributes by field value`](https://giscience.github.io/gis-trai
 
 
 1. Click `Processing` -> `Toolbox`-> Search for [`Join attributes by field value`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html#join-attributes-by-field-value)
-2. `Input Layer`´`: Select your “IPC_index_district_ML2_ML2”
+2. `Input Layer`: Select your “IPC_index_district_ML2_ML2”
 3. `Table field`: Select “admin2Name”
 4. `Input Layer 2`: Select your “SPI12_districts”
 5. `Table field 2`: Select “admin2Name”
-6. `Join type`: Select the option “Take attributes of the first matching feature only (one-to-one)
+6. `Join type`: Select the option “Take attributes of the first matching feature only (one-to-one)"
 
 ### Step 13.: Evaluate Trigger Activation 
-```{figure} /fig/
+```{figure} /fig/Drought_EAP_Worklow_Step_13_1.png
 ---
 width: 1000px
 name: 
@@ -293,7 +304,7 @@ __Purpose:__
 __Tool:__
 
 
-1. Right-click on Intersection_population Polygons layer -> “Attribute Table”-> click on  [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field) ![](/fig/mActionCalculateField.png) to open the field calculator
+1. Right-click on Intersection_population Polygons layer -> `Attribute Table`-> click on  [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field) ![](/fig/mActionCalculateField.png) to open the field calculator
 2. Check `Create new field`
 3. `Output field name`: Name the new column “Trigger_activation”
 4. `Result field type`: Text
@@ -313,11 +324,13 @@ __Tool:__
     END`
     ```
 ``````
-6. Click "ok"
+6. Click `ok`
 7. Save the new column by clicking on ![](/fig/mActionSaveEdits.png) in the attribute table
 
+
+
 ### Step 14.: Visualisation of results
-```{figure} /fig/
+```{figure} /fig/Drought_EAP_Worklow_Step_14_1.png
 ---
 width: 1000px
 name: 
@@ -327,7 +340,14 @@ align: center
 
 __Purpose:__ 
 
-__Tool:__
+__Tool:__ [Symbology](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_I.html#symbology-for-vector-data)
+
+1. Right cklick on the “Trigger_activation” layer -> `Properties` -> `Symbology`
+2. In the drop-down menu on the top choose `Categorized`
+3. In the down left corner click on `Style` -> `Load Style`
+4. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger” folder and select the file “Style_Model_Output.qml”.
+5. Click `Open`. Then click on `Load Style`
+6. Back in the “Layer Properties” Window click `Apply` and `OK`
 
 ### Step 15.: Making print map
 ```{figure} /fig/
