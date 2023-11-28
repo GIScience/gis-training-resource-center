@@ -1,4 +1,3 @@
-
 # Trigger Statement
 
 When ICPAC issues a SPI-12 forecast of less than -1 for a district AND the current FEWSNET food insecurity projection reaches at least 0.7 in its 
