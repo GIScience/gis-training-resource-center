@@ -537,8 +537,6 @@ Check [here](https://giscience.github.io/gis-training-resource-center/content/Mo
 You can also adapt the template to your needs and preferences. You can find help [here](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html#print-layout).
 
 
-
-
 __Purpose:__ 
 
 __Tool:__
