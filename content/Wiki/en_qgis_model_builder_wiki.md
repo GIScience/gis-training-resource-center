@@ -12,7 +12,7 @@ You can also open a existing model via "Model > Open Model" and navigating to th
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_modelbuilder_open.mp4"></video>
 
-### Model Components
+### Model Components bla
 **Inputs/Outputs**: The model starts with input data and produces output filesi
 **Algorithms**: Algorithms or Tools are specific geoprocessing steps that perform specific tasks, such as clipping, reprojecting or buffering.
 
