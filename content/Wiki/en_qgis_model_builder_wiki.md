@@ -1,9 +1,7 @@
 # The QGIS Model Designer
-
 The Model Designer is a visual tool that allows users to create and edit a workflow with all tools available in QGIS that can be used repeatedly in a simple and time-efficient manner. It provides a graphical interface to build workflows by connecting geoprocessing tools and algorithms. The user can define inputs, outputs, and the flow of data between different processing steps.
 
 ### Using the Model Designer
-
 Open the tool under "Processing > Model Designer".
 
 Give the model file a name and save it on you Computer.
@@ -12,7 +10,7 @@ You can also open a existing model via "Model > Open Model" and navigating to th
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_modelbuilder_open.mp4"></video>
 
-### Model Components bla
+### Model Components
 **Inputs/Outputs**: The model starts with input data and produces output filesi
 **Algorithms**: Algorithms or Tools are specific geoprocessing steps that perform specific tasks, such as clipping, reprojecting or buffering.
 
