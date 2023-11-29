@@ -536,7 +536,7 @@ align: center
 ---
 ```
 
-__Purpose:__ 
+__Purpose:__  The purpose of this step is to calculate a population weighted mean over the IPC classes that fall within a district, in order to give the amount of people living in a certain IPC class more importance than just the area affected by a certain IPC class. The result is a IPC Index value for each district.
 
 __Tool:__
 
@@ -561,7 +561,7 @@ align: center
 ---
 ```
 
-__Purpose:__ 
+__Purpose:__ The purpose of this step is to merge data from two different data sets into one data frame so that it can be jointly analysed.
 
 __Tool:__ [`Join attributes by field value`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html#join-attributes-by-field-value)
 
@@ -582,7 +582,7 @@ align: center
 ---
 ```
 
-__Purpose:__ 
+__Purpose:__ Calculate the mean value over the SPI-12 values of all pixels that fall within a scertain districts area, in order to have one SPI-12 value for each district.
 
 __Tool:__ [`Zonal Statistics`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics)
 
@@ -601,7 +601,7 @@ align: center
 ---
 ```
 
-__Purpose:__ 
+__Purpose:__ The purpose of this step is to merge data from two different data sources into one data frame so that it can be jointly analysed.
 
 __Tool:__[`Join attributes by field value`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html#join-attributes-by-field-value)
 
@@ -622,9 +622,9 @@ align: center
 ---
 ```
 
-__Purpose:__ 
+__Purpose:__ The purpose of this step is to gain a quick overview of possible trigger activation without having to revise the actual data. Instead we will have a binary column with trigger = yes or no values.
 
-__Tool:__
+__Tool:__ [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field)
 
 
 1. Right-click on Intersection_population Polygons layer -> `Attribute Table`-> click on  [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field) ![](/fig/mActionCalculateField.png) to open the field calculator
@@ -661,16 +661,33 @@ align: center
 ---
 ```
 
-__Purpose:__ 
+__Purpose:__ Definition of how features are represented visually on the map.
 
 __Tool:__ [Symbology](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_I.html#symbology-for-vector-data)
+
+__Trigger Activation__
 
 1. Right cklick on the “Trigger_activation” layer -> `Properties` -> `Symbology`
 2. In the drop-down menu on the top choose `Categorized`
 3. In the down left corner click on `Style` -> `Load Style`
-4. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger” folder and select the file “Style_Model_Output.qml”.
+4. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger” folder and select the file “Style_Trigger_Activation.qml”.
 5. Click `Open`. Then click on `Load Style`
 6. Back in the “Layer Properties” Window click `Apply` and `OK`
+
+You will now see all the districts with green or pink outline, depending on a occured trigger activation.
+
+__Risk Assessment__
+
+For the creation of an __Intervention Map__ we will have to add the risk assessment data and the respective style file.
+For this first of all load from "FbF_Drought_Monitoring_Trigger/Fixed_data/Risk_Assessment" the file "risk_assessment_districts.gpkg". This file is the output of the conducted risk assessment and contains a risk value for each district of Simaliland and Somalia.  In order to visualize it 
+1. Right click on the "risk_assessment_districts" layer -> `Properties` -> `Symbology`
+2. Repeat the steps from above for loading the style layer, but choose the “somalia_risk_assessment_style.qml” style layer.
+
+For the final visualization and right overlay of the risk assessment and the Trigger activation, make sure you "Trigger Activation" layer is above the
+"risk_assessment_districts" layer in the Layers Panel.
+You will now see districts where no trigger is activated in green and districts with trigger activation in pink.
+
+
 
 ### Step 15.: Making print map
 ```{figure} /fig/
