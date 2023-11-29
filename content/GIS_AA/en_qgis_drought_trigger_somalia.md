@@ -493,7 +493,7 @@ align: center
 ---
 ```
 
-__Purpose:__ In this step we calculating the [IPC-Population Weighted Index](file:///C:/HeiGIT/RCRC_GIS_Training/gis-training-resource-center/_build/html/content/GIS_AA/en_qgis_drought_trigger_somalia.html#ipc-population-weighted-index) per district. 
+__Purpose:__ In this step we calculating the [IPC-Population Weighted Index](file:///C:/HeiGIT/RCRC_GIS_Training/gis-training-resource-center/_build/html/content/GIS_AA/en_qgis_drought_trigger_somalia.html#ipc-population-weighted-index)for every small part of the polygon layer. 
 ```{Attention}
 You need to perform this step two times. One time for ML 1 and a second time for ML 2.
 ```
@@ -518,6 +518,7 @@ align: center
 ---
 ```
 
+
 __Result:__ Both layer “ML1_join” and ML2_Join” should now have the column “Index_per_IPCPolygon_ML1” or “Index_per_IPCPolygon_ML2”. The numbers in this column have to be smaller than in the “district” column.
 
 The video shows the whole process with the the example of ML 1.
@@ -527,7 +528,7 @@ The video shows the whole process with the the example of ML 1.
 
 
 ### Step 9.: Calculate IPC Index per District
-```{figure} /fig/
+```{figure} /fig/Drought_EAP_Worklow_Step_9_1.png
 ---
 width: 1000px
 name: 
@@ -538,6 +539,18 @@ align: center
 __Purpose:__ 
 
 __Tool:__
+
+1. In the `Toolbox`-> Search for `Join attribute by location (summary)`
+  * Tip: If the `Toolbox` is not opne click `Processing`-> `Toolbox` 
+2. `Input Layer`: Select your “district_pop_som” layer
+3. `Input Layer 2`: Select your layer “Intersection_population_weighted_percentage
+Polygons” 
+4. `Geometric predicate`: Select “Intersection”
+5. `Field to summarise`: Select “Index_per_IPCPolygon_ML1”
+6. `Summaries to calculate`: Chose only the option “mean”
+7. Under `Join Layer [optional]` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "ML1_join" or "ML2_join" and click `Save`
+8. Click `Run`
+ 
 
 ### Step 10.: Join ML1 and ML2 I
 ```{figure} /fig/Drought_EAP_Worklow_Step_10_1.png
