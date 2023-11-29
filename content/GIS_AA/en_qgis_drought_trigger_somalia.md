@@ -246,6 +246,8 @@ __Purpose:__
 2. Once the project is created save the project in the folder you created in Step 1 (e.g. 2022_05). To do that click on `Project` -> `Save as` and navigate to the folder. Give the project the same name as the folder you created (e.g. 2022_05). Then click `Save`
 3. Load all input data in QGIS by [drag and drop](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-raster-data-via-drag-and-drop). Click on `Project` -> `Save` 
 
+This video shows how to setup the QGIS project for April 2022 and how to import all data into the project.
+
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_3.mp4"></video>
 
 
@@ -258,7 +260,7 @@ name:
 align: center
 ---
 ```
-__Purpose:__ 
+__Purpose:__ The goal is to receive polygon layers which share both the borders and the attributes of both input layers.
 
 ```{Attention}
 You need to perform this step two times. One time for ML 1 and a second time for ML 2.
@@ -266,11 +268,56 @@ You need to perform this step two times. One time for ML 1 and a second time for
 
 __Tool:__ [`Intersection`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#intersection)
 
+
+
+::::{grid} 2
+:::{grid-item-card} Instructions
+
 1. Click on `Vector` -> `Geoprocessing Tools` -> [`Intersection`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#intersection)
 2. `Input Layer`: ML 1 or ML 2
 3. `Overlay layer`: district_pop_sum
+4. Under `Intersection` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "ML1_Intersection" or "ML2_Intersection" and click `Save`
+5. Click `Run`
+
+__Result:__ After doing this for ML1 and ML2 you should have two polygon layers, each containing all columns of ML1 (or ML2) and district_pop_sum.
+
+The resulting layer can have more rows than the original layers.
+
+:::
+
+:::{grid-item-card} Intersection for ML 1
+
+```{figure} /fig/SRCS_Trigger_step_4_Intersection.png
+---
+width: 500px
+name: 
+align: center
+---
+```
+
+:::
+::::
 
 
+
+::::{grid} 2
+:::{grid-item-card} Instructions
+
+:::
+:::{grid-item-card} 
+```{figure} /fig/SRCS_Trigger_step_4_Intersection.png
+---
+width: 500px
+name: 
+align: center
+---
+```
+:::
+::::
+
+The video shows the whole process on the example of ML 1.
+
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_4_Intersection.mp4"></video>
 
 ### Step 5: Calculation of Population per  Intersection Polygon
 
@@ -282,17 +329,38 @@ align: center
 ---
 ```
 
-__Purpose:__ 
+__Purpose:__ Here we calculate the population in each polygon of the intersection layer from step 4.
+
 ```{Attention}
 You need to perform this step two times. One time for ML 1 and a second time for ML 2.
 ```
+
 __Tool:__  [`Zonal Statistics`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics)
 
-1. Click `Processing`-> `Toolbox` -> Search for [`Zonal Statistics`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics)
-2. `Input Layer`: Intersection Polygons
-3. `Raster Layer`: som_ppp_2020_UNadj_constrained.tif
-4. Statistics to calculate: `Sum`
+::::{grid} 2
+:::{grid-item-card} Instructions
+1.  In the `Toolbox` -> Search for [`Zonal Statistics`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics)
+  * Tip: If the `Toolbox` is not opne click `Processing`-> `Toolbox`
+2. `Input Layer`: "ML1_Intersection" or "ML2_Intersection"
+3. `Raster Layer`: "som_ppp_2020_UNadj_constrained.tif"
+4. Statistics to calculate: Only `Sum`
+5.  Under `Zonal Statistics` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "ML1_zonal_statistic" or "ML2_zonal_statistic" and click `Save`
+5. Click `Run`
 
+__Result:__ The result should be the “ML1_zonal_statistic” and “ML2_zonal_statistic” polygon layers. These layers should have the same columns in the attribute table __plus__ the column “_sum”, which is the number of people living in the single parts of the polygons.
+:::
+:::{grid-item-card} Zonal statistics for ML1
+```{figure} /fig/SRCS_Trigger_step_5_zonal_statistic.png
+---
+width: 1000px
+name: 
+align: center
+---
+```
+:::
+::::
+
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_5_zonal_statistic.mp4"></video>
 
 
 ### Step 6: Weighting of the Population based on IPC-Phase
@@ -305,19 +373,21 @@ align: center
 ---
 ```
 
-__Purpose:__ 
+__Purpose:__ The purpose of this step is the weighting of the population ins the five IPC pahses as discribt in [IPC Data](file:///C:/HeiGIT/RCRC_GIS_Training/gis-training-resource-center/_build/html/content/GIS_AA/en_qgis_drought_trigger_somalia.html#ipc-data).
 
 ```{Attention}
 You need to perform this step two times. One time for ML 1 and a second time for ML 2.
 ```
 __Tool:__  [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field)
 
-1. Right-click on Intersection_population Polygons layer -> `Attribute Table`-> click on [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field) ![](/fig/mActionCalculateField.png) to open the field calculator
+
+1. Right-click on the layer “ML1_zonal_statistic” (or “ML2_zonal_statistic”) -> `Open Attribute Table`-> click on [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field) ![](/fig/mActionCalculateField.png) to open the field calculator
 2. Check “Create new field"
 3. `Output field name`: Name the new column “pop_sum_weighted”
-4. `Result field type`: Decimal
+4. `Result field type`: Decimal number (real)
 5. Add the code block from Input into the `Expression` field
 Click `ok`
+
 ``````{list-table}
 :header-rows: 1
 :widths: 15 15
@@ -326,22 +396,43 @@ Click `ok`
   - ML 2
 * - ```md
     CASE
+
     WHEN "ML1" = 3 THEN "_sum" * 1
     WHEN "ML1" = 4 THEN "_sum" * 3
     WHEN "ML1" = 5 THEN "_sum" * 6
     ELSE "_sum"
-    END`
+
+    END
     ```
   - ```md
     CASE
+
     WHEN "ML2" = 3 THEN "_sum" * 1
     WHEN "ML2" = 4 THEN "_sum" * 3
     WHEN "ML2" = 5 THEN "_sum" * 6
     ELSE "_sum"
+
     END
     ```
 ``````
-6. Save the new column by clicking on ![](/fig/mActionSaveEdits.png) in the attribute table
+6. Save the new column by clicking on ![](/fig/mActionSaveEdits.png) in the attribute table and end the editing mode by clicking on ![](/fig/mActionToggleEditing.png)
+
+Here is the `Field Calculator` window of how it should look to calculate pop_sum_weighted for ML1.
+
+```{figure} /fig/SRCS_Trigger_step_6_field_calculator.png
+---
+width: 700px
+name: 
+align: center
+---
+```
+__Result:__ The two layers “ML1_zonal_statistic” and “ML2_zonal_statistic” should now both have the column “pop_sum_weighted”.
+
+
+The video shows the whole process with the the example of ML 1.
+
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_6_field_calculators.mp4"></video>
+
 
 ### Step 7: Adding the total district population to Intersection Polygons
 
@@ -354,20 +445,44 @@ align: center
 ```
 
 
-__Purpose:__ 
+__Purpose:__ Now we want to add a column with the total district population to “ML1_zonal_statistic” and “ML2_zonal_statistic”.
+
 ```{Attention}
 You need to perform this step two times. One time for ML 1 and a second time for ML 2.
 ```
 
-__Tool:__[`Join attributes by field value`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html#join-attributes-by-field-value)
+__Tool:__ [`Join attributes by field value`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html#join-attributes-by-field-value)
 
-1. Click `Processing` -> `Toolbox`-> Search for [`Join attributes by field value`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html#join-attributes-by-field-value)
-2. `Input Layer`: Select your Intersection_population_weighted_total_pop” layer
+::::{grid} 2
+:::{grid-item-card} Instructions
+1. In the `Toolbox`-> Search for [`Join attributes by field value`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html#join-attributes-by-field-value)
+  * Tip: If the `Toolbox` is not opne click `Processing`-> `Toolbox`
+2. `Input Layer`: Select “ML1_zonal_statistic” (or “ML2_zonal_statistic”)
 3. `Table field`: Select “admin2Name”
 4. `Input Layer 2`: Select the layer “district_pop_som”
 5. `Table field 2`: Select “admin2Name”
-6. `Layer 2 field to copy`: Click on the three points and select “admin2Name” and “districtpop”
+6. `Layer 2 field to copy`: Click on the three points ![](/fig/Three_points.png) and select “admin2Name” and “districtpo”
 7. `Join type`: Select the option “Take attributes of the first matching feature only (one-to-one)
+8. Under `Join Layer [optional]` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "ML1_join" or "ML2_join" and click `Save`
+9. Click `Run`
+
+__Result:__ Now you should have to new polygon layer named “ML1_join” and ML2_Join” containing the column districtpo.
+:::
+:::{grid-item-card} 
+```{figure} /fig/SRCS_Trigger_step_7_join.png
+---
+width: 500px
+name: 
+align: center
+---
+```
+:::
+::::
+
+
+
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_7_join.mp4"></video>
+
 
 ### Step 8.: Calculation of Population Proportion per Intersection Polygon
 ```{figure} /fig/Drought_EAP_Worklow_Step_8_1.png
@@ -378,7 +493,7 @@ align: center
 ---
 ```
 
-__Purpose:__ 
+__Purpose:__ In this step we calculating the [IPC-Population Weighted Index](file:///C:/HeiGIT/RCRC_GIS_Training/gis-training-resource-center/_build/html/content/GIS_AA/en_qgis_drought_trigger_somalia.html#ipc-population-weighted-index) per district. 
 ```{Attention}
 You need to perform this step two times. One time for ML 1 and a second time for ML 2.
 ```
@@ -388,10 +503,28 @@ __Tool:__[`Field Calculator`](https://giscience.github.io/gis-training-resource-
 1. Right-click on Intersection_population Polygons layer -> “Attribute Table”-> click on  [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field) ![](/fig/mActionCalculateField.png)to open the field calculator
 2. Check “Create new field"
 3. “Output field name”: Name the new column “Index_per_IPCPolygon_ML1” (or "Index_per_IPCPolygon_ML2”)
-4. “Result field type”: Decimal
-5. Add the code: `"pop_sum_weighted"/"districtpo"` into the `Expression` field
+4. “Result field type”: Decimal number (real)
+5. Add the codeinto the `Expression` field
+```md
+"pop_sum_weighted"/"districtpo"
+```
 6. Click `ok`
-7. Save the new column by clicking on ![](/fig/mActionSaveEdits.png) in the attribute table
+7. Save the new column by clicking on ![](/fig/mActionSaveEdits.png) in the attribute table and end the editing mode by clicking on ![](/fig/mActionToggleEditing.png)
+
+```{figure} /fig/SRCS_Trigger_step_8_field_calculator.png
+width: 500px
+name: 
+align: center
+---
+```
+
+__Result:__ Both layer “ML1_join” and ML2_Join” should now have the column “Index_per_IPCPolygon_ML1” or “Index_per_IPCPolygon_ML2”. The numbers in this column have to be smaller than in the “district” column.
+
+The video shows the whole process with the the example of ML 1.
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_TRigger_step_8_field_calculator.mp4"></video>
+
+
+
 
 ### Step 9.: Calculate IPC Index per District
 ```{figure} /fig/
