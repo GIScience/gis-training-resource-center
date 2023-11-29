@@ -58,24 +58,23 @@ The Standarized Precipitation Index (SPI-12) compares the total rainfall receive
 The IPC is a commonly acceepted measure and classification to describe the current and anticipated severity of acute food insecurity. 
 The classification is based on a convergence of available data and evidence, including indicators related to food consumption, livelihoods, malnutrition and mortality. Food Insecurity is one of the prioritized impacts of droughts in Somalia which is why it is also used for the triggering mechanism, in a population-weighted index. 
 
+| Colour| Phase | Descriptions |
+| ----- | --- | --- |
+|![](/fig/IPC_Class_1.drawio.svg)|1. Minimal   |Households are able to meet essential food and non-food needs without engaging in atypical and unsustainable strategies to access food and income.   |
+|![](/fig/IPC_Class_2.drawio.svg)|2. Stressed   |Households have minimally adequate food consumption but are unable to afford some essential non-food expenditures without engaging in stress-coping strategies.  |
+|![](/fig/IPC_Class_3.drawio.svg)|3. Crisis   |Households either have food consumption gaps that are reflected by high or above-usual acute malnutrition __OR__ are marginally able to meet minimum food needs but only by depleting essential livelihood assets or through crisis-coping strategies.  |
+|![](/fig/IPC_Class_4.drawio.svg)|4. Emergency|Households either have large food consumption gaps which are reflected in very high acute malnutrition and excess mortality; __OR__ are able to mitigate large food consumption gaps but only by employing emergency livelihood strategies and asset liquidation.|
+|![](/fig/IPC_Class_5.drawio.svg)|5. Famine |Households have an extreme lack of food and/or other basic needs even after full employment of coping strategies. Starvation, death, destitution, and extremely critical acute malnutrition levels are evident. (For Famine Classification, area needs to have extreme critical levels of acute malnutrition and mortality.)  |
 
 
-```{figure} /fig/IPC_classes.png
----
-height: 100px
-name: QGIS LTR Version
-align: center
----
-```
-
-__IPC Food Security Projection:__
+#### IPC Food Security Projection:
 
 Three times a year (February, June, and October) FEWSNET estimates most likely IPC classes for the upcoming 8 month (near-term and mid-term projection), available from 2019-current. The near-term projection is called ML1 and is a projection for the upcoming 4 month, the mid-term projection is called ML2 and projects the IPC classes for the 4 subsequent months. For the triggering ML1 (near-term) as well as ML2 (mid-term) projections will be considered. 
 
 Outlook updates are produced almost every month and are also taken into account.
 
 
-__IPC-Population Weighted Index__
+#### IPC-Population Weighted Index
 
 To better operationalise the IPC data a simple population-weigthed index was developed. Relative population numbers are weighted based on the respective IPC class they fallin, in order to give the amount of people in a certain IPC class the importance instead of the IPC class only.
 Furthermore, population located in a higher IPC class is more important than population located in a lower class. The index is calculated as follows:
@@ -84,12 +83,13 @@ $ IPC\ Index =  Weights \times \frac{District\ Pop\ per\ IPC\ Phase}{Total\ Dist
 
 Where the weights are defined as:
 
-IPC 1 = 0\
-IPC 2 = 0\
-IPC 3 = 1\
-IPC 4 = 3\
-IPC 4 = 6 
-
+| IPC Pahse| Weight |
+| ----- | --- |
+|IPC 1  |0  |
+|IPC 2  |0  |
+|IPC 3  |1  |
+|IPC 4  |3  |
+|IPC 5  |6  |
 
 
 The IPC Index represents low-population districts equal to high-population districts. No underrepresentation of high food insecurity of small districts occurs.
@@ -108,13 +108,32 @@ name:
 align: center
 ---
 ```
-__Purpose:__ 
+__Purpose:__ In this step we set up the correct folder structure to make the analysis easier and to ensure consitent results. 
 
 __Tool:__ No special tools or programs are needed
 
+
+::::{grid} 2
+:::{grid-item-card} Instructions
 1. Open the Folder “FbF_Drought_Monitoring_Trigger"
 2. Open the subfolder "Monitoring"
 3. Copy the Template folder “TEMPLATE_Year_Month” and change the name to the current year and month. The result could be the folder "2022_05" 
+
+The Video below shows the process for setting up the folder for decmber 2023.
+ :::
+:::{grid-item-card} Folder structure FbF_Drought_Monitoring_Trigger
+
+```{figure} /fig/Folder_structure_FbF_Drought_Monitoring_Trigger.drawio.svg
+---
+width: 450px
+name: 
+align: center
+---
+```
+:::
+::::
+
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_folder_setup.mp4"></video>
 
 
 
@@ -226,6 +245,8 @@ __Purpose:__
 1. Open QGIS and create a [new project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`
 2. Once the project is created save the project in the folder you created in Step 1 (e.g. 2022_05). To do that click on `Project` -> `Save as` and navigate to the folder. Give the project the same name as the folder you created (e.g. 2022_05). Then click `Save`
 3. Load all input data in QGIS by [drag and drop](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-raster-data-via-drag-and-drop). Click on `Project` -> `Save` 
+
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_3.mp4"></video>
 
 
 ### Step 4: Intersection of ML 1 & ML 2 data with the district polygons 
