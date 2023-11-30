@@ -51,8 +51,7 @@ Go to the data source manager and choose GeoPackage on the right. Click on New t
 ### overpass turbo
 
 Overpass turbo is a web based data mining tool for OSM. By running a query, you can download the data and import it into your project. You can either run it by writing your query on the left or by using the wizard which will assist you in writing your queries. 
-
-> *Example*  
+> ***Example***  
 To search for schools in your bounding box or search area you can either write the query yourself or get it build by the wizard.  
 > **1. Check Tagging Guidelines**  
 >Search for it in the [OSM wiki](https://wiki.openstreetmap.org/wiki/Tags) and/or [taginfo](https://taginfo.openstreetmap.org). In our example it is: *amenity=school*  
@@ -143,8 +142,6 @@ Either use the wizard by tiping in *amenity=school in Heidelberg* or write your 
 For more information, check out the [wiki](https://wiki.openstreetmap.org/wiki/Overpass_turbo).
 ```
 
-
-
 ### Quick OSM plugin
 
 By installing the QuickOSM plugin you can run the query directly in QGIS to download data from OpenStreetMap. 
@@ -199,7 +196,7 @@ Each layer consists of geometric elements (points, lines or polygons) and an att
 Having a look into the attribute table can be helpful to get an overview on the data you are working with. It can also be used to select, filter or edit data.
 
 ### Open the attribute table
-
+2 ways
 
 ```{note} 
 If you have multiple layers, only the attribute table of the layer selected in the layer panel on the left will open. 
@@ -207,19 +204,12 @@ If you have multiple layers, only the attribute table of the layer selected in t
 
 ### Sort the information
 
-### Manually select
 
-
-<details>
-<summary>How to unselect</summary>
-<br>
-Explanation
-
-</details>
-
-### Filter
 
 ### Edit or change data
+edit
+add column
+delete
 
 
 ### Zoom to selected area
@@ -231,6 +221,27 @@ Explanation
 
 ## Feature selection
 
+**PowerPoint 8-22**
+
+
+### Manually select
+select
+save only selected
+
+<details>
+<summary>How to unselect</summary>
+<br>
+Explanation
+
+</details>
+
+### Select by location
+
+### Filter
+
+### Select feature by expression
+
+### Field calculator
 
 ## Basemap selection
 
