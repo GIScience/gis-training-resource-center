@@ -114,9 +114,6 @@ Screenshot of how to search for plugins
 
 You will see a new icon on your toolbar on the top. Now it is possible to search for your key:value in a given location and run the query. When the download is complete, you will get a notification. The result will be loaded in three temporary layers, one for nodes, ways and relations.
 
-```{note} 
-If you are unsure which key and value are used, take a look in the [OSM wiki](https://wiki.openstreetmap.org/wiki/Tags). 
-``````
 
 ```{figure} /fig/en_quickosmplugin.png
 ---
@@ -124,6 +121,9 @@ height: 500px
 name: quickosmplugin
 ---
 Screenshot of the QuickOSM plugin
+```
+```{note} 
+If you are unsure which key and value are used, take a look in the [OSM wiki](https://wiki.openstreetmap.org/wiki/Tags). 
 ```
 
 <details>
