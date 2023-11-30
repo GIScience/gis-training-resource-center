@@ -100,7 +100,7 @@ There are two file types of geographic data: **vector and raster**.
   
 
 > **Vector**  
-Vector data contains a shape or a geometry. By using geometry objects (points, lines and polygons) the real world is represented. Each object stores the location (as adress or coordinates) and further attributes, f. e. name or ID. Which geometry is used, depends on the feature it represents. 
+Vector data contains a shape or a geometry. By using geometry objects (points, lines and polygons) the real world is represented. Each object stores the location (as adress or coordinates) and further attributes, f. e. name or ID. Which geometry is used, depends on the feature it represents.
 ![Geometry vector data](../../fig/en_vector_geometry.png)
   >>Examples: buildings, streets 
 
