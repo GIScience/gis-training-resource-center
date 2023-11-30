@@ -45,14 +45,14 @@ To install plugins, you need to open the Plugin Manager:
 - Click on Settings and check the box “Show also experimental plugins”
 
 
-```
-{figure} /fig/experimental_plugins.png
+```{figure} /fig/experimental_plugins.png
 ---
 height: 400px
 name: experimental_plugins
 align: center
 ---
 ```
+
 
 - In the dialog that opens, find the Risk Assessment plugin.
 - Find information about the plugin by selecting it in the list.
@@ -79,8 +79,7 @@ It is important to follow the input file specifications exactly (see chapter 4.1
 The plugin will provide the user with two outputs. The Risk Assessment results on the administrative boundaries as a vector file containing geometries ready to be displayed in QGIS and the Risk Assessment results in a table format. The desired data format of the vector and text outputs can be chosen during the saving process. 
 
 
-```
-{figure} /fig/Interface.png
+```{figure} /fig/Interface.png
 ---
 height: 400px
 name: Interface
@@ -107,8 +106,7 @@ b.) __Vulnerability indicators:__ A "csv"-file containing a mandatory column "AD
 c) __Coping Capacity indicators:__ A "csv"-file containing a mandatory column "ADM2_PCODE" with the district codes and all columns that are included in the calculation of the coping-indicator. All columns that are not included in the calculation must start with the expression "ADM...".
 
 
-```
-{figure} /fig/Indicators_Vulnerability.png
+```{figure} /fig/Indicators_Vulnerability.png
 ---
 height: 400px
 name: Indicators_Vulnerability
@@ -120,8 +118,7 @@ align: center
 
 A "csv"-file containing a column "variable_name" with all the column names of the previous "csv"-files, which are to be weighted differently in the calculation. A factor for “weight” and “direction” can be determined. 
 
-```
-{figure} /fig/weights_example.PNG
+```{figure} /fig/weights_example.PNG
 ---
 height: 400px
 name: weights_example
@@ -164,8 +161,7 @@ The required "csv"-file containing population information based on [Worldpop Sex
 Alternatively, the population-file can also be created independently according to the following pattern. The "csv"-file based on the worldpop data contains the following columns (see Fig. 5), where the columns  “ADM2_PCODE” and “wpop_total” are mandatory and names cannot be changed. All other columns can be adjusted, but they need to be picked up and be consistent with the variable names in the Transform-file. This means that a population "csv"-file can be generated based on other available population data by the user as long as the two former mentioned columns exist.
 
 
-```
-{figure} /fig/populationfile_example.png
+```{figure} /fig/populationfile_example.png
 ---
 height: 400px
 name: tpopulationfile_example

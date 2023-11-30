@@ -691,11 +691,23 @@ __Trigger Activation__
 1. Right cklick on the “Trigger_activation” layer -> `Properties` -> `Symbology`
 2. In the drop-down menu on the top choose `Categorized`
 3. In the down left corner click on `Style` -> `Load Style`
-4. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger” folder and select the file “Style_Trigger_Activation.qml”.
+4. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file “Style_Trigger_Activation.qml”.
 5. Click `Open`. Then click on `Load Style`
 6. Back in the “Layer Properties” Window click `Apply` and `OK`
 
-You will now see all the districts with green or pink outline, depending on a occured trigger activation.
+
+You will now see districts where no trigger is activated in green and districts with trigger activation in pink.
+
+The “Style_Trigger_Activation.qml” style layer is configured to show the district names only where the trigger is actually activated. If there is no trigger activation you can activate the admin 1 boundary layer for better map orientation (see __Administrative 2 Boundaries__ below)
+
+```{figure} /fig/Map_yes_trigger.PNG
+---
+width: 1000px
+name: 
+align: center
+---
+```
+
 
 __Risk Assessment__
 
@@ -705,13 +717,19 @@ For this first of all load from "FbF_Drought_Monitoring_Trigger/Fixed_data/Risk_
 2. Repeat the steps from above for loading the style layer, but choose the “somalia_risk_assessment_style.qml” style layer.
 
 For the final visualization and right overlay of the risk assessment and the Trigger activation, make sure you "Trigger Activation" layer is above the
-"risk_assessment_districts" layer in the Layers Panel.
-You will now see districts where no trigger is activated in green and districts with trigger activation in pink.
+"risk_assessment_districts" layer in the Layers Panel ([Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_geodata_concept.html?highlight=layer#layer-concept)).
 
 
+__Administrative 2 Boundaries__
 
-### Step 15.: Making print map
-```{figure} /fig/
+For better orientation in the map, especially if no trigger is activated you can optionally load the regions boundaries with regions names:
+
+Navigate to "...\FbF_Drought_Monitoring_Trigger\Fixed_data\Regions" and load the "Som_Admbnda_Adm1_UNDP.shp" file into your layers panel.
+
+1. Right click on the "risk_assessment_districts" layer -> `Properties` -> `Symbology`
+2. Repeat the steps from above for loading the style layer, but choose the “somalia_risk_assessment_style.qml” style layer.
+
+```{figure} /fig/Map_no_trigger.PNG
 ---
 width: 1000px
 name: 
@@ -719,19 +737,48 @@ align: center
 ---
 ```
 
+__Basemap__
+
+Add a basemap to your map in order to have a nice background. We recommend to use OpenStreetMap as a baselayer, but you can also choose another basemap if you prefer.
+
+Find out [here](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html?highlight=osm#basemaps) how to add a basemap.
+
+
+
+```{Attention}
+Remember the [layer concept](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_geodata_concept.html?highlight=layer#layer-concept) and make sure the basemap layer is at the bottom of your layers panel.
+```
+
+
+
+### Step 15.: Making print map
+
+```{figure} /fig/
+---
+width: 1000px
+name: 
+align: center
+---
+```
+__Purpose:__ Viualization of the map features in a printable map layout
+
+__Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
+
+
 In order to easily visualize the output of the trigger analysis we provide you with a 
-[map template](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html#map-templates) that you can be used as a base for your visualization. You can find the template in the following directory: ".../FbF_Drought_Monitoring_Trigger/maps_somalia_template_risk_assessment.qpt".
+[map template](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html#map-templates) that can be used as a base for your visualization. You can find the template in the following directory: ".../FbF_Drought_Monitoring_Trigger/maps_somalia_template_risk_assessment.qpt".
 
 Check [here](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html#map-templates) how to open templates and how to use them in QGIS.
 
 You can also adapt the template to your needs and preferences. You can find help [here](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html#print-layout).
 
-
-__Purpose:__ 
-
-__Tool:__
+```{Attention}
+Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.
+```
 
 ### Step 16.: Exporting Map 
+
+
 ```{figure} /fig/
 ---
 width: 1000px
@@ -740,8 +787,23 @@ align: center
 ---
 ```
 
-__Purpose:__ 
+__Purpose:__ Export the designed and finalized map layout in order tp print it as a pdf or format of your choice.
 
-__Tool:__
+
+__Tool:__ [Print Layout](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
+
+
+```{figure} /fig/map_output example2.png
+---
+width: 1000px
+name: 
+align: center
+---
+```
+
+When you have finished the design of you map you can export it as pdf or image file in different datafromats.
+
+[Click here](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html?highlight=export#exporting-the-print-layout) to find the step by step on how to export your map.
+
 
 # Trigger Workflow Automated 
