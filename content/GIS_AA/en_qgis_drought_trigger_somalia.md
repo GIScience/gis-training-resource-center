@@ -563,9 +563,6 @@ __Result:__ As a result, your two layers "ML1_join_location" and "ML2_join_locat
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_9_join_location.mp4"></video>
 
 
-
-
-
  
 
 ### Step 10.: Join ML1 and ML2 I
@@ -577,7 +574,7 @@ align: center
 ---
 ```
 
-__Purpose:__ The purpose of this step is to merge “ML1_join_location" and "ML2_join_location” into one layer so that it can be jointly analysed.
+__Purpose:__ The purpose of this step is to merge “ML1_join_location" and "ML2_join_location” into one layer so we have the IPC-Index for all districts.
 
 __Tool:__ [`Join attributes by field value`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html#join-attributes-by-field-value)
 
@@ -592,8 +589,15 @@ __Tool:__ [`Join attributes by field value`](https://giscience.github.io/gis-tra
 7. Under `Join Layer` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "IPC_index_district" and click `Save`
 8. Click `Run`
 
+```{figure} /fig/SRCS_Trigger_step_10_IPC_Index_district.png
+width: 400px
+name: 
+align: center
+---
+```
 
-SRCS_Trigger_step_10_IPC_Index_district.png
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_10_join.mp4"></video>
+
 ### Step 11.: Calculation of SPI12 Mean per District
 ```{figure} /fig/Drought_EAP_Worklow_Step_11_1.png
 ---
@@ -607,11 +611,23 @@ __Purpose:__ Calculate the mean value over the SPI-12 values of all pixels that 
 
 __Tool:__ [`Zonal Statistics`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics)
 
-1. Click `Processing`-> `Toolbox` -> Search for  [`Zonal Statistics`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics)
+1. In the `Toolbox` -> Search for [`Zonal Statistics`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics)
+  * Tip: If the `Toolbox` is not opne click `Processing`-> `Toolbox`
 2. `Input Layer`: district_pop_som
 3. `Raster Layer`: SPI Forecast
 4. `Output column prefix`: Use  "SPI12_"
 5. `Statistics to calculate`: “Mean”
+6.  Under `Zonal Statistics` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "SPI12_district" and click `Save`
+5. Click `Run`
+
+```{figure} /fig/SRCS_Trigger_step_11_IPC_zonal_district.png
+width: 400px
+name: 
+align: center
+---
+```
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_11_zonal_staistics.mp4"></video>
+
 
 ### Step 12.: Join SPI12 Mean to the IPC Index
 ```{figure} /fig/Drought_EAP_Worklow_Step_12_1.png
@@ -627,12 +643,25 @@ __Purpose:__ The purpose of this step is to merge data from two different data s
 __Tool:__[`Join attributes by field value`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html#join-attributes-by-field-value)
 
 
-1. Click `Processing` -> `Toolbox`-> Search for [`Join attributes by field value`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html#join-attributes-by-field-value)
-2. `Input Layer`: Select your “IPC_index_district_ML2_ML2”
+1.  In the `Toolbox`-> Search for [`Join attributes by field value`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html#join-attributes-by-field-value)
+  * Tip: If the `Toolbox` is not opne click `Processing`-> `Toolbox`
+2. `Input Layer`: Select your “IPC_index_district”
 3. `Table field`: Select “admin2Name”
-4. `Input Layer 2`: Select your “SPI12_districts”
+4. `Input Layer 2`: Select your “SPI12_district”
 5. `Table field 2`: Select “admin2Name”
 6. `Join type`: Select the option “Take attributes of the first matching feature only (one-to-one)"
+7. Under `Join Layer` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "IPC_index_SPI_12_district" and click `Save`
+8. Click `Run`
+
+
+```{figure} /fig/SRCS_Trigger_step_12_IPC_SPI12_join.png
+width: 400px
+name: 
+align: center
+---
+```
+
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_12_join_IPC_SPI12.mp4"></video>
 
 ### Step 13.: Evaluate Trigger Activation 
 ```{figure} /fig/Drought_EAP_Worklow_Step_13_1.png
@@ -648,10 +677,10 @@ __Purpose:__ The purpose of this step is to gain a quick overview of possible tr
 __Tool:__ [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field)
 
 
-1. Right-click on Intersection_population Polygons layer -> `Attribute Table`-> click on  [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field) ![](/fig/mActionCalculateField.png) to open the field calculator
+1. Right-click on "IPC_index_SPI_12_district" layer -> `Attribute Table`-> click on  [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field) ![](/fig/mActionCalculateField.png) to open the field calculator
 2. Check `Create new field`
 3. `Output field name`: Name the new column “Trigger_activation”
-4. `Result field type`: Text
+4. `Result field type`: Text (string)
 5. Add the code below into the `Expression` field
 ``````{list-table}
 :header-rows: 1
@@ -659,18 +688,29 @@ __Tool:__ [`Field Calculator`](https://giscience.github.io/gis-training-resource
 
 * - Code
 * - ```md
-    `CASE
+    CASE
+
     WHEN "Index_per_IPCPolygon_ML1_mean" >0.7 AND "Index_per_IPCPolygon_ML2_mean" > 0.7
     AND
     "SPI12_mean" < -1
     THEN 'yes'
     ELSE 'no'
-    END`
+
+    END
     ```
 ``````
 6. Click `ok`
-7. Save the new column by clicking on ![](/fig/mActionSaveEdits.png) in the attribute table
+7. Save the new column by clicking on ![](/fig/mActionSaveEdits.png) in the attribute table and end the editing mode by clicking on ![](/fig/mActionToggleEditing.png)
 
+
+```{figure} /fig/SRCS_Trigger_step_13_trigger_evaluation.png
+width: 400px
+name: 
+align: center
+---
+```
+
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_13_trigger_activation.mp4"></video>
 
 
 ### Step 14.: Visualisation of results
@@ -688,7 +728,7 @@ __Tool:__ [Symbology](https://giscience.github.io/gis-training-resource-center/c
 
 __Trigger Activation__
 
-1. Right cklick on the “Trigger_activation” layer -> `Properties` -> `Symbology`
+1. Right cklick on the “Trigger_activation” (or "IPC_index_SPI_12_district") layer -> `Properties` -> `Symbology`
 2. In the drop-down menu on the top choose `Categorized`
 3. In the down left corner click on `Style` -> `Load Style`
 4. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file “Style_Trigger_Activation.qml”.
