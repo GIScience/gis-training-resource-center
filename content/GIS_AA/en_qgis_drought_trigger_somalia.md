@@ -543,13 +543,29 @@ __Tool:__
 1. In the `Toolbox`-> Search for `Join attribute by location (summary)`
   * Tip: If the `Toolbox` is not opne click `Processing`-> `Toolbox` 
 2. `Input Layer`: Select your “district_pop_som” layer
-3. `Input Layer 2`: Select your layer “Intersection_population_weighted_percentage
-Polygons” 
+3. `Input Layer 2`: Select “ML1_join” (or ML2_Join”)
 4. `Geometric predicate`: Select “Intersection”
-5. `Field to summarise`: Select “Index_per_IPCPolygon_ML1”
+5. `Field to summarise`: Select “Index_per_IPCPolygon_ML1” (or “Index_per_IPCPolygon_ML2” )
 6. `Summaries to calculate`: Chose only the option “mean”
-7. Under `Join Layer [optional]` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "ML1_join" or "ML2_join" and click `Save`
+7. Under `Join Layer` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "ML1_join_location" or "ML2_join_location" and click `Save`
 8. Click `Run`
+
+
+```{figure} /fig/SRCS_Trigger_step_9_join_location.png
+width: 500px
+name: 
+align: center
+---
+```
+__Result:__ As a result, your two layers "ML1_join_location" and "ML2_join_location" should have the column “Index_per_IPCPolygon_ML1_mean” or “Index_per_IPCPolygon_ML2_mean”. Furthermore, the number of rows should be the exact number of districts in Somalia and the polygons should have the exact shape of the districts.
+
+
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_9_join_location.mp4"></video>
+
+
+
+
+
  
 
 ### Step 10.: Join ML1 and ML2 I
@@ -561,17 +577,20 @@ align: center
 ---
 ```
 
-__Purpose:__ The purpose of this step is to merge data from two different data sets into one data frame so that it can be jointly analysed.
+__Purpose:__ The purpose of this step is to merge “ML1_join_location" and "ML2_join_location” into one layer so that it can be jointly analysed.
 
 __Tool:__ [`Join attributes by field value`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html#join-attributes-by-field-value)
 
-1. `Processing` -> `Toolbox`-> Search for [`Join attributes by field value`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html#join-attributes-by-field-value)
-2. `Input Layer`: Select your “IPC_Index_district” layer for ML 1
+1. In the `Toolbox`-> Search for [`Join attributes by field value`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html#join-attributes-by-field-value)
+  * Tip: If the `Toolbox` is not opne click `Processing`-> `Toolbox` 
+2. `Input Layer`: Select your "ML1_join_location" layer 
 3. `Table field`: Select “admin2Name”
-4. `Input Layer 2`: Select your “IPC_Index_district” layer for ML 2
+4. `Input Layer 2`: Select your "ML2_join_location" layer 
 5. `Table field 2`: Select “admin2Name”
 6. `Layer 2 field to copy`: Click on the three points and  select “Index_per_IPCPolygon_ML2_mean”
 7. `Join type`: Select the option “Take attributes of the first matching feature only (one-to-one)
+7. Under `Join Layer` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "ML1_join_location" or "ML2_join_location" and click `Save`
+8. Click `Run`
 
 ### Step 11.: Calculation of SPI12 Mean per District
 ```{figure} /fig/Drought_EAP_Worklow_Step_11_1.png
