@@ -50,7 +50,7 @@ Go to the data source manager and choose GeoPackage on the right. Click on New t
 
 ### overpass turbo
 
-Overpass turbo is a web based data mining tool for OSM. By running a query, you can download the data and import it into your project. You can either run it by writing your query on the left or by using the wizard which will assist you in writing your queries. 
+[Overpass turbo](https://overpass-turbo.eu) is a web based data mining tool for OSM. By running a query, you can download the data and import it into your project. You can either run it by writing your query on the left or by using the wizard which will assist you in writing your queries. 
 > ***Example***  
 To search for schools in your bounding box or search area you can either write the query yourself or get it build by the wizard.  
 > **1. Check Tagging Guidelines**  
