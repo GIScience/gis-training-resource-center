@@ -83,6 +83,16 @@ Either use the wizard by tiping in *amenity=school in Heidelberg* or write your 
 >>);
 >>out; 
 >>```
+>>>**Bounding Box**  
+>>>To query with a bounding box you need a special format. Specify it like so:
+>>> + s (southern limit in decimal degrees, lowest latitude)
+>>> + w (western limit in decimal degrees, lowest longitude)
+>>> + n (northern limit in decimal degrees, highest latitude)
+>>> + e (eastern limit in decimal degrees, highest longitude)
+>>>     + for example:  
+>>> ```sql
+>>>         node ["key"="value"] (s, w, n, e);
+>>>         out;
 >> ```{tip} 
 >>For more information on the query language check out the [Language Guide](https://wiki.openstreetmap.org/wiki/Overpass_API/Language_Guide).
 >>```
@@ -191,6 +201,10 @@ Having a look into the attribute table can be helpful to get an overview on the 
 ### Open the attribute table
 
 
+```{note} 
+If you have multiple layers, only the attribute table of the layer selected in the layer panel on the left will open. 
+```
+
 ### Sort the information
 
 ### Manually select
@@ -210,17 +224,10 @@ Explanation
 
 ### Zoom to selected area
 
-öffnen (2 ways)
-sort
-manually select / unselect
-filter
-zoom to selected
-edit change data 
 
 
-```{note} 
-If you have multiple layers, only the attribute table of the layer selected in the layer panel on the left will open. 
-``````
+
+
 
 ## Feature selection
 
