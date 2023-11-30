@@ -126,10 +126,6 @@ name: quickosmplugin
 Screenshot of the QuickOSM plugin
 ```
 
-```{dropdown}What do i do if there is no new icon?
-If you can't find your new icon for the plugin, select view - toolbars and check that the QuickOSM plugin has a tick to be shown.
-```
-
 <details>
 <summary>What do i do if there is no new icon?</summary>
 <br>
@@ -149,8 +145,21 @@ Screenshot of how to add a new icon
 
 ## Geo features and attributes
 
+Each layer consists of geometric elements (points, lines or polygons) and an attribute table. The attribute table contains information on each element of the layer, which is stored in a table as rows and columns. Each row corresponds to an element and each column to an attribute. Atrributes can be for example: ID, name, postal code, street name, ...
 
-Each vector feature in GIS includes both geographic information(where) and attributes(what)
+What can you do with that
+
+öffnen (2 ways)
+sort
+manually select / unselect
+filter
+zoom to selected
+edit change data 
+
+
+```{note} 
+If you have multiple layers, only the attribute table of the layer selected in the layer panel on the left will open. 
+``````
 
 ## Feature selection
 
