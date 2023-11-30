@@ -142,6 +142,8 @@ Screenshot of how to add a new icon
 ## Geo features and attributes
 
 
+Each vector feature in GIS includes both geographic information(where) and attributes(what)
+
 ## Feature selection
 
 
