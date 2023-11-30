@@ -71,7 +71,7 @@ By exporting the query as map, you can share your current view as link or image.
 
 ```{figure} /fig/en_overpass_turbo_map.png
 ---
-height: 250px
+height: 150px
 name: overpass_turbo_map
 ---
 Screenshot of how to export map in overpassturbo
@@ -112,7 +112,11 @@ name: search_plugin
 Screenshot of how to search for plugins
 ```
 
-You will see a new icon on your toolbar on the top. Now it is possible to search for your key:value in a given location and run the query. If you are unsure which key and value are used, take a look in the [OSM wiki](https://wiki.openstreetmap.org/wiki/Tags). 
+You will see a new icon on your toolbar on the top. Now it is possible to search for your key:value in a given location and run the query. When the download is complete, you will get a notification. The result will be loaded in three temporary layers, one for nodes, ways and relations.
+
+```{note} 
+If you are unsure which key and value are used, take a look in the [OSM wiki](https://wiki.openstreetmap.org/wiki/Tags). 
+``````
 
 ```{figure} /fig/en_quickosmplugin.png
 ---
@@ -120,6 +124,10 @@ height: 500px
 name: quickosmplugin
 ---
 Screenshot of the QuickOSM plugin
+```
+
+```{dropdown}What do i do if there is no new icon?
+If you can't find your new icon for the plugin, select view - toolbars and check that the QuickOSM plugin has a tick to be shown.
 ```
 
 <details>
