@@ -1,2 +1,2 @@
-# Basic QGIS
-
+# Basic QGIS exercise
+ 

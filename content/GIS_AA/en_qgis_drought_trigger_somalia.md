@@ -552,7 +552,7 @@ __Tool:__
 
 
 ```{figure} /fig/SRCS_Trigger_step_9_join_location.png
-width: 500px
+width: 400px
 name: 
 align: center
 ---
@@ -589,9 +589,11 @@ __Tool:__ [`Join attributes by field value`](https://giscience.github.io/gis-tra
 5. `Table field 2`: Select “admin2Name”
 6. `Layer 2 field to copy`: Click on the three points and  select “Index_per_IPCPolygon_ML2_mean”
 7. `Join type`: Select the option “Take attributes of the first matching feature only (one-to-one)
-7. Under `Join Layer` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "ML1_join_location" or "ML2_join_location" and click `Save`
+7. Under `Join Layer` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "IPC_index_district" and click `Save`
 8. Click `Run`
 
+
+SRCS_Trigger_step_10_IPC_Index_district.png
 ### Step 11.: Calculation of SPI12 Mean per District
 ```{figure} /fig/Drought_EAP_Worklow_Step_11_1.png
 ---
