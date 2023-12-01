@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-01T12:02:41.243Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="HR3UQkqHkuwDKrRcRqaV" version="22.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-01T13:38:57.015Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="1QhU8KAceTgW45IZcf5I" version="22.1.5" type="github">
   <diagram name="Seite-1" id="DYmZpvFpW-R7Gg1HzHR1">
-    <mxGraphModel dx="1571" dy="896" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1724" dy="973" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -63,7 +63,7 @@
         <mxCell id="8eLrpo6SyWcruf2TeNTN-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="1" source="DHKMJk7bjbN0Lc8U2Itu-10" target="rBDyEaz7XUgaB_4zMnyu-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DHKMJk7bjbN0Lc8U2Itu-10" value="Trigger_activation_Intervention_map.qpt&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;font size=&quot;1&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Style file containg color for final map&lt;/span&gt;&lt;/font&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#F5F5F5;fontStyle=1" parent="1" vertex="1">
+        <mxCell id="DHKMJk7bjbN0Lc8U2Itu-10" value="Trigger_activation_Intervention_map.qpt&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;font size=&quot;1&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Template of final map with infos and logos&lt;/span&gt;&lt;/font&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#F5F5F5;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="399" y="1500" width="300" height="40" as="geometry" />
         </mxCell>
         <mxCell id="8eLrpo6SyWcruf2TeNTN-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="1" source="8eLrpo6SyWcruf2TeNTN-11" target="rBDyEaz7XUgaB_4zMnyu-12" edge="1">
