@@ -112,31 +112,32 @@ __Purpose:__ In this step we set up the correct folder structure to make the ana
 
 __Tool:__ No special tools or programs are needed
 
+``````{list-table}
+:header-rows: 1
+:widths: 10 25
 
-::::{grid} 2
-:::{grid-item-card} Instructions
-1. Open the Folder “FbF_Drought_Monitoring_Trigger"
-2. Open the subfolder "Monitoring"
-3. Copy the Template folder “TEMPLATE_Year_Month” and change the name to the current year and month. The result could be the folder "2022_05" 
+* - Instruction
+  - Folder Structure
+* - 1. Open the Folder “FbF_Drought_Monitoring_Trigger"
+    2. Open the subfolder "Monitoring"
+    3. Copy the Template folder “TEMPLATE_Year_Month” and change the name to the current year and month. The result could be the folder "2022_05"
+    
+  -
+    ```{figure} /fig/          Folder_structure_FbF_Drought_Monitoring_Trigger.drawio.svg
+    ---
+    width: 450px
+    name: 
+    align: center
+    ---
+    ```
+``````
 
 The Video below shows the process for setting up the folder for decmber 2023.
- :::
-:::{grid-item-card} Folder structure FbF_Drought_Monitoring_Trigger
 
-```{figure} /fig/Folder_structure_FbF_Drought_Monitoring_Trigger.drawio.svg
----
-width: 450px
-name: 
-align: center
----
-```
-:::
-::::
 
+```{dropdown} Video: Setting up folder structure 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_folder_setup.mp4"></video>
-
-
-
+```
 
 ### Step 2: Download of the forecast data
 
@@ -240,15 +241,21 @@ align: center
 ---
 ```
 
-__Purpose:__ 
+__Purpose:__ In this step, all the data needed will be loaded into QGIS.
+
+__Tool:__ No specific tools are needed, only QGIS.
 
 1. Open QGIS and create a [new project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`
 2. Once the project is created save the project in the folder you created in Step 1 (e.g. 2022_05). To do that click on `Project` -> `Save as` and navigate to the folder. Give the project the same name as the folder you created (e.g. 2022_05). Then click `Save`
 3. Load all input data in QGIS by [drag and drop](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-raster-data-via-drag-and-drop). Click on `Project` -> `Save` 
 
+__Result:__ QGIS project with all necessary data ready to be analysed. 
+
 This video shows how to setup the QGIS project for April 2022 and how to import all data into the project.
 
+```{dropdown} Video: Loading data into QGIS
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_3.mp4"></video>
+```
 
 
 ### Step 4: Intersection of ML 1 & ML 2 data with the district polygons 
@@ -269,57 +276,38 @@ You need to perform this step two times. One time for ML 1 and a second time for
 __Tool:__ [`Intersection`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#intersection)
 
 
+``````{list-table}
+:header-rows: 1
+:widths: 20 25
 
-::::{grid} 2
-:::{grid-item-card} Instructions
-
-1. Click on `Vector` -> `Geoprocessing Tools` -> [`Intersection`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#intersection)
-2. `Input Layer`: ML 1 or ML 2
-3. `Overlay layer`: district_pop_sum
-4. Under `Intersection` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "ML1_Intersection" or "ML2_Intersection" and click `Save`
-5. Click `Run`
+* - Instruction
+  - Intersection
+* - 1. Click on `Vector` -> `Geoprocessing Tools` -> [`Intersection`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#intersection)
+    2.`Input Layer`: ML 1 or ML 2
+    3. `Overlay layer`: district_pop_sum
+    4. Under `Intersection` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "ML1_Intersection" or "ML2_Intersection" and click `Save`
+    5. Click `Run`
+  -
+    ```{figure} /fig/SRCS_Trigger_step_4_Intersection.png
+    ---
+    width: 450px
+    name: 
+    align: center
+    ---
+    ```
+``````
 
 __Result:__ After doing this for ML1 and ML2 you should have two polygon layers, each containing all columns of ML1 (or ML2) and district_pop_sum.
 
 The resulting layer can have more rows than the original layers.
 
-:::
-
-:::{grid-item-card} Intersection for ML 1
-
-```{figure} /fig/SRCS_Trigger_step_4_Intersection.png
----
-width: 500px
-name: 
-align: center
----
-```
-
-:::
-::::
-
-
-
-::::{grid} 2
-:::{grid-item-card} Instructions
-
-:::
-:::{grid-item-card} 
-```{figure} /fig/SRCS_Trigger_step_4_Intersection.png
----
-width: 500px
-name: 
-align: center
----
-```
-:::
-::::
 
 The video shows the whole process on the example of ML 1.
-
+```{dropdown} Video: Intersection of ML 1 & ML 2 data with the district polygons 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_4_Intersection.mp4"></video>
+```
 
-### Step 5: Calculation of Population per  Intersection Polygon
+### Step 5: Calculation of Population per Intersection Polygon
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_5_1.png
 ---
@@ -337,31 +325,35 @@ You need to perform this step two times. One time for ML 1 and a second time for
 
 __Tool:__  [`Zonal Statistics`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics)
 
-::::{grid} 2
-:::{grid-item-card} Instructions
-1.  In the `Toolbox` -> Search for [`Zonal Statistics`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics)
-  * Tip: If the `Toolbox` is not opne click `Processing`-> `Toolbox`
-2. `Input Layer`: "ML1_Intersection" or "ML2_Intersection"
-3. `Raster Layer`: "som_ppp_2020_UNadj_constrained.tif"
-4. Statistics to calculate: Only `Sum`
-5.  Under `Zonal Statistics` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "ML1_zonal_statistic" or "ML2_zonal_statistic" and click `Save`
-5. Click `Run`
+``````{list-table}
+:header-rows: 1
+:widths: 20 25
+
+* - Instruction
+  - Zonal Statistics
+* - 1.  In the `Toolbox` -> Search for [`Zonal Statistics`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics)
+    * Tip: If the `Toolbox` is not opne click `Processing`-> `Toolbox`
+    2. `Input Layer`: "ML1_Intersection" or "ML2_Intersection"
+    3. `Raster Layer`: "som_ppp_2020_UNadj_constrained.tif"
+    4. Statistics to calculate: Only `Sum`
+    5.  Under `Zonal Statistics` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "ML1_zonal_statistic" or "ML2_zonal_statistic" and click `Save`
+    5. Click `Run
+  -
+    ```{figure} /fig/SRCS_Trigger_step_5_zonal_statistic.png
+    ---
+    width: 450px
+    name: 
+    align: center
+    ---
+    ```
+``````
 
 __Result:__ The result should be the “ML1_zonal_statistic” and “ML2_zonal_statistic” polygon layers. These layers should have the same columns in the attribute table __plus__ the column “_sum”, which is the number of people living in the single parts of the polygons.
-:::
-:::{grid-item-card} Zonal statistics for ML1
-```{figure} /fig/SRCS_Trigger_step_5_zonal_statistic.png
----
-width: 1000px
-name: 
-align: center
----
-```
-:::
-::::
 
+
+```{dropdown} Video:  Calculation of Population per Intersection Polygon
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_5_zonal_statistic.mp4"></video>
-
+```
 
 ### Step 6: Weighting of the Population based on IPC-Phase
 
@@ -421,7 +413,7 @@ Here is the `Field Calculator` window of how it should look to calculate pop_sum
 
 ```{figure} /fig/SRCS_Trigger_step_6_field_calculator.png
 ---
-width: 700px
+width: 500px
 name: 
 align: center
 ---
@@ -431,8 +423,9 @@ __Result:__ The two layers “ML1_zonal_statistic” and “ML2_zonal_statistic�
 
 The video shows the whole process with the the example of ML 1.
 
+```{dropdown} Video: Weighting of the Population based on IPC-Phase
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_6_field_calculators.mp4"></video>
-
+```
 
 ### Step 7: Adding the total district population to Intersection Polygons
 
@@ -444,7 +437,6 @@ align: center
 ---
 ```
 
-
 __Purpose:__ Now we want to add a column with the total district population to “ML1_zonal_statistic” and “ML2_zonal_statistic”.
 
 ```{Attention}
@@ -453,38 +445,40 @@ You need to perform this step two times. One time for ML 1 and a second time for
 
 __Tool:__ [`Join attributes by field value`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html#join-attributes-by-field-value)
 
-::::{grid} 2
-:::{grid-item-card} Instructions
-1. In the `Toolbox`-> Search for [`Join attributes by field value`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html#join-attributes-by-field-value)
-  * Tip: If the `Toolbox` is not opne click `Processing`-> `Toolbox`
-2. `Input Layer`: Select “ML1_zonal_statistic” (or “ML2_zonal_statistic”)
-3. `Table field`: Select “admin2Name”
-4. `Input Layer 2`: Select the layer “district_pop_som”
-5. `Table field 2`: Select “admin2Name”
-6. `Layer 2 field to copy`: Click on the three points ![](/fig/Three_points.png) and select “admin2Name” and “districtpo”
-7. `Join type`: Select the option “Take attributes of the first matching feature only (one-to-one)
-8. Under `Join Layer [optional]` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "ML1_join" or "ML2_join" and click `Save`
-9. Click `Run`
+``````{list-table}
+:header-rows: 1
+:widths: 20 25
+
+* - Instruction
+  - Join attributes by field value
+* - 1. In the `Toolbox`-> Search for [`Join attributes by   field value`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html#join-attributes-by-field-value)
+      * Tip: If the `Toolbox` is not opne click `Processing`-> `Toolbox`
+    2. `Input Layer`: Select “ML1_zonal_statistic” (or “ML2_zonal_statistic”)
+    3. `Table field`: Select “admin2Name”
+    4. `Input Layer 2`: Select the layer “district_pop_som”
+    5. `Table field 2`: Select “admin2Name”
+    6. `Layer 2 field to copy`: Click on the three points ![](/fig/Three_points.png) and select “admin2Name” and “districtpo”
+    7. `Join type`: Select the option “Take attributes of the first matching feature only (one-to-one)
+    8. Under `Join Layer [optional]` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "ML1_join" or "ML2_join" and click `Save`
+    9. Click `Run`
+  -
+    ```{figure} /fig/SRCS_Trigger_step_7_join.png
+    ---
+    width: 450px
+    name: 
+    align: center
+    ---
+    ```
+``````
 
 __Result:__ Now you should have to new polygon layer named “ML1_join” and ML2_Join” containing the column districtpo.
-:::
-:::{grid-item-card} 
-```{figure} /fig/SRCS_Trigger_step_7_join.png
----
-width: 500px
-name: 
-align: center
----
-```
-:::
-::::
 
 
-
+```{dropdown} Video: Adding the total district population to Intersection Polygons
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_7_join.mp4"></video>
+```
 
-
-### Step 8.: Calculation of Population Proportion per Intersection Polygon
+### Step 8: Calculation of Population Proportion per Intersection Polygon
 ```{figure} /fig/Drought_EAP_Worklow_Step_8_1.png
 ---
 width: 1000px
@@ -493,7 +487,7 @@ align: center
 ---
 ```
 
-__Purpose:__ In this step we calculating the [IPC-Population Weighted Index](file:///C:/HeiGIT/RCRC_GIS_Training/gis-training-resource-center/_build/html/content/GIS_AA/en_qgis_drought_trigger_somalia.html#ipc-population-weighted-index)for every small part of the polygon layer. 
+__Purpose:__ In this step we calculating the [IPC-Population Weighted Index](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_drought_trigger_somalia.html#ipc-population-weighted-index) for every small part of the polygon layer. 
 ```{Attention}
 You need to perform this step two times. One time for ML 1 and a second time for ML 2.
 ```
@@ -512,22 +506,22 @@ __Tool:__[`Field Calculator`](https://giscience.github.io/gis-training-resource-
 7. Save the new column by clicking on ![](/fig/mActionSaveEdits.png) in the attribute table and end the editing mode by clicking on ![](/fig/mActionToggleEditing.png)
 
 ```{figure} /fig/SRCS_Trigger_step_8_field_calculator.png
+---
 width: 500px
 name: 
 align: center
 ---
 ```
 
-
 __Result:__ Both layer “ML1_join” and ML2_Join” should now have the column “Index_per_IPCPolygon_ML1” or “Index_per_IPCPolygon_ML2”. The numbers in this column have to be smaller than in the “district” column.
 
 The video shows the whole process with the the example of ML 1.
+
+```{dropdown} Video: Calculation of Population Proportion per Intersection Polygon
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_TRigger_step_8_field_calculator.mp4"></video>
+```
 
-
-
-
-### Step 9.: Calculate IPC Index per District
+### Step 9: Calculate IPC Index per District
 ```{figure} /fig/Drought_EAP_Worklow_Step_9_1.png
 ---
 width: 1000px
@@ -538,32 +532,39 @@ align: center
 
 __Purpose:__  The purpose of this step is to calculate a population weighted mean over the IPC classes that fall within a district, in order to give the amount of people living in a certain IPC class more importance than just the area affected by a certain IPC class. The result is a IPC Index value for each district.
 
-__Tool:__
+__Tool:__ `Join attribute by location (summary)`
 
-1. In the `Toolbox`-> Search for `Join attribute by location (summary)`
-  * Tip: If the `Toolbox` is not opne click `Processing`-> `Toolbox` 
-2. `Input Layer`: Select your “district_pop_som” layer
-3. `Input Layer 2`: Select “ML1_join” (or ML2_Join”)
-4. `Geometric predicate`: Select “Intersection”
-5. `Field to summarise`: Select “Index_per_IPCPolygon_ML1” (or “Index_per_IPCPolygon_ML2” )
-6. `Summaries to calculate`: Chose only the option “mean”
-7. Under `Join Layer` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "ML1_join_location" or "ML2_join_location" and click `Save`
-8. Click `Run`
+``````{list-table}
+:header-rows: 1
+:widths: 20 25
 
+* - Instruction
+  - Join attribute by location (summary)
+* - 1. In the `Toolbox`-> Search for `Join attribute by location (summary)`
+      * Tip: If the `Toolbox` is not opne click `Processing`-> `Toolbox` 
+    2. `Input Layer`: Select your “district_pop_som” layer
+    3. `Input Layer 2`: Select “ML1_join” (or ML2_Join”)
+    4. `Geometric predicate`: Select “Intersection”
+    5. `Field to summarise`: Select “Index_per_IPCPolygon_ML1” (or “Index_per_IPCPolygon_ML2” )
+    6. `Summaries to calculate`: Chose only the option “mean”
+    7. Under `Join Layer` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "ML1_join_location" or "ML2_join_location" and click `Save`
+    8. Click `Run`
+  -
+    ```{figure} /fig/SRCS_Trigger_step_9_join_location.png
+    ---
+    width: 450px
+    name: 
+    align: center
+    ---
+    ```
+``````
 
-```{figure} /fig/SRCS_Trigger_step_9_join_location.png
-width: 400px
-name: 
-align: center
----
-```
 __Result:__ As a result, your two layers "ML1_join_location" and "ML2_join_location" should have the column “Index_per_IPCPolygon_ML1_mean” or “Index_per_IPCPolygon_ML2_mean”. Furthermore, the number of rows should be the exact number of districts in Somalia and the polygons should have the exact shape of the districts.
 
-
+```{dropdown} Video: Calculate IPC Index per District
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_9_join_location.mp4"></video>
+```
 
-
- 
 
 ### Step 10.: Join ML1 and ML2 I
 ```{figure} /fig/Drought_EAP_Worklow_Step_10_1.png
@@ -578,27 +579,39 @@ __Purpose:__ The purpose of this step is to merge “ML1_join_location" and "ML2
 
 __Tool:__ [`Join attributes by field value`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html#join-attributes-by-field-value)
 
-1. In the `Toolbox`-> Search for [`Join attributes by field value`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html#join-attributes-by-field-value)
-  * Tip: If the `Toolbox` is not opne click `Processing`-> `Toolbox` 
-2. `Input Layer`: Select your "ML1_join_location" layer 
-3. `Table field`: Select “admin2Name”
-4. `Input Layer 2`: Select your "ML2_join_location" layer 
-5. `Table field 2`: Select “admin2Name”
-6. `Layer 2 field to copy`: Click on the three points and  select “Index_per_IPCPolygon_ML2_mean”
-7. `Join type`: Select the option “Take attributes of the first matching feature only (one-to-one)
-7. Under `Join Layer` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "IPC_index_district" and click `Save`
-8. Click `Run`
+``````{list-table}
+:header-rows: 1
+:widths: 20 25
 
-```{figure} /fig/SRCS_Trigger_step_10_IPC_Index_district.png
-width: 400px
-name: 
-align: center
----
+* - Instruction
+  - Join attribute by location (summary)
+* - 1. In the `Toolbox`-> Search for [`Join attributes by field value`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html#join-attributes-by-field-value)
+    * Tip: If the `Toolbox` is not opne click `Processing`-> `Toolbox` 
+    2. `Input Layer`: Select your "ML1_join_location" layer 
+    3. `Table field`: Select “admin2Name”
+    4. `Input Layer 2`: Select your "ML2_join_location" layer 
+    5. `Table field 2`: Select “admin2Name”
+    6. `Layer 2 field to copy`: Click on the three points and  select “Index_per_IPCPolygon_ML2_mean”
+    7. `Join type`: Select the option “Take attributes of the first matching feature only (one-to-one)
+    8. Under `Join Layer` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "IPC_index_district" and click `Save`
+    9. Click `Run`
+  -
+    ```{figure} /fig/SRCS_Trigger_step_10_IPC_Index_district.png
+    ---
+    width: 450px
+    name: 
+    align: center
+    ---
+    ```
+``````
+
+__Result:__ Layer with the districts of Somalia and the IPC-Index of each district.
+
+```{dropdown} Video: Join ML1 and ML2 I
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_10_join.mp4"></video>
 ```
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_10_join.mp4"></video>
-
-### Step 11.: Calculation of SPI12 Mean per District
+### Step 11: Calculation of SPI12 Mean per District
 ```{figure} /fig/Drought_EAP_Worklow_Step_11_1.png
 ---
 width: 1000px
@@ -611,25 +624,38 @@ __Purpose:__ Calculate the mean value over the SPI-12 values of all pixels that 
 
 __Tool:__ [`Zonal Statistics`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics)
 
-1. In the `Toolbox` -> Search for [`Zonal Statistics`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics)
-  * Tip: If the `Toolbox` is not opne click `Processing`-> `Toolbox`
-2. `Input Layer`: district_pop_som
-3. `Raster Layer`: SPI Forecast
-4. `Output column prefix`: Use  "SPI12_"
-5. `Statistics to calculate`: “Mean”
-6.  Under `Zonal Statistics` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "SPI12_district" and click `Save`
-5. Click `Run`
+``````{list-table}
+:header-rows: 1
+:widths: 20 25
 
-```{figure} /fig/SRCS_Trigger_step_11_IPC_zonal_district.png
-width: 400px
-name: 
-align: center
----
-```
+* - Instruction
+  - Zonal Statistics
+* - 1. In the `Toolbox` -> Search for [`Zonal Statistics`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics)
+    * Tip: If the `Toolbox` is not opne click `Processing`-> `Toolbox`
+    2. `Input Layer`: district_pop_som
+    3. `Raster Layer`: SPI Forecast
+    4. `Output column prefix`: Use  "SPI12_"
+    5. `Statistics to calculate`: “Mean”
+    6.  Under `Zonal Statistics` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "SPI12_district" and click `Save`
+    5. Click `Run``
+  -
+    ```{figure} /fig/SRCS_Trigger_step_11_IPC_zonal_district.png
+    ---
+    width: 450px
+    name: 
+    align: center
+    ---
+    ```
+``````
+
+__Result:__ A layer of all districts of Somalia with the mean SPI-12.
+
+
+```{dropdown} Video: Calculation of SPI12 Mean per District
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_11_zonal_staistics.mp4"></video>
+```
 
-
-### Step 12.: Join SPI12 Mean to the IPC Index
+### Step 12: Join SPI12 Mean to the IPC Index
 ```{figure} /fig/Drought_EAP_Worklow_Step_12_1.png
 ---
 width: 1000px
@@ -642,28 +668,39 @@ __Purpose:__ The purpose of this step is to merge data from two different data s
 
 __Tool:__[`Join attributes by field value`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html#join-attributes-by-field-value)
 
+``````{list-table}
+:header-rows: 1
+:widths: 20 25
 
-1.  In the `Toolbox`-> Search for [`Join attributes by field value`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html#join-attributes-by-field-value)
-  * Tip: If the `Toolbox` is not opne click `Processing`-> `Toolbox`
-2. `Input Layer`: Select your “IPC_index_district”
-3. `Table field`: Select “admin2Name”
-4. `Input Layer 2`: Select your “SPI12_district”
-5. `Table field 2`: Select “admin2Name”
-6. `Join type`: Select the option “Take attributes of the first matching feature only (one-to-one)"
-7. Under `Join Layer` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "IPC_index_SPI_12_district" and click `Save`
-8. Click `Run`
+* - Instruction
+  - Join attributes by field value
+* - 1.  In the `Toolbox`-> Search for [`Join attributes by field value`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html#join-attributes-by-field-value)
+      * Tip: If the `Toolbox` is not opne click `Processing`-> `Toolbox`
+    2. `Input Layer`: Select your “IPC_index_district”
+    3. `Table field`: Select “admin2Name”
+    4. `Input Layer 2`: Select your “SPI12_district”
+    5. `Table field 2`: Select “admin2Name”
+    6. `Join type`: Select the option “Take attributes of the first matching feature only (one-to-one)"
+    7. Under `Join Layer` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "IPC_index_SPI_12_district" and click `Save`
+    8. Click `Run`
+  -
+    ```{figure} /fig/SRCS_Trigger_step_12_IPC_SPI12_join.png
+    ---
+    width: 450px
+    name: 
+    align: center
+    ---
+    ```
+``````
+
+__Result:__ The result will be a layer of all districts of Somalia with the mean SPI-12 and the IPC-Index of each district.
 
 
-```{figure} /fig/SRCS_Trigger_step_12_IPC_SPI12_join.png
-width: 400px
-name: 
-align: center
----
+```{dropdown} Video: Join SPI12 Mean to the IPC Index
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_12_join_IPC_SPI12.mp4"></video>
 ```
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_12_join_IPC_SPI12.mp4"></video>
-
-### Step 13.: Evaluate Trigger Activation 
+### Step 13: Evaluate Trigger Activation 
 ```{figure} /fig/Drought_EAP_Worklow_Step_13_1.png
 ---
 width: 1000px
@@ -675,6 +712,7 @@ align: center
 __Purpose:__ The purpose of this step is to gain a quick overview of possible trigger activation without having to revise the actual data. Instead we will have a binary column with trigger = yes or no values.
 
 __Tool:__ [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field)
+
 
 
 1. Right-click on "IPC_index_SPI_12_district" layer -> `Attribute Table`-> click on  [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field) ![](/fig/mActionCalculateField.png) to open the field calculator
@@ -702,16 +740,19 @@ __Tool:__ [`Field Calculator`](https://giscience.github.io/gis-training-resource
 6. Click `ok`
 7. Save the new column by clicking on ![](/fig/mActionSaveEdits.png) in the attribute table and end the editing mode by clicking on ![](/fig/mActionToggleEditing.png)
 
+__Result:__ A layer with all districts of Somalia with a column of "Yes" and "No" values indicating whether the trigger levels have been reached or not.
 
 ```{figure} /fig/SRCS_Trigger_step_13_trigger_evaluation.png
-width: 400px
+---
+width: 500px
 name: 
 align: center
 ---
 ```
 
+```{dropdown} Video: Evaluate Trigger Activation 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_13_trigger_activation.mp4"></video>
-
+```
 
 ### Step 14.: Visualisation of results
 ```{figure} /fig/Drought_EAP_Worklow_Step_14_1.png
@@ -793,7 +834,7 @@ Remember the [layer concept](https://giscience.github.io/gis-training-resource-c
 
 ### Step 15.: Making print map
 
-```{figure} /fig/
+```{figure} /fig/Drought_EAP_Worklow_Step_15_1.png
 ---
 width: 1000px
 name: 
@@ -819,7 +860,7 @@ Make sure you edit the Map Information on the template, e.g. current date. Also 
 ### Step 16.: Exporting Map 
 
 
-```{figure} /fig/
+```{figure} /fig/Drought_EAP_Worklow_Step_16_1.png
 ---
 width: 1000px
 name: 
@@ -833,7 +874,7 @@ __Purpose:__ Export the designed and finalized map layout in order tp print it a
 __Tool:__ [Print Layout](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
 
 
-```{figure} /fig/map_output example2.png
+```{figure} /fig/map_output_example2.png
 ---
 width: 1000px
 name: 
