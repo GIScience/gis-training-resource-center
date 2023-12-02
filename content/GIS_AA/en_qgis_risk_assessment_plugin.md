@@ -47,7 +47,7 @@ To install plugins, you need to open the Plugin Manager:
 
 ```{figure} /fig/experimental_plugins.png
 ---
-height: 400px
+width: 400px
 name: experimental_plugins
 align: center
 ---
