@@ -47,7 +47,7 @@ To install plugins, you need to open the Plugin Manager:
 
 ```{figure} /fig/experimental_plugins.png
 ---
-width: 400px
+width: 500px
 name: experimental_plugins
 align: center
 ---
@@ -61,9 +61,9 @@ align: center
 
 How to open the plugin interface:
 
-- To use the Risk Assessment plugin open the Processing Toolbox.
+- To use the Risk Assessment plugin open the `Processing Toolbox`.
 - The Toolbox shows a list of all available algorithms.
-- At the bottom it should list HeiGIT Risk Assessment.
+- At the bottom it should list `HeiGIT Risk Assessment`.
 you can also search for “Risk Assessment” using the Search function of the Processing Toolbox
 - To execute the plugin, just double-click on its name.
 - A dialog called Calculate Risk Assessment should appear.
@@ -163,7 +163,7 @@ Alternatively, the population-file can also be created independently according t
 
 ```{figure} /fig/populationfile_example.png
 ---
-height: 400px
+width: 300px
 name: tpopulationfile_example
 align: center
 ---

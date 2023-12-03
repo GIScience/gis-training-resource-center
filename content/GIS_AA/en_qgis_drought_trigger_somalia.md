@@ -896,19 +896,18 @@ The [QGIS Model Designer](https://giscience.github.io/gis-training-resource-cent
 ## Load the model in the QGIS Model Designer
 
 1. Open the tool under `Processing` -> `Graphical Modeler`
-2. In the upper panel click `Model` -> `Open Model` and naviageto your folder "FbF_Drought_Monitoring_Trigger", mark the "Triggermodel_Somalia.model3" file an click on `Open`.
+2. In the upper panel click `Model` -> `Open Model` and naviageto your folder "FbF_Drought_Monitoring_Trigger", mark the "Triggermodel_Somalia.model3" file an click on `Open`. The model will open and you will see yellow, white and green boxes.
 
 ```{figure} /fig/Model_Designer.PNG
 ---
-width: 400px
+width: 700px
 name: 
 align: center
 ---
 ```
 
-The model will open and you will see yellow, white and green boxes.
 
-| Box Color| Significance | Description |
+| Box | Significance | Description |
 | ----- | --- | --- |
 |Yellow| Model Input |Definition of the Inut data for the model the model will perform on|
 |White| Algorithms | Algorithms or Tools are specific geoprocessing steps that perform specific tasks, such as clipping, reprojecting or buffering. |
@@ -940,18 +939,16 @@ The model will open and you will see yellow, white and green boxes.
     __Model Output__
 
     The model outputs 3 results:
-    1. Trigger_activation ()
-    2. ML2_ML1_Indices_joined
-    3. SPI12_mean_IPC_Indices_joined
+    1. Trigger_activation (binary information if trigger is activated or not)
+    2. ML2_ML1_Indices_joined (interim result: values of ML1 and ML2 indices in together)
+    3. SPI12_mean_IPC_Indices_joined (interim result: SPI 12 forecast mean per district)
 
-    For each output you click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month/Results]. Give the output the respective name ("STrigger_activation", "ML2_ML1_Indices_joined" or "SPI12_mean_IPC_Indices_joined" and click `Save`.
+    For each output you click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder "FbF_Drought_Monitoring_Trigger\Monitoring\Year_Month". Give the output the respective name ("Trigger_activation", "ML2_ML1_Indices_joined" or "SPI12_mean_IPC_Indices_joined" and click `Save`.
 
       ```{Note}  
-     If you check the checkbox for `Open Outour file after running algorithm` the results will be automatically loaded to your layers panel.
+     If you check the checkbox for `Open Output file after running algorithm` the results will be automatically loaded to your layers panel.
      ```
 
     5. Click `Run`
 
-     ```{Note}  
-     If you `Open Outour file after running algorithm`
-     ```
+    
