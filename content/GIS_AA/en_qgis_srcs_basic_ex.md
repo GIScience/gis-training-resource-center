@@ -1,21 +1,8 @@
-# Exercise 1: Somalia healthcare and accessibility 
+# QGIS Basic Exercise SRCS
 
 ### Aim of exercise
 The goal of the exercise is to get to know the basic functionality of QGIS and how to handle geodata.
 
-As an example, we will create a map which shows the position of hospitals and the population of districts in Somalia.
-
-
-
-**Data:**
-You find all of the data in the training folder: *GIS_Trainig_Data/Exercise_1*
-
-Somalia_country.shp
-Somalia_health_facilities_WHO.shp
-Somalia_Districts.gpkg
-Somalia_District_Pop.gpkg
-Somalia_roads.gpkg
-Somalia_airports.csv
  
 ## Task 1: Folder and data structure
 1.	Save the folder Exercise_1 on your computer. Check out the folder structure in the Exercise_1 folder.  
@@ -33,9 +20,13 @@ Intermediate results should also be saved in the “temp” folder. The final re
 1.	Open QGIS and create a new project by cliking  on `Project` -> `New Project` ([Wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html)).
 2. To give the project a name Click on `Project` -> `Save As`. Navigate to "Exercise_1" and open the "project" folder. Give your project the name "Exercise_1" and click on `Save`. Now you should see the name of your project in the upper left corner of your QGIS.
 3.	Open the file **"Somalia_country.shp"** in QGIS. Click on the `Layer` Tab in the upper left corner -> `Vector`. Select **"Somalia_country.shp"**. Click `Add` ([Wiki Import Vector layer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab))
+:::{dropdown} Video: Import Vector data
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_vector.mp4"></video>
+:::
 4. Open the file **Somalia_District_pop.gpkg** in QGIS. Use the drag-and-drop method. Click on the file and pull the file directly into your Layers window.
+:::{dropdown} Video: Import data by drag and dop
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_vector_d_d.mp4"></video>
+:::
 5. Open the files **"Somalia_District_pop.gpkg"** and **Somalia_airports.gpkg** with either drag and drop or via `Layer` -> `Vector`.
 6.	Save your project by clicking on the “Save Project” button (small disc in the upper left corner).
 
@@ -58,21 +49,28 @@ Intermediate results should also be saved in the “temp” folder. The final re
 
 6. __Locator bar__. Here you can __search for tools and layers__. If you don't know where to find a tool, you can try here.
 
-__Offical QGIS Documentation: [An Overview of the Interface](https://docs.qgis.org/3.4/de/docs/training_manual/introduction/overview.html)__
 
-___
 
 ## Task 4: Layer concept
-__[Layer concept](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html#layer-concept)__
+
 
 In this task, we familiarise ourselves with the layer window (Layer List). The concept means that a map in GIS is always a combination of multiple layers. We can combine the layers in many different ways and thus get different results.
-1. Switch off the Somalia_country layer by removing the check on the layer panel ([Wiki](file:///C:/HeiGIT/RCRC_GIS_Training/gis-training-resource-center/_build/html/content/Wiki/en_qgis_layer_concept_wiki.html#hide-and-show-layers)).
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_show_hide_layer.mp4"></video> 
-2. Change the hierarchy of your layers so that Somalia_airports is at the top, followed by Somalia_District_pop. Move the layer up and down in the Layer panel by drag-and-drop [Wiki](file:///C:/HeiGIT/RCRC_GIS_Training/gis-training-resource-center/_build/html/content/Wiki/en_qgis_layer_concept_wiki.html#move-layers-in-the-hierarchy).
+
+You can find more infos in the __[Wiki Layer concept](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html#layer-concept)__.
+
+1. Switch off the Somalia_country layer by removing the check on the layer panel ([Wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html#hide-and-show-layers)).
+:::{dropdown} Video: Show and hide layers
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_show_hide_layer.mp4"></video>
+:::{dropdown} Video: 
+2. Change the hierarchy of your layers so that Somalia_airports is at the top, followed by Somalia_District_pop. Move the layer up and down in the Layer panel by drag-and-drop [Wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html#move-layers-in-the-hierarchy).
+:::{dropdown} Video: Import data by drag-and-drop
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_layer_hierarchy.mp4"></video>
+:::
 3. Move th Somalia_country layer to the top and switch it on. What happens?
 4. Change the name of the layer Somalia_airports to Airports by right click on your layer --> `Rename Layer`
+:::{dropdown} Video: Change Layer Name
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_rename_layer.mp4"></video>
+:::
 5. To the properties of a layer right click on your layer -> `Properies` -> `Information`. 
     5.1 When were the layer Somaliland:district_pop last modified?
     5.2 How many features does the airport layer have?
@@ -81,29 +79,35 @@ In this task, we familiarise ourselves with the layer window (Layer List). The c
 ```{Tip}
 If you have "lost" your layer right click on your layer -> `Zoom to layer(s)`
 
-([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html#have-you-lost-your-layer))
+__[Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html#have-you-lost-your-layer)__
 ```
 
 ## Task 5: Attribute tables
 
 The attribute table, a core component of Geographic Information Systems (GIS), organizes and presents detailed information about features in a selected layer. Each row in the table represents a feature, while columns store specific attributes. This table facilitates searching, selection, sorting, filtering, and editing of features.
 
-__Example__
+__Example of an attribute table__
 
 ![Example of an attribute table](/fig/attribute_table.png)
 
-__[Wiki Attribute Table](file:///C:/HeiGIT/RCRC_GIS_Training/gis-training-resource-center/_build/html/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-in-qgis)
+__[Wiki Attribute Table](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-in-qgis)
 
-1. Open the attribute table of Somaliliand_district_pop. Right-click on Somaliliand_district_pop --> `Open Attribute Table` ([Wiki]())
+1. Open the attribute table of Somaliliand_district_pop. Right-click on Somaliliand_district_pop --> `Open Attribute Table` ([Wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html))
+:::{dropdown} Video: Open attribute Table
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_show_attribute_table.mp4"></video>
+:::
 2. Sort by "Population" by clicking on the column header. 
 3. In the attribute table select the feature “Berbera” by clicking on the left edge of the row.
+:::{dropdown} Video: Select features in Attribute Table
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_attribute_table_select.mp4"></video>
+:::
 4. To select more features press `Ctrl` and click on the features.
 5. To only see selected features click in the down left corner of the attribute table on the drop-down menu and select `Show selected features`. To show again all features click on `Show all features`. 
 6. To only show unselect features and click on ![](/fig/mActionInvertSelection.png) in the attribute table. 
 7. To unselect all features click on ![](/fig/mActionDeselectActiveLayer.png) in the attribute table
+:::{dropdown} Video: Unselect features
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_attribute_table_unselect.mp4"></video>
+:::
 8. To zoom to one feature right click on your feature --> `Zoom To Feature`
 
 
@@ -133,49 +137,63 @@ All the styling in QGIS happens in `Symbology`
 :::
 
 
+### Task 7: Clipping and Extract by location
+1.	Import the file **Sub_Saharan_health_facilities_OSM.gpkg** in QGIS.
+::: {dropdown} Video: Import data by drag and drop
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_vector_d_d.mp4"></video>
+:::
+2.	The layer **Sub_Saharan_health_facilities_OSM** includes health facilities in Somaliland and Somalia. We only want to use the facilities in Somaliland. To cut the layer to the size of Somaliland we will use the tool __[clip](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#clip). Open the `Porcessing Toolbox` by cliking on `Processing` -> search for “Clip” 
+:::{dropdown} Video: Open `Processing toolbox`
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_toolbars.mp4"></video>
+:::
+3. In the window of the Clip tool...
 
-### Data visualization - Categorized classification of lines
-18.	Open the file **Somalia_roads.gpkg** in QGIS.
-19.	As you can see the road network layer like this is not very useful. We only want to identify the important roads. 
-First, let's have a look at the attribute table. As you can see in the column “highway” the different types of roads are listed. We can the info from this column to only show important roads. To do so close the attribute table and open the Layers styling panel.
-Select the layer **Somalia_roads**. Instead of Single Symbols choose *Categorized*. In the *Value* drop-down menu select the column *“highway”*. Then click on *classify*.
-Now uncheck all boxes except “secondary”, “secondary_link”, “tertiary”, “trunk” and “trunk_link”.
-
-![Figure](../../fig/QGIS_basics_Fig9.png)
-
-
-### Clipping and Extract by location
-20.	Open the file **Sub_Saharan_health_facilities_OSM.gpkg** in QGIS 
-21.	The layer **Sub_Saharan_health_facilities_OSM** includes health facilities in Somalia and Somalia. We only want to use the facilities in Somalia. 
-There are two methods for cutting the data to our area of interest, the Extract by location method and the Clip method.
-* **Extract by location**: *Processing Toolbox -> search for “Extract by location”*. Extract feature from: **Sub_Saharan_health_facilities_OSM** By comparing to the features from **Somalia_country**.
-Extracted (location): **Somalia_health_facilities_WHO**
-Click *Run*
-
-![Figure](../../fig/QGIS_basics_Fig10.png)
-
-* Clip: Porcessing *Toolbox -> search for “Clip”*x
-Input Layer: **Sub_Saharan_health_facilities_OSM**
-Overlay Layer: **Somalia_country**
-Clipped: **Somalia_health_facilities_OSM**
-Click *Run*
-
-![Figure](../../fig/QGIS_basics_Fig11.png)
+    1. `Input Layer`: "Somalia_health_facilities_OSM"
+    2. `Overlay Layer`: "Somaliland_country"
+    3. `Clipped`: Click on the three points  ![](/fig/Three_points.png) -> `Save to File` -> search for your "temp" folder -> give the result layer the name "Somaliland_health_facilities_OSM" and click on `Save`
+    4. Click `Run`
+```{figure} /fig/QGIS_basics_Fig11.png
+---
+width: 400px
+name: 
+align: center
+---
+```
+:::{dropdown} Video: Clip example
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_clip_wiki.mp4"></video>
+:::
+4. Now you should have a new point layer with all health facilities in Somaliland. Delete the old "Sub_Saharan_health_facilities_OSM" layer by right-click on the layer -> `Remove layer`
 
 
-### Data visualization- Categorized classification of Points
-22.	If you check the attribute table of your new **Somalia_health_facilities_WHO** layer you can see in the “Facility t” column that there are different types of health facilities. We only want to show the hospitals on our map. To do so you can use the same workflow as with the roads.
+
+### Task 8: Data visualization- Categorized classification of Points
+
+Categorized classification in QGIS groups spatial data into distinct categories based on specific attributes. This classification enhances the organization and interpretation of geospatial information for clearer insights.
+1. Open the attribute table of "Somaliland_health_facilities_OSM" by right click on "Somaliland_health_facilities_OSM" -> `Open Attribute Table`
+2. Check out the column “Facility t”. This column has the data on the type of the health facility. As you can see there are not just hospitals but many different typs of facilities like Health posts.
+3. To categorise all facilities by type on the map, open the symbology window. Right-click on the "Somaliland_health_facilities_OSM" layer -> `properties`-> `symbology`
+4. Click on `Categorized`
+5. `Value`: “Facility t”.
+Further down the window click on `Classify`.  Now you should see all unique values or attributes of the selected “Facility t” column.
+6. We only want to see the hospitals, so uncheck Maternal & Child Health Centre, Health Post and Health Center.
+6. Click `Apply`
+```{figure} /fig/QGIS_basics_Fig12.png
+---
+width: 400px
+name: 
+align: center
+---
+```
+:::{dropdown} Video: Categorized classification Example 
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Classify_by_categorized.mp4"></video>
+:::
+7. To use a prearranged style for the hospitals go to the Symbology window. In the down left corner click on `Style` -> `Load Style`
+4. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the "Project" folder -> "Style" folder and select the file “Hospital_style_training.qml. ([Wiki](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_I.html#exporting-and-importing-styles))
+5. Click `Open`. Then click on `Load Style`
+6. Back in the “Layer Properties” Window click `Apply` and `OK`
+
 
 ![Figure](../../fig/QGIS_basics_Fig12.png)
-
-
-### Labels
-23.	To add the names of the districts to the map use the Layers Styling Panel. Select the **Somalia_District_pop** layer and click on *Labels*.
-Use the select *Single labels* and in the value drop-down menu select “admin2Name”.
-Add buffer around the names of the districts by clicking on *Buffer* and checking the box *Draw text buffer*.
-
-![Figure](../../fig/QGIS_basics_Fig13.png)
-
 
 
 
