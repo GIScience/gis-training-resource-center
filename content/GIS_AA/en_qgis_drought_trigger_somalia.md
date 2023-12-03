@@ -141,7 +141,7 @@ The Video below shows the process for setting up the folder for decmber 2023.
 
 ### Step 2: Download of the forecast data
 
-```{figure} /fig/Drought_EAP_Worklow_Step_2_1.png
+```{figure} /fig/Drought_EAP_Worklow_Step_2_2.png
 ---
 width: 1000px
 name: 
@@ -151,10 +151,10 @@ align: center
 
 __Purpose:__ 
 
-__Tool:__ FileZilla
+__Tool:__ FileZilla and Interent Browser
 
-The current plans provide that ICPAC will monthly provide the SPI-12 Forcast whereas the IPC data will be pulled from the FEWSNET website. FEWS NET publishes IPC data on its website. 
-The main publications plus the updates of the IPC data amount to the publication of new data almost monthly.
+The current plans provide that ICPAC will monthly provide the SPI-12 forcast whereas the IPC data will be pulled from the FEWSNET website. FEWS NET publishes IPC data on its website. 
+The main data publications plus the updates of the IPC data amount to the publication of new data almost monthly.
 
 ### SPI-12 Data
 
@@ -166,7 +166,7 @@ ICPAC will provide the SPI-12 forecasts on their FTP (File Transfer Protocol). T
 3. Open FileZilla
 
 
-4. Establish a connection to the FTP Server by insterting the credentials you have been passed (Host, Username and Password) and clicking "Quickconnect".
+4. Establish a connection to the FTP Server by insterting the credentials you have been passed (Host, Username and Password) and clicking `Quickconnect`.
 
 
 In FileZilla you have four windows. On the left hand side you will see the folder on your computer in the upper window. By clicking on a folder, the documents in the folder will be shown in the lower left window.
@@ -299,7 +299,9 @@ __Tool:__ [`Intersection`](https://giscience.github.io/gis-training-resource-cen
 
 __Result:__ After doing this for ML1 and ML2 you should have two polygon layers, each containing all columns of ML1 (or ML2) and district_pop_sum.
 
+```{Note}
 The resulting layer can have more rows than the original layers.
+```
 
 
 The video shows the whole process on the example of ML 1.
@@ -365,7 +367,7 @@ align: center
 ---
 ```
 
-__Purpose:__ The purpose of this step is the weighting of the population ins the five IPC pahses as discribt in [IPC Data](file:///C:/HeiGIT/RCRC_GIS_Training/gis-training-resource-center/_build/html/content/GIS_AA/en_qgis_drought_trigger_somalia.html#ipc-data).
+__Purpose:__ The purpose of this step is the weighting of the population in the five IPC phases as described in [IPC Data](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_drought_trigger_somalia.html#ipc-population-weighted-index).
 
 ```{Attention}
 You need to perform this step two times. One time for ML 1 and a second time for ML 2.
@@ -495,10 +497,10 @@ You need to perform this step two times. One time for ML 1 and a second time for
 __Tool:__[`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field)
 
 1. Right-click on Intersection_population Polygons layer -> “Attribute Table”-> click on  [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field) ![](/fig/mActionCalculateField.png)to open the field calculator
-2. Check “Create new field"
-3. “Output field name”: Name the new column “Index_per_IPCPolygon_ML1” (or "Index_per_IPCPolygon_ML2”)
-4. “Result field type”: Decimal number (real)
-5. Add the codeinto the `Expression` field
+2. Check `Create new field`
+3. `Output field name`: Name the new column “Index_per_IPCPolygon_ML1” (or "Index_per_IPCPolygon_ML2”)
+4. `Result field type`: Decimal number (real)
+5. Add the code into the `Expression` field
 ```md
 "pop_sum_weighted"/"districtpo"
 ```
@@ -566,7 +568,7 @@ __Result:__ As a result, your two layers "ML1_join_location" and "ML2_join_locat
 ```
 
 
-### Step 10.: Join ML1 and ML2 I
+### Step 10.: Join ML1 and ML2
 ```{figure} /fig/Drought_EAP_Worklow_Step_10_1.png
 ---
 width: 1000px
@@ -611,7 +613,7 @@ __Result:__ Layer with the districts of Somalia and the IPC-Index of each distri
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_10_join.mp4"></video>
 ```
 
-### Step 11: Calculation of SPI12 Mean per District
+### Step 11: Calculation of SPI-12 Mean per District
 ```{figure} /fig/Drought_EAP_Worklow_Step_11_1.png
 ---
 width: 1000px
@@ -631,7 +633,7 @@ __Tool:__ [`Zonal Statistics`](https://giscience.github.io/gis-training-resource
 * - Instruction
   - Zonal Statistics
 * - 1. In the `Toolbox` -> Search for [`Zonal Statistics`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics)
-    * Tip: If the `Toolbox` is not opne click `Processing`-> `Toolbox`
+    * Tip: If the `Toolbox` is not open click `Processing`-> `Toolbox`
     2. `Input Layer`: district_pop_som
     3. `Raster Layer`: SPI Forecast
     4. `Output column prefix`: Use  "SPI12_"
@@ -655,7 +657,7 @@ __Result:__ A layer of all districts of Somalia with the mean SPI-12.
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_11_zonal_staistics.mp4"></video>
 ```
 
-### Step 12: Join SPI12 Mean to the IPC Index
+### Step 12: Join SPI-12 Mean to the IPC Index
 ```{figure} /fig/Drought_EAP_Worklow_Step_12_1.png
 ---
 width: 1000px
@@ -709,7 +711,7 @@ align: center
 ---
 ```
 
-__Purpose:__ The purpose of this step is to gain a quick overview of possible trigger activation without having to revise the actual data. Instead we will have a binary column with trigger = yes or no values.
+__Purpose:__ The purpose of this step is to gain a quick overview of possible trigger activation without having to revise the actual data. Instead we will have a binary column with trigger = yes or trigger=no values.
 
 __Tool:__ [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field)
 
@@ -943,7 +945,7 @@ align: center
     2. ML2_ML1_Indices_joined (interim result: values of ML1 and ML2 indices in together)
     3. SPI12_mean_IPC_Indices_joined (interim result: SPI 12 forecast mean per district)
 
-    For each output you click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder "FbF_Drought_Monitoring_Trigger\Monitoring\Year_Month". Give the output the respective name ("Trigger_activation", "ML2_ML1_Indices_joined" or "SPI12_mean_IPC_Indices_joined" and click `Save`.
+    For each output you click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder "FbF_Drought_Monitoring_Trigger\Monitoring\Year_Month\Model_Results". Give the output the respective name ("Trigger_activation", "ML2_ML1_Indices_joined" or "SPI12_mean_IPC_Indices_joined" and click `Save`.
 
       ```{Note}  
      If you check the checkbox for `Open Output file after running algorithm` the results will be automatically loaded to your layers panel.
