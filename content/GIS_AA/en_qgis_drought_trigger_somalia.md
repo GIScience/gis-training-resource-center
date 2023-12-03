@@ -888,3 +888,70 @@ When you have finished the design of you map you can export it as pdf or image f
 
 
 # Trigger Workflow Automated 
+
+As explained in the beginning of this [chapter](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_drought_trigger_somalia.html#qgis-trigger-workflow-for-somalia), the 9 main steps of the developed trigger workflow are done automatically by a QGIS model. In the previous chapters you have learned the purpose and needed tools of each step and how to perform them manually. In this chapter it is explained how to run the automated model.
+
+The [QGIS Model Designer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html#the-qgis-model-designer) is a visual tool that allows users to create and edit a workflow with all tools available in QGIS that can be used repeatedly in a simple and time-efficient manner. It provides a graphical interface to build workflows by connecting geoprocessing tools and algorithms. The user can define inputs, outputs, and the flow of data between different processing steps.
+
+## Load the model in the QGIS Model Designer
+
+1. Open the tool under `Processing` -> `Graphical Modeler`
+2. In the upper panel click `Model` -> `Open Model` and naviageto your folder "FbF_Drought_Monitoring_Trigger", mark the "Triggermodel_Somalia.model3" file an click on `Open`.
+
+```{figure} /fig/Model_Designer.PNG
+---
+width: 400px
+name: 
+align: center
+---
+```
+
+The model will open and you will see yellow, white and green boxes.
+
+| Box Color| Significance | Description |
+| ----- | --- | --- |
+|Yellow| Model Input |Definition of the Inut data for the model the model will perform on|
+|White| Algorithms | Algorithms or Tools are specific geoprocessing steps that perform specific tasks, such as clipping, reprojecting or buffering. |
+|Green| Model Output| The results created by the model (Output layers) are automatically added to your layers panel in your QGIS project interface|
+
+
+
+## Run the model
+
+
+1. In the upper panel click on `Model` -> `Run Model`. A window will open where you need to define the model input and output.
+
+    __Model Input__
+
+    The model needs the follow 5 inputs:
+
+    1. IPC_Projection_ML1 (IPC short-term procetion data)
+    2. IPC_Projection_ML2(IPC long term projection data)
+    3. Pop_per_district (district boundaries and population numbers per district)
+    4. SPI12 (SPI12 forecast)
+    5. Worldpop (Population Raster data)
+
+    For each of these mandatory inputs, you click on the dropdown arrow and choose the respective file.
+
+    ```{Attention}  
+    In the dropdown list, only layers that are currently loaded in your QGIS Project will be displayed.
+    ```
+
+    __Model Output__
+
+    The model outputs 3 results:
+    1. Trigger_activation ()
+    2. ML2_ML1_Indices_joined
+    3. SPI12_mean_IPC_Indices_joined
+
+    For each output you click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month/Results]. Give the output the respective name ("STrigger_activation", "ML2_ML1_Indices_joined" or "SPI12_mean_IPC_Indices_joined" and click `Save`.
+
+      ```{Note}  
+     If you check the checkbox for `Open Outour file after running algorithm` the results will be automatically loaded to your layers panel.
+     ```
+
+    5. Click `Run`
+
+     ```{Note}  
+     If you `Open Outour file after running algorithm`
+     ```
