@@ -81,7 +81,7 @@ The plugin will provide the user with two outputs. The Risk Assessment results o
 
 ```{figure} /fig/Interface.png
 ---
-height: 400px
+height: 600px
 name: Interface
 align: center
 ---
@@ -163,7 +163,7 @@ Alternatively, the population-file can also be created independently according t
 
 ```{figure} /fig/populationfile_example.png
 ---
-width: 300px
+width: 500px
 name: tpopulationfile_example
 align: center
 ---
