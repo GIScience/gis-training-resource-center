@@ -19,15 +19,15 @@ Intermediate results should also be saved in the “temp” folder. The final re
 ## Task 2: Data import into QGIS
 1.	Open QGIS and create a new project by clicking  on `Project` -> `New Project` ([Wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html)).
 2. To give the project a name click on `Project` -> `Save As`. Navigate to "Exercise_1" and open the "project" folder. Give your project the name "Exercise_1" and click on `Save`. Now you should see the name of your project in the upper left corner of your QGIS.
-3.	Open the file **"Somalia_country.shp"** in QGIS. Click on the `Layer` Tab in the upper left corner -> `Vector`. Select **"Somalia_country.shp"**. Click `Add` ([Wiki Import Vector layer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab))
+3.	Open the file **"Somaliland_country.shp"** in QGIS. Click on the `Layer` Tab in the upper left corner -> `Vector`. Select **"Somaliland_country.shp"**. Click `Add` ([Wiki Import Vector layer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab))
 :::{dropdown} Video: Import Vector data
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_vector.mp4"></video>
 :::
-4. Open the file **Somalia_District_pop.gpkg** in QGIS. Use the drag-and-drop method. Click on the file and pull the file directly into your Layers window.
+4. Open the file **Somaliand_District_pop.gpkg** in QGIS. Use the drag-and-drop method. Click on the file and pull the file directly into your Layers window.
 :::{dropdown} Video: Import data by drag and dop
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_vector_d_d.mp4"></video>
 :::
-5. Open the files **"Somalia_District_pop.gpkg"** and **Somalia_airports.gpkg** with either drag and drop or via `Layer` -> `Vector`.
+5. Open the files **"Somalialand_District_pop.gpkg"** and **Somaliland_airports.gpkg** with either drag and drop or via `Layer` -> `Vector`.
 6. Save your project by clicking on the `Save Project` button (small disc in the upper left corner).
 
 ## Task 3: Interface 
@@ -72,9 +72,9 @@ You can find more infos in the __[Wiki Layer concept](https://giscience.github.i
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_rename_layer.mp4"></video>
 :::
 5. To the properties of a layer right click on your layer -> `Properies` -> `Information`. 
-    5.1 When was the layer "Somaliland_district_pop" last modified?
-    5.2 How many features does the airport layer have?
-    5.3 What geometry does the Somalia_country layer have?
+    1. When was the layer "Somaliland_district_pop" last modified?
+    2. How many features does the airport layer have?
+    3. What geometry does the Somalia_country layer have?
 
 ```{Tip}
 If you have "lost" your layer, right click on your layer -> `Zoom to layer(s)`
@@ -137,7 +137,7 @@ All the styling in QGIS happens in `Symbology`
 :::
 
 
-### Task 7: Clipping and Extract by location
+## Task 7: Clipping and Extract by location
 1.	Import the file **Somalia_health_facilities_WHO.gpkg** in QGIS.
 ::: {dropdown} Video: Import data by drag and drop
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_vector_d_d.mp4"></video>
@@ -166,7 +166,7 @@ align: center
 
 
 
-### Task 8: Data visualization- Categorized classification of Points
+## Task 8: Data visualization- Categorized classification of Points
 
 Categorized classification in QGIS groups spatial data into distinct categories based on specific attributes. This classification enhances the organization and interpretation of geospatial information for clearer insights.
 1. Open the attribute table of "Somaliland_health_facilities_OSM" by right clicking on "Somaliland_health_facilities_OSM" -> `Open Attribute Table`
