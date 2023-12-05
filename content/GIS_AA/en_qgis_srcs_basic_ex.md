@@ -1,5 +1,83 @@
 # QGIS Basic Exercise SRCS
 
+## CSV in QGIS
+
+### Aim of exercise
+
+In this task, we will load a CSV file in QGIS and do some analysis. 
+
+
+## Task 1: Load data in QGIS
+1.	Open the folder “Exercise 2”. Go into the “data” folder and copy all data from the “input” folder into the “temp” folder
+2.	To load the file “Water_sources.csv” into QGIS click on `Layer` -> `Add layer` -> `Open Delimited Text Layer`. Next to `File name` click on the three points ![](/fig/Three_points.png) and navigate to your "temp" folder. Her select the file "water_sources.csv".
+3. Use the setings like in the image below. 
+```{figure} /fig/add_csv.png
+---
+width: 400px
+name: 
+align: center
+---
+```
+4. Click `Add`
+5. Load the file "district_pop_som.shp" into QGIS
+
+```{Tip}
+To directly load .csv or EXCEL data into QGIS, the datasets need to have columns containing geometry in the form of latitude (Y-field) and longitude (X-field). 
+```
+
+
+## Task 2: Counting water sources per district 
+
+1. In the `Toolbox`-> Search for `Join attribute by location (summary)`
+      * Tip: If the `Toolbox` is not opne click `Processing`-> `Toolbox` 
+2. `Input Layer`: Select your “district_pop_som” layer
+3. `Input Layer 2`: Select “Water_sources"
+4. `Geometric predicate`: Select “Intersection”
+5. `Field to summarise`: Select “fid"
+6. `Summaries to calculate`: Chose only the option “count”
+7. Under `Join Layer` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to your "temp" folder. Give the output the name "district_watersources" and click `Save`
+8. Click `Run`
+```{figure} /fig/Join_layer_summary_watersources.png
+---
+width: 450px
+name: 
+align: center
+---
+```
+
+```{dropdown} Video: impoering .csv
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_textfile.mp4"></video>
+```
+
+
+## Task 3: Calculating water sources per 10.000 people
+
+1. Open the Attribute Table of "district_watersources"
+2. Click on  [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field) ![](/fig/mActionCalculateField.png)to open the field calculator
+3.  Check `Create new field`
+3. `Output field name`: Name the new column “Watersources_pop"
+4. `Result field type`: Decimal number (real)
+5. Add the code into the `Expression` field
+```md
+( "fid_count"  /  "districtpo"  )  * 10000
+
+```
+
+```{figure} /fig/watersources_per_pop_field_calculator.png
+---
+width: 600px
+name: 
+align: center
+---
+```
+6. Click `ok`
+7. Save the new column by clicking on ![](/fig/mActionSaveEdits.png) in the attribute table and end the editing mode by clicking on ![](/fig/mActionToggleEditing.png)
+8. Sorte the new column “Watersources_pop" and finde out wich districts have the highest and lowest number of water sources per 10.000 people
+
+
+
+## QGIS Intro
+
 ### Aim of exercise
 The goal of the exercise is to get to know the basic functionality of QGIS and how to handle geodata.
 
