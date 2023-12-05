@@ -39,7 +39,7 @@ To directly load .csv or EXCEL data into QGIS, the datasets need to have columns
 8. Click `Run`
 ```{figure} /fig/Join_layer_summary_watersources.png
 ---
-width: 450px
+width: 600px
 name: 
 align: center
 ---
