@@ -152,7 +152,6 @@ align: center
 ---
 ```
 
-__Purpose:__ 
 
 __Tool:__ FileZilla and Interent Browser
 
@@ -193,30 +192,38 @@ The IPC Projection data is provided and regulary updated on the [FEWSNET Website
 On the website you will have to click on Somalia to acess the data. Alternativley, you can  navigate through `Data` -> `Acute Food Insecurity Data` and enter „Somalia". In the menu you will see different dataformats for different timestamps. Once you find out which timestamp is the most current one find the ZIP download. We need the data in shapefile (.shp) format, which is only included in the ZIP file and not provided as single download file. 
 
 
+```{Warning}
+The FEWSNET pages change often !
+```
+
+1. Go to [FEWSNET Website](https://fews.net/). Click on `Data` -> `Acute Food Insecurity`.
+2. Scroll down. In `Geograhic Area` typ in “Somalia” and click `Apply`
+3. Choose the newest dataset.
+
 ```{figure} /fig/IPC_Projections_website.png
 ---
-height: 400px
+height: 250px
 name: FEWSNET IPC - Download IPC Projections
 align: center
 ---
 ```
+4. Download the one with the __ZIP__ Data
+5. When you have downloaded the data, right-click on the file and click on `Extract all` -> `Extract`
+6. Open the extracted folder and copy the ML1 data in the IPC_ML1 folder you have created in step 1. 
+  * The filename is composed of "SO" for Somalia, year and month of the report month e.g `SO_202308_ML1.shp`
+  Example path: `.../FbF_Drought_Monitoring_Trigger/Monitoring/Year_Month_template/IPC_ML1`
+7. Copy the ML2 data into IPC_ML2 folder you have created in step 1.
+  * The filename is composed of "SO" for Somalia, year and month of the report month e.g `SO_202308_ML2.shp`
+  Example path: `.../FbF_Drought_Monitoring_Trigger/Monitoring/Year_Month_template/IPC_ML2`
+```{Warning}
+Make sure to not use the ML1_IDP data which comes in the .zip folder as well!
+```
 
-Once downloaded the ZIP folder, right click on it and unzip it. You will see various datasets. We are interested in the ML1 and ML2 projections. The filename is composed of "SO" for Somalia, year and month of the report month of the respective projection and _ML1 or _ML2 forn the respective projection. This is what the the dataname for ML1 and ML2 projections published in August would look like:
-
-`"SO_202308_ML1.shp"`,
-`"SO_202308_ML2.shp"`
-
-You can then copy the respective shapefiles to you folder 
-
-`.../FbF_Drought_Monitoring_Trigger/Monitoring/Year_Month_template/IPC_ML1` and
-`.../FbF_Drought_Monitoring_Trigger/Monitoring/Year_Month_template//IPC_ML2`
-
+```{Warning}
 Remember that you need to copy over all components that the respective [shapefile](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_types_wiki.html#vector-data) is composed of. Most probably it has 5 components: .cpg, .dbf, .prj, .shp, and .shx.
-
-
 ```{figure} /fig/IPC_zip.PNG
 ---
-height: 400px
+height: 300px
 name: Content of .zip file downloaded containing ML1 and ML2 IPC projections
 align: center
 ---
@@ -232,7 +239,6 @@ name: FEWSNET Newsletter
 align: center
 ---
 ```
-
 
 ### Step 3: Loading data into QGIS
 
@@ -251,6 +257,15 @@ __Tool:__ No specific tools are needed, only QGIS.
 1. Open QGIS and create a [new project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`
 2. Once the project is created save the project in the folder you created in Step 1 (e.g. 2022_05). To do that click on `Project` -> `Save as` and navigate to the folder. Give the project the same name as the folder you created (e.g. 2022_05). Then click `Save`
 3. Load all input data in QGIS by [drag and drop](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-raster-data-via-drag-and-drop). Click on `Project` -> `Save` 
+  * From the folder you created in step 1
+    * ML1
+    * ML2
+    * SPI-12
+  * From the `Fixes_data` folder:
+    * district_pop_som
+    * Regions
+    * risk_assessment.gpkg
+    * WorldPop_som.tif
 
 __Result:__ QGIS project with all necessary data ready to be analysed. 
 
@@ -274,6 +289,10 @@ align: center
 1. Open the tool under `Processing` -> `Graphical Modeler`
 2. In the upper panel click `Model` -> `Open Model` and naviageto your folder "FbF_Drought_Monitoring_Trigger", mark the "Triggermodel_Somalia.model3" file an click on `Open`. The model will open and you will see yellow, white and green boxes.
 
+```{dropdown} Video: Open Model
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/load_model.mp4"></video>
+```
+
 ```{figure} /fig/Model_Designer.PNG
 ---
 width: 700px
@@ -290,7 +309,6 @@ align: center
 |Green| Model Output| The results created by the model (Output layers) are automatically added to your layers panel in your QGIS project interface|
 
 
-
 ### Step 5: Run the model
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_5_1_automated_model.png
@@ -301,24 +319,42 @@ align: center
 ---
 ```
 
-
-1. In the upper panel click on `Model` -> `Run Model`. A window will open where you need to define the model input and output.
-
-__Model Input__
-
-The model needs the follow 5 inputs:
-
-1. `IPC_Projection_ML1` (IPC short-term procetion data): ML 1 data
-2. `IPC_Projection_ML2` (IPC long term projection data): ML 2 data
-3. `Pop_per_district` (district boundaries and population numbers per district): district_pop_sum
-4. `SPI12` (SPI12 forecast): SPI-12 data
-5. `Worldpop` (Population Raster data): Worldpop data
-
-For each of these mandatory inputs, you click on the dropdown arrow and choose the respective file.
+__Model Input & Output__
 
 ```{Attention}  
 In the dropdown list, only layers that are currently loaded in your QGIS Project will be displayed.
 ```
+
+For each of these mandatory inputs, you click on the dropdown arrow and choose the respective file.
+The model needs the follow 5 inputs:
+1. In the upper panel click on `Model` -> `Run Model`. A window will open where you need to define the model input and output.
+2. The model needs the follow 5 inputs:
+    1. `IPC_Projection_ML1`: ML 1 data
+    2. `IPC_Projection_ML2`: ML 2 data
+    3. `Pop_per_district`: district_pop_sum
+    4. `SPI12` (SPI12 forecast): SPI-12 data
+    5. `Worldpop` (Population Raster data): Worldpop data
+3. Futherdown you have to specify where to save the output: 
+    1. `Trigger_activation`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
+    ```md
+    Trigger_activation
+    ```
+
+    2. `ML2_ML1_Indices_joined`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
+    ```md
+    ML2_ML1_Indices_joined
+    ```
+
+    3. `SPI12_mean_IPC_Indices_joined`:Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
+    ```md
+    SPI12_mean_IPC_Indices_joined
+    ```
+4. Click `Run`. Your results layer will appear in the main QGIS window. You can close the graphical modeller window.
+
+```{dropdown} Video: Input and output Model
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/model_input_output.mp4"></video>
+```
+
 ```{figure} /fig/SRCS_Model_input.png
 ---
 width: 500px
@@ -327,20 +363,6 @@ align: center
 ---
 ```
 
-__Model Output__
-
-The model outputs 3 results:
-1. Trigger_activation (binary information if trigger is activated or not)
-2. ML2_ML1_Indices_joined (interim result: values of ML1 and ML2 indices in together)
-3. SPI12_mean_IPC_Indices_joined (interim result: SPI 12 forecast mean per district)
-
-For each output you click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder `FbF_Drought_Monitoring_Trigger\Monitoring\Year_Month\Model_Results`. Give the output the respective name ("Trigger_activation", "ML2_ML1_Indices_joined" or "SPI12_mean_IPC_Indices_joined") and click `Save`.
-
-```{Note}  
-If you check the checkbox for `Open Output file after running algorithm` the results will be automatically loaded to your layers panel.
-```
-
-5. Click `Run`
 
 ### Step 6.: Visualisation of results
 ```{figure} /fig/Drought_EAP_Worklow_Step_14_1.png
@@ -357,14 +379,13 @@ __Tool:__ [Symbology](https://giscience.github.io/gis-training-resource-center/c
 
 __Trigger Activation__
 
-1. Right cklick on the “Trigger_activation” (or "IPC_index_SPI_12_district") layer -> `Properties` -> `Symbology`
-2. In the drop-down menu on the top choose `Categorized`
-3. In the down left corner click on `Style` -> `Load Style`
-4. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file “Style_Trigger_Activation.qml”.
-5. Click `Open`. Then click on `Load Style`
-6. Back in the “Layer Properties” Window click `Apply` and `OK`
+1. Right cklick on the “Trigger_activation” layer -> `Properties` -> `Symbology`
+2. In the down left corner click on `Style` -> `Load Style`
+3. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file __“Style_Trigger_Activation.qml”__.
+4. Click `Open`. Then click on `Load Style`
+5. Back in the “Layer Properties” Window click `Apply` and `OK`
 
-
+```{dropdown} Info: Trigger Activation Layer
 You will now see districts where no trigger is activated in green and districts with trigger activation in pink.
 
 The “Style_Trigger_Activation.qml” style layer is configured to show the district names only where the trigger is actually activated. If there is no trigger activation you can activate the admin 1 boundary layer for better map orientation (see __Administrative 2 Boundaries__ below)
@@ -377,42 +398,64 @@ align: center
 ---
 ```
 
-
 __Risk Assessment__
 
+
+7. Right click on the "risk_assessment_districts" layer -> `Properties` -> `Symbology`
+8. In the down left corner click on `Style` -> `Load Style`
+9. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file __“somalia_risk_assessment_style.qml”__ style layer.
+10. Move the "risk_assessment_district" layer __below__ "Trigger_Activation" layer ([Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_geodata_concept.html?highlight=layer#layer-concept)).
+11. Back in the “Layer Properties” Window click `Apply` and `OK`
+
+
+```{dropdown} Info: Risk Assessment Layer
 For the creation of an __Intervention Map__ we will have to add the risk assessment data and the respective style file.
 For this first of all load from "FbF_Drought_Monitoring_Trigger/Fixed_data/Risk_Assessment" the file "risk_assessment_districts.gpkg". This file is the output of the conducted risk assessment and contains a risk value for each district of Simaliland and Somalia.  In order to visualize it 
-1. Right click on the "risk_assessment_districts" layer -> `Properties` -> `Symbology`
-2. Repeat the steps from above for loading the style layer, but choose the “somalia_risk_assessment_style.qml” style layer.
-
-For the final visualization and right overlay of the risk assessment and the Trigger activation, make sure you "Trigger Activation" layer is above the
-"risk_assessment_districts" layer in the Layers Panel ([Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_geodata_concept.html?highlight=layer#layer-concept)).
-
-
-__Administrative 2 Boundaries__
-
-For better orientation in the map, especially if no trigger is activated you can optionally load the regions boundaries with regions names:
-
-Navigate to "...\FbF_Drought_Monitoring_Trigger\Fixed_data\Regions" and load the "Som_Admbnda_Adm1_UNDP.shp" file into your layers panel.
-
-1. Right click on the "risk_assessment_districts" layer -> `Properties` -> `Symbology`
-2. Repeat the steps from above for loading the style layer, but choose the “somalia_risk_assessment_style.qml” style layer.
-
-```{figure} /fig/Map_no_trigger.PNG
----
-width: 1000px
-name: 
-align: center
----
 ```
 
-__Basemap__
+__Administrative 2 Boundaries (Regions)__
 
-Add a basemap to your map in order to have a nice background. We recommend to use OpenStreetMap as a baselayer, but you can also choose another basemap if you prefer.
+12. Right click on the "Som_Admbnda_Adm1_UNDP" (Regiond) layer -> `Properties` -> `Symbology`
+13. In the down left corner click on `Style` -> `Load Style`
+14. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file __“somalia_risk_assessment_style.qml”__.
+15. Click `Open`. Then click on `Load Style` 
+16. Back in the “Layer Properties” Window click `Apply` and `OK`
+17. Add a the OpenStreetMap basemap by clicking on `Layer` -> `Add Layer` -> `Add XYZ layer...` -> Select the OpenStreetMap. Click `Add`. ([Wiki basemap](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html?highlight=osm#basemaps))
+18. Place the OpenStreetMap basemap on the bottom.
+19. Delet all layers exept:
+    * Trigger_activation
+    * risk_assessment_districts
+    * Som_Admbnda_Adm1_UNDP
+    * OpenStreetMap
 
-Find out [here](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html?highlight=osm#basemaps) how to add a basemap.
+```{dropdown} Video: Visualisation of results
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Trigger_model_style.mp4"></video>
+```
 
+``````{list-table}
+:header-rows: 1
+:widths: 20 20
 
+* - Intervention Map __without__ Trigger activation
+  - Intervention Map __with__ Trigger activation
+* - 
+    ```{figure} /fig/Map_no_trigger.PNG
+    ---
+    width: 1000px
+    name: 
+    align: center
+    ---
+    ```
+    
+  -
+    ```{figure} /fig/Map_yes_trigger.PNG
+    ---
+    width: 450px
+    name: 
+    align: center
+    ---
+    ```
+``````
 
 ```{Attention}
 Remember the [layer concept](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_geodata_concept.html?highlight=layer#layer-concept) and make sure the basemap layer is at the bottom of your layers panel.
@@ -434,10 +477,26 @@ __Purpose:__ Viualization of the map features in a printable map layout
 __Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
 
 
+1. If not done before, delet all layers expect __Trigger_activation__, __risk_assessment_districts__ and __OpenStreetMap__
+2. Open a new print layout by clicking on `Project` -> `New Print Layout` -> enter the name of your current Project e.g "2022_04".
+3. Go the the __FbF_Drought_Monitoring_Trigger__` folder and drag and drop the file `Trigger_activation_Intervention_map.qpt` in the print layout
+4. Change the date to the current date by clicking on "Further map info…" in the items panel. Click on the `Item Properties` tab and scroll down. Here you can change the date in the `Main Properties` field.
+5. Adjust the Lgend by clicking on the legend in the  `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there check if you have to open the dropdown. Make sure `Auto update` is not checked.
+    * Remove all itemes in the legend be clicking on the item and then on the red minus icon below.
+    * Add __Trigger_activation__ and __risk_assessment_districts__ to the legend by clicking on the green plus and click on the layer and click `ok`
+ 
+
+```{dropdown} Video: Making print map
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_print_map.mp4"></video>
+```
+
+```{Attention}
+Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.
+```
+
+
 In order to easily visualize the output of the trigger analysis we provide you with a 
 [map template](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html#map-templates) that can be used as a base for your visualization. You can find the template in the following directory: ".../FbF_Drought_Monitoring_Trigger/maps_somalia_template_risk_assessment.qpt".
-
-Check [here](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html#map-templates) how to open templates and how to use them in QGIS.
 
 You can also adapt the template to your needs and preferences. You can find help [here](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html#print-layout).
 
