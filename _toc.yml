@@ -95,7 +95,8 @@ parts:
   - caption: Modul 6- Data analysis with QGIS
     chapters:
       - file: content/Modul_6/en_qgis_data_analysis_theorie.md
-      - file: content/Modul_6/en_qgis_data_analysis_ex1.md
+        sections:
+          - file: content/Modul_6/en_qgis_data_analysis_ex1.md
   - caption: GIS in Anticipatory Action
     chapters:
       - file: content/GIS_AA/en_qgis_srcs_basic_ex.md
