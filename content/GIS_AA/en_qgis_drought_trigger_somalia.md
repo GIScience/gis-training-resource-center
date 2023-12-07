@@ -540,6 +540,10 @@ __Export as PDF__
 5. Click `Save`
 Now the image can be found in the result folder in the folder you created in Step 1
 
+```{dropdown} Video: Export image and PDF
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_trigger_export_image_pdf.mp4"></video>
+```
+
 
 ```{figure} /fig/map_output_example2.png
 ---
