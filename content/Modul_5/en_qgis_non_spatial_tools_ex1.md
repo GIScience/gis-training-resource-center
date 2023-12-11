@@ -68,6 +68,8 @@ Screenshot of the tool Join Attributes by Field Value for the directly and indir
     - Create a new column/field named `"area_sqkm"` using the field calculator. Ensure decimal numbers are used as the field type. For the calculation use the expression: `$area / (1000 * 1000)`
     - Create another column/field named `"pop_per_sqkm"` with decimal numbers as field type. Use the expression: `"Total" / "area_sqkm"` for the calculation.
 
+You can access the field calculator through your attribute table by activating ![](/fig/mActionToggleEditing.png) `Toggle editing mode` and clicking on this symbol ![](/fig/mActionCalculateField.png) to `Open field calculator`.
+
 ::::{tab-set}
 
 :::{tab-item} Screenshot calculation `"area_sqkm"`
