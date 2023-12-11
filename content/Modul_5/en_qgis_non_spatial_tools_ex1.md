@@ -53,7 +53,7 @@ Screenshot of the tool Join Attributes by Field Value for the total population
 :::
 
 :::{tab-item} Screenshot for task 5
-```{figure} /fig/en_ex1_Join_field_2.png
+```{figure} /fig/en_ex1_Join_field_2.PNG
 ---
 width: 80%
 name: join_field
@@ -71,7 +71,7 @@ Screenshot of the tool Join Attributes by Field Value for the directly and indir
 ::::{tab-set}
 
 :::{tab-item} Screenshot calculation `"area_sqkm"`
-```{figure} /fig/en_ex1_area_sqkm.png
+```{figure} /fig/en_ex1_area_sqkm.PNG
 ---
 width: 80%
 name: field_calculator
@@ -81,7 +81,7 @@ Screenshot of the area calculation using the field calculator
 :::
 
 :::{tab-item} Screenshot calculation `"pop_per_sqkm"`
-```{figure} /fig/en_ex1_pop_per_sqkm.png
+```{figure} /fig/en_ex1_pop_per_sqkm.PNG
 ---
 width: 80%
 name: field_calculator_2
