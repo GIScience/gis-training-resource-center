@@ -71,7 +71,7 @@ Screenshot of the tool Join Attributes by Field Value for the directly and indir
 ::::{tab-set}
 
 :::{tab-item} Screenshot calculation `"area_sqkm"`
-```{figure} /fig/en_ex1_area_sqkm.PNG
+```{figure} /fig/en_ex1_area_sqkm.png
 ---
 width: 80%
 name: field_calculator
@@ -81,7 +81,7 @@ Screenshot of the area calculation using the field calculator
 :::
 
 :::{tab-item} Screenshot calculation `"pop_per_sqkm"`
-```{figure} /fig/en_ex1_pop_per_sqkm.PNG
+```{figure} /fig/en_ex1_pop_per_sqkm.png
 ---
 width: 80%
 name: field_calculator_2
@@ -109,7 +109,7 @@ Screenshot of the Rename field tool
 ::::{tab-set}
 
 :::{tab-item} Screenshot indirectly affected
-```{figure} /fig/en_ex1_per_indirect_affected.png
+```{figure} /fig/en_ex1_per_indirect_affected.PNG
 ---
 width: 80%
 name: per_indirect_affected
@@ -119,7 +119,7 @@ Screenshot of the calculation of the proportion of the indirectly affected popul
 :::
 
 :::{tab-item} Screenshot directly affected
-```{figure} /fig/en_ex1_per_direct_affected.png
+```{figure} /fig/en_ex1_per_direct_affected.PNG
 ---
 width: 80%
 name: per_direct_affected
