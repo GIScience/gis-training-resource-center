@@ -221,6 +221,28 @@ If you have multiple layers, only the attribute table of the layer selected in t
 
 ### Sort the information
 
+Now that the attribute table is opened, it is possible to sort the data within. By clicking on the tab of the column, you can sort the data (alphabetically) in ascending or descending order.
+The small arrow indicates whether it is sorted ascending or descending. 
+
+
+![sorted ascending](../../fig/en_ascending.png) | ![sorted descending](../../fig/en_descending.png)
+:-------------------------:|:-------------------------:
+The data is sorted ascending.  |  The data is sorted descending.  
+
+
+|```{figure} /fig/en_ascending.png
+---
+height: 250px
+name: The data is sorted ascending.
+---
+Screenshot of the ascending sorted data.``` | ```{figure} /fig/en_descending.png
+---
+height: 250px
+name: The data is sorted descending.
+---
+Screenshot of the descending sorted data. ``` |
+:-------------------------:|:-------------------------:
+The data is sorted ascending.  |  The data is sorted descending.  
 
 
 ### Edit or change data
