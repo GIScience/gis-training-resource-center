@@ -299,7 +299,7 @@ To deselect the objects, you can simply click on this symbol on the top bar. In 
 
 ```{figure} /fig/en_unselect.png
 ---
-height: 100px
+height: 50px
 name: Deselect features.
 ---
 Screenshot of how to desselect objects.
@@ -404,6 +404,23 @@ For example, if you are looking for a smooth cyleway for a biketour:
 ```
 
 ### Zoom to selected area
+Now that you learned different ways to select features, you can zoom onto your area of interest. To do so you can click on the symbol on the top pannel or click right on the layer and select *Zoom to Selection*
+
+```{figure} /fig/en_zoom_to_selection_1.png
+---
+height: 50px
+name: Zoom to Selection, top pannel.
+---
+Screenshot of how to zoom to Selection on the top.
+```
+
+```{figure} /fig/en_zoom_to_selection_2.png
+---
+height: 150px
+name: Zoom to Selection, right-click.
+---
+Screenshot of how to zoom to Selection by clicking right.
+```
 
 ### Save only selected
 
