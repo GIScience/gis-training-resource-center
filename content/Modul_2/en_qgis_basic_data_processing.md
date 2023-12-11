@@ -234,7 +234,7 @@ If you have to edit or change data in the attribute table, you can do so by clic
 
 ```{figure} /fig/en_editing_mode.png
 ---
-height: 150px
+height: 100px
 name: Editing Mode in the attribute table
 ---
 Screenshot of the editing mode 
@@ -244,7 +244,7 @@ In the editing mode, you can also add or delete columns.
 
 ```{figure} /fig/en_add_column.png
 ---
-height: 150px
+height: 100px
 name: Add column in the attribute table
 ---
 Screenshot of adding a column
@@ -279,7 +279,7 @@ To select on the map directly, click on the marked symbol on the top. Now you ca
 
 ```{figure} /fig/en_select_map.png
 ---
-height: 130px
+height: 110px
 name: Select on map manually.
 ---
 Screenshot of how to select objects in the map.
@@ -324,14 +324,34 @@ It is also possible to invert your selection, like so:
 ```
 
 ### Select by location
-
+**here or Modul 5?**
 
 
 ### Filter
+To filter for certain attributes, you can click on *filter for features* and type the chosen expression that is contained in this column. 
+
+```{figure} /fig/en_filter_features.png
+---
+height: 100px
+name: Filter features.
+---
+Screenshot of how to filter features.
+``` 
+
+```{figure} /fig/en_filter_back_table.png
+---
+height: 100px
+name: Filter features and get back to the table view.
+---
+Screenshot of how to filter features and get back to the table view.
+```
+To return to the view as a table, click on the bottom right corner.
 
 ### Select feature by expression
-### save only selected
+
 ### Zoom to selected area
+
+### Save only selected
 
 ### Field calculator
 
