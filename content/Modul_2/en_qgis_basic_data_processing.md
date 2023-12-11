@@ -340,7 +340,7 @@ Screenshot of how to filter features.
 
 ```{figure} /fig/en_filter_back_table.png
 ---
-height: 100px
+height: 300px
 name: Filter features and get back to the table view.
 ---
 Screenshot of how to filter features and get back to the table view.
@@ -362,7 +362,7 @@ A window will open, on the left you can type in your expression, on the right ar
 
 ```{figure} /fig/en_view_expression.png
 ---
-height: 150px
+height: 300px
 name: Select by expression, the opened window.
 ---
 Screenshot of the window to select by expression.
@@ -377,7 +377,7 @@ To build your expression, you can double click on the chosen column and then on 
 
 ```{figure} /fig/en_unique_values.png
 ---
-height: 150px
+height: 300px
 name: Select by expression, unique values.
 ---
 Screenshot of the window to select by expression and show the unique values.
