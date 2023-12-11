@@ -246,11 +246,25 @@ The data is sorted ascending.  |  The data is sorted descending.
 
 
 ### Edit or change data
-edit 
+If you have to edit or change data in the attribute table, you can do so by clicking on the pencil on the top left. This could be the case, for example, because special characters like 'ü' or 'ä' are displayed wrong.
 
-add column 
+```{figure} /fig/en_editing_mode.png
+---
+height: 250px
+name: Editing Mode in the attribute table
+---
+Screenshot of the editing mode 
+```
 
-delete
+In the editing mode, you can also add or delete columns.
+
+```{figure} /fig/en_add_column.png
+---
+height: 250px
+name: Add column in the attribute table
+---
+Screenshot of adding a column
+```
 
 
 ## Feature selection
