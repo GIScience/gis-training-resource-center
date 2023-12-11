@@ -1,1 +1,0 @@
-# Data analysis exercise 1
