@@ -279,7 +279,7 @@ To select on the map directly, click on the marked symbol on the top. Now you ca
 
 ```{figure} /fig/en_select_map.png
 ---
-height: 150px
+height: 130px
 name: Select on map manually.
 ---
 Screenshot of how to select objects in the map.
@@ -299,7 +299,7 @@ To deselect the objects, you can simply click on this symbol on the top bar. In 
 
 ```{figure} /fig/en_unselect.png
 ---
-height: 150px
+height: 100px
 name: Deselect features.
 ---
 Screenshot of how to desselect objects.
@@ -316,7 +316,12 @@ To get all selected objects to the top of the attribute table, you can sort for 
 
 ```
 
-invert selection
+```{tip} 
+It is also possible to invert your selection, like so:
+
+![Move selection to top](../../fig/en_invert_selection.png)
+
+```
 
 ### Select by location
 
