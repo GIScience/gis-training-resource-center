@@ -229,28 +229,12 @@ The small arrow indicates whether it is sorted ascending or descending.
 :-------------------------:|:-------------------------:
 The data is sorted ascending.  |  The data is sorted descending.  
 
-
-|```{figure} /fig/en_ascending.png
----
-height: 250px
-name: The data is sorted ascending.
----
-Screenshot of the ascending sorted data.``` | ```{figure} /fig/en_descending.png
----
-height: 250px
-name: The data is sorted descending.
----
-Screenshot of the descending sorted data. ``` |
-:-------------------------:|:-------------------------:
-The data is sorted ascending.  |  The data is sorted descending.  
-
-
 ### Edit or change data
 If you have to edit or change data in the attribute table, you can do so by clicking on the pencil on the top left. This could be the case, for example, because special characters like 'ü' or 'ä' are displayed wrong.
 
 ```{figure} /fig/en_editing_mode.png
 ---
-height: 250px
+height: 150px
 name: Editing Mode in the attribute table
 ---
 Screenshot of the editing mode 
@@ -260,35 +244,88 @@ In the editing mode, you can also add or delete columns.
 
 ```{figure} /fig/en_add_column.png
 ---
-height: 250px
+height: 150px
 name: Add column in the attribute table
 ---
 Screenshot of adding a column
 ```
 
-
 ## Feature selection
+In QGIS you have many ways to select features, whether that´s in the attribute table or directly in the map canvas.
 
-**PowerPoint 8-22**
+### Select manually
 
+::::{tab-set}
 
-### Manually select
-select
-save only selected
+:::{tab-item} Select manually in the attribute table 
+Open the attribute table and click on the number of the row you want to select, so that the row turns blue. 
+
+```{figure} /fig/en_select_row.png
+---
+height: 150px
+name: Select row manually.
+---
+Screenshot of how to select a row manually.
+```
+
+```{note} 
+Selected features are highlighted blue in the attribute table. 
+```
+
+:::
+
+:::{tab-item} Select manually in the map canvas
+To select on the map directly, click on the marked symbol on the top. Now you can either click directly onto objects you want to select or by choosing in the dropdown, you can select all objects within a polygon or by radius.
+
+```{figure} /fig/en_select_map.png
+---
+height: 150px
+name: Select on map manually.
+---
+Screenshot of how to select objects in the map.
+```
+
+```{note} 
+Selected features are highlighted yellow in the map. 
+```
+:::
+
+::::
 
 <details>
-<summary>How to unselect</summary>
+<summary>How to deselect features</summary>
 <br>
-Explanation
+To deselect the objects, you can simply click on this symbol on the top bar. In the dropdown, you can choose whether this should deselect all objects from all layers or only from the active one.
+
+```{figure} /fig/en_unselect.png
+---
+height: 150px
+name: Deselect features.
+---
+Screenshot of how to desselect objects.
+```
 
 </details>
 
+ 
+
+```{tip} 
+To get all selected objects to the top of the attribute table, you can sort for them like so:
+
+![Move selection to top](../../fig/en_sort_selected.png)
+
+```
+
+invert selection
+
 ### Select by location
+
+
 
 ### Filter
 
 ### Select feature by expression
-
+### save only selected
 ### Zoom to selected area
 
 ### Field calculator
