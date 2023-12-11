@@ -196,7 +196,24 @@ Each layer consists of geometric elements (points, lines or polygons) and an att
 Having a look into the attribute table can be helpful to get an overview on the data you are working with. It can also be used to select, filter or edit data.
 
 ### Open the attribute table
-2 ways
+
+One can open the attribute table in two ways. Either click right on the chosen layer and select *open attribute table* or click on the symbol on the top.
+
+```{figure} /fig/en_attributetable_right_click.png
+---
+height: 250px
+name: Open Attribute Table with right click
+---
+Screenshot of Opening the Attribute Table with right click
+```
+
+```{figure} /fig/en_attributetable_top_right.png
+---
+height: 250px
+name: Open Attribute Table top right
+---
+Screenshot of Opening the Attribute Table
+```
 
 ```{note} 
 If you have multiple layers, only the attribute table of the layer selected in the layer panel on the left will open. 
@@ -207,16 +224,11 @@ If you have multiple layers, only the attribute table of the layer selected in t
 
 
 ### Edit or change data
-edit
-add column
+edit 
+
+add column 
+
 delete
-
-
-### Zoom to selected area
-
-
-
-
 
 
 ## Feature selection
@@ -240,6 +252,8 @@ Explanation
 ### Filter
 
 ### Select feature by expression
+
+### Zoom to selected area
 
 ### Field calculator
 
