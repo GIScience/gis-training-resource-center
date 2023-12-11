@@ -348,6 +348,60 @@ Screenshot of how to filter features and get back to the table view.
 To return to the view as a table, click on the bottom right corner.
 
 ### Select feature by expression
+If you have more or more complex conditions on which the selection should base, you can use the *select by expression* tool.
+
+```{figure} /fig/en_select_by_expression.png
+---
+height: 100px
+name: Select by expression.
+---
+Screenshot of how to select by expression.
+```
+
+A window will open, on the left you can type in your expression, on the right are different drowdowns. Under *field and values* you can select the columns name. 
+
+```{figure} /fig/en_view_expression.png
+---
+height: 150px
+name: Select by expression, the opened window.
+---
+Screenshot of the window to select by expression.
+```
+
+Next, you can choose from different operators: 
++ Arithmetic operators: >, < , =, !=
++ String operators: LIKE, IS, BETWEEN, IN, ...
++ Logical operators: AND, OR
+
+To build your expression, you can double click on the chosen column and then on *All Unique* to get all unique values of this column shown. By double clicking them, you are adding them into your expression.
+
+```{figure} /fig/en_unique_values.png
+---
+height: 150px
+name: Select by expression, unique values.
+---
+Screenshot of the window to select by expression and show the unique values.
+```
+
+For example, to build an expression which will select all *highways* that are *pedestrian* or *cycleway*, you can do so:
+
+```sql
+"highway" IS  'cycleway' OR  "highway" IS  'pedestrian' 
+```
+or by using arithmetical operators:
+
+```sql
+"highway" = 'cycleway' OR  "highway" = 'pedestrian' 
+```
+
+The logical "OR" combines the two criterias.
+
+The logical "AND" selects only the objects, where both criteria are true/applicable.
+
+For example, if you are looking for a smooth cyleway for a biketour:
+```sql
+"highway" = 'cycleway' AND  "smoothness" = 'excellent' 
+```
 
 ### Zoom to selected area
 
