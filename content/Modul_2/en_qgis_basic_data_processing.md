@@ -424,6 +424,17 @@ Screenshot of how to zoom to Selection by clicking right.
 
 ### Save only selected
 
+After you selected your data, you might want to proceed with only the Selection. It is possible to save your Selection as new layer. To do so click right on the layer - *Export* - *Save selected features as*. 
+
+```{figure} /fig/en_save_selection.png
+---
+height: 200px
+name: Save selection, right-click.
+---
+Screenshot of how to save only selected features.
+```
+You can then choose the format, layername and crs.
+
 ### Field calculator
 
 ## Basemap selection
