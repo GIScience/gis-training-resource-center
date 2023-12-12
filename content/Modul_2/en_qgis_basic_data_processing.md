@@ -1,3 +1,5 @@
+🚧 This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+
 # Geodata and Geodata processing
 **Competences:**
 * Data Import
