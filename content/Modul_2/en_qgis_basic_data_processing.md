@@ -347,7 +347,7 @@ Screenshot of how to filter features and get back to the table view.
 ```
 To return to the view as a table, click on the bottom right corner.
 
-### Select feature by expression
+### Select features by expression
 If you have more or more complex conditions on which the selection should base, you can use the *select by expression* tool.
 
 ```{figure} /fig/en_select_by_expression.png
@@ -402,6 +402,7 @@ For example, if you are looking for a smooth cyleway for a biketour:
 ```sql
 "highway" = 'cycleway' AND  "smoothness" = 'excellent' 
 ```
+This will only show the features where both criteria are true.
 
 ### Zoom to selected area
 Now that you learned different ways to select features, you can zoom onto your area of interest. To do so you can click on the symbol on the top pannel or click right on the layer and select *Zoom to Selection*
@@ -416,7 +417,7 @@ Screenshot of how to zoom to Selection on the top.
 
 ```{figure} /fig/en_zoom_to_selection_2.png
 ---
-height: 150px
+height: 250px
 name: Zoom to Selection, right-click.
 ---
 Screenshot of how to zoom to Selection by clicking right.
@@ -424,9 +425,45 @@ Screenshot of how to zoom to Selection by clicking right.
 
 ### Save only selected
 
+After you selected your data, you might want to proceed with only the Selection. It is possible to save your Selection as new layer. To do so click right on the layer - *Export* - *Save selected features as*. 
+
+```{figure} /fig/en_save_selection.png
+---
+height: 200px
+name: Save selection, right-click.
+---
+Screenshot of how to save only selected features.
+```
+You can then choose the format, layername and crs.
+
+```{tip}
+If you are unsure which format is best, check out the wiki [Geodata types](../Wiki/en_qgis_geodata_types_wiki.md)
+```
+
 ### Field calculator
 
+The field calculator allows you that create a new field or update an existing one. You can perform calculations whether with existing attribute values or by using defined functions. 
+
+As example, we can calculate the population per km²:
+
+```{figure} /fig/en_calculate_area.png
+---
+height: 250px
+name: Calculate area.
+---
+Screenshot of calculating the area in the field calculator.
+```
+We create a new field and divide the area by 1.000.000 to get km² instead of m². You have to choose the output field name and type.
+
+You can also tick the box to only calculate with the Selection.
+Now we have a new column with the calculated area. Next we need to divide the population by the area to get the density.
+
+```sql
+"population" / "area_km"
+```
+
 ## Basemap selection
+A basemap can be added into your QGIS to provide context for your other layers.
 
 ### OpenStreetMap
 
@@ -442,5 +479,8 @@ Screenshot of how to add OSM basemap
 
 ### QuickMapServices
 BRC exc 1.3
+
+
+
 
 ## Data organization

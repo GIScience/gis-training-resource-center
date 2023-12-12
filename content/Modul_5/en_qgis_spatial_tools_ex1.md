@@ -1,4 +1,4 @@
-# Exercise on Spatial Geodataprocessing
+# Exercise 1: Healthsite distribution in Saint Louis region
 
 ## Aim of the exercise
 Becoming familiar with different types of spatial analysis and geoprocessing tools. Understand the process of discovering relationships and connections between features in spatial data.
@@ -29,7 +29,7 @@ The projected coordinate system for Senegal is `EPSG:32628 WGS 84 / UTM zone 28N
 
 3. Select all healthsites which are located within the Saint Louis region:
     - Select the region `Saint Louis` in the boundary layer. You can just manually select the specific rows. See the Wiki entry on __Spatial queries__ for further information.
-    - Save the selection under the new name `Saint_Louis_region` in an extra layer. This can be done by right clicking on the boundary layer => `Export` => `Save Selected Features As...`
+    - Save the selection under the new name `Saint_Louis_region` in an extra layer. This can be done by right clicking on the boundary layer --> `Export` --> `Save Selected Features As...`
 
 ```{figure} /fig/en_ex2_export_selected.PNG
 ---

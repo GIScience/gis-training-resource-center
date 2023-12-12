@@ -142,6 +142,10 @@ width: 750px
 Single hue gradient on the left; Multiple hue gradient on the right
 ```
 
+```{tip}
+The [Colourbrewer website](colorbrewer2.org) is a quick and useful tool to select and generate colour palettes for your use case. 
+```
+
 ### Colour Blindness
 
 When choosing the colours, you have to keep in mind that colour gradients (especially diverging Red-Green gradients) can be hard or impossible to distinguish for persons with colour blindness.
