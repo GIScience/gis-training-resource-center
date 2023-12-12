@@ -43,7 +43,6 @@ parts:
       - file: content/Wiki/en_qgis_automatisation_wiki.md
         sections:
           - file: content/Wiki/en_qgis_model_builder_wiki.md
-
   - caption: Modul 1- Introduction GIS
     chapters:
       - file: content/Modul_1/en_qgis_theorie.md
@@ -66,7 +65,7 @@ parts:
     chapters:
       - file: content/Modul_3/en_qgis_digitalisation.md
         sections:
-          - file: content/Modul_3/en_qgis_digitalisation_ex1.md  
+          - file: content/Modul_3/en_qgis_digitalisation_ex1.md
       - file: content/Modul_3/en_qgis_data_classification.md
         sections:
           - file: content/Modul_3/en_qgis_classification_ex1.md
@@ -87,11 +86,11 @@ parts:
       - file: content/Modul_5/en_qgis_spatial_tools.md
         sections:
           - file: content/Modul_5/en_qgis_spatial_tools_ex1.md
-          - file: content/Modul_5/en_qgis_spatial_tools_ex2.md   
+          - file: content/Modul_5/en_qgis_spatial_tools_ex2.md 
       - file: content/Modul_5/en_qgis_non_spatial_tools.md
         sections:
           - file: content/Modul_5/en_qgis_non_spatial_tools_ex1.md
-          - file: content/Modul_5/en_qgis_non_spatial_tools_ex2.md 
+          - file: content/Modul_5/en_qgis_non_spatial_tools_ex2.md
   - caption: Modul 6- Data analysis with QGIS
     chapters:
       - file: content/Modul_6/en_qgis_data_analysis_theorie.md
@@ -99,10 +98,9 @@ parts:
           - file: content/Modul_6/en_qgis_data_analysis_ex1.md
   - caption: GIS in Anticipatory Action
     chapters:
-      - file: content/GIS_AA/en_qgis_srcs_basic_ex.md
       - file: content/GIS_AA/en_qgis_drought_trigger_somalia.md
         sections:
-          - file: content/GIS_AA/
+          - file: content/GIS_AA/en_qgis_srcs_basic_ex.md
       - file: content/GIS_AA/en_qgis_risk_assessment_plugin.md  
   - caption: Trainers corner
     chapters:

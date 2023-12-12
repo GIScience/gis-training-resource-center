@@ -1,6 +1,6 @@
-## Exercise on Spatial Geodataprocessing
+# Exercise on Spatial Geodataprocessing
 
-### Aim of the exercise
+## Aim of the exercise
 Becoming familiar with different types of spatial analysis and geoprocessing tools. Understand the process of discovering relationships and connections between features in spatial data.
 
 ### Links to Wiki articles

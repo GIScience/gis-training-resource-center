@@ -1,4 +1,4 @@
-## Exercise on Non-Spatial Geodataprocessing
+# Exercise on Non-Spatial Geodataprocessing
 
 ### Aim of the exercise
 Becoming familiar with different types of non-spatial analysis and geoprocessing tools. Understand the process of discovering relationships and connections between features in spatial data.
