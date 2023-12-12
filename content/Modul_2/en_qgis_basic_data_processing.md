@@ -459,6 +459,7 @@ Now we have a new column with the calculated area. Next we need to divide the po
 ```
 
 ## Basemap selection
+A basemap can be added into your QGIS to provide context for your other layers.
 
 ### OpenStreetMap
 
@@ -474,5 +475,8 @@ Screenshot of how to add OSM basemap
 
 ### QuickMapServices
 BRC exc 1.3
+
+
+
 
 ## Data organization
