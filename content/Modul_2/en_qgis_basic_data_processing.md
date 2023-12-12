@@ -456,7 +456,7 @@ Now we have a new column with the calculated area. Next we need to divide the po
 
 ```sql
 "population" / "area_km"
-``````
+```
 
 ## Basemap selection
 
