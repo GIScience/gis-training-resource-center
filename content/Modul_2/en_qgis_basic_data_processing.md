@@ -436,6 +436,10 @@ Screenshot of how to save only selected features.
 ```
 You can then choose the format, layername and crs.
 
+```{tip}
+If you are unsure which format is best, check out the wiki [Geodata types](../Wiki/en_qgis_geodata_types_wiki.md)
+```
+
 ### Field calculator
 
 The field calculator allows you that create a new field or update an existing one. You can perform calculations whether with existing attribute values or by using defined functions. 
