@@ -1,4 +1,7 @@
 # Data Analysis with QGIS
+
+🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+
 __Competences__:
 
 In this Module you will learn: 
@@ -40,9 +43,14 @@ Before doing any sort of processing, you need to familiarise yourself with the d
     * You can create charts from the attribute table
     * You can look for patterns, averages, outliers
 
-~~(* The purpose of spatial analysis in humanitarian IM is usually to describe a changing situation or toorient people to a new crisis)~~
 
-We are usually looking for ways to __describe__ our data to an audience in some ways. Sometimes spatial analysis will be used to provide recommendations for activities. 
+We are usually looking for ways to __describe__ our data to an audience in some ways. Sometimes spatial analysis will be used to provide recommendations for activities. Considering the amount of data available online, it is always important to take a step back and gain perspective when facing this knowledge, these capacities, as well as the data itself before rushing in to manipulate it:
+* Reliability: Can I trust this data?
+* Interest: Do I need this data?
+* Usage: Am I able to use this data?
+* Comprehensiveness: Is this data complete?
+* Date: How old is this data?
+* Sensitivity: Is this data sensitive?
 
 > Insert Map example?
 
@@ -60,10 +68,25 @@ There are some spatial analysis problems that are difficult to avoid completely.
 ![Modifiale Areal Unit Problem Example](/../../fig/en_modifiable_areal_unit_problem_example.png)
 ```
 
-Considering the amount of data available online, it is always important to take a step back and gain perspective when facing this knowledge, these capacities, as well as the data itself before rushing in to manipulate it:
-* Reliability: Can I trust this data?
-* Interest: Do I need this data?
-* Usage: Am I able to use this data?
-* Comprehensiveness: Is this data complete?
-* Date: How old is this data?
-* Sensitivity: Is this data sensitive?
+__There are two main types of data analysis__:
+* __Thematic analyses__ focus on visual variation according to a given attribute of the data (one of its characteristics). They are performed on a specific field of the attribute table for the layer, whether textual or numerical. The graphical representation (symbology) changes according to the attribute.
+
+```{figure} ../../fig/en_thematic_analysis.png
+---
+name: thematic analysis example
+width: 500px
+---
+```
+```{figure} ../../fig/thematic_analysis_map_example.png
+---
+name: thematic analysis example
+width: 600px
+---
+Thematic analysis using different colours for the roads to discern health accessibility (Source: WFP)
+```
+
+
+
+    * For instance: variations in size depending on population numbers in a refugee camp area.
+* __Spatial analyses__ are performed on spatialized phenomena such as: presence/absence of the phenomenon, its relationship with other phenomena or entities, distribution in space.
+    * For example: crossing two satellite images to extract flooded areas between two dates; or crossing latrine and water catchment areas in a refugee camp.
