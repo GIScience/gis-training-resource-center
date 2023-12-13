@@ -184,24 +184,6 @@ name: no_new_icon
 Screenshot of how to add a new icon
 ````
 
-
-<details>
-<summary>What do i do if there is no new icon?</summary>
-<br>
-If you can't find your new icon for the plugin, select view - toolbars and check that the QuickOSM plugin has a tick to be shown.
-
-```{figure} /fig/en_no_new_icon.png
----
-height: 500px
-name: no_new_icon
----
-Screenshot of how to add a new icon
-```
-
-</details>
-
-
-
 ## Geo features and attributes
 
 Each layer consists of geometric elements (points, lines or polygons) and an attribute table. The attribute table contains information on each element of the layer, which is stored in a table as rows and columns. Each row corresponds to an element and each column to an attribute. Atrributes can be for example: ID, name, postal code, street name, ...
