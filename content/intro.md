@@ -2,6 +2,8 @@
 ![Logos](../fig/TRC_RC_Logos.svg)
 # Welcome to the GIS Learning Hub for Humanitarian Empowerment
 
+🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+
 ![GIS Learning Hub](link_to_image)
 
 🌍 **Explore, Learn, and Empower through Geographic Information Systems (GIS) with QGIS**

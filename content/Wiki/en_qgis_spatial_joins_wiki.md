@@ -1,5 +1,7 @@
 # Spatial Joins
 
+🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+
 ## Join Attributes by Location
 - Adds additional attributes of the join layer to the input layer based on the __spatial relationship__.
 - `Input Layer`: dataset you want to enrich

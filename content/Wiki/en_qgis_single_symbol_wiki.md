@@ -1,5 +1,7 @@
 ## Single symbol classification
 
+🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+
 By default, QGIS visualizes all layers in the `Single symbol` setting. This means all the features of a layer are visualised the same. In this setting, you can change many parameters like colour or opacity __but you can not classify any data!__
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Single_symbol_video.mp4"></video>

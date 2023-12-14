@@ -1,5 +1,7 @@
 # Layer Concept
 
+🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+
 Geoinformation systems (GIS) visualize data by stacking layers on top of one another to create maps. Every layer represents one set of information.
 This is a vital concept to understand since analysis, as well as visualisation of data, is based on it.
 

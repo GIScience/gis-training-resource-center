@@ -1,5 +1,7 @@
 # Spatial Queries
 
+🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+
 ## Manual selection
 - Select features individually by clicking on each one.
 - You can select them one after the other.
