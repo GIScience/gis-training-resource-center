@@ -45,3 +45,49 @@
 
 ## Further resources
 You can access information about logical operators in QGIS documentation through the [following link](https://docs.qgis.org/3.28/en/docs/user_manual/working_with_vector/attribute_table.html#selecting-features).
+
+## Select by expression options
+
+::::{tab-set}
+
+:::{tab-item} Arithmetic operators
+| operator | functionality          |
+|----------|------------------------|
+| __+__    | addition               |
+| __-__    | substraction           |
+| __*__    | multiplication         |
+| __/__    | division               |
+| __%__    | remainder of division  |
+:::
+
+:::{tab-item} Comparison operators
+| operator | functionality            |
+|----------|--------------------------|
+| __=__    | equals                   |
+| __!=__   | not equal                |
+| __<__    | less than                |
+| __>__    | greater than             |
+| __<=__   | less than or equal to    |
+| __>=__   | greater than or equal to |
+:::
+
+:::{tab-item} Logical operators
+Operators such as AND, OR can be used to combine different queris or criteria
+| operator | functionality          |
+|----------|------------------------|
+| __AND__  | logical AND            |
+| __OR__   | logical OR             |
+| __NOT__  | logical NOT            |
+:::
+
+:::{tab-item} Special operators
+| operator      | functionality                                  |
+|---------------|------------------------------------------------|
+| __LIKE__      | pattern matching                               |
+| __IN__        | checks if a value is in a list of values       |
+| __IS NULL__   | checks for null values                         |
+| __BETWEEN__   | checks if a value is within a specified range  |
+| __CASE WHEN__ | conditional expressions                        |
+:::
+
+::::

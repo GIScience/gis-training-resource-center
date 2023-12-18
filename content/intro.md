@@ -2,7 +2,9 @@
 ![Logos](../fig/TRC_RC_Logos.svg)
 # Welcome to the GIS Learning Hub for Humanitarian Empowerment
 
-🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧 
+
+>>>>>>> f9bef8fc5c286fce9cb8c1091a4820791f493513
 
 ![GIS Learning Hub](link_to_image)
 

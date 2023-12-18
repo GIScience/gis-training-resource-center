@@ -1,3 +1,5 @@
+🚧 This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+
 # Geodata concept
 
 **Competences:**
@@ -24,6 +26,10 @@ Every projection comes with a trade-off in shape, direction, distance and area. 
 For example, Mercator projections don´t represent the area correctly. Google Maps still uses the Mercator to be able to represent streets correctly, since it works well on a small scale. On a big scale, the shape of the countries stay the same but the area is mispresented. You can check the true size in comparison to different placements on the map on this [website](https://www.thetruesize.com). A popular example is Greenland in comparison with Africa, which seem on the map to be about the same size, but in reality Africa is a lot bigger.
 
 ![Comparison Greenland - Africa](../../fig/en_greenland_africa.png)
+
+%%html
+<iframe src="https://www.thetruesize.com/#?borders=1~!MTUxNjUyNzI.MzM1OTE0MQ*MzI2NDc5MjY(NjgwODA4Mg~!GL*OTQ3NTExNQ.MjkxMDYzMzM)Mw" width="750" height="500"></iframe>
+
 
 ```{Attention}
 It's important to work with the right projections, if not we will produce wrong results!
@@ -96,7 +102,7 @@ There are two file types of geographic data: **vector and raster**.
   
 
 > **Vector**  
-Vector data contains a shape or a geometry. By using geometry objects (points, lines and polygons) the real world is represented. Each object stores the location (as adress or coordinates) and further attributes, f. e. name or ID. Which geometry is used, depends on the feature it represents. 
+Vector data contains a shape or a geometry. By using geometry objects (points, lines and polygons) the real world is represented. Each object stores the location (as adress or coordinates) and further attributes, f. e. name or ID. Which geometry is used, depends on the feature it represents.
 ![Geometry vector data](../../fig/en_vector_geometry.png)
   >>Examples: buildings, streets 
 

@@ -52,6 +52,8 @@ Below all buttons of the attribute table are listed.
 * __Select:__ Click on the lines of the features. 
 * __Multi Select:__ To select multiple features press `Ctrl` and select `features`.
 * __Show only selected features:__ In the bottom left of the attribute table open the dropdown menu and select `Show selected features`. To show again all features click on `Show all features`. 
+* __Only show unselected features__ Select features and click on ![](/fig/mActionInvertSelection.png)
+
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_attribute_table_select.mp4"></video>
 
@@ -63,7 +65,7 @@ Below all buttons of the attribute table are listed.
 
 ### Zoom in on a specific feature
 
-* __Zoom:__ Right click onyour feature --> `Zoom To Feature`
+* __Zoom:__ Right click on your feature --> `Zoom To Feature`
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zoom_to_feature.mp4"></video>
 
