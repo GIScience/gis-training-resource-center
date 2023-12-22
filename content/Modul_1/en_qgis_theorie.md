@@ -1,5 +1,7 @@
 # What is GIS? (Theory)
 
+🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+
 At its core GIS is a computer-based system to organises data with any spatial component. Also, called geodata. There are three core functions of GIS. 
 
 ```{figure} /fig/GIS_Core_functunality.drawio.svg

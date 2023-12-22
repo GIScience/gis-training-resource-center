@@ -1,5 +1,7 @@
 # Non-Spatial Joins
 
+🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+
 ## Join attributes by field value
 - Adds attributes of a non-spatial table to the layer
 - Join using a field that is present in both data sets

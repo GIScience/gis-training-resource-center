@@ -1,4 +1,5 @@
 # Plugins
+🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
 There are numerous extensions for QGIS, also called plugins, which provide extended functionalities. Usually, if you have a specific task and QGIS does not have the right functionality, look for a plugin. You google or search in the plugin window. 
 

@@ -1,3 +1,5 @@
+🚧 This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+
 # Geodata and Geodata processing
 **Competences:**
 * Data Import
@@ -171,10 +173,7 @@ Screenshot of the QuickOSM plugin
 ```{note} 
 If you are unsure which key and value are used, take a look in the [OSM wiki](https://wiki.openstreetmap.org/wiki/Tags) or [taginfo](https://taginfo.openstreetmap.org). 
 ```
-
-<details>
-<summary>What do i do if there is no new icon?</summary>
-<br>
+````{dropdown} What do i do if there is no new icon?
 If you can't find your new icon for the plugin, select view - toolbars and check that the QuickOSM plugin has a tick to be shown.
 
 ```{figure} /fig/en_no_new_icon.png
@@ -183,11 +182,7 @@ height: 500px
 name: no_new_icon
 ---
 Screenshot of how to add a new icon
-```
-
-</details>
-
-
+````
 
 ## Geo features and attributes
 
