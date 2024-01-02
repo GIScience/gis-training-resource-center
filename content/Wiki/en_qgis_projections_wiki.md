@@ -51,3 +51,7 @@ Click "Run"
 Click "Run"
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_raster.mp4"></video>
+
+## Comen mistakes with Coordinate Reference Systems
+
+The website [__I Hate Coordinate Systems!__](https://ihatecoordinatesystems.com/) offers a “a problem-based guide of common CRS issues, root causes, and solutions.”.
