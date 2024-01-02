@@ -1,4 +1,4 @@
-# Digitalization
+# Digitization
 
 Digitization is the process of converting geographic data from maps or images into digital form commonly represented as vector data.
 During this procedure, spatial information from maps or images is traced, forming points, polylines, or polygons. 
