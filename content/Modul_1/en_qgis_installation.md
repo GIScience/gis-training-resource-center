@@ -1,5 +1,7 @@
 # QGIS Installation
 
+🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+
 ## 🚀Quick guide QGIS 3.28 - installation and basic setup
 
 [![QGIS 3.28 - installation and basic setup](/fig/image_QGIS_3.28_download.png)](https://www.youtube.com/watch?v=tSJMT96HsAo)

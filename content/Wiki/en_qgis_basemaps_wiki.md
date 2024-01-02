@@ -1,5 +1,7 @@
 # Basemaps
 
+🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+
 Basemaps are background maps. They are often very practical since they are easy to use, allow easy orientation on the map canvas and are diverse.
 
 ```{Note}

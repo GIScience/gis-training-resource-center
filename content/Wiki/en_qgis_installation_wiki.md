@@ -1,4 +1,6 @@
 # QGIS installation 
+🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+
 QGIS is open source and therefore freely available to everyone at no cost. You can install QGIS for Windows, Mac and Linux computers.
 
 Generally, we recommend using the latest Long Term Release, because it is the most stable and contains the fewest bugs.

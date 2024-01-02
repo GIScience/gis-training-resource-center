@@ -1,5 +1,7 @@
 ## Categorized classification
 
+🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+
 Categorized classification in QGIS groups spatial data into distinct categories based on specific attributes. This classification enhances the organization and interpretation of geospatial information for clearer insights.
 
 Categorized classification is usually used for __nominal__ and __ordinal__ scaled data.

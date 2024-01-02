@@ -1,5 +1,7 @@
 # Basic Raster operations
 
+🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+
 ## Zonal statistics
 
 The `Zonal Statistics` allows the combination of vector and raster data.

@@ -4,6 +4,8 @@
 
 🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧 
 
+>>>>>>> f9bef8fc5c286fce9cb8c1091a4820791f493513
+
 ![GIS Learning Hub](link_to_image)
 
 🌍 **Explore, Learn, and Empower through Geographic Information Systems (GIS) with QGIS**

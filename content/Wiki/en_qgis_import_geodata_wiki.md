@@ -1,5 +1,7 @@
 # Geodata Import in QGIS
 
+🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+
 ## Vector data Import 
 
 

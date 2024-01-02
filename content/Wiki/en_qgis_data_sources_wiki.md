@@ -1,5 +1,7 @@
 # Data sources
 
+🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+
 ## (Geo) Data Sources Overview
 
 __[A selection of useful (geo) data sources](https://docs.google.com/document/d/1apsMZ1ecM6rylRszP8rZfIj-yj14ARs86iQ5ZtkrLZ4/edit#)__

@@ -1,5 +1,6 @@
 # QGIS Interface
 
+🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 ## Overview of QGIS Interface
 
 ![](/fig/en_QGIS_GUI.png)   
