@@ -1,0 +1,50 @@
+# Exercise 1: Understanding the Interface
+
+### Aim to the exercise
+
+QGIS is a complex program with an immense amount of functions. At first glance, the interface may seem confusing. This exercise aims to make you familiar with the main functions, windows and panel of QGIS. You will learn to create a new QGIS-Project and save it in a desired location, and how to find and navigate through the different panels and toolbars.
+
+- Load Data into QGIS
+- Learn where toolbars are situated
+- learn where panels are situated
+- move panels around and detach them
+- learn how to activate and find missing panels
+- opening settings?
+- Moving maps around?
+- Saving Project (correct folder?)
+- Folder structure?
+
+>Add images/videos
+
+### Wiki
+
+### Data
+
+### Tasks
+
+1. First let us create a new project. When opening QGIS, you will be greeted by the start menu. On the left, you have your recent projects (This will probably be empty since you have not saved anything yet). To the right of this you will have a News tab with articles about QGIS. Beneath this you will see a panel labeled `Project Template`. 
+    - __Double Click on the Empty Project option__.
+2. The new Project will be empty, let's load some data into the project: Navigate to the folder with the downloaded data and drag it into QGIS.
+In QGIS, most of the work is done either with __toolbars__ or __panels__. 
+- Toolbars let you switch between different functions of your mouse and are situated above the map canvas and panels. 
+
+- Panels are used to modify further settings for the tools, select algorithm, work with plugins and control most the main functions of QGIS. By default, you will have two panels on the left: the __Browser__ and __Layer__ panels. In the layer panel, you will see the data we just added. On the right side, you will most likely have the __Processing Toolbox__ panel and __Layer Styling__ panels. You can detach panels from the sides by simply clicking and dragging the panel away. You can either clip it to another panel (it will appear as another tab), or turn it into its own window. 
+> Video
+You can also resize the panels.
+```{TIP}
+Depending on the screen you are working on, the QGIS-Interface might look a little different. Sometimes elements can be hidden because it is not rendered correctly by default. Try resizing the panels and look at the different options and functions they offer. 
+```
+___But these are far from being the only panels you will use when working in QGIS.___ Let's see how we can find and activate the other panels and toolbars
+
+1. Navigate to the `View` Options and search for the `panels` and `toolbar` options. Hear you will see a long list of panels and toolbars you can activate. Panels that are active and can be found in the QGIS interface are marked with a check mark. Give yourself a minute to look at the different toolbars and panels. Do not worry, you will not use most of them when working with QGIS. The most important panels are: 
+    - The layers panel
+    - The layer styling
+    - The processing toolbox
+    - the browser
+Now let's take a look at the toolbars: The most important toolbars are: 
+    - the project toolbar
+    - the map navigation toolbar
+    - the digitizing toolbar
+    - the selection toolbar
+    - the attributes toolbar
+
