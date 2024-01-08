@@ -24,6 +24,50 @@ To digitize data for a new dataset you always have to start with creating the da
 
 ## Add geometries to a layer
 
+### Creation of point data
+
+To digitalise points, first you need an existing point layer or you need to create one (check out [Digital Data Creation]( https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation.html#digital-data-creation) above).
+
+1.	Select the point layer you want to add data to in the Layer panel
+2.	Go to the digitalisation toolbar and click on![](/fig/mActionToggleEditing.png). No the layer is in the editing mode.
+3.	Click on ![](/fig/mActionCapturePoint.png). 
+4.	Left-click on the feature you want to digitalise.
+5.	Once you click, a window will appear `[Your Layer Name]- Feature Attribute`. Here you can add the information about this feature to the different columns, based on the attribute table of the layer.
+5.	Once you are done with digitalisation ![](/fig/mActionSaveEdits.png) to save your edits.
+6.	Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_point_feature.mp4"></video>
+
+
+
+```{figure} /fig/point_creation.png 
+---
+width: 500px
+name: Point creation
+align: center
+---
+```
+
+#### Creation of line data
+
+The  method  is  similar  to  digitising  a  point  (see  above). First you have to created a new line layer or use an existing one. 
+
+```{attention} 
+If you create a new line layer remember to change the geometry type into lines because we are creating lines data now.
+```
+1.	Select the line layer you want to add data to in the Layer panel
+2.	Go to the digitalisation toolbar and click on![](/fig/mActionToggleEditing.png). No the layer is in the editing mode.
+3.	Click on ![](/fig/mActionCaptureLine.png). 
+4.	To digitalise line features, click along the line. When you are done, right-click on the last point of the line to finish the feature.
+5.	Once you click, a window will appear `[Your Layer Name]- Feature Attribute`. Here you can add the information about this feature to the different columns, based on the attribute table of the layer.
+6.	Once you are done with digitalisation ![](/fig/mActionSaveEdits.png) to save your edits.
+7.	Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
+
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_line_feature.mp4"></video>
+
+#### Creation of polygon data 
+
 - Open a new `polygone layer`.
 - Clicking on ![](/fig/mActionToggleEditing.png) start `edit mode` and Add Feature: `Capture Polygone`![](/fig/mActionCapturePolygon.png)|. 
 - Draw geometries and enter `feature attributes`, like *id* and *name*.

@@ -15,10 +15,10 @@ To check and adjust the CRS/ EPSG-Code should be the first thing you should do w
 ```
 
 1.  Open a QGIS projeckt
-2. In the very down right corner of QGIS you find the butten "EPSG". The number next to it is the EPSG Code currently used in the project. For more information click on the button.
+2. In the very down right corner of QGIS you find the butten `EPSG`. The number next to it is the EPSG Code currently used in the project. For more information click on the button.
 ![](/fig/EPSG_Code.png)
-3. The window "Project Properties" will open. Here you can view all availble CRS/EPSG-Code and their properties.
-4. To change the CRS/EPSG-code, select the one you want to use and click "Apply".
+3. The window `Project Properties` will open. Here you can view all availble CRS/EPSG-Code and their properties.
+4. To change the CRS/EPSG-code, select the one you want to use and click `Apply`.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_change_project_CRS.mp4"></video>
 
@@ -35,20 +35,21 @@ After loading any spatial data in QGIS, check the CRS/EPSG code of the data to m
 
 ## Changing the projection of a vector layer
 
-1. "Vector" Tab -> "Data Management Tools" -> "Reproject Layer"
+1. `Vector` Tab -> `Data Management Tools` -> `Reproject Layer`
 2. Select target CRS/ EPSG-Code.
-3. Save the new file by clicking on the three dots next to "Reprojected", specify the file name and the location where you want to save the file.
-Click "Run"
+3. Save the new file by clicking on the three dots next to `Reprojected`, specify the file name and the location where you want to save the file.
+5. Click `Run`
+
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_vector.mp4"></video>
 
 
 ## Changing the projection of a raster layer
 
-1. "Raster" Tab -> "Projections" -> "Warp (Reproject)"
+1. `Raster` Tab -> `Projections` -> `Warp (Reproject)`
 2. Select target CRS/EPSG-Code
 3. Select resampling method
-4. Save the new file by clicking on th three dots nest to "Reprojected", specify the file name and the location where you want to save the file.
-Click "Run"
+4. Save the new file by clicking on th three dots nest to `Reprojected`, specify the file name and the location where you want to save the file.
+5. Click `Run`
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_raster.mp4"></video>
 

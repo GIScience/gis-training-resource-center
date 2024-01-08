@@ -13,9 +13,10 @@ When importing a shapefile by drag-and-drop you have to use the file with the en
 
 #### Open vector data via Layer Tab
 
-1. `Layer` Tab -> `Vecctor`
-2. Select file
-3. Click `Add`
+1. Click on `Layer`-> `Add Layer`-> `Add Vector Layer`. 
+2. Click on the three points ![](/fig/Three_points.png) and navigate to your vector file.
+3. Select the file and click `Open`
+4. Back in QGIS click `Add`
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_vector.mp4"></video>
 
@@ -27,9 +28,10 @@ When importing a shapefile by drag-and-drop you have to use the file with the en
 
 ### Open raster data via Layer Tab
 
-1. `Layer` Tab -> `Raster`
-2. Select file
-3. Click `Add`
+1. Click on `Layer`-> `Add Layer`-> `Add Raster Layer`. 
+2. Click on the three points ![](/fig/Three_points.png) and navigate to your raster file.
+3. Select the file and click `Open`
+4. Back in QGIS click `Add`
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_raster.mp4"></video>
 
