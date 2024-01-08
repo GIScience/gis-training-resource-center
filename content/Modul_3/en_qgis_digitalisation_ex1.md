@@ -64,14 +64,15 @@ align: center
 ```
 9. Next, we want to visualize the affected communities which are listed in the Nigeria_flood_2022_affacted_population table. To find these communities in QGIS we need two things. An OpenStreetMap base map and the plugin `OSM Place Search`. 
     * To add the OSM as a base map click on `Layer` -> `Add Layer` -> `Add XYZ Layer…`. Choose `OpenStreetMap` and click `Add`. 
-    Arrange your layer in the `Layer Panel` so the OSM is at the bottom. 
+    Arrange your layer in the `Layer Panel` so the OSM is at the bottom ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html))
+. 
     ```{Tip}
     You can not interact with a base map!
     ```
-    * To add the plugin `OSM Place Search`, click on `Plugins` -> `Manage and Install Plugins…` -> `All` and search for `OSM Place Search`. Once you have found it click on it and click `Install Plugin`. You can open the `OSM Place Search Panel` like every other panel by clicking on `View` -> `Panels` and checking `OSM Place Search Panel`.
+    * To add the plugin `OSM Place Search`, click on `Plugins` -> `Manage and Install Plugins…` -> `All` and search for `OSM Place Search`. Once you have found it click on it and click `Install Plugin`. You can open the `OSM Place Search Panel` like every other panel by clicking on `View` -> `Panels` and checking `OSM Place Search Panel`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html#installation-of-plugins)).
     * In the panel, you can search for places on the OpenStreetMap by typing the name of the place in the search bar. Often it makes sense to add additional information like the name of the country. Try for example “Laujeri Bulama, Nigeria”.
 10. Now we have all our tools in place. In the next step, we create a new point vector layer from scratch to digitize the location of the affected communities. 
-    * Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer` 
+    * Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#create-a-new-layer)) 
     - Under `Database` click on ![](/fig/Three_points.png) and navigate to `temp` folder. Give the new dataset the name “Borno_affected_communities_point”. Click `Save`.
     * `Geometry type`: Select `Point`
     - Under `Additional dimension` you should always make sure that you check `None`. 
@@ -89,9 +90,9 @@ name:
 align: center
 ---
 ```
-11. Currently the new “Borno_affected_communities_point” is empty. To add features we can use the `Digitizing Toolbar`. `. If you can not see the toolbar View` -> `Toolbars` and check Digitizing Toolbar`.  ![](/fig/Digitizing_Toolbar.png)
+11. Currently the new “Borno_affected_communities_point” is empty. To add features we can use the `Digitizing Toolbar`. `. If you can not see the toolbar View` -> `Toolbars` and check Digitizing Toolbar` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#creation-of-point-data)).  ![](/fig/Digitizing_Toolbar.png) 
 
-    * Select the point layer “Borno_affected_communities_point” in the Layer panel. Go to the digitalisation toolbar and click on![](/fig/mActionToggleEditing.png). No the layer is in the editing mode.
+    * Select the point layer “Borno_affected_communities_point” in the Layer panel. Go to the digitalisation toolbar and click on![](/fig/mActionToggleEditing.png). No the layer is in the editing mode .
     * Search an affected community based on the table “Nigeria_flood_2022_affacted_population”. Once you have found one, click on ![](/fig/mActionCapturePoint.png). Left-click on the feature you want to digitalise.
     * Once you click, a window will appear ` Borno_affected_communities_point Feature Attribute`. Here you can add the name of the location.
     *Repeat the same process for as many communities as you like.

@@ -48,7 +48,7 @@ align: center
 ---
 ```
 
-#### Creation of line data
+### Creation of line data
 
 The  method  is  similar  to  digitising  a  point  (see  above). First you have to created a new line layer or use an existing one. 
 
@@ -66,7 +66,7 @@ If you create a new line layer remember to change the geometry type into lines b
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_line_feature.mp4"></video>
 
-#### Creation of polygon data 
+### Creation of polygon data 
 
 - Open a new `polygone layer`.
 - Clicking on ![](/fig/mActionToggleEditing.png) start `edit mode` and Add Feature: `Capture Polygone`![](/fig/mActionCapturePolygon.png)|. 
@@ -75,12 +75,7 @@ If you create a new line layer remember to change the geometry type into lines b
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_digitize_add_feature.mp4"></video>
 
-- Clicking on ![](/fig/mActionToggleEditing.png) start `edit mode`.
-- Add Feature: `Add Ring`![](/fig/mActionAddRing.png) (e.g. map the inner courtyard of a building, or -  as shown in the video - create a cercle to mark an isle in the lake).
-- To open the `Advanced Digitizing Toolbar` go to `View > Toolboxes > Advanced Digitizing Toolbar`.
-- To add rectangles 'automatically' go to `View > Toolbars > Shape Digitizing Toolbar`.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_digitize_add_ring.mp4"></video>
 
 ## Modify existing geometries in the layer
 
@@ -90,7 +85,20 @@ If you create a new line layer remember to change the geometry type into lines b
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_digitize_move_vertices.mp4"></video>
 
-__Further resources:__
+### Adding Ring to existing polygon layer
 
-[![Digitizing shapefile QGIS](/fig/en_digitizing_shapefiles.png)](https://www.youtube.com/watch?v=Zer558SnKX4)
+- Clicking on ![](/fig/mActionToggleEditing.png) start `edit mode`.
+- Add Feature: `Add Ring`![](/fig/mActionAddRing.png) (e.g. map the inner courtyard of a building, or -  as shown in the video - create a cercle to mark an isle in the lake).
+- To open the `Advanced Digitizing Toolbar` go to `View > Toolboxes > Advanced Digitizing Toolbar`.
+- To add rectangles 'automatically' go to `View > Toolbars > Shape Digitizing Toolbar`.
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_digitize_add_ring.mp4"></video>
+
+
+## Further resources
+
+The YouTube Video below shows the whole process of digitizing polygons in QGIS in some more detail. Note that the YouTuber is using an older version of QGIS, so things might be different in your version.
+
+<video width="100%" controls src="https://www.youtube.com/watch?v=Zer558SnKX4"></video>
+
 
