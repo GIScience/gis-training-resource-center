@@ -7,6 +7,8 @@
 
 The aim of this exercise will be to create an overview map of Ghana with its subdistricts, main roads, settlements, as well as hospitals. Such information can always be of use in humanitarian work. The first part of the exercise will cover the symbolization of the data layers. The second part will focus on the design of the print layout.
 
+---
+
 ## Data
 
 It is always important to make yourself familiar with the data at your disposal. 
@@ -19,18 +21,23 @@ For this exercise, we will use the following layers:
 
 All data has been downloaded from the humanitarian data exchange. Download the Data from the Nexus, __unzip the folder__, and load the data into a new QGIS project.
 
+---
+
 ## Wiki articles
 
 
+---
 
 ## Tasks
-
+---
 ### Preparation of the data
 
 1. Look into the attribute table of the different layers and look what information is available and how the attributes are named.
 2. We want to make a comprehensible map, think about which data we need and what data we can leave out. 
     - For example, the layer `hotosm_gha_roads_lines` contains too many roads for a map on a national scale. Let's open the attribute table and look at how the roads are classified. The data is using the conventional OpenStreetMap classification: The type of road is described under the attribute `highway`. In our case, it might be useful to only display the primary and secondary roads, so all the features where `highway=primary` OR `highway=secondary`.
     
+--- 
+
 ### Symbolization
 
 Now that we are familiar with the data at our disposal, let us start choosing the symbology for the different layers. Which information should be displayed on the map?
@@ -43,6 +50,7 @@ Let's start with the administrative boundaries. We want to show the names and ou
 4.  Open the __Symboloy Tab__ for the `adm_0`-layer and set it to a neutral colour (such as a light gray).
 5. We want to display the names of the districts. Open the __Labels Tab__ for the `adm_1`-layer. Select "Single Labels" and choose the attribute `ADM1_EN` for the values that are to be displayed.
 
+---
 
 Let's move on to the settlements.
 
@@ -59,6 +67,8 @@ The layer for the settlements has been cleaned up and only the towns, regional c
 9. Set the "Value" to `Name`.
 10. Make the font italic and draw a text buffer in order to differentiate the settlement labels from the labels of the regions.
 
+---
+
 Let's move on to the road network.
 
 1. The layer for the road network should sit on top of the administrative boundaries so the course and connections of roads is always visible. 
@@ -72,6 +82,8 @@ Let's move on to the road network.
 9. Add the Operator `OR` and repeat the same expression with the parantheses but select the unique value `secondary`
 10. The finished expression should be  `(  "highway"  =  'primary' )  OR  ( "highway"  =  'secondary'  )`
 11. Select a color and thickness for the line so it is distinguishable from the administrative boundaries (e.g. yellow; keep in mind that some colors have conventional associations; blue for water for example).
+
+---
 
 Now as a final touch, let's select a simble for the health facilities:
 
@@ -93,6 +105,8 @@ Adding a basemap can help potential readers orienting themselves.
 3. Click add. A new layer will appear at the bottom of your layers.
 
 Now the Map should be ready for a print layout.
+
+---
 
 ### Creating the print layout
 
@@ -116,6 +130,8 @@ Some space has been left in the bottom-right corner for an overview map
 ```
 
 What can we learn from this map? We can clearly identify areas that are harder to reach and where the travel time to a hospital is much longer than in the populated regions in southern Ghana. 
+
+---
 
 ### Bonus Exercise!
 
