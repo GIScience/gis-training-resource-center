@@ -2,7 +2,7 @@
 
 ## Aim of the exercise
 
-This exercise will help you to get to know the interface of QGIS a bit better. Furthermore, you will load your first data in QGIS and gain some hands-on experience with the layer concept
+This exercise will help you to get to know the interface of QGIS a bit better. Furthermore, you will load your first data in QGIS and gain some hands-on experience with the layer concept.
 
 ## Relevant Wiki Articles
 
@@ -11,7 +11,7 @@ This exercise will help you to get to know the interface of QGIS a bit better. F
 * [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)
 * [Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html)
 
-# Data sources
+## Data sources
 
 Download the data folder [here]() and save it on your PC. Unzip the .zip file!
 The folder is called “Ex_The_world" and contains the whole [standard folder structure](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure) with all data in the input folder and the additional documentation in the documentation folder.
