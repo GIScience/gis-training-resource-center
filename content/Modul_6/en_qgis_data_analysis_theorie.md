@@ -36,13 +36,12 @@ Geographic analysis helps us answer questions like:
 
 Before doing any sort of processing, you need to familiarise yourself with the data and understand it. 
 
-1. The first step is to read the metadata from the source and understand what data was collected, who collected the data, and how the data was collected 
-2. Next, open the attribute table and look at the different features and attributes available. What do the attributes show?
+1. The first step is to read the metadata from the source and understand __what data was collected__, __who collected the data__, __and how the data was collected__. 
+2. Next, open the attribute table and look at the different features and attributes available. What do the attributes show and what are they called?
 3. Now you can start visualising the data:
     * You can visualize the data cartographically by assigning or categorizing the data using symbols
     * You can create charts from the attribute table
     * You can look for patterns, averages, outliers
-
 
 We are usually looking for ways to __describe__ our data to an audience in some ways. Sometimes spatial analysis will be used to provide recommendations for activities. Considering the amount of data available online, it is always important to take a step back and gain perspective when facing this knowledge, these capacities, as well as the data itself before rushing in to manipulate it:
 * Reliability: Can I trust this data?
@@ -70,23 +69,35 @@ There are some spatial analysis problems that are difficult to avoid completely.
 
 __There are two main types of data analysis__:
 * __Thematic analyses__ focus on visual variation according to a given attribute of the data (one of its characteristics). They are performed on a specific field of the attribute table for the layer, whether textual or numerical. The graphical representation (symbology) changes according to the attribute.
-
+    * For instance: variations in size depending on population numbers in a refugee camp area.
 ```{figure} ../../fig/en_thematic_analysis.png
 ---
 name: thematic analysis example
 width: 500px
 ---
 ```
+
 ```{figure} ../../fig/thematic_analysis_map_example.png
 ---
 name: thematic analysis example
 width: 600px
 ---
-Thematic analysis using different colours for the roads to discern health accessibility (Source: WFP)
+Thematic analysis using different sizes to distinguish the population number in each camp (Source: [WFP](https://reliefweb.int/map/somalia/somalia-physical-constraints-map-21-july-2022))
 ```
 
+```{figure} ../../fig/thematic_analysis_map_example_2.png
+---
+name: thematic analysis example 2
+width: 600px
+---
+Thematic analysis using different colours for the roads to discern health accessibility (Source: [UNHCR](https://reliefweb.int/map/bangladesh/rohingya-refugee-responsebangladesh-rohingya-population-location-30-june-2022))
+```
+
+* __Spatial analyses__ are performed on spatialized phenomena such as: presence/absence of the phenomenon, its relationship with other phenomena or entities, distribution in space. They are performed on the geometry and position of elements, as well as on their relationship with other elements. Spatial analyses can create new values or elements.
+    * For example: crossing two satellite images to extract flooded areas between two dates; or crossing latrine and water catchment areas in a refugee camp; using a digital elevation model to determine which buildings have a high flooding risk.
 
 
-    * For instance: variations in size depending on population numbers in a refugee camp area.
-* __Spatial analyses__ are performed on spatialized phenomena such as: presence/absence of the phenomenon, its relationship with other phenomena or entities, distribution in space.
-    * For example: crossing two satellite images to extract flooded areas between two dates; or crossing latrine and water catchment areas in a refugee camp.
+## The Data
+
+## Data collection
+

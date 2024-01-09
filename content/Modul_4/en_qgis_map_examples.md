@@ -1,5 +1,7 @@
 # Examples for Good Map Design
 
+🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+
 In this chapter we will go over some common mistakes and good practice in map design. A second part of this chapter will be dedicated to discuss well designed maps and give examples on how to recreate the design in QGIS.
 
 > TO DO:  

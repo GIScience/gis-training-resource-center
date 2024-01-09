@@ -1,5 +1,5 @@
-# Exercise 0: Understanding the Interface
-
+# Exercise 1: Understanding the Interface
+---
 ### Aim to the exercise
 
 QGIS is a complex program with an immense amount of functions. At first glance, the interface may seem confusing. This exercise aims to make you familiar with the main toolbars, windows and panels of QGIS. You will learn to create a new QGIS-Project and save it in a desired location, and how to find and navigate through the different panels and toolbars.
@@ -9,20 +9,29 @@ QGIS is a complex program with an immense amount of functions. At first glance, 
 - learn where panels are situated
 - move panels around
 - learn how to activate and find missing panels
-- opening settings
 
+---
+
+### Wiki articles
+
+- [QGIS Interface](..\..\Wiki\en_qgis_interface_wiki.md)
+- [Projects and Folder Structure](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
+
+---
 
 ### Data
 
 In this exercise, we will not be using any data. Instead, we will be learning how to navigate throught the different interfaces and how to save and load a QGIS project.
-- You can download the zipped template folder structure from the Nexus: `Modul_1` > `Exercise_0`. 
-- If you have already set up a template folder you can skip this part. 
+- Download the zipped template folder structure from the Nexus: `Modul_1` > `Exercise_1`. 
+- If you have already set up a template folder, you can skip this part. 
+
+---
 
 ### Tasks
 
 1. First let us create a new project. When opening QGIS, you will be greeted by the start menu. Beneath this you will see a panel labeled `Project Template`. 
     - __Double Click on the Empty Project option__. You will be greeted with a white canvas since there is no data loaded into QGIS yet. 
-2. First, let's focus on the QGIS interface: Above the Canvas, you will find the __toolbar__ with a lot of different functions. To the left and right of the canvas 
+2. First, let's focus on the QGIS interface: Above the Canvas, you will find the __toolbar__ with a lot of different functions. To the left and right of the canvas you will find the panels. 
 In QGIS, most of the work is done either with __toolbars__ or __panels__. 
 - Toolbars let you switch between different functions of your mouse and are situated above the map canvas and panels. 
 
@@ -33,22 +42,24 @@ You can also resize the panels.
 Depending on the screen you are working on, the QGIS-Interface might look a little different. Sometimes elements can be hidden because it is not rendered correctly by default. Try resizing the panels and look at the different options and functions they offer. 
 ```
 
-___But these are far from being the only panels you will use when working in QGIS.___ Let's see how we can find and activate the other panels and toolbars
+__But these are far from being the only panels you will use when working in QGIS.__ Let's see how we can find and activate the other panels and toolbars:
 
 - Navigate to the `View` Options and search for the `panels` and `toolbar` options. Hear you will see a long list of panels and toolbars you can activate. Panels that are active and can be found in the QGIS interface are marked with a check mark. Give yourself a minute to look at the different toolbars and panels. Do not worry, you will not use most of them when working with QGIS. The most important panels are: 
-    - The layers panel
-    - The layer styling
-    - The processing toolbox
+    - the layers panel
+    - the layer styling
+    - the processing toolbox
     - the browser
 
-Now, let's take a look at the toolbars: The most important toolbars are:
-    - the project toolbar
-    - the map navigation toolbar
-    - the digitizing toolbar
-    - the selection toolbar
-    - the attributes toolbar
+Now, let's take a look at the toolbars. The most important toolbars are:  
+ - the project toolbar
+ - the map navigation toolbar
+ - the digitizing toolbar
+ - the selection toolbar
+ - the attributes toolbar
 
 Take the time and make yourself familiar with the different ways you can arrange the QGIS Interface. Knowing where to find the different functions can save you a lot of time and frustration in the future!
+
+---
 
 3. Let us now save the project. Click on the Save-Icon in the top left or navigate through `Project` > `Save as..`
 4. Choose a location for the project file. An ideal place would be in the project subfolder in the template folder. Navigate to the folder called `Modul_1_Exercise_0` and open the subfolder called `Project`. Select this location and give the QGIS-project a name (for example: `QGIS_Training_Exercise_0`). The Project will be saved as a `.qqz`-file.
@@ -60,3 +71,16 @@ Take the time and make yourself familiar with the different ways you can arrange
 Keeping your folder structure organised goes a long way in helping you work efficiently and without frustration.
 __Remember__: Project files in QGIS are saved separately from the data and style files you are using in the project, which is why it is adviseable to keep all the files related to a project in a folder.
 ```
+
+If the icons do not display correctly, you may want to customize the interface. 
+
+:::{dropdown} Opening the settings and customizing the interface. 
+
+If the interface does not display correctly on your device, you can customize the font and symbol size to better fit your needs.
+
+8. Navigating to the preferences via `Settings` > `Options` 
+9. Navigate to the `General` Tab on the left. 
+10. Here, you can change the UI theme, the Icon size and Font.  
+
+:::
+
