@@ -121,7 +121,7 @@ Once you are happy with the symbolization and colours of your data, the next ste
 
 The finished map could look something like this:
 
-```{figure} ../../fig/en_map_design_exercise_1_results.pdf
+```{figure} ../../fig/en_map_design_exercise_1_results.png
 ---
 name: Main road network and hospitals in Ghana, Africa
 width: 600px

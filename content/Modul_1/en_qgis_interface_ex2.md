@@ -14,7 +14,7 @@ QGIS is a complex program with an immense amount of functions. At first glance, 
 
 ### Wiki articles
 
-- [QGIS Interface](..\..\Wiki\en_qgis_interface_wiki.md)
+- [QGIS Interface](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
 - [Projects and Folder Structure](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
 
 ---
@@ -29,7 +29,7 @@ In this exercise, we will not be using any data. Instead, we will be learning ho
 
 ### Tasks
 
-1. First let us create a new project. When opening QGIS, you will be greeted by the start menu. Beneath this you will see a panel labeled `Project Template`. 
+1. First let us create a new project. When opening QGIS, you will be greeted by the start menu. On the left will be a window with recent projects (this will probably be empty). To the right will be a news window and beneath this you will see a panel labeled `Project Template`. 
     - __Double Click on the Empty Project option__. You will be greeted with a white canvas since there is no data loaded into QGIS yet. 
 2. First, let's focus on the QGIS interface: Above the Canvas, you will find the __toolbar__ with a lot of different functions. To the left and right of the canvas you will find the panels. 
 In QGIS, most of the work is done either with __toolbars__ or __panels__. 
