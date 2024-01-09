@@ -1,4 +1,4 @@
-# Exercise 0: Understanding the Interface
+# Exercise 1: Understanding the Interface
 
 ### Aim to the exercise
 
@@ -9,20 +9,24 @@ QGIS is a complex program with an immense amount of functions. At first glance, 
 - learn where panels are situated
 - move panels around
 - learn how to activate and find missing panels
-- opening settings
 
+
+### Wiki articles
+
+- [QGIS Interface](gis-training-resource-center\content\Wiki\en_qgis_interface_wiki.md)
+- [Projects and Folder Structure](gis-training-resource-center\content\Wiki\en_qgis_projects_folder_structure_wiki.md)
 
 ### Data
 
 In this exercise, we will not be using any data. Instead, we will be learning how to navigate throught the different interfaces and how to save and load a QGIS project.
-- You can download the zipped template folder structure from the Nexus: `Modul_1` > `Exercise_0`. 
+- You can download the zipped template folder structure from the Nexus: `Modul_1` > `Exercise_1`. 
 - If you have already set up a template folder you can skip this part. 
 
 ### Tasks
 
 1. First let us create a new project. When opening QGIS, you will be greeted by the start menu. Beneath this you will see a panel labeled `Project Template`. 
     - __Double Click on the Empty Project option__. You will be greeted with a white canvas since there is no data loaded into QGIS yet. 
-2. First, let's focus on the QGIS interface: Above the Canvas, you will find the __toolbar__ with a lot of different functions. To the left and right of the canvas 
+2. First, let's focus on the QGIS interface: Above the Canvas, you will find the __toolbar__ with a lot of different functions. To the left and right of the canvas you will find the panels. 
 In QGIS, most of the work is done either with __toolbars__ or __panels__. 
 - Toolbars let you switch between different functions of your mouse and are situated above the map canvas and panels. 
 
@@ -39,9 +43,9 @@ ___But these are far from being the only panels you will use when working in QGI
     - The layers panel
     - The layer styling
     - The processing toolbox
-    - the browser
+    - The browser
 
-Now, let's take a look at the toolbars: The most important toolbars are:
+Now, let's take a look at the toolbars. The most important toolbars are:
     - the project toolbar
     - the map navigation toolbar
     - the digitizing toolbar
