@@ -4,9 +4,7 @@
 
 🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧 
 
->>>>>>> f9bef8fc5c286fce9cb8c1091a4820791f493513
 
-![GIS Learning Hub](link_to_image)
 
 🌍 **Explore, Learn, and Empower through Geographic Information Systems (GIS) with QGIS**
 
@@ -41,7 +39,3 @@ Welcome to the **GIS Learning Hub for Humanitarian Empowerment**! This repositor
 **Let's embark on this GIS journey together and create a more informed, empowered, and connected world.** 🌎
 
 Happy Mapping!
-
-[![Join the Community](link_to_community)](link_to_community)
-
-*Note: Replace "link_to_image", "link_to_community", and other placeholders with actual URLs or references.*
