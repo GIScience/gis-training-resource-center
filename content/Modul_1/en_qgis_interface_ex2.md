@@ -37,7 +37,7 @@ You can also resize the panels.
 Depending on the screen you are working on, the QGIS-Interface might look a little different. Sometimes elements can be hidden because it is not rendered correctly by default. Try resizing the panels and look at the different options and functions they offer. 
 ```
 
-___But these are far from being the only panels you will use when working in QGIS.___ Let's see how we can find and activate the other panels and toolbars
+___But these are far from being the only panels you will use when working in QGIS.___ Let's see how we can find and activate the other panels and toolbars:
 
 - Navigate to the `View` Options and search for the `panels` and `toolbar` options. Hear you will see a long list of panels and toolbars you can activate. Panels that are active and can be found in the QGIS interface are marked with a check mark. Give yourself a minute to look at the different toolbars and panels. Do not worry, you will not use most of them when working with QGIS. The most important panels are: 
     - The layers panel
