@@ -49,6 +49,7 @@ parts:
       - file: content/Modul_1/en_qgis_start.md
         sections:
           - file: content/Modul_1/en_qgis_interface_ex1.md
+          - file: content/Modul_1/en_qgis_interface_ex2.md
       - file: content/Modul_1/en_qgis_installation.md      
   - caption: Modul 2- Working with Geodata
     chapters:
