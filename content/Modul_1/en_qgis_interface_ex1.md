@@ -1,4 +1,6 @@
 # QGIS Exercise 1: Understand the user interface and get to know the layer concept
+
+🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 ### Aim of the exercise:
 To take the first steps.
 Display vector data in QGIS and view the attribute data.

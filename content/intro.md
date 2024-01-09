@@ -2,7 +2,9 @@
 ![Logos](../fig/TRC_RC_Logos.svg)
 # Welcome to the GIS Learning Hub for Humanitarian Empowerment
 
-![GIS Learning Hub](link_to_image)
+🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧 
+
+
 
 🌍 **Explore, Learn, and Empower through Geographic Information Systems (GIS) with QGIS**
 
@@ -37,7 +39,3 @@ Welcome to the **GIS Learning Hub for Humanitarian Empowerment**! This repositor
 **Let's embark on this GIS journey together and create a more informed, empowered, and connected world.** 🌎
 
 Happy Mapping!
-
-[![Join the Community](link_to_community)](link_to_community)
-
-*Note: Replace "link_to_image", "link_to_community", and other placeholders with actual URLs or references.*

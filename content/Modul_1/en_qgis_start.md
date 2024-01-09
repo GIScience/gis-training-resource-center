@@ -1,5 +1,7 @@
 # Getting started with QGIS
 
+🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+
 **Competences:**
 
 - What is QGIS?
@@ -16,21 +18,53 @@ You may __view, edit, capture and analyze spatial data or create printable maps_
 
 - QGIS is backed by a __large community of users__, so it’s easy to find solutions to technical issues by using QGIS forums, blog and subreddit.
 
+___
+
+
+### Open QGIS
+
+Open QGIS like any other program on your computer. 
+The start screen of QGIS usually shows you the projects you worked on recently and the option to create a new project.
+
+There are __two__ options to create a new project:
+
+1. On the start screen click on `Project Template`
+```{figure} /fig/en_project_template_BRC.png
+---
+height: 400
+name: Project Template
+align: Left
+---
+```
+2. In the upper left corner click on `Project` -> ` New Project `
+
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_new_project.mp4"></video>
+
+```{tip} 
+A QGIS Project file has the format ending `.qgz`
+```
+
 ### Overview of QGIS Interface
 
+The interface of QGIS is at first glance quite complex. However, once you know all the components you will be able to orientate yourself quickly. Here you can find a description of all components of the interface.
+
+```{tip} When you hover with your mouse cursor over icons, text will appear which explains the function of the button
+```
+
 ![QGIS_User_Interface](/fig/en_QGIS_GUI.png)
-User interface 
+
 
 1. __Layers List / Browser Panel:__ The __layers list__ shows __all layers/files__ that are __loaded in the project__. You can show/hide layers and set other properties.
 
 2. __Toolsbars:  __Toolbars__ are shortcuts__ to execute frequently used commands. For example, there are special toolbars for __vector and raster files__, but also general ones for saving your project, etc. The toolbar contains, among other things, a list of all the commands you can use. The toolbar also contains the __toolbox__, which is used later in many of the wiki videos.
 
- <tagName>  <tagName>
-
-![Alt text](/fig/en_Interface_02.png)
- <br>
-<tagName>  <tagName>
-Toolbox
+```{figure} /fig/en_Interface_02.png
+---
+height: 50px
+name: Toolbox button
+align: center
+---
+```
 
 3. __Map View:__ The __map view__ is the __central component__ of every GIS programme. This is where the __geodata__ are displayed. The map view has a projection which does not always have to correspond to the projection of the layers.
 
@@ -40,83 +74,104 @@ Toolbox
 
 6. __Locator bar__. Here you can __search for tools and layers__. If you don't know where to find a tool, you can try here.
 
-  <tagName>  <tagName>
+ :::{dropdown} Exercise: Create a new QGIS project
+ 1. In your “GIS_Training” folder, create a __subfolder__ called "Projects"
+ 2.  Open __QGIS__
+ 3. Click on `Project` -> ` New Project `
+ 4. In the top-left corner, click on `Project` -> `Save as`, browse to your Projects folder and save the project as "Session1”
+ 5. Click on __Save as__, browse to your Projects folder and save the project as “Session1”
+ 6. Open your “Projects” folder and check the __.qgz file__ that you just created
+:::
 
-> **Exercise: Create a new QGIS project**  
-
-  - In your “GIS_Training” folder, create a __subfolder__ called __“Projects”__
-  - Open __QGIS__
-  - Click on __New Empty Project__
-  - In the top-left corner, click on __Project__
-  - Click on __Save as__, browse to your Projects folder and save the project as “Session1”
-  - Open your “Projects” folder and check the __.qgzfile__ that you just created
-
-   <tagName>  <tagName>
-
-![Project template](/fig/en_project_template_BRC.png)
-Project template
-
-### Further Functionalities
+### Moving an orientation on the Map Canvas
 
 #### Moving the map view
 
+To move on the map canvas with your mouse cursor you need to toggle the hand button. 
+
 ![](/fig/qgis_move_symbol.png)
-* You can also move with the _arrow keys_
+
+You can always move on the map canvas with arrow keys on your keyboard.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_move.mp4"></video>
 
 #### Zooming in the map view
 
+The easiest way to zoom on Map Canvas is by __scrolling__.
+
+Or with the hotkeys `Ctrl`+`+` and `Ctrl`+`-`
+
 ![](/fig/qgis_zoom_symbol.png)
-* You can also zoom by scrolling
-* Or with Ctrl+ or Ctrl-
+
+Another way is to use the zoom buttons in the toolbox panel.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zoom.mp4"></video>
+___
 
-#### Show properties of objects
+### Toolbox & Toolbars
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_identify.mp4"></video>
-
-* Make sure to select the layer you want identify features in 
-
-#### Set the projection of the map view (project CRS)
-
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_map_projection.mp4"></video>
-
-* Geodata concepts are explained in detail in [module 2](../Modul_2/en_qgis_geodata_concept.md)
-
-#### Open Project
-
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_project.mp4">
-</video>
-
-#### Save Project
-
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_save_project.mp4"></video>
-
-*  The layer data used in the project are not saved in the project file. Instead, the project file only contains the file paths where the layer data were located at the time the project was last saved on the PC. If the location of this layer data is subsequently changed, the error message "handle unavailable layers" will appear when the project is opened again.
-Good data organisation with a fixed and well thought-out folder structure prevents such problems.
+Basically, all the functionality, tools and applications of QGIS are organised in the Toolbox. Some Tools have their own toolbars which you can add to your QGIS interface.
 
 #### Open Toolbox
 
+To open the Toolbox in QGIS click on the gearwheel button. Or click on `Processing` -> `Toolbox`
+
 ![](/fig/Geschlossene_Toolbox_01.png)
-* You can also zoom by scrolling
-* Or with Ctrl+ or Ctrl- 
+
+You can use the search bar to find specific tools.
+
+```{tip} There are cases when you want to do something in QGIS but do not know the exact tool. Sometimes it's worth just looking for what you think the name of the tool might be.
+```
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_toolbars.mp4"></video>
 
 #### Show and hide displays and toolbars
 
+There are toolbars and panels for many different tasks. To avoid an overcrowded interface it is smart to only activate specific toolbars or panels only when you really need them.
+
+To add or remove toolbars from your interface click on `View` -> `Toolbars` -> Check or uncheck the toolboxes you want to add or remove
+
+To add or remove  panels from your interface click on `View` -> `TPanels` -> Check or uncheck the panels you want to add or remove
+
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Anzeigen_einblenden_ausblenden.mp4"></video> 
 
 #### Move and arrange toolbars
 
-<tagName>  <tagName>
+At each toolbar there is a field of two dotted lines. If you move the mouse pointer over it until an arrow cross appears and then hold down the left mouse button, you can move the toolbar. This allows an individualised arrangement of your own tools. By compressing all toolbars into a few lines, the map view window can also be enlarged.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_arrange_toolbars.mp4"></video>
 
-*   At each toolbar there is a field of two dotted lines. If you move the mouse pointer over it until an arrow cross appears and then hold down the left mouse button, you can move the toolbar. This allows an individualised arrangement of your own tools. By compressing all toolbars into a few lines, the map view window can also be enlarged.
+___
 
-See also:
- [corresponding page in the Wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
+## Save & Open QGIS Projects
+
+To save progress or to open an existing project in QGIS is very similar to programs like MS Word. However, there is one __BIG__ difference. 
+In QGIS the geodata you work with is __not__ saved in your QGIS projectfile. Instead, the project file only contains the file paths where the geodata were located at the time the project was last saved on the PC. If the location of this geodata is subsequently changed, the error message "handle unavailable layers" will appear when the project is opened again.
+
+Good data organisation with a fixed and well-thought-out folder structure prevents such problems.
+
+```{Warning} 
+Always organize your data needly. Check out the Wiki article on [Standard Folder Structure](https://github.com/GIScience/gis-training-resource-center/raw/main//Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure) for more info. 
+```
+
+
+#### Open Projects
+
+To open an existing QGIS project click on `Project` -> `Open…` -> Navigate to your project and open it.
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_project.mp4">
+</video>
+
+#### Save Projects
+
+* __When you save the first time__: To save the QGIS project you are working on click on `Project` -> `Save as…`-> Navigate to the folder where you want to save the project -> Give the project a name -> `Save`
+* __When you save progress__: To save progress in a project that was already saved somewhere on your computer there are two good options:
+    * Use the hotkey `Ctrl`+ `s` on your keyboard. 
+    * Click on `Project` -> `Save`. 
+
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_save_project.mp4"></video>
+
+
+
 

@@ -1,11 +1,11 @@
 # Spatial Geodataprocessing
 
 #### Introduction:
-The first part of this module explores overlay operations, focusing specifically on the operations of __Clip__, __Dissolve__, and __Buffer__. These operations enable us to combine geometries from two layers in various ways. In addition to these, we will cover __Spatial joins__ in this section. Spatial joins offer opportunities to enhance the attributes of the input layer by incorporating additional information from the join layer, utilizing their spatial relationship. All of these operations make use of the spatial information in the provided input data to either enrich the data or perform various analyses.
+The first part of this module explores overlay operations, focusing specifically on the operations of __Clip__, __Dissolve__, and __Buffer__. These operations enable us to combine geometries from two layers in various ways. In addition to these, we will cover __Spatial joins__ and __Spatial selections__ in this section. Spatial joins offer opportunities to enhance the attributes of the input layer by incorporating additional information from the join layer, utilizing their spatial relationship. These relationships can also be used to select features from an input layer based on their location in comparison to another layer. All of these operations make use of the spatial information in the provided input data to either enrich the data or perform various analyses.
 
 ## Clip
 
-This tool is used to cut a vector layer with the boundaries of another polygon layer. It keeps only the parts of the features in the input layer that are inside the polygons of the overlay layer, creating a refined dataset. While the core attributes of the features remain the same, some properties like area or length may change after the clipping operation. If you've stored these properties as attributes, you might need to update them manually.
+The ![](/fig/mAlgorithmClip.png) `Clip` tool is used to cut a vector layer with the boundaries of another polygon layer. It keeps only the parts of the features in the input layer that are inside the polygons of the overlay layer, creating a refined dataset. While the core attributes of the features remain the same, some properties like area or length may change after the clipping operation. If you've stored these properties as attributes, you might need to update them manually.
 
 The tool has two different input option:
 * Input layer: Layer from which the selection is clipped
@@ -13,7 +13,7 @@ The tool has two different input option:
 
 ```{figure} /fig/en_clip_sudan.PNG
 ---
-height: 300px
+width: 75%
 name: en_clip_sudan
 ---
 Screenshot of the Clip tool with the input data
@@ -25,7 +25,7 @@ Information on road infrastructure for humanitarian aid operations is of great i
 1. Load the OSM roads data from the [HOT Export tool](https://export.hotosm.org/v3/exports/918cf68d-dfd7-40f1-ab46-4f0426dfaf68/) (part of the Humanitarian OpenStreetMap Team) as a new layer __Road_infrastructure_Sudan.geojson__.
 ```{figure} /fig/en_screenshot_hot_export_tool.PNG
 ---
-height: 280px
+width: 75%
 name: en_screenshot_hot_export_tool
 ---
 Screenshot of the HOT Export tool to download your OSM data
@@ -45,7 +45,7 @@ In addition to the standard QGIS operation __Clip__, there are two other, more a
 
 ```{figure} /fig/en_gdal_clipping_tools.PNG
 ---
-height: 60px
+width: 40%  
 name: gdal_clipping_tools
 ---
 The GDAL tools Clip vector by extent and Clip vector by mask layer
@@ -64,7 +64,7 @@ This operation clips any vector file to a given extent. This clip extent will be
 
 ```{figure} /fig/en_clip_vector_by_extent.PNG
 ---
-height: 350px
+width: 75%
 name: en_clip_vector_by_extent
 ---
 Screenshot of the tool Clip vector by extent
@@ -79,7 +79,7 @@ This operation uses a mask polygon layer to clip any vector layer. This operatio
 
 ```{figure} /fig/en_clip_vector_by_mask_layer.PNG
 ---
-height: 350px
+width: 75%
 name: clip_vector_by_mask_layer
 ---
 Screenshot of the tool Clip vector by mask layer
@@ -90,11 +90,11 @@ Screenshot of the tool Clip vector by mask layer
 ::::
 
 ## Buffer
-The concept of __buffering__ in QGIS for vector data, refers to the process of creating a new polygon layer with areas that represent a __certain distance__ or __buffer around existing vector features__. This buffer zone is typically uniform and extends outward from the original features, making it useful for various spatial analyses and mapping applications. Examples for such analyses could be the creation of buffer zones to protect the environment, analyse greenbelts around residential areas or create risk areas for natural disasters. Buffer can be created around points, lines and polygons as shown in the figure below.
+The concept of ![](/fig/mAlgorithmBuffer.png) __buffering__ in QGIS for vector data, refers to the process of creating a new polygon layer with areas that represent a __certain distance__ or __buffer around existing vector features__. This buffer zone is typically uniform and extends outward from the original features, making it useful for various spatial analyses and mapping applications. Examples for such analyses could be the creation of buffer zones to protect the environment, analyse greenbelts around residential areas or create risk areas for natural disasters. Buffer can be created around points, lines and polygons as shown in the figure below.
 
 ```{figure} /fig/en_buffer_point_line_polygon.png
 ---
-height: 350px
+width: 100%
 name: spatial_relations
 ---
 Different kinds of buffer zones <br /> (Adapted after [QGIS Documentation](https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve), Version 3.28)
@@ -129,13 +129,13 @@ In the case of humanitarian action buffering can be used to create a map which p
 ````
 
 ## Dissolve
-The dissolve operation was already mentioned in the later part of the previous exercise. The dissolve tool combines features in a vector layer to make new ones. You can pick one or more attributes to group together features that share the same value for those attributes. Alternatively, you can combine all features into one. The tool will convert the shapes into multi-geometries, and if you're working with polygons, it'll remove shared boundaries between them.
+The ![](/fig/mAlgorithmDissolve.png) `Dissolve` operation was already mentioned in the later part of the previous exercise. The dissolve tool combines features in a vector layer to make new ones. You can pick one or more attributes to group together features that share the same value for those attributes. Alternatively, you can combine all features into one. The tool will convert the shapes into multi-geometries, and if you're working with polygons, it'll remove shared boundaries between them.
 
 If you turn on the "Keep disjoint features separate" option when running the tool, it'll make sure that features or parts that don't overlap or touch each other are saved as separate features instead of being part of one big feature. This allows you to create several vector layers.
 
 ```{figure} /fig/en_buffer_dissolve.png
 ---
-height: 175px
+width: 100%
 name: buffer_dissolve
 ---
 Buffer zones with dissolved (left) and with intact boundaries (right) showing overlapping areas <br /> (Source: [QGIS Documentation](https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve), Version 3.28)
@@ -184,7 +184,7 @@ Returns 1 (true) if the supplied geometries have some, but not all, interior poi
 
 ```{figure} /fig/en_select_by_location.png
 ---
-height: 300px
+width: 100%
 name: spatial_relations
 ---
 Looking for spatial relations between layers <br /> (Source: [QGIS Documentation](https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html?highlight=join%20attributes%20location), Version 3.28)
@@ -201,7 +201,7 @@ The additional attributes and their values are taken from a second vector layer.
 
 ```{figure} /fig/en_join_attributes_by_location.PNG
 ---
-height: 500px
+width: 75%
 name: join_attribute_by_location
 ---
 Screenshot of the tool Join attributes by location
@@ -214,7 +214,7 @@ For performing additional calculations in combination with a spatial join, the Q
 
 ```{figure} /fig/en_join_attributes_by_location_summary.PNG
 ---
-height: 500px
+width: 75%
 name: join_attribute_by_location
 ---
 Screenshot of the tool Join attributes by location (summary)
@@ -231,7 +231,7 @@ Furthermore, if a maximum distance is specified, only the features that are with
 
 ```{figure} /fig/en_join_attributes_by_nearest.PNG
 ---
-height: 500px
+width: 75%
 name: join_attribute_by_location
 ---
 Screenshot of the tool Join attributes by nearest
@@ -263,3 +263,35 @@ In the aftermath of flooding events, data on the affected population and the ext
 ````
 
 You can find further information about spatial joins by referring to the QGIS documentation, specifically in the section [Join attributes by location](https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html?highlight=join%20attributes%20location#join-attributes-by-location).
+
+## Select by location
+Next to spatial joins, it is also possible to __create a selection in a vector layer__. The criteria for the feature selection is __based on__ the previously described __spatial relationships__ between each feature and the features in an additional layer. The feature selection may be visible in the map view or can be seen in the attribute table.
+
+For this process, we select an input layer that defines the features, and these features are subsequently compared to those in a second input layer. The figure below illustrates an example where we examine health sites in a particular region of Senegal and compare them to flooded areas within the same region. This analysis allows us to identify the health sites that are most vulnerable to flooding in that particular area.
+
+```{figure} /fig/en_ex2_select_by_location_health.PNG
+---
+width: 70%
+name: select_by_location
+---
+Screenshot of the Select by location tool
+```
+
+## Centroids
+This process creates a new point layer, with points representing the centroids of the geometries of the input layer. 
+
+The centroid is a single point that shows the middle of all the parts of a feature. It can be outside the feature or on each part of it. An example would be a point, representing a polygon. 
+
+The attributes of the points in the output layer are the same as for the original features.
+
+Centroids can be used in spatial operations such as __spatial joins__ to represent a polygon as points.
+
+```{figure} /fig/en_centroids_screenshot.png
+---
+width: 80%
+name: en_qgis_centroids
+---
+The black points represent the centroids of the features of the input layer.
+```
+
+

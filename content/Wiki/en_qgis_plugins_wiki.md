@@ -1,10 +1,11 @@
 # Plugins
+🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
 There are numerous extensions for QGIS, also called plugins, which provide extended functionalities. Usually, if you have a specific task and QGIS does not have the right functionality, look for a plugin. You google or search in the plugin window. 
 
 ## Installation of plugins
 
-To install a plugin `Plugins` -> `Manage and Install Plugins…` -> `All` -> search for the plugin -> `Install Plugin`
+To install a plugin `Plugins` -> `Manage and Install Plugins…` -> `All` -> Search for the plugin -> `Install Plugin`
 
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_plugins.mp4"></video>
@@ -15,7 +16,7 @@ If you cannot find a specific extension, check your capitalisation and correct u
 
 ## Manage Plugins
 
-If you are currently not using installed plugins it might be usefull to deacticate these plugins to avoid crowded toolbars and to amny open panels. 
+If you are currently not using installed plugins it might be usefull to deacticate these plugins to avoid crowded toolbars and to reduce open panels. 
 
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Manage_plugins.mp4"></video>
@@ -31,5 +32,5 @@ Experimental extensions are either still under development, or they are obsolete
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Experimentel_plugins.mp4"></video>
 
 ```{Tip}
-Due to the often missing optimisation for the used QGIS version, experimental extensions may cause more error messages or other problems up to a crash of QGIS. Experimental extensions should therefore only be activated for use and then deactivated again. In addition, make sure that the current working progress is saved to avoid data loss when QGIS crashes.
+Due to the often missing optimization for the used QGIS version, experimental extensions may cause more error messages or other problems up to a crash of QGIS. Experimental extensions should therefore only be activated for use and then deactivated again. In addition, make sure that the current working progress is saved to avoid data loss when QGIS crashes.
 ```

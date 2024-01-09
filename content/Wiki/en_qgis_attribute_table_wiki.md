@@ -1,8 +1,10 @@
 # Attribute Table in QGIS
 
+🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+
 The attribute table, a core component of Geographic Information Systems (GIS), __organizes and presents__ detailed information about features in a selected layer. Each __row__ in the table represents a __feature__, while __columns__ store specific __attributes__. This table facilitates searching, selection, sorting, filtering, and editing of features.
 
-## Buttons of Attribute Tabel
+## Buttons of Attribute Table
 
 ![Example of an attribute table](/fig/attribute_table.png)
 
@@ -35,12 +37,12 @@ Below all buttons of the attribute table are listed.
 |![](/fig/dock.png)| Dock attribute table | Allows to dock/undock the attribute table||
 |![](/fig/mAction.png)| Actions | Lists the actions related to the layer           | |
 
-## Attribute Table- Basics
+## Attribute Table-Basics
 
 ### Display attribute table and sort features
 
 * __Open Attribute Table:__ Right click on your layer --> `Open Attribute Table`
-* __Sort column:__ Click on a column header
+* __Sort column:__ Click on a column header.
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_show_attribute_table.mp4"></video>
 
@@ -48,8 +50,10 @@ Below all buttons of the attribute table are listed.
 ### Manually select features in the attribute table
 
 * __Select:__ Click on the lines of the features. 
-* __Multi Select:__ To select multiple features press `Ctrl` and select features.
-* __Show only selected features:__ In the bottom left of the attribute table open the dropdown menu and select `Show selected features`. To show again all features click on `Show all features` 
+* __Multi Select:__ To select multiple features press `Ctrl` and select `features`.
+* __Show only selected features:__ In the bottom left of the attribute table open the dropdown menu and select `Show selected features`. To show again all features click on `Show all features`. 
+* __Only show unselected features__ Select features and click on ![](/fig/mActionInvertSelection.png)
+
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_attribute_table_select.mp4"></video>
 
@@ -61,7 +65,7 @@ Below all buttons of the attribute table are listed.
 
 ### Zoom in on a specific feature
 
-* __Zoom:__ Right click onyour feature --> `Zoom To Feature`
+* __Zoom:__ Right click on your feature --> `Zoom To Feature`
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zoom_to_feature.mp4"></video>
 
@@ -69,9 +73,9 @@ Below all buttons of the attribute table are listed.
 QGIS provides two view modes to easily manipulate data in the attribute table:
 
 * __Table View:__ ![](/fig/mActionOpenTable.png)This mode presents the values of multiple features in a tabular format, where each row corresponds to a feature, and each column represents a field.
-* __Form view:__![](/fig/mActionFormView.png) This mode shows all attributes of __one_ selected feature.
+* __Form view:__! [](/fig/mActionFormView.png) This mode shows all attributes of _one_ selected feature.
 
-To switch between the modes use the ![](/fig/mActionFormView.png) ![](/fig/mActionOpenTable.png) buttons in the down right corner of the attribute table.
+To switch between these modes use the ![](/fig/mActionFormView.png) ![](/fig/mActionOpenTable.png) buttons in the down right corner of the attribute table.
 
 ___
 
@@ -87,8 +91,8 @@ ___
 
 ### Add new column
 
-* __Add new column:__ Activate editing mode by clicking on ![](/fig/mActionToggleEditing.png) --> click on ![](/fig/mActionNewAttribute.png), the window `Add Field` will open
-* __Specify column variables:__ Fill the window and click `OK`
+* __Add new column:__ Activate editing mode by clicking on ![](/fig/mActionToggleEditing.png) --> click on ![](/fig/mActionNewAttribute.png), the window `Add Field` will open.
+* __Specify column variables:__ Fill the window and click `OK`.
     * `Name`        = Name of column
     * `Comment`     = Additional info about column
     * `Type`        = Select the type of data the column will have.Table of data types below.

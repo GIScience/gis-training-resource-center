@@ -1,5 +1,7 @@
 # Layer Concept
 
+🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+
 Geoinformation systems (GIS) visualize data by stacking layers on top of one another to create maps. Every layer represents one set of information.
 This is a vital concept to understand since analysis, as well as visualisation of data, is based on it.
 
@@ -11,7 +13,7 @@ Set a tick in the Layers panel
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_show_hide_layer.mp4"></video>
 
-## Have you "lost" you layer?
+## Have you "lost" your layer?
 
 Right click on your layer -> `Zoom to layer(s)`
 
