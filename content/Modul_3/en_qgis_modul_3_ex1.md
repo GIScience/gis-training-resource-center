@@ -13,8 +13,9 @@ In this exercise, you will learn how to digitise the positions of settlements by
 
 ## Data sources
 * [Nigeria: Administrative Division with Aggregated Population ("kontur_boundaries_NG_20230628.gpkg")](https://data.humdata.org/dataset/kontur-boundaries-nigeria)-Kontor
-* [Nigeria : Flood data- “Nigeria_flood_2022_affacted_population” ](https://data.humdata.org/dataset/nigeria-nema-flood-affected-geographical-areasnorth-east-nigeria-flood-affected-geographical-areas)- UN OCHA
-* 
+* [Nigeria : Flood data (“Nigeria_flood_2022_affacted_population”) ](https://data.humdata.org/dataset/nigeria-nema-flood-affected-geographical-areasnorth-east-nigeria-flood-affected-geographical-areas)- UN OCHA. This dataset was manipulated for training purposes.
+* [Satellite detected water extents between 1 and 25 October 2022 over Nigeria (VIIRS_20220901_20220930_MaximumFloodWaterExtent_Nigeria.shp)](https://data.humdata.org/dataset/satellite-detected-water-extents-between-1-and-25-october-2022-over-nigeria?force_layout=desktop) UNOSAT
+
 
 ## Task
 Our goal is to produce an overview of the impact of the 2022 flood in the state of Burco in Nigeria. To this end, we will visualize the state and the affected districts, plus we will digitize communities which are reportedly affected.
@@ -51,7 +52,7 @@ Since we only want the LGAs we need to export those from the original dataset.
     * Open the Attribute table of the new layer. You should have 27 features.
 ```{figure} /fig/en_qgis_extract_by_location_nigeria_flood.png
 ---
-width: 600px
+width: 400px
 name: 
 align: center
 ---
@@ -97,16 +98,91 @@ align: center
     * Your new layer will appear in the `Layer Panel`
 ```{figure} /fig/en_qgis_create_point_layer_nigeria_flood_exercise.png
 ---
-width: 600px
+width: 400px
 name: 
 align: center
 ---
 ```
 11. Currently the new “Borno_affected_communities_point” is empty. To add features we can use the `Digitizing Toolbar`. `. If you can not see the toolbar View` -> `Toolbars` and check Digitizing Toolbar` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#creation-of-point-data)).  ![](/fig/Digitizing_Toolbar.png) 
-
     * Select the point layer “Borno_affected_communities_point” in the Layer panel. Go to the digitalisation toolbar and click on![](/fig/mActionToggleEditing.png). No the layer is in the editing mode .
     * Search an affected community based on the table “Nigeria_flood_2022_affacted_population”. Once you have found one, click on ![](/fig/mActionCapturePoint.png). Left-click on the feature you want to digitalise.
     * Once you click, a window will appear ` Borno_affected_communities_point Feature Attribute`. Here you can add the name of the location.
-    *Repeat the same process for as many communities as you like.
+    * Repeat the same process for as many communities as you like.
     * Once you are done with digitizing click on ![](/fig/mActionSaveEdits.png) to save your edits.
     * Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
+12. In this step, we want to add information about the population to the map. This will help us to visualize where the most people are potentially affected.
+Since the layer “Borno_admin2_pop” contains this information we can dublicate this layer. 
+    * To do that right click on the layer -> `Duplicate Layer`. The name of the new layer will be “Borno_admin2_pop_copy”. 
+13. Since absolute population numbers are natural numbers, we can not use categorised classification. Instead, we use the option `Graduated`.
+    * Right-click on the layer “Borno_admin2_pop_copy” in the `Layer Panel` -> `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
+    * On the top you find a dropdown menue. Open it and choose `Graduated`.
+    * Under `Value` select “Population”.
+    * `Color ramp`: Select a white-to-green color ramp. Since we want to visualize the population, it is important to use neutral colours. 
+    * `Mode`: Equal Count (Quantile)
+    * `Classes`: 5
+    * Click `Classify`
+    * Click `Apply`
+
+```{figure} /fig/en_qgis_graduated_classification_nigeria_flood_exercise.png
+---
+width: 600px
+name: 
+align: center
+---
+```
+
+14. QGIS created now five classes covering the whole range of population numbers in Borno state. Click on the `Histogram` Tab -> `Load Values`. Here you see the distribution of values in the dataset and the limits of the classes. We see that most LGAs have a population below 300.000 people. Try out some of the other modes of classification like natural breaks or equal intervals. 
+```{figure} /fig/en_qgis_graduated_classification_Histogram_nigeria_flood_exercise.png
+---
+width: 400px
+name: 
+align: center
+---
+```
+15. To visualise “Borno_admin2_pop” sowing affected LGAs and “Borno_admin2_pop_copy” sowing population data together, we need to change the symbology of “Borno_admin2_pop”. 
+First, right-click on the layer “Borno_admin2_pop” in the `Layer Panel` -> `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
+Currently, we use the `Categorized` classification. We want to keep that. However, we only want to show affected LGAs. Hence, we uncheck the row that corresponds to the LGAs without `Affected` = `Yes`.
+    * Right-click on the layer “Borno_admin2_pop” in the `Layer Panel` -> `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
+    * Then, do a double-click on the `Yes` row. Here we have two options. We can use a grid or only the borders.
+    * To use a grid scroll down and select one that suits you. Then click `OK`.
+
+```{figure} /fig/en_qgis_grid_flood_exercise.png
+---
+width: 600px
+name: 
+align: center
+---
+```
+
+* To only use borders, click on `simple fill` -> `Fill style` and select `No Brusch`. Adjust the `Stroke Color` to a red or another bride colour. Increase the `Stroke width` to make the borders bigger. Then click `OK`.
+
+```{figure} /fig/en_qgis_now_brush_nigeria_flood_exercise.png
+---
+width: 400px
+name: 
+align: center
+---
+```
+16. For a more detailed idea of the flood extend we can load the layer “VIIRS_20220901_20220930_MaximumFloodWaterExtent_Nigeria.shp” which shows the maximum extent of surface water between 9th and 30th October 2022. If you like you can also load “VIIRS_20220901_20220930_PermanentWater_Nigeria.shp”. This layer shows laked and other permanent surface water features.
+The flood extend layer covers the whole of Nigeria. We can use the `Clip` tool to cut it to the shape of Borno state.
+    * Open the `Processing Toolbox` ([here is how](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#toolbox-toolbars)) and search for the `Clip` tool.
+    ```{Note}
+    There are __two__ versions of the `Clip` tool. Since we work with vector data, make sure to use the one under “Vector overlay”.
+    ```
+    * `Input layer`: "VIIRS_20220901_20220930_MaximumFloodWaterExtent_Nigeria.shp”
+    * `Overlay layer`: “AOI_Borno_admin1”
+    * To save the output click on the three points at `Clipped`-> `Save to GeoPackage`and navigate to your `temp` folder. Save the new layer under the name “Flood_extend_october_2022_Borno”. Give the new layer the same `Layer name` and click `Run`.
+```{figure} /fig/en_qgis_clip_flood_exercise.png
+---
+width: 400px
+name: 
+align: center
+---
+```
+    
+
+
+
+
+
+    

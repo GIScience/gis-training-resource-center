@@ -77,7 +77,9 @@ parts:
       - file: content/Modul_3/en_qgis_data_queries.md
         sections:
           - file: content/Modul_3/en_qgis_data_queries_ex1.md
-      - file: content/Modul_2/en_qgis_modul_3_exercises.md
+      - file: content/Modul_3/en_qgis_modul_3_exercises.md
+        sections:
+          - file: content/Modul_3/en_qgis_modul_3_ex1.md
   - caption: Modul 4- Representation
     chapters:
       - file: content/Modul_4/en_qgis_map_design_I.md
@@ -88,7 +90,7 @@ parts:
         sections:
           - file: content/Modul_4/en_qgis_map_design_I_ex2.md
       - file: content/Modul_4/en_qgis_map_examples.md
-      - file: content/Modul_2/en_qgis_modul_4_exercises.md
+      - file: content/Modul_4/en_qgis_modul_4_exercises.md
   - caption: Modul 5- Intermediate GIS operation
     chapters:
       - file: content/Modul_5/en_qgis_spatial_tools.md
