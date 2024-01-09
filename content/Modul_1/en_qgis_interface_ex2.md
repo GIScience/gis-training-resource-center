@@ -1,5 +1,5 @@
 # Exercise 1: Understanding the Interface
-
+---
 ### Aim to the exercise
 
 QGIS is a complex program with an immense amount of functions. At first glance, the interface may seem confusing. This exercise aims to make you familiar with the main toolbars, windows and panels of QGIS. You will learn to create a new QGIS-Project and save it in a desired location, and how to find and navigate through the different panels and toolbars.
@@ -10,16 +10,22 @@ QGIS is a complex program with an immense amount of functions. At first glance, 
 - move panels around
 - learn how to activate and find missing panels
 
+---
+
 ### Wiki articles
 
-- [QGIS Interface](gis-training-resource-center\content\Wiki\en_qgis_interface_wiki.md)
-- [Projects and Folder Structure](gis-training-resource-center\content\Wiki\en_qgis_projects_folder_structure_wiki.md)
+- [QGIS Interface](..\..\Wiki\en_qgis_interface_wiki.md)
+- [Projects and Folder Structure](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
+
+---
 
 ### Data
 
 In this exercise, we will not be using any data. Instead, we will be learning how to navigate throught the different interfaces and how to save and load a QGIS project.
 - Download the zipped template folder structure from the Nexus: `Modul_1` > `Exercise_1`. 
 - If you have already set up a template folder, you can skip this part. 
+
+---
 
 ### Tasks
 
@@ -52,6 +58,8 @@ Now, let's take a look at the toolbars. The most important toolbars are:
  - the attributes toolbar
 
 Take the time and make yourself familiar with the different ways you can arrange the QGIS Interface. Knowing where to find the different functions can save you a lot of time and frustration in the future!
+
+---
 
 3. Let us now save the project. Click on the Save-Icon in the top left or navigate through `Project` > `Save as..`
 4. Choose a location for the project file. An ideal place would be in the project subfolder in the template folder. Navigate to the folder called `Modul_1_Exercise_0` and open the subfolder called `Project`. Select this location and give the QGIS-project a name (for example: `QGIS_Training_Exercise_0`). The Project will be saved as a `.qqz`-file.
