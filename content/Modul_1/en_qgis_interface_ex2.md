@@ -10,7 +10,6 @@ QGIS is a complex program with an immense amount of functions. At first glance, 
 - move panels around
 - learn how to activate and find missing panels
 
-
 ### Wiki articles
 
 - [QGIS Interface](gis-training-resource-center\content\Wiki\en_qgis_interface_wiki.md)
@@ -19,8 +18,8 @@ QGIS is a complex program with an immense amount of functions. At first glance, 
 ### Data
 
 In this exercise, we will not be using any data. Instead, we will be learning how to navigate throught the different interfaces and how to save and load a QGIS project.
-- You can download the zipped template folder structure from the Nexus: `Modul_1` > `Exercise_1`. 
-- If you have already set up a template folder you can skip this part. 
+- Download the zipped template folder structure from the Nexus: `Modul_1` > `Exercise_1`. 
+- If you have already set up a template folder, you can skip this part. 
 
 ### Tasks
 
@@ -37,20 +36,20 @@ You can also resize the panels.
 Depending on the screen you are working on, the QGIS-Interface might look a little different. Sometimes elements can be hidden because it is not rendered correctly by default. Try resizing the panels and look at the different options and functions they offer. 
 ```
 
-___But these are far from being the only panels you will use when working in QGIS.___ Let's see how we can find and activate the other panels and toolbars:
+__But these are far from being the only panels you will use when working in QGIS.__ Let's see how we can find and activate the other panels and toolbars:
 
 - Navigate to the `View` Options and search for the `panels` and `toolbar` options. Hear you will see a long list of panels and toolbars you can activate. Panels that are active and can be found in the QGIS interface are marked with a check mark. Give yourself a minute to look at the different toolbars and panels. Do not worry, you will not use most of them when working with QGIS. The most important panels are: 
-    - The layers panel
-    - The layer styling
-    - The processing toolbox
-    - The browser
+    - the layers panel
+    - the layer styling
+    - the processing toolbox
+    - the browser
 
-Now, let's take a look at the toolbars. The most important toolbars are:
-    - the project toolbar
-    - the map navigation toolbar
-    - the digitizing toolbar
-    - the selection toolbar
-    - the attributes toolbar
+Now, let's take a look at the toolbars. The most important toolbars are:  
+ - the project toolbar
+ - the map navigation toolbar
+ - the digitizing toolbar
+ - the selection toolbar
+ - the attributes toolbar
 
 Take the time and make yourself familiar with the different ways you can arrange the QGIS Interface. Knowing where to find the different functions can save you a lot of time and frustration in the future!
 
@@ -64,3 +63,16 @@ Take the time and make yourself familiar with the different ways you can arrange
 Keeping your folder structure organised goes a long way in helping you work efficiently and without frustration.
 __Remember__: Project files in QGIS are saved separately from the data and style files you are using in the project, which is why it is adviseable to keep all the files related to a project in a folder.
 ```
+
+If the icons do not display correctly, you may want to customize the interface. 
+
+:::{dropdown} Opening the settings and customizing the interface. 
+
+If the interface does not display correctly on your device, you can customize the font and symbol size to better fit your needs.
+
+8. Navigating to the preferences via `Settings` > `Options` 
+9. Navigate to the `General` Tab on the left. 
+10. Here, you can change the UI theme, the Icon size and Font.  
+
+:::
+
