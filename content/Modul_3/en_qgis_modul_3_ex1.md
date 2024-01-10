@@ -10,6 +10,14 @@ In this exercise, you will learn how to digitise the positions of settlements by
 * [Types of Geodata](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_types_wiki.html)
 * [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)
 * [Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html)
+* [Non-Spatial Querie](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_queries_wiki.html)
+* [Spatial Queries](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_queries_wiki.html)
+* [Table function - Add field](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#add-field)
+* [Geodata Classification- Categorized](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html)
+* [Geodata Classification- Graduated](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html)
+* [Digitization- Point data](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#add-geometries-to-a-layer)
+* [Geoprocessing - Clip](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#clip) 
+
 
 ## Data sources
 * [Nigeria: Administrative Division with Aggregated Population ("kontur_boundaries_NG_20230628.gpkg")](https://data.humdata.org/dataset/kontur-boundaries-nigeria)-Kontor
@@ -113,7 +121,7 @@ align: center
 12. In this step, we want to add information about the population to the map. This will help us to visualize where the most people are potentially affected.
 Since the layer “Borno_admin2_pop” contains this information we can dublicate this layer. 
     * To do that right click on the layer -> `Duplicate Layer`. The name of the new layer will be “Borno_admin2_pop_copy”. 
-13. Since absolute population numbers are natural numbers, we can not use categorised classification. Instead, we use the option `Graduated`.
+13. Since absolute population numbers are natural numbers, we can not use categorised classification. Instead, we use the option `Graduated` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html)).
     * Right-click on the layer “Borno_admin2_pop_copy” in the `Layer Panel` -> `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
     * On the top you find a dropdown menue. Open it and choose `Graduated`.
     * Under `Value` select “Population”.
@@ -130,7 +138,6 @@ name:
 align: center
 ---
 ```
-
 14. QGIS created now five classes covering the whole range of population numbers in Borno state. Click on the `Histogram` Tab -> `Load Values`. Here you see the distribution of values in the dataset and the limits of the classes. We see that most LGAs have a population below 300.000 people. Try out some of the other modes of classification like natural breaks or equal intervals. 
 ```{figure} /fig/en_qgis_graduated_classification_Histogram_nigeria_flood_exercise.png
 ---
@@ -153,7 +160,6 @@ name:
 align: center
 ---
 ```
-
 * To only use borders, click on `simple fill` -> `Fill style` and select `No Brusch`. Adjust the `Stroke Color` to a red or another bride colour. Increase the `Stroke width` to make the borders bigger. Then click `OK`.
 
 ```{figure} /fig/en_qgis_now_brush_nigeria_flood_exercise.png
@@ -163,15 +169,28 @@ name:
 align: center
 ---
 ```
-16. For a more detailed idea of the flood extend we can load the layer “VIIRS_20220901_20220930_MaximumFloodWaterExtent_Nigeria.shp” which shows the maximum extent of surface water between 9th and 30th October 2022. If you like you can also load “VIIRS_20220901_20220930_PermanentWater_Nigeria.shp”. This layer shows laked and other permanent surface water features.
-The flood extend layer covers the whole of Nigeria. We can use the `Clip` tool to cut it to the shape of Borno state.
+16. For a more detailed idea of the flood extend we can load the layer “VIIRS_20220901_20220930_MaximumFloodWaterExtent_Nigeria.shp” which shows the maximum extent of surface water between 9th and 30th October 2022. If you like you can also load “VIIRS_20220901_20220930_PermanentWater_Nigeria.shp”. This layer shows lakes and other permanent surface water features.
+Once you loaded the layers in QGIS, you can see that they are correctly displayed. However, upon checking the layer information you can see that the new layers have a different Coordinate Reference System (CRS). They have the EPSG Code 9707 whereas our project has 4326 ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html#how-to-check-epsg-code-crs-of-layer-data)).
+    * Right click on the data layer, click on  “Properties”.
+    * The “Layer Properties” Window of the data layer will open. Click on “Information”.
+    * Under the headline “Coordinate Reference System (CRS)” you find all information about the CRS. The most important are:
+    - __Name:__     Here you find the EPSG Code
+    - __Unites:__    Here you can find wether it is possible to use meters with this data layer or latitude and longitude. 
+17. This will be a problem as soon as we do something different then just displaying the layers. Since we want to manipulate the layers in the next step we need to reproject them first ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html#changing-the-projection-of-a-vector-layer)). 
+    * Click on the `Vector` Tab -> `Data Management Tools` -> `Reproject Layer` or search for the tool in the `Processing Toolbox `.
+    * As `Input layer` select “VIIRS_20220901_20220930_MaximumFloodWaterExtent_Nigeria.shp”
+    * Select as target CRS/ EPSG-Code __4326__.
+    * Save the new file in your `temp` folder by clicking on the three dots ![](/fig/Three_points.png) next to `Reprojected`, specify the file name as "Flood_extand_Nigeria_october_2022_reprojected.
+    * Click `Run`
+    * Delet the old layer from the layer panel by right click on the layer -> `Remove layer`.
+18. The flood extend layer covers the whole of Nigeria. We can use the `Clip` tool to cut it to the shape of Borno state ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#clip)).
     * Open the `Processing Toolbox` ([here is how](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#toolbox-toolbars)) and search for the `Clip` tool.
     ```{Note}
     There are __two__ versions of the `Clip` tool. Since we work with vector data, make sure to use the one under “Vector overlay”.
     ```
     * `Input layer`: "VIIRS_20220901_20220930_MaximumFloodWaterExtent_Nigeria.shp”
     * `Overlay layer`: “AOI_Borno_admin1”
-    * To save the output click on the three points at `Clipped`-> `Save to GeoPackage`and navigate to your `temp` folder. Save the new layer under the name “Flood_extend_october_2022_Borno”. Give the new layer the same `Layer name` and click `Run`.
+    * To save the output click on the three points at `Clipped`-> `Save to GeoPackage`and navigate to your `temp` folder. Save the new layer under the name “Flood_extend_october_2022_reprojected_Borno”. Give the new layer the same `Layer name` and click `Run`.
 ```{figure} /fig/en_qgis_clip_flood_exercise.png
 ---
 width: 400px
@@ -179,6 +198,20 @@ name:
 align: center
 ---
 ```
+
+Great, we have done our visualisation. WELL DONE!
+Your results should look similar to the image below.
+
+```{figure} /fig/en_qgis_result_flood_exercise.png
+---
+width: 600px
+name: 
+align: center
+---
+```
+
+
+
     
 
 
