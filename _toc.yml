@@ -115,7 +115,11 @@ parts:
       - file: content/GIS_AA/en_qgis_drought_trigger_somalia.md
         sections:
           - file: content/GIS_AA/en_qgis_srcs_basic_ex.md
-      - file: content/GIS_AA/en_qgis_risk_assessment_plugin.md  
+      - file: content/GIS_AA/en_qgis_risk_assessment_plugin.md 
+  - caption: Mobile Data Collection
+    chapters:
+      - file: content/Mobile_Data_collection/en_SMT.md
+      - file: content/Mobile_Data_collection/en_SMT_training.md
   - caption: Trainers corner
     chapters:
       - file: content/Trainers_corner/en_how_to_training.md

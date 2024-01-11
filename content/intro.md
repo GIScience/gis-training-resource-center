@@ -1,8 +1,47 @@
 
 ![Logos](../fig/TRC_RC_Logos.svg)
-# Welcome to the GIS Learning Hub for Humanitarian Empowerment
+# Welcome to the IFRC Network GIS Training Platform
 
 🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧 
+
+::::{grid} 2
+:::{card}
+# Teach GIS for Humanitarian Work
+
+__The One-Stop-Shop for teaching Geoinformation System (GIS) skills for the work in the Red Cross Red Cresent Network__
+:::
+
+:::{card}
+# MyST Markdown ✨
+Write MyST Markdown to create enriched documents with publication-quality features.
+:::
+
+::::
+
+
+
+``````{list-table}
+:header-rows: 1
+:widths: 25 25
+
+* - Instruction
+  - Folder Structure
+* - 1. Open the Folder “FbF_Drought_Monitoring_Trigger"
+    2. Open the subfolder "Monitoring"
+    3. Copy the Template folder “TEMPLATE_Year_Month” and change the name to the current year and month. The result could be the folder "2022_05"
+    
+  -
+    ```{figure} /fig/          Folder_structure_FbF_Drought_Monitoring_Trigger.drawio.svg
+    ---
+    width: 450px
+    name: 
+    align: center
+    ---
+    ```
+``````
+
+
+
 
 
 
