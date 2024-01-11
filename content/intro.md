@@ -116,6 +116,12 @@ This is not a self-learning platform. If you want to learn QGIS, it is always be
 ::::
 ___
 
+## Upcoming trainings
+
+| Title | Date | Application | Organization | Format | Language | Skill Level | Info |
+|-------|------|--------------|--------------|--------|----------|-------------|------|
+|The Use of Geoinformation in Anticipatory Humanitarian Action|15.01-26.01.2024|Closed ⛔ |[German Red Cross](https://www.drk.de/) & [HeiGIT](https://heigit.org/)|Online|Englisch|Basic|[Info](https://aha-trainings.de/courses/the-use-of-geoinformation-in-anticipatory-humanitarian)|
+|Current Approaches and GIS Methods to Support Anticipatory Humanitarian Action|11.03-22.03.2024|Open 🟢 |[German Red Cross](https://www.drk.de/) & [HeiGIT](https://heigit.org/)|Online|Englisch|Intermidate|[Info](https://aha-trainings.de/courses/current-approaches-and-gis-methods)|
 
 
 ## Join the Community
