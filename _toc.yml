@@ -120,6 +120,12 @@ parts:
     chapters:
       - file: content/Mobile_Data_collection/en_SMT.md
       - file: content/Mobile_Data_collection/en_SMT_training.md
+        sections:
+          - file: content/Mobile_Data_collection/en_SMT_ex1.md
+          - file: content/Mobile_Data_collection/en_SMT_ex2.md
+          - file: content/Mobile_Data_collection/en_SMT_ex3.md
+          - file: content/Mobile_Data_collection/en_SMT_ex4.md
+          - file: content/Mobile_Data_collection/en_SMT_ex5.md
   - caption: Trainers corner
     chapters:
       - file: content/Trainers_corner/en_how_to_training.md
