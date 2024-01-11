@@ -4,26 +4,12 @@
 
 🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧 
 
-::::{grid} 2
+::::{grid} 1
 :::{card}
 # Teach GIS for Humanitarian Work
 
 The One-Stop-Shop for teaching Geoinformation System (GIS) skills for the work in the Red Cross Red Cresent Network
 :::
-
-:::{card}
-
-```{figure} /fig/Training_Somalia.JPG
----
-width: 800px
-name: ick.
----
-
-```
-
-
-:::
-
 ::::
 
 
@@ -138,3 +124,13 @@ ___
 
 
 Happy Mapping!
+
+:::{card}
+
+```{figure} /fig/Training_Somalia.JPG
+---
+width: 800px
+name: 
+---
+
+```
