@@ -13,8 +13,8 @@ This exercise will help you to get to know the interface of QGIS a bit better. F
 
 ## Data sources
 
-Download the data folder [here]() and save it on your PC. Unzip the .zip file!
-The folder is called “Ex_The_world" and contains the whole [standard folder structure](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure) with all data in the input folder and the additional documentation in the documentation folder.
+Download the data folder [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_2/Modul_2_Exercise1_The_World/Modul2_Exercise1_The_World.zip) and save it on your PC. Unzip the .zip file!
+The folder is called “Modul_2_Exercise1_The_World" and contains the whole [standard folder structure](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure) with all data in the input folder and the additional documentation in the documentation folder.
 
 - [World Countries (Generalized)](https://hub.arcgis.com/datasets/2b93b06dc0dc4e809d3c8db5cb96ba69_0/explore) (Polygon/Shapefile)
 - [Significant Earthquake Dataset](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ngdc.mgg.hazards:G012153) (CSV)
