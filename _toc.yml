@@ -43,13 +43,18 @@ parts:
       - file: content/Wiki/en_qgis_automatisation_wiki.md
         sections:
           - file: content/Wiki/en_qgis_model_builder_wiki.md
+      - file: content/Wiki/en_qgis_representation_wiki.md
+        sections:
+          - file: content/Wiki/en_qgis_visualisation_wiki.md
+          - file: content/Wiki/en_qgis_map_making_wiki.md
   - caption: Modul 1- Introduction GIS
     chapters:
       - file: content/Modul_1/en_qgis_theorie.md
       - file: content/Modul_1/en_qgis_start.md
         sections:
-          - file: content/Modul_1/en_qgis_interface_ex1.md
-      - file: content/Modul_1/en_qgis_installation.md      
+          - file: content/Modul_1/en_qgis_interface_ex2.md
+      - file: content/Modul_1/en_qgis_installation.md
+      - file: content/Modul_1/en_qgis_modul_1_exercises.md      
   - caption: Modul 2- Working with Geodata
     chapters:
       - file: content/Modul_2/en_qgis_geodata_concept.md
@@ -61,17 +66,24 @@ parts:
       - file: content/Modul_2/en_data_sources.md
         sections:
           - file: content/Modul_2/en_qgis_data_sources_ex1.md
+      - file: content/Modul_2/en_qgis_modul_2_exercises.md
+        sections:
+          - file: content/Modul_2/en_qgis_modul_2_ex_1.md
   - caption: Modul 3- Basic GIS operations
     chapters:
       - file: content/Modul_3/en_qgis_digitalisation.md
         sections:
           - file: content/Modul_3/en_qgis_digitalisation_ex1.md
+          - file: content/Modul_3/en_qgis_digitalisation_ex2.md
       - file: content/Modul_3/en_qgis_data_classification.md
         sections:
           - file: content/Modul_3/en_qgis_classification_ex1.md
       - file: content/Modul_3/en_qgis_data_queries.md
         sections:
           - file: content/Modul_3/en_qgis_data_queries_ex1.md
+      - file: content/Modul_3/en_qgis_modul_3_exercises.md
+        sections:
+          - file: content/Modul_3/en_qgis_modul_3_ex1.md
   - caption: Modul 4- Representation
     chapters:
       - file: content/Modul_4/en_qgis_map_design_I.md
@@ -82,6 +94,7 @@ parts:
         sections:
           - file: content/Modul_4/en_qgis_map_design_I_ex2.md
       - file: content/Modul_4/en_qgis_map_examples.md
+      - file: content/Modul_4/en_qgis_modul_4_exercises.md
   - caption: Modul 5- Intermediate GIS operation
     chapters:
       - file: content/Modul_5/en_qgis_spatial_tools.md
@@ -102,7 +115,17 @@ parts:
       - file: content/GIS_AA/en_qgis_drought_trigger_somalia.md
         sections:
           - file: content/GIS_AA/en_qgis_srcs_basic_ex.md
-      - file: content/GIS_AA/en_qgis_risk_assessment_plugin.md  
+      - file: content/GIS_AA/en_qgis_risk_assessment_plugin.md 
+  - caption: Mobile Data Collection
+    chapters:
+      - file: content/Mobile_Data_collection/en_SMT.md
+      - file: content/Mobile_Data_collection/en_SMT_training.md
+        sections:
+          - file: content/Mobile_Data_collection/en_SMT_ex1.md
+          - file: content/Mobile_Data_collection/en_SMT_ex2.md
+          - file: content/Mobile_Data_collection/en_SMT_ex3.md
+          - file: content/Mobile_Data_collection/en_SMT_ex4.md
+          - file: content/Mobile_Data_collection/en_SMT_ex5.md
   - caption: Trainers corner
     chapters:
       - file: content/Trainers_corner/en_how_to_training.md

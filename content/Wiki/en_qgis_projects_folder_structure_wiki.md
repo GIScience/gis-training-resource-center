@@ -23,7 +23,7 @@ It is good practice to use a __standard folder structure__ for QGIS projects in 
 ```{Tip}
 Do not use spaces ` ` in the name, instead always use underscores `_`
 ```
-__Save Project__
+#### Save Project
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_save_as.mp4"></video>
 

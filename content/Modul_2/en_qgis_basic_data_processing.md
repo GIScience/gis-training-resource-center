@@ -7,404 +7,270 @@
 * Feature selection
 * Basemap selection
 
+In this chapter, we will have a close look at how to work with geodata in QGIS. Since vector data is the primer geodata type you will work with at the beginning of your GIS carrier, we will focus on vector geodata.
+
+## Geodata mananagemnet 
+
+Working with geodata is unlike working with data in programs like Excel or MS Word. Whenever you load an image in a Word file, the file will contain the image. When you delete the image on your computer, the Word file will still contain a copy of the image. 
+
+This is not the case in QGIS! When you load geodata into QGIS, the system only establishes a path to the location where your geodata is stored on your computer. This means your QGIS project __does not contain__ the geodata, it only links to the data on your computer. Once you have loaded the geodata in your QGIS project and you change the location of the geodata or delete it on your computer, the data is no longer available in your QGIS project. 
+
+Ok, QGIS projects only link to geodata, they do not contain the data. This means that whenever you edit geodata, the changes persistent and can not be reversed.
+
+These circumstances make working with geodata special. To handle this, the only solution is good data management practices!
+
+### Standard Folder Structure
+
+The single most important geodata management practice is to use a standardized folder structure that contains all elements of the particular QGIS project. 
+The paths from a QGIS project to the geodata are by default relative. That means when the data and the project are in a fixed folder structure, you can move the whole structure without impacting the QGIS project or the paths to the geodata.
+The version of a standardized folder structure, that is used for all exercises in this training is explained below. A template of the folder structure can be downloaded [__here__](https://github.com/GIScience/gis-training-resource-center/blob/main/fig/GIS_Project_folder_template.zip).
+
+ A standard folder structure has two principal advantages:
+1. By sharing the whole project folder, we can be certain that the project will run without problems on a different computer.
+2. The folder structure supports the proper organization of geodata and supports the stable function of a QGIS project. 
+
+```{figure} /fig/Standard_project_folder_structure.drawio.svg
+---
+width: 600px
+name: 
+align: center
+---
+```
+### Geodata naming 
+
+There are some basic principles when it comes to naming geodata that you produce or manipulate:
+
+* Do not use special characters like `!`,`?` etc., slash or dash `/` or `-`.
+* Do not use blank spaces, use underscores `_`
+* Make sure you can relate every output / intermediate result to a step in your workflow. Below you can see a geodata set representing the borders of a country evolving during geodata processing. It is not apparent what was done with the original dataset.
+
+`adm0 >> adm0_temp >> adm0_temp2 >> adm0_temp3 >> facilities_final`
+
+In the version below, it is clear what was done. In this way, other people can understand the process behind a final result like a map. 
+
+`adm0 >> adm0_projUTM >> adm0_projUTM_clipUrban >> adm0_projUTM_clipUrban_intersectFacilities >> facilities_processe`
+
 
 ## Data import
 
-Before you can start visualizing and analysing in QGIS, you need to import your data. [Here](../../content/Modul_2/en_data_sources.md) you can look up, where to find different data sources.
+Before you can start visualizing and analysing in QGIS, you need to import your data. 
+
 Depending on which file format you want to import, the process differs slightly.
 
 ::::{tab-set}
 
 :::{tab-item} Vector data import
-The possible data formats are listed [here](../../content/Modul_2/en_qgis_geodata_concept.md). 
-Go to the data source manager and choose vector on the right. By clicking on the three dots you can browse your files and choose the ones you want to import.
 
-![datasource manager](../../fig/en_datasourcemanager_qgis.png)  
+Typical vector data formats are Shapefile and GeoPackage. The process of importing vector data in either of the two formats is the same. 
+[Here](../../content/Modul_2/en_qgis_geodata_concept.md) is a list of possible vector data formats.
 
-![import vector data](../../fig/en_import_vector.png)
+```{Note}
+GeoPackage file can contain multiple files and even whole QGIS projects. When you load such a file in QGIS a window will appear in which you have to select the files you want to load in your QGIS project.
+```
+
+There are two ways how to load vector data in QGIS. Via the `Layer` tab or via drag-and-drop.
+
+### Open vector data via Layer Tab
+
+1. Click on `Layer`-> `Add Layer`-> `Add Vector Layer`. 
+2. Click on the three points ![](/fig/Three_points.png) and navigate to your vector file.
+3. Select the file and click `Open`
+4. Back in QGIS click `Add`
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_vector.mp4"></video>
+
+
+### Open vector data via drag-and-drop
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_vector_d_d.mp4"></video>
+:::
+
+
+:::{tab-item} Delimited text import
+
+### Open  Delimited Text Layer (.csv, .txt)
+
+```{Tip}
+To directly load .csv or EXCEL data into QGIS, the datasets need to have columns containing geometry in the form of latitude (Y-field) and longitude (X-field). 
+```
+
+```{figure} /fig/en_import_delimeted_text.png
+---
+width: 600px
+name: 
+align: center
+---
+```
+
+1.  `Layer` -> `Add Layer` ->`Open Delimited Text Layer`.
+2. Click on `File name` click on the three points ![](/fig/Three_points.png) and navigate to your csv. file and click `Open`.
+3. `File Format`: Here you can specify which delimiter is used in the file you want to import. In a standard .csv file commas `,` is used. If this is not the case, select `Costume delimiters`. Here you can choose the exact delimiter used in your file. 
+```{Tip}
+To find out which delimiter is used you can open your .csv file in Notepad or Excel. There you can check which delimiter is used to separate the information.
+```
+```{figure} /fig/en_delimited_text_fileformat.png
+---
+width: 600px
+name: 
+align: center
+---
+```
+4.  `Geometry definition`: In this section, you specify which columns of the file contain the spatial information to geo-referenced the data on the map. If the file has a column containing __latitude__ and another with __longitude__ data, you can use them to georeferenced the data. Check `Point Coordinates`. Select for `X field` “LONGITUDE” and for `Y field` “LATITUDE”.
+5. Under `Geometry CRS`select the coordinate reference system (CRS). By default, QGIS will select the CRS of the project. 
+If the file does not have spatial information choose the option `No geometry (attribute only table)`.
+6. Click `Add`
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_textfile.mp4"></video>
 :::
 
 :::{tab-item} Raster data import
-Go to the data source manager and choose vector on the right. By clicking on the three dots you can browse your files and choose the ones you want to import.  
 
-![datasource manager](../../fig/en_datasourcemanager_qgis.png)  
+There are two ways how to load vector data in QGIS. Via the `Raster` tab or via drag-and-drop.
 
-![import raster data](../../fig/en_import_raster.png)
-:::
+### Open raster data via Layer Tab
 
-:::{tab-item} Delimited text import
-Go to the data source manager and choose vector on the right. By clicking on the three dots you can browse your files and choose the ones you want to import. Next, choose your file format and expand the geometry definition section to select **latitude (Y field)** and **longitude (X field)**. Usually there is one column each that contains the geometry ot coordinates.  
- Click on Geometry CRS (5) and select the Project CRS.
-![import text data](../../fig/en_import_delimeted_text.png)
- When you choose custom delimiters in the file format (3 & 3.1), you can change the delimiters.
-![file format](../../fig/en_delimited_text_fileformat.png)
-:::
+1. Click on `Layer`-> `Add Layer`-> `Add Raster Layer`. 
+2. Click on the three points ![](/fig/Three_points.png) and navigate to your raster file.
+3. Select the file and click `Open`
+4. Back in QGIS click `Add` 
 
-:::{tab-item} GeoPackage import
-Go to the data source manager and choose GeoPackage on the right. Click on New to add a connection. Browse through your data to the Geopackage and add. By clicking on Connect and Add you can add the data to your project.
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_raster.mp4"></video>
 
 
-![datasource manager](../../fig/en_datasourcemanager_qgis.png)
-![import gpkg](../../fig/en_import_gpkg.png)
+### Open raster data via drag-and-drop
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_raster_d_d.mp4"></video>
+
 :::
 
 ::::
 
-### overpass turbo
-
-[Overpass turbo](https://overpass-turbo.eu) is a web based data mining tool for OSM. By running a query, you can download the data and import it into your project. You can either run it by writing your query on the left or by using the wizard which will assist you in writing your queries. 
-> ***Example***  
-To search for schools in your bounding box or search area you can either write the query yourself or get it build by the wizard.  
-> **1. Check Tagging Guidelines**  
->Search for it in the [OSM wiki](https://wiki.openstreetmap.org/wiki/Tags) and/or [taginfo](https://taginfo.openstreetmap.org). In our example it is: *amenity=school*  
-> **2.  Write or build the query**  
-Either use the wizard by tiping in *amenity=school in Heidelberg* or write your own query (f. e. for your bounding box):  
->>**Wizard:**
->>```{figure} /fig/en_wizard_overpassturbo.png
->>---
->>height: 250px
->>name: overpass_turbo_wizard
->>---
->>Screenshot of the Wizard in overpass turbo
->>```
->>```{figure} /fig/en_wizard_result.png
->>---
->>height: 250px
->>name: overpass_turbo_wizard_result
->>---
->>Screenshot of the result
->>```  
->>**Query:**
->> ```sql
->>[out:json];  
->>(  
->>  node ["amenity"="school"](49.35,8.553,49.481,8.756);
->>  way ["amenity"="school"](49.35,8.553,49.481,8.756);
->>  relation ["amenity"="school"](49.35,8.553,49.481,8.756);
->>);
->>out; 
->>```
->>>**Bounding Box**  
->>>To query with a bounding box you need a special format. Specify it like so:
->>> + s (southern limit in decimal degrees, lowest latitude)
->>> + w (western limit in decimal degrees, lowest longitude)
->>> + n (northern limit in decimal degrees, highest latitude)
->>> + e (eastern limit in decimal degrees, highest longitude)
->>>     + for example:  
->>> ```sql
->>>         node ["key"="value"] (s, w, n, e);
->>>         out;
->> ```{tip} 
->>For more information on the query language check out the [Language Guide](https://wiki.openstreetmap.org/wiki/Overpass_API/Language_Guide).
->>```
-> **3. Download the data**  
->One can export the results in various ways.
->
->::::{tab-set}
->
->:::{tab-item} Data
->By exporting the data as f.e. GeoJSON you can later on import them in your QGIS project.
->```{figure} /fig/en_overpass_turbo_data.png
->---
->height: 250px
->name: overpass_turbo_data
->---
->Screenshot of how to export data in overpassturbo
->```
->
->:::
->
->:::{tab-item} Map
->By exporting the query as map, you can share your current view as link or image.
->
->```{figure} /fig/en_overpass_turbo_map.png
->---
->height: 150px
->name: overpass_turbo_map
->---
->Screenshot of how to export map in overpassturbo
->```
->:::
->
->:::{tab-item} Query
->By exporting your query you can get the text or convert it to an OverpassXML or OverpassQL formated query.
->
->```{figure} /fig/en_overpass_turbo_query.png
->---
->height: 250px
->name: overpass_turbo_query
->---
->Screenshot of how to export query in overpassturbo
->```
->:::
->
->::::
-
-```{tip} 
-For more information, check out the [wiki](https://wiki.openstreetmap.org/wiki/Overpass_turbo).
-```
-
-### Quick OSM plugin
-
-By installing the QuickOSM plugin you can run the query directly in QGIS to download data from OpenStreetMap. 
-First download the plugin by following the steps: 
-
-![install plugin](../../fig/en_install_plugin.png)
-
-
-```{figure} /fig/en_search_plugin.png
----
-height: 500px
-name: search_plugin
----
-Screenshot of how to search for plugins
-```
-
-You will see a new icon on your toolbar on the top. Now it is possible to search for your key:value in a given location and run the query. When the download is complete, you will get a notification. The result will be loaded in three temporary layers, one for nodes, ways and relations.
-
-
-```{figure} /fig/en_quickosmplugin.png
----
-height: 500px
-name: quickosmplugin
----
-Screenshot of the QuickOSM plugin
-```
-```{note} 
-If you are unsure which key and value are used, take a look in the [OSM wiki](https://wiki.openstreetmap.org/wiki/Tags) or [taginfo](https://taginfo.openstreetmap.org). 
-```
-````{dropdown} What do i do if there is no new icon?
-If you can't find your new icon for the plugin, select view - toolbars and check that the QuickOSM plugin has a tick to be shown.
-
-```{figure} /fig/en_no_new_icon.png
----
-height: 500px
-name: no_new_icon
----
-Screenshot of how to add a new icon
-````
 
 ## Geo features and attributes
 
-Each layer consists of geometric elements (points, lines or polygons) and an attribute table. The attribute table contains information on each element of the layer, which is stored in a table as rows and columns. Each row corresponds to an element and each column to an attribute. Atrributes can be for example: ID, name, postal code, street name, ...
+Each vector layer consists of geometric elements (points, lines or polygons) and an __attribute table__. The attribute table contains information on each element of the layer. The information is stored in rows and columns in the attribute table. Each __row__ in the table represents a __feature__, while __columns__ store specific __attributes__. This table facilitates searching, selection, sorting, filtering, and editing of features.
+
+
+```{figure} /fig/en_vector_data_overview.drawio.png
+---
+width: 600px
+name: 
+align: center
+---
+```
+
+:::{dropdown} Buttons of Attribute Table
+|Icon|Description|Purpose|Shortcut|
+|---|---|-----|---|
+| ![](/fig/mActionToggleEditing.png)|Toggle editing mode | Enable editing functionalities|`Ctrl+E`|
+| ![](/fig/mActionMultiEdit.png)| Toggle multi-edit mode| Update multiple fields of many features          |  |
+|![](/fig/mActionSaveEdits.png)| Save edits| Save current modifications                        | |
+|![](/fig/mActionRefresh.png)| Reload the table  | | |
+|![](/fig/mActionNewTableRow.png)| Add feature | Add new geometryless feature |  |
+|![](/fig/mActionDeleteSelectedFeatures.png)| Delete selected features| Remove selected features from the layer|  |
+|![](/fig/mActionEditCut.png)| Cut selected features to clipboard    |  | `Ctrl+X` |
+|![](/fig/mActionCopySelected.png)| Copy selected features to clipboard   |   | `Ctrl+C`      |
+|![](/fig/mActionEditPaste.png)| Paste features from clipboard| Insert new features from copied ones |`Ctrl+V`|
+|![](/fig/mIconExpressionSelect.png)| Select features using an Expression|| | 
+|![](/fig/mActionSelectAll.png)| Select All| Select all features in the layer|`Ctrl+A`      |
+|![](/fig/mActionInvertSelection.png)| Invert selection| Invert the current selection in the layer |`Ctrl+R`|
+|![](/fig/mActionDeselectActiveLayer.png)| Deselect all| Deselect all features in the current layer|`Ctrl+Shift+A`|
+|![](/fig/mActionFilterMap.png)|Filter/Select features using form     | |`Ctrl+F`|
+|![](/fig/mActionSelectedToTop.png)| Move selected to top| Move selected rows to the top of the table|  |
+|![](/fig/mActionPanToSelected.png)| Pan map to the selected rows|  | `Ctrl+P`|
+|![](/fig/mActionZoomToSelected.png)| Zoom map to the selected rows | |`Ctrl+J`      |
+|![](/fig/mActionNewAttribute.png)| New field | Add a new field to the data source | `Ctrl+W`|
+|![](/fig/mActionDeleteAttribute.png)| Delete field  | Remove a field from the data source | |
+|![](/fig/mActionEditTable.png)| Organize columns | Show/hide fields from the attribute table||
+|![](/fig/mActionCalculateField.png)| Open field calculator| Update field for many features in a row |`Ctrl+I`      |
+|![](/fig/mActionConditionalFormatting.png)| Conditional formatting | Enable table formatting| |
+|![](/fig/dock.png)| Dock attribute table | Allows to dock/undock the attribute table||
+|![](/fig/mAction.png)| Actions | Lists the actions related to the layer           | |
+:::
 
 Having a look into the attribute table can be helpful to get an overview on the data you are working with. It can also be used to select, filter or edit data.
 
 ### Open the attribute table
 
-One can open the attribute table in two ways. Either click right on the chosen layer and select *open attribute table* or click on the symbol on the top.
+One can open the attribute table in two ways. Either click right on the chosen layer and select `open attribute table` or click on the symbol on the top.
 
 ```{figure} /fig/en_attributetable_right_click.png
 ---
-height: 250px
+height: 600px
 name: Open Attribute Table with right click
 ---
 Screenshot of Opening the Attribute Table with right click
-```
-
-```{figure} /fig/en_attributetable_top_right.png
----
-height: 250px
-name: Open Attribute Table top right
----
-Screenshot of Opening the Attribute Table
 ```
 
 ```{note} 
 If you have multiple layers, only the attribute table of the layer selected in the layer panel on the left will open. 
 ```
 
-### Sort the information
+```{figure} /fig/en_attributetable_top_right.png
+---
+height: 600px
+name: Open Attribute Table top right
+---
+Screenshot of Opening the Attribute Table
+```
+
+
+### Sort the attribute table
 
 Now that the attribute table is opened, it is possible to sort the data within. By clicking on the tab of the column, you can sort the data (alphabetically) in ascending or descending order.
 The small arrow indicates whether it is sorted ascending or descending. 
 
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_show_attribute_table.mp4"></video>
 
-![sorted ascending](../../fig/en_ascending.png) | ![sorted descending](../../fig/en_descending.png)
-:-------------------------:|:-------------------------:
-The data is sorted ascending.  |  The data is sorted descending.  
+``````{list-table}
+:header-rows: 1
+:widths: 25 25
 
-### Edit or change data
-If you have to edit or change data in the attribute table, you can do so by clicking on the pencil on the top left. This could be the case, for example, because special characters like 'ü' or 'ä' are displayed wrong.
+* - Sorted ascending
+  - Sorted descending
+* - ```{figure} /fig/en_ascending.png
+    ---
+    width: 600px
+    name:
+    align: center
+    ---
+    The data is sorted ascending. 
+    ```
+    
+  -
+    ```{figure} /fig/en_descending.png
+    ---
+    width: 600px
+    name: 
+    align: center
+    ---
+    The data is sorted descending.  
+    ```
+``````
 
-```{figure} /fig/en_editing_mode.png
----
-height: 100px
-name: Editing Mode in the attribute table
----
-Screenshot of the editing mode 
-```
+### Zoom in on a specific feature via attribute table
 
-In the editing mode, you can also add or delete columns.
+* __Zoom:__ Right click on your feature --> `Zoom To Feature`
 
-```{figure} /fig/en_add_column.png
----
-height: 100px
-name: Add column in the attribute table
----
-Screenshot of adding a column
-```
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zoom_to_feature.mp4"></video>
 
-## Feature selection
-In QGIS you have many ways to select features, whether that´s in the attribute table or directly in the map canvas.
+### Manually select features in the attribute table
 
-### Select manually
+To interact with features in a layer you have to select these features. One way to select features is via the attribute table.
 
-::::{tab-set}
-
-:::{tab-item} Select manually in the attribute table 
-Open the attribute table and click on the number of the row you want to select, so that the row turns blue. 
-
-```{figure} /fig/en_select_row.png
----
-height: 150px
-name: Select row manually.
----
-Screenshot of how to select a row manually.
-```
-
-```{note} 
-Selected features are highlighted blue in the attribute table. 
-```
-
-:::
-
-:::{tab-item} Select manually in the map canvas
-To select on the map directly, click on the marked symbol on the top. Now you can either click directly onto objects you want to select or by choosing in the dropdown, you can select all objects within a polygon or by radius.
-
-```{figure} /fig/en_select_map.png
----
-height: 110px
-name: Select on map manually.
----
-Screenshot of how to select objects in the map.
-```
-
-```{note} 
-Selected features are highlighted yellow in the map. 
-```
-:::
-
-::::
-
-<details>
-<summary>How to deselect features</summary>
-<br>
-To deselect the objects, you can simply click on this symbol on the top bar. In the dropdown, you can choose whether this should deselect all objects from all layers or only from the active one.
-
-```{figure} /fig/en_unselect.png
----
-height: 50px
-name: Deselect features.
----
-Screenshot of how to desselect objects.
-```
-
-</details>
-
- 
-
-```{tip} 
-To get all selected objects to the top of the attribute table, you can sort for them like so:
-
-![Move selection to top](../../fig/en_sort_selected.png)
-
-```
-
-```{tip} 
-It is also possible to invert your selection, like so:
-
-![Move selection to top](../../fig/en_invert_selection.png)
-
-```
-
-### Select by location
-**here or Modul 5?**
+* __Select:__ Click on the lines of the features. 
+* __Multi Select:__ To select multiple features press `Ctrl` and select `features`.
+* __Show only selected features:__ In the bottom left of the attribute table open the dropdown menu and select `Show selected features`. To show again all features click on `Show all features`. 
+* __Only show unselected features__ Select features and click on ![](/fig/mActionInvertSelection.png)
 
 
-### Filter
-To filter for certain attributes, you can click on *filter for features* and type the chosen expression that is contained in this column. 
-
-```{figure} /fig/en_filter_features.png
----
-height: 100px
-name: Filter features.
----
-Screenshot of how to filter features.
-``` 
-
-```{figure} /fig/en_filter_back_table.png
----
-height: 300px
-name: Filter features and get back to the table view.
----
-Screenshot of how to filter features and get back to the table view.
-```
-To return to the view as a table, click on the bottom right corner.
-
-### Select features by expression
-If you have more or more complex conditions on which the selection should base, you can use the *select by expression* tool.
-
-```{figure} /fig/en_select_by_expression.png
----
-height: 100px
-name: Select by expression.
----
-Screenshot of how to select by expression.
-```
-
-A window will open, on the left you can type in your expression, on the right are different drowdowns. Under *field and values* you can select the columns name. 
-
-```{figure} /fig/en_view_expression.png
----
-height: 300px
-name: Select by expression, the opened window.
----
-Screenshot of the window to select by expression.
-```
-
-Next, you can choose from different operators: 
-+ Arithmetic operators: >, < , =, !=
-+ String operators: LIKE, IS, BETWEEN, IN, ...
-+ Logical operators: AND, OR
-
-To build your expression, you can double click on the chosen column and then on *All Unique* to get all unique values of this column shown. By double clicking them, you are adding them into your expression.
-
-```{figure} /fig/en_unique_values.png
----
-height: 300px
-name: Select by expression, unique values.
----
-Screenshot of the window to select by expression and show the unique values.
-```
-
-For example, to build an expression which will select all *highways* that are *pedestrian* or *cycleway*, you can do so:
-
-```sql
-"highway" IS  'cycleway' OR  "highway" IS  'pedestrian' 
-```
-or by using arithmetical operators:
-
-```sql
-"highway" = 'cycleway' OR  "highway" = 'pedestrian' 
-```
-
-The logical "OR" combines the two criterias.
-
-The logical "AND" selects only the objects, where both criteria are true/applicable.
-
-For example, if you are looking for a smooth cyleway for a biketour:
-```sql
-"highway" = 'cycleway' AND  "smoothness" = 'excellent' 
-```
-This will only show the features where both criteria are true.
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_attribute_table_select.mp4"></video>
 
 ### Zoom to selected area
-Now that you learned different ways to select features, you can zoom onto your area of interest. To do so you can click on the symbol on the top pannel or click right on the layer and select *Zoom to Selection*
+Now that you learned how to select features, you can zoom onto your area of interest. To do so you can click on the symbol on the top pannel or click right on the layer and select `Zoom to Selection`
 
 ```{figure} /fig/en_zoom_to_selection_1.png
 ---
-height: 50px
+width: 800px
 name: Zoom to Selection, top pannel.
 ---
 Screenshot of how to zoom to Selection on the top.
@@ -412,70 +278,88 @@ Screenshot of how to zoom to Selection on the top.
 
 ```{figure} /fig/en_zoom_to_selection_2.png
 ---
-height: 250px
+width: 600px
 name: Zoom to Selection, right-click.
 ---
 Screenshot of how to zoom to Selection by clicking right.
 ```
 
-### Save only selected
+### Save only selected features as a new file
 
-After you selected your data, you might want to proceed with only the Selection. It is possible to save your Selection as new layer. To do so click right on the layer - *Export* - *Save selected features as*. 
+After you selected your data, you might want to proceed with only the Selection. It is possible to save your Selection as new layer. To do so click right on the layer -`Export` -> `Save only selected features`
+
+You can then choose the format, layername and crs.
+
+```{tip}
+Use GeoPackage (.gpkg) instead of Shapefile (.shp)!
+If you are unsure which format is best, check out the wiki [Geodata types](../Wiki/en_qgis_geodata_types_wiki.md)
+```
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_export_wiki.mp4"></video>
+
 
 ```{figure} /fig/en_save_selection.png
 ---
-height: 200px
+height: 500px
 name: Save selection, right-click.
 ---
 Screenshot of how to save only selected features.
 ```
-You can then choose the format, layername and crs.
+
+
+
+
+## Base maps
+
+Basemaps are background maps. They are often very practical since they are easy to use, allow easy orientation on the map canvas and are diverse. QGIS offers OpenStreetMap and some other base maps by default. 
+
+However, there is a wide range of base maps that can be used via extra plugins or XYZ Connections.
+
+Here we give you an overview of ways to access base maps in QGIS.
+
+### Standard QGIS Basemaps
+
+You can always add the standard OpenStreetMap as a basemap to your map canvas. 
 
 ```{tip}
-If you are unsure which format is best, check out the wiki [Geodata types](../Wiki/en_qgis_geodata_types_wiki.md)
+In the [wiki article on base maps](../Wiki/en_qgis_basemaps_wiki.md), you can find a tutorial to add more base maps e.g. from google to the standard base map list of your QGIS.
 ```
+There are two ways to add the OpenStreetMap as a basemap.
 
-### Field calculator
+__Option 1:__ Find in the `Browser` panel `XYZ Tiles`. Open the dropdown by clicking on it and select OpenStreetMap or another basemap.
 
-The field calculator allows you that create a new field or update an existing one. You can perform calculations whether with existing attribute values or by using defined functions. 
+__Option 2:__ `Layer` -> `Add Layer` -> `Add XYZ layer...` -> Select the OpenStreetMap or another basemap.
 
-As example, we can calculate the population per km²:
 
-```{figure} /fig/en_calculate_area.png
----
-height: 250px
-name: Calculate area.
----
-Screenshot of calculating the area in the field calculator.
-```
-We create a new field and divide the area by 1.000.000 to get km² instead of m². You have to choose the output field name and type.
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Add_basemap_OSM.mp4"></video>
 
-You can also tick the box to only calculate with the Selection.
-Now we have a new column with the calculated area. Next we need to divide the population by the area to get the density.
 
-```sql
-"population" / "area_km"
-```
-
-## Basemap selection
-A basemap can be added into your QGIS to provide context for your other layers.
-
-### OpenStreetMap
-
-If you are using version 3.4 or higher in QGIS, it is by default possible to add the OSM base map to your project. Unfold the XYZ tiles, right-click on OpenStreetMap and select add layer to project.
-
-```{figure} /fig/en_add_osm_basemap.png
----
-height: 500px
-name: add_osm_basemap
----
-Screenshot of how to add OSM basemap
-```
 
 ### QuickMapServices
-BRC exc 1.3
+
+There are numerous extensions for QGIS, also called plugins, which provide extended functionalities. In the wiki article about plugins, you can learn all about them.
+One of the most important plugins is the [QuickMapServices](https://nextgis.com/blog/quickmapservices/) plugin.
+
+The QuickMapServices Plugin allows to access a wide range of basemaps. 
+
+:::{dropdown} Installation of plugins
+To install a plugin `Plugins` -> `Manage and Install Plugins…` -> `All` -> Search for the plugin -> `Install Plugin`
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_plugins.mp4"></video>
+
+```{Tip}
+If you cannot find a specific extension, check your capitalisation and correct use of spaces. If you still cannot find an extension, you may need to allow the experimental extensions in the options (see below).
+```
+:::
 
 
+`Web` -> `QuickMapServices` -> select provider e.g. NASA -> select basemap
+
+__Functionality of QuickMapServices Plugin__
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/add_basemap_quickmapservice.mp4"></video>
+
+```{Note}
+There can be problems when printing some basemaps from the QuickMapServices!
+```
 
 
-## Data organization

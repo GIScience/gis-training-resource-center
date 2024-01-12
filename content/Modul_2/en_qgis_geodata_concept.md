@@ -15,7 +15,7 @@
 ## Projections 
 ### Theory
 
-The earth is a sphere and cannot be represented on a flat map without being distorted. To able able to display the earth on a flat map for example as a rectangle it needs to be projected. For further explanation, watch this video.
+__The earth is a sphere and cannot be represented on a flat map without being distorted.__ To able able to display the earth on a flat map for example as a rectangle it needs to be projected. For further explanation, watch this video.
 [![preview video](../../fig/screenshot_video_every_world_map_is_wrong.png)](https://www.youtube.com/watch?v=kIID5FDi2JQ "Why every world map is wrong")
 
 For this translation, from a curved on a flat surface, thousands of different methods exist. These are called **Coordinate Reference Systems (CRS)**.
@@ -23,6 +23,7 @@ For this translation, from a curved on a flat surface, thousands of different me
 ![Different Coordinate Reference Systems](../../fig/en_examples_projections.png)
 
 Every projection comes with a trade-off in shape, direction, distance and area. That's why it is important to choose different types of CRS for different use cases.
+
 For example, Mercator projections don´t represent the area correctly. Google Maps still uses the Mercator to be able to represent streets correctly, since it works well on a small scale. On a big scale, the shape of the countries stay the same but the area is mispresented. You can check the true size in comparison to different placements on the map on this [website](https://www.thetruesize.com). A popular example is Greenland in comparison with Africa, which seem on the map to be about the same size, but in reality Africa is a lot bigger.
 
 ![Comparison Greenland - Africa](../../fig/en_greenland_africa.png)
@@ -32,7 +33,7 @@ For example, Mercator projections don´t represent the area correctly. Google Ma
 
 
 ```{Attention}
-It's important to work with the right projections, if not we will produce wrong results!
+It's important to work with the right projections, if not we will produce wrong results! 
 ```
 
 This table shows an overview on which projections to use for which needed characteristic:
@@ -49,42 +50,57 @@ For smaller areas local projections should be used, since they give a more accur
 
 ### Application
 
+```{Attention}
 You can find all the projections and their CRS code at this [website](http://epsg.io). 
+```
+
+It is crucial that you are aware that you data can be in one CRS and your QGIS project in an other CRS. The data and the project should always be the same, or else you will get wrong results! The project CRS is displayed on the bottom left corner, as seen [here](../../fig/en_QGIS_User_Interface.png). 
+To change the CRS of you data and project, follow the steps explained below.
+The default CRS/EPSG code of every QGIS project is the World Geodetic System 84 (EPSG: 4326). This CRS is optimized for world maps. So not perfect for most applications, because we mostly use maps for small areas. 
 
 
-To change the projection of a **vector file**, click on *Vector*, *Data Management Tools*, *Reproject Layer*. Select your input layer and the target crs. Click on the three dots to *Save to File...* and click *Run*. For a detailed instruction click on this video.
+### How to check EPSG-Code/CRS of your QGIS Project and change it
+```{Note}
+To check and adjust the CRS/ EPSG-Code should be the first thing you should do when starting a new QGIS project.
+```
+
+1.  Open a QGIS projeckt
+2. In the very down right corner of QGIS you find the butten `EPSG`. The number next to it is the EPSG Code currently used in the project. For more information click on the button.
+![](/fig/EPSG_Code.png)
+3. The window `Project Properties` will open. Here you can view all availble CRS/EPSG-Code and their properties.
+4. To change the CRS/EPSG-code, select the one you want to use and click `Apply`.
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_change_project_CRS.mp4"></video>
+
+### Changing the projection of a vector layer
+
+1. `Vector` Tab -> `Data Management Tools` -> `Reproject Layer`
+2. Select target CRS/ EPSG-Code.
+3. Save the new file by clicking on the three dots next to `Reprojected`, specify the file name and the location where you want to save the file.
+5. Click `Run`
+
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_vector.mp4"></video>
 
-To change the projection of a **raster file**, clickclick on *Raster*, *Projections*, *Warp (Reproject)*. Choose your input layer and target crs. Click on the three dots to *Save to File...* and click *Run*. For a detailed instruction click on this video. 
+
+### Changing the projection of a raster layer
+
+1. `Raster` Tab -> `Projections` -> `Warp (Reproject)`
+2. Select target CRS/EPSG-Code
+3. Select resampling method
+4. Save the new file by clicking on th three dots nest to `Reprojected`, specify the file name and the location where you want to save the file.
+5. Click `Run`
+
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_raster.mp4"></video>
 
-It is crucial that you are aware of the difference in data projection and project projection. They should always be the same, or else you will get wrong results! You can change the data projection by following the steps explained above. The project projection is on the bottom left corner, as seen [here](../../fig/en_QGIS_User_Interface.png). 
 
-The interface then will be the same and by searching for the right EPSG you can change the projection. 
+### Comen mistakes with Coordinate Reference Systems
 
-## Excercises
-
-Now it's your turn! 
-
-You can apply your knowledge on this excercise by getting used to the interface and changing the projections. 
-
-[Exercise 1](https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/tree/main/Exercise_1) 
---> in future link to HeiCloud
-
-
-
-==explain and show often made mistakes?==
-
-This [Website](https://ihatecoordinatesystems.com/) provides explanations und solutions for often made mistakes.
-
-In the [Wiki](../../content/Wiki/en_qgis_projections_wiki.md) are further tips.
-
-
+The website [__I Hate Coordinate Systems!__](https://ihatecoordinatesystems.com/) offers a “a problem-based guide of common CRS issues, root causes, and solutions”. Check it out in case you have any issues with CRS.
 
 
 ## Layer concept
 
-Geodata represents a real-world object on a map as a feature. A feature consists of two types of information: the location and attributes, f. e. name or ID. Those informations are collected in layers. A layer can only consist of geographic objects of the same type. [^1]
+Geodata represents a real-world object on a map as a feature. A feature consists of two types of information: the location and attributes, e. g. name or ID. Those informations are collected in layers. A layer can only consist of geographic objects of the same type. [^1]
 
 
 [^1]: https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_1_layers
@@ -101,27 +117,18 @@ There are two file types of geographic data: **vector and raster**.
 ![Vector and raster data](../../fig/en_vector_raster.png)
   
 
-> **Vector**  
-Vector data contains a shape or a geometry. By using geometry objects (points, lines and polygons) the real world is represented. Each object stores the location (as adress or coordinates) and further attributes, f. e. name or ID. Which geometry is used, depends on the feature it represents.
-![Geometry vector data](../../fig/en_vector_geometry.png)
-  >>Examples: buildings, streets 
+### Vector
+Vector data contains a shape or a geometry. By using geometry objects (points, lines and polygons) the real world is represented. Each object stores the location (as adress or coordinates) and further attributes, e.g. name or ID. Which geometry is used, depends on the feature it represents.
 
-
-> **Raster**  
-Raster data are images which contain a matrix of pixels. Each pixel stores a value. 
-Since a raster is based on an image, the resolution is crucial. It defines the accuracy of the data and size of the pixels. 
-![Raster data quality](../../fig/en_quality_raster.png)
->> Examples (stored as a value): elevation, temperature, land cover
-
-
-In this picture you can see the same location, on the left as vector data, visualising streets and urban area, and on the right hand as raster data (satellite image), showing the land cover.
-
-vector                     |  raster
-:-------------------------:|:-------------------------:
-![same location as vector data](../../fig/en_same_location_vector.png)  |  ![same location as raster data](../../fig/en_same_location_raster.png)  
-
-
-## Vector file formats
+```{figure} /fig/en_vector_data_overview.drawio.png
+---
+width: 800px
+name: 
+align: center
+---
+```
+  
+#### Vector file formats
 
 Vector data can have the following data formats:
 
@@ -135,5 +142,29 @@ Vector data can have the following data formats:
   
 
 ![data formats](../../fig/en_data_formats.png)
+
+
+
+### Raster  
+Raster data are images which contain a matrix of pixels. Each pixel stores a value e.g. elevation, temperature, population or  land cover typ. 
+Since a raster is based on an image, the resolution is crucial. It defines the accuracy of the data and size of the pixels. 
+![Raster data quality](../../fig/en_quality_raster.png)
+
+In this picture you can see the same location, on the left as vector data, visualising streets and urban area, and on the right hand as raster data (satellite image), showing the land cover.
+
+vector                     |  raster
+:-------------------------:|:-------------------------:
+![same location as vector data](../../fig/en_same_location_vector.png)  |  ![same location as raster data](../../fig/en_same_location_raster.png)  
+
+#### Raster data formats
+
+Raster data can have the following data formats:
+
+| Filename extension| Name | Dscription |
+| ----- | --- | --- |
+|.tif/.tiff/.geotiff|Tag Image File Format|Common raster and image data format. Does not necessarily have georeference information. If a .tif file has georeferenc information it is referred to as GeoTIFF.|
+|.nc|netCDF|Standard data format for scientific data like speed or temperature. Can be be a raster file. Can contain multible datasets|
+|.asc|Esri ASCII Grid files|Old simple raster file format, always with georeference informations|
+
 
 

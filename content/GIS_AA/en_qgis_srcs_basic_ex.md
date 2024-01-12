@@ -249,7 +249,7 @@ align: center
 Categorized classification in QGIS groups spatial data into distinct categories based on specific attributes. This classification enhances the organization and interpretation of geospatial information for clearer insights.
 1. Open the attribute table of "Somaliland_health_facilities_OSM" by right clicking on "Somaliland_health_facilities_OSM" -> `Open Attribute Table`
 2. Check out the column “Facility t”. This column has the data on the type of the health facility. As you can see there are not just hospitals but many different typs of facilities like Health posts.
-3. To categorise all facilities by type on the map, open the symbology window. Right-click on the "Somaliland_health_facilities_OSM" layer -> `properties`-> `symbology`
+3. To categorise all facilities by type on the map, open the symbology window. Right-click on the "Somaliland_health_facilities_OSM" layer -> `Properties`-> `symbology`
 4. Click on `Categorized`
 5. `Value`: “Facility t”.
 Further down the window click on `Classify`.  Now you should see all unique values or attributes of the selected “Facility t” column.

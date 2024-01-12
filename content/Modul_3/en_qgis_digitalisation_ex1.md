@@ -1,1 +1,26 @@
-# Digitalisation Exercise 1
+# Digitization Exercise 1
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+

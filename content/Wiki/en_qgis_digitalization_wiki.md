@@ -1,4 +1,4 @@
-# Digitalization
+# Digitization
 
 🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
@@ -24,6 +24,50 @@ To digitize data for a new dataset you always have to start with creating the da
 
 ## Add geometries to a layer
 
+### Creation of point data
+
+To digitalise points, first you need an existing point layer or you need to create one (check out [Digital Data Creation]( https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation.html#digital-data-creation) above).
+
+1.	Select the point layer you want to add data to in the Layer panel
+2.	Go to the digitalisation toolbar and click on![](/fig/mActionToggleEditing.png). No the layer is in the editing mode.
+3.	Click on ![](/fig/mActionCapturePoint.png). 
+4.	Left-click on the feature you want to digitalise.
+5.	Once you click, a window will appear `[Your Layer Name]- Feature Attribute`. Here you can add the information about this feature to the different columns, based on the attribute table of the layer.
+5.	Once you are done with digitalisation ![](/fig/mActionSaveEdits.png) to save your edits.
+6.	Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_point_feature.mp4"></video>
+
+
+
+```{figure} /fig/point_creation.png 
+---
+width: 500px
+name: Point creation
+align: center
+---
+```
+
+### Creation of line data
+
+The  method  is  similar  to  digitising  a  point  (see  above). First you have to created a new line layer or use an existing one. 
+
+```{attention} 
+If you create a new line layer remember to change the geometry type into lines because we are creating lines data now.
+```
+1.	Select the line layer you want to add data to in the Layer panel
+2.	Go to the digitalisation toolbar and click on![](/fig/mActionToggleEditing.png). No the layer is in the editing mode.
+3.	Click on ![](/fig/mActionCaptureLine.png). 
+4.	To digitalise line features, click along the line. When you are done, right-click on the last point of the line to finish the feature.
+5.	Once you click, a window will appear `[Your Layer Name]- Feature Attribute`. Here you can add the information about this feature to the different columns, based on the attribute table of the layer.
+6.	Once you are done with digitalisation ![](/fig/mActionSaveEdits.png) to save your edits.
+7.	Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
+
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_line_feature.mp4"></video>
+
+### Creation of polygon data 
+
 - Open a new `polygone layer`.
 - Clicking on ![](/fig/mActionToggleEditing.png) start `edit mode` and Add Feature: `Capture Polygone`![](/fig/mActionCapturePolygon.png)|. 
 - Draw geometries and enter `feature attributes`, like *id* and *name*.
@@ -31,12 +75,7 @@ To digitize data for a new dataset you always have to start with creating the da
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_digitize_add_feature.mp4"></video>
 
-- Clicking on ![](/fig/mActionToggleEditing.png) start `edit mode`.
-- Add Feature: `Add Ring`![](/fig/mActionAddRing.png) (e.g. map the inner courtyard of a building, or -  as shown in the video - create a cercle to mark an isle in the lake).
-- To open the `Advanced Digitizing Toolbar` go to `View > Toolboxes > Advanced Digitizing Toolbar`.
-- To add rectangles 'automatically' go to `View > Toolbars > Shape Digitizing Toolbar`.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_digitize_add_ring.mp4"></video>
 
 ## Modify existing geometries in the layer
 
@@ -46,7 +85,20 @@ To digitize data for a new dataset you always have to start with creating the da
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_digitize_move_vertices.mp4"></video>
 
-__Further resources:__
+### Adding Ring to existing polygon layer
 
-[![Digitizing shapefile QGIS](/fig/en_digitizing_shapefiles.png)](https://www.youtube.com/watch?v=Zer558SnKX4)
+- Clicking on ![](/fig/mActionToggleEditing.png) start `edit mode`.
+- Add Feature: `Add Ring`![](/fig/mActionAddRing.png) (e.g. map the inner courtyard of a building, or -  as shown in the video - create a cercle to mark an isle in the lake).
+- To open the `Advanced Digitizing Toolbar` go to `View > Toolboxes > Advanced Digitizing Toolbar`.
+- To add rectangles 'automatically' go to `View > Toolbars > Shape Digitizing Toolbar`.
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_digitize_add_ring.mp4"></video>
+
+
+## Further resources
+
+The YouTube Video below shows the whole process of digitizing polygons in QGIS in some more detail. Note that the YouTuber is using an older version of QGIS, so things might be different in your version.
+
+<video width="100%" controls src="https://www.youtube.com/watch?v=Zer558SnKX4"></video>
+
 
