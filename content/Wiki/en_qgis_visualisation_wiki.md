@@ -84,5 +84,5 @@ By default, QGIS renders the labels in such a way that they don't overlap with o
 
 ## Visualisation of Raster data
 
-Raster data is visualised differently from 
+Raster data is visualised differently from vector data. 
 
