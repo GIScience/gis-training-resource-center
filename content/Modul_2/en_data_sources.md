@@ -19,6 +19,14 @@ To find the appropriate data you are looking for, you can search online data sha
 </details>
 
 
+## Overview
+
+| Name | Data | Link |
+|---------|----------|---------|--------|
+| The Humanitarian Data Exchange | Various openly available (geo)data sets from different organisations, including the datasets, meta information and stats/overviews | https://data.humdata.org |
+| Test | Test 1 | Test 2 |
+
+
 
 ## OpenStreetMap data
 
@@ -34,8 +42,6 @@ name: add_osm_basemap
 ---
 Screenshot of how to add OSM basemap
 ```
-
-### overpass turbo
 
 ### overpass turbo
 
@@ -136,13 +142,31 @@ For more information, check out the [wiki](https://wiki.openstreetmap.org/wiki/O
 
 ### Geofabrik
 
+[This platform](http://download.geofabrik.de) contains data extracts from OpenStreetMap. You can select the continent, country and region of interest to download the data you need.
 
 
+### OSM Boundaries
+
+### HOT export tool
+
+
+### ohsome tools
 
 ## Humanitarian data
 
+### The Humanitarian Data Exchange
+
+[The Humanitarian Data Exchange](https://data.humdata.org) is a platform that has various openly available (geo)data sets from different organisations, including the datasets, meta information and stats/overviews. It is the go-to datasource for humanitarian data. You can navigate the page by searching for your location or the data needed. 
+
+
+## General Geodata
+Free GIS data
+Geoboundaries
+
 
 ## Data on disaster
+
+GDACS
 
 ## Population
 
