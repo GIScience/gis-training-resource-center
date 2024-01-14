@@ -21,14 +21,6 @@ To find the appropriate data you are looking for, you can search online data sha
 
 ## Overview
 
-### Humanitarian Data
-
-| Name | Data | Link |
-| :-------------------- | :----------------- | :---------- |
-| The Humanitarian Data Exchange | Various openly available (geo)data sets from different organisations, including the datasets, meta information and stats/overviews | https://data.humdata.org |
-| Healthsites | Location of health facilities | https://healthsites.io/ |
-| UNHCR Geoservices | information and data on refugee-related emergencies for humanitarian help regarding displaced persons | https://data.unhcr.org/en/situations |
-
 ### General Geodata 
 
 | Name | Data | Link |
@@ -38,6 +30,14 @@ To find the appropriate data you are looking for, you can search online data sha
 | OpenAfrica | Open source data on Africa | https://africaopendata.org/dataset |
 | DivaGIS | different data, e.g. administrative, roads, population, elevation, climate | http://www.diva-gis.org/gdata |
 | Open Topography | data on topography | https://opentopography.org/ |
+
+### Humanitarian Data
+
+| Name | Data | Link |
+| :-------------------- | :----------------- | :---------- |
+| The Humanitarian Data Exchange | Various openly available (geo)data sets from different organisations, including the datasets, meta information and stats/overviews | https://data.humdata.org |
+| Healthsites | Location of health facilities | https://healthsites.io/ |
+| UNHCR Geoservices | information and data on refugee-related emergencies for humanitarian help regarding displaced persons | https://data.unhcr.org/en/situations |
 
 
 ### Data on disaster
@@ -49,6 +49,9 @@ To find the appropriate data you are looking for, you can search online data sha
 | Acled | data on armed conflicts and other events | https://acleddata.com/data-export-tool |
 | GDACS | data on all major ongoing disasters | https://www.gdacs.org |
 | ZKI/DLR | Flood extends, damage extends, earth observation data | https://activations.zki.dlr.de/en/activations/ |
+| Waterpoint | data on waterpoints | https://www.waterpointdata.org |
+| DataViz | data on food security, hazards, conflicts, climate | https://dataviz.vam.wfp.org/version2/ |
+
 
 ### Population data
 
@@ -58,17 +61,16 @@ To find the appropriate data you are looking for, you can search online data sha
 | GHSL | settlement data on global scale | https://ghsl.jrc.ec.europa.eu/ |
 | HRSL | Settlement layer based on earth observation data and Facebook data | https://research.facebook.com/downloads/high-resolution-settlement-layer-hrsl/ |
 | GRID3 Settlement extents and settlement points | Settlement extents data sets based on Digitise Africa building footprints, boundaries, infrastructure, population, risk analysis and social distancing | https://grid3.org/ |
-
-### Building
-
-
-### Other sectors
-
-| Name | Data | Link |
-| :-------------------- | :----------------- | :---------- |
 | Pangea | environmental data | https://www.pangaea.de/ |
 | United Nations Population Fund | data on sexual and reproductive health and population trends | https://www.unfpa.org/data
 
+### Building
+
+| Name | Data | Link |
+| :-------------------- | :----------------- | :---------- |
+| World Settlement Footprint | World Settlement Footprint with global cover | https://download.geoservice.dlr.de/WSF2019/ |
+| VIDA building footprint | combined Google and Microsoft building footprint | https://beta.source.coop/repositories/vida/google-microsoft-open-buildings/download/ |
+| Open-building | Google building footprint | https://sites.research.google/open-buildings/#download |
 
 ### Remote sensing/Earth observation data
 
@@ -81,6 +83,9 @@ To find the appropriate data you are looking for, you can search online data sha
 | Earth Observe | digital elevation model on a global scale | http://srtm.csi.cgiar.org/srtmdata/ |
 | Copernicus | earth observation data | https://scihub.copernicus.eu/ | 
 | GlobCover | raster data on land cover | http://due.esrin.esa.int/page_globcover.php |
+| Copernicus | Earth observation data | https://scihub.copernicus.eu/ |
+
+
 
 ## OpenStreetMap data
 
@@ -193,41 +198,7 @@ Screenshot of how to export query in overpassturbo
 For more information, check out the [wiki](https://wiki.openstreetmap.org/wiki/Overpass_turbo).
 ```
 
-
-### Geofabrik
-
-[This platform](http://download.geofabrik.de) contains data extracts from OpenStreetMap. You can select the continent, country and region of interest to download the data you need.
-
-
-### OSM Boundaries
-
-### HOT export tool
-
-
 ### ohsome tools
 
-## Humanitarian data
-
-### The Humanitarian Data Exchange
-
-[The Humanitarian Data Exchange](https://data.humdata.org) is a platform that has various openly available (geo)data sets from different organisations, including the datasets, meta information and stats/overviews. It is the go-to datasource for humanitarian data. You can navigate the page by searching for your location or the data needed. 
-
-
-## General Geodata
-Free GIS data
-Geoboundaries
-
-
-## Data on disaster
-
-GDACS
-
-## Population
-
-## Building
-
-## Different sectors
-
-
-## Remote Sensing / Earth Observation data
+[The ohsome tools](https://heigit.org/big-spatial-data-analytics-en/ohsome/) provide OpenStreetMap data analytics and downloads by HeiGIT. You can also investigate the OSM history. 
 
