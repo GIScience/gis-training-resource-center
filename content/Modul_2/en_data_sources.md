@@ -21,12 +21,66 @@ To find the appropriate data you are looking for, you can search online data sha
 
 ## Overview
 
+### Humanitarian Data
+
 | Name | Data | Link |
-|---------|----------|---------|--------|
+| :-------------------- | :----------------- | :---------- |
 | The Humanitarian Data Exchange | Various openly available (geo)data sets from different organisations, including the datasets, meta information and stats/overviews | https://data.humdata.org |
-| Test | Test 1 | Test 2 |
+| Healthsites | Location of health facilities | https://healthsites.io/ |
+| UNHCR Geoservices | information and data on refugee-related emergencies for humanitarian help regarding displaced persons | https://data.unhcr.org/en/situations |
+
+### General Geodata 
+
+| Name | Data | Link |
+| :-------------------- | :----------------- | :---------- |
+| Natural Earth | administrative and physical maps | https://www.naturalearthdata.com/ |
+| Geonames | administrative geodata | https://www.geonames.org/ |
+| OpenAfrica | Open source data on Africa | https://africaopendata.org/dataset |
+| DivaGIS | different data, e.g. administrative, roads, population, elevation, climate | http://www.diva-gis.org/gdata |
+| Open Topography | data on topography | https://opentopography.org/ |
 
 
+### Data on disaster
+
+| Name | Data | Link |
+| :-------------------- | :----------------- | :---------- |
+| MapAction | Emergency mapping resources | https://maps.mapaction.org/ |
+| Fieldmaps.io | Data and Map download platform for humanitarian use | https://fieldmaps.io/ |
+| Acled | data on armed conflicts and other events | https://acleddata.com/data-export-tool |
+| GDACS | data on all major ongoing disasters | https://www.gdacs.org |
+| ZKI/DLR | Flood extends, damage extends, earth observation data | https://activations.zki.dlr.de/en/activations/ |
+
+### Population data
+
+| Name | Data | Link |
+| :-------------------- | :----------------- | :---------- |
+| WorldPop | population estimates | https://wopr.worldpop.org/ |
+| GHSL | settlement data on global scale | https://ghsl.jrc.ec.europa.eu/ |
+| HRSL | Settlement layer based on earth observation data and Facebook data | https://research.facebook.com/downloads/high-resolution-settlement-layer-hrsl/ |
+| GRID3 Settlement extents and settlement points | Settlement extents data sets based on Digitise Africa building footprints, boundaries, infrastructure, population, risk analysis and social distancing | https://grid3.org/ |
+
+### Building
+
+
+### Other sectors
+
+| Name | Data | Link |
+| :-------------------- | :----------------- | :---------- |
+| Pangea | environmental data | https://www.pangaea.de/ |
+| United Nations Population Fund | data on sexual and reproductive health and population trends | https://www.unfpa.org/data
+
+
+### Remote sensing/Earth observation data
+
+| Name | Data | Link |
+| :-------------------- | :----------------- | :---------- |
+| Global Forest Watch | data on global forests | https://www.globalforestwatch.org/ |
+| OpenAerialMap | Drone images | https://map.openaerialmap.org/ |
+| USGS Earth Explorer | data on Landsat, Sentinel, SRTM, Aster, Land Cover | https://earthexplorer.usgs.gov/ |
+| SRTM | elevation data | http://srtm.csi.cgiar.org/srtmdata/ |
+| Earth Observe | digital elevation model on a global scale | http://srtm.csi.cgiar.org/srtmdata/ |
+| Copernicus | earth observation data | https://scihub.copernicus.eu/ | 
+| GlobCover | raster data on land cover | http://due.esrin.esa.int/page_globcover.php |
 
 ## OpenStreetMap data
 
