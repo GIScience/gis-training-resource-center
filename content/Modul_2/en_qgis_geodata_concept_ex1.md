@@ -7,12 +7,12 @@ The objective of this exercise is to make your first steps in QGIS. Understand t
 will be done when Wiki is finished
 
 ### Data
-Download all datasets and save the folder on your computer and unzip the file. The zip folder includes:
+Download all datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_2/Modul_2_Exercise2_Geodata_Concept/Modul_2_Exercise2_Geodata_Concept.zip) and save the folder on your computer and unzip the file. The zip folder includes:
 - `Sierra_leone_borders.gpkg` (MultiLineString) GeoPackage
     - Sierra Leone national boders (Lines)
     - Sierra Leone provinces (Lines)
 - `sierra_leone_health_HOT.shp` (Points) Shapefile
-- `sl-airports.csv` (CSV)
+- `sl-airports.csv` (CSV) -modified
 
 ### Tasks
 1. Open QGIS and familiarise yourself with the user interface.
