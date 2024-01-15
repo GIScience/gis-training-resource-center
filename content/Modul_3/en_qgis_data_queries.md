@@ -42,7 +42,7 @@ A query based on specific Attributes can be done utilizing the `Select Features 
 
 1.	In the tool interface expand `Fields and Values` in the right hand panel
 2.	Choose the field you want to base your selection on by double clicking it (it now should appear in the expression panel on the left hand side)
-3.	Use a expression utilizing specific operators (see **WIKI**) to specify your selection in the left hand panel (e.g ""continent"  LIKE  'Asia'" to select all features with the value “Asia” in the field "continent" )
+3.	Use a expression utilizing specific operators to specify your selection in the left hand panel (e.g ""continent"  LIKE  'Asia'" to select all features with the value “Asia” in the field "continent" )
 
 Tip: Click on `Show Values` in the top right corner when a field is selected to get a overview over the different values of the respective field by clicking `All Unique`/`10 Samples`. Double click values to use them in the expression panel on the left.
 
