@@ -2,6 +2,12 @@
 
 These exercises touch on all the content of Modul 3- Basic GIS operations.  
 
+## Geodata Classification
+
+* __[Overview map of the prevalence of stunting in Sierra Leone](/content/Modul_3/en_qgis_classification_ex1.md):__ This exercise aims to create an overview map of the prevalence of stunting in Sierra Leone at district level. To do this, we will visualise both the prevalence of stunting and key infrastructure such as hospitals, airports and roads. The decision on which data to visualise and how to present it is up to you, the cartographer.
+    * Geodata Classification- Categorized
+    * Geodata Classification- Graduated
+
 ## BIG exercises Modul 3
 
 These ecersises touch on all the content of Modul 3. 
