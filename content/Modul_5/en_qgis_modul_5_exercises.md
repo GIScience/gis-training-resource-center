@@ -1,6 +1,6 @@
 # Exercises Modul 5- Intermediate GIS operations
 
-These exercises touch on all the content of Modul 3- Basic GIS operations.  
+These exercises touch on all the content of Modul 5.
 
 ## Spatial Geodataprocessing
 
