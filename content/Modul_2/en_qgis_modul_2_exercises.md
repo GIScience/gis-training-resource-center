@@ -12,4 +12,6 @@ These ecersises touch on all the content of Modul 2.
     * Import vector data into QGIS- Shapefiles, GeoPackage and text format
     * Move layers in the layer hierarchy (Layer concept)
 
+* __[Exercise: Geodata Concept](/content/Modul_2/en_qgis_geodata_concept_ex1.md):__ The objective of this exercise is to make your first steps in QGIS. Understand the user interface and get to know the layer concept. Display vector data in QGIS and view the attributes of the data. Reproject the vector data (i.e. by changing the projection of the data).
+
 
