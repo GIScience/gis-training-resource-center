@@ -114,6 +114,15 @@ parts:
       - file: content/Modul_6/en_qgis_data_analysis_theorie.md
         sections:
           - file: content/Modul_6/en_qgis_data_analysis_ex1.md
+  - caption: Modul 9- Data analysis with QGIS
+    chapters:
+      - file: content/Modul_9/en_qgis_network_analysis.md
+        sections:
+          - file: content/Modul_9/en_qgis_network_analysis_in_qgis.md
+          - file: content/Modul_9/en_qgis_openrouteservice_tools.md
+          - file: content/Modul_9/en_qgis_qneat3.md
+        sections:
+          - file: content/Modul_9/en_qgis_modul_9_ex1.md
   - caption: GIS in Anticipatory Action
     chapters:
       - file: content/GIS_AA/en_qgis_drought_trigger_somalia.md
