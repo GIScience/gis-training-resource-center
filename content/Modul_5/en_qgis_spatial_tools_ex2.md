@@ -10,7 +10,7 @@ will be done when Wiki is finished
 Download all datasets and save the folder on your computer and unzip the file. The zip folder includes:
 - `uga_admbnda_adm2_ubos_20200824.shp`: [Uganda district boundaries (Admin level 2)](https://data.humdata.org/dataset/cod-ab-uga)
 - `COVID19_RISK_INDEX.shp`: [Covid-19 risk indicators](https://data.humdata.org/dataset/covid19_risk_index)
-- `uga_admpop_adm2_2020proj_1y.csv`: [Uganda population statistics](https://data.humdata.org/dataset/cod-ps-uga)
+
 
 ```{Hint}
 All files still have their original names. However, feel free to modify their names if necessary to identify them more easily.
