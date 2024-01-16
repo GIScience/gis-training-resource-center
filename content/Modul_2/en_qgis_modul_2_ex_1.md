@@ -1,5 +1,7 @@
 # Exercise: The world
 
+__🔙[Back to Homepage](/content/intro.md)__
+
 ## Aim of the exercise
 
 This exercise will help you to get to know the interface of QGIS a bit better. Furthermore, you will load your first data in QGIS and gain some hands-on experience with the layer concept.

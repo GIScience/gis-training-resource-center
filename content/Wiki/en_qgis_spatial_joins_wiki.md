@@ -3,6 +3,8 @@
 
 🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
+__🔙[Back to Homepage](/content/intro.md)__
+
 
 ## Join Attributes by location
 >>>>>>> f9bef8fc5c286fce9cb8c1091a4820791f493513
