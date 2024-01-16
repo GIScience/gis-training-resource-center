@@ -26,6 +26,7 @@ All data has been downloaded from the humanitarian data exchange. Download the D
 ## Wiki articles
 
 
+
 ---
 
 ## Tasks
@@ -112,12 +113,30 @@ Now the Map should be ready for a print layout.
 
 Once you are happy with the symbolization and colours of your data, the next step is to create a print layout. A map is never complete without adding the necessary elements such as 
 
-1. Open a new print layout abd give it a name (e.g. Ghana Overview Map with hospitals)
-2. Insert a new map
-3. Move and position the map so that the entire country is visible at a reasonable scale
-4. Add a title, scale bar, orientation, sources, author, and date. You may add additional text information to describe what can be seen on the map.
-5. When you are happy with your print layout. You can export it as a PDF. You can save it in the project folder under "results".
-6. Once you have exported the map. Look at the PDF and make sure it looks how you intended. Some things might look different in the PDF. If it does not look correct you may need to make some adjustments in the symbology.
+1. Open a new print layout abd give it a name (e.g. Ghana Map with hospitals). A new window will open with a blank canvas and a different set of tools. This is the print layout designer.
+    - On the left, you will find a toolbar with tools to add and move items on the print layout canvas.
+    - On the right you will find a list of items you added to the print layout (it is still empty). Beneath this, you will find a tab called __"item properties"__. This is where you modify the items on your print layout (e.g. enter the text for a text box or change the font).
+2. Insert a new map by clicking on the ![New Map Icon](/fig/30.30.2_print_layout_insert_map_icon.png) (Add Map) on the left toolbar, and drawing a rectangle on the print canvas. [Video](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html#adding-a-new-map)
+3. Move and position the map so that the entire country is visible at a reasonable scale. 
+4. Let's add a title: 
+    - Click on the ![Add text icon](/fig/30.30.2_print_layout_add_text.png) (Add text)
+    - Drag a rectangle on the canvas
+    - In the items properties window on the right, you will find a text box with the text "Lorem ipsum". Here you can enter your map title (e.g.: Map of Ghana with roads and hospitals).
+    - Adjust the font size: Click on the __Font__ dropdown menu and adjust the font size for a title (25p or more). Adjust the text box if necessary.
+5. Let's add a legend:
+    - Click on the ![Add legend icon](/fig/30.30.2_print_layout_add_legend.png) (Add legend). 
+    - Navigate to the __Item Properties__ panel on the right. 
+    - Scroll down a bit and check turn off `Auto Update` by unchecking the check box. Now you can freely edit every item on the legend
+    - Adjust the legend by removing unecessary layers (which are not seen on the map) and rename the layer in the legend by clicking on ![Edit Icon](/fig/30.30.2_print_layout_legend_edit.png) below the legend entries.
+6. Now, let's add a scale bar:
+    - Click on the ![Add Scale bar icon](/fig/30.30.2_add_scale_bar.png)
+    - Draw a rectangle on the map and position the scale bar on the edge of the map. You can adjust the scale bar units (meters, kilometers, ...), the fixed segment width (50 km, 75 km, 100 km, ...) and the number of segments (to the right).
+7. Let's add North arrow:
+    - Click on the ![Add North Arrow Icon](/fig/30.30.2_print_layout_add_orientation.png) (Add North Arrow). 
+    - Drag a rectangle on the print layout. Adjust the size and location of the north arrow. You can also change the icon in the item properties.
+8. Add a text box with additional information, sources, the author (you), and date of creation.
+9. When you are happy with your print layout. You can export it as a PDF. You can save it in the project folder under "results".
+10. Once you have exported the map. Look at the PDF and make sure it looks how you intended. Some things might look different in the PDF. If it does not look correct you may need to make some adjustments in the symbology.
 
 The finished map could look something like this:
 
@@ -135,6 +154,16 @@ What can we learn from this map? We can clearly identify areas that are harder t
 
 ### Bonus Exercise!
 
-If you are finished with the main map, click on the map and navigate to the item properties. In the layer section, check the box `Lock Layers`. Now you can start working on an overview map. 
+If you are finished with the main map, click on the map and navigate to the item properties. In the layer section, check the box `Lock Layers` and `Lock styles for layers`. This means that if you change the map in the main QGIS-window, the map you have added to the Now you can start working on an overview map. We will be using a shapefile with the countries of Africa.  
 
-- 
+1. Return to the main QGIS window and load the layers from the `Bonus Exercise`-folder.
+2. In the __Layer__ panel, make the layers for the main map invisible by clicking on the ![Eye Icon](/fig/30.30.2_layer_visibility_icon.png) next to the layer name.
+3. Style the countries in an neutral, inobstrusive color. For example, you can use the "__Gray 3 Fill__" from the styling templates.
+4. Once you are happy with the styling of your overview map, navigate back to the __Print Layout window__.
+5. Add a second map and position it in a corner.
+6. In the __Item properties__ panel for the second Map ("__Map 2__"), scroll down and open the `Overview`-options. 
+7. Click on the `+`-button to add a new overview. 
+8. In the "__Map Frame__"-option, select "__Map 1__". This will show the frame of the main map on your overview map.
+
+Congratulations! You have finished your first map!
+
