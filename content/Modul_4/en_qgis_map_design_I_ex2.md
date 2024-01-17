@@ -88,22 +88,18 @@ Let's move on to the road network.
 
 Now as a final touch, let's select a simble for the health facilities:
 
-1. Open the __Symbology Tab__ and select the `Simple Marker`.
-2. Under "Symbol Layer type", select SVG-Symbol.
-3. Scroll down until you see the SVG-Symbol browser.
-4. In the search bar, enter 'hospital'
-5. Select one of the SVG-Symbols at your disposal
-6. Adjust the color to red.
-7. Click Apply and Ok.
+1. Navigate to the `hospital_GHA` layer
+2. Open the __Symbology Tab__ and select the `Simple Marker`.
+3. Under "Symbol Layer type", select SVG-Symbol.
+4. Scroll down until you see the SVG-Symbol browser.
+5. In the search bar, enter 'hospital'
+6. Select one of the SVG-Symbols at your disposal
+7. Adjust the color to red.
+8. Click Apply and Ok.
 
 Now we have assigned a symbol for each layer at our disposal. Look at the map you created and decide if you want to adjust any symbology to make the map easier to read. Do you need to change some colours? Are the layers ordered in a way that the information is available? Is the font size appropriate or do they cover up too much information?
 
-Adding a basemap can help potential readers orienting themselves. 
-
-1. Open the panel for QuickMapServices. The panel is called "Search QMS". If you have not installed the plugin yet, you can learn how to do it here `Link to BASEMAP WIKI ARTICLE!`
->Insert link
-2. In the search field, search for OpenStreetMap.
-3. Click add. A new layer will appear at the bottom of your layers.
+__Bonus Step__: [Adding a basemap](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html) can help potential readers orienting themselves. 
 
 Now the Map should be ready for a print layout.
 
@@ -166,4 +162,3 @@ If you are finished with the main map, click on the map and navigate to the item
 8. In the "__Map Frame__"-option, select "__Map 1__". This will show the frame of the main map on your overview map.
 
 Congratulations! You have finished your first map!
-
