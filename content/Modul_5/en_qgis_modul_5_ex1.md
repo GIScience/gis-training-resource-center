@@ -72,7 +72,6 @@ name: Field Calculator
 Screenshot of different sizes of the attribute tables
 ```
     
-    
 
 6. Land Degradation
 
@@ -112,8 +111,9 @@ Dowload the data we need:
 
 Explore the data. In which resolution is the data avalaible? DO you have ideas how we can add it to our indicator dataset?
 
-    *Save the Excel file as csv by clicking on `Save file as` and choosing `csv (delimiter-separated)`
-    *Load the csv-file into you QGIS by drag and drop
+*Save the Excel file as csv by clicking on `Save file as` and choosing `csv (delimiter-separated)`
+
+*Load the csv-file into you QGIS by drag and drop
     *Open the tool `Join attributes by field value` from the Processing Toolbox
     *specify our two datasets we want to join as well as the common field available for joining (`ADM2_EN` and `adm2name`)
     *as `join type` set `Take attributes of the first matching feature only (one-to-one)`
@@ -145,13 +145,140 @@ You can edit the names in 6 cases in the Attribute Table of the csv-file by togg
 
 
 
-
-
-## Part 1: Indicator Processing
+## Part 1: Risk Caclulation
 
 ### Task
 In the second part of the exercise we will showcase the steps how to come from indicators to a risk analysis.
 
+Download the data for the seccond part of the exercise.
 
 
- 
+1. Nomalization
+
+For further caclulations with the indicatords we need to make them comparable. For this reason we normalize them to a range of 0-1.
+
+
+* Open the attribute table of “vulnerability_districts_23” and Open the `Field Calculator` by clicking on the button ![](/fig/mActionCalculateField.png). By checkin the box for `Create a new field` we can conduct calculation and saving them right away in a new attribute column.
+* start with the first indicator `LandD_class`
+    *define the output field name as "LandD_class_norm" and set the `Type` to `Decimal Number(real)`.
+    *Now we will caclulate in the expression field the normalization of the indicator:
+
+     > ("LandD_Clas"  -  minimum(  "LandD_Clas" ))/( maximum(  "LandD_Clas") - minimum(  "LandD_Clas" ))
+
+* When you are down click ![](/fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by again clicking on ![](/fig/mActionToggleEditing.png)([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)).
+
+```{figure} /fig/en_qgis_modul_5_ex1_Part2_normalization.PNG
+---
+width: 100%
+name: Join attributes by field value
+---
+Nomrlalization of indicators
+```
+
+* Repeat this step for the other indicators
+* For each indicator you have now the original column and the normalized column. 
+
+
+
+2. Weighting of Indicators
+
+In the next step we can weight the indicators based on their relevance to our risk assessment. It is recommended to do surveys or workshops with the local staff in oder to find out the importance of the respective indicators.
+
+We have used so far the following weighting scale:
+
+|Weigtt|Description|
+|---|---|
+|0|Not relevant|
+|0.25|Low relevance|
+|0.5|Low-medium relevance|
+|0.75|Low-mhigh relevance|
+|1|Highly relevant|
+
+* In the attribute table of your layer we can calculate the weighted indicators for each normalized indicators, respectively. FOr this we have to follow the same steps as above: Open the `Field Calculator` by clicking on the button ![](/fig/mActionCalculateField.png), create a new field with the suffix "_weighted" and in the expression field.
+
+
+
+```{figure} /fig/en_qgis_moudl_5_ex1_part2_weigthed.PNG
+---
+width: 100%
+name: Add new field to weight indicators
+---
+Nomrlal
+```
+
+* For each indicator we now have the normalied and weighted version:
+
+```{figure} /fig/en_qgis_modul_5_ex1_part2_weighted_attribute.PNG
+---
+width: 100%
+name: Attribute Table 
+---
+Nomrlal
+```
+
+3. Vulnerability Score / Index
+
+We arenow ready to calculate the vulnerability score for each distrcit:
+* Open the attribute table -> open the `Field Calculator`![](/fig/mActionCalculateField.png) and creat a new field with the name "vulnerability_score" and field type "Decimal Numnber (real)". In the expression window sum up all weighted indicator values:
+
+>  "LandD_clas_weigthed"  +  "perc_elderly_weighted"  +  "affunderfive_weighted" 
+
+
+4. Prepare Risk Assessment
+
+In order to calculate the risk we have to bring our 3 dimension exposure, vulnerability and coping capacity together.
+
+* Right click om one of the layer and select `Properties` -> Go the`Joins` tab
+* Click on the `+` button, add a new join and select the layer you want to join. Define "admin2Name" as `Join Field`:
+
+```{figure} /fig/en_qgis_modul_5_ex1_part2_join_risk.PNG
+---
+width: 100%
+name: Attribute Table 
+---
+Nomrlal
+```
+* Right click on the layer -> `Export` -> `Save feature as` and save the layer as "risk" layer into your temp folder.
+* We will now work with the "risk" layer: Open the Attribute table -> `Field Calculator`![](/fig/mActionCalculateField.png) and normalize ths scores to a range from 0-1:
+
+ > ( "vulnerability_districts_vulnerability_score"   -  minimum(  "vulnerability_districts_vulnerability_score"  ))/( maximum(   "vulnerability_districts_vulnerability_score" ) - minimum(   "vulnerability_districts_vulnerability_score" )
+
+* Delete all fields but the normalized scores: Open the Attribute Table of your risk layer `Toggle editing mode `![](/fig/mActionToggleEditing.png) -> `Delete field` ![](/fig/mActionDeleteAttribute.png) and select all the indicator fields. In the end your layer look should like this:
+
+```{figure} /fig/en_qgis_modul_5_ex1_part2_risklayer_attributetable.PNG
+---
+width: 100%
+name: Risk Layer Attribute Table normalized Scores
+---
+Nomrlal
+```
+
+5. Risk Calculation
+
+
+Finally, the risk is calculated by the geometric mean of the dimensions Exposure and Susceptibility, while Susceptibility is defined by the geometric mean of Vulnerability and the Lack of Coping Capacity. The geometric mean is chosen since it offers the advantage of rewarding balanced developments and equal reduction of deficits at all levels of the model:
+
+$ susceptibility =   \sqrt vulnerability  \times lack\ of\ coping\ capacity $
+
+$ risk=   \sqrt exposure  \times susceptibility $
+
+
+*  Open the Attribute table -> `Field Calculator`![](/fig/mActionCalculateField.png) and create a field "Susceptibility" and type in the formula. Do the same creating a field named "risk" and the respective expression.
+
+```{figure} /fig/en_qgis_modul_5_ex1_part2_risk.PNG
+---
+width: 100%
+name: Calculate risk 
+---
+Nomrlal
+```
+
+```{Note}
+    The geometric mean is a specific type of average that is calculated by multiplying together all the values in a dataset and then taking the nth root of the product, where n is the number of values. For two values, the geometric mean is the square root of their product. For three values, it's the cube root, and so on.
+```
+
+
+6. Automatization of the Process
+
+HeiGIT has developed a a QGIS Risk Assessment Plugin in order to simplify this process and safe time.
+You can find more information about the risk methodology and the usage of the plugin [here](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_risk_assessment_plugin.html#risk-assessment-qgis-plugin).
