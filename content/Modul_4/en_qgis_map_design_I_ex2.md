@@ -11,6 +11,7 @@ The aim of this exercise will be to create an overview map of Ghana with its sub
 
 ## Data
 
+__Download the data for the exercise [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_4/Modul_4_Exercise_1_creating_a_map_of_ghana/Modul_4_Exercise_1.zip).__  
 It is always important to make yourself familiar with the data at your disposal. 
 For this exercise, we will use the following layers:
 
