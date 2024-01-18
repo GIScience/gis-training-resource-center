@@ -26,7 +26,9 @@ All data has been downloaded from the humanitarian data exchange. Download the D
 
 ## Wiki articles
 
-
+- [Visualisation](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_visualisation_wiki.html)  
+- [Modul 4: Graphical Variables and Symbology](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_I.html)  
+- [Modul 4: Print Layout](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html)
 
 ---
 
@@ -34,13 +36,14 @@ All data has been downloaded from the humanitarian data exchange. Download the D
 ---
 ### Preparation of the data
 
-1. Look into the attribute table of the different layers and look what information is available and how the attributes are named.
-2. We want to make a comprehensible map, think about which data we need and what data we can leave out. 
+1. Load the `.shp`-files into a new QGIS-project.
+2. Look into the attribute table of the different layers and look what information is available and how the attributes are named.
+3. We want to make a comprehensible map, think about which data we need and what data we can leave out. 
     - For example, the layer `hotosm_gha_roads_lines` contains too many roads for a map on a national scale. Let's open the attribute table and look at how the roads are classified. The data is using the conventional OpenStreetMap classification: The type of road is described under the attribute `highway`. In our case, it might be useful to only display the primary and secondary roads, so all the features where `highway=primary` OR `highway=secondary`.
     
 --- 
 
-### Symbolization
+### Part 1: Symbolization
 
 Now that we are familiar with the data at our disposal, let us start choosing the symbology for the different layers. Which information should be displayed on the map?
 
@@ -50,7 +53,7 @@ Let's start with the administrative boundaries. We want to show the names and ou
 2. Open the __Symbology Tab__ for the `adm_2`-layer. Set the __Fill color__ to transparent and the __Stroke width__ to 0.16 Millimeters and the __Stroke style__ to a dashed line.
 3. Open the __Symbology Tab__ for the `adm_1`-layer and set the colour as transparent. Leave the stroke width at 0,26 Millimeters and the stroke style as a solid line.
 4.  Open the __Symboloy Tab__ for the `adm_0`-layer and set it to a neutral colour (such as a light gray).
-5. We want to display the names of the districts. Open the __Labels Tab__ for the `adm_1`-layer. Select "Single Labels" and choose the attribute `ADM1_EN` for the values that are to be displayed.
+5. We want to display the names of the regions (`adm_1`). Open the __Labels Tab__ for the `adm_1`-layer. Select "Single Labels" and choose the attribute `ADM1_EN` for the values that are to be displayed.
 
 ---
 
@@ -106,30 +109,30 @@ Now the Map should be ready for a print layout.
 
 ---
 
-### Creating the print layout
+### Part 2: Creating the print layout
 
 Once you are happy with the symbolization and colours of your data, the next step is to create a print layout. A map is never complete without adding the necessary elements such as 
 
 1. Open a new print layout abd give it a name (e.g. Ghana Map with hospitals). A new window will open with a blank canvas and a different set of tools. This is the print layout designer.
     - On the left, you will find a toolbar with tools to add and move items on the print layout canvas.
     - On the right you will find a list of items you added to the print layout (it is still empty). Beneath this, you will find a tab called __"item properties"__. This is where you modify the items on your print layout (e.g. enter the text for a text box or change the font).
-2. Insert a new map by clicking on the ![New Map Icon](/fig/30.30.2_print_layout_insert_map_icon.png) (Add Map) on the left toolbar, and drawing a rectangle on the print canvas. [Video](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html#adding-a-new-map)
+2. Insert a new map by clicking on the ![New Map Icon](/fig/30.30.2_print_layout_insert_map_icon.png) ("Add Map") on the left toolbar, and drawing a rectangle on the print canvas. [Video](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html#adding-a-new-map)
 3. Move and position the map so that the entire country is visible at a reasonable scale. 
 4. Let's add a title: 
-    - Click on the ![Add text icon](/fig/30.30.2_print_layout_add_text.png) (Add text)
+    - Click on the ![Add text icon](/fig/30.30.2_print_layout_add_text.png) ("Add text")
     - Drag a rectangle on the canvas
     - In the items properties window on the right, you will find a text box with the text "Lorem ipsum". Here you can enter your map title (e.g.: Map of Ghana with roads and hospitals).
     - Adjust the font size: Click on the __Font__ dropdown menu and adjust the font size for a title (25p or more). Adjust the text box if necessary.
 5. Let's add a legend:
-    - Click on the ![Add legend icon](/fig/30.30.2_print_layout_add_legend.png) (Add legend). 
+    - Click on the ![Add legend icon](/fig/30.30.2_print_layout_add_legend.png) ("Add legend"). 
     - Navigate to the __Item Properties__ panel on the right. 
     - Scroll down a bit and check turn off `Auto Update` by unchecking the check box. Now you can freely edit every item on the legend
     - Adjust the legend by removing unecessary layers (which are not seen on the map) and rename the layer in the legend by clicking on ![Edit Icon](/fig/30.30.2_print_layout_legend_edit.png) below the legend entries.
 6. Now, let's add a scale bar:
-    - Click on the ![Add Scale bar icon](/fig/30.30.2_add_scale_bar.png)
+    - Click on the ![Add Scale bar icon](/fig/30.30.2_add_scale_bar.png) ("Add Scale bar")
     - Draw a rectangle on the map and position the scale bar on the edge of the map. You can adjust the scale bar units (meters, kilometers, ...), the fixed segment width (50 km, 75 km, 100 km, ...) and the number of segments (to the right).
 7. Let's add North arrow:
-    - Click on the ![Add North Arrow Icon](/fig/30.30.2_print_layout_add_orientation.png) (Add North Arrow). 
+    - Click on the ![Add North Arrow Icon](/fig/30.30.2_print_layout_add_orientation.png) ("Add North Arrow"). 
     - Drag a rectangle on the print layout. Adjust the size and location of the north arrow. You can also change the icon in the item properties.
 8. Add a text box with additional information, sources, the author (you), and date of creation.
 9. When you are happy with your print layout. You can export it as a PDF. You can save it in the project folder under "results".
@@ -145,7 +148,7 @@ width: 600px
 Some space has been left in the bottom-right corner for an overview map
 ```
 
-What can we learn from this map? We can clearly identify areas that are harder to reach and where the travel time to a hospital is much longer than in the populated regions in southern Ghana. 
+What can we learn from this map? We can clearly identify areas that are harder to reach and where the travel time to a hospital is much longer than in the populated regions in the south of Ghana. 
 
 ---
 
