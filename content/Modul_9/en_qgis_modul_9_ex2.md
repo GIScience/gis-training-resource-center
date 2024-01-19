@@ -1,3 +1,3 @@
-## Module 9 exercise 1 
+## Module 9 exercise 2
 
-Placeholder for first exercise
+Placeholder for second exercise

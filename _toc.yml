@@ -115,6 +115,7 @@ parts:
         sections:
           - file: content/Modul_6/en_qgis_data_analysis_ex1.md
   - caption: Modul 9- Network Analysis
+      - file: content/Modul_9/en_qgis_network_analysis_theory.md
     chapters:
       - file: content/Modul_9/en_qgis_network_analysis.md
       - file: content/Modul_9/en_qgis_network_analysis_in_qgis.md
