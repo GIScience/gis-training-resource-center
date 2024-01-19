@@ -4,12 +4,24 @@ __🔙[Back to Homepage](/content/intro.md)__
 
 ## Aim of the exercise:
 
-In this exercise, you will learn how to digitise the positions of settlements by creating new datasets. Furthermore, you will learn how to enrich the simple geodata set with additional information.
+In this exercise, you will go through the different steps requiring QGIS in order to conduct a spatial risk assessment.
 
 ## Background 
 
+In the context of the Forecast based Financing methodology the conduction of a robust risk assessment is a crucial step towards the development of an Early Action Protocol. A risk analysis serves to understand what kinds of disaster impacts can be expected from a particular type of hazard and to identify who and what is exposed and vulnerable to this hazard and why. By overlaying the information on exposure, vulnerability and lack of coping capacity, it will become clear which areas are predicted to be most severely impacted. These areas can then be targeted as priority areas for early action to ensure the most at-risk communities receive assistance before the event happens.
+The collection and processing of this information varies throughout different contexts but the calculation scheme to combine the information to a risk score remains consistent.
+
+
+## Part 1: Indicator Processing
+
+### Task
+The first part of the exercise will prepare the data in order to serve as indicator values. Raw data will be processed into meaningful indicators, and the vulnerability index will be calculated. Finally, all risk relevant data will be joined into a single vector layer using spatial data geoprocessing.
+
 
 ## Data
+
+Download the data folder for the second part of the exercise: "Modul_5_Ex1_Part_1".
+
 
 Download all datasets and save the folder on your computer and unzip the file. The zip folder includes:
 - `som_admbnda_adm2_ocha_20230308.shp`: [Somalia district boundaries (Admin level 2)](https://data.humdata.org/dataset/cod-ab-som)
@@ -20,10 +32,7 @@ Download all datasets and save the folder on your computer and unzip the file. T
 All files still have their original names. However, feel free to modify their names if necessary to identify them more easily.
 ```
 
-## Part 1: Indicator Processing
 
-### Task
-This first part of the exercise will prepare the data in order to serve as indicator values. We will work on vulnerability indicators and to calculate the vulnerability index, we will finally join all the relevant data using spatial geodataprocessing into a single vector layer.
 
 1. Load the Somalia district boundaries (admin level 2) (`som_admbnda_adm2_ocha_20230308.shp`) and the Healhsites Somalia (`WHO_health_sites.shp)  into QGIS.
 
@@ -41,7 +50,7 @@ Before you start doing any GIS operations, __always explore the data__. Always c
 width: 100%
 name: count_points_polygon
 ---
-Screenshot of different sizes of the attribute tables
+Count healthsites per district
 ```
 
 4. Now we have the number of healthsites per district. Nevertheless, it would be interesting to know how mnay healthsites exist per 10.000 people. For this task we firstly need to know how many inhabitants has each district. We can proces this information by using the __Zonal statistics__ tool from the Processing Toolbox. See the Wiki entry for [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html?highlight=zonal+statistics#basic-raster-operations) fur further information. Specify your inout layer (Output of step 3 e.g. __Num_healtsites__) and your raster layer (Worldpop Raster), specify the column prefix (e.g. ___wpop__) and select the statistics to caclulate (__sum__). For each distrcit all pixel values of the Worldpop Raster that fall inside of it will be summed up. Explore the output.
@@ -53,7 +62,11 @@ Screenshot of different sizes of the attribute tables
 width: 100%
 name: czonal_statistics
 ---
-Screenshot of different sizes of the attribute tables
+Summarize population counts per district
+```
+
+```{Hint}
+Throughout the indicator processing process you will have several interim results. Make sure to save them in a "temp" folder.
 ```
 
 5. Now we know the numbers of healthsites and the number of population per district. We are ready to caclulate our final indicator __Number of healthsites per 10.000 inhabitants. 
@@ -69,9 +82,9 @@ Screenshot of different sizes of the attribute tables
 width: 100%
 name: Field Calculator
 ---
-Screenshot of different sizes of the attribute tables
+Calculate healthsites pero 10000 inhabitants
 ```
-    
+
 
 6. Land Degradation
 
@@ -79,7 +92,15 @@ A very important factor of areas vulnerable to drought is the siuation with rega
 
 -[Somalia Land degradation](https://spatial.faoswalim.org/layers/geonode:SOM_Land_Degradation_FAOSWALIM#/)
 
-You will see that we can only download the information as image. This is a very common case when working with open data. We would have to digitize the information in order to be able to use it for further processing. Find the digitized version here.
+```{figure} /fig/land_degradation.PNG
+---
+width: 100%
+name: land_degradation
+---
+Land Degradation
+```
+
+You will see that we can only download the information as image. This is a very common case when working with open data. We would have to digitize the information in order to be able to use it for further processing. Find the digitized version in "Modul_5_Ex1_Part_1\land_degradation_somalia".
 
 Explore the data. We have a column "LandD_CLas" which indicators the severity of land degradation from 0 to 3. We now want to join the respective land degradation class to its belongig district by considering the largest overlapping area.
 
@@ -89,7 +110,7 @@ Explore the data. We have a column "LandD_CLas" which indicators the severity of
     *as `Join Type` set `Take attributes of the feature with largest overlap only (one-to-one)`
     *Save as Layer
 
-See the Wiki entrey [Spatial Joins ](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#spatial-joins) for further information.
+See the Wiki entry [Spatial Joins ](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#spatial-joins) for further information.
 
 
 
@@ -98,18 +119,18 @@ See the Wiki entrey [Spatial Joins ](https://giscience.github.io/gis-training-re
 width: 100%
 name: Join attributes by location
 ---
-Screenshot of Join attribute to location s
+Join Attributes by Location
 ```
 
 
 7. Malnutrition
 
-Another very important indicator to describe vulnerability in a distrcit is the acute malnutirion, especially in children under 5 years old.
+Another very important indicator to describe vulnerability in a district is the acute malnutirion, especially in children under 5 years old.
 
 Dowload the data we need:
 `Somalia_malnutrion_district_2022_2023.xlsx`:[Somalia: Acute Malnutrition](https://data.humdata.org/dataset/somalia-acute-malnutrition-burden-and-prevalence?)
 
-Explore the data. In which resolution is the data avalaible? DO you have ideas how we can add it to our indicator dataset?
+Explore the data. In which resolution is the data avalaible? Do you have ideas how we can add it to our indicator dataset?
 
 *Save the Excel file as csv by clicking on `Save file as` and choosing `csv (delimiter-separated)`
 
@@ -124,10 +145,10 @@ Explore the data. In which resolution is the data avalaible? DO you have ideas h
 width: 100%
 name: Join attributes by field value
 ---
-Screenshot of Join attributes by field value
+Join attributes by field value
 ```
 
-In the Log file you will get ba message: "6 feature(s) from input layer could not be matched"
+In the Log file you will get a message: "6 feature(s) from input layer could not be matched"
 
 
 ```{figure} /fig/en_qgis_module_5_ex1_error.PNG
@@ -135,7 +156,7 @@ In the Log file you will get ba message: "6 feature(s) from input layer could no
 width: 100%
 name: Join attributes by field value
 ---
-Screenshot of Join attributes by field value
+Log File Join Attribute by Field Value
 ```
 
 Open the attribute tables from both, your output layer and the csv file in order to find out the roots of the problem. In the output layer doble-click on `affunderfive` and bring `NULL` Values to the top. Check the joining attribute "ADM2_EN" and compare it with the joining attribute "adm2name" from the csv-file.
@@ -143,25 +164,28 @@ The Spelling of the distrcit anmes differs. Since we take the admin-2-boundaries
 You can edit the names in 6 cases in the Attribute Table of the csv-file by toggling editing mode, or you can simply edit the csv file in excel an load it again into QGIS.
 
 
+* Make sure to call your final layer "vulnerability_districts".
 
 
-## Part 1: Risk Caclulation
+## Part 2: Risk Caclulation
 
 ### Task
 In the second part of the exercise we will showcase the steps how to come from indicators to a risk analysis.
 
-Download the data for the seccond part of the exercise.
+Download the data folder for the second part of the exercise: "Modul_5_Ex1_Part_2".
 
 
-1. Nomalization
+1. Normalization
 
-For further caclulations with the indicatords we need to make them comparable. For this reason we normalize them to a range of 0-1.
+For further caclulations with the indicators we need to make them comparable. For this reason we normalize them to a range of 0-1.
+
+$ Normalized\ Value\ = \frac{value\ -\ min value}{max\ value \ - \ min } $
 
 
-* Open the attribute table of “vulnerability_districts_23” and Open the `Field Calculator` by clicking on the button ![](/fig/mActionCalculateField.png). By checkin the box for `Create a new field` we can conduct calculation and saving them right away in a new attribute column.
+* Open the attribute table of “vulnerability_districts” and Open the `Field Calculator` by clicking on the button ![](/fig/mActionCalculateField.png). By checkin the box for `Create a new field` we can conduct calculation and saving them right away in a new attribute column.
 * start with the first indicator `LandD_class`
-    *define the output field name as "LandD_class_norm" and set the `Type` to `Decimal Number(real)`.
-    *Now we will caclulate in the expression field the normalization of the indicator:
+* define the output field name as "LandD_class_norm" and set the `Type` to `Decimal Number(real)`.
+* Now we will caclulate in the expression field the normalization of the indicator:
 
      > ("LandD_Clas"  -  minimum(  "LandD_Clas" ))/( maximum(  "LandD_Clas") - minimum(  "LandD_Clas" ))
 
@@ -172,27 +196,40 @@ For further caclulations with the indicatords we need to make them comparable. F
 width: 100%
 name: Join attributes by field value
 ---
-Nomrlalization of indicators
+Normalization of indicators
 ```
 
 * Repeat this step for the other indicators
 * For each indicator you have now the original column and the normalized column. 
 
+2. Directions 
+
+The direction indicates if an indicator follows the predefined logic: “the higher the value, the worse the circumstances” meaning that higher values would result in a higher risk. The logic is adapted for all three dimensions, since it is generally logical to think about high values = high risk. If a respective indicator follows the logic the direction would be 1, if it does not, the direction would be = -1.
+* In order to understand the directions of our indicators we first have to addign them to one of the dimensions (exposure, vulnerability, coping capacity).
+* To which dimension would you assign the processed indicators and what are their direction?
+
+Depending on the direction the next step will vary:
+
+ We will not go further into this in this training but you can find more information [here](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_risk_assessment_plugin.html#risk).
+
+```{Hint}
+It is recommended to properly check the logic of each indicator. Often the indicators of a certain dimension follow the same logic but there are always exceptions. After the directions have been applied to the data, we can speak of “lack of coping capacity” instead of “coping capacity” since we force the respective indicators in another direction following the predefined overarching logic (the higher the value = the worse the circumstances).
+```
 
 
-2. Weighting of Indicators
+3. Weighting of Indicators
 
 In the next step we can weight the indicators based on their relevance to our risk assessment. It is recommended to do surveys or workshops with the local staff in oder to find out the importance of the respective indicators.
 
 We have used so far the following weighting scale:
 
-|Weigtt|Description|
-|---|---|
-|0|Not relevant|
-|0.25|Low relevance|
-|0.5|Low-medium relevance|
-|0.75|Low-mhigh relevance|
-|1|Highly relevant|
+| Weight| Definition | 
+| ----- | --- | 
+|0| Not Important|
+|0.25| Slightly Important| 
+|0.5|Moderately Important|
+|0.75|Fairly Important|
+|1|Very Important|
 
 * In the attribute table of your layer we can calculate the weighted indicators for each normalized indicators, respectively. FOr this we have to follow the same steps as above: Open the `Field Calculator` by clicking on the button ![](/fig/mActionCalculateField.png), create a new field with the suffix "_weighted" and in the expression field.
 
@@ -203,28 +240,28 @@ We have used so far the following weighting scale:
 width: 100%
 name: Add new field to weight indicators
 ---
-Nomrlal
+Add new field to weight indicators
 ```
 
-* For each indicator we now have the normalied and weighted version:
+* For each indicator we now have the normalized and weighted version:
 
 ```{figure} /fig/en_qgis_modul_5_ex1_part2_weighted_attribute.PNG
 ---
 width: 100%
-name: Attribute Table 
+name: Attribute Table with "_norm" and "_weighted" indicators
 ---
-Nomrlal
+Attribute Table with "_norm" and "_weighted" indicators
 ```
 
-3. Vulnerability Score / Index
+4. Vulnerability Score / Index
 
-We arenow ready to calculate the vulnerability score for each distrcit:
+We are now ready to calculate the vulnerability score for each distrcit:
 * Open the attribute table -> open the `Field Calculator`![](/fig/mActionCalculateField.png) and creat a new field with the name "vulnerability_score" and field type "Decimal Numnber (real)". In the expression window sum up all weighted indicator values:
 
->  "LandD_clas_weigthed"  +  "perc_elderly_weighted"  +  "affunderfive_weighted" 
+>  ()"LandD_clas_weigthed"  +  "perc_elderly_weighted"  +  "affunderfive_weighted") 3 
 
 
-4. Prepare Risk Assessment
+5. Prepare Risk Assessment
 
 In order to calculate the risk we have to bring our 3 dimension exposure, vulnerability and coping capacity together.
 
@@ -239,11 +276,7 @@ name: Attribute Table
 Nomrlal
 ```
 * Right click on the layer -> `Export` -> `Save feature as` and save the layer as "risk" layer into your temp folder.
-* We will now work with the "risk" layer: Open the Attribute table -> `Field Calculator`![](/fig/mActionCalculateField.png) and normalize ths scores to a range from 0-1:
-
- > ( "vulnerability_districts_vulnerability_score"   -  minimum(  "vulnerability_districts_vulnerability_score"  ))/( maximum(   "vulnerability_districts_vulnerability_score" ) - minimum(   "vulnerability_districts_vulnerability_score" )
-
-* Delete all fields but the normalized scores: Open the Attribute Table of your risk layer `Toggle editing mode `![](/fig/mActionToggleEditing.png) -> `Delete field` ![](/fig/mActionDeleteAttribute.png) and select all the indicator fields. In the end your layer look should like this:
+* We will now work with the "risk" layer: Delete all fields but the normalized scores: Open the Attribute Table of your risk layer `Toggle editing mode `![](/fig/mActionToggleEditing.png) -> `Delete field` ![](/fig/mActionDeleteAttribute.png) and select all the indicator fields. In the end your layer look should like this:
 
 ```{figure} /fig/en_qgis_modul_5_ex1_part2_risklayer_attributetable.PNG
 ---
@@ -253,7 +286,7 @@ name: Risk Layer Attribute Table normalized Scores
 Nomrlal
 ```
 
-5. Risk Calculation
+6. Risk Calculation
 
 
 Finally, the risk is calculated by the geometric mean of the dimensions Exposure and Susceptibility, while Susceptibility is defined by the geometric mean of Vulnerability and the Lack of Coping Capacity. The geometric mean is chosen since it offers the advantage of rewarding balanced developments and equal reduction of deficits at all levels of the model:
@@ -270,15 +303,42 @@ $ risk=   \sqrt exposure  \times susceptibility $
 width: 100%
 name: Calculate risk 
 ---
-Nomrlal
+Risk Calculation
 ```
 
 ```{Note}
     The geometric mean is a specific type of average that is calculated by multiplying together all the values in a dataset and then taking the nth root of the product, where n is the number of values. For two values, the geometric mean is the square root of their product. For three values, it's the cube root, and so on.
 ```
+6. Visualization of the Results
 
 
-6. Automatization of the Process
+* Right cklick on the “risk” layer -> `Properties` -> `Symbology`
+* In the down left corner click on `Style` -> `Load Style`
+* In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “Map Template” folder and select the file __“somalia_risk_assessment_style.qml”__.
+* Click `Open`. Then click on `Load Style`
+* Back in the “Layer Properties” Window click `Apply` and `OK`
+
+
+Print Layout:
+
+* Open a new print layout by clicking on `Project` -> `New Print Layout` -> enter the name of your current Project e.g "2024_01".
+* Go the the `Ex_Part_2` folder and drag and drop the file `maps_somalia_template_risk_assessment.qpt` in the print layout
+* Change the date to the current date by clicking on "Further map info…" in the items panel. Click on the `Item Properties` tab and scroll down. Here you can change the date in the `Main Properties` field.
+* If necessary, adjust the lgend by clicking on the legend in the  `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there check if you have to open the dropdown. Make sure `Auto update` is not checked.
+* Remove all itemes in the legend be clicking on the item and then on the red minus icon below.
+
+    
+```{figure} /fig/en_qgis_mondul_5_ex1_possible_result.PNG
+---
+width: 100%
+name: Possible Map Result
+---
+Possible Map Result
+```
+    
+
+
+7. Automatization of the Process
 
 HeiGIT has developed a a QGIS Risk Assessment Plugin in order to simplify this process and safe time.
 You can find more information about the risk methodology and the usage of the plugin [here](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_risk_assessment_plugin.html#risk-assessment-qgis-plugin).
