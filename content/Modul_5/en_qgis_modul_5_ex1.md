@@ -94,7 +94,7 @@ A very important factor of areas vulnerable to drought is the siuation with rega
 
 ```{figure} /fig/land_degradation.PNG
 ---
-width: 100%
+width: 60%
 name: land_degradation
 ---
 Land Degradation
@@ -189,11 +189,11 @@ $ Normalized\ Value\ = \frac{value\ -\ min value}{max\ value \ - \ min } $
 
      > ("LandD_Clas"  -  minimum(  "LandD_Clas" ))/( maximum(  "LandD_Clas") - minimum(  "LandD_Clas" ))
 
-* When you are down click ![](/fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by again clicking on ![](/fig/mActionToggleEditing.png)([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)).
+* When you are done click ![](/fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by again clicking on ![](/fig/mActionToggleEditing.png)([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)).
 
 ```{figure} /fig/en_qgis_modul_5_ex1_Part2_normalization.PNG
 ---
-width: 100%
+width: 80%
 name: Join attributes by field value
 ---
 Normalization of indicators
@@ -237,7 +237,7 @@ We have used so far the following weighting scale:
 
 ```{figure} /fig/en_qgis_moudl_5_ex1_part2_weigthed.PNG
 ---
-width: 100%
+width: 80%
 name: Add new field to weight indicators
 ---
 Add new field to weight indicators
@@ -270,7 +270,7 @@ In order to calculate the risk we have to bring our 3 dimension exposure, vulner
 
 ```{figure} /fig/en_qgis_modul_5_ex1_part2_join_risk.PNG
 ---
-width: 100%
+width: 90%
 name: Attribute Table 
 ---
 Nomrlal
@@ -280,10 +280,10 @@ Nomrlal
 
 ```{figure} /fig/en_qgis_modul_5_ex1_part2_risklayer_attributetable.PNG
 ---
-width: 100%
+width: 70%
 name: Risk Layer Attribute Table normalized Scores
 ---
-Nomrlal
+Risk Layer Attribute Table normalized Scores
 ```
 
 6. Risk Calculation
@@ -300,7 +300,7 @@ $ risk=   \sqrt exposure  \times susceptibility $
 
 ```{figure} /fig/en_qgis_modul_5_ex1_part2_risk.PNG
 ---
-width: 100%
+width: 80%
 name: Calculate risk 
 ---
 Risk Calculation
@@ -330,7 +330,7 @@ Print Layout:
     
 ```{figure} /fig/en_qgis_mondul_5_ex1_possible_result.PNG
 ---
-width: 100%
+width: 90%
 name: Possible Map Result
 ---
 Possible Map Result
@@ -342,3 +342,6 @@ Possible Map Result
 
 HeiGIT has developed a a QGIS Risk Assessment Plugin in order to simplify this process and safe time.
 You can find more information about the risk methodology and the usage of the plugin [here](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_risk_assessment_plugin.html#risk-assessment-qgis-plugin).
+
+
+In order to try out the plugin and see the result, use the provided input data in your folder: "Modul_5_Ex1_Part_2\Input data\QGIS Plugin Risk Assessment\input"
