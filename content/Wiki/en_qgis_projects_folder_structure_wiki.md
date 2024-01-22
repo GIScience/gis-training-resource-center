@@ -4,6 +4,8 @@
 
 In this wiki article, best practices for the creation and management of QGIS projects and geodata is presented.
 
+__🔙[Back to Homepage](/content/intro.md)__
+
 ## Step-by-step: Setting up a new QGIS project from scratch
 
 ```{Tip}

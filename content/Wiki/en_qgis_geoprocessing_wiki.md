@@ -1,6 +1,10 @@
 # Geoprocessing
 
 🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+
+__🔙[Back to Homepage](/content/intro.md)__
+
+
 ## Buffer
 - Calculate a ![](/fig/mAlgorithmBuffer.png) `buffer` with a defined distance.
 - Dissolve: if 2 or more buffer areas overlap, they can be combined.

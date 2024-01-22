@@ -1,15 +1,15 @@
+# Geodata concept
+
 🚧 This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
-# Geodata concept
+
+__🔙[Back to Homepage](/content/intro.md)__
 
 **Competences:**
 * Projections
 * Layer concept
 * Vector and raster data (basic concepts)
 * Vector file formats
-
-
-
 
 
 ## Projections 

@@ -1,5 +1,7 @@
 # Exercises Modul 5- Intermediate GIS operations
 
+__🔙[Back to Homepage](/content/intro.md)__
+
 These exercises touch on all the content of Modul 5.
 
 ## Spatial Geodataprocessing
@@ -37,4 +39,7 @@ These exercises touch on all the content of Modul 5.
 
 These ecersises touch on all the content of Modul 3. 
 
-* __[](/content/Modul_5/):__ 
+* __[Trigger & Intervention Map for Forecast-based-Action](/content/Modul_5/en_qgis_modul_5_ex2.md):__ This exercise is based on the monitoring and triggering process used by the Somalia Red Cresent Society (SRCS) in the framework of a drought Early Action Protocol (EAP).
+Within this exercise, you will build a simplified version of the monitoring and trigger mechanism for the FEWSNET projection pillar. 
+
+*  __⚠️construction⚠️[Risk Assessment](/content/Modul_5/en_qgis_modul_5_ex1.md):__ 

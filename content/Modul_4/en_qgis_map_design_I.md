@@ -108,7 +108,7 @@ In the styling panel you can change the styling for all features of a layer, set
 - Symbology is applied to layers, but within the same layer we can assign multiple styles to features
 - the symbology of a layer can be __changed based on one of its attributes__
 
->different visualisation for different types of data (discrete vs. continuous values, insert image). For example the amount of rainfall/temperature is a continuous value. Which means that the 
+> To Do: add different visualisation for different types of data (discrete vs. continuous values, insert image). For example the amount of rainfall/temperature is a continuous value.
 
 ## Colours
 
@@ -126,7 +126,7 @@ Different types of colouring schemes
 
 When choosing colour gradients, a clear gradient from lighter to darker colours is the best most of the times as the gradation is easily distinguishable and translates well into black and white. In the figure below, example A and B are not ideal as it is difficult to make out the gradation and it does not translate into black and white. You can achieve a clear sequence by grading the __saturation__ of the colour gradient.
 
-``` {figure} ../../fig/de_colour_gradients_saturation.png
+```{figure} ../../fig/de_colour_gradients_saturation.png
 ---
 name: colour gradients saturation example
 width: 750px
@@ -174,9 +174,9 @@ width: 750px
 Symbolization for vector data; Source: White, T. (2017). Symbolization and the Visual Variables. *The Geographic Information Science & Technology Body of Knowledge (2nd Quarter 2017 Edition), John P. Wilson (ed.). DOI: 10.2222/gistbok/2017.2.3 
 ```
 
-In the dropdowns below you can find examples on how to set up common vector data styling. Make sure you have downloaded the Exercise XX data from the github repository if you wantto follow!
+In the dropdowns below you can find examples on how to set up common vector data styling.
 
->Link the files and github repository
+>To Do: Provide the example data for follow along
 
 :::{dropdown} Exercise: Only display the outlines of polygons
 
@@ -200,8 +200,6 @@ width: 500 px
 :::
 
 :::{dropdown} Change the styling for multiple overlayed layers
-
->This is exercise 7 in the PPP. Participants will need the specific data. 
 
 In this exercise, we will apply the same style to all features in a layer, but we will change multiple layers and overlay them so each is visible in a different style. We have the polygons for 3 administrative levels.
 
@@ -256,8 +254,6 @@ The styling of a vector data consists of the colour and the outline
 
 :::{dropdown} Use different styles in a single layer
 
->For this exercise, you must have convertet the excel-spreadsheet "ACLED_Nigeria_2022-2023" into a .csv-file. Read how you can do this [here](/gis-training-resource-center/content/Modul_2/en_qgis_basic_data_processing.html#delimited-text-import).  Check if the others have the same issue with importing the .csv file (excel export as csv delimits with ";" instead of ",". QGIS expects ",", if you replace all the ";" with "," the coordinates do not work any longer because the degree are delimited with a "," as well. You can fix it in VSC)
-
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_rule_based_styling
 .mp4"></video>
 
@@ -306,8 +302,6 @@ Regions affected by explosions in Nigeria
 :::{dropdown} Style data based on variable ranges (graduated styling)
 
 If a layer contains numeric values that are continuous, they can be organized in intervals. These intervals can be displayed in graduated colours. In this exercise, we assign colours to Adm1 polygons based on the total population of each State.
-
-> Don't forget to check that they have access to the data
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_graduated_styling
 .mp4"></video>
