@@ -40,7 +40,6 @@ Or by clicking `Layer`-> `Add Layer`-> `Add Vector Layer`: Click on the three do
 GeoPackages can contain multiple files and even whole QGIS projects. When you load such a file in QGIS a window will appear in which you have to select the files you want to load in your QGIS project.
 ```
 
-
 2. First have a look at the airport layer("Sierra_leone_infrastructure - hotosm_sle_airports_points"). Open the attribute table and sort the data. Delete empty columns. See the Wiki entry on the [Attribute table](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html) for further information.
 
 3. Add a base map to your map view using the Plugin `QuickMapServices` by clicking on the **QMS** symbol in you projct toolbar. Search for "Bing Maps Satellite Imagery" in the QMS panel and add the base map layer via double click.  For an optimized view adjust the opacity of your layers to optimise the use of the base map. [Tutorial video on how to do that](https://www.youtube.com/watch?v=WguUkN1YRzY&ab_channel=GISBigfootAnswers)
