@@ -261,15 +261,14 @@ We have used so far the following weighting scale:
 |0.75|Fairly Important|
 |1|Very Important|
 
-* In the attribute table of your layer we can calculate the weighted indicators for each normalized indicators, respectively. FOr this we have to follow the same steps as above: Open the `Field Calculator` by clicking on the button ![](/fig/mActionCalculateField.png), create a new field with the suffix "_weighted" and in the expression field.
+* In the attribute table of your layer we can calculate the weighted indicators for each normalized indicators, respectively. For this we have to follow the same steps as above: Open the `Field Calculator` by clicking on the button ![](/fig/mActionCalculateField.png), create a new field with the suffix "_weighted" and in the expression field.
 
 ```md
-    
 
-    "LandD_clas_norm" * 0.75
+"LandD_clas_norm" * 0.75
 
-    
-´´´
+```
+
 
 ```{figure} /fig/en_qgis_module_5_ex1_part2_weigthed.PNG
 ---
@@ -292,10 +291,13 @@ Attribute Table with "_norm" and "_weighted" indicators
 #### 4. Vulnerability Score / Index
 
 We are now ready to calculate the vulnerability score for each distrcit:
-* Open the attribute table -> open the `Field Calculator`![](/fig/mActionCalculateField.png) and creat a new field with the name "vulnerability_score" and field type "Decimal Numnber (real)". In the expression window sum up all weighted indicator values:
+* Open the attribute table -> open the `Field Calculator`![](/fig/mActionCalculateField.png) and create a new field with the name "vulnerability_score" and field type "Decimal Numnber (real)". In the expression window sum up all weighted indicator values:
 
->  ("LandD_clas_weigthed"  +  "perc_elderly_weighted"  +  "affunderfive_weighted") 3 
+```md
 
+("LandD_clas_weigthed"  +  "perc_elderly_weighted"  +  "affunderfive_weighted") / 3 
+
+```
 
 #### 5. Prepare Risk Assessment
 
