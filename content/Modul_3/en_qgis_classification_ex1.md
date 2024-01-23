@@ -1,4 +1,4 @@
-# Geodata Classification Exercise 1: Overview map of the prevalence of stunting in Sierra Leone
+# Geodata Classification Exercise 1: Overview map of the prevalence of food insecurity
 
 ### Aim of the exercise
 This exercise aims to create an overview map of the distribition of food insecurity in Sierra Leone at district level. To do this, we will visualise both the distribution of food insecurity and key infrastructure elements such as hospitals, airports and roads. 
