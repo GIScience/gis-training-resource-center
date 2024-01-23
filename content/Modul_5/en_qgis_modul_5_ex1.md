@@ -20,7 +20,7 @@ The first part of the exercise will prepare the data in order to serve as indica
 
 ## Data
 
-Download the data folder for the second part of the exercise: "Modul_5_Ex1_Part_1".
+Download the data folder for "Modul_5_Exercise2_Drought_Monitoring_Trigger.zip". In the folder, you can find two folders. One for the first part ("Modul_5_Ex1_Part_1") of the exercise and one for the second part ("Modul_5_Ex1_Part_2").
 
 
 Download all datasets and save the folder on your computer and unzip the file. The zip folder includes:
@@ -175,8 +175,7 @@ You can edit the names in 6 cases in the Attribute Table of the csv-file by togg
 ### Task
 In the second part of the exercise we will showcase the steps how to come from indicators to a risk analysis.
 
-Download the data folder for the second part of the exercise: "Modul_5_Ex1_Part_2".
-
+You can find all the data for the second part of the exercise in the "Modul_5_Ex1_Part_2".
 
 #### 1. Normalization
 
@@ -246,11 +245,13 @@ We have used so far the following weighting scale:
 * In the attribute table of your layer we can calculate the weighted indicators for each normalized indicators, respectively. FOr this we have to follow the same steps as above: Open the `Field Calculator` by clicking on the button ![](/fig/mActionCalculateField.png), create a new field with the suffix "_weighted" and in the expression field:
 
 ```md
-CASE
+    CASE
 
-"LandD_clas_norm" * m0.75
+    "LandD_clas_norm" * m0.75
 
-END
+    END
+´´´
+
 
 ```{figure} /fig/en_qgis_moudl_5_ex1_part2_weigthed.PNG
 ---
@@ -321,6 +322,7 @@ CASE
 sqrt("Susceptibility" * "exposure_norm")
 
 END
+```
 
 ```{figure} /fig/en_qgis_modul_5_ex1_part2_risk.PNG
 ---

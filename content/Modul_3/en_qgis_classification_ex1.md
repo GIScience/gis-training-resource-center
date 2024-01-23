@@ -36,7 +36,7 @@ Our goal is to produce an overview of the 2015 food insecurity situation in Sier
 3. Load the GeoPackages "Sierra_leone_borders.gpkg" and "Sierra_leone_infrastructure.gpkg" aswell as the shapefile "Sierra_leone_foodinsecurity_2015.shp" into your project via drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)). \
 Or by clicking `Layer`-> `Add Layer`-> `Add Vector Layer`: Click on the three dots ![](/fig/Three_points.png) and navigate to "Sierra_leone_borders.gpkg" in your file Browser. Select the file and click `Open`. Back in QGIS click `Add` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)).
 
-``` {Attention}
+```{Attention}
 GeoPackages can contain multiple files and even whole QGIS projects. When you load such a file in QGIS a window will appear in which you have to select the files you want to load in your QGIS project.
 ```
 
@@ -51,7 +51,6 @@ To add the plugin `OSM Place Search`, click on `Plugins` -> `Manage and Install 
     * In the panel, you can search for places on the OpenStreetMap by typing the name in the search bar. Often it makes sense to add additional information like the name of the country. Try for example “Bo, Sierra Leone”.
 
 ```{figure} /fig/mod3_classification_ex_OSMsearch.png
-
 ---
 width: 600px
 name: 
