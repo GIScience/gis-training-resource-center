@@ -11,6 +11,7 @@ In this exercise, you will go through the different steps requiring QGIS in orde
 In the context of the Forecast based Financing methodology the conduction of a robust risk assessment is a crucial step towards the development of an Early Action Protocol. A risk analysis serves to understand what kinds of disaster impacts can be expected from a particular type of hazard and to identify who and what is exposed and vulnerable to this hazard and why. By overlaying the information on exposure, vulnerability and lack of coping capacity, it will become clear which areas are predicted to be most severely impacted. These areas can then be targeted as priority areas for early action to ensure the most at-risk communities receive assistance before the event happens.
 The collection and processing of this information varies throughout different contexts but the calculation scheme to combine the information to a risk score remains consistent.
 
+Somalia is heaviliy exposed to droughts. We will showcase a risk assessment for a drought Early Action protocol.
 
 ## Part 1: Indicator Processing
 
@@ -20,7 +21,11 @@ The first part of the exercise will prepare the data in order to serve as indica
 
 ## Data
 
+<<<<<<< HEAD
 Download the data folder for "Modul_5_Exercise2_Drought_Monitoring_Trigger.zip" __[Here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Modul_5_Exercise1_Risk_Assessment/Modul_5_Exercise1_Risk_Assessment.zip)__. In the folder, you can find two folders. One for the first part ("Modul_5_Ex1_Part_1") of the exercise and one for the second part ("Modul_5_Ex1_Part_2").
+=======
+Download the data folder for the first part of the exercise: "Modul_5_Ex1_Part_1".
+>>>>>>> c8662df (hj)
 
 
 Download all datasets and save the folder on your computer and unzip the file. The zip folder includes:
@@ -54,7 +59,11 @@ name: count_points_polygon
 Count healthsites per district
 ```
 
+<<<<<<< HEAD
 4. Now we have the number of healthsites per district. Nevertheless, it would be interesting to know how mnay healthsites exist per 10.000 people. For this task we firstly need to know how many inhabitants has each district. We can proces this information by using the __Zonal statistics__ tool from the Processing Toolbox. See the Wiki entry for [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html?highlight=zonal+statistics#basic-raster-operations) fur further information. Specify your input layer (Output of step 3 e.g. __Num_healtsites__) and your raster layer (Worldpop Raster), specify the column prefix (e.g. ___wpop__) and select the statistics to caclulate (__sum__). For each distrcit all pixel values of the Worldpop Raster that fall inside of it will be summed up. Explore the output.
+=======
+4. Now we have the number of healthsites per district. Nevertheless, it would be interesting to know how many healthsites exist per 10.000 people. For this task we firstly need to know how many inhabitants has each district. We can proces this information by using the __Zonal statistics__ tool from the Processing Toolbox. See the Wiki entry for [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html?highlight=zonal+statistics#basic-raster-operations) fur further information. Specify your inout layer (Output of step 3 e.g. __Num_healtsites__) and your raster layer (Worldpop Raster), specify the column prefix (e.g. ___wpop__) and select the statistics to caclulate (__sum__). For each distrcit all pixel values of the Worldpop Raster that fall inside of it will be summed up. Explore the output.
+>>>>>>> c8662df (hj)
 
 
 
@@ -105,11 +114,11 @@ You will see that we can only download the information as image. This is a very 
 
 Explore the data. We have a column "LandD_CLas" which indicators the severity of land degradation from 0 to 3. We now want to join the respective land degradation class to its belongig district by considering the largest overlapping area.
 
-    *Open the tool `Join attributes by location` from the Processing Toolbox.
-    *define `Input Layer` (layer you want to enrich) and `Join Layer` (dataset with the additional information)
-    *select `ìnteresects` as geometric predicate and add only the `LandD_class` as field to add to our base layer.
-    *as `Join Type` set `Take attributes of the feature with largest overlap only (one-to-one)`
-    *Save as Layer
+* Open the tool `Join attributes by location` from the Processing Toolbox.
+* define `Input Layer` (layer you want to enrich) and `Join Layer` (dataset with the additional information)
+* select `ìnteresects` as geometric predicate and add only the `LandD_class` as field to add to our base layer.
+* as `Join Type` set `Take attributes of the feature with largest overlap only (one-to-one)`
+* Save as Layer
 
 See the Wiki entry [Spatial Joins ](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#spatial-joins) for further information.
 
@@ -176,7 +185,20 @@ You can edit the names in 6 cases in the Attribute Table of the csv-file by togg
 ### Task
 In the second part of the exercise we will showcase the steps how to come from indicators to a risk analysis.
 
+<<<<<<< HEAD
 You can find all the data for the second part of the exercise in the "Modul_5_Ex1_Part_2".
+=======
+Download the data folder for the second part of the exercise: "Modul_5_Ex1_Part_2". We prepared the vulnerabilty layer, simplified exposure and lack of coping capacity layers have been prepared for this exercise. Theses layer have only 3 to 4 indicators for complexity reasons. See below an example of indicators that were used for Somnalia:
+
+```{figure} /fig/Indicators_Rsik_Assessment_Somalia.png
+---
+width: 80%
+name: Indicators Risk Assessment
+---
+Indicators Risk Assessment
+```
+
+>>>>>>> c8662df (hj)
 
 #### 1. Normalization
 
@@ -277,7 +299,7 @@ Attribute Table with "_norm" and "_weighted" indicators
 We are now ready to calculate the vulnerability score for each distrcit:
 * Open the attribute table -> open the `Field Calculator`![](/fig/mActionCalculateField.png) and creat a new field with the name "vulnerability_score" and field type "Decimal Numnber (real)". In the expression window sum up all weighted indicator values:
 
->  ()"LandD_clas_weigthed"  +  "perc_elderly_weighted"  +  "affunderfive_weighted") 3 
+>  ("LandD_clas_weigthed"  +  "perc_elderly_weighted"  +  "affunderfive_weighted") 3 
 
 
 #### 5. Prepare Risk Assessment
@@ -290,9 +312,9 @@ In order to calculate the risk we have to bring our 3 dimension exposure, vulner
 ```{figure} /fig/en_qgis_modul_5_ex1_part2_join_risk.PNG
 ---
 width: 90%
-name: Attribute Table 
+name: Join Layers 
 ---
-Nomrlal
+Join Layers by Join Field
 ```
 * Right click on the layer -> `Export` -> `Save feature as` and save the layer as "risk" layer into your temp folder.
 * We will now work with the "risk" layer: Delete all fields but the normalized scores: Open the Attribute Table of your risk layer `Toggle editing mode `![](/fig/mActionToggleEditing.png) -> `Delete field` ![](/fig/mActionDeleteAttribute.png) and select all the indicator fields. In the end your layer look should like this:
