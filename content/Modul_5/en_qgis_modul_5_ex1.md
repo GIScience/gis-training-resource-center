@@ -188,7 +188,7 @@ In the second part of the exercise we will showcase the steps how to come from i
 
 
 You can find all the data for the second part of the exercise in the "Modul_5_Ex1_Part_2".
-Download the data folder for the second part of the exercise: "Modul_5_Ex1_Part_2". We prepared the vulnerabilty layer, simplified exposure and lack of coping capacity layers have been prepared for this exercise. Theses layer have only 3 to 4 indicators for complexity reasons. See below an example of indicators that were used for Somnalia:
+Download the data folder for the second part of the exercise: "Modul_5_Ex1_Part_2". We processed the vulnerabilty layer in the first part of the exercise; simplified exposure and lack of coping capacity layers have been prepared in advance for this exercise. These layers have only 3 to 4 indicators for complexity reasons. See below an example of indicators that were used for Somnlia:
 
 ```{figure} /fig/Indicators_Rsik_Assessment_Somalia.png
 ---
@@ -213,7 +213,7 @@ $ Normalized\ Value\ = \frac{value\ -\ min value}{max\ value \ - \ min } $
 * Now we will caclulate in the expression field the normalization of the indicator:
 
 ```md
-("LandD_Clas"  -  minimum(  "LandD_Clas" ))/( maximum(  "LandD_Clas") - minimum(  "LandD_Clas" ))
+("LandD_Clas" - minimum( "LandD_Clas" ))/( maximum( "LandD_Clas") - minimum( "LandD_Clas" ))
 ```
 * When you are done click ![](/fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by again clicking on ![](/fig/mActionToggleEditing.png)([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)).
 
@@ -357,7 +357,7 @@ Risk Calculation
 ```
 
 ```{Note}
-    The geometric mean is a specific type of average that is calculated by multiplying together all the values in a dataset and then taking the nth root of the product, where n is the number of values. For two values, the geometric mean is the square root of their product. For three values, it's the cube root, and so on.
+The geometric mean is a specific type of average that is calculated by multiplying together all the values in a dataset and then taking the nth root of the product, where n is the number of values. For two values, the geometric mean is the square root of their product. For three values, it's the cube root, and so on.
 ```
 #### 6. Visualization of the Results
 
