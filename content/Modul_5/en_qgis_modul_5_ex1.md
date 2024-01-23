@@ -75,19 +75,25 @@ Throughout the indicator processing process you will have several interim result
 ```
 
 5. Now we know the numbers of healthsites and the number of population per district. We are ready to caclulate our final indicator __Number of healthsites per 10.000 inhabitants. 
-    *Open the attribute table of “Num_healthsites_wpop” (Output of step 4) and Open the `Field Calculator` by clicking on the button ![](/fig/mActionCalculateField.png). By checkin the box for `Create a new field` we can conduct calculation and saving them right away in a new attribute column.
-    *define the output field name as "healthsites_10000" and set the `Type` to `Decimal Number(real)`.
-    *Now we will caclulate in the expression field the number of healthsites per 10.000 inhabitants:
-     > `("Num_healthsites"/"_wpopsum")*10000`
+* Open the attribute table of “Num_healthsites_wpop” (Output of step 4) and Open the `Field Calculator` by clicking on the button ![](/fig/mActionCalculateField.png). By checkin the box for `Create a new field` we can conduct calculation and saving them right away in a new attribute column.
+* define the output field name as "healthsites_10000" and set the `Type` to `Decimal Number(real)`.
+* Now we will caclulate in the expression field the number of healthsites per 10.000 inhabitants:
 
-     *When you are down click ![](/fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by again clicking on ![](/fig/mActionToggleEditing.png)([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)).
+```md
+
+("Num_healthsites"/"_wpopsum")*10000
+
+```
+    
+
+* When you are down click ![](/fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by again clicking on ![](/fig/mActionToggleEditing.png)([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)).
 
 ```{figure} /fig/en_qgis_modul_5_ex1_field_calc.PNG
 ---
-width: 100%
+width: 80%
 name: Field Calculator
 ---
-Calculate healthsites pero 10000 inhabitants
+Calculate healthsites per 10000 inhabitants
 ```
 
 
@@ -139,11 +145,11 @@ Explore the data. In which resolution is the data avalaible? Do you have ideas h
 
 *Save the Excel file as csv by clicking on `Save file as` and choosing `csv (delimiter-separated)`
 
-*Load the csv-file into you QGIS by drag and drop
-    *Open the tool `Join attributes by field value` from the Processing Toolbox
-    *specify our two datasets we want to join as well as the common field available for joining (`ADM2_EN` and `adm2name`)
-    *as `join type` set `Take attributes of the first matching feature only (one-to-one)`
-    *Save the Layer to File
+* Load the csv-file into you QGIS by drag and drop
+* Open the tool `Join attributes by field value` from the Processing Toolbox
+ * specify our two datasets we want to join as well as the common field available for joining (`ADM2_EN` and `adm2name`)
+* as `join type` set `Take attributes of the first matching feature only (one-to-one)`
+* Save the Layer to File
 
 ```{figure} /fig/en_qgis_modul_5_ex1_joinbyvalue.PNG
 ---
