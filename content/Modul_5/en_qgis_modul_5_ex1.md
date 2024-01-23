@@ -86,7 +86,7 @@ Calculate healthsites pero 10000 inhabitants
 ```
 
 
-6. Land Degradation
+#### 6. Land Degradation
 
 A very important factor of areas vulnerable to drought is the siuation with regards to land degradation. It is an important factor not only for agriculture but also livestock herds, both as main sources of livelihood. We will try to add this information to our dataset:
 
@@ -123,7 +123,7 @@ Join Attributes by Location
 ```
 
 
-7. Malnutrition
+#### 7. Malnutrition
 
 Another very important indicator to describe vulnerability in a district is the acute malnutirion, especially in children under 5 years old.
 
@@ -150,6 +150,9 @@ Join attributes by field value
 
 In the Log file you will get a message: "6 feature(s) from input layer could not be matched"
 
+``` {Attention}
+It can occur, that after the import of the csv. file the column headers of the attribute table are not correctly named (instead with "field 1", "field 2" etc.). The information which field is displayed can be located below the header in this case.
+```
 
 ```{figure} /fig/en_qgis_module_5_ex1_error.PNG
 ---
@@ -175,7 +178,7 @@ In the second part of the exercise we will showcase the steps how to come from i
 Download the data folder for the second part of the exercise: "Modul_5_Ex1_Part_2".
 
 
-1. Normalization
+#### 1. Normalization
 
 For further caclulations with the indicators we need to make them comparable. For this reason we normalize them to a range of 0-1.
 
@@ -187,7 +190,16 @@ $ Normalized\ Value\ = \frac{value\ -\ min value}{max\ value \ - \ min } $
 * define the output field name as "LandD_class_norm" and set the `Type` to `Decimal Number(real)`.
 * Now we will caclulate in the expression field the normalization of the indicator:
 
-     > ("LandD_Clas"  -  minimum(  "LandD_Clas" ))/( maximum(  "LandD_Clas") - minimum(  "LandD_Clas" ))
+```md
+CASE
+
+("LandD_Clas"  -  minimum( "LandD_Clas" ))/
+( maximum(  "LandD_Clas") - 
+minimum(  "LandD_Clas" ))
+
+END
+```
+
 
 * When you are done click ![](/fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by again clicking on ![](/fig/mActionToggleEditing.png)([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)).
 
@@ -202,7 +214,7 @@ Normalization of indicators
 * Repeat this step for the other indicators
 * For each indicator you have now the original column and the normalized column. 
 
-2. Directions 
+#### 2. Directions 
 
 The direction indicates if an indicator follows the predefined logic: “the higher the value, the worse the circumstances” meaning that higher values would result in a higher risk. The logic is adapted for all three dimensions, since it is generally logical to think about high values = high risk. If a respective indicator follows the logic the direction would be 1, if it does not, the direction would be = -1.
 * In order to understand the directions of our indicators we first have to addign them to one of the dimensions (exposure, vulnerability, coping capacity).
@@ -217,7 +229,7 @@ It is recommended to properly check the logic of each indicator. Often the indic
 ```
 
 
-3. Weighting of Indicators
+#### 3. Weighting of Indicators
 
 In the next step we can weight the indicators based on their relevance to our risk assessment. It is recommended to do surveys or workshops with the local staff in oder to find out the importance of the respective indicators.
 
@@ -231,9 +243,14 @@ We have used so far the following weighting scale:
 |0.75|Fairly Important|
 |1|Very Important|
 
-* In the attribute table of your layer we can calculate the weighted indicators for each normalized indicators, respectively. FOr this we have to follow the same steps as above: Open the `Field Calculator` by clicking on the button ![](/fig/mActionCalculateField.png), create a new field with the suffix "_weighted" and in the expression field.
+* In the attribute table of your layer we can calculate the weighted indicators for each normalized indicators, respectively. FOr this we have to follow the same steps as above: Open the `Field Calculator` by clicking on the button ![](/fig/mActionCalculateField.png), create a new field with the suffix "_weighted" and in the expression field:
 
+```md
+CASE
 
+"LandD_clas_norm" * m0.75
+
+END
 
 ```{figure} /fig/en_qgis_moudl_5_ex1_part2_weigthed.PNG
 ---
@@ -253,7 +270,7 @@ name: Attribute Table with "_norm" and "_weighted" indicators
 Attribute Table with "_norm" and "_weighted" indicators
 ```
 
-4. Vulnerability Score / Index
+#### 4. Vulnerability Score / Index
 
 We are now ready to calculate the vulnerability score for each distrcit:
 * Open the attribute table -> open the `Field Calculator`![](/fig/mActionCalculateField.png) and creat a new field with the name "vulnerability_score" and field type "Decimal Numnber (real)". In the expression window sum up all weighted indicator values:
@@ -261,7 +278,7 @@ We are now ready to calculate the vulnerability score for each distrcit:
 >  ()"LandD_clas_weigthed"  +  "perc_elderly_weighted"  +  "affunderfive_weighted") 3 
 
 
-5. Prepare Risk Assessment
+#### 5. Prepare Risk Assessment
 
 In order to calculate the risk we have to bring our 3 dimension exposure, vulnerability and coping capacity together.
 
@@ -286,7 +303,7 @@ name: Risk Layer Attribute Table normalized Scores
 Risk Layer Attribute Table normalized Scores
 ```
 
-6. Risk Calculation
+#### 6. Risk Calculation
 
 
 Finally, the risk is calculated by the geometric mean of the dimensions Exposure and Susceptibility, while Susceptibility is defined by the geometric mean of Vulnerability and the Lack of Coping Capacity. The geometric mean is chosen since it offers the advantage of rewarding balanced developments and equal reduction of deficits at all levels of the model:
@@ -297,6 +314,13 @@ $ risk=   \sqrt exposure  \times susceptibility $
 
 
 *  Open the Attribute table -> `Field Calculator`![](/fig/mActionCalculateField.png) and create a field "Susceptibility" and type in the formula. Do the same creating a field named "risk" and the respective expression.
+
+```md
+CASE
+
+sqrt("Susceptibility" * "exposure_norm")
+
+END
 
 ```{figure} /fig/en_qgis_modul_5_ex1_part2_risk.PNG
 ---
@@ -309,7 +333,7 @@ Risk Calculation
 ```{Note}
     The geometric mean is a specific type of average that is calculated by multiplying together all the values in a dataset and then taking the nth root of the product, where n is the number of values. For two values, the geometric mean is the square root of their product. For three values, it's the cube root, and so on.
 ```
-6. Visualization of the Results
+#### 6. Visualization of the Results
 
 
 * Right cklick on the “risk” layer -> `Properties` -> `Symbology`
@@ -338,7 +362,7 @@ Possible Map Result
     
 
 
-7. Automatization of the Process
+#### 7. Automatization of the Process
 
 HeiGIT has developed a a QGIS Risk Assessment Plugin in order to simplify this process and safe time.
 You can find more information about the risk methodology and the usage of the plugin [here](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_risk_assessment_plugin.html#risk-assessment-qgis-plugin).
