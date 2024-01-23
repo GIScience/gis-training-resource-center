@@ -323,7 +323,7 @@ END
 ```
 6.  When you are down click ![](/fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by again clicking on ![](/fig/mActionToggleEditing.png)([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)). 
 
-## Step 8: Calculation of Population Proportion per Intersection Polygon
+## Step 7: Calculation of Population Proportion per Intersection Polygon
 
 __Purpose:__ In this step we calculating the [IPC-Population Weighted Index](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_drought_trigger_somalia.html#ipc-population-weighted-index) for every small part of the polygon layer. 
 
@@ -356,7 +356,7 @@ __Result:__ The layer “ML1_zonal_statistic”  should now have the column “I
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_TRigger_step_8_field_calculator.mp4"></video>
 ```
 
-### Step 9: Calculate IPC Index per District
+### Step 8: Calculate IPC Index per District
 
 __Purpose:__ The purpose of this step is to calculate a population-weighted mean over the IPC classes per district. In this way, the amount of people living in a certain IPC class will be given more importance than just the area affected by a certain IPC class. The result is an IPC Index value for each district.
 
@@ -371,7 +371,7 @@ __Tool:__ `Join attribute by location (summary)`
 * - 1. In the `Toolbox`-> Search for `Join attribute by location (summary)`
       * Tip: If the `Toolbox` is not opne click `Processing`-> `Toolbox` 
     2. `Input Layer`: Select your “district_pop_som” layer
-    3. `Input Layer 2`: Select “ML1_join” 
+    3. `Input Layer 2`: Select “ML1_zonal_statistic"
     4. `Geometric predicate`: Select “Intersection”
     5. `Field to summarise`: Select “Index_per_IPCPolygon_ML1” 
     6. `Summaries to calculate`: Chose only the option “mean”
@@ -392,7 +392,7 @@ __Result:__ As a result, your layer "ML1_IPC_Index"  should have the column “I
 ```{dropdown} Video: Calculate IPC Index per District
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_9_join_location.mp4"></video>
 ```
-### Step 10: Evaluate Trigger Activation 
+### Step 9: Evaluate Trigger Activation 
 
 __Purpose:__ The purpose of this step is to gain a quick overview of possible trigger activation without having to revise the actual data. Instead we will have a binary column with trigger = yes or trigger=no values.
 
@@ -436,7 +436,7 @@ align: center
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_13_trigger_activation.mp4"></video>
 ```
 
-### Step 11.: Visualisation of results
+### Step 10.: Visualisation of results
 
 __Purpose:__ Definition of how features are represented visually on the map.
 
@@ -510,7 +510,7 @@ __Administrative 2 Boundaries (Regions)__
 Remember the [layer concept](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_geodata_concept.html?highlight=layer#layer-concept) and make sure the basemap layer is at the bottom of your layers panel.
 ```
 
-### Step 12: Making print map
+### Step 11: Making print map
 
 __Purpose:__ Viualization of the map features in a printable map layout
 
