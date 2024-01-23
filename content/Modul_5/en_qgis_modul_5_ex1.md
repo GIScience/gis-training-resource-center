@@ -20,13 +20,14 @@ The first part of the exercise will prepare the data in order to serve as indica
 
 ## Data
 
-Download the data folder for "Modul_5_Exercise2_Drought_Monitoring_Trigger.zip". In the folder, you can find two folders. One for the first part ("Modul_5_Ex1_Part_1") of the exercise and one for the second part ("Modul_5_Ex1_Part_2").
+Download the data folder for "Modul_5_Exercise2_Drought_Monitoring_Trigger.zip" __[Here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Modul_5_Exercise1_Risk_Assessment/Modul_5_Exercise1_Risk_Assessment.zip)__. In the folder, you can find two folders. One for the first part ("Modul_5_Ex1_Part_1") of the exercise and one for the second part ("Modul_5_Ex1_Part_2").
 
 
 Download all datasets and save the folder on your computer and unzip the file. The zip folder includes:
 - `som_admbnda_adm2_ocha_20230308.shp`: [Somalia district boundaries (Admin level 2)](https://data.humdata.org/dataset/cod-ab-som)
 - `WHO_health_sites.shp`: [Healthsites Somalia](https://data.humdata.org/dataset/somalia-health-facilities-data )
 - `som_ppp_2020_UNadj_constrained.tif` : [Worldpop Population Counts Somalia ](https://hub.worldpop.org/geodata/summary?id=28892)
+- `omalia_malnutrion_district_2022_2023.xlsx`:[Somalia: Acute Malnutrition](https://data.humdata.org/dataset/somalia-acute-malnutrition-burden-and-prevalence?)
 
 ```{Hint}
 All files still have their original names. However, feel free to modify their names if necessary to identify them more easily.
@@ -53,7 +54,7 @@ name: count_points_polygon
 Count healthsites per district
 ```
 
-4. Now we have the number of healthsites per district. Nevertheless, it would be interesting to know how mnay healthsites exist per 10.000 people. For this task we firstly need to know how many inhabitants has each district. We can proces this information by using the __Zonal statistics__ tool from the Processing Toolbox. See the Wiki entry for [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html?highlight=zonal+statistics#basic-raster-operations) fur further information. Specify your inout layer (Output of step 3 e.g. __Num_healtsites__) and your raster layer (Worldpop Raster), specify the column prefix (e.g. ___wpop__) and select the statistics to caclulate (__sum__). For each distrcit all pixel values of the Worldpop Raster that fall inside of it will be summed up. Explore the output.
+4. Now we have the number of healthsites per district. Nevertheless, it would be interesting to know how mnay healthsites exist per 10.000 people. For this task we firstly need to know how many inhabitants has each district. We can proces this information by using the __Zonal statistics__ tool from the Processing Toolbox. See the Wiki entry for [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html?highlight=zonal+statistics#basic-raster-operations) fur further information. Specify your input layer (Output of step 3 e.g. __Num_healtsites__) and your raster layer (Worldpop Raster), specify the column prefix (e.g. ___wpop__) and select the statistics to caclulate (__sum__). For each distrcit all pixel values of the Worldpop Raster that fall inside of it will be summed up. Explore the output.
 
 
 
