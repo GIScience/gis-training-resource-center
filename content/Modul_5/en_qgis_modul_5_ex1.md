@@ -21,18 +21,17 @@ The first part of the exercise will prepare the data in order to serve as indica
 
 ## Data
 
-<<<<<<< HEAD
+
 Download the data folder for "Modul_5_Exercise2_Drought_Monitoring_Trigger.zip" __[Here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Modul_5_Exercise1_Risk_Assessment/Modul_5_Exercise1_Risk_Assessment.zip)__. In the folder, you can find two folders. One for the first part ("Modul_5_Ex1_Part_1") of the exercise and one for the second part ("Modul_5_Ex1_Part_2").
-=======
+
 Download the data folder for the first part of the exercise: "Modul_5_Ex1_Part_1".
->>>>>>> c8662df (hj)
 
 
 Download all datasets and save the folder on your computer and unzip the file. The zip folder includes:
 - `som_admbnda_adm2_ocha_20230308.shp`: [Somalia district boundaries (Admin level 2)](https://data.humdata.org/dataset/cod-ab-som)
 - `WHO_health_sites.shp`: [Healthsites Somalia](https://data.humdata.org/dataset/somalia-health-facilities-data )
 - `som_ppp_2020_UNadj_constrained.tif` : [Worldpop Population Counts Somalia ](https://hub.worldpop.org/geodata/summary?id=28892)
-- `omalia_malnutrion_district_2022_2023.xlsx`:[Somalia: Acute Malnutrition](https://data.humdata.org/dataset/somalia-acute-malnutrition-burden-and-prevalence?)
+- `Somalia_malnutrion_district_2022_2023.xlsx`:[Somalia: Acute Malnutrition](https://data.humdata.org/dataset/somalia-acute-malnutrition-burden-and-prevalence?)
 
 ```{Hint}
 All files still have their original names. However, feel free to modify their names if necessary to identify them more easily.
@@ -59,11 +58,7 @@ name: count_points_polygon
 Count healthsites per district
 ```
 
-<<<<<<< HEAD
-4. Now we have the number of healthsites per district. Nevertheless, it would be interesting to know how mnay healthsites exist per 10.000 people. For this task we firstly need to know how many inhabitants has each district. We can proces this information by using the __Zonal statistics__ tool from the Processing Toolbox. See the Wiki entry for [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html?highlight=zonal+statistics#basic-raster-operations) fur further information. Specify your input layer (Output of step 3 e.g. __Num_healtsites__) and your raster layer (Worldpop Raster), specify the column prefix (e.g. ___wpop__) and select the statistics to caclulate (__sum__). For each distrcit all pixel values of the Worldpop Raster that fall inside of it will be summed up. Explore the output.
-=======
-4. Now we have the number of healthsites per district. Nevertheless, it would be interesting to know how many healthsites exist per 10.000 people. For this task we firstly need to know how many inhabitants has each district. We can proces this information by using the __Zonal statistics__ tool from the Processing Toolbox. See the Wiki entry for [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html?highlight=zonal+statistics#basic-raster-operations) fur further information. Specify your inout layer (Output of step 3 e.g. __Num_healtsites__) and your raster layer (Worldpop Raster), specify the column prefix (e.g. ___wpop__) and select the statistics to caclulate (__sum__). For each distrcit all pixel values of the Worldpop Raster that fall inside of it will be summed up. Explore the output.
->>>>>>> c8662df (hj)
+4. Now we have the number of healthsites per district. Nevertheless, it would be interesting to know how many healthsites exist per 10.000 people. For this task we firstly need to know how many inhabitants has each district. We can proces this information by using the __Zonal statistics__ tool from the Processing Toolbox. See the Wiki entry for [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html?highlight=zonal+statistics#basic-raster-operations) for further information. Specify your inout layer (Output of step 3 e.g. __Num_healtsites__) and your raster layer (Worldpop Raster), specify the column prefix (e.g. ___wpop__) and select the statistics to caclulate (__sum__). For each distrcit all pixel values of the Worldpop Raster that fall inside of it will be summed up. Explore the output.
 
 
 
@@ -185,9 +180,8 @@ You can edit the names in 6 cases in the Attribute Table of the csv-file by togg
 ### Task
 In the second part of the exercise we will showcase the steps how to come from indicators to a risk analysis.
 
-<<<<<<< HEAD
+
 You can find all the data for the second part of the exercise in the "Modul_5_Ex1_Part_2".
-=======
 Download the data folder for the second part of the exercise: "Modul_5_Ex1_Part_2". We prepared the vulnerabilty layer, simplified exposure and lack of coping capacity layers have been prepared for this exercise. Theses layer have only 3 to 4 indicators for complexity reasons. See below an example of indicators that were used for Somnalia:
 
 ```{figure} /fig/Indicators_Rsik_Assessment_Somalia.png
@@ -198,7 +192,7 @@ name: Indicators Risk Assessment
 Indicators Risk Assessment
 ```
 
->>>>>>> c8662df (hj)
+
 
 #### 1. Normalization
 
@@ -213,16 +207,8 @@ $ Normalized\ Value\ = \frac{value\ -\ min value}{max\ value \ - \ min } $
 * Now we will caclulate in the expression field the normalization of the indicator:
 
 ```md
-CASE
-
-("LandD_Clas"  -  minimum( "LandD_Clas" ))/
-( maximum(  "LandD_Clas") - 
-minimum(  "LandD_Clas" ))
-
-END
+("LandD_Clas"  -  minimum(  "LandD_Clas" ))/( maximum(  "LandD_Clas") - minimum(  "LandD_Clas" ))
 ```
-
-
 * When you are done click ![](/fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by again clicking on ![](/fig/mActionToggleEditing.png)([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)).
 
 ```{figure} /fig/en_qgis_modul_5_ex1_Part2_normalization.PNG
@@ -239,10 +225,20 @@ Normalization of indicators
 #### 2. Directions 
 
 The direction indicates if an indicator follows the predefined logic: “the higher the value, the worse the circumstances” meaning that higher values would result in a higher risk. The logic is adapted for all three dimensions, since it is generally logical to think about high values = high risk. If a respective indicator follows the logic the direction would be 1, if it does not, the direction would be = -1.
-* In order to understand the directions of our indicators we first have to addign them to one of the dimensions (exposure, vulnerability, coping capacity).
+* In order to understand the directions of our indicators we first have to assign them to one of the dimensions (exposure, vulnerability, coping capacity).
 * To which dimension would you assign the processed indicators and what are their direction?
 
 Depending on the direction the next step will vary:
+
+If the __direction is 1__ (indicating a positive weight), the formula is straightforward:
+
+$ weighted=   value  \times weight $
+
+If the __direction is -1__ (indicating a negative weight), the formula adjusts the value by subtracting it from 1 before applying the weight:
+
+$ weighted=   (1 - value)  \times weight $
+
+The second formula inverts the value $(1 - value)$ before applying the weight, resulting in a different calculation for variables with negative weights.
 
  We will not go further into this in this training but you can find more information [here](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_risk_assessment_plugin.html#risk).
 
@@ -265,18 +261,17 @@ We have used so far the following weighting scale:
 |0.75|Fairly Important|
 |1|Very Important|
 
-* In the attribute table of your layer we can calculate the weighted indicators for each normalized indicators, respectively. FOr this we have to follow the same steps as above: Open the `Field Calculator` by clicking on the button ![](/fig/mActionCalculateField.png), create a new field with the suffix "_weighted" and in the expression field:
+* In the attribute table of your layer we can calculate the weighted indicators for each normalized indicators, respectively. FOr this we have to follow the same steps as above: Open the `Field Calculator` by clicking on the button ![](/fig/mActionCalculateField.png), create a new field with the suffix "_weighted" and in the expression field.
 
 ```md
-    CASE
+    
 
-    "LandD_clas_norm" * m0.75
+    "LandD_clas_norm" * 0.75
 
-    END
+    
 ´´´
 
-
-```{figure} /fig/en_qgis_moudl_5_ex1_part2_weigthed.PNG
+```{figure} /fig/en_qgis_module_5_ex1_part2_weigthed.PNG
 ---
 width: 80%
 name: Add new field to weight indicators
@@ -340,11 +335,9 @@ $ risk=   \sqrt exposure  \times susceptibility $
 *  Open the Attribute table -> `Field Calculator`![](/fig/mActionCalculateField.png) and create a field "Susceptibility" and type in the formula. Do the same creating a field named "risk" and the respective expression.
 
 ```md
-CASE
 
 sqrt("Susceptibility" * "exposure_norm")
 
-END
 ```
 
 ```{figure} /fig/en_qgis_modul_5_ex1_part2_risk.PNG
