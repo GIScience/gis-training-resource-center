@@ -1,61 +1,124 @@
-# Geodata Classification Exercise 1: Overview map of the prevalence of stunting in Sierra Leone
+# Geodata Classification Exercise 1: Overview map of the prevalence of food insecurity
 
 ### Aim of the exercise
-This exercise aims to create an overview map of the prevalence of stunting in Sierra Leone at district level. To do this, we will visualise both the prevalence of stunting and key infrastructure such as hospitals, airports and roads. The decision on which data to visualise and how to present it is up to you, the cartographer.
+This exercise aims to create an overview map of the distribition of food insecurity in Sierra Leone at district level. To do this, we will visualise both the distribution of food insecurity and key infrastructure elements such as hospitals, airports and roads. 
 
-### Links to Wiki articles
-will be done when Wiki is finished
+### Relevant WIki Articles
+
+* [QGIS Interface](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
+* [Types of Geodata](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_types_wiki.html)
+* [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)
+* [Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html)
+* [Attribute table](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html)
+* [Table function - Add field](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#add-field)
+* [Geodata Classification- Categorized](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html)
+* [Geodata Classification- Graduated](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html)
+* [Digitization- Point data](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#add-geometries-to-a-layer)
+
 
 ### Data
-Download all datasets and save the folder on your computer and unzip the file. The zip folder includes:
-- `Sierra_leone_prevalence_of_stunting_2014.shp` (data is modified) (Polygon)
+Download all datasets **HERE** and save the folder on your computer. Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects. Under data > input you find the following files:
+- `Sierra_leone_foodinsecurity_2015.shp` (Polygon)
 - `Sierra_leone_borders.gpkg` (MultiLineString) GeoPackage
-    - Sierra Leone national boders (Lines)
-    - Sierra Leone provinces (Lines)
+    - Sierra_Leone_national_borders (Lines)
+    - Sierra_Leone_provinces (Lines)
 - `Sierra_leone_infrastructure.gpkg` (MultiLineString/Points) GeoPackage
-    - Sierra Leone health (Points)
-    - Sierra Leone airports (Points)
-    - Optional: Sierra Leone roads (Lines)
+    - Sierra_Leone_health (Points)
+    - Sierra_Leone_airports (Points)
+    - Sierra_Leone_roads (Lines)
 
 ### Tasks
-1. Open from the geopackages the layers national borders and provinces (`Sierra_leone_borders.gpkg`) and the airports (`Sierra_leone_infrastructure.gpkg`) in QGIS.
+Our goal is to produce an overview of the 2015 food insecurity situation in Sierra Leone together with the display of main infrastructure elements. To achieve this we will visualize the classification of total food insecurity together with airports, hospitals and primary roads in a map.
 
-2. Have a look at the airport layer. Open the attribute table and sort the data. Delete empty columns. See the Wiki entry on the __Attribute table__ for further information.
+1. Open QGIS and create a [new project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`
+2. Once the project is created save the project in the “project” folder of the “Ex_Sierra_Leone_foodinsecurity”. To do that click on `Project` -> `Save as` and navigate to the folder. Name the project “Sierra_Leone_foodinsecurity”.
 
-3. Add a base map to your map view using the Plugin `QuickMapServices`. Adjust the opacity of your layers to optimise the use of the base map. [Tutorial video on how to do that](https://www.youtube.com/watch?v=WguUkN1YRzY&ab_channel=GISBigfootAnswers)
+3. Load the GeoPackages "Sierra_leone_borders.gpkg" and "Sierra_leone_infrastructure.gpkg" aswell as the shapefile "Sierra_leone_foodinsecurity_2015.shp" into your project via drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)). \
+Or by clicking `Layer`-> `Add Layer`-> `Add Vector Layer`: Click on the three dots ![](/fig/Three_points.png) and navigate to "Sierra_leone_borders.gpkg" in your file Browser. Select the file and click `Open`. Back in QGIS click `Add` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)).
 
-4. Zoom to Tongo Airport by right-clicking on the row in the attribute table and selecting `Zoom to Feature`. Then, check the Bing satellite imagery using the QuickMapServices tool. Do you think the airstrip is still operational? The answer is no according to wikipedia. Delete Tongo Airport in the attribute table. Also, delete Kabal airport since it is also not operational.
-
-5. Now check out the cities of Bo and Kenema. Are these airstrips in better shape? If yes, add them to the airport layer. See the Wiki entry on __Digitalisation__ for further information.
-
-6. Create a new column `Runway_length` and at the length of the runways of Bo and Kenema.
-
-7. Load the vector layer `Sierra_leone_prevalence_of_stunting_2014.shp` into QGIS.
-
-8. Classify the stunting data and adjust the colouring. See the Wiki entry on __Classification__ for further information.
-
-9. (Optional) Also load the health layer from the `Sierra_leone_infrastructure.gpkg` into QGIS. Classify the health layer to only show hospitals. 
-
-```{figure} /fig/en_Symbols_health_exercise_classification.png
----
-width: 30%
-name: en_Symbols_health_exercise_classification
----
-How to classify the health layer to just display the hospitals
+```{Attention}
+GeoPackages can contain multiple files and even whole QGIS projects. When you load such a file in QGIS a window will appear in which you have to select the files you want to load in your QGIS project.
 ```
 
-10. Choose the symbology and colours for borders, roads, hospitals and airports that you think are suitable. See the Wiki entry on __Styling__ for further information.
+2. First have a look at the airport layer("Sierra_leone_infrastructure - hotosm_sle_airports_points"). Open the attribute table and sort the data. Delete empty columns. See the Wiki entry on the [Attribute table](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html) for further information.
 
-11. (Optional) Now add the roads layer from the `Sierra_leone_infrastructure.gpkg` to QGIS. Classify the roads with the column `highway`. Choose which roads and paths you want to visualise and create a suitable symbology.
+3. Add a base map to your map view using the Plugin `QuickMapServices` by clicking on the **QMS** symbol in you projct toolbar. Search for "Bing Maps Satellite Imagery" in the QMS panel and add the base map layer via double click.  For an optimized view adjust the opacity of your layers to optimise the use of the base map. [Tutorial video on how to do that](https://www.youtube.com/watch?v=WguUkN1YRzY&ab_channel=GISBigfootAnswers)
 
-12. Create a print layout and add important map features like title, sources, scales, legend and North arrow. See the Wiki entry on __Map design__ for further information.
+4. Using  the attribute table of the airports layer zoom to Tongo Airport by right-clicking on the row in the attribute table and selecting `Zoom to Feature`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature)). Check the Basemap. Do you think the airstrip is still operational? The answer is no according to Wikipedia. Delete Tongo Airport in the [Attribute table](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html). Delete Kabala airport too, since it is also not operational anymore.
 
-13. Export your map as a PDF file.
+5. Now we want to check out the airports of the cities of Bo and Kenema. Are these airstrips in better shape? If yes, add them to the airport layer. To find these cities on your map interface use the QGIS Plugin `OSM Place Search`. 
+To add the plugin `OSM Place Search`, click on `Plugins` -> `Manage and Install Plugins…` -> `All` and search for `OSM Place Search`. Once you have found it click on it and click `Install Plugin`. You can open the `OSM Place Search Panel` like every other panel by clicking on `View` -> `Panels` and checking `OSM Place Search Panel`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html#installation-of-plugins)).
+    * In the panel, you can search for places on the OpenStreetMap by typing the name in the search bar. Often it makes sense to add additional information like the name of the country. Try for example “Bo, Sierra Leone”.
 
-```{figure} /fig/en_result_classification_exercise.png
+```{figure} /fig/mod3_classification_ex_OSMsearch.png
 ---
-width: 100%
-name: en_result_classification_exercise
+width: 600px
+name: 
+align: center
 ---
-This is how your output could look like in the end
+```
+
+Add the airports of Bo and Kenema as points to the layer `Sierra_leone_infrastructure - hotosm_sle_airports_points`. Find help on the addition of features to a point layer [here](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.md) 
+ 
+
+6. Optional: In the attribute table create a new column `Runway_length` and add the length of the runways of Bo and Kenema by measuring them approximately with the **measuring tool** measuring tool.
+
+8. Now we want to create a intutive visualization of the differences in food insecurity. To achieve this we use the "[Graduated Classification](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html)" visualization option for the layer `Sierra_leone_foodinsecurity_2015` by displaying the polygons according to classes created based on the "Total_FI" column in the attribute table.
+    * Right-click on the layer `Sierra_leone_foodinsecurity_2015.shp` in the `Layer Panel` -> `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
+    * In the topmost drobdown menu choose `Graduated`. Under `Value` select “Total_FI”.
+    * Further down the window click on `Classify`. You now should see multiple classes based on the value range of the "TotalFI" column represented with different colours.  You can adjust the colours by picking different colour palettes in the drop down menu "Color ramp". ALso, you can modify the value distribution of the classes by selecting different classification modes **WIKI** in the "mode" dropdown menu. Play around with these options to achieve a visualisation that suits the display of the values. Once you are done, click `Apply` and `OK` to close the symbology window.
+
+```{figure} /fig/mod3_classification_ex_Graduatedclassification.png
+---
+width: 900px
+name: basic classification
+align: center
+---
+```
+
+9. To give the hospitals and airports a more distinctive visualization again open the `Symbology` tab and choose "Topology" in the dropdown menu above the bottom panel top panel. Search for the airport/hospital symbol and select it by clicking on it. Again apply your changes by clicking `Apply` and `OK`.
+
+```{figure} /fig/mod3_classification_ex_Topology.png
+---
+width: 900px
+name: basic classification
+align: center
+---
+```
+
+10. As a last visualisation step open the `Symbology` tab `Sierra_Leone_roads (Lines)` and like in step 7 open the top dropdown menu. Now instead of `Graduated` choose [Categorized Classification](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html) and select "highway" in the `Value` menu. Click `Classify` to get a classification with individual colours for al unique values of the "highway" column. In the squares next to the classes deselect all classes except for "primary". You can change the colour of the classes by selecting them via click and adjusting the colour in the drop "Symbol" dropdown menu near the top of the window.
+
+```{figure} /fig/mod3_classification_ex_Cetegorizedclassification.png
+---
+width: 900px
+name: basic classification
+align: center
+---
+```
+
+
+11. Turn all the layers you loaded into your project to visible and arrange them in an order that is suitable for a good visualization of the food insecurity as well as the infrastructure elements. Choose a basemap that you think is suitable. Your final result could look like this:
+
+```{figure} /fig/mod3_classification_ex_Result.png
+---
+width: 900px
+name: basic classification
+align: center
+---
+```
+
+The layer order here from top to bottom is:
+- `Sierra_Leone_health` 
+- `Sierra_Leone_airports`
+- `Sierra_Leone_roads` 
+- `Sierra_Leone_national_borders` 
+- `Sierra_leone_foodinsecurity_2015`
+- Basemap: `OpenTreet Map`
+
+```{figure} /fig/mod3_classification_ex_LayerOrder.png
+---
+width: 900px
+name: basic classification
+align: center
+---
 ```
