@@ -1,0 +1,54 @@
+# QGIS common errors and issues
+
+Here we are collecting common QGIS errors and issues as general QGIS training support.
+
+## Common QGIS errors
+
+(Alphabetisch sortieren?)
+
+- Different QGIS Versions
+  - main items
+- Missing Processing Tools in the Panels Tool and the Vector Tab.
+  - Solution: (via image)
+
+## QGIS training support
+
+(Nach Kapiteln sortieren?)
+
+### (Modul 1 - Introducing QGIS)
+#### (Understanding the Interface Exercise:)
+
+### Modul 2 - Working with Geodata
+#### Geodata Concept Exercise: 
+#### Basic Geodata processing Exercise:
+#### Data resources Exercise:
+#### The World Exercise:
+
+### Modul 3 - Basic GIS operations
+#### Digitization Exercise 1:
+#### Digitization Exercise 2:
+#### Geodata Classification Exercise: 
+#### Geodata Selection and Queries Exercise: 
+#### Nigeria Floods Exercise:
+Mir hat manchmal gefehlt, dass jetzt z. B. die Atributtabelle des Layers gemeint ist und nicht die PDF-Tabelle als es um das PDF mit den von der Flut betroffenen Gebieten ging. Auch wie der erwähnte Punktlayer auf der Karte aussieht, könnte man z. B. noch ergänzen.
+
+### Modul 4 - Representation
+#### Visualization Exercise:
+#### (Ghana) Map making Exercise:  
+
+- North arrow not syncing with the corresponding map
+- Solution: (via image)
+
+### Modul 5 - Intermediate GIS operation
+#### Healthsite distribution in Saint Louis region Exercise:
+#### Calculate vulnerability index Exercise:
+#### Disaster effects in different regions of Senegal Exercise:
+#### Calculate vulnerability index Exercise:
+#### Risk assessment -  Calculate vulnerability index Exercise: 
+#### Risk assessment - Risk calculation Exercise:
+#### Trigger & Intervention Map for Forecast-based-Action Exercise:
+Bei Textaufteilung der Übung den Hinweis auf das Coding etwas früher setzen, damit man ihn nicht übersieht oder "vergisst".
+Es gibt in der Toolbox zwei Varianten von Join attributes by location  falsche Variante ausgewählt, am besten hier deshalb einen Hinweis geben. Bei der Tabellenkonvertierung in csv muss man auch beachten, ob man für Mac oder Win-Rechner konvertiert und dass ein Mehrfeld-Excel nur einfach ausgelesen wird (Hinweis wird gegeben).
+
+### Modul 6 - Data analysis with QGIS - Exercise:
+### (Modul 9 - Network Analysis in QGIS)
