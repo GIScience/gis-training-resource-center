@@ -14,16 +14,15 @@ The plugin automatically calculates the risk based on the exposure, susceptibili
 The use of the plugin requires Python pandas to be installed on your system.
 You can check in QGIS directly if you have it installed or not:
 
-1. Open the Python Console in QGIS
+__Open the Python Console in QGIS__
 
-        - Launch QGIS
-        - In the menu bar click on Plugins
-        - Select Python Console
+1. Launch QGIS
+2. In the menu bar click on Plugins
+3. Select Python Console
 
-2. Check if Pandas is installed
+__Check if Pandas is installed__
 
-        - In the Python Console type the following command and press ENTER:
-        Import pandas
+1. In the Python Console type the following command and press ENTER:`       Import pandas`
 
 
 If the library is installed, this command will execute without error, and you won’t see any error messages.
@@ -143,8 +142,7 @@ The column name must be given the appropriate prefix (vul_, cop_, exp_) dependin
 A "csv"-file containing a column "variable_name" with all the column names of the previous "csv"-files, that are to be divided by population.
 
 
-```
-{figure} /fig/transfrom_example.png
+```{figure} /fig/transfrom_example.png
 ---
 height: 400px
 name: transfrom_example
