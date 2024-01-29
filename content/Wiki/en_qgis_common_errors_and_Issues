@@ -9,11 +9,60 @@ Here we are collecting common QGIS errors and issues as general QGIS training su
 - Different QGIS Versions
   - Main items
 
+- A layer is not displayed in QGIS. 
+
+  - Solution: 
+  Right click on the corresponding layer and activate the *Zoom to layer* function in the pop-up window. 
+
+```{figure} /fig/en_layer_display.png
+---
+width: 75%
+name: en_layer_display
+---
+Screenshot of Zoom to Layer function
+```
+- A layer window has disappeared in QGIS.
+
+  - Solution:
+
+ Open in the main tab *View*, in the pop-up window select *Panels* and in the sub-window activate *Browser*.   
+
+```{figure} /fig/en_closed_layer_view.png
+---
+width: 75%
+name: en_closed_layer_view
+---
+Screenshot of Closed Layer View
+```
+
+- Layers that should actually be in the same position are not on top of each other.
+
+  - Solution:
+
+These sort of problems are usually due to a) mismatching KBS in layers and project, or b) an incorrect reprojection. 
+
+ a) First check the layer properties (right-click on the corresponding layer, select in the pop-up window *Properties*, in the next pop-up-window select *Information* and check which projection is defined there under the entry *Coordinate Reference System (CRS)* and additionally in the status bar at the bottom right which project KBS/CRS is set there. Then correct any discrepancies by reprojecting the layers or changing the setting of the KBS/CRS project. 
+
+b) When reprojecting, follow exactly the procedure described in the Wiki under Projections (ergänzen). Errors often occur if KBS is set and no reprojection tool is used. If you suspect that your reprojection has gone wrong, delete all affected layers from GIS, reload the data and then reproject. 
+
+
+```{figure} /fig/en_CRS_projection_check.png
+---
+width: 75%
+name: en_CRS_projection_check.png
+---
+Screenshot of RS Projection Check
+```
+
+
+
 - Missing Processing Tools in the Panels Tool and the Vector Tab.
   - Solution: (via image)
 
 - Common questions and issues
   - (Note: Content übertragen)
+
+  
 
 ## QGIS training support
 
