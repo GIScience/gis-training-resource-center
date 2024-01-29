@@ -55,10 +55,36 @@ Screenshot of RS Projection Check
 ```
 
 
+- Missing Processing Tools in the Panels Tool and incomplete Vector Tab.
 
-- Missing Processing Tools in the Panels Tool and the Vector Tab.
-  - Solution: (via image)
+  - Solution:
+  
+  It may happen that the *Processing Tools Tab* is missing and also that the *Vector Tab Display* is incomplete. Then you may activate them by going to *Plugins* and *Manage and install Plugins* and selecting *All* and rehooking the Processing function in the corresponding list.
+  
+```{figure} /fig/en_missing_processing_tools.png
+---
+width: 75%
+name: en_missing_processing_tools.png
+---
+Screenshot of Missing Processing Tools
+```
+ 
+- Missing Toolbox.
+  - Solution:
 
+ It may happen that the *Toolbox* (small gear wheel) is missing. To reactivate it, just click on the *View Tab*, select in the pop-up window *Panels* and in the following pop-up window set a hook for the *Processing Toolbox*.  
+
+```{figure} /fig/en_missing_toolbox.png
+---
+width: 75%
+name: en_missing_toolbox.png
+---
+Screenshot of Missing Toolbox
+```
+
+
+--------------------------------------------
+  
 - Common questions and issues
   - (Note: Content übertragen)
 
