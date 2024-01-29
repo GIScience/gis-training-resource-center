@@ -43,7 +43,7 @@ GeoPackages can contain multiple files and even whole QGIS projects. When you lo
 
 4. First have a look at the airport layer(`Sierra_Leone_airports`). Open the attribute table and sort the data. Delete empty columns. See the Wiki entry on the [Attribute table](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html) for further information.
 
-5. Add a base map to your map view using the Plugin `QuickMapServices` by clicking on the ![](/fig/QMS_icon.png) symbol in you projct toolbar. Search for "Bing Maps Satellite Imagery" in the QMS panel and add the base map layer via double click.  For an optimized view [adjust the opacity](https://www.youtube.com/watch?v=WguUkN1YRzY&ab_channel=GISBigfootAnswers) of your layers to optimize the use of the base map. 
+5. Add a base map to your map view using the Plugin `QuickMapServices` by clicking on the ![](/fig/QMS_search_icon.png) symbol in you projct toolbar. Search for "Bing Maps Satellite Imagery" in the QMS panel and add the base map layer via double click.  For an optimized view [adjust the opacity](https://www.youtube.com/watch?v=WguUkN1YRzY&ab_channel=GISBigfootAnswers) of your layers to optimize the use of the base map. 
 
 6. Using  the attribute table of the airports layer zoom to Tongo Airport by right-clicking on the row in the attribute table and selecting `Zoom to Feature`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature)). Check the Basemap. Do you think the airstrip is still operational? The answer is no according to Wikipedia. Delete Tongo Airport in the [Attribute table](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html). Delete Kabala airport too, since it is also not operational anymore.
 
@@ -114,7 +114,7 @@ The layer order here from top to bottom is:
 - `Sierra_Leone_roads` 
 - `Sierra_Leone_national_borders` 
 - `Sierra_leone_foodinsecurity_2015`
-- Basemap: `OpenTreet Map`
+- Basemap: `OpenStreetMap`
 
 ```{figure} /fig/mod3_classification_ex_LayerOrder.png
 ---
