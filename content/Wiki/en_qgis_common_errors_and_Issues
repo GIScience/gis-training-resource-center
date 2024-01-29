@@ -4,14 +4,16 @@ Here we are collecting common QGIS errors and issues as general QGIS training su
 
 ## Common QGIS errors
 
-(Alphabetisch sortieren?)
+(Note: Alphabetisch sortieren?)
 
 - Different QGIS Versions
-  - main items
+  - Main items
+
 - Missing Processing Tools in the Panels Tool and the Vector Tab.
   - Solution: (via image)
 
-- Häufige Fragen und Fehlerquellen (Content übertragen)
+- Common questions and issues
+  - (Note: Content übertragen)
 
 ## QGIS training support
 
@@ -32,13 +34,16 @@ Here we are collecting common QGIS errors and issues as general QGIS training su
 #### Geodata Classification Exercise: 
 #### Geodata Selection and Queries Exercise: 
 #### Nigeria Floods Exercise:
-Mir hat manchmal gefehlt, dass jetzt z. B. die Atributtabelle des Layers gemeint ist und nicht die PDF-Tabelle als es um das PDF mit den von der Flut betroffenen Gebieten ging. Auch wie der erwähnte Punktlayer auf der Karte aussieht, könnte man z. B. noch ergänzen.
+
+- Sometimes the reference is not really clear in the exercise text: goes it to the attribute table of the layer or to the PDF table concerning the areas affected by the flood.
+
+- After each important exercise step a visualization of the result may be helpful, f. ex. for visualizing the mentioned point layer. 
 
 ### Modul 4 - Representation
 #### Visualization Exercise:
 #### (Ghana) Map making Exercise:  
 
-- North arrow not syncing with the corresponding map
+- The North arrow ist not syncing with the corresponding map.
 - Solution: (via image)
 
 ### Modul 5 - Intermediate GIS operation
@@ -49,8 +54,11 @@ Mir hat manchmal gefehlt, dass jetzt z. B. die Atributtabelle des Layers gemeint
 #### Risk assessment -  Calculate vulnerability index Exercise: 
 #### Risk assessment - Risk calculation Exercise:
 #### Trigger & Intervention Map for Forecast-based-Action Exercise:
-Bei Textaufteilung der Übung den Hinweis auf das Coding etwas früher setzen, damit man ihn nicht übersieht oder "vergisst".
-Es gibt in der Toolbox zwei Varianten von Join attributes by location  falsche Variante ausgewählt, am besten hier deshalb einen Hinweis geben. Bei der Tabellenkonvertierung in csv muss man auch beachten, ob man für Mac oder Win-Rechner konvertiert und dass ein Mehrfeld-Excel nur einfach ausgelesen wird (Hinweis wird gegeben).
+
+- I could make sense to place the reference to the coding a little bit earlier in the text to avoid that it is not overlooked or "forgotten" during the exercise.
+- There are two variants of *Join attributes by location* in the toolbox, so may help to enter a note here. 
+- When converting tables to csv, it could make sense to add a note in the text whether you are converting for Mac or Win computers and that from a multi-page Excel only the first page will be read out. 
+
 
 ### Modul 6 - Data analysis with QGIS - Exercise:
 ### (Modul 9 - Network Analysis in QGIS)
