@@ -47,6 +47,7 @@ parts:
         sections:
           - file: content/Wiki/en_qgis_visualisation_wiki.md
           - file: content/Wiki/en_qgis_map_making_wiki.md
+      - file: content/Wiki/en_qgis_common_errors_and_Issues.md
   - caption: Modul 1- Introduction GIS
     chapters:
       - file: content/Modul_1/en_qgis_theorie.md
