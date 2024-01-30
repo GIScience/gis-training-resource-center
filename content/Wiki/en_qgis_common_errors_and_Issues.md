@@ -4,41 +4,41 @@ Here we are collecting common QGIS errors and issues as general QGIS training su
 
 
 ## Different QGIS versions
-  - Main items (to add for example different displays)
+ __Main items__ (to add for example different screen views)
 
 
 ## A layer is not displayed in QGIS 
 
-  - Solution: 
+ __Solution:__ 
   1. Right click on the corresponding layer 
   2. Activate the `Zoom to Layer` function in the pop-up window. 
 
-```{figure} /fig/en_layer_display.png
+```
 ---
 width: 65%
 name: en_layer_display.png
 ---
-Screenshot of Zoom to Layer
+
 ```
 
 ## A layer window has disappeared in QGIS
 
-  - Solution:
+__Solution:__
  1. Open in the main tab `View`, 
  2. In the pop-up window select `Panels` 
  3. In the sub-window hook the case `Layers`.   
 
-```{figure} /fig/en_closed_layer_view.png
+```
 ---
 width: 75%
 name: en_closed_layer_view.png
 ---
-Screenshot of Closed Layer
+
 ```
 
 ## Layers that should actually be in the same position are not on top of each other
 
-  - Solution:
+__Solution:__
 
 These sort of problems are usually due to a) *mismatching KBS in layers and project*, or b) an *incorrect reprojection*. 
 
@@ -51,7 +51,7 @@ These sort of problems are usually due to a) *mismatching KBS in layers and proj
 
 b) 
 
-When reprojecting, follow exactly the procedure described in the Wiki under *Projections* (ergänzen). Errors often occur if KBS is set and no reprojection tool is used. If you suspect that your reprojection has gone wrong, delete all affected layers from GIS, reload the data and then reproject. 
+When reprojecting, follow exactly the procedure described in the Wiki under *Projections* (to add). Errors often occur if KBS is set and no reprojection tool is used. If you suspect that your reprojection has gone wrong, delete all affected layers from GIS, reload the data and then reproject. 
 
 
 ```{figure} /fig/en_CRS_projection_check.png
@@ -59,29 +59,32 @@ When reprojecting, follow exactly the procedure described in the Wiki under *Pro
 width: 85%
 name: en_CRS_projection_check.png
 ---
-Screenshot of CRS Projection  Check
+
 ```
 
 ## Missing processing tools in the panels tool and incomplete vector tab
 
-  - Solution:
+ __Solution:__
   
   1. Activate the `processing tools` by going to `Plugins` >
   `Manage and install Plugins` 
-  2. Select `All` and rehook the `Processing function` in the corresponding list.
+  2. Select `All` 
+  3. Rehook the `Processing function` in the corresponding list.
   
 ```{figure} /fig/en_missing_processing_tools.png
 ---
 width: 85%
 name: en_missing_processing_tools.png
 ---
-Screenshot of Missing Processing Tools
+
 ```
  
 ## Missing toolbox
-  - Solution:
+  __Solution:__
 
-  1. To reactivate the `Toolbox` (small gear wheel, icon ergänzen) click on the `View Tab`
+  1. To reactivate the `Toolbox` ![](/fig/gear_wheel.png) click on the `View Tab`
+
+  
   2. Select in the pop-up window `Panels` 
   3. Set in the following pop-up window a hook for the `Processing Toolbox`.  
 
@@ -90,7 +93,7 @@ Screenshot of Missing Processing Tools
 width: 75%
 name: en_missing_toolbox.png
 ---
-Screenshot of Missing Toolbox
+
 ```
 
 ## QGIS training support 
