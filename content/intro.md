@@ -1,6 +1,7 @@
 ```{figure} /fig/HeiGIT_Logo_base.svg
 ---
-name: Toolbox button
+height: 75 
+name: HeiGIT Logo
 align: center
 ---
 ```
