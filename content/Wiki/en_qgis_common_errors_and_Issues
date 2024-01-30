@@ -3,39 +3,35 @@
 Here we are collecting common QGIS errors and issues as general QGIS training support.
 
 
-- Different QGIS Versions
+## Different QGIS Versions
   - Main items (to add for example different displays)
 
 
-
-## A layer is not displayed in QGIS. 
+## A layer is not displayed in QGIS 
 
   - Solution: 
   1. Right click on the corresponding layer 
-  2. Activate the  `Zoom to Layer` function in the pop-up window. 
+  2. Activate the `Zoom to Layer` function in the pop-up window. 
 
 ```{figure} /fig/en_layer_display.png
 ---
-width: 75%
-name: en_layer_display
+width: 65%
+name: en_layer_display.png
 ---
-Screenshot of Zoom to Layer function
-```
-## A layer window has disappeared in QGIS.
+
+
+## A layer window has disappeared in QGIS
 
   - Solution:
-
  1. Open in the main tab `View`, 
  2. In the pop-up window select `Panels` 
- 3. In the sub-window activate `Browser`.   
+ 3. In the sub-window hook the case `Layers`.   
 
-```{figure} /fig/en_closed_layer_view.png
+```{figure}/fig/en_closed_layer_view.png
 ---
 width: 75%
-name: en_closed_layer_view
+name: en_closed_layer_view.png
 ---
-Screenshot of Closed Layer View
-```
 
 ## Layers that should actually be in the same position are not on top of each other.
 
@@ -57,11 +53,9 @@ When reprojecting, follow exactly the procedure described in the Wiki under *Pro
 
 ```{figure} /fig/en_CRS_projection_check.png
 ---
-width: 75%
+width: 85%
 name: en_CRS_projection_check.png
 ---
-Screenshot of RS Projection Check
-```
 
 
 ## Missing Processing Tools in the Panels Tool and incomplete Vector Tab.
@@ -74,7 +68,7 @@ Screenshot of RS Projection Check
   
 ```{figure} /fig/en_missing_processing_tools.png
 ---
-width: 75%
+width: 85%
 name: en_missing_processing_tools.png
 ---
 Screenshot of Missing Processing Tools
@@ -117,7 +111,7 @@ There are two places where you have to define with which map the N arrow should 
 
 2. Go to `Properties`, expand `Image Rotation`, select the `Sync with map option` and define here which map it should be.
 
-  - (image ergänzen)
+ 
 
 ### Modul 5
 #### Trigger & Intervention Map for Forecast-based-Action Exercise:
