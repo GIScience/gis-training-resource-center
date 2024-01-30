@@ -11,7 +11,7 @@ Here we are collecting common QGIS errors and issues as general QGIS training su
 
  __Solution:__ 
   1. Right click on the corresponding layer 
-  2. Activate the `Zoom to Layer` function in the pop-up window. 
+  2. Activate the `Zoom to Layer` function in the pop-up window 
 
 ```{figure} /fig/en_layer_display.png
 ---
@@ -26,7 +26,7 @@ name: en_layer_display.png
 __Solution:__
  1. Open in the main tab `View`, 
  2. In the pop-up window select `Panels` 
- 3. In the sub-window hook the case `Layers`.   
+ 3. In the sub-window hook the case `Layers`   
 
 ```{figure} /fig/en_closed_layer_view.png
 ---
@@ -43,7 +43,7 @@ __Solution:__
 These sort of problems are usually due to a) *mismatching KBS in layers and project*, or b) an *incorrect reprojection*. 
 
  a) 
- 1. Check the layer properties (right-click on the corresponding layer
+ 1. Check the layer properties (right-click on the corresponding layer)
  2. Select in the pop-up window `Properties`
  3. In the next pop-up-window select `Information` and check which projection is defined there under the entry `Coordinate Reference System (CRS)` 
  4. And additionally check if the same projection is set in the status bar at the bottom right.
@@ -69,7 +69,7 @@ name: en_CRS_projection_check.png
   1. Activate the `processing tools` by going to `Plugins` >
   `Manage and install Plugins` 
   2. Select `All` 
-  3. Rehook the `Processing function` in the corresponding list.
+  3. Rehook the `Processing function` in the corresponding list
   
 ```{figure} /fig/en_missing_processing_tools.png
 ---
@@ -82,11 +82,9 @@ name: en_missing_processing_tools.png
 ## Missing toolbox
   __Solution:__
 
-  1. To reactivate the `Toolbox` ![](/fig/gear_wheel.png) click on the `View Tab`
-
-  
+  1. To reactivate the `Toolbox` ![](/fig/mAction.png) click on the `View Tab`
   2. Select in the pop-up window `Panels` 
-  3. Set in the following pop-up window a hook for the `Processing Toolbox`.  
+  3. Set in the following pop-up window a hook for the `Processing Toolbox`  
 
 ```{figure} /fig/en_missing_toolbox.png
 ---
