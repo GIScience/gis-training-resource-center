@@ -2,45 +2,41 @@
 
 Here we are collecting common QGIS errors and issues as general QGIS training support.
 
-## Common QGIS errors
 
-(Note: Alphabetisch sortieren?)
+## Different QGIS versions
+  - Main items (to add for example different displays)
 
-- Different QGIS Versions
-  - Main items
 
-(Welche Beispiele dazu? Unterschiedliche Displays, etc.) 
-
-- A layer is not displayed in QGIS. 
+## A layer is not displayed in QGIS 
 
   - Solution: 
   1. Right click on the corresponding layer 
-  2. Activate the  `Zoom to Layer` function in the pop-up window. 
+  2. Activate the `Zoom to Layer` function in the pop-up window. 
 
 ```{figure} /fig/en_layer_display.png
 ---
-width: 75%
-name: en_layer_display
+width: 65%
+name: en_layer_display.png
 ---
-Screenshot of Zoom to Layer function
+Screenshot of Zoom to Layer
 ```
-- A layer window has disappeared in QGIS.
+
+## A layer window has disappeared in QGIS
 
   - Solution:
-
  1. Open in the main tab `View`, 
  2. In the pop-up window select `Panels` 
- 3. In the sub-window activate `Browser`.   
+ 3. In the sub-window hook the case `Layers`.   
 
 ```{figure} /fig/en_closed_layer_view.png
 ---
 width: 75%
-name: en_closed_layer_view
+name: en_closed_layer_view.png
 ---
-Screenshot of Closed Layer View
+Screenshot of Closed Layer
 ```
 
-- Layers that should actually be in the same position are not on top of each other.
+## Layers that should actually be in the same position are not on top of each other
 
   - Solution:
 
@@ -60,14 +56,13 @@ When reprojecting, follow exactly the procedure described in the Wiki under *Pro
 
 ```{figure} /fig/en_CRS_projection_check.png
 ---
-width: 75%
+width: 85%
 name: en_CRS_projection_check.png
 ---
-Screenshot of RS Projection Check
+Screenshot of CRS Projection  Check
 ```
 
-
-- Missing Processing Tools in the Panels Tool and incomplete Vector Tab.
+## Missing processing tools in the panels tool and incomplete vector tab
 
   - Solution:
   
@@ -77,13 +72,13 @@ Screenshot of RS Projection Check
   
 ```{figure} /fig/en_missing_processing_tools.png
 ---
-width: 75%
+width: 85%
 name: en_missing_processing_tools.png
 ---
 Screenshot of Missing Processing Tools
 ```
  
-- Missing Toolbox.
+## Missing toolbox
   - Solution:
 
   1. To reactivate the `Toolbox` (small gear wheel, icon ergänzen) click on the `View Tab`
@@ -98,40 +93,18 @@ name: en_missing_toolbox.png
 Screenshot of Missing Toolbox
 ```
 
+## QGIS training support 
+(Will be added to Feedback Online Training: https://heigit.atlassian.net/wiki/spaces/RCARCQT/pages/322043980/Feedback+Online+Training)
 
---------------------------------------------
-  
- ## Common questions and issues
-  - (Note: weiteren Content übertragen)
-
-  
-
-## QGIS training support
-
-(Nach Kapiteln sortieren?)
-
-### (Modul 1 - Introducing QGIS)
-#### (Understanding the Interface Exercise:)
-
-### Modul 2 - Working with Geodata
-#### Geodata Concept Exercise: 
-#### Basic Geodata processing Exercise:
-#### Data resources Exercise:
-#### The World Exercise:
 
 ### Modul 3 - Basic GIS operations
-#### Digitization Exercise 1:
-#### Digitization Exercise 2:
-#### Geodata Classification Exercise: 
-#### Geodata Selection and Queries Exercise: 
 #### Nigeria Floods Exercise:
 
 - Sometimes the reference is not really clear in the exercise text: goes it to the attribute table of the layer or to the PDF table concerning the areas affected by the flood.
 
 - After each important exercise step a visualization of the result may be helpful, f. ex. for visualizing the mentioned point layer. 
 
-### Modul 4 - Representation
-#### Visualization Exercise:
+### Modul 4 
 #### (Ghana) Map making Exercise:  
 
 - The North arrow ist not syncing with the corresponding map.
@@ -142,32 +115,17 @@ There are two places where you have to define with which map the N arrow should 
 
 2. Go to `Properties`, expand `Image Rotation`, select the `Sync with map option` and define here which map it should be.
 
-  - (image ergänzen)
+ 
 
-### Modul 5 - Intermediate GIS operation
-#### Healthsite distribution in Saint Louis region Exercise:
-#### Calculate vulnerability index Exercise:
-#### Disaster effects in different regions of Senegal Exercise:
-#### Calculate vulnerability index Exercise:
-#### Risk assessment -  Calculate vulnerability index Exercise: 
-#### Risk assessment - Risk calculation Exercise:
+### Modul 5
 #### Trigger & Intervention Map for Forecast-based-Action Exercise:
 
 - I could make sense to place the reference to the coding a little bit earlier in the text to avoid that it is not overlooked or "forgotten" during the exercise.
 - There are two variants of `Join attributes by location` in the toolbox, so may help to enter a note here. 
 - When converting tables to csv, it could make sense to add a note in the text whether you are converting for Mac or Win computers and that from a multi-page Excel only the first page will be read out. 
 
-----------------------------------------------
 
-To add?
-
-- Invalid Geometry
+#### Invalid Geometry
 
 If the error message `Invalid Geometries` appears, it may be that vector files have "slipped" during the processing or downloading process (e.g. the lines of polygons no longer fit together exactly). These errors in the geometries can be corrected by selecting `Fix Geometries` in the Processing Toolbox.
 
-
-- Issues with Georeferencing
-
-
-### Modul 6 - Data analysis with QGIS - Exercise:
-### (Modul 9 - Network Analysis in QGIS)
