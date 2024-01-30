@@ -3,7 +3,7 @@
 Here we are collecting common QGIS errors and issues as general QGIS training support.
 
 
-## Different QGIS Versions
+## Different QGIS versions
   - Main items (to add for example different displays)
 
 
@@ -18,7 +18,8 @@ Here we are collecting common QGIS errors and issues as general QGIS training su
 width: 65%
 name: en_layer_display.png
 ---
-
+Screenshot of Zoom to Layer
+```
 
 ## A layer window has disappeared in QGIS
 
@@ -27,13 +28,15 @@ name: en_layer_display.png
  2. In the pop-up window select `Panels` 
  3. In the sub-window hook the case `Layers`.   
 
-```{figure}/fig/en_closed_layer_view.png
+```{figure} /fig/en_closed_layer_view.png
 ---
 width: 75%
 name: en_closed_layer_view.png
 ---
+Screenshot of Closed Layer
+```
 
-## Layers that should actually be in the same position are not on top of each other.
+## Layers that should actually be in the same position are not on top of each other
 
   - Solution:
 
@@ -56,9 +59,10 @@ When reprojecting, follow exactly the procedure described in the Wiki under *Pro
 width: 85%
 name: en_CRS_projection_check.png
 ---
+Screenshot of CRS Projection  Check
+```
 
-
-## Missing Processing Tools in the Panels Tool and incomplete Vector Tab.
+## Missing processing tools in the panels tool and incomplete vector tab
 
   - Solution:
   
@@ -74,7 +78,7 @@ name: en_missing_processing_tools.png
 Screenshot of Missing Processing Tools
 ```
  
-## Missing Toolbox
+## Missing toolbox
   - Solution:
 
   1. To reactivate the `Toolbox` (small gear wheel, icon ergänzen) click on the `View Tab`
