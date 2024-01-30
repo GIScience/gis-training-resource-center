@@ -14,7 +14,8 @@ Here we are collecting common QGIS errors and issues as general QGIS training su
 - A layer is not displayed in QGIS. 
 
   - Solution: 
-  Right click on the corresponding layer and activate the *Zoom to layer* function in the pop-up window. 
+  1. Right click on the corresponding layer 
+  2. Activate the  `Zoom to Layer` function in the pop-up window. 
 
 ```{figure} /fig/en_layer_display.png
 ---
@@ -27,7 +28,9 @@ Screenshot of Zoom to Layer function
 
   - Solution:
 
- Open in the main tab *View*, in the pop-up window select *Panels* and in the sub-window activate *Browser*.   
+ 1. Open in the main tab `View`, 
+ 2. In the pop-up window select `Panels` 
+ 3. In the sub-window activate `Browser`.   
 
 ```{figure} /fig/en_closed_layer_view.png
 ---
@@ -41,11 +44,18 @@ Screenshot of Closed Layer View
 
   - Solution:
 
-These sort of problems are usually due to a) mismatching KBS in layers and project, or b) an incorrect reprojection. 
+These sort of problems are usually due to a) *mismatching KBS in layers and project*, or b) an *incorrect reprojection*. 
 
- a) First check the layer properties (right-click on the corresponding layer, select in the pop-up window *Properties*, in the next pop-up-window select *Information* and check which projection is defined there under the entry *Coordinate Reference System (CRS)* and additionally in the status bar at the bottom right which project KBS/CRS is set there. Then correct any discrepancies by reprojecting the layers or changing the setting of the KBS/CRS project. 
+ a) 
+ 1. Check the layer properties (right-click on the corresponding layer
+ 2. Select in the pop-up window `Properties`
+ 3. In the next pop-up-window select `Information` and check which projection is defined there under the entry `Coordinate Reference System (CRS)` 
+ 4. And additionally check if the same projection is set in the status bar at the bottom right.
+ 5. Correct any discrepancies by reprojecting the layers or changing the setting of the KBS/CRS project. 
 
-b) When reprojecting, follow exactly the procedure described in the Wiki under Projections (ergänzen). Errors often occur if KBS is set and no reprojection tool is used. If you suspect that your reprojection has gone wrong, delete all affected layers from GIS, reload the data and then reproject. 
+b) 
+
+When reprojecting, follow exactly the procedure described in the Wiki under *Projections* (ergänzen). Errors often occur if KBS is set and no reprojection tool is used. If you suspect that your reprojection has gone wrong, delete all affected layers from GIS, reload the data and then reproject. 
 
 
 ```{figure} /fig/en_CRS_projection_check.png
@@ -61,7 +71,9 @@ Screenshot of RS Projection Check
 
   - Solution:
   
-  It may happen that the *Processing Tools Tab* is missing and also that the *Vector Tab Display* is incomplete. Then you may activate them by going to *Plugins* and *Manage and install Plugins* and selecting *All* and rehooking the Processing function in the corresponding list.
+  1. Activate the `processing tools` by going to `Plugins` >
+  `Manage and install Plugins` 
+  2. Select `All` and rehook the `Processing function` in the corresponding list.
   
 ```{figure} /fig/en_missing_processing_tools.png
 ---
@@ -74,7 +86,9 @@ Screenshot of Missing Processing Tools
 - Missing Toolbox.
   - Solution:
 
- It may happen that the *Toolbox* (small gear wheel) is missing. To reactivate it, just click on the *View Tab*, select in the pop-up window *Panels* and in the following pop-up window set a hook for the *Processing Toolbox*.  
+  1. To reactivate the `Toolbox` (small gear wheel, icon ergänzen) click on the `View Tab`
+  2. Select in the pop-up window `Panels` 
+  3. Set in the following pop-up window a hook for the `Processing Toolbox`.  
 
 ```{figure} /fig/en_missing_toolbox.png
 ---
@@ -124,7 +138,9 @@ Screenshot of Missing Toolbox
 
 There are two places where you have to define with which map the N arrow should rotate with.
 
-First it is in the *Layout Tab* for the image under *General Settings*, make sure that the reference map has the right map selected. Then go to *Properties*, expand *Image Rotation*, select the *Sync with map option* and define here which map it should be.
+1. In the `Layout Tab` for the image under `General Settings` make sure that the reference map has the right map selected. 
+
+2. Go to `Properties`, expand `Image Rotation`, select the `Sync with map option` and define here which map it should be.
 
   - (image ergänzen)
 
@@ -138,7 +154,7 @@ First it is in the *Layout Tab* for the image under *General Settings*, make sur
 #### Trigger & Intervention Map for Forecast-based-Action Exercise:
 
 - I could make sense to place the reference to the coding a little bit earlier in the text to avoid that it is not overlooked or "forgotten" during the exercise.
-- There are two variants of *Join attributes by location* in the toolbox, so may help to enter a note here. 
+- There are two variants of `Join attributes by location` in the toolbox, so may help to enter a note here. 
 - When converting tables to csv, it could make sense to add a note in the text whether you are converting for Mac or Win computers and that from a multi-page Excel only the first page will be read out. 
 
 ----------------------------------------------
@@ -147,7 +163,7 @@ To add?
 
 - Invalid Geometry
 
-If the error message *Invalid Geometries* appears, it may be that vector files have "slipped" during the processing or downloading process (e.g. the lines of polygons no longer fit together exactly). These errors in the geometries can be corrected by selecting *Fix Geometries* in the Processing Toolbox.
+If the error message `Invalid Geometries` appears, it may be that vector files have "slipped" during the processing or downloading process (e.g. the lines of polygons no longer fit together exactly). These errors in the geometries can be corrected by selecting `Fix Geometries` in the Processing Toolbox.
 
 
 - Issues with Georeferencing
