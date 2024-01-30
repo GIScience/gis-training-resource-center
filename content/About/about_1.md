@@ -39,6 +39,22 @@ A group of dedicated student assistants and employees of the Heidelberg Institut
 
 <div class="container">
   <div class="organization">
+    <p>**The International Federation of Red Cross and Red Crescent Societies:**<br>
+      The International Federation of Red Cross and Red Crescent Societies (IFRC) is the world’s largest humanitarian network, comprising 191 National Red Cross and Red Crescent Societies working to save lives, build community resilience, strengthen localization and promote dignity around the world. The organization focuses on disaster response, preparedness, health, and community development, with a commitment to the principles of humanity, impartiality, neutrality, independence, voluntary service, unity, and universality.
+
+[Learn more →](https://www.ifrc.org)
+
+</p>
+  </div>
+
+  <div class="logo">
+    <img src="https://www.ifrc.org/themes/custom/ifrc_theme/dist/images/Logo-Horizontal-RGB.svg" alt="IFRC Logo">
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="organization">
     <p>
 **German Red Cross:**
 <br>
@@ -58,7 +74,7 @@ A group of dedicated student assistants and employees of the Heidelberg Institut
     <p>**British Red Cross:**<br>
       The British Red Cross is a well-established humanitarian organization that has been actively involved in responding to emergencies and supporting individuals and communities in crisis. The BRC is a volunteer-led movement that connects those who have kindness to share, with the people who need it most in the UK and anywhere in the world. As official part of the International Red Cross and Red Crescent Movement they offer a wide range of aid,  including first aid training, health and social care, and emergency response. 
 
-[Learn more →](https://www.redcross.org.uk)  
+[Learn more →](https://www.redcross.org.uk)
 </p>
   </div>
 
