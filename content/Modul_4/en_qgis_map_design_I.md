@@ -351,13 +351,35 @@ Remember that __the layer's symbology is saved within your project file, not wit
 
 ## Labels
 
-- Labels are text that show a specific attribute of features. 
-- It is useful to add labels to features to easily identify them. For example, the name of a settlement.
-- You can change the font, colour and size of labels
-- When you create a map you always add labels to help the final user reading the map
+Labels are text that display information or values of the data. In QGIS, you can either select __Single Labels__ or __Rule-based Labelling__. For each option, an attribute (`value`) that will be displayed on the map. For example, the name of a city or region.  Additionally, you can __change the font, font size, colour and some other styling options__ for the label text. When you create a map, you can add labels to help your reader understand the map quickly. However, be aware that too much text information can overload the map with too much information for the reader to process.
 
-:::{dropdown} Adding labels to a layer
->This is exercise 2 in the PPP, also review 
+- QGIS offers two methods to display labels:
+    - Single labels: Creates a single label style for every feature in the layer. You can select a attribute (value) which will be displayed. For example, the name of a settlement. You need to know which attribute displays the information you want to display. Look at the attribute table of the dataset to find it out.
+    - Rule-based Labelling: Create rules using expressions to select accurately which features are to be labeled. Each rule can have a different text formatting. Use this if you want to have more control over the information that will be displayed as labels. For example, you can filter your data to only display the names of regional capitals. 
+- Only display information that is helpful to the reader. Useful information can be the name of a settlement or a place, so the reader can assign a certain symbol on the map to this particular place.
+- In most cases, displaying numerical values as labels is confusing to the reader. For numerical data, you can choose a different visualization such as colours or symbol size (don't forget to add a legend).
+- If you want to display different types of information as labels, the font needs to be different so the reader can differentiate between the different types of information that is displayed.
+- QGIS places the labels automatically. Sometimes, if you are using a lot of black outlines or dark colours, black text is hard to read on the map. In that case, you can add white buffer around the text to make it visible. 
+
+
+```{figure} ../../fig/label_text_buffer_example.png
+---
+width: 300 px
+name: label buffer example
+---
+A label without a text buffer (left) and a label with a white text buffer (right)
+```
+
+
+```{note} Label rendering
+
+Sometimes the labels can obstruct other symbols. In that case, you can either adjust the placement of the labels in the __Label tab__, or use the `Move a Label, Diagram, or Callout`-tool in __Label toolbar__
+
+By default, QGIS renders the labels so that they don't overlap with other labels. This means that not all the labels will be visible if the data is dense or rendered close to each other. You can optimize the rendering under the rendering option. 
+
+```
+
+:::{dropdown} Adding labels to a layer 
 
 1. In the styling panel, click on the `Labels` tab underneath the Symbology tab.
 2. Select `Single labels`. 
@@ -379,76 +401,11 @@ Setting up labels in QGIS 30.30.2
 
 :::
 
-:::{dropdown} Adding different label styles to the same layer
 
-Sometimes you will need to create two different label styles for different features of a single layer. In this example, we will create one label style for the *Country Capital*, and another one for the *State Capitals*
-
-1. Open the styling panel for the `"NGA_settlements_nga"` layer and click on the `Labels` tab
-2. Select `Rule-based Labelling`
-3. Click on the __Add Rule__ button at the bottom (the "+"-sign) and __create the first rule__
-4. For __Value__, select `"NAME"` (so that the labels will show the name of each city), then click on the `"ε"-button` next to the __Filter__ bar.
-
-```{figure} ../../fig/en_30.30.2_adding_rule-based_labels.png
----
-width: 500px
-name: adding rule-based labels
----
-To add rule-based labels, you need to enter an expression
-```
-
-5. In the central column, expand `Fields and Values` to display a list of all the fields in your layer and double-click on `"CLASS"` to __add it to the expression frame__ on the left.
-6. In the right column, click on `All unique` to list all unique values contained in the Class field. In this dataset, `"CLASS"=1` designates the capital city, whereas `"CLASS"=2` designate other major cities. Make sure to familiarise yourself with the dataset at your disposal, so you know what the different attributes represent.
-7. Click on the `"="` operator, then doube-click on the `value 1` (which represent the Country capital in this case). Click `OK`.
-8. Scroll down to __change the label style__. Make it Arial, bold, black, 12pt and add a white buffer.
-9. __Repeat steps 4 to 9__, but select `Value 2` (State capitals) and make the label black, bold, 10pt, no buffer.
-10. Click `Apply`, the `OK`.
-
-```{figure} ../../fig/en_30.30.2_adding_rule-based_labels_expression_builder.png
----
-width: 500px
-name: rule-based labels expression builder
----
-The expression builder: Expression (left); building blocks, operators, fields and values(center); unique values (right)
-```
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_rule_based_labelling
-.mp4"></video>
-
-:::
-
-:::{dropdown} Add underligned labels
-
-1. Set up the labels by following the same steps as before.
-2. TO underlign labels, click on the underlign-button
-
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_underlign_labels
-.mp4"></video>
-
-:::
-
-:::{dropdown} Move labels independently
-Sometimes the placement of labels is not ideal and can obstruct the readability of the map. In this case, you can move labels independently. 
-
-1. On the `label toolbar`, there is an option to __move labels independently__. Click on it to activate the tool. (Note: In some cases, the label toolbar might not be visible. In this case, turn it on by navigating to `View`>`Toolbars`>activate the Label toolbar)
-2. Click on the __label you want to move__.
-3. You will be prompted to select the primary key for joining with internal data storage. __You do not need to change it__ (you can select the ID field of the dataset) and click `OK`.
-4. Click on the label again, now you can move it freely.
-
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_move_labels_independently
-.mp4"></video>
-
-:::
-
-:::{dropdown} Add labels to roads
->When working with line features, the labels will align themselves parallel to the line representing the feature. 
-
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_add_road_labels
-.mp4"></video>
-
-:::
 
 ## Symbology for raster data
 
-As we have already learned, raster data are basically a grid of pixels with different (numerical) values. As such, you can't style the shape, fill or outline of raster data. It is only possible to assign colours to the different values of the pixels.
+As we have already learned, raster data are basically a grid of pixels with different (numerical) values. As such, you can't style the shape, fill or outline of raster data. Raster data is visualized by assigning a colour ramp to the pixel value. QGIS offers several options to visualise raster data. For example, you can create a hillshade with digital elevation model (DEM). 
 
 ### Assigning a colour gradient to raster data
 
@@ -470,39 +427,16 @@ Colour Ramp Selector
 
 In the colour ramp selector, you can adjust each colour step. On the bottom, you can see a plot for the Hue, __Saturation__, __Lightness__ and __Opacity__. Especially latter three are useful to see how your colour ramp will translate. Gradients from light to dark are easier to read: Check if the plot for the __Lightness__ has a more or less linear plot. 
 
-:::{dropdown} Styling an elevation model
-
-Elevation data sets are frequently used to communicate the terrain on a map. By default, an elevation model will be displayed with a gray colour ramp. However, if you don't need the to know the elevation at certain points, you can choose to display the __hillshade__ of the terrain. Hillshading will simulate the shadow of the terrain as if it would be exposed to a lightsource. In this example, we will use the elevation raster data (.tiff) of Algeria from the Humanitarian Data Exchange platform (humdata.org) To achieve this,
-
- 1. Open the `symbology` tab
- 2. Click on `Render type` and select `Hillshade`. You will have an option to select the direction of the light. Conventionally, the lightsource is positioned in the North-West, so we can keep the default settings. In some cases with rough terrain, it can be useful to make the Hillshade __Multidirectional__.
- 3. The Hillshade will be very dark and cover most of the map. We need to make it lighter...
-
->Example Video and continue explanation, maybe an algorithm would be better?
-
-:::
-
-### Inverting the colour ramp
-
-In some cases, the colour ramp should be inverted to make it easier to read the map:
-1. Click on the __arrow next to the Colour ramp__ to open the dropdown menu.
-2. Click on `Invert Colour Ramp`.
-
-
 # Exporting and Importing Styles
 
-As we have already learned, the layers in QGIS are saved separately from the settings and styles of a QGIS Project. However, when working with similar data (e.g.: building types or flooding risk), it is useful to have template styles, that can be automatically or quickly loaded into your QGIS-project. In QGIS, styles are saved as `.qml`-files.
+The layers in QGIS are saved separately from the settings and styles of a QGIS Project. This means that if you load the same layers into a different QGIS-project, the symbology and styling of the data will be different. QGIS lets you save the symbology and styling of a layer as a seperate file (`.qml`-files). Working with `.qml`-files saves you a lot of work and assures consistency between your maps. 
+
+A `.qml`-file saves the styling information of a particular layer. You can choose wether to save only the colour symbology or all the options you assigned 
 
 You can also export a style into the same folder as the data so your colleagues can apply the same styling when loading the data into QGIS.
 Some organisations may also use standarized symbols or colours in their maps. 
 
-
-```{Tip}
-When a styling is saved in the same location as the data and has the same name as the corresponding dataset, the styling will be automatically applied to the layer when loading the data into QGIS!
-```
-
-::::{tab-set}
-:::{tab-item} Exporting a styling
+:::{dropdown} Saving or exporting styling settings
 
 1. Open the styling panel and click on `styles`. A dropdown menu will open with the option to export the layer styling.
 2. Since in this case, the styling is for exactly that dataset, you can leave all the boxes checked.
@@ -512,62 +446,29 @@ When a styling is saved in the same location as the data and has the same name a
 .mp4"></video>
 :::
 
-:::{tab-item} Loading a style into your QGIS-project
+When saving a style, you can choose what information and settings you want to save in the `.qml`-file. For example, if you want to send a layer to your colleague with the same styling as you, it is best to check the "__Layer properties__", "__Symbology__", and "__Labels__" categories (and any additional styling options you have set). If you only wish to save a certain colouring, line thickness, or labeling style, you only need to check the respective boxes.
 
-1. Open the style manager: `Settings` > `Style manager`
-2. Click on `import/export` and select `import items`
-3. Navigate to the folder where the style is saved and click import.
-4. The style should now be available as a preset in the styling panel.
-
-```{note} 
-You can also import styles directly in the styling panel of a layer. But it will not be added to your style library unless you save it into your library.
+```{figure} ../../fig/en_30.30.2_save_layer_style_window.png
+---
+width: 350px
+name: Save layer styling window
+---
+Save Layer styling window in QGIS 30.30.2.
 ```
-:::
 
-:::{tab-item} Using Red Cross symbols
-
-With the plugin __"Plugin Resource Sharing"__, you can install symbol and icon libraries used by the Red Cross and UN, as well as other useful symbols.
-
-1. Install the __"Plugin Resource Sharing"__ by opening the plugin installation window and searching for the plugin.
-2. Once installed, open the plugin interface by clicking on `plugin` > `Plugin Resource Sharing`
-3. Search for packages by the Red Cross and UN
-4. Install the packages.
-
-Now the symbols should be available in the styling manager in the SVG folder.
-
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_resource_sharing_plugin.mp4"></video>
+When working with similar data (e.g.: building types or flooding risk), it is useful to have template styles, that can be automatically or quickly loaded into your QGIS-project.
 
 
-```{tip}
-Make sure to check out the other resources available in the resource sharing plugin and see if they are useful to you.
+```{Tip}
+When a styling is saved in the same location as the data and has the same name as the corresponding dataset, the styling will be automatically applied to the layer when loading the data into QGIS!
 ```
-:::
 
-:::{tab-item} Using SVG-symbols
 
-1. Open the styling panel and open the `single marker` options.
-2. Under `Symbol layer type`, select __"SVG Marker"__
-3. Scroll down to the SVG-Browser. Here you will find all the folder of your installed SVG-libraries.
-
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video>
-
-:::
-
-:::{tab-item} Adding an external SVG-library or other style libraries
-
-If you have a library of SVG-symbols as a folder you can add them to your Styling manager.
-
-1. Open the style manager: `setting` > `style manager`
-2. Click on `Import / Export` and select `Import items`
-3. Navigate to the location where you have saved the library or style and select the file (in most cases .qml but the file type can also be .xml)
-4. Now you can select which symbols you wish to import. In most cases, you can select all symbols.
-4. Click on `Import`
-The new SVG-symbols are in your SVG library.
-
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video>
-
-:::
-::::
+- [Exporting a styling](link)
+- [Loading a style into your QGIS-project](link)
+- [Using IFRC Symbols](link)
+- [Using and adding SVG-symbols](link)
+- [Adding an external SVG-library](link)
 
 # Further Resources
 
