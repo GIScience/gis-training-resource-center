@@ -13,7 +13,7 @@ Here we are collecting common QGIS errors and issues as general QGIS training su
   1. Right click on the corresponding layer 
   2. Activate the `Zoom to Layer` function in the pop-up window. 
 
-```
+```{figure} /fig/en_layer_display.png
 ---
 width: 65%
 name: en_layer_display.png
@@ -28,7 +28,7 @@ __Solution:__
  2. In the pop-up window select `Panels` 
  3. In the sub-window hook the case `Layers`.   
 
-```
+```{figure} /fig/en_closed_layer_view.png
 ---
 width: 75%
 name: en_closed_layer_view.png
