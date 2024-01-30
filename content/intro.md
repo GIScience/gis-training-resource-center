@@ -1,5 +1,10 @@
-
-![Logos](../fig/TRC_RC_Logos.svg)
+```{figure} /fig/HeiGIT_Logo_base.svg
+---
+name: Toolbox button
+align: center
+---
+```
+___
 # Welcome to the IFRC Network GIS Training Platform
 
 🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧 
