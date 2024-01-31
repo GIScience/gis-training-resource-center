@@ -30,7 +30,7 @@ __Solution:__
 
 ```{figure} /fig/en_closed_layer_view.png
 ---
-width: 85%
+width: 75%
 name: en_closed_layer_view.png
 ---
 
@@ -128,10 +128,9 @@ Next time do it in a correct way:
 
 ```{figure} /fig/en_qgis_save_layer01.png
 ---
-width: 75%
+width: 65%
 name: en_qgis_save_layer01.png
----git push
-g
+---
 
 ```
 
@@ -141,7 +140,7 @@ g
 
 ```{figure} /fig/en_qgis_save_layer02.png
 ---
-width: 75%
+width: 85%
 name: en_qgis_save_layer02.png
 ---
 
