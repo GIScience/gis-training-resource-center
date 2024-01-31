@@ -15,7 +15,7 @@ Here we are collecting common QGIS errors and issues as general QGIS training su
 
 ```{figure} /fig/en_layer_display.png
 ---
-width: 65%
+width: 55%
 name: en_layer_display.png
 ---
 
@@ -30,7 +30,7 @@ __Solution:__
 
 ```{figure} /fig/en_closed_layer_view.png
 ---
-width: 75%
+width: 85%
 name: en_closed_layer_view.png
 ---
 
@@ -130,7 +130,8 @@ Next time do it in a correct way:
 ---
 width: 75%
 name: en_qgis_save_layer01.png
----
+---git push
+g
 
 ```
 
