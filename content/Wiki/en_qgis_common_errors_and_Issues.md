@@ -10,8 +10,8 @@ Here we are collecting common QGIS errors and issues as general QGIS training su
 ## A layer is not displayed in QGIS 
 
  __Solution:__ 
-  1. Right click on the corresponding layer 
-  2. Activate the `Zoom to Layer` function in the pop-up window 
+  1. Right click on the corresponding layer. 
+  2. Activate the `Zoom to Layer` function in the pop-up window. 
 
 ```{figure} /fig/en_layer_display.png
 ---
@@ -24,9 +24,9 @@ name: en_layer_display.png
 ## A layer window has disappeared in QGIS
 
 __Solution:__
- 1. Open in the main tab `View`, 
- 2. In the pop-up window select `Panels` 
- 3. In the sub-window hook the case `Layers`   
+ 1. Open in the main tab `View`. 
+ 2. In the pop-up window select `Panels`. 
+ 3. In the sub-window hook the case `Layers`.   
 
 ```{figure} /fig/en_closed_layer_view.png
 ---
@@ -43,9 +43,9 @@ __Solution:__
 These sort of problems are usually due to a) *mismatching KBS in layers and project*, or b) an *incorrect reprojection*. 
 
  a) 
- 1. Check the layer properties (right-click on the corresponding layer)
- 2. Select in the pop-up window `Properties`
- 3. In the next pop-up-window select `Information` and check which projection is defined there under the entry `Coordinate Reference System (CRS)` 
+ 1. Check the layer properties (right-click on the corresponding layer).
+ 2. Select in the pop-up window `Properties`.
+ 3. In the next pop-up-window select `Information` and check which projection is defined there under the entry `Coordinate Reference System (CRS)`. 
  4. And additionally check if the same projection is set in the status bar at the bottom right.
  5. Correct any discrepancies by reprojecting the layers or changing the setting of the KBS/CRS project. 
 
@@ -67,9 +67,9 @@ name: en_CRS_projection_check.png
  __Solution:__
   
   1. Activate the `processing tools` by going to `Plugins` >
-  `Manage and install Plugins` 
-  2. Select `All` 
-  3. Rehook the `Processing function` in the corresponding list
+  `Manage and install Plugins`.
+  2. Select `All`. 
+  3. Rehook the `Processing function` in the corresponding list.
   
 ```{figure} /fig/en_missing_processing_tools.png
 ---
@@ -78,13 +78,16 @@ name: en_missing_processing_tools.png
 ---
 
 ```
- 
+ See also: Geographic Information Systems
+ https://gis.stackexchange.com/questions/202111/missing-processing-tools-in-vector-menu-of-qgis
+
+
 ## Missing toolbox
   __Solution:__
 
-  1. To reactivate the `Toolbox` ![](/fig/mAction.png) click on the `View Tab`
-  2. Select in the pop-up window `Panels` 
-  3. Set in the following pop-up window a hook for the `Processing Toolbox`  
+  1. To reactivate the `Toolbox` ![](/fig/mAction.png) click on the `View Tab`.
+  2. Select in the pop-up window `Panels`. 
+  3. Set in the following pop-up window a hook for the `Processing Toolbox`.  
 
 ```{figure} /fig/en_missing_toolbox.png
 ---
@@ -94,21 +97,8 @@ name: en_missing_toolbox.png
 
 ```
 
-## QGIS training support 
-(Will be added to Feedback Online Training: https://heigit.atlassian.net/wiki/spaces/RCARCQT/pages/322043980/Feedback+Online+Training)
-
-
-### Modul 3 - Basic GIS operations
-#### Nigeria Floods Exercise:
-
-- Sometimes the reference is not really clear in the exercise text: goes it to the attribute table of the layer or to the PDF table concerning the areas affected by the flood.
-
-- After each important exercise step a visualization of the result may be helpful, f. ex. for visualizing the mentioned point layer. 
-
-### Modul 4 
-#### (Ghana) Map making Exercise:  
-
-- The North arrow ist not syncing with the corresponding map.
+## The North arrow is not syncing with the corresponding map
+__Solution:__
 
 There are two places where you have to define with which map the N arrow should rotate with.
 
@@ -116,17 +106,14 @@ There are two places where you have to define with which map the N arrow should 
 
 2. Go to `Properties`, expand `Image Rotation`, select the `Sync with map option` and define here which map it should be.
 
+See also: Geographic Information Systems
+https://gis.stackexchange.com/questions/265095/north-arrow-not-syncing-with-map-qgis-2-18#:~:text=1%20Answer&text=2-,There%20are%20TWO%20places%20where%20you%20have%20to%20tell%20it,and%20tell%20it%20which%20map
  
+## Invalid Geometry
 
-### Modul 5
-#### Trigger & Intervention Map for Forecast-based-Action Exercise:
+If the error message `Invalid Geometries` appears, it may be that vector files have "slipped" during the processing or downloading process (e.g. the lines of polygons no longer fit together exactly).
 
-- I could make sense to place the reference to the coding a little bit earlier in the text to avoid that it is not overlooked or "forgotten" during the exercise.
-- There are two variants of `Join attributes by location` in the toolbox, so may help to enter a note here. 
-- When converting tables to csv, it could make sense to add a note in the text whether you are converting for Mac or Win computers and that from a multi-page Excel only the first page will be read out. 
+__Solution:__
 
-
-#### Invalid Geometry
-
-If the error message `Invalid Geometries` appears, it may be that vector files have "slipped" during the processing or downloading process (e.g. the lines of polygons no longer fit together exactly). These errors in the geometries can be corrected by selecting `Fix Geometries` in the Processing Toolbox.
+These errors in the geometries can be corrected by selecting `Fix Geometries` in the Processing Toolbox.
 
