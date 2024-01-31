@@ -15,7 +15,8 @@ Here we are collecting common QGIS errors and issues as general QGIS training su
 
 ```{figure} /fig/en_layer_display.png
 ---
-width: 55%
+width: 55%git push
+git  push
 name: en_layer_display.png
 ---
 
