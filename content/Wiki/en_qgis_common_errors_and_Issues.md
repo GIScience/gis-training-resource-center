@@ -117,3 +117,31 @@ __Solution:__
 
 These errors in the geometries can be corrected by selecting `Fix Geometries` in the Processing Toolbox.
 
+## Layer file disappeared from the layer window
+
+If a layer file is no more active in the layer window after reopening a QGIS project, it was only temporarily installed.
+
+__Solution:__
+
+Next time do it in a correct way: 
+1. Click on the tab `layer` and on `save as` in the pop-up window.
+
+```{figure} /fig/en_qgis_save_layer01.png
+---
+width: 75%
+name: en_qgis_save_layer01.png
+---
+
+```
+
+2. Put in a `file name` and click on the `three points` ![](/fig/Three_points.png) to save the file on the wished directory place.
+3. Select the corresponding CRS/KBS.
+4. Click `ok`.
+
+```{figure} /fig/en_qgis_save_layer02.png
+---
+width: 75%
+name: en_qgis_save_layer02.png
+---
+
+```
