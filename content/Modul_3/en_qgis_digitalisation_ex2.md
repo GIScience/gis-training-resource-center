@@ -33,7 +33,7 @@ A business man named Mr John who droves all the way from the North of Herbert Ma
 
 1.  See [wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#creation-of-line-data) for a guide.
 
-This is how your result should look like. ![](/fig/Abuja_Banks_Lines_Layers.png)
+This is how your result should look like.![](/fig/Abuja_Banks_Lines_Layers.png)
 
 ## How to create a polygon layer?
 
@@ -45,8 +45,8 @@ Create a polygon layer covering the entire area of the First bank, Zenith bank a
 
 1. See [wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#creation-of-polygon-data) for a guide.
 
-2.  Follow this step if you want to show the name of the data created. 
-![](/fig/Show_label_name.png)
+2.  Follow this step if you want to show the name of the data created.![](/fig/Show_label_name.png)
+
 
 3. Right click on the data created on the layer panel, then click on show labels and the name of the data created will be showned either point, line or polygon data.
 
