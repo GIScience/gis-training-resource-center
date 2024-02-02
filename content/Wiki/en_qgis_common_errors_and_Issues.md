@@ -120,7 +120,7 @@ These errors in the geometries can be corrected by selecting `Fix Geometries` in
 
 ## Layer file disappeared from the layer window
 
-If a layer file is no more active in the layer window after reopening a QGIS project, it was only temporarily installed.
+If a layer file is no more active in the layer window after reopening a QGIS project, it was only temporarily installed: ![](/fig/en_qgis_temporary_Layer.png)
 
 __Solution:__
 
