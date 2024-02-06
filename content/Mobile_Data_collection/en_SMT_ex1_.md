@@ -4,13 +4,14 @@
 
 Explore the whole workflow of mapping with the Sketch Map Tool, from first ideas about what you like to map to the possible digital results.
 
-? Picutre of the workflow
+
 ```{figure} /fig/en_Interface_02.png
 ---
 height: 50px
 name: T
 align: center
 ---
+Picutre of the workflow
 ```
 
 ## Characteristics of the exercise 

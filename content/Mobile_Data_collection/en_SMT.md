@@ -14,7 +14,7 @@
 
 ```{figure} ../../fig/en_30.30.2_styling_panel.png
 ---
-height: 400px
+height: 200px
 name: styling panel
 align: left
 ---
@@ -31,26 +31,27 @@ redigtilsiabel
 base map OSM + Satelite 
 
 
-? Picutre of Sketch Maps OSM + Satelite (? HD, the sames as on the Website)
 ```{figure} /fig/en_Interface_02.png
 ---
 height: 50px
 name: T
 align: center
 ---
+? Picutre of Sketch Maps OSM + Satelite (? HD, the sames as on the Website)
 ```
 
 ## Introduction in the Workflow Sketch Map Tool
 
 The Sketch Map Tool simplifies participatory
 
-? Picutre of the Workflow
+
 ```{figure} /fig/en_Interface_02.png
 ---
 height: 50px
 name: T
 align: center
 ---
+? Picutre of the Workflow
 ```
 
 ### 1. Creating a map
@@ -58,13 +59,14 @@ align: center
 The first step is, creation of paper maps with ... 
 ? Linking to [Help page](https://sketch-map-tool.heigit.org/help) 
 
-? Picutre of the map creation side
+
 ```{figure} /fig/en_Interface_02.png
 ---
 height: 50px
 name: T
 align: center
 ---
+? Picutre of the map creation side
 ```
 
 
@@ -73,28 +75,28 @@ align: center
 
 Main part is the mapping particpatrox with partciants, in grpoups in intervews in teh flied 
 
-? Picutre photo with maüs and the hands
+
 ```{figure} /fig/en_Interface_02.png
 ---
 height: 50px
 name: T
 align: center
 ---
+? Picutre photo with marked SMT and the hands
 ```
 
 ### 3. Digitlaising the map 
 
 Making analog map usebale in digtial context and for fruther analysis in GIS, frist pirctruee then upload to the sketch amp Tool 
 
-? Picutre photo with someone talking a Phot of the map with their smart phone?
 
-![Reference map of Iraq](/fig/en_Reference_Map_Iraq.png)  Reference map of Iraq  
 ```{figure} /fig/en_Interface_02.png
 ---
 height: 50px
 name: T
 align: center
 ---
+ Picutre photo with someone talking a Phot of the map with their smart phone?
 ```
 
 ## The Sketch Map Tool and its use in the EVCA
