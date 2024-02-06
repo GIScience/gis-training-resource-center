@@ -115,6 +115,10 @@ parts:
       - file: content/Modul_6/en_qgis_data_analysis_theorie.md
         sections:
           - file: content/Modul_6/en_qgis_data_analysis_ex1.md
+  - caption: Modul 8 - Remote Sensing and Raster data
+    chapters:
+      - file: content/Modul_8/en_qgis_remote_sensing_raster_theorie.md
+      - file: content/Modul_8/en_qgis_modul_8_ex1.md
   - caption: Modul 9- Network Analysis
     chapters:
       - file: content/Modul_9/en_qgis_network_analysis_theory.md
