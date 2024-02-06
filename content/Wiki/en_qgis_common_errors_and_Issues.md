@@ -52,13 +52,63 @@ These sort of problems are usually due to a) *mismatching KBS in layers and proj
 
 b) 
 
-When reprojecting, follow exactly the procedure described in the Wiki under *Projections* (to add). Errors often occur if KBS is set and no reprojection tool is used. If you suspect that your reprojection has gone wrong, delete all affected layers from GIS, reload the data and then reproject. 
+Reprojecting: When having two layers with different KBS/CRS, then select one of the layers as the input layer having, f. ex. the KBS EPSG:6326 - WGS 84 and select EPSG:4326 - WGS 84 as the target KBS. Start the algorithm and you will receive a new layer, identical to the input layer, but with a different KBS. It is displayed in the workspace in the same place as the other layers, as QGIS reprojects it at runtime. However, its actual coordinates are different. You can check this using the `Add geometry attributes` algorithm. The coordinates are different from the coordinates in the other two attribute tables of the other layers.
 
 
-```{figure} /fig/en_CRS_projection_check.png
+```{figure} /fig/en_qgis_reproject_vector_layer01.png
 ---
 width: 85%
-name: en_CRS_projection_check.png
+name: en_qgis_reproject_vector_layer01.png
+---
+```
+
+Always save your reprojected layers by the `export` and `save as` functions because they are only temporarily saved and will disappear after closing the project.
+
+
+```{figure} /fig/en_qgis_reprojected_layer.png
+---
+width: 85%
+name: en_qgis_reprojected_layer.png
+---
+```
+
+Errors often occur if the KBS is set and no reprojection tool has been used. If you suspect that your reprojection has gone wrong, delete all affected layers from GIS, reload the data and then reproject. 
+
+Similar procedure for raster layers ...
+
+
+```{figure} /fig/en_qgis_reproject_raster_layers01.png
+---
+width: 85%
+name: en_qgis_reproject_raster_layers01.png
+---
+```
+
+## Layer file disappeared from the layer window
+
+If a layer file is no more active in the layer window after reopening a QGIS project, it was only temporarily installed: ![](/fig/en_qgis_temporary_Layer.png)
+
+__Solution:__
+
+Next time do it in a correct way: 
+1. Click on the tab `layer` and on `save as` in the pop-up window.
+
+```{figure} /fig/en_qgis_save_layer01.png
+---
+width: 65%
+name: en_qgis_save_layer01.png
+---
+
+```
+
+2. Put in a `file name` and click on the `three points` ![](/fig/Three_points.png) to save the file on the wished directory place.
+3. Select the corresponding CRS/KBS.
+4. Click `ok`.
+
+```{figure} /fig/en_qgis_save_layer02.png
+---
+width: 85%
+name: en_qgis_save_layer02.png
 ---
 
 ```
@@ -118,31 +168,9 @@ __Solution:__
 
 These errors in the geometries can be corrected by selecting `Fix Geometries` in the Processing Toolbox.
 
-## Layer file disappeared from the layer window
+## Wrong data results or missing data
 
-If a layer file is no more active in the layer window after reopening a QGIS project, it was only temporarily installed: ![](/fig/en_qgis_temporary_Layer.png)
+When you get wrong data results or missing data, please check your file names. You should not use file names with capitals, special characters or empty spaces. Always use underscores between the words for the file name.
 
-__Solution:__
 
-Next time do it in a correct way: 
-1. Click on the tab `layer` and on `save as` in the pop-up window.
 
-```{figure} /fig/en_qgis_save_layer01.png
----
-width: 65%
-name: en_qgis_save_layer01.png
----
-
-```
-
-2. Put in a `file name` and click on the `three points` ![](/fig/Three_points.png) to save the file on the wished directory place.
-3. Select the corresponding CRS/KBS.
-4. Click `ok`.
-
-```{figure} /fig/en_qgis_save_layer02.png
----
-width: 85%
-name: en_qgis_save_layer02.png
----
-
-```
