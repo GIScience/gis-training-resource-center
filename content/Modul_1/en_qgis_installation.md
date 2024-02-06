@@ -2,6 +2,8 @@
 
 🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
+__🔙[Back to Homepage](/content/intro.md)__
+
 ## 🚀Quick guide QGIS 3.28 - installation and basic setup
 
 [![QGIS 3.28 - installation and basic setup](/fig/image_QGIS_3.28_download.png)](https://www.youtube.com/watch?v=tSJMT96HsAo)
@@ -21,7 +23,7 @@ The current __Long Term Release__ is __QGIS 3.28.11 Firenze__
 ### QGIS Download
 
 1. Go to the [__QGIS download page__](https://www.qgis.org/en/site/forusers/download.html).
-2. Select `Download for Windows`, `Download for macOS` or `Dowload for Linux`, depending on your system.
+2. Select `Download for Windows`, `Download for macOS` or `Download for Linux`, depending on your system.
 3. Click on `Looking for the most stable version? Get QGIS 3.28 LTR`
 
 ```{figure} /fig/QGIS_download_LTR_version.png

@@ -1,6 +1,9 @@
 # Non-Spatial Queries
 
 🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+
+__🔙[Back to Homepage](/content/intro.md)__
+
 ## Manual selection
 - Select the features manually in the __attribute table__ by clicking on it.
 

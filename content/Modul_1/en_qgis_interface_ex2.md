@@ -1,4 +1,8 @@
 # Exercise 1: Understanding the Interface
+
+__🔙[Back to Homepage](/content/intro.md)__
+
+
 ---
 ### Aim to the exercise
 
@@ -22,7 +26,7 @@ QGIS is a complex program with an immense amount of functions. At first glance, 
 ### Data
 
 In this exercise, we will not be using any data. Instead, we will be learning how to navigate throught the different interfaces and how to save and load a QGIS project.
-- Download the zipped template folder structure from the Nexus: `Modul_1` > `Exercise_1`. 
+- Download the zipped template folder structure [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_1/Modul_1_Exercise_1_Understanding_the_interface/Modul_1_Exercise_1_Understanding_the_interface.zip)
 - If you have already set up a template folder, you can skip this part. 
 
 ---

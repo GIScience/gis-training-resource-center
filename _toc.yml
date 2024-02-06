@@ -47,6 +47,7 @@ parts:
         sections:
           - file: content/Wiki/en_qgis_visualisation_wiki.md
           - file: content/Wiki/en_qgis_map_making_wiki.md
+      - file: content/Wiki/en_qgis_common_errors_and_Issues.md
   - caption: Modul 1- Introduction GIS
     chapters:
       - file: content/Modul_1/en_qgis_theorie.md
@@ -105,11 +106,26 @@ parts:
         sections:
           - file: content/Modul_5/en_qgis_non_spatial_tools_ex1.md
           - file: content/Modul_5/en_qgis_non_spatial_tools_ex2.md
+      - file: content/Modul_5/en_qgis_modul_5_exercises.md
+        sections:
+          - file: content/Modul_5/en_qgis_modul_5_ex1.md
+          - file: content/Modul_5/en_qgis_modul_5_ex2.md
   - caption: Modul 6- Data analysis with QGIS
     chapters:
       - file: content/Modul_6/en_qgis_data_analysis_theorie.md
         sections:
           - file: content/Modul_6/en_qgis_data_analysis_ex1.md
+  - caption: Modul 9- Network Analysis
+    chapters:
+      - file: content/Modul_9/en_qgis_network_analysis_theory.md
+      - file: content/Modul_9/en_qgis_network_analysis.md
+      - file: content/Modul_9/en_qgis_network_analysis_in_qgis.md
+      - file: content/Modul_9/en_qgis_openrouteservice_tools.md
+      - file: content/Modul_9/en_qgis_qneat3.md
+      - file: content/Modul_9/en_qgis_modul_9_exercises.md
+        sections:
+          - file: content/Modul_9/en_qgis_modul_9_ex1.md
+          - file: content/Modul_9/en_qgis_modul_9_ex2.md
   - caption: GIS in Anticipatory Action
     chapters:
       - file: content/GIS_AA/en_qgis_drought_trigger_somalia.md
@@ -120,6 +136,12 @@ parts:
     chapters:
       - file: content/Mobile_Data_collection/en_SMT.md
       - file: content/Mobile_Data_collection/en_SMT_training.md
+        sections:
+          - file: content/Mobile_Data_collection/en_SMT_ex1.md
+          - file: content/Mobile_Data_collection/en_SMT_ex2.md
+          - file: content/Mobile_Data_collection/en_SMT_ex3.md
+          - file: content/Mobile_Data_collection/en_SMT_ex4.md
+          - file: content/Mobile_Data_collection/en_SMT_ex5.md
   - caption: Trainers corner
     chapters:
       - file: content/Trainers_corner/en_how_to_training.md

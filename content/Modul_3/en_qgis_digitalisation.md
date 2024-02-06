@@ -1,5 +1,9 @@
 # Digitalisation
 
+🚧 This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+
+
+__🔙[Back to Homepage](/content/intro.md)__
 
 Digitization is the process of converting geographic data from maps or images into digital form commonly represented as vector data.
 During this procedure, spatial information from maps or images is traced, forming points, polylines, or polygons.

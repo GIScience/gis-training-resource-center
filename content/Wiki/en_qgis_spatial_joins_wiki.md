@@ -3,9 +3,11 @@
 
 🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
+__🔙[Back to Homepage](/content/intro.md)__
+
 
 ## Join Attributes by location
->>>>>>> f9bef8fc5c286fce9cb8c1091a4820791f493513
+
 - Adds additional attributes of the join layer to the input layer based on the __spatial relationship__.
 - `Input Layer`: dataset you want to enrich
 - `Join layer`: dataset with additional information/attributes
