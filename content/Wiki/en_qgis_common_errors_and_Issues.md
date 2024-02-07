@@ -208,7 +208,7 @@ When you get wrong data results or missing data, please check your file names. Y
 
 ## File Management Issues
 
-There may me different reasons, f. ex. reopening your QGIS project, not all files will be displayed correctly because some got lost or were stored on different places, in any case, there is a solution: a clear folder structure.
+There may be different reasons, f. ex. reopening your QGIS project, not all files will be displayed correctly because some got lost or were stored on different places, in any case, there is a solution: a clear folder structure.
 
 __Solution:__
 
