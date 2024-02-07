@@ -52,36 +52,70 @@ These sort of problems are usually due to a) *mismatching KBS in layers and proj
 
 b) 
 
-Reprojecting: When having two layers with different KBS/CRS, then select one of the layers as the input layer having, f. ex. the KBS EPSG:6326 - WGS 84 and select EPSG:4326 - WGS 84 as the target KBS. Start the algorithm and you will receive a new layer, identical to the input layer, but with a different KBS. It is displayed in the workspace in the same place as the other layers, as QGIS reprojects it at runtime. However, its actual coordinates are different. You can check this using the `Add geometry attributes` algorithm. The coordinates are different from the coordinates in the other two attribute tables of the other layers.
+Reprojecting: When having two layers with different KBS/CRS, then select one of the layers as the input layer having, f. ex. the KBS EPSG:32632 - WGS 84 and select EPSG:4326 - WGS 84 as the target KBS. Start the algorithm and you will receive a new layer, identical to the input layer, but with a different KBS. 
+
+It is displayed in the workspace in the same place as the other layers, as QGIS reprojects it at runtime. However, its actual coordinates are different. 
+
+
+```{figure} /fig/en_qgis_layer_with_different_KBS.png
+---
+width: 75%
+name: en_qgis_layer_with_different_KBS.png
+---
+```
+
+You can check this using the `Add Geometry Attributes`< `Geometry Tools` algorithm. The coordinates are different from the coordinates in the other two attribute tables of the other layers.
+
+Detailed procedure:
+
+1. Select the `Vector`tab.
+
+2. Activate in the pop-up menue `Data Management Tools`.
+
+3. And in the following pop-up menue `Reproject Layer`.
 
 
 ```{figure} /fig/en_qgis_reproject_vector_layer01.png
 ---
-width: 85%
+width: 75%
 name: en_qgis_reproject_vector_layer01.png
 ---
 ```
 
-Always save your reprojected layers by the `export` and `save as` functions because they are only temporarily saved and will disappear after closing the project.
-
 
 ```{figure} /fig/en_qgis_reprojected_layer.png
 ---
-width: 85%
+width: 75%
 name: en_qgis_reprojected_layer.png
 ---
 ```
 
-Errors often occur if the KBS is set and no reprojection tool has been used. If you suspect that your reprojection has gone wrong, delete all affected layers from GIS, reload the data and then reproject. 
+Always save your reprojected layers by the `Export` and `Save as` functions because they are only temporarily saved and will disappear after closing the project.
+
+```{figure} /fig/en_qgis_reprojection_export.png
+---
+width: 75%
+name: en_qgis_reprojection_export.png
+---
+```
 
 Similar procedure for raster layers ...
+
+1. Select the `Raster` tab.
+
+2. Activate in the pop-up menue `Projections`.
+
+3. And in the following pop-up menue `Warp (Reproject)`
 
 
 ```{figure} /fig/en_qgis_reproject_raster_layers01.png
 ---
-width: 85%
+width: 75%
 name: en_qgis_reproject_raster_layers01.png
 ---
+```
+```{attention} 
+ Errors often occur if the KBS is set and no reprojection tool has been used. If you suspect that your reprojection has gone wrong, delete all affected layers from GIS, reload the data and then reproject. 
 ```
 
 ## Layer file disappeared from the layer window
@@ -91,7 +125,7 @@ If a layer file is no more active in the layer window after reopening a QGIS pro
 __Solution:__
 
 Next time do it in a correct way: 
-1. Click on the tab `layer` and on `save as` in the pop-up window.
+1. Click on the tab `Layer` and on `Save as` in the pop-up window.
 
 ```{figure} /fig/en_qgis_save_layer01.png
 ---
@@ -117,10 +151,10 @@ name: en_qgis_save_layer02.png
 
  __Solution:__
   
-  1. Activate the `processing tools` by going to `Plugins` >
+  1. Activate the `Processing Tools` by going to `Plugins` >
   `Manage and install Plugins`.
   2. Select `All`. 
-  3. Rehook the `Processing function` in the corresponding list.
+  3. Rehook the `Processing Function` in the corresponding list.
   
 ```{figure} /fig/en_missing_processing_tools.png
 ---
