@@ -238,5 +238,5 @@ The layer data used in the project are not saved in the project file. Instead, t
 Good data organisation with a fixed and well thought-out folder structure prevents such problems.
 ```
 
-
+See also the following [__Wiki_Page__]: (https://github.com/GIScience/gis-training-resource-center/blob/main/content/Wiki/en_qgis_projects_folder_structure_wiki.md) for `How to create a new QGIS project` and `How to open an existing QGIS project`.
 
