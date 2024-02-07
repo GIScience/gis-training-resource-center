@@ -60,3 +60,5 @@ The folder structure template can be downloaded [__here__](https://github.com/GI
 
 ![](/fig/Standard_project_folder_structure.drawio.svg)
 
+
+
