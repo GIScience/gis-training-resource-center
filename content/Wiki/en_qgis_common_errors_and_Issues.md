@@ -206,5 +206,37 @@ These errors in the geometries can be corrected by selecting `Fix Geometries` in
 
 When you get wrong data results or missing data, please check your file names. You should not use file names with capitals, special characters or empty spaces. Always use underscores between the words for the file name.
 
+## File Management Issues
+
+There may me different reasons, f. ex. reopening your QGIS project, not all files will be displayed correctly because some got lost or were stored on different places, in any case, there is a solution: a clear folder structure.
+
+__Solution:__
+
+Recommended standard folder structure:
+
+![](/fig/Standard_project_folder_structure.drawio.svg)
+
+How it may look like on your pc:
+
+
+```{figure} /fig/en_qgis_folder_structure_pc.png
+---
+width: 75%
+name: en_qgis_folder_structure_pc.png
+---
+
+```
+The standard folder structure has two principal advantages:
+1. By sharing the whole project folder, we can be certain that the project will run without problems on a different computer.
+2. The folder structure supports the proper organization of geodata and supports the stable function of a QGIS project. 
+
+The folder structure template can be downloaded [__here__](https://github.com/GIScience/gis-training-resource-center/blob/main/fig/GIS_Project_folder_template.zip).
+
+
+```{Tip}
+The layer data used in the project are not saved in the project file. Instead, the project file only contains the file paths where the layer data were located at the time the project was last saved on the PC. If the location of this layer data is subsequently changed, the error message "handle unavailable layers" will appear when the project is opened again.
+Good data organisation with a fixed and well thought-out folder structure prevents such problems.
+```
+
 
 
