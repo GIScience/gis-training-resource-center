@@ -28,10 +28,10 @@ Continuous raster data refers to datasets where the values assigned to each pixe
 
 ```{figure} /fig/mod8_rasterdata_DEM.png
 ---
-name: Exemplary Digital Elevation Model of an area in the indian Himalayas
+name: 
 width: 500px
 ---
-
+Exemplary Digital Elevation Model of an area in the indian Himalayas
 ```
 
 **Discontinous** rasters contain catigorical data, where each pixel represents a discrete classvalue rather than a value on a continuous scale. The information in these types of raster is sometimes also suitable for the storage with vector data. Some examples of classified maps include:
@@ -51,15 +51,17 @@ width: 500px
 
 ### Spatial Extent
 The spatial extent of a raster refers to the geographical area covered by the grid of cells in the raster dataset. It defines the boundaries of the raster dataset in terms of its geographical coordi-nates. The spatial extent is typically described by the minimum and maximum values of the spatial coordinates in every geographical direction (e.g. minimum and maximum latitude and longitude) that encompass all pixels of the raster.
-BEISPIEL ABBILDUNG
+
+
+**BEISPIEL ABBILDUNG**
 
 ### Spatial Resolution
-The spatial resolution of a raster refers to the area represented by each individual pixel on the ground in the real world. It quantifies the level of detail of the spatial representation within the dataset. For example, a spatial resolution of 30 metres per pixel means that each pixel represents an area of 30x30 metres on the ground. High spatial resolution means smaller pixel sizes, result-ing in finer detail and more accurate representation of spatial features within the dataset.
+The spatial resolution of a raster refers to the area represented by each individual pixel on the ground in the real world. It quantifies the level of detail of the spatial representation within the dataset. For example, a spatial resolution of 30 metres per pixel means that each pixel represents an area of 30x30 metres on the ground. High spatial resolution means smaller pixel sizes, resulting in finer detail and more accurate representation of spatial features within the dataset.
 
 ```{figure} /fig/mod8_rasterdata_spatialresolution.png
 ---
 name: Different spatial resolutions of the same raster
-width: 500px
+width: 900px
 ---
 
 ```
