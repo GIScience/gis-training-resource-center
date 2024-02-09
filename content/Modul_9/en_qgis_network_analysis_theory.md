@@ -12,7 +12,15 @@ Networks serve as simplified representations of real-world systems. A network co
  **Identifying Edges:** roads or pathways between locations **&rarr;** Ways in OpenStreetMap (roads, paths, cicleways)
 
  Edges can be endowed with diverse weights. OpenStreetMap features tags such as road type, segment length, speed limit, and surface condition, which can be interpreted as weight attributes. Depending on your requirements, you can compute the shortest route or opt for the route with minimal elevation gain.
- 
+
+ ```{figure} /fig/Network.png
+---
+width: 500px
+name: basic classification
+align: center
+---
+```
+
   <div style="text-align:center;">
   <img src="/fig/Network.png" width="500" height="370">
   </div>
