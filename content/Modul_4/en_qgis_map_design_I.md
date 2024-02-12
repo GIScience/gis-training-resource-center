@@ -174,180 +174,17 @@ width: 750px
 Symbolization for vector data; Source: White, T. (2017). Symbolization and the Visual Variables. *The Geographic Information Science & Technology Body of Knowledge (2nd Quarter 2017 Edition), John P. Wilson (ed.). DOI: 10.2222/gistbok/2017.2.3 
 ```
 
-In the dropdowns below you can find examples on how to set up common vector data styling.
-
->To Do: Provide the example data for follow along
-
-:::{dropdown} Exercise: Only display the outlines of polygons
-
-In this example, wewant to change the symbology of a single layer so that __only the outlines of the polygons are visible__. 
-
-To change the symbology of a single layer:
-1. Open the `Styling panel` and navigate to the symbology tab. By default, the symbology will be set to `Single Symbol`. This means that the same colours and contours will be applied to all the features in that layer.
-2. Click on `Simple Fill`
-3. Click on the arrow to the right of `Fill Colour`
-4. Check the `Transparent Fill` option
-
-```{figure} ../../fig/en_30.30.2_vector_layer_styling_transparent.png
----
-name: layer styling transparent
-width: 500 px
----
-```
-
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_make_only_outlines_visible.mp4"></video>
-
-:::
-
-:::{dropdown} Change the styling for multiple overlayed layers
-
-In this exercise, we will apply the same style to all features in a layer, but we will change multiple layers and overlay them so each is visible in a different style. We have the polygons for 3 administrative levels.
-
-```{figure} ../../fig/en_30.30.2_changing_layer_style_1.png
----
-name: change layer style 1
-height: 400px 
----
-Order the layers and navigate to the styling panel of the topmost layer
-```
-
-1. Add the `Adm0`, `Adm1` and `Adm2` shapefiles to your Session 2 project.
-2. Order the layers so they are all visible: Put the `Adm2` layer at the bottom, then the `Adm1` then `Adm0`. At first, this might look weird because `Adm0` will cover everything.
-3. Change the symbology of the Adm0 layer by opening the stlying panel and navigating to the Symbology tab. 
-
-
-```{figure} ../../fig/en_30.30.2_changing_layer_style_2.png
----
-name: change layer style 2
-width: 350px
-align: left
----
-Change the Fill type
-```
-
-4. Click on `Simple Fill` to open the style options.
-5. Expand the `Fill Colour` menu and check the `Transparent Fill` option. This will make only the boundaries visible, so __we will be able to see the layer under this one__.
-6. Choose a `Stroke Colour`, and make the `Stroke Width` 0.66 Millimeters.
-7. Click OK
-8. __Repeat the same process__ for the Adm1 layer, using the same colour as for Adm0 (it will be in "Recent colors) and leave the stroke width at 0.26.
-9. Now we can see the boundaries of the country and its states, and behind that we cann see the districs (Adm2).
-10. Let's make the districs layer's style consistent with the others.
-
-<br/><br/>
-
-11. Choose a `Fill Color`
-12. Use the same Stroke Colour` as for Adm0 and Adm1, but make the width 0.1 Millimeters and the Stroke Style a __Dash Line__
-13. Click OK and look at yout map: hopefully it's starting to look nicer!
-
-```{figure} ../../fig/en_30.30.2_changing_layer_style_3.png
----
-name: change layer style 3
----
-The styling of a vector data consists of the colour and the outline
-```
-
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_change_style_for_multiple_layers
-.mp4"></video>
-
-
-:::
-
-:::{dropdown} Use different styles in a single layer
-
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_rule_based_styling
-.mp4"></video>
-
-We can use symbology to __show the difference between features__ in the same layer. For example, it could be different types of buildings, quantities of Covid cases by district, or types of roads. We can choose a specific attribute of a dataset to assign different colors, outlines, or sizes to features:
-
-1. From your shapefile folder, __drag te ACLED security incidents shapefile onto your map__
-2. Open the `Symbology tab` for that layer and choose `Categorized` instead of Single Symbol.   
-```{note} 
-Categorized symbology is used when you have ***discrete*** variables.
-```
-
-```{figure} ../../fig/en_30.30.2_categorized_layer_symbology_1.png
----
-name: categorized layer symbology 1
-width: 500px
----
-Change the symbology type to "categorized" and choose the Value (variable) you wish to display
-```
-3. Now we need to __choose which attributes we want to display through the symbology__. In this case, it could be the number of casualtiees, or the actor who perpetrated the act. Let's categorize the features by `event_type`
-4. Click on `Classify` to __list all the unique values contained__ in the `event_type` field (i.e. all the possible types of security incidents recorded in our table)
-5. Now we can __change the style of each single value__
-6. Double click on the value `Explosions`
-7. At the bottom of the __Symbol selector__ window, choose a symbol to make Explosion points stand our
-8. Click on `OK`, then Apply to preview what the layer will look like
-9. Click `OK` again
-
-```{figure} ../../fig/en_30.30.2_categorized_layer_symbology_2.png
----
-name: categorized layer symbology 2
-width: 500px
----
-By double clicking on the __unique values__ in the classified list, you can change the symbol for each value
-```
-
-Now we have a map of Nigeria where you can locate the areas, that are affected by explosions more than others. On the map below, we also added text labels, which will be explained below.
-
-```{figure} ../../fig/en_exercise_map_design_example_Nigeria.png
----
-name: map design example regions affected by explosions in Nigeria
-width: 500px
----
-Regions affected by explosions in Nigeria
-```
-:::
-
-:::{dropdown} Style data based on variable ranges (graduated styling)
-
-If a layer contains numeric values that are continuous, they can be organized in intervals. These intervals can be displayed in graduated colours. In this exercise, we assign colours to Adm1 polygons based on the total population of each State.
-
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_graduated_styling
-.mp4"></video>
-
-1. Download the NGA_Adm1_Pop shapefile [link!!] and save it in your shapefile folder
-2. In QGIS, turn off the Adm1 and Adm2 layer, leaving only Adm0
-3. Drag the shapefile NGA_Adm1_Pop into your map
-4. Open its `Symbology` options and choose `Graduated`
-5. __Select the value you want to use to assign colours__, in this case, it will be `Population`
-
-```{figure} ../../fig/en_30.30.2_symbology_variable_ranges.png
----
-name: symbology of variable ranges
-width: 550px
----
-With variable ranges, select __Graduated__ symbology and choose the attribute with continuous values
-```
-
-6. Click on `Classify` to __list all values divided in classes__
-7. Choose __how many classes__ you want the data to be divided into ‒ let's say 4
-8. By default, the colour ramp will be red. However, red is not the right colour to use for population count, as it is generally used to communicate negative elements, such as food insecurity or cholera cases
-9. Click on __the arrow next to the colour ramp__ to choose another combination of colours - let's say a color ramp from white to blue
-10. Click `Apply` to preview the look of your layer, then `OK`
-
-```{figure} ../../fig/en_30.30.2_symbology_variable_ranges_2.png
----
-name: symbology of variable ranges 2
-width: 500px
----
-You can categorize the continuous values into classes and assign a colour ramp 
-```
-
-The following map shows the most populated States of Nigeria using a graduated colour categorization. These types of maps are called __Coropleth maps__. 
-
-```{figure} ../../fig/en_map_design_example_variable_ranges.png
----
-name: map design example_state population Nigeria
-width: 500px
----
-A map showing the population of Nigerian states
-```
-:::
+>Insert more theory
 
 ```{note} 
 Remember that __the layer's symbology is saved within your project file, not within your shapefile!__ If you share a shapefile with a colleague, it will have a different style when they add it to their own project.
 ```
+### SVG-Symbols, Raster images, and Markers
+
+QGIS let's you use different types markers for symbolization. These can be simple markers, raster images, or SVG-symbols. 
+- Simple markers are simple shapes such as rectangles, circles, or crosses that can be adjusted in the symbolization layer (color, size, outline, etc.). 
+- If you select raster images, the resolution of the symbol is limited by the amount of pixels in the image. It is not advisable to use high resolution images as symbols on your map because it may overload your PC. 
+- SVG-symbols are *scaleable vector graphic* symbols. As vector files, they can be scaled to any size while keeping the same resolution. In most cases, if you want to use a more complex symbol (e.g. hospital, school, train station), SVG-symbols are the best option as they let you adjust the symbol (colours, outline, size, etc.)
 
 ## Labels
 
@@ -402,7 +239,6 @@ Setting up labels in QGIS 30.30.2
 :::
 
 
-
 ## Symbology for raster data
 
 As we have already learned, raster data are basically a grid of pixels with different (numerical) values. As such, you can't style the shape, fill or outline of raster data. Raster data is visualized by assigning a colour ramp to the pixel value. QGIS offers several options to visualise raster data. For example, you can create a hillshade with digital elevation model (DEM). 
@@ -431,10 +267,12 @@ In the colour ramp selector, you can adjust each colour step. On the bottom, you
 
 The layers in QGIS are saved separately from the settings and styles of a QGIS Project. This means that if you load the same layers into a different QGIS-project, the symbology and styling of the data will be different. QGIS lets you save the symbology and styling of a layer as a seperate file (`.qml`-files). Working with `.qml`-files saves you a lot of work and assures consistency between your maps. 
 
-A `.qml`-file saves the styling information of a particular layer. You can choose wether to save only the colour symbology or all the options you assigned 
-
-You can also export a style into the same folder as the data so your colleagues can apply the same styling when loading the data into QGIS.
+A `.qml`-file saves the information of a particular layer. This includes the colours, outlines, shapes, labelling, as well as the Layer configuration, attribute table settings, and other options you have set for a layer in your QGIS-project, that are not related done to the data files themselves. You can choose wether to save only the colour symbology or any additional information. 
+ 
+You can export a style into the same folder as the data so your colleagues can apply the same styling when loading the data into QGIS.
 Some organisations may also use standarized symbols or colours in their maps. 
+
+For example, if you want to send a layer to your colleague with the same styling as you, it is best to check the "__Layer properties__", "__Symbology__", and "__Labels__" categories (and any additional styling options you have set). If you only wish to save a certain colouring, line thickness, or labeling style, you only need to check the respective boxes.
 
 :::{dropdown} Saving or exporting styling settings
 
@@ -446,8 +284,6 @@ Some organisations may also use standarized symbols or colours in their maps.
 .mp4"></video>
 :::
 
-When saving a style, you can choose what information and settings you want to save in the `.qml`-file. For example, if you want to send a layer to your colleague with the same styling as you, it is best to check the "__Layer properties__", "__Symbology__", and "__Labels__" categories (and any additional styling options you have set). If you only wish to save a certain colouring, line thickness, or labeling style, you only need to check the respective boxes.
-
 ```{figure} ../../fig/en_30.30.2_save_layer_style_window.png
 ---
 width: 350px
@@ -456,13 +292,15 @@ name: Save layer styling window
 Save Layer styling window in QGIS 30.30.2.
 ```
 
-When working with similar data (e.g.: building types or flooding risk), it is useful to have template styles, that can be automatically or quickly loaded into your QGIS-project.
+When working with similar data (e.g.: building types or flooding risk), it is useful to have template styles, that can be quickly loaded into your QGIS-project or saved in your Styling Template library. 
 
 
 ```{Tip}
 When a styling is saved in the same location as the data and has the same name as the corresponding dataset, the styling will be automatically applied to the layer when loading the data into QGIS!
 ```
 
+
+>TO DO: insert links
 
 - [Exporting a styling](link)
 - [Loading a style into your QGIS-project](link)
