@@ -1,6 +1,7 @@
 # Plugin: Openrouteservice (ORS) tools
 
-##Install the Plugin and set up an API
+## Install the Plugin and set up an API
+-  Go under tab "Plugins"
 
 
 
