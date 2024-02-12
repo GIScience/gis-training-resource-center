@@ -271,10 +271,15 @@ See also the following [__Wiki_Page__]:
 After installing QGIS, some basic settings should be changed to avoid possible sources of error.
 If a layer file does not have a projection, a projection must be defined for it when it is imported into QGIS. By deactivating the automatic projection selection, this projection can be defined manually. This prevents layers from accidentally being in the wrong projection.
 
+1. Select the `Settings` tab.
+2. Then activate in the nagivation menue `Options`.
+3. In the pop-window select `CRS Handling`. 
+4. Under `CRS for projects` activate `Use CRS from first layer added`. 
+5. And under `CRS for layers` activate `Prompt for CRS`.
 
 ```{figure} /fig/en_qgis_CRS_settings.png
 ---
-width: 85%
+width: 95%
 name: en_qgis_CRS_settings.png
 ---
 
