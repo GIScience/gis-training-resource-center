@@ -40,7 +40,7 @@ Before doing any sort of processing, you need to familiarise yourself with the d
     * You can look for patterns, averages, outliers
 
 We are usually looking for ways to __describe__ our data to an audience in some ways. Sometimes spatial analysis will be used to provide recommendations for activities. Considering the amount of data available online, it is always important to take a step back and gain perspective when facing this knowledge, these capacities, as well as the data itself before rushing in to manipulate it:
-* Reliability: Can I trust this data?
+* Reliability: Can I trust this datagit c?
 * Interest: Do I need this data?
 * Usage: Am I able to use this data?
 * Comprehensiveness: Is this data complete?
@@ -60,7 +60,7 @@ It is important to know the __limitations__ of the data at your disposal - don't
 
 ```{Attention} Spatial Representation and Analysis
 There are some spatial analysis problems that are difficult to avoid completely. For example the __Modifiable Areal Unit Problem__ (pictured below), where the results look different depending on the unit of analysis.  
-![Modifiale Areal Unit Problem Example](/../fig/en_modifiable_areal_unit_problem_example.png)
+![Modifiable Areal Unit Problem Example](/../fig/en_modifiable_areal_unit_problem_example.png)
 ```
 
 __There are two main types of data analysis__:
@@ -118,7 +118,7 @@ For example, to calculate the area of polygons:
 
 In the attribute table, you will find a new column called `Area` with the respective area for each feature. 
 
-```{Note} Measurement Units
+```{Note}Measurement Units
 The unit of measurement of the calculated area depends on the distance unit settings of the current project's CRS (metrical or geographic). In most cases you want metres or kilometers. Make sure the units of your CRS are metres to get the correct values. 
 
 You can check this by opening the CRS selector (bottom right corner) and reading the information of your selected CRS. 
