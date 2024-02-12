@@ -274,7 +274,14 @@ See also the following [__Wiki_Page__]:
 After installing QGIS, some basic settings should be changed to avoid possible sources of error.
 If a layer file does not have a projection, a projection must be defined for it when it is imported into QGIS. By deactivating the automatic projection selection, this projection can be defined manually. This prevents layers from accidentally being in the wrong projection.
 
-++image ergänzen++
+
+```{figure} /fig/en_qgis_CRS_settings.png
+---
+width: 85%
+name: en_qgis_CRS_settings.png
+---
+
+```
 
 ### Regular saving
 Unfortunately, GIS programs are notorious for freezing or crashing completely. Although there is a trend towards fewer complications with better hardware, even a "gaming PC" costing several thousand euros is not completely safe.
