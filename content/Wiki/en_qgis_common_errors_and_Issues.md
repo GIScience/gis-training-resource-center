@@ -7,6 +7,32 @@ Here we are collecting common QGIS errors and issues as general QGIS training su
  __Main items__ (to add for example different screen views)
 
 
+## QGIS on Mac doesn't open
+When opening QGIS for the first time on Mac you can get this error message:
+
+```{figure} /fig/qgis_on_mac.png
+---
+width: 55%
+git  push
+name: qgis_on_mac.png
+---
+
+```
+
+To solve this press the control button on your keyboard and right-click open.
+    
+If this problem persists, you can change the settings on your device. Go in the `Settings` > `Security & Privacy` and scroll down, click `Open Anyway`
+
+```{figure} /fig/opening_qgis_mac.png
+---
+width: 55%
+git  push
+name: opening_qgis_mac.png
+---
+
+```
+
+
 ## A layer is not displayed in QGIS 
 
  __Solution:__ 
@@ -15,7 +41,7 @@ Here we are collecting common QGIS errors and issues as general QGIS training su
 
 ```{figure} /fig/en_layer_display.png
 ---
-width: 55%git push
+width: 55%
 git  push
 name: en_layer_display.png
 ---
