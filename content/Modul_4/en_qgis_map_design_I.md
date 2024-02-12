@@ -87,7 +87,6 @@ Styling panel in QGIS 3.30.2
 ```
 
 
-
 For each layer in QGIS, there is a styling panel where you can change the symbology, colour and label for the features in that layer. There are two ways to open the layer styling options in QGIS:  
 1. Right click on the layer you wish to style and select `properties`. A new window will open up with a vertical tab section on the left. Navigate to the `symbology` tab. 
 2. Open the layer styling panel by enabling it under `View`>`Panels`>`Styling Panel`. Usually, the 
