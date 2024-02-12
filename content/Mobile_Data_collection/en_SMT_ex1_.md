@@ -44,8 +44,9 @@ Wrap-up (with presentations):
 - 10 min general discussion
 - a bit buffer time for the change of the groups
 ```
-
-Tip to shorten the time you can also just focus the hands-on-exploration on specific parts of the workflow. You can for example work with pre-marked maps to focus on the second half of the workflow or just focus on the first parts and show the final parts with prepared examples by sharing your screen. 
+```{Tip}
+To shorten the time you can also just focus the hands-on-exploration on specific parts of the workflow. You can for example work with pre-marked maps to focus on the second half of the workflow or just focus on the first parts and show the final parts with prepared examples by sharing your screen. 
+```
 
 ## Instructions for the trainers 
 ### Preparation and material 

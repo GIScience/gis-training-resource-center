@@ -115,6 +115,10 @@ parts:
       - file: content/Modul_6/en_qgis_data_analysis_theorie.md
         sections:
           - file: content/Modul_6/en_qgis_data_analysis_ex1.md
+  - caption: Modul 7- Automation with QGIS
+    chapters:
+      - file: content/Modul_7/en_qgis_automation_theory.md
+      - file: content/Modul_7/en_qgis_modul_7_ex1.md
   - caption: Modul 8 - Remote Sensing and Raster data
     chapters:
       - file: content/Modul_8/en_qgis_remote_sensing_raster_theorie.md
@@ -135,7 +139,8 @@ parts:
       - file: content/GIS_AA/en_qgis_drought_trigger_somalia.md
         sections:
           - file: content/GIS_AA/en_qgis_srcs_basic_ex.md
-      - file: content/GIS_AA/en_qgis_risk_assessment_plugin.md 
+      - file: content/GIS_AA/en_qgis_risk_assessment_plugin.md
+      - file: content/GIS_AA/en_qgis_historical_impact_assessment_sudan.md 
   - caption: Mobile Data Collection
     chapters:
       - file: content/Mobile_Data_collection/en_SMT.md

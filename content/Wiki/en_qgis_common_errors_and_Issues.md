@@ -6,6 +6,32 @@ Here we are collecting common QGIS errors and issues as general QGIS training su
 ## Different QGIS versions
 The Wiki and in particular the videos it contains are only a snapshot in time. QGIS itself, as well as the installable extensions, are constantly being developed and improved. There may therefore be differences between the various versions in the appearance of the user interface or, in rare cases, even in the function. Consequently, there may be differences between the wiki and the QGIS installed on your PC.
 
+## QGIS on Mac doesn't open
+When opening QGIS for the first time on Mac you can get this error message:
+
+```{figure} /fig/qgis_on_mac.png
+---
+width: 55%
+git  push
+name: qgis_on_mac.png
+---
+
+```
+
+To solve this press the control button on your keyboard and right-click open.
+    
+If this problem persists, you can change the settings on your device. Go in the `Settings` > `Security & Privacy` and scroll down, click `Open Anyway`
+
+```{figure} /fig/opening_qgis_mac.png
+---
+width: 55%
+git  push
+name: opening_qgis_mac.png
+---
+
+```
+
+
 ## A layer is not displayed in QGIS 
 
  __Solution:__ 
@@ -14,7 +40,7 @@ The Wiki and in particular the videos it contains are only a snapshot in time. Q
 
 ```{figure} /fig/en_layer_display.png
 ---
-width: 55%git push
+width: 55%
 git  push
 name: en_layer_display.png
 ---
@@ -40,18 +66,19 @@ name: en_closed_layer_view.png
 
 __Solution:__
 
-These sort of problems are usually due to a) *mismatching KBS in layers and project*, or b) an *incorrect reprojection*. 
+These sort of problems are usually due to a) *mismatching crs in layers and project*, or b) an *incorrect reprojection*. 
 
  a) 
  1. Check the layer properties (right-click on the corresponding layer).
  2. Select in the pop-up window `Properties`.
  3. In the next pop-up-window select `Information` and check which projection is defined there under the entry `Coordinate Reference System (CRS)`. 
  4. And additionally check if the same projection is set in the status bar at the bottom right.
- 5. Correct any discrepancies by reprojecting the layers or changing the setting of the KBS/CRS project. 
+ 5. Correct any discrepancies by reprojecting the layers or changing the setting of the crs project. 
 
 b) 
 
-Reprojecting: When having two layers with different KBS/CRS, then select one of the layers as the input layer having, f. ex. the KBS EPSG:32632 - WGS 84 and select EPSG:4326 - WGS 84 as the target KBS. Start the algorithm and you will receive a new layer, identical to the input layer, but with a different KBS. 
+**Reprojecting:**  
+When having two layers with different crs, then select one of the layers as the input layer having, f. e. the crs EPSG:32632 - WGS 84 and select EPSG:4326 - WGS 84 as the target crs. Start the algorithm and you will receive a new layer, identical to the input layer, but with a different crs. 
 
 It is displayed in the workspace in the same place as the other layers, as QGIS reprojects it at runtime. However, its actual coordinates are different. 
 
@@ -114,16 +141,17 @@ name: en_qgis_reproject_raster_layers01.png
 ---
 ```
 ```{attention} 
- Errors often occur if the KBS is set and no reprojection tool has been used. If you suspect that your reprojection has gone wrong, delete all affected layers from GIS, reload the data and then reproject. 
+ Errors often occur if the crs is set and no reprojection tool has been used. If you suspect that your reprojection has gone wrong, delete all affected layers from QGIS, reload the data and then reproject. 
 ```
 
 ## Layer file disappeared from the layer window
 
-If a layer file is no more active in the layer window after reopening a QGIS project, it was only temporarily installed: ![](/fig/en_qgis_temporary_Layer.png)
+If a layer file is no more active in the layer window after reopening a QGIS project, it was only temporarily installed. Temporary layers have a symbol on the right of their name, as so:
+ ![](/fig/en_qgis_temporary_Layer.png)
 
 __Solution:__
 
-Next time do it in a correct way: 
+Next time, save it: 
 1. Click on the tab `Layer` and on `Save as` in the pop-up window.
 
 ```{figure} /fig/en_qgis_save_layer01.png
@@ -135,7 +163,7 @@ name: en_qgis_save_layer01.png
 ```
 
 2. Put in a `file name` and click on the `three points` ![](/fig/Three_points.png) to save the file on the wished directory place.
-3. Select the corresponding CRS/KBS.
+3. Select the corresponding CRS.
 4. Click `ok`.
 
 ```{figure} /fig/en_qgis_save_layer02.png
