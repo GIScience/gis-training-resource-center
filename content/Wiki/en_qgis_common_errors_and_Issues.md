@@ -4,8 +4,7 @@ Here we are collecting common QGIS errors and issues as general QGIS training su
 
 
 ## Different QGIS versions
- __Main items__ (to add for example different screen views)
-
+The Wiki and in particular the videos it contains are only a snapshot in time. QGIS itself, as well as the installable extensions, are constantly being developed and improved. There may therefore be differences between the various versions in the appearance of the user interface or, in rare cases, even in the function. Consequently, there may be differences between the wiki and the QGIS installed on your PC.
 
 ## A layer is not displayed in QGIS 
 
@@ -238,5 +237,51 @@ The layer data used in the project are not saved in the project file. Instead, t
 Good data organisation with a fixed and well thought-out folder structure prevents such problems.
 ```
 
-See also the following [__Wiki_Page__]: (https://github.com/GIScience/gis-training-resource-center/blob/main/content/Wiki/en_qgis_projects_folder_structure_wiki.md) for `How to create a new QGIS project` and `How to open an existing QGIS project`.
+See also the following [__Wiki_Page__]: 
+
+(https://github.com/GIScience/gis-training-resource-center/blob/main/content/Wiki/en_qgis_projects_folder_structure_wiki.md) for `How to create a new QGIS project` and `How to open an existing QGIS project`.
+
+## Specific QGIS problems 
+### Basic settings > Deactivating the automatic projection selection
+After installing QGIS, some basic settings should be changed to avoid possible sources of error.
+If a layer file does not have a projection, a projection must be defined for it when it is imported into QGIS. By deactivating the automatic projection selection, this projection can be defined manually. This prevents layers from accidentally being in the wrong projection.
+
+++image ergänzen++
+
+### Regular saving
+Unfortunately, GIS programs are notorious for freezing or crashing completely. Although there is a trend towards fewer complications with better hardware, even a "gaming PC" costing several thousand euros is not completely safe.
+More complex tasks with longer calculation times may still cause problems. Regular saving is therefore recommended.
+
+See also the following [__Wiki_Page__]:
+
+(https://github.com/GIScience/gis-training-resource-center//content/Wiki/en_qgis_interface_wiki.html#save-open-qgis-projects) `Save and open QGIS Projects`. 
+
+### GRASS applications
+
+ QGIS also allows the use of tools from external GIS software, such as GRASS GIS. GRASS does not have to be downloaded separately, but is automatically installed when QGIS is installed. GRASS tools are identified by their icon. 
+
+ ```{attention} 
+  Please note that the GRASS software is not started when the standard QGIS application is started. Consequently, an error message may appear when using GRASS tools. This can be remedied by opening the QGIS with GRASS application (found via the computer's search function) instead of the standard application.
+ ```
+
+ ### SAGA with Linux
+
+ SAGA is another external GIS software. SAGA tools are identified by their icon. When using Windows or MacOS as the operating system, SAGA is automatically implemented when QGIS is installed. With Linux, however, SAGA is not installed automatically and must be installed manually. Experience has shown that this installation is not always easy and can cause problems. Alternatively, you can either use a Windows or MacOS virtual box or refrain from using SAGA tools (you will then have to search for alternative tools yourself).
+
+### Umlauts, special characters, spaces in file paths
+
+If the file path contains umlauts (ä,ö,ü), special characters (!,?, ., etc.) or spaces, this can lead to problems when these files are processed by QGIS. It is therefore recommended that you avoid these characters in your file paths (write out umlauts, replace spaces with _).
+
+```{attention} 
+Temporary files are user-specific (if several people use one PC, each person has their own temporary files). The file path therefore contains your user name. If this contains problematic characters, it may therefore be advisable to change it.
+
+ ```
+
+## Help Access Links
+
+Here you will find further Help access links or QGIS community links to address specific issues.
+
+....
+
+
 
