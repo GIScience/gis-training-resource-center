@@ -124,19 +124,37 @@ The unit of measurement of the calculated area depends on the distance unit sett
 You can check this by opening the CRS selector (bottom right corner) and reading the information of your selected CRS. 
 ```
 
+:::{dropdown} Example: Calculating the length of roads
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2__fieldcalc_calculating_length
+.mp4"></video>
+
+:::
 ## Basic statistics
 
-In the field calculator, we can calculate the length, area, perimeter for each feature of a dataset. However, we might want to have aggregate statistics on a dataset (average length/area, total length/area). 
+In the field calculator, we can calculate the length, area, perimeter for each feature of a dataset. However, we might want to have aggregate statistics on a dataset (average length/area, total length/area).   
 QGIS comes with two basic processing tools to generate statistics:
 
-| Processing tool | Description |
-|--- | ---|
+| *Processing tool* | *Description* |
+|---------- | ---|
 |"__Basic statistics for fields__" | This algorithm generates basic statistics (count, sum, mean, median, standard deviation, quartiles, ...) from the analysis of a values in a field in the attribute table of a vector layer. Numeric, date, time and string fields are supported. The statistics returned will depend on the field type. Statistics are generated as an HTML file.|
-| "__Statistics by categories__" | This algorithm calculates statistics of fields depending on a parent class. In the field '
+| "__Statistics by categories__" | This algorithm calculates statistics of fields depending on a parent class. In the option `Field to calculate statistics on`, you must select the column that you wish to create statistics for (for example, area/length). In the option `Field(s) with categories` you select the values that will be used as categories in the statistics (for example, flooding=Y/N, type of road, type of building/amenity). | 
 
 
-:::{dropdown} Example: Aggregating... 
+:::{dropdown} Example: Statistics by categories
+In this example we have a road network which has been intersected with a flood extent. A new field ("Flood") has been calculated containing information wether the road is flooded or not (Y=flooded, N=not flooded). The length of each road has been calculated using the `$length` function in the field calculator as new column called "Length".  
+We want to calculate the total length of flooded and unflooded road respectively. 
 
+1. Open the "Statistics by category"-tool
+2. Select the road network layer.
+3. Under `Field to calculate statistics on`, select `Length`
+4. Under `Field(s) with categories`, select `Flood`
+5. Specify a location to save the statistics file.
+6. Click `Run`
+8. After completion, a new layer will appear in your layer tab. This will not contain spatial attributes and is a simple attribute table with the statistics. In our case, we will have the basic statistics (min, max, range, sum, median, sd, etc.) for all the road features with the flooding value "Y", and "N". 
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_statistics_by_categories_example
+.mp4"></video>
 :::
 
 ## Buffer analysis
@@ -152,5 +170,5 @@ Creating a [buffer](https://giscience.github.io/gis-training-resource-center/con
 
 ## Heatmaps
 
-## 
+## Hexagon grid
 
