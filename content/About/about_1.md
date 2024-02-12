@@ -1,13 +1,8 @@
-# About :)
-This QGIS training is made by people who believe GIS can help humanitarians to serve people in need better. ❤️
-The idea for this training platform originated from a group of people from the German Red Cross, British Red Cross and Netherlands Red Cross. 💡📣
-A group of dedicated student assistants and employees of the Heidelberg Institute for Geoinformation Technology (HeiGIT) are working to put together the materials on this platform. 🔨
-
-
 # **Welcome at the GIS Training Resource Center!**
 
 Whether being a beginner or already having some experiences, working with QGIS can be difficult. Our goal is to provide a comprehensive platform containing the essential skills and resources for the use in humanitarian aid without having to google for hours. 🔎
-In addition to the modules, we offer exercises and a wiki to enable individuals to work through the material and learn independently.
+In addition to the modules, we offer exercises and a wiki to enable individuals to work through the material and learn independently.  
+This QGIS training is made by people who believe GIS can help humanitarians to serve people in need better. ❤️
 
 ### Our Mission:
 We share the commitment to humanitarian aid. Through this website, our goal is to offer a unified, accessible and comprehensive resource, equipping individuals and organizations with the knowledge and tools necessary for working with QGIS. 
