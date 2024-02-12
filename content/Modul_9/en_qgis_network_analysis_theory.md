@@ -33,7 +33,7 @@ You can determine directions or standard routes, which unveil the shortest path 
 - Completly Open-Source
 - Global public API
   - Updates every week
-  - >100GB RAM per routing profile
+  - more than 100GB RAM per routing profile
     >Some limitations due to computational capacities
 - Can also run on your local laptop
   - A small to medium country with one profile
@@ -41,12 +41,12 @@ You can determine directions or standard routes, which unveil the shortest path 
 - Different routing profiles (car, hgv, bike, pedestrian, wheelchair)
 
 #### Services
-- **Directions/standard routing**: Shortest path bewteen two locations
+- **Directions/standard routing**: Shortest path between two locations
 - **Isochrones**: Area reachable within a limit (time | distance)
 - **Matrix**: Times / Distances bewteen a set of locations
 - **Optimization**: Best order to visit a set of points
 
--> This module deals with isochrones and shows a network analysis in QGIS in two different ways.
+>This module provides an accessibility analysis based on OpenRouteService isochrones.
 
 #### Isochrones
 - Different profiles: car, pedestrian, Bike, Heavy Goods vehicles
@@ -56,7 +56,7 @@ You can determine directions or standard routes, which unveil the shortest path 
   - Noise aware routing
   - Landmark routing
   - (heat aware routing)
-- Based on profile and preferences what area is reachable within a given time       limit?
+- Based on profile and preferences what area is reachable within a given time limit?
 - Determine
   - Reachability
   - Catchment areas
