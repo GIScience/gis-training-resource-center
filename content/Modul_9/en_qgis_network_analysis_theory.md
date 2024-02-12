@@ -14,9 +14,9 @@ Creating a graph involves defining its nodes (vertices) and edges (connections b
 **Additional Information**
 Edges can be endowed with diverse weights. OpenStreetMap features tags such as road type, segment length, speed limit, and surface condition, which can be interpreted as weight attributes. Depending on your requirements, you  can compute the shortest route or opt for the route with minimal elevation gain.
 
- ```{figure} /fig/data_to_network.drawio.png
+ ```{figure} /fig/graph_creation.png
 ---
-width: 500px
+width: 700px
 name: basic classification
 align: center
 ---
