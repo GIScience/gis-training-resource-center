@@ -89,7 +89,10 @@ There are multiple different file formats for storing an working with raster dat
 4.	**Esri Grid (.adf)**: Esri's raster format, used in ArcGIS, supports georeferncing amd metadata
 5.	**GeoPackage (.gpkg)**: Open format for storing geospatial data, supports raster and vec-tor.
 
-## Data sources/ typical use cases in  the humanitarian sector
+**Beispielbild Metadata**
+
+
+## Use and Sources of Raster Data in the Humanitarian Sector
 In the humanitarian sector, many different types of raster data are used in various application areas. The most important grid types include, for example, population grids, which can form the basis for calculating the exposure of the population to a natural hazard like floods, or precipitation grids, which can significantly help to understand droughts.
 
 If raster data is available at several points in time or even as a continuous data series, parameters such as the condition of agricultural land can be measured with data like a series of rasters of a vegetation index.
@@ -100,9 +103,9 @@ Main products/raster types you may come across in the humanitarian sector includ
 3. Landuse and Lancover Classifications like **XXXX**
 4. Risk Maps like flood inundation zones alongside rivers
 
-Popular and proven sources for raster data include
+Popular and proven sources for raster data include:
 
-### HDX (The Humanitarian Data Exchange) Data Portal:**<br>
+### HDX (The Humanitarian Data Exchange) Data Portal:<br>
 **Offering**: Hosts a wide range of humanitarian data for a variety of countries, including raster data regarding population countts/density and demographic parameters like age and sex structurs or birthrates.<br><br>
 **Pros and Cons**
 * No account needed
@@ -112,7 +115,7 @@ Popular and proven sources for raster data include
 
 Online: **HDX LINK**
 
-### USGS earth Explorer
+### USGS Earth Explorer
  **Offering**:The Data Portal of the US Geological Survey provides access to a vast collection of satellite imagery and derived products like DEMs and Landcover Data.<br><br> 
  **Pros and Cons:**
 * Quite extensive archive of remote sensing data
@@ -127,27 +130,20 @@ Online: **USGS LINK**
 <br><br> 
  **Pros and Cons:**
 * Wide range of basic and processed remote sensing products
-* Advanced search and filtering options
-* Acount is needed for data download
-* 
-
-Online: **USGS LINK**
+* Nice interface for visalization and basic analysis
+* Account is needed for data download
+* Data search needs basic knowledge of geospatial data and remote sensing
 
 
-
-
-
-
-    * Sources: HDX, USGs Earth Explorer, NASA, EO Portal
-    * Products: DEMS, LULVC; Population Data, Precipitation data, Vegetation, Water and drought indices
+Online: **ESA LINK**
+<br><br><br><br>
 
 
 
 
 
-
-
-## Remote sensing data
+## Notes 
+### Remote sensing data
     * Remote sensing Basics: Data types, spectral properties, use cases/typical products
     * Electromagnetic spectrum
     * Concept: Multiple raster bands
@@ -157,12 +153,12 @@ Online: **USGS LINK**
 
 --> DEM
 
-## Data sources/ typical use cases in  the humanitarian sector
+### Data sources/ typical use cases in  the humanitarian sector
     * Sources: HDX, USGs Earth Explorer, NASA, EO Portal
     * Products: DEMS, LULVC; Population Data, Precipitation data, Vegetation, Water and drought indices
 
 
-## Frequently used Tools in QGIS
+### Frequently used Tools in QGIS
     * Raster Calculator
     * Zonal Statistics
     * Rasterize
@@ -171,7 +167,7 @@ Online: **USGS LINK**
     * Slope/TWI? optional
     * Visulisation of Rasters? -> Eigenes Kapitel
 
-## Exercises
+### Exercises
     * Pop per Districts berechnen
     * Index, z.B. NDVI berechnen
     * Einfache Multi Criteria Analyse
