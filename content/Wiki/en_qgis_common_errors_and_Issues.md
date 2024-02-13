@@ -4,7 +4,7 @@ Here we are collecting common QGIS errors and issues as general QGIS training su
 
 
 ## Different QGIS versions
-The Wiki and in particular the videos it contains are only a snapshot in time. QGIS itself, as well as the installable extensions, are constantly being developed and improved. There may therefore be differences between the various versions in the appearance of the user interface or, in rare cases, even in the function. Consequently, there may be differences between the wiki and the QGIS installed on your PC.
+The Wiki and in particular the videos it contains are only a snapshot in time. QGIS itself, as well as the installable extensions, are constantly being developed and improved. There may therefore be differences between the various versions in the appearance of the user interface or, in rare cases, even in the function. Consequently, there may be differences between the Wiki and the QGIS installed on your PC.
 
 ## QGIS on Mac doesn't open
 When opening QGIS for the first time on Mac you can get this error message:
@@ -314,11 +314,33 @@ Temporary files are user-specific (if several people use one PC, each person has
 
  ```
 
-## Help Access Links
+## QGIS Help Access Links
 
-Here you will find further Help access links or QGIS community links to address specific issues.
+Here you will find further help access links or QGIS community/forum links to address specific issues:
 
-....
+#### QGIS tutorials and tips:
++ Collection of QGIS tutorials and tips: https://www.qgistutorials.com/en/
 
++ QGIS training manual: https://docs.qgis.org/3.28/en/docs/training_manual/index.html
+
++ QGIS user guide: https://docs.qgis.org/3.28/en/docs/user_manual/index.html
+
++ QGIS server guide/manual: https://docs.qgis.org/3.28/en/docs/server_manual/index.html
+
++ QGIS plugin user manual: https://docs.qgis.org/3.28/en/docs/user_manual/plugins/plugins.html
+
++ QGIS workshop and video tutorials (Harvard University) : https://gis.harvard.edu/qgis-workshop-and-video-tutorials-0 
+
+#### QGIS community/forums:
++ Geographic Information Systems: https://gis.stackexchange.com/?tags=qgis
+
++ QGIS user groups: https://www.qgis.org/en/site/forusers/usergroups.html#qgis-usergroups
+
+#### QGIS YouTube channels: 
++ The best YouTube channels in QGIS and open source gis tools: https://hatarilabs.com/ih-en/the-best-youtube-channels-in-qgis-and-open-source-gis-tools-in-any-language 
++ Absolute beginners guide to QGIS: https://www.youtube.com/watch?v=NHolzMgaqwE
++ QGIS complete tutorial for beginners: https://www.youtube.com/watch?v=d15Xl4OphDk
++ QGIS for beginners: https://www.youtube.com/watch?v=Eg4_duqH5Q4
++ Introduction to QGIS: https://www.youtube.com/watch?v=kxJI5FAGjzQ
 
 
