@@ -77,6 +77,4 @@ You can determine directions or standard routes, which unveil the shortest path 
 -  Max. 60minutes on the public API
 -  SDKs & Plugins: Python, R, JavaScript, QGIS Plugin "ORS Tools"
   
-bit stuff here:
 
-https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/blob/main/0318_network.pdf
