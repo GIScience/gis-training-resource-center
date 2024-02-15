@@ -19,6 +19,8 @@ Download all datasets [here](linktobeadded.zip) and save the folder on your comp
 
 3. Familiarise yourself with the data by opening the attribute table.
 
+3.1 Hallo, hier ist ne neue Aufgabe
+
 4. In the `nigeria_populated_places.shp`, select manually **Zuyel** and zoom onto the selected point. 
 
 ```{Hint}
