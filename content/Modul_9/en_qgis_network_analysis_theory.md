@@ -21,6 +21,14 @@ name: basic classification
 align: center
 ---
 ```
+### Dijkstra Algorithm
+- E. W. Dijkstra
+- Discovered 1956, published 1959
+- Single pair shortest path algorithm (SPSP) - for directions / A → B routing
+- Single source shortest path algorithm (SSSP) - for isochrones
+- Base of a multitude of routing algorithms
+
+
 
 ### Analysis
 You can determine directions or standard routes, which unveil the shortest path between two points. Isochrones offer insight into the area accessible within a specified time or distance threshold. Additionally, generating a matrix enables the assessment of time or distance between predefined locations. Alternatively, graphs facilitate travel optimization by computing the most efficient sequence for visiting a given set of points.
