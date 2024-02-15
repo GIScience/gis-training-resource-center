@@ -28,7 +28,7 @@ align: center
 - Single source shortest path algorithm (SSSP) - for isochrones
 - Base of a multitude of routing algorithms
 
- ```{figure} /fig/Gif_dijkstra.png
+ ```{figure} /fig/Gif_dijkstra.gif
 ---
 width: 700px
 name: basic classification
