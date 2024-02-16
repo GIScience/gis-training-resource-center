@@ -101,17 +101,48 @@ The sketch maps are now being processed and georeferenced with the annotations e
 
 #### 3. Start your QGIS Project
 
-Open QGIS and load your vector files by dragginf and dropping them into the layer panel. Explore the file by opening the attribute table. 
+Open QGIS and load your vector files by dragging and dropping them into the layer panel. Explore the file by opening the attribute table. 
 
 ```{Note}
-When you upload a several marked Sketch Maps simultaneously, you will get one vector output containing all the markings of all Sketch Maps, while uploading your Sketch Maps one by one will provide you with one vector file for the marking in each Sketch Map. This information can be important for the planning phase of your p mapping process.
+When you upload a several marked Sketch Maps simultaneously, you will get one vector output containing all the markings of all Sketch Maps, while uploading your Sketch Maps one by one will provide you with one vector file for the marking in each Sketch Map. This information can be important for the planning phase of your  mapping process.
 ```
+Your vectorized sketches in the geojson format contain a feature for every extracted .png and markup color. In general, each marking in your sketch map will appear in the attribute table as one row, containing the name of your sketch map as well as the detected colour of the respective marking. We want to visualize now the degree of overlapping flood areas in order to create a heatmap. For this purpose  we have to convert  every feature to a distinct raster and then sum up the overlapping pixels. In QGIS, you can do this in the follwoing steps:
 
 
-#### 3. Rasterize
+#### 4. Rasterize
 
-#### 4. Raster Calculator
 
+1. Add a column to your vector
+
+- Open the Attribute Table of your Vector file and open the  [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field)  by clicking on ![](/fig/mActionCalculateField.png).
+- In the field calculator dialog, check the `Create a new field` option, specify "fixed_val" as `Output field name` of the new field and choose "Whole number (integer)" as `Result field type`.
+- In the field calculator expression box, enter as value you want to assign to all features "1" (without quotes). 
+- Click `Ok`
+
+2. Convert your vectors to Rasters
+
+In the next step we want to rastzerize our vector layer. That means that we are essentially converting our vector geometries into a raster grid, where each cell represents a portion of the original vector features. Basically we want to represent our flood polygons as raster grid where each cell is assigned the value of 1. In our resulting raster layer, the value 1 would then stand for "flood area".
+
+- In the top bar navigate via `Raster`, `Conversion` to `Rasterize (Vector to Raster)`. Alternatively you can also search and find `Rasterize (Vector to Raster)` in your __Processing Toolbox__. 
+- Choose as input layer your vector layer
+- Important: Set the green loop symbol left from the tool wrench activated. This ensures the iteration over each features (row) in your layer, meaning that every feature in your layer is converted seperatly.
+- Set `Field to use for a burn-in value` to your recently created field "fixed_val" and set `A fixed value to burn` to 1. The term "value to burn" refers to the pixel value that will be assigned to the rasterized representation of the features from the vector layer. This value is used to encode the presence of the features in the resulting raster image.
+- Set `Output raster sie units` to "Pixels" and the `Width` and `Height` to 1000, respectively.
+- Set the Output Extent as the same as your input layer. Depending your QGIS version you might have to click on ![](/fig/Three_points.png), click on `Calculate from Layer` and choose your input layer.
+- Make sure to set the `Assign a specified nodata value` to "not set". You need to delete the 0 and eventually "no set" will appear.
+- Finally, determine path and name of your rasterized output files under `Rasterized` by clicking on ![](/fig/Three_points.png) -> `Save to File`
+- Click `Run`
+
+You should end up with a binary raster for every sketch map you georeferenced. All flooded areas should be represented by pixels of value 1, while non flooded areas are represented by 0.
+
+#### 5. Raster Calculator
+
+Sum up Rasters
+
+#### 6. Visualization
+
+
+Make a printable map
 
 
 
