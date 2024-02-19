@@ -49,22 +49,21 @@ To shorten the time you can also just focus the hands-on-exploration on specific
 ```
 
 ## Instructions for the trainers 
+
+:::{dropdown} Trainers Corner
 ### Preparation and material 
 - Online access and devices (PC) to be able to use the Sketch Map Tool to create maps online, upload and download them.
 - Possibility to print the maps and smart phones to take the photos and a way to upload them to the Sketch Map Tool later. 
 - Take a look and make yourself familiar on the provided material for the exercise and the Sketch Map Tool in general. 
 - Prepare a board (it can be a white board /flipchart / or digital e.g. mirro-board) where the participants can add their findings.
 
-
 ```
-Alternatives 
-- If you conduct this training online, make sure your participants 
+Alternatives  
+-- If you conduct this training online, make sure your participants 
 have a printer or are able to mark the maps digitally. 
 - If you like to skip parts of the workflow, make sure you have alternative material (like preprinted, or already marked Sketch maps) prepared.
 - If you like to adapt this exercise to your specific use case, create your own case-description. 
 ```
-
-
 
 ### Available Material: needs to be linked directly 
 •	Introduction Slides about the Sketch Map Tool available
@@ -86,6 +85,12 @@ o	Geodata of the results and some pictures
 - All groups present their findings (each 5 min, make it short but show the maps they are talking about).
 - Discuss Benefits as well as challenges and problems in the use of the sketch Map Tool 
 - Time to for Open questions.
+::::
+
+
+## What you need to know - background information
+- Satelite data 
+- OSM
 
 ## Step-by step introduction for participants 
 

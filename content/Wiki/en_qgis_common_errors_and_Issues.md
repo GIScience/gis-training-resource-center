@@ -456,7 +456,9 @@ Here you will find further help access links or QGIS community/forum links to ad
 
 + QGIS plugin user manual: https://docs.qgis.org/3.28/en/docs/user_manual/plugins/plugins.html
 
-+ QGIS workshop and video tutorials (Harvard University) : https://gis.harvard.edu/qgis-workshop-and-video-tutorials-0 
++ QGIS workshop and video tutorials (Harvard University): https://gis.harvard.edu/qgis-workshop-and-video-tutorials-0 
+
++ QGIS tutorial (CartONG): https://cartong.pages.gitlab.cartong.org/learning-corner/en/6_tutorials/6_3_gis/6_3_1_qgis
 
 #### QGIS community/forums:
 + Geographic Information Systems: https://gis.stackexchange.com/?tags=qgis

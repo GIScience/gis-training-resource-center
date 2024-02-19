@@ -30,6 +30,7 @@ To find the appropriate data you are looking for, you can search online data sha
 | OpenAfrica | Open source data on Africa | https://africaopendata.org/dataset |
 | DivaGIS | different data, e.g. administrative, roads, population, elevation, climate | http://www.diva-gis.org/gdata |
 | Open Topography | data on topography | https://opentopography.org/ |
+| OSM Boundaries | administrative boundaries (need to authenticate via your osm account) | https://osm-boundaries.com |
 
 ### Humanitarian Data
 

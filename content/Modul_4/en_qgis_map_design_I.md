@@ -185,6 +185,11 @@ QGIS let's you use different types markers for symbolization. These can be simpl
 - If you select raster images, the resolution of the symbol is limited by the amount of pixels in the image. It is not advisable to use high resolution images as symbols on your map because it may overload your PC. 
 - SVG-symbols are *scaleable vector graphic* symbols. As vector files, they can be scaled to any size while keeping the same resolution. In most cases, if you want to use a more complex symbol (e.g. hospital, school, train station), SVG-symbols are the best option as they let you adjust the symbol (colours, outline, size, etc.)
 
+### Bivariate Maps
+
+
+
+
 ## Labels
 
 Labels are text that display information or values of the data. In QGIS, you can either select __Single Labels__ or __Rule-based Labelling__. For each option, an attribute (`value`) that will be displayed on the map. For example, the name of a city or region.  Additionally, you can __change the font, font size, colour and some other styling options__ for the label text. When you create a map, you can add labels to help your reader understand the map quickly. However, be aware that too much text information can overload the map with too much information for the reader to process.

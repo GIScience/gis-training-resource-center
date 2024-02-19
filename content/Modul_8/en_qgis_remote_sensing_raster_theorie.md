@@ -78,6 +78,15 @@ The CRS includes a number of different parameters:<br>
 Metadata for raster data consists of descriptive information that provides context and details about the raster dataset. It includes information such as the dataset source, creation date, spatial extent, spatial resolution, coordinate reference system (CRS), data type, units, compression tech-niques, processing steps, accuracy ratings, and copyright/licensing information.<br><br>
 This metadata helps users to understand the content, origin, quality and appropriate use of raster data. It facilitates data discovery, evaluation and integration into geospatial workflows, ensuring that users can effectively interpret and use the data for their specific applications.
 
+```{figure} /fig/mod8_rasterdata_metadata.png
+---
+name: Different spatial resolutions of the same raster
+width: 900px
+---
+
+```
+
+
 ## File Format
 There are multiple different file formats for storing an working with raster data. Following a short overview over the most common formats that you will likely come by as you work with spaptial rasters:
 1.	**GeoTIFF (.tif/.tiff)**: Widely used file format, supports georeferencing and metadata.
@@ -85,3 +94,116 @@ There are multiple different file formats for storing an working with raster dat
 3.	**JPEG (.jpg/.jpeg) & PNG (.png)**: Common formats for images, lacks georeferencing.
 4.	**Esri Grid (.adf)**: Esri's raster format, used in ArcGIS, supports georeferncing amd metadata
 5.	**GeoPackage (.gpkg)**: Open format for storing geospatial data, supports raster and vec-tor.
+
+**Beispielbild Metadata**
+
+## Frequently used Tools in QGIS
+### Raster Calculator
+The raster calculator enables the performing of mathematical operations on one or multiple raster layers by using different expressions. These expressions can involve arithmetic operations like multiplication, comparison operators like "<" or ">", conditional expressions like "IF" "THEN" statements, and mathematical functions like "mean" or "sum". 
+
+Example:
+You have a Digital Elevation Model with the Altitude in m and a Landcover Classification raster. You want to produce a raster with all acricultural areas (raster value = 5) above 1500m.
+
+```{figure} /fig/mod8_rasterdata_rastercalculator.png
+---
+name: Different spatial resolutions of the same raster
+width: 900px
+---
+
+```
+
+The wanted result can be achieved by firstly selecting both of the relevant rasters as inputs for the raster calculator and then using the expression interface to selct all pixels with a elevation above 1500m ( "( "DEM@1" >  1500)") and a landcover value of "5" ("( "Landcover@1" = 5 ) ") by connecting both expression with the logical operator "AND". In the calculated raster all pixels that fulfill the condition will have the value "1", all other pixels the value "0".
+
+
+### Zonal Statistics
+### Rasterize
+### Resampling
+### (Clip/Merge/Reproject)
+
+
+
+
+
+
+
+
+## Use and Sources of Raster Data in the Humanitarian Sector
+In the humanitarian sector, many different types of raster data are used in various application areas. The most important grid types include population grids, which can form the basis for calculating the exposure of the population to a natural hazard like floods, or precipitation grids, which can significantly help to understand droughts.
+
+If raster data is available at several points in time or even as a continuous data series, parameters such as the condition of agricultural land can be measured with data like a series of rasters of a vegetation index.
+
+Main products/raster types you may come across in the humanitarian sector include:
+1. Population Rasters offered by Worldpop
+2. Digital Elevation Models like the SRTM DEM
+3. Landuse and Lancover Classifications like **XXXX**
+4. Risk Maps like flood inundation zones alongside rivers
+
+Popular and proven sources for raster data include:
+
+### HDX (The Humanitarian Data Exchange) Data Portal:<br>
+**Offering**: Hosts a wide range of humanitarian data for a variety of countries, including raster data regarding population countts/density and demographic parameters like age and sex structurs or birthrates.<br><br>
+**Pros and Cons**
+* No account needed
+* Intuitive Interface with good filter options
+* Most of the data openly accessible and free
+* Many different data formats and sources, sometimes a  unstructured
+
+Online: **HDX LINK**
+
+### USGS Earth Explorer
+ **Offering**:The Data Portal of the US Geological Survey provides access to a vast collection of satellite imagery and derived products like DEMs and Landcover Data.<br><br> 
+ **Pros and Cons:**
+* Quite extensive archive of remote sensing data
+* Advanced search and filtering options
+* Acount is needed for data download
+* Data search needs basic knowledge of geospatial data and remote sensing
+
+Online: **USGS LINK**
+
+### ESA Earth Online
+ Similar to the USGS earth explorer the data portal of the European space agency (ES)provides access to Earth observation data from various sattelites and derived datasets like climate change indicators or disaster monitoring products.
+<br><br> 
+ **Pros and Cons:**
+* Wide range of basic and processed remote sensing products
+* Nice interface for visalization and basic analysis
+* Account is needed for data download
+* Data search needs basic knowledge of geospatial data and remote sensing
+
+
+Online: **ESA LINK**
+<br><br><br><br>
+
+
+## Notes 
+### Remote sensing data
+    * Remote sensing Basics: Data types, spectral properties, use cases/typical products
+    * Electromagnetic spectrum
+    * Concept: Multiple raster bands
+    * Paramters of rempote sensing products: spatial, temporal, spectral resolution
+    * for what can RS be useful
+    * Typical products: LULC, DEM, Multispectral Data
+
+
+
+
+### Frequently used Tools in QGIS
+    * Raster Calculator
+    * Zonal Statistics
+    * Rasterize
+    * Resampling
+    * Clip/Merge/Reproject
+    * Slope/TWI/Hillshade
+    * Visulisation of Rasters? -> Eigenes Kapitel
+
+### Exercises
+    * Pop per Districts berechnen
+    * (Index, z.B. NDVI berechnen)
+    * (Einfache Multi Criteria Analyse)
+    * Verschiedene Parameter aus DEM berechnen
+    **Malnutrition rasterize + mit Pop berechnen**
+    * (Optische) Threshold setzen
+    * Verschiedene Visualisierungsoptionen
+
+--> Modul 6 hexagongrid referencen
+
+

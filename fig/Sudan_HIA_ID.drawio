@@ -1,0 +1,46 @@
+<mxfile host="app.diagrams.net" modified="2024-02-15T10:47:34.554Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="HBgTWVaK9nk6FGYn9uFg" version="23.1.4" type="github">
+  <diagram name="Seite-1" id="jK3DT_EIFVx6FYqLjr-N">
+    <mxGraphModel dx="534" dy="727" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UiIA67uZyrMCOYBX34b0-1" value="" style="shape=cross;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="476.47999999999996" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="UiIA67uZyrMCOYBX34b0-2" value="" style="shape=cross;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="476.47999999999996" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="UiIA67uZyrMCOYBX34b0-3" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/css-vol-2/24/math-equal-128.png;fontColor=#EFF2F3;" vertex="1" parent="1">
+          <mxGeometry x="870" y="471.23999999999995" width="30.48" height="30.48" as="geometry" />
+        </mxCell>
+        <mxCell id="UiIA67uZyrMCOYBX34b0-4" value="Year&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Montserrat;fontSource=https://fonts.googleapis.com/css?family=Montserrat;" vertex="1" parent="1">
+          <mxGeometry x="520" y="455.95" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UiIA67uZyrMCOYBX34b0-5" value="Start Year of Event e.g. 2019" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Open Sans;fontSource=https://fonts.googleapis.com/css?family=Open+Sans;fontSize=7;" vertex="1" parent="1">
+          <mxGeometry x="520" y="515.95" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UiIA67uZyrMCOYBX34b0-6" value="Publishing Organisation" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Montserrat;fontSource=https://fonts.googleapis.com/css?family=Montserrat;" vertex="1" parent="1">
+          <mxGeometry x="650" y="455.95" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UiIA67uZyrMCOYBX34b0-7" value="E.g. OCHA" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Open Sans;fontSource=https://fonts.googleapis.com/css?family=Open+Sans;fontSize=7;" vertex="1" parent="1">
+          <mxGeometry x="650" y="515.95" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UiIA67uZyrMCOYBX34b0-8" value="Publishing Date" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Montserrat;fontSource=https://fonts.googleapis.com/css?family=Montserrat;" vertex="1" parent="1">
+          <mxGeometry x="780" y="455.95" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UiIA67uZyrMCOYBX34b0-9" value="Exact date of publishing the dataset or report e.g. 2019/10/03" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Open Sans;fontSource=https://fonts.googleapis.com/css?family=Open+Sans;fontSize=7;" vertex="1" parent="1">
+          <mxGeometry x="780" y="515.95" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UiIA67uZyrMCOYBX34b0-10" value="Dataset ID" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Montserrat;fontSource=https://fonts.googleapis.com/css?family=Montserrat;" vertex="1" parent="1">
+          <mxGeometry x="900.48" y="455.95" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UiIA67uZyrMCOYBX34b0-11" value="2019_OCHA_20191003" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Open Sans;fontSource=https://fonts.googleapis.com/css?family=Open+Sans;fontSize=7;" vertex="1" parent="1">
+          <mxGeometry x="900.48" y="515.95" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UiIA67uZyrMCOYBX34b0-12" value="ID" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Montserrat;fontSource=https://fonts.googleapis.com/css?family=Montserrat;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="970" y="450" width="26.48" height="26.48" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

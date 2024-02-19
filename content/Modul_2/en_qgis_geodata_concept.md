@@ -28,9 +28,11 @@ For example, Mercator projections don´t represent the area correctly. Google Ma
 
 ![Comparison Greenland - Africa](../../fig/en_greenland_africa.png)
 
+:::{dropdown} Embedded Website 
+
 %%html
 <iframe src="https://www.thetruesize.com/#?borders=1~!MTUxNjUyNzI.MzM1OTE0MQ*MzI2NDc5MjY(NjgwODA4Mg~!GL*OTQ3NTExNQ.MjkxMDYzMzM)Mw" width="750" height="500"></iframe>
-
+:::
 
 ```{Attention}
 It's important to work with the right projections, if not we will produce wrong results! 

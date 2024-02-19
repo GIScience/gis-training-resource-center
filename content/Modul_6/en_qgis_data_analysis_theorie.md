@@ -13,6 +13,7 @@ Even in a single layer, a lot of analysis is possible. However, sometimes the th
 
 ```{figure} ../../fig/multiple_layer_data_analysis.png
 ---
+align: left
 name: spatial analysis using multiple layers example
 width: 400px
 ---
@@ -159,16 +160,43 @@ We want to calculate the total length of flooded and unflooded road respectively
 
 ## Buffer analysis
 
-Creating a [buffer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#buffer) is a helpful analysis to determine what lies in proximity of, for example, a contaminated water source, or a road. 
+Creating a [buffer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#buffer) is a helpful analysis to determine what lies in proximity of, for example, a contaminated water source or other hazards and determine vulnerability. Buffer analysis is often used to map the riparian zones along rivers to devise environmental protection zones or estimate vulnerability.
+
+- Proximity analysis
+- Estimated vulnerability analysis
+
+## Density Map Analysis
+
+Density maps are very useful in communicating the __intensity of a phenomenon in an area__. Point data is aggregated to show the amount of incidents in that area.
+__For example__, number of schools or number of disease cases. 
+
+It is important to consider that most demographic or economic data needs to be normalized (e.g. number of inhabitants). To assess the significance of the number of schools, you will need to know how the population of the area; so the amount of schools per 1,000 inhabitants, or the number of disease cases per 100 persons, for example. 
+
+There are a few different types of density maps. The most common are heatmaps and hexagon grid maps. In both cases, the intensity of a phenomenon is calculcated with point data (rarely with lines or polygons). 
+
+>discrete vs. continuous?
+
+### Heatmap
+
+>look at slides
+
+### Hexagon grid
+
+Hexagon grids are used to aggregate point incidents in order to normalize geographic data or to mitigate the modifiable area unit problem (problems arising from using irregular shaped polygons). In GIS, we commonly use rectangles (e.g. raster data) or __hexagons__, as these geometries can be repeat in an evenly spaced grid without leaving gaps. 
+
+The advantage of using hexagons is that it is a polygon that closely resembles a __circle__ (where the distance to the centre is equal at every point along the outline), but still __leaves no gaps__ when placed as a __grid__. This means that it is also possible to use absolute values (no normalizations), since the spatial units have the same size. 
+
+> WIKI: __Hexagon grids__ are especially useful for density maps. For example, the number of conflict events or water points in an area. 
+
+To create a hexagon grid map, you will first need to [create a hexagon grid](link), by using the "__Create Grid__" vector tool. 
+
+Next, you will need to join the point data with the hexagon grid. We want to know the amount of points that are inside of a hexagon cell. To count the number of points, we need to use the vector tool "__Count points in polygon__". The result will be a hexagonal grid where each polygon has the a value for the number of points in that area. 
+
+The final step will be to __visualize__ the data by assigning a __graduated symbology__ to the polygons. You can play around with the transparency of your layers to make more information visible. 
+
+:::{dropdown} Example video: Creating a hex map
+
+:::
 
 
-## Intersection analysis
-
-## Example: Calculating the length of a flooded road network
-
-
-
-## Heatmaps
-
-## Hexagon grid
-
+## Analysis by joining attributes

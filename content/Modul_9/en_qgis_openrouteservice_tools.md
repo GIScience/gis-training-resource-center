@@ -27,7 +27,7 @@ align: center
 -  Close the window
 -  After a few seconds the plugin should appear under "Web" tab in QGIS as "ORS      Tools"
 
-```{figure} /fig/open_ors.png
+```{figure} /fig/open_ORS_tools_plugin.png
 ---
 width: 700px
 name: basic classification
@@ -37,7 +37,7 @@ align: center
 -  Open the "ORS tools" plugin
 -  To make use of the ORS tools, you first need to sign up. Therefore click "Sign    Up"
 
-```{figure} /fig/sign_up_ors_qgis.png
+```{figure} /fig/sign_up_ORS.png
 ---
 width: 700px
 name: basic classification
