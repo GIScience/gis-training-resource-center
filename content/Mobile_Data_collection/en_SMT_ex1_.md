@@ -87,6 +87,7 @@ o	Geodata of the results and some pictures
 - Time to for Open questions.
 ::::
 
+
 ## What you need to know - background information
 - Satelite data 
 - OSM

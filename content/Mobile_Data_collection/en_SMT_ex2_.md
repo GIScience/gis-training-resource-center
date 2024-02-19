@@ -74,6 +74,8 @@ To shorten the time you can work with prepared maps.
 - Time to for Open questions.
 ::::
 
+
+
 ## What you need to know - background information
 - Satelite data 
 - OSM
