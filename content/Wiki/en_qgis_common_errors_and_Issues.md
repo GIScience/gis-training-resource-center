@@ -226,6 +226,133 @@ __Solution:__
 
 These errors in the geometries can be corrected by selecting `Fix Geometries` in the Processing Toolbox.
 
+## Coordinate systems: What do all these terms mean?
+
+Geospatial datasets consist of three basic data:
+
++ Attributes: the meanings or labels of a data point.
+
++ Coordinates: numbers describing the data point's position in space.
+
++ Coordinate (reference) system: metadata describing the space itself: origin, axes, units, etc.
+
+For example:
+
++ Attributes: "The White House" or "1600 Pennsylvania Avenue"
+
++ Coordinates: (-77.0367, 38.8976)
+
++ Coordinate (reference) system: WGS84 longitude,latitude
+
+__Glossary__
+
+Redefining means the metadata about the coordinate system is modified but the coordinates are not. This contrasts with reprojections and transformations, which modify both the coordinate system and the coordinates.
+
+__Solutions:__
+
++ In QGIS, for vector datasets, use the `Assign Projection` https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/gdal/rasterprojections.html#assign-projection tool in the `Vector General` toolset, not the `Reproject Layer` tool.
+
+
++ In QGIS, for raster datasets, use the `Assign Projection` tool https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/gdal/rasterprojections.html#assign-projection in the `GDAL` toolset, not the `Warp (Reproject)` tool.
+
+
++ From the command line, for vector datasets, use `ogr2ogr`  
+https://gdal.org/programs/ogr2ogr.html#cmdoption-ogr2ogr-a_srs with the `-a_srs` parameter, not the `-t_srs` parameter.
+
+
+
++ From the command line, for raster datasets, use `gdal_edit`https://gdal.org/programs/gdal_edit.html#cmdoption-a_srs.py with the `-a_srs` parameter.
+
+## Coordinate systems: My dataset is not located where it should be!
+Your dataset probably has the wrong coordinate system. This is the more general case of the previous problem. This can happen if the coordinate system is missing altogether, in which case GIS software often assumes that it is the same coordinate system as a previously loaded dataset, or the coordinate system set in the "project" or "map document".
+
+__Solution:__
+
+ Redefine the coordinate system, https://ihatecoordinatesystems.com/#redefine i.e. change the coordinate system but not the coordinates, to the correct coordinate system https://ihatecoordinatesystems.com/#correct-crs.
+
+## Coordinate systems: What coordinate system should my dataset be in?
+
+A data point's attributes gives context to where on the Earth it is located. Most GIS software will display the minimum and maximum coordinates in the layer's properties as "extent" or "bounding box". 
+
+__Solutions:__
+
+If the attributes indicate the approximate longitude,latitude where the coordinates should be located, try doing a reverse lookup. This iterates over every well-defined coordinate system, unprojects the X,Y coordinates to WGS84, and measures the error to the known longitude,latitude. Errors less than a few hundred meters denote a reasonable projection, though this isn't precise enough to determine the GCS. 
+You can run this sample code yourself, or use this form:
+
+Table:
+                   
+                    <table style="padding: 0.5em;width:100%;font-size:90%;">
+                        <colgroup>
+                            <col span="1" style="width: 18%;">
+                            <col span="1" style="width: 20%;">
+                            <col span="1" style="width: 18%;">
+                            <col span="1" style="width: 20%;">
+                            <col span="1" style="width: 20%;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td style="text-align:right;"><label for="lookup_lng">Longitude:</label></td>
+                                <td><input style="width:90%;" type="number" step="any" id="lookup_lng"
+                                        name="lookup_lng"></td>
+                                <td style="text-align:right;"><label for="lookup_lat">Latitude:</label></td>
+                                <td><input style="width:90%;" type="number" step="any" id="lookup_lat"
+                                        name="lookup_lat"><br></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right;"><label for="lookup_x">X-coordinate:</label></td>
+                                <td><input style="width:90%;" type="number" step="any" id="lookup_x" name="lookup_x">
+                                </td>
+                                <td style="text-align:right;"><label for="lookup_y">Y-coordinate:</label></td>
+                                <td><input style="width:90%;" type="number" step="any" id="lookup_y" name="lookup_y">
+                                </td>
+                                <td><input style="width:70%;" id="projectionLookupButton" type="submit" value="Submit">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+                <p id="projectionLoookupLoading" style="display:none;text-align:center;">
+                    <span id="projectionLoookupLoadingText" class="bold italic"></span>
+                </p>
+                <table id="projectionLookupResults" style="display:none;padding:0.5em;font-size:80%;">
+                    <tr>
+                        <td><span class="bold">Code</span></td>
+                        <td><span class="bold">Name</span></td>
+                        <td style="text-align:right;"><span class="bold">Error (meters)</span></td>
+                    </tr>
+                </table>
+
+
++ If the coordinates have X-values between -180 and 180, and Y-values between -90 and 90, then you probably want to redefine to a longitude,latitude geographic coordinate system (GCS) like WGS84.
+
++ If the coordinates have large absolute values, try redefining to a local coordinate system like UTM, Gauss-Krüger, State Plane, or a national grid. Also consider trying neighboring zones, e.g. if UTM Zone 19N is wrong, try UTM Zone 18N.
+
++ If the attributes suggest the dataset is in the USA, then there might a problem converting to/from Freedom Units. Try multiplying/dividing a data point's coordinates by 3.28084 to convert feet to meters/meters to feet and see if that places it in the proper location.
+
++ If the minimum X/Y coordinates are both zero and the maxmimum X/Y coordinates are both positive, then the dataset may have been exported from non-geospatial software like Photoshop or Illustrator or Inkscape. This is especially likely if the dataset is flipped vertically since those editors typically have the Y-axis increasing going down. You will need to manually georeference the dataset to use it, which changes both the coordinates and the coordinate system.
+
+## My dataset is slightly offset from where it should be!
+
+Your dataset probably has the wrong longitude/latitude geographic coordinate system (GCS). Different GCSs define slightly different sizes/shapes of the Earth (their ellipsoids) and different positionings on the Earth (their datums). As a result, the same longitude/latitude coordinates in two different GCSs can appear offset, although typically within tens of meters of each other. This can happen even if you are using a projected coordinate system (PCS) whose units are not degrees of longitude/latitude since PCSs have a GCS embedded within them.
+
++ Image
+
+__Solution__:
+
+ Redefine the coordinate system, i.e. change the coordinate system but not the coordinates, to one of the following:
+
+* Try redefining to the WGS84 GCS.
+* If your dataset was collected with GPS , try redefining to WGS84.
+* If your dataset was collected with GLONASS , try redefining to PZ-90.
+* If your dataset was collected with Galileo , try redefining to ITRF.
+* If your dataset is in the USA , try redefining to NAD27, NAD83, or WGS84.
+* If your dataset is in Europe , try redefining to ED50, ETRS89, or WGS84.
+*If your dataset is in Australia , try redefining to GDA94 or GDA2020.
+*If your dataset is in China  and/or collected with BeiDou, good luck.
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
 ## Wrong data results or missing data
 
 When you get wrong data results or missing data, please check your file names. You should not use file names with capitals, special characters or empty spaces. Always use underscores between the words for the file name.
