@@ -14,7 +14,7 @@ Even in a single layer, a lot of analysis is possible. However, sometimes the th
 ---
 align: left
 name: spatial analysis using multiple layers example
-width: 300px
+width: 350px
 ---
 Overlaying layers is a spatial analysis
 ```
@@ -70,6 +70,7 @@ __There are two main types of data analysis__:
 name: thematic analysis example
 width: 500px
 ---
+Assigning visual variables to different attributes is already an analysis
 ```
 
 * __Thematic analyses__ focus on visual variation according to a given attribute of the data (one of its characteristics). They are performed on a specific field of the attribute table for the layer, whether textual or numerical. The graphical representation (symbology) changes according to the attribute.
@@ -250,14 +251,6 @@ width: 700 px
 Point map (left) to hex map (right)
 ```
 
-```{TIP} 
-You can remove the hexagon cells that are not overlapping with the reference layer:  
-1. Select by location all the cells that intersect with your reference polygon/layer.
-2. Invert the selection.
-3. Delete the selected hexagon cells.
-4. Save the changes you made to the layer. 
-```
-
 :::{dropdown} Example video: Creating a hex map
 
 1. Create a Hexagon grid with the tool "__Create Grid__". 
@@ -272,5 +265,12 @@ You can remove the hexagon cells that are not overlapping with the reference lay
 .mp4"></video>
 :::
 
+```{TIP} 
+You can remove the hexagon cells that are not overlapping with the reference layer:  
+1. Select by location all the cells that intersect with your reference polygon/layer.
+2. Invert the selection.
+3. Delete the selected hexagon cells.
+4. Save the changes you made to the layer. 
+```
 
 ## Analysis by joining attributes
