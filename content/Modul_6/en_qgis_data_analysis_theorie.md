@@ -15,7 +15,7 @@ Even in a single layer, a lot of analysis is possible. However, sometimes the th
 ---
 align: left
 name: spatial analysis using multiple layers example
-width: 400px
+width: 350px
 ---
 A spatial analysis can be a result of combining several layers with different information in a single map
 ```
@@ -178,6 +178,18 @@ There are a few different types of density maps. The most common are heatmaps an
 
 ### Heatmap
 
+Heat maps use features in a dataset to calculate the relative density of points on a map. The density is displayed as a colour ramp with colors ranging from "cool" (low density) to "hot" (high density). Heatmaps are useful when you have a large number of features covering an area with areas where these features cluster together. 
+
+```{figure} ../../point_map_to_heat_map_example.png
+---
+name: point map to heat map example
+height: 300 px
+---
+Example of a point map (left) to a heat map (right)
+```
+
+
+
 >look at slides
 
 ### Hexagon grid
@@ -193,6 +205,13 @@ To create a hexagon grid map, you will first need to [create a hexagon grid](lin
 Next, you will need to join the point data with the hexagon grid. We want to know the amount of points that are inside of a hexagon cell. To count the number of points, we need to use the vector tool "__Count points in polygon__". The result will be a hexagonal grid where each polygon has the a value for the number of points in that area. 
 
 The final step will be to __visualize__ the data by assigning a __graduated symbology__ to the polygons. You can play around with the transparency of your layers to make more information visible. 
+
+```{TIP} 
+You can remove the hexagon cells that are not overlapping the reference layer:  
+1. Select by location all the cells that intersect with your reference polygon/layer.
+2. Invert the selection.
+3. Delete the selected hexagon cells.
+```
 
 :::{dropdown} Example video: Creating a hex map
 
