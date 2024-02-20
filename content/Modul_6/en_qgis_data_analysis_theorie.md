@@ -133,8 +133,8 @@ For example, to calculate the area of polygons:
 
 In the attribute table, you will find a new column called `Area` with the respective area for each feature. 
 
-```{Note} Measurement Units
-The unit of measurement of the calculated area depends on the distance unit settings of the current project's CRS (metrical or geographic). In most cases you want metres or kilometers. Make sure the units of your CRS are metres to get the correct values. 
+```{Note}
+The __unit of measurement__ of the calculated area depends on the __distance unit settings__ of the current __project's CRS__ (metrical or geographic). In most cases you want metres or kilometers. Make sure the units of your CRS are metres to get the correct values. 
 
 You can check this by opening the CRS selector (bottom right corner) and reading the information of your selected CRS. 
 ```
@@ -172,14 +172,14 @@ We want to calculate the total length of flooded and unflooded road respectively
 .mp4"></video>
 :::
 
+> Insert statistics examples
+
 ## Buffer analysis
 
 Creating a [buffer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#buffer) is a helpful analysis to determine what lies in proximity of, for example, a contaminated water source or other hazards and determine vulnerability. Buffer analysis is often used to map the riparian zones along rivers to devise environmental protection zones or estimate vulnerability.
 
 - Proximity analysis
 - Estimated vulnerability analysis
-
-
 
 ## Density Map Analysis
 
@@ -243,6 +243,14 @@ Next, you will need to join the point data with the hexagon grid. We want to kno
 
 The final step will be to __visualize__ the data by assigning a __graduated symbology__ to the polygons. You can play around with the transparency of your layers to make more information visible. 
 
+```{figure} ../../fig/point_to_hex_map_example.png
+---
+name: point map to hex map example
+width: 700 px
+---
+Point map (left) to hex map (right)
+```
+
 ```{TIP} 
 You can remove the hexagon cells that are not overlapping the reference layer:  
 1. Select by location all the cells that intersect with your reference polygon/layer.
@@ -252,7 +260,16 @@ You can remove the hexagon cells that are not overlapping the reference layer:
 
 :::{dropdown} Example video: Creating a hex map
 
+1. Create a Hexagon grid with the tool "__Create Grid__". 
+2. Select `Hexagon (Polygon)` as __Grid type__. 
+3. The Grid extent should be set to the layer/area of interest. 
+4. Select the horizontal and vertical spacing according to the scale of your map. 
+5. Optional: Remove the unnecessary Polygons.
+6. Use the tool "__Count points in Polygon__" to add an attribute field with the number of points that are *inside* each hexagon cell. The __Polygons__ field should be your reference layer. The new layer will have an attribute field called "__NUMPOINTS__"
+7. Assign a __graduated__ symbology to the `Count`-layer. Select "__NUMPOINTS__" as the value and categorize the classes as you wish.
 
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_creating_a_hex_map
+.mp4"></video>
 :::
 
 
