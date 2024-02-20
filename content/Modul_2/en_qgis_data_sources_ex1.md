@@ -7,7 +7,7 @@ The objective of this exercise is to navigate different data sources, develop an
 will be done when Wiki is finished
 
 ### Data
-Since the exercises aim is for you to find data, there won't be any data to download. Instead download the usual folder structure [here](linktobeadded.zip) and add in your data.
+Since the exercises aim is for you to find data, there won't be any data to download. Instead download the usual folder structure [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_2/Modul_2_Exercise_Data_sources/Modul2_data_sources_exercise.zip) and add in your data.
 
 ### Tasks
 

@@ -7,7 +7,7 @@ The objective of this exercise is to get a feeling for Geodata and start working
 will be done when Wiki is finished
 
 ### Data
-Download all datasets [here](linktobeadded.zip) and save the folder on your computer and unzip the file. The zip folder includes:
+Download all datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_2/Modul_2_Exercise_1_Basic_Geodata_Processing/Modul2_Basic_Geodata_Processing_exercise.zip) and save the folder on your computer and unzip the file. The zip folder includes:
 - `nigeria_populated_places.shp` (Points) Shapefile
 - `nigeria_boundaries.geojson` GeoJSON
 
