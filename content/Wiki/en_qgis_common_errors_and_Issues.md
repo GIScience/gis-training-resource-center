@@ -294,52 +294,51 @@ __Solutions:__
 If the attributes indicate the approximate longitude,latitude where the coordinates should be located, try doing a reverse lookup. This iterates over every well-defined coordinate system, unprojects the X,Y coordinates to WGS84, and measures the error to the known longitude,latitude. Errors less than a few hundred meters denote a reasonable projection, though this isn't precise enough to determine the GCS. 
 You can run this sample code yourself, or use this form:
 
-https://ihatecoordinatesystems.com/#correct-crs
 
- Form in HTML-Content (needs to be converted)   
+<form>
+    <table style="padding: 0.5em;width:100%;font-size:90%;">
+        <colgroup>
+            <col span="1" style="width: 18%;">
+            <col span="1" style="width: 20%;">
+            <col span="1" style="width: 18%;">
+            <col span="1" style="width: 20%;">
+            <col span="1" style="width: 20%;">
+        </colgroup>
+        <tbody>
+            <tr>
+                <td style="text-align:right;"><label for="lookup_lng">Longitude:</label></td>
+                <td><input style="width:90%;" type="number" step="any" id="lookup_lng"
+                        name="lookup_lng"></td>
+                <td style="text-align:right;"><label for="lookup_lat">Latitude:</label></td>
+                <td><input style="width:90%;" type="number" step="any" id="lookup_lat"
+                        name="lookup_lat"><br></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><label for="lookup_x">X-coordinate:</label></td>
+                <td><input style="width:90%;" type="number" step="any" id="lookup_x" name="lookup_x">
+                </td>
+                <td style="text-align:right;"><label for="lookup_y">Y-coordinate:</label></td>
+                <td><input style="width:90%;" type="number" step="any" id="lookup_y" name="lookup_y">
+                </td>
+                <td><input style="width:70%;" id="projectionLookupButton" type="submit" value="Submit">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+<p id="projectionLoookupLoading" style="display:none;text-align:center;">
+    <span id="projectionLoookupLoadingText" class="bold italic"></span>
+</p>
+<table id="projectionLookupResults" style="display:none;padding:0.5em;font-size:80%;">
+    <tr>
+        <td><span class="bold">Code</span></td>
+        <td><span class="bold">Name</span></td>
+        <td style="text-align:right;"><span class="bold">Error (meters)</span></td>
+    </tr>
+</table>
 
 
-                    <table style="padding: 0.5em;width:100%;font-size:90%;">
-                        <colgroup>
-                            <col span="1" style="width: 18%;">
-                            <col span="1" style="width: 20%;">
-                            <col span="1" style="width: 18%;">
-                            <col span="1" style="width: 20%;">
-                            <col span="1" style="width: 20%;">
-                        </colgroup>
-                        <tbody>
-                            <tr>
-                                <td style="text-align:right;"><label for="lookup_lng">Longitude:</label></td>
-                                <td><input style="width:90%;" type="number" step="any" id="lookup_lng"
-                                        name="lookup_lng"></td>
-                                <td style="text-align:right;"><label for="lookup_lat">Latitude:</label></td>
-                                <td><input style="width:90%;" type="number" step="any" id="lookup_lat"
-                                        name="lookup_lat"><br></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right;"><label for="lookup_x">X-coordinate:</label></td>
-                                <td><input style="width:90%;" type="number" step="any" id="lookup_x" name="lookup_x">
-                                </td>
-                                <td style="text-align:right;"><label for="lookup_y">Y-coordinate:</label></td>
-                                <td><input style="width:90%;" type="number" step="any" id="lookup_y" name="lookup_y">
-                                </td>
-                                <td><input style="width:70%;" id="projectionLookupButton" type="submit" value="Submit">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </form>
-                <p id="projectionLoookupLoading" style="display:none;text-align:center;">
-                    <span id="projectionLoookupLoadingText" class="bold italic"></span>
-                </p>
-                <table id="projectionLookupResults" style="display:none;padding:0.5em;font-size:80%;">
-                    <tr>
-                        <td><span class="bold">Code</span></td>
-                        <td><span class="bold">Name</span></td>
-                        <td style="text-align:right;"><span class="bold">Error (meters)</span></td>
-                    </tr>
-                </table>
 
 
 + If the coordinates have X-values between -180 and 180, and Y-values between -90 and 90, then you probably want to redefine to a longitude,latitude geographic coordinate system (GCS) like WGS84.
@@ -374,8 +373,6 @@ __Solution__:
 * If your dataset is in Europe , try redefining to ED50, ETRS89, or WGS84.
 *If your dataset is in Australia , try redefining to GDA94 or GDA2020.
 *If your dataset is in China  and/or collected with BeiDou, good luck.
-
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 ## Wrong data results or missing data
 
