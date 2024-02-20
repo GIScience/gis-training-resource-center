@@ -17,10 +17,12 @@ align: left
 name: spatial analysis using multiple layers example
 width: 250px
 ---
-A spatial analysis can be a result of combining several layers with different information in a single map.
+Overlaying layers is a spatial analysis
 ```
 
 ### Spatial Analysis
+
+* A spatial analysis can be a result of combining several layers with different information in a single map.
 
 Geographic analysis helps us answer questions like: 
 * What __patterns__ are in the data?
@@ -217,7 +219,7 @@ You can create a heatmap in the __symbology tab__of a point or polyline layer. N
 name: heatmap example with different radii and max value
 width: 700 px
 ---
-Examples of heatmaps with different configuratin for the radius and the maximum value. 
+Examples of heatmaps with different configurations for the radius and the maximum value. 
 ```
 
 As you can see, the information communicated through the different maps changes drastically. This is why you need to be transparent on what parameters you have set to create the heatmap.
