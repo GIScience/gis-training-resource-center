@@ -130,7 +130,7 @@ When choosing colour gradients, a clear gradient from lighter to darker colours 
 name: colour gradients saturation example
 width: 750px
 ---
-Examples for different colour gradients translated into black and white. Pay attention to the saturation gradient under each example.
+Examples for different colour gradients translated into black and white. Pay attention to the saturation gradient under each example. Source: Stauffer, Reto & Mayr, Georg & Dabernig, Markus & Zeileis, Achim. (2014). Somewhere Over the Rainbow: How to Make Effective Use of Colors in Meteorological Visualizations. Bulletin of the American Meteorological Society. 96. 140710055335002. 10.1175/BAMS-D-13-00155.1.
 ```
 
 Colour gradients can also encompass multiple hues:
@@ -140,7 +140,7 @@ Colour gradients can also encompass multiple hues:
 name: colour gradients with multiple hues
 width: 750px
 ---
-Single hue gradient on the left; Multiple hue gradient on the right. Source: Stauffer, Reto & Mayr, Georg & Dabernig, Markus & Zeileis, Achim. (2014). Somewhere Over the Rainbow: How to Make Effective Use of Colors in Meteorological Visualizations. Bulletin of the American Meteorological Society. 96. 140710055335002. 10.1175/BAMS-D-13-00155.1. 
+Single hue gradient on the left; Multiple hue gradient on the right.  
 ```
 
 ```{tip}

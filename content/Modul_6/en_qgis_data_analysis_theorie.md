@@ -9,15 +9,15 @@ This Module covers a general understanding of data analysis, how to get statisti
 
 ## Data Analysis
 
-Even in a single layer, a lot of analysis is possible. However, sometimes the things we want to analyse are __split across__ multiple layers. In order to get these insights we use the spatial and non spatial GIS-processing tools we learned in the previous modules. In this module, we will look how to apply these tools, collect and work with data to create meaningful insights.
+Even in a single layer, a lot of analysis is possible. However, sometimes the things we want to analyse are __split across__ multiple layers. In order to get these insights we use the spatial and non spatial GIS-processing tools we learned in the previous modules. In this module, we will look how to apply these tools, collect and work with data to create meaningful insights. We will go over a few examples of data analysis that are common in humanitarian work. 
 
 ```{figure} ../../fig/multiple_layer_data_analysis.png
 ---
 align: left
 name: spatial analysis using multiple layers example
-width: 350px
+width: 250px
 ---
-A spatial analysis can be a result of combining several layers with different information in a single map
+A spatial analysis can be a result of combining several layers with different information in a single map.
 ```
 
 ### Spatial Analysis
@@ -95,6 +95,15 @@ Thematic analysis using different sizes to distinguish the population number in 
 
 * __Spatial analyses__ are performed on spatialized phenomena such as: presence/absence of the phenomenon, its relationship with other phenomena or entities, distribution in space. They are performed on the geometry and position of elements, as well as on their relationship with other elements. Spatial analyses can create new values or elements.
     * For example: crossing two satellite images to extract flooded areas between two dates; or crossing latrine and water catchment areas in a refugee camp; using a digital elevation model to determine which buildings have a high flooding risk.
+
+
+```{figure} ../../fig/en_flood_risk_map_example.png
+---
+name: flood risk map example
+width: 600 px
+---
+Example of a flood risk map. Source: Frank, Enrico & Ramsbottom, David & Avanzi, Agostino. (2016). Flood risk assessment and prioritisation of measures: Two key tools in the development of a national programme of flood risk management measures in Moldova. International Journal of Safety and Security Engineering. 6. 475-484. 10.2495/SAFE-V6-N3-475-484. 
+```
 
 ## Length, Surface, Circumference
 
@@ -183,7 +192,7 @@ There are a few different types of density maps. The most common are heatmaps an
 
 ### Heatmap
 
-Heat maps use features in a dataset to calculate the relative density of points on a map. The density is displayed as a colour ramp with colors ranging from "cool" (low density) to "hot" (high density). Heatmaps are useful when you have a large number of features covering an area with areas where these features cluster together. 
+Heat maps use features in a dataset to calculate the relative density of points on a map. The density is displayed as a colour ramp with colors ranging from "cool" (low density) to "hot" (high density). Heatmaps are useful when you have a large number of features covering an area with areas where these features cluster together and help us visualize spatial patterns of the layer. 
 
 ```{figure} ../../fig/point_map_to_heat_map_example.png
 ---
@@ -193,7 +202,30 @@ height: 300px
 Example of a point map (left) to a heat map (right)
 ```
 
+To create a heatmap you first need a layer containing data points or 'samples'. These points are distributed in an area with some areas containing more than others. The __density__ of the points in space determines the intensity of the color on the heat map. 
+
+In QGIS, there are two methods to create heatsmaps. The first method uses the symbology tab and is generally a lot faster. The second method uses the interpolation tool __"Heatmap (Kernel Density Estimation)"__ and offers more parameters to adjust. The advantage of the processing tool is that you can set a radius using metric units (for example the number of points in a __100 Meters__ radius compared to using the millimeters or pixels of your computer screen) and set a variable radius that is determined by another attribute. The next section will discuss the creation of heatmaps using the symbology tab. A guide on how to create a heatmap using the processing tool can be found [here](link)
+
+> insert link
+
+#### Using the symbology tab to create a heatmap
+
+You can create a heatmap in the __symbology tab__of a point or polyline layer. Navigate to the symbology tab and select the `Heatmap` symbolization method. Here, you can adjust the color ramp to your liking. You can also set the radius (in Millimeters on the canvas). This determines the radius that is used to aggregate the points. If it gets bigger, the circle that is used to count the points in an are gets bigger, more points are aggregated and the 'heat' increases.  You can also adjust the highest value. The highest value determines the value that is given the 'hottest' color. By default, it is set to the highest number of aggregated points. For example, you can set a threshold above which everything has Reducing it changes the visualization drastically.
+
+```{figure} ../../fig/en_heatmap_radius_max_value_conf_example.png
+---
+name: heatmap example with different radii and max value
+width: 700 px
+---
+Examples of heatmaps with different configuratin for the radius and the maximum value. 
+```
+
+As you can see, the information communicated through the different maps changes drastically. This is why you need to be transparent on what parameters you have set to create the heatmap.
+
+:::{dropdown} Assigning a weight to the samples
+
 :::
+
 
 ### Hexagon grid
 
@@ -217,6 +249,7 @@ You can remove the hexagon cells that are not overlapping the reference layer:
 ```
 
 :::{dropdown} Example video: Creating a hex map
+
 
 :::
 
