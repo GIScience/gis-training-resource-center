@@ -294,15 +294,8 @@ __Solutions:__
 If the attributes indicate the approximate longitude,latitude where the coordinates should be located, try doing a reverse lookup. This iterates over every well-defined coordinate system, unprojects the X,Y coordinates to WGS84, and measures the error to the known longitude,latitude. Errors less than a few hundred meters denote a reasonable projection, though this isn't precise enough to determine the GCS. 
 You can run this sample code yourself, or use this form:
 
-parse:
-  myst_enable_extensions:
-    # don't forget to list any other extensions you want enabled,
-    # including those that are enabled by default!
-    - html_admonition
 
-    <div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
-<p class="title">This is the **Table**</p>
-This is the *content*
+ Form in HTML-Content (needs to be concerted)   
 
 
                     <table style="padding: 0.5em;width:100%;font-size:90%;">
@@ -346,9 +339,6 @@ This is the *content*
                         <td style="text-align:right;"><span class="bold">Error (meters)</span></td>
                     </tr>
                 </table>
-
-</div>
-
 
 
 + If the coordinates have X-values between -180 and 180, and Y-values between -90 and 90, then you probably want to redefine to a longitude,latitude geographic coordinate system (GCS) like WGS84.
