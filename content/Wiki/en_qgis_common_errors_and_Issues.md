@@ -294,8 +294,9 @@ __Solutions:__
 If the attributes indicate the approximate longitude,latitude where the coordinates should be located, try doing a reverse lookup. This iterates over every well-defined coordinate system, unprojects the X,Y coordinates to WGS84, and measures the error to the known longitude,latitude. Errors less than a few hundred meters denote a reasonable projection, though this isn't precise enough to determine the GCS. 
 You can run this sample code yourself, or use this form:
 
+https://ihatecoordinatesystems.com/#correct-crs
 
- Form in HTML-Content (needs to be concerted)   
+ Form in HTML-Content (needs to be converted)   
 
 
                     <table style="padding: 0.5em;width:100%;font-size:90%;">
