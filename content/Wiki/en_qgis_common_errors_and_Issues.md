@@ -244,6 +244,12 @@ For example:
 
 + Coordinate (reference) system: WGS84 longitude,latitude
 
+
+
+```{Tip}
+For further detailed information about coordinate systems have also a look at: https://ihatecoordinatesystems.com/#correct-crs
+```
+
 ## Coordinate systems: How do I redefine a dataset's coordinate system?
 
 Redefining means the metadata about the coordinate system is modified but the coordinates are not. This contrasts with reprojections and transformations, which modify both the coordinate system and the coordinates.
