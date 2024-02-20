@@ -244,7 +244,7 @@ For example:
 
 + Coordinate (reference) system: WGS84 longitude,latitude
 
-__Glossary__
+## Coordinate systems: How do I redefine a dataset's coordinate system?
 
 Redefining means the metadata about the coordinate system is modified but the coordinates are not. This contrasts with reprojections and transformations, which modify both the coordinate system and the coordinates.
 
@@ -263,12 +263,27 @@ https://gdal.org/programs/ogr2ogr.html#cmdoption-ogr2ogr-a_srs with the `-a_srs`
 
 + From the command line, for raster datasets, use `gdal_edit`https://gdal.org/programs/gdal_edit.html#cmdoption-a_srs.py with the `-a_srs` parameter.
 
+## Coordinate systems: Why is Mercator ever used if it's so distorted?
+
+Mercator is the only conformal cylindrical map projection. Cylindrical map projections mean the whole Earth fits into a rectangle, which is very convenient for data processing algorithms that are used to working with rectangular images. Conformal means that angles and shapes are always preserved: north is always up, squares are always square, etc. Using a non-conformal projection would make things look stretched, squashed, and/or rotated when zooming in.
+
+
+```{figure} /fig/qgis_mercator.jpg
+---
+width: 75%
+name: qgis_mercator.jpg
+---
+
+```
+
+Mercator does enlarge areas farther from the equator, but at least this distortion is the same horizontally and vertically. And it's trivial to calculate a scale factor https://en.wikipedia.org/wiki/Mercator_projection#Scale_factor to correct measurements. The only time the distortion is problematic is when viewing a global-scale map with a range of different scale factors, but most maps are not global-scale and there are plenty of better projections to use for this case.
+
 ## Coordinate systems: My dataset is not located where it should be!
 Your dataset probably has the wrong coordinate system. This is the more general case of the previous problem. This can happen if the coordinate system is missing altogether, in which case GIS software often assumes that it is the same coordinate system as a previously loaded dataset, or the coordinate system set in the "project" or "map document".
 
 __Solution:__
 
- Redefine the coordinate system, https://ihatecoordinatesystems.com/#redefine i.e. change the coordinate system but not the coordinates, to the correct coordinate system https://ihatecoordinatesystems.com/#correct-crs.
+ Redefine the coordinate system, redefine i.e. change the coordinate system but not the coordinates, to the correct coordinate system. 
 
 ## Coordinate systems: What coordinate system should my dataset be in?
 
@@ -279,8 +294,17 @@ __Solutions:__
 If the attributes indicate the approximate longitude,latitude where the coordinates should be located, try doing a reverse lookup. This iterates over every well-defined coordinate system, unprojects the X,Y coordinates to WGS84, and measures the error to the known longitude,latitude. Errors less than a few hundred meters denote a reasonable projection, though this isn't precise enough to determine the GCS. 
 You can run this sample code yourself, or use this form:
 
-Table:
-                   
+parse:
+  myst_enable_extensions:
+    # don't forget to list any other extensions you want enabled,
+    # including those that are enabled by default!
+    - html_admonition
+
+    <div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title">This is the **Table**</p>
+This is the *content*
+
+
                     <table style="padding: 0.5em;width:100%;font-size:90%;">
                         <colgroup>
                             <col span="1" style="width: 18%;">
@@ -323,6 +347,9 @@ Table:
                     </tr>
                 </table>
 
+</div>
+
+
 
 + If the coordinates have X-values between -180 and 180, and Y-values between -90 and 90, then you probably want to redefine to a longitude,latitude geographic coordinate system (GCS) like WGS84.
 
@@ -336,7 +363,13 @@ Table:
 
 Your dataset probably has the wrong longitude/latitude geographic coordinate system (GCS). Different GCSs define slightly different sizes/shapes of the Earth (their ellipsoids) and different positionings on the Earth (their datums). As a result, the same longitude/latitude coordinates in two different GCSs can appear offset, although typically within tens of meters of each other. This can happen even if you are using a projected coordinate system (PCS) whose units are not degrees of longitude/latitude since PCSs have a GCS embedded within them.
 
-+ Image
+```{figure} /fig/qgis_wrong-gcs.png
+---
+width: 75%
+name: qgis_wrong-gcs.png
+---
+
+```
 
 __Solution__:
 
