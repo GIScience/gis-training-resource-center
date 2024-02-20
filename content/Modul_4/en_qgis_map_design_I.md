@@ -205,15 +205,15 @@ Labels are text that display information or values of the data. In QGIS, you can
 
 ```{figure} ../../fig/label_text_buffer_example.png
 ---
-width: 300 px
+width: 500 px
 name: label buffer example
 ---
 A label without a text buffer (left) and a label with a white text buffer (right)
 ```
 
 
-```{note} Label rendering
-
+```{note}
+QGIS renders the labels automatically.
 Sometimes the labels can obstruct other symbols. In that case, you can either adjust the placement of the labels in the __Label tab__, or use the `Move a Label, Diagram, or Callout`-tool in __Label toolbar__
 
 By default, QGIS renders the labels so that they don't overlap with other labels. This means that not all the labels will be visible if the data is dense or rendered close to each other. You can optimize the rendering under the rendering option. 

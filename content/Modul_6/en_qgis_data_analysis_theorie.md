@@ -4,7 +4,7 @@
 
 __Competences__:
 
-This Module covers a general understanding of data analysis, how to get statistics, create buffers, heatmaps, and how to break rivers, roads, or areas into segments. The following modules will cover more complex analysis methods 
+This Module covers a general understanding of data analysis, how to create statistics, create buffers, heatmaps, and how to break rivers, roads, or areas into segments. The following modules will cover more complex analysis methods. 
 
 ## Data Analysis
 
@@ -33,6 +33,10 @@ __Geographic analysis helps us answer questions like__:
 * How do locations __change over time__?
 
 Before doing any sort of processing, you need to __familiarise yourself with the data__ and understand it. 
+  
+      
+      
+        
 
 1. The first step is to read the metadata from the source and understand __what data was collected__, __who collected the data__, __and how the data was collected__. 
 2. Next, open the attribute table and look at the different features and attributes available. What do the attributes show and what are they called?
