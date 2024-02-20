@@ -61,12 +61,11 @@ It is important to know the __limitations__ of the data at your disposal - don't
 
 ```{Attention} Spatial Representation and Analysis
 There are some spatial analysis problems that are difficult to avoid completely. For example the __Modifiable Areal Unit Problem__ (pictured below), where the results look different depending on the unit of analysis.  
-![Modifiable Areal Unit Problem Example](/../fig/en_modifiable_areal_unit_problem_example.png)
+>INSERT LINK TO MODIFIABLE AREAL UNIT PROBLEM EXPLANATION
 ```
 
-__There are two main types of data analysis__:
-* __Thematic analyses__ focus on visual variation according to a given attribute of the data (one of its characteristics). They are performed on a specific field of the attribute table for the layer, whether textual or numerical. The graphical representation (symbology) changes according to the attribute.
-    * For instance: variations in size depending on population numbers in a refugee camp area.
+__There are two main types of data analysis__:  
+
 ```{figure} ../../fig/en_thematic_analysis.png
 ---
 name: thematic analysis example
@@ -74,12 +73,16 @@ width: 500px
 ---
 ```
 
+* __Thematic analyses__ focus on visual variation according to a given attribute of the data (one of its characteristics). They are performed on a specific field of the attribute table for the layer, whether textual or numerical. The graphical representation (symbology) changes according to the attribute.
+    * For instance: variations in size depending on population numbers in a refugee camp area.
+
+
 ```{figure} ../../fig/thematic_analysis_map_example.png
 ---
 name: thematic analysis example
 width: 600px
 ---
-Thematic analysis using different sizes to distinguish the population number in each camp (Source: [WFP](https://reliefweb.int/map/somalia/somalia-physical-constraints-map-21-july-2022))
+Thematic analysis using different colours for the roads to discern health accessibility (Source: [UNHCR](https://reliefweb.int/map/bangladesh/rohingya-refugee-responsebangladesh-rohingya-population-location-30-june-2022))
 ```
 
 ```{figure} ../../fig/thematic_analysis_map_example_2.png
@@ -87,7 +90,7 @@ Thematic analysis using different sizes to distinguish the population number in 
 name: thematic analysis example 2
 width: 600px
 ---
-Thematic analysis using different colours for the roads to discern health accessibility (Source: [UNHCR](https://reliefweb.int/map/bangladesh/rohingya-refugee-responsebangladesh-rohingya-population-location-30-june-2022))
+Thematic analysis using different sizes to distinguish the population number in each camp (Source: [WFP](https://reliefweb.int/map/somalia/somalia-physical-constraints-map-21-july-2022))
 ```
 
 * __Spatial analyses__ are performed on spatialized phenomena such as: presence/absence of the phenomenon, its relationship with other phenomena or entities, distribution in space. They are performed on the geometry and position of elements, as well as on their relationship with other elements. Spatial analyses can create new values or elements.
@@ -119,7 +122,7 @@ For example, to calculate the area of polygons:
 
 In the attribute table, you will find a new column called `Area` with the respective area for each feature. 
 
-```{Note}Measurement Units
+```{Note} Measurement Units
 The unit of measurement of the calculated area depends on the distance unit settings of the current project's CRS (metrical or geographic). In most cases you want metres or kilometers. Make sure the units of your CRS are metres to get the correct values. 
 
 You can check this by opening the CRS selector (bottom right corner) and reading the information of your selected CRS. 
@@ -165,6 +168,8 @@ Creating a [buffer](https://giscience.github.io/gis-training-resource-center/con
 - Proximity analysis
 - Estimated vulnerability analysis
 
+
+
 ## Density Map Analysis
 
 Density maps are very useful in communicating the __intensity of a phenomenon in an area__. Point data is aggregated to show the amount of incidents in that area.
@@ -180,17 +185,15 @@ There are a few different types of density maps. The most common are heatmaps an
 
 Heat maps use features in a dataset to calculate the relative density of points on a map. The density is displayed as a colour ramp with colors ranging from "cool" (low density) to "hot" (high density). Heatmaps are useful when you have a large number of features covering an area with areas where these features cluster together. 
 
-```{figure} ../../point_map_to_heat_map_example.png
+```{figure} ../../fig/point_map_to_heat_map_example.png
 ---
 name: point map to heat map example
-height: 300 px
+height: 300px
 ---
 Example of a point map (left) to a heat map (right)
 ```
 
-
-
->look at slides
+:::
 
 ### Hexagon grid
 

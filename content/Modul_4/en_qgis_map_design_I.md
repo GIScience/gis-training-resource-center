@@ -140,7 +140,7 @@ Colour gradients can also encompass multiple hues:
 name: colour gradients with multiple hues
 width: 750px
 ---
-Single hue gradient on the left; Multiple hue gradient on the right
+Single hue gradient on the left; Multiple hue gradient on the right. Source: Stauffer, Reto & Mayr, Georg & Dabernig, Markus & Zeileis, Achim. (2014). Somewhere Over the Rainbow: How to Make Effective Use of Colors in Meteorological Visualizations. Bulletin of the American Meteorological Society. 96. 140710055335002. 10.1175/BAMS-D-13-00155.1. 
 ```
 
 ```{tip}
@@ -187,7 +187,7 @@ QGIS let's you use different types markers for symbolization. These can be simpl
 
 ### Bivariate Maps
 
-
+Bivariate maps are a useful tool to visualize and analyze geographic data. 
 
 
 ## Labels
@@ -305,6 +305,7 @@ When a styling is saved in the same location as the data and has the same name a
 
 
 >TO DO: insert links
+ PREVIEW MODE
 
 - [Exporting a styling](link)
 - [Loading a style into your QGIS-project](link)
