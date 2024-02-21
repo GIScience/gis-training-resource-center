@@ -547,7 +547,7 @@ The actual impact information consists of two parts. One part is always the impa
 The other part is either the impact quantity or the impact quality. It can not be both! 
 The impact quantity describes simply how many of something. How many people have been affected? How many schools got damaged?
 
-The impact quality is used if something cannot be described with numbers. For example, there was a disease outbreak of cholear. Cholera is not a number. Or a locality was affected -> Yes the locality was affected.
+The impact quality is used if something cannot be described with numbers but with "Yes" or "No". For example, there was a disease outbreak of cholear. Cholera is not a number. Yes there was cholera outbreak. Or a locality was affected -> Yes the locality was affected.
 
 Hence we need three columns to describe impacts: impact_typ, impact_quality and impact_quantity.
 
@@ -555,7 +555,7 @@ Hence we need three columns to describe impacts: impact_typ, impact_quality and 
 |------------|----------------|-----------------|
 | houses_damaged_totaly           |   2500             |                 |
 |      deaths      |              6    |               |
-|      disease_outbreak      |               |         Cholera         |
+|      disease_cholera      |               |         yes         |
 
 It makes sense to list some of the basic impact types we are interested in or which are very commonly reported. Such as affected people or deaths. The list of impact types can be extended on the fly. It is however important to stay consistent.
 The HeiGIT team used 75 different impact types. You can find the whole list below.
@@ -888,10 +888,17 @@ The resulting table can easily be adjusted in Excel.
 | WHITE NILE   | 10,160          | 1      |
 
 
-
 ## HIA Data Cleaning
 
-When creating such a dataset there will be errors like misspellings of names or wrong numbers. To address that you will need to clean the dataset before actually using it. To clean the dataset you can use Excel or specialized tools like OpenRefein.
+When creating such a dataset there will be errors like misspellings of names or wrong numbers. To address that you will need to clean the dataset before actually using it. To clean the dataset you can use Excel or specialized tools like [OpenRefein](https://openrefine.org/).
+
+```{Tipp} OpenRefein
+OpenRefein is a free and open-source specialized data cleaning software.
+You download once the folder with the installation files. To start OpenRefein you need to double-click openrefine.exe. The software will run in your browser! -> [Installation Video](https://www.youtube.com/watch?v=nTlTboXoGj4)
+
+OpenRefein Beginner Tutorials -> __[Video](https://www.youtube.com/watch?v=wfS1qTKFQoI)__
+```
+
 
 Independently on which tool you will use, here are some important points you have to check when cleaning the data:
 
@@ -914,12 +921,12 @@ Independently on which tool you will use, here are some important points you hav
 4. **Admin Columns (admin_level, admin_1, admin_2, admin_3, admin_camp):**
    - Check if all administrative units are correctly categorized.
    - Ensure that there are no misspelled or inconsistent administrative unit names.
-   - *OpenRefine Step:* Use the "Text facet" to explore the distribution of values in each admin level column. Click on `Cluster` and set `Method` to `Key collision` or `Nearest neighbor`. Consolidate the of states and loclities that they are consisten with the list in the [location chapter]().Adjust wrong names by checking `Merge` and adjust the `New cell value` and click on `Merge selected & re-cluster` 
+   - *OpenRefine Step:* Use the "Text facet" to explore the distribution of values in each admin level column. Click on [`Cluster`](https://openrefine.org/docs/manual/cellediting#cluster-and-edit) and set `Method` to `Key collision` or `Nearest neighbor`. Consolidate the of states and loclities that they are consisten with the list in the [location chapter](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_historical_impact_assessment_sudan.html#location).Adjust wrong names by checking `Merge` and adjust the `New cell value` and click on `Merge selected & re-cluster` 
 
 5. **Impact Type Column:**
    - Check if all impact types are correctly categorized and named.
    - Ensure that there are no duplicate or missing impact types.
-   - *OpenRefine Step:* Use the "Text facet" to explore the distribution of values in each admin level column. Click on `Cluster` and set `Method` to `Key collision` or `Nearest neighbor`. Adjust wrong names by checking `Merge` and adjust the `New cell value` and click on `Merge selected & re-cluster`
+   - *OpenRefine Step:* Use the "Text facet" to explore the distribution of values in each admin level column. Click on [`Cluster`](https://openrefine.org/docs/manual/cellediting#cluster-and-edit) and set `Method` to `Key collision` or `Nearest neighbor`. Adjust wrong names by checking `Merge` and adjust the `New cell value` and click on `Merge selected & re-cluster`
 
 6. **Impact Quantity Columns:**
    - Check if all numerical values are within expected ranges.
@@ -928,4 +935,30 @@ Independently on which tool you will use, here are some important points you hav
 
 7. **Impact Quality Columns:**
    - Check that the same impacts are spelt consistently. For example illness names.
-   - *OpenRefine Step:* Use the "Text facet" to explore the distribution of values in each admin level column. Click on `Cluster` and set `Method` to `Key collision` or `Nearest neighbor`. Adjust wrong names by checking `Merge` and adjust the `New cell value` and click on `Merge selected & re-cluster`
+   - *OpenRefine Step:* Use the "Text facet" to explore the distribution of values in each admin level column. Click on [`Cluster`](https://openrefine.org/docs/manual/cellediting#cluster-and-edit) and set `Method` to `Key collision` or `Nearest neighbor`. Adjust wrong names by checking `Merge` and adjust the `New cell value` and click on `Merge selected & re-cluster`
+8. **Delete redundant data**
+    - It might be the case that you have for one flood event, multiple information on for example affected populations for the same location. This could later be a problem when you want to analyse the data.
+    Probably, the reddened information is from two different sources. So you can delete the information of the older source and only keep the one from the up-to-date source as possible.
+
+
+#### Adding P-Codes to the table
+
+## Working with the impact table in Excel
+Now we have our impact dataset cleaned and ready to use. Since the dataset is a long table we cannot use it as a normal table in Excel. To get the data in a format so we can use it in QGIS or create a graph out of it, we need to pivot it. Depending on your work with impact quantity or quality, there are small differences. Here is how you do it:
+### Impact Quantity for one year on the state level:
+1. Open the Excel dataset.
+2. Turn the data in a table by clicking on `Insert` -> `Table`-> check `My table has headers`
+3. Also under the `Insert`-Tab click on `Pivot Table`. Make sure your table range is correct. Check `New Worksheet`. Click `OK`.
+4. Setup the pivot table by placing the columns as follows:
+  - Filter: Start_year
+  - Columns: Impact_Type
+  - Rows: admin_1 or admin_1_PCODE (If you want to use this table in QGIS, you should use admin_1_PCODE Instead of admin_1)
+  - Values: Impact_quantity
+5. To see the sum of the different impacts click on Impact_quantity under Values -> `Value Field Settings` -> select `Sum`.
+6. Directly above the pivot table, you should see the option to filter by year. Select the year you are interested in. 
+
+Now you can just copy the whole table, and place it in a new worksheet. Make sure to only paste the values. 
+This table can now be used to join with an existing geodata set in QGIS.
+
+
+
