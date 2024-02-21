@@ -941,11 +941,13 @@ Independently on which tool you will use, here are some important points you hav
     Probably, the reddened information is from two different sources. So you can delete the information of the older source and only keep the one from the up-to-date source as possible.
 
 
-#### Adding P-Codes to the table
+## Adding P-Codes to the table
 
 ## Working with the impact table in Excel
+
 Now we have our impact dataset cleaned and ready to use. Since the dataset is a long table we cannot use it as a normal table in Excel. To get the data in a format so we can use it in QGIS or create a graph out of it, we need to pivot it. Depending on your work with impact quantity or quality, there are small differences. Here is how you do it:
-### Impact Quantity for one year on the state level:
+
+### Impact Quantity for one year on state level:
 1. Open the Excel dataset.
 2. Turn the data in a table by clicking on `Insert` -> `Table`-> check `My table has headers`
 3. Also under the `Insert`-Tab click on `Pivot Table`. Make sure your table range is correct. Check `New Worksheet`. Click `OK`.
