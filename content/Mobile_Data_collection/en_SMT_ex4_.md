@@ -70,9 +70,9 @@ If you expieriences any problems during your use of the [Sketch Map Tool](https:
 ::::
 
 
+## Exercise A: Exploaration & basic visualization of Sketch Map Tool outputs in QGIS
 
-
-:::{dropdown} ## Exercise A: Exploaration & basic visualization of Sketch Map Tool outputs in QGIS
+:::{dropdown} Exercise A: Exploaration & basic visualization of Sketch Map Tool outputs in QGIS
 :open:
 
 ## Exercise A: Exploaration & basic visualization of Sketch Map Tool outputs in QGIS
@@ -106,17 +106,17 @@ Now load your vector file ("Schuld_Ahr-tal_sketch-map_Ex4.geojson") and geotiff 
 
 #### 3. Explore the data
 
-1. Orientate in the User Interface
+1. __Orientate in the User Interface__
 
     If you are a beginner to QGIS get to know the basics of the QGIS User Interface [here](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#qgis-interface).
 
-2. Add a Basemap
+2. __Add a Basemap__
 
     For a better overview and orientation it is always helpful to add a basemap to your project and put your situation in a spatial context. Find in the `Browser` Panel `XYZ Tiles`, open the dropdown by clicking on it and select OpenStreetMap or another basemap.
 
     Click [here](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#standard-qgis-basemaps) for more information on basemaps and how toa dd them to your project.
 
-3. Understand the Layer Concept
+3. __Understand the Layer Concept__
 
     By dragging and dropping your data into QGIS the data will be visualized in the map canvas and its description will be visible in the `Layers` Panel. You should now have 3 layers in your panel: your geojason output (vector), your geotiff (Raster) and the opentstreetmap basemap. In order to see all the information you have to bing theminto order. It is important to understand the [Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html#layer-concept).
 
@@ -130,7 +130,7 @@ Now load your vector file ("Schuld_Ahr-tal_sketch-map_Ex4.geojson") and geotiff 
     Interface
     ```
 
-4. Explore the data
+4. __Explore the data__
 
     __Vector data__
 
@@ -251,7 +251,12 @@ In the [Map Making Wiki](https://giscience.github.io/gis-training-resource-cente
 
 ## Exercise B: Basic visulization of Sketch Map Tool outputs in UMAP
 
-#### Background Information on UMAP
+:::{dropdown} Exercise B: Basic visulization of Sketch Map Tool outputs in UMAP
+:open:
+
+## Exercise B: Basic visulization of Sketch Map Tool outputs in UMAP
+
+### 1. Background Information on UMAP
 
 UMAP (Unified Map Platform) is an online platform that allows users to create custom maps using OpenStreetMap (OSM) data. No installation or registration is necesary which enables users to quickly gain an intuitive overview of their data.
 Useres can customize the appearance of the map and share it with others. It's particularly useful for collaborative mapping projects, visualizing geographic data, and creating custom maps tailored to specific needs
@@ -266,13 +271,11 @@ Useres can customize the appearance of the map and share it with others. It's pa
 | Output | Printable map with all necesary map elements | URL so share map online |
 
 
-
-
 ```{Hint}
 The Geojson output of the Sketch Map Tool cannot be opened and inspected with commonly available tools. If you use the Sketch Map Tool and do not have QGIS installed and quickly want to examine your result, UMAP is a simple and quick way to do so.
 ```
 
-
+### 2. Load your data 
 
 Hintergrundkarte kann ausgewählt werden
 
@@ -281,3 +284,7 @@ Karte einen Namen geben
 Digitalization:
 
 you can draw polygon, give it name and description
+
+### 3. Customize your map
+
+:::
