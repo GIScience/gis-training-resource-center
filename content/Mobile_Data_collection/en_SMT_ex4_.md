@@ -72,21 +72,16 @@ If you expieriences any problems during your use of the [Sketch Map Tool](https:
 
 
 
+:::{dropdown} ## Exercise A: Exploaration & basic visualization of Sketch Map Tool outputs in QGIS
+:open:
 
-## Exercise A: Basic visulaization of Sketch Map Tool outputs in QGIS
+## Exercise A: Exploaration & basic visualization of Sketch Map Tool outputs in QGIS
 
+
+
+#### 1. Scenario and Background
 
 critical infrastrucutre and historical flood extent
-
-
-
-
-
-Exercise Input: jpeg um noch kurz den Prozess im SMT zu wiederholen oder direkt geojson zur Verfügung stellen?
-
-To do: Kontext und Gebiet  auswählen
-
-Schritte:
 
 #### 1. Data Collection
 
@@ -113,57 +108,55 @@ Now load your vector file ("Schuld_Ahr-tal_sketch-map_Ex4.geojson") and geotiff 
 
 1. Orientate in the User Interface
 
-If you are a beginner to QGIS get to know the basics of the QGIS User Interface [here](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#qgis-interface).
+    If you are a beginner to QGIS get to know the basics of the QGIS User Interface [here](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#qgis-interface).
 
 2. Add a Basemap
 
-For a better overview and orientation it is always helpful to add a basemap to your project and put your situation in a spatial context. Find in the `Browser` Panel `XYZ Tiles`, open the dropdown by clicking on it and select OpenStreetMap or another basemap.
+    For a better overview and orientation it is always helpful to add a basemap to your project and put your situation in a spatial context. Find in the `Browser` Panel `XYZ Tiles`, open the dropdown by clicking on it and select OpenStreetMap or another basemap.
 
-Click [here](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#standard-qgis-basemaps) for more information on basemaps and how toa dd them to your project.
+    Click [here](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#standard-qgis-basemaps) for more information on basemaps and how toa dd them to your project.
 
 3. Understand the Layer Concept
 
-By dragging and dropping your data into QGIS the data will be visualized in the map canvas and its description will be visible in the `Layers` Panel. You should now have 3 layers in your panel: your geojason output (vector), your geotiff (Raster) and the opentstreetmap basemap. In order to see all the information you have to bing theminto order. It is important to understand the [Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html#layer-concept).
+    By dragging and dropping your data into QGIS the data will be visualized in the map canvas and its description will be visible in the `Layers` Panel. You should now have 3 layers in your panel: your geojason output (vector), your geotiff (Raster) and the opentstreetmap basemap. In order to see all the information you have to bing theminto order. It is important to understand the [Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html#layer-concept).
 
 
-```{figure} /fig/en_SMT_ex4_fig1.PNG
----
-height: 50px
-name: T
-align: center
----
-Interface
-```
+    ```{figure} /fig/en_SMT_ex4_fig1.PNG
+    ---
+    height: 50px
+    name: T
+    align: center
+    ---
+    Interface
+    ```
 
 4. Explore the data
 
+    __Vector data__
 
-Vector data
+    In order to explore your detected markings, right-click on your vector file and navigate to `Open Attribute Table` and click on it. The table has one entry (row) for each detected marking. In our example 6 markings where detecetd. The column "color" describes the color which has been detected for each marking and the column "name" contains the name of your uploaded Sketch Map. 
 
-In order to explore your detected markings, right-click on your vector file and navigate to `Open Attribute Table` and click on it. The table has one entry (row) for each detected marking. In our example 6 markings where detecetd. The column "color" describes the color which has been detected for each marking and the column "name" contains the name of your uploaded Sketch Map. 
+    ```{Note}
+    When you upload several marked Sketch Maps simultaneously, you will get one vector output containing all the markings of all Sketch Maps. In this case the column "name" helps you to track on which map each marking was detected 
+    ```
 
-```{Note}
-When you upload several marked Sketch Maps simultaneously, you will get one vector output containing all the markings of all Sketch Maps. In this case the column "name" helps you to track on which map each marking was detected 
-```
+    ```{figure} /fig/en_SMT_ex4_Attrbute_Table.PNG
+    ---
+    height: 50px
+    name: T
+    align: center
+    ---
+    Attribute Tabek of Vector file output of Sketch Map Tool
+    ```
 
-```{figure} /fig/en_SMT_ex4_Attrbute_Table.PNG
----
-height: 50px
-name: T
-align: center
----
-Attribute Tabek of Vector file output of Sketch Map Tool
-```
+    __GeoTIFF__
 
+    The Raster file as result of the SKetch Map Tool is basically the foto you took of your Sketch Map but georeferenced. You see if the georeferencing is correct when it matches the base map. Furthermore your tif File is helpful to compare and review the marking detection (vector file). In this case your tiff is your "groudn truth" and you can check if the marking detection by the tool is true or if there are pieces missing or wongly detected. 
 
-GeoTIFF
+    Question:
+    Do your different output match or do you find any errors?
 
-The Raster file as result of the SKetch Map Tool is basically the foto you took of your Sketch Map but georeferenced. You see if the georeferencing is correct when it matches the base map. Furthermore your tif File is helpful to compare and review the marking detection (vector file). In this case your tiff is your "groudn truth" and you can check if the marking detection by the tool is true or if there are pieces missing or wongly detected. 
-
-Question:
-Do your different output match or do you find any errors?
-
--> Yes, you are right. Unfortunatly, one marked polygon did not get detected. This can happen since marking are being detected by machien learning algorithms that can encounter problemas in soem situations. 
+    -> Yes, you are right. Unfortunatly, one marked polygon did not get detected. This can happen since marking are being detected by machien learning algorithms that can encounter problemas in soem situations. 
 
 
 ### 5. Correct or enhance your data
@@ -172,49 +165,91 @@ So what can we do if a marking has not been detected? We can add missing marking
 
 1. Right-click on your vector file and click on `Toggle Editing`. The `Digitizing Toolbox` in your menu bar on top of your QGIS will be activated:
 
-```{figure} /fig/en_SMT_ex4_dig_toolbox.PNG
----
-height: 50px
-name: T
-align: center
----
-Digitzing Toolbox
-```
-Click on `Add Feature: Capture Polygon`![](/fig/mActionCapturePolygon.png). You will note that your mouse market now changed its symbol into a target. This means you can now start tracing the missing polygon my left-clicking. You finish your polygon by a right-click and you will be asked to enter the descriptions. Enter the information and click ok.
+    ```{figure} /fig/en_SMT_ex4_dig_toolbox.PNG
+    ---
+    height: 50px
+    name: T
+    align: center
+    ---
+    Digitzing Toolbox
+    ```
+    Click on `Add Feature: Capture Polygon`![](/fig/mActionCapturePolygon.png). You will note that your mouse market now changed its symbol into a target. This means you can now start tracing the missing polygon my left-clicking. You finish your polygon by a right-click and you will be asked to enter the descriptions. Enter the information and click ok.
 
-```{figure} /fig/en_SMT_ex4_dig_info.PNG
----
-height: 50px
-name: T
-align: center
----
-Digitzing 
-```
-In the map canvas you can already see your handdrawn polygon. In order to save it you should now right-click on your vector layer and turn off the Editing mode by clickin on `Toggle Editing` -> `Save`. Check your result by looking at the Attribute Table again: You now have 7 features in your table.
-
-
-
-```{figure} /fig/en_SMT_ex4_Attrbute_Table_new.PNG
----
-height: 50px
-name: T
-align: center
----
-Attribute Table with added polygon 
-```
+    ```{figure} /fig/en_SMT_ex4_dig_info.PNG
+    ---
+    height: 50px
+    name: T
+    align: center
+    ---
+    Digitizing 
+    ```
+    In the map canvas you can already see your handdrawn polygon. In order to save it you should now right-click on your vector layer and turn off the Editing mode by clickin on `Toggle Editing` -> `Save`. Check your result by looking at the Attribute Table again: You now have 7 features in your table.
 
 
-The whole process of Digitalisation is explained in detail [here](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation.html?highlight=digitize#digitalisation).
+
+    ```{figure} /fig/en_SMT_ex4_Attrbute_Table_new.PNG
+    ---
+    height: 50px
+    name: T
+    align: center
+    ---
+    Attribute Table with added polygon 
+    ```
+
+
+    The whole process of Digitalisation is explained in detail [here](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation.html?highlight=digitize#digitalisation).
 
 
 ### 6. Visualize your data
 
-- Customize colors (Categorize!), opacity, ...
+Now we want to visualize our results and generate a printable map so the results can be shown to third parties in a clear and comprehensible manner. We can now delete the geotiff layer by right-click -> `Remove Layer` since we will be working with the vector marking detections.
+
+1. __Customize Symbology__
+
+We can customize the symbology of our vectory layer by right-clicking on it in the `Layers` Panel -> `Properties` -> `Symbology`.
+
+First of all we want to assign different colors for different features. We assume we know that blac and blue colors were used to mark past flood extents and red was used to mark critical infrastructures. We want to replicate this.
+
+In the topmost drop-down menu, choose `Categorized`. As Value choose "color" and then click on the bottom left on `Classify`. We are now able to choose colors depending on the value in the column "color". By oble-clicking on the colored box in your windwo next to your value andf Legend descriptions the `Symbol Selector` will open in a new window where you can choose the color of your preference by clicking on the drop-down arrow next to "Color".
+Right below you can also ajust the opcaty level of your feature.
+
+
+    ```{figure} /fig/en_SMT_ex4_dig_categorize.PNG
+    ---
+    height: 50px
+    name: T
+    align: center
+    ---
+    Attribute Table with added polygon 
+    ```
+
+
+In the `Symbol Selector`, you can also in the upper window click on `Simple line` and change the `Symbol Layer Type`. In tzis example we would like to symbolize the critical Infrastructure with red outlines, so we choose "Outline: Simple Line". Juts below we can adjust the color, stroke witdh stroke line type, etc. You can find more information about the visualization of vector data [here](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_visualisation_wiki.html#visualisation-of-vector-data).
+
+
+    ```{figure} /fig/en_SMT_ex4_dig_Symbology.PNG
+    ---
+    height: 50px
+    name: T
+    align: center
+    ---
+    Attribute Table with added polygon 
+    ```
+
+
+
+
+
+2. __Make a printable Map__
+
 - Lean how to makew a printable map, map layout, legend, north arrow, etc.
 
 
+In the [Map Making Wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_map_making_wiki.html#map-making-wiki) you can find all the information about making a printable map.
 
-## Exercise B: Basic visulaization of Sketch MNap Tool outputs in UMAP
+:::
+
+## Exercise B: Basic visulization of Sketch Map Tool outputs in UMAP
 
 #### Background Information on UMAP
 
