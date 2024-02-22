@@ -94,7 +94,8 @@ The required input files must follow a given structure. You find below  the requ
 
 ### 1. Administrative boundaries level 2
 
-A geospatial vector format (geojson, geopackage, shapefile,…) containing the administrative boundaries on admin level 2 and P-Codes of the respective countries. These can be found on the websites of national governments or on Humanitarian Data Exchange, for example. The administrative boundary data does not require a specific coordinate reference system (CRS), but the output and result will have the same CRS as the input.
+A geospatial vector format (geojson, geopackage, shapefile,…) containing the administrative boundaries on admin level 2 and P-Codes of the respective countries. These can be found on the websites of national governments or on Humanitarian Data Exchange, for example. This dataset has two obligatory columns: “ADM2_PCODE” containing the P_Codes and “ADM2_EN” containing the district names. The administrative boundary data does not require a specific coordinate reference system (CRS), but the output and result will have the same CRS as the input.
+
 ### 2. Risk Assessment indicators
 
 For the Risk Assessment indicators the following 3 “csv”-files are mandatory:
