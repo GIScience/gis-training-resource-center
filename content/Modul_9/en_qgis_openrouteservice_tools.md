@@ -37,7 +37,7 @@ align: center
 -  Open the "ORS tools" plugin
 -  To make use of the ORS tools, you first need to sign up. Therefore click "Sign    Up"
 
-```{figure} /fig/sign_up_ORS.png
+```{figure} /fig/signup_ORS.png
 ---
 width: 700px
 name: basic classification
