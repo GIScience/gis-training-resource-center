@@ -16,7 +16,9 @@ __🔙[Back to Homepage](/content/intro.md)__
 ### Theory
 
 __The earth is a sphere and cannot be represented on a flat map without being distorted.__ To able able to display the earth on a flat map for example as a rectangle it needs to be projected. For further explanation, watch this video.
-[![preview video](../../fig/screenshot_video_every_world_map_is_wrong.png)](https://www.youtube.com/watch?v=kIID5FDi2JQ "Why every world map is wrong")
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kIID5FDi2JQ?si=C0tYz7nteMF_xqvr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 
 For this translation, from a curved on a flat surface, thousands of different methods exist. These are called **Coordinate Reference Systems (CRS)**.
 
@@ -26,7 +28,15 @@ Every projection comes with a trade-off in shape, direction, distance and area. 
 
 For example, Mercator projections don´t represent the area correctly. Google Maps still uses the Mercator to be able to represent streets correctly, since it works well on a small scale. On a big scale, the shape of the countries stay the same but the area is mispresented. You can check the true size in comparison to different placements on the map on this [website](https://www.thetruesize.com). A popular example is Greenland in comparison with Africa, which seem on the map to be about the same size, but in reality Africa is a lot bigger.
 
-![Comparison Greenland - Africa](../../fig/en_greenland_africa.png)
+
+```{figure} /fig/en_greenland_africa.png
+---
+width: 800px
+align: center
+name: Comparison Greenland - Africa
+---
+Comparison Greenland - Africa. Source: [The True Size of](https://www.thetruesize.com/#?borders=1~!MTYwODM1MTk.MzkyNDUyNg*MjY5NjM4Mzg(MTA1MjgyOTE~!CONTIGUOUS_US*MTAwMjQwNzU.MjUwMjM1MTc(MTc1)MQ~!IN*NTI2NDA1MQ.Nzg2MzQyMQ)MA~!CN*OTkyMTY5Nw.NzMxNDcwNQ(MjI1)Mg)
+```
 
 :::{dropdown} Embedded Website 
 
@@ -48,7 +58,16 @@ This table shows an overview on which projections to use for which needed charac
 
 For smaller areas local projections should be used, since they give a more accurate display at the expense of more distortion at the global level. 
 
-![Local Coordinate Reference Systems](../../fig/en_local_crs.png)
+
+
+```{figure} /fig/en_local_crs.png
+---
+width: 800px
+name: Local and global coordinate reference systems (CRS)
+align: center
+---
+Local and global coordinate reference systems (CRS). Source: British Red Cross (BRC)
+```
 
 ### Application
 
@@ -109,15 +128,33 @@ Geodata represents a real-world object on a map as a feature. A feature consists
 
 By superpositioning different layers, you build your map and can obtain information of different sources. With those you then can perform analyses or adapt the representation by using symbols and colors.
 
-![Layer concept](../../fig/en_layer.png)
+
+```{figure} /fig/en_layer.png
+---
+width: 800px
+name: 
+align: center
+name: Layers in a GIS
+---
+Layers in a GIS. Source: [CartONG](https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_1_layers)
+```
 
 
 ## Vector and raster data
 
 There are two file types of geographic data: **vector and raster**.  
 
-![Vector and raster data](../../fig/en_vector_raster.png)
-  
+
+
+```{figure} /fig/en_vector_raster.png
+---
+width: 800px
+name: 
+align: center
+name: Raster Vector Concept
+---
+Raster Vector Concept. Source: Adapted from [WikiMedia](https://commons.wikimedia.org/wiki/File:Raster_vector_tikz.png)
+```
 
 ### Vector
 Vector data contains a shape or a geometry. By using geometry objects (points, lines and polygons) the real world is represented. Each object stores the location (as adress or coordinates) and further attributes, e.g. name or ID. Which geometry is used, depends on the feature it represents.
@@ -127,7 +164,9 @@ Vector data contains a shape or a geometry. By using geometry objects (points, l
 width: 800px
 name: 
 align: center
+name: Vector Data overview
 ---
+Vector Data overview. Source: HeiGIT
 ```
   
 #### Vector file formats
@@ -143,20 +182,63 @@ Vector data can have the following data formats:
 | .geojson|GeoJSON|Similar to shapefiles, but stores all information in a single file. 
   
 
-![data formats](../../fig/en_data_formats.png)
-
+```{figure} /fig/en_data_formats.png
+---
+width: 800px
+name: 
+align: center
+name: The main geographical data formats
+---
+The main geographical data formats. Source: [CartONG](https://cartong.pages.gitlab.cartong.org/learning-corner/en/4_data_geo/4_1_formats)
+```
 
 
 ### Raster  
 Raster data are images which contain a matrix of pixels. Each pixel stores a value e.g. elevation, temperature, population or  land cover typ. 
 Since a raster is based on an image, the resolution is crucial. It defines the accuracy of the data and size of the pixels. 
-![Raster data quality](../../fig/en_quality_raster.png)
+
+
+```{figure} /fig/en_quality_raster.png
+---
+width: 800px
+align: center
+name: The main geographical data formats
+---
+The main geographical data formats. Source: [CartONG](https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_3_vector_raster_data)
+```
+
 
 In this picture you can see the same location, on the left as vector data, visualising streets and urban area, and on the right hand as raster data (satellite image), showing the land cover.
 
-vector                     |  raster
-:-------------------------:|:-------------------------:
-![same location as vector data](../../fig/en_same_location_vector.png)  |  ![same location as raster data](../../fig/en_same_location_raster.png)  
+
+
+
+::::{grid} 2
+:::{card} Vector
+```{figure} /fig/en_same_location_vector.png
+---
+width: 400px
+name: Vector
+align: center
+---
+The same location as vector data. Source: British Red Cross (BRC)
+```
+:::
+
+:::{card} Raster
+```{figure} /fig/en_same_location_raster.png
+---
+width: 400px
+name: Raster
+align: center
+---
+The same location as raster image. Source: British Red Cross (BRC)
+```
+:::
+::::
+
+
+
 
 #### Raster data formats
 
