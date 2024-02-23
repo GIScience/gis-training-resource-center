@@ -14,13 +14,14 @@ analysing participatory mapping
 #### Focus group (GIS-Knowlege Level)
 
 - Exercise builds on prior-knowledge of Sketch Map Tool. Make sure [Execise 1](https://giscience.github.io/gis-training-resource-center/content/Mobile_Data_collection/en_SMT_ex1_.html#sketch-map-tool-exercise-1-workflow-exercise) has been done before or knowlege on the background on Sketch Map Tool is there.
+
 - GIS Beginners-level: no specific knowledge about QGIS /Umap required
 
 #### Type of trainings exercise:
 This exercise can be used in online and presence training and is focused on an hands-on experience with the basic of QGIS or UMAP.
 #### Estimated time demand for the exercise.
 Exercise A: with absolute beginners 2 hours
-Exewrcise B: 30 min
+Exercise B: 30 min
 
 ```{Tip}
 Decide together with the responsible working group which GIS system is prefered and decide on one. There is no neccesity to learn/use both ways. Generally QGIS will give you more opportunities for visualization and analysis of the results, but if a simple and quick visualization without installation of software packages is desired, UMAP might be an easy solution.
@@ -161,29 +162,33 @@ Now load your vector file ("Schuld_Ahr-tal_sketch-map_Ex4.geojson") and geotiff 
 
 ### 5. Correct or enhance your data
 
+
+
+1. Digitalisation: Add a marking manually
+
 So what can we do if a marking has not been detected? We can add missing markings manually by tracking the drawing on the getif file. This process is also called [digitalisation](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation.html?highlight=digitize#digitalisation). 
 
-1. Right-click on your vector file and click on `Toggle Editing`. The `Digitizing Toolbox` in your menu bar on top of your QGIS will be activated:
+Right-click on your vector file and click on `Toggle Editing`. The `Digitizing Toolbox` in your menu bar on top of your QGIS will be activated:
 
-    ```{figure} /fig/en_SMT_ex4_dig_toolbox.PNG
-    ---
-    height: 50px
-    name: T
-    align: center
-    ---
-    Digitzing Toolbox
-    ```
-    Click on `Add Feature: Capture Polygon`![](/fig/mActionCapturePolygon.png). You will note that your mouse market now changed its symbol into a target. This means you can now start tracing the missing polygon my left-clicking. You finish your polygon by a right-click and you will be asked to enter the descriptions. Enter the information and click ok.
+```{figure} /fig/en_SMT_ex4_dig_toolbox.PNG
+---
+height: 50px
+name: T
+align: center
+---
+Digitzing Toolbox
+```
+Click on `Add Feature: Capture Polygon`![](/fig/mActionCapturePolygon.png). You will note that your mouse market now changed its symbol into a target. This means you can now start tracing the missing polygon my left-clicking. You finish your polygon by a right-click and you will be asked to enter the descriptions. Enter the information and click ok.
 
-    ```{figure} /fig/en_SMT_ex4_dig_info.PNG
-    ---
-    height: 50px
-    name: T
-    align: center
-    ---
-    Digitizing 
-    ```
-    In the map canvas you can already see your handdrawn polygon. In order to save it you should now right-click on your vector layer and turn off the Editing mode by clickin on `Toggle Editing` -> `Save`. Check your result by looking at the Attribute Table again: You now have 7 features in your table.
+ ```{figure} /fig/en_SMT_ex4_dig_info.PNG
+---
+height: 50px
+name: T
+align: center
+---
+Digitizing 
+```
+In the map canvas you can already see your handdrawn polygon. In order to save it you should now right-click on your vector layer and turn off the Editing mode by clickin on `Toggle Editing` -> `Save`. Check your result by looking at the Attribute Table again: You now have 7 features in your table.
 
 
 
@@ -200,6 +205,38 @@ So what can we do if a marking has not been detected? We can add missing marking
     The whole process of Digitalisation is explained in detail [here](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation.html?highlight=digitize#digitalisation).
 
 
+
+2. Add a property/column to the Attribute Table
+
+Normally you know the meaning of the markings in your Sketch Map. We will now learn how to add them to your vector layer. In our example we assume we know that black and blue colors were used to mark past flood extents and red was used to mark critical infrastructures. We want to replicate this.
+- Right-click on your vector layer and navigate to `Open Attribute Table` and click on it.
+- In the upper left corner click on ![](/fig/mActionToggleEditing.png) to toggle editing mode
+- click on ![](/fig/mActionNewAttribute.png) to add a new field to the data source
+- As `Name` enter "Description", choose "Text (String)" `Type`, as `Length` enter "20" and click `OK`
+
+```{figure} /fig/en_SMT_ex4_addfield.PNG
+---
+height: 50px
+name: T
+align: center
+---
+Attribute Add field
+```
+
+- by clicking on each field you can now enter the respective descriptions to the colors:
+
+```{figure} /fig/en_SMT_ex4_addfield_description.PNG
+ ---
+height: 50px
+name: T
+align: center
+---
+Add field description
+```
+
+- Save by clicking on ![](/fig/mActionToggleEditing.png) once more -> `Save`
+
+
 ### 6. Visualize your data
 
 Now we want to visualize our results and generate a printable map so the results can be shown to third parties in a clear and comprehensible manner. We can now delete the geotiff layer by right-click -> `Remove Layer` since we will be working with the vector marking detections.
@@ -208,35 +245,33 @@ Now we want to visualize our results and generate a printable map so the results
 
 We can customize the symbology of our vectory layer by right-clicking on it in the `Layers` Panel -> `Properties` -> `Symbology`.
 
-First of all we want to assign different colors for different features. We assume we know that blac and blue colors were used to mark past flood extents and red was used to mark critical infrastructures. We want to replicate this.
+First of all we want to assign different colors for different features:
 
-In the topmost drop-down menu, choose `Categorized`. As Value choose "color" and then click on the bottom left on `Classify`. We are now able to choose colors depending on the value in the column "color". By oble-clicking on the colored box in your windwo next to your value andf Legend descriptions the `Symbol Selector` will open in a new window where you can choose the color of your preference by clicking on the drop-down arrow next to "Color".
+In the topmost drop-down menu, choose `Categorized`. As Value choose "Description" and then click on the bottom left on `Classify`. We are now able to choose colors depending on the value in the column "Descriptioin". By doble-clicking on the colored box in your window next to your value and Legend descriptions the `Symbol Selector` will open in a new window where you can choose the color of your preference by clicking on the drop-down arrow next to "Color".
 Right below you can also ajust the opcaty level of your feature.
 
 
-    ```{figure} /fig/en_SMT_ex4_dig_categorize.PNG
-    ---
-    height: 50px
-    name: T
-    align: center
-    ---
-    Attribute Table with added polygon 
-    ```
+```{figure} /fig/en_SMT_ex4_dig_categorize.PNG
+---
+height: 50px
+name: T
+align: center
+---
+Symbology 
+```
 
 
 In the `Symbol Selector`, you can also in the upper window click on `Simple line` and change the `Symbol Layer Type`. In tzis example we would like to symbolize the critical Infrastructure with red outlines, so we choose "Outline: Simple Line". Juts below we can adjust the color, stroke witdh stroke line type, etc. You can find more information about the visualization of vector data [here](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_visualisation_wiki.html#visualisation-of-vector-data).
 
 
-    ```{figure} /fig/en_SMT_ex4_dig_Symbology.PNG
-    ---
-    height: 50px
-    name: T
-    align: center
-    ---
-    Attribute Table with added polygon 
-    ```
-
-
+ ```{figure} /fig/en_SMT_ex4_dig_Symbology.PNG
+ ---
+height: 50px
+name: T
+align: center
+---
+Symbol Selector 
+```
 
 
 
@@ -277,14 +312,157 @@ The Geojson output of the Sketch Map Tool cannot be opened and inspected with co
 
 ### 2. Load your data 
 
-Hintergrundkarte kann ausgewählt werden
+1. Open the Browser of your choice and navigate to the [UMAP Website](https://umap.openstreetmap.fr/en/) and click on the large green button `Create a Map`.
 
-Karte einen Namen geben
+2. Right above your map canvas you can click in "Untiteld Map" in order to edit your map properties. Give your Map a title and a short description.
+
+- maybe explain here what else can be done in properties-
+
+    ```{figure} /fig/en_SMT_ex4_UMAP_Properties.PNG
+    ---
+    height: 50px
+    name: T
+    align: center
+    ---
+    Attribute Table with added polygon 
+    ```
+
+3. You can load your data into the map frame by clicking on the arrow button. The `Import data` window will open on the right hand side. CLick on `Select file` and navigate to your vector output from teh SKetch Map Tool ("Schuld_Ahr-tal_sketch-map_Ex4.geojson") and click on `Open`. UMAP will automatically detect that your vector is a geojason formnat. CLick on `Import` to load your data to your map canvas.
+
+```{figure} /fig/en_SMT_ex4_UMAP_Data_Loaded.PNG
+    ---
+    height: 50px
+    name: T
+    align: center
+    ---
+    Attribute Table with added polygon 
+    ```
+
+
+4. Click in the upper right corner on `Save`. If you are not logged in you will be provided with an URL where you can access and your map any time lateron. Save it somewhere or send it to your email. 
+
+
+```{Attention}
+Without an account, the maps you create are stored temporarily in your browser's local storage or session storage. This means that if you clear your browser's cache or use a different device or browser, you may lose access to the maps you created.
+```
+
+```{Note}
+Generally, you can create maps, edit them, and share them with others on uMap without signing up for an account. However, if you decide to use uMAP frequently it might be beneficial to create an account. Signing up ensures persistent access to your created maps alowwing to mnanaga dn edit maps over time. Also, some customization options or advanced features may only be available to registered users
+```
+
+
+### 3. Customize your map
+
+Now that you imported your own data you are ready to customize your own map in ordet to show your results to others in a vivid manner.
+In the toolbar on the right hand side you have various options to do so.
+
+1. Change the background
+
+Click on `Change tilelayers`![](/fig/en_SMT_ex4_UMAP_basemap.PNG) to choose another background map.
+
+2. Explore Layers
+
+Click on `Manage Layers`![](/fig/en_SMT_ex4_UMAP_layers.PNG) to open your layers panel. In this windows you will see all the layers in your project (in our case it is just one) and you are able to add additional information layers. The small symbols on the left hand side of you layer give you the option to hide, zoom to or delete your layer.
+
+
+```{figure} /fig/en_SMT_ex4_UMAP_Managelayers.PNG
+---
+height: 50px
+name: T
+align: center
+---
+Manage Layers 
+```
+
+You can click on the table button ![](/fig/en_SMT_ex4_UMAP_Table.PNG) in order to view or edit properties in the attribute table of your layer. The table has one entry (row) for each detected marking. In our example 6 markings where detecetd. The column "color" describes the color which has been detected for each marking and the column "name" contains the name of your uploaded Sketch Map.
+
+```{Note}
+Sketch Map Vector Output always have this same attribute table structure.
+```
+
+```{figure} /fig/en_SMT_ex4_UMAP_AttributeTable.PNG
+---
+height: 50px
+name: T
+align: center
+---
+Attribute Table 
+```
+
+2. Manage Layers
+
+Now we want to display the criticial infrastructure in red and the past flood extents in blue. For this we have to firstly create a group for each:
+
+- Click on `Manage Layers`![](/fig/en_SMT_ex4_UMAP_layers.PNG) `Add Layers`
+- We name the first new layer "Critical Infrastructure" and choose as `Type of layer` -> `Clustered` 
+When you click on  `Close` and then on `Manage Layers`![](/fig/en_SMT_ex4_UMAP_layers.PNG) again, you will see you recently create layer "Critical Infrastructure"
+
+
+```{figure} /fig/en_SMT_ex4_UMAP_Taddlayer.PNG
+---
+height: 50px
+name: T
+align: center
+---
+Add clustered layer
+```
+
+- repeat the process creating a clustered layer for "Past flood extent"
+
+```{figure} /fig/en_SMT_ex4_UMAP_3Layers.PNG
+---
+height: 50px
+name: T
+align: center
+---
+Add clustered layer
+```
+
+
+- In the map canvas, you can now click on one of the polygons and toggle editing modus by clicking on the small pen button that appears.
+
+```{figure} /fig/en_SMT_ex4_UMAP_Toggle_editing.PNG
+---
+height: 50px
+name: T
+align: center
+---
+Add clustered layer
+```
+- The `Feature properties` window will open on the right hand side. On the very top you can now choose the layer group you want to assign this feature to. ALso choose a meaningful name. For the flood polygons we can simply choose as name "Past flood extent" and for the several critical infrastructure polygons you can either choose "critical infrastructure" or "school"/"water treatment plant" as just an example. Click on `Close`. If you click on a flood extent polygon and toggle editing you assign it to you layer "Past flood extent" and if you click on a critical infrastrucutre polygon and toggle editing you assign it to you layer "Critical Infrastructure". Assign now all 6 polygons to the respective layer.
+
+
+```{figure} /fig/en_SMT_ex4_UMAP_assign_layer.PNG
+---
+height: 50px
+name: T
+align: center
+---
+Assign features to layers
+```
+
+- Now click again on `Manage Layers`![](/fig/en_SMT_ex4_UMAP_layers.PNG) and `Edit`![](/fig/en_SMT_ex4_UMAP_Edit.PNG) one iof your new layers, e.g. "Past flood extent". Click on `Shape Properties` to change the color of the layer. You can explore other option you have for styling your features. You always finish by clicking on `Close` in the upper right corner.
+- In `Interaction Options` the behavior of the labeling can be determined. For example you can choose `Popup` as `Popup shape` and set `Display label` `on hover` in order to display the features descriptions only when you srcroll with the mouse over the respective feature on the map.
+
+
+
+```{figure} /fig/en_SMT_ex4_UMAP_Shape_Properties.PNG
+---
+height: 50px
+name: T
+align: center
+---
+Shape properties
+```
+
+
+
+
 
 Digitalization:
 
 you can draw polygon, give it name and description
 
-### 3. Customize your map
+
 
 :::
