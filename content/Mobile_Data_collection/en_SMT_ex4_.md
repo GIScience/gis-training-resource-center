@@ -30,31 +30,27 @@ Decide together with the responsible working group which GIS system is prefered 
 ## Instructions for the trainers 
 
 :::{dropdown} Trainers Corner
-### Preparation and material 
+### Preparation
 - Online access and devices (PC)
 - QGIS installed on the computer
 - Take a look and make yourself familiar on the provided material for the exercise and the Sketch Map Tool in general. 
 
-```
-Alternatives  
+```{Alternatives}  
 - If you like to skip parts of the workflow, make sure you have alternative material (like preprinted, or already marked Sketch maps) prepared.
 - If you like to adapt this exercise to your specific use case, create your own case-description. 
 ```
 
 
-
-### Available Material: needs to be linked directly 
-•	Introduction Slides about the Sketch Map Tool available
-•	X EVCA-case studies as examples available 
-•	Alternative files based on OSM- and satellite-based Sketch Maps from 5 regions.
-o	Just the created maps for (pre-printing)
-o	Pre-marked and photographed maps 
-o	Geodata of the results and some pictures 
+### Available Material
+* Introduction Slides about the Sketch Map Tool LINK
+* Just the created map for (pre-printing)
+* Pre-marked and photographed map
+* Geodata of the results
 
 
 ### During the exercise:  
 #### Introduction: 
-- Introduce the idea, the aim and the general workflow of the Skecht Map Tool beforehand 
+- Introduce the idea, the aim and the general workflow of the Skech Map Tool beforehand 
 - Provide access to the needed material 
 - check-in if there are questions or problems.
 
@@ -62,16 +58,18 @@ o	Geodata of the results and some pictures
 - Take some time at the end to wrap up and that several people present their result map
 - Discuss Benefits of showing results as a map
 - Time to for Open questions.
+::::
+
 
 ## Step-by step introduction for participants 
 
 link where you can download this part as a short pdf to hand it to participants
 
 If you expieriences any problems during your use of the [Sketch Map Tool](https://sketch-map-tool.heigit.org/) please take a look at the [Help page](https://sketch-map-tool.heigit.org/help).
-::::
 
 
-## Exercise A: Exploaration & basic visualization of Sketch Map Tool outputs in QGIS
+
+## Exercise A: Exploration & basic visualization of Sketch Map Tool outputs in QGIS
 
 :::{dropdown} Exercise A: Exploaration & basic visualization of Sketch Map Tool outputs in QGIS
 :open:
@@ -143,7 +141,7 @@ Now load your vector file ("Schuld_Ahr-tal_sketch-map_Ex4.geojson") and geotiff 
 
     ```{figure} /fig/en_SMT_ex4_Attrbute_Table.PNG
     ---
-    height: 50px
+    height: 100px
     name: T
     align: center
     ---
@@ -172,7 +170,7 @@ Right-click on your vector file and click on `Toggle Editing`. The `Digitizing T
 
 ```{figure} /fig/en_SMT_ex4_dig_toolbox.PNG
 ---
-height: 50px
+height: 100px
 name: T
 align: center
 ---
@@ -182,7 +180,7 @@ Click on `Add Feature: Capture Polygon`![](/fig/mActionCapturePolygon.png). You 
 
  ```{figure} /fig/en_SMT_ex4_dig_info.PNG
 ---
-height: 50px
+height: 100px
 name: T
 align: center
 ---
@@ -192,14 +190,14 @@ In the map canvas you can already see your handdrawn polygon. In order to save i
 
 
 
-    ```{figure} /fig/en_SMT_ex4_Attrbute_Table_new.PNG
-    ---
-    height: 50px
-    name: T
-    align: center
-    ---
-    Attribute Table with added polygon 
-    ```
+ ```{figure} /fig/en_SMT_ex4_Attrbute_Table_new.PNG
+---
+height: 100px
+name: T
+align: center
+---
+Attribute Table with added polygon 
+```
 
 
     The whole process of Digitalisation is explained in detail [here](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation.html?highlight=digitize#digitalisation).
@@ -216,7 +214,7 @@ Normally you know the meaning of the markings in your Sketch Map. We will now le
 
 ```{figure} /fig/en_SMT_ex4_addfield.PNG
 ---
-height: 50px
+height: 100px
 name: T
 align: center
 ---
@@ -227,7 +225,7 @@ Attribute Add field
 
 ```{figure} /fig/en_SMT_ex4_addfield_description.PNG
  ---
-height: 50px
+height: 100px
 name: T
 align: center
 ---
@@ -253,7 +251,7 @@ Right below you can also ajust the opcaty level of your feature.
 
 ```{figure} /fig/en_SMT_ex4_dig_categorize.PNG
 ---
-height: 50px
+height: 100px
 name: T
 align: center
 ---
@@ -266,7 +264,7 @@ In the `Symbol Selector`, you can also in the upper window click on `Simple line
 
  ```{figure} /fig/en_SMT_ex4_dig_Symbology.PNG
  ---
-height: 50px
+height: 100px
 name: T
 align: center
 ---
@@ -320,7 +318,7 @@ The Geojson output of the Sketch Map Tool cannot be opened and inspected with co
 
     ```{figure} /fig/en_SMT_ex4_UMAP_Properties.PNG
     ---
-    height: 50px
+    height: 100px
     name: T
     align: center
     ---
@@ -331,7 +329,7 @@ The Geojson output of the Sketch Map Tool cannot be opened and inspected with co
 
 ```{figure} /fig/en_SMT_ex4_UMAP_Data_Loaded.PNG
     ---
-    height: 50px
+    height: 100px
     name: T
     align: center
     ---
@@ -367,7 +365,7 @@ Click on `Manage Layers`![](/fig/en_SMT_ex4_UMAP_layers.PNG) to open your layers
 
 ```{figure} /fig/en_SMT_ex4_UMAP_Managelayers.PNG
 ---
-height: 50px
+height: 100px
 name: T
 align: center
 ---
@@ -382,7 +380,7 @@ Sketch Map Vector Output always have this same attribute table structure.
 
 ```{figure} /fig/en_SMT_ex4_UMAP_AttributeTable.PNG
 ---
-height: 50px
+height: 100px
 name: T
 align: center
 ---
@@ -400,7 +398,7 @@ When you click on  `Close` and then on `Manage Layers`![](/fig/en_SMT_ex4_UMAP_l
 
 ```{figure} /fig/en_SMT_ex4_UMAP_Taddlayer.PNG
 ---
-height: 50px
+height: 100px
 name: T
 align: center
 ---
@@ -411,7 +409,7 @@ Add clustered layer
 
 ```{figure} /fig/en_SMT_ex4_UMAP_3Layers.PNG
 ---
-height: 50px
+height: 100px
 name: T
 align: center
 ---
@@ -423,7 +421,7 @@ Add clustered layer
 
 ```{figure} /fig/en_SMT_ex4_UMAP_Toggle_editing.PNG
 ---
-height: 50px
+height: 100px
 name: T
 align: center
 ---
@@ -434,7 +432,7 @@ Add clustered layer
 
 ```{figure} /fig/en_SMT_ex4_UMAP_assign_layer.PNG
 ---
-height: 50px
+height: 100px
 name: T
 align: center
 ---
@@ -448,7 +446,7 @@ Assign features to layers
 
 ```{figure} /fig/en_SMT_ex4_UMAP_Shape_Properties.PNG
 ---
-height: 50px
+height: 100px
 name: T
 align: center
 ---
