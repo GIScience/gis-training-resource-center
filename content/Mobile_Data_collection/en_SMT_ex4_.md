@@ -1,4 +1,4 @@
-# Sketch Map Tool Exercise 4 - Basic Visualization of the results
+# Sketch Map Tool Exercise 4 - Basic Visualization of the results in QGIS & uMAP
 🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
 
@@ -7,7 +7,7 @@
 
 ## Characteristics of the exercise 
 #### Aim of this exercise:
-Learn how you can visualize your Sketch Map Tool Outputs in eather [QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_installation_wiki.html#qgis-installation) or [UMAP](https://umap.openstreetmap.fr/en/).
+Learn how you can visualize your Sketch Map Tool Outputs in eather [QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_installation_wiki.html#qgis-installation) or [uMAP](https://umap.openstreetmap.fr/en/).
 
 #### Phase of participatory /community mapping 
 analysing participatory mapping
@@ -15,7 +15,7 @@ analysing participatory mapping
 
 - Exercise builds on prior-knowledge of Sketch Map Tool. Make sure [Execise 1](https://giscience.github.io/gis-training-resource-center/content/Mobile_Data_collection/en_SMT_ex1_.html#sketch-map-tool-exercise-1-workflow-exercise) has been done before or knowlege on the background on Sketch Map Tool is there.
 
-- GIS Beginners-level: no specific knowledge about QGIS /Umap required
+- GIS Beginners-level: no specific knowledge about QGIS /uMAP required
 
 #### Type of trainings exercise:
 This exercise can be used in online and presence training and is focused on an hands-on experience with the basic of QGIS or UMAP.
@@ -74,7 +74,7 @@ If you expieriences any problems during your use of the [Sketch Map Tool](https:
 :::{dropdown} Exercise A: Exploaration & basic visualization of Sketch Map Tool outputs in QGIS
 :open:
 
-## Exercise A: Exploaration & basic visualization of Sketch Map Tool outputs in QGIS
+
 
 
 
@@ -122,7 +122,7 @@ Now load your vector file ("Schuld_Ahr-tal_sketch-map_Ex4.geojson") and geotiff 
 
     ```{figure} /fig/en_SMT_ex4_fig1.PNG
     ---
-    height: 50px
+    height: 500px
     name: T
     align: center
     ---
@@ -141,7 +141,7 @@ Now load your vector file ("Schuld_Ahr-tal_sketch-map_Ex4.geojson") and geotiff 
 
     ```{figure} /fig/en_SMT_ex4_Attrbute_Table.PNG
     ---
-    height: 100px
+    height: 400px
     name: T
     align: center
     ---
@@ -170,7 +170,7 @@ Right-click on your vector file and click on `Toggle Editing`. The `Digitizing T
 
 ```{figure} /fig/en_SMT_ex4_dig_toolbox.PNG
 ---
-height: 100px
+width: 100px
 name: T
 align: center
 ---
@@ -180,7 +180,7 @@ Click on `Add Feature: Capture Polygon`![](/fig/mActionCapturePolygon.png). You 
 
  ```{figure} /fig/en_SMT_ex4_dig_info.PNG
 ---
-height: 100px
+height:300px
 name: T
 align: center
 ---
@@ -192,15 +192,14 @@ In the map canvas you can already see your handdrawn polygon. In order to save i
 
  ```{figure} /fig/en_SMT_ex4_Attrbute_Table_new.PNG
 ---
-height: 100px
+height: 300px
 name: T
 align: center
 ---
 Attribute Table with added polygon 
 ```
 
-
-    The whole process of Digitalisation is explained in detail [here](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation.html?highlight=digitize#digitalisation).
+The whole process of Digitalisation is explained in detail [here](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation.html?highlight=digitize#digitalisation).
 
 
 
@@ -214,7 +213,7 @@ Normally you know the meaning of the markings in your Sketch Map. We will now le
 
 ```{figure} /fig/en_SMT_ex4_addfield.PNG
 ---
-height: 100px
+height: 400px
 name: T
 align: center
 ---
@@ -225,7 +224,7 @@ Attribute Add field
 
 ```{figure} /fig/en_SMT_ex4_addfield_description.PNG
  ---
-height: 100px
+height: 90px
 name: T
 align: center
 ---
@@ -251,7 +250,7 @@ Right below you can also ajust the opcaty level of your feature.
 
 ```{figure} /fig/en_SMT_ex4_dig_categorize.PNG
 ---
-height: 100px
+height: 400px
 name: T
 align: center
 ---
@@ -264,7 +263,7 @@ In the `Symbol Selector`, you can also in the upper window click on `Simple line
 
  ```{figure} /fig/en_SMT_ex4_dig_Symbology.PNG
  ---
-height: 100px
+height: 400px
 name: T
 align: center
 ---
@@ -272,11 +271,48 @@ Symbol Selector
 ```
 
 
-
 2. __Make a printable Map__
 
-- Lean how to makew a printable map, map layout, legend, north arrow, etc.
+FEHLT NOCH: UNTEN ANPASSEN
 
+1. Open a new print layout by clicking on `Project` -> `New Print Layout` -> enter the name of your current Project e.g "Ahrtal Flooding Sketch Map Tool". A new window will open with a blank canvas and a different set of tools. This is the print layout designer.
+
+- Insert a new map by clicking on the ![New Map Icon](/fig/30.30.2_print_layout_insert_map_icon.png) ("Add Map") on the left toolbar, and drawing a rectangle on the print canvas. [Video](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html#adding-a-new-map)
+2. Move and position the map so that the entire country is visible at a reasonable scale. 
+4. Let's add a title: 
+    - Click on the ![Add text icon](/fig/30.30.2_print_layout_add_text.png) ("Add text")
+    - Drag a rectangle on the canvas
+    - In the items properties window on the right, you will find a text box with the text "Lorem ipsum". Here you can enter your map title (e.g.: Map of Ghana with roads and hospitals).
+    - Adjust the font size: Click on the __Font__ dropdown menu and adjust the font size for a title (25p or more). Adjust the text box if necessary.
+5. Let's add a legend:
+    - Click on the ![Add legend icon](/fig/30.30.2_print_layout_add_legend.png) ("Add legend"). 
+    - Navigate to the __Item Properties__ panel on the right. 
+    - Scroll down a bit and check turn off `Auto Update` by unchecking the check box. Now you can freely edit every item on the legend
+    - Adjust the legend by removing unecessary layers (which are not seen on the map) and rename the layer in the legend by clicking on ![Edit Icon](/fig/30.30.2_print_layout_legend_edit.png) below the legend entries.
+6. Now, let's add a scale bar:
+    - Click on the ![Add Scale bar icon](/fig/30.30.2_add_scale_bar.png) ("Add Scale bar")
+    - Draw a rectangle on the map and position the scale bar on the edge of the map. You can adjust the scale bar units (meters, kilometers, ...), the fixed segment width (50 km, 75 km, 100 km, ...) and the number of segments (to the right).
+7. Let's add North arrow:
+    - Click on the ![Add North Arrow Icon](/fig/30.30.2_print_layout_add_orientation.png) ("Add North Arrow"). 
+    - Drag a rectangle on the print layout. Adjust the size and location of the north arrow. You can also change the icon in the item properties.
+8. Add a text box with additional information, sources, the author (you), and date of creation.
+9. When you are happy with your print layout. You can export it as a PDF. You can save it in the project folder under "results".
+10. Once you have exported the map. Look at the PDF and make sure it looks how you intended. Some things might look different in the PDF. If it does not look correct you may need to make some adjustments in the symbology.
+
+The finished map could look something like this:
+
+```{figure} ../../fig/en_30.30.2_create_print_layout.png
+---
+width: 700px
+name: Create Print Layout
+---
+Create a new Print Layout
+```
+
+
+
+
+[Print Layout](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
 
 In the [Map Making Wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_map_making_wiki.html#map-making-wiki) you can find all the information about making a printable map.
 
@@ -286,8 +322,6 @@ In the [Map Making Wiki](https://giscience.github.io/gis-training-resource-cente
 
 :::{dropdown} Exercise B: Basic visulization of Sketch Map Tool outputs in UMAP
 :open:
-
-## Exercise B: Basic visulization of Sketch Map Tool outputs in UMAP
 
 ### 1. Background Information on UMAP
 
@@ -308,7 +342,21 @@ Useres can customize the appearance of the map and share it with others. It's pa
 The Geojson output of the Sketch Map Tool cannot be opened and inspected with commonly available tools. If you use the Sketch Map Tool and do not have QGIS installed and quickly want to examine your result, UMAP is a simple and quick way to do so.
 ```
 
-### 2. Load your data 
+#### 2. Data Collection
+
+Please download the prepared maps [here]().
+Unzip the .zip folder in order to be able to acess the geotiff output.
+
+Optional: You find the empty map [here](). Feel free to draw some additional flood maps by printing the template out and drawing on it or by using a simple graphics editor.
+
+
+#### 3. Georeferencing and autoextraction with the Sketch Map tool
+
+Upload the sketch maps back to the tool’s website. Head to [sketch-map-tool.heigit.org](https://sketch-map-tool.heigit.org/) and choose 'Digitize your Sketch maps' on the right. Upload all your sketches in .png or .jpg format. You can mark your sketches and simply drag and drop them into the window.
+
+The sketch maps are now being processed and georeferenced with the annotations extracted and vectorized. Download the vectors. You may use the ones we have prepared [here]().
+
+### 4. Load your data 
 
 1. Open the Browser of your choice and navigate to the [UMAP Website](https://umap.openstreetmap.fr/en/) and click on the large green button `Create a Map`.
 
@@ -318,7 +366,7 @@ The Geojson output of the Sketch Map Tool cannot be opened and inspected with co
 
     ```{figure} /fig/en_SMT_ex4_UMAP_Properties.PNG
     ---
-    height: 100px
+    height: 400px
     name: T
     align: center
     ---
@@ -349,7 +397,7 @@ Generally, you can create maps, edit them, and share them with others on uMap wi
 ```
 
 
-### 3. Customize your map
+### 5. Customize your map
 
 Now that you imported your own data you are ready to customize your own map in ordet to show your results to others in a vivid manner.
 In the toolbar on the right hand side you have various options to do so.
@@ -358,14 +406,14 @@ In the toolbar on the right hand side you have various options to do so.
 
 Click on `Change tilelayers`![](/fig/en_SMT_ex4_UMAP_basemap.PNG) to choose another background map.
 
-2. Explore Layers
+2. Explore and Manage Data Layers
 
 Click on `Manage Layers`![](/fig/en_SMT_ex4_UMAP_layers.PNG) to open your layers panel. In this windows you will see all the layers in your project (in our case it is just one) and you are able to add additional information layers. The small symbols on the left hand side of you layer give you the option to hide, zoom to or delete your layer.
 
 
 ```{figure} /fig/en_SMT_ex4_UMAP_Managelayers.PNG
 ---
-height: 100px
+height: 200px
 name: T
 align: center
 ---
@@ -380,14 +428,14 @@ Sketch Map Vector Output always have this same attribute table structure.
 
 ```{figure} /fig/en_SMT_ex4_UMAP_AttributeTable.PNG
 ---
-height: 100px
+height: 200px
 name: T
 align: center
 ---
 Attribute Table 
 ```
 
-2. Manage Layers
+2. Custmize your visualization
 
 Now we want to display the criticial infrastructure in red and the past flood extents in blue. For this we have to firstly create a group for each:
 
@@ -398,7 +446,7 @@ When you click on  `Close` and then on `Manage Layers`![](/fig/en_SMT_ex4_UMAP_l
 
 ```{figure} /fig/en_SMT_ex4_UMAP_Taddlayer.PNG
 ---
-height: 100px
+height: 400px
 name: T
 align: center
 ---
@@ -409,7 +457,7 @@ Add clustered layer
 
 ```{figure} /fig/en_SMT_ex4_UMAP_3Layers.PNG
 ---
-height: 100px
+height: 300px
 name: T
 align: center
 ---
@@ -421,7 +469,7 @@ Add clustered layer
 
 ```{figure} /fig/en_SMT_ex4_UMAP_Toggle_editing.PNG
 ---
-height: 100px
+height: 200px
 name: T
 align: center
 ---
@@ -432,7 +480,7 @@ Add clustered layer
 
 ```{figure} /fig/en_SMT_ex4_UMAP_assign_layer.PNG
 ---
-height: 100px
+height: 200px
 name: T
 align: center
 ---
@@ -440,11 +488,23 @@ Assign features to layers
 ```
 
 - Now click again on `Manage Layers`![](/fig/en_SMT_ex4_UMAP_layers.PNG) and `Edit`![](/fig/en_SMT_ex4_UMAP_Edit.PNG) one iof your new layers, e.g. "Past flood extent". Click on `Shape Properties` to change the color of the layer. You can explore other option you have for styling your features. You always finish by clicking on `Close` in the upper right corner.
-- In `Interaction Options` the behavior of the labeling can be determined. For example you can choose `Popup` as `Popup shape` and set `Display label` `on hover` in order to display the features descriptions only when you srcroll with the mouse over the respective feature on the map.
-
+- In `Interaction Options` the behavior of the labeling can be determined. For example you can choose `Popup` as `Popup shape` and set `Display label` either `on hover` in order to display the features descriptions only when you srcroll with the mouse over the respective feature on the map or on `always` in order to always see the respective description.
 
 
 ```{figure} /fig/en_SMT_ex4_UMAP_Shape_Properties.PNG
+---
+height: 500px
+name: T
+align: center
+---
+Shape properties
+```
+
+### 6. Save and publish your map
+
+Your map could now look like this:
+
+```{figure} /fig/en_SMT_ex4_UMAP_final.PNG
 ---
 height: 100px
 name: T
@@ -453,14 +513,23 @@ align: center
 Shape properties
 ```
 
+If you have displayed everything you planned and you have zoomed to the map extent of your choice you can click on `Save this center and zoom`![](/fig/en_SMT_ex4_UMAP_save.PNG) in order to save your map section. Then click on `Save`on the upper right.
 
 
+In order to publish the map you can click on `Share and download`![](/fig/en_SMT_ex4_UMAP_share.PNG) on the menu bar on the left side.
 
+```{figure} /fig/en_SMT_ex4_UMAP_sharelast.PNG
+---
+height: 100px
+name: T
+align: center
+---
+Shape properties
+```
 
-Digitalization:
+On the top under `Link to view the map` you receive a URL that you can share with other people so they can view the map you have created.
+You also have the option to donwload your layers data or your full backup or to copy an iframe link in order to embed your elf-made map into wour own website.
 
-you can draw polygon, give it name and description
-
-
-
-:::
+```{Hint}
+If you want to use your map as a simple figure to show offline, you can simply take a screenshot or use the Snipping Tool.
+```
