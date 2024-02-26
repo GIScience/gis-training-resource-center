@@ -12,9 +12,10 @@ TABELLE!
 :::
 The result layer shows for every waterpoint a 500m catchment area for pedestrian travel mode. 500m is the maximum distance from any household to the water point according to `The Sphere Handbook: Humanitarian Charter and Minimum Standards in Humanitarian Response` p. 106. There are other key indicators like maximum number of people using the facility, queuing time, etc. We will work on the distance as we miss further information like the flow rate per water point or the household size per building.
 
-:::{note}
+`````{admonition} exercise
+:class: question
 How is the coverage with water point catchments within camp 18? Any underserved areas?
-:::
+`````
 
 We proceed to find out how many water point options are there for each building given the 500m constraint. Basically we add a count aggregation of isochrones that intersect with each building.
 
