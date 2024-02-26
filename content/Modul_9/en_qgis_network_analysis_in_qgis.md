@@ -112,8 +112,7 @@ We start with the isochrones gain. This time for a whole country - Rwanda. Use t
 :::{dropdown} Watch here:
 TABELLE!
 :::
-### Raster - accumulated cost
-`https://saga-gis.sourceforge.io/saga_tool_doc/6.1.0/grid_analysis_0.html`
+### Raster - accumulated cost (Optional: Requires SAGA)
 
 :::{dropdown} Watch here:
 TABELLE!
