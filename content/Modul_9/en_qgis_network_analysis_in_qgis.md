@@ -30,8 +30,9 @@ What are the differences in the min/max number of waterpoints available to the b
 ### Waterpoint catchment by closest euclidean distance
 There are other means to generate catchment areas, implemented in QGIS. In the next part we will use the hub distance to calculate the euclidean distance between every building and its closest waterpoint.
 
+:::{dropdown} Watch here:
 TABELLE!
-
+:::
 The output layer has the same point geometry type like the input building_centroid layer. But it now features two attributes:
 * HubName: The name/id of the closest waterpoint.
 * HubDist: The euclidean distance from the building centroid to the closest waterpoint in meters.
@@ -42,7 +43,7 @@ What is the shortest / longest euclidean distance from a building to the closest
 
 All buildings are assigned to their closest waterpoint. With the minimum bounding geometry tool in QGIS we can use this grouping information to create areas from.
 
-:::{dropdown} watch here:
+:::{dropdown} Watch here:
 TABELLE!
 :::
 :::{exercise}
@@ -58,13 +59,13 @@ Use the following file:
 
 ### Healthcare catchment - Isochrones
 
-:::{dropdown} watch here:
+:::{dropdown} Watch here:
 TABELLE!
 :::
 ### Healthcare catchment - QGIS Service area
 Isochrones in QGIS can be generated via the service area tool in combination with the minimum bounding geometry tool. Based on a road network, we define origins, a default speed, and a maximum cost. 
 
-:::{dropdown} watch here:
+:::{dropdown} Watch here:
 TABELLE!
 :::
 QGIS on-the-fly creates a network graph from the road and path network. The graph is rather simple. All edges can be traveled in both ways, there are no weights included. Travel cost is represented by the length of a segment and the default average speed. The output is a simplification of the input road & path geometry but with the attributes of the healthcare facilities. For every healthcare facility we see a multiline geometry object in the output. We can style it according to the attribute “@osmId” to see which segments are assigned to which facility.
@@ -83,7 +84,7 @@ Compare the results of both catchments. What differences can you spot?
 ### Healthcare catchment - Isochrones avoid flood
 In this part we will again calculate catchments based on the same configured isochrones. But we will include a polygon for the avoid area functionality in openrouteservice. For the **avoid area** we will use the water streams that run through the main camp area. Make sure to buffer the camp_stream layer by 2 meters. The avoid areas function only allows for polygons, not for line geometries. If you have buffered the streams, go ahead with the Isochrones tool again.
 
-:::{dropdown} watch here:
+:::{dropdown} Watch here:
 TABELLE!
 :::
 :::{exercise}
@@ -102,13 +103,13 @@ Use the following files:
 ### Network - Isochrones
 We start with the isochrones gain. This time for a whole country - Rwanda. Use the layer `rwa_healthcare` as input point layer and 5, 10 and 60 minutes as ranges.
 
-:::{dropdown} watch here:
+:::{dropdown} Watch here:
 TABELLE!
 :::
 ### Raster - accumulated cost
 `https://saga-gis.sourceforge.io/saga_tool_doc/6.1.0/grid_analysis_0.html`
 
-:::{dropdown} watch here:
+:::{dropdown} Watch here:
 TABELLE!
 :::
 Select the **Accumulated Cost** output layer and open the **Layer styling panel (F7)** choose **Singleband Pseudocolor**. Adjust the range from a minimum of 0 to a maximum of 60 minutes. Overlay the isochrone output layer. Compare the different catchment areas. Add an OpenStreetMap background layer to better understand the differences. May consider dissolving **(Vector Geometry >> Dissolve)** the isochrone output layer by range value, to get a more clear outline of intersecting ranges in areas with multiple healthcare facilities.
