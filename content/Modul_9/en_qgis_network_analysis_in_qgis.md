@@ -12,20 +12,20 @@ TABELLE!
 :::
 The result layer shows for every waterpoint a 500m catchment area for pedestrian travel mode. 500m is the maximum distance from any household to the water point according to `The Sphere Handbook: Humanitarian Charter and Minimum Standards in Humanitarian Response` p. 106. There are other key indicators like maximum number of people using the facility, queuing time, etc. We will work on the distance as we miss further information like the flow rate per water point or the household size per building.
 
-:::{exercise}
+:::{note}
 How is the coverage with water point catchments within camp 18? Any underserved areas?
 :::
 
 We proceed to find out how many water point options are there for each building given the 500m constraint. Basically we add a count aggregation of isochrones that intersect with each building.
 
-:::{exercise}
+:::{note}
 What is the min/max number of waterpoints available to the buildings in camp 18?
 :::
 
 ### Catchments for operational facilities
 Look into the attributes of the waterpoints layer. Filter for all waterpoints that are operational (`Extract by Attribute`). Redo the analysis for operational waterpoints only.
 
-:::{exercise}
+:::{note}
 Is the general coverage different, any undersupplied areas?
 What are the differences in the min/max number of waterpoints available to the buildings in camp 18 compared to using all waterpoints (non-operational, planned)
 :::
@@ -40,7 +40,7 @@ The output layer has the same point geometry type like the input building_centro
 * HubName: The name/id of the closest waterpoint.
 * HubDist: The euclidean distance from the building centroid to the closest waterpoint in meters.
 
-:::{exercise}
+:::{note}
 What is the shortest / longest euclidean distance from a building to the closest waterpoint.
 :::
 
@@ -49,7 +49,7 @@ All buildings are assigned to their closest waterpoint. With the minimum boundin
 :::{dropdown} Watch here:
 TABELLE!
 :::
-:::{exercise}
+:::{note}
   Have a close look at the hub distance based catchments. Can you tell that some buildings are quite far from a waterpoint when considering the paths connecting the two?
 :::
 
@@ -73,14 +73,14 @@ TABELLE!
 :::
 QGIS on-the-fly creates a network graph from the road and path network. The graph is rather simple. All edges can be traveled in both ways, there are no weights included. Travel cost is represented by the length of a segment and the default average speed. The output is a simplification of the input road & path geometry but with the attributes of the healthcare facilities. For every healthcare facility we see a multiline geometry object in the output. We can style it according to the attribute “@osmId” to see which segments are assigned to which facility.
 
-:::{exercise}
+:::{note}
 Can you already spot areas that are not reachable within 10 minutes by foot within
 the camp?
 :::
 
 In order to better compare the result of the service areas and isochrones we will again compute the minimum bounding geometry. But this time for the multiline output of the service area tool.
 
-:::{exercise}
+:::{note}
 Compare the results of both catchments. What differences can you spot?
 :::
 
@@ -90,7 +90,7 @@ In this part we will again calculate catchments based on the same configured iso
 :::{dropdown} Watch here:
 TABELLE!
 :::
-:::{exercise}
+:::{note}
 Compare the output of the flooded isochrones with the isochrones from before. What differences are apparent for you?
 :::
 
@@ -118,7 +118,7 @@ TABELLE!
 Select the **Accumulated Cost** output layer and open the **Layer styling panel (F7)** choose **Singleband Pseudocolor**. Adjust the range from a minimum of 0 to a maximum of 60 minutes. Overlay the isochrone output layer. Compare the different catchment areas. Add an OpenStreetMap background layer to better understand the differences. May consider dissolving **(Vector Geometry >> Dissolve)** the isochrone output layer by range value, to get a more clear outline of intersecting ranges in areas with multiple healthcare facilities.
 Take a look at the Attribute table of the Isochrone output layer. One of the attributes bears information on the population living within the boundary of the isochrone. The population estimates are based on the Global Human Settlement Layer project. 
 
-:::{exercise}
+:::{note}
 How many people are covered within 5, 10, 60 minutes in Rwanda according to our Analysis?
 How would you describe the differences? 
 What are the advantages/disadvantages of the raster versus the network approach?
