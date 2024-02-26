@@ -46,12 +46,12 @@ You can determine directions or standard routes, which unveil the shortest path 
 - Graphhopper based routing machine since 2008
 - Completly Open-Source
 - Global public API
-  - Updates every week
+  - updates every week
   - more than 100GB RAM per routing profile
-    >Some limitations due to computational capacities
+  - some limitations due to computational capacities
 - Can also run on your local laptop
-  - A small to medium country with one profile
-  - Freedom of choice on limitations
+  - a small to medium country with one profile
+  - freedom of choice on limitations
 - Different routing profiles (car, hgv, bike, pedestrian, wheelchair)
 
 #### Services
@@ -65,15 +65,9 @@ You can determine directions or standard routes, which unveil the shortest path 
 #### Isochrones
 - Different profiles: car, pedestrian, Bike, Heavy Goods vehicles
 - Avoid areas, avoid, road types
-- Further dynmaic prefernces
-  - Green routing
-  - Noise aware routing
-  - Landmark routing
-  - (heat aware routing)
+- Further dynmaic prefernces: green routing, noise aware routing, landmark routing, (heat aware routing)
 - Based on profile and preferences what area is reachable within a given time limit?
-- Determine
-  - Reachability
-  - Catchment areas
+- Determine: reachability, catchment areas
 -  Max. 60minutes on the public API
 -  SDKs & Plugins: Python, R, JavaScript, QGIS Plugin "ORS Tools"
   

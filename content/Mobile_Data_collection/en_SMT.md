@@ -101,7 +101,21 @@ align: center
 
 ## The Sketch Map Tool and its use in the EVCA
 
-?One sentence to highlight the importance of mapping in the EVCA
+The Enhanced Vulnerability and Capacity Assessment (EVCA) is a participatory process developed for communities to become more resilient through the assessment and analysis of the risks they face and the identification of actions to reduce these risks. The EVCA guidelines containes different tools in order no help National Societies to understand the dynamics of risk in a spedific community. 
+In order to spatially assess and identify risk factors, the EVCA recommends to conduct a mapping activitiy throughout the process where community members jointly create a spatial map, hazard & exposure map and vulnerability & capacity map. Mapping is done with paper and pen and generally on blank paper. The Sketch Map Tool has great potential to support a sustainable participatory mapping process by digitalizing the process while keeping it simply.
+
+For more information:
+
+[EVCA Mapping Toolbox](https://preparecenter.org/wp-content/uploads/2023/08/EVCA-tools-compiled.pdf)
+
+[EVCA Guide](https://communityengagementhub.org/resource/evca-guide/)
+
+
+As part of the efforts to digitize the EVCA Process, we prepared a customized training package on the Sketch Map Tool for digitalization of community mapping, that can be used by trainers throughout the regional EVCA Training of Trainers workshops.
+
+You can download the presentation [here]().
+
+
 
 ? Add preseantion SMT in EVCA-Training
 
