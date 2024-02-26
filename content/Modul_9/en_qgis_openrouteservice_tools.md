@@ -27,7 +27,7 @@ align: center
 -  Close the window
 -  After a few seconds the plugin should appear under "Web" tab in QGIS as "ORS      Tools"
 
-```{figure} /fig/open_ORS_tools_plugin.png
+```{figure} /fig/open_ORS_tools plugin.png
 ---
 width: 700px
 name: basic classification
