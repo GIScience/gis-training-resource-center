@@ -1,6 +1,6 @@
 # Network Analysis in QGIS
 
-:::{dropdown} Task 1 - assess water distribution access
+::::{dropdown} Task 1 - assess water distribution access
 For Camp 18 in Kutupalong Refugee Camp, we have a dataset on the locations of water distribution points. Further we have data on the buildings (footprint and centroid) within camp 18. In the following task we will use the following dataset:
 * Camp18.gpkg
 
@@ -47,7 +47,7 @@ TABELLE!
 :::{exercise}
   Have a close look at the hub distance based catchments. Can you tell that some buildings are quite far from a waterpoint when considering the paths connecting the two?
 :::
-:::
+::::
 
 ## Task 2 - access healthcare - avoid areas
 For the main area of Kutupalong Refugee Camp, we have the boundary, the path and road network, water streams and health facilities. The boundary is available on `HDX`. Healthcare facilities, the road & path network, streams as well as the health facilities were extracted from `OpenStreetMap`. In this task we will compare openrouteservice isochrone and QGIS built-in service area catchments. Also we will showcase the avoid area feature in openrouteservice to account for a simple simulated flooding.
