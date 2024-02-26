@@ -1,6 +1,6 @@
 # Network Analysis in QGIS
 
-## Task 1 - assess water distribution access
+:::{dropdown} Task 1 - assess water distribution access
 For Camp 18 in Kutupalong Refugee Camp, we have a dataset on the locations of water distribution points. Further we have data on the buildings (footprint and centroid) within camp 18. In the following task we will use the following dataset:
 * Camp18.gpkg
 
@@ -46,6 +46,7 @@ TABELLE!
 
 :::{exercise}
   Have a close look at the hub distance based catchments. Can you tell that some buildings are quite far from a waterpoint when considering the paths connecting the two?
+:::
 :::
 
 ## Task 2 - access healthcare - avoid areas
