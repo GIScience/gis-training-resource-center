@@ -23,14 +23,15 @@ __The earth is a sphere and cannot be represented on a flat map without being di
 For this translation, from a curved on a flat surface, thousands of different methods exist. These are called **Coordinate Reference Systems (CRS)**.
 
 
+```{figure} /fig/en_examples_projections_IBIS.png
+---
+width: 800px
+align: center
+name: Examples for Projections (azimuthal, cylindrical and conic)
+---
+Examples for Projections. Source:(http://ibis.colostate.edu/webcontent/NR505/2012_Projects/Team6/GISConcepts.html)
+```
 
-![Different Coordinate Reference Systems](../../fig/en_examples_projections_IBIS.png)
-
-:::{dropdown} Embedded Website 
-
-%%html
-<iframe src="http://ibis.colostate.edu/webcontent/NR505/2012_Projects/Team6/GISConcepts.html" width="750" height="500"></iframe>
-:::
 
 Every projection comes with a trade-off in shape, direction, distance and area. That's why it is important to choose different types of CRS for different use cases.
 
