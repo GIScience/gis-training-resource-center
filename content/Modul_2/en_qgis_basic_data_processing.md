@@ -34,7 +34,9 @@ The version of a standardized folder structure, that is used for all exercises i
 width: 600px
 name: 
 align: center
+name: Standard folder structure
 ---
+Standard folder structure. Source: ???
 ```
 ### Geodata naming 
 
@@ -98,7 +100,9 @@ To directly load .csv or EXCEL data into QGIS, the datasets need to have columns
 width: 600px
 name: 
 align: center
+name: Import delimited text
 ---
+Import delimited text.
 ```
 
 1.  `Layer` -> `Add Layer` ->`Open Delimited Text Layer`.
@@ -112,7 +116,9 @@ To find out which delimiter is used you can open your .csv file in Notepad or Ex
 width: 600px
 name: 
 align: center
+name: Import delimited text - file format
 ---
+Import delimited text - file format.
 ```
 4.  `Geometry definition`: In this section, you specify which columns of the file contain the spatial information to geo-referenced the data on the map. If the file has a column containing __latitude__ and another with __longitude__ data, you can use them to georeferenced the data. Check `Point Coordinates`. Select for `X field` “LONGITUDE” and for `Y field` “LATITUDE”.
 5. Under `Geometry CRS`select the coordinate reference system (CRS). By default, QGIS will select the CRS of the project. 
@@ -155,7 +161,9 @@ Each vector layer consists of geometric elements (points, lines or polygons) and
 width: 600px
 name: 
 align: center
+name: Vector Data overview
 ---
+Vector Data overview. Source: HeiGIT
 ```
 
 :::{dropdown} Buttons of Attribute Table
@@ -195,7 +203,9 @@ One can open the attribute table in two ways. Either click right on the chosen l
 
 ```{figure} /fig/en_attributetable_right_click.png
 ---
-height: 600px
+height: 500px
+name:
+align: center
 name: Open Attribute Table with right click
 ---
 Screenshot of Opening the Attribute Table with right click
@@ -207,7 +217,9 @@ If you have multiple layers, only the attribute table of the layer selected in t
 
 ```{figure} /fig/en_attributetable_top_right.png
 ---
-height: 600px
+height: 500px
+name: 
+align: center
 name: Open Attribute Table top right
 ---
 Screenshot of Opening the Attribute Table
@@ -229,7 +241,7 @@ The small arrow indicates whether it is sorted ascending or descending.
   - Sorted descending
 * - ```{figure} /fig/en_ascending.png
     ---
-    width: 600px
+    height: 600px
     name:
     align: center
     ---
@@ -239,7 +251,7 @@ The small arrow indicates whether it is sorted ascending or descending.
   -
     ```{figure} /fig/en_descending.png
     ---
-    width: 600px
+    height: 600px
     name: 
     align: center
     ---
@@ -271,6 +283,8 @@ Now that you learned how to select features, you can zoom onto your area of inte
 ```{figure} /fig/en_zoom_to_selection_1.png
 ---
 width: 800px
+name:
+align: center
 name: Zoom to Selection, top pannel.
 ---
 Screenshot of how to zoom to Selection on the top.
@@ -279,6 +293,8 @@ Screenshot of how to zoom to Selection on the top.
 ```{figure} /fig/en_zoom_to_selection_2.png
 ---
 width: 600px
+name:
+align: center
 name: Zoom to Selection, right-click.
 ---
 Screenshot of how to zoom to Selection by clicking right.
@@ -301,6 +317,8 @@ If you are unsure which format is best, check out the wiki [Geodata types](../Wi
 ```{figure} /fig/en_save_selection.png
 ---
 height: 500px
+name:
+align: center
 name: Save selection, right-click.
 ---
 Screenshot of how to save only selected features.
