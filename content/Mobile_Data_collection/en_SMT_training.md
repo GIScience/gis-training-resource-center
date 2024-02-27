@@ -3,16 +3,15 @@
 
 These five trainings exercises are designed to support the training with the Sketch Map Tool. They contain different kinds of tasks,… 
 
-The first exercise, the so called “Workflow Exercise” guides you through the whole workflow of mapping with the Sketch Map Tool, from first ideas about what you like to map to the possible digital results.
 
-The second exercise, the so called “Traffic light Exercise”
+| Execise| Description |Focus Group | 
+| :-------------------- | :----------------- |:----------------- |
+| __[SMT Exercise 1:](/content/Mobile_Data_collection/en_SMT_ex1_.md)__ | The first exercise, the so called “Workflow Exercise” guides you through the whole workflow of mapping with the Sketch Map Tool, from first ideas about what you like to map to the possible digital results | | 
+| __[SMT Exercise 2:](/content/Mobile_Data_collection/en_SMT_ex2_.md)__  | so called “Traffic light Exercise” | | 
+| __[SMT Exercise 3:](/content/Mobile_Data_collection/en_SMT_ex3_.md)__|  | | 
+| __[SMT Exercise 4:](/content/Mobile_Data_collection/en_SMT_ex4_.md)__ | Exercise 4 will guide you through the basic visualization of your Sketch Map Tool Results in either QGIS or uMAP| | 
+| __[SMT Exercise 5:](/content/Mobile_Data_collection/en_SMT_ex5_.md)__| Exercise 5 you will learn how to analyze your Sketch Map Tool Outputs by creating a heatmap |Medium-adcanced knowledge level QGIS | 
 
 
 
-## Get to the exercises:
 
-* __[SMT Exercise 1:](/content/Mobile_Data_collection/en_SMT_ex1_.md):__ 
-* __[SMT Exercise 2:](/content/Mobile_Data_collection/en_SMT_ex2_.md):__ 
-* __[SMT Exercise 3:](/content/Mobile_Data_collection/en_SMT_ex3_.md):__ 
-* __[SMT Exercise 4:](/content/Mobile_Data_collection/en_SMT_ex4_.md):__
-* __[SMT Exercise 5:](/content/Mobile_Data_collection/en_SMT_ex5_.md):__ 

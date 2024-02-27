@@ -45,59 +45,15 @@ align: center
 The Sketch Map Tool simplifies participatory
 
 
-```{figure} /fig/en_Interface_02.png
+```{figure} /fig/SMT_Workflow.png
 ---
 height: 50px
 name: T
 align: center
 ---
-? Picutre of the Workflow
+Sketch Map Tool Workflow
 ```
 
-### 1. Creating a map
-
-The first step is, creation of paper maps with ... 
-? Linking to [Help page](https://sketch-map-tool.heigit.org/help) 
-
-
-```{figure} /fig/en_Interface_02.png
----
-height: 50px
-name: T
-align: center
----
-? Picutre of the map creation side
-```
-
-
-
-### 2. Sketch mapping
-
-Main part is the mapping particpatrox with partciants, in grpoups in intervews in teh flied 
-
-
-```{figure} /fig/en_Interface_02.png
----
-height: 50px
-name: T
-align: center
----
-? Picutre photo with marked SMT and the hands
-```
-
-### 3. Digitlaising the map 
-
-Making analog map usebale in digtial context and for fruther analysis in GIS, frist pirctruee then upload to the sketch amp Tool 
-
-
-```{figure} /fig/en_Interface_02.png
----
-height: 50px
-name: T
-align: center
----
- Picutre photo with someone talking a Phot of the map with their smart phone?
-```
 
 ## The Sketch Map Tool and its use in the EVCA
 
