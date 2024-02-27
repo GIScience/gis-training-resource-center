@@ -288,6 +288,7 @@ You can remove the hexagon cells that are not overlapping with the reference lay
 ---
 name: non-spatial join aggregate table example
 width: 450 px
+align: left
 ---
 Table aggregation workflow
 ```
@@ -336,7 +337,7 @@ The values for the areas are added to the country column
 :::
 :::{card}
 
-``` {figure} ../../fig/en_table_pivot_.png
+``` {figure} ../../fig/en_table_pivot_5.png
 Red = Pivot field; Blue = Input field; Green = Values field
 ```
 
@@ -347,7 +348,9 @@ Red = Pivot field; Blue = Input field; Green = Values field
 
 ## Interpolation 
 
+>insert links
 
+Spatial interpolation uses point data to estimate values at other unknown points. This is extremely useful for spatial pheonomena that are [continuous](link), such as rainfall or temperature. For example, you have point data of the temperatures at weather stations, but you want to estimate the amount occured
 
 ### Spline Interpolation
 
