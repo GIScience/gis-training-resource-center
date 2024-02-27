@@ -213,6 +213,14 @@ There are two places where you have to define with which map the N arrow should 
 
 1. In the `Layout Tab` for the image under `General Settings` make sure that the reference map has the right map selected. 
 
+
+```{figure} /fig/en_qgis_correct_reference_map.png
+---
+width: 75%
+name: en_qgis_correct_reference_map.png
+---
+```
+
 2. Go to `Properties`, expand `Image Rotation`, select the `Sync with map option` and define here which map it should be.
 
 See also: Geographic Information Systems
