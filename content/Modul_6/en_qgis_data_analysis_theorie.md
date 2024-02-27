@@ -8,6 +8,20 @@ This Module covers a general understanding of data analysis, how to create stati
 
 ## Data & Spatial Analysis
 
+```{sidebar} Spatial Analysis
+ * A spatial analysis can be a result of combining several layers with different information in a single map.
+
+__Geographic analysis helps us answer questions like__: 
+ * What __patterns__ are in the data?
+ * How can we __summarise__ any trends?
+ * What's __nearby__?
+ * Which areas are __affected__?
+ * What's __inside or outside__ a boundary?
+ * How do phenomenon __change with location__?
+ * How do locations __change over time__?
+
+Before doing any sort of processing, you need to __familiarise yourself with the data__ and understand it.
+```   
 Even in a single layer, a lot of analysis is possible. However, sometimes the things we want to analyse are __split across__ multiple layers. In order to get these insights we use the spatial and non spatial GIS-processing tools we learned in the previous modules. In this module, we will look how to apply these tools, collect and work with data to create meaningful insights. We will go over a few examples of data analysis that are common in humanitarian work. 
 
 ```{figure} ../../fig/multiple_layer_data_analysis.png
@@ -18,21 +32,6 @@ width: 350px
 ---
 Spatial analysis means using multiple layers to gain new insights
 ```
-
-```{sidebar} Spatial Analysis
-* A spatial analysis can be a result of combining several layers with different information in a single map.
-
-__Geographic analysis helps us answer questions like__: 
-* What __patterns__ are in the data?
-* How can we __summarise__ any trends?
-* What's __nearby__?
-* Which areas are __affected__?
-* What's __inside or outside__ a boundary?
-* How do phenomenon __change with location__?
-* How do locations __change over time__?
-
-Before doing any sort of processing, you need to __familiarise yourself with the data__ and understand it.
-```    
     
 
 1. The first step is to read the metadata from the source and understand __what data was collected__, __who collected the data__, __and how the data was collected__. 
