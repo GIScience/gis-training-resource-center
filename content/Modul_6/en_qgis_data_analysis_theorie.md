@@ -294,7 +294,8 @@ Table aggregation workflow
 
 ### Pivoting tables
 
-Sometimes, the tables are in a format that is not suitable to join. For example, you have multiple zones per land, making the field `CNTRY_NAME` not suitable for aggregation. In this case, it is useful to pivot the table. This means that the fields for the zones and their respective area size are aggregated under the country. The values of the column `ZONE` will be turned into Columns
+Sometimes, the tables are in a format that is not suitable to join. For example, you have multiple zones per land, making the field `CNTRY_NAME` not suitable for aggregation. In this case, it is useful to pivot the table. This means that the fields for the zones and their respective area size are aggregated under the country. The values of the column `ZONE` will be turned into Columns with the values for the area in these columns. Now you can aggregate this table with additional information that has data on countries.
+
 
 ::::{card-carousel} Table pivot explanation
 
@@ -309,20 +310,21 @@ Values of the column `ZONE` are transformed into columns
 :::
 :::{card} card 3
 ``` {figure} ../../fig/en_table_pivot_3.png
-A country is now represented in one row
+A country is now represented in a single row
 ```
 :::
 :::{card} card 4
+``` {figure} ../../fig/en_table_pivot_4.png
+The values for the areas are added to the country column
+```
 :::
 :::{card} card 5
-:::
-:::{card} card 6
+``` {figure} ../../fig/en_table_pivot_.png
+Red = Pivot field; Blue = Input field; Green = Values field
+```
 :::
 ::::
-```{figure} 
 
-
-```
 
 ## Selecting locations according to a set of criteria
 
