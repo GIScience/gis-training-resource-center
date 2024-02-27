@@ -19,8 +19,8 @@ What were the main problems and challenges we faced while conducting the HIA?
 The one BIG challenge in this case was that there are no good datasets on flood impacts in Sudan. Practically, all information is scattered across a huge number of reports, maps, tables, dashboards and newspaper articles. Such documents can be found for example on RelifeWeb.
 ### Challange 2: How to get diverse data in one easy-to-use data format
 Since all information about flood impacts is contained in such a diverse range of documents and formats, it is difficult to bring the information together in one dataset.
-### Challange 3: Differentiating between riverain flood impacts and flash flood impacts
-Ricereich and flash floods often occur at the same time in the same place, so it is almost impossible to state what was the exact cause of the impact. 
+### Challange 3: Differentiating between riverine flood impacts and flash flood impacts
+Riverine and flash floods often occur at the same time in the same place, so it is almost impossible to state what was the exact cause of the impact. 
 And even when there was a single flash flood event, in reports it is often referred to as a flood. Hence, there is the real risk that impacts caused by flash floods are listed as river flood impacts.
 ## Key concept of our methodology
 Our goal was to store all available impact information in one table or dataset. If we would use a classic weight table we would end up with a super clumsy table since there are so many different types of impacts a flood can cause. To avoid that we decided to use a long table.
@@ -957,10 +957,38 @@ Now we have our impact dataset cleaned and ready to use. Since the dataset is a 
   - Rows: admin_1 or admin_1_PCODE (If you want to use this table in QGIS, you should use admin_1_PCODE Instead of admin_1)
   - Values: Impact_quantity
 5. To see the sum of the different impacts click on Impact_quantity under Values -> `Value Field Settings` -> select `Sum`.
-6. Directly above the pivot table, you should see the option to filter by year. Select the year you are interested in. 
+6. Directly above the pivot table, you should see the option to filter by year. Select the year you are interested in. For the following example the year 2020 was used.
 
-Now you can just copy the whole table, and place it in a new worksheet. Make sure to only paste the values. 
-This table can now be used to join with an existing geodata set in QGIS.
+Now you can just copy the whole table, and place it in a new worksheet. Make sure to only paste the values. Save this output as a CSV-file, this will make the import of the subset into QGIS easier. Now we can use this table to join it with an existing geodataset in QGIS. 
 
+#### How to further analyse and visualise data in QGIS
 
+1. Import the previously created CSV-file into QGIS. Open the `Data Source Manager` and select the `Delimited Text` section. Here you can input your CSV-file and depending on the `File Format` you need to define Costum delimiters or you can just select CSV. Always check the Sample Data output at the bottom to see if the import is working as expected. You propably will also need to check the `Record and Fields Options` and specify if your first record is a header or already data. Lastly, it is important to specify the `Geometry Definition`, were you can just select `No geometry`. An example will be shown in {numref}`HIA_csv_import`.
 
+```{figure} /fig/en_HIA_csv_import.PNG
+---
+height: 500px
+name: HIA_csv_import
+---
+Import of the CSV-data
+```
+
+2. For this example we will use geodata that contains information about the states of Sudan. Make sure that your geodata has the admin_1_PCODE column that will be used for joining the table data with the geodata. We will use the tool `Join attributes by field value`. And select the corresponding columns. This is shown in {numref}`HIA_join` below. 
+
+```{figure} /fig/en_HIA_join.PNG
+---
+height: 500px
+name: HIA_join
+---
+Join the table information onto geodata
+```
+
+The information can now be visualized on a spatial scale and maps can be created to transport important information. An example could be to visualize the total affected population for the year of 2020 on state level. But we can also visualize more specific impact types such as damaged schools or damaged sanitation. This is how such a map could look like.
+
+```{figure} /fig/en_06_2023_Map_coping_sudan.png
+---
+height: 500px
+name: 06_2023_Map_coping_sudan
+---
+Example map
+```
