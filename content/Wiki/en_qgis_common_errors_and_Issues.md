@@ -257,7 +257,11 @@ There are two places where you have to define with which map the north arrow sho
 ---
 width: 75%
 name: en_qgis_correct_reference_map.png
+align: center
+name: Reactivate toolbox
 ---
+Reactivate toolbox.
+
 ```
 
 2. Go to `Properties`, expand `Image Rotation`, select the `Sync with map option` and define here which map it should be.
