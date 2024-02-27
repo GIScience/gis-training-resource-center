@@ -98,10 +98,21 @@ If you are using version 3.4 or higher in QGIS, it is by default possible to add
 ```{figure} /fig/en_add_osm_basemap.png
 ---
 height: 500px
+name:
+align: center
 name: add_osm_basemap
 ---
 Screenshot of how to add OSM basemap
 ```
+
+### Quick OSM plugin
+
+tba
+
+### HOT Export Tool
+
+tba
+
 
 ### overpass turbo
 
@@ -116,6 +127,8 @@ Either use the wizard by tiping in *amenity=school in Heidelberg* or write your 
 ```{figure} /fig/en_wizard_overpassturbo.png
 ---
 height: 250px
+name:
+align: center
 name: overpass_turbo_wizard
 ---
 Screenshot of the Wizard in overpass turbo
@@ -123,6 +136,8 @@ Screenshot of the Wizard in overpass turbo
 ```{figure} /fig/en_wizard_result.png
 ---
 height: 250px
+name:
+align: center
 name: overpass_turbo_wizard_result
 ---
 Screenshot of the result
@@ -162,6 +177,8 @@ By exporting the data as f.e. GeoJSON you can later on import them in your QGIS 
 ```{figure} /fig/en_overpass_turbo_data.png
 ---
 height: 250px
+name:
+align: center
 name: overpass_turbo_data
 ---
 Screenshot of how to export data in overpassturbo
@@ -175,6 +192,8 @@ By exporting the query as map, you can share your current view as link or image.
 ```{figure} /fig/en_overpass_turbo_map.png
 ---
 height: 150px
+name:
+align: center
 name: overpass_turbo_map
 ---
 Screenshot of how to export map in overpassturbo
@@ -187,6 +206,8 @@ By exporting your query you can get the text or convert it to an OverpassXML or 
 ```{figure} /fig/en_overpass_turbo_query.png
 ---
 height: 250px
+name:
+align: center
 name: overpass_turbo_query
 ---
 Screenshot of how to export query in overpassturbo
@@ -202,4 +223,3 @@ For more information, check out the [wiki](https://wiki.openstreetmap.org/wiki/O
 ### ohsome tools
 
 [The ohsome tools](https://heigit.org/big-spatial-data-analytics-en/ohsome/) provide OpenStreetMap data analytics and downloads by HeiGIT. You can also investigate the OSM history. 
-
