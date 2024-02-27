@@ -298,29 +298,39 @@ Sometimes, the tables are in a format that is not suitable to join. For example,
 
 
 :::::{card-carousel} Table pivot explanation
-::::{card} card 1
+::::{card}
+
 ``` {figure} ../../fig/en_table_pivot_1.png
 ```
+
 ::::
-::::{card} card 2
+::::{card}
+
 ``` {figure} ../../fig/en_table_pivot_2.png
 Values of the column `ZONE` are transformed into columns
 ```
+
 ::::
-::::{card} card 3
+::::{card}
+
 ``` {figure} ../../fig/en_table_pivot_3.png
 A country is now represented in a single row
 ```
+
 ::::
-::::{card} card 4
+::::{card}
+
 ``` {figure} ../../fig/en_table_pivot_4.png
 The values for the areas are added to the country column
 ```
+
 ::::
-::::{card} card 5
+::::{card}
+
 ``` {figure} ../../fig/en_table_pivot_.png
 Red = Pivot field; Blue = Input field; Green = Values field
 ```
+
 ::::
 :::::
 
