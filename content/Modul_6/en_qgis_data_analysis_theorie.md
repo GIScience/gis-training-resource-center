@@ -287,7 +287,7 @@ You can remove the hexagon cells that are not overlapping with the reference lay
 ```{figure} ../../fig/en_non_spatial_join_aggregate_table.png
 ---
 name: non-spatial join aggregate table example
-width: 350 px
+width: 750 px
 ---
 Table aggregation workflow
 ```
@@ -297,42 +297,44 @@ Table aggregation workflow
 Sometimes, the tables are in a format that is not suitable to join. For example, you have multiple zones per land, making the field `CNTRY_NAME` not suitable for aggregation. In this case, it is useful to pivot the table. This means that the fields for the zones and their respective area size are aggregated under the country. The values of the column `ZONE` will be turned into Columns with the values for the area in these columns. Now you can aggregate this table with additional information that has data on countries.
 
 
-::::{card-carousel} Table pivot explanation
-
-:::{card} card 1
+:::::{card-carousel} Table pivot explanation
+::::{card} card 1
 ``` {figure} ../../fig/en_table_pivot_1.png
 ```
-:::
-:::{card} card 2
+::::
+::::{card} card 2
 ``` {figure} ../../fig/en_table_pivot_2.png
 Values of the column `ZONE` are transformed into columns
 ```
-:::
-:::{card} card 3
+::::
+::::{card} card 3
 ``` {figure} ../../fig/en_table_pivot_3.png
 A country is now represented in a single row
 ```
-:::
-:::{card} card 4
+::::
+::::{card} card 4
 ``` {figure} ../../fig/en_table_pivot_4.png
 The values for the areas are added to the country column
 ```
-:::
-:::{card} card 5
+::::
+::::{card} card 5
 ``` {figure} ../../fig/en_table_pivot_.png
 Red = Pivot field; Blue = Input field; Green = Values field
 ```
-:::
 ::::
+:::::
+
+## Selecting appropriate locations according to a set of criteria
+
+## Interpolation 
 
 
-## Selecting locations according to a set of criteria
 
+### Spline Interpolation
 
-## Interpolation (IDW & Spline)
+### IDW-Interpolation (Inverse Distance Weighted)
 
-
-## Kriging
+### Kriging
 
 
 
