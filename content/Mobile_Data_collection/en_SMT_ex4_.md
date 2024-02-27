@@ -7,7 +7,7 @@
 
 ## Characteristics of the exercise 
 #### Aim of this exercise:
-Learn how you can visualize your Sketch Map Tool Outputs in eather [QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_installation_wiki.html#qgis-installation) or [uMAP](https://umap.openstreetmap.fr/en/).
+Learn how you can visualize your Sketch Map Tool Outputs in either [QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_installation_wiki.html#qgis-installation) or [uMAP](https://umap.openstreetmap.fr/en/).
 
 #### Phase of participatory /community mapping 
 analysing participatory mapping
@@ -325,21 +325,21 @@ In the [Map Making Wiki](https://giscience.github.io/gis-training-resource-cente
 
 ### 1. Background Information on UMAP
 
-UMAP (Unified Map Platform) is an online platform that allows users to create custom maps using OpenStreetMap (OSM) data. No installation or registration is necesary which enables users to quickly gain an intuitive overview of their data.
-Useres can customize the appearance of the map and share it with others. It's particularly useful for collaborative mapping projects, visualizing geographic data, and creating custom maps tailored to specific needs
+UMAP is an online platform that allows users to create custom maps with OpenStreetMap (OSM) as basemap layer. No installation nor registration is necesar. This enables users to quickly gain an intuitive overview of their data.
+Useres can customize the appearance of the map and share it with others. It's particularly useful for collaborative mapping projects, quick visualization of geographic data, and creating custom maps tailored to specific needs.
 
 | Feature| QGIS | UMAP |
 | :-------------------- | :----------------- | :---------- |
 | Type | Desktop Geographic Information System (GIS) software | Online mapping platform|
 | Accessibility| Requires installation on a desktop computer | Accessible online via web browser |
 | Purpose |Comprehensive GIS software for spatial data analysis | Interactive mapping tool for creating custom maps |
-| Data Import | Supports various data formats (shapefiles, geodatabases, etc.) | Primarily utilizes OpenStreetMap (OSM) data |
-| Data Visualization and Analysis|Offers extensive visualization and analysis capabilities, Provides a wide range of geospatial analysis tools  | Focuses on creating interactive maps with custom elements, Limited analysis tools |
+| Data Import | Supports various data formats (shapefiles, geodatabases, etc.) | Vector data only, user input via map canvas, some geo formats (geojson, .gpx, .kml, .osm) |
+| Data Visualization and Analysis|Offers extensive visualization and analysis capabilities, Provides a wide range of geospatial analysis tools  | Focuses on creating interactive maps with custom elements; No analysis tools |
 | Output | Printable map with all necesary map elements | URL so share map online |
 
 
 ```{Hint}
-The Geojson output of the Sketch Map Tool cannot be opened and inspected with commonly available tools. If you use the Sketch Map Tool and do not have QGIS installed and quickly want to examine your result, UMAP is a simple and quick way to do so.
+The Geojson output of the Sketch Map Tool cannot be opened and inspected with commonly available tools. If you use the Sketch Map Tool and do not have QGIS installed but quickly want to examine your result, UMAP is a simple and quick way to do so. But be aware as it is an online platform, a internet connection is required.
 ```
 
 #### 2. Data Collection
@@ -533,3 +533,4 @@ You also have the option to donwload your layers data or your full backup or to 
 ```{Hint}
 If you want to use your map as a simple figure to show offline, you can simply take a screenshot or use the Snipping Tool.
 ```
+
