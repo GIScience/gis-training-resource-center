@@ -255,12 +255,12 @@ There are two places where you have to define with which map the north arrow sho
 
 ```{figure} /fig/en_qgis_correct_reference_map.png
 ---
-width: 75%
+width: 85%
 name: en_qgis_correct_reference_map.png
 align: center
 name: Reactivate toolbox
 ---
-Reactivate toolbox.
+Correct reference map.
 
 ```
 
