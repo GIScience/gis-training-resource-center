@@ -28,7 +28,7 @@ Even in a single layer, a lot of analysis is possible. However, sometimes the th
 ---
 align: left
 name: spatial analysis using multiple layers example
-width: 350px
+width: 300px
 ---
 Spatial analysis means using multiple layers to gain new insights
 ```
@@ -296,6 +296,29 @@ Table aggregation workflow
 
 Sometimes, the tables are in a format that is not suitable to join. For example, you have multiple zones per land, making the field `CNTRY_NAME` not suitable for aggregation. In this case, it is useful to pivot the table. This means that the fields for the zones and their respective area size are aggregated under the country. The values of the column `ZONE` will be turned into Columns
 
+::::{card-carousel} Table pivot explanation
+
+:::{card} card 1
+``` {figure} ../../fig/en_table_pivot_1.png
+```
+:::
+:::{card} card 2
+``` {figure} ../../fig/en_table_pivot_2.png
+Values of the column `ZONE` are transformed into columns
+```
+:::
+:::{card} card 3
+``` {figure} ../../fig/en_table_pivot_3.png
+A country is now represented in one row
+```
+:::
+:::{card} card 4
+:::
+:::{card} card 5
+:::
+:::{card} card 6
+:::
+::::
 ```{figure} 
 
 
