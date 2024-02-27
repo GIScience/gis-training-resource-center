@@ -305,7 +305,7 @@ When a styling is saved in the same location as the data and has the same name a
 
 
 >TO DO: insert links
- PREVIEW MODE
+ + PREVIEW MODE
 
 - [Exporting a styling](link)
 - [Loading a style into your QGIS-project](link)

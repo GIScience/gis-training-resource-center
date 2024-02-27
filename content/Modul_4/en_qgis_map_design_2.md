@@ -155,6 +155,9 @@ Any data represented on a map should have its sources indicated. This provides a
 It is possible to give the source of each data under the legend, or to do it in a dedicated space in the map. The level of precision of the sources varies according to the author or the precision of the data.
 
 
+> (/../fig/en_modifiable_areal_unit_problem_example.png)
+
+
 ## The 4 semiological errors
 
 ### 1. Proportional circles vs. solid colors
@@ -170,6 +173,7 @@ It is a mistake because:
 - You lose the __order relationship between the data__ (a circle can be twice as big as another one, a color cannot be "twice as dark")
 - Countries with a large surface area stand out visually (eg.: Russia in the example below)
 - We are trying to represent __data that has nothing to do with the area of a country__, but rather speaks of individual elements 
+
 
 >Add different example
 

@@ -6,7 +6,7 @@ __Competences__:
 
 This Module covers a general understanding of data analysis, how to create statistics, create buffers, heatmaps, and how to break rivers, roads, or areas into segments. The following modules will cover more complex analysis methods. 
 
-## Data Analysis
+## Data & Spatial Analysis
 
 Even in a single layer, a lot of analysis is possible. However, sometimes the things we want to analyse are __split across__ multiple layers. In order to get these insights we use the spatial and non spatial GIS-processing tools we learned in the previous modules. In this module, we will look how to apply these tools, collect and work with data to create meaningful insights. We will go over a few examples of data analysis that are common in humanitarian work. 
 
@@ -16,11 +16,10 @@ align: left
 name: spatial analysis using multiple layers example
 width: 350px
 ---
-Overlaying layers is a spatial analysis
+Spatial analysis means using multiple layers to gain new insights
 ```
 
-### Spatial Analysis
-
+```{sidebar} Spatial Analysis
 * A spatial analysis can be a result of combining several layers with different information in a single map.
 
 __Geographic analysis helps us answer questions like__: 
@@ -32,11 +31,9 @@ __Geographic analysis helps us answer questions like__:
 * How do phenomenon __change with location__?
 * How do locations __change over time__?
 
-Before doing any sort of processing, you need to __familiarise yourself with the data__ and understand it. 
-  
-      
-      
-        
+Before doing any sort of processing, you need to __familiarise yourself with the data__ and understand it.
+```    
+    
 
 1. The first step is to read the metadata from the source and understand __what data was collected__, __who collected the data__, __and how the data was collected__. 
 2. Next, open the attribute table and look at the different features and attributes available. What do the attributes show and what are they called?
@@ -63,7 +60,7 @@ With spatial analysis, you can build predictive models to plan ahead of disaster
 It is important to know the __limitations__ of the data at your disposal - don't try to use unsuitable data for analysis (e.g. if you now a survey sample is not representative)
 
 ```{Attention} Spatial Representation and Analysis
-There are some spatial analysis problems that are difficult to avoid completely. For example the __Modifiable Areal Unit Problem__ (pictured below), where the results look different depending on the unit of analysis.  
+There are some spatial analysis problems that are difficult to avoid completely. For example the __Modifiable Areal Unit Problem__, where the results look different depending on the unit of analysis.
 >INSERT LINK TO MODIFIABLE AREAL UNIT PROBLEM EXPLANATION
 ```
 
@@ -174,6 +171,11 @@ We want to calculate the total length of flooded and unflooded road respectively
 .mp4"></video>
 :::
 
+```{Tip}
+You can add a table of the statistics to your print layout by using the "__Add attribute table__"-tool in the print layout composer
+```
+
+
 > Insert statistics examples
 
 ## Buffer analysis
@@ -239,6 +241,8 @@ Hexagon grids are used to aggregate point incidents in order to normalize geogra
 
 The advantage of using hexagons is that it is a polygon that closely resembles a __circle__ (where the distance to the centre is equal at every point along the outline), but still __leaves no gaps__ when placed as a __grid__. This means that it is also possible to use absolute values (no normalizations), since the spatial units have the same size. 
 
+Another advantage is that you can use the hexagon grid as spatial units and combine multiple variables (for example, number of incidents per population size) or calculate indexes.
+
 > WIKI: __Hexagon grids__ are especially useful for density maps. For example, the number of conflict events or water points in an area. 
 
 To create a hexagon grid map, you will first need to [create a hexagon grid](link), by using the "__Create Grid__" vector tool. 
@@ -278,3 +282,33 @@ You can remove the hexagon cells that are not overlapping with the reference lay
 ```
 
 ## Analysis by joining attributes
+
+[Joining](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html) datasets is a common and useful way to get new insights by adding the information of one table to the other, taking into account key attributes that are used to identify the features that are to be joined. 
+
+```{figure} ../../fig/en_non_spatial_join_aggregate_table.png
+---
+name: non-spatial join aggregate table example
+width: 350 px
+---
+Table aggregation workflow
+```
+
+### Pivoting tables
+
+Sometimes, the tables are in a format that is not suitable to join. For example, you have multiple zones per land, making the field `CNTRY_NAME` not suitable for aggregation. In this case, it is useful to pivot the table. This means that the fields for the zones and their respective area size are aggregated under the country. The values of the column `ZONE` will be turned into Columns
+
+```{figure} 
+
+
+```
+
+## Selecting locations according to a set of criteria
+
+
+## Interpolation (IDW & Spline)
+
+
+## Kriging
+
+
+
