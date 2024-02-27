@@ -8,6 +8,21 @@ This Module covers a general understanding of data analysis, how to create stati
 
 ## Data & Spatial Analysis
 
+
+
+Even in a single layer, a lot of analysis is possible. However, sometimes the things we want to analyse are __split across__ multiple layers. In order to get these insights we use the spatial and non spatial GIS-processing tools we learned in the previous modules. In this module, we will look how to apply these tools, collect and work with data to create meaningful insights. We will go over a few examples of data analysis that are common in humanitarian work. 
+
+### Spatial analysis
+
+```{figure} ../../fig/multiple_layer_data_analysis.png
+---
+align: left
+name: spatial analysis using multiple layers example
+width: 300px
+---
+Spatial analysis means using multiple layers to gain new insights
+```
+    
 ```{sidebar} Spatial Analysis
  * A spatial analysis can be a result of combining several layers with different information in a single map.
 
@@ -22,17 +37,6 @@ __Geographic analysis helps us answer questions like__:
 
 Before doing any sort of processing, you need to __familiarise yourself with the data__ and understand it.
 ```   
-Even in a single layer, a lot of analysis is possible. However, sometimes the things we want to analyse are __split across__ multiple layers. In order to get these insights we use the spatial and non spatial GIS-processing tools we learned in the previous modules. In this module, we will look how to apply these tools, collect and work with data to create meaningful insights. We will go over a few examples of data analysis that are common in humanitarian work. 
-
-```{figure} ../../fig/multiple_layer_data_analysis.png
----
-align: left
-name: spatial analysis using multiple layers example
-width: 300px
----
-Spatial analysis means using multiple layers to gain new insights
-```
-    
 
 1. The first step is to read the metadata from the source and understand __what data was collected__, __who collected the data__, __and how the data was collected__. 
 2. Next, open the attribute table and look at the different features and attributes available. What do the attributes show and what are they called?
@@ -284,6 +288,14 @@ You can remove the hexagon cells that are not overlapping with the reference lay
 
 [Joining](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html) datasets is a common and useful way to get new insights by adding the information of one table to the other, taking into account key attributes that are used to identify the features that are to be joined. For example: the population size of a district is in one table, and the number of hospitals in a district is in a second table and you wish to combine the two tables to know how many hospitals per population size are in the respective districts.
 
+```{sidebar}
+ - You have two separate data tables with information you wish to aggregate (join); 
+ - Both tables share key identifiers; `CNTY_NAME` in this example
+ - The key identifiers serve as the __relationship__ between the two tables
+ - The tables will be combined via the key identifiers
+ - Joining tables will create a new table where the attribute values are added to the key identifiers
+```
+
 ```{figure} ../../fig/en_non_spatial_join_aggregate_table.png
 ---
 name: non-spatial join aggregate table example
@@ -293,41 +305,30 @@ align: left
 Table aggregation workflow
 ```
 
-```{sidebar}
- - You have two separate data tables with information you wish to aggregate (join); 
- - Both tables share key identifiers; `CNTY_NAME` in this example
- - The key identifiers serve as the __relationship__ between the two tables
- - The tables will be combined via the key identifiers
- - Joining tables will create a new table where the attribute values are added to the key identifiers
-```
 
 ### Pivoting tables
 
 Sometimes, the tables are in a format that is not suitable to join. For example, you have multiple zones per land, making the field `CNTRY_NAME` not suitable for aggregation. In this case, it is useful to pivot the table. This means that the fields for the zones and their respective area size are aggregated under the country. The values of the column `ZONE` will be turned into Columns with the values for the area in these columns. Now you can aggregate this table with additional information that has data on countries.
 
-
-::::{card-carousel} Table pivot explanation
+::::{grid} 3 2
 
 :::{card}
-
 ``` {figure} ../../fig/en_table_pivot_1.png
 ```
-
 :::
 :::{card}
 
 ``` {figure} ../../fig/en_table_pivot_2.png
 Values of the column `ZONE` are transformed into columns
 ```
-
 :::
-:::{card}
 
+:::{card}
 ``` {figure} ../../fig/en_table_pivot_3.png
 A country is now represented in a single row
 ```
-
 :::
+
 :::{card}
 
 ``` {figure} ../../fig/en_table_pivot_4.png
@@ -335,6 +336,7 @@ The values for the areas are added to the country column
 ```
 
 :::
+
 :::{card}
 
 ``` {figure} ../../fig/en_table_pivot_5.png
@@ -350,7 +352,7 @@ Red = Pivot field; Blue = Input field; Green = Values field
 
 >insert links
 
-Spatial interpolation uses point data to estimate values at other unknown points. This is extremely useful for spatial pheonomena that are [continuous](link), such as rainfall or temperature. For example, you have point data of the temperatures at weather stations, but you want to estimate the amount occured
+Spatial interpolation uses point data to estimate values at other unknown points. This is extremely useful for spatial pheonomena that are [continuous](link), such as rainfall or temperature. For example, you have point data of the temperatures at weather stations, but you want to estimate the temperatures in between these points. 
 
 ### Spline Interpolation
 
