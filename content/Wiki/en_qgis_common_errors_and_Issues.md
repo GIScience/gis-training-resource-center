@@ -50,7 +50,6 @@ name: Zoom to layer if layer is not displayed
 Zoom to layer if layer is not displayed.
 ---
 
-```
 
 ## A layer window has disappeared in QGIS
 
@@ -186,7 +185,6 @@ name: Save layer
 Save layer.
 ---
 
-```
 
 2. Put in a _file name_ and click on the `three points` ![](/fig/Three_points.png) to save the file on the chosen directory place.
 3. Select the corresponding CRS.
@@ -202,7 +200,7 @@ name: Save layer in directory
 Save layer in your directory.
 ---
 
-```
+
 
 ## Missing processing tools in the panels tool and incomplete vector tab
 
@@ -378,7 +376,6 @@ Check redefining CRS.
 
 ```
 
-
 ## Coordinate systems: What coordinate system should my dataset be in?
 
 A data point's attributes gives context to where on the earth it is located. Most GIS software will display the minimum and maximum coordinates in the layer's properties as "extent" or "bounding box". 
@@ -443,6 +440,11 @@ You can run this sample code yourself, or use this form:
 + If the attributes suggest the dataset is in the USA, then there might a problem converting to/from Freedom Units. Try multiplying/dividing a data point's coordinates by 3.28084 to convert feet to meters/meters to feet and see if that places it in the proper location.
 
 + If the minimum X/Y coordinates are both zero and the maxmimum X/Y coordinates are both positive, then the dataset may have been exported from non-geospatial software like Photoshop or Illustrator or Inkscape. This is especially likely if the dataset is flipped vertically since those editors typically have the Y-axis increasing going down. You will need to manually georeference the dataset to use it, which changes both the coordinates and the coordinate system.
+
+See also: 
+
+https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html
+
 
 ## My dataset is slightly offset from where it should be!
 
