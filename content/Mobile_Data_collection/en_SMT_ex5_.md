@@ -7,12 +7,14 @@
 
 ## Characteristics of the exercise 
 #### Aim of this exercise:
-Learn 
+Learn how to analyze your Sketch Map Tool Outputs by creating a heatmap
 
 #### Phase of participatory /community mapping 
 analysing participatory mapping results
+
 #### Focus group (GIS-Knowlege Level)
 Medium-Advanced level (participants have worked with QGIS before)
+
 #### Type of trainings exercise:
 This exercise can be used in online and presence training and is focused on an hands-on experience with QGIS spatial analysis tools.
 #### Estimated time demand for the exercise.
@@ -26,12 +28,10 @@ This exercise can be used in online and presence training and is focused on an h
 - QGIS installed on the computer
 - Take a look and make yourself familiar on the provided material for the exercise and the Sketch Map Tool in general. 
 
-```
-Alternatives  
+```{Alternatives}  
 - If you like to skip parts of the workflow, make sure you have alternative material (like preprinted, or already marked Sketch maps) prepared.
 - If you like to adapt this exercise to your specific use case, create your own case-description. 
 ```
-
 
 
 ### Available Material: needs to be linked directly 
@@ -48,7 +48,8 @@ o	Geodata of the results and some pictures
 
 #### Wrap up: 
 - Take some time at the end to wrap up and that several people present their result map
-- Discuss Benefits of showing results as a heatmap and think about further thematic areas where this could be useful
+- Discuss Benefits of showi
+- Refer to other chapters of the Trainings Platform and how users can benefit from it
 - Time to for Open questions.
 
 ## Step-by step introduction for participants 
@@ -61,22 +62,7 @@ If you expieriences any problems during your use of the [Sketch Map Tool](https:
 
 
 
-### Exercise A: Complement your Sketch Map Tool data
-
-Szenarien: 
-- Eine eingezeichnete Fläche wurde nicht erkannt, ich möchte sie auf Grundlage des GeoTiffs digitalisieren und dem geojson hinzufügen
-
-- Ich möchte den verschiedenen Polygonen eine weitere Information/column hinzufügen
-
-
-To do: map erstellen und ein Polygon mit Bleistift einzeichen, sodass es nicht erkannt wird. Vielleicht flood risk - vulnerabilities and capacities
---> dann eine spalte mit angeben wo description steht -> culnerability oder capacity je nach Farbe
-
-
-- Ich habe mehrere geojson outputs von mehreren Sketch Maps
-
-
-### Exercise B: Heat Map Visualization: Past Flood Delineation
+### Exercise: Heat Map Visualization: Past Flood Delineation
 
 ### Scenario and Background
 
@@ -106,7 +92,7 @@ Open QGIS and load your vector files by dragging and dropping them into the laye
 ```{Note}
 When you upload a several marked Sketch Maps simultaneously, you will get one vector output containing all the markings of all Sketch Maps, while uploading your Sketch Maps one by one will provide you with one vector file for the marking in each Sketch Map. This information can be important for the planning phase of your  mapping process.
 ```
-Your vectorized sketches in the geojson format contain a feature for every extracted .png and markup color. In general, each marking in your sketch map will appear in the attribute table as one row, containing the name of your sketch map as well as the detected colour of the respective marking. We want to visualize now the degree of overlapping flood areas in order to create a heatmap. For this purpose  we have to convert  every feature to a distinct raster and then sum up the overlapping pixels. In QGIS, you can do this in the follwoing steps:
+Your vectorized sketches in the geojson format contain a feature for every extracted .png and markup color. In general, each marking in your sketch map will appear in the attribute table as one row, containing the name of your sketch map as well as the detected colour of the respective marking. We want to visualize now the degree of overlapping flood areas in order to create a heatmap. For this purpose  we have to convert  every feature to a distinct raster and then sum up the overlapping pixels. In QGIS, you can do this in the following steps:
 
 
 #### 4. Rasterize
@@ -118,6 +104,27 @@ Your vectorized sketches in the geojson format contain a feature for every extra
 - In the field calculator dialog, check the `Create a new field` option, specify "fixed_val" as `Output field name` of the new field and choose "Whole number (integer)" as `Result field type`.
 - In the field calculator expression box, enter as value you want to assign to all features "1" (without quotes). 
 - Click `Ok`
+
+
+```{figure} /fig/en_SMT_ex5_fixed_val.PNG
+---
+height: 500px
+name: T
+align: center
+---
+Field Calculator
+```
+
+```{figure} /fig/en_SMT_ex5_attribute_table.PNG
+---
+height: 500px
+name: T
+align: center
+---
+Attribute table with additional column"fixed_val"
+```
+
+
 
 2. Convert your vectors to Rasters
 
@@ -133,16 +140,62 @@ In the next step we want to rastzerize our vector layer. That means that we are 
 - Finally, determine path and name of your rasterized output files under `Rasterized` by clicking on ![](/fig/Three_points.png) -> `Save to File`
 - Click `Run`
 
+
+```{figure} /fig/en_SMT_ex5_rasterize.PNG
+---
+height: 500px
+name: T
+align: center
+---
+Rasterize
+```
+
 You should end up with a binary raster for every sketch map you georeferenced. All flooded areas should be represented by pixels of value 1, while non flooded areas are represented by 0.
+
+
+```{figure} /fig/en_SMT_ex5_rasterize_result.PNG
+---
+height: 500px
+name: T
+align: center
+---
+Output Rasterize
+```
+
 
 #### 5. Raster Calculator
 
-Sum up Rasters
+We will now sum up all our output rasters:
+
+In the top bar navigate via `Raster`to `Raster Caclulator`
+In the `Raster Calculator Expression` sum up the 10 rasters you rasterized from your vectors. you can doble-click on each raster in the `Raster Bands` window and add the operator "+":
+
+```{figure} /fig/en_SMT_ex5_raster_caclulator.PNG
+---
+height: 500px
+name: T
+align: center
+---
+Raster Calculator
+```
+
+Finally you click on ![](/fig/Three_points.png) next to `Output layer` and navigate to your results folder and save your outpur. Then click `OK`
+
+```{figure} /fig/
+en_SMT_ex5_sum_result.PNG
+---
+height: 500px
+name: T
+align: center
+---
+Output sum of rasters
+```
+
+Based on the sum of the rasters we have now created just one raster that will have a pixel value = 0 if there has no flooding been reportedm pixel value = 1 if one person/sketch map reported a flood, pixel value = 2 if two persons/sketch maps reported a flood and so on.
 
 #### 6. Visualization
 
-
-Make a printable map
+In order to visualize the result right-click on your layer and navigate to `Properties` -> `Symbology` 
 
 
 

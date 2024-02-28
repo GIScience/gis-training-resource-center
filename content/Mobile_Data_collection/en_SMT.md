@@ -60,6 +60,17 @@ Sketch Map Tool Workflow
 The Enhanced Vulnerability and Capacity Assessment (EVCA) is a participatory process developed for communities to become more resilient through the assessment and analysis of the risks they face and the identification of actions to reduce these risks. The EVCA guidelines containes different tools in order no help National Societies to understand the dynamics of risk in a spedific community. 
 In order to spatially assess and identify risk factors, the EVCA recommends to conduct a mapping activitiy throughout the process where community members jointly create a spatial map, hazard & exposure map and vulnerability & capacity map. Mapping is done with paper and pen and generally on blank paper. The Sketch Map Tool has great potential to support a sustainable participatory mapping process by digitalizing the process while keeping it simply.
 
+```{figure} /fig/IMG_2178
+---
+height: 50px
+name: T
+align: center
+---
+Usage of Sketch Map Tool in the context of the Enhanced Vulnerability and Capacity Assessment (EVCA) in Colombia 
+```
+
+
+
 For more information:
 
 [EVCA Mapping Toolbox](https://preparecenter.org/wp-content/uploads/2023/08/EVCA-tools-compiled.pdf)
