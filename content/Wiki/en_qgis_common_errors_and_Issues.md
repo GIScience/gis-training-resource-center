@@ -48,7 +48,7 @@ align: center
 name: Zoom to layer if layer is not displayed
 ---
 Zoom to layer if layer is not displayed.
----
+```
 
 
 ## A layer window has disappeared in QGIS
@@ -183,7 +183,7 @@ align: center
 name: Save layer
 ---
 Save layer.
----
+```
 
 
 2. Put in a _file name_ and click on the `three points` ![](/fig/Three_points.png) to save the file on the chosen directory place.
@@ -198,7 +198,7 @@ align: center
 name: Save layer in directory
 ---
 Save layer in your directory.
----
+```
 
 
 
@@ -219,7 +219,6 @@ align: center
 name: Reinstall processing tool
 ---
 Reinstall processing tool.
-
 ```
 See also: Geographic Information Systems
 https://gis.stackexchange.com/questions/202111/missing-processing-tools-in-vector-menu-of-qgis
@@ -240,7 +239,6 @@ align: center
 name: Reactivate toolbox
 ---
 Reactivate toolbox.
-
 ```
 
 ## The North arrow is not syncing with the corresponding map
@@ -259,7 +257,6 @@ align: center
 name: Reactivate toolbox
 ---
 Correct referenciation to map.
-
 ```
 
 See also: Geographic Information Systems
@@ -328,7 +325,6 @@ align: center
 name: Mercator projection
 ---
 Mercator projection.
-
 ```
 
 Mercator does enlarge areas farther from the equator, but at least this distortion is the same horizontally and vertically. And it's trivial to calculate a scale factor to correct measurements (See also: https://en.wikipedia.org/wiki/Mercator_projection#Scale_factor).  
@@ -359,7 +355,6 @@ align: center
 name: Redefining CRS
 ---
 Redefining CRS.
-
 ```
 
 5. Check and Adjust Layers: After redefining the coordinate system, it's essential to check your layers to ensure they align correctly. Some layers may require manual adjustments or reprojection if they don't align as expected.
@@ -373,7 +368,6 @@ align: center
 name: Check redefining CRS
 ---
 Check redefining CRS.
-
 ```
 
 ## Coordinate systems: What coordinate system should my dataset be in?
@@ -505,7 +499,6 @@ align: center
 name: Standard folder structure on your PC
 ---
 Standard folder structure on your PC.
-
 ```
 The standard folder structure has two principal advantages:
 1. By sharing the whole project folder, we can be certain that the project will run without problems on a different computer.
@@ -542,7 +535,6 @@ align: center
 name: Change crs settings in QGIS
 ---
 Change crs settings in QGIS.
-
 ```
 
 ### Saving regularly
@@ -571,7 +563,6 @@ If the file path contains umlauts (ä,ö,ü), special characters (!,?, ., etc.) 
 
 ```{attention} 
 Temporary files are user-specific (if several people use one PC, each person has their own temporary files). The file path therefore contains your user name. If this contains problematic characters, it may therefore be advisable to change it.
-
 ```
 
 ## QGIS Help Access Links
