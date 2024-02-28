@@ -250,7 +250,7 @@ __Solution:__
 
 There are two places where you have to define with which map the north arrow should sync with.
 
-1. In the `Layout Tab` (of the print layout) for the map image under `General Settings` make sure that the reference map has the right map selected. 
+ In the `Layout Tab` (of the print layout) for the map image under `General Settings` make sure that the reference map has the right map selected. 
 
 
 ```{figure} /fig/en_qgis_correct_referenciation_to_map.png
@@ -263,8 +263,6 @@ name: Reactivate toolbox
 Correct referenciation to map.
 
 ```
-
-2. Go to `Properties`, expand `Image Rotation`, select the `Sync with map option` and define here which map it should be.
 
 See also: Geographic Information Systems
 https://gis.stackexchange.com/questions/265095/north-arrow-not-syncing-with-map-qgis-2-18#:~:text=1%20Answer&text=2-,There%20are%20TWO%20places%20where%20you%20have%20to%20tell%20it,and%20tell%20it%20which%20map
@@ -344,6 +342,22 @@ Your dataset probably has the wrong coordinate system. This is the more general 
 __Solution:__
 
  Redefine the coordinate system, redefine i.e. change the coordinate system but not the coordinates, to the correct coordinate system. 
+
+1, Open your Project: Open the QGIS project where you want to redefine the coordinate system.
+
+2, Access Project Properties: Go to the "Project" menu at the top of the QGIS window and select "Properties". Alternatively, you can press Ctrl + Shift + P as a shortcut.
+
+3, Coordinate System Tab: In the Project Properties window, select the "Coordinate System" tab.
+
+4, Change Coordinate System: Here, you can select a new coordinate system for your project. You can search for a specific coordinate system using the search bar, or you can browse through the list of available coordinate systems.
+
+Apply Changes: Once you've selected the desired coordinate system, click "OK" to apply the changes. QGIS will reproject the layers in your project to match the new coordinate system.
+
+5, Check and Adjust Layers: After redefining the coordinate system, it's essential to check your layers to ensure they align correctly. Some layers may require manual adjustments or reprojection if they don't align as expected.
+And have also a final look at the right bottom of the QGIS window where the actual CRS is indicated.
+
+
+
 
 ## Coordinate systems: What coordinate system should my dataset be in?
 
