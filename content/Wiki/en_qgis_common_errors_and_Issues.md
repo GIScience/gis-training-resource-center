@@ -435,9 +435,9 @@ You can run this sample code yourself, or use this form:
 
 + If the minimum X/Y coordinates are both zero and the maxmimum X/Y coordinates are both positive, then the dataset may have been exported from non-geospatial software like Photoshop or Illustrator or Inkscape. This is especially likely if the dataset is flipped vertically since those editors typically have the Y-axis increasing going down. You will need to manually georeference the dataset to use it, which changes both the coordinates and the coordinate system.
 
-See also: 
-
-https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html
+See also the following [__Wiki_Page__]: 
+(../Wiki/n_qgis_projections_wiki.md)
+`Projections`.
 
 
 ## My dataset is slightly offset from where it should be!
@@ -543,7 +543,7 @@ More complex tasks with longer calculation times may still cause problems. Regul
 
 See also the following [__Wiki_Page__]:
 
-(https://github.com/GIScience/gis-training-resource-center//content/Wiki/en_qgis_interface_wiki.html#save-open-qgis-projects) `Save and open QGIS Projects`. 
+(https://github.com/GIScience/gis-training-resource-center//content/Wiki/en_qgis_interface_wiki.html#save-open-qgis-projects) `Save and open QGIS Projects.` 
 
 ### GRASS applications
 
@@ -595,3 +595,7 @@ Here you will find further help access links or QGIS community/forum links to ad
 + QGIS complete tutorial for beginners: https://www.youtube.com/watch?v=d15Xl4OphDk
 + QGIS for beginners: https://www.youtube.com/watch?v=Eg4_duqH5Q4
 + Introduction to QGIS: https://www.youtube.com/watch?v=kxJI5FAGjzQ
+
+#### ChatGPT
++ And don't forget ChatGPT https://chat.openai.com/
+It is quick!
