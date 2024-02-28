@@ -435,7 +435,7 @@ You can run this sample code yourself, or use this form:
 
 + If the minimum X/Y coordinates are both zero and the maxmimum X/Y coordinates are both positive, then the dataset may have been exported from non-geospatial software like Photoshop or Illustrator or Inkscape. This is especially likely if the dataset is flipped vertically since those editors typically have the Y-axis increasing going down. You will need to manually georeference the dataset to use it, which changes both the coordinates and the coordinate system.
 
-See also the following [__Wiki_Page__]: 
+See also the following [__Wiki_Page__]
 (../Wiki/en_qgis_projections_wiki.md)
 `Projections`.
 
