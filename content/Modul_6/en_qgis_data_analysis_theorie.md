@@ -288,13 +288,11 @@ You can remove the hexagon cells that are not overlapping with the reference lay
 
 [Joining](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html) datasets is a common and useful way to get new insights by adding the information of one table to the other, taking into account key attributes that are used to identify the features that are to be joined. For example: the population size of a district is in one table, and the number of hospitals in a district is in a second table and you wish to combine the two tables to know how many hospitals per population size are in the respective districts.
 
-```{sidebar}
  - You have two separate data tables with information you wish to aggregate (join); 
  - Both tables share key identifiers; `CNTY_NAME` in this example
  - The key identifiers serve as the __relationship__ between the two tables
  - The tables will be combined via the key identifiers
  - Joining tables will create a new table where the attribute values are added to the key identifiers
-```
 
 ```{figure} ../../fig/en_non_spatial_join_aggregate_table.png
 ---
@@ -305,39 +303,36 @@ align: left
 Table aggregation workflow
 ```
 
-
 ### Pivoting tables
 
 Sometimes, the tables are in a format that is not suitable to join. For example, you have multiple zones per land, making the field `CNTRY_NAME` not suitable for aggregation. In this case, it is useful to pivot the table. This means that the fields for the zones and their respective area size are aggregated under the country. The values of the column `ZONE` will be turned into Columns with the values for the area in these columns. Now you can aggregate this table with additional information that has data on countries.
 
-::::{grid} 3 2
+::::{grid} 3
 
 :::{card}
-``` {figure} ../../fig/en_table_pivot_1.png
-```
+!
 :::
-:::{card}
 
+:::{card}
 ``` {figure} ../../fig/en_table_pivot_2.png
 Values of the column `ZONE` are transformed into columns
 ```
 :::
 
-:::{card}
+:::{card}  
 ``` {figure} ../../fig/en_table_pivot_3.png
 A country is now represented in a single row
 ```
 :::
 
-:::{card}
+:::{card}  
 
 ``` {figure} ../../fig/en_table_pivot_4.png
 The values for the areas are added to the country column
 ```
-
 :::
 
-:::{card}
+:::{card}  
 
 ``` {figure} ../../fig/en_table_pivot_5.png
 Red = Pivot field; Blue = Input field; Green = Values field
