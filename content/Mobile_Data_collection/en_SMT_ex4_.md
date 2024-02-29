@@ -13,7 +13,7 @@ Learn how you can visualize your Sketch Map Tool Outputs in either [QGIS](https:
 analysing participatory mapping
 #### Focus group (GIS-Knowlege Level)
 
-- Exercise builds on prior-knowledge of Sketch Map Tool. Make sure [Execise 1](https://giscience.github.io/gis-training-resource-center/content/Mobile_Data_collection/en_SMT_ex1_.html#sketch-map-tool-exercise-1-workflow-exercise) has been done before or knowlege on the background on Sketch Map Tool is there.
+- Exercise builds on prior-knowledge of Sketch Map Tool. Make sure [Exercise 1](https://giscience.github.io/gis-training-resource-center/content/Mobile_Data_collection/en_SMT_ex1_.html#sketch-map-tool-exercise-1-workflow-exercise) has been done before or knowlege on the background on Sketch Map Tool is there.
 
 - GIS Beginners-level: no specific knowledge about QGIS /uMAP required
 
@@ -150,12 +150,12 @@ Now load your vector file ("Schuld_Ahr-tal_sketch-map_Ex4.geojson") and geotiff 
 
     __GeoTIFF__
 
-    The Raster file as result of the SKetch Map Tool is basically the foto you took of your Sketch Map but georeferenced. You see if the georeferencing is correct when it matches the base map. Furthermore your tif File is helpful to compare and review the marking detection (vector file). In this case your tiff is your "groudn truth" and you can check if the marking detection by the tool is true or if there are pieces missing or wongly detected. 
+    The Raster file as result of the SKetch Map Tool is basically the foto you took of your Sketch Map but georeferenced. You see if the georeferencing is correct when it matches the base map. Furthermore your .tiff File is helpful to compare and review the marking detection (vector file). In this case your tiff is your "ground truth" and you can check if the marking detection by the tool is true or if there are pieces missing or wongly detected. 
 
     Question:
     Do your different output match or do you find any errors?
 
-    -> Yes, you are right. Unfortunatly, one marked polygon did not get detected. This can happen since marking are being detected by machien learning algorithms that can encounter problemas in soem situations. 
+    -> Yes, you are right. Unfortunatly, one marked polygon did not get detected. This can happen since marking are being detected by machine learning algorithms that can encounter problemas in some situations. 
 
 
 ### 5. Correct or enhance your data
@@ -164,36 +164,37 @@ Now load your vector file ("Schuld_Ahr-tal_sketch-map_Ex4.geojson") and geotiff 
 
 1. Digitalisation: Add a marking manually
 
-So what can we do if a marking has not been detected? We can add missing markings manually by tracking the drawing on the getif file. This process is also called [digitalisation](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation.html?highlight=digitize#digitalisation). 
+So what can we do if a marking has not been detected? We can add missing markings manually by tracking the drawing on the geotiff file. This process is also called [digitalisation](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation.html?highlight=digitize#digitalisation). 
 
 Right-click on your vector file and click on `Toggle Editing`. The `Digitizing Toolbox` in your menu bar on top of your QGIS will be activated:
 
 ```{figure} /fig/en_SMT_ex4_dig_toolbox.PNG
 ---
-width: 100px
-name: T
+width: 700px
+name: digitizing toolbox
 align: center
 ---
 Digitzing Toolbox
 ```
 Click on `Add Feature: Capture Polygon`![](/fig/mActionCapturePolygon.png). You will note that your mouse market now changed its symbol into a target. This means you can now start tracing the missing polygon my left-clicking. You finish your polygon by a right-click and you will be asked to enter the descriptions. Enter the information and click ok.
 
- ```{figure} /fig/en_SMT_ex4_dig_info.PNG
+```{figure} /fig/en_SMT_ex4_dig_info.PNG
 ---
-height:300px
-name: T
+height:400px
+name: SMT Attribute table
 align: center
 ---
 Digitizing 
 ```
-In the map canvas you can already see your handdrawn polygon. In order to save it you should now right-click on your vector layer and turn off the Editing mode by clickin on `Toggle Editing` -> `Save`. Check your result by looking at the Attribute Table again: You now have 7 features in your table.
+
+In the map canvas you can already see your handdrawn polygon. In order to save it, you should now right-click on your vector layer and turn off the Editing mode by clicking on `Toggle Editing` -> `Save`. Check your result by looking at the Attribute Table again: You now have 7 features in your table.
 
 
 
- ```{figure} /fig/en_SMT_ex4_Attrbute_Table_new.PNG
+```{figure} /fig/en_SMT_ex4_Attrbute_Table_new.PNG
 ---
-height: 300px
-name: T
+height: 400px
+name: SMT Attribte table with added polygon
 align: center
 ---
 Attribute Table with added polygon 
@@ -205,7 +206,7 @@ The whole process of Digitalisation is explained in detail [here](https://giscie
 
 2. Add a property/column to the Attribute Table
 
-Normally you know the meaning of the markings in your Sketch Map. We will now learn how to add them to your vector layer. In our example we assume we know that black and blue colors were used to mark past flood extents and red was used to mark critical infrastructures. We want to replicate this.
+Normally you know the meaning of the markings in your Sketch Map. We will now learn how to add them to your vector layer. In our example we assume we know that black and blue colors were used to mark past flood extents and red was used to mark critical infrastructures. We want to replicate this:
 - Right-click on your vector layer and navigate to `Open Attribute Table` and click on it.
 - In the upper left corner click on ![](/fig/mActionToggleEditing.png) to toggle editing mode
 - click on ![](/fig/mActionNewAttribute.png) to add a new field to the data source
@@ -214,21 +215,21 @@ Normally you know the meaning of the markings in your Sketch Map. We will now le
 ```{figure} /fig/en_SMT_ex4_addfield.PNG
 ---
 height: 400px
-name: T
+name: SMT Attribute table add text field
 align: center
 ---
-Attribute Add field
+Adding a new field to the attribute table
 ```
 
 - by clicking on each field you can now enter the respective descriptions to the colors:
 
 ```{figure} /fig/en_SMT_ex4_addfield_description.PNG
- ---
-height: 90px
-name: T
+---
+height: 400px
+name: SMT attribute add field description
 align: center
 ---
-Add field description
+Adding descriptions to the fields
 ```
 
 - Save by clicking on ![](/fig/mActionToggleEditing.png) once more -> `Save`
@@ -244,36 +245,35 @@ We can customize the symbology of our vectory layer by right-clicking on it in t
 
 First of all we want to assign different colors for different features:
 
-In the topmost drop-down menu, choose `Categorized`. As Value choose "Description" and then click on the bottom left on `Classify`. We are now able to choose colors depending on the value in the column "Descriptioin". By doble-clicking on the colored box in your window next to your value and Legend descriptions the `Symbol Selector` will open in a new window where you can choose the color of your preference by clicking on the drop-down arrow next to "Color".
+In the topmost drop-down menu, choose `Categorized`. As Value choose "Description" and then click on the bottom left on `Classify`. We are now able to choose colors depending on the value in the column "Description". By double-clicking on the colored box in your window next to your value and Legend descriptions the `Symbol Selector` will open in a new window where you can choose the color of your preference by clicking on the drop-down arrow next to "Color".
 Right below you can also ajust the opcaty level of your feature.
 
 
 ```{figure} /fig/en_SMT_ex4_dig_categorize.PNG
 ---
 height: 400px
-name: T
+name: SMT adjusting symbology
 align: center
 ---
-Symbology 
+adjusting the symbology 
 ```
 
 
-In the `Symbol Selector`, you can also in the upper window click on `Simple line` and change the `Symbol Layer Type`. In tzis example we would like to symbolize the critical Infrastructure with red outlines, so we choose "Outline: Simple Line". Juts below we can adjust the color, stroke witdh stroke line type, etc. You can find more information about the visualization of vector data [here](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_visualisation_wiki.html#visualisation-of-vector-data).
+In the `Symbol Selector`, you can also click on `Simple line` in the upper window and change the `Symbol Layer Type`. In this example we would like to symbolize the critical Infrastructure with red outlines, so we choose "Outline: Simple Line". Just below we can adjust the color, stroke witdh, stroke line type, etc. You can find more information about the visualization of vector data [here](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_visualisation_wiki.html#visualisation-of-vector-data).
 
 
- ```{figure} /fig/en_SMT_ex4_dig_Symbology.PNG
- ---
+```{figure} /fig/en_SMT_ex4_dig_Symbology.PNG
+---
 height: 400px
-name: T
+name: SMT symbol selector
 align: center
 ---
-Symbol Selector 
+Using the symbol selector
 ```
 
 
 2. __Make a printable Map__
 
-FEHLT NOCH: UNTEN ANPASSEN
 
 1. Open a new print layout by clicking on `Project` -> `New Print Layout` -> enter the name of your current Project e.g "Ahrtal Flooding Sketch Map Tool". A new window will open with a blank canvas and a different set of tools. This is the print layout designer.
 
@@ -282,7 +282,7 @@ FEHLT NOCH: UNTEN ANPASSEN
 4. Let's add a title: 
     - Click on the ![Add text icon](/fig/30.30.2_print_layout_add_text.png) (`Add text`)
     - Drag a rectangle on the canvas
-    - In the items properties window on the right, you will find a text box with the text "Lorem ipsum". Here you can enter your map title (e.g.: Map of Ghana with roads and hospitals).
+    - In the items properties window on the right, you will find a text box with the text "Lorem ipsum". Here you can enter your map title (e.g.: Flood Extent and Critical Infrastructure).
     - Adjust the font size: Click on the __Font__ dropdown menu and adjust the font size for a title (25p or more). Adjust the text box if necessary.
 5. Let's add a legend:
     - Click on the ![Add legend icon](/fig/30.30.2_print_layout_add_legend.png) (`Add legend`). 
@@ -301,21 +301,18 @@ FEHLT NOCH: UNTEN ANPASSEN
 
 The finished map could look something like this:
 
-```{figure} ../../fig/en_30.30.2_create_print_layout.png
+```{figure} ../../fig/SMT_Ex_4_Example_Map_Result.png
 ---
 width: 700px
-name: Create Print Layout
+name: Digitized SMT Map Example
 ---
-Create a new Print Layout
+Example of a finished map using the Sketch Map Tool
 ```
 
 
 
-
-[Print Layout](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
-
-In the [Map Making Wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_map_making_wiki.html#map-making-wiki) you can find all the information about making a printable map.
-
+You can find Videos along with all the necessary information about making printable maps and the print layout composer in the [Print Layout Chapter](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout), the [Symbology Chapter](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_I.html), and in the [Map Making Wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_map_making_wiki.html#map-making-wiki)
+ 
 :::
 
 ## Exercise B: Basic visulization of Sketch Map Tool outputs in UMAP
