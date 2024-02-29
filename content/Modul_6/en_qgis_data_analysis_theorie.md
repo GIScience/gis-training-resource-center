@@ -347,7 +347,7 @@ Red = Pivot field; Blue = Input field; Green = Values field
 
 >insert links
 
-Spatial interpolation uses point data to estimate values at other unknown points. This is extremely useful for spatial pheonomena that are [continuous](link), such as rainfall or temperature. For example, you have point data of the temperatures at weather stations, but you want to estimate the temperatures in between these points. 
+Spatial interpolation uses point data to estimate values at other unknown points. This is extremely useful for spatial pheonomena that are [continuous](link), such as rainfall or temperature. For example, you have point data of the temperatures at weather stations, but you want to estimate the temperatures in between these points. Spatial Interpolation can estimate the temperature in between those points.
 
 ### Spline Interpolation
 
