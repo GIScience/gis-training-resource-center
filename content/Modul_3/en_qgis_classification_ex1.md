@@ -16,6 +16,7 @@ This exercise aims to create an overview map of the distribition of food insecur
 * [Digitization- Point data](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#add-geometries-to-a-layer)
 
 
+
 ### Data
 Download all datasets **DATA LINK** and save the folder on your computer. Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects. Under "data > input" you find the following files:
 - `Sierra_leone_foodinsecurity_2015.shp` (Polygon)
