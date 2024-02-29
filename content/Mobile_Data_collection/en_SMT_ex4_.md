@@ -280,20 +280,20 @@ FEHLT NOCH: UNTEN ANPASSEN
 - Insert a new map by clicking on the ![New Map Icon](/fig/30.30.2_print_layout_insert_map_icon.png) ("Add Map") on the left toolbar, and drawing a rectangle on the print canvas. [Video](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html#adding-a-new-map)
 2. Move and position the map so that the entire country is visible at a reasonable scale. 
 4. Let's add a title: 
-    - Click on the ![Add text icon](/fig/30.30.2_print_layout_add_text.png) ("Add text")
+    - Click on the ![Add text icon](/fig/30.30.2_print_layout_add_text.png) (`Add text`)
     - Drag a rectangle on the canvas
     - In the items properties window on the right, you will find a text box with the text "Lorem ipsum". Here you can enter your map title (e.g.: Map of Ghana with roads and hospitals).
     - Adjust the font size: Click on the __Font__ dropdown menu and adjust the font size for a title (25p or more). Adjust the text box if necessary.
 5. Let's add a legend:
-    - Click on the ![Add legend icon](/fig/30.30.2_print_layout_add_legend.png) ("Add legend"). 
+    - Click on the ![Add legend icon](/fig/30.30.2_print_layout_add_legend.png) (`Add legend`). 
     - Navigate to the __Item Properties__ panel on the right. 
     - Scroll down a bit and check turn off `Auto Update` by unchecking the check box. Now you can freely edit every item on the legend
-    - Adjust the legend by removing unecessary layers (which are not seen on the map) and rename the layer in the legend by clicking on ![Edit Icon](/fig/30.30.2_print_layout_legend_edit.png) below the legend entries.
+    - Adjust the legend by removing unecessary layers (which are not seen on the map) and rename the layer in the legend by clicking on ![Edit Icon](/fig/30.30.2_print_layout_legend_edit.png) (`Edit selected item properties`) below the legend entries.
 6. Now, let's add a scale bar:
-    - Click on the ![Add Scale bar icon](/fig/30.30.2_add_scale_bar.png) ("Add Scale bar")
+    - Click on the ![Add Scale bar icon](/fig/30.30.2_add_scale_bar.png) (`Add Scale bar`)
     - Draw a rectangle on the map and position the scale bar on the edge of the map. You can adjust the scale bar units (meters, kilometers, ...), the fixed segment width (50 km, 75 km, 100 km, ...) and the number of segments (to the right).
 7. Let's add North arrow:
-    - Click on the ![Add North Arrow Icon](/fig/30.30.2_print_layout_add_orientation.png) ("Add North Arrow"). 
+    - Click on the ![Add North Arrow Icon](/fig/30.30.2_print_layout_add_orientation.png) (`Add North Arrow`). 
     - Drag a rectangle on the print layout. Adjust the size and location of the north arrow. You can also change the icon in the item properties.
 8. Add a text box with additional information, sources, the author (you), and date of creation.
 9. When you are happy with your print layout. You can export it as a PDF. You can save it in the project folder under "results".
