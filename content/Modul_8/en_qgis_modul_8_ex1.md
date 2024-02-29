@@ -69,7 +69,7 @@ align: center
 6. Now we want to explore the different ways of visualizing a raster and find the optimal visualization for our DEM. Open the layer styling panel by riht clicking on the top toolbar and ticking the box "Layer Styling Panel". The panel very similar to the one dislayed when visualizing Vectordata.
     1. Open the visualzation mode dropdown menu. There are six visulisation modes you can choose from. Try each of them and take a guess which one would be suitable. You can find mor information about the visualization modes **here**
 
- ```{figure} /fig/mod8_ex1_visualisationmodes.png
+```{figure} /fig/mod8_ex1_visualisationmodes.png
 ---
 width: 400px
 name: 
@@ -77,9 +77,10 @@ align: center
 ---
 ```
 
-    2. Choose "Singleband Pseudocolour" and selct a colour palette you like just like with vector visualization. Under the classification window you can choose from three classification modes (Continous, Equal interval, Quantile) (**Wiki article**) for the visual classification of the raster. Which one seems to suit the diplay of elevation the best?
+2. Choose "Singleband Pseudocolour" and selct a colour palette you like just like with vector visualization. Under the classification window you can choose from three classification modes (Continous, Equal interval, Quantile) (**Wiki article**) for the visual classification of the raster. Which one seems to suit the diplay of elevation the best?
 
-    3. Finally you can choose between the interpolation methods "Linear" (smooth display) and "Discrete" (display in distinct classes). Choose one of them. If you choose "Discrete" you can alter the number of Classes with the "Classes" dropdown menu.
+3. Finally you can choose between the interpolation methods "Linear" (smooth display) and "Discrete" (display in distinct classes). Choose one of them. If you choose "Discrete" you can alter the number of Classes with the "Classes" dropdown menu.
+
 
  ```{figure} /fig/mod8_ex1_symbologypanel.png
 ---
@@ -89,7 +90,7 @@ align: center
 ---
 ```
 
-    4. your DEM could look something like this now (colour palette "Spectral" and interpolation "Linear")
+4. your DEM could look something like this now (colour palette "Spectral" and interpolation "Linear")
 
  ```{figure} /fig/mod8_ex1_deml.png
 ---
@@ -99,7 +100,7 @@ align: center
 ---
 ```
 
-  7. Now we want to have a look at a different raster: Make the "Pakistan_pop_density_1km" layer visible. This raster stores values of population density per km in 1km x 1km cells, so effectively the approximate population count per area. The initial visualisation seems not to display the information of the different population desities very well as it is mostly black. We will fix this with the following steps:
+7. Now we want to have a look at a different raster: Make the "Pakistan_pop_density_1km" layer visible. This raster stores values of population density per km in 1km x 1km cells, so effectively the approximate population count per area. The initial visualisation seems not to display the information of the different population desities very well as it is mostly black. We will fix this with the following steps:
     1. Have a look of the value range of the raster in the raster properties and check some values in different areas with the ![](/fig/mod8_ex1_informationtool.png) tool. 
     2. The raster covers a very large value range from around 0,2 - 31300. This is the case because of the disparity in population between very remote areas and extremely densly populated megacities both being present in pakistan. To have a closer look at the value distribution among the cells of the raster generate a **histogramm link** in the layer styling panel by selcting the ![](/fig/mod8_ex1_histogrammicon.png) icon on the left and click on "compute histogramm". Have a closer Look at the histogramm by zoomin in to the range of "Pixel Value" = 5000 and "Frequency" = 2000. A few things are visible:
       - The Raster values are extremely tailed with very few cells higher than 2000 but extent into ay higher ranges.
@@ -118,6 +119,6 @@ align: center
 **HILLSHADE BILD**
 
 
-```{Nice to know}
+```{Note}
 One advantage of rasterdata over vectordata is that that they are better suited for deriving further data sets such as a hillshade raster. There are a multitude of tools in QGIS for the derivation of topographical paramters such as slope or aspect, hydrological paramters such as stream networks or flow accumulaton and varius different indices.
 ```
