@@ -61,7 +61,6 @@ If you expieriences any problems during your use of the [Sketch Map Tool](https:
 
 
 
-
 ### Exercise: Heat Map Visualization: Past Flood Delineation
 
 ### Scenario and Background
@@ -196,17 +195,42 @@ Based on the sum of the rasters we have now created just one raster that will ha
 #### 6. Visualization
 
 In order to visualize the result right-click on your layer and navigate to `Properties` -> `Symbology` 
+In the `Band Rendering` section you can for example choose as `Render Type` "Singleband pseudocolor" and next to `Color ramp` choose a color ramp of your choice.
+
+In the `Layer Rendering` section you can adapt your `Blending mode`. Play around with the options and the `Brightness` and `Contrast` section in order to find a good match in order to visualize well your findings.
+Please revise [XX Chapter]() in order to lean more about options you have to visualize your raster data.
+
+```{figure} /fig/en_SMT_ex5_raster_symbology.PNG
+---
+height: 500px
+name: T
+align: center
+---
+Raster Symbology
+```
+
+You will realize that you 0 Values (=no flooding) are still colored, but they are not of interest for us since we are interested in visualizing flooing polygons. In order to make them transparent you can navigate in `Properties` -> `Transparency` where you'll see an option for `Transparent pixel list`. Click on `+` to specify the pixels values you want to be transparent. In our case, we want al 0 values to be 100% transparent. Once you've set the transparency settings as desired, click `Apply` to see the changes in the map canvas. If you're satisfied, click `OK` to close the Layer Properties dialog.
 
 
+```{figure} /fig/en_SMT_ex5_raster_transparency.PNG
+---
+height: 500px
+name: T
+align: center
+---
+Raster Transparency
+```
 
+Your resulting heatmap yould look something like this, where the darker the areas the more people/sketch maps indicated flooded areas:
 
+```{figure} /fig/en_SMT_ex5_heatmap.PNG
+---
+height: 500px
+name: T
+align: center
+---
+Raster Transparency
+```
 
-
-
-
-## Optional or for near future: Connection of Sketch Map Tool and in field Surveys (f.ex. Kobo)
-
-vielleicht noch bessere Ideen?
-
-
+You are not ready to create a presentable printable map. If you dont know how to it, you are welcome to look at our tutorila [here](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_map_making_wiki.html?highlight=print+layout#map-making-wiki). 
 
