@@ -50,7 +50,7 @@ __Exercise B__: 30 min
 #### Available Data
 
 - Download the data for this exercise [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_4.zip) and unzip the folder
-- In the data subfolder (`\Sketch_Map_Tool_Exercise_4\data\input`), you will find the data to start the exercise
+- In the data subfolder (`\data\input`), you will find the data you need to start the exercise.
 
 :::
 ::::
@@ -96,12 +96,14 @@ Decide together with the responsible working group which GIS system is prefered 
 
 ## Step-by step introduction for participants 
 
->link where you can download this part as a short pdf to hand it to participants
+>link where you can download this part as a short pdf to hand it to participants  
+
+
 
 ::::{grid} 2
 
 :::{grid-item-card} Exercise A
-:link: ## Exercise A: Exploration & basic visualization of Sketch Map Tool outputs in QGIS](https://giscience.github.io/gis-training-resource-center/content/Mobile_Data_collection/en_SMT_ex4_.html#exercise-a-exploration-basic-visualization-of-sketch-map-tool-outputs-in-qgis)
+:link: (https://giscience.github.io/gis-training-resource-center/content/Mobile_Data_collection/en_SMT_ex4_.html#exercise-a-exploration-basic-visualization-of-sketch-map-tool-outputs-in-qgis)
 
 __Click here to start exercise A__
 
