@@ -25,7 +25,7 @@ This exercise can be used in online and presence training and is focused on an h
 
 - Exercise builds on prior-knowledge of Sketch Map Tool. Make sure [Exercise 1](https://giscience.github.io/gis-training-resource-center/content/Mobile_Data_collection/en_SMT_ex1_.html#sketch-map-tool-exercise-1-workflow-exercise) has been done before or knowlege on the background on Sketch Map Tool is there.
 
-- GIS Beginners-level: no specific knowledge about QGIS /uMAP required
+- GIS Beginners-level: no specific knowledge about QGIS/uMAP required
 
 :::
 ::::
@@ -36,21 +36,21 @@ This exercise can be used in online and presence training and is focused on an h
 
 #### Phase of participatory/community mapping 
 
-- analysing participatory mapping
+- Analysing participatory mapping
 
 #### Estimated time demand for the exercise.
 
-Exercise A: with absolute beginners 2 hours  
+__Exercise A__: with absolute beginners approx. 2 hours  
 
-Exercise B: 30 min
+__Exercise B__: 30 min
 
 :::
 
 :::{grid-item-card}
 #### Available Data
 
-- Download the data for this exercise [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_4.zip)
-- unzip the file and choose your saving location
+- Download the data for this exercise [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_4.zip) and unzip the folder
+- In the data subfolder (`\Sketch_Map_Tool_Exercise_4\data\input`), you will find the data to start the exercise
 
 :::
 ::::
@@ -68,14 +68,14 @@ Decide together with the responsible working group which GIS system is prefered 
 - QGIS installed on the computer
 - Take a look and make yourself familiar on the provided material for the exercise and the Sketch Map Tool in general. 
 
-```{Alternatives}  
+```{Note}  
 - If you like to skip parts of the workflow, make sure you have alternative material (like preprinted, or already marked Sketch maps) prepared.
 - If you would like to adapt this exercise to your specific use case, create your own case-description. 
 ```
 
 
 ### Available Material
-* Introduction Slides about the Sketch Map Tool LINK
+* [Introduction Slides](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/EVCA-Sketch_Map_Tool.pptx) about the Sketch Map Tool
 * Just the created map for (pre-printing)
 * Pre-marked and photographed map
 * Geodata of the results
@@ -91,7 +91,7 @@ Decide together with the responsible working group which GIS system is prefered 
 - Take some time at the end to wrap up and that several people present their result map
 - Discuss Benefits of showing results as a map
 - Time to for Open questions.
-::::
+:::
 
 
 ## Step-by step introduction for participants 
@@ -109,6 +109,7 @@ __Click here to start exercise A__
 :::
 
 :::{grid-item-card}
+
 :link: ## Exercise B: Basic visualization of Sketch Map Tool outputs in UMAP
 :link-type: ref
 
