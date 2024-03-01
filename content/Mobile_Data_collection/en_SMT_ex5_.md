@@ -6,18 +6,44 @@
 
 
 ## Characteristics of the exercise 
+::::{grid} 2
+:::{grid-item-card}
 #### Aim of this exercise:
 Learn how to analyze your Sketch Map Tool Outputs by creating a heatmap
 
-#### Phase of participatory /community mapping 
-analysing participatory mapping results
+#### Type of trainings exercise:
+This exercise can be used in online and presence training and is focused on an hands-on experience with QGIS spatial analysis tools.
+
+:::
+
+:::{grid-item-card}
 
 #### Focus group (GIS-Knowlege Level)
 Medium-Advanced level (participants have worked with QGIS before)
 
-#### Type of trainings exercise:
-This exercise can be used in online and presence training and is focused on an hands-on experience with QGIS spatial analysis tools.
+#### Phase of participatory /community mapping 
+analysing participatory mapping results
+:::
+::::
+
+::::{grid} 2
+
+:::{grid-item-card}
+
 #### Estimated time demand for the exercise.
+
+1 hour
+
+:::
+
+:::{grid-item-card}
+### Available data
+- Download the data for this exercise [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_5.zip) and unzip the folder
+- In the data subfolder (`\data\input`), you will find the data you need to start the exercise.
+
+:::
+::::
+
 
 
 ## Instructions for the trainers 
@@ -28,13 +54,8 @@ This exercise can be used in online and presence training and is focused on an h
 - QGIS installed on the computer
 - Take a look and make yourself familiar on the provided material for the exercise and the Sketch Map Tool in general. 
 
-```{Alternatives}  
-- If you like to skip parts of the workflow, make sure you have alternative material (like preprinted, or already marked Sketch maps) prepared.
-- If you like to adapt this exercise to your specific use case, create your own case-description. 
-```
 
-
-### Available Material: needs to be linked directly 
+### Available Material: 
 •	Introduction Slides about the Sketch Map Tool available
 •	5 Pre-marked and photographed maps to be use as input for Sketch Map Tool for Exercise B
 o	Geodata of the results and some pictures 
@@ -54,7 +75,7 @@ o	Geodata of the results and some pictures
 
 ## Step-by step introduction for participants 
 
-link where you can download this part as a short pdf to hand it to participants
+>comment:link where you can download this part as a short pdf to hand it to participants
 
 If you expieriences any problems during your use of the [Sketch Map Tool](https://sketch-map-tool.heigit.org/) please take a look at the [Help page](https://sketch-map-tool.heigit.org/help).
 ::::

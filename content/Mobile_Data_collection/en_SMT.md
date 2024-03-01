@@ -80,11 +80,10 @@ For more information:
 
 As part of the efforts to digitize the EVCA Process, we prepared a customized training package on the Sketch Map Tool for digitalization of community mapping, that can be used by trainers throughout the regional EVCA Training of Trainers workshops.
 
-You can download the presentation [here]().
+You can download the presentation [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/EVCA-Sketch_Map_Tool.pptx).
 
 
 
-? Add preseantion SMT in EVCA-Training
 
 ? Add Faktsheet or just the link to Sketch Map Tool – Mapping Innovation in the Humanitarian System
 ___
