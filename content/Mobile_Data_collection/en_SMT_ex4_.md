@@ -104,14 +104,17 @@ Decide together with the responsible working group which GIS system is prefered 
 :link: ## Exercise A: Exploration & basic visualization of Sketch Map Tool outputs in QGIS
 :link-type: ref
 
+__Click here to start exercise A__
+
 :::
 
 :::{grid-item-card}
-:link: ## Exercise B: Basic visulization of Sketch Map Tool outputs in UMAP
+:link: ## Exercise B: Basic visualization of Sketch Map Tool outputs in UMAP
 :link-type: ref
 
-:::
+__Click here to start exercise B__
 
+:::
 ::::
 
 
@@ -430,7 +433,7 @@ Editing the map properties
 
 ```{figure} /fig/en_SMT_ex4_UMAP_Data_Loaded.PNG
 ---
-height: 100px
+height: 400px
 name: UMAP Data Loaded
 align: center
 ---
@@ -467,7 +470,7 @@ Click on `Manage Layers`![](/fig/en_SMT_ex4_UMAP_layers.PNG) to open your layers
 
 ```{figure} /fig/en_SMT_ex4_UMAP_Managelayers.PNG
 ---
-height: 100px
+height: 200px
 name: Umap Manage layer Interface
 align: center
 ---
@@ -484,13 +487,13 @@ Sketch Map Vector Output always have this same attribute table structure.
 
 ```{figure} /fig/en_SMT_ex4_UMAP_AttributeTable.PNG
 ---
-width: 350px
+width: 600px
 name: SMT Ex4 Attribute Table
 ---
 Attribute Table in UMAP
 ```
 
-2. Custmize your visualization
+2. Customize your visualization
 
 Now we want to display the criticial infrastructure in red and the past flood extents in blue. For this we first have to create a group for each:
 
@@ -536,7 +539,7 @@ Toggle editing
 
 ```{figure} /fig/en_SMT_ex4_UMAP_assign_layer.PNG
 ---
-width: 350px
+width: 500px
 name: UMAP assign features to layer
 align: center
 ---
@@ -549,7 +552,7 @@ Assign features to layers
 
 ```{figure} /fig/en_SMT_ex4_UMAP_Shape_Properties.PNG
 ---
-width: 300px
+width: 450px
 name: UMAP Shape properties
 align: center
 ---
@@ -576,7 +579,7 @@ In order to publish the map, you can click on `Share and download`![](/fig/en_SM
 
 ```{figure} /fig/en_SMT_ex4_UMAP_sharelast.PNG
 ---
-height: 100px
+height: 400px
 name: UMAP Share
 align: center
 ---
