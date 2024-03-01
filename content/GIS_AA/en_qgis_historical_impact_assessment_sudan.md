@@ -963,14 +963,18 @@ Now you can just copy the whole table, and place it in a new worksheet. Make sur
 
 #### How to further analyse and visualise data in QGIS
 
-1. Import the previously created CSV-file into QGIS. Open the `Data Source Manager` and select the `Delimited Text` section. Here you can input your CSV-file and depending on the `File Format` you need to define Costum delimiters or you can just select CSV. Always check the Sample Data output at the bottom to see if the import is working as expected. You propably will also need to check the `Record and Fields Options` and specify if your first record is a header or already data. Lastly, it is important to specify the `Geometry Definition`, were you can just select `No geometry`. An example will be shown in {numref}`HIA_csv_import`.
+1. Import the previously created CSV file into QGIS. Open the `Data Source Manager` and select the `Delimited Text` section. Here you can input your CSV-file and depending on the `File Format` you need to define Costum delimiters or you can just select CSV. Always check the Sample Data output at the bottom to see if the import is working as expected. You propably will also need to check the `Record and Fields Options` and specify if your first record is a header or already data. Lastly, it is important to specify the `Geometry Definition`, were you can just select `No geometry`. An example will be shown in {numref}`HIA_csv_import`.
+
+```{Note}
+To ensure easy data import into QGIS, export the filtered long table data as a CSV file.
+```
 
 ```{figure} /fig/en_HIA_csv_import.PNG
 ---
 height: 500px
 name: HIA_csv_import
 ---
-Import of the CSV-data
+Import of the CSV data
 ```
 
 2. For this example we will use geodata that contains information about the states of Sudan. Make sure that your geodata has the admin_1_PCODE column that will be used for joining the table data with the geodata. We will use the tool `Join attributes by field value`. And select the corresponding columns. This is shown in {numref}`HIA_join` below. 
@@ -980,15 +984,111 @@ Import of the CSV-data
 height: 500px
 name: HIA_join
 ---
-Join the table information onto geodata
+Join the table information onto the geodata
 ```
 
 The information can now be visualized on a spatial scale and maps can be created to transport important information. An example could be to visualize the total affected population for the year of 2020 on state level. But we can also visualize more specific impact types such as damaged schools or damaged sanitation. This is how such a map could look like.
 
-```{figure} /fig/en_06_2023_Map_coping_sudan.png
+```{figure} /fig/en_HIA_map_houses.png
 ---
 height: 500px
-name: 06_2023_Map_coping_sudan
+name: HIA_map_houses
+---
+Example map
+```
+
+## Other exemplary analyses
+
+### Flood events in Sudanese states for all the recorded years
+In this section we want to analyse and visualise all recorded flooding events for all the Sudanese state. With our filter for the Impact-Type we derive information for the years 2003 until 2021. 
+
+1. In the first step we will create a new `pivot table` and store it in a new sheet. Here we will specify the following:
+  - Columns: Impact_Type
+  - Rows: admin_1_PCODE
+  - Values: Count of impact_quality
+
+2. Now we want to filter the columns labels to the following impact types:
+  - Event
+  - Flash-flood
+  - Flood
+  - Flooding
+
+We also want to include the Event and Flash-floods as these types can also be associated with flooding events as a result of heavy rainfall, seasonal rainfall, etc. 
+We also want to make sure that we rename the column containing the sum of the flooding events to `Sum flood events`.
+
+3. Now we export this excel sheet as a CSV file and import it into QGIS. We will open the `Data Source Manager` and select the `Delimited Text` section. Here we need to do the following specifications ({numref}`HIA_import_csv_floods`).
+
+```{Note}
+Always check the Sample Data window to see what your data looks like. These specifications may not always be applicable to your data, and you may need to make minor adjustments.
+```
+
+```{figure} /fig/en_HIA_import_csv_floods.png
+---
+height: 500px
+name: HIA_import_csv_floods
+---
+Import of the CSV data
+```
+
+4. The next step follows the same logic as step 2 in the previous example. We will use geodata that contains information about the states of Sudan and join them with the imported CSV data. We will use the `Join attributes by field value` tool and select the ADM1_PCODE as the table field used for the join. An example is shown in {numref}`HIA_join_floods`.
+
+```{figure} /fig/en_HIA_join_floods.png
+---
+height: 500px
+name: HIA_join_floods
+---
+Join the table information onto the geodata
+```
+
+5. Now we can visualise our results using `Graduated` and selecting the corresponding column of the attribute table `Sum flood events`. Select an appropriate color scheme and start creating your map. Your final product could look like {numref}`HIA_map_floods`.
+
+```{figure} /fig/en_HIA_map_floods.png
+---
+height: 500px
+name: HIA_map_floods
+---
+Example map
+```
+
+We can expand this analysis by also including the affected population an calculate the average number of affected population per flood event on state level.
+
+6. We continue with creating a new `pivot table`. We will do the following specifications:
+  - Columns: Impact_Type
+  - Rows: admin_1_PCODE
+  - Values: Sum of Impact_quantity
+
+Again we will apply a filter to the column labels and select the impact type `Pop_affected`. Also make sure to rename the Grand total to `Sum affected pop`. Export the subset as a CSV file.
+
+7. The next steps in QGIS will follow the same logic as before. Import the data and join the table onto your output from the previous task. This will look the following {numref}`HIA_join_aff_pop`.
+
+```{figure} /fig/en_HIA_join_aff_pop.png
+---
+height: 500px
+name: HIA_join_aff_pop
+---
+Join the table information onto the geodata with the flood information.
+```
+
+8. Now we will calculate the the average number of affected population per flood event on state level. To do so, we need to activate the editing mode for our geodata clicking on this symbol ![](/fig/mActionToggleEditing.png). In the next step we will open the `Field calculator` ![](/fig/mActionCalculateField.png). Here we will calculate the sum of the affected population divided by the number of flood events for each state. Your calculation will look like {numref}`HIA_field_calculator`.
+
+```{figure} /fig/en_HIA_field_calculator.png
+---
+height: 500px
+name: HIA_field_calculator
+---
+Calculate the average number of affected population per flood event on state level.
+```
+
+9. Visualise the results and create a map.
+
+```{Note}
+Two states have NULL values and will not appear when styling the data. The original admin1 Sudan dataset can be used as a mask with the correct styling to include them in our map. This way, we can display the state boundaries without adding any new content.
+```
+
+```{figure} /fig/en_HIA_map_affected_pop.png
+---
+height: 500px
+name: HIA_map_affected_pop
 ---
 Example map
 ```
