@@ -6,16 +6,27 @@
 
 
 ## Characteristics of the exercise 
+
+::::{grid} 2
+:::{grid-item-card}
+
 #### Aim of this exercise:
 Learn how you can visualize your Sketch Map Tool Outputs in either [QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_installation_wiki.html#qgis-installation) or [uMAP](https://umap.openstreetmap.fr/en/).
 
-#### Phase of participatory /community mapping 
-analysing participatory mapping
+:::
+
+:::{grid-item-card}
+
 #### Focus group (GIS-Knowlege Level)
 
 - Exercise builds on prior-knowledge of Sketch Map Tool. Make sure [Exercise 1](https://giscience.github.io/gis-training-resource-center/content/Mobile_Data_collection/en_SMT_ex1_.html#sketch-map-tool-exercise-1-workflow-exercise) has been done before or knowlege on the background on Sketch Map Tool is there.
 
 - GIS Beginners-level: no specific knowledge about QGIS /uMAP required
+
+:::
+::::
+#### Phase of participatory /community mapping 
+analysing participatory mapping
 
 #### Type of trainings exercise:
 This exercise can be used in online and presence training and is focused on an hands-on experience with the basic of QGIS or UMAP.
