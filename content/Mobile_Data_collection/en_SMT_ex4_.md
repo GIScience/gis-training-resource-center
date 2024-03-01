@@ -34,9 +34,6 @@ This exercise can be used in online and presence training and is focused on an h
 
 :::{grid-item-card}
 
-#### Phase of participatory/community mapping 
-
-- Analysing participatory mapping
 
 #### Estimated time demand for the exercise.
 
@@ -58,6 +55,10 @@ __Exercise B__: 30 min
 ```{Tip}
 Decide together with the responsible working group which GIS system is prefered and decide on one. There is no neccesity to learn/use both ways. Generally QGIS will give you more opportunities for visualization and analysis of the results, but if a simple and quick visualization without installation of software packages is desired, UMAP might be an easy solution.
 ```
+
+#### Phase of participatory/community mapping 
+
+- Analysing participatory mapping
 
 ## Instructions for the trainers 
 
@@ -96,9 +97,9 @@ Decide together with the responsible working group which GIS system is prefered 
 
 ## Step-by step introduction for participants 
 
->link where you can download this part as a short pdf to hand it to participants  
+>comment: link where you can download this part as a short pdf to hand it to participants  
 
-
+__You can choose wether you want to do the exercise with QGIS (Exercise A) or with uMAP (Exercise B)__. An internet connection is required to work with uMAP.
 
 ::::{grid} 2
 
