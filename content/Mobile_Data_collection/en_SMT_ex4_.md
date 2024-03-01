@@ -103,7 +103,7 @@ Decide together with the responsible working group which GIS system is prefered 
 ::::{grid} 2
 
 :::{grid-item-card}
-:link: (https://giscience.github.io/gis-training-resource-center/content/Mobile_Data_collection/en_SMT_ex4_.html#exercise-a-exploration-basic-visualization-of-sketch-map-tool-outputs-in-qgis)
+:link: https://giscience.github.io/gis-training-resource-center/content/Mobile_Data_collection/en_SMT_ex4_.html#exercise-a-exploration-basic-visualization-of-sketch-map-tool-outputs-in-qgis
 
 __Click here to start exercise A__
 
