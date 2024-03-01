@@ -13,6 +13,10 @@
 #### Aim of this exercise:
 Learn how you can visualize your Sketch Map Tool Outputs in either [QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_installation_wiki.html#qgis-installation) or [uMAP](https://umap.openstreetmap.fr/en/).
 
+#### Type of trainings exercise:
+This exercise can be used in online and presence training and is focused on an hands-on experience with the basic of QGIS or UMAP.
+
+
 :::
 
 :::{grid-item-card}
@@ -25,14 +29,29 @@ Learn how you can visualize your Sketch Map Tool Outputs in either [QGIS](https:
 
 :::
 ::::
-#### Phase of participatory /community mapping 
+
+::::{grid} 2
+
+:::{grid-item-card}
+
+#### Phase of participatory/community mapping 
 analysing participatory mapping
 
-#### Type of trainings exercise:
-This exercise can be used in online and presence training and is focused on an hands-on experience with the basic of QGIS or UMAP.
 #### Estimated time demand for the exercise.
-Exercise A: with absolute beginners 2 hours
+Exercise A: with absolute beginners 2 hours  
+
 Exercise B: 30 min
+
+:::
+
+:::{grid-item-card}
+#### Available Data
+
+- Download the data for this exercise [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_4.zip)
+- unzip the file and choose your saving location
+
+:::
+::::
 
 ```{Tip}
 Decide together with the responsible working group which GIS system is prefered and decide on one. There is no neccesity to learn/use both ways. Generally QGIS will give you more opportunities for visualization and analysis of the results, but if a simple and quick visualization without installation of software packages is desired, UMAP might be an easy solution.
@@ -75,6 +94,23 @@ Decide together with the responsible working group which GIS system is prefered 
 ## Step-by step introduction for participants 
 
 link where you can download this part as a short pdf to hand it to participants
+
+::::{grid} 2
+
+:::{grid-item-card} Exercise A
+:link: ## Exercise A: Exploration & basic visualization of Sketch Map Tool outputs in QGIS
+:link-type: ref
+
+:::
+
+:::{grid-item-card}
+:link: ## Exercise B: Basic visulization of Sketch Map Tool outputs in UMAP
+:link-type: ref
+
+:::
+
+::::
+
 
 If you expieriences any problems during your use of the [Sketch Map Tool](https://sketch-map-tool.heigit.org/) please take a look at the [Help page](https://sketch-map-tool.heigit.org/help).
 
