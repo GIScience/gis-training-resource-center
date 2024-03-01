@@ -395,7 +395,7 @@ It makes sense to list some of the basic impact types we are interested in or wh
 The HeiGIT team used 75 different impact types. You can find the whole list below.
 
 
-```{dropdown} Impact taypes used in Sudan HIA
+```{dropdown} Impact types used in Sudan HIA
 | Impact Type                               | Description                                            |
 |-------------------------------------------|--------------------------------------------------------|
 | Affected                                  |                                                        |
@@ -474,3 +474,239 @@ The HeiGIT team used 75 different impact types. You can find the whole list belo
 | WASH_Water_station_source_damaged_totally |                                                        |
 | WASH_watersource_contaminated            |                                                        |
 ```
+### Task 5: Data compiling
+Finally, we can start to compile the data. Remember we are using the key + value concept to create a long table. Every piece of information gets one row! 
+1.	Find a relevant information in a dataset
+2.	Date: 
+    1. `Year`: This information is mandatory! Check to which year the information is revering.
+    2. `Start_Date` & `End_Date`: If the information on the timeframe of the flood is available, place the start and end date in these columns.
+    This information should be listed in the Flood Events List.
+    3. `Date`: If exact information of the date of the __impact__ is available, place it here. 
+3.	Source_ID: Write the ID in the `Dataset_ID` column.
+4.	Location: 
+    1. `admin_level`: Check t which admin level the information is revering to e.g. state, locality, town or camp.
+    2. `admin_1`: This information is mandatory! To which state is the information revering?
+    3. `admin_2`: If avilebel. To which locality is the information revering?
+    4. `admin_3`: If avilebel. To which town is the information revering?
+    5. `admin_camp`: If avilebel. To which camp is the information revering?
+```{attention }Use standardised location names !
+It is extremely important to use standardised location names for every piece of information. This will limit the effort we need to put into data cleaning later on.
+```
+5.	`Impact_type`: Select the fitting impact type from the Impact types list or create a new one.
+6.	`Impact_quantity`: If quantitative information, place the number here.
+7.	 `Impact quality`: If qualitative information, place „Yes“ or „No“ here.
+
+Below you can find some examples of pieces of information from different datasets placed in the table structure. 
+
+:::{dropdown} Emergency Plan of Action (EPoA) Sudan: Floods 2018
+
+This is a small extract from Emergency Plan of Action (EPoA) Sudan: Floods 2018 page 4.
+
+```{figure} /fig/2018_IFRC_20180813_snap_shot.png
+---
+width: 600px
+name: 
+align: center
+---
+```
+
+
+__Data extracted from dataset__
+| Year | Start_Date | End_Date | Date       | source_ID            | admin_level | admin_1       | admin_2 | admin_3 | admin_camp | Impact type                | Impact_quantity | Impact_quality |
+|------|------------|----------|------------|----------------------|-------------|---------------|---------|---------|------------|----------------------------|-----------------|----------------|
+| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | Locality    | West Kordofan | Elnohoud|         |            | houses damaged_totaly      | 2500            |                |
+| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | Locality    | West Kordofan | Einhoud |         |            | houses_damaged_partially  | 1500            |                |
+| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | State       | West Kordofan |         |         |            | deaths                     | 6               |                |
+| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | State       | West Kordofan |         |         |            | missing people             | 3               |                |
+| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | State       | West Kordofan |         |         |            | Injured                    | 49              |                |
+| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | State       | West Kordofan |         |         |            | livestock deaths           | 121             |                |
+| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | State       | West Kordofan |         |         |            | water infrastructure_damage| 3               |                |
+:::
+
+:::{dropdown} SUDAN FLOOD RESPONSE HUMANITARIAN PARTNERS UPDATE BY STATE #3 (as of 19 Oct, 2020)
+
+The map on the first page shows affecte population per state. This information can be extracted.
+
+```{figure} /fig/UN_OCH_MAP_2021.png
+---
+width: 600px
+name: 
+align: center
+---
+```
+
+
+__Data extracted from dataset__
+| Year | Start_Date | End_Date | Date         | source_ID          | admin_level | admin_1    | admin_2 | admin_3 | admin_camp | Impact type | Impact_quantity | Impact quality |
+|------|------------|----------|--------------|--------------------|-------------|------------|---------|---------|-------------|-------------|-----------------|----------------|
+| 2020 | 07/2020    | 09/2020  | 2020 OCHA 20201025 | State  | Northern    |          |         |          |  | pop_affected | 125660  |      |          
+| 2020 | 07/2020    | 09/2020  | 2020 OCHA 20201025 | State  | River Nile  |          |         |           | | pop_affected | 33225   |                |
+| ...  | ...        | ...      | ...          | ...                | ...         | ...        | ...     | ...     | ...         | ...         | ...             |            
+:::
+
+:::{dropdown} Humanitarian Bulletin Sudan Issue 35 | 22 - 28 August 2016
+
+```{figure} /fig/2016_OCHA_20160828_snapshot.png
+---
+width: 600px
+name: 
+align: center
+---
+```
+
+__Data extracted from dataset__
+| Year | Start_Date | End_Date | Date         | source_ID          | admin_level | admin_1        | admin_2 | admin_3 | admin_camp | Impact type | Impact_quantity | Impact quality |
+|------|------------|----------|--------------|--------------------|-------------|----------------|---------|---------|-------------|-------------|-----------------|----------------|
+| 2016 | 06/2016    | 09/2016  | 2016 OCHA 20160828 | State  | Kassala        |          |         |            | |affected    | |yes       |                 |
+| 2016 | 06/2016    | 09/2016  | 2016 OCHA 20160828 | State  | South Darfur   |          |         |            | |affected    | |yes       |                 |
+| 2016 | 06/2016    | 09/2016  | 2016 OCHA 20160828 | State  | Al Gezira      |          |         |            || affected    || yes       |                 |
+| 2016 | 06/2016    | 09/2016  | 2016 OCHA 20160828 | State  | Sennar         |          |         |            | |affected    | |yes       |                 |
+| ...  | ...        | ...      | ...          | ...                | ...         | ...        | ...     | ...     | ...         | ...         | ...             | ...            |
+
+:::
+
+
+:::{dropdown} Sudan Floods Countinue (FloodList)
+
+The quote below is just one bit of relevant information from the flood list article. 
+```{figure} /fig/2013_Floodlist_20130816_snapshot.png
+---
+width: 800px
+name: 
+align: center
+---
+```
+
+__Data extracted from dataset__
+
+| Year | Start_Date  | End_Date  | Date        | source_ID             | admin_level | admin_1        | admin_2 | admin_3 | admin_camp | Impact type          | Impact_quantity | Impact quality |
+|------|-------------|-----------|-------------|-----------------------|-------------|----------------|---------|---------|-------------|----------------------|-----------------|----------------|
+| 2013 | 01/08/2013  | 21/08/21  | 11/08/2013 | 2013 Floodlist 201308 | Camp        | South Darfur   | Bellel  |         | Kalma Camp  | deaths               | 14              |                |
+| 2014 | 01/08/2014  | 21/08/22  | 11/08/2014 | 2014 Floodlist 201308 | Camp        | South Darfur   | Bellel  |         | Kalma Camp  | houses_damaged_totaly| 874             |                |
+:::
+
+
+:::{dropdown} Tipps for data compiling
+Compiling the data in EXCEL is a time-intensive and repeatable task. Here are some tips to speed up the process:
+
+__Excel copy function:__
+
+Try to use the copy function of Excel as much as possible. When taking info from a map, the information in the columns, year, start_date, end_date, date, Source_ID, and admin_level usually stay the same. So you can just copy and paste this information. In most cases, you should only write the name of location, Impact_type, Impact_quality and Impact_quantity.
+
+__Use ChatGPT:__
+
+If you encounter tables that do not fit into your table structure use ChatGPT to turn them into a long table format. For example, look at the image in the table below. 
+
+ 
+```{figure} /fig/Sudan_DREF_final_report_flood_2013_impact_table.png
+---
+width: 600px
+name: [DREF Final Report Sudan: Floods 31 May 2013](https://reliefweb.int/report/sudan/sudan-floods-mdrsd014-dref-operation-final-report)
+align: center
+---
+```
+
+You can copy the content which produces this text:
+```{dropdown}  DREF Final Report Sudan: Floods 31 May 2013
+    ```md
+    Affected 
+    State
+    Locality Houses damage Institutions Sanitation Death 
+    of 
+    Animals
+    Damage 
+    to 
+    property 
+    crops, 
+    livestock
+    Wounded
+    of Death
+    No of people 
+    affected
+    completely
+    partially
+    Completely
+    partially
+    Completely
+    partially
+    Sinnar Abohojar/Senja 3,651 4,819 0 0 0 0 0 1 0 1 34,562
+    Kasalla Algrba/Wad 
+    helio
+    4,875 2,047 165 44 641 17 0 0 0 35 28,245
+    White Nile Alrgig/Tandlti/A
+    lsalam
+    1,800 1,348 0 0 0 0 0 865 7 7 12,845
+    Gadarif Aalgalabat/Alma
+    faza/Alfaw
+    406 591 0 0 0 0 0 0 0 0 4,068
+    Khartoum Khartoum 931 1,963 0 0 20 0 0 0 0 0 17,364
+    Algeziara Um Algora 521 110 0 4 0 0 0 0 0 0 3,786
+    West Darfur Benddsi/Wadi 
+    Salih
+    1,600 576 0 0 572 0 0 4 0 4 13,056
+    Blue Nile Aldamazain/Ba
+    w
+    381 2,785 0 0 0 0 0 1 0 1 18,996
+    Northern Elbrgig/Aldaba 66 302 0 7 0 60 115 0 0 0 2,208
+    South 
+    Darfur
+    Kubom 1,000 1,000 0 0 0 0 0 0 0 0 12,000
+    River Nile Albawga/Shandi
+    /Aldamir
+    54 31 0 0 43 40 0 0 0 0 510
+    North 
+    Kordofan0
+    Shikan/Um 
+    Roaba
+    370 2,511 0 0 669 0 0 0 0 0 17,286
+    South 
+    Kordofan
+    Aldebb 600 533 0 4 0 0 0 0 0 6,798
+    Total 16,225 18,616 167 59 1,945 117 115 865 7 49 177,724
+    ```
+
+```
+
+Go to ChatGPT and use a prompt like
+„Can you turn this information taken from a Table into a long table format?“ + the table as text 
+
+Probably you will have to ask ChatGPT to give you the whole table. Something like: "Super good! Can you give me a table on the other states as well?
+"
+
+__Use Gemini AI:__
+
+Google Gemini Can also handle images. For example, it can turn this graph into a table which is much easier to handle than copying everything by hand.
+
+
+
+```{figure} /fig/Sudan_flood_impact_table_2016.png
+---
+width: 600px
+name: 
+align: center
+---
+```
+
+The resulting table can easily be adjusted in Excel.
+
+| State        | Affected People | Deaths |
+|--------------|-----------------|--------|
+| AL GEZIRA    | 23,280          | 26     |
+| BLUE NILE    | 1,930           | -      |
+| E. DARFUR    | 150             | -      |
+| GEDAREF      | 11,355          | 13     |
+| KASSALA      | 55,880          | 6      |
+| KHARTOUM     | 4,305           | 2      |
+| N. DARFUR    | 7,367           | -      |
+| N. KORDOFAN  | 5,310           | 4      |
+| NORTHERN     | 3,210           | -      |
+| RED SEA      | 520             | 3      |
+| RIVER NILE   | N/A             | -      |
+| SENNAR       | 16,980          | -      |
+| S. DARFUR    | 38,575          | 17     |
+| S. KORDOFAN  | 10,812          | 7      |
+| W. DARFUR    | 285             | 13     |
+| W. KORDOFAN  | 14,340          | 6      |
+| WHITE NILE   | 10,160          | 1      |
+
+:::
