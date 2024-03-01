@@ -15,8 +15,26 @@ The folder is called __GIS_AA_HIA_Sudan_ex1__ and contains the whole [standard f
 
 ### Step 1: Area of interest ✅
 This step is outlined in the article Historical Impact Assessment (HIA) for Flood in Suda will not be the subject of this exercise. 
+
 ### Task 2- Finding Flood Disaster Timeframes ✅
+
+
+```{attention} 
 This step is outlined in the article Historical Impact Assessment (HIA) for Flood in Suda will not be the subject of this exercise. 
+```
+
+We want to tie single pieces of information like impacts, to knowen flood events in Sudan. Thus we first need a comprehensive list of such events. In the case of Sudan, there are two sources, EM-DAT and RelifeWeb. EM-DAT is a disaster database that lists events above a certain severity. 
+RelifeWeb is actually an information platform for humanitarian response. But it has a list of active and past disasters as well. 
+Both databases list the same events for the most part. By comparing the two datasets and only selecting unique events, we receive a list of all significant flood events in Sudan and the timeframes of all events. This can easily be done in Excel.
+
+```{note} EM-Date and RelifeWeb data overview
+In total, there were 35 flood events reported between 1988 and 2021
+
+* EM-Dat lists 21 flood events in Sudan from 2000 to 2024
+* Relief Web lists 29 events between 1988 and 2024
+
+```
+
 
 ```{dropdown} Flood Events List
 
@@ -48,8 +66,9 @@ This step is outlined in the article Historical Impact Assessment (HIA) for Floo
 | 2020       | 2020-06   | 2020-09-09 |
 | 2021       | 2021-07-20 | 2021-09-24 |
 ```
- 
+
 ### Task 3- Selecting datasets
+
 In this step, we decide which datasets we want to include in the HIA. In this context, there are three sources we can turn to. The Sudan Red Crescent Society (SRCS), RelifeWeb and FloodList. In this exercise, we will limit ourselves to datasets from RelifeWeb and Floodlist.
 In the „Input“ folder of the exercise data you can find the folder „reports_articles“. This folder contains 10 datasets. 
 
@@ -113,9 +132,12 @@ Expected outcome:
 
 ### Task 4: Preparing Excel table Structure ✅
 
-Before we can start compiling data, we need to prepare the Excel table structure we want to use. In this exercise, you will be provided with the ready-to-use table. You can find it „temp“ folder of the exercise data structure.
+```{attention} 
+In this exercise, you will be provided with the ready-to-use table. You can find it „temp“ folder of the exercise data structure.
+```
+Before we can start compiling data, we need to prepare the Excel table structure we want to use. Depending on the context the table structure can look differently. In the end, you need to be able to collect information on when something happened, where it happened and what happened. Furthermore, you need to be able to identify from which dataset you take every single information.
+Below you can find short explanations of the different columns of the table structure.
 
-Below you can find short explanations of the diffrent columns of the table structure.
 
 ```{dropdown} Date
 The date information must accommodate the flood event information from the list of flood events prepared in Step 2. And potential dates of specific impact information. 
@@ -474,6 +496,7 @@ The HeiGIT team used 75 different impact types. You can find the whole list belo
 | WASH_Water_station_source_damaged_totally |                                                        |
 | WASH_watersource_contaminated            |                                                        |
 ```
+
 ### Task 5: Data compiling
 
 Finally, we can start to compile the data. Remember we are using the key + value concept to create a long table. Every piece of information gets one row! 
@@ -713,13 +736,71 @@ __Data extracted from dataset__
 | 2014 | 01/08/2014  | 21/08/22  | 11/08/2014 | 2014 Floodlist 201308 | Camp        | South Darfur   | Bellel  |         | Kalma Camp  | houses_damaged_totaly| 874             |                |
 :::
 
+
 ### Task 6: HIA Data Cleaning ✅
 
-This step is outlined in the article Historical Impact Assessment (HIA) for Flood in Suda will not be the subject of this exercise. 
+```{attention}
+In this exercise, you can skip this step by using the provided data in the folder task_7
+```
+When creating such a dataset there will be errors like misspellings of names or wrong numbers. To not create faulty analysis products, we need to make sure that our data is consistent. Especially location names are vital in this context since we use these columns to join the data later on a geodata set in QGIS. If for example state names are spelled wrong, this data will be lost.
+To make sure our data is consistent, we need to clean it. Although this can be done using many different programs like Excel, R or Python, we recommend using [OpenRefein](https://openrefine.org/).
+
+```{Tipp} OpenRefein
+OpenRefein is a free and open-source specialized data cleaning software.
+You download once the folder with the installation files. To start OpenRefein you need to double-click openrefine.exe. The software will run in your browser! -> [Installation Video](https://www.youtube.com/watch?v=nTlTboXoGj4)
+
+OpenRefein Beginner Tutorials -> __[Video](https://www.youtube.com/watch?v=wfS1qTKFQoI)__
+```
+
+You can do this step task by cleaning the data you compiled in the previous steps or the data from the folder task_6.
+If you want to use the data from the „task_6“ folder, your principal task is to clean the file „Sudan_Impact_uncleaned“. To check your results, you can compare your cleaned data with the file „Imapct_Sudan_cleaned“.
+
+1. **Year and Columns:**
+   - Check if all values are within the expected range of years.
+   - Ensure that there are no missing or invalid year values becaus we need a year information for all data
+   - *OpenRefine Step:* Use the "Text facet" or "Numeric facet" to explore the distribution of values in the Year column. Use the "Text filter" or "Numeric filter" to filter out any rows with invalid or missing year values.
+
+2. **Date Columns (Start_Date, End_Date, Date):**
+   - Check if all dates are in the correct date format.
+   - Ensure that there are no  inconsistent date values.
+   - *OpenRefine Step:* Use the "Edit cells" > "Common transforms" > "To date" option to convert date columns to a standard date format. Use the "Text facet" to identify and correct any inconsistencies in formatting or missing dates.
+
+3. **source_ID Column:**
+   - Check that there is only one way of spelling for every individual source_ID! 
+   - Check if all source IDs follow a consistent naming convention.
+   - Ensure that there are no missing source IDs.
+   - *OpenRefine Step:* Use the "Text facet" to explore the distribution of values in each admin level column. Click on `Cluster` and set `Method` to `Key collision`or `Nearest neighbor`. Adjust wrong names by checking `Merge` and adjust the `New cell value` and click on `Merge selected & re-cluster`
+
+4. **Admin Columns (admin_level, admin_1, admin_2, admin_3, admin_camp):**
+   - Check if all administrative units are correctly categorized.
+   - Ensure that there are no misspelled or inconsistent administrative unit names.
+   - *OpenRefine Step:* Use the "Text facet" to explore the distribution of values in each admin level column. Click on [`Cluster`](https://openrefine.org/docs/manual/cellediting#cluster-and-edit) and set `Method` to `Key collision` or `Nearest neighbor`. Consolidate the of states and loclities that they are consisten with the list in the [location chapter](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_historical_impact_assessment_sudan.html#location).Adjust wrong names by checking `Merge` and adjust the `New cell value` and click on `Merge selected & re-cluster` 
+
+5. **Impact Type Column:**
+   - Check if all impact types are correctly categorized and named.
+   - Ensure that there are no duplicate or missing impact types.
+   - *OpenRefine Step:* Use the "Text facet" to explore the distribution of values in each admin level column. Click on [`Cluster`](https://openrefine.org/docs/manual/cellediting#cluster-and-edit) and set `Method` to `Key collision` or `Nearest neighbor`. Adjust wrong names by checking `Merge` and adjust the `New cell value` and click on `Merge selected & re-cluster`
+
+6. **Impact Quantity Columns:**
+   - Check if all numerical values are within expected ranges.
+   - Ensure that there are no missing or invalid numerical values.
+   - *OpenRefine Step:* Use the "Numeric facet" to explore the distribution of values in each numerical column. Use the "Edit cells" or "Transform" option to handle missing or invalid values, and standardize formatting.
+
+7. **Impact Quality Columns:**
+   - Check that the same impacts are spelt consistently. For example illness names.
+   - *OpenRefine Step:* Use the "Text facet" to explore the distribution of values in each admin level column. Click on [`Cluster`](https://openrefine.org/docs/manual/cellediting#cluster-and-edit) and set `Method` to `Key collision` or `Nearest neighbor`. Adjust wrong names by checking `Merge` and adjust the `New cell value` and click on `Merge selected & re-cluster`
+8. **Delete redundant data**
+    - It might be the case that you have for one flood event, multiple information on for example affected populations for the same location. This could later be a problem when you want to analyse the data.
+    Probably, the reddened information is from two different sources. So you can delete the information of the older source and only keep the one from the up-to-date source as possible.
+
 
 ### Task 7: Joining P-Code columns
 
+
+```{attention}
 In this exercise, you can skip this step by using the provided data in the folder task_8
+```
+
 Usually, it is easier in QGIS to work with data having P-code columns in contrast to state or district names. There is just less potential for errors.
 Once you are done with data compiling and cleaning, it is recommended to join p-code columns to your data. Below you can find a method to do that in Excel. 
 
@@ -741,7 +822,6 @@ The information below should show a green check and „The selection has matched
 11.	Click on `Close & Load`.
 
 The Result should be the Excel file „Suadn_impact_p_code“. The file should contain all info from the original impact table and the two new columns „ADM1_EN“ and „ADM1_PCODE“.
-
 
 ```
 
