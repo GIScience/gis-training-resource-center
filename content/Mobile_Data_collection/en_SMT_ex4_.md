@@ -102,7 +102,7 @@ Decide together with the responsible working group which GIS system is prefered 
 
 ::::{grid} 2
 
-:::{grid-item-card} Exercise A
+:::{grid-item-card}
 :link: (https://giscience.github.io/gis-training-resource-center/content/Mobile_Data_collection/en_SMT_ex4_.html#exercise-a-exploration-basic-visualization-of-sketch-map-tool-outputs-in-qgis)
 
 __Click here to start exercise A__
@@ -123,6 +123,9 @@ If you experience any problems during your use of the [Sketch Map Tool](https://
 
 
 ## Exercise A: Exploration & basic visualization of Sketch Map Tool outputs in QGIS
+
+::::{dropdown} Exercise A: Exploration & basic visualization of Sketch Map Tool outputs in QGIS
+:open:
 
 
 
@@ -367,12 +370,14 @@ Example of a finished map using the Sketch Map Tool
 
 You can find Videos along with all the necessary information about making printable maps and the print layout composer in the [Print Layout Chapter](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout), the [Symbology Chapter](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_I.html), and in the [Map Making Wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_map_making_wiki.html#map-making-wiki)
  
-
+::::
 
 
 
 ## Exercise B: Basic visualization of Sketch Map Tool outputs in UMAP
 
+::::{dropdown} Exercise B: Basic visualization of Sketch Map Tool outputs in UMAP
+:open:
 
 ### 1. Background Information on UMAP
 
@@ -588,3 +593,4 @@ You also have the option to download your layers as data files, a full backup of
 If you want to use your map as a simple figure to show offline, you can simply take a screenshot or use the Snipping Tool.
 ```
 
+::::
