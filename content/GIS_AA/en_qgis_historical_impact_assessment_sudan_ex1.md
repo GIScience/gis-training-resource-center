@@ -111,7 +111,7 @@ Expected outcome:
 - A folder with all datasets to be used in the HIA. The dataset's names should be their ID.
 - A list of all datasets to be used, with ID.
 
-### Task 4: Preparing Excel table Structure
+### Task 4: Preparing Excel table Structure ✅
 
 Before we can start compiling data, we need to prepare the Excel table structure we want to use. In this exercise, you will be provided with the ready-to-use table. You can find it „temp“ folder of the exercise data structure.
 
@@ -475,115 +475,8 @@ The HeiGIT team used 75 different impact types. You can find the whole list belo
 | WASH_watersource_contaminated            |                                                        |
 ```
 ### Task 5: Data compiling
+
 Finally, we can start to compile the data. Remember we are using the key + value concept to create a long table. Every piece of information gets one row! 
-1.	Find a relevant information in a dataset
-2.	Date: 
-    1. `Year`: This information is mandatory! Check to which year the information is revering.
-    2. `Start_Date` & `End_Date`: If the information on the timeframe of the flood is available, place the start and end date in these columns.
-    This information should be listed in the Flood Events List.
-    3. `Date`: If exact information of the date of the __impact__ is available, place it here. 
-3.	Source_ID: Write the ID in the `Dataset_ID` column.
-4.	Location: 
-    1. `admin_level`: Check t which admin level the information is revering to e.g. state, locality, town or camp.
-    2. `admin_1`: This information is mandatory! To which state is the information revering?
-    3. `admin_2`: If avilebel. To which locality is the information revering?
-    4. `admin_3`: If avilebel. To which town is the information revering?
-    5. `admin_camp`: If avilebel. To which camp is the information revering?
-```{attention }Use standardised location names !
-It is extremely important to use standardised location names for every piece of information. This will limit the effort we need to put into data cleaning later on.
-```
-5.	`Impact_type`: Select the fitting impact type from the Impact types list or create a new one.
-6.	`Impact_quantity`: If quantitative information, place the number here.
-7.	 `Impact quality`: If qualitative information, place „Yes“ or „No“ here.
-
-Below you can find some examples of pieces of information from different datasets placed in the table structure. 
-
-:::{dropdown} Emergency Plan of Action (EPoA) Sudan: Floods 2018
-
-This is a small extract from Emergency Plan of Action (EPoA) Sudan: Floods 2018 page 4.
-
-```{figure} /fig/2018_IFRC_20180813_snap_shot.png
----
-width: 600px
-name: 
-align: center
----
-```
-
-
-__Data extracted from dataset__
-| Year | Start_Date | End_Date | Date       | source_ID            | admin_level | admin_1       | admin_2 | admin_3 | admin_camp | Impact type                | Impact_quantity | Impact_quality |
-|------|------------|----------|------------|----------------------|-------------|---------------|---------|---------|------------|----------------------------|-----------------|----------------|
-| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | Locality    | West Kordofan | Elnohoud|         |            | houses damaged_totaly      | 2500            |                |
-| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | Locality    | West Kordofan | Einhoud |         |            | houses_damaged_partially  | 1500            |                |
-| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | State       | West Kordofan |         |         |            | deaths                     | 6               |                |
-| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | State       | West Kordofan |         |         |            | missing people             | 3               |                |
-| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | State       | West Kordofan |         |         |            | Injured                    | 49              |                |
-| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | State       | West Kordofan |         |         |            | livestock deaths           | 121             |                |
-| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | State       | West Kordofan |         |         |            | water infrastructure_damage| 3               |                |
-:::
-
-:::{dropdown} SUDAN FLOOD RESPONSE HUMANITARIAN PARTNERS UPDATE BY STATE #3 (as of 19 Oct, 2020)
-
-The map on the first page shows affecte population per state. This information can be extracted.
-
-```{figure} /fig/UN_OCH_MAP_2021.png
----
-width: 600px
-name: 
-align: center
----
-```
-
-
-__Data extracted from dataset__
-| Year | Start_Date | End_Date | Date         | source_ID          | admin_level | admin_1    | admin_2 | admin_3 | admin_camp | Impact type | Impact_quantity | Impact quality |
-|------|------------|----------|--------------|--------------------|-------------|------------|---------|---------|-------------|-------------|-----------------|----------------|
-| 2020 | 07/2020    | 09/2020  | 2020 OCHA 20201025 | State  | Northern    |          |         |          |  | pop_affected | 125660  |      |          
-| 2020 | 07/2020    | 09/2020  | 2020 OCHA 20201025 | State  | River Nile  |          |         |           | | pop_affected | 33225   |                |
-| ...  | ...        | ...      | ...          | ...                | ...         | ...        | ...     | ...     | ...         | ...         | ...             |            
-:::
-
-:::{dropdown} Humanitarian Bulletin Sudan Issue 35 | 22 - 28 August 2016
-
-```{figure} /fig/2016_OCHA_20160828_snapshot.png
----
-width: 600px
-name: 
-align: center
----
-```
-
-__Data extracted from dataset__
-| Year | Start_Date | End_Date | Date         | source_ID          | admin_level | admin_1        | admin_2 | admin_3 | admin_camp | Impact type | Impact_quantity | Impact quality |
-|------|------------|----------|--------------|--------------------|-------------|----------------|---------|---------|-------------|-------------|-----------------|----------------|
-| 2016 | 06/2016    | 09/2016  | 2016 OCHA 20160828 | State  | Kassala        |          |         |            | |affected    | |yes       |                 |
-| 2016 | 06/2016    | 09/2016  | 2016 OCHA 20160828 | State  | South Darfur   |          |         |            | |affected    | |yes       |                 |
-| 2016 | 06/2016    | 09/2016  | 2016 OCHA 20160828 | State  | Al Gezira      |          |         |            || affected    || yes       |                 |
-| 2016 | 06/2016    | 09/2016  | 2016 OCHA 20160828 | State  | Sennar         |          |         |            | |affected    | |yes       |                 |
-| ...  | ...        | ...      | ...          | ...                | ...         | ...        | ...     | ...     | ...         | ...         | ...             | ...            |
-
-:::
-
-
-:::{dropdown} Sudan Floods Countinue (FloodList)
-
-The quote below is just one bit of relevant information from the flood list article. 
-```{figure} /fig/2013_Floodlist_20130816_snapshot.png
----
-width: 800px
-name: 
-align: center
----
-```
-
-__Data extracted from dataset__
-
-| Year | Start_Date  | End_Date  | Date        | source_ID             | admin_level | admin_1        | admin_2 | admin_3 | admin_camp | Impact type          | Impact_quantity | Impact quality |
-|------|-------------|-----------|-------------|-----------------------|-------------|----------------|---------|---------|-------------|----------------------|-----------------|----------------|
-| 2013 | 01/08/2013  | 21/08/21  | 11/08/2013 | 2013 Floodlist 201308 | Camp        | South Darfur   | Bellel  |         | Kalma Camp  | deaths               | 14              |                |
-| 2014 | 01/08/2014  | 21/08/22  | 11/08/2014 | 2014 Floodlist 201308 | Camp        | South Darfur   | Bellel  |         | Kalma Camp  | houses_damaged_totaly| 874             |                |
-:::
 
 
 :::{dropdown} Tipps for data compiling
@@ -710,3 +603,156 @@ The resulting table can easily be adjusted in Excel.
 | WHITE NILE   | 10,160          | 1      |
 
 :::
+
+1.	Find a relevant information in a dataset
+2.	Date: 
+    1. `Year`: This information is mandatory! Check to which year the information is revering.
+    2. `Start_Date` & `End_Date`: If the information on the timeframe of the flood is available, place the start and end date in these columns.
+    This information should be listed in the Flood Events List.
+    3. `Date`: If exact information of the date of the __impact__ is available, place it here. 
+3.	Source_ID: Write the ID in the `Dataset_ID` column.
+4.	Location: 
+    1. `admin_level`: Check t which admin level the information is revering to e.g. state, locality, town or camp.
+    2. `admin_1`: This information is mandatory! To which state is the information revering?
+    3. `admin_2`: If avilebel. To which locality is the information revering?
+    4. `admin_3`: If avilebel. To which town is the information revering?
+    5. `admin_camp`: If avilebel. To which camp is the information revering?
+```{attention} Use standardised location names !
+It is extremely important to use standardised location names for every piece of information. This will limit the effort we need to put into data cleaning later on.
+```
+5.	`Impact_type`: Select the fitting impact type from the Impact types list or create a new one.
+6.	`Impact_quantity`: If quantitative information, place the number here.
+7.	 `Impact quality`: If qualitative information, place „Yes“ or „No“ here.
+
+Below you can find some examples of pieces of information from different datasets placed in the table structure. 
+
+:::{dropdown} Emergency Plan of Action (EPoA) Sudan: Floods 2018
+
+This is a small extract from Emergency Plan of Action (EPoA) Sudan: Floods 2018 page 4.
+
+```{figure} /fig/2018_IFRC_20180813_snap_shot.png
+---
+width: 600px
+name: 
+align: center
+---
+```
+
+
+__Data extracted from dataset__
+| Year | Start_Date | End_Date | Date       | source_ID            | admin_level | admin_1       | admin_2 | admin_3 | admin_camp | Impact type                | Impact_quantity | Impact_quality |
+|------|------------|----------|------------|----------------------|-------------|---------------|---------|---------|------------|----------------------------|-----------------|----------------|
+| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | Locality    | West Kordofan | Elnohoud|         |            | houses damaged_totaly      | 2500            |                |
+| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | Locality    | West Kordofan | Einhoud |         |            | houses_damaged_partially  | 1500            |                |
+| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | State       | West Kordofan |         |         |            | deaths                     | 6               |                |
+| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | State       | West Kordofan |         |         |            | missing people             | 3               |                |
+| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | State       | West Kordofan |         |         |            | Injured                    | 49              |                |
+| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | State       | West Kordofan |         |         |            | livestock deaths           | 121             |                |
+| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | State       | West Kordofan |         |         |            | water infrastructure_damage| 3               |                |
+:::
+
+:::{dropdown} SUDAN FLOOD RESPONSE HUMANITARIAN PARTNERS UPDATE BY STATE #3 (as of 19 Oct, 2020)
+
+The map on the first page shows affecte population per state. This information can be extracted.
+
+```{figure} /fig/UN_OCH_MAP_2021.png
+---
+width: 600px
+name: 
+align: center
+---
+```
+
+
+__Data extracted from dataset__
+| Year | Start_Date | End_Date | Date         | source_ID          | admin_level | admin_1    | admin_2 | admin_3 | admin_camp | Impact type | Impact_quantity | Impact quality |
+|------|------------|----------|--------------|--------------------|-------------|------------|---------|---------|-------------|-------------|-----------------|----------------|
+| 2020 | 07/2020    | 09/2020  | 2020 OCHA 20201025 | State  | Northern    |          |         |          |  | pop_affected | 125660  |      |          
+| 2020 | 07/2020    | 09/2020  | 2020 OCHA 20201025 | State  | River Nile  |          |         |           | | pop_affected | 33225   |                |
+| ...  | ...        | ...      | ...          | ...                | ...         | ...        | ...     | ...     | ...         | ...         | ...             |            
+:::
+
+:::{dropdown} Humanitarian Bulletin Sudan Issue 35 | 22 - 28 August 2016
+
+```{figure} /fig/2016_OCHA_20160828_snapshot.png
+---
+width: 600px
+name: 
+align: center
+---
+```
+
+__Data extracted from dataset__
+| Year | Start_Date | End_Date | Date         | source_ID          | admin_level | admin_1        | admin_2 | admin_3 | admin_camp | Impact type | Impact_quantity | Impact quality |
+|------|------------|----------|--------------|--------------------|-------------|----------------|---------|---------|-------------|-------------|-----------------|----------------|
+| 2016 | 06/2016    | 09/2016  | 2016 OCHA 20160828 | State  | Kassala        |          |         |            | |affected    | |yes       |                 |
+| 2016 | 06/2016    | 09/2016  | 2016 OCHA 20160828 | State  | South Darfur   |          |         |            | |affected    | |yes       |                 |
+| 2016 | 06/2016    | 09/2016  | 2016 OCHA 20160828 | State  | Al Gezira      |          |         |            || affected    || yes       |                 |
+| 2016 | 06/2016    | 09/2016  | 2016 OCHA 20160828 | State  | Sennar         |          |         |            | |affected    | |yes       |                 |
+| ...  | ...        | ...      | ...          | ...                | ...         | ...        | ...     | ...     | ...         | ...         | ...             | ...            |
+
+:::
+
+
+:::{dropdown} Sudan Floods Countinue (FloodList)
+
+The quote below is just one bit of relevant information from the flood list article. 
+```{figure} /fig/2013_Floodlist_20130816_snapshot.png
+---
+width: 800px
+name: 
+align: center
+---
+```
+
+__Data extracted from dataset__
+
+| Year | Start_Date  | End_Date  | Date        | source_ID             | admin_level | admin_1        | admin_2 | admin_3 | admin_camp | Impact type          | Impact_quantity | Impact quality |
+|------|-------------|-----------|-------------|-----------------------|-------------|----------------|---------|---------|-------------|----------------------|-----------------|----------------|
+| 2013 | 01/08/2013  | 21/08/21  | 11/08/2013 | 2013 Floodlist 201308 | Camp        | South Darfur   | Bellel  |         | Kalma Camp  | deaths               | 14              |                |
+| 2014 | 01/08/2014  | 21/08/22  | 11/08/2014 | 2014 Floodlist 201308 | Camp        | South Darfur   | Bellel  |         | Kalma Camp  | houses_damaged_totaly| 874             |                |
+:::
+
+### Task 6: HIA Data Cleaning ✅
+
+This step is outlined in the article Historical Impact Assessment (HIA) for Flood in Suda will not be the subject of this exercise. 
+
+### Task 7: Joining P-Code columns
+
+In this exercise, you can skip this step by using the provided data in the folder task_8
+Usually, it is easier in QGIS to work with data having P-code columns in contrast to state or district names. There is just less potential for errors.
+Once you are done with data compiling and cleaning, it is recommended to join p-code columns to your data. Below you can find a method to do that in Excel. 
+
+```{dropdown} Join P-code columns in Excel
+
+1.	Create a new empty Excel file and name it „Suadn_impact_p_code“.
+2.	Open the new Excel file and click on the `Data` tab. Click on `Get Data` -> `From Workbook` -> select your cleaned impact data file.
+3.	The „Navigator“ Window will open. Select the relevant Excel sheet. Click on the drop-down menu `Load` -> Select `Load to`. The „Import Data“ Window will open. Here select `Only Create Connection`
+4.	Repeat steps 2 and 3 for the file „sdn_adminboundaries_tabulardata.xlsx“. Select the sheet „ADM1“
+5.	Once you loaded both files you should see the „Queries & Connection “panel on the right-hand side of your Excel. The panel should show the impact sheet and the ADM1 sheet
+6.	Now, click on the `Data` tab -> `Get Data` -> `Combine Queries` -> `Merge`. The window „Merge“ should open.
+7.	In the „Merge“ window, select the „admin_1“ column for the impact dataset and the „ADM1_EN“ and „ADM1_PCODE“ for the ADM1 table.
+8.	Under „Join Kind“ select `Left Outer (all from first, matching from secound)`. This will take all rows from the impact dataset and the matching data from the ADM1 table. 
+The information below should show a green check and „The selection has matched [the number of your rows] out of the first [Number of your rows] rows. If not, some of your state names are not consistent with the ones in the ADM1 file. You would need to do more data cleaning. Click `Ok`
+9.	The new window „Merge 1 – Power Query Edito“ will open. Click on the ![](/conetnt/fig/excel_extend.png) icon next to ADM1. Select only the columns you want to keep. We recommend to only keep „ADM1_EN“ and „ADM1_PCODE“. 
+    1. Uncheck „Use original column names as prefix“
+    2. Click `OK`.
+10.	The table preview should now show your whole impact table with the columns keep „ADM1_EN“ and „ADM1_PCODE“ on the right.
+11.	Click on `Close & Load`.
+
+The Result should be the Excel file „Suadn_impact_p_code“. The file should contain all info from the original impact table and the two new columns „ADM1_EN“ and „ADM1_PCODE“.
+
+
+```
+
+### Task 8: Data visualization and analysis
+
+Import the CSV-file into QGIS. 
+1. Open the `Data Source Manager` 
+2. Select the `Delimited Text` section. Here you can input your CSV-file
+3. Depending on the `File Format` you need to define Custom delimiters or you can just select CSV.
+4. Always check the Sample Data output at the bottom to see if the import is working as expected. You probably will also need to check the `Record and Fields Options` and specify if your first record is a header or already data.
+5. Lastly, it is important to specify the `Geometry Definition`, where you can just select `No geometry`.
+
+An example will be shown in {numref}`HIA_csv_import`.
+
