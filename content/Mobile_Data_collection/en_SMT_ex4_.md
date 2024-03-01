@@ -101,17 +101,14 @@ Decide together with the responsible working group which GIS system is prefered 
 ::::{grid} 2
 
 :::{grid-item-card} Exercise A
-:link: ## Exercise A: Exploration & basic visualization of Sketch Map Tool outputs in QGIS
-:link-type: ref
+:link: ## Exercise A: Exploration & basic visualization of Sketch Map Tool outputs in QGIS](https://giscience.github.io/gis-training-resource-center/content/Mobile_Data_collection/en_SMT_ex4_.html#exercise-a-exploration-basic-visualization-of-sketch-map-tool-outputs-in-qgis)
 
 __Click here to start exercise A__
 
 :::
 
 :::{grid-item-card}
-
-:link: ## Exercise B: Basic visualization of Sketch Map Tool outputs in UMAP
-:link-type: ref
+:link: https://giscience.github.io/gis-training-resource-center/content/Mobile_Data_collection/en_SMT_ex4_.html#exercise-b-basic-visualization-of-sketch-map-tool-outputs-in-umap
 
 __Click here to start exercise B__
 
