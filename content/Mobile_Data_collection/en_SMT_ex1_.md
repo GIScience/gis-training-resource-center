@@ -5,7 +5,7 @@
 Explore the whole workflow of mapping with the Sketch Map Tool, from first ideas about what you like to map to the possible digital results.
 
 
-```{figure} /fig/en_Interface_02.png
+```{figure} /fig/SMT_workflow_Satelite.png
 ---
 height: 50px
 name: T
@@ -48,7 +48,8 @@ Wrap-up (with presentations):
 To shorten the time you can also just focus the hands-on-exploration on specific parts of the workflow. You can for example work with pre-marked maps to focus on the second half of the workflow or just focus on the first parts and show the final parts with prepared examples by sharing your screen. 
 ```
 
-## Instructions for the trainers 
+## Instructions for the trainers
+:::{dropdown} Trainers Corner 
 ### Preparation and material 
 - Online access and devices (PC) to be able to use the Sketch Map Tool to create maps online, upload and download them.
 - Possibility to print the maps and smart phones to take the photos and a way to upload them to the Sketch Map Tool later. 
@@ -63,8 +64,6 @@ have a printer or are able to mark the maps digitally.
 - If you like to skip parts of the workflow, make sure you have alternative material (like preprinted, or already marked Sketch maps) prepared.
 - If you like to adapt this exercise to your specific use case, create your own case-description. 
 ```
-
-
 
 ### Available Material: needs to be linked directly 
 •	Introduction Slides about the Sketch Map Tool available
@@ -86,6 +85,24 @@ o	Geodata of the results and some pictures
 - All groups present their findings (each 5 min, make it short but show the maps they are talking about).
 - Discuss Benefits as well as challenges and problems in the use of the sketch Map Tool 
 - Time to for Open questions.
+::::
+
+## What you need to know - background information
+Benefits of choosing a base map satelite image or OSM
+
+| | satelite image| OSM data|
+| :-------------------- |:-------------------- | :----------------- | 
+| data source | ESRI | OSM Community  | 
+| example map | ```{figure} /fig/SMT_Satelite_Heidelberg_empty.jpg``` | ```{figure} /fig/SMT_Heidelberg_empty.jpg``` | 
+| curentness | Update cycel | Regular Updates | 
+| biggest benefit | ESRI | OSM Community  | 
+
+What does georefferenced means?
+
+| A not georeferenced image | A georeferenced image – GeoTIFF |
+| :-------------------- | :----------------- | 
+| Just an image, even if you load it in QGis and give it a coordination system it can´t be located and the image is shown somewhere in the Atlantic. | The file contains information about its coordinate system and its location, so you can combine it other geodata e.g. with GPS data.| 
+| ```{figure} /fig/SMT_Map_Not_georefferenced.png``` | ```{figure} /fig/SMT_Geofrefference_map.png``` | 
 
 ## Step-by step introduction for participants 
 

@@ -5,13 +5,12 @@
 This exercise focuses on exploring the basemaps and discussing challenges of map literacy and orientation on the maps, as well as the characteristics, strengths, currency (possibility to update) and differences basemaps based on Satellite images or OSM.
 
 
-```{figure} /fig/en_Interface_02.png
+```{figure} /fig/SMT_Idee_traffic_light_exerices.png
 ---
 height: 50px
 name: T
 align: center
 ---
-Picutre of the workflow
 ```
 
 ## Characteristics of the exercise 
@@ -37,7 +36,7 @@ In general: about 1:15 h to 1:35 h (depending on number of groups)
 ```
 
 ```{Tip}
-To shorten the time you can work with prepared maps. 
+To shorten the time you can work with prepared maps. Link data
 ```
 
 ## Instructions for the trainers 
@@ -49,12 +48,9 @@ To shorten the time you can work with prepared maps.
 - Take a look and make yourself familiar on the provided material for the exercise and the Sketch Map Tool in general. 
 - Prepare a board (it can be a white board /flipchart / or digital e.g. mirro-board) where the participants can add their findings.
 
-
-
 ### Available Material: needs to be linked directly 
 - Introduction Slides with tips and a short basic introduction in the differences of satellite image /OSM
-- 5 prepared examples of a set of mapping 
-
+- 5 prepared cases (with Sketch Maps and Map Quality Check) Link to Data
 
 
 ### During the exercise:  
@@ -77,8 +73,32 @@ To shorten the time you can work with prepared maps.
 
 
 ## What you need to know - background information
-- Satelite data 
-- OSM
+Benefits of choosing a base map satelite image or OSM
+
+| | satelite image| OSM data|
+| :-------------------- |:-------------------- | :----------------- | 
+| data source | ESRI | OSM Community  | 
+| example map | ```{figure} /fig/SMT_Satelite_Heidelberg_empty.jpg``` | ```{figure} /fig/SMT_Heidelberg_empty.jpg``` | 
+| curentness | Update cycel | Regular Updates | 
+| biggest benefit | ESRI | OSM Community  | 
+
+What does georefferenced means?
+
+| A not georeferenced image | A georeferenced image – GeoTIFF |
+| :-------------------- | :----------------- | 
+| Just an image, even if you load it in QGis and give it a coordination system it can´t be located and the image is shown somewhere in the Atlantic. | The file contains information about its coordinate system and its location, so you can combine it other geodata e.g. with GPS data.| 
+| ```{figure} /fig/SMT_Map_Not_georefferenced.png``` | ```{figure} /fig/SMT_Geofrefference_map.png``` | 
+
+Map Quality Check
+```{figure} /fig/SMT_Heidelberg_report_1.jpg
+---
+height: 50px
+name: T
+align: center
+---
+```
+The Sketch Map Tool can evaluate how well-suited an area of the OpenStreetMap (OSM) basemap is for participatory mapping based on a quality analysis of the OpenStreetMap (OSM) basemap data through the HeiGIT ohsome quality analyst.  (→ Hyperlinks are missing to OSM and ohsome quality analyst).
+The Map Quality Check assists in evaluating the suitability of the area of interest for participatory mapping through a quality analysis of the OpenStreetMap data with the HeiGIT ohsome quality analyst. The fitness report can be downloaded as a PDF file by clicking on the blue button. It provides an evaluation of the suitability of the local OSM data and recommendations for subsequent field data collection.
 
 ## Step-by step introduction for participants 
 
@@ -87,13 +107,16 @@ link where you can download this part as a short pdf to hand it to participants
 If you expieriences any problems during your use of the [Sketch Map Tool](https://sketch-map-tool.heigit.org/) please take a look at the [Help page](https://sketch-map-tool.heigit.org/help).
 
 
-
 ### 1.	Create the maps and reports
 This step can be skipped with prepared examples.
 - Open the Sketch Map Tool 
 - Decide on an area fitting to your case study or you know very well or find interesting.
 - Zoom in and select your map area: Try different zoom levels and change the orientation. 
 - Create several maps of the same area with different oration, zoom level and basemaps. 
+
+| Sketch Map with a satelite base map| Sketch Map with a OSM base map | Map Quality Check |
+| :-------------------- | :----------------- | :------------------ |
+| ```{figure} /fig/SMT_Satelite_Heidelberg_empty.jpg``` | ```{figure} /fig/SMT_Heidelberg_empty.jpg``` | ```{figure} /fig/SMT_Heidelberg_report_1.jpg```|
 
 
 ### 2.	Collect your insights to the following questions
