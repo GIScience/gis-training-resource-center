@@ -24,7 +24,7 @@ Download all datasets **DATA LINK** and save the folder on your computer. Unzip 
 
 **Vectordata**
 - `Pakistan_indusbasin_streams.shp` (Line Geometry)
-- `Pakistan_borders.gpkg` (GeoPackage)
+- `Pakistan_admin.gpkg` (GeoPackage)
     - Pakistan_national_borders (Lines)
     - Pakistan_admin2 (Polygons)
 - `Pakistan_floodextents_2023.shp` (Multipolygon)
@@ -85,7 +85,7 @@ align: center
 
  ```{figure} /fig/mod8_ex1_symbologypanel.png
 ---
-width: 400px
+width: 600px
 name: 
 align: center
 ---
@@ -95,7 +95,7 @@ Your DEM (`Pakistan_DEM`) could look something like this now (Colour palette "Sp
 
  ```{figure} /fig/mod8_ex1_dem.png
 ---
-width: 400px
+width: 600px
 name: 
 align: center
 ---
@@ -113,7 +113,13 @@ align: center
       - Min = 0    Max = 3000
       - Min = 0    Max = 5000
 
-**BILD VALUBOUNDARIES**
+ ```{figure} /fig/en_3.34_m8ex1_valueboundaries.png
+---
+width: 600px
+name: 
+align: center
+---
+```
 
 11. Have a look at the histogramm of the DEM and adjust the visualization range for the DEM too if you deem it necessary.
 
@@ -131,7 +137,7 @@ While you can choose from all different visalisation methods for your hillshade 
 
  ```{figure} /fig/en_3.34_m8ex1_hillshade.png
 ---
-width: 400px
+width: 600px
 name: 
 align: center
 ---
@@ -169,7 +175,7 @@ To get a aproximation of flood exposure our first goal is to create a layer disp
 
  ```{figure} /fig/en_3.34_m8ex1_createraster.png
 ---
-width: 400px
+width: 600px
 name: 
 align: center
 ---
@@ -186,7 +192,7 @@ align: center
 
  ```{figure} /fig/en_3.34_m8ex1_floodmask.png
 ---
-width: 400px
+width: 600px
 name: 
 align: center
 ---
@@ -211,7 +217,7 @@ align: center
     
     ```{figure} /fig/en_3.34_m8ex1_rastercalc_popflood.png
     ---
-    width: 400px
+    width: 600px
     name: 
     align: center
     ---
@@ -223,41 +229,74 @@ Your layer should look something like this:
 
     ```{figure} /fig/en_3.34_m8ex1_popflood.png
     ---
-    width: 400px
+    width: 600px
     name: 
     align: center
     ---
     ```
 
-Now we have teached our goal of generating a dataset displaying flood affected population. In the context of real world application in the humanitarian sector or the visualisation of data for people/institutions not familiar with GIS, it can be sensible to aggregate rasterdata on the level of administrative units. We will do this with our produced dataset on the admin 2 level  (districts) in Pakistan.
+Now we have teached our goal of generating a dataset displaying flood affected population. In the context of real world application in the humanitarian sector or the visualisation of data for people/institutions not familiar with GIS, it can be sensible to aggregate rasterdata on the level of administrative units. 
 
-1. Open the tool `Zonal Statistics` from your Processing Toolbox Panel.
+5. We will achieve this with our produced dataset on the admin 2 level  (districts) in Pakistan by calculating the total population affected by floods per district.
+
+    1. Open the tool `Zonal Statistics` from your Processing Toolbox Panel.
+    2. As "Input Layer" choose the layer "Pakistan_admin2" with the polygons of administrative districts.
+    3. As "Raster Layer" choose "Pop_floodextent".
+    4. Defining a prefix for your output column is optinal but can be helpful for finding the caculatedb values in large attribute tables. Choose "pop_" as "Output column prefix".
+    5. Below "Statistics to calculate" click on the **THREE_DOTS** to acess the different options of statistical operations available for calculating polygon values based on your raster.
+        - Which statistical operation woud suit the task of calculating flood affected population per district?
+
+    Solution:
+    "Sum" is the appropriate method, as we want the total population count per district that results from the additions of the values of all cells with affected population per district.
+    
+    6. Name your layer "Floodaffected_pop_admin2", save it to your "output" folder and click `Run`.
+
+     ```{figure} /fig/en_3.34_m8ex1_zonalstat.png
+    ---
+    width: 600px
+    name: 
+    align: center
+    ---
+    ```
+
+6. Now you can refresh your skills learned in the trainings about vector data fort the visualisation of your output layer:
+    1. Perform a visualisation of the values in the newly generated field "pop_sum" with graduated classification and the colour palette "Reds"
+    2. Choose an appropriate mode of classification, that fits the nature of the displayed data.
+    3. Enable labels with the district names (colum "xxxx")
+        - Which districts display the most population affected by the floods?
 
 
+ Your output layer should look something like this
+
+     ```{figure} /fig/en_3.34_m8ex1_popflood_districts.png
+    ---
+    width: 600px
+    name: 
+    align: center
+    ---
+    ```
+
+As we now have a rough idea which in which districts large populations where affected by floods we want to explore if precipitation data of 2023 shows similar patterns as heavy rainfall is a major predisposing factor for the occurence riverine floods: Are the districts experiencing flooding also experiencing the most rainfall?
+
+5. We will achieve this with our produced dataset on the admin 2 level  (districts) in Pakistan by calculating the total population affected by floods per district.
+
+    1. Again open `Zonal Statistics`.
+    2. As "Input Layer" again choose "Pakistan_admin2". The "Rasterlayer this time is "Pakistan_precip_2023".
+    3. Choose the prefix "precip_".
+    5. Which statistical method suits the task if you want to compare precipitation across districts in the context of flooding? Choose a method.
+    6. Name your layer "Precip_admin2", save it to your "output" folder and click `Run`.
+    7. Visualize the resuts by implementing a graduated classification of your new column in the attribute table "precip_mean"
+
+Your result should look somehing like this:
+
+     ```{figure} /fig/en_3.34_m8ex1_precip_districts.png
+    ---
+    width: 600px
+    name: 
+    align: center
+    ---
+    ```
 
 
+7. Compare your Layer "Precip_admin2" with "Floodaffected_pop_admin2" and the flooded areas ("Pakistan_floodextent_2023). Would precipitation data be a good paramter for the forecasting of floodexosure in the year 2023? Also have a look at the layer "Pakistan_indusbasin_streams" as well as your DEM and try to explain the observed patterns of the spatial distribution of flooded areas and precipitation. 
 
-
-
-
-
-
-
-
-
-
--> Noch Rastercalculator Beispielaufgaben machen: 
-    - Addition
-    - Maske
-    - If When SZATEMENT Z.B POP > X UND DEM < 500
-
-Präsention
-    - Worlpop erklären
-    - Erhebungsmethoden
-    - Unsicherheiten von Worldpop, können von zensus abweichen
-    - Unterschiedliche Formate
-    - Beispieledaten rein:
-        - Worldopo
-        - DEM
-        - Landuse
-        - Risk Map
