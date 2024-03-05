@@ -113,7 +113,7 @@ align: center
       - Min = 0    Max = 3000
       - Min = 0    Max = 5000
 
- ```{figure} /fig/en_3.34_m8ex1_valueboundaries.png
+```{figure} /fig/en_3.34_m8ex1_valuerange.png
 ---
 width: 600px
 name: 
@@ -251,7 +251,7 @@ Now we have teached our goal of generating a dataset displaying flood affected p
     
     6. Name your layer "Floodaffected_pop_admin2", save it to your "output" folder and click `Run`.
 
-     ```{figure} /fig/en_3.34_m8ex1_zonalstat.png
+    ```{figure} /fig/en_3.34_m8ex1_zonalstat.png
     ---
     width: 600px
     name: 
@@ -268,7 +268,7 @@ Now we have teached our goal of generating a dataset displaying flood affected p
 
  Your output layer should look something like this
 
-     ```{figure} /fig/en_3.34_m8ex1_popflood_districts.png
+    ```{figure} /fig/en_3.34_m8ex1_popflood_districts.png
     ---
     width: 600px
     name: 
@@ -289,7 +289,7 @@ As we now have a rough idea which in which districts large populations where aff
 
 Your result should look somehing like this:
 
-     ```{figure} /fig/en_3.34_m8ex1_precip_districts.png
+    ```{figure} /fig/en_3.34_m8ex1_precip_districts.png
     ---
     width: 600px
     name: 
