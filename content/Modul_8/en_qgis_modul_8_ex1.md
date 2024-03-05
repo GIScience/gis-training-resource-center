@@ -113,7 +113,7 @@ align: center
       - Min = 0    Max = 3000
       - Min = 0    Max = 5000
 
- ```{figure} /fig/en_3.34_m8ex1_valueboundaries.png
+```{figure} /fig/en_3.34_m8ex1_valuerange.png
 ---
 width: 600px
 name: 
@@ -188,7 +188,7 @@ align: center
     - Under "A fixed value to burn" type in "1". This means that all rastercells of your input rasters that are covered by geometries of your input vector layer will be changed to the value "1".
     - Click on "Run" to rasterize your floodextents.
 
-3. The layer `Rastermask_floods` should now have values of "1" instead of "0" in the cells covered by the flood of 2023. Change the visualization range in your Layer styling panel under "Symbology" **SYMBOLOGY ICON** to Min = 0 and Max = 1 and check if the rasterization was succesful. Youl layer should look something like this (Singleband grey" visalization):
+3. The layer `Rastermask_floods` should now have values of "1" instead of "0" in the cells covered by the flood of 2023. Change the visualization range in your Layer styling panel under "Symbology" **SYMBOLOGY ICON** to Min = 0 and Max = 1 and check if the rasterization was succesful. Youl layer should look something like this (Singleband grey" visualization):
 
  ```{figure} /fig/en_3.34_m8ex1_floodmask.png
 ---
@@ -227,13 +227,13 @@ align: center
 
 Your layer should look something like this:
 
-    ```{figure} /fig/en_3.34_m8ex1_popflood.png
-    ---
-    width: 600px
-    name: 
-    align: center
-    ---
-    ```
+```{figure} /fig/en_3.34_m8ex1_popflood.png
+---
+width: 600px
+name: 
+align: center
+---
+```
 
 Now we have teached our goal of generating a dataset displaying flood affected population. In the context of real world application in the humanitarian sector or the visualisation of data for people/institutions not familiar with GIS, it can be sensible to aggregate rasterdata on the level of administrative units. 
 
@@ -251,7 +251,7 @@ Now we have teached our goal of generating a dataset displaying flood affected p
     
     6. Name your layer "Floodaffected_pop_admin2", save it to your "output" folder and click `Run`.
 
-     ```{figure} /fig/en_3.34_m8ex1_zonalstat.png
+    ```{figure} /fig/en_3.34_m8ex1_zonalstat.png
     ---
     width: 600px
     name: 
@@ -266,15 +266,17 @@ Now we have teached our goal of generating a dataset displaying flood affected p
         - Which districts display the most population affected by the floods?
 
 
- Your output layer should look something like this
+ Your output layer should look something like this:
 
-     ```{figure} /fig/en_3.34_m8ex1_popflood_districts.png
-    ---
-    width: 600px
-    name: 
-    align: center
-    ---
-    ```
+```{figure} /fig/en_3.34_m8ex1_popflood_districts.png
+---
+width: 600px
+name: 
+align: center
+---
+```
+
+
 
 As we now have a rough idea which in which districts large populations where affected by floods we want to explore if precipitation data of 2023 shows similar patterns as heavy rainfall is a major predisposing factor for the occurence riverine floods: Are the districts experiencing flooding also experiencing the most rainfall?
 
@@ -289,13 +291,13 @@ As we now have a rough idea which in which districts large populations where aff
 
 Your result should look somehing like this:
 
-     ```{figure} /fig/en_3.34_m8ex1_precip_districts.png
-    ---
-    width: 600px
-    name: 
-    align: center
-    ---
-    ```
+```{figure} /fig/en_3.34_m8ex1_precip_districts.png
+---
+width: 600px
+name: 
+align: center
+---
+```
 
 
 7. Compare your Layer "Precip_admin2" with "Floodaffected_pop_admin2" and the flooded areas ("Pakistan_floodextent_2023). Would precipitation data be a good paramter for the forecasting of floodexosure in the year 2023? Also have a look at the layer "Pakistan_indusbasin_streams" as well as your DEM and try to explain the observed patterns of the spatial distribution of flooded areas and precipitation. 
