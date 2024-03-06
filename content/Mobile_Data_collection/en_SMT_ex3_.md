@@ -5,20 +5,17 @@
 
 ## Characteristics of the exercise 
 #### Aim of this exercise:
-Learn how you can visualize your Sketch Map Tool Outputs in either [QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_installation_wiki.html#qgis-installation) or [uMAP](https://umap.openstreetmap.fr/en/).
+Explore Sketch Mapping in a roleplay, either in the perespective of a mapping facilitator or as a partcipant and learn more about the challanges durign the mapping.
 
 #### Phase of participatory /community mapping 
-analysing participatory mapping
+participatory mapping
 #### Focus group (GIS-Knowlege Level)
-
-- Exercise builds on prior-knowledge of Sketch Map Tool. Make sure [Execise 1](https://giscience.github.io/gis-training-resource-center/content/Mobile_Data_collection/en_SMT_ex1_.html#sketch-map-tool-exercise-1-workflow-exercise) has been done before or knowlege on the background on Sketch Map Tool is there.
-
-- GIS Beginners-level: no specific knowledge required
+planners/ facilitators as well as practitioners how are involved in the preparation of the filed campaign or collecting the data themselves (Beginners-level: no specific knowledge about QGIS /Umap required)
 
 #### Type of trainings exercise:
-This exercise can be used in  a presence training and is focused on an hands-on experience with the Sketch Map Tool as well as carrying out a participatory mapping activity
+This exercise can be used in online and presence training and is focused on an hands-on experience in carrying out a participatory mapping activity
 #### Estimated time demand for the exercise.
-
+? 1h 
 
 
 ## Instructions for the trainers 
@@ -30,40 +27,63 @@ This exercise can be used in  a presence training and is focused on an hands-on 
 
 ### Available Material
 * Introduction Slides about the Sketch Map Tool LINK
-* Just the created map for (pre-printing)
+* 3 Case descritpitons (with precreated Sketch Maps)
+
+Hint: You can also create your own cases, just prepare a short descrition about the case and the Sketch Maps. 
 
 
 ### During the exercise:  
 #### Introduction: 
-- Introduce the idea, the aim and the general workflow of the Skech Map Tool beforehand.If you are focusing on EVCA you might use the [EVCA Skecth Map Tool Slides]() 
-- Provide access to the needed material 
-- check-in if there are questions or problems.
+- Introduce the idea, the aim and the benfetits of a Sketch Map. If you are focusing on EVCA you might use the [EVCA Skecth Map Tool Slides]() 
+- Provide access to the needed material.
+- Organize the groups (e.g. create breakout rooms) and assign the groups with their case. The group sizes shouldn´t be to big, so every one can contribute. For each case facilitators about 2-3 participants and 4-7 particants as community members.
+
+#### Time for group work: 
+- Check-in with the groups if there are questions or problems.
+- Prepare the presentation tool for the Wrap-Up.
 
 #### Wrap up: 
 - Take some time at the end to wrap up and that several people present their result map
 - Summarize challenges of participatory mapping approach
 - Discuss Benefits of showing results as a map
-- Time to for Open questions.
+- Time for Open questions.
 ::::
 
+## Background
 
-## Step-by step introduction for participants 
+### EVCA
+Sketch Maps are part of the Enhanced Vulnerability and Capacity Assessment (EVCA) Toolbox https://preparecenter.org/site/evca/toolbox/. 
+
+### Benefits of the Sketch Map
+
+#### During the data collection: 
+- Maps provide orientation and can guide discussions
+- With the sketching you achieve an immediate visualization of local knowledge.
+
+#### After the data collection:
+- Displaying and sharing the result 
+
+
+
+
+## Step-by-step introduction for participants 
 
 link where you can download this part as a short pdf to hand it to participants
 
+
+
 ## Exercise: Roleplay
+The particpatory mapping with the Sketch Maps is the key part of using the Sketch Map Tool. The usability of your collected data depends on the local knowledge of the particpants and how it is captured iwth markings on the maps. The idea of this exercise is to recreate such a mapping session by this to learn more about challenges druign the Mapping.
 
-### Background
+The facilitaotrs are doing a EVCA in one of the prepared case areas and focusing creating a exposure ans hazard map. The community memberes are taking part in this mapping, providing infromation but also have their own concerns or challenges.
 
-3 different cases
-To do: what shouzld be mapped in this axercise? Report risks? Report challenges? Map vulnerabilities?
 
---> wir sdollten vielleicht auf eine der EVCA maps abzielen zB Capacity und Vulnerability Map oder Exoosure and Hazard map
+### 1. Prepare for the roleplay
 
-### Prepare the roleplay and start discussion
+Seperate into groups. For each case study there should be two groups: One group represents the community members (4-7 particants) and on group represents the facilitators ( 2-3 participants). If your total group is too big, you can use case studies twice. 
 
-Seperate into groups. For each case study there should be two groups: One group represents the community members and on group represents the facilitators. If your total group is too big, you can use case studies twice. Read the case study carefully.
-
+1. Read the case study carefully.
+2. Get into your role. Discuss with your group (the community memebers or the facilitators) and perpare yourself what you need to do during the mapping.
 
 __Facilitators__
 
@@ -71,29 +91,42 @@ The group of facilitators will seperate from the rest in order to prepare their 
 
 - How do I best explain to the community why we do this activity and what is its added value, especially for them. How do I make them feel comfortable to share their information (concerning data protections, ethics)
 
-- What do we want to find our when talking to the community? What do we want/ nedd to map?
+- What do we want to find our when talking to the community? What do we want/ need to map?
 - What questions would we have to raise in order to get the right answers
 - How can I help community members to orientate on the map?
-What shouzld be ampped, how should be mapped
+- What should be mapped and how should be mapped? For this questions, take a look at the help page-subsection about Data collection in the field (Link to helppage needs to be created).
 
+- Make yourself familiar with the map, what can you detect, are their any landmarks you can use for orientation. 
 
 __Community__
 
-The community groups could prepare by distributing roles: old person, students, teacher, ... 
-Beyong that,give your roles some chacateristics: e.g. very suspious person, questions alot if community should be part of this activity and if there is an added value; fearful character, wants to participate but is afraid of sharing information and its consecuences, old person that has lots of knowledge but cannot orientate in the map, very motivated person that wants to map more that it is asked for etc.
+- Make some notes about the hazzard and the exposure you think one could have encounterd in the past. Guidng questions could be:
+    - Which areas was affected?
+    - How often is this happening?
+    - How sevier was this hazzard event e.g. how high was the flood level? 
+    - Which consequences could this have for indviduals? (e.g. destrucitons of houses, lost livilihoods)
+- Distribute some roles: old person, students, teacher, ... 
+- Beyond that, give your roles some characteristics, you can be creative here are just some ideas to start with:
+    - very suspious person, questions a lot if community should be part of this activity and if there is an added value
+    - fearful character, wants to participate but is afraid of sharing information and its consecuences
+    - old person that has lots of knowledge but cannot orientate in the map
+    - very motivated person that wants to map more that it is asked for
+    - ? Which other characters spring to your mind? Maybe someone how just moved to the place, has a lot of question to other particpants,...
 
 
 
-### Participatory Mapping Simulation
+### 2. Participatory Mapping Simulation
 
-- facilitators: present the project and the actitivy that is planned to be carried out
-- presentation of people present
-- show the map and help to orientate
-- community can ask questions
-- together try to map
+Now it is time to show your acting ability. It might seam a bit stange at frist but try to stay in your charcter this can help you a lot to understand challenges and motivations later on.
 
+The Participatory Mapping Simulation is lead by the faciliators.
+1. Present the project and the actitivy that is planned to be carried out
+2. Welcome round everyone is introducing themselfs shorty e.g. I`m Sam and I`m running a small farm in the 5th generation. 
+3. Start the Mapping by showing the map and helping the community meembers to orientate. 
+4. Try to map together. 
 
-### Upload your created maps
+The teacher will end this roleplay when the time is over. 
+### 3. Upload your created maps -> Optional?
 
 
 Take a foto of your Sketches or at least one sketch and load them into [sketch-map-tool.heigit.org](https://sketch-map-tool.heigit.org/) and choose 'Digitize your Sketch maps' on the right. Upload all your sketches in .png or .jpg format. You can mark your sketches and simply drag and drop them into the window. 
@@ -110,12 +143,10 @@ __Load your data__
 - which markings got detecetd bettet than others? Can I learn a lesson about how i should better mark in the furture?
 
 
+### 4. Final discussion and conclusion
 
 
-### Final discussion and conclusion
-
-
-- Discuss the challenges ayou encountered and potentials you recognized of conducting a participatory mapping activity. What were the learnings?
+- Discuss your result map. Are you satsfied with the map? What can you do with this results? What would you wish to change about this map?
+- Discuss the challenges you encountered and potentials you recognized of conducting a participatory mapping activity. What were the learnings?
 - Discuss what you would do different when mapping with the SKetch Map Tool (e.g. use only one colour, etc.)
 - Discuss the importance of a well planned activity in order to have usable outcomes
--
