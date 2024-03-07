@@ -303,9 +303,9 @@ As we now have a rough idea which in which districts large populations where aff
     5. Which statistical method suits the task if you want to compare precipitation across districts in the context of flooding? Choose a method.
 
     :::{dropdown} Solution
-        :open:
-        "Mean" is the appropriate method, as we want to determine the average amount of rainfall per area unit, which is a paramter that we can compare across districts.
-        :::
+    :open:
+    "Mean" is the appropriate method, as we want to determine the average amount of rainfall per area unit, which is a paramter that we can compare across districts.
+    :::
 
     6. Name your layer "Precip_admin2", save it to your "output" folder and click `Run`.
     7. Visualize the resuts by implementing a graduated classification of your new column in the attribute table "precip_mean"
