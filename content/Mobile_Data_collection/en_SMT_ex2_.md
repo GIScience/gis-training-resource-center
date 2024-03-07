@@ -15,19 +15,48 @@ SMT Traffic light
 ```
 
 ## Characteristics of the exercise 
+::::{grid} 2
+:::{grid-item-card}
+
 #### Aim of this exercise:
 - Get familiar with the OSM and Satellite-image base maps and the Quality reports.
 - Get a feeling about how to assess the suitability of a basemaps and familiarise yourself with possible problems.
 
+#### Type of trainings exercise:
+This exercise can be used in online and in presence, and is focused on group discussions.
+:::
+
+:::{grid-item-card}
+
+#### Focus group (GIS-Knowlege Level)
+Planners/Facilitators  (Beginners-level: no knowledge required about QGIS)
 
 #### Phase of participatory/community mapping 
 preparing participatory mapping
-#### Focus group (GIS-Knowlege Level)
-Planners/Facilitators  (Beginners-level: no knowledge required about QGIS)
-#### Type of trainings exercise:
-This exercise can be used in online and in presence, and is focused on group discussions.
+
+:::
+::::
+
+::::{grid} 2
+:::{grid-item-card}
+
 #### Estimated time demand for the exercise.
 In general: about 1:15 h to 1:35 h (depending on number of groups)
+:::
+
+:::{grid-item-card}
+#### Available data
+
+> insert data link
+
+Download the data for this exercise [here]() and unzip the folder
+
+In the data subfolder (\data\input), you will find the data you need to start the exercise.
+
+
+:::
+
+::::
 
 | Introduction| Groupe exercise | Wrap-up (with presentations)|
 | :-------------------- | :----------------- | :---------- |
