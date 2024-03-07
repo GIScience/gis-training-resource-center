@@ -67,6 +67,7 @@ parts:
       - file: content/Modul_2/en_data_sources.md
         sections:
           - file: content/Modul_2/en_qgis_data_sources_ex1.md
+          - file: content/Modul_2/en_qgis_data_sources_ex2.md
       - file: content/Modul_2/en_qgis_modul_2_exercises.md
         sections:
           - file: content/Modul_2/en_qgis_modul_2_ex_1.md

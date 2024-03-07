@@ -7,8 +7,7 @@ align: center
 ```
 ___
 # Welcome to the IFRC Network GIS Training Platform
-
-🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧 
+ 
 
 ::::{grid} 1
 :::{card}
