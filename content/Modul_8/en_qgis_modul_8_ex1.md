@@ -257,9 +257,9 @@ Now we have teached our goal of generating a dataset displaying flood affected p
         - Which statistical operation woud suit the task of calculating flood affected population per district?
 
     :::{dropdown} Solution
-        :open:
-        "Sum" is the appropriate method, as we want the total population count per district that results from the additions of the values of all cells with affected population per district.
-        :::
+    :open:
+    "Sum" is the appropriate method, as we want the total population count per district that results from the additions of the values of all cells with affected population per district.
+    :::
     
     
     6. Name your layer "Floodaffected_pop_admin2", save it to your "output" folder and click `Run`.
@@ -276,7 +276,7 @@ Now we have teached our goal of generating a dataset displaying flood affected p
 6. Now you can refresh your skills learned in the trainings about vector data fort the visualisation of your output layer:
     1. Perform a visualisation of the values in the newly generated field "pop_sum" with graduated classification and the colour palette "Reds"
     2. Choose an appropriate mode of classification, that fits the nature of the displayed data.
-    3. Enable labels with the district names (colum "xxxx")
+    3. Enable labels with the district names (**colum "xxxx"**)
         - Which districts display the most population affected by the floods?
 
 
