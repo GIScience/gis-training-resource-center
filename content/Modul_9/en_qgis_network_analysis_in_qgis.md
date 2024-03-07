@@ -1,5 +1,17 @@
 # Network Analysis in QGIS
 
+
+`````{warning} 
+OLD Stuff. with all exercises.
+
+Task 1 has been moved here:
+
+Task 2 here:
+`````
+
+
+
+
 ## Task 1 - assess water distribution access
 For Camp 18 in Kutupalong Refugee Camp, we have a dataset on the locations of water distribution points. Further we have data on the buildings (footprint and centroid) within camp 18. In the following task we will use the following dataset:
 * Camp18.gpkg
