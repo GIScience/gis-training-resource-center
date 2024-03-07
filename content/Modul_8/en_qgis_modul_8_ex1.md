@@ -62,6 +62,7 @@ align: center
 ```
 
 
+
 5. to get some basic information about your raster right click on the layer and select  `Properties`. Under the tab "Information" various different attributes of the raster like its Coordinate Reference Systeme (CRS), spatial resolution or basic statistical parameters are listed. 
     - What is the cellsize of the DEM?
     - What are the minimum and the maximum values?
@@ -86,9 +87,13 @@ align: center
  ```{figure} /fig/mod8_ex1_symbologypanel.png
 ---
 width: 600px
-name: 
+name: Symbologypanel
 align: center
 ---
+Symbologypanel of rasterlayers
+```
+```{Attention}
+In all following figures regarding tool interfaces in this exercise, menues or prompts that have to be altered for the given task are highlighted with red boxes.
 ```
 
 Your DEM (`Pakistan_DEM`) could look something like this now (Colour palette "Spectral" and interpolation "Linear")
@@ -96,9 +101,10 @@ Your DEM (`Pakistan_DEM`) could look something like this now (Colour palette "Sp
  ```{figure} /fig/mod8_ex1_dem.png
 ---
 width: 600px
-name: 
+name: DEM Example
 align: center
 ---
+Exemplary visualization of the DEM with linear interpolation
 ```
 
 10. Now we want to have a look at a different raster: Make the `Pakistan_pop_density_1km` layer visible. This raster stores values of population density per kilometer in 1km x 1km cells, so effectively the approximate population count per area. The initial visualization seems not to display the information of the different population densities very well, as it is mostly black. We will fix this with the following steps:
@@ -108,7 +114,7 @@ align: center
       - There are extremely many values in the very low value range
       - The vast majority of the values seem to be between around 0 to 3000.
 
-    3. Based on the exploration of the histogramm try a few **value boundaries** for visualisation at the top of your layer styling panel (under Symbolog **symbology icon**). Keep in mind that we look at population data and that population distribution is very spatially heterogenic most of the time. Try the following combinations and choose the one that suits the data best:
+    3. Based on the exploration of the histogramm try a few **value boundaries** for visualisation at the top of your layer styling panel (select the ![](/fig/mod8_ex1_symbologyicon.png) menu). Keep in mind that we look at population data and that population distribution is very spatially heterogenic most of the time. Try the following combinations and choose the one that suits the data best:
       - Min = 0    Max = 1000
       - Min = 0    Max = 3000
       - Min = 0    Max = 5000
@@ -116,10 +122,12 @@ align: center
 ```{figure} /fig/en_3.34_m8ex1_valuerange.png
 ---
 width: 600px
-name: 
+name: Valuerange panel
 align: center
 ---
+Prompts to adjust die valurange for visulization
 ```
+
 
 11. Have a look at the histogramm of the DEM and adjust the visualization range for the DEM too if you deem it necessary.
 
@@ -138,9 +146,10 @@ While you can choose from all different visalisation methods for your hillshade 
  ```{figure} /fig/en_3.34_m8ex1_hillshade.png
 ---
 width: 600px
-name: 
+name: Hillshade tool
 align: center
 ---
+Interface of the hillshade tool
 ```
 
 
@@ -159,16 +168,13 @@ Or by clicking `Layer`-> `Add Layer`-> `Add Vector Layer`/ `Add Raster Layer`.
     - The layer `Pakistan_indusbasin_streams` contains line geometries of the main streams of the Indus basin of Pakistan which experienced multiple devastating floods in the last decades.
     - The layer contains a multi polygon geometry of the mapped floodextens of the recent 2023 flood.
 
-```{Note}
-**Exposure definition**
-```
 
 To get a aproximation of flood exposure our first goal is to create a layer displaying the population that was directly affected by the recent floods. This involves several steps:
     
 1. First we will covert the `Pakistan_floodextents_2023.shp` vectorlayer to the rasterformat. To achieve this first create an empty raster that will be the base layer for our rasterization. 
     - Open the tool `Create constant raster layer` from your Processing toolbox panel. 
     - Under "Desired extent" choose "Calculate from layer" > `Pakistan_pop_dens_1km` to set the layer extent to the extent of xour floodextent layer.
-    -  Under "Target CRS" choose "EPSG:32642 - WGS 84 / UTM zone 42N" from the dropdoen menu. If the CRS does not pop up search it by clicking the **CRS ICON** icon next to the prompt.
+    -  Under "Target CRS" choose "EPSG:32642 - WGS 84 / UTM zone 42N" from the dropdoen menu. If the CRS does not pop up search it by clicking the ![](/fig/mod8_ex1_crsicon.png) icon next to the prompt.
     - As "Pixel size" choose "1000" as the unit of the choosen CRS is meters and the resolution should match our population raster with a cellsize of 1 x 1km.
     - Under "Constant value" choose "0". This is the value that will be assigned to all rastercells of the created raster.
     - Save the raster as "Rastermask_floods" in your "temp" folder and click `Run` to generate the empty raster.
@@ -176,9 +182,10 @@ To get a aproximation of flood exposure our first goal is to create a layer disp
  ```{figure} /fig/en_3.34_m8ex1_createraster.png
 ---
 width: 600px
-name: 
+name: Interface of the "Create constant raster layer" tool
 align: center
 ---
+Interface of the "Create constant raster layer" tool
 ```
 
 2. Now we will convert our Floodextent-Multipolygon ("Pakistan_floodextents_2023.shp") to the raster format. This process is called "Rasterization".
@@ -188,20 +195,21 @@ align: center
     - Under "A fixed value to burn" type in "1". This means that all rastercells of your input rasters that are covered by geometries of your input vector layer will be changed to the value "1".
     - Click on "Run" to rasterize your floodextents.
 
-3. The layer `Rastermask_floods` should now have values of "1" instead of "0" in the cells covered by the flood of 2023. Change the visualization range in your Layer styling panel under "Symbology" **SYMBOLOGY ICON** to Min = 0 and Max = 1 and check if the rasterization was succesful. Youl layer should look something like this (Singleband grey" visualization):
+3. The layer `Rastermask_floods` should now have values of "1" instead of "0" in the cells covered by the flood of 2023. Change the visualization range in your Layer styling panel under "Symbology" ![](/fig/mod8_ex1_symbologyicon.png) to Min = 0 and Max = 1 and check if the rasterization was succesful. Youl layer should look something like this (Singleband grey" visualization):
 
  ```{figure} /fig/en_3.34_m8ex1_floodmask.png
 ---
 width: 600px
-name: 
+name: Example Floodmask
 align: center
 ---
+Example rastermask of flooded areas
 ```
 
 4. Now we want to extract the population count within the flood zones. We do this by processing two rasters with the `Raster Calculator` (**Extensive Wiki Article**)
     1. Open the raster Calculator from your processing toolbox Panel or via `Raster` > `Raster Calculator`.
-    2. As "Input Layers" layers select your rastermask "Rastermask_floods" and the population layer "Pakistan_pop_dens_1km.tif" by clicking on the **THREE DOTS ICon** and ticking the boxes next to the two layers.
-    3. Click on the **EXPRESSION ICON** to open the expression interface. You might know a very similar panel from the "field calculator" for conducting calculations in the attribute table of verctorlayers.
+    2. As "Input Layers" layers select your rastermask "Rastermask_floods" and the population layer "Pakistan_pop_dens_1km.tif" by clicking on the ![](/fig/mod8_ex1_optionsicon.png) icon and ticking the boxes next to the two layers.
+    3. Click on the ![](/fig/mod8_ex1_expressionicon.png) icon to open the expression interface. You might know a very similar panel from the "field calculator" for conducting calculations in the attribute table of verctorlayers.
     4. Enter the following expression to  "Raster Calculator Expression" Panel:
 
     ```md
@@ -218,9 +226,10 @@ align: center
     ```{figure} /fig/en_3.34_m8ex1_rastercalc_popflood.png
     ---
     width: 600px
-    name: 
+    name: Rastercalculator interface
     align: center
     ---
+    Tool interface of the "Raster calculator"
     ```
 
     8. For the output layer select a visualization range of Min = 0 and Max = 500 and the colour palette "Mako". the difference in Population density within the areas of the past floods should now be visible.
@@ -230,9 +239,10 @@ Your layer should look something like this:
 ```{figure} /fig/en_3.34_m8ex1_popflood.png
 ---
 width: 600px
-name: 
+name: Example popflood
 align: center
 ---
+Raster of Population density in flooded areas
 ```
 
 Now we have teached our goal of generating a dataset displaying flood affected population. In the context of real world application in the humanitarian sector or the visualisation of data for people/institutions not familiar with GIS, it can be sensible to aggregate rasterdata on the level of administrative units. 
@@ -243,20 +253,24 @@ Now we have teached our goal of generating a dataset displaying flood affected p
     2. As "Input Layer" choose the layer "Pakistan_admin2" with the polygons of administrative districts.
     3. As "Raster Layer" choose "Pop_floodextent".
     4. Defining a prefix for your output column is optinal but can be helpful for finding the caculatedb values in large attribute tables. Choose "pop_" as "Output column prefix".
-    5. Below "Statistics to calculate" click on the **THREE_DOTS** to acess the different options of statistical operations available for calculating polygon values based on your raster.
+    5. Below "Statistics to calculate" click on the ![](/fig/mod8_ex1_optionsicon.png) icon to acess the different options of statistical operations available for calculating polygon values based on your raster.
         - Which statistical operation woud suit the task of calculating flood affected population per district?
 
-    Solution:
-    "Sum" is the appropriate method, as we want the total population count per district that results from the additions of the values of all cells with affected population per district.
+    :::{dropdown} Solution
+        :open:
+        "Sum" is the appropriate method, as we want the total population count per district that results from the additions of the values of all cells with affected population per district.
+        :::
+    
     
     6. Name your layer "Floodaffected_pop_admin2", save it to your "output" folder and click `Run`.
 
     ```{figure} /fig/en_3.34_m8ex1_zonalstat.png
     ---
     width: 600px
-    name: 
+    name: Zonalstatistics Interface
     align: center
     ---
+    Interface of the "Zonal statistics" tool
     ```
 
 6. Now you can refresh your skills learned in the trainings about vector data fort the visualisation of your output layer:
@@ -271,9 +285,10 @@ Now we have teached our goal of generating a dataset displaying flood affected p
 ```{figure} /fig/en_3.34_m8ex1_popflood_districts.png
 ---
 width: 600px
-name: 
+name: Example popflood per district
 align: center
 ---
+Polygonlayer of flood affected population per district
 ```
 
 
@@ -286,6 +301,12 @@ As we now have a rough idea which in which districts large populations where aff
     2. As "Input Layer" again choose "Pakistan_admin2". The "Rasterlayer this time is "Pakistan_precip_2023".
     3. Choose the prefix "precip_".
     5. Which statistical method suits the task if you want to compare precipitation across districts in the context of flooding? Choose a method.
+
+    :::{dropdown} Solution
+        :open:
+        "Mean" is the appropriate method, as we want to determine the average amount of rainfall per area unit, which is a paramter that we can compare across districts.
+        :::
+
     6. Name your layer "Precip_admin2", save it to your "output" folder and click `Run`.
     7. Visualize the resuts by implementing a graduated classification of your new column in the attribute table "precip_mean"
 
@@ -294,9 +315,10 @@ Your result should look somehing like this:
 ```{figure} /fig/en_3.34_m8ex1_precip_districts.png
 ---
 width: 600px
-name: 
+name: Mean precip per district
 align: center
 ---
+Polygonlayer of mean precipitation per district in 2023
 ```
 
 
