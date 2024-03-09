@@ -27,14 +27,14 @@ There are multiple ways how to get data from OpenStreetMap (OSM).
 
 The website GEOFABRIK offers the possibility to download the full OSM dataset for a region.
 
-1.	Go to https://download.geofabrik.de/ and navigate to the Mauritius  dataset by clicking on `Africa` -> ` Mauritius`
+1.	Go to __https://download.geofabrik.de/__ and navigate to the Mauritius  dataset by clicking on `Africa` -> ` Mauritius`
 2.	Under __Commonly Used Formats__ select the option `mauritius-latest-free.shp.zip` and download the file. Place it somewhere on your computer where you can find it again and unzip it.
 3.	Check out the content of the folder. There are many different shapefiles, each containing one kind of OSM data. The whole list of layers and what they include can be found [here](https://download.geofabrik.de/osm-data-in-gis-formats-free.pdf). As well as a short overview below.
 
 6.	 Open a new QGIS project and save it in the “project” folder of your exercise folder.
 7.	Load the file “gis_osm_places_a_free_1.shp” into your QGIS. This polygon layer contains the boundaries of different features reaching from named farm to island. Take some time to explore the data by using the attribute table. 
 8. (Optional) You can select all features within the layer with the “fclass” = “island” and export them as a new layer.  This will allow you to start creating a map of the islands of Mauritius.
-9. Load the file “gis_osm_buildings_a_free_1.shp” into your QGIS. This polygon layer contains all buildings mapped on the OSM for Mauritius. Take some time to explore the layer. You can add a satellite base map by using the [QuickMapService plugin(https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#basemaps-from-quickmapservices-plugin)] to check if there are unmapped buildings.
+9. Load the file “gis_osm_buildings_a_free_1.shp” into your QGIS. This polygon layer contains all buildings mapped on the OSM for Mauritius. Take some time to explore the layer. You can add a satellite base map by using the [QuickMapService plugin](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#basemaps-from-quickmapservices-plugin) to check if there are unmapped buildings.
 10. Load the dataset “gis_osm_landuse_a_free_1.shp” into QGIS. Check out the dataset and use the classification function to get a better overview.
     * Right-click on the layer “Bgis_osm_landuse_a_free_1” in the `Layer Panel` -> `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
     * On the top you find a dropdown menue. Open it and choose `Categorized`. Under `Value` select “fclass”.
@@ -50,7 +50,7 @@ As you can see, GEOFABRIk is great if you want to get complete OSM datasets for 
 
 ### Task: HOT Export Tool
 
-The HumanitarianOpenStreetMapTeam (HOT) is an NGO specialising in utilizing an extending OSM for humanitarian purposes. HOT offers a browser-based tool to download OSM data with good options to specify region, time, feature type and data format.
+The [umanitarianOpenStreetMapTeam (HOT) Export Tool](https://export.hotosm.org/v3/) is an NGO specialising in utilizing an extending OSM for humanitarian purposes. HOT offers a browser-based tool to download OSM data with good options to specify region, time, feature type and data format.
 1.	Go to the HOT Export tool. To use the tool you need a OSM account. If you don’t have one you need to create on. Click on `Log in`. In the new window select the option to create a new account. 
 2.	With your OSM account you can log in directly into the HOT Export tool by clicking on `Log in`.
 3.	In this example, we want to download all features of the OSM related to banking and finance on the main island of Mauritius. 
