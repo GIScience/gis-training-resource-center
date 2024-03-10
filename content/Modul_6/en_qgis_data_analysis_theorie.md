@@ -362,13 +362,39 @@ Red = Pivot field; Blue = Input field; Green = Values field
 
 >insert links
 
-Spatial interpolation uses point data to estimate values at other unknown points. This is extremely useful for spatial pheonomena that are [continuous](link), such as rainfall or temperature. For example, you have point data of the temperatures at weather stations, but you want to estimate the temperatures in between these points. Spatial Interpolation can estimate the temperature in between those points.
+Spatial interpolation uses point data to estimate values at other unknown points. This is extremely useful for spatial pheonomena that are [continuous](link), such as rainfall or temperature. For example, you have point data of the temperatures at weather stations, but you want to estimate the temperatures in between these points. Spatial Interpolation can estimate the temperature in between those points. This form of interpolation is called a __statistical surface__. Interpolation can be used to calculate elevation data, precipitation, snow accumulation, water table and population density for example. 
 
-### Spline Interpolation
+```{figure} ../../fig/interpolation_example_temperature.png
+---
+name: interpolation example temperature heidelberg
+width: 400 px
+---
+Temperature map interpolated from weather stations in Heidelberg, Germany using IDW-interpolation.
+```
+
+Interpolating data can be highly useful since an extensive data collection is costly and rarely possible. Data collection for continuous phenomena is usually conducted only at a small number of locations. Interpolation models use these points to calculate a raster surface with estimated values for each raster cell. 
+
+There are many differnt interpolation methods, each suited for another type of phenomenon or able to take into account different characteristics. In GIS, the most commonly used interpolation methods are __Spline interpolation__, __Inverse Distance Weighted Interpolation (IDW)__, and __Kriging__. In the following subchapters, we will take a look at these methods, and discuss their strengths and shortcomings.
 
 ### IDW-Interpolation (Inverse Distance Weighted)
 
+In the IDW interpolation method, the distance of a sample point to the point that is to be calculated dictates how much the value of the sample points influences the value of the unknown point. The weight of a point is assigned to sample points by assigning a weighting coefficient that dictates how much the influence of a sample point will drop as the distance increases. The further away the known sample point is located, the less influence it has on the point that is to be calculated. 
+
+```{figure} ../../fig/en_idw_explanation.png
+---
+name: IDW interpolation explanation, Mitas & Mitasova 1999
+width: 500px
+---
+Inverse Distance Weighted interpolation based on weighted sample point distance (left). Interpolated IDW surface from elevation vector points (right). (Source: Mitas, L., Mitasova, H. (1999). Spatial Interpolation. In: P.Longley, M.F. Goodchild, D.J. Maguire, D.W.Rhind (Eds.), Geographical Information Systems: Principles, Techniques, Management and Applications, Wiley.)
+```
+
+Keep in mind that IDW interpolation has a few __disadvantages__. For example, the quality of the calculated statistical surface decreases, if the distribution of sample points is uneven. Additionally, the highest and lowest values in the interpolated surface only occur at sample points, which is probably not the case in the real world. This often results in peaks or pits aroung the sample data points (see [IDW interpolatino example](giscience.github.io/gis-training-resource-center/content/Modul_6/en_qgis_data_analysis_theorie.html#Interpolation)) (adopted from the QGIS documentation). 
+
+### Spline Interpolation
+
 ### Kriging
+
+### Symbolizing continuous data
 
 
 
