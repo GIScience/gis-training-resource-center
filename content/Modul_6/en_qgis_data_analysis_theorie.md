@@ -354,8 +354,7 @@ Red = Pivot field; Blue = Input field; Green = Values field
 ```
 
 :::
-::::
-
+  
 ## Selecting appropriate locations according to a set of criteria
 
 ## Interpolation 
