@@ -2,9 +2,11 @@
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+🚧This training platform and the entire content is under ⚠️construction⚠️ and 
+may not be shared or published! 🚧
 
-At its core, GIS is a computer-based system to organise data with a spatial component (_geodata_). There are three core functions of GIS: 
+At its core, GIS is a computer-based system to organise data with a spatial 
+component (_geodata_). There are three core functions of GIS: 
 
 1. Connecting data to maps 
 2. Visualisation, organisation and processing of spatial data
@@ -154,9 +156,8 @@ analysis tool allows us to get the most out of the data we have and to solve a
 wide variety of problems. The points below give you an simple definition of the 
 concept.
 
-However, the example of John Snows Colera Map of 1854 is THE example of what 
-spatial Analysis actually is.
-
+However, the example of John Snow's cholera map of 1854 is a popular example of 
+how spatial analysis can help to solve problems. 
 
 - Spatial analysis __studies entities and events__ using their topological, 
   geometric, or geographic properties. 
@@ -166,19 +167,22 @@ spatial Analysis actually is.
   questions and __find answers__ to those questions.
 
 
-### An Example from the Past: John Snows' Cholera Map
+### An example from the past: John Snow's cholera map
 
-In 1854 an __outbreak of cholera__ occurred in London, England. The most common 
-theory was that the disease was spread through the air. Dr.John Snow believed 
-that the danger was __in the water__. He made a map to analyse the __number of 
-deaths__ in Soho per house block. He added the __location of water pumps__ on 
-the map. He found a __correlation__ between one specific water pump and the 
-number of infections.
+In 1854, an __outbreak of cholera__ occurred in the Soho area of London, England. 
+The most common theory was that the disease was spread through the air. 
+Dr. John Snow believed that the danger was __in the water__. He made a map to 
+analyse the __number of deaths__ in every housing block in Soho. He added the 
+__location of water pumps__ on the map. He found a __correlation__ between one 
+specific water pump and the number of infections.
 
-__Dr. Snow's map of the Cholera outbreak of 1854__, and the reports that it 
-accompanied, __won over the predominant "Miasma Theory"__ that the disease __was 
+__Dr. Snow's map of the cholera outbreak of 1854__, and the reports that it 
+accompanied, __won over the predominant "miasma theory"__ that the disease __was 
 spread through the air__. Residents were now warned to __boil their water__, and 
-so ended the last Cholera outbreak London has seen.
+so ended the last cholera outbreak London has seen.
+
+This interactive version of the cholera map shows it overlaid on a basemap of 
+modern London. 
 
 ```{figure} /fig/John_snow_zoom_map2.png
 ---
@@ -189,91 +193,88 @@ align: center
 John Snow Cholera map of London (1854)
 ```
 __Using GIS__, several measures of spatial central tendency have been applied to 
-the dataset, revealing that the Spatial Mean (the geographic center of the distribution 
-of deaths) of the outbreak lies __within 35 meters of the Broad Street Pump__, 
-identified as the __source of contamination__ in the 1854 outbreak. 
+the dataset, revealing that the Spatial Mean (the geographic center of the 
+distribution of deaths) of the outbreak lies __within 35 meters of the Broad 
+Street Pump__, identified as the __source of contamination__ in the 1854 outbreak. 
 
 %%html
 <iframe src="https://www.arcgis.com/apps/PublicInformation/index.html?appid=d7deb67f810d46dfacb80ff80ac224e9" width="750" height="500"></iframe>
 
 
+# Common map types in humanitarian response
 
-# Most used map types in humanitarian responses?
+The humanitarian sector tends to use certain types of maps regularly. These are
+outlined below. 
 
-Now you now the concept of GIS and Spatial Analysis, we want to have a closer 
-look at typical map products in humanitariann assistance.
-
-
-### General Reference Maps
+### General reference maps
 
 -  Show important __physical features__ of an area
 -  Include __natural and man-made features__
 -  Usually meant to help for __navigation__ or discovery of locations
 -  Usually fairly __simple__
--  Can be __stylized__ based on the intended audience
+-  Can be __styled__ based on the intended audience
 
+![Reference map of Iraq](/fig/en_Reference_Map_Iraq.png) _Reference map of Iraq 
+by REACH Initiative ([source]())_ <!-- FIXME: add source! -->
 
-![Reference map of Iraq](/fig/en_Reference_Map_Iraq.png)  Reference map of Iraq
-
-### Infrastructure Maps
+### Infrastructure maps
 
  - Display relevant features and __structures__ in a specific area
  - Help __planning__ and navigation
  - High level of __detail__
  - Produced after field __data collection__
 
-
 ![Infrastructure map of Nigeria](/fig/en_Infrastructure_Map_Nigeria.png) 
-Infrastructure map of Nigeria
- 
-### Thematic Maps
+_Infrastructure map of a displaced persons camp in Borno State, Nigeria, produced 
+by Reach Initiative ([source]())_ <!-- FIXME: add source! -->
+
+### Thematic maps
 
   - Focus on a __specific theme__ or subject
   - Features on the map __represent the subject__ being mapped
   - Use __colours and shapes__ to display quantitative and qualitative data
   - Rise __awareness__ about a specific subject
 
+![Thematic map of Africa](/fig/en_Thematic_Map_Africa.png) 
+_Thematic map of Africa_
+<!-- FIXME: explain the map and add source -->
 
-![Thematic map of Africa](/fig/en_Thematic_Map_Africa.png) Thematic map of Africa
-
-### Analysis Maps
+### Analysis maps
 
   - __Analyse data__ in respect to their geographic location
   - Create __new layers of information__ from the interaction between multiple features
   - Use colours and shapes __to help users__ understand specific events
   - __Support__ decision makers
   - Generally display a greater __level of detail__
-
-  <tagName>  <tagName>
   
-![Analysis map of Yemen](/fig/en_Analysis_Map_Yemen.png) Analysis map of Yemen
+![Analysis map of Yemen](/fig/en_Analysis_Map_Yemen.png) 
+_Analysis map showing areas affected by flooding in Yemen, produced by Reach 
+Initiative ([source]())_ <!-- FIXME: add source -->
 
-### Situation/Descriptive Maps
+### Situation/descriptive maps
 
   - Used to __better visualize__ a specific ongoing and/or past situation 
   - Maps can include __narrative__ and graphic elements 
   - Can be used in reports and/or to __raise awareness__ on a specific event 
 
-<tagName>  <tagName>
+![Situation map from Tilkaif to Mosul](/fig/en_Situation_Map_Tilkaif_Mosul.png) 
+_Situation map from Tilkaif to Mosul_ <!-- FIXME: explain the map and add source -->
 
-![Situation map from Tilkaif to Mosul](/fig/en_Situation_Map_Tilkaif_Mosul.png)Situation map from Tilkaif to Mosul
 
- ## Web & Mobile GIS Applications
-
+ ## Web & mobile GIS applications
 
 You can use GIS through __multiple applications__, from desktop software, to 
 online platforms, to mobile apps. At a basic level, you can perform limited 
 geospatial tasks with apps such as __Google Earth__ or __Google Maps__.
 As a GIS professional, you will mostly use a __desktop software__, which could 
-be either: Proprietary e.g ArcGIS or Open source e.g. QGIS.
-However, web applications can be relevant for obtaining data or to share data 
-and maps with others.
+be either proprietary (requiring a license, e.g ESRI's ArcGIS) or open-source 
+(available to use for free, e.g. QGIS). However, web applications can be relevant 
+for obtaining data or to share data and maps with others.
  
-Below we have listed some applications you should know. With some of those, you 
-will work in other training modules.
+Here are some online GIS platforms and tools you should be aware of; we'll use 
+some of them later in the training. 
 
-
-- __[Open Street Maps (OSM)](https://www.openstreetmap.org/#map=14/49.4192/8.7235)__: 
+- __[OpenStreetMap (OSM)](https://www.openstreetmap.org/)__: 
 An __open geographic database__ updated and maintained by a community of volunteers 
 via open collaboration. It works using a tag system (each feature is categorized 
 through tags).
@@ -282,7 +283,7 @@ An online GIS application based on OpenStreetMap. You can upload standard geodat
 formats and do nice visualisation. Umap is very good for sharing maps and 
 presenting basic interactive maps.
 - __[Felt](https://felt.com/)__: 
-Felt is similar to uMap but even pritteier. An __easy tool__ to create maps. You 
+Felt is similar to uMap but even pretteier. An __easy tool__ to create maps. You 
 can draw, create feature and upload shapefiles. Plus, you can connect it to you 
 QGIS with an plugin. In this way, you can use Felt for collaborative work.
 - __[Wikimapia](https://wikimapia.org/#lang=de&lat=49.402500&lon=8.633100&z=12&m=w)__: 
@@ -292,18 +293,18 @@ world. It uses __local knowledge__, making it particularly useful in remote area
 Limited, but it allows to upload layers, create and export features, __share 
 simple maps__.
 
-### Geo Mobile Apps Overview 
+### Mobile apps overview 
 
-Mobil GIS Apps are highly important for navigation and mobil data collection. 
+Mobile GIS apps are important for navigation and mobile data collection. 
 Some of the most important free and open-source apps are listed below. 
 
 - __[Qfield](https://docs.qfield.org/)__: Through QFieldCloud, you can __open 
 your QGIS projects__ on Qfield on your mobile device. Any edit made on the map 
 in the app can then be synced and displayed in QGIS.
 - __[OsmAnd](https://osmand.net)__: Using OSM basemap, it’s a good app for 
-__offline navigation__. You can upload kml-files to display on the map, as well 
-as recording your trips and then export them to kml.
-- __[GeoODK](http://geoodk.com/index.htm)__: Combines __ODK with a geo app__. 
+__offline navigation__. You can upload `.kml` files to display on the map, as well 
+as recording your trips and then exporting them.
+- __[GeoODK](http://geoodk.com/index.htm)__: Combines __OpenDataKit (ODK) with a geo app__. 
 You can collect data through ODK surveys and display them on a map, in addition 
 to easily create polygons and add information to them.
 
