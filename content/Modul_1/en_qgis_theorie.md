@@ -286,10 +286,10 @@ presenting basic interactive maps.
 Felt is similar to uMap but even pretteier. An __easy tool__ to create maps. You 
 can draw, create feature and upload shapefiles. Plus, you can connect it to you 
 QGIS with an plugin. In this way, you can use Felt for collaborative work.
-- __[Wikimapia](https://wikimapia.org/#lang=de&lat=49.402500&lon=8.633100&z=12&m=w)__: 
+- __[Wikimapia](https://wikimapia.org/)__: 
 Online editable map service. Updated and maintained by contributors all over the 
 world. It uses __local knowledge__, making it particularly useful in remote areas.
-- __[Google Maps](https://www.google.com/maps/d/)__:
+- __[Google Maps](https://www.google.com/maps)__:
 Limited, but it allows to upload layers, create and export features, __share 
 simple maps__.
 
