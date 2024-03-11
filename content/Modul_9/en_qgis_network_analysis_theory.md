@@ -63,7 +63,7 @@ You can determine directions or standard routes, which unveil the shortest path 
 >This module provides an accessibility analysis based on OpenRouteService isochrones.
 
 #### Isochrones
-- Different profiles: car, pedestrian, Bike, Heavy Goods vehicles
+- Different profiles: car, pedestrian, bike, heavy goods vehicles (HGV)
 - Avoid areas, avoid, road types
 - Further dynmaic prefernces: green routing, noise aware routing, landmark routing, (heat aware routing)
 - Based on profile and preferences what area is reachable within a given time limit?
@@ -71,4 +71,4 @@ You can determine directions or standard routes, which unveil the shortest path 
 -  Max. 60minutes on the public API
 -  SDKs & Plugins: Python, R, JavaScript, QGIS Plugin "ORS Tools"
   
-
+For more information click here: [https://openrouteservice.org/] 
