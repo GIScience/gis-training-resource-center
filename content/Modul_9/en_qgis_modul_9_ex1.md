@@ -5,8 +5,19 @@ For Camp 18 in Kutupalong Refugee Camp, we have a dataset on the locations of wa
 ## Catchments with openrouteservice isochrones
 Make sure you installed the ORS Tools plugin and set it up already with an API Key. If not, consult Openrouteservice & QGIS Plugin before proceeding.
 
+| Open the **Processing Toolbox** and scroll down to **ORS Tools** |
+| choose **Isochrones and Isochrones** from layer.                 |
+| Leave all settings at default except:                            |
+|--------------------------------:|:------------------------------:| 
+| Input Point Layer               |                    waterpoints |
+| Travel mode                     |                   foot-walking |
+| Dimension                       |                       distance |
+| Comma separated ranges          |                            500 |
+
+    
+
 :::{dropdown} Watch here:
-TABELLE!
+VIDEO
 :::
 The result layer shows for every waterpoint a 500m catchment area for pedestrian travel mode. 500m is the maximum distance from any household to the water point according to `The Sphere Handbook: Humanitarian Charter and Minimum Standards in Humanitarian Response` p. 106. There are other key indicators like maximum number of people using the facility, queuing time, etc. We will work on the distance as we miss further information like the flow rate per water point or the household size per building.
 
