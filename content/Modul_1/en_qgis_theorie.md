@@ -4,7 +4,12 @@ __🔙[Back to Homepage](/content/intro.md)__
 
 🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
-At its core GIS is a computer-based system to organises data with any spatial component. Also, called geodata. There are three core functions of GIS. 
+At its core, GIS is a computer-based system to organise data with a spatial component (_geodata_). There are three core functions of GIS: 
+
+1. Connecting data to maps 
+2. Visualisation, organisation and processing of spatial data
+3. Analysing spatial data
+
 
 ```{figure} /fig/GIS_Core_functunality.drawio.svg
 ---
@@ -12,10 +17,15 @@ height: 500px
 name: GIS_Core_functunality
 align: center
 ---
-GIS Core functunality
+GIS core functunality
 ```
-Around this core of GIS evolves a galaxy of techniques, tools and applications. Some are listed in the graphic below. As a GIS user, you need to know which techniques and tools you need to use to achieve a specific result. Although there are so many techniques and tools out there, a surprisingly small number of them are sufficient to fulfil most tasks in the field of GIS.
-Here at our GIS Training Resource Center, you can learn exactly these basic techniques. 
+Around these core GIS features there are a wide range of techniques, tools and 
+applications - some are listed in the graphic below. As a GIS user, you need to 
+know which techniques and tools to use to achieve a specific result. Although 
+there are lots of tools and techniques out there, a surprisingly small number of 
+them are sufficient to fulfil most tasks you will have. This platform provides 
+materials to teach the tools that will be most useful for the kinds of mapping 
+that are used in the humanitarian sector. 
 
 ```{figure} /fig/GIS_SIMS.drawio.svg
 ---
@@ -24,25 +34,33 @@ width: 900px
 name: en_qgis_GIS_HA
 align: center
 ---
-GIS in Humanitarian Assistance
+GIS in humanitarian assistance
 ```
-In the world of GIS, the product of your work will be most of the time a map. In the humanitarian work, the range of published maps is huge. Just have a look at the graphic above.
-However, most of them can be produced with the basic techniques you will learn here, depending on the available data. 
 
-To get a better understanding of the use of GIS in humanitarian assistance, we dot some example from different organisations for you. Some of the map products puplished by these organisation you will find in the graphic above.
+In the world of GIS, the product of your work will be most of the time a map. 
+The graphic above shows the huge range of mapping products used in the 
+humanitarian sector. 
 
-__Examples of GIS used by Humanitarian Organisations__
+To get a better understanding of how GIS is used in the humanitarian sector, we 
+have collected some examples from different organisations in the section below 
+(click the different tabs to view the examples by organisation). 
+
+
+## Examples of GIS used by Humanitarian Organisations
 
 ::::{tab-set}
 
 :::{tab-item} Lebanese Red Cross
-The Lebanese Red Cross (LRC) has used GIS for years and produces stunning results. Here is talk of LBC staff, have a look.
+This video gives an overview of GIS use in the Lebanese Red Cross in their 
+operations, including informing ambulance services and supporting blood donations.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BNOgW9Koz7A?si=gpXNpFRmjfoPV1dX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 :::
 
 :::{tab-item} IFRC
 
-The IFRC publishes a wide variety of maps in many different contexts. You can find some of those on [RelifeWeb](https://reliefweb.int/updates?advanced-search=%28S1242%29_%28F12%29).
+The IFRC publishes a wide variety of maps in many different contexts. You can 
+find some of those on [RelifeWeb](https://reliefweb.int/updates?advanced-search=%28S1242%29_%28F12%29).
 :::
 
 :::{tab-item} ICRC
