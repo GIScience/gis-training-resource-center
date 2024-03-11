@@ -47,7 +47,7 @@ align: center
 ### Sign up and setup
 -  You will be redirected to the OpenRouteService site, where you need to create     a user account
   
-```{figure} /fig/request_api.png
+```{figure} /fig/sign_up_ORS.png
 ---
 width: 700px
 name: basic classification
@@ -61,7 +61,7 @@ align: center
 -  Choose a "Token Name" in the field to the right and "Create token"
 -  The token will directly appear above in the "key" field
 
-```{figure} /fig/request_token.png
+```{figure} /fig/ORS_token.png
 ---
 width: 700px
 name: basic classification
