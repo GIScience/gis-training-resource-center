@@ -1,6 +1,6 @@
 # Plugin: Openrouteservice (ORS) tools
 
-## OpenRpouteService QGIS Plugin 
+## OpenRouteService QGIS Plugin 
 
 ### Install the Plugin
 -  Go under tab "Plugins"
