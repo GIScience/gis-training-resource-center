@@ -128,14 +128,16 @@ parts:
   - caption: Modul 9- Network Analysis
     chapters:
       - file: content/Modul_9/en_qgis_network_analysis_theory.md
+      - file: content/Modul_9/en_qgis_network_analysis.md
+      - file: content/Modul_9/en_qgis_openrouteservice_tools.md
+      - file: content/Modul_9/en_qgis_centrality.md
       - file: content/Modul_9/en_qgis_modul_9_exercises.md
         sections:
           - file: content/Modul_9/en_qgis_modul_9_ex1.md
           - file: content/Modul_9/en_qgis_modul_9_ex2.md
           - file: content/Modul_9/en_qgis_modul_9_ex3.md
-      - file: content/Modul_9/en_qgis_network_analysis.md
-      - file: content/Modul_9/en_qgis_openrouteservice_tools.md
-      - file: content/Modul_9/en_qgis_qneat3.md
+          - file: content/Modul_9/en_qgis_modul_9_ex4.md
+          - file: content/Modul_9/en_qgis_modul_9_ex5.md
   - caption: GIS in Anticipatory Action
     chapters:
       - file: content/GIS_AA/en_qgis_drought_trigger_somalia.md
