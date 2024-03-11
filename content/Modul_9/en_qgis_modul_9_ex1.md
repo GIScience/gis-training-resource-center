@@ -5,14 +5,14 @@ For Camp 18 in Kutupalong Refugee Camp, we have a dataset on the locations of wa
 ## Catchments with openrouteservice isochrones
 Make sure you installed the ORS Tools plugin and set it up already with an API Key. If not, consult Openrouteservice & QGIS Plugin before proceeding.
 
-| Open the **Processing Toolbox** and scroll down to **ORS Tools**:||
-| choose **Isochrones and Isochrones** from layer.                :||
-| Leave all settings at default except:                           :||
-|--------------------------------:|:-------------------------------:| 
-| Input Point Layer               |                     waterpoints |
-| Travel mode                     |                    foot-walking |
-| Dimension                       |                        distance |
-| Comma separated ranges          |                             500 |
+| Open the **Processing Toolbox** and scroll down to **ORS Tools**:|
+| choose **Isochrones and Isochrones** from layer.                :|
+| Leave all settings at default except:                           :|
+|--------------------------------:|:------------------------------:| 
+| Input Point Layer               |                    waterpoints |
+| Travel mode                     |                   foot-walking |
+| Dimension                       |                       distance |
+| Comma separated ranges          |                            500 |
 
 | Open the Processing Toolbox and scroll down to ORS Tools choose Isochrones and Isochrones from layer. Leave all settings at default except: |                                            |
 |----------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|
