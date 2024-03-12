@@ -39,7 +39,7 @@ align: center
 GIS in humanitarian assistance
 ```
 
-In the world of GIS, the product of your work will be most of the time a map. 
+In the world of GIS, the product of your work will be a map most of the times. 
 The graphic above shows the huge range of mapping products used in the 
 humanitarian sector. 
 
@@ -112,8 +112,7 @@ own data platform - [WFP Geonode](https://geonode.wfp.org/) and on the
 [Humanitarian Data Exchange (HDX)](https://data.humdata.org/organization/wfp?). 
 You can find maps published by WFP on [RelifeWeb](https://reliefweb.int/updates?advanced-search=%28S1741%29_%28F12%29).  
 WFP's [Geospatial Activities Catalogue](https://www.wfp.org/publications/wfp-geospatial-activities-catalogue)
-outline's to organisation's geospatial services, which includes developing  
-dashboards like this one one [cash assistance during the COVID-19 pandemic in Jordan](https://www.arcgis.com/apps/webappviewer/index.html?id=93b4605fff13415bb8d2decd0e9158e0).
+outline's to organisation's geospatial services, which includes developing dashboards like this one one [cash assistance during the COVID-19 pandemic in Jordan](https://www.arcgis.com/apps/webappviewer/index.html?id=93b4605fff13415bb8d2decd0e9158e0).
 
 WFP also builds dashboards for advocacy, like HungerMap Live:
 
@@ -130,8 +129,7 @@ and sector-specific analysis.
 
 :::{tab-item} MapAction
 MapAction produces maps and geospatial data support decision-making in emergency 
-response. Their [maps and data](https://maps.mapaction.org/) page gives shows 
-recent products they have published, and their [product catalogue](https://guides.mapaction.org/) 
+response. Their [maps and data](https://maps.mapaction.org/) page shows recent products they have published, and their [product catalogue](https://guides.mapaction.org/) 
 gives an overview of the types of services they provide. 
 :::
 
@@ -152,7 +150,7 @@ gives an overview of the types of services they provide.
 ## What is spatial analysis?
 
 Many map products rely on spatial analysis. And indeed, the ability to use 
-analysis tool allows us to get the most out of the data we have and to solve a 
+analysis tools allows us to get the most out of the data we have and to solve a 
 wide variety of problems. The points below give you an simple definition of the 
 concept.
 
@@ -190,7 +188,7 @@ height: 600px
 name: Snow_cholera_map_original
 align: center
 ---
-John Snow Cholera map of London (1854)
+John Snow Cholera map of London (1854). Source: https://giscience.github.io/gis-training-resource-center/_images/John_snow_zoom_map2.png
 ```
 __Using GIS__, several measures of spatial central tendency have been applied to 
 the dataset, revealing that the Spatial Mean (the geographic center of the 
@@ -226,7 +224,7 @@ by REACH Initiative ([source]())_ <!-- FIXME: add source! -->
 
 ![Infrastructure map of Nigeria](/fig/en_Infrastructure_Map_Nigeria.png) 
 _Infrastructure map of a displaced persons camp in Borno State, Nigeria, produced 
-by Reach Initiative ([source]())_ <!-- FIXME: add source! -->
+by Reach Initiative. ([source]())_ <!-- FIXME: add source! -->
 
 ### Thematic maps
 
@@ -249,7 +247,7 @@ _Thematic map of Africa_
   
 ![Analysis map of Yemen](/fig/en_Analysis_Map_Yemen.png) 
 _Analysis map showing areas affected by flooding in Yemen, produced by Reach 
-Initiative ([source]())_ <!-- FIXME: add source -->
+Initiative. ([source]())_ <!-- FIXME: add source -->
 
 ### Situation/descriptive maps
 
