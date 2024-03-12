@@ -3,51 +3,52 @@ may not be shared or published! 🚧
 
 # Geodata and Geodata processing
 **Competences:**
-* Data Import
+* Data import
 * Geo features and attributes
 * Feature selection
 * Basemap selection
 
 In this chapter, we will have a close look at how to work with geodata in QGIS. 
-Since vector data is the primer geodata type you will work with at the beginning 
-of your GIS carrier, we will focus on vector geodata.
+Since vector data is the primary geodata type you will work with at the beginning 
+of your GIS career, we will focus on vector geodata.
 
 ## Geodata mananagemnet 
 
-Working with geodata is unlike working with data in programs like Excel or MS Word. 
-Whenever you load an image in a Word file, the file will contain the image. When 
-you delete the image on your computer, the Word file will still contain a copy of 
-the image. 
+Working with geodata is not like working with data in programs like Microsoft 
+Excel or Word. Whenever you load an image in a Word file, the file will contain 
+the image. If you delete the image on your computer, the Word file will still 
+contain a copy of the image. 
 
 This is not the case in QGIS! When you load geodata into QGIS, the system only 
-establishes a path to the location where your geodata is stored on your computer. 
+establishes a link to the location where the data is stored on your computer. 
 This means your QGIS project __does not contain__ the geodata, it only links to 
-the data on your computer. Once you have loaded the geodata in your QGIS project 
-and you change the location of the geodata or delete it on your computer, the 
-data is no longer available in your QGIS project. 
+it. If you load data in your QGIS project and you change the location of the 
+data or delete it, the data is no longer available in your QGIS project and you 
+will get an error when you open it. 
 
-Ok, QGIS projects only link to geodata, they do not contain the data. This means 
-that whenever you edit geodata, the changes persistent and can not be reversed.
+Because you are working directly with the source data, rather than a copy, 
+whenever you edit data in QGIS the changes replace the source data and can not 
+be reversed. If you plan to make changes to your data, you should make a copy of 
+it first so that you always have a 'clean' copy you can go back to. 
 
-These circumstances make working with geodata special. To handle this, the only 
-solution is good data management practices!
+### Standard folder structure
 
-### Standard Folder Structure
+The single most important geodata management practice is to use a standardised 
+folder structure that contains all parts of the QGIS project. 
 
-The single most important geodata management practice is to use a standardized 
-folder structure that contains all elements of the particular QGIS project. 
-The paths from a QGIS project to the geodata are by default relative. That means 
+The paths from a QGIS project to the geodata are by default relative. This means 
 when the data and the project are in a fixed folder structure, you can move the 
-whole structure without impacting the QGIS project or the paths to the geodata.
-The version of a standardized folder structure, that is used for all exercises 
+whole structure without impacting the QGIS project or the paths to the data.
+The version of a standardized folder structure that is used for all exercises 
 in this training is explained below. A template of the folder structure can be 
 downloaded [__here__](https://github.com/GIScience/gis-training-resource-center/blob/main/fig/GIS_Project_folder_template.zip).
 
  A standard folder structure has two principal advantages:
-1. By sharing the whole project folder, we can be certain that the project will 
-   run without problems on a different computer.
-2. The folder structure supports the proper organization of geodata and supports 
-   the stable function of a QGIS project. 
+
+1. If we share the whole project folder, we can expect the project to run 
+   without problems on a different computer
+2. The folder structure supports the proper organisation of project data and 
+   helps ensure the QGIS project will work as intended
 
 ```{figure} /fig/Standard_project_folder_structure.drawio.svg
 ---
@@ -58,30 +59,38 @@ name: Standard folder structure
 ---
 Standard folder structure. Source: ???
 ```
+<!-- CHECK: add source -->
+
 ### Geodata naming 
 
 There are some basic principles when it comes to naming geodata that you produce 
 or manipulate:
+<!-- CLARIFY: why do we need naming principles? -->
+<!-- CLARIFY: does this apply to file names, layer names, or both? -->
 
-* Do not use special characters like `!`,`?` etc., slash or dash `/` or `-`.
+* Do not use special characters like `!`,`?`, `/` or `-`.
 * Do not use blank spaces, use underscores `_`
-* Make sure you can relate every output / intermediate result to a step in your 
-  workflow. Below you can see a geodata set representing the borders of a country 
-  evolving during geodata processing. It is not apparent what was done with the 
-  original dataset.
+* Give layers meaningful names so that you can understand what they represent, 
+  even if they are a temporary/intermediate step in a workflow. 
+
+Below you can see an example of a workflow to process an admin boundary dataset 
+(`adm0`). The purpose of the intermediate steps is not clear because the layer 
+names are not meaningful. 
 
 `adm0 >> adm0_temp >> adm0_temp2 >> adm0_temp3 >> facilities_final`
 
-In the version below, it is clear what was done. In this way, other people can 
-understand the process behind a final result like a map. 
+A better system of naming is shown below. In this version, it is clear what 
+processing was performed at each step (reproject, clip layer, join with another layer, 
+output). <!-- CHECK: Is this understanding correct? --> 
+In this way, other people can understand what purpose different layers serve and 
+whether they are needed in the final project.  
 
-`adm0 >> adm0_projUTM >> adm0_projUTM_clipUrban >> adm0_projUTM_clipUrban_intersectFacilities >> facilities_processe`
+`adm0 >> adm0_projUTM >> adm0_projUTM_clipUrban >> adm0_projUTM_clipUrban_intersectFacilities >> facilities_processed`
 
 
 ## Data import
 
-Before you can start visualizing and analysing in QGIS, you need to import your 
-data. 
+Before you can start creating maps in QGIS, you need to add your data. 
 
 Depending on which file format you want to import, the process differs slightly.
 
@@ -89,30 +98,38 @@ Depending on which file format you want to import, the process differs slightly.
 
 :::{tab-item} Vector data import
 
-Typical vector data formats are Shapefile and GeoPackage. The process of 
-importing vector data in either of the two formats is the same. 
-[Here](../../content/Modul_2/en_qgis_geodata_concept.md) is a list of possible 
-vector data formats.
+Typical vector data formats are Shapefile (`.shp`) and GeoPackage (`.gpkg`). 
+The process of importing vector data in either of the two formats is the same. 
+[Section 2.1](../../content/Modul_2/en_qgis_geodata_concept.md) has a list of 
+common vector data formats. <!-- CHECK: Is it possible to link to the section of 
+  the page? -->
 
 ```{Note}
-GeoPackage file can contain multiple files and even whole QGIS projects. When you load such a file in QGIS a window will appear in which you have to select the files you want to load in your QGIS project.
+GeoPackage files can contain multiple datasets and even whole QGIS projects. 
+When you load a GeoPackage in QGIS, a window will appear where you can select 
+the datasets you want to load.
 ```
 
-There are two ways how to load vector data in QGIS. Via the `Layer` tab or via 
+There are two ways to load vector data in QGIS. Via the `Layer` menu or via 
 drag-and-drop.
+<!-- FIXME: Also through the browser pane and keyboard shortcuts -->
 
-### Open vector data via Layer Tab
+### Open vector data via Layer menu
 
-1. Click on `Layer`-> `Add Layer`-> `Add Vector Layer`. 
+1. Click on `Layer`-> `Add Layer`-> `Add Vector Layer...`
 2. Click on the three points ![](/fig/Three_points.png) and navigate to your 
-   vector file.
+   vector file
 3. Select the file and click `Open`
 4. Back in QGIS click `Add`
+
+<!-- CLARIFY: What should people do with optional settings? -->
+<!-- ADD: Should mention zipped vs unzipped shapefiles -->
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_vector.mp4"></video>
 
 
 ### Open vector data via drag-and-drop
+<!-- FIXME: Explain this video. Where should people drag and drop? -->
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_vector_d_d.mp4"></video>
 :::
 
@@ -122,8 +139,10 @@ drag-and-drop.
 ### Open  Delimited Text Layer (.csv, .txt)
 
 ```{Tip}
-To directly load .csv or EXCEL data into QGIS, the datasets need to have columns 
-containing geometry in the form of latitude (Y-field) and longitude (X-field). 
+To load data from spreadheets such as Comma Separated Value (`.csv`) or 
+Excel (`.xlsx`), the datasets need to have columns containing geometry - this is 
+most often in the form of latitude (Y field) and longitude (X field), but might 
+also be in other formats. 
 ```
 
 ```{figure} /fig/en_import_delimeted_text.png
@@ -136,12 +155,12 @@ name: Import delimited text
 Import delimited text.
 ```
 
-1. `Layer` -> `Add Layer` ->`Open Delimited Text Layer`.
+1. `Layer` -> `Add Layer` -> `Open Delimited Text Layer`.
 2. Click on `File name` click on the three points ![](/fig/Three_points.png) and 
-   navigate to your csv. file and click `Open`.
+   navigate to your csv file and click `Open`.
 3. `File Format`: Here you can specify which delimiter is used in the file you 
    want to import. In a standard .csv file commas `,` is used. If this is not the 
-   case, select `Costume delimiters`. Here you can choose the exact delimiter 
+   case, select `Custom delimiters`. Here you can choose the exact delimiter 
    used in your file. 
 
 ```{Tip}
@@ -160,11 +179,12 @@ Import delimited text - file format.
 ```
 
 4. `Geometry definition`: In this section, you specify which columns of the file 
-   contain the spatial information to geo-referenced the data on the map. If the 
+   contain the spatial information to georeference the data on the map. If the 
    file has a column containing __latitude__ and another with __longitude__ data, 
    you can use them to georeferenced the data. Check `Point Coordinates`. Select 
    for `X field` “LONGITUDE” and for `Y field` “LATITUDE”.
-5. Under `Geometry CRS`select the coordinate reference system (CRS). By default, 
+   <!-- CLARIFY: When wouldn't you choose Point ? -->
+5. Under `Geometry CRS` select the coordinate reference system (CRS). By default, 
    QGIS will select the CRS of the project. 
 
    If the file does not have spatial information choose the option `No geometry 
@@ -176,14 +196,15 @@ Import delimited text - file format.
 
 :::{tab-item} Raster data import
 
-There are two ways how to load vector data in QGIS. Via the `Raster` tab or via 
+There are two ways to load vector data in QGIS, via the `Raster` tab or via 
 drag-and-drop.
+<!-- FIXME: as above - also via browser panel and keyboard shortcut -->
 
-### Open raster data via Layer Tab
+### Open raster data via Layer menu
 
-1. Click on `Layer`-> `Add Layer`-> `Add Raster Layer`. 
+1. Click on `Layer`-> `Add Layer`-> `Add Raster Layer`
 2. Click on the three points ![](/fig/Three_points.png) and navigate to your 
-   raster file.
+   raster file
 3. Select the file and click `Open`
 4. Back in QGIS click `Add` 
 
@@ -191,7 +212,8 @@ drag-and-drop.
 
 
 ### Open raster data via drag-and-drop
-
+<!-- FIXME: Explain this video. Where should people drag and drop? -->
+<!-- CHECK: If we are focusing on raster data, do we need this here? -->
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_raster_d_d.mp4"></video>
 
 :::
@@ -201,12 +223,12 @@ drag-and-drop.
 
 ## Geo features and attributes
 
-Each vector layer consists of geometric elements (points, lines or polygons) and 
-an __attribute table__. The attribute table contains information on each element 
-of the layer. The information is stored in rows and columns in the attribute table. 
+Each vector layer consists of geometric features (points, lines or polygons) and 
+an __attribute table__. The attribute table contains information on each feature 
+in the layer. The information is stored in rows and columns in the attribute table. 
 Each __row__ in the table represents a __feature__, while __columns__ store 
-specific __attributes__. This table facilitates searching, selection, sorting, 
-filtering, and editing of features.
+__attributes__ of that feature. You can use the attribute table to search, sort, 
+filter, edit and select data.
 
 
 ```{figure} /fig/en_vector_data_overview.drawio.png
@@ -249,12 +271,14 @@ Vector Data overview. Source: HeiGIT
 :::
 
 Having a look into the attribute table can be helpful to get an overview on the 
-data you are working with. It can also be used to select, filter or edit data.
+data you are working with. 
+<!-- CLARIFY: What types of things can people get an overview of? -->
 
 ### Open the attribute table
 
 One can open the attribute table in two ways. Either click right on the chosen 
-layer and select `open attribute table` or click on the symbol on the top.
+layer and select `Open Attribute Table` or click on the attribute table symbol 
+in the toolbar. 
 
 ```{figure} /fig/en_attributetable_right_click.png
 ---
@@ -267,8 +291,8 @@ Screenshot of Opening the Attribute Table with right click
 ```
 
 ```{note} 
-If you have multiple layers, only the attribute table of the layer selected in 
-the layer panel on the left will open. 
+If you have multiple layers, only the attribute table of the layer currently 
+selected in the layer panel will open. 
 ```
 
 ```{figure} /fig/en_attributetable_top_right.png
