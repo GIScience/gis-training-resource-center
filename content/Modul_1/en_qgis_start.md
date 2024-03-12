@@ -18,7 +18,7 @@ You may __view, edit, capture and analyze spatial data or create printable maps_
 
 - QGIS is a __desktop software__: that means you get a program that opens up on your computer as a window with buttons you can click, forms you can fill out to do tasks, and it's generally a visual interactive experience. 
 
-- QGIS is backed by a __large community of users__, so it’s easy to find solutions to technical issues by using QGIS forums, blog and subreddit.
+- QGIS is backed by a __large community of users__, so it’s easy to find solutions to technical issues by using QGIS forums, blog and subreddit, which are listed [here](content/Wiki/en_qgis_common_errors_and_Issues).
 
 ___
 
@@ -43,18 +43,25 @@ align: Left
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_new_project.mp4"></video>
 
 ```{tip} 
-A QGIS Project file has the format ending `.qgz`
+A QGIS project file has the format ending `.qgz`
 ```
 
 ### Overview of QGIS Interface
 
 The interface of QGIS is at first glance quite complex. However, once you know all the components you will be able to orientate yourself quickly. Here you can find a description of all components of the interface.
 
-```{tip} When you hover with your mouse cursor over icons, text will appear which explains the function of the button
+```{tip} When you hover with your mouse cursor over icons, text will appear which explains the function of the button.
 ```
 
-![QGIS_User_Interface](/fig/en_QGIS_GUI.png)
-
+```{figure} /fig/en_QGIS_GUI.png
+---
+width: 800px
+name: 
+align: center
+name: QGIS User Interface
+---
+QGIS User Interface. Source:
+```
 
 1. __Layers List / Browser Panel:__ The __layers list__ shows __all layers/files__ that are __loaded in the project__. You can show/hide layers and set other properties.
 
@@ -131,9 +138,9 @@ You can use the search bar to find specific tools.
 
 There are toolbars and panels for many different tasks. To avoid an overcrowded interface it is smart to only activate specific toolbars or panels only when you really need them.
 
-To add or remove toolbars from your interface click on `View` -> `Toolbars` -> Check or uncheck the toolboxes you want to add or remove
+To add or remove toolbars from your interface click on `View` -> `Toolbars` -> Check or uncheck the toolboxes you want to add or remove.
 
-To add or remove  panels from your interface click on `View` -> `TPanels` -> Check or uncheck the panels you want to add or remove
+To add or remove  panels from your interface click on `View` -> `TPanels` -> Check or uncheck the panels you want to add or remove.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Anzeigen_einblenden_ausblenden.mp4"></video> 
 
@@ -148,7 +155,7 @@ ___
 ## Save & Open QGIS Projects
 
 To save progress or to open an existing project in QGIS is very similar to programs like MS Word. However, there is one __BIG__ difference. 
-In QGIS the geodata you work with is __not__ saved in your QGIS projectfile. Instead, the project file only contains the file paths where the geodata were located at the time the project was last saved on the PC. If the location of this geodata is subsequently changed, the error message "handle unavailable layers" will appear when the project is opened again.
+In QGIS, the geodata you work with is __not__ saved in your QGIS projectfile. Instead, the project file only contains the file paths where the geodata were located at the time the project was last saved on the PC. If the location of this geodata is subsequently changed, the error message "handle unavailable layers" will appear when the project is opened again.
 
 Good data organisation with a fixed and well-thought-out folder structure prevents such problems.
 
@@ -166,8 +173,8 @@ To open an existing QGIS project click on `Project` -> `Open…` -> Navigate to 
 
 #### Save Projects
 
-* __When you save the first time__: To save the QGIS project you are working on click on `Project` -> `Save as…`-> Navigate to the folder where you want to save the project -> Give the project a name -> `Save`
-* __When you save progress__: To save progress in a project that was already saved somewhere on your computer there are two good options:
+* __When you save for the first time__: To save the QGIS project you are working on click on `Project` -> `Save as…`-> Navigate to the folder where you want to save the project -> Give the project a name -> `Save`
+* __When saving your progress__: To save progress in a project that was already saved somewhere on your computer there are two good options:
     * Use the hotkey `Ctrl`+ `s` on your keyboard. 
     * Click on `Project` -> `Save`. 
 
