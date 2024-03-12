@@ -1,21 +1,34 @@
-🚧 This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+🚧 This training platform and the entire content is under ⚠️construction⚠️ and 
+may not be shared or published! 🚧
 
 # Data Sources
-To find the appropriate data you are looking for, you can search online data sharing platforms. In the following some important ones are highlighted below. 
+To find the appropriate data you are looking for, you can search online data 
+sharing platforms. In the following some important ones are highlighted below. 
 
 <details>
 <summary>What to look out for when looking for data:</summary>
 <br> 
 
-*Data source:* Always make sure to use data from trusted data sources. The organisation that shared the data is the best indicator. Apart from that, use of the data in trusted contexts or also download counts can be good indicators. 
+*Data source:* Always make sure to use data from trusted data sources. The 
+organisation that shared the data is the best indicator. Apart from that, use of 
+the data in trusted contexts or also download counts can be good indicators. 
 
-*Data size:* Sometimes you can access data in different scales, resolutions etc. Make sure to select a data set that fits your purpose and can be easily processed by you. E.g. if you only need data about a specific region, if feasible only select the data of this admin area. 
+*Data size:* Sometimes you can access data in different scales, resolutions etc. 
+Make sure to select a data set that fits your purpose and can be easily processed 
+by you. E.g. if you only need data about a specific region, if feasible only 
+select the data of this admin area. 
 
-*Data format:* Maybe there are different data formats available that you can choose from. Think about your needs and what is the most practical for your use and potentially also sharing purposes. 
+*Data format:* Maybe there are different data formats available that you can 
+choose from. Think about your needs and what is the most practical for your use 
+and potentially also sharing purposes. 
 
-*Data capture date:* Make sure to check when the data was collected and if the collection data is in line with your needs. Check if there is potentially more up-to-date data in another framework. 
+*Data capture date:* Make sure to check when the data was collected and if the 
+collection data is in line with your needs. Check if there is potentially more 
+up-to-date data in another framework. 
 
-*Data licence:* What kind of licence does the data have? How can you use and share it and how do you need to cite the data source? Make sure to check the licensing and to follow the respective regulations to avoid difficulties.
+*Data licence:* What kind of licence does the data have? How can you use and 
+share it and how do you need to cite the data source? Make sure to check the 
+licensing and to follow the respective regulations to avoid difficulties.
 </details>
 
 
@@ -93,7 +106,9 @@ To find the appropriate data you are looking for, you can search online data sha
 
 ### OpenStreetMap
 
-If you are using version 3.4 or higher in QGIS, it is by default possible to add the OSM base map to your project. Unfold the XYZ tiles, right-click on OpenStreetMap and select add layer to project.
+If you are using version 3.4 or higher in QGIS, it is by default possible to add 
+the OSM base map to your project. Unfold the XYZ tiles, right-click on 
+OpenStreetMap and select add layer to project.
 
 ```{figure} /fig/en_add_osm_basemap.png
 ---
@@ -107,7 +122,9 @@ Screenshot of how to add OSM basemap
 
 ### Quick OSM plugin
 
-To download data from data and import it into your QGIS the plugin **QuickOSM** is great. First you need to install it by searching for it in the `Manage and Install Plugins` Tab.
+To download data from data and import it into your QGIS the plugin **QuickOSM** 
+is great. First you need to install it by searching for it in the 
+`Manage and Install Plugins` Tab.
 
 :::{dropdown} How to download the plugin
 
@@ -133,11 +150,13 @@ Installing QuickOSM.
 ```
 :::
 
-To launch the newly installed plugin, click on ![](fig/quickosmplugin.png) or click under `vector` -> `QuickOSM`. 
+To launch the newly installed plugin, click on ![](fig/quickosmplugin.png) or 
+click under `vector` -> `QuickOSM`. 
 
 Follow the steps to fetch for data:
 
-1. Select a Key and Value from the dropdown list. If you are unsure, check here: [taginfo](https://taginfo.openstreetmap.org). 
+1. Select a Key and Value from the dropdown list. If you are unsure, check here: 
+   [taginfo](https://taginfo.openstreetmap.org). 
 
 ```{figure} /fig/key_value_quickosm.png
 ---
@@ -149,9 +168,11 @@ name: Choosing key and value
 Choosing key and value in QuickOSM.
 ```
 
-2. Limit the area by typing in the name of your area of interest. You can also choose from the dropdown `Canvas Extent` or `Layer Extent` instead of a name of a city or country.
+2. Limit the area by typing in the name of your area of interest. You can also 
+   choose from the dropdown `Canvas Extent` or `Layer Extent` instead of a name of a city or country.
 
-3. Unfold the tab `Advanced`. Only select the datatypes you are expecting to minimize errors.
+3. Unfold the tab `Advanced`. Only select the datatypes you are expecting to 
+   minimize errors.
 
 ```{figure} /fig/quickosm_usage.png
 ---
@@ -167,16 +188,25 @@ Running the QuickOSM plugin.
 
 :::{dropdown} How to fetch data for multiple queries
 
-If you want to get more data in the same area, you can add a query by clicking on the ![](fig/plus_quickosm.png). Be careful choosing the right logical operator `And` or `Or`. If you are unsure check this [Wikipage](/content/Wiki/en_qgis_non_spatial_queries_wiki). You can find an example for this [here](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_data_sources_ex2.html#task-quickosm)
+If you want to get more data in the same area, you can add a query by clicking 
+on the ![](fig/plus_quickosm.png). Be careful choosing the right logical operator 
+`And` or `Or`. If you are unsure check this [Wikipage](/content/Wiki/en_qgis_non_spatial_queries_wiki). 
+You can find an example for this [here](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_data_sources_ex2.html#task-quickosm)
 
 :::
 
 ### HOT Export Tool
 
-With the [HumanitarianOpenStreetMapTeam (HOT) Export Tool](https://export.hotosm.org/v3/) you can download customized extracts of up-to-date OSM data in different file formats. It offers a browser-based tool to download OSM data with good options to specify region, time, feature type and data format.
+With the [HumanitarianOpenStreetMapTeam (HOT) Export Tool](https://export.hotosm.org/v3/) 
+you can download customized extracts of up-to-date OSM data in different file 
+formats. It offers a browser-based tool to download OSM data with good options 
+to specify region, time, feature type and data format.
 
-1. Go to the HOT Export tool. To use the tool you need a OSM account. If you don’t have one you need to create on. Click on `Log in`. In the new window select the option to create a new account.
-2. With your OSM account you can log in directly into the HOT Export tool by clicking on `Log in`.
+1. Go to the HOT Export tool. To use the tool you need a OSM account. If you don’t 
+   have one you need to create on. Click on `Log in`. In the new window select the 
+   option to create a new account.
+2. With your OSM account you can log in directly into the HOT Export tool by 
+   clicking on `Log in`.
 3. After clicking on `Start Exporting` you will be redirected to this website.
 
 ```{figure} /fig/hot_export.png
@@ -190,14 +220,18 @@ The HOT Export Tool.
 ```
 
 4. First add a name and a brief description of your export. Then click on `Next`.
-5. Choose the file format fitting to your needs. Most likely Geojson, Shapefile or GeoPackage will be fit for the use with QGIS. Click on `Next`.
-6. The easiest way to choose the feature type you want to download, is using the tag tree. The YAML option offers far more flexibility although is requires more technical knowledge, so we will focus on the first option.
+5. Choose the file format fitting to your needs. Most likely Geojson, Shapefile or 
+   GeoPackage will be fit for the use with QGIS. Click on `Next`.
+6. The easiest way to choose the feature type you want to download, is using the 
+   tag tree. The YAML option offers far more flexibility although is requires 
+   more technical knowledge, so we will focus on the first option.
 7. There are multiple ways to select your area of interest. 
    1. You can search for it in the search bar in the top right corner. 
    2. Zoom in the map to your area and click on `This view`.
    3. Zoom in and draw a bounding box by clicking on `Box`.
    4. Zoom in and draw free hand a polygon by clicking on `Draw`.
-   5. Or you can upload a layer as extent (only .geojson in the crs WGS84!). Click on `Import`.
+   5. Or you can upload a layer as extent (only .geojson in the crs WGS84!). 
+      Click on `Import`.
 8. Then click on `Next`. It will look something like this:
 
 ```{figure} /fig/hot_export_example.png
@@ -210,7 +244,8 @@ name: HOT Export Tool Example
 An Example for the HOT Export Tool.
 ```
 
-9. Click on `Create Export`. It will then run for a few minutes, looking like this:
+9. Click on `Create Export`. It will then run for a few minutes, looking like 
+   this:
 
 ```{figure} /fig/hot_export_running.png
 ---
@@ -221,7 +256,8 @@ name: HOT Export Tool running
 ---
 The HOT Export Tool is running.
 ```
-10. After being finished, the Status will change to `COMPLETED` and you can download your file by clicking on the link:
+10. After being finished, the Status will change to `COMPLETED` and you can 
+    download your file by clicking on the link:
 
 ```{figure} /fig/hot_export_done.png
 ---
@@ -235,13 +271,19 @@ Downloading data from HOT Export Tool.
 
 ### overpass turbo
 
-[Overpass turbo](https://overpass-turbo.eu) is a web based data mining tool for OSM. By running a query, you can download the data and import it into your project. You can either run it by writing your query on the left or by using the wizard which will assist you in writing your queries. 
+[Overpass turbo](https://overpass-turbo.eu) is a web based data mining tool for 
+OSM. By running a query, you can download the data and import it into your project. 
+You can either run it by writing your query on the left or by using the wizard 
+which will assist you in writing your queries. 
 ***Example***  
-To search for schools in your bounding box or search area you can either write the query yourself or get it build by the wizard.  
+To search for schools in your bounding box or search area you can either write 
+the query yourself or get it build by the wizard.  
 **1. Check Tagging Guidelines**  
-Search for it in the [OSM wiki](https://wiki.openstreetmap.org/wiki/Tags) and/or [taginfo](https://taginfo.openstreetmap.org). In our example it is: *amenity=school*  
+Search for it in the [OSM wiki](https://wiki.openstreetmap.org/wiki/Tags) and/or 
+[taginfo](https://taginfo.openstreetmap.org). In our example it is: *amenity=school*  
 **2.  Write or build the query**  
-Either use the wizard by tiping in *amenity=school in Heidelberg* or write your own query (f. e. for your bounding box):  
+Either use the wizard by tiping in *amenity=school in Heidelberg* or write your 
+own query (f. e. for your bounding box):  
 **Wizard:**
 ```{figure} /fig/en_wizard_overpassturbo.png
 ---
@@ -292,7 +334,9 @@ One can export the results in various ways.
 ::::{tab-set}
 
 :::{tab-item} Data
-By exporting the data as f.e. GeoJSON you can later on import them in your QGIS project.
+By exporting the data as f.e. GeoJSON you can later on import them in your QGIS 
+project.
+
 ```{figure} /fig/en_overpass_turbo_data.png
 ---
 height: 250px
@@ -320,7 +364,8 @@ Screenshot of how to export map in overpassturbo
 :::
 
 :::{tab-item} Query
-By exporting your query you can get the text or convert it to an OverpassXML or OverpassQL formated query.
+By exporting your query you can get the text or convert it to an OverpassXML or 
+OverpassQL formated query.
 
 ```{figure} /fig/en_overpass_turbo_query.png
 ---
@@ -341,4 +386,6 @@ For more information, check out the [wiki](https://wiki.openstreetmap.org/wiki/O
 
 ### ohsome tools
 
-[The ohsome tools](https://heigit.org/big-spatial-data-analytics-en/ohsome/) provide OpenStreetMap data analytics and downloads by HeiGIT. You can also investigate the OSM history. 
+[The ohsome tools](https://heigit.org/big-spatial-data-analytics-en/ohsome/) 
+provide OpenStreetMap data analytics and downloads by HeiGIT. You can also 
+investigate the OSM history. 
