@@ -149,7 +149,7 @@ name: Choosing key and value
 Choosing key and value in QuickOSM.
 ```
 
-2. Limit the area by typing in the name of your area of interest.
+2. Limit the area by typing in the name of your area of interest. You can also choose from the dropdown `Canvas Extent` or `Layer Extent` instead of a name of a city or country.
 
 3. Unfold the tab `Advanced`. Only select the datatypes you are expecting to minimize errors.
 
@@ -167,14 +167,71 @@ Running the QuickOSM plugin.
 
 :::{dropdown} How to fetch data for multiple queries
 
-If you want to get more data in the same area, you can add a query by clicking on the ![](fig/plus_quickosm.png). Be careful choosing the right logical operator `And` or `Or`. If you are unsure check this [Wikipage](/content/Wiki/en_qgis_non_spatial_queries_wiki). 
+If you want to get more data in the same area, you can add a query by clicking on the ![](fig/plus_quickosm.png). Be careful choosing the right logical operator `And` or `Or`. If you are unsure check this [Wikipage](/content/Wiki/en_qgis_non_spatial_queries_wiki). You can find an example for this [here](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_data_sources_ex2.html#task-quickosm)
 
 :::
 
 ### HOT Export Tool
 
-tba
+With the [HumanitarianOpenStreetMapTeam (HOT) Export Tool](https://export.hotosm.org/v3/) you can download customized extracts of up-to-date OSM data in different file formats. It offers a browser-based tool to download OSM data with good options to specify region, time, feature type and data format.
 
+1. Go to the HOT Export tool. To use the tool you need a OSM account. If you don’t have one you need to create on. Click on `Log in`. In the new window select the option to create a new account.
+2. With your OSM account you can log in directly into the HOT Export tool by clicking on `Log in`.
+3. After clicking on `Start Exporting` you will be redirected to this website.
+
+```{figure} /fig/hot_export.png
+---
+height: 400px
+name:
+align: center
+name: HOT Export Tool
+---
+The HOT Export Tool.
+```
+
+4. First add a name and a brief description of your export. Then click on `Next`.
+5. Choose the file format fitting to your needs. Most likely Geojson, Shapefile or GeoPackage will be fit for the use with QGIS. Click on `Next`.
+6. The easiest way to choose the feature type you want to download, is using the tag tree. The YAML option offers far more flexibility although is requires more technical knowledge, so we will focus on the first option.
+7. There are multiple ways to select your area of interest. 
+   1. You can search for it in the search bar in the top right corner. 
+   2. Zoom in the map to your area and click on `This view`.
+   3. Zoom in and draw a bounding box by clicking on `Box`.
+   4. Zoom in and draw free hand a polygon by clicking on `Draw`.
+   5. Or you can upload a layer as extent (only .geojson in the crs WGS84!). Click on `Import`.
+8. Then click on `Next`. It will look something like this:
+
+```{figure} /fig/hot_export_example.png
+---
+height: 400px
+name:
+align: center
+name: HOT Export Tool Example
+---
+An Example for the HOT Export Tool.
+```
+
+9. Click on `Create Export`. It will then run for a few minutes, looking like this:
+
+```{figure} /fig/hot_export_running.png
+---
+height: 400px
+name:
+align: center
+name: HOT Export Tool running
+---
+The HOT Export Tool is running.
+```
+10. After being finished, the Status will change to `COMPLETED` and you can download your file by clicking on the link:
+
+```{figure} /fig/hot_export_done.png
+---
+height: 400px
+name:
+align: center
+name: HOT Export Tool done
+---
+Downloading data from HOT Export Tool.
+```
 
 ### overpass turbo
 

@@ -50,8 +50,8 @@ As you can see, GEOFABRIk is great if you want to get complete OSM datasets for 
 
 ### Task: HOT Export Tool
 
-The [umanitarianOpenStreetMapTeam (HOT) Export Tool](https://export.hotosm.org/v3/) is an NGO specialising in utilizing an extending OSM for humanitarian purposes. HOT offers a browser-based tool to download OSM data with good options to specify region, time, feature type and data format.
-1.	Go to the HOT Export tool. To use the tool you need a OSM account. If you don’t have one you need to create on. Click on `Log in`. In the new window select the option to create a new account. 
+The [HumanitarianOpenStreetMapTeam (HOT) Export Tool](https://export.hotosm.org/v3/) is an NGO specialising in utilizing an extending OSM for humanitarian purposes. HOT offers a browser-based tool to download OSM data with good options to specify region, time, feature type and data format.
+1.	Go to the HOT Export tool. To use the tool you need an OSM account. If you don’t have one you need to create on. Click on `Log in`. In the new window select the option to create a new account. 
 2.	With your OSM account you can log in directly into the HOT Export tool by clicking on `Log in`.
 3.	In this example, we want to download all features of the OSM related to banking and finance on the main island of Mauritius. 
     1.	Select area or location: Zoom to Mauritius on the map or use the search bar.  To mark the main island there are three options. You can draw a box, draw a polygon or upload a geoJOSN file with your boundaries. In this case, use one of the first two options to mark Mauritius.
