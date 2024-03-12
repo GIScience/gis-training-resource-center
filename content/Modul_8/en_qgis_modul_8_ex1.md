@@ -14,8 +14,11 @@ The aim of this exercise is to gain a basic understanding of working with raster
 * [Raster basics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.md)
 
 
+
 ### Data
-Download all datasets **DATA LINK** and save the folder on your computer. Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects. Under "data > input" you find the following files:
+Download all datasets 
+__[here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_8/Modul_8_Excerise_Pakistan_Floodrisk/Modul_8_Excerise_Pakistan_Floodrisk.zip)__
+ and save the folder on your computer. Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects. Under "data > input" you find the following files:
 
 **Vectordata**
 - `Pakistan_indusbasin_streams.shp` (Line Geometry)
