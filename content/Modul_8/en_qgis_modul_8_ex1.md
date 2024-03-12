@@ -109,14 +109,14 @@ Exemplary visualization of the DEM with linear interpolation
       - There are extremely many values in the very low value range
       - The vast majority of the values seem to be between around 0 to 3000.
 
-```{figure} /fig/en_3.34_m8ex1_histogramm.png
----
-width: 600px
-name: Histogramm
-align: center
----
-Histogramm of the value distribution of "Pakistan_pop_density_1km"
-```
+    ```{figure} /fig/en_3.34_m8ex1_histogramm.png
+    ---
+    width: 600px
+    name: Histogramm
+    align: center
+    ---
+    Histogramm of the value distribution of "Pakistan_pop_density_1km"
+    ```
 
     3. Based on the exploration of the histogramm try a few value boundaries for visualisation at the top of your layer styling panel (select the ![](/fig/mod8_ex1_symbologyicon.png) menu). Keep in mind that we look at population data and that population distribution is very spatially heterogenic most of the time. Try the following combinations and choose the one that suits the data best:
       - Min = 0    Max = 1000
