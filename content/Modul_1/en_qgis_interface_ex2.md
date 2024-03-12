@@ -6,10 +6,7 @@ __🔙[Back to Homepage](/content/intro.md)__
 ---
 ## Aim of the exercise
 
-QGIS is a complex program with lots of functions, and the the interface can be 
-confusing. This exercise will get you familiar with the main toolbars, windows 
-and panels in QGIS. You will create a new QGIS project and save it, and navigate 
-through the different panels and toolbars.
+QGIS is a complex program with lots of functions, and the interface can be confusing. This exercise will get you familiar with the main toolbars, windows and panels in QGIS. You will create a new QGIS project and save it, and navigate through the different panels and toolbars.
 
 The exercise covers: 
 
@@ -31,8 +28,17 @@ The exercise covers:
 ## Data preparation
 
 - Download the zipped template folder structure [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_1/Modul_1_Exercise_1_Understanding_the_interface/Modul_1_Exercise_1_Understanding_the_interface.zip)
-<!-- FIXME: unzip the folder - you should get a folder structure that looks like this: -->
-- If you have already set up a template folder, you can skip this part. 
+- You should now have a folder structure looking like this:
+
+```{figure} /fig/Standard_project_folder_structure.drawio.svg
+---
+width: 800px
+name: 
+align: center
+name: Standard folder structure
+---
+Standard folder structure. Source: 
+```
 
 ---
 
@@ -43,11 +49,15 @@ the start layout, which shows the QGIS interface with no project loaded. On the
 left will be a panel with recent projects (this will probably be empty). To the 
 right will be a news panel, showing posts from the QGIS blog, and beneath this 
 is a `Project Templates` panel. 
-<!-- FIXME: add a screenshot -->
-<!-- CHECK: is this the default layout after a new install? Mine looks different -->
-    - In the `Project Templates` panel, __Double click on the `New Empty Project` 
-    option__ (it should be the only template visible). You will see a blank canvas 
-    in the main interface since there is no data loaded yet. 
+
+```{figure} /fig/en_project_template_BRC.png
+---
+height: 400
+name: Project Template
+align: Left
+---
+```
+- In the `Project Templates` panel, __Double click on the `New Empty Project` option__ (it should be the only template visible). You will see a blank canvas in the main interface since there is no data loaded yet. 
 
 2. Get to know the QGIS interface: Above the canvas, you will find the 
 __toolbar__ with a lot of different functions. To the left and right of the canvas 
@@ -60,9 +70,19 @@ let you switch between different ways of interacting with the interface.
 - Panels are at the sides of the screen by default. They include the file browser 
 and layer navigation panels to the left of the screen. Other panels can be 
 toggled to search and use processing tools. In the layer panel, you will see the 
-data we just added. <!-- FIXME: We haven't added data yet -->
+data we will add later on.
 On the right of the screen, you will most likely have the __Processing Toolbox__ panel 
-and __Layer Styling__ panels. <!-- CHECK: Why only likely? What is the default? --> 
+and __Layer Styling__ panels. If it is missing for you, check out this [wikipage](content/Wiki/en_qgis_common_errors_and_Issues.md).
+
+```{figure} /fig/en_QGIS_GUI.png
+---
+width: 800px
+name: 
+align: center
+name: QGIS User Interface
+---
+QGIS User Interface. Source:
+```
 
 You can undock panels from their location by clicking and dragging the panel 
 title. You can either dock it to another panel (it will appear as another tab), 
@@ -106,17 +126,15 @@ lot of time and frustration in the future!
 
 ---
 
-3. Let us now save the project. Click on the save icon on the toolbar or 
+1. Let's save the project now. Click on the save icon on the toolbar or 
 open the  `Project` menu and choose `Save As...`
-4. Choose a location for the project file. An ideal place would be in the project 
-subfolder in the template folder. Navigate to the folder called `Modul_1_Exercise_0` 
-<!-- FIXME: exercise files should use 'Module' for the English training materials -->
-and open the subfolder called `Project`. Select this location and give the 
+1. Choose a location for the project file. An ideal place would be in the project 
+subfolder in the template folder. Navigate to the folder called `Module_1_Exercise_0` and open the subfolder called `Project`. Select this location and give the 
 QGIS project a name (for example: `QGIS_Training_Exercise_0`). The project will 
 be saved as a `.qqz` file.
-5. Click `Save`
-6. Close the QGIS aplication and reopen it.
-7. When QGIS restarts, the project we just saved will appear in the 
+1. Click `Save` 
+2. Close the QGIS aplication and reopen it.
+3. When QGIS restarts, the project we just saved will appear in the 
 `Recent Projects` panel. You can double-click it to open it. You can 
 also navigate to the `.qgz` file in your file explorer and double click on it. 
 This will also launch QGIS and load the project. 
