@@ -9,6 +9,8 @@ __🔙[Back to Homepage](/content/intro.md)__
 
 [![QGIS 3.28 - installation and basic setup](/fig/image_QGIS_3.28_download.png)](https://www.youtube.com/watch?v=tSJMT96HsAo)
 
+<!-- CHECK: Current LTR is 3.34.4 - explain why we are using 3.28 to avoid confusion--> 
+
 
 ## QGIS Download and Installation
 
