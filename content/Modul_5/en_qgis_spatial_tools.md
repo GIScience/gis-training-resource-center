@@ -5,11 +5,11 @@ The first part of this module explores overlay operations, focusing specifically
 
 ## Clip
 
-The ![](/fig/mAlgorithmClip.png) `Clip` tool is used to cut a vector layer with the boundaries of another polygon layer. It keeps only the parts of the features in the input layer that are inside the polygons of the overlay layer, creating a refined dataset. While the core attributes of the features remain the same, some properties like area or length may change after the clipping operation. If you've stored these properties as attributes, you might need to update them manually.
+The ![](/fig/mAlgorithmClip.png) `Clip` tool is used to cut a vector layer with the boundaries of another polygon layer. It keeps only the parts of the features in the input layer that are inside the polygons of the overlay layer, creating a refined dataset. While the core attributes of the features remain the same, some properties, like area or length, may change after the clipping operation. If you've stored these properties as attributes, you might need to update them manually.
 
 The tool has two different input option:
-* Input layer: Layer from which the selection is clipped
-* Overlay layer: Area of interest that the input layer will be clipped to.
+* __Input layer__: Layer from which the selection is clipped
+* __Overlay layer__: Area of interest that the input layer will be clipped to.
 
 ```{figure} /fig/en_clip_sudan.PNG
 ---
@@ -18,11 +18,14 @@ name: en_clip_sudan
 ---
 Screenshot of the Clip tool with the input data
 ```
-Information on road infrastructure for humanitarian aid operations is of great importance and can be easily retrieved from open-source data sources like OpenStreetMap. However, this information is often included in extensive datasets that contain a significant amount of irrelevant details for specific operations. To make working with this data more efficient, it is common practice to clip the data to the area of interest. In addition to clipping, data can often be filtered, as described in the first part of Module 5
+Information on road infrastructure for humanitarian aid operations is of great importance and can be easily retrieved from open-source data sources like OpenStreetMap. However, this information is often included in extensive datasets that contain a significant amount of irrelevant details for specific operations, or it covers a lot more area than is necessary for the operation. To make working with this data more efficient, it is common practice to clip the data to the area of interest. In addition to clipping, data can often be filtered, as described in the first part of Module 5.
+
+>here it is not clear what the first part of module 5 is, maybe add link
 
 ### Exercise: Clipping a roads layer to administrative boundaries
 
-1. Load the OSM roads data from the [HOT Export tool](https://export.hotosm.org/v3/exports/918cf68d-dfd7-40f1-ab46-4f0426dfaf68/) (part of the Humanitarian OpenStreetMap Team) as a new layer __Road_infrastructure_Sudan.geojson__.
+1. Load the OSM roads data from the [HOT Export tool](https://export.hotosm.org/v3/exports/918cf68d-dfd7-40f1-ab46-4f0426dfaf68/) (part of the Humanitarian OpenStreetMap Team) as a new layer: __Road_infrastructure_Sudan.geojson__.
+
 ```{figure} /fig/en_screenshot_hot_export_tool.PNG
 ---
 width: 75%
@@ -30,6 +33,7 @@ name: en_screenshot_hot_export_tool
 ---
 Screenshot of the HOT Export tool to download your OSM data
 ```
+
 2. Filter the layer by using the __query builder__ to only show __primary and residential roads__ ("highway" = 'primary' OR "highway" = 'residential')
 3. Load the admin1 layer for Sudan which contains the district White Nile, __ne_10m_admin_1_Sudan_White_Nile.geojson__. They are downloaded and adapted from [Natural Earth Data](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/).
 4. Select the roads layer and open the __Clip__ dialogue from Vector > Geoprocessing Tools
@@ -105,7 +109,7 @@ There are several variations in buffering. The __buffer distance__ or __buffer s
 If you are trying to make a buffer on a layer with a Geographical Coordinate System, processing will warn you and suggest to reproject the layer to a __metric Coordinate System__.
 ```
 
-In the case of humanitarian action buffering can be used to create a map which provides information about the coverage of health sites in the distance of 10 km. The health sites are points and can be buffered with 10 km. In a next step, the results can be dissolved if two buffer zones overlap and create a homogoneous area. This examples will be done in the next step.
+In the case of humanitarian action, buffering can be used to create a map which provides information about the coverage of health sites in the distance of 10 km. The health sites are points and can be buffered with 10 km. In a next step, the results can be dissolved if two buffer zones overlap and create a homogoneous area. This examples will be done in the next step.
 
 ### Exercise: Create 10km buffer around health centres
 
@@ -116,12 +120,12 @@ In the case of humanitarian action buffering can be used to create a map which p
     - Vector menu > Data Management Tools > __Reproject Layer__
     - Select the __health sites__ layer as the input layer
     - Set the target __CRS to WGS 84 / UTM zone 36N__ (click the projections icon to search the full list of options)
-    - Click Run to reproject
-5. Open the __Buffer__ tool by accessing Vector > Geoprocessing Tools > Buffer
+    - Click  `Run` to reproject
+5. Open the __Buffer__ tool by accessing `Vector` > `Geoprocessing Tools` > `Buffer`
     - Select the __reprojected layer__ as the input layer
     - Set the distance to __10km__
     - Check the option to __dissolve__ result
-    - Leave the other options as defaults and click Run
+    - Leave the other options as defaults and click `Run`
 6. Now you have a rough overview over the coverage with health sites for the district of Khartoum
 
 ````{dropdown} Solution: Create 10km buffer around health centres
@@ -197,7 +201,7 @@ QGIS provides a range of tools that allow users to delve into spatial relationsh
 :::{tab-item} Join attributes by location
 This tool takes an input vector layer and creates a new vector layer that is an extended version of the input, with additional attributes in its attribute table.
 
-The additional attributes and their values are taken from a second vector layer. For this layer a spatial criteria is applied to select the values from it that are added to each feature from the first layer.
+The additional attributes and their values are taken from a __second vector layer__. For this layer a __spatial criteria__ is applied to select the values from it that are added to each feature from the first layer.
 
 ```{figure} /fig/en_join_attributes_by_location.PNG
 ---
@@ -210,7 +214,7 @@ Screenshot of the tool Join attributes by location
 :::
 
 :::{tab-item} Join attributes by location (summary)
-For performing additional calculations in combination with a spatial join, the QGIS tool  __Join attributes by location (summary)__ is really helpful. This functionality closely resembles the previously outlined workflow; however, the algorithm extends its capabilities by calculating statistical summaries for the values from matching features in the second layer. These summaries encompass a wide range of options, including __minimum__ and __maximum values__, __mean values__, as well as __counts__, __sums__, __standard deviation__, and more.
+When performing additional calculations in combination with a spatial join, the QGIS tool  __Join attributes by location (summary)__ is really helpful. This functionality closely resembles the previously outlined workflow; however, the algorithm extends its capabilities by calculating statistical summaries for the values from matching features in the second layer. These summaries encompass a wide range of options, including __minimum__ and __maximum values__, __mean values__, as well as __counts__, __sums__, __standard deviation__, and more.
 
 ```{figure} /fig/en_join_attributes_by_location_summary.PNG
 ---
@@ -223,7 +227,7 @@ Screenshot of the tool Join attributes by location (summary)
 :::
 
 :::{tab-item} Join attributes by nearest
-It takes an input vector layer and uses this information to create a new vector layer. The new layer incorporates additional fields in its attribute table, and these supplementary attributes are obtained from a second vector layer. The joining of features occurs by identifying the closest features from each of these layers.
+It takes an input vector layer and uses this information to create a new vector layer. The new layer incorporates additional fields in its attribute table, and these supplementary attributes are obtained from a second vector layer. The joining of features occurs by __identifying the closest features__ from each of these layers.
 
 By default, this operation connects each feature with its nearest counterpart. However, it also offers the flexibility to join with the k-nearest neighboring features if needed.
 
