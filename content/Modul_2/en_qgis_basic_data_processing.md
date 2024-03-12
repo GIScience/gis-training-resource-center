@@ -276,9 +276,11 @@ data you are working with.
 
 ### Open the attribute table
 
-One can open the attribute table in two ways. Either click right on the chosen 
-layer and select `Open Attribute Table` or click on the attribute table symbol 
-in the toolbar. 
+You can open the attribute table in two ways. 
+
+1. Right click on a layer in the Layers panel and select `Open Attribute Table` 
+2. Select a layer in the Layers panel and click on the attribute table symbol in 
+   the toolbar. 
 
 ```{figure} /fig/en_attributetable_right_click.png
 ---
@@ -308,10 +310,10 @@ Screenshot of Opening the Attribute Table
 
 ### Sort the attribute table
 
-Now that the attribute table is opened, it is possible to sort the data within. 
-By clicking on the tab of the column, you can sort the data (alphabetically) in 
-ascending or descending order. The small arrow indicates whether it is sorted 
-ascending or descending. 
+You can sort data in the attribute table by clicking on a column header. Text data will 
+be sorted alphabetically and numeric data will be sorted by value. To reverse 
+the sort order, click the header again. A small arrow in the column header 
+indicates whether it is sorted in ascending or descending order. 
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_show_attribute_table.mp4"></video>
 
@@ -340,10 +342,15 @@ ascending or descending.
     The data is sorted descending.  
     ```
 ``````
+<!-- FIXME: these images can be cropped to just show the important part -->
 
 ### Zoom in on a specific feature via attribute table
+<!-- ADD: Explain why this is useful -->
 
 * __Zoom:__ Right click on your feature --> `Zoom To Feature`
+
+<!-- CLARIFY: Click on a cell rather than the row ID --> 
+
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zoom_to_feature.mp4"></video>
 
@@ -363,8 +370,8 @@ to select features is via the attribute table.
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_attribute_table_select.mp4"></video>
 
 ### Zoom to selected area
-Now that you learned how to select features, you can zoom onto your area of 
-interest. To do so you can click on the symbol on the top pannel or click right 
+Now that you know how to select features, you can zoom onto your area of 
+interest. To do so you can click on the symbol on the toolbar or right click 
 on the layer and select `Zoom to Selection`
 
 ```{figure} /fig/en_zoom_to_selection_1.png
@@ -389,16 +396,18 @@ Screenshot of how to zoom to Selection by clicking right.
 
 ### Save only selected features as a new file
 
-After you selected your data, you might want to proceed with only the Selection. 
-It is possible to save your Selection as new layer. To do so click right on the 
-layer -`Export` -> `Save only selected features`
+After you have selected your data, you might want to proceed with only the 
+selection. You can save your selection as new layer. To do so right click on the 
+layer - `Export` -> `Save only selected features`
 
-You can then choose the format, layername and crs.
+You can then choose the format, layer name and CRS.
 
 ```{tip}
-Use GeoPackage (.gpkg) instead of Shapefile (.shp)!
-If you are unsure which format is best, check out the wiki [Geodata types](../Wiki/en_qgis_geodata_types_wiki.md)
+We recommend use GeoPackage (.gpkg) instead of Shapefile (.shp) in most cases. 
+If you are unsure which format is most appropriate, check out the [geodata types](../Wiki/en_qgis_geodata_types_wiki.md)
+page on the wiki.
 ```
+
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_export_wiki.mp4"></video>
 
@@ -413,14 +422,14 @@ name: Save selection, right-click.
 Screenshot of how to save only selected features.
 ```
 
-## Base maps
-
+## Basemaps
+<!-- CLARIFY: This section could be rewritten more clearly -->
 Basemaps are background maps. They are often very practical since they are easy 
 to use, allow easy orientation on the map canvas and are diverse. QGIS offers 
 OpenStreetMap and some other base maps by default. 
 
 However, there is a wide range of base maps that can be used via extra plugins 
-or XYZ Connections.
+or XYZ Tiles.
 
 Here we give you an overview of ways to access base maps in QGIS.
 
@@ -429,15 +438,16 @@ Here we give you an overview of ways to access base maps in QGIS.
 You can always add the standard OpenStreetMap as a basemap to your map canvas. 
 
 ```{tip}
-In the [wiki article on base maps](../Wiki/en_qgis_basemaps_wiki.md), you can find a tutorial to add more base maps e.g. from google to the standard base map list of your QGIS.
+The [wiki article on basemaps](../Wiki/en_qgis_basemaps_wiki.md), has a tutorial 
+on adding more types of basemaps (e.g. from Google Maps) to the standard basemap 
+options in QGIS.
 ```
-There are two ways to add the OpenStreetMap as a basemap.
+There are two ways to add OpenStreetMap as a basemap.
 
-__Option 1:__ Find in the `Browser` panel `XYZ Tiles`. Open the dropdown by 
-clicking on it and select OpenStreetMap or another basemap.
+1. Find in the `Browser` panel `XYZ Tiles`. Open the dropdown by 
+   clicking on the arrow next to it and select OpenStreetMap
 
-__Option 2:__ `Layer` -> `Add Layer` -> `Add XYZ layer...` -> Select the 
-OpenStreetMap or another basemap.
+2. In the `Layer` menu -> `Add Layer` -> `Add XYZ layer...` -> Select OpenStreetMap 
 
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Add_basemap_OSM.mp4"></video>
@@ -446,29 +456,40 @@ OpenStreetMap or another basemap.
 
 ### QuickMapServices
 
-There are numerous extensions for QGIS, also called plugins, which provide 
-extended functionalities. In the wiki article about plugins, you can learn all 
-about them.
-One of the most important plugins is the 
-[QuickMapServices](https://nextgis.com/blog/quickmapservices/) plugin.
-
-The QuickMapServices Plugin allows to access a wide range of basemaps. 
+There are lots of plugins available for QGIS that provide additional tools not 
+available in a standard installation. The [plugins page] on the wiki has more 
+<!-- FIXME: add link -->
+information.
+One useful plugin is [QuickMapServices](https://nextgis.com/blog/quickmapservices/). 
+This plugin lets you access a wide range of basemaps that are not available in 
+QGIS by default. 
+<!-- CLARIFY: give examples -->
 
 :::{dropdown} Installation of plugins
 To install a plugin `Plugins` -> `Manage and Install Plugins…` -> `All` -> 
 Search for the plugin -> `Install Plugin`
+<!-- CLARIFY -->
+<!-- FIXME: Plugin installation should be its own section, not nested under 
+   QuickMapServices -->
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_plugins.mp4"></video>
 
 ```{Tip}
-If you cannot find a specific extension, check your capitalisation and correct 
-use of spaces. If you still cannot find an extension, you may need to allow the 
-experimental extensions in the options (see below).
+If you cannot find a specific extension, check you have not used spaces where the 
+plugin name doesn't (e.g. When looking for QuickMapServices, searching "Quick Map" 
+will not return results but "quickmap" will). You can use an asterisk (`*`) as a
+wildcard in searches (so "quick*map" will return results with or without a space
+between "quick" and "map"). 
+
+If you still cannot find an extension, you may need to allow experimental 
+extensions in the options (see below).
 ```
+<!-- FIXME: "see below" - no content given below -->
 :::
 
 
 `Web` -> `QuickMapServices` -> select provider e.g. NASA -> select basemap
+<!-- CLARIFY - make these instructions easier to follow. What are we doing and why? -->
 
 __Functionality of QuickMapServices Plugin__
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/add_basemap_quickmapservice.mp4"></video>
@@ -476,3 +497,4 @@ __Functionality of QuickMapServices Plugin__
 ```{Note}
 There can be problems when printing some basemaps from the QuickMapServices!
 ```
+<!-- CLARIFY: What are the problems? Are there any fixes for them? -->
