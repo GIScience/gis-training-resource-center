@@ -58,7 +58,14 @@ The standard folder structure has two principal advantages:
 
 The folder structure template can be downloaded [__here__](https://github.com/GIScience/gis-training-resource-center/blob/main/fig/GIS_Project_folder_template.zip).
 
-![](/fig/Standard_project_folder_structure.drawio.svg)
 
-
+```{figure} /fig/Standard_project_folder_structure.drawio.svg
+---
+width: 800px
+name: 
+align: center
+name: Standard folder structure
+---
+Standard folder structure. Source: 
+```
 

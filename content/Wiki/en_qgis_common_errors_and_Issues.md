@@ -1,6 +1,39 @@
-# QGIS common errors and issues
+# QGIS common errors and issues <!-- omit from toc -->
 
 Here we are collecting common QGIS errors and issues as general QGIS training support.
+
+# Table of content <!-- omit from toc -->
+
+- [Different QGIS versions](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#different-qgis-versions)
+- [QGIS on Mac doesn't open](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#qgis-on-mac-doesnt-open)
+- [A layer is not displayed in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#a-layer-is-not-displayed-in-qgis)
+- [A layer window has disappeared in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#a-layer-window-has-disappeared-in-qgis)
+- [Layers that should actually be in the same position are not on top of each other](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#layers-that-should-actually-be-in-the-same-position-are-not-on-top-of-each-other)
+- [Layer file disappeared from the layer window](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#layer-file-disappeared-from-the-layer-window)
+- [Missing processing tools in the panels tool and incomplete vector tab](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#missing-processing-tools-in-the-panels-tool-and-incomplete-vector-tab)
+- [Missing toolbox](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#missing-toolbox)
+- [The North arrow is not syncing with the corresponding map](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#the-north-arrow-is-not-syncing-with-the-corresponding-map)
+- [Invalid Geometry](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#invalid-geometry)
+- [Coordinate systems: What do all these terms mean?](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#coordinate-systems-what-do-all-these-terms-mean)
+- [Coordinate systems: How do I redefine a dataset's coordinate system?](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#coordinate-systems-how-do-i-redefine-a-datasets-coordinate-system)
+- [Coordinate systems: Why is Mercator ever used if it's so distorted?](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#coordinate-systems-why-is-mercator-ever-used-if-its-so-distorted)
+- [Coordinate systems: My dataset is not located where it should be!](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#coordinate-systems-my-dataset-is-not-located-where-it-should-be)
+- [Coordinate systems: What coordinate system should my dataset be in?](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#coordinate-systems-what-coordinate-system-should-my-dataset-be-in)
+- [My dataset is slightly offset from where it should be!](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#my-dataset-is-slightly-offset-from-where-it-should-be)
+- [Wrong data results or missing data](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#wrong-data-results-or-missing-data)
+- [File Management Issues](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#file-management-issues)
+- [Specific QGIS problems](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#specific-qgis-problems)
+  - [Basic settings \> Deactivating the automatic projection selection](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#basic-settings--deactivating-the-automatic-projection-selection)
+  - [Saving regularly](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#saving-regularly)
+  - [GRASS applications](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#grass-applications)
+  - [SAGA with Linux](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#saga-with-linux)
+  - [Umlauts, special characters, spaces in file paths](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#umlauts-special-characters-spaces-in-file-paths)
+- [QGIS Help Access Links](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#qgis-help-access-links)
+    - [QGIS tutorials and tips:](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#qgis-tutorials-and-tips)
+    - [QGIS community/forums:](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#qgis-communityforums)
+    - [QGIS YouTube channels:](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#qgis-youtube-channels)
+    - [ChatGPT](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#chatgpt)
+
 
 
 ## Different QGIS versions 
@@ -599,42 +632,3 @@ Here you will find further help access links or QGIS community/forum links to ad
 #### ChatGPT
 + And don't forget ChatGPT https://chat.openai.com/
 It is quick!
-
-
-# Test Table of Content
-
-# Table of contents
-1. [Different QGIS versions](#Different-QGIS-versions)
-2. [Some paragraph](#paragraph1)
-    1. [Sub paragraph](#subparagraph1)
-3. [Another paragraph](#paragraph2)
-
-## This is the introduction <a name="introduction"></a>
-Some introduction text, formatted in heading 2 style
-
-## Some paragraph <a name="paragraph1"></a>
-The first paragraph text
-
-### Sub paragraph <a name="subparagraph1"></a>
-This is a sub paragraph, formatted in heading 3 style
-
-## Another paragraph <a name="paragraph2"></a>
-The second paragraph text
-
-**Table of content:**
-- [Hello World](#item-one)
-- [First Item](#item-two)
-- [Second Item](#item-three)
-
-<!-- headings -->
-<a id="item-one"></a>
-### Hello World
-Hello world content goes here
-
-<a id="item-two"></a>
-### First Item
-First item content goes here
-
-<a id="item-three"></a>
-### Second Item
-Second item content goes here

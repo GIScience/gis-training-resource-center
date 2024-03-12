@@ -1,7 +1,5 @@
 # Getting started with QGIS
 
-🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
-
 __🔙[Back to Homepage](/content/intro.md)__
 
 **Competences:**
@@ -35,7 +33,7 @@ There are __two__ options to create a new project:
 ---
 height: 400
 name: Project Template
-align: Left
+align: center
 ---
 ```
 2. In the upper left corner click on `Project` -> ` New Project `
@@ -174,7 +172,7 @@ To open an existing QGIS project click on `Project` -> `Open…` -> Navigate to 
 #### Save Projects
 
 * __When you save for the first time__: To save the QGIS project you are working on click on `Project` -> `Save as…`-> Navigate to the folder where you want to save the project -> Give the project a name -> `Save`
-* __When saving your progress__: To save progress in a project that was already saved somewhere on your computer there are two good options:
+* __When saving your progress__: To save progress in a project that was already saved somewhere on your computer, there are two good options:
     * Use the hotkey `Ctrl`+ `s` on your keyboard. 
     * Click on `Project` -> `Save`. 
 

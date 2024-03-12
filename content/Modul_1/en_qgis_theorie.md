@@ -2,9 +2,6 @@
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-🚧This training platform and the entire content is under ⚠️construction⚠️ and 
-may not be shared or published! 🚧
-
 At its core, GIS is a computer-based system to organise data with a spatial 
 component (_geodata_). There are three core functions of GIS: 
 
