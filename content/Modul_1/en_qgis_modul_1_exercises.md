@@ -1,4 +1,4 @@
-# Exercises Modul 1- Introduction to QGIS
+# Exercises Module 1- Introduction to QGIS
 
 __🔙[Back to Homepage](/content/intro.md)__
 
