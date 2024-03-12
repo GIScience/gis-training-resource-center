@@ -307,10 +307,6 @@ Table aggregation workflow
 
 Sometimes, the tables are in a format that is not suitable to join. For example, you have multiple zones per land, making the field `CNTRY_NAME` not suitable for aggregation. In this case, it is useful to pivot the table. This means that the fields for the zones and their respective area size are aggregated under the country. The values of the column `ZONE` will be turned into Columns with the values for the area in these columns. Now you can aggregate this table with additional information that has data on countries.
 
-::::{grid} 2
-
-:::{grid-item-card}
-
 ``` {figure} ../../fig/en_table_pivot_1.png
 ---
 name: Table_pivot 1
@@ -319,9 +315,6 @@ width: 350px
 Pivoting tables means transforming values into columns
 ```
 
-:::
-
-:::{grid-item-card}
 ``` {figure} ../../fig/en_table_pivot_2.png
 ---
 name: Table pivot 2
@@ -329,31 +322,22 @@ width: 350 px
 ---
 Values of the column `ZONE` are transformed into columns
 ```
-:::
-
-::::
 
 
-:::{card}  
 ``` {figure} ../../fig/en_table_pivot_3.png
 A country is now represented in a single row
 ```
-:::
-
-:::{card}  
+ 
 
 ``` {figure} ../../fig/en_table_pivot_4.png
 The values for the areas are added to the country column
 ```
-:::
 
-:::{card}  
 
 ``` {figure} ../../fig/en_table_pivot_5.png
 Red = Pivot field; Blue = Input field; Green = Values field
 ```
 
-:::
   
 ## Selecting appropriate locations according to a set of criteria
 
@@ -413,8 +397,4 @@ The problem with TIN statistical surfaces is that the surfaces are not smooth an
 ### Kriging
 
 Kriging is a method of geostatistics used to estimate values for spatial units where the phenomenon of interest has not been measured at every spatial points. Kriging integrates covariates into the interpolation. For example, it is not only the distance to measured temperatures that influences its weighting; temperature is also influenced by the altitude of the sample point. 
-
-### Symbolizing continuous data
-
-
 
