@@ -3,7 +3,7 @@
 Here we are collecting common QGIS errors and issues as general QGIS training support.
 
 
-## Different QGIS versions <a name="Different QGIS versions"></a>
+## Different QGIS versions 
 The Wiki and in particular the videos in it are only a snapshot in time. QGIS itself, as well as the installable extensions, are constantly being developed and improved. Therefore there may be differences between the various versions in the appearance of the user interface or, in rare cases, even in the function. Consequently, there may be differences between the Wiki and the QGIS installed on your PC. Nonetheless this cahpter focusses on common errors and issues, hopefully for many (upcoming) versions.
 
 ## QGIS on Mac doesn't open
@@ -604,7 +604,7 @@ It is quick!
 # Test Table of Content
 
 # Table of contents
-1. [Different QGIS versions](#Different QGIS versions)
+1. [Different QGIS versions](#Different-QGIS-versions)
 2. [Some paragraph](#paragraph1)
     1. [Sub paragraph](#subparagraph1)
 3. [Another paragraph](#paragraph2)
