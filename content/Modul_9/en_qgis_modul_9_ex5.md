@@ -12,29 +12,32 @@ First we want to dissolve the `highways` layer to combine all the LineString geo
 
 Open the **Processing Toolbox** and search for **Dissolve**. Select the `highways` layer as the Input Layer and leave all other settings at default. 
 
-### STEP 2: 
+### STEP 2: Betweenness Centrality - Before Flood
 
 Make sure you installed the GRASS GIS provider Plugin. If you don't know how to install Plugins, click here: {ref}`content:references:wiki:plugins`
 
-Open the **Processing Toolbox**, choose **GRASS**, then choose **Vector** and finally scroll down to **v.net.centrality**. Select the `Dissolved`Layer from Step 1 and leave all other settings at default. After the calculation you receive a new Point layer called `Network Centrality`.
+To determine the betweenness centrality open the **Processing Toolbox**, choose **GRASS**, then choose **Vector** and finally scroll down to **v.net.centrality**. Select the `Dissolved` Layer from Step 1 and leave all other settings at default. After the calculation you receive a new Point layer called `Network Centrality`.
 
-Now click **F7** to open the **Layer Styling**. There you can choose the new `Network Centrality` Layer and change `Single Symbol` to `Graduated` to get a color transition. Before you can see the final result, you must select the `Value` **betweenness** and click `Classify`. 
+Now you want to make the difference between the values visible for interpretation. Therefore click **F7** to open the **Layer Styling**. There you can choose the new `Network Centrality` Layer and change `Single Symbol` to `Graduated`.  You must select **betweenness** as your `Value`and finally click `Classify`. 
 
 ```{Tip}
 To make the differences of the values more visible, you can change the Classification `Mode` from **Equal Count (Quantile)** to **Natural Breaks (Jenks)**.
 ```
 `````{admonition} Question
-Can you spot ares of the city with higher centrality values by looking at the different nodes? What does this mean for the infrastructure of Heidelberg?
+Can you spot areas of the city with higher centrality values by looking at the different nodes? What does this mean for the infrastructure of Heidelberg?
 `````
 
+### STEP 3: Betweenness Centrality - After Flood
 
+In a next step, we want to carry out the same analysis after the flood event in order to determine the impact of the flood on the infrastructure in Heidelberg. To do so, we first have to delete the part of the `highways` layer that is flooded. 
 
+Open the **Processing Toolbox** and search for **Difference**. Select the `Dissolved` layer as the Input Layer and the `flood_area`layer as the Overlay Layer. Leave all other settings at default. After the calculation you receive a new LineString layer called `Difference`.
 
-Valentins show
+Repeat the analysis from Step 2 to determine the betweenness centrality of the `Difference` Layer. 
 
-- dissolve layer
-- GRASS v.net.centrality
-- interpretieren zwischenresultate
-- Difference mit Floodlayer (flood simulieren)
-- Zentralität mit neuem layer
-- interpretation der unterschiedlichen Layer
+```{Tip}
+To make the values of the two Point Layers more comparable, right click on your second `Network Centrality` Layer, choose `Styles`, `Copy Styles` and then `All Style Categories`. Then right click on your first `Network Centrality` Layer, choose `Styles`, `Paste Styles` and then `All Style Categories`. Now the two layers share the same classification for comparison.
+```
+`````{admonition} Question
+Can you spot new areas of the city with high centrality values? How did the range of the values change due to the flood? How did the flood event influence the infrastructure of Heidelberg in general?
+`````
