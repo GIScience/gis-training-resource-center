@@ -43,3 +43,69 @@ Experimental extensions are either still under development, or they are obsolete
 ```{Tip}
 Due to the often missing optimization for the used QGIS version, experimental extensions may cause more error messages or other problems up to a crash of QGIS. Experimental extensions should therefore only be activated for use and then deactivated again. In addition, make sure that the current working progress is saved to avoid data loss when QGIS crashes.
 ```
+
+### Downloading the Quick OSM plugin
+
+To download data from data and import it into your QGIS the plugin **QuickOSM** is great. First you need to install it by searching for it in the `Manage and Install Plugins` Tab.
+
+:::{dropdown} How to download the plugin
+
+
+```{figure} /fig/managa_install_plugins.png
+---
+width: 400px
+name: 
+align: center
+name: Manage and Install Plugins
+---
+Manage and Install Plugins.
+```
+
+```{figure} /fig/install_quickosm.png
+---
+width: 800px
+name: 
+align: center
+name: Installing QuickOSM
+---
+Installing QuickOSM.
+```
+:::
+
+To launch the newly installed plugin, click on ![](fig/quickosmplugin.png) or click under `vector` -> `QuickOSM`. 
+
+Follow the steps to fetch for data:
+
+1. Select a Key and Value from the dropdown list. If you are unsure, check here: [taginfo](https://taginfo.openstreetmap.org). 
+
+```{figure} /fig/key_value_quickosm.png
+---
+width: 800px
+name: 
+align: center
+name: Choosing key and value
+---
+Choosing key and value in QuickOSM.
+```
+
+2. Limit the area by typing in the name of your area of interest.
+
+3. Unfold the tab `Advanced`. Only select the datatypes you are expecting to minimize errors.
+
+```{figure} /fig/quickosm_usage.png
+---
+width: 800px
+name: 
+align: center
+name: Running the QuickOSM plugin.
+---
+Running the QuickOSM plugin.
+```
+
+4. Click on `Run query`.
+
+:::{dropdown} How to fetch data for multiple queries
+
+If you want to get more data in the same area, you can add a query by clicking on the ![](fig/plus_quickosm.png). Be careful choosing the right logical operator `And` or `Or`. If you are unsure check this [Wikipage](/content/Wiki/en_qgis_non_spatial_queries_wiki). 
+
+:::
