@@ -24,7 +24,7 @@ Now you want to make the difference between the values visible for interpretatio
 To make the differences of the values more visible, you can change the Classification `Mode` from **Equal Count (Quantile)** to **Natural Breaks (Jenks)**.
 ```
 `````{admonition} Question
-Can you spot areas of the city with higher centrality values by looking at the different nodes? What does this mean for the infrastructure of Heidelberg?
+Can you identify critical road segments of the city with higher centrality values by looking at the different nodes? What does this mean for the infrastructure of Heidelberg?
 `````
 
 ### STEP 3: Betweenness Centrality - After Flood
@@ -39,5 +39,5 @@ Repeat the analysis from Step 2 to determine the betweenness centrality of the `
 To make the values of the two Point Layers more comparable, right click on your second `Network Centrality` Layer, choose `Styles`, `Copy Styles` and then `All Style Categories`. Then right click on your first `Network Centrality` Layer, choose `Styles`, `Paste Styles` and then `All Style Categories`. Now the two layers share the same classification for comparison.
 ```
 `````{admonition} Question
-Can you spot new areas of the city with high centrality values? How did the range of the values change due to the flood? How did the flood event influence the infrastructure of Heidelberg in general?
+Can you identify new critical road segments of the city with high centrality values? How did the range of the values change due to the flood? How did the flood event influence the infrastructure of Heidelberg in general?
 `````
