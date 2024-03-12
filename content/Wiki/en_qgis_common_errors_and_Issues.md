@@ -4,7 +4,7 @@ Here we are collecting common QGIS errors and issues as general QGIS training su
 
 # Table of content <!-- omit from toc -->
 
-- [Different QGIS versions](#different-qgis-versions)
+- [Different QGIS versions](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#different-qgis-versions)
 - [QGIS on Mac doesn't open](#qgis-on-mac-doesnt-open)
 - [A layer is not displayed in QGIS](#a-layer-is-not-displayed-in-qgis)
 - [A layer window has disappeared in QGIS](#a-layer-window-has-disappeared-in-qgis)

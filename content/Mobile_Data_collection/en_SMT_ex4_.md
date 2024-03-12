@@ -57,7 +57,7 @@ __Exercise B__: 30 min
 ::::
 
 ```{Tip}
-Decide together with the responsible working group which GIS system is prefered and decide on one. There is no neccesity to learn/use both ways. Generally QGIS will give you more opportunities for visualization and analysis of the results, but if a simple and quick visualization without installation of software packages is desired, UMAP might be an easy solution.
+Decide together with the responsible working group which GIS system is prefered and decide on one. There is no neccesity to learn/use both ways. Generally QGIS will give you more opportunities for visualisation and analysis of the results. If a simple and quick visualization without installation of software packages is desired, UMAP might be an easy solution.
 ```
 
 
@@ -121,7 +121,7 @@ __Click here to start exercise B__
 ::::
 
 
-If you experience any problems during your use of the [Sketch Map Tool](https://sketch-map-tool.heigit.org/) please take a look at the [Help page](https://sketch-map-tool.heigit.org/help).
+If you experience any problems during your use of the [Sketch Map Tool](https://sketch-map-tool.heigit.org/), please take a look at the [Help page](https://sketch-map-tool.heigit.org/help).
 
 
 
