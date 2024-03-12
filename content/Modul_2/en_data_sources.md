@@ -114,7 +114,7 @@ To download data from data and import it into your QGIS the plugin **QuickOSM** 
 
 ```{figure} /fig/managa_install_plugins.png
 ---
-width: 800px
+width: 400px
 name: 
 align: center
 name: Manage and Install Plugins
