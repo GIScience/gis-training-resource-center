@@ -7,7 +7,7 @@ Explore the whole workflow of mapping with the Sketch Map Tool, from first ideas
 
 > picture /fig/SMT_workflow_satelite.png fehlt oder ist /fig/SMT_workflow.png gemeint (see below)?
 
-```{figure} /fig/SMT_workflow_Satelite.png
+```{figure} /fig/smt_workflow_Satelite.png
 ---
 height: 450px
 name: T
@@ -16,10 +16,10 @@ align: center
 Thw workflow of the Sketch Map Tool
 ```
 
-```{figure} /fig/SMT_workflow.png
+```{figure} ../fig/smt_workflow.png
 ---
-height: 450px
-name: SMT Workflow
+height: 500px
+name: SMT_Workflow
 align: center
 ---
 Thw workflow of the Sketch Map Tool
@@ -73,19 +73,17 @@ preparing participatory mapping / facilitating participatory mapping/ analysing 
 
 ### Timetable
 
-
-| ----- | ----- |
-| Introduction | 10 min |
-| Group exercise | 1h 35min  
+1. __Introduction__:  10 min
+2.  __Group exercise__: 1h 35min  
 - 15 min group reading and discussion of the case  
 - 10 min for creating the maps
 - buffer time for printing (about 5 min)
 - 15 min for marking the Sketch maps
 - 10 min for digitizing the Sketch maps
 - 20 min to open the files in QGIS or uMap
-- 20 min preparation of a short presentation |
-| Wrap-up (with presentations)| 
-- each group about 5 min to present 
+- 20 min preparation of a short presentation
+3. __Wrap-up__ (with presentations): 
+- 5 min per group to present their findings
 - 10 min general discussion
 - a bit buffer time for the change of the groups |
 
@@ -111,19 +109,21 @@ Alternatives
 - If you would like to adapt this exercise to your specific use case, create your own case-description. 
 ```
 
+
 ### Available Material: 
-> needs to be linked directly   
+> needs to be linked directly + not fully understandable. Take a look at folder structure ex 4 or mention the file paths where to find the mentioned data
+
 •	Introduction slides about the Sketch Map Tool
 •	X EVCA-case studies as examples
 •	Alternative files based on OSM- and satellite-based Sketch Maps from 5 regions.
--	The created maps for (pre-printing)
+-	The created maps for pre-printing
 -	Pre-marked and photographed maps 
 -	Geodata of the results and some pictures 
 
 
 ### During the exercise:  
 #### Introduction: 
-- Introduce the idea, the aim, and the general workflow of the Skecht Map Tool before starting the exercise. 
+- Introduce the idea, the aim, and the general workflow of the Sketch Map Tool before starting the exercise. 
 - Provide access to the needed material and form groups (at least 3 people each to discuss together; ideal group size is 3 to 6 participants).
 
 #### Time for group work: 
@@ -150,12 +150,12 @@ height: 450px
 name: T
 align: center
 ---
-Picutre of the workflow
+Picture of the workflow
 ```
 
-- The first step is the creation of the paper-based maps. Users can choose between two basemap containing either [OpenStreetMap (OSM)](www.openstreetmap.org) Data or basemaps containing satellite images. In addition, the tool can evaluate how well-suited an area of the OpenStreetMap (OSM) basemap is for participatory mapping. This evaluation is based on a quality analysis of the OpenStreetMap (OSM) data using the [HeiGIT ohsome quality analyst](https://heigit.org/de/big-spatial-data-analytics/ohsome-3/ohsome-quality-analyst-oqt/). 
-- The data is collected on site/offline through participatory mapping. For this, you only need participants, printed Sketch Maps and pens to draw markings on the Sketch Maps.
-- After mapping, the Sketch Map Tool supports the digitisation of the Sketch Maps. Upon uploading the pictures or scans of the marked Sketch Maps, the Sketch Map Tool initiates an automatic georefferencing and coloure-detection process. The results can be downloaded in various geodata formats. The tool uses a combination of computer vision algorithms and novel AI models to extract Sketch Maps from photos and detect markings on them. The results can then be used for further analysis in Geographic Information System software (such as QGIS).
+- The first step is the creation of the paper-based maps. Participants can choose between basemaps containing [OpenStreetMap (OSM)](www.openstreetmap.org) data or basemaps containing satellite images. In addition, the tool can evaluate how well-suited an area of the OpenStreetMap (OSM) basemap is for participatory mapping. This evaluation is based on a quality analysis of the OpenStreetMap (OSM) data using the [HeiGIT ohsome quality analyst](https://heigit.org/de/big-spatial-data-analytics/ohsome-3/ohsome-quality-analyst-oqt/). 
+- Usually, the data is collected on site and offline through participatory mapping. For this, you only need participants, printed Sketch Maps and pens to draw markings on the Sketch Maps.
+- After mapping, the Sketch Map Tool supports the digitisation of the Sketch Maps. Upon uploading the pictures or scans of the marked Sketch Maps, the Sketch Map Tool initiates an automatic georefferencing and colour-detection process. The tool uses a combination of computer vision algorithms and novel AI models to extract Sketch Maps from photos and detect markings on them. The results can be downloaded in various geodata formats.  The results can then be used for further analysis in Geographic Information System software (such as QGIS).
 
 
 ### What does 'georefferenced' means?
@@ -169,7 +169,7 @@ Picutre of the workflow
 
 ### Background Information on UMAP
 
->move this section?
+>move this section or change title into comparison between QGIS and uMap?
 
 UMAP is an online platform that allows users to create custom maps with OpenStreetMap (OSM) as a basemap layer. No installation or registration is necessary to use the platform. This enables users to quickly gain an intuitive overview of their data.
 Users can customize the appearance of the map and share it with others. It's particularly useful for collaborative mapping projects, quick visualization of geographic data, and creating custom maps tailored to specific needs.
@@ -225,7 +225,7 @@ Print your maps and mark with real pens to experience the real use of the Sketch
 
 ### 5.	Open your results in QGIS or uMap
 
-- You can choose to use either QGIS (Option A) or [uMap](https://umap.openstreetmap.fr/en/) (Option B) for the next part of the exercise.
+- You can choose to use either QGIS (__Option A__) or [uMap](https://umap.openstreetmap.fr/en/) (__Option B__) for the next part of the exercise.
 
 > moved to each section because participants cannot do this now: "- Take a look at the detected markings, compare it with your map. Which differences can you see? Are some markings missing in the Sketch Map Tool results?"
 
@@ -277,6 +277,8 @@ Editing the map properties
 
 3. You can load your data into the map frame by clicking on the upwards-arrow button ![](/fig/umap_upload_data_icon.png) in the toolbar on the right side of the website. The `Import data` panel will open on the right hand side. Click on `Select file` and navigate to your vector output from the SKetch Map Tool ("Schuld_Ahr-tal_sketch-map_Ex4.geojson") and click on `Open`. uMap will automatically detect that your file is a geojson/vector file . Click on `Import` to load your data to your map canvas.
 
+4. Click in the upper right corner on `Save`. If you are not logged in, you will be provided with an URL where you can access your map any time in the future. Save it somewhere or send it to your email. 
+
 ```{figure} /fig/en_SMT_ex4_UMAP_Data_Loaded.PNG
 ---
 height: 400px
@@ -286,9 +288,9 @@ align: center
 UMAP interface with the Sketch Map vectors
 ```
 
-4. Click in the upper right corner on `Save`. If you are not logged in, you will be provided with an URL where you can access your map any time in the future. Save it somewhere or send it to your email. 
 
->if you are not logged in ^?
+
+>confused if its correct: if you are not logged in you will be provided with an URL where you can access your map any time in the future. Save it somewhere or send it to your email^?
 
 :::
 
