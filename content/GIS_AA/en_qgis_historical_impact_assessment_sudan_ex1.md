@@ -22,10 +22,17 @@ This step is outlined in the article Historical Impact Assessment (HIA) for Floo
 ```{attention} 
 This step is outlined in the article Historical Impact Assessment (HIA) for Flood in Suda will not be the subject of this exercise. 
 ```
+We want to tie single pieces of information, like impacts, to known flood events in Sudan. Thus, we first need a comprehensive list of such events. In the case of Sudan, there are two sources: EM-DAT and ReliefWeb. [EM-DAT](https://www.emdat.be/) is a disaster database that lists events above a certain severity.
 
-We want to tie single pieces of information like impacts, to knowen flood events in Sudan. Thus we first need a comprehensive list of such events. In the case of Sudan, there are two sources, EM-DAT and RelifeWeb. EM-DAT is a disaster database that lists events above a certain severity. 
-RelifeWeb is actually an information platform for humanitarian response. But it has a list of active and past disasters as well. 
-Both databases list the same events for the most part. By comparing the two datasets and only selecting unique events, we receive a list of all significant flood events in Sudan and the timeframes of all events. This can easily be done in Excel.
+```{note} EM-DAT Inclusion Criteria
+* At least ten deaths (including dead and missing).
+* At least 100 affected (people affected, injured, or homeless).
+* A call for international assistance or an emergency declaration.
+```
+
+[ReliefWeb](https://reliefweb.int/) is actually an information platform for humanitarian response, but it also has a list of active and past disasters. 
+
+Both databases list the same events for the most part. By comparing the two datasets and only selecting unique events, we receive a list of all significant flood events in Sudan and the timeframes of each event. This can easily be done in Excel
 
 ```{note} EM-Date and RelifeWeb data overview
 In total, there were 35 flood events reported between 1988 and 2021
@@ -69,8 +76,8 @@ In total, there were 35 flood events reported between 1988 and 2021
 
 ### Task 3- Selecting datasets
 
-In this step, we decide which datasets we want to include in the HIA. In this context, there are three sources we can turn to. The Sudan Red Crescent Society (SRCS), RelifeWeb and FloodList. In this exercise, we will limit ourselves to datasets from RelifeWeb and Floodlist.
-In the „Input“ folder of the exercise data you can find the folder „reports_articles“. This folder contains 10 datasets. 
+In this step, we decide which datasets we want to include in the HIA. In this context, there are three sources we can turn to: the Sudan Red Crescent Society (SRCS), ReliefWeb, and FloodList. For this exercise, we will limit ourselves to datasets from ReliefWeb and FloodList.
+In the 'Input' folder of the exercise data, you can find the folder 'reports_articles.' This folder contains 10 datasets.
 
 1. Your task now is to go through the reports and decide which one you will use in the HIA. Place the dataset you want to use in a new folder.
 
@@ -112,8 +119,8 @@ In the „Input“ folder of the exercise data you can find the folder „report
 
     __Uniqueness__
 
-    It is important to not only use data from one source becaus of confience. 
-    The assumption is that different organisations have different capacities and work in different areas, thus they may have better information in some locations of sectors than other organisations.
+    It is important to not only use data from one source because of confidence.
+    The assumption is that different organizations have different capacities and work in different areas; thus, they may have better information in some locations or sectors than other organizations.
 
 
 2.	Give the datasets you selected an ID. This is essential to be able to later pinpoint from which dataset a particular information was pulled. Change the name of the file to the new ID. Furthermore, create a list of the datasets you want to use for the HIA.
@@ -499,7 +506,7 @@ The HeiGIT team used 75 different impact types. You can find the whole list belo
 
 ### Task 5: Data compiling
 
-Finally, we can start to compile the data. Remember we are using the key + value concept to create a long table. Every piece of information gets one row! 
+Finally, we can start to compile the data. Remember we are using the __key + value__ concept to create a long table. Every piece of information gets one row! 
 
 
 :::{dropdown} Tipps for data compiling
@@ -794,7 +801,7 @@ If you want to use the data from the „task_6“ folder, your principal task is
     Probably, the reddened information is from two different sources. So you can delete the information of the older source and only keep the one from the up-to-date source as possible.
 
 
-### Task 7: Joining P-Code columns
+### Task 7: Joining P-Code columns ✅
 
 
 ```{attention}
@@ -824,15 +831,146 @@ The information below should show a green check and „The selection has matched
 The Result should be the Excel file „Suadn_impact_p_code“. The file should contain all info from the original impact table and the two new columns „ADM1_EN“ and „ADM1_PCODE“.
 
 ```
+### Task 8: Data export using Pivot-Table in Excel
 
-### Task 8: Data visualization and analysis
+__Impact Quantity for one year on state level:__
 
-Import the CSV-file into QGIS. 
-1. Open the `Data Source Manager` 
-2. Select the `Delimited Text` section. Here you can input your CSV-file
-3. Depending on the `File Format` you need to define Custom delimiters or you can just select CSV.
-4. Always check the Sample Data output at the bottom to see if the import is working as expected. You probably will also need to check the `Record and Fields Options` and specify if your first record is a header or already data.
-5. Lastly, it is important to specify the `Geometry Definition`, where you can just select `No geometry`.
+1. Open the Excel dataset.
+2. Turn the data in a table by clicking on `Insert` -> `Table`-> check `My table has headers`
+3. Also under the `Insert`-Tab click on `Pivot Table`. Make sure your table range is correct. Check `New Worksheet`. Click `OK`.
+4. Setup the pivot table by placing the columns as follows:
+  - Filter: Start_year
+  - Columns: Impact_Type
+  - Rows: admin_1 or admin_1_PCODE (If you want to use this table in QGIS, you should use admin_1_PCODE Instead of admin_1)
+  - Values: Impact_quantity
+5. To see the sum of the different impacts click on Impact_quantity under Values -> `Value Field Settings` -> select `Sum`.
+6. Directly above the pivot table, you should see the option to filter by year. Select the year you are interested in. For the following example the year 2020 was used.
 
-An example will be shown in {numref}`HIA_csv_import`.
+Now you can just copy the whole table, and place it in a new worksheet. Make sure to only paste the values. Save this output as a CSV-file, this will make the import of the subset into QGIS easier. Now we can use this table to join it with an existing geodataset in QGIS. 
 
+__Flood events in Sudanese states for all the recorded years__
+
+In this section we want to analyse and visualise all recorded flooding events for all the Sudanese state. With our filter for the Impact-Type we derive information for the years 2003 until 2021. 
+
+1. In the first step we will create a new `pivot table` and store it in a new sheet. Here we will specify the following:
+  - Columns: Impact_Type
+  - Rows: admin_1_PCODE
+  - Values: Count of impact_quality
+
+2. Now we want to filter the columns labels to the following impact types:
+  - Event
+  - Flash-flood
+  - Flood
+  - Flooding
+
+We also want to include the Event and Flash-floods as these types can also be associated with flooding events as a result of heavy rainfall, seasonal rainfall, etc. 
+We also want to make sure that we rename the column containing the sum of the flooding events to `Sum flood events`.
+
+3. Now we export this excel sheet as a CSV file and import it into QGIS. We will open the `Data Source Manager` and select the `Delimited Text` section. Here we need to do the following specifications ({numref}`HIA_import_csv_floods`).
+
+
+### Task 9: Data visualization and analysis in QGIS
+
+1. Open QGIS and create a new projeckt.
+2. Import the file "sdn_adm_cbs_nic_ssa_20200831 — sdn_admbnda_adm1_cbs_nic_ssa_20200831"  from the input file in QGIS.
+
+
+__Visualise impact quantity data for one year on state level in QGIS: __
+
+1. Import the csv fille "Sudan_admin1_Flood_Impact_quantity_2020.CSV" from the input folder of task 8 in QGIS by opening the `Data Source Manager` and select the `Delimited Text` section.
+    1. Here you can input your CSV-file and depending on the `File Format` you need to define Costum delimiters or you can just select CSV. In thix case go with semicolon `;`. Always check the Sample Data output at the bottom to see if the import is working as expected.
+    2. `Record and Fields Options`: Specify that your first record is a header.
+    3. `Geometry Definition`: Select `No geometry`.
+    4. Click `Add`
+
+__Outcome:__  You should now have your "Sudan_admin1_Flood_Impact_quantity_2020" file as table in QGIS.
+
+
+```{figure} /fig/Sudan_HIA_ex_import_csv_impact.png
+---
+height: 500px
+name: HIA_csv_import
+---
+Import of the CSV data impact quantity 2020 on state level
+```
+
+2. To turn the impact data into a geodataset we will join it with the --- layer based on th p-codes. We will use the tool `Join attributes by field value`. 
+    1. `Input Layer`: "sdn_adm_cbs_nic_ssa_20200831 — sdn_admbnda_adm1_cbs_nic_ssa_20200831"
+    2. `Table field`: "admin1Pcode"
+    3. `Input Layer 2`: "Sudan_admin1_Flood_Impact_quantity_2020"
+    4. `Table field 2`: "admin1_pcode"
+    5. `Join Type` : "Take attributes of the first matching features only (one-to-one)
+    6. Name the new file "Sudan_admin1_impact_quantity" and save it in your "result" folder
+    7. Click `Run`
+
+__Outcome:__ You should now have the layer „Sudan_admin1_impact_quantity“ in your QGIS. The layer should have all columns from Sudan_admin1_Flood_Impact_quantity_2020 and sdn_adm_cbs_nic_ssa_20200831 — sdn_admbnda_adm1_cbs_nic_ssa_20200831.
+
+
+```{figure} /fig/Sudan_HIA_ex_join_table.png
+---
+height: 500px
+name: HIA_join
+---
+Join the table information onto the geodata
+```
+
+3. Now we can start creating maps or spatial analysis with our impact data. Let's create a map that shows destroyed houses in 2020. Since absolute destroyed houses are natural numbers, we use the option `Graduated` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html)).
+    1. Right-click on the layer “Sudan_admin1_impact_quantity” in the `Layer Panel` -> `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
+    2. On the top you find a dropdown menue. Open it and choose `Graduated`.
+    3. Under `Value` select “Houses_damaged_totally”.
+    4. `Color ramp`: Select a white-to-red color ramp.
+    5. `Mode`: Equal Count (Quantile)
+    6. `Classes`: 5
+    7. Click `Classify`
+    8. Click `Apply`
+
+
+```{figure} /fig/en_HIA_map_houses.png
+---
+height: 500px
+name: HIA_map_houses
+---
+Example map of destroyed houses in Sudan 2020
+```
+
+
+__Flood events in Sudanese states for all the recorded years__
+
+In this section we want to analyse and visualise all recorded flooding events for all the Sudanese state. With our filter for the Impact-Type we derive information for the years 2003 until 2021. 
+
+
+1. Now we impoer the file "Floods_Sudan_all_years" from the input folder. We will open the `Data Source Manager` and select the `Delimited Text` section. Here we need to do the following specifications ({numref}`HIA_import_csv_floods`).
+
+```{figure} /fig/en_HIA_import_csv_floods.png
+---
+height: 500px
+name: HIA_import_csv_floods
+---
+Import of the CSV data
+```
+
+2. The next step follows the same logic as step 2 in the previous example. We will use geodata that contains information about the states of Sudan and join them with the imported CSV data. We will use the `Join attributes by field value` tool and select the ADM1_PCODE as the table field used for the join. An example is shown in {numref}`HIA_join_floods`.
+
+```{figure} /fig/en_HIA_join_floods.png
+---
+height: 500px
+name: HIA_join_floods
+---
+Join the table information onto the geodata
+```
+
+3. Now we can visualise our results using `Graduated` and selecting the corresponding column of the attribute table `Sum flood events`. Select an appropriate color scheme and start creating your map. Your final product could look like {numref}`HIA_map_floods`.
+
+```{figure} /fig/en_HIA_map_floods.png
+---
+height: 500px
+name: HIA_map_floods
+---
+Example map
+```
+
+
+
+```{Note}
+Two states have NULL values and will not appear when styling the data. The original admin1 Sudan dataset can be used as a mask with the correct styling to include them in our map. This way, we can display the state boundaries without adding any new content.
+```
