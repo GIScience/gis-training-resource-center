@@ -1,4 +1,4 @@
-# Rasterdata Exercise 1: Basic Asesment of Flood Exposure in the Indus Basin in Pakistan
+# Rasterdata Exercise 1: Basic Assessment of Flood Exposure in the Indus Basin in Pakistan
 
 ### Aim of the exercise
 The aim of this exercise is to gain a basic understanding of working with raster data and its visualisation and advantages. To achieve this, several datasets such as a digital elevation model, population data and mapped flood extents are processed to create a simple flood risk map for the Indus River basin in Pakistan.
@@ -33,7 +33,7 @@ Download all datasets **DATA LINK** and save the folder on your computer. Unzip 
 ### Tasks 1
 Our first goal is to get a proper overview over the datasets and get familiar with the different visualisation options for raster data and how to ideally use them.
 
-1. Open QGIS and create a [new project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`
+1. Open QGIS and create a [new project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`. Set your Project CRS to "WGS 84 / UTM zone 43N".
 
 2. Once the project is created save the project in the “project” folder of the “Ex_Pakistan_floodrisk”. To do that click on `Project` -> `Save as` and navigate to the folder. Name the project “Pakistan_floodrisk”.
 
@@ -64,7 +64,7 @@ align: center
     - Whats the used CRS?
 
 6. Now we want to explore the different ways of visualizing a raster and find the optimal visualization for our DEM. Open the layer styling panel by right clicking on the top toolbar and ticking the box `Layer Styling Panel`. The panel very similar to the one dislayed when visualizing Vectordata.
-    1. Open the dropdown menu right below the layer name. There are six visualization modes you can choose from. Try each of them and take a guess which one would be suitable. You can find mor information about the visualization modes **here**
+    1. Open the dropdown menu right below the layer name. There are six visualization modes you can choose from. Try each of them and take a guess which one would be suitable. 
 
 ```{figure} /fig/mod8_ex1_visualisationmodes.png
 ---
@@ -74,7 +74,7 @@ align: center
 ---
 ```
 
-7. Choose "Singleband pseudocolour" and selct a colour palette you like just like with the visualization of vectorlayers. Below the classification window you can choose from three classification modes ("Continous", "Equal Interval" and "Quantile") (**Wiki article**) for the visual classification of the raster. Which one seems to suit the diplay of elevation the best?
+7. Choose "Singleband pseudocolour" and selct a colour palette you like just like with the visualization of vectorlayers. Below the classification window you can choose from three classification modes ("Continous", "Equal Interval" and "Quantile") for the visual classification of the raster. Which one seems to suit the diplay of elevation the best?
 
 8. Finally you can choose between the interpolation methods "Linear" (smooth display) and "Discrete" (display in distinct classes). Choose one of them. If you choose "Discrete" you can alter the number of visual breaks in your data display by changing the number of classes in the "Classes" menu.
 
@@ -109,6 +109,15 @@ Exemplary visualization of the DEM with linear interpolation
       - There are extremely many values in the very low value range
       - The vast majority of the values seem to be between around 0 to 3000.
 
+```{figure} /fig/en_3.34_m8ex1_histogramm.png
+---
+width: 600px
+name: Histogramm
+align: center
+---
+Histogramm of the value distribution of "Pakistan_pop_density_1km"
+```
+
     3. Based on the exploration of the histogramm try a few value boundaries for visualisation at the top of your layer styling panel (select the ![](/fig/mod8_ex1_symbologyicon.png) menu). Keep in mind that we look at population data and that population distribution is very spatially heterogenic most of the time. Try the following combinations and choose the one that suits the data best:
       - Min = 0    Max = 1000
       - Min = 0    Max = 3000
@@ -116,11 +125,11 @@ Exemplary visualization of the DEM with linear interpolation
 
 ```{figure} /fig/en_3.34_m8ex1_valuerange.png
 ---
-width: 600px
+width: 400px
 name: Valuerange panel
 align: center
 ---
-Prompts to adjust die valuerange for visulization
+Prompts to adjust die valuerange for visualization
 ```
 
 
