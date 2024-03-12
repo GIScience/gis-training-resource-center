@@ -1,6 +1,41 @@
-# QGIS common errors and issues
+# QGIS common errors and issues <!-- omit from toc -->
 
 Here we are collecting common QGIS errors and issues as general QGIS training support.
+
+# Table of content
+
+- [Table of content](#table-of-content)
+  - [Different QGIS versions](#different-qgis-versions)
+  - [QGIS on Mac doesn't open](#qgis-on-mac-doesnt-open)
+  - [A layer is not displayed in QGIS](#a-layer-is-not-displayed-in-qgis)
+  - [A layer window has disappeared in QGIS](#a-layer-window-has-disappeared-in-qgis)
+  - [Layers that should actually be in the same position are not on top of each other](#layers-that-should-actually-be-in-the-same-position-are-not-on-top-of-each-other)
+  - [Layer file disappeared from the layer window](#layer-file-disappeared-from-the-layer-window)
+  - [Missing processing tools in the panels tool and incomplete vector tab](#missing-processing-tools-in-the-panels-tool-and-incomplete-vector-tab)
+  - [Missing toolbox](#missing-toolbox)
+  - [The North arrow is not syncing with the corresponding map](#the-north-arrow-is-not-syncing-with-the-corresponding-map)
+  - [Invalid Geometry](#invalid-geometry)
+  - [Coordinate systems: What do all these terms mean?](#coordinate-systems-what-do-all-these-terms-mean)
+  - [Coordinate systems: How do I redefine a dataset's coordinate system?](#coordinate-systems-how-do-i-redefine-a-datasets-coordinate-system)
+  - [Coordinate systems: Why is Mercator ever used if it's so distorted?](#coordinate-systems-why-is-mercator-ever-used-if-its-so-distorted)
+  - [Coordinate systems: My dataset is not located where it should be!](#coordinate-systems-my-dataset-is-not-located-where-it-should-be)
+  - [Coordinate systems: What coordinate system should my dataset be in?](#coordinate-systems-what-coordinate-system-should-my-dataset-be-in)
+  - [My dataset is slightly offset from where it should be!](#my-dataset-is-slightly-offset-from-where-it-should-be)
+  - [Wrong data results or missing data](#wrong-data-results-or-missing-data)
+  - [File Management Issues](#file-management-issues)
+  - [Specific QGIS problems](#specific-qgis-problems)
+    - [Basic settings \> Deactivating the automatic projection selection](#basic-settings--deactivating-the-automatic-projection-selection)
+    - [Saving regularly](#saving-regularly)
+    - [GRASS applications](#grass-applications)
+    - [SAGA with Linux](#saga-with-linux)
+    - [Umlauts, special characters, spaces in file paths](#umlauts-special-characters-spaces-in-file-paths)
+  - [QGIS Help Access Links](#qgis-help-access-links)
+      - [QGIS tutorials and tips:](#qgis-tutorials-and-tips)
+      - [QGIS community/forums:](#qgis-communityforums)
+      - [QGIS YouTube channels:](#qgis-youtube-channels)
+      - [ChatGPT](#chatgpt)
+
+
 
 
 ## Different QGIS versions 
@@ -599,42 +634,3 @@ Here you will find further help access links or QGIS community/forum links to ad
 #### ChatGPT
 + And don't forget ChatGPT https://chat.openai.com/
 It is quick!
-
-
-# Test Table of Content
-
-# Table of contents
-1. [Different QGIS versions](#Different-QGIS-versions)
-2. [Some paragraph](#paragraph1)
-    1. [Sub paragraph](#subparagraph1)
-3. [Another paragraph](#paragraph2)
-
-## This is the introduction <a name="introduction"></a>
-Some introduction text, formatted in heading 2 style
-
-## Some paragraph <a name="paragraph1"></a>
-The first paragraph text
-
-### Sub paragraph <a name="subparagraph1"></a>
-This is a sub paragraph, formatted in heading 3 style
-
-## Another paragraph <a name="paragraph2"></a>
-The second paragraph text
-
-**Table of content:**
-- [Hello World](#item-one)
-- [First Item](#item-two)
-- [Second Item](#item-three)
-
-<!-- headings -->
-<a id="item-one"></a>
-### Hello World
-Hello world content goes here
-
-<a id="item-two"></a>
-### First Item
-First item content goes here
-
-<a id="item-three"></a>
-### Second Item
-Second item content goes here
