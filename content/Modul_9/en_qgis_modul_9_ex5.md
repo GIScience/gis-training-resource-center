@@ -14,7 +14,18 @@ Open the **Processing Toolbox** and search for **Dissolve**. Select the `highway
 
 ### STEP 2: 
 
-Make sure you installed the GRASS GIS provider Plugin. If you don't know how to install Plugins, click here:{ref}`content:references:wiki:plugins`
+Make sure you installed the GRASS GIS provider Plugin. If you don't know how to install Plugins, click here: {ref}`content:references:wiki:plugins`
+
+Open the **Processing Toolbox**, choose **GRASS**, then choose **Vector** and finally scroll down to **v.net.centrality**. Select the `Dissolved`Layer from Step 1 and leave all other settings at default. After the calculation you receive a new Point layer called `Network Centrality`.
+
+Now click **F7** to open the **Layer Styling**. There you can choose the new `Network Centrality` Layer and change `Single Symbol` to `Graduated` to get a color transition. Before you can see the final result, you must select the `Value` **betweenness** and click `Classify`. 
+
+```{Tip}
+To make the differences of the values more visible, you can change the Classification `Mode` from **Equal Count (Quantile)** to **Natural Breaks (Jenks)**.
+```
+`````{admonition} Question
+Can you spot ares of the city with higher centrality values by looking at the different nodes? What does this mean for the infrastructure of Heidelberg?
+`````
 
 
 
