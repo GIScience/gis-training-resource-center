@@ -1,3 +1,4 @@
+(content:references:wiki:plugins)=
 # Plugins
 🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
