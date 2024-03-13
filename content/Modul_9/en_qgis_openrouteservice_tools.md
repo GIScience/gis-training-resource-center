@@ -79,7 +79,7 @@ How to create a token (API key)    Source: HeiGIT
 
 ```{figure} /fig/modul9_add_api.png
 ---
-width: 700px
+width: 350px
 name: basic classification
 align: center
 ---
