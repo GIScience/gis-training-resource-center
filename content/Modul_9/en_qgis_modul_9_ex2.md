@@ -15,7 +15,7 @@ Leave all settings at default except:
 | Comma separated ranges       | 5, 10                        |
 
 :::{dropdown} Watch here:
-VIDEO!
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/modul_9_task2_1.mp4"></video>
 :::
 
 ## STEP 2: Healthcare catchment - QGIS Service area
@@ -35,7 +35,7 @@ Leave all settings at default except:
 
 
 :::{dropdown} Watch here:
-VIDEO!
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/modul_9_task2_2.mp4"></video>
 :::
 
 QGIS on-the-fly creates a network graph from the road and path network. The graph is rather simple. All edges can be traveled in both ways, there are no weights included. Travel cost is represented by the length of a segment and the default average speed. The output is a simplification of the input road & path geometry but with the attributes of the healthcare facilities. For every healthcare facility we see a multiline geometry object in the output. We can style it according to the attribute “@osmId” to see which segments are assigned to which facility.
@@ -57,7 +57,7 @@ Leave all settings at default except:
 | Geometry type                | Convex Hull                  |
 
 :::{dropdown} Watch here:
-VIDEO!
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/modul_9_task2_3.mp4"></video>
 :::
 
 `````{admonition} Question
@@ -79,7 +79,7 @@ Leave all settings at default except:
 
 
 :::{dropdown} Watch here:
-VIDEO!
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/modul_9_task2_4.mp4"></video>
 :::
 
 `````{admonition} Question
