@@ -16,7 +16,7 @@ The folder is called __GIS_AA_HIA_Sudan_ex1__ and contains the whole [standard f
 ### Step 1: Area of interest ✅
 This step is outlined in the article Historical Impact Assessment (HIA) for Flood in Suda will not be the subject of this exercise. 
 
-### Task 2- Finding Flood Disaster Timeframes ✅
+### Task 2: Finding Flood Disaster Timeframes ✅
 
 
 ```{attention} 
@@ -74,7 +74,7 @@ In total, there were 35 flood events reported between 1988 and 2021
 | 2021       | 2021-07-20 | 2021-09-24 |
 ```
 
-### Task 3- Selecting datasets
+### Task 3: Selecting datasets
 
 In this step, we decide which datasets we want to include in the HIA. In this context, there are three sources we can turn to: the Sudan Red Crescent Society (SRCS), ReliefWeb, and FloodList. For this exercise, we will limit ourselves to datasets from ReliefWeb and FloodList.
 In the 'Input' folder of the exercise data, you can find the folder 'reports_articles.' This folder contains 10 datasets.
@@ -831,7 +831,7 @@ The information below should show a green check and „The selection has matched
 The Result should be the Excel file „Suadn_impact_p_code“. The file should contain all info from the original impact table and the two new columns „ADM1_EN“ and „ADM1_PCODE“.
 
 ```
-### Task 8: Data export using Pivot-Table in Excel
+### Task 8: Data export using Pivot-Table in Excel ✅
 
 __Impact Quantity for one year on state level:__
 
