@@ -41,7 +41,7 @@ Leave all settings at default except:
 | Summaries to Calculate         | count                          |
 
 :::{dropdown} Watch here:
-VIDEO
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/modul_9_task1_2.mp4"></video>
 :::
 
 `````{admonition} Question
@@ -50,6 +50,10 @@ What is the min/max number of waterpoints available to the buildings in camp 18?
 
 ## STEP 2: Catchments for operational facilities
 Look into the attributes of the waterpoints layer. Filter for all waterpoints that are operational (`Extract by Attribute`). Redo the analysis for operational waterpoints only.
+
+:::{dropdown} Watch here:
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/modul_9_task1_3.mp4"></video>
+:::
 
 `````{admonition} Question
 Is the general coverage different, any undersupplied areas?
@@ -71,7 +75,7 @@ Leave all settings at default except:
 
 
 :::{dropdown} Watch here:
-VIDEO!
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/modul_9_task1_4.mp4"></video>
 :::
 
 The output layer has the same point geometry type like the input building_centroid layer. But it now features two attributes:
@@ -97,7 +101,7 @@ Leave all settings at default except:
 
 
 :::{dropdown} Watch here:
-VIDEO!
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/modul_9_task1_5.mp4"></video>
 :::
 
 `````{admonition} Question
