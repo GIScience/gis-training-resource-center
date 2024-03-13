@@ -45,7 +45,7 @@ The GIF illustrates the step-by-step process of determining the shortest path fr
 You can determine directions or standard routes, which unveil the shortest path between two points. Isochrones offer insight into the area accessible within a specified time or distance threshold. Additionally, generating a matrix enables the assessment of time or distance between predefined locations. Alternatively, graphs facilitate travel optimization by computing the most efficient sequence for visiting a given set of points.
 
 
-### OpenRouteService
+### Openrouteservice
 
 #### General Information
 - Graphhopper based routing machine since 2008
@@ -65,7 +65,7 @@ You can determine directions or standard routes, which unveil the shortest path 
 - **Matrix**: Times / Distances bewteen a set of locations
 - **Optimization**: Best order to visit a set of points
 
->This module provides an accessibility analysis based on OpenRouteService isochrones.
+>This module provides an accessibility analysis based on Openrouteservice isochrones.
 
 #### Isochrones
 - Different profiles: car, pedestrian, bike, heavy goods vehicles (HGV)
