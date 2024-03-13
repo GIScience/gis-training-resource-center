@@ -6,7 +6,7 @@ Use the following file:
 
 ## STEP 1: Healthcare catchment - Isochrones
 
-Open the **Processing Toolbox** and scroll down to **ORS Tools** choose **Isochrones** and **Isochrones from layer**. 
+Click in the toolbar on the ORS Tools plugin Icon. Click on `Batch Jobs` -> `Isochrones from Layer`.
 Leave all settings at default except:
 |                              |                              |
 |------------------------------|------------------------------|
@@ -21,7 +21,7 @@ Leave all settings at default except:
 ## STEP 2: Healthcare catchment - QGIS Service area
 Isochrones in QGIS can be generated via the service area tool in combination with the minimum bounding geometry tool. Based on a road network, we define origins, a default speed, and a maximum cost. 
 
-Open the **Processing Toolbox**  and scroll down to **Network Analysis**, choose **Service area (from layer)**.
+Open the `Processing Toolbox`  and scroll down to `Network Analysis`, choose `Service area (from layer)` or enter "Service area (from layer)" in the search bar.
 Leave all settings at default except:
 |                                      |                                     |
 |--------------------------------------|-------------------------------------|
@@ -48,7 +48,7 @@ the camp?
 
 In order to better compare the result of the service areas and isochrones we will again compute the minimum bounding geometry. But this time for the multiline output of the service area tool.
 
-Open the **Processing Toolbox**, choose **Network Analysis**,then choose **Minimum Bounding Geometry**.
+Open the `Processing Toolbox`, choose `Network Analysis`,then choose `Minimum Bounding Geometry`or enter "Minimum Bounding Geometry" in the search bar.
 Leave all settings at default except:
 |                              |                              |
 |------------------------------|------------------------------|
@@ -67,7 +67,7 @@ Compare the results of both catchments. What differences can you spot?
 ## STEP 4: Healthcare catchment - Isochrones avoid flood
 In this part we will again calculate catchments based on the same configured isochrones. But we will include a polygon for the avoid area functionality in openrouteservice. For the **avoid area** we will use the water streams that run through the main camp area. Make sure to buffer the camp_stream layer by 2 meters. The avoid areas function only allows for polygons, not for line geometries. If you have buffered the streams, go ahead with the Isochrones tool again.
 
-Open the **Processing Toolbox** and scroll down to **ORS Tools** choose **Isochrones**  and  **Isochrones from layer**. 
+Click in the toolbar on the ORS Tools plugin Icon. Click on `Batch Jobs` -> `Isochrones from Layer`.
 Leave all settings at default except:
 |                              |                              |
 |------------------------------|------------------------------|
