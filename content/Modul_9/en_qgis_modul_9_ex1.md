@@ -17,7 +17,7 @@ Leave all settings at default except:
 
 
 :::{dropdown} Watch here:
-VIDEO
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/modul_9_task1_1.mp4"></video>
 :::
 
 
