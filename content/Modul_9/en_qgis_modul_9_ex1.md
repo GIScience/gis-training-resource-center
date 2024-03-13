@@ -5,7 +5,7 @@ For Camp 18 in Kutupalong Refugee Camp, we have a dataset on the locations of wa
 * Camp18.gpkg
 
 ## STEP 1: Catchments with openrouteservice isochrones
-Make sure you installed the ORS Tools plugin and set it up already with an API Key. If not - click here [Plugin: OpenRouteService (ORS) Tools](https://github.com/GIScience/gis-training-resource-center/blob/main/content/Modul_9/en_qgis_openrouteservice_tools.md "Install ORS")
+Make sure you installed the ORS Tools plugin and set it up already with an API Key. If not - click here [Plugin: Openrouteservice (ORS) Tools](https://github.com/GIScience/gis-training-resource-center/blob/main/content/Modul_9/en_qgis_openrouteservice_tools.md "Install ORS")
 
 Click in the toolbar on the ORS Tools plugin Icon <img src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/icon_ORS_tools_plugin.png" alt="Icon" width="20" height="20">. Click on `Batch Jobs` -> `Isochrones from Layer`. 
 Leave all settings at default except:
