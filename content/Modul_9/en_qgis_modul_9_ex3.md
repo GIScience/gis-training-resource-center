@@ -21,7 +21,7 @@ Leave all settings at default except:
 
 
 :::{dropdown} Watch here:
-VIDEO!
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/modul_9_task3_1.mp4"></video>
 :::
 
 
@@ -37,7 +37,7 @@ Leave all settings at default except:
 
 
 :::{dropdown} Watch here:
-VIDEO!
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/modul_9_task3_2.mp4"></video>
 :::
 
 Select the **Accumulated Cost** output layer and open the **Layer styling panel (F7)** choose **Singleband Pseudocolor**. Adjust the range from a minimum of 0 to a maximum of 60 minutes. Overlay the isochrone output layer. Compare the different catchment areas. Add an OpenStreetMap background layer to better understand the differences. May consider dissolving **(Vector Geometry >> Dissolve)** the isochrone output layer by range value, to get a more clear outline of intersecting ranges in areas with multiple healthcare facilities.
