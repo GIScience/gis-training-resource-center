@@ -23,7 +23,7 @@ width: 700px
 name: basic classification
 align: center
 ---
-From OSM geodata to a graph network Source: HeiGIT
+Visualization depicting the conversion process from OpenStreetMap (OSM) geodata to a graph representation. Source: HeiGIT
 ```
 ### Dijkstra Algorithm
 - E. W. Dijkstra
@@ -38,7 +38,7 @@ width: 700px
 name: basic classification
 align: center
 ---
-Dijkstra Algorithm SPSP (Example) Source: HeiGIT
+The GIF illustrates the step-by-step process of determining the shortest path from a source node to all other nodes in a graph. As the algorithm progresses, nodes are visited and the shortest distances from the source node are continuously updated until all accessible nodes have been explored. Source: HeiGIT
 ```
 
 ### Analysis
