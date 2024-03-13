@@ -2,7 +2,7 @@
 
 # Plugin: Openrouteservice (ORS) tools
 
-## OpenRouteService QGIS Plugin 
+## Openrouteservice QGIS Plugin 
 
 ### Install the Plugin
 -  Go under tab `Plugins`
@@ -51,7 +51,7 @@ align: center
 Where to sign up for OpenRouteService    Source: HeiGIT
 ```
 ### Sign up and setup
--  You will be redirected to the OpenRouteService site, where you need to create     a user account
+-  You will be redirected to the Openrouteservice site, where you need to create     a user account
   
 ```{figure} /fig/sign_up_ORS.png
 ---
@@ -59,7 +59,7 @@ width: 700px
 name: basic classification
 align: center
 ---
-How to sign up for OpenRouteService    Source: HeiGIT
+How to sign up for Openrouteservice    Source: HeiGIT
 ```
 
 -  After submitting your profile, a confirmtaion e-mail will be sent to your mail    adress
