@@ -58,8 +58,8 @@ name: basic classification
 align: center
 ---
 How to sign up for OpenRouteService    Source: HeiGIT
-
 ```
+
 -  After submitting your profile, a confirmtaion e-mail will be sent to your mail    adress
 -  Please confirm your account
 -  You are now able to create tokens (API keys) which allow you to run queries through the ORS Tools plugin in QGIS
@@ -77,11 +77,15 @@ How to create a token (API key)    Source: HeiGIT
 ```
 -  Click on the token, it will directly be copied. You can now go back into QGIS     for further setup
 
+```{figure} /fig/modul9_add_api.png
+---
+width: 700px
+name: basic classification
+align: center
+---
+Where to add API key     Source: HeiGIT
 
+```
 
+For further information: [https://github.com/GIScience/orstools-qgis-plugin[
 
-
-
-https://github.com/GIScience/orstools-qgis-plugin
-
-https://gitlab.gistools.geog.uni-heidelberg.de/giscience/disaster-tools/gis-in-anticipatory-humanitarian-action/-/wikis/ORSTools
