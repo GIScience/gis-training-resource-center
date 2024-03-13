@@ -1,4 +1,6 @@
-(content:references:module9:network-theory)=
+🚧 This training platform and the entire content is under ⚠️construction⚠️ and 
+may not be shared or published! 🚧
+
 # Spatial Network Analysis Theory
 
 
@@ -21,6 +23,7 @@ width: 700px
 name: basic classification
 align: center
 ---
+From OSM geodata to a graph network Source: HeiGIT
 ```
 ### Dijkstra Algorithm
 - E. W. Dijkstra
@@ -35,6 +38,7 @@ width: 700px
 name: basic classification
 align: center
 ---
+Dijkstra Algorithm SPSP (Example) Source: HeiGIT
 ```
 
 ### Analysis
