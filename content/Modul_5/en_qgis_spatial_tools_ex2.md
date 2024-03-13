@@ -1,10 +1,10 @@
 # Exercise 2: Part 1: Calculate vulnerability index
 
 ### Aim of the exercise
-We want to create an overview of different vulnerability indicators. From the Covid-19 risk indicators dataset we take `% permanent wall type`, `% permanent roof type` and `poverty incidence`. From the Uganda population statistics we calculate the `% of under fives` and `% of elderly`. We combine the data and we are now able to visualize the areas in Uganda that are most vulnerable.
+We want to create an overview of different vulnerability indicators. From the Covid-19 risk indicators dataset we take `% permanent wall type`, `% permanent roof type` and `poverty incidence`. From the Uganda population statistics we calculate the `% of under fives` and `% of elderly`. By combining the data, we are now able to visualize the areas in Uganda that are most vulnerable.
 
 ### Links to Wiki articles
-will be done when Wiki is finished
+> will be done when Wiki is finished
 
 ### Data
 Download all datasets and save the folder on your computer and unzip the file. The zip folder includes:
@@ -28,10 +28,10 @@ Before you start doing any GIS operations, __always explore the data__. Always c
 ```
 
 ```{Hint}
-The projected coordinate system for Uganda is `EPSG:32636 WGS 84 / UTM zone 36N`
+The projected coordinate system for Uganda is `EPSG:32636 WGS 84 / UTM zone 36N`. If you are looking for a suitable projected coordinate system for any region on earth, you can find a good one on [epsg.io](https://epsg.io).
 ```
 
-3. We see that the polygons are different in shape and amount! It is likely that the risk data is using an older version of the admin boundaries. This is an issue we need to resolve in order to work properly with the data.
+3. We can see that the polygons are different in shape and amount! It is likely that the risk data is using an older version of the admin boundaries. This is an issue we need to resolve in order to work properly with the data.
 
 ```{figure} /fig/en_ex3_1_attribute_table_size.png
 ---
@@ -42,7 +42,7 @@ Screenshot of different sizes of the attribute tables
 ```
 
 4. We will use the following solution for this problem:
-    - We can take the closest district centroid (from the dataset with the most to the dataset with the fewest records). This is the solution we will use for this exercise as the difference between the two datasets is not drastically.
+    - We can take the __closest district centroid__ (from the dataset with the most to the dataset with the fewest records). This is the solution we will use for this exercise as the difference between the two datasets is not drastically.
 
 5. Calculate the ![](/fig/mAlgorithmCentroids.png) `Centroids` for the dataset containing the most elements, which are the district boundaries. You can find the tool under `Vector` --> `Geometry Tools` --> `Centroids`. See the Wiki entry on __Geoprocessing__ for further information.
 
@@ -76,7 +76,7 @@ name: join_attribute_by_location
 Screenshot of Join attribute by location operation.
 ```
 
-9. Again use the tool `Join attributes by location` to join the previously enriched points onto the Uganda district boundaries. Now select as a spatial relationship contain and again select the same three columns for joining.
+9. Use the tool `Join attributes by location` again to join the previously enriched points onto the Uganda district boundaries. Now select as a spatial relationship contain and again select the same three columns for joining.
 
 ```{figure} /fig/en_ex3_1_join_attribute_location_2.PNG
 ---
@@ -86,4 +86,4 @@ name: join_attribute_by_location_2
 Screenshot of the second Join attribute by location operation.
 ```
 
-The next steps of the vulnerability index calculation will be completed in the second part of this exercise, in the Non-spatial Geodataprocessing section. Please refer to the [provided link](/content/Modul_5/en_qgis_non_spatial_tools_ex2.md) for this exercise.
+The next steps of the vulnerability index calculation will be completed in the second part of this exercise, the Non-spatial Geodataprocessing section. Please refer to the [provided link](/content/Modul_5/en_qgis_non_spatial_tools_ex2.md) for this exercise.
