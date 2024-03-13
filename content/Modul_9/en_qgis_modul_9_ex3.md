@@ -11,7 +11,7 @@ Use the following files:
 ### STEP 1: Network - Isochrones
 We start with the isochrones gain. This time for a whole country - Rwanda. Use the layer `rwa_healthcare` as input point layer and 5, 10 and 60 minutes as ranges.
 
-Click in the toolbar on the ORS Tools plugin Icon. Click on `Batch Jobs` -> `Isochrones from Layer`.
+Click in the toolbar on the ORS Tools plugin Icon <img src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/icon_ORS_tools_plugin.png" alt="Icon" width="20" height="20">. Click on `Batch Jobs` -> `Isochrones from Layer`.
 Leave all settings at default except:
 |                              |                              |
 |------------------------------|------------------------------|
