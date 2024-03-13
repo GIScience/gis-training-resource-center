@@ -18,7 +18,7 @@ Make sure you installed the GRASS GIS provider Plugin. If you don't know how to 
 
 To determine the betweenness centrality open the **Processing Toolbox**, choose **GRASS**, then choose **Vector** and finally scroll down to **v.net.centrality**. Select the `Dissolved` Layer from Step 1 and leave all other settings at default. After the calculation you receive a new Point layer called `Network Centrality`.
 
-Now you want to make the difference between the values visible for interpretation. Therefore click **F7** to open the **Layer Styling**. There you can choose the new `Network Centrality` Layer and change `Single Symbol` to `Graduated`.  You must select **betweenness** as your `Value`and finally click `Classify`. 
+Now you want to make the difference between the values visible for interpretation. Therefore click **F7** to open the **Layer Styling**. There you can choose the new `Network Centrality` Layer and change `Single Symbol` to `Graduated`.  You must select **betweenness** as your `Value` and finally click `Classify`. 
 
 ```{Tip}
 To make the differences of the values more visible, you can change the Classification `Mode` from **Equal Count (Quantile)** to **Natural Breaks (Jenks)**.
@@ -31,7 +31,7 @@ Can you identify critical road segments of the city with higher centrality value
 
 In a next step, we want to carry out the same analysis after the flood event in order to determine the impact of the flood on the infrastructure in Heidelberg. To do so, we first have to delete the part of the `highways` layer that is flooded. 
 
-Open the **Processing Toolbox** and search for **Difference**. Select the `Dissolved` layer as the Input Layer and the `flood_area`layer as the Overlay Layer. Leave all other settings at default. After the calculation you receive a new LineString layer called `Difference`.
+Open the **Processing Toolbox** and search for **Difference**. Select the `Dissolved` layer as the Input Layer and the `flood_area` layer as the Overlay Layer. Leave all other settings at default. After the calculation you receive a new LineString layer called `Difference`.
 
 Repeat the analysis from Step 2 to determine the betweenness centrality of the `Difference` Layer. 
 
