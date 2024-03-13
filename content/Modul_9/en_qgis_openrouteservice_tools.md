@@ -87,5 +87,5 @@ Where to add API key     Source: HeiGIT
 
 ```
 
-For further information: [https://github.com/GIScience/orstools-qgis-plugin[
+For further information: [https://github.com/GIScience/orstools-qgis-plugin]
 
