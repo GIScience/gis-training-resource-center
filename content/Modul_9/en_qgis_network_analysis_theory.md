@@ -70,7 +70,7 @@ You can determine directions or standard routes, which unveil the shortest path 
 #### Isochrones
 - Different profiles: car, pedestrian, bike, heavy goods vehicles (HGV)
 - Avoid areas, avoid, road types
-- Further dynmaic prefernces: green routing, noise aware routing, landmark routing, (heat aware routing)
+- Further dynamic prefernces: green routing, noise aware routing, landmark routing, (heat aware routing)
 - Based on profile and preferences what area is reachable within a given time limit?
 - Determine: reachability, catchment areas
 -  Max. 60minutes on the public API
