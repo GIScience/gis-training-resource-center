@@ -213,6 +213,10 @@ align: center
 Example rastermask of flooded areas
 ```
 
+```{Attention}
+It is possible that due to an error the raster values are not updating after rasterizing. To fix this delete the layer from your project, rename it in your temp folder and import in again.
+```
+
 5. Now we want to extract the population count within the flood zones. We do this by processing two rasters with the `Raster Calculator`.
     1. Open the raster Calculator from your processing toolbox Panel or via `Raster` > `Raster Calculator`.
     2. As "Input Layers" layers select your rastermask "Rastermask_floods" and the population layer "Pakistan_pop_dens_1km.tif" by clicking on the ![](/fig/mod8_ex1_optionsicon.png) icon and ticking the boxes next to the two layers.
