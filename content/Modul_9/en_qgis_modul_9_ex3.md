@@ -1,3 +1,5 @@
+🚧 This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+
 # Task 3: Larger scale accessibility analyses
 
 There are two main approaches on accessibility analyses: network and cost raster based. In this task we will use both methods on the example of the country Rwanda. For the network based approach we will use the isochrone API of the openrouteservice to generate catchment areas for 5, 10 and 60 minute ranges. The cost raster approach will be conducted with the saga tool `Accumulated Cost` which is already part of the QGIS tools through the SAGA provider. 
