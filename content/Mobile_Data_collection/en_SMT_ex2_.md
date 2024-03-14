@@ -4,10 +4,12 @@
 
 This exercise focuses on exploring the basemaps and discussing challenges of map literacy and orientation on the maps, as well as the characteristics, strengths, accuracy or need for updated data, and differences basemaps based on satellite images or OpenStreetMap data.
 
+The finished map could look something like this:
 
-```{figure} /../fig/SMT_Idee_traffic_light_exerices.png
+
+```{figure} ../../fig/SMT_Idee_traffic_light_exerices.png
 ---
-height: 450px
+height: 700px
 name: SMT traffic light exercise
 align: center
 ---
@@ -127,15 +129,15 @@ https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_col
 
 ### Map Quality Check
 
-```{figure} /../fig/SMT_Heidelberg_report_1.jpg
+```{figure} ../../fig/SMT_Heidelberg_report_1.jpg
 ---
-height: 450px
+height: 700px
 name: SMT Heidelberg report
 align: center
 ---
 Map Quality Check; Sketch Map Tool Heidelberg report
 ```
-The Sketch Map Tool can evaluate how well-suited an area of the OpenStreetMap (OSM) basemap is for participatory mapping based on a quality analysis of the [OpenStreetMap (OSM)](https://www.openstreetmap.org/#map=6/51.330/10.453) basemap data through the [HeiGIT ohsome quality analyst](https://heigit.org/big-spatial-data-analytics-en/ohsome/ohsome-quality-analyst-oqt/).
+The Sketch Map Tool can evaluate how well-suited an area of the [OpenStreetMap (OSM)](https://www.openstreetmap.org/#map=6/51.330/10.453) basemap is for participatory mapping based on a quality analysis of the OpenStreetMap (OSM) basemap data through the [HeiGIT ohsome quality analyst](https://heigit.org/big-spatial-data-analytics-en/ohsome/ohsome-quality-analyst-oqt/).
 
 The Map Quality Check assists in evaluating the suitability of the area of interest for participatory mapping through a quality analysis of the OpenStreetMap data with the HeiGIT ohsome quality analyst. The fitness report can be downloaded as a PDF file by clicking on the blue button. It provides an evaluation of the suitability of the local OSM data and recommendations for subsequent field data collection.
 
