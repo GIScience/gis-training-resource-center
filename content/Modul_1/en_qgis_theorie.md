@@ -1,4 +1,4 @@
-# What is GIS? (Theory)
+# What is GIS?
 
 __🔙[Back to Homepage](/content/intro.md)__
 
@@ -18,34 +18,34 @@ align: center
 ---
 GIS core functunality
 ```
-Around these core GIS features there are a wide range of techniques, tools and 
-applications - some are listed in the graphic below. As a GIS user, you need to 
-know which techniques and tools to use to achieve a specific result. Although 
-there are lots of tools and techniques out there, a surprisingly small number of 
-them are sufficient to fulfil most tasks you will have. This platform provides 
-materials to teach the tools that will be most useful for the kinds of mapping 
-that are used in the humanitarian sector. 
 
-```{figure} /fig/GIS_SIMS.drawio.svg
+In humanitarian work, Geographic Information Systems (GIS) serve as powerful tools. They utilize maps to present complex information clearly and efficiently. For instance, during emergencies, GIS can visualize events on a map, depicting where they occur, the extent of impact, and identifying primary needs. It aids in consolidating data from various sources, enabling quick comprehension of situations and facilitating better decision-making.
+
+__A more formal definition:__
+
+A Geographic Information System (GIS) is a digital tool that integrates data with maps. It enables the collection, management, analysis, and visualization of data by associating them with specific locations on the Earth's surface. By leveraging GIS, we gain deeper insights into data, revealing patterns and providing a better understanding of the geographic context. This leads to more insightful analysis, improved communication, and ultimately facilitates better evidence-based decision-making. GIS is deeply rooted in geography, the scientific field dedicated to studying Earth's lands, features, inhabitants, and phenomena. GIS software is capable of displaying various types of data simultaneously on a map, enhancing our ability to comprehend complex spatial relationships.
+
+### GIS components
+
+GIS is more than a software. It’s a system and it includes
+multiple elements:
+
+```{figure} /fig/GIS_definition_icons.drawio.svg
 ---
-height: 750px
-width: 900px
-name: en_qgis_GIS_HA
+height: 200px
+name: GIS components
 align: center
 ---
-GIS in humanitarian assistance
+GIS components
 ```
-
-In the world of GIS, the product of your work will be a map most of the times. 
-The graphic above shows the huge range of mapping products used in the 
-humanitarian sector. 
-
-To get a better understanding of how GIS is used in the humanitarian sector, we 
-have collected some examples from different organisations in the section below 
-(click the different tabs to view the examples by organisation). 
+ 
 
 
 ## Examples of GIS used by humanitarian organisations
+
+To get a better understanding of how GIS is used in the humanitarian sector, we 
+have collected some examples from different organisations in the section below 
+(click the different tabs to view the examples by organisation).
 
 ::::{tab-set}
 
@@ -65,6 +65,9 @@ The International Federation of Red Cross and Red Crescent Societies (IFRC)
 publishes a wide variety of maps to support active operations. You can 
 find some of those on [ReliefWeb](https://reliefweb.int/updates?advanced-search=%28S1242%29_%28F12%29)
 or on the IFRC GO platform's [Emergency pages](https://go.ifrc.org/emergencies/all).
+
+%%html
+<iframe src="https://go.ifrc.org/" width="750" height="500"></iframe>
 :::
 
 :::{tab-item} ICRC
@@ -81,6 +84,15 @@ is where the organisation publishes content, including
 [standalone maps](https://www.impact-initiatives.org/resource-centre/?category[]=information_products&category[]=data_methods&type[]=281&order=latest&limit=10) 
 and [reports](https://www.impact-initiatives.org/resource-centre/?category[]=information_products&category[]=data_methods&order=latest&limit=10) 
 which also often include maps and spatial analysis. 
+
+```{figure} /fig/REACH_UKR_Map_CSM_SituationOverview_ActiveSites_FEB2024_EN_A4-1.png
+---
+height: 500px
+name: REACH Example Map
+align: center
+---
+Example Map: REACH, Ukraine, IDP Collective Site Monitoring, Map, Active Sites, February 2024. Source: [REACH](https://repository.impact-initiatives.org/document/reach/794cd686/REACH_UKR_Map_CSM_SituationOverview_ActiveSites_FEB2024_EN_A4.pdf)
+```
 :::
 
 :::{tab-item} Médecins Sans Frontières
@@ -122,27 +134,45 @@ iMAAP is an information management NGO that provides support to the UN and
 international NGOs. Their [product portfolio](https://immap.org/products/) 
 includes examples of maps used in sitaution overviews, interactive dashboards 
 and sector-specific analysis.
+
+```{figure} /fig/Afghanistan-Earthquake-Events-Overview-February-2024_page-0001-scaled.jpg
+---
+height: 500px
+name: GIS components
+align: center
+---
+Example Map: Afghanistan Earthquake Events Overview February 2024. Source: [iMMAP](https://immap.org/product/afghanistan-earthquake-events-overview-february-2024/)
+```
+
+
 :::
 
 :::{tab-item} MapAction
 MapAction produces maps and geospatial data support decision-making in emergency 
 response. Their [maps and data](https://maps.mapaction.org/) page shows recent products they have published, and their [product catalogue](https://guides.mapaction.org/) 
 gives an overview of the types of services they provide. 
+
+```{figure} /fig/cluster-camp-coordination.jpg
+---
+height: 500px
+name: GIS components
+align: center
+---
+Example Map: Philippines - TS Washi (Sendong) - Evacuation centre amd transitory site population, Cagayan de Or. Source: [MapAction](https://guides.mapaction.org/images/examples/cluster-camp-coordination.jpg)
+```
 :::
 
 ::::
 
  ## GIS vs cartography
 
- __Cartography__ is the study and practice of __making maps__. A GIS is a 
- __modern extension__ of traditional cartography. Both contain examples of a 
- __base map__ to which additional data can be added. The differences are that 
- there is no limit to the __amount of additional data__ that can be added to a 
- GIS map. Cartographic maps are often extremely simplified as there are limits 
- to the amount of data that can be physically and meaningfully stored on a small 
- map. GIS uses __analysis and statistics__ to present data in support of particular 
- arguments which a cartographic map cannot do. You can use GIS __for__ cartography.
+__Cartography__ is the art and science of creating maps, encompassing the study and practice of mapmaking techniques. A Geographic Information System (GIS) represents a __modern evolution__ of traditional cartography, integrating advanced technologies and methods for spatial data analysis and visualization.
 
+While both cartography and GIS involve the creation of maps, they differ significantly in their capabilities and approaches. Cartographic maps typically present a simplified representation of geographic features, constrained by the limitations of physical space and the medium of the map itself. In contrast, GIS allows for the integration of vast amounts of spatial data, enabling complex analysis, modeling, and visualization beyond the scope of traditional cartography.
+
+One key distinction is that GIS facilitates the incorporation of diverse datasets, with virtually unlimited capacity for __additional layers and information__. This flexibility empowers users to conduct __spatial analysis, perform statistical assessments__, and derive insights to support decision-making processes.
+
+In essence, while cartography focuses primarily on map design and visualization, GIS extends beyond to encompass spatial data management, analysis, and interpretation. Therefore, GIS serves as a powerful tool for cartographers and professionals across various fields to create, analyze, and derive insights from geographic information
 
 ## What is spatial analysis?
 
@@ -209,54 +239,98 @@ outlined below.
 -  Usually fairly __simple__
 -  Can be __styled__ based on the intended audience
 
-![Reference map of Iraq](/fig/en_Reference_Map_Iraq.png) _Reference map of Iraq 
-by REACH Initiative ([source]())_ <!-- FIXME: add source! -->
+
+```{figure} /fig/en_Reference_Map_Iraq.png
+---
+height: 600px
+name: Iraq - Ninewa Governorate - Mosul City Reference Map as of October 2017
+align: center
+---
+Example Map:  Iraq - Ninewa Governorate - Mosul City Reference Map as of October 2017. Source: [REACH](https://reliefweb.int/map/iraq/iraq-ninewa-governorate-mosul-city-reference-map-october-2017)
+```
 
 ### Infrastructure maps
+
+Infrastructure maps in the humanitarian context provide visual representations of critical infrastructure such as roads, bridges, hospitals, and utilities in a given area. These maps help humanitarian organizations assess the accessibility of affected areas, plan relief efforts, and coordinate resources effectively during emergencies or disasters.
 
  - Display relevant features and __structures__ in a specific area
  - Help __planning__ and navigation
  - High level of __detail__
  - Produced after field __data collection__
 
-![Infrastructure map of Nigeria](/fig/en_Infrastructure_Map_Nigeria.png) 
-_Infrastructure map of a displaced persons camp in Borno State, Nigeria, produced 
-by Reach Initiative. ([source]())_ <!-- FIXME: add source! -->
+
+```{figure} /fig/en_Infrastructure_Map_Nigeria.png
+---
+height: 600px
+name: Nigeria - Borno State - Mogcolis Camp, General Infrastructure - Updated 24 July 2017
+align: center
+---
+Example Map:  Nigeria - Borno State - Mogcolis Camp, General Infrastructure - Updated 24 July 2017
+align: center. Source: [REACH](https://reliefweb.int/map/nigeria/nigeria-borno-state-mogcolis-camp-general-infrastructure-updated-24-july-2017)
+```
+
 
 ### Thematic maps
 
-  - Focus on a __specific theme__ or subject
-  - Features on the map __represent the subject__ being mapped
-  - Use __colours and shapes__ to display quantitative and qualitative data
-  - Rise __awareness__ about a specific subject
+Thematic maps display specific themes or topics such as population density, disease outbreaks, or vulnerability levels within a geographic area. These maps help humanitarian organizations analyze and understand specific issues or trends, guiding decision-making and resource allocation for targeted interventions and relief efforts.
 
-![Thematic map of Africa](/fig/en_Thematic_Map_Africa.png) 
-_Thematic map of Africa_
+- Focus on a __specific theme__ or subject
+- Features on the map __represent the subject__ being mapped
+- Use __colours and shapes__ to display quantitative and qualitative data
+- Rise __awareness__ about a specific subject
+
+```{figure} /fig/en_Thematic_Map_Africa.png
+---
+height: 600px
+name: Thematic map of Africa
+align: center
+---
+Example Map:  
+```
+
 <!-- FIXME: explain the map and add source -->
 
 ### Analysis maps
 
-  - __Analyse data__ in respect to their geographic location
-  - Create __new layers of information__ from the interaction between multiple features
-  - Use colours and shapes __to help users__ understand specific events
-  - __Support__ decision makers
-  - Generally display a greater __level of detail__
+Analysis maps are used to examine and interpret data, revealing patterns, trends, and relationships within a geographic area. They facilitate in-depth understanding of complex situations, enabling decision-makers to derive insights and make informed decisions for effective humanitarian responses.
+
+- __Analyse data__ in respect to their geographic location
+- Create __new layers of information__ from the interaction between multiple features
+- Use colours and shapes __to help users__ understand specific events
+- __Support__ decision makers
+- Generally display a greater __level of detail__
   
-![Analysis map of Yemen](/fig/en_Analysis_Map_Yemen.png) 
-_Analysis map showing areas affected by flooding in Yemen, produced by Reach 
-Initiative. ([source]())_ <!-- FIXME: add source -->
+
+
+```{figure} /fig/en_Analysis_Map_Yemen.png
+---
+height: 600px
+name: CCCM Cluster Yemen - REACH - Flood Hazard of IDP Sites - Marib governorate - Flood Depth Model
+align: center
+---
+Example Map:  CCCM Cluster Yemen - REACH - Flood Hazard of IDP Sites - Marib governorate - Flood Depth Model. Source: [REACH](https://data.unhcr.org/es/documents/details/98946)
+```
 
 ### Situation/descriptive maps
 
-  - Used to __better visualize__ a specific ongoing and/or past situation 
-  - Maps can include __narrative__ and graphic elements 
-  - Can be used in reports and/or to __raise awareness__ on a specific event 
+Situation or descriptive maps provide a snapshot of specific conditions or events in a particular geographic area. They visualize key information such as locations of resources, population distribution, infrastructure, and environmental factors. These maps offer a clear overview of the current situation, aiding in understanding and communication among stakeholders involved in humanitarian operations.
 
-![Situation map from Tilkaif to Mosul](/fig/en_Situation_Map_Tilkaif_Mosul.png) 
-_Situation map from Tilkaif to Mosul_ <!-- FIXME: explain the map and add source -->
+- Used to __better visualize__ a specific ongoing and/or past situation 
+- Maps can include __narrative__ and graphic elements 
+- Can be used in reports and/or to __raise awareness__ on a specific event 
 
 
- ## Web & mobile GIS applications
+```{figure} /fig/en_Pop_Syrian_Refugees_2023.png
+---
+height: 600px
+name: UNHCR Iraq Population Profile - Breakdown Overview - Syrian Refugees Registration December 2023
+align: center
+---
+Example Map: UNHCR Iraq Population Profile - Breakdown Overview - Syrian Refugees Registration December 2023. Source: [UNHCR](https://reliefweb.int/report/iraq/unhcr-iraq-population-profile-breakdown-overview-syrian-refugees-registration-december-2023)
+```
+
+
+## Web & mobile GIS applications
 
 You can use GIS through __multiple applications__, from desktop software, to 
 online platforms, to mobile apps. At a basic level, you can perform limited 

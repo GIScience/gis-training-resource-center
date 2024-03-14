@@ -26,6 +26,71 @@ __Offical QGIS Documentation: [An Overview of the Interface](https://docs.qgis.o
 
 ___
 
+## Buttens and Shortcuts
+
+### Navigation in the map view
+
+| Name                      | Menu option                    | Shortcut                        | Description                                 |
+|---------------------------|--------------------------------|---------------------------------|---------------------------------------------|
+| Map pan                   | ![](/fig/qgis_pan_map.png)     | 'Space', 'Page Up', 'Page Down' or the 'Arrow Keys' | Move the map                                 |
+| Pan map to selection      | ![](/fig/qgis_pan_map_selection.png) |                                  | Pans the map to the selected element        |
+| Zoom in                   | ![](/fig/qgis_zoom_in.png)     | 'Ctrl+Alt++' or mouse wheel   | Zoom into the map                            |
+| Zoom out                  | ![](/fig/qgis_zoom_out.png)    | 'Ctrl+Alt+-' or mouse wheel   | Zoom out of the map                          |
+| Zoom full                 | ![](/fig/qgis_zoom_full.png)   | 'Ctrl+Shift+F'                  | Zoom to the selected element                |
+| Zoom to selection         | ![](/fig/qgis_zoom_to_selection.png) | 'Ctrl+J'                       | Zoom to the selected element                |
+| Zoom to layer             | ![](/fig/qgis_zoom_to_layer.png) |                                  | Zoom to the selected layer                   |
+| Zoom to native resolution | ![](/fig/qgis_zoom_native_resolution.png) |                             | Zoom to the native resolution (100%)         |
+| Zoom last                 | ![](/fig/qgis_zoom_last.png)   |                                 | Zoom to the last zoom                        |
+| Zoom next                 | ![](/fig/qgis_zoom_next.png)   |                                 | Zoom to the next zoom                        |
+
+
+
+### Project managment
+| Name            | Menu option                        | Shortcut         | Description                             |
+|-----------------|------------------------------------|------------------|-----------------------------------------|
+| New Project     | ![](/fig/qgis_new.png)             | 'Ctrl' + 'N'     | Create a new project                    |
+| Open Project    | ![](/fig/qgis_open_project.png)   | 'Ctrl' + 'O'     | Open an existing project                |
+| Save            | ![](/fig/qgis_save_project.png)   | 'Ctrl' + 'S'     | Save the project                        |
+| Save as…        | ![](/fig/qgis_save_project_as.png) | 'Ctrl' + 'Shift' + 'S'  | Save the project as…           |
+| Properties      |                                    | 'Ctrl' + 'Shift' + 'P'   | Open the project properties      |
+| New print layout| ![](/fig/qgis_new_print_layerout.png) | 'Ctrl' + 'P'  | Opens the Dialog to create a new print layout |
+| Search          |                                    | 'Ctrl' + 'K'          | Opens the search bar                    |
+
+
+### Layer management
+| Name                        | Menu option                                  | Shortcut            | Description                       |
+|-----------------------------|----------------------------------------------|----------------------|-----------------------------------|
+| Data source manager         | ![](/fig/qgis_data_source_manager.png)       | 'Ctrl' + 'L'        | Add a new layer                   |
+| New GeoPackage layer        | ![](/fig/qgis_new_geopackage_layer.png)     | 'Ctrl' + 'Shift' + 'N' | Add a new GeoPackage Layer       |
+| Add vector layer            | ![](/fig/qgis_add_vector_layer.png)         | 'Ctrl' + 'Shift' + 'V' | Add a new vector layer           |
+| Add raster layer            | ![](/fig/qgis_add_raster_layer.png)         | 'Ctrl' + 'Shift' + 'R' | Add a new raster layer           |
+| Remove selected layer       | ![](/fig/qgis_remove_selected_layer.png)    | 'Ctrl' + 'D'        | Remove the selected layer        |
+| Toggle layers view          |                                              | 'Ctrl' + '1'        | Toggle the layers view           |
+| Toggle browser view         |                                              | 'Ctrl' + '2'        | Toggle the browser view          |
+
+
+
+### Analysis Tools
+| Name                                     | Menu option                                 | Shortcut                   | Description                                            |
+|------------------------------------------|---------------------------------------------|-----------------------------|--------------------------------------------------------|
+| Identify Features                        | ![](/fig/qgis_identify_features.png)       | 'Ctrl' + 'Shift' + 'I'     | Identify features on the map view by clicking on them |
+| Select feature                          | ![](/fig/qgis_select_features.png)         |                               | Select a feature by area or single click             |
+| Select feature by value                  | ![](/fig/qgis_select_features_by_value.png) | 'F3'                        | Select features by value                              |
+| Open Attribute table                     | ![](/fig/qgis_open_attribute_table.png)     | 'F6'                        | Open the Attribute table                              |
+| Open Attribute table with selected features only | ![](/fig/qgis_open_attribute_table.png) | 'Shift' + 'F6'              | Open the Attribute table with selected features only  |
+| Open Attribute table with visible features only | ![](/fig/qgis_open_attribute_table.png)  | 'Ctrl' + 'F6'               | Open the Attribute table with visible features only   |
+
+
+
+### Advanced Tools
+| Name                    | Menu option                            | Shortcut          | Description                  |
+|-------------------------|----------------------------------------|--------------------|------------------------------|
+| Processing Toolbox      | ![](/fig/qgis_processing_toolbox.png) | 'Ctrl' + 'Alt' + 'T' | Opens the Processing Toolbox |
+| Python Console          | ![](/fig/qgis_python_console.png)     | 'Ctrl' + 'Alt' + 'P' | Opens the Python Console     |
+
+
+
+
 ## Moving an orientation on the Map Canvas
 
 ### Moving the map view

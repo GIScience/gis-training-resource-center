@@ -23,7 +23,7 @@ and save the folder on your computer and unzip the file. The zip folder includes
 
 1. Load both files into QGIS.
 
-2. Add the OpenStreetMap basemap via the browser window --> 
+2. Add the OpenStreetMap basemap via the browser panel --> 
    XYZ Tiles. 
 
 3. Familiarise yourself with the data by opening the attribute table.
