@@ -17,7 +17,7 @@ Download all datasets __[here](https://nexus.heigit.org/repository/gis-training-
 
 ## STEP 1: Healthcare catchment - Isochrones
 
-First we need to reproject our layers. To do so, open the `Processing Toolbox` and search for `Reproject layer`. Select one of your layers as your input layer and choose **WGS 84 / UTM zone 46N** as your target crs. Maybe you have to click on the planet button on the right and search for it, if it is not in the list. Leave all other settings at default. Repeat the process with all your layers to reproject all of them.
+First we need to reproject our layers. To do so, open the `Processing Toolbox` and search for `Reproject layer`. Select one of your layers as your input layer and choose **WGS 84 / UTM zone 46N** as your target CRS. Maybe you have to click on the planet button on the right and search for it, if it is not in the list. Leave all other settings at default. Repeat the process with all your layers to reproject all of them.
 
 To get the isochrones click in the toolbar on the ORS Tools plugin Icon. Click on `Batch Jobs` -> `Isochrones from Layer`.
 Leave all settings at default except:
@@ -74,7 +74,7 @@ Compare the results of both catchments. What differences can you spot?
 `````
 
 ## STEP 4: Healthcare catchment - Isochrones avoid flood
-In this part we will again calculate catchments based on the same configured isochrones. But we will include a polygon for the avoid area functionality in openrouteservice. For the **avoid area** we will use the water streams that run through the main camp area. Make sure to buffer the camp_stream layer by 2 meters. The avoid areas function only allows for polygons, not for line geometries. If you have buffered the streams, go ahead with the Isochrones tool again.
+In this part we will again calculate catchments based on the same configured isochrones. But we will include a polygon for the avoid area functionality in openrouteservice. For the **avoid area** we will use the water streams that run through the main camp area. Make sure to `buffer` the camp_stream layer by 2 meters. The avoid areas function only allows for polygons, not for line geometries. If you have buffered the streams, go ahead with the Isochrones tool again.
 
 Click in the toolbar on the ORS Tools plugin Icon <img src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/icon_ORS_tools_plugin.png" alt="Icon" width="20" height="20">. Click on `Batch Jobs` -> `Isochrones from Layer`.
 Leave all settings at default except:
@@ -82,9 +82,9 @@ Leave all settings at default except:
 |------------------------------|------------------------------|
 | Travel mode                  | foot-walking                 |
 | Input Point layer            | camp_healthcare              |
+| Comma separated ranges       | 5, 10                        |
 | **Advanced Parameters**         |                              |
 | Polygons to avoid            | stream_buffer                |
-| Comma separated ranges       | 5, 10                        |
 
 
 :::{dropdown} Watch here:
