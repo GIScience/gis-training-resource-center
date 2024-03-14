@@ -17,7 +17,6 @@ __Secondly__, it is essential to communicate as clearly as possible to avoid any
 And __third__, you should prepare the training in a detailed way, especially if it is your first training. With detailed planning, it is easier to keep track of things, to discuss possible alternatives and to evaluate your training after you have completed it.
 :::
 
-:::{card}
 
 To facilitate the planning, you can use the following list as a guide: 
 
