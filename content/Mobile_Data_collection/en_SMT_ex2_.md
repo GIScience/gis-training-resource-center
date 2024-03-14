@@ -9,7 +9,7 @@ The finished map could look something like this:
 
 ```{figure} ../../fig/SMT_Idee_traffic_light_exerices.png
 ---
-height: 700px
+height: 450px
 name: SMT traffic light exercise
 align: center
 ---
@@ -131,7 +131,7 @@ https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_col
 
 ```{figure} ../../fig/SMT_Heidelberg_report_1.jpg
 ---
-height: 700px
+height: 450px
 name: SMT Heidelberg report
 align: center
 ---
