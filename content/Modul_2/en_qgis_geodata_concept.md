@@ -1,4 +1,4 @@
-# Geodata concept
+# Introduction to geodata, layers, and projections
 
 🚧 This training platform and the entire content is under ⚠️construction⚠️ and 
 may not be shared or published! 🚧
@@ -7,10 +7,183 @@ may not be shared or published! 🚧
 __🔙[Back to Homepage](/content/intro.md)__
 
 **Competences:**
-* Projections
-* Layer concept
-* Vector and raster data (basic concepts)
-* Vector file formats
+
+In this chapter, you will learn what __geodata__ is, and understand the difference between __vector and raster data__. Furthermore, this chapter explains the __layer concept__ of GIS-software, which is fundamental to every map you will create. Finally, we will explain the basics of __projections__, which is the method of how we display the spherical shape of our planet onto a 2 dimensional plane. 
+
+__Table of Content__
+
+1.1 __[What is geodata?](/content/Modul_2/en_qgis_geodata_concept.md)
+1.2
+1.3
+1.4
+1.5
+
+## What is geodata?
+
+Geodata, geospatial data, or geographic data is data that has geographical information. This means that the data refers to a location, that is defined by coordinates. It is similar to other forms of data that can be represented in tables (such as Excel spreadsheets or CSV-files) but each item in the data set also holds coordinate information (see figure below).
+The power of GIS-software is that we are able to visualise and manipulate geodata in a 2D (or even 3D) space. 
+
+```{figure} /fig/en_geodata_example_concept.png
+---
+name: geodata example
+width: 450px
+---
+A data table in Microsoft Excel with geographical information (red)
+```
+
+What type of information can be stored in geodata is almost endless. It can hold information about the physical world - such as elevation data, environmental data (soils, climate, temperature, rainfall, information about weather events or natural phenomena), data about the infrastructure, buildings, transportation, etc. - or sociocultural or economic data - such as demographic data, administrative boundaries, social events, crime, etc. 
+Geodata usually represents data entries as __geometries__ on a 2D canvas. These geometries can be points, lines, rectangles, circles, or polygons and can represent various objects that exist in the physical world - such as roads, lakes, trees, etc. - or represent intangible objects - such as administrative boundaries, population numbers, health indicators, historical events, etc. 
+
+```{figure} /fig/en_geometry_geodata_example.png
+---
+name: geometry geodata example
+width: 400
+---
+The data entry for Lake Sulunga is represented by the grey polygon to the left
+```
+
+> Insert table with examples of geodata
+
+There are two primary types of geographic data: **vector and raster**. Both types represent tangible or intangible things in the physical world, however, how they store this data is quite different. Because of this, the manipulation and representation of these two types differs dramatically. Understanding the difference between these two types, and how to work with each type on it's own, as well as, combining both types, will be one of the main skills you will acquire when learning GIS. 
+
+```{figure} /fig/en_vector_raster.png
+---
+width: 500px
+align: center
+name: Raster Vector Concept
+---
+Raster Vector Concept. Source: Adapted from [WikiMedia](https://commons.wikimedia.org/wiki/File:Raster_vector_tikz.png)
+```
+
+### Vector data
+
+Vector data represents spatial information through geometrical shapes, such as points, lines, or polygons. Each object stores the location (as address or coordinates) and further attributes, e.g. name, ID, or any other sort of information. Which geometry is used, depends on the type of data that is represented. For example, a road will be represented by a line, a building will be represented by polygon and a tree might be represented by a point.
+
+<!-- FIXME: this section should explain the different geometry types -->
+
+```{figure} /fig/en_vector_data_overview.drawio.png
+---
+width: 500px
+align: center
+name: Vector Data overview
+---
+Vector Data overview. Source: HeiGIT
+```
+
+- Pointdata usually only have one set of coordinates (x, y, and sometimes z) per data entry.
+- Lines are constructed by connecting several points which are saved as a single data entry.
+- Polygons are also constructed by connecting several points, but they form a closed geometry. Each geometry is then represented by a single data entry.
+
+
+#### Vector file formats
+
+There are several file formats for vector data. They each differ in how the geometries and attributes are stored. However, they still all only contain points, lines, or polygons. Some formats have advantages over others, while others are still used out of convention, although they are outdated.
+The following table gives a short description of commonly used vector file formats.
+
+| Filename extension| Name | Description |
+| ----- | --- | --- |
+|.shp | Shapefile |Old but still widely used geodata format. Can only contain one dataset. The file has to consist of at least three different files (.shp, .shx, .dbf)|
+|.gpkg| GeoPackage  | Very versatile geodata format and the new standard for geodata. Can contain multiple datafiles (vector, raster and non-spatial data like tables)|
+|.kml |Keyhole Markup Language | Geodata format for use with [Google Earth]( https://earth.google.com/web/)|
+| .gpx| GPS Exchange Format|Geodata format for the exchange of coordinates. For example for waypoints of tracks. |
+| .geojson|GeoJSON|Similar to shapefiles, but stores all information in a single file. 
+
+<!-- FIXME: misleading to say GeoJSON is similar to shp - need a new definition? -->
+
+
+```{figure} /fig/en_data_formats.png
+---
+width: 500px
+align: center
+name: The main geographical data formats
+---
+The main geographical data formats. Source: [CartONG](https://cartong.pages.gitlab.cartong.org/learning-corner/en/4_data_geo/4_1_formats)
+```
+
+### Raster data
+
+Another type of geospatial data is raster data. Raster data consists of cells that are organized into a grid with rows and columns, thus forming a raster. Each cell, or pixel, contains a 
+Raster data are images which contain a matrix of pixels ("raster" means "grid" 
+in German). Each pixel stores a value, which might refer to elevation, 
+temperature, population or land cover type. Since a raster is based on an image, 
+the resolution is crucial. It defines the precision of the data and size of the 
+pixels. 
+
+
+```{figure} /fig/en_quality_raster.png
+---
+width: 800px
+align: center
+name: The main geographical data formats
+---
+The main geographical data formats. Source: [CartONG](https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_3_vector_raster_data)
+```
+
+In this picture you can see the same location, on the left as vector data, 
+visualising streets and urban area, and on the right hand as raster data 
+(satellite image), showing the land cover.
+
+
+::::{grid} 2
+:::{card} Vector
+```{figure} /fig/en_same_location_vector.png
+---
+width: 400px
+name: Vector
+align: center
+---
+Features represented with vector data. Source: British Red Cross (BRC)
+```
+:::
+
+:::{card} Raster
+```{figure} /fig/en_same_location_raster.png
+---
+width: 400px
+name: Raster
+align: center
+---
+The same location represented as a raster image. Source: British Red Cross (BRC)
+```
+:::
+::::
+
+
+#### Raster data formats
+
+Raster data can have the following data formats:
+
+| Filename extension| Name | Dscription |
+| ----- | --- | --- |
+|.tif/.tiff/.geotiff|Tag Image File Format|Common raster and image data format. Does not necessarily have georeferenced data. If a .tif file is georeferenced it is referred to as GeoTIFF.|
+|.nc|netCDF|Standard data format for scientific data like speed or temperature. Can be be a raster file. Can contain multiple datasets|
+|.asc|Esri ASCII Grid files|Old, simple raster file format, always with georeferenced data|
+
+## Layer concept
+
+Geodata represents a real-world object on a map as a feature. A feature consists 
+of two types of information: the location and attributes, e. g. name or ID. Those 
+informations are collected in layers. A layer can only consist of geographic 
+objects of the same type. [^1]
+<!-- FIXME: We have not introduced geographic types yet -->
+
+
+[^1]: https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_1_layers
+
+By adding different layers, you build your map and can combine information from 
+different sources. With those you then can perform analyses or adapt the 
+representation by using symbols and colors.
+
+
+```{figure} /fig/en_layer.png
+---
+width: 800px
+name: 
+align: center
+name: Layers in a GIS
+---
+Layers in a GIS. Source: [CartONG](https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_1_layers)
+```
 
 
 ## Projections 
@@ -156,150 +329,3 @@ CRS/EPSG-Code and their properties.
 The website [__I Hate Coordinate Systems!__](https://ihatecoordinatesystems.com/) 
 offers a “a problem-based guide of common CRS issues, root causes, and solutions”. 
 Check it out in case you have any issues with CRS.
-
-
-## Layer concept
-
-Geodata represents a real-world object on a map as a feature. A feature consists 
-of two types of information: the location and attributes, e. g. name or ID. Those 
-informations are collected in layers. A layer can only consist of geographic 
-objects of the same type. [^1]
-<!-- FIXME: We have not introduced geographic types yet -->
-
-
-[^1]: https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_1_layers
-
-By adding different layers, you build your map and can combine information from 
-different sources. With those you then can perform analyses or adapt the 
-representation by using symbols and colors.
-
-
-```{figure} /fig/en_layer.png
----
-width: 800px
-name: 
-align: center
-name: Layers in a GIS
----
-Layers in a GIS. Source: [CartONG](https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_1_layers)
-```
-
-
-## Vector and raster data
-
-There are two primary types of geographic data: **vector and raster**.  
-
-
-```{figure} /fig/en_vector_raster.png
----
-width: 800px
-name: 
-align: center
-name: Raster Vector Concept
----
-Raster Vector Concept. Source: Adapted from [WikiMedia](https://commons.wikimedia.org/wiki/File:Raster_vector_tikz.png)
-```
-
-### Vector
-Vector data contains a shape or a geometry. By using geometry objects (points, 
-lines and polygons) the real world is represented. Each object stores the location 
-(as address or coordinates) and further attributes, e.g. name or ID. Which geometry 
-is used, depends on the feature it represents.
-
-<!-- FIXME: this section should explain the different geometry types -->
-
-```{figure} /fig/en_vector_data_overview.drawio.png
----
-width: 800px
-name: 
-align: center
-name: Vector Data overview
----
-Vector Data overview. Source: HeiGIT
-```
-  
-#### Vector file formats
-
-Vector data can have the following data formats:
-
-| Filename extension| Name | Description |
-| ----- | --- | --- |
-|.shp | Shapefile |Old but still widely used geodata format. Can only contain one dataset. The file has to consist of at least three different files (.shp, .shx, .dbf)|
-|.gpkg| GeoPackage  | Very versatile geodata format and the new standard for geodata. Can contain multiple datafiles (vector, raster and non-spatial data like tables)|
-|.kml |Keyhole Markup Language | Geodata format for use with [Google Earth]( https://earth.google.com/web/)|
-| .gpx| GPS Exchange Format|Geodata format for the exchange of coordinates. For example for waypoints of tracks. |
-| .geojson|GeoJSON|Similar to shapefiles, but stores all information in a single file. 
-
-<!-- FIXME: misleading to say GeoJSON is similar to shp - need a new definition? -->
-  
-
-```{figure} /fig/en_data_formats.png
----
-width: 800px
-name: 
-align: center
-name: The main geographical data formats
----
-The main geographical data formats. Source: [CartONG](https://cartong.pages.gitlab.cartong.org/learning-corner/en/4_data_geo/4_1_formats)
-```
-
-
-### Raster  
-Raster data are images which contain a matrix of pixels ("raster" means "grid" 
-in German). Each pixel stores a value, which might refer to elevation, 
-temperature, population or land cover type. Since a raster is based on an image, 
-the resolution is crucial. It defines the precision of the data and size of the 
-pixels. 
-
-
-```{figure} /fig/en_quality_raster.png
----
-width: 800px
-align: center
-name: The main geographical data formats
----
-The main geographical data formats. Source: [CartONG](https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_3_vector_raster_data)
-```
-
-In this picture you can see the same location, on the left as vector data, 
-visualising streets and urban area, and on the right hand as raster data 
-(satellite image), showing the land cover.
-
-
-::::{grid} 2
-:::{card} Vector
-```{figure} /fig/en_same_location_vector.png
----
-width: 400px
-name: Vector
-align: center
----
-Features represented with vector data. Source: British Red Cross (BRC)
-```
-:::
-
-:::{card} Raster
-```{figure} /fig/en_same_location_raster.png
----
-width: 400px
-name: Raster
-align: center
----
-The same location represented as a raster image. Source: British Red Cross (BRC)
-```
-:::
-::::
-
-
-#### Raster data formats
-
-Raster data can have the following data formats:
-
-| Filename extension| Name | Dscription |
-| ----- | --- | --- |
-|.tif/.tiff/.geotiff|Tag Image File Format|Common raster and image data format. Does not necessarily have georeferenced data. If a .tif file is georeferenced it is referred to as GeoTIFF.|
-|.nc|netCDF|Standard data format for scientific data like speed or temperature. Can be be a raster file. Can contain multiple datasets|
-|.asc|Esri ASCII Grid files|Old, simple raster file format, always with georeferenced data|
-
-
-
