@@ -1,9 +1,9 @@
 🚧 This training platform and the entire content is under ⚠️construction⚠️ and 
 may not be shared or published! 🚧
 
-# Data Sources
+# Data sources
 To find the appropriate data you are looking for, you can search online data 
-sharing platforms. In the following some important ones are highlighted below. 
+sharing platforms. Some important ones are highlighted below. 
 
 <details>
 <summary>What to look out for when looking for data:</summary>
@@ -24,91 +24,94 @@ and potentially also sharing purposes.
 
 *Data capture date:* Make sure to check when the data was collected and if the 
 collection data is in line with your needs. Check if there is potentially more 
-up-to-date data in another framework. 
+up-to-date data available from another source. 
 
 *Data licence:* What kind of licence does the data have? How can you use and 
 share it and how do you need to cite the data source? Make sure to check the 
 licensing and to follow the respective regulations to avoid difficulties.
 </details>
+<!-- ADD: Would be nice to have a wiki page on licensing if possible -->
 
 
 ## Overview
 
-### General Geodata 
+### General geodata 
 
 | Name | Data | Link |
 | :-------------------- | :----------------- | :---------- |
-| Natural Earth | administrative and physical maps | https://www.naturalearthdata.com/ |
-| Geonames | administrative geodata | https://www.geonames.org/ |
-| OpenAfrica | Open source data on Africa | https://africaopendata.org/dataset |
-| DivaGIS | different data, e.g. administrative, roads, population, elevation, climate | http://www.diva-gis.org/gdata |
-| Open Topography | data on topography | https://opentopography.org/ |
-| OSM Boundaries | administrative boundaries (need to authenticate via your osm account) | https://osm-boundaries.com |
+| Natural Earth | Administrative and physical geography | https://www.naturalearthdata.com/ |
+| Geonames | Administrative geodata | https://www.geonames.org/ |
+| OpenAfrica | Open-source data on Africa | https://africaopendata.org/dataset |
+| DivaGIS | Different data, e.g. administrative, roads, population, elevation, climate | http://www.diva-gis.org/gdata |
+| Open Topography | Data on topography | https://opentopography.org/ |
+| OSM Boundaries | Administrative boundaries (need to authenticate via your osm account) | https://osm-boundaries.com |
 
-### Humanitarian Data
-
-| Name | Data | Link |
-| :-------------------- | :----------------- | :---------- |
-| The Humanitarian Data Exchange | Various openly available (geo)data sets from different organisations, including the datasets, meta information and stats/overviews | https://data.humdata.org |
-| Healthsites | Location of health facilities | https://healthsites.io/ |
-| UNHCR Geoservices | information and data on refugee-related emergencies for humanitarian help regarding displaced persons | https://data.unhcr.org/en/situations |
-
-
-### Data on disaster
+### Humanitarian data
 
 | Name | Data | Link |
 | :-------------------- | :----------------- | :---------- |
-| MapAction | Emergency mapping resources | https://maps.mapaction.org/ |
-| Fieldmaps.io | Data and Map download platform for humanitarian use | https://fieldmaps.io/ |
-| Acled | data on armed conflicts and other events | https://acleddata.com/data-export-tool |
-| GDACS | data on all major ongoing disasters | https://www.gdacs.org |
-| ZKI/DLR | Flood extends, damage extends, earth observation data | https://activations.zki.dlr.de/en/activations/ |
-| Waterpoint | data on waterpoints | https://www.waterpointdata.org |
-| DataViz | data on food security, hazards, conflicts, climate | https://dataviz.vam.wfp.org/version2/ |
+| Humanitarian Data Exchange | Various open data from different humanitarian organisations | https://data.humdata.org |
+| Healthsites | Locations of health facilities | https://healthsites.io/ |
+| UNHCR Geoservices | Data on displaced populations | https://data.unhcr.org/en/situations |
+
+
+### Disaster data
+
+| Name | Data | Link |
+| :-------------------- | :----------------- | :---------- |
+| MapAction | Emergency mapping resources | https://maps.mapaction.org/ | 
+| Fieldmaps.io | Data and map download platform for humanitarian use | https://fieldmaps.io/ | 
+<!-- CHECK: link doesn't work? -->
+| Acled | Conflict data | https://acleddata.com/data-export-tool |
+| GDACS | Disaster database | https://www.gdacs.org |
+| ZKI/DLR | Flood extents, damage extents, earth observation data | https://activations.zki.dlr.de/en/activations/ |
+| Waterpoint | Data on waterpoints | https://www.waterpointdata.org | 
+<!-- is water points more appropriate under humanitarian / general? it's not disaster data -->
+| WFP Vulnerability Analysis and Mapping | Data on food security, hazards, conflicts, climate | https://dataviz.vam.wfp.org/ |
 
 
 ### Population data
 
 | Name | Data | Link |
 | :-------------------- | :----------------- | :---------- |
-| WorldPop | population estimates | https://wopr.worldpop.org/ |
-| GHSL | settlement data on global scale | https://ghsl.jrc.ec.europa.eu/ |
-| HRSL | Settlement layer based on earth observation data and Facebook data | https://research.facebook.com/downloads/high-resolution-settlement-layer-hrsl/ |
-| GRID3 Settlement extents and settlement points | Settlement extents data sets based on Digitise Africa building footprints, boundaries, infrastructure, population, risk analysis and social distancing | https://grid3.org/ |
-| Pangea | environmental data | https://www.pangaea.de/ |
-| United Nations Population Fund | data on sexual and reproductive health and population trends | https://www.unfpa.org/data
+| WorldPop | Population estimates | https://wopr.worldpop.org/ |
+| GHSL | Global settlement data | https://ghsl.jrc.ec.europa.eu/ |
+| HRSL | Settlement layer based on earth observation and Facebook data | https://research.facebook.com/downloads/high-resolution-settlement-layer-hrsl/ |
+| GRID3 Settlement extents and settlement points | Settlement extents data | https://grid3.org/ |
+| Pangea | Environmental & biosciences data | https://www.pangaea.de/ |
+| United Nations Population Fund | Data on sexual and reproductive health and population trends | https://www.unfpa.org/data
 
-### Building
-
-| Name | Data | Link |
-| :-------------------- | :----------------- | :---------- |
-| World Settlement Footprint | World Settlement Footprint with global cover | https://download.geoservice.dlr.de/WSF2019/ |
-| VIDA building footprint | combined Google and Microsoft building footprint | https://beta.source.coop/repositories/vida/google-microsoft-open-buildings/download/ |
-| Open-building | Google building footprint | https://sites.research.google/open-buildings/#download |
-
-### Remote sensing/Earth observation data
+### Buildings data
 
 | Name | Data | Link |
 | :-------------------- | :----------------- | :---------- |
-| Global Forest Watch | data on global forests | https://www.globalforestwatch.org/ |
-| OpenAerialMap | Drone images | https://map.openaerialmap.org/ |
-| USGS Earth Explorer | data on Landsat, Sentinel, SRTM, Aster, Land Cover | https://earthexplorer.usgs.gov/ |
-| SRTM | elevation data | http://srtm.csi.cgiar.org/srtmdata/ |
-| Earth Observe | digital elevation model on a global scale | http://srtm.csi.cgiar.org/srtmdata/ |
-| Copernicus | earth observation data | https://scihub.copernicus.eu/ | 
-| GlobCover | raster data on land cover | http://due.esrin.esa.int/page_globcover.php |
-| Copernicus | Earth observation data | https://scihub.copernicus.eu/ |
+| World Settlement Footprint | World Settlement Footprint | https://download.geoservice.dlr.de/WSF2019/ |
+| VIDA building footprint | Combined Google and Microsoft building footprint datasets | https://beta.source.coop/repositories/vida/google-microsoft-open-buildings/download/ |
+| Open-building | Google building footprints | https://sites.research.google/open-buildings/#download |
 
+### Remote sensing/earth observation data
+
+| Name | Data | Link |
+| :-------------------- | :----------------- | :---------- |
+| Global Forest Watch | Data on global forests | https://www.globalforestwatch.org/ |
+| OpenAerialMap | Crowdsourced drone imagery | https://map.openaerialmap.org/ |
+| USGS Earth Explorer | Satellite data from multiple sources, including Landsat and Sentinel | https://earthexplorer.usgs.gov/ |
+| NASA Shuttle Radar Topography Mission (SRTM) | Global elevation data | http://srtm.csi.cgiar.org/srtmdata/ |
+| Earth Observe | digital elevation model on a global scale | http://srtm.csi.cgiar.org/srtmdata/ | 
+<!-- FIXME: wrong link for Earth Observe -->
+| Copernicus | Earth observation data | https://scihub.copernicus.eu/ | 
+| GlobCover | Raster data on land cover | http://due.esrin.esa.int/page_globcover.php |
 
 
 ## OpenStreetMap data
-
+<!-- ADD: context/info about what OSM data is and why it's useful -->
 
 ### OpenStreetMap
 
 If you are using version 3.4 or higher in QGIS, it is by default possible to add 
-the OSM base map to your project. Unfold the XYZ tiles, right-click on 
-OpenStreetMap and select add layer to project.
+<!-- COMMENT: we have asked people to install 3.28 -->
+the OSM base map to your project. Expand the XYZ tiles entry in the data sources 
+browser panel, right-click on OpenStreetMap and select `Add Layer to Project`.
 
 ```{figure} /fig/en_add_osm_basemap.png
 ---
@@ -119,14 +122,16 @@ name: add_osm_basemap
 ---
 Screenshot of how to add OSM basemap
 ```
+<!-- FIXME: This screenshot could be cropped -->
 
-### Quick OSM plugin
+### QuickOSM plugin
 
-To download data from data and import it into your QGIS the plugin **QuickOSM** 
-is great. First you need to install it by searching for it in the 
-`Manage and Install Plugins` Tab.
+The QuickOSM plugin makes it easy to download data from OpenStreetMap and add it 
+to your QGIS project. To install it, open the plugin manager from the `Plugins` 
+menu by choosing `Manage and Install Plugins`. 
 
-:::{dropdown} How to download the plugin
+:::{dropdown} How to install QuickOSM
+<!-- FIXME: These instructions and screenshots could be clearer -->
 
 
 ```{figure} /fig/managa_install_plugins.png
@@ -158,6 +163,8 @@ Follow the steps to fetch for data:
 1. Select a Key and Value from the dropdown list. If you are unsure, check here: 
    [taginfo](https://taginfo.openstreetmap.org). 
 
+<!-- CLARIFY: this needs more explanation for beginners -->
+
 ```{figure} /fig/key_value_quickosm.png
 ---
 width: 800px
@@ -169,10 +176,12 @@ Choosing key and value in QuickOSM.
 ```
 
 2. Limit the area by typing in the name of your area of interest. You can also 
-   choose from the dropdown `Canvas Extent` or `Layer Extent` instead of a name of a city or country.
+   choose from the dropdown `Canvas Extent` or `Layer Extent` instead of a name 
+   of a city or country.
 
 3. Unfold the tab `Advanced`. Only select the datatypes you are expecting to 
    minimize errors.
+   <!-- CLARIFY: would be useful to have an example here --> 
 
 ```{figure} /fig/quickosm_usage.png
 ---
@@ -190,24 +199,27 @@ Running the QuickOSM plugin.
 
 If you want to get more data in the same area, you can add a query by clicking 
 on the ![](fig/plus_quickosm.png). Be careful choosing the right logical operator 
-`And` or `Or`. If you are unsure check this [Wikipage](/content/Wiki/en_qgis_non_spatial_queries_wiki). 
-You can find an example for this [here](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_data_sources_ex2.html#task-quickosm)
+`And` or `Or`. If you are unsure check the page [non-spatial queries](/content/Wiki/en_qgis_non_spatial_queries_wiki) 
+on the wiki. There is an example of this in the Module 2 [OSM exercise](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_data_sources_ex2.html#task-quickosm)
 
 :::
 
 ### HOT Export Tool
 
-With the [HumanitarianOpenStreetMapTeam (HOT) Export Tool](https://export.hotosm.org/v3/) 
+With the [Humanitarian OpenStreetMap Team (HOT) Export Tool](https://export.hotosm.org/v3/) 
 you can download customized extracts of up-to-date OSM data in different file 
 formats. It offers a browser-based tool to download OSM data with good options 
 to specify region, time, feature type and data format.
 
-1. Go to the HOT Export tool. To use the tool you need a OSM account. If you don’t 
-   have one you need to create on. Click on `Log in`. In the new window select the 
-   option to create a new account.
-2. With your OSM account you can log in directly into the HOT Export tool by 
+1. Go to the HOT Export tool. To use the tool you need a OSM account. 
+
+   If you have an OSM account you can log in directly into the HOT Export tool by 
    clicking on `Log in`.
-3. After clicking on `Start Exporting` you will be redirected to this website.
+   
+   If you don’t have one, you'll need to create one: click on `Log in` and in the 
+   new window select the option to create a new account.
+2. After logging in, click the `Start Exporting` button on the homepage to load 
+   the Export Tool 
 
 ```{figure} /fig/hot_export.png
 ---
@@ -222,9 +234,10 @@ The HOT Export Tool.
 4. First add a name and a brief description of your export. Then click on `Next`.
 5. Choose the file format fitting to your needs. Most likely Geojson, Shapefile or 
    GeoPackage will be fit for the use with QGIS. Click on `Next`.
-6. The easiest way to choose the feature type you want to download, is using the 
-   tag tree. The YAML option offers far more flexibility although is requires 
-   more technical knowledge, so we will focus on the first option.
+   <!-- COMMENT: As earlier, suggest we recommend GPKG for consistency -->
+6. The easiest way to choose the feature type you want to download is using the 
+   tag tree. (The YAML option is more flexible but more advanced, so we will 
+   focus on the first option.)
 7. There are multiple ways to select your area of interest. 
    1. You can search for it in the search bar in the top right corner. 
    2. Zoom in the map to your area and click on `This view`.
@@ -256,7 +269,7 @@ name: HOT Export Tool running
 ---
 The HOT Export Tool is running.
 ```
-10. After being finished, the Status will change to `COMPLETED` and you can 
+10. After being finished, the status will change to `COMPLETED` and you can 
     download your file by clicking on the link:
 
 ```{figure} /fig/hot_export_done.png
@@ -269,9 +282,9 @@ name: HOT Export Tool done
 Downloading data from HOT Export Tool.
 ```
 
-### overpass turbo
+### Overpass Turbo
 
-[Overpass turbo](https://overpass-turbo.eu) is a web based data mining tool for 
+[Overpass Turbo](https://overpass-turbo.eu) is a web-based data export tool for 
 OSM. By running a query, you can download the data and import it into your project. 
 You can either run it by writing your query on the left or by using the wizard 
 which will assist you in writing your queries. 
@@ -384,8 +397,9 @@ Screenshot of how to export query in overpassturbo
 For more information, check out the [wiki](https://wiki.openstreetmap.org/wiki/Overpass_turbo).
 ```
 
-### ohsome tools
+### Ohsome tools
 
-[The ohsome tools](https://heigit.org/big-spatial-data-analytics-en/ohsome/) 
+[The Ohsome tools](https://heigit.org/big-spatial-data-analytics-en/ohsome/) 
 provide OpenStreetMap data analytics and downloads by HeiGIT. You can also 
 investigate the OSM history. 
+<!-- CLARIFY: how should this be used? -->
