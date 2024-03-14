@@ -74,8 +74,8 @@ In the data subfolder (\data\input), you will find the data you need to start th
 
 https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Exercise_2.zip
 
-- Introduction Slides with tips and a short basic introduction in the differences of satellite image/OSM
-- [5 prepared cases](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Exercise_2.zip) (with Sketch Maps and Map Quality Check) 
+- Introduction Slides to the Sketch Map Tool
+- [5 prepared cases](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Exercise_2.zip) if you like to save time (with Sketch Maps and Map Quality Check) 
 
 
 ### During the exercise:  
@@ -133,8 +133,7 @@ align: center
 ---
 Map Quality Check; Sketch Map Tool Heidelberg report
 ```
-The Sketch Map Tool can evaluate how well-suited an area of the OpenStreetMap (OSM) basemap is for participatory mapping based on a quality analysis of the OpenStreetMap (OSM) basemap data through the HeiGIT ohsome quality analyst.  
-> (→ Hyperlinks are missing to OSM and ohsome quality analyst).
+The Sketch Map Tool can evaluate how well-suited an area of the OpenStreetMap (OSM) basemap is for participatory mapping based on a quality analysis of the [OpenStreetMap (OSM)](https://www.openstreetmap.org/#map=6/51.330/10.453) basemap data through the [HeiGIT ohsome quality analyst](https://heigit.org/big-spatial-data-analytics-en/ohsome/ohsome-quality-analyst-oqt/).
 
 The Map Quality Check assists in evaluating the suitability of the area of interest for participatory mapping through a quality analysis of the OpenStreetMap data with the HeiGIT ohsome quality analyst. The fitness report can be downloaded as a PDF file by clicking on the blue button. It provides an evaluation of the suitability of the local OSM data and recommendations for subsequent field data collection.
 
@@ -147,9 +146,7 @@ If you expieriences any problems during your use of the [Sketch Map Tool](https:
 
 ### 1.	Create the maps and reports
 
->link of SMT
-
-- Open the Sketch Map Tool 
+- Open the [Sketch Map Tool](https://sketch-map-tool.heigit.org/)
 - With you group, decide on an area fitting to your case-study. You can also choose an area you know very well or find interesting.
 - Zoom in and select your map area: Try different zoom levels and change the orientation. 
 - Create several maps of the same area with different orientation, zoom-level or basemaps. 
@@ -159,8 +156,7 @@ If you expieriences any problems during your use of the [Sketch Map Tool](https:
 | ![](/fig/SMT_Satelite_Heidelberg_empty.jpg) | ![](/fig/SMT_Heidelberg_empty.jpg) | ![](/fig/SMT_Heidelberg_report_1.jpg)|
 
 ```{Tip}
-To shorten the time, you can work with prepared maps.   
-> Link data
+To shorten the time, you can work with [prepared cases](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Exercise_2.zip).
 ```
 
 ### 2.	Collect your insights to the following questions
