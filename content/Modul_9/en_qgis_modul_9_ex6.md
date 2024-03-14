@@ -1,6 +1,6 @@
 🚧 This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
-# Task 6: West Germany / Ahrtal Flood logistics
+# Task 6: West Germany / Ahrtal flood logistics
 
 While exploring the general functionality of the ORS plugin, we will specifically focus on its application in disaster-aware routing. To demonstrate its practical use, we will dive into the scenario of the devastating Ahr Valley flood that occurred in Germany in 2021. By leveraging the plugin's capabilities, we will learn how to optimize routing decisions in the context of disaster response and recovery.
 
