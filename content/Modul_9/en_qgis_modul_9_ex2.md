@@ -74,7 +74,7 @@ Compare the results of both catchments. What differences can you spot?
 `````
 
 ## STEP 4: Healthcare catchment - Isochrones avoid flood
-In this part we will again calculate catchments based on the same configured isochrones. But we will include a polygon for the avoid area functionality in openrouteservice. For the **avoid area** we will use the water streams that run through the main camp area. Make sure to buffer the camp_stream layer by 2 meters. The avoid areas function only allows for polygons, not for line geometries. If you have buffered the streams, go ahead with the Isochrones tool again.
+In this part we will again calculate catchments based on the same configured isochrones. But we will include a polygon for the avoid area functionality in openrouteservice. For the **avoid area** we will use the water streams that run through the main camp area. Make sure to `buffer` the camp_stream layer by 2 meters. The avoid areas function only allows for polygons, not for line geometries. If you have buffered the streams, go ahead with the Isochrones tool again.
 
 Click in the toolbar on the ORS Tools plugin Icon <img src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/icon_ORS_tools_plugin.png" alt="Icon" width="20" height="20">. Click on `Batch Jobs` -> `Isochrones from Layer`.
 Leave all settings at default except:
@@ -82,9 +82,9 @@ Leave all settings at default except:
 |------------------------------|------------------------------|
 | Travel mode                  | foot-walking                 |
 | Input Point layer            | camp_healthcare              |
+| Comma separated ranges       | 5, 10                        |
 | **Advanced Parameters**         |                              |
 | Polygons to avoid            | stream_buffer                |
-| Comma separated ranges       | 5, 10                        |
 
 
 :::{dropdown} Watch here:
