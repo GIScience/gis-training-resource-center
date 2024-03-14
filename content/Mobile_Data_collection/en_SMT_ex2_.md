@@ -164,20 +164,23 @@ To shorten the time, you can work with [prepared cases](https://nexus.heigit.org
 ```
 
 ### 2.	Collect your insights to the following questions
-Add your insights to a presentation or on a (digital) board to share it later.
-  
-Discuss with your group: 
-- What are the main characteristics of the area you see on the basemap? Describe, separately, both basemaps (satellite image vs. OSM basemap). 
-- Could you orient yourself on the basemap? Are there points of interests or something you could use as a orientation point?
-- Would you say that the basemaps are suited for participatory mapping? Reason your answer and think about participants that are not familiar with basemaps.  
+Add your insights to a presentation or share it on a (digital) board:
+
+- What are the main characteristics of the area you see on the basemap? 
+Describe separately both basemaps, the one with the satellite imagery and the OSM data. 
+- Could you orient yourself on the basemap? 
+Are there points of interests / something you could use as orientation point?
+- Would you say the basemaps are suited for participatory mapping?
+Reason your answer and think about participants that are not familiar with basemaps.  
 - Which difference can you detect between satellite and OSM basemaps?
-- In which uses cases would you prefer a OSM basemap? 
-- In which uses cases would you prefer a satellite imagery basemap?
-- What traffic light colour would you give the satellite imagery and OSM basemap individually for this area?
+- In which use cases would you prefer the OSM basemap? 
+- In which use cases would you prefer the Satellite basemap?
+- What traffic light colour would you give the satellite and OSM basemap individually for this area?
 - Discuss the OSM-Mapping-suitability-report:
 - What is the overall result of the basemap? (Which colour of the traffic light?)
 - What are your most important findings from the OSM-Mapping-suitability-report?
-- Would it make sense to organise a mapathon beforehand in order to improve the OSM data to use with your Sketch Map?
+- Would it make sense to organise a mapathon beforehand to improve the OSM data?
+
 
 ### 3.	Wrap-up: 
 
