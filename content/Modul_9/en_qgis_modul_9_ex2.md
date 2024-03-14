@@ -3,8 +3,16 @@
 # Task 2 - Access healthcare - avoid areas
 For the main area of Kutupalong Refugee Camp, we have the boundary, the path and road network, water streams and health facilities. The boundary is available on `HDX`. Healthcare facilities, the road & path network, streams as well as the health facilities were extracted from `OpenStreetMap`. In this task we will compare openrouteservice isochrone and QGIS built-in service area catchments. Also we will showcase the avoid area feature in openrouteservice to account for a simple simulated flooding.
 
-Use the following file:
-* camp.gpkg
+Download all datasets __[here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_9/Modul_9_Exercise_2_Access_healthcare_avoid_areas/Modul_9_Exercise_2.zip)__. 
+ Save the folder on your computer. 
+ Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects. 
+ Under "data > input" you find the geopackage file `task2.gpkg` which contains the following vector layers:
+
+- `camp18_healthcare` (points): Healthcare facility locations within camp 18 
+- `camp18_ways` (points): Roads and paths within camp 18
+- `camp18_streams` (points): Water streams within camp 18
+- `camp18_boundary` (polygons): The camps legal boundary
+
 
 ## STEP 1: Healthcare catchment - Isochrones
 

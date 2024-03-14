@@ -2,7 +2,18 @@
 
 # Task 1 - Assess water distribution access
 For Camp 18 in Kutupalong Refugee Camp, we have a dataset on the locations of water distribution points. Further we have data on the buildings (footprint and centroid) within camp 18. In the following task we will use the following dataset:
-* Camp18.gpkg
+
+
+Download all datasets __[here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_9/Modul_9_Exercise_1_Assess_water_distribution_access/Modul_9_Exercise_1.zip)__. 
+ Save the folder on your computer. 
+ Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects. 
+ Under "data > input" you find the geopackage file `task1.gpkg` which contains the following vector layers:
+
+- `camp18_waterpoints` (points): Water point locations within camp 18 
+- `camp18_buildings_centroid` (points): Centroids of all building objects inside camp 18
+- `camp18_buildings_footprint` (polygons): Actual footprints of all buildings
+- `camp18_boundary` (polygons): The camps legal boundary
+
 
 ## STEP 1: Catchments with openrouteservice isochrones
 Make sure you installed the ORS Tools plugin and set it up already with an API Key. If not - see the how to here {ref}`content:references:module9:ors-tools-plugin`

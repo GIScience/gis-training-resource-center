@@ -4,12 +4,28 @@
 
 There are two main approaches on accessibility analyses: network and cost raster based. In this task we will use both methods on the example of the country Rwanda. For the network based approach we will use the isochrone API of the openrouteservice to generate catchment areas for 5, 10 and 60 minute ranges. The cost raster approach will be conducted with the saga tool `Accumulated Cost` which is already part of the QGIS tools through the SAGA provider. 
 
-Use the following files:
-* rwa.gpkg
-* motorized.tif
-* Walking.tif
-* population.tif
 
+Download all datasets __[here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_9/Modul_9_Exercise_3_larger_scale_access_analysis/Modul_9_Exercise_3.zip)__. 
+ Save the folder on your computer. 
+ Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects. 
+ Under "data > input" you find the following datasets:
+
+**Vectorlayer**
+
+- `task3.gpkg`
+  - `rwa_healthcare` (points): Hospital locations in Rwanda (based of OpenStreetMap)
+  - `rwa_adm0_boundary` (polygons): Country boundary of Rwanda
+  - `rwa_adm1_boundary` (polygons): Administrative boundaries for the second level of Rwanda. In Rwandas case these are called provinces
+  - `rwa_adm2_boundary` (polygons):  Thirs level administrative boundaries of Rwanda. In Rwandas case these are called prefectures
+
+
+**Rasterlayer**
+
+Use the following files:
+- `motorized.tif` : Friction layer for motorized travel profiles
+- `Walking.tif` : Friction layer for walking mobility profiles
+- `population.tif` : Population counts from WorldPop
+ 
 ## STEP 1: Network - Isochrones
 We start with the isochrones gain. This time for a whole country - Rwanda. Use the layer `rwa_healthcare` as input point layer and 5, 10 and 60 minutes as ranges.
 
@@ -19,7 +35,7 @@ Leave all settings at default except:
 |------------------------------|------------------------------|
 | Travel mode                  | driving-car                  |
 | Input Point layer            | rwa_healthcare               |
-| Comma separated ranges       | 5, 10, 60                   |
+| Comma separated ranges       | 5, 10, 60                    |
 
 
 :::{dropdown} Watch here:
