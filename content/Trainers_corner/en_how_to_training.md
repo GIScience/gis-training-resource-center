@@ -3,13 +3,21 @@
 
 If you are running a QGIS training course for the first time, there are several practical considerations that you need to keep in mind. In this article, we would like to share our practical experience from many trainings to provide a guide for training sessions. It complements the training material that you can find on the QGIS training platform, with practical advice on how to plan a training session.  
 
-Before you start planning the training schedule, there are three things to consider:
+__Before you start planning the training schedule, there are three things to consider:__
 
+:::{card}
 __First__, it is important to consider the audience you're targeting: Consider the professional backgrounds of the participants in your training, what practical experience they have, and what they intend to do with the knowledge they have acquired. Try to design the training content - especially the exercises - according to the participants' background.
+:::
 
+:::{card}
 __Secondly__, it is essential to communicate as clearly as possible to avoid any misunderstandings. The more heterogeneous the audience, the more important it is to communicate unambiguously. If you are not sure whether to add information, it is always better to state the obvious than to omit important information.
+:::
 
+:::{card}
 And __third__, you should prepare the training in a detailed way, especially if it is your first training. With detailed planning, it is easier to keep track of things, to discuss possible alternatives and to evaluate your training after you have completed it.
+:::
+
+:::{card}
 
 To facilitate the planning, you can use the following list as a guide: 
 
