@@ -12,8 +12,8 @@ Leave all settings at default except:
 
 |                                |                                |
 |--------------------------------|--------------------------------|
-| Input Point Layer             | waterpoints                    |
 | Travel mode                   | foot-walking                   |
+| Input Point Layer             | waterpoints                    |
 | Dimension                     | distance                       |
 | Comma separated ranges        | 500                            |
 
@@ -23,7 +23,7 @@ Leave all settings at default except:
 :::
 
 
-The result layer shows for every waterpoint a 500m catchment area for pedestrian travel mode. 500m is the maximum distance from any household to the water point according to `The Sphere Handbook: Humanitarian Charter and Minimum Standards in Humanitarian Response` p. 106. There are other key indicators like maximum number of people using the facility, queuing time, etc. We will work on the distance as we miss further information like the flow rate per water point or the household size per building.
+The result layer shows for every waterpoint a 500 meter catchment area for pedestrian travel mode. 500 meter is the maximum distance from any household to the water point according to [The Sphere Handbook: Humanitarian Charter and Minimum Standards in Humanitarian Response](https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf) p. 106. There are other key indicators like maximum number of people using the facility, queuing time, etc. We will work on the distance as we miss further information like the flow rate per water point or the household size per building.
 
 `````{admonition} Question
 How is the coverage with water point catchments within camp 18? Any underserved areas?
@@ -65,7 +65,7 @@ What are the differences in the min/max number of waterpoints available to the b
 ## STEP 3: Waterpoint catchment by closest euclidean distance
 There are other means to generate catchment areas, implemented in QGIS. In the next part we will use the hub distance to calculate the euclidean distance between every building and its closest waterpoint.
 
-Open the `Processing Toolbox`, choose `Vector Analysis`,then choose `Distance to nearest hub (points)`or enter "Distance to nearest hub (points)" in the search bar.. 
+Open the `Processing Toolbox`, choose `Vector Analysis`,then choose `Distance to nearest hub (points)`or enter "Distance to nearest hub (points)" in the search bar.
 Leave all settings at default except:
 
 |                                |                                |
@@ -90,9 +90,9 @@ What is the shortest / longest euclidean distance from a building to the closest
 
 ## STEP 4: Hub distance based catchments
 
-All buildings are assigned to their closest waterpoint. With the minimum bounding geometry tool in QGIS we can use this grouping information to create areas from.
+All buildings are assigned to their closest waterpoint. With the minimum bounding geometry tool in QGIS we can use this grouping information to create areas.
 
-Open the `Processing Toolbox`, choose `Vector Analysis`,then choose `Minimum Bounding Geometry`or enter "Minimum Bounding Geometry" in the search bar.
+Open the `Processing Toolbox`, choose `Vector Analysis`, then choose `Minimum Bounding Geometry` or enter "Minimum Bounding Geometry" in the search bar.
 Leave all settings at default except:
 
 |                              |                              |
