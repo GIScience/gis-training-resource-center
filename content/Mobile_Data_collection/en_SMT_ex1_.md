@@ -5,25 +5,16 @@
 Explore the whole workflow of mapping with the Sketch Map Tool, from first ideas about what you like to map to the possible digital results.
 
 
-> picture /fig/SMT_workflow_satelite.png fehlt oder ist /fig/SMT_workflow.png gemeint (see below)?
 
-```{figure} /fig/smt_workflow_Satelite.png
+```{figure} ../../fig/smt_workflow_Satelite.png
 ---
-height: 450px
+height: 500px
 name: T
 align: center
 ---
-Thw workflow of the Sketch Map Tool
+The workflow of the Sketch Map Tool
 ```
 
-```{figure} ../fig/smt_workflow.png
----
-height: 500px
-name: SMT_Workflow
-align: center
----
-Thw workflow of the Sketch Map Tool
-```
 
 
 ## Characteristics of the exercise 

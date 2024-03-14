@@ -4,9 +4,16 @@
 
 For this task, we imagine that the city of Heidelberg is partially affected by flooding of the Neckar. Such scenarios are becoming increasingly likely in the future due to climate change. The flood has a major impact on the city's infrastructure. In this exercise, you will use QGIS to analyze the impact of the flood by determining the betweenness centrality of multiple nodes in the city before and after the flooding event.
 
-Use the following files:
-* highways.gpkg
-* flood_area.gpkg
+Download all datasets __[here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_9/Modul_9_Exercise_5_Identifying_critical_road_segments/Modul_9_Exercise_5.zip)__. 
+ Save the folder on your computer. 
+ Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects. 
+ Under "data > input" you find the following datasets:
+
+
+- `highways.gpkg` (points): Road netowrk of Heidelberg
+- `flood_area.gpkg` (polygons): Flood simulation of Heidelberg
+
+
 
 ### STEP 1: Dissolve Layer
 
