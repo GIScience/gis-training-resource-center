@@ -1,6 +1,7 @@
 🚧 This training platform and the entire content is under ⚠️construction⚠️ and 
 may not be shared or published! 🚧
 
+(content:references:module9:network-theory)=
 # Spatial Network Analysis Theory
 
 

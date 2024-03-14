@@ -1,5 +1,6 @@
 🚧 This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
+(content:references:module9:ors-tools-plugin)=
 # Plugin: Openrouteservice (ORS) tools
 
 ## Openrouteservice QGIS Plugin 
@@ -10,7 +11,7 @@
 ```{figure} /fig/qgis_plugins.png
 ---
 width: 700px
-name: basic classification
+name: manage & install plugins
 align: center
 ---
 Where to manage and install plugins    Source: HeiGIT
@@ -22,7 +23,7 @@ Where to manage and install plugins    Source: HeiGIT
 ```{figure} /fig/install_ors.png
 ---
 width: 700px
-name: basic classification
+name: search ors tools plugin
 align: center
 ---
 How to install the ORS Tools plugin    Source: HeiGIT
@@ -34,7 +35,7 @@ How to install the ORS Tools plugin    Source: HeiGIT
 ```{figure} /fig/open_ORS_tools_plugin.png
 ---
 width: 700px
-name: basic classification
+name: locate ors tools plugin in qgis
 align: center
 ---
 Where to open the ORS Tools plugin    Source: HeiGIT
@@ -56,7 +57,7 @@ Where to sign up for OpenRouteService    Source: HeiGIT
 ```{figure} /fig/sign_up_ORS.png
 ---
 width: 700px
-name: basic classification
+name: sign up for ors
 align: center
 ---
 How to sign up for Openrouteservice    Source: HeiGIT
@@ -72,7 +73,7 @@ How to sign up for Openrouteservice    Source: HeiGIT
 ```{figure} /fig/ORS_token.png
 ---
 width: 700px
-name: basic classification
+name: generate key
 align: center
 ---
 How to create a token (API key)    Source: HeiGIT
@@ -90,7 +91,7 @@ How to create a token (API key)    Source: HeiGIT
 ```{figure} /fig/modul9_add_api.png
 ---
 width: 350px
-name: basic classification
+name: plugin config
 align: center
 ---
 Where to add API key     Source: HeiGIT
