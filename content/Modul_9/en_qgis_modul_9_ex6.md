@@ -7,16 +7,18 @@ While exploring the general functionality of the ORS plugin, we will specificall
 By the end of this workshop, you will have gained valuable insights and practical skills in using the ORS plugin for QGIS, empowering you to make informed routing decisions and contribute to more efficient disaster management efforts. Let's embark on this journey of exploring disaster-aware routing with the ORS plugin and QGIS!
 
 
-Before we start with the training, make sure to download the datasets here:
+Download all datasets __[here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_9/Modul_9_Exercise_6_Ahrtal_flood_response_logistics/Modul_9_Exercise_6.zip)__. 
+ Save the folder on your computer. 
+ Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects. 
+ Under "data > input" you find the following datasets:
 
-<https://heibox.uni-heidelberg.de/d/6a9bcec375c64839b84f/>
 
--   `nuerburgring.gpkg` Point location of the disaster relief staging area or base camp during the emergency response.
--   `affected_places.gpkg` Communities affected by the flood in the Ahr valley represented as indvidual points.
--   `affected_municipalities.gpkg` Municipal boundaries affected by the flood in the Ahr valley represented as polygons.
--   `affected_roads_buff2m_WGS84.gpkg` Road and bridge infrastructure damaged or destroyed by the flood represented as polygons
--   `physicians.gpkg` Physicians located in and close to the Ahr valley represented as points.
--   `wpop_ahrvalley.tif` Population counts from WorldPop for the Ahr valley. Raster dataset.
+-   `nuerburgring.gpkg` (points): Point location of the disaster relief staging area or base camp during the emergency response.
+-   `affected_places.gpkg` (points): Communities affected by the flood in the Ahr valley represented as indvidual points.
+-   `affected_municipalities.gpkg` (points): Municipal boundaries affected by the flood in the Ahr valley represented as polygons.
+-   `affected_roads_buff2m_WGS84.gpkg` (polygons): Road and bridge infrastructure damaged or destroyed by the flood represented as polygons
+-   `physicians.gpkg` (points): Physicians located in and close to the Ahr valley represented as points.
+-   `wpop_ahrvalley.tif` (raster): Population counts from WorldPop for the Ahr valley. Raster dataset.
 
 ## PART 1 - Single routes with ORS Tools
 
