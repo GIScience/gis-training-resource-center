@@ -47,9 +47,7 @@ In general: about 1:15 h to 1:35 h (depending on number of groups)
 :::{grid-item-card}
 #### Available data
 
-> insert data link
-
-Download the data for this exercise [here]() and unzip the folder
+Download the data for this exercise [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Exercise_2.zip) and unzip the folder
 
 In the data subfolder (\data\input), you will find the data you need to start the exercise.
 
@@ -74,10 +72,10 @@ In the data subfolder (\data\input), you will find the data you need to start th
 
 ### Available Material: 
 
->insert link
+https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Exercise_2.zip
 
 - Introduction Slides with tips and a short basic introduction in the differences of satellite image/OSM
-- 5 prepared cases (with Sketch Maps and Map Quality Check) Link to Data
+- [5 prepared cases](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Exercise_2.zip) (with Sketch Maps and Map Quality Check) 
 
 
 ### During the exercise:  
@@ -122,7 +120,7 @@ In the data subfolder (\data\input), you will find the data you need to start th
 
 | non-georeferenced image | georeferenced image – GeoTIFF |
 | :-------------------- | :----------------- | 
-| Just an image, even if you load it in QGis and give it a coordination system it can´t be located and the image is shown somewhere in the Atlantic. | The file contains information about its coordinate system and its location, so you can combine it other geodata e.g. with GPS data.| 
+| This is just an image, even if you load it in QGis and give it a coordination system it can´t be located and the image is shown somewhere in the Atlantic. | The file contains information about its coordinate system and its location, so you can combine it other geodata e.g. with GPS data.| 
 | ![](/fig/SMT_Map_Not_georefferenced.png) | ![](/fig/SMT_Geofrefference_map.png) | 
 
 ### Map Quality Check
