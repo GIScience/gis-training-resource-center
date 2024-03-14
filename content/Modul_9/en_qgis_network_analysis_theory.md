@@ -1,3 +1,6 @@
+🚧 This training platform and the entire content is under ⚠️construction⚠️ and 
+may not be shared or published! 🚧
+
 (content:references:module9:network-theory)=
 # Spatial Network Analysis Theory
 
@@ -21,6 +24,7 @@ width: 700px
 name: basic classification
 align: center
 ---
+Visualization depicting the conversion process from OpenStreetMap (OSM) geodata to a graph representation. Source: HeiGIT
 ```
 ### Dijkstra Algorithm
 - E. W. Dijkstra
@@ -35,13 +39,14 @@ width: 700px
 name: basic classification
 align: center
 ---
+The GIF illustrates the step-by-step process of determining the shortest path from a source node to all other nodes in a graph. As the algorithm progresses, nodes are visited and the shortest distances from the source node are continuously updated until all accessible nodes have been explored. Source: HeiGIT
 ```
 
 ### Analysis
 You can determine directions or standard routes, which unveil the shortest path between two points. Isochrones offer insight into the area accessible within a specified time or distance threshold. Additionally, generating a matrix enables the assessment of time or distance between predefined locations. Alternatively, graphs facilitate travel optimization by computing the most efficient sequence for visiting a given set of points.
 
 
-### OpenRouteService
+### Openrouteservice
 
 #### General Information
 - Graphhopper based routing machine since 2008
@@ -61,12 +66,12 @@ You can determine directions or standard routes, which unveil the shortest path 
 - **Matrix**: Times / Distances bewteen a set of locations
 - **Optimization**: Best order to visit a set of points
 
->This module provides an accessibility analysis based on OpenRouteService isochrones.
+>This module provides an accessibility analysis based on Openrouteservice isochrones.
 
 #### Isochrones
 - Different profiles: car, pedestrian, bike, heavy goods vehicles (HGV)
 - Avoid areas, avoid, road types
-- Further dynmaic prefernces: green routing, noise aware routing, landmark routing, (heat aware routing)
+- Further dynamic prefernces: green routing, noise aware routing, landmark routing, (heat aware routing)
 - Based on profile and preferences what area is reachable within a given time limit?
 - Determine: reachability, catchment areas
 -  Max. 60minutes on the public API

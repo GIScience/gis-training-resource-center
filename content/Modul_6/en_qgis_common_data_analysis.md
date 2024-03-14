@@ -1,0 +1,7 @@
+# Data Analysis with QGIS
+
+🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+
+__Competences__:
+
+The previous chapter went over a few methods to conduct analyses with geodata. This chapter will present a few data analysis methods and their products, that are common to humanitarian work. It will cover the general idea or workflow, what kind of data is needed to perform the analysis. However, it will not go into a detailed explanation of the workflow step by step. If you are interested in specific workflows step by step, check out [module 7](https://giscience.github.io/gis-training-resource-center/content/Modul_7/en_qgis_automation_theory.html) "Automation with QGIS", [module 8](https://giscience.github.io/gis-training-resource-center/content/Modul_8/en_qgis_remote_sensing_raster_theorie.html) "Remote Sensing and Raster data theory", and [module 9](https://giscience.github.io/gis-training-resource-center/content/Modul_9/en_qgis_network_analysis_theory.html), as well as the chapters covering __GIS in anticipatory action__: [QGIS Trigger Workflow for Somalia](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_drought_trigger_somalia.html), and [Historical Impact Assessment (HIA) for Flood in Sudan](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_historical_impact_assessment_sudan.html).

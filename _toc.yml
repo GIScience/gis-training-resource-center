@@ -138,6 +138,7 @@ parts:
           - file: content/Modul_9/en_qgis_modul_9_ex3.md
           - file: content/Modul_9/en_qgis_modul_9_ex4.md
           - file: content/Modul_9/en_qgis_modul_9_ex5.md
+          - file: content/Modul_9/en_qgis_modul_9_ex6.md
   - caption: GIS in Anticipatory Action
     chapters:
       - file: content/GIS_AA/en_qgis_drought_trigger_somalia.md

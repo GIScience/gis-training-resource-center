@@ -1,7 +1,7 @@
 ## Exercise 1: Disaster effects in different regions of Senegal 
 
 ### Aim of the exercise
-Becoming familiar with different types of non-spatial analysis and geoprocessing tools. Understand the process of discovering relationships and connections between features in spatial data.
+Become familiar with different types of non-spatial analysis and geoprocessing tools. Understand the process of discovering relationships and connections between features in spatial data.
 
 ### Links to Wiki articles
 will be done when Wiki is finished
@@ -25,9 +25,9 @@ The projected coordinate system for Senegal is `EPSG:32628 WGS 84 / UTM zone 28N
 
 1. Load the Senegal administrative boundary layer (`sen_admbnda_adm1_1m_gov_ocha_20190426.shp`), as well as population per subnational unit (`sen_admpop_adm1_2020.csv`) and the Desinventar Sendai data of Senegal (`DI_Stat924.xls`) into QGIS.
 
-2. Make sure to reproject the dataset with the administrative boundaries into UTM zone 28N. See the Wiki entry on __Projections__ for further information.
+2. Make sure to reproject the dataset with the administrative boundaries into UTM zone 28N. See the Wiki entry on [Projections](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html) for further information.
 
-3. Conduct non-spatial joins based on regions listed in two datasets and the PCODE listed in these same sets. See the Wiki entry on __Non-spatial joins__ for further information.
+3. Conduct non-spatial joins based on regions listed in two datasets and the PCODE listed in these same sets. See the Wiki entry on [Non-spatial joins](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html) for further information.
 
 ```{figure} /fig/en_ex1_AT_admin_pop_sen.png
 ---
@@ -38,7 +38,7 @@ Screenshot of the different attribute tables with the corresponding columns high
 ```
 
 4. First, add the total population of each administrative area to the shapefiles. Select the correct column that should be added (Hint: search for the column named `Total`).
-5. Then add the number of directly and indirectly affected people. Also select the correct columns that should be added (Hint: search for the column names `Directly affected` and `Indirectly Affected`).
+5. Then, add the number of directly and indirectly affected people. Also select the correct columns that should be added (Hint: search for the column names `Directly affected` and `Indirectly Affected`).
 
 ::::{tab-set}
 
@@ -64,7 +64,7 @@ Screenshot of the tool Join Attributes by Field Value for the directly and indir
 
 ::::
 
-6. Use the table functions to calculate the area of each region in square kilometers and the density of the population. See the Wiki entry on __Table functions__ for further information.
+6. Use the table functions to calculate the area of each region in square kilometers and the density of the population. See the Wiki entry on [Table functions](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html) for further information.
     - Create a new column/field named `"area_sqkm"` using the field calculator. Ensure decimal numbers are used as the field type. For the calculation use the expression: `$area / (1000 * 1000)`
     - Create another column/field named `"pop_per_sqkm"` with decimal numbers as field type. Use the expression: `"Total" / "area_sqkm"` for the calculation.
 
@@ -94,7 +94,7 @@ Screenshot of the population per square km calculation using the field calculato
 
 ::::
 
-7. We now need to rename the `Indirectly Affected` and `Directly Affected` columns so that they don't contain spaces. This ensures that the field calculator works properly. For this task we will use the tool `Rename field`.
+7. Now, we need to rename the `Indirectly Affected` and `Directly Affected` columns so they don't contain spaces. This ensures that the field calculator works properly. For this task we will use the tool `Rename field`.
 
 ```{figure} /fig/en_ex1_Rename_field.PNG
 ---

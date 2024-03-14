@@ -1,7 +1,7 @@
 # Non-Spatial Geodataprocessing
 
 #### Introduction:
-Non-spatial geodataprocessing in QGIS refers to the manipulation, subsetting and analysis of attribute data within a GIS environment without directly involving spatial components. It involves operations on the non-geometric attributes of geospatial datasets. This can include data cleaning, transformation, enrichment and analysis based on the associated attribute information, such as population statistics, land use classifications or economic indicators. Non-spatial geodataprocessing can be used to perform calculations, generate statistics and gain insights into the non-spatial aspects of geospatial datasets. QGIS offers a variety of tools for non-spatial geodataprocessing to assist users in managing and analyzing attribute data effectively.
+Non-spatial geodataprocessing in QGIS refers to the manipulation, subsetting and analysis of attribute data within a GIS environment without directly involving spatial components. It involves operations on the __non-geometric attributes__ of geospatial datasets. This can include data cleaning, transformation, enrichment and analysis based on the associated attribute information, such as population statistics, land use classifications or economic indicators. Non-spatial geodataprocessing can be used to perform calculations, generate statistics and gain insights into the non-spatial aspects of geospatial datasets. QGIS offers a variety of tools for non-spatial geodataprocessing to assist users in managing and analyzing attribute data effectively.
 
 This segment of Module 5 will start with the introduction of table functions. It will then progress into techniques for querying data, ultimately introducing the important concept of non-spatial joins.
 
@@ -17,7 +17,7 @@ Screenshot of an attribute table for QGIS version 3.28.4
 For a comprehensive overview on the attribute table's functionality and its purpose, you're invited to explore the [Wiki](/content/Wiki/en_qgis_attribute_table_wiki.md) article on it.
 
 ### Add field
-The information within a vector layer can be accessed through its attribute table, and it can be enhanced by introducing new fields to this table. These additional fields may be derived from calculations, as exemplified in the following case where population density is computed to provide deeper insights into spatial population distribution.
+The information within a vector layer can be accessed through its __attribute table__, and it can be enhanced by __introducing new fields__ to this table. These additional fields may be derived from calculations, as exemplified in the following case, where population density is computed to provide deeper insights into spatial population distribution.
 
 ```{Attention}
 The selection of the appropriate data type should align with the information being added to the new attribute field. Please keep this in mind while watching the example video.
@@ -48,8 +48,9 @@ It is also possible to __delete fields__ from the attribute table. A commonly us
 An important practice is to calculate the attribute values for a field, e.g., based on the values of other fields. In QGIS, you can __create a new field or update an existing field__.
 
 ```{Note}
-It is necessary to __check if the data type of the field__ (new or updated) __and your calculation match__. For example: if you are calculating a ratio (e.g. density), the field should not be of type integer but rather of type decimal number.
+It is necessary to __check if the data type of the field__ (new or updated) __and your calculation match__. For example, if you are calculating a ratio (e.g. density), the field should not be of type integer but rather of type decimal number.
 ```
+
 An example could be to calculate the population density based on the already existing fields Population and Area.
 
 A very important tool for such calculations is the __Field Calculator__. It allows you to __perform calculations based on existing attribute values or defined functions__, for example, to calculate the length or area of a geometry feature or in the given example, could be used to calculate the population density based on the already existing fields Population and Area. The results of these calculations can be written into a new field or update an existing field.
@@ -100,7 +101,7 @@ For greater precision in these calculations, statistics by categories offer more
 ````
 
 ## Non-spatial queries
-In GIS you can __query__ (filter) data based on specific attribute information. Once the filtering is successful, only the desired features that __correspond__ to the chosen attribute are displayed. Data filtering is a valuable technique for creating __subsets__ of features that can be exported as a new layer.
+In GIS, you can __query__ (filter) data based on specific attribute information. Once the filtering is successful, only the desired features that __correspond__ to the chosen attribute are displayed. Data filtering is a valuable technique for creating __subsets__ of features that can be exported as a new layer.
 
 ### Manual selection
 It is possible to manually select specific rows by clicking on the number on the left side of it. This can be easily used to select a small number of rows. If they are selected successfully, they will appear in __yellow__.
@@ -194,7 +195,7 @@ Screenshot of the Query Builder
 2. The __Values__ frame lists the values of the currently selected field. 
     - To list __all unique values__ of a field, click the __All__ button.
     - To list the __first 25__ unique values of the column, click the __Sample__ button.
-    - To add a value to the expression window, double click it in the Values list. You can use the __search box__ at the top of the Values frame to easily browse and find attribute values in the list.
+    - To add a value to the expression window, double click it in the Values list. You can use the __search box__ at the top of the "Values"-panel to easily browse and find attribute values in the list.
 3. The __Operators__ section contains all usable operators. To add an operator, click the appropriate button.
 4. The __Test__ button helps you to check your query and __displays a message box with the number of features__ satisfying the current query. 
 5. Use the __Clear__ button to revert the layer to its original state.
@@ -210,7 +211,7 @@ In this short video, you'll discover the location of the query builder and learn
 ````
 
 ## Non-spatial joins
-A lot of analysis can be done with just a single layer. But sometimes the necessary information we need for our analysis is __split across__ different datasets/layers. With QGIS, these layers can be __combined__ to perform the analysis we want. The simplest way to combine layers is via an __attribute join__. This operation looks up information from a second data source based on a __shared attribute value__. This value functions as a common unique identifier, also known as an ID, UID or key.
+A lot of analysis can be done with just a single layer. But, sometimes, the necessary information we need for our analysis is __split across__ different datasets/layers. With QGIS, these layers can be __combined__ to perform the analysis we want. The simplest way to combine layers is via an __attribute join__. This operation looks up information from a second data source based on a __shared attribute value__. This value functions as a common unique identifier, also known as an ID, UID or key.
 
 In QGIS the tool __Join attributes by field value__ is often used for such operations:
 

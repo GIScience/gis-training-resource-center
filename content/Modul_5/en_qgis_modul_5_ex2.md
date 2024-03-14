@@ -12,10 +12,10 @@ Within this exercise, you will build a simplified version of the monitoring and 
 
 ## Background 
 
-Setting triggers is one of the cornerstones of the Forecast-based Financing system. For a National Society to have access to automatically released funding for their early actions, their Early Action Protocol needs to clearly define where and when funds will be allocated, and assistance will be provided. In FbF, this is decided according to specific threshold values, so-called triggers, based on weather and climate forecasts, which are defined for each region (see [FbF Manual](https://manual.forecast-based-financing.org/en/chapter/set-the-trigger/)).
+Setting triggers is one of the cornerstones of the __Forecast-based Financing system__. For a National Society to have access to automatically released funding for their early actions, their Early Action Protocol needs to clearly define where and when funds will be allocated, and assistance will be provided. In FbF, this is decided according to specific threshold values, so-called __triggers__, based on weather and climate forecasts, which are defined for each region (see [FbF Manual](https://manual.forecast-based-financing.org/en/chapter/set-the-trigger/)).
 
-For the development of the Somaliland-Somalia Drought Trigger mechanism various datasources were thoroughly analysed.
-Finally, the main parameters chosen for the trigger based on the historical impact assessment are the twelve month Standard Precipitation Index (SPI12) and the IPC acute food insecurity classification. The exact data used are the documented and forecasted SPI12 (source: ICPAC) and the forecasted IPC classification (8 month forecast, source: FEWSNET), that is used to calculate a population weighted index of food insecurity. The trigger thresholds for both components were optimised towards the most favourable proportion of hit rate and false alarm rate. The emerging thresholds were <-1 for the SPI12 and >=0,7 for the IPC based index. The triggering is done on district level and per district just one trigger initiation per year is possible.
+For the development of the Somaliland-Somalia Drought Trigger mechanism, various datasources were thoroughly analysed.
+Finally, the main parameters chosen for the trigger based on the __historical impact assessment__ are the twelve month Standard Precipitation Index (SPI12) and the IPC acute food insecurity classification. The exact data used are the documented and forecasted SPI12 (source: ICPAC) and the forecasted IPC classification (8 month forecast, source: FEWSNET), that is used to calculate a population weighted index of food insecurity. The trigger thresholds for both components were optimised towards the most favourable proportion of hit rate and false alarm rate. The emerging thresholds were <-1 for the SPI12 and >=0,7 for the IPC based index. The triggering is done on district level and per district just one trigger initiation per year is possible.
 
 ```{admonition} Trigger Statement
 When ICPAC issues a SPI-12 forecast of less than -1 for a district AND the current FEWSNET food insecurity projection reaches at least 0.7 in its 
@@ -45,7 +45,7 @@ The drought trigger mechanism is based on two variable monitoring datasets. One 
 
 #### What is IPC Food Security Projection Data?
  
-The IPC is a commonly acceepted measure and classification to describe the current and anticipated severity of acute food insecurity. 
+The IPC is a commonly accepted measure and classification to describe the current and anticipated severity of acute food insecurity. 
 The classification is based on a convergence of available data and evidence, including indicators related to food consumption, livelihoods, malnutrition and mortality. Food Insecurity is one of the prioritized impacts of droughts in Somalia which is why it is also used for the triggering mechanism, in a population-weighted index. 
 
 Three times a year (February, June, and October) FEWSNET estimates most likely IPC classes for the upcoming 8 month (near-term and mid-term projection), available from 2019-current. The near-term projection is called ML1 and is a projection for the upcoming 4 month, the mid-term projection is called ML2 and projects the IPC classes for the 4 subsequent months. For the triggering ML1 (near-term) as well as ML2 (mid-term) projections will be considered. 
@@ -87,9 +87,9 @@ Some of the images and videos are not 100 % accurate for this particular exercis
 
 ### Step 1: Setting up folder structure 
 
-__Purpose:__ In this step we set up the correct folder structure to make the analysis easier and to ensure consitent results. 
+__Purpose:__ In this step, we set up the correct folder structure to make the analysis easier and to ensure consitent results. 
 
-__Tool:__ No special tools or programs are needed
+__Tool:__ No special tools or programs are needed.
 
 ``````{list-table}
 :header-rows: 1
@@ -111,7 +111,7 @@ __Tool:__ No special tools or programs are needed
     ```
 ``````
 
-The Video below shows the process for setting up the folder for decmber 2023.
+The Video below shows the process for setting up the folder for december 2023.
 
 ```{dropdown} Video: Setting up folder structure 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_folder_setup.mp4"></video>
@@ -125,20 +125,20 @@ __Purpose:__
 __Tool:__ Interent Browser
 
 The IPC data will be pulled from the FEWSNET website. FEWS NET publishes IPC data on its website. 
-The main data publications plus the updates of the IPC data amount to the publication of new data almost monthly.
+The main data publications, as well as the updates of the IPC data, amount to the publication of new data almost monthly.
 
 ### IPC Data
 
 The IPC Projection data is provided and regulary updated on the [FEWSNET Website](https://fews.net/).
-On the website you will have to click on Somalia to acess the data. Alternativley, you can  navigate through `Data` -> `Acute Food Insecurity Data` and enter „Somalia". In the menu you will see different dataformats for different timestamps. Once you find out which timestamp is the most current one find the ZIP download. We need the data in shapefile (.shp) format, which is only included in the ZIP file and not provided as single download file. 
+On the website, you will have to click on Somalia to acess the data. Alternativley, you can  navigate through `Data` -> `Acute Food Insecurity Data` and enter „Somalia". In the menu you will see different dataformats for different timestamps. Once you find out which timestamp is the most current one, find the ZIP download. We need the data in shapefile (.shp) format, which is only included in the ZIP file and not provided as single download file. 
 
 
 ```{Warning}
-The FEWSNET pages change often !
+The FEWSNET pages change often!
 ```
 
 1. Go to [FEWSNET Website](https://fews.net/). Click on `Data` -> `Acute Food Insecurity`.
-2. Scroll down. In `Geograhic Area` typ in “Somalia” and click `Apply`
+2. Scroll down. In `Geograhic Area`, type in “Somalia” and click `Apply`
 3. Choose the newest dataset.
 
 ```{figure} /fig/IPC_Projections_website.png
@@ -168,7 +168,7 @@ align: center
 ```
 
 ```{tip}
-On the [main FEWSNET page](https://fews.net/) you can also sign up for information on latest updates via email. For this option scroll down to the end of the page and click on `Sign up for Emails`. You will then get the option to choose updates only for Somalia.
+On the [main FEWSNET page](https://fews.net/), you can also sign up for information on latest updates via email. For this option scroll down to the end of the page and click on `Sign up for Emails`. You will get the option to choose updates only for Somalia.
 
 ```{figure} /fig/IPC_Newsletter.png
 ---
@@ -188,7 +188,7 @@ __Purpose:__ In this step, all the data needed will be loaded into QGIS.
 __Tool:__ No specific tools are needed, only QGIS.
 
 1. Open QGIS and create a [new project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`
-2. Once the project is created save the project in the folder you created in Step 1 (e.g. 2022_05). To do that click on `Project` -> `Save as` and navigate to the folder. Give the project the same name as the folder you created (e.g. 2022_05). Then click `Save`
+2. Once the project is created, save the project in the folder you created in Step 1 (e.g. 2022_05). To do that, click on `Project` -> `Save as` and navigate to the folder. Give the project the same name as the folder you created (e.g. 2022_05). Then click `Save`
 3. Load all input data in QGIS by [drag and drop](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-raster-data-via-drag-and-drop). Click on `Project` -> `Save` 
   * From the folder you created in step 1
     * ML1
@@ -211,7 +211,7 @@ __Tool:__ [`Intersection`](https://giscience.github.io/gis-training-resource-cen
 :widths: 20 25
 
 * - Instruction
-  - Intersection
+  - Screenshot of the Intersection window
 * - 1. Click on `Vector` -> `Geoprocessing Tools` -> [`Intersection`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#intersection)
     2. `Input Layer`: ML 1 
     3. `Overlay layer`: district_pop_sum
@@ -227,7 +227,7 @@ __Tool:__ [`Intersection`](https://giscience.github.io/gis-training-resource-cen
     ```
 ``````
 
-__Result:__ After doing this for ML1 you should have one polygon layer,  containing all columns of ML1 and district_pop_sum.
+__Result:__ After doing this for ML1, you should have one polygon layer containing all columns of ML1 and district_pop_sum.
 
 ```{Note}
 The resulting layer can have more rows than the original layers.
@@ -249,13 +249,13 @@ __Tool:__  [`Zonal Statistics`](https://giscience.github.io/gis-training-resourc
 :widths: 20 25
 
 * - Instruction
-  - Zonal Statistics
+  - Screenshot of the Zonal Statistics window
 * - 1.  In the `Toolbox` -> Search for [`Zonal Statistics`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics)
-    * Tip: If the `Toolbox` is not opne click `Processing`-> `Toolbox`
+    * Tip: If the `Toolbox` is not open, click `Processing`-> `Toolbox`
     2. `Input Layer`: "ML1_Intersection" 
     3. `Raster Layer`: "som_ppp_2020_UNadj_constrained.tif"
     4. Statistics to calculate: Only `Sum`
-    5.  Under `Zonal Statistics` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "ML1_zonal_statistic" and click `Save`
+    5.  Under `Zonal Statistics`, click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "ML1_zonal_statistic" and click `Save`
     5. Click `Run
   -
     ```{figure} /fig/SRCS_Trigger_step_5_zonal_statistic.png
@@ -267,7 +267,7 @@ __Tool:__  [`Zonal Statistics`](https://giscience.github.io/gis-training-resourc
     ```
 ``````
 
-__Result:__ The result should be the “ML1_zonal_statistic” a polygon layer. This layer should have the same columns in the attribute table like ML1_Intersection __plus__ the column “_sum”, which is the number of people living in the single parts of the polygons.
+__Result:__ The result should be the “ML1_zonal_statistic” as a polygon layer. This layer should have the same columns in the attribute table like ML1_Intersection __plus__ the column “_sum”, which is the number of people living in the single parts of the polygons.
 
 
 ```{dropdown} Video:  Calculation of Population per Intersection Polygon
@@ -284,10 +284,10 @@ The IPC Index represents low-population districts equal to high-population distr
 
 ```{dropdown}  IPC-Population Weighted Index
 
-To better operationalise the IPC data a simple population-weigthed index was developed. Relative population numbers are weighted based on the respective IPC class they fallin, in order to give the amount of people in a certain IPC class the importance instead of the IPC class only.
+To better operationalise the IPC data, a simple population-weigthed index was developed. Relative population numbers are weighted based on the respective IPC class they fallin, in order to give the amount of people in a certain IPC class the importance instead of the IPC class only.
 Furthermore, population located in a higher IPC class is more important than population located in a lower class. The index is calculated as follows:
 
-$ IPC\ Index =  Weights \times \frac{District\ Pop\ per\ IPC\ Phase}{Total\ District\ Pop}$
+`$ IPC\ Index =  Weights \times \frac{District\ Pop\ per\ IPC\ Phase}{Total\ District\ Pop}$`
 
 Where the weights are defined as:
 
@@ -321,20 +321,20 @@ ELSE "_sum"
 
 END
 ```
-6.  When you are down click ![](/fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by again clicking on ![](/fig/mActionToggleEditing.png)([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)). 
+6.  When you are done, click ![](/fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by again clicking on ![](/fig/mActionToggleEditing.png)([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)). 
 
 ## Step 7: Calculation of Population Proportion per Intersection Polygon
 
-__Purpose:__ In this step we calculating the [IPC-Population Weighted Index](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_drought_trigger_somalia.html#ipc-population-weighted-index) for every small part of the polygon layer. 
+__Purpose:__ In this step, we calculating the [IPC-Population Weighted Index](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_drought_trigger_somalia.html#ipc-population-weighted-index) for every small part of the polygon layer. 
 
 
 __Tool:__[`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field)
 
-1. Right-click on "ML1_zonal_statistic" layer -> “Attribute Table”-> click on  [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field) ![](/fig/mActionCalculateField.png)to open the field calculator
+1. Right-click on "ML1_zonal_statistic" layer -> “Attribute Table”-> click on [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field) ![](/fig/mActionCalculateField.png) to open the field calculator
 2. Check `Create new field`
 3. `Output field name`: Name the new column “Index_per_IPCPolygon_ML1”
 4. `Result field type`: Decimal number (real)
-5. Add the code into the `Expression` field
+5. Add the following code into the `Expression` field
 ```md
 "pop_sum_weighted"/"districtpo"
 ```
@@ -349,7 +349,7 @@ align: center
 ---
 ```
 
-__Result:__ The layer “ML1_zonal_statistic”  should now have the column “Index_per_IPCPolygon_ML1”. The numbers in this column have to be smaller than in the “district” column.
+__Result:__ The layer “ML1_zonal_statistic” should now have the column “Index_per_IPCPolygon_ML1”. The numbers in this column have to be smaller than in the “district” column.
 
 
 ```{dropdown} Video: Calculation of Population Proportion per Intersection Polygon
@@ -369,13 +369,13 @@ __Tool:__ `Join attribute by location (summary)`
 * - Instruction
   - Join attribute by location (summary)
 * - 1. In the `Toolbox`-> Search for `Join attribute by location (summary)`
-      * Tip: If the `Toolbox` is not opne click `Processing`-> `Toolbox` 
+      * Tip: If the `Toolbox` is not open, click `Processing`-> `Toolbox` 
     2. `Input Layer`: Select your “district_pop_som” layer
     3. `Input Layer 2`: Select “ML1_zonal_statistic"
     4. `Geometric predicate`: Select “Intersection”
     5. `Field to summarise`: Select “Index_per_IPCPolygon_ML1” 
-    6. `Summaries to calculate`: Chose only the option “mean”
-    7. Under `Join Layer` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "ML1_IPC_Index" and click `Save`
+    6. `Summaries to calculate`: Only check the option “mean”
+    7. Under `Join Layer`, click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "ML1_IPC_Index" and click `Save`
     8. Click `Run`
   -
     ```{figure} /fig/Exercise_trigger_join_attributes_location.png
@@ -387,14 +387,14 @@ __Tool:__ `Join attribute by location (summary)`
     ```
 ``````
 
-__Result:__ As a result, your layer "ML1_IPC_Index"  should have the column “Index_per_IPCPolygon_ML1_mean”. Furthermore, the number of rows should be the exact number of districts in Somalia and the polygons should have the exact shape of the districts.
+__Result:__ As a result, your layer "ML1_IPC_Index" should have the column “Index_per_IPCPolygon_ML1_mean”. Furthermore, the number of rows should be the exact number of districts in Somalia and the polygons should have the exact shape of the districts.
 
 ```{dropdown} Video: Calculate IPC Index per District
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_9_join_location.mp4"></video>
 ```
 ### Step 9: Evaluate Trigger Activation 
 
-__Purpose:__ The purpose of this step is to gain a quick overview of possible trigger activation without having to revise the actual data. Instead we will have a binary column with trigger = yes or trigger=no values.
+__Purpose:__ The purpose of this step is to gain a quick overview of possible trigger activation without having to revise the actual data. Instead, we will have a binary column with trigger = yes or trigger=no values.
 
 __Tool:__ [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field)
 
@@ -521,7 +521,7 @@ __Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-cent
 2. Open a new print layout by clicking on `Project` -> `New Print Layout` -> enter the name of your current Project e.g "2024_01".
 3. Go the the `Modul_5_Exercise2_Drought_Monitoring_Trigger` folder and drag and drop the file `Trigger_activation_Intervention_map_ex.qpt` in the print layout
 4. Change the date to the current date by clicking on "Further map info…" in the items panel. Click on the `Item Properties` tab and scroll down. Here you can change the date in the `Main Properties` field.
-5. If necessary, adjust the lgend by clicking on the legend in the  `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there check if you have to open the dropdown. Make sure `Auto update` is not checked.
+5. If necessary, adjust the legend by clicking on the legend in the  `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there check if you have to open the dropdown. Make sure `Auto update` is not checked.
     * Remove all itemes in the legend be clicking on the item and then on the red minus icon below.
     * Add __Trigger_activation__ to the legend by clicking on the green plus and click on the layer and click `ok`
     * Add __Som_admin1_regions_UNDP__ to the legend by clicking on the green plus and click on the layer and click `ok`
@@ -549,13 +549,13 @@ __Purpose:__ Export the designed and finalized map layout in order tp print it a
 
 __Tool:__ [Print Layout](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
 
-When you have finished the design of you map you can export it as pdf or image file in different datafromats.
+When you have finished the design of you map, you can export it as pdf or image file in different datafromats.
 
 __Export as Image__
 
 1. In the print layout click on `Layer` -> `Export as Image`
 2. Chose the __Result__ folder in the folder you have created in step 1. Give the file the name of the project e.g 2022_04
-3.  Click on `Save`
+3. Click on `Save`
 4. The window "Image Export Options" will appear. Click `Save`
 Now the image can be found in the result folder in the folder you created in Step 1
 
