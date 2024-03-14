@@ -1,3 +1,5 @@
+🚧 This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+
 # Task 4: Something something capacity?
 
 ## STEP 1: Data Preparation

@@ -1,3 +1,5 @@
+🚧 This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+
 # Task 5: Identifying critical road segments
 
 For this task, we imagine that the city of Heidelberg is partially affected by flooding of the Neckar. Such scenarios are becoming increasingly likely in the future due to climate change. The flood has a major impact on the city's infrastructure. In this exercise, you will use QGIS to analyze the impact of the flood by determining the betweenness centrality of multiple nodes in the city before and after the flooding event.

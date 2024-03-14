@@ -10,7 +10,7 @@ Use the following files:
 * Walking.tif
 * population.tif
 
-### STEP 1: Network - Isochrones
+## STEP 1: Network - Isochrones
 We start with the isochrones gain. This time for a whole country - Rwanda. Use the layer `rwa_healthcare` as input point layer and 5, 10 and 60 minutes as ranges.
 
 Click in the toolbar on the ORS Tools plugin Icon <img src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/icon_ORS_tools_plugin.png" alt="Icon" width="20" height="20">. Click on `Batch Jobs` -> `Isochrones from Layer`.
@@ -27,7 +27,7 @@ Leave all settings at default except:
 :::
 
 
-### STEP 2: Raster - accumulated cost (Requires SAGA)
+## STEP 2: Raster - accumulated cost (Requires SAGA)
 
 Open the `Processing Toolbox` and scroll down to `SAGA` choose `Raster Analysis` and then `Accumulated Cost` or enter "Accumulated Cost" in the search bar. 
 Leave all settings at default except:
