@@ -285,9 +285,9 @@ characteristic:
 
 | Characteristic  | Mercator (cylindrical) | Lambert cylindrical | Albers conic |
 | :----------- |:--------------------: | :-----------------: | :----------: |
-| Shape |- [x]             | - [ ]          | - [x]    |
-| Rotation |- [x]           | - [x]      | - [ ]  |
-| Area |- [ ]              | - [x]            | - [x]    |
+| Shape | [x]             |  [ ]          |  [x]    |
+| Rotation | [x]           |  [x]      |  [ ]  |
+| Area | [ ]              |  [x]            |  [x]    |
 
 <!-- I don't fully understand this?-->
 
