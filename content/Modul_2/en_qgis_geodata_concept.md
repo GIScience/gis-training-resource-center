@@ -239,7 +239,7 @@ correctly: a road that crosses another road at a right angle, will be displayed 
 This is especially useful when navigating. The shape of an area remains correct, since the angles between each line 
 stays true. However, if you increase the scale of the map, the size and distances get distorted dramatically (see 
 figure below). Furthermore, the further away from the equator you get, the more distortion you get. You can check 
-the true size in comparison to different placements on the map on this [website](https://www.thetruesize.com). A 
+the true size in comparison to different placements on the map on [TheTrueSize.com website](https://www.thetruesize.com). A 
 popular example is Greenland in comparison with Africa, which seem on the map to be about the same size, but in 
 reality Africa is a lot bigger.
 
