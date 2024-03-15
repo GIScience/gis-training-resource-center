@@ -75,7 +75,6 @@ parts:
     chapters:
       - file: content/Modul_3/en_qgis_digitalisation.md
         sections:
-          - file: content/Modul_3/en_qgis_digitalisation_ex1.md
           - file: content/Modul_3/en_qgis_digitalisation_ex2.md
       - file: content/Modul_3/en_qgis_data_classification.md
         sections:

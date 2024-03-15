@@ -1,54 +1,123 @@
-# Digitization Exercise 2
+# Digitization Exercise 1: Access to financial institutions 
 
 ## Aim of the exercise:
 
-In this exercise, you will learn how to digitise point, line, and polygon layer of a position or feature in a settlements by creating new datasets. Additionally, you will learn how to name the simple layers created.
+In this exercise, you will learn how to digitise points, lines, and polygons of features in settlements by creating new datasets. 
 
-## How to create a point layer?
-There is a new policy of Nigerian Naira Notes Redesign in Nigeria. The new policy became effective on the 26th of October, 2022 and it has caused many problems for the people of Nigeria not only in the business or health sector but in all works of life. See the article about how businesses groan as cash crunch hits Banks in Abuja, the capital city of Nigeria. [No cash article in Abuja](https://businessday.ng/news/article/business-groan-as-cash-crunch-hits-banks-in-abuja/).
+```{Attention}
+Try to always use the standard folder structure. You can find a template [__here__](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure).
+```
 
-Our goal is to create a point layers at the three Banks closed to each other in the Central Business District (CBD) of Abuja in Nigeria.This is to let people easily identify the banks in the CBD of Abuja for their transaction purposes. 
+### Relevant Wiki Articles
+
+* [QGIS Interface](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
+* [Types of Geodata](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_types_wiki.html)
+* [Digitization](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html)
+* [Basemaps](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html)
+
+
+## Background: Cash crunch in Abuja
+In 2022 there was a cash shortage in Nigeria. Especially small businesses heavily rely on cash transactions and cash-based services. This let to a cash crunch in Abuja, the capital city of Nigeria. [No cash article in Abuja](https://businessday.ng/news/article/business-groan-as-cash-crunch-hits-banks-in-abuja/). 
+
+## Task: Map the banks
+
+Our goal is to create a point layers at the three Banks closed to each other in the Central Business District (CBD) of Abuja in Nigeria. This is to let people easily identify the banks in the CBD of Abuja for their transaction purposes. 
 
 To this end, we will visualize the digitisation of the First Bank, Bank of Industrie Building and Zenith Bank Abuja. 
 
 1.  Add the OSM as a base map. To add the OSM as a base map click on `Layer` -> `Add Layer` -> `Add XYZ Layer…`. Choose `OpenStreetMap` and click `Add`. 
-    Arrange your layer in the `Layer Panel` so the OSM is at the bottom ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html))
+Arrange your layer in the `Layer Panel` so the OSM is at the bottom ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html))
 
-    ```{Tip}
-    You can not interact with a base map!
-    ```
+```{Tip}
+You can not interact with a base map!
+```
 2. To add the plugin `OSM Place Search`, click on `Plugins` -> `Manage and Install Plugins…` -> `All` and search for `OSM Place Search`. Once you have found it click on it and click `Install Plugin`. You can open the `OSM Place Search Panel` like every other panel by clicking on `View` -> `Panels` and checking `OSM Place Search Panel`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html#installation-of-plugins)).
+3. In the panel, search "Abuja Central Business Distric" via the OSM Place Search in QGIS and choose Abuja Municipality Area Council, City. Zoom to the Central Business District. Here we want to digitise the location of banks. But first wee need to create a new point layer
+To do that:
+    1. Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#create-a-new-layer)) 
+    - Under `Database` click on ![](/fig/Three_points.png) and navigate to `temp` folder. Give the new dataset the name “Abuja_bank_point”. Click `Save`.
+    - `Geometry type`: Select `Point`
+    - Under `Additional dimension` you should always make sure that you check `None`. 
+    - Select the coordinate reference system (CRS) "EPSG:4326-WGS 84". By default, the QGIS selects the project CRS. 
+    - Under `New Field` you can add columns to the new layer. Add the column “Name”.
+        * `Name` = “Name”
+        * `Type`: Select `Text Data`
+        * Click on `Add to Fields List` ![](/fig/mActionNewAttribute.png) to add the new column to the `Fields List`.
+        * Click `OK`.
+    * Your new layer will appear in the `Layer Panel`
+```{figure} /fig/new_layer_abuja.png
 
+---
+height: 400px
+name: New point layer Abuja
+align: center
+---
+Create new point layer
+```
 
-3. In the panel, search Abuja via the OSM Place Search in QGIS and choose Abuja Municipality Area council, City. Zoom to the Central Business District and create a point on each of the three banks in the CBD of Abuja.
-
-4. See [wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#add-geometries-to-a-layer) for a guide.
+4. Now you can create a point for each of the three banks in the area [wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#add-geometries-to-a-layer). Currently the new “Abuja_bank_point” is empty. To add features we can use the `Digitizing Toolbar`. `. If you can not see the toolbar View` -> `Toolbars` and check Digitizing Toolbar` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#creation-of-point-data)).  ![](/fig/Digitizing_Toolbar.png) 
+    1. Select the point layer “Abuja_bank_point” in the Layer panel. Go to the digitalisation toolbar and click on![](/fig/mActionToggleEditing.png). No the layer is in the editing mode .
+    2. Search for banks on the map or use the OSMPlace search panel. Once you have found one, click on ![](/fig/mActionCapturePoint.png). Left-click on the feature you want to digitalise.
+    3. Once you click, a window will appear "Abuja_bank_point". Here you can add the name of the bank.
+    4. Repeat the same process for as many banks as you can find.
+    5. Once you are done with digitizing click on ![](/fig/mActionSaveEdits.png) to save your edits.
+    6. Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
 
 This is how your result should look like. ![](/fig/Abuja_Banks_Point_Layers.png)
 
-## How to create a line layer?
-A business man named Mr John who droves all the way from the North of Herbert Macauley Way in the CBD of Abuja to do transaction at the Bank of Indusrie on Monday morning. Unfortunately, he found out that the network server of the bank is down and needed to proceed to the Zenith Bank as the only functioning Bank. He later discovered that there is an heavy road blocked at the junction of Indepence avenue and Tafawa Balewa way due to road construction. 
+## Map road blocs
 
-'Please' create a road line layer for Mr John that will allow him to get to Zenith Bank easily.
+There is some reliable information that there is a roadblock due to construction at the junction of „Independent Avenue“ and „Tafawa Balewa Way“. To visualize this on our map we want to create a polygon of this roadblock.  The Polygon should cover the whole junction.
 
-1.  See [wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#creation-of-line-data) for a guide.
+1. To do that we need again a new layer. In this case a polygon layer. The creation of that is nearly the same as for the point.
+        1. Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#create-a-new-layer)) 
+    1. Under `Database` click on ![](/fig/Three_points.png) and navigate to `temp` folder. Give the new dataset the name “Abuja_roadbloc_polygon”. Click `Save`.
+    2. `Geometry type`: Select `Polygon
+    3. Under `Additional dimension` you should always make sure that you check `None`. 
+    4. Select the coordinate reference system (CRS) "EPSG:4326-WGS 84". By default, the QGIS selects the project CRS. 
+    5. Under `New Field` you can add columns to the new layer. Add the column “Roadblock_type”.
+        * `Name` = “Roadblock_type”
+        * `Type`: Select `Text Data`
+        * Click on `Add to Fields List` ![](/fig/mActionNewAttribute.png) to add the new column to the `Fields List`.
+        * Click `OK`.
+    6. Your new layer will appear in the `Layer Panel`
+2. To digitise this area click on your new „Abuja_roadbloc_polygon“ layer [Wiki Video](file:///C:/HeiGIT/RCRC_GIS_Training/gis-training-resource-center/_build/html/content/Wiki/en_qgis_digitalization_wiki.html#creation-of-polygon-data). 
+    - Clicking on ![](/fig/mActionToggleEditing.png) start `edit mode` and Add Feature: `Capture Polygone`![](/fig/mActionCapturePolygon.png)|. 
+    - Draw geometries and enter `feature attributes`,"Roadblock_type" = "Construction_site".
+    - Save edits ![](/fig/mActionSaveEdits.png) , exit `edit mode`. 
 
-This is how your result should look like.![](/fig/Abuja_Banks_Lines_Layers.png)
+## Map the connection routs
+A business man droves all the way from the North of Herbert Macauley Way in the Central Business Distric of Abuja to do transaction at the Bank of Indusrie on Monday morning. Unfortunately, he found out that the network server of the bank is down and needed to proceed to the Zenith Bank as the only functioning Bank. He later discovered that there is an heavy road blocked at the junction of Indepence avenue and Tafawa Balewa way due to road construction. 
 
-## How to create a polygon layer?
+Create a road line layer that will allow to get to Zenith Bank easily.
 
-Now that you have created both point and line data. It is time to create a polygon layer.
+1. To do that we need again a new layer. In this case a line layer. The creation of that is nearly the same as for the point.
+        1. Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#create-a-new-layer)) 
+    - Under `Database` click on ![](/fig/Three_points.png) and navigate to `temp` folder. Give the new dataset the name “Abuja_bank_road_connection_line”. Click `Save`.
+    - `Geometry type`: Select `Line`
+    - Under `Additional dimension` you should always make sure that you check `None`. 
+    - Select the coordinate reference system (CRS) "EPSG:4326-WGS 84". By default, the QGIS selects the project CRS. 
+    - Under `New Field` you can add columns to the new layer. Add the column “Road_typ”.
+        * `Name` = “Road_typ”
+        * `Type`: Select `Text Data`
+        * Click on `Add to Fields List` ![](/fig/mActionNewAttribute.png) to add the new column to the `Fields List`.
+        * Click `OK`.
+    * Your new layer will appear in the `Layer Panel`
+2. Select the line layer “Abuja_bank_road_connection_line” to add data to in the Layer panel [Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#creation-of-line-data). 
+    1. Go to the digitalisation toolbar and click on![](/fig/mActionToggleEditing.png). No the layer is in the editing mode.
+    2.	Click on ![](/fig/mActionCaptureLine.png). 
+    3.	To digitalise line features, click along the line. When you are done, right-click on the last point of the line to finish the feature.
+    4.	Once you click, a window will appear "Abuja_bank_road_connection_line- Feature Attribute". Add the road typ which is "Secondary_road" 
+    5.	Once you are done with digitalisation ![](/fig/mActionSaveEdits.png) to save your edits.
+    6.	Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
+
+```{figure} /fig/Abuja_Banks_final.png
+---
+height: 400px
+name: Abuja final
+align: center
+---
+Exercise result example
+```
 
 
-Create a polygon layer covering the entire area of the First bank, Zenith bank and Industrie bank in the CBD of Abuja. 
-
-
-1. See [wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#creation-of-polygon-data) for a guide.
-
-2.  Follow this step if you want to show the name of the data created.![](/fig/Show_label_name.png)
-
-
-3. Right click on the data created on the layer panel, then click on show labels and the name of the data created will be showned either point, line or polygon data.
-
-
-This is how your result should look like. ![](/fig/Abuja_Banks_Polygons_Layers.png)

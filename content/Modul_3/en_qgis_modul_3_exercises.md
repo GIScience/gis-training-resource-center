@@ -4,6 +4,13 @@ __🔙[Back to Homepage](/content/intro.md)__
 
 These exercises touch on all the content of Modul 3- Basic GIS operations.  
 
+## Geodata digitalisation
+
+* __[Digitization Exercise 1: Access to financial institutions ](/content/Modul_3/en_qgis_digitalisation_ex2.md):__ In this exercise, you will learn how to digitise points, lines, and polygons of features in settlements by creating new datasets. 
+    * Digitisation of points
+    * Digitisation of lines
+    * Digitisation of polygons
+
 ## Geodata Classification
 
 * __[Overview map of the prevalence of stunting in Sierra Leone](/content/Modul_3/en_qgis_classification_ex1.md):__ This exercise aims to create an overview map of the prevalence of stunting in Sierra Leone at district level. To do this, we will visualise both the prevalence of stunting and key infrastructure such as hospitals, airports and roads. The decision on which data to visualise and how to present it is up to you, the cartographer.
