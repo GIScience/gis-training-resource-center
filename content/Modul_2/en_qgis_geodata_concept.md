@@ -75,7 +75,7 @@ represented by a line, a building will be represented by polygon and a tree migh
 
 ```{figure} /fig/en_vector_data_overview.drawio.png
 ---
-width: 600px
+width: 650px
 align: center
 name: Vector Data overview
 ---
@@ -177,7 +177,7 @@ The figure below summarizes the different data formats for raster and vector dat
 
 ```{figure} /fig/en_data_formats.png
 ---
-width: 500px
+width: 700px
 align: center
 name: The main geographical data formats
 ---
@@ -212,7 +212,14 @@ Layers in a GIS. Source: [CartONG](https://cartong.pages.gitlab.cartong.org/lear
 ## Projections 
 ### Introduction
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kIID5FDi2JQ?si=C0tYz7nteMF_xqvr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+```{figure} /fig/en_examples_projections_IBIS.png
+---
+width: 500px
+align: center
+name: Examples for Projections (azimuthal, cylindrical and conic)
+---
+Examples for Projections. Source:(http://ibis.colostate.edu/webcontent/NR505/2012_Projects/Team6/GISConcepts.html)
+```
 
 An important issue when creating a map of a region, is that it is impossible to create a representation of a sphere 
 on a 2D plane without distorting the map.
@@ -223,14 +230,7 @@ the __length__ between two points or from a single point (equidistant map projec
 projections are able to display the angles correctly, while others display the sizes of an area or the distance 
 between two points correctly.
 
-```{figure} /fig/en_examples_projections_IBIS.png
----
-width: 500px
-align: center
-name: Examples for Projections (azimuthal, cylindrical and conic)
----
-Examples for Projections. Source:(http://ibis.colostate.edu/webcontent/NR505/2012_Projects/Team6/GISConcepts.html)
-```
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kIID5FDi2JQ?si=C0tYz7nteMF_xqvr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Every projection has it use case. For example, the Mercator projection displays the angles between to points 
 correctly. This was used extensively during the seafaring age without satellites, as ships could navigate to a 
