@@ -10,10 +10,10 @@
 :::{grid-item-card}
 
 #### Aim of this exercise:
-Explore Sketch Mapping in a roleplay, either in the perespective of a mapping facilitator, or as a partcipant and learn more about the challanges durign the mapping.
+Explore Sketch Mapping in a roleplay, either in the perespective of a mapping facilitator, or as a partcipant and learn more about the challenges during the mapping.
 
 #### Type of trainings exercise:
-This exercise can be used in online and presence training and is focused on an hands-on experience in carrying out a participatory mapping activity
+This exercise can only be conducted in __presence training__ and is based on na role-play and discussions.
 
 :::
 
@@ -38,29 +38,21 @@ Beginners-level: no specific knowledge about QGIS/uMap required
 :::{grid-item-card}
 
 #### Estimated time demand for the exercise.
-? 1h 
+1h - 1,5 h
 
 :::
 
 :::{grid-item-card}
 
 #### Available data and resources
-> link the files
 
 - Find the Case Studies here: [Case Study 1](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Case_Study_1.pdf), [Case Study 2](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Case_Study_2.pdf), [Case Study 3](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Case_Study_3.pdf)
 
-- 
-
-- [Printable exercise factsheet](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_3.pdf)
+- Download the [Printable exercise factsheet](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_3.pdf)
 
 :::
 
 ::::
-
-
-> insert relevant wiki articles as dropdown?
-
-
 
 
 ## Instructions for the trainers 
@@ -72,27 +64,28 @@ Beginners-level: no specific knowledge about QGIS/uMap required
 
 ### Available Material
 
-> insert links
+> insert link
 
 * Introduction Slides about the Sketch Map Tool LINK
-* 3 Case descriptions (with precreated Sketch Maps)
+* 3 Case descriptions (with precreated Sketch Maps):  [Case Study 1](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Case_Study_1.pdf), [Case Study 2](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Case_Study_2.pdf), [Case Study 3](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Case_Study_3.pdf)
 
-Hint: You can also create your own cases. Prepare a short description about the case and the Sketch Maps beforehand. 
-
+```{Hinbt}
+You can also create your own cases. Prepare a short description about the case and the Sketch Maps beforehand. 
+```
 
 ### During the exercise:  
 #### Introduction:   
 >insert links  
-- Introduce the idea, the aim and the benefits of a Sketch Map. If you are focusing on EVCA you might use the [EVCA Skecth Map Tool Slides]() 
+- Introduce the idea, the aim and the benefits of a Sketch Map. If you are focusing on EVCA you might use the [EVCA Sketch Map Tool Slides]() 
 - Provide access to the needed material.
-- Organize the groups (e.g. create breakout-rooms) and assign the groups with their case. The group sizes shouldn´t be too big, so every one can contribute. For each case assign 2-3 participants the role of facilitators and 4-7 participants the role of community members.
+- Organize the groups (e.g. create breakout-rooms) and assign the groups with their case. The group sizes shouldn´t be too big, so everyone can contribute. For each case assign 2-3 participants the role of facilitators and 4-7 participants the role of community members.
 
 #### Time for group work: 
 - Check-in with the groups if there are questions or problems.
 - Prepare the presentation tool for the Wrap-Up.
 
 #### Wrap up: 
-- Take some time at the end to wrap up where the groupd will present their findings.
+- Take some time at the end to wrap up where the group will present their findings.
 - Summarize challenges of the participatory mapping approach.
 - Discuss benefits of showing results as a map
 - Leave time for open questions.
@@ -118,14 +111,14 @@ Sketch Maps are part of the Enhanced Vulnerability and Capacity Assessment (EVCA
 
 ## Step-by-step introduction for participants 
 
-> link where you can download this part as a short pdf to hand it to participants
+Download [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_3.pdf) the factsheets and print them out, they will serve you during the exercise as guidelines.
 
 
 ## Exercise: Roleplay
-Particpatory mapping with the Sketch Maps is the key part of using the Sketch Map Tool. The usability of your collected data depends on the local knowledge of the participants and how it is captured by 'sketching' on the maps. The idea of this exercise is to recreate such a mapping session in order to learn more about challenges during the mapping process.
+Particpatory mapping with the Sketch Maps is the key part of using the Sketch Map Tool. The usability of your collected data depends on the local knowledge of the participants and how it is captured by 'sketching' on the maps. The idea of this exercise is to recreate such a mapping session in order to learn more about challenges you could face during the mapping process.
 
 - The facilitators are doing an EVCA in one area of the prepared case and focus on creating an exposure and hazard map. 
-- The community members are taking part in this mapping by providing infromation but they also have their own concerns or challenges they wish to adress during the mapping process.
+- The community members are taking part in this mapping by providing information. However, they also have their own concerns or challenges they wish to adress during the mapping process.
 
 
 ### 1. Prepare for the roleplay
@@ -143,7 +136,6 @@ __Facilitators__
 The group of facilitators will seperate from the rest in order to prepare their activity.
 
 - How do I best explain to the community why we do this activity and what is its added value, especially for them?  How do I make them feel comfortable to share their information (concerning data protections, ethics)?
-
 - What do we want to find out when talking to the community? What do we want to map? What data do we want to collect?
 - What questions would we have to raise in order to get the right answers?
 - How can I help community members to orientate on the map?
@@ -178,14 +170,12 @@ It might seem a bit stange at first, but try to stay in your character. This can
 The Participatory Mapping Simulation is led by the facilitators:
 1. Present the project and the activity that is planned (mapping project)
 2. Welcoming round: Everyone is introducing themselves shortly (e.g. I'm Sam and I'm running a small farm in the 5th generation). 
-3. Start the mapping by showing the map and helping the community meembers to orientate. 
+3. Start the mapping by showing the map and helping the community members to orientate. 
 4. Try to map together. 
-
->one more step to discuss the mapping?
 
 The trainer will end this roleplay when the time is over. 
 
-### 3. Upload your created maps -> Optional?
+### 3. Optional: Upload your created maps
 
 
 Take a foto of your sketches or at least one sketch by loading them into [sketch-map-tool.heigit.org](https://sketch-map-tool.heigit.org/). On the website, choose 'Digitize your Sketch maps' on the right. Upload all your sketches in .png or .jpg format. You can mark your sketches and simply drag and drop them into the window. 
@@ -208,6 +198,6 @@ __Load your data__
 
 
 - Discuss your results and created maps. Are you satisfied with the map? What can you do with this results? What do you to change?
-- Discuss the challenges you encountered, as well as the potentials of conducting participatory mapping projeczs you recognized. What did you learn?
+- Discuss the challenges you encountered, as well as the potentials of conducting participatory mapping projects you recognized. What did you learn?
 - Discuss what you would do different in the future (e.g. use only one colour, etc.).
 - Discuss the importance of a well planned mapping process in order to have usable results and data.

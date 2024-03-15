@@ -6,11 +6,11 @@ These five trainings exercises are designed to support the training with the Ske
 
 | Execise| Description |Focus Group|Estimated time| 
 | :-------------------- | :----------------- |:----------------- |:----------------- |
-|__[1](/content/Mobile_Data_collection/en_SMT_ex1_.md)__| The __“Workflow Exercise”__ guides you through the whole workflow of mapping with the Sketch Map Tool, from first ideas about what you like to map to the possible digital results |Planners/ Facilitators/ Practitioners (basic QGIS/ Umap knowledge introduced) |2,5 h |
-| __[2](/content/Mobile_Data_collection/en_SMT_ex2_.md)__ | In the __„Traffic Light exercise”__ you  can explore different base maps and discuss what makes a Sketch map good for mapping. |Planners/ Facilitators/ Practitioners (no QGIS/Umap required) |1,5 h |
-|__[3](/content/Mobile_Data_collection/en_SMT_ex3_.md)__| In this __"Roleplay exercise"__ you can try participatory mapping with Sketch Maps yourself with a prepared scenario.  |Planners/ Facilitators/ Practitioners (no QGIS/Umap required) | 1,5 h|
-|__[4](/content/Mobile_Data_collection/en_SMT_ex4_.md)__| Exercise 4 will guide you through the __basic visualization__ of your Sketch Map Tool Results in either QGIS or uMAP|Planners/ Facilitators/ Practitioners (basic QGIS/ Umap knowledge introduced) |2,5 h |
-|__[5](/content/Mobile_Data_collection/en_SMT_ex5_.md)__| In Exercise 5 you will learn how to __analyze__ your Sketch Map Tool Outputs by creating a heatmap |Medium-adcanced knowledge level QGIS |Facilitators/ Data analysis (Medium-advanced QGIS knowledge required)|1h|
+|__[1](/content/Mobile_Data_collection/en_SMT_ex1_.md)__| The __[“Workflow Exercise”](/content/Mobile_Data_collection/en_SMT_ex1_.md)__ guides you through the whole workflow of mapping with the Sketch Map Tool, from first ideas about what you like to map to the possible digital results |Planners/ Facilitators/ Practitioners (basic QGIS/ Umap knowledge introduced) |2,5 h |
+| __[2](/content/Mobile_Data_collection/en_SMT_ex2_.md)__ | In the __[„Traffic Light exercise”](/content/Mobile_Data_collection/en_SMT_ex2_.md)__ you  can explore different base maps and discuss what makes a Sketch map good for mapping. |Planners/ Facilitators/ Practitioners (no QGIS/Umap required) |1,5 h |
+|__[3](/content/Mobile_Data_collection/en_SMT_ex3_.md)__| In this __["Roleplay exercise"](/content/Mobile_Data_collection/en_SMT_ex3_.md)__ you can try participatory mapping with Sketch Maps yourself with a prepared scenario.  |Planners/ Facilitators/ Practitioners (no QGIS/Umap required) | 1,5 h|
+|__[4](/content/Mobile_Data_collection/en_SMT_ex4_.md)__| This __["Visualization Exercise"](/content/Mobile_Data_collection/en_SMT_ex4_.md)__ will guide you through the basic visualization of your Sketch Map Tool Results in either QGIS or uMAP|Planners/ Facilitators/ Practitioners (basic QGIS/ Umap knowledge introduced) |2,5 h |
+|__[5](/content/Mobile_Data_collection/en_SMT_ex5_.md)__| In the __["Heat Map Exercise"](/content/Mobile_Data_collection/en_SMT_ex5_.md)__ you will learn how to analyze your Sketch Map Tool Outputs by creating a heatmap |Facilitators/ Data analysis (Medium-advanced QGIS knowledge required)|1h|
 
 
 
