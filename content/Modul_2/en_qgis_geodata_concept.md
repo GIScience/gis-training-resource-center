@@ -267,7 +267,7 @@ In the dropdown below, you can look at the size distortion of mercator yourself.
 In GIS, we project the earth onto a flat coordinate system (hence the name coordinate reference system or CRS). 
 It is crucial that you are aware that you data can be in one CRS and your QGIS 
 project in an other CRS. The data and the project should always be the same, or 
-else you will get wrong results! The project CRS is displayed on the bottom left 
+else you will get wrong results! The project CRS is displayed on the bottom right
 corner of the [QGIS interface](https://giscience.github.io/gis-training-resource-center/content/Modul_1/en_qgis_start.html#overview-of-qgis-interface).  
 To change the CRS of you data and project, follow the steps explained below.
 The default CRS/EPSG code of every QGIS project is the World Geodetic System 84 
