@@ -47,9 +47,11 @@ Beginners-level: no specific knowledge about QGIS/uMap required
 #### Available data and resources
 > link the files
 
-- Download the data for this exercise here and unzip the folder
+- Find the Case Studies here: [Case Study 1](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Case_Study_1.pdf), [Case Study 2](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Case_Study_2.pdf), [Case Study 3](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Case_Study_3.pdf)
 
-- In the data subfolder (\data\input), you will find the data you need to start the exercise.
+- 
+
+- [Printable exercise factsheet](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_3.pdf)
 
 :::
 

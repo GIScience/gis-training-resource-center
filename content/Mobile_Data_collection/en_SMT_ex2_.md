@@ -49,9 +49,11 @@ In general: about 1 h to 1,5 h (depending on number of groups)
 :::{grid-item-card}
 #### Available data
 
-Download the data for this exercise [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Exercise_2.zip) and unzip the folder
+- Download the data for this exercise [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Exercise_2.zip) and unzip the folder
 
-You will find 5 Case studies which contain 2 Sketch Maps (one based on OSM, one on satellite imagery) and the respective Quality Report
+- You will find 5 Case studies which contain 2 Sketch Maps (one based on OSM, one on satellite imagery) and the respective Quality Report
+
+- [Printable exercise factsheet](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_2.pdf)
 
 
 :::

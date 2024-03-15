@@ -40,7 +40,7 @@ Analysing participatory mapping results
 ### Available data
 - Download the data for this exercise [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_5.zip) and unzip the folder
 - In the data subfolder (`\data\input`), you will find the data you need to start the exercise.
-
+- [Printable exercise factsheet](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_5.pdf)
 :::
 ::::
 
@@ -56,9 +56,11 @@ Analysing participatory mapping results
 
 
 ### Available Material: 
-•	Introduction Slides about the Sketch Map Tool
-•	5 Pre-marked and photographed maps to be used as input for Sketch Map Tool for Exercise B
--	Geodata of the results and some pictures 
+- Introduction Slides about the Sketch Map Tool
+- Empty SKetch Map that could be used for individual markings
+- 5 Pre-marked and photographed maps to be used as input for Sketch Map Tool for Exercise B
+- Geodata of the results
+- Factsheet for printing out
 
 
 ### During the exercise:  
@@ -66,20 +68,14 @@ Analysing participatory mapping results
 - Introduce the idea, the aim and the general workflow of the Skech Map Tool beforehand. 
 - Provide access to the needed material.
 - check-in if there are questions or problems.
+- motivate fast participants to create a printable map in the end if they finish earlier than other participants
 
 #### Wrap up: 
-- Take some time at the end to wrap up and that several people present their result map
-- Discuss the benefits of using heatmaps to analyze community mapping.
+- Take some time at the end to wrap up and that several people present their result
+- Discuss the benefits of using heatmaps to analyze community mapping results.
 - Refer to other chapters of the training platform and how users can benefit from it (e.g. visualisation or data analysis)
 - Leave time to for open questions.
-
-## Step-by step instructions for participants 
-
->comment:link where you can download this part as a short pdf to hand it to participants
-
-If you experience any problems during your use of the [Sketch Map Tool](https://sketch-map-tool.heigit.org/), please take a look at the [help page](https://sketch-map-tool.heigit.org/help).
 ::::
-
 
 
 ### Exercise: Heat Map Visualization: Past Flood Delineation
@@ -99,6 +95,7 @@ Imagine you were on a field trip in order to talk to people in the affected area
 
 Optional: You find the empty map [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_5.zip)(data/input). Feel free to draw some additional flood maps by printing the template out and drawing on it or by using a simple graphics editor.
 
+If you experience any problems during your use of the [Sketch Map Tool](https://sketch-map-tool.heigit.org/), please take a look at the [help page](https://sketch-map-tool.heigit.org/help).
 
 #### 2. Georeferencing and autoextraction with the Sketch Map tool
 
