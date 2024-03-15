@@ -116,12 +116,13 @@ interpolated temperature data, or population density. The value of each cell is 
 color to a value. For elevation data, for example, a color ramp is usually used. For categorical data, such as 
 landuse, color categories (such as green = forest; yellow = agricultural landuse, red = residential). 
 
-Raster values usually have only 1 value per cell, however, it can also have multiple (color)bands. Satellite 
-imagery usually offers several bands (different light spectrum), which we can use to analyze different phenomena, 
-such as the humidity of plants. Multiple bands only means that you have more than one value per cell.
+<!--- ADD: insert example of raster data -->
 
-The main spatial characteristics are the extent - the area the grid represents in the real world (10km^2, 100km^2) 
-- and the raster resolution - the size of each pixel. In the image below, you can see two raster datasets with different resolutions.
+Raster values usually have only 1 value per cell, however, it can also have multiple (color-)bands. Satellite 
+imagery usually offers several bands (different light spectrum), which we can use to analyze different phenomena, 
+such as the humidity of plants. Multiple bands means that you have more than one value per cell.
+
+The main spatial characteristics are the extent - the area the grid represents in the real world (10km^2, 100km^2) - and the raster resolution - the size of each pixel. In the image below, you can see two raster datasets with different resolutions.
 
 ```{figure} /fig/en_quality_raster.png
 ---
