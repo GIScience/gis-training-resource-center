@@ -48,7 +48,7 @@ width: 400
 The data entry for Lake Sulunga is represented by the grey polygon to the left
 ```
 
-> Insert table with examples of geodata
+<!--Insert table with examples of geodata -->
 
 There are two primary types of geographic data: **vector data and raster data**. Both types represent tangible or 
 intangible things in the real world. However, how they store this data is quite different. Because of this, the 
@@ -75,7 +75,7 @@ represented by a line, a building will be represented by polygon and a tree migh
 
 ```{figure} /fig/en_vector_data_overview.drawio.png
 ---
-width: 500px
+width: 600px
 align: center
 name: Vector Data overview
 ---
@@ -108,8 +108,8 @@ The following table gives a short description of commonly used vector file forma
 Another type of geospatial data is raster data. Raster data consists of cells that are organized into a grid with 
 rows and columns, thus forming a raster. Each cell, or pixel, contains a value which holds information (for 
 example, temperature, or population density). Since raster data consists of pixels, aerial photographs or satellite 
-imagery can also be used as raster data, if they have geographical coordinates (see [georeferencing](link 
-missing)). 
+imagery can also be used as raster data, if they have geographical coordinates (see [georeferencing]()).
+<!-- FIXME: insert georeferencing link --> 
 
 Typical raster data can be, for example, elevation data (or digital elevation model, DEM), precipitation data, 
 interpolated temperature data, or population density. The value of each cell is usually visualised by assigning a 
@@ -211,6 +211,8 @@ Layers in a GIS. Source: [CartONG](https://cartong.pages.gitlab.cartong.org/lear
 ## Projections 
 ### Introduction
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kIID5FDi2JQ?si=C0tYz7nteMF_xqvr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 An important issue when creating a map of a region, is that it is impossible to create a representation of a sphere 
 on a 2D plane without distorting the map.
 The way in which the globe is represented on a flat surface is called a __projection__. There are many different 
@@ -220,8 +222,6 @@ the __length__ between two points or from a single point (equidistant map projec
 projections are able to display the angles correctly, while others display the sizes of an area or the distance 
 between two points correctly.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kIID5FDi2JQ?si=C0tYz7nteMF_xqvr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
 ```{figure} /fig/en_examples_projections_IBIS.png
 ---
 width: 500px
@@ -230,7 +230,8 @@ name: Examples for Projections (azimuthal, cylindrical and conic)
 ---
 Examples for Projections. Source:(http://ibis.colostate.edu/webcontent/NR505/2012_Projects/Team6/GISConcepts.html)
 ```
-Every projection has it's use case. For example, the Mercator projection displays the angles between to points 
+
+Every projection has it use case. For example, the Mercator projection displays the angles between to points 
 correctly. This was used extensively during the seafaring age without satellites, as ships could navigate to a 
 destination by following a straight line on a map. For example, the Mercator projection displays road intersections 
 correctly: a road that crosses another road at a right angle, will be displayed as such on a mercator projection. 
@@ -240,6 +241,7 @@ figure below). Furthermore, the further away from the equator you get, the more 
 the true size in comparison to different placements on the map on this [website](https://www.thetruesize.com). A 
 popular example is Greenland in comparison with Africa, which seem on the map to be about the same size, but in 
 reality Africa is a lot bigger.
+
 
 
 ```{figure} /fig/en_greenland_africa.png
@@ -265,7 +267,7 @@ In GIS, we project the earth onto a flat coordinate system (hence the name coord
 It is crucial that you are aware that you data can be in one CRS and your QGIS 
 project in an other CRS. The data and the project should always be the same, or 
 else you will get wrong results! The project CRS is displayed on the bottom left 
-corner of the [QGIS interface](https://giscience.github.io/gis-training-resource-center/content/Modul_1/en_qgis_start.html#overview-of-qgis-interface) 
+corner of the [QGIS interface](https://giscience.github.io/gis-training-resource-center/content/Modul_1/en_qgis_start.html#overview-of-qgis-interface).  
 To change the CRS of you data and project, follow the steps explained below.
 The default CRS/EPSG code of every QGIS project is the World Geodetic System 84 
 (EPSG: 4326). This CRS is optimized for world maps. So not perfect for most 
@@ -281,7 +283,7 @@ This table shows an overview on which projections to use for which needed
 characteristic:
 
 | Characteristic  | Mercator (cylindrical) | Lambert cylindrical | Albers conic |
-| |:--------------------: | :-----------------: | :----------: |
+| :----------- |:--------------------: | :-----------------: | :----------: |
 | Shape |- [x]             | - [ ]          | - [x]    |
 | Rotation |- [x]           | - [x]      | - [ ]  |
 | Area |- [ ]              | - [x]            | - [x]    |
@@ -311,9 +313,7 @@ or even smaller regions, __you should always use a local CRS, to avoid inaccurac
 
 1. Open a QGIS project
 2. In the very down right corner of QGIS you find the butten `EPSG`. The number 
-next to it is the EPSG Code currently used in the project. For more information 
-click on the button.
-![](/fig/EPSG_Code.png)
+next to it is the EPSG Code currently used in the project. To see more information, or to change the CRS, click on the `Current CRS`-button ![](/fig/EPSG_Code.png). 
 3. The window `Project Properties` will open. Here you can view all availble 
 CRS/EPSG-Code and their properties.
 4. To change the CRS/EPSG code, select the one you want to use and click `Apply`.
@@ -328,8 +328,8 @@ CRS/EPSG-Code and their properties.
 The Coordinate reference system of your QGIS project determines how QGIS displays the information. However, layers 
 and datasets have their own CRS. This can be seen in the metadata, or layer properties of the dataset. The layer 
 CRS refers to the coordinate system of the features or items in the dataset. The same coordinates in two different 
-coordinate referance system do not refer to the same location on earth. This is because of the distortion of 
-distance or area. 
+coordinate reference system do not refer to the same location on earth. This is because of the distortion of 
+distance and area.
 
 ```{note}
 The first thing you should do when loading a new layer or dataset into your QGIS project, should be to check the 
@@ -337,6 +337,9 @@ coordinate reference system of the dataset, and reproject it to the project CRS 
 consistency in your project and that the geoobjects in your layer are at the right locations. Otherwise, you will 
 create false results.
 ```
+
+<!--- ADD: insert example of layers that are in a CRS with an inaccuracy of a few meters to show the importance of 
+getting the CRS right --->
 
 #### Changing the projection of a vector layer
 
@@ -346,7 +349,7 @@ create false results.
    specify the file name and the location where you want to save the file.
 5. Click `Run`
 
-:::{dropdown} Video: How to change the projection a layer
+:::{dropdown} Video: How to change the CRS of a vector a layer
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_vector.mp4"></video>
 :::
 
@@ -359,8 +362,9 @@ create false results.
    the file name and the location where you want to save the file.
 5. Click `Run`
 
+:::{dropdown} Video: How to change the CRS of a raster layer
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_raster.mp4"></video>
-
+:::
 
 ### Further resources
 
