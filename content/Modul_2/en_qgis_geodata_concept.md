@@ -122,7 +122,7 @@ Raster values usually have only 1 value per cell, however, it can also have mult
 imagery usually offers several bands (different light spectrum), which we can use to analyze different phenomena, 
 such as the humidity of plants. Multiple bands means that you have more than one value per cell.
 
-The main spatial characteristics are the extent - the area the grid represents in the real world (10km^2, 100km^2) - and the raster resolution - the size of each pixel. In the image below, you can see two raster datasets with different resolutions.
+The main spatial characteristics are the extent - the area the grid represents in the real world (10km², 100km²) - and the raster resolution - the size of each pixel. In the image below, you can see two raster datasets with different resolutions.
 
 ```{figure} /fig/en_quality_raster.png
 ---
