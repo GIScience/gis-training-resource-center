@@ -2,9 +2,8 @@
 
 🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
-This exercise focuses on exploring the basemaps and discussing challenges of map literacy and orientation on the maps, as well as the characteristics, strengths, accuracy or need for updated data, and differences basemaps based on satellite images or OpenStreetMap data.
+This exercise focuses on the first step of working with the Sketch Map Tool “Create a Sketch Map” and especially the characteristics, differences, weaknesses and strengths of the satellite and the OSM basemap. 
 
-The finished map could look something like this:
 
 
 ```{figure} ../../fig/SMT_Idee_traffic_light_exerices.png
@@ -43,10 +42,7 @@ preparing participatory mapping
 :::{grid-item-card}
 
 #### Estimated time demand for the exercise.
-In general: about 1:15 h to 1:35 h (depending on number of groups) 
-- Introduction: 10 min
-- Groupe exercise: 35 min ( about 10 min for creating the maps and 25 min group discussion)
-- Wrap-up (with presentations) each group about 5 min to present and 10 min general discussion, aswell as a bit buffer time for the change of the groups
+In general: about 1 h to 1,5 h (depending on number of groups) 
 
 :::
 
@@ -55,7 +51,7 @@ In general: about 1:15 h to 1:35 h (depending on number of groups)
 
 Download the data for this exercise [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Exercise_2.zip) and unzip the folder
 
-In the data subfolder (\data\input), you will find the data you need to start the exercise.
+You will find 5 Case studies which contain 2 Sketch Maps (one based on OSM, one on satellite imagery) and the respective Quality Report
 
 
 :::
@@ -75,8 +71,6 @@ In the data subfolder (\data\input), you will find the data you need to start th
 - Prepare a board (it can be a white board/flipchart/or digital e.g. mirro-board) where the participants can add their findings.
 
 ### Available Material: 
-
-https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Exercise_2.zip
 
 - Introduction Slides to the Sketch Map Tool
 - [5 prepared cases](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Exercise_2.zip) if you like to save time (with Sketch Maps and Map Quality Check) 
