@@ -45,7 +45,7 @@ preparing participatory mapping / facilitating participatory mapping/ analysing 
 - Download the data for this exercise here and unzip the folder
 
 - In the data subfolder (\data\input), you will find the data you need to start the exercise.
-- [Printable exercise factsheet](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_1.pdf)
+- Download the [Printable exercise factsheet](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_1.pdf)
 
 :::
 

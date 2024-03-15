@@ -53,7 +53,7 @@ In general: about 1 h to 1,5 h (depending on number of groups)
 
 - You will find 5 Case studies which contain 2 Sketch Maps (one based on OSM, one on satellite imagery) and the respective Quality Report
 
-- [Printable exercise factsheet](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_2.pdf)
+- Download the [Printable exercise factsheet](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_2.pdf)
 
 
 :::
@@ -74,6 +74,7 @@ In general: about 1 h to 1,5 h (depending on number of groups)
 
 ### Available Material: 
 
+>Add Link 
 - Introduction Slides to the Sketch Map Tool
 - [5 prepared cases](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Exercise_2.zip) if you like to save time (with Sketch Maps and Map Quality Check) 
 
@@ -81,7 +82,7 @@ In general: about 1 h to 1,5 h (depending on number of groups)
 ### During the exercise:  
 #### Introduction: 
 - Make sure everyone is familiar with the basic understanding about OSM and satellite maps. Introduce the aim of the exercise and the idea of the traffic lights and the analysis before you start the exercise!
-- Provide access the needed material and build groups of 3 to 6 people in order to discuss the findings. 
+- Provide access to the needed material and build groups of 3 to 6 people in order to discuss the findings. 
 
 #### Time for group work: 
 - Check-in with the groups to see if there are any questions or problems.
@@ -98,36 +99,37 @@ In general: about 1 h to 1,5 h (depending on number of groups)
 
 ## What you need to know - background information
 
-### Benefits of the Sketch Map
+### Benefits of the Sketch Map:
 
 #### During the data collection: 
 - Maps provide orientation and can guide discussions
 - With the sketching, you achieve an immediate visualization of local knowledge.
 
 #### After the data collection:
-- Displaying and sharing the result. 
+- Displaying and sharing the result
+- integrate and analyse local knowledge in GIS-software such as QGIS 
 
 ### Characteristics of the two base maps 
 
 | | Satellite imagery| OSM data|
 | :-------------------- |:-------------------- | :----------------- | 
 | Data source | [World Imagery ESRI](https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9#!) |  [OpenStreetMap Community](https://www.openstreetmap.org/#map=6/51.330/10.453)  | 
-| example map | ![](/fig/SMT_Satelite_Heidelberg_empty.jpg) | ![](/fig/SMT_Heidelberg_empty.jpg) | 
-| curentness | The satelite imagery is typically within 3-5 years of currency. | Current OSM-data is used in the base map. | 
+| Example map | ![](/fig/SMT_Satelite_Heidelberg_empty.jpg) | ![](/fig/SMT_Heidelberg_empty.jpg) | 
+| Currentness | The satellite imagery is typically within 3-5 years of currency. | Current OSM-data is used in the base map. | 
 | Biggest benefit | Impression of the landscape and topography | Clear outlines and at times labels especially of important infrastructure e.g. hospitals, possibilty to improve the map by contributing to OSM.| 
 
 ### What does georeferenced mean?
 
 | non-georeferenced image | georeferenced image – GeoTIFF |
 | :-------------------- | :----------------- | 
-| This is just an image, even if you load it in QGis and give it a coordination system it can´t be located and the image is shown somewhere in the Atlantic. | The file contains information about its coordinate system and its location, so you can combine it other geodata e.g. with GPS data.| 
+| This is just an image, even if you load it into QGIS and give it a coordination system it can´t be located and the image is shown somewhere in the Atlantic. | The file contains information about its coordinate system and its location, so you can combine it with other geodata e.g. with GPS data.| 
 | ![](/fig/SMT_Map_Not_georefferenced.png) | ![](/fig/SMT_Geofrefference_map.png) | 
 
 ### Map Quality Check
 
 ```{figure} ../../fig/SMT_Heidelberg_report_1.jpg
 ---
-height: 450px
+height: 500px
 name: SMT Heidelberg report
 align: center
 ---
@@ -139,7 +141,7 @@ The Map Quality Check assists in evaluating the suitability of the area of inter
 
 ## Step-by step introduction for participants 
 
-link where you can download this part as a short pdf to hand it to participants
+Download [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_2.pdf) a printabel factsheet to guide you through this exercise.
 
 If you expieriences any problems during your use of the [Sketch Map Tool](https://sketch-map-tool.heigit.org/) please take a look at the [Help page](https://sketch-map-tool.heigit.org/help).
 
