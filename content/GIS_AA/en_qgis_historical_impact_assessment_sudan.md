@@ -955,27 +955,27 @@ Independently on which tool you will use, here are some important points you hav
 
 ## Step 7: Adding P-Codes to the table
 
-- Create a new empty Excel file and name it `Sudan_impact_p_code`.
+Create a new empty Excel file and name it `Sudan_impact_p_code`.
 
-- Open the new Excel file and click on the Data tab. Click on `Data -> Get Data -> From File -> From Excel Workbook` and select your cleaned impact data file from the previous section `HIA Data Cleaning`. We will enrich the information of this table by adding the P-Codes.
+Open the new Excel file and click on the Data tab. Click on `Data -> Get Data -> From File -> From Excel Workbook` and select your cleaned impact data file from the previous section `HIA Data Cleaning`. We will enrich the information of this table by adding the P-Codes.
 
-- The `Navigator` Window will open. Select the relevant Excel sheet. Click on the drop-down menu `Load -> Load To...`. The `Import Data` Window will open. Here select `Only Create Connection`.
+The `Navigator` Window will open. Select the relevant Excel sheet. Click on the drop-down menu `Load -> Load To...`. The `Import Data` Window will open. Here select `Only Create Connection`.
 
-- Repeat the previous two steps for the file `sdn_adminboundaries_tabulardata.xlsx`. Select the sheet `ADM1`. The data can be downloaded from HDX containing the [Subnational Administrative Boundaries of Sudan](https://data.humdata.org/dataset/cod-ab-sdn?). Here we can find information about the different administrative levels of Sudan beginning with 0 (country), 1 (state), and 2 (district). Make sure to download the xlsx file.
+Repeat the previous two steps for the file `sdn_adminboundaries_tabulardata.xlsx`. Select the sheet `ADM1`. The data can be downloaded from HDX containing the [Subnational Administrative Boundaries of Sudan](https://data.humdata.org/dataset/cod-ab-sdn?). Here we can find information about the different administrative levels of Sudan beginning with 0 (country), 1 (state), and 2 (district). Make sure to download the xlsx file.
 
-- Once you have loaded both files you should see the `Queries & Connections` panel on the right-hand side of your Excel. The panel should show the impact sheet and the ADM1 sheet.
+Once you have loaded both files you should see the `Queries & Connections` panel on the right-hand side of your Excel. The panel should show the impact sheet and the ADM1 sheet.
 
-- Now, click on the `Data tab -> Get Data -> Combine Queries -> Merge`. The window `Merge` should open.
+Now, click on the `Data tab -> Get Data -> Combine Queries -> Merge`. The window `Merge` should open.
 
-- In the `Merge` window, select the `admin_1` column for the impact dataset and the `ADM1_EN` for the ADM1 table. Click on these columns to mark them green.
+In the `Merge` window, select the `admin_1` column for the impact dataset and the `ADM1_EN` for the ADM1 table. Click on these columns to mark them green.
 
-- Under `Join Kind` select `Left Outer (all from first, matching from second)`. This will take all rows from the impact dataset and the matching data from the ADM1 table. The information below should show a green check and `The selection matches [number of rows] of [number of rows] rows from the first table`. If not, some of your state names are not consistent with the ones in the ADM1 file. In this case, you would need to do more data cleaning and make sure that naming conventions are met. Click Ok.
+Under `Join Kind` select `Left Outer (all from first, matching from second)`. This will take all rows from the impact dataset and the matching data from the ADM1 table. The information below should show a green check and `The selection matches [number of rows] of [number of rows] rows from the first table`. If not, some of your state names are not consistent with the ones in the ADM1 file. In this case, you would need to do more data cleaning and make sure that naming conventions are met. Click Ok.
 
-- The new window `Merge1 – Power Query Editor` will open. Click on the icon next to ADM1 (column header). Select only the columns you want to keep. We recommend to only keep `ADM1_EN` and most importantly `ADM1_PCODE`. Uncheck `Use original column names as prefix` and click OK.
+The new window `Merge1 – Power Query Editor` will open. Click on the icon next to ADM1 (column header). Select only the columns you want to keep. We recommend to only keep `ADM1_EN` and most importantly `ADM1_PCODE`. Uncheck `Use original column names as prefix` and click OK.
 
-- The table preview should now show your entire impact table with the columns `ADM1_EN` and `ADM1_PCODE` on the right end of the table. Click on `Close & Load`.
+The table preview should now show your entire impact table with the columns `ADM1_EN` and `ADM1_PCODE` on the right end of the table. Click on `Close & Load`.
 
-- The result should be in the Excel file `Sudan_impact_p_code`. The file should contain all the information from the original impact table and the two new columns `ADM1_EN` and `ADM1_PCODE` with this important information for later operations.
+The result should be in the Excel file `Sudan_impact_p_code`. The file should contain all the information from the original impact table and the two new columns `ADM1_EN` and `ADM1_PCODE` with this important information for later operations.
 
 ```{dropdown} Video: How to combine Workbooks using Excel 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_hia_power_query.mp4"></video>
