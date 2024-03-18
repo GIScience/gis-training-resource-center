@@ -5,27 +5,6 @@
 Explore the whole workflow of mapping with the Sketch Map Tool, from first ideas about what you like to map to the possible digital results.
 
 
-> picture /fig/SMT_workflow_satelite.png fehlt oder ist /fig/SMT_workflow.png gemeint (see below)?
-
-```{figure} /fig/smt_workflow_Satelite.png
----
-height: 450px
-name: T
-align: center
----
-Thw workflow of the Sketch Map Tool
-```
-
-```{figure} ../fig/smt_workflow.png
----
-height: 500px
-name: SMT_Workflow
-align: center
----
-Thw workflow of the Sketch Map Tool
-```
-
-
 ## Characteristics of the exercise 
 
 ::::{grid} 2
@@ -40,7 +19,7 @@ This exercise can be used in online and presence training and is focused on an h
 :::{grid-item-card}
 
 #### Focus group (GIS-Knowlege Level)
-- planners/facilitators, as well as practitioners involved in the preparation of the fieldd campaign or collecting the data 
+- planners/facilitators, as well as practitioners involved in the preparation of the field campaign or collecting the data 
 - GIS Beginners-level: no specific knowledge about QGIS/uMAP required
 
 #### Phase of participatory /community mapping 
@@ -53,7 +32,7 @@ preparing participatory mapping / facilitating participatory mapping/ analysing 
 :::{grid-item-card}
 
 #### Estimated time demand for the exercise.
-- Between 2 and 2:45 hours (depending on number of groups).
+- Between 2 and 2,5 hours (depending on number of groups).
 
 :::
 
@@ -66,6 +45,7 @@ preparing participatory mapping / facilitating participatory mapping/ analysing 
 - Download the data for this exercise here and unzip the folder
 
 - In the data subfolder (\data\input), you will find the data you need to start the exercise.
+- Download the [Printable exercise factsheet](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_1.pdf)
 
 :::
 
@@ -142,7 +122,6 @@ Alternatives
 ### Basic functionalities of the SMT
 The [Sketch Map Tool](https://sketch-map-tool.heigit.org) is a easy-to-use tool for participatory mapping. It involves the offline collection of data, and the digitisation and georeferencing of the collected local data. The low-tech solution is designed to simplify the collection and analysis of local spatial knowledge and perceptions through the use of pens and paper maps: the so-called "Sketch Maps". The Sketch Map Tool is an open-source web application. It facilitates the creation, usage and the digitisation and analysis of paper-based maps with OpenStreetMap or satellite data. 
  
-> Same picture as above? enter alt name so it can be fixed or replaced
 
 ```{figure} /fig/SMT_workflow_Satelite.png
 ---
@@ -150,7 +129,7 @@ height: 450px
 name: T
 align: center
 ---
-Picture of the workflow
+SKetch Map Tool workflow
 ```
 
 - The first step is the creation of the paper-based maps. Participants can choose between basemaps containing [OpenStreetMap (OSM)](www.openstreetmap.org) data or basemaps containing satellite images. In addition, the tool can evaluate how well-suited an area of the OpenStreetMap (OSM) basemap is for participatory mapping. This evaluation is based on a quality analysis of the OpenStreetMap (OSM) data using the [HeiGIT ohsome quality analyst](https://heigit.org/de/big-spatial-data-analytics/ohsome-3/ohsome-quality-analyst-oqt/). 
@@ -160,7 +139,6 @@ Picture of the workflow
 
 ### What does 'georefferenced' means?
 
->pictures in the table are missing from the /fig-folder
 
 | A non-georeferenced image | A georeferenced image – GeoTIFF |
 | :-------------------- | :----------------- | 

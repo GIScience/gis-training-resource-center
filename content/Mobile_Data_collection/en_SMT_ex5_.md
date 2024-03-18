@@ -40,7 +40,7 @@ Analysing participatory mapping results
 ### Available data
 - Download the data for this exercise [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_5.zip) and unzip the folder
 - In the data subfolder (`\data\input`), you will find the data you need to start the exercise.
-
+- Download the [Printable exercise factsheet](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_5.pdf)
 :::
 ::::
 
@@ -56,9 +56,11 @@ Analysing participatory mapping results
 
 
 ### Available Material: 
-•	Introduction Slides about the Sketch Map Tool
-•	5 Pre-marked and photographed maps to be used as input for Sketch Map Tool for Exercise B
--	Geodata of the results and some pictures 
+- Introduction Slides about the Sketch Map Tool
+- Empty SKetch Map that could be used for individual markings
+- 5 Pre-marked and photographed maps to be used as input for Sketch Map Tool for Exercise B
+- Geodata of the results
+- Factsheet for printing out
 
 
 ### During the exercise:  
@@ -66,20 +68,14 @@ Analysing participatory mapping results
 - Introduce the idea, the aim and the general workflow of the Skech Map Tool beforehand. 
 - Provide access to the needed material.
 - check-in if there are questions or problems.
+- motivate fast participants to create a printable map in the end if they finish earlier than other participants
 
 #### Wrap up: 
-- Take some time at the end to wrap up and that several people present their result map
-- Discuss the benefits of using heatmaps to analyze community mapping.
+- Take some time at the end to wrap up and that several people present their result
+- Discuss the benefits of using heatmaps to analyze community mapping results.
 - Refer to other chapters of the training platform and how users can benefit from it (e.g. visualisation or data analysis)
 - Leave time to for open questions.
-
-## Step-by step instructions for participants 
-
->comment:link where you can download this part as a short pdf to hand it to participants
-
-If you experience any problems during your use of the [Sketch Map Tool](https://sketch-map-tool.heigit.org/), please take a look at the [help page](https://sketch-map-tool.heigit.org/help).
 ::::
-
 
 
 ### Exercise: Heat Map Visualization: Past Flood Delineation
@@ -94,16 +90,16 @@ The sketch map tool is a valuable tool for delineating flood areas within a comm
 
 #### 1. Data Collection
 
-Imagine you were on a field trip in order to talk to people in the affected areas and let them draw maps about flood prone areas in their community. You are now back to your office and have 5 different flood maps that you have already scanned in. Please download the prepared maps [here]().
+Imagine you were on a field trip in order to talk to people in the affected areas and let them draw maps about flood prone areas in their community. You are now back to your office and have 5 different flood maps that you have already scanned in. Please download the prepared maps [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_5.zip).
 
->insert link
 
-Optional: You find the empty map [here](). Feel free to draw some additional flood maps by printing the template out and drawing on it or by using a simple graphics editor.
+Optional: You find the empty map [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_5.zip)(data/input). Feel free to draw some additional flood maps by printing the template out and drawing on it or by using a simple graphics editor.
 
+If you experience any problems during your use of the [Sketch Map Tool](https://sketch-map-tool.heigit.org/), please take a look at the [help page](https://sketch-map-tool.heigit.org/help).
 
 #### 2. Georeferencing and autoextraction with the Sketch Map tool
 
-__Upload the sketch maps__ back to the tool’s website: Head to [sketch-map-tool.heigit.org](https://sketch-map-tool.heigit.org/) and choose "`Digitize your Sketch maps`" on the right. Upload all your sketches in .png or .jpg format. You can mark your sketches and simply drag and drop them into the window.
+__Upload the sketch maps__ back to the tool’s website: Head to [sketch-map-tool.heigit.org](https://sketch-map-tool.heigit.org/) and choose `Digitize your Sketch maps` on the right. Upload all your sketches in .png or .jpg format. You can mark your sketches and simply drag and drop them into the window.
 
 The sketch maps are now being processed and georeferenced with the annotations extracted and vectorized. Download the vectors. You may use the ones we have prepared [here]().
 
@@ -114,12 +110,9 @@ Open QGIS and __load your vector files__ by dragging and dropping them into the 
 ```{Note}
 When you upload several marked Sketch Maps simultaneously, you will get one vector output containing all the markings of all Sketch Maps, while uploading your Sketch Maps one by one will provide you with one vector file for the marking in each Sketch Map. This information can be important for the planning phase of your mapping process.
 ```
-
-> change "Your vectorized sketches in the geojson format contain a feature for every extracted __.png__ and markup color" TO "Your vectorized sketches in the geojson format contain a feature for every extracted __marking__ and markup color" ?
   
-Your vectorized sketches in the geojson format contain a feature for every extracted .png and markup color. In general, each marking in your sketch map will appear in the attribute table as one row, containing the name of your sketch map as well as the detected colour of the respective marking. Now, we want to visualise the degree of overlapping flood areas in order to create a heatmap. For this purpose,  we have to convert every feature to a distinct raster and then sum up the overlapping pixels in a new raster. In QGIS, you can do this in the following steps:
+Your vectorized sketches in the geojson format contain a feature for every extracted .png/.jpeg and markup color. In general, each marking in your sketch map will appear in the attribute table as one row, containing the name of your sketch map as well as the detected colour of the respective marking. Now, we want to visualise the degree of overlapping flood areas in order to create a heatmap. Generating a heatmap from my SKetch Map results helps us to identyfiy patterns in the spatial dara, in this case it will show us the overlappings of participants markings and help us identifying most at risk areas. For this purpose, we have to convert every feature to a distinct raster and then sum up the overlapping pixels in a new raster. In QGIS, you can do this in the following steps:
 
->in the paragraph above. explain a little bit more why its useful to see how many markings overlap?
 
 #### 4. Rasterize
 
@@ -154,9 +147,8 @@ Attribute table with additional column"fixed_val"
 
 2. Convert your vectors to Rasters
 
-In the next step we want to __rastzerize__ our vector layer. That means that we are essentially converting our vector geometries into a raster grid, where each cell represents a portion of the original vector features. Basically, we want to represent our flood polygons as a raster grid where each cell is assigned the value of 1, when it lies within a polygon, or 0, when it is outside of a polygon. In our resulting raster layer, the value 1 would then stand for "flood area".
+In the next step we want to __rastzerize__ our vector layer. That means that we are essentially converting our vector geometries into a raster grid, where each cell represents a portion of the original vector features. Basically, we want to represent our flood polygons as a raster grid where each cell is assigned the value of 1, when it lies within a polygon, or 0, when it is outside of a polygon. In our resulting raster layer, the value 1 would then stand for "flood area". Click [here](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_types_wiki.html#types-of-geodata) for more information on the different geodata concepts.
 
->insert link where it explains the different geodata concepts (wiki).
 
 - In the top bar navigate via `Raster`, `Conversion` to `Rasterize (Vector to Raster)`. Alternatively, you can also search for `Rasterize (Vector to Raster)` in your __Processing Toolbox__. 
 - As input layer, choose one of your vector layers.
@@ -211,8 +203,7 @@ Raster Calculator
 
 Finally, click on ![](/fig/Three_points.png) next to `Output layer` and navigate to your results folder to save your output. Then, click `OK`.
 
-```{figure} /fig/
-en_SMT_ex5_sum_result.PNG
+```{figure} /fig/en_SMT_ex5_sum_result.PNG
 ---
 height: 500px
 name: T
@@ -264,7 +255,7 @@ Raster Transparency
 ```
 
 ```{note}
-Keep in mind that what you are seeing on your screen is not a map that is ready to be printed or distributed. If you want to learn how to create a printable map or export a map as a pdf, take a look at the chapter on the [print layout](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html) and the [wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_map_making_wiki.html?highlight=print+layout#map-making-wiki)
+Keep in mind that what you are seeing on your screen is not a map that is ready to be printed or distributed. YOu could nowcreate a printable map. Take a look at the chapter on the [print layout](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html) and the [wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_map_making_wiki.html?highlight=print+layout#map-making-wiki) to do so.
 ```
 
 

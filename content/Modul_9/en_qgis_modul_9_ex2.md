@@ -17,7 +17,7 @@ Download all datasets __[here](https://nexus.heigit.org/repository/gis-training-
 
 ## STEP 1: Healthcare catchment - Isochrones
 
-First we need to reproject our layers. To do so, open the `Processing Toolbox` and search for `Reproject layer`. Select one of your layers as your input layer and choose **WGS 84 / UTM zone 46N** as your target crs. Maybe you have to click on the planet button on the right and search for it, if it is not in the list. Leave all other settings at default. Repeat the process with all your layers to reproject all of them.
+First we need to reproject our layers. To do so, open the `Processing Toolbox` and search for `Reproject layer`. Select one of your layers as your input layer and choose **WGS 84 / UTM zone 46N** as your target CRS. Maybe you have to click on the planet button on the right and search for it, if it is not in the list. Leave all other settings at default. Repeat the process with all your layers to reproject all of them.
 
 To get the isochrones click in the toolbar on the ORS Tools plugin Icon. Click on `Batch Jobs` -> `Isochrones from Layer`.
 Leave all settings at default except:
@@ -38,21 +38,35 @@ Open the `Processing Toolbox` and scroll down to `Network Analysis`, choose `Ser
 Leave all settings at default except:
 |                                      |                                     |
 |--------------------------------------|-------------------------------------|
-| Vector layer representing network   | camp_ways                           |
-| Path type to calculate               | shortest                             |
+| Vector layer representing network    | camp_ways                           |
+| Path type to calculate               | shortest                            |
 | Vector layer with start points       | camp_healthcare                     |
-| Travel cost                          | 500 (meters)                      |
-| **Advanced Parameters**                  |                                     |
+| Travel cost                          | 500 (meters)                        |
+| **Advanced Parameters**              |                                     |
 | Default speed                        | 5.0 (pedestrian)                    |
 | Topology tolerance                   | 50.0                                |
 
 
 QGIS on-the-fly creates a network graph from the road and path network. The graph is rather simple. All edges can be traveled in both ways, there are no weights included. Travel cost is represented by the length of a segment and the default average speed. The output is a simplification of the input road & path geometry but with the attributes of the healthcare facilities. For every healthcare facility we see a multiline geometry object in the output. We can style it according to the attribute “@osmId” to see which segments are assigned to which facility.
 
+
 `````{admonition} Question
-Can you already spot areas that are not reachable within 10 minutes by foot within
-the camp?
+Can you already spot areas that are not reachable within 500 meters by foot considering the ways?
 `````
+
+Your result should look like this:
+
+```{figure} /fig/mod9_ex2_service_areas.png
+---
+width: 600px
+name: map service area ways healthcare within camp
+align: center
+---
+Network representation of paths within  camp18. The color symbolizes groups of ways that are within 500m of the next healthcare facility.
+```
+
+
+
 ## STEP 3: Service area by minimum bounding box
 
 In order to better compare the result of the service areas and isochrones we will again compute the minimum bounding geometry. But this time for the multiline output of the service area tool.
@@ -74,7 +88,12 @@ Compare the results of both catchments. What differences can you spot?
 `````
 
 ## STEP 4: Healthcare catchment - Isochrones avoid flood
-In this part we will again calculate catchments based on the same configured isochrones. But we will include a polygon for the avoid area functionality in openrouteservice. For the **avoid area** we will use the water streams that run through the main camp area. Make sure to buffer the camp_stream layer by 2 meters. The avoid areas function only allows for polygons, not for line geometries. If you have buffered the streams, go ahead with the Isochrones tool again.
+In this part we will again calculate catchments based on the same configured isochrones. But we will include a polygon for the avoid area functionality in openrouteservice. For the **avoid area** we will use the water streams that run through the main camp area. The avoid areas function of openrouteservice only allows polygons as input, not line geometries. Therefore we need to conduct some preprocessing steps:
+
+1. Reproject the the camp_stream layer to be able to use a metric distanz to buffer. Like before use **WGS 84 / UTM zone 46N** as the target projection.
+2. Now buffer the reprojected stream layer into a polygon layer with a distance of 2 meters
+3. We are set to use the buffered stream layer as avoid area or exclusion layer for the routing.
+
 
 Click in the toolbar on the ORS Tools plugin Icon <img src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/icon_ORS_tools_plugin.png" alt="Icon" width="20" height="20">. Click on `Batch Jobs` -> `Isochrones from Layer`.
 Leave all settings at default except:
@@ -82,9 +101,9 @@ Leave all settings at default except:
 |------------------------------|------------------------------|
 | Travel mode                  | foot-walking                 |
 | Input Point layer            | camp_healthcare              |
-| **Advanced Parameters**         |                              |
-| Polygons to avoid            | stream_buffer                |
 | Comma separated ranges       | 5, 10                        |
+| **Advanced Parameters**      |                              |
+| Polygons to avoid            | stream_buffer                |
 
 
 :::{dropdown} Watch here:

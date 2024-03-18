@@ -52,7 +52,7 @@ __Exercise B__: 30 min
 
 - Download the data for this exercise [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_4.zip) and unzip the folder
 - In the data subfolder (`\data\input`), you will find the data you need to start the exercise.
-
+- Download the [Printable exercise factsheet](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_4.pdf)
 :::
 ::::
 
@@ -78,7 +78,7 @@ Decide together with the responsible working group which GIS system is prefered 
 
 
 ### Available Material
-* [Introduction Slides](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/EVCA-Sketch_Map_Tool.pptx) about the Sketch Map Tool
+* [Introduction Slides]() about the Sketch Map Tool
 * Just the created map for (pre-printing)
 * Pre-marked and photographed map
 * Geodata of the results
@@ -97,11 +97,10 @@ Decide together with the responsible working group which GIS system is prefered 
 :::
 
 
-## Step-by step introduction for participants 
+## Important information
 
->comment: link where you can download this part as a short pdf to hand it to participants  
 
-__You can choose wether you want to do the exercise with QGIS (Exercise A) or with uMAP (Exercise B)__. An internet connection is required to work with uMAP.
+__You can choose wether you want to do the exercise with QGIS (Exercise A) or with uMAP (Exercise B) (or both)__. An internet connection is required to work with uMAP.
 
 ::::{grid} 2
 
@@ -141,7 +140,7 @@ Map the critical infrastructre and historical flood extent using Sketch Maps
 #### 1. Data Collection
 
 Please download the prepared maps [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_4.zip).
-Unzip the .zip folder in order to be able to acess the geotiff output.
+Unzip the .zip folder in order and vaigate to `data/Input`.
 
 Optional: You find the empty map in the data input folder: `\Sketch_Map_Tool_Exercise_4\data\input`. Feel free to draw some additional flood maps by printing the template out and drawing on it or by using a simple graphics editor.
 

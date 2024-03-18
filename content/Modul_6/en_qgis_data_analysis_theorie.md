@@ -398,3 +398,6 @@ The problem with TIN statistical surfaces is that the surfaces are not smooth an
 
 Kriging is a method of geostatistics used to estimate values for spatial units where the phenomenon of interest has not been measured at every spatial points. Kriging integrates covariates into the interpolation. For example, it is not only the distance to measured temperatures that influences its weighting; temperature is also influenced by the altitude of the sample point. 
 
+## Outlook
+
+There are many analysis methods in GIS. However, setting up an analysis method can be quite time consuming, and creating a new analasys method for every research question makes it hard to compare the results of different analyses. This is why, __model building__ and __automation__ are used frequently when working in GIS data. A model can be seen as a analysis blueprint, that only needs input data to perform a certain type of analysis. Since the parameters are the same, and similar datasets are needed for the model to work properly, the results can be compared. If you are interested in model building and automation, check out [module 7](https://giscience.github.io/gis-training-resource-center/content/Modul_7/en_qgis_automation_theory.html).
