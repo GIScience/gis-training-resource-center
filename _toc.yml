@@ -4,50 +4,6 @@
 format: jb-book
 root: content/intro
 parts:
-  - caption: Wiki
-    chapters:
-      - file: content/Wiki/en_qgis_qgis_basics_wiki.md
-        sections:
-          - file: content/Wiki/en_qgis_installation_wiki.md
-          - file: content/Wiki/en_qgis_interface_wiki.md
-          - file: content/Wiki/en_qgis_projects_folder_structure_wiki.md
-          - file: content/Wiki/en_qgis_projections_wiki.md
-          - file: content/Wiki/en_qgis_basemaps_wiki.md
-          - file: content/Wiki/en_qgis_plugins_wiki.md
-          - file: content/Wiki/en_qgis_data_sources_wiki.md
-      - file: content/Wiki/en_qgis_geodata_wiki.md
-        sections:
-          - file: content/Wiki/en_qgis_geodata_types_wiki.md      
-          - file: content/Wiki/en_qgis_import_geodata_wiki.md
-          - file: content/Wiki/en_qgis_layer_concept_wiki.md
-          - file: content/Wiki/en_qgis_attribute_table_wiki.md
-          - file: content/Wiki/en_qgis_digitalization_wiki.md   
-      - file: content/Wiki/en_qgis_data_classification_wiki.md
-        sections:
-          - file: content/Wiki/en_qgis_single_symbol_wiki.md
-          - file: content/Wiki/en_qgis_categorized_wiki.md
-          - file: content/Wiki/en_qgis_graduated_wiki.md
-      - file: content/Wiki/en_qgis_geoprocessing_wiki.md
-      - file: content/Wiki/en_qgis_queries_wiki.md
-        sections:
-          - file: content/Wiki/en_qgis_spatial_queries_wiki.md
-          - file: content/Wiki/en_qgis_non_spatial_queries_wiki.md
-      - file: content/Wiki/en_qgis_table_functions_wiki.md
-      - file: content/Wiki/en_qgis_joins_wiki.md
-        sections:
-          - file: content/Wiki/en_qgis_spatial_joins_wiki.md
-          - file: content/Wiki/en_qgis_non_spatial_joins_wiki.md      
-      - file: content/Wiki/en_qgis_raster_wiki.md
-        sections:
-          - file: content/Wiki/en_qgis_raster_basic_wiki.md
-      - file: content/Wiki/en_qgis_automatisation_wiki.md
-        sections:
-          - file: content/Wiki/en_qgis_model_builder_wiki.md
-      - file: content/Wiki/en_qgis_representation_wiki.md
-        sections:
-          - file: content/Wiki/en_qgis_visualisation_wiki.md
-          - file: content/Wiki/en_qgis_map_making_wiki.md
-      - file: content/Wiki/en_qgis_common_errors_and_Issues.md
   - caption: Modul 1- Introduction GIS
     chapters:
       - file: content/Modul_1/en_qgis_theorie.md
@@ -68,6 +24,7 @@ parts:
         sections:
           - file: content/Modul_2/en_qgis_data_sources_ex1.md
           - file: content/Modul_2/en_qgis_data_sources_ex2.md
+          - file: content/Modul_2/en_qgis_basemap.md
       - file: content/Modul_2/en_qgis_modul_2_exercises.md
         sections:
           - file: content/Modul_2/en_qgis_modul_2_ex_1.md
@@ -113,6 +70,7 @@ parts:
   - caption: Modul 6- Data analysis with QGIS
     chapters:
       - file: content/Modul_6/en_qgis_data_analysis_theorie.md
+      - file: content/Modul_6/en_qgis_common_data_analysis.md
         sections:
           - file: content/Modul_6/en_qgis_data_analysis_ex1.md
   - caption: Modul 7- Automation with QGIS
@@ -138,6 +96,50 @@ parts:
           - file: content/Modul_9/en_qgis_modul_9_ex4.md
           - file: content/Modul_9/en_qgis_modul_9_ex5.md
           - file: content/Modul_9/en_qgis_modul_9_ex6.md
+  - caption: Wiki
+    chapters:
+      - file: content/Wiki/en_qgis_qgis_basics_wiki.md
+        sections:
+          - file: content/Wiki/en_qgis_installation_wiki.md
+          - file: content/Wiki/en_qgis_interface_wiki.md
+          - file: content/Wiki/en_qgis_projects_folder_structure_wiki.md
+          - file: content/Wiki/en_qgis_projections_wiki.md
+          - file: content/Wiki/en_qgis_basemaps_wiki.md
+          - file: content/Wiki/en_qgis_plugins_wiki.md
+          - file: content/Wiki/en_qgis_data_sources_wiki.md
+      - file: content/Wiki/en_qgis_geodata_wiki.md
+        sections:
+          - file: content/Wiki/en_qgis_geodata_types_wiki.md      
+          - file: content/Wiki/en_qgis_import_geodata_wiki.md
+          - file: content/Wiki/en_qgis_OpenStreetMap_wiki.md
+          - file: content/Wiki/en_qgis_layer_concept_wiki.md
+          - file: content/Wiki/en_qgis_attribute_table_wiki.md
+          - file: content/Wiki/en_qgis_digitalization_wiki.md   
+      - file: content/Wiki/en_qgis_data_classification_wiki.md
+        sections:
+          - file: content/Wiki/en_qgis_single_symbol_wiki.md
+          - file: content/Wiki/en_qgis_categorized_wiki.md
+          - file: content/Wiki/en_qgis_graduated_wiki.md
+      - file: content/Wiki/en_qgis_geoprocessing_wiki.md
+      - file: content/Wiki/en_qgis_queries_wiki.md
+        sections:
+          - file: content/Wiki/en_qgis_spatial_queries_wiki.md
+          - file: content/Wiki/en_qgis_non_spatial_queries_wiki.md
+      - file: content/Wiki/en_qgis_table_functions_wiki.md
+      - file: content/Wiki/en_qgis_joins_wiki.md
+        sections:
+          - file: content/Wiki/en_qgis_spatial_joins_wiki.md
+          - file: content/Wiki/en_qgis_non_spatial_joins_wiki.md      
+      - file: content/Wiki/en_qgis_raster_wiki.md
+        sections:
+          - file: content/Wiki/en_qgis_raster_basic_wiki.md
+      - file: content/Wiki/en_qgis_automatisation_wiki.md
+        sections:
+          - file: content/Wiki/en_qgis_model_builder_wiki.md
+      - file: content/Wiki/en_qgis_representation_wiki.md
+        sections:
+          - file: content/Wiki/en_qgis_visualisation_wiki.md
+          - file: content/Wiki/en_qgis_map_making_wiki.md
   - caption: GIS in Anticipatory Action
     chapters:
       - file: content/GIS_AA/en_qgis_drought_trigger_somalia.md

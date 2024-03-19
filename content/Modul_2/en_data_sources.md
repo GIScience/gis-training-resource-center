@@ -1,6 +1,3 @@
-🚧 This training platform and the entire content is under ⚠️construction⚠️ and 
-may not be shared or published! 🚧
-
 # Data sources
 To find the appropriate data you are looking for, you can search online data 
 sharing platforms. Some important ones are highlighted below. 
@@ -60,14 +57,14 @@ licensing and to follow the respective regulations to avoid difficulties.
 | Name | Data | Link |
 | :-------------------- | :----------------- | :---------- |
 | MapAction | Emergency mapping resources | https://maps.mapaction.org/ | 
-| Fieldmaps.io | Data and map download platform for humanitarian use | https://fieldmaps.io/ | 
-<!-- CHECK: link doesn't work? -->
+| Fieldmaps.io | Data and map download platform for humanitarian use | https://fieldmaps.io | 
 | Acled | Conflict data | https://acleddata.com/data-export-tool |
 | GDACS | Disaster database | https://www.gdacs.org |
 | ZKI/DLR | Flood extents, damage extents, earth observation data | https://activations.zki.dlr.de/en/activations/ |
 | Waterpoint | Data on waterpoints | https://www.waterpointdata.org | 
-<!-- is water points more appropriate under humanitarian / general? it's not disaster data -->
 | WFP Vulnerability Analysis and Mapping | Data on food security, hazards, conflicts, climate | https://dataviz.vam.wfp.org/ |
+
+<!-- is water points more appropriate under humanitarian / general? it's not disaster data -->
 
 
 ### Population data
@@ -97,32 +94,58 @@ licensing and to follow the respective regulations to avoid difficulties.
 | OpenAerialMap | Crowdsourced drone imagery | https://map.openaerialmap.org/ |
 | USGS Earth Explorer | Satellite data from multiple sources, including Landsat and Sentinel | https://earthexplorer.usgs.gov/ |
 | NASA Shuttle Radar Topography Mission (SRTM) | Global elevation data | http://srtm.csi.cgiar.org/srtmdata/ |
-| Earth Observe | digital elevation model on a global scale | http://srtm.csi.cgiar.org/srtmdata/ | 
-<!-- FIXME: wrong link for Earth Observe -->
+| Earth Observe | digital elevation model on a global scale |https://earthexplorer.usgs.gov/ | 
 | Copernicus | Earth observation data | https://scihub.copernicus.eu/ | 
 | GlobCover | Raster data on land cover | http://due.esrin.esa.int/page_globcover.php |
 
 
 ## OpenStreetMap data
-<!-- ADD: context/info about what OSM data is and why it's useful -->
 
-### OpenStreetMap
+OpenStreetMap (OSM) is a collaborative project that aims to create a free and editable map of the world. Unlike traditional maps, which are often proprietary and controlled by commercial entities, OSM allows anyone to contribute and edit map data, resulting in a detailed and constantly evolving map of roads, trails, landmarks, and more. With its open-source nature and global community of contributors, OpenStreetMap has become a valuable resource for a wide range of applications, from navigation and urban planning to disaster response and humanitarian aid.
 
-If you are using version 3.4 or higher in QGIS, it is by default possible to add 
-<!-- COMMENT: we have asked people to install 3.28 -->
-the OSM base map to your project. Expand the XYZ tiles entry in the data sources 
-browser panel, right-click on OpenStreetMap and select `Add Layer to Project`.
+There a multiple ways to get OpenStreetMap (OSM) data as a vector file into QGIS. The three most common and easy-to-use ways are geofarbik.de, HOT Export Tool and QickOSM. Echa oft he options hass trog advanteges and disatvanteges.
 
-```{figure} /fig/en_add_osm_basemap.png
----
-height: 500px
-name:
-align: center
-name: add_osm_basemap
----
-Screenshot of how to add OSM basemap
+```{Notes}
+In exercise OpenStreetMap data export all three options are explored.
 ```
-<!-- FIXME: This screenshot could be cropped -->
+
+__[Geofabrik.de](https://download.geofabrik.de/)__
+
+As you can see, Geofabrik is great if you want to get complete OSM datasets for  whole countries or regions. 
+
+| Advantages  |  Disadvantages |
+|---|---|
+|+ Quick access to complete OSM datasets|- If one is only interested in specific features or regions (other then countries), not optimal|
+|+ Very up-to-date OSM exports|- Large file size|
+|+ Clear documentation of which OSM features are contained in each shapefile|- Only available as shapefile|
+
+__[HOT Export tool](https://export.hotosm.org/v3/)__
+As you can see, the HOT Export tool offers a good mix of flexibility and quick 
+access to OSM data. However, there are quite some steps involved until the data 
+is in QGIS. 
+
+| Advantages  |  Disadvantages |
+|---|---|
+|+ Good options for data selection|- Many steps involved |
+|+ Many different data formats available|- Only fixed option for data selection|
+|+ Easy to use||
+|+ Query can easily be repeated | |
+
+
+__QuickOSM Plugin__
+| Advantages  |  Disadvantages |
+|---|---|
+|+ Query can be tailored for very specific data|- Requires knowledge of OSM data model |
+|+ Data loads directly in QGIS|- Building queries can quickly become complex|
+|+ Query can easily be repeated||
+
+
+
+```{tip}
+It is by default possible to add the OSM base map to your project.  Click on `Layer` -> `Add Layer` -> `Add XYZ Layer…`. Choose `OpenStreetMap` and click `Add` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#standard-qgis-basemaps)). 
+
+```
+
 
 ### QuickOSM plugin
 
@@ -282,122 +305,6 @@ name: HOT Export Tool done
 Downloading data from HOT Export Tool.
 ```
 
-### Overpass Turbo
-
-[Overpass Turbo](https://overpass-turbo.eu) is a web-based data export tool for 
-OSM. By running a query, you can download the data and import it into your project. 
-You can either run it by writing your query on the left or by using the wizard 
-which will assist you in writing your queries. 
-***Example***  
-To search for schools in your bounding box or search area you can either write 
-the query yourself or get it build by the wizard.  
-**1. Check Tagging Guidelines**  
-Search for it in the [OSM wiki](https://wiki.openstreetmap.org/wiki/Tags) and/or 
-[taginfo](https://taginfo.openstreetmap.org). In our example it is: *amenity=school*  
-**2.  Write or build the query**  
-Either use the wizard by tiping in *amenity=school in Heidelberg* or write your 
-own query (f. e. for your bounding box):  
-**Wizard:**
-```{figure} /fig/en_wizard_overpassturbo.png
----
-height: 250px
-name:
-align: center
-name: overpass_turbo_wizard
----
-Screenshot of the Wizard in overpass turbo
-```
-```{figure} /fig/en_wizard_result.png
----
-height: 250px
-name:
-align: center
-name: overpass_turbo_wizard_result
----
-Screenshot of the result
-```  
-**Query:**
-```sql
-[out:json];  
-(  
-  node ["amenity"="school"](49.35,8.553,49.481,8.756);
-  way ["amenity"="school"](49.35,8.553,49.481,8.756);
-  relation ["amenity"="school"](49.35,8.553,49.481,8.756);
-);
-out; 
-```
-**Bounding Box**  
-To query with a bounding box you need a special format. Specify it like so:
- + s (southern limit in decimal degrees, lowest latitude)
- + w (western limit in decimal degrees, lowest longitude)
- + n (northern limit in decimal degrees, highest latitude)
- + e (eastern limit in decimal degrees, highest longitude)
-     + for example:  
-```sql
-node ["key"="value"] (s, w, n, e);
-         out;
-```
-
-```{tip} 
-For more information on the query language check out the [Language Guide](https://wiki.openstreetmap.org/wiki/Overpass_API/Language_Guide).
-```
-**3. Download the data**  
-One can export the results in various ways.
-
-::::{tab-set}
-
-:::{tab-item} Data
-By exporting the data as f.e. GeoJSON you can later on import them in your QGIS 
-project.
-
-```{figure} /fig/en_overpass_turbo_data.png
----
-height: 250px
-name:
-align: center
-name: overpass_turbo_data
----
-Screenshot of how to export data in overpassturbo
-```
-
-:::
-
-:::{tab-item} Map
-By exporting the query as map, you can share your current view as link or image.
-
-```{figure} /fig/en_overpass_turbo_map.png
----
-height: 150px
-name:
-align: center
-name: overpass_turbo_map
----
-Screenshot of how to export map in overpassturbo
-```
-:::
-
-:::{tab-item} Query
-By exporting your query you can get the text or convert it to an OverpassXML or 
-OverpassQL formated query.
-
-```{figure} /fig/en_overpass_turbo_query.png
----
-height: 250px
-name:
-align: center
-name: overpass_turbo_query
----
-Screenshot of how to export query in overpassturbo
-```
-:::
-
-::::
-
-```{tip} 
-For more information, check out the [wiki](https://wiki.openstreetmap.org/wiki/Overpass_turbo).
-```
-
-### Ohsome tools
 
 [The Ohsome tools](https://heigit.org/big-spatial-data-analytics-en/ohsome/) 
 provide OpenStreetMap data analytics and downloads by HeiGIT. You can also 
