@@ -147,6 +147,7 @@ parts:
       - file: content/GIS_AA/en_qgis_historical_impact_assessment_sudan.md
         sections:
           - file: content/GIS_AA/en_qgis_historical_impact_assessment_sudan_ex1.md
+      - file: content/GIS_AA/en_qgis_GIS_AA_exercises.md
   - caption: Mobile Data Collection
     chapters:
       - file: content/Mobile_Data_collection/en_SMT.md

@@ -1,4 +1,7 @@
 # Historical Impact Assessment (HIA) for Flood in Sudan
+
+__🔙[Back to Homepage](/content/intro.md)__
+
 In 2023, the Sudan Red Cresent (SRCS), German Red Cross (GRC),  the Red Cross Red Crescent Climate Center (RCRCCC) and the Heidelberg Institute for Geoinformation Technology (HeiGIT) worked on an Early Action Protocol (EAP) for riverine floods along the River Nile in Sudan.
 One of the fundamental tasks while working on an EAP is to conduct a Historical Impact Assessment (HIA), for the particular hazard. The team of HeiGIT was responsible for this particular task and this article will tell the story of how they tackled the task.
 Due to the outbreak of hostilities in Sudan in 2023, the team could only rely on public data from the internet and some reports and data provided by SRCS.
