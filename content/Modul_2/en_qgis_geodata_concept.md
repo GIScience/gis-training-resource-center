@@ -48,7 +48,7 @@ width: 400
 The data entry for Lake Sulunga is represented by the grey polygon to the left
 ```
 
-<!--Insert table with examples of geodata -->
+<!--ADD: Insert table with examples of geodata, and how the data is stored in different file formats. See Uni Heidelberg lecture slides for this -->
 
 There are two primary types of geographic data: **vector data and raster data**. Both types represent tangible or 
 intangible things in the real world. However, how they store this data is quite different. Because of this, the 
