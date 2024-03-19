@@ -11,7 +11,7 @@ To analyse the data in QGIS is just one thing you can do with a HIA dataset. The
 ## Relevant Wiki Articles
 
 ## Data sources
-Download the data folder __[here]()__ and save it on your PC. Unzip the .zip file!
+Download the training data folder __[here](https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/Sudan_HIA_Ex/GIS_AA_HIA_Sudan_ex1.zip)__ and save it on your PC. Unzip the .zip file!
 The folder is called __GIS_AA_HIA_Sudan_ex1__ and contains the whole [standard folder structure](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure) with all data in the input folder and the additional documentation in the documentation folder.
 
 # Task
@@ -878,7 +878,7 @@ We also want to make sure that we rename the column containing the sum of the fl
 2. Import the file "sdn_adm_cbs_nic_ssa_20200831 — sdn_admbnda_adm1_cbs_nic_ssa_20200831"  from the input file in QGIS.
 
 
-__Visualise impact quantity data for one year on state level in QGIS: __
+__Visualise impact quantity data for one year on state level in QGIS:__
 
 1. Import the csv fille "Sudan_admin1_Flood_Impact_quantity_2020.CSV" from the input folder of task 8 in QGIS by opening the `Data Source Manager` and select the `Delimited Text` section.
     1. Here you can input your CSV-file and depending on the `File Format` you need to define Costum delimiters or you can just select CSV. In thix case go with semicolon `;`. Always check the Sample Data output at the bottom to see if the import is working as expected.

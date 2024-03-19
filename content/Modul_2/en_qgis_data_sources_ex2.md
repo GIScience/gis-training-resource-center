@@ -67,12 +67,10 @@ whole countries or regions.
 
 | Advantages  |  Disadvantages |
 |---|---|
-|+ Quick access to complete OSM datasets|- If one is only interested in specific features or regions, not optimal|
+|+ Quick access to complete OSM datasets|- If one is only interested in specific features or regions (other then countries), not optimal|
 |+ Very up-to-date OSM exports|- Large file size|
 |+ Clear documentation of which OSM features are contained in each shapefile|- Only available as shapefile|
 
-<!-- notes - at the start we say the data is available split by region, but here 
-   is says  it's not optimal for regional data. which? file sizes often not large -->
 
 ### Task: HOT Export Tool
 
@@ -115,7 +113,7 @@ Hot Export tool download of Mauritius financial institutions. Adapted screenshot
 
 4. Load the new file in QGIS.
 5. Arrange the layers on the map so you can see the new layer.
-6. Use the classification function to get a better overview to get a better 
+6. (optional) Use the classification function to get a better overview to get a better 
    overview:
     * Right-click on the layer `Mauritius_finical_institution` in the `Layer Panel` 
       -> `Properties`. A new window will open up with a vertical tab section on 
