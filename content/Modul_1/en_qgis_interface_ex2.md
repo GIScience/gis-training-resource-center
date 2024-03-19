@@ -27,7 +27,7 @@ The exercise covers:
 
 ## Data preparation
 
-- Download the zipped template folder structure [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_1/Modul_1_Exercise_1_Understanding_the_interface/Modul_1_Exercise_1_Understanding_the_interface.zip)
+- Download Download the zipped template folder structure [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_1/Modul_1_Exercise_1_Understanding_the_interface/Modul_1_Exercise_1_Understanding_the_interface.zip)
 - You should now have a folder structure looking like this:
 
 ```{figure} /fig/Standard_project_folder_structure.drawio.svg
