@@ -1,20 +1,27 @@
 🚧 This training platform and the entire content is under ⚠️construction⚠️ and 
 may not be shared or published! 🚧
 
-# Geodata and Geodata processing
+# Geodata management
+
+>and Geodata processing?
+
 **Competences:**
+
 * Data import
 * Geo features and attributes
 * Feature selection
 * Basemap selection
 
-In this chapter, we will have a close look at how to work with geodata in QGIS. 
+This chapter will focus on how to manage geodata on your computer and in QGIS, in order to have a clean and 
+structured workflow. Working in such a way can save you a lot of headaches when working with GIS-software. 
+
+<!-- In this chapter, we will have a close look at how to work with geodata in QGIS. 
 Since vector data is the primary geodata type you will work with at the beginning 
-of your GIS career, we will focus on vector geodata.
+of your GIS career, we will focus on vector geodata. -->
 
-## Geodata mananagemnet 
+## Geodata management 
 
-Working with geodata is not like working with data in programs like Microsoft 
+Working with geodata is not like working with data in programs such as Microsoft 
 Excel or Word. Whenever you load an image in a Word file, the file will contain 
 the image. If you delete the image on your computer, the Word file will still 
 contain a copy of the image. 
@@ -57,16 +64,22 @@ name:
 align: center
 name: Standard folder structure
 ---
-Standard folder structure. Source: ???
+Standard folder structure. Source: HeiGIT
 ```
-<!-- CHECK: add source -->
+<!-- CHECK: add source 
+I think Probably HeiGIT/Alec
+ -->
 
 ### Geodata naming 
 
+Naming your data correctly ensures that you can identify the layers and your computer does not run into any issues 
+when working with your data files. The name of your files themselves need to be clear, meaning that you or others 
+can identfify what the data shows, where the data comes from, and to what time it refers. In QGIS, you should name 
+your layers so you can identify the content, as well as what you have done with the layer. For example, if you have 
+clipped a street layer of new york, do not name the layer "clipped", give it a name such as "streets_NYC_clipped".
+
 There are some basic principles when it comes to naming geodata that you produce 
 or manipulate:
-<!-- CLARIFY: why do we need naming principles? -->
-<!-- CLARIFY: does this apply to file names, layer names, or both? -->
 
 * Do not use special characters like `!`,`?`, `/` or `-`.
 * Do not use blank spaces, use underscores `_`
@@ -79,7 +92,7 @@ names are not meaningful.
 
 `adm0 >> adm0_temp >> adm0_temp2 >> adm0_temp3 >> facilities_final`
 
-A better system of naming is shown below. In this version, it is clear what 
+A good naming system for layers is shown below. In this workflow, it is clear what 
 processing was performed at each step (reproject, clip layer, join with another layer, 
 output). <!-- CHECK: Is this understanding correct? --> 
 In this way, other people can understand what purpose different layers serve and 
@@ -87,22 +100,16 @@ whether they are needed in the final project.
 
 `adm0 >> adm0_projUTM >> adm0_projUTM_clipUrban >> adm0_projUTM_clipUrban_intersectFacilities >> facilities_processed`
 
-
 ## Data import
 
-Before you can start creating maps in QGIS, you need to add your data. 
+Before you can start creating maps in QGIS, you will need to load your data into QGIS. 
 
 Depending on which file format you want to import, the process differs slightly.
 
-::::{tab-set}
+### Vector data import
 
-:::{tab-item} Vector data import
-
-Typical vector data formats are Shapefile (`.shp`) and GeoPackage (`.gpkg`). 
+Typical [vector data formats](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_geodata_concept.html#vector-file-formats) are Shapefile (`.shp`) and GeoPackage (`.gpkg`). 
 The process of importing vector data in either of the two formats is the same. 
-[Section 2.1](../../content/Modul_2/en_qgis_geodata_concept.md) has a list of 
-common vector data formats. <!-- CHECK: Is it possible to link to the section of 
-  the page? -->
 
 ```{Note}
 GeoPackage files can contain multiple datasets and even whole QGIS projects. 
@@ -110,39 +117,43 @@ When you load a GeoPackage in QGIS, a window will appear where you can select
 the datasets you want to load.
 ```
 
-There are two ways to load vector data in QGIS. Via the `Layer` menu or via 
-drag-and-drop.
-<!-- FIXME: Also through the browser pane and keyboard shortcuts -->
+QGIS offers a few ways to load vector data into QGIS. The most immediate is via drag-and-drop, where you simply drag the data files you want to add to your QGIS project from your file browser into the QGIS window. Another method is via the "__Data Source Manager__" (`Layer` > `Data Source Manager`). You can also open the Data Source Manager with the keyboard-shortcut `CTRL + L`. 
 
-### Open vector data via Layer menu
+#### Open vector data via the Data Source Manager
 
-1. Click on `Layer`-> `Add Layer`-> `Add Vector Layer...`
+1. Click on `Layer`-> `Add Layer`-> `Add Vector Layer...`. This will open the Data Source Manager. 
 2. Click on the three points ![](/fig/Three_points.png) and navigate to your 
    vector file
-3. Select the file and click `Open`
+3. Select the file and click `Open`. More options will appear. In most cases, you can leave these options as they are.
 4. Back in QGIS click `Add`
 
-<!-- CLARIFY: What should people do with optional settings? -->
-<!-- ADD: Should mention zipped vs unzipped shapefiles -->
+```{Attention}
+QGIS only let's you import __unzipped__ shapefiles. Make sure to unzip your data files before importing them into QGIS.
+```
 
+:::{dropdown} Video: Importing vector data via the Data Source Manager
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_vector.mp4"></video>
+:::
 
+#### Open vector data via drag-and-drop
 
-### Open vector data via drag-and-drop
-<!-- FIXME: Explain this video. Where should people drag and drop? -->
+QGIS let's you open data in your QGIS-project by simply dragging the files from your file browser onto your QGIS window. Shapefiles contain only 1 layer per `.shp`-files, which will be added automatically into you layer-panel. Geopackage files (`.gpk`) can contain multiple layers in a single file. If you add a geopackage file, a new window will open where you will be prompted to select the layers you want to add to your project. 
+
+:::{dropdown} Video: Importing vector data via drag-and-drop
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_vector_d_d.mp4"></video>
 :::
 
+### Delimited text import
 
-:::{tab-item} Delimited text import
+In your GIS-career, you will come across geodata in the  format of delimited text files, such as `.csv`-files (Comma-Separated-Values). These files contain tabular data, which can be opened by programs such as Microsoft Excel. They contain geographical or positional information as point coordinates in separated columns (for example, latitude and longitue, or x- and y-coordinates), or as "Well-known-text" (WKT), which represents geometries.  
 
-### Open  Delimited Text Layer (.csv, .txt)
+#### Open Delimited Text Layer (.csv, .txt)
 
 ```{Tip}
 To load data from spreadheets such as Comma Separated Value (`.csv`) or 
 Excel (`.xlsx`), the datasets need to have columns containing geometry - this is 
 most often in the form of latitude (Y field) and longitude (X field), but might 
-also be in other formats. 
+also be in other formats, such as WKT. In this case, you can also have complex geometries in your delimited text file.  
 ```
 
 ```{figure} /fig/en_import_delimeted_text.png
@@ -181,9 +192,8 @@ Import delimited text - file format.
 4. `Geometry definition`: In this section, you specify which columns of the file 
    contain the spatial information to georeference the data on the map. If the 
    file has a column containing __latitude__ and another with __longitude__ data, 
-   you can use them to georeferenced the data. Check `Point Coordinates`. Select 
-   for `X field` “LONGITUDE” and for `Y field` “LATITUDE”.
-   <!-- CLARIFY: When wouldn't you choose Point ? -->
+   you can use them to georeferenced the data. Check `Point Coordinates` if the `.csv`-file contains point data. 
+   Select for `X field` “LONGITUDE” and for `Y field` “LATITUDE”.
 5. Under `Geometry CRS` select the coordinate reference system (CRS). By default, 
    QGIS will select the CRS of the project. 
 
@@ -191,16 +201,16 @@ Import delimited text - file format.
    (attribute only table)`.
 6. Click `Add`
 
+:::{dropdown} Video: Opening delimited text files in QGIS
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_textfile.mp4"></video>
 :::
 
-:::{tab-item} Raster data import
+### Raster data import
 
-There are two ways to load vector data in QGIS, via the `Raster` tab or via 
-drag-and-drop.
-<!-- FIXME: as above - also via browser panel and keyboard shortcut -->
+The import of raster data works in the same way as for vector data. You can either drag-and-drop the raster-files 
+onto your QGIS-window, or open then through the "Data Source Manager".
 
-### Open raster data via Layer menu
+:::{dropdown} Video: Open raster data via the Data Source Manager
 
 1. Click on `Layer`-> `Add Layer`-> `Add Raster Layer`
 2. Click on the three points ![](/fig/Three_points.png) and navigate to your 
@@ -210,16 +220,15 @@ drag-and-drop.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_raster.mp4"></video>
 
-
-### Open raster data via drag-and-drop
-<!-- FIXME: Explain this video. Where should people drag and drop? -->
-<!-- CHECK: If we are focusing on raster data, do we need this here? -->
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_raster_d_d.mp4"></video>
-
 :::
 
-::::
+:::{dropdown} Video: Open raster data via drag-and-drop
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_raster_d_d.mp4"></video>
+:::
 
+### The Browser-panel
+
+<!-- ADD: Browser Panel workflow-->
 
 ## Geo features and attributes
 
@@ -239,6 +248,40 @@ align: center
 name: Vector Data overview
 ---
 Vector Data overview. Source: HeiGIT
+```
+
+### Open the attribute table
+
+Having a look into the attribute table is essential to understand and get an overview of the 
+data you are working with. You can open the attribute table in two ways. 
+
+1. Right click on a layer in the Layers panel and select `Open Attribute Table` 
+2. Select a layer in the Layers panel and click on the attribute table symbol in 
+   the toolbar. 
+
+```{figure} /fig/en_attributetable_right_click.png
+---
+height: 500px
+name:
+align: center
+name: Open Attribute Table with right click
+---
+Screenshot of Opening the Attribute Table with right click
+```
+
+```{note} 
+If you have multiple layers, only the attribute table of the layer currently 
+selected in the layer panel will open. 
+```
+
+```{figure} /fig/en_attributetable_top_right.png
+---
+height: 500px
+name: 
+align: center
+name: Open Attribute Table top right
+---
+Screenshot of Opening the Attribute Table
 ```
 
 :::{dropdown} Buttons of Attribute Table
@@ -270,42 +313,9 @@ Vector Data overview. Source: HeiGIT
 |![](/fig/mAction.png)| Actions | Lists the actions related to the layer           | |
 :::
 
-Having a look into the attribute table can be helpful to get an overview on the 
-data you are working with. 
+ 
 <!-- CLARIFY: What types of things can people get an overview of? -->
-
-### Open the attribute table
-
-You can open the attribute table in two ways. 
-
-1. Right click on a layer in the Layers panel and select `Open Attribute Table` 
-2. Select a layer in the Layers panel and click on the attribute table symbol in 
-   the toolbar. 
-
-```{figure} /fig/en_attributetable_right_click.png
----
-height: 500px
-name:
-align: center
-name: Open Attribute Table with right click
----
-Screenshot of Opening the Attribute Table with right click
-```
-
-```{note} 
-If you have multiple layers, only the attribute table of the layer currently 
-selected in the layer panel will open. 
-```
-
-```{figure} /fig/en_attributetable_top_right.png
----
-height: 500px
-name: 
-align: center
-name: Open Attribute Table top right
----
-Screenshot of Opening the Attribute Table
-```
+<!-- ADD: WHat will be the most important of these. EN-->
 
 
 ### Sort the attribute table
@@ -328,7 +338,7 @@ indicates whether it is sorted in ascending or descending order.
     height: 600px
     name:
     align: center
-    ---
+    --- 
     The data is sorted ascending. 
     ```
     
@@ -345,6 +355,8 @@ indicates whether it is sorted in ascending or descending order.
 <!-- FIXME: these images can be cropped to just show the important part -->
 
 ### Zoom in on a specific feature via attribute table
+
+It can be useful to zoom into an 
 <!-- ADD: Explain why this is useful -->
 
 * __Zoom:__ Right click on your feature --> `Zoom To Feature`
