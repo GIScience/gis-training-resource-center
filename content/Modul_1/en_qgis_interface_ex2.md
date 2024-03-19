@@ -27,8 +27,7 @@ The exercise covers:
 
 ## Data preparation
 
-- Download the zipped template folder structure [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_1/Modul_1_Exercise_1_Understanding_the_interface/Modul_1_Exercise_1_Understanding_the_interface.zip)
-- You should now have a folder structure looking like this:
+In this exercise, we will not be using any geodata. Instead, we will be learning how to navigate throught the different interfaces and how to save and load a QGIS project. You can download the zipped template folder structure [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_1/Modul_1_Exercise_1_Understanding_the_interface/Modul_1_Exercise_1_Understanding_the_interface.zip).
 
 ```{figure} /fig/Standard_project_folder_structure.drawio.svg
 ---
@@ -37,9 +36,8 @@ name:
 align: center
 name: Standard folder structure
 ---
-Standard folder structure. Source: 
+Standard folder structure. Source: HeiGIT
 ```
-
 ---
 
 ## Tasks
