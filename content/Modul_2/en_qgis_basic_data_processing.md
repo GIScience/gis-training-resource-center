@@ -3,7 +3,7 @@ may not be shared or published! 🚧
 
 # Geodata management
 
->and Geodata processing?
+<!-- no geodata processing? fix title-->
 
 **Competences:**
 
@@ -102,22 +102,23 @@ whether they are needed in the final project.
 
 ## Data import
 
-Before you can start creating maps in QGIS, you will need to load your data into QGIS. 
-
-Depending on which file format you want to import, the process differs slightly.
+Before you can start creating maps in QGIS, you will need to load your data into QGIS. Depending on which file format you want to import, the process differs slightly.
 
 ### Vector data import
 
 Typical [vector data formats](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_geodata_concept.html#vector-file-formats) are Shapefile (`.shp`) and GeoPackage (`.gpkg`). 
 The process of importing vector data in either of the two formats is the same. 
 
+QGIS offers a few ways to load vector data into QGIS. The most immediate is via drag-and-drop, where you simply 
+drag the data files you want to add to your QGIS project from your file browser into the QGIS window. Another 
+method is via the "__Data Source Manager__" (`Layer` > `Data Source Manager`). You can also open the Data Source 
+Manager with the keyboard-shortcut `CTRL + L`. 
+
 ```{Note}
 GeoPackage files can contain multiple datasets and even whole QGIS projects. 
 When you load a GeoPackage in QGIS, a window will appear where you can select 
 the datasets you want to load.
 ```
-
-QGIS offers a few ways to load vector data into QGIS. The most immediate is via drag-and-drop, where you simply drag the data files you want to add to your QGIS project from your file browser into the QGIS window. Another method is via the "__Data Source Manager__" (`Layer` > `Data Source Manager`). You can also open the Data Source Manager with the keyboard-shortcut `CTRL + L`. 
 
 #### Open vector data via the Data Source Manager
 
@@ -143,11 +144,11 @@ QGIS let's you open data in your QGIS-project by simply dragging the files from 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_vector_d_d.mp4"></video>
 :::
 
-### Delimited text import
+### Delimited text import (.csv, .txt)
 
-In your GIS-career, you will come across geodata in the  format of delimited text files, such as `.csv`-files (Comma-Separated-Values). These files contain tabular data, which can be opened by programs such as Microsoft Excel. They contain geographical or positional information as point coordinates in separated columns (for example, latitude and longitue, or x- and y-coordinates), or as "Well-known-text" (WKT), which represents geometries.  
+In your GIS-career, you will come across geodata in the  format of delimited text files, such as `.csv`-files (Comma-Separated-Values). These files contain tabular data, which can be opened by programs such as Microsoft Excel. They contain geographical or positional information as point coordinates in separated columns (for example, latitude and longitue, or x- and y-coordinates), or as "Well-known-text" (WKT), which represents complex geometries, such as polygons or lines.  
 
-#### Open Delimited Text Layer (.csv, .txt)
+#### Open Delimited Text Layer 
 
 ```{Tip}
 To load data from spreadheets such as Comma Separated Value (`.csv`) or 
@@ -230,7 +231,7 @@ onto your QGIS-window, or open then through the "Data Source Manager".
 
 <!-- ADD: Browser Panel workflow-->
 
-## Geo features and attributes
+## The attribute table
 
 Each vector layer consists of geometric features (points, lines or polygons) and 
 an __attribute table__. The attribute table contains information on each feature 
@@ -250,7 +251,7 @@ name: Vector Data overview
 Vector Data overview. Source: HeiGIT
 ```
 
-### Open the attribute table
+### Opening the attribute table
 
 Having a look into the attribute table is essential to understand and get an overview of the 
 data you are working with. You can open the attribute table in two ways. 
@@ -313,9 +314,7 @@ Screenshot of Opening the Attribute Table
 |![](/fig/mAction.png)| Actions | Lists the actions related to the layer           | |
 :::
 
- 
-<!-- CLARIFY: What types of things can people get an overview of? -->
-<!-- ADD: WHat will be the most important of these. EN-->
+<!-- ADD: WHat will be the most important of these. Needs more explanation. EN-->
 
 
 ### Sort the attribute table
@@ -352,19 +351,17 @@ indicates whether it is sorted in ascending or descending order.
     The data is sorted descending.  
     ```
 ``````
-<!-- FIXME: these images can be cropped to just show the important part -->
 
 ### Zoom in on a specific feature via attribute table
 
-It can be useful to zoom into an 
-<!-- ADD: Explain why this is useful -->
+You can zoom in on a specific feature if you need to locate it geographically or you want to get a closer look: 
 
-* __Zoom:__ Right click on your feature --> `Zoom To Feature`
+1. __Zoom:__ Right click on a feature --> `Zoom To Feature`
+2. Close your attribute table. The map canvas will now show the selected feature. 
 
-<!-- CLARIFY: Click on a cell rather than the row ID --> 
-
-
+:::{dropdown} Video: Zoom in on a feature
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zoom_to_feature.mp4"></video>
+:::
 
 ### Manually select features in the attribute table
 
@@ -378,8 +375,9 @@ to select features is via the attribute table.
   features click on `Show all features`. 
 * __Only show unselected features__ Select features and click on ![](/fig/mActionInvertSelection.png)
 
-
+:::{dropdown} Video: Manually select features in the attribute table
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_attribute_table_select.mp4"></video>
+:::
 
 ### Zoom to selected area
 Now that you know how to select features, you can zoom onto your area of 
@@ -435,10 +433,11 @@ Screenshot of how to save only selected features.
 ```
 
 ## Basemaps
-<!-- CLARIFY: This section could be rewritten more clearly -->
-Basemaps are background maps. They are often very practical since they are easy 
-to use, allow easy orientation on the map canvas and are diverse. QGIS offers 
-OpenStreetMap and some other base maps by default. 
+
+<!-- CLARIFY: This section could be rewritten more clearly; 
+EN: Added a bit more context -->
+Basemaps are background maps that help you visualise the geographic area you are working on. They are very practical since they are easy to use, allow easy orientation on the map canvas. QGIS offers 
+OpenStreetMap and some other base maps by default, such as OpenStreetMap or MapZen Global Terrain.
 
 However, there is a wide range of base maps that can be used via extra plugins 
 or XYZ Tiles.
@@ -469,20 +468,19 @@ There are two ways to add OpenStreetMap as a basemap.
 ### QuickMapServices
 
 There are lots of plugins available for QGIS that provide additional tools not 
-available in a standard installation. The [plugins page] on the wiki has more 
-<!-- FIXME: add link -->
+available in a standard installation. The [plugins page](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html) on the wiki provides a more detailed example
 information.
 One useful plugin is [QuickMapServices](https://nextgis.com/blog/quickmapservices/). 
 This plugin lets you access a wide range of basemaps that are not available in 
-QGIS by default. 
-<!-- CLARIFY: give examples -->
+QGIS by default, such as Bing or Sentinel-2 satellite imagery.
 
 :::{dropdown} Installation of plugins
 To install a plugin `Plugins` -> `Manage and Install Plugins…` -> `All` -> 
 Search for the plugin -> `Install Plugin`
-<!-- CLARIFY -->
+
 <!-- FIXME: Plugin installation should be its own section, not nested under 
-   QuickMapServices -->
+   QuickMapServices 
+ -->
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_plugins.mp4"></video>
 
@@ -492,21 +490,37 @@ plugin name doesn't (e.g. When looking for QuickMapServices, searching "Quick Ma
 will not return results but "quickmap" will). You can use an asterisk (`*`) as a
 wildcard in searches (so "quick*map" will return results with or without a space
 between "quick" and "map"). 
+```
 
 If you still cannot find an extension, you may need to allow experimental 
 extensions in the options (see below).
+
+```{figure} /fig/en_30.30.2_plugin_installation_experimental_checkbox.png
+---
+name: plugin manager allow experimental plugins
+width 400 px
+---
+Plugin Manager settings to show experimental plugins
 ```
-<!-- FIXME: "see below" - no content given below -->
+
 :::
 
+To add a Basemap from the QuickMapServices Plugin:
 
-`Web` -> `QuickMapServices` -> select provider e.g. NASA -> select basemap
-<!-- CLARIFY - make these instructions easier to follow. What are we doing and why? -->
+1. In the main menu in the top bar of your screen, navigate to `Web` > `QuickMapServices` 
+2. Click on `Search QMS`. A new panel will open, most likely at the bottom right.
+3. Here, you can search for a basemap of your choice. For example, Bing Aerial, different versions of OpenStreetMap, Sentinel-2 satellite imagery. 
 
-__Functionality of QuickMapServices Plugin__
+```
+{Tip}
+A list of basemaps and useful search queries for the QMS-plugin can be found on [this website](https://qms.nextgis.com). This link can also be found in the "About" section of the QMS-plugin
+```
+
+:::{dropdown} Video: Functionality of the QuickMapServices Plugin__
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/add_basemap_quickmapservice.mp4"></video>
 
 ```{Note}
-There can be problems when printing some basemaps from the QuickMapServices!
+When you are using QuickMapServices, be aware that some of these maps are under copyright laws, that restrict the reproduction of these maps. Be aware of these restrictions by looking up the copyright licences for the basemaps you are using. In general, satellite imagery is not free to use. 
 ```
-<!-- CLARIFY: What are the problems? Are there any fixes for them? -->
+<!-- CLARIFY: What are the problems? Are there any fixes for them? DONE
+EN: Is my understanding correct? -->
