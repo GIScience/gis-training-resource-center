@@ -326,31 +326,26 @@ indicates whether it is sorted in ascending or descending order.
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_show_attribute_table.mp4"></video>
 
-``````{list-table}
-:header-rows: 1
-:widths: 25 25
+::::{grid} 2
 
-* - Sorted ascending
-  - Sorted descending
-* - ```{figure} /fig/en_ascending.png
-    ---
-    height: 600px
-    name:
-    align: center
-    --- 
-    The data is sorted ascending. 
-    ```
-    
-  -
-    ```{figure} /fig/en_descending.png
-    ---
-    height: 600px
-    name: 
-    align: center
-    ---
-    The data is sorted descending.  
-    ```
-``````
+:::{grid-item-card} 
+```{figure} /fig/en_ascending.png
+---
+width: 300px
+name: attribute table ascending sort
+---
+Attribute table sorted ascendingly. 
+```
+:::
+:::{grid-item-card}
+```{figure} /fig/en_descending.png
+---
+width: 300px
+name: attribute table descending sort
+---
+Attribute table sorted descendingly.  
+```
+:::
 
 ### Zoom in on a specific feature via attribute table
 
@@ -396,8 +391,7 @@ Screenshot of how to zoom to Selection on the top.
 
 ```{figure} /fig/en_zoom_to_selection_2.png
 ---
-width: 600px
-name:
+width: 450px
 align: center
 name: Zoom to Selection, right-click.
 ---
@@ -435,14 +429,14 @@ Screenshot of how to save only selected features.
 ## Basemaps
 
 <!-- CLARIFY: This section could be rewritten more clearly; 
-EN: Added a bit more context -->
+EN: Added a bit more context. Is this enough? -->
 Basemaps are background maps that help you visualise the geographic area you are working on. They are very practical since they are easy to use, allow easy orientation on the map canvas. QGIS offers 
 OpenStreetMap and some other base maps by default, such as OpenStreetMap or MapZen Global Terrain.
 
 However, there is a wide range of base maps that can be used via extra plugins 
 or XYZ Tiles.
 
-Here we give you an overview of ways to access base maps in QGIS.
+The following section will provide an overview on how to access and add basemaps to your QGIS-project.
 
 ### Standard QGIS Basemaps
 
@@ -462,7 +456,6 @@ There are two ways to add OpenStreetMap as a basemap.
 
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Add_basemap_OSM.mp4"></video>
-
 
 
 ### QuickMapServices
