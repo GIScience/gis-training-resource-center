@@ -83,9 +83,12 @@ A list of basemaps and useful search queries for the QMS-plugin can be found on 
 
 :::{dropdown} Video: Functionality of the QuickMapServices Plugin__
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/add_basemap_quickmapservice.mp4"></video>
+:::
 
 ```{Note}
 When you are using QuickMapServices, be aware that some of these maps are under copyright laws, that restrict the reproduction of these maps. Be aware of these restrictions by looking up the copyright licences for the basemaps you are using. In general, satellite imagery is not free to use. 
 ```
+
+
 <!-- CLARIFY: What are the problems? Are there any fixes for them? DONE
 EN: Is my understanding correct? -->
