@@ -57,10 +57,11 @@ Beginners-level: no specific knowledge about QGIS/uMap required
 
 ## Instructions for the trainers 
 
-:::{dropdown} Trainers Corner
-### Preparation
+:::{dropdown} __Trainers Corner__
+### Prepare the training
 
 - Take the time to familiarise yourself with the provided material for the exercise and the Sketch Map Tool in general. 
+- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
 
 ### Available Material
 
@@ -73,18 +74,18 @@ Beginners-level: no specific knowledge about QGIS/uMap required
 You can also create your own cases. Prepare a short description about the case and the Sketch Maps beforehand. 
 ```
 
-### During the exercise:  
-#### Introduction:   
->insert links  
+### Conduct the training: 
+
+__Introduction:__   
 - Introduce the idea, the aim and the benefits of a Sketch Map. If you are focusing on EVCA you might use the [EVCA Sketch Map Tool Slides]() 
 - Provide access to the needed material.
 - Organize the groups (e.g. create breakout-rooms) and assign the groups with their case. The group sizes shouldn´t be too big, so everyone can contribute. For each case assign 2-3 participants the role of facilitators and 4-7 participants the role of community members.
 
-#### Time for group work: 
+__Time for group work:__
 - Check-in with the groups if there are questions or problems.
 - Prepare the presentation tool for the Wrap-Up.
 
-#### Wrap up: 
+__Wrap up:__ 
 - Take some time at the end to wrap up where the group will present their findings.
 - Summarize challenges of the participatory mapping approach.
 - Discuss benefits of showing results as a map

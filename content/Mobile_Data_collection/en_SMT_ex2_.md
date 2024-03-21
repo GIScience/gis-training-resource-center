@@ -49,11 +49,13 @@ In general: about 1 h to 1,5 h (depending on number of groups)
 :::{grid-item-card}
 #### Available data
 
+- Introduction Slides to the Sketch Map Tool
+>anpassen: 5 links für 5 example maps
 - Download the data for this exercise [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Exercise_2.zip) and unzip the folder
 
 - You will find 5 Case studies which contain 2 Sketch Maps (one based on OSM, one on satellite imagery) and the respective Quality Report
 
-- Download the [Printable exercise factsheet](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_2.pdf)
+- [Printable exercise factsheet](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_2.pdf)
 
 
 :::
@@ -65,12 +67,13 @@ In general: about 1 h to 1,5 h (depending on number of groups)
 
 ## Instructions for the trainers 
 
-:::{dropdown} Trainers Corner
-### Preparation and material 
+:::{dropdown} __Trainers Corner__
+### Prepare the training 
 - Online access and devices (PC) to be able to use the Sketch Map Tool and create maps online.
 - For each group one individual set of the Sketch Maps (OSM + satellite) digitally or as a print and reports of one area OSM + satellite-map and the fitting report.
 - Take a look and make yourself familiar on the provided material for the exercise and the Sketch Map Tool in general. 
 - Prepare a board (it can be a white board/flipchart/or digital e.g. mirro-board) where the participants can add their findings.
+- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
 
 ### Available Material: 
 
@@ -79,17 +82,17 @@ In general: about 1 h to 1,5 h (depending on number of groups)
 - [5 prepared cases](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Exercise_2.zip) if you like to save time (with Sketch Maps and Map Quality Check) 
 
 
-### During the exercise:  
-#### Introduction: 
+### Conduct the training:  
+__Introduction:__ 
 - Make sure everyone is familiar with the basic understanding about OSM and satellite maps. Introduce the aim of the exercise and the idea of the traffic lights and the analysis before you start the exercise!
 - Provide access to the needed material and build groups of 3 to 6 people in order to discuss the findings. 
 
-#### Time for group work: 
+__Time for group work:__ 
 - Check-in with the groups to see if there are any questions or problems.
 - Prepare the presentation tool (e.g. Miro, White-board, etc.) for the wrap-up.
 
 
-#### Wrap up: 
+__Wrap up:__ 
 - All groups present their findings (each 5 min, make it short but display the maps they are talking about).
 - Discuss benefits, as well as challenges and problems in the use of the Sketch Map Tool. 
 - Time to for open questions.
@@ -98,16 +101,6 @@ In general: about 1 h to 1,5 h (depending on number of groups)
 
 
 ## What you need to know - background information
-
-### Benefits of the Sketch Map:
-
-#### During the data collection: 
-- Maps provide orientation and can guide discussions
-- With the sketching, you achieve an immediate visualization of local knowledge.
-
-#### After the data collection:
-- Displaying and sharing the result
-- integrate and analyse local knowledge in GIS-software such as QGIS 
 
 ### Characteristics of the two base maps 
 

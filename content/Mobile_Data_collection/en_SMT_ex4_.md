@@ -51,8 +51,9 @@ __Exercise B__: 30 min
 #### Available Data
 
 - Download the data for this exercise [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_4.zip) and unzip the folder
-- In the data subfolder (`\data\input`), you will find the data you need to start the exercise.
-- Download the [Printable exercise factsheet](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_4.pdf)
+- In the data subfolder (`\data\input`), you will find the data you need to start the exercise (created raw map & pre-marked and photographed map). You will also find de geodata of the results (`\data\output`) and the intermediate result(`\data\temp`).
+- [Printable exercise factsheet](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_4.pdf)
+-[Introduction Slides]() about the Sketch Map Tool
 :::
 ::::
 
@@ -64,57 +65,50 @@ Decide together with the responsible working group which GIS system is prefered 
 
 ## Instructions for the trainers 
 
-:::{dropdown} Trainers Corner
-### Preparation
+:::{dropdown} __Trainers Corner__
 
+### Prepare the training
 - Online access and devices (PC)
 - QGIS installed on the computer
-- Take a look and make yourself familiar on the provided material for the exercise and the Sketch Map Tool in general. 
+- Take a look and make yourself familiar on the provided material for the exercise and the Sketch Map Tool in general.
+- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction 
 
 ```{Note}  
-- If you like to skip parts of the workflow, make sure you have alternative material (like preprinted, or already marked Sketch maps) prepared.
+- If you like to skip parts of the workflow, you can use the available geodata or intermediate results.
 - If you would like to adapt this exercise to your specific use case, create your own case-description. 
 ```
 
-
-### Available Material
-* [Introduction Slides]() about the Sketch Map Tool
-* Just the created map for (pre-printing)
-* Pre-marked and photographed map
-* Geodata of the results
-
-
-### During the exercise:  
-#### Introduction: 
+### Conduct the training:  
+__Introduction:__ 
 - Introduce the idea, the aim and the general workflow of the Skech Map Tool beforehand 
 - Provide access to the needed material 
 - check-in if there are questions or problems.
 
-#### Wrap up: 
+__Wrap up:__ 
 - Take some time at the end to wrap up and that several people present their result map
 - Discuss Benefits of showing results as a map
 - Time to for Open questions.
 :::
 
 
-## Important information
+## Step-by step introduction for participants 
 
 
-__You can choose wether you want to do the exercise with QGIS (Exercise A) or with uMAP (Exercise B) (or both)__. An internet connection is required to work with uMAP.
+__You can choose whether you want to do the exercise with QGIS (Exercise A) or with uMAP (Exercise B) (or both)__. An internet connection is required to work with uMAP.
 
 ::::{grid} 2
 
 :::{grid-item-card}
 :link: https://giscience.github.io/gis-training-resource-center/content/Mobile_Data_collection/en_SMT_ex4_.html#exercise-a-exploration-basic-visualization-of-sketch-map-tool-outputs-in-qgis
 
-__Click here to start exercise A__
+__Click here to start exercise A (QGIS)__
 
 :::
 
 :::{grid-item-card}
 :link: https://giscience.github.io/gis-training-resource-center/content/Mobile_Data_collection/en_SMT_ex4_.html#exercise-b-basic-visualization-of-sketch-map-tool-outputs-in-umap
 
-__Click here to start exercise B__
+__Click here to start exercise B (uMAP)__
 
 :::
 ::::

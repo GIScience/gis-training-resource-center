@@ -39,8 +39,9 @@ Analysing participatory mapping results
 :::{grid-item-card}
 ### Available data
 - Download the data for this exercise [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_5.zip) and unzip the folder
-- In the data subfolder (`\data\input`), you will find the data you need to start the exercise.
-- Download the [Printable exercise factsheet](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_5.pdf)
+- In the data subfolder (`\data\input`), you will find the data you need to start the exercise (created raw map & 5 pre-marked and photographed maps). You will also find de geodata of the results (`\data\output`) and the intermediate result(`\data\temp`).
+- [Printable exercise factsheet](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_5.pdf)
+- Introduction Slides about the Sketch Map Tool
 :::
 ::::
 
@@ -48,33 +49,31 @@ Analysing participatory mapping results
 
 ## Instructions for the trainers 
 
-:::{dropdown} Trainers Corner
-### Preparation and material 
+:::{dropdown} __Trainers Corner__
+### Prepare the training
 - Online access and devices (PC)
 - QGIS installed on the computer
 - Take a look and make yourself familiar with the provided material for the exercise and the Sketch Map Tool in general. 
+- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
+
+```{Note}
+if you want to create additional or individual marked map examples you can use the empty Sketch Map provided in the materials. Also feel free to choose a completely different scenario by creating your own Sketch Map. 
+```
 
 
-### Available Material: 
-- Introduction Slides about the Sketch Map Tool
-- Empty SKetch Map that could be used for individual markings
-- 5 Pre-marked and photographed maps to be used as input for Sketch Map Tool for Exercise B
-- Geodata of the results
-- Factsheet for printing out
 
-
-### During the exercise:  
-#### Introduction: 
+### Conduct the training:  
+__Introduction:__ 
 - Introduce the idea, the aim and the general workflow of the Skech Map Tool beforehand. 
 - Provide access to the needed material.
 - check-in if there are questions or problems.
 - motivate fast participants to create a printable map in the end if they finish earlier than other participants
 
-#### Wrap up: 
+__Wrap up:__ 
 - Take some time at the end to wrap up and that several people present their result
-- Discuss the benefits of using heatmaps to analyze community mapping results.
+- Discuss the benefits of using heatmaps to analyze community mapping results
 - Refer to other chapters of the training platform and how users can benefit from it (e.g. visualisation or data analysis)
-- Leave time to for open questions.
+- Leave time for open questions.
 ::::
 
 
