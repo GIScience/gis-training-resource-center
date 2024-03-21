@@ -5,7 +5,6 @@
 
 ## What is the Sketch Map Tool?
 
->remove placeholder picture
 
 ```{figure} ../../fig/SketchMap_Logo_Top.jpg
 ---
@@ -66,4 +65,4 @@ __For more information on the EVCA:__
 
 __For gaining experiences on the use of the Sketch Map Tool:__
 
-Click [here](https://giscience.github.io/gis-training-resource-center/content/Mobile_Data_collection/en_SMT_training.html#sketch-map-tool-training) to navigate to the training exercises provided on this platfrom on the use of the SKetch Map Tool.
+- Click [here](https://giscience.github.io/gis-training-resource-center/content/Mobile_Data_collection/en_SMT_training.html#sketch-map-tool-training) to navigate to the training exercises provided on this platfrom on the use of the SKetch Map Tool.

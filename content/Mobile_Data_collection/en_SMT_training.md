@@ -1,7 +1,7 @@
 # Sketch Map Tool Training
 🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
-These five trainings exercises are designed to support the training with the Sketch Map Tool. The exercises are conceptualized for different aspects of the tool, with different time demands and different (GIS)-knowledge levels. All exercises contain clear instructions for trainers and participants and provide all necesary materials. [Introductory slides on the Sketch Map Tool]() with facilitator notes are available, offering an overview of its features and functionality as well as highlighting  its value proposition and the benefits of using it. Additionally, printable factsheets are provided for each exercise, ensuring easy access to the essentiel information and instructions.
+These five training exercises are designed to support the training with the Sketch Map Tool. The exercises are conceptualized for different aspects of the tool, with different time demands and different (GIS)-knowledge levels. All exercises contain clear instructions for trainers and participants and provide all necesary materials. [Introductory slides on the Sketch Map Tool]() with facilitator notes are available, offering an overview of its features and functionality as well as highlighting  its value proposition and the benefits of using it. Additionally, printable factsheets are provided for each exercise, ensuring easy access to the essentiel information and instructions.
 
 
 | Execise| Description |Focus Group|Estimated time| 

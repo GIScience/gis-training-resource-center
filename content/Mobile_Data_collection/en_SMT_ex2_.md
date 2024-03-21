@@ -75,12 +75,6 @@ In general: about 1 h to 1,5 h (depending on number of groups)
 - Prepare a board (it can be a white board/flipchart/or digital e.g. mirro-board) where the participants can add their findings.
 - Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
 
-### Available Material: 
-
->Add Link 
-- Introduction Slides to the Sketch Map Tool
-- [5 prepared cases](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Exercise_2.zip) if you like to save time (with Sketch Maps and Map Quality Check) 
-
 
 ### Conduct the training:  
 __Introduction:__ 
@@ -99,8 +93,7 @@ __Wrap up:__
 ::::
 
 
-
-## What you need to know - background information
+## What you need to know - Background information
 
 ### Characteristics of the two base maps 
 
@@ -157,13 +150,16 @@ To shorten the time, you can work with [prepared cases](https://nexus.heigit.org
 ### 2.	Collect your insights to the following questions
 Add your insights to a presentation or share it on a (digital) board:
 
-- What are the main characteristics of the area you see on the basemap? 
-Describe separately both basemaps, the one with the satellite imagery and the OSM data. 
+```{Note}
+The provided case studies are fictious example locations selected for training purposes without further knowledge about the communities in the displayed areas. In this exercise we focus on the comparison of OSM and satellite imagery base maps, regardless of the exact location of the map section on the world map.
+```
+
+
+- Which difference can you detect between satellite and OSM basemaps?
+- What are the main characteristics of the area you see on the basemap?  Describe separately both basemaps, the one with the satellite imagery and the OSM data. 
 - Could you orient yourself on the basemap? 
 Are there points of interests / something you could use as orientation point?
-- Would you say the basemaps are suited for participatory mapping?
-Reason your answer and think about participants that are not familiar with basemaps.  
-- Which difference can you detect between satellite and OSM basemaps?
+- Would you say the basemaps are suited for participatory mapping? Reason your answer and think about participants that are not familiar with basemaps.  
 - In which use cases would you prefer the OSM basemap? 
 - In which use cases would you prefer the Satellite basemap?
 - What traffic light colour would you give the satellite and OSM basemap individually for this area?

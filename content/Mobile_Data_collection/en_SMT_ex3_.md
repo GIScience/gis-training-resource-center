@@ -46,9 +46,10 @@ Beginners-level: no specific knowledge about QGIS/uMap required
 
 #### Available data and resources
 
-- Find the Case Studies here: [Case Study 1](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Case_Study_1.pdf), [Case Study 2](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Case_Study_2.pdf), [Case Study 3](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Case_Study_3.pdf)
-
-- Download the [Printable exercise factsheet](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_3.pdf)
+- Case Studies Descriptions: [Case Study 1](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Case_Study_1.pdf), [Case Study 2](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Case_Study_2.pdf), [Case Study 3](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Case_Study_3.pdf)
+- Case Studies Map Examples:
+- [Printable exercise factsheet](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_3.pdf)
+- Introduction Slides about the Sketch Map Tool 
 
 :::
 
@@ -63,16 +64,6 @@ Beginners-level: no specific knowledge about QGIS/uMap required
 - Take the time to familiarise yourself with the provided material for the exercise and the Sketch Map Tool in general. 
 - Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
 
-### Available Material
-
-> insert link
-
-* Introduction Slides about the Sketch Map Tool LINK
-* 3 Case descriptions (with precreated Sketch Maps):  [Case Study 1](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Case_Study_1.pdf), [Case Study 2](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Case_Study_2.pdf), [Case Study 3](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Case_Study_3.pdf)
-
-```{Hinbt}
-You can also create your own cases. Prepare a short description about the case and the Sketch Maps beforehand. 
-```
 
 ### Conduct the training: 
 
@@ -92,27 +83,24 @@ __Wrap up:__
 - Leave time for open questions.
 ::::
 
-## Background
+## Background Information
 
-### EVCA
-Sketch Maps are part of the Enhanced Vulnerability and Capacity Assessment (EVCA) Toolbox https://preparecenter.org/site/evca/toolbox/. 
+### Enhanced Vulnerability and Capacity Assessment (EVCA)
 
-### Benefits of the Sketch Map
+In order to spatially assess and identify risk factors, the EVCA recommends to conduct a mapping activitiy throughout the process where community members jointly create a spatial map, hazard & exposure map and vulnerability & capacity map (see [EVCA Toolbox](https://preparecenter.org/site/evca/toolbox/)). Mapping is done with paper and pen and generally on blank paper. The Sketch Map Tool has great potential to support a sustainable participatory mapping process by digitalizing the process while, at the same time, keeping it simple.
 
-#### During the data collection: 
+### Benefits of the Sketch Map Tool
 
+__During the data collection:__ 
 - Maps provide orientation and can guide discussions.
 - With the sketching you achieve an immediate visualization of local knowledge.
 
-#### After the data collection:
-
+__After the data collection:__
 - Displaying and sharing the result. 
-- integrate and analyse local knowledge in GIS-software such as QGIS
+- Integrate and analyse local knowledge in GIS-software such as QGIS
 
 
 ## Step-by-step introduction for participants 
-
-Download [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_3.pdf) the factsheets and print them out, they will serve you during the exercise as guidelines.
 
 
 ## Exercise: Roleplay
@@ -140,10 +128,7 @@ The group of facilitators will seperate from the rest in order to prepare their 
 - What do we want to find out when talking to the community? What do we want to map? What data do we want to collect?
 - What questions would we have to raise in order to get the right answers?
 - How can I help community members to orientate on the map?
-- What should be mapped and how should it be mapped? For this questions, take a look at the help page-subsection about Data collection in the field. 
->  (Link to helppage needs to be created).  
-
-
+- What should be mapped and how should it be mapped? For this questions, take a look at the [help page](https://sketch-map-tool.heigit.org/help)-subsection about Data collection in the field. 
 - Familiarise yourself with the map. What can you detect? Are there any landmarks you can use for orientation? 
 
 __Community members__
@@ -178,7 +163,7 @@ The trainer will end this roleplay when the time is over.
 
 ### 3. Optional: Upload your created maps
 
-
+:::{dropdown}__Upload your created maps and visualize the results in UMAP__
 Take a foto of your sketches or at least one sketch by loading them into [sketch-map-tool.heigit.org](https://sketch-map-tool.heigit.org/). On the website, choose 'Digitize your Sketch maps' on the right. Upload all your sketches in .png or .jpg format. You can mark your sketches and simply drag and drop them into the window. 
 
 Now, let's take a look at the results in order to understand the community mapping process. We will use the [uMap website](https://umap.openstreetmap.fr/en/)
@@ -194,6 +179,11 @@ __Load your data__
 - Compare detected markings with your physical map. Did the tool detect your markings correctly or are some markings missing? 
 - Which markings got detected better than others? What can you learn from this session in order to make better markings in the future?
 
+```{Tip}
+If you are further interested to customize your visualization in uMAP or to visulaize or even generate a printable map of your results in QGIS, have a look at [Exercise 4] where you will be guided through basic visualization in uMAP & QGIS.
+```
+
+::::
 
 ### 4. Final discussion and conclusion
 

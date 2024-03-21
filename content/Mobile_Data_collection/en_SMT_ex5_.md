@@ -254,7 +254,7 @@ Raster Transparency
 ```
 
 ```{note}
-Keep in mind that what you are seeing on your screen is not a map that is ready to be printed or distributed. YOu could nowcreate a printable map. Take a look at the chapter on the [print layout](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html) and the [wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_map_making_wiki.html?highlight=print+layout#map-making-wiki) to do so.
+Keep in mind that what you are seeing on your screen is not a map that is ready to be printed or distributed. You could now create a printable map. Take a look at the chapter on the [print layout](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html) and the [wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_map_making_wiki.html?highlight=print+layout#map-making-wiki) to do so.
 ```
 
 

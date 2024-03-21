@@ -53,7 +53,7 @@ __Exercise B__: 30 min
 - Download the data for this exercise [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_4.zip) and unzip the folder
 - In the data subfolder (`\data\input`), you will find the data you need to start the exercise (created raw map & pre-marked and photographed map). You will also find de geodata of the results (`\data\output`) and the intermediate result(`\data\temp`).
 - [Printable exercise factsheet](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_4.pdf)
--[Introduction Slides]() about the Sketch Map Tool
+- [Introduction Slides]() about the Sketch Map Tool
 :::
 ::::
 
@@ -211,7 +211,7 @@ Now load your vector file ("Schuld_Ahr-tal_sketch-map_Ex4.geojson") and geotiff 
 
 
 
-1. Digitization: Add a marking manually
+__1. Digitization: Add a marking manually__
 
 So what can we do if a marking has not been detected? We can add missing markings manually by tracking the drawing on the geotiff file. This process is also called [digitization](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation.html?highlight=digitize#digitalisation). 
 
@@ -228,9 +228,8 @@ Digitzing Toolbox
 
 Click on `Add Feature: Capture Polygon`![](/fig/mActionCapturePolygon.png). You will note that your mouse market now changed its symbol into a target. This means you can now start tracing the missing polygon my left-clicking. You finish your polygon by a right-click and you will be asked to enter the descriptions. Enter the information and click ok.
 
->figure below missing?
 
-```{figure} /fig/en_SMT_ex4_dig_info.png
+```{figure} /fig/en_SMT_ex4_dig_info.PNG
 ---
 height: 400px
 name: SMT Attribute table
@@ -256,7 +255,7 @@ The whole process of Digitization is explained in detail [here](https://giscienc
 
 
 
-2. Add a property/column to the Attribute Table
+__2. Add a property/column to the Attribute Table__
 
 Normally, you know the meaning of the markings in your Sketch Map. We will now learn how to add them to your vector layer. In our example, we assume we know that black and blue colors were used to mark past flood extents and red was used to mark critical infrastructures. We want to replicate this:
 - Right-click on your vector layer, navigate to `Open Attribute Table` and click on it.
@@ -292,7 +291,7 @@ Adding descriptions to the fields
 
 Now we want to visualize our results and generate a printable map so the results can be shown to third parties in a clear and comprehensible manner. We can now delete the geotiff layer by right-click -> `Remove Layer` since we will be working with the vector marking detections.
 
-1. __Customize Symbology__
+__1. Customize Symbology__
 
 We can customize the symbology of our vectory layer by right-clicking on it in the `Layers` Panel -> `Properties` -> `Symbology`.
 
@@ -325,7 +324,7 @@ Using the symbol selector
 ```
 
 
-2. __Make a printable Map__
+__2. Make a printable Map__
 
 
 1. Open a new print layout by clicking on `Project` -> `New Print Layout` -> enter the name of your current Project e.g "Ahrtal Flooding Sketch Map Tool". A new window will open with a blank canvas and a different set of tools. This is the __print layout designer__.
@@ -455,11 +454,11 @@ Generally, you can create maps, edit them, and share them with others on uMap wi
 Now that you imported your own data, you are ready to customize your own map in order to show your results to others in a vivid manner.
 In the toolbar on the right hand side you have various options to do so.
 
-1. Change the background
+__1. Change the background__
 
 Click on `Change tilelayers`![](/fig/en_SMT_ex4_UMAP_basemap.PNG) to choose another background map.
 
-2. Explore and Manage Data Layers
+__2. Explore and Manage Data Layers__
 
 Click on `Manage Layers`![](/fig/en_SMT_ex4_UMAP_layers.PNG) to open your layers panel. In this windows you will see all the layers in your project (in our case it is just one) and you are able to add additional information layers. The small symbols on the left hand side of you layer give you the option to hide, zoom to or delete your layer.
 
@@ -479,17 +478,16 @@ You can click on the table button ![](/fig/en_SMT_ex4_UMAP_Table.PNG) in order t
 Sketch Map Vector Output always have this same attribute table structure.
 ```
 
->Maybe the figure below needs to be redone?
 
 ```{figure} /fig/en_SMT_ex4_UMAP_AttributeTable.PNG
 ---
-width: 600px
+width: 1000px
 name: SMT Ex4 Attribute Table
 ---
 Attribute Table in UMAP
 ```
 
-2. Customize your visualization
+__2. Customize your visualization__
 
 Now we want to display the criticial infrastructure in red and the past flood extents in blue. For this we first have to create a group for each:
 
