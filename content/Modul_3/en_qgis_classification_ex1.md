@@ -18,7 +18,7 @@ This exercise aims to create an overview map of the distribition of food insecur
 
 
 ### Data
-Download all datasets **DATA LINK** and save the folder on your computer. Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects. Under "data > input" you find the following files:
+Download all datasets __[here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_3/Modul_3_Ex_1_Sierra_Leone/Modul_3_Ex_1_Sierra_Leone.zip)__ and save the folder on your computer. Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects. Under "data > input" you find the following files:
 - `Sierra_leone_foodinsecurity_2015.shp` (Polygon)
 - `Sierra_leone_borders.gpkg` (MultiLineString) GeoPackage
     - Sierra_Leone_national_borders (Lines)

@@ -5,9 +5,13 @@ The objective of this exercise is to navigate different data sources, develop an
 understanding of where and how to access relevant data and what to look out for.
 <!-- CLARIFY: what to look out for for what? -->
 
-### Links to Wiki articles
-will be done when Wiki is finished
-<!-- FIXME: Add wiki links -->
+## Relevant wiki articles
+
+* [QGIS Interface](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
+* [Types of Geodata](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_types_wiki.html)
+* [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)
+* [Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html)
+* [Geodata Classification- Graduated](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html)
 
 ### Data
 Since the exercises aim is for you to find data, there won't be any data to download. 

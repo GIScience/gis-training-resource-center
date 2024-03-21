@@ -164,7 +164,8 @@ parts:
   - caption: Trainers corner
     chapters:
       - file: content/Trainers_corner/en_how_to_training.md
-      - file: content/Trainers_corner/en_training_plans.md      
+      - file: content/Trainers_corner/en_training_plans.md
+      - file: content/Trainers_corner/en_how_to_teach_GIS.md      
   - caption: About
     chapters:
       - file: content/About/about_1.md

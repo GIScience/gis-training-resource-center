@@ -2,6 +2,8 @@
 
 __🔙[Back to Homepage](/content/intro.md)__
 
+🚧 This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+
 ## Aim of the exercise:
 
 
