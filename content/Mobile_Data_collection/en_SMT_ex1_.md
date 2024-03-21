@@ -38,34 +38,18 @@ preparing participatory mapping / facilitating participatory mapping/ analysing 
 
 :::{grid-item-card}
 
-#### Avalable data
+#### Available data
 
 >link the files
 
-- Download the data for this exercise here and unzip the folder
-
-- In the data subfolder (\data\input), you will find the data you need to start the exercise.
-- Download the [Printable exercise factsheet](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_1.pdf)
+- 3 case studies
+- Introduction slides about the Sketch Map Tool
+- [Printable exercise factsheet](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_1.pdf)
 
 :::
 
 ::::
 
-### Timetable
-
-1. __Introduction__:  10 min
-2.  __Group exercise__: 1h 35min  
-- 15 min group reading and discussion of the case  
-- 10 min for creating the maps
-- buffer time for printing (about 5 min)
-- 15 min for marking the Sketch maps
-- 10 min for digitizing the Sketch maps
-- 20 min to open the files in QGIS or uMap
-- 20 min preparation of a short presentation
-3. __Wrap-up__ (with presentations): 
-- 5 min per group to present their findings
-- 10 min general discussion
-- a bit buffer time for the change of the groups |
 
 ```{Tip}
 To shorten the time, you can also just focus on the hands-on-exploration of specific parts of the workflow. You can, for example, work with pre-marked maps to focus on the second half of the workflow, or just focus on the first parts and show the final parts with prepared examples by sharing your screen. 
@@ -75,7 +59,7 @@ To shorten the time, you can also just focus on the hands-on-exploration of spec
 
 :::{dropdown} Trainers Corner 
 
-### Preparation and material 
+### Prepare the training
 - Online access and devices (PC) to be able to use the Sketch Map Tool to create maps online, upload and download them.
 - Possibility to print the maps, smart phones to take the photos, and the possibility to upload the pictures to the Sketch Map Tool. 
 - Take the time to familiarise yourself with the provided material for the exercise and the Sketch Map Tool in general. 
@@ -89,28 +73,17 @@ Alternatives
 - If you would like to adapt this exercise to your specific use case, create your own case-description. 
 ```
 
+### Conduct the training:  
 
-### Available Material: 
-> needs to be linked directly + not fully understandable. Take a look at folder structure ex 4 or mention the file paths where to find the mentioned data
-
-•	Introduction slides about the Sketch Map Tool
-•	X EVCA-case studies as examples
-•	Alternative files based on OSM- and satellite-based Sketch Maps from 5 regions.
--	The created maps for pre-printing
--	Pre-marked and photographed maps 
--	Geodata of the results and some pictures 
-
-
-### During the exercise:  
-#### Introduction: 
+__Introduction:__ 
 - Introduce the idea, the aim, and the general workflow of the Sketch Map Tool before starting the exercise. 
 - Provide access to the needed material and form groups (at least 3 people each to discuss together; ideal group size is 3 to 6 participants).
 
-#### Time for group work: 
+__Time for group work:__  
 - Check-in with the groups and ask if there are questions or problems.
 - Prepare the presentation tool for the Wrap-Up.
 
-#### Wrap up: 
+__Wrap up:__  
 - All groups present their findings (each 5 min, make it short but show the maps they are talking about).
 - Discuss the benefits, as well as challenges and problems in the use of the Sketch Map Tool 
 - Leave some time to for Open questions.
@@ -137,7 +110,7 @@ SKetch Map Tool workflow
 - After mapping, the Sketch Map Tool supports the digitisation of the Sketch Maps. Upon uploading the pictures or scans of the marked Sketch Maps, the Sketch Map Tool initiates an automatic georefferencing and colour-detection process. The tool uses a combination of computer vision algorithms and novel AI models to extract Sketch Maps from photos and detect markings on them. The results can be downloaded in various geodata formats.  The results can then be used for further analysis in Geographic Information System software (such as QGIS).
 
 
-### What does 'georefferenced' means?
+### What does 'georeferenced' mean?
 
 
 | A non-georeferenced image | A georeferenced image – GeoTIFF |
@@ -145,9 +118,8 @@ SKetch Map Tool workflow
 | Just an image, even if you load it in QGis and give it a coordination system it can´t be located and the image is shown somewhere in the Atlantic. | The file contains information about its coordinate system and its location, so you can combine it other geodata e.g. with GPS data.| 
 | ![](/fig/SMT_Map_Not_georefferenced.png) | ![](/fig/SMT_Geofrefference_map.png) | 
 
-### Background Information on UMAP
+### Background Information on UMAP and QGIS in comparison
 
->move this section or change title into comparison between QGIS and uMap?
 
 UMAP is an online platform that allows users to create custom maps with OpenStreetMap (OSM) as a basemap layer. No installation or registration is necessary to use the platform. This enables users to quickly gain an intuitive overview of their data.
 Users can customize the appearance of the map and share it with others. It's particularly useful for collaborative mapping projects, quick visualization of geographic data, and creating custom maps tailored to specific needs.
@@ -168,11 +140,7 @@ The Geojson output of the Sketch Map Tool cannot be opened and inspected with co
 
 ## Step-by step introduction for participants 
 
-> link where you can download this part as a short pdf to hand it to participants
-
 If you experience any problems during your use of the [Sketch Map Tool](https://sketch-map-tool.heigit.org/) please take a look at the [help page](https://sketch-map-tool.heigit.org/help).
-
-> Maybe first steps should be to form groups and decide on a case, and then start to discuss?
 
 ### 1.	Start discussion
 Prepare and discuss in your group.
@@ -204,9 +172,6 @@ Print your maps and mark with real pens to experience the real use of the Sketch
 ### 5.	Open your results in QGIS or uMap
 
 - You can choose to use either QGIS (__Option A__) or [uMap](https://umap.openstreetmap.fr/en/) (__Option B__) for the next part of the exercise.
-
-> moved to each section because participants cannot do this now: "- Take a look at the detected markings, compare it with your map. Which differences can you see? Are some markings missing in the Sketch Map Tool results?"
-
 
 
 :::{dropdown} Option A: Open your results in QGIS
@@ -266,13 +231,13 @@ align: center
 UMAP interface with the Sketch Map vectors
 ```
 
-
-
->confused if its correct: if you are not logged in you will be provided with an URL where you can access your map any time in the future. Save it somewhere or send it to your email^?
+```{Note}
+Generally, you can create maps, edit them, and share them with others on uMap without signing up for an account. Signing up ensures persistent access to your created maps allowing to manage and edit maps over time. Without an account, the maps you create are stored temporarily in your browser's local storage or session storage.
+```
 
 :::
 
-### 6.	Wrap-up: What are your experiences with the Sketch Map Tool? Discuss: 
+### 6.	Wrap-up: What are your experiences with the Sketch Map Tool? - Discuss: 
 
 - Take notes and prepare a short presentation about your map area, the markings, and how the results look like at the end. Bring them back in the big group to wrap the exercise together.
 - Did you discover any problems or challenges during this exercise?
