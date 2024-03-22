@@ -76,8 +76,7 @@ To add a Basemap from the QuickMapServices Plugin:
 2. Click on `Search QMS`. A new panel will open, most likely at the bottom right.
 3. Here, you can search for a basemap of your choice. For example, Bing Aerial, different versions of OpenStreetMap, Sentinel-2 satellite imagery. 
 
-```
-{Tip}
+```{Tip}
 A list of basemaps and useful search queries for the QMS-plugin can be found on [this website](https://qms.nextgis.com). This link can also be found in the "About" section of the QMS-plugin
 ```
 
