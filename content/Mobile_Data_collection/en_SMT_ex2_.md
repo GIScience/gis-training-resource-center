@@ -49,12 +49,9 @@ In general: about 1 h to 1,5 h (depending on number of groups)
 :::{grid-item-card}
 #### Available data
 
-- Introduction Slides to the Sketch Map Tool
->anpassen: 5 links für 5 example maps
-- Download the data for this exercise [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Exercise_2.zip) and unzip the folder
+- [Introductory slides on the Sketch Map Tool](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/Introduction_Sketch_Map_Tool_21_03.pptx)
 
-- You will find 5 Case studies which contain 2 Sketch Maps (one based on OSM, one on satellite imagery) and the respective Quality Report
-
+- Case Studies Maps: [Case Study Map 1]( https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_1_Sudan.zip), [Case Study Map 2](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_2_Bolivien.zip), [Case Study Map 3](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_3_Port_Harcourt.zip), [Case Study Map 4](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_4_Borgo_San_Lorenzo.zip), [Case Study Map 5](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_5_Adelaide.zip)
 - [Printable exercise factsheet](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_2.pdf)
 
 
@@ -71,7 +68,7 @@ In general: about 1 h to 1,5 h (depending on number of groups)
 ### Prepare the training 
 - Online access and devices (PC) to be able to use the Sketch Map Tool and create maps online.
 - For each group one individual set of the Sketch Maps (OSM + satellite) digitally or as a print and reports of one area OSM + satellite-map and the fitting report.
-- Take a look and make yourself familiar on the provided material for the exercise and the Sketch Map Tool in general. 
+- Take a look and make yourself familiar on the provided material for the exercise and the Sketch Map Tool in general. There are 5 case study maps available which contain each two sketch maps (one based on OSM, one on satellite imagery) and the respective Quality Report
 - Prepare a board (it can be a white board/flipchart/or digital e.g. mirro-board) where the participants can add their findings.
 - Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
 

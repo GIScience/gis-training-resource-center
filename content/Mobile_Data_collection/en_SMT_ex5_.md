@@ -38,10 +38,11 @@ Analysing participatory mapping results
 
 :::{grid-item-card}
 ### Available data
+- [Introductory slides on the Sketch Map Tool](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/Introduction_Sketch_Map_Tool_21_03.pptx)
 - Download the data for this exercise [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_5.zip) and unzip the folder
 - In the data subfolder (`\data\input`), you will find the data you need to start the exercise (created raw map & 5 pre-marked and photographed maps). You will also find de geodata of the results (`\data\output`) and the intermediate result(`\data\temp`).
 - [Printable exercise factsheet](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_5.pdf)
-- Introduction Slides about the Sketch Map Tool
+
 :::
 ::::
 

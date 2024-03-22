@@ -49,11 +49,11 @@ __Exercise B__: 30 min
 
 :::{grid-item-card}
 #### Available Data
-
+- [Introductory slides on the Sketch Map Tool](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/Introduction_Sketch_Map_Tool_21_03.pptx)
 - Download the data for this exercise [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_4.zip) and unzip the folder
 - In the data subfolder (`\data\input`), you will find the data you need to start the exercise (created raw map & pre-marked and photographed map). You will also find de geodata of the results (`\data\output`) and the intermediate result(`\data\temp`).
 - [Printable exercise factsheet](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_4.pdf)
-- [Introduction Slides]() about the Sketch Map Tool
+
 :::
 ::::
 
@@ -409,7 +409,7 @@ The sketch maps are now being processed and georeferenced with the annotations e
 
 ### 4. Load your data 
 
-1. Open the Browser of your choice and navigate to the [UMAP Website](https://umap.openstreetmap.fr/en/) and click on the large green button `Create a Map`.
+1. Open the Browser of your choice and navigate to the [UMAP Website](https://umap.openstreetmap.fr/en/) and click on the large green button `Create a Map`. YOur Map Canvas and User interface will open.
 
 2. Right above your map canvas, you can click in "Untitled Map" in order to edit your map properties. Give your Map a title and a short description.
 
@@ -417,7 +417,7 @@ The sketch maps are now being processed and georeferenced with the annotations e
 
 ```{figure} /fig/en_SMT_ex4_UMAP_Properties.PNG
 ---
-width: 350px
+width: 300px
 name: SMT Ex4B Umap properties
 align: center
 ---
@@ -465,7 +465,7 @@ Click on `Manage Layers`![](/fig/en_SMT_ex4_UMAP_layers.PNG) to open your layers
 
 ```{figure} /fig/en_SMT_ex4_UMAP_Managelayers.PNG
 ---
-height: 200px
+height: 150px
 name: Umap Manage layer Interface
 align: center
 ---
@@ -521,7 +521,7 @@ The layer manager should look like this
 
 ```{figure} /fig/en_SMT_ex4_UMAP_Toggle_editing.PNG
 ---
-height: 200px
+height: 150px
 name: Toggle Editing
 align: center
 ---
@@ -533,7 +533,7 @@ Toggle editing
 
 ```{figure} /fig/en_SMT_ex4_UMAP_assign_layer.PNG
 ---
-width: 500px
+width: 450px
 name: UMAP assign features to layer
 align: center
 ---
