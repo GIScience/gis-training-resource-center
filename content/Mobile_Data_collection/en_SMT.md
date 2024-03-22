@@ -59,7 +59,7 @@ __For more information on the EVCA:__
 
 - [EVCA Guide](https://communityengagementhub.org/resource/evca-guide/)
 
-- [Sketch Map Tool for digitalization of community mapping in the EVCA process](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/EVCA-Sketch_Map_Tool.pptx): As part of the efforts to digitize the EVCA Process, we prepared a customized training package on the Sketch Map Tool for digitalization of community mapping, that can be used by trainers throughout the regional EVCA Training of Trainers workshops.
+- [Sketch Map Tool for digitalization of community mapping in the EVCA process](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/EVCA-Sketch_Map_Tool_Updated_3_24.pptx): As part of the efforts to digitize the EVCA Process, we prepared a customized training package on the Sketch Map Tool for digitalization of community mapping, that can be used by trainers throughout the regional EVCA Training of Trainers workshops.
 
 - [Digitalizing Paper-Based Community mapping in the EVCA](https://preparecenter.org/wp-content/uploads/2024/03/202403-Case-Study-DDR-in-Action-Columbia.pdf): Case Study on the SKetch Map Tool in action for Disaster Risk Reduction Activities in Colombia.
 

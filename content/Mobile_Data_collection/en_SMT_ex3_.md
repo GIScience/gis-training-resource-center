@@ -45,11 +45,11 @@ Beginners-level: no specific knowledge about QGIS/uMap required
 :::{grid-item-card}
 
 #### Available data and resources
-
+- [Introductory slides on the Sketch Map Tool](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/Introduction_Sketch_Map_Tool_21_03.pptx)
 - Case Studies Descriptions: [Case Study 1](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Case_Study_1.pdf), [Case Study 2](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Case_Study_2.pdf), [Case Study 3](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Case_Study_3.pdf)
-- Case Studies Map Examples:
+- Case Studies Maps:[Case Study Map 1]( https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_1_Sudan.zip), [Case Study Map 2](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_2_Bolivien.zip), [Case Study Map 3](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_3_Port_Harcourt.zip)
 - [Printable exercise factsheet](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_3.pdf)
-- Introduction Slides about the Sketch Map Tool 
+
 
 :::
 
@@ -163,7 +163,7 @@ The trainer will end this roleplay when the time is over.
 
 ### 3. Optional: Upload your created maps
 
-:::{dropdown}__Upload your created maps and visualize the results in UMAP__
+:::{dropdown} __Upload your created maps and visualize the results in UMAP__
 Take a foto of your sketches or at least one sketch by loading them into [sketch-map-tool.heigit.org](https://sketch-map-tool.heigit.org/). On the website, choose 'Digitize your Sketch maps' on the right. Upload all your sketches in .png or .jpg format. You can mark your sketches and simply drag and drop them into the window. 
 
 Now, let's take a look at the results in order to understand the community mapping process. We will use the [uMap website](https://umap.openstreetmap.fr/en/)
@@ -182,7 +182,6 @@ __Load your data__
 ```{Tip}
 If you are further interested to customize your visualization in uMAP or to visulaize or even generate a printable map of your results in QGIS, have a look at [Exercise 4] where you will be guided through basic visualization in uMAP & QGIS.
 ```
-
 ::::
 
 ### 4. Final discussion and conclusion
