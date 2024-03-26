@@ -68,29 +68,29 @@ The QGIS skills offered on this platform span basic, intermediate, and advanced 
 
 :::{dropdown} Basic Skills
 | Modul 1 -  Introduction GIS ✨| Modul 2 - Working with Geodata 🌍 | Modul 3 - Basic GIS operations 📍 |
-|--------------|----|---------------------------------------------|
-| Installation QGIS                                     | Layer Concept in GIS    |Digital data editing  and creation   |
-| Paper maps and cartography, digital maps distinction |  Data Import           |Feature attribute selection and editing   |
-| Intro QGIS Concept         | Geo features and attributes     | Feature Selection      |
-| Examples for GIS created  maps |Vector and Raster data- Basic concepts | Spatial Queries: Select by polygon + location                                |
-| Projections   | Vector data                              |   Data  Classification                          |
-|WebGIS Platforms  | Vector file formats       | Data Sytling                          |
-| Geo Mobile Apps overview Kobo /ODK (general understanding)                            | Data Sources                      |  Basemap selection               |
-|QGIS Interface Description   |                |Non-spatial queries (basic)    |
+|-------------------------------|------------------------------------|-----------------------------------|
+| Installation QGIS            | Layer Concept in GIS    |        Digital data editing  and creation   |
+| Paper maps and cartography, digital maps distinction |  Data Import |Feature attribute selection and editing |
+| Introduction to GIS  | Geo features and attributes | Feature Selection      |
+| QGIS Interface Description |Vector and Raster data- Basic concepts | Spatial Queries: Select by polygon + location                                |
+|     WebGIS Platform  | Vector data |   Data  Classification  |
+| Mobile Apps overview | Vector file formats  | Data Sources   |
+|   Examples of maps created with GIS | Basemap selection |Introduction to non-spatial queries |
+|   |  Projections    |    |
 ::::
   
 :::{dropdown} Intermidate Skills
 
 |Modul 4 - Representation 🗺️ |  Modul 5 - Intermidate GIS Operations 🌐| Modul 6 - Data analysis with QGIS 📊  |
 |-----------------------|---------------------|-------------------------------------|
-|Visualisation |Geoprocessing: Buffer|Local data collection|
-|Map Design (Print maps)|Geoprocessing: Clip |Data access   |
-||Geoprocessing: Dissolve   |QGIS Plugins Example: QuickOSM  |
-||Clip by Mask|Remote Sensing/ Raster Data Intro|
-||Clip by Extent  |||
-||Non-spatial queries ||
-||Table functions: Attribute table operations||
-||Non-Spatial Joins  ||
+|Visualisation |Geoprocessing: Buffer||
+|Graphical variables|Geoprocessing: Clip |Data access   |
+|Styling in QGIS |Geoprocessing: Dissolve   |QGIS Plugins Example: QuickOSM  |
+|Symbology and Colors |Clip by Mask|Remote Sensing/ Raster Data Intro|
+|Export/Import styles|Clip by Extent  |||
+|Print layout|Non-spatial queries ||
+|Map composition|Table functions: Attribute table operations||
+|Atlas function|Non-Spatial Joins  ||
 :::
 
 :::{dropdown} Advanced Skills
