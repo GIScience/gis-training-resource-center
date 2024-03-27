@@ -3,6 +3,10 @@
 
 If you are running a QGIS training course for the first time, there are several practical considerations that you need to keep in mind. In this article, we would like to share our practical experience from many trainings to provide a guide for training sessions. It complements the training material that you can find on the QGIS training platform, with practical advice on how to plan a training session.  
 
+<!--ADD: clickable cards to jump to different sections of this article -> table with material on the website; overview of exercises-->
+
+<!---->
+
 __Before you start planning the training schedule, there are three things to consider:__
 
 :::{card}
@@ -57,13 +61,14 @@ Keep in mind that you don't need to follow the module structure. It is there to 
 ````
 --->
 
-| __Module__ | __Competences__ | __Exercises__ | __Wiki articles__ |
+<!---| __Module__ | __Competences__ | __Exercises__ | __Wiki articles__ |
 | ------------ | ------------ | -------------- | -------------- |
 | __Module 1:  Introduction to QGIS__ | Introduction to GIS, QGIS installation, QGIS interface  |  [Exercise 1: Understanding the Interface](https://giscience.github.io/gis-training-resource-center/content/Modul_1/en_qgis_interface_ex2.html)  | [QGIS Basics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_qgis_basics_wiki.html) |
 | __Module 2: Working with Geodata__ | Introduction to geodata (vector and raster data), Layer concept, Introduction to Projections, geodata management, data import, data sources, attribute table | --- | --- |
 | __Module 3: Basic GIS operations__ | Digitisation, geodata selection and queries, geodata classification | --- | --- |
 | __Module 4: Representation__ | Graphic semiology, visual variables, styling of geodata in QGIS, Exporting and importing styles, print layout, map composition, Atlas function | --- | --- |
 | __Module 5: Intermediate GIS operations__ | spatial and non-spatial geoprocessing, clip, buffer, dissolve, spatial joins, select by location, attribute table functions (add, delete, calculate field, statistics), query builder, non-spatial queries, non-spatial joins | --- | --- |
+-->
 
 :::{list-table} Platform material
 :header-rows: 1
@@ -110,7 +115,9 @@ Keep in mind that you don't need to follow the module structure. It is there to 
         - [Exercise 2: Overview map of the prevalence of stunting in Sierra Leone](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_classification_ex1.html)
         - Big Exercise: [Exercise 3: Nigeria Floods](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_modul_3_ex1.html)
     - 
-        - [Diti]
+        - [Ditisation](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html)
+        - [Geodata classification](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_data_classification_wiki.html)
+        - [Spatial and non-spatial queries](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_queries_wiki.html)
 *   - Module 4: Representation
     - 
         Graphic semiology  
@@ -121,7 +128,11 @@ Keep in mind that you don't need to follow the module structure. It is there to 
         Map composition   
         Atlas function
     - 
+        - [Exercise 1: Creating a Map of Ghana](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_I_ex2.html)
+        - TBA
     - 
+        - [Visualisation](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_visualisation_wiki.html)
+        - [Map making](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_map_making_wiki.html)
 *   - Module 5: Intermediate GIS operations
     -   Spatial and non-spatial geoprocessing  
         Clip  
@@ -133,20 +144,34 @@ Keep in mind that you don't need to follow the module structure. It is there to 
         Query builder   
         Non-spatial queries   
         Non-spatial joins
+    - Spatial Geoprocessing: 
+        - [Exercise 1: Healthsite distribution in Saint Louis Region](https://giscience.github.io/gis-training-resource-center/content/Modul_5/en_qgis_spatial_tools_ex1.html)
+        - [Exercise 2: Calculate vulnerability index - Part 1](https://giscience.github.io/gis-training-resource-center/content/Modul_5/en_qgis_spatial_tools_ex2.html)
+    Non-spatial geodataprocessing:
+        - [Exercise 3: Disaster effects in different regions of Senegal](https://giscience.github.io/gis-training-resource-center/content/Modul_5/en_qgis_non_spatial_tools_ex1.html)
+        - [Exercise 2: Calculate vulnerability index - Part 2](https://giscience.github.io/gis-training-resource-center/content/Modul_5/en_qgis_non_spatial_tools_ex2.html)
+    Big exercise:
+        - [Exercise 4: Trigger & Intervention Map for Forecast-based-Action](https://giscience.github.io/gis-training-resource-center/content/Modul_5/en_qgis_modul_5_ex2.html)
     - 
-    - 
+        - [Spatial and non-spatial queries](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_queries_wiki.html)
+        - [Table functions](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html)
+        - [Geoprocessing](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html)
+
 :::
 
+<!--FIXME: Add/update exercises in the table-->
+
+<!--ADD: Section with Grid-cards with short overview of each exercise-->
 
 
-### Advanced course
+<!---### Advanced course
 
 | Module | Competences | Exercises | Wiki articles |
 | ------------ | ------------ | -------------- | -------------- |
-| Module 6: Introduction to QGIS | | --- | --- |
-| Module 7: Working with Geodata | --- | --- | --- |
-| Module 8: Basic GIS operations | --- | --- | --- |
-| Module 9: Representation | --- | --- | --- |
+| Module 6:  | | --- | --- |
+| Module 7:  | --- | --- | --- |
+| Module 8:  | --- | --- | --- |
+| Module 9:  | --- | --- | --- |
 
 ### Special courses
 
@@ -156,3 +181,5 @@ Keep in mind that you don't need to follow the module structure. It is there to 
 | Module 7: Working with Geodata | --- | --- | --- |
 | Module 8: Basic GIS operations | --- | --- | --- |
 | Module 9: Representation | --- | --- | --- |
+
+--->
