@@ -169,6 +169,7 @@ parts:
       - file: content/Trainers_corner/en_training_graphical_outline.md
       - file: content/Trainers_corner/en_training_day_structure.md  
       - file: content/Trainers_corner/en_how_to_teach_GIS.md
+      - file: content/Trainers_corner/en_how_to_assessment.md
       
   - caption: About
     chapters:
