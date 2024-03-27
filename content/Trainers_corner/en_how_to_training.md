@@ -1,4 +1,4 @@
-# How to do trainings?
+# How to plan a whole GIS Training
 
 
 If you are running a QGIS training course for the first time, there are several practical considerations that you need to keep in mind. In this article, we would like to share our practical experience from many trainings to provide a guide for training sessions. It complements the training material that you can find on the QGIS training platform, with practical advice on how to plan a training session.  
@@ -26,7 +26,7 @@ Before you plan your training, you need to make some basic decisions about the s
 -	Think about the size of the group: experience shows that 10 to 15 participants are ideal. If more people are interested in the training, consider organising more than one training. If possible, have two trainers, so that one can present the content and the other can support the participants.
 -	Set the setting: Are you planning an online or face-to-face course? Do you plan your training in half-day or full-day sessions? Will the training take place on consecutive days or spread over several weeks with days off in between? Of course, these questions should be answered depending on the background and needs of the participants.  
 ## 2.	Planning
-You can use the platform's modular structure (link) and the skill levels (link) as a guide when planning your training schedule. On a practical level, you should consider the following: 
+You can use the platform's modular structure (link) and the [skill levels](https://giscience.github.io/gis-training-resource-center/content/intro.html#learning-objectives) as a guide when planning your training schedule. On a practical level, you should consider the following: 
 -	Define the learning objectives in detail and communicate them at the beginning of the training. It is easier to organise the material if you know what you want to achieve. The participants need to know what they are supposed to learn and where they are during the training.
 -	When planning the structure of your training, you can use the sample structure (link) as a guide, but you can also adapt it to the specific needs of your participants. If possible, use material and exercises that are related to the participant's background.
 -	Allow time for questions and answers, as well as for spontaneous topics. Participants usually benefit most from trainer support for acute problems.  
@@ -37,3 +37,122 @@ During and after the training, you can support the process by encouraging and fa
 -	Encourage participants to communicate and stay in touch, to exchange ideas and experiences after the training. In this way, participants can support and motivate each other by sharing their experiences and successes.
 -	You should plan to evaluate your training in one way or another. This can help you to improve your training and at the same time, it is important to take the participants seriously by considering their perspective.
 -	Assessment?
+
+## Available Material
+
+### Basic course
+
+The following table shows the content of the modules, their skill-level, as well the available exercises for these competences and the corresponding wiki articles on the platform. You can design your course by choosing the competences you want to teach. Once you have chosen the competences, take a look at the module chapters, the wiki, and the exercises. Go through each exercise by yourself, so you know the steps of the exercise and get a feeling how long the exercise takes. 
+
+:::{tip}
+Keep in mind that you don't need to follow the module structure. It is there to help you create an outline for your training. You can choose the exercises however you wish. Take a look at the relevant competences and skill levels for each exercise.
+:::
+
+<!-----
+````{margin}
+```{card} Competences
+- Introduction to QGIS
+- QGIS installation
+- QGIS interface
+````
+--->
+
+| __Module__ | __Competences__ | __Exercises__ | __Wiki articles__ |
+| ------------ | ------------ | -------------- | -------------- |
+| __Module 1:  Introduction to QGIS__ | Introduction to GIS, QGIS installation, QGIS interface  |  [Exercise 1: Understanding the Interface](https://giscience.github.io/gis-training-resource-center/content/Modul_1/en_qgis_interface_ex2.html)  | [QGIS Basics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_qgis_basics_wiki.html) |
+| __Module 2: Working with Geodata__ | Introduction to geodata (vector and raster data), Layer concept, Introduction to Projections, geodata management, data import, data sources, attribute table | --- | --- |
+| __Module 3: Basic GIS operations__ | Digitisation, geodata selection and queries, geodata classification | --- | --- |
+| __Module 4: Representation__ | Graphic semiology, visual variables, styling of geodata in QGIS, Exporting and importing styles, print layout, map composition, Atlas function | --- | --- |
+| __Module 5: Intermediate GIS operations__ | spatial and non-spatial geoprocessing, clip, buffer, dissolve, spatial joins, select by location, attribute table functions (add, delete, calculate field, statistics), query builder, non-spatial queries, non-spatial joins | --- | --- |
+
+:::{list-table} Platform material
+:header-rows: 1
+:widths: 15 40 40 30 
+
+*   - Module
+    - Competences
+    - Exercises
+    - Wiki articles
+*   - Module 1:  Introduction to QGIS
+    - 
+        Introduction to GIS  
+        QGIS installation  
+        QGIS interface  
+    - 
+        [Exercise 1: Understanding the Interface](https://giscience.github.io/gis-training-resource-center/content/Modul_1/en_qgis_interface_ex2.html)
+    - 
+        [QGIS Basics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_qgis_basics_wiki.html)
+*   - Module 2: Working with Geodata
+    - 
+        Introduction to geodata (vector and raster data)  
+        Layer concept  
+        Introduction to Projections  
+        Geodata management  
+        Data import  
+        Data sources  
+        Attribute table
+    - 
+        - [Exercise 1: Geodata Concept](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_geodata_concept_ex1.html)
+        - [Exercise 2: The World](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_modul_2_ex_1.html)
+    - 
+        - [Geodata](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_wiki.html)
+        - [Projections](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html)
+        - [Basemaps](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html)
+        - [Data sources](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_data_sources_wiki.html)
+        - [Plugins](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html)
+*   - Module 3: Basic GIS operations
+    - 
+        Digitisation  
+        Geodata selection and queries  
+        Geodata classification
+    - 
+        - [Exercise 1: Access to financial institutions](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation_ex2.html)
+        - [Exercise 2: Overview map of the prevalence of stunting in Sierra Leone](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_classification_ex1.html)
+        - Big Exercise: [Exercise 3: Nigeria Floods](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_modul_3_ex1.html)
+    - 
+        - [Diti]
+*   - Module 4: Representation
+    - 
+        Graphic semiology  
+        Visual variables  
+        Styling geodata in QGIS  
+        Exporting and importing styles   
+        Print layout   
+        Map composition   
+        Atlas function
+    - 
+    - 
+*   - Module 5: Intermediate GIS operations
+    -   Spatial and non-spatial geoprocessing  
+        Clip  
+        Buffer   
+        Dissolve  
+        Spatial joins  
+        Select by location   
+        Attribute table functions (add, delete, calculate field, statistics)   
+        Query builder   
+        Non-spatial queries   
+        Non-spatial joins
+    - 
+    - 
+:::
+
+
+
+### Advanced course
+
+| Module | Competences | Exercises | Wiki articles |
+| ------------ | ------------ | -------------- | -------------- |
+| Module 6: Introduction to QGIS | | --- | --- |
+| Module 7: Working with Geodata | --- | --- | --- |
+| Module 8: Basic GIS operations | --- | --- | --- |
+| Module 9: Representation | --- | --- | --- |
+
+### Special courses
+
+| Module | Competences | Exercises | Wiki articles |
+| ------------ | ------------ | -------------- | -------------- |
+| Module 6: Introduction to QGIS | | --- | --- |
+| Module 7: Working with Geodata | --- | --- | --- |
+| Module 8: Basic GIS operations | --- | --- | --- |
+| Module 9: Representation | --- | --- | --- |
