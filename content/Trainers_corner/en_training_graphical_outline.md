@@ -16,19 +16,26 @@ Last but not least, you should provide a link to the material (slides, handouts,
 
 The table below summarizes each item and gives a short description of what its content could be.
 
-| time & dates | ---- |
-| location or link to webinar | ---- |
-| requirements | ---- |
-| expectations | ---- |
-| structure of the training/material | ----- |
-| timeline | ---- | 
-| available material |
+| ----- | ----------- |
+| time & dates | times & dates for the participants to plan their own working days around it |
+| location or link to webinar | Adress or link for participants to quickly join the training |
+| requirements | What are the requirements for the participation (laptop, internet connection) and completion of the seminar (attendance, ...) |
+| expectations | What competences are expected of the participants? |
+| structure of the training/material | Convey the structure of the platform.  |
+| timeline | Provide a timeline for the course. | 
+| available material | Add a link for participants to find and download all the necessary material |
 
 You should adapt the graphical outline to your needs and the needs of your participants. For example, after each day, provide them with a question to reflect on what they have learnt or how they can apply their newfound skills. 
 
-## Graphical outline inspiration
+## Graphical outline ideas
 
 Be creative when creating a graphical outline, as you can use it to actively engage participants with the training and make them feel more secure to ask questions. 
 First of all, trainings should be an open learning environment where the different needs of participants are acknowledged. 
 
-Below are some examples of graphical outlines for a training, some have already been used in a trainig.
+Below are some examples of graphical outlines of past training workshops.
+
+- https://miro.com/app/board/uXjVNi7BRoQ=/
+
+:::{Tip}
+You can also add blank stickynotes or spaces, where participants can jot down their notes, findings, ideas or questions. 
+:::
