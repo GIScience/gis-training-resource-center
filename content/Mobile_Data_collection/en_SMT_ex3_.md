@@ -120,6 +120,10 @@ Separate into groups: For each case study, there should be 2 groups:
 2. Get into your role. 
 3. Discuss with the other participants with your role (the community members or the facilitators) and perpare yourself. What do you need to do during the mapping process?
 
+```{Tip}
+You can prepare your own case description fitting to your use cases for the Sketch Map Tool.
+```
+
 __Facilitators__
 
 The group of facilitators will seperate from the rest in order to prepare their activity.
