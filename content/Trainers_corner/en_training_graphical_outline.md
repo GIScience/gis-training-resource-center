@@ -16,6 +16,7 @@ Last but not least, you should provide a link to the material (slides, handouts,
 
 The table below summarizes each item and gives a short description of what its content could be.
 
+| Information | Description | 
 | ----- | ----------- |
 | time & dates | times & dates for the participants to plan their own working days around it |
 | location or link to webinar | Adress or link for participants to quickly join the training |

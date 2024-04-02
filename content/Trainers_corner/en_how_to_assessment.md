@@ -1,8 +1,8 @@
 # Assessments in GIS Training: A Guide
 
-This article will explain the assessment survey provided on this platform that can be used to assess the success of basic GIS training. This assessment is geared toward assessing the motivation to learn GIS and the participants' self-assessment of their GIS skills. The assessment is kept short and focuses on the essentials. It is meant to be extended by trainers if they see the need.
+This article will explain the assessment survey provided on this platform that can be used to assess the success of basic GIS training. This assessment is geared towards assessing the motivation to learn GIS and the participants' self-assessment of their GIS skills. The assessment is kept short and focuses on the essentials. It is meant to be extended by trainers if they see the need.
 
-## Survey temaplates
+## Survey templates
 
 
 ```{card} Google survey temaplate: Pre Training Survey
@@ -17,33 +17,33 @@ Now you can use the survey via your own Google account.
 
 
 
-## Why Do We Do Assessments?
+## Why do we do assessments?
 
-There are many reasons why assessments are an essential part of every training. In the end, we want to know how successful was the training. However, assessments before and after the training serve many other purposes. We have listed some below:
+There are many reasons why assessments are an essential part of every training. In the end, we want to know how successful the training was. Assessments, before and after the training, can also provide other important information. We have listed some below:
 
-1. **Understanding Baseline Proficiency:** Before diving into the training content, it's essential to assess participants' current knowledge, skills, and motivation related to GIS. This baseline measurement helps us tailor the training to meet the diverse needs of our participants.
+1. **Understanding baseline proficiency:** Before diving into the training content, it's essential to assess the participants' current knowledge, skills, and motivation related to GIS. This baseline measurement helps us tailor the training to meet the needs of our participants.
 
-2. **Customizing Training Content:** By analyzing pre-training assessments, trainers can customize the training content to suit the proficiency level of each participant. This ensures that the training remains relevant and engaging for everyone, regardless of their prior experience with GIS.
+2. **Customizing training content:** By analyzing pre-training assessments, trainers can customize the training content to suit the proficiency level of each participant. This ensures that the training remains relevant and engaging for everyone, regardless of their prior experience with GIS.
 
-3. **Setting Clear Goals and Expectations:** Assessments before the training assist in setting clear goals and expectations for both trainers and participants. By understanding the starting point of each participant, trainers can establish specific learning objectives for the training, providing a roadmap for success.
+3. **Setting clear goals and expectations:** Assessments before the training assist in setting clear goals and expectations for both trainers and participants. By understanding the starting point of each participant, trainers can establish specific learning objectives for the training, providing a roadmap for success.
 
-4. **Measuring Progress and Effectiveness:** Post-training assessments allow trainers to measure participants' progress and evaluate the effectiveness of the training program. By comparing pre-training and post-training results, trainers can assess the impact of the training and identify areas for improvement.
+4. **Measuring progress and effectiveness:** Post-training assessments allow trainers to measure the progress of participants and evaluate the effectiveness of the training program. By comparing pre-training and post-training results, trainers can assess the impact of the training and identify areas for improvement.
 
-5. **Gathering Feedback for Improvement:** Post-training assessments provide valuable feedback for trainers. They offer insights into participants' perceptions of the training, highlight any gaps in learning, and provide suggestions for enhancing future training programs.
+5. **Gathering feedback for improvement:** Post-training assessments provide valuable feedback for trainers. They offer insights into the participants' perceptions of the training, highlight any gaps in learning, and provide suggestions for enhancing future training programs.
 
-6. **Motivating Continued Learning:** Finally, assessments help reinforce learning and motivation among participants. Seeing tangible improvements in their skills and knowledge encourages participants to continue using GIS and further develop their expertise.
+6. **Motivating continued learning:** Finally, assessments help reinforce learning and motivation among participants. Seeing tangible improvements in their skills and knowledge encourages participants to continue using GIS and further develop their expertise.
 
 In summary, assessments play a vital role in GIS training by providing baseline measurements, customizing training content, setting clear goals, measuring progress, gathering feedback, and motivating continued learning. Incorporating assessments into your training program ensures a more effective and impactful learning experience for all participants.
-
+<!--COMMENT: this sounds a lot like a AI text. Not saying it it's written by one but the structure (Intro, Content, Conclusion) seems AI-dry to me (EN)-->
 ## How to do the assessment
 
 Based on the standard assessment survey, you have three options:
 
 1. __Paper or Word based:__ You can utilize a paper-based version or distribute the Word file via email. This allows everyone to fill out the survey, and later, you can extract the data.
 2. __Google Survey:__ Alternatively, you can use Google Surveys with the provided template. This digital approach offers the benefits of Google Surveys' functionality, and you can view the results immediately.
-3. __Use another survey system:__ Lastly, you have the flexibility to take the questions and incorporate them into any other survey system you prefer to use.
+3. __Use another survey system:__ Otherwise, you have the flexibility to take the questions and incorporate them into any other survey system you prefer to use.
 
-## Introduction to the Standard survey 
+## Introduction to the standard survey 
 
 Below you can find a detailed explanation of each survey section and question.
 
@@ -95,7 +95,7 @@ This question evaluates participants' self-assessed level of knowledge in QGIS o
    - I have basic knowledge in statistics
    - I use maps on a regular basis
 ```{dropdown} Explanation 
-Participants are prompted to indicate their past experiences with QGIS operations, including any prior usage. This helps trainers tailor the training content to accommodate varying levels of prior experience among participants. The list of answer options can be adapted.
+Participants are prompted to indicate their past experiences with QGIS operations, including any prior usage. This helps trainers adapt the training content to accommodate varying levels of prior experience among participants. The list of answer options can be adapted.
 ```
 :::
 ::::

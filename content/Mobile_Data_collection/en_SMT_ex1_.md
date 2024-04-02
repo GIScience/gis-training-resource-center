@@ -42,6 +42,7 @@ preparing participatory mapping / facilitating participatory mapping/ analysing 
 
 - [Introductory slides on the Sketch Map Tool](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/Introduction_Sketch_Map_Tool_21_03.pptx)
 - Case Studies Maps: [Case Study Map 1]( https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_1_Sudan.zip), [Case Study Map 2](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_2_Bolivien.zip), [Case Study Map 3](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_3_Port_Harcourt.zip)
+- [Case Study 1 marked Maps and Sketch Map Tool Outputs](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_1_marked_maps_results.zip)
 - [Printable exercise factsheet](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_1.pdf)
 
 :::
@@ -134,7 +135,7 @@ Users can customize the appearance of the map and share it with others. It's par
 
 
 ```{Hint}
-The Geojson output of the Sketch Map Tool cannot be opened and inspected with commonly available tools. If you use the Sketch Map Tool and do not have QGIS installed but quickly want to examine your result, UMAP is a simple and quick way to do so. But be aware as it is an online platform, an internet connection is required.
+You can prepare your own case description fitting to your use cases for the Sketch Map Tool.
 ```
 
 ## Step-by step introduction for participants 
@@ -147,10 +148,18 @@ Prepare and discuss in your group.
 - What would do you want to map? Which data do you want to collect? You can decide if you want to map hazards (e.g. the flood extent), vulnerablities (e.g. poor infrastructure) or capacities.
 - Scroll through the help-page of the Sketch Map Tool
 
+```{Tip}
+The Geojson output of the Sketch Map Tool cannot be opened and inspected with commonly available tools. If you use the Sketch Map Tool and do not have QGIS installed but quickly want to examine your result, UMAP is a simple and quick way to do so. But be aware as it is an online platform, an internet connection is required.
+```
+
 ### 2.	Create a map in the Sketch Map Tool
 - Open the [Sketch Map Tool](https://sketch-map-tool.heigit.org/) 
 - Zoom in and select your map area. Try different zoom levels and change the orientation. 
 - Create a map in an A4-size (in future cases, you can choose other Sketch Map sizes).
+
+```{Tip}
+To shorten the time, you can work with prepared maps (case-maps). You can even skip the marking and work with images of already marked Sketch Maps to explore only the digitalising of the marked maps.
+```
 
 ### 3.	Mapping
 
@@ -172,6 +181,9 @@ Print your maps and mark with real pens to experience the real use of the Sketch
 
 - You can choose to use either QGIS (__Option A__) or [uMap](https://umap.openstreetmap.fr/en/) (__Option B__) for the next part of the exercise.
 
+```{Tip}
+If you like to learn more about the visualisation and one possible analysis of the Sketch Maps explore exercise [4](https://giscience.github.io/gis-training-resource-center/content/Mobile_Data_collection/en_SMT_ex4_.html) and [5](https://giscience.github.io/gis-training-resource-center/content/Mobile_Data_collection/en_SMT_ex5_.html).
+```
 
 :::{dropdown} Option A: Open your results in QGIS
 :open:
