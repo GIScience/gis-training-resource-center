@@ -2,15 +2,12 @@
 
 🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
-<!--This article will focus on best practices for teaching GIS.
-[not needed since it's said below again]--> 
 
 Learning GIS can be challenging, especially for individuals who are new to the topic or have limited experience with technology beyond standard office systems. The concept of geodata and everything that it entails is quite removed from the things many people work on day to day in the humanitarian sector. However, to grasp these concepts is essential to work effectively with GIS and solve problems. That being said, often there is not enough time to dive deep into topics like projections or algorithms. And we lean more through practical hands-on training than lectures about GIS theory.
 
 This is why we must be aware of balancing practical hands-on and theory when teaching GIS. 
-In the following article, we will present best practices for teaching GIS according to our experiences. We will start with overarching topics [such as](!!!). The further we progress, the further we will dive into practical things to do when teaching GIS.
+In the following article, we will present best practices for teaching GIS according to our experiences. We will start with discussing the difference in teaching theory and teaching with hands-on exercises and the importance of connecting GIS to their profession or work requirements. Later on, the article discusses practical considerations to do when teaching GIS and methods to avoid and solve problems.
 
-<!--ADD: rewrite the last two sentences-->
 
 
 ## Theory vs. Hands-on
@@ -94,8 +91,7 @@ Group exercises rely more on the independent work of the trainees. This is great
 Independent from the type of exercise, you should briefly go over the following points with the trainees at the beginning of the exercise:
 
 1. __Aim of the exercise:__ In general, a hands-on exercise should start with explaining the goal of the exercise. For example: _„This exercise aims to teach the process of basic spatial data processing using the tools Clip, Merge and dissolve."_ This is a good opportunity to highlight the practical use of the tools the participants will learn to boost motivation.
-2. __Background:__ Ideally, the exercise is built around a real-world example or a fictional scenario within the humanitarian work. In this case, you should quickly explain the background and story. An example of this is the exercise.
-<!---ADD: insert example exercise-->
+2. __Background:__ Ideally, the exercise is built around a real-world example or a fictional scenario within the humanitarian work. In this case, you should quickly explain the background and story. An example of this is the exercise in module 3 ([Exercise: Nigheria Floods](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_modul_3_ex1.html)).
 3. __Exercise Data:__  Most hands-on exercises use real-world data (from [HDX](https://data.humdata.org), for example). Each dataset used in the exercise should be explained shortly. This information can be found on each exercise on the platform. Make sure that everybody has downloaded the exercise data before you start. Note that some trainees are not familiar with `zip.` files. Make sure the trainees unzip the folders before trying to import them into QGIS and take the time to solve any other issues concerning the exercise data. 
 
 ### During the exercise: Follow-along
@@ -152,7 +148,7 @@ To deal with such issues you can follow the tips below:
 
 * __Wiki:__ Point trainees to a curated [list of common problems and solutions](/content/Wiki/en_qgis_common_errors_and_Issues.md) available on the training platform, serving as a valuable reference resource.
 * __Google and ChatGPT:__ Encourage trainees to use online resources like Google and utilize ChatGPT for additional problem-solving assistance, strengthening self-reliance and resourcefulness.
-* ___Be proactive:__ When conducting exercises, proactively flag potential issues and provide step-by-step guidance to preemptively address trainees' concerns.
+* __Be proactive:__ When conducting exercises, proactively flag potential issues and provide step-by-step guidance to preemptively address trainees' concerns.
 * __Collaborative learning:__ Foster a collaborative learning environment where trainees can share their experiences and solutions to common problems, promoting peer-to-peer support and knowledge sharing.
 * __Breakout rooms:__ Consider utilizing breakout rooms for one-on-one troubleshooting sessions. This allows trainers to address individual challenges without disrupting the larger group. Be aware that the follow-along exercise might continue in the main room. Make sure the participants in the breakout room can catch up.
 * __Best practices:__ Emphasize the importance of adhering to best practices in data management to mitigate common problems, highlighting the impact of proper data handling on GIS workflows, and their efficiency and accuracy.
