@@ -1,7 +1,7 @@
 # Train of trainers introduction 
 
 Welcome to the trainer's corner! Here you can find all the information about how to plan your training and how to teach GIS.
-This short article will outline the function of all artikel in the trainer's corner and give an overview of the training platform.
+This short article will give an overview of the training platform and outline the function of all artikel in the trainer's corner.
 
 
 
@@ -43,11 +43,9 @@ After this small overview, we can conclude what the platform can and can not do 
 ::::
 
 
-
-
 ## Your trainer journey:
 
-This short article will outline the function of all artikel in the trainer's corner and give an overview of the training platform.
+This sectio will outline the function of all artikel in the trainer's corner and give an overview of the training platform.
 
 * The Artikel [__How to Plan a Whole GIS Training__](/content/Trainers_corner/en_how_to_training.md) will give you a checklist of all the things you should keep in mind when planning a GIS training. Furthermore, the article contains a list of all the content you need for basic GIS training. You can use this list to plan your training by selecting the exercise that the most suitable for your training and your audience.
 * [__Training Agenda and Handout__](/content/Trainers_corner/en_training_graphical_outline.md) explain different options on how you can hand over all administrative information to your trainees in the most efficient way. This can be done by a simple table in an email or with a fancy miro board.
