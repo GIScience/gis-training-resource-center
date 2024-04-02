@@ -1,6 +1,6 @@
 # How to plan and structure a GIS Training Session
 
-Designing an effective and engaging full-day GIS training session requires careful consideration of various factors, including the training objectives, participant demographics, and preferred learning styles. Much of the necessary information can be pulled from the initial high-level planning face covered in the article How to plan a whole GIS Training. 
+Designing an effective and engaging full-day GIS training session requires careful consideration of various factors, including the training objectives, participant demographics, and preferred learning styles. Much of the necessary information can be pulled from the initial high-level planning phase covered in the article "__[How to plan a whole GIS Training](/Trainers_corner/en_how_to_training.md)__". 
 A well-structured training day provides a cohesive framework for delivering content, facilitating interactive activities, and maximizing participant learning outcomes. From the initial welcome and orientation to the final recap and reflection, each aspect of the training day contributes to a comprehensive and impactful learning experience.
 
 In this section, we will explore key components of structuring a full-day GIS training session, including scheduling, session sequencing, breaks, interactive exercises, and strategies for addressing participant questions and challenges. By strategically organizing the training day and incorporating diverse teaching methodologies, trainers can create an inclusive and effective learning environment that caters to the needs and preferences of all participants.
@@ -13,12 +13,12 @@ As trainers, it's imperative to craft a structured framework that sets the tone 
 
 1. __Welcome and Introduction:__ Begin the day with a warm welcome and introduction to the training program. Take a few moments to introduce yourself, the training objectives, and what participants can expect to learn throughout the program.
 2. __Icebreaker Activity:__ Break the ice and foster a sense of camaraderie among participants with an icebreaker activity. This could be a group activity designed to encourage interaction and teamwork.
-3. __Introduction round:__ For everybody in the training it is important now to get to know the other participants. This can be done by a common introduction round with another method that can be combined with the icebreaker activity. 
+3. __Introduction round:__ For everybody in the training it is important to get to know the other participants. This can be done by a common introduction round with another method that can be combined with the icebreaker activity. 
 A proven method for the introduction round is to do a short general introduction round and then use small groups where people can introduce themselves in more detail. In this group, you can use guiding questions like „What was your favourite job so far?“.
 4. __Overview of Training Agenda:__ Provide an overview of the training agenda for the whole training and the present day, outlining the topics that will be covered and the learning objectives associated with each session. This helps participants understand the structure of the training and what they can expect to accomplish. 
 If you use a [graphical training plan](/content/Trainers_corner/en_training_graphical_outline.md), present it and share the access to the plan.
 
-This whole introduction section can take up to __one hour__ or even longer. At the latest after the presentation of the agenda, you should schedule a__ break between 10 and 20 minutes__.
+This whole introduction section can take up to __one hour__ or even longer. At the latest after the presentation of the agenda, you should schedule a __break between 10 and 20 minutes__.
 
 #### Training preperation
 
@@ -30,17 +30,17 @@ Before delving into GIS, there are a few things to address to ensure that everyo
 This step ensures that everyone is familiar with the learning environment and reduces the risk of confusion.
 8. __Where to Find Help:__ Inform trainees about the available resources in case they encounter difficulties and cannot immediately seek assistance from a trainer. These resources may include the Wiki, articles on common errors and issues in QGIS, or online search engines.
 9. __Communication:__ Introduce the communication channels, such as email or WhatsApp, through which trainees can contact the trainer team for questions or other issues between sessions.
-10. __Technical check:__ We recommend letting the participants install QGIS before the training. All information about this can be found in Modul 1- QGIS Installation. You can just send the article to the trainees beforehand.
+10. __Technical check:__ We recommend letting the participants install QGIS before the training. All information about this can be found in [Module 1 - QGIS Installation](/Modul_1/en_qgis_installation.md). You can just send the article to the trainees beforehand.
 However, you should make sure that QGIS is running for all trainees. Plan time to fix any issues.
 
 This section should only take between 15 and 30 minutes. If it takes longer, consider having another small break of 10 minutes before moving on.
 
 #### Content delivery – Example: GIS Introduction
 
-Finally, we can commence GIS instruction! In a blog where you actually teach new content or further train skills, you can use a wider range of methods. Learn more about different methods to teach GIS in the article __[How to teach GIS](/content/Trainers_corner/en_how_to_teach_GIS.md)__.
+Finally, we can commence GIS instruction! In a training-block where you actually teach new content or further train skills, you can use a wider range of methods. Learn more about different methods to teach GIS in the article __[How to teach GIS](/content/Trainers_corner/en_how_to_teach_GIS.md)__.
 
-Independent of the content, such a blog should be well-structured and prepared. Always with consideration to the content and what teaching methods fit best for the content and the trainees. 
-For example in the case of a basic QGIS training, this is where you introduce the concept of GIS. [Modul 1- Introduction GIS](https://giscience.github.io/gis-training-resource-center/content/Modul_1/en_qgis_theorie.html) on the training platform covers this topic.
+Independent of the content, such a block should be well-structured and prepared. Always with consideration to the content and what teaching methods fit best for the content and the trainees. 
+For example in the case of a basic QGIS training, this is where you introduce the concept of GIS. [Module 1 - Introduction GIS](https://giscience.github.io/gis-training-resource-center/content/Modul_1/en_qgis_theorie.html) on the training platform covers this topic.
 
 There's no prescribed method for delivering this content. You can utilize PowerPoint presentations or any other suitable means.
 By the end of the session, the trainees should grasp the basic concept of GIS and be able to identify the main features of the QGIS interface along with their functions.
@@ -92,7 +92,7 @@ Since the ways to teach new skills or reinforce existing ones can be diverse, we
 #### Wrap up of training session
 
 
-The wrap-up session at the conclusion of a training session holds significant importance and should be consistently included. Its primary objective is to instill confidence in participants by ensuring all queries are addressed, offering an avenue for feedback, and providing clarity on forthcoming sessions.
+The wrap-up session at the conclusion of a training session is importand and should always be included. Its primary objective is to ensure that all questions are addressed, offering an avenue for feedback, and providing clarity on forthcoming sessions. Trainees should feel confident in their new skills and know how to refresh their knowledge (for example, on the platform or on the shared digital whiteboard). 
 
 Allocate a minimum of 15 minutes for this segment, covering the following key aspects:
 
@@ -105,13 +105,14 @@ Allocate a minimum of 15 minutes for this segment, covering the following key as
 
 ## Last Training Day
 
-The Last Training day will be very similar to a regular training day. In The beginning, you should to the welcome and recap part and during the training/ exercises you should adhere to the best practices explained above.
+The last training day will be very similar to a regular training day. In the beginning, you should to the welcome and recap part and during the training exercises you should adhere to the best practices explained above.
 
-At the end of the training, however, you should plan significantly more time to wrap up the current day and the training itself. Follow the tips below to bring the training to a successful conclusion:
+At the end of the training, however, you should plan significantly more time to wrap up the current day and the training as a whole. Follow the tips below to bring the training to a successful conclusion:
 
 1. **Wrap-up of today's exercises:** Conclude the current training day by revisiting the purpose of the exercises, addressing any remaining questions, and providing feedback.
 
 2. **Written evaluation:** Allocate time for a written evaluation of the training. Utilize the template provided on this platform or follow the evaluation method prescribed by your organization. Conducting the written evaluation during the training ensures that everyone participates.
+<!--ADD: Insert link to feedback form-->
 
 3. **Direct feedback:** Evaluate the group using a method of your choice. The [five-finger feedback method](https://www.teamecho.com/en/resources/blog/5-finger-feedback/#:~:text=5%20finger%20feedback%20is%20an,clearly%20structured%20and%20comprehensible%20manner.) is often effective. This step is crucial as it provides trainees with an opportunity to express their thoughts and opinions directly.
 
