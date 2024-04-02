@@ -56,9 +56,9 @@ Screenshot of Opening the Attribute Table
 :::{dropdown} Buttons of Attribute Table
 |Icon|Description|Purpose|Shortcut|
 |---|---|-----|---|
-| ![](/fig/mActionToggleEditing.png)|Toggle editing mode | Enable editing functionalities|`Ctrl+E`|
+| ![](/fig/mActionToggleEditing.png)|__Toggle editing mode__ | Enable editing functionalities|`Ctrl+E`|
 | ![](/fig/mActionMultiEdit.png)| Toggle multi-edit mode| Update multiple fields of many features          |  |
-|![](/fig/mActionSaveEdits.png)| Save edits| Save current modifications                        | |
+|![](/fig/mActionSaveEdits.png)| __Save edits__| Save current modifications                        | |
 |![](/fig/mActionRefresh.png)| Reload the table  | | |
 |![](/fig/mActionNewTableRow.png)| Add feature | Add new geometryless feature |  |
 |![](/fig/mActionDeleteSelectedFeatures.png)| Delete selected features| Remove selected features from the layer|  |
@@ -76,7 +76,7 @@ Screenshot of Opening the Attribute Table
 |![](/fig/mActionNewAttribute.png)| New field | Add a new field to the data source | `Ctrl+W`|
 |![](/fig/mActionDeleteAttribute.png)| Delete field  | Remove a field from the data source | |
 |![](/fig/mActionEditTable.png)| Organize columns | Show/hide fields from the attribute table||
-|![](/fig/mActionCalculateField.png)| Open field calculator| Update field for many features in a row |`Ctrl+I`      |
+|![](/fig/mActionCalculateField.png)| __Open field calculator__| Update field for many features in a row |`Ctrl+I`      |
 |![](/fig/mActionConditionalFormatting.png)| Conditional formatting | Enable table formatting| |
 |![](/fig/dock.png)| Dock attribute table | Allows to dock/undock the attribute table||
 |![](/fig/mAction.png)| Actions | Lists the actions related to the layer           | |

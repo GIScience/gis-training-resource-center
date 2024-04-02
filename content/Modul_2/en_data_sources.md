@@ -50,6 +50,7 @@ licensing and to follow the respective regulations to avoid difficulties.
 | Humanitarian Data Exchange | Various open data from different humanitarian organisations | https://data.humdata.org |
 | Healthsites | Locations of health facilities | https://healthsites.io/ |
 | UNHCR Geoservices | Data on displaced populations | https://data.unhcr.org/en/situations |
+| Waterpoint | Data on waterpoints | https://www.waterpointdata.org | 
 
 
 ### Disaster data
@@ -61,10 +62,7 @@ licensing and to follow the respective regulations to avoid difficulties.
 | Acled | Conflict data | https://acleddata.com/data-export-tool |
 | GDACS | Disaster database | https://www.gdacs.org |
 | ZKI/DLR | Flood extents, damage extents, earth observation data | https://activations.zki.dlr.de/en/activations/ |
-| Waterpoint | Data on waterpoints | https://www.waterpointdata.org | 
 | WFP Vulnerability Analysis and Mapping | Data on food security, hazards, conflicts, climate | https://dataviz.vam.wfp.org/ |
-
-<!-- is water points more appropriate under humanitarian / general? it's not disaster data -->
 
 
 ### Population data
@@ -150,43 +148,27 @@ It is by default possible to add the OSM base map to your project.  Click on `La
 ### QuickOSM plugin
 
 The QuickOSM plugin makes it easy to download data from OpenStreetMap and add it 
-to your QGIS project. To install it, open the plugin manager from the `Plugins` 
-menu by choosing `Manage and Install Plugins`. 
+to your QGIS project.
 
-:::{dropdown} How to install QuickOSM
-<!-- FIXME: These instructions and screenshots could be clearer -->
+1. Install the QuickOSM plugin by clicking on the `Plugin` tab, -> `Manage and 
+   Install Plugins…` -> `All` -> Search for "QuickOSM" -> `Install Plugin`
+2. To open QuickOSM click on the `Vector`tab -> `QuickOSM` ->  `QuickOSM`
 
 
-```{figure} /fig/managa_install_plugins.png
----
-width: 400px
-name: 
-align: center
-name: Manage and Install Plugins
----
-Manage and Install Plugins.
-```
+To work efficiently with QuickOSM, it's essential to have a basic understanding of the OSM data model. Here's a brief explanation:
 
-```{figure} /fig/install_quickosm.png
----
-width: 800px
-name: 
-align: center
-name: Installing QuickOSM
----
-Installing QuickOSM.
-```
-:::
+* Firstly, all data in OSM is organized using a key and value system. A combination of a key and its corresponding value is referred to as a __tag__.
+For instance, consider the key 'amenity.' According to the OSMWiki, *"'amenity=*' describes useful facilities such as toilets, telephones, banks, pharmacies, prisons, and schools."*.
+Notably, a key can have multiple values, with 'amenity' alone having 8911 different values. Typical examples of values for amenities include schools and hospitals.
+When searching for data on OSM, it's crucial to identify the relevant keys and values representing the desired features. Useful resources for this purpose include T[taginfo](https://taginfo.openstreetmap.org) and the OSM Wiki article about [Map features](https://wiki.openstreetmap.org/wiki/Map_features).
 
-To launch the newly installed plugin, click on ![](fig/quickosmplugin.png) or 
-click under `vector` -> `QuickOSM`. 
+* Secondly, a feature in OSM can have multiple tags, each comprising a key and its corresponding value. This means that sometimes, multiple key-value pairs are required to retrieve all the desired data.
+For example, let's consider hospitals. While all hospitals should ideally have the tags 'amenity=hospital' and 'Health=Hospital,' some may only have one of these tags. To ensure comprehensive data retrieval, it's advisable to use both tags when searching for hospitals.
 
 Follow the steps to fetch for data:
 
 1. Select a Key and Value from the dropdown list. If you are unsure, check here: 
-   [taginfo](https://taginfo.openstreetmap.org). 
 
-<!-- CLARIFY: this needs more explanation for beginners -->
 
 ```{figure} /fig/key_value_quickosm.png
 ---
@@ -255,9 +237,7 @@ The HOT Export Tool.
 ```
 
 4. First add a name and a brief description of your export. Then click on `Next`.
-5. Choose the file format fitting to your needs. Most likely Geojson, Shapefile or 
-   GeoPackage will be fit for the use with QGIS. Click on `Next`.
-   <!-- COMMENT: As earlier, suggest we recommend GPKG for consistency -->
+5. Choose the file format fitting to your needs. It is recommended to use GeoPackage but Geojson or Shapefile can be used as well. Click on `Next`.
 6. The easiest way to choose the feature type you want to download is using the 
    tag tree. (The YAML option is more flexible but more advanced, so we will 
    focus on the first option.)
@@ -306,7 +286,3 @@ Downloading data from HOT Export Tool.
 ```
 
 
-[The Ohsome tools](https://heigit.org/big-spatial-data-analytics-en/ohsome/) 
-provide OpenStreetMap data analytics and downloads by HeiGIT. You can also 
-investigate the OSM history. 
-<!-- CLARIFY: how should this be used? -->

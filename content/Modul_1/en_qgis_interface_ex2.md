@@ -73,9 +73,8 @@ QGIS User Interface. Source:
 3. You can undock panels from their location by clicking and dragging the panel title. You can either dock it to another panel (it will appear as another tab), or turn it into its own window. You can also resize the panels. Try this by moving the Layer panel to the right ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#move-and-arrange-toolbars)). 
 
 ```{TIP}
-Depending on the screen you are working on, the QGIS  interface might look a little different. Sometimes elements can be hidden because it is not rendered correctly by default. Try resizing the panels and look at the different options and functions they offer. 
+In QGIS, the interface may appear slightly different depending on your screen resolution. Occasionally, certain elements may be hidden due to default rendering settings. If you encounter this, try resizing the panels and exploring the various options and functions they provide. This can help ensure that all essential tools and features are easily accessible during your workflow.
 ```
-<!-- FIXME: Need a clearer explanation in this tip -->
 
 4. QGIS has other panels you can use that aren't shown by default. Let's see how we can find and activate the other panels and toolbars.
 -In the `View` menu, find the `panels` and `toolbar` options. Hovering over each will show a list of the available panels and toolbars, and which are activated. Give yourself a minute to look through the different toolbars and panels. There are lots of options but don't worry, you won't use most of them in this training. The panels we'll use the most are: 

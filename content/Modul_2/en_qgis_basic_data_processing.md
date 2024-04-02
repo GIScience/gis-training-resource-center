@@ -1,25 +1,18 @@
-🚧 This training platform and the entire content is under ⚠️construction⚠️ and 
-may not be shared or published! 🚧
-
 # Geodata management
 
-<!-- no geodata processing? fix title-->
+__🔙[Back to Homepage](/content/intro.md)__
+
+In this chapter, we will have a close look at how to work with geodata in QGIS. 
+Since vector data is the primary geodata type you will work with at the beginning 
+of your GIS career, we will focus on vector geodata. 
 
 **Competences:**
 
 * Data import
 * Geo features and attributes
 * Feature selection
-* Basemap selection
 
-This chapter will focus on how to manage geodata on your computer and in QGIS, in order to have a clean and 
-structured workflow. Working in such a way can save you a lot of headaches when working with GIS-software. 
-
-<!-- In this chapter, we will have a close look at how to work with geodata in QGIS. 
-Since vector data is the primary geodata type you will work with at the beginning 
-of your GIS career, we will focus on vector geodata. -->
-
-## Geodata management 
+## Geodata management: Fundermantals
 
 Working with geodata is not like working with data in programs such as Microsoft 
 Excel or Word. Whenever you load an image in a Word file, the file will contain 
@@ -68,6 +61,7 @@ Standard folder structure. Source: HeiGIT
 ```
 <!-- CHECK: add source 
 I think Probably HeiGIT/Alec
+HeiGIT is fine
  -->
 
 ### Geodata naming 
@@ -94,7 +88,7 @@ names are not meaningful.
 
 A good naming system for layers is shown below. In this workflow, it is clear what 
 processing was performed at each step (reproject, clip layer, join with another layer, 
-output). <!-- CHECK: Is this understanding correct? --> 
+final result).  
 In this way, other people can understand what purpose different layers serve and 
 whether they are needed in the final project.  
 
@@ -227,8 +221,5 @@ onto your QGIS-window, or open then through the "Data Source Manager".
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_raster_d_d.mp4"></video>
 :::
 
-### The Browser-panel
-
-<!-- ADD: Browser Panel workflow-->
 
 
