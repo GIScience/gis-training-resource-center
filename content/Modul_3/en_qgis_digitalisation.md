@@ -11,9 +11,11 @@ Proficiency in digitization stands as a cornerstone for GIS specialists. It empo
 ```{figure} /fig/Digitizsation_concept.drawio.svg
 ---
 width: 900px
-name: Digitalisation with GIS Concept 
+name: 
 align: center
+name: Digitalisation with GIS Concept
 ---
+Digitalisation with GIS Concept. Source:
 ```
 
 ##  Digitizing in QGIS
@@ -23,12 +25,12 @@ Digitalizing data in QGIS is straightforward. In the following, you will learn a
 
 ### Digitization toolbars
 
-Firstly, you need to check if the 'Digitizing Toolbox` is activated. To do that 
-* Click on the `view` tab in the menu bar and click `Toolbars`. Check if the `digitizing` and `Advanced digitizing` toolbox is activated.
+First, you need to check if the 'Digitizing Toolbox` is activated. To do that 
+* Click on the `View` tab in the menu bar and click `Toolbars`. Check if the `Digitizing` and `Advanced Digitizing` toolbox is activated.
 
 ::::{grid} 2
 :::{grid-item-card}  Activate `Digitizing Toolbox`
-Firstly, you need to check if the 'Digitizing Toolbox` is activated. To do that 
+First, you need to check if the 'Digitizing Toolbox` is activated. To do that 
 1.  Click on the `view` tab in the menu bar and click `Toolbars`. Check if the `digitizing` and `Advanced digitizing` toolbox is activated.
 
 2. A tool box like this should appear on top of your Qgis 
@@ -41,17 +43,19 @@ Firstly, you need to check if the 'Digitizing Toolbox` is activated. To do that
 ```{figure} /fig/Activate_digitizing_toolbox.png
 ---
 width: 300px
-name: Digitalisation Toolbar 
+name: 
 align: center
+name: Digitalization Toolbar 
 ---
+Digitalization Toolbar.
 ```
 :::
 ::::
 
-The normal digitalisation toolbar offers all the necessary functions to do digitalisation. However, for everything that goes above just creating new features and deleting features, the advanced digitalisation toolbar is needed. 
-The advanced digitalisation toolbar allows you to move features, delete parts of features and much more. All functions are listed in the two tables below.
+The normal digitalization toolbar offers all the necessary functions to do digitalization. However, for everything that goes above just creating new features and deleting features, the advanced digitalization toolbar is needed. 
+The advanced digitalization toolbar allows you to move features, delete parts of features and much more. All functions are listed in the two tables below.
 
-:::{dropdown} Digitalisation Toolbar
+:::{dropdown} Digitalization Toolbar
 |Tool|Purpose|Tool|Purpose|
 |---|---|-----|---|
 |![](/fig/mActionAllEdits.png) |Access to save, rollback or cancel changes in all or selected layers simultaneously | ![](/fig/mActionToggleEditing.png)|Turn on or off edit status of selected layer(s) based on the active layer status|
@@ -90,7 +94,7 @@ The advanced digitalisation toolbar allows you to move features, delete parts of
 
  ## Digital data creation
 
-To digitise data for a new dataset you always have to start with creating the dataset before filling it with digitised data.
+To digitize data for a new dataset you always have to start with creating the dataset before filling it with digitised data.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_create_layer.mp4"></video>
 
@@ -113,25 +117,27 @@ To digitise data for a new dataset you always have to start with creating the da
 width: 500px
 name: Digitalisation Toolbar 
 align: center
+name: Digitalization Toolbar 
 ---
+Digitalization Toolbar.
 ```
 
 ```{attention} 
-One important concept to understand before starting to add data to datasets is that whenever you make changes to a dataset other than styling, you have to put it in editing mode. This is done by selecting the layer and clicking on![](/fig/mActionToggleEditing.png). Now the buttons for many functions of the digitalisation toolbar are clickable. 
+One important concept to understand before starting to add data to datasets is that whenever you make changes to a dataset other than styling, you have to put it in editing mode. This is done by selecting the layer and clicking on![](/fig/mActionToggleEditing.png). Now the buttons for many functions of the digitalization toolbar are clickable. 
 After you are done manipulating the layer click on ![](/fig/mActionSaveEdits.png) to save your edits. 
 
 ```
 
 ### Creation of point data
 
-To digitalise points, first you need an existing point layer or you need to create one (check out [Digital Data Creation]( https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation.html#digital-data-creation) above).
+To digitalize points, first you need an existing point layer or you need to create one (check out [Digital Data Creation]( https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation.html#digital-data-creation) above).
 
 1.	Select the point layer you want to add data to in the Layer panel
-2.	Go to the digitalisation toolbar and click on![](/fig/mActionToggleEditing.png). No the layer is in the editing mode.
+2.	Go to the digitalization toolbar and click on![](/fig/mActionToggleEditing.png). No the layer is in the editing mode.
 3.	Click on ![](/fig/mActionCapturePoint.png). 
-4.	Left-click on the feature you want to digitalise.
+4.	Left-click on the feature you want to digitalize.
 5.	Once you click, a window will appear `[Your Layer Name]- Feature Attribute`. Here you can add the information about this feature to the different columns, based on the attribute table of the layer.
-5.	Once you are done with digitalisation ![](/fig/mActionSaveEdits.png) to save your edits.
+5.	Once you are done with digitalization ![](/fig/mActionSaveEdits.png) to save your edits.
 6.	Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_point_feature.mp4"></video>
@@ -143,20 +149,22 @@ To digitalise points, first you need an existing point layer or you need to crea
 width: 500px
 name: Point creation
 align: center
+name: Point creation
 ---
+Point creation.
 ```
 
 #### Creation of line data
 
-The  method  is  similar  to  digitising  a  point  (see  above). First you have to created a new line layer or use an existing one. 
+The  method  is  similar  to  digitizing  a  point  (see  above). First you have to created a new line layer or use an existing one. 
 
 ```{attention} 
 If you create a new line layer remember to change the geometry type into lines because we are creating lines data now.
 ```
 1.	Select the line layer you want to add data to in the Layer panel
-2.	Go to the digitalisation toolbar and click on![](/fig/mActionToggleEditing.png). No the layer is in the editing mode.
+2.	Go to the digitalization toolbar and click on![](/fig/mActionToggleEditing.png). No the layer is in the editing mode.
 3.	Click on ![](/fig/mActionCaptureLine.png). 
-4.	To digitalise line features, click along the line. When you are done, right-click on the last point of the line to finish the feature.
+4.	To digitalize line features, click along the line. When you are done, right-click on the last point of the line to finish the feature.
 5.	Once you click, a window will appear `[Your Layer Name]- Feature Attribute`. Here you can add the information about this feature to the different columns, based on the attribute table of the layer.
 6.	Once you are done with digitalisation ![](/fig/mActionSaveEdits.png) to save your edits.
 7.	Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
@@ -167,14 +175,14 @@ If you create a new line layer remember to change the geometry type into lines b
 
 #### Creation of polygon data
 
-The method is similar to digitising a point or a line (see above).
+The method is similar to digitizing a point or a line (see above).
 
 1.	Select the polygon layer you want to add data to in the Layer panel
-2.	Go to the digitalisation toolbar and click on![](/fig/mActionToggleEditing.png). No the layer is in the editing mode.
+2.	Go to the digitalization toolbar and click on![](/fig/mActionToggleEditing.png). No the layer is in the editing mode.
 3.	Click on ![](/fig/mActionCapturePolygon.png). 
-4.	To digitalise polygon features, left-click around the area you want do digitise. When you are done, right-click on the last point of the area to finish the feature.
+4.	To digitalize polygon features, left-click around the area you want do digitize. When you are done, right-click on the last point of the area to finish the feature.
 5.	Once you click, a window will appear `[Your Layer Name]- Feature Attribute`. Here you can add the information about this feature to the different columns, based on the attribute table of the layer.
-6.	Once you are done with digitalisation ![](/fig/mActionSaveEdits.png) to save your edits.
+6.	Once you are done with digitalization ![](/fig/mActionSaveEdits.png) to save your edits.
 7.	Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_digitize_add_feature.mp4"></video>
@@ -188,14 +196,14 @@ For all cases...
 
 1. You first have to select the layer you want to edit.
 2. Click on ![](/fig/mActionToggleEditing.png) to activate editing mode.
-3. Do you editing.
+3. Do your changes.
 4. Save your edit by clicking on ![](/fig/mActionSaveEdits.png).
 5. Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
 
 ```{Tip} 
 You can use the ![](/fig/mActionUndo.png) & ![](/fig/mActionRedo.png) buttons to reverse changes easily.
 
-Not that this is only possible __before__ you save the changes.
+Note that this is only possible __before__ you save the changes.
 ```
 
 ### Deleting features
@@ -212,11 +220,11 @@ Not that this is only possible __before__ you save the changes.
 ### Moving features
 
 There are multiple methods to move features. Here we show the method that works for point, line and polygon features the same.
-For that you need the Advanced Digitalisation Toolbox.
+For that you need the Advanced Digitalization Toolbox.
 
 
 1.	Select the line layer you want to add data to in the Layer panel.
-2.	Go to the digitalisation toolbar and click on![](/fig/mActionToggleEditing.png). 
+2.	Go to the digitalization toolbar and click on![](/fig/mActionToggleEditing.png). 
 3.	Click on ![](/fig/mActionMoveFeaturePoint.png) and click on the feature you want to move. Then click on the location you want to move the feature to.
 4.	Once you are done with editing click on ![](/fig/mActionSaveEdits.png) to save your edits.
 5.	Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
@@ -226,7 +234,7 @@ For that you need the Advanced Digitalisation Toolbox.
 ### Modifying geometries of feature
 
 1.	Select the line layer you want to add data to in the Layer panel.
-2.	Go to the digitalisation toolbar and click on![](/fig/mActionToggleEditing.png). 
+2.	Go to the digitalization toolbar and click on![](/fig/mActionToggleEditing.png). 
 3.	Click on ![](/fig/mActionVertexToolActiveLayer.png).
 4.	Now you can now move every vertex (corner) of a feature. Click on the vertex/corner you want to move and then click on the location where you want to move the vertex to.
 5.	Once you are done with editing click on ![](/fig/mActionSaveEdits.png) to save your edits.
@@ -237,10 +245,10 @@ For that you need the Advanced Digitalisation Toolbox.
 
 ### Add a ring to a polygon feature
 
-A ring in QGIS is part inside a polygon that is not part of the polygon. Image a polygon representing a lake. The ring is an island in the lake. For a better understanding, watch the video below.
+A ring in QGIS is a part inside a polygon that is not part of the polygon. Image a polygon representing a lake. The ring is an island in the lake. For a better understanding, watch the video below.
 
 1.	Select the line layer you want to add data to in the Layer panel.
-2.	Go to the digitalisation toolbar and click on![](/fig/mActionToggleEditing.png). 
+2.	Go to the digitalization toolbar and click on![](/fig/mActionToggleEditing.png). 
 3.	Click on ![Alt text](/fig/mActionAddRing.png).
 4.	Create a ring by clicking the area you want to exclude. To close the ring do a right-click.
 5.	Once you are done with editing ![](/fig/mActionSaveEdits.png) to save your edits.
@@ -259,9 +267,11 @@ Positional errors are inevitable when data are manually digitized. The most comm
 ```{figure} /fig/Digitization_Errors.PNG
 ---
 width: 500px
-name: Point creation
+name: 
 align: center
+name: Digitizing Errors in QGIS
 ---
+Digitizing Errors in QGIS. Source: SpatialPost.
 ```
 
 
