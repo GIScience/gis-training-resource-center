@@ -1,7 +1,6 @@
 # How to teach GIS
 
-🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
-
+__🔙[Back to Homepage](/content/intro.md)__
 
 Learning GIS can be challenging, especially for individuals who are new to the topic or have limited experience with technology beyond standard office systems. The concept of geodata and everything that it entails is quite removed from the things many people work on day to day in the humanitarian sector. However, to grasp these concepts is essential to work effectively with GIS and solve problems. That being said, often there is not enough time to dive deep into topics like projections or algorithms. And we lean more through practical hands-on training than lectures about GIS theory.
 
@@ -41,7 +40,7 @@ Practical tips to make exercise and teaching relevant for humanitarian work:
 * __Fulfilling a mission:__ Present instances where GIS has been instrumental in fulfilling a mission.
 * __Planning process:__ Empower trainees by involving them in the curriculum planning process, allowing them to identify the types of maps and products most relevant to their work.
 
-
+(handson)=
 ## Hands-on exercises
 
 Hands-on exercises are highly effective when teaching GIS on all skill levels. From exploring the interface to running a whole spatial analysis, doing these tasks gives people a better understanding how to work with GIS. It is always recommended to use hands-on exercises above theoretical presentations.

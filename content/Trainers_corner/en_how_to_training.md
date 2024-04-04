@@ -1,5 +1,6 @@
 # How to plan a whole GIS Training
 
+__🔙[Back to Homepage](/content/intro.md)__
 
 If you are running a QGIS training course for the first time, there are several practical considerations that you need to keep in mind. In this article, we would like to share our practical experience from many trainings to provide a guide for training sessions. It complements the training material that you can find on the QGIS training platform, with practical advice on how to plan a training session.  
 

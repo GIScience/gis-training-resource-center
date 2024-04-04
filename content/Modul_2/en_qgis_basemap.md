@@ -1,5 +1,7 @@
 # Basemaps
 
+__🔙[Back to Homepage](/content/intro.md)__
+
 <!-- CLARIFY: This section could be rewritten more clearly; 
 EN: Added a bit more context. Is this enough? -->
 Base maps in QGIS serve as foundational layers that provide essential geographical context for other spatial data layers. They typically include features like roads, rivers, administrative boundaries, terrain information, and in some cases, satellite imagery. The primary purpose of base maps is to offer a visual reference for spatial analysis, data visualization, and map creation within QGIS projects.

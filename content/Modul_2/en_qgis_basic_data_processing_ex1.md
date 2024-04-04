@@ -1,5 +1,7 @@
 # Basic Geodata Processing Exercise 1 
 
+__🔙[Back to Homepage](/content/intro.md)__
+
 ### Aim of the exercise
 The objective of this exercise is to get a feeling for geodata and start working 
 with it. Understand the attribute table, sort it, select manually and export the 
