@@ -105,9 +105,11 @@ OpenStreetMap (OSM) is a collaborative project that aims to create a free and ed
 
 There a multiple ways to get OpenStreetMap (OSM) data as a vector file into QGIS. The three most common and easy-to-use ways are geofarbik.de, HOT Export Tool and QickOSM. Echa oft he options hass trog advanteges and disatvanteges.
 
-```{Notes}
-In exercise OpenStreetMap data export all three options are explored.
+```{Note}
+In the exercise OpenStreetMap data export all three options are explored.
 ```
+
+<!---ADD: Insert link to OSM exercise -->
 
 __[Geofabrik.de](https://download.geofabrik.de/)__
 
