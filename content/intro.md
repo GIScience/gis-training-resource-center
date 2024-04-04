@@ -20,7 +20,7 @@ The One-Stop-Shop for teaching Geoinformation System (GIS) skills for the work i
 
 ::::{grid} 2
 :::{card}
-__[Start Teaching](/content/Trainers_corner/en_how_to_training.md)__ ➡️
+__[Start Teaching](/content/Trainers_corner/en_TOT_intro.md)__ ➡️
 
 :::
 
@@ -107,7 +107,7 @@ The QGIS skills offered on this platform span basic, intermediate, and advanced 
 
 
 ::::{grid} 2
-:::{card} __[Trainer's](/content/Trainers_corner/en_how_to_training.md)__ 
+:::{card} __[Trainer's](/content/Trainers_corner/en_TOT_intro.md)__ 
 There is a dedicated [section for trainers](/content/Trainers_corner/en_how_to_training.md) who want to use the platform.
 
 The most important component is the training plans. These give you an orientation on when to use what in your training cycle.
@@ -126,7 +126,15 @@ ___
 | Title | Date | Application | Organization | Format | Language | Skill Level | Info |
 |-------|------|--------------|--------------|--------|----------|-------------|------|
 |The Use of Geoinformation in Anticipatory Humanitarian Action|15.01-26.01.2024|Closed ⛔ |[German Red Cross](https://www.drk.de/) & [HeiGIT](https://heigit.org/)|Online|Englisch|Basic|[Info](https://aha-trainings.de/courses/the-use-of-geoinformation-in-anticipatory-humanitarian)|
-|Current Approaches and GIS Methods to Support Anticipatory Humanitarian Action|11.03-22.03.2024|Open 🟢 |[German Red Cross](https://www.drk.de/) & [HeiGIT](https://heigit.org/)|Online|Englisch|Intermidate|[Info](https://aha-trainings.de/courses/current-approaches-and-gis-methods)|
+|Current Approaches and GIS Methods to Support Anticipatory Humanitarian Action|11.03-22.03.2024|Closed ⛔ |[German Red Cross](https://www.drk.de/) & [HeiGIT](https://heigit.org/)|Online|Englisch|Intermidate|[Info](https://aha-trainings.de/courses/current-approaches-and-gis-methods)|
+
+___
+
+## Contact
+
+```{admonition} Contact the IFRC GIS Training Plattform Team
+You have questions, feedback or comments on the platform and the content. We are allways happy to hear from you. You can contact us via email   __gis-training-plattform@heigit.org__
+```
 
 
 ## Join the Community

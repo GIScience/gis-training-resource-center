@@ -163,8 +163,7 @@ Have a look at both.
        `QuickOSM`
     3. Click on `Quick query`.
     4. In the table, add "amentiy" as the key and "hospital" as the value. This 
-       query will return hospital data. See here. <!-- FIXME: is this meant 
-         to link to something? -->
+       query will return hospital data.
     5. Click on the green plus icon to add another line to the table. In this 
        line select “OR” in the small dropdown menu on the left-hand side of the 
        new line

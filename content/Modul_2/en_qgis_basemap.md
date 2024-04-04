@@ -1,12 +1,24 @@
 # Basemaps
 
+__🔙[Back to Homepage](/content/intro.md)__
+
 <!-- CLARIFY: This section could be rewritten more clearly; 
 EN: Added a bit more context. Is this enough? -->
-Basemaps are background maps that help you visualise the geographic area you are working on. They are very practical since they are easy to use, allow easy orientation on the map canvas. QGIS offers 
-OpenStreetMap and some other base maps by default, such as OpenStreetMap or MapZen Global Terrain.
+Base maps in QGIS serve as foundational layers that provide essential geographical context for other spatial data layers. They typically include features like roads, rivers, administrative boundaries, terrain information, and in some cases, satellite imagery. The primary purpose of base maps is to offer a visual reference for spatial analysis, data visualization, and map creation within QGIS projects.
 
-However, there is a wide range of base maps that can be used via extra plugins 
-or XYZ Tiles.
+Advantages of using base maps in QGIS, including satellite imagery, include:
+
+* Contextual Reference: Base maps offer a backdrop against which other spatial data layers can be overlaid, providing users with valuable context for their analyses and visualizations.
+* Enhanced Visualization: Incorporating satellite imagery as base maps adds an extra layer of detail and realism to maps created in QGIS. Satellite imagery provides high-resolution views of the Earth's surface, enabling users to visualize features such as land cover, vegetation, and urban areas with precision.
+* Quick Project Setup: Incorporating pre-existing base maps, including satellite imagery, into QGIS projects allows users to quickly set up new projects without the need to digitize or create base layers from scratch.
+
+Limitations of base maps, including satellite imagery, in QGIS may include:
+
+* Limited Detail: While satellite imagery provides high-resolution views of the Earth's surface, it may not capture certain features or details visible in other types of base maps, such as topographic or thematic maps.
+* Data Accuracy: Depending on the source of the satellite imagery, there may be variations in data accuracy, completeness, or currency, which can affect the reliability of analyses or visualizations.
+* Dependency on Internet Connectivity: Some satellite imagery base maps, particularly those sourced from online mapping services, require an active internet connection to access and may not be available offline.
+
+Overall, base maps, including satellite imagery, play a crucial role in QGIS projects by providing a foundational layer of geographic context and visual reference. Users should leverage the advantages of satellite imagery while being mindful of its limitations and considering complementary data sources for comprehensive analyses and visualizations.
 
 The following section will provide an overview on how to access and add basemaps to your QGIS-project.
 
@@ -85,9 +97,7 @@ A list of basemaps and useful search queries for the QMS-plugin can be found on 
 :::
 
 ```{Note}
-When you are using QuickMapServices, be aware that some of these maps are under copyright laws, that restrict the reproduction of these maps. Be aware of these restrictions by looking up the copyright licences for the basemaps you are using. In general, satellite imagery is not free to use. 
+When you are using QuickMapServices, be aware that some of these maps are under copyright laws, that restrict the reproduction of these maps. Be aware of these restrictions by looking up the copyright licences for the basemaps you are using. In general, satellite imagery is not free to use. This means you can not publish maps with all of the available base maps!
 ```
 
 
-<!-- CLARIFY: What are the problems? Are there any fixes for them? DONE
-EN: Is my understanding correct? -->

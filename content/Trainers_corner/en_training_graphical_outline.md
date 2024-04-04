@@ -1,5 +1,7 @@
 # Graphical Outline for Trainings
 
+__🔙[Back to Homepage](/content/intro.md)__
+
 A graphical outline is a visual aid, where participants can find all the relevant information about the workshop, what they need to bring, what they will need to succeed, and how they can prepare on their own, before, during, and after the training. In this chapter, we will go through some main elements and aspects that are needed to create a graphical outline of the training.
 
 A graphical plan can be in various different formats, such as paper handouts or digital whiteboards such as [miro boards](miro.com), [padlets](https://padlet.com). For digital whiteboards, an internet connection is required. However, a digital outline offerst participants the possibility to ask questions and review the input of other participants at any time. For example, when they are preparing for the next session. 

@@ -1,5 +1,7 @@
 # Assessments in GIS Training: A Guide
 
+__🔙[Back to Homepage](/content/intro.md)__
+
 This article will explain the assessment survey provided on this platform that can be used to assess the success of basic GIS training. This assessment is geared towards assessing the motivation to learn GIS and the participants' self-assessment of their GIS skills. The assessment is kept short and focuses on the essentials. It is meant to be extended by trainers if they see the need.
 
 ## Survey templates
@@ -10,9 +12,18 @@ This article will explain the assessment survey provided on this platform that c
 Now you can use the survey via your own Google account. 
 ```
 
+```{card} Kobo survey temaplate: Pre Training Survey
+[Here](https://docs.google.com/forms/d/1iFdc4P6Qt5YI9yRKTHCtj_pslEsWfJVcNoARGyCI32o/copy) you can download the .xlsx file for the assessment to be used in Kobo Toolbox or ODK.
+```
+___
+
 ```{card} Google survey temaplate: Post Training Survey
  Click [here](https://docs.google.com/forms/d/1PRFrsQalr1_skzM2c2KDfDPOeO_rQKzSCkSF8mlUKaA/copy) -> Click `Make a copy`. 
 Now you can use the survey via your own Google account. 
+```
+
+```{card} Kobo survey temaplate: Post Training Survey
+[Here](https://nexus.heigit.org/repository/gis-training-resource-center/Templates/TOT_post_training_assessment/en_post_training_assessment.xlsx) you can download the .xlsx file for the assessment to be used in Kobo Toolbox or ODK.
 ```
 
 
@@ -108,7 +119,7 @@ ___
 
 1. How much did you learn during the training? (scale 1-5)
 
-| Little motivatied| ... | ... | ... | Highly motivated|
+| Little| ... | ... | ... | Very much|
 |---------------|--------|---------|--------|--------|
 | 1|2|3|4|5|
 
