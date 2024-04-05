@@ -363,10 +363,6 @@ For now the only item in the print layout that is being controlled by the Atlas 
 .mp4"></video>
 :::
 
-## Setting up Overview maps with an atlas
-
-Setting up Overview maps with an atlas works in the same way as setting it up for a normal map. As long as you select the Map controlled by the atlas as the `map frame`, it will update automatically.
-
 
 # Good practices and common mistakes in mapping
 
@@ -443,10 +439,12 @@ Any data represented on a map should have its sources indicated. This provides a
 It is possible to give the source of each data under the legend, or to do it in a dedicated space in the map. The level of precision of the sources varies according to the author or the precision of the data.
 
 
-> (/../fig/en_modifiable_areal_unit_problem_example.png)
+
 
 
 ## The 4 semiological errors
+
+<!---ADD: Insert Image examples for these errors-->
 
 ### 1. Proportional circles vs. solid colors
 
@@ -501,3 +499,6 @@ __The eye can easily distinguish 4 to 5 different symbols. Beyond that, it is di
 It is a mistake because:
 - It complicates the map and limits its impact. 
 - Sometimes you are forced to represent several symbols, so you must be careful about overlapping points and overloading the map.
+
+
+<!-- ![](/../fig/en_modifiable_areal_unit_problem_example.png) -->
