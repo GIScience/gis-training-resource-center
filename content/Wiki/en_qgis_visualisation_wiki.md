@@ -364,8 +364,7 @@ Colour Ramp Selector
 
 In the colour ramp selector, you can adjust each colour step. On the bottom, you can see a plot for the Hue, __Saturation__, __Lightness__ and __Opacity__. Especially latter three are useful to see how your colour ramp will translate. Gradients from light to dark are easier to read: Check if the plot for the __Lightness__ has a more or less linear plot. 
 
-
-:::{dropdown} Styling an elevation model
+:::{dropdown} Styling a digital elevation model
 
 Elevation data sets are frequently used to communicate the terrain on a map. By default, an elevation model will be displayed with a gray colour ramp. However, if you don't need the to know the elevation at certain points, you can choose to display the __hillshade__ of the terrain. Hillshading will simulate the shadow of the terrain as if it would be exposed to a lightsource. In this example, we will use the elevation raster data (.tiff) of Algeria from the Humanitarian Data Exchange platform (humdata.org) To achieve this,
 
@@ -373,7 +372,7 @@ Elevation data sets are frequently used to communicate the terrain on a map. By 
  2. Click on `Render type` and select `Hillshade`. You will have an option to select the direction of the light. Conventionally, the lightsource is positioned in the North-West, so we can keep the default settings. In some cases with rough terrain, it can be useful to make the Hillshade __Multidirectional__.
  3. The Hillshade will be very dark and cover most of the map. We need to make it lighter...
 
->Example Video and continue explanation, maybe an algorithm would be better?
+<!--ADD: Video-->
 
 :::
 

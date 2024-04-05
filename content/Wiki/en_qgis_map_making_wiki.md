@@ -9,7 +9,6 @@
 - To move within a map select __Move item content__ button on the 
 - To zoom in on the map, while using the __Move item content__ button, you can __Press CTRL + scroll the mouse wheel__ (gently) or enter the scale manually in the item properties
 
-
 ```{figure} ../../fig/en_30.30.2_adding_a_map.png
 ---
 width: 750px
@@ -17,6 +16,7 @@ name: Add a new map
 ---
 Adding a new map to the Print Layout
 ```
+
 :::: {tab-set}
 ::: {tab-item} Adding a new map
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_new_map
@@ -113,7 +113,6 @@ If you have to many items on your legend, and they don't fit on your map horizon
 
 Before adding a scale bar, select your main map and check in the __Item Properties__ panel that the __Scale__ fielld has a __round number__ 
 
-
 ```{figure} ../../fig/en_30.30.2_print_layout_scale.png
 ---
 width: 750px
@@ -152,7 +151,7 @@ To create an overview map, you need to follow these steps:
 
 1. Prepare a __layer with national or subnational borders or important landmarks__ in your project (e.g: Administrative boundaries, Capitals)
 2. __Insert the overview map__ into your print layout (in the bottom right corner for example)
-3.  __Lock the new map__ in the Item properties panel
+3. __Lock the new map__ in the Item properties panel
 4. Add a rectangle to display the extent of your main map
 
     1. Go to the __properties__ of your Main map > scroll down until you see __"Overviews"__ 
@@ -195,6 +194,7 @@ Add a the extent of the main map to your overview map (the red rectangle on the 
 This method requires you to be sure that you are not going to modify the oveview map, as once the layers are locked, they will keep the style, and any updates will not affect the overview map.
 ```
 
+
 ## Exporting the print layout
 
 Once you are finished with the map composition, it is time to export export the print layout as a PDF or SVG file. 
@@ -210,8 +210,12 @@ Once you are finished with the map composition, it is time to export export the 
 Make sure to check the map after exporting the PDF as some design elements might have changed in the exporting process.
 ```
 
+
+## Map templates
+
 ::::{tab-set}
-:::{tab-item} Saving a template
+:::{tab-item}
+Saving a template
 
 1. Once you are satisfied with your map layout, click on the ![](../../fig/en_30.30.2_save_as_template.png)-symbol to save it as a new template.
 2. Choose a location where you want to save the template. Ideally, you should choose the template directory (see tip).
@@ -220,9 +224,6 @@ Make sure to check the map after exporting the PDF as some design elements might
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_saving_layout_template
 .mp4"></video>
-
-
-## Map templates
 
 :::
 
