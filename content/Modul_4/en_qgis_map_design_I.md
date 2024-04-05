@@ -31,14 +31,13 @@ name: Thematic maps examples
 Examples for thematic maps
 ```
 
-These two maps use design elements differently. Topographic maps will use symbols and colors out of convention and readibility, whereas in designing thematic maps, the symbols and colors you use depend on the context and the information you want to convey.
+These two maps use design elements differently. Topographic maps will use symbols and colors out of convention and readability, whereas in designing thematic maps, the symbols and colors you use depend on the context and the information you want to convey.
 
 <!--## Graphic Semiology
 
 __Definition__: Graphic semiology refers to a set of rules allowing the use of a __graphic sign systems__ to convey information. Graphic semiology uses visual variables to construct a system of signs, allowing the graphic translation of information.
 
 Our brain is capable of interpreting graphic relationships between entities in just seconds. Semiology attempts to theorise these interpretation to make the map more effective and relevant.
-
 
 EDIT: Remove this part?-->
 
@@ -53,7 +52,7 @@ Depending on the type of information you want to display, you can use different 
 ```
 
 Visual variables are the __graphical means for visually transcribing information__. The visual variables are __shape, size, hue, value, texture, and orientation__. You can vary these variables to appropriately represent the data at your disposal.  
-It allows for the expression of __relationship of difference, order, association, or quantity__ between each element and helps display information. 
+It allows for the expression of __relationship of difference, order, association, or quantity__ between each element and helps display information.
 
 ```{figure} ../../fig/en_visual_variables.png
 ---
@@ -88,7 +87,6 @@ align: left
 Styling panel in QGIS 3.30.2
 ```
 
-
 For each layer in QGIS, there is a styling panel where you can change the symbology, colour and label for the features in that layer. There are two ways to open the layer styling options in QGIS:  
 
 1. Right click on the layer you wish to style and select `properties`. A new window will open up with a vertical tab section on the left. Navigate to the `symbology` tab. 
@@ -116,7 +114,7 @@ In the styling panel you can change the styling for all features of a layer, set
 
 Colours are arguably the most striking visual variables as they are easily distinguishable. However, depending on the type of data and the information you wish to convey, there are a few things to consider when choosing a colour scheme for your map. The most important variables for colours are the __hue__, the __value__ (saturation) and the __transparency__. 
 
-Colours schemes can be __categorial, sequential, or diverging__. If you wish to display different types of buildings or roads, the colour schemes should be catoegrial. Colour gradients, either sequential or diverging, are used for numerical data or data that can be ordered. For example, for the population sizes of districts a sequential colouring schemes is best to show the relative difference between the values. However, if the data has positive __and__ negative values, a diverging colour gradient should be used.
+Colours schemes can be __categorial, sequential, or diverging__. If you wish to display different types of buildings or roads, the colour schemes should be categorial. Colour gradients, either sequential or diverging, are used for numerical data or data that can be ordered. For example, for the population sizes of districts a sequential colouring schemes is best to show the relative difference between the values. However, if the data has positive __and__ negative values, a diverging colour gradient should be used.
 
 ``` {figure} ../../fig/en_colour_gradients_qualities.png
 ---
@@ -174,8 +172,7 @@ width: 750px
 Symbolization for vector data; Source: White, T. (2017). Symbolization and the Visual Variables. *The Geographic Information Science & Technology Body of Knowledge (2nd Quarter 2017 Edition), John P. Wilson (ed.). DOI: 10.2222/gistbok/2017.2.3 
 ```
 
-
-```{note} 
+```{note}
 Remember that __the layer's symbology is saved within your project file, not within your shapefile!__ If you share a shapefile with a colleague, it will have a different style when they add it to their own project.
 ```
 
@@ -183,8 +180,8 @@ Remember that __the layer's symbology is saved within your project file, not wit
 
 QGIS let's you use different types markers for symbolization. These can be simple markers, raster images, or SVG-symbols.
 
-- __Simple markers__ are simple shapes such as rectangles, circles, or crosses that can be adjusted in the symbolization layer (color, size, outline, etc.). 
-- If you select __raster images__, the resolution of the symbol is limited by the amount of pixels in the image. It is not advisable to use high resolution images as symbols on your map because it may overload your PC. 
+- __Simple markers__ are simple shapes such as rectangles, circles, or crosses that can be adjusted in the symbolization layer (color, size, outline, etc.).
+- If you select __raster images__, the resolution of the symbol is limited by the amount of pixels in the image. It is not advisable to use high resolution images as symbols on your map because it may overload your PC.
 - __SVG-symbols__ are *scaleable vector graphic* symbols. As vector files, they can be scaled to any size while keeping the same resolution. In most cases, if you want to use a more complex symbol (e.g. hospital, school, train station), SVG-symbols are the best option as they let you adjust the symbol (colours, outline, size, etc.)
 
 #### Using Simple Markers
@@ -205,7 +202,7 @@ Most simple markers consist of a __fill__ and an __outline__. The shape of the m
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video>
 
-#### Adding an external SVG-library or other style libraries
+#### Adding an external SVG-library
 
 If you have a library of SVG-symbols as a folder you can add them to your Styling manager.
 
@@ -249,9 +246,9 @@ Assigning the correct attribute value in the labeling options. QGIS needs to kno
 
 #### Adding Single Labels to a Layer
 
-1. In the styling panel, click on the `Labels` tab underneath the Symbology tab.
-2. Select `Single labels`. 
-3. `"Value"` is where you choose the attribute that will be displayed as a label. For example `*ADM1_EN*` will display the English names of Nigerian states for each feature in the data set.
+1. In the styling panel, click on the `Labels`-tab underneath the Symbology tab.
+2. Select ![](../../fig/en_30.30.2_icon_single_labels) `Single labels`.
+3. `Value` is where you choose the attribute that will be displayed as a label. For example `*ADM1_EN*` will display the English names of Nigerian states for each feature in the data set.
 4. Let's __change the font__: Open the Font dropdown menu and select Arial. Make the text `Bold` in the Style dropdown menu. Change the colour by clicking on `Colour`, and change the `Size` to 8 pt
 5. Let's __add a white buffer__ around the label. In the `Labels` tab, you will find a list with different options to style the labels. Right now, we are in the `Text` menu. Select `Buffer` and check the `Draw text buffer` option. This will make the labels stand out more on dark or crowded maps.
 7. Click `Apply` and `OK`.
@@ -280,9 +277,9 @@ In the example below, Single Labels was selected to display the names of the set
 
 :::
 
-#### Rule-based Labelling:
+#### Rule-based Labelling
 
-Create rules using expressions to select accurately which features are to be labeled. Each rule can have a different text formatting. Use this if you want to have more control over the information that will be displayed as labels. For example, you can filter your data to only display the names of regional capitals. 
+Create rules using expressions to select accurately which features are to be labeled. Each rule can have a different text formatting. Use this if you want to have more control over the information that will be displayed as labels. For example, you can filter your data to only display the names of regional capitals.
 
 ```{figure} /fig/rule-based_labeling_example_settlements_nga.png
 ---
@@ -363,7 +360,7 @@ A label without a text buffer (left) and a label with a white text buffer (right
 
 ```{note}
 QGIS renders the labels automatically.
-Sometimes the labels can obstruct other symbols. In that case, you can either adjust the placement of the labels in the __Label tab__, or use the ![Move Label Icon](/fig/30.30.2_move_a_label_diagram_callout_icon.png) `Move a Label, Diagram, or Callout`-tool in __Label toolbar__
+Sometimes the labels can obstruct other symbols. In that case, you can either adjust the placement of the labels in the __Label tab__, or use the ![](../../fig/30.30.2_move_a_label_diagram_callout_icon.png) `Move a Label, Diagram, or Callout`-tool in __Label toolbar__
 
 By default, QGIS renders the labels so that they don't overlap with other labels. This means that not all the labels will be visible if the data is dense or rendered close to each other. You can optimize the rendering under the rendering option. 
 
@@ -395,7 +392,7 @@ width: 600px
 Colour Ramp Selector
 ```
 
-In the colour ramp selector, you can adjust each colour step. On the bottom, you can see a plot for the Hue, __Saturation__, __Lightness__ and __Opacity__. Especially latter three are useful to see how your colour ramp will translate. Gradients from light to dark are easier to read: Check if the plot for the __Lightness__ has a more or less linear plot. 
+In the colour ramp selector, you can adjust each colour step. On the bottom, you can see a plot for the Hue, __Saturation__, __Lightness__ and __Opacity__. Especially latter three are useful to see how your colour ramp will translate. Gradients from light to dark are easier to read: Check if the plot for the __Lightness__ has a more or less linear plot.
 
 #### Styling a digital elevation model
 
@@ -416,9 +413,9 @@ In some cases, the colour ramp should be inverted to make it easier to read the 
 
 ## Exporting and Importing Styles
 
-The layers in QGIS are saved separately from the settings and styles of a QGIS Project. This means that if you load the same layers into a different QGIS-project, the symbology and styling of the data will be different. QGIS lets you save the symbology and styling of a layer as a separate file (`.qml`-files). Working with `.qml`-files saves you a lot of work and assures consistency between your maps. 
+The layers in QGIS are saved separately from the settings and styles of a QGIS Project. This means that if you load the same layers into a different QGIS-project, the symbology and styling of the data will be different. QGIS lets you save the symbology and styling of a layer as a separate file (`.qml`-files). Working with `.qml`-files saves you a lot of work and assures consistency between your maps.
 
-A `.qml`-file saves the information of a particular layer. This includes the colours, outlines, shapes, labelling, as well as the Layer configuration, attribute table settings, and other options you have set for a layer in your QGIS-project, that are not related done to the data files themselves. You can choose wether to save only the colour symbology or any additional information. 
+A `.qml`-file saves the information of a particular layer. This includes the colours, outlines, shapes, labelling, as well as the Layer configuration, attribute table settings, and other options you have set for a layer in your QGIS-project, that are not related done to the data files themselves. You can choose wether to save only the colour symbology or any additional information.
  
 You can export a style into the same folder as the data so your colleagues can apply the same styling when loading the data into QGIS.
 Some organisations may also use standarized symbols or colours in their maps. 
@@ -455,7 +452,7 @@ When a styling is saved in the same location as the data and has the same name a
 3. Navigate to the folder where the style is saved and click import.
 4. The style should now be available as a preset in the styling panel.
 
-```{note} 
+```{note}
 You can also import styles directly in the styling panel of a layer. But it will not be added to your style library unless you save it into your library.
 ```
 
