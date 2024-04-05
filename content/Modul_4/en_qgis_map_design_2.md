@@ -28,7 +28,7 @@ In General, there are a few things to keep in mind when creating a map:
     - Additional information should be smaller and moved out of the main focus of the page (e.g. at the bottom, to the sides, or in the corners).
 - A well structure page layout helps the reader discern the different information on the map and makes it easier to know where to look for certain information. Frames and boxes can structure the page layout. For example, a legend can be put on the bottom or to the right of the map. 
 
-In the [next chapter](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_examples.html), we will take a look at good map design and discuss how to recreate design elements. 
+<!--In the [next chapter](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_examples.html), we will take a look at good map design and discuss how to recreate design elements. -->
 
 ## Understanding the Print Layout Composer
 
@@ -264,6 +264,19 @@ Once you are finished with the map composition, it is time to export export the 
 Make sure to check the map after exporting the PDF as some design elements might have changed in the exporting process.
 ```
 
+
+
+# Map templates
+
+Map templates can facilitate and reduce the creation of a print layout. Map templates save the arrangement of elements in the print layout. However, they do not save the layers and images of the project. These will need to be reconfigured again.
+If you work for an organisation that frequently publishes maps, or you need to create several maps on the same topics but in different regions or times, you can use map templates to skip the arrangement of elements.
+
+```{note}
+The individual layers, maps and images are not saved in the template. However, if you have the same layers in the project you load the template into, the legend will update accordingly. 
+```
+
+
+
 ::::{tab-set}
 :::{tab-item} Saving a template
 
@@ -274,15 +287,40 @@ Make sure to check the map after exporting the PDF as some design elements might
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_saving_layout_template
 .mp4"></video>
+:::
 
+:::{tab-item} Opening a template
 
-# Map templates
+You can drag and drop template-files (`.qpt`, QGIS template file) into QGIS or use the __Layout manager__.
 
-Map templates can facilitate and reduce the creation of a print layout. Map templates save the arrangement of elements in the print layout. However, they do not save the layers and images of the project. These will need to be reconfigured again.
-If you work for an organisation that frequently publishes maps, or you need to create several maps on the same topics but in different regions or times, you can use map templates to skip the arrangement of elements.
+1. Open the Layout manager under `Layout` > `Layout Manager`
+2. Navigate to the section "__New from Template__"
+3. Choose `Specific` and select the location where you saved your template
+4. Click open.
 
-```{note}
-The individual layers, maps and images are not saved in the template. However, if you have the same layers in the project you load the template into, the legend will update accordingly. 
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_opening_template
+.mp4"></video>
+
+:::
+
+:::{tab-item} Template directory
+
+The template directory is where QGIS is looking for layout templates. If you have templates saved here, you can load templates directly through the layout manager without selecting the file.   
+On windows, the file path is `\Users\AppData\Roaming\QGIS\QGIS3\profiles\default\composer_templates`.
+On mac, 
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_template_directory
+.mp4"></video>
+
+:::
+
+::::
+
+```{tip}
+The layout manager in QGIS already has a dedicated location for map templates. On windows, the file path is `\Users\AppData\Roaming\QGIS\QGIS3\profiles\default\composer_templates`.
+On mac, 
+If you save templates here, you can load templates directly through the layout manager without looking for the file.
+You can also add file paths in the QGIS-template setting
 ```
 
 # The Atlas function (automatic map generation)
