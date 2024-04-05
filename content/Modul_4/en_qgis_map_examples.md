@@ -26,10 +26,6 @@ width: 800 px
 Flood affected areas and roads in Somali Region, Ethiopia (Source: OCHA)
 ```
 
-The map above shows the flood affected areas, as well as the important road networks in the Somali Region, Ethiopia, in November 2023. Maps such as these are crucial for humanitarian aid workers when planning relief or aid operations and need to be up to date. They display important settlements, and most importantly, the accessibility of roads and airstrips. 
-
-This is a thematic map with a clear purpose and the elements on the map are reduced to the most necessary elements relevant to the purpose of the map.
-
 :::{dropdown} Context: Situation in Ethiopia
 The Greater Horn of Africa receives 20 to 70 percent of the annual total rainfall in the months from October to December. The IFRC reports a exceptionally high forecast probability (over 80%) of experiencing wetter than normal rainfall condition. Additionally, El Niño conditions started between July and August, which further accrued the possibility of high rainfall conditions in Ethiopia.
 
@@ -40,6 +36,10 @@ Access Maps, such as the one above, play a crucial role in helping informing inf
 
 (Source: [IFRC](https://go.ifrc.org/emergencies/6773/details))
 :::
+
+The map above shows the flood affected areas, as well as the important road networks in the Somali Region, Ethiopia, in November 2023. Maps such as these are crucial for humanitarian aid workers when planning relief or aid operations and need to be up to date. They display important settlements, and most importantly, the accessibility of roads and airstrips. 
+
+This is a thematic map with a clear purpose and the elements on the map are reduced to the most necessary elements relevant to the purpose of the map.
 
 - A shapefile for the flood affected areas was given a hashed fill. In QGIS, you can find this symbology 
 - A layer with the road network has been put above the layer with the flood-affected areas. The road symbology has been __categorized__ into three categories: Accessible road (green), partially accessible road (grey), and hard to reach road (red).
@@ -61,6 +61,12 @@ width: 720 px
 ---
 Flooding risk in the Ouham Region, Central African Republic (Source: REACH)
 ```
+:::{dropdown} Context: Situation in the Central African Republic
+
+The Central African Republic has been hit by destructive floods in late 2019, which displaced over 100,000 people and causing considerable damage to infrastructure. The floods have destroyed shelters, obstructed transportation routes, and have led to disease outbreaks such as cholera and malaria. Due to climate change, such floodings become more frequent, leading to increased vulnerability for towns and villages. Since such natural hazards are hard to predict, the changing climate reduces the resilience of communities.
+
+Source: [REACH Initiative](https://reliefweb.int/report/central-african-republic/central-african-republic-flood-susceptibility-risk)
+:::
 
 This map displays the flooding risk using a raster image. The raster data was calculated using several factors, including the precipitation intensity, the maximum duration of precipitation, the height of the nearest drainage, the flow direction and river network, the topographic humidity, a digital elevation model and the ground cover.
 
@@ -69,13 +75,6 @@ This map displays the flooding risk using a raster image. The raster data was ca
 - The river network has been added in blue
 - The main roads as well have been added in black
 - Settlements are displayed i black dots. This helps to identify areas with a higher population density in the areas most at risk
-
-:::{dropdown} Context: Situation in the Central African Republic
-
-The Central African Republic has been hit by destructive floods in late 2019, which displaced over 100,000 people and causing considerable damage to infrastructure. The floods have destroyed shelters, obstructed transportation routes, and have led to disease outbreaks such as cholera and malaria. Due to climate change, such floodings become more frequent, leading to increased vulnerability for towns and villages. Since such natural hazards are hard to predict, the changing climate reduces the resilience of communities.
-
-Source: [REACH Initiative](https://reliefweb.int/report/central-african-republic/central-african-republic-flood-susceptibility-risk)
-:::
 
 ---
 
