@@ -319,7 +319,7 @@ Below are some further considerations to keep in mind when using labels:
 
 - If you want to display different types of information as labels, the font needs to be different so the reader can differentiate between the different types of information that is displayed. A good practice is to display the labels in a similar color to the objects it is referring to. For example, dark blue text for the labels of light blue bodies of water, or brown text for the labels of light-brown houses. 
 
-```{figure} /../fig/good_labels_example.png
+```{figure} ../fig/good_labels_example.png
 ---
 width: 400 px
 name: Axis Maps good labels example
@@ -436,7 +436,6 @@ For example, if you want to send a layer to your colleague with the same styling
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_exporting_style_to_send_to_colleague
 .mp4"></video>
-:::
 
 ```{figure} ../../fig/en_30.30.2_save_layer_style_window.png
 ---
