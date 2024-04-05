@@ -1,7 +1,5 @@
 # Map Design: The Print layout
 
-🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
-
 The print layout in QGIS is where you design and finalize the map in order to print or export it as a PDF or format of your choice. Here you can add important elements such as the legend, a title, an explanatory text and everything you need to create a comprehensive map. A QGIS project is not a map until all the layout elements (legend, title, scale bar, sources, etc.) are added.
 
 1. Go to __Project > New Print Layout > enter a name for the new print layout > click OK__

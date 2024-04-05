@@ -1,5 +1,4 @@
 # Map Design: Symbology and Colors
-🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
 The representation of geodata in maps is crucial in order to provide useful location-based insights. This subchapter will cover the basics of good map design, how to create a map design in QGIS as well as common mistakes when designing or interpreting maps.
 

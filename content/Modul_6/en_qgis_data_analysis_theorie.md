@@ -4,27 +4,32 @@
 
 __Competences__:
 
-This Module covers a general understanding of data analysis, how to create statistics, create buffers, heatmaps, and how to break rivers, roads, or areas into segments. The following modules will cover more complex analysis methods. 
+This Module covers a general understanding of data analysis, how to create statistics, create buffers, heatmaps, 
+and how to break rivers, roads, or areas into segments. The following modules will cover more complex analysis 
+methods. 
+
+<!--ADD: Break rivers into segments is not done yet! EN-->
 
 ## Data & Spatial Analysis
 
-
-
-Even in a single layer, a lot of analysis is possible. However, sometimes the things we want to analyse are __split across__ multiple layers. In order to get these insights we use the spatial and non spatial GIS-processing tools we learned in the previous modules. In this module, we will look how to apply these tools, collect and work with data to create meaningful insights. We will go over a few examples of data analysis that are common in humanitarian work. 
+Even in a single layer, a lot of analysis is possible. However, sometimes the things we want to analyse are __split 
+across__ multiple layers. In order to get these insights we use the spatial and non spatial GIS-processing tools we 
+learned in the previous modules. In this module, we will look how to apply these tools, collect and work with data 
+to create meaningful insights. We will go over a few examples of data analysis that are common in humanitarian 
+work. 
 
 ### Spatial analysis
 
 ```{figure} ../../fig/multiple_layer_data_analysis.png
 ---
-align: left
+align: center
 name: spatial analysis using multiple layers example
-width: 300px
+width: 400px
 ---
 Spatial analysis means using multiple layers to gain new insights
 ```
-    
-```{sidebar} Spatial Analysis
- * A spatial analysis can be a result of combining several layers with different information in a single map.
+
+* A spatial analysis can be a result of combining several layers with different information in a single map.
 
 __Geographic analysis helps us answer questions like__: 
  * What __patterns__ are in the data?
@@ -36,36 +41,46 @@ __Geographic analysis helps us answer questions like__:
  * How do locations __change over time__?
 
 Before doing any sort of processing, you need to __familiarise yourself with the data__ and understand it.
-```   
+  
 
-1. The first step is to read the metadata from the source and understand __what data was collected__, __who collected the data__, __and how the data was collected__. 
-2. Next, open the attribute table and look at the different features and attributes available. What do the attributes show and what are they called?
+1. The first step is to read the metadata from the source and understand __what data was collected__, __who 
+collected the data__, __and how the data was collected__. 
+2. Next, open the attribute table and look at the different features and attributes available. What do the 
+attributes show and what are they called?
 3. Now you can start visualising the data:
     * You can visualize the data cartographically by assigning or categorizing the data using symbols
     * You can create charts from the attribute table
     * You can look for patterns, averages, outliers
 
-We are usually looking for ways to __describe__ our data to an audience in some ways. Sometimes spatial analysis will be used to provide recommendations for activities. Considering the amount of data available online, it is always important to take a step back and gain perspective when facing this knowledge, these capacities, as well as the data itself before rushing in to manipulate it:
-* __Reliability__: Can I trust this data?
-* __Interest__: Do I need this data?
+We are usually looking for ways to __describe__ our data to an audience in some ways. Sometimes spatial analysis 
+will be used to provide recommendations for activities. Considering the amount of data available online, it is 
+always important to take a step back and gain perspective when facing this knowledge, these capacities, as well as 
+the data itself before rushing in to manipulate it:
+
+- __Reliability__: Can I trust this data?
+- __Interest__: Do I need this data?
 * __Usage__: Am I able to use this data?
 * __Comprehensiveness__: Is this data complete?
 * __Date__: How old is this data?
 * __Sensitivity__: Is this data sensitive?
 
-With spatial analysis, you can build predictive models to plan ahead of disasters. __BUT: Not all analysis is complex! Just knowing how many features are in a layer is useful.__ Simple analysis includes:
+With spatial analysis, you can build predictive models to plan ahead of disasters. __BUT: Not all analysis is 
+complex! Just knowing how many features are in a layer is useful.__ Simple analysis includes:
 * Ranking
 * Categorizing
 * Above/below threshold
 * Affected Areas
 * Population distribution
 
-It is important to know the __limitations__ of the data at your disposal - don't try to use unsuitable data for analysis (e.g. if you now a survey sample is not representative)
+It is important to know the __limitations__ of the data at your disposal - don't try to use unsuitable data for 
+analysis (e.g. if you now a survey sample is not representative)
 
 ```{Attention} Spatial Representation and Analysis
-There are some spatial analysis problems that are difficult to avoid completely. For example the __Modifiable Areal Unit Problem__, where the results look different depending on the unit of analysis.
->INSERT LINK TO MODIFIABLE AREAL UNIT PROBLEM EXPLANATION
+There are some spatial analysis problems that are difficult to avoid completely. For example the __Modifiable Areal 
+Unit Problem__, where the results look different depending on the unit of analysis.
+
 ```
+<!--FIXME: INSERT LINK TO MODIFIABLE AREAL UNIT PROBLEM EXPLANATION -->
 
 __There are two main types of data analysis__:  
 
@@ -305,12 +320,13 @@ Table aggregation workflow
 
 ### Pivoting tables
 
+<!--ADD: Insert example of short form vs. long form or check the example figures-->
+
 Sometimes, the tables are in a format that is not suitable to join. For example, you have multiple zones per land, making the field `CNTRY_NAME` not suitable for aggregation. In this case, it is useful to pivot the table. This means that the fields for the zones and their respective area size are aggregated under the country. The values of the column `ZONE` will be turned into Columns with the values for the area in these columns. Now you can aggregate this table with additional information that has data on countries.
 
 ``` {figure} ../../fig/en_table_pivot_1.png
 ---
 name: Table_pivot 1
-width: 350px
 ---
 Pivoting tables means transforming values into columns
 ```
@@ -318,7 +334,6 @@ Pivoting tables means transforming values into columns
 ``` {figure} ../../fig/en_table_pivot_2.png
 ---
 name: Table pivot 2
-width: 350 px
 ---
 Values of the column `ZONE` are transformed into columns
 ```
@@ -387,7 +402,7 @@ TIN interpolation is commonly called __Delauny triangulation__. This interpolati
 ```{figure} ../../fig/tin_interpolation_example.png
 ---
 name: TIN interpolation example
-width 500 px
+width: 500 px
 ---
 Delaunay triangulation with circumcircles around the red sample data. The resulting interpolated TIN surface created from elevation vector points is shown on the right. (Source: Mitas, L., Mitasova, H. (1999). Spatial Interpolation. In: P.Longley, M.F. Goodchild, D.J. Maguire, D.W.Rhind (Eds.), Geographical Information Systems: Principles, Techniques, Management and Applications, Wiley)
 ```
