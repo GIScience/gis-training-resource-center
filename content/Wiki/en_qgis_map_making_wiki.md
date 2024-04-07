@@ -214,8 +214,7 @@ Make sure to check the map after exporting the PDF as some design elements might
 ## Map templates
 
 ::::{tab-set}
-:::{tab-item}
-Saving a template
+:::{tab-item} Saving a template
 
 1. Once you are satisfied with your map layout, click on the ![](../../fig/en_30.30.2_save_as_template.png)-symbol to save it as a new template.
 2. Choose a location where you want to save the template. Ideally, you should choose the template directory (see tip).
