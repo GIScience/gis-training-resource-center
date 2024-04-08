@@ -74,9 +74,10 @@ The QGIS skills offered on this platform span basic, intermediate, and advanced 
 | Introduction to GIS  | Geo features and attributes | Feature Selection      |
 | QGIS Interface Description |Vector and Raster data- Basic concepts | Spatial Queries: Select by polygon + location                                |
 |     WebGIS Platform  | Vector data |   Data  Classification  |
-| Mobile Apps overview | Vector file formats  | Data Sources   |
+| Mobile Apps overview | Vector file formats  |    |
 |   Examples of maps created with GIS | Basemap selection |Introduction to non-spatial queries |
 |   |  Projections    |    |
+|  |Data Sources|   |
 ::::
   
 :::{dropdown} Intermidate Skills

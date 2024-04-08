@@ -41,7 +41,7 @@ You can use the platform's modular structure (link) and the [skill levels](https
 During and after the training, you can support the process by encouraging and facilitating further exchanges between participants and by evaluating the training.
 -	Encourage participants to communicate and stay in touch, to exchange ideas and experiences after the training. In this way, participants can support and motivate each other by sharing their experiences and successes.
 -	You should plan to evaluate your training in one way or another. This can help you to improve your training and at the same time, it is important to take the participants seriously by considering their perspective.
--	Assessment?
+-	To assess the success of the training and the learning progress of the trainees it makes sense to conduct an assessment before and after a training. One option to do that is to use the [surveys on this platform](/content/Trainers_corner/en_how_to_assessment.md).
 
 ## Available Material
 

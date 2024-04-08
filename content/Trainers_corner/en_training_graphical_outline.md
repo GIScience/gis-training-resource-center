@@ -1,4 +1,4 @@
-# Graphical Outline for Trainings
+# Training Agenda and Handout
 
 __🔙[Back to Homepage](/content/intro.md)__
 

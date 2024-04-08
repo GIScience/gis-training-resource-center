@@ -39,7 +39,7 @@ After this small overview, we can conclude what the platform can and can not do 
 |---|
 |➖ No ready-to-use presentations.|
 |➖ No trainee management.|
-|➖ No intended tob e a selflearning plattform.|
+|➖ No intended to be a selflearning plattform.|
 
 :::
 
