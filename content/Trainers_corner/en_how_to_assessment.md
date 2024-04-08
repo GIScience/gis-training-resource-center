@@ -15,6 +15,7 @@ Now you can use the survey via your own Google account.
 ```{card} Kobo survey temaplate: Pre Training Survey
 [Here](https://docs.google.com/forms/d/1iFdc4P6Qt5YI9yRKTHCtj_pslEsWfJVcNoARGyCI32o/copy) you can download the .xlsx file for the assessment to be used in Kobo Toolbox or ODK.
 ```
+
 ___
 
 ```{card} Google survey temaplate: Post Training Survey
@@ -25,8 +26,6 @@ Now you can use the survey via your own Google account.
 ```{card} Kobo survey temaplate: Post Training Survey
 [Here](https://nexus.heigit.org/repository/gis-training-resource-center/Templates/TOT_post_training_assessment/en_post_training_assessment.xlsx) you can download the .xlsx file for the assessment to be used in Kobo Toolbox or ODK.
 ```
-
-
 
 ## Why do we do assessments?
 
@@ -54,7 +53,7 @@ Based on the standard assessment survey, you have three options:
 2. __Google Survey:__ Alternatively, you can use Google Surveys with the provided template. This digital approach offers the benefits of Google Surveys' functionality, and you can view the results immediately.
 3. __Use another survey system:__ Otherwise, you have the flexibility to take the questions and incorporate them into any other survey system you prefer to use.
 
-## Introduction to the standard survey 
+## Introduction to the standard survey
 
 Below you can find a detailed explanation of each survey section and question.
 
@@ -63,6 +62,7 @@ Below you can find a detailed explanation of each survey section and question.
 ___
 
 ### Motivation
+
 1. How motivated are you to learn more about QGIS? (scale 1-5)
 
 | Little motivated| ... | ... | ... | Highly motivated|
@@ -82,11 +82,13 @@ This question assesses the participants' motivation level to learn more about QG
      - Risk analysis
      - Competence
    - Other: 
-```{dropdown} Explanation 
+
+```{dropdown} Explanation
 Participants are asked to select the reasons why they want to learn or enhance their knowledge of QGIS. This helps trainers understand the diverse motivations driving participants' interest. Based on the context of the GIS training, the answer options can be adapted. 
 ```
 
 ### Competence
+
 3. What is your current level of knowledge in QGIS? (scale 1-5)
 
 | Little| ... | ... | ... | Expert|
@@ -96,6 +98,7 @@ Participants are asked to select the reasons why they want to learn or enhance t
 ```{dropdown} Explanation 
 This question evaluates participants' self-assessed level of knowledge in QGIS on a scale of 1 to 5, allowing trainers to gauge the participants' perceived proficiency before the training begins. 
 ```
+
 4. What is your previous experience in QGIS operations? (multiple answers possible)
    - None
    - I used GIS once
@@ -126,13 +129,13 @@ ___
 ```{dropdown} Explanation 
 Participants rate their perceived level of learning during the training on a scale of 1 to 5, providing insight into the effectiveness of the training program.
 ```
-                                                              
 
 2. What competence did you acquire during the training?
    - I know how to create a basic map (e.g. overview map of a country)
    - I know where I can get data for my project
    - I know where to get information when a technical problem occurs
-```{dropdown} Explanation 
+
+```{dropdown} Explanation
 Participants list the competencies they acquired during the training, helping trainers understand the specific skills and knowledge gained by participants.
 ```
 
@@ -144,18 +147,20 @@ Participants list the competencies they acquired during the training, helping tr
 
 ```{dropdown} Explanation 
 Participants rate the comprehensibility of the training on a scale of 1 to 5, indicating their understanding of the training content and delivery.
-```                                                                                                                                                                     
+```
+
 ### Motivation
 
 4. How motivated are you to work with QGIS in the future?
 
-| Little motivatied| ... | ... | ... | Highly motivated|
+| Little motivated| ... | ... | ... | Highly motivated|
 |---------------|--------|---------|--------|--------|
 | 1|2|3|4|5|
 
 ```{dropdown} Explanation 
 Participants indicate their motivation level to work with QGIS in the future, providing insight into their enthusiasm for applying their newly acquired skills.
-```                                                                                                                                                                  
+```
+
 5. Will you use QGIS in your professional activity?
 
 |Answers|
@@ -164,9 +169,10 @@ Participants indicate their motivation level to work with QGIS in the future, pr
 |Maybe|
 |No|
 
-```{dropdown} Explanation 
+```{dropdown} Explanation
 Participants indicate whether they plan to use QGIS in their professional activities, highlighting the practical relevance and applicability of the training.
-```                                                                                                                                                   
+```
+
 6. Do feel prepared for your job requirements regarding QGIS? 
 
 |Answers|
@@ -177,7 +183,8 @@ Participants indicate whether they plan to use QGIS in their professional activi
 
 ```{dropdown} Explanation 
 Participants assess their preparedness for meeting their job requirements related to QGIS, indicating the training's effectiveness in meeting professional needs.
-```                                                                                                                                     
+```
+
 7. Did the training meet your expectations?
 
 |Answers|
@@ -186,7 +193,7 @@ Participants assess their preparedness for meeting their job requirements relate
 |Maybe|
 |No|
 
-- If no, what would you like to change? 
+- If no, what would you like to change?
 
     ::::{grid} 1
     :::{card} Open Question
@@ -208,6 +215,7 @@ Participants evaluate whether the training met their expectations, providing fee
 ```{dropdown} Explanation 
 Participants indicate their interest in continuing QGIS training, informing future training program development and participant engagement strategies.
 ```
+
 9. If yes, what would you like to learn?
 
     ::::{grid} 1
@@ -218,6 +226,7 @@ Participants indicate their interest in continuing QGIS training, informing futu
 ```{dropdown} Explanation 
 Participants expressing interest in further training specify topics or skills they want to focus on, guiding future training content.
 ```
+
 10. What did you like about the training?
 
 
@@ -226,7 +235,7 @@ Participants expressing interest in further training specify topics or skills th
     :::
     ::::
 
-```{dropdown} Explanation 
+```{dropdown} Explanation
 Participants expressing interest in further training specify topics or skills they want to focus on, guiding future training content.
 ```
 
@@ -236,9 +245,9 @@ Participants expressing interest in further training specify topics or skills th
     :::{card} Open Question
     :::
     ::::
-```{dropdown} Explanation    
+
+```{dropdown} Explanation
 Participants identify areas for enhancement, guiding adjustments to improve future training experiences.
 ```
 :::
 ::::
-

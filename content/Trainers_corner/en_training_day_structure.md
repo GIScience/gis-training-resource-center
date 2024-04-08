@@ -69,7 +69,7 @@ Allocate a minimum of 15 minutes for this segment, covering the following key as
 15. __Recap__ Briefly summarize the day's session content, facilitating a seamless transition to the next topic.
 16. __Outlook:__ Provide a glimpse into the upcoming session's agenda, offering participants insight into what to expect.
 
-## Standard training days 
+## Standard training days
 
 A typical training session, excluding the first and last sessions, generally adheres to the basic structure outlined above. However, certain aspects may be condensed to prioritize content delivery. This section provides insights into planning a standard training day.
 
@@ -93,8 +93,7 @@ Since the ways to teach new skills or reinforce existing ones can be diverse, we
 
 #### Wrap up of the training session
 
-
-The wrap-up session at the conclusion of a training session is importand and should always be included. Its primary objective is to ensure that all questions are addressed, offering an avenue for feedback, and providing clarity on forthcoming sessions. Trainees should feel confident in their new skills and know how to refresh their knowledge (for example, on the platform or on the shared digital whiteboard). 
+The wrap-up session at the conclusion of a training session is important and should always be included. Its primary objective is to ensure that all questions are addressed, offering an avenue for feedback, and providing clarity on forthcoming sessions. Trainees should feel confident in their new skills and know how to refresh their knowledge (for example, on the platform or on the shared digital whiteboard).
 
 Allocate a minimum of 15 minutes for this segment, covering the following key aspects:
 
@@ -111,10 +110,9 @@ The last training day will be very similar to a regular training day. In the beg
 
 At the end of the training, however, you should plan significantly more time to wrap up the current day and the training as a whole. Follow the tips below to bring the training to a successful conclusion:
 
-1. **Wrap-up of today's exercises:** Conclude the current training day by revisiting the purpose of the exercises, addressing any remaining questions, and providing feedback.
+1. __Wrap-up of today's exercises:__ Conclude the current training day by revisiting the purpose of the exercises, addressing any remaining questions, and providing feedback.
 
-2. **Written evaluation:** Allocate time for a written evaluation of the training. Utilize the template provided on this platform or follow the evaluation method prescribed by your organization. Conducting the written evaluation during the training ensures that everyone participates.
-<!--ADD: Insert link to feedback form-->
+2. [__Written evaluation:__](/content/Trainers_corner/en_how_to_assessment.md) Allocate time for a written evaluation of the training. Utilize the template provided on this platform or follow the evaluation method prescribed by your organization. Conducting the written evaluation during the training ensures that everyone participates.
 
 3. **Direct feedback:** Evaluate the group using a method of your choice. The [five-finger feedback method](https://www.teamecho.com/en/resources/blog/5-finger-feedback/#:~:text=5%20finger%20feedback%20is%20an,clearly%20structured%20and%20comprehensible%20manner.) is often effective. This step is crucial as it provides trainees with an opportunity to express their thoughts and opinions directly.
 
@@ -123,5 +121,3 @@ At the end of the training, however, you should plan significantly more time to 
 5. **Contact information:** Ensure that trainees know how to contact you after the training. Additionally, consider compiling a list of participants' contact details to facilitate networking, with their consent, of course.
 
 6. **Farewell:** Finally, close the training session and bid everyone farewell, wishing them all the best in their future endeavors.
-
-

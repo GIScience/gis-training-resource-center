@@ -3,10 +3,10 @@
 __🔙[Back to Homepage](/content/intro.md)__
 
 Welcome to the trainer's corner! Here you can find all the information about how to plan your training and how to teach GIS.
-This short article will give an overview of the training platform and outline the function of all artikel in the trainer's corner.
+This short article will give an overview of the training platform and outline the function of all article in the trainer's corner.
 
-```{admonition} Contact the IFRC GIS Training Plattform Team
-You have questions, feedback or comments on the platform and the content. We are allways happy to hear from you. You can contact us via email   __gis-training-plattform@heigit.org__
+```{admonition} Contact the IFRC GIS Training Platform Team
+You have questions, feedback or comments on the platform and the content. We are always happy to hear from you. You can contact us via email   __gis-training-plattform@heigit.org__
 ```
 
 ## What this platform can do for you and what not
@@ -16,14 +16,14 @@ What the platform can not do is take over all preparatory work. You still need t
 
 * 🎓 The __modules__ are intended to serve as references for trainees who want to delve deeper into a topic or review concepts. Think of the modules as an enhanced version of PowerPoint slides you would nomaly hand over to your trainees, providing comprehensive information for trainees. They can also serve as a guide for trainers to assess what trainees should learn at different stages of their GIS education.
 
-* ✍️ The __exercises__ encompass all the content covered in the modules. They range from smaller exercises focused on specific topics like the QGIS interface to larger-scale exercises covering entire modules. These exercises can be utilized in any order or format, including [follow-along exercisesor group work](handson). Additionally, trainers can assign exercises as homework for trainees who are capable of completing them independently.
+* ✍️ The __exercises__ encompass all the content covered in the modules. They range from smaller exercises focused on specific topics like the QGIS interface to larger-scale exercises covering entire modules. These exercises can be utilized in any order or format, including [follow-along exercises group work](handson). Additionally, trainers can assign exercises as homework for trainees who are capable of completing them independently.
 
 * 📖 The __Wiki__ serves as a support resource for both trainees and trainers during QGIS usage, whether during exercises or in day-to-day work. It provides trainers with the assurance that their trainees have access to an updated, interactive resource to help solve challenges encountered while using QGIS.
 
 After this small overview, we can conclude what the platform can and can not do for you:
 
 ::::{grid} 2
-:::{card} What the Plattform __can__ do ✔️
+:::{card} What the Platform __can__ do ✔️
 ||
 |---|
 |➕ Provide explanatory modules (articles) that can be used by the trainees as a reference and for reiterating and understanding content.|
@@ -34,12 +34,12 @@ After this small overview, we can conclude what the platform can and can not do 
 
 :::
 
-:::{card} What the Plattform __can not__ do ❌
+:::{card} What the Platform __can not__ do ❌
 ||
 |---|
 |➖ No ready-to-use presentations.|
 |➖ No trainee management.|
-|➖ No intended to be a selflearning plattform.|
+|➖ No intended to be a self learning platform.|
 
 :::
 
@@ -48,19 +48,10 @@ After this small overview, we can conclude what the platform can and can not do 
 
 ## Your trainer journey:
 
-This sectio will outline the function of all artikel in the trainer's corner and give an overview of the training platform.
+This section will outline the function of all article in the trainer's corner and give an overview of the training platform.
 
 * The Article [__How to Plan a Whole GIS Training__](/content/Trainers_corner/en_how_to_training.md) provides a checklist of considerations when planning a GIS training. Additionally, it includes a list of essential content for basic GIS training, aiding trainers in selecting exercises suitable for their audience.
 * [__Training Agenda and Handout__](/content/Trainers_corner/en_training_graphical_outline.md) offers insights into various methods for efficiently providing administrative information to trainees. This can range from a simple table in a email to a more elaborate Miro board.
 * [__How to Plan and Structure a GIS Training Session__](/content/Trainers_corner/en_training_day_structure.md) delves into detailed strategies for structuring training sessions, particularly beneficial for novice trainers seeking confidence in conducting training sessions.
 * [__How to Teach GIS__](/content/Trainers_corner/en_how_to_teach_GIS.md) compiles best practices, tips, and experiences in teaching GIS, providing valuable insights and strategies for trainers to enhance their teaching methodologies.
 * [__Assessments in GIS Training: A Guide__](/content/Trainers_corner/en_how_to_assessment.md) presents tools available on this platform to evaluate trainees' GIS skill levels before and after training sessions.
-
-
-
-
-
-
-
-
-

@@ -23,25 +23,33 @@ And __third__, you should prepare the training in a detailed way, especially if 
 :::
 
 
-To facilitate the planning, you can use the following list as a guide: 
+To facilitate the planning, you can use the following list as a guide:
 
-## 1.	Preparation
-Before you plan your training, you need to make some basic decisions about the setting: 
--	Check your audience: What is the skill level and the background of your participants? Are they flexible about training times? How long can they stay away from their job? You should plan your training according to the (practical) needs of your participants to avoid that interested people cannot participate. 
--	Think about the size of the group: experience shows that 10 to 15 participants are ideal. If more people are interested in the training, consider organising more than one training. If possible, have two trainers, so that one can present the content and the other can support the participants.
--	Set the setting: Are you planning an online or face-to-face course? Do you plan your training in half-day or full-day sessions? Will the training take place on consecutive days or spread over several weeks with days off in between? Of course, these questions should be answered depending on the background and needs of the participants.  
-## 2.	Planning
-You can use the platform's modular structure (link) and the [skill levels](https://giscience.github.io/gis-training-resource-center/content/intro.html#learning-objectives) as a guide when planning your training schedule. On a practical level, you should consider the following: 
--	Define the learning objectives in detail and communicate them at the beginning of the training. It is easier to organise the material if you know what you want to achieve. The participants need to know what they are supposed to learn and where they are during the training.
--	When planning the structure of your training, you can use the sample structure (link) as a guide, but you can also adapt it to the specific needs of your participants. If possible, use material and exercises that are related to the participant's background.
--	Allow time for questions and answers, as well as for spontaneous topics. Participants usually benefit most from trainer support for acute problems.  
--	Consider the practical setting: If you are organising face-to-face training, do you have a suitable room? Are there toilets? Will you provide food and drink?
--	Finally, how do you promote your training? Can you promote it within your institution? How will you organise the enrolment process? What information do you need from your participants (background, interests, previous skills)? How do you select participants?
-## 3.	Follow-up
+## 1. Preparation
+
+Before you plan your training, you need to make some basic decisions about the setting:
+
+- Check your audience: What is the skill level and the background of your participants? Are they flexible about training times? How long can they stay away from their job? You should plan your training according to the (practical) needs of your participants to avoid that interested people cannot participate. 
+- Think about the size of the group: experience shows that 10 to 15 participants are ideal. If more people are interested in the training, consider organizing more than one training. If possible, have two trainers, so that one can present the content and the other can support the participants.
+- Set the setting: Are you planning an online or face-to-face course? Do you plan your training in half-day or full-day sessions? Will the training take place on consecutive days or spread over several weeks with days off in between? Of course, these questions should be answered depending on the background and needs of the participants.  
+
+## 2. Planning
+
+ You can use the platform's modular structure (link) and the [skill levels](https://giscience.github.io/gis-training-resource-center/content/intro.html#learning-objectives) as a guide when planning your training schedule. On a practical level, you should consider the following:  
+
+- Define the learning objectives in detail and communicate them at the beginning of the training. It is easier to organize the material if you know what you want to achieve. The participants need to know what they are supposed to learn and where they are during the training.
+- When planning the structure of your training, you can use the sample structure (link) as a guide, but you can also adapt it to the specific needs of your participants. If possible, use material and exercises that are related to the participant's background.
+- Allow time for questions and answers, as well as for spontaneous topics. Participants usually benefit most from trainer support for acute problems.  
+- Consider the practical setting: If you are organizing face-to-face training, do you have a suitable room? Are there toilets? Will you provide food and drink?
+- Finally, how do you promote your training? Can you promote it within your institution? How will you organize the enrolment process? What information do you need from your participants (background, interests, previous skills)? How do you select participants?
+
+## 3. Follow-up
+
 During and after the training, you can support the process by encouraging and facilitating further exchanges between participants and by evaluating the training.
--	Encourage participants to communicate and stay in touch, to exchange ideas and experiences after the training. In this way, participants can support and motivate each other by sharing their experiences and successes.
--	You should plan to evaluate your training in one way or another. This can help you to improve your training and at the same time, it is important to take the participants seriously by considering their perspective.
--	To assess the success of the training and the learning progress of the trainees it makes sense to conduct an assessment before and after a training. One option to do that is to use the [surveys on this platform](/content/Trainers_corner/en_how_to_assessment.md).
+
+- Encourage participants to communicate and stay in touch, to exchange ideas and experiences after the training. In this way, participants can support and motivate each other by sharing their experiences and successes.
+- You should plan to evaluate your training in one way or another. This can help you to improve your training and at the same time, it is important to take the participants seriously by considering their perspective.
+- To assess the success of the training and the learning progress of the trainees it makes sense to conduct an assessment before and after a training. One option to do that is to use the [surveys on this platform](/content/Trainers_corner/en_how_to_assessment.md).
 
 ## Available Material
 
@@ -100,7 +108,7 @@ Keep in mind that you don't need to follow the module structure. It is there to 
         [Plugins](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html)  
 *   - __Module 3: Basic GIS operations__
     - 
-        Digitisation  
+        Digitization  
         Geodata selection and queries  
         Geodata classification  
     - 
@@ -109,7 +117,7 @@ Keep in mind that you don't need to follow the module structure. It is there to 
         Big Exercise: 
         [Exercise 3: Nigeria Floods](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_modul_3_ex1.html)  
     - 
-        [Ditisation](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html)  
+        [Digitization](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html)  
         [Geodata classification](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_data_classification_wiki.html)  
         [Spatial and non-spatial queries](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_queries_wiki.html) 
 *   - __Module 4: Representation__
@@ -124,18 +132,18 @@ Keep in mind that you don't need to follow the module structure. It is there to 
     - 
         [Exercise 1: Creating a Map of Ghana](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_I_ex2.html)   
     - 
-        [Visualisation](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_visualisation_wiki.html)  
+        [Visualization](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_visualisation_wiki.html)  
         [Map making](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_map_making_wiki.html)  
 *   - __Module 5: Intermediate GIS operations__
     -   Spatial and non-spatial geoprocessing    
         Clip  
-        Buffer   
+        Buffer
         Dissolve  
         Spatial joins  
-        Select by location   
-        Attribute table functions (add, delete, calculate field, statistics)     
-        Query builder   
-        Non-spatial queries   
+        Select by location
+        Attribute table functions (add, delete, calculate field, statistics)
+        Query builder
+        Non-spatial queries
         Non-spatial joins  
     - Spatial Geoprocessing:  
         [Exercise 1: Healthsite distribution in Saint Louis Region](https://giscience.github.io/gis-training-resource-center/content/Modul_5/en_qgis_spatial_tools_ex1.html)  
