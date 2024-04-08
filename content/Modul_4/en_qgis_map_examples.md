@@ -6,7 +6,9 @@ In this chapter we will be discuss well designed maps and give examples on how t
 
 <!--TO DO:  
 Insert Overview  
-Insert links to the tutorial content/wiki-->
+Insert links to the tutorial content/wiki
+Insert examples in the 4 semiological errors part
+-->
 
 In this section, we will present some well designed maps and discuss how to create similar maps. If you need further examples for good map design, check out these websites/repositories:
 

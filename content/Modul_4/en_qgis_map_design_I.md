@@ -4,7 +4,8 @@ The representation of geodata in maps is crucial in order to provide useful loca
 
 In this chapter we will go over the basics of symbology, colours and how to adjust individual layers in QGIS to create comprehensive maps.
 
-## Recap: Types of maps
+:::{admonition} Recap: Types of Maps
+:class: seealso
 
 In general, there are two main types of maps: __topographic maps__ and __thematic maps__.
 
@@ -13,7 +14,7 @@ __Topographic maps__ are intended to be exhaustive, including elements fundament
 
 ```{figure} ../../fig/en_30.30.2_topographic_map_examples.png
 ---
-width: 500px
+width: 600px
 name: Topographic Maps Examples
 ---
 Examples for topographic maps
@@ -24,13 +25,15 @@ __Thematic maps__ address the distribution of phenomena, including sometimes sta
 
 ```{figure} ../../fig/en_30.30.2_thematic_maps_examples.png
 ---
-width: 500px
+width: 600px
 name: Thematic maps examples
 ---
 Examples for thematic maps
 ```
 
 These two maps use design elements differently. Topographic maps will use symbols and colors out of convention and readability, whereas in designing thematic maps, the symbols and colors you use depend on the context and the information you want to convey.
+
+:::
 
 <!--## Graphic Semiology
 
@@ -175,6 +178,7 @@ Symbolization for vector data; Source: White, T. (2017). Symbolization and the V
 Remember that __the layer's symbology is saved within your project file, not within your shapefile!__ If you share a shapefile with a colleague, it will have a different style when they add it to their own project.
 ```
 
+:::{card} 
 ### SVG-Symbols, Raster images, and Markers
 
 QGIS let's you use different types markers for symbolization. These can be simple markers, raster images, or SVG-symbols.
@@ -182,6 +186,8 @@ QGIS let's you use different types markers for symbolization. These can be simpl
 - __Simple markers__ are simple shapes such as rectangles, circles, or crosses that can be adjusted in the symbolization layer (color, size, outline, etc.).
 - If you select __raster images__, the resolution of the symbol is limited by the amount of pixels in the image. It is not advisable to use high resolution images as symbols on your map because it may overload your PC.
 - __SVG-symbols__ are *scaleable vector graphic* symbols. As vector files, they can be scaled to any size while keeping the same resolution. In most cases, if you want to use a more complex symbol (e.g. hospital, school, train station), SVG-symbols are the best option as they let you adjust the symbol (colours, outline, size, etc.)
+
+:::
 
 #### Using Simple Markers
 
@@ -264,14 +270,14 @@ Setting up labels in QGIS 30.30.2
 .mp4"></video>
 
 :::{attention}
-Single Labels are not always useful, the dataset is too big, or you only want to display certain features in the dataset. In the example below, there are too many settlements to display labels for each settlements. Instead, it might be useful to only display the regional and national capitals. For such a use case, Rule-based Labeling is ideal.
+Single Labels are not always useful. For example, if the dataset is too big, or you only want to display certain features in the dataset. In the example below, there are too many settlements to display labels for each settlements. Instead, it might be useful to only display the regional and national capitals. For such a use case, Rule-based Labeling is ideal.
 
 ```{figure} /fig/single_labels_bad_example.png
 ---
 name: single labels bad example
-width: 500 px
+width: 400 px
 ---
-In the example below, Single Labels was selected to display the names of the settlements (red dots). A map with so much text information is unreadable. 
+Single Labels was selected to display the names of the settlements (red dots). A map with so much text information is unreadable and the information can hardly be understood. 
 ```
 
 :::
@@ -288,7 +294,7 @@ width: 500 px
 Rule-based Labeling let's you apply a filter to datasets. This way, you can display the labels only for selected features without altering the dataset.
 ```
 
-The rules, or filters, are based on an expression. You can use the ![](/../fig/expression_string_builder_icon.png) `Expression string builder` to the right of the __Filter__ option in the label panel.
+The rules, or filters, are based on an expression. You can use the ![](../../fig/expression_string_builder_icon.png) `Expression string builder` to the right of the __Filter__ option in the label panel.
 
 #### Adding Rule-based Labels to a Layer
 
@@ -313,7 +319,7 @@ Below are some further considerations to keep in mind when using labels:
 
 - If you want to display different types of information as labels, the font needs to be different so the reader can differentiate between the different types of information that is displayed. A good practice is to display the labels in a similar color to the objects it is referring to. For example, dark blue text for the labels of light blue bodies of water, or brown text for the labels of light-brown houses.
 
-```{figure} ../fig/good_labels_example.png
+```{figure} ../../fig/good_labels_example.png
 ---
 width: 400 px
 name: Axis Maps good labels example
@@ -321,31 +327,36 @@ name: Axis Maps good labels example
 A good example of label placement and font. Pay attention to the text colors and orientation. Every label can easily be attributed to the correct cartographic feature. (Source: [Axis Maps](https://www.axismaps.com/guide/labeling))
 ```
 
-- In most cases, displaying numerical values as labels is confusing to the reader and makes the map to complex. In most cases, for numerical data, you can choose a different visualization such as colours or symbol size (don't forget to add a legend).
+```{Attention}
 
-::::{grid} 2
-:::{card}
+- In most cases, displaying numerical values as labels is confusing to the reader and makes the map to complex. In most cases, for numerical data, you can choose a different visualization such as colours or symbol size.
 
-```{figure} /fig/labels_numerical_values_bad_example.png
+:::::{grid} 2
+::::{card}
+
+:::{figure} ../../fig/labels_numerical_values_bad_example.png
 ---
 name: numerical labels bad example
 ---
 Numerical Labels
-```
-
 :::
-:::{card}
 
-```{figure} /fig/labels_graduated_symbology_example.png
+::::
+
+::::{card}
+
+:::{figure} /fig/labels_graduated_symbology_example.png
 ---
 name: graduated symbology instead numerical values
 ---
 [Graduated Symbology](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_data_classification.html#graduated-classification)
-```
-
 :::
 
 ::::
+
+:::::
+
+```
 
 - QGIS places the labels automatically. Sometimes, if you are using a lot of black outlines or dark colours, black text is hard to read on the map. In that case, you can add white buffer around the text to make it visible.
 
