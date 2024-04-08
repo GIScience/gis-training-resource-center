@@ -1,8 +1,8 @@
-# Exercises Modul 2- Working with Geodata
+# Exercises Module 2 - Introduction to Working with Geodata
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-These exercises touch on all the content of Modul 2- Working with Geodata.
+These exercises touch on all the content of module 2
 
 ## Geodata concept
 

@@ -4,7 +4,7 @@
 format: jb-book
 root: content/intro
 parts:
-  - caption: Modul 1- Introduction GIS
+  - caption: Module 1 - Introduction to GIS
     chapters:
       - file: content/Modul_1/en_qgis_theorie.md
       - file: content/Modul_1/en_qgis_start.md
@@ -12,7 +12,7 @@ parts:
           - file: content/Modul_1/en_qgis_interface_ex2.md
       - file: content/Modul_1/en_qgis_installation.md
       - file: content/Modul_1/en_qgis_modul_1_exercises.md      
-  - caption: Modul 2- Working with Geodata
+  - caption: Module 2 - Introduction to Working with Geodata
     chapters:
       - file: content/Modul_2/en_qgis_geodata_concept.md
         sections:
@@ -29,7 +29,7 @@ parts:
       - file: content/Modul_2/en_qgis_modul_2_exercises.md
         sections:
           - file: content/Modul_2/en_qgis_modul_2_ex_1.md
-  - caption: Modul 3- Basic GIS operations
+  - caption: Module 3 - Basic GIS Operations (Digitisation, Classification, and Queries)
     chapters:
       - file: content/Modul_3/en_qgis_digitalisation.md
         sections:
@@ -43,7 +43,7 @@ parts:
       - file: content/Modul_3/en_qgis_modul_3_exercises.md
         sections:
           - file: content/Modul_3/en_qgis_modul_3_ex1.md
-  - caption: Modul 4- Representation
+  - caption: Module 4 - Visualisation of Geodata and Map Making
     chapters:
       - file: content/Modul_4/en_qgis_map_design_I.md
         sections:
@@ -54,7 +54,7 @@ parts:
           - file: content/Modul_4/en_qgis_map_design_I_ex2.md
       - file: content/Modul_4/en_qgis_map_examples.md
       - file: content/Modul_4/en_qgis_modul_4_exercises.md
-  - caption: Modul 5- Intermediate GIS operation
+  - caption: Module 5 - Intermediate GIS Operations (Spatial and Non-Spatial Data Manipulation)
     chapters:
       - file: content/Modul_5/en_qgis_spatial_tools.md
         sections:
@@ -68,22 +68,22 @@ parts:
         sections:
           - file: content/Modul_5/en_qgis_modul_5_ex1.md
           - file: content/Modul_5/en_qgis_modul_5_ex2.md
-  - caption: Modul 6- Data analysis with QGIS
+  - caption: Module 6 - Data Analysis with QGIS
     chapters:
       - file: content/Modul_6/en_qgis_data_analysis_theorie.md
       - file: content/Modul_6/en_qgis_common_data_analysis.md
         sections:
           - file: content/Modul_6/en_qgis_data_analysis_ex1.md
-  - caption: Modul 7- Automation with QGIS
+  - caption: Module 7 - Automation with QGIS
     chapters:
       - file: content/Modul_7/en_qgis_automation_theory.md
       - file: content/Modul_7/en_qgis_modul_7_ex1.md
-  - caption: Modul 8 - Remote Sensing and Raster data
+  - caption: Module 8 - Remote Sensing and Raster Data
     chapters:
       - file: content/Modul_8/en_qgis_remote_sensing_raster_theorie.md
       - file: content/Modul_8/en_qgis_remote_sensing_theory.md  
       - file: content/Modul_8/en_qgis_modul_8_ex1.md
-  - caption: Modul 9- Network Analysis
+  - caption: Module 9 - Network Analysis
     chapters:
       - file: content/Modul_9/en_qgis_network_analysis_theory.md
       - file: content/Modul_9/en_qgis_network_analysis.md

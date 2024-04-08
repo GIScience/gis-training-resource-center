@@ -40,7 +40,7 @@ If you need inspiration on how to style certain elements of your map, make sure 
 ## Step 2: Set the symbology for the individual layers
 
 1. First, let's style the administrative boundaries. We want to keep it simple and keep the polygon of the adm1 with a transparent filling, but with a thicker outline. On top of that layer, we want to see the adm2 boundaries, but with a thinner (or even dashed) outline
-2. The flood extent needs to be immediatly recognizable. Choose a colour and filling style (Simple Fill or hashed line fill)
+2. The flood extent needs to be immediately recognizable. Choose a colour and filling style (Simple Fill or hashed line fill)
 3. The river system and lake should be symbolized with a associative colour to be immediatly recognizable.
 4. The road network shapefile has the attribute `Flooded` with the Value `Y` if the extent of the flood crosses the road. Set the symbology of the road network so roads are easily distinguishable and that the reader can identify which roads are potentially flooded.
 5. Decide how you want to display settlements and health facilities (link to SVG-symbols)
@@ -67,7 +67,7 @@ If you are happy with the styles you have set up for your layers, you can save t
 3. Navigate back to the main QGIS-Window.
 4. Copy the layers for the overview map. In this case, the `Adm1`-layer. This way, you will not loose the style for the layers on your main map. Adjust the style on the copied layer for your overview map.
 5. Navigate back to the print layout.
-6. Add a second map as your overview map (preferrably somewhere in the corner)
+6. Add a second map as your overview map (preferably somewhere in the corner)
 7. Set it up as an overview map.
 8. Lock the layers and lock the styles.
 
@@ -76,7 +76,8 @@ If you are happy with the styles you have set up for your layers, you can save t
 
 1. Add the sources of the datasets
 2. Add a text to describe what the map shows.
-3. 
+3. Add your name and/or organisation as authors.
+
 
 ```{Tip}
 If you are happy with the layout of your print layout, don't forget to save it as a preset for future use.
@@ -89,10 +90,3 @@ Once you are happy with the print layout, it is time to export the map as a PDF-
 ```{Tip}
 To avoid too many changes when exporting the map, set the 
 ```
-
-
----
-
-
-
-

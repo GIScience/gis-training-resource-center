@@ -2,7 +2,7 @@
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-Learning GIS can be challenging, especially for individuals who are new to the topic or have limited experience with technology beyond standard office systems. The concept of geodata and everything that it entails is quite removed from the things many people work on day to day in the humanitarian sector. However, to grasp these concepts is essential to work effectively with GIS and solve problems. That being said, often there is not enough time to dive deep into topics like projections or algorithms. And we lean more through practical hands-on training than lectures about GIS theory.
+Learning GIS can be challenging, especially for individuals who are new to the topic or have limited experience with technology beyond standard office systems. The concept of geodata and everything that it entails is quite removed from the things many people work on day to day in the humanitarian sector. However, to grasp these concepts is essential to work effectively with GIS and solve problems. That being said, often there is not enough time to dive deep into topics like projections or algorithms. And we learn more through practical hands-on training than lectures about GIS theory.
 
 This is why we must be aware of balancing practical hands-on and theory when teaching GIS. 
 In the following article, we will present best practices for teaching GIS according to our experiences. We will start with discussing the difference in teaching theory and teaching with hands-on exercises and the importance of connecting GIS to their profession or work requirements. Later on, the article discusses practical considerations to do when teaching GIS and methods to avoid and solve problems.
@@ -58,9 +58,9 @@ Follow-along exercises are a great tool to introduce new tools and functions bec
     - Disadvantages
 *   - `+` Good to introduce new topics
     - `-` Limited exchanges between trainees
-*   - `+` Questions can be answered immedialty
+*   - `+` Questions can be answered immediately
     - `-` Not a lot of initiative can be taken by trainees
-*   - `+` Good problem-solving possibilites by trainers
+*   - `+` Good problem-solving possibilities by trainers
     - 
 ```
 :::
@@ -91,7 +91,7 @@ Independent from the type of exercise, you should briefly go over the following 
 
 1. __Aim of the exercise:__ In general, a hands-on exercise should start with explaining the goal of the exercise. For example: _„This exercise aims to teach the process of basic spatial data processing using the tools Clip, Merge and dissolve."_ This is a good opportunity to highlight the practical use of the tools the participants will learn to boost motivation.
 2. __Background:__ Ideally, the exercise is built around a real-world example or a fictional scenario within the humanitarian work. In this case, you should quickly explain the background and story. An example of this is the exercise in module 3 ([Exercise: Nigheria Floods](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_modul_3_ex1.html)).
-3. __Exercise Data:__  Most hands-on exercises use real-world data (from [HDX](https://data.humdata.org), for example). Each dataset used in the exercise should be explained shortly. This information can be found on each exercise on the platform. Make sure that everybody has downloaded the exercise data before you start. Note that some trainees are not familiar with `zip.` files. Make sure the trainees unzip the folders before trying to import them into QGIS and take the time to solve any other issues concerning the exercise data. 
+3. __Exercise Data:__  Most hands-on exercises use real-world data (from [HDX](https://data.humdata.org), for example). Each dataset used in the exercise should be explained shortly. This information can be found on each exercise on the platform. Make sure that everybody has downloaded the exercise data before you start. Note that some trainees are not familiar with `.zip` files. Make sure the trainees unzip the folders before trying to import them into QGIS and take the time to solve any other issues concerning the exercise data. 
 
 ### During the exercise: Follow-along
 If you run a follow-along exercise, you can follow these basic principles for going through the exercise. Explain the purpose of each step. E.g. _„In this step we load the data into QGIS“_ or _„In this step, we cut out all points expat the ones in the area of interest“_. Expect to show every step three times. Either on a large screen or by sharing your screen (remote). For this, you might need to have a lot of patience. People will need to switch between watching you perform the steps on your screen and orienting themselves in the QGIS interface on their own computer to perform the steps. This will take a lot of time and there is no sense in rushing things. The goal of the workshop is to not leave anybody behind. Be very deliberate and show everything step by step, even very small things. You might have to ask several times if there are any issues. 
@@ -101,8 +101,8 @@ Use the tabs or the geoprocessing toolbox as much as possible rather than clicki
 ```
 
 1. During the first demonstration encourage the trainees to just watch what you are doing. Do this slowly and deliberately.
-2. In the secound demonstration let the trainees follow along on their computers.
-3. The third demonstration can be used to address problems some of the participants might encounter during the secound demonstration. Sometimes it is worthed to give the trainees some time to explore different options. For example during tasks that have to do with styling of layers or maps. 
+2. In the second demonstration, let the trainees follow along on their computers.
+3. The third demonstration can be used to address problems some of the participants might encounter during the second demonstration. Sometimes, it is worth to give the trainees some time to explore different options. For example, during tasks that have to do with styling of layers or maps. 
 
 Once everybody has managed to produce the desired results, you can move on.
 
@@ -112,7 +112,7 @@ In case you doing group work there are some other things to look out for.
 2. Once this is done, give them some time to organise themselves and go over the instructions. 
 3. After some time you should check and go through the groups to see if there are any questions or misunderstandings. 
 4. After the initial round, visit the groups if necessary. Ask if the groups need more time and adjust the times accordingly
-5. Once the group work is over gather the trainees together. Check if there are any problems or questions.
+5. Once the group work is over, gather the trainees together. Check if there are any problems or questions.
 6. Once this is done, let the groups present their results. 
 
 ### End of an exercise 
@@ -128,7 +128,7 @@ The ability to navigate challenges, and knowing where and how to seek solutions,
 * __Utilizing the IFRF GIS Training Plattform Wiki:__ Encourage trainees to take advantage of QGIS training resources on this platform!
 * __Effective use of search engines like Google:__ Teach trainees how to formulate precise search queries using relevant keywords related to their specific problem. Emphasize the importance of including relevant GIS software names, error messages, and specific task descriptions to yield accurate search results.
 * __Effective use of QGIS Documentation:__ Trainees should learn how to effectively navigate [QGIS documentation](https://docs.qgis.org/3.34/en/docs/user_manual/), including user manuals, tutorials, and FAQs. Teach them how to use keywords related to their specific problem to find relevant information and step-by-step guides within the QGIS documentation.
-* __Engaging with QGIS user community:__ Introduce trainees to [online forums, Telegramm groups and communities](https://www.qgis.org/en/site/forusers/support.html) dedicated to QGIS users, such as the QGIS Community Forum and [QGIS subreddit](https://www.reddit.com/r/QGIS/). Encourage active participation in discussions, where they can seek advice from experienced users, share their experiences, and collaborate on problem-solving.
+* __Engaging with QGIS user community:__ Introduce trainees to [online forums, Telegram groups and communities](https://www.qgis.org/en/site/forusers/support.html) dedicated to QGIS users, such as the QGIS Community Forum and [QGIS subreddit](https://www.reddit.com/r/QGIS/). Encourage active participation in discussions, where they can seek advice from experienced users, share their experiences, and collaborate on problem-solving.
 * __Exploring QGIS tutorial videos:__ Recommend trainees to explore tutorial videos specifically focused on QGIS available on platforms like YouTube. These videos often provide visual demonstrations of QGIS functionalities and troubleshooting techniques for common issues.
 * __Leveraging QGIS chatbots and AI assistants:__ Introduce trainees to AI-powered assistants like ChatGPT, specifically trained to provide instant responses to QGIS-related queries and offer guidance on troubleshooting specific issues. Teach them how to interact effectively with these assistants to obtain relevant information and solutions tailored to QGIS.
 * __Engaging with QGIS user groups:__ Encourage trainees to [join local or online QGIS user groups](https://www.qgis.org/en/site/forusers/usergroups.html#qgis-usergroups) and Surge Information Management Support (SIMS) Geo group on Slack. In these communities they can connect with other QGIS users, mentors, and experts. Participating in user groups provides opportunities for networking, knowledge exchange, and mentorship in QGIS.

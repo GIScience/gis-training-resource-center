@@ -82,7 +82,7 @@ Plugin Manager settings to show experimental plugins
 
 :::
 
-To add a Basemap from the QuickMapServices Plugin:
+To add a basemap from the QuickMapServices plugin:
 
 1. In the main menu in the top bar of your screen, navigate to `Web` > `QuickMapServices` 
 2. Click on `Search QMS`. A new panel will open, most likely at the bottom right.
@@ -97,7 +97,7 @@ A list of basemaps and useful search queries for the QMS-plugin can be found on 
 :::
 
 ```{Note}
-When you are using QuickMapServices, be aware that some of these maps are under copyright laws, that restrict the reproduction of these maps. Be aware of these restrictions by looking up the copyright licences for the basemaps you are using. In general, satellite imagery is not free to use. This means you can not publish maps with all of the available base maps!
+When you are using QuickMapServices, be aware that some of these maps are under copyright laws, that restrict the reproduction of these maps. Be aware of these restrictions by looking up the copyright licenses for the basemaps you are using. In general, satellite imagery is not free to use. This means you can not publish maps with all of the available base maps!
 ```
 
 

@@ -21,10 +21,9 @@ The exercise covers:
 - [Projects and folder structure](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
 
 
-
 ## Data preparation
 
-In this exercise, we will not be using any geodata. Instead, we will be learning how to navigate throught the different interfaces and how to save and load a QGIS project. You can download the zipped template folder structure [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_1/Modul_1_Exercise_1_Understanding_the_interface/Modul_1_Exercise_1_Understanding_the_interface.zip).
+In this exercise, we will not be using any geodata. Instead, we will be learning how to navigate through the different interfaces and how to save and load a QGIS project. You can download the zipped template folder structure [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_1/Modul_1_Exercise_1_Understanding_the_interface/Modul_1_Exercise_1_Understanding_the_interface.zip).
 
 ```{figure} /fig/Standard_project_folder_structure.drawio.svg
 ---
@@ -58,7 +57,7 @@ align: Left
 
 - Toolbars are at the top of the screen by default. They include the controls that let you switch between different ways of interacting with the interface. 
 - Panels are at the sides of the screen by default. They include the file browser and layer navigation panels to the left of the screen. Other panels can be toggled to search and use processing tools. In the layer panel, you will see the data we will add later on.
-On the right of the screen, you will most likely have the __Processing Toolbox__ panel. If it is missing for you, check out this [wikipage](content/Wiki/en_qgis_common_errors_and_Issues.md).
+On the right of the screen, you will most likely have the __Processing Toolbox__ panel. If it is missing for you, check out this [wiki page](content/Wiki/en_qgis_common_errors_and_Issues.md).
 
 ```{figure} /fig/en_QGIS_GUI.png
 ---
@@ -95,8 +94,8 @@ Take time to make yourself familiar with the different ways you can arrange the 
 6. Let's save the project now. Click on the save icon on the toolbar or open the  `Project` menu and choose `Save As...`
     1. Choose a location for the project file. An ideal place would be in the project subfolder in the template folder structure. Navigate to the folder called `Module_1_Exercise_0` and open the subfolder called `Project`. Select this location and give the QGIS project a name (for example: `QGIS_Training_Exercise_0`). The project will be saved as a `.qqz` file.
     2. Click `Save` 
-     Close the QGIS aplication and reopen it.
-7.  Close the QGIS aplication and reopen it. When QGIS restarts, the project we just saved will appear in the `Recent Projects` panel. You can double-click it to open it. You can also navigate to the `.qgz` file in your file explorer and double click on it. 
+     Close the QGIS application and reopen it.
+7.  Close the QGIS application and reopen it. When QGIS restarts, the project we just saved will appear in the `Recent Projects` panel. You can double-click it to open it. You can also navigate to the `.qgz` file in your file explorer and double click on it. 
 This will also launch QGIS and load the project. 
 
 ```{Tip}
