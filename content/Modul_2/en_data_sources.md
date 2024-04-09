@@ -95,7 +95,7 @@ licensing and to follow the respective regulations to avoid difficulties.
 | OpenAerialMap | Crowdsourced drone imagery | https://map.openaerialmap.org/ |
 | USGS Earth Explorer | Satellite data from multiple sources, including Landsat and Sentinel | https://earthexplorer.usgs.gov/ |
 | NASA Shuttle Radar Topography Mission (SRTM) | Global elevation data | http://srtm.csi.cgiar.org/srtmdata/ |
-| Earth Observe | digital elevation model on a global scale |https://earthexplorer.usgs.gov/ | 
+| Earth Observe | Digital elevation model on a global scale |https://earthexplorer.usgs.gov/ | 
 | Copernicus | Earth observation data | https://scihub.copernicus.eu/ | 
 | GlobCover | Raster data on land cover | http://due.esrin.esa.int/page_globcover.php |
 
@@ -104,10 +104,10 @@ licensing and to follow the respective regulations to avoid difficulties.
 
 OpenStreetMap (OSM) is a collaborative project that aims to create a free and editable map of the world. Unlike traditional maps, which are often proprietary and controlled by commercial entities, OSM allows anyone to contribute and edit map data, resulting in a detailed and constantly evolving map of roads, trails, landmarks, and more. With its open-source nature and global community of contributors, OpenStreetMap has become a valuable resource for a wide range of applications, from navigation and urban planning to disaster response and humanitarian aid.
 
-There a multiple ways to get OpenStreetMap (OSM) data as a vector file into QGIS. The three most common and easy-to-use ways are geofarbik.de, HOT Export Tool and QickOSM. Echa oft he options hass trog advanteges and disatvanteges.
+There a multiple ways to get OpenStreetMap (OSM) data as a vector file into QGIS. The three most common and easy-to-use ways are geofarbik.de, HOT Export Tool and QuickOSM. Each of the options has both advantages and disadvantages.
 
 ```{Note}
-In the exercise OpenStreetMap data export all three options are explored.
+In the exercise "OpenStreetMap data export" all three options are explored.
 ```
 
 <!---ADD: Insert link to OSM exercise -->
@@ -165,7 +165,7 @@ To work efficiently with QuickOSM, it's essential to have a basic understanding 
 * Firstly, all data in OSM is organized using a key and value system. A combination of a key and its corresponding value is referred to as a __tag__.
 For instance, consider the key 'amenity.' According to the OSMWiki, *"'amenity=*' describes useful facilities such as toilets, telephones, banks, pharmacies, prisons, and schools."*.
 Notably, a key can have multiple values, with 'amenity' alone having 8911 different values. Typical examples of values for amenities include schools and hospitals.
-When searching for data on OSM, it's crucial to identify the relevant keys and values representing the desired features. Useful resources for this purpose include T[taginfo](https://taginfo.openstreetmap.org) and the OSM Wiki article about [Map features](https://wiki.openstreetmap.org/wiki/Map_features).
+When searching for data on OSM, it's crucial to identify the relevant keys and values representing the desired features. Useful resources for this purpose include [taginfo](https://taginfo.openstreetmap.org) and the OSM Wiki article about [Map features](https://wiki.openstreetmap.org/wiki/Map_features).
 
 * Secondly, a feature in OSM can have multiple tags, each comprising a key and its corresponding value. This means that sometimes, multiple key-value pairs are required to retrieve all the desired data.
 For example, let's consider hospitals. While all hospitals should ideally have the tags 'amenity=hospital' and 'Health=Hospital,' some may only have one of these tags. To ensure comprehensive data retrieval, it's advisable to use both tags when searching for hospitals.
@@ -208,7 +208,7 @@ Running the QuickOSM plugin.
 :::{dropdown} How to fetch data for multiple queries
 
 If you want to get more data in the same area, you can add a query by clicking 
-on the ![](fig/plus_quickosm.png). Be careful choosing the right logical operator 
+on the ![](/fig/plus_quickosm.png). Be careful choosing the right logical operator 
 `And` or `Or`. If you are unsure check the page [non-spatial queries](/content/Wiki/en_qgis_non_spatial_queries_wiki) 
 on the wiki. There is an example of this in the Module 2 [OSM exercise](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_data_sources_ex2.html#task-quickosm)
 
