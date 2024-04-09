@@ -134,7 +134,7 @@ ___
 ## Contact
 
 ```{admonition} Contact the IFRC GIS Training Plattform Team
-You have questions, feedback or comments on the platform and the content. We are allways happy to hear from you. You can contact us via email   __gis-training-plattform@heigit.org__
+You have questions, feedback or comments on the platform and the content. We are allways happy to hear from you. You can contact us via email   __gis-training-platform@heigit.org__
 ```
 
 

@@ -12,14 +12,13 @@ The information provided by the radiation emitted from the Earth's surface can b
 ```{figure} /fig/en_m8_rs_spectrum.png
 ---
 name: Basic concept of a spatial raster
-width: 500px
+width: 350px
 align: right
 ---
 
 ```
 
-An important component of remote sensing is that different sensors can measure and process a much wider range of electromagnetic radiation than the human eye, which is limited to the visi-ble spectrum. The electromagnetic spectrum can be divided into the following wavelength bands: <br><br>
-
+An important component of remote sensing is that different sensors can measure and process a much wider range of electromagnetic radiation than the human eye, which is limited to the visible spectrum. The electromagnetic spectrum can be divided into multiple wavelegth intervals like the visible spectrum, the infra-red spectrum or microwaves (see fig X). <br>
 
 
 Objects and the Earth's surface reflect and absorb EMR across the wavelength spectrum and with distinct patterns that are unique to the type of object/surface. These unique patterns are called "spectral signatures" and are visualised in signature graphs.
@@ -29,10 +28,10 @@ Signatures vary with variations in an object/surface's material composition, str
 - Water bodies tend to have low reflectance over most of the spectrum, with higher ab-sorption at visible wavelengths and lower absorption in the NIR.
 - Urban areas can have complex spectral signatures due to the variety of materials pre-sent, such as asphalt, concrete and metal, each with its own reflectance characteristics across the spectrum.
 
-```{figure} /fig/en_m8_rs_specsigs.png
+```{figure} /fig/en_m8_rs_specsigs.jpeg
 ---
 name: Basic concept of a spatial raster
-width: 800px
+width: 600px
 
 ---
 
@@ -61,7 +60,7 @@ Remote sensing methods can generally be divided into two categories: active and 
 ```{figure} /fig/en_m8_rs_activepassive.png
 ---
 name: Basic concept of a spatial raster
-width: 800px
+width: 600px
 
 ---
 
@@ -77,7 +76,7 @@ All general attributes of raster data, such as spatial resolution, extent or the
 
 
 
-## Visuliszation of Multi Spectral Remote Sensing Data
+## Visulization of Multi Spectral Remote Sensing Data
 The fact that the bands of the individual spectral ranges are available in the files of multispectral remote sensing scenes as individual rasters allows various possible combinations of these bands to create so-called false colour composites: the optical perception of the human eye can be divid-ed into the three spectral ranges of visible light (red, blue and green, R-G-B for short). In a "true colour display", i.e. the optical display of a satellite image as the human eye would perceive it (e.g. Google Maps Satellite), these bands are also assigned to the corresponding bands: R = Red, G = Green, B = Blue.
 
 ```{figure} /fig/en_m8_rs_bandsconcept.png
@@ -94,7 +93,7 @@ In a false colour image the optical representation of one or more of the bands i
 ```{figure} /fig/en_m8_rs_RGB.png
 ---
 name: Basic concept of a spatial raster
-width: 400px
+width: 370px
 align: left
 ---
 
@@ -103,7 +102,7 @@ align: left
 ```{figure} /fig/en_m8_rs_NIR_RED_GREEN.png
 ---
 name: Basic concept of a spatial raster
-width: 400px
+width: 370px
 align: right
 ---
 
@@ -114,8 +113,8 @@ This false colour composit for example strongly highlights vegetation and especi
 ```{figure} /fig/en_m8_rs_SWIR_NIR_RED.png
 ---
 name: Basic concept of a spatial raster
-width: 600px
-
+width: 370px
+align: left
 ---
 
 ```
@@ -123,8 +122,8 @@ width: 600px
 ```{figure} /fig/en_m8_rs_NDVI.png
 ---
 name: Basic concept of a spatial raster
-width: 600px
-
+width: 370px
+align: right
 ---
 
 ```
