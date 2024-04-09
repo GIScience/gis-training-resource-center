@@ -62,11 +62,8 @@ Search for the plugin -> `Install Plugin`
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_plugins.mp4"></video>
 
 ```{Tip}
-If you cannot find a specific extension, check you have not used spaces where the 
-plugin name doesn't (e.g. When looking for QuickMapServices, searching "Quick Map" 
-will not return results but "quickmap" will). You can use an asterisk (`*`) as a
-wildcard in searches (so "quick*map" will return results with or without a space
-between "quick" and "map"). 
+If you cannot find a specific extension, check that you have not used spaces in the plugin name where they don't belong (e.g., when looking for QuickMapServices, searching “Quick Map” will not return results, but “quickmap” will). You can use an asterisk (`*`) as a
+wildcard in searches (so "quick*map" will return results with or without a space between "quick" and "map"). 
 ```
 
 If you still cannot find an extension, you may need to allow experimental 
