@@ -68,7 +68,7 @@ HeiGIT is fine
 
 Naming your data correctly ensures that you can identify the layers and your computer does not run into any issues 
 when working with your data files. The name of your files themselves need to be clear, meaning that you or others 
-can identfify what the data shows, where the data comes from, and to what time it refers. In QGIS, you should name 
+can identify what the data shows, where the data comes from, and to what time it refers. In QGIS, you should name 
 your layers so you can identify the content, as well as what you have done with the layer. For example, if you have 
 clipped a street layer of new york, do not name the layer "clipped", give it a name such as "streets_NYC_clipped".
 
@@ -123,7 +123,7 @@ the datasets you want to load.
 4. Back in QGIS click `Add`
 
 ```{Attention}
-QGIS only let's you import __unzipped__ shapefiles. Make sure to unzip your data files before importing them into QGIS.
+QGIS only lets you import __unzipped__ shapefiles. Make sure to unzip your data files before importing them into QGIS.
 ```
 
 :::{dropdown} Video: Importing vector data via the Data Source Manager
@@ -132,7 +132,7 @@ QGIS only let's you import __unzipped__ shapefiles. Make sure to unzip your data
 
 #### Open vector data via drag-and-drop
 
-QGIS let's you open data in your QGIS-project by simply dragging the files from your file browser onto your QGIS window. Shapefiles contain only 1 layer per `.shp`-files, which will be added automatically into you layer-panel. Geopackage files (`.gpk`) can contain multiple layers in a single file. If you add a geopackage file, a new window will open where you will be prompted to select the layers you want to add to your project. 
+QGIS lets you open data in your QGIS-project by simply dragging the files from your file browser onto your QGIS window. Shapefiles contain only 1 layer per `.shp`-files, which will be added automatically into you layer-panel. Geopackage files (`.gpk`) can contain multiple layers in a single file. If you add a geopackage file, a new window will open where you will be prompted to select the layers you want to add to your project. 
 
 :::{dropdown} Video: Importing vector data via drag-and-drop
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_vector_d_d.mp4"></video>
