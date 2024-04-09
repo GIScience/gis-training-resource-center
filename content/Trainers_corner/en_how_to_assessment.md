@@ -13,7 +13,7 @@ Now you can use the survey via your own Google account.
 ```
 
 ```{card} Kobo survey temaplate: Pre Training Survey
-[Here](https://docs.google.com/forms/d/1iFdc4P6Qt5YI9yRKTHCtj_pslEsWfJVcNoARGyCI32o/copy) you can download the .xlsx file for the assessment to be used in Kobo Toolbox or ODK.
+[Here](https://nexus.heigit.org/repository/gis-training-resource-center/Templates/TOT_pre_training_assessment/en_pre_training_assessment.xlsx) you can download the .xlsx file for the assessment to be used in Kobo Toolbox or ODK.
 ```
 
 ___
