@@ -93,7 +93,7 @@ In a false colour image the optical representation of one or more of the bands i
 ```{figure} /fig/en_m8_rs_RGB.png
 ---
 name: Basic concept of a spatial raster
-width: 370px
+width: 350px
 align: left
 ---
 
@@ -102,7 +102,7 @@ align: left
 ```{figure} /fig/en_m8_rs_NIR_RED_GREEN.png
 ---
 name: Basic concept of a spatial raster
-width: 370px
+width: 350px
 align: right
 ---
 
@@ -113,7 +113,7 @@ This false colour composit for example strongly highlights vegetation and especi
 ```{figure} /fig/en_m8_rs_SWIR_NIR_RED.png
 ---
 name: Basic concept of a spatial raster
-width: 370px
+width: 350px
 align: left
 ---
 
@@ -122,7 +122,7 @@ align: left
 ```{figure} /fig/en_m8_rs_NDVI.png
 ---
 name: Basic concept of a spatial raster
-width: 370px
+width: 350px
 align: right
 ---
 
