@@ -137,7 +137,7 @@ to select features is via the attribute table.
 * __Show only selected features:__ In the bottom left of the attribute table open 
   the dropdown menu and select `Show selected features`. To show again all 
   features click on `Show all features`. 
-* __Only show unselected features__ Select features and click on ![](/fig/mActionInvertSelection.png)
+* __Only show unselected features:__ Select features and click on ![](/fig/mActionInvertSelection.png)
 
 :::{dropdown} Video: Manually select features in the attribute table
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_attribute_table_select.mp4"></video>
