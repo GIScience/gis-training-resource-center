@@ -164,7 +164,7 @@ Raster data can have the following data formats:
 | Filename extension| Name | Dscription |
 | ----- | --- | --- |
 |.tif/.tiff/.geotiff|Tag Image File Format|Common raster and image data format. Does not necessarily have georeferenced data. If a .tif file is georeferenced it is referred to as GeoTIFF.|
-|.nc|netCDF|Standard data format for scientific data like speed or temperature. Can be be a raster file. Can contain multiple datasets|
+|.nc|netCDF|Standard data format for scientific data like speed or temperature. Can be a raster file. Can contain multiple datasets|
 |.asc|Esri ASCII Grid files|Old, simple raster file format, always with georeferenced data|
 
 ----
@@ -186,12 +186,12 @@ GIS-software helps us visualise geographic data. It does so by displaying the ge
 canvas. However, when creating a map, we are using multiple datasets at once. Every type of geographic data, such 
 as raster data, polygons, points, or lines, is usually stored inside a __layer__. Each layer consists of geographic 
 objects of the same type (line, polygon, raster, ...). GIS-software displays these layers on top of each other and 
-let's you rearrange the order of these layer, in order to create insightful maps. [^1]
+lets you rearrange the order of these layer, in order to create insightful maps. [^1]
 
 [^1]: https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_1_layers
 
 By adding different layers, you build your map and can combine information from 
-different sources. With those you then can perform analyses or adapt the 
+different sources. With those, you can then perform analyses or adapt the 
 representation by using symbols and colors. 
 
 ```{figure} /fig/en_layer.png
@@ -228,12 +228,12 @@ between two points correctly.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kIID5FDi2JQ?si=C0tYz7nteMF_xqvr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Every projection has it use case. For example, the Mercator projection displays the angles between to points 
+Every projection has its use case. For example, the Mercator projection displays the angles between to points 
 correctly. This was used extensively during the seafaring age without satellites, as ships could navigate to a 
 destination by following a straight line on a map. For example, the Mercator projection displays road intersections 
 correctly: a road that crosses another road at a right angle, will be displayed as such on a mercator projection. 
 This is especially useful when navigating. The shape of an area remains correct, since the angles between each line 
-stays true. However, if you increase the scale of the map, the size and distances get distorted dramatically (see 
+stay true. However, if you increase the scale of the map, the size and distances get distorted dramatically (see 
 figure below). Furthermore, the further away from the equator you get, the more distortion you get. You can check 
 the true size in comparison to different placements on the map on [TheTrueSize.com website](https://www.thetruesize.com). A 
 popular example is Greenland in comparison with Africa, which seem on the map to be about the same size, but in 
@@ -261,11 +261,11 @@ In the dropdown below, you can look at the size distortion of mercator yourself.
 ### How to choose an appropriate projected coordinate system
 
 In GIS, we project the earth onto a flat coordinate system (hence the name coordinate reference system or CRS). 
-It is crucial that you are aware that you data can be in one CRS and your QGIS 
-project in an other CRS. The data and the project should always be the same, or 
+It is crucial that you are aware that your data can be in one CRS and your QGIS 
+project in another CRS. The data and the project should always be the same, or 
 else you will get wrong results! The project CRS is displayed on the bottom right
 corner of the [QGIS interface](https://giscience.github.io/gis-training-resource-center/content/Modul_1/en_qgis_start.html#overview-of-qgis-interface).  
-To change the CRS of you data and project, follow the steps explained below.
+To change the CRS of your data and project, follow the steps explained below.
 The default CRS/EPSG code of every QGIS project is the World Geodetic System 84 
 (EPSG: 4326). This CRS is optimized for world maps. So not perfect for most 
 applications, because we mostly use maps for small areas. 
@@ -309,7 +309,7 @@ or even smaller regions, __you should always use a local CRS, to avoid inaccurac
 ```
 
 1. Open a QGIS project
-2. In the very down right corner of QGIS you find the butten `EPSG`. The number 
+2. In the very down right corner of QGIS you find the button `EPSG`. The number 
 next to it is the EPSG Code currently used in the project. To see more information, or to change the CRS, click on the `Current CRS`-button ![](/fig/EPSG_Code.png). 
 3. The window `Project Properties` will open. Here you can view all availble 
 CRS/EPSG-Code and their properties.
@@ -322,10 +322,10 @@ CRS/EPSG-Code and their properties.
 
 ### Project CRS and Layer CRS
 
-The Coordinate reference system of your QGIS project determines how QGIS displays the information. However, layers 
+The coordinate reference system of your QGIS project determines how QGIS displays the information. However, layers 
 and datasets have their own CRS. This can be seen in the metadata, or layer properties of the dataset. The layer 
 CRS refers to the coordinate system of the features or items in the dataset. The same coordinates in two different 
-coordinate reference system do not refer to the same location on earth. This is because of the distortion of 
+coordinate reference systems do not refer to the same location on earth. This is because of the distortion of 
 distance and area.
 
 ```{note}
