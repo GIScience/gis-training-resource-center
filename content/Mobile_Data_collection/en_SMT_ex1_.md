@@ -1,7 +1,5 @@
 # Sketch Map Tool Exercise 1 - Workflow Exercise
 
-🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
-
 Explore the whole workflow of mapping with the Sketch Map Tool, from first ideas about what you like to map to the possible digital results.
 
 

@@ -1,7 +1,5 @@
 # Sketch Map Tool Exercise 2 - Traffic light
 
-🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
-
 This exercise focuses on the first step of working with the Sketch Map Tool “Create a Sketch Map” and especially the characteristics, differences, weaknesses and strengths of the satellite and the OSM basemap. 
 
 

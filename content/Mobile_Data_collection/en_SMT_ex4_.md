@@ -1,9 +1,4 @@
 # Sketch Map Tool Exercise 4 - Basic Visualization of the results in QGIS & uMAP
-🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
-
-
-
-
 
 ## Characteristics of the exercise 
 

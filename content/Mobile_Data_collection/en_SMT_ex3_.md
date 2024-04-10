@@ -1,8 +1,5 @@
 # Sketch Map Tool Exercise 3 - Role Play using the Sketch Map Tool in EVCA
 
-🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
-
-
 ## Characteristics of the exercise
 
 ::::{grid} 2

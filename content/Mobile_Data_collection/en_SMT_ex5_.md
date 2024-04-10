@@ -1,10 +1,5 @@
 # Sketch Map Tool Exercise 5 - Heat Map Visualization
 
-🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
-
-
-
-
 ## Characteristics of the exercise 
 ::::{grid} 2
 :::{grid-item-card}
