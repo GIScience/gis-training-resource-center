@@ -176,7 +176,7 @@ __To classify data in classes…__
  4. In the `Value` dropdown menu select the column based on which you want to classify your data.
 5. Downright select the number of classes you want to use.
 6. Under `Mode` select the classification method you want to use e.g. Equal count (Quantile).
-7. Click on `Classify`.  Now you should see all classes and the distribution of values. To add or delete single classes use the `-` and `+` buttons. 
+7. Click on `Classify`.  Now you should see all classes and the distribution of values. To add or delete singlegit s classes use the `-` and `+` buttons. 
 8. *Optional*: Click on `Histogram` -> `Load Values`. Now you can see the exact distribution of values over the classes. This is very practical to decide on a classification method. You can also check the mean value and standard deviation.
 ```{figure} /fig/Graduated_histogram.png
 ---
