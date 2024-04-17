@@ -2,7 +2,6 @@
 
 ## What is the Sketch Map Tool?
 
-
 ```{figure} ../../fig/SketchMap_Logo_Top.jpg
 ---
 height: 200px

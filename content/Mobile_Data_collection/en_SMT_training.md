@@ -3,6 +3,7 @@
 These five training exercises are designed to support the training with the Sketch Map Tool. The exercises are conceptualized for different aspects of the tool, with different time demands and different (GIS)-knowledge levels. All exercises contain clear instructions for trainers and participants and provide all necesary materials. [Introductory slides on the Sketch Map Tool](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/Introduction_Sketch_Map_Tool_21_03.pptx) with facilitator notes are available, offering an overview of its features and functionality as well as highlighting  its value proposition and the benefits of using it. Additionally, printable factsheets are provided for each exercise, ensuring easy access to the essentiel information and instructions. 
 
 
+
 | Execise| Description |Focus Group|Estimated time| 
 | :-------------------- | :----------------- |:----------------- |:----------------- |
 |__[1](/content/Mobile_Data_collection/en_SMT_ex1_.md)__| The __[“Workflow Exercise”](/content/Mobile_Data_collection/en_SMT_ex1_.md)__ guides you through the whole workflow of mapping with the Sketch Map Tool, from first ideas about what you like to map to the possible digital results. |Planners/ Facilitators/ Practitioners (basic QGIS/ Umap knowledge introduced) |2,5 h |

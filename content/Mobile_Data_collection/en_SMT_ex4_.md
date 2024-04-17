@@ -1,6 +1,6 @@
 # Sketch Map Tool Exercise 4 - Basic Visualization of the results in QGIS & uMAP
 
-## Characteristics of the exercise 
+## Characteristics of the exercise
 
 ::::{grid} 2
 :::{grid-item-card}

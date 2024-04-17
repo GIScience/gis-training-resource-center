@@ -59,7 +59,6 @@ In general: about 1 h to 1,5 h (depending on number of groups)
 
 
 
-
 ## Instructions for the trainers 
 
 :::{dropdown} __Trainers Corner__

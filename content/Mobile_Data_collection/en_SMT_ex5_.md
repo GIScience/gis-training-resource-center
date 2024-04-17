@@ -42,7 +42,6 @@ Analysing participatory mapping results
 ::::
 
 
-
 ## Instructions for the trainers 
 
 :::{dropdown} __Trainers Corner__
