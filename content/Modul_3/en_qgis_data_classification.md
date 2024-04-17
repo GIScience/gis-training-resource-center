@@ -167,7 +167,7 @@ ___
 
 To perform a graduated classification in QGIS is easy. However, unlike the categorised classification, here you have to decide on how many classes and which method you want to use. 
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Graduated_classification.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/graduated_classification.mp4"></video>
 
 __To classify data in classes…__
 1.  Right-click on your layer.
@@ -198,10 +198,10 @@ Graduated classification. Source:
 ```{figure} /fig/classification_graduated_basic.png
 ---
 width: 900px
-name: raduated classification
+name: graduated classification
 align: center
 ---
-Graduated calssification in QGIS.
+Graduated classification in QGIS.
 ```
 
 
