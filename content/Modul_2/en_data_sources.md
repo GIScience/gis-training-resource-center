@@ -26,7 +26,7 @@ and potentially also sharing purposes.
 collection data is in line with your needs. Check if there is potentially more 
 up-to-date data available from another source. 
 
-*Data licence:* What kind of licence does the data have? How can you use and 
+*Data license:* What kind of license does the data have? How can you use and 
 share it and how do you need to cite the data source? Make sure to check the 
 licensing and to follow the respective regulations to avoid difficulties.
 </details>
@@ -242,7 +242,7 @@ The HOT Export Tool.
 ```
 
 4. First add a name and a brief description of your export. Then click on `Next`.
-5. Choose the file format fitting to your needs. It is recommended to use GeoPackage but Geojson or Shapefile can be used as well. Click on `Next`.
+5. Choose the file format fitting to your needs. It is recommended to use GeoPackage but Geojson or shapefile can be used as well. Click on `Next`.
 6. The easiest way to choose the feature type you want to download is using the 
    tag tree. (The YAML option is more flexible but more advanced, so we will 
    focus on the first option.)
