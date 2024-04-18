@@ -88,7 +88,7 @@ region, time, feature type and data format.
    in Mauritius. 
     1. Select area or location: Zoom to Mauritius on the map or use the search 
        bar. To mark the main island there are three options. You can draw a box, 
-       draw a polygon or upload a geoJOSN file with your boundaries. In this case, 
+       draw a polygon or upload a GeoJOSN file with your boundaries. In this case, 
        use one of the first two options to mark Mauritius.
     2. Name and description: give your export the name “Mauritius financial 
        institutions” and add a short description of your export.
@@ -119,7 +119,7 @@ Hot Export tool download of Mauritius financial institutions. Adapted screenshot
       -> `Properties`. A new window will open up with a vertical tab section on 
       the left. Navigate to the `Symbology` tab.
     * On the top you find a dropdown menue. Open it and choose `Categorized`. 
-      Under `Value` select “amnity”.
+      Under `Value` select “amenity”.
     * Further down the window click on `Classify`.  Now you should see all unique 
       values or attributes of the selected “fclass” column.  You can adjust the 
       colours by double-clicking on one row in the central field. Once you are 
@@ -162,7 +162,7 @@ Have a look at both.
     2. Open the QuickOSM plugin by clicking on the `Vector` menu -> `QuickOSM` -> 
        `QuickOSM`
     3. Click on `Quick query`.
-    4. In the table, add "amentiy" as the key and "hospital" as the value. This 
+    4. In the table, add "amenity" as the key and "hospital" as the value. This 
        query will return hospital data.
     5. Click on the green plus icon to add another line to the table. In this 
        line select “OR” in the small dropdown menu on the left-hand side of the 
@@ -210,9 +210,9 @@ Have a look at both.
 ---
 width: 800px
 align: center
-name: QuickOSM accomedation query
+name: QuickOSM accommodation query
 ---
-QuickOSM accomedation query
+QuickOSM accommodation query
 ```
 
 | Advantages  |  Disadvantages |

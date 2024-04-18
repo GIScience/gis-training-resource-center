@@ -140,12 +140,12 @@ QGIS lets you open data in your QGIS-project by simply dragging the files from y
 
 ### Delimited text import (.csv, .txt)
 
-In your GIS-career, you will come across geodata in the  format of delimited text files, such as `.csv`-files (Comma-Separated-Values). These files contain tabular data, which can be opened by programs such as Microsoft Excel. They contain geographical or positional information as point coordinates in separated columns (for example, latitude and longitue, or x- and y-coordinates), or as "Well-known-text" (WKT), which represents complex geometries, such as polygons or lines.  
+In your GIS-career, you will come across geodata in the  format of delimited text files, such as `.csv`-files (Comma-Separated-Values). These files contain tabular data, which can be opened by programs such as Microsoft Excel. They contain geographical or positional information as point coordinates in separated columns (for example, latitude and longitude, or x- and y-coordinates), or as "Well-known-text" (WKT), which represents complex geometries, such as polygons or lines.  
 
 #### Open Delimited Text Layer 
 
 ```{Tip}
-To load data from spreadheets such as Comma Separated Value (`.csv`) or 
+To load data from spreadsheets such as Comma Separated Value (`.csv`) or 
 Excel (`.xlsx`), the datasets need to have columns containing geometry - this is 
 most often in the form of latitude (Y field) and longitude (X field), but might 
 also be in other formats, such as WKT. In this case, you can also have complex geometries in your delimited text file.  

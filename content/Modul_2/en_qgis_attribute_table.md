@@ -153,7 +153,7 @@ on the layer and select `Zoom to Selection`
 width: 800px
 name:
 align: center
-name: Zoom to Selection, top pannel.
+name: Zoom to Selection, top panel.
 ---
 Screenshot of how to zoom to Selection on the top.
 ```
@@ -176,7 +176,7 @@ layer - `Export` -> `Save only selected features`
 You can then choose the format, layer name and CRS.
 
 ```{tip}
-We recommend use GeoPackage (.gpkg) instead of Shapefile (.shp) in most cases. 
+We recommend use GeoPackage (.gpkg) instead of shapefile (.shp) in most cases. 
 If you are unsure which format is most appropriate, check out the [geodata types](../Wiki/en_qgis_geodata_types_wiki.md)
 page on the wiki.
 ```

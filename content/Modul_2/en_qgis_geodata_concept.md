@@ -78,7 +78,7 @@ name: Vector Data overview
 Vector Data overview. Source: HeiGIT
 ```
 
-- Pointdata usually only have one set of coordinates (x, y, and sometimes z) per data entry.
+- Point data usually only have one set of coordinates (x, y, and sometimes z) per data entry.
 - Lines are constructed by connecting multiple points which are saved as a single data entry.
 - Polygons are also constructed by connecting several points, but they form a closed geometry. Each geometry is then represented by a single data entry.
 
@@ -161,7 +161,7 @@ The same location represented as a raster image. Source: British Red Cross (BRC)
 
 Raster data can have the following data formats:
 
-| Filename extension| Name | Dscription |
+| Filename extension| Name | Description |
 | ----- | --- | --- |
 |.tif/.tiff/.geotiff|Tag Image File Format|Common raster and image data format. Does not necessarily have georeferenced data. If a .tif file is georeferenced it is referred to as GeoTIFF.|
 |.nc|netCDF|Standard data format for scientific data like speed or temperature. Can be a raster file. Can contain multiple datasets|
@@ -311,7 +311,7 @@ or even smaller regions, __you should always use a local CRS, to avoid inaccurac
 1. Open a QGIS project
 2. In the very down right corner of QGIS you find the button `EPSG`. The number 
 next to it is the EPSG Code currently used in the project. To see more information, or to change the CRS, click on the `Current CRS`-button ![](/fig/EPSG_Code.png). 
-3. The window `Project Properties` will open. Here you can view all availble 
+3. The window `Project Properties` will open. Here you can view all available 
 CRS/EPSG-Code and their properties.
 4. To change the CRS/EPSG code, select the one you want to use and click `Apply`.
 

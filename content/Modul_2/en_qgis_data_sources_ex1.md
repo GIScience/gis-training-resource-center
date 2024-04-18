@@ -31,7 +31,7 @@ and the healthsites on [healthsites.io](https://healthsites.io).
    that are being used, instead of just examples. Can we just ask people to use these
    datasets, so that the rest of the instructions make sense? -->
 
-2. Download the data and save the administrative boundaries as `bolivia` and the healthsites `healthsides_bolivia` into the 
+2. Download the data and save the administrative boundaries as `bolivia` and the healthsites `healthsites_bolivia` into the 
    `data\input` folder.
 
 ```{Note}
