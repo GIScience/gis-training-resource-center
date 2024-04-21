@@ -26,7 +26,12 @@ Information on road infrastructure for humanitarian aid operations is of great i
 
 ### Exercise: Clipping a roads layer to administrative boundaries
 
-1. Load the OSM roads data from the [HOT Export tool](https://export.hotosm.org/v3/exports/918cf68d-dfd7-40f1-ab46-4f0426dfaf68/) (part of the Humanitarian OpenStreetMap Team) as a new layer: __Road_infrastructure_Sudan.geojson__.
+1. Load the OSM roads data from the [HOT Export tool](https://export.hotosm.org/v3/exports/918cf68d-dfd7-40f1-ab46-4f0426dfaf68/) (part of the Humanitarian OpenStreetMap Team) as a new layer: __Road_infrastructure_Sudan.geojson__. 
+
+```{attention}
+The download seems to be broken from the HOT Export Tool. Alternatively, you can download the road network for Sudan [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Spatial_geodataprocessing/hotosm_sdn_roads_lines_shp.zip)
+
+```
 
 ```{figure} /fig/en_screenshot_hot_export_tool.PNG
 ---
@@ -37,7 +42,7 @@ Screenshot of the HOT Export tool to download your OSM data
 ```
 
 2. Filter the layer by using the __query builder__ to only show __primary and residential roads__ ("highway" = 'primary' OR "highway" = 'residential')
-3. Load the admin1 layer for Sudan which contains the district White Nile, __ne_10m_admin_1_Sudan_White_Nile.geojson__. They are downloaded and adapted from [Natural Earth Data](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/).
+3. Load the admin1 layer for Sudan which contains the district White Nile, __ne_10m_admin_1_Sudan_White_Nile.geojson__. They are downloaded from [Natural Earth Data](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/).
 4. Select the roads layer and open the __Clip__ dialogue from Vector > Geoprocessing Tools
     - Set roads as the __input layer__ and the district boundaries of White Nile as the __overlay layer__
     - Click __Run__ to generate a temporary layer called Clipped

@@ -11,10 +11,14 @@ Become familiar with different types of spatial analysis and geoprocessing tools
 * [Categorized classification](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html)
 
 ### Data
-Download all datasets and save the folder on your computer and unzip the file. The zip folder includes:
+
+Download the datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Modul_5_Exercise1_Healthsite_distribution_Saint_Louis_region/Modul5_Exercise1_Healthsite_distribution_Saint_Louis_region.zip) and unzip the files.
+
+
+<!---Download all datasets and save the folder on your computer and unzip the file. The zip folder includes:
 - `sen_healthsites.shp`: [Senegal healthsites data](https://data.humdata.org/dataset/senegal-healthsites)
 - `sen_admbnda_adm1_1m_gov_ocha_20190426.shp`: [Senegal boundary data (Admin level 1)](https://data.humdata.org/dataset/senegal-administrative-boundaries)
-- `EO4SD_SAINT_LOUIS_FLOOD_2018.shp`: [Saint Louis flood extend data](https://wbwaterdata.org/dataset/saint-louis-senegal-flood-risk-map-esa-eo4sd-urban)
+- `EO4SD_SAINT_LOUIS_FLOOD_2018.shp`: [Saint Louis flood extend data](https://wbwaterdata.org/dataset/saint-louis-senegal-flood-risk-map-esa-eo4sd-urban)-->
 
 ```{Hint}
 All files still have their original names. However, feel free to modify their names if necessary to identify them more easily.
