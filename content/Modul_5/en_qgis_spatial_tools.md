@@ -22,7 +22,7 @@ Screenshot of the Clip tool with the input data
 ```
 Information on road infrastructure for humanitarian aid operations is of great importance and can be easily retrieved from open-source data sources like OpenStreetMap. However, this information is often included in extensive datasets that contain a significant amount of irrelevant details for specific operations, or it covers a lot more area than is necessary for the operation. To make working with this data more efficient, it is common practice to clip the data to the area of interest. In addition to clipping, data can often be filtered, as described in the first part of Module 5.
 
->here it is not clear what the first part of module 5 is, maybe add link
+<!--here it is not clear what the first part of module 5 is, maybe add link-->
 
 ### Exercise: Clipping a roads layer to administrative boundaries
 
