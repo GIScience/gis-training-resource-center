@@ -15,7 +15,7 @@ In each raster cell information is stored with a value that can be interpreted i
 name: Basic concept of a spatial raster
 width: 500px
 ---
-
+Basic concept of a spatial raster
 ```
 
 ## Types of Raster Data
@@ -31,7 +31,7 @@ Continuous raster data refers to datasets where the values assigned to each pixe
 name: 
 width: 500px
 ---
-Exemplary Digital Elevation Model of an area in the indian Himalayas
+Exemplary Digital Elevation Model of an area in the Indian Himalayas
 ```
 
 **Discontinous** rasters contain catigorical data, where each pixel represents a discrete classvalue rather than a value on a continuous scale. The information in these types of raster is sometimes also suitable for the storage with vector data. Some examples of classified maps include:
@@ -41,10 +41,10 @@ Exemplary Digital Elevation Model of an area in the indian Himalayas
 
 ```{figure} /fig/mod8_rasterdata_lulcexample.png
 ---
-name: Basic concept of a spatial raster
+name: Example landcover
 width: 500px
 ---
-
+Exemplary land cover classification raster of the USA
 ```
 
 ## Properties of Raster data
@@ -63,7 +63,7 @@ The spatial resolution of a raster refers to the area represented by each indivi
 name: Different spatial resolutions of the same raster
 width: 900px
 ---
-
+Different spatial resolutions of the same raster
 ```
 
 ### Coordinate Refernce Sytem (CRS)
@@ -80,10 +80,10 @@ This metadata helps users to understand the content, origin, quality and appropr
 
 ```{figure} /fig/mod8_rasterdata_metadata.png
 ---
-name: Different spatial resolutions of the same raster
+name: Metadata example
 width: 900px
 ---
-
+Metadata of raster dataset of population counts (Worldpop)
 ```
 
 
@@ -95,7 +95,6 @@ There are multiple different file formats for storing an working with raster dat
 4.	**Esri Grid (.adf)**: Esri's raster format, used in ArcGIS, supports georeferncing amd metadata
 5.	**GeoPackage (.gpkg)**: Open format for storing geospatial data, supports raster and vec-tor.
 
-**Beispielbild Metadata**
 
 ## Frequently used Tools in QGIS
 ### Raster Calculator
@@ -107,24 +106,63 @@ You have a Digital Elevation Model with the Altitude in m and a Landcover Classi
 ```{figure} /fig/mod8_rasterdata_rastercalculator.png
 ---
 name: Different spatial resolutions of the same raster
-width: 900px
+width: 600px
 ---
-
+Interface of the "Raster calculator" tool
 ```
 
 The wanted result can be achieved by firstly selecting both of the relevant rasters as inputs for the raster calculator and then using the expression interface to selct all pixels with a elevation above 1500m ( "( "DEM@1" >  1500)") and a landcover value of "5" ("( "Landcover@1" = 5 ) ") by connecting both expression with the logical operator "AND". In the calculated raster all pixels that fulfill the condition will have the value "1", all other pixels the value "0".
 
 
 ### Zonal Statistics
-### Rasterize
-### Resampling
-### (Clip/Merge/Reproject)
+
+The Zonal Statistics tool calculates statistics (like mean, median, sum, etc.) for each zone (= polygon) in a specified zone layer based on the cell values of a raster layer. This is particularly useful for analyzing raster data within defined geographic zones, such as administrative boundaries or land use classes.
+
+Example: We have a rasterlayer with population count affected by a recent flood in Pakistan and a polygon layer with administrative districts. We want to calaculate the number of flood affected people per district.
+
+    1. As "Input Layer" choose your polygon layer with district extents. "Pakistan_admin2" in this case.
+    3. As "Raster Layer" choose the layer with the cellvalues you want to base your statistics on. "Pop_floodextent" in this case.
+    4. Defining a prefix for your output column is optional but can be helpful for finding the calculated values in large attribute tables. For population counts you can for example choose "pop_" as "Output column prefix".
+    5. Below "Statistics to calculate" click on the ![](/fig/mod8_ex1_optionsicon.png) icon to access the different options of statistical operations available for calculating polygon values based on your raster. In this case "sum" would be the operation of choice as we want the total sum of floodafeccted people per district.
+
+    :::{dropdown} Solution
+    :open:
+    "Sum" is the appropriate method, as we want the total population count per district that results from the additions of the values of all cells with affected population per district.
+    :::
+    
+    
+    6. Name your layer "Floodaffected_pop_admin2", save it to your "output" folder and click `Run`.
+
+```{figure} /fig/en_3.34_m8ex1_zonalstat.png
+---
+width: 600px
+name: Zonalstatistics Interface
+align: center
+---
+Interface of the "Zonal statistics" tool
+```
+
+### Align rasters
+With the "Align rasters" tool raster with different spatial resolutions, grid orientation and CRS can be aligned to achieve a matching configuration of these attributes. This is particularly useful to preprocess rasters for for conducting precise spatial analysis, such as overlay operations, statistical analysis, raster calculator operations in general.
+
+Example: We have a elevation and precipitation rasters with different spatial resolution and want to align the rasters for the analysis of precipitation sums in high altitude areas:
+    1. Click on the three dots next to the "Input layers" prompt and choose the rasters you want to align by checking the boxes next to them.
+    2. Choose the raster you want to use as blueprint for the alignment. In this cas we want to align both rasters to the parameters of the "Elevation" raster.
+    3. If you want to reproject the aligned rasters to a new CRS different from the Reference layers you can choose it under "Override reference CRS". 
 
 
+```{figure} /fig/en_3.34_m8_alignrasters.png
+---
+width: 600px
+name: Align Rasters Interface
+align: center
+---
+Interface of the "Align Rasters" tool
+```
 
-
-
-
+```{Note}
+  There are further optional operations that allow you to set a specific cell size (in x and y direction) and grid offset different from the reference raster or clip the output to a defined extent. This can be handy for very specific use cases, but is not necesssary in the majority of applications.
+```
 
 
 ## Use and Sources of Raster Data in the Humanitarian Sector
@@ -135,7 +173,7 @@ If raster data is available at several points in time or even as a continuous da
 Main products/raster types you may come across in the humanitarian sector include:
 1. Population Rasters offered by Worldpop
 2. Digital Elevation Models like the SRTM DEM
-3. Landuse and Lancover Classifications like **XXXX**
+3. Landuse and Lancover Classifications
 4. Risk Maps like flood inundation zones alongside rivers
 
 Popular and proven sources for raster data include:
@@ -148,7 +186,7 @@ Popular and proven sources for raster data include:
 * Most of the data openly accessible and free
 * Many different data formats and sources, sometimes a  unstructured
 
-Online: **HDX LINK**
+You can acces the HDX data portal ([here](https://data.humdata.org)).
 
 ### USGS Earth Explorer
  **Offering**:The Data Portal of the US Geological Survey provides access to a vast collection of satellite imagery and derived products like DEMs and Landcover Data.<br><br> 
@@ -158,10 +196,10 @@ Online: **HDX LINK**
 * Acount is needed for data download
 * Data search needs basic knowledge of geospatial data and remote sensing
 
-Online: **USGS LINK**
+You can acces the USGS Earth Explorer ([here](https://earthexplorer.usgs.gov)).
 
 ### ESA Earth Online
- Similar to the USGS earth explorer the data portal of the European space agency (ES)provides access to Earth observation data from various sattelites and derived datasets like climate change indicators or disaster monitoring products.
+ Similar to the USGS earth explorer the data portal of the European space agency (ESA) provides access to Earth observation data from various sattelites and derived datasets like climate change indicators or disaster monitoring products.
 <br><br> 
  **Pros and Cons:**
 * Wide range of basic and processed remote sensing products
@@ -170,40 +208,10 @@ Online: **USGS LINK**
 * Data search needs basic knowledge of geospatial data and remote sensing
 
 
-Online: **ESA LINK**
-<br><br><br><br>
-
-
-## Notes 
-### Remote sensing data
-    * Remote sensing Basics: Data types, spectral properties, use cases/typical products
-    * Electromagnetic spectrum
-    * Concept: Multiple raster bands
-    * Paramters of rempote sensing products: spatial, temporal, spectral resolution
-    * for what can RS be useful
-    * Typical products: LULC, DEM, Multispectral Data
+You can acces the  earth online portal ([here](https://earth.esa.int/eogateway/catalog)).
 
 
 
 
-### Frequently used Tools in QGIS
-    * Raster Calculator
-    * Zonal Statistics
-    * Rasterize
-    * Resampling
-    * Clip/Merge/Reproject
-    * Slope/TWI/Hillshade
-    * Visulisation of Rasters? -> Eigenes Kapitel
-
-### Exercises
-    * Pop per Districts berechnen
-    * (Index, z.B. NDVI berechnen)
-    * (Einfache Multi Criteria Analyse)
-    * Verschiedene Parameter aus DEM berechnen
-    **Malnutrition rasterize + mit Pop berechnen**
-    * (Optische) Threshold setzen
-    * Verschiedene Visualisierungsoptionen
-
---> Modul 6 hexagongrid referencen
 
 
