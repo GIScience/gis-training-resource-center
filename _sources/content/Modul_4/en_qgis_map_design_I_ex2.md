@@ -6,6 +6,8 @@ The aim of this exercise will be to create an overview map of Ghana with its sub
 
 __Estimated time for completion:__ 3 hours
 
+
+:::{card}
 ## Data
 
 __Download the data for the exercise [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_4/Modul_4_Exercise_1_creating_a_map_of_ghana/Modul_4_Exercise_1.zip).__  
@@ -19,11 +21,13 @@ For this exercise, we will use the following layers:
 
 All data has been downloaded from the humanitarian data exchange. Download the Data from the Nexus, __unzip the folder__, and load the data into a new QGIS project.
 
+:::
+
 ## Wiki articles
 
 - [Visualisation](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_visualisation_wiki.html)  
-- [Modul 4: Graphical Variables and Symbology](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_I.html)  
-- [Modul 4: Print Layout](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html)
+- [Module 4: Visualisation of Geodata](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_I.html)  
+- [Module 4: Map Design: The Print Layout](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html)
 
 ## Tasks
 
@@ -81,7 +85,7 @@ Let's move on to the road network.
 
 ---
 
-Now as a final touch, let's select a symbol for the health facilities:
+Now, as a final touch, let's select a symbol for the health facilities:
 
 1. Navigate to the `hospital_GHA` layer
 2. Open the __Symbology Tab__ and select the `Simple Marker`.
@@ -100,32 +104,47 @@ Now the Map should be ready for a print layout.
 
 ### Part 2: Creating the print layout
 
-Once you are happy with the symbolization and colours of your data, the next step is to create a print layout. By adding additional information such as a title, datasources, projection, description, etc. you provide your audience with the means to contextualise and evaluate the map and it's content by themselves.
+Once you are happy with the symbolization and colors of your data, the next step is to create a print layout. By adding additional information such as a title, data sources, projection, description, etc. you provide your audience with the means to contextualise and evaluate the map and it's content by themselves.
 
 1. Open a new print layout abd give it a name (e.g. Ghana Map with hospitals). A new window will open with a blank canvas and a different set of tools. This is the print layout designer.
     - On the left, you will find a toolbar with tools to add and move items on the print layout canvas.
     - On the right you will find a list of items you added to the print layout (it is still empty). Beneath this, you will find a tab called __"item properties"__. This is where you modify the items on your print layout (e.g. enter the text for a text box or change the font).
-2. Insert a new map by clicking on the ![New Map Icon](/fig/30.30.2_print_layout_insert_map_icon.png) (`Add Map`) on the left toolbar, and drawing a rectangle on the print canvas. [Video](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html#adding-a-new-map)
+2. Insert a new map by clicking on ![New Map Icon](/fig/30.30.2_print_layout_insert_map_icon.png) (`Add Map`) on the left toolbar, and drawing a rectangle on the print canvas. [Video](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html#adding-a-new-map)
 3. Move and position the map so that the entire country is visible at a reasonable scale.
 4. Let's add a title:
-    - Click on the ![Add text icon](/fig/30.30.2_print_layout_add_text.png) (`Add text`)
+    - Click on ![Add text icon](/fig/30.30.2_print_layout_add_text.png) (`Add text`)
     - Drag a rectangle on the canvas
     - In the items properties window on the right, you will find a text box with the text "Lorem ipsum". Here you can enter your map title (e.g.: Map of Ghana with roads and hospitals).
     - Adjust the font size: Click on the __Font__ dropdown menu and adjust the font size for a title (25p or more). Adjust the text box if necessary.
 5. Let's add a legend:
-    - Click on the ![Add legend icon](/fig/30.30.2_print_layout_add_legend.png) (`Add legend`). 
+    - Click on  ![Add legend icon](/fig/30.30.2_print_layout_add_legend.png) (`Add legend`). 
     - Navigate to the __Item Properties__ panel on the right. 
     - Scroll down a bit and check turn off `Auto Update` by unchecking the check box. Now you can freely edit every item on the legend
-    - Adjust the legend by removing unecessary layers (which are not seen on the map) and rename the layer in the legend by clicking on ![Edit Icon](/fig/30.30.2_print_layout_legend_edit.png) (`Edit selected item properties`) below the legend entries.
+    - Adjust the legend by removing unnecessary layers (which are not seen on the map) and rename the layer in the legend by clicking on ![Edit Icon](/fig/30.30.2_print_layout_legend_edit.png) (`Edit selected item properties`) below the legend entries.
 6. Now, let's add a scale bar:
-    - Click on the ![Add Scale bar icon](/fig/30.30.2_print_layout_add_scale_bar.png) (`Add Scale bar`)
+    - Click on ![Add Scale bar icon](/fig/30.30.2_print_layout_add_scale_bar.png) (`Add Scale bar`)
     - Draw a rectangle on the map and position the scale bar on the edge of the map. You can adjust the scale bar units (meters, kilometers, ...), the fixed segment width (50 km, 75 km, 100 km, ...) and the number of segments (to the right).
 7. Let's add North arrow:
-    - Click on the ![Add North Arrow Icon](/fig/30.30.2_print_layout_add_orientation.png) (`Add North Arrow`). 
+    - Click on ![Add North Arrow Icon](/fig/30.30.2_print_layout_add_orientation.png) (`Add North Arrow`). 
     - Drag a rectangle on the print layout. Adjust the size and location of the north arrow. You can also change the icon in the item properties.
-8. Add a text box with additional information, sources, the author (you), and date of creation.
-9. When you are happy with your print layout. You can export it as a PDF. You can save it in the project folder under "results".
-10. Once you have exported the map. Look at the PDF and make sure it looks how you intended. Some things might look different in the PDF. If it does not look correct you may need to make some adjustments in the symbology.
+8. Let's add a logo (for example, the IFRC logo or the logo of your national society):
+    - Click on ![Add Picture](/fig/30.30.2_print_layout_add_image.png) (`Add picture`)
+    - Drag a rectangle in the spot where you want to add the logo
+    - Navigate to the `Item properties` panel on the right and switch to `Raster image`. 
+    - Click on the three dots `...` and select the file with your logo
+    - If necessary, resize or move the picture on the print layout.
+
+```{figure} ../../fig/30.30.2_print_layout_add_picture_options.png
+---
+name: add picture item properties
+width: 600 px
+---
+The item properties panel for pictures. You need to specify the save location of a picture in order to see it on the print layout.
+```
+
+9. Add a text box with additional information, sources, the author (you), and date of creation.
+10. When you are happy with your print layout. You can export it as a PDF. You can save it in the project folder under "results".
+11. Once you have exported the map. Look at the PDF and make sure it looks how you intended. Some things might look different in the PDF. If it does not look correct you may need to make some adjustments in the symbology.
 
 The finished map could look something like this:
 
