@@ -1,11 +1,15 @@
 # Map design Exercise 1: Creating a Map of Ghana
 
+
+:::card
+
 ## Aim of the exercise
 
 The aim of this exercise will be to create an overview map of Ghana with its subdistricts, main roads, settlements, as well as hospitals. Such information can always be of use in humanitarian work. The first part of the exercise will cover the symbolization of the data layers. The second part will focus on the design of the print layout.
 
 __Estimated time for completion:__ 3 hours
 
+:::
 
 :::{card}
 ## Data
@@ -23,11 +27,15 @@ All data has been downloaded from the humanitarian data exchange. Download the D
 
 :::
 
+:::card
+
 ## Wiki articles
 
 - [Visualisation](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_visualisation_wiki.html)  
 - [Module 4: Visualisation of Geodata](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_I.html)  
 - [Module 4: Map Design: The Print Layout](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html)
+
+:::
 
 ## Tasks
 
