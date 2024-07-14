@@ -1,16 +1,15 @@
-# Visualisation of Geodata: Symbology and Colors
+# Visualisation of Geodata: Symbology and Colours
 
-The representation of geodata in maps is crucial in order to provide useful location-based insights. This subchapter will cover the basics of good map design, how to create a map design in QGIS as well as common mistakes when designing or interpreting maps.
+The representation of geodata in maps is essential for providing useful location-based insights. This subchapter will cover the basics of good map design, how to create a map design in QGIS, as well as common mistakes when designing or interpreting maps.
 
-In this chapter we will go over the basics of symbology, colours and how to adjust individual layers in QGIS to create comprehensive maps.
+In this chapter we will go over the basics of symbology, colours, and how to adjust individual layers in QGIS to create comprehensive maps.
 
 :::{admonition} Recap: Types of Maps
 :class: seealso
 
 In general, there are two main types of maps: __topographic maps__ and __thematic maps__.
 
-__Topographic maps__ are intended to be exhaustive, including elements fundamental to localisation (localities, road networks, terrain, hydrography). They represent the physical location of objects in the real world. The representation of elements in topographic maps is done via conventional signs (e.g.: blue for water, green for forests, yellow for agricultural land). 
-
+__Topographic maps__ are intended to be exhaustive, including elements fundamental to localisation (localities, road networks, terrain, hydrography). They display the physical location of objects in the real world. The representation of elements in topographic maps is done using conventional signs (e.g. blue for water, green for forests, yellow for agricultural land). 
 
 ```{figure} ../../fig/en_30.30.2_topographic_map_examples.png
 ---
@@ -20,7 +19,7 @@ name: Topographic Maps Examples
 Examples for topographic maps
 ```
 
-__Thematic maps__ address the distribution of phenomena, including sometimes statistically processed information, such as population size, disease cases, flooding risk, etc. The representation of elements on thematic maps is decided according to the rules of graphic semiology. 
+__Thematic maps__ display the distribution of specific data or statistically processed information, such as population size, disease incidence, flooding risk, etc. The representation of elements on thematic maps is decided according to the rules of graphic semiology. 
 
 
 ```{figure} ../../fig/en_30.30.2_thematic_maps_examples.png
@@ -31,7 +30,7 @@ name: Thematic maps examples
 Examples for thematic maps
 ```
 
-These two maps use design elements differently. Topographic maps will use symbols and colors out of convention and readability, whereas in designing thematic maps, the symbols and colors you use depend on the context and the information you want to convey.
+These two maps use design elements differently. Topographic maps will use symbols and colours out of convention and readability, whereas in designing thematic maps, the symbols and colours you use depend on the context and the information you want to convey.
 
 :::
 
@@ -43,18 +42,17 @@ Our brain is capable of interpreting graphic relationships between entities in j
 
 EDIT: Remove this part?-->
 
-## Visual variables
+## Visual Variables
 
 ```{figure} ../../fig/en_30.30.2_graphic_semiology_signs.png
 ---
 width: 500px
 name: Graphic information
 ---
-Depending on the type of information you want to display, you can use different graphic signs
+You can use different graphic signs depending on the type of information you want to display.
 ```
 
-Visual variables are the __graphical means for visually transcribing information__. The visual variables are __shape, size, hue, value, texture, and orientation__. You can vary these variables to appropriately represent the data at your disposal.  
-It allows for the expression of __relationship of difference, order, association, or quantity__ between each element and helps display information.
+Visual variables are the __graphical means for visually transcribing information__. The visual variables are __shape, size, hue, value, texture, and orientation__. You can adjust these variables to appropriately represent the data at your disposal. They allows for the expression of __relationship of difference, order, association, or quantity__ between each element, helping to display different information.
 
 ```{figure} ../../fig/en_visual_variables.png
 ---
@@ -66,7 +64,7 @@ Visual variables according to Bertin (1967)
 
 ```{Caution} 
 Visual perception varies from one person to the next according to various capabilities:
-- Physiological (e.g.: colour blindness)
+- Physiological (e.g. colour blindness)
 - Transcultural (green = nature, blue = water)
 ```
 
@@ -74,9 +72,10 @@ Visual perception varies from one person to the next according to various capabi
 
 Depending on the use case and type of geodata at your disposal, there are multiple ways to visualise geodata in a comprehensive format:
 
-- You can change the 'styling' and color of the data.
+- You can change the 'styling' and colour of the data.
 - You can add text labels.
-- Vector and raster data is visualized differently in GIS-Software. 
+
+Vector and raster data is visualized differently in GIS-Software. 
 
 ## Styling Panel
 
@@ -106,9 +105,9 @@ In the styling panel you can change the styling for all features of a layer, set
 
 - Symbology is used to change the look of features on a map
 - It makes maps more visually appealing and easier to read
-- Colors and styles represent a specific information
+- Colours and styles represent a specific information
 - Symbology is applied to layers, but within the same layer we can assign multiple styles to features
-- the symbology of a layer can be __changed based on one of its attributes__
+- The symbology of a layer can be __changed based on one of the layer's attributes__
 
 <!---- To Do: add different visualisation for different types of data (discrete vs. continuous values, insert image). For example the amount of rainfall/temperature is a continuous value.-->
 
@@ -126,14 +125,14 @@ width: 750px
 Different types of colouring schemes
 ```
 
-When choosing colour gradients, a clear gradient from lighter to darker colours is the best most of the times as the gradation is easily distinguishable and translates well into black and white. In the figure below, example A and B are not ideal as it is difficult to make out the gradation and it does not translate into black and white. You can achieve a clear sequence by grading the __saturation__ of the colour gradient.
+When choosing colour gradients, a clear gradient from lighter to darker colours is usually the most appropriate, as the gradation is easily distinguishable and translates well into black and white. In the figure below, examples A and B are not good colour schemes, as it is difficult to make out the gradation and it does not translate well into black and white. You can achieve a clear sequence by grading the __saturation__ of the colour gradient.
 
 ```{figure} ../../fig/de_colour_gradients_saturation.png
 ---
 name: colour gradients saturation example
 width: 750px
 ---
-Examples for different colour gradients translated into black and white. Pay attention to the saturation gradient under each example. Source: Stauffer, Reto & Mayr, Georg & Dabernig, Markus & Zeileis, Achim. (2014). Somewhere Over the Rainbow: How to Make Effective Use of Colors in Meteorological Visualizations. Bulletin of the American Meteorological Society. 96. 140710055335002. 10.1175/BAMS-D-13-00155.1.
+Examples for different colour gradients translated into black and white. Pay attention to the saturation gradient under each example. Source: Stauffer, Reto & Mayr, Georg & Dabernig, Markus & Zeileis, Achim. (2014). Somewhere Over the Rainbow: How to Make Effective Use of Colours in Meteorological Visualizations. Bulletin of the American Meteorological Society. 96. 140710055335002. 10.1175/BAMS-D-13-00155.1.
 ```
 
 Colour gradients can also encompass multiple hues:
@@ -152,7 +151,7 @@ The [Colourbrewer website](colorbrewer2.org) is a quick and useful tool to selec
 
 ### Colourblindness
 
-When choosing the colours, you have to keep in mind that colour gradients (especially diverging Red-Green gradients) can be hard or impossible to distinguish for persons with colour blindness.
+When choosing the colours, you have to keep in mind that colour gradients (especially diverging Red-Green gradients) can be hard or impossible to distinguish for people with colour blindness.
 
 ``` {figure} ../../fig/Colour_Blindness.png
 ---
@@ -162,7 +161,7 @@ width: 750px
 Different Colour schemes for the Colour Vision Impaired; Source: Jenny, Bernhard, and Nathaniel Vaughn Kelso. (2007). Color Design for the Color Vision Impaired. *Cartographic Perspectives*, no. 58 (September 1, 2007): 61-67. https://doi.org/10.14714/CP58.270 
 ```
 
-## Symbology for Vector data
+## Symbology for Vector Data
 
 You can use graphical variables to style vector data. As we have already learned, vector data can be either points, lines, or polygons. There are different options to symbolize these different types of vector data. In this subchapter, we will focus on a few common examples.
 
@@ -183,7 +182,7 @@ Remember that __the layer's symbology is saved within your project file, not wit
 
 QGIS let's you use different types markers for symbolization. These can be simple markers, raster images, or SVG-symbols.
 
-- __Simple markers__ are simple shapes such as rectangles, circles, or crosses that can be adjusted in the symbolization layer (color, size, outline, etc.).
+- __Simple markers__ are simple shapes such as rectangles, circles, or crosses that can be adjusted in the symbolization layer (colour, size, outline, etc.).
 - If you select __raster images__, the resolution of the symbol is limited by the amount of pixels in the image. It is not advisable to use high resolution images as symbols on your map because it may overload your PC.
 - __SVG-symbols__ are *scaleable vector graphic* symbols. As vector files, they can be scaled to any size while keeping the same resolution. In most cases, if you want to use a more complex symbol (e.g. hospital, school, train station), SVG-symbols are the best option as they let you adjust the symbol (colours, outline, size, etc.)
 
@@ -194,8 +193,8 @@ QGIS let's you use different types markers for symbolization. These can be simpl
 Simple Markers are generally used to create the symbols for most elements on a map. For example, simple markers are used to visualise streets, building outlines, waterbodies, administrative boundaries or other polygons.
 Most simple markers consist of a __fill__ and an __outline__. The shape of the marker is generally dependent on the type of vector data (point, polygon, or line).
 
-- The fill determines the fill color of the symbol. You can change the color and transparency. You are also able to make more complex fills such as a line pattern fill, or an SVG-symbol fill.
-- The outline determines the color, type, and thickness of the outline. Next to the color and transparency, the outline is significant to distinguish between the different elements. For example, thicker lines for roads usually signify roads of a higher order (such as highways), whereas thin dashed lines might signify footpaths, inaccessible to road vehicles.
+- The fill determines the fill colour of the symbol. You can change the colour and transparency. You are also able to make more complex fills such as a line pattern fill, or an SVG-symbol fill.
+- The outline determines the colour, type, and thickness of the outline. Next to the colour and transparency, the outline is the most critical for distinguishing between different elements. For example, thicker lines for roads usually signify roads of a higher order (such as highways), while thin dashed lines might signify footpaths, inaccessible to road vehicles.
 
 <!--ADD: Examples-->
 
@@ -211,7 +210,7 @@ Most simple markers consist of a __fill__ and an __outline__. The shape of the m
 
 If you have a library of SVG-symbols as a folder you can add them to your Styling manager.
 
-1. Open the style manager: `setting` > `style manager`
+1. Open the style manager: `Settings` > `Style Manager`
 2. Click on `Import / Export` and select `Import items`
 3. Navigate to the location where you have saved the library or style and select the file (in most cases .qml but the file type can also be .xml)
 4. Now you can select which symbols you wish to import. In most cases, you can select all symbols.
@@ -254,7 +253,7 @@ Assigning the correct attribute value in the labeling options. QGIS needs to kno
 1. In the styling panel, click on the `Labels`-tab underneath the Symbology tab.
 2. Select ![](../../fig/en_30.30.2_icon_single_labels) `Single labels`.
 3. `Value` is where you choose the attribute that will be displayed as a label. For example `*ADM1_EN*` will display the English names of Nigerian states for each feature in the data set.
-4. Let's __change the font__: Open the Font dropdown menu and select Arial. Make the text `Bold` in the Style dropdown menu. Change the colour by clicking on `Colour`, and change the `Size` to 8 pt
+4. Let's __change the font__: Open the font dropdown menu and select Arial. Make the text `Bold` in the Style dropdown menu. Change the colour by clicking on `Colour`, and change the `Size` to 8 pt
 5. Let's __add a white buffer__ around the label. In the `Labels` tab, you will find a list with different options to style the labels. Right now, we are in the `Text` menu. Select `Buffer` and check the `Draw text buffer` option. This will make the labels stand out more on dark or crowded maps.
 7. Click `Apply` and `OK`.
 
@@ -291,7 +290,7 @@ Create rules using expressions to select accurately which features are to be lab
 name: rule-based labeling example settlements nga
 width: 500 px
 ---
-Rule-based Labeling let's you apply a filter to datasets. This way, you can display the labels only for selected features without altering the dataset.
+Rule-based labeling allows you to filter datasets. This way, you can display the labels only for selected features without altering the dataset.
 ```
 
 The rules, or filters, are based on an expression. You can use the ![](../../fig/expression_string_builder_icon.png) `Expression string builder` to the right of the __Filter__ option in the label panel.
@@ -317,14 +316,14 @@ Below are some further considerations to keep in mind when using labels:
 
 - Only display information that serves the purpose of the map or is helpful to the reader. Useful information can be the name of a settlement or a place, so the reader can assign a certain symbol on the map to this particular place.
 
-- If you want to display different types of information as labels, the font needs to be different so the reader can differentiate between the different types of information that is displayed. A good practice is to display the labels in a similar color to the objects it is referring to. For example, dark blue text for the labels of light blue bodies of water, or brown text for the labels of light-brown houses.
+- If you want to display different types of information as labels, the font needs to be different so the reader can differentiate between the different types of information that is displayed. A good practice is to display the labels in a similar colour to the objects it is referring to. For example, dark blue text for the labels of light blue bodies of water, or brown text for the labels of light-brown houses.
 
 ```{figure} ../../fig/good_labels_example.png
 ---
 width: 400 px
 name: Axis Maps good labels example
 ---
-A good example of label placement and font. Pay attention to the text colors and orientation. Every label can easily be attributed to the correct cartographic feature. (Source: [Axis Maps](https://www.axismaps.com/guide/labeling))
+A good example of label placement and font. Pay attention to the text colours and orientation. Every label can easily be attributed to the correct cartographic feature. (Source: [Axis Maps](https://www.axismaps.com/guide/labeling))
 ```
 
 ```{Attention}
@@ -369,8 +368,8 @@ A label without a text buffer (left) and a label with a white text buffer (right
 ```
 
 ```{note}
-QGIS renders the labels automatically.
-Sometimes the labels can obstruct other symbols. In that case, you can either adjust the placement of the labels in the __Label tab__, or use the ![](../../fig/30.30.2_move_a_label_diagram_callout_icon.png) `Move a Label, Diagram, or Callout`-tool in __Label toolbar__
+QGIS renders labels automatically.
+Sometimes labels can obstruct other symbols. In that case, you can either adjust the placement of the labels in the __Label tab__, or use the ![](../../fig/30.30.2_move_a_label_diagram_callout_icon.png) `Move a Label, Diagram, or Callout`-tool in __Label toolbar__
 
 By default, QGIS renders the labels so that they don't overlap with other labels. This means that not all the labels will be visible if the data is dense or rendered close to each other. You can optimize the rendering under the rendering option. 
 
@@ -402,7 +401,7 @@ width: 600px
 Colour Ramp Selector
 ```
 
-In the colour ramp selector, you can adjust each colour step. On the bottom, you can see a plot for the Hue, __Saturation__, __Lightness__ and __Opacity__. Especially latter three are useful to see how your colour ramp will translate. Gradients from light to dark are easier to read: Check if the plot for the __Lightness__ has a more or less linear plot.
+In the colour ramp selector, you can adjust each colour step. On the bottom, you can see a plot for the Hue, __Saturation__, __Lightness__ and __Opacity__. The last three in particular are useful to understand how your colour ramp will appear. Gradients from light to dark are easier to read: Check if the plot for the __Lightness__ has a more or less linear plot.
 
 #### Styling a digital elevation model
 
@@ -423,9 +422,9 @@ In some cases, the colour ramp should be inverted to make it easier to read the 
 
 ## Exporting and Importing Styles
 
-The layers in QGIS are saved separately from the settings and styles of a QGIS Project. This means that if you load the same layers into a different QGIS-project, the symbology and styling of the data will be different. QGIS lets you save the symbology and styling of a layer as a separate file (`.qml`-files). Working with `.qml`-files saves you a lot of work and assures consistency between your maps.
+The layers in QGIS are saved separately from the settings and styles of a QGIS Project. This means that if you load the same layers into a different QGIS project, the symbology and styling of the data will be different. QGIS lets you save the symbology and styling of a layer as a separate file (`.qml`-files). Working with `.qml`-files saves you a lot of work and assures consistency between your maps.
 
-A `.qml`-file saves the information of a particular layer. This includes the colours, outlines, shapes, labelling, as well as the Layer configuration, attribute table settings, and other options you have set for a layer in your QGIS-project, that are not related done to the data files themselves. You can choose wether to save only the colour symbology or any additional information.
+A `.qml`-file saves the information of a particular layer. This includes the colours, outlines, shapes, labelling, as well as the Layer configuration, attribute table settings, and other options you have set for a layer in your QGIS project that are not related done to the data files themselves. You can choose whether to save only the colour symbology or any additional information.
  
 You can export a style into the same folder as the data so your colleagues can apply the same styling when loading the data into QGIS.
 Some organisations may also use standarized symbols or colours in their maps. 
@@ -434,7 +433,7 @@ For example, if you want to send a layer to your colleague with the same styling
 
 ## Saving or exporting styling settings
 
-1. Open the styling panel and click on `styles`. A dropdown menu will open with the option to export the layer styling.
+1. Open the styling panel and click on `Styles`. A dropdown menu will open with the option to export the layer styling.
 2. Since in this case, the styling is for exactly that dataset, you can leave all the boxes checked.
 3. Select a location and name for the styling. The styling will be saved as a `.qml` file. __Make sure it is saved in the same folder as the dataset and give it the same name as the corresponding dataset. This way it will, when loading the data into QGIS, the styling will automatically be applied.__
 
@@ -449,7 +448,7 @@ name: Save layer styling window
 Save Layer styling window in QGIS 30.30.2.
 ```
 
-When working with similar data (e.g.: building types or flooding risk), it is useful to have template styles, that can be quickly loaded into your QGIS-project or saved in your Styling Template library. 
+When working with similar data (e.g. building types or flooding risk), it is useful to have template styles, that can be quickly loaded into your QGIS-project or saved in your Styling Template library. 
 
 ```{Tip}
 When a styling is saved in the same location as the data and has the same name as the corresponding dataset, the styling will be automatically applied to the layer when loading the data into QGIS!
@@ -471,8 +470,8 @@ You can also import styles directly in the styling panel of a layer. But it will
 With the plugin __"Plugin Resource Sharing"__, you can install symbol and icon libraries used by the Red Cross and UN, as well as other useful symbols.
 
 1. Install the __"Plugin Resource Sharing"__ by opening the plugin installation window and searching for the plugin.
-2. Once installed, open the plugin interface by clicking on `plugin` > `Plugin Resource Sharing`
-3. Search for packages by the Red Cross and UN
+2. Once installed, open the plugin interface by clicking on `plugin` > `Plugin Resource Sharing`.
+3. Search for packages by the Red Cross and the UN.
 4. Install the packages.
 
 Now the symbols should be available in the styling manager in the SVG folder.
@@ -486,6 +485,6 @@ Make sure to check out the other resources available in the resource sharing plu
 ## Further Resources
 
 - [Cartography Guide](https://www.axismaps.com/guide) by [Axis Maps](axismaps.com)
-- Tutorial on [how to import the SIMS Color Palette into QGIS](https://learn-sims.org/geospatial/importing-sims-color-palette-to-qgis/) 
+- Tutorial on [how to import the SIMS Colour Palette into QGIS](https://learn-sims.org/geospatial/importing-sims-color-palette-to-qgis/) 
 - Tutorial on [how to create a shaded relief map in QGIS](https://learn-sims.org/geospatial/creating-a-shaded-relief-map-in-qgis/)
 - [Creating a 3W (Who, What, Where) Infographic](https://learn-sims.org/information-design/creating-a-3w-who-what-where-infographic/)
