@@ -2,9 +2,9 @@
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-These exercises touch on all the content of module 3
+These exercises cover all the content in Module 3.
 
-## Geodata digitisation
+## Geodata Digitisation
 
 * __[Digitisation Exercise 1: Access to financial institutions ](/content/Modul_3/en_qgis_digitalisation_ex2.md):__ In this exercise, you will learn how to digitise points, lines, and polygons of features in settlements by creating new datasets. 
     * Digitisation of points
@@ -13,11 +13,11 @@ These exercises touch on all the content of module 3
 
 ## Geodata Classification
 
-* __[Overview map of the prevalence of stunting in Sierra Leone](/content/Modul_3/en_qgis_classification_ex1.md):__ This exercise aims to create an overview map of the prevalence of stunting in Sierra Leone at district level. To do this, we will visualise both the prevalence of stunting and key infrastructure such as hospitals, airports and roads. The decision on which data to visualise and how to present it is up to you, the cartographer.
-    * Geodata Classification- Categorized
+* __[Overview map of the prevalence of stunting in Sierra Leone](/content/Modul_3/en_qgis_classification_ex1.md):__ This exercise aims to create an overview map of the prevalence of stunting in Sierra Leone at district level. To do this, we will visualise both the prevalence of stunting and key infrastructure such as hospitals, airports, and roads. The decision on which data to visualise and how to present it is up to you, the cartographer.
+    * Geodata Classification- Categorised
     * Geodata Classification- Graduated
 
-## Big exercise for module 3
+## Module 3 Big Exercise
 
 These exercises touch on all the content of module 3. 
 
@@ -25,7 +25,7 @@ These exercises touch on all the content of module 3.
     * Import vector data into QGIS
     * Select features by hand
     * Export selected features as a new geodata set
-    * Select/ extract features by attribute
+    * Select/extract features by attribute
     * Select/extract features  by location
     * Manipulate attribute tables
     * Use categorized classification
