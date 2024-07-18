@@ -9,6 +9,8 @@ This is a vital concept to understand since analysis, as well as visualisation o
 
 ![Layer Concept](/fig/Layer_concept.png) 
 
+<!--ADD: Source?-->
+
 ## Hide and show layers
 
 Set a tick in the Layers panel
