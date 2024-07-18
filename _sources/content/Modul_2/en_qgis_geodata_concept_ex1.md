@@ -1,4 +1,4 @@
-# Geodata Concept Exercise 1
+# Exercise 1: Geodata Concept
 
 ### Aim of the exercise
 The objective of this exercise is to make your first steps in QGIS. Understand the user interface and get to know the layer concept. 
@@ -15,7 +15,7 @@ The objective of this exercise is to make your first steps in QGIS. Understand t
 <!-- FIXME: to be updated -->
 
 ### Data
-Download all datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_2/Modul_2_Exercise2_Geodata_Concept/Modul_2_Exercise2_Geodata_Concept.zip) and save the folder on your computer and unzip the file. The zip folder includes:
+Download all datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_Geodata_concept.zip) and save the folder on your computer and unzip the file. The zip folder includes:
 <!-- CLARIFY: does it matter where they are downloaded? -->
 - `Sierra_leone_borders.gpkg` (MultiLineString) GeoPackage
     - Sierra Leone national borders (Lines)
