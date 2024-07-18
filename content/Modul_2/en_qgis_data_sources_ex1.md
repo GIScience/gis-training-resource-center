@@ -1,4 +1,4 @@
-# Data Sources Exercise 1
+# Exercise 3: Data sources
 
 ### Aim of the exercise
 The aim of this exercise is to **navigate various data sources**, gain an 
@@ -15,7 +15,7 @@ understanding of where and **how to access relevant data**, and **identify poten
 
 ### Data
 Since the exercise is about finding data, there won't be any data to download. 
-Instead download the usual folder structure [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_2/Modul_2_Exercise_Data_sources/Modul2_data_sources_exercise.zip) and add in your data as you download it.
+Instead download the usual folder structure [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip) and add in your data as you download it.
 
 ### Tasks
 

@@ -1,4 +1,4 @@
-# Exercise: The world
+# Exercise 4: The world
 
 __🔙[Back to Homepage](/content/intro.md)__
 
@@ -15,8 +15,8 @@ This exercise will help you to get to know the interface of QGIS a bit better. F
 
 ## Data sources
 
-Download the data folder [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_2/Modul2_Exercise1_The_World/Modul2_Exercise1_The_World.zip) and save it on your PC. Unzip the .zip file!
-The folder is called “Modul_2_Exercise1_The_World" and contains the whole [standard folder structure](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure) with all data in the input folder and the additional documentation in the documentation folder.
+Download the data folder [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_4/Module_2_Exercise_4_The_World.zip) and save it on your PC. Unzip the .zip file!
+The folder is called “Module_2_Exercise_4_The_World" and contains the whole [standard folder structure](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure) with all data in the input folder and the additional documentation in the documentation folder.
 
 - [World Countries (Generalized)](https://hub.arcgis.com/datasets/2b93b06dc0dc4e809d3c8db5cb96ba69_0/explore) (Polygon/Shapefile)
 - [Significant Earthquake Dataset](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ngdc.mgg.hazards:G012153) (CSV)
@@ -26,11 +26,11 @@ The folder is called “Modul_2_Exercise1_The_World" and contains the whole [sta
 
 1. Open QGIS and create a [new project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`
 2. Once the project is created save the project in the “project” folder of the “Ex_The_world”.  To do that click on `Project` -> `Save as` and navigate to the folder. Name the project “Ex_The_World”.
-3. Load the shape file "World_countries__generalized" in your project by drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)]). Or click on `Layer`-> `Add Layer`-> `Add Vector Layer`. Click on the three points ![](/fig/Three_points.png) and navigate to "World_countries__generalized". Select the file and click `Open`. Back in QGIS click `Add` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)).
+3. Load the shape file "World_countries__generalized" in your project by drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)). Or click on `Layer`-> `Add Layer`-> `Add Vector Layer`. Click on the three points ![](/fig/Three_points.png) and navigate to "World_countries__generalized". Select the file and click `Open`. Back in QGIS click `Add` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)).
 ``` {Attention}
 With both methods, you need to select the file with the ending __.shp__ ! 
 ```
-4. Load the GeoPackage file "global_power_plant_database_nuclear.gpkg" in the QGIS project. You can use one of the methods above. Either drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)]) the file or click on `Layer`-> `Add Layer`-> `Add Vector Layer`. Click on the three points ![](/fig/Three_points.png) and navigate to "global_power_plant_database_nuclear.gpkg". Select the file and click `Open`. Back in QGIS click `Add`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)).
+4. Load the GeoPackage file "global_power_plant_database_nuclear.gpkg" in the QGIS project. You can use one of the methods above. Either drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)) the file or click on `Layer`-> `Add Layer`-> `Add Vector Layer`. Click on the three points ![](/fig/Three_points.png) and navigate to "global_power_plant_database_nuclear.gpkg". Select the file and click `Open`. Back in QGIS click `Add`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)).
 ```{Note}
 GeoPackage file can contain multiple files and even whole QGIS projects. When you load such a file in QGIS a window will appear in which you have to select the files you want to load in your QGIS project.
 ```
