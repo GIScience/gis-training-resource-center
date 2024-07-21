@@ -12,7 +12,7 @@ Become familiar with different types of non-spatial analysis and geoprocessing t
 ### Data
 Download all datasets and save the folder on your computer and unzip the file. The zip folder includes:
 - `sen_admbnda_adm1_1m_gov_ocha_20190426.shp`: [Senegal boundary data (Admin level 1)](https://data.humdata.org/dataset/senegal-administrative-boundaries)
-- `DI_Stat924.xls`: [Senegal Desinventar Sendai data](https://www.desinventar.net/DesInventar/profiletab.jsp?countrycode=sen) showing effects of disasters in Senegal regions
+- `DI_Stat924.xls`: [Senegal Desinventar Sendai data](https://www.desinventar.net/DesInventar/profiletab.jsp?countrycode=sen) showing effects of disasters in Senegalese regions
 - `sen_admpop_adm1_2020.csv`: Senegal administrative level 1 (région) 2019 [projection population statistics](https://data.humdata.org/dataset/senegal-population-statistics)
 
 ```{Hint}
@@ -67,7 +67,7 @@ Screenshot of the tool Join Attributes by Field Value for the directly and indir
 
 ::::
 
-6. Use the table functions to calculate the area of each region in square kilometers and the density of the population. See the Wiki entry on [Table functions](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html) for further information.
+6. Use the table functions to calculate the area of each region in square kilometres and the density of the population. See the Wiki entry on [Table functions](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html) for further information.
     - Create a new column/field named `"area_sqkm"` using the field calculator. Ensure decimal numbers are used as the field type. For the calculation use the expression: `$area / (1000 * 1000)`
     - Create another column/field named `"pop_per_sqkm"` with decimal numbers as field type. Use the expression: `"Total" / "area_sqkm"` for the calculation.
 
@@ -119,7 +119,7 @@ Screenshot of the Rename field tool
 width: 80%
 name: per_indirect_affected
 ---
-Screenshot of the calculation of the proportion of the indirectly affected population relative to the total population within each region.
+Calculation of the proportion of the indirectly affected population relative to the total population within each region.
 ``` 
 :::
 
@@ -129,19 +129,19 @@ Screenshot of the calculation of the proportion of the indirectly affected popul
 width: 80%
 name: per_direct_affected
 ---
-Screenshot of the calculation of the proportion of the directly affected population relative to the total population within each region.
+Calculation of the proportion of the directly affected population relative to the total population within each region.
 ```
 :::
 
 ::::
 
-6. Select a color scheme using the `Symbology` to visualize the share of people directly affected in the different regions (Hint: `Categorized`).
-    - Play around with different modes to find a useful color/categorization scheme for the visualization.
+6. Select a colour scheme using the `Symbology` to visualise the share of people directly affected in the different regions (Hint: `Categorized`).
+    - Play around with different modes to find a useful colour/categorisation scheme for the visualisation.
     - Which regions are more and which are less directly affected? Are there any data gaps?
 
 7. Export the map as a png (Hint: `Project, Import/Export, Export map to Image`).
 
-8. Repeat the previous steps, but this time visualize the indirectly affected people in each region (Hint: `Categorized`, column `Indirectly affected`).
+8. Repeat the previous steps, but this time visualise the indirectly affected people in each region (Hint: `Categorized`, column `Indirectly affected`).
 
 9. What differences can be observed between the regions directly affected and those indirectly affected?
 
