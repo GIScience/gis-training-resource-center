@@ -1,7 +1,7 @@
 # Exercise 2: Part 1: Calculate vulnerability index
 
-### Aim of the exercise
-We want to create an overview of different vulnerability indicators. From the Covid-19 risk indicators dataset we take `% permanent wall type`, `% permanent roof type` and `poverty incidence`. From the Uganda population statistics we calculate the `% of under fives` and `% of elderly`. By combining the data, we are now able to visualize the areas in Uganda that are most vulnerable.
+### Exercise Goal
+We want to create an overview of different vulnerability indicators. Using a Covid-19 risk indicators dataset, we take `% permanent wall type`, `% permanent roof type` and `poverty incidence`. Using Uganda population statistics, we calculate the `% of under fives` and `% of elderly`. By combining the data, we are now able to visualise the areas in Uganda that are most vulnerable.
 
 ### Links to Wiki articles
 * [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)
@@ -22,16 +22,16 @@ All files still have their original names. However, feel free to modify their na
 ### Task
 This first part of the exercise will prepare the data for subsequent non-spatial geodataprocessing, such as working with the attribute table. To calculate the vulnerability index, we will join all the relevant data using spatial geodataprocessing into a single vector layer.
 
-1. Load the Uganda district boundaries (admin level 2) (`uga_admbnda_adm2_ubos_20200824.shp`), as well as population statistics (`uga_admpop_adm2_2020proj_1y.csv`) and the Covid-19 risk indicators (`COVID19_RISK_INDEX.shp`) into QGIS.
+1. Load the Uganda district boundaries (admin level 2) (`uga_admbnda_adm2_ubos_20200824.shp`), as well as population statistics (`uga_admpop_adm2_2020proj_1y.csv`) and Covid-19 risk indicators (`COVID19_RISK_INDEX.shp`) into QGIS.
 
-2. Make sure to reproject the dataset with the __district boundaries__ and the dataset with the __Covid-19 risk indicators__ into UTM zone 36N. Use the tool `Reproject layer` for this process. See the Wiki entry on [projections](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html) for further information.
+2. Make sure to reproject the dataset using the __district boundaries__ and the __Covid-19 risk indicators__ dataset into UTM zone 36N. Use the tool `Reproject layer` for this process. See the Wiki entry on [projections](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html) for further information.
 
 ```{Attention}
 Before you start doing any GIS operations, __always explore the data__. Always check if the projections of the different layers are the same.
 ```
 
 ```{Hint}
-The projected coordinate system for Uganda is `EPSG:32636 WGS 84 / UTM zone 36N`. If you are looking for a suitable projected coordinate system for any region on earth, you can find a good one on [epsg.io](https://epsg.io).
+The projected coordinate system for Uganda is `EPSG:32636 WGS 84 / UTM zone 36N`. If you are looking for a suitable projected coordinate system for any region on earth, you can find a good example on [epsg.io](https://epsg.io).
 ```
 
 3. We can see that the polygons are different in shape and amount! It is likely that the risk data is using an older version of the admin boundaries. This is an issue we need to resolve in order to work properly with the data.
@@ -59,7 +59,7 @@ name: en_qgis_centroids
 The black points represent the centroids of the features of the input layer. The red circle indicates the centroid that requires editing.
 ```
 
-7. There is an issue that can be found when joining the datasets, but it can be solved by using the `Fix geometries` tool on the Covid-19 risk dataset.
+7. There is an issue that is produced when joining the datasets, but it can be solved by using the `Fix geometries` tool on the Covid-19 risk dataset.
 
 ```{figure} /fig/en_ex3_1_fix_geometries.PNG
 ---
@@ -79,7 +79,7 @@ name: join_attribute_by_location
 Screenshot of Join attribute by location operation.
 ```
 
-9. Use the tool `Join attributes by location` again to join the previously enriched points onto the Uganda district boundaries. Now select as a spatial relationship contain and again select the same three columns for joining.
+9. Use the tool `Join attributes by location` again to join the previously enriched points onto the Uganda district boundaries. Now select "contain" as the spatial relationship and again select the same three columns for joining.
 
 ```{figure} /fig/en_ex3_1_join_attribute_location_2.PNG
 ---
