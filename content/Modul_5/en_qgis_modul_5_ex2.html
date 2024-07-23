@@ -234,7 +234,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 5 - Intermediate GIS Operations (Spatial and Non-Spatial Data Manipulation)</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="en_qgis_spatial_tools.html">Spatial Geodataprocessing</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_spatial_tools_ex1.html">Exercise 1: Healthsite distribution in Saint Louis region</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_spatial_tools_ex1.html">Exercise 1: Health site distribution in the Saint Louis region</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="en_qgis_non_spatial_tools.html">Non-Spatial Geodataprocessing</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -614,12 +614,12 @@ document.write(`
 <p>🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧</p>
 <section id="aim-of-the-exercise">
 <h2>Aim of the exercise:<a class="headerlink" href="#aim-of-the-exercise" title="Permalink to this heading">#</a></h2>
-<p>This exercise is based on the monitoring and triggering process used by the Somalia Red Cresent Society (SRCS) in the framework of a drought Early Action Protocol (EAP).</p>
+<p>This exercise is based on the monitoring and triggering process used by the Somalia Red Crescent Society (SRCS) in the framework of a drought Early Action Protocol (EAP).</p>
 <p>Within this exercise, you will build a simplified version of the monitoring and trigger mechanism for the FEWSNET projection pillar.</p>
 </section>
 <section id="background">
 <h2>Background<a class="headerlink" href="#background" title="Permalink to this heading">#</a></h2>
-<p>Setting triggers is one of the cornerstones of the <strong>Forecast-based Financing system</strong>. For a National Society to have access to automatically released funding for their early actions, their Early Action Protocol needs to clearly define where and when funds will be allocated, and assistance will be provided. In FbF, this is decided according to specific threshold values, so-called <strong>triggers</strong>, based on weather and climate forecasts, which are defined for each region (see <a class="reference external" href="https://manual.forecast-based-financing.org/en/chapter/set-the-trigger/">FbF Manual</a>).</p>
+<p>Setting triggers is one of the cornerstones of the <strong>Forecast-based Financing (FbF) system</strong>. For a National Society to have access to automatically released funding for their early actions, their Early Action Protocol needs to clearly define where and when funds will be allocated, and assistance will be provided. In FbF, this is decided according to specific threshold values, so-called <strong>triggers</strong>, based on weather and climate forecasts, which are defined for each region (see <a class="reference external" href="https://manual.forecast-based-financing.org/en/chapter/set-the-trigger/">FbF Manual</a>).</p>
 <p>For the development of the Somaliland-Somalia Drought Trigger mechanism, various datasources were thoroughly analysed.
 Finally, the main parameters chosen for the trigger based on the <strong>historical impact assessment</strong> are the twelve month Standard Precipitation Index (SPI12) and the IPC acute food insecurity classification. The exact data used are the documented and forecasted SPI12 (source: ICPAC) and the forecasted IPC classification (8 month forecast, source: FEWSNET), that is used to calculate a population weighted index of food insecurity. The trigger thresholds for both components were optimised towards the most favourable proportion of hit rate and false alarm rate. The emerging thresholds were &lt;-1 for the SPI12 and &gt;=0,7 for the IPC based index. The triggering is done on district level and per district just one trigger initiation per year is possible.</p>
 <div class="admonition-trigger-statement admonition">
@@ -635,7 +635,7 @@ derived population weighted index in the same district, then we will act in this
 <li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#intersection">Intersection</a></p></li>
 <li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics">Zonal Statistics</a></p></li>
 <li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary">Join Attributes by location (summary</a></p></li>
-<li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics">Tabel functions</a></p></li>
+<li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics">Table functions</a></p></li>
 </ul>
 </section>
 <section id="data">
@@ -660,7 +660,7 @@ derived population weighted index in the same district, then we will act in this
 <section id="what-is-ipc-food-security-projection-data">
 <h4>What is IPC Food Security Projection Data?<a class="headerlink" href="#what-is-ipc-food-security-projection-data" title="Permalink to this heading">#</a></h4>
 <p>The IPC is a commonly accepted measure and classification to describe the current and anticipated severity of acute food insecurity.
-The classification is based on a convergence of available data and evidence, including indicators related to food consumption, livelihoods, malnutrition and mortality. Food Insecurity is one of the prioritized impacts of droughts in Somalia which is why it is also used for the triggering mechanism, in a population-weighted index.</p>
+The classification is based on a convergence of available data and evidence, including indicators related to food consumption, livelihoods, malnutrition and mortality. Food Insecurity is one of the prioritised impacts of droughts in Somalia which is why it is also used for the triggering mechanism, in a population-weighted index.</p>
 <p>Three times a year (February, June, and October) FEWSNET estimates most likely IPC classes for the upcoming 8 month (near-term and mid-term projection), available from 2019-current. The near-term projection is called ML1 and is a projection for the upcoming 4 month, the mid-term projection is called ML2 and projects the IPC classes for the 4 subsequent months. For the triggering ML1 (near-term) as well as ML2 (mid-term) projections will be considered.</p>
 <p>Outlook updates are produced almost every month and are also taken into account.</p>
 <table class="table">
@@ -708,13 +708,13 @@ The preprocessed datasets are:</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Adminstrative bounderies</p></td>
+<tr class="row-even"><td><p>Administrative boundaries</p></td>
 <td><p><a class="reference external" href="https://data.humdata.org/dataset/cod-ab-som?">HDX</a></p></td>
-<td><p>The administrative bounderies on level 0-2 for Somalia and Somaliland can be accessed via HDX. For this trigger mechanism we provide the administrative bounderies on level 2 (district level) as a shapefile. We have added the population number for each district derived from Worldpop.</p></td>
+<td><p>The administrative boundaries on level 0-2 for Somalia and Somaliland can be accessed via HDX. For this trigger mechanism we provide the administrative boundaries on level 2 (district level) as a shapefile. We have added the population number for each district derived from Worldpop.</p></td>
 </tr>
 <tr class="row-odd"><td><p>Population Counts</p></td>
 <td><p><a class="reference external" href="https://hub.worldpop.org/doi/10.5258/SOTON/WP00534">Worldpop</a></p></td>
-<td><p>The worldpop dataset in .geotif rasterformat provides population estimates per hectar for the year 2020</p></td>
+<td><p>The worldpop dataset in .geotif raster format provides population estimates per hectare for the year 2020</p></td>
 </tr>
 </tbody>
 </table>
@@ -737,9 +737,13 @@ The preprocessed datasets are:</p>
 </section>
 <section id="task">
 <h2>Task<a class="headerlink" href="#task" title="Permalink to this heading">#</a></h2>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Some of the images and videos are not 100 % accurate for this particular exercise since they were take from the real trigger workflow of SRCS, which is more complex.</p>
+</div>
 <section id="step-1-setting-up-folder-structure">
 <h3>Step 1: Setting up folder structure<a class="headerlink" href="#step-1-setting-up-folder-structure" title="Permalink to this heading">#</a></h3>
-<p><strong>Purpose:</strong> In this step, we set up the correct folder structure to make the analysis easier and to ensure consitent results.</p>
+<p><strong>Purpose:</strong> In this step, we set up the correct folder structure to make the analysis easier and to ensure consistent results.</p>
 <p><strong>Tool:</strong> No special tools or programs are needed.</p>
 <table class="table">
 <colgroup>
@@ -765,7 +769,7 @@ The preprocessed datasets are:</p>
 </tr>
 </tbody>
 </table>
-<p>The Video below shows the process for setting up the folder for december 2023.</p>
+<p>The Video below shows the process for setting up the folder for December 2023.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Video: Setting up folder structure <div class="sd-summary-down docutils">
@@ -779,21 +783,21 @@ Video: Setting up folder structure <div class="sd-summary-down docutils">
 <section id="step-2-download-of-the-forecast-data">
 <h3>Step 2: Download of the forecast data<a class="headerlink" href="#step-2-download-of-the-forecast-data" title="Permalink to this heading">#</a></h3>
 <p><strong>Purpose:</strong></p>
-<p><strong>Tool:</strong> Interent Browser</p>
+<p><strong>Tool:</strong> Internet Browser</p>
 <p>The IPC data will be pulled from the FEWSNET website. FEWS NET publishes IPC data on its website.
 The main data publications, as well as the updates of the IPC data, amount to the publication of new data almost monthly.</p>
 </section>
 <section id="ipc-data">
 <h3>IPC Data<a class="headerlink" href="#ipc-data" title="Permalink to this heading">#</a></h3>
-<p>The IPC Projection data is provided and regulary updated on the <a class="reference external" href="https://fews.net/">FEWSNET Website</a>.
-On the website, you will have to click on Somalia to acess the data. Alternativley, you can  navigate through <code class="docutils literal notranslate"><span class="pre">Data</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Acute</span> <span class="pre">Food</span> <span class="pre">Insecurity</span> <span class="pre">Data</span></code> and enter „Somalia”. In the menu you will see different dataformats for different timestamps. Once you find out which timestamp is the most current one, find the ZIP download. We need the data in shapefile (.shp) format, which is only included in the ZIP file and not provided as single download file.</p>
+<p>The IPC Projection data is provided and regularly updated on the <a class="reference external" href="https://fews.net/">FEWSNET Website</a>.
+On the website, you will have to click on Somalia to access the data. Alternatively, you can  navigate through <code class="docutils literal notranslate"><span class="pre">Data</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Acute</span> <span class="pre">Food</span> <span class="pre">Insecurity</span> <span class="pre">Data</span></code> and enter „Somalia”. In the menu you will see different data formats for different timestamps. Once you find out which timestamp is the most current one, find the ZIP download. We need the data in shapefile (.shp) format, which is only included in the ZIP file and not provided as single download file.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>The FEWSNET pages change often!</p>
 </div>
 <ol class="arabic simple">
 <li><p>Go to <a class="reference external" href="https://fews.net/">FEWSNET Website</a>. Click on <code class="docutils literal notranslate"><span class="pre">Data</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Acute</span> <span class="pre">Food</span> <span class="pre">Insecurity</span></code>.</p></li>
-<li><p>Scroll down. In <code class="docutils literal notranslate"><span class="pre">Geograhic</span> <span class="pre">Area</span></code>, type in “Somalia” and click <code class="docutils literal notranslate"><span class="pre">Apply</span></code></p></li>
+<li><p>Scroll down. In <code class="docutils literal notranslate"><span class="pre">Geographic</span> <span class="pre">Area</span></code>, type in “Somalia” and click <code class="docutils literal notranslate"><span class="pre">Apply</span></code></p></li>
 <li><p>Choose the newest dataset.</p></li>
 </ol>
 <figure class="align-center" id="fewsnet-ipc-download-ipc-projections">
@@ -870,7 +874,7 @@ Example path: <code class="docutils literal notranslate"><span class="pre">.../M
 <li><p>Click on <code class="docutils literal notranslate"><span class="pre">Vector</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Geoprocessing</span> <span class="pre">Tools</span></code> -&gt; <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#intersection"><code class="docutils literal notranslate"><span class="pre">Intersection</span></code></a></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Layer</span></code>: ML 1</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Overlay</span> <span class="pre">layer</span></code>: district_pop_sum</p></li>
-<li><p>Under <code class="docutils literal notranslate"><span class="pre">Intersection</span></code> click on the three points <img alt="" src="../../_images/Three_points.png" />-&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">to</span> <span class="pre">File</span></code> and navigate to you monitoring folder [Year_Month]. Give the output the name “ML1_Intersection” and click <code class="docutils literal notranslate"><span class="pre">Save</span></code></p></li>
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">Intersection</span></code> click on the three points <img alt="" src="../../_images/Three_points.png" />-&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">to</span> <span class="pre">File</span></code> and navigate to your monitoring folder [Year_Month]. Give the output the name “ML1_Intersection” and click <code class="docutils literal notranslate"><span class="pre">Save</span></code></p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Run</span></code></p></li>
 </ol>
 </td>
@@ -948,7 +952,7 @@ Video:  Calculation of Population per Intersection Polygon<div class="sd-summary
 <p><strong>Purpose:</strong> The purpose of this step is the weighting of the population in the five IPC phases as described in <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_drought_trigger_somalia.html#ipc-population-weighted-index">IPC Data</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The IPC Index represents low-population districts equal to high-population districts. No underrepresentation of high food insecurity of small districts occurs.</p>
+<p>The IPC Index treats low-population districts the same as high-population districts, ensuring that small districts with high food insecurity are not underrepresented.</p>
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -957,13 +961,12 @@ IPC-Population Weighted Index<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">To better operationalise the IPC data, a simple population-weigthed index was developed. Relative population numbers are weighted based on the respective IPC class they fallin, in order to give the amount of people in a certain IPC class the importance instead of the IPC class only.
-Furthermore, population located in a higher IPC class is more important than population located in a lower class. The index is calculated as follows:</p>
+<p class="sd-card-text">To better utilize the IPC data, a straightforward population-weighted index was created. This index assigns weights to relative population numbers based on their respective IPC classes, emphasizing the number of people in each IPC class rather than just the class itself. Additionally, populations in higher IPC classes are given more importance than those in lower classes. The index is calculated as follows:</p>
 <p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">IPC\</span> <span class="pre">Index</span> <span class="pre">=</span>&#160; <span class="pre">Weights</span> <span class="pre">\times</span> <span class="pre">\frac{District\</span> <span class="pre">Pop\</span> <span class="pre">per\</span> <span class="pre">IPC\</span> <span class="pre">Phase}{Total\</span> <span class="pre">District\</span> <span class="pre">Pop}$</span></code></p>
 <p class="sd-card-text">Where the weights are defined as:</p>
 <table class="table">
 <thead>
-<tr class="row-odd"><th class="head"><p class="sd-card-text">IPC Pahse</p></th>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">IPC Phase</p></th>
 <th class="head"><p class="sd-card-text">Weight</p></th>
 </tr>
 </thead>
@@ -1027,7 +1030,7 @@ END
 </div>
 <ol class="arabic simple" start="6">
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">ok</span></code></p></li>
-<li><p>Save the new column by clicking on <img alt="" src="../../_images/mActionSaveEdits.png" /> in the attribute table and end the editing mode by clicking on <img alt="" src="../../_images/mActionToggleEditing.png" /></p></li>
+<li><p>Save the new column by clicking on <img alt="" src="../../_images/mActionSaveEdits.png" /> in the attribute table and turn off editing mode by clicking on <img alt="" src="../../_images/mActionToggleEditing.png" /></p></li>
 </ol>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/SRCS_Trigger_step_8_field_calculator.png"><img alt="../../_images/SRCS_Trigger_step_8_field_calculator.png" src="../../_images/SRCS_Trigger_step_8_field_calculator.png" style="width: 500px;" /></a>
@@ -1149,7 +1152,7 @@ Video: Evaluate Trigger Activation <div class="sd-summary-down docutils">
 <p><strong>Tool:</strong> <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_I.html#symbology-for-vector-data">Symbology</a></p>
 <p><strong>Trigger Activation</strong></p>
 <ol class="arabic simple">
-<li><p>Right cklick on the “ML1_IPC_Index” layer -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Symbology</span></code></p></li>
+<li><p>Right-click on the “ML1_IPC_Index” layer -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Symbology</span></code></p></li>
 <li><p>In the down left corner click on <code class="docutils literal notranslate"><span class="pre">Style</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code></p></li>
 <li><p>In the new window click on the three points <img alt="" src="../../_images/Three_points.png" />. Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file <strong>“Style_Trigger_Activation_ex.qml”</strong>.</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Then click on <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code></p></li>
@@ -1223,16 +1226,16 @@ Video: Visualisation of results<div class="sd-summary-down docutils">
 </section>
 <section id="step-11-making-print-map">
 <h3>Step 11: Making print map<a class="headerlink" href="#step-11-making-print-map" title="Permalink to this heading">#</a></h3>
-<p><strong>Purpose:</strong> Viualization of the map features in a printable map layout</p>
+<p><strong>Purpose:</strong> Visualisation of the map features in a printable map layout</p>
 <p><strong>Tool:</strong>  <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout">Print Layout</a></p>
 <ol class="arabic simple">
-<li><p>If not done before, delet all layers expect <strong>Trigger_activation</strong>, <strong>Som_admin1_regions_UNDP</strong> and <strong>OpenStreetMap</strong></p></li>
+<li><p>If not done before, delete all layers expect <strong>Trigger_activation</strong>, <strong>Som_admin1_regions_UNDP</strong> and <strong>OpenStreetMap</strong></p></li>
 <li><p>Open a new print layout by clicking on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Print</span> <span class="pre">Layout</span></code> -&gt; enter the name of your current Project e.g “2024_01”.</p></li>
 <li><p>Go the the <code class="docutils literal notranslate"><span class="pre">Modul_5_Exercise2_Drought_Monitoring_Trigger</span></code> folder and drag and drop the file <code class="docutils literal notranslate"><span class="pre">Trigger_activation_Intervention_map_ex.qpt</span></code> in the print layout</p></li>
 <li><p>Change the date to the current date by clicking on “Further map info…” in the items panel. Click on the <code class="docutils literal notranslate"><span class="pre">Item</span> <span class="pre">Properties</span></code> tab and scroll down. Here you can change the date in the <code class="docutils literal notranslate"><span class="pre">Main</span> <span class="pre">Properties</span></code> field.</p></li>
-<li><p>If necessary, adjust the legend by clicking on the legend in the  <code class="docutils literal notranslate"><span class="pre">Item</span> <span class="pre">Properties</span></code> tab and scroll down until you see the <code class="docutils literal notranslate"><span class="pre">Legend</span> <span class="pre">items</span></code> field. If it is not there check if you have to open the dropdown. Make sure <code class="docutils literal notranslate"><span class="pre">Auto</span> <span class="pre">update</span></code> is not checked.</p>
+<li><p>If necessary, adjust the legend by clicking on the legend in the <code class="docutils literal notranslate"><span class="pre">Item</span> <span class="pre">Properties</span></code> tab and scroll down until you see the <code class="docutils literal notranslate"><span class="pre">Legend</span> <span class="pre">items</span></code> field. If it is not there check if you have to open the dropdown. Make sure <code class="docutils literal notranslate"><span class="pre">Auto</span> <span class="pre">update</span></code> is not checked.</p>
 <ul class="simple">
-<li><p>Remove all itemes in the legend be clicking on the item and then on the red minus icon below.</p></li>
+<li><p>Remove all items in the legend be clicking on the item and then on the red minus icon below.</p></li>
 <li><p>Add <strong>Trigger_activation</strong> to the legend by clicking on the green plus and click on the layer and click <code class="docutils literal notranslate"><span class="pre">ok</span></code></p></li>
 <li><p>Add <strong>Som_admin1_regions_UNDP</strong> to the legend by clicking on the green plus and click on the layer and click <code class="docutils literal notranslate"><span class="pre">ok</span></code></p></li>
 </ul>
@@ -1240,7 +1243,7 @@ Video: Visualisation of results<div class="sd-summary-down docutils">
 </ol>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Video: Making print map<div class="sd-summary-down docutils">
+Video: Making a print map<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
@@ -1259,9 +1262,9 @@ Video: Making print map<div class="sd-summary-down docutils">
 </section>
 <section id="step-13-exporting-map">
 <h3>Step 13.: Exporting Map<a class="headerlink" href="#step-13-exporting-map" title="Permalink to this heading">#</a></h3>
-<p><strong>Purpose:</strong> Export the designed and finalized map layout in order tp print it as a pdf or format of your choice.</p>
+<p><strong>Purpose:</strong> Export the designed and finalised map layout in order to print it as a pdf or format of your choice.</p>
 <p><strong>Tool:</strong> <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout">Print Layout</a></p>
-<p>When you have finished the design of you map, you can export it as pdf or image file in different datafromats.</p>
+<p>When you have finished the design of you map, you can export it as pdf or image file in different data types.</p>
 <p><strong>Export as Image</strong></p>
 <ol class="arabic simple">
 <li><p>In the print layout click on <code class="docutils literal notranslate"><span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Export</span> <span class="pre">as</span> <span class="pre">Image</span></code></p></li>

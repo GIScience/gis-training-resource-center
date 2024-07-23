@@ -234,7 +234,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 5 - Intermediate GIS Operations (Spatial and Non-Spatial Data Manipulation)</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="en_qgis_spatial_tools.html">Spatial Geodataprocessing</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_spatial_tools_ex1.html">Exercise 1: Healthsite distribution in Saint Louis region</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_spatial_tools_ex1.html">Exercise 1: Health site distribution in the Saint Louis region</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="en_qgis_non_spatial_tools.html">Non-Spatial Geodataprocessing</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
@@ -603,7 +603,7 @@ document.write(`
 <p>Download all datasets and save the folder on your computer and unzip the file. The zip folder includes:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">sen_admbnda_adm1_1m_gov_ocha_20190426.shp</span></code>: <a class="reference external" href="https://data.humdata.org/dataset/senegal-administrative-boundaries">Senegal boundary data (Admin level 1)</a></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">DI_Stat924.xls</span></code>: <a class="reference external" href="https://www.desinventar.net/DesInventar/profiletab.jsp?countrycode=sen">Senegal Desinventar Sendai data</a> showing effects of disasters in Senegal regions</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DI_Stat924.xls</span></code>: <a class="reference external" href="https://www.desinventar.net/DesInventar/profiletab.jsp?countrycode=sen">Senegal Desinventar Sendai data</a> showing effects of disasters in Senegalese regions</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">sen_admpop_adm1_2020.csv</span></code>: Senegal administrative level 1 (région) 2019 <a class="reference external" href="https://data.humdata.org/dataset/senegal-population-statistics">projection population statistics</a></p></li>
 </ul>
 <div class="admonition hint">
@@ -656,7 +656,7 @@ Screenshot for task 5</label><div class="sd-tab-content docutils">
 </div>
 </div>
 <ol class="arabic simple" start="6">
-<li><p>Use the table functions to calculate the area of each region in square kilometers and the density of the population. See the Wiki entry on <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html">Table functions</a> for further information.</p>
+<li><p>Use the table functions to calculate the area of each region in square kilometres and the density of the population. See the Wiki entry on <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html">Table functions</a> for further information.</p>
 <ul class="simple">
 <li><p>Create a new column/field named <code class="docutils literal notranslate"><span class="pre">&quot;area_sqkm&quot;</span></code> using the field calculator. Ensure decimal numbers are used as the field type. For the calculation use the expression: <code class="docutils literal notranslate"><span class="pre">$area</span> <span class="pre">/</span> <span class="pre">(1000</span> <span class="pre">*</span> <span class="pre">1000)</span></code></p></li>
 <li><p>Create another column/field named <code class="docutils literal notranslate"><span class="pre">&quot;pop_per_sqkm&quot;</span></code> with decimal numbers as field type. Use the expression: <code class="docutils literal notranslate"><span class="pre">&quot;Total&quot;</span> <span class="pre">/</span> <span class="pre">&quot;area_sqkm&quot;</span></code> for the calculation.</p></li>
@@ -710,7 +710,7 @@ Screenshot indirectly affected</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="per-indirect-affected">
 <a class="reference internal image-reference" href="../../_images/en_ex1_per_indirect_affected.PNG"><img alt="../../_images/en_ex1_per_indirect_affected.PNG" src="../../_images/en_ex1_per_indirect_affected.PNG" style="width: 80%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 142 </span><span class="caption-text">Screenshot of the calculation of the proportion of the indirectly affected population relative to the total population within each region.</span><a class="headerlink" href="#per-indirect-affected" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 142 </span><span class="caption-text">Calculation of the proportion of the indirectly affected population relative to the total population within each region.</span><a class="headerlink" href="#per-indirect-affected" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -720,20 +720,20 @@ Screenshot directly affected</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="per-direct-affected">
 <a class="reference internal image-reference" href="../../_images/en_ex1_per_direct_affected.PNG"><img alt="../../_images/en_ex1_per_direct_affected.PNG" src="../../_images/en_ex1_per_direct_affected.PNG" style="width: 80%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 143 </span><span class="caption-text">Screenshot of the calculation of the proportion of the directly affected population relative to the total population within each region.</span><a class="headerlink" href="#per-direct-affected" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 143 </span><span class="caption-text">Calculation of the proportion of the directly affected population relative to the total population within each region.</span><a class="headerlink" href="#per-direct-affected" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 </div>
 <ol class="arabic simple" start="6">
-<li><p>Select a color scheme using the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> to visualize the share of people directly affected in the different regions (Hint: <code class="docutils literal notranslate"><span class="pre">Categorized</span></code>).</p>
+<li><p>Select a colour scheme using the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> to visualise the share of people directly affected in the different regions (Hint: <code class="docutils literal notranslate"><span class="pre">Categorized</span></code>).</p>
 <ul class="simple">
-<li><p>Play around with different modes to find a useful color/categorization scheme for the visualization.</p></li>
+<li><p>Play around with different modes to find a useful colour/categorisation scheme for the visualisation.</p></li>
 <li><p>Which regions are more and which are less directly affected? Are there any data gaps?</p></li>
 </ul>
 </li>
 <li><p>Export the map as a png (Hint: <code class="docutils literal notranslate"><span class="pre">Project,</span> <span class="pre">Import/Export,</span> <span class="pre">Export</span> <span class="pre">map</span> <span class="pre">to</span> <span class="pre">Image</span></code>).</p></li>
-<li><p>Repeat the previous steps, but this time visualize the indirectly affected people in each region (Hint: <code class="docutils literal notranslate"><span class="pre">Categorized</span></code>, column <code class="docutils literal notranslate"><span class="pre">Indirectly</span> <span class="pre">affected</span></code>).</p></li>
+<li><p>Repeat the previous steps, but this time visualise the indirectly affected people in each region (Hint: <code class="docutils literal notranslate"><span class="pre">Categorized</span></code>, column <code class="docutils literal notranslate"><span class="pre">Indirectly</span> <span class="pre">affected</span></code>).</p></li>
 <li><p>What differences can be observed between the regions directly affected and those indirectly affected?</p></li>
 </ol>
 </section>

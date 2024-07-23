@@ -236,7 +236,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 5 - Intermediate GIS Operations (Spatial and Non-Spatial Data Manipulation)</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="en_qgis_spatial_tools.html">Spatial Geodataprocessing</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_spatial_tools_ex1.html">Exercise 1: Healthsite distribution in Saint Louis region</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_spatial_tools_ex1.html">Exercise 1: Health site distribution in the Saint Louis region</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="en_qgis_non_spatial_tools.html">Non-Spatial Geodataprocessing</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -581,16 +581,16 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#malnutrition">7. Malnutrition</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-risk-caclulation">Part 2: Risk Caclulation</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-risk-calculation">Part 2: Risk Calculation</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Task</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normalization">1. Normalization</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisation">1. Normalisation</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#directions">2. Directions</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#weighting-of-indicators">3. Weighting of Indicators</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#vulnerability-score-index">4. Vulnerability Score / Index</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#prepare-risk-assessment">5. Prepare Risk Assessment</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-calculation">6. Risk Calculation</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#visualization-of-the-results">6. Visualization of the Results</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#automatization-of-the-process">7. Automatization of the Process</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisation-of-the-results">6. Visualisation of the Results</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#automating-the-process">7. Automating the Process</a></li>
 </ul>
 </li>
 </ul>
@@ -615,9 +615,9 @@ document.write(`
 </section>
 <section id="background">
 <h2>Background<a class="headerlink" href="#background" title="Permalink to this heading">#</a></h2>
-<p>In the context of the Forecast based Financing methodology the conduction of a robust risk assessment is a crucial step towards the development of an Early Action Protocol. A risk analysis serves to understand what kinds of disaster impacts can be expected from a particular type of hazard and to identify who and what is exposed and vulnerable to this hazard and why. By overlaying the information on exposure, vulnerability and lack of coping capacity, it will become clear which areas are predicted to be most severely impacted. These areas can then be targeted as priority areas for early action to ensure the most at-risk communities receive assistance before the event happens.
-The collection and processing of this information varies throughout different contexts but the calculation scheme to combine the information to a risk score remains consistent.</p>
-<p>Somalia is heaviliy exposed to droughts. We will showcase a risk assessment for a drought Early Action protocol.</p>
+<p>In the context of the Forecast based Financing methodology the conduction of a robust risk assessment is a crucial step towards the development of an Early Action Protocol. A risk analysis serves to understand what kinds of disaster impacts can be expected from a particular type of hazard and to identify who and what is exposed and vulnerable to this hazard and why. By overlaying the information on exposure, vulnerability, and coping capacity, it will become clear which areas are predicted to be most severely impacted. These areas can then be targeted as priority areas for early action to ensure the most at-risk communities receive assistance before the event happens.
+The collection and processing of this information varies based on the problem, but the calculation scheme to combine the information to a risk score remains consistent.</p>
+<p>Somalia is significantly exposed to droughts. We will showcase a risk assessment for a drought Early Action protocol.</p>
 </section>
 <section id="part-1-indicator-processing">
 <h2>Part 1: Indicator Processing<a class="headerlink" href="#part-1-indicator-processing" title="Permalink to this heading">#</a></h2>
@@ -642,15 +642,15 @@ The collection and processing of this information varies throughout different co
 <p>All files still have their original names. However, feel free to modify their names if necessary to identify them more easily.</p>
 </div>
 <ol class="arabic simple">
-<li><p>Load the Somalia district boundaries (admin level 2) (<code class="docutils literal notranslate"><span class="pre">som_admbnda_adm2_ocha_20230308.shp</span></code>) and the Healhsites Somalia (`WHO_health_sites.shp)  into QGIS.</p></li>
-<li><p>Make sure to that both datasets are in the same projection. In this case we have two different projections and we will reproject the <strong>Healthsites Somalia</strong> into EPSG 4326. Use the tool <code class="docutils literal notranslate"><span class="pre">Reproject</span> <span class="pre">layer</span></code> for this process. See the Wiki entry on <strong>Projections</strong> for further information.</p></li>
+<li><p>Load the Somalia district boundaries (admin level 2) (<code class="docutils literal notranslate"><span class="pre">som_admbnda_adm2_ocha_20230308.shp</span></code>) and Healhsites Somalia (`WHO_health_sites.shp)  into QGIS.</p></li>
+<li><p>Make sure to that both datasets are in the same projection. In this case we have two different projections and we will reproject  <strong>Healthsites Somalia</strong> into EPSG 4326. Use the tool <code class="docutils literal notranslate"><span class="pre">Reproject</span> <span class="pre">layer</span></code> for this process. See the Wiki entry on <strong>Projections</strong> for further information.</p></li>
 </ol>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>Before you start doing any GIS operations, <strong>always explore the data</strong>. Always check if the projections of the different layers are the same.</p>
 </div>
 <ol class="arabic simple" start="3">
-<li><p>In order to bring the information of the healthsites point layer into a usable indicator value we can now count the healthsites per district. We can use the tool <strong>Count points in polygon</strong> from the Processing Toolbox. Take a look on the tools description and the further features it brings. For our task we only have to specify polygon and point input layer, the count field name (e.g. <strong>Num_healtsites</strong>) and choose name and directory of the output layer. Explore the output.</p></li>
+<li><p>In order to bring the information of the health sites point layer into a usable indicator value we can now count the health sites per district. We can use the tool <strong>Count points in polygon</strong> from the Processing Toolbox. Take a look on the tools description and the further features it brings. For our task we only have to specify polygon and point input layer, the count field name (e.g. <strong>Num_healtsites</strong>) and choose name and directory of the output layer. Explore the output.</p></li>
 </ol>
 <figure class="align-default" id="count-points-polygon">
 <a class="reference internal image-reference" href="../../_images/Count_points_polygon.PNG"><img alt="../../_images/Count_points_polygon.PNG" src="../../_images/Count_points_polygon.PNG" style="width: 100%;" /></a>
@@ -659,12 +659,12 @@ The collection and processing of this information varies throughout different co
 </figcaption>
 </figure>
 <ol class="arabic simple" start="4">
-<li><p>Now we have the number of healthsites per district. Nevertheless, it would be interesting to know how many healthsites exist per 10.000 people. For this task we firstly need to know how many inhabitants has each district. We can proces this information by using the <strong>Zonal statistics</strong> tool from the Processing Toolbox. See the Wiki entry for <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html?highlight=zonal+statistics#basic-raster-operations">Zonal Statistics</a> for further information. Specify your inout layer (Output of step 3 e.g. <strong>Num_healtsites</strong>) and your raster layer (Worldpop Raster), specify the column prefix (e.g. _<strong>wpop</strong>) and select the statistics to caclulate (<strong>sum</strong>). For each distrcit all pixel values of the Worldpop Raster that fall inside of it will be summed up. Explore the output.</p></li>
+<li><p>Now we have the number of health sites per district. Nevertheless, it would be interesting to know how many health sites exist per 10.000 people. For this task we firstly need to know how many inhabitants has each district. We can process this information by using the <strong>Zonal statistics</strong> tool from the Processing Toolbox. See the Wiki entry for <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html?highlight=zonal+statistics#basic-raster-operations">Zonal Statistics</a> for further information. Specify your inout layer (Output of step 3 e.g. <strong>Num_healtsites</strong>) and your raster layer (Worldpop Raster), specify the column prefix (e.g. _<strong>wpop</strong>) and select the statistics to caclulate (<strong>sum</strong>). For each district all pixel values of the Worldpop Raster that fall inside of it will be summed up. Explore the output.</p></li>
 </ol>
 <figure class="align-default" id="czonal-statistics">
 <a class="reference internal image-reference" href="../../_images/en_qgis_modul_5_ex1_zonal_statistics.PNG"><img alt="../../_images/en_qgis_modul_5_ex1_zonal_statistics.PNG" src="../../_images/en_qgis_modul_5_ex1_zonal_statistics.PNG" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 145 </span><span class="caption-text">Summarize population counts per district</span><a class="headerlink" href="#czonal-statistics" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 145 </span><span class="caption-text">Summarise population counts per district</span><a class="headerlink" href="#czonal-statistics" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition hint">
@@ -672,12 +672,12 @@ The collection and processing of this information varies throughout different co
 <p>Throughout the indicator processing process you will have several interim results. Make sure to save them in a “temp” folder.</p>
 </div>
 <ol class="arabic simple" start="5">
-<li><p>Now we know the numbers of healthsites and the number of population per district. We are ready to caclulate our final indicator __Number of healthsites per 10.000 inhabitants.</p></li>
+<li><p>Now we know the numbers of health sites and the number of population per district. We are ready to calculate our final indicator __Number of health sites per 10.000 inhabitants.</p></li>
 </ol>
 <ul class="simple">
 <li><p>Open the attribute table of “Num_healthsites_wpop” (Output of step 4) and Open the <code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code> by clicking on the button <img alt="" src="../../_images/mActionCalculateField.png" />. By checkin the box for <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">a</span> <span class="pre">new</span> <span class="pre">field</span></code> we can conduct calculation and saving them right away in a new attribute column.</p></li>
 <li><p>define the output field name as “healthsites_10000” and set the <code class="docutils literal notranslate"><span class="pre">Type</span></code> to <code class="docutils literal notranslate"><span class="pre">Decimal</span> <span class="pre">Number(real)</span></code>.</p></li>
-<li><p>Now we will caclulate in the expression field the number of healthsites per 10.000 inhabitants:</p></li>
+<li><p>Now we will calculate in the expression field the number of health sites per 10.000 inhabitants:</p></li>
 </ul>
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span>(&quot;Num_healthsites&quot;/&quot;_wpopsum&quot;)*10000
 </pre></div>
@@ -688,12 +688,12 @@ The collection and processing of this information varies throughout different co
 <figure class="align-default" id="field-calculator">
 <a class="reference internal image-reference" href="../../_images/en_qgis_modul_5_ex1_field_calc.PNG"><img alt="../../_images/en_qgis_modul_5_ex1_field_calc.PNG" src="../../_images/en_qgis_modul_5_ex1_field_calc.PNG" style="width: 80%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 146 </span><span class="caption-text">Calculate healthsites per 10000 inhabitants</span><a class="headerlink" href="#field-calculator" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 146 </span><span class="caption-text">Calculate health sites per 10000 inhabitants</span><a class="headerlink" href="#field-calculator" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <section id="land-degradation">
 <h3>6. Land Degradation<a class="headerlink" href="#land-degradation" title="Permalink to this heading">#</a></h3>
-<p>A very important factor of areas vulnerable to drought is the siuation with regards to land degradation. It is an important factor not only for agriculture but also livestock herds, both as main sources of livelihood. We will try to add this information to our dataset:</p>
+<p>A very important factor for areas vulnerable to drought is the level of land degradation. It is an important factor not only for agriculture, but also for livestock herds, as both are primary sources of income. We will try to add this information to our dataset:</p>
 <p>-<a class="reference external" href="https://spatial.faoswalim.org/layers/geonode:SOM_Land_Degradation_FAOSWALIM#/">Somalia Land degradation</a></p>
 <figure class="align-default" id="id1">
 <a class="reference internal image-reference" href="../../_images/land_degradation.PNG"><img alt="../../_images/land_degradation.PNG" src="../../_images/land_degradation.PNG" style="width: 60%;" /></a>
@@ -701,12 +701,12 @@ The collection and processing of this information varies throughout different co
 <p><span class="caption-number">Fig. 147 </span><span class="caption-text">Land Degradation</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>You will see that we can only download the information as image. This is a very common case when working with open data. We would have to digitize the information in order to be able to use it for further processing. Find the digitized version in “Modul_5_Ex1_Part_1\land_degradation_somalia”.</p>
-<p>Explore the data. We have a column “LandD_CLas” which indicators the severity of land degradation from 0 to 3. We now want to join the respective land degradation class to its belongig district by considering the largest overlapping area.</p>
+<p>You will see that we can only download the information as an image. This is a very common case when working with open data. We have to digitise the information in order to be able to use it for further processing. Find the digitised version in “Modul_5_Ex1_Part_1\land_degradation_somalia”.</p>
+<p>Explore the data. We have a column “LandD_CLas” which indicators the severity of land degradation from 0 to 3. We now want to join each respective land degradation class to its correct district by calculating the largest overlapping area.</p>
 <ul class="simple">
 <li><p>Open the tool <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">attributes</span> <span class="pre">by</span> <span class="pre">location</span></code> from the Processing Toolbox.</p></li>
 <li><p>define <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Layer</span></code> (layer you want to enrich) and <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">Layer</span></code> (dataset with the additional information)</p></li>
-<li><p>select <code class="docutils literal notranslate"><span class="pre">ìnteresects</span></code> as geometric predicate and add only the <code class="docutils literal notranslate"><span class="pre">LandD_class</span></code> as field to add to our base layer.</p></li>
+<li><p>select <code class="docutils literal notranslate"><span class="pre">intersects</span></code> as geometric predicate and add only the <code class="docutils literal notranslate"><span class="pre">LandD_class</span></code> as field to add to our base layer.</p></li>
 <li><p>as <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">Type</span></code> set <code class="docutils literal notranslate"><span class="pre">Take</span> <span class="pre">attributes</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">feature</span> <span class="pre">with</span> <span class="pre">largest</span> <span class="pre">overlap</span> <span class="pre">only</span> <span class="pre">(one-to-one)</span></code></p></li>
 <li><p>Save as Layer</p></li>
 </ul>
@@ -720,13 +720,13 @@ The collection and processing of this information varies throughout different co
 </section>
 <section id="malnutrition">
 <h3>7. Malnutrition<a class="headerlink" href="#malnutrition" title="Permalink to this heading">#</a></h3>
-<p>Another very important indicator to describe vulnerability in a district is the acute malnutirion, especially in children under 5 years old.</p>
-<p>Dowload the data we need:
+<p>Another very important indicator to describe vulnerability in a district is acute malnutrition, especially for children under 5 years old.</p>
+<p>Download the data we need:
 <code class="docutils literal notranslate"><span class="pre">Somalia_malnutrion_district_2022_2023.xlsx</span></code>:<a class="reference external" href="https://data.humdata.org/dataset/somalia-acute-malnutrition-burden-and-prevalence?">Somalia: Acute Malnutrition</a></p>
-<p>Explore the data. In which resolution is the data avalaible? Do you have ideas how we can add it to our indicator dataset?</p>
-<p>*Save the Excel file as csv by clicking on <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">file</span> <span class="pre">as</span></code> and choosing <code class="docutils literal notranslate"><span class="pre">csv</span> <span class="pre">(delimiter-separated)</span></code></p>
+<p>Explore the data. In which resolution is the data available? Do you have ideas as to how we can add it to our indicator dataset?</p>
+<p>*Save the Excel file as a CSV by clicking on <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">file</span> <span class="pre">as</span></code> and choosing <code class="docutils literal notranslate"><span class="pre">CSV</span> <span class="pre">(delimiter-separated)</span></code></p>
 <ul class="simple">
-<li><p>Load the csv-file into you QGIS by drag and drop</p></li>
+<li><p>Load the CSV file into you QGIS by drag and drop</p></li>
 <li><p>Open the tool <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">attributes</span> <span class="pre">by</span> <span class="pre">field</span> <span class="pre">value</span></code> from the Processing Toolbox</p></li>
 <li><p>specify our two datasets we want to join as well as the common field available for joining (<code class="docutils literal notranslate"><span class="pre">ADM2_EN</span></code> and <code class="docutils literal notranslate"><span class="pre">adm2name</span></code>)</p></li>
 <li><p>as <code class="docutils literal notranslate"><span class="pre">join</span> <span class="pre">type</span></code> set <code class="docutils literal notranslate"><span class="pre">Take</span> <span class="pre">attributes</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">first</span> <span class="pre">matching</span> <span class="pre">feature</span> <span class="pre">only</span> <span class="pre">(one-to-one)</span></code></p></li>
@@ -741,7 +741,7 @@ The collection and processing of this information varies throughout different co
 <p>In the Log file you will get a message: “6 feature(s) from input layer could not be matched”</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
-<p>It can occur, that after the import of the csv. file the column headers of the attribute table are not correctly named (instead with “field 1”, “field 2” etc.). The information which field is displayed can be located below the header in this case.</p>
+<p>It is possible that the CSV file the column headers of the attribute table will not have the correct names (instead they may have “field 1”, “field 2” etc.) after importing. In this case, the correct field names is usually located below the header.</p>
 </div>
 <figure class="align-default" id="id2">
 <a class="reference internal image-reference" href="../../_images/en_qgis_module_5_ex1_error.PNG"><img alt="../../_images/en_qgis_module_5_ex1_error.PNG" src="../../_images/en_qgis_module_5_ex1_error.PNG" style="width: 100%;" /></a>
@@ -749,60 +749,60 @@ The collection and processing of this information varies throughout different co
 <p><span class="caption-number">Fig. 150 </span><span class="caption-text">Log File Join Attribute by Field Value</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Open the attribute tables from both, your output layer and the csv file in order to find out the roots of the problem. In the output layer doble-click on <code class="docutils literal notranslate"><span class="pre">affunderfive</span></code> and bring <code class="docutils literal notranslate"><span class="pre">NULL</span></code> Values to the top. Check the joining attribute “ADM2_EN” and compare it with the joining attribute “adm2name” from the csv-file.
-The Spelling of the distrcit anmes differs. Since we take the admin-2-boundaries as base layer for all indicators we can now adapt the names in the csv file.
-You can edit the names in 6 cases in the Attribute Table of the csv-file by toggling editing mode, or you can simply edit the csv file in excel an load it again into QGIS.</p>
+<p>Open the attribute tables from both, your output layer and the CSV file in order to find out the roots of the problem. In the output layer double-click on <code class="docutils literal notranslate"><span class="pre">affunderfive</span></code> and bring <code class="docutils literal notranslate"><span class="pre">NULL</span></code> Values to the top. Check the joining attribute “ADM2_EN” and compare it with the joining attribute “adm2name” from the CSV file.
+The Spelling of the district names differs. Since we are using the admin-2-boundaries as the base layer for all indicators, we can now adapt the names in the CSV file.
+You can edit the names in 6 cases in the Attribute Table of the CSV file by toggling editing mode, or you can manually edit the CSV file in Excel and then load it into QGIS.</p>
 <ul class="simple">
 <li><p>Make sure to call your final layer “vulnerability_districts”.</p></li>
 </ul>
 </section>
 </section>
-<section id="part-2-risk-caclulation">
-<h2>Part 2: Risk Caclulation<a class="headerlink" href="#part-2-risk-caclulation" title="Permalink to this heading">#</a></h2>
+<section id="part-2-risk-calculation">
+<h2>Part 2: Risk Calculation<a class="headerlink" href="#part-2-risk-calculation" title="Permalink to this heading">#</a></h2>
 <section id="id3">
 <h3>Task<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
 <p>In the second part of the exercise we will showcase the steps how to come from indicators to a risk analysis.</p>
 <p>You can find all the data for the second part of the exercise in the “Modul_5_Ex1_Part_2”.
-Download the data folder for the second part of the exercise: “Modul_5_Ex1_Part_2”. We processed the vulnerabilty layer in the first part of the exercise; simplified exposure and lack of coping capacity layers have been prepared in advance for this exercise. These layers have only 3 to 4 indicators for complexity reasons. See below an example of indicators that were used for Somnlia:</p>
+Download the data folder for the second part of the exercise: “Modul_5_Ex1_Part_2”. We processed the vulnerability layer in the first part of the exercise; simplified exposure and lack of coping capacity layers have been prepared in advance for this exercise. These layers have only 3 to 4 indicators for complexity reasons. See below an example of indicators that were used for Somalia:</p>
 <figure class="align-default" id="indicators-risk-assessment">
 <a class="reference internal image-reference" href="../../_images/Indicators_Rsik_Assessment_Somalia.png"><img alt="../../_images/Indicators_Rsik_Assessment_Somalia.png" src="../../_images/Indicators_Rsik_Assessment_Somalia.png" style="width: 80%;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 151 </span><span class="caption-text">Indicators Risk Assessment</span><a class="headerlink" href="#indicators-risk-assessment" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<section id="normalization">
-<h4>1. Normalization<a class="headerlink" href="#normalization" title="Permalink to this heading">#</a></h4>
-<p>For further caclulations with the indicators we need to make them comparable. For this reason we normalize them to a range of 0-1.</p>
-<p><span class="math notranslate nohighlight">\( Normalized\ Value\ = \frac{value\ -\ min value}{max\ value \ - \ min } \)</span></p>
+<section id="normalisation">
+<h4>1. Normalisation<a class="headerlink" href="#normalisation" title="Permalink to this heading">#</a></h4>
+<p>In order to perform further calculation on the indicators, we need to make them comparable. To do this, we can normalise them to be within a range of 0-1.</p>
+<p><span class="math notranslate nohighlight">\( Normalised\ Value\ = \frac{value\ -\ min value}{max\ value \ - \ min } \)</span></p>
 <ul class="simple">
 <li><p>Open the attribute table of “vulnerability_districts” and Open the <code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code> by clicking on the button <img alt="" src="../../_images/mActionCalculateField.png" />. By checkin the box for <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">a</span> <span class="pre">new</span> <span class="pre">field</span></code> we can conduct calculation and saving them right away in a new attribute column.</p></li>
 <li><p>start with the first indicator <code class="docutils literal notranslate"><span class="pre">LandD_class</span></code></p></li>
 <li><p>define the output field name as “LandD_class_norm” and set the <code class="docutils literal notranslate"><span class="pre">Type</span></code> to <code class="docutils literal notranslate"><span class="pre">Decimal</span> <span class="pre">Number(real)</span></code>.</p></li>
-<li><p>Now we will caclulate in the expression field the normalization of the indicator:</p></li>
+<li><p>Now we will calculate in the expression field the normalisation of the indicator:</p></li>
 </ul>
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span>(&quot;LandD_Clas&quot; - minimum( &quot;LandD_Clas&quot; ))/( maximum( &quot;LandD_Clas&quot;) - minimum( &quot;LandD_Clas&quot; ))
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>When you are done click <img alt="" src="../../_images/mActionSaveEdits.png" /> to save your edits and switch off the editing mode by again clicking on <img alt="" src="../../_images/mActionToggleEditing.png" />(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing">Wiki Video</a>).</p></li>
+<li><p>When you are done click <img alt="" src="../../_images/mActionSaveEdits.png" /> to save your edits and switch off the editing mode by clicking on <img alt="" src="../../_images/mActionToggleEditing.png" />(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing">Wiki Video</a>).</p></li>
 </ul>
 <figure class="align-default" id="id4">
 <a class="reference internal image-reference" href="../../_images/en_qgis_modul_5_ex1_Part2_normalization.PNG"><img alt="../../_images/en_qgis_modul_5_ex1_Part2_normalization.PNG" src="../../_images/en_qgis_modul_5_ex1_Part2_normalization.PNG" style="width: 80%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 152 </span><span class="caption-text">Normalization of indicators</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 152 </span><span class="caption-text">Normalisation of indicators</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
 <li><p>Repeat this step for the other indicators</p></li>
-<li><p>For each indicator you have now the original column and the normalized column.</p></li>
+<li><p>For each indicator you have now the original column and the normalised column.</p></li>
 </ul>
 </section>
 <section id="directions">
 <h4>2. Directions<a class="headerlink" href="#directions" title="Permalink to this heading">#</a></h4>
-<p>The direction indicates if an indicator follows the predefined logic: “the higher the value, the worse the circumstances” meaning that higher values would result in a higher risk. The logic is adapted for all three dimensions, since it is generally logical to think about high values = high risk. If a respective indicator follows the logic the direction would be 1, if it does not, the direction would be = -1.</p>
+<p>The direction indicates whether or not an indicator follows the predefined logic: “the higher the value, the worse the circumstances”, meaning that higher values imply a higher risk. The logic is adapted for all three dimensions, since it is generally intuitive to think that high values = high risk. If a respective indicator follows this logic, the direction would be 1; if it does not, the direction would be = -1.</p>
 <ul class="simple">
 <li><p>In order to understand the directions of our indicators we first have to assign them to one of the dimensions (exposure, vulnerability, coping capacity).</p></li>
-<li><p>To which dimension would you assign the processed indicators and what are their direction?</p></li>
+<li><p>To which dimension would you assign the processed indicators and what would their direction be?</p></li>
 </ul>
 <p>Depending on the direction the next step will vary:</p>
 <p>If the <strong>direction is 1</strong> (indicating a positive weight), the formula is straightforward:</p>
@@ -810,10 +810,10 @@ Download the data folder for the second part of the exercise: “Modul_5_Ex1_Par
 <p>If the <strong>direction is -1</strong> (indicating a negative weight), the formula adjusts the value by subtracting it from 1 before applying the weight:</p>
 <p><span class="math notranslate nohighlight">\( weighted=   (1 - value)  \times weight \)</span></p>
 <p>The second formula inverts the value <span class="math notranslate nohighlight">\((1 - value)\)</span> before applying the weight, resulting in a different calculation for variables with negative weights.</p>
-<p>We will not go further into this in this training but you can find more information <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_risk_assessment_plugin.html#risk">here</a>.</p>
+<p>We will not go further into this in this module but you can find more information <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_risk_assessment_plugin.html#risk">here</a>.</p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
-<p>It is recommended to properly check the logic of each indicator. Often the indicators of a certain dimension follow the same logic but there are always exceptions. After the directions have been applied to the data, we can speak of “lack of coping capacity” instead of “coping capacity” since we force the respective indicators in another direction following the predefined overarching logic (the higher the value = the worse the circumstances).</p>
+<p>It is recommended to properly check the logic of each indicator. Often the indicators of a certain dimension follow the same logic but there are always exceptions. After the directions have been applied to the data, we can using the language “lack of coping capacity” instead of “coping capacity” since we have forced the respective indicators to another direction following the predefined logic (the higher the value = the worse the circumstances).</p>
 </div>
 </section>
 <section id="weighting-of-indicators">
@@ -845,7 +845,7 @@ Download the data folder for the second part of the exercise: “Modul_5_Ex1_Par
 </tbody>
 </table>
 <ul class="simple">
-<li><p>In the attribute table of your layer we can calculate the weighted indicators for each normalized indicators, respectively. For this we have to follow the same steps as above: Open the <code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code> by clicking on the button <img alt="" src="../../_images/mActionCalculateField.png" />, create a new field with the suffix “_weighted” and in the expression field.</p></li>
+<li><p>In the attribute table of your layer we can calculate the weighted indicators for each normalised indicator. For this we have to follow the same steps as above: Open the <code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code> by clicking on the button <img alt="" src="../../_images/mActionCalculateField.png" />, and create a new field with the suffix “_weighted” in the expression field.</p></li>
 </ul>
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span>&quot;LandD_clas_norm&quot; * 0.75
 </pre></div>
@@ -857,7 +857,7 @@ Download the data folder for the second part of the exercise: “Modul_5_Ex1_Par
 </figcaption>
 </figure>
 <ul class="simple">
-<li><p>For each indicator we now have the normalized and weighted version:</p></li>
+<li><p>For each indicator we now have the normalised and weighted version:</p></li>
 </ul>
 <figure class="align-default" id="attribute-table-with-norm-and-weighted-indicators">
 <a class="reference internal image-reference" href="../../_images/en_qgis_modul_5_ex1_part2_weighted_attribute.PNG"><img alt="../../_images/en_qgis_modul_5_ex1_part2_weighted_attribute.PNG" src="../../_images/en_qgis_modul_5_ex1_part2_weighted_attribute.PNG" style="width: 100%;" /></a>
@@ -868,9 +868,9 @@ Download the data folder for the second part of the exercise: “Modul_5_Ex1_Par
 </section>
 <section id="vulnerability-score-index">
 <h4>4. Vulnerability Score / Index<a class="headerlink" href="#vulnerability-score-index" title="Permalink to this heading">#</a></h4>
-<p>We are now ready to calculate the vulnerability score for each distrcit:</p>
+<p>We are now ready to calculate the vulnerability score for each district:</p>
 <ul class="simple">
-<li><p>Open the attribute table -&gt; open the <code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code><img alt="" src="../../_images/mActionCalculateField.png" /> and create a new field with the name “vulnerability_score” and field type “Decimal Numnber (real)”. In the expression window sum up all weighted indicator values:</p></li>
+<li><p>Open the attribute table -&gt; open the <code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code><img alt="" src="../../_images/mActionCalculateField.png" /> and create a new field with the name “vulnerability_score” and field type “Decimal Number (real)”. In the expression window, sum up all weighted indicator values:</p></li>
 </ul>
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span>(&quot;LandD_clas_weigthed&quot;  +  &quot;perc_elderly_weighted&quot;  +  &quot;affunderfive_weighted&quot;) / 3 
 </pre></div>
@@ -880,7 +880,7 @@ Download the data folder for the second part of the exercise: “Modul_5_Ex1_Par
 <h4>5. Prepare Risk Assessment<a class="headerlink" href="#prepare-risk-assessment" title="Permalink to this heading">#</a></h4>
 <p>In order to calculate the risk we have to bring our 3 dimension exposure, vulnerability and coping capacity together.</p>
 <ul class="simple">
-<li><p>Right click om one of the layer and select <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; Go the<code class="docutils literal notranslate"><span class="pre">Joins</span></code> tab</p></li>
+<li><p>Right click om one of the layer and select <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; Go the <code class="docutils literal notranslate"><span class="pre">Joins</span></code> tab</p></li>
 <li><p>Click on the <code class="docutils literal notranslate"><span class="pre">+</span></code> button, add a new join and select the layer you want to join. Define “admin2Name” as <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">Field</span></code>:</p></li>
 </ul>
 <figure class="align-default" id="join-layers">
@@ -891,12 +891,12 @@ Download the data folder for the second part of the exercise: “Modul_5_Ex1_Par
 </figure>
 <ul class="simple">
 <li><p>Right click on the layer -&gt; <code class="docutils literal notranslate"><span class="pre">Export</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">feature</span> <span class="pre">as</span></code> and save the layer as “risk” layer into your temp folder.</p></li>
-<li><p>We will now work with the “risk” layer: Delete all fields but the normalized scores: Open the Attribute Table of your risk layer <code class="docutils literal notranslate"><span class="pre">Toggle</span> <span class="pre">editing</span> <span class="pre">mode</span> </code><img alt="" src="../../_images/mActionToggleEditing.png" /> -&gt; <code class="docutils literal notranslate"><span class="pre">Delete</span> <span class="pre">field</span></code> <img alt="" src="../../_images/mActionDeleteAttribute.png" /> and select all the indicator fields. In the end your layer look should like this:</p></li>
+<li><p>We will now work with the “risk” layer: Delete all fields but the normalised scores: Open the Attribute Table of your risk layer <code class="docutils literal notranslate"><span class="pre">Toggle</span> <span class="pre">editing</span> <span class="pre">mode</span> </code><img alt="" src="../../_images/mActionToggleEditing.png" /> -&gt; <code class="docutils literal notranslate"><span class="pre">Delete</span> <span class="pre">field</span></code> <img alt="" src="../../_images/mActionDeleteAttribute.png" /> and select all the indicator fields. In the end your layer look should like this:</p></li>
 </ul>
-<figure class="align-default" id="risk-layer-attribute-table-normalized-scores">
+<figure class="align-default" id="risk-layer-attribute-table-normalised-scores">
 <a class="reference internal image-reference" href="../../_images/en_qgis_modul_5_ex1_part2_risklayer_attributetable.PNG"><img alt="../../_images/en_qgis_modul_5_ex1_part2_risklayer_attributetable.PNG" src="../../_images/en_qgis_modul_5_ex1_part2_risklayer_attributetable.PNG" style="width: 70%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 156 </span><span class="caption-text">Risk Layer Attribute Table normalized Scores</span><a class="headerlink" href="#risk-layer-attribute-table-normalized-scores" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 156 </span><span class="caption-text">Risk Layer Attribute Table normalised Scores</span><a class="headerlink" href="#risk-layer-attribute-table-normalised-scores" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -906,7 +906,7 @@ Download the data folder for the second part of the exercise: “Modul_5_Ex1_Par
 <p><span class="math notranslate nohighlight">\( susceptibility =   \sqrt vulnerability  \times lack\ of\ coping\ capacity \)</span></p>
 <p><span class="math notranslate nohighlight">\( risk=   \sqrt exposure  \times susceptibility \)</span></p>
 <ul class="simple">
-<li><p>Open the Attribute table -&gt; <code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code><img alt="" src="../../_images/mActionCalculateField.png" /> and create a field “Susceptibility” and type in the formula. Do the same creating a field named “risk” and the respective expression.</p></li>
+<li><p>Open the Attribute table -&gt; <code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code><img alt="" src="../../_images/mActionCalculateField.png" /> and create a field “Susceptibility” and type in the formula. Do the same to create a field called “risk” and employ the appropriate expression.</p></li>
 </ul>
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span>sqrt(&quot;Susceptibility&quot; * &quot;exposure_norm&quot;)
 </pre></div>
@@ -919,13 +919,13 @@ Download the data folder for the second part of the exercise: “Modul_5_Ex1_Par
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The geometric mean is a specific type of average that is calculated by multiplying together all the values in a dataset and then taking the nth root of the product, where n is the number of values. For two values, the geometric mean is the square root of their product. For three values, it’s the cube root, and so on.</p>
+<p>The geometric mean is a specific type of average that is calculated by multiplying together all the values in a dataset and then taking the nth root of the product, where n is the number of values. For two values, the geometric mean is the square root of their product. For three values, it is the cube root, and so on.</p>
 </div>
 </section>
-<section id="visualization-of-the-results">
-<h4>6. Visualization of the Results<a class="headerlink" href="#visualization-of-the-results" title="Permalink to this heading">#</a></h4>
+<section id="visualisation-of-the-results">
+<h4>6. Visualisation of the Results<a class="headerlink" href="#visualisation-of-the-results" title="Permalink to this heading">#</a></h4>
 <ul class="simple">
-<li><p>Right cklick on the “risk” layer -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Symbology</span></code></p></li>
+<li><p>Right click on the “risk” layer -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Symbology</span></code></p></li>
 <li><p>In the down left corner click on <code class="docutils literal notranslate"><span class="pre">Style</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code></p></li>
 <li><p>In the new window click on the three points <img alt="" src="../../_images/Three_points.png" />. Navigate to the “Map Template” folder and select the file <strong>“somalia_risk_assessment_style.qml”</strong>.</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Then click on <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code></p></li>
@@ -936,8 +936,8 @@ Download the data folder for the second part of the exercise: “Modul_5_Ex1_Par
 <li><p>Open a new print layout by clicking on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Print</span> <span class="pre">Layout</span></code> -&gt; enter the name of your current Project e.g “2024_01”.</p></li>
 <li><p>Go the the <code class="docutils literal notranslate"><span class="pre">Ex_Part_2</span></code> folder and drag and drop the file <code class="docutils literal notranslate"><span class="pre">maps_somalia_template_risk_assessment.qpt</span></code> in the print layout</p></li>
 <li><p>Change the date to the current date by clicking on “Further map info…” in the items panel. Click on the <code class="docutils literal notranslate"><span class="pre">Item</span> <span class="pre">Properties</span></code> tab and scroll down. Here you can change the date in the <code class="docutils literal notranslate"><span class="pre">Main</span> <span class="pre">Properties</span></code> field.</p></li>
-<li><p>If necessary, adjust the lgend by clicking on the legend in the  <code class="docutils literal notranslate"><span class="pre">Item</span> <span class="pre">Properties</span></code> tab and scroll down until you see the <code class="docutils literal notranslate"><span class="pre">Legend</span> <span class="pre">items</span></code> field. If it is not there check if you have to open the dropdown. Make sure <code class="docutils literal notranslate"><span class="pre">Auto</span> <span class="pre">update</span></code> is not checked.</p></li>
-<li><p>Remove all itemes in the legend be clicking on the item and then on the red minus icon below.</p></li>
+<li><p>If necessary, adjust the legend by clicking on the legend in the  <code class="docutils literal notranslate"><span class="pre">Item</span> <span class="pre">Properties</span></code> tab and scroll down until you see the <code class="docutils literal notranslate"><span class="pre">Legend</span> <span class="pre">items</span></code> field. If it is not there check if you have to open the dropdown. Make sure <code class="docutils literal notranslate"><span class="pre">Auto</span> <span class="pre">update</span></code> is not checked.</p></li>
+<li><p>Remove all items in the legend be clicking on the item and then on the red minus icon below.</p></li>
 </ul>
 <figure class="align-default" id="possible-map-result">
 <a class="reference internal image-reference" href="../../_images/en_qgis_mondul_5_ex1_possible_result.PNG"><img alt="../../_images/en_qgis_mondul_5_ex1_possible_result.PNG" src="../../_images/en_qgis_mondul_5_ex1_possible_result.PNG" style="width: 90%;" /></a>
@@ -946,8 +946,8 @@ Download the data folder for the second part of the exercise: “Modul_5_Ex1_Par
 </figcaption>
 </figure>
 </section>
-<section id="automatization-of-the-process">
-<h4>7. Automatization of the Process<a class="headerlink" href="#automatization-of-the-process" title="Permalink to this heading">#</a></h4>
+<section id="automating-the-process">
+<h4>7. Automating the Process<a class="headerlink" href="#automating-the-process" title="Permalink to this heading">#</a></h4>
 <p>HeiGIT has developed a a QGIS Risk Assessment Plugin in order to simplify this process and safe time.
 You can find more information about the risk methodology and the usage of the plugin <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_risk_assessment_plugin.html#risk-assessment-qgis-plugin">here</a>.</p>
 <p>In order to try out the plugin and see the result, use the provided input data in your folder: “Modul_5_Ex1_Part_2\Input data\QGIS Plugin Risk Assessment\input”</p>
@@ -1030,16 +1030,16 @@ You can find more information about the risk methodology and the usage of the pl
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#malnutrition">7. Malnutrition</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-risk-caclulation">Part 2: Risk Caclulation</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-risk-calculation">Part 2: Risk Calculation</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Task</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normalization">1. Normalization</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisation">1. Normalisation</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#directions">2. Directions</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#weighting-of-indicators">3. Weighting of Indicators</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#vulnerability-score-index">4. Vulnerability Score / Index</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#prepare-risk-assessment">5. Prepare Risk Assessment</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-calculation">6. Risk Calculation</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#visualization-of-the-results">6. Visualization of the Results</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#automatization-of-the-process">7. Automatization of the Process</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisation-of-the-results">6. Visualisation of the Results</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#automating-the-process">7. Automating the Process</a></li>
 </ul>
 </li>
 </ul>

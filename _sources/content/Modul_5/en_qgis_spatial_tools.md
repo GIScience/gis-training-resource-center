@@ -1,17 +1,17 @@
 # Spatial Geodataprocessing
 
 #### Introduction:
-Spatial Geodataprocessing utilises spatial information to extract new and additional meaning from GIS data. This data processing is particularly important in humanitarian work and the planning of aid operations. For instance, the overlay operation __Clip__ can be employed to extract specific areas of interest from multiple layers, allowing us to focus our attention where it is most needed. Meanwhile, the __Dissolve__ operation allows us to simplify complex datasets, revealing broader trends and patterns that inform our decision-making process. Using __Buffer__, we can create zones around features to help identify vulnerable areas and plan evacuation routes in the event of a flooding event. Additionally, __Spatial Joins__ can enrich datasets by incorporating additional information from related layers. They can be crucial for understanding the context of a crisis and tailoring our response accordingly. Similarly, __Spatial Selections__ enable us to target specific features based on their spatial relationship with other elements, facilitating focused interventions.
+Spatial Geodataprocessing uses spatial information to extract new meaning from GIS data. This data processing is particularly important in humanitarian work and planning aid operations. For instance, the overlay operation __Clip__ can be employed to extract specific areas of interest from multiple layers, allowing us to focus our attention where it is most needed. Similarly, the __Dissolve__ operation allows us to simplify complex datasets, revealing broader trends and patterns that inform our decision-making process. Using __Buffer__, we can create zones around features to help identify vulnerable areas and plan evacuation routes in the event of a flooding event. Additionally, __Spatial Joins__ can enrich datasets by incorporating additional information from related layers. They can be crucial for understanding the context of a crisis and tailoring our response accordingly. Finally, __Spatial Selections__ enable us to target specific features based on their spatial relationship with other elements, facilitating focused interventions.
 
-In this section, we will explore overlay operations, focusing particularly on the operations of __Clip__, __Dissolve__, and __Buffer__. These operations enable us to combine geometries from two layers in various ways. In addition to these, we will cover __Spatial joins__ and __Spatial selections__ in this section. Spatial joins offer opportunities to enhance the attributes of the input layer by incorporating additional information from the join layer, utilizing their spatial relationship. These relationships can also be used to select features from an input layer based on their location in comparison to another layer. All of these operations make use of the spatial information in the provided input data to either enrich the data or perform various analyses.
+In this section, we will explore overlay operations, focusing particularly on the operations of __Clip__, __Dissolve__, and __Buffer__. These operations allow us to combine geometries from two layers in various ways. In addition to these, we will cover __Spatial joins__ and __Spatial selections__. Spatial joins offer opportunities to enhance the attributes of the input layer by incorporating additional information from the join layer, base on their spatial relationship. These relationships can also be used to select features from an input layer based on their location in relation to another layer. All of these operations make use of the spatial information in the provided input data to either enrich the data or perform various analyses.
 
 ## Clip
 
-The ![](/fig/mAlgorithmClip.png) `Clip` tool is used to cut a vector layer with the boundaries of another polygon layer. It keeps only the parts of the features in the input layer that are inside the polygons of the overlay layer, creating a refined dataset. While the core attributes of the features remain the same, some properties, like area or length, may change after the clipping operation. If you've stored these properties as attributes, you might need to update them manually.
+The ![](/fig/mAlgorithmClip.png) `Clip` tool is used to cut a vector layer using the boundaries of another polygon layer. It keeps only the parts of the features in the input layer that are inside the polygons of the overlay layer, producing a refined dataset. While the core attributes of the features remain the same, some properties, like area or length, may change after the clipping operation. If you've stored these properties as attributes, you might need to update them manually.
 
-The tool has two different input option:
+The tool has two different input options:
 * __Input layer__: Layer from which the selection is clipped
-* __Overlay layer__: Area of interest that the input layer will be clipped to.
+* __Overlay layer__: Area of interest to which the input layer will be clipped
 
 ```{figure} /fig/en_clip_sudan.PNG
 ---
@@ -20,7 +20,7 @@ name: en_clip_sudan
 ---
 Screenshot of the Clip tool with the input data
 ```
-Information on road infrastructure for humanitarian aid operations is of great importance and can be easily retrieved from open-source data sources like OpenStreetMap. However, this information is often included in extensive datasets that contain a significant amount of irrelevant details for specific operations, or it covers a lot more area than is necessary for the operation. To make working with this data more efficient, it is common practice to clip the data to the area of interest. In addition to clipping, data can often be filtered, as described in the first part of Module 5.
+Information on road infrastructure for humanitarian aid operations is of great importance and can be easily retrieved from open-source data sources like OpenStreetMap. However, this information is often included in extensive datasets that contain a significant amount of irrelevant details for specific operations or it covers a lot more area than is necessary for the operation. To make working with this data more efficient, it is common practice to clip the data to the area of interest. In addition to clipping, data can often be filtered, as described in the first part of Module 5.
 
 <!--here it is not clear what the first part of module 5 is, maybe add link-->
 
@@ -41,7 +41,7 @@ COMMENT: CAN BE REMOVED?
 width: 75%
 name: en_screenshot_hot_export_tool
 ---
-Screenshot of the HOT Export tool to download your OSM data
+Screenshot of the HOT Export tool used to download your OSM data
 ```
 
 2. Filter the layer by using the __query builder__ to only show __primary and residential roads__ ("highway" = 'primary' OR "highway" = 'residential')
@@ -55,7 +55,7 @@ Screenshot of the HOT Export tool to download your OSM data
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_clip_roads.mp4"></video>
 ````
 
-In addition to the standard QGIS operation __Clip__, there are two other, more advanced tools for performing clipping processes. These tools are GDAL operations, which enable the definition of the clipping extent. This extent can be either a specific area or a mask layer. The second option is quite similar to the standard clipping process provided by QGIS.
+In addition to the standard QGIS operation __Clip__, there are two other more advanced tools for performing clipping processes. These tools are GDAL operations, which enable the definition of the clipping extent. This extent can be either a specific area or a mask layer. The second option is quite similar to the standard clipping process provided by QGIS.
 
 ```{figure} /fig/en_gdal_clipping_tools.PNG
 ---
@@ -104,7 +104,7 @@ Screenshot of the tool Clip vector by mask layer
 ::::
 
 ## Buffer
-The concept of ![](/fig/mAlgorithmBuffer.png) __buffering__ in QGIS for vector data, refers to the process of creating a new polygon layer with areas that represent a __certain distance__ or __buffer around existing vector features__. This buffer zone is typically uniform and extends outward from the original features, making it useful for various spatial analyses and mapping applications. Examples for such analyses could be the creation of buffer zones to protect the environment, analyse greenbelts around residential areas or create risk areas for natural disasters. Buffer can be created around points, lines and polygons as shown in the figure below.
+The concept of ![](/fig/mAlgorithmBuffer.png) __buffering__ in QGIS for vector data, refers to the process of creating a new polygon layer with areas that represent a __certain distance__ or __buffer around existing vector features__. This buffer zone is typically uniform and extends outward from the original features, making it useful for various spatial analyses and mapping applications. Examples for such analyses could be: creating of buffer zones to protect the environment, analysing greenbelts around residential areas, or creating risk areas for natural disasters. Buffer can be created around points, lines, and polygons as shown in the figure below.
 
 ```{figure} /fig/en_buffer_point_line_polygon.png
 ---
@@ -119,7 +119,7 @@ There are several variations in buffering. The __buffer distance__ or __buffer s
 If you are trying to make a buffer on a layer with a Geographical Coordinate System, processing will warn you and suggest to reproject the layer to a __metric Coordinate System__.
 ```
 
-In the case of humanitarian action, buffering can be used to create a map which provides information about the coverage of health sites in the distance of 10 km. The health sites are points and can be buffered with 10 km. In a next step, the results can be dissolved if two buffer zones overlap and create a homogoneous area. This examples will be done in the next step.
+In the case of humanitarian action, buffering can be used to create a map which provides information about the coverage of health sites in the distance of 10 km. The health sites are points and can be buffered with 10 km. In the next step, the results can be dissolved if two buffer zones overlap to create a homogoneous area. These examples will be done in the next steps.
 
 ### Exercise: Create 10km buffer around health centres
 
@@ -143,7 +143,7 @@ In the case of humanitarian action, buffering can be used to create a map which 
 ````
 
 ## Dissolve
-The ![](/fig/mAlgorithmDissolve.png) `Dissolve` operation was already mentioned in the later part of the previous exercise. The dissolve tool combines features in a vector layer to make new ones. You can pick one or more attributes to group together features that share the same value for those attributes. Alternatively, you can combine all features into one. The tool will convert the shapes into multi-geometries, and if you're working with polygons, it'll remove shared boundaries between them.
+The ![](/fig/mAlgorithmDissolve.png) `Dissolve` operation was already mentioned in the later part of the previous exercise. The dissolve tool combines features in a vector layer to make new ones. You can pick one or more attributes to group together features that share the same value for those attributes. Alternatively, you can combine all features into one. The tool will convert the shapes into multi-geometries and, if you're working with polygons, it will remove shared boundaries between them.
 
 If you turn on the "Keep disjoint features separate" option when running the tool, it'll make sure that features or parts that don't overlap or touch each other are saved as separate features instead of being part of one big feature. This allows you to create several vector layers.
 
@@ -167,7 +167,7 @@ Tests whether the geometry of the two layers intersects with one another. Return
 :::
 
 :::{tab-item} Contain
-Returns 1 (true) if and only if no points of b lie in the exterior of a, and at least one point of the interior of b lies in the interior of a. In the picture, no circle is returned, but the rectangle would be if you would look for it the other way around, as it contains circle 1 completely. This is the opposite of are within.
+Returns 1 (true) if and only if no points of b lie in the exterior of a, and at least one point of the interior of b lies in the interior of a. In the picture, no circle is returned, but the rectangle would be if you would look for it the other way around, as it contains circle 1 completely. This is the opposite of "are within".
 :::
 
 :::{tab-item} Disjoint
@@ -204,14 +204,14 @@ name: spatial_relations
 Looking for spatial relations between layers <br /> (Source: [QGIS Documentation](https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html?highlight=join%20attributes%20location), Version 3.28)
 ```
 
-QGIS provides a range of tools that allow users to delve into spatial relationships and leverage them for enhancing their datasets.
+QGIS provides a range of tools that allow users to delve into spatial relationships and leverage them to enhance their datasets.
 
 ::::{tab-set}
 
 :::{tab-item} Join attributes by location
-This tool takes an input vector layer and creates a new vector layer that is an extended version of the input, with additional attributes in its attribute table.
+This tool takes an input vector layer and creates a new vector layer that is an extended version of the input with additional attributes in its attribute table.
 
-The additional attributes and their values are taken from a __second vector layer__. For this layer a __spatial criteria__ is applied to select the values from it that are added to each feature from the first layer.
+The additional attributes and their values are taken from a __second vector layer__. For this layer, a __spatial criteria__ is applied to select the values from it that are added to each feature from the first layer.
 
 ```{figure} /fig/en_join_attributes_by_location.PNG
 ---
@@ -237,9 +237,9 @@ Screenshot of the tool Join attributes by location (summary)
 :::
 
 :::{tab-item} Join attributes by nearest
-It takes an input vector layer and uses this information to create a new vector layer. The new layer incorporates additional fields in its attribute table, and these supplementary attributes are obtained from a second vector layer. The joining of features occurs by __identifying the closest features__ from each of these layers.
+It takes an input vector layer and uses this information to create a new vector layer. The new layer incorporates additional fields in its attribute table and these supplementary attributes are obtained from a second vector layer. The joining of features occurs by __identifying the closest features__ from each of these layers.
 
-By default, this operation connects each feature with its nearest counterpart. However, it also offers the flexibility to join with the k-nearest neighboring features if needed.
+By default, this operation connects each feature with its nearest counterpart. However, it also offers the flexibility to join with the k-nearest neighbouring features if needed.
 
 Furthermore, if a maximum distance is specified, only the features that are within this designated distance will be considered as suitable matches for the joining process.
 
@@ -255,7 +255,7 @@ Screenshot of the tool Join attributes by nearest
 
 ::::
 
-In the aftermath of flooding events, data on the affected population and the extent of flooding is crucial. This information can be refined from a nationwide dataset to provide specific numbers for individual districts or states. This can aid in identifying the areas most heavily impacted, leading to more efficient relief operations. In the upcoming exercise, we will calculate the total flooding extent in square kilometers and the affected population for the state of Unity State, South Sudan. To accomplish this, we will utilize the __Join attributes by location (summary)__ tool.
+In the aftermath of flooding events, data on the affected population and the extent of flooding is crucial. This information can be refined from a nationwide dataset to provide specific numbers for individual districts or states. This can aid in identifying the areas most heavily impacted, leading to more efficient relief operations. In the upcoming exercise, we will calculate the total flooding extent in square kilometres and the affected population for Unity State, South Sudan. To accomplish this, we will utilize the __Join attributes by location (summary)__ tool.
 
 ### Exercise: Calculate sum of affected population and flooded area for the Area of interest
 
@@ -305,7 +305,7 @@ Centroids can be used in spatial operations such as __spatial joins__ to represe
 width: 80%
 name: en_qgis_centroids
 ---
-The black points represent the centroids of the features of the input layer.
+The black points represent the centroids of the features from the input layer.
 ```
 
 

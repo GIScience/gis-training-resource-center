@@ -66,7 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Exercise 1: Disaster effects in different regions of Senegal" href="en_qgis_non_spatial_tools_ex1.html" />
-    <link rel="prev" title="Exercise 1: Healthsite distribution in Saint Louis region" href="en_qgis_spatial_tools_ex1.html" />
+    <link rel="prev" title="Exercise 1: Health site distribution in the Saint Louis region" href="en_qgis_spatial_tools_ex1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -234,7 +234,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 5 - Intermediate GIS Operations (Spatial and Non-Spatial Data Manipulation)</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="en_qgis_spatial_tools.html">Spatial Geodataprocessing</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_spatial_tools_ex1.html">Exercise 1: Healthsite distribution in Saint Louis region</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_spatial_tools_ex1.html">Exercise 1: Health site distribution in the Saint Louis region</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Non-Spatial Geodataprocessing</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -602,7 +602,7 @@ document.write(`
 <h1>Non-Spatial Geodataprocessing<a class="headerlink" href="#non-spatial-geodataprocessing" title="Permalink to this heading">#</a></h1>
 <section id="introduction">
 <h2>Introduction:<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
-<p>Non-spatial geodataprocessing in QGIS refers to the manipulation, subsetting and analysis of attribute data within a GIS environment without directly involving spatial components. It involves operations on the <strong>non-geometric attributes</strong> of geospatial datasets. This can include data cleaning, transformation, enrichment and analysis based on the associated attribute information, such as population statistics, land use classifications or economic indicators. Non-spatial geodataprocessing can be used to perform calculations, generate statistics and gain insights into the non-spatial aspects of geospatial datasets. QGIS offers a variety of tools for non-spatial geodataprocessing to assist users in managing and analyzing attribute data effectively.</p>
+<p>Non-spatial geodataprocessing in QGIS refers to the manipulation, subsetting, and analysis of attribute data within a GIS environment without directly involving spatial components. It involves operations on the <strong>non-geometric attributes</strong> of geospatial datasets. This can include data cleaning, transformation, enrichment, and analysis based on the associated attribute information, such as population statistics, land use classifications, or economic indicators. Non-spatial geodataprocessing can be used to perform calculations, generate statistics, and gain insights into the non-spatial aspects of geospatial datasets. QGIS offers a variety of tools for non-spatial geodataprocessing to assist users in managing and analysing attribute data effectively.</p>
 <p>This segment of Module 5 will start with the introduction of table functions. It will then progress into techniques for querying data, ultimately introducing the important concept of non-spatial joins.</p>
 <figure class="align-default" id="attribute-table-all">
 <a class="reference internal image-reference" href="../../_images/en_attribute_table_large.PNG"><img alt="../../_images/en_attribute_table_large.PNG" src="../../_images/en_attribute_table_large.PNG" style="height: 500px;" /></a>
@@ -616,7 +616,7 @@ document.write(`
 <p>For a comprehensive overview on the attribute table’s functionality and its purpose, you’re invited to explore the <a class="reference internal" href="../Wiki/en_qgis_attribute_table_wiki.html"><span class="doc std std-doc">Wiki</span></a> article on it.</p>
 <section id="add-field">
 <h3>Add field<a class="headerlink" href="#add-field" title="Permalink to this heading">#</a></h3>
-<p>The information within a vector layer can be accessed through its <strong>attribute table</strong>, and it can be enhanced by <strong>introducing new fields</strong> to this table. These additional fields may be derived from calculations, as exemplified in the following case, where population density is computed to provide deeper insights into spatial population distribution.</p>
+<p>The information within a vector layer can be accessed through its <strong>attribute table</strong>, and it can be enhanced by <strong>introducing new fields</strong> to this table. These additional fields may be derived from calculations, as exemplified in the following case, where population density is computed to provide deeper insights into spatial population distributions.</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>The selection of the appropriate data type should align with the information being added to the new attribute field. Please keep this in mind while watching the example video.</p>
@@ -645,7 +645,7 @@ Example: Add a field for population density<div class="sd-summary-down docutils"
 </details></section>
 <section id="delete-field">
 <h3>Delete field<a class="headerlink" href="#delete-field" title="Permalink to this heading">#</a></h3>
-<p>It is also possible to <strong>delete fields</strong> from the attribute table. A commonly used practice is to <strong>remove all unused or unnecessary fields</strong> from a layer before starting to work on it. This <strong>makes the dataset much more organized</strong>.</p>
+<p>It is also possible to <strong>delete fields</strong> from the attribute table. A commonly used practice is to <strong>remove all unused or unnecessary fields</strong> from a layer before starting to work on it. This <strong>makes the dataset much more organised</strong>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Example: Delete all unused/unnecessary fields from a vector layer<div class="sd-summary-down docutils">
@@ -706,7 +706,7 @@ Example: Calculate the population density<div class="sd-summary-down docutils">
 </details></section>
 <section id="basic-statistics-for-fields">
 <h3>Basic statistics for fields<a class="headerlink" href="#basic-statistics-for-fields" title="Permalink to this heading">#</a></h3>
-<p>The tool <strong>Basic statistics for fields</strong> generates statistics for a specific field of the attribute table of a vector layer. The results are generated as an HTML file and can be accessed by using the <strong>file path link</strong> in the <strong>Results Viewer</strong>. This operation is highly valuable for gaining a comprehensive understanding of the data you intend to work with. It allows you to determine the range of values, pinpoint the minimum and maximum values. In the provided example, this operation is applied to calculate the global population density, enabling you to easily identify the most densely populated region worldwide.</p>
+<p>The tool <strong>Basic statistics for fields</strong> generates statistics for a specific field of the attribute table of a vector layer. The results are generated as an HTML file and can be accessed by using the <strong>file path link</strong> in the <strong>Results Viewer</strong>. This operation is highly valuable for gaining a comprehensive understanding of the data you intend to work with. It allows you to determine the range of values, pinpoint the minimum and maximum values. In the provided example, this operation is applied to calculate the global population density, allowing you to easily identify the most densely populated region worldwide.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Example: Calculate statistics for the field population density for countries worldwide.<div class="sd-summary-down docutils">
@@ -719,16 +719,16 @@ Example: Calculate statistics for the field population density for countries wor
 </details></section>
 <section id="statistics-by-categories">
 <h3>Statistics by categories<a class="headerlink" href="#statistics-by-categories" title="Permalink to this heading">#</a></h3>
-<p>To calculate statistics of a field depending on a parent class you can use the tool <strong>Statistics by catergories</strong>. The parent class is a combination of values from other fields.</p>
+<p>To calculate statistics of a field depending on a parent class you can use the tool <strong>Statistics by categories</strong>. The parent class is a combination of values from other fields.</p>
 <p><strong>Questions that need to be considered when doing these calculations:</strong></p>
 <ul class="simple">
 <li><p>For which fields should the statistics be calculated in the attribute table?</p></li>
 <li><p>Which field in the attribute table contains which information?</p></li>
 </ul>
-<p>For greater precision in these calculations, statistics by categories offer more comprehensive insights than those mentioned earlier. In this case, it becomes simple to determine the number of cities per country with over 300,000 inhabitants and, for each country, the population living in the largest urban agglomeration.</p>
+<p>For greater precision in these calculations, “statistics by categories” offers more comprehensive insights than those mentioned earlier. In this case, it becomes simple to determine the number of cities per country with over 300,000 inhabitants and, for each country, the population living in the largest urban agglomeration.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Example: Cities with more than 300.000 inhabitants and the amount of population in the largest agglomerations<div class="sd-summary-down docutils">
+Example: Cities with more than 300,000 inhabitants and the amount of population in the largest agglomerations<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
@@ -819,7 +819,7 @@ Comparison operators</label><div class="sd-tab-content docutils">
 <input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-2">
 Logical operators</label><div class="sd-tab-content docutils">
-<p>Operators such as AND, OR can be used to combine different queris or criteria</p>
+<p>Operators such as AND, OR can be used to combine different queries or criteria</p>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>operator</p></th>
@@ -868,10 +868,10 @@ Special operators</label><div class="sd-tab-content docutils">
 </table>
 </div>
 </div>
-<p>Querying your data to answer more complex question is of great importance. This can be accomplished using the “Select by expression” tool. In the provided example, we aim to answer the question: Which cities, not having a population of one million inhabitants in 1950, had surged to over 10 million inhabitants by 2015?</p>
+<p>Querying your data to answer more complex question is of great importance. This can be accomplished using the “Select by expression” tool. In the provided example, we aim to answer the question: Which cities, excluding those with a population of one million inhabitants in 1950, had grown to over ten million inhabitants by 2015?</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Example: Cities, not having a population of one million inhabitants in 1950, had surged to over 10 million inhabitants by 2015?<div class="sd-summary-down docutils">
+Example: Cities, excluding those with a population of one million inhabitants in 1950, that have grown to over ten million inhabitants by 2015<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
@@ -880,12 +880,12 @@ Example: Cities, not having a population of one million inhabitants in 1950, had
 </div>
 </details><section id="sql">
 <h4>SQL<a class="headerlink" href="#sql" title="Permalink to this heading">#</a></h4>
-<p>Another possibility to build your expressions is to utilize SQL.</p>
+<p>Another possibility to build your expressions is to use SQL.</p>
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-4" name="sd-tab-set-1" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-4">
 SQL introduction</label><div class="sd-tab-content docutils">
-<p>SQL (Structured Query Language) is a standardized programming language that is used to manage databases and perform various operations on the data in them. In the Query Builder in QGIS, you can use SQL expressions to use one or more conditions to filter a layer.</p>
+<p>SQL (Structured Query Language) is a standardised programming language that is used to manage databases and perform various operations on the data in them. In the Query Builder in QGIS, you can use SQL expressions to use one or more conditions to filter a layer.</p>
 </div>
 <input id="sd-tab-item-5" name="sd-tab-set-1" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-5">
@@ -921,7 +921,7 @@ SQL Cheat Sheet</label><div class="sd-tab-content docutils">
 <p class="admonition-title">Note</p>
 <p>When a filter is applied with the Query Builder, QGIS treats the resulting subset as if it were the <strong>entire layer</strong>.</p>
 </div>
-<p>In this short video, you’ll discover the location of the query builder and learn how to create a straightforward query for isolating a particular state from a dataset that covers the entire country. The example focuses on a dataset related to South Sudan and serves as a basic illustration.</p>
+<p>In this short video, you will discover the location of the query builder and learn how to create a straightforward query for isolating a particular state from a dataset that covers the entire country. The example focuses on a dataset related to South Sudan and serves as a basic illustration.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Example: Simple usage of the Query Builder.<div class="sd-summary-down docutils">
@@ -935,7 +935,7 @@ Example: Simple usage of the Query Builder.<div class="sd-summary-down docutils"
 </section>
 <section id="non-spatial-joins">
 <h2>Non-spatial joins<a class="headerlink" href="#non-spatial-joins" title="Permalink to this heading">#</a></h2>
-<p>A lot of analysis can be done with just a single layer. But, sometimes, the necessary information we need for our analysis is <strong>split across</strong> different datasets/layers. With QGIS, these layers can be <strong>combined</strong> to perform the analysis we want. The simplest way to combine layers is via an <strong>attribute join</strong>. This operation looks up information from a second data source based on a <strong>shared attribute value</strong>. This value functions as a common unique identifier, also known as an ID, UID or key.</p>
+<p>A lot of analysis can be done with just a single layer. But, sometimes, the necessary information we need for our analysis is <strong>split across</strong> different datasets/layers. With QGIS, these layers can be <strong>combined</strong> to perform the analysis we want. The simplest way to combine layers is via an <strong>attribute join</strong>. This operation looks up information from a second data source based on a <strong>shared attribute value</strong>. This value functions as a common unique identifier, also known as an ID, UID, or key.</p>
 <p>In QGIS the tool <strong>Join attributes by field value</strong> is often used for such operations:</p>
 <figure class="align-default" id="join-attributes-by-field-value">
 <a class="reference internal image-reference" href="../../_images/en_join_attributes_by_field_values.PNG"><img alt="../../_images/en_join_attributes_by_field_values.PNG" src="../../_images/en_join_attributes_by_field_values.PNG" style="width: 75%;" /></a>
@@ -992,7 +992,7 @@ Example: Simple usage of the Query Builder.<div class="sd-summary-down docutils"
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Exercise 1: Healthsite distribution in Saint Louis region</p>
+        <p class="prev-next-title">Exercise 1: Health site distribution in the Saint Louis region</p>
       </div>
     </a>
     <a class="right-next"

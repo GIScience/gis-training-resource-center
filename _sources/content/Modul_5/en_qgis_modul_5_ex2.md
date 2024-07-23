@@ -6,13 +6,13 @@ __🔙[Back to Homepage](/content/intro.md)__
 
 ## Aim of the exercise:
 
-This exercise is based on the monitoring and triggering process used by the Somalia Red Cresent Society (SRCS) in the framework of a drought Early Action Protocol (EAP).
+This exercise is based on the monitoring and triggering process used by the Somalia Red Crescent Society (SRCS) in the framework of a drought Early Action Protocol (EAP).
 
 Within this exercise, you will build a simplified version of the monitoring and trigger mechanism for the FEWSNET projection pillar.
 
 ## Background 
 
-Setting triggers is one of the cornerstones of the __Forecast-based Financing system__. For a National Society to have access to automatically released funding for their early actions, their Early Action Protocol needs to clearly define where and when funds will be allocated, and assistance will be provided. In FbF, this is decided according to specific threshold values, so-called __triggers__, based on weather and climate forecasts, which are defined for each region (see [FbF Manual](https://manual.forecast-based-financing.org/en/chapter/set-the-trigger/)).
+Setting triggers is one of the cornerstones of the __Forecast-based Financing (FbF) system__. For a National Society to have access to automatically released funding for their early actions, their Early Action Protocol needs to clearly define where and when funds will be allocated, and assistance will be provided. In FbF, this is decided according to specific threshold values, so-called __triggers__, based on weather and climate forecasts, which are defined for each region (see [FbF Manual](https://manual.forecast-based-financing.org/en/chapter/set-the-trigger/)).
 
 For the development of the Somaliland-Somalia Drought Trigger mechanism, various datasources were thoroughly analysed.
 Finally, the main parameters chosen for the trigger based on the __historical impact assessment__ are the twelve month Standard Precipitation Index (SPI12) and the IPC acute food insecurity classification. The exact data used are the documented and forecasted SPI12 (source: ICPAC) and the forecasted IPC classification (8 month forecast, source: FEWSNET), that is used to calculate a population weighted index of food insecurity. The trigger thresholds for both components were optimised towards the most favourable proportion of hit rate and false alarm rate. The emerging thresholds were <-1 for the SPI12 and >=0,7 for the IPC based index. The triggering is done on district level and per district just one trigger initiation per year is possible.
@@ -30,7 +30,7 @@ derived population weighted index in the same district, then we will act in this
 * [Intersection](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#intersection)
 * [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics)
 * [Join Attributes by location (summary](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
-* [Tabel functions](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics)
+* [Table functions](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics)
 
 
 ## Data
@@ -46,7 +46,7 @@ The drought trigger mechanism is based on two variable monitoring datasets. One 
 #### What is IPC Food Security Projection Data?
  
 The IPC is a commonly accepted measure and classification to describe the current and anticipated severity of acute food insecurity. 
-The classification is based on a convergence of available data and evidence, including indicators related to food consumption, livelihoods, malnutrition and mortality. Food Insecurity is one of the prioritized impacts of droughts in Somalia which is why it is also used for the triggering mechanism, in a population-weighted index. 
+The classification is based on a convergence of available data and evidence, including indicators related to food consumption, livelihoods, malnutrition and mortality. Food Insecurity is one of the prioritised impacts of droughts in Somalia which is why it is also used for the triggering mechanism, in a population-weighted index. 
 
 Three times a year (February, June, and October) FEWSNET estimates most likely IPC classes for the upcoming 8 month (near-term and mid-term projection), available from 2019-current. The near-term projection is called ML1 and is a projection for the upcoming 4 month, the mid-term projection is called ML2 and projects the IPC classes for the 4 subsequent months. For the triggering ML1 (near-term) as well as ML2 (mid-term) projections will be considered. 
 
@@ -69,8 +69,8 @@ The preprocessed datasets are:
 
 | Dataset| Source | Description |
 | ----- | --- | --- |
-|Adminstrative bounderies | [HDX](https://data.humdata.org/dataset/cod-ab-som?) |The administrative bounderies on level 0-2 for Somalia and Somaliland can be accessed via HDX. For this trigger mechanism we provide the administrative bounderies on level 2 (district level) as a shapefile. We have added the population number for each district derived from Worldpop.|
-|Population Counts| [Worldpop](https://hub.worldpop.org/doi/10.5258/SOTON/WP00534) |The worldpop dataset in .geotif rasterformat provides population estimates per hectar for the year 2020 |
+|Administrative boundaries | [HDX](https://data.humdata.org/dataset/cod-ab-som?) |The administrative boundaries on level 0-2 for Somalia and Somaliland can be accessed via HDX. For this trigger mechanism we provide the administrative boundaries on level 2 (district level) as a shapefile. We have added the population number for each district derived from Worldpop.|
+|Population Counts| [Worldpop](https://hub.worldpop.org/doi/10.5258/SOTON/WP00534) |The worldpop dataset in .geotif raster format provides population estimates per hectare for the year 2020 |
 
 Whereas the IPC-Projections data will be downloaded by the participants directly from FEWS.net.
 
@@ -81,13 +81,13 @@ Whereas the IPC-Projections data will be downloaded by the participants directly
 ## Task
 
 
-```{Attenation}
+```{Attention}
 Some of the images and videos are not 100 % accurate for this particular exercise since they were take from the real trigger workflow of SRCS, which is more complex.
 ```
 
 ### Step 1: Setting up folder structure 
 
-__Purpose:__ In this step, we set up the correct folder structure to make the analysis easier and to ensure consitent results. 
+__Purpose:__ In this step, we set up the correct folder structure to make the analysis easier and to ensure consistent results. 
 
 __Tool:__ No special tools or programs are needed.
 
@@ -111,7 +111,7 @@ __Tool:__ No special tools or programs are needed.
     ```
 ``````
 
-The Video below shows the process for setting up the folder for december 2023.
+The Video below shows the process for setting up the folder for December 2023.
 
 ```{dropdown} Video: Setting up folder structure 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_folder_setup.mp4"></video>
@@ -122,15 +122,15 @@ The Video below shows the process for setting up the folder for december 2023.
 
 __Purpose:__ 
 
-__Tool:__ Interent Browser
+__Tool:__ Internet Browser
 
 The IPC data will be pulled from the FEWSNET website. FEWS NET publishes IPC data on its website. 
 The main data publications, as well as the updates of the IPC data, amount to the publication of new data almost monthly.
 
 ### IPC Data
 
-The IPC Projection data is provided and regulary updated on the [FEWSNET Website](https://fews.net/).
-On the website, you will have to click on Somalia to acess the data. Alternativley, you can  navigate through `Data` -> `Acute Food Insecurity Data` and enter „Somalia". In the menu you will see different dataformats for different timestamps. Once you find out which timestamp is the most current one, find the ZIP download. We need the data in shapefile (.shp) format, which is only included in the ZIP file and not provided as single download file. 
+The IPC Projection data is provided and regularly updated on the [FEWSNET Website](https://fews.net/).
+On the website, you will have to click on Somalia to access the data. Alternatively, you can  navigate through `Data` -> `Acute Food Insecurity Data` and enter „Somalia". In the menu you will see different data formats for different timestamps. Once you find out which timestamp is the most current one, find the ZIP download. We need the data in shapefile (.shp) format, which is only included in the ZIP file and not provided as single download file. 
 
 
 ```{Warning}
@@ -138,7 +138,7 @@ The FEWSNET pages change often!
 ```
 
 1. Go to [FEWSNET Website](https://fews.net/). Click on `Data` -> `Acute Food Insecurity`.
-2. Scroll down. In `Geograhic Area`, type in “Somalia” and click `Apply`
+2. Scroll down. In `Geographic Area`, type in “Somalia” and click `Apply`
 3. Choose the newest dataset.
 
 ```{figure} /fig/IPC_Projections_website.png
@@ -215,7 +215,7 @@ __Tool:__ [`Intersection`](https://giscience.github.io/gis-training-resource-cen
 * - 1. Click on `Vector` -> `Geoprocessing Tools` -> [`Intersection`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#intersection)
     2. `Input Layer`: ML 1 
     3. `Overlay layer`: district_pop_sum
-    4. Under `Intersection` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "ML1_Intersection" and click `Save`
+    4. Under `Intersection` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to your monitoring folder [Year_Month]. Give the output the name "ML1_Intersection" and click `Save`
     5. Click `Run`
   -
     ```{figure} /fig/SRCS_Trigger_step_4_Intersection.png
@@ -279,19 +279,18 @@ __Result:__ The result should be the “ML1_zonal_statistic” as a polygon laye
 __Purpose:__ The purpose of this step is the weighting of the population in the five IPC phases as described in [IPC Data](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_drought_trigger_somalia.html#ipc-population-weighted-index).
 
 ```{Note} 
-The IPC Index represents low-population districts equal to high-population districts. No underrepresentation of high food insecurity of small districts occurs.
+The IPC Index treats low-population districts the same as high-population districts, ensuring that small districts with high food insecurity are not underrepresented.
 ```
 
 ```{dropdown}  IPC-Population Weighted Index
 
-To better operationalise the IPC data, a simple population-weigthed index was developed. Relative population numbers are weighted based on the respective IPC class they fallin, in order to give the amount of people in a certain IPC class the importance instead of the IPC class only.
-Furthermore, population located in a higher IPC class is more important than population located in a lower class. The index is calculated as follows:
+To better utilize the IPC data, a straightforward population-weighted index was created. This index assigns weights to relative population numbers based on their respective IPC classes, emphasizing the number of people in each IPC class rather than just the class itself. Additionally, populations in higher IPC classes are given more importance than those in lower classes. The index is calculated as follows:
 
 `$ IPC\ Index =  Weights \times \frac{District\ Pop\ per\ IPC\ Phase}{Total\ District\ Pop}$`
 
 Where the weights are defined as:
 
-| IPC Pahse| Weight |
+| IPC Phase| Weight |
 | ----- | --- |
 |IPC 1  |0  |
 |IPC 2  |0  |
@@ -339,7 +338,7 @@ __Tool:__[`Field Calculator`](https://giscience.github.io/gis-training-resource-
 "pop_sum_weighted"/"districtpo"
 ```
 6. Click `ok`
-7. Save the new column by clicking on ![](/fig/mActionSaveEdits.png) in the attribute table and end the editing mode by clicking on ![](/fig/mActionToggleEditing.png)
+7. Save the new column by clicking on ![](/fig/mActionSaveEdits.png) in the attribute table and turn off editing mode by clicking on ![](/fig/mActionToggleEditing.png)
 
 ```{figure} /fig/SRCS_Trigger_step_8_field_calculator.png
 ---
@@ -444,7 +443,7 @@ __Tool:__ [Symbology](https://giscience.github.io/gis-training-resource-center/c
 
 __Trigger Activation__
 
-1. Right cklick on the “ML1_IPC_Index” layer -> `Properties` -> `Symbology`
+1. Right-click on the “ML1_IPC_Index” layer -> `Properties` -> `Symbology`
 2. In the down left corner click on `Style` -> `Load Style`
 3. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file __“Style_Trigger_Activation_ex.qml”__.
 4. Click `Open`. Then click on `Load Style`
@@ -512,22 +511,22 @@ Remember the [layer concept](https://giscience.github.io/gis-training-resource-c
 
 ### Step 11: Making print map
 
-__Purpose:__ Viualization of the map features in a printable map layout
+__Purpose:__ Visualisation of the map features in a printable map layout
 
 __Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
 
 
-1. If not done before, delet all layers expect __Trigger_activation__, __Som_admin1_regions_UNDP__ and __OpenStreetMap__
+1. If not done before, delete all layers expect __Trigger_activation__, __Som_admin1_regions_UNDP__ and __OpenStreetMap__
 2. Open a new print layout by clicking on `Project` -> `New Print Layout` -> enter the name of your current Project e.g "2024_01".
 3. Go the the `Modul_5_Exercise2_Drought_Monitoring_Trigger` folder and drag and drop the file `Trigger_activation_Intervention_map_ex.qpt` in the print layout
 4. Change the date to the current date by clicking on "Further map info…" in the items panel. Click on the `Item Properties` tab and scroll down. Here you can change the date in the `Main Properties` field.
-5. If necessary, adjust the legend by clicking on the legend in the  `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there check if you have to open the dropdown. Make sure `Auto update` is not checked.
-    * Remove all itemes in the legend be clicking on the item and then on the red minus icon below.
+5. If necessary, adjust the legend by clicking on the legend in the `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there check if you have to open the dropdown. Make sure `Auto update` is not checked.
+    * Remove all items in the legend be clicking on the item and then on the red minus icon below.
     * Add __Trigger_activation__ to the legend by clicking on the green plus and click on the layer and click `ok`
     * Add __Som_admin1_regions_UNDP__ to the legend by clicking on the green plus and click on the layer and click `ok`
  
 
-```{dropdown} Video: Making print map
+```{dropdown} Video: Making a print map
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_print_map.mp4"></video>
 ```
 
@@ -544,12 +543,12 @@ Make sure you edit the Map Information on the template, e.g. current date. Also 
 ### Step 13.: Exporting Map 
 
 
-__Purpose:__ Export the designed and finalized map layout in order tp print it as a pdf or format of your choice.
+__Purpose:__ Export the designed and finalised map layout in order to print it as a pdf or format of your choice.
 
 
 __Tool:__ [Print Layout](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
 
-When you have finished the design of you map, you can export it as pdf or image file in different datafromats.
+When you have finished the design of you map, you can export it as pdf or image file in different data types.
 
 __Export as Image__
 

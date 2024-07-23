@@ -1,7 +1,7 @@
 # Non-Spatial Geodataprocessing
 
 #### Introduction:
-Non-spatial geodataprocessing in QGIS refers to the manipulation, subsetting and analysis of attribute data within a GIS environment without directly involving spatial components. It involves operations on the __non-geometric attributes__ of geospatial datasets. This can include data cleaning, transformation, enrichment and analysis based on the associated attribute information, such as population statistics, land use classifications or economic indicators. Non-spatial geodataprocessing can be used to perform calculations, generate statistics and gain insights into the non-spatial aspects of geospatial datasets. QGIS offers a variety of tools for non-spatial geodataprocessing to assist users in managing and analyzing attribute data effectively.
+Non-spatial geodataprocessing in QGIS refers to the manipulation, subsetting, and analysis of attribute data within a GIS environment without directly involving spatial components. It involves operations on the __non-geometric attributes__ of geospatial datasets. This can include data cleaning, transformation, enrichment, and analysis based on the associated attribute information, such as population statistics, land use classifications, or economic indicators. Non-spatial geodataprocessing can be used to perform calculations, generate statistics, and gain insights into the non-spatial aspects of geospatial datasets. QGIS offers a variety of tools for non-spatial geodataprocessing to assist users in managing and analysing attribute data effectively.
 
 This segment of Module 5 will start with the introduction of table functions. It will then progress into techniques for querying data, ultimately introducing the important concept of non-spatial joins.
 
@@ -17,7 +17,7 @@ Screenshot of an attribute table for QGIS version 3.28.4
 For a comprehensive overview on the attribute table's functionality and its purpose, you're invited to explore the [Wiki](/content/Wiki/en_qgis_attribute_table_wiki.md) article on it.
 
 ### Add field
-The information within a vector layer can be accessed through its __attribute table__, and it can be enhanced by __introducing new fields__ to this table. These additional fields may be derived from calculations, as exemplified in the following case, where population density is computed to provide deeper insights into spatial population distribution.
+The information within a vector layer can be accessed through its __attribute table__, and it can be enhanced by __introducing new fields__ to this table. These additional fields may be derived from calculations, as exemplified in the following case, where population density is computed to provide deeper insights into spatial population distributions.
 
 ```{Attention}
 The selection of the appropriate data type should align with the information being added to the new attribute field. Please keep this in mind while watching the example video.
@@ -38,7 +38,7 @@ Additional options:
 ````
 
 ### Delete field
-It is also possible to __delete fields__ from the attribute table. A commonly used practice is to __remove all unused or unnecessary fields__ from a layer before starting to work on it. This __makes the dataset much more organized__.
+It is also possible to __delete fields__ from the attribute table. A commonly used practice is to __remove all unused or unnecessary fields__ from a layer before starting to work on it. This __makes the dataset much more organised__.
 
 ````{dropdown} Example: Delete all unused/unnecessary fields from a vector layer
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_delete_field.mp4"></video>
@@ -81,22 +81,22 @@ The most important groups and their respective functionality that are provided w
 ````
 
 ### Basic statistics for fields
-The tool __Basic statistics for fields__ generates statistics for a specific field of the attribute table of a vector layer. The results are generated as an HTML file and can be accessed by using the __file path link__ in the __Results Viewer__. This operation is highly valuable for gaining a comprehensive understanding of the data you intend to work with. It allows you to determine the range of values, pinpoint the minimum and maximum values. In the provided example, this operation is applied to calculate the global population density, enabling you to easily identify the most densely populated region worldwide.
+The tool __Basic statistics for fields__ generates statistics for a specific field of the attribute table of a vector layer. The results are generated as an HTML file and can be accessed by using the __file path link__ in the __Results Viewer__. This operation is highly valuable for gaining a comprehensive understanding of the data you intend to work with. It allows you to determine the range of values, pinpoint the minimum and maximum values. In the provided example, this operation is applied to calculate the global population density, allowing you to easily identify the most densely populated region worldwide.
 
 ````{dropdown} Example: Calculate statistics for the field population density for countries worldwide.
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_field_stats.mp4"></video>
 ````
 
 ### Statistics by categories
-To calculate statistics of a field depending on a parent class you can use the tool __Statistics by catergories__. The parent class is a combination of values from other fields.
+To calculate statistics of a field depending on a parent class you can use the tool __Statistics by categories__. The parent class is a combination of values from other fields.
 
 __Questions that need to be considered when doing these calculations:__
 * For which fields should the statistics be calculated in the attribute table?
 * Which field in the attribute table contains which information?
 
-For greater precision in these calculations, statistics by categories offer more comprehensive insights than those mentioned earlier. In this case, it becomes simple to determine the number of cities per country with over 300,000 inhabitants and, for each country, the population living in the largest urban agglomeration.
+For greater precision in these calculations, "statistics by categories" offers more comprehensive insights than those mentioned earlier. In this case, it becomes simple to determine the number of cities per country with over 300,000 inhabitants and, for each country, the population living in the largest urban agglomeration.
 
-````{dropdown} Example: Cities with more than 300.000 inhabitants and the amount of population in the largest agglomerations
+````{dropdown} Example: Cities with more than 300,000 inhabitants and the amount of population in the largest agglomerations
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_stats_by_category.mp4"></video>
 ````
 
@@ -137,7 +137,7 @@ In this dialog, you can build your expressions to query the data. There are seve
 :::
 
 :::{tab-item} Logical operators
-Operators such as AND, OR can be used to combine different queris or criteria
+Operators such as AND, OR can be used to combine different queries or criteria
 | operator | functionality          |
 |----------|------------------------|
 | __AND__  | logical AND            |
@@ -157,20 +157,20 @@ Operators such as AND, OR can be used to combine different queris or criteria
 
 ::::
 
-Querying your data to answer more complex question is of great importance. This can be accomplished using the "Select by expression" tool. In the provided example, we aim to answer the question: Which cities, not having a population of one million inhabitants in 1950, had surged to over 10 million inhabitants by 2015?
+Querying your data to answer more complex question is of great importance. This can be accomplished using the "Select by expression" tool. In the provided example, we aim to answer the question: Which cities, excluding those with a population of one million inhabitants in 1950, had grown to over ten million inhabitants by 2015?
 
-````{dropdown} Example: Cities, not having a population of one million inhabitants in 1950, had surged to over 10 million inhabitants by 2015?
+````{dropdown} Example: Cities, excluding those with a population of one million inhabitants in 1950, that have grown to over ten million inhabitants by 2015
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_expression_and.mp4"></video>
 ````
 
 ##### SQL
 
-Another possibility to build your expressions is to utilize SQL.
+Another possibility to build your expressions is to use SQL.
 
 ::::{tab-set}
 
 :::{tab-item} SQL introduction
-SQL (Structured Query Language) is a standardized programming language that is used to manage databases and perform various operations on the data in them. In the Query Builder in QGIS, you can use SQL expressions to use one or more conditions to filter a layer.
+SQL (Structured Query Language) is a standardised programming language that is used to manage databases and perform various operations on the data in them. In the Query Builder in QGIS, you can use SQL expressions to use one or more conditions to filter a layer.
 :::
 
 :::{tab-item} SQL Cheat Sheet
@@ -204,14 +204,14 @@ Screenshot of the Query Builder
 When a filter is applied with the Query Builder, QGIS treats the resulting subset as if it were the __entire layer__.
 ```
 
-In this short video, you'll discover the location of the query builder and learn how to create a straightforward query for isolating a particular state from a dataset that covers the entire country. The example focuses on a dataset related to South Sudan and serves as a basic illustration.
+In this short video, you will discover the location of the query builder and learn how to create a straightforward query for isolating a particular state from a dataset that covers the entire country. The example focuses on a dataset related to South Sudan and serves as a basic illustration.
 
 ````{dropdown} Example: Simple usage of the Query Builder.
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_query_builder.mp4"></video>
 ````
 
 ## Non-spatial joins
-A lot of analysis can be done with just a single layer. But, sometimes, the necessary information we need for our analysis is __split across__ different datasets/layers. With QGIS, these layers can be __combined__ to perform the analysis we want. The simplest way to combine layers is via an __attribute join__. This operation looks up information from a second data source based on a __shared attribute value__. This value functions as a common unique identifier, also known as an ID, UID or key.
+A lot of analysis can be done with just a single layer. But, sometimes, the necessary information we need for our analysis is __split across__ different datasets/layers. With QGIS, these layers can be __combined__ to perform the analysis we want. The simplest way to combine layers is via an __attribute join__. This operation looks up information from a second data source based on a __shared attribute value__. This value functions as a common unique identifier, also known as an ID, UID, or key.
 
 In QGIS the tool __Join attributes by field value__ is often used for such operations:
 

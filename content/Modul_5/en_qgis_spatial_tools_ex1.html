@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Exercise 1: Healthsite distribution in Saint Louis region &#8212; GIS Resource Training Center</title>
+    <title>Exercise 1: Health site distribution in the Saint Louis region &#8212; GIS Resource Training Center</title>
   
   
   
@@ -234,7 +234,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 5 - Intermediate GIS Operations (Spatial and Non-Spatial Data Manipulation)</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="en_qgis_spatial_tools.html">Spatial Geodataprocessing</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Exercise 1: Healthsite distribution in Saint Louis region</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Exercise 1: Health site distribution in the Saint Louis region</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="en_qgis_non_spatial_tools.html">Non-Spatial Geodataprocessing</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -558,7 +558,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Exercise 1: Healthsite distribution in Saint Louis region</h1>
+    <h1>Exercise 1: Health site distribution in the Saint Louis region</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -585,8 +585,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="exercise-1-healthsite-distribution-in-saint-louis-region">
-<h1>Exercise 1: Healthsite distribution in Saint Louis region<a class="headerlink" href="#exercise-1-healthsite-distribution-in-saint-louis-region" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="exercise-1-health-site-distribution-in-the-saint-louis-region">
+<h1>Exercise 1: Health site distribution in the Saint Louis region<a class="headerlink" href="#exercise-1-health-site-distribution-in-the-saint-louis-region" title="Permalink to this heading">#</a></h1>
 <section id="aim-of-the-exercise">
 <h2>Aim of the exercise<a class="headerlink" href="#aim-of-the-exercise" title="Permalink to this heading">#</a></h2>
 <p>Become familiar with different types of spatial analysis and geoprocessing tools. Understand the process of discovering relationships and connections between features in spatial data.</p>
@@ -604,7 +604,7 @@ document.write(`
 <h3>Data<a class="headerlink" href="#data" title="Permalink to this heading">#</a></h3>
 <p>Download the datasets <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Modul_5_Exercise1_Healthsite_distribution_Saint_Louis_region/Modul5_Exercise1_Healthsite_distribution_Saint_Louis_region.zip">here</a> and unzip the files.</p>
 <!---Download all datasets and save the folder on your computer and unzip the file. The zip folder includes:
-- `sen_healthsites.shp`: [Senegal healthsites data](https://data.humdata.org/dataset/senegal-healthsites)
+- `sen_healthsites.shp`: [Senegal health site data](https://data.humdata.org/dataset/senegal-healthsites)
 - `sen_admbnda_adm1_1m_gov_ocha_20190426.shp`: [Senegal boundary data (Admin level 1)](https://data.humdata.org/dataset/senegal-administrative-boundaries)
 - `EO4SD_SAINT_LOUIS_FLOOD_2018.shp`: [Saint Louis flood extend data](https://wbwaterdata.org/dataset/saint-louis-senegal-flood-risk-map-esa-eo4sd-urban)-->
 <div class="admonition hint">
@@ -614,7 +614,7 @@ document.write(`
 </section>
 <section id="task">
 <h3>Task<a class="headerlink" href="#task" title="Permalink to this heading">#</a></h3>
-<p>The goal of this exercise will be to assess the healthsite distribution in the Saint Louis region in Senegal and which healthsites are prone to flooding.</p>
+<p>The goal of this exercise will be to assess the health site distribution in the Saint Louis region in Senegal and determine which health sites are prone to flooding.</p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>The projected coordinate system for Senegal is <code class="docutils literal notranslate"><span class="pre">EPSG:32628</span> <span class="pre">WGS</span> <span class="pre">84</span> <span class="pre">/</span> <span class="pre">UTM</span> <span class="pre">zone</span> <span class="pre">28N</span></code></p>
@@ -652,15 +652,15 @@ document.write(`
 <li><p>Investigate the flood risk in Saint Louis. Following the successful selection of all healthsites in the Saint Louis region in the previous step, proceed to load the flood extent layer of Saint Louis into QGIS:</p>
 <ul class="simple">
 <li><p>Add the flood extent layer (<code class="docutils literal notranslate"><span class="pre">EO4SD_SAINT_LOUIS_FLOOD_2018.shp</span></code>)</p></li>
-<li><p>While the layer does not cover the entirety of the Saint Louis region, it extends beyond Saint Louis in the north. Utilize the <img alt="" src="../../_images/mAlgorithmClip.png" /> <code class="docutils literal notranslate"><span class="pre">Clip</span></code> tool to clip the flood extent layer to the Saint Louis region (Hint: as input use Saint Louis flood extent, use Saint_louis_region as the overlay) for a more concentrated focus on central Saint Louis. See the Wiki entry on <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html">Geoprocessing</a> for further information.</p></li>
+<li><p>While the layer does not cover the entirety of the Saint Louis region, it extends beyond Saint Louis in the north. Use the <img alt="" src="../../_images/mAlgorithmClip.png" /> <code class="docutils literal notranslate"><span class="pre">Clip</span></code> tool to clip the flood extent layer to the Saint Louis region (Hint: as input use Saint Louis flood extent, use Saint_louis_region as the overlay) for a more concentrated focus on central Saint Louis. See the Wiki entry on <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html">Geoprocessing</a> for further information.</p></li>
 <li><p>Save the selection as <code class="docutils literal notranslate"><span class="pre">Saint_Louis_flood_clipped</span></code>.</p></li>
 </ul>
 </li>
-<li><p>When looking at the attribute table of the <code class="docutils literal notranslate"><span class="pre">Saint_Louis_flood_clipped</span></code> layer (Watertype column), you will see that the layer includes flooded, non-flooded and water body areas. Visualize only the flooded areas and water bodies in the dataset:</p>
+<li><p>When looking at the attribute table of the <code class="docutils literal notranslate"><span class="pre">Saint_Louis_flood_clipped</span></code> layer (Watertype column), you will see that the layer includes flooded, non-flooded and water body areas. Visualise only the flooded areas and water bodies in the dataset:</p>
 <ul class="simple">
 <li><p>Go into <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> and change the first selection from “Single symbols” to <code class="docutils literal notranslate"><span class="pre">Categorized</span></code>.</p></li>
 <li><p>Select the column <code class="docutils literal notranslate"><span class="pre">Watertype</span></code> and click <code class="docutils literal notranslate"><span class="pre">Classify</span></code>.</p></li>
-<li><p>Choose different colors for both the water bodies and the flooded areas. Leave non-flooded areas unmarked or make them transparent (opacity = 0%).</p></li>
+<li><p>Choose different colours for both the water bodies and the flooded areas. Leave non-flooded areas unmarked or make them transparent (opacity = 0%).</p></li>
 <li><p>Visual exploration: Which areas are more and less prone to flooding?</p></li>
 </ul>
 </li>
@@ -672,7 +672,7 @@ document.write(`
 </figcaption>
 </figure>
 <ol class="arabic simple" start="7">
-<li><p>Assess which healthsites are prone to flood risk.</p>
+<li><p>Assess which health sites are prone to flood risk.</p>
 <ul class="simple">
 <li><p>Make use of the <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">by</span> <span class="pre">expression</span></code> tool to select all flooded areas in the <code class="docutils literal notranslate"><span class="pre">Saint_Louis_flood_clipped</span></code> layer. You can access this tool through the attribute table by clicking on this symbol <img alt="" src="../../_images/mIconExpressionSelect_new.png" /></p></li>
 <li><p>Save the selection in a separate layer. Name it <code class="docutils literal notranslate"><span class="pre">Saint_Louis_flooded_areas</span></code>.</p></li>
@@ -695,11 +695,11 @@ document.write(`
 </figcaption>
 </figure>
 <ol class="arabic simple" start="8">
-<li><p>Which healthsites are located close to flooded zones?</p>
+<li><p>Which health sites are located close to flooded zones?</p>
 <ul class="simple">
-<li><p>Create a <img alt="" src="../../_images/mAlgorithmBuffer.png" /> buffer around the healthsites in Saint Louis with a distance of <code class="docutils literal notranslate"><span class="pre">20</span> <span class="pre">meters</span></code>. See the Wiki entry on <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html">Geoprocessing</a> for further information.</p></li>
+<li><p>Create a <img alt="" src="../../_images/mAlgorithmBuffer.png" /> buffer around the health sites in Saint Louis with a distance of <code class="docutils literal notranslate"><span class="pre">20</span> <span class="pre">meters</span></code>. See the Wiki entry on <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html">Geoprocessing</a> for further information.</p></li>
 <li><p>Make use of the <img alt="" src="../../_images/mAlgorithmSelectLocation.png" /> <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">by</span> <span class="pre">location</span></code> tool to assess which buffers intersect with the flooded areas.</p></li>
-<li><p>How many healthsites are selected? Check the attribute table. The selection should include five pharmacies and one hospital.</p></li>
+<li><p>How many health sites are selected? Check the attribute table. The selection should include five pharmacies and one hospital.</p></li>
 <li><p>Feel free to experiment with additional buffer distances.</p></li>
 </ul>
 </li>
