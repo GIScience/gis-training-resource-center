@@ -4,7 +4,7 @@
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-Digitization is the process of converting geographic data from maps or images into digital form commonly represented as vector data.
+Digitisation is the process of converting geographic data from maps or images into a digital form commonly represented as vector data.
 During this procedure, spatial information from maps or images is traced, forming points, polylines, or polygons.
 Proficiency in digitisation stands as a cornerstone for GIS specialists. It empowers them to convert spatial information into a digital format, facilitating more efficient data manipulation compared to traditional methods of interpreting images or paper maps.
 
@@ -13,14 +13,14 @@ Proficiency in digitisation stands as a cornerstone for GIS specialists. It empo
 width: 900px
 name: 
 align: center
-name: Digitalisation with GIS Concept
+name: Digitisation with GIS Concept
 ---
 Digitisation with GIS Concept. Source:
 ```
 
 ##  Digitising in QGIS
 
-The digitisation of geodata is a useful method to collect and modify your own data. The following subchapter will explain step by step, how to digitize data within QGIS.
+The digitisation of geodata is a useful method to collect and modify your own data. The following subchapter will explain how to digitise data within QGIS step by step.
 
 ### Digitisation toolbars
 
@@ -30,7 +30,7 @@ First, you need to check if the 'Digitizing Toolbox` is activated. To do that
 ::::{grid} 2
 :::{grid-item-card}  Activate `Digitizing Toolbox`
 First, you need to check if the `Digitizing Toolbox` is activated. To do that 
-1.  Click on the `view` tab in the menu bar and click `Toolbars`. Check if the `digitizing` and `Advanced digitizing` toolbox is activated.
+1.  Click on the `View` tab in the menu bar and click `Toolbars`. Check if the `Digitizing` and `Advanced Digitizing` toolbox is activated.
 
 2. A tool box like this should appear on top of the QGIS interface
  
@@ -51,22 +51,22 @@ Digitisation Toolbar.
 :::
 ::::
 
-The normal digitisation toolbar offers all the necessary functions . However, for everything that goes above just creating new features and deleting features, the advanced digitalization toolbar is needed. 
-The advanced digitalization toolbar allows you to move features, delete parts of features and much more. All functions are listed in the two tables below.
+The normal digitisation toolbar offers all the necessary functions . However, for everything that goes above just creating new features and deleting features, the Advanced Digitalization toolbar is needed. 
+The Advanced Digitalization toolbar allows you to move features, delete parts of features, and much more. All functions are listed in the two tables below.
 
 :::{dropdown} Digitalization Toolbar
 |Tool|Purpose|Tool|Purpose|
 |---|---|-----|---|
 |![](/fig/mActionAllEdits.png) |Access to save, rollback or cancel changes in all or selected layers simultaneously | ![](/fig/mActionToggleEditing.png)|Turn on or off edit status of selected layer(s) based on the active layer status|
 |![](/fig/mActionSaveEdits.png) |Save edits   | |
-|![](/fig/mActionDigitizeWithSegment.png) |Digitize using straight segments |![](/fig/mActionDigitizeWithCurve.png)|Digitize using curve lines|
-|![](/fig/mActionStreamingDigitize.png)|Enable freehand digitizing|![](/fig/mActionDigitizeShape.png) |Digitize polygon of regular shape  |
+|![](/fig/mActionDigitizeWithSegment.png) |Digitise using straight segments |![](/fig/mActionDigitizeWithCurve.png)|Digitize using curve lines|
+|![](/fig/mActionStreamingDigitize.png)|Enable freehand digitising|![](/fig/mActionDigitizeShape.png) |Digitise polygon of regular shape  |
 |![](/fig/mActionNewTableRow.png)  |Add new record   | ![](/fig/mActionCapturePoint.png)| Add Feature: Capture Point |
 |![](/fig/mActionCaptureLine.png) |Add Feature: Capture Line   |![](/fig/mActionCapturePolygon.png)|Add Feature: Capture Polygon  |
 |![](/fig/mActionVertexTool.png) |Vertex Tool (All Layers) | ![](/fig/mActionVertexToolActiveLayer.png)|Vertex Tool (Current Layer)  |
 |![](/fig/checkbox.png)|Set whether the vertex editor panel should auto-open|![](/fig/mActionMultiEdit.png)|Modify the attributes of all selected features simultaneously |
-|![](/fig/mActionDeleteSelectedFeatures.png) |Delete Selected features from the active layer   |![](/fig/mActionEditCut.png) |Cut Features from the active layer  |
-|![](/fig/mActionCopySelected.png) |Copy selected Features from the active layer   |![](/fig/mActionEditPaste.png) |Paste Features into the active layer  |
+|![](/fig/mActionDeleteSelectedFeatures.png) |Delete selected features from the active layer   |![](/fig/mActionEditCut.png) |Cut features from the active layer  |
+|![](/fig/mActionCopySelected.png) |Copy selected features from the active layer   |![](/fig/mActionEditPaste.png) |Paste features into the active layer  |
 |![](/fig/mActionUndo.png) |Undo changes in the active layer   | ![](/fig/mActionRedo.png)|Redo changes in active layer  |
 
 :::
@@ -93,7 +93,7 @@ The advanced digitalization toolbar allows you to move features, delete parts of
 
  ## Data Creation
 
-To digitize data for a new dataset you always have to start with creating the dataset before filling it with digitised data.
+To digitise data for a new dataset you always have to start with creating the dataset before filling it with digitised data.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_create_layer.mp4"></video>
 
@@ -101,12 +101,12 @@ To digitize data for a new dataset you always have to start with creating the da
 2. Click on ![](/fig/Three_points.png) and navigate to the folder where you want to save the dataset.
 3. `File encoding`: Make sure this is set to UTF-8
 4. `Geometry type`: Select the type of feature you want to digitise e.g. points or lines.
-5. Under `Additional dimension` you should always make sure that you check `None`. Except if there is the possibility to collect the Z-values (Elevation) as well. But this is mostly not the case.
+5. Under `Additional dimension` you should always make sure that you check `None`. Except if there is the possibility to collect the Z-values (elevation) as well. But this is mostly not the case.
 6. CRS dropdown: Select the EPSG/CRS you want to set for the new layer. By default, the QGIS selects the project CRS. If you want to change the CRS click on ![](/fig/mIconProjectionEnabled.png).
 7. Under `New Field` you can add columns to the new layer. 
-    * `Typ`: Select the data type the column will have e.g. `Text`, `Whole number`, `Decimal Number`, `Date`.
+    * `Type`: Select the data type the column will have e.g. `Text`, `Whole number`, `Decimal Number`, `Date`.
     ```{Note} 
-    The number of options depends on the data format the layer will have. GeoPackage for example offers far more options than the Shapefileformat.
+    The number of options depends on the data format the layer will have. GeoPackage, for example, offers far more options than the Shapefile format.
     ```
     * Click on ![](/fig/mActionNewAttribute.png) to add the new column to the `Fields List`.
 8. Click `OK`
@@ -127,9 +127,9 @@ After you are done manipulating the layer click on ![](/fig/mActionSaveEdits.png
 
 ```
 
-### Creation of point data
+### Creating point data
 
-To digitise points, you need an existing point layer or you need to create a new point layer (see [Digital Data Creation]( https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation.html#digital-data-creation) above).
+To digitise points, you either need to have an existing point layer or you need to create a new point layer (see [Digital Data Creation]( https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation.html#digital-data-creation) above).
 
 1.	Select the point layer you want to add data to in the Layer panel.
 2.	Go to the digitisation toolbar and click on![](/fig/mActionToggleEditing.png) `Toggle Editing`. No the layer is in the editing mode.
@@ -153,9 +153,9 @@ name: Point creation
 Point creation.
 ```
 
-#### Creation of line data
+#### Creating line data
 
-Creating line data works in the same way as creating point data (see above). First, you have to created a new line layer or use an existing one. 
+Creating line data works in the same way as creating point data (see above). First, you must create a new line layer or use an existing one. 
 
 ```{attention} 
 If you create a new line layer, remember to change the geometry type into lines.
@@ -163,16 +163,15 @@ If you create a new line layer, remember to change the geometry type into lines.
 1.	Select the line layer you want to add data to in the Layer panel
 2.	Go to the digitisation toolbar and click on![](/fig/mActionToggleEditing.png). Now, the layer is in the editing mode.
 3.	Click on ![](/fig/mActionCaptureLine.png). 
-4.	To digitalize line features, click along the line. When you are done, right-click on the last point of the line to finish the feature.
+4.	To digitalise line features, click along the line. When you are done, right-click on the last point of the line to finish the feature.
 5.	A window will appear `[Your Layer Name]- Feature Attribute`. Here you can add the information about this feature to the different columns, based on the attribute table of the layer.
 6.	Once you are done with digitisation, click on ![](/fig/mActionSaveEdits.png) `Save Layer Edits` to save your edits.
 7.	Click on ![](/fig/mActionToggleEditing.png) `Toggle Editing` again to end the editing mode.
 
-
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_line_feature.mp4"></video>
 
 
-#### Creation of polygon data
+#### Creating polygon data
 
 The creation of polygon layers works in the same way as for point and line data.
 
@@ -218,8 +217,8 @@ Note that this is only possible __before__ you save the changes.
 
 ### Moving features
 
-There are multiple methods to move features. Here we show the method that works for point, line and polygon features the same.
-For that you need the Advanced Digitisation Toolbox.
+There are multiple methods to move features. Here we show the method that works the same for point, line, and polygon features.
+To do this, you need the Advanced Digitisation Toolbox.
 
 
 1.	Select the line layer you want to add data to in the Layer panel.
