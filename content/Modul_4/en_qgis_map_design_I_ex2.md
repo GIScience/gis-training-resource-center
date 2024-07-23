@@ -1,17 +1,13 @@
 # Map design Exercise 1: Creating a Map of Ghana
 
-
-:::card
-
 ## Aim of the exercise
 
-The aim of this exercise will be to create an overview map of Ghana with its subdistricts, main roads, settlements, as well as hospitals. Such information can always be of use in humanitarian work. The first part of the exercise will cover the symbolization of the data layers. The second part will focus on the design of the print layout.
+The aim of this exercise is to create an overview map of Ghana with its subdistricts, main roads, settlements, as well as hospitals. Such information can  be of use in humanitarian work. The first part of the exercise will cover the symbolisation of the data layers. The second part will focus on the design of the print layout.
 
 __Estimated time for completion:__ 3 hours
 
 :::
 
-:::{card}
 ## Data
 
 __Download the data for the exercise [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_4/Modul_4_Exercise_1_creating_a_map_of_ghana/Modul_4_Exercise_1.zip).__  
@@ -23,7 +19,7 @@ For this exercise, we will use the following layers:
 - Ghana roads (OSM Export; https://data.humdata.org/dataset/hotosm_gha_roads)
 - Ghana settlements (https://data.humdata.org/dataset/ghana-settlements); This data has already been modified. Only the regional, district and country capitals are available.
 
-All data has been downloaded from the humanitarian data exchange. Download the Data from the Nexus, __unzip the folder__, and load the data into a new QGIS project.
+All data has been downloaded from the Humanitarian Data Exchange. Download the Data from the Nexus, __unzip the folder__, and load the data into a new QGIS project.
 
 :::
 
@@ -48,7 +44,7 @@ All data has been downloaded from the humanitarian data exchange. Download the D
 
 ### Part 1: Symbolization
 
-Now that we are familiar with the data at our disposal, let us start choosing the symbology for the different layers. Which information should be displayed on the map?
+Now that we are familiar with the data at our disposal, let's choose the symbology for the different layers. Which information should be displayed on the map?
 
 Let's start with the administrative boundaries. We want to show the names and outlines for the `adm_1`-layer, as well as the outlines for the `adm_2`-layer.
 
@@ -89,7 +85,7 @@ Let's move on to the road network.
 8. Close the parenthesis by clicking on `)` under the expression field on the left.
 9. Add the Operator `OR` and repeat the same expression with the parenthesis but select the unique value `secondary`
 10. The finished expression should be  `(  "highway"  =  'primary' )  OR  ( "highway"  =  'secondary'  )`
-11. Select a color and thickness for the line so it is distinguishable from the administrative boundaries (e.g. yellow; keep in mind that some colors have conventional associations; blue for water for example).
+11. Select a colour and thickness for the line so it is distinguishable from the administrative boundaries (e.g. yellow; keep in mind that some colors have conventional associations; blue for water for example).
 
 ---
 
@@ -101,10 +97,10 @@ Now, as a final touch, let's select a symbol for the health facilities:
 4. Scroll down until you see the SVG-Symbol browser.
 5. In the search bar, enter 'hospital'
 6. Select one of the SVG-Symbols at your disposal
-7. Adjust the color to red.
+7. Adjust the colour to red.
 8. Click Apply and Ok.
 
-Now we have assigned a symbol for each layer at our disposal. Look at the map you created and decide if you want to adjust any symbology to make the map easier to read. Do you need to change some colours? Are the layers ordered in a way that the information is available? Is the font size appropriate or do they cover up too much information?
+Now we have assigned a symbol for each layer at our disposal. Look at the map you created and decide if you want to adjust any symbology to make the map easier to read. Do you need to change some colours? Are the layers ordered in a way that the information is visible? Is the font size appropriate, or does it cover up too much information?
 
 __Bonus Step__: [Adding a basemap](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html) can help potential readers orienting themselves.
 
@@ -112,9 +108,9 @@ Now the Map should be ready for a print layout.
 
 ### Part 2: Creating the print layout
 
-Once you are happy with the symbolization and colors of your data, the next step is to create a print layout. By adding additional information such as a title, data sources, projection, description, etc. you provide your audience with the means to contextualise and evaluate the map and it's content by themselves.
+Once you are happy with the symbolization and colours of your data, the next step is to create a print layout. By adding additional information such as a title, data sources, projection, description, etc. you provide your audience with the means to contextualise and evaluate the map and it's content by themselves.
 
-1. Open a new print layout abd give it a name (e.g. Ghana Map with hospitals). A new window will open with a blank canvas and a different set of tools. This is the print layout designer.
+1. Open a new print layout and give it a name (e.g. Ghana Map with hospitals). A new window will open with a blank canvas and a different set of tools. This is the print layout designer.
     - On the left, you will find a toolbar with tools to add and move items on the print layout canvas.
     - On the right you will find a list of items you added to the print layout (it is still empty). Beneath this, you will find a tab called __"item properties"__. This is where you modify the items on your print layout (e.g. enter the text for a text box or change the font).
 2. Insert a new map by clicking on ![New Map Icon](/fig/30.30.2_print_layout_insert_map_icon.png) (`Add Map`) on the left toolbar, and drawing a rectangle on the print canvas. [Video](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html#adding-a-new-map)
@@ -122,7 +118,7 @@ Once you are happy with the symbolization and colors of your data, the next step
 4. Let's add a title:
     - Click on ![Add text icon](/fig/30.30.2_print_layout_add_text.png) (`Add text`)
     - Drag a rectangle on the canvas
-    - In the items properties window on the right, you will find a text box with the text "Lorem ipsum". Here you can enter your map title (e.g.: Map of Ghana with roads and hospitals).
+    - In the item properties window on the right, you will find a text box with the text "Lorem ipsum". Here you can enter your map title (e.g. Map of Ghana with roads and hospitals).
     - Adjust the font size: Click on the __Font__ dropdown menu and adjust the font size for a title (25p or more). Adjust the text box if necessary.
 5. Let's add a legend:
     - Click on  ![Add legend icon](/fig/30.30.2_print_layout_add_legend.png) (`Add legend`). 
@@ -132,7 +128,7 @@ Once you are happy with the symbolization and colors of your data, the next step
 6. Now, let's add a scale bar:
     - Click on ![Add Scale bar icon](/fig/30.30.2_print_layout_add_scale_bar.png) (`Add Scale bar`)
     - Draw a rectangle on the map and position the scale bar on the edge of the map. You can adjust the scale bar units (meters, kilometers, ...), the fixed segment width (50 km, 75 km, 100 km, ...) and the number of segments (to the right).
-7. Let's add North arrow:
+7. Let's add a north arrow:
     - Click on ![Add North Arrow Icon](/fig/30.30.2_print_layout_add_orientation.png) (`Add North Arrow`). 
     - Drag a rectangle on the print layout. Adjust the size and location of the north arrow. You can also change the icon in the item properties.
 8. Let's add a logo (for example, the IFRC logo or the logo of your national society):
@@ -179,4 +175,4 @@ If you are finished with the main map, click on the map and navigate to the item
 7. Click on the `+`-button to add a new overview.
 8. In the "__Map Frame__"-option, select "__Map 1__". This will show the frame of the main map on your overview map.
 
-Congratulations! You have finished your first map!
+Congratulations! You have finished your first map.

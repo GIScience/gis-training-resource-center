@@ -5,7 +5,7 @@
 __🔙[Back to Homepage](/content/intro.md)__
 
 
-Spatial data classification in GIS involves categorizing geographic information into distinct groups or classes based on shared characteristics. This process enhances the organization and interpretation of spatial data.
+Spatial data classification in GIS involves categorising geographic information into distinct groups or classes based on shared characteristics. This process enhances the organization and interpretation of spatial data.
 
 The attributes of geospatial data are stored in a specific column within the attribute table. Essentially, we choose a column containing the specific characteristics of interest, allowing QGIS to group the data based on these selected attributes.
 
@@ -20,7 +20,7 @@ Basic classification. Source:
 
 ## Single symbol classification
 
-By default, QGIS visualizes all layers in the `Single symbol` setting. This means all the features of a layer are visualized the same. In this setting, you can change many parameters like colour or opacity __but you can not classify any data!__
+By default, QGIS visualises all layers in the `Single symbol` setting. This means all the features of a layer are visualised the same. In this setting, you can change many parameters like colour or opacity __but you can not classify any data!__
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Single_symbol_video.mp4"></video>
 
@@ -30,8 +30,8 @@ __To adjust the style of a layer...__
 2. Click on `Symbology`.
 3. Confirm that the layer setting is on `Single Symbol`.
 4. Select the colour of your choice in the drop-down menu. For more colour options select in the drop-down menu `Choose Color`.
-5. *Optional*:. You can adjust the opacity/ transparency of the layer. This can be very useful when you want to show multiple overlapping layers.
-6. *Optional*: Here you can set the unit type. This is useful when you want to visualize points in a certain size, for example.
+5. *Optional*: You can adjust the opacity/transparency of the layer. This can be very useful when you want to show multiple overlapping layers.
+6. *Optional*: Here you can set the unit type. This is useful when you want to visualise points in a certain size, for example.
 7. *Optional:* Here you can find standard and previously used styles quickly.
 8. Click `Apply` to put your adjustment into effect.
 9.  Click `OK` to close the window.
@@ -47,11 +47,11 @@ align: center
 Adjust the style of a layer.
 ```
 
-## Categorized classification
+## Categorised classification
 
-Categorized classification in QGIS groups spatial data into distinct categories based on specific attributes. This classification enhances the organization and interpretation of geospatial information for clearer insights.
+Categorised classification in QGIS groups spatial data into distinct categories based on specific attributes. This classification enhances the organization and interpretation of geospatial information for clearer insights.
 
-Categorized classification is usually used for __nominal__ and __ordinal__ scaled data.
+Categorised classification is usually used for __nominal__ and __ordinal__ scaled data.
 
 | Data Scale | Definition| Example | Typical Data Format |
 |---|---|---|---|
@@ -65,30 +65,30 @@ __To classify data in categories…__
 1.  Right-click on your layer.
 2. Click on `Symbology`.
 3. Click on `Categorized`.
-4. In the `Value` dropdown menu, select the column based on which you want to categorize your data.
+4. In the `Value` dropdown menu, select the column based on which you want to categorise your data.
 5. Further down the window click on `Classify`.  Now you should see all unique values or attributes of the selected column in `Value`. To add or delete single values use the `-` and `+` buttons. 
 6. *Optional*: In the `Symbol` dropdown menu, you can select the colours and symbols you want to use
 7. *Optional*: In the `Color ramp` dropdown menu, you can specify the range of colours you want to use
-8. *Optional*: You can open the panel `Layer Rendering` on the button of the window. Here you can adjust the opacity/ transparency of the layer.
+8. *Optional*: You can open the panel `Layer Rendering` on the button of the window. Here you can adjust the opacity/transparency of the layer.
 9. Click `Apply` to put your adjustment into effect.
 10. Click `OK` to close the window.
 
 
 ```{figure} /fig/Categorized_district_map_SierraLeone.png
 ---
-name: Categorized classification
+name: Categorised classification
 align: center
 ---
-Categorized classification.
+Categorised classification.
 ```
 
 ## Graduated classification
 
-Graduated classification in GIS involves categorizing spatial data into classes or ranges based on a progression of values. This method is particularly useful for visualizing quantitative data, allowing for the differentiation of intensity, density, or magnitude across a spectrum, facilitating a nuanced representation of geographic phenomena.
+Graduated classification in GIS involves categorising spatial data into classes or ranges based on a progression of values. This method is particularly useful for visualising quantitative data, allowing for the differentiation of intensity, density, or magnitude across a spectrum, facilitating a nuanced representation of geographic phenomena.
 
 ### Graduated classification statistic one-o-one
 
-Graduated classification is used for quantitative data usually __interval__ or __ratio__ scaled.
+Graduated classification is usually used for quantitative data that is __interval__ or __ratio__ scaled.
 
 | Data Scale                  | Definition                                               | Example                     | Typical Data Format  |
 |-----------------------------|----------------------------------------------------------|-----------------------------|----------------------|
@@ -115,7 +115,7 @@ align: center
 ---
 Histogramm of population data. Source:
 ```
-However, if we want to show on a map which districts have a higher population than others, we need to classify the districts.
+However, if we want to show which districts have a higher population than others on a map, we need to classify the districts.
 
 
 There are __seven__ ways in QGIS to split quantitative data into classes.  The four most important ones are: __Equal intervals__, __Quantile__, __Natural breaks__, __Manual__.
@@ -145,11 +145,11 @@ Natural Breaks is an optimal classification method that aims to minimize within-
 :::
 
 :::{tab-item} Manual
-Manual classification allows users to set one or all of the class breaks based on specific needs. This approach is useful when certain break points need to be predetermined, such as aligning with the mean or maintaining consistency across a series of maps. Manual classification is recommended when other methods provide a good solution but may benefit from slight adjustments to better suit specific requirements or visualizations.
+Manual classification allows users to set one or all of the class breaks based on specific needs. This approach is useful when certain break points need to be predetermined, such as aligning with the mean or maintaining consistency across a series of maps. Manual classification is recommended when other methods provide a good solution but may benefit from slight adjustments to better suit specific requirements or visualisations.
 :::
 
 :::{tab-item} Logarithmic scale
-Logarithmic scale classification is employed when the data spans multiple orders of magnitude, and a linear scale may not effectively represent the variations. This scale applies logarithmic transformation to the data, compressing larger values while expanding smaller ones. It is useful for visualizing data with exponential growth or decay. However, interpreting values on a logarithmic scale may require a nuanced understanding. Consider using a logarithmic scale when there is a wide range of values, and a linear scale may obscure important patterns or trends.
+Logarithmic scale classification is employed when the data spans multiple orders of magnitude, and a linear scale may not effectively represent the variations. This scale applies logarithmic transformation to the data, compressing larger values while expanding smaller ones. It is useful for visualising data with exponential growth or decay. However, interpreting values on a logarithmic scale may require a nuanced understanding. Consider using a logarithmic scale when there is a wide range of values, and a linear scale may obscure important patterns or trends.
 :::
 
 :::{tab-item} Pretty Breaks
@@ -157,7 +157,7 @@ Pretty Breaks is a classification method designed to create visually appealing a
 :::
 
 :::{tab-item} Standard Deviation
-Standard Deviation classification is a method that determines class breaks based on the standard deviation of the data values. This approach organizes data into classes by considering the distribution of values around the mean. Each class represents a certain number of standard deviations from the mean, providing a statistical basis for categorizing data. Standard Deviation classification is effective when wanting to highlight variability within the dataset. However, it's important to consider the nature of the data distribution and whether this method aligns with the analytical goals of the map
+Standard Deviation classification is a method that determines class breaks based on the standard deviation of the data values. This approach organizes data into classes by considering the distribution of values around the mean. Each class represents a certain number of standard deviations from the mean, providing a statistical basis for categorising data. Standard Deviation classification is effective when wanting to highlight variability within the dataset. However, it's important to consider the nature of the data distribution and whether this method aligns with the analytical goals of the map
 :::
 
 ::::
@@ -189,7 +189,7 @@ Graduated classification. Source:
 9. *Optional*: In the `Symbol` dropdown menu you can select the colours and symbols you want to use.
 10. *Optional*: In the `Color ramp` dropdown menu you can specify the range of colours you want to use. To see all color ramps click on the down arrow of the `Color ramp` -> `All Color Ramps`.
 11. *Optional*: Under `Legend Format` you can adjust how precise the range of the classes will be displayed in the legend. Usually, it is practical to not use too complicated numbers in the legend.
-12. *Optional*: You can open the panel `Layer Rendering` on the button of the window. Here you can adjust the opacity/ transparency of the layer.
+12. *Optional*: You can open the panel `Layer Rendering` on the button of the window. Here you can adjust the opacity/transparency of the layer.
 13. Click `Apply` to put your adjustment into effect.
 14. Click `OK` to close the window.
 
