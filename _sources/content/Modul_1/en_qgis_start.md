@@ -5,17 +5,13 @@ __🔙[Back to Homepage](/content/intro.md)__
 **Competences:**
 
 - What is QGIS?
-- Introducing QGIS: Interface and further basic functionalities
-
-## What is QGIS?
-
-QGIS is an __open source geoinformation system software__. That means the source code is available for everyone, making QGIS a free application. 
-You may __view, edit, capture and analyze spatial data or create printable maps__ with it. QGIS was created in 2002 and is a project of volunteers. And it is __constantly changing__.
+- QGIS and basic functionality
 
 ## Introducing QGIS
 
+- QGIS is an __open source geoinformation system software__. That means the source code is available for everyone, making QGIS a free application. 
 - QGIS is a __desktop software__: that means you get a program that opens up on your computer as a window with buttons you can click, forms you can fill out to do tasks, and it's generally a visual interactive experience. 
-
+- You may __view, edit, capture and analyze spatial data or create printable maps__ with it. QGIS was created in 2002 and is a project of volunteers. And it is __constantly changing__.
 - QGIS is backed by a __large community of users__, so it’s easy to find solutions to technical issues by using QGIS forums, blog and subreddit, which are listed [here](content/Wiki/en_qgis_common_errors_and_Issues).
 
 ___
