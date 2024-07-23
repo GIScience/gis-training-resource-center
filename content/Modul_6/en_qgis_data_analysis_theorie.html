@@ -589,7 +589,7 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#selecting-appropriate-locations-according-to-a-set-of-criteria">Selecting appropriate locations according to a set of criteria</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpolation">Interpolation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#idw-interpolation-inverse-distance-weighted">IDW-Interpolation (Inverse Distance Weighted)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#idw-interpolation-inverse-distance-weighted">IDW Interpolation (Inverse Distance Weighted)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spline-interpolation">Spline Interpolation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#triangulated-irregular-network">Triangulated Irregular Network</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kriging">Kriging</a></li>
@@ -611,17 +611,13 @@ document.write(`
 <h1>Data Analysis with QGIS<a class="headerlink" href="#data-analysis-with-qgis" title="Permalink to this heading">#</a></h1>
 <p>🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧</p>
 <p><strong>Competences</strong>:</p>
-<p>This Module covers a general understanding of data analysis, how to create statistics, create buffers, heatmaps,
-and how to break rivers, roads, or areas into segments. The following modules will cover more complex analysis
+<p>This module covers how to perform general data analysis, calculate statistics, create buffers, produce heatmaps,
+and divide rivers, roads, or areas into segments. The following modules will cover more complicated data analysis
 methods.</p>
 <!--ADD: Break rivers into segments is not done yet! EN-->
 <section id="data-spatial-analysis">
 <h2>Data &amp; Spatial Analysis<a class="headerlink" href="#data-spatial-analysis" title="Permalink to this heading">#</a></h2>
-<p>Even in a single layer, a lot of analysis is possible. However, sometimes the things we want to analyse are <strong>split
-across</strong> multiple layers. In order to get these insights we use the spatial and non spatial GIS-processing tools we
-learned in the previous modules. In this module, we will look how to apply these tools, collect and work with data
-to create meaningful insights. We will go over a few examples of data analysis that are common in humanitarian
-work.</p>
+<p>Even with a single layer, extensive analysis is possible. However, often the information we need to analyse is spread across multiple layers. To gain these insights, we use the spatial and non-spatial GIS processing tools we learned in previous modules. In this module, we will explore how to apply these tools, collect and work with data, and create meaningful insights. We will also review several examples of data analysis commonly used in humanitarian work.</p>
 <section id="spatial-analysis">
 <h3>Spatial analysis<a class="headerlink" href="#spatial-analysis" title="Permalink to this heading">#</a></h3>
 <figure class="align-center" id="spatial-analysis-using-multiple-layers-example">
@@ -651,16 +647,13 @@ collected the data</strong>, <strong>and how the data was collected</strong>.</p
 attributes show and what are they called?</p></li>
 <li><p>Now you can start visualising the data:</p>
 <ul class="simple">
-<li><p>You can visualize the data cartographically by assigning or categorizing the data using symbols</p></li>
+<li><p>You can visualise the data cartographically by assigning or categorising the data using symbols</p></li>
 <li><p>You can create charts from the attribute table</p></li>
 <li><p>You can look for patterns, averages, outliers</p></li>
 </ul>
 </li>
 </ol>
-<p>We are usually looking for ways to <strong>describe</strong> our data to an audience in some ways. Sometimes spatial analysis
-will be used to provide recommendations for activities. Considering the amount of data available online, it is
-always important to take a step back and gain perspective when facing this knowledge, these capacities, as well as
-the data itself before rushing in to manipulate it:</p>
+<p>We are often seeking ways to <strong>describe</strong> our data to an audience. Sometimes, spatial analysis will be used to provide recommendations for activities. Given the vast amount of data available online, it is important to take a step back and gain perspective on this knowledge, these capabilities, and the data itself before rushing to manipulate it:</p>
 <ul class="simple">
 <li><p><strong>Reliability</strong>: Can I trust this data?</p></li>
 <li><p><strong>Interest</strong>: Do I need this data?</p></li>
@@ -671,11 +664,11 @@ the data itself before rushing in to manipulate it:</p>
 <li><p><strong>Date</strong>: How old is this data?</p></li>
 <li><p><strong>Sensitivity</strong>: Is this data sensitive?</p></li>
 </ul>
-<p>With spatial analysis, you can build predictive models to plan ahead of disasters. <strong>BUT: Not all analysis is
-complex! Just knowing how many features are in a layer is useful.</strong> Simple analysis includes:</p>
+<p>With spatial analysis, you can build predictive models to plan ahead of disasters. <strong>HOWEVER: Not all analysis is
+complicated! Just knowing how many features are in a layer is useful.</strong> Simple data analysis includes:</p>
 <ul class="simple">
 <li><p>Ranking</p></li>
-<li><p>Categorizing</p></li>
+<li><p>Categorising</p></li>
 <li><p>Above/below threshold</p></li>
 <li><p>Affected Areas</p></li>
 <li><p>Population distribution</p></li>
@@ -716,7 +709,7 @@ Unit Problem</strong>, where the results look different depending on the unit of
 </figcaption>
 </figure>
 <ul class="simple">
-<li><p><strong>Spatial analyses</strong> are performed on spatialized phenomena such as: presence/absence of the phenomenon, its relationship with other phenomena or entities, distribution in space. They are performed on the geometry and position of elements, as well as on their relationship with other elements. Spatial analyses can create new values or elements.</p>
+<li><p><strong>Spatial analyses</strong> are performed on spatialised phenomena such as: presence/absence of the phenomenon, its relationship with other phenomena or entities, distribution in space. They are performed on the geometry and position of elements, as well as on their relationship with other elements. Spatial analyses can create new values or elements.</p>
 <ul>
 <li><p>For example: crossing two satellite images to extract flooded areas between two dates; or crossing latrine and water catchment areas in a refugee camp; using a digital elevation model to determine which buildings have a high flooding risk.</p></li>
 </ul>
@@ -732,7 +725,7 @@ Unit Problem</strong>, where the results look different depending on the unit of
 </section>
 <section id="length-surface-circumference">
 <h2>Length, Surface, Circumference<a class="headerlink" href="#length-surface-circumference" title="Permalink to this heading">#</a></h2>
-<p>Knowing how big an area is, or how long road sections is already an importand analysis. For example, you can know how much of a road network is inaccessible, or how much area is affected by flooding.</p>
+<p>Simply knowing the size of an area or the length of a road section is valuable information. For example, you can determine how much of a road network is inaccessible or how much area is affected by flooding.</p>
 <p>These geometrical attributes can be calculated using the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Modul_5/en_qgis_non_spatial_tools.html?highlight=field+calculator#calculate-field"><strong>field calculator</strong></a> or the processing tool <strong>“Add geometry attributes”</strong>.</p>
 <p>The field calculators has the following functions to calculate geometry attributes as new fields in the attribute table:</p>
 <table class="table">
@@ -766,8 +759,8 @@ Unit Problem</strong>, where the results look different depending on the unit of
 <p>In the attribute table, you will find a new column called <code class="docutils literal notranslate"><span class="pre">Area</span></code> with the respective area for each feature.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The <strong>unit of measurement</strong> of the calculated area depends on the <strong>distance unit settings</strong> of the current <strong>project’s CRS</strong> (metrical or geographic). In most cases you want metres or kilometers. Make sure the units of your CRS are metres to get the correct values.</p>
-<p>You can check this by opening the CRS selector (bottom right corner) and reading the information of your selected CRS.</p>
+<p>The <strong>unit of measurement</strong> of the calculated area depends on the <strong>distance unit settings</strong> of the current <strong>project’s CRS</strong> (metrical or geographic). In most cases you want metres or kilometres. Make sure the units of your CRS are metres to get the correct values.</p>
+<p>You can check this by opening the CRS selector (in the bottom right corner) and reading the information of your selected CRS.</p>
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -806,7 +799,7 @@ Example: Statistics by categories<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">In this example we have a road network which has been intersected with a flood extent. A new field (“Flood”) has been calculated containing information wether the road is flooded or not (Y=flooded, N=not flooded). The length of each road has been calculated using the <code class="docutils literal notranslate"><span class="pre">$length</span></code> function in the field calculator as new column called “Length”.<br />
+<p class="sd-card-text">In this example we have a road network which has been intersected with a flood extent. A new field (“Flood”) has been calculated containing information whether the road is flooded or not (Y=flooded, N=not flooded). The length of each road has been calculated using the <code class="docutils literal notranslate"><span class="pre">$length</span></code> function in the field calculator as new column called “Length”.<br />
 We want to calculate the total length of flooded and unflooded road respectively.</p>
 <ol class="arabic simple">
 <li><p class="sd-card-text">Open the “Statistics by category”-tool</p></li>
@@ -822,7 +815,7 @@ We want to calculate the total length of flooded and unflooded road respectively
 </div>
 </details><div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>You can add a table of the statistics to your print layout by using the “<strong>Add attribute table</strong>”-tool in the print layout composer</p>
+<p>You can add a table of the statistics to your print layout by using the “<strong>Add attribute table</strong>” tool in the print layout composer</p>
 </div>
 <blockquote>
 <div><p>Insert statistics examples</p>
@@ -840,28 +833,28 @@ We want to calculate the total length of flooded and unflooded road respectively
 <h2>Density Map Analysis<a class="headerlink" href="#density-map-analysis" title="Permalink to this heading">#</a></h2>
 <p>Density maps are very useful in communicating the <strong>intensity of a phenomenon in an area</strong>. Point data is <strong>spatially aggregated</strong> to show the amount of incidents in that area.
 <strong>For example</strong>, number of schools or number of disease cases.</p>
-<p>It is important to consider that most demographic or economic data needs to be <strong>normalized</strong> (e.g. number of inhabitants). To assess the significance of the number of schools, you will need to know how the population of the area; so the amount of schools per 1,000 inhabitants, or the number of disease cases per 100 persons, for example.</p>
-<p>There are a few different types of density maps. The most common are heatmaps and hexagon grid maps. In both cases, the intensity of a phenomenon is calculcated with point data (rarely with lines or polygons).</p>
+<p>It is important to consider that most demographic or economic data needs to be <strong>normalised</strong> (e.g. number of inhabitants). To assess the significance of the number of schools, you will need to know how the population of the area; so the amount of schools per 1,000 inhabitants, or the number of disease cases per 100 persons, for example.</p>
+<p>There are a few different types of density maps. The most common are heatmaps and hexagon grid maps. In both cases, the intensity of a phenomenon is calculated with point data (rarely with lines or polygons).</p>
 <blockquote>
 <div><p>discrete vs. continuous?</p>
 </div></blockquote>
 <section id="heatmaps">
 <h3>Heatmaps<a class="headerlink" href="#heatmaps" title="Permalink to this heading">#</a></h3>
-<p>Heat maps use features in a dataset to calculate the <strong>relative density of points</strong> on a map. The density is displayed as a colour ramp with colors ranging from “cool” (low density) to “hot” (high density). Heatmaps are useful when you have a large number of features covering an area with areas <strong>where these features cluster together</strong> and help us visualize <strong>spatial patterns</strong> of a layer.</p>
+<p>Heat maps use features in a dataset to calculate the <strong>relative density of points</strong> on a map. The density is displayed as a colour ramp with colours ranging from “cool” (low density) to “hot” (high density). Heatmaps are useful when you have a large number of features covering an area with areas <strong>where these features cluster together</strong> and help us visualise <strong>spatial patterns</strong> of a layer.</p>
 <figure class="align-default" id="point-map-to-heat-map-example">
 <a class="reference internal image-reference" href="../../_images/point_map_to_heat_map_example.png"><img alt="../../_images/point_map_to_heat_map_example.png" src="../../_images/point_map_to_heat_map_example.png" style="height: 300px;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 164 </span><span class="caption-text">Example of a point map (left) to a heat map (right)</span><a class="headerlink" href="#point-map-to-heat-map-example" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>To create a heatmap you first need a layer containing data points or ‘samples’. These points are distributed in an area with some areas containing more than others. The <strong>density</strong> of the points in space determines the intensity of the color on the heat map.</p>
-<p>In QGIS, there are two methods to create heatsmaps. The first method uses the symbology tab and is generally a lot faster. The second method uses the interpolation tool <strong>“Heatmap (Kernel Density Estimation)”</strong> and offers more parameters to adjust. The advantage of the processing tool is that you can set a radius using metric units (for example the number of points in a <strong>100 Meters</strong> radius compared to using the millimeters or pixels of your computer screen) and set a variable radius that is determined by another attribute. The next section will discuss the creation of heatmaps using the symbology tab. A guide on how to create a heatmap using the processing tool can be found <span class="xref myst">here</span></p>
+<p>To create a heatmap you first need a layer containing data points or ‘samples’. These points are distributed in an area with some areas containing more than others. The <strong>density</strong> of the points in space determines the intensity of the colour on the heat map.</p>
+<p>In QGIS, there are two methods to create heatmaps. The first method uses the symbology tab and is generally a lot faster. The second method uses the interpolation tool <strong>“Heatmap (Kernel Density Estimation)”</strong> and offers more parameters to adjust. The advantage of the processing tool is that you can set a radius using metric units (for example the number of points in a <strong>100 Meters</strong> radius compared to using the millimetres or pixels of your computer screen) and set a variable radius that is determined by another attribute. The next section discusses the creation of heatmaps using the symbology tab. A guide on how to create a heatmap using the processing tool can be found <span class="xref myst">here</span></p>
 <blockquote>
 <div><p>insert link</p>
 </div></blockquote>
 <section id="using-the-symbology-tab-to-create-a-heatmap">
 <h4>Using the symbology tab to create a heatmap<a class="headerlink" href="#using-the-symbology-tab-to-create-a-heatmap" title="Permalink to this heading">#</a></h4>
-<p>You can create a heatmap in the <strong>symbology tab</strong> of a point or polyline layer. Navigate to the symbology tab and select the <code class="docutils literal notranslate"><span class="pre">Heatmap</span></code> symbolization method. Here, you can adjust the <strong>color ramp, radius, and maximum value</strong>. The <strong>radius</strong> (in Millimeters on your screen) determines the size of the circle that is used to aggregate the points. If it gets bigger more points can be aggregated and the ‘heat’ increases. The <strong>maximum value</strong> determines the value that is given the ‘hottest’ color. By default, it is set to the highest number of aggregated points. For example, you can <strong>set a threshold</strong> above which everything has the “hottest” color. Reducing it changes the visualization drastically.</p>
+<p>You can create a heatmap in the <strong>symbology tab</strong> of a point or polyline layer. Navigate to the symbology tab and select the <code class="docutils literal notranslate"><span class="pre">Heatmap</span></code> symbolisation method. Here, you can adjust the <strong>colour ramp, radius, and maximum value</strong>. The <strong>radius</strong> (in millimetres on your screen) determines the size of the circle that is used to aggregate the points. If it gets bigger more points can be aggregated and the ‘heat’ increases. The <strong>maximum value</strong> determines the value that is given the ‘hottest’ colour. By default, it is set to the highest number of aggregated points. For example, you can <strong>set a threshold</strong> above which everything has the “hottest” colour. Reducing it changes the visualisation drastically.</p>
 <figure class="align-default" id="heatmap-example-with-different-radii-and-max-value">
 <a class="reference internal image-reference" href="../../_images/en_heatmap_radius_max_value_conf_example.png"><img alt="../../_images/en_heatmap_radius_max_value_conf_example.png" src="../../_images/en_heatmap_radius_max_value_conf_example.png" style="width: 700px;" /></a>
 <figcaption>
@@ -876,21 +869,21 @@ Assigning a weight to the samples<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Assigning weight to samplepoints can be useful when your dataset has additional information (such as the type of incident, or sampled amount of rainfall) and you want to integrate this information into your heatmap.</p>
+<p class="sd-card-text">Assigning weight to sample points can be useful when your dataset has additional information (such as the type of incident, or sampled amount of rainfall) and you want to integrate this information into your heatmap.</p>
 </div>
 </details></section>
 </section>
 <section id="hex-maps-hexagon-grids">
 <h3>Hex Maps (Hexagon Grids)<a class="headerlink" href="#hex-maps-hexagon-grids" title="Permalink to this heading">#</a></h3>
-<p>Hexagon grids are used to aggregate point incidents in order to normalize geographic data or to mitigate the modifiable area unit problem (problems arising from using irregular shaped polygons). In GIS, we commonly use rectangles (e.g. raster data) or <strong>hexagons</strong>, as these geometries can be repeat in an evenly spaced grid without leaving gaps.</p>
-<p>The advantage of using hexagons is that it is a polygon that closely resembles a <strong>circle</strong> (where the distance to the centre is equal at every point along the outline), but still <strong>leaves no gaps</strong> when placed as a <strong>grid</strong>. This means that it is also possible to use absolute values (no normalizations), since the spatial units have the same size.</p>
+<p>Hexagon grids are used to aggregate point incidents in order to normalise geographic data or to mitigate the modifiable area unit problem (problems arising from using irregular shaped polygons). In GIS, we commonly use rectangles (e.g. raster data) or <strong>hexagons</strong>, as these geometries can be repeat in an evenly spaced grid without leaving gaps.</p>
+<p>The advantage of using hexagons is that it is a polygon that closely resembles a <strong>circle</strong> (where the distance to the centre is equal at every point along the outline), but still <strong>leaves no gaps</strong> when placed as a <strong>grid</strong>. This means that it is also possible to use absolute values (no normalisation), since the spatial units have the same size.</p>
 <p>Another advantage is that you can use the hexagon grid as spatial units and combine multiple variables (for example, number of incidents per population size) or calculate indexes.</p>
 <blockquote>
 <div><p>WIKI: <strong>Hexagon grids</strong> are especially useful for density maps. For example, the number of conflict events or water points in an area.</p>
 </div></blockquote>
 <p>To create a hexagon grid map, you will first need to <span class="xref myst">create a hexagon grid</span>, by using the “<strong>Create Grid</strong>” vector tool.</p>
 <p>Next, you will need to join the point data with the hexagon grid. We want to know the amount of points that are inside of a hexagon cell. To count the number of points, we need to use the vector tool “<strong>Count points in polygon</strong>”. The result will be a hexagonal grid where each polygon has the a value for the number of points in that area.</p>
-<p>The final step will be to <strong>visualize</strong> the data by assigning a <strong>graduated symbology</strong> to the polygons. You can play around with the transparency of your layers to make more information visible.</p>
+<p>The final step will be to <strong>visualise</strong> the data by assigning a <strong>graduated symbology</strong> to the polygons. You can play around with the transparency of your layers to make more information visible.</p>
 <figure class="align-default" id="point-map-to-hex-map-example">
 <a class="reference internal image-reference" href="../../_images/point_to_hex_map_example.png"><img alt="../../_images/point_to_hex_map_example.png" src="../../_images/point_to_hex_map_example.png" style="width: 700px;" /></a>
 <figcaption>
@@ -911,7 +904,7 @@ Example video: Creating a hex map<div class="sd-summary-down docutils">
 <li><p class="sd-card-text">Select the horizontal and vertical spacing according to the scale of your map.</p></li>
 <li><p class="sd-card-text">Optional: Remove the unnecessary Polygons.</p></li>
 <li><p class="sd-card-text">Use the tool “<strong>Count points in Polygon</strong>” to add an attribute field with the number of points that are <em>inside</em> each hexagon cell. The <strong>Polygons</strong> field should be your reference layer. The new layer will have an attribute field called “<strong>NUMPOINTS</strong>”</p></li>
-<li><p class="sd-card-text">Assign a <strong>graduated</strong> symbology to the <code class="docutils literal notranslate"><span class="pre">Count</span></code>-layer. Select “<strong>NUMPOINTS</strong>” as the value and categorize the classes as you wish.</p></li>
+<li><p class="sd-card-text">Assign a <strong>graduated</strong> symbology to the <code class="docutils literal notranslate"><span class="pre">Count</span></code>-layer. Select “<strong>NUMPOINTS</strong>” as the value and categorise the classes as you wish.</p></li>
 </ol>
 <p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_creating_a_hex_map
 .mp4"></video></p>
@@ -947,7 +940,7 @@ Example video: Creating a hex map<div class="sd-summary-down docutils">
 <section id="pivoting-tables">
 <h3>Pivoting tables<a class="headerlink" href="#pivoting-tables" title="Permalink to this heading">#</a></h3>
 <!--ADD: Insert example of short form vs. long form or check the example figures-->
-<p>Sometimes, the tables are in a format that is not suitable to join. For example, you have multiple zones per land, making the field <code class="docutils literal notranslate"><span class="pre">CNTRY_NAME</span></code> not suitable for aggregation. In this case, it is useful to pivot the table. This means that the fields for the zones and their respective area size are aggregated under the country. The values of the column <code class="docutils literal notranslate"><span class="pre">ZONE</span></code> will be turned into Columns with the values for the area in these columns. Now you can aggregate this table with additional information that has data on countries.</p>
+<p>Sometimes, the tables are not in a suitable format for joining. For example, having multiple zones per country makes the CNTRY_NAME field unsuitable for aggregation. In such cases, pivoting the table is useful. This involves aggregating the fields for the zones and their respective area sizes under the country. The values in the ZONE column will be transformed into columns containing the area values. This way, you can aggregate this table with additional information that includes data on countries.</p>
 <figure class="align-default" id="table-pivot-1">
 <img alt="../../_images/en_table_pivot_1.png" src="../../_images/en_table_pivot_1.png" />
 <figcaption>
@@ -988,7 +981,7 @@ Example video: Creating a hex map<div class="sd-summary-down docutils">
 <blockquote>
 <div><p>insert links</p>
 </div></blockquote>
-<p>Spatial interpolation uses point data to estimate values at other unknown points. This is extremely useful for spatial pheonomena that are <span class="xref myst">continuous</span>, such as rainfall or temperature. For example, you have point data of the temperatures at weather stations, but you want to estimate the temperatures in between these points. Spatial Interpolation can estimate the temperature in between those points. This form of interpolation is called a <strong>statistical surface</strong>. Interpolation can be used to calculate elevation data, precipitation, snow accumulation, water table and population density for example.</p>
+<p>Spatial interpolation uses point data to estimate values at other unknown points. This is extremely useful for spatial phenomena that are <span class="xref myst">continuous</span>, such as rainfall or temperature. For example, you have point data of the temperatures at weather stations, but you want to estimate the temperatures in between these points. Spatial Interpolation can estimate the temperature in between those points. This form of interpolation is called a <strong>statistical surface</strong>. Interpolation can be used to calculate missing elevation data, precipitation, snow accumulation, water table, and population density.</p>
 <figure class="align-default" id="interpolation-example-temperature-heidelberg">
 <a class="reference internal image-reference" href="../../_images/interpolation_example_temperature.png"><img alt="../../_images/interpolation_example_temperature.png" src="../../_images/interpolation_example_temperature.png" style="width: 400px;" /></a>
 <figcaption>
@@ -996,21 +989,21 @@ Example video: Creating a hex map<div class="sd-summary-down docutils">
 </figcaption>
 </figure>
 <p>Interpolating data can be highly useful since an extensive data collection is costly and rarely possible. Data collection for continuous phenomena is usually conducted only at a small number of locations. Interpolation models use these points to calculate a raster surface with estimated values for each raster cell.</p>
-<p>There are many differnt interpolation methods, each suited for another type of phenomenon or able to take into account different characteristics. In GIS, the most commonly used interpolation methods are <strong>Spline interpolation</strong>, <strong>Inverse Distance Weighted Interpolation (IDW)</strong>, and <strong>Kriging</strong>. In the following subchapters, we will take a look at these methods, and discuss their strengths and shortcomings.</p>
+<p>There are many different interpolation methods, each suited for another type of phenomenon or able to take into account different characteristics. In GIS, the most commonly used interpolation methods are <strong>Spline interpolation</strong>, <strong>Inverse Distance Weighted Interpolation (IDW)</strong>, and <strong>Kriging</strong>. In the following subchapters, we will take a look at these methods, and discuss their strengths and shortcomings.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Remember that there is no interpolation method that can be applied to every situation. Some methods are more useful for particular inquiries or certain types of data. The method of interpolation you use should always depend on the type of data, phenomenon, and research interest you have.</p>
+<p>Remember that there is no interpolation method that can be applied to every situation. Some methods are more useful for particular problems or types of data. The method of interpolation you use should always depend on the type of data, phenomenon, and research question you have.</p>
 </div>
 <section id="idw-interpolation-inverse-distance-weighted">
-<h3>IDW-Interpolation (Inverse Distance Weighted)<a class="headerlink" href="#idw-interpolation-inverse-distance-weighted" title="Permalink to this heading">#</a></h3>
-<p>In the IDW interpolation method, the distance of a sample point to the point that is to be calculated dictates how much the value of the sample points influences the value of the unknown point. The weight of a point is assigned to sample points by assigning a weighting coefficient that dictates how much the influence of a sample point will drop as the distance increases. The further away the known sample point is located, the less influence it has on the point that is to be calculated.</p>
+<h3>IDW Interpolation (Inverse Distance Weighted)<a class="headerlink" href="#idw-interpolation-inverse-distance-weighted" title="Permalink to this heading">#</a></h3>
+<p>In the IDW interpolation method, the distance between a sample point and the point to be calculated determines how much the sample point’s value influences the unknown point’s value. A weighting coefficient is assigned to sample points, dictating how their influence decreases with increasing distance. The farther away a known sample point is, the less it influences the point being calculated.</p>
 <figure class="align-default" id="idw-interpolation-explanation-mitas-mitasova-1999">
 <a class="reference internal image-reference" href="../../_images/en_idw_explanation.png"><img alt="../../_images/en_idw_explanation.png" src="../../_images/en_idw_explanation.png" style="width: 500px;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 174 </span><span class="caption-text">Inverse Distance Weighted interpolation based on weighted sample point distance (left). Interpolated IDW surface from elevation vector points (right). (Source: Mitas, L., Mitasova, H. (1999). Spatial Interpolation. In: P.Longley, M.F. Goodchild, D.J. Maguire, D.W.Rhind (Eds.), Geographical Information Systems: Principles, Techniques, Management and Applications, Wiley.)</span><a class="headerlink" href="#idw-interpolation-explanation-mitas-mitasova-1999" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Keep in mind that IDW interpolation has a few <strong>disadvantages</strong>. For example, the quality of the calculated statistical surface decreases, if the distribution of sample points is uneven. Additionally, the highest and lowest values in the interpolated surface only occur at sample points, which is probably not the case in the real world. This often results in peaks or pits aroung the sample data points (see <span class="xref myst">IDW interpolatino example</span>) (adopted from the <a class="reference external" href="https://docs.qgis.org/2.18/de/docs/gentle_gis_introduction/spatial_analysis_interpolation.html">QGIS documentation</a>).</p>
+<p>Keep in mind that IDW interpolation has a few <strong>disadvantages</strong>. For example, the quality of the calculated statistical surface decreases, if the distribution of sample points is uneven. Additionally, the highest and lowest values in the interpolated surface only occur at sample points, which is probably not the case in the real world. This often results in peaks or pits around the sample data points (see <span class="xref myst">IDW interpolation example</span>) (adopted from the <a class="reference external" href="https://docs.qgis.org/2.18/de/docs/gentle_gis_introduction/spatial_analysis_interpolation.html">QGIS documentation</a>).</p>
 </section>
 <section id="spline-interpolation">
 <h3>Spline Interpolation<a class="headerlink" href="#spline-interpolation" title="Permalink to this heading">#</a></h3>
@@ -1033,7 +1026,7 @@ Example video: Creating a hex map<div class="sd-summary-down docutils">
 </section>
 <section id="outlook">
 <h2>Outlook<a class="headerlink" href="#outlook" title="Permalink to this heading">#</a></h2>
-<p>There are many analysis methods in GIS. However, setting up an analysis method can be quite time consuming, and creating a new analasys method for every research question makes it hard to compare the results of different analyses. This is why, <strong>model building</strong> and <strong>automation</strong> are used frequently when working in GIS data. A model can be seen as a analysis blueprint, that only needs input data to perform a certain type of analysis. Since the parameters are the same, and similar datasets are needed for the model to work properly, the results can be compared. If you are interested in model building and automation, check out <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Modul_7/en_qgis_automation_theory.html">module 7</a>.</p>
+<p>There are many analysis methods in GIS. However, setting up an analysis method can be quite time consuming, and creating a new analysis method for every research question makes it hard to compare the results of different analyses. This is why <strong>model building</strong> and <strong>automation</strong> are used frequently when working with GIS data. A model can be seen as a analysis blueprint that only needs input data to perform a certain type of analysis. Since the parameters are the same and similar datasets are needed for the model to work properly, the results can be compared. If you are interested in model building and automation, check out <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Modul_7/en_qgis_automation_theory.html">module 7</a>.</p>
 </section>
 </section>
 
@@ -1121,7 +1114,7 @@ Example video: Creating a hex map<div class="sd-summary-down docutils">
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#selecting-appropriate-locations-according-to-a-set-of-criteria">Selecting appropriate locations according to a set of criteria</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpolation">Interpolation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#idw-interpolation-inverse-distance-weighted">IDW-Interpolation (Inverse Distance Weighted)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#idw-interpolation-inverse-distance-weighted">IDW Interpolation (Inverse Distance Weighted)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spline-interpolation">Spline Interpolation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#triangulated-irregular-network">Triangulated Irregular Network</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kriging">Kriging</a></li>
