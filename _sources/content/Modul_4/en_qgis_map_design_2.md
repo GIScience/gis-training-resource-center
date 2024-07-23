@@ -1,6 +1,6 @@
 # Map Design: The Print layout
 
-The print layout in QGIS is where you design and finalize the map in order to print or export it as a PDF or format of your choice. Here you can add important elements such as the legend, a title, an explanatory text and everything you need to create a comprehensive map. By adding layout elements (legend, title, scale bar, sources, etc.) to a map, you provide your audience with necessary information to contextualise and evaluate the information shown on the map.
+The print layout in QGIS is where you design and finalise the map in order to print or export it as a PDF (or file format of your choice). Here you can add important elements such as the legend, title, explanatory text, and anything you need to create a comprehensive map. By adding layout elements (legend, title, scale bar, sources, etc.) to a map, you provide your audience with the necessary information to contextualise and evaluate the information shown on the map.
 
 1. Go to __Project > New Print Layout > enter a name for the new print layout > click OK__
 2. A new window with a blank print layout will appear.
@@ -13,18 +13,18 @@ name: Create Print Layout
 Create a new Print Layout
 ```
 
-## Map composition
+## Map Composition
 
-A good map guides the reader in understanding the information available on the map, makes the information easily accessible and is not overloaded with information.
+A good map guides the reader in understanding the information available on the map, makes the information easily accessible, and is not overloaded with information.
 
-In General, there are a few things to keep in mind when creating a map:
+In general, there are a few things to keep in mind when creating a map:
 
 - The main map should cover the largest portion of the page and be centred.
-- A complete map must have a legend, the sources, a title, the scale, as well as other information to contextualize the information presented on the map.
+- A complete map must have a legend, sources, title, scale, and neccessary other information to contextualize the information presented on the map.
 - Additional information, such as title, sources, scale bar, legend, orientation, etc. should be scaled accordingly.
     - Titles should be large so the reader can identify it as the main topic of the map.
     - Additional information should be smaller and moved out of the main focus of the page (e.g. at the bottom, to the sides, or in the corners).
-- A well structure page layout helps the reader discern the different information on the map and makes it easier to know where to look for certain information. Frames and boxes can structure the page layout. For example, a legend can be put on the bottom or to the right of the map.
+- A well-structure page layout helps the reader discern the different information on the map and makes it easier to know where to look for certain information. Frames and boxes can structure the page layout. For example, a legend can be put on the bottom or to the right of the map.
 
 <!--In the [next chapter](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_examples.html), we will take a look at good map design and discuss how to recreate design elements. -->
 
@@ -41,10 +41,10 @@ The interface of the Print Layout Composer
 2. __Dialer Tools__ (Save, New, Duplicate, Add items from template, Save template)
 3. __Navigation bar__ (Zoom, Refresh, Lock/Unlock elements)
 4. __Toolbar__ (Zoom, Select, Move in Map, Add new map/image/text/legend/scale/shape/...)
-5. __Feature Panel__: displays the elements added to the print layout
-6. __Advanced Options__: customize each element of the layer
+5. __Feature Panel__: Displays the elements added to the print layout
+6. __Advanced Options__: Customises each element of the layer
 
-The print layout manager also works with toolbars (on the left side of the screen), where you select the different tools (for example, to add images) and panels (on the right side of the screen), where you can change the settings of the tools or the elements you have added to the map. 
+The print layout manager also works with toolbars (on the left side of the screen), where you can select different tools (e.g. to add images) and panels (on the right side of the screen), where you can change the settings of the tools or the elements you have added to the map. 
 
 First of all, you should always set the size of your map:
 
@@ -54,7 +54,7 @@ First of all, you should always set the size of your map:
 
 ## Adding Elements to the Print Layout
 
-### Adding a New Map
+### Adding a new map
 
 - Add a new map by clicking on the ![](../fig/30.30.2_print_layout_insert_map_icon.png) `Add map`-button on the __toolbar on the left__ and drag a rectangle on the map canvas.  
 - To move the map on the canvas, simply __select the map__ and __drag__ it with your mouse
@@ -93,7 +93,7 @@ A title should describe the phenomenon represented on the map.
 width: 750px
 name: Add text to the print layout
 ---
-Adding text to the print Layout
+Adding text to the print layout
 ```
 
 :::{dropdown} Video: Adding a textbox
@@ -105,9 +105,9 @@ Adding text to the print Layout
 
 If you are working for an organisation, most likely you will add the logo of that organization on the maps you produce.
 
-1. Click on ![](../../fig/30.30.2_print_layout_add_image.png)`Add image`-tool in the left toolbar.
+1. Click on the ![](../../fig/30.30.2_print_layout_add_image.png)`Add image` tool in the left toolbar.
 2. Drag a rectangle on the canvas.
-3. In the __Item Properties__ tab, you will have the option to choose an SVG image from your SVG-library in QGIS or choose a __Raster image__. Most image files are Raster images.
+3. In the __Item Properties__ tab, you will have the option to choose an SVG image from your SVG-library in QGIS or choose a __Raster image__. Most image files are raster images.
 4. Select `Raster image` and click on the `...` to choose the location of the image.
 5. Your image will appear in the print layout. In order to make sure that the image does not get distorted, leave the `Resize Mode` on "Zoom".
 
@@ -117,7 +117,7 @@ If you are working for an organisation, most likely you will add the logo of tha
 
 ### Adding a legend
 
-Before adding a legend, make sure that
+Before adding a legend, make sure that:
 
 - All your layers have an explicit name ("rivers", "primary roads",...)
 - You use the final version of your map (no more layers to add, move, rename or modify). You can still modify them later but you will have to redo the legend.
@@ -135,7 +135,7 @@ Adding a legend to the print layout
 In the __Item Properties__ panel, if you keep the __`Auto update`__ option checked, new layers added to your project will automatically be added to the legend but you cannot control them individually (rename if necessary, reorder ot remove items).  
 Once the option is unchecked, you can update the name of the layers, group them, remove or reorganise them, etc.
 
-If you have to many items on your legend, and they don't fit on your map horizontally, you can also split the legend into several columns by navigating through the Item Properties-panel, expand the `Columns`-section and increase the `Count`.
+If you have to many items on your legend, and they don't fit on your map horizontally, you can also split the legend into several columns by navigating through the Item Properties panel, expand the `Columns`-section, and increase the `Count`.
 
 :::: {tab-set}
 ::: {tab-item} Adding a legend
@@ -154,7 +154,7 @@ If you have to many items on your legend, and they don't fit on your map horizon
 
 :::{tab-item} Adding a two-column legend
 
-Sometimes the space on your map is not suited for a single vertical legend. In this case, it is useful to add multiple columns. Make sure to group the legend items logically so the vertical legend is easier to read.
+Sometimes the space on your map is not suited for a single vertical legend. In this case, it is useful to add multiple columns. Make sure to group the legend items logically so that the vertical legend is easier to read.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_multiple_columns_legend
 .mp4"></video>
@@ -190,7 +190,7 @@ There are many other options to customize the scale bar (change the font, colour
 width: 750px
 name: Add scale bar
 ---
-Add and customize the scale bar
+Add and customise the scale bar
 ```
 :::{dropdown}
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_print_layout_adding_scalebar
@@ -207,7 +207,7 @@ To create an overview map, you need to follow these steps:
 1. Make sure that you __lock the layers and layer styling__ for your main map
     - Navigate to the __item properties__ panel > 
 2. Prepare a __layer with national or subnational borders or important landmarks__ in your project (e.g: Administrative boundaries, Capitals). These should not be the same layers as your main map. If necessary, you can duplicate layers you wish to use on the overview map (such as administrative boundaries). Do not change the layers of your main map, if you intend to change the symbology later on.
-3. __Insert the overview map__ into your print layout, by using the ![](../../fig/30.30.2_print_layout_insert_map_icon.png)`Add Map`-tool (in the bottom right corner for example)
+3. __Insert the overview map__ into your print layout, by using the ![](../../fig/30.30.2_print_layout_insert_map_icon.png)`Add Map` tool (in the bottom right corner, for example)
 4. __Lock the new map__ in the Item properties panel
 5. Add a rectangle to display the extent of your main map
 
@@ -220,7 +220,7 @@ To create an overview map, you need to follow these steps:
 width: 500px
 name: Overview map preparation
 ---
-An overview map should show important landmarks and borders so the reader is able to locate the region shown on the map without having a lot of knowledge about the region.
+An overview map should show important landmarks and borders so the reader is able to locate the region shown on the map without having specific knowledge of the region.
 ```
 
 ```{figure} ../../fig/en_30.30.2_print_layout_add_overview_map.png
@@ -263,9 +263,9 @@ Once you are finished with the map composition, it is time to export export the 
 Make sure to check the map after exporting the PDF as some design elements might have changed in the exporting process.
 ```
 
-## Map templates
+## Map Templates
 
-Map templates can facilitate and reduce the creation of a print layout. Map templates save the arrangement of elements in the print layout. However, they do not save the layers and images of the project. These will need to be reconfigured again.
+Map templates can simplify and speed up the creation of a print layout by saving the arrangement of elements. However, they do not save the project's layers and images, which will need to be reconfigured each time.
 If you work for an organisation that frequently publishes maps, or you need to create several maps on the same topics but in different regions or times, you can use map templates to skip the arrangement of elements.
 
 ```{note}
@@ -300,8 +300,8 @@ You can drag and drop template-files (`.qpt`, QGIS template file) into QGIS or u
 
 :::{tab-item} Template directory
 
-The template directory is where QGIS is looking for layout templates. If you have templates saved here, you can load templates directly through the layout manager without selecting the file.
-On windows, the file path is `\Users\AppData\Roaming\QGIS\QGIS3\profiles\default\composer_templates`.
+The template directory is where QGIS stores layout templates. If you have templates saved here, you can load templates directly through the layout manager without selecting the file.
+On Windows computers, the file path is `\Users\AppData\Roaming\QGIS\QGIS3\profiles\default\composer_templates`.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_template_directory
 .mp4"></video>
@@ -311,9 +311,9 @@ On windows, the file path is `\Users\AppData\Roaming\QGIS\QGIS3\profiles\default
 ::::
 
 ```{tip}
-The layout manager in QGIS already has a dedicated location for map templates. On windows, the file path is `\Users\AppData\Roaming\QGIS\QGIS3\profiles\default\composer_templates`.
+The layout manager in QGIS already has a dedicated location for map templates. On Windows computers, the file path is `\Users\AppData\Roaming\QGIS\QGIS3\profiles\default\composer_templates`.
 If you save templates here, you can load templates directly through the layout manager without looking for the file.
-You can also add file paths in the QGIS-template settings.
+You can also add file paths in the QGIS template settings.
 ```
 
 ## The Atlas function (automatic map generation)
@@ -334,7 +334,7 @@ If you can't see the Atlas Tools, you must first activate the Atlas Toolbar unde
 
 ## Generating an Atlas
 
-An Atlas will generate a new page with the same map layout for each feature in a layer. For most purposes, it useful to first create a map layout with the elements such as legend, sources and overview map and then insert the map item that will be controlled by the Atlas. To generate an Atlas:
+An atlas will generate a new page with the same map layout for each feature in a layer. For most purposes, it useful to first create a map layout with the elements such as legend, sources and overview map and then insert the map item that will be controlled by the Atlas. To generate an atlas:
 
 1. Click on the ![](../../fig/30.30.2_print_layout_atlas_settings.png) `Atlas Settings`-button in the Atlas Toolbar.
 2. In the new window, activate the `Generate an Atlas` option.
@@ -345,10 +345,10 @@ An Atlas will generate a new page with the same map layout for each feature in a
 7. Scroll down until you see the option `Controlled by Atlas` and activate it.
 8. Now activate the preview of the Atlas in the __Atlas Toolbar__. Otherwise, the print layout will not update to show you the atlas page. You can click through each page to see how it looks. Depending on the amount of features on your map, they may take a while to render.
 9. Now you can adjust the __Margin options__ to best fit the readability of the map. By default, it is set to 10% and this should fit most purposes.
-10. Before printing or exporting the atlas make sure to check every page that other elements of the map do not cover the represented region.
+10. Before printing or exporting the atlas, make sure to check every page that other elements of the map do not cover the represented region.
 
 ```{Note}
-The only item in the print layout that is being controlled by the Atlas is the map we added (unless you specify otherwise in the item properties). The other elements of the map will be the same on every page.
+The only item in the print layout that is being controlled by the atlas is the map we added (unless you specify otherwise in the item properties). The other elements of the map will be the same on every page.
 ```
 
 :::{dropdown} Video: Setting up an Atlas

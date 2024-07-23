@@ -2,16 +2,16 @@
 
 🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
-This exercise is designed to apply the basics of map design from chapter 1, 2, and 3. Make sure to go through these chapter before starting this exercise. The corresponding subchapters and wiki-pages are linked if you need to refresh your memory.
+This exercise is designed to apply the basics of map design from Chapters 1, 2, and 3. Make sure to go through these chapters before starting this exercise. The corresponding subchapters and wiki-pages are linked if you need to refresh your memory.
 
 Read the guide carefully and download the exercise data from the Nexus.
 
-In the data folder, you will find several datasets.  The objective will be to create a comprehensive atlas with maps for each region in Cambodia detailing the flood extent, as well as road network (and affected roads) with all the necessary map elements. 
+In the data folder, you will find several datasets.  The objective is to create a comprehensive atlas with maps for each region in Cambodia showing the flood extent and road network (including affected roads), with all the necessary map elements. 
 
 :::{dropdown} Context: Flooding in Cambodia  
 
-The floodplains of the Mekong and the Tonle Sap System in Cambodia experience yearly flood pulses that bring nutrients and sustains the agriculture and fisheries. With the changing climate, the waterlevels of these floods have decreased, which leads to a reduced reverse flow, as well as a decrease in the flood duration of about 26 days (De Xun Cha et al. 2022). This trend will strain the food security in the region, affecting the livelihoods of a large part of the population. Combined with the decline of the yearly flood pulse, major flood events can cause national health crises, damage infrastructure, displace thousands of people and further exacerbate food security in the region.
-In 2013, following continuous rainfall in September, the Mekong and Tonle Sap Deltas flooded, displacing 144 thousand people. In 2011, more than 200 thousand people have been displaced due to floods. As of 2023, Cambodia has experienced major flood events in 2020, 2022 and 2023 (IDMC 2023). 
+The floodplains of the Mekong and the Tonle Sap System in Cambodia experience yearly flood pulses that bring nutrients which sustain agriculture and fisheries. With the changing climate, the water levels of these floods have decreased, leading to a reduced reverse flow and a decrease in the flood duration of about 26 days (De Xun Cha et al. 2022). This trend will strain the food security in the region, affecting the livelihoods of a large portion of the population. Combined with the decline of the yearly flood pulse, major flood events can cause national health crises, damage infrastructure, displace thousands of people, and further exacerbate food insecurity in the region.
+In 2013, following continuous rainfall in September, the Mekong and Tonle Sap Deltas flooded, displacing 144 thousand people. In 2011, more than 200,000 people have been displaced due to floods. Cambodia has experienced major flood events in 2020, 2022 and 2023 (IDMC 2023). 
 
 Sources: 
 Chua, S. D. X., Lu, X. X., Oeurng, C., Sok, T., & Grundy-Warr, C. (2022). Drastic decline of flood pulse in the Cambodian floodplains (Mekong River and Tonle Sap system). Hydrology and Earth System Sciences, 26(3), 609–625. https://doi.org/10.5194/hess-26-609-2022  
@@ -21,7 +21,7 @@ IDMC (International Displacement Monitoring Centre). (2022). Cambodia - Internal
 
 ## Objectives
 
-The data provided contains a shapefiles detailing the flood extent in October 2023, the road network, administrative boundaries, the Mekong and Tonle Sap Systems, as well as healthsites and airports. The goal will be to design a map where the flood extent, the road accessibility and important landmarks such as healthsites, settlements, and airports are visible.
+The data provided contains shapefiles detailing the flood extent in October 2023, the road network, administrative boundaries, the Mekong and Tonle Sap Systems, as well as health facilities and airports. The goal is to design a map where the flood extent, road accessibility, and important landmarks such as health facilities, settlements, and airports are visible.
 
 ## Available Datasets
 
@@ -35,13 +35,13 @@ If you need inspiration on how to style certain elements of your map, make sure 
 ## Step 1: Preparing the layers
 
 1. Load the layers into QGIS and make yourself familiar with the data by opening the attribute table () 
-2. Arrange them in a way that no layer is blocking 
+2. Arrange the layers such that no layer is blocked 
 
 ## Step 2: Set the symbology for the individual layers
 
 1. First, let's style the administrative boundaries. We want to keep it simple and keep the polygon of the adm1 with a transparent filling, but with a thicker outline. On top of that layer, we want to see the adm2 boundaries, but with a thinner (or even dashed) outline
 2. The flood extent needs to be immediately recognizable. Choose a colour and filling style (Simple Fill or hashed line fill)
-3. The river system and lake should be symbolized with a associative colour to be immediatly recognizable.
+3. The river system and lake should be symbolised with a associative colour to be immediately recognizable.
 4. The road network shapefile has the attribute `Flooded` with the Value `Y` if the extent of the flood crosses the road. Set the symbology of the road network so roads are easily distinguishable and that the reader can identify which roads are potentially flooded.
 5. Decide how you want to display settlements and health facilities (link to SVG-symbols)
 6. Set up the labels for the settlements and administrative districts
@@ -57,9 +57,9 @@ If you are happy with the styles you have set up for your layers, you can save t
 1. Add your Map to the Print Layout. Make sure to leave some space for the other map elements such as sources, legend, overview map, logo, etc.
 2. Adjust the Scale of the Map in the Item properties (if possible to a round number)
 3. Add a scale bar
-5. Add a title. The title should make clear what the map displays.
+5. Add a title. The title should make it clear what the map displays.
 4. Add a legend. Make sure to remove layers which are not visible on the map and rename the elements accordingly.
-5. Add an orientation.
+5. Add a compass to show map orientation.
 
 ## Step 3: Setting up the Overview Map
 
@@ -85,7 +85,7 @@ If you are happy with the layout of your print layout, don't forget to save it a
 
 ## Step 6: Exporting the map
 
-Once you are happy with the print layout, it is time to export the map as a PDF-file (link). Once exported, open the file in your PDF viewer and check if everything looks as intended. In QGIS, some elements of the map might change slightly, in the exporting process, so it is important to check before sending the map to your colleagues or publishing it. 
+Once you are happy with the print layout, it is time to export the map as a PDF-file (link). Once exported, open the file in your PDF viewer and check if everything looks as intended. In QGIS, some elements of the map might change slightly in the exporting process, so it is important to check before sending the map to your colleagues or publishing. 
 
 ```{Tip}
 To avoid too many changes when exporting the map, set the 
