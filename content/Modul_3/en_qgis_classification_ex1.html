@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Geodata Classification Exercise 2: Overview map of the prevalence of food insecurity in Sierra Leone &#8212; GIS Resource Training Center</title>
+    <title>Geodata Classification Exercise 2: Map of food insecurity in Sierra Leone &#8212; GIS Resource Training Center</title>
   
   
   
@@ -208,7 +208,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="en_qgis_data_classification.html">Geodata Classification</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Geodata Classification Exercise 2: Overview map of the prevalence of food insecurity in Sierra Leone</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Geodata Classification Exercise 2: Map of food insecurity in Sierra Leone</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="en_qgis_data_queries.html">Geodata Selection and Queries</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -558,7 +558,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Geodata Classification Exercise 2: Overview map of the prevalence of food insecurity in Sierra Leone</h1>
+    <h1>Geodata Classification Exercise 2: Map of food insecurity in Sierra Leone</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -583,11 +583,11 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="geodata-classification-exercise-2-overview-map-of-the-prevalence-of-food-insecurity-in-sierra-leone">
-<h1>Geodata Classification Exercise 2: Overview map of the prevalence of food insecurity in Sierra Leone<a class="headerlink" href="#geodata-classification-exercise-2-overview-map-of-the-prevalence-of-food-insecurity-in-sierra-leone" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="geodata-classification-exercise-2-map-of-food-insecurity-in-sierra-leone">
+<h1>Geodata Classification Exercise 2: Map of food insecurity in Sierra Leone<a class="headerlink" href="#geodata-classification-exercise-2-map-of-food-insecurity-in-sierra-leone" title="Permalink to this heading">#</a></h1>
 <section id="aim-of-the-exercise">
 <h2>Aim of the exercise<a class="headerlink" href="#aim-of-the-exercise" title="Permalink to this heading">#</a></h2>
-<p>This exercise aims to create an overview map of the distribition of food insecurity in Sierra Leone at district level. To do this, we will visualize both the distribution of food insecurity and key infrastructure elements such as hospitals, airports and roads.</p>
+<p>This exercise aims to create an overview map of the distribition of food insecurity in Sierra Leone at district level. To do this, we will visualise both the distribution of food insecurity and key infrastructure elements such as hospitals, airports and roads.</p>
 </section>
 <section id="relevant-wiki-articles">
 <h2>Relevant Wiki Articles<a class="headerlink" href="#relevant-wiki-articles" title="Permalink to this heading">#</a></h2>
@@ -605,7 +605,7 @@ document.write(`
 </section>
 <section id="data">
 <h2>Data<a class="headerlink" href="#data" title="Permalink to this heading">#</a></h2>
-<p>Download all datasets <strong><a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Modul_3/Modul_3_Ex_1_Sierra_Leone/Modul_3_Ex_1_Sierra_Leone.zip">here</a></strong> and save the folder on your computer. Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects. Under “data &gt; input” you find the following files:</p>
+<p>Download all datasets <strong><a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Modul_3/Modul_3_Ex_1_Sierra_Leone/Modul_3_Ex_1_Sierra_Leone.zip">here</a></strong> and save the folder on your computer. Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects. Under “data &gt; input” you will find the following files:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Sierra_leone_foodinsecurity_2015.shp</span></code> (Polygon)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Sierra_leone_borders.gpkg</span></code> (MultiLineString) GeoPackage</p>
@@ -625,11 +625,11 @@ document.write(`
 </section>
 <section id="tasks">
 <h2>Tasks<a class="headerlink" href="#tasks" title="Permalink to this heading">#</a></h2>
-<p>Our goal is to produce an overview of the 2015 food insecurity situation in Sierra Leone together with the display of main infrastructure elements. To achieve this, we will visualize the classification of total food insecurity together with airports, hospitals and primary roads in a map.</p>
+<p>Our goal is to produce an overview of the 2015 food insecurity situation in Sierra Leone together with the display of main infrastructure elements. To achieve this, we will visualise total food insecurity classifications alongside airports, hospitals, and primary roads in a map.</p>
 <ol class="arabic simple">
 <li><p>Open QGIS and create a <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch">new project</a> by clicking on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span></code></p></li>
 <li><p>Once the project is created save the project in the “project” folder of the “Ex_Sierra_Leone_foodinsecurity”. To do that click on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">as</span></code> and navigate to the folder. Name the project “Sierra_Leone_foodinsecurity”.</p></li>
-<li><p>Import the GeoPackages <code class="docutils literal notranslate"><span class="pre">Sierra_leone_borders.gpkg</span></code> and <code class="docutils literal notranslate"><span class="pre">Sierra_leone_infrastructure.gpkg</span></code> aswell as the shapefile <code class="docutils literal notranslate"><span class="pre">Sierra_leone_foodinsecurity_2015.shp</span></code> into your project via drag and drop (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop">Wiki Video</a>).
+<li><p>Import the GeoPackages <code class="docutils literal notranslate"><span class="pre">Sierra_leone_borders.gpkg</span></code> and <code class="docutils literal notranslate"><span class="pre">Sierra_leone_infrastructure.gpkg</span></code> as well as the shapefile <code class="docutils literal notranslate"><span class="pre">Sierra_leone_foodinsecurity_2015.shp</span></code> into your project via drag and drop (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop">Wiki Video</a>).
 Or by clicking <code class="docutils literal notranslate"><span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code>: Click on the three dots <img alt="" src="../../_images/Three_points.png" /> and navigate to “Sierra_leone_borders.gpkg” in your file Browser. Select the file and click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Back in QGIS click <code class="docutils literal notranslate"><span class="pre">Add</span></code> (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab">Wiki Video</a>).</p></li>
 </ol>
 <div class="admonition attention">
@@ -638,7 +638,7 @@ Or by clicking <code class="docutils literal notranslate"><span class="pre">Laye
 </div>
 <ol class="arabic simple" start="4">
 <li><p>First have a look at the airport layer(<code class="docutils literal notranslate"><span class="pre">Sierra_Leone_airports</span></code>). Open the attribute table and sort the data. Delete empty columns. See the Wiki entry on the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html">Attribute table</a> for further information.</p></li>
-<li><p>Add a base map to your map view using the Plugin <code class="docutils literal notranslate"><span class="pre">QuickMapServices</span></code> by clicking on the <img alt="" src="../../_images/QMS_search_icon.png" /> symbol in you projct toolbar. Search for “Bing Maps Satellite Imagery” in the QMS panel and add the base map layer via double click.  For an optimized view <a class="reference external" href="https://www.youtube.com/watch?v=WguUkN1YRzY&amp;ab_channel=GISBigfootAnswers">adjust the opacity</a> of your layers to optimize the use of the base map.</p></li>
+<li><p>Add a base map to your map view using the Plugin <code class="docutils literal notranslate"><span class="pre">QuickMapServices</span></code> by clicking on the <img alt="" src="../../_images/QMS_search_icon.png" /> symbol in you projct toolbar. Search for “Bing Maps Satellite Imagery” in the QMS panel and add the base map layer via double click.  For an optimised view <a class="reference external" href="https://www.youtube.com/watch?v=WguUkN1YRzY&amp;ab_channel=GISBigfootAnswers">adjust the opacity</a> of your layers to optimise the use of the base map.</p></li>
 <li><p>Using  the attribute table of the airports layer zoom to Tongo Airport by right-clicking on the row in the attribute table and selecting <code class="docutils literal notranslate"><span class="pre">Zoom</span> <span class="pre">to</span> <span class="pre">Feature</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature">Wiki Video</a>). Check the Basemap. Do you think the airstrip is still operational? The answer is no, according to Wikipedia. Delete Tongo Airport in the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html">Attribute table</a>. Delete Kabala airport too, since it is also not operational anymore.</p></li>
 <li><p>Now we want to check out the airports of the cities of Bo and Kenema. Are these airstrips in better shape? If yes, add them to the airport layer. To find these cities on your map interface use the QGIS Plugin <code class="docutils literal notranslate"><span class="pre">OSM</span> <span class="pre">Place</span> <span class="pre">Search</span></code>.
 To add the plugin <code class="docutils literal notranslate"><span class="pre">OSM</span> <span class="pre">Place</span> <span class="pre">Search</span></code>, click on <code class="docutils literal notranslate"><span class="pre">Plugins</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Manage</span> <span class="pre">and</span> <span class="pre">Install</span> <span class="pre">Plugins…</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">All</span></code> and search for “OSM Place Search”. Once you have found it click on it and select <code class="docutils literal notranslate"><span class="pre">Install</span> <span class="pre">Plugin</span></code>. You can open the <code class="docutils literal notranslate"><span class="pre">OSM</span> <span class="pre">Place</span> <span class="pre">Search</span> <span class="pre">Panel</span></code> like every other panel by clicking on <code class="docutils literal notranslate"><span class="pre">View</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Panels</span></code> and checking <code class="docutils literal notranslate"><span class="pre">OSM</span> <span class="pre">Place</span> <span class="pre">Search</span> <span class="pre">Panel</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html#installation-of-plugins">Wiki Video</a>).</p>
@@ -661,7 +661,7 @@ To add the plugin <code class="docutils literal notranslate"><span class="pre">O
 <li><p>Right-click on the layer <code class="docutils literal notranslate"><span class="pre">Sierra_leone_foodinsecurity_2015.shp</span></code> in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. A new window will open up with a vertical tab section on the left. Navigate to the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> tab.</p></li>
 <li><p>In the topmost drobdown menu choose <code class="docutils literal notranslate"><span class="pre">Graduated</span></code>. Under <code class="docutils literal notranslate"><span class="pre">Value</span></code> select “Total_FI”.</p></li>
 <li><p>Further down the window click on <code class="docutils literal notranslate"><span class="pre">Classify</span></code>. You now should see multiple classes based on the value range of the “TotalFI” column represented with different colours.  You can adjust the colours by picking different colour palettes in the drop down menu <code class="docutils literal notranslate"><span class="pre">Color</span> <span class="pre">ramp</span></code>. Also, you can modify the value distribution of the classes by selecting different classification modes (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html">Wiki</a>) in the <code class="docutils literal notranslate"><span class="pre">Mode</span></code> dropdown menu.</p></li>
-<li><p>Play around with these options to achieve a visualisation that suits the display of the values. Once you are done, click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code> to close the symbology window.</p></li>
+<li><p>Play around with these options to achieve a colour scheme that suits the data. Once you are done, click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code> to close the symbology window.</p></li>
 </ul>
 </li>
 </ol>
@@ -681,7 +681,7 @@ To add the plugin <code class="docutils literal notranslate"><span class="pre">O
 </figcaption>
 </figure>
 <ol class="arabic simple" start="11">
-<li><p>As a last visualisation step open the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> tab <code class="docutils literal notranslate"><span class="pre">Sierra_Leone_roads</span> <span class="pre">(Lines)</span></code> and like in step 9 open the top dropdown menu. Now instead of <code class="docutils literal notranslate"><span class="pre">Graduated</span></code> choose <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html">Categorized Classification</a> and select “highway” in the <code class="docutils literal notranslate"><span class="pre">Value</span></code> menu. Click <code class="docutils literal notranslate"><span class="pre">Classify</span></code> to get a classification with individual colours for all unique values of the “highway” column. In the squares next to the classes, deselect all classes except for “primary”. You can change the colour of the classes by selecting them via click and adjusting the colour in the drop “Symbol” dropdown menu near the top of the window.</p></li>
+<li><p>As a last visualisation step open the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> tab <code class="docutils literal notranslate"><span class="pre">Sierra_Leone_roads</span> <span class="pre">(Lines)</span></code> and like in step 9 open the top dropdown menu. Now instead of <code class="docutils literal notranslate"><span class="pre">Graduated</span></code> choose <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html">Categorized Classification</a> and select “highway” in the <code class="docutils literal notranslate"><span class="pre">Value</span></code> menu. Click <code class="docutils literal notranslate"><span class="pre">Classify</span></code> to get a classification with individual colours for all unique values of the “highway” column. In the squares next to the classes, deselect all classes except for “primary”. You can change the colour of the classes by manually clicking and adjusting the colour in the drop “Symbol” dropdown menu near the top of the window.</p></li>
 </ol>
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../_images/mod3_classification_ex_Categorizedclassification.png"><img alt="../../_images/mod3_classification_ex_Categorizedclassification.png" src="../../_images/mod3_classification_ex_Categorizedclassification.png" style="width: 900px;" /></a>
@@ -690,7 +690,7 @@ To add the plugin <code class="docutils literal notranslate"><span class="pre">O
 </figcaption>
 </figure>
 <ol class="arabic simple" start="12">
-<li><p>Turn all the layers you loaded into your project to visible and arrange them in an order that is suitable for a good visualization of the food insecurity as well as the infrastructure elements. Choose a basemap that you think is suitable. Your final result could look like this:</p></li>
+<li><p>Set all the layers you loaded into your project to visible and arrange them in an order that is suitable for a good visualization of the food insecurity as well as the infrastructure elements. Choose a basemap that you think is suitable. Your final result could look like this:</p></li>
 </ol>
 <figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../_images/mod3_classification_ex_Result.png"><img alt="../../_images/mod3_classification_ex_Result.png" src="../../_images/mod3_classification_ex_Result.png" style="width: 900px;" /></a>

@@ -208,7 +208,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="en_qgis_data_classification.html">Geodata Classification</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_classification_ex1.html">Geodata Classification Exercise 2: Overview map of the prevalence of food insecurity in Sierra Leone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_classification_ex1.html">Geodata Classification Exercise 2: Map of food insecurity in Sierra Leone</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="en_qgis_data_queries.html">Geodata Selection and Queries</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
@@ -607,7 +607,7 @@ document.write(`
 </section>
 <section id="data">
 <h2>Data<a class="headerlink" href="#data" title="Permalink to this heading">#</a></h2>
-<p>Download all the datasets <span class="xref myst">here</span> and save the folder on your computer and unzip the file. The zip folder includes:</p>
+<p>Download all the datasets <span class="xref myst">here</span>, save the folder on your computer, and unzip the file. The zip folder includes:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">som_admbnda_adm2_ocha_20230308.shp</span></code>: This file contains information about the Somali administrative level 0-2, state, and operational zone level 1 and 2 boundary as shapefiles. The data can also be found on <a class="reference external" href="https://data.humdata.org/dataset/cod-ab-som">HDX</a>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">GF2_20231123_FloodExtent_BeledweyneCity_HiraanRegion.shp</span></code>: This shapefile illustrates satellite-detected surface waters in Beledweyne City, Beledweyne District, Hiraan Region, Somalia, on 12th of November 2023 at 07:32 UTC. The data is also available on <a class="reference external" href="https://data.humdata.org/dataset/water-extent-in-beledweyne-city-beledweyne-district-hiraan-region-somalia-12-november-2023">HDX</a>.</p></li>
@@ -658,8 +658,8 @@ document.write(`
 <a class="reference internal image-reference" href="../../_images/Extract_by_location_Belet_Weyne.png"><img alt="../../_images/Extract_by_location_Belet_Weyne.png" src="../../_images/Extract_by_location_Belet_Weyne.png" style="width: 400px;" /></a>
 </figure>
 <ol class="arabic simple" start="6">
-<li><p>In the next step we want to identify special buildings within the affected buildings. Open the attribute table and check what kind of buildings can be found in the layer. This information can be found in the column „building“. You can sort the column.
-To extract „hospitals“, „schools“ and „mosques“ we can use the tool <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">by</span> <span class="pre">Expression</span></code> or <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">by</span> <span class="pre">Attribute</span></code>.</p></li>
+<li><p>In the next step, we want to identify special buildings among the affected buildings. Open the attribute table and check what kind of buildings can be found in the layer. This information can be found in the column “building”. You can sort this column.
+To extract “hospitals”, “schools”, and “mosques”, we can use the tool <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">by</span> <span class="pre">Expression</span></code> or <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">by</span> <span class="pre">Attribute</span></code>.</p></li>
 </ol>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
@@ -668,14 +668,14 @@ To extract „hospitals“, „schools“ and „mosques“ we can use the tool 
 <div class="sd-card-title sd-font-weight-bold docutils">
 <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">by</span> <span class="pre">Attribute</span></code></div>
 <ol class="arabic simple">
-<li><p class="sd-card-text">Find the tool <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">by</span> <span class="pre">Expression</span></code> in the `Toolbox.</p></li>
+<li><p class="sd-card-text">Find the tool <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">by</span> <span class="pre">Expression</span></code> in the <code class="docutils literal notranslate"><span class="pre">Toolbox</span></code>.</p></li>
 <li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">Expression</span></code>: click on <img alt="" src="content/Modul_3/mIconExpression.png" />.</p></li>
-<li><p class="sd-card-text">The window „Expression“ will open. Here we can build a very specific query. In the central panel open <code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">and</span> <span class="pre">Values</span></code>. Here you can see all the columns oft he the layer. Click on <code class="docutils literal notranslate"><span class="pre">building</span></code>.On the right-hand side, you should now see the option <code class="docutils literal notranslate"><span class="pre">All</span> <span class="pre">unique</span></code>. Click on it. Here you can see now all unique values in the column „building“.</p></li>
+<li><p class="sd-card-text">The window “Expression” will open. Here we can build a very specific query. In the central panel open <code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">and</span> <span class="pre">Values</span></code>. Here you can see all the columns oft he the layer. Click on <code class="docutils literal notranslate"><span class="pre">building</span></code>. On the right-hand side, you should now see the option <code class="docutils literal notranslate"><span class="pre">All</span> <span class="pre">unique</span></code>. Click on it. Here you can see now all unique values in the column „building“.</p></li>
 <li></li>
 </ol>
-<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>&quot;building&quot; =  &#39;hospital&#39;or 
-&quot;building&quot;  =  &#39;school&#39; or
-&quot;building&quot;  = &#39;mosque&#39; 
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>&quot;building&quot; = &#39;hospital&#39; or 
+&quot;building&quot; = &#39;school&#39; or
+&quot;building&quot; = &#39;mosque&#39; 
 </pre></div>
 </div>
 <p class="sd-card-text">en_extract_by_expression_som.png</p>
@@ -687,7 +687,7 @@ To extract „hospitals“, „schools“ and „mosques“ we can use the tool 
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
 <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">by</span> <span class="pre">Expression</span></code></div>
-<p class="sd-card-text">In the learning modules, all relevant concepts and techniques of QGIS are explained, enabling trainees to reinforce their understanding of the training content</p>
+<p class="sd-card-text">In the learning modules, all relevant concepts and techniques of QGIS are explained, enabling trainees to reinforce their understanding of the training content.</p>
 </div>
 </div>
 </div>

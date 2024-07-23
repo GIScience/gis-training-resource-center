@@ -65,7 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/Modul_3/en_qgis_data_classification';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Geodata Classification Exercise 2: Overview map of the prevalence of food insecurity in Sierra Leone" href="en_qgis_classification_ex1.html" />
+    <link rel="next" title="Geodata Classification Exercise 2: Map of food insecurity in Sierra Leone" href="en_qgis_classification_ex1.html" />
     <link rel="prev" title="Digitization Exercise 1: Access to financial institutions" href="en_qgis_digitalisation_ex2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -208,7 +208,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Geodata Classification</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_classification_ex1.html">Geodata Classification Exercise 2: Overview map of the prevalence of food insecurity in Sierra Leone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_classification_ex1.html">Geodata Classification Exercise 2: Map of food insecurity in Sierra Leone</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="en_qgis_data_queries.html">Geodata Selection and Queries</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -569,7 +569,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#single-symbol-classification">Single symbol classification</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#categorized-classification">Categorized classification</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#categorised-classification">Categorised classification</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graduated-classification">Graduated classification</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graduated-classification-statistic-one-o-one">Graduated classification statistic one-o-one</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-graduated-classification-in-qgis">How to Graduated classification in QGIS</a></li>
@@ -589,7 +589,7 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="geodata-classification">
 <h1>Geodata Classification<a class="headerlink" href="#geodata-classification" title="Permalink to this heading">#</a></h1>
 <p><strong>🔙<a class="reference internal" href="../intro.html"><span class="doc std std-doc">Back to Homepage</span></a></strong></p>
-<p>Spatial data classification in GIS involves categorizing geographic information into distinct groups or classes based on shared characteristics. This process enhances the organization and interpretation of spatial data.</p>
+<p>Spatial data classification in GIS involves categorising geographic information into distinct groups or classes based on shared characteristics. This process enhances the organization and interpretation of spatial data.</p>
 <p>The attributes of geospatial data are stored in a specific column within the attribute table. Essentially, we choose a column containing the specific characteristics of interest, allowing QGIS to group the data based on these selected attributes.</p>
 <figure class="align-center" id="basic-classification">
 <a class="reference internal image-reference" href="../../_images/classification_basic.drawio.png"><img alt="../../_images/classification_basic.drawio.png" src="../../_images/classification_basic.drawio.png" style="width: 900px;" /></a>
@@ -599,7 +599,7 @@ document.write(`
 </figure>
 <section id="single-symbol-classification">
 <h2>Single symbol classification<a class="headerlink" href="#single-symbol-classification" title="Permalink to this heading">#</a></h2>
-<p>By default, QGIS visualizes all layers in the <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">symbol</span></code> setting. This means all the features of a layer are visualized the same. In this setting, you can change many parameters like colour or opacity <strong>but you can not classify any data!</strong></p>
+<p>By default, QGIS visualises all layers in the <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">symbol</span></code> setting. This means all the features of a layer are visualised the same. In this setting, you can change many parameters like colour or opacity <strong>but you can not classify any data!</strong></p>
 <p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Single_symbol_video.mp4"></video></p>
 <p><strong>To adjust the style of a layer…</strong></p>
 <ol class="arabic simple">
@@ -607,8 +607,8 @@ document.write(`
 <li><p>Click on <code class="docutils literal notranslate"><span class="pre">Symbology</span></code>.</p></li>
 <li><p>Confirm that the layer setting is on <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">Symbol</span></code>.</p></li>
 <li><p>Select the colour of your choice in the drop-down menu. For more colour options select in the drop-down menu <code class="docutils literal notranslate"><span class="pre">Choose</span> <span class="pre">Color</span></code>.</p></li>
-<li><p><em>Optional</em>:. You can adjust the opacity/ transparency of the layer. This can be very useful when you want to show multiple overlapping layers.</p></li>
-<li><p><em>Optional</em>: Here you can set the unit type. This is useful when you want to visualize points in a certain size, for example.</p></li>
+<li><p><em>Optional</em>: You can adjust the opacity/transparency of the layer. This can be very useful when you want to show multiple overlapping layers.</p></li>
+<li><p><em>Optional</em>: Here you can set the unit type. This is useful when you want to visualise points in a certain size, for example.</p></li>
 <li><p><em>Optional:</em> Here you can find standard and previously used styles quickly.</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> to put your adjustment into effect.</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">OK</span></code> to close the window.</p></li>
@@ -620,10 +620,10 @@ document.write(`
 </figcaption>
 </figure>
 </section>
-<section id="categorized-classification">
-<h2>Categorized classification<a class="headerlink" href="#categorized-classification" title="Permalink to this heading">#</a></h2>
-<p>Categorized classification in QGIS groups spatial data into distinct categories based on specific attributes. This classification enhances the organization and interpretation of geospatial information for clearer insights.</p>
-<p>Categorized classification is usually used for <strong>nominal</strong> and <strong>ordinal</strong> scaled data.</p>
+<section id="categorised-classification">
+<h2>Categorised classification<a class="headerlink" href="#categorised-classification" title="Permalink to this heading">#</a></h2>
+<p>Categorised classification in QGIS groups spatial data into distinct categories based on specific attributes. This classification enhances the organization and interpretation of geospatial information for clearer insights.</p>
+<p>Categorised classification is usually used for <strong>nominal</strong> and <strong>ordinal</strong> scaled data.</p>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Data Scale</p></th>
@@ -651,27 +651,27 @@ document.write(`
 <li><p>Right-click on your layer.</p></li>
 <li><p>Click on <code class="docutils literal notranslate"><span class="pre">Symbology</span></code>.</p></li>
 <li><p>Click on <code class="docutils literal notranslate"><span class="pre">Categorized</span></code>.</p></li>
-<li><p>In the <code class="docutils literal notranslate"><span class="pre">Value</span></code> dropdown menu, select the column based on which you want to categorize your data.</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">Value</span></code> dropdown menu, select the column based on which you want to categorise your data.</p></li>
 <li><p>Further down the window click on <code class="docutils literal notranslate"><span class="pre">Classify</span></code>.  Now you should see all unique values or attributes of the selected column in <code class="docutils literal notranslate"><span class="pre">Value</span></code>. To add or delete single values use the <code class="docutils literal notranslate"><span class="pre">-</span></code> and <code class="docutils literal notranslate"><span class="pre">+</span></code> buttons.</p></li>
 <li><p><em>Optional</em>: In the <code class="docutils literal notranslate"><span class="pre">Symbol</span></code> dropdown menu, you can select the colours and symbols you want to use</p></li>
 <li><p><em>Optional</em>: In the <code class="docutils literal notranslate"><span class="pre">Color</span> <span class="pre">ramp</span></code> dropdown menu, you can specify the range of colours you want to use</p></li>
-<li><p><em>Optional</em>: You can open the panel <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Rendering</span></code> on the button of the window. Here you can adjust the opacity/ transparency of the layer.</p></li>
+<li><p><em>Optional</em>: You can open the panel <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Rendering</span></code> on the button of the window. Here you can adjust the opacity/transparency of the layer.</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> to put your adjustment into effect.</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">OK</span></code> to close the window.</p></li>
 </ol>
 <figure class="align-center" id="id2">
 <img alt="../../_images/Categorized_district_map_SierraLeone.png" src="../../_images/Categorized_district_map_SierraLeone.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 64 </span><span class="caption-text">Categorized classification.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 64 </span><span class="caption-text">Categorised classification.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="graduated-classification">
 <h2>Graduated classification<a class="headerlink" href="#graduated-classification" title="Permalink to this heading">#</a></h2>
-<p>Graduated classification in GIS involves categorizing spatial data into classes or ranges based on a progression of values. This method is particularly useful for visualizing quantitative data, allowing for the differentiation of intensity, density, or magnitude across a spectrum, facilitating a nuanced representation of geographic phenomena.</p>
+<p>Graduated classification in GIS involves categorising spatial data into classes or ranges based on a progression of values. This method is particularly useful for visualising quantitative data, allowing for the differentiation of intensity, density, or magnitude across a spectrum, facilitating a nuanced representation of geographic phenomena.</p>
 <section id="graduated-classification-statistic-one-o-one">
 <h3>Graduated classification statistic one-o-one<a class="headerlink" href="#graduated-classification-statistic-one-o-one" title="Permalink to this heading">#</a></h3>
-<p>Graduated classification is used for quantitative data usually <strong>interval</strong> or <strong>ratio</strong> scaled.</p>
+<p>Graduated classification is usually used for quantitative data that is <strong>interval</strong> or <strong>ratio</strong> scaled.</p>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Data Scale</p></th>
@@ -710,7 +710,7 @@ document.write(`
 <p><span class="caption-number">Fig. 65 </span><span class="caption-text">Histogramm of population data. Source:</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>However, if we want to show on a map which districts have a higher population than others, we need to classify the districts.</p>
+<p>However, if we want to show which districts have a higher population than others on a map, we need to classify the districts.</p>
 <p>There are <strong>seven</strong> ways in QGIS to split quantitative data into classes.  The four most important ones are: <strong>Equal intervals</strong>, <strong>Quantile</strong>, <strong>Natural breaks</strong>, <strong>Manual</strong>.
 Let’s have a look at how the classes of the district population would look like if we split the data into three classes using these methods.</p>
 <figure class="align-center" id="id5">
@@ -738,12 +738,12 @@ Natural Breaks</label><div class="sd-tab-content docutils">
 <input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-3">
 Manual</label><div class="sd-tab-content docutils">
-<p>Manual classification allows users to set one or all of the class breaks based on specific needs. This approach is useful when certain break points need to be predetermined, such as aligning with the mean or maintaining consistency across a series of maps. Manual classification is recommended when other methods provide a good solution but may benefit from slight adjustments to better suit specific requirements or visualizations.</p>
+<p>Manual classification allows users to set one or all of the class breaks based on specific needs. This approach is useful when certain break points need to be predetermined, such as aligning with the mean or maintaining consistency across a series of maps. Manual classification is recommended when other methods provide a good solution but may benefit from slight adjustments to better suit specific requirements or visualisations.</p>
 </div>
 <input id="sd-tab-item-4" name="sd-tab-set-0" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-4">
 Logarithmic scale</label><div class="sd-tab-content docutils">
-<p>Logarithmic scale classification is employed when the data spans multiple orders of magnitude, and a linear scale may not effectively represent the variations. This scale applies logarithmic transformation to the data, compressing larger values while expanding smaller ones. It is useful for visualizing data with exponential growth or decay. However, interpreting values on a logarithmic scale may require a nuanced understanding. Consider using a logarithmic scale when there is a wide range of values, and a linear scale may obscure important patterns or trends.</p>
+<p>Logarithmic scale classification is employed when the data spans multiple orders of magnitude, and a linear scale may not effectively represent the variations. This scale applies logarithmic transformation to the data, compressing larger values while expanding smaller ones. It is useful for visualising data with exponential growth or decay. However, interpreting values on a logarithmic scale may require a nuanced understanding. Consider using a logarithmic scale when there is a wide range of values, and a linear scale may obscure important patterns or trends.</p>
 </div>
 <input id="sd-tab-item-5" name="sd-tab-set-0" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-5">
@@ -753,7 +753,7 @@ Pretty Breaks</label><div class="sd-tab-content docutils">
 <input id="sd-tab-item-6" name="sd-tab-set-0" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-6">
 Standard Deviation</label><div class="sd-tab-content docutils">
-<p>Standard Deviation classification is a method that determines class breaks based on the standard deviation of the data values. This approach organizes data into classes by considering the distribution of values around the mean. Each class represents a certain number of standard deviations from the mean, providing a statistical basis for categorizing data. Standard Deviation classification is effective when wanting to highlight variability within the dataset. However, it’s important to consider the nature of the data distribution and whether this method aligns with the analytical goals of the map</p>
+<p>Standard Deviation classification is a method that determines class breaks based on the standard deviation of the data values. This approach organizes data into classes by considering the distribution of values around the mean. Each class represents a certain number of standard deviations from the mean, providing a statistical basis for categorising data. Standard Deviation classification is effective when wanting to highlight variability within the dataset. However, it’s important to consider the nature of the data distribution and whether this method aligns with the analytical goals of the map</p>
 </div>
 </div>
 </section>
@@ -783,7 +783,7 @@ Standard Deviation</label><div class="sd-tab-content docutils">
 <li><p><em>Optional</em>: In the <code class="docutils literal notranslate"><span class="pre">Symbol</span></code> dropdown menu you can select the colours and symbols you want to use.</p></li>
 <li><p><em>Optional</em>: In the <code class="docutils literal notranslate"><span class="pre">Color</span> <span class="pre">ramp</span></code> dropdown menu you can specify the range of colours you want to use. To see all color ramps click on the down arrow of the <code class="docutils literal notranslate"><span class="pre">Color</span> <span class="pre">ramp</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">All</span> <span class="pre">Color</span> <span class="pre">Ramps</span></code>.</p></li>
 <li><p><em>Optional</em>: Under <code class="docutils literal notranslate"><span class="pre">Legend</span> <span class="pre">Format</span></code> you can adjust how precise the range of the classes will be displayed in the legend. Usually, it is practical to not use too complicated numbers in the legend.</p></li>
-<li><p><em>Optional</em>: You can open the panel <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Rendering</span></code> on the button of the window. Here you can adjust the opacity/ transparency of the layer.</p></li>
+<li><p><em>Optional</em>: You can open the panel <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Rendering</span></code> on the button of the window. Here you can adjust the opacity/transparency of the layer.</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> to put your adjustment into effect.</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">OK</span></code> to close the window.</p></li>
 </ol>
@@ -843,7 +843,7 @@ Standard Deviation</label><div class="sd-tab-content docutils">
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Geodata Classification Exercise 2: Overview map of the prevalence of food insecurity in Sierra Leone</p>
+        <p class="prev-next-title">Geodata Classification Exercise 2: Map of food insecurity in Sierra Leone</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -863,7 +863,7 @@ Standard Deviation</label><div class="sd-tab-content docutils">
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#single-symbol-classification">Single symbol classification</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#categorized-classification">Categorized classification</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#categorised-classification">Categorised classification</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graduated-classification">Graduated classification</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graduated-classification-statistic-one-o-one">Graduated classification statistic one-o-one</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-graduated-classification-in-qgis">How to Graduated classification in QGIS</a></li>

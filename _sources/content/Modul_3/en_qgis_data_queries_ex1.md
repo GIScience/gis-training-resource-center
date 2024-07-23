@@ -20,7 +20,7 @@ __🔙[Back to Homepage](/content/intro.md)__
 
 
 ## Data
-Download all the datasets [here]() and save the folder on your computer and unzip the file. The zip folder includes:
+Download all the datasets [here](), save the folder on your computer, and unzip the file. The zip folder includes:
 - `som_admbnda_adm2_ocha_20230308.shp`: This file contains information about the Somali administrative level 0-2, state, and operational zone level 1 and 2 boundary as shapefiles. The data can also be found on [HDX](https://data.humdata.org/dataset/cod-ab-som).
 - `GF2_20231123_FloodExtent_BeledweyneCity_HiraanRegion.shp`: This shapefile illustrates satellite-detected surface waters in Beledweyne City, Beledweyne District, Hiraan Region, Somalia, on 12th of November 2023 at 07:32 UTC. The data is also available on [HDX](https://data.humdata.org/dataset/water-extent-in-beledweyne-city-beledweyne-district-hiraan-region-somalia-12-november-2023).
 - `Buildings_Belete_Weyne.geojson`: This dataset is downloaded using [HOT Export Tool](https://export.hotosm.org/v3/exports/new/describe) and contains information about buildings in the Beledweyne district.
@@ -67,15 +67,15 @@ align: center
 ---
 ```
 
-6. In the next step we want to identify special buildings within the affected buildings. Open the attribute table and check what kind of buildings can be found in the layer. This information can be found in the column „building“. You can sort the column.
-To extract „hospitals“, „schools“ and „mosques“ we can use the tool `Extract by Expression` or `Extract by Attribute`.
+6. In the next step, we want to identify special buildings among the affected buildings. Open the attribute table and check what kind of buildings can be found in the layer. This information can be found in the column "building". You can sort this column.
+To extract "hospitals", "schools", and "mosques", we can use the tool `Extract by Expression` or `Extract by Attribute`.
 
 
 ::::{grid} 2
 :::{card} `Extract by Attribute`
-1. Find the tool `Extract by Expression` in the `Toolbox.
+1. Find the tool `Extract by Expression` in the `Toolbox`.
 2. `Expression`: click on ![](mIconExpression.png). 
-3. The window „Expression“ will open. Here we can build a very specific query. In the central panel open `Field and Values`. Here you can see all the columns oft he the layer. Click on `building`.On the right-hand side, you should now see the option `All unique`. Click on it. Here you can see now all unique values in the column „building“.
+3. The window "Expression" will open. Here we can build a very specific query. In the central panel open `Field and Values`. Here you can see all the columns oft he the layer. Click on `building`. On the right-hand side, you should now see the option `All unique`. Click on it. Here you can see now all unique values in the column „building“.
 4. 
 
 
@@ -83,9 +83,9 @@ To extract „hospitals“, „schools“ and „mosques“ we can use the tool 
 
 
 ```md
-"building" =  'hospital'or 
-"building"  =  'school' or
-"building"  = 'mosque' 
+"building" = 'hospital' or 
+"building" = 'school' or
+"building" = 'mosque' 
 ```
 
 
@@ -98,7 +98,7 @@ Belet_Weyne_POI_affected.gpkg
 :::
 
 :::{card} `Extract by Expression`
-In the learning modules, all relevant concepts and techniques of QGIS are explained, enabling trainees to reinforce their understanding of the training content
+In the learning modules, all relevant concepts and techniques of QGIS are explained, enabling trainees to reinforce their understanding of the training content.
 :::
 
 

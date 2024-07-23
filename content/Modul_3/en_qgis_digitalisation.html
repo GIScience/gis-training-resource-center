@@ -208,7 +208,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="en_qgis_data_classification.html">Geodata Classification</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_classification_ex1.html">Geodata Classification Exercise 2: Overview map of the prevalence of food insecurity in Sierra Leone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_classification_ex1.html">Geodata Classification Exercise 2: Map of food insecurity in Sierra Leone</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="en_qgis_data_queries.html">Geodata Selection and Queries</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -573,9 +573,9 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-creation">Data Creation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creation-of-point-data">Creation of point data</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creation-of-line-data">Creation of line data</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creation-of-polygon-data">Creation of polygon data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-point-data">Creating point data</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-line-data">Creating line data</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-polygon-data">Creating polygon data</a></li>
 </ul>
 </li>
 </ul>
@@ -602,18 +602,18 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="digitisation">
 <h1>Digitisation<a class="headerlink" href="#digitisation" title="Permalink to this heading">#</a></h1>
 <p><strong>🔙<a class="reference internal" href="../intro.html"><span class="doc std std-doc">Back to Homepage</span></a></strong></p>
-<p>Digitization is the process of converting geographic data from maps or images into digital form commonly represented as vector data.
+<p>Digitisation is the process of converting geographic data from maps or images into a digital form commonly represented as vector data.
 During this procedure, spatial information from maps or images is traced, forming points, polylines, or polygons.
 Proficiency in digitisation stands as a cornerstone for GIS specialists. It empowers them to convert spatial information into a digital format, facilitating more efficient data manipulation compared to traditional methods of interpreting images or paper maps.</p>
-<figure class="align-center" id="digitalisation-with-gis-concept">
+<figure class="align-center" id="digitisation-with-gis-concept">
 <a class="reference internal image-reference" href="../../_images/Digitizsation_concept.drawio.svg"><img alt="../../_images/Digitizsation_concept.drawio.svg" src="../../_images/Digitizsation_concept.drawio.svg" width="900px" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 54 </span><span class="caption-text">Digitisation with GIS Concept. Source:</span><a class="headerlink" href="#digitalisation-with-gis-concept" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 54 </span><span class="caption-text">Digitisation with GIS Concept. Source:</span><a class="headerlink" href="#digitisation-with-gis-concept" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <section id="digitising-in-qgis">
 <h2>Digitising in QGIS<a class="headerlink" href="#digitising-in-qgis" title="Permalink to this heading">#</a></h2>
-<p>The digitisation of geodata is a useful method to collect and modify your own data. The following subchapter will explain step by step, how to digitize data within QGIS.</p>
+<p>The digitisation of geodata is a useful method to collect and modify your own data. The following subchapter will explain how to digitise data within QGIS step by step.</p>
 <section id="digitisation-toolbars">
 <h3>Digitisation toolbars<a class="headerlink" href="#digitisation-toolbars" title="Permalink to this heading">#</a></h3>
 <p>First, you need to check if the ‘Digitizing Toolbox` is activated. To do that</p>
@@ -629,7 +629,7 @@ Proficiency in digitisation stands as a cornerstone for GIS specialists. It empo
 Activate <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbox</span></code></div>
 <p class="sd-card-text">First, you need to check if the <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbox</span></code> is activated. To do that</p>
 <ol class="arabic simple">
-<li><p class="sd-card-text">Click on the <code class="docutils literal notranslate"><span class="pre">view</span></code> tab in the menu bar and click <code class="docutils literal notranslate"><span class="pre">Toolbars</span></code>. Check if the <code class="docutils literal notranslate"><span class="pre">digitizing</span></code> and <code class="docutils literal notranslate"><span class="pre">Advanced</span> <span class="pre">digitizing</span></code> toolbox is activated.</p></li>
+<li><p class="sd-card-text">Click on the <code class="docutils literal notranslate"><span class="pre">View</span></code> tab in the menu bar and click <code class="docutils literal notranslate"><span class="pre">Toolbars</span></code>. Check if the <code class="docutils literal notranslate"><span class="pre">Digitizing</span></code> and <code class="docutils literal notranslate"><span class="pre">Advanced</span> <span class="pre">Digitizing</span></code> toolbox is activated.</p></li>
 <li><p class="sd-card-text">A tool box like this should appear on top of the QGIS interface</p></li>
 </ol>
 <p class="sd-card-text"><img alt="" src="../../_images/Toolbox.png" /></p>
@@ -652,8 +652,8 @@ How to: </div>
 </div>
 </div>
 </div>
-<p>The normal digitisation toolbar offers all the necessary functions . However, for everything that goes above just creating new features and deleting features, the advanced digitalization toolbar is needed.
-The advanced digitalization toolbar allows you to move features, delete parts of features and much more. All functions are listed in the two tables below.</p>
+<p>The normal digitisation toolbar offers all the necessary functions . However, for everything that goes above just creating new features and deleting features, the Advanced Digitalization toolbar is needed.
+The Advanced Digitalization toolbar allows you to move features, delete parts of features, and much more. All functions are listed in the two tables below.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Digitalization Toolbar<div class="sd-summary-down docutils">
@@ -681,14 +681,14 @@ Digitalization Toolbar<div class="sd-summary-down docutils">
 <td><p class="sd-card-text"></p></td>
 </tr>
 <tr class="row-even"><td><p class="sd-card-text"><img alt="" src="../../_images/mActionDigitizeWithSegment.png" /></p></td>
-<td><p class="sd-card-text">Digitize using straight segments</p></td>
+<td><p class="sd-card-text">Digitise using straight segments</p></td>
 <td><p class="sd-card-text"><img alt="" src="../../_images/mActionDigitizeWithCurve.png" /></p></td>
 <td><p class="sd-card-text">Digitize using curve lines</p></td>
 </tr>
 <tr class="row-odd"><td><p class="sd-card-text"><img alt="" src="../../_images/mActionStreamingDigitize.png" /></p></td>
-<td><p class="sd-card-text">Enable freehand digitizing</p></td>
+<td><p class="sd-card-text">Enable freehand digitising</p></td>
 <td><p class="sd-card-text"><img alt="" src="../../_images/mActionDigitizeShape.png" /></p></td>
-<td><p class="sd-card-text">Digitize polygon of regular shape</p></td>
+<td><p class="sd-card-text">Digitise polygon of regular shape</p></td>
 </tr>
 <tr class="row-even"><td><p class="sd-card-text"><img alt="" src="../../_images/mActionNewTableRow.png" /></p></td>
 <td><p class="sd-card-text">Add new record</p></td>
@@ -711,14 +711,14 @@ Digitalization Toolbar<div class="sd-summary-down docutils">
 <td><p class="sd-card-text">Modify the attributes of all selected features simultaneously</p></td>
 </tr>
 <tr class="row-even"><td><p class="sd-card-text"><img alt="" src="../../_images/mActionDeleteSelectedFeatures.png" /></p></td>
-<td><p class="sd-card-text">Delete Selected features from the active layer</p></td>
+<td><p class="sd-card-text">Delete selected features from the active layer</p></td>
 <td><p class="sd-card-text"><img alt="" src="../../_images/mActionEditCut.png" /></p></td>
-<td><p class="sd-card-text">Cut Features from the active layer</p></td>
+<td><p class="sd-card-text">Cut features from the active layer</p></td>
 </tr>
 <tr class="row-odd"><td><p class="sd-card-text"><img alt="" src="../../_images/mActionCopySelected.png" /></p></td>
-<td><p class="sd-card-text">Copy selected Features from the active layer</p></td>
+<td><p class="sd-card-text">Copy selected features from the active layer</p></td>
 <td><p class="sd-card-text"><img alt="" src="../../_images/mActionEditPaste.png" /></p></td>
-<td><p class="sd-card-text">Paste Features into the active layer</p></td>
+<td><p class="sd-card-text">Paste features into the active layer</p></td>
 </tr>
 <tr class="row-even"><td><p class="sd-card-text"><img alt="" src="../../_images/mActionUndo.png" /></p></td>
 <td><p class="sd-card-text">Undo changes in the active layer</p></td>
@@ -811,22 +811,22 @@ Advanced digitizing Toolbar<div class="sd-summary-down docutils">
 </section>
 <section id="data-creation">
 <h2>Data Creation<a class="headerlink" href="#data-creation" title="Permalink to this heading">#</a></h2>
-<p>To digitize data for a new dataset you always have to start with creating the dataset before filling it with digitised data.</p>
+<p>To digitise data for a new dataset you always have to start with creating the dataset before filling it with digitised data.</p>
 <p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_create_layer.mp4"></video></p>
 <ol class="arabic">
 <li><p><code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">GeoPackage</span> <span class="pre">Layer</span></code> or <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Shapefile</span> <span class="pre">Layer</span></code></p></li>
 <li><p>Click on <img alt="" src="../../_images/Three_points.png" /> and navigate to the folder where you want to save the dataset.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">encoding</span></code>: Make sure this is set to UTF-8</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">type</span></code>: Select the type of feature you want to digitise e.g. points or lines.</p></li>
-<li><p>Under <code class="docutils literal notranslate"><span class="pre">Additional</span> <span class="pre">dimension</span></code> you should always make sure that you check <code class="docutils literal notranslate"><span class="pre">None</span></code>. Except if there is the possibility to collect the Z-values (Elevation) as well. But this is mostly not the case.</p></li>
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">Additional</span> <span class="pre">dimension</span></code> you should always make sure that you check <code class="docutils literal notranslate"><span class="pre">None</span></code>. Except if there is the possibility to collect the Z-values (elevation) as well. But this is mostly not the case.</p></li>
 <li><p>CRS dropdown: Select the EPSG/CRS you want to set for the new layer. By default, the QGIS selects the project CRS. If you want to change the CRS click on <img alt="" src="../../_images/mIconProjectionEnabled.png" />.</p></li>
 <li><p>Under <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Field</span></code> you can add columns to the new layer.</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Typ</span></code>: Select the data type the column will have e.g. <code class="docutils literal notranslate"><span class="pre">Text</span></code>, <code class="docutils literal notranslate"><span class="pre">Whole</span> <span class="pre">number</span></code>, <code class="docutils literal notranslate"><span class="pre">Decimal</span> <span class="pre">Number</span></code>, <code class="docutils literal notranslate"><span class="pre">Date</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Type</span></code>: Select the data type the column will have e.g. <code class="docutils literal notranslate"><span class="pre">Text</span></code>, <code class="docutils literal notranslate"><span class="pre">Whole</span> <span class="pre">number</span></code>, <code class="docutils literal notranslate"><span class="pre">Decimal</span> <span class="pre">Number</span></code>, <code class="docutils literal notranslate"><span class="pre">Date</span></code>.</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The number of options depends on the data format the layer will have. GeoPackage for example offers far more options than the Shapefileformat.</p>
+<p>The number of options depends on the data format the layer will have. GeoPackage, for example, offers far more options than the Shapefile format.</p>
 </div>
 <ul class="simple">
 <li><p>Click on <img alt="" src="../../_images/mActionNewAttribute.png" /> to add the new column to the <code class="docutils literal notranslate"><span class="pre">Fields</span> <span class="pre">List</span></code>.</p></li>
@@ -845,9 +845,9 @@ Advanced digitizing Toolbar<div class="sd-summary-down docutils">
 <p>An important concept to understand before starting to add data to datasets is, that, whenever you make changes to a dataset other than styling, you have to put it in editing mode. This is done by selecting the layer and clicking on<img alt="" src="../../_images/mActionToggleEditing.png" /> <code class="docutils literal notranslate"><span class="pre">Toggle</span> <span class="pre">Editing</span></code>. Now, the buttons for many functions of the digitisation toolbar are clickable.
 After you are done manipulating the layer click on <img alt="" src="../../_images/mActionSaveEdits.png" /> <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Layer</span> <span class="pre">Edits</span></code> to save your edits.</p>
 </div>
-<section id="creation-of-point-data">
-<h3>Creation of point data<a class="headerlink" href="#creation-of-point-data" title="Permalink to this heading">#</a></h3>
-<p>To digitise points, you need an existing point layer or you need to create a new point layer (see <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation.html#digital-data-creation">Digital Data Creation</a> above).</p>
+<section id="creating-point-data">
+<h3>Creating point data<a class="headerlink" href="#creating-point-data" title="Permalink to this heading">#</a></h3>
+<p>To digitise points, you either need to have an existing point layer or you need to create a new point layer (see <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation.html#digital-data-creation">Digital Data Creation</a> above).</p>
 <ol class="arabic simple">
 <li><p>Select the point layer you want to add data to in the Layer panel.</p></li>
 <li><p>Go to the digitisation toolbar and click on<img alt="" src="../../_images/mActionToggleEditing.png" /> <code class="docutils literal notranslate"><span class="pre">Toggle</span> <span class="pre">Editing</span></code>. No the layer is in the editing mode.</p></li>
@@ -864,9 +864,9 @@ After you are done manipulating the layer click on <img alt="" src="../../_image
 <p><span class="caption-number">Fig. 57 </span><span class="caption-text">Point creation.</span><a class="headerlink" href="#point-creation" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<section id="creation-of-line-data">
-<h4>Creation of line data<a class="headerlink" href="#creation-of-line-data" title="Permalink to this heading">#</a></h4>
-<p>Creating line data works in the same way as creating point data (see above). First, you have to created a new line layer or use an existing one.</p>
+<section id="creating-line-data">
+<h4>Creating line data<a class="headerlink" href="#creating-line-data" title="Permalink to this heading">#</a></h4>
+<p>Creating line data works in the same way as creating point data (see above). First, you must create a new line layer or use an existing one.</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>If you create a new line layer, remember to change the geometry type into lines.</p>
@@ -875,15 +875,15 @@ After you are done manipulating the layer click on <img alt="" src="../../_image
 <li><p>Select the line layer you want to add data to in the Layer panel</p></li>
 <li><p>Go to the digitisation toolbar and click on<img alt="" src="../../_images/mActionToggleEditing.png" />. Now, the layer is in the editing mode.</p></li>
 <li><p>Click on <img alt="" src="../../_images/mActionCaptureLine.png" />.</p></li>
-<li><p>To digitalize line features, click along the line. When you are done, right-click on the last point of the line to finish the feature.</p></li>
+<li><p>To digitalise line features, click along the line. When you are done, right-click on the last point of the line to finish the feature.</p></li>
 <li><p>A window will appear <code class="docutils literal notranslate"><span class="pre">[Your</span> <span class="pre">Layer</span> <span class="pre">Name]-</span> <span class="pre">Feature</span> <span class="pre">Attribute</span></code>. Here you can add the information about this feature to the different columns, based on the attribute table of the layer.</p></li>
 <li><p>Once you are done with digitisation, click on <img alt="" src="../../_images/mActionSaveEdits.png" /> <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Layer</span> <span class="pre">Edits</span></code> to save your edits.</p></li>
 <li><p>Click on <img alt="" src="../../_images/mActionToggleEditing.png" /> <code class="docutils literal notranslate"><span class="pre">Toggle</span> <span class="pre">Editing</span></code> again to end the editing mode.</p></li>
 </ol>
 <p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_line_feature.mp4"></video></p>
 </section>
-<section id="creation-of-polygon-data">
-<h4>Creation of polygon data<a class="headerlink" href="#creation-of-polygon-data" title="Permalink to this heading">#</a></h4>
+<section id="creating-polygon-data">
+<h4>Creating polygon data<a class="headerlink" href="#creating-polygon-data" title="Permalink to this heading">#</a></h4>
 <p>The creation of polygon layers works in the same way as for point and line data.</p>
 <ol class="arabic simple">
 <li><p>Select the polygon layer you want to add data to in the Layer panel.</p></li>
@@ -928,8 +928,8 @@ After you are done manipulating the layer click on <img alt="" src="../../_image
 </section>
 <section id="moving-features">
 <h3>Moving features<a class="headerlink" href="#moving-features" title="Permalink to this heading">#</a></h3>
-<p>There are multiple methods to move features. Here we show the method that works for point, line and polygon features the same.
-For that you need the Advanced Digitisation Toolbox.</p>
+<p>There are multiple methods to move features. Here we show the method that works the same for point, line, and polygon features.
+To do this, you need the Advanced Digitisation Toolbox.</p>
 <ol class="arabic simple">
 <li><p>Select the line layer you want to add data to in the Layer panel.</p></li>
 <li><p>Go to the digitisation toolbar and click on<img alt="" src="../../_images/mActionToggleEditing.png" />.</p></li>
@@ -1047,9 +1047,9 @@ For that you need the Advanced Digitisation Toolbox.</p>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-creation">Data Creation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creation-of-point-data">Creation of point data</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creation-of-line-data">Creation of line data</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creation-of-polygon-data">Creation of polygon data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-point-data">Creating point data</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-line-data">Creating line data</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-polygon-data">Creating polygon data</a></li>
 </ul>
 </li>
 </ul>
