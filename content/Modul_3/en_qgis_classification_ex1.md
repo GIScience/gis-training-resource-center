@@ -1,7 +1,8 @@
 # Geodata Classification Exercise 2: Overview map of the prevalence of food insecurity in Sierra Leone
 
 ### Aim of the exercise
-This exercise aims to create an overview map of the distribition of food insecurity in Sierra Leone at district level. To do this, we will visualize both the distribution of food insecurity and key infrastructure elements such as hospitals, airports and roads. 
+
+The aim of this exercise is to create an overview map of the distribution of food insecurity in Sierra Leone at district level. To do this, we will visualize both the distribution of food insecurity and key infrastructure elements such as hospitals, airports and roads. 
 
 ### Relevant Wiki Articles
 
@@ -61,14 +62,14 @@ align: center
 OSM place search.
 ```
 
-Add the airports of Bo and Kenema as points to the layer `Sierra_Leone_airports`. Find help on the addition of features to a point layer [here](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.md). 
+Add the airports of Bo and Kenema as points to the layer `Sierra_Leone_airports`. Find help on the addition of features to a point layer [here](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html). 
  
 
 8. *Optional:* In the attribute table, create a new column `Runway_length` and add the length of the runways of Bo and Kenema by measuring them approximately with the measuring tool ![](/fig/measuring_tool_icon.png).
 
-9. Now we want to create a intutive visualization of the differences in food insecurity. To achieve this we use the "[Graduated Classification](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html)" visualization option for the layer `Sierra_leone_foodinsecurity_2015` by displaying the polygons according to classes created based on the "Total_FI" column in the attribute table.
+9. Now we want to create a intuitive visualisation of the differences in food insecurity. To achieve this we use the "[Graduated Classification](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html)" visualization option for the layer `Sierra_leone_foodinsecurity_2015` by displaying the polygons according to classes created based on the "Total_FI" column in the attribute table.
     * Right-click on the layer `Sierra_leone_foodinsecurity_2015.shp` in the `Layer Panel` -> `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
-    * In the topmost drobdown menu choose `Graduated`. Under `Value` select “Total_FI”.
+    * In the topmost dropdown menu choose `Graduated`. Under `Value` select “Total_FI”.
     * Further down the window click on `Classify`. You now should see multiple classes based on the value range of the "TotalFI" column represented with different colours.  You can adjust the colours by picking different colour palettes in the drop down menu `Color ramp`. Also, you can modify the value distribution of the classes by selecting different classification modes ([Wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html)) in the `Mode` dropdown menu. 
     * Play around with these options to achieve a visualisation that suits the display of the values. Once you are done, click `Apply` and `OK` to close the symbology window.
 
