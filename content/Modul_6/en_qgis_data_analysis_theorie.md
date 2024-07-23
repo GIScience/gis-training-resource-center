@@ -4,19 +4,15 @@
 
 __Competences__:
 
-This Module covers a general understanding of data analysis, how to create statistics, create buffers, heatmaps, 
-and how to break rivers, roads, or areas into segments. The following modules will cover more complex analysis 
+This module covers how to perform general data analysis, calculate statistics, create buffers, produce heatmaps, 
+and divide rivers, roads, or areas into segments. The following modules will cover more complicated data analysis 
 methods. 
 
 <!--ADD: Break rivers into segments is not done yet! EN-->
 
 ## Data & Spatial Analysis
 
-Even in a single layer, a lot of analysis is possible. However, sometimes the things we want to analyse are __split 
-across__ multiple layers. In order to get these insights we use the spatial and non spatial GIS-processing tools we 
-learned in the previous modules. In this module, we will look how to apply these tools, collect and work with data 
-to create meaningful insights. We will go over a few examples of data analysis that are common in humanitarian 
-work. 
+Even with a single layer, extensive analysis is possible. However, often the information we need to analyse is spread across multiple layers. To gain these insights, we use the spatial and non-spatial GIS processing tools we learned in previous modules. In this module, we will explore how to apply these tools, collect and work with data, and create meaningful insights. We will also review several examples of data analysis commonly used in humanitarian work.
 
 ### Spatial analysis
 
@@ -48,14 +44,11 @@ collected the data__, __and how the data was collected__.
 2. Next, open the attribute table and look at the different features and attributes available. What do the 
 attributes show and what are they called?
 3. Now you can start visualising the data:
-    * You can visualize the data cartographically by assigning or categorizing the data using symbols
+    * You can visualise the data cartographically by assigning or categorising the data using symbols
     * You can create charts from the attribute table
     * You can look for patterns, averages, outliers
 
-We are usually looking for ways to __describe__ our data to an audience in some ways. Sometimes spatial analysis 
-will be used to provide recommendations for activities. Considering the amount of data available online, it is 
-always important to take a step back and gain perspective when facing this knowledge, these capacities, as well as 
-the data itself before rushing in to manipulate it:
+We are often seeking ways to __describe__ our data to an audience. Sometimes, spatial analysis will be used to provide recommendations for activities. Given the vast amount of data available online, it is important to take a step back and gain perspective on this knowledge, these capabilities, and the data itself before rushing to manipulate it:
 
 - __Reliability__: Can I trust this data?
 - __Interest__: Do I need this data?
@@ -64,10 +57,10 @@ the data itself before rushing in to manipulate it:
 * __Date__: How old is this data?
 * __Sensitivity__: Is this data sensitive?
 
-With spatial analysis, you can build predictive models to plan ahead of disasters. __BUT: Not all analysis is 
-complex! Just knowing how many features are in a layer is useful.__ Simple analysis includes:
+With spatial analysis, you can build predictive models to plan ahead of disasters. __HOWEVER: Not all analysis is 
+complicated! Just knowing how many features are in a layer is useful.__ Simple data analysis includes:
 * Ranking
-* Categorizing
+* Categorising
 * Above/below threshold
 * Affected Areas
 * Population distribution
@@ -112,7 +105,7 @@ width: 600px
 Thematic analysis using different sizes to distinguish the population number in each camp (Source: [WFP](https://reliefweb.int/map/somalia/somalia-physical-constraints-map-21-july-2022))
 ```
 
-* __Spatial analyses__ are performed on spatialized phenomena such as: presence/absence of the phenomenon, its relationship with other phenomena or entities, distribution in space. They are performed on the geometry and position of elements, as well as on their relationship with other elements. Spatial analyses can create new values or elements.
+* __Spatial analyses__ are performed on spatialised phenomena such as: presence/absence of the phenomenon, its relationship with other phenomena or entities, distribution in space. They are performed on the geometry and position of elements, as well as on their relationship with other elements. Spatial analyses can create new values or elements.
     * For example: crossing two satellite images to extract flooded areas between two dates; or crossing latrine and water catchment areas in a refugee camp; using a digital elevation model to determine which buildings have a high flooding risk.
 
 
@@ -126,7 +119,7 @@ Example of a flood risk map. Source: Frank, Enrico & Ramsbottom, David & Avanzi,
 
 ## Length, Surface, Circumference
 
-Knowing how big an area is, or how long road sections is already an importand analysis. For example, you can know how much of a road network is inaccessible, or how much area is affected by flooding.
+Simply knowing the size of an area or the length of a road section is valuable information. For example, you can determine how much of a road network is inaccessible or how much area is affected by flooding.
 
 These geometrical attributes can be calculated using the [__field calculator__](https://giscience.github.io/gis-training-resource-center/content/Modul_5/en_qgis_non_spatial_tools.html?highlight=field+calculator#calculate-field) or the processing tool __"Add geometry attributes"__. 
 
@@ -151,9 +144,9 @@ For example, to calculate the area of polygons:
 In the attribute table, you will find a new column called `Area` with the respective area for each feature. 
 
 ```{Note}
-The __unit of measurement__ of the calculated area depends on the __distance unit settings__ of the current __project's CRS__ (metrical or geographic). In most cases you want metres or kilometers. Make sure the units of your CRS are metres to get the correct values. 
+The __unit of measurement__ of the calculated area depends on the __distance unit settings__ of the current __project's CRS__ (metrical or geographic). In most cases you want metres or kilometres. Make sure the units of your CRS are metres to get the correct values.
 
-You can check this by opening the CRS selector (bottom right corner) and reading the information of your selected CRS. 
+You can check this by opening the CRS selector (in the bottom right corner) and reading the information of your selected CRS. 
 ```
 
 :::{dropdown} Example: Calculating the length of roads
@@ -174,7 +167,7 @@ QGIS comes with two basic processing tools to generate statistics:
 
 
 :::{dropdown} Example: Statistics by categories
-In this example we have a road network which has been intersected with a flood extent. A new field ("Flood") has been calculated containing information wether the road is flooded or not (Y=flooded, N=not flooded). The length of each road has been calculated using the `$length` function in the field calculator as new column called "Length".  
+In this example we have a road network which has been intersected with a flood extent. A new field ("Flood") has been calculated containing information whether the road is flooded or not (Y=flooded, N=not flooded). The length of each road has been calculated using the `$length` function in the field calculator as new column called "Length".  
 We want to calculate the total length of flooded and unflooded road respectively. 
 
 1. Open the "Statistics by category"-tool
@@ -190,7 +183,7 @@ We want to calculate the total length of flooded and unflooded road respectively
 :::
 
 ```{Tip}
-You can add a table of the statistics to your print layout by using the "__Add attribute table__"-tool in the print layout composer
+You can add a table of the statistics to your print layout by using the "__Add attribute table__" tool in the print layout composer
 ```
 
 
@@ -208,15 +201,15 @@ Creating a [buffer](https://giscience.github.io/gis-training-resource-center/con
 Density maps are very useful in communicating the __intensity of a phenomenon in an area__. Point data is __spatially aggregated__ to show the amount of incidents in that area.
 __For example__, number of schools or number of disease cases. 
 
-It is important to consider that most demographic or economic data needs to be __normalized__ (e.g. number of inhabitants). To assess the significance of the number of schools, you will need to know how the population of the area; so the amount of schools per 1,000 inhabitants, or the number of disease cases per 100 persons, for example. 
+It is important to consider that most demographic or economic data needs to be __normalised__ (e.g. number of inhabitants). To assess the significance of the number of schools, you will need to know how the population of the area; so the amount of schools per 1,000 inhabitants, or the number of disease cases per 100 persons, for example. 
 
-There are a few different types of density maps. The most common are heatmaps and hexagon grid maps. In both cases, the intensity of a phenomenon is calculcated with point data (rarely with lines or polygons). 
+There are a few different types of density maps. The most common are heatmaps and hexagon grid maps. In both cases, the intensity of a phenomenon is calculated with point data (rarely with lines or polygons). 
 
 >discrete vs. continuous?
 
 ### Heatmaps
 
-Heat maps use features in a dataset to calculate the __relative density of points__ on a map. The density is displayed as a colour ramp with colors ranging from "cool" (low density) to "hot" (high density). Heatmaps are useful when you have a large number of features covering an area with areas __where these features cluster together__ and help us visualize __spatial patterns__ of a layer. 
+Heat maps use features in a dataset to calculate the __relative density of points__ on a map. The density is displayed as a colour ramp with colours ranging from "cool" (low density) to "hot" (high density). Heatmaps are useful when you have a large number of features covering an area with areas __where these features cluster together__ and help us visualise __spatial patterns__ of a layer. 
 
 ```{figure} ../../fig/point_map_to_heat_map_example.png
 ---
@@ -226,15 +219,15 @@ height: 300px
 Example of a point map (left) to a heat map (right)
 ```
 
-To create a heatmap you first need a layer containing data points or 'samples'. These points are distributed in an area with some areas containing more than others. The __density__ of the points in space determines the intensity of the color on the heat map. 
+To create a heatmap you first need a layer containing data points or 'samples'. These points are distributed in an area with some areas containing more than others. The __density__ of the points in space determines the intensity of the colour on the heat map. 
 
-In QGIS, there are two methods to create heatsmaps. The first method uses the symbology tab and is generally a lot faster. The second method uses the interpolation tool __"Heatmap (Kernel Density Estimation)"__ and offers more parameters to adjust. The advantage of the processing tool is that you can set a radius using metric units (for example the number of points in a __100 Meters__ radius compared to using the millimeters or pixels of your computer screen) and set a variable radius that is determined by another attribute. The next section will discuss the creation of heatmaps using the symbology tab. A guide on how to create a heatmap using the processing tool can be found [here](link)
+In QGIS, there are two methods to create heatmaps. The first method uses the symbology tab and is generally a lot faster. The second method uses the interpolation tool __"Heatmap (Kernel Density Estimation)"__ and offers more parameters to adjust. The advantage of the processing tool is that you can set a radius using metric units (for example the number of points in a __100 Meters__ radius compared to using the millimetres or pixels of your computer screen) and set a variable radius that is determined by another attribute. The next section discusses the creation of heatmaps using the symbology tab. A guide on how to create a heatmap using the processing tool can be found [here](link)
 
 > insert link
 
 #### Using the symbology tab to create a heatmap
 
-You can create a heatmap in the __symbology tab__ of a point or polyline layer. Navigate to the symbology tab and select the `Heatmap` symbolization method. Here, you can adjust the __color ramp, radius, and maximum value__. The __radius__ (in Millimeters on your screen) determines the size of the circle that is used to aggregate the points. If it gets bigger more points can be aggregated and the 'heat' increases. The __maximum value__ determines the value that is given the 'hottest' color. By default, it is set to the highest number of aggregated points. For example, you can __set a threshold__ above which everything has the "hottest" color. Reducing it changes the visualization drastically.
+You can create a heatmap in the __symbology tab__ of a point or polyline layer. Navigate to the symbology tab and select the `Heatmap` symbolisation method. Here, you can adjust the __colour ramp, radius, and maximum value__. The __radius__ (in millimetres on your screen) determines the size of the circle that is used to aggregate the points. If it gets bigger more points can be aggregated and the 'heat' increases. The __maximum value__ determines the value that is given the 'hottest' colour. By default, it is set to the highest number of aggregated points. For example, you can __set a threshold__ above which everything has the "hottest" colour. Reducing it changes the visualisation drastically.
 
 ```{figure} ../../fig/en_heatmap_radius_max_value_conf_example.png
 ---
@@ -248,16 +241,16 @@ As you can see, the information communicated through the different maps changes 
 
 :::{dropdown} Assigning a weight to the samples
 
-Assigning weight to samplepoints can be useful when your dataset has additional information (such as the type of incident, or sampled amount of rainfall) and you want to integrate this information into your heatmap. 
+Assigning weight to sample points can be useful when your dataset has additional information (such as the type of incident, or sampled amount of rainfall) and you want to integrate this information into your heatmap. 
 
 :::
 
 
 ### Hex Maps (Hexagon Grids)
 
-Hexagon grids are used to aggregate point incidents in order to normalize geographic data or to mitigate the modifiable area unit problem (problems arising from using irregular shaped polygons). In GIS, we commonly use rectangles (e.g. raster data) or __hexagons__, as these geometries can be repeat in an evenly spaced grid without leaving gaps. 
+Hexagon grids are used to aggregate point incidents in order to normalise geographic data or to mitigate the modifiable area unit problem (problems arising from using irregular shaped polygons). In GIS, we commonly use rectangles (e.g. raster data) or __hexagons__, as these geometries can be repeat in an evenly spaced grid without leaving gaps. 
 
-The advantage of using hexagons is that it is a polygon that closely resembles a __circle__ (where the distance to the centre is equal at every point along the outline), but still __leaves no gaps__ when placed as a __grid__. This means that it is also possible to use absolute values (no normalizations), since the spatial units have the same size. 
+The advantage of using hexagons is that it is a polygon that closely resembles a __circle__ (where the distance to the centre is equal at every point along the outline), but still __leaves no gaps__ when placed as a __grid__. This means that it is also possible to use absolute values (no normalisation), since the spatial units have the same size. 
 
 Another advantage is that you can use the hexagon grid as spatial units and combine multiple variables (for example, number of incidents per population size) or calculate indexes.
 
@@ -267,7 +260,7 @@ To create a hexagon grid map, you will first need to [create a hexagon grid](lin
 
 Next, you will need to join the point data with the hexagon grid. We want to know the amount of points that are inside of a hexagon cell. To count the number of points, we need to use the vector tool "__Count points in polygon__". The result will be a hexagonal grid where each polygon has the a value for the number of points in that area. 
 
-The final step will be to __visualize__ the data by assigning a __graduated symbology__ to the polygons. You can play around with the transparency of your layers to make more information visible. 
+The final step will be to __visualise__ the data by assigning a __graduated symbology__ to the polygons. You can play around with the transparency of your layers to make more information visible. 
 
 ```{figure} ../../fig/point_to_hex_map_example.png
 ---
@@ -285,7 +278,7 @@ Point map (left) to hex map (right)
 4. Select the horizontal and vertical spacing according to the scale of your map. 
 5. Optional: Remove the unnecessary Polygons.
 6. Use the tool "__Count points in Polygon__" to add an attribute field with the number of points that are *inside* each hexagon cell. The __Polygons__ field should be your reference layer. The new layer will have an attribute field called "__NUMPOINTS__"
-7. Assign a __graduated__ symbology to the `Count`-layer. Select "__NUMPOINTS__" as the value and categorize the classes as you wish.
+7. Assign a __graduated__ symbology to the `Count`-layer. Select "__NUMPOINTS__" as the value and categorise the classes as you wish.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_creating_a_hex_map
 .mp4"></video>
@@ -322,7 +315,7 @@ Table aggregation workflow
 
 <!--ADD: Insert example of short form vs. long form or check the example figures-->
 
-Sometimes, the tables are in a format that is not suitable to join. For example, you have multiple zones per land, making the field `CNTRY_NAME` not suitable for aggregation. In this case, it is useful to pivot the table. This means that the fields for the zones and their respective area size are aggregated under the country. The values of the column `ZONE` will be turned into Columns with the values for the area in these columns. Now you can aggregate this table with additional information that has data on countries.
+Sometimes, the tables are not in a suitable format for joining. For example, having multiple zones per country makes the CNTRY_NAME field unsuitable for aggregation. In such cases, pivoting the table is useful. This involves aggregating the fields for the zones and their respective area sizes under the country. The values in the ZONE column will be transformed into columns containing the area values. This way, you can aggregate this table with additional information that includes data on countries.
 
 ``` {figure} ../../fig/en_table_pivot_1.png
 ---
@@ -360,7 +353,7 @@ Red = Pivot field; Blue = Input field; Green = Values field
 
 >insert links
 
-Spatial interpolation uses point data to estimate values at other unknown points. This is extremely useful for spatial pheonomena that are [continuous](link), such as rainfall or temperature. For example, you have point data of the temperatures at weather stations, but you want to estimate the temperatures in between these points. Spatial Interpolation can estimate the temperature in between those points. This form of interpolation is called a __statistical surface__. Interpolation can be used to calculate elevation data, precipitation, snow accumulation, water table and population density for example. 
+Spatial interpolation uses point data to estimate values at other unknown points. This is extremely useful for spatial phenomena that are [continuous](link), such as rainfall or temperature. For example, you have point data of the temperatures at weather stations, but you want to estimate the temperatures in between these points. Spatial Interpolation can estimate the temperature in between those points. This form of interpolation is called a __statistical surface__. Interpolation can be used to calculate missing elevation data, precipitation, snow accumulation, water table, and population density.
 
 ```{figure} ../../fig/interpolation_example_temperature.png
 ---
@@ -372,16 +365,16 @@ Temperature map interpolated from weather stations in Heidelberg, Germany using 
 
 Interpolating data can be highly useful since an extensive data collection is costly and rarely possible. Data collection for continuous phenomena is usually conducted only at a small number of locations. Interpolation models use these points to calculate a raster surface with estimated values for each raster cell. 
 
-There are many differnt interpolation methods, each suited for another type of phenomenon or able to take into account different characteristics. In GIS, the most commonly used interpolation methods are __Spline interpolation__, __Inverse Distance Weighted Interpolation (IDW)__, and __Kriging__. In the following subchapters, we will take a look at these methods, and discuss their strengths and shortcomings.
+There are many different interpolation methods, each suited for another type of phenomenon or able to take into account different characteristics. In GIS, the most commonly used interpolation methods are __Spline interpolation__, __Inverse Distance Weighted Interpolation (IDW)__, and __Kriging__. In the following subchapters, we will take a look at these methods, and discuss their strengths and shortcomings.
 
 
 ```{note}
-Remember that there is no interpolation method that can be applied to every situation. Some methods are more useful for particular inquiries or certain types of data. The method of interpolation you use should always depend on the type of data, phenomenon, and research interest you have. 
+Remember that there is no interpolation method that can be applied to every situation. Some methods are more useful for particular problems or types of data. The method of interpolation you use should always depend on the type of data, phenomenon, and research question you have. 
 ```
 
-### IDW-Interpolation (Inverse Distance Weighted)
+### IDW Interpolation (Inverse Distance Weighted)
 
-In the IDW interpolation method, the distance of a sample point to the point that is to be calculated dictates how much the value of the sample points influences the value of the unknown point. The weight of a point is assigned to sample points by assigning a weighting coefficient that dictates how much the influence of a sample point will drop as the distance increases. The further away the known sample point is located, the less influence it has on the point that is to be calculated. 
+In the IDW interpolation method, the distance between a sample point and the point to be calculated determines how much the sample point's value influences the unknown point's value. A weighting coefficient is assigned to sample points, dictating how their influence decreases with increasing distance. The farther away a known sample point is, the less it influences the point being calculated.
 
 ```{figure} ../../fig/en_idw_explanation.png
 ---
@@ -391,7 +384,7 @@ width: 500px
 Inverse Distance Weighted interpolation based on weighted sample point distance (left). Interpolated IDW surface from elevation vector points (right). (Source: Mitas, L., Mitasova, H. (1999). Spatial Interpolation. In: P.Longley, M.F. Goodchild, D.J. Maguire, D.W.Rhind (Eds.), Geographical Information Systems: Principles, Techniques, Management and Applications, Wiley.)
 ```
 
-Keep in mind that IDW interpolation has a few __disadvantages__. For example, the quality of the calculated statistical surface decreases, if the distribution of sample points is uneven. Additionally, the highest and lowest values in the interpolated surface only occur at sample points, which is probably not the case in the real world. This often results in peaks or pits aroung the sample data points (see [IDW interpolatino example](giscience.github.io/gis-training-resource-center/content/Modul_6/en_qgis_data_analysis_theorie.html#Interpolation)) (adopted from the [QGIS documentation](https://docs.qgis.org/2.18/de/docs/gentle_gis_introduction/spatial_analysis_interpolation.html)). 
+Keep in mind that IDW interpolation has a few __disadvantages__. For example, the quality of the calculated statistical surface decreases, if the distribution of sample points is uneven. Additionally, the highest and lowest values in the interpolated surface only occur at sample points, which is probably not the case in the real world. This often results in peaks or pits around the sample data points (see [IDW interpolation example](giscience.github.io/gis-training-resource-center/content/Modul_6/en_qgis_data_analysis_theorie.html#Interpolation)) (adopted from the [QGIS documentation](https://docs.qgis.org/2.18/de/docs/gentle_gis_introduction/spatial_analysis_interpolation.html)). 
 
 ### Spline Interpolation
 
@@ -415,4 +408,4 @@ Kriging is a method of geostatistics used to estimate values for spatial units w
 
 ## Outlook
 
-There are many analysis methods in GIS. However, setting up an analysis method can be quite time consuming, and creating a new analasys method for every research question makes it hard to compare the results of different analyses. This is why, __model building__ and __automation__ are used frequently when working in GIS data. A model can be seen as a analysis blueprint, that only needs input data to perform a certain type of analysis. Since the parameters are the same, and similar datasets are needed for the model to work properly, the results can be compared. If you are interested in model building and automation, check out [module 7](https://giscience.github.io/gis-training-resource-center/content/Modul_7/en_qgis_automation_theory.html).
+There are many analysis methods in GIS. However, setting up an analysis method can be quite time consuming, and creating a new analysis method for every research question makes it hard to compare the results of different analyses. This is why __model building__ and __automation__ are used frequently when working with GIS data. A model can be seen as a analysis blueprint that only needs input data to perform a certain type of analysis. Since the parameters are the same and similar datasets are needed for the model to work properly, the results can be compared. If you are interested in model building and automation, check out [module 7](https://giscience.github.io/gis-training-resource-center/content/Modul_7/en_qgis_automation_theory.html).
