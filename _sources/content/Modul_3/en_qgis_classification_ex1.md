@@ -1,12 +1,9 @@
 # Geodata Classification Exercise 2: Map of food insecurity in Sierra Leone
 
-### Aim of the exercise
-<<<<<<< HEAD
 
-The aim of this exercise is to create an overview map of the distribution of food insecurity in Sierra Leone at district level. To do this, we will visualize both the distribution of food insecurity and key infrastructure elements such as hospitals, airports and roads. 
-=======
-This exercise aims to create an overview map of the distribition of food insecurity in Sierra Leone at district level. To do this, we will visualise both the distribution of food insecurity and key infrastructure elements such as hospitals, airports and roads. 
->>>>>>> 9ebd83c4d764d4736de6810af5a8b5d8bdec2dea
+### Aim of the exercise
+
+This exercise aims to create an overview map of the distribution of food insecurity in Sierra Leone at district level. To do this, we will visualise both the distribution of food insecurity and key infrastructure elements such as hospitals, airports and roads. 
 
 ### Relevant Wiki Articles
 
@@ -49,7 +46,7 @@ GeoPackages can contain multiple files and even whole QGIS projects. When you lo
 
 4. First have a look at the airport layer(`Sierra_Leone_airports`). Open the attribute table and sort the data. Delete empty columns. See the Wiki entry on the [Attribute table](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html) for further information.
 
-5. Add a base map to your map view using the Plugin `QuickMapServices` by clicking on the ![](/fig/QMS_search_icon.png) symbol in you projct toolbar. Search for "Bing Maps Satellite Imagery" in the QMS panel and add the base map layer via double click.  For an optimised view [adjust the opacity](https://www.youtube.com/watch?v=WguUkN1YRzY&ab_channel=GISBigfootAnswers) of your layers to optimise the use of the base map. 
+5. Add a base map to your map view using the Plugin `QuickMapServices` by clicking on the ![](/fig/QMS_search_icon.png) symbol in you project toolbar. Search for "Bing Maps Satellite Imagery" in the QMS panel and add the base map layer via double click.  For an optimised view [adjust the opacity](https://www.youtube.com/watch?v=WguUkN1YRzY&ab_channel=GISBigfootAnswers) of your layers to optimise the use of the base map. 
 
 6. Using  the attribute table of the airports layer zoom to Tongo Airport by right-clicking on the row in the attribute table and selecting `Zoom to Feature`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature)). Check the Basemap. Do you think the airstrip is still operational? The answer is no, according to Wikipedia. Delete Tongo Airport in the [Attribute table](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html). Delete Kabala airport too, since it is also not operational anymore.
 
