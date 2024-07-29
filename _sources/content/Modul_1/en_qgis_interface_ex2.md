@@ -1,10 +1,10 @@
-# Erxercise: Understanding the QGIS Interface
+# Erxercise 1: Understanding the QGIS Interface
 
 __🔙[Back to Homepage](/content/intro.md)__
 
 ## Aim of the exercise
 
-QGIS is a complex program with lots of functions, and the interface can be confusing. This exercise will get you familiar with the main toolbars, windows and panels in QGIS. You will create a new QGIS project and save it, and navigate through the different panels and toolbars.
+QGIS is a complex program with lots of functions, and the interface can be confusing, especially for beginners. This exercise will get you familiar with the main toolbars, windows and panels in QGIS. You will create a new QGIS project and save it, and navigate through the different panels and toolbars.
 
 The exercise covers: 
 
@@ -76,11 +76,12 @@ In QGIS, the interface may appear slightly different depending on your screen re
 ```
 
 4. QGIS has other panels you can use that aren't shown by default. Let's see how we can find and activate the other panels and toolbars.
--In the `View` menu, find the `panels` and `toolbar` options. Hovering over each will show a list of the available panels and toolbars, and which are activated. Give yourself a minute to look through the different toolbars and panels. There are lots of options but don't worry, you won't use most of them in this training. The panels we'll use the most are: 
+- In the `View` menu, find the `panels` and `toolbar` options. Hovering over each will show a list of the available panels and toolbars, and which are activated. Give yourself a minute to look through the different toolbars and panels. There are lots of options but don't worry, you won't use most of them in this training. The panels we'll use the most are: 
 - Browser
 - Layers
 - Layer Styling
 - Processing Toolbox
+
 5. Now, let's take a look at the toolbars. The toolbars we'll use the most are:  
 - Attributes Toolbar
 - Digitizing Toolbar
@@ -92,7 +93,7 @@ In QGIS, the interface may appear slightly different depending on your screen re
 Take time to make yourself familiar with the different ways you can arrange the QGIS interface. Knowing where to find the different functions can save you a lot of time and frustration in the future!
 
 6. Let's save the project now. Click on the save icon on the toolbar or open the  `Project` menu and choose `Save As...`
-    1. Choose a location for the project file. An ideal place would be in the project subfolder in the template folder structure. Navigate to the folder called `Module_1_Exercise_0` and open the subfolder called `Project`. Select this location and give the QGIS project a name (for example: `QGIS_Training_Exercise_0`). The project will be saved as a `.qqz` file.
+    1. Choose a location for the project file. An ideal place would be in the project subfolder in the template folder structure. Navigate to the folder called `Module_1_Exercise_1` and open the subfolder called `Project`. Select this location and give the QGIS project a name (for example: `QGIS_Training_Exercise_1`). The project will be saved as a `.qqz` file.
     2. Click `Save` 
      Close the QGIS application and reopen it.
 7.  Close the QGIS application and reopen it. When QGIS restarts, the project we just saved will appear in the `Recent Projects` panel. You can double-click it to open it. You can also navigate to the `.qgz` file in your file explorer and double click on it. 

@@ -9,15 +9,78 @@ __🔙[Back to Homepage](/content/intro.md)__
 
 ## Introducing QGIS
 
-- QGIS is an __open source geoinformation system software__. That means the source code is available for everyone, making QGIS a free application. 
-- QGIS is a __desktop software__: that means you get a program that opens up on your computer as a window with buttons you can click, forms you can fill out to do tasks, and it's generally a visual interactive experience. 
-- You may __view, edit, capture and analyze spatial data or create printable maps__ with it. QGIS was created in 2002 and is a project of volunteers. And it is __constantly changing__.
-- QGIS is backed by a __large community of users__, so it’s easy to find solutions to technical issues by using QGIS forums, blog and subreddit, which are listed [here](content/Wiki/en_qgis_common_errors_and_Issues).
+- QGIS is an __open source geoinformation system software__. That means the source code is available for everyone, 
+making QGIS a free application. The entire source code can be viewed and downloaded on https://github.com/qgis/QGIS.
+- QGIS is a __desktop software__: that means you get a program that opens up on your computer as a window with buttons 
+you can click, forms you can fill out to do tasks, and it's generally a visual interactive experience. 
+- You may __view, edit, capture and analyze spatial data or create printable maps__ with it. QGIS was created in 2002 
+and is a project of volunteers. And it is __constantly changing__.
+- QGIS is backed by a __large community of users__, so it’s easy to find solutions to technical issues by using QGIS 
+forums, blogs, or subreddits. The official QGIS community can be found here https://qgis.org/en/site/forusers/support.html#support. Additionally, a list of helpful websites can be found on the [wiki here](content/Wiki/en_qgis_common_errors_and_Issues).
+
+
+<!--FIXME: More practical example to follow along (add a basemap from xyz tiles or something, see issue) -->
 
 ___
 
+## Working with QGIS
 
-## Open QGIS
+In QGIS, you create projects where you can visualise and manipulate geodata. You can create new data by processing 
+geodata or create maps to visualise geodata and communicate insights. You can import various forms of geodata, which 
+will be represented as layers on a map canvas.
+Working with QGIS mainly consists of loading geodata into your QGIS-project and processing the data by using algorithms 
+to manipulate the data or by visualising data to create maps. 
+
+<!--ADD: mention the creation of geodata-->
+
+<!--ADD: insert link to layer concept in What is GIS (which is also missing)-->
+
+### Data processing
+
+QGIS offers a wide range of algorithms to process geodata. In the following modules, you will get to know a number of 
+algorithms that are especially useful for GIS in humanitarian work. For example, you can:
+- Select the houses which are at risk of being flooded
+- Calculate the area of agricultural land
+
+You will learn more about data processing and manipulation in module 2 and onwards. 
+
+<!--ADD: more examples-->
+<!--ADD: add link to basic data processing and visualisation chapters-->
+
+
+#### Plugins
+
+In addition to the algorithms included in the standard installation, QGIS offers plugins which add additional 
+functionality to the QGIS application. These plugins are developed by independent organizations or the QGIS-community. 
+For example, plugins let you connect to online services such as OpenStreetMap, or add more algorithms to process your 
+data. These can be very useful for certain use cases. There are also plugins specifically designed for humanitarian 
+work. You will learn more about plugins and how to install them in [module 2] and in the [wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html)
+
+<!--ADD: Examples of plugins-->
+<!--ADD: insert link to module 2-->
+
+### Visualisation 
+
+QGIS let's you visualise geodata and create maps to communicate information. It does so by assigning symbols and colours 
+to different elements in your geodata. Assigning a symbology to the geodata is one of the main skills you will develop 
+as a GIS-user and a good visualisation of data is immensely useful when communicating insights. You will learn how to 
+assign symbols in [Module 3: Visualisation of Geodata and Map Making](https://giscience.github.io/
+gis-training-resource-center/content/Modul_4/en_qgis_map_design_I.html)
+
+<!--ADD: Insert example for visualisation-->
+<!--FIXME: Insert link to overview page on module 3-->
+
+### Data creation
+
+QGIS offer powerful tools to create geodata. For example through digitizing, you can create points, polygons, and lines with information. Furthermore, georeferencing let's you add geographic information to various types of data.
+
+Sometimes working with GIS requires you to go and collect the data in the field. In this case, you can use [web and mobile apps](content\Wiki\en_web_and_mobile_apps_wiki.md). 
+
+
+<!--Insert examples for data creation.-->
+<!--link wiki page for mobile apps-->
+
+## Opening a new project in QGIS
 
 Open QGIS like any other program on your computer. 
 The start screen of QGIS usually shows you the projects you worked on recently and the option to create a new project.
@@ -85,7 +148,7 @@ align: center
  6. Open your “Projects” folder and check the __.qgz file__ that you just created
 :::
 
-## Buttens and Shortcuts
+## Buttons and Shortcuts
 
 In QGIS, __mouse control__ allows users to interact with the map canvas, enabling functions such as panning, zooming, and selecting features.
 
