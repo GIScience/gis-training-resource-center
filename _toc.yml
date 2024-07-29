@@ -4,7 +4,7 @@
 format: jb-book
 root: content/intro
 parts:
-  - caption: 
+  - caption: Module 1 - Introduction to GIS
     chapters:
       - file: content/Modul_1/en_module_1_overview
         sections: 
