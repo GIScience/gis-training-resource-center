@@ -73,6 +73,7 @@ At the end of this chapter you should:
 
 ::::
 
+
 ::::{grid} 2
 
 :::{card}
