@@ -67,6 +67,27 @@ At the end of this chapter you should:
 - Know about the open-source program QGIS
 - Know how to install QGIS
 - Know how to create, save, and open a QGIS-Project
+- Understand the QGIS-interface and its components
+
+:::
+
+::::
+
+::::{grid 2}
+
+:::{card}
+
+__[Chapter 4: Exercises for Module 1](content\Modul_1\en_qgis_modul_1_exercises.md)__
+
+:::
+
+:::{card}
+
+At the end of this chapter you should:
+
+- have applied the knowledge of module 1 through practical exercises
+
+
 
 :::
 
