@@ -1,4 +1,4 @@
-# Module 1: Introduction to GIS
+# Introduction to GIS
 
 The first module is aimed to familiarise beginners with the concept of geographic information systems (GIS) by providing an overview and a definition of GIS, and introduce the open-source application __QGIS__. The first chapter "What is GIS?" explains in basic terms the concept of geographic information systems and provides examples of GIS being used in humanitarian work. Furthermore, it explains the two main use cases 
 
@@ -17,7 +17,7 @@ __[Chapter 1: What is GIS?](https://giscience.github.io/gis-training-resource-ce
 
 :::
 
-:::card
+:::{card}
 ## Competences
 
 At the end of this chapter, you should:
@@ -36,7 +36,7 @@ At the end of this chapter, you should:
 
 :::{card}
 
-__[Chapter 2: Installing QGIS](content\Modul_1\en_qgis_installation.md)__
+__[Chapter 2: Installing QGIS](https://giscience.github.io/gis-training-resource-center/content/Modul_1/en_qgis_installation.html)__
 
 :::
 
@@ -55,7 +55,7 @@ At the end of this chapter, you should:
 
 :::{card}
 
-__[Chapter 3: Getting started with QGIS](content\Modul_1\en_qgis_start.md)__ 
+__[Chapter 3: Getting started with QGIS](https://giscience.github.io/gis-training-resource-center/content/Modul_1/en_qgis_start.html)__ 
 
 :::
 
