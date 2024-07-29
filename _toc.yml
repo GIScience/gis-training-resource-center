@@ -6,17 +6,15 @@ root: content/intro
 parts:
   - caption: Module 1 - Introduction to GIS
     chapters:
-      - file: content/Modul_1/en_qgis_theorie.md
-      - file: content/Modul_1/en_qgis_start.md
-        sections:
-          - file: content/Modul_1/en_qgis_interface_ex2.md
-      - file: content/Modul_1/en_qgis_installation.md
-      - file: content/Modul_1/en_qgis_modul_1_exercises.md      
+      - file: content/Modul_1/en_module_1_overview
+        sections: 
+          - file: content/Modul_1/en_qgis_theorie.md
+          - file: content/Modul_1/en_qgis_installation.md
+          - file: content/Modul_1/en_qgis_start.md
+          - file: content/Modul_1/en_qgis_modul_1_exercises.md      
   - caption: Module 2 - Introduction to Working with Geodata
     chapters:
       - file: content/Modul_2/en_qgis_geodata_concept.md
-        sections:
-          - file: content/Modul_2/en_qgis_geodata_concept_ex1.md
       - file: content/Modul_2/en_qgis_basic_data_processing.md
         sections:
           - file: content/Modul_2/en_qgis_basic_data_processing_ex1.md
@@ -29,6 +27,7 @@ parts:
       - file: content/Modul_2/en_qgis_modul_2_exercises.md
         sections:
           - file: content/Modul_2/en_qgis_modul_2_ex_1.md
+          - file: content/Modul_1/en_qgis_interface_ex2.md
   - caption: Module 3 - Basic GIS Operations (Digitisation, Classification, and Queries)
     chapters:
       - file: content/Modul_3/en_qgis_digitalisation.md

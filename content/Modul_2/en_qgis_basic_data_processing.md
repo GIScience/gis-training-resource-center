@@ -12,7 +12,7 @@ of your GIS career, we will focus on vector geodata.
 * Geo features and attributes
 * Feature selection
 
-## Geodata management: Fundermantals
+## Geodata management: Fundamentals
 
 Working with geodata is not like working with data in programs such as Microsoft 
 Excel or Word. Whenever you load an image in a Word file, the file will contain 

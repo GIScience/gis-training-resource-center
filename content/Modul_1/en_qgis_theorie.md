@@ -222,14 +222,20 @@ the dataset, revealing that the Spatial Mean (the geographic center of the
 distribution of deaths) of the outbreak lies __within 35 meters of the Broad 
 Street Pump__, identified as the __source of contamination__ in the 1854 outbreak. 
 
+:::{card}
+
 %%html
 <iframe src="https://www.arcgis.com/apps/PublicInformation/index.html?appid=d7deb67f810d46dfacb80ff80ac224e9" width="750" height="500"></iframe>
-
+:::
 
 # Common map types in humanitarian response
 
+:::{note}
+
 The humanitarian sector tends to use certain types of maps regularly. These are
 outlined below. 
+
+:::
 
 ### General reference maps
 
@@ -329,6 +335,7 @@ align: center
 Example Map: UNHCR Iraq Population Profile - Breakdown Overview - Syrian Refugees Registration December 2023. Source: [UNHCR](https://reliefweb.int/report/iraq/unhcr-iraq-population-profile-breakdown-overview-syrian-refugees-registration-december-2023)
 ```
 
+<!--FIXME: MOVE the entire section below to somewhere more useful-->
 
 ## Web & mobile GIS applications
 
@@ -376,8 +383,10 @@ as recording your trips and then exporting them.
 - __[GeoODK](http://geoodk.com/index.htm)__: Combines __OpenDataKit (ODK) with a geo app__. 
 You can collect data through ODK surveys and display them on a map, in addition 
 to easily create polygons and add information to them.
-
-
+- __[KoboToolbox](https://www.kobotoolbox.org)__: KoboToolbox is an open-source suite designed for efficient data
+collection and analysis, especially in challenging environments. It supports online and offline data collection via 
+mobile devices and web forms, and offers an intuitive form builder for creating complex surveys. It includes features 
+like real-time data viewing, data export. 
 
 
 
