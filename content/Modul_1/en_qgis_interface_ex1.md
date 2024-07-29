@@ -1,11 +1,12 @@
-# QGIS Exercise 1: Understand the user interface and get to know the layer concept
+# QGIS Exercise 2: Understanding the user interface and getting to know the layer concept
 
 __🔙[Back to Homepage](/content/intro.md)__
 
 ### Aim of the exercise:
-To take the first steps.
-Display vector data in QGIS and view the attribute data.
-Reproject vector data (i.e. change the projection of the data).
+
+This exercise expands on the previous exercise. This time, we will also import data into a QGIS-project.
+We will learn how to display vector data in QGIS, view the attribute table, as well as learn how to reproject layers.
+This exercise touches upon content from module 2 and is aimed to refresh your knowledge about QGIS if you have already created your first projects. 
 
 ### Wiki:
 
