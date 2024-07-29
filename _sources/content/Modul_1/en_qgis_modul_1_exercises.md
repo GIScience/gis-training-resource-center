@@ -1,8 +1,8 @@
-# Exercises Module 1- Introduction to QGIS
+# Exercises Module 1 - Introduction to GIS
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-This page has all the exercises from Module 1- Introduction to QGIS.
+This page has all the exercises from Module 1 - Introduction to GIS.
 
 In all the exercises you find a list of relevant wiki articles and videos. 
 Whenever you are stuck, have a look at the wiki. If you still have questions 
@@ -16,6 +16,4 @@ afterwards, contact your trainers.
     - Move panels around
     - Learn how to activate and find optional panels
     - Change settings
-
-
 
