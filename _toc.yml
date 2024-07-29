@@ -6,10 +6,12 @@ root: content/intro
 parts:
   - caption: Module 1 - Introduction to GIS
     chapters:
-      - file: content/Modul_1/en_qgis_theorie.md
-      - file: content/Modul_1/en_qgis_installation.md
-      - file: content/Modul_1/en_qgis_start.md
-      - file: content/Modul_1/en_qgis_modul_1_exercises.md      
+      - file: content/Modul_1/en_module_1_overview
+        sections: 
+          - file: content/Modul_1/en_qgis_theorie.md
+          - file: content/Modul_1/en_qgis_installation.md
+          - file: content/Modul_1/en_qgis_start.md
+          - file: content/Modul_1/en_qgis_modul_1_exercises.md      
   - caption: Module 2 - Introduction to Working with Geodata
     chapters:
       - file: content/Modul_2/en_qgis_geodata_concept.md
