@@ -73,7 +73,7 @@ At the end of this chapter you should:
 
 ::::
 
-::::{grid 2}
+::::{grid} 2
 
 :::{card}
 
@@ -86,8 +86,6 @@ __[Chapter 4: Exercises for Module 1](content\Modul_1\en_qgis_modul_1_exercises.
 At the end of this chapter you should:
 
 - have applied the knowledge of module 1 through practical exercises
-
-
 
 :::
 
