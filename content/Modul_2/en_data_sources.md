@@ -5,9 +5,8 @@ __🔙[Back to Homepage](/content/intro.md)__
 To find the appropriate data you are looking for, you can search online data 
 sharing platforms. Some important ones are highlighted below. 
 
-<details>
-<summary>What to look out for when looking for data:</summary>
-<br> 
+__What to look out for when looking for data:__
+
 
 *Data source:* Always make sure to use data from trusted data sources. The 
 organisation that shared the data is the best indicator. Apart from that, use of 
@@ -29,7 +28,8 @@ up-to-date data available from another source.
 *Data license:* What kind of license does the data have? How can you use and 
 share it and how do you need to cite the data source? Make sure to check the 
 licensing and to follow the respective regulations to avoid difficulties.
-</details>
+
+
 <!-- ADD: Would be nice to have a wiki page on licensing if possible -->
 
 
@@ -106,9 +106,13 @@ OpenStreetMap (OSM) is a collaborative project that aims to create a free and ed
 
 There a multiple ways to get OpenStreetMap (OSM) data as a vector file into QGIS. The three most common and easy-to-use ways are geofarbik.de, HOT Export Tool and QuickOSM. Each of the options has both advantages and disadvantages.
 
-```{Note}
-In the exercise "OpenStreetMap data export" all three options are explored.
+
+```{Tip}
+If you wish to practice how to export OSM data, you can do the __[Exercise 4: Exporting OSM Data](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_data_sources_ex2.html)__
+
 ```
+
+
 
 <!---ADD: Insert link to OSM exercise -->
 
