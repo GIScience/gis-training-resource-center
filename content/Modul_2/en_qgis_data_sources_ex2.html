@@ -185,7 +185,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_attribute_table.html">Attribute Table</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_data_sources.html">Data sources</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_basemap.html">Basemaps</a></li>
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_modul_2_exercises.html">Exercises Module 2 - Introduction to Working with Geodata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_modul_2_exercises.html">Exercises Module 2 - Working with Geodata</a></li>
 </ul>
 </li>
 </ul>
@@ -555,9 +555,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aim-of-the-exercise">Aim of the exercise:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relevant-wiki-articles">Relevant wiki articles</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-sources">Data sources</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task">Task</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-geofabrik">Task: Geofabrik</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-hot-export-tool">Task: HOT Export Tool</a></li>
@@ -578,30 +576,79 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="exercise-openstreetmap-data-export">
 <h1>Exercise: OpenStreetMap data export<a class="headerlink" href="#exercise-openstreetmap-data-export" title="Permalink to this heading">#</a></h1>
 <p><strong>🔙<a class="reference internal" href="../intro.html"><span class="doc std std-doc">Back to Homepage</span></a></strong></p>
-<section id="aim-of-the-exercise">
-<h2>Aim of the exercise:<a class="headerlink" href="#aim-of-the-exercise" title="Permalink to this heading">#</a></h2>
-<p>This exercise aims to show multiple ways how to get OpenStreetMap(OSM) as a vector
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="rubric">Aim of the exercise:</p>
+<p class="sd-card-text">This exercise aims to show multiple ways how to get OpenStreetMap(OSM) as a vector
 file into QGIS.</p>
-</section>
-<section id="relevant-wiki-articles">
-<h2>Relevant wiki articles<a class="headerlink" href="#relevant-wiki-articles" title="Permalink to this heading">#</a></h2>
+<p class="rubric">Type of trainings exercise:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html">QGIS Interface</a></p></li>
-<li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_types_wiki.html">Types of Geodata</a></p></li>
-<li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html">Geodata Import in QGIS</a></p></li>
-<li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html">Layer Concept</a></p></li>
-<li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html">Geodata Classification- Graduated</a></p></li>
+<li><p class="sd-card-text">This exercise can be used in online and presence training.</p></li>
 </ul>
-</section>
-<section id="data-sources">
-<h2>Data sources<a class="headerlink" href="#data-sources" title="Permalink to this heading">#</a></h2>
-<p>In this exercise, you will download all data during the exercise.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="rubric">Focus group (GIS-Knowlege Level)</p>
+<ul class="simple">
+<li><p class="sd-card-text">QGIS Beginners</p></li>
+<li><p class="sd-card-text">The skills tested in this exercise are necessary for all GIS-users.</p></li>
+</ul>
+<p class="rubric">These skills are relevant for</p>
+<ul class="simple">
+<li><p class="sd-card-text">Finding and downloading relevant datasets and preparing them for further analysis</p></li>
+<li></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="rubric">Estimated time demand for the exercise.</p>
+<ul class="simple">
+<li><p class="sd-card-text">The exercise takes around 2 hours to complete, depending on the number of participants and their familiarity with computer systems.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="rubric">Relevant wiki articles</p>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html">QGIS Interface</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_types_wiki.html">Types of Geodata</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html">Geodata Import in QGIS</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html">Layer Concept</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html">Geodata Classification - Graduated</a></p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section id="available-data">
+<h2>Available Data<a class="headerlink" href="#available-data" title="Permalink to this heading">#</a></h2>
+<p>Since the exercise is about finding data, there won’t be any data to download.
+Instead download the usual folder structure <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip">here</a> and insert your data as you download it.</p>
 </section>
 <section id="task">
 <h2>Task<a class="headerlink" href="#task" title="Permalink to this heading">#</a></h2>
-<p>There are multiple ways how to get data from OpenStreetMap (OSM).</p>
+<p>There are multiple ways how to get data from OpenStreetMap (OSM). In this exercise, we will go over a few methods to extract data from OSM. Depending on your use-case, you might only want very specific data from OSM, whereas in others, you might want to download almost all the regional OSM data.</p>
 <!-- FIXME: This task needs more information. what is the user trying to achieve 
-   and why? -->
+   and why?
+   
+   ADD: Maybe a discussion step for each extraction method? in which scenarios would you choose which extraction method? -->
 <section id="task-geofabrik">
 <h3>Task: Geofabrik<a class="headerlink" href="#task-geofabrik" title="Permalink to this heading">#</a></h3>
 <p>The Geofabrik website offers downloads of OSM data by region.</p>
@@ -892,9 +939,7 @@ Solution accommodation query<div class="sd-summary-down docutils">
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aim-of-the-exercise">Aim of the exercise:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relevant-wiki-articles">Relevant wiki articles</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-sources">Data sources</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task">Task</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-geofabrik">Task: Geofabrik</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-hot-export-tool">Task: HOT Export Tool</a></li>

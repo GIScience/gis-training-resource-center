@@ -47,7 +47,7 @@ The objective of this exercise is to make your first steps in QGIS. Understand t
 
 :::{grid-item-card}
 
-### Links to Wiki articles
+### Relevant Wiki articles
 
 * [QGIS Interface](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
 * [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)
@@ -91,12 +91,13 @@ __Wrap up:__
 
 :::
 
+## Exercise
 ### Available Data
 
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_Geodata_concept.zip
 
-Download all datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_Geodata_concept.zip) and save the folder on your computer and unzip the file. 
+__Download all datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_Geodata_concept.zip) and save the folder on your computer and unzip the file.__
 
 :::
 
