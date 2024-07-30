@@ -557,7 +557,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristics-of-the-exercise">Characteristics of the exercise</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions-for-the-trainers">Instructions for the trainers</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a></li>
 </ul>
 </li>
@@ -604,6 +604,12 @@ document.write(`
 <li><p class="sd-card-text">The skills tested in this exercise are necessary for all GIS-users.</p></li>
 </ul>
 <p class="rubric">These skills are relevant for</p>
+<ul class="simple">
+<li><p class="sd-card-text">Understanding spatial components of datasets</p></li>
+<li><p class="sd-card-text">Navigating the QGIS-interface</p></li>
+<li><p class="sd-card-text">Managing and manipulating geodata</p></li>
+<li><p class="sd-card-text">Performing basic and advanced spatial analyses</p></li>
+</ul>
 </div>
 </div>
 </div>
@@ -673,9 +679,14 @@ document.write(`
 <li><p class="sd-card-text">Leave some time for open questions.</p></li>
 </ul>
 </div>
-</details><section id="data">
-<h3>Data<a class="headerlink" href="#data" title="Permalink to this heading">#</a></h3>
-<p>Download all datasets <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_Geodata_concept.zip">here</a> and save the folder on your computer and unzip the file. The zip folder includes:</p>
+</details><section id="available-data">
+<h3>Available Data<a class="headerlink" href="#available-data" title="Permalink to this heading">#</a></h3>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Download all datasets <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_Geodata_concept.zip">here</a> and save the folder on your computer and unzip the file.</p>
+</div>
+<a class="sd-stretched-link reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_Geodata_concept.zip"></a></div>
+<p>The zip folder includes:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Sierra_leone_borders.gpkg</span></code> (MultiLineString) GeoPackage</p>
 <ul>
@@ -756,7 +767,6 @@ layer. What projection is shown there?</p>
 <p class="admonition-title">Hint</p>
 <p>To obtain information about a layer and its projections, double-click on the layer and look for the <code class="docutils literal notranslate"><span class="pre">Information</span></code> section. This section contains general details such as the file name and file path, as well as information about the Coordinate Reference System (CRS) in the respective section.</p>
 </div>
-<!-- CLARIFY: use it for what? EDIT: No longer valid comment?-->
 <ol class="arabic simple" start="6">
 <li><p>Save the health facility layer in the <code class="docutils literal notranslate"><span class="pre">WGS</span> <span class="pre">84</span> <span class="pre">/</span> <span class="pre">Pseudo-Mercator</span> <span class="pre">EPSG:3857</span></code> projection. This will change the projection of the file. This can be done by right-clicking on the layer –&gt; <code class="docutils literal notranslate"><span class="pre">Export</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Features</span> <span class="pre">As..</span></code>. In the pop-up window, select <strong>GeoPackage as the output file format</strong> and <strong>specify the file location and name</strong> by clicking on the three small points. The file can also be given a layer name, which will be displayed when it is loaded into QGIS. Before running this process, the <strong>projection can be changed</strong> by selecting the desired CRS in the designated section. Verify the changed projection by looking at the properties of the newly created layer.</p></li>
 </ol>
@@ -833,7 +843,7 @@ under <code class="docutils literal notranslate"><span class="pre">XYZ</span> <s
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristics-of-the-exercise">Characteristics of the exercise</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions-for-the-trainers">Instructions for the trainers</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a></li>
 </ul>
 </li>

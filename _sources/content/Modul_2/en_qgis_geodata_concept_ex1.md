@@ -27,6 +27,11 @@ The objective of this exercise is to make your first steps in QGIS. Understand t
 
 #### These skills are relevant for 
 
+- Understanding spatial components of datasets
+- Navigating the QGIS-interface
+- Managing and manipulating geodata
+- Performing basic and advanced spatial analyses
+
 
 :::
 ::::
@@ -86,8 +91,16 @@ __Wrap up:__
 
 :::
 
-### Data
-Download all datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_Geodata_concept.zip) and save the folder on your computer and unzip the file. The zip folder includes:
+### Available Data
+
+:::{card}
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_Geodata_concept.zip
+
+Download all datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_Geodata_concept.zip) and save the folder on your computer and unzip the file. 
+
+:::
+
+The zip folder includes:
 
 - `Sierra_leone_borders.gpkg` (MultiLineString) GeoPackage
     - Sierra Leone national borders (Lines)
@@ -157,7 +170,7 @@ layer. What projection is shown there?
 ```{Hint}
 To obtain information about a layer and its projections, double-click on the layer and look for the `Information` section. This section contains general details such as the file name and file path, as well as information about the Coordinate Reference System (CRS) in the respective section.
 ```
-<!-- CLARIFY: use it for what? EDIT: No longer valid comment?-->
+
 
 6. Save the health facility layer in the `WGS 84 / Pseudo-Mercator EPSG:3857` projection. This will change the projection of the file. This can be done by right-clicking on the layer --> `Export` --> `Save Features As..`. In the pop-up window, select **GeoPackage as the output file format** and **specify the file location and name** by clicking on the three small points. The file can also be given a layer name, which will be displayed when it is loaded into QGIS. Before running this process, the **projection can be changed** by selecting the desired CRS in the designated section. Verify the changed projection by looking at the properties of the newly created layer.
 
