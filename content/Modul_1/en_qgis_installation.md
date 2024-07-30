@@ -1,4 +1,4 @@
-# QGIS Installation
+# Installing QGIS
 
 __🔙[Back to Homepage](/content/intro.md)__
 
@@ -40,7 +40,7 @@ align: center
 start the installer
 6. Follow the installer instructions to install QGIS!
 
-## Windows specialities
+## Considerations for the windows installation
 
 ### 32 Bit or 64 Bit?
 For __Windows operating systems__, there is always a 32-bit version and a 64-bit 
@@ -56,14 +56,14 @@ Since QGIS 3.20 there are only 64-bit Windows executables.
 ```
 
 
-## Mac specialities
+## Considerations for the MacOS installation
 
 
 ```{Note} 
 From version 3.30 SAGA must be integrated via plugin.
 ```
 
-## Linux specialities
+## Considerations for the Linux installation
 
 ```{Note} 
 From version 3.30 SAGA must be integrated via plugin.

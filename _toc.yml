@@ -14,20 +14,14 @@ parts:
           - file: content/Modul_1/en_qgis_modul_1_exercises.md      
   - caption: Module 2 - Introduction to Working with Geodata
     chapters:
-      - file: content/Modul_2/en_qgis_geodata_concept.md
-      - file: content/Modul_2/en_qgis_basic_data_processing.md
+      - file: content/Modul_2/en_module_2_overview.md
         sections:
-          - file: content/Modul_2/en_qgis_basic_data_processing_ex1.md
-      - file: content/Modul_2/en_qgis_attribute_table.md
-      - file: content/Modul_2/en_data_sources.md
-        sections:
-          - file: content/Modul_2/en_qgis_data_sources_ex1.md
-          - file: content/Modul_2/en_qgis_data_sources_ex2.md
-      - file: content/Modul_2/en_qgis_basemap.md
-      - file: content/Modul_2/en_qgis_modul_2_exercises.md
-        sections:
-          - file: content/Modul_2/en_qgis_modul_2_ex_1.md
-          - file: content/Modul_1/en_qgis_interface_ex2.md
+          - file: content/Modul_2/en_qgis_geodata_concept.md
+          - file: content/Modul_2/en_qgis_basic_data_processing.md
+          - file: content/Modul_2/en_qgis_attribute_table.md
+          - file: content/Modul_2/en_data_sources.md
+          - file: content/Modul_2/en_qgis_basemap.md
+          - file: content/Modul_2/en_qgis_modul_2_exercises.md
   - caption: Module 3 - Basic GIS Operations (Digitisation, Classification, and Queries)
     chapters:
       - file: content/Modul_3/en_qgis_digitalisation.md
