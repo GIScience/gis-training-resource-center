@@ -1,12 +1,49 @@
-# Exercise 1: Geodata Concept
+# Exercise 1: Understanding Geodata
 
-### Aim of the exercise
+## Characteristics of the exercise
+
+::::{grid} 2
+:::{grid-item-card}
+#### Aim of this exercise:
+
 The objective of this exercise is to make your first steps in QGIS. Understand the user interface and get to know the layer concept. 
 
 * Display vector data in QGIS and view the attributes of the data
 * Reproject/Change the projection of the vector data
 
+#### Type of trainings exercise:
+
+- This exercise can be used in online and presence training. 
+- It can be done as a follow-along exercise or individually.
+
+:::
+
+:::{grid-item-card}
+
+#### Focus group (GIS-Knowlege Level)
+
+- QGIS Beginners
+- The skills tested in this exercise are necessary for all GIS-users.
+
+#### These skills are relevant for 
+
+
+:::
+::::
+
+::::{grid} 2
+:::{grid-item-card}
+
+#### Estimated time demand for the exercise.
+
+- The exercise takes around 2 hours to complete, depending on the number of participants and their familiarity with computer systems.
+
+:::
+
+:::{grid-item-card}
+
 ### Links to Wiki articles
+
 * [QGIS Interface](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
 * [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)
 * [Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html)
@@ -14,25 +51,60 @@ The objective of this exercise is to make your first steps in QGIS. Understand t
 * [Projections](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html)
 <!-- FIXME: to be updated -->
 
+:::
+
+::::
+
+## Instructions for the trainers
+
+:::{dropdown} __Trainers Corner__ 
+
+### Prepare the training
+
+- Take the time to familiarise yourself with the exercise and the provided material.
+- Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
+- Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
+- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
+
+### Conduct the training
+
+__Introduction:__
+
+- Introduce the idea and aim of the exercise.
+- Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.
+
+__Follow-along:__
+
+- Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project. 
+- Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.  
+- Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.
+
+__Wrap up:__
+
+- Leave time for any issues or questions concerning the tasks at the end of the exercise.
+- Leave some time for open questions. 
+
+:::
+
 ### Data
 Download all datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_Geodata_concept.zip) and save the folder on your computer and unzip the file. The zip folder includes:
-<!-- CLARIFY: does it matter where they are downloaded? -->
+
 - `Sierra_leone_borders.gpkg` (MultiLineString) GeoPackage
     - Sierra Leone national borders (Lines)
     - Sierra Leone provinces (Lines)
 - `sierra_leone_health_HOT.shp` (Points) Shapefile
 - `sl-airports.csv` (CSV)
 
+The borders GeoPackage contains administrative information for Sierra Leone at both national and provincial level. Additionally, the shapefile `sierra_leone_health_HOT.shp` provides information on various health facilities within the country, while the `sl-airports.csv` CSV-file offers information on airports.
+
 ```{hint} Folder structure
 Keep your data management clean by creating a folder structure on your computer for your QGIS-projects and geodata. 
 The exercise data should be saved in a location where you can easily find them and the corresponding QGIS-project
 ```
 
-The borders GeoPackage contains administrative information for Sierra Leone at both national and provincial level. Additionally, the shapefile `sierra_leone_health_HOT.shp` provides information on various health facilities within the country, while the `sl-airports.csv` CSV-file offers information on airports.
-
-
 ### Tasks
 1. Open the files you have downloaded in QGIS. 
+   - Unzip the folder with the exercise data. 
    - The geopackage (.gpkg) and shapefile (.shp) can be dragged and dropped onto the map canvas in QGIS. 
    - The .csv file needs to be imported via the layer menu.
       - Navigate to `Layer`> `Add Layer` > `Add delimited text layer`. A new window will open. Here you can select the file you want to import by clicking on `...` to the right of the __File name__  field at the top.
