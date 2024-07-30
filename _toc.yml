@@ -12,7 +12,7 @@ parts:
           - file: content/Modul_1/en_qgis_installation.md
           - file: content/Modul_1/en_qgis_start.md
           - file: content/Modul_1/en_qgis_modul_1_exercises.md      
-  - caption: Module 2 - Introduction to Working with Geodata
+  - caption: Module 2
     chapters:
       - file: content/Modul_2/en_module_2_overview.md
         sections:
