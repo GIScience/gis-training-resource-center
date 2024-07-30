@@ -1,28 +1,71 @@
 # Exercise: OpenStreetMap data export
 __🔙[Back to Homepage](/content/intro.md)__
 
+::::{grid} 2
+:::{grid-item-card}
+
 ## Aim of the exercise:
 
 This exercise aims to show multiple ways how to get OpenStreetMap(OSM) as a vector 
 file into QGIS.
 
-## Relevant wiki articles
+
+#### Type of trainings exercise:
+
+- This exercise can be used in online and presence training. 
+
+:::
+
+:::{grid-item-card}
+
+#### Focus group (GIS-Knowlege Level)
+
+- QGIS Beginners
+- The skills tested in this exercise are necessary for all GIS-users.
+
+#### These skills are relevant for 
+
+- Finding and downloading relevant datasets and preparing them for further analysis
+- 
+:::
+::::
+
+::::{grid} 2
+:::{grid-item-card}
+
+#### Estimated time demand for the exercise.
+
+- The exercise takes around 2 hours to complete, depending on the number of participants and their familiarity with computer systems.
+
+:::
+
+:::{grid-item-card}
+### Relevant wiki articles
 
 * [QGIS Interface](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
 * [Types of Geodata](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_types_wiki.html)
 * [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)
 * [Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html)
-* [Geodata Classification- Graduated](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html)
+* [Geodata Classification - Graduated](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html)
 
 
-## Data sources
-In this exercise, you will download all data during the exercise.
+:::
+
+::::
+
+
+## Available Data
+
+Since the exercise is about finding data, there won't be any data to download. 
+Instead download the usual folder structure [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip) and insert your data as you download it.
 
 ## Task
 
-There are multiple ways how to get data from OpenStreetMap (OSM). 
+There are multiple ways how to get data from OpenStreetMap (OSM). In this exercise, we will go over a few methods to extract data from OSM. Depending on your use-case, you might only want very specific data from OSM, whereas in others, you might want to download almost all the regional OSM data.
 <!-- FIXME: This task needs more information. what is the user trying to achieve 
-   and why? -->
+   and why?
+   
+   ADD: Maybe a discussion step for each extraction method? in which scenarios would you choose which extraction method? -->
 
 ### Task: Geofabrik
 

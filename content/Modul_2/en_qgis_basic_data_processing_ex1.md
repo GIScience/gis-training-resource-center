@@ -3,19 +3,69 @@
 __🔙[Back to Homepage](/content/intro.md)__
 
 ### Aim of the exercise
+
+
+## Characteristics of the exercise
+
+::::{grid} 2
+:::{grid-item-card}
+#### Aim of this exercise:
+
 The objective of this exercise is to get a feeling for geodata and start working 
 with it. Understand the attribute table, sort it, select manually and export the 
-selection.
+selection, as well as load a basemap
 
-### Links to Wiki articles
+#### Type of trainings exercise:
+
+- This exercise can be used in online and presence training. 
+- It can be done as a follow-along exercise or individually as a self-study.
+
+:::
+
+:::{grid-item-card}
+
+#### Focus group (GIS-Knowlege Level)
+
+- QGIS Beginners
+- The skills tested in this exercise are necessary for all GIS-users.
+
+#### These skills are relevant for 
+
+- Navigating the QGIS-interface 
+- Sorting and manipulating datasets through the attribute table
+- selecting the correct projections
+- performing basic and advanced spatial analyses
+
+
+:::
+::::
+
+::::{grid} 2
+:::{grid-item-card}
+
+#### Estimated time demand for the exercise.
+
+- The exercise takes around 1 hour to complete, depending on the number of participants and their familiarity with computer systems.
+
+:::
+
+:::{grid-item-card}
+
+### Relevant Wiki articles
 
 * [QGIS Interface](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
 * [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)
 * [Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html)
 * [Attribute Table in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.md)
 * [Projections](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html)
+<!-- FIXME: to be updated -->
 
-### Data
+:::
+
+::::
+
+## Exercise
+### Available Data
 Download all datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_2/Module_2_Exercise_2_Basic_geodata_processing.zip), save the folder on your computer and unzip the file. The zip folder includes:
 
 - `nigeria_populated_places.shp` (Points) Shapefile

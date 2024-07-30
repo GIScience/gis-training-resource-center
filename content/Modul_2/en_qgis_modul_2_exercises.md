@@ -1,4 +1,4 @@
-# Exercises Module 2 - Introduction to Working with Geodata
+# Exercises Module 2 - Working with Geodata
 
 __🔙[Back to Homepage](/content/intro.md)__
 
@@ -10,7 +10,7 @@ These exercises are designed to support a QGIS-training and can be done with par
 
 | Exercise| Description |Focus Group|Estimated time| 
 | :-------------------- | :----------------- |:----------------- |:----------------- |
-|__[Exercise 1: Geodata Concept](/content/Modul_2/en_qgis_geodata_concept_ex1.md)__ | The objective of this exercise is to make your first steps in QGIS. Understand the user interface and get to know the layer concept. Display vector data in QGIS and view the attributes of the data. Reproject the vector data (i.e. by changing the projection of the data) | QGIS Beginners | 2 hours | 
+|__[Exercise 1: Understanding Geodata](/content/Modul_2/en_qgis_geodata_concept_ex1.md)__ | The objective of this exercise is to make your first steps in QGIS. Understand the user interface and get to know the layer concept. Display vector data in QGIS and view the attributes of the data. Reproject the vector data (i.e. by changing the projection of the data) | QGIS Beginners | 2 hours | 
 |  __[Exercise 2: Basic Geodata Processing](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_basic_data_processing_ex1.html)__ | The objective of this exercise is to get a feeling for geodata and start working with it. Understand the attribute table, sort it, select manually and export the selection. | QGIS Beginners | 1 hour | 
 | __[Exercise 3: Data Sources](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_data_sources_ex1.html)__ | The aim of this exercise is to navigate various data sources, gain an understanding of where and how to access relevant data, and identify potential problems. | QGIS Beginners | 1-2 hours |
 | __[Exercise 4: Exporting OSM Data](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_data_sources_ex2.html)__ | The aim of this exercise is to learn multiple ways to export OpenStreetMap (OSM) data as vector files and load them into QGIS. | Advanced QGIS Beginners | 2 hours |
