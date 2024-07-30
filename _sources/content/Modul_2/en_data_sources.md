@@ -112,10 +112,6 @@ If you wish to practice how to export OSM data, you can do the __[Exercise 4: Ex
 
 ```
 
-
-
-<!---ADD: Insert link to OSM exercise -->
-
 __[Geofabrik.de](https://download.geofabrik.de/)__
 
 As you can see, Geofabrik is great if you want to get complete OSM datasets for  whole countries or regions. 

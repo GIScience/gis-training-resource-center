@@ -23,9 +23,9 @@ Download the data (zip-file: 83.23 KB) and save it on your PC. Create a local fo
 
 - Sierra Leone Border (Polygon/Lines) GeoPacked
 
-  - Sierra Leone national boders (Polygon/lines)
+- Sierra Leone national boders (Polygon/lines)
 
-  - Sierra Leone provinces (Lines)
+- Sierra Leone provinces (Lines)
 
 - Sierra Leone health (Points)
 - Sierra Leone airports (CSV)

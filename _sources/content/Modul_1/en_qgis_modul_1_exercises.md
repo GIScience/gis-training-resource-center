@@ -16,4 +16,4 @@ afterwards, contact your trainers.
     - Move panels around
     - Learn how to activate and find optional panels
     - Change settings
-
+    - 1 to 2 hours
