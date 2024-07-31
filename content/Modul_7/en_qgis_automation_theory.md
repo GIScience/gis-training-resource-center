@@ -1,6 +1,9 @@
 #  Automation theory
 
-🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+:::{attention}
+🚧This part of the training platform is under ⚠️construction⚠️ and is not ready to be used in a training
+:::
+
 
 ## Introduction into the QGIS Graphical Modeler
 The ![](/fig/processingModel.png) `Graphical Modeler` also known as the Model Builder allows users to create complex models using a simple and intuitive interface. Most analysis tasks in a GIS are not isolated, but part of a chain of operations resulting in a series of inputs and outputs (e.g. clipping the area of interest, performing a spatial join and applying some table functions). Using the Graphical Modeler, this chain of operations can be combined into a single process, which can then be easily re-run with a different set of inputs. Regardless of how many steps and different algorithms are involved in the analysis, a model is executed as a single algorithm, saving time and effort.
