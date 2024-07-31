@@ -6,15 +6,7 @@ The second module develops a deeper understanding of geodata, layers and project
 
 ## Content
 
-
-::::{grid} 2 2
-
-:::{card}
 __[Chapter 1: Introduction to geodata, layers, and projections](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_geodata_concept.html#)__
-
-:::
-
-:::{card}
 
 At the end of this chapter, you should:
 - Know the difference between vector and raster data
@@ -23,14 +15,9 @@ At the end of this chapter, you should:
 - Understand the problem of projections
 - Know how to find suitable projections
 
-:::
 
-:::{card}
 __[Chapter 2: Geodata Management](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_basic_data_processing.html)__
 
-:::
-
-:::{card}
 
 At the end of this chapter, you should:
 - Know how QGIS stores projects and data
@@ -38,9 +25,6 @@ At the end of this chapter, you should:
 - Know helpful tips to name geodata files
 - Know how to load (import) various file formats into QGIS
 
-:::
-
-::::
 
 __[Chapter 3: The Attribute Table](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_attribute_table.html)__
 
