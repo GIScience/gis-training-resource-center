@@ -4,11 +4,11 @@
 
 ## What is Raster Data
 
-Raster data is next to vector data a fundamental component of GIS and represents spatial information as a rectangular grid of cells or pixels that are each associated with a specific geographical information. Each cell contains a value representing a certain attribute, such as elevation, temperature or land cover within a specific area. Regarding their structure geospatial rasters are very similar the representation of optical information in a digital picture, the different beeing that a geospatial raster is accompanied by spatial information that connects the data to a particular location. 
+Raster data is next to vector data a fundamental component of GIS and represents spatial information as a rectangular grid of cells or pixels that are each associated with a specific geographical information. Each cell contains a value representing a certain attribute, such as elevation, temperature or land cover within a specific area. Regarding their structure, geospatial rasters are very similar the representation of optical information in a digital picture, the different beeing that a geospatial raster is accompanied by spatial information that connects the data to a particular location. 
 
 The data format raster data is particularly useful for capturing continuous phenomena across a geographical area such as temperature or elevation that do not suit the visualization with vector geometries due to their continuous nature without clear boundaries.
 
-In each raster cell information is stored with a value that can be interpreted in the context of the attribute/phenomenen the raster expresses, for example elevation in meters or colour intensity in case of an image. 
+In each raster cell information is stored with a value that can be interpreted in the context of the attribute/phenomenon the raster expresses, for example elevation in meters or colour intensity in case of an image. 
 
 ```{figure} /fig/mod8_rasterdata_rasterbasics.png
 ---
