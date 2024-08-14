@@ -6,30 +6,18 @@ The second module develops a deeper understanding of geodata, layers and project
 
 ## Content
 
-::::{grid} 2
 
-:::{card}
-
-__[Chapter 1: Introduction to geodata, layers, and projections](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_geodata_concept.html#)__
-
-:::
-
-:::{card}
-
-__[Chapter 1: Introduction to geodata, layers, and projections](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_geodata_concept.html#)__
-
-At the end of this chapter, you should:
-- Know the difference between vector and raster data
-- Know different type of data formats
-- Understand the layer concept 
-- Understand the problem of projections
-- Know how to find suitable projections
+| __Chapter__ | __Competences & Objectives__ |
+| ----------- | ---------------------------- | 
+|  __[Chapter 1: Introduction to geodata, layers, and projections](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_geodata_concept.html#)__ | At the end of this chapter, you should: __Know the difference between vector and raster data, know different types of data formats, understand the layer concept, understand the importance of projections, and know how to find suitable projections__. | 
+| __[Chapter 2: Geodata Management](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_basic_data_processing.html)__ | At the end of this chapter, you should: __Know how QGIS stores projects and data, know how tot set up a folder structure for QGIS-projects and geodata, know good practices to name geodata files, and know how to load/import various file formats into QGIS.__ |
+| __[Chapter 3: The Attribute Table](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_attribute_table.html)__ | At the end of this chapter, you should: __Know how to open and view the attribute table of a dataset in QGIS, know how to sort the attribute table and zoom into specific features, and know how to select features.__ |
+| __[Chapter 4: Data Sources](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_data_sources.html)__ | At the end of this chapter, you should: __Know what to consider when searching for geodata, know a few websites to find specific data, and know how to export OpenStreetMap data.__ | 
+| __[Chapter 5: Basemaps](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_basemap.html)__ | At the end of this chapter, you should: __Know how to add basemaps to your QGIS-project__. |
 
 
-:::
 
-::::
-
+<!---
 __[Chapter 2: Geodata Management](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_basic_data_processing.html)__
 
 
@@ -59,3 +47,4 @@ __[Chapter 5: Basemaps](https://giscience.github.io/gis-training-resource-center
 At the end of this chapter, you should: 
 - Know how to add basemaps to your QGIS-project
 
+-->
