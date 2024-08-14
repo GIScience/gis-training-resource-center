@@ -5,32 +5,11 @@ The third module addresses operations and data manipulation that GIS practitione
 
 ## Content
 
-__[Chapter 1: Digitisation](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation.html)__
+| __Chapter__ | __Competences & Objectives__ |
+| ----------- | ---------------------------- |
+| __[Chapter 1: Digitisation](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation.html)__ | At the end of this chapter, you should: Understand the process of digitisation; Know how to create and edit vector data; Know which digitising errors to avoid. | 
+| __[Chapter 2: Geodata Classification](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_data_classification.html)__ | At the end of this chapter, you should: Know how to classify geodata in order to gain useful insights; Know how and when to use categorised classification; Know how and when to use graduated classification. |
+| __[Chapter 3: Geodata Selection and Queries](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_data_queries.html#)__ | 
+At the end of this chapter, you should: Know how to select features manually; Know how to select features based on attributes; Know how to formulate a data query with the Expression builder; Know how to select features by location; Know the geometric operators. | 
 
-At the end of this chapter, you should:
-
-- Understand the process of digitisation
-- Know how to create and edit vector data
-- Know which digitising errors to avoid
-
-<!--ADD: after revamp of this chapter this needs to be adjusted-->
-
-
-__[Chapter 2: Geodata Classification](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_data_classification.html)__
-
-At the end of this chapter, you should: 
-
-- Know how to classify geodata in order to gain useful insights
-- Know how and when to use categorised classification
-- Know how and when to use graduated classification
-
-
-__[Chapter 3: Geodata Selection and Queries](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_data_queries.html#)__
-
-At the end of this chapter, you should:
-
-- Know how to select features manually
-- Know how to select features based on attributes
-- Know how to formulate a data query with the `Expression builder`
-- Know how to select features by location
-- Know the geometric operators
+<!--ADD: after revamp of chapter 2 this needs to be adjusted-->
