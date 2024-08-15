@@ -3,6 +3,12 @@
 
 <!--This exercise is quite minimal with the explanation of steps (most should be looked up) so it is not suited for a follow along session -->
 
+:::{card}
+:link: https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_modul_2_exercises.html
+
+__Click here to return to the exercise overview page for module 2__ 
+
+:::
 
 ::::{grid} 2
 :::{grid-item-card}
@@ -48,7 +54,7 @@ understanding of where and how to access relevant data, and identify potential p
 * [Types of Geodata](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_types_wiki.html)
 * [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)
 * [Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html)
-* [Geodata Classification- Graduated](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html)
+* [Geodata Classification - Graduated](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html)
 
 :::
 
