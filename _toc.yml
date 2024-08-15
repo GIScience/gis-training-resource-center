@@ -49,13 +49,11 @@ parts:
         - file: content/Modul_5/en_qgis_modul_5_exercises.md
   - caption: Module 6 - Data Analysis with QGIS
     chapters:
-      - file: content/Modul_6/en_qgis_data_analysis_theorie.md
-      - file: content/Modul_6/en_qgis_common_data_analysis.md
-      - file: content/Modul_6/en_qgis_modul_6_exercises.md      
+      - file: content/Modul_6/en_module_6_overview.md
         sections:
-          - file: content/Modul_6/en_qgis_data_analysis_ex1.md
-          - file: content/Modul_6/en_qgis_non_spatial_tools_ex2.md
-          - file: content/Modul_6/en_qgis_spatial_tools_ex2.md
+          - file: content/Modul_6/en_qgis_data_analysis_theorie.md
+          - file: content/Modul_6/en_qgis_common_data_analysis.md
+          - file: content/Modul_6/en_qgis_modul_6_exercises.md  
   - caption: Module 7 - Automation with QGIS
     chapters:
       - file: content/Modul_7/en_qgis_automation_theory.md
