@@ -25,4 +25,5 @@ necessary for such a map on your computer.
 | __[Chapter 3: The Attribute Table](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_attribute_table.html)__ | At the end of this chapter, you should: Know how to open and view the attribute table of a dataset in QGIS, know how to sort the attribute table and zoom into specific features, and know how to select features. |
 | __[Chapter 4: Data Sources](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_data_sources.html)__ | At the end of this chapter, you should: Know what to consider when searching for geodata, know a few websites to find specific data, and know how to export OpenStreetMap data. | 
 | __[Chapter 5: Basemaps](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_basemap.html)__ | At the end of this chapter, you should: Know how to add basemaps to your QGIS-project. |
+| __[Exercises for Module 2](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_modul_2_exercises.html)__  | All the exercises for module 5 are listed here. | 
 

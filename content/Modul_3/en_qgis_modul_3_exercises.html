@@ -519,9 +519,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -537,16 +535,6 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geodata-digitisation">Geodata Digitisation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geodata-classification">Geodata Classification</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-3-big-exercise">Module 3 Big Exercise</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -560,47 +548,32 @@ document.write(`
 <h1>Exercises Module 3 - Basic GIS Operations<a class="headerlink" href="#exercises-module-3-basic-gis-operations" title="Permalink to this heading">#</a></h1>
 <p><strong>🔙<a class="reference internal" href="../intro.html"><span class="doc std std-doc">Back to Homepage</span></a></strong></p>
 <p>These exercises cover all the content in Module 3.</p>
-<section id="geodata-digitisation">
-<h2>Geodata Digitisation<a class="headerlink" href="#geodata-digitisation" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p><strong><a class="reference internal" href="en_qgis_digitalisation_ex2.html"><span class="doc std std-doc">Digitisation Exercise 1: Access to financial institutions </span></a>:</strong> In this exercise, you will learn how to digitise points, lines, and polygons of features in settlements by creating new datasets.</p>
-<ul>
-<li><p>Digitisation of points</p></li>
-<li><p>Digitisation of lines</p></li>
-<li><p>Digitisation of polygons</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="geodata-classification">
-<h2>Geodata Classification<a class="headerlink" href="#geodata-classification" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p><strong><a class="reference internal" href="en_qgis_classification_ex1.html"><span class="doc std std-doc">Overview map of the prevalence of stunting in Sierra Leone</span></a>:</strong> This exercise aims to create an overview map of the prevalence of stunting in Sierra Leone at district level. To do this, we will visualise both the prevalence of stunting and key infrastructure such as hospitals, airports, and roads. The decision on which data to visualise and how to present it is up to you, the cartographer.</p>
-<ul>
-<li><p>Geodata Classification- Categorised</p></li>
-<li><p>Geodata Classification- Graduated</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="module-3-big-exercise">
-<h2>Module 3 Big Exercise<a class="headerlink" href="#module-3-big-exercise" title="Permalink to this heading">#</a></h2>
-<p>These exercises touch on all the content of module 3.</p>
-<ul class="simple">
-<li><p><strong><a class="reference internal" href="en_qgis_modul_3_ex1.html"><span class="doc std std-doc">Exercise: Flood Nigeria</span></a>:</strong> The exercise evolves around the scenario visualizing the situation during the flood in 2022 in one state of  Nigeria. You will work with administrative borders and population data from HDX.  Furthermore, you will create your own geodata based on information from the field. In the end, you need to use categorised classification to visualize different datasets.</p>
-<ul>
-<li><p>Import vector data into QGIS</p></li>
-<li><p>Select features by hand</p></li>
-<li><p>Export selected features as a new geodata set</p></li>
-<li><p>Select/extract features by attribute</p></li>
-<li><p>Select/extract features  by location</p></li>
-<li><p>Manipulate attribute tables</p></li>
-<li><p>Use categorized classification</p></li>
-<li><p>Create a new point layer</p></li>
-</ul>
-</li>
-</ul>
-</section>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Exercise</p></th>
+<th class="head text-left"><p>Description</p></th>
+<th class="head text-left"><p>Focus Group</p></th>
+<th class="head text-left"><p>Estimated time</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><strong><a class="reference internal" href="en_qgis_digitalisation_ex2.html"><span class="doc std std-doc">Exercise 1: Digitisation</span></a>:</strong></p></td>
+<td class="text-left"><p>The objective of this exercise is to learn how to digitise points, lines, and polygons of real world objects in a settlements by creating a new dataset. The goal is to create data about the access to financial institutions in Abuja.</p></td>
+<td class="text-left"><p>QGIS beginners, Knowledge about the QGIS interface and how QGIS handles geodata is required</p></td>
+<td class="text-left"><p>3 hours</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><strong><a class="reference internal" href="en_qgis_classification_ex1.html"><span class="doc std std-doc">Exercise 2: Classification</span></a></strong></p></td>
+<td class="text-left"><p>The objective of this exercise is to create an overview map of the prevalence of stunting in Sierra Leone at district level. To do this, we will visualise both the prevalence of stunting and key infrastructure such as hospitals, airports, and roads by classifying the data. The decision on which data to visualise and how to present it is up to you, the cartographer.</p></td>
+<td class="text-left"><p>QGIS Intermediates; A basic understanding of Geodata and the attribute table is required.</p></td>
+<td class="text-left"><p>3 hours</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><strong><span class="xref myst">Exercise 3: Flood in Nigeria</span></strong></p></td>
+<td class="text-left"><p>The exercise evolves around the scenario visualizing the situation during the flood in 2022 in one state of  Nigeria. You will work with administrative borders and population data from HDX.  Furthermore, you will create your own geodata based on information from the field. In the end, you need to use categorised classification to visualize different datasets.</p></td>
+<td class="text-left"><p>4 hours</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
 </section>
 
     <script type="text/x-thebe-config">
@@ -657,22 +630,6 @@ document.write(`
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geodata-digitisation">Geodata Digitisation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geodata-classification">Geodata Classification</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-3-big-exercise">Module 3 Big Exercise</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
