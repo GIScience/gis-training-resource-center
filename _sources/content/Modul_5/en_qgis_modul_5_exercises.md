@@ -4,29 +4,14 @@ __🔙[Back to Homepage](/content/intro.md)__
 
 These exercises touch on all the content of module 5.
 
-## Spatial Geodataprocessing
 
-* __[Health site distribution in Saint Louis region](/content/Modul_5/en_qgis_spatial_tools_ex1.md):__ Become familiar with different types of spatial analysis and geoprocessing tools. Understand the process of discovering relationships and connections between features in spatial data.
-    * Select by location
-    * Select using an expression
-    * Buffer
-    * Geodata Classification - Graduated
-    * Geodata Classification - Categorised
+| Exercise| Description |Focus Group|Estimated time| 
+| :-------------------- | :----------------- |:----------------- |:----------------- |
+| __[Exercise 1: Health site distribution in Saint Louis region](/content/Modul_5/en_qgis_spatial_tools_ex1.md)__ | The aim of this exercise is to become familiar with different types of spatial analysis and geoprocessing tools and understand the process of discovering relationships and connections between features in spatial data. The goal is to determine which health sites in the Saint Louis region in Senegal are prone to flooding. We will make use of Buffers, Classification, Selecting by location, and selecting using an expression. | Data analysis | 3 hours | 
+| __[Exercise 2: Distaster impact in different regions of Senegal](/content/Modul_5/en_qgis_non_spatial_tools_ex1.md)__ | Become familiar with different types of non-spatial analysis and geoprocessing tools. Understand the process of discovering relationships and connections between features in spatial data. | Data analysis | 3 hours | 
+| __[Exercise 3: Trigger & Intervention Map for Forecast-based-Action](/content/Modul_5/en_qgis_modul_5_ex2.md)__ | This exercise is based on the monitoring and triggering process used by the Somalia Red Cresent Society (SRCS) in the framework of a drought Early Action Protocol (EAP). In this exercise, you will build a simplified version of the monitoring and trigger mechanism for the FEWSNET projection pillar. | Data analysis, Early Action Protocol, Monitoring & Triggering | 6 hours | 
 
-## Non-Spatial Geodataprocessing
-
-* __[Disaster effects in different regions of Senegal](/content/Modul_5/en_qgis_non_spatial_tools_ex1.md):__ Become familiar with different types of non-spatial analysis and geoprocessing tools. Understand the process of discovering relationships and connections between features in spatial data.
-    * Join Attribute by Field Value
-    * Table functions
-    * Field Calculator
-    * Rename Field
-    * Geodata Classification - Categorised
-
-## BIG exercises module 5
-
-These exercises touch on all the content of module 5. 
-
-* __[Trigger & Intervention Map for Forecast-based-Action](/content/Modul_5/en_qgis_modul_5_ex2.md):__ This exercise is based on the monitoring and triggering process used by the Somalia Red Cresent Society (SRCS) in the framework of a drought Early Action Protocol (EAP).
-In this exercise, you will build a simplified version of the monitoring and trigger mechanism for the FEWSNET projection pillar. 
+<!---
 
 *  __⚠️construction⚠️[Risk Assessment](/content/Modul_5/en_qgis_modul_5_ex1.md):__ 
+>
