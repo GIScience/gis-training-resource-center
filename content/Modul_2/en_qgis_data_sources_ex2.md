@@ -1,6 +1,14 @@
 # Exercise: OpenStreetMap data export
 __🔙[Back to Homepage](/content/intro.md)__
 
+:::{card}
+:link: https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_modul_2_exercises.html
+
+__Click here to return to the exercise overview page for module 2__ 
+
+:::
+
+
 ::::{grid} 2
 :::{grid-item-card}
 
