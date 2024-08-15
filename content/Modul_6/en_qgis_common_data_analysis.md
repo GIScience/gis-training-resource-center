@@ -1,4 +1,4 @@
-# Data Analysis with QGIS
+# Data Analysis in the Humanitarian Sector
 
 🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
