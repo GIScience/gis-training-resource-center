@@ -2,7 +2,6 @@
 
 🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
-__Skills__:
 
 The previous chapter went over a few methods to conduct analyses with geodata. 
 This chapter will present several data analysis methods and their results that 
