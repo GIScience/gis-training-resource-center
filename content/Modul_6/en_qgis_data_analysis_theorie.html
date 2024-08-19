@@ -698,7 +698,7 @@ Unit Problem</strong>, where the results look different depending on the unit of
 <section id="length-surface-circumference">
 <h2>Length, Surface, Circumference<a class="headerlink" href="#length-surface-circumference" title="Permalink to this heading">#</a></h2>
 <p>Simply knowing the size of an area or the length of a road section is valuable information. For example, you can determine how much of a road network is inaccessible or how much area is affected by flooding.</p>
-<p>These geometrical attributes can be calculated using the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Modul_5/en_qgis_non_spatial_tools.html?highlight=field+calculator#calculate-field"><strong>field calculator</strong></a> or the processing tool <strong>“Add geometry attributes”</strong>.</p>
+<p>These geometrical attributes can be calculated using the <span class="xref myst"><strong>field calculator</strong></span> or the processing tool <strong>“Add geometry attributes”</strong>.</p>
 <p>The field calculators has the following functions to calculate geometry attributes as new fields in the attribute table:</p>
 <table class="table">
 <thead>
@@ -731,7 +731,7 @@ Unit Problem</strong>, where the results look different depending on the unit of
 <p>In the attribute table, you will find a new column called <code class="docutils literal notranslate"><span class="pre">Area</span></code> with the respective area for each feature.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The <strong>unit of measurement</strong> of the calculated area depends on the <strong>distance unit settings</strong> of the current <strong>project’s CRS</strong> (metrical or geographic). In most cases you want metres or kilometres. Make sure the units of your CRS are metres to get the correct values.</p>
+<p>The <strong>unit of measurement</strong> of the calculated area depends on the <strong>distance unit settings</strong> of the current <strong>project’s CRS</strong> (metrical or geographic). In most cases you want metres or kilometers. Make sure the units of your CRS are metres to get the correct values.</p>
 <p>You can check this by opening the CRS selector (in the bottom right corner) and reading the information of your selected CRS.</p>
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -795,7 +795,7 @@ We want to calculate the total length of flooded and unflooded road respectively
 </section>
 <section id="buffer-analysis">
 <h2>Buffer analysis<a class="headerlink" href="#buffer-analysis" title="Permalink to this heading">#</a></h2>
-<p>Creating a <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#buffer">buffer</a> is a helpful analysis to determine <strong>what lies in proximity</strong> of, for example, a contaminated water source or other hazards and determine vulnerability. Buffer analysis is often used to map the riparian zones along rivers to devise environmental protection zones or estimate vulnerability.</p>
+<p>Creating a <span class="xref myst">buffer</span> is a helpful analysis to determine <strong>what lies in proximity</strong> of, for example, a contaminated water source or other hazards and determine vulnerability. Buffer analysis is often used to map the riparian zones along rivers to devise environmental protection zones or estimate vulnerability.</p>
 <ul class="simple">
 <li><p>Proximity analysis</p></li>
 <li><p>Estimated vulnerability analysis</p></li>
@@ -820,7 +820,7 @@ We want to calculate the total length of flooded and unflooded road respectively
 </figcaption>
 </figure>
 <p>To create a heatmap you first need a layer containing data points or ‘samples’. These points are distributed in an area with some areas containing more than others. The <strong>density</strong> of the points in space determines the intensity of the colour on the heat map.</p>
-<p>In QGIS, there are two methods to create heatmaps. The first method uses the symbology tab and is generally a lot faster. The second method uses the interpolation tool <strong>“Heatmap (Kernel Density Estimation)”</strong> and offers more parameters to adjust. The advantage of the processing tool is that you can set a radius using metric units (for example the number of points in a <strong>100 Meters</strong> radius compared to using the millimetres or pixels of your computer screen) and set a variable radius that is determined by another attribute. The next section discusses the creation of heatmaps using the symbology tab. A guide on how to create a heatmap using the processing tool can be found <span class="xref myst">here</span></p>
+<p>In QGIS, there are two methods to create heatmaps. The first method uses the symbology tab and is generally a lot faster. The second method uses the interpolation tool <strong>“Heatmap (Kernel Density Estimation)”</strong> and offers more parameters to adjust. The advantage of the processing tool is that you can set a radius using metric units (for example the number of points in a <strong>100 Meters</strong> radius compared to using the millimetres or pixels of your computer screen) and set a variable radius that is determined by another attribute. The next section discusses the creation of heatmaps using the symbology tab.</p>
 <blockquote>
 <div><p>insert link</p>
 </div></blockquote>
@@ -895,7 +895,7 @@ Example video: Creating a hex map<div class="sd-summary-down docutils">
 </section>
 <section id="analysis-by-joining-attributes">
 <h2>Analysis by joining attributes<a class="headerlink" href="#analysis-by-joining-attributes" title="Permalink to this heading">#</a></h2>
-<p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html">Joining</a> datasets is a common and useful way to get new insights by adding the information of one table to the other, taking into account key attributes that are used to identify the features that are to be joined. For example: the population size of a district is in one table, and the number of hospitals in a district is in a second table and you wish to combine the two tables to know how many hospitals per population size are in the respective districts.</p>
+<p><a class="reference internal" href="../Wiki/en_qgis_non_spatial_joins_wiki.html"><span class="doc std std-doc">Joining</span></a> datasets is a common and useful way to get new insights by adding the information of one table to the other, taking into account key attributes that are used to identify the features that are to be joined. For example: the population size of a district is in one table, and the number of hospitals in a district is in a second table and you wish to combine the two tables to know how many hospitals per population size are in the respective districts.</p>
 <ul class="simple">
 <li><p>You have two separate data tables with information you wish to aggregate (join);</p></li>
 <li><p>Both tables share key identifiers; <code class="docutils literal notranslate"><span class="pre">CNTY_NAME</span></code> in this example</p></li>
@@ -998,7 +998,7 @@ Example video: Creating a hex map<div class="sd-summary-down docutils">
 </section>
 <section id="outlook">
 <h2>Outlook<a class="headerlink" href="#outlook" title="Permalink to this heading">#</a></h2>
-<p>There are many analysis methods in GIS. However, setting up an analysis method can be quite time consuming, and creating a new analysis method for every research question makes it hard to compare the results of different analyses. This is why <strong>model building</strong> and <strong>automation</strong> are used frequently when working with GIS data. A model can be seen as a analysis blueprint that only needs input data to perform a certain type of analysis. Since the parameters are the same and similar datasets are needed for the model to work properly, the results can be compared. If you are interested in model building and automation, check out <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Modul_7/en_qgis_automation_theory.html">module 7</a>.</p>
+<p>There are many analysis methods in GIS. However, setting up an analysis method can be quite time consuming, and creating a new analysis method for every research question makes it hard to compare the results of different analyses. This is why <strong>model building</strong> and <strong>automation</strong> are used frequently when working with GIS data. A model can be seen as a analysis blueprint that only needs input data to perform a certain type of analysis. Since the parameters are the same and similar datasets are needed for the model to work properly, the results can be compared. If you are interested in model building and automation, check out <a class="reference internal" href="../Modul_7/en_qgis_automation_theory.html"><span class="doc std std-doc">module 7</span></a>.</p>
 </section>
 </section>
 

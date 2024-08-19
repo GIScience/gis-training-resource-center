@@ -43,9 +43,9 @@ The aim of this exercise is to create an overview map of Ghana with its subdistr
 
 ## Relevant Wiki Articles
 
-- [Visualisation](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_visualisation_wiki.html)  
-- [Module 4: Visualisation of Geodata](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_I.html)  
-- [Module 4: Map Design: The Print Layout](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html)
+- [Visualisation](/content/Wiki/en_qgis_visualisation_wiki.md)  
+- [Module 4: Visualisation of Geodata](/content/Modul_4/en_qgis_map_design_I.md)  
+- [Module 4: Map Design: The Print Layout](/content/Modul_4/en_qgis_map_design_2.md)
 :::
 
 ::::
@@ -59,7 +59,7 @@ The aim of this exercise is to create an overview map of Ghana with its subdistr
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
+- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md#how-to-do-trainings) for some general tips on training conduction
 
 ### Conduct the training
 
@@ -166,7 +166,7 @@ Now, as a final touch, let's select a symbol for the health facilities:
 
 Now we have assigned a symbol for each layer at our disposal. Look at the map you created and decide if you want to adjust any symbology to make the map easier to read. Do you need to change some colours? Are the layers ordered in a way that the information is visible? Is the font size appropriate, or does it cover up too much information?
 
-__Bonus Step__: [Adding a basemap](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html) can help potential readers orienting themselves.
+__Bonus Step__: [Adding a basemap](/content/Wiki/en_qgis_basemaps_wiki.md) can help potential readers orienting themselves.
 
 Now the Map should be ready for a print layout.
 
@@ -177,7 +177,7 @@ Once you are happy with the symbolization and colours of your data, the next ste
 1. Open a new print layout and give it a name (e.g. Ghana Map with hospitals). A new window will open with a blank canvas and a different set of tools. This is the print layout designer.
     - On the left, you will find a toolbar with tools to add and move items on the print layout canvas.
     - On the right you will find a list of items you added to the print layout (it is still empty). Beneath this, you will find a tab called __"item properties"__. This is where you modify the items on your print layout (e.g. enter the text for a text box or change the font).
-2. Insert a new map by clicking on ![New Map Icon](/fig/30.30.2_print_layout_insert_map_icon.png) (`Add Map`) on the left toolbar, and drawing a rectangle on the print canvas. [Video](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html#adding-a-new-map)
+2. Insert a new map by clicking on ![New Map Icon](/fig/30.30.2_print_layout_insert_map_icon.png) (`Add Map`) on the left toolbar, and drawing a rectangle on the print canvas. [Video](/content/Modul_4/en_qgis_map_design_2.md#adding-a-new-map)
 3. Move and position the map so that the entire country is visible at a reasonable scale.
 4. Let's add a title:
     - Click on ![Add text icon](/fig/30.30.2_print_layout_add_text.png) (`Add text`)

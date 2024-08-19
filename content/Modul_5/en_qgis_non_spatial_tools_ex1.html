@@ -601,11 +601,11 @@ document.write(`
 <div class="sd-card-body docutils">
 <p class="rubric">Relevant Wiki Articles</p>
 <ul class="simple">
-<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html">Geodata Import in QGIS</a></p></li>
-<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html">Projections</a></p></li>
-<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_queries_wiki.html">Spatial Queries</a></p></li>
-<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html">Geoprocessing</a></p></li>
-<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html">Categorized classification</a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_import_geodata_wiki.html"><span class="doc std std-doc">Geodata Import in QGIS</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_projections_wiki.html"><span class="doc std std-doc">Projections</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_spatial_queries_wiki.html"><span class="doc std std-doc">Spatial Queries</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_geoprocessing_wiki.html"><span class="doc std std-doc">Geoprocessing</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_categorized_wiki.html"><span class="doc std std-doc">Categorized classification</span></a></p></li>
 </ul>
 </div>
 </div>
@@ -627,7 +627,7 @@ document.write(`
 <li><p class="sd-card-text">Take the time to familiarise yourself with the exercise and the provided material.</p></li>
 <li><p class="sd-card-text">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</p></li>
 <li><p class="sd-card-text">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <strong>and unzipped</strong> the data folder.</p></li>
-<li><p class="sd-card-text">Check out <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings">How to do trainings?</a> for some general tips on training conduction</p></li>
+<li><p class="sd-card-text">Check out <span class="xref myst">How to do trainings?</span> for some general tips on training conduction</p></li>
 </ul>
 <p class="rubric">Conduct the training</p>
 <p class="sd-card-text"><strong>Introduction:</strong></p>
@@ -669,8 +669,8 @@ document.write(`
 </div>
 <ol class="arabic simple">
 <li><p>Load the Senegal administrative boundary layer (<code class="docutils literal notranslate"><span class="pre">sen_admbnda_adm1_1m_gov_ocha_20190426.shp</span></code>), as well as population per subnational unit (<code class="docutils literal notranslate"><span class="pre">sen_admpop_adm1_2020.csv</span></code>) and the Desinventar Sendai data of Senegal (<code class="docutils literal notranslate"><span class="pre">DI_Stat924.xls</span></code>) into QGIS.</p></li>
-<li><p>Make sure to reproject the dataset with the administrative boundaries into UTM zone 28N. See the Wiki entry on <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html">Projections</a> for further information.</p></li>
-<li><p>Conduct non-spatial joins based on regions listed in two datasets and the PCODE listed in these same sets. See the Wiki entry on <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html">Non-spatial joins</a> for further information.</p></li>
+<li><p>Make sure to reproject the dataset with the administrative boundaries into UTM zone 28N. See the Wiki entry on <a class="reference internal" href="../Wiki/en_qgis_projections_wiki.html"><span class="doc std std-doc">Projections</span></a> for further information.</p></li>
+<li><p>Conduct non-spatial joins based on regions listed in two datasets and the PCODE listed in these same sets. See the Wiki entry on <a class="reference internal" href="../Wiki/en_qgis_non_spatial_joins_wiki.html"><span class="doc std std-doc">Non-spatial joins</span></a> for further information.</p></li>
 </ol>
 <figure class="align-default" id="attributes-all">
 <a class="reference internal image-reference" href="../../_images/en_ex1_AT_admin_pop_sen.png"><img alt="../../_images/en_ex1_AT_admin_pop_sen.png" src="../../_images/en_ex1_AT_admin_pop_sen.png" style="width: 100%;" /></a>
@@ -705,7 +705,7 @@ Screenshot for task 5</label><div class="sd-tab-content docutils">
 </div>
 </div>
 <ol class="arabic simple" start="6">
-<li><p>Use the table functions to calculate the area of each region in square kilometres and the density of the population. See the Wiki entry on <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html">Table functions</a> for further information.</p>
+<li><p>Use the table functions to calculate the area of each region in square kilometres and the density of the population. See the Wiki entry on <a class="reference internal" href="../Wiki/en_qgis_table_functions_wiki.html"><span class="doc std std-doc">Table functions</span></a> for further information.</p>
 <ul class="simple">
 <li><p>Create a new column/field named <code class="docutils literal notranslate"><span class="pre">&quot;area_sqkm&quot;</span></code> using the field calculator. Ensure decimal numbers are used as the field type. For the calculation use the expression: <code class="docutils literal notranslate"><span class="pre">$area</span> <span class="pre">/</span> <span class="pre">(1000</span> <span class="pre">*</span> <span class="pre">1000)</span></code></p></li>
 <li><p>Create another column/field named <code class="docutils literal notranslate"><span class="pre">&quot;pop_per_sqkm&quot;</span></code> with decimal numbers as field type. Use the expression: <code class="docutils literal notranslate"><span class="pre">&quot;Total&quot;</span> <span class="pre">/</span> <span class="pre">&quot;area_sqkm&quot;</span></code> for the calculation.</p></li>

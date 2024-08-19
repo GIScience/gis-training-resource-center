@@ -5,6 +5,6 @@ This chapter introduces more intermediate GIS operations that you will most like
 
 | __Chapter__ | __Competences & Objectives__ | 
 | ----------- | ---------------------------- |
-| __[Chapter 1: Spatial Geodataprocessing](https://giscience.github.io/gis-training-resource-center/content/Modul_5/en_qgis_spatial_tools.html)__ | At the end of this chapter, you should: Know how to perform clips, buffers, dissolves, or spatial joins; Know how to select by location, or create centroids. |
-| __[Chapter 2: Non-Spatial Geodataprocessing](https://giscience.github.io/gis-training-resource-center/content/Modul_5/en_qgis_non_spatial_tools.html)__ | At the end of this chapter, you should: Know how to use table functions; Know how to perform non-spatial data queries; Know how to perform non-spatial joins. |
-| __[Exercises for Module 5](https://giscience.github.io/gis-training-resource-center/content/Modul_5/en_qgis_modul_5_exercises.html)__ | Here you can find all exercises for module 5. |
+| __[Chapter 1: Spatial Geodataprocessing](/content/Modul_5/en_qgis_spatial_tools.md)__ | At the end of this chapter, you should: Know how to perform clips, buffers, dissolves, or spatial joins; Know how to select by location, or create centroids. |
+| __[Chapter 2: Non-Spatial Geodataprocessing](/content/Modul_5/en_qgis_non_spatial_tools.md)__ | At the end of this chapter, you should: Know how to use table functions; Know how to perform non-spatial data queries; Know how to perform non-spatial joins. |
+| __[Exercises for Module 5](/content/Modul_5/en_qgis_modul_5_exercises.md)__ | Here you can find all exercises for module 5. |

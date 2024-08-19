@@ -629,7 +629,7 @@ The collection and processing of this information varies based on the problem, b
 </figcaption>
 </figure>
 <ol class="arabic simple" start="4">
-<li><p>Now we have the number of health sites per district. Nevertheless, it would be interesting to know how many health sites exist per 10.000 people. For this task we firstly need to know how many inhabitants has each district. We can process this information by using the <strong>Zonal statistics</strong> tool from the Processing Toolbox. See the Wiki entry for <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html?highlight=zonal+statistics#basic-raster-operations">Zonal Statistics</a> for further information. Specify your inout layer (Output of step 3 e.g. <strong>Num_healtsites</strong>) and your raster layer (Worldpop Raster), specify the column prefix (e.g. _<strong>wpop</strong>) and select the statistics to caclulate (<strong>sum</strong>). For each district all pixel values of the Worldpop Raster that fall inside of it will be summed up. Explore the output.</p></li>
+<li><p>Now we have the number of health sites per district. Nevertheless, it would be interesting to know how many health sites exist per 10.000 people. For this task we firstly need to know how many inhabitants has each district. We can process this information by using the <strong>Zonal statistics</strong> tool from the Processing Toolbox. See the Wiki entry for <span class="xref myst">Zonal Statistics</span> for further information. Specify your inout layer (Output of step 3 e.g. <strong>Num_healtsites</strong>) and your raster layer (Worldpop Raster), specify the column prefix (e.g. _<strong>wpop</strong>) and select the statistics to caclulate (<strong>sum</strong>). For each district all pixel values of the Worldpop Raster that fall inside of it will be summed up. Explore the output.</p></li>
 </ol>
 <figure class="align-default" id="czonal-statistics">
 <a class="reference internal image-reference" href="../../_images/en_qgis_modul_5_ex1_zonal_statistics.PNG"><img alt="../../_images/en_qgis_modul_5_ex1_zonal_statistics.PNG" src="../../_images/en_qgis_modul_5_ex1_zonal_statistics.PNG" style="width: 100%;" /></a>
@@ -653,7 +653,7 @@ The collection and processing of this information varies based on the problem, b
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>When you are down click <img alt="" src="../../_images/mActionSaveEdits.png" /> to save your edits and switch off the editing mode by again clicking on <img alt="" src="../../_images/mActionToggleEditing.png" />(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing">Wiki Video</a>).</p></li>
+<li><p>When you are down click <img alt="" src="../../_images/mActionSaveEdits.png" /> to save your edits and switch off the editing mode by again clicking on <img alt="" src="../../_images/mActionToggleEditing.png" />(<span class="xref myst">Wiki Video</span>).</p></li>
 </ul>
 <figure class="align-default" id="field-calculator">
 <a class="reference internal image-reference" href="../../_images/en_qgis_modul_5_ex1_field_calc.PNG"><img alt="../../_images/en_qgis_modul_5_ex1_field_calc.PNG" src="../../_images/en_qgis_modul_5_ex1_field_calc.PNG" style="width: 80%;" /></a>
@@ -680,7 +680,7 @@ The collection and processing of this information varies based on the problem, b
 <li><p>as <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">Type</span></code> set <code class="docutils literal notranslate"><span class="pre">Take</span> <span class="pre">attributes</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">feature</span> <span class="pre">with</span> <span class="pre">largest</span> <span class="pre">overlap</span> <span class="pre">only</span> <span class="pre">(one-to-one)</span></code></p></li>
 <li><p>Save as Layer</p></li>
 </ul>
-<p>See the Wiki entry <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#spatial-joins">Spatial Joins </a> for further information.</p>
+<p>See the Wiki entry <span class="xref myst">Spatial Joins </span> for further information.</p>
 <figure class="align-default" id="join-attributes-by-location">
 <a class="reference internal image-reference" href="../../_images/en_qgis_modul_5_ex1_join.PNG"><img alt="../../_images/en_qgis_modul_5_ex1_join.PNG" src="../../_images/en_qgis_modul_5_ex1_join.PNG" style="width: 100%;" /></a>
 <figcaption>
@@ -754,7 +754,7 @@ Download the data folder for the second part of the exercise: “Modul_5_Ex1_Par
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>When you are done click <img alt="" src="../../_images/mActionSaveEdits.png" /> to save your edits and switch off the editing mode by clicking on <img alt="" src="../../_images/mActionToggleEditing.png" />(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing">Wiki Video</a>).</p></li>
+<li><p>When you are done click <img alt="" src="../../_images/mActionSaveEdits.png" /> to save your edits and switch off the editing mode by clicking on <img alt="" src="../../_images/mActionToggleEditing.png" />(<span class="xref myst">Wiki Video</span>).</p></li>
 </ul>
 <figure class="align-default" id="id4">
 <a class="reference internal image-reference" href="../../_images/en_qgis_modul_5_ex1_Part2_normalization.PNG"><img alt="../../_images/en_qgis_modul_5_ex1_Part2_normalization.PNG" src="../../_images/en_qgis_modul_5_ex1_Part2_normalization.PNG" style="width: 80%;" /></a>
@@ -780,7 +780,7 @@ Download the data folder for the second part of the exercise: “Modul_5_Ex1_Par
 <p>If the <strong>direction is -1</strong> (indicating a negative weight), the formula adjusts the value by subtracting it from 1 before applying the weight:</p>
 <p><span class="math notranslate nohighlight">\( weighted=   (1 - value)  \times weight \)</span></p>
 <p>The second formula inverts the value <span class="math notranslate nohighlight">\((1 - value)\)</span> before applying the weight, resulting in a different calculation for variables with negative weights.</p>
-<p>We will not go further into this in this module but you can find more information <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_risk_assessment_plugin.html#risk">here</a>.</p>
+<p>We will not go further into this in this module but you can find more information <span class="xref myst">here</span>.</p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>It is recommended to properly check the logic of each indicator. Often the indicators of a certain dimension follow the same logic but there are always exceptions. After the directions have been applied to the data, we can using the language “lack of coping capacity” instead of “coping capacity” since we have forced the respective indicators to another direction following the predefined logic (the higher the value = the worse the circumstances).</p>
@@ -919,7 +919,7 @@ Download the data folder for the second part of the exercise: “Modul_5_Ex1_Par
 <section id="automating-the-process">
 <h4>7. Automating the Process<a class="headerlink" href="#automating-the-process" title="Permalink to this heading">#</a></h4>
 <p>HeiGIT has developed a a QGIS Risk Assessment Plugin in order to simplify this process and safe time.
-You can find more information about the risk methodology and the usage of the plugin <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_risk_assessment_plugin.html#risk-assessment-qgis-plugin">here</a>.</p>
+You can find more information about the risk methodology and the usage of the plugin <span class="xref myst">here</span>.</p>
 <p>In order to try out the plugin and see the result, use the provided input data in your folder: “Modul_5_Ex1_Part_2\Input data\QGIS Plugin Risk Assessment\input”</p>
 </section>
 </section>

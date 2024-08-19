@@ -121,7 +121,7 @@ Example of a flood risk map. Source: Frank, Enrico & Ramsbottom, David & Avanzi,
 
 Simply knowing the size of an area or the length of a road section is valuable information. For example, you can determine how much of a road network is inaccessible or how much area is affected by flooding.
 
-These geometrical attributes can be calculated using the [__field calculator__](https://giscience.github.io/gis-training-resource-center/content/Modul_5/en_qgis_non_spatial_tools.html?highlight=field+calculator#calculate-field) or the processing tool __"Add geometry attributes"__. 
+These geometrical attributes can be calculated using the [__field calculator__](/content/Modul_5/en_qgis_non_spatial_tools.md#calculate-field) or the processing tool __"Add geometry attributes"__. 
 
 The field calculators has the following functions to calculate geometry attributes as new fields in the attribute table:
 
@@ -144,7 +144,7 @@ For example, to calculate the area of polygons:
 In the attribute table, you will find a new column called `Area` with the respective area for each feature. 
 
 ```{Note}
-The __unit of measurement__ of the calculated area depends on the __distance unit settings__ of the current __project's CRS__ (metrical or geographic). In most cases you want metres or kilometres. Make sure the units of your CRS are metres to get the correct values.
+The __unit of measurement__ of the calculated area depends on the __distance unit settings__ of the current __project's CRS__ (metrical or geographic). In most cases you want metres or kilometers. Make sure the units of your CRS are metres to get the correct values.
 
 You can check this by opening the CRS selector (in the bottom right corner) and reading the information of your selected CRS. 
 ```
@@ -191,7 +191,7 @@ You can add a table of the statistics to your print layout by using the "__Add a
 
 ## Buffer analysis
 
-Creating a [buffer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#buffer) is a helpful analysis to determine __what lies in proximity__ of, for example, a contaminated water source or other hazards and determine vulnerability. Buffer analysis is often used to map the riparian zones along rivers to devise environmental protection zones or estimate vulnerability.
+Creating a [buffer](/content/Wiki/en_qgis_geoprocessing_wiki.md#buffer) is a helpful analysis to determine __what lies in proximity__ of, for example, a contaminated water source or other hazards and determine vulnerability. Buffer analysis is often used to map the riparian zones along rivers to devise environmental protection zones or estimate vulnerability.
 
 - Proximity analysis
 - Estimated vulnerability analysis
@@ -221,7 +221,7 @@ Example of a point map (left) to a heat map (right)
 
 To create a heatmap you first need a layer containing data points or 'samples'. These points are distributed in an area with some areas containing more than others. The __density__ of the points in space determines the intensity of the colour on the heat map. 
 
-In QGIS, there are two methods to create heatmaps. The first method uses the symbology tab and is generally a lot faster. The second method uses the interpolation tool __"Heatmap (Kernel Density Estimation)"__ and offers more parameters to adjust. The advantage of the processing tool is that you can set a radius using metric units (for example the number of points in a __100 Meters__ radius compared to using the millimetres or pixels of your computer screen) and set a variable radius that is determined by another attribute. The next section discusses the creation of heatmaps using the symbology tab. A guide on how to create a heatmap using the processing tool can be found [here](link)
+In QGIS, there are two methods to create heatmaps. The first method uses the symbology tab and is generally a lot faster. The second method uses the interpolation tool __"Heatmap (Kernel Density Estimation)"__ and offers more parameters to adjust. The advantage of the processing tool is that you can set a radius using metric units (for example the number of points in a __100 Meters__ radius compared to using the millimetres or pixels of your computer screen) and set a variable radius that is determined by another attribute. The next section discusses the creation of heatmaps using the symbology tab.
 
 > insert link
 
@@ -294,7 +294,7 @@ You can remove the hexagon cells that are not overlapping with the reference lay
 
 ## Analysis by joining attributes
 
-[Joining](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html) datasets is a common and useful way to get new insights by adding the information of one table to the other, taking into account key attributes that are used to identify the features that are to be joined. For example: the population size of a district is in one table, and the number of hospitals in a district is in a second table and you wish to combine the two tables to know how many hospitals per population size are in the respective districts.
+[Joining](/content/Wiki/en_qgis_non_spatial_joins_wiki.md) datasets is a common and useful way to get new insights by adding the information of one table to the other, taking into account key attributes that are used to identify the features that are to be joined. For example: the population size of a district is in one table, and the number of hospitals in a district is in a second table and you wish to combine the two tables to know how many hospitals per population size are in the respective districts.
 
  - You have two separate data tables with information you wish to aggregate (join); 
  - Both tables share key identifiers; `CNTY_NAME` in this example
@@ -384,7 +384,7 @@ width: 500px
 Inverse Distance Weighted interpolation based on weighted sample point distance (left). Interpolated IDW surface from elevation vector points (right). (Source: Mitas, L., Mitasova, H. (1999). Spatial Interpolation. In: P.Longley, M.F. Goodchild, D.J. Maguire, D.W.Rhind (Eds.), Geographical Information Systems: Principles, Techniques, Management and Applications, Wiley.)
 ```
 
-Keep in mind that IDW interpolation has a few __disadvantages__. For example, the quality of the calculated statistical surface decreases, if the distribution of sample points is uneven. Additionally, the highest and lowest values in the interpolated surface only occur at sample points, which is probably not the case in the real world. This often results in peaks or pits around the sample data points (see [IDW interpolation example](giscience.github.io/gis-training-resource-center/content/Modul_6/en_qgis_data_analysis_theorie.html#Interpolation)) (adopted from the [QGIS documentation](https://docs.qgis.org/2.18/de/docs/gentle_gis_introduction/spatial_analysis_interpolation.html)). 
+Keep in mind that IDW interpolation has a few __disadvantages__. For example, the quality of the calculated statistical surface decreases, if the distribution of sample points is uneven. Additionally, the highest and lowest values in the interpolated surface only occur at sample points, which is probably not the case in the real world. This often results in peaks or pits around the sample data points (see [IDW interpolation example](/content/Modul_6/en_qgis_data_analysis_theorie.md#Interpolation)) (adopted from the [QGIS documentation](https://docs.qgis.org/2.18/de/docs/gentle_gis_introduction/spatial_analysis_interpolation.html)). 
 
 ### Spline Interpolation
 
@@ -408,4 +408,4 @@ Kriging is a method of geostatistics used to estimate values for spatial units w
 
 ## Outlook
 
-There are many analysis methods in GIS. However, setting up an analysis method can be quite time consuming, and creating a new analysis method for every research question makes it hard to compare the results of different analyses. This is why __model building__ and __automation__ are used frequently when working with GIS data. A model can be seen as a analysis blueprint that only needs input data to perform a certain type of analysis. Since the parameters are the same and similar datasets are needed for the model to work properly, the results can be compared. If you are interested in model building and automation, check out [module 7](https://giscience.github.io/gis-training-resource-center/content/Modul_7/en_qgis_automation_theory.html).
+There are many analysis methods in GIS. However, setting up an analysis method can be quite time consuming, and creating a new analysis method for every research question makes it hard to compare the results of different analyses. This is why __model building__ and __automation__ are used frequently when working with GIS data. A model can be seen as a analysis blueprint that only needs input data to perform a certain type of analysis. Since the parameters are the same and similar datasets are needed for the model to work properly, the results can be compared. If you are interested in model building and automation, check out [module 7](/content/Modul_7/en_qgis_automation_theory.md).

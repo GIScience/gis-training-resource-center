@@ -598,10 +598,10 @@ document.write(`
 <div class="sd-card-body docutils">
 <p class="rubric">Relevant Wiki Articles</p>
 <ul class="simple">
-<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html">Geodata Import in QGIS</a></p></li>
-<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html">Projections</a></p></li>
-<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html">Geoprocessing</a></p></li>
-<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html">Spatial Joins</a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_import_geodata_wiki.html"><span class="doc std std-doc">Geodata Import in QGIS</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_projections_wiki.html"><span class="doc std std-doc">Projections</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_geoprocessing_wiki.html"><span class="doc std std-doc">Geoprocessing</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_spatial_joins_wiki.html"><span class="doc std std-doc">Spatial Joins</span></a></p></li>
 </ul>
 </div>
 </div>
@@ -623,7 +623,7 @@ document.write(`
 <li><p class="sd-card-text">Take the time to familiarise yourself with the exercise and the provided material.</p></li>
 <li><p class="sd-card-text">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</p></li>
 <li><p class="sd-card-text">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <strong>and unzipped</strong> the data folder.</p></li>
-<li><p class="sd-card-text">Check out <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings">How to do trainings?</a> for some general tips on training conduction</p></li>
+<li><p class="sd-card-text">Check out <a class="reference internal" href="../Trainers_corner/en_how_to_training.html"><span class="doc std std-doc">How to do trainings?</span></a> for some general tips on training conduction</p></li>
 </ul>
 <p class="rubric">Conduct the training</p>
 <p class="sd-card-text"><strong>Introduction:</strong></p>
@@ -660,7 +660,7 @@ document.write(`
 <p>This first part of the exercise will prepare the data for subsequent non-spatial geodataprocessing, such as working with the attribute table. To calculate the vulnerability index, we will join all the relevant data using spatial geodataprocessing into a single vector layer.</p>
 <ol class="arabic simple">
 <li><p>Load the Uganda district boundaries (admin level 2) (<code class="docutils literal notranslate"><span class="pre">uga_admbnda_adm2_ubos_20200824.shp</span></code>), as well as population statistics (<code class="docutils literal notranslate"><span class="pre">uga_admpop_adm2_2020proj_1y.csv</span></code>) and Covid-19 risk indicators (<code class="docutils literal notranslate"><span class="pre">COVID19_RISK_INDEX.shp</span></code>) into QGIS.</p></li>
-<li><p>Make sure to reproject the dataset using the <strong>district boundaries</strong> and the <strong>Covid-19 risk indicators</strong> dataset into UTM zone 36N. Use the tool <code class="docutils literal notranslate"><span class="pre">Reproject</span> <span class="pre">layer</span></code> for this process. See the Wiki entry on <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html">projections</a> for further information.</p></li>
+<li><p>Make sure to reproject the dataset using the <strong>district boundaries</strong> and the <strong>Covid-19 risk indicators</strong> dataset into UTM zone 36N. Use the tool <code class="docutils literal notranslate"><span class="pre">Reproject</span> <span class="pre">layer</span></code> for this process. See the Wiki entry on <a class="reference internal" href="../Wiki/en_qgis_projections_wiki.html"><span class="doc std std-doc">projections</span></a> for further information.</p></li>
 </ol>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
@@ -685,7 +685,7 @@ document.write(`
 <li><p>We can take the <strong>closest district centroid</strong> (from the dataset with the most to the dataset with the fewest records). This is the solution we will use for this exercise as the difference between the two datasets is not drastically.</p></li>
 </ul>
 </li>
-<li><p>Calculate the <img alt="" src="../../_images/mAlgorithmCentroids.png" /> <code class="docutils literal notranslate"><span class="pre">Centroids</span></code> for the dataset containing the most elements, which are the district boundaries. You can find the tool under <code class="docutils literal notranslate"><span class="pre">Vector</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">Tools</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Centroids</span></code>. See the Wiki entry on <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html">Geoprocessing</a> for further information.</p></li>
+<li><p>Calculate the <img alt="" src="../../_images/mAlgorithmCentroids.png" /> <code class="docutils literal notranslate"><span class="pre">Centroids</span></code> for the dataset containing the most elements, which are the district boundaries. You can find the tool under <code class="docutils literal notranslate"><span class="pre">Vector</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">Tools</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Centroids</span></code>. See the Wiki entry on <a class="reference internal" href="../Wiki/en_qgis_geoprocessing_wiki.html"><span class="doc std std-doc">Geoprocessing</span></a> for further information.</p></li>
 <li><p>Edit the points so they are inside the correct polygons. This is necessary because the <strong>centroid of a polygon may fall outside of it</strong> when it has an <strong>unusual shape</strong>. To move a centroid that is outside its boundaries into the district boundaries, first activate the <code class="docutils literal notranslate"><span class="pre">Toggle</span> <span class="pre">editing</span> <span class="pre">mode</span></code> button, which can be found by clicking on <img alt="" src="../../_images/mActionToggleEditing.png" /> while activating the centroid layer. Then, select the <img alt="" src="../../_images/mActionMoveFeaturePoint.png" /> <code class="docutils literal notranslate"><span class="pre">Move</span> <span class="pre">Feature</span></code> tool. Search for the centroid that is outside its boundaries and move it to the appropriate district boundary. Save the changes and end the editing mode.</p></li>
 </ol>
 <figure class="align-default" id="en-qgis-centroids">
@@ -704,7 +704,7 @@ document.write(`
 </figcaption>
 </figure>
 <ol class="arabic simple" start="8">
-<li><p>Use the tool <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">attributes</span> <span class="pre">by</span> <span class="pre">location</span></code> to join the Covid-19 risk polygons onto the centroids. As a spatial relationship select <code class="docutils literal notranslate"><span class="pre">within</span></code> and select the columns <code class="docutils literal notranslate"><span class="pre">%permrooft</span></code>, <code class="docutils literal notranslate"><span class="pre">%permwallt</span></code> and <code class="docutils literal notranslate"><span class="pre">Povertyinc</span></code> as the fields that should be added. See the Wiki entry on <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html">spatial joins</a> for further information.</p></li>
+<li><p>Use the tool <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">attributes</span> <span class="pre">by</span> <span class="pre">location</span></code> to join the Covid-19 risk polygons onto the centroids. As a spatial relationship select <code class="docutils literal notranslate"><span class="pre">within</span></code> and select the columns <code class="docutils literal notranslate"><span class="pre">%permrooft</span></code>, <code class="docutils literal notranslate"><span class="pre">%permwallt</span></code> and <code class="docutils literal notranslate"><span class="pre">Povertyinc</span></code> as the fields that should be added. See the Wiki entry on <a class="reference internal" href="../Wiki/en_qgis_spatial_joins_wiki.html"><span class="doc std std-doc">spatial joins</span></a> for further information.</p></li>
 </ol>
 <figure class="align-default" id="join-attribute-by-location">
 <a class="reference internal image-reference" href="../../_images/en_ex3_1_join_attribute_location_1.PNG"><img alt="../../_images/en_ex3_1_join_attribute_location_1.PNG" src="../../_images/en_ex3_1_join_attribute_location_1.PNG" style="width: 60%;" /></a>
