@@ -58,7 +58,7 @@ Beginners-level: no specific knowledge about QGIS/uMap required
 ### Prepare the training
 
 - Take the time to familiarise yourself with the provided material for the exercise and the Sketch Map Tool in general. 
-- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
+- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction
 
 
 ### Conduct the training: 

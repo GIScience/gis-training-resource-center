@@ -543,7 +543,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-heat-map-visualization-past-flood-delineation">Exercise: Heat Map Visualization: Past Flood Delineation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scenario-and-background">Scenario and Background</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#data-collection">1. Data Collection</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#georeferencing-and-autoextraction-with-the-sketch-map-tool">2. Georeferencing and autoextraction with the Sketch Map tool</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#georeferencing-and-auto-extraction-with-the-sketch-map-tool">2. Georeferencing and auto-extraction with the Sketch Map tool</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#start-your-qgis-project">3. Start your QGIS Project</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rasterize">4. Rasterize</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#raster-calculator">5. Raster Calculator</a></li>
@@ -582,7 +582,7 @@ document.write(`
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
-<p class="rubric">Focus group (GIS-Knowlege Level)</p>
+<p class="rubric">Focus group (GIS-Knowledge Level)</p>
 <p class="sd-card-text">Medium-Advanced level (participants have worked with QGIS before)</p>
 <p class="rubric">Phase of participatory /community mapping</p>
 <p class="sd-card-text">Analysing participatory mapping results</p>
@@ -631,7 +631,7 @@ document.write(`
 <li><p class="sd-card-text">Online access and devices (PC)</p></li>
 <li><p class="sd-card-text">QGIS installed on the computer</p></li>
 <li><p class="sd-card-text">Take a look and make yourself familiar with the provided material for the exercise and the Sketch Map Tool in general.</p></li>
-<li><p class="sd-card-text">Check out <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings">How to do trainings?</a> for some general tips on training conduction</p></li>
+<li><p class="sd-card-text">Check out <a class="reference internal" href="../Trainers_corner/en_how_to_training.html"><span class="doc std std-doc">How to do trainings?</span></a> for some general tips on training conduction</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -640,7 +640,7 @@ document.write(`
 <p class="rubric">Conduct the training:</p>
 <p class="sd-card-text"><strong>Introduction:</strong></p>
 <ul class="simple">
-<li><p class="sd-card-text">Introduce the idea, the aim and the general workflow of the Skech Map Tool beforehand.</p></li>
+<li><p class="sd-card-text">Introduce the idea, the aim and the general workflow of the Sketch Map Tool beforehand.</p></li>
 <li><p class="sd-card-text">Provide access to the needed material.</p></li>
 <li><p class="sd-card-text">check-in if there are questions or problems.</p></li>
 <li><p class="sd-card-text">motivate fast participants to create a printable map in the end if they finish earlier than other participants</p></li>
@@ -666,8 +666,8 @@ document.write(`
 <p>Optional: You find the empty map <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_5.zip">here</a>(data/input). Feel free to draw some additional flood maps by printing the template out and drawing on it or by using a simple graphics editor.</p>
 <p>If you experience any problems during your use of the <a class="reference external" href="https://sketch-map-tool.heigit.org/">Sketch Map Tool</a>, please take a look at the <a class="reference external" href="https://sketch-map-tool.heigit.org/help">help page</a>.</p>
 </section>
-<section id="georeferencing-and-autoextraction-with-the-sketch-map-tool">
-<h4>2. Georeferencing and autoextraction with the Sketch Map tool<a class="headerlink" href="#georeferencing-and-autoextraction-with-the-sketch-map-tool" title="Permalink to this heading">#</a></h4>
+<section id="georeferencing-and-auto-extraction-with-the-sketch-map-tool">
+<h4>2. Georeferencing and auto-extraction with the Sketch Map tool<a class="headerlink" href="#georeferencing-and-auto-extraction-with-the-sketch-map-tool" title="Permalink to this heading">#</a></h4>
 <p><strong>Upload the sketch maps</strong> back to the tool’s website: Head to <a class="reference external" href="https://sketch-map-tool.heigit.org/">sketch-map-tool.heigit.org</a> and choose <code class="docutils literal notranslate"><span class="pre">Digitize</span> <span class="pre">your</span> <span class="pre">Sketch</span> <span class="pre">maps</span></code> on the right. Upload all your sketches in .png or .jpg format. You can mark your sketches and simply drag and drop them into the window.</p>
 <p>The sketch maps are now being processed and georeferenced with the annotations extracted and vectorized. Download the vectors. You may use the ones we have prepared <span class="xref myst">here</span>.</p>
 </section>
@@ -678,7 +678,7 @@ document.write(`
 <p class="admonition-title">Note</p>
 <p>When you upload several marked Sketch Maps simultaneously, you will get one vector output containing all the markings of all Sketch Maps, while uploading your Sketch Maps one by one will provide you with one vector file for the marking in each Sketch Map. This information can be important for the planning phase of your mapping process.</p>
 </div>
-<p>Your vectorized sketches in the geojson format contain a feature for every extracted .png/.jpeg and markup color. In general, each marking in your sketch map will appear in the attribute table as one row, containing the name of your sketch map as well as the detected colour of the respective marking. Now, we want to visualise the degree of overlapping flood areas in order to create a heatmap. Generating a heatmap from my SKetch Map results helps us to identyfiy patterns in the spatial dara, in this case it will show us the overlappings of participants markings and help us identifying most at risk areas. For this purpose, we have to convert every feature to a distinct raster and then sum up the overlapping pixels in a new raster. In QGIS, you can do this in the following steps:</p>
+<p>Your vectorized sketches in the geojson format contain a feature for every extracted .png/.jpeg and markup color. In general, each marking in your sketch map will appear in the attribute table as one row, containing the name of your sketch map as well as the detected colour of the respective marking. Now, we want to visualise the degree of overlapping flood areas in order to create a heatmap. Generating a heatmap from my SKetch Map results helps us to identify patterns in the spatial data, in this case it will show us the overlapping of participants markings and help us identifying most at risk areas. For this purpose, we have to convert every feature to a distinct raster and then sum up the overlapping pixels in a new raster. In QGIS, you can do this in the following steps:</p>
 </section>
 <section id="rasterize">
 <h4>4. Rasterize<a class="headerlink" href="#rasterize" title="Permalink to this heading">#</a></h4>
@@ -686,7 +686,7 @@ document.write(`
 <li><p>Add a column to your vector:</p></li>
 </ol>
 <ul class="simple">
-<li><p>Open the <strong>attribute table</strong> of your vector file and open the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field"><code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code></a> by clicking on <img alt="" src="../../_images/mActionCalculateField.png" />.</p></li>
+<li><p>Open the <strong>attribute table</strong> of your vector file and open the <span class="xref myst"><code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code></span> by clicking on <img alt="" src="../../_images/mActionCalculateField.png" />.</p></li>
 <li><p>In the field calculator dialog, check the <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">a</span> <span class="pre">new</span> <span class="pre">field</span></code> option, specify “fixed_val” as <code class="docutils literal notranslate"><span class="pre">Output</span> <span class="pre">field</span> <span class="pre">name</span></code> of the new field and choose “Whole number (integer)” as <code class="docutils literal notranslate"><span class="pre">Result</span> <span class="pre">field</span> <span class="pre">type</span></code>.</p></li>
 <li><p>In the field calculator expression box, enter as value you want to assign to all features “1” (without quotes).</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Ok</span></code></p></li>
@@ -706,11 +706,11 @@ document.write(`
 <ol class="arabic simple" start="2">
 <li><p>Convert your vectors to Rasters</p></li>
 </ol>
-<p>In the next step we want to <strong>rastzerize</strong> our vector layer. That means that we are essentially converting our vector geometries into a raster grid, where each cell represents a portion of the original vector features. Basically, we want to represent our flood polygons as a raster grid where each cell is assigned the value of 1, when it lies within a polygon, or 0, when it is outside of a polygon. In our resulting raster layer, the value 1 would then stand for “flood area”. Click <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_types_wiki.html#types-of-geodata">here</a> for more information on the different geodata concepts.</p>
+<p>In the next step we want to <strong>rasterise</strong> our vector layer. That means that we are essentially converting our vector geometries into a raster grid, where each cell represents a portion of the original vector features. Basically, we want to represent our flood polygons as a raster grid where each cell is assigned the value of 1, when it lies within a polygon, or 0, when it is outside of a polygon. In our resulting raster layer, the value 1 would then stand for “flood area”. Click <span class="xref myst">here</span> for more information on the different geodata concepts.</p>
 <ul class="simple">
 <li><p>In the top bar navigate via <code class="docutils literal notranslate"><span class="pre">Raster</span></code>, <code class="docutils literal notranslate"><span class="pre">Conversion</span></code> to <code class="docutils literal notranslate"><span class="pre">Rasterize</span> <span class="pre">(Vector</span> <span class="pre">to</span> <span class="pre">Raster)</span></code>. Alternatively, you can also search for <code class="docutils literal notranslate"><span class="pre">Rasterize</span> <span class="pre">(Vector</span> <span class="pre">to</span> <span class="pre">Raster)</span></code> in your <strong>Processing Toolbox</strong>.</p></li>
 <li><p>As input layer, choose one of your vector layers.</p></li>
-<li><p><strong>Important</strong>: Set the green loop symbol left from the tool wrench activated. This ensures the iteration over each features (row) in your layer, meaning that <strong>every feature in your layer is converted seperatly</strong>.</p></li>
+<li><p><strong>Important</strong>: Set the green loop symbol left from the tool wrench activated. This ensures the iteration over each features (row) in your layer, meaning that <strong>every feature in your layer is converted separately</strong>.</p></li>
 <li><p>Set <code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">to</span> <span class="pre">use</span> <span class="pre">for</span> <span class="pre">a</span> <span class="pre">burn-in</span> <span class="pre">value</span></code> to your recently created field “fixed_val” and set <code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">fixed</span> <span class="pre">value</span> <span class="pre">to</span> <span class="pre">burn</span></code> to 1. The term “value to burn” refers to the pixel value that will be assigned to the rasterized representation of the features from the vector layer. This value is used to encode the presence of the features in the resulting raster image.</p></li>
 <li><p>Set <code class="docutils literal notranslate"><span class="pre">Output</span> <span class="pre">raster</span> <span class="pre">size</span> <span class="pre">units</span></code> to “Pixels” and the <code class="docutils literal notranslate"><span class="pre">Width</span></code> and <code class="docutils literal notranslate"><span class="pre">Height</span></code> to 1000, respectively. (note: it might change automatically to a different pixel amount because of the output extent)</p></li>
 <li><p>Set the Output Extent to the same as your input layer. Depending your QGIS version you might have to click on <img alt="" src="../../_images/Three_points.png" />, click on <code class="docutils literal notranslate"><span class="pre">Calculate</span> <span class="pre">from</span> <span class="pre">Layer</span></code> and choose your input layer.</p></li>
@@ -735,8 +735,8 @@ document.write(`
 <section id="raster-calculator">
 <h4>5. Raster Calculator<a class="headerlink" href="#raster-calculator" title="Permalink to this heading">#</a></h4>
 <p>We will now sum up all our output rasters:</p>
-<p>In the top bar, navigate via <code class="docutils literal notranslate"><span class="pre">Raster</span></code>to <code class="docutils literal notranslate"><span class="pre">Raster</span> <span class="pre">Caclulator</span></code>.<br />
-In the <code class="docutils literal notranslate"><span class="pre">Raster</span> <span class="pre">Calculator</span> <span class="pre">Expression</span></code>, sum up the 10 rasters you rasterized from your vectors. You can doble-click on each raster in the <code class="docutils literal notranslate"><span class="pre">Raster</span> <span class="pre">Bands</span></code> window and add the operator “+”:</p>
+<p>In the top bar, navigate via <code class="docutils literal notranslate"><span class="pre">Raster</span></code>to <code class="docutils literal notranslate"><span class="pre">Raster</span> <span class="pre">Calculator</span></code>.<br />
+In the <code class="docutils literal notranslate"><span class="pre">Raster</span> <span class="pre">Calculator</span> <span class="pre">Expression</span></code>, sum up the 10 rasters you rasterized from your vectors. You can double-click on each raster in the <code class="docutils literal notranslate"><span class="pre">Raster</span> <span class="pre">Bands</span></code> window and add the operator “+”:</p>
 <blockquote>
 <div><p>More detailed explanation or video maybe?</p>
 </div></blockquote>
@@ -783,7 +783,7 @@ Please revise <span class="xref myst">XX Chapter</span> in order to lean more ab
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Keep in mind that what you are seeing on your screen is not a map that is ready to be printed or distributed. You could now create a printable map. Take a look at the chapter on the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html">print layout</a> and the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_map_making_wiki.html?highlight=print+layout#map-making-wiki">wiki</a> to do so.</p>
+<p>Keep in mind that what you are seeing on your screen is not a map that is ready to be printed or distributed. You could now create a printable map. Take a look at the chapter on the <a class="reference internal" href="../Modul_4/en_qgis_map_design_2.html"><span class="doc std std-doc">print layout</span></a> and the <a class="reference internal" href="../Wiki/en_qgis_map_making_wiki.html"><span class="doc std std-doc">wiki</span></a> to do so.</p>
 </div>
 </section>
 </section>
@@ -840,7 +840,7 @@ Please revise <span class="xref myst">XX Chapter</span> in order to lean more ab
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-heat-map-visualization-past-flood-delineation">Exercise: Heat Map Visualization: Past Flood Delineation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scenario-and-background">Scenario and Background</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#data-collection">1. Data Collection</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#georeferencing-and-autoextraction-with-the-sketch-map-tool">2. Georeferencing and autoextraction with the Sketch Map tool</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#georeferencing-and-auto-extraction-with-the-sketch-map-tool">2. Georeferencing and auto-extraction with the Sketch Map tool</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#start-your-qgis-project">3. Start your QGIS Project</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rasterize">4. Rasterize</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#raster-calculator">5. Raster Calculator</a></li>

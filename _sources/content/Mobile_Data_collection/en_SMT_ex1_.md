@@ -60,8 +60,8 @@ To shorten the time, you can also just focus on the hands-on-exploration of spec
 - Online access and devices (PC) to be able to use the Sketch Map Tool to create maps online, upload and download them.
 - Possibility to print the maps, smart phones to take the photos, and the possibility to upload the pictures to the Sketch Map Tool. 
 - Take the time to familiarise yourself with the provided material for the exercise and the Sketch Map Tool in general. 
-- Prepare a board (it can be a white board /flipchart / or digital e.g. mirro-board) where the participants can add their findings and questions. 
-- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
+- Prepare a board (it can be a white board/flipchart or digital e.g. Miro-board) where the participants can add their findings and questions. 
+- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction
 
 
 ```{idea}

@@ -13,7 +13,7 @@ This exercise can be used in online and presence training and is focused on an h
 
 :::{grid-item-card}
 
-#### Focus group (GIS-Knowlege Level)
+#### Focus group (GIS-Knowledge Level)
 Medium-Advanced level (participants have worked with QGIS before)
 
 #### Phase of participatory /community mapping 
@@ -49,7 +49,7 @@ Analysing participatory mapping results
 - Online access and devices (PC)
 - QGIS installed on the computer
 - Take a look and make yourself familiar with the provided material for the exercise and the Sketch Map Tool in general. 
-- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
+- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction
 
 ```{Note}
 if you want to create additional or individual marked map examples you can use the empty Sketch Map provided in the materials. Also feel free to choose a completely different scenario by creating your own Sketch Map. 
@@ -59,7 +59,7 @@ if you want to create additional or individual marked map examples you can use t
 
 ### Conduct the training:  
 __Introduction:__ 
-- Introduce the idea, the aim and the general workflow of the Skech Map Tool beforehand. 
+- Introduce the idea, the aim and the general workflow of the Sketch Map Tool beforehand. 
 - Provide access to the needed material.
 - check-in if there are questions or problems.
 - motivate fast participants to create a printable map in the end if they finish earlier than other participants
@@ -91,7 +91,7 @@ Optional: You find the empty map [here](https://nexus.heigit.org/repository/gis-
 
 If you experience any problems during your use of the [Sketch Map Tool](https://sketch-map-tool.heigit.org/), please take a look at the [help page](https://sketch-map-tool.heigit.org/help).
 
-#### 2. Georeferencing and autoextraction with the Sketch Map tool
+#### 2. Georeferencing and auto-extraction with the Sketch Map tool
 
 __Upload the sketch maps__ back to the tool’s website: Head to [sketch-map-tool.heigit.org](https://sketch-map-tool.heigit.org/) and choose `Digitize your Sketch maps` on the right. Upload all your sketches in .png or .jpg format. You can mark your sketches and simply drag and drop them into the window.
 
@@ -105,7 +105,7 @@ Open QGIS and __load your vector files__ by dragging and dropping them into the 
 When you upload several marked Sketch Maps simultaneously, you will get one vector output containing all the markings of all Sketch Maps, while uploading your Sketch Maps one by one will provide you with one vector file for the marking in each Sketch Map. This information can be important for the planning phase of your mapping process.
 ```
   
-Your vectorized sketches in the geojson format contain a feature for every extracted .png/.jpeg and markup color. In general, each marking in your sketch map will appear in the attribute table as one row, containing the name of your sketch map as well as the detected colour of the respective marking. Now, we want to visualise the degree of overlapping flood areas in order to create a heatmap. Generating a heatmap from my SKetch Map results helps us to identyfiy patterns in the spatial dara, in this case it will show us the overlappings of participants markings and help us identifying most at risk areas. For this purpose, we have to convert every feature to a distinct raster and then sum up the overlapping pixels in a new raster. In QGIS, you can do this in the following steps:
+Your vectorized sketches in the geojson format contain a feature for every extracted .png/.jpeg and markup color. In general, each marking in your sketch map will appear in the attribute table as one row, containing the name of your sketch map as well as the detected colour of the respective marking. Now, we want to visualise the degree of overlapping flood areas in order to create a heatmap. Generating a heatmap from my SKetch Map results helps us to identify patterns in the spatial data, in this case it will show us the overlapping of participants markings and help us identifying most at risk areas. For this purpose, we have to convert every feature to a distinct raster and then sum up the overlapping pixels in a new raster. In QGIS, you can do this in the following steps:
 
 
 #### 4. Rasterize
@@ -113,7 +113,7 @@ Your vectorized sketches in the geojson format contain a feature for every extra
 
 1. Add a column to your vector:
 
-- Open the __attribute table__ of your vector file and open the [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field) by clicking on ![](/fig/mActionCalculateField.png).
+- Open the __attribute table__ of your vector file and open the [`Field Calculator`](/content/Wiki/en_qgis_table_functions_wiki.md#calculate-field) by clicking on ![](/fig/mActionCalculateField.png).
 - In the field calculator dialog, check the `Create a new field` option, specify "fixed_val" as `Output field name` of the new field and choose "Whole number (integer)" as `Result field type`.
 - In the field calculator expression box, enter as value you want to assign to all features "1" (without quotes). 
 - Click `Ok`
@@ -141,12 +141,12 @@ Attribute table with additional column"fixed_val"
 
 2. Convert your vectors to Rasters
 
-In the next step we want to __rastzerize__ our vector layer. That means that we are essentially converting our vector geometries into a raster grid, where each cell represents a portion of the original vector features. Basically, we want to represent our flood polygons as a raster grid where each cell is assigned the value of 1, when it lies within a polygon, or 0, when it is outside of a polygon. In our resulting raster layer, the value 1 would then stand for "flood area". Click [here](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_types_wiki.html#types-of-geodata) for more information on the different geodata concepts.
+In the next step we want to __rasterise__ our vector layer. That means that we are essentially converting our vector geometries into a raster grid, where each cell represents a portion of the original vector features. Basically, we want to represent our flood polygons as a raster grid where each cell is assigned the value of 1, when it lies within a polygon, or 0, when it is outside of a polygon. In our resulting raster layer, the value 1 would then stand for "flood area". Click [here](/content/Wiki/en_qgis_geodata_types_wiki.md#types-of-geodata) for more information on the different geodata concepts.
 
 
 - In the top bar navigate via `Raster`, `Conversion` to `Rasterize (Vector to Raster)`. Alternatively, you can also search for `Rasterize (Vector to Raster)` in your __Processing Toolbox__. 
 - As input layer, choose one of your vector layers.
-- __Important__: Set the green loop symbol left from the tool wrench activated. This ensures the iteration over each features (row) in your layer, meaning that __every feature in your layer is converted seperatly__.
+- __Important__: Set the green loop symbol left from the tool wrench activated. This ensures the iteration over each features (row) in your layer, meaning that __every feature in your layer is converted separately__.
 - Set `Field to use for a burn-in value` to your recently created field "fixed_val" and set `A fixed value to burn` to 1. The term "value to burn" refers to the pixel value that will be assigned to the rasterized representation of the features from the vector layer. This value is used to encode the presence of the features in the resulting raster image.
 - Set `Output raster size units` to "Pixels" and the `Width` and `Height` to 1000, respectively. (note: it might change automatically to a different pixel amount because of the output extent)
 - Set the Output Extent to the same as your input layer. Depending your QGIS version you might have to click on ![](/fig/Three_points.png), click on `Calculate from Layer` and choose your input layer.
@@ -181,8 +181,8 @@ Output Rasterize
 
 We will now sum up all our output rasters:
 
-In the top bar, navigate via `Raster`to `Raster Caclulator`.  
-In the `Raster Calculator Expression`, sum up the 10 rasters you rasterized from your vectors. You can doble-click on each raster in the `Raster Bands` window and add the operator "+":
+In the top bar, navigate via `Raster`to `Raster Calculator`.  
+In the `Raster Calculator Expression`, sum up the 10 rasters you rasterized from your vectors. You can double-click on each raster in the `Raster Bands` window and add the operator "+":
 
 >More detailed explanation or video maybe?
 
@@ -249,7 +249,7 @@ Raster Transparency
 ```
 
 ```{note}
-Keep in mind that what you are seeing on your screen is not a map that is ready to be printed or distributed. You could now create a printable map. Take a look at the chapter on the [print layout](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html) and the [wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_map_making_wiki.html?highlight=print+layout#map-making-wiki) to do so.
+Keep in mind that what you are seeing on your screen is not a map that is ready to be printed or distributed. You could now create a printable map. Take a look at the chapter on the [print layout](/content/Modul_4/en_qgis_map_design_2.md) and the [wiki](/content/Wiki/en_qgis_map_making_wiki.md) to do so.
 ```
 
 
