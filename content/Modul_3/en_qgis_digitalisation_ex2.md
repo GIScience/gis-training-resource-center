@@ -52,6 +52,37 @@ Data collection
 
 ::::
 
+## Instructions for the trainers
+
+:::{dropdown} __Trainers Corner__ 
+
+### Prepare the training
+
+- Take the time to familiarise yourself with the exercise and the provided material.
+- Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
+- Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
+- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
+
+### Conduct the training
+
+__Introduction:__
+
+- Introduce the idea and aim of the exercise.
+- Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.
+
+__Follow-along:__
+
+- Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project. 
+- Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.  
+- Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.
+
+__Wrap up:__
+
+- Leave time for any issues or questions concerning the tasks at the end of the exercise.
+- Leave some time for open questions. 
+
+:::
+
 
 ```{Attention}
 Try to always use the standard folder structure. You can find a template [__here__](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure).
