@@ -2,9 +2,45 @@
 
 __🔙[Back to Homepage](/content/intro.md)__
 
+## Characteristics of the exercise
+
+::::{grid} 2
+:::{grid-item-card}
 ## Aim of the exercise:
 
 In this exercise, you will learn how to digitise the positions of settlements by creating new datasets. Furthermore, you will learn how to enrich the simple geodata set with additional information.
+
+#### Type of trainings exercise:
+
+- This exercise can be used in online and presence training. 
+- It can be done as a follow-along exercise or individually as a self-study.
+
+:::
+
+:::{grid-item-card}
+
+#### Focus group (GIS-Knowledge Level)
+
+- QGIS Beginners
+
+
+#### These skills are relevant for 
+
+- The skills tested in this exercise are necessary for all GIS-users.
+
+:::
+::::
+
+::::{grid} 2
+:::{grid-item-card}
+
+#### Estimated time demand for the exercise.
+
+- The exercise takes around 1 hour to complete, depending on the number of participants and trainers. 
+
+:::
+
+:::{grid-item-card}
 
 ## Relevant Wiki Articles
 
@@ -20,6 +56,42 @@ In this exercise, you will learn how to digitise the positions of settlements by
 * [Digitisation- Point data](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#add-geometries-to-a-layer)
 * [Geoprocessing - Clip](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#clip) 
 
+:::
+
+::::
+
+## Instructions for the trainers
+
+:::{dropdown} __Trainers Corner__ 
+
+### Prepare the training
+
+- Take the time to familiarise yourself with the exercise and the provided material.
+- Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
+- Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
+- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
+
+### Conduct the training
+
+__Introduction:__
+
+- Introduce the idea and aim of the exercise.
+- Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.
+
+__Follow-along:__
+
+- Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project. 
+- Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.  
+- Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.
+
+__Wrap up:__
+
+- Leave time for any issues or questions concerning the tasks at the end of the exercise.
+- Leave some time for open questions. 
+
+:::
+
+
 
 ## Data sources
 Download the data folder [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_3/Modul_3_Exercise_1_Flood_Nigeria/Modul3_Exercise_1_Flood_Nigeria.zip) and save it on your PC. Unzip the .zip file.
@@ -30,7 +102,8 @@ The folder is called “Modul_3_Exercise_1_Flood_Nigeria" and contains the entir
 * [Satellite detected water extents between 1 and 25 October 2022 over Nigeria (VIIRS_20220901_20220930_MaximumFloodWaterExtent_Nigeria.shp)](https://data.humdata.org/dataset/satellite-detected-water-extents-between-1-and-25-october-2022-over-nigeria?force_layout=desktop) UNOSAT
 
 
-## Task
+## Tasks
+
 Our goal is to produce an overview of the impact of the 2022 flood in the state of Burco in Nigeria. To this end, we will visualise the state and the affected districts, plus we will digitise communities which are reportedly affected.
 
 1. Open QGIS and create a [new project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`

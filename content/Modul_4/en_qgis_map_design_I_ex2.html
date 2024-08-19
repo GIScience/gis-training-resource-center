@@ -538,7 +538,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aim-of-the-exercise">Aim of the exercise</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristics-of-the-exercise">Characteristics of the exercise</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions-for-the-trainers">Instructions for the trainers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preparation-of-the-data">Preparation of the data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-symbolization">Part 1: Symbolization</a></li>
@@ -559,35 +561,111 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="map-design-exercise-1-creating-a-map-of-ghana">
 <h1>Map design Exercise 1: Creating a Map of Ghana<a class="headerlink" href="#map-design-exercise-1-creating-a-map-of-ghana" title="Permalink to this heading">#</a></h1>
-<section id="aim-of-the-exercise">
-<h2>Aim of the exercise<a class="headerlink" href="#aim-of-the-exercise" title="Permalink to this heading">#</a></h2>
-<p>The aim of this exercise is to create an overview map of Ghana with its subdistricts, main roads, settlements, as well as hospitals. Such information can  be of use in humanitarian work. The first part of the exercise will cover the symbolisation of the data layers. The second part will focus on the design of the print layout.</p>
-<p><strong>Estimated time for completion:</strong> 3 hours</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-<span class="c1">## Data</span>
-
-<span class="n">__Download</span> <span class="n">the</span> <span class="n">data</span> <span class="k">for</span> <span class="n">the</span> <span class="n">exercise</span> <span class="p">[</span><span class="n">here</span><span class="p">](</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">nexus</span><span class="o">.</span><span class="n">heigit</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">repository</span><span class="o">/</span><span class="n">gis</span><span class="o">-</span><span class="n">training</span><span class="o">-</span><span class="n">resource</span><span class="o">-</span><span class="n">center</span><span class="o">/</span><span class="n">Modul_4</span><span class="o">/</span><span class="n">Modul_4_Exercise_1_creating_a_map_of_ghana</span><span class="o">/</span><span class="n">Modul_4_Exercise_1</span><span class="o">.</span><span class="n">zip</span><span class="p">)</span><span class="o">.</span><span class="n">__</span>  
-<span class="n">It</span> <span class="ow">is</span> <span class="n">always</span> <span class="n">important</span> <span class="n">to</span> <span class="n">make</span> <span class="n">yourself</span> <span class="n">familiar</span> <span class="k">with</span> <span class="n">the</span> <span class="n">data</span> <span class="n">at</span> <span class="n">your</span> <span class="n">disposal</span><span class="o">.</span>
-<span class="n">For</span> <span class="n">this</span> <span class="n">exercise</span><span class="p">,</span> <span class="n">we</span> <span class="n">will</span> <span class="n">use</span> <span class="n">the</span> <span class="n">following</span> <span class="n">layers</span><span class="p">:</span>
-
-<span class="o">-</span> <span class="n">Ghana</span> <span class="o">-</span> <span class="n">Subnational</span> <span class="n">Administrative</span> <span class="n">Boundaries</span> <span class="p">(</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">data</span><span class="o">.</span><span class="n">humdata</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">dataset</span><span class="o">/</span><span class="n">cod</span><span class="o">-</span><span class="n">ab</span><span class="o">-</span><span class="n">gha</span><span class="p">)</span>
-<span class="o">-</span> <span class="n">Ghana</span> <span class="n">Health</span> <span class="n">Facilities</span> <span class="p">(</span><span class="n">OSM</span> <span class="n">Export</span><span class="p">;</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">data</span><span class="o">.</span><span class="n">humdata</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">dataset</span><span class="o">/</span><span class="n">hotosm_gha_health_facilities</span><span class="p">);</span> <span class="n">This</span> <span class="n">data</span> <span class="n">has</span> <span class="n">been</span> <span class="n">cleaned</span> <span class="n">up</span> <span class="n">to</span> <span class="n">only</span> <span class="n">contain</span> <span class="n">hospitals</span><span class="o">.</span>
-<span class="o">-</span> <span class="n">Ghana</span> <span class="n">roads</span> <span class="p">(</span><span class="n">OSM</span> <span class="n">Export</span><span class="p">;</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">data</span><span class="o">.</span><span class="n">humdata</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">dataset</span><span class="o">/</span><span class="n">hotosm_gha_roads</span><span class="p">)</span>
-<span class="o">-</span> <span class="n">Ghana</span> <span class="n">settlements</span> <span class="p">(</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">data</span><span class="o">.</span><span class="n">humdata</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">dataset</span><span class="o">/</span><span class="n">ghana</span><span class="o">-</span><span class="n">settlements</span><span class="p">);</span> <span class="n">This</span> <span class="n">data</span> <span class="n">has</span> <span class="n">already</span> <span class="n">been</span> <span class="n">modified</span><span class="o">.</span> <span class="n">Only</span> <span class="n">the</span> <span class="n">regional</span><span class="p">,</span> <span class="n">district</span> <span class="ow">and</span> <span class="n">country</span> <span class="n">capitals</span> <span class="n">are</span> <span class="n">available</span><span class="o">.</span>
-
-<span class="n">All</span> <span class="n">data</span> <span class="n">has</span> <span class="n">been</span> <span class="n">downloaded</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">Humanitarian</span> <span class="n">Data</span> <span class="n">Exchange</span><span class="o">.</span> <span class="n">Download</span> <span class="n">the</span> <span class="n">Data</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">Nexus</span><span class="p">,</span> <span class="n">__unzip</span> <span class="n">the</span> <span class="n">folder__</span><span class="p">,</span> <span class="ow">and</span> <span class="n">load</span> <span class="n">the</span> <span class="n">data</span> <span class="n">into</span> <span class="n">a</span> <span class="n">new</span> <span class="n">QGIS</span> <span class="n">project</span><span class="o">.</span>
-
-</pre></div>
+<section id="characteristics-of-the-exercise">
+<h2>Characteristics of the exercise<a class="headerlink" href="#characteristics-of-the-exercise" title="Permalink to this heading">#</a></h2>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="rubric">Aim of the exercise</p>
+<p class="sd-card-text">The aim of this exercise is to create an overview map of Ghana with its subdistricts, main roads, settlements, as well as hospitals. Such information can  be of use in humanitarian work. The first part of the exercise will cover the symbolisation of the data layers. The second part will focus on the design of the print layout.</p>
+<p class="rubric">Type of trainings exercise:</p>
+<ul class="simple">
+<li><p class="sd-card-text">This exercise can be used in online and presence training.</p></li>
+<li><p class="sd-card-text">It can be done as a follow-along exercise or individually as a self-study.</p></li>
+</ul>
 </div>
-<div class="highlight-card notranslate"><div class="highlight"><pre><span></span>
-## Wiki articles
-
-- [Visualisation](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_visualisation_wiki.html)  
-- [Module 4: Visualisation of Geodata](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_I.html)  
-- [Module 4: Map Design: The Print Layout](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html)
-
-</pre></div>
 </div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="rubric">Focus group (GIS-Knowledge Level)</p>
+<p class="rubric">These skills are relevant for</p>
+<ul class="simple">
+<li><p class="sd-card-text">visualising geographic data</p></li>
+<li><p class="sd-card-text">creating maps to communicate information</p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="rubric">Estimated time demand for the exercise.</p>
+<ul class="simple">
+<li><p class="sd-card-text">The exercise takes around 5 hours to complete, depending on the number of participants and trainers.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="rubric">Relevant Wiki Articles</p>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_visualisation_wiki.html">Visualisation</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_I.html">Module 4: Visualisation of Geodata</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html">Module 4: Map Design: The Print Layout</a></p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="instructions-for-the-trainers">
+<h2>Instructions for the trainers<a class="headerlink" href="#instructions-for-the-trainers" title="Permalink to this heading">#</a></h2>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Trainers Corner</strong> <div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="rubric">Prepare the training</p>
+<ul class="simple">
+<li><p class="sd-card-text">Take the time to familiarise yourself with the exercise and the provided material.</p></li>
+<li><p class="sd-card-text">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</p></li>
+<li><p class="sd-card-text">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <strong>and unzipped</strong> the data folder.</p></li>
+<li><p class="sd-card-text">Check out <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings">How to do trainings?</a> for some general tips on training conduction</p></li>
+</ul>
+<p class="rubric">Conduct the training</p>
+<p class="sd-card-text"><strong>Introduction:</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Introduce the idea and aim of the exercise.</p></li>
+<li><p class="sd-card-text">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</p></li>
+</ul>
+<p class="sd-card-text"><strong>Follow-along:</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</p></li>
+<li><p class="sd-card-text">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</p></li>
+<li><p class="sd-card-text">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</p></li>
+</ul>
+<p class="sd-card-text"><strong>Wrap up:</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Leave time for any issues or questions concerning the tasks at the end of the exercise.</p></li>
+<li><p class="sd-card-text">Leave some time for open questions.</p></li>
+</ul>
+</div>
+</details></section>
+<section id="available-data">
+<h2>Available Data<a class="headerlink" href="#available-data" title="Permalink to this heading">#</a></h2>
+<p><strong>Download the data for the exercise <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Modul_4/Modul_4_Exercise_1_creating_a_map_of_ghana/Modul_4_Exercise_1.zip">here</a>.</strong><br />
+It is always important to make yourself familiar with the data at your disposal.
+For this exercise, we will use the following layers:</p>
+<ul class="simple">
+<li><p>Ghana - Subnational Administrative Boundaries (<a class="reference external" href="https://data.humdata.org/dataset/cod-ab-gha">https://data.humdata.org/dataset/cod-ab-gha</a>)</p></li>
+<li><p>Ghana Health Facilities (OSM Export; <a class="reference external" href="https://data.humdata.org/dataset/hotosm_gha_health_facilities">https://data.humdata.org/dataset/hotosm_gha_health_facilities</a>); This data has been cleaned up to only contain hospitals.</p></li>
+<li><p>Ghana roads (OSM Export; <a class="reference external" href="https://data.humdata.org/dataset/hotosm_gha_roads">https://data.humdata.org/dataset/hotosm_gha_roads</a>)</p></li>
+<li><p>Ghana settlements (<a class="reference external" href="https://data.humdata.org/dataset/ghana-settlements">https://data.humdata.org/dataset/ghana-settlements</a>); This data has already been modified. Only the regional, district and country capitals are available.</p></li>
+</ul>
+<p>All data has been downloaded from the Humanitarian Data Exchange. Download the Data from the Nexus, <strong>unzip the folder</strong>, and load the data into a new QGIS project.</p>
 </section>
 <section id="tasks">
 <h2>Tasks<a class="headerlink" href="#tasks" title="Permalink to this heading">#</a></h2>
@@ -793,7 +871,9 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aim-of-the-exercise">Aim of the exercise</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristics-of-the-exercise">Characteristics of the exercise</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions-for-the-trainers">Instructions for the trainers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preparation-of-the-data">Preparation of the data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-symbolization">Part 1: Symbolization</a></li>
