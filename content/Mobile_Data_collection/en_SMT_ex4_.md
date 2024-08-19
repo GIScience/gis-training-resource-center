@@ -6,7 +6,7 @@
 :::{grid-item-card}
 
 #### Aim of this exercise:
-Learn how you can visualize your Sketch Map Tool Outputs in either [QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_installation_wiki.html#qgis-installation) or [uMAP](https://umap.openstreetmap.fr/en/).
+Learn how you can visualize your Sketch Map Tool Outputs in either [QGIS](/content/Wiki/en_qgis_installation_wiki.md) or [uMAP](https://umap.openstreetmap.fr/en/).
 
 #### Type of trainings exercise:
 This exercise can be used in online and presence training and is focused on an hands-on experience with the basic of QGIS or UMAP.
@@ -18,7 +18,7 @@ This exercise can be used in online and presence training and is focused on an h
 
 #### Focus group (GIS-Knowlege Level)
 
-- Exercise builds on prior-knowledge of Sketch Map Tool. Make sure [Exercise 1](https://giscience.github.io/gis-training-resource-center/content/Mobile_Data_collection/en_SMT_ex1_.html#sketch-map-tool-exercise-1-workflow-exercise) has been done before or knowlege on the background on Sketch Map Tool is there.
+- Exercise builds on prior-knowledge of Sketch Map Tool. Make sure [Exercise 1](/content/Mobile_Data_collection/en_SMT_ex1_.md) has been done before or knowledge on the background on Sketch Map Tool is there.
 
 - GIS Beginners-level: no specific knowledge about QGIS/uMAP required
 
@@ -53,7 +53,7 @@ __Exercise B__: 30 min
 ::::
 
 ```{Tip}
-Decide together with the responsible working group which GIS system is prefered and decide on one. There is no neccesity to learn/use both ways. Generally QGIS will give you more opportunities for visualisation and analysis of the results. If a simple and quick visualization without installation of software packages is desired, UMAP might be an easy solution.
+Decide together with the responsible working group which GIS system is preferred and decide on one. There is no necessity to learn and use both ways. Generally QGIS will give you more opportunities for visualisation and analysis of the results. If a simple and quick visualization without installation of software packages is desired, UMAP might be an easy solution.
 ```
 
 
@@ -66,7 +66,7 @@ Decide together with the responsible working group which GIS system is prefered 
 - Online access and devices (PC)
 - QGIS installed on the computer
 - Take a look and make yourself familiar on the provided material for the exercise and the Sketch Map Tool in general.
-- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction 
+- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction 
 
 ```{Note}  
 - If you like to skip parts of the workflow, you can use the available geodata or intermediate results.
@@ -124,7 +124,7 @@ If you experience any problems during your use of the [Sketch Map Tool](https://
 
 #### 1. Scenario and Background
 
-Map the critical infrastructre and historical flood extent using Sketch Maps
+Map the critical infrastructure and historical flood extent using Sketch Maps
 
 #### 1. Data Collection
 
@@ -134,7 +134,7 @@ Unzip the .zip folder in order and vaigate to `data/Input`.
 Optional: You find the empty map in the data input folder: `\Sketch_Map_Tool_Exercise_4\data\input`. Feel free to draw some additional flood maps by printing the template out and drawing on it or by using a simple graphics editor.
 
 
-#### 2. Georeferencing and autoextraction with the Sketch Map tool
+#### 2. Geo-referencing and auto-extraction with the Sketch Map tool
 
 Upload the sketch maps back to the tool’s website: Head to [sketch-map-tool.heigit.org](https://sketch-map-tool.heigit.org/) and choose 'Digitize your Sketch maps' on the right. Upload all your sketches in .png or .jpg format. You can mark your sketches and simply drag and drop them into the window.
 
@@ -151,17 +151,17 @@ Now load your vector file ("Schuld_Ahr-tal_sketch-map_Ex4.geojson") and geotiff 
 
 1. __Orientate in the User Interface__
 
-    If you are a beginner to QGIS get to know the basics of the QGIS User Interface [here](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#qgis-interface).
+    If you are a beginner to QGIS get to know the basics of the QGIS User Interface [here](/content/Wiki/en_qgis_interface_wiki.md).
 
 2. __Add a Basemap__
 
     For a better overview and orientation it is always helpful to add a basemap to your project and put your situation in a spatial context. Find in the `Browser` Panel `XYZ Tiles`, open the dropdown by clicking on it and select OpenStreetMap or another basemap.
 
-    Click [here](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#standard-qgis-basemaps) for more information on basemaps and how toa dd them to your project.
+    Click [here](/content/Wiki/en_qgis_basemaps_wiki.md) for more information on basemaps and how toa dd them to your project.
 
 3. __Understand the Layer Concept__
 
-    By dragging and dropping your data into QGIS the data will be visualized in the map canvas and its description will be visible in the `Layers` Panel. You should now have 3 layers in your panel: your geojason output (vector), your geotiff (Raster) and the OpenStreetMap basemap. In order to see all the information you have to bing them into order. It is important to understand the [Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html#layer-concept).
+    By dragging and dropping your data into QGIS the data will be visualized in the map canvas and its description will be visible in the `Layers` Panel. You should now have 3 layers in your panel: your geojason output (vector), your geotiff (Raster) and the OpenStreetMap basemap. In order to see all the information you have to bing them into order. It is important to understand the [Layer Concept](/content/Wiki/en_qgis_layer_concept_wiki.md).
 
 
     ```{figure} /fig/en_SMT_ex4_fig1.PNG
@@ -177,7 +177,7 @@ Now load your vector file ("Schuld_Ahr-tal_sketch-map_Ex4.geojson") and geotiff 
 
     __Vector data__
 
-    In order to explore your detected markings, right-click on your vector file and navigate to `Open Attribute Table` and click on it. The table has one entry (row) for each detected marking. In our example, 6 markings where detecetd. The column "color" describes the color which has been detected for each marking and the column "name" contains the name of your uploaded Sketch Map. 
+    In order to explore your detected markings, right-click on your vector file and navigate to `Open Attribute Table` and click on it. The table has one entry (row) for each detected marking. In our example, 6 markings where detected. The column "color" describes the color which has been detected for each marking and the column "name" contains the name of your uploaded Sketch Map. 
 
     ```{Note}
     When you upload several marked Sketch Maps simultaneously, you will get one vector output containing all the markings of all Sketch Maps. In this case the column "name" helps you to track on which map each marking was detected 
@@ -194,12 +194,12 @@ Now load your vector file ("Schuld_Ahr-tal_sketch-map_Ex4.geojson") and geotiff 
 
     __GeoTIFF__
 
-    The Raster file as result of the Sketch Map Tool is basically the foto you took of your Sketch Map, but georeferenced. You see if the georeferencing is correct when it matches the base map. Furthermore your `.tiff`-file is helpful to compare and review the marking detection (vector file). In this case your tiff is your "ground truth" and you can check if the marking detection by the tool is true or if there are pieces missing or wongly detected. 
+    The Raster file as result of the Sketch Map Tool is the photo you took of your Sketch Map, but georeferenced. You see if the georeferencing is correct when it matches the base map. Furthermore your `.tiff`-file is helpful to compare and review the marking detection (vector file). In this case your tiff is your "ground truth" and you can check if the marking detection by the tool is true or if there are pieces missing or wrongly detected. 
 
     Question:
     Do your different output match or do you find any errors?
 
-    -> Yes, you are right. Unfortunatly, one marked polygon did not get detected. This can happen since marking are being detected by machine learning algorithms that can encounter problems in some situations. 
+    -> Yes, you are right. Unfortunately, one marked polygon did not get detected. This can happen since marking are being detected by machine learning algorithms that can encounter problems in some situations. 
 
 
 ### 5. Correct or enhance your data
@@ -208,7 +208,7 @@ Now load your vector file ("Schuld_Ahr-tal_sketch-map_Ex4.geojson") and geotiff 
 
 __1. Digitization: Add a marking manually__
 
-So what can we do if a marking has not been detected? We can add missing markings manually by tracking the drawing on the geotiff file. This process is also called [digitization](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation.html?highlight=digitize#digitalisation). 
+So what can we do if a marking has not been detected? We can add missing markings manually by tracking the drawing on the geotiff file. This process is also called [digitisation](/content/Modul_3/en_qgis_digitalisation.md). 
 
 Right-click on your vector file and click on `Toggle Editing`. The `Digitizing Toolbox` in your menu bar on top of your QGIS will be activated:
 
@@ -233,14 +233,14 @@ align: center
 Digitizing 
 ```
 
-In the map canvas you can already see your handdrawn polygon. In order to save it, you should now right-click on your vector layer and turn off the Editing mode by clicking on `Toggle Editing` -> `Save`. Check your result by looking at the Attribute Table again: You now have 7 features in your table.
+In the map canvas you can already see your hand-drawn polygon. In order to save it, you should now right-click on your vector layer and turn off the Editing mode by clicking on `Toggle Editing` -> `Save`. Check your result by looking at the Attribute Table again: You now have 7 features in your table.
 
 
 
 ```{figure} /fig/en_SMT_ex4_Attrbute_Table_new.PNG
 ---
 height: 400px
-name: SMT Attribte table with added polygon
+name: SMT Attribute table with added polygon
 align: center
 ---
 Attribute Table with added polygon 
@@ -248,7 +248,7 @@ Attribute Table with added polygon
 
 The whole process of Digitization is explained in detail [here](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation.html?highlight=digitize#digitalisation).
 
-
+[test](/content/Modul_3/en_qgis_digitalisation.md?highlight=digitize#digitalisation)
 
 __2. Add a property/column to the Attribute Table__
 
@@ -288,12 +288,12 @@ Now we want to visualize our results and generate a printable map so the results
 
 __1. Customize Symbology__
 
-We can customize the symbology of our vectory layer by right-clicking on it in the `Layers` Panel -> `Properties` -> `Symbology`.
+We can customize the symbology of our vector layer by right-clicking on it in the `Layers` Panel -> `Properties` -> `Symbology`.
 
 First of all we want to assign different colors for different features:
 
 In the topmost drop-down menu, choose `Categorized`. As Value choose "Description" and then click on the bottom left on `Classify`. We are now able to choose colors depending on the value in the column "Description". By double-clicking on the colored box in your window next to your value and Legend descriptions the `Symbol Selector` will open in a new window where you can choose the color of your preference by clicking on the drop-down arrow next to "Color".
-Right below you can also ajust the opcaty level of your feature.
+Right below you can also adjust the opacity level of your feature.
 
 
 ```{figure} /fig/en_SMT_ex4_dig_categorize.PNG
@@ -302,11 +302,10 @@ height: 400px
 name: SMT adjusting symbology
 align: center
 ---
-Adjusting the symbology with the [symbology tab](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_I.html#styling-panel)
+Adjusting the symbology with the [symbology tab](/content/Modul_4/en_qgis_map_design_I.md#styling-panel)
 ```
 
-
-In the `Symbol Selector`, you can also click on `Simple line` in the upper window and change the `Symbol Layer Type`. In this example, we would like to symbolize the critical Infrastructure with red outlines, so we choose "Outline: Simple Line". Just below we can adjust the color, stroke witdh, stroke line type, etc. You can find more information about the visualization of vector data [here](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_visualisation_wiki.html#visualisation-of-vector-data).
+In the `Symbol Selector`, you can also click on `Simple line` in the upper window and change the `Symbol Layer Type`. In this example, we would like to symbolize the critical Infrastructure with red outlines, so we choose "Outline: Simple Line". Just below we can adjust the color, stroke width, stroke line type, etc. You can find more information about the visualization of vector data [here](/content/Wiki/en_qgis_visualisation_wiki.md#visualisation-of-vector-data).
 
 
 ```{figure} /fig/en_SMT_ex4_dig_Symbology.PNG
@@ -335,7 +334,7 @@ __2. Make a printable Map__
     - Click on the ![Add legend icon](/fig/30.30.2_print_layout_add_legend.png) (`Add legend`). 
     - Navigate to the __Item Properties__ panel on the right. 
     - Scroll down a bit and check turn off `Auto Update` by unchecking the check box. Now you can freely edit every item on the legend
-    - Adjust the legend by removing unecessary layers (which are not seen on the map) and rename the layer in the legend by clicking on ![Edit Icon](/fig/30.30.2_print_layout_legend_edit.png) (`Edit selected item properties`) below the legend entries.
+    - Adjust the legend by removing unnecessary layers (which are not seen on the map) and rename the layer in the legend by clicking on ![Edit Icon](/fig/30.30.2_print_layout_legend_edit.png) (`Edit selected item properties`) below the legend entries.
 6. Now, let's add a scale bar:
     - Click on the ![Add Scale bar icon](/fig/30.30.2_print_layout_add_scale_bar.png) (`Add Scale bar`)
     - Draw a rectangle on the map and position the scale bar on the edge of the map. You can adjust the scale bar units (meters, kilometers, ...), the fixed segment width (50 km, 75 km, 100 km, ...) and the number of segments (to the right).
@@ -358,7 +357,7 @@ Example of a finished map using the Sketch Map Tool
 
 
 
-You can find Videos along with all the necessary information about making printable maps and the print layout composer in the [Print Layout Chapter](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout), the [Symbology Chapter](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_I.html), and in the [Map Making Wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_map_making_wiki.html#map-making-wiki)
+You can find Videos along with all the necessary information about making printable maps and the print layout composer in the [Print Layout Chapter](/content/Modul_4/en_qgis_map_design_2.md#understanding-the-print-layout-composer), the [Symbology Chapter](/content/Modul_4/en_qgis_map_design_I.md), and in the [Map Making Wiki](/content/Wiki/en_qgis_map_making_wiki.md)
  
 ::::
 
@@ -380,8 +379,8 @@ Users can customize the appearance of the map and share it with others. It's par
 | Accessibility| Requires installation on a desktop computer | Accessible online via web browser |
 | Purpose |Comprehensive GIS software for spatial data analysis | Interactive mapping tool for creating custom maps |
 | Data Import | Supports various data formats (shapefiles, geodatabases, etc.) | Vector data only, user input via map canvas, some geo formats (geojson, .gpx, .kml, .osm) |
-| Data Visualization and Analysis|Offers extensive visualization and analysis capabilities, Provides a wide range of geospatial analysis tools  | Focuses on creating interactive maps with custom elements; No analysis tools |
-| Output | Printable map with all necesary map elements | URL so share map online |
+| Data Visualization and Analysis|Offers extensive visualization and analysis capabilities, Provides a wide range of spatial analysis tools  | Focuses on creating interactive maps with custom elements; No analysis tools |
+| Output | Printable map with all necessary map elements | URL so share map online |
 
 
 ```{Hint}
@@ -404,7 +403,7 @@ The sketch maps are now being processed and georeferenced with the annotations e
 
 ### 4. Load your data 
 
-1. Open the Browser of your choice and navigate to the [UMAP Website](https://umap.openstreetmap.fr/en/) and click on the large green button `Create a Map`. YOur Map Canvas and User interface will open.
+1. Open the Browser of your choice and navigate to the [uMap Website](https://umap.openstreetmap.fr/en/) and click on the large green button `Create a Map`. YOur Map Canvas and User interface will open.
 
 2. Right above your map canvas, you can click in "Untitled Map" in order to edit your map properties. Give your Map a title and a short description.
 
@@ -413,7 +412,7 @@ The sketch maps are now being processed and georeferenced with the annotations e
 ```{figure} /fig/en_SMT_ex4_UMAP_Properties.PNG
 ---
 width: 300px
-name: SMT Ex4B Umap properties
+name: SMT Ex4B uMap properties
 align: center
 ---
 Editing the map properties
@@ -431,7 +430,7 @@ UMAP interface with the Sketch Map vectors
 ```
 
 
-4. Click in the upper right corner on `Save`. If you are not logged in you will be provided with an URL where you can access and your map any time lateron. Save it somewhere or send it to your email. 
+4. Click in the upper right corner on `Save`. If you are not logged in you will be provided with an URL where you can access and your map any time later on. Save it somewhere or send it to your email. 
 
 
 ```{Attention}
@@ -523,7 +522,7 @@ align: center
 Toggle editing
 ```
 
-- The `Feature properties` window will open on the right hand side. On the very top, you can now choose the layer group you want to assign this feature to. Choose a meaningful name. For the flood polygons, we can simply choose as name "Past flood extent" and for the several critical infrastructure polygons you can either choose "critical infrastructure" or "school"/"water treatment plant" as just an example. Click on `Close`. If you click on a flood extent polygon and toggle editing you assign it to you layer "Past flood extent" and if you click on a critical infrastrucutre polygon and toggle editing you assign it to you layer "Critical Infrastructure". Assign now all 6 polygons to the respective layer.
+- The `Feature properties` window will open on the right hand side. On the very top, you can now choose the layer group you want to assign this feature to. Choose a meaningful name. For the flood polygons, we can simply choose as name "Past flood extent" and for the several critical infrastructure polygons you can either choose "critical infrastructure" or "school"/"water treatment plant" as just an example. Click on `Close`. If you click on a flood extent polygon and toggle editing you assign it to you layer "Past flood extent" and if you click on a critical infrastructure polygon and toggle editing you assign it to you layer "Critical Infrastructure". Assign now all 6 polygons to the respective layer.
 
 
 ```{figure} /fig/en_SMT_ex4_UMAP_assign_layer.PNG
@@ -536,7 +535,7 @@ Assign features to layers
 ```
 
 - Now click on `Manage Layers`![](/fig/en_SMT_ex4_UMAP_layers.PNG) again and `Edit`![](/fig/en_SMT_ex4_UMAP_Edit.PNG) one of your new layers (e.g. "Past flood extent"). Click on `Shape Properties` to change the color of the layer. You can explore other option you have for styling your features. You finish by clicking on `Close` in the upper right corner.
-- In `Interaction Options` the behavior of the labeling can be determined. For example, you can choose `Popup` as `Popup shape` and set `Display label` either `on hover` in order to only display the features descriptions when you srcroll with the mouse over the respective feature on the map, or on `always`, in order to always see the respective description.
+- In `Interaction Options` the behavior of the labeling can be determined. For example, you can choose `Popup` as `Popup shape` and set `Display label` either `on hover` in order to only display the features descriptions when you scroll with the mouse over the respective feature on the map, or on `always`, in order to always see the respective description.
 
 
 ```{figure} /fig/en_SMT_ex4_UMAP_Shape_Properties.PNG
