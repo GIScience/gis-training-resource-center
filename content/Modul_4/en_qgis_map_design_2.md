@@ -20,7 +20,7 @@ A good map guides the reader in understanding the information available on the m
 In general, there are a few things to keep in mind when creating a map:
 
 - The main map should cover the largest portion of the page and be centred.
-- A complete map must have a legend, sources, title, scale, and neccessary other information to contextualize the information presented on the map.
+- A complete map must have a legend, sources, title, scale, and necessary other information to contextualize the information presented on the map.
 - Additional information, such as title, sources, scale bar, legend, orientation, etc. should be scaled accordingly.
     - Titles should be large so the reader can identify it as the main topic of the map.
     - Additional information should be smaller and moved out of the main focus of the page (e.g. at the bottom, to the sides, or in the corners).
@@ -42,7 +42,7 @@ The interface of the Print Layout Composer
 3. __Navigation bar__ (Zoom, Refresh, Lock/Unlock elements)
 4. __Toolbar__ (Zoom, Select, Move in Map, Add new map/image/text/legend/scale/shape/...)
 5. __Feature Panel__: Displays the elements added to the print layout
-6. __Advanced Options__: Customises each element of the layer
+6. __Advanced Options__: Customise each element of the layer
 
 The print layout manager also works with toolbars (on the left side of the screen), where you can select different tools (e.g. to add images) and panels (on the right side of the screen), where you can change the settings of the tools or the elements you have added to the map. 
 
@@ -97,8 +97,7 @@ Adding text to the print layout
 ```
 
 :::{dropdown} Video: Adding a textbox
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_print_layout_adding_a_title
-.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_print_layout_adding_a_title.mp4"></video>
 :::
 
 ### Adding an image or logo
@@ -193,8 +192,7 @@ name: Add scale bar
 Add and customise the scale bar
 ```
 :::{dropdown}
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_print_layout_adding_scalebar
-.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_print_layout_adding_scalebar.mp4"></video>
 :::
 
 ### Adding an overview map
@@ -303,8 +301,7 @@ You can drag and drop template-files (`.qpt`, QGIS template file) into QGIS or u
 The template directory is where QGIS stores layout templates. If you have templates saved here, you can load templates directly through the layout manager without selecting the file.
 On Windows computers, the file path is `\Users\AppData\Roaming\QGIS\QGIS3\profiles\default\composer_templates`.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_template_directory
-.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_template_directory.mp4"></video>
 
 :::
 

@@ -39,10 +39,10 @@ We want to create an overview of different vulnerability indicators. Using a Cov
 
 ## Relevant Wiki Articles
 
-* [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)
-* [Projections](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html)
-* [Geoprocessing](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html)
-* [Spatial Joins](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html)
+* [Geodata Import in QGIS](/content/Wiki/en_qgis_import_geodata_wiki.md)
+* [Projections](/content/Wiki/en_qgis_projections_wiki.md)
+* [Geoprocessing](/content/Wiki/en_qgis_geoprocessing_wiki.md)
+* [Spatial Joins](/content/Wiki/en_qgis_spatial_joins_wiki.md)
 
 :::
 
@@ -57,7 +57,7 @@ We want to create an overview of different vulnerability indicators. Using a Cov
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
+- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction
 
 ### Conduct the training
 
@@ -95,7 +95,7 @@ This first part of the exercise will prepare the data for subsequent non-spatial
 
 1. Load the Uganda district boundaries (admin level 2) (`uga_admbnda_adm2_ubos_20200824.shp`), as well as population statistics (`uga_admpop_adm2_2020proj_1y.csv`) and Covid-19 risk indicators (`COVID19_RISK_INDEX.shp`) into QGIS.
 
-2. Make sure to reproject the dataset using the __district boundaries__ and the __Covid-19 risk indicators__ dataset into UTM zone 36N. Use the tool `Reproject layer` for this process. See the Wiki entry on [projections](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html) for further information.
+2. Make sure to reproject the dataset using the __district boundaries__ and the __Covid-19 risk indicators__ dataset into UTM zone 36N. Use the tool `Reproject layer` for this process. See the Wiki entry on [projections](/content/Wiki/en_qgis_projections_wiki.md) for further information.
 
 ```{Attention}
 Before you start doing any GIS operations, __always explore the data__. Always check if the projections of the different layers are the same.
@@ -118,7 +118,7 @@ Screenshot of different sizes of the attribute tables
 4. We will use the following solution for this problem:
     - We can take the __closest district centroid__ (from the dataset with the most to the dataset with the fewest records). This is the solution we will use for this exercise as the difference between the two datasets is not drastically.
 
-5. Calculate the ![](/fig/mAlgorithmCentroids.png) `Centroids` for the dataset containing the most elements, which are the district boundaries. You can find the tool under `Vector` --> `Geometry Tools` --> `Centroids`. See the Wiki entry on [Geoprocessing](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html) for further information.
+5. Calculate the ![](/fig/mAlgorithmCentroids.png) `Centroids` for the dataset containing the most elements, which are the district boundaries. You can find the tool under `Vector` --> `Geometry Tools` --> `Centroids`. See the Wiki entry on [Geoprocessing](/content/Wiki/en_qgis_geoprocessing_wiki.md) for further information.
 
 6. Edit the points so they are inside the correct polygons. This is necessary because the __centroid of a polygon may fall outside of it__ when it has an __unusual shape__. To move a centroid that is outside its boundaries into the district boundaries, first activate the `Toggle editing mode` button, which can be found by clicking on ![](/fig/mActionToggleEditing.png) while activating the centroid layer. Then, select the ![](/fig/mActionMoveFeaturePoint.png) `Move Feature` tool. Search for the centroid that is outside its boundaries and move it to the appropriate district boundary. Save the changes and end the editing mode.
 
@@ -140,7 +140,7 @@ name: fix_geometries
 Screenshot on how to fix the geometries.
 ```
 
-8. Use the tool `Join attributes by location` to join the Covid-19 risk polygons onto the centroids. As a spatial relationship select `within` and select the columns `%permrooft`, `%permwallt` and `Povertyinc` as the fields that should be added. See the Wiki entry on [spatial joins](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html) for further information.
+8. Use the tool `Join attributes by location` to join the Covid-19 risk polygons onto the centroids. As a spatial relationship select `within` and select the columns `%permrooft`, `%permwallt` and `Povertyinc` as the fields that should be added. See the Wiki entry on [spatial joins](/content/Wiki/en_qgis_spatial_joins_wiki.md) for further information.
 
 ```{figure} /fig/en_ex3_1_join_attribute_location_1.PNG
 ---

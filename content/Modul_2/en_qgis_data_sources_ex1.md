@@ -4,7 +4,7 @@
 <!--This exercise is quite minimal with the explanation of steps (most should be looked up) so it is not suited for a follow along session -->
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_modul_2_exercises.html
+:link: /content/Modul_2/en_qgis_modul_2_exercises.md
 
 __Click here to return to the exercise overview page for module 2__ 
 
@@ -25,7 +25,7 @@ understanding of where and how to access relevant data, and identify potential p
 
 :::{grid-item-card}
 
-#### Focus group (GIS-Knowlege Level)
+#### Focus group (GIS-Knowledge Level)
 
 - QGIS Beginners
 - The skills tested in this exercise are necessary for all GIS-users.
@@ -50,11 +50,11 @@ understanding of where and how to access relevant data, and identify potential p
 
 ### Relevant Wiki articles
 
-* [QGIS Interface](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
-* [Types of Geodata](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_types_wiki.html)
-* [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)
-* [Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html)
-* [Geodata Classification - Graduated](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html)
+* [QGIS Interface](/content/Wiki/en_qgis_interface_wiki.md)
+* [Types of Geodata](/content/Wiki/en_qgis_geodata_types_wiki.md)
+* [Geodata Import in QGIS](/content/Wiki/en_qgis_import_geodata_wiki.md)
+* [Layer Concept](/content/Wiki/en_qgis_layer_concept_wiki.md)
+* [Geodata Classification - Graduated](/content/Wiki/en_qgis_graduated_wiki.md)
 
 :::
 
@@ -69,7 +69,7 @@ understanding of where and how to access relevant data, and identify potential p
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
+- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction
 
 ### Conduct the training
 

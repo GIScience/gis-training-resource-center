@@ -71,7 +71,7 @@ Click on `Show Values` in the top right corner when a field is selected to get a
 :::
 
 :::{tab-item} Logical operators
-Operators such as AND, OR can be used to combine different queris or criteria
+Operators such as AND, OR can be used to combine different queries or criteria
 | operator | functionality          |
 |----------|------------------------|
 | __AND__  | logical AND            |

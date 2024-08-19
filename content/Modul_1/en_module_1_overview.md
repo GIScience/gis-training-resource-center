@@ -6,7 +6,7 @@ The first module is aimed to familiarise beginners with the concept of geographi
 
 | __Chapter__ | __Competences & Objectives__ |
 | ----------- | ---------------------------- |
-| __[Chapter 1: What is GIS?](https://giscience.github.io/gis-training-resource-center/content/Modul_1/en_qgis_theorie.html)__ | At the end of this chapter, you should: Understand the concept of geographic information systems (GIS); Understand the use of GIS; Know what spatial analysis and cartography means; Know the different types of maps used in humanitarian work; Have a basic understanding of geodata |
-| __[Chapter 2: Installing QGIS](https://giscience.github.io/gis-training-resource-center/content/Modul_1/en_qgis_installation.html)__ | At the end of this chapter, you should: Know how to install QGIS | 
-| __[Chapter 3: Getting started with QGIS](https://giscience.github.io/gis-training-resource-center/content/Modul_1/en_qgis_start.html)__ | At the end of this chapter, you should: Know what you can do with QGIS; Know how to create, save, and open QGIS-projects; Understand the QGIS-interface and its components |
-| __[Exercises for Module 1](https://giscience.github.io/gis-training-resource-center/content/Modul_1/en_qgis_modul_1_exercises.html)__ | Here you can find a list of exercises touching upon the content of module 1 | 
+| __[Chapter 1: What is GIS?](/content/Modul_1/en_qgis_theorie.md)__ | At the end of this chapter, you should: Understand the concept of geographic information systems (GIS); Understand the use of GIS; Know what spatial analysis and cartography means; Know the different types of maps used in humanitarian work; Have a basic understanding of geodata |
+| __[Chapter 2: Installing QGIS](/content/Modul_1/en_qgis_installation.md)__ | At the end of this chapter, you should: Know how to install QGIS | 
+| __[Chapter 3: Getting started with QGIS](/content/Modul_1/en_qgis_start.md)__ | At the end of this chapter, you should: Know what you can do with QGIS; Know how to create, save, and open QGIS-projects; Understand the QGIS-interface and its components |
+| __[Exercises for Module 1](/content/Modul_1/en_qgis_modul_1_exercises.md)__ | Here you can find a list of exercises touching upon the content of module 1 | 

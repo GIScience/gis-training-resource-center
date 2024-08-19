@@ -39,11 +39,11 @@ Become familiar with different types of non-spatial analysis and geoprocessing t
 
 ## Relevant Wiki Articles
 
-* [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)
-* [Projections](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html)
-* [Spatial Queries](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_queries_wiki.html)
-* [Geoprocessing](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html)
-* [Categorized classification](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html)
+* [Geodata Import in QGIS](/content/Wiki/en_qgis_import_geodata_wiki.md)
+* [Projections](/content/Wiki/en_qgis_projections_wiki.md)
+* [Spatial Queries](/content/Wiki/en_qgis_spatial_queries_wiki.md)
+* [Geoprocessing](/content/Wiki/en_qgis_geoprocessing_wiki.md)
+* [Categorized classification](/content/Wiki/en_qgis_categorized_wiki.md)
 
 :::
 
@@ -58,7 +58,7 @@ Become familiar with different types of non-spatial analysis and geoprocessing t
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
+- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md#how-to-do-trainings) for some general tips on training conduction
 
 ### Conduct the training
 
@@ -99,9 +99,9 @@ The projected coordinate system for Senegal is `EPSG:32628 WGS 84 / UTM zone 28N
 
 1. Load the Senegal administrative boundary layer (`sen_admbnda_adm1_1m_gov_ocha_20190426.shp`), as well as population per subnational unit (`sen_admpop_adm1_2020.csv`) and the Desinventar Sendai data of Senegal (`DI_Stat924.xls`) into QGIS.
 
-2. Make sure to reproject the dataset with the administrative boundaries into UTM zone 28N. See the Wiki entry on [Projections](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html) for further information.
+2. Make sure to reproject the dataset with the administrative boundaries into UTM zone 28N. See the Wiki entry on [Projections](/content/Wiki/en_qgis_projections_wiki.md) for further information.
 
-3. Conduct non-spatial joins based on regions listed in two datasets and the PCODE listed in these same sets. See the Wiki entry on [Non-spatial joins](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html) for further information.
+3. Conduct non-spatial joins based on regions listed in two datasets and the PCODE listed in these same sets. See the Wiki entry on [Non-spatial joins](/content/Wiki/en_qgis_non_spatial_joins_wiki.md) for further information.
 
 ```{figure} /fig/en_ex1_AT_admin_pop_sen.png
 ---
@@ -138,7 +138,7 @@ Screenshot of the tool Join Attributes by Field Value for the directly and indir
 
 ::::
 
-6. Use the table functions to calculate the area of each region in square kilometres and the density of the population. See the Wiki entry on [Table functions](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html) for further information.
+6. Use the table functions to calculate the area of each region in square kilometres and the density of the population. See the Wiki entry on [Table functions](/content/Wiki/en_qgis_table_functions_wiki.md) for further information.
     - Create a new column/field named `"area_sqkm"` using the field calculator. Ensure decimal numbers are used as the field type. For the calculation use the expression: `$area / (1000 * 1000)`
     - Create another column/field named `"pop_per_sqkm"` with decimal numbers as field type. Use the expression: `"Total" / "area_sqkm"` for the calculation.
 
