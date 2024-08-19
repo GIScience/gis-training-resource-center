@@ -4,11 +4,91 @@ __🔙[Back to Homepage](/content/intro.md)__
 
 🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
+## Characteristics of the exercise
+
+::::{grid} 2
+:::{grid-item-card}
+
 ## Aim of the exercise:
 
 This exercise is based on the monitoring and triggering process used by the Somalia Red Crescent Society (SRCS) in the framework of a drought Early Action Protocol (EAP).
 
 Within this exercise, you will build a simplified version of the monitoring and trigger mechanism for the FEWSNET projection pillar.
+
+#### Type of trainings exercise:
+
+- This exercise can be used in online and presence training. 
+- It can be done as a follow-along exercise or individually as a self-study.
+
+:::
+
+:::{grid-item-card}
+
+#### Focus group (GIS-Knowledge Level)
+
+
+#### These skills are relevant for 
+
+
+:::
+::::
+
+::::{grid} 2
+:::{grid-item-card}
+
+#### Estimated time demand for the exercise.
+
+ 
+
+:::
+
+:::{grid-item-card}
+
+## Relevant Wiki Articles
+
+* [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)
+* [Intersection](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#intersection)
+* [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics)
+* [Join Attributes by location (summary](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
+* [Table functions](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics)
+
+
+:::
+
+::::
+
+## Instructions for the trainers
+
+:::{dropdown} __Trainers Corner__ 
+
+### Prepare the training
+
+- Take the time to familiarise yourself with the exercise and the provided material.
+- Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
+- Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
+- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
+
+### Conduct the training
+
+__Introduction:__
+
+- Introduce the idea and aim of the exercise.
+- Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.
+
+__Follow-along:__
+
+- Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project. 
+- Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.  
+- Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.
+
+__Wrap up:__
+
+- Leave time for any issues or questions concerning the tasks at the end of the exercise.
+- Leave some time for open questions. 
+
+:::
+
+
 
 ## Background 
 
@@ -24,16 +104,8 @@ derived population weighted index in the same district, then we will act in this
 
 
 
-## Relevant Wiki Articles
 
-* [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)
-* [Intersection](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#intersection)
-* [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics)
-* [Join Attributes by location (summary](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
-* [Table functions](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics)
-
-
-## Data
+## Available Data
 
 ### Food Insecurity Projection data
 
