@@ -2,9 +2,45 @@
 
 __🔙[Back to Homepage](/content/intro.md)__
 
+## Characteristics of the exercise
+
+::::{grid} 2
+:::{grid-item-card}
 ## Aim of the exercise
 
 This exercise will help you to get to know the interface of QGIS a bit better. Furthermore, you will load your first data in QGIS and gain some hands-on experience with the layer concept.
+
+#### Type of trainings exercise:
+
+- This exercise can be used in online and presence training. 
+- It can be done as a follow-along exercise or individually as a self-study.
+
+:::
+
+:::{grid-item-card}
+
+#### Focus group (GIS-Knowlege Level)
+
+- QGIS Beginners
+
+
+#### These skills are relevant for 
+
+- The skills tested in this exercise are necessary for all GIS-users.
+
+:::
+::::
+
+::::{grid} 2
+:::{grid-item-card}
+
+#### Estimated time demand for the exercise.
+
+- The exercise takes around 1 hour to complete, depending on the number of participants and trainers. 
+
+:::
+
+:::{grid-item-card}
 
 ## Relevant Wiki Articles
 
@@ -13,7 +49,42 @@ This exercise will help you to get to know the interface of QGIS a bit better. F
 * [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)
 * [Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html)
 
-## Data sources
+:::
+
+::::
+
+## Instructions for the trainers
+
+:::{dropdown} __Trainers Corner__ 
+
+### Prepare the training
+
+- Take the time to familiarise yourself with the exercise and the provided material.
+- Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
+- Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
+- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
+
+### Conduct the training
+
+__Introduction:__
+
+- Introduce the idea and aim of the exercise.
+- Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.
+
+__Follow-along:__
+
+- Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project. 
+- Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.  
+- Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.
+
+__Wrap up:__
+
+- Leave time for any issues or questions concerning the tasks at the end of the exercise.
+- Leave some time for open questions. 
+
+:::
+
+## Available Data
 
 Download the data folder [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_4/Module_2_Exercise_4_The_World.zip) and save it on your PC. Unzip the .zip file!
 The folder is called “Module_2_Exercise_4_The_World" and contains the whole [standard folder structure](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure) with all data in the input folder and the additional documentation in the documentation folder.
@@ -22,7 +93,7 @@ The folder is called “Module_2_Exercise_4_The_World" and contains the whole [s
 - [Significant Earthquake Dataset](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ngdc.mgg.hazards:G012153) (CSV)
 - [Global Power Plant Dataset](https://datasets.wri.org/dataset/globalpowerplantdatabase) (Points/GeoPackage)
 
-## Task
+## Tasks
 
 1. Open QGIS and create a [new project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`
 2. Once the project is created save the project in the “project” folder of the “Ex_The_world”.  To do that click on `Project` -> `Save as` and navigate to the folder. Name the project “Ex_The_World”.
