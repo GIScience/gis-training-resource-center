@@ -19,11 +19,13 @@ The markdown files are built to a static webpage via `jupyter-book`.
 * do your changes to the book in `contents`
 * build it locally `jupyter-book build .`
 * verify changes `cd _build/html/ && python3 -m http.server 8080`
-* push source files via git to `main`
+* push source files via git to the `dev` branch
+  * change the branch `git switch dev`
   * `git pull`
   * `git commit -m "yourmessage"`
   * `git push`
   * conflict: `git config pull.rebase false`
+  * when you are finished with your changes, create a pull request to merge `dev` with `main`. 
 * push rendered html files to branch `gh-pages` via the command `ghp-import -n -p -f _build/html`. This will automatically delete the branch and recreate it to avoid a bloated history.
 
 
