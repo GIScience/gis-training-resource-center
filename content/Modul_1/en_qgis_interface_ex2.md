@@ -17,8 +17,8 @@ The exercise covers:
 
 ## Related wiki articles
 
-- [QGIS interface](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
-- [Projects and folder structure](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
+- [QGIS interface](/content/Wiki/en_qgis_interface_wiki.md)
+- [Projects and folder structure](/content/Wiki/en_qgis_interface_wiki.md)
 
 
 ## Data preparation
