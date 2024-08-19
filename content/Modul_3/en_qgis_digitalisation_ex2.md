@@ -1,19 +1,61 @@
-# Digitization Exercise 1: Access to financial institutions 
+# Digitisation Exercise 1: Access to financial institutions 
 
-## Aim of the exercise:
+
+## Characteristics of the exercise
+
+::::{grid} 2
+:::{grid-item-card}
+#### Aim of the exercise:
 
 In this exercise, you will learn how to digitise points, lines, and polygons of features in settlements by creating new datasets. 
 
-```{Attention}
-Try to always use the standard folder structure. You can find a template [__here__](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure).
-```
+#### Type of trainings exercise:
 
-### Relevant Wiki Articles
+- This exercise can be used in online and presence training. 
+- It can be done as a follow-along exercise or individually as a self-study.
+
+:::
+
+:::{grid-item-card}
+
+#### Focus group (GIS-Knowlege Level)
+
+Data collection
+
+#### These skills are relevant for 
+
+- Data collection and digitisation
+- Fixing spatial information
+
+:::
+::::
+
+::::{grid} 2
+:::{grid-item-card}
+
+#### Estimated time demand for the exercise.
+
+- The exercise takes around 2 hour to complete, depending on the number of participants and their familiarity with computer systems.
+
+:::
+
+:::{grid-item-card}
+
+### Relevant Wiki articles
 
 * [QGIS Interface](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
 * [Types of Geodata](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_types_wiki.html)
 * [Digitization](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html)
 * [Basemaps](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html)
+
+:::
+
+::::
+
+
+```{Attention}
+Try to always use the standard folder structure. You can find a template [__here__](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure).
+```
 
 
 ## Background: Cash crunch in Abuja
