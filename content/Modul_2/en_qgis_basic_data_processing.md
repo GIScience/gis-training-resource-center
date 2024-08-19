@@ -59,10 +59,7 @@ name: Standard folder structure
 ---
 Standard folder structure. Source: HeiGIT
 ```
-<!-- CHECK: add source 
-I think Probably HeiGIT/Alec
-HeiGIT is fine
- -->
+
 
 ### Geodata naming 
 
@@ -100,7 +97,7 @@ Before you can start creating maps in QGIS, you will need to load your data into
 
 ### Vector data import
 
-Typical [vector data formats](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_geodata_concept.html#vector-file-formats) are Shapefile (`.shp`) and GeoPackage (`.gpkg`). 
+Typical [vector data formats](/content/Modul_2/en_qgis_geodata_concept.md#vector-file-formats) are Shapefile (`.shp`) and GeoPackage (`.gpkg`). 
 The process of importing vector data in either of the two formats is the same. 
 
 QGIS offers a few ways to load vector data into QGIS. The most immediate is via drag-and-drop, where you simply 

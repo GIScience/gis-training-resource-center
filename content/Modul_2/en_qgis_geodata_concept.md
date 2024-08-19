@@ -264,7 +264,7 @@ In GIS, we project the earth onto a flat coordinate system (hence the name coord
 It is crucial that you are aware that your data can be in one CRS and your QGIS 
 project in another CRS. The data and the project should always be the same, or 
 else you will get wrong results! The project CRS is displayed on the bottom right
-corner of the [QGIS interface](https://giscience.github.io/gis-training-resource-center/content/Modul_1/en_qgis_start.html#overview-of-qgis-interface).  
+corner of the [QGIS interface](/content/Modul_1/en_qgis_start.md#overview-of-qgis-interface).  
 To change the CRS of your data and project, follow the steps explained below.
 The default CRS/EPSG code of every QGIS project is the World Geodetic System 84 
 (EPSG: 4326). This CRS is optimized for world maps. So not perfect for most 
