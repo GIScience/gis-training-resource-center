@@ -10,11 +10,11 @@ This exercise touches upon content from module 2 and is aimed to refresh your kn
 
 ### Wiki:
 
-- [Interface](https://github.com/QGIS_Training/gis-training-resource-center/Wiki/en_qgis_interface_wiki.md)
+- [Interface](/content/Wiki/en_qgis_interface_wiki.md)
 
-- [Projections](https://github.com/QGIS_Training/gis-training-resource-center/Wiki/en_qgis_projections_wiki.md)
+- [Projections](/content/Wiki/en_qgis_projections_wiki.md)
 
-- [Layer concept and data import](https://github.com/QGIS_Training/gis-training-resource-center/Wiki/en_qgis_layer_concept_wiki.md)
+- [Layer concept and data import](/content/Wiki/en_qgis_layer_concept_wiki.md)
 
 
 ### Data:
@@ -23,7 +23,7 @@ Download the data (zip-file: 83.23 KB) and save it on your PC. Create a local fo
 
 - Sierra Leone Border (Polygon/Lines) GeoPacked
 
-- Sierra Leone national boders (Polygon/lines)
+- Sierra Leone national borders (Polygon/lines)
 
 - Sierra Leone provinces (Lines)
 
@@ -45,13 +45,13 @@ Airport Text Layer
 
 5. View the attribute data of the layers. For this purpose look at the attribute table.
 
-6. Changes the projection in the map view to WGS 84 / Pseudo-Mercator- EPSG:3857. Note that this does not change the projection (the coordinates) of the files, but only affects the projection of the map view.  Check this in the properties of the point layer. Which projection is indicated there? Hint: You can use the searchbar on the top.
+6. Changes the projection in the map view to WGS 84 / Pseudo-Mercator- EPSG:3857. Note that this does not change the projection (the coordinates) of the files, but only affects the projection of the map view.  Check this in the properties of the point layer. Which projection is indicated there? Hint: You can use the search-bar on the top.
 
 7. Now save the health layer in the projection WGS 84 / Pseudo-Mercator- EPSG:3857. This changes the projection of the file. Check this in the properties of the newly created layer.
 
 8. Save your project.
 
-9. Optional: You can add the OpenStreetMap base map via the browser windos => XYZ Tiles. Note that online base maps can lead to problems with the projection of the different layers. Make sure to remove the base map bevor saving the project.
+9. Optional: You can add the OpenStreetMap base map via the browser window => XYZ Tiles. Note that online base maps can lead to problems with the projection of the different layers. Make sure to remove the base map before saving the project.
 
 ### Result: 
 

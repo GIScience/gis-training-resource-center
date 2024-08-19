@@ -16,7 +16,7 @@ you can click, forms you can fill out to do tasks, and it's generally a visual i
 - You may __view, edit, capture and analyze spatial data or create printable maps__ with it. QGIS was created in 2002 
 and is a project of volunteers. And it is __constantly changing__.
 - QGIS is backed by a __large community of users__, so it’s easy to find solutions to technical issues by using QGIS 
-forums, blogs, or subreddits. The official QGIS community can be found here https://qgis.org/en/site/forusers/support.html#support. Additionally, a list of helpful websites can be found on the [wiki here](content/Wiki/en_qgis_common_errors_and_Issues).
+forums, blogs, or sub-reddits. The official QGIS community can be found here https://qgis.org/en/site/forusers/support.html#support. Additionally, a list of helpful websites can be found on the [wiki here](content/Wiki/en_qgis_common_errors_and_Issues.md).
 
 
 <!--FIXME: More practical example to follow along (add a basemap from xyz tiles or something, see issue) -->
@@ -54,7 +54,7 @@ In addition to the algorithms included in the standard installation, QGIS offers
 functionality to the QGIS application. These plugins are developed by independent organizations or the QGIS-community. 
 For example, plugins let you connect to online services such as OpenStreetMap, or add more algorithms to process your 
 data. These can be very useful for certain use cases. There are also plugins specifically designed for humanitarian 
-work. You will learn more about plugins and how to install them in [module 2] and in the [wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html)
+work. You will learn more about plugins and how to install them in [module 2] and in the [wiki](/content/Wiki/en_qgis_plugins_wiki.md)
 
 <!--ADD: Examples of plugins-->
 <!--ADD: insert link to module 2-->
@@ -64,8 +64,7 @@ work. You will learn more about plugins and how to install them in [module 2] an
 QGIS let's you visualise geodata and create maps to communicate information. It does so by assigning symbols and colours 
 to different elements in your geodata. Assigning a symbology to the geodata is one of the main skills you will develop 
 as a GIS-user and a good visualisation of data is immensely useful when communicating insights. You will learn how to 
-assign symbols in [Module 3: Visualisation of Geodata and Map Making](https://giscience.github.io/
-gis-training-resource-center/content/Modul_4/en_qgis_map_design_I.html)
+assign symbols in [Module 3: Visualisation of Geodata and Map Making](/content/Modul_4/en_qgis_map_design_I.md)
 
 <!--ADD: Insert example for visualisation-->
 <!--FIXME: Insert link to overview page on module 3-->
@@ -286,7 +285,7 @@ In QGIS, the geodata you work with is __not__ saved in your QGIS projectfile. In
 Good data organisation with a fixed and well-thought-out folder structure prevents such problems.
 
 ```{Warning} 
-Always organize your data needly. Check out the Wiki article on [Standard Folder Structure](https://github.com/GIScience/gis-training-resource-center/raw/main//Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure) for more info. 
+Always organize your data! Check out the Wiki article on [Standard Folder Structure](/content/Wiki/en_qgis_projects_folder_structure_wiki.md) for more info. 
 ```
 
 

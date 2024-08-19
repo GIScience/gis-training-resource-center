@@ -16,7 +16,7 @@ height: 500px
 name: GIS_Core_functunality
 align: center
 ---
-GIS core functunality
+GIS core functionality
 ```
 
 In humanitarian work, Geographic Information Systems (GIS) serve as powerful tools. They utilize maps to present complex information clearly and efficiently. For instance, during emergencies, GIS can visualize events on a map, depicting where they occur, the extent of impact, and identifying primary needs. It aids in consolidating data from various sources, enabling quick comprehension of situations and facilitating better decision-making.
@@ -164,7 +164,7 @@ Example Map: Philippines - TS Washi (Sendong) - Evacuation centre amd transitory
 
 ::::
 
- ## GIS vs cartography
+## GIS vs cartography
 
 __Cartography__ is the art and science of creating maps, encompassing the study and practice of mapmaking techniques. A Geographic Information System (GIS) represents a __modern evolution__ of traditional cartography, integrating advanced technologies and methods for spatial data analysis and visualization.
 
@@ -334,9 +334,6 @@ align: center
 ---
 Example Map: UNHCR Iraq Population Profile - Breakdown Overview - Syrian Refugees Registration December 2023. Source: [UNHCR](https://reliefweb.int/report/iraq/unhcr-iraq-population-profile-breakdown-overview-syrian-refugees-registration-december-2023)
 ```
-
-<!--FIXME: MOVE the entire section below to somewhere more useful-->
-
 
 
 
