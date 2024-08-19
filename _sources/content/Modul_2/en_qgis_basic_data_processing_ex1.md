@@ -2,9 +2,6 @@
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-### Aim of the exercise
-
-
 ## Characteristics of the exercise
 
 ::::{grid} 2

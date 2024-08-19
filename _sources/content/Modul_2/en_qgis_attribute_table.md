@@ -61,7 +61,7 @@ Screenshot of Opening the Attribute Table
 | ![](/fig/mActionMultiEdit.png)| Toggle multi-edit mode| Update multiple fields of many features          |  |
 |![](/fig/mActionSaveEdits.png)| __Save edits__| Save current modifications                        | |
 |![](/fig/mActionRefresh.png)| Reload the table  | | |
-|![](/fig/mActionNewTableRow.png)| Add feature | Add new geometryless feature |  |
+|![](/fig/mActionNewTableRow.png)| Add feature | Add new geometry-less feature |  |
 |![](/fig/mActionDeleteSelectedFeatures.png)| Delete selected features| Remove selected features from the layer|  |
 |![](/fig/mActionEditCut.png)| Cut selected features to clipboard    |  | `Ctrl+X` |
 |![](/fig/mActionCopySelected.png)| Copy selected features to clipboard   |   | `Ctrl+C`      |
@@ -79,7 +79,7 @@ Screenshot of Opening the Attribute Table
 |![](/fig/mActionEditTable.png)| Organize columns | Show/hide fields from the attribute table||
 |![](/fig/mActionCalculateField.png)| __Open field calculator__| Update field for many features in a row |`Ctrl+I`      |
 |![](/fig/mActionConditionalFormatting.png)| Conditional formatting | Enable table formatting| |
-|![](/fig/dock.png)| Dock attribute table | Allows to dock/undock the attribute table||
+|![](/fig/dock.png)| Dock attribute table | Allows to dock or undock the attribute table||
 |![](/fig/mAction.png)| Actions | Lists the actions related to the layer           | |
 :::
 
@@ -177,7 +177,7 @@ You can then choose the format, layer name and CRS.
 
 ```{tip}
 We recommend use GeoPackage (.gpkg) instead of shapefile (.shp) in most cases. 
-If you are unsure which format is most appropriate, check out the [geodata types](../Wiki/en_qgis_geodata_types_wiki.md)
+If you are unsure which format is most appropriate, check out the [geodata types](/content/Wiki/en_qgis_geodata_types_wiki.md)
 page on the wiki.
 ```
 

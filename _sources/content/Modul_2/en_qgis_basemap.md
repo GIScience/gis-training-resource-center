@@ -27,7 +27,7 @@ The following section will provide an overview on how to access and add basemaps
 You can always add the standard OpenStreetMap as a basemap to your map canvas. 
 
 ```{tip}
-The [wiki article on basemaps](../Wiki/en_qgis_basemaps_wiki.md), has a tutorial 
+The [wiki article on basemaps](content/wiki/en_qgis_basemaps_wiki.md), has a tutorial 
 on adding more types of basemaps (e.g. from Google Maps) to the standard basemap 
 options in QGIS.
 ```
@@ -45,7 +45,7 @@ There are two ways to add OpenStreetMap as a basemap.
 ## QuickMapServices
 
 There are lots of plugins available for QGIS that provide additional tools not 
-available in a standard installation. The [plugins page](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html) on the wiki provides a more detailed example
+available in a standard installation. The [plugins page](/content/Wiki/en_qgis_plugins_wiki.md) on the wiki provides a more detailed example
 information.
 One useful plugin is [QuickMapServices](https://nextgis.com/blog/quickmapservices/). 
 This plugin lets you access a wide range of basemaps that are not available in 

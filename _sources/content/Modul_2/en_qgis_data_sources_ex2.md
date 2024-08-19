@@ -1,12 +1,7 @@
 # Exercise: OpenStreetMap data export
 __🔙[Back to Homepage](/content/intro.md)__
 
-:::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_modul_2_exercises.html
-
-__Click here to return to the exercise overview page for module 2__ 
-
-:::
+__🔙[Back to Exercise overview](/content/Modul_2/en_qgis_modul_2_exercises.md)__
 
 
 ::::{grid} 2
@@ -26,7 +21,7 @@ file into QGIS.
 
 :::{grid-item-card}
 
-#### Focus group (GIS-Knowlege Level)
+#### Focus group (GIS-Knowledge Level)
 
 - QGIS Beginners
 - The skills tested in this exercise are necessary for all GIS-users.
@@ -34,7 +29,7 @@ file into QGIS.
 #### These skills are relevant for 
 
 - Finding and downloading relevant datasets and preparing them for further analysis
-- 
+
 :::
 ::::
 
@@ -50,11 +45,11 @@ file into QGIS.
 :::{grid-item-card}
 ### Relevant wiki articles
 
-* [QGIS Interface](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
-* [Types of Geodata](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_types_wiki.html)
-* [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)
-* [Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html)
-* [Geodata Classification - Graduated](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html)
+* [QGIS Interface](/content/Wiki/en_qgis_interface_wiki.md)
+* [Types of Geodata](/content/Wiki/en_qgis_geodata_types_wiki.md)
+* [Geodata Import in QGIS](/content/Wiki/en_qgis_import_geodata_wiki.md)
+* [Layer Concept](/content/Wiki/en_qgis_layer_concept_wiki.md)
+* [Geodata Classification - Graduated](/content/Wiki/en_qgis_graduated_wiki.md)
 
 
 :::
@@ -70,7 +65,7 @@ file into QGIS.
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
+- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction
 
 ### Conduct the training
 
@@ -170,12 +165,12 @@ region, time, feature type and data format.
    in Mauritius. 
     1. Select area or location: Zoom to Mauritius on the map or use the search 
        bar. To mark the main island there are three options. You can draw a box, 
-       draw a polygon or upload a GeoJOSN file with your boundaries. In this case, 
+       draw a polygon or upload a GeoJSON file with your boundaries. In this case, 
        use one of the first two options to mark Mauritius.
     2. Name and description: give your export the name “Mauritius financial 
        institutions” and add a short description of your export.
     3. Format tab: The HOT Export tool offers many data formats in which you can 
-       export data. Select GeoPackage (`.pgkg`) and leave the other 
+       export data. Select GeoPackage (`.gpkg`) and leave the other 
        options unchecked.
     4. Data tab: The easiest way to select the data you want to download is the Tag 
        Tree. Since we want to download financial institutions, find the “Financial” 

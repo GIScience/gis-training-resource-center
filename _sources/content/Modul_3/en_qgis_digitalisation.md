@@ -129,7 +129,7 @@ After you are done manipulating the layer click on ![](/fig/mActionSaveEdits.png
 
 ### Creating point data
 
-To digitise points, you either need to have an existing point layer or you need to create a new point layer (see [Digital Data Creation]( https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation.html#digital-data-creation) above).
+To digitise points, you either need to have an existing point layer or you need to create a new point layer (see [Digital Data Creation](/content/Modul_3/en_qgis_digitalisation.md#digital-data-creation) above).
 
 1.	Select the point layer you want to add data to in the Layer panel.
 2.	Go to the digitisation toolbar and click on![](/fig/mActionToggleEditing.png) `Toggle Editing`. No the layer is in the editing mode.
