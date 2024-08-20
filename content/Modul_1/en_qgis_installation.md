@@ -65,9 +65,6 @@ From version 3.30 SAGA must be integrated via plugin.
 
 ## Considerations for the Linux installation
 
-```{Note} 
-From version 3.30 SAGA must be integrated via plugin.
-```
 
 For installation on Linux systems with `apt` you can install QGIS:
 
