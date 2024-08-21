@@ -69,10 +69,8 @@ A common datasource for public infrastructure could be [OpenStreetMap]. However,
 ##### Reliefweb
 
 
-----
-
 The section on [datasources](/content/Modul_2/en_data_sources.md) has a list with many more useful data repositories.
-:::
+
 
 #### Workflow
 

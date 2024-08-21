@@ -25,13 +25,9 @@ understanding of where and how to access relevant data, and identify potential p
 
 :::{grid-item-card}
 
-#### Focus group (GIS-Knowledge Level)
-
-- QGIS Beginners
-- The skills tested in this exercise are necessary for all GIS-users.
-
 #### These skills are relevant for 
 
+- QGIS Essentials
 - Finding and downloading relevant datasets and preparing them for further analysis
 
 :::

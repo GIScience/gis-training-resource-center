@@ -45,6 +45,7 @@ licensing and to follow the respective regulations to avoid difficulties.
 | DivaGIS | Different data, e.g. administrative, roads, population, elevation, climate | http://www.diva-gis.org/gdata |
 | Open Topography | Data on topography | https://opentopography.org/ |
 | OSM Boundaries | Administrative boundaries (need to authenticate via your osm account) | https://osm-boundaries.com |
+| GDAM | Administrative boundaries | gadm.org |
 
 ### Humanitarian data
 

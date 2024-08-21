@@ -13,13 +13,13 @@ Participants will work with multiple layers and conduct spatial queries. Additio
 - This exercise can be used in online and presence training. 
 :::
 :::{grid-item-card}
-#### Focus group (GIS-Knowlege Level)
-- QGIS Beginners
-- The skills tested in this exercise are necessary for all GIS-users.
 #### These skills are relevant for 
+
+- QGIS Essentials
 - Working with multiple layers
 - Conduct spatial queries
 - Creation of geodata
+
 :::
 ::::
 
