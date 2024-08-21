@@ -2,9 +2,54 @@
 
 __🔙[Back to Homepage](/content/intro.md)__
 
+## Characteristics of the exercise
+
+::::{grid} 2
+:::{grid-item-card}
+
 ## Aim of the exercise:
 
 In this exercise, you will go through the different steps requiring QGIS in order to conduct a spatial risk assessment.
+
+#### Type of trainings exercise:
+
+- This exercise can be used in online and presence training. 
+- It can be done as a follow-along exercise or individually as a self-study.
+
+:::
+
+:::{grid-item-card}
+
+#### These skills are relevant for 
+
+
+:::
+::::
+
+::::{grid} 2
+:::{grid-item-card}
+
+#### Estimated time demand for the exercise.
+
+ 
+
+:::
+
+:::{grid-item-card}
+
+## Relevant Wiki Articles
+
+* [Geodata Import in QGIS](/content/Wiki/en_qgis_import_geodata_wiki.md)
+* [Intersection](/content/Wiki/en_qgis_geoprocessing_wiki.md#intersection)
+* [Zonal Statistics](/content/Wiki/en_qgis_raster_basic_wiki.md#zonal-statistics)
+* [Join Attributes by location (summary](/content/Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
+* [Table functions](/content/Wiki/en_qgis_raster_basic_wiki.md#zonal-statistics)
+
+<!--FIME: Check if these wiki articles are relevant-->
+
+:::
+
+::::
 
 ## Background 
 

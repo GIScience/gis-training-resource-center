@@ -24,9 +24,6 @@ Within this exercise, you will build a simplified version of the monitoring and 
 
 :::{grid-item-card}
 
-#### Focus group (GIS-Knowledge Level)
-
-
 #### These skills are relevant for 
 
 
