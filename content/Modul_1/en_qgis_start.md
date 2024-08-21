@@ -76,6 +76,7 @@ assign symbols in [Module 3: Visualisation of Geodata and Map Making](/content/M
 
 
 :::
+::::
 
 <!--ADD: insert link to layer concept in What is GIS (which is also missing)-->
 
