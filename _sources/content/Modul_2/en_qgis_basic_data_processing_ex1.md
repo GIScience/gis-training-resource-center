@@ -21,18 +21,13 @@ selection, as well as load a basemap
 
 :::{grid-item-card}
 
-#### Focus group (GIS-Knowlege Level)
-
-- QGIS Beginners
-- The skills tested in this exercise are necessary for all GIS-users.
-
 #### These skills are relevant for 
 
+- QGIS Essentials
 - Navigating the QGIS-interface 
 - Sorting and manipulating datasets through the attribute table
 - selecting the correct projections
 - performing basic and advanced spatial analyses
-
 
 :::
 ::::

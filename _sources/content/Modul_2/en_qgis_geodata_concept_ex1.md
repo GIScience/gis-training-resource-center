@@ -20,13 +20,9 @@ The objective of this exercise is to make your first steps in QGIS. Understand t
 
 :::{grid-item-card}
 
-#### Focus group (GIS-Knowledge Level)
-
-- QGIS Beginners
-- The skills tested in this exercise are necessary for all GIS-users.
-
 #### These skills are relevant for 
 
+- QGIS-Essentials
 - Understanding spatial components of datasets
 - Navigating the QGIS-interface
 - Managing and manipulating geodata

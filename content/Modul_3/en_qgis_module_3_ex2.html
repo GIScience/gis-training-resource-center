@@ -171,7 +171,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Modul_1/en_module_1_overview.html">Introduction to GIS</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Modul_1/en_qgis_theorie.html">What is GIS?</a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="../Modul_1/en_qgis_installation.html">Installing QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_1/en_qgis_installation.html">Setting up</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Modul_1/en_qgis_start.html">Getting started with QGIS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Modul_1/en_qgis_modul_1_exercises.html">Exercises Module 1 - Introduction to GIS</a></li>
 </ul>
@@ -580,13 +580,9 @@ document.write(`
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
-<p class="rubric">Focus group (GIS-Knowlege Level)</p>
-<ul class="simple">
-<li><p class="sd-card-text">QGIS Beginners</p></li>
-<li><p class="sd-card-text">The skills tested in this exercise are necessary for all GIS-users.</p></li>
-</ul>
 <p class="rubric">These skills are relevant for</p>
 <ul class="simple">
+<li><p class="sd-card-text">QGIS Essentials</p></li>
 <li><p class="sd-card-text">Working with multiple layers</p></li>
 <li><p class="sd-card-text">Conduct spatial queries</p></li>
 <li><p class="sd-card-text">Creation of geodata</p></li>
@@ -726,13 +722,22 @@ The exercise data should be saved in a location where you can easily find them a
 <p>You cannot interact with a base map!</p>
 </div>
 <ol class="arabic simple" start="4">
-<li><p>Next, load the GeoPackage “PAK_adm2_Sindh.gpkg” in your project by drag and drop (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop">Wiki Video</a>). Or click on <code class="docutils literal notranslate"><span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code>. Click on the three points <img alt="" src="../../_images/Three_points.png" /> and navigate to “PAK_adm2_Sindh.gpkg”. Select the file and click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Back in QGIS click <code class="docutils literal notranslate"><span class="pre">Add</span></code> (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab">Wiki Video</a>).
-This dataset contains all administrative division areas (admin 0 to 5) with the respective population of the areas.</p></li>
+<li><p>Next, load the GeoPackage “PAK_adm2_Sindh.gpkg”in your project by drag and drop (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop">Wiki Video</a>). Or click on <code class="docutils literal notranslate"><span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code>. Click on the three points <img alt="" src="../../_images/Three_points.png" /> and navigate to “PAK_adm2_Sindh.gpkg”. Select the file and click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Back in QGIS click <code class="docutils literal notranslate"><span class="pre">Add</span></code> (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab">Wiki Video</a>).</p></li>
 </ol>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>GeoPackage files can contain multiple files and even entire QGIS projects. When you load such a file in QGIS a window will appear in which you have to select the files you want to load in your QGIS project.</p>
 </div>
+<ol class="arabic simple" start="5">
+<li><p>First, we want to export <strong>Larkana District</strong> from <strong>PAK_adm2_Sindh</strong> to have it as a stand-alone vector layer. To do that,</p>
+<ul class="simple">
+<li><p>Open the attribute table of <strong>PAK_adm2_Sindh</strong> by right click on the layer  -&gt; <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Attribute</span> <span class="pre">Table</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html">Wiki Video</a>).</p></li>
+<li><p>Find the row of Larkana and mark it by clicking on the number on the very left-hand side of the attribute table. The row will appear blue and the area of Larkana will turn yellow on the map canvas. You can right-click on the row and click <code class="docutils literal notranslate"><span class="pre">Zoom</span> <span class="pre">to</span> <span class="pre">Feature</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature">Wiki Video</a>).</p></li>
+<li><p>Now right-click on the layer in the Layer Panel and click on <code class="docutils literal notranslate"><span class="pre">Export</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Selected</span> <span class="pre">Features</span> <span class="pre">as</span></code>. We want to save Larkana as a GeoPackage, so adjust <code class="docutils literal notranslate"><span class="pre">Format</span></code> accordingly. Click on the three points and navigate to your <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder. Here you can give it the layer the name “AOI_Larkana_adm3” and click <code class="docutils literal notranslate"><span class="pre">Save</span></code>. Now you should see the same name in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">name</span></code> field. Click <code class="docutils literal notranslate"><span class="pre">ok</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_queries_wiki.html#save-selected-features-as-a-new-file">Wiki Video</a>)
+Now you have an overview of where the district of Larkana is located in Sindh. The operations team can use this information.</p></li>
+</ul>
+</li>
+</ol>
 </section>
 <section id="task-2">
 <h2>Task 2:<a class="headerlink" href="#task-2" title="Permalink to this heading">#</a></h2>

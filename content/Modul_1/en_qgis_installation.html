@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Installing QGIS &#8212; GIS Resource Training Center</title>
+    <title>Setting up &#8212; GIS Resource Training Center</title>
   
   
   
@@ -173,7 +173,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="en_module_1_overview.html">Introduction to GIS</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_theorie.html">What is GIS?</a></li>
 
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Installing QGIS</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Setting up</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_start.html">Getting started with QGIS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_modul_1_exercises.html">Exercises Module 1 - Introduction to GIS</a></li>
 </ul>
@@ -530,7 +530,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Installing QGIS</h1>
+    <h1>Setting up</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -540,17 +540,13 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-guide-qgis-3-28-installation-and-basic-setup">🚀Quick guide QGIS 3.28 - installation and basic setup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-guide-qgis-3-28-installation-and-basic-setup">Quick guide QGIS 3.28 - installation and basic setup</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qgis-download-and-installation">QGIS Download and Installation</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qgis-download">QGIS Download</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#considerations-for-the-windows-installation">Considerations for the windows installation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bit-or-64-bit">32 Bit or 64 Bit?</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#considerations-for-the-macos-installation">Considerations for the MacOS installation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#considerations-for-the-linux-installation">Considerations for the Linux installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operating-system-specific-considerations">Operating System specific considerations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-a-folder-structure-for-the-training">Setting up a folder structure for the training</a></li>
 </ul>
             </nav>
         </div>
@@ -562,11 +558,12 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="installing-qgis">
-<h1>Installing QGIS<a class="headerlink" href="#installing-qgis" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="setting-up">
+<h1>Setting up<a class="headerlink" href="#setting-up" title="Permalink to this heading">#</a></h1>
 <p><strong>🔙<a class="reference internal" href="../intro.html"><span class="doc std std-doc">Back to Homepage</span></a></strong></p>
+<p>In this chapter, we will prepare the setup for the training. This includes installing QGIS, setting up a folder structure for all the data in the training, and how to manage the downloaded material. The first step will be to install QGIS. After that, we will set up a folder structure for the training, as well as go over a few steps to keep your data management clean.</p>
 <section id="quick-guide-qgis-3-28-installation-and-basic-setup">
-<h2>🚀Quick guide QGIS 3.28 - installation and basic setup<a class="headerlink" href="#quick-guide-qgis-3-28-installation-and-basic-setup" title="Permalink to this heading">#</a></h2>
+<h2>Quick guide QGIS 3.28 - installation and basic setup<a class="headerlink" href="#quick-guide-qgis-3-28-installation-and-basic-setup" title="Permalink to this heading">#</a></h2>
 <p><a class="reference external" href="https://www.youtube.com/watch?v=tSJMT96HsAo"><img alt="QGIS 3.28 - installation and basic setup" src="../../_images/image_QGIS_3.28_download.png" /></a></p>
 </section>
 <section id="qgis-download-and-installation">
@@ -601,11 +598,14 @@ start the installer</p></li>
 </ol>
 </section>
 </section>
-<section id="considerations-for-the-windows-installation">
-<h2>Considerations for the windows installation<a class="headerlink" href="#considerations-for-the-windows-installation" title="Permalink to this heading">#</a></h2>
-<section id="bit-or-64-bit">
-<h3>32 Bit or 64 Bit?<a class="headerlink" href="#bit-or-64-bit" title="Permalink to this heading">#</a></h3>
-<p>For <strong>Windows operating systems</strong>, there is always a 32-bit version and a 64-bit
+<section id="operating-system-specific-considerations">
+<h2>Operating System specific considerations<a class="headerlink" href="#operating-system-specific-considerations" title="Permalink to this heading">#</a></h2>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-0">
+Windows installation</label><div class="sd-tab-content docutils">
+<p><strong>32 Bit or 64 Bit?</strong>
+For <strong>Windows operating systems</strong>, there is always a 32-bit version and a 64-bit
 version of each QGIS version available for download. Which version to install
 depends on your computer and operating system. If it is not clear how many bits
 your operating system has, you can easily find out: Left-click on the <strong>Windows
@@ -616,21 +616,15 @@ the search results. Under the item <strong>“System type”</strong> you can re
 <p class="admonition-title">Note</p>
 <p>Since QGIS 3.20 there are only 64-bit Windows executables.</p>
 </div>
-</section>
-</section>
-<section id="considerations-for-the-macos-installation">
-<h2>Considerations for the MacOS installation<a class="headerlink" href="#considerations-for-the-macos-installation" title="Permalink to this heading">#</a></h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>From version 3.30 SAGA must be integrated via plugin.</p>
+<div class="sd-tab-item docutils">
+<p class="sd-tab-label rubric">MacOS installation</p>
+<div class="sd-tab-content docutils">
 </div>
-</section>
-<section id="considerations-for-the-linux-installation">
-<h2>Considerations for the Linux installation<a class="headerlink" href="#considerations-for-the-linux-installation" title="Permalink to this heading">#</a></h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>From version 3.30 SAGA must be integrated via plugin.</p>
 </div>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-1">
+Linux installation</label><div class="sd-tab-content docutils">
 <p>For installation on Linux systems with <code class="docutils literal notranslate"><span class="pre">apt</span></code> you can install QGIS:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">qgis</span> <span class="n">qgis</span><span class="o">-</span><span class="n">plugin</span><span class="o">-</span><span class="n">grass</span>
 </pre></div>
@@ -640,6 +634,22 @@ be installed. If you are using the package source <a class="reference external" 
 observe the following installation <a class="reference external" href="https://qgis.org/en/site/forusers/alldownloads.html#repositories">notes</a></p>
 <p>If you install a QGIS version 3.30 or higher you have to install the plugin
 <em>Processing Saga NextGen Provider</em> .</p>
+</div>
+</div>
+</section>
+<section id="setting-up-a-folder-structure-for-the-training">
+<h2>Setting up a folder structure for the training<a class="headerlink" href="#setting-up-a-folder-structure-for-the-training" title="Permalink to this heading">#</a></h2>
+<p>Keeping your data and project-files organised is the key to successfully working with GIS-software. This exercises on this platform require you to download geodata and process them on your own. In order to keep everything organised, we advise you to create a folder structure for all the data and material downloaded in the course of this training.</p>
+<ul class="simple">
+<li><p>Create a folder in the location of your choosing with the name <code class="docutils literal notranslate"><span class="pre">GIS_Training</span></code></p></li>
+<li><p>When downloading data for the exercises, create subfolders for each module and training exercise (e.g. `/GIS_Training/Module_1/Exercise_1)</p></li>
+<li><p>Save all of the QGIS-projects as well as the downloaded material for the exercises in these folders.</p></li>
+</ul>
+<p><a class="reference internal" href="../Modul_2/en_qgis_geodata_concept.html"><span class="doc std std-doc">Module 2</span></a> will go into more into depth about geodata management and introduce a standard folder structure for QGIS-projects.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Make sure to unzip the exercise files before starting the exercises.</p>
+</div>
 </section>
 </section>
 
@@ -706,17 +716,13 @@ observe the following installation <a class="reference external" href="https://q
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-guide-qgis-3-28-installation-and-basic-setup">🚀Quick guide QGIS 3.28 - installation and basic setup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-guide-qgis-3-28-installation-and-basic-setup">Quick guide QGIS 3.28 - installation and basic setup</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qgis-download-and-installation">QGIS Download and Installation</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qgis-download">QGIS Download</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#considerations-for-the-windows-installation">Considerations for the windows installation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bit-or-64-bit">32 Bit or 64 Bit?</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#considerations-for-the-macos-installation">Considerations for the MacOS installation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#considerations-for-the-linux-installation">Considerations for the Linux installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operating-system-specific-considerations">Operating System specific considerations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-a-folder-structure-for-the-training">Setting up a folder structure for the training</a></li>
 </ul>
   </nav></div>
 

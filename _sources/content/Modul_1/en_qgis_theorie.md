@@ -285,16 +285,15 @@ Thematic maps display specific themes or topics such as population density, dise
 - Use __colours and shapes__ to display quantitative and qualitative data
 - Rise __awareness__ about a specific subject
 
-```{figure} /fig/en_Thematic_Map_Africa.png
+```{figure} /fig/en_thematic_map_example_IFRC.png
 ---
 height: 600px
-name: Thematic map of Africa
+name: Thematic map IFRC
 align: center
 ---
-Example Map:  
+Example Map: Shelter Sector Turkiye: Rental prices changes, February - April 2023 (Source: [IFRC](https://reliefweb.int/map/turkiye/shelter-sector-turkiye-rental-prices-changes-february-april-2023))
 ```
 
-<!-- FIXME: explain the map and add source -->
 
 ### Analysis maps
 

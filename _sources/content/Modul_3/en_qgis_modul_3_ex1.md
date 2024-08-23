@@ -19,9 +19,7 @@ In this exercise, you will learn how to digitise the positions of settlements by
 
 :::{grid-item-card}
 
-#### Focus group (GIS-Knowledge Level)
 
-- QGIS Beginners
 
 
 #### These skills are relevant for 

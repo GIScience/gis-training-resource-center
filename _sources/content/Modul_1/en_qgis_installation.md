@@ -1,8 +1,10 @@
-# Installing QGIS
+# Setting up
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-## 🚀Quick guide QGIS 3.28 - installation and basic setup
+In this chapter, we will prepare the setup for the training. This includes installing QGIS, setting up a folder structure for all the data in the training, and how to manage the downloaded material. The first step will be to install QGIS. After that, we will set up a folder structure for the training, as well as go over a few steps to keep your data management clean.
+
+## Quick guide QGIS 3.28 - installation and basic setup
 
 [![QGIS 3.28 - installation and basic setup](/fig/image_QGIS_3.28_download.png)](https://www.youtube.com/watch?v=tSJMT96HsAo)
 
@@ -40,9 +42,12 @@ align: center
 start the installer
 6. Follow the installer instructions to install QGIS!
 
-## Considerations for the windows installation
+## Operating System specific considerations
 
-### 32 Bit or 64 Bit?
+::::{tab-set}
+
+:::{tab-item} Windows installation
+__32 Bit or 64 Bit?__
 For __Windows operating systems__, there is always a 32-bit version and a 64-bit 
 version of each QGIS version available for download. Which version to install 
 depends on your computer and operating system. If it is not clear how many bits 
@@ -55,19 +60,13 @@ the search results. Under the item __"System type"__ you can read the bit number
 Since QGIS 3.20 there are only 64-bit Windows executables.
 ```
 
+:::{tab-item} MacOS installation
 
-## Considerations for the MacOS installation
 
 
-```{Note} 
-From version 3.30 SAGA must be integrated via plugin.
-```
+:::
 
-## Considerations for the Linux installation
-
-```{Note} 
-From version 3.30 SAGA must be integrated via plugin.
-```
+:::{tab-item} Linux installation
 
 For installation on Linux systems with `apt` you can install QGIS:
 
@@ -81,5 +80,24 @@ observe the following installation [notes](https://qgis.org/en/site/forusers/all
 
 If you install a QGIS version 3.30 or higher you have to install the plugin 
 _Processing Saga NextGen Provider_ . 
+:::
+
+::::
+
+## Setting up a folder structure for the training
+
+Keeping your data and project-files organised is the key to successfully working with GIS-software. This exercises on this platform require you to download geodata and process them on your own. In order to keep everything organised, we advise you to create a folder structure for all the data and material downloaded in the course of this training.
+
+- Create a folder in the location of your choosing with the name `GIS_Training` 
+- When downloading data for the exercises, create subfolders for each module and training exercise (e.g. `/GIS_Training/Module_1/Exercise_1)
+- Save all of the QGIS-projects as well as the downloaded material for the exercises in these folders. 
+
+[Module 2](/content/Modul_2/en_qgis_geodata_concept.md) will go into more into depth about geodata management and introduce a standard folder structure for QGIS-projects. 
+
+```{note}
+Make sure to unzip the exercise files before starting the exercises. 
+
+```
+
 
 

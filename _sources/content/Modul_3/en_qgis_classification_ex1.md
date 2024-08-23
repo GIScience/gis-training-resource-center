@@ -18,14 +18,13 @@ This exercise aims to create an overview map of the distribution of food insecur
 
 :::{grid-item-card}
 
-#### Focus group (GIS-Knowlege Level)
-
-- QGIS Beginners
 
 
 #### These skills are relevant for 
 
+- QGIS Essentials
 - The skills tested in this exercise are necessary for all GIS-users.
+- Classifying geographic data
 
 :::
 ::::
@@ -48,10 +47,10 @@ This exercise aims to create an overview map of the distribution of food insecur
 * [Geodata Import in QGIS](/content/Wiki/en_qgis_import_geodata_wiki.md)
 * [Layer Concept](/content/Wiki/en_qgis_layer_concept_wiki.md)
 * [Attribute table](/content/Wiki/en_qgis_attribute_table_wiki.md)
-* [Table function - Add field](/content/Wiki/en_qgis_table_functions_wiki.md#add-field)
+* [Table function - Add field](/content/Wiki/en_qgis_table_functions_wiki.md)
 * [Geodata Classification- Categorized](/content/Wiki/en_qgis_categorized_wiki.md)
 * [Geodata Classification- Graduated](/content/Wiki/en_qgis_graduated_wiki.md)
-* [Digitization- Point data](/content/Wiki/en_qgis_digitalization_wiki.md#add-geometries-to-a-layer)
+* [Digitization- Point data](/content/Wiki/en_qgis_digitalization_wiki.md)
 
 :::
 

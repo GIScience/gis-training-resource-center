@@ -1,4 +1,4 @@
-# Digitisation Exercise 1: Access to financial institutions 
+# Digitisation Exercise 2: Access to financial institutions 
 
 
 ## Characteristics of the exercise
@@ -17,10 +17,6 @@ In this exercise, you will learn how to digitise points, lines, and polygons of 
 :::
 
 :::{grid-item-card}
-
-#### Focus group (GIS-Knowledge Level)
-
-Data collection
 
 #### These skills are relevant for 
 
@@ -105,7 +101,7 @@ Arrange your layer in the `Layer Panel` so the OSM is at the bottom ([Wiki Video
 You cannot interact with a base map!
 ```
 2. To add the plugin `OSM Place Search`, click on `Plugins` -> `Manage and Install Plugins…` -> `All` and search for `OSM Place Search`. Once you have found it, click on it and click `Install Plugin`. You can open the `OSM Place Search Panel` like every other panel by clicking on `View` -> `Panels` and checking `OSM Place Search Panel`([Wiki Video](/content/Wiki/en_qgis_plugins_wiki.md#installation-of-plugins)).
-3. In the panel, search "Abuja Central Business Distric" via the OSM Place Search in QGIS and choose Abuja Municipality Area Council, City. Zoom to the Central Business District. Here we want to digitise the location of banks. But first we need to create a new point layer.  
+3. In the panel, search "Abuja Central Business District" via the OSM Place Search in QGIS and choose Abuja Municipality Area Council, City. Zoom to the Central Business District. Here we want to digitise the location of banks. But first we need to create a new point layer.  
 To do that:
     1. Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#create-a-new-layer)) 
     - Under `Database` click on ![](/fig/Three_points.png) and navigate to `temp` folder. Give the new dataset the name “Abuja_bank_point”. Click `Save`.

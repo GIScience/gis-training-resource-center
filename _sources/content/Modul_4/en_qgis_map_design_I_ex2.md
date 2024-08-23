@@ -19,9 +19,6 @@ The aim of this exercise is to create an overview map of Ghana with its subdistr
 
 :::{grid-item-card}
 
-#### Focus group (GIS-Knowledge Level)
-
-
 #### These skills are relevant for 
 
 - visualising geographic data 

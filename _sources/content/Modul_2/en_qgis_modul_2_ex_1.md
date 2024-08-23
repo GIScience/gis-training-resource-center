@@ -19,11 +19,6 @@ This exercise will help you to get to know the interface of QGIS a bit better. F
 
 :::{grid-item-card}
 
-#### Focus group (GIS-Knowlege Level)
-
-- QGIS Beginners
-
-
 #### These skills are relevant for 
 
 - The skills tested in this exercise are necessary for all GIS-users.
