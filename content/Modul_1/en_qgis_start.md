@@ -32,8 +32,7 @@ ___
 
 In QGIS, you create projects where you visualise and manipulate geodata. There are three main workflows you will use: __Data collection and creation, data processing, and data visualisation__. Geodata is loaded into QGIS projects which will represented as layers on a map canvas.
 
-```{note} Prior skills needed for QGIS
-:class: hint
+```{hint} 
 There is a lot of complex math involved in the GIS, but QGIS takes care of it on it's own and you don't need to have a deep understanding of maths and algorithms to use QGIS. __As long as you can use Excel and Powerpoint, you shouldn't have trouble learning how to use QGIS__. 
 ```
 
@@ -76,6 +75,7 @@ assign symbols in [Module 3: Visualisation of Geodata and Map Making](/content/M
 
 
 :::
+::::
 
 <!--ADD: insert link to layer concept in What is GIS (which is also missing)-->
 
