@@ -68,10 +68,10 @@ information. Which geometry is used, depends on the type of data that is represe
 represented by a line, a building will be represented by polygon and a tree might be represented by a point.
 
 
-```{figure} /fig/en_geometry_geodata_example.png
+```{figure} /fig/en_geometry_geodata_example_2.png
 ---
-name: geometry geodata example
-width: 400
+name: geometry geodata example 2
+width: 400px
 ---
 Geographic information can be an address and/or GPS coordinates
 ```
@@ -83,7 +83,7 @@ Geographic information can be an address and/or GPS coordinates
 ```{figure} /fig/Geodata_attribute_table_example.png
 ---
 name: geodata example
-width: 450px
+width: 600px
 ---
 A data table in Microsoft Excel with geographic information
 ```
@@ -125,9 +125,9 @@ A shapefile is a collection of separate files which commonly come in a single fo
 ```{figure} /fig/en_shapefile_structure.png
 ---
 name: shapefile_folderstructure
-width: 600 px
+width: 400 px
 ---
-__SHP, SHX__ and __DBF__ are the __mandatory files that every shapefile must contain to work properly. The SHP is the main file, it contains the geometry of the file. 
+__SHP, SHX__ and __DBF__ are the __mandatory__ files that every shapefile must contain to work properly. The SHP is the main file and contains the geometry. 
 ```
 
 
@@ -311,13 +311,12 @@ the distortion and inaccuracy of projections for different regions on earth. You
 their CRS codes on [EPSG.io](http://epsg.io). 
 ```
 
-These images show how different CRS distort earth in different ways. 
+Look at the following images and pay attention how the different Coordinate Reference Systems change and distort the world map. 
 
-```{figure} /fit/world_mercator_tissots.png
+```{figure} /fig/world_mercator_tissots.png
 ---
 width: 500 px
-name: world_mercator_tissots
-align: center
+name: world_mercator_tissot
 ---
 The Mercator Projection (EPSG:54004)
 ```
@@ -351,11 +350,10 @@ characteristic:
 
 | Characteristic  | Mercator (cylindrical) | Lambert cylindrical | Albers conic |
 | :----------- |:--------------------: | :-----------------: | :----------: |
-| Shape | [x]             |  [ ]          |  [x]    |
-| Rotation | [x]           |  [x]      |  [ ]  |
-| Area | [ ]              |  [x]            |  [x]    |
+| Shape | - [x]             |  - [ ]          |  - [x]    |
+| Rotation | - [x]           |  - [x]      |  - [ ]  |
+| Area | - [ ]              |  - [x]            |  - [x]    |
 
- I don't fully understand this?
 
 #### Metric and Geographic Coordinate Reference Systems
 
@@ -373,7 +371,7 @@ There are two different types of Coordinate Reference System: __Geographic__ or 
 name: problem_distance_geographic_coords
 width: 600 px
 ---
-
+A geographic representation of the globe. The distance between the meridians converge towards the north and south pole. 
 ```
 
 #### Local and Global CRS
