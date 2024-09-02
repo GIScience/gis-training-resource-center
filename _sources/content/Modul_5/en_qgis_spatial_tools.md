@@ -28,13 +28,14 @@ Information on road infrastructure for humanitarian aid operations is of great i
 
 1. Load the OSM roads data from the [HOT Export tool](https://export.hotosm.org/v3/exports/918cf68d-dfd7-40f1-ab46-4f0426dfaf68/) (part of the Humanitarian OpenStreetMap Team) as a new layer: __Road_infrastructure_Sudan.geojson__. 
 
-<!-->```{attention}
+<!--```{attention}
 The download seems to be broken from the HOT Export Tool. Alternatively, you can download the road network for Sudan [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Spatial_geodataprocessing/hotosm_sdn_roads_lines_shp.zip)
 
 ```
 
 COMMENT: CAN BE REMOVED?
 -->
+
 
 ```{figure} /fig/en_screenshot_hot_export_tool.PNG
 ---
@@ -156,42 +157,45 @@ Buffer zones with dissolved (left) and with intact boundaries (right) showing ov
 ```
 
 ## Spatial joins
-Spatial joins in QGIS enhance the attributes of the input layer by adding additional information from the join layer, relying on their __spatial relationship__. This process enriches your data by incorporating relevant details from one layer into another based on their geographical associations.
+Spatial joins in QGIS enhance the attributes of the input layer by adding additional information from the join layer, relying on their __spatial relationship__. This process enriches your data by incorporating relevant details from one layer into another based on their geographical associations. In QGIS, a spatial join creates a new layer by comparing the features of one layer to another, depending on their spatial relationship. 
 
 Various types of spatial relations exist between the source feature and the target feature, enabling their potential linkage. The subsequent list outlines these distinct options and provides descriptions, all oriented around the lower figure for clarity.
+
 
 ::::{tab-set}
 
 :::{tab-item} Intersect
-Tests whether the geometry of the two layers intersects with one another. Returns 1 (true) if the geometries spatially intersect (share any portion of space, could be overlap or touch) and 0 if they don’t. In the picture above, this will return circles 1, 2 and 3.
+Tests whether the geometry of the two layers intersects with one another. The algorithm returns the value "True" (1), if the geometries intersect spatially. This means that they share any portion of space, overlap, or touch. If they don't overlap, the algorithms returns the value "False" (0). In the picture below, the algorithm will return the circles __1, 2, and 3__.
 :::
 
-:::{tab-item} Contain
-Returns 1 (true) if and only if no points of b lie in the exterior of a, and at least one point of the interior of b lies in the interior of a. In the picture, no circle is returned, but the rectangle would be if you would look for it the other way around, as it contains circle 1 completely. This is the opposite of "are within".
-:::
 
 :::{tab-item} Disjoint
-Returns 1 (true) if the geometries do not share any portion of space (no overlap, not touching). Only circle 4 is returned.
+Disjoint features do not share any portion of space. This means that they don't touch or overlap. 
+In the picture below, the algorithm would output a layer with only the circle 4. 
 :::
 
 :::{tab-item} Equal
-Returns 1 (true) if the geometries are exactly the same. No circles will be returned.
+The algorithms returns a layer with geometries that are exactly the same (all the points and lines are equal). In the picture below, no circles are returned (added to the output layer).  
 :::
 
 :::{tab-item} Touch
-Tests whether a geometry touches another. Returns 1 (true) if the geometries have at least one point in common, but their interiors do not intersect. Only circle 3 is returned.
+Tests whether a geometry touches another. The algorithm outputs a new layer with the geometries that have at least one point in common, but their interiors do not intersect. In the image below, only circle 3 is returned. 
 :::
 
 :::{tab-item} Overlap
-Tests whether geometries overlap. Returns 1 (true) if the geometries share space, are of the same dimension, but are not completely contained by each other. Only circle 2 is returned.
+Tests whether geometries overlap. Returns geometries if they share space, are of the same dimension, but are not completely contained by each other. In the image below, only circle 2 is returned. 
 :::
 
 :::{tab-item} Are within
-Tests whether one geometry is within another. Returns 1 (true) if geometry a is completely inside geometry b. Only circle 1 is returned.
+Tests whether one geometry is within another. Returns geometries a if they are completely inside of geometry b. Only circle 1 is returned.
+:::
+
+:::{tab-item} Contain
+Returns geometries if and only if no points of b lie in the exterior of a, and at least one point of the interior of b lies in the interior of a. In the picture, no circle is returned, but the rectangle would be if you would look for it the other way around, as it contains circle 1 completely. This is the opposite of "are within".
 :::
 
 :::{tab-item} Cross
-Returns 1 (true) if the supplied geometries have some, but not all, interior points in common and the actual crossing is of a lower dimension than the highest supplied geometry. For example, a line crossing a polygon will cross as a line (true). Two lines crossing will cross as a point (true). Two polygons cross as a polygon (false). In the picture, no circles will be returned.
+Returns geometries that have some, but not all, interior points in common and the actual crossing is of a lower dimension than the highest supplied geometry. For example, a line crossing a polygon will cross as aline (true). Two lines crossing will cross as a point (true). Two polygons cross as a polygon (false). In the picture below, no circles will be returned. 
 :::
 
 ::::
@@ -260,7 +264,7 @@ In the aftermath of flooding events, data on the affected population and the ext
 ### Exercise: Calculate sum of affected population and flooded area for the Area of interest
 
 1. Load the necessary data for this exercise into your QGIS. Both datasets were downloaded from HDX:
-    - [South Sudan - Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-ssd):<br /> __State_Unity_South_Sudan.geojson__
+    - [South Sudan - Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-ssd):<br /> __State_Unity_South_Sudan.shp__
     - [Satellite detected water extents between 11 and 15 August 2023 over South Sudan](https://data.humdata.org/dataset/satellite-detected-water-extents-between-11-and-15-august-2023-over-south-sudan): __VIIRS_20230811_20230815_MaximumFloodWaterExtent_SouthSudan.geojson__
 2. Locate the tool named __Join attribute by location (summary)__
     - Choose __state boundaries__ as the target layer for joining features

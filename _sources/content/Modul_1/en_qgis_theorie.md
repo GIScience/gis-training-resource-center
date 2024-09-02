@@ -2,6 +2,7 @@
 
 __🔙[Back to Homepage](/content/intro.md)__
 
+
 At its core, GIS is a computer-based system to organise data with a spatial 
 component (_geodata_). There are three core functions of GIS: 
 
@@ -246,13 +247,13 @@ outlined below.
 -  Can be __styled__ based on the intended audience
 
 
-```{figure} /fig/en_Reference_Map_Iraq.png
+```{figure} /fig/general_ref_map_nigeria_ogun.png
 ---
 height: 600px
-name: Iraq - Ninewa Governorate - Mosul City Reference Map as of October 2017
+name: INigeria Ogun State reference Map
 align: center
 ---
-Example Map:  Iraq - Ninewa Governorate - Mosul City Reference Map as of October 2017. Source: [REACH](https://reliefweb.int/map/iraq/iraq-ninewa-governorate-mosul-city-reference-map-october-2017)
+Example Map: Nigeria: Reference Map of Ogun state (As of 26 December 2018) Source: [OCHA](https://reliefweb.int/map/nigeria/nigeria-reference-map-ogun-state-26-december-2018?_gl=1*151t3z9*_ga*MTkxOTMyNTA1Ni4xNzE4MTAzNzMz*_ga_E60ZNX2F68*MTcyNDkzNDIyMC44LjEuMTcyNDkzNDU4Ni4zNC4wLjA.)
 ```
 
 ### Infrastructure maps

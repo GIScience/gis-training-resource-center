@@ -15,37 +15,7 @@ Geodata, geospatial data, or geographic data is data that has geographical infor
 refers to a location, that is defined by coordinates. It is similar to other forms of data that can be represented 
 in tables (such as Excel spreadsheets or CSV-files) but each item in the data set also holds coordinate information 
 (see figure below).
-GIS-software helps us visualise and manipulate geodata in a 2D (or even 3D) space. Geodata represents a real-world 
-object on a map as a feature. A feature consists of two types of information: the geospatial location - the 
-coordinates - and attributes - e. g. name, length, elevation, or any other information. 
-
-```{figure} /fig/en_geodata_example_concept.png
----
-name: geodata example
-width: 450px
----
-A data table in Microsoft Excel with geographical information (red)
-```
-
-What type of information can be stored in geodata is almost endless. It can hold information about the physical 
-world - such as elevation data, environmental data (soils, climate, temperature, rainfall, information about 
-weather events or natural phenomena), data about the infrastructure, buildings, transportation, etc. - or 
-sociocultural or economic data - such as demographic data, administrative boundaries, social events, crime, etc. 
-Geodata usually represents data entries as __geometries__ on a 2D canvas. These geometries can be points, lines, 
-rectangles, circles, or polygons and can represent various objects that exist in the physical world - such as 
-roads, lakes, trees, etc. - or represent intangible objects - such as administrative boundaries, population 
-numbers, health indicators, historical events, etc. 
-
-```{figure} /fig/en_geometry_geodata_example.png
----
-name: geometry geodata example
-width: 400
----
-The data entry for Lake Sulunga is represented by the grey polygon to the left
-```
-
-<!--ADD: Insert table with examples of geodata, and how the data is stored in different file formats. See Uni Heidelberg lecture slides for this -->
-
+GIS-software helps us visualise and manipulate geodata in a 2D (or even 3D) space. 
 There are two primary types of geographic data: **vector data and raster data**. Both types represent tangible or 
 intangible things in the real world. However, how they store this data is quite different. Because of this, the 
 manipulation and representation of these two types differs dramatically. Understanding the difference between these 
@@ -61,12 +31,22 @@ name: Raster Vector Concept
 Raster Vector Concept. Source: Adapted from [WikiMedia](https://commons.wikimedia.org/wiki/File:Raster_vector_tikz.png)
 ```
 
+What type of information can be stored in geodata is almost endless. It can hold information about the physical 
+world - such as elevation data, environmental data (soils, climate, temperature, rainfall, information about 
+weather events or natural phenomena, such as flooding extent), data about the infrastructure, buildings, transportation, etc. - or 
+sociocultural or economic data - such as demographic data, administrative boundaries, social events, crime, etc. 
+Geodata usually represents data entries as __geometries__ on a 2D canvas. These geometries can be points, lines, polygons, or even pixels and can represent various objects that exist in the physical world - such as 
+roads, lakes, trees, etc. - or represent intangible objects - such as administrative boundaries, population 
+numbers, health indicators, historical events, etc. 
+
+
+<!--ADD: Insert table with examples of geodata, and how the data is stored in different file formats? See Uni Heidelberg lecture slides for this -->
+
+
 ### Vector data
 
-Vector data represents spatial information through geometrical shapes, such as points, lines, or polygons. Each 
-object stores the location (as address or coordinates) and further attributes, e.g. name, ID, or any other sort of 
-information. Which geometry is used, depends on the type of data that is represented. For example, a road will be 
-represented by a line, a building will be represented by polygon and a tree might be represented by a point.
+
+Vector data are digital features and they can store geographic/spatial information, as well as other data attributes. As such, they are ideal to visualise information on a map. Each feature can be displayed on a maps using one out three geometries: __Points, Lines, or Polygons__. A layer can only contain features with same type of geometries. 
 
 
 ```{figure} /fig/en_vector_data_overview.drawio.png
@@ -83,7 +63,40 @@ Vector Data overview. Source: HeiGIT
 - Polygons are also constructed by connecting several points, but they form a closed geometry. Each geometry is then represented by a single data entry.
 
 
-<!-- Insert example of constructed geometries -->
+Each feature stores the location (as address or coordinates) and further attributes, e.g. name, ID, or any other sort of 
+information. Which geometry is used, depends on the type of data that is represented. For example, a road will be 
+represented by a line, a building will be represented by polygon and a tree might be represented by a point.
+
+
+```{figure} /fig/en_geometry_geodata_example.png
+---
+name: geometry geodata example
+width: 400
+---
+Geographic information can be an address and/or GPS coordinates
+```
+
+- Features are displayed on maps with a geometric representation, but they are made of information organized in tables (see figure below). 
+- Each row in the table will be one feature on the map, while each column will contain one attribute information (field). 
+- Multiple attributes can be associated to each feature. 
+
+```{figure} /fig/Geodata_attribute_table_example.png
+---
+name: geodata example
+width: 450px
+---
+A data table in Microsoft Excel with geographic information
+```
+
+The figure below shows the same dataset displayed both as its geometric representation and as an attribute table. 
+
+```{figure} /fig/example_geometric_and_attribute_view.png
+---
+name:example_geometric_vs_attribute_view
+width: 650 px
+---
+Each polygon on the left represents one row (feature) on the right. 
+```
 
 #### Vector file formats
 
@@ -91,12 +104,31 @@ There are several file formats for vector data. They each differ in how the geom
 The following table gives a short description of commonly used vector file formats.
 
 | Filename extension| Name | Description |
-| ----- | --- | --- |
-|.shp | Shapefile |Old but still widely used geodata format. Can only contain one dataset. The file has to consist of at least three different files (.shp, .shx, .dbf)|
-|.gpkg| GeoPackage  | Very versatile geodata format and the new standard for geodata. Can contain multiple datafiles (vector, raster and non-spatial data like tables)|
-|.kml |Keyhole Markup Language | Geodata format for use with [Google Earth]( https://earth.google.com/web/)|
-| .gpx| GPS Exchange Format|Geodata format for the exchange of coordinates. For example for waypoints of tracks. |
-| .geojson|GeoJSON| Open data format using Javascript Object Notation to store geographic data. Can store multiple type of geometries in one file. | 
+| ----------- | ---------------------- | --------------------------------------------------------- |
+|`.shp`       | Shapefile              | Old but still widely used geodata format. Can only contain one dataset. The file has to consist of at least three different files (.shp, .shx, .dbf)|
+|`.gpkg`      | GeoPackage             | Very versatile geodata format and the new standard for geodata. Can contain multiple datafiles (vector, raster and non-spatial data like tables)|
+|`.kml`       |Keyhole Markup Language | Geodata format for use with [Google Earth]( https://earth.google.com/web/)|
+| `.gpx`      | GPS Exchange Format    |Geodata format for the exchange of coordinates. For example for waypoints of tracks. |
+| `.geojson`  | GeoJSON                | Open data format using Javascript Object Notation to store geographic data. Can store multiple type of geometries in one file. | 
+
+
+The most common file formats used in GIS applications are:
+- __Shapefile__: A shapefile is a vector data file format commonly used for geospatial analysis. Shapefiles store the location, geometry, and attribution of point, line, and polygon features. It's a common files format used by most GIS software and online mapping platforms. 
+- __Geodatabase__: Similar to shapefile, it’s ESRI ArcGIS most used file format.
+- __GeoJSON__: Similar to shapefile, but based on JSON (JavaScript Object Notation) language. Mostly used in mobile and online applications.
+- __Kml/Kmz__: Initially developed to use in Google Earth, kml files are based on the XML standard. They are used in most mobile apps.
+
+#### Shapefile structure
+
+A shapefile is a collection of separate files which commonly come in a single folder/directory. Some files are mandatory, others are optional. In order to have a functioning shapefile, you need to have all the mandatory files in the same folder. 
+
+```{figure} /fig/en_shapefile_structure.png
+---
+name: shapefile_folderstructure
+width: 600 px
+---
+__SHP, SHX__ and __DBF__ are the __mandatory files that every shapefile must contain to work properly. The SHP is the main file, it contains the geometry of the file. 
+```
 
 
 ### Raster data
@@ -208,25 +240,23 @@ Layers in a GIS. Source: [CartONG](https://cartong.pages.gitlab.cartong.org/lear
 ## Projections 
 ### Introduction
 
+:::{dropdown} Video: Why all world maps are wrong
+:open:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kIID5FDi2JQ?si=C0tYz7nteMF_xqvr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+:::
+
+An important issue when creating a map of a region, is that it is impossible to create a representation of a sphere 
+on a 2D plane without distorting the map. The transformation of a 3D object onto a flat surface can be done with the help of a __projection__. Over the centuries, cartographers and mathematicians have developed a multitude of different methods to project the earth onto a flat surface. However, it is never possible to correctly represent the world on a flat surface (see the video above). 
+Every projection distorts either the length between two points, the angles between two lines (directions), or the size of an area. A projection can only correctly represent one of these three dimensions. This means, that depending on the projection method, your world map will not represent the size, angles, or distances correctly. 
+
 ```{figure} /fig/en_examples_projections_IBIS.png
 ---
-width: 500px
+width: 700px
 align: center
 name: Examples for Projections (azimuthal, cylindrical and conic)
 ---
 Examples for Projections. Source:(http://ibis.colostate.edu/webcontent/NR505/2012_Projects/Team6/GISConcepts.html)
 ```
-
-An important issue when creating a map of a region, is that it is impossible to create a representation of a sphere 
-on a 2D plane without distorting the map.
-The way in which the globe is represented on a flat surface is called a __projection__. There are many different 
-methods to achieve this.  These are called **coordinate reference systems (CRS)**. Every projection either distorts 
-the __length__ between two points or from a single point (equidistant map projection), the __size__ of an area 
-(equiareal map projection), or the __angles__ between two lines (conformal map projection). However, some 
-projections are able to display the angles correctly, while others display the sizes of an area or the distance 
-between two points correctly.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kIID5FDi2JQ?si=C0tYz7nteMF_xqvr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Every projection has its use case. For example, the Mercator projection displays the angles between to points 
 correctly. This was used extensively during the seafaring age without satellites, as ships could navigate to a 
@@ -234,12 +264,12 @@ destination by following a straight line on a map. For example, the Mercator pro
 correctly: a road that crosses another road at a right angle, will be displayed as such on a mercator projection. 
 This is especially useful when navigating. The shape of an area remains correct, since the angles between each line 
 stay true. However, if you increase the scale of the map, the size and distances get distorted dramatically (see 
-figure below). Furthermore, the further away from the equator you get, the more distortion you get. You can check 
-the true size in comparison to different placements on the map on [TheTrueSize.com website](https://www.thetruesize.com). A 
-popular example is Greenland in comparison with Africa, which seem on the map to be about the same size, but in 
-reality Africa is a lot bigger.
+figure below). Furthermore, the further away from the equator you get, the more distortion you get.
 
-
+:::[note] The True Size of
+The mercator projection is famous for distorting the size of different countries. You can check 
+the true size in comparison to different placements on the map on [TheTrueSize.com website](https://www.thetruesize.com).
+A popular example is Greenland in comparison with Africa, which seem on the map to be about the same size, but in reality Africa is a lot bigger.
 
 ```{figure} /fig/en_greenland_africa.png
 ---
@@ -250,13 +280,18 @@ name: Comparison Greenland - Africa
 Comparison Greenland - Africa. Source: [The True Size of](https://www.thetruesize.com/#?borders=1~!MTYwODM1MTk.MzkyNDUyNg*MjY5NjM4Mzg(MTA1MjgyOTE~!CONTIGUOUS_US*MTAwMjQwNzU.MjUwMjM1MTc(MTc1)MQ~!IN*NTI2NDA1MQ.Nzg2MzQyMQ)MA~!CN*OTkyMTY5Nw.NzMxNDcwNQ(MjI1)Mg)
 ```
 
+:::
+
 In the dropdown below, you can look at the size distortion of mercator yourself.
 
 :::{dropdown} TheTrueSize.com - compare the effects of different projections
 
 %%html
 <iframe src="https://www.thetruesize.com/#?borders=1~!MTUxNjUyNzI.MzM1OTE0MQ*MzI2NDc5MjY(NjgwODA4Mg~!GL*OTQ3NTExNQ.MjkxMDYzMzM)Mw" width="750" height="500"></iframe>
+
 :::
+
+
 
 ### How to choose an appropriate projected coordinate system
 
@@ -276,6 +311,41 @@ the distortion and inaccuracy of projections for different regions on earth. You
 their CRS codes on [EPSG.io](http://epsg.io). 
 ```
 
+These images show how different CRS distort earth in different ways. 
+
+```{figure} /fit/world_mercator_tissots.png
+---
+width: 500 px
+name: world_mercator_tissots
+align: center
+---
+The Mercator Projection (EPSG:54004)
+```
+
+Notice how the shape of the circle stays the same. Out of this, we can conclude that the angles stay the same. However, the circles get bigger the further away they are from the equator, and the distance between these circles change the further they they get from the equator. Therefore, we can conclude that the distances and sizes are being distorted with the mercator projection. The strength of the Mercator projection is that it conserves the angles between to lines. We can see this because the circles stay perfectly circular the further they are from the equator.
+
+
+```{figure} /fig/WGS_84_tissots.png
+---
+name: WGS_84_tissots
+width: 500 px
+---
+The World Geodetic System 1984 (EPSG:4326)
+```
+
+The WGS 84 is a CRS which consists of an ellipsoid, that resembles the shape of the earth closely. Instead of metrical units of measurements, it uses angular degrees (latitude and longitude). The shape of the Tissot circles is undistorted near the equator, but becomes elongated on the East-West axis the further it gets away from the equator. Unlike the Mercator projection, there is no distortion on the in the North-South direction. As the circles become distorted, we can deduce that the this CRS distorts the angles.
+
+
+```{figure} /fig/World_equidistant_cylindrical_tissots.png
+---
+name: World_equidistant_cylindrical_tissots
+width: 500 px
+---
+The World Equidistant Cylindrical Projection (EPSG:54002)
+```
+
+The World Equidistant cylindrical CRS is equidistant (not distorting the length) along any meridian (cricles of longitude; North to South), and along the two standard parallels. The shape, scale and area distort the further they are away from the standard parallels. 
+
 This table shows an overview on which projections to use for which needed 
 characteristic:
 
@@ -285,10 +355,29 @@ characteristic:
 | Rotation | [x]           |  [x]      |  [ ]  |
 | Area | [ ]              |  [x]            |  [x]    |
 
-<!-- I don't fully understand this?-->
+ I don't fully understand this?
 
-For smaller areas local projections should be used, since they give a more 
-accurate display at the expense of more distortion at the global level. 
+#### Metric and Geographic Coordinate Reference Systems
+
+There are two different types of Coordinate Reference System: __Geographic__ or __Metric__ CRS. 
+
+- A Geographic CRS is based on a three-dimensional, ellipsoidal model of the Earth. It uses angular measurements (__latitude and longitude__) to define locations on the Earth's surface. The coordinates are usually expressed in degrees (e.g., 45°N, 120°W). 
+   - __Advantages__: Since it is based on the Earth's curvature, it can be used to represent locationa anywhere on the earth. Most global datasets, GPS, and mapping systems use Geographic CRS making it highly compatible with various data sources. Locations can be specified accurately with angular measurements.
+   - __Disadvantage__: Because it uses angular measurements, distances, areas, and shapes can be highly __distorted__. Since the distance between the circles of latitute and longitude change, the conversion of angles to meters is not constant 
+- A metric CRS is a 2D representation of the earths surface. Although it is difficult to represent large areas of the globe on a 2D surface without surface, it is possible to create a 2D projection of a limited region with minimal distortion. The map units are typically metres or feet. It is created by projecting the earth onto a flat plane. 
+   - __Advantages__: Since it uses a flat plane, you can calculate distances, areas, and angles accurately.
+   - __Disadvantages__: A given projected CRS is usually optimized for a particular region. Using it outside its intended area can lead to significant distortions in distance, area, and shape.
+
+```{figure} /fig/Problem_distance_geographic_coords.png
+---
+name: problem_distance_geographic_coords
+width: 600 px
+---
+
+```
+
+#### Local and Global CRS
+
 
 ```{figure} /fig/en_local_crs.png
 ---
@@ -298,6 +387,10 @@ align: center
 ---
 Local and global coordinate reference systems (CRS). Source: British Red Cross (BRC)
 ```
+
+As you can see, smaller regions look skewed and distorted in a global CRS
+For smaller areas local projections should be used, since they give a more 
+accurate display. However, local projections heavily distort the map on a global level. 
 
 ### How to check and change the project coordinate reference system
 
@@ -335,8 +428,12 @@ consistency in your project and that the geoobjects in your layer are at the rig
 create false results.
 ```
 
+
 <!--- ADD: insert example of layers that are in a CRS with an inaccuracy of a few meters to show the importance of 
-getting the CRS right --->
+getting the CRS right
+ADD: Note that QGIS always uses the units of the layer (asks for degrees when creating a buffer with a geographic CRS) --->
+
+
 
 #### Changing the projection of a vector layer
 

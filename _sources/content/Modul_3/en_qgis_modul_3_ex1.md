@@ -19,9 +19,6 @@ In this exercise, you will learn how to digitise the positions of settlements by
 
 :::{grid-item-card}
 
-
-
-
 #### These skills are relevant for 
 
 - The skills tested in this exercise are necessary for all GIS-users.
@@ -92,7 +89,7 @@ __Wrap up:__
 
 
 ## Data sources
-Download the data folder [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_3/Modul_3_Exercise_1_Flood_Nigeria/Modul3_Exercise_1_Flood_Nigeria.zip) and save it on your PC. Unzip the .zip file.
+Download the data folder [here](hhttps://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_1/Module_3_Exercise_1_Flood_Nigeria.zip) and save it on your PC. Unzip the .zip file.
 The folder is called “Modul_3_Exercise_1_Flood_Nigeria" and contains the entire [standard folder structure](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure) with all data in the input folder and the additional documentation in the documentation folder.
 
 * [Nigeria: Administrative Division with Aggregated Population ("kontur_boundaries_NG_20230628.gpkg")](https://data.humdata.org/dataset/kontur-boundaries-nigeria)-Kontor

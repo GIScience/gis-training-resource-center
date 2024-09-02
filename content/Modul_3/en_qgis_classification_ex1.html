@@ -657,20 +657,19 @@ document.write(`
 </div>
 </details><section id="available-data">
 <h3>Available Data<a class="headerlink" href="#available-data" title="Permalink to this heading">#</a></h3>
-<p>Download all datasets <strong><a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Modul_3/Modul_3_Ex_1_Sierra_Leone/Modul_3_Ex_1_Sierra_Leone.zip">here</a></strong> and save the folder on your computer. Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects. Under “data &gt; input” you will find the following files:</p>
+<p>Download all datasets <strong><a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_1/Module_3_Exercise_1_Flood_Nigeria.zip">here</a></strong> and save the folder on your computer. Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects. Under “data &gt; input” you will find the following files:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Sierra_leone_foodinsecurity_2015.shp</span></code> (Polygon)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Sierra_leone_foodinsecurity_2015.shp</span></code> (Polygon) Shapefile</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Sierra_leone_borders.gpkg</span></code> (MultiLineString) GeoPackage</p>
 <ul>
 <li><p>Sierra_Leone_national_borders (Lines)</p></li>
 <li><p>Sierra_Leone_provinces (Lines)</p></li>
 </ul>
 </li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Sierra_leone_infrastructure.gpkg</span></code> (MultiLineString/Points) GeoPackage</p>
-<ul>
-<li><p>Sierra_Leone_health (Points)</p></li>
-<li><p>Sierra_Leone_airports (Points)</p></li>
-<li><p>Sierra_Leone_roads (Lines)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Sierra_leone_roads.gpd</span></code> (Lines) GeoPackage</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Sierra_leone_healthsites.gpkg</span></code> (Points) Geopackage</p></li>
+<li><ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">sl_airports.gpkg</span></code> (Points) GeoPackage</p></li>
 </ul>
 </li>
 </ul>
@@ -681,7 +680,7 @@ document.write(`
 <ol class="arabic simple">
 <li><p>Open QGIS and create a <span class="xref myst">new project</span> by clicking on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span></code></p></li>
 <li><p>Once the project is created save the project in the “project” folder of the “Ex_Sierra_Leone_foodinsecurity”. To do that click on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">as</span></code> and navigate to the folder. Name the project “Sierra_Leone_foodinsecurity”.</p></li>
-<li><p>Import the GeoPackages <code class="docutils literal notranslate"><span class="pre">Sierra_leone_borders.gpkg</span></code> and <code class="docutils literal notranslate"><span class="pre">Sierra_leone_infrastructure.gpkg</span></code> as well as the shapefile <code class="docutils literal notranslate"><span class="pre">Sierra_leone_foodinsecurity_2015.shp</span></code> into your project via drag and drop (<span class="xref myst">Wiki Video</span>).
+<li><p>Import the GeoPackages <code class="docutils literal notranslate"><span class="pre">Sierra_leone_borders.gpkg</span></code>, <code class="docutils literal notranslate"><span class="pre">Sierra_leone_airports</span></code>, <code class="docutils literal notranslate"><span class="pre">Sierra_leone_healthsites</span></code> and <code class="docutils literal notranslate"><span class="pre">Sierra_leone_roads.gpkg</span></code> as well as the shapefile <code class="docutils literal notranslate"><span class="pre">Sierra_leone_foodinsecurity_2015.shp</span></code> into your project via drag and drop (<span class="xref myst">Wiki Video</span>).
 Or by clicking <code class="docutils literal notranslate"><span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code>: Click on the three dots <img alt="" src="../../_images/Three_points.png" /> and navigate to “Sierra_leone_borders.gpkg” in your file Browser. Select the file and click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Back in QGIS click <code class="docutils literal notranslate"><span class="pre">Add</span></code> (<span class="xref myst">Wiki Video</span>).</p></li>
 </ol>
 <div class="admonition attention">
