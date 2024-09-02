@@ -269,6 +269,8 @@ figure below). Furthermore, the further away from the equator you get, the more 
 The mercator projection is famous for distorting the size of different countries. You can check 
 the true size in comparison to different placements on the map on [TheTrueSize.com website](https://www.thetruesize.com).
 A popular example is Greenland in comparison with Africa, which seem on the map to be about the same size, but in reality Africa is a lot bigger.
+:::
+
 
 ```{figure} /fig/en_greenland_africa.png
 ---
