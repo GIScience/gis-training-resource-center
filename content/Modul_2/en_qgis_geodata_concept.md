@@ -240,10 +240,9 @@ Layers in a GIS. Source: [CartONG](https://cartong.pages.gitlab.cartong.org/lear
 ## Projections 
 ### Introduction
 
-:::{dropdown} Video: Why all world maps are wrong
-:open:
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kIID5FDi2JQ?si=C0tYz7nteMF_xqvr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-:::
+
 
 An important issue when creating a map of a region, is that it is impossible to create a representation of a sphere 
 on a 2D plane without distorting the map. The transformation of a 3D object onto a flat surface can be done with the help of a __projection__. Over the centuries, cartographers and mathematicians have developed a multitude of different methods to project the earth onto a flat surface. However, it is never possible to correctly represent the world on a flat surface (see the video above). 
