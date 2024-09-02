@@ -220,6 +220,30 @@ The new SVG-symbols are in your SVG library.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video>
 
+#### Using IFRC-Symbols
+
+The IFRC provides icons and symbols that can be used in your maps. You can find them under [this link](https://go-user-library.ifrc.org/brand-design/iconography). 
+
+There is also a library with humanitarian icons by the [United Nations Office for the Coordination of Humanitarian affairs](https://www.unocha.org) which can be found [here](https://github.com/mapaction/ocha-humanitarian-icons-for-gis?tab=readme-ov-file). The files are available in different formats you can use in QGIS. 
+
+
+<!---With the plugin __"Plugin Resource Sharing"__, you can install symbol and icon libraries used by the Red Cross and UN, as well as other useful symbols.
+
+1. Install the __"Plugin Resource Sharing"__ by opening the plugin installation window and searching for the plugin.
+2. Once installed, open the plugin interface by clicking on `plugin` > `Plugin Resource Sharing`.
+3. Search for packages by the Red Cross and the UN.
+4. Install the packages.
+
+Now the symbols should be available in the styling manager in the SVG folder.
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_resource_sharing_plugin.mp4"></video>
+
+```{tip}
+Make sure to check out the other resources available in the resource sharing plugin and see if they are useful to you.
+```
+-->
+
+
 ## Labels
 
 Labels are text that display information or values of the data. In QGIS, you can either select __Single Labels__ or __Rule-based Labelling__. For each option, an attribute (`value`) that will be displayed on the map. For example, the name of a city or region.  Additionally, you can __change the font, font size, colour and some other styling options__ for the label text. When you create a map, you can add labels to help your reader understand the map quickly. However, be aware that too much text information can overload the map with too much information for the reader to process.
@@ -465,22 +489,6 @@ When a styling is saved in the same location as the data and has the same name a
 You can also import styles directly in the styling panel of a layer. But it will not be added to your style library unless you save it into your library.
 ```
 
-## Using IFRC-Symbols
-
-With the plugin __"Plugin Resource Sharing"__, you can install symbol and icon libraries used by the Red Cross and UN, as well as other useful symbols.
-
-1. Install the __"Plugin Resource Sharing"__ by opening the plugin installation window and searching for the plugin.
-2. Once installed, open the plugin interface by clicking on `plugin` > `Plugin Resource Sharing`.
-3. Search for packages by the Red Cross and the UN.
-4. Install the packages.
-
-Now the symbols should be available in the styling manager in the SVG folder.
-
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_resource_sharing_plugin.mp4"></video>
-
-```{tip}
-Make sure to check out the other resources available in the resource sharing plugin and see if they are useful to you.
-```
 
 ## Further Resources
 

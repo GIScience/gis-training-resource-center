@@ -89,15 +89,14 @@ __Wrap up:__
 
 
 ### Available Data
-Download all datasets __[here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_3/Modul_3_Ex_1_Sierra_Leone/Modul_3_Ex_1_Sierra_Leone.zip)__ and save the folder on your computer. Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects. Under "data > input" you will find the following files:
-- `Sierra_leone_foodinsecurity_2015.shp` (Polygon)
+Download all datasets __[here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_1/Module_3_Exercise_1_Flood_Nigeria.zip)__ and save the folder on your computer. Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects. Under "data > input" you will find the following files:
+- `Sierra_leone_foodinsecurity_2015.shp` (Polygon) Shapefile
 - `Sierra_leone_borders.gpkg` (MultiLineString) GeoPackage
     - Sierra_Leone_national_borders (Lines)
     - Sierra_Leone_provinces (Lines)
-- `Sierra_leone_infrastructure.gpkg` (MultiLineString/Points) GeoPackage
-    - Sierra_Leone_health (Points)
-    - Sierra_Leone_airports (Points)
-    - Sierra_Leone_roads (Lines)
+- `Sierra_leone_roads.gpd` (Lines) GeoPackage
+- `Sierra_leone_healthsites.gpkg` (Points) Geopackage
+- - `sl_airports.gpkg` (Points) GeoPackage
 
 ### Tasks
 Our goal is to produce an overview of the 2015 food insecurity situation in Sierra Leone together with the display of main infrastructure elements. To achieve this, we will visualise total food insecurity classifications alongside airports, hospitals, and primary roads in a map.
@@ -106,7 +105,7 @@ Our goal is to produce an overview of the 2015 food insecurity situation in Sier
 
 2. Once the project is created save the project in the “project” folder of the “Ex_Sierra_Leone_foodinsecurity”. To do that click on `Project` -> `Save as` and navigate to the folder. Name the project “Sierra_Leone_foodinsecurity”.
 
-3. Import the GeoPackages `Sierra_leone_borders.gpkg` and `Sierra_leone_infrastructure.gpkg` as well as the shapefile `Sierra_leone_foodinsecurity_2015.shp` into your project via drag and drop ([Wiki Video](/content/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). 
+3. Import the GeoPackages `Sierra_leone_borders.gpkg`, `Sierra_leone_airports`, `Sierra_leone_healthsites` and `Sierra_leone_roads.gpkg` as well as the shapefile `Sierra_leone_foodinsecurity_2015.shp` into your project via drag and drop ([Wiki Video](/content/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). 
 Or by clicking `Layer`-> `Add Layer`-> `Add Vector Layer`: Click on the three dots ![](/fig/Three_points.png) and navigate to "Sierra_leone_borders.gpkg" in your file Browser. Select the file and click `Open`. Back in QGIS click `Add` ([Wiki Video](/content/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab)).
 
 ```{Attention}
