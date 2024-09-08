@@ -14,7 +14,7 @@ In this section, we will present some well-designed maps and discuss how to crea
 
 - [researchresourcecentre.info maps](https://www.reachresourcecentre.info/search/?search=1&initiative%5B%5D=reach&ptype%5B%5D=map&dates=&keywords)
 - [geo.msf.org maps](https://geo.msf.org/catalogue/DOCID-1877329211-4979?from=0&sort=_score&desc=true)
-- [reliefweb.int maps](https://reliefweb.int/updates?advanced-search=%28S1242%29_%28F12%29)
+- [reliefweb.int maps](https://response.reliefweb.int)
 
 ## Map Examples
 

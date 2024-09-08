@@ -68,10 +68,10 @@ information. Which geometry is used, depends on the type of data that is represe
 represented by a line, a building will be represented by polygon and a tree might be represented by a point.
 
 
-```{figure} /fig/en_geometry_geodata_example_2.png
+```{figure} /fig/en_geodata_example_2.png
 ---
 name: geometry geodata example 2
-width: 400px
+width: 600px
 ---
 Geographic information can be an address and/or GPS coordinates
 ```
@@ -83,7 +83,7 @@ Geographic information can be an address and/or GPS coordinates
 ```{figure} /fig/Geodata_attribute_table_example.png
 ---
 name: geodata example
-width: 600px
+width: 750px
 ---
 A data table in Microsoft Excel with geographic information
 ```

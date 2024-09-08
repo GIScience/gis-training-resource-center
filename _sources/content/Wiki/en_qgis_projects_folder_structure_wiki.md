@@ -1,6 +1,5 @@
 # Projects and Folder Structure 
 
-🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
 In this wiki article, best practices for the creation and management of QGIS projects and geodata is presented.
 

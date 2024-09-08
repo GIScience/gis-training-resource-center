@@ -14,8 +14,8 @@ the data in trusted contexts or also download counts can be good indicators.
 
 *Data size:* Sometimes you can access data in different scales, resolutions etc. 
 Make sure to select a data set that fits your purpose and can be easily processed 
-by you. E.g. if you only need data about a specific region, if feasible only 
-select the data of this admin area. 
+by you. For example, if you only need data about a specific region, only 
+select the data of this administrative area. 
 
 *Data format:* Maybe there are different data formats available that you can 
 choose from. Think about your needs and what is the most practical for your use 
@@ -32,8 +32,7 @@ licensing and to follow the respective regulations to avoid difficulties.
 
 <!-- ADD: Would be nice to have a wiki page on licensing if possible -->
 
-
-## Overview
+:::{dropdown} Overview of useful data repositories
 
 ### General geodata 
 
@@ -100,12 +99,13 @@ licensing and to follow the respective regulations to avoid difficulties.
 | Copernicus | Earth observation data | https://scihub.copernicus.eu/ | 
 | GlobCover | Raster data on land cover | http://due.esrin.esa.int/page_globcover.php |
 
+:::
 
 ## OpenStreetMap data
 
 OpenStreetMap (OSM) is a collaborative project that aims to create a free and editable map of the world. Unlike traditional maps, which are often proprietary and controlled by commercial entities, OSM allows anyone to contribute and edit map data, resulting in a detailed and constantly evolving map of roads, trails, landmarks, and more. With its open-source nature and global community of contributors, OpenStreetMap has become a valuable resource for a wide range of applications, from navigation and urban planning to disaster response and humanitarian aid.
 
-There a multiple ways to get OpenStreetMap (OSM) data as a vector file into QGIS. The three most common and easy-to-use ways are geofarbik.de, HOT Export Tool and QuickOSM. Each of the options has both advantages and disadvantages.
+There a multiple ways to get OpenStreetMap (OSM) data as a vector file into QGIS. The three most common and easy-to-use ways are geofabrik.de, HOT Export Tool and QuickOSM. Each of the options has both advantages and disadvantages.
 
 
 ```{Tip}

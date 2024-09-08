@@ -540,15 +540,6 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general-geodata">General geodata</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#humanitarian-data">Humanitarian data</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disaster-data">Disaster data</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#population-data">Population data</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#buildings-data">Buildings data</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#remote-sensing-earth-observation-data">Remote sensing/earth observation data</a></li>
-</ul>
-</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#openstreetmap-data">OpenStreetMap data</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quickosm-plugin">QuickOSM plugin</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hot-export-tool">HOT Export Tool</a></li>
@@ -576,8 +567,8 @@ organisation that shared the data is the best indicator. Apart from that, use of
 the data in trusted contexts or also download counts can be good indicators.</p>
 <p><em>Data size:</em> Sometimes you can access data in different scales, resolutions etc.
 Make sure to select a data set that fits your purpose and can be easily processed
-by you. E.g. if you only need data about a specific region, if feasible only
-select the data of this admin area.</p>
+by you. For example, if you only need data about a specific region, only
+select the data of this administrative area.</p>
 <p><em>Data format:</em> Maybe there are different data formats available that you can
 choose from. Think about your needs and what is the most practical for your use
 and potentially also sharing purposes.</p>
@@ -588,223 +579,216 @@ up-to-date data available from another source.</p>
 share it and how do you need to cite the data source? Make sure to check the
 licensing and to follow the respective regulations to avoid difficulties.</p>
 <!-- ADD: Would be nice to have a wiki page on licensing if possible -->
-<section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h2>
-<section id="general-geodata">
-<h3>General geodata<a class="headerlink" href="#general-geodata" title="Permalink to this heading">#</a></h3>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Overview of useful data repositories<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="rubric">General geodata</p>
 <table class="table">
 <thead>
-<tr class="row-odd"><th class="head text-left"><p>Name</p></th>
-<th class="head text-left"><p>Data</p></th>
-<th class="head text-left"><p>Link</p></th>
+<tr class="row-odd"><th class="head text-left"><p class="sd-card-text">Name</p></th>
+<th class="head text-left"><p class="sd-card-text">Data</p></th>
+<th class="head text-left"><p class="sd-card-text">Link</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>Natural Earth</p></td>
-<td class="text-left"><p>Administrative and physical geography</p></td>
-<td class="text-left"><p><a class="reference external" href="https://www.naturalearthdata.com/">https://www.naturalearthdata.com/</a></p></td>
+<tr class="row-even"><td class="text-left"><p class="sd-card-text">Natural Earth</p></td>
+<td class="text-left"><p class="sd-card-text">Administrative and physical geography</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="https://www.naturalearthdata.com/">https://www.naturalearthdata.com/</a></p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>Geonames</p></td>
-<td class="text-left"><p>Administrative geodata</p></td>
-<td class="text-left"><p><a class="reference external" href="https://www.geonames.org/">https://www.geonames.org/</a></p></td>
+<tr class="row-odd"><td class="text-left"><p class="sd-card-text">Geonames</p></td>
+<td class="text-left"><p class="sd-card-text">Administrative geodata</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="https://www.geonames.org/">https://www.geonames.org/</a></p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>OpenAfrica</p></td>
-<td class="text-left"><p>Open-source data on Africa</p></td>
-<td class="text-left"><p><a class="reference external" href="https://africaopendata.org/dataset">https://africaopendata.org/dataset</a></p></td>
+<tr class="row-even"><td class="text-left"><p class="sd-card-text">OpenAfrica</p></td>
+<td class="text-left"><p class="sd-card-text">Open-source data on Africa</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="https://africaopendata.org/dataset">https://africaopendata.org/dataset</a></p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>DivaGIS</p></td>
-<td class="text-left"><p>Different data, e.g. administrative, roads, population, elevation, climate</p></td>
-<td class="text-left"><p><a class="reference external" href="http://www.diva-gis.org/gdata">http://www.diva-gis.org/gdata</a></p></td>
+<tr class="row-odd"><td class="text-left"><p class="sd-card-text">DivaGIS</p></td>
+<td class="text-left"><p class="sd-card-text">Different data, e.g. administrative, roads, population, elevation, climate</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="http://www.diva-gis.org/gdata">http://www.diva-gis.org/gdata</a></p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>Open Topography</p></td>
-<td class="text-left"><p>Data on topography</p></td>
-<td class="text-left"><p><a class="reference external" href="https://opentopography.org/">https://opentopography.org/</a></p></td>
+<tr class="row-even"><td class="text-left"><p class="sd-card-text">Open Topography</p></td>
+<td class="text-left"><p class="sd-card-text">Data on topography</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="https://opentopography.org/">https://opentopography.org/</a></p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>OSM Boundaries</p></td>
-<td class="text-left"><p>Administrative boundaries (need to authenticate via your osm account)</p></td>
-<td class="text-left"><p><a class="reference external" href="https://osm-boundaries.com">https://osm-boundaries.com</a></p></td>
+<tr class="row-odd"><td class="text-left"><p class="sd-card-text">OSM Boundaries</p></td>
+<td class="text-left"><p class="sd-card-text">Administrative boundaries (need to authenticate via your osm account)</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="https://osm-boundaries.com">https://osm-boundaries.com</a></p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>GDAM</p></td>
-<td class="text-left"><p>Administrative boundaries</p></td>
-<td class="text-left"><p><a class="reference external" href="http://gadm.org">gadm.org</a></p></td>
+<tr class="row-even"><td class="text-left"><p class="sd-card-text">GDAM</p></td>
+<td class="text-left"><p class="sd-card-text">Administrative boundaries</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="http://gadm.org">gadm.org</a></p></td>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="humanitarian-data">
-<h3>Humanitarian data<a class="headerlink" href="#humanitarian-data" title="Permalink to this heading">#</a></h3>
+<p class="rubric">Humanitarian data</p>
 <table class="table">
 <thead>
-<tr class="row-odd"><th class="head text-left"><p>Name</p></th>
-<th class="head text-left"><p>Data</p></th>
-<th class="head text-left"><p>Link</p></th>
+<tr class="row-odd"><th class="head text-left"><p class="sd-card-text">Name</p></th>
+<th class="head text-left"><p class="sd-card-text">Data</p></th>
+<th class="head text-left"><p class="sd-card-text">Link</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>Humanitarian Data Exchange</p></td>
-<td class="text-left"><p>Various open data from different humanitarian organisations</p></td>
-<td class="text-left"><p><a class="reference external" href="https://data.humdata.org">https://data.humdata.org</a></p></td>
+<tr class="row-even"><td class="text-left"><p class="sd-card-text">Humanitarian Data Exchange</p></td>
+<td class="text-left"><p class="sd-card-text">Various open data from different humanitarian organisations</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="https://data.humdata.org">https://data.humdata.org</a></p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>Healthsites</p></td>
-<td class="text-left"><p>Locations of health facilities</p></td>
-<td class="text-left"><p><a class="reference external" href="https://healthsites.io/">https://healthsites.io/</a></p></td>
+<tr class="row-odd"><td class="text-left"><p class="sd-card-text">Healthsites</p></td>
+<td class="text-left"><p class="sd-card-text">Locations of health facilities</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="https://healthsites.io/">https://healthsites.io/</a></p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>UNHCR Geoservices</p></td>
-<td class="text-left"><p>Data on displaced populations</p></td>
-<td class="text-left"><p><a class="reference external" href="https://data.unhcr.org/en/situations">https://data.unhcr.org/en/situations</a></p></td>
+<tr class="row-even"><td class="text-left"><p class="sd-card-text">UNHCR Geoservices</p></td>
+<td class="text-left"><p class="sd-card-text">Data on displaced populations</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="https://data.unhcr.org/en/situations">https://data.unhcr.org/en/situations</a></p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>Waterpoint</p></td>
-<td class="text-left"><p>Data on waterpoints</p></td>
-<td class="text-left"><p><a class="reference external" href="https://www.waterpointdata.org">https://www.waterpointdata.org</a></p></td>
+<tr class="row-odd"><td class="text-left"><p class="sd-card-text">Waterpoint</p></td>
+<td class="text-left"><p class="sd-card-text">Data on waterpoints</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="https://www.waterpointdata.org">https://www.waterpointdata.org</a></p></td>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="disaster-data">
-<h3>Disaster data<a class="headerlink" href="#disaster-data" title="Permalink to this heading">#</a></h3>
+<p class="rubric">Disaster data</p>
 <table class="table">
 <thead>
-<tr class="row-odd"><th class="head text-left"><p>Name</p></th>
-<th class="head text-left"><p>Data</p></th>
-<th class="head text-left"><p>Link</p></th>
+<tr class="row-odd"><th class="head text-left"><p class="sd-card-text">Name</p></th>
+<th class="head text-left"><p class="sd-card-text">Data</p></th>
+<th class="head text-left"><p class="sd-card-text">Link</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>MapAction</p></td>
-<td class="text-left"><p>Emergency mapping resources</p></td>
-<td class="text-left"><p><a class="reference external" href="https://maps.mapaction.org/">https://maps.mapaction.org/</a></p></td>
+<tr class="row-even"><td class="text-left"><p class="sd-card-text">MapAction</p></td>
+<td class="text-left"><p class="sd-card-text">Emergency mapping resources</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="https://maps.mapaction.org/">https://maps.mapaction.org/</a></p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><a class="reference external" href="http://Fieldmaps.io">Fieldmaps.io</a></p></td>
-<td class="text-left"><p>Data and map download platform for humanitarian use</p></td>
-<td class="text-left"><p><a class="reference external" href="https://fieldmaps.io">https://fieldmaps.io</a></p></td>
+<tr class="row-odd"><td class="text-left"><p class="sd-card-text"><a class="reference external" href="http://Fieldmaps.io">Fieldmaps.io</a></p></td>
+<td class="text-left"><p class="sd-card-text">Data and map download platform for humanitarian use</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="https://fieldmaps.io">https://fieldmaps.io</a></p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>Acled</p></td>
-<td class="text-left"><p>Conflict data</p></td>
-<td class="text-left"><p><a class="reference external" href="https://acleddata.com/data-export-tool">https://acleddata.com/data-export-tool</a></p></td>
+<tr class="row-even"><td class="text-left"><p class="sd-card-text">Acled</p></td>
+<td class="text-left"><p class="sd-card-text">Conflict data</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="https://acleddata.com/data-export-tool">https://acleddata.com/data-export-tool</a></p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>GDACS</p></td>
-<td class="text-left"><p>Disaster database</p></td>
-<td class="text-left"><p><a class="reference external" href="https://www.gdacs.org">https://www.gdacs.org</a></p></td>
+<tr class="row-odd"><td class="text-left"><p class="sd-card-text">GDACS</p></td>
+<td class="text-left"><p class="sd-card-text">Disaster database</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="https://www.gdacs.org">https://www.gdacs.org</a></p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>ZKI/DLR</p></td>
-<td class="text-left"><p>Flood extents, damage extents, earth observation data</p></td>
-<td class="text-left"><p><a class="reference external" href="https://activations.zki.dlr.de/en/activations/">https://activations.zki.dlr.de/en/activations/</a></p></td>
+<tr class="row-even"><td class="text-left"><p class="sd-card-text">ZKI/DLR</p></td>
+<td class="text-left"><p class="sd-card-text">Flood extents, damage extents, earth observation data</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="https://activations.zki.dlr.de/en/activations/">https://activations.zki.dlr.de/en/activations/</a></p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>WFP Vulnerability Analysis and Mapping</p></td>
-<td class="text-left"><p>Data on food security, hazards, conflicts, climate</p></td>
-<td class="text-left"><p><a class="reference external" href="https://dataviz.vam.wfp.org/">https://dataviz.vam.wfp.org/</a></p></td>
+<tr class="row-odd"><td class="text-left"><p class="sd-card-text">WFP Vulnerability Analysis and Mapping</p></td>
+<td class="text-left"><p class="sd-card-text">Data on food security, hazards, conflicts, climate</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="https://dataviz.vam.wfp.org/">https://dataviz.vam.wfp.org/</a></p></td>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="population-data">
-<h3>Population data<a class="headerlink" href="#population-data" title="Permalink to this heading">#</a></h3>
+<p class="rubric">Population data</p>
 <table class="table">
 <thead>
-<tr class="row-odd"><th class="head text-left"><p>Name</p></th>
-<th class="head text-left"><p>Data</p></th>
-<th class="head text-left"><p>Link</p></th>
+<tr class="row-odd"><th class="head text-left"><p class="sd-card-text">Name</p></th>
+<th class="head text-left"><p class="sd-card-text">Data</p></th>
+<th class="head text-left"><p class="sd-card-text">Link</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>WorldPop</p></td>
-<td class="text-left"><p>Population estimates</p></td>
-<td class="text-left"><p><a class="reference external" href="https://wopr.worldpop.org/">https://wopr.worldpop.org/</a></p></td>
+<tr class="row-even"><td class="text-left"><p class="sd-card-text">WorldPop</p></td>
+<td class="text-left"><p class="sd-card-text">Population estimates</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="https://wopr.worldpop.org/">https://wopr.worldpop.org/</a></p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>GHSL</p></td>
-<td class="text-left"><p>Global settlement data</p></td>
-<td class="text-left"><p><a class="reference external" href="https://ghsl.jrc.ec.europa.eu/">https://ghsl.jrc.ec.europa.eu/</a></p></td>
+<tr class="row-odd"><td class="text-left"><p class="sd-card-text">GHSL</p></td>
+<td class="text-left"><p class="sd-card-text">Global settlement data</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="https://ghsl.jrc.ec.europa.eu/">https://ghsl.jrc.ec.europa.eu/</a></p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>HRSL</p></td>
-<td class="text-left"><p>Settlement layer based on earth observation and Facebook data</p></td>
-<td class="text-left"><p><a class="reference external" href="https://research.facebook.com/downloads/high-resolution-settlement-layer-hrsl/">https://research.facebook.com/downloads/high-resolution-settlement-layer-hrsl/</a></p></td>
+<tr class="row-even"><td class="text-left"><p class="sd-card-text">HRSL</p></td>
+<td class="text-left"><p class="sd-card-text">Settlement layer based on earth observation and Facebook data</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="https://research.facebook.com/downloads/high-resolution-settlement-layer-hrsl/">https://research.facebook.com/downloads/high-resolution-settlement-layer-hrsl/</a></p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>GRID3 Settlement extents and settlement points</p></td>
-<td class="text-left"><p>Settlement extents data</p></td>
-<td class="text-left"><p><a class="reference external" href="https://grid3.org/">https://grid3.org/</a></p></td>
+<tr class="row-odd"><td class="text-left"><p class="sd-card-text">GRID3 Settlement extents and settlement points</p></td>
+<td class="text-left"><p class="sd-card-text">Settlement extents data</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="https://grid3.org/">https://grid3.org/</a></p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>Pangea</p></td>
-<td class="text-left"><p>Environmental &amp; biosciences data</p></td>
-<td class="text-left"><p><a class="reference external" href="https://www.pangaea.de/">https://www.pangaea.de/</a></p></td>
+<tr class="row-even"><td class="text-left"><p class="sd-card-text">Pangea</p></td>
+<td class="text-left"><p class="sd-card-text">Environmental &amp; biosciences data</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="https://www.pangaea.de/">https://www.pangaea.de/</a></p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>United Nations Population Fund</p></td>
-<td class="text-left"><p>Data on sexual and reproductive health and population trends</p></td>
-<td class="text-left"><p><a class="reference external" href="https://www.unfpa.org/data">https://www.unfpa.org/data</a></p></td>
+<tr class="row-odd"><td class="text-left"><p class="sd-card-text">United Nations Population Fund</p></td>
+<td class="text-left"><p class="sd-card-text">Data on sexual and reproductive health and population trends</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="https://www.unfpa.org/data">https://www.unfpa.org/data</a></p></td>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="buildings-data">
-<h3>Buildings data<a class="headerlink" href="#buildings-data" title="Permalink to this heading">#</a></h3>
+<p class="rubric">Buildings data</p>
 <table class="table">
 <thead>
-<tr class="row-odd"><th class="head text-left"><p>Name</p></th>
-<th class="head text-left"><p>Data</p></th>
-<th class="head text-left"><p>Link</p></th>
+<tr class="row-odd"><th class="head text-left"><p class="sd-card-text">Name</p></th>
+<th class="head text-left"><p class="sd-card-text">Data</p></th>
+<th class="head text-left"><p class="sd-card-text">Link</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>World Settlement Footprint</p></td>
-<td class="text-left"><p>World Settlement Footprint</p></td>
-<td class="text-left"><p><a class="reference external" href="https://download.geoservice.dlr.de/WSF2019/">https://download.geoservice.dlr.de/WSF2019/</a></p></td>
+<tr class="row-even"><td class="text-left"><p class="sd-card-text">World Settlement Footprint</p></td>
+<td class="text-left"><p class="sd-card-text">World Settlement Footprint</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="https://download.geoservice.dlr.de/WSF2019/">https://download.geoservice.dlr.de/WSF2019/</a></p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>VIDA building footprint</p></td>
-<td class="text-left"><p>Combined Google and Microsoft building footprint datasets</p></td>
-<td class="text-left"><p><a class="reference external" href="https://beta.source.coop/repositories/vida/google-microsoft-open-buildings/download/">https://beta.source.coop/repositories/vida/google-microsoft-open-buildings/download/</a></p></td>
+<tr class="row-odd"><td class="text-left"><p class="sd-card-text">VIDA building footprint</p></td>
+<td class="text-left"><p class="sd-card-text">Combined Google and Microsoft building footprint datasets</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="https://beta.source.coop/repositories/vida/google-microsoft-open-buildings/download/">https://beta.source.coop/repositories/vida/google-microsoft-open-buildings/download/</a></p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>Open-building</p></td>
-<td class="text-left"><p>Google building footprints</p></td>
-<td class="text-left"><p><a class="reference external" href="https://sites.research.google/open-buildings/#download">https://sites.research.google/open-buildings/#download</a></p></td>
+<tr class="row-even"><td class="text-left"><p class="sd-card-text">Open-building</p></td>
+<td class="text-left"><p class="sd-card-text">Google building footprints</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="https://sites.research.google/open-buildings/#download">https://sites.research.google/open-buildings/#download</a></p></td>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="remote-sensing-earth-observation-data">
-<h3>Remote sensing/earth observation data<a class="headerlink" href="#remote-sensing-earth-observation-data" title="Permalink to this heading">#</a></h3>
+<p class="rubric">Remote sensing/earth observation data</p>
 <table class="table">
 <thead>
-<tr class="row-odd"><th class="head text-left"><p>Name</p></th>
-<th class="head text-left"><p>Data</p></th>
-<th class="head text-left"><p>Link</p></th>
+<tr class="row-odd"><th class="head text-left"><p class="sd-card-text">Name</p></th>
+<th class="head text-left"><p class="sd-card-text">Data</p></th>
+<th class="head text-left"><p class="sd-card-text">Link</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>Global Forest Watch</p></td>
-<td class="text-left"><p>Data on global forests</p></td>
-<td class="text-left"><p><a class="reference external" href="https://www.globalforestwatch.org/">https://www.globalforestwatch.org/</a></p></td>
+<tr class="row-even"><td class="text-left"><p class="sd-card-text">Global Forest Watch</p></td>
+<td class="text-left"><p class="sd-card-text">Data on global forests</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="https://www.globalforestwatch.org/">https://www.globalforestwatch.org/</a></p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>OpenAerialMap</p></td>
-<td class="text-left"><p>Crowdsourced drone imagery</p></td>
-<td class="text-left"><p><a class="reference external" href="https://map.openaerialmap.org/">https://map.openaerialmap.org/</a></p></td>
+<tr class="row-odd"><td class="text-left"><p class="sd-card-text">OpenAerialMap</p></td>
+<td class="text-left"><p class="sd-card-text">Crowdsourced drone imagery</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="https://map.openaerialmap.org/">https://map.openaerialmap.org/</a></p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>USGS Earth Explorer</p></td>
-<td class="text-left"><p>Satellite data from multiple sources, including Landsat and Sentinel</p></td>
-<td class="text-left"><p><a class="reference external" href="https://earthexplorer.usgs.gov/">https://earthexplorer.usgs.gov/</a></p></td>
+<tr class="row-even"><td class="text-left"><p class="sd-card-text">USGS Earth Explorer</p></td>
+<td class="text-left"><p class="sd-card-text">Satellite data from multiple sources, including Landsat and Sentinel</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="https://earthexplorer.usgs.gov/">https://earthexplorer.usgs.gov/</a></p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>NASA Shuttle Radar Topography Mission (SRTM)</p></td>
-<td class="text-left"><p>Global elevation data</p></td>
-<td class="text-left"><p><a class="reference external" href="http://srtm.csi.cgiar.org/srtmdata/">http://srtm.csi.cgiar.org/srtmdata/</a></p></td>
+<tr class="row-odd"><td class="text-left"><p class="sd-card-text">NASA Shuttle Radar Topography Mission (SRTM)</p></td>
+<td class="text-left"><p class="sd-card-text">Global elevation data</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="http://srtm.csi.cgiar.org/srtmdata/">http://srtm.csi.cgiar.org/srtmdata/</a></p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>Earth Observe</p></td>
-<td class="text-left"><p>Digital elevation model on a global scale</p></td>
-<td class="text-left"><p><a class="reference external" href="https://earthexplorer.usgs.gov/">https://earthexplorer.usgs.gov/</a></p></td>
+<tr class="row-even"><td class="text-left"><p class="sd-card-text">Earth Observe</p></td>
+<td class="text-left"><p class="sd-card-text">Digital elevation model on a global scale</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="https://earthexplorer.usgs.gov/">https://earthexplorer.usgs.gov/</a></p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>Copernicus</p></td>
-<td class="text-left"><p>Earth observation data</p></td>
-<td class="text-left"><p><a class="reference external" href="https://scihub.copernicus.eu/">https://scihub.copernicus.eu/</a></p></td>
+<tr class="row-odd"><td class="text-left"><p class="sd-card-text">Copernicus</p></td>
+<td class="text-left"><p class="sd-card-text">Earth observation data</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="https://scihub.copernicus.eu/">https://scihub.copernicus.eu/</a></p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>GlobCover</p></td>
-<td class="text-left"><p>Raster data on land cover</p></td>
-<td class="text-left"><p><a class="reference external" href="http://due.esrin.esa.int/page_globcover.php">http://due.esrin.esa.int/page_globcover.php</a></p></td>
+<tr class="row-even"><td class="text-left"><p class="sd-card-text">GlobCover</p></td>
+<td class="text-left"><p class="sd-card-text">Raster data on land cover</p></td>
+<td class="text-left"><p class="sd-card-text"><a class="reference external" href="http://due.esrin.esa.int/page_globcover.php">http://due.esrin.esa.int/page_globcover.php</a></p></td>
 </tr>
 </tbody>
 </table>
-</section>
-</section>
-<section id="openstreetmap-data">
+</div>
+</details><section id="openstreetmap-data">
 <h2>OpenStreetMap data<a class="headerlink" href="#openstreetmap-data" title="Permalink to this heading">#</a></h2>
 <p>OpenStreetMap (OSM) is a collaborative project that aims to create a free and editable map of the world. Unlike traditional maps, which are often proprietary and controlled by commercial entities, OSM allows anyone to contribute and edit map data, resulting in a detailed and constantly evolving map of roads, trails, landmarks, and more. With its open-source nature and global community of contributors, OpenStreetMap has become a valuable resource for a wide range of applications, from navigation and urban planning to disaster response and humanitarian aid.</p>
-<p>There a multiple ways to get OpenStreetMap (OSM) data as a vector file into QGIS. The three most common and easy-to-use ways are <a class="reference external" href="http://geofarbik.de">geofarbik.de</a>, HOT Export Tool and QuickOSM. Each of the options has both advantages and disadvantages.</p>
+<p>There a multiple ways to get OpenStreetMap (OSM) data as a vector file into QGIS. The three most common and easy-to-use ways are <a class="reference external" href="http://geofabrik.de">geofabrik.de</a>, HOT Export Tool and QuickOSM. Each of the options has both advantages and disadvantages.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>If you wish to practice how to export OSM data, you can do the <strong><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_data_sources_ex2.html">Exercise 4: Exporting OSM Data</a></strong></p>
@@ -1068,15 +1052,6 @@ download your file by clicking on the link:</p></li>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general-geodata">General geodata</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#humanitarian-data">Humanitarian data</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disaster-data">Disaster data</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#population-data">Population data</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#buildings-data">Buildings data</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#remote-sensing-earth-observation-data">Remote sensing/earth observation data</a></li>
-</ul>
-</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#openstreetmap-data">OpenStreetMap data</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quickosm-plugin">QuickOSM plugin</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hot-export-tool">HOT Export Tool</a></li>

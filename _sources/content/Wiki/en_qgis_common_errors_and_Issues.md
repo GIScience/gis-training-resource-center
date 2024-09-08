@@ -497,8 +497,8 @@ __Solution__:
 * If your dataset was collected with Galileo, try redefining to ITRF.
 * If your dataset is in the USA, try redefining to NAD27, NAD83, or WGS84.
 * If your dataset is in Europe, try redefining to ED50, ETRS89, or WGS84.
-*If your dataset is in Australia, try redefining to GDA94 or GDA2020.
-*If your dataset is in China and/or collected with BeiDou, good luck. :weary:
+* If your dataset is in Australia, try redefining to GDA94 or GDA2020.
+* If your dataset is in China and/or collected with BeiDou, good luck. :weary:
 
 ## Wrong data results or missing data
 
