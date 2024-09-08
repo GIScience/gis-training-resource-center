@@ -22,6 +22,8 @@ Basic classification. Source:
 
 By default, QGIS visualises all layers in the `Single symbol` setting. This means all the features of a layer are visualised the same. In this setting, you can change many parameters like colour or opacity __but you can not classify any data!__
 
+:::{dropdown} How to: Single symbol classification
+
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Single_symbol_video.mp4"></video>
 
 
@@ -46,6 +48,8 @@ align: center
 ---
 Adjust the style of a layer.
 ```
+:::
+
 
 ## Categorised classification
 
@@ -58,6 +62,8 @@ Categorised classification is usually used for __nominal__ and __ordinal__ scale
 | Nominal Scale                | Categories without inherent order or ranking             | Land cover types, districts, livelihood zones | Text ("Desert") or Integer (5)      |
 | Ordinal Scale                | Categories with a meaningful order or ranking            | Ranks (e.g., low, medium)   | Text ("high") or Integer (5)      |
 
+
+:::{dropdown} How To: Categorised classificatation
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Classify_by_categorized.mp4"></video>
 
@@ -81,6 +87,8 @@ align: center
 ---
 Categorised classification.
 ```
+
+:::
 
 ## Graduated classification
 
@@ -163,7 +171,7 @@ Standard Deviation classification is a method that determines class breaks based
 ::::
 ___
 
-### How to Graduated classification in QGIS
+:::{dropdown} How To: Graduated classification in QGIS
 
 To perform a graduated classification in QGIS is easy. However, unlike the categorised classification, here you have to decide on how many classes and which method you want to use. 
 
@@ -204,5 +212,6 @@ align: center
 Graduated classification in QGIS.
 ```
 
+:::
 
 
