@@ -13,17 +13,25 @@ filter, edit and select data.
 ```{figure} /fig/en_vector_data_overview.drawio.png
 ---
 width: 600px
-name: 
 align: center
 name: Vector Data overview
 ---
 Vector Data overview. Source: HeiGIT
 ```
 
+:::{dropdown} Trainer's corner
+
+You can complement this chapter by doing the steps with a vector layer of your choice. 
+You can also do exercise 2 from this module. 
+
+:::
+
 ### Opening the attribute table
 
 Having a look into the attribute table is essential to understand and get an overview of the 
-data you are working with. You can open the attribute table in two ways. 
+data you are working with. After downloading and import a dataset into QGIS, you will most likely open the attribute table to understand the data and see what information is available. Understanding what kind of information is available is indispensable when working with GIS software.
+
+You can open the attribute table in two ways. 
 
 1. Right click on a layer in the Layers panel and select `Open Attribute Table` 
 2. Select a layer in the Layers panel and click on the attribute table symbol in 
@@ -83,7 +91,7 @@ Screenshot of Opening the Attribute Table
 |![](/fig/mAction.png)| Actions | Lists the actions related to the layer           | |
 :::
 
-<!-- ADD: WHat will be the most important of these. Needs more explanation. EN-->
+<!-- ADD: What will be the most important of these. Needs more explanation. EN-->
 
 
 ### Sort the attribute table
@@ -146,12 +154,11 @@ to select features is via the attribute table.
 ### Zoom to selected area
 Now that you know how to select features, you can zoom onto your area of 
 interest. To do so you can click on the symbol on the toolbar or right click 
-on the layer and select `Zoom to Selection`
+on the layer and select `Zoom to Selection`.
 
 ```{figure} /fig/en_zoom_to_selection_1.png
 ---
 width: 800px
-name:
 align: center
 name: Zoom to Selection, top panel.
 ---
