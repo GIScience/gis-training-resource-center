@@ -1,5 +1,4 @@
 # Table function
-🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
 __🔙[Back to Homepage](/content/intro.md)__
 
