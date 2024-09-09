@@ -90,9 +90,10 @@ __Download all datasets [here]() and save the folder on your computer and unzip 
 | Dataset name| Origonal title|Publisher|Download from| 
 | :-------------------- | :----------------- |:----------------- |:----------------- |
 | PAK_adm2_Sindh.gpkg | [Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-pak) |UN OCHA | HDX |
-| PPAK_Sind_Health_Facilities.gpkg |  [Pakistan Health Facilities (OpenStreetMap Export)](https://data.humdata.org/dataset/hotosm_pak_health_facilities) |Humanitarian OpenStreetMap Team (HOT) | HDX |
+| PAK_Sind_Health_Facilities.gpkg |  [Pakistan Health Facilities (OpenStreetMap Export)](https://data.humdata.org/dataset/hotosm_pak_health_facilities) |Humanitarian OpenStreetMap Team (HOT) | HDX |
 |  VIIRS_20240721_20240803_MaximumFloodExtent_PAK.shp & VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp | [Satellite detected water extents from 08 to 12 August 2024 over Pakistan)](https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan) |UNO SAT | HDX |
 
+<!--ADD: Add an explanation how to create the healthsite dataset by combining points and polygons -->
 
 ```{hint} Folder structure
 Keep your data management clean by creating a folder structure on your computer for your QGIS-projects and geodata. 
@@ -100,7 +101,15 @@ The exercise data should be saved in a location where you can easily find them a
 ```
 
 
-## Task 1: Gain an overview of the situation around Larkana
+## Task 1: Gain an overview of the situation around Larkana 
+```{figure} /fig/IFRC-icons-colour_SURGE.png
+---
+width: 100px
+name: 
+align: right
+name: IFRC Surge
+---
+```
 
 You have been deployed as an information manager to the flood-affected regions of Pakistan. Upon your arrival you received reports from the operations team indicating that the city of [Larkana](https://www.openstreetmap.org/#map=12/27.5565/68.1672) and its surrounding areas have been severely affected by the floods. The team needs a general overview of the location of the city.
  
@@ -111,6 +120,7 @@ You have been deployed as an information manager to the flood-affected regions o
 ```{Tip}
 You cannot interact with a base map!
 ```
+
 4. Next, load the GeoPackage "PAK_adm2_Sindh.gpkg"in your project by drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)). Or click on `Layer`-> `Add Layer`-> `Add Vector Layer`. Click on the three points ![](/fig/Three_points.png) and navigate to "PAK_adm2_Sindh.gpkg". Select the file and click `Open`. Back in QGIS click `Add` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)).
 
 
@@ -120,10 +130,47 @@ GeoPackage files can contain multiple files and even entire QGIS projects. When 
 5. First, we want to export __Larkana District__ from __PAK_adm2_Sindh__ to have it as a stand-alone vector layer. To do that, 
     * Open the attribute table of __PAK_adm2_Sindh__ by right click on the layer  -> `Open Attribute Table`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html)).
     * Find the row of Larkana and mark it by clicking on the number on the very left-hand side of the attribute table. The row will appear blue and the area of Larkana will turn yellow on the map canvas. You can right-click on the row and click `Zoom to Feature`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature)).
-    * Now right-click on the layer in the Layer Panel and click on `Export` -> `Save Selected Features as`. We want to save Larkana as a GeoPackage, so adjust `Format` accordingly. Click on the three points and navigate to your `temp` folder. Here you can give it the layer the name “AOI_Larkana_adm3” and click `Save`. Now you should see the same name in the `Layer name` field. Click `ok`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_queries_wiki.html#save-selected-features-as-a-new-file))
+    To select the surrounding districts, click on the `Select Feature(s)` ![](/fig/selection_toolbar_feature_selection.png) icon in the QGIS Toolbar, hold the `Shift` button on your keyboard, and click on the districts either on the map or the attribute table ([Wiki Video](/content/Wiki/en_qgis_spatial_queries_wiki)).
+    * After you are done selecting districts, click on the icon ![](/fig/selection_toolbar_feature_deselection.png) in thetoolbar to end the feature selection mode.
+    * Now right-click on the layer in the Layer Panel and click on `Export` -> `Save Selected Features as`. We want to save Larkana as a GeoPackage, so adjust `Format` accordingly. Click on the three points and navigate to your `temp` folder. Here you can give it the layer the name __“Flood_2024_AOI”__ and click `Save`. Now you should see the same name in the `Layer name` field. Click `ok`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_queries_wiki.html#save-selected-features-as-a-new-file))
+
 Now you have an overview of where the district of Larkana is located in Sindh. The operations team can use this information. 
 
-## Task 2:
+## Task 2: Estimation of Flood Impact on the Health Sector in Larkana
+```{figure} /fig/IFRC-icons-colour_Health.svg
+---
+width: 100px
+name: 
+align: right
 
-Social media posts have also hinted at a significant impact on the health system in the region. You have been tasked to find out as much as you can about the situation and, if feasible, to estimate the effects on the health system.
+name: IFRC Surge
+---
+```
 
+Social media posts have hinted at a significant impact on the health system in the region. You have been tasked to find out as much as you can about the situation and, if feasible, to estimate the effects on the health system.
+
+1. The first thing to do is to find out where the health facilities are located in the area. To that end, you do a quick search on HDX. You find the dataset [Pakistan Health Facilities (OpenStreetMap Export)](https://data.humdata.org/dataset/hotosm_pak_health_facilities). This will do for now. 
+
+    * Download the dataset directly from HDX and save it in your "input" folder or use the "PAK_Sind_Health_Facilities.gpkg" from the exercise data.
+    *  Drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)) the dataset into QGIS and save the project.
+    * First, we must extract the health facilities in our area of interest. We will use the tool __"Extract by Location"__ to do that.
+    * Open the `Processing Toolbox` ([here is how](/content/Wiki/en_qgis_interface_wiki.md#toolbox-toolbars)) and search for the tool.
+        * As `Input Layer` we will use “PAK_Sind_Health_Facilities”.
+        * For `By comparing to the features from` we use the layer “Flood_2024_AOI”.
+        * As `Geometric predicate` we use `intersect`. 
+        * To save the output click on the three points at `Extract (location)` -> `Save to GeoPackage` and navigate to your `temp` folder. Save the new layer under the name __“Flood_2024_AOI”__. Give the new layer the same `Layer name` and click `Run`.
+    * Open the Attribute table of the new layer and have a look.
+```{figure} /fig/PAK_extract_locatio_HS.png
+---
+width: 400px
+name: Extract by location Pakistan
+align: center
+---
+Extract by location Pakistan
+```
+Ok, now we have a good overview of the location of health facilities. We need much better information about the flooded area to identify the health facilities impacted by the flood. Fortunately, the UN has just shared a dataset about the extent of floods Satellite detected water extents from 08 to 12 August 2024 over Pakistan.
+
+2. Load the dataset __"VIIRS_20240721_20240803_MaximumFloodExtent_PAK.shp"__ and __"VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp"__ into your QGIS.
+
+
+	 
