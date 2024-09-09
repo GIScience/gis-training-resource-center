@@ -543,7 +543,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-gain-an-overview-of-the-situation-around-larkana">Task 1: Gain an overview of the situation around Larkana</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2">Task 2:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-estimation-of-flood-impact-on-the-health-sector-in-larkana">Task 2: Estimation of Flood Impact on the Health Sector in Larkana</a></li>
 </ul>
             </nav>
         </div>
@@ -689,7 +689,7 @@ document.write(`
 <td class="text-left"><p>UN OCHA</p></td>
 <td class="text-left"><p>HDX</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>PPAK_Sind_Health_Facilities.gpkg</p></td>
+<tr class="row-odd"><td class="text-left"><p>PAK_Sind_Health_Facilities.gpkg</p></td>
 <td class="text-left"><p><a class="reference external" href="https://data.humdata.org/dataset/hotosm_pak_health_facilities">Pakistan Health Facilities (OpenStreetMap Export)</a></p></td>
 <td class="text-left"><p>Humanitarian OpenStreetMap Team (HOT)</p></td>
 <td class="text-left"><p>HDX</p></td>
@@ -701,6 +701,7 @@ document.write(`
 </tr>
 </tbody>
 </table>
+<!--ADD: Add an explanation how to create the healthsite dataset by combining points and polygons -->
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>Folder structure
@@ -711,6 +712,9 @@ The exercise data should be saved in a location where you can easily find them a
 </section>
 <section id="task-1-gain-an-overview-of-the-situation-around-larkana">
 <h2>Task 1: Gain an overview of the situation around Larkana<a class="headerlink" href="#task-1-gain-an-overview-of-the-situation-around-larkana" title="Permalink to this heading">#</a></h2>
+<figure class="align-right" id="ifrc-surge">
+<a class="reference internal image-reference" href="../../_images/IFRC-icons-colour_SURGE.png"><img alt="../../_images/IFRC-icons-colour_SURGE.png" src="../../_images/IFRC-icons-colour_SURGE.png" style="width: 100px;" /></a>
+</figure>
 <p>You have been deployed as an information manager to the flood-affected regions of Pakistan. Upon your arrival you received reports from the operations team indicating that the city of <a class="reference external" href="https://www.openstreetmap.org/#map=12/27.5565/68.1672">Larkana</a> and its surrounding areas have been severely affected by the floods. The team needs a general overview of the location of the city.</p>
 <ol class="arabic simple">
 <li><p>Open QGIS and create a <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch">new project</a> by clicking on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span></code></p></li>
@@ -732,16 +736,49 @@ The exercise data should be saved in a location where you can easily find them a
 <li><p>First, we want to export <strong>Larkana District</strong> from <strong>PAK_adm2_Sindh</strong> to have it as a stand-alone vector layer. To do that,</p>
 <ul class="simple">
 <li><p>Open the attribute table of <strong>PAK_adm2_Sindh</strong> by right click on the layer  -&gt; <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Attribute</span> <span class="pre">Table</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html">Wiki Video</a>).</p></li>
-<li><p>Find the row of Larkana and mark it by clicking on the number on the very left-hand side of the attribute table. The row will appear blue and the area of Larkana will turn yellow on the map canvas. You can right-click on the row and click <code class="docutils literal notranslate"><span class="pre">Zoom</span> <span class="pre">to</span> <span class="pre">Feature</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature">Wiki Video</a>).</p></li>
-<li><p>Now right-click on the layer in the Layer Panel and click on <code class="docutils literal notranslate"><span class="pre">Export</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Selected</span> <span class="pre">Features</span> <span class="pre">as</span></code>. We want to save Larkana as a GeoPackage, so adjust <code class="docutils literal notranslate"><span class="pre">Format</span></code> accordingly. Click on the three points and navigate to your <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder. Here you can give it the layer the name “AOI_Larkana_adm3” and click <code class="docutils literal notranslate"><span class="pre">Save</span></code>. Now you should see the same name in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">name</span></code> field. Click <code class="docutils literal notranslate"><span class="pre">ok</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_queries_wiki.html#save-selected-features-as-a-new-file">Wiki Video</a>)
-Now you have an overview of where the district of Larkana is located in Sindh. The operations team can use this information.</p></li>
+<li><p>Find the row of Larkana and mark it by clicking on the number on the very left-hand side of the attribute table. The row will appear blue and the area of Larkana will turn yellow on the map canvas. You can right-click on the row and click <code class="docutils literal notranslate"><span class="pre">Zoom</span> <span class="pre">to</span> <span class="pre">Feature</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature">Wiki Video</a>).
+To select the surrounding districts, click on the <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">Feature(s)</span></code> <img alt="" src="../../_images/selection_toolbar_feature_selection.png" /> icon in the QGIS Toolbar, hold the <code class="docutils literal notranslate"><span class="pre">Shift</span></code> button on your keyboard, and click on the districts either on the map or the attribute table (<a class="reference internal" href="../Wiki/en_qgis_spatial_queries_wiki.html"><span class="doc std std-doc">Wiki Video</span></a>).</p></li>
+<li><p>After you are done selecting districts, click on the icon <img alt="" src="../../_images/selection_toolbar_feature_deselection.png" /> in thetoolbar to end the feature selection mode.</p></li>
+<li><p>Now right-click on the layer in the Layer Panel and click on <code class="docutils literal notranslate"><span class="pre">Export</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Selected</span> <span class="pre">Features</span> <span class="pre">as</span></code>. We want to save Larkana as a GeoPackage, so adjust <code class="docutils literal notranslate"><span class="pre">Format</span></code> accordingly. Click on the three points and navigate to your <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder. Here you can give it the layer the name <strong>“Flood_2024_AOI”</strong> and click <code class="docutils literal notranslate"><span class="pre">Save</span></code>. Now you should see the same name in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">name</span></code> field. Click <code class="docutils literal notranslate"><span class="pre">ok</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_queries_wiki.html#save-selected-features-as-a-new-file">Wiki Video</a>)</p></li>
 </ul>
 </li>
 </ol>
+<p>Now you have an overview of where the district of Larkana is located in Sindh. The operations team can use this information.</p>
 </section>
-<section id="task-2">
-<h2>Task 2:<a class="headerlink" href="#task-2" title="Permalink to this heading">#</a></h2>
-<p>Social media posts have also hinted at a significant impact on the health system in the region. You have been tasked to find out as much as you can about the situation and, if feasible, to estimate the effects on the health system.</p>
+<section id="task-2-estimation-of-flood-impact-on-the-health-sector-in-larkana">
+<h2>Task 2: Estimation of Flood Impact on the Health Sector in Larkana<a class="headerlink" href="#task-2-estimation-of-flood-impact-on-the-health-sector-in-larkana" title="Permalink to this heading">#</a></h2>
+<figure class="align-right" id="id1">
+<a class="reference internal image-reference" href="../../_images/IFRC-icons-colour_Health.svg"><img alt="../../_images/IFRC-icons-colour_Health.svg" src="../../_images/IFRC-icons-colour_Health.svg" width="100px" /></a>
+</figure>
+<p>Social media posts have hinted at a significant impact on the health system in the region. You have been tasked to find out as much as you can about the situation and, if feasible, to estimate the effects on the health system.</p>
+<ol class="arabic simple">
+<li><p>The first thing to do is to find out where the health facilities are located in the area. To that end, you do a quick search on HDX. You find the dataset <a class="reference external" href="https://data.humdata.org/dataset/hotosm_pak_health_facilities">Pakistan Health Facilities (OpenStreetMap Export)</a>. This will do for now.</p>
+<ul class="simple">
+<li><p>Download the dataset directly from HDX and save it in your “input” folder or use the “PAK_Sind_Health_Facilities.gpkg” from the exercise data.</p></li>
+<li><p>Drag and drop (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop">Wiki Video</a>) the dataset into QGIS and save the project.</p></li>
+<li><p>First, we must extract the health facilities in our area of interest. We will use the tool <strong>“Extract by Location”</strong> to do that.</p></li>
+<li><p>Open the <code class="docutils literal notranslate"><span class="pre">Processing</span> <span class="pre">Toolbox</span></code> (<span class="xref myst">here is how</span>) and search for the tool.</p>
+<ul>
+<li><p>As <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Layer</span></code> we will use “PAK_Sind_Health_Facilities”.</p></li>
+<li><p>For <code class="docutils literal notranslate"><span class="pre">By</span> <span class="pre">comparing</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">features</span> <span class="pre">from</span></code> we use the layer “Flood_2024_AOI”.</p></li>
+<li><p>As <code class="docutils literal notranslate"><span class="pre">Geometric</span> <span class="pre">predicate</span></code> we use <code class="docutils literal notranslate"><span class="pre">intersect</span></code>.</p></li>
+<li><p>To save the output click on the three points at <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">(location)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">to</span> <span class="pre">GeoPackage</span></code> and navigate to your <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder. Save the new layer under the name <strong>“Flood_2024_AOI”</strong>. Give the new layer the same <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">name</span></code> and click <code class="docutils literal notranslate"><span class="pre">Run</span></code>.</p></li>
+</ul>
+</li>
+<li><p>Open the Attribute table of the new layer and have a look.</p></li>
+</ul>
+</li>
+</ol>
+<figure class="align-center" id="extract-by-location-pakistan">
+<a class="reference internal image-reference" href="../../_images/PAK_extract_locatio_HS.png"><img alt="../../_images/PAK_extract_locatio_HS.png" src="../../_images/PAK_extract_locatio_HS.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-text">Extract by location Pakistan</span><a class="headerlink" href="#extract-by-location-pakistan" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Ok, now we have a good overview of the location of health facilities. We need much better information about the flooded area to identify the health facilities impacted by the flood. Fortunately, the UN has just shared a dataset about the extent of floods Satellite detected water extents from 08 to 12 August 2024 over Pakistan.</p>
+<ol class="arabic simple" start="2">
+<li><p>Load the dataset <strong>“VIIRS_20240721_20240803_MaximumFloodExtent_PAK.shp”</strong> and <strong>“VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp”</strong> into your QGIS.</p></li>
+</ol>
 </section>
 </section>
 
@@ -795,7 +832,7 @@ Now you have an overview of where the district of Larkana is located in Sindh. T
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-gain-an-overview-of-the-situation-around-larkana">Task 1: Gain an overview of the situation around Larkana</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2">Task 2:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-estimation-of-flood-impact-on-the-health-sector-in-larkana">Task 2: Estimation of Flood Impact on the Health Sector in Larkana</a></li>
 </ul>
   </nav></div>
 
