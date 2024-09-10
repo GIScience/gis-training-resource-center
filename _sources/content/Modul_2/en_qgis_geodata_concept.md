@@ -237,6 +237,21 @@ Layers in a GIS. Source: [CartONG](https://cartong.pages.gitlab.cartong.org/lear
 ```
 
 
+::::{tip} 
+
+##### Now it's your turn!
+
+Practical experience is key to mastering GIS. Now is a good moment to apply what we've learned in the first exercise of module 2.
+
+:::{card}
+:link: https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_geodata_concept_ex1.html
+
+__Module 2 Exercise 1: Understanding Geodata__
+
+:::
+::::
+
+
 ## Projections 
 ### Introduction
 
