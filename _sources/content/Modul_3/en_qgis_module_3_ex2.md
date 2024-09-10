@@ -107,7 +107,7 @@ The exercise data should be saved in a location where you can easily find them a
 width: 100px
 name: 
 align: right
-name: IFRC Surge
+name: IFRC Surge Icon
 ---
 ```
 
@@ -143,7 +143,7 @@ width: 100px
 name: 
 align: right
 
-name: IFRC Surge
+name: IFRC HEalth Icon
 ---
 ```
 
@@ -171,6 +171,19 @@ Extract by location Pakistan
 Ok, now we have a good overview of the location of health facilities. We need much better information about the flooded area to identify the health facilities impacted by the flood. Fortunately, the UN has just shared a dataset about the extent of floods Satellite detected water extents from 08 to 12 August 2024 over Pakistan.
 
 2. Load the dataset __"VIIRS_20240721_20240803_MaximumFloodExtent_PAK.shp"__ and __"VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp"__ into your QGIS.
-
+3. Once you have loaded the layers in QGIS, you can see that they are correctly displayed. However, upon checking the layer information, you can see that the new layers have a different Coordinate Reference System (CRS). They have the EPSG Code 9707 whereas our project has 4326 ([Wiki Video](/content/Wiki/en_qgis_projections_wiki.md#how-to-check-epsg-code-crs-of-layer-data)).
+    * Right click on the data layer, click on  “Properties”.
+    * The “Layer Properties” Window of the data layer will open. Click on “Information”.
+    * Under the headline “Coordinate Reference System (CRS)” you find all information about the CRS. The most important are:
+    - __Name:__     Here you find the EPSG Code
+    - __Unites:__    Here you can find whether it is possible to use meters with this data layer or latitude and longitude. 
+4. This will be a problem as soon as we do something different then just displaying the layers. Since we want to manipulate the layers in the next step we need to reproject them first ([Wiki Video](/content/Wiki/en_qgis_projections_wiki.md#changing-the-projection-of-a-vector-layer)). 
+    * Click on the `Vector` Tab -> `Data Management Tools` -> `Reproject Layer` or search for the tool in the `Processing Toolbox `.
+    * As `Input layer` select __"VIIRS_20240721_20240803_MaximumFloodExtent_PAK.shp"__
+    * Select as target CRS/ EPSG-Code __4326__.
+    * Save the new file in your `temp` folder by clicking on the three dots ![](/fig/Three_points.png) next to `Reprojected`, specify the file name as "Flood_extand_PAK_2024_Maximum_Flood_Extend_reprojected".
+    * Click `Run`
+    * Delete the old layer from the layer panel by right click on the layer -> `Remove layer`.
+5. Repeat the process with __"VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp"__ and name the result "Flood_extand_PAK_2024_Minimum_Flood_Extend_reprojected"
 
 	 

@@ -712,7 +712,7 @@ The exercise data should be saved in a location where you can easily find them a
 </section>
 <section id="task-1-gain-an-overview-of-the-situation-around-larkana">
 <h2>Task 1: Gain an overview of the situation around Larkana<a class="headerlink" href="#task-1-gain-an-overview-of-the-situation-around-larkana" title="Permalink to this heading">#</a></h2>
-<figure class="align-right" id="ifrc-surge">
+<figure class="align-right" id="ifrc-surge-icon">
 <a class="reference internal image-reference" href="../../_images/IFRC-icons-colour_SURGE.png"><img alt="../../_images/IFRC-icons-colour_SURGE.png" src="../../_images/IFRC-icons-colour_SURGE.png" style="width: 100px;" /></a>
 </figure>
 <p>You have been deployed as an information manager to the flood-affected regions of Pakistan. Upon your arrival you received reports from the operations team indicating that the city of <a class="reference external" href="https://www.openstreetmap.org/#map=12/27.5565/68.1672">Larkana</a> and its surrounding areas have been severely affected by the floods. The team needs a general overview of the location of the city.</p>
@@ -747,7 +747,7 @@ To select the surrounding districts, click on the <code class="docutils literal 
 </section>
 <section id="task-2-estimation-of-flood-impact-on-the-health-sector-in-larkana">
 <h2>Task 2: Estimation of Flood Impact on the Health Sector in Larkana<a class="headerlink" href="#task-2-estimation-of-flood-impact-on-the-health-sector-in-larkana" title="Permalink to this heading">#</a></h2>
-<figure class="align-right" id="id1">
+<figure class="align-right" id="ifrc-health-icon">
 <a class="reference internal image-reference" href="../../_images/IFRC-icons-colour_Health.svg"><img alt="../../_images/IFRC-icons-colour_Health.svg" src="../../_images/IFRC-icons-colour_Health.svg" width="100px" /></a>
 </figure>
 <p>Social media posts have hinted at a significant impact on the health system in the region. You have been tasked to find out as much as you can about the situation and, if feasible, to estimate the effects on the health system.</p>
@@ -776,8 +776,30 @@ To select the surrounding districts, click on the <code class="docutils literal 
 </figcaption>
 </figure>
 <p>Ok, now we have a good overview of the location of health facilities. We need much better information about the flooded area to identify the health facilities impacted by the flood. Fortunately, the UN has just shared a dataset about the extent of floods Satellite detected water extents from 08 to 12 August 2024 over Pakistan.</p>
-<ol class="arabic simple" start="2">
+<ol class="arabic" start="2">
 <li><p>Load the dataset <strong>“VIIRS_20240721_20240803_MaximumFloodExtent_PAK.shp”</strong> and <strong>“VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp”</strong> into your QGIS.</p></li>
+<li><p>Once you have loaded the layers in QGIS, you can see that they are correctly displayed. However, upon checking the layer information, you can see that the new layers have a different Coordinate Reference System (CRS). They have the EPSG Code 9707 whereas our project has 4326 (<span class="xref myst">Wiki Video</span>).</p>
+<ul class="simple">
+<li><p>Right click on the data layer, click on  “Properties”.</p></li>
+<li><p>The “Layer Properties” Window of the data layer will open. Click on “Information”.</p></li>
+<li><p>Under the headline “Coordinate Reference System (CRS)” you find all information about the CRS. The most important are:</p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>Name:</strong>     Here you find the EPSG Code</p></li>
+<li><p><strong>Unites:</strong>    Here you can find whether it is possible to use meters with this data layer or latitude and longitude.</p></li>
+</ul>
+</li>
+<li><p>This will be a problem as soon as we do something different then just displaying the layers. Since we want to manipulate the layers in the next step we need to reproject them first (<span class="xref myst">Wiki Video</span>).</p>
+<ul class="simple">
+<li><p>Click on the <code class="docutils literal notranslate"><span class="pre">Vector</span></code> Tab -&gt; <code class="docutils literal notranslate"><span class="pre">Data</span> <span class="pre">Management</span> <span class="pre">Tools</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Reproject</span> <span class="pre">Layer</span></code> or search for the tool in the <code class="docutils literal notranslate"><span class="pre">Processing</span> <span class="pre">Toolbox</span> </code>.</p></li>
+<li><p>As <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">layer</span></code> select <strong>“VIIRS_20240721_20240803_MaximumFloodExtent_PAK.shp”</strong></p></li>
+<li><p>Select as target CRS/ EPSG-Code <strong>4326</strong>.</p></li>
+<li><p>Save the new file in your <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder by clicking on the three dots <img alt="" src="../../_images/Three_points.png" /> next to <code class="docutils literal notranslate"><span class="pre">Reprojected</span></code>, specify the file name as “Flood_extand_PAK_2024_Maximum_Flood_Extend_reprojected”.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Run</span></code></p></li>
+<li><p>Delete the old layer from the layer panel by right click on the layer -&gt; <code class="docutils literal notranslate"><span class="pre">Remove</span> <span class="pre">layer</span></code>.</p></li>
+</ul>
+</li>
+<li><p>Repeat the process with <strong>“VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp”</strong> and name the result “Flood_extand_PAK_2024_Minimum_Flood_Extend_reprojected”</p></li>
 </ol>
 </section>
 </section>
