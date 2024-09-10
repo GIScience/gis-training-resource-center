@@ -6,11 +6,11 @@ __🔙[Back to Homepage](/content/intro.md)__
 
 ::::{grid} 2
 :::{grid-item-card}
-## Aim of the exercise
+##### Aim of the exercise
 
-This exercise will help you to get to know the interface of QGIS a bit better. Furthermore, you will load your first data in QGIS and gain some hands-on experience with the layer concept.
+This exercise will help you to get to know the interface of QGIS a bit better. Furthermore, you will load your first data in QGIS and gain some hands-on experience with the layer concept and learn how to reproject layers.
 
-#### Type of trainings exercise:
+##### Type of trainings exercise:
 
 - This exercise can be used in online and presence training. 
 - It can be done as a follow-along exercise or individually as a self-study.
@@ -19,9 +19,7 @@ This exercise will help you to get to know the interface of QGIS a bit better. F
 
 :::{grid-item-card}
 
-#### These skills are relevant for 
 
-- The skills tested in this exercise are necessary for all GIS-users.
 
 :::
 ::::
@@ -29,15 +27,15 @@ This exercise will help you to get to know the interface of QGIS a bit better. F
 ::::{grid} 2
 :::{grid-item-card}
 
-#### Estimated time demand for the exercise.
+##### Estimated time demand for the exercise.
 
-- The exercise takes around 1 hour to complete, depending on the number of participants and trainers. 
+- The exercise takes around 30 minutes to complete, depending on the number of participants and trainers. 
 
 :::
 
 :::{grid-item-card}
 
-## Relevant Wiki Articles
+##### Relevant Wiki Articles
 
 * [QGIS Interface](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
 * [Types of Geodata](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_types_wiki.html)
