@@ -544,6 +544,7 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-gain-an-overview-of-the-situation-around-larkana">Task 1: Gain an overview of the situation around Larkana</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-estimation-of-flood-impact-on-the-health-sector-in-larkana">Task 2: Estimation of Flood Impact on the Health Sector in Larkana</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-logistical-access-to-larkana-city">Task 2: Logistical access to Larkana City</a></li>
 </ul>
             </nav>
         </div>
@@ -733,12 +734,12 @@ The exercise data should be saved in a location where you can easily find them a
 <p>GeoPackage files can contain multiple files and even entire QGIS projects. When you load such a file in QGIS a window will appear in which you have to select the files you want to load in your QGIS project.</p>
 </div>
 <ol class="arabic simple" start="5">
-<li><p>First, we want to export <strong>Larkana District</strong> from <strong>PAK_adm2_Sindh</strong> to have it as a stand-alone vector layer. To do that,</p>
+<li><p>First, we want to export <strong>Larkana District</strong> and the sorinding districts <strong>Kambar Shahdad Kot</strong>, <strong>Shikarpur</strong>  and <strong>Sukkur</strong> from <strong>PAK_adm2_Sindh</strong> to have it as a stand-alone vector layer. To do that,</p>
 <ul class="simple">
 <li><p>Open the attribute table of <strong>PAK_adm2_Sindh</strong> by right click on the layer  -&gt; <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Attribute</span> <span class="pre">Table</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html">Wiki Video</a>).</p></li>
 <li><p>Find the row of Larkana and mark it by clicking on the number on the very left-hand side of the attribute table. The row will appear blue and the area of Larkana will turn yellow on the map canvas. You can right-click on the row and click <code class="docutils literal notranslate"><span class="pre">Zoom</span> <span class="pre">to</span> <span class="pre">Feature</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature">Wiki Video</a>).
 To select the surrounding districts, click on the <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">Feature(s)</span></code> <img alt="" src="../../_images/selection_toolbar_feature_selection.png" /> icon in the QGIS Toolbar, hold the <code class="docutils literal notranslate"><span class="pre">Shift</span></code> button on your keyboard, and click on the districts either on the map or the attribute table (<a class="reference internal" href="../Wiki/en_qgis_spatial_queries_wiki.html"><span class="doc std std-doc">Wiki Video</span></a>).</p></li>
-<li><p>After you are done selecting districts, click on the icon <img alt="" src="../../_images/selection_toolbar_feature_deselection.png" /> in thetoolbar to end the feature selection mode.</p></li>
+<li><p>After you are done selecting districts, click on the icon <img alt="" src="../../_images/selection_toolbar_feature_deselection.png" /> in the toolbar to end the feature selection mode.</p></li>
 <li><p>Now right-click on the layer in the Layer Panel and click on <code class="docutils literal notranslate"><span class="pre">Export</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Selected</span> <span class="pre">Features</span> <span class="pre">as</span></code>. We want to save Larkana as a GeoPackage, so adjust <code class="docutils literal notranslate"><span class="pre">Format</span></code> accordingly. Click on the three points and navigate to your <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder. Here you can give it the layer the name <strong>“Flood_2024_AOI”</strong> and click <code class="docutils literal notranslate"><span class="pre">Save</span></code>. Now you should see the same name in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">name</span></code> field. Click <code class="docutils literal notranslate"><span class="pre">ok</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_queries_wiki.html#save-selected-features-as-a-new-file">Wiki Video</a>)</p></li>
 </ul>
 </li>
@@ -762,7 +763,7 @@ To select the surrounding districts, click on the <code class="docutils literal 
 <li><p>As <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Layer</span></code> we will use “PAK_Sind_Health_Facilities”.</p></li>
 <li><p>For <code class="docutils literal notranslate"><span class="pre">By</span> <span class="pre">comparing</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">features</span> <span class="pre">from</span></code> we use the layer “Flood_2024_AOI”.</p></li>
 <li><p>As <code class="docutils literal notranslate"><span class="pre">Geometric</span> <span class="pre">predicate</span></code> we use <code class="docutils literal notranslate"><span class="pre">intersect</span></code>.</p></li>
-<li><p>To save the output click on the three points at <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">(location)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">to</span> <span class="pre">GeoPackage</span></code> and navigate to your <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder. Save the new layer under the name <strong>“Flood_2024_AOI”</strong>. Give the new layer the same <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">name</span></code> and click <code class="docutils literal notranslate"><span class="pre">Run</span></code>.</p></li>
+<li><p>To save the output click on the three points at <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">(location)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">to</span> <span class="pre">GeoPackage</span></code> and navigate to your <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder. Save the new layer under the name <strong>“Health_Facilities_Flood_2024_AOI”</strong>. Give the new layer the same <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">name</span></code> and click <code class="docutils literal notranslate"><span class="pre">Run</span></code>.</p></li>
 </ul>
 </li>
 <li><p>Open the Attribute table of the new layer and have a look.</p></li>
@@ -777,7 +778,7 @@ To select the surrounding districts, click on the <code class="docutils literal 
 </figure>
 <p>Ok, now we have a good overview of the location of health facilities. We need much better information about the flooded area to identify the health facilities impacted by the flood. Fortunately, the UN has just shared a dataset about the extent of floods Satellite detected water extents from 08 to 12 August 2024 over Pakistan.</p>
 <ol class="arabic" start="2">
-<li><p>Load the dataset <strong>“VIIRS_20240721_20240803_MaximumFloodExtent_PAK.shp”</strong> and <strong>“VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp”</strong> into your QGIS.</p></li>
+<li><p>Load the dataset <strong>“VIIRS_20240721_20240803_MaximumFloodExtent_PAK.shp”</strong> into your QGIS.</p></li>
 <li><p>Once you have loaded the layers in QGIS, you can see that they are correctly displayed. However, upon checking the layer information, you can see that the new layers have a different Coordinate Reference System (CRS). They have the EPSG Code 9707 whereas our project has 4326 (<span class="xref myst">Wiki Video</span>).</p>
 <ul class="simple">
 <li><p>Right click on the data layer, click on  “Properties”.</p></li>
@@ -792,15 +793,92 @@ To select the surrounding districts, click on the <code class="docutils literal 
 <li><p>This will be a problem as soon as we do something different then just displaying the layers. Since we want to manipulate the layers in the next step we need to reproject them first (<span class="xref myst">Wiki Video</span>).</p>
 <ul class="simple">
 <li><p>Click on the <code class="docutils literal notranslate"><span class="pre">Vector</span></code> Tab -&gt; <code class="docutils literal notranslate"><span class="pre">Data</span> <span class="pre">Management</span> <span class="pre">Tools</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Reproject</span> <span class="pre">Layer</span></code> or search for the tool in the <code class="docutils literal notranslate"><span class="pre">Processing</span> <span class="pre">Toolbox</span> </code>.</p></li>
-<li><p>As <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">layer</span></code> select <strong>“VIIRS_20240721_20240803_MaximumFloodExtent_PAK.shp”</strong></p></li>
+<li><p>As <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">layer</span></code> select <strong>“Flood_extand_PAK_2024_Minimum_Flood_Extend.shp”</strong></p></li>
 <li><p>Select as target CRS/ EPSG-Code <strong>4326</strong>.</p></li>
-<li><p>Save the new file in your <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder by clicking on the three dots <img alt="" src="../../_images/Three_points.png" /> next to <code class="docutils literal notranslate"><span class="pre">Reprojected</span></code>, specify the file name as “Flood_extand_PAK_2024_Maximum_Flood_Extend_reprojected”.</p></li>
+<li><p>Save the new file in your <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder by clicking on the three dots <img alt="" src="../../_images/Three_points.png" /> next to <code class="docutils literal notranslate"><span class="pre">Reprojected</span></code>, specify the file name as <strong>“Flood_extand_PAK_2024_Minimum_Flood_Extend_reprojected.”</strong>.</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Run</span></code></p></li>
 <li><p>Delete the old layer from the layer panel by right click on the layer -&gt; <code class="docutils literal notranslate"><span class="pre">Remove</span> <span class="pre">layer</span></code>.</p></li>
+<li><p>Adjust the opacity of the flood layer by right-clicking on layer <strong>“Flood_extand_PAK_2024_Minimum_Flood_Extend_reprojected”</strong> in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. A new window will open up with a vertical tab section on the left. Navigate to the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> tab. Adjusted the opacity to around 60 % by moving the slider.</p></li>
 </ul>
 </li>
-<li><p>Repeat the process with <strong>“VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp”</strong> and name the result “Flood_extand_PAK_2024_Minimum_Flood_Extend_reprojected”</p></li>
 </ol>
+<p>We have observed that certain health facilities have been impacted by the flooding. In order to visually represent this information on the map, we plan to include a new attribute called “affected” in the attribute table of <strong>Health_Facilities_Flood_2024_AOI</strong>. To accomplish this, our first step will involve selecting all the affected health facilities, after which we will proceed to append a new column to the attribute table of __Health_Facilities_Flood_2024_AOI __to hold this information.
+5. Open the <code class="docutils literal notranslate"><span class="pre">Processing</span> <span class="pre">Toolbox</span></code> (<span class="xref myst">here is how</span>) and search for the tool <strong>“Select by Location”</strong>.
+* <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">features</span> <span class="pre">from</span></code> = <strong>Health_Facilities_Flood_2024_AOI</strong>
+* As <code class="docutils literal notranslate"><span class="pre">Geometric</span> <span class="pre">predicate</span></code> we use <code class="docutils literal notranslate"><span class="pre">intersect</span></code>.
+* For <code class="docutils literal notranslate"><span class="pre">By</span> <span class="pre">comparing</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">features</span> <span class="pre">from</span></code> we use the layer <strong>“Flood_extand_PAK_2024_Minimum_Flood_Extend_reprojected.”</strong>.
+* <code class="docutils literal notranslate"><span class="pre">Modify</span> <span class="pre">current</span> <span class="pre">selection</span> <span class="pre">by</span></code> = <code class="docutils literal notranslate"><span class="pre">creating</span> <span class="pre">new</span> <span class="pre">selection</span></code>.
+*  Click <code class="docutils literal notranslate"><span class="pre">Run</span></code>.</p>
+<figure class="align-center" id="select-flood-affected-health-facilities">
+<a class="reference internal image-reference" href="../../_images/PAK_flood_select_by_location.PNG"><img alt="../../_images/PAK_flood_select_by_location.PNG" src="../../_images/PAK_flood_select_by_location.PNG" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-text">Select flood affected health facilities</span><a class="headerlink" href="#select-flood-affected-health-facilities" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>In case you encounter the error:</p>
+<blockquote>
+<div><p>Feature (1) from “Flood_extand_PAK_2024_Minimum_Flood_Extend_reprojected” has invalid geometry. Please fix the geometry or change the Processing setting to the “Ignore invalid input features” option.
+Execution failed after 0.07 seconds</p>
+</div></blockquote>
+<p>You need to use the tool <strong>“Fix Geometry”</strong>.</p>
+<ul class="simple">
+<li><p>To do so Open the <code class="docutils literal notranslate"><span class="pre">Processing</span> <span class="pre">Toolbox</span></code> (<span class="xref myst">here is how</span>) and search for the tool <strong>“Fix Geometries”</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">layer</span></code> = <code class="docutils literal notranslate"><span class="pre">Flood_extand_PAK_2024_Minimum_Flood_Extend_reprojected</span></code></p></li>
+<li><p>Save the new file in your <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder by clicking on the three dots <img alt="" src="../../_images/Three_points.png" /> next to <code class="docutils literal notranslate"><span class="pre">Reprojected</span></code>, specify the file name as <strong>“Flood_extand_PAK_2024_Minimum_Flood_Extend_reprojected_fix</strong>.</p></li>
+</ul>
+<figure class="align-center" id="fix-geometry">
+<a class="reference internal image-reference" href="../../_images/PAK_flood_ngeomertrie__error.PNG"><img alt="../../_images/PAK_flood_ngeomertrie__error.PNG" src="../../_images/PAK_flood_ngeomertrie__error.PNG" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-text">Fix Geometry</span><a class="headerlink" href="#fix-geometry" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<p>If you need to fix the geometry, repeat the step of 5. with the new layer <strong>“Flood_extand_PAK_2024_Minimum_Flood_Extend_reprojected_fix</strong></p>
+<ol class="arabic simple" start="6">
+<li><p>Open the attribute table of <strong>Health_Facilities_Flood_2024_AOI</strong> by right click on the layer  -&gt; <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Attribute</span> <span class="pre">Table</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html">Wiki Video</a>) and activate the editing mode by clicking on <img alt="" src="../../_images/mActionToggleEditing.png" /> (<span class="xref myst">Wiki Video</span>). Now you are able to edit the data directly in the table.</p></li>
+<li><p>First, we add a new column with the name <strong>“Flood_affected”</strong>. To do so, click on <img alt="" src="../../_images/mActionNewAttribute.png" />. In the <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">field</span></code> window, you have to add the name and set the <code class="docutils literal notranslate"><span class="pre">Type</span></code> to <code class="docutils literal notranslate"><span class="pre">Text(string)</span></code>. Click <code class="docutils literal notranslate"><span class="pre">OK</span></code> (<a class="reference internal" href="../Wiki/en_qgis_attribute_table_wiki.html"><span class="doc std std-doc">Wiki Video</span></a>)</p></li>
+</ol>
+<figure class="align-center" id="new-column-pakistan">
+<a class="reference internal image-reference" href="../../_images/PAK_flood_new_column.PNG"><img alt="../../_images/PAK_flood_new_column.PNG" src="../../_images/PAK_flood_new_column.PNG" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-text">Add new column</span><a class="headerlink" href="#new-column-pakistan" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="8">
+<li><p>Now look for the <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">all</span> <span class="pre">Features</span></code> option in the lower left corner and click on it. Then, select the option <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">selected</span> <span class="pre">features</span></code> (<span class="xref myst">Wiki Video</span>). This will filter the table to display only the rows that represent the health facilities directly impacted by the flood.
+Now, you can write <code class="docutils literal notranslate"><span class="pre">Yes</span></code> in the <strong>Flood_affected</strong> column.</p></li>
+</ol>
+<ul class="simple">
+<li><p>When you are done, click <img alt="" src="../../_images/mActionSaveEdits.png" /> to save your edits and switch off the editing mode by again clicking on <img alt="" src="../../_images/mActionToggleEditing.png" />(<span class="xref myst">Wiki Video</span>).</p></li>
+</ul>
+<ol class="arabic simple" start="9">
+<li><p>To visualise the enriched data set, we use the function “Categorized Classification” function. This means that we select a column from the attribute table and use the content as categories to sort and display the data (<a class="reference internal" href="../Wiki/en_qgis_categorized_wiki.html"><span class="doc std std-doc">Wiki Video</span></a>).</p>
+<ul class="simple">
+<li><p>Right-click on the layer <strong>Health_Facilities_Flood_2024_AOI</strong> in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. A new window will open up with a vertical tab section on the left. Navigate to the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> tab.</p></li>
+<li><p>On the top you find a dropdown menu. Open it and choose <code class="docutils literal notranslate"><span class="pre">Categorized</span></code>. Under <code class="docutils literal notranslate"><span class="pre">Value</span></code> select “Flood_affacted”.</p></li>
+<li><p>Further down the window, click on <code class="docutils literal notranslate"><span class="pre">Classify</span></code>.  Now you should see all unique values or attributes of the selected “Flood_affacted” column.  You can adjust the colours by double-clicking on one row in the central field. Once you are done, click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code> to close the symbology window.</p></li>
+</ul>
+</li>
+</ol>
+<figure class="align-center" id="flood-affected-health-facilities-classification">
+<a class="reference internal image-reference" href="../../_images/en_qgis_categorized_classification_Pakistan_flood_exercise.png"><img alt="../../_images/en_qgis_categorized_classification_Pakistan_flood_exercise.png" src="../../_images/en_qgis_categorized_classification_Pakistan_flood_exercise.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Flood affected health facilities classification</span><a class="headerlink" href="#flood-affected-health-facilities-classification" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>We’ve pinpointed the specific health facilities that have been inundated by the floods. Our findings indicate that a total of four facilities have been completely flooded and are currently non-operational. Considering we assessed the minimum flood impact, it’s highly probable that more health facilities will also be impacted. This data is crucial for our operational team as it will enable them to strategize and execute an effective response.</p>
+</section>
+<section id="task-2-logistical-access-to-larkana-city">
+<h2>Task 2: Logistical access to Larkana City<a class="headerlink" href="#task-2-logistical-access-to-larkana-city" title="Permalink to this heading">#</a></h2>
+<p>The operations team is making plans to deliver much-needed supplies to the affected region around Larkana, where they are desperately needed. Currently, there is uncertainty about how the supplies can be transported there. The operations team has asked for more information on this issue.</p>
+<p>They need answers to the following three questions:</p>
+<ul class="simple">
+<li><p>Which roads leading into Larkana are blocked, and at what specific locations are they blocked?</p></li>
+<li><p>Are there any bridges that can be crossed from the eastern side of the Indus to the western side, and where are these bridges located?</p></li>
+<li><p>If transporting supplies by road into the region is not feasible, what alternative method could be used to deliver the supplies?</p></li>
+</ul>
 </section>
 </section>
 
@@ -855,6 +933,7 @@ To select the surrounding districts, click on the <code class="docutils literal 
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-gain-an-overview-of-the-situation-around-larkana">Task 1: Gain an overview of the situation around Larkana</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-estimation-of-flood-impact-on-the-health-sector-in-larkana">Task 2: Estimation of Flood Impact on the Health Sector in Larkana</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-logistical-access-to-larkana-city">Task 2: Logistical access to Larkana City</a></li>
 </ul>
   </nav></div>
 
