@@ -71,7 +71,7 @@ represented by a line, a building will be represented by polygon and a tree migh
 ```{figure} /fig/en_geodata_example_2.png
 ---
 name: geometry geodata example 2
-width: 600px
+width: 700px
 ---
 Geographic information can be an address and/or GPS coordinates
 ```
@@ -92,8 +92,8 @@ The figure below shows the same dataset displayed both as its geometric represen
 
 ```{figure} /fig/example_geometric_and_attribute_view.png
 ---
-name:example_geometric_vs_attribute_view
-width: 650 px
+name: example_geometric_vs_attribute_view
+width: 700 px
 ---
 Each polygon on the left represents one row (feature) on the right. 
 ```
@@ -237,9 +237,8 @@ Layers in a GIS. Source: [CartONG](https://cartong.pages.gitlab.cartong.org/lear
 ```
 
 
-::::{tip} 
-
-##### Now it's your turn!
+::::{admonition} Now it's your turn!
+:class: tip
 
 Practical experience is key to mastering GIS. Now is a good moment to apply what we've learned in the first exercise of module 2.
 
@@ -366,9 +365,9 @@ characteristic:
 
 | Characteristic  | Mercator (cylindrical) | Lambert cylindrical | Albers conic |
 | :----------- |:--------------------: | :-----------------: | :----------: |
-| Shape | - [x]             |  - [ ]          |  - [x]    |
-| Rotation | - [x]           |  - [x]      |  - [ ]  |
-| Area | - [ ]              |  - [x]            |  - [x]    |
+| Shape | ✅            |  ❌          |  ✅   |
+| Rotation | ✅          |  ✅      |  ❌  |
+| Area | ❌             |  ✅           |  ✅   |
 
 
 #### Metric and Geographic Coordinate Reference Systems
@@ -390,6 +389,12 @@ width: 600 px
 A geographic representation of the globe. The distance between the meridians converge towards the north and south pole. 
 ```
 
+```{caution}
+
+When processing geodata, QGIS always uses the units of measurements of the layer that you are processing.
+
+```
+
 #### Local and Global CRS
 
 
@@ -408,12 +413,27 @@ accurate display. However, local projections heavily distort the map on a global
 
 ### How to check and change the project coordinate reference system
 
+```{admonition} Now it's your turn!
+:class: tip
+
+Understanding projections and coordinate reference systems is not easy. The next steps can be followed with any geodata layer in your QGIS project. Alternatively, exercise X of this module has been specifically designed to help understanding projections. 
+
+:::{card}
+:link:
+
+__Module 2 Exercise X: Understanding Projection and CRS__
+
+:::
+
+```
+
 ```{Note}
 One of the first things you do when starting a new QGIS project should be to check and adjust the CRS/EPSG code to 
 the region or area you are working on. If you are working on a map showing the entire globe, global projection such 
 as the mercator projection should be used. If you are working on a smaller region, such as a continent, a country, 
-or even smaller regions, __you should always use a local CRS, to avoid inaccuracies__. 
+or even smaller regions, __you should always use a local CRS, to avoid inaccuracies__. If you don't know which CRS to use, you can search for a suited one on EPSG.IO. Simply enter the name of your region and take a look at the available options. Make sure that the CRS you choose is in the correct unit of measurements (metres, feet, or degrees)
 ```
+
 
 1. Open a QGIS project
 2. In the very down right corner of QGIS you find the button `EPSG`. The number 
@@ -421,6 +441,8 @@ next to it is the EPSG Code currently used in the project. To see more informati
 3. The window `Project Properties` will open. Here you can view all available 
 CRS/EPSG-Code and their properties.
 4. To change the CRS/EPSG code, select the one you want to use and click `Apply`.
+
+
 
 :::{dropdown} Video: How to check and change the CRS in your QGIS project
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_change_project_CRS.mp4"></video>
