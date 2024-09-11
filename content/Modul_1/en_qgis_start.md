@@ -16,16 +16,18 @@ you can click, forms you can fill out to do tasks, and it's generally a visual i
 - You may __view, edit, capture and analyze spatial data or create printable maps__ with it. QGIS was created in 2002 
 and is a project of volunteers. And it is __constantly changing__.
 - QGIS is backed by a __large community of users__, so it’s easy to find solutions to technical issues by using QGIS forums, blogs, or sub-reddits. The official QGIS community can be found [here](https://qgis.org/en/site/forusers/support.html#support). Additionally, a list of helpful websites can be found on the [wiki here](content/Wiki/en_qgis_common_errors_and_Issues.md).
-- 
+
 
 
 ```{note}
-QGIS is constantly changing, with new features being added. Because of this, the newer versions can have changes or even bugs (such as crashes). However, there is always a stable 
+QGIS is constantly changing, with new features being added. Because of this, the newer versions can have changes or even bugs (such as crashes). However, there is always a stable version available, which is supported for longer.
 ```
 
-<!--FIXME: More practical example to follow along (add a basemap from xyz tiles or something, see issue) -->
+```{note}
+Keep in mind that as QGIS gets developed further, the interface and functions of QGIS are subject to changes. The material written for this platform is referring to QGIS Version 3.36. If the training material is no longer up to date, take a look at the [QGIS Documentation](https://docs.qgis.org/3.34/en/docs/index.html).
 
-___
+```
+
 
 ## Working with QGIS
 
@@ -44,18 +46,15 @@ QGIS offer tools to create your own geodata. For example, with the digitizing to
 
 Sometimes working with GIS requires you to go and collect the data in the field. In this case, you can use [web and mobile apps](content\Wiki\en_web_and_mobile_apps_wiki.md). 
 
-<!--Insert examples for data creation.-->
+
 
 :::
 
 :::{tab-item} Data Processing
 
 QGIS offers a wide range of algorithms to process geodata. In the following modules, you will get to know a number of 
-algorithms that are especially useful for GIS in humanitarian work. For example, you can:
-- Select the houses which are at risk of being flooded
-- Calculate the area of agricultural land
-
-You will learn more about data processing and manipulation in module 2 and onwards. 
+algorithms that are especially useful for GIS in humanitarian work. 
+You will learn more about data processing and manipulation in [module 2](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_module_2_overview.html) onwards. 
 
 <!--ADD: more examples-->
 <!--ADD: add link to basic data processing and visualisation chapters-->
@@ -77,7 +76,7 @@ assign symbols in [Module 4: Visualisation of Geodata and Map Making](/content/M
 :::
 ::::
 
-<!--ADD: insert link to layer concept in What is GIS (which is also missing)-->
+
 
 
 :::{dropdown} A note on plugins
