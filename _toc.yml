@@ -21,6 +21,7 @@ parts:
           - file: content/Modul_2/en_qgis_geodata_concept.md
           - file: content/Modul_2/en_qgis_basic_data_processing.md
           - file: content/Modul_2/en_qgis_attribute_table.md
+          - file: content/Modul_2/en_qgis_projections.md
           - file: content/Modul_2/en_data_sources.md
           - file: content/Modul_2/en_qgis_basemap.md
           - file: content/Modul_2/en_qgis_modul_2_exercises.md
