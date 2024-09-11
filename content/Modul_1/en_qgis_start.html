@@ -182,9 +182,10 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 2</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Modul_2/en_module_2_overview.html">Working with Geodata</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Modul_2/en_qgis_geodata_concept.html">Introduction to geodata, layers, and projections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_2/en_qgis_geodata_concept.html">Introduction to geodata and layers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Modul_2/en_qgis_basic_data_processing.html">Geodata management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Modul_2/en_qgis_attribute_table.html">Attribute Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_2/en_qgis_projections.html">Projections</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Modul_2/en_data_sources.html">Data sources</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Modul_2/en_qgis_basemap.html">Basemaps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Modul_2/en_qgis_modul_2_exercises.html">Exercises Module 2 - Working with Geodata</a></li>
@@ -237,7 +238,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 8 - Remote Sensing and Raster Data</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../Modul_8/en_qgis_remote_sensing_raster_theorie.html">Remote Sensing and Raster data theorie 🛰️</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Modul_8/en_qgis_remote_sensing_raster_theorie.html">Remote Sensing and Raster data theory 🛰️</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Modul_8/en_qgis_remote_sensing_theory.html">Introduction to Remote Sensing and Remote Sensing Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Modul_8/en_qgis_modul_8_ex1.html">Rasterdata Exercise 1: Basic Assessment of Flood Exposure in the Indus Basin in Pakistan</a></li>
 </ul>
@@ -591,15 +592,16 @@ you can click, forms you can fill out to do tasks, and it’s generally a visual
 <li><p>You may <strong>view, edit, capture and analyze spatial data or create printable maps</strong> with it. QGIS was created in 2002
 and is a project of volunteers. And it is <strong>constantly changing</strong>.</p></li>
 <li><p>QGIS is backed by a <strong>large community of users</strong>, so it’s easy to find solutions to technical issues by using QGIS forums, blogs, or sub-reddits. The official QGIS community can be found <a class="reference external" href="https://qgis.org/en/site/forusers/support.html#support">here</a>. Additionally, a list of helpful websites can be found on the <span class="xref myst">wiki here</span>.</p></li>
-<li></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>QGIS is constantly changing, with new features being added. Because of this, the newer versions can have changes or even bugs (such as crashes). However, there is always a stable</p>
+<p>QGIS is constantly changing, with new features being added. Because of this, the newer versions can have changes or even bugs (such as crashes). However, there is always a stable version available, which is supported for longer.</p>
 </div>
-<!--FIXME: More practical example to follow along (add a basemap from xyz tiles or something, see issue) -->
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Keep in mind that as QGIS gets developed further, the interface and functions of QGIS are subject to changes. The material written for this platform is referring to QGIS Version 3.36. If the training material is no longer up to date, take a look at the <a class="reference external" href="https://docs.qgis.org/3.34/en/docs/index.html">QGIS Documentation</a>.</p>
+</div>
 </section>
-<hr class="docutils" />
 <section id="working-with-qgis">
 <h2>Working with QGIS<a class="headerlink" href="#working-with-qgis" title="Permalink to this heading">#</a></h2>
 <p>In QGIS, you create projects where you visualise and manipulate geodata. There are three main workflows you will use: <strong>Data collection and creation, data processing, and data visualisation</strong>. Geodata is loaded into QGIS projects which will represented as layers on a map canvas.</p>
@@ -613,18 +615,13 @@ and is a project of volunteers. And it is <strong>constantly changing</strong>.<
 Data Collection and Creation</label><div class="sd-tab-content docutils">
 <p>QGIS offer tools to create your own geodata. For example, with the digitizing tools, you can create points, polygons, and lines with information which can represent spatial information. Furthermore, georeferencing let’s you add geographic information to various types of data, such as satellite imagery or hand-drawn maps. You will learn how to create geodata and how to georeference data in <strong><a class="reference internal" href="../Modul_2/en_module_2_overview.html"><span class="doc std std-doc">module 2</span></a></strong>.</p>
 <p>Sometimes working with GIS requires you to go and collect the data in the field. In this case, you can use <span class="xref myst">web and mobile apps</span>.</p>
-<!--Insert examples for data creation.-->
 </div>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-1">
 Data Processing</label><div class="sd-tab-content docutils">
 <p>QGIS offers a wide range of algorithms to process geodata. In the following modules, you will get to know a number of
-algorithms that are especially useful for GIS in humanitarian work. For example, you can:</p>
-<ul class="simple">
-<li><p>Select the houses which are at risk of being flooded</p></li>
-<li><p>Calculate the area of agricultural land</p></li>
-</ul>
-<p>You will learn more about data processing and manipulation in module 2 and onwards.</p>
+algorithms that are especially useful for GIS in humanitarian work.
+You will learn more about data processing and manipulation in <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_module_2_overview.html">module 2</a> onwards.</p>
 <!--ADD: more examples-->
 <!--ADD: add link to basic data processing and visualisation chapters-->
 </div>
@@ -639,7 +636,6 @@ assign symbols in <a class="reference internal" href="../Modul_4/en_qgis_map_des
 <!--FIXME: Insert link to overview page on module 3-->
 </div>
 </div>
-<!--ADD: insert link to layer concept in What is GIS (which is also missing)-->
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 A note on plugins<div class="sd-summary-down docutils">

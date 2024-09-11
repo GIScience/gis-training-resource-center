@@ -66,7 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Attribute Table" href="en_qgis_attribute_table.html" />
-    <link rel="prev" title="Introduction to geodata, layers, and projections" href="en_qgis_geodata_concept.html" />
+    <link rel="prev" title="Introduction to geodata and layers" href="en_qgis_geodata_concept.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -182,9 +182,10 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 2</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="en_module_2_overview.html">Working with Geodata</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_geodata_concept.html">Introduction to geodata, layers, and projections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_geodata_concept.html">Introduction to geodata and layers</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Geodata management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_attribute_table.html">Attribute Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_projections.html">Projections</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_data_sources.html">Data sources</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_basemap.html">Basemaps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_modul_2_exercises.html">Exercises Module 2 - Working with Geodata</a></li>
@@ -237,7 +238,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 8 - Remote Sensing and Raster Data</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../Modul_8/en_qgis_remote_sensing_raster_theorie.html">Remote Sensing and Raster data theorie 🛰️</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Modul_8/en_qgis_remote_sensing_raster_theorie.html">Remote Sensing and Raster data theory 🛰️</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Modul_8/en_qgis_remote_sensing_theory.html">Introduction to Remote Sensing and Remote Sensing Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Modul_8/en_qgis_modul_8_ex1.html">Rasterdata Exercise 1: Basic Assessment of Flood Exposure in the Indus Basin in Pakistan</a></li>
 </ul>
@@ -540,22 +541,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geodata-management-fundamentals">Geodata management: Fundamentals</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fundamentals-of-geodata-management">Fundamentals of Geodata Management</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-folder-structure">Standard folder structure</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geodata-naming">Geodata naming</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-import">Data import</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vector-data-import">Vector data import</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#open-vector-data-via-the-data-source-manager">Open vector data via the Data Source Manager</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#open-vector-data-via-drag-and-drop">Open vector data via drag-and-drop</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delimited-text-import-csv-txt">Delimited text import (.csv, .txt)</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#open-delimited-text-layer">Open Delimited Text Layer</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#raster-data-import">Raster data import</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#naming-geodata">Naming Geodata</a></li>
 </ul>
 </li>
 </ul>
@@ -574,15 +562,9 @@ document.write(`
 <p><strong>🔙<a class="reference internal" href="../intro.html"><span class="doc std std-doc">Back to Homepage</span></a></strong></p>
 <p>In this chapter, we will have a close look at how to work with geodata in QGIS.
 Since vector data is the primary geodata type you will work with at the beginning
-of your GIS career, we will focus on vector geodata.</p>
-<p><strong>Competences:</strong></p>
-<ul class="simple">
-<li><p>Data import</p></li>
-<li><p>Geo features and attributes</p></li>
-<li><p>Feature selection</p></li>
-</ul>
-<section id="geodata-management-fundamentals">
-<h2>Geodata management: Fundamentals<a class="headerlink" href="#geodata-management-fundamentals" title="Permalink to this heading">#</a></h2>
+of your GIS career, we will focus on vector geodata. We will learn how to set up a coherent folder structure for your GIS-data and projects and how to name geodata correctly.</p>
+<section id="fundamentals-of-geodata-management">
+<h2>Fundamentals of Geodata Management<a class="headerlink" href="#fundamentals-of-geodata-management" title="Permalink to this heading">#</a></h2>
 <p>Working with geodata is not like working with data in programs such as Microsoft
 Excel or Word. Whenever you load an image in a Word file, the file will contain
 the image. If you delete the image on your computer, the Word file will still
@@ -617,12 +599,12 @@ helps ensure the QGIS project will work as intended</p></li>
 <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../_images/Standard_project_folder_structure.drawio.svg"><img alt="../../_images/Standard_project_folder_structure.drawio.svg" src="../../_images/Standard_project_folder_structure.drawio.svg" width="600px" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 31 </span><span class="caption-text">Standard folder structure. Source: HeiGIT</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 26 </span><span class="caption-text">Standard folder structure. Source: HeiGIT</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="geodata-naming">
-<h3>Geodata naming<a class="headerlink" href="#geodata-naming" title="Permalink to this heading">#</a></h3>
+<section id="naming-geodata">
+<h3>Naming Geodata<a class="headerlink" href="#naming-geodata" title="Permalink to this heading">#</a></h3>
 <p>Naming your data correctly ensures that you can identify the layers and your computer does not run into any issues
 when working with your data files. The name of your files themselves need to be clear, meaning that you or others
 can identify what the data shows, where the data comes from, and to what time it refers. In QGIS, you should name
@@ -647,152 +629,6 @@ In this way, other people can understand what purpose different layers serve and
 whether they are needed in the final project.</p>
 <p><code class="docutils literal notranslate"><span class="pre">adm0</span> <span class="pre">&gt;&gt;</span> <span class="pre">adm0_projUTM</span> <span class="pre">&gt;&gt;</span> <span class="pre">adm0_projUTM_clipUrban</span> <span class="pre">&gt;&gt;</span> <span class="pre">adm0_projUTM_clipUrban_intersectFacilities</span> <span class="pre">&gt;&gt;</span> <span class="pre">facilities_processed</span></code></p>
 </section>
-</section>
-<section id="data-import">
-<h2>Data import<a class="headerlink" href="#data-import" title="Permalink to this heading">#</a></h2>
-<p>Before you can start creating maps in QGIS, you will need to load your data into QGIS. Depending on which file format you want to import, the process differs slightly.</p>
-<section id="vector-data-import">
-<h3>Vector data import<a class="headerlink" href="#vector-data-import" title="Permalink to this heading">#</a></h3>
-<p>Typical <span class="xref myst">vector data formats</span> are Shapefile (<code class="docutils literal notranslate"><span class="pre">.shp</span></code>) and GeoPackage (<code class="docutils literal notranslate"><span class="pre">.gpkg</span></code>).
-The process of importing vector data in either of the two formats is the same.</p>
-<p>QGIS offers a few ways to load vector data into QGIS. The most immediate is via drag-and-drop, where you simply
-drag the data files you want to add to your QGIS project from your file browser into the QGIS window. Another
-method is via the “<strong>Data Source Manager</strong>” (<code class="docutils literal notranslate"><span class="pre">Layer</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Data</span> <span class="pre">Source</span> <span class="pre">Manager</span></code>). You can also open the Data Source
-Manager with the keyboard-shortcut <code class="docutils literal notranslate"><span class="pre">CTRL</span> <span class="pre">+</span> <span class="pre">L</span></code>.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>GeoPackage files can contain multiple datasets and even whole QGIS projects.
-When you load a GeoPackage in QGIS, a window will appear where you can select
-the datasets you want to load.</p>
-</div>
-<section id="open-vector-data-via-the-data-source-manager">
-<h4>Open vector data via the Data Source Manager<a class="headerlink" href="#open-vector-data-via-the-data-source-manager" title="Permalink to this heading">#</a></h4>
-<ol class="arabic simple">
-<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Vector</span> <span class="pre">Layer...</span></code>. This will open the Data Source Manager.</p></li>
-<li><p>Click on the three points <img alt="" src="../../_images/Three_points.png" /> and navigate to your
-vector file</p></li>
-<li><p>Select the file and click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. More options will appear. In most cases, you can leave these options as they are.</p></li>
-<li><p>Back in QGIS click <code class="docutils literal notranslate"><span class="pre">Add</span></code></p></li>
-</ol>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p>QGIS only lets you import <strong>unzipped</strong> shapefiles. Make sure to unzip your data files before importing them into QGIS.</p>
-</div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Video: Importing vector data via the Data Source Manager<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_vector.mp4"></video></p>
-</div>
-</details></section>
-<section id="open-vector-data-via-drag-and-drop">
-<h4>Open vector data via drag-and-drop<a class="headerlink" href="#open-vector-data-via-drag-and-drop" title="Permalink to this heading">#</a></h4>
-<p>QGIS lets you open data in your QGIS-project by simply dragging the files from your file browser onto your QGIS window. Shapefiles contain only 1 layer per <code class="docutils literal notranslate"><span class="pre">.shp</span></code>-files, which will be added automatically into you layer-panel. Geopackage files (<code class="docutils literal notranslate"><span class="pre">.gpk</span></code>) can contain multiple layers in a single file. If you add a geopackage file, a new window will open where you will be prompted to select the layers you want to add to your project.</p>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Video: Importing vector data via drag-and-drop<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_vector_d_d.mp4"></video></p>
-</div>
-</details></section>
-</section>
-<section id="delimited-text-import-csv-txt">
-<h3>Delimited text import (.csv, .txt)<a class="headerlink" href="#delimited-text-import-csv-txt" title="Permalink to this heading">#</a></h3>
-<p>In your GIS-career, you will come across geodata in the  format of delimited text files, such as <code class="docutils literal notranslate"><span class="pre">.csv</span></code>-files (Comma-Separated-Values). These files contain tabular data, which can be opened by programs such as Microsoft Excel. They contain geographical or positional information as point coordinates in separated columns (for example, latitude and longitude, or x- and y-coordinates), or as “Well-known-text” (WKT), which represents complex geometries, such as polygons or lines.</p>
-<section id="open-delimited-text-layer">
-<h4>Open Delimited Text Layer<a class="headerlink" href="#open-delimited-text-layer" title="Permalink to this heading">#</a></h4>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>To load data from spreadsheets such as Comma Separated Value (<code class="docutils literal notranslate"><span class="pre">.csv</span></code>) or
-Excel (<code class="docutils literal notranslate"><span class="pre">.xlsx</span></code>), the datasets need to have columns containing geometry - this is
-most often in the form of latitude (Y field) and longitude (X field), but might
-also be in other formats, such as WKT. In this case, you can also have complex geometries in your delimited text file.</p>
-</div>
-<figure class="align-center" id="import-delimited-text">
-<a class="reference internal image-reference" href="../../_images/en_import_delimeted_text.png"><img alt="../../_images/en_import_delimeted_text.png" src="../../_images/en_import_delimeted_text.png" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 32 </span><span class="caption-text">Import delimited text.</span><a class="headerlink" href="#import-delimited-text" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Delimited</span> <span class="pre">Text</span> <span class="pre">Layer</span></code>.</p></li>
-<li><p>Click on <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">name</span></code> click on the three points <img alt="" src="../../_images/Three_points.png" /> and
-navigate to your csv file and click <code class="docutils literal notranslate"><span class="pre">Open</span></code>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">Format</span></code>: Here you can specify which delimiter is used in the file you
-want to import. In a standard .csv file commas <code class="docutils literal notranslate"><span class="pre">,</span></code> is used. If this is not the
-case, select <code class="docutils literal notranslate"><span class="pre">Custom</span> <span class="pre">delimiters</span></code>. Here you can choose the exact delimiter
-used in your file.</p></li>
-</ol>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>To find out which delimiter is used you can open your .csv file in Notepad or
-Excel. There you can check which delimiter is used to separate the information.</p>
-</div>
-<figure class="align-center" id="import-delimited-text-file-format">
-<a class="reference internal image-reference" href="../../_images/en_delimited_text_fileformat.png"><img alt="../../_images/en_delimited_text_fileformat.png" src="../../_images/en_delimited_text_fileformat.png" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 33 </span><span class="caption-text">Import delimited text - file format.</span><a class="headerlink" href="#import-delimited-text-file-format" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<ol class="arabic" start="4">
-<li><p><code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">definition</span></code>: In this section, you specify which columns of the file
-contain the spatial information to georeference the data on the map. If the
-file has a column containing <strong>latitude</strong> and another with <strong>longitude</strong> data,
-you can use them to georeferenced the data. Check <code class="docutils literal notranslate"><span class="pre">Point</span> <span class="pre">Coordinates</span></code> if the <code class="docutils literal notranslate"><span class="pre">.csv</span></code>-file contains point data.
-Select for <code class="docutils literal notranslate"><span class="pre">X</span> <span class="pre">field</span></code> “LONGITUDE” and for <code class="docutils literal notranslate"><span class="pre">Y</span> <span class="pre">field</span></code> “LATITUDE”.</p></li>
-<li><p>Under <code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">CRS</span></code> select the coordinate reference system (CRS). By default,
-QGIS will select the CRS of the project.</p>
-<p>If the file does not have spatial information choose the option <code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">geometry</span>&#160; <span class="pre">(attribute</span> <span class="pre">only</span> <span class="pre">table)</span></code>.</p>
-</li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Add</span></code></p></li>
-</ol>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Video: Opening delimited text files in QGIS<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_textfile.mp4"></video></p>
-</div>
-</details></section>
-</section>
-<section id="raster-data-import">
-<h3>Raster data import<a class="headerlink" href="#raster-data-import" title="Permalink to this heading">#</a></h3>
-<p>The import of raster data works in the same way as for vector data. You can either drag-and-drop the raster-files
-onto your QGIS-window, or open then through the “Data Source Manager”.</p>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Video: Open raster data via the Data Source Manager<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<ol class="arabic simple">
-<li><p class="sd-card-text">Click on <code class="docutils literal notranslate"><span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Raster</span> <span class="pre">Layer</span></code></p></li>
-<li><p class="sd-card-text">Click on the three points <img alt="" src="../../_images/Three_points.png" /> and navigate to your
-raster file</p></li>
-<li><p class="sd-card-text">Select the file and click <code class="docutils literal notranslate"><span class="pre">Open</span></code></p></li>
-<li><p class="sd-card-text">Back in QGIS click <code class="docutils literal notranslate"><span class="pre">Add</span></code></p></li>
-</ol>
-<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_raster.mp4"></video></p>
-</div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Video: Open raster data via drag-and-drop<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_raster_d_d.mp4"></video></p>
-</div>
-</details></section>
 </section>
 </section>
 
@@ -832,7 +668,7 @@ Video: Open raster data via drag-and-drop<div class="sd-summary-down docutils">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Introduction to geodata, layers, and projections</p>
+        <p class="prev-next-title">Introduction to geodata and layers</p>
       </div>
     </a>
     <a class="right-next"
@@ -859,22 +695,9 @@ Video: Open raster data via drag-and-drop<div class="sd-summary-down docutils">
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geodata-management-fundamentals">Geodata management: Fundamentals</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fundamentals-of-geodata-management">Fundamentals of Geodata Management</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-folder-structure">Standard folder structure</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geodata-naming">Geodata naming</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-import">Data import</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vector-data-import">Vector data import</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#open-vector-data-via-the-data-source-manager">Open vector data via the Data Source Manager</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#open-vector-data-via-drag-and-drop">Open vector data via drag-and-drop</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delimited-text-import-csv-txt">Delimited text import (.csv, .txt)</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#open-delimited-text-layer">Open Delimited Text Layer</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#raster-data-import">Raster data import</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#naming-geodata">Naming Geodata</a></li>
 </ul>
 </li>
 </ul>

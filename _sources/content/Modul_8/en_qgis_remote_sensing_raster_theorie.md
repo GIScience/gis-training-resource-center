@@ -1,4 +1,4 @@
-# Remote Sensing and Raster data theorie 🛰️
+# Remote Sensing and Raster data theory 🛰️
 
 🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 

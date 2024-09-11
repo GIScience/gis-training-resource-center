@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Introduction to geodata, layers, and projections &#8212; GIS Resource Training Center</title>
+    <title>Introduction to geodata and layers &#8212; GIS Resource Training Center</title>
   
   
   
@@ -182,9 +182,10 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 2</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="en_module_2_overview.html">Working with Geodata</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Introduction to geodata, layers, and projections</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Introduction to geodata and layers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_basic_data_processing.html">Geodata management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_attribute_table.html">Attribute Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_projections.html">Projections</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_data_sources.html">Data sources</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_basemap.html">Basemaps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_modul_2_exercises.html">Exercises Module 2 - Working with Geodata</a></li>
@@ -237,7 +238,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 8 - Remote Sensing and Raster Data</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../Modul_8/en_qgis_remote_sensing_raster_theorie.html">Remote Sensing and Raster data theorie 🛰️</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Modul_8/en_qgis_remote_sensing_raster_theorie.html">Remote Sensing and Raster data theory 🛰️</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Modul_8/en_qgis_remote_sensing_theory.html">Introduction to Remote Sensing and Remote Sensing Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Modul_8/en_qgis_modul_8_ex1.html">Rasterdata Exercise 1: Basic Assessment of Flood Exposure in the Indus Basin in Pakistan</a></li>
 </ul>
@@ -530,7 +531,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Introduction to geodata, layers, and projections</h1>
+    <h1>Introduction to geodata and layers</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -553,20 +554,17 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-layer-concept">The layer concept</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projections">Projections</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-choose-an-appropriate-projected-coordinate-system">How to choose an appropriate projected coordinate system</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#metric-and-geographic-coordinate-reference-systems">Metric and Geographic Coordinate Reference Systems</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#local-and-global-crs">Local and Global CRS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-import">Data import</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vector-data-import">Vector data import</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#open-vector-data-via-the-data-source-manager">Open vector data via the Data Source Manager</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#open-vector-data-via-drag-and-drop">Open vector data via drag-and-drop</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-check-and-change-the-project-coordinate-reference-system">How to check and change the project coordinate reference system</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#project-crs-and-layer-crs">Project CRS and Layer CRS</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#changing-the-projection-of-a-vector-layer">Changing the projection of a vector layer</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#changing-the-projection-of-a-raster-layer">Changing the projection of a raster layer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delimited-text-import-csv-txt">Delimited text import (.csv, .txt)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#open-delimited-text-layer">Open Delimited Text Layer</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#further-resources">Further resources</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#raster-data-import">Raster data import</a></li>
 </ul>
 </li>
 </ul>
@@ -580,14 +578,13 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="introduction-to-geodata-layers-and-projections">
-<h1>Introduction to geodata, layers, and projections<a class="headerlink" href="#introduction-to-geodata-layers-and-projections" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="introduction-to-geodata-and-layers">
+<h1>Introduction to geodata and layers<a class="headerlink" href="#introduction-to-geodata-and-layers" title="Permalink to this heading">#</a></h1>
 <p><strong>🔙<a class="reference internal" href="../intro.html"><span class="doc std std-doc">Back to Homepage</span></a></strong></p>
 <p><strong>Competences:</strong></p>
 <p>In this chapter, you will learn what <strong>geodata</strong> is, and understand the difference between <strong>vector and raster
 data</strong>. Furthermore, this chapter explains the <strong>layer concept</strong> of GIS-software, which is fundamental to every map
-you will create. Finally, we will explain the basics of <strong>projections</strong>, which is the method of how we display the
-spherical shape of our planet onto a 2 dimensional plane.</p>
+you will create.</p>
 <section id="what-is-geodata">
 <h2>What is geodata?<a class="headerlink" href="#what-is-geodata" title="Permalink to this heading">#</a></h2>
 <p>Geodata, geospatial data, or geographic data is data that has geographical information. This means that the data
@@ -613,7 +610,6 @@ sociocultural or economic data - such as demographic data, administrative bounda
 Geodata usually represents data entries as <strong>geometries</strong> on a 2D canvas. These geometries can be points, lines, polygons, or even pixels and can represent various objects that exist in the physical world - such as
 roads, lakes, trees, etc. - or represent intangible objects - such as administrative boundaries, population
 numbers, health indicators, historical events, etc.</p>
-<!--ADD: Insert table with examples of geodata, and how the data is stored in different file formats? See Uni Heidelberg lecture slides for this -->
 <section id="vector-data">
 <h3>Vector data<a class="headerlink" href="#vector-data" title="Permalink to this heading">#</a></h3>
 <p>Vector data are digital features and they can store geographic/spatial information, as well as other data attributes. As such, they are ideal to visualise information on a map. Each feature can be displayed on a maps using one out three geometries: <strong>Points, Lines, or Polygons</strong>. A layer can only contain features with same type of geometries.</p>
@@ -812,7 +808,7 @@ representation by using symbols and colors.</p>
 <p><span class="caption-number">Fig. 23 </span><span class="caption-text">Layers in a GIS. Source: <a class="reference external" href="https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_1_layers">CartONG</a></span><a class="headerlink" href="#layers-in-a-gis" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<div class="tip admonition">
+<div class="note admonition">
 <p class="admonition-title">Now it’s your turn!</p>
 <p>Practical experience is key to mastering GIS. Now is a good moment to apply what we’ve learned in the first exercise of module 2.</p>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover docutils">
@@ -822,253 +818,151 @@ representation by using symbols and colors.</p>
 <a class="sd-stretched-link reference external" href="https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_geodata_concept_ex1.html"></a></div>
 </div>
 </section>
-<section id="projections">
-<h2>Projections<a class="headerlink" href="#projections" title="Permalink to this heading">#</a></h2>
-<section id="introduction">
-<h3>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h3>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kIID5FDi2JQ?si=C0tYz7nteMF_xqvr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<p>An important issue when creating a map of a region, is that it is impossible to create a representation of a sphere
-on a 2D plane without distorting the map. The transformation of a 3D object onto a flat surface can be done with the help of a <strong>projection</strong>. Over the centuries, cartographers and mathematicians have developed a multitude of different methods to project the earth onto a flat surface. However, it is never possible to correctly represent the world on a flat surface (see the video above).
-Every projection distorts either the length between two points, the angles between two lines (directions), or the size of an area. A projection can only correctly represent one of these three dimensions. This means, that depending on the projection method, your world map will not represent the size, angles, or distances correctly.</p>
-<figure class="align-center" id="examples-for-projections-azimuthal-cylindrical-and-conic">
-<a class="reference internal image-reference" href="../../_images/en_examples_projections_IBIS.png"><img alt="../../_images/en_examples_projections_IBIS.png" src="../../_images/en_examples_projections_IBIS.png" style="width: 700px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 24 </span><span class="caption-text">Examples for Projections. Source:(<a class="reference external" href="http://ibis.colostate.edu/webcontent/NR505/2012_Projects/Team6/GISConcepts.html">http://ibis.colostate.edu/webcontent/NR505/2012_Projects/Team6/GISConcepts.html</a>)</span><a class="headerlink" href="#examples-for-projections-azimuthal-cylindrical-and-conic" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>Every projection has its use case. For example, the Mercator projection displays the angles between to points
-correctly. This was used extensively during the seafaring age without satellites, as ships could navigate to a
-destination by following a straight line on a map. For example, the Mercator projection displays road intersections
-correctly: a road that crosses another road at a right angle, will be displayed as such on a mercator projection.
-This is especially useful when navigating. The shape of an area remains correct, since the angles between each line
-stay true. However, if you increase the scale of the map, the size and distances get distorted dramatically (see
-figure below). Furthermore, the further away from the equator you get, the more distortion you get.</p>
+<section id="data-import">
+<h2>Data import<a class="headerlink" href="#data-import" title="Permalink to this heading">#</a></h2>
+<p>Before you can start creating maps in QGIS, you will need to load your data into QGIS. Depending on which file format you want to import, the process differs slightly.</p>
+<section id="vector-data-import">
+<h3>Vector data import<a class="headerlink" href="#vector-data-import" title="Permalink to this heading">#</a></h3>
+<p>Typical <span class="xref myst">vector data formats</span> are Shapefile (<code class="docutils literal notranslate"><span class="pre">.shp</span></code>) and GeoPackage (<code class="docutils literal notranslate"><span class="pre">.gpkg</span></code>).
+The process of importing vector data in either of the two formats is the same.</p>
+<p>QGIS offers a few ways to load vector data into QGIS. The most immediate is via drag-and-drop, where you simply
+drag the data files you want to add to your QGIS project from your file browser into the QGIS window. Another
+method is via the “<strong>Data Source Manager</strong>” (<code class="docutils literal notranslate"><span class="pre">Layer</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Data</span> <span class="pre">Source</span> <span class="pre">Manager</span></code>). You can also open the Data Source
+Manager with the keyboard-shortcut <code class="docutils literal notranslate"><span class="pre">CTRL</span> <span class="pre">+</span> <span class="pre">L</span></code>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The True Size of
-The mercator projection is famous for distorting the size of different countries. You can check
-the true size in comparison to different placements on the map on <a class="reference external" href="https://www.thetruesize.com">TheTrueSize.com website</a>.
-A popular example is Greenland in comparison with Africa, which seem on the map to be about the same size, but in reality Africa is a lot bigger.</p>
+<p>GeoPackage files can contain multiple datasets and even whole QGIS projects.
+When you load a GeoPackage in QGIS, a window will appear where you can select
+the datasets you want to load.</p>
 </div>
-<figure class="align-center" id="comparison-greenland-africa">
-<a class="reference internal image-reference" href="../../_images/en_greenland_africa.png"><img alt="../../_images/en_greenland_africa.png" src="../../_images/en_greenland_africa.png" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 25 </span><span class="caption-text">Comparison Greenland - Africa. Source: <a class="reference external" href="https://www.thetruesize.com/#?borders=1~!MTYwODM1MTk.MzkyNDUyNg*MjY5NjM4Mzg(MTA1MjgyOTE~!CONTIGUOUS_US*MTAwMjQwNzU.MjUwMjM1MTc(MTc1)MQ~!IN*NTI2NDA1MQ.Nzg2MzQyMQ)MA~!CN*OTkyMTY5Nw.NzMxNDcwNQ(MjI1)Mg">The True Size of</a></span><a class="headerlink" href="#comparison-greenland-africa" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>In the dropdown below, you can look at the size distortion of mercator yourself.</p>
+<section id="open-vector-data-via-the-data-source-manager">
+<h4>Open vector data via the Data Source Manager<a class="headerlink" href="#open-vector-data-via-the-data-source-manager" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Vector</span> <span class="pre">Layer...</span></code>. This will open the Data Source Manager.</p></li>
+<li><p>Click on the three points <img alt="" src="../../_images/Three_points.png" /> and navigate to your
+vector file</p></li>
+<li><p>Select the file and click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. More options will appear. In most cases, you can leave these options as they are.</p></li>
+<li><p>Back in QGIS click <code class="docutils literal notranslate"><span class="pre">Add</span></code></p></li>
+</ol>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>QGIS only lets you import <strong>unzipped</strong> shapefiles. Make sure to unzip your data files before importing them into QGIS.</p>
+</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<a class="reference external" href="http://TheTrueSize.com">TheTrueSize.com</a> - compare the effects of different projections<div class="sd-summary-down docutils">
+Video: Importing vector data via the Data Source Manager<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<iframe src="https://www.thetruesize.com/#?borders=1~!MTUxNjUyNzI.MzM1OTE0MQ*MzI2NDc5MjY(NjgwODA4Mg~!GL*OTQ3NTExNQ.MjkxMDYzMzM)Mw" width="750" height="500"></iframe>
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_vector.mp4"></video></p>
 </div>
 </details></section>
-<section id="how-to-choose-an-appropriate-projected-coordinate-system">
-<h3>How to choose an appropriate projected coordinate system<a class="headerlink" href="#how-to-choose-an-appropriate-projected-coordinate-system" title="Permalink to this heading">#</a></h3>
-<p>In GIS, we project the earth onto a flat coordinate system (hence the name coordinate reference system or CRS).
-It is crucial that you are aware that your data can be in one CRS and your QGIS
-project in another CRS. The data and the project should always be the same, or
-else you will get wrong results! The project CRS is displayed on the bottom right
-corner of the <span class="xref myst">QGIS interface</span>.<br />
-To change the CRS of your data and project, follow the steps explained below.
-The default CRS/EPSG code of every QGIS project is the World Geodetic System 84
-(EPSG: 4326). This CRS is optimized for world maps. So not perfect for most
-applications, because we mostly use maps for small areas.</p>
+<section id="open-vector-data-via-drag-and-drop">
+<h4>Open vector data via drag-and-drop<a class="headerlink" href="#open-vector-data-via-drag-and-drop" title="Permalink to this heading">#</a></h4>
+<p>QGIS lets you open data in your QGIS-project by simply dragging the files from your file browser onto your QGIS window. Shapefiles contain only 1 layer per <code class="docutils literal notranslate"><span class="pre">.shp</span></code>-files, which will be added automatically into you layer-panel. Geopackage files (<code class="docutils literal notranslate"><span class="pre">.gpk</span></code>) can contain multiple layers in a single file. If you add a geopackage file, a new window will open where you will be prompted to select the layers you want to add to your project.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Video: Importing vector data via drag-and-drop<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_vector_d_d.mp4"></video></p>
+</div>
+</details></section>
+</section>
+<section id="delimited-text-import-csv-txt">
+<h3>Delimited text import (.csv, .txt)<a class="headerlink" href="#delimited-text-import-csv-txt" title="Permalink to this heading">#</a></h3>
+<p>In your GIS-career, you will come across geodata in the  format of delimited text files, such as <code class="docutils literal notranslate"><span class="pre">.csv</span></code>-files (Comma-Separated-Values). These files contain tabular data, which can be opened by programs such as Microsoft Excel. They contain geographical or positional information as point coordinates in separated columns (for example, latitude and longitude, or x- and y-coordinates), or as “Well-known-text” (WKT), which represents complex geometries, such as polygons or lines.</p>
+<section id="open-delimited-text-layer">
+<h4>Open Delimited Text Layer<a class="headerlink" href="#open-delimited-text-layer" title="Permalink to this heading">#</a></h4>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Choose the projection according to your area of interest. There are special CRS, that have been created to reduce
-the distortion and inaccuracy of projections for different regions on earth. You can find all the projections and
-their CRS codes on <a class="reference external" href="http://epsg.io">EPSG.io</a>.</p>
+<p>To load data from spreadsheets such as Comma Separated Value (<code class="docutils literal notranslate"><span class="pre">.csv</span></code>) or
+Excel (<code class="docutils literal notranslate"><span class="pre">.xlsx</span></code>), the datasets need to have columns containing geometry - this is
+most often in the form of latitude (Y field) and longitude (X field), but might
+also be in other formats, such as WKT. In this case, you can also have complex geometries in your delimited text file.</p>
 </div>
-<p>Look at the following images and pay attention how the different Coordinate Reference Systems change and distort the world map.</p>
-<figure class="align-default" id="world-mercator-tissot">
-<a class="reference internal image-reference" href="../../_images/world_mercator_tissots.png"><img alt="../../_images/world_mercator_tissots.png" src="../../_images/world_mercator_tissots.png" style="width: 500px;" /></a>
+<figure class="align-center" id="import-delimited-text">
+<a class="reference internal image-reference" href="../../_images/en_import_delimeted_text.png"><img alt="../../_images/en_import_delimeted_text.png" src="../../_images/en_import_delimeted_text.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 26 </span><span class="caption-text">The Mercator Projection (EPSG:54004)</span><a class="headerlink" href="#world-mercator-tissot" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 24 </span><span class="caption-text">Import delimited text.</span><a class="headerlink" href="#import-delimited-text" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Notice how the shape of the circle stays the same. Out of this, we can conclude that the angles stay the same. However, the circles get bigger the further away they are from the equator, and the distance between these circles change the further they they get from the equator. Therefore, we can conclude that the distances and sizes are being distorted with the mercator projection. The strength of the Mercator projection is that it conserves the angles between to lines. We can see this because the circles stay perfectly circular the further they are from the equator.</p>
-<figure class="align-default" id="wgs-84-tissots">
-<a class="reference internal image-reference" href="../../_images/WGS_84_tissots.png"><img alt="../../_images/WGS_84_tissots.png" src="../../_images/WGS_84_tissots.png" style="width: 500px;" /></a>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Delimited</span> <span class="pre">Text</span> <span class="pre">Layer</span></code>.</p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">name</span></code> click on the three points <img alt="" src="../../_images/Three_points.png" /> and
+navigate to your csv file and click <code class="docutils literal notranslate"><span class="pre">Open</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">Format</span></code>: Here you can specify which delimiter is used in the file you
+want to import. In a standard .csv file commas <code class="docutils literal notranslate"><span class="pre">,</span></code> is used. If this is not the
+case, select <code class="docutils literal notranslate"><span class="pre">Custom</span> <span class="pre">delimiters</span></code>. Here you can choose the exact delimiter
+used in your file.</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>To find out which delimiter is used you can open your .csv file in Notepad or
+Excel. There you can check which delimiter is used to separate the information.</p>
+</div>
+<figure class="align-center" id="import-delimited-text-file-format">
+<a class="reference internal image-reference" href="../../_images/en_delimited_text_fileformat.png"><img alt="../../_images/en_delimited_text_fileformat.png" src="../../_images/en_delimited_text_fileformat.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 27 </span><span class="caption-text">The World Geodetic System 1984 (EPSG:4326)</span><a class="headerlink" href="#wgs-84-tissots" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 25 </span><span class="caption-text">Import delimited text - file format.</span><a class="headerlink" href="#import-delimited-text-file-format" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>The WGS 84 is a CRS which consists of an ellipsoid, that resembles the shape of the earth closely. Instead of metrical units of measurements, it uses angular degrees (latitude and longitude). The shape of the Tissot circles is undistorted near the equator, but becomes elongated on the East-West axis the further it gets away from the equator. Unlike the Mercator projection, there is no distortion on the in the North-South direction. As the circles become distorted, we can deduce that the this CRS distorts the angles.</p>
-<figure class="align-default" id="world-equidistant-cylindrical-tissots">
-<a class="reference internal image-reference" href="../../_images/World_equidistant_cylindrical_tissots.png"><img alt="../../_images/World_equidistant_cylindrical_tissots.png" src="../../_images/World_equidistant_cylindrical_tissots.png" style="width: 500px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 28 </span><span class="caption-text">The World Equidistant Cylindrical Projection (EPSG:54002)</span><a class="headerlink" href="#world-equidistant-cylindrical-tissots" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>The World Equidistant cylindrical CRS is equidistant (not distorting the length) along any meridian (cricles of longitude; North to South), and along the two standard parallels. The shape, scale and area distort the further they are away from the standard parallels.</p>
-<p>This table shows an overview on which projections to use for which needed
-characteristic:</p>
-<table class="table">
-<thead>
-<tr class="row-odd"><th class="head text-left"><p>Characteristic</p></th>
-<th class="head text-center"><p>Mercator (cylindrical)</p></th>
-<th class="head text-center"><p>Lambert cylindrical</p></th>
-<th class="head text-center"><p>Albers conic</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p>Shape</p></td>
-<td class="text-center"><p>✅</p></td>
-<td class="text-center"><p>❌</p></td>
-<td class="text-center"><p>✅</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>Rotation</p></td>
-<td class="text-center"><p>✅</p></td>
-<td class="text-center"><p>✅</p></td>
-<td class="text-center"><p>❌</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>Area</p></td>
-<td class="text-center"><p>❌</p></td>
-<td class="text-center"><p>✅</p></td>
-<td class="text-center"><p>✅</p></td>
-</tr>
-</tbody>
-</table>
-<section id="metric-and-geographic-coordinate-reference-systems">
-<h4>Metric and Geographic Coordinate Reference Systems<a class="headerlink" href="#metric-and-geographic-coordinate-reference-systems" title="Permalink to this heading">#</a></h4>
-<p>There are two different types of Coordinate Reference System: <strong>Geographic</strong> or <strong>Metric</strong> CRS.</p>
-<ul class="simple">
-<li><p>A Geographic CRS is based on a three-dimensional, ellipsoidal model of the Earth. It uses angular measurements (<strong>latitude and longitude</strong>) to define locations on the Earth’s surface. The coordinates are usually expressed in degrees (e.g., 45°N, 120°W).</p>
-<ul>
-<li><p><strong>Advantages</strong>: Since it is based on the Earth’s curvature, it can be used to represent locationa anywhere on the earth. Most global datasets, GPS, and mapping systems use Geographic CRS making it highly compatible with various data sources. Locations can be specified accurately with angular measurements.</p></li>
-<li><p><strong>Disadvantage</strong>: Because it uses angular measurements, distances, areas, and shapes can be highly <strong>distorted</strong>. Since the distance between the circles of latitute and longitude change, the conversion of angles to meters is not constant</p></li>
-</ul>
+<ol class="arabic" start="4">
+<li><p><code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">definition</span></code>: In this section, you specify which columns of the file
+contain the spatial information to georeference the data on the map. If the
+file has a column containing <strong>latitude</strong> and another with <strong>longitude</strong> data,
+you can use them to georeferenced the data. Check <code class="docutils literal notranslate"><span class="pre">Point</span> <span class="pre">Coordinates</span></code> if the <code class="docutils literal notranslate"><span class="pre">.csv</span></code>-file contains point data.
+Select for <code class="docutils literal notranslate"><span class="pre">X</span> <span class="pre">field</span></code> “LONGITUDE” and for <code class="docutils literal notranslate"><span class="pre">Y</span> <span class="pre">field</span></code> “LATITUDE”.</p></li>
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">CRS</span></code> select the coordinate reference system (CRS). By default,
+QGIS will select the CRS of the project.</p>
+<p>If the file does not have spatial information choose the option <code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">geometry</span>&#160; <span class="pre">(attribute</span> <span class="pre">only</span> <span class="pre">table)</span></code>.</p>
 </li>
-<li><p>A metric CRS is a 2D representation of the earths surface. Although it is difficult to represent large areas of the globe on a 2D surface without surface, it is possible to create a 2D projection of a limited region with minimal distortion. The map units are typically metres or feet. It is created by projecting the earth onto a flat plane.</p>
-<ul>
-<li><p><strong>Advantages</strong>: Since it uses a flat plane, you can calculate distances, areas, and angles accurately.</p></li>
-<li><p><strong>Disadvantages</strong>: A given projected CRS is usually optimized for a particular region. Using it outside its intended area can lead to significant distortions in distance, area, and shape.</p></li>
-</ul>
-</li>
-</ul>
-<figure class="align-default" id="problem-distance-geographic-coords">
-<a class="reference internal image-reference" href="../../_images/Problem_distance_geographic_coords.png"><img alt="../../_images/Problem_distance_geographic_coords.png" src="../../_images/Problem_distance_geographic_coords.png" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 29 </span><span class="caption-text">A geographic representation of the globe. The distance between the meridians converge towards the north and south pole.</span><a class="headerlink" href="#problem-distance-geographic-coords" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<div class="admonition caution">
-<p class="admonition-title">Caution</p>
-<p>When processing geodata, QGIS always uses the units of measurements of the layer that you are processing.</p>
-</div>
-</section>
-<section id="local-and-global-crs">
-<h4>Local and Global CRS<a class="headerlink" href="#local-and-global-crs" title="Permalink to this heading">#</a></h4>
-<figure class="align-center" id="local-and-global-coordinate-reference-systems-crs">
-<a class="reference internal image-reference" href="../../_images/en_local_crs.png"><img alt="../../_images/en_local_crs.png" src="../../_images/en_local_crs.png" style="width: 800px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 30 </span><span class="caption-text">Local and global coordinate reference systems (CRS). Source: British Red Cross (BRC)</span><a class="headerlink" href="#local-and-global-coordinate-reference-systems-crs" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>As you can see, smaller regions look skewed and distorted in a global CRS
-For smaller areas local projections should be used, since they give a more
-accurate display. However, local projections heavily distort the map on a global level.</p>
-</section>
-</section>
-<section id="how-to-check-and-change-the-project-coordinate-reference-system">
-<h3>How to check and change the project coordinate reference system<a class="headerlink" href="#how-to-check-and-change-the-project-coordinate-reference-system" title="Permalink to this heading">#</a></h3>
-<div class="tip admonition">
-<p class="admonition-title">Now it’s your turn!</p>
-<p>Understanding projections and coordinate reference systems is not easy. The next steps can be followed with any geodata layer in your QGIS project. Alternatively, exercise X of this module has been specifically designed to help understanding projections.</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>One of the first things you do when starting a new QGIS project should be to check and adjust the CRS/EPSG code to
-the region or area you are working on. If you are working on a map showing the entire globe, global projection such
-as the mercator projection should be used. If you are working on a smaller region, such as a continent, a country,
-or even smaller regions, <strong>you should always use a local CRS, to avoid inaccuracies</strong>. If you don’t know which CRS to use, you can search for a suited one on <a class="reference external" href="http://EPSG.IO">EPSG.IO</a>. Simply enter the name of your region and take a look at the available options. Make sure that the CRS you choose is in the correct unit of measurements (metres, feet, or degrees)</p>
-</div>
-<ol class="arabic simple">
-<li><p>Open a QGIS project</p></li>
-<li><p>In the very down right corner of QGIS you find the button <code class="docutils literal notranslate"><span class="pre">EPSG</span></code>. The number
-next to it is the EPSG Code currently used in the project. To see more information, or to change the CRS, click on the <code class="docutils literal notranslate"><span class="pre">Current</span> <span class="pre">CRS</span></code>-button <img alt="" src="../../_images/EPSG_Code.png" />.</p></li>
-<li><p>The window <code class="docutils literal notranslate"><span class="pre">Project</span> <span class="pre">Properties</span></code> will open. Here you can view all available
-CRS/EPSG-Code and their properties.</p></li>
-<li><p>To change the CRS/EPSG code, select the one you want to use and click <code class="docutils literal notranslate"><span class="pre">Apply</span></code>.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Add</span></code></p></li>
 </ol>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Video: How to check and change the CRS in your QGIS project<div class="sd-summary-down docutils">
+Video: Opening delimited text files in QGIS<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_change_project_CRS.mp4"></video></p>
-</div>
-</details></section>
-<section id="project-crs-and-layer-crs">
-<h3>Project CRS and Layer CRS<a class="headerlink" href="#project-crs-and-layer-crs" title="Permalink to this heading">#</a></h3>
-<p>The coordinate reference system of your QGIS project determines how QGIS displays the information. However, layers
-and datasets have their own CRS. This can be seen in the metadata, or layer properties of the dataset. The layer
-CRS refers to the coordinate system of the features or items in the dataset. The same coordinates in two different
-coordinate reference systems do not refer to the same location on earth. This is because of the distortion of
-distance and area.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The first thing you should do when loading a new layer or dataset into your QGIS project, should be to check the
-coordinate reference system of the dataset, and reproject it to the project CRS if necessary. This way, you ensure
-consistency in your project and that the geoobjects in your layer are at the right locations. Otherwise, you will
-create false results.</p>
-</div>
-<!--- ADD: insert example of layers that are in a CRS with an inaccuracy of a few meters to show the importance of 
-getting the CRS right
-ADD: Note that QGIS always uses the units of the layer (asks for degrees when creating a buffer with a geographic CRS) --->
-<section id="changing-the-projection-of-a-vector-layer">
-<h4>Changing the projection of a vector layer<a class="headerlink" href="#changing-the-projection-of-a-vector-layer" title="Permalink to this heading">#</a></h4>
-<ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Vector</span></code> Tab -&gt; <code class="docutils literal notranslate"><span class="pre">Data</span> <span class="pre">Management</span> <span class="pre">Tools</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Reproject</span> <span class="pre">Layer</span></code></p></li>
-<li><p>Select target CRS/EPSG code.</p></li>
-<li><p>Save the new file by clicking on the three dots next to <code class="docutils literal notranslate"><span class="pre">Reprojected</span></code>,
-specify the file name and the location where you want to save the file.</p></li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Run</span></code></p></li>
-</ol>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Video: How to change the CRS of a vector a layer<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_vector.mp4"></video></p>
-</div>
-</details></section>
-<section id="changing-the-projection-of-a-raster-layer">
-<h4>Changing the projection of a raster layer<a class="headerlink" href="#changing-the-projection-of-a-raster-layer" title="Permalink to this heading">#</a></h4>
-<ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Raster</span></code> Tab -&gt; <code class="docutils literal notranslate"><span class="pre">Projections</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Warp</span> <span class="pre">(Reproject)</span></code></p></li>
-<li><p>Select target CRS/EPSG-Code</p></li>
-<li><p>Select resampling method</p></li>
-<li><p>Save the new file by clicking on the three dots next to <code class="docutils literal notranslate"><span class="pre">Reprojected</span></code>, specify
-the file name and the location where you want to save the file.</p></li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Run</span></code></p></li>
-</ol>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Video: How to change the CRS of a raster layer<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_raster.mp4"></video></p>
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_textfile.mp4"></video></p>
 </div>
 </details></section>
 </section>
-<section id="further-resources">
-<h3>Further resources<a class="headerlink" href="#further-resources" title="Permalink to this heading">#</a></h3>
-<p>The website <a class="reference external" href="https://ihatecoordinatesystems.com/"><strong>I Hate Coordinate Systems!</strong></a>
-offers a “a problem-based guide of common CRS issues, root causes, and solutions”.
-Check it out in case you have any issues with CRS.</p>
-<hr class="footnotes docutils" />
+<section id="raster-data-import">
+<h3>Raster data import<a class="headerlink" href="#raster-data-import" title="Permalink to this heading">#</a></h3>
+<p>The import of raster data works in the same way as for vector data. You can either drag-and-drop the raster-files
+onto your QGIS-window, or open then through the “Data Source Manager”.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Video: Open raster data via the Data Source Manager<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ol class="arabic simple">
+<li><p class="sd-card-text">Click on <code class="docutils literal notranslate"><span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Raster</span> <span class="pre">Layer</span></code></p></li>
+<li><p class="sd-card-text">Click on the three points <img alt="" src="../../_images/Three_points.png" /> and navigate to your
+raster file</p></li>
+<li><p class="sd-card-text">Select the file and click <code class="docutils literal notranslate"><span class="pre">Open</span></code></p></li>
+<li><p class="sd-card-text">Back in QGIS click <code class="docutils literal notranslate"><span class="pre">Add</span></code></p></li>
+</ol>
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_raster.mp4"></video></p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Video: Open raster data via drag-and-drop<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_raster_d_d.mp4"></video></p>
+</div>
+</details><hr class="footnotes docutils" />
 <aside class="footnote brackets" id="id3" role="note">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">1</a><span class="fn-bracket">]</span></span>
 <p><a class="reference external" href="https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_1_layers">https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_1_layers</a></p>
@@ -1153,20 +1047,17 @@ Check it out in case you have any issues with CRS.</p>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-layer-concept">The layer concept</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projections">Projections</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-choose-an-appropriate-projected-coordinate-system">How to choose an appropriate projected coordinate system</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#metric-and-geographic-coordinate-reference-systems">Metric and Geographic Coordinate Reference Systems</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#local-and-global-crs">Local and Global CRS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-import">Data import</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vector-data-import">Vector data import</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#open-vector-data-via-the-data-source-manager">Open vector data via the Data Source Manager</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#open-vector-data-via-drag-and-drop">Open vector data via drag-and-drop</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-check-and-change-the-project-coordinate-reference-system">How to check and change the project coordinate reference system</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#project-crs-and-layer-crs">Project CRS and Layer CRS</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#changing-the-projection-of-a-vector-layer">Changing the projection of a vector layer</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#changing-the-projection-of-a-raster-layer">Changing the projection of a raster layer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delimited-text-import-csv-txt">Delimited text import (.csv, .txt)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#open-delimited-text-layer">Open Delimited Text Layer</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#further-resources">Further resources</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#raster-data-import">Raster data import</a></li>
 </ul>
 </li>
 </ul>

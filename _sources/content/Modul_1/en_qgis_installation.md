@@ -60,10 +60,6 @@ the search results. Under the item __"System type"__ you can read the bit number
 Since QGIS 3.20 there are only 64-bit Windows executables.
 ```
 
-:::{tab-item} MacOS installation
-
-
-
 :::
 
 :::{tab-item} Linux installation
@@ -92,11 +88,12 @@ Keeping your data and project-files organised is the key to successfully working
 - When downloading data for the exercises, create subfolders for each module and training exercise (e.g. `/GIS_Training/Module_1/Exercise_1)
 - Save all of the QGIS-projects as well as the downloaded material for the exercises in these folders. 
 
+
+
 [Module 2](/content/Modul_2/en_qgis_geodata_concept.md) will go into more into depth about geodata management and introduce a standard folder structure for QGIS-projects. 
 
 ```{note}
 Make sure to unzip the exercise files before starting the exercises. 
-
 ```
 
 
