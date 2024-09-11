@@ -4,15 +4,9 @@ __🔙[Back to Homepage](/content/intro.md)__
 
 In this chapter, we will have a close look at how to work with geodata in QGIS. 
 Since vector data is the primary geodata type you will work with at the beginning 
-of your GIS career, we will focus on vector geodata. 
+of your GIS career, we will focus on vector geodata. We will learn how to set up a coherent folder structure for your GIS-data and projects and how to name geodata correctly. 
 
-**Competences:**
-
-* Data import
-* Geo features and attributes
-* Feature selection
-
-## Geodata management: Fundamentals
+## Fundamentals of Geodata Management
 
 Working with geodata is not like working with data in programs such as Microsoft 
 Excel or Word. Whenever you load an image in a Word file, the file will contain 
@@ -61,7 +55,7 @@ Standard folder structure. Source: HeiGIT
 ```
 
 
-### Geodata naming 
+### Naming Geodata
 
 Naming your data correctly ensures that you can identify the layers and your computer does not run into any issues 
 when working with your data files. The name of your files themselves need to be clear, meaning that you or others 
@@ -90,133 +84,4 @@ In this way, other people can understand what purpose different layers serve and
 whether they are needed in the final project.  
 
 `adm0 >> adm0_projUTM >> adm0_projUTM_clipUrban >> adm0_projUTM_clipUrban_intersectFacilities >> facilities_processed`
-
-## Data import
-
-Before you can start creating maps in QGIS, you will need to load your data into QGIS. Depending on which file format you want to import, the process differs slightly.
-
-### Vector data import
-
-Typical [vector data formats](/content/Modul_2/en_qgis_geodata_concept.md#vector-file-formats) are Shapefile (`.shp`) and GeoPackage (`.gpkg`). 
-The process of importing vector data in either of the two formats is the same. 
-
-QGIS offers a few ways to load vector data into QGIS. The most immediate is via drag-and-drop, where you simply 
-drag the data files you want to add to your QGIS project from your file browser into the QGIS window. Another 
-method is via the "__Data Source Manager__" (`Layer` > `Data Source Manager`). You can also open the Data Source 
-Manager with the keyboard-shortcut `CTRL + L`. 
-
-```{Note}
-GeoPackage files can contain multiple datasets and even whole QGIS projects. 
-When you load a GeoPackage in QGIS, a window will appear where you can select 
-the datasets you want to load.
-```
-
-#### Open vector data via the Data Source Manager
-
-1. Click on `Layer`-> `Add Layer`-> `Add Vector Layer...`. This will open the Data Source Manager. 
-2. Click on the three points ![](/fig/Three_points.png) and navigate to your 
-   vector file
-3. Select the file and click `Open`. More options will appear. In most cases, you can leave these options as they are.
-4. Back in QGIS click `Add`
-
-```{Attention}
-QGIS only lets you import __unzipped__ shapefiles. Make sure to unzip your data files before importing them into QGIS.
-```
-
-:::{dropdown} Video: Importing vector data via the Data Source Manager
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_vector.mp4"></video>
-:::
-
-#### Open vector data via drag-and-drop
-
-QGIS lets you open data in your QGIS-project by simply dragging the files from your file browser onto your QGIS window. Shapefiles contain only 1 layer per `.shp`-files, which will be added automatically into you layer-panel. Geopackage files (`.gpk`) can contain multiple layers in a single file. If you add a geopackage file, a new window will open where you will be prompted to select the layers you want to add to your project. 
-
-:::{dropdown} Video: Importing vector data via drag-and-drop
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_vector_d_d.mp4"></video>
-:::
-
-### Delimited text import (.csv, .txt)
-
-In your GIS-career, you will come across geodata in the  format of delimited text files, such as `.csv`-files (Comma-Separated-Values). These files contain tabular data, which can be opened by programs such as Microsoft Excel. They contain geographical or positional information as point coordinates in separated columns (for example, latitude and longitude, or x- and y-coordinates), or as "Well-known-text" (WKT), which represents complex geometries, such as polygons or lines.  
-
-#### Open Delimited Text Layer 
-
-```{Tip}
-To load data from spreadsheets such as Comma Separated Value (`.csv`) or 
-Excel (`.xlsx`), the datasets need to have columns containing geometry - this is 
-most often in the form of latitude (Y field) and longitude (X field), but might 
-also be in other formats, such as WKT. In this case, you can also have complex geometries in your delimited text file.  
-```
-
-```{figure} /fig/en_import_delimeted_text.png
----
-width: 600px
-name: 
-align: center
-name: Import delimited text
----
-Import delimited text.
-```
-
-1. `Layer` -> `Add Layer` -> `Open Delimited Text Layer`.
-2. Click on `File name` click on the three points ![](/fig/Three_points.png) and 
-   navigate to your csv file and click `Open`.
-3. `File Format`: Here you can specify which delimiter is used in the file you 
-   want to import. In a standard .csv file commas `,` is used. If this is not the 
-   case, select `Custom delimiters`. Here you can choose the exact delimiter 
-   used in your file. 
-
-```{Tip}
-To find out which delimiter is used you can open your .csv file in Notepad or 
-Excel. There you can check which delimiter is used to separate the information.
-```
-
-```{figure} /fig/en_delimited_text_fileformat.png
----
-width: 600px
-name: 
-align: center
-name: Import delimited text - file format
----
-Import delimited text - file format.
-```
-
-4. `Geometry definition`: In this section, you specify which columns of the file 
-   contain the spatial information to georeference the data on the map. If the 
-   file has a column containing __latitude__ and another with __longitude__ data, 
-   you can use them to georeferenced the data. Check `Point Coordinates` if the `.csv`-file contains point data. 
-   Select for `X field` “LONGITUDE” and for `Y field` “LATITUDE”.
-5. Under `Geometry CRS` select the coordinate reference system (CRS). By default, 
-   QGIS will select the CRS of the project. 
-
-   If the file does not have spatial information choose the option `No geometry 
-   (attribute only table)`.
-6. Click `Add`
-
-:::{dropdown} Video: Opening delimited text files in QGIS
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_textfile.mp4"></video>
-:::
-
-### Raster data import
-
-The import of raster data works in the same way as for vector data. You can either drag-and-drop the raster-files 
-onto your QGIS-window, or open then through the "Data Source Manager".
-
-:::{dropdown} Video: Open raster data via the Data Source Manager
-
-1. Click on `Layer`-> `Add Layer`-> `Add Raster Layer`
-2. Click on the three points ![](/fig/Three_points.png) and navigate to your 
-   raster file
-3. Select the file and click `Open`
-4. Back in QGIS click `Add` 
-
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_raster.mp4"></video>
-
-:::
-
-:::{dropdown} Video: Open raster data via drag-and-drop
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_raster_d_d.mp4"></video>
-:::
-
-
 
