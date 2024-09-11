@@ -231,7 +231,7 @@ If you need to fix the geometry, repeat the step of 5. with the new layer __"Flo
 
 ```{figure} /fig/ PAK_flood_new_column.PNG
 ---
-width: 400px
+width: 300px
 name: New column Pakistan
 align: center
 ---
@@ -242,7 +242,7 @@ Now, you can write `Yes` in the __Flood_affected__ column.
  * When you are done, click ![](/fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by again clicking on ![](/fig/mActionToggleEditing.png)([Wiki Video](/content/Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)).
 9. To visualise the enriched data set, we use the function "Categorized Classification" function. This means that we select a column from the attribute table and use the content as categories to sort and display the data ([Wiki Video](/content/Wiki/en_qgis_categorized_wiki.md)).
     * Right-click on the layer __Health_Facilities_Flood_2024_AOI__ in the `Layer Panel` -> `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
-     * On the top you find a dropdown menu. Open it and choose `Categorized`. Under `Value` select “Flood_affacted”.
+    * On the top you find a dropdown menu. Open it and choose `Categorized`. Under `Value` select “Flood_affacted”.
     * Further down the window, click on `Classify`.  Now you should see all unique values or attributes of the selected “Flood_affacted” column.  You can adjust the colours by double-clicking on one row in the central field. Once you are done, click `Apply` and `OK` to close the symbology window.
 
 ```{figure} /fig/en_qgis_categorized_classification_Pakistan_flood_exercise.png
@@ -256,7 +256,17 @@ Flood affected health facilities classification
 
 We've pinpointed the specific health facilities that have been inundated by the floods. Our findings indicate that a total of four facilities have been completely flooded and are currently non-operational. Considering we assessed the minimum flood impact, it's highly probable that more health facilities will also be impacted. This data is crucial for our operational team as it will enable them to strategize and execute an effective response.
 
-## Task 2: Logistical access to Larkana City
+## Task 3: Logistical access to Larkana City
+
+```{figure} /fig/IFRC-icons-colour_Logistics.svg
+---
+width: 100px
+name: 
+align: right
+
+name: IFRC Logistics Icon
+---
+```
 
 The operations team is making plans to deliver much-needed supplies to the affected region around Larkana, where they are desperately needed. Currently, there is uncertainty about how the supplies can be transported there. The operations team has asked for more information on this issue.
 
@@ -264,3 +274,93 @@ They need answers to the following three questions:
 * Which roads leading into Larkana are blocked, and at what specific locations are they blocked?
 * Are there any bridges that can be crossed from the eastern side of the Indus to the western side, and where are these bridges located?
 * If transporting supplies by road into the region is not feasible, what alternative method could be used to deliver the supplies?
+
+
+In order to get a clearer picture, we need to import the road network data for the region into QGIS. Look for the file in the input folder. The road network is initially displayed without showing any road types or other relevant details. We should apply a categorized classification technique only to display the specific roads that we are interested in.
+1. Load the dataset __"Roads_Larkana"__ into your QGIS.
+2.  For categorized classification right-click on the layer __Roads_Larkana__ in the `Layer Panel` -> `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
+    * On the top you find a dropdown menu. Open it and choose `Categorized`. Under `Value` select “higway”.
+    * Further down the window, click on `Classify`.  Now you should see all unique values or attributes of the selected “Flood_affacted” column.  You can adjust the colours by double-clicking on one row in the central field.
+    * Remove the tick from all categories except: `motorway`, `primary`, `secondary`, `trunk`
+    ```{figure} /fig/PAK_road_classification.PNG
+    ---
+    width: 600px
+    name: Pakistan road classification
+    align: center
+    ---
+    Pakistan road classification
+    ```
+    * You have the option to customize the width of the main roads' lines to improve the visualization. Open the Symbology window, then select 'Symbol'. In the new window, you can adjust the width of the lines to your preference.
+    
+
+    ```{figure} /fig/PAK_road_symbol_weight.png
+    ---
+    width: 600px
+    name: Pakistan road classification
+    align: center
+    ---
+    Pakistan road classification
+    ```
+    * Once you are done, click `Apply` and `OK` to close the symbology window.
+3. To simplify it, we will search visually for blocked roads and mark them with points. To that end, we will create an entirely new point dataset representing blocked roads.
+    * Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#create-a-new-layer)) 
+    - Under `Database` click on ![](/fig/Three_points.png) and navigate to `temp` folder. Give the new dataset the name __“PAK_flood_2024_blocked_road”__. Click `Save`.
+    - `Geometry type`: Select `Point`
+    - Under `Additional dimension` you should always make sure that you check `None`. 
+    - Select the coordinate reference system (CRS) "EPSG:4326-WGS 84". By default, the QGIS selects the project CRS. 
+    - Under `New Field` you can add columns to the new layer. Add the column __“Blocked_road”__.
+        * `Name` = __“Blocked_road”__
+        * `Type`: Select `Text Data`
+        * Click on `Add to Fields List` ![](/fig/mActionNewAttribute.png) to add the new column to the `Fields List`.
+        * Create another field, __"Blocked_bridge"__.
+        * Click `OK`.
+    * Your new layer will appear in the `Layer Panel`
+    ```{figure} /fig/PAK_blocked_road_new_layer.png
+    ---
+    width: 400px
+    name: Pakistan road classification
+    align: center
+    ---
+    New layer blocked roads
+    ```
+4. Now you can create a point for each place where the flood layer covers the main roads leading out of Larkana [wiki](/content/Wiki/en_qgis_digitalization_wiki.md#add-geometries-to-a-layer). Currently the new layer __“PAK_flood_2024_blocked_road”__ is empty. To add features we can use the `Digitizing Toolbar`. If you cannot see the toolbar `View` -> `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#creation-of-point-data)).  ![](/fig/Digitizing_Toolbar.png) 
+    * Search for places where the flood layer covers the main roads or bridges leading out of Larkana. Once you have found one, click on it![](/fig/mActionCapturePoint.png). Left-click on the feature you want to digitalise.
+    * Once you click on a place, a window will appear. Indicate that the road is blocked by writing `Yes` in the field `Blocked_road`.
+   ```{figure} /fig/PAK_blocked_road_digitalise.png
+    ---
+    width: 200px
+    name: Digitalising blocked roads
+    align: center
+    ---
+    Digitalising blocked roads
+    ```
+    * Once you are done with digitizing click on ![](/fig/mActionSaveEdits.png) to save your edits.
+    * Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
+5. Now, we have mapped all blocked main access roads into Larkana. We can use icons instead of just points to display the layer __“PAK_flood_2024_blocked_road”__ to visualise this fact better.
+
+    * Right-click on the layer__“PAK_flood_2024_blocked_road”__in the `Layer Panel` -> `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
+    * Keep the single symbol option. Select any symbol from the list that is appropriate for marking blocked roads. 
+    *  Once you are done, click `Apply` and `OK` to close the symbology window.
+    ```{figure} /fig/PAK_blocked_road_symbol.png
+    ---
+    width: 600px
+    name: Visulsing blocked roads with icons
+    align: center
+    ---
+    Visulsing blocked roads with icons
+    ```
+Part of your assignment was to point out possible alternatives to road transport. Can you identify any?
+
+:::{dropdown} __Answer__
+In the southwestern of Larkan City, you can find the Mohenjodaro Airport. Currently, the road from Larkana City to the airport appears to be open and accessible. This means that essential supplies could potentially be transported from the airport into the city without encountering any roadblocks. In the southwest of Larkan, there is the Mohenjodaro Airport. The road from Larkana City to the airport does not seem to be blocked! At least supplies could trucked from the airport into the city.
+
+```{figure} /fig/PAK_road_access_airport.png
+---
+width: 600px
+name: Road access to Mohenjodaro Airport
+align: center
+---
+Road access to Mohenjodaro Airport
+```
+:::
+    
