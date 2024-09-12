@@ -81,10 +81,12 @@ The exercise data should be saved in a location where you can easily find them a
 - Roads:`Roads_Larkana.gpkg`
 - Blocked Roads Points: `PAK_flood_2024_blocked_road.gpkg`
 - Flood Extent 2024: `Flood_extand_PAK_2024_Maximum_Flood_Extend_reprojected_fix.gpkg`
-- Administrative Boundaries: `pak_admbnda_adm2_wfp_20220909.shp`
+- Administrative Boundaries: `pak_admbnda_adm1_wfp_20220909.shp`
 
 Save your project and give it a clear name, e.g. "Larkana_flood_response"
+
 2. Look into the attribute table of the different layers and look what information is available and how the attributes are named.
+
 3. We want to make a comprehensible map, think about which data we need and what data we can leave out.
     - For example, the layer `hotosm_gha_roads_lines` contains too many roads for a map on a national scale. Let's open the attribute table and look at how the roads are classified. The data is using the conventional OpenStreetMap classification: The type of road is described under the attribute `highway`. In our case, it might be useful to only display the primary and secondary roads, so all the features where `highway=primary` OR `highway=secondary`.
 
@@ -102,7 +104,7 @@ Doubeclick on the point next to your healthsites vector layer. The symbology win
 
 - Under `landmark` you will find the crescent moon, click on it.
 
-```{figure} ../../fig/crescent_moon.PNG.png
+```{figure} ../../fig/crescent_moon.PNG
 ---
 width: 700px
 name: SVG Marker
@@ -110,7 +112,7 @@ name: SVG Marker
 Create customized SVG Marker
 ```
 - you can adjust its color and size and rotate it 180° in order to turn it around.
-- on the upper right click on the `+` in order to add another "Simple Marker". Choose a circle and adjust its color and size in order to fit arounf the crescent moon.
+- on the upper right click on the __+__ in order to add another "Simple Marker". Choose a circle and adjust its color and size in order to fit arounf the crescent moon.
 
 __Roads__
 
@@ -138,7 +140,7 @@ For categorized classification of the roads right-click on the layer __Roads_Lar
     ---
     Pakistan road classification
     ```
-    * Once you are done, click `Apply` and `OK` to close the symbology window.
+* Once you are done, click `Apply` and `OK` to close the symbology window.
 
 
 __Blocked Roads Points__
@@ -148,7 +150,7 @@ Open the __Symbology Tab__ for the `PAK_flood_2024_blocked_road`-layer and choos
 
 __Airport__
 
-In the [previous exercise](/content/Modul_3/en_qgis_module_3_ex2.md)you found out that the Mohenjodaro Airport in the southwest of Larkana City is still accessibible via the road network. Essential supplies could potentially be transported from the airport into the city without encountering any roadblocks. We want to point out this possibility. Let's mark the airport as a point and visualize it!
+In the [previous exercise](/content/Modul_3/en_qgis_module_3_ex2.md) you found out that the Mohenjodaro Airport in the southwest of Larkana City is still accessibible via the road network. Essential supplies could potentially be transported from the airport into the city without encountering any roadblocks. We want to point out this possibility. Let's mark the airport as a point and visualize it!
 
 To do so we will create an entirely new point dataset representing airports.
 * Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#create-a-new-layer)) 
@@ -173,8 +175,8 @@ To do so we will create an entirely new point dataset representing airports.
     ```
 
  Now you can create a point for the airport and if you would like additional aitports as well [wiki](/content/Wiki/en_qgis_digitalization_wiki.md#add-geometries-to-a-layer). Currently the new layer __“PAK_airports”__ is empty. To add features we can use the `Digitizing Toolbar`. If you cannot see the toolbar `View` -> `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#creation-of-point-data)).  ![](/fig/Digitizing_Toolbar.png) 
-    * Once you have found the airport, click on it![](/fig/mActionCapturePoint.png). Left-click on the feature you want to digitalise.
-    * Once you click on a place, a window will appear. Indicate that the road is blocked by writing `Yes` in the field `Blocked_road`.
+*  Once you have found the airport, click on it![](/fig/mActionCapturePoint.png). Left-click on the feature you want to digitalise.
+* Once you click on a place, a window will appear. Indicate that the road is blocked by writing `Yes` in the field `Blocked_road`.
 
     ```{figure} /fig/Feature_Att_Airport.PNG
     ---
@@ -205,9 +207,12 @@ Now we can use an icon instead of just a point to display the layer __“PAK_air
 
 __Flood Extent__
 
-Open the __Symbology Tab__ for the `Flood_extand_PAK_2024_Maximum_Flood_Extend_reprojected_fix`-layer . Choose a light-blue as color and adjust the opacity to about 30%.
+Open the __Symbology Tab__ for the `Flood_extand_PAK_2024_Maximum_Flood_Extend_reprojected_fix`-layer. Choose a light-blue as color and adjust the opacity to about 30%.
 
 __Administrative Boundaries__
+
+Open the __Symbology Tab__ for the `pak_admbnda_adm1_wfp_20220909`-layer. Click on `Simple Fill` and adjust the `Symbol layer type` to `Simple Line`. You can furthermore adjust now the outline colour and stroke width.
+
 
 __Bonus Step__: [Adding a basemap](/content/Wiki/en_qgis_basemaps_wiki.md) can help potential readers orienting themselves.
 

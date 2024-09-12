@@ -687,12 +687,17 @@ The exercise data should be saved in a location where you can easily find them a
 <li><p>Roads:<code class="docutils literal notranslate"><span class="pre">Roads_Larkana.gpkg</span></code></p></li>
 <li><p>Blocked Roads Points: <code class="docutils literal notranslate"><span class="pre">PAK_flood_2024_blocked_road.gpkg</span></code></p></li>
 <li><p>Flood Extent 2024: <code class="docutils literal notranslate"><span class="pre">Flood_extand_PAK_2024_Maximum_Flood_Extend_reprojected_fix.gpkg</span></code></p></li>
-<li><p>Administrative Boundaries: <code class="docutils literal notranslate"><span class="pre">pak_admbnda_adm2_wfp_20220909.shp</span></code></p></li>
+<li><p>Administrative Boundaries: <code class="docutils literal notranslate"><span class="pre">pak_admbnda_adm1_wfp_20220909.shp</span></code></p></li>
 </ul>
-<p>Save your project and give it a clear name, e.g. “Larkana_flood_response”
-2. Look into the attribute table of the different layers and look what information is available and how the attributes are named.
-3. We want to make a comprehensible map, think about which data we need and what data we can leave out.
-- For example, the layer <code class="docutils literal notranslate"><span class="pre">hotosm_gha_roads_lines</span></code> contains too many roads for a map on a national scale. Let’s open the attribute table and look at how the roads are classified. The data is using the conventional OpenStreetMap classification: The type of road is described under the attribute <code class="docutils literal notranslate"><span class="pre">highway</span></code>. In our case, it might be useful to only display the primary and secondary roads, so all the features where <code class="docutils literal notranslate"><span class="pre">highway=primary</span></code> OR <code class="docutils literal notranslate"><span class="pre">highway=secondary</span></code>.</p>
+<p>Save your project and give it a clear name, e.g. “Larkana_flood_response”</p>
+<ol class="arabic simple" start="2">
+<li><p>Look into the attribute table of the different layers and look what information is available and how the attributes are named.</p></li>
+<li><p>We want to make a comprehensible map, think about which data we need and what data we can leave out.</p>
+<ul class="simple">
+<li><p>For example, the layer <code class="docutils literal notranslate"><span class="pre">hotosm_gha_roads_lines</span></code> contains too many roads for a map on a national scale. Let’s open the attribute table and look at how the roads are classified. The data is using the conventional OpenStreetMap classification: The type of road is described under the attribute <code class="docutils literal notranslate"><span class="pre">highway</span></code>. In our case, it might be useful to only display the primary and secondary roads, so all the features where <code class="docutils literal notranslate"><span class="pre">highway=primary</span></code> OR <code class="docutils literal notranslate"><span class="pre">highway=secondary</span></code>.</p></li>
+</ul>
+</li>
+</ol>
 </section>
 <section id="part-1-symbolization">
 <h3>Part 1: Symbolization<a class="headerlink" href="#part-1-symbolization" title="Permalink to this heading">#</a></h3>
@@ -708,14 +713,14 @@ The exercise data should be saved in a location where you can easily find them a
 <li><p>Under <code class="docutils literal notranslate"><span class="pre">landmark</span></code> you will find the crescent moon, click on it.</p></li>
 </ul>
 <figure class="align-default" id="svg-marker">
-<a class="reference internal image-reference" href="fig/crescent_moon.PNG.png"><img alt="fig/crescent_moon.PNG.png" src="fig/crescent_moon.PNG.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../../_images/crescent_moon.PNG"><img alt="../../_images/crescent_moon.PNG" src="../../_images/crescent_moon.PNG" style="width: 700px;" /></a>
 <figcaption>
 <p><span class="caption-text">Create customized SVG Marker</span><a class="headerlink" href="#svg-marker" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
 <li><p>you can adjust its color and size and rotate it 180° in order to turn it around.</p></li>
-<li><p>on the upper right click on the <code class="docutils literal notranslate"><span class="pre">+</span></code> in order to add another “Simple Marker”. Choose a circle and adjust its color and size in order to fit arounf the crescent moon.</p></li>
+<li><p>on the upper right click on the <strong>+</strong> in order to add another “Simple Marker”. Choose a circle and adjust its color and size in order to fit arounf the crescent moon.</p></li>
 </ul>
 <p><strong>Roads</strong></p>
 <p>For categorized classification of the roads right-click on the layer <strong>Roads_Larkana</strong> in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. A new window will open up with a vertical tab section on the left. Navigate to the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> tab.</p>
@@ -737,15 +742,13 @@ The exercise data should be saved in a location where you can easily find them a
 <p><span class="caption-text">Pakistan road classification</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<ul class="simple">
-<li><p>Once you are done, click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code> to close the symbology window.</p></li>
-</ul>
 </li>
+<li><p>Once you are done, click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code> to close the symbology window.</p></li>
 </ul>
 <p><strong>Blocked Roads Points</strong></p>
 <p>Open the <strong>Symbology Tab</strong> for the <code class="docutils literal notranslate"><span class="pre">PAK_flood_2024_blocked_road</span></code>-layer and choose a meaningful symbol for flood related blocked roads.</p>
 <p><strong>Airport</strong></p>
-<p>In the <a class="reference internal" href="../Modul_3/en_qgis_module_3_ex2.html"><span class="doc std std-doc">previous exercise</span></a>you found out that the Mohenjodaro Airport in the southwest of Larkana City is still accessibible via the road network. Essential supplies could potentially be transported from the airport into the city without encountering any roadblocks. We want to point out this possibility. Let’s mark the airport as a point and visualize it!</p>
+<p>In the <a class="reference internal" href="../Modul_3/en_qgis_module_3_ex2.html"><span class="doc std std-doc">previous exercise</span></a> you found out that the Mohenjodaro Airport in the southwest of Larkana City is still accessibible via the road network. Essential supplies could potentially be transported from the airport into the city without encountering any roadblocks. We want to point out this possibility. Let’s mark the airport as a point and visualize it!</p>
 <p>To do so we will create an entirely new point dataset representing airports.</p>
 <ul>
 <li><p>Click on  <code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">GeoPackage</span> <span class="pre">Layer</span></code>(<span class="xref myst">Wiki Video</span>)</p></li>
@@ -766,20 +769,17 @@ The exercise data should be saved in a location where you can easily find them a
 </figure>
 </li>
 </ul>
-<p>Now you can create a point for the airport and if you would like additional aitports as well <span class="xref myst">wiki</span>. Currently the new layer <strong>“PAK_airports”</strong> is empty. To add features we can use the <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code>. If you cannot see the toolbar <code class="docutils literal notranslate"><span class="pre">View</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Toolbars</span></code> and check <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code> (<span class="xref myst">Wiki Video</span>).  <img alt="" src="../../_images/Digitizing_Toolbar.png" />
-* Once you have found the airport, click on it<img alt="" src="../../_images/mActionCapturePoint.png" />. Left-click on the feature you want to digitalise.
-* Once you click on a place, a window will appear. Indicate that the road is blocked by writing <code class="docutils literal notranslate"><span class="pre">Yes</span></code> in the field <code class="docutils literal notranslate"><span class="pre">Blocked_road</span></code>.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>```{figure} /fig/Feature_Att_Airport.PNG
----
-width: 200px
-name: Digitalising airports
-align: center
----
-Digitalising airports
-```
-</pre></div>
-</div>
-<ul class="simple">
+<p>Now you can create a point for the airport and if you would like additional aitports as well <span class="xref myst">wiki</span>. Currently the new layer <strong>“PAK_airports”</strong> is empty. To add features we can use the <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code>. If you cannot see the toolbar <code class="docutils literal notranslate"><span class="pre">View</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Toolbars</span></code> and check <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code> (<span class="xref myst">Wiki Video</span>).  <img alt="" src="../../_images/Digitizing_Toolbar.png" /></p>
+<ul>
+<li><p>Once you have found the airport, click on it<img alt="" src="../../_images/mActionCapturePoint.png" />. Left-click on the feature you want to digitalise.</p></li>
+<li><p>Once you click on a place, a window will appear. Indicate that the road is blocked by writing <code class="docutils literal notranslate"><span class="pre">Yes</span></code> in the field <code class="docutils literal notranslate"><span class="pre">Blocked_road</span></code>.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../../_images/Feature_Att_Airport.PNG"><img alt="../../_images/Feature_Att_Airport.PNG" src="../../_images/Feature_Att_Airport.PNG" style="width: 200px;" /></a>
+<figcaption>
+<p><span class="caption-text">Digitalising airports</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
 <li><p>Once you are done with digitizing click on <img alt="" src="../../_images/mActionSaveEdits.png" /> to save your edits.</p></li>
 <li><p>Click again on <img alt="" src="../../_images/mActionToggleEditing.png" /> to end the editing mode.</p></li>
 </ul>
@@ -797,8 +797,9 @@ Digitalising airports
 </li>
 </ul>
 <p><strong>Flood Extent</strong></p>
-<p>Open the <strong>Symbology Tab</strong> for the <code class="docutils literal notranslate"><span class="pre">Flood_extand_PAK_2024_Maximum_Flood_Extend_reprojected_fix</span></code>-layer . Choose a light-blue as color and adjust the opacity to about 30%.</p>
+<p>Open the <strong>Symbology Tab</strong> for the <code class="docutils literal notranslate"><span class="pre">Flood_extand_PAK_2024_Maximum_Flood_Extend_reprojected_fix</span></code>-layer. Choose a light-blue as color and adjust the opacity to about 30%.</p>
 <p><strong>Administrative Boundaries</strong></p>
+<p>Open the <strong>Symbology Tab</strong> for the <code class="docutils literal notranslate"><span class="pre">pak_admbnda_adm1_wfp_20220909</span></code>-layer. Click on <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">Fill</span></code> and adjust the <code class="docutils literal notranslate"><span class="pre">Symbol</span> <span class="pre">layer</span> <span class="pre">type</span></code> to <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">Line</span></code>. You can furthermore adjust now the outline colour and stroke width.</p>
 <p><strong>Bonus Step</strong>: <a class="reference internal" href="../Wiki/en_qgis_basemaps_wiki.html"><span class="doc std std-doc">Adding a basemap</span></a> can help potential readers orienting themselves.</p>
 <p>If you are happy with the symobolization of your layers, the map should be ready for a print layout.</p>
 <div class="admonition attention">
@@ -834,10 +835,10 @@ Digitalising airports
 <li><p>Insert a new map by clicking on <img alt="New Map Icon" src="../../_images/30.30.2_print_layout_insert_map_icon.png" /> (<code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Map</span></code>) on the left toolbar, and drawing a rectangle on the print canvas. <span class="xref myst">Video</span></p></li>
 <li><p>Move and position the map so that the area of interest is visible at a reasonable scale.</p></li>
 </ol>
-<figure class="align-default" id="id2">
+<figure class="align-default" id="id3">
 <a class="reference internal image-reference" href="../../_images/Mapframe_Larkana.PNG"><img alt="../../_images/Mapframe_Larkana.PNG" src="../../_images/Mapframe_Larkana.PNG" style="width: 700px;" /></a>
 <figcaption>
-<p><span class="caption-text">Create a new Print Layout</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Create a new Print Layout</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="4">
@@ -859,10 +860,10 @@ Digitalising airports
 </ul>
 </li>
 </ol>
-<figure class="align-default" id="id3">
+<figure class="align-default" id="id4">
 <a class="reference internal image-reference" href="../../_images/Larkana_Legend.PNG"><img alt="../../_images/Larkana_Legend.PNG" src="../../_images/Larkana_Legend.PNG" style="width: 700px;" /></a>
 <figcaption>
-<p><span class="caption-text">Create a new Print Layout</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Create a new Print Layout</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="6">
@@ -917,10 +918,10 @@ Digitalising airports
 <li><p>In the “<strong>Map Frame</strong>”-option, select “<strong>Map 1</strong>”. This will show the frame of the main map on your overview map.</p></li>
 <li><p>You can add a scale bar and a northj arrow to your overview map as well.</p></li>
 </ol>
-<figure class="align-default" id="id4">
+<figure class="align-default" id="id5">
 <a class="reference internal image-reference" href="../../_images/Larkana_Map.png"><img alt="../../_images/Larkana_Map.png" src="../../_images/Larkana_Map.png" style="width: 700px;" /></a>
 <figcaption>
-<p><span class="caption-text">Map Larkama</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Map Larkama</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Congratulations! You have finished your first map.</p>
