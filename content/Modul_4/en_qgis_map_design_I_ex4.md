@@ -83,8 +83,7 @@ The exercise data should be saved in a location where you can easily find them a
 - Flood Extent 2024: `Flood_extand_PAK_2024_Maximum_Flood_Extend_reprojected_fix.gpkg`
 - Administrative Boundaries: `pak_admbnda_adm2_wfp_20220909.shp`
 
-
-- Save your project and give it a clear name, e.g. "Larkana_flood_response"
+Save your project and give it a clear name, e.g. "Larkana_flood_response"
 2. Look into the attribute table of the different layers and look what information is available and how the attributes are named.
 3. We want to make a comprehensible map, think about which data we need and what data we can leave out.
     - For example, the layer `hotosm_gha_roads_lines` contains too many roads for a map on a national scale. Let's open the attribute table and look at how the roads are classified. The data is using the conventional OpenStreetMap classification: The type of road is described under the attribute `highway`. In our case, it might be useful to only display the primary and secondary roads, so all the features where `highway=primary` OR `highway=secondary`.
@@ -157,14 +156,13 @@ To do so we will create an entirely new point dataset representing airports.
     - Under `Additional dimension` you should always make sure that you check `None`. 
     - Select the coordinate reference system (CRS) "EPSG:4326-WGS 84". By default, the QGIS selects the project CRS. 
     - Under `New Field` you can add columns to the new layer. Add the column __“Airport”__.
-        * `Name` = __“Blocked_road”__
-        * `Type`: Select `Text Data`
-        * Click on `Add to Fields List` ![](/fig/mActionNewAttribute.png) to add the new column to the `Fields List`.
-        * Click `OK`.
+    * `Type`: Select `Text Data`
+    * Click on `Add to Fields List` ![](/fig/mActionNewAttribute.png) to add the new column to the `Fields List`.
+    * Click `OK`.
     * Your new layer will appear in the `Layer Panel`
 
- * Once you click on a place, a window will appear. Indicate that the road is blocked by writing `Yes` in the field `Blocked_road`.
-   ```{figure} /fig/Create_Geopackagelayer_airport.PNG
+ 
+    ```{figure} /fig/Create_Geopackagelayer_airport.PNG
     ---
     width: 200px
     name: Digitalising airports
