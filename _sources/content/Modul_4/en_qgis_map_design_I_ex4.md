@@ -81,7 +81,7 @@ The exercise data should be saved in a location where you can easily find them a
 - Roads:`Roads_Larkana.gpkg`
 - Blocked Roads Points: `PAK_flood_2024_blocked_road.gpkg`
 - Flood Extent 2024: `Flood_extand_PAK_2024_Maximum_Flood_Extend_reprojected_fix.gpkg`
-- Administrative Boundaries: `pak_admbnda_adm1_wfp_20220909.shp`
+- Administrative Boundaries Sindh: `PAK_Sindh_amd2.shp`
 
 Save your project and give it a clear name, e.g. "Larkana_flood_response"
 
@@ -167,7 +167,7 @@ To do so we will create an entirely new point dataset representing airports.
  
     ```{figure} /fig/Create_Geopackagelayer_airport.PNG
     ---
-    width: 200px
+    width: 400px
     name: Digitalising airports
     align: center
     ---
@@ -180,7 +180,7 @@ To do so we will create an entirely new point dataset representing airports.
 
     ```{figure} /fig/Feature_Att_Airport.PNG
     ---
-    width: 200px
+    width: 400px
     name: Digitalising airports
     align: center
     ---
@@ -211,7 +211,7 @@ Open the __Symbology Tab__ for the `Flood_extand_PAK_2024_Maximum_Flood_Extend_r
 
 __Administrative Boundaries__
 
-Open the __Symbology Tab__ for the `pak_admbnda_adm1_wfp_20220909`-layer. Click on `Simple Fill` and adjust the `Symbol layer type` to `Simple Line`. You can furthermore adjust now the outline colour and stroke width.
+Open the __Symbology Tab__ for the `PAK_Sindh_amd2`-layer. Click on `Simple Fill` and adjust the `Symbol layer type` to `Simple Line`. You can furthermore adjust now the outline colour and stroke width.
 
 
 __Bonus Step__: [Adding a basemap](/content/Wiki/en_qgis_basemaps_wiki.md) can help potential readers orienting themselves.
@@ -291,8 +291,8 @@ Create a new Print Layout
     - Navigate to the `Item properties` panel on the right and switch to `Raster image`. 
     - Click on the three dots `...` and select the file with your logo
     - If necessary, resize or move the picture on the print layout.
-    
-9. Add soem additionalk information as text.
+
+9. Add some additional information as text.
     - Click on ![Add text icon](/fig/30.30.2_print_layout_add_text.png) (`Add text`)
     - Drag a rectangle on the canvas
     - In the item properties window on the right, you will find a text box with the text "Lorem ipsum". Here you can enter some additional information of the map, e.g. the coordinate system, basemap information or date.
@@ -321,7 +321,7 @@ If you are finished with the main map, click on the map and navigate to the item
 8. In the "__Map Frame__"-option, select "__Map 1__". This will show the frame of the main map on your overview map.
 9. You can add a scale bar and a northj arrow to your overview map as well.
 
-```{figure} ../../fig/Larkana_Map.png
+```{figure} ../../fig/Larkana_Map_Overview.png
 ---
 width: 700px
 name: Map Larkama
