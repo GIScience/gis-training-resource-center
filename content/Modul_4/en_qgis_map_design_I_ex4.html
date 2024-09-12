@@ -718,48 +718,54 @@ The exercise data should be saved in a location where you can easily find them a
 <li><p>on the upper right click on the <code class="docutils literal notranslate"><span class="pre">+</span></code> in order to add another “Simple Marker”. Choose a circle and adjust its color and size in order to fit arounf the crescent moon.</p></li>
 </ul>
 <p><strong>Roads</strong></p>
-<p>For categorized classification of the roads right-click on the layer <strong>Roads_Larkana</strong> in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. A new window will open up with a vertical tab section on the left. Navigate to the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> tab.
-* On the top you find a dropdown menu. Open it and choose <code class="docutils literal notranslate"><span class="pre">Categorized</span></code>. Under <code class="docutils literal notranslate"><span class="pre">Value</span></code> select “higway”.
-* Further down the window, click on <code class="docutils literal notranslate"><span class="pre">Classify</span></code>.  Now you should see all unique values or attributes of the selected “Flood_affacted” column.  You can adjust the colours by double-clicking on one row in the central field.
-* Remove the tick from all categories except: <code class="docutils literal notranslate"><span class="pre">motorway</span></code>, <code class="docutils literal notranslate"><span class="pre">primary</span></code>, <code class="docutils literal notranslate"><span class="pre">secondary</span></code>, <code class="docutils literal notranslate"><span class="pre">trunk</span></code>
-<code class="docutils literal notranslate"><span class="pre">{figure}</span> <span class="pre">/fig/PAK_road_classification.PNG</span>&#160;&#160;&#160;&#160; <span class="pre">---</span>&#160;&#160;&#160;&#160; <span class="pre">width:</span> <span class="pre">600px</span>&#160;&#160;&#160;&#160; <span class="pre">name:</span> <span class="pre">Pakistan</span> <span class="pre">road</span> <span class="pre">classification</span>&#160;&#160;&#160;&#160; <span class="pre">align:</span> <span class="pre">center</span>&#160;&#160;&#160;&#160; <span class="pre">---</span>&#160;&#160;&#160;&#160; <span class="pre">Pakistan</span> <span class="pre">road</span> <span class="pre">classification</span>&#160;&#160;&#160;&#160; </code>
-* You have the option to customize the width of the main roads’ lines to improve the visualization. Open the Symbology window, then select ‘Symbol’. In the new window, you can adjust the width of the lines to your preference.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>```{figure} /fig/PAK_road_symbol_weight.png
----
-width: 600px
-name: Pakistan road classification
-align: center
----
-Pakistan road classification
-```
-* Once you are done, click `Apply` and `OK` to close the symbology window.
-</pre></div>
-</div>
+<p>For categorized classification of the roads right-click on the layer <strong>Roads_Larkana</strong> in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. A new window will open up with a vertical tab section on the left. Navigate to the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> tab.</p>
+<ul>
+<li><p>On the top you find a dropdown menu. Open it and choose <code class="docutils literal notranslate"><span class="pre">Categorized</span></code>. Under <code class="docutils literal notranslate"><span class="pre">Value</span></code> select “higway”.</p></li>
+<li><p>Further down the window, click on <code class="docutils literal notranslate"><span class="pre">Classify</span></code>.  Now you should see all unique values or attributes of the selected “Flood_affacted” column.  You can adjust the colours by double-clicking on one row in the central field.</p></li>
+<li><p>Remove the tick from all categories except: <code class="docutils literal notranslate"><span class="pre">motorway</span></code>, <code class="docutils literal notranslate"><span class="pre">primary</span></code>, <code class="docutils literal notranslate"><span class="pre">secondary</span></code>, <code class="docutils literal notranslate"><span class="pre">trunk</span></code></p>
+<figure class="align-center" id="pakistan-road-classification">
+<a class="reference internal image-reference" href="../../_images/PAK_road_classification.PNG"><img alt="../../_images/PAK_road_classification.PNG" src="../../_images/PAK_road_classification.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Pakistan road classification</span><a class="headerlink" href="#pakistan-road-classification" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>You have the option to customize the width of the main roads’ lines to improve the visualization. Open the Symbology window, then select ‘Symbol’. In the new window, you can adjust the width of the lines to your preference.</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../../_images/PAK_road_symbol_weight.png"><img alt="../../_images/PAK_road_symbol_weight.png" src="../../_images/PAK_road_symbol_weight.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Pakistan road classification</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p>Once you are done, click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code> to close the symbology window.</p></li>
+</ul>
+</li>
+</ul>
 <p><strong>Blocked Roads Points</strong></p>
 <p>Open the <strong>Symbology Tab</strong> for the <code class="docutils literal notranslate"><span class="pre">PAK_flood_2024_blocked_road</span></code>-layer and choose a meaningful symbol for flood related blocked roads.</p>
 <p><strong>Airport</strong></p>
 <p>In the <a class="reference internal" href="../Modul_3/en_qgis_module_3_ex2.html"><span class="doc std std-doc">previous exercise</span></a>you found out that the Mohenjodaro Airport in the southwest of Larkana City is still accessibible via the road network. Essential supplies could potentially be transported from the airport into the city without encountering any roadblocks. We want to point out this possibility. Let’s mark the airport as a point and visualize it!</p>
-<p>To do so we will create an entirely new point dataset representing airports.
-* Click on  <code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">GeoPackage</span> <span class="pre">Layer</span></code>(<span class="xref myst">Wiki Video</span>)
-- Under <code class="docutils literal notranslate"><span class="pre">Database</span></code> click on <img alt="" src="../../_images/Three_points.png" /> and navigate to <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder. Give the new dataset the name <strong>“PAK_airports”</strong>. Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.
-- <code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">type</span></code>: Select <code class="docutils literal notranslate"><span class="pre">Point</span></code>
-- Under <code class="docutils literal notranslate"><span class="pre">Additional</span> <span class="pre">dimension</span></code> you should always make sure that you check <code class="docutils literal notranslate"><span class="pre">None</span></code>.
-- Select the coordinate reference system (CRS) “EPSG:4326-WGS 84”. By default, the QGIS selects the project CRS.
-- Under <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Field</span></code> you can add columns to the new layer. Add the column <strong>“Airport”</strong>.
-* <code class="docutils literal notranslate"><span class="pre">Type</span></code>: Select <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">Data</span></code>
-* Click on <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">to</span> <span class="pre">Fields</span> <span class="pre">List</span></code> <img alt="" src="../../_images/mActionNewAttribute.png" /> to add the new column to the <code class="docutils literal notranslate"><span class="pre">Fields</span> <span class="pre">List</span></code>.
-* Click <code class="docutils literal notranslate"><span class="pre">OK</span></code>.
-* Your new layer will appear in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code></p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>```{figure} /fig/Create_Geopackagelayer_airport.PNG
----
-width: 200px
-name: Digitalising airports
-align: center
----
-Digitalising airports
-```
-</pre></div>
-</div>
+<p>To do so we will create an entirely new point dataset representing airports.</p>
+<ul>
+<li><p>Click on  <code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">GeoPackage</span> <span class="pre">Layer</span></code>(<span class="xref myst">Wiki Video</span>)</p></li>
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">Database</span></code> click on <img alt="" src="../../_images/Three_points.png" /> and navigate to <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder. Give the new dataset the name <strong>“PAK_airports”</strong>. Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">type</span></code>: Select <code class="docutils literal notranslate"><span class="pre">Point</span></code></p></li>
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">Additional</span> <span class="pre">dimension</span></code> you should always make sure that you check <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p></li>
+<li><p>Select the coordinate reference system (CRS) “EPSG:4326-WGS 84”. By default, the QGIS selects the project CRS.</p></li>
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Field</span></code> you can add columns to the new layer. Add the column <strong>“Airport”</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Type</span></code>: Select <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">Data</span></code></p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">to</span> <span class="pre">Fields</span> <span class="pre">List</span></code> <img alt="" src="../../_images/mActionNewAttribute.png" /> to add the new column to the <code class="docutils literal notranslate"><span class="pre">Fields</span> <span class="pre">List</span></code>.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
+<li><p>Your new layer will appear in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code></p>
+<figure class="align-center" id="digitalising-airports">
+<a class="reference internal image-reference" href="../../_images/Create_Geopackagelayer_airport.PNG"><img alt="../../_images/Create_Geopackagelayer_airport.PNG" src="../../_images/Create_Geopackagelayer_airport.PNG" style="width: 200px;" /></a>
+<figcaption>
+<p><span class="caption-text">Digitalising airports</span><a class="headerlink" href="#digitalising-airports" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+</ul>
 <p>Now you can create a point for the airport and if you would like additional aitports as well <span class="xref myst">wiki</span>. Currently the new layer <strong>“PAK_airports”</strong> is empty. To add features we can use the <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code>. If you cannot see the toolbar <code class="docutils literal notranslate"><span class="pre">View</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Toolbars</span></code> and check <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code> (<span class="xref myst">Wiki Video</span>).  <img alt="" src="../../_images/Digitizing_Toolbar.png" />
 * Once you have found the airport, click on it<img alt="" src="../../_images/mActionCapturePoint.png" />. Left-click on the feature you want to digitalise.
 * Once you click on a place, a window will appear. Indicate that the road is blocked by writing <code class="docutils literal notranslate"><span class="pre">Yes</span></code> in the field <code class="docutils literal notranslate"><span class="pre">Blocked_road</span></code>.</p>
@@ -771,25 +777,25 @@ align: center
 ---
 Digitalising airports
 ```
-
-* Once you are done with digitizing click on ![](/fig/mActionSaveEdits.png) to save your edits.
-* Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
 </pre></div>
 </div>
+<ul class="simple">
+<li><p>Once you are done with digitizing click on <img alt="" src="../../_images/mActionSaveEdits.png" /> to save your edits.</p></li>
+<li><p>Click again on <img alt="" src="../../_images/mActionToggleEditing.png" /> to end the editing mode.</p></li>
+</ul>
 <p>Now we can use an icon instead of just a point to display the layer <strong>“PAK_airports”</strong> to visualise this fact better.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>* Right-click on the layer__“PAK_flood_2024_blocked_road”__in the `Layer Panel` -&gt; `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
-* Keep the single symbol option. Select any symbol from the list that is appropriate for marking blocked roads. 
-*  Once you are done, click `Apply` and `OK` to close the symbology window.
-```{figure} /fig/PAK_blocked_road_symbol.png
----
-width: 600px
-name: Visulsing blocked roads with icons
-align: center
----
-Visulsing blocked roads with icons
-```   
-</pre></div>
-</div>
+<ul>
+<li><p>Right-click on the layer__“PAK_flood_2024_blocked_road”__in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. A new window will open up with a vertical tab section on the left. Navigate to the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> tab.</p></li>
+<li><p>Keep the single symbol option. Select any symbol from the list that is appropriate for marking blocked roads.</p></li>
+<li><p>Once you are done, click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code> to close the symbology window.</p>
+<figure class="align-center" id="visulsing-blocked-roads-with-icons">
+<a class="reference internal image-reference" href="../../_images/PAK_blocked_road_symbol.png"><img alt="../../_images/PAK_blocked_road_symbol.png" src="../../_images/PAK_blocked_road_symbol.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Visulsing blocked roads with icons</span><a class="headerlink" href="#visulsing-blocked-roads-with-icons" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+</ul>
 <p><strong>Flood Extent</strong></p>
 <p>Open the <strong>Symbology Tab</strong> for the <code class="docutils literal notranslate"><span class="pre">Flood_extand_PAK_2024_Maximum_Flood_Extend_reprojected_fix</span></code>-layer . Choose a light-blue as color and adjust the opacity to about 30%.</p>
 <p><strong>Administrative Boundaries</strong></p>
@@ -828,10 +834,10 @@ Visulsing blocked roads with icons
 <li><p>Insert a new map by clicking on <img alt="New Map Icon" src="../../_images/30.30.2_print_layout_insert_map_icon.png" /> (<code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Map</span></code>) on the left toolbar, and drawing a rectangle on the print canvas. <span class="xref myst">Video</span></p></li>
 <li><p>Move and position the map so that the area of interest is visible at a reasonable scale.</p></li>
 </ol>
-<figure class="align-default" id="id1">
+<figure class="align-default" id="id2">
 <a class="reference internal image-reference" href="../../_images/Mapframe_Larkana.PNG"><img alt="../../_images/Mapframe_Larkana.PNG" src="../../_images/Mapframe_Larkana.PNG" style="width: 700px;" /></a>
 <figcaption>
-<p><span class="caption-text">Create a new Print Layout</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Create a new Print Layout</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="4">
@@ -853,10 +859,10 @@ Visulsing blocked roads with icons
 </ul>
 </li>
 </ol>
-<figure class="align-default" id="id2">
+<figure class="align-default" id="id3">
 <a class="reference internal image-reference" href="../../_images/Larkana_Legend.PNG"><img alt="../../_images/Larkana_Legend.PNG" src="../../_images/Larkana_Legend.PNG" style="width: 700px;" /></a>
 <figcaption>
-<p><span class="caption-text">Create a new Print Layout</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Create a new Print Layout</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="6">
@@ -911,10 +917,10 @@ Visulsing blocked roads with icons
 <li><p>In the “<strong>Map Frame</strong>”-option, select “<strong>Map 1</strong>”. This will show the frame of the main map on your overview map.</p></li>
 <li><p>You can add a scale bar and a northj arrow to your overview map as well.</p></li>
 </ol>
-<figure class="align-default" id="id3">
+<figure class="align-default" id="id4">
 <a class="reference internal image-reference" href="../../_images/Larkana_Map.png"><img alt="../../_images/Larkana_Map.png" src="../../_images/Larkana_Map.png" style="width: 700px;" /></a>
 <figcaption>
-<p><span class="caption-text">Map Larkama</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Map Larkama</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Congratulations! You have finished your first map.</p>
