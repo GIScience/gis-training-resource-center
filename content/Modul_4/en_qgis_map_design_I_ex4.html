@@ -688,16 +688,11 @@ The exercise data should be saved in a location where you can easily find them a
 <li><p>Blocked Roads Points: <code class="docutils literal notranslate"><span class="pre">PAK_flood_2024_blocked_road.gpkg</span></code></p></li>
 <li><p>Flood Extent 2024: <code class="docutils literal notranslate"><span class="pre">Flood_extand_PAK_2024_Maximum_Flood_Extend_reprojected_fix.gpkg</span></code></p></li>
 <li><p>Administrative Boundaries: <code class="docutils literal notranslate"><span class="pre">pak_admbnda_adm2_wfp_20220909.shp</span></code></p></li>
-<li><p>Save your project and give it a clear name, e.g. “Larkana_flood_response”</p></li>
 </ul>
-<ol class="arabic simple" start="2">
-<li><p>Look into the attribute table of the different layers and look what information is available and how the attributes are named.</p></li>
-<li><p>We want to make a comprehensible map, think about which data we need and what data we can leave out.</p>
-<ul class="simple">
-<li><p>For example, the layer <code class="docutils literal notranslate"><span class="pre">hotosm_gha_roads_lines</span></code> contains too many roads for a map on a national scale. Let’s open the attribute table and look at how the roads are classified. The data is using the conventional OpenStreetMap classification: The type of road is described under the attribute <code class="docutils literal notranslate"><span class="pre">highway</span></code>. In our case, it might be useful to only display the primary and secondary roads, so all the features where <code class="docutils literal notranslate"><span class="pre">highway=primary</span></code> OR <code class="docutils literal notranslate"><span class="pre">highway=secondary</span></code>.</p></li>
-</ul>
-</li>
-</ol>
+<p>Save your project and give it a clear name, e.g. “Larkana_flood_response”
+2. Look into the attribute table of the different layers and look what information is available and how the attributes are named.
+3. We want to make a comprehensible map, think about which data we need and what data we can leave out.
+- For example, the layer <code class="docutils literal notranslate"><span class="pre">hotosm_gha_roads_lines</span></code> contains too many roads for a map on a national scale. Let’s open the attribute table and look at how the roads are classified. The data is using the conventional OpenStreetMap classification: The type of road is described under the attribute <code class="docutils literal notranslate"><span class="pre">highway</span></code>. In our case, it might be useful to only display the primary and secondary roads, so all the features where <code class="docutils literal notranslate"><span class="pre">highway=primary</span></code> OR <code class="docutils literal notranslate"><span class="pre">highway=secondary</span></code>.</p>
 </section>
 <section id="part-1-symbolization">
 <h3>Part 1: Symbolization<a class="headerlink" href="#part-1-symbolization" title="Permalink to this heading">#</a></h3>
@@ -751,18 +746,20 @@ Pakistan road classification
 - Under <code class="docutils literal notranslate"><span class="pre">Additional</span> <span class="pre">dimension</span></code> you should always make sure that you check <code class="docutils literal notranslate"><span class="pre">None</span></code>.
 - Select the coordinate reference system (CRS) “EPSG:4326-WGS 84”. By default, the QGIS selects the project CRS.
 - Under <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Field</span></code> you can add columns to the new layer. Add the column <strong>“Airport”</strong>.
-* <code class="docutils literal notranslate"><span class="pre">Name</span></code> = <strong>“Blocked_road”</strong>
 * <code class="docutils literal notranslate"><span class="pre">Type</span></code>: Select <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">Data</span></code>
 * Click on <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">to</span> <span class="pre">Fields</span> <span class="pre">List</span></code> <img alt="" src="../../_images/mActionNewAttribute.png" /> to add the new column to the <code class="docutils literal notranslate"><span class="pre">Fields</span> <span class="pre">List</span></code>.
 * Click <code class="docutils literal notranslate"><span class="pre">OK</span></code>.
 * Your new layer will appear in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code></p>
-<ul>
-<li><p>Once you click on a place, a window will appear. Indicate that the road is blocked by writing <code class="docutils literal notranslate"><span class="pre">Yes</span></code> in the field <code class="docutils literal notranslate"><span class="pre">Blocked_road</span></code>.</p>
-<figure class="align-default">
-<img alt="../../_images/Create_Geopackagelayer_airport.PNG" src="../../_images/Create_Geopackagelayer_airport.PNG" />
-</figure>
-</li>
-</ul>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>```{figure} /fig/Create_Geopackagelayer_airport.PNG
+---
+width: 200px
+name: Digitalising airports
+align: center
+---
+Digitalising airports
+```
+</pre></div>
+</div>
 <p>Now you can create a point for the airport and if you would like additional aitports as well <span class="xref myst">wiki</span>. Currently the new layer <strong>“PAK_airports”</strong> is empty. To add features we can use the <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code>. If you cannot see the toolbar <code class="docutils literal notranslate"><span class="pre">View</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Toolbars</span></code> and check <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code> (<span class="xref myst">Wiki Video</span>).  <img alt="" src="../../_images/Digitizing_Toolbar.png" />
 * Once you have found the airport, click on it<img alt="" src="../../_images/mActionCapturePoint.png" />. Left-click on the feature you want to digitalise.
 * Once you click on a place, a window will appear. Indicate that the road is blocked by writing <code class="docutils literal notranslate"><span class="pre">Yes</span></code> in the field <code class="docutils literal notranslate"><span class="pre">Blocked_road</span></code>.</p>
