@@ -115,9 +115,10 @@ Create customized SVG Marker
 __Roads__
 
 For categorized classification of the roads right-click on the layer __Roads_Larkana__ in the `Layer Panel` -> `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
-    * On the top you find a dropdown menu. Open it and choose `Categorized`. Under `Value` select “higway”.
-    * Further down the window, click on `Classify`.  Now you should see all unique values or attributes of the selected “Flood_affacted” column.  You can adjust the colours by double-clicking on one row in the central field.
-    * Remove the tick from all categories except: `motorway`, `primary`, `secondary`, `trunk`
+* On the top you find a dropdown menu. Open it and choose `Categorized`. Under `Value` select “higway”.
+* Further down the window, click on `Classify`.  Now you should see all unique values or attributes of the selected “Flood_affacted” column.  You can adjust the colours by double-clicking on one row in the central field.
+* Remove the tick from all categories except: `motorway`, `primary`, `secondary`, `trunk`
+
     ```{figure} /fig/PAK_road_classification.PNG
     ---
     width: 600px
@@ -126,7 +127,7 @@ For categorized classification of the roads right-click on the layer __Roads_Lar
     ---
     Pakistan road classification
     ```
-    * You have the option to customize the width of the main roads' lines to improve the visualization. Open the Symbology window, then select 'Symbol'. In the new window, you can adjust the width of the lines to your preference.
+* You have the option to customize the width of the main roads' lines to improve the visualization. Open the Symbology window, then select 'Symbol'. In the new window, you can adjust the width of the lines to your preference.
     
 
     ```{figure} /fig/PAK_road_symbol_weight.png
@@ -150,16 +151,16 @@ __Airport__
 In the [previous exercise](/content/Modul_3/en_qgis_module_3_ex2.md)you found out that the Mohenjodaro Airport in the southwest of Larkana City is still accessibible via the road network. Essential supplies could potentially be transported from the airport into the city without encountering any roadblocks. We want to point out this possibility. Let's mark the airport as a point and visualize it!
 
 To do so we will create an entirely new point dataset representing airports.
-    * Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#create-a-new-layer)) 
-    - Under `Database` click on ![](/fig/Three_points.png) and navigate to `temp` folder. Give the new dataset the name __“PAK_airports”__. Click `Save`.
-    - `Geometry type`: Select `Point`
-    - Under `Additional dimension` you should always make sure that you check `None`. 
-    - Select the coordinate reference system (CRS) "EPSG:4326-WGS 84". By default, the QGIS selects the project CRS. 
-    - Under `New Field` you can add columns to the new layer. Add the column __“Airport”__.
-    * `Type`: Select `Text Data`
-    * Click on `Add to Fields List` ![](/fig/mActionNewAttribute.png) to add the new column to the `Fields List`.
-    * Click `OK`.
-    * Your new layer will appear in the `Layer Panel`
+* Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#create-a-new-layer)) 
+* Under `Database` click on ![](/fig/Three_points.png) and navigate to `temp` folder. Give the new dataset the name __“PAK_airports”__. Click `Save`.
+* `Geometry type`: Select `Point`
+* Under `Additional dimension` you should always make sure that you check `None`. 
+* Select the coordinate reference system (CRS) "EPSG:4326-WGS 84". By default, the QGIS selects the project CRS. 
+* Under `New Field` you can add columns to the new layer. Add the column __“Airport”__.
+* `Type`: Select `Text Data`
+* Click on `Add to Fields List` ![](/fig/mActionNewAttribute.png) to add the new column to the `Fields List`.
+* Click `OK`.
+* Your new layer will appear in the `Layer Panel`
 
  
     ```{figure} /fig/Create_Geopackagelayer_airport.PNG
@@ -184,14 +185,15 @@ To do so we will create an entirely new point dataset representing airports.
     Digitalising airports
     ```
 
-    * Once you are done with digitizing click on ![](/fig/mActionSaveEdits.png) to save your edits.
-    * Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
+* Once you are done with digitizing click on ![](/fig/mActionSaveEdits.png) to save your edits.
+* Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
 
 Now we can use an icon instead of just a point to display the layer __“PAK_airports”__ to visualise this fact better.
 
-    * Right-click on the layer__“PAK_flood_2024_blocked_road”__in the `Layer Panel` -> `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
-    * Keep the single symbol option. Select any symbol from the list that is appropriate for marking blocked roads. 
-    *  Once you are done, click `Apply` and `OK` to close the symbology window.
+* Right-click on the layer__“PAK_flood_2024_blocked_road”__in the `Layer Panel` -> `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
+* Keep the single symbol option. Select any symbol from the list that is appropriate for marking blocked roads. 
+*  Once you are done, click `Apply` and `OK` to close the symbology window.
+
     ```{figure} /fig/PAK_blocked_road_symbol.png
     ---
     width: 600px
