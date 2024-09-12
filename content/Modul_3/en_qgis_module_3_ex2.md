@@ -89,9 +89,11 @@ __Download all datasets [here]() and save the folder on your computer and unzip 
 
 | Dataset name| Origonal title|Publisher|Download from| 
 | :-------------------- | :----------------- |:----------------- |:----------------- |
-| PAK_adm2_Sindh.gpkg | [Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-pak) |UN OCHA | HDX |
+| PAK_Sindh_adm1.gpkg | [Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-pak) |UN OCHA | HDX |
+| PAK_Sindh_adm2.gpkg | [Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-pak) |UN OCHA | HDX |
 | PAK_Sind_Health_Facilities.gpkg |  [Pakistan Health Facilities (OpenStreetMap Export)](https://data.humdata.org/dataset/hotosm_pak_health_facilities) |Humanitarian OpenStreetMap Team (HOT) | HDX |
-|  VIIRS_20240721_20240803_MaximumFloodExtent_PAK.shp & VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp | [Satellite detected water extents from 08 to 12 August 2024 over Pakistan)](https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan) |UNO SAT | HDX |
+|VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp | [Satellite detected water extents from 08 to 12 August 2024 over Pakistan)](https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan) |UNO SAT | HDX |
+|Roads_Larkana.gpkg |  |Humanitarian OpenStreetMap Team | HOT Export Tool |
 
 <!--ADD: Add an explanation how to create the healthsite dataset by combining points and polygons -->
 
@@ -102,6 +104,8 @@ The exercise data should be saved in a location where you can easily find them a
 
 
 ## Task 1: Gain an overview of the situation around Larkana 
+
+:::{card}
 ```{figure} /fig/IFRC-icons-colour_SURGE.png
 ---
 width: 100px
@@ -112,6 +116,7 @@ name: IFRC Surge Icon
 ```
 
 You have been deployed as an information manager to the flood-affected regions of Pakistan. Upon your arrival you received reports from the operations team indicating that the city of [Larkana](https://www.openstreetmap.org/#map=12/27.5565/68.1672) and its surrounding areas have been severely affected by the floods. The team needs a general overview of the location of the city.
+:::
  
 1. Open QGIS and create a [new project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`
 2. Once the project is created [save the project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#save) in the “project” folder of the exercise “Modul3_Exercise_2_Flood_Larkana”. To do that click on `Project` -> `Save as` and navigate to the folder. Name the project “PAK_Larkana_flood_2024”.
@@ -121,7 +126,7 @@ You have been deployed as an information manager to the flood-affected regions o
 You cannot interact with a base map!
 ```
 
-4. Next, load the GeoPackage "PAK_adm2_Sindh.gpkg"in your project by drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)). Or click on `Layer`-> `Add Layer`-> `Add Vector Layer`. Click on the three points ![](/fig/Three_points.png) and navigate to "PAK_adm2_Sindh.gpkg". Select the file and click `Open`. Back in QGIS click `Add` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)).
+4. Next, load the GeoPackage __"PAK_Sindh_adm2.gpkg"__ in your project by drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)). Or click on `Layer`-> `Add Layer`-> `Add Vector Layer`. Click on the three points ![](/fig/Three_points.png) and navigate to __"PAK_Sindh_adm2.gpkg"__. Select the file and click `Open`. Back in QGIS click `Add` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)).
 
 
 ``` {Attention}
@@ -134,9 +139,13 @@ GeoPackage files can contain multiple files and even entire QGIS projects. When 
     * After you are done selecting districts, click on the icon ![](/fig/selection_toolbar_feature_deselection.png) in the toolbar to end the feature selection mode.
     * Now right-click on the layer in the Layer Panel and click on `Export` -> `Save Selected Features as`. We want to save Larkana as a GeoPackage, so adjust `Format` accordingly. Click on the three points and navigate to your `temp` folder. Here you can give it the layer the name __“Flood_2024_AOI”__ and click `Save`. Now you should see the same name in the `Layer name` field. Click `ok`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_queries_wiki.html#save-selected-features-as-a-new-file))
 
+:::{card}
 Now you have an overview of where the district of Larkana is located in Sindh. The operations team can use this information. 
+:::
 
 ## Task 2: Estimation of Flood Impact on the Health Sector in Larkana
+
+:::{card}
 ```{figure} /fig/IFRC-icons-colour_Health.svg
 ---
 width: 100px
@@ -148,6 +157,7 @@ name: IFRC HEalth Icon
 ```
 
 Social media posts have hinted at a significant impact on the health system in the region. You have been tasked to find out as much as you can about the situation and, if feasible, to estimate the effects on the health system.
+:::
 
 1. The first thing to do is to find out where the health facilities are located in the area. To that end, you do a quick search on HDX. You find the dataset [Pakistan Health Facilities (OpenStreetMap Export)](https://data.humdata.org/dataset/hotosm_pak_health_facilities). This will do for now. 
 
@@ -254,9 +264,13 @@ align: center
 Flood affected health facilities classification
 ```
 
+:::{card}
 We've pinpointed the specific health facilities that have been inundated by the floods. Our findings indicate that a total of four facilities have been completely flooded and are currently non-operational. Considering we assessed the minimum flood impact, it's highly probable that more health facilities will also be impacted. This data is crucial for our operational team as it will enable them to strategize and execute an effective response.
+:::
 
 ## Task 3: Logistical access to Larkana City
+
+:::{card}
 
 ```{figure} /fig/IFRC-icons-colour_Logistics.svg
 ---
@@ -277,6 +291,8 @@ They need answers to the following three questions:
 
 
 In order to get a clearer picture, we need to import the road network data for the region into QGIS. Look for the file in the input folder. The road network is initially displayed without showing any road types or other relevant details. We should apply a categorized classification technique only to display the specific roads that we are interested in.
+:::
+
 1. Load the dataset __"Roads_Larkana"__ into your QGIS.
 2.  For categorized classification right-click on the layer __Roads_Larkana__ in the `Layer Panel` -> `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
     * On the top you find a dropdown menu. Open it and choose `Categorized`. Under `Value` select “higway”.
@@ -352,7 +368,7 @@ In order to get a clearer picture, we need to import the road network data for t
 Part of your assignment was to point out possible alternatives to road transport. Can you identify any?
 
 :::{dropdown} __Answer__
-In the southwestern of Larkan City, you can find the Mohenjodaro Airport. Currently, the road from Larkana City to the airport appears to be open and accessible. This means that essential supplies could potentially be transported from the airport into the city without encountering any roadblocks. In the southwest of Larkan, there is the Mohenjodaro Airport. The road from Larkana City to the airport does not seem to be blocked! At least supplies could trucked from the airport into the city.
+In the southwestern of Larkan City, you can find the [Mohenjodaro Airport](https://www.google.com/search?q=Larkana&rlz=1C1GCEA_enDE1048DE1048&oq=Larkana&gs_lcrp=EgZjaHJvbWUyDAgAEEUYORjjAhiABDIHCAEQLhiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIGCAYQRRg9MgYIBxBFGD2oAgiwAgE&sourceid=chrome&ie=UTF-8#vhid=0x0:0xf59fc8243b2b9d0e&vssid=lclsmap&eim=CAEQDhoRMjcuMzI4NDM3NTc5NDIyNjIiETY4LjE0MjA5NTk3MDUzNTQ4KhQxNzY5OTA4NTExODUyNjQzMDQ3OA). Currently, the road from Larkana City to the airport appears to be open and accessible. This means that essential supplies could potentially be transported from the airport into the city without encountering any roadblocks. In the southwest of Larkan, there is the Mohenjodaro Airport. The road from Larkana City to the airport does not seem to be blocked! At least supplies could trucked from the airport into the city.
 
 ```{figure} /fig/PAK_road_access_airport.png
 ---
@@ -363,4 +379,8 @@ align: center
 Road access to Mohenjodaro Airport
 ```
 :::
-    
+
+:::{card}
+
+The operations team has now all the information they need to plan their logistics. Good Job!
+:::
