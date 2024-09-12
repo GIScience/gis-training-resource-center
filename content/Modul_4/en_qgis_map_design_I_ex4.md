@@ -243,7 +243,9 @@ Create a new Print Layout
 - A new window with a blank print layout will appear. This is the print layout designer.
     - On the left, you will find a toolbar with tools to add and move items on the print layout canvas.
     - On the right you will find a list of items you added to the print layout (it is still empty). Beneath this, you will find a tab called __"item properties"__. This is where you modify the items on your print layout (e.g. enter the text for a text box or change the font).
+
 2. Insert a new map by clicking on ![New Map Icon](/fig/30.30.2_print_layout_insert_map_icon.png) (`Add Map`) on the left toolbar, and drawing a rectangle on the print canvas. [Video](/content/Modul_4/en_qgis_map_design_2.md#adding-a-new-map)
+
 3. Move and position the map so that the area of interest is visible at a reasonable scale.
 
 ```{figure} ../../fig/Mapframe_Larkana.PNG
@@ -278,15 +280,18 @@ Create a new Print Layout
 6. Now, let's add a scale bar:
     - Click on ![Add Scale bar icon](/fig/30.30.2_print_layout_add_scale_bar.png) (`Add Scale bar`)
     - Draw a rectangle on the map and position the scale bar on the edge of the map. You can adjust the scale bar units (meters, kilometers, ...), the fixed segment width (50 km, 75 km, 100 km, ...) and the number of segments (to the right).
+
 7. Let's add a north arrow:
     - Click on ![Add North Arrow Icon](/fig/30.30.2_print_layout_add_orientation.png) (`Add North Arrow`). 
     - Drag a rectangle on the print layout. Adjust the size and location of the north arrow. You can also change the icon in the item properties.
+
 8. Let's add a logo (for example, your national society):
     - Click on ![Add Picture](/fig/30.30.2_print_layout_add_image.png) (`Add picture`)
     - Drag a rectangle in the spot where you want to add the logo
     - Navigate to the `Item properties` panel on the right and switch to `Raster image`. 
     - Click on the three dots `...` and select the file with your logo
     - If necessary, resize or move the picture on the print layout.
+    
 9. Add soem additionalk information as text.
     - Click on ![Add text icon](/fig/30.30.2_print_layout_add_text.png) (`Add text`)
     - Drag a rectangle on the canvas
