@@ -12,9 +12,9 @@ Insert examples in the 4 semiological errors part
 
 In this section, we will present some well-designed maps and discuss how to create similar maps. If you need further examples for good map design, check out these websites/repositories:
 
-- [researchresourcecentre.info maps](https://www.reachresourcecentre.info/search/?search=1&initiative%5B%5D=reach&ptype%5B%5D=map&dates=&keywords)
+- [impact-initiatives.org/resource-centre maps](https://www.impact-initiatives.org/resource-centre/?category%5B%5D=information_products&category%5B%5D=data_methods&type%5B%5D=281&order=latest&limit=10)
 - [geo.msf.org maps](https://geo.msf.org/catalogue/DOCID-1877329211-4979?from=0&sort=_score&desc=true)
-- [reliefweb.int maps](https://response.reliefweb.int)
+- [reliefweb.int maps](https://reliefweb.int/updates?list=Maps%20/%20Infographics&view=maps)
 
 ## Map Examples
 
