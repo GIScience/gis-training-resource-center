@@ -865,15 +865,13 @@ Execution failed after 0.07 seconds</p>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Run</span></code>.</p></li>
 </ul>
 <figure class="align-center" id="fix-geometry">
-<a class="reference internal image-reference" href="../../_images/PAK_flood_ngeomertrie__error.PNG"><img alt="../../_images/PAK_flood_ngeomertrie__error.PNG" src="../../_images/PAK_flood_ngeomertrie__error.PNG" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="fig/PAK_flood_ngeomertrie_error.PNG"><img alt="fig/PAK_flood_ngeomertrie_error.PNG" src="fig/PAK_flood_ngeomertrie_error.PNG" style="width: 400px;" /></a>
 <figcaption>
 <p><span class="caption-text">Fix Geometry</span><a class="headerlink" href="#fix-geometry" title="Permalink to this image">#</a></p>
-<div class="legend">
-<p>Please repeat now the previously failed step 5 of using the tool <strong>“Select by Location”</strong>.</p>
-</div>
 </figcaption>
 </figure>
 </div>
+<p>Please repeat now the previously failed step 5 of using the tool <strong>“Select by Location”</strong>.</p>
 <ol class="arabic simple" start="6">
 <li><p>Open the attribute table of <strong>“Health_Facilities_Flood_2024_AOI”</strong> by right click on the layer  -&gt; <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Attribute</span> <span class="pre">Table</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html">Wiki Video</a>) and activate the editing mode by clicking on <img alt="" src="../../_images/mActionToggleEditing.png" /> (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#change-data-in-the-attribute-table">Wiki Video</a>). Now you are able to edit the data directly in the table.</p></li>
 <li><p>First, we add a new column with the name <strong>“Flood_affected”</strong>. To do so, click on <img alt="" src="../../_images/mActionNewAttribute.png" />. In the <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">field</span></code> window, you have to add the name and set the <code class="docutils literal notranslate"><span class="pre">Type</span></code> to <code class="docutils literal notranslate"><span class="pre">Text(string)</span></code>. Click <code class="docutils literal notranslate"><span class="pre">OK</span></code> (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#add-new-column">Wiki Video</a>)</p></li>
@@ -933,7 +931,7 @@ Now, you can write <code class="docutils literal notranslate"><span class="pre">
 </div>
 </div>
 <ol class="arabic">
-<li><p>Load the dataset <strong>“Roads_Larkana”</strong> into your QGIS.</p></li>
+<li><p>Load the dataset <strong>“Roads_Larkana.gpkg”</strong> from your input folder into your QGIS.</p></li>
 <li><p>For categorized classification right-click on the layer <strong>“Roads_Larkana”</strong> in the Layer Panel and click on <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. A new window will open up with a vertical tab section on the left. Navigate to the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> tab (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html">Wiki Video</a>).</p>
 <ul class="simple">
 <li><p>On the top you find a dropdown menu. Open it and choose <code class="docutils literal notranslate"><span class="pre">Categorized</span></code>. Under <code class="docutils literal notranslate"><span class="pre">Value</span></code> select “highway”.</p></li>

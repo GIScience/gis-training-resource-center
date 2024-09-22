@@ -236,16 +236,16 @@ You need to first use the tool __"Fix Geometry"__.
 * Save the new file in your `temp` folder by clicking on the three dots ![](/fig/Three_points.png), specify the file name as __"2024_MinFloodExtend_reprojected_fix"__.
 *  Click `Run`.
 
-```{figure} /fig/PAK_flood_ngeomertrie__error.PNG
+```{figure} /fig/PAK_flood_ngeomertrie_error.PNG
 ---
 width: 400px
 name: Fix Geometry
 align: center
 ---
 Fix Geometry
+```
 
 Please repeat now the previously failed step 5 of using the tool __"Select by Location"__.
-```
 
 
 6.  Open the attribute table of __"Health_Facilities_Flood_2024_AOI"__ by right click on the layer  -> `Open Attribute Table`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html)) and activate the editing mode by clicking on ![](/fig/mActionToggleEditing.png) ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#change-data-in-the-attribute-table)). Now you are able to edit the data directly in the table.
@@ -310,7 +310,7 @@ They need answers to the following three questions:
 In order to get a clearer picture, we need to import the road network data for the region into QGIS. Look for the file in the input folder. The road network is initially displayed without showing any road types or other relevant details. We should apply a categorized classification technique only to display the specific roads that we are interested in.
 :::
 
-1. Load the dataset __"Roads_Larkana"__ into your QGIS.
+1. Load the dataset __"Roads_Larkana.gpkg"__ from your input folder into your QGIS.
 2. For categorized classification right-click on the layer __"Roads_Larkana"__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html)).
     * On the top you find a dropdown menu. Open it and choose `Categorized`. Under `Value` select “highway”.
     * Further down the window, click on `Classify`.  Now you should see all unique values or attributes of the selected “Flood_affacted” column.  You can adjust the colours by double-clicking on the coluors in each row in the central field.
