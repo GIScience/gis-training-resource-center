@@ -82,7 +82,7 @@ __Wrap up:__
 ### Available Data
 
 :::{card}
-:link: https://data.humdata.org/dataset/hotosm_pak_health_facilities
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_4/Modul_3_Exercise_4_Larkana_flood.zip
 __Download all datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_4/Modul_3_Exercise_4_Larkana_flood.zip) and save the folder on your computer and unzip the file.__
 :::
 
@@ -98,8 +98,8 @@ __Download all datasets [here](https://nexus.heigit.org/repository/gis-training-
 <!--ADD: Add an explanation how to create the healthsite dataset by combining points and polygons -->
 
 ```{hint} Folder structure
-Keep your data management clean by creating a folder structure on your computer for your QGIS-projects and geodata. 
-The exercise data should be saved in a location where you can easily find them and the corresponding QGIS-project
+
+To keep your data organized and easily accessible, it's important to establish a clear folder structure on your computer for your QGIS projects and geodata. Ensure that your exercise data are saved in a location that allows for easy retrieval and association with the corresponding QGIS project.
 ```
 
 
