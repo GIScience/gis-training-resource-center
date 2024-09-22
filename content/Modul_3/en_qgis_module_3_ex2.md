@@ -87,13 +87,13 @@ __Download all datasets [here](https://nexus.heigit.org/repository/gis-training-
 :::
 
 
-| Dataset name| Origonal title|Publisher|Download from| 
+| Dataset name| Original title|Publisher|Download from| 
 | :-------------------- | :----------------- |:----------------- |:----------------- |
 | PAK_Sindh_adm1.gpkg | [Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-pak) |UN OCHA | HDX |
 | PAK_Sindh_adm2.gpkg | [Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-pak) |UN OCHA | HDX |
 | PAK_Sind_Health_Facilities.gpkg |  [Pakistan Health Facilities (OpenStreetMap Export)](https://data.humdata.org/dataset/hotosm_pak_health_facilities) |Humanitarian OpenStreetMap Team (HOT) | HDX |
 |VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp | [Satellite detected water extents from 08 to 12 August 2024 over Pakistan)](https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan) |UNO SAT | HDX |
-|Roads_Larkana.gpkg |  |Humanitarian OpenStreetMap Team | HOT Export Tool |
+|Roads_Larkana.gpkg | Roads Larkana |Humanitarian OpenStreetMap Team | HOT Export Tool |
 
 <!--ADD: Add an explanation how to create the healthsite dataset by combining points and polygons -->
 
