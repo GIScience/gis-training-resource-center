@@ -827,7 +827,7 @@ To select the surrounding districts, click on the <code class="docutils literal 
 <li><p>Save the new file in your <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder by clicking on the three dots <img alt="" src="../../_images/Three_points.png" /> next to <code class="docutils literal notranslate"><span class="pre">Reprojected</span></code>, specify the file name as <strong>“2024_MinFloodExtend_reprojected”</strong>.</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Run</span></code></p></li>
 <li><p>Delete the old layer from the layer panel by right click on the layer -&gt; <code class="docutils literal notranslate"><span class="pre">Remove</span> <span class="pre">layer</span></code>.</p></li>
-<li><p>Adjust the opacity of the flood layer by right-clicking on layer <strong>“2024_MinFloodExtend_reprojected”</strong> in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. A new window will open up with a vertical tab section on the left. Navigate to the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> tab. Adjusted the opacity to around 60 % by moving the slider.</p></li>
+<li><p>Adjust the opacity of the flood layer by right-clicking on layer <strong>“2024_MinFloodExtend_reprojected”</strong> in the Layer Panel and click on <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. A new window will open up with a vertical tab section on the left. Navigate to the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> tab. Adjusted the opacity to around 60 % by moving the slider.</p></li>
 </ul>
 </li>
 </ol>
@@ -857,7 +857,7 @@ To accomplish this, our first step will involve selecting all the affected healt
 <div><p>Feature (1) from “2024_MinFloodExtend_reprojected” has invalid geometry. Please fix the geometry or change the Processing setting to the “Ignore invalid input features” option.
 Execution failed after 0.07 seconds</p>
 </div></blockquote>
-<p>You need to first use the tool <strong>“Fix Geometry”</strong>.</p>
+<p>You need to first use the tool <strong>“Fix Geometry”</strong> before repeating the previously failed step 5 of using the tool <strong>“Select by Location”</strong>.</p>
 <ul class="simple">
 <li><p>To do so open the <code class="docutils literal notranslate"><span class="pre">Processing</span> <span class="pre">Toolbox</span></code> (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox">here is how</a>) and search for the tool <strong>“Fix Geometries”</strong>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">layer</span></code> = <code class="docutils literal notranslate"><span class="pre">2024_MinFloodExtend_reprojected</span></code></p></li>
@@ -871,7 +871,6 @@ Execution failed after 0.07 seconds</p>
 </figcaption>
 </figure>
 </div>
-<p>Please repeat now the previously failed step 5 of using the tool <strong>“Select by Location”</strong>.</p>
 <ol class="arabic simple" start="6">
 <li><p>Open the attribute table of <strong>“Health_Facilities_Flood_2024_AOI”</strong> by right click on the layer  -&gt; <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Attribute</span> <span class="pre">Table</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html">Wiki Video</a>) and activate the editing mode by clicking on <img alt="" src="../../_images/mActionToggleEditing.png" /> (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#change-data-in-the-attribute-table">Wiki Video</a>). Now you are able to edit the data directly in the table.</p></li>
 <li><p>First, we add a new column with the name <strong>“Flood_affected”</strong>. To do so, click on <img alt="" src="../../_images/mActionNewAttribute.png" />. In the <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">field</span></code> window, you have to add the name and set the <code class="docutils literal notranslate"><span class="pre">Type</span></code> to <code class="docutils literal notranslate"><span class="pre">Text(string)</span></code>. Click <code class="docutils literal notranslate"><span class="pre">OK</span></code> (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#add-new-column">Wiki Video</a>)</p></li>
