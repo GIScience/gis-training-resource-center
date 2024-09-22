@@ -51,17 +51,14 @@ In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced
 
 ### Available Data
 
-:::{card}
-:link: https://data.humdata.org/dataset/hotosm_pak_health_facilities
-__Download all datasets [here]() and save the folder on your computer and unzip the file.__
-:::
+You have created the data for Larkana in [Module 3, Exercise 4](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_module_3_ex2.html). In order to conduct this exercise please create a folder on your computer and copy your entire folder structure of Exercise 4 in there. In case you did not do Module 4 - Exercise 4 you can download the data [here](). Save the folder on your computer an unzip the file.
 
 
 | Dataset name| Origonal title|Publisher|Download from| 
 | :-------------------- | :----------------- |:----------------- |:----------------- |
 | PAK_adm2_Sindh.gpkg | [Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-pak) |UN OCHA | HDX |
 | PAK_Sind_Health_Facilities.gpkg |  [Pakistan Health Facilities (OpenStreetMap Export)](https://data.humdata.org/dataset/hotosm_pak_health_facilities) |Humanitarian OpenStreetMap Team (HOT) | HDX |
-|  VIIRS_20240721_20240803_MaximumFloodExtent_PAK.shp & VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp | [Satellite detected water extents from 08 to 12 August 2024 over Pakistan)](https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan) |UNO SAT | HDX |
+| VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp | [Satellite detected water extents from 08 to 12 August 2024 over Pakistan)](https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan) |UNO SAT | HDX |
 
 <!--ADD: Add an explanation how to create the healthsite dataset by combining points and polygons -->
 
@@ -80,7 +77,7 @@ The exercise data should be saved in a location where you can easily find them a
 - Healthsites: `Health_Facilities_Flood_2024_AOI.gpkg`
 - Roads:`Roads_Larkana.gpkg`
 - Blocked Roads Points: `PAK_flood_2024_blocked_road.gpkg`
-- Flood Extent 2024: `Flood_extand_PAK_2024_Maximum_Flood_Extend_reprojected_fix.gpkg`
+- Flood Extent 2024 reprojected: `PAK_2024_Minimum_Flood_Extend_reprojected.gpkg`
 - Administrative Boundaries Sindh: `PAK_Sindh_amd2.shp`
 
 Save your project and give it a clear name, e.g. "Larkana_flood_response"
@@ -207,7 +204,7 @@ Now we can use an icon instead of just a point to display the layer __“PAK_air
 
 __Flood Extent__
 
-Open the __Symbology Tab__ for the `Flood_extand_PAK_2024_Maximum_Flood_Extend_reprojected_fix`-layer. Choose a light-blue as color and adjust the opacity to about 30%.
+Open the __Symbology Tab__ for the `PAK_2024_Minimum_Flood_Extend_reprojected`-layer. Choose a light-blue as color and adjust the opacity to about 30%.
 
 __Administrative Boundaries__
 
@@ -296,6 +293,8 @@ Create a new Print Layout
     - Click on ![Add text icon](/fig/30.30.2_print_layout_add_text.png) (`Add text`)
     - Drag a rectangle on the canvas
     - In the item properties window on the right, you will find a text box with the text "Lorem ipsum". Here you can enter some additional information of the map, e.g. the coordinate system, basemap information or date.
+
+When you are finished with your map design you can export your printable map as image or pdf under `Layout`--> `Export as Image` or `Export as PDF`
 
 You could now have as a result a map similar to this one. Here, some space has been left in order to implement an overview map. If you are still have time go for the bonus exercise and add an overview map!
 

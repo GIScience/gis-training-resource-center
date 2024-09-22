@@ -636,11 +636,7 @@ document.write(`
 </div>
 <section id="available-data">
 <h2>Available Data<a class="headerlink" href="#available-data" title="Permalink to this heading">#</a></h2>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover docutils">
-<div class="sd-card-body docutils">
-<p class="sd-card-text"><strong>Download all datasets <span class="xref myst">here</span> and save the folder on your computer and unzip the file.</strong></p>
-</div>
-<a class="sd-stretched-link reference external" href="https://data.humdata.org/dataset/hotosm_pak_health_facilities"></a></div>
+<p>You have created the data for Larkana in <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_module_3_ex2.html">Module 3, Exercise 4</a>. In order to conduct this exercise please create a folder on your computer and copy your entire folder structure of Exercise 4 in there. In case you did not do Module 4 - Exercise 4 you can download the data <span class="xref myst">here</span>. Save the folder on your computer an unzip the file.</p>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p>Dataset name</p></th>
@@ -660,7 +656,7 @@ document.write(`
 <td class="text-left"><p>Humanitarian OpenStreetMap Team (HOT)</p></td>
 <td class="text-left"><p>HDX</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>VIIRS_20240721_20240803_MaximumFloodExtent_PAK.shp &amp; VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp</p></td>
+<tr class="row-even"><td class="text-left"><p>VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp</p></td>
 <td class="text-left"><p><a class="reference external" href="https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan">Satellite detected water extents from 08 to 12 August 2024 over Pakistan)</a></p></td>
 <td class="text-left"><p>UNO SAT</p></td>
 <td class="text-left"><p>HDX</p></td>
@@ -686,7 +682,7 @@ The exercise data should be saved in a location where you can easily find them a
 <li><p>Healthsites: <code class="docutils literal notranslate"><span class="pre">Health_Facilities_Flood_2024_AOI.gpkg</span></code></p></li>
 <li><p>Roads:<code class="docutils literal notranslate"><span class="pre">Roads_Larkana.gpkg</span></code></p></li>
 <li><p>Blocked Roads Points: <code class="docutils literal notranslate"><span class="pre">PAK_flood_2024_blocked_road.gpkg</span></code></p></li>
-<li><p>Flood Extent 2024: <code class="docutils literal notranslate"><span class="pre">Flood_extand_PAK_2024_Maximum_Flood_Extend_reprojected_fix.gpkg</span></code></p></li>
+<li><p>Flood Extent 2024 reprojected: <code class="docutils literal notranslate"><span class="pre">PAK_2024_Minimum_Flood_Extend_reprojected.gpkg</span></code></p></li>
 <li><p>Administrative Boundaries Sindh: <code class="docutils literal notranslate"><span class="pre">PAK_Sindh_amd2.shp</span></code></p></li>
 </ul>
 <p>Save your project and give it a clear name, e.g. “Larkana_flood_response”</p>
@@ -797,7 +793,7 @@ The exercise data should be saved in a location where you can easily find them a
 </li>
 </ul>
 <p><strong>Flood Extent</strong></p>
-<p>Open the <strong>Symbology Tab</strong> for the <code class="docutils literal notranslate"><span class="pre">Flood_extand_PAK_2024_Maximum_Flood_Extend_reprojected_fix</span></code>-layer. Choose a light-blue as color and adjust the opacity to about 30%.</p>
+<p>Open the <strong>Symbology Tab</strong> for the <code class="docutils literal notranslate"><span class="pre">PAK_2024_Minimum_Flood_Extend_reprojected</span></code>-layer. Choose a light-blue as color and adjust the opacity to about 30%.</p>
 <p><strong>Administrative Boundaries</strong></p>
 <p>Open the <strong>Symbology Tab</strong> for the <code class="docutils literal notranslate"><span class="pre">PAK_Sindh_amd2</span></code>-layer. Click on <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">Fill</span></code> and adjust the <code class="docutils literal notranslate"><span class="pre">Symbol</span> <span class="pre">layer</span> <span class="pre">type</span></code> to <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">Line</span></code>. You can furthermore adjust now the outline colour and stroke width.</p>
 <p><strong>Bonus Step</strong>: <a class="reference internal" href="../Wiki/en_qgis_basemaps_wiki.html"><span class="doc std std-doc">Adding a basemap</span></a> can help potential readers orienting themselves.</p>
@@ -896,6 +892,7 @@ The exercise data should be saved in a location where you can easily find them a
 </ul>
 </li>
 </ol>
+<p>When you are finished with your map design you can export your printable map as image or pdf under <code class="docutils literal notranslate"><span class="pre">Layout</span></code>–&gt; <code class="docutils literal notranslate"><span class="pre">Export</span> <span class="pre">as</span> <span class="pre">Image</span></code> or <code class="docutils literal notranslate"><span class="pre">Export</span> <span class="pre">as</span> <span class="pre">PDF</span></code></p>
 <p>You could now have as a result a map similar to this one. Here, some space has been left in order to implement an overview map. If you are still have time go for the bonus exercise and add an overview map!</p>
 <figure class="align-default" id="map-larkama">
 <a class="reference internal image-reference" href="../../_images/Larkama_Map_withoutOverview.PNG"><img alt="../../_images/Larkama_Map_withoutOverview.PNG" src="../../_images/Larkama_Map_withoutOverview.PNG" style="width: 700px;" /></a>
