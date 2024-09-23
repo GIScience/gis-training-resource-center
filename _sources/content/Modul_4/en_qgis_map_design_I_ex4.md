@@ -112,6 +112,23 @@ Create customized SVG Marker
 - you can adjust its color and size and rotate it 180° in order to turn it around.
 - on the upper right click on the __+__ in order to add another "Simple Marker". Choose a circle and adjust its color and size in order to fit arounf the crescent moon.
 
+
+Another option to use IFRC and Red Cross logos is to use the `Plugin Resource Sharing` :
+
+
+With the plugin __"Plugin Resource Sharing"__, you can install symbol and icon libraries used by the Red Cross and UN, as well as other useful symbols.
+
+1. Install the __"Plugin Resource Sharing"__ by opening the plugin installation window and searching for the plugin.
+2. Once installed, open the plugin interface by clicking on `plugin` > `Plugin Resource Sharing`
+3. Search for packages by the Red Cross and UN
+4. Install the packages.
+
+Now the symbols should be available in the styling manager in the SVG folder.
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_resource_sharing_plugin.mp4"></video>
+
+
+
 __Roads__
 
 For categorized classification of the roads right-click on the layer __Roads_Larkana__ in the `Layer Panel` -> `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
