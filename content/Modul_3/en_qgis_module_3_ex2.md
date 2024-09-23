@@ -86,6 +86,9 @@ __Wrap up:__
 __Download all datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_4/Modul_3_Exercise_4_Larkana_flood.zip) and save the folder on your computer and unzip the file.__
 :::
 
+:::{hint}
+Reprojected and fixed Flood extend layer can be downloaded __[here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_4/Module_3_Exercise_4_Larkana_flood_Day2.zip)__
+:::
 
 | Dataset name| Original title|Publisher|Download from| 
 | :-------------------- | :----------------- |:----------------- |:----------------- |
