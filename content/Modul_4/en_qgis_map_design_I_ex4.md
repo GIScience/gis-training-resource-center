@@ -245,14 +245,6 @@ Create a new Print Layout
 
 3. Move and position the map so that the area of interest is visible at a reasonable scale.
 
-```{figure} ../../fig/Mapframe_Larkana.PNG
----
-width: 700px
-name: Create Print Layout
----
-Create a new Print Layout
-```
-
 4. Let's add a title:
     - Click on ![Add text icon](/fig/30.30.2_print_layout_add_text.png) (`Add text`)
     - Drag a rectangle on the canvas
