@@ -636,7 +636,7 @@ document.write(`
 </div>
 <section id="available-data">
 <h2>Available Data<a class="headerlink" href="#available-data" title="Permalink to this heading">#</a></h2>
-<p>You have created the data for Larkana in <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_module_3_ex2.html">Module 3, Exercise 4</a>. In order to conduct this exercise please create a folder on your computer and copy your entire folder structure of Exercise 4 in there. In case you did not do Module 4 - Exercise 4 you can download the data <span class="xref myst">here</span>. Save the folder on your computer an unzip the file.</p>
+<p>You have created the data for Larkana in <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_module_3_ex2.html">Module 3, Exercise 4</a>. In order to conduct this exercise please create a folder on your computer and copy your entire folder structure of Exercise 4 in there. In case you did not do Module 3 - Exercise 4 you can download the data <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Modul_4/Exercise_2/Modul_4_Exercise_2_Larkana_flood_map.zip">here</a>. Save the folder on your computer an unzip the file.</p>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p>Dataset name</p></th>
@@ -663,7 +663,6 @@ document.write(`
 </tr>
 </tbody>
 </table>
-<!--ADD: Add an explanation how to create the healthsite dataset by combining points and polygons -->
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>Folder structure
@@ -683,23 +682,24 @@ The exercise data should be saved in a location where you can easily find them a
 <li><p>Roads:<code class="docutils literal notranslate"><span class="pre">Roads_Larkana.gpkg</span></code></p></li>
 <li><p>Blocked Roads Points: <code class="docutils literal notranslate"><span class="pre">PAK_flood_2024_blocked_road.gpkg</span></code></p></li>
 <li><p>Flood Extent 2024 reprojected: <code class="docutils literal notranslate"><span class="pre">PAK_2024_Minimum_Flood_Extend_reprojected.gpkg</span></code></p></li>
-<li><p>Administrative Boundaries Sindh: <code class="docutils literal notranslate"><span class="pre">PAK_Sindh_amd2.shp</span></code></p></li>
+<li><p>Administrative Boundaries Sindh: <code class="docutils literal notranslate"><span class="pre">PAK_Sindh_adm1.shp</span></code></p></li>
 </ul>
 <p>Save your project and give it a clear name, e.g. “Larkana_flood_response”</p>
 <ol class="arabic simple" start="2">
 <li><p>Look into the attribute table of the different layers and look what information is available and how the attributes are named.</p></li>
 <li><p>We want to make a comprehensible map, think about which data we need and what data we can leave out.</p>
 <ul class="simple">
-<li><p>For example, the layer <code class="docutils literal notranslate"><span class="pre">hotosm_gha_roads_lines</span></code> contains too many roads for a map on a national scale. Let’s open the attribute table and look at how the roads are classified. The data is using the conventional OpenStreetMap classification: The type of road is described under the attribute <code class="docutils literal notranslate"><span class="pre">highway</span></code>. In our case, it might be useful to only display the primary and secondary roads, so all the features where <code class="docutils literal notranslate"><span class="pre">highway=primary</span></code> OR <code class="docutils literal notranslate"><span class="pre">highway=secondary</span></code>.</p></li>
+<li><p>For example, the layer <code class="docutils literal notranslate"><span class="pre">Roads_Larkana</span></code> contains too many roads for a map on a national scale. Let’s open the attribute table and look at how the roads are classified. The data is using the conventional OpenStreetMap classification: The type of road is described under the attribute <code class="docutils literal notranslate"><span class="pre">highway</span></code>. In our case, it might be useful to only display the primary and secondary roads, so all the features where <code class="docutils literal notranslate"><span class="pre">highway=primary</span></code> OR <code class="docutils literal notranslate"><span class="pre">highway=secondary</span></code>.</p></li>
 </ul>
 </li>
 </ol>
 </section>
 <section id="part-1-symbolization">
 <h3>Part 1: Symbolization<a class="headerlink" href="#part-1-symbolization" title="Permalink to this heading">#</a></h3>
-<p>Now we have assigned a symbol for each layer at our disposal. Look at the map you created and decide if you want to adjust any symbology to make the map easier to read. Do you need to change some colours? Are the layers ordered in a way that the information is visible? Is the font size appropriate, or does it cover up too much information?</p>
+<p>Now we have assigned a symbol for each layer at our disposal. Look at the map you created and decide if you want to adjust any symbology to make the map easier to read. Do you need to change some colours? Are the layers ordered in a way that the information is visible? Is the font size appropriate, or does it cover up too much information?
+Let’s go trhough the layers one by one and visualize them in a meaningful way.</p>
 <p><strong>Healthsites</strong></p>
-<p>Doubeclick on the point next to your healthsites vector layer. The symbology window will open. Let’s create our own customized symbol for healthcare facilies.</p>
+<p>Doubleclick on the point next to your healthsites vector layer. The symbology window will open. Let’s create our own customized symbol for healthcare facilies.</p>
 <ul class="simple">
 <li><p>Under <code class="docutils literal notranslate"><span class="pre">Symbol</span> <span class="pre">layer</span> <span class="pre">type</span></code>, select <strong>“SVG Marker”</strong></p></li>
 <li><p>Scroll down to the SVG-Browser. Here you will find all the folder of your installed SVG-libraries.</p></li>
@@ -795,7 +795,7 @@ The exercise data should be saved in a location where you can easily find them a
 <p><strong>Flood Extent</strong></p>
 <p>Open the <strong>Symbology Tab</strong> for the <code class="docutils literal notranslate"><span class="pre">PAK_2024_Minimum_Flood_Extend_reprojected</span></code>-layer. Choose a light-blue as color and adjust the opacity to about 30%.</p>
 <p><strong>Administrative Boundaries</strong></p>
-<p>Open the <strong>Symbology Tab</strong> for the <code class="docutils literal notranslate"><span class="pre">PAK_Sindh_amd2</span></code>-layer. Click on <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">Fill</span></code> and adjust the <code class="docutils literal notranslate"><span class="pre">Symbol</span> <span class="pre">layer</span> <span class="pre">type</span></code> to <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">Line</span></code>. You can furthermore adjust now the outline colour and stroke width.</p>
+<p>Open the <strong>Symbology Tab</strong> for the <code class="docutils literal notranslate"><span class="pre">PAK_Sindh_amd1</span></code>-layer. Click on <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">Fill</span></code> and adjust the <code class="docutils literal notranslate"><span class="pre">Symbol</span> <span class="pre">layer</span> <span class="pre">type</span></code> to <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">Line</span></code>. You can furthermore adjust now the outline colour and stroke width.</p>
 <p><strong>Bonus Step</strong>: <a class="reference internal" href="../Wiki/en_qgis_basemaps_wiki.html"><span class="doc std std-doc">Adding a basemap</span></a> can help potential readers orienting themselves.</p>
 <p>If you are happy with the symobolization of your layers, the map should be ready for a print layout.</p>
 <div class="admonition attention">

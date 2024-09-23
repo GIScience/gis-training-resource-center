@@ -51,7 +51,7 @@ In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced
 
 ### Available Data
 
-You have created the data for Larkana in [Module 3, Exercise 4](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_module_3_ex2.html). In order to conduct this exercise please create a folder on your computer and copy your entire folder structure of Exercise 4 in there. In case you did not do Module 4 - Exercise 4 you can download the data [here](). Save the folder on your computer an unzip the file.
+You have created the data for Larkana in [Module 3, Exercise 4](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_module_3_ex2.html). In order to conduct this exercise please create a folder on your computer and copy your entire folder structure of Exercise 4 in there. In case you did not do Module 3 - Exercise 4 you can download the data [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_4/Exercise_2/Modul_4_Exercise_2_Larkana_flood_map.zip). Save the folder on your computer an unzip the file.
 
 
 | Dataset name| Origonal title|Publisher|Download from| 
@@ -60,7 +60,7 @@ You have created the data for Larkana in [Module 3, Exercise 4](https://giscienc
 | PAK_Sind_Health_Facilities.gpkg |  [Pakistan Health Facilities (OpenStreetMap Export)](https://data.humdata.org/dataset/hotosm_pak_health_facilities) |Humanitarian OpenStreetMap Team (HOT) | HDX |
 | VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp | [Satellite detected water extents from 08 to 12 August 2024 over Pakistan)](https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan) |UNO SAT | HDX |
 
-<!--ADD: Add an explanation how to create the healthsite dataset by combining points and polygons -->
+
 
 ```{hint} Folder structure
 Keep your data management clean by creating a folder structure on your computer for your QGIS-projects and geodata. 
@@ -78,22 +78,23 @@ The exercise data should be saved in a location where you can easily find them a
 - Roads:`Roads_Larkana.gpkg`
 - Blocked Roads Points: `PAK_flood_2024_blocked_road.gpkg`
 - Flood Extent 2024 reprojected: `PAK_2024_Minimum_Flood_Extend_reprojected.gpkg`
-- Administrative Boundaries Sindh: `PAK_Sindh_amd2.shp`
+- Administrative Boundaries Sindh: `PAK_Sindh_adm1.shp`
 
 Save your project and give it a clear name, e.g. "Larkana_flood_response"
 
 2. Look into the attribute table of the different layers and look what information is available and how the attributes are named.
 
 3. We want to make a comprehensible map, think about which data we need and what data we can leave out.
-    - For example, the layer `hotosm_gha_roads_lines` contains too many roads for a map on a national scale. Let's open the attribute table and look at how the roads are classified. The data is using the conventional OpenStreetMap classification: The type of road is described under the attribute `highway`. In our case, it might be useful to only display the primary and secondary roads, so all the features where `highway=primary` OR `highway=secondary`.
+    - For example, the layer `Roads_Larkana` contains too many roads for a map on a national scale. Let's open the attribute table and look at how the roads are classified. The data is using the conventional OpenStreetMap classification: The type of road is described under the attribute `highway`. In our case, it might be useful to only display the primary and secondary roads, so all the features where `highway=primary` OR `highway=secondary`.
 
 ### Part 1: Symbolization
 
 Now we have assigned a symbol for each layer at our disposal. Look at the map you created and decide if you want to adjust any symbology to make the map easier to read. Do you need to change some colours? Are the layers ordered in a way that the information is visible? Is the font size appropriate, or does it cover up too much information?
+Let's go trhough the layers one by one and visualize them in a meaningful way.
 
 __Healthsites__
 
-Doubeclick on the point next to your healthsites vector layer. The symbology window will open. Let's create our own customized symbol for healthcare facilies.
+Doubleclick on the point next to your healthsites vector layer. The symbology window will open. Let's create our own customized symbol for healthcare facilies.
 - Under `Symbol layer type`, select __"SVG Marker"__
 - Scroll down to the SVG-Browser. Here you will find all the folder of your installed SVG-libraries.
 
@@ -208,7 +209,7 @@ Open the __Symbology Tab__ for the `PAK_2024_Minimum_Flood_Extend_reprojected`-l
 
 __Administrative Boundaries__
 
-Open the __Symbology Tab__ for the `PAK_Sindh_amd2`-layer. Click on `Simple Fill` and adjust the `Symbol layer type` to `Simple Line`. You can furthermore adjust now the outline colour and stroke width.
+Open the __Symbology Tab__ for the `PAK_Sindh_amd1`-layer. Click on `Simple Fill` and adjust the `Symbol layer type` to `Simple Line`. You can furthermore adjust now the outline colour and stroke width.
 
 
 __Bonus Step__: [Adding a basemap](/content/Wiki/en_qgis_basemaps_wiki.md) can help potential readers orienting themselves.
