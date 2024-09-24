@@ -1,0 +1,1033 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Exercise: Security Peshawar &#8212; GIS Resource Training Center</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/Modul_5/en_qgis_modul_5_ex3';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-light" alt="GIS Resource Training Center - Home"/>
+    <script>document.write(`<img src="../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-dark" alt="GIS Resource Training Center - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to the IFRC Network GIS Training Platform
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 1</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Modul_1/en_module_1_overview.html">Introduction to GIS</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_1/en_qgis_theorie.html">What is GIS?</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../Modul_1/en_qgis_installation.html">Setting up</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_1/en_qgis_start.html">Getting started with QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_1/en_qgis_modul_1_exercises.html">Exercises Module 1 - Introduction to GIS</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 2</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Modul_2/en_module_2_overview.html">Working with Geodata</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_2/en_qgis_geodata_concept.html">Introduction to geodata and layers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_2/en_qgis_projections.html">Projections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_2/en_qgis_basic_data_processing.html">Geodata management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_2/en_qgis_attribute_table.html">Attribute Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_2/en_data_sources.html">Data sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_2/en_qgis_basemap.html">Basemaps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_2/en_qgis_modul_2_exercises.html">Exercises Module 2 - Working with Geodata</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 3</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Modul_3/en_module_3_overview.html">Basic GIS Operations</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_3/en_qgis_digitalisation.html">Digitisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_3/en_qgis_data_classification.html">Geodata Classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_3/en_qgis_data_queries.html">Geodata Selection and Queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_3/en_qgis_modul_3_exercises.html">Exercises Module 3 - Basic GIS Operations</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 4</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Modul_4/en_module_4_overview.html">Visualisation of Geodata and Map Making</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_map_design_I.html">Visualisation of Geodata: Symbology and Colours</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_map_design_2.html">Map Design: The Print layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_map_examples.html">Examples of Good Map Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_modul_4_exercises.html">Exercises Module 4 - Visualisation of Geodata and Map Making</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 5</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="en_module_5_overview.html">Intermediate GIS Operations</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_spatial_tools.html">Spatial Geodataprocessing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_non_spatial_tools.html">Non-Spatial Geodataprocessing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_modul_5_exercises.html">Exercises Module 5 - Intermediate GIS operations</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 6 - Data Analysis with QGIS</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Modul_6/en_module_6_overview.html">Data Analysis with QGIS</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_6/en_qgis_data_analysis_theorie.html">Data Analysis with QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_6/en_qgis_common_data_analysis.html">Data Analysis in the Humanitarian Sector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_6/en_qgis_modul_6_exercises.html">Exercises Module 6 - Data Analysis with QGIS</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 7 - Automation with QGIS</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Modul_7/en_qgis_automation_theory.html">Automation theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Modul_7/en_qgis_modul_7_ex1.html">Exercises 1: Automatisation</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 8 - Remote Sensing and Raster Data</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Modul_8/en_qgis_remote_sensing_raster_theorie.html">Remote Sensing and Raster data theory 🛰️</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Modul_8/en_qgis_remote_sensing_theory.html">Introduction to Remote Sensing and Remote Sensing Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Modul_8/en_qgis_modul_8_ex1.html">Rasterdata Exercise 1: Basic Assessment of Flood Exposure in the Indus Basin in Pakistan</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 9 - Network Analysis</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Modul_9/en_qgis_network_analysis_theory.html">Spatial Network Analysis Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Modul_9/en_qgis_openrouteservice_tools.html">Plugin: Openrouteservice (ORS) tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Modul_9/en_qgis_centrality.html">Network centrality measures and its application in QGIS</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Modul_9/en_qgis_modul_9_exercises.html">Exercises Network Analysis</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_9/en_qgis_modul_9_ex1.html">Task 1 - Assess water distribution access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_9/en_qgis_modul_9_ex2.html">Task 2 - Access healthcare - avoid areas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_9/en_qgis_modul_9_ex3.html">Task 3: Larger scale accessibility analyses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_9/en_qgis_modul_9_ex4.html">Task 4: Something something capacity?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_9/en_qgis_modul_9_ex5.html">Task 5: Identifying critical road segments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_9/en_qgis_modul_9_ex6.html">Task 6: West Germany / Ahrtal flood logistics</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Wiki</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_qgis_basics_wiki.html">QGIS Basics</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_installation_wiki.html">QGIS installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_interface_wiki.html">QGIS Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_projects_folder_structure_wiki.html">Projects and Folder Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_projections_wiki.html">Projections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_basemaps_wiki.html">Basemaps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_plugins_wiki.html">Plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_data_sources_wiki.html">Data sources</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_geodata_wiki.html">Geodata</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_geodata_types_wiki.html">Types of Geodata</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_import_geodata_wiki.html">Geodata Import in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_OpenStreetMap_wiki.html">OpenStreetMap (OSM) Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_layer_concept_wiki.html">Layer Concept</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_attribute_table_wiki.html">Attribute Table in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_digitalization_wiki.html">Digitization</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_data_classification_wiki.html">Geodata Classification</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_single_symbol_wiki.html">Single symbol classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_categorized_wiki.html">Categorized classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_graduated_wiki.html">Graduated classification</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_geoprocessing_wiki.html">Geoprocessing</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_queries_wiki.html">Spatial and Non-spatial queries</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_spatial_queries_wiki.html">Spatial Queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_non_spatial_queries_wiki.html">Non-Spatial Queries</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_table_functions_wiki.html">Table function</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_joins_wiki.html">Joins</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_spatial_joins_wiki.html">Spatial Joins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_non_spatial_joins_wiki.html">Non-Spatial Joins</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_raster_wiki.html">Raster</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_raster_basic_wiki.html">Basic Raster operations</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_automatisation_wiki.html">Automatistation in QGIS</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_model_builder_wiki.html">Model Builder</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_representation_wiki.html">Map making and visualisation in QGIS</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_visualisation_wiki.html">Visualisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_map_making_wiki.html">Map making Wiki</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_common_errors_and_Issues.html">QGIS common errors and issues <!-- omit from toc --></a></li>
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">GIS in Anticipatory Action</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_drought_trigger_somalia.html">QGIS Trigger Workflow for Somalia</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_risk_assessment_plugin.html">Risk Assessment QGIS Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_historical_impact_assessment_sudan.html">Historical Impact Assessment (HIA) for Flood in Sudan</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_GIS_AA_exercises.html">Exercises- GIS in Anticipatory Action</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Mobile Data Collection</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Mobile_Data_collection/en_SMT.html">Sketch Map Tool</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_training.html">Sketch Map Tool Training</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Trainers corner</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/en_TOT_intro.html">Train of trainers introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/en_how_to_training.html">How to plan a whole GIS Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/en_training_graphical_outline.html">Training Agenda and Handout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/en_training_day_structure.html">How to plan and structure a GIS Training Session</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/en_how_to_teach_GIS.html">How to teach GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/en_how_to_assessment.html">Assessments in GIS Training: A Guide</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../About/about_1.html"><strong>Welcome at the GIS Training Resource Center!</strong></a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Glossary</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Glossary/en_glossary_1.html">Glossary (Draft)</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center/issues/new?title=Issue%20on%20page%20%2Fcontent/Modul_5/en_qgis_modul_5_ex3.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/content/Modul_5/en_qgis_modul_5_ex3.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Exercise: Security Peshawar</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions-for-the-trainers">Instructions for the trainers</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-geolocate-security-related-information-of-the-last-days">Task 1: Geolocate security-related information of the last days</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-load-excel-file-containin-conflict-data-into-qgis">Task 2: Load Excel File containin conflict data into QGIS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-mpi-data">Task 3: MPI data</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="exercise-security-peshawar">
+<h1>Exercise: Security Peshawar<a class="headerlink" href="#exercise-security-peshawar" title="Permalink to this heading">#</a></h1>
+<p><strong>🔙<a class="reference internal" href="../intro.html"><span class="doc std std-doc">Back to Homepage</span></a></strong></p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Click here to return to the exercise overview page for module 3</strong></p>
+</div>
+<a class="sd-stretched-link reference external" href="https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_modul_3_exercises.html"></a></div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="rubric">Aim of the exercise:</p>
+<p class="rubric">Type of trainings exercise:</p>
+<ul class="simple">
+<li><p class="sd-card-text">This exercise can be used in online and presence training.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="rubric">These skills are relevant for</p>
+<ul class="simple">
+<li><p class="sd-card-text">QGIS Essentials</p></li>
+<li><p class="sd-card-text">Working with multiple layers</p></li>
+<li><p class="sd-card-text">Conduct spatial queries</p></li>
+<li><p class="sd-card-text">Creation of geodata</p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="rubric">Estimated time demand for the exercise.</p>
+<ul class="simple">
+<li><p class="sd-card-text">The exercise takes around 3 hours to complete, depending on the number of participants and their familiarity with computer systems.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="rubric">Relevant wiki articles</p>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html">Geodata Import in QGIS</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html">Layer Concept</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html">Geodata Classification- Categorized</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#add-geometries-to-a-layer">Digitisation- Point data</a></p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-1 sd-row-cols-lg-1 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="rubric">Context</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section id="instructions-for-the-trainers">
+<h2>Instructions for the trainers<a class="headerlink" href="#instructions-for-the-trainers" title="Permalink to this heading">#</a></h2>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Trainers Corner</strong> <div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="rubric">Prepare the training</p>
+<ul class="simple">
+<li><p class="sd-card-text">Take the time to familiarise yourself with the exercise and the provided material.</p></li>
+<li><p class="sd-card-text">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</p></li>
+<li><p class="sd-card-text">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <strong>and unzipped</strong> the data folder.</p></li>
+<li><p class="sd-card-text">Check out <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings">How to do trainings?</a> for some general tips on training conduction</p></li>
+</ul>
+<p class="rubric">Conduct the training</p>
+<p class="sd-card-text"><strong>Introduction:</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Introduce the idea and aim of the exercise.</p></li>
+<li><p class="sd-card-text">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</p></li>
+</ul>
+<p class="sd-card-text"><strong>Follow-along:</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</p></li>
+<li><p class="sd-card-text">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</p></li>
+<li><p class="sd-card-text">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</p></li>
+</ul>
+<p class="sd-card-text"><strong>Wrap up:</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Leave time for any issues or questions concerning the tasks at the end of the exercise.</p></li>
+<li><p class="sd-card-text">Leave some time for open questions.</p></li>
+</ul>
+</div>
+</details><section id="available-data">
+<h3>Available Data<a class="headerlink" href="#available-data" title="Permalink to this heading">#</a></h3>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Download all datasets <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Exercise_4_Security_Peshawar/Modul_5_Exercise_4_Security_Peshawar.zip">here</a> and save the folder on your computer and unzip the file.</strong></p>
+</div>
+<a class="sd-stretched-link reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Exercise_4_Security_Peshawar/Modul_5_Exercise_4_Security_Peshawar.zip"></a></div>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Dataset name</p></th>
+<th class="head text-left"><p>Original title</p></th>
+<th class="head text-left"><p>Publisher</p></th>
+<th class="head text-left"><p>Download from</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>2024-01-01-2024-09-23-Pakistan.xlsx</p></td>
+<td class="text-left"><p>Conflict data for Pakistan 01/2024-09/2024</p></td>
+<td class="text-left"><p>ACLAD</p></td>
+<td class="text-left"><p>HDX</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>PAK_KP_admin_3.gpkg</p></td>
+<td class="text-left"><p>Administrative Boundaries level 3 of KP</p></td>
+<td class="text-left"><p>UN OCHA</p></td>
+<td class="text-left"><p>HDX</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Pak_adm2_Khyber Pakhtunkhwa.gpkg</p></td>
+<td class="text-left"><p>Administrative Boundaries level 1 of KP</p></td>
+<td class="text-left"><p>UN OCHA</p></td>
+<td class="text-left"><p>HDX</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>20240605_PAK_MPI.xlsx</p></td>
+<td class="text-left"><p>Pakistan Multi Poverty Index (MPI)</p></td>
+<td class="text-left"><p>Pakistan Bureau of Statistics</p></td>
+<td class="text-left"><p>Pakistan Bureau of Statistics</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>AOI_Peshawar.gpkg</p></td>
+<td class="text-left"><p>Area of Interest (AOI) around Peshawar</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="task-1-geolocate-security-related-information-of-the-last-days">
+<h2>Task 1: Geolocate security-related information of the last days<a class="headerlink" href="#task-1-geolocate-security-related-information-of-the-last-days" title="Permalink to this heading">#</a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Context:</div>
+<p class="sd-card-text">In response to a recent cholera outbreak in Khyber Pakhtunkhwa (KP), the Pakistan Red Crescent Society (PRCS) and other Partner National Societies (PNS) have mobilized a team to this region. The primary objective of the team is to conduct a comprehensive assessment on the ground and facilitate coordination for any necessary future responses.
+The team will be staying at the “Roomy Crossroad Hotel Peshawar” during their mission in the affected area.</p>
+</div>
+</div>
+<ol class="arabic simple">
+<li><p>We will use the plugin in “Quick Map Service” to locate places precisely.
+To install the plugin click on <code class="docutils literal notranslate"><span class="pre">Plugins</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Manage</span> <span class="pre">and</span> <span class="pre">Install</span> <span class="pre">Plugins…</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">All</span></code> and search for <code class="docutils literal notranslate"><span class="pre">Quick</span> <span class="pre">Map</span> <span class="pre">Service</span></code>. Once you have found it, click on it and click <code class="docutils literal notranslate"><span class="pre">Install</span> <span class="pre">Plugin</span></code>(<span class="xref myst">Wiki Video</span>).</p></li>
+<li><p>Open the plugin by clicking on <code class="docutils literal notranslate"><span class="pre">Web</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Quick</span> <span class="pre">Map</span> <span class="pre">Service</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">ESRI</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">ESRI</span> <span class="pre">Satellite</span></code>. Now you should have a Settelite image base map in your <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code>.</p></li>
+<li><p>Add the <code class="docutils literal notranslate"><span class="pre">Google</span> <span class="pre">Road</span></code> base map from the <code class="docutils literal notranslate"><span class="pre">Quick</span> <span class="pre">Map</span> <span class="pre">Service</span></code> as well.</p></li>
+<li><p>Place the <code class="docutils literal notranslate"><span class="pre">Google</span> <span class="pre">Road</span></code> above the satellite image map and turn the layer transparent by opening the symbology window and adjusting the opacity.</p></li>
+<li><p>You will need the plugin “Lat Lon tools” to locate the coordinates you receive from the <a class="reference external" href="http://field.To">field.To</a> install the plugin click on <code class="docutils literal notranslate"><span class="pre">Plugins</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Manage</span> <span class="pre">and</span> <span class="pre">Install</span> <span class="pre">Plugins…</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">All</span></code> and search for <code class="docutils literal notranslate"><span class="pre">Lat</span> <span class="pre">Lon</span> <span class="pre">tools</span></code>. Once you have found it, click on it and click <code class="docutils literal notranslate"><span class="pre">Install</span> <span class="pre">Plugin</span></code>(<span class="xref myst">Wiki Video</span>).</p></li>
+</ol>
+<p>Now you are ready, check the information from the field below and capture it in a new point layer. Use Google in your browser, the base maps and the Lat Lon tools plugin to locate the exact positions.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>When creating the point and polygon layer use the CRS UTM 42 N <strong>EPSG: 32642</strong></p>
+</div>
+<p>In case the information states an exact area, create a new polygon layer and map it exactly.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Number</p></th>
+<th class="head text-left"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>1</p></td>
+<td class="text-left"><p>An IED explosion on the road N45 between Seri-Bahlol and Tableeghi Markaz Mardina near Jandy has been reported by local radio stations.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>2</p></td>
+<td class="text-left"><p>In a conversation with a PRCS driver, a local teacher shared that the vicinity of the Government <strong>Girls Primary School</strong> in <strong>Takkar</strong> is notorious for being a minefield. Specifically, the area between the main road and a smaller dirt road behind the school is known to be heavily mined. Due to this danger, local farmers are extremely reluctant to work on this particular piece of land.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>3</p></td>
+<td class="text-left"><p>Following the recent events, it has been decided that the vicinity surrounding the <strong>Arbab Niaz Cricket Stadium Peshawar</strong> is now designated as a no-go area for all staff members. This area encompasses the region bordered by the <strong>N5</strong> road to the south, the <strong>Afghan Colony road</strong> to the north and east, and the <strong>Charsadda Road</strong> to the west.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>4</p></td>
+<td class="text-left"><p>GPS Coordinates <strong>(33.99519949518549, 71.66217873936723)</strong>: A humanitarian worker was transporting medical supplies through the region when they were approached by a local farmer. The farmer mentioned that a nearby abandoned well, located at these coordinates, has become a gathering point for unexploded ordnance. Due to its proximity to a residential area, this site is now flagged as high-risk and needs immediate attention from demining teams.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>5</p></td>
+<td class="text-left"><p>Address: <strong>(11, Jinnah Road, Peshawar)</strong> :A government building at this address has recently been vacated after a bomb threat was called in. Police and bomb squads searched the premises but didn’t find any explosives. However, local business owners reported unusual activity around the building in the weeks leading up to the threat. This location  is now under surveillance, and it needs to be marked as a temporary no-go zone.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>6</p></td>
+<td class="text-left"><p><strong>Qissa Khwani Bazaar, Peshawar</strong>: A popular historical market at this address has become a focal point for local community gatherings, but recent intelligence reports suggest that the site could be at risk for political protests that have turned violent in the past. Authorities are now considering setting up temporary barriers to manage the flow of people, and it’s crucial that this location is marked as a high-risk area for potential crowd control measures.</p></td>
+</tr>
+</tbody>
+</table>
+<p>The current SOP states that the sides of recent violent incidents are to be avoided in a 1 km radius. To reflect this on the map, we will use the buffer tool.</p>
+<ol class="arabic simple" start="6">
+<li><p>Create a <img alt="" src="../../_images/mAlgorithmBuffer.png" /> buffer around the points of violent incidents with a distance of <code class="docutils literal notranslate"><span class="pre">2.000</span> <span class="pre">meters</span></code>. See the Wiki entry on <a class="reference internal" href="../Wiki/en_qgis_geoprocessing_wiki.html"><span class="doc std std-doc">Geoprocessing</span></a> for further information.</p></li>
+<li><p>Next, merge the no-go areas polygon layer and the buffer point layer.
+Use the tool <code class="docutils literal notranslate"><span class="pre">Merge</span> <span class="pre">vector</span> <span class="pre">layer</span></code>.</p></li>
+<li><p>Clip the newly created polygon out of the AOI to create a “Green” area in which the team are allowed to travel. Use the tool <code class="docutils literal notranslate"><span class="pre">Symmetrical</span> <span class="pre">difference</span></code>.</p></li>
+</ol>
+<section id="task-2-load-excel-file-containin-conflict-data-into-qgis">
+<h3>Task 2: Load Excel File containin conflict data into QGIS<a class="headerlink" href="#task-2-load-excel-file-containin-conflict-data-into-qgis" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Drag and Drop the ACLED conflict excel table ‘2024-01-01-2024-09-23-Pakistan.xlsx’ into your QGIS project</p></li>
+<li><p>Navigate in the Processing Toolbox to the Tool ‘Create points layer from table’.</p>
+<ul class="simple">
+<li><p>Choose as ‘X Field’ “longitude” and as ‘Y Field’ “latitude”.</p></li>
+<li><p>Under ‘Points from Table’ , click on the three dots, choose ‘Save to GeoPackage’ and navigate to you temp folder. Save the layer with the name “Pak_Conflict_points_2024”.</p></li>
+</ul>
+</li>
+</ol>
+<figure class="align-default" id="svg-marker">
+<a class="reference internal image-reference" href="../../_images/Create_ponts_from_table.PNG"><img alt="../../_images/Create_ponts_from_table.PNG" src="../../_images/Create_ponts_from_table.PNG" style="width: 700px;" /></a>
+<figcaption>
+<p><span class="caption-text">Create points from table</span><a class="headerlink" href="#svg-marker" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="3">
+<li><p>Get number of events per thesil</p>
+<ul class="simple">
+<li><p>Load ‘KP admin 3’ layer.</p></li>
+</ul>
+</li>
+<li><p>We are now interested to know the number of conflict incidents per thesil. For this:</p>
+<ul class="simple">
+<li><p>Go to the Processing Toolbox and search for the Tool ‘Count points in polygon’. Choose ‘KP_adm3’ layer as Polygon input and the ‘Pak_Conflict_points_2024’ layer as Points input</p></li>
+<li><p>Under ‘Count’ save your new layer under “Pak_num_events_adm3”.</p></li>
+</ul>
+</li>
+</ol>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../../_images/count_point_polygon.PNG"><img alt="../../_images/count_point_polygon.PNG" src="../../_images/count_point_polygon.PNG" style="width: 700px;" /></a>
+<figcaption>
+<p><span class="caption-text">Count points from polygon</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="5">
+<li><p>Open the attribute of your ‘Pak_num_events_adm3’ layer and scroll to the right. You will find a column with the name “NUMPOINTS”. Here you find the number of events per thesil.</p>
+<ul class="simple">
+<li><p>Right-click on the layer and navigate to ‘Properties’ –&gt; ‘Symbology’. On the top change Single Symbol to “Graduated”.</p>
+<ul>
+<li><p>In the ‘Value’ field choose “NUMPOINTS”.</p></li>
+</ul>
+</li>
+<li><p>Then below click on “Classify”</p></li>
+<li><p>You can adjust the Mode and the number of classes if wanted. Also you can choose your preferred color ramp.You can play around a bit here.</p></li>
+<li><p>Click ‘Apply’ and then ‘OK’</p></li>
+</ul>
+</li>
+</ol>
+<p>Your result could look similar to this.</p>
+<figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="../../_images/Number_events_graduated.PNG"><img alt="../../_images/Number_events_graduated.PNG" src="../../_images/Number_events_graduated.PNG" style="width: 700px;" /></a>
+<figcaption>
+<p><span class="caption-text">Number of conflict events per thesil</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="task-3-mpi-data">
+<h3>Task 3: MPI data<a class="headerlink" href="#task-3-mpi-data" title="Permalink to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>Open the excel file and export it as CSV UTF-8:</p>
+<ul class="simple">
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">File</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">As</span></code></p></li>
+<li><p>Chosse an output folder, where it will be saved (the <code class="docutils literal notranslate"><span class="pre">data</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder is recommended here) and give the file a meaningful name, for instance “20240605_PAK_MPI”.</p></li>
+<li><p>Choose the option “CSV UTF-8 (Comma delimited) (*.csv)” and “Save”</p></li>
+</ul>
+<figure class="align-center" id="convert-excel-to-csv">
+<a class="reference internal image-reference" href="../../_images/PAK_Excel_to_CSV.png"><img alt="../../_images/PAK_Excel_to_CSV.png" src="../../_images/PAK_Excel_to_CSV.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-text">Convert Excel to CSV</span><a class="headerlink" href="#convert-excel-to-csv" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Open QGIS and create a new project. Save the project in your project folder.</p></li>
+<li><p>Add the “20240605_PAK_MPI.csv” file to QGIS by:</p>
+<ul class="simple">
+<li><p>Click on the <code class="docutils literal notranslate"><span class="pre">Layer</span></code> tab -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Delimited</span> <span class="pre">Text</span></code></p></li>
+<li><p>Browse for your “20240605_PAK_MPI.csv” file.</p></li>
+<li><p>Choose the correct <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">Fromat</span></code>: “Custom delimters” -&gt; “Semicolon”</p></li>
+<li><p>Go to	the tab <code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">Definition</span></code> and choose <code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">geometry</span></code>. We don’t have a column with coordinates or geoemtry information, but only the admin2 name and P-Code.</p></li>
+<li><p>Add layer and close the window.</p></li>
+</ul>
+<figure class="align-center" id="load-csv-file-to-qgis">
+<a class="reference internal image-reference" href="../../_images/PAK_Load_CSVfile.PNG"><img alt="../../_images/PAK_Load_CSVfile.PNG" src="../../_images/PAK_Load_CSVfile.PNG" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-text">Load CSV file to QGIS</span><a class="headerlink" href="#load-csv-file-to-qgis" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+</ol>
+<p>To visualize the data now on the map we have to link it to existing geometries and district boundaries. To do that:</p>
+<ol class="arabic" start="3">
+<li><p>Open the attribute table of the attribute table and detect the column which contains the information you want to use to join the data with the location. E.g. City name, district name, or best the P-Code. In our case it is “ADM2_PCODE”.
+Hint: Each administrative level and area contains a worldwide unique code number. This helps to determine the exact administrative boundary without misspelling the name of the area.</p></li>
+<li><p>We now need an admin layer with an column containing the exact same information as the column of our CSV file. This is needed to link the information provided in the CSV to the district areas.</p>
+<ul class="simple">
+<li><p>Load the layer “Pak_adm2_Khyber Pakhtunkhwa.gpkg” via drag and drop to QGIS.</p></li>
+</ul>
+</li>
+<li><p>To link the two layers, open the Toolbox and search for the tool “Join attributes by field value”. Open it.</p>
+<ul class="simple">
+<li><p>Input layer: “Pak_adm2_Khyber Pakhtunkhwa.gpkg”</p></li>
+<li><p>Table field: “admin2Pcode”</p></li>
+<li><p>Input layer 2: “20240605_PAK_MPI.csv”</p></li>
+<li><p>Table field 2: “ADM2_PCOCDE”</p></li>
+<li><p>Choose a location to save the file as GeoPackachge and give it a meaningful name, for instance “MPI_Admin2_joined.gpkg”</p></li>
+<li><p>Run and close.</p></li>
+</ul>
+<figure class="align-center" id="join-the-districts-with-the-mpi-data">
+<a class="reference internal image-reference" href="../../_images/PAK_joined_MPI_csv_admin2.PNG"><img alt="../../_images/PAK_joined_MPI_csv_admin2.PNG" src="../../_images/PAK_joined_MPI_csv_admin2.PNG" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-text">Join the districts with the MPI data</span><a class="headerlink" href="#join-the-districts-with-the-mpi-data" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Info: You can see that not all areas are visible. Since we don’t have data for all districts, only the districts were linked with the csv on which we have MPI data.</p>
+<figure class="align-center" id="information-of-not-joined-and-linked-data">
+<a class="reference internal image-reference" href="../../_images/PAK_joined_MPI_csv_admin2_info.PNG"><img alt="../../_images/PAK_joined_MPI_csv_admin2_info.PNG" src="../../_images/PAK_joined_MPI_csv_admin2_info.PNG" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-text">Information of not joined and linked data</span><a class="headerlink" href="#information-of-not-joined-and-linked-data" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Visualize “MPI_Admin2_joined.gpkg” file: We have a new file, showing the district boundaries, but having the MPI information in the attribute table. The MPI value per district we now want to visualize.</p>
+<ul class="simple">
+<li><p>Open the “Symbology” window of the file “MPI_Admin2_joined.gpkg”.</p></li>
+<li><p>Decide which column you want to visualize. For instance the values of the year 2014 in the column “A_2014_15”.</p></li>
+<li><p>Choose “Graduate” visualization.</p></li>
+<li><p>Choose Value “A_2014_15”.</p></li>
+<li><p>Click “Classify”</p></li>
+<li><p>Choose Mode “Pretty Breaks”</p></li>
+<li><p>Click okay and close the window.</p></li>
+</ul>
+</li>
+<li><p>Visualize “Pak_adm2_Khyber Pakhtunkhwa.gpkg” layer for districts we don’t have MPI data on.</p>
+<ul class="simple">
+<li><p>Open the “Symbology” window of the file “Pak_adm2_Khyber Pakhtunkhwa.gpkg”</p></li>
+<li><p>Change the color, maybe to dark grey, so we can differentiate between the districts we have and don’t have MPI data for.</p></li>
+</ul>
+</li>
+<li><p>Add OpenStreetMap as a baselayer for better orientation.</p></li>
+</ol>
+<figure class="align-center" id="visualized-mpi-data-on-district-level">
+<a class="reference internal image-reference" href="../../_images/PAK_visualized_MPI.PNG"><img alt="../../_images/PAK_visualized_MPI.PNG" src="../../_images/PAK_visualized_MPI.PNG" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-text">Visualized MPI data on district level</span><a class="headerlink" href="#visualized-mpi-data-on-district-level" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content/Modul_5"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions-for-the-trainers">Instructions for the trainers</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-geolocate-security-related-information-of-the-last-days">Task 1: Geolocate security-related information of the last days</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-load-excel-file-containin-conflict-data-into-qgis">Task 2: Load Excel File containin conflict data into QGIS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-mpi-data">Task 3: MPI data</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By HeiGIT gGmbH
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
