@@ -105,7 +105,7 @@ To install the plugin click on `Plugins` -> `Manage and Install Plugins…` -> `
 2. Open the plugin by clicking on `Web` -> `Quick Map Service` -> `ESRI` -> `ESRI Satellite`. Now you should have a Settelite image base map in your `Layer Panel`.
 3. Add the `Google Road` base map from the `Quick Map Service` as well.
 4. Place the `Google Road` above the satellite image map and turn the layer transparent by opening the symbology window and adjusting the opacity.
-5. You will need the plugin "Lat Lon tools" to locate the coordinates you receive from the field.To install the plugin click on `Plugins` -> `Manage and Install Plugins…` -> `All` and search for `Lat Lon tools`. Once you have found it, click on it and click `Install Plugin`([Wiki Video](/content/Wiki/en_qgis_plugins_wiki.md#installation-of-plugins)).
+5. You will need the plugin "Lat Lon tools" to locate the coordinates you receive from the field. To install the plugin click on `Plugins` -> `Manage and Install Plugins…` -> `All` and search for `Lat Lon tools`. Once you have found it, click on it and click `Install Plugin`([Wiki Video](/content/Wiki/en_qgis_plugins_wiki.md#installation-of-plugins)).
 
 Now you are ready, check the information from the field below and capture it in a new point layer. Use Google in your browser, the base maps and the Lat Lon tools plugin to locate the exact positions.
 
