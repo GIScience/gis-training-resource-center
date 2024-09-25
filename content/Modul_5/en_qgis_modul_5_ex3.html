@@ -544,7 +544,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-geolocate-security-related-information-of-the-last-days">Task 1: Geolocate security-related information of the last days</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-load-excel-file-containin-conflict-data-into-qgis">Task 2: Load Excel File containin conflict data into QGIS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-load-excel-file-containing-conflict-data-into-qgis">Task 2: Load Excel File containing conflict data into QGIS</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-mpi-data">Task 3: MPI data</a></li>
 </ul>
 </li>
@@ -770,8 +770,8 @@ To install the plugin click on <code class="docutils literal notranslate"><span 
 Use the tool <code class="docutils literal notranslate"><span class="pre">Merge</span> <span class="pre">vector</span> <span class="pre">layer</span></code>.</p></li>
 <li><p>Clip the newly created polygon out of the AOI to create a “Green” area in which the team are allowed to travel. Use the tool <code class="docutils literal notranslate"><span class="pre">Symmetrical</span> <span class="pre">difference</span></code>.</p></li>
 </ol>
-<section id="task-2-load-excel-file-containin-conflict-data-into-qgis">
-<h3>Task 2: Load Excel File containin conflict data into QGIS<a class="headerlink" href="#task-2-load-excel-file-containin-conflict-data-into-qgis" title="Permalink to this heading">#</a></h3>
+<section id="task-2-load-excel-file-containing-conflict-data-into-qgis">
+<h3>Task 2: Load Excel File containing conflict data into QGIS<a class="headerlink" href="#task-2-load-excel-file-containing-conflict-data-into-qgis" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Drag and Drop the ACLED conflict excel table ‘2024-01-01-2024-09-23-Pakistan.xlsx’ into your QGIS project</p></li>
 <li><p>Navigate in the Processing Toolbox to the Tool ‘Create points layer from table’.</p>
@@ -790,13 +790,13 @@ Use the tool <code class="docutils literal notranslate"><span class="pre">Merge<
 <ol class="arabic simple" start="3">
 <li><p>Get number of events per thesil</p>
 <ul class="simple">
-<li><p>Load ‘KP admin 3’ layer.</p></li>
+<li><p>Load the “KP admin 3” layer.</p></li>
 </ul>
 </li>
 <li><p>We are now interested to know the number of conflict incidents per thesil. For this:</p>
 <ul class="simple">
 <li><p>Go to the Processing Toolbox and search for the Tool ‘Count points in polygon’. Choose ‘KP_adm3’ layer as Polygon input and the ‘Pak_Conflict_points_2024’ layer as Points input</p></li>
-<li><p>Under ‘Count’ save your new layer under “Pak_num_events_adm3”.</p></li>
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">Count</span></code> save your new layer under “Pak_num_events_adm3”.</p></li>
 </ul>
 </li>
 </ol>
@@ -834,8 +834,8 @@ Use the tool <code class="docutils literal notranslate"><span class="pre">Merge<
 <li><p>Open the excel file and export it as CSV UTF-8:</p>
 <ul class="simple">
 <li><p>Click on <code class="docutils literal notranslate"><span class="pre">File</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">As</span></code></p></li>
-<li><p>Chosse an output folder, where it will be saved (the <code class="docutils literal notranslate"><span class="pre">data</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder is recommended here) and give the file a meaningful name, for instance “20240605_PAK_MPI”.</p></li>
-<li><p>Choose the option “CSV UTF-8 (Comma delimited) (*.csv)” and “Save”</p></li>
+<li><p>Chosse an output folder, where it will be saved (the <code class="docutils literal notranslate"><span class="pre">data</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder is recommended here) and give the file a meaningful name, for instance <strong>20240605_PAK_MPI</strong>.</p></li>
+<li><p>Choose the option <strong>CSV UTF-8 (Comma delimited) (*.csv)</strong> and <code class="docutils literal notranslate"><span class="pre">Save</span></code></p></li>
 </ul>
 <figure class="align-center" id="convert-excel-to-csv">
 <a class="reference internal image-reference" href="../../_images/PAK_Excel_to_CSV.png"><img alt="../../_images/PAK_Excel_to_CSV.png" src="../../_images/PAK_Excel_to_CSV.png" style="width: 400px;" /></a>
@@ -845,11 +845,11 @@ Use the tool <code class="docutils literal notranslate"><span class="pre">Merge<
 </figure>
 </li>
 <li><p>Open QGIS and create a new project. Save the project in your project folder.</p></li>
-<li><p>Add the “20240605_PAK_MPI.csv” file to QGIS by:</p>
+<li><p>Add the <strong>20240605_PAK_MPI.csv</strong> file to QGIS by:</p>
 <ul class="simple">
 <li><p>Click on the <code class="docutils literal notranslate"><span class="pre">Layer</span></code> tab -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Delimited</span> <span class="pre">Text</span></code></p></li>
-<li><p>Browse for your “20240605_PAK_MPI.csv” file.</p></li>
-<li><p>Choose the correct <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">Fromat</span></code>: “Custom delimters” -&gt; “Semicolon”</p></li>
+<li><p>Browse for your <strong>20240605_PAK_MPI.csv</strong> file.</p></li>
+<li><p>Choose the correct <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">Fromat</span></code>: <code class="docutils literal notranslate"><span class="pre">Custom</span> <span class="pre">delimters</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Semicolon</span></code></p></li>
 <li><p>Go to	the tab <code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">Definition</span></code> and choose <code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">geometry</span></code>. We don’t have a column with coordinates or geoemtry information, but only the admin2 name and P-Code.</p></li>
 <li><p>Add layer and close the window.</p></li>
 </ul>
@@ -863,20 +863,23 @@ Use the tool <code class="docutils literal notranslate"><span class="pre">Merge<
 </ol>
 <p>To visualize the data now on the map we have to link it to existing geometries and district boundaries. To do that:</p>
 <ol class="arabic" start="3">
-<li><p>Open the attribute table of the attribute table and detect the column which contains the information you want to use to join the data with the location. E.g. City name, district name, or best the P-Code. In our case it is “ADM2_PCODE”.
-Hint: Each administrative level and area contains a worldwide unique code number. This helps to determine the exact administrative boundary without misspelling the name of the area.</p></li>
-<li><p>We now need an admin layer with an column containing the exact same information as the column of our CSV file. This is needed to link the information provided in the CSV to the district areas.</p>
+<li><p>Open the attribute table of the attribute table and detect the column which contains the information you want to use to join the data with the location. E.g. City name, district name, or best the P-Code. In our case it is <code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code>.</p>
 <ul class="simple">
-<li><p>Load the layer “Pak_adm2_Khyber Pakhtunkhwa.gpkg” via drag and drop to QGIS.</p></li>
+<li><p><strong>Hint</strong>: Each administrative level and area contains a worldwide unique code number. This helps to determine the exact administrative boundary without misspelling the name of the area.</p></li>
 </ul>
 </li>
-<li><p>To link the two layers, open the Toolbox and search for the tool “Join attributes by field value”. Open it.</p>
+<li><p>We now need an admin layer with an column containing the exact same information as the column of our CSV file. This is needed to link the information provided in the CSV to the district areas.</p>
 <ul class="simple">
-<li><p>Input layer: “Pak_adm2_Khyber Pakhtunkhwa.gpkg”</p></li>
-<li><p>Table field: “admin2Pcode”</p></li>
-<li><p>Input layer 2: “20240605_PAK_MPI.csv”</p></li>
-<li><p>Table field 2: “ADM2_PCOCDE”</p></li>
-<li><p>Choose a location to save the file as GeoPackachge and give it a meaningful name, for instance “MPI_Admin2_joined.gpkg”</p></li>
+<li><p>Load the layer <strong>Pak_adm2_Khyber Pakhtunkhwa.gpkg</strong> via drag and drop to QGIS.</p></li>
+</ul>
+</li>
+<li><p>To link the two layers, open the Toolbox and search for the tool __Join attributes by field value::. Open it.</p>
+<ul class="simple">
+<li><p>Input layer: <strong>Pak_adm2_Khyber Pakhtunkhwa.gpkg</strong></p></li>
+<li><p>Table field: <strong>admin2Pcode</strong></p></li>
+<li><p>Input layer 2: <strong>20240605_PAK_MPI.csv</strong></p></li>
+<li><p>Table field 2: <strong>ADM2_PCOCDE</strong></p></li>
+<li><p>Choose a location to save the file as GeoPackachge and give it a meaningful name, for instance <strong>MPI_Admin2_joined.gpkg</strong></p></li>
 <li><p>Run and close.</p></li>
 </ul>
 <figure class="align-center" id="join-the-districts-with-the-mpi-data">
@@ -893,20 +896,20 @@ Hint: Each administrative level and area contains a worldwide unique code number
 </figcaption>
 </figure>
 </li>
-<li><p>Visualize “MPI_Admin2_joined.gpkg” file: We have a new file, showing the district boundaries, but having the MPI information in the attribute table. The MPI value per district we now want to visualize.</p>
+<li><p>Visualize <strong>MPI_Admin2_joined.gpkg</strong> file: We have a new file, showing the district boundaries, but having the MPI information in the attribute table. The MPI value per district we now want to visualize.</p>
 <ul class="simple">
-<li><p>Open the “Symbology” window of the file “MPI_Admin2_joined.gpkg”.</p></li>
-<li><p>Decide which column you want to visualize. For instance the values of the year 2014 in the column “A_2014_15”.</p></li>
-<li><p>Choose “Graduate” visualization.</p></li>
-<li><p>Choose Value “A_2014_15”.</p></li>
-<li><p>Click “Classify”</p></li>
-<li><p>Choose Mode “Pretty Breaks”</p></li>
+<li><p>Open the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> window of the file <strong>MPI_Admin2_joined.gpkg</strong>.</p></li>
+<li><p>Decide which column you want to visualize. For instance the values of the year 2014 in the column <strong>A_2014_15</strong>.</p></li>
+<li><p>Choose <code class="docutils literal notranslate"><span class="pre">Graduate</span></code> visualization.</p></li>
+<li><p>Choose Value <strong>A_2014_15</strong>.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Classify</span></code></p></li>
+<li><p>Choose Mode <code class="docutils literal notranslate"><span class="pre">Pretty</span> <span class="pre">Breaks</span></code></p></li>
 <li><p>Click okay and close the window.</p></li>
 </ul>
 </li>
-<li><p>Visualize “Pak_adm2_Khyber Pakhtunkhwa.gpkg” layer for districts we don’t have MPI data on.</p>
+<li><p>Visualize <strong>Pak_adm2_Khyber Pakhtunkhwa.gpkg</strong> layer for districts we don’t have MPI data on.</p>
 <ul class="simple">
-<li><p>Open the “Symbology” window of the file “Pak_adm2_Khyber Pakhtunkhwa.gpkg”</p></li>
+<li><p>Open the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> window of the file <strong>Pak_adm2_Khyber Pakhtunkhwa.gpkg</strong></p></li>
 <li><p>Change the color, maybe to dark grey, so we can differentiate between the districts we have and don’t have MPI data for.</p></li>
 </ul>
 </li>
@@ -972,7 +975,7 @@ Hint: Each administrative level and area contains a worldwide unique code number
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-geolocate-security-related-information-of-the-last-days">Task 1: Geolocate security-related information of the last days</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-load-excel-file-containin-conflict-data-into-qgis">Task 2: Load Excel File containin conflict data into QGIS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-load-excel-file-containing-conflict-data-into-qgis">Task 2: Load Excel File containing conflict data into QGIS</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-mpi-data">Task 3: MPI data</a></li>
 </ul>
 </li>
