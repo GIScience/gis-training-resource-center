@@ -81,7 +81,12 @@ __Wrap up:__
 :::
 
 ### Availbale Data
-Download all datasets and save the folder on your computer and unzip the file. The zip folder includes:
+
+:::{card}
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Modul_5_Exercise1_Disaster_effects_in_different_regions_Senegal/Modul5_Exercise1_Disaster_effects_in_different_regions_Senegal.zip
+__Download all datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Modul_5_Exercise1_Disaster_effects_in_different_regions_Senegal/Modul5_Exercise1_Disaster_effects_in_different_regions_Senegal.zip) and save the folder on your computer and unzip the file.__
+:::
+
 - `sen_admbnda_adm1_1m_gov_ocha_20190426.shp`: [Senegal boundary data (Admin level 1)](https://data.humdata.org/dataset/senegal-administrative-boundaries)
 - `DI_Stat924.xls`: [Senegal Desinventar Sendai data](https://www.desinventar.net/DesInventar/profiletab.jsp?countrycode=sen) showing effects of disasters in Senegalese regions
 - `sen_admpop_adm1_2020.csv`: Senegal administrative level 1 (région) 2019 [projection population statistics](https://data.humdata.org/dataset/senegal-population-statistics)
