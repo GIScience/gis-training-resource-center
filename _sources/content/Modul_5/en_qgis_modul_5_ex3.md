@@ -222,13 +222,13 @@ To visualize the data now on the map we have to link it to existing geometries a
 	* __Hint__: Each administrative level and area contains a worldwide unique code number. This helps to determine the exact administrative boundary without misspelling the name of the area.
 4. We now need an admin layer with an column containing the exact same information as the column of our CSV file. This is needed to link the information provided in the CSV to the district areas. 
 	* Load the layer __Pak_adm2_Khyber Pakhtunkhwa.gpkg__ via drag and drop to QGIS. 
-4. To link the two layers, open the Toolbox and search for the tool __Join attributes by field value::. Open it. 
-	* Input layer: __Pak_adm2_Khyber Pakhtunkhwa.gpkg__
-	* Table field: __admin2Pcode__
-	* Input layer 2: __20240605_PAK_MPI.csv__
-	* Table field 2: __ADM2_PCOCDE__
+4. To link the two layers, open the Toolbox and search for the tool __Join attributes by field value__. Open it. 
+	* `Input layer`: __Pak_adm2_Khyber Pakhtunkhwa.gpkg__
+	* `Table field`: __admin2Pcode__
+	* `Input layer 2`: __20240605_PAK_MPI.csv__
+	* `Table field 2`: __ADM2_PCOCDE__
 	* Choose a location to save the file as GeoPackachge and give it a meaningful name, for instance __MPI_Admin2_joined.gpkg__
-	* Run and close.
+	* `Run` and close.
 	
 	```{figure} /fig/PAK_joined_MPI_csv_admin2.PNG
 	---
@@ -239,7 +239,7 @@ To visualize the data now on the map we have to link it to existing geometries a
 	Join the districts with the MPI data
 	```
 	
-	Info: You can see that not all areas are visible. Since we don't have data for all districts, only the districts were linked with the csv on which we have MPI data. 
+	__Info__: You can see that not all areas are visible. Since we don't have data for all districts, only the districts were linked with the csv on which we have MPI data. 
 	
 	```{figure} /fig/PAK_joined_MPI_csv_admin2_info.PNG
 	---
@@ -254,12 +254,12 @@ To visualize the data now on the map we have to link it to existing geometries a
 	* Open the `Symbology` window of the file __MPI_Admin2_joined.gpkg__.
 	* Decide which column you want to visualize. For instance the values of the year 2014 in the column __A_2014_15__. 
 	* Choose `Graduate` visualization. 
-	* Choose Value __A_2014_15__.
-	* Click `Classify`
-	* Choose Mode `Pretty Breaks`
+	* Choose `Value` __A_2014_15__.
+	* Click `Classify`.
+	* Choose Mode `Pretty Breaks`.
 	* Click okay and close the window. 
 6. Visualize __Pak_adm2_Khyber Pakhtunkhwa.gpkg__ layer for districts we don't have MPI data on. 
-	* Open the `Symbology` window of the file __Pak_adm2_Khyber Pakhtunkhwa.gpkg__
+	* Open the `Symbology` window of the file __Pak_adm2_Khyber Pakhtunkhwa.gpkg__.
 	* Change the color, maybe to dark grey, so we can differentiate between the districts we have and don't have MPI data for. 
 7. Add OpenStreetMap as a baselayer for better orientation. 
 

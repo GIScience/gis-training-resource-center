@@ -873,14 +873,14 @@ Use the tool <code class="docutils literal notranslate"><span class="pre">Merge<
 <li><p>Load the layer <strong>Pak_adm2_Khyber Pakhtunkhwa.gpkg</strong> via drag and drop to QGIS.</p></li>
 </ul>
 </li>
-<li><p>To link the two layers, open the Toolbox and search for the tool __Join attributes by field value::. Open it.</p>
+<li><p>To link the two layers, open the Toolbox and search for the tool <strong>Join attributes by field value</strong>. Open it.</p>
 <ul class="simple">
-<li><p>Input layer: <strong>Pak_adm2_Khyber Pakhtunkhwa.gpkg</strong></p></li>
-<li><p>Table field: <strong>admin2Pcode</strong></p></li>
-<li><p>Input layer 2: <strong>20240605_PAK_MPI.csv</strong></p></li>
-<li><p>Table field 2: <strong>ADM2_PCOCDE</strong></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">layer</span></code>: <strong>Pak_adm2_Khyber Pakhtunkhwa.gpkg</strong></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Table</span> <span class="pre">field</span></code>: <strong>admin2Pcode</strong></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">layer</span> <span class="pre">2</span></code>: <strong>20240605_PAK_MPI.csv</strong></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Table</span> <span class="pre">field</span> <span class="pre">2</span></code>: <strong>ADM2_PCOCDE</strong></p></li>
 <li><p>Choose a location to save the file as GeoPackachge and give it a meaningful name, for instance <strong>MPI_Admin2_joined.gpkg</strong></p></li>
-<li><p>Run and close.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Run</span></code> and close.</p></li>
 </ul>
 <figure class="align-center" id="join-the-districts-with-the-mpi-data">
 <a class="reference internal image-reference" href="../../_images/PAK_joined_MPI_csv_admin2.PNG"><img alt="../../_images/PAK_joined_MPI_csv_admin2.PNG" src="../../_images/PAK_joined_MPI_csv_admin2.PNG" style="width: 400px;" /></a>
@@ -888,7 +888,7 @@ Use the tool <code class="docutils literal notranslate"><span class="pre">Merge<
 <p><span class="caption-text">Join the districts with the MPI data</span><a class="headerlink" href="#join-the-districts-with-the-mpi-data" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Info: You can see that not all areas are visible. Since we don’t have data for all districts, only the districts were linked with the csv on which we have MPI data.</p>
+<p><strong>Info</strong>: You can see that not all areas are visible. Since we don’t have data for all districts, only the districts were linked with the csv on which we have MPI data.</p>
 <figure class="align-center" id="information-of-not-joined-and-linked-data">
 <a class="reference internal image-reference" href="../../_images/PAK_joined_MPI_csv_admin2_info.PNG"><img alt="../../_images/PAK_joined_MPI_csv_admin2_info.PNG" src="../../_images/PAK_joined_MPI_csv_admin2_info.PNG" style="width: 400px;" /></a>
 <figcaption>
@@ -901,15 +901,15 @@ Use the tool <code class="docutils literal notranslate"><span class="pre">Merge<
 <li><p>Open the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> window of the file <strong>MPI_Admin2_joined.gpkg</strong>.</p></li>
 <li><p>Decide which column you want to visualize. For instance the values of the year 2014 in the column <strong>A_2014_15</strong>.</p></li>
 <li><p>Choose <code class="docutils literal notranslate"><span class="pre">Graduate</span></code> visualization.</p></li>
-<li><p>Choose Value <strong>A_2014_15</strong>.</p></li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Classify</span></code></p></li>
-<li><p>Choose Mode <code class="docutils literal notranslate"><span class="pre">Pretty</span> <span class="pre">Breaks</span></code></p></li>
+<li><p>Choose <code class="docutils literal notranslate"><span class="pre">Value</span></code> <strong>A_2014_15</strong>.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Classify</span></code>.</p></li>
+<li><p>Choose Mode <code class="docutils literal notranslate"><span class="pre">Pretty</span> <span class="pre">Breaks</span></code>.</p></li>
 <li><p>Click okay and close the window.</p></li>
 </ul>
 </li>
 <li><p>Visualize <strong>Pak_adm2_Khyber Pakhtunkhwa.gpkg</strong> layer for districts we don’t have MPI data on.</p>
 <ul class="simple">
-<li><p>Open the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> window of the file <strong>Pak_adm2_Khyber Pakhtunkhwa.gpkg</strong></p></li>
+<li><p>Open the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> window of the file <strong>Pak_adm2_Khyber Pakhtunkhwa.gpkg</strong>.</p></li>
 <li><p>Change the color, maybe to dark grey, so we can differentiate between the districts we have and don’t have MPI data for.</p></li>
 </ul>
 </li>
