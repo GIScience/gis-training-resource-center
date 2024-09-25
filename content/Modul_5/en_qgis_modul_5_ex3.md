@@ -134,7 +134,7 @@ Use the tool `Merge vector layer`.
 
 
 
-### Task 2: Load Excel File containin conflict data into QGIS
+### Task 2: Load Excel File containing conflict data into QGIS
 
 1. Drag and Drop the ACLED conflict excel table '2024-01-01-2024-09-23-Pakistan.xlsx' into your QGIS project
 2. Navigate in the Processing Toolbox to the Tool 'Create points layer from table'.
@@ -150,11 +150,11 @@ Create points from table
 ```
 
 3. Get number of events per thesil
-    - Load 'KP admin 3' layer.
+    - Load the "KP admin 3" layer.
 4. We are now interested to know the number of conflict incidents per thesil. For this:
     - Go to the Processing Toolbox and search for the Tool 'Count points in polygon'. Choose 'KP_adm3' layer as Polygon input and the 'Pak_Conflict_points_2024' layer as Points input
 
-    - Under 'Count' save your new layer under "Pak_num_events_adm3".
+    - Under `Count` save your new layer under "Pak_num_events_adm3".
 
 ```{figure} ../../fig/count_point_polygon.PNG
 ---
@@ -187,8 +187,8 @@ Number of conflict events per thesil
 
 1. Open the excel file and export it as CSV UTF-8:
 	* Click on `File` -> `Save As` 
-	* Chosse an output folder, where it will be saved (the `data` > `temp` folder is recommended here) and give the file a meaningful name, for instance "20240605_PAK_MPI".
-	* Choose the option "CSV UTF-8 (Comma delimited) (*.csv)" and "Save" 
+	* Chosse an output folder, where it will be saved (the `data` > `temp` folder is recommended here) and give the file a meaningful name, for instance __20240605_PAK_MPI__.
+	* Choose the option __CSV UTF-8 (Comma delimited) (*.csv)__ and `Save` 
 	
 	```{figure} /fig/PAK_Excel_to_CSV.png
 	---
@@ -200,10 +200,10 @@ Number of conflict events per thesil
 	```
 	
 2. Open QGIS and create a new project. Save the project in your project folder. 
-3. Add the "20240605_PAK_MPI.csv" file to QGIS by: 
+3. Add the __20240605_PAK_MPI.csv__ file to QGIS by: 
 	* Click on the `Layer` tab -> `Add Layer` > `Add Delimited Text` 
-	* Browse for your "20240605_PAK_MPI.csv" file. 
-	* Choose the correct `File Fromat`: "Custom delimters" -> "Semicolon" 
+	* Browse for your __20240605_PAK_MPI.csv__ file. 
+	* Choose the correct `File Fromat`: `Custom delimters` -> `Semicolon` 
 	* Go to	the tab `Geometry Definition` and choose `No geometry`. We don't have a column with coordinates or geoemtry information, but only the admin2 name and P-Code.
 	* Add layer and close the window. 
 	
@@ -218,16 +218,16 @@ Number of conflict events per thesil
 	
 To visualize the data now on the map we have to link it to existing geometries and district boundaries. To do that: 
 
-3. Open the attribute table of the attribute table and detect the column which contains the information you want to use to join the data with the location. E.g. City name, district name, or best the P-Code. In our case it is "ADM2_PCODE".
-	Hint: Each administrative level and area contains a worldwide unique code number. This helps to determine the exact administrative boundary without misspelling the name of the area.
+3. Open the attribute table of the attribute table and detect the column which contains the information you want to use to join the data with the location. E.g. City name, district name, or best the P-Code. In our case it is `ADM2_PCODE`.
+	* __Hint__: Each administrative level and area contains a worldwide unique code number. This helps to determine the exact administrative boundary without misspelling the name of the area.
 4. We now need an admin layer with an column containing the exact same information as the column of our CSV file. This is needed to link the information provided in the CSV to the district areas. 
-	* Load the layer "Pak_adm2_Khyber Pakhtunkhwa.gpkg" via drag and drop to QGIS. 
-4. To link the two layers, open the Toolbox and search for the tool "Join attributes by field value". Open it. 
-	* Input layer: "Pak_adm2_Khyber Pakhtunkhwa.gpkg"
-	* Table field: "admin2Pcode"
-	* Input layer 2: "20240605_PAK_MPI.csv"
-	* Table field 2: "ADM2_PCOCDE"
-	* Choose a location to save the file as GeoPackachge and give it a meaningful name, for instance "MPI_Admin2_joined.gpkg"
+	* Load the layer __Pak_adm2_Khyber Pakhtunkhwa.gpkg__ via drag and drop to QGIS. 
+4. To link the two layers, open the Toolbox and search for the tool __Join attributes by field value::. Open it. 
+	* Input layer: __Pak_adm2_Khyber Pakhtunkhwa.gpkg__
+	* Table field: __admin2Pcode__
+	* Input layer 2: __20240605_PAK_MPI.csv__
+	* Table field 2: __ADM2_PCOCDE__
+	* Choose a location to save the file as GeoPackachge and give it a meaningful name, for instance __MPI_Admin2_joined.gpkg__
 	* Run and close.
 	
 	```{figure} /fig/PAK_joined_MPI_csv_admin2.PNG
@@ -250,16 +250,16 @@ To visualize the data now on the map we have to link it to existing geometries a
 	Information of not joined and linked data
 	```
 	
-5. Visualize "MPI_Admin2_joined.gpkg" file: We have a new file, showing the district boundaries, but having the MPI information in the attribute table. The MPI value per district we now want to visualize. 
-	* Open the "Symbology" window of the file "MPI_Admin2_joined.gpkg".
-	* Decide which column you want to visualize. For instance the values of the year 2014 in the column "A_2014_15". 
-	* Choose "Graduate" visualization. 
-	* Choose Value "A_2014_15".
-	* Click "Classify"
-	* Choose Mode "Pretty Breaks"
+5. Visualize __MPI_Admin2_joined.gpkg__ file: We have a new file, showing the district boundaries, but having the MPI information in the attribute table. The MPI value per district we now want to visualize. 
+	* Open the `Symbology` window of the file __MPI_Admin2_joined.gpkg__.
+	* Decide which column you want to visualize. For instance the values of the year 2014 in the column __A_2014_15__. 
+	* Choose `Graduate` visualization. 
+	* Choose Value __A_2014_15__.
+	* Click `Classify`
+	* Choose Mode `Pretty Breaks`
 	* Click okay and close the window. 
-6. Visualize "Pak_adm2_Khyber Pakhtunkhwa.gpkg" layer for districts we don't have MPI data on. 
-	* Open the "Symbology" window of the file "Pak_adm2_Khyber Pakhtunkhwa.gpkg"
+6. Visualize __Pak_adm2_Khyber Pakhtunkhwa.gpkg__ layer for districts we don't have MPI data on. 
+	* Open the `Symbology` window of the file __Pak_adm2_Khyber Pakhtunkhwa.gpkg__
 	* Change the color, maybe to dark grey, so we can differentiate between the districts we have and don't have MPI data for. 
 7. Add OpenStreetMap as a baselayer for better orientation. 
 
