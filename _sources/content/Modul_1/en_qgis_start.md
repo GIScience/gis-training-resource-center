@@ -2,10 +2,11 @@
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-**Competences:**
+<!---**Competences:**
 
 - What is QGIS?
 - QGIS and basic functionality
+-->
 
 ## Introducing QGIS
 
@@ -16,7 +17,6 @@ you can click, forms you can fill out to do tasks, and it's generally a visual i
 - You may __view, edit, capture and analyze spatial data or create printable maps__ with it. QGIS was created in 2002 
 and is a project of volunteers. And it is __constantly changing__.
 - QGIS is backed by a __large community of users__, so it’s easy to find solutions to technical issues by using QGIS forums, blogs, or sub-reddits. The official QGIS community can be found [here](https://qgis.org/en/site/forusers/support.html#support). Additionally, a list of helpful websites can be found on the [wiki here](content/Wiki/en_qgis_common_errors_and_Issues.md).
-
 
 
 ```{note}
@@ -99,6 +99,8 @@ The start screen of QGIS usually shows you the projects you worked on recently a
 There are __two__ options to create a new project:
 
 1. On the start screen click on `Project Template`
+
+
 ```{figure} /fig/en_project_template_BRC.png
 ---
 height: 400
@@ -106,6 +108,7 @@ name: Project Template
 align: center
 ---
 ```
+
 2. In the upper left corner click on `Project` -> ` New Project `
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_new_project.mp4"></video>
@@ -129,7 +132,7 @@ name:
 align: center
 name: QGIS User Interface
 ---
-QGIS User Interface. Source:
+QGIS User Interface. Source: CartONG
 ```
 
 1. __Layers List / Browser Panel:__ The __layers list__ shows __all layers/files__ that are __loaded in the project__. You can show/hide layers and set other properties.
@@ -174,12 +177,12 @@ __Hotkeys__ in the QGIS interface provide convenient shortcuts for various comma
 
 | Name                      | Menu option                    | Shortcut                        | Description                                 |
 |---------------------------|--------------------------------|---------------------------------|---------------------------------------------|
-| Map pan                   | ![](/fig/qgis_pan_map.png)     | 'Space', 'Page Up', 'Page Down' or the 'Arrow Keys' | Move the map                                 |
+| Map pan                   | ![](/fig/qgis_pan_map.png)     | `Space`, `Page Up`, `Page Down` or the `Arrow Keys` | Move the map                                 |
 | Pan map to selection      | ![](/fig/qgis_pan_map_selection.png) |                                  | Pans the map to the selected element        |
-| Zoom in                   | ![](/fig/qgis_zoom_in.png)     | 'Ctrl+Alt++' or mouse wheel   | Zoom into the map                            |
-| Zoom out                  | ![](/fig/qgis_zoom_out.png)    | 'Ctrl+Alt+-' or mouse wheel   | Zoom out of the map                          |
-| Zoom full                 | ![](/fig/qgis_zoom_full.png)   | 'Ctrl+Shift+F'                  | Zoom to the selected element                |
-| Zoom to selection         | ![](/fig/qgis_zoom_to_selection.png) | 'Ctrl+J'                       | Zoom to the selected element                |
+| Zoom in                   | ![](/fig/qgis_zoom_in.png)     | `Ctrl` + `Alt` + `+` or mouse wheel   | Zoom into the map                            |
+| Zoom out                  | ![](/fig/qgis_zoom_out.png)    | `Ctrl` + `Alt`+ `-` or mouse wheel   | Zoom out of the map                          |
+| Zoom full                 | ![](/fig/qgis_zoom_full.png)   | `Ctrl` + `Shift` + `F`                  | Zoom to the selected element                |
+| Zoom to selection         | ![](/fig/qgis_zoom_to_selection.png) | `Ctrl` + `J`                       | Zoom to the selected element                |
 | Zoom to layer             | ![](/fig/qgis_zoom_to_layer.png) |                                  | Zoom to the selected layer                   |
 | Zoom to native resolution | ![](/fig/qgis_zoom_native_resolution.png) |                             | Zoom to the native resolution (100%)         |
 | Zoom last                 | ![](/fig/qgis_zoom_last.png)   |                                 | Zoom to the last zoom                        |
@@ -190,26 +193,26 @@ __Hotkeys__ in the QGIS interface provide convenient shortcuts for various comma
 ```{dropdown} Project managment
 | Name            | Menu option                        | Shortcut         | Description                             |
 |-----------------|------------------------------------|------------------|-----------------------------------------|
-| New Project     | ![](/fig/qgis_new.png)             | 'Ctrl' + 'N'     | Create a new project                    |
-| Open Project    | ![](/fig/qgis_open_project.png)   | 'Ctrl' + 'O'     | Open an existing project                |
-| Save            | ![](/fig/qgis_save_project.png)   | 'Ctrl' + 'S'     | Save the project                        |
-| Save as…        | ![](/fig/qgis_save_project_as.png) | 'Ctrl' + 'Shift' + 'S'  | Save the project as…           |
-| Properties      |                                    | 'Ctrl' + 'Shift' + 'P'   | Open the project properties      |
-| New print layout| ![](/fig/qgis_new_print_layerout.png) | 'Ctrl' + 'P'  | Opens the Dialog to create a new print layout |
-| Search          |                                    | 'Ctrl' + 'K'          | Opens the search bar                    |
+| New Project     | ![](/fig/qgis_new.png)             | `Ctrl` + `N`    | Create a new project                    |
+| Open Project    | ![](/fig/qgis_open_project.png)   | `Ctrl` + `O`     | Open an existing project                |
+| Save            | ![](/fig/qgis_save_project.png)   | `Ctrl` + `S`     | Save the project                        |
+| Save as…        | ![](/fig/qgis_save_project_as.png) | `Ctrl` + `Shift` + `S`  | Save the project as…           |
+| Properties      |                                    | `Ctrl` + `Shift` + `P`   | Open the project properties      |
+| New print layout| ![](/fig/qgis_new_print_layerout.png) | `Ctrl` + `P`  | Opens the Dialog to create a new print layout |
+| Search          |                                    | `Ctrl` + `K`          | Opens the search bar                    |
 
 ```
 
 ```{dropdown} Layer management
 | Name                        | Menu option                                  | Shortcut            | Description                       |
 |-----------------------------|----------------------------------------------|----------------------|-----------------------------------|
-| Data source manager         | ![](/fig/qgis_data_source_manager.png)       | 'Ctrl' + 'L'        | Add a new layer                   |
-| New GeoPackage layer        | ![](/fig/qgis_new_geopackage_layer.png)     | 'Ctrl' + 'Shift' + 'N' | Add a new GeoPackage Layer       |
-| Add vector layer            | ![](/fig/qgis_add_vector_layer.png)         | 'Ctrl' + 'Shift' + 'V' | Add a new vector layer           |
-| Add raster layer            | ![](/fig/qgis_add_raster_layer.png)         | 'Ctrl' + 'Shift' + 'R' | Add a new raster layer           |
-| Remove selected layer       | ![](/fig/qgis_remove_selected_layer.png)    | 'Ctrl' + 'D'        | Remove the selected layer        |
-| Toggle layers view          |                                              | 'Ctrl' + '1'        | Toggle the layers view           |
-| Toggle browser view         |                                              | 'Ctrl' + '2'        | Toggle the browser view          |
+| Data source manager         | ![](/fig/qgis_data_source_manager.png)       | `Ctrl` + `L`        | Add a new layer                   |
+| New GeoPackage layer        | ![](/fig/qgis_new_geopackage_layer.png)     | `Ctrl` + `Shift` + `N` | Add a new GeoPackage Layer       |
+| Add vector layer            | ![](/fig/qgis_add_vector_layer.png)         | `Ctrl` + `Shift` + `V` | Add a new vector layer           |
+| Add raster layer            | ![](/fig/qgis_add_raster_layer.png)         | `Ctrl` + `Shift` + `R` | Add a new raster layer           |
+| Remove selected layer       | ![](/fig/qgis_remove_selected_layer.png)    | `Ctrl` + `D`        | Remove the selected layer        |
+| Toggle layers view          |                                              | `Ctrl` + `1`        | Toggle the layers view           |
+| Toggle browser view         |                                              | `Ctrl` + `2`        | Toggle the browser view          |
 
 
 ```
@@ -217,26 +220,36 @@ __Hotkeys__ in the QGIS interface provide convenient shortcuts for various comma
 ```{dropdown} Analysis Tools
 | Name                                     | Menu option                                 | Shortcut                   | Description                                            |
 |------------------------------------------|---------------------------------------------|-----------------------------|--------------------------------------------------------|
-| Identify Features                        | ![](/fig/qgis_identify_features.png)       | 'Ctrl' + 'Shift' + 'I'     | Identify features on the map view by clicking on them |
-| Select feature                          | ![](/fig/qgis_select_features.png)         |                               | Select a feature by area or single click             |
-| Select feature by value                  | ![](/fig/qgis_select_features_by_value.png) | 'F3'                        | Select features by value                              |
-| Open Attribute table                     | ![](/fig/qgis_open_attribute_table.png)     | 'F6'                        | Open the Attribute table                              |
-| Open Attribute table with selected features only | ![](/fig/qgis_open_attribute_table.png) | 'Shift' + 'F6'              | Open the Attribute table with selected features only  |
-| Open Attribute table with visible features only | ![](/fig/qgis_open_attribute_table.png)  | 'Ctrl' + 'F6'               | Open the Attribute table with visible features only   |
+| Identify Features | ![](/fig/qgis_identify_features.png) | `Ctrl` + `Shift` + `I`  | Identify features on the map view by clicking on them |
+| Select feature   | ![](/fig/qgis_select_features.png) |  | Select a feature by area or single click  |
+| Select feature by value | ![](/fig/qgis_select_features_by_value.png) | `F3` | Select features by value  |
+| Open Attribute table    | ![](/fig/qgis_open_attribute_table.png)     | `F6`  | Open the Attribute table                              |
+| Open Attribute table with selected features only | ![](/fig/qgis_open_attribute_table.png) | `Shift` + `F6`             | Open the Attribute table with selected features only  |
+| Open Attribute table with visible features only | ![](/fig/qgis_open_attribute_table.png)  | `Ctrl` + `F6`               | Open the Attribute table with visible features only   |
 
 ```
 
 ```{dropdown} Advanced Tools
 | Name                    | Menu option                            | Shortcut          | Description                  |
 |-------------------------|----------------------------------------|--------------------|------------------------------|
-| Processing Toolbox      | ![](/fig/qgis_processing_toolbox.png) | 'Ctrl' + 'Alt' + 'T' | Opens the Processing Toolbox |
-| Python Console          | ![](/fig/qgis_python_console.png)     | 'Ctrl' + 'Alt' + 'P' | Opens the Python Console     |
+| Processing Toolbox      | ![](/fig/qgis_processing_toolbox.png) | `Ctrl` + `Alt` + `T` | Opens the Processing Toolbox |
+| Python Console          | ![](/fig/qgis_python_console.png)     | `Ctrl` + `Alt` + `P` | Opens the Python Console     |
 
 ```
 
 ## Navigating on the Map Canvas
 
 ### Moving the map view
+
+::::{margin}
+
+```{tip}
+
+Holding the `Space`-button on your keyboard activates the ![](/fig/qgis_pan_map.png) `Pan Map`-tool when you're mouse in on the map canvas. Simply move your mouse while holding `Space` and you can move the map view
+
+```
+
+::::
 
 To move on the map canvas with your mouse cursor you need to toggle the hand button. 
 
@@ -247,6 +260,14 @@ You can always move on the map canvas with arrow keys on your keyboard.
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_move.mp4"></video>
 
 ### Zooming in the map view
+
+::::{margin}
+
+```{tip}
+Holding `Ctrl` on windows, or `Cmd` on MacOS, while scrolling allows you to scroll in smaller increments (slower). Try adjusting the map canvas to your needs using this method. 
+```
+
+::::
 
 The easiest way to zoom on Map Canvas is by __scrolling__.
 
@@ -265,6 +286,14 @@ Basically, all the functionality, tools and applications of QGIS are organised i
 
 ### Open Toolbox
 
+::::{margin}
+
+```{tip}
+Holding `Ctrl` + `Alt` + `T` opens and closes the toolbox. 
+```
+
+::::
+
 To open the Toolbox in QGIS click on the gearwheel button. Or click on `Processing` -> `Toolbox`
 
 ![](/fig/Geschlossene_Toolbox_01.png)
@@ -282,7 +311,7 @@ There are toolbars and panels for many different tasks. To avoid an overcrowded 
 
 To add or remove toolbars from your interface click on `View` -> `Toolbars` -> Check or uncheck the toolboxes you want to add or remove.
 
-To add or remove  panels from your interface click on `View` -> `TPanels` -> Check or uncheck the panels you want to add or remove.
+To add or remove  panels from your interface click on `View` -> `Panels` -> Check or uncheck the panels you want to add or remove.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Anzeigen_einblenden_ausblenden.mp4"></video> 
 

@@ -541,10 +541,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nominal-ordinal-and-metric-scales">Nominal, Ordinal and Metric scales</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#single-symbol-classification">Single symbol classification</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#categorised-classification">Categorised classification</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graduated-classification">Graduated classification</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graduated-classification-statistic-one-o-one">Graduated classification statistic one-o-one</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-graduated-classification-in-qgis">How To: Graduated classification in QGIS</a></li>
 </ul>
 </li>
 </ul>
@@ -561,7 +563,7 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="geodata-classification">
 <h1>Geodata Classification<a class="headerlink" href="#geodata-classification" title="Permalink to this heading">#</a></h1>
 <p><strong>🔙<a class="reference internal" href="../intro.html"><span class="doc std std-doc">Back to Homepage</span></a></strong></p>
-<p>Spatial data classification in GIS involves categorising geographic information into distinct groups or classes based on shared characteristics. This process enhances the organization and interpretation of spatial data.</p>
+<p>Spatial data classification in GIS involves categorising geographic information into distinct groups or classes based on shared characteristics or attributes. Each class can be assigned a distinct symbol or colour. This process enhances the organization and interpretation of spatial data.</p>
 <p>The attributes of geospatial data are stored in a specific column within the attribute table. Essentially, we choose a column containing the specific characteristics of interest, allowing QGIS to group the data based on these selected attributes.</p>
 <figure class="align-center" id="basic-classification">
 <a class="reference internal image-reference" href="../../_images/classification_basic.drawio.png"><img alt="../../_images/classification_basic.drawio.png" src="../../_images/classification_basic.drawio.png" style="width: 900px;" /></a>
@@ -569,9 +571,42 @@ document.write(`
 <p><span class="caption-number">Fig. 53 </span><span class="caption-text">Basic classification. Source:</span><a class="headerlink" href="#basic-classification" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+<section id="nominal-ordinal-and-metric-scales">
+<h2>Nominal, Ordinal and Metric scales<a class="headerlink" href="#nominal-ordinal-and-metric-scales" title="Permalink to this heading">#</a></h2>
+<p>In geographic data classification, <strong>nominal</strong>, <strong>ordinal</strong>, and <strong>metric</strong> scales are used to categorize and
+measure spatial features based on different levels of precision and hierarchy:</p>
+<ul class="simple">
+<li><p>The nominal scale (categorical data) is the simplest form of measurement where features are grouped into distinct categories
+based on qualitative attributes. These categories don’t have any inherent order or ranking. They don’t have any
+numerical significance: Values or labels are just names or identifiers (in some cases landcover classes can be
+identified with numbers).</p>
+<ul>
+<li><p>Examples: Land cover classes, vegetation types, soil types, amenity type (hospital, church, school, etc.)</p></li>
+</ul>
+</li>
+<li><p>The ordinal scale (ranked data) involves categorizing data, but in this case, the categories have a meaningful order or rank. However, the intervals between the ranks are not necessarily equal or known. Rank order is important: Features can be ranked or ordered from lowest to highest, but the actual difference between ranks isn’t measured. You can compare and rank data (i.e., which feature is ranked higher or lower).</p>
+<ul>
+<li><p>Examples: Land suitability, hierarchical road network, population size classes, vulnerability classes (e.g. for administrative units)</p></li>
+</ul>
+</li>
+<li><p>The metric scale (quantitative data) deals with data that have both order and exact differences
+between values. Data is represented with precise numerical values and the differences between values are consistent across the scale. Metric data can be further divided into:</p>
+<ul>
+<li><p>Interval scale: Numerical data where the difference between values is meaningful, but there is no true
+zero point (e.g., temperature in Celsius).</p></li>
+<li><p>Ratio scale: Numerical data where both differences and ratios are meaningful, and there is a true zero
+point (e.g., distance, area).</p></li>
+<li><p>Examples: Elevation data, distance, area, population</p></li>
+</ul>
+</li>
+</ul>
+<p>Depending on the type of scale, you will use different methods of classification.</p>
+</section>
 <section id="single-symbol-classification">
 <h2>Single symbol classification<a class="headerlink" href="#single-symbol-classification" title="Permalink to this heading">#</a></h2>
-<p>By default, QGIS visualises all layers in the <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">symbol</span></code> setting. This means all the features of a layer are visualised the same. In this setting, you can change many parameters like colour or opacity <strong>but you can not classify any data!</strong></p>
+<p>By default, QGIS visualises all layers in the <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">symbol</span></code> setting. This means all the features of a layer
+are visualised the same. In this setting, you can change many parameters like colour or opacity <strong>but you can
+not classify the data into multiple groups!</strong></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 How to: Single symbol classification<div class="sd-summary-down docutils">
@@ -580,17 +615,24 @@ How to: Single symbol classification<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Single_symbol_video.mp4"></video></p>
-<p class="sd-card-text"><strong>To adjust the style of a layer…</strong></p>
+</div>
+</details><p>Single Symbol classification is useful when you have a simple dataset. For example, you load a polygon layer
+with the administrative boundaries of a region, and a point layer with the major cities. In this case, you can
+choose single symbol classification and adjust the symbol for the each layer.</p>
+<p><strong>To adjust the style of a layer…</strong></p>
 <ol class="arabic simple">
-<li><p class="sd-card-text">Right-click on your layer.</p></li>
-<li><p class="sd-card-text">Click on <code class="docutils literal notranslate"><span class="pre">Symbology</span></code>.</p></li>
-<li><p class="sd-card-text">Confirm that the layer setting is on <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">Symbol</span></code>.</p></li>
-<li><p class="sd-card-text">Select the colour of your choice in the drop-down menu. For more colour options select in the drop-down menu <code class="docutils literal notranslate"><span class="pre">Choose</span> <span class="pre">Color</span></code>.</p></li>
-<li><p class="sd-card-text"><em>Optional</em>: You can adjust the opacity/transparency of the layer. This can be very useful when you want to show multiple overlapping layers.</p></li>
-<li><p class="sd-card-text"><em>Optional</em>: Here you can set the unit type. This is useful when you want to visualise points in a certain size, for example.</p></li>
-<li><p class="sd-card-text"><em>Optional:</em> Here you can find standard and previously used styles quickly.</p></li>
-<li><p class="sd-card-text">Click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> to put your adjustment into effect.</p></li>
-<li><p class="sd-card-text">Click <code class="docutils literal notranslate"><span class="pre">OK</span></code> to close the window.</p></li>
+<li><p>Right-click on your layer.</p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Symbology</span></code>.</p></li>
+<li><p>Confirm that the layer setting is on <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">Symbol</span></code>.</p></li>
+<li><p>Select the colour of your choice in the drop-down menu. For more colour options select in the drop-down menu
+<code class="docutils literal notranslate"><span class="pre">Choose</span> <span class="pre">Color</span></code>.</p></li>
+<li><p><em>Optional</em>: You can adjust the opacity/transparency of the layer. This can be very useful when you want to
+show multiple overlapping layers.</p></li>
+<li><p><em>Optional</em>: Here you can set the unit type. This is useful when you want to visualise points in a certain
+size, for example.</p></li>
+<li><p><em>Optional:</em> Here you can find standard and previously used styles quickly.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> to put your adjustment into effect.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">OK</span></code> to close the window.</p></li>
 </ol>
 <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../_images/Single_symbol_classify.png"><img alt="../../_images/Single_symbol_classify.png" src="../../_images/Single_symbol_classify.png" style="width: 900px;" /></a>
@@ -598,8 +640,14 @@ How to: Single symbol classification<div class="sd-summary-down docutils">
 <p><span class="caption-number">Fig. 54 </span><span class="caption-text">Adjust the style of a layer.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-</div>
-</details></section>
+<figure class="align-default" id="nigeria-simple-classification-exmaple">
+<a class="reference internal image-reference" href="../../_images/fr_simple_classification_example_map.png"><img alt="../../_images/fr_simple_classification_example_map.png" src="../../_images/fr_simple_classification_example_map.png" style="width: 750px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 55 </span><span class="caption-text">Niger – Régions de Tillabéri et de Tahoua Education: infrastructures scolaires fermées ou endommagées pour cause d’insécurité entre 2019 et 2022 (Source: <a class="reference external" href="https://repository.impact-initiatives.org/document/impact/e6174a66/REACH_NER_Map_Ecoles_fermees_mai2022_tillaberi_tahoua.pdf">REACH</a>)</span><a class="headerlink" href="#nigeria-simple-classification-exmaple" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<!--EDIT: Adjust title and add explanation-->
+</section>
 <section id="categorised-classification">
 <h2>Categorised classification<a class="headerlink" href="#categorised-classification" title="Permalink to this heading">#</a></h2>
 <p>Categorised classification in QGIS groups spatial data into distinct categories based on specific attributes. This classification enhances the organization and interpretation of geospatial information for clearer insights.</p>
@@ -649,7 +697,7 @@ How To: Categorised classificatation<div class="sd-summary-down docutils">
 <figure class="align-center" id="id2">
 <img alt="../../_images/Categorized_district_map_SierraLeone.png" src="../../_images/Categorized_district_map_SierraLeone.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 55 </span><span class="caption-text">Categorised classification.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 56 </span><span class="caption-text">Categorised classification.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -657,6 +705,12 @@ How To: Categorised classificatation<div class="sd-summary-down docutils">
 <section id="graduated-classification">
 <h2>Graduated classification<a class="headerlink" href="#graduated-classification" title="Permalink to this heading">#</a></h2>
 <p>Graduated classification in GIS involves categorising spatial data into classes or ranges based on a progression of values. This method is particularly useful for visualising quantitative data, allowing for the differentiation of intensity, density, or magnitude across a spectrum, facilitating a nuanced representation of geographic phenomena.</p>
+<figure class="align-default" id="ukraine-hexagonal-map">
+<a class="reference internal image-reference" href="../../_images/example_classification_hexagons.png"><img alt="../../_images/example_classification_hexagons.png" src="../../_images/example_classification_hexagons.png" style="width: 750px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 57 </span><span class="caption-text">REACH, Ukraine, IDP Collective Site Monitoring Map, Actives, July 2024 (Source: <a class="reference external" href="https://repository.impact-initiatives.org/document/impact/192097a8/REACH_UKR_Map_CSM_SituationOverview_ActiveSites_JULY2024_ENG_A4-1.pdf">Reach</a>)</span><a class="headerlink" href="#ukraine-hexagonal-map" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <section id="graduated-classification-statistic-one-o-one">
 <h3>Graduated classification statistic one-o-one<a class="headerlink" href="#graduated-classification-statistic-one-o-one" title="Permalink to this heading">#</a></h3>
 <p>Graduated classification is usually used for quantitative data that is <strong>interval</strong> or <strong>ratio</strong> scaled.</p>
@@ -695,7 +749,7 @@ How To: Categorised classificatation<div class="sd-summary-down docutils">
 <figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../_images/Histogramm_example.drawio.svg"><img alt="../../_images/Histogramm_example.drawio.svg" src="../../_images/Histogramm_example.drawio.svg" width="900px" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 56 </span><span class="caption-text">Histogramm of population data. Source:</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 58 </span><span class="caption-text">Histogramm of population data. Source:</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>However, if we want to show which districts have a higher population than others on a map, we need to classify the districts.</p>
@@ -704,7 +758,7 @@ Let’s have a look at how the classes of the district population would look lik
 <figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../_images/classification_method_map.drawio.svg"><img alt="../../_images/classification_method_map.drawio.svg" src="../../_images/classification_method_map.drawio.svg" width="900px" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 57 </span><span class="caption-text">Different classifications. Source: HeiGIT</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 59 </span><span class="caption-text">Different classifications. Source: HeiGIT</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="sd-tab-set docutils">
@@ -744,49 +798,44 @@ Standard Deviation</label><div class="sd-tab-content docutils">
 <p>Standard Deviation classification is a method that determines class breaks based on the standard deviation of the data values. This approach organizes data into classes by considering the distribution of values around the mean. Each class represents a certain number of standard deviations from the mean, providing a statistical basis for categorising data. Standard Deviation classification is effective when wanting to highlight variability within the dataset. However, it’s important to consider the nature of the data distribution and whether this method aligns with the analytical goals of the map</p>
 </div>
 </div>
+</section>
 <hr class="docutils" />
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-How To: Graduated classification in QGIS<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">To perform a graduated classification in QGIS is easy. However, unlike the categorised classification, here you have to decide on how many classes and which method you want to use.</p>
-<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/graduated_classification.mp4"></video></p>
-<p class="sd-card-text"><strong>To classify data in classes…</strong></p>
+<section id="how-to-graduated-classification-in-qgis">
+<h3>How To: Graduated classification in QGIS<a class="headerlink" href="#how-to-graduated-classification-in-qgis" title="Permalink to this heading">#</a></h3>
+<p>To perform a graduated classification in QGIS is easy. However, unlike the categorised classification, here you have to decide on how many classes and which method you want to use.</p>
+<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/graduated_classification.mp4"></video></p>
+<p><strong>To classify data in classes…</strong></p>
 <ol class="arabic simple">
-<li><p class="sd-card-text">Right-click on your layer.</p></li>
-<li><p class="sd-card-text">Click on <code class="docutils literal notranslate"><span class="pre">Symbology</span></code>.</p></li>
-<li><p class="sd-card-text">Click on <code class="docutils literal notranslate"><span class="pre">Graduated</span></code>.</p></li>
-<li><p class="sd-card-text">In the <code class="docutils literal notranslate"><span class="pre">Value</span></code> dropdown menu select the column based on which you want to classify your data.</p></li>
-<li><p class="sd-card-text">Downright select the number of classes you want to use.</p></li>
-<li><p class="sd-card-text">Under <code class="docutils literal notranslate"><span class="pre">Mode</span></code> select the classification method you want to use e.g. Equal count (Quantile).</p></li>
-<li><p class="sd-card-text">Click on <code class="docutils literal notranslate"><span class="pre">Classify</span></code>.  Now you should see all classes and the distribution of values. To add or delete singlegit s classes use the <code class="docutils literal notranslate"><span class="pre">-</span></code> and <code class="docutils literal notranslate"><span class="pre">+</span></code> buttons.</p></li>
-<li><p class="sd-card-text"><em>Optional</em>: Click on <code class="docutils literal notranslate"><span class="pre">Histogram</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Values</span></code>. Now you can see the exact distribution of values over the classes. This is very practical to decide on a classification method. You can also check the mean value and standard deviation.</p></li>
+<li><p>Right-click on your layer.</p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Symbology</span></code>.</p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Graduated</span></code>.</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">Value</span></code> dropdown menu select the column based on which you want to classify your data.</p></li>
+<li><p>Downright select the number of classes you want to use.</p></li>
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">Mode</span></code> select the classification method you want to use e.g. Equal count (Quantile).</p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Classify</span></code>.  Now you should see all classes and the distribution of values. To add or delete singlegit s classes use the <code class="docutils literal notranslate"><span class="pre">-</span></code> and <code class="docutils literal notranslate"><span class="pre">+</span></code> buttons.</p></li>
+<li><p><em>Optional</em>: Click on <code class="docutils literal notranslate"><span class="pre">Histogram</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Values</span></code>. Now you can see the exact distribution of values over the classes. This is very practical to decide on a classification method. You can also check the mean value and standard deviation.</p></li>
 </ol>
 <figure class="align-center" id="raduated-classification">
 <a class="reference internal image-reference" href="../../_images/Graduated_histogram.png"><img alt="../../_images/Graduated_histogram.png" src="../../_images/Graduated_histogram.png" style="width: 900px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 58 </span><span class="caption-text">Graduated classification. Source:</span><a class="headerlink" href="#raduated-classification" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 60 </span><span class="caption-text">Graduated classification. Source:</span><a class="headerlink" href="#raduated-classification" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="9">
-<li><p class="sd-card-text"><em>Optional</em>: In the <code class="docutils literal notranslate"><span class="pre">Symbol</span></code> dropdown menu you can select the colours and symbols you want to use.</p></li>
-<li><p class="sd-card-text"><em>Optional</em>: In the <code class="docutils literal notranslate"><span class="pre">Color</span> <span class="pre">ramp</span></code> dropdown menu you can specify the range of colours you want to use. To see all color ramps click on the down arrow of the <code class="docutils literal notranslate"><span class="pre">Color</span> <span class="pre">ramp</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">All</span> <span class="pre">Color</span> <span class="pre">Ramps</span></code>.</p></li>
-<li><p class="sd-card-text"><em>Optional</em>: Under <code class="docutils literal notranslate"><span class="pre">Legend</span> <span class="pre">Format</span></code> you can adjust how precise the range of the classes will be displayed in the legend. Usually, it is practical to not use too complicated numbers in the legend.</p></li>
-<li><p class="sd-card-text"><em>Optional</em>: You can open the panel <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Rendering</span></code> on the button of the window. Here you can adjust the opacity/transparency of the layer.</p></li>
-<li><p class="sd-card-text">Click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> to put your adjustment into effect.</p></li>
-<li><p class="sd-card-text">Click <code class="docutils literal notranslate"><span class="pre">OK</span></code> to close the window.</p></li>
+<li><p><em>Optional</em>: In the <code class="docutils literal notranslate"><span class="pre">Symbol</span></code> dropdown menu you can select the colours and symbols you want to use.</p></li>
+<li><p><em>Optional</em>: In the <code class="docutils literal notranslate"><span class="pre">Color</span> <span class="pre">ramp</span></code> dropdown menu you can specify the range of colours you want to use. To see all color ramps click on the down arrow of the <code class="docutils literal notranslate"><span class="pre">Color</span> <span class="pre">ramp</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">All</span> <span class="pre">Color</span> <span class="pre">Ramps</span></code>.</p></li>
+<li><p><em>Optional</em>: Under <code class="docutils literal notranslate"><span class="pre">Legend</span> <span class="pre">Format</span></code> you can adjust how precise the range of the classes will be displayed in the legend. Usually, it is practical to not use too complicated numbers in the legend.</p></li>
+<li><p><em>Optional</em>: You can open the panel <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Rendering</span></code> on the button of the window. Here you can adjust the opacity/transparency of the layer.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> to put your adjustment into effect.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">OK</span></code> to close the window.</p></li>
 </ol>
 <figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../_images/classification_graduated_basic.png"><img alt="../../_images/classification_graduated_basic.png" src="../../_images/classification_graduated_basic.png" style="width: 900px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 59 </span><span class="caption-text">Graduated classification in QGIS.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 61 </span><span class="caption-text">Graduated classification in QGIS.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-</div>
-</details></section>
+</section>
 </section>
 </section>
 
@@ -853,10 +902,12 @@ How To: Graduated classification in QGIS<div class="sd-summary-down docutils">
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nominal-ordinal-and-metric-scales">Nominal, Ordinal and Metric scales</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#single-symbol-classification">Single symbol classification</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#categorised-classification">Categorised classification</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graduated-classification">Graduated classification</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graduated-classification-statistic-one-o-one">Graduated classification statistic one-o-one</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-graduated-classification-in-qgis">How To: Graduated classification in QGIS</a></li>
 </ul>
 </li>
 </ul>

@@ -5,9 +5,10 @@
 __🔙[Back to Homepage](/content/intro.md)__
 
 
-Spatial data classification in GIS involves categorising geographic information into distinct groups or classes based on shared characteristics. This process enhances the organization and interpretation of spatial data.
+Spatial data classification in GIS involves categorising geographic information into distinct groups or classes based on shared characteristics or attributes. Each class can be assigned a distinct symbol or colour. This process enhances the organization and interpretation of spatial data.
 
-The attributes of geospatial data are stored in a specific column within the attribute table. Essentially, we choose a column containing the specific characteristics of interest, allowing QGIS to group the data based on these selected attributes.
+
+The attributes of geospatial data are stored in a specific column within the attribute table. Essentially, we choose a column containing the specific characteristics of interest, allowing QGIS to group the data based on these selected attributes. 
 
 ```{figure} /fig/classification_basic.drawio.png
 ---
@@ -18,26 +19,57 @@ align: center
 Basic classification. Source:
 ```
 
+## Nominal, Ordinal and Metric scales
+
+In geographic data classification, __nominal__, __ordinal__, and __metric__ scales are used to categorize and 
+measure spatial features based on different levels of precision and hierarchy:
+
+- The nominal scale (categorical data) is the simplest form of measurement where features are grouped into distinct categories 
+based on qualitative attributes. These categories don't have any inherent order or ranking. They don't have any 
+numerical significance: Values or labels are just names or identifiers (in some cases landcover classes can be 
+identified with numbers).
+    - Examples: Land cover classes, vegetation types, soil types, amenity type (hospital, church, school, etc.)
+- The ordinal scale (ranked data) involves categorizing data, but in this case, the categories have a meaningful order or rank. However, the intervals between the ranks are not necessarily equal or known. Rank order is important: Features can be ranked or ordered from lowest to highest, but the actual difference between ranks isn't measured. You can compare and rank data (i.e., which feature is ranked higher or lower).
+    - Examples: Land suitability, hierarchical road network, population size classes, vulnerability classes (e.g. for administrative units)
+- The metric scale (quantitative data) deals with data that have both order and exact differences 
+between values. Data is represented with precise numerical values and the differences between values are consistent across the scale. Metric data can be further divided into:
+    - Interval scale: Numerical data where the difference between values is meaningful, but there is no true 
+    zero point (e.g., temperature in Celsius).
+    - Ratio scale: Numerical data where both differences and ratios are meaningful, and there is a true zero 
+    point (e.g., distance, area).
+    - Examples: Elevation data, distance, area, population
+
+Depending on the type of scale, you will use different methods of classification. 
+
 ## Single symbol classification
 
-By default, QGIS visualises all layers in the `Single symbol` setting. This means all the features of a layer are visualised the same. In this setting, you can change many parameters like colour or opacity __but you can not classify any data!__
+By default, QGIS visualises all layers in the `Single symbol` setting. This means all the features of a layer 
+are visualised the same. In this setting, you can change many parameters like colour or opacity __but you can 
+not classify the data into multiple groups!__
 
 :::{dropdown} How to: Single symbol classification
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Single_symbol_video.mp4"></video>
 
+:::
+
+Single Symbol classification is useful when you have a simple dataset. For example, you load a polygon layer 
+with the administrative boundaries of a region, and a point layer with the major cities. In this case, you can 
+choose single symbol classification and adjust the symbol for the each layer.
 
 __To adjust the style of a layer...__
 1. Right-click on your layer.
 2. Click on `Symbology`.
 3. Confirm that the layer setting is on `Single Symbol`.
-4. Select the colour of your choice in the drop-down menu. For more colour options select in the drop-down menu `Choose Color`.
-5. *Optional*: You can adjust the opacity/transparency of the layer. This can be very useful when you want to show multiple overlapping layers.
-6. *Optional*: Here you can set the unit type. This is useful when you want to visualise points in a certain size, for example.
+4. Select the colour of your choice in the drop-down menu. For more colour options select in the drop-down menu 
+`Choose Color`.
+5. *Optional*: You can adjust the opacity/transparency of the layer. This can be very useful when you want to 
+show multiple overlapping layers.
+6. *Optional*: Here you can set the unit type. This is useful when you want to visualise points in a certain 
+size, for example.
 7. *Optional:* Here you can find standard and previously used styles quickly.
 8. Click `Apply` to put your adjustment into effect.
 9.  Click `OK` to close the window.
-
 
 
 ```{figure} /fig/Single_symbol_classify.png
@@ -48,12 +80,21 @@ align: center
 ---
 Adjust the style of a layer.
 ```
-:::
 
+
+```{figure} /fig/fr_simple_classification_example_map.png
+---
+name: Nigeria_simple_classification_exmaple
+width: 750px
+---
+Niger – Régions de Tillabéri et de Tahoua Education: infrastructures scolaires fermées ou endommagées pour cause d'insécurité entre 2019 et 2022 (Source: [REACH](https://repository.impact-initiatives.org/document/impact/e6174a66/REACH_NER_Map_Ecoles_fermees_mai2022_tillaberi_tahoua.pdf))
+```
+<!--EDIT: Adjust title and add explanation-->
 
 ## Categorised classification
 
 Categorised classification in QGIS groups spatial data into distinct categories based on specific attributes. This classification enhances the organization and interpretation of geospatial information for clearer insights.
+
 
 Categorised classification is usually used for __nominal__ and __ordinal__ scaled data.
 
@@ -61,6 +102,7 @@ Categorised classification is usually used for __nominal__ and __ordinal__ scale
 |---|---|---|---|
 | Nominal Scale                | Categories without inherent order or ranking             | Land cover types, districts, livelihood zones | Text ("Desert") or Integer (5)      |
 | Ordinal Scale                | Categories with a meaningful order or ranking            | Ranks (e.g., low, medium)   | Text ("high") or Integer (5)      |
+
 
 
 :::{dropdown} How To: Categorised classificatation
@@ -92,7 +134,16 @@ Categorised classification.
 
 ## Graduated classification
 
-Graduated classification in GIS involves categorising spatial data into classes or ranges based on a progression of values. This method is particularly useful for visualising quantitative data, allowing for the differentiation of intensity, density, or magnitude across a spectrum, facilitating a nuanced representation of geographic phenomena.
+Graduated classification in GIS involves categorising spatial data into classes or ranges based on a progression of values. This method is particularly useful for visualising quantitative data, allowing for the differentiation of intensity, density, or magnitude across a spectrum, facilitating a nuanced representation of geographic phenomena. 
+
+```{figure} /fig/example_classification_hexagons.png
+---
+name: Ukraine_hexagonal_map
+width: 750 px
+---
+REACH, Ukraine, IDP Collective Site Monitoring Map, Actives, July 2024 (Source: [Reach](https://repository.impact-initiatives.org/document/impact/192097a8/REACH_UKR_Map_CSM_SituationOverview_ActiveSites_JULY2024_ENG_A4-1.pdf))
+```
+
 
 ### Graduated classification statistic one-o-one
 
@@ -171,7 +222,7 @@ Standard Deviation classification is a method that determines class breaks based
 ::::
 ___
 
-:::{dropdown} How To: Graduated classification in QGIS
+### How To: Graduated classification in QGIS
 
 To perform a graduated classification in QGIS is easy. However, unlike the categorised classification, here you have to decide on how many classes and which method you want to use. 
 
@@ -212,6 +263,5 @@ align: center
 Graduated classification in QGIS.
 ```
 
-:::
 
 

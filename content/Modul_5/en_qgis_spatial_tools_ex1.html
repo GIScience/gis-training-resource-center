@@ -665,9 +665,14 @@ document.write(`
 <p>The projected coordinate system for Senegal is <code class="docutils literal notranslate"><span class="pre">EPSG:32628</span> <span class="pre">WGS</span> <span class="pre">84</span> <span class="pre">/</span> <span class="pre">UTM</span> <span class="pre">zone</span> <span class="pre">28N</span></code></p>
 </div>
 <ol class="arabic simple">
-<li><p>Load the healthsites layer (<code class="docutils literal notranslate"><span class="pre">sen_healthsites.shp</span></code>) and the administrative boundary data (<code class="docutils literal notranslate"><span class="pre">sen_admbnda_adm1_1m_gov_ocha_20190426.shp</span></code>) into your QGIS project. Add OpenStreetMap as a background layer (Hint: XYZ via the browser window or the QuickMapServices plugin).</p></li>
-<li><p>Make sure to reproject the dataset with the <strong>administrative boundaries</strong> and the dataset with the <strong>healthsites</strong> into UTM zone 28N. Use the tool <code class="docutils literal notranslate"><span class="pre">Reproject</span> <span class="pre">layer</span></code> for this process. See the Wiki entry on <a class="reference internal" href="../Wiki/en_qgis_projections_wiki.html"><span class="doc std std-doc">projections</span></a> for further information.</p></li>
-<li><p>Select all healthsites which are located within the Saint Louis region:</p>
+<li><p>Load the health sites layer (<code class="docutils literal notranslate"><span class="pre">sen_healthsites.shp</span></code>) and the administrative boundary data (<code class="docutils literal notranslate"><span class="pre">sen_admbnda_adm1_1m_gov_ocha_20190426.shp</span></code>) into your QGIS project. Add OpenStreetMap as a background layer (Hint: XYZ via the browser window or the QuickMapServices plugin).</p></li>
+</ol>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Always make sure that your datasets are provided in the correct projection. If this it not the case, it is necessary to reproject the data in the desired coordinates reference system. See the Wiki entry on <a class="reference internal" href="../Wiki/en_qgis_projections_wiki.html"><span class="doc std std-doc">projections</span></a> for further information.</p>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Select all health sites which are located within the Saint Louis region:</p>
 <ul class="simple">
 <li><p>Select the region <code class="docutils literal notranslate"><span class="pre">Saint</span> <span class="pre">Louis</span></code> in the boundary layer. You can just manually select the specific rows. See the Wiki entry on <a class="reference internal" href="../Wiki/en_qgis_spatial_queries_wiki.html"><span class="doc std std-doc">spatial queries</span></a> for further information.</p></li>
 <li><p>Save the selection under the new name <code class="docutils literal notranslate"><span class="pre">Saint_Louis_region</span></code> in an extra layer. This can be done by right clicking on the boundary layer –&gt; <code class="docutils literal notranslate"><span class="pre">Export</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Selected</span> <span class="pre">Features</span> <span class="pre">As...</span></code></p></li>
@@ -680,7 +685,7 @@ document.write(`
 <p><span class="caption-text">Screenshot of how to export selected features</span><a class="headerlink" href="#export-selected-features" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<ol class="arabic simple" start="4">
+<ol class="arabic simple" start="3">
 <li><p>Use the <img alt="" src="../../_images/mAlgorithmSelectLocation.png" /> <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">by</span> <span class="pre">location</span></code> or <img alt="" src="../../_images/mAlgorithmClip.png" /> <code class="docutils literal notranslate"><span class="pre">Clip</span></code> tool to select all health facilities within the <code class="docutils literal notranslate"><span class="pre">Saint_Louis_region</span></code> layer.</p>
 <ul class="simple">
 <li><p>Save the new selection under the new name <code class="docutils literal notranslate"><span class="pre">healthsites_Saint_Louis</span></code> in an extra layer (Hint: right click on layer, Export, …).</p></li>
@@ -693,25 +698,34 @@ document.write(`
 <p><span class="caption-text">Screenshot of the select by location tool</span><a class="headerlink" href="#select-by-location" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<ol class="arabic simple" start="5">
-<li><p>Investigate the flood risk in Saint Louis. Following the successful selection of all healthsites in the Saint Louis region in the previous step, proceed to load the flood extent layer of Saint Louis into QGIS:</p>
+<ol class="arabic simple" start="4">
+<li><p>Investigate the flood risk in Saint Louis. Following the successful selection of all health sites in the Saint Louis region in the previous step, proceed to load the flood extent layer of Saint Louis into QGIS:</p>
 <ul class="simple">
 <li><p>Add the flood extent layer (<code class="docutils literal notranslate"><span class="pre">EO4SD_SAINT_LOUIS_FLOOD_2018.shp</span></code>)</p></li>
 <li><p>While the layer does not cover the entirety of the Saint Louis region, it extends beyond Saint Louis in the north. Use the <img alt="" src="../../_images/mAlgorithmClip.png" /> <code class="docutils literal notranslate"><span class="pre">Clip</span></code> tool to clip the flood extent layer to the Saint Louis region (Hint: as input use Saint Louis flood extent, use Saint_louis_region as the overlay) for a more concentrated focus on central Saint Louis. See the Wiki entry on <a class="reference internal" href="../Wiki/en_qgis_geoprocessing_wiki.html"><span class="doc std std-doc">Geoprocessing</span></a> for further information.</p></li>
 <li><p>Save the selection as <code class="docutils literal notranslate"><span class="pre">Saint_Louis_flood_clipped</span></code>.</p></li>
 </ul>
 </li>
-<li><p>When looking at the attribute table of the <code class="docutils literal notranslate"><span class="pre">Saint_Louis_flood_clipped</span></code> layer (Watertype column), you will see that the layer includes flooded, non-flooded and water body areas. Visualise only the flooded areas and water bodies in the dataset:</p>
+<li><p>When looking at the attribute table of the <code class="docutils literal notranslate"><span class="pre">Saint_Louis_flood_clipped</span></code> layer (Watertype column), you will see that the layer includes flooded, non-flooded and water body areas.</p></li>
+</ol>
+<figure class="align-default" id="attribute-table-floods">
+<a class="reference internal image-reference" href="../../_images/en_ex1_attribute_table_floods.PNG"><img alt="../../_images/en_ex1_attribute_table_floods.PNG" src="../../_images/en_ex1_attribute_table_floods.PNG" style="width: 40%;" /></a>
+<figcaption>
+<p><span class="caption-text">Screenshot of the Saint_Louis_flood_clipped layer</span><a class="headerlink" href="#attribute-table-floods" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="6">
+<li><p>Visualize only the flooded areas and water bodies in the dataset:</p>
 <ul class="simple">
 <li><p>Go into <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> and change the first selection from “Single symbols” to <code class="docutils literal notranslate"><span class="pre">Categorized</span></code>.</p></li>
 <li><p>Select the column <code class="docutils literal notranslate"><span class="pre">Watertype</span></code> and click <code class="docutils literal notranslate"><span class="pre">Classify</span></code>.</p></li>
-<li><p>Choose different colours for both the water bodies and the flooded areas. Leave non-flooded areas unmarked or make them transparent (opacity = 0%).</p></li>
+<li><p>Choose different colors for both the water bodies and the flooded areas. Leave non-flooded areas unmarked or make them transparent (opacity = 0%).</p></li>
 <li><p>Visual exploration: Which areas are more and less prone to flooding?</p></li>
 </ul>
 </li>
 </ol>
 <figure class="align-default" id="screenshot-flood">
-<a class="reference internal image-reference" href="../../_images/en_ex2_screenshot_flood.PNG"><img alt="../../_images/en_ex2_screenshot_flood.PNG" src="../../_images/en_ex2_screenshot_flood.PNG" style="width: 50%;" /></a>
+<a class="reference internal image-reference" href="../../_images/en_ex2_screenshot_flood.PNG"><img alt="../../_images/en_ex2_screenshot_flood.PNG" src="../../_images/en_ex2_screenshot_flood.PNG" style="width: 40%;" /></a>
 <figcaption>
 <p><span class="caption-text">Screenshot of the water bodies and flooded areas</span><a class="headerlink" href="#screenshot-flood" title="Permalink to this image">#</a></p>
 </figcaption>
@@ -720,10 +734,6 @@ document.write(`
 <li><p>Assess which health sites are prone to flood risk.</p>
 <ul class="simple">
 <li><p>Make use of the <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">by</span> <span class="pre">expression</span></code> tool to select all flooded areas in the <code class="docutils literal notranslate"><span class="pre">Saint_Louis_flood_clipped</span></code> layer. You can access this tool through the attribute table by clicking on this symbol <img alt="" src="../../_images/mIconExpressionSelect_new.png" /></p></li>
-<li><p>Save the selection in a separate layer. Name it <code class="docutils literal notranslate"><span class="pre">Saint_Louis_flooded_areas</span></code>.</p></li>
-<li><p>You can now remove the <code class="docutils literal notranslate"><span class="pre">Saint_Louis_flood_clipped</span></code> layer to avoid confusion.</p></li>
-<li><p>Make use of the <img alt="" src="../../_images/mAlgorithmSelectLocation.png" /> <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">by</span> <span class="pre">location</span></code> tool to assess which healthsites are prone to flooding because they are located within the flooded areas in Saint Louis (Hint: Select features from: <code class="docutils literal notranslate"><span class="pre">healthsites_Saint_Louis</span></code>; By comparing to: <code class="docutils literal notranslate"><span class="pre">Saint_Louis_flooded_areas</span></code>).</p></li>
-<li><p>Check the attribute table of the <code class="docutils literal notranslate"><span class="pre">healthsites</span></code> layer for the selected features were one pharmacy and one hospital should be selected.</p></li>
 </ul>
 </li>
 </ol>
@@ -733,30 +743,73 @@ document.write(`
 <p><span class="caption-text">Screenshot of the Select by expression tool</span><a class="headerlink" href="#select-by-expression" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+<ol class="arabic simple" start="8">
+<li><p>Save the selection in a separate layer. Name it <code class="docutils literal notranslate"><span class="pre">Saint_Louis_flooded_areas</span></code>.</p></li>
+<li><p>You can now remove the <code class="docutils literal notranslate"><span class="pre">Saint_Louis_flood_clipped</span></code> layer to avoid confusion.</p>
+<ul class="simple">
+<li><p>Make use of the <img alt="" src="../../_images/mAlgorithmSelectLocation.png" /> <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">by</span> <span class="pre">location</span></code> tool to assess which health sites are prone to flooding because they are located within the flooded areas in Saint Louis (Hint: Select features from: <code class="docutils literal notranslate"><span class="pre">healthsites_Saint_Louis</span></code>; By comparing to: <code class="docutils literal notranslate"><span class="pre">Saint_Louis_flooded_areas</span></code>).</p></li>
+</ul>
+</li>
+</ol>
 <figure class="align-default" id="id1">
 <a class="reference internal image-reference" href="../../_images/en_ex2_select_by_location_health.PNG"><img alt="../../_images/en_ex2_select_by_location_health.PNG" src="../../_images/en_ex2_select_by_location_health.PNG" style="width: 70%;" /></a>
 <figcaption>
 <p><span class="caption-text">Screenshot of the Select by location tool</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<ol class="arabic simple" start="8">
+<ol class="arabic simple" start="10">
+<li><p>Check the attribute table of the <code class="docutils literal notranslate"><span class="pre">healthsites</span></code> layer for the selected features were one pharmacy and one hospital should be selected.</p></li>
+</ol>
+<figure class="align-default" id="selected-healthsites-senegal">
+<a class="reference internal image-reference" href="../../_images/en_ex1_selected_healthsites_senegal.PNG"><img alt="../../_images/en_ex1_selected_healthsites_senegal.PNG" src="../../_images/en_ex1_selected_healthsites_senegal.PNG" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-text">Screenshot of the selected health sites in the flooded areas</span><a class="headerlink" href="#selected-healthsites-senegal" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="11">
 <li><p>Which health sites are located close to flooded zones?</p>
 <ul class="simple">
 <li><p>Create a <img alt="" src="../../_images/mAlgorithmBuffer.png" /> buffer around the health sites in Saint Louis with a distance of <code class="docutils literal notranslate"><span class="pre">20</span> <span class="pre">meters</span></code>. See the Wiki entry on <a class="reference internal" href="../Wiki/en_qgis_geoprocessing_wiki.html"><span class="doc std std-doc">Geoprocessing</span></a> for further information.</p></li>
-<li><p>Make use of the <img alt="" src="../../_images/mAlgorithmSelectLocation.png" /> <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">by</span> <span class="pre">location</span></code> tool to assess which buffers intersect with the flooded areas.</p></li>
-<li><p>How many health sites are selected? Check the attribute table. The selection should include five pharmacies and one hospital.</p></li>
-<li><p>Feel free to experiment with additional buffer distances.</p></li>
 </ul>
 </li>
 </ol>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p>At this stage at the latest, you will be reminded to reproject your layers. Meaningful buffers can only be calculated in projected coordinate systems. The projected coordinate system for Senegal is <code class="docutils literal notranslate"><span class="pre">EPSG:32628</span> <span class="pre">WGS</span> <span class="pre">84</span> <span class="pre">/</span> <span class="pre">UTM</span> <span class="pre">zone</span> <span class="pre">28N</span></code></p>
-</div>
 <figure class="align-default" id="buffer">
 <a class="reference internal image-reference" href="../../_images/en_ex2_buffer.PNG"><img alt="../../_images/en_ex2_buffer.PNG" src="../../_images/en_ex2_buffer.PNG" style="width: 60%;" /></a>
 <figcaption>
 <p><span class="caption-text">Screenshot of the buffer process</span><a class="headerlink" href="#buffer" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>At this stage at the latest, you will be reminded to reproject your layers. Meaningful buffers can only be calculated in projected coordinate systems. The projected coordinate system for Senegal is <code class="docutils literal notranslate"><span class="pre">EPSG:32628</span> <span class="pre">WGS</span> <span class="pre">84</span> <span class="pre">/</span> <span class="pre">UTM</span> <span class="pre">zone</span> <span class="pre">28N</span></code></p>
+</div>
+<ol class="arabic simple" start="12">
+<li><p>Now make use of the <img alt="" src="../../_images/mAlgorithmSelectLocation.png" /> <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">by</span> <span class="pre">location</span></code> tool again to assess which buffers intersect with the flooded areas.</p></li>
+</ol>
+<figure class="align-default" id="selected-healthsites-buffer">
+<a class="reference internal image-reference" href="../../_images/en_ex1_select_healthsites_buffer.PNG"><img alt="../../_images/en_ex1_select_healthsites_buffer.PNG" src="../../_images/en_ex1_select_healthsites_buffer.PNG" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-text">Screenshot of the Select by location tool for the buffered areas</span><a class="headerlink" href="#selected-healthsites-buffer" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="13">
+<li><p>How many health sites are selected? Check the attribute table. The selection should include five pharmacies and one hospital.</p>
+<ul class="simple">
+<li><p>Feel free to experiment with additional buffer distances.</p></li>
+</ul>
+</li>
+</ol>
+<figure class="align-default" id="selected-healthsites-flooded">
+<a class="reference internal image-reference" href="../../_images/en_ex1_selected_flooded_healthsites.PNG"><img alt="../../_images/en_ex1_selected_flooded_healthsites.PNG" src="../../_images/en_ex1_selected_flooded_healthsites.PNG" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-text">Screenshot of the buffered and selected health sites in the flooded areas</span><a class="headerlink" href="#selected-healthsites-flooded" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The final result may be represented as follows: it will display the flooded areas, the buffered health sites, and the intersections between them. While these features might not be easily visible in QGIS, you can verify that everything worked correctly by checking the attribute table.</p>
+<figure class="align-default" id="ex1-final-result">
+<a class="reference internal image-reference" href="../../_images/en_ex1_final_result.PNG"><img alt="../../_images/en_ex1_final_result.PNG" src="../../_images/en_ex1_final_result.PNG" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-text">Screenshot of the final result</span><a class="headerlink" href="#ex1-final-result" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>

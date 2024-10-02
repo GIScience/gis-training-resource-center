@@ -96,7 +96,7 @@ Download all datasets __[here](https://nexus.heigit.org/repository/gis-training-
     - Sierra_Leone_provinces (Lines)
 - `Sierra_leone_roads.gpd` (Lines) GeoPackage
 - `Sierra_leone_healthsites.gpkg` (Points) Geopackage
-- - `sl_airports.gpkg` (Points) GeoPackage
+- `sl_airports.gpkg` (Points) GeoPackage
 
 ### Tasks
 Our goal is to produce an overview of the 2015 food insecurity situation in Sierra Leone together with the display of main infrastructure elements. To achieve this, we will visualise total food insecurity classifications alongside airports, hospitals, and primary roads in a map.
@@ -112,13 +112,11 @@ Or by clicking `Layer`-> `Add Layer`-> `Add Vector Layer`: Click on the three do
 GeoPackages can contain multiple files and even whole QGIS projects. When you load such a file in QGIS a window will appear in which you have to select the files you want to load in your QGIS project.
 ```
 
-4. First have a look at the airport layer(`Sierra_Leone_airports`). Open the attribute table and sort the data. Delete empty columns. See the Wiki entry on the [Attribute table](/content/Wiki/en_qgis_attribute_table_wiki.md) for further information.
+4. First, let's add a basemap to your map canvas using the plugin `QuickMapServices` by clicking on the ![](/fig/QMS_search_icon.png) symbol in you project toolbar. Search for "Bing Maps Satellite Imagery" in the QMS panel and add the base map layer via double click.  For an optimised view [adjust the opacity](https://www.youtube.com/watch?v=WguUkN1YRzY&ab_channel=GISBigfootAnswers) of your layers to optimise the use of the base map. 
 
-5. Add a base map to your map view using the Plugin `QuickMapServices` by clicking on the ![](/fig/QMS_search_icon.png) symbol in you project toolbar. Search for "Bing Maps Satellite Imagery" in the QMS panel and add the base map layer via double click.  For an optimised view [adjust the opacity](https://www.youtube.com/watch?v=WguUkN1YRzY&ab_channel=GISBigfootAnswers) of your layers to optimise the use of the base map. 
+5. Using  the attribute table of the airports layer zoom to Tongo Airport by right-clicking on the row in the attribute table and selecting `Zoom to Feature`([Wiki Video](/content/Wiki/en_qgis_attribute_table_wiki.md#zoom-in-on-a-specific-feature)). Check the Basemap. Do you think the airstrip is still operational? The answer is no, according to Wikipedia. Delete Tongo Airport in the [Attribute table](/content/Wiki/en_qgis_attribute_table_wiki.md). Delete Kabala airport too, since it is also not operational anymore.
 
-6. Using  the attribute table of the airports layer zoom to Tongo Airport by right-clicking on the row in the attribute table and selecting `Zoom to Feature`([Wiki Video](/content/Wiki/en_qgis_attribute_table_wiki.md#zoom-in-on-a-specific-feature)). Check the Basemap. Do you think the airstrip is still operational? The answer is no, according to Wikipedia. Delete Tongo Airport in the [Attribute table](/content/Wiki/en_qgis_attribute_table_wiki.md). Delete Kabala airport too, since it is also not operational anymore.
-
-7. Now we want to check out the airports of the cities of Bo and Kenema. Are these airstrips in better shape? If yes, add them to the airport layer. To find these cities on your map interface use the QGIS Plugin `OSM Place Search`. 
+6. Now we want to check out the airports of the cities of Bo and Kenema. Are these airstrips in better shape? If yes, add them to the airport layer. To find these cities on your map interface use the QGIS Plugin `OSM Place Search`. 
 To add the plugin `OSM Place Search`, click on `Plugins` -> `Manage and Install Plugins…` -> `All` and search for "OSM Place Search". Once you have found it click on it and select `Install Plugin`. You can open the `OSM Place Search Panel` like every other panel by clicking on `View` -> `Panels` and checking `OSM Place Search Panel`([Wiki Video](/content/Wiki/en_qgis_plugins_wiki.md#installation-of-plugins)).
     * In the panel, you can search for places on the OpenStreetMap by typing the name in the search bar. Often it makes sense to add additional information like the name of the country. Try for example “Bo, Sierra Leone”.
 
