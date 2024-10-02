@@ -7,7 +7,7 @@ an __attribute table__. The attribute table contains information on each feature
 in the layer. The information is stored in rows and columns in the attribute table. 
 Each __row__ in the table represents a __feature__, while __columns__ store 
 __attributes__ of that feature. You can use the attribute table to search, sort, 
-filter, edit and select data.
+filter, edit and select data. 
 
 
 ```{figure} /fig/en_vector_data_overview.drawio.png
@@ -61,6 +61,14 @@ name: Open Attribute Table top right
 ---
 Screenshot of Opening the Attribute Table
 ```
+
+::::{margin}
+```{tip}
+
+You can also use the shortcut `F6` (in some cases `Fn` + `F6`) to open the attribute.
+
+```
+::::
 
 :::{dropdown} Buttons of Attribute Table
 |Icon|Description|Purpose|Shortcut|
@@ -180,7 +188,19 @@ After you have selected your data, you might want to proceed with only the
 selection. You can save your selection as new layer. To do so right click on the 
 layer - `Export` -> `Save only selected features`
 
-You can then choose the format, layer name and CRS.
+```{figure} /fig/en_save_selection.png
+---
+height: 500px
+name:
+align: center
+name: Save selection, right-click.
+---
+Screenshot of how to save only selected features.
+```
+
+Now, you can choose the format, layer name and CRS.
+
+<!--ADD IMAGE-->
 
 ```{tip}
 We recommend use GeoPackage (.gpkg) instead of shapefile (.shp) in most cases. 
@@ -192,12 +212,3 @@ page on the wiki.
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_export_wiki.mp4"></video>
 
 
-```{figure} /fig/en_save_selection.png
----
-height: 500px
-name:
-align: center
-name: Save selection, right-click.
----
-Screenshot of how to save only selected features.
-```
