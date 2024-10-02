@@ -214,9 +214,7 @@ GIS-software helps us visualise geographic data. It does so by displaying the ge
 canvas. However, when creating a map, we are using multiple datasets at once. Every type of geographic data, such 
 as raster data, polygons, points, or lines, is usually stored inside a __layer__. Each layer consists of geographic 
 objects of the same type (line, polygon, raster, ...). GIS-software displays these layers on top of each other and 
-lets you rearrange the order of these layer, in order to create insightful maps. [^1]
-
-[^1]: https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_1_layers
+let's you rearrange the order of these layer, in order to create insightful maps.
 
 By adding different layers, you build your map and can combine information from 
 different sources. With those, you can then perform analyses or adapt the 
@@ -292,7 +290,11 @@ QGIS lets you open data in your QGIS-project by simply dragging the files from y
 
 ### Delimited text import (.csv, .txt)
 
-In your GIS-career, you will come across geodata in the  format of delimited text files, such as `.csv`-files (Comma-Separated-Values). These files contain tabular data, which can be opened by programs such as Microsoft Excel. They contain geographical or positional information as point coordinates in separated columns (for example, latitude and longitude, or x- and y-coordinates), or as "Well-known-text" (WKT), which represents complex geometries, such as polygons or lines.  
+In your GIS-career, you will come across geodata in the  format of delimited text files, such as `.csv`-files 
+(Comma-Separated-Values). These files contain tabular data, which can be opened by programs such as Microsoft 
+Excel. They contain geographical or positional information as point coordinates in separated columns (for 
+example, latitude and longitude, or x- and y-coordinates), or as "Well-known-text" (WKT), which represents 
+complex geometries, such as polygons or lines.  
 
 #### Open Delimited Text Layer 
 
@@ -300,7 +302,8 @@ In your GIS-career, you will come across geodata in the  format of delimited tex
 To load data from spreadsheets such as Comma Separated Value (`.csv`) or 
 Excel (`.xlsx`), the datasets need to have columns containing geometry - this is 
 most often in the form of latitude (Y field) and longitude (X field), but might 
-also be in other formats, such as WKT. In this case, you can also have complex geometries in your delimited text file.  
+also be in other formats, such as WKT. In this case, you can also have complex 
+geometries in your delimited text file.  
 ```
 
 ```{figure} /fig/en_import_delimeted_text.png
@@ -354,8 +357,9 @@ Import delimited text - file format.
 
 ### Raster data import
 
-The import of raster data works in the same way as for vector data. You can either drag-and-drop the raster-files 
-onto your QGIS-window, or open then through the "Data Source Manager".
+The import of raster data works in the same way as for vector data. You can either 
+drag-and-drop the raster-files onto your QGIS-window, or open then through the 
+"Data Source Manager".
 
 :::{dropdown} Video: Open raster data via the Data Source Manager
 
