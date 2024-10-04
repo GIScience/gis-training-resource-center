@@ -1,9 +1,9 @@
 # Projects and Folder Structure 
 
-
-In this wiki article, best practices for the creation and management of QGIS projects and geodata is presented.
-
 __🔙[Back to Homepage](/content/intro.md)__
+
+This wiki article covers the best practices for the creation and management of geodata and QGIS projects.
+
 
 ## Step-by-step: Setting up a new QGIS project from scratch
 
