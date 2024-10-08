@@ -58,7 +58,7 @@ parts:
   - caption: Module 7
     chapters:
       - file: content/Modul_7/en_module_7_overview.md
-      sections: 
+        sections: 
           - file: content/Modul_7/en_qgis_automation_theory.md
           - file: content/Modul_7/en_qgis_modul_7_ex1.md
   - caption: Module 8
@@ -73,7 +73,6 @@ parts:
       - file: content/Modul_9/en_module_9_overview.md
         sections:
           - file: content/Modul_9/en_qgis_network_analysis_theory.md
-          - file: content/Modul_9/en_qgis_network_analysis.md
           - file: content/Modul_9/en_qgis_openrouteservice_tools.md
           - file: content/Modul_9/en_qgis_centrality.md
           - file: content/Modul_9/en_qgis_modul_9_exercises.md
