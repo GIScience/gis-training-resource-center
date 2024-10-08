@@ -54,7 +54,6 @@ name: Standard folder structure
 Standard folder structure. Source: HeiGIT
 ```
 
-
 ### Naming Geodata
 
 Naming your data correctly ensures that you can identify the layers and your computer does not run into any issues 
