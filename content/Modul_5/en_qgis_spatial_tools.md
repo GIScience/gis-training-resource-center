@@ -3,6 +3,14 @@
 #### Introduction:
 Spatial Geodataprocessing uses spatial information to extract new meaning from GIS data. This data processing is particularly important in humanitarian work and planning aid operations. For instance, the overlay operation __Clip__ can be employed to extract specific areas of interest from multiple layers, allowing us to focus our attention where it is most needed. Similarly, the __Dissolve__ operation allows us to simplify complex datasets, revealing broader trends and patterns that inform our decision-making process. Using __Buffer__, we can create zones around features to help identify vulnerable areas and plan evacuation routes in the event of a flooding event. Additionally, __Spatial Joins__ can enrich datasets by incorporating additional information from related layers. They can be crucial for understanding the context of a crisis and tailoring our response accordingly. Finally, __Spatial Selections__ enable us to target specific features based on their spatial relationship with other elements, facilitating focused interventions.
 
+```{figure} /fig/en_module5_spatial_geodataprocessing.PNG
+---
+width: 75%
+name: module5_spatial_geodataprocessing
+---
+Different spatial geoprocessing tools. Source: Adapted from [Saylor Academy](https://saylordotorg.github.io/text_essentials-of-geographic-information-systems/s11-geospatial-analysis-i-vector-o.html)
+```
+
 In this section, we will explore overlay operations, focusing particularly on the operations of __Clip__, __Dissolve__, and __Buffer__. These operations allow us to combine geometries from two layers in various ways. In addition to these, we will cover __Spatial joins__ and __Spatial selections__. Spatial joins offer opportunities to enhance the attributes of the input layer by incorporating additional information from the join layer, base on their spatial relationship. These relationships can also be used to select features from an input layer based on their location in relation to another layer. All of these operations make use of the spatial information in the provided input data to either enrich the data or perform various analyses.
 
 ## Clip
@@ -266,6 +274,8 @@ In the aftermath of flooding events, data on the affected population and the ext
 1. Load the necessary data for this exercise into your QGIS. Both datasets were downloaded from HDX:
     - [South Sudan - Subnational Administrative Boundaries](https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/Spatial_Join/State_Unity_South_Sudan.zip):<br /> __State_Unity_South_Sudan.shp__
     - [Satellite detected water extents between 11 and 15 August 2023 over South Sudan](https://data.humdata.org/dataset/satellite-detected-water-extents-between-11-and-15-august-2023-over-south-sudan): __VIIRS_20230811_20230815_MaximumFloodWaterExtent_SouthSudan.geojson__
+    - [South Sudan - Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-ssd):<br /> __State_Unity_South_Sudan.shp__
+    - [Satellite detected water extents between 11 and 15 August 2023 over South Sudan](https://data.humdata.org/dataset/satellite-detected-water-extents-between-11-and-15-august-2023-over-south-sudan): Download the folder __FL20220424SSD_SHP.zip__, unzip it, and search for the file __VIIRS_20230811_20230815_MaximumFloodWaterExtent_SouthSudan.shp__
 2. Locate the tool named __Join attribute by location (summary)__
     - Choose __state boundaries__ as the target layer for joining features
     - Set __intersect__ as the spatial relationship
