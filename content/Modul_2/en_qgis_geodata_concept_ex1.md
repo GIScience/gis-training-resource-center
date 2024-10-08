@@ -146,7 +146,7 @@ Screenshot of the Data Source Manager - Delimited Text to load a CSV file
 2. Interact with the map and explore the datasets. Use the zoom tool and move 
    the map. Focus on the scale window and observe how it varies as you zoom in and out. 
 
-3. Familiarise yourself with the layer window (layer list). Show and hide 
+3. Familiarise yourself with the layer panel (layer list). Show and hide 
    different layers and move layers around in the hierarchy. Give the data layer 
    a meaningful name. 
 
@@ -157,7 +157,7 @@ storage location.
 
 4. Check out the attribute data of the layers by examining the attribute table.
 
-5. Change the projection in the map view to `WGS 84 / Pseudo-Mercator EPSG:3857`. 
+5. Change the projection in the map view to `WGS 84 / Pseudo-Mercator EPSG:3857`. You can do this in the bottom right corner of your QGIS window. 
 
 ```{Note}
 This does not change the projection (coordinates) of the files, only the 
