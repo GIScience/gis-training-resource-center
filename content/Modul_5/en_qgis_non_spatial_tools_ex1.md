@@ -1,4 +1,4 @@
-## Exercise 2: Distaster impact in different regions of Senegal 
+## Exercise 2: Disaster impact in different regions of Senegal 
 
 ## Characteristics of the exercise
 
