@@ -71,4 +71,4 @@ Selection of Buffer algorithm
 
 When we double-click on it, the Buffer Algorithm window appears, as shown in the figure below. 
 
-### Areas of application
+<!---### Areas of application-->
