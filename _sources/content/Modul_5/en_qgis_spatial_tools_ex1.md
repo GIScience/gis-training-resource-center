@@ -83,7 +83,7 @@ __Wrap up:__
 
 ### Data
 
-Download the datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Modul_5_Exercise1_Healthsite_distribution_Saint_Louis_region/Modul5_Exercise1_Healthsite_distribution_Saint_Louis_region.zip) and unzip the files.
+Download the datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/Exercise_1/Module_5_Exercise_1_Healthsite_distribution_Saint_Louis_region.zip) and unzip the files.
 
 
 <!---Download all datasets and save the folder on your computer and unzip the file. The zip folder includes:

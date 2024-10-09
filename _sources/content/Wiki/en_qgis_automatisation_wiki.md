@@ -1,4 +1,4 @@
-# Automatistation in QGIS
+# Automatisation in QGIS
 
 
 __🔙[Back to Homepage](/content/intro.md)__

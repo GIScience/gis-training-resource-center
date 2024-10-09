@@ -7,6 +7,6 @@ As you progress in your GIS career and hone your analysis skills, you will reali
 | __Chapter__ | __Competences & Objectives__ |
 | ----------- | ---------------------------- |
 | [Chapter 1: Automation Theory](/content/Modul_7/en_qgis_automation_theory.md) | At the end of this chapter, you should know the value of reproducibility in data analysis, know how to use the model builder in QGIS |
-| [Exercise 1: Automation](/content/Modul_7/en_qgis_modul_7_ex1.md) |  | 
+| [Exercise 1: Automation](/content/Modul_7/en_qgis_modul_7_ex1.md) | | 
 
 
