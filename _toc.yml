@@ -48,7 +48,7 @@ parts:
         - file: content/Modul_5/en_qgis_spatial_tools.md
         - file: content/Modul_5/en_qgis_non_spatial_tools.md
         - file: content/Modul_5/en_qgis_modul_5_exercises.md
-  - caption: Module 6 - Data Analysis with QGIS
+  - caption: Module 6
     chapters:
       - file: content/Modul_6/en_module_6_overview.md
         sections:

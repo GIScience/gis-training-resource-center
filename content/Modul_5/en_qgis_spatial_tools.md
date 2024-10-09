@@ -272,7 +272,7 @@ In the aftermath of flooding events, data on the affected population and the ext
 ### Exercise: Calculate sum of affected population and flooded area for the Area of interest
 
 1. Load the necessary data for this exercise into your QGIS. Both datasets were downloaded from HDX:
-    - [South Sudan - Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-ssd):<br /> __State_Unity_South_Sudan.shp__
+    - [South Sudan - Subnational Administrative Boundaries](https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/Spatial_Join/State_Unity_South_Sudan.zip):<br /> __State_Unity_South_Sudan.shp__
     - [Satellite detected water extents between 11 and 15 August 2023 over South Sudan](https://data.humdata.org/dataset/satellite-detected-water-extents-between-11-and-15-august-2023-over-south-sudan): Download the folder __FL20220424SSD_SHP.zip__, unzip it, and search for the file __VIIRS_20230811_20230815_MaximumFloodWaterExtent_SouthSudan.shp__
 2. Locate the tool named __Join attribute by location (summary)__
     - Choose __state boundaries__ as the target layer for joining features
