@@ -32,6 +32,7 @@ parts:
           - file: content/Modul_3/en_qgis_digitalisation.md
           - file: content/Modul_3/en_qgis_data_classification.md
           - file: content/Modul_3/en_qgis_data_queries.md
+          - file: content/Modul_3/en_qgis_georeferencing.md
           - file: content/Modul_3/en_qgis_modul_3_exercises.md
   - caption: Module 4 
     chapters:
