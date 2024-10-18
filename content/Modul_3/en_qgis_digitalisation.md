@@ -1,7 +1,5 @@
 # Digitisation
 
-
-
 __🔙[Back to Homepage](/content/intro.md)__
 
 
@@ -30,50 +28,88 @@ digitization, enabling further analysis and integration with other geospatial da
 a valuable asset for spatial analysis and mapping.
 
 :::{card}
-### Real world Scenario
+__Real world Scenario__
 
+There has been a flood in a village following heavy rains. 
 There is a flood relief operation in a village. To assess the needs of the household and the impact on the 
 infrastructure, you are tasked to make an overview map of the region and mark the flood impacted buildings and 
 roads. However, there are no datasets with the buildings or roads available. For the map, you will have to 
-create two new layers with the road network and the buildings. 
+create two new layers with the road network and the buildings. However, there is recent satellite imagery available. With these images, you can create vector layers representing the key infrastructure, such as buildings and roads. Once you have created the layers, you can create a preliminary overview map of the village. This map will be given out to community members and voluntaries on the ground to map out the damaged infrastructure. This information can subsequently be used to enrich the data and create an flood impact assessement map. 
+
+<!--ADD PICTURES-->
 
 :::
 
+:::{card} 
+__Real World Scenario__
+
+The first thing you do is locate the village using GPS-coordinates that you enter in the bottom right corner of 
+the QGIS window. 
+Thankfully, the process of digitising is relatively easy since there is a recent satellite image provided by 
+Microsoft Bing. You can load the satellite image using the __QuickMapServices__ and searching and adding the 
+`Bing Aerial` Basemap. 
+You can see the buildings and roads on the satellite image. The next step will be to create new layers: one for 
+the roads and one for the buildings.
+
+:::
+
+:::{card}
+
+__Real World Scenario__
+
+With the new layers, you are ready to trace the buildings and roads in the new layers. 
+You already have some knowledge about the condition of the roads (e.g., the road surface, quality, and if it is 
+flooded) and the condition of the houses (e.g., if it is affected by a flood, if it has multiple stories, ...). 
+This is useful information that can be stored in the additional attributes in the data table. 
+
+<!--INSERT: Picture of this step-->
+
+:::
 
 ### Digitisation toolbars
+
+```{figure} /fig/Activate_digitizing_toolbox.png
+---
+width: 300px
+align: left
+name: Activate digitising Toolbar 
+---
+The Digitisation Toolbar in QGIS 3.36.
+```
+
+
 
 Digitising is done with the `Digitizing Toolbar` and on the map canvas. 
 First, you need to check if the `Digitizing Toolbar` is activated. To do that 
 * Click on the `View` tab in the menu bar and click `Toolbars`. Check if the `Digitizing` and `Advanced Digitizing` toolbar is activated.
 
-::::{grid} 2
-:::{grid-item-card}  Activate `Digitizing Toolbox`
+
 First, you need to check if the `Digitizing Toolbox` is activated. To do that 
 1.  Click on the `View` tab in the menu bar and click `Toolbars`. Check if the `Digitizing` and `Advanced Digitizing` toolbox is activated.
 
-2. A tool box like this should appear on top of the QGIS interface
- 
- ![](/fig/Toolbox.png)
- 
-:::
-:::{grid-item-card} How to: 
 
-```{figure} /fig/Activate_digitizing_toolbox.png
----
-width: 300px
-name: 
-align: center
-name: Activate digitising Toolbar 
----
-The Digitisation Toolbar in QGIS 3.36.
-```
-:::
-::::
+2. A tool box like this should appear on top of the QGIS interface
+
+<br>
+
+<br>  
+
+<br>  
+
 
 The digitisation toolbar offers the basic tools to create, save, and edit features. However, for everything that 
-goes above just creating new features and deleting features, the Advanced Digitalization toolbar is needed. 
+goes above just creating new features and deleting features, the Advanced Digitalization toolbar is needed (see {numref}`digitising_toolbar`). 
 The Advanced Digitalization toolbar allows you to move features, delete parts of features, and much more. All 
 functions are listed in the two tables below.
+
+```{figure} /fig/Toolbox.png
+---
+width: 700 px
+name: digitising_toolbar
+align: center
+---
+Digitizing Toolbar in QGIS 3.36
+```
 
 :::{dropdown} Digitalization Toolbar
 |Tool|Purpose|Tool|Purpose|
@@ -112,30 +148,30 @@ functions are listed in the two tables below.
 :::
 
 
-:::{card} 
-### Real World Scenario
-
-The first thing you do is locate the village using GPS-coordinates that you enter in the bottom right corner of 
-the QGIS window. 
-Thankfully, the process of digitising is relatively easy since there is a recent satellite image provided by 
-Microsoft Bing. You can load the satellite image using the __QuickMapServices__ and searching and adding the 
-`Bing Aerial` Basemap. 
-You can see the buildings and roads on the satellite image. The next step will be to create new layers: one for 
-the roads and one for the buildings.
-
-:::
-
 ## Creating new datasets
 
 To digitise new data, you always have to start with creating the dataset before filling it with digitised data. 
 Keep in mind that one layer can only contain one type of geometry: either points, lines, or polygons. When you 
 create a dataset, you will have to choose the type of geometry. Additionally, you can add further columns with 
-attributes to add more data to the data table. Further information can be...
+attributes to add more data to the data table. 
+
+:::{admonition} Now it's your turn!
+:class: note
+
+Think of a spatial dataset you could need in your humanitarian operations. What kind of additional information is 
+useful? How would you collect it? This could range from type of road, crops planted, type of vegetation or social 
+indicators. You can discuss in groups and write it down on paper or add it to a digital whiteboard. 
+
+<!--Insert graphic-->
+
+:::
+
 <!--ADD meaningful example for IM-->
 
-:::{card} 
-### Video: How to create a new layer
+:::{dropdown} Video: How to create a new dataset
+
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_create_layer.mp4"></video>
+
 :::
 
 1. `Layer` --> `Create Layer` -> `New GeoPackage Layer` or `New Shapefile Layer`
@@ -146,21 +182,24 @@ attributes to add more data to the data table. Further information can be...
 6. CRS dropdown: Select the EPSG/CRS you want to set for the new layer. By default, the QGIS selects the project CRS. If you want to change the CRS click on ![](/fig/mIconProjectionEnabled.png).
 7. Under `New Field` you can add columns to the new layer. Here you can set up what other type of data you want to collect in this dataset.
     * `Type`: Select the data type the column will have e.g. `Text`, `Whole number`, `Decimal Number`, `Date`.
-    ```{Note} 
-    The number of options depends on the data format the layer will have. GeoPackage, for example, offers far more options than the Shapefile format.
-    ```
     * Click on ![](/fig/mActionNewAttribute.png) to add the new column to the `Fields List`.
 8. Click `OK` to create the new data
+
+<!---   ```{Note} 
+    The number of options depends on the data format the layer will have. GeoPackage, for example, offers far more options than the Shapefile format.
+    ```
+    -->
 
 ```{figure} /fig/New_GeoPackage_Layer.png
 ---
 width: 500px
 name: Digitalisation Toolbar 
 align: center
-name: Digitalization Toolbar 
 ---
 The Layer Creation window in QGIS 3.36.
 ```
+
+<!--ADD: add an explanation of the Layer creation window?-->
 
 ```{attention} 
 An important concept to understand before starting to add data to datasets is, that, whenever you make changes 
@@ -176,18 +215,6 @@ is basically the same:
 
 ### Creating new data entries
 
-:::{card}
-
-### Real World Scenario
-
-With the new layers, you are ready to trace the buildings and roads in the new layers. 
-You already have some knowledge about the condition of the roads (e.g., the road surface, quality, and if it is 
-flooded) and the condition of the houses (e.g., if it is affected by a flood, if it has multiple stories, ...). 
-This is useful information that can be stored in the additional attributes in the data table. 
-
-<!--INSERT: Picture of this step-->
-
-:::
 
 1. Select the layer you want to add data to in the Layer panel.
 2. Go to the digitisation toolbar and click on ![](/fig/mActionToggleEditing.png) `Toggle Editing`. Make sure 
@@ -207,13 +234,13 @@ information about this feature to the different columns, based on the attribute 
 5.	Once you are done with digitalization ![](/fig/mActionSaveEdits.png) to save your edits.
 6.	Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
 
+:::{dropdown} Video: How to create point data
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_point_feature.mp4"></video>
-
-
+:::
 
 ```{figure} /fig/point_creation.png 
 ---
-width: 500px
+width: 750px
 name: Point creation
 align: center
 name: Point creation
@@ -224,14 +251,54 @@ Point creation.
 <!--REPLACE IMAGE showing a point creation window with more attributes and not just ID and type to show the 
 information you can add at this stage-->
 
-#### Creating line data
+```{admonition} Now it's your turn!
+
+Try digitising the RCRC branches in your country.
+
+1. Create a new point dataset.
+2. Add a [basemap](/content/Modul_2/en_qgis_basemap.md) (OSM or Bing Aerial, for example)
+3. Search the RCRC branches in your country on google maps.
+4. Once you have located the branches, right-click on a branch in google maps and click on the coordinates. The coordinates will be copied to your clipboard
+
+:::{figure} /fig/en_google_maps_rightclick_coords.png
+---
+width: 250 px
+align: right
+name: gmaps_rightclick_coords
+---
+:::
+
+5. Paste the coordinates into the search bar on the bottom left of the QGIS window. Select navigate to coordinates. The location will be marked by a red dot
+
+6. Enable the editing mode ![](/fig/mActionToggleEditing.png) in in your new layer.
+7. Click on ![](/fig/mActionCapturePoint.png)
+8. Add the point feature at the location that was indicated.
+9. Add the name of the RCRC branch.
+10. Click `Ok`. 
+11. Click on ![](/fig/mActionSaveEdits.png) to save your edits.
+12. Click on ![](/fig/mActionToggleEditing.png) to exit the editing mode. 
+
+```
+
+
+### Creating line and polygon layers
+
+The process of creating line or polygon layers is essentially the same as creating point data. The main difference is 
+that instead of only adding one point, line and polygon geometries require several points (vertices). Each point you 
+add is a vertext between two lines. In QGIS, you create lines and polygons by setting one point, and then another point 
+connected to the previously added point. To finish adding the feature use the <kbd>Right mouse botton</kbd>. 
+
+```{attention} 
+Remember to change the geometry type into lines if you want to create a new line layer.
+```
+
+::::{tab-set}
+
+:::{tab-item} __Creating line data__
 
 Creating line data works in the same way as creating point data (see above). First, you must create a new line 
 layer or use an existing one. 
 
-```{attention} 
-If you create a new line layer, remember to change the geometry type into lines.
-```
 1.	Select the line layer you want to add data to in the Layer panel
 2.	Go to the digitisation toolbar and click on![](/fig/mActionToggleEditing.png). Now, the layer is in the 
 editing mode.
@@ -246,8 +313,9 @@ edits.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_line_feature.mp4"></video>
 
+:::
 
-#### Creating polygon data
+:::{tab-item} __Creating polygon data__
 
 The creation of polygon layers works in the same way as for point and line data.
 
@@ -261,6 +329,9 @@ The creation of polygon layers works in the same way as for point and line data.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_digitize_add_feature.mp4"></video>
 
+:::
+
+::::
 
 ## Editing the Data
 
@@ -285,7 +356,8 @@ Note that this is only possible __before__ you save the changes.
 ```
 
 ::::{tab-set}
-:::{tab-item} Deleting features
+
+:::{tab-item} __Deleting features__
 
 1.	Select the layer you want to modify.
 2.	Go to the digitisation toolbar and click on![](/fig/mActionToggleEditing.png) `Toggle Editing`. 
@@ -301,7 +373,7 @@ Keep in mind that once you save the changes ![](/fig/mActionSaveEdits.png), you 
 
 :::
 
-:::{tab-item} Moving features
+:::{tab-item} __Moving features__
 
 There are multiple methods to move features. Here we show the method that works the same for point, line, and polygon features.
 To do this, you need the Advanced Digitisation Toolbox.
@@ -330,7 +402,7 @@ then click on the location where you want to move the vertex to.
 
 :::
 
-:::{tab-item} __Adding a ring to a polygon feature__
+:::{tab-item} __Adding rings to polygon features__
 
 A ring in QGIS is a part inside a polygon that is not part of the polygon. Image a polygon representing a lake. 
 The ring is an island in the lake. For a better understanding, watch the video below.
@@ -351,10 +423,30 @@ The ring is an island in the lake. For a better understanding, watch the video b
 
 ### Editing the attribute values
 
-Sometimes, you will have to edit the values in the columns of the attribute table. 
+Sometimes, you will have to edit the values in the columns of the attribute table. For example, the name of an administrative district is written incorrectly or differently, or a value has not been entered correctly. To do this, you will have to:
 
+::::{margin}
 
-## Digitisation Errors in QGIS
+```{tip}
+You can open the attribute table of the selected layer by pressing <kbd>F6</kbd>. 
+```
+
+::::
+
+1. Open the [attribute table](/content/Modul_2/en_qgis_attribute_table.md)
+2. Click on ![](/fig/mActionToggleEditing.png) to enter into the editing mode.
+3. Choose the field that you want to edit. 
+4. Enter the corrected value.
+5. Click on ![](/fig/mActionSaveEdits.png) to save your edits.
+6. Click on ![](/fig/mActionToggleEditing.png) again to exit the editing mode. 
+
+This process is called __"Data cleaning"__ and is important when performing data analysis or manipulating data 
+in any way. While collecting or digitising data, it is easy to make small mistakes, such as a wrong value, wrong 
+value type, or a spelling mistake. When performing anlyses, it is therefore important to investigate the 
+attribute table for inconsistencies or errors. If these errors are not cleaned, the results will be incorrect 
+and you might take the wrong conclusions!
+
+## Spatial Digitisation Errors in QGIS
 
 The accuracy of geodata is crucial for spatial analysis. Positional errors are inevitable when data are manually 
 digitised. The most common examples include undershooting and overshooting.  When your coordinates do not 
