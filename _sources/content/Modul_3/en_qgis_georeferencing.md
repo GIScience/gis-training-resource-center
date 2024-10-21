@@ -50,7 +50,7 @@ Different transformation types: linear (left), polynomial 2nd degree (middle), p
 
 ### Transformation types
 
-:::::{dropdown} Transformation types (from the [QGIS Documentation](https://docs.qgis.org/3.34/en/docs/user_manual/working_with_raster/georeferencer.html))
+:::::{dropdown} Transformation types (from the  [QGIS Documentation](https://docs.qgis.org/3.34/en/docs/user_manual/working_with_raster/georeferencer.html))
 ## Linear
 The Linear algorithm is used to create a world file and is different from the other algorithms, as it does not actually 
 transform the raster pixels. It allows positioning (translating) the image and uniform scaling, but no rotation or other 
@@ -92,7 +92,7 @@ of 10 GCPs, but usually more to be successful.
 
 :::::
 
-### How to Georeferencing in QGIS
+### How to Georeference in QGIS
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_3.36_georeferencing_howto.mp4"></video>
 

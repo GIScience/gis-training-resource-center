@@ -1,7 +1,9 @@
 # Digitisation
 
+:::{button-link}
 __🔙[Back to Homepage](/content/intro.md)__
-  
+:::
+
 
 Digitisation is the process of converting geographic data from maps or images into a digital form commonly 
 represented as vector data.
@@ -297,7 +299,7 @@ Remember to change the geometry type into lines if you want to create a new line
 
 ::::{tab-set}
 
-:::{tab-item} __Creating line data__
+:::{tab-item} Creating line data
 
 Creating line data works in the same way as creating point data (see above). First, you must create a new line 
 layer or use an existing one. 
@@ -318,7 +320,7 @@ edits.
 
 :::
 
-:::{tab-item} __Creating polygon data__
+:::{tab-item} Creating polygon data
 
 The creation of polygon layers works in the same way as for point and line data.
 
@@ -375,7 +377,7 @@ Note that this is only possible __before__ you save the changes.
 
 ::::{tab-set}
 
-:::{tab-item} __Deleting features__
+:::{tab-item} Deleting features
 
 1.	Select the layer you want to modify.
 2.	Go to the digitisation toolbar and click on![](/fig/mActionToggleEditing.png) `Toggle Editing`. 
@@ -391,7 +393,7 @@ Keep in mind that once you save the changes ![](/fig/mActionSaveEdits.png), you 
 
 :::
 
-:::{tab-item} __Moving features__
+:::{tab-item} Moving features
 
 There are multiple methods to move features. Here we show the method that works the same for point, line, and polygon features.
 To do this, you need the Advanced Digitisation Toolbox.
@@ -406,7 +408,7 @@ To do this, you need the Advanced Digitisation Toolbox.
 
 :::
 
-:::{tab-item} __Modifying geometries__
+:::{tab-item} Modifying geometries
 
 1.	Select the line layer you want to add data to in the Layer panel.
 2.	Navigate to the digitisation toolbar and click on![](/fig/mActionToggleEditing.png). 
@@ -420,7 +422,7 @@ then click on the location where you want to move the vertex to.
 
 :::
 
-:::{tab-item} __Adding rings to polygon features__
+:::{tab-item} Adding rings to polygon features
 
 A ring in QGIS is a part inside a polygon that is not part of the polygon. Image a polygon representing a lake. 
 The ring is an island in the lake. For a better understanding, watch the video below.

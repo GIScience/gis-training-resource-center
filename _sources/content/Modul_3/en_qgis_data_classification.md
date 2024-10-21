@@ -176,7 +176,7 @@ ranging from 1 to 91. The cells have been organised into 5 categories, making it
 between the different values in each cell. By keeping the amount of classes to a minimum, the reader can 
 read and understand the map quicker. 
 
-:::
+::::
 
 Graduated classification is usually used for quantitative data that is __interval__ or __ratio__ scaled.
 
