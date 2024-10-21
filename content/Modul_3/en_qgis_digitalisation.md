@@ -1,7 +1,7 @@
 # Digitisation
 
 __🔙[Back to Homepage](/content/intro.md)__
-
+  
 
 Digitisation is the process of converting geographic data from maps or images into a digital form commonly 
 represented as vector data.
@@ -10,13 +10,13 @@ information into a digital format, facilitating more efficient data manipulation
 of interpreting images or paper maps. 
 
 
-```{figure} /fig/Digitizsation_concept.drawio.svg
+```{figure} /fig/en_digitisation_concept.png
 ---
 width: 900px
 align: center
 name: Digitisation with GIS Concept
 ---
-Digitisation with GIS Concept. Source: HeiGIT
+The concept of digitisation within GIS. Source: HeiGIT
 ```
 
 ##  Digitising in QGIS
@@ -28,43 +28,24 @@ digitization, enabling further analysis and integration with other geospatial da
 a valuable asset for spatial analysis and mapping.
 
 :::{card}
-__Real world Scenario__
-
-There has been a flood in a village following heavy rains. 
-There is a flood relief operation in a village. To assess the needs of the household and the impact on the 
+:class-card: sd-text-justify sd-bg-success sd-text-black sd-rounded-3 sd-border-2
+__Real world Scenario 1/3__
+^^^
+There has been a flood in a village following heavy rains.  
+To assess the needs of the household and the impact on the 
 infrastructure, you are tasked to make an overview map of the region and mark the flood impacted buildings and 
 roads. However, there are no datasets with the buildings or roads available. For the map, you will have to 
-create two new layers with the road network and the buildings. However, there is recent satellite imagery available. With these images, you can create vector layers representing the key infrastructure, such as buildings and roads. Once you have created the layers, you can create a preliminary overview map of the village. This map will be given out to community members and voluntaries on the ground to map out the damaged infrastructure. This information can subsequently be used to enrich the data and create an flood impact assessement map. 
+create two new layers with the road network and the buildings. However, there is recent satellite imagery available. 
+With these images, you can create vector layers representing the key infrastructure, such as buildings and roads. 
+Once you have created the layers, you can create a preliminary overview map of the village. 
+This map will be given out to community members and voluntaries on the ground to map out the damaged infrastructure.
+In a next step, the information collected by the ground team can be used to enrich the data and create an flood 
+impact assessment. 
+To create the map, you will need to create new vector layers. 
 
-<!--ADD PICTURES-->
-
+<!--ADD PICTURES -->
 :::
 
-:::{card} 
-__Real World Scenario__
-
-The first thing you do is locate the village using GPS-coordinates that you enter in the bottom right corner of 
-the QGIS window. 
-Thankfully, the process of digitising is relatively easy since there is a recent satellite image provided by 
-Microsoft Bing. You can load the satellite image using the __QuickMapServices__ and searching and adding the 
-`Bing Aerial` Basemap. 
-You can see the buildings and roads on the satellite image. The next step will be to create new layers: one for 
-the roads and one for the buildings.
-
-:::
-
-:::{card}
-
-__Real World Scenario__
-
-With the new layers, you are ready to trace the buildings and roads in the new layers. 
-You already have some knowledge about the condition of the roads (e.g., the road surface, quality, and if it is 
-flooded) and the condition of the houses (e.g., if it is affected by a flood, if it has multiple stories, ...). 
-This is useful information that can be stored in the additional attributes in the data table. 
-
-<!--INSERT: Picture of this step-->
-
-:::
 
 ### Digitisation toolbars
 
@@ -162,11 +143,8 @@ Think of a spatial dataset you could need in your humanitarian operations. What 
 useful? How would you collect it? This could range from type of road, crops planted, type of vegetation or social 
 indicators. You can discuss in groups and write it down on paper or add it to a digital whiteboard. 
 
-<!--Insert graphic-->
-
 :::
 
-<!--ADD meaningful example for IM-->
 
 :::{dropdown} Video: How to create a new dataset
 
@@ -215,7 +193,6 @@ is basically the same:
 
 ### Creating new data entries
 
-
 1. Select the layer you want to add data to in the Layer panel.
 2. Go to the digitisation toolbar and click on ![](/fig/mActionToggleEditing.png) `Toggle Editing`. Make sure 
 the the layer is in the editing mode. If not, click on the ![](/fig/mActionToggleEditing.png) icon in the 
@@ -240,7 +217,7 @@ information about this feature to the different columns, based on the attribute 
 
 ```{figure} /fig/point_creation.png 
 ---
-width: 750px
+width: 750 px
 name: Point creation
 align: center
 name: Point creation
@@ -248,8 +225,34 @@ name: Point creation
 Point creation.
 ```
 
-<!--REPLACE IMAGE showing a point creation window with more attributes and not just ID and type to show the 
+ <!--REPLACE IMAGE showing a point creation window with more attributes and not just ID and type to show the 
 information you can add at this stage-->
+
+
+
+```{admonition} Getting coordinates from google maps
+:class: tip
+
+Sometimes, the easiest way to get the coordinates for a location, such as the office of a national Red Cross or Red Crescent branch or simply ofa house, is to use google maps. In Google Maps, you can right click on any location to get the coordinates (in degrees). 
+
+:::{figure} /fig/en_google_maps_rightclick_coords.png
+---
+width: 250 px
+align: right
+name: gmaps_rightclick_coords
+---
+:::
+
+1. In Google Maps, locate the point you wish to add to your QGIS project.
+2. Right click on the point and select the coordinates. They will be copied to your clipboard automatically.
+3. Navigate to your QGIS project and paste the coordinates into the search bar in the bottom left corner of the QGIS window.
+4. Select `Go to [Your coordinates] (EPSG 4326: WGS 84)`. 
+5. The coordinate point will flash red on the map canvas. 
+
+```
+
+
+<!---
 
 ```{admonition} Now it's your turn!
 
@@ -279,7 +282,7 @@ name: gmaps_rightclick_coords
 12. Click on ![](/fig/mActionToggleEditing.png) to exit the editing mode. 
 
 ```
-
+-->
 
 ### Creating line and polygon layers
 
@@ -331,7 +334,22 @@ The creation of polygon layers works in the same way as for point and line data.
 
 :::
 
+
 ::::
+
+:::{card} 
+:class-card: sd-text-justify sd-text-black sd-rounded-3 sd-border-2
+__Real World Scenario 2/3__
+^^^
+The first thing you do is locate the village using GPS-coordinates that you enter in the bottom right corner of 
+the QGIS window. 
+Thankfully, the process of digitising is relatively easy since there is a recent satellite image provided by 
+Microsoft Bing. You can load the satellite image using the __QuickMapServices__ and searching and adding the 
+`Bing Aerial` Basemap. 
+You can see the buildings and roads on the satellite image. The next step will be to create new layers: one for 
+the roads and one for the buildings.
+
+:::
 
 ## Editing the Data
 
@@ -442,9 +460,21 @@ You can open the attribute table of the selected layer by pressing <kbd>F6</kbd>
 
 This process is called __"Data cleaning"__ and is important when performing data analysis or manipulating data 
 in any way. While collecting or digitising data, it is easy to make small mistakes, such as a wrong value, wrong 
-value type, or a spelling mistake. When performing anlyses, it is therefore important to investigate the 
+value type, or a spelling mistake. When performing analyses, it is therefore important to investigate the 
 attribute table for inconsistencies or errors. If these errors are not cleaned, the results will be incorrect 
 and you might take the wrong conclusions!
+
+:::{card}
+:class-card: sd-text-justify sd-bg-success sd-text-black sd-rounded-3 sd-border-2
+__Real world Scenario 3/3__
+^^^
+
+With the new layers, you are ready to trace the buildings and roads in the new layers. 
+You already have some knowledge about the condition of the roads (e.g., the road surface, quality, and if it is 
+flooded) and the condition of the houses (e.g., if it is affected by a flood, if it has multiple stories, ...). 
+This is useful information that can be stored in the additional attributes in the data table. 
+
+:::
 
 ## Spatial Digitisation Errors in QGIS
 
