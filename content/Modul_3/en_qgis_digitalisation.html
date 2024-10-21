@@ -549,11 +549,8 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-new-datasets">Creating new datasets</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-new-data-entries">Creating new data entries</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-point-data">Creating point data</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-line-data">Creating line data</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-polygon-data">Creating polygon data</a></li>
-</ul>
-</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-point-data">Creating point data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-line-and-polygon-layers">Creating line and polygon layers</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#editing-the-data">Editing the Data</a><ul class="nav section-nav flex-column">
@@ -561,7 +558,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#editing-the-attribute-values">Editing the attribute values</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#digitisation-errors-in-qgis">Digitisation Errors in QGIS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spatial-digitisation-errors-in-qgis">Spatial Digitisation Errors in QGIS</a></li>
 </ul>
             </nav>
         </div>
@@ -582,9 +579,9 @@ Proficiency in digitisation stands as a cornerstone for GIS specialists. It empo
 information into a digital format, facilitating more efficient data manipulation compared to traditional methods
 of interpreting images or paper maps.</p>
 <figure class="align-center" id="digitisation-with-gis-concept">
-<a class="reference internal image-reference" href="../../_images/Digitizsation_concept.drawio.svg"><img alt="../../_images/Digitizsation_concept.drawio.svg" src="../../_images/Digitizsation_concept.drawio.svg" width="900px" /></a>
+<a class="reference internal image-reference" href="../../_images/en_digitisation_concept.png"><img alt="../../_images/en_digitisation_concept.png" src="../../_images/en_digitisation_concept.png" style="width: 900px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 49 </span><span class="caption-text">Digitisation with GIS Concept. Source: HeiGIT</span><a class="headerlink" href="#digitisation-with-gis-concept" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 49 </span><span class="caption-text">The concept of digitisation within GIS. Source: HeiGIT</span><a class="headerlink" href="#digitisation-with-gis-concept" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <section id="digitising-in-qgis">
@@ -594,58 +591,56 @@ involves tracing features such as points, lines, or polygons directly on the map
 elements like buildings, roads, or land parcels. Additionally, you can assign attributes to each feature during
 digitization, enabling further analysis and integration with other geospatial data. This digitized data becomes
 a valuable asset for spatial analysis and mapping.</p>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-text-justify sd-bg-success sd-text-black sd-rounded-3 sd-border-2 docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Real world Scenario 1/3</strong></p>
+</div>
 <div class="sd-card-body docutils">
-<p class="rubric">Real world Scenario</p>
-<p class="sd-card-text">There is a flood relief operation in a village. To assess the needs of the household and the impact on the
+<p class="sd-card-text">There has been a flood in a village following heavy rains.<br />
+To assess the needs of the household and the impact on the
 infrastructure, you are tasked to make an overview map of the region and mark the flood impacted buildings and
 roads. However, there are no datasets with the buildings or roads available. For the map, you will have to
-create two new layers with the road network and the buildings.</p>
+create two new layers with the road network and the buildings. However, there is recent satellite imagery available.
+With these images, you can create vector layers representing the key infrastructure, such as buildings and roads.
+Once you have created the layers, you can create a preliminary overview map of the village.
+This map will be given out to community members and voluntaries on the ground to map out the damaged infrastructure.
+In a next step, the information collected by the ground team can be used to enrich the data and create an flood
+impact assessment.
+To create the map, you will need to create new vector layers.</p>
+<!--ADD PICTURES -->
 </div>
 </div>
 <section id="digitisation-toolbars">
 <h3>Digitisation toolbars<a class="headerlink" href="#digitisation-toolbars" title="Permalink to this heading">#</a></h3>
-<p>Digitising is done with the <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code> and on the map canvas.
-First, you need to check if the <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code> is activated. To do that</p>
-<ul class="simple">
-<li><p>Click on the <code class="docutils literal notranslate"><span class="pre">View</span></code> tab in the menu bar and click <code class="docutils literal notranslate"><span class="pre">Toolbars</span></code>. Check if the <code class="docutils literal notranslate"><span class="pre">Digitizing</span></code> and <code class="docutils literal notranslate"><span class="pre">Advanced</span> <span class="pre">Digitizing</span></code> toolbar is activated.</p></li>
-</ul>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Activate <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbox</span></code></div>
-<p class="sd-card-text">First, you need to check if the <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbox</span></code> is activated. To do that</p>
-<ol class="arabic simple">
-<li><p class="sd-card-text">Click on the <code class="docutils literal notranslate"><span class="pre">View</span></code> tab in the menu bar and click <code class="docutils literal notranslate"><span class="pre">Toolbars</span></code>. Check if the <code class="docutils literal notranslate"><span class="pre">Digitizing</span></code> and <code class="docutils literal notranslate"><span class="pre">Advanced</span> <span class="pre">Digitizing</span></code> toolbox is activated.</p></li>
-<li><p class="sd-card-text">A tool box like this should appear on top of the QGIS interface</p></li>
-</ol>
-<p class="sd-card-text"><img alt="" src="../../_images/Toolbox.png" /></p>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-How to: </div>
-<figure class="align-center" id="activate-digitising-toolbar">
+<figure class="align-left" id="activate-digitising-toolbar">
 <a class="reference internal image-reference" href="../../_images/Activate_digitizing_toolbox.png"><img alt="../../_images/Activate_digitizing_toolbox.png" src="../../_images/Activate_digitizing_toolbox.png" style="width: 300px;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 50 </span><span class="caption-text">The Digitisation Toolbar in QGIS 3.36.</span><a class="headerlink" href="#activate-digitising-toolbar" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-</div>
-</div>
-</div>
-</div>
-</div>
+<p>Digitising is done with the <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code> and on the map canvas.
+First, you need to check if the <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code> is activated. To do that</p>
+<ul class="simple">
+<li><p>Click on the <code class="docutils literal notranslate"><span class="pre">View</span></code> tab in the menu bar and click <code class="docutils literal notranslate"><span class="pre">Toolbars</span></code>. Check if the <code class="docutils literal notranslate"><span class="pre">Digitizing</span></code> and <code class="docutils literal notranslate"><span class="pre">Advanced</span> <span class="pre">Digitizing</span></code> toolbar is activated.</p></li>
+</ul>
+<p>First, you need to check if the <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbox</span></code> is activated. To do that</p>
+<ol class="arabic simple">
+<li><p>Click on the <code class="docutils literal notranslate"><span class="pre">View</span></code> tab in the menu bar and click <code class="docutils literal notranslate"><span class="pre">Toolbars</span></code>. Check if the <code class="docutils literal notranslate"><span class="pre">Digitizing</span></code> and <code class="docutils literal notranslate"><span class="pre">Advanced</span> <span class="pre">Digitizing</span></code> toolbox is activated.</p></li>
+<li><p>A tool box like this should appear on top of the QGIS interface</p></li>
+</ol>
+<br>
+<br>  
+<br>  
 <p>The digitisation toolbar offers the basic tools to create, save, and edit features. However, for everything that
-goes above just creating new features and deleting features, the Advanced Digitalization toolbar is needed.
+goes above just creating new features and deleting features, the Advanced Digitalization toolbar is needed (see <a class="reference internal" href="#digitising-toolbar"><span class="std std-numref">Fig. 51</span></a>).
 The Advanced Digitalization toolbar allows you to move features, delete parts of features, and much more. All
 functions are listed in the two tables below.</p>
+<figure class="align-center" id="digitising-toolbar">
+<a class="reference internal image-reference" href="../../_images/Toolbox.png"><img alt="../../_images/Toolbox.png" src="../../_images/Toolbox.png" style="width: 700px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 51 </span><span class="caption-text">Digitizing Toolbar in QGIS 3.36</span><a class="headerlink" href="#digitising-toolbar" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Digitalization Toolbar<div class="sd-summary-down docutils">
@@ -799,34 +794,30 @@ Advanced digitizing Toolbar<div class="sd-summary-down docutils">
 </tbody>
 </table>
 </div>
-</details><div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<p class="rubric">Real World Scenario</p>
-<p class="sd-card-text">The first thing you do is locate the village using GPS-coordinates that you enter in the bottom right corner of
-the QGIS window.
-Thankfully, the process of digitising is relatively easy since there is a recent satellite image provided by
-Microsoft Bing. You can load the satellite image using the <strong>QuickMapServices</strong> and searching and adding the
-<code class="docutils literal notranslate"><span class="pre">Bing</span> <span class="pre">Aerial</span></code> Basemap.
-You can see the buildings and roads on the satellite image. The next step will be to create new layers: one for
-the roads and one for the buildings.</p>
-</div>
-</div>
-</section>
+</details></section>
 </section>
 <section id="creating-new-datasets">
 <h2>Creating new datasets<a class="headerlink" href="#creating-new-datasets" title="Permalink to this heading">#</a></h2>
 <p>To digitise new data, you always have to start with creating the dataset before filling it with digitised data.
 Keep in mind that one layer can only contain one type of geometry: either points, lines, or polygons. When you
 create a dataset, you will have to choose the type of geometry. Additionally, you can add further columns with
-attributes to add more data to the data table. Further information can be…</p>
-<!--ADD meaningful example for IM-->
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<p class="rubric">Video: How to create a new layer</p>
+attributes to add more data to the data table.</p>
+<div class="note admonition">
+<p class="admonition-title">Now it’s your turn!</p>
+<p>Think of a spatial dataset you could need in your humanitarian operations. What kind of additional information is
+useful? How would you collect it? This could range from type of road, crops planted, type of vegetation or social
+indicators. You can discuss in groups and write it down on paper or add it to a digital whiteboard.</p>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Video: How to create a new dataset<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_create_layer.mp4"></video></p>
 </div>
-</div>
-<ol class="arabic">
+</details><ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">GeoPackage</span> <span class="pre">Layer</span></code> or <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Shapefile</span> <span class="pre">Layer</span></code></p></li>
 <li><p>Click on <img alt="" src="../../_images/Three_points.png" /> next to the <code class="docutils literal notranslate"><span class="pre">file</span> <span class="pre">name</span></code> input field and navigate to the folder where you want to save the dataset.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">encoding</span></code>: Make sure this is set to UTF-8</p></li>
@@ -836,23 +827,22 @@ attributes to add more data to the data table. Further information can be…</p>
 <li><p>Under <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Field</span></code> you can add columns to the new layer. Here you can set up what other type of data you want to collect in this dataset.</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Type</span></code>: Select the data type the column will have e.g. <code class="docutils literal notranslate"><span class="pre">Text</span></code>, <code class="docutils literal notranslate"><span class="pre">Whole</span> <span class="pre">number</span></code>, <code class="docutils literal notranslate"><span class="pre">Decimal</span> <span class="pre">Number</span></code>, <code class="docutils literal notranslate"><span class="pre">Date</span></code>.</p></li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The number of options depends on the data format the layer will have. GeoPackage, for example, offers far more options than the Shapefile format.</p>
-</div>
-<ul class="simple">
 <li><p>Click on <img alt="" src="../../_images/mActionNewAttribute.png" /> to add the new column to the <code class="docutils literal notranslate"><span class="pre">Fields</span> <span class="pre">List</span></code>.</p></li>
 </ul>
 </li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">OK</span></code> to create the new data</p></li>
 </ol>
-<figure class="align-center" id="digitalization-toolbar">
+<!---   ```{Note} 
+    The number of options depends on the data format the layer will have. GeoPackage, for example, offers far more options than the Shapefile format.
+    ```
+    -->
+<figure class="align-center" id="digitalisation-toolbar">
 <a class="reference internal image-reference" href="../../_images/New_GeoPackage_Layer.png"><img alt="../../_images/New_GeoPackage_Layer.png" src="../../_images/New_GeoPackage_Layer.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 51 </span><span class="caption-text">The Layer Creation window in QGIS 3.36.</span><a class="headerlink" href="#digitalization-toolbar" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 52 </span><span class="caption-text">The Layer Creation window in QGIS 3.36.</span><a class="headerlink" href="#digitalisation-toolbar" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+<!--ADD: add an explanation of the Layer creation window?-->
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>An important concept to understand before starting to add data to datasets is, that, whenever you make changes
@@ -866,16 +856,6 @@ your edits.</p>
 is basically the same:</p>
 <section id="creating-new-data-entries">
 <h3>Creating new data entries<a class="headerlink" href="#creating-new-data-entries" title="Permalink to this heading">#</a></h3>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<p class="rubric">Real World Scenario</p>
-<p class="sd-card-text">With the new layers, you are ready to trace the buildings and roads in the new layers.
-You already have some knowledge about the condition of the roads (e.g., the road surface, quality, and if it is
-flooded) and the condition of the houses (e.g., if it is affected by a flood, if it has multiple stories, …).
-This is useful information that can be stored in the additional attributes in the data table.</p>
-<!--INSERT: Picture of this step-->
-</div>
-</div>
 <ol class="arabic simple">
 <li><p>Select the layer you want to add data to in the Layer panel.</p></li>
 <li><p>Go to the digitisation toolbar and click on <img alt="" src="../../_images/mActionToggleEditing.png" /> <code class="docutils literal notranslate"><span class="pre">Toggle</span> <span class="pre">Editing</span></code>. Make sure
@@ -897,23 +877,85 @@ information about this feature to the different columns, based on the attribute 
 <li><p>Once you are done with digitalization <img alt="" src="../../_images/mActionSaveEdits.png" /> to save your edits.</p></li>
 <li><p>Click again on <img alt="" src="../../_images/mActionToggleEditing.png" /> to end the editing mode.</p></li>
 </ol>
-<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_point_feature.mp4"></video></p>
-<figure class="align-center" id="point-creation">
-<a class="reference internal image-reference" href="../../_images/point_creation.png"><img alt="../../_images/point_creation.png" src="../../_images/point_creation.png" style="width: 500px;" /></a>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Video: How to create point data<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_point_feature.mp4"></video></p>
+</div>
+</details><figure class="align-center" id="point-creation">
+<a class="reference internal image-reference" href="../../_images/point_creation.png"><img alt="../../_images/point_creation.png" src="../../_images/point_creation.png" style="width: 750px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 52 </span><span class="caption-text">Point creation.</span><a class="headerlink" href="#point-creation" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 53 </span><span class="caption-text">Point creation.</span><a class="headerlink" href="#point-creation" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<!--REPLACE IMAGE showing a point creation window with more attributes and not just ID and type to show the 
+ <!--REPLACE IMAGE showing a point creation window with more attributes and not just ID and type to show the 
 information you can add at this stage-->
-<section id="creating-line-data">
-<h4>Creating line data<a class="headerlink" href="#creating-line-data" title="Permalink to this heading">#</a></h4>
-<p>Creating line data works in the same way as creating point data (see above). First, you must create a new line
-layer or use an existing one.</p>
+<div class="tip admonition">
+<p class="admonition-title">Getting coordinates from google maps</p>
+<p>Sometimes, the easiest way to get the coordinates for a location, such as the office of a national Red Cross or Red Crescent branch or simply ofa house, is to use google maps. In Google Maps, you can right click on any location to get the coordinates (in degrees).</p>
+<figure class="align-right" id="gmaps-rightclick-coords">
+<a class="reference internal image-reference" href="../../_images/en_google_maps_rightclick_coords.png"><img alt="../../_images/en_google_maps_rightclick_coords.png" src="../../_images/en_google_maps_rightclick_coords.png" style="width: 250px;" /></a>
+</figure>
+<ol class="arabic simple">
+<li><p>In Google Maps, locate the point you wish to add to your QGIS project.</p></li>
+<li><p>Right click on the point and select the coordinates. They will be copied to your clipboard automatically.</p></li>
+<li><p>Navigate to your QGIS project and paste the coordinates into the search bar in the bottom left corner of the QGIS window.</p></li>
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">Go</span> <span class="pre">to</span> <span class="pre">[Your</span> <span class="pre">coordinates]</span> <span class="pre">(EPSG</span> <span class="pre">4326:</span> <span class="pre">WGS</span> <span class="pre">84)</span></code>.</p></li>
+<li><p>The coordinate point will flash red on the map canvas.</p></li>
+</ol>
+</div>
+<!---
+
+```{admonition} Now it's your turn!
+
+Try digitising the RCRC branches in your country.
+
+1. Create a new point dataset.
+2. Add a [basemap](/content/Modul_2/en_qgis_basemap.md) (OSM or Bing Aerial, for example)
+3. Search the RCRC branches in your country on google maps.
+4. Once you have located the branches, right-click on a branch in google maps and click on the coordinates. The coordinates will be copied to your clipboard
+
+:::{figure} /fig/en_google_maps_rightclick_coords.png
+---
+width: 250 px
+align: right
+name: gmaps_rightclick_coords
+---
+:::
+
+5. Paste the coordinates into the search bar on the bottom left of the QGIS window. Select navigate to coordinates. The location will be marked by a red dot
+
+6. Enable the editing mode ![](/fig/mActionToggleEditing.png) in in your new layer.
+7. Click on ![](/fig/mActionCapturePoint.png)
+8. Add the point feature at the location that was indicated.
+9. Add the name of the RCRC branch.
+10. Click `Ok`. 
+11. Click on ![](/fig/mActionSaveEdits.png) to save your edits.
+12. Click on ![](/fig/mActionToggleEditing.png) to exit the editing mode. 
+
+```
+-->
+</section>
+<section id="creating-line-and-polygon-layers">
+<h3>Creating line and polygon layers<a class="headerlink" href="#creating-line-and-polygon-layers" title="Permalink to this heading">#</a></h3>
+<p>The process of creating line or polygon layers is essentially the same as creating point data. The main difference is
+that instead of only adding one point, line and polygon geometries require several points (vertices). Each point you
+add is a vertext between two lines. In QGIS, you create lines and polygons by setting one point, and then another point
+connected to the previously added point. To finish adding the feature use the <kbd>Right mouse botton</kbd>.</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
-<p>If you create a new line layer, remember to change the geometry type into lines.</p>
+<p>Remember to change the geometry type into lines if you want to create a new line layer.</p>
 </div>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-0">
+&lt;strong&gt;Creating line data&lt;/strong&gt;</label><div class="sd-tab-content docutils">
+<p>Creating line data works in the same way as creating point data (see above). First, you must create a new line
+layer or use an existing one.</p>
 <ol class="arabic simple">
 <li><p>Select the line layer you want to add data to in the Layer panel</p></li>
 <li><p>Go to the digitisation toolbar and click on<img alt="" src="../../_images/mActionToggleEditing.png" />. Now, the layer is in the
@@ -928,9 +970,10 @@ edits.</p></li>
 <li><p>Click on <img alt="" src="../../_images/mActionToggleEditing.png" /> <code class="docutils literal notranslate"><span class="pre">Toggle</span> <span class="pre">Editing</span></code> again to end the editing mode.</p></li>
 </ol>
 <p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_line_feature.mp4"></video></p>
-</section>
-<section id="creating-polygon-data">
-<h4>Creating polygon data<a class="headerlink" href="#creating-polygon-data" title="Permalink to this heading">#</a></h4>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-1">
+&lt;strong&gt;Creating polygon data&lt;/strong&gt;</label><div class="sd-tab-content docutils">
 <p>The creation of polygon layers works in the same way as for point and line data.</p>
 <ol class="arabic simple">
 <li><p>Select the polygon layer you want to add data to in the Layer panel.</p></li>
@@ -942,7 +985,22 @@ edits.</p></li>
 <li><p>Click on <img alt="" src="../../_images/mActionToggleEditing.png" /> <code class="docutils literal notranslate"><span class="pre">Toggle</span> <span class="pre">Editing</span></code> again to end the editing mode.</p></li>
 </ol>
 <p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_digitize_add_feature.mp4"></video></p>
-</section>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-text-justify sd-rounded-3 sd-border-2 docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Real World Scenario 2/3</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">The first thing you do is locate the village using GPS-coordinates that you enter in the bottom right corner of
+the QGIS window.
+Thankfully, the process of digitising is relatively easy since there is a recent satellite image provided by
+Microsoft Bing. You can load the satellite image using the <strong>QuickMapServices</strong> and searching and adding the
+<code class="docutils literal notranslate"><span class="pre">Bing</span> <span class="pre">Aerial</span></code> Basemap.
+You can see the buildings and roads on the satellite image. The next step will be to create new layers: one for
+the roads and one for the buildings.</p>
+</div>
+</div>
 </section>
 </section>
 <section id="editing-the-data">
@@ -966,9 +1024,9 @@ attribute table.</p>
 <p>Note that this is only possible <strong>before</strong> you save the changes.</p>
 </div>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-0">
-Deleting features</label><div class="sd-tab-content docutils">
+<input checked="checked" id="sd-tab-item-2" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-2">
+&lt;strong&gt;Deleting features&lt;/strong&gt;</label><div class="sd-tab-content docutils">
 <ol class="arabic simple">
 <li><p>Select the layer you want to modify.</p></li>
 <li><p>Go to the digitisation toolbar and click on<img alt="" src="../../_images/mActionToggleEditing.png" /> <code class="docutils literal notranslate"><span class="pre">Toggle</span> <span class="pre">Editing</span></code>.</p></li>
@@ -983,9 +1041,9 @@ Deleting features</label><div class="sd-tab-content docutils">
 </div>
 <p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/delet_feature_geometry.mp4"></video></p>
 </div>
-<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-1">
-Moving features</label><div class="sd-tab-content docutils">
+<input id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-3">
+&lt;strong&gt;Moving features&lt;/strong&gt;</label><div class="sd-tab-content docutils">
 <p>There are multiple methods to move features. Here we show the method that works the same for point, line, and polygon features.
 To do this, you need the Advanced Digitisation Toolbox.</p>
 <ol class="arabic simple">
@@ -997,8 +1055,8 @@ To do this, you need the Advanced Digitisation Toolbox.</p>
 </ol>
 <p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/move_feature_geometry.mp4"></video></p>
 </div>
-<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-2">
+<input id="sd-tab-item-4" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-4">
 &lt;strong&gt;Modifying geometries&lt;/strong&gt;</label><div class="sd-tab-content docutils">
 <ol class="arabic simple">
 <li><p>Select the line layer you want to add data to in the Layer panel.</p></li>
@@ -1011,9 +1069,9 @@ then click on the location where you want to move the vertex to.</p></li>
 </ol>
 <p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_digitize_move_vertices.mp4"></video></p>
 </div>
-<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-3">
-&lt;strong&gt;Adding a ring to a polygon feature&lt;/strong&gt;</label><div class="sd-tab-content docutils">
+<input id="sd-tab-item-5" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-5">
+&lt;strong&gt;Adding rings to polygon features&lt;/strong&gt;</label><div class="sd-tab-content docutils">
 <p>A ring in QGIS is a part inside a polygon that is not part of the polygon. Image a polygon representing a lake.
 The ring is an island in the lake. For a better understanding, watch the video below.</p>
 <ol class="arabic simple">
@@ -1030,11 +1088,42 @@ The ring is an island in the lake. For a better understanding, watch the video b
 </section>
 <section id="editing-the-attribute-values">
 <h3>Editing the attribute values<a class="headerlink" href="#editing-the-attribute-values" title="Permalink to this heading">#</a></h3>
-<p>Sometimes, you will have to edit the values in the columns of the attribute table.</p>
+<p>Sometimes, you will have to edit the values in the columns of the attribute table. For example, the name of an administrative district is written incorrectly or differently, or a value has not been entered correctly. To do this, you will have to:</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can open the attribute table of the selected layer by pressing <kbd>F6</kbd>.</p>
+</div>
+</aside>
+<ol class="arabic simple">
+<li><p>Open the <a class="reference internal" href="../Modul_2/en_qgis_attribute_table.html"><span class="doc std std-doc">attribute table</span></a></p></li>
+<li><p>Click on <img alt="" src="../../_images/mActionToggleEditing.png" /> to enter into the editing mode.</p></li>
+<li><p>Choose the field that you want to edit.</p></li>
+<li><p>Enter the corrected value.</p></li>
+<li><p>Click on <img alt="" src="../../_images/mActionSaveEdits.png" /> to save your edits.</p></li>
+<li><p>Click on <img alt="" src="../../_images/mActionToggleEditing.png" /> again to exit the editing mode.</p></li>
+</ol>
+<p>This process is called <strong>“Data cleaning”</strong> and is important when performing data analysis or manipulating data
+in any way. While collecting or digitising data, it is easy to make small mistakes, such as a wrong value, wrong
+value type, or a spelling mistake. When performing analyses, it is therefore important to investigate the
+attribute table for inconsistencies or errors. If these errors are not cleaned, the results will be incorrect
+and you might take the wrong conclusions!</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-text-justify sd-bg-success sd-text-black sd-rounded-3 sd-border-2 docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Real world Scenario 3/3</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">With the new layers, you are ready to trace the buildings and roads in the new layers.
+You already have some knowledge about the condition of the roads (e.g., the road surface, quality, and if it is
+flooded) and the condition of the houses (e.g., if it is affected by a flood, if it has multiple stories, …).
+This is useful information that can be stored in the additional attributes in the data table.</p>
+</div>
+</div>
 </section>
 </section>
-<section id="digitisation-errors-in-qgis">
-<h2>Digitisation Errors in QGIS<a class="headerlink" href="#digitisation-errors-in-qgis" title="Permalink to this heading">#</a></h2>
+<section id="spatial-digitisation-errors-in-qgis">
+<h2>Spatial Digitisation Errors in QGIS<a class="headerlink" href="#spatial-digitisation-errors-in-qgis" title="Permalink to this heading">#</a></h2>
 <p>The accuracy of geodata is crucial for spatial analysis. Positional errors are inevitable when data are manually
 digitised. The most common examples include undershooting and overshooting.  When your coordinates do not
 connect as they should, and overshooting, when the lines go past where they should. Often these errors are not
@@ -1044,7 +1133,7 @@ nodes, lines and/or vertices.</p>
 <figure class="align-center" id="digitizing-errors-in-qgis">
 <a class="reference internal image-reference" href="../../_images/Digitization_Errors.PNG"><img alt="../../_images/Digitization_Errors.PNG" src="../../_images/Digitization_Errors.PNG" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 53 </span><span class="caption-text">Digitising Errors in QGIS. Source: SpatialPost.</span><a class="headerlink" href="#digitizing-errors-in-qgis" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 54 </span><span class="caption-text">Digitising Errors in QGIS. Source: SpatialPost.</span><a class="headerlink" href="#digitizing-errors-in-qgis" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -1119,11 +1208,8 @@ nodes, lines and/or vertices.</p>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-new-datasets">Creating new datasets</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-new-data-entries">Creating new data entries</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-point-data">Creating point data</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-line-data">Creating line data</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-polygon-data">Creating polygon data</a></li>
-</ul>
-</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-point-data">Creating point data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-line-and-polygon-layers">Creating line and polygon layers</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#editing-the-data">Editing the Data</a><ul class="nav section-nav flex-column">
@@ -1131,7 +1217,7 @@ nodes, lines and/or vertices.</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#editing-the-attribute-values">Editing the attribute values</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#digitisation-errors-in-qgis">Digitisation Errors in QGIS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spatial-digitisation-errors-in-qgis">Spatial Digitisation Errors in QGIS</a></li>
 </ul>
   </nav></div>
 
