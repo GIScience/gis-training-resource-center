@@ -338,7 +338,7 @@ The creation of polygon layers works in the same way as for point and line data.
 ::::
 
 :::{card} 
-:class-card: sd-text-justify sd-text-black sd-rounded-3 sd-border-2
+:class-card: sd-text-justify sd-rounded-3 sd-border-2
 __Real World Scenario 2/3__
 ^^^
 The first thing you do is locate the village using GPS-coordinates that you enter in the bottom right corner of 
