@@ -50,6 +50,13 @@ In this exercise, you will learn how to digitise points, lines, and polygons of 
 
 ## Instructions for the trainers
 
+:::{admonition} A note on plugins
+class: attention
+This exercise makes use of a plugin which is not installed by default: `OSM Place Search`
+Make sure you take a little bit of time to explain the role of plugins in QGIS and how to install them in QGIS.
+Furthermore, instead of using XYZ-tiles for the basemap, you can decide to use the plugin __"QuickMapServices"__. 
+:::
+
 :::{dropdown} __Trainers Corner__ 
 
 ### Prepare the training
@@ -57,7 +64,7 @@ In this exercise, you will learn how to digitise points, lines, and polygons of 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.mdhow-to-do-trainings) for some general tips on training conduction
+- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.mdhow-to-do-trainings) for some general tips on how to conduct a training.
 
 ### Conduct the training
 
@@ -92,7 +99,9 @@ In 2022 there was a cash shortage in Nigeria. Small businesses heavily rely on c
 
 Our goal is to create a point layers at the three Banks close to each other in the Central Business District (CBD) of Abuja in Nigeria. This is to let people easily identify the banks in the CBD of Abuja for their transaction purposes. 
 
-To this end, we will visualize the digitization of the First Bank, Bank of Industrie Building, and Zenith Bank Abuja. 
+To this end, we will visualize the digitization of the First Bank, Bank of Industry Building, and Zenith Bank Abuja. 
+
+### Add a basemap
 
 1.  Add the OSM as a base map. To add the OSM as a base map click on `Layer` -> `Add Layer` -> `Add XYZ Layer…`. Choose `OpenStreetMap` and click `Add`. 
 Arrange your layer in the `Layer Panel` so the OSM is at the bottom ([Wiki Video](/content/Wiki/en_qgis_basemaps_wiki.md))
@@ -100,22 +109,30 @@ Arrange your layer in the `Layer Panel` so the OSM is at the bottom ([Wiki Video
 ```{Tip}
 You cannot interact with a base map!
 ```
-2. To add the plugin `OSM Place Search`, click on `Plugins` -> `Manage and Install Plugins…` -> `All` and search for `OSM Place Search`. Once you have found it, click on it and click `Install Plugin`. You can open the `OSM Place Search Panel` like every other panel by clicking on `View` -> `Panels` and checking `OSM Place Search Panel`([Wiki Video](/content/Wiki/en_qgis_plugins_wiki.md#installation-of-plugins)).
-3. In the panel, search "Abuja Central Business District" via the OSM Place Search in QGIS and choose Abuja Municipality Area Council, City. Zoom to the Central Business District. Here we want to digitise the location of banks. But first we need to create a new point layer.  
-To do that:
-    1. Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#create-a-new-layer)) 
-    - Under `Database` click on ![](/fig/Three_points.png) and navigate to `temp` folder. Give the new dataset the name “Abuja_bank_point”. Click `Save`.
-    - `Geometry type`: Select `Point`
-    - Under `Additional dimension` you should always make sure that you check `None`. 
+
+
+2. To add the plugin `OSM Place Search`, click on `Plugins` -> `Manage and Install Plugins…` -> `All` and search for `OSM Place Search`. Once you have found it, click on it and click `Install Plugin`. You can open the `OSM Place Search Panel` like every other panel by clicking on `View` -> `Panels` and checking `OSM Place Search Panel`([Wiki Video](/content/Wiki/en_qgis_plugins_wiki.md)).
+3. In the `OSM place search` panel, search "Abuja Central Business District" and choose Abuja Municipality Area Council, City. Zoom to the Central Business District. We want to digitise the location of banks in this region. 
+For this, we will need to create a new point layer: 
+    1. Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md)) 
+    - Under `Database` click on ![](/fig/Three_points.png) and navigate to `temp` folder in your project folder. Give the new dataset the name “Abuja_bank_point”. Click `Save`.
+    - Under `Geometry type`: Select `Point` 
     - Select the coordinate reference system (CRS) "EPSG:4326-WGS 84". By default, the QGIS selects the project CRS. 
     - Under `New Field` you can add columns to the new layer. Add the column “Name”.
         * `Name` = “Name”
-        * `Type`: Select `Text Data`
+        * `Type`: Select `Text (string)`
         * Click on `Add to Fields List` ![](/fig/mActionNewAttribute.png) to add the new column to the `Fields List`.
         * Click `OK`.
     * Your new layer will appear in the `Layer Panel`
-```{figure} /fig/new_layer_abuja.png
 
+```{admonition} Adding more information
+class: tip
+
+You can digitise even more information by adding more columns. For example, you can add a column for `amenity` to indicate the type of amenity (bank). Try thinking about what kind of data you can add. 
+
+```
+
+```{figure} /fig/new_layer_abuja.png
 ---
 height: 400px
 name: New point layer Abuja
@@ -125,7 +142,7 @@ Create new point layer.
 ```
 
 4. Now you can create a point for each of the three banks in the area [wiki](/content/Wiki/en_qgis_digitalization_wiki.md#add-geometries-to-a-layer). Currently the new “Abuja_bank_point” is empty. To add features we can use the `Digitizing Toolbar`. If you cannot see the toolbar `View` -> `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#creation-of-point-data)).  ![](/fig/Digitizing_Toolbar.png) 
-    1. Select the point layer “Abuja_bank_point” in the Layer panel. Go to the digitalization toolbar and click on![](/fig/mActionToggleEditing.png). Now the layer is in the editing mode .
+    1. Select the point layer “Abuja_bank_point” in the Layer panel. Navigate to the digitalization toolbar and click on![](/fig/mActionToggleEditing.png). Now, the layer is in the editing mode.
     2. Search for banks on the map or use the OSMPlace search panel. Once you have found one, click on ![](/fig/mActionCapturePoint.png). Left-click on the feature you want to digitalize.
     3. Once you click, a window will appear "Abuja_bank_point". Here you can add the name of the bank.
     4. Repeat the same process for as many banks as you can find.
@@ -152,19 +169,20 @@ There is some reliable information that there is a roadblock due to construction
         1. Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#create-a-new-layer)) 
     1. Under `Database` click on ![](/fig/Three_points.png) and navigate to `temp` folder. Give the new dataset the name “Abuja_roadbloc_polygon”. Click `Save`.
     2. `Geometry type`: Select `Polygon`
-    3. Under `Additional dimension` you should always make sure that you check `None`. 
-    4. Select the coordinate reference system (CRS) "EPSG:4326-WGS 84". By default, the QGIS selects the project CRS. 
+    4. Select the coordinate reference system (CRS) "EPSG:4326-WGS 84".
     5. Under `New Field` you can add columns to the new layer. Add the column “Roadblock_type”.
         * `Name` = “Roadblock_type”
-        * `Type`: Select `Text Data`
+        * `Type`: Select `Text (string)`
         * Click on `Add to Fields List` ![](/fig/mActionNewAttribute.png) to add the new column to the `Fields List`.
         * Click `OK`.
+
     6. Your new layer will appear in the `Layer Panel`
 2. To digitise this area, click on your new „Abuja_roadbloc_polygon“ layer ([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#creation-of-polygon-data)). 
     - Clicking on ![](/fig/mActionToggleEditing.png) start `edit mode` and Add Feature: `Capture Polygone`![](/fig/mActionCapturePolygon.png)|. 
     - Draw geometries and enter `feature attributes`, "Roadblock_type" = "Construction_site".
     - Save edits ![](/fig/mActionSaveEdits.png) , exit `edit mode`. 
 
+    
 ## Map the connection routes
 A business man drove all the way from the North of Herbert Macauley Way in the Central Business District of Abuja to do transaction at the Bank of Industry on Monday morning. Unfortunately, he found that the network server of the bank is down and needed to proceed to the Zenith Bank as the only functioning Bank. He later discovered that there is a road blocked at the junction of independence avenue and Tafawa Balewa way due to road construction. 
 
@@ -173,14 +191,18 @@ Create a road line layer that will allow him to get to Zenith Bank easily.
 1. To do that we need again a new layer. In this case a line layer. The creation of that is nearly the same as for the point.
         1. Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#create-a-new-layer)) 
     - Under `Database` click on ![](/fig/Three_points.png) and navigate to `temp` folder. Give the new dataset the name “Abuja_bank_road_connection_line”. Click `Save`.
-    - `Geometry type`: Select `Line`
-    - Under `Additional dimension` you should always make sure that you check `None`. 
-    - Select the coordinate reference system (CRS) "EPSG:4326-WGS 84". By default, the QGIS selects the project CRS. 
-    - Under `New Field` you can add columns to the new layer. Add the column “Road_typ”.
-        * `Name` = “Road_typ”
-        * `Type`: Select `Text Data`
+    - `Geometry type`: Select `Line`.
+    - Select the coordinate reference system (CRS) "EPSG:4326-WGS 84".
+    - Under `New Field` you can add columns to the new layer. Add the column “Road_type”.
+        * `Name` = “Road_type”
         * Click on `Add to Fields List` ![](/fig/mActionNewAttribute.png) to add the new column to the `Fields List`.
         * Click `OK`.
+            ```{admonition} Adding more information
+            class: tip
+
+            Again, by adding more fields, you can add more information. For example, you can add the type of road (e.g., paved, unpaved, highway, residential) or the speed limit, or the number of lanes. Try thinking about what information you could add, and which `Type` would you use? Keep in mind that you cannot perform calculations with string data.
+
+            ```
     * Your new layer will appear in the `Layer Panel`
 2. Select the line layer “Abuja_bank_road_connection_line” to add data to in the Layer panel [Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#creation-of-line-data). 
     1. Go to the digitalization toolbar and click on![](/fig/mActionToggleEditing.png). Now the layer is in the editing mode.
