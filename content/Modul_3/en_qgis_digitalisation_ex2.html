@@ -544,7 +544,10 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristics-of-the-exercise">Characteristics of the exercise</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions-for-the-trainers">Instructions for the trainers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background-cash-crunch-in-abuja">Background: Cash crunch in Abuja</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-map-the-banks">Task: Map the banks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-map-the-banks">Task: Map the banks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-a-basemap">Add a basemap</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map-road-blocs">Map road blocs</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map-the-connection-routes">Map the connection routes</a></li>
 </ul>
@@ -620,6 +623,13 @@ document.write(`
 </section>
 <section id="instructions-for-the-trainers">
 <h2>Instructions for the trainers<a class="headerlink" href="#instructions-for-the-trainers" title="Permalink to this heading">#</a></h2>
+<div class="admonition-a-note-on-plugins admonition">
+<p class="admonition-title">A note on plugins</p>
+<p>class: attention
+This exercise makes use of a plugin which is not installed by default: <code class="docutils literal notranslate"><span class="pre">OSM</span> <span class="pre">Place</span> <span class="pre">Search</span></code>
+Make sure you take a little bit of time to explain the role of plugins in QGIS and how to install them in QGIS.
+Furthermore, instead of using XYZ-tiles for the basemap, you can decide to use the plugin <strong>“QuickMapServices”</strong>.</p>
+</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <strong>Trainers Corner</strong> <div class="sd-summary-down docutils">
@@ -632,7 +642,7 @@ document.write(`
 <li><p class="sd-card-text">Take the time to familiarise yourself with the exercise and the provided material.</p></li>
 <li><p class="sd-card-text">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</p></li>
 <li><p class="sd-card-text">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <strong>and unzipped</strong> the data folder.</p></li>
-<li><p class="sd-card-text">Check out <span class="xref myst">How to do trainings?</span> for some general tips on training conduction</p></li>
+<li><p class="sd-card-text">Check out <span class="xref myst">How to do trainings?</span> for some general tips on how to conduct a training.</p></li>
 </ul>
 <p class="rubric">Conduct the training</p>
 <p class="sd-card-text"><strong>Introduction:</strong></p>
@@ -664,7 +674,9 @@ document.write(`
 <section id="task-map-the-banks">
 <h2>Task: Map the banks<a class="headerlink" href="#task-map-the-banks" title="Permalink to this heading">#</a></h2>
 <p>Our goal is to create a point layers at the three Banks close to each other in the Central Business District (CBD) of Abuja in Nigeria. This is to let people easily identify the banks in the CBD of Abuja for their transaction purposes.</p>
-<p>To this end, we will visualize the digitization of the First Bank, Bank of Industrie Building, and Zenith Bank Abuja.</p>
+<p>To this end, we will visualize the digitization of the First Bank, Bank of Industry Building, and Zenith Bank Abuja.</p>
+<section id="add-a-basemap">
+<h3>Add a basemap<a class="headerlink" href="#add-a-basemap" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Add the OSM as a base map. To add the OSM as a base map click on <code class="docutils literal notranslate"><span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">XYZ</span> <span class="pre">Layer…</span></code>. Choose <code class="docutils literal notranslate"><span class="pre">OpenStreetMap</span></code> and click <code class="docutils literal notranslate"><span class="pre">Add</span></code>.
 Arrange your layer in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code> so the OSM is at the bottom (<a class="reference internal" href="../Wiki/en_qgis_basemaps_wiki.html"><span class="doc std std-doc">Wiki Video</span></a>)</p></li>
@@ -674,21 +686,20 @@ Arrange your layer in the <code class="docutils literal notranslate"><span class
 <p>You cannot interact with a base map!</p>
 </div>
 <ol class="arabic" start="2">
-<li><p>To add the plugin <code class="docutils literal notranslate"><span class="pre">OSM</span> <span class="pre">Place</span> <span class="pre">Search</span></code>, click on <code class="docutils literal notranslate"><span class="pre">Plugins</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Manage</span> <span class="pre">and</span> <span class="pre">Install</span> <span class="pre">Plugins…</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">All</span></code> and search for <code class="docutils literal notranslate"><span class="pre">OSM</span> <span class="pre">Place</span> <span class="pre">Search</span></code>. Once you have found it, click on it and click <code class="docutils literal notranslate"><span class="pre">Install</span> <span class="pre">Plugin</span></code>. You can open the <code class="docutils literal notranslate"><span class="pre">OSM</span> <span class="pre">Place</span> <span class="pre">Search</span> <span class="pre">Panel</span></code> like every other panel by clicking on <code class="docutils literal notranslate"><span class="pre">View</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Panels</span></code> and checking <code class="docutils literal notranslate"><span class="pre">OSM</span> <span class="pre">Place</span> <span class="pre">Search</span> <span class="pre">Panel</span></code>(<span class="xref myst">Wiki Video</span>).</p></li>
-<li><p>In the panel, search “Abuja Central Business District” via the OSM Place Search in QGIS and choose Abuja Municipality Area Council, City. Zoom to the Central Business District. Here we want to digitise the location of banks. But first we need to create a new point layer.<br />
-To do that:</p>
+<li><p>To add the plugin <code class="docutils literal notranslate"><span class="pre">OSM</span> <span class="pre">Place</span> <span class="pre">Search</span></code>, click on <code class="docutils literal notranslate"><span class="pre">Plugins</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Manage</span> <span class="pre">and</span> <span class="pre">Install</span> <span class="pre">Plugins…</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">All</span></code> and search for <code class="docutils literal notranslate"><span class="pre">OSM</span> <span class="pre">Place</span> <span class="pre">Search</span></code>. Once you have found it, click on it and click <code class="docutils literal notranslate"><span class="pre">Install</span> <span class="pre">Plugin</span></code>. You can open the <code class="docutils literal notranslate"><span class="pre">OSM</span> <span class="pre">Place</span> <span class="pre">Search</span> <span class="pre">Panel</span></code> like every other panel by clicking on <code class="docutils literal notranslate"><span class="pre">View</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Panels</span></code> and checking <code class="docutils literal notranslate"><span class="pre">OSM</span> <span class="pre">Place</span> <span class="pre">Search</span> <span class="pre">Panel</span></code>(<a class="reference internal" href="../Wiki/en_qgis_plugins_wiki.html"><span class="doc std std-doc">Wiki Video</span></a>).</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">OSM</span> <span class="pre">place</span> <span class="pre">search</span></code> panel, search “Abuja Central Business District” and choose Abuja Municipality Area Council, City. Zoom to the Central Business District. We want to digitise the location of banks in this region.
+For this, we will need to create a new point layer:</p>
 <ol class="arabic simple">
-<li><p>Click on  <code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">GeoPackage</span> <span class="pre">Layer</span></code>(<span class="xref myst">Wiki Video</span>)</p></li>
+<li><p>Click on  <code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">GeoPackage</span> <span class="pre">Layer</span></code>(<a class="reference internal" href="../Wiki/en_qgis_digitalization_wiki.html"><span class="doc std std-doc">Wiki Video</span></a>)</p></li>
 </ol>
 <ul class="simple">
-<li><p>Under <code class="docutils literal notranslate"><span class="pre">Database</span></code> click on <img alt="" src="../../_images/Three_points.png" /> and navigate to <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder. Give the new dataset the name “Abuja_bank_point”. Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">type</span></code>: Select <code class="docutils literal notranslate"><span class="pre">Point</span></code></p></li>
-<li><p>Under <code class="docutils literal notranslate"><span class="pre">Additional</span> <span class="pre">dimension</span></code> you should always make sure that you check <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p></li>
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">Database</span></code> click on <img alt="" src="../../_images/Three_points.png" /> and navigate to <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder in your project folder. Give the new dataset the name “Abuja_bank_point”. Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">type</span></code>: Select <code class="docutils literal notranslate"><span class="pre">Point</span></code></p></li>
 <li><p>Select the coordinate reference system (CRS) “EPSG:4326-WGS 84”. By default, the QGIS selects the project CRS.</p></li>
 <li><p>Under <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Field</span></code> you can add columns to the new layer. Add the column “Name”.</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">Name</span></code> = “Name”</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Type</span></code>: Select <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">Data</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Type</span></code>: Select <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">(string)</span></code></p></li>
 <li><p>Click on <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">to</span> <span class="pre">Fields</span> <span class="pre">List</span></code> <img alt="" src="../../_images/mActionNewAttribute.png" /> to add the new column to the <code class="docutils literal notranslate"><span class="pre">Fields</span> <span class="pre">List</span></code>.</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
 </ul>
@@ -699,16 +710,21 @@ To do that:</p>
 </ul>
 </li>
 </ol>
-<figure class="align-default" id="id1">
-<img alt="../../_images/new_layer_abuja.png" src="../../_images/new_layer_abuja.png" />
+<div class="admonition-adding-more-information admonition">
+<p class="admonition-title">Adding more information</p>
+<p>class: tip</p>
+<p>You can digitise even more information by adding more columns. For example, you can add a column for <code class="docutils literal notranslate"><span class="pre">amenity</span></code> to indicate the type of amenity (bank). Try thinking about what kind of data you can add.</p>
+</div>
+<figure class="align-center" id="new-point-layer-abuja">
+<a class="reference internal image-reference" href="../../_images/new_layer_abuja.png"><img alt="../../_images/new_layer_abuja.png" src="../../_images/new_layer_abuja.png" style="height: 400px;" /></a>
 <figcaption>
-<p><span class="caption-text">Create new point layer.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Create new point layer.</span><a class="headerlink" href="#new-point-layer-abuja" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="4">
 <li><p>Now you can create a point for each of the three banks in the area <span class="xref myst">wiki</span>. Currently the new “Abuja_bank_point” is empty. To add features we can use the <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code>. If you cannot see the toolbar <code class="docutils literal notranslate"><span class="pre">View</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Toolbars</span></code> and check <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code> (<span class="xref myst">Wiki Video</span>).  <img alt="" src="../../_images/Digitizing_Toolbar.png" /></p>
 <ol class="arabic simple">
-<li><p>Select the point layer “Abuja_bank_point” in the Layer panel. Go to the digitalization toolbar and click on<img alt="" src="../../_images/mActionToggleEditing.png" />. Now the layer is in the editing mode .</p></li>
+<li><p>Select the point layer “Abuja_bank_point” in the Layer panel. Navigate to the digitalization toolbar and click on<img alt="" src="../../_images/mActionToggleEditing.png" />. Now, the layer is in the editing mode.</p></li>
 <li><p>Search for banks on the map or use the OSMPlace search panel. Once you have found one, click on <img alt="" src="../../_images/mActionCapturePoint.png" />. Left-click on the feature you want to digitalize.</p></li>
 <li><p>Once you click, a window will appear “Abuja_bank_point”. Here you can add the name of the bank.</p></li>
 <li><p>Repeat the same process for as many banks as you can find.</p></li>
@@ -718,12 +734,13 @@ To do that:</p>
 </li>
 </ol>
 <p>This is what your result should look like. <img alt="" src="../../_images/Abuja_Banks_Point_Layers.png" /></p>
-<figure class="align-default" id="id2">
+<figure class="align-default" id="id1">
 <img alt="../../_images/Abuja_Banks_Point_Layers.png" src="../../_images/Abuja_Banks_Point_Layers.png" />
 <figcaption>
-<p><span class="caption-text">Result Digitalization exercise.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Result Digitalization exercise.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+</section>
 </section>
 <section id="map-road-blocs">
 <h2>Map road blocs<a class="headerlink" href="#map-road-blocs" title="Permalink to this heading">#</a></h2>
@@ -734,12 +751,11 @@ To do that:</p>
 <ol class="arabic simple">
 <li><p>Under <code class="docutils literal notranslate"><span class="pre">Database</span></code> click on <img alt="" src="../../_images/Three_points.png" /> and navigate to <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder. Give the new dataset the name “Abuja_roadbloc_polygon”. Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">type</span></code>: Select <code class="docutils literal notranslate"><span class="pre">Polygon</span></code></p></li>
-<li><p>Under <code class="docutils literal notranslate"><span class="pre">Additional</span> <span class="pre">dimension</span></code> you should always make sure that you check <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p></li>
-<li><p>Select the coordinate reference system (CRS) “EPSG:4326-WGS 84”. By default, the QGIS selects the project CRS.</p></li>
+<li><p>Select the coordinate reference system (CRS) “EPSG:4326-WGS 84”.</p></li>
 <li><p>Under <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Field</span></code> you can add columns to the new layer. Add the column “Roadblock_type”.</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Name</span></code> = “Roadblock_type”</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Type</span></code>: Select <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">Data</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Type</span></code>: Select <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">(string)</span></code></p></li>
 <li><p>Click on <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">to</span> <span class="pre">Fields</span> <span class="pre">List</span></code> <img alt="" src="../../_images/mActionNewAttribute.png" /> to add the new column to the <code class="docutils literal notranslate"><span class="pre">Fields</span> <span class="pre">List</span></code>.</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
 </ul>
@@ -763,17 +779,21 @@ To do that:</p>
 <ol class="arabic">
 <li><p>To do that we need again a new layer. In this case a line layer. The creation of that is nearly the same as for the point.
 1. Click on  <code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">GeoPackage</span> <span class="pre">Layer</span></code>(<span class="xref myst">Wiki Video</span>)</p>
-<ul class="simple">
-<li><p>Under <code class="docutils literal notranslate"><span class="pre">Database</span></code> click on <img alt="" src="../../_images/Three_points.png" /> and navigate to <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder. Give the new dataset the name “Abuja_bank_road_connection_line”. Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">type</span></code>: Select <code class="docutils literal notranslate"><span class="pre">Line</span></code></p></li>
-<li><p>Under <code class="docutils literal notranslate"><span class="pre">Additional</span> <span class="pre">dimension</span></code> you should always make sure that you check <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p></li>
-<li><p>Select the coordinate reference system (CRS) “EPSG:4326-WGS 84”. By default, the QGIS selects the project CRS.</p></li>
-<li><p>Under <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Field</span></code> you can add columns to the new layer. Add the column “Road_typ”.</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">Name</span></code> = “Road_typ”</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Type</span></code>: Select <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">Data</span></code></p></li>
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">Database</span></code> click on <img alt="" src="../../_images/Three_points.png" /> and navigate to <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder. Give the new dataset the name “Abuja_bank_road_connection_line”. Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">type</span></code>: Select <code class="docutils literal notranslate"><span class="pre">Line</span></code>.</p></li>
+<li><p>Select the coordinate reference system (CRS) “EPSG:4326-WGS 84”.</p></li>
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Field</span></code> you can add columns to the new layer. Add the column “Road_type”.</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Name</span></code> = “Road_type”</p></li>
 <li><p>Click on <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">to</span> <span class="pre">Fields</span> <span class="pre">List</span></code> <img alt="" src="../../_images/mActionNewAttribute.png" /> to add the new column to the <code class="docutils literal notranslate"><span class="pre">Fields</span> <span class="pre">List</span></code>.</p></li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p>
+<div class="admonition-adding-more-information admonition">
+<p class="admonition-title">Adding more information</p>
+<p>class: tip</p>
+<p>Again, by adding more fields, you can add more information. For example, you can add the type of road (e.g., paved, unpaved, highway, residential) or the speed limit, or the number of lanes. Try thinking about what information you could add, and which <code class="docutils literal notranslate"><span class="pre">Type</span></code> would you use? Keep in mind that you cannot perform calculations with string data.</p>
+</div>
+</li>
 </ul>
 </li>
 </ul>
@@ -849,7 +869,10 @@ To do that:</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristics-of-the-exercise">Characteristics of the exercise</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions-for-the-trainers">Instructions for the trainers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background-cash-crunch-in-abuja">Background: Cash crunch in Abuja</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-map-the-banks">Task: Map the banks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-map-the-banks">Task: Map the banks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-a-basemap">Add a basemap</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map-road-blocs">Map road blocs</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map-the-connection-routes">Map the connection routes</a></li>
 </ul>

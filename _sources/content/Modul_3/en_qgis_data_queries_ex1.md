@@ -2,7 +2,6 @@
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-🚧 This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
 ## Aim of the exercise
 
@@ -15,8 +14,8 @@ __🔙[Back to Homepage](/content/intro.md)__
 * [Layer Concept](/content/Wiki/en_qgis_layer_concept_wiki.md)
 * [Non-Spatial Queries](/content/Wiki/en_qgis_non_spatial_queries_wiki.md)
 * [Spatial Queries](/content/Wiki/en_qgis_spatial_queries_wiki.md)
-* [Table function - Add field](/content/Wiki/en_qgis_table_functions_wiki.md#add-field)
-* [Geoprocessing - Clip](/content/Wiki/en_qgis_geoprocessing_wiki.md#clip) 
+* [Table function - Add field](/content/Wiki/en_qgis_table_functions_wiki.md)
+* [Geoprocessing - Clip](/content/Wiki/en_qgis_geoprocessing_wiki.md) 
 
 
 ## Data
@@ -55,54 +54,60 @@ The naming of the districts and states is not consistent across the different da
     6. Now click `Run`
     7. Adjust your layers in a way that you only see the flooded areas and your new layer **Beledweyne_buildings_affected**. Remove the `som_admbnda_adm2_ocha_20230308.shp` and `Buildings_Belete_Weyne.geojson` layer.
 
-```{Attention}
-The tool [`Select by Location`](/content/Wiki/en_qgis_spatial_queries_wiki.md#select-by-location) is very similar. This tool functions in the same way, but instead of directly extracting the features, it selects them.
-```
+    ```{Attention}
+    The tool [`Select by Location`](/content/Wiki/en_qgis_spatial_queries_wiki.md#select-by-location) is very similar. This tool functions in the same way, but instead of directly extracting the features, it selects them.
+    ```
 
 ```{figure} /fig/Extract_by_location_Belet_Weyne.png
 ---
-width: 400px
-name: 
+width: 500 px
+name: extract_by_location
 align: center
 ---
+The extract by extraction window in QGIS 3.36
 ```
 
 6. In the next step, we want to identify special buildings among the affected buildings. Open the attribute table and check what kind of buildings can be found in the layer. This information can be found in the column "building". You can sort this column.
-To extract "hospitals", "schools", and "mosques", we can use the tool `Extract by Expression` or `Extract by Attribute`.
-
-
-::::{grid} 2
-:::{card} `Extract by Attribute`
-1. Find the tool `Extract by Expression` in the `Toolbox`.
-2. `Expression`: click on ![](mIconExpression.png). 
-3. The window "Expression" will open. Here we can build a very specific query. In the central panel open `Field and Values`. Here you can see all the columns oft he the layer. Click on `building`. On the right-hand side, you should now see the option `All unique`. Click on it. Here you can see now all unique values in the column „building“.
-4. 
-
-
-
-
-
-```md
-"building" = 'hospital' or 
-"building" = 'school' or
-"building" = 'mosque' 
+To extract "hospitals", "schools", and "mosques", we can use the tool `Extract by Expression`.
+    1.  Find the tool `Extract by Expression` in the `Toolbox`.
+    2. `Expression`: click on ![](/fig/miconexpression.png). 
+    3. The window "Expression" will open. Here we can build a very specific query. In the central panel open `Field and values`. Here you can see all the columns oft he the layer. Click on `building`. On the right-hand side, you should now see the option `All unique`. Click on it. Here you can see now all unique values in the column „building“.
+    4. In the `Expression` field, enter the following expression (see {numref}`extract_by_expression1`):
+        ```
+        "building" = 'hospital' or
+        "building" = 'school' or
+        "building" = 'mosque' 
+        ```
+    5. Click `Ok`. The window will close and you will see the expression you created in the `Expression`-field in the `Extract by Expression` window (see {numref}`extract_by_expression2`). 
+    6. Click `Run`. A new temporary layer called `Matching Features` will be added to your QGIS-project. Close the `Extract by Expression` window.
+   
+```{figure} /fig/en_extract_by_expression_som.png
+---
+name: extract_by_expression1
+width: 400 px
+---
+The expression window in QGIS 3.36 with an expression to extract the polygons with the "buildings" value 'hospital', 'school', and 'mosque'. 
 ```
 
 
-en_extract_by_expression_som.png
+```{figure} /fig/en_extract_by_expression_som2.png
+---
+name: extract_by_expression2
+width: 400 px
+---
+The `Extract by Expression` window in QGIS 3.36
+```
 
-en_extract_by_expression_som2.png
 
-Belet_Weyne_POI_affected.gpkg
 
+:::{attention}
+A temporary layer will not be saved to your QGIS-project, even after saving the project. Temporary layers are marked by a ![](/fig/icon_scratch_layer.png). In order to save the layer permanently, <kbd>Right Click</kbd> on the layer you wish to make permanent. Then, select the save location for the new layer. Make sure you to save it in the correct folder (see [standard folder structure](/content/Wiki/en_qgis_projects_folder_structure_wiki.md)). 
 :::
 
-:::{card} `Extract by Expression`
-In the learning modules, all relevant concepts and techniques of QGIS are explained, enabling trainees to reinforce their understanding of the training content.
-:::
+    
+7. Explore the new layer by opening the attribute table, activating and deactivating the layer in the Layers panel. 
+8. <kbd>Right Click</kbd> on the `Matching Features` layer and save it to your project folder under  `/data/output/` with the name `Belet_Weyne_POI_affected.gpkg`. 
 
+Congratulations! The extracted information can now be used to perform further analyses or create comprehensive maps of the affected points of interest. 
 
-::::
-
-6. Find the tool `Extract by Expression` in the `Toolbox.
-    1. 
+<!--ADD picture of this step-->
