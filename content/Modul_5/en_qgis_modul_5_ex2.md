@@ -189,7 +189,7 @@ The Video below shows the process for setting up the folder for December 2023.
 ### Step 2: Download of the forecast data
 
 
-__Purpose:__ 
+__Purpose:__ In this step, we will download the forecast data on which our triggers will be based.
 
 __Tool:__ Internet Browser
 
@@ -252,7 +252,7 @@ align: center
 
 
 
-__Purpose:__ In this step, all the data needed will be loaded into QGIS.
+__Purpose:__ In this step, all the data needed will be loaded into a QGIS-project so we can analyse the data. 
 
 __Tool:__ No specific tools are needed, only QGIS.
 
@@ -518,10 +518,12 @@ __Trigger Activation__
 4. Click `Open`. Then click on `Load Style`
 5. Back in the “Layer Properties” Window click `Apply` and `OK`
 
-```{dropdown} Info: Trigger Activation Layer
+::::{dropdown} Info: Trigger Activation Layer
+:open:
 You will now see districts where no trigger is activated in green and districts with trigger activation in pink.
 
 The “Style_Trigger_Activation.qml” style layer is configured to show the district names only where the trigger is actually activated. If there is no trigger activation you can activate the admin 1 boundary layer for better map orientation (see __Administrative 2 Boundaries__ below)
+::::
 
 ```{figure} /fig/Map_yes_trigger.PNG
 ---
@@ -530,6 +532,7 @@ name:
 align: center
 ---
 ```
+
 
 __Administrative 2 Boundaries (Regions)__
 
