@@ -73,7 +73,7 @@ represented by a line, a building might be represented by polygon and a tree mig
 name: geometry geodata example 2
 width: 700px
 ---
-Geographic information can be an address and/or GPS coordinates
+Geographic information can be an address and/or GPS coordinates. (Source: BRC)
 ```
 
 - Features are displayed on maps with a geometric representation, but they are made of information organized in tables (see {numref}`geodata example`). 
@@ -85,7 +85,7 @@ Geographic information can be an address and/or GPS coordinates
 name: geodata example
 width: 750px
 ---
-A data table in Microsoft Excel with geographic information
+A data table in Microsoft Excel with geographic information. (Source: BRC)
 ```
 
 {numref}`example_geometric_vs_attribute_view` shows the same dataset displayed both as its geometric representation and as an attribute table. 
@@ -95,7 +95,7 @@ A data table in Microsoft Excel with geographic information
 name: example_geometric_vs_attribute_view
 width: 700 px
 ---
-Each polygon on the left represents one row (feature) on the right. 
+Each polygon on the left represents one row (feature) on the right.  (Source: BRC)
 ```
 
 #### Vector file formats
@@ -105,18 +105,22 @@ The following table gives a short description of commonly used vector file forma
 
 | Filename extension| Name | Description |
 | ----------- | ---------------------- | --------------------------------------------------------- |
-|`.shp`       | Shapefile              | Old but still widely used geodata format. Can only contain one dataset. The file has to consist of at least three different files (.shp, .shx, .dbf)|
-|`.gpkg`      | GeoPackage             | Very versatile geodata format and the new standard for geodata. Can contain multiple datafiles (vector, raster and non-spatial data like tables)|
-|`.kml`       |Keyhole Markup Language | Geodata format for use with [Google Earth]( https://earth.google.com/web/)|
-| `.gpx`      | GPS Exchange Format    |Geodata format for the exchange of coordinates. For example for waypoints of tracks. |
-| `.geojson`  | GeoJSON                | Open data format using Javascript Object Notation (JSON) to store geographic data. Can store multiple type of geometries in one file. | 
+|`.shp`       | Shapefile              | A shapefile is a vector data file format commonly used for geospatial analysis. Shapefiles store the location, geometry, and attribution of point, line, and polygon features. It's a common files format used by most GIS software and online mapping platforms. The format is old but still widely used geodata format. One shapefile can only contain one dataset. A complete shapefile has to consist of at least three different files (.shp, .shx, .dbf)| 
+|`.gpkg`      | GeoPackage             | The new standard for geodata. GPKG files are an open, portable SQLite-based format for storing vector and raster geospatial data, compatible with various GIS platforms on desktop, web, and mobile. Can contain multiple datafiles (vector, raster and non-spatial data such as tables) |
+|`.kml`/`.kmz.`       |Keyhole Markup Language | Geodata format for use with [Google Earth]( https://earth.google.com/web/). KMZ files are compressed versions of KML (Keyhole Markup Language) files used to store geographic data, such as points, paths, and polygons, along with any associated media like images and icons. Commonly used with Google Earth and other mapping software, KMZ files bundle both spatial data and resources in one compact file, making it easy to share interactive maps and visualizations.|
+| `.gpx`      | GPS Exchange Format    | Geodata format for the exchange of coordinates. For example for waypoints of tracks. |
+| `.geojson`  | GeoJSON                | Open data format using Javascript Object Notation (JSON) to store geographic data. Can store multiple type of geometries in one file and is widely compatible with web and mobile applications. | 
+| `.gdb`      | Geodatabase            | Sesigned for efficient data management, spatial analysis, and complex geospatial workflows. Geodatabase files are a proprietary Esri format for storing and managing large volumes of spatial data, including feature classes, tables, and relationships in a structured database. |
 
 
-The most common file formats used in GIS applications are:
-- __Shapefile__: A shapefile is a vector data file format commonly used for geospatial analysis. Shapefiles store the location, geometry, and attribution of point, line, and polygon features. It's a common files format used by most GIS software and online mapping platforms. 
-- __Geodatabase__: Similar to shapefile, it’s ESRI ArcGIS most used file format.
-- __GeoJSON__: Similar to shapefile, but based on JSON. Mostly used in mobile and online applications.
-- __KML/KMZ__: Initially developed to use in Google Earth, KML files are based on the XML standard. They are used in most mobile apps.
+```{note}
+The different file formats have different use cases, as well as advantages or shortcomings. 
+
+- For instance, __GeoJSON__ files cannot store projection info and are conventionally limited to the WGS84 ellipsoid. This makes it difficult to use GeoJSON files in projects where you are using region-specific projections or use projections based on different ellipsoids.
+
+- __Geodatabase__ and __Geopackage__ are, unlike the other formats, databases. In GIS, databases store spatial data in structured, scalable systems that support multi-user access, complex queries, and large datasets, making them ideal for enterprise-level analysis and data management. Files, on the other hand, store data in individual, portable formats like Shapefiles, GeoJSON, or GeoPackage, which are easier to share and use offline but lack advanced querying capabilities and scalability.
+
+```
 
 #### Shapefile structure
 
@@ -127,7 +131,7 @@ A shapefile is a collection of separate files which commonly come in a single fo
 name: shapefile_folderstructure
 width: 400 px
 ---
-__SHP, SHX__ and __DBF__ are the __mandatory__ files that every shapefile must contain to work properly. The SHP is the main file and contains the geometry. 
+__SHP, SHX__ and __DBF__ are the __mandatory__ files that every shapefile must contain to work properly. The SHP is the main file and contains the geometry.  
 ```
 
 
@@ -136,8 +140,7 @@ __SHP, SHX__ and __DBF__ are the __mandatory__ files that every shapefile must c
 Another type of geospatial data is raster data. Raster data consists of cells that are organized into a grid with 
 rows and columns, thus forming a raster. Each cell, or pixel, contains a value which holds information (for 
 example, temperature, or population density). Since raster data consists of pixels, aerial photographs or satellite 
-imagery can also be used as raster data, if they have geographical coordinates (see [georeferencing]()).
-<!-- FIXME: insert georeferencing link --> 
+imagery can also be used as raster data, if they have geographical coordinates (see [georeferencing](/content/Modul_3/en_qgis_georeferencing.md)).
 
 Typical uses for raster data are: 
 
@@ -205,6 +208,13 @@ Raster data can have the following data formats:
 |`.nc`|netCDF|Standard data format for scientific data like speed or temperature. Can be a raster file. Can contain multiple datasets|
 |`.asc`|Esri ASCII Grid files|Old, simple raster file format, always with georeferenced data|
 
+```{admonition} The advantage of geodatabases
+
+Databases such as Geodatabase (`.gdb`) or 
+
+
+```
+
 ----
 
 {numref}`The main geographical data formats` summarizes the different data formats for raster and vector data commonly used in GIS.
@@ -225,8 +235,6 @@ canvas. However, when creating a map, we are using multiple datasets at once. Ev
 as raster data, polygons, points, or lines, is usually stored inside a __layer__. Each layer consists of geographic 
 objects of the same type (line, polygon, raster, ...). GIS software displays these layers on top of each other and 
 let's you rearrange the order of these layer, in order to create insightful maps.
-
-
 
 
 By adding different layers, you build your map and can combine information from 
@@ -324,7 +332,7 @@ name:
 align: center
 name: Import delimited text
 ---
-Import delimited text.
+Import delimited text in QGIS 3.36.
 ```
 
 1. `Layer` -> `Add Layer` -> `Open Delimited Text Layer`.
@@ -347,7 +355,7 @@ name:
 align: center
 name: Import delimited text - file format
 ---
-Import delimited text - file format.
+Import delimited text in QGIS 3.36 - file format.
 ```
 
 4. `Geometry definition`: In this section, you specify which columns of the file 

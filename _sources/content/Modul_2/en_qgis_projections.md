@@ -6,8 +6,13 @@
 
 
 An important issue when creating a map of a region, is that it is impossible to create a representation of a sphere 
-on a 2D plane without distorting the map. The transformation of a 3D object onto a flat surface can be done with the help of a __projection__. Over the centuries, cartographers and mathematicians have developed a multitude of different methods to project the earth onto a flat surface. However, it is never possible to correctly represent the world on a flat surface (see the video above). 
-Every projection distorts either the length between two points, the angles between two lines (directions), or the size of an area. A projection can only correctly represent one of these three dimensions. This means, that depending on the projection method, your world map will not represent the size, angles, or distances correctly. 
+on a 2D plane without distorting the map. The transformation of a 3D object onto a flat surface can be done with the 
+help of a __projection__. Over the centuries, cartographers and mathematicians have developed a multitude of different 
+methods to project the earth onto a flat surface. However, it is never possible to correctly represent the world on a 
+flat surface (see the video above). 
+Every projection distorts either the length between two points, the angles between two lines (directions), or the size 
+of an area. A projection can only correctly represent one of these three dimensions. This means, that depending on the 
+projection method, your world map will not represent the size, angles, or distances correctly. 
 
 ```{figure} /fig/en_examples_projections_IBIS.png
 ---
@@ -56,13 +61,21 @@ Comparison Greenland - Africa. Source: [The True Size of](https://www.thetruesiz
 
 In GIS, we project the earth onto a flat coordinate system (hence the name coordinate reference system or CRS). 
 It is crucial that you are aware that your data can be in one CRS and your QGIS 
-project in another CRS. The data and the project should always be the same, or 
-else you will get wrong results! The project CRS is displayed on the bottom right
+project in another CRS. 
+
+The project CRS is displayed on the bottom right
 corner of the [QGIS interface](/content/Modul_1/en_qgis_start.md#overview-of-qgis-interface).  
+Here, you can see the EPSG code. EPSG stands for European Petroleum Survey Group, and it refers to a standardized code 
+system for coordinate reference systems (CRS) and projections. Each EPSG code (e.g., EPSG:4326 for WGS84) uniquely 
+identifies a specific CRS, helping ensure consistency and interoperability in geospatial data across different 
+platforms and applications. 
+
+- __EPSG Codes:__ These are numerical identifiers assigned by the EPSG database to specific coordinate reference systems, making them concise and unambiguous (e.g., EPSG:4326 for WGS84). They provide a standardized way to reference CRS across various GIS applications.
+- __CRS Names:__ These are typically descriptive names for coordinate reference systems (e.g., "WGS 84" or "NAD83"). While names can provide insight into the system being used, they may not be unique or universally recognized, leading to potential confusion without the accompanying EPSG code.
+
 To change the CRS of your data and project, follow the steps explained below.
 The default CRS/EPSG code of every QGIS project is the World Geodetic System 84 
-(EPSG: 4326). This CRS is optimized for world maps. So not perfect for most 
-applications, because we mostly use maps for small areas. 
+(EPSG: 4326). This CRS is optimized for world maps and therefore is not ideal for most humanitarian application, as we need region-specific projections, that provide the least distortion on the scale we wish to represent. 
 
 ```{Tip}
 Choose the projection according to your area of interest. There are special CRS, that have been created to reduce 
@@ -91,7 +104,11 @@ width: 500 px
 The World Geodetic System 1984 (EPSG:4326)
 ```
 
-The WGS 84 is a CRS which consists of an ellipsoid, that resembles the shape of the earth closely. Instead of metrical units of measurements, it uses angular degrees (latitude and longitude). The shape of the Tissot circles is undistorted near the equator, but becomes elongated on the East-West axis the further it gets away from the equator. Unlike the Mercator projection, there is no distortion on the in the North-South direction. As the circles become distorted, we can deduce that the this CRS distorts the angles.
+The WGS 84 is a CRS which consists of an ellipsoid, that resembles the shape of the earth closely. Instead of metrical 
+units of measurements, it uses angular degrees (latitude and longitude). The shape of the Tissot circles is undistorted 
+near the equator, but becomes elongated on the East-West axis the further it gets away from the equator. Unlike the 
+Mercator projection, there is no distortion on the in the North-South direction. As the circles become distorted, we 
+can deduce that the this CRS distorts the angles.
 
 
 ```{figure} /fig/World_equidistant_cylindrical_tissots.png
@@ -113,6 +130,16 @@ characteristic:
 | Rotation | ✅          |  ✅      |  ❌  |
 | Area | ❌             |  ✅           |  ✅   |
 
+Another very important consideration when choosing the Coordinate reference system is that, depending on the ellipsoid and the method used to project the same point can be located at different locations (see {numref}`wrong_CRS_points`). In the figure below, the same point is encoded in 3 different reference systems.  
+
+```{figure} /fig/wrong_CRS.png
+---
+name: wrong_CRS_points
+width: 750 px
+---
+The same point in three different reference systems (Source: HeiGIT).
+```
+
 
 ### Metric and Geographic Coordinate Reference Systems
 
@@ -130,12 +157,12 @@ There are two different types of Coordinate Reference System: __Geographic__ or 
 name: problem_distance_geographic_coords
 width: 600 px
 ---
-A geographic representation of the globe. The distance between the meridians converge towards the north and south pole. 
+A geographic representation of the globe. The distance between the meridians converge towards the north and south pole. (Source: HeiGIT)
 ```
 
 ```{caution}
 
-When processing geodata, QGIS always uses the units of measurements of the layer that you are processing.
+When processing geodata, QGIS always uses the units of measurements of the layer that you are processing. This means that if you want to calculate, for example, the distance in kilometers, the layer must be in a metric CRS. You can check the units of measurements of any given layer by <kbd>Right clicking</kbd> on the layer in the layer panel > `Properties` > `Information` > `Coordinate Reference System (CRS)`. 
 
 ```
 

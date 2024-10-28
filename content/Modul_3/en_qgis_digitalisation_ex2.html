@@ -548,7 +548,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-a-basemap">Add a basemap</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map-road-blocs">Map road blocs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map-road-blocks">Map road blocks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map-the-connection-routes">Map the connection routes</a></li>
 </ul>
             </nav>
@@ -742,12 +742,12 @@ For this, we will need to create a new point layer:</p>
 </figure>
 </section>
 </section>
-<section id="map-road-blocs">
-<h2>Map road blocs<a class="headerlink" href="#map-road-blocs" title="Permalink to this heading">#</a></h2>
+<section id="map-road-blocks">
+<h2>Map road blocks<a class="headerlink" href="#map-road-blocks" title="Permalink to this heading">#</a></h2>
 <p>There is some reliable information that there is a roadblock due to construction at the junction of “Independent Avenue” and ‘“Tafawa Balewa Way”. To visualise this on our map we want to create a polygon of this roadblock.  The Polygon should cover the entire junction.</p>
 <ol class="arabic simple">
 <li><p>To do that we need again a new layer. In this case a polygon layer. The creation is basically the same as for the point.
-1. Click on  <code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">GeoPackage</span> <span class="pre">Layer</span></code>(<span class="xref myst">Wiki Video</span>)</p>
+1. Click on  <code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">GeoPackage</span> <span class="pre">Layer</span></code>(<a class="reference internal" href="../Wiki/en_qgis_digitalization_wiki.html"><span class="doc std std-doc">Wiki</span></a>)</p>
 <ol class="arabic simple">
 <li><p>Under <code class="docutils literal notranslate"><span class="pre">Database</span></code> click on <img alt="" src="../../_images/Three_points.png" /> and navigate to <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder. Give the new dataset the name “Abuja_roadbloc_polygon”. Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">type</span></code>: Select <code class="docutils literal notranslate"><span class="pre">Polygon</span></code></p></li>
@@ -763,7 +763,7 @@ For this, we will need to create a new point layer:</p>
 <li><p>Your new layer will appear in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code></p></li>
 </ol>
 </li>
-<li><p>To digitise this area, click on your new „Abuja_roadbloc_polygon“ layer (<span class="xref myst">Wiki Video</span>).</p>
+<li><p>To digitise this area, click on your new „Abuja_roadbloc_polygon“ layer (<a class="reference internal" href="../Wiki/en_qgis_digitalization_wiki.html"><span class="doc std std-doc">Wiki</span></a>).</p>
 <ul class="simple">
 <li><p>Clicking on <img alt="" src="../../_images/mActionToggleEditing.png" /> start <code class="docutils literal notranslate"><span class="pre">edit</span> <span class="pre">mode</span></code> and Add Feature: <code class="docutils literal notranslate"><span class="pre">Capture</span> <span class="pre">Polygone</span></code><img alt="" src="../../_images/mActionCapturePolygon.png" />|.</p></li>
 <li><p>Draw geometries and enter <code class="docutils literal notranslate"><span class="pre">feature</span> <span class="pre">attributes</span></code>, “Roadblock_type” = “Construction_site”.</p></li>
@@ -778,7 +778,7 @@ For this, we will need to create a new point layer:</p>
 <p>Create a road line layer that will allow him to get to Zenith Bank easily.</p>
 <ol class="arabic">
 <li><p>To do that we need again a new layer. In this case a line layer. The creation of that is nearly the same as for the point.
-1. Click on  <code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">GeoPackage</span> <span class="pre">Layer</span></code>(<span class="xref myst">Wiki Video</span>)</p>
+1. Click on  <code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">GeoPackage</span> <span class="pre">Layer</span></code>(<a class="reference internal" href="../Wiki/en_qgis_digitalization_wiki.html"><span class="doc std std-doc">Wiki</span></a>)</p>
 <ul>
 <li><p>Under <code class="docutils literal notranslate"><span class="pre">Database</span></code> click on <img alt="" src="../../_images/Three_points.png" /> and navigate to <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder. Give the new dataset the name “Abuja_bank_road_connection_line”. Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">type</span></code>: Select <code class="docutils literal notranslate"><span class="pre">Line</span></code>.</p></li>
@@ -801,7 +801,7 @@ For this, we will need to create a new point layer:</p>
 <li><p>Your new layer will appear in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code></p></li>
 </ul>
 </li>
-<li><p>Select the line layer “Abuja_bank_road_connection_line” to add data to in the Layer panel <span class="xref myst">Wiki Video</span>.</p>
+<li><p>Select the line layer “Abuja_bank_road_connection_line” to add data to in the Layer panel <a class="reference internal" href="../Wiki/en_qgis_digitalization_wiki.html"><span class="doc std std-doc">Wiki</span></a>.</p>
 <ol class="arabic simple">
 <li><p>Go to the digitalization toolbar and click on<img alt="" src="../../_images/mActionToggleEditing.png" />. Now the layer is in the editing mode.</p></li>
 <li><p>Click on <img alt="" src="../../_images/mActionCaptureLine.png" />.</p></li>
@@ -873,7 +873,7 @@ For this, we will need to create a new point layer:</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-a-basemap">Add a basemap</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map-road-blocs">Map road blocs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map-road-blocks">Map road blocks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map-the-connection-routes">Map the connection routes</a></li>
 </ul>
   </nav></div>

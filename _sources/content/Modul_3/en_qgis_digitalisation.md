@@ -29,6 +29,14 @@ elements like buildings, roads, or land parcels. Additionally, you can assign at
 digitization, enabling further analysis and integration with other geospatial data. This digitized data becomes 
 a valuable asset for spatial analysis and mapping.
 
+:::{admonition} Digitisation in humanitarian work
+:class: tip
+
+If you want to know how community mapping and digitisation can help improve the resilience of communities and facilitate humanitarian work, take a look at Paul Knight's blogpost [“This is the first time this community is on a map…” — Digital Community Mapping in Nigeria](https://medium.com/digital-and-innovation-at-british-red-cross/first-time-this-community-has-been-on-a-map-nigeria-f592906b7be1)
+
+
+:::
+
 :::{card}
 :class-card: sd-text-justify sd-bg-success sd-text-black sd-rounded-3 sd-border-2
 __Real world Scenario 1/3__
@@ -475,6 +483,14 @@ With the new layers, you are ready to trace the buildings and roads in the new l
 You already have some knowledge about the condition of the roads (e.g., the road surface, quality, and if it is 
 flooded) and the condition of the houses (e.g., if it is affected by a flood, if it has multiple stories, ...). 
 This is useful information that can be stored in the additional attributes in the data table. 
+
+```{figure} /fig/Building_damage_assessement_bangladesh.png
+---
+name: Building_damage_assessement
+width: 750 px 
+---
+Building Damage Assessment in Paikgachha Upazila, Khulna District, Khulna Division, Bangladesh as of 4 June 2024 (Source: [Int'l Charter, UNOSAT](https://reliefweb.int/map/bangladesh/building-damage-assessment-paikgachha-upazila-khulna-district-khulna-division-bangladesh-4-june-2024-imagery-analysis-4-june-2024-published-7-june-2024-v1))
+```
 
 :::
 

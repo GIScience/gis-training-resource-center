@@ -636,7 +636,7 @@ represented by a line, a building might be represented by polygon and a tree mig
 <figure class="align-default" id="geometry-geodata-example-2">
 <a class="reference internal image-reference" href="../../_images/en_geodata_example_2.png"><img alt="../../_images/en_geodata_example_2.png" src="../../_images/en_geodata_example_2.png" style="width: 700px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 16 </span><span class="caption-text">Geographic information can be an address and/or GPS coordinates</span><a class="headerlink" href="#geometry-geodata-example-2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 16 </span><span class="caption-text">Geographic information can be an address and/or GPS coordinates. (Source: BRC)</span><a class="headerlink" href="#geometry-geodata-example-2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
@@ -647,14 +647,14 @@ represented by a line, a building might be represented by polygon and a tree mig
 <figure class="align-default" id="geodata-example">
 <a class="reference internal image-reference" href="../../_images/Geodata_attribute_table_example.png"><img alt="../../_images/Geodata_attribute_table_example.png" src="../../_images/Geodata_attribute_table_example.png" style="width: 750px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 17 </span><span class="caption-text">A data table in Microsoft Excel with geographic information</span><a class="headerlink" href="#geodata-example" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 17 </span><span class="caption-text">A data table in Microsoft Excel with geographic information. (Source: BRC)</span><a class="headerlink" href="#geodata-example" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p><a class="reference internal" href="#example-geometric-vs-attribute-view"><span class="std std-numref">Fig. 18</span></a> shows the same dataset displayed both as its geometric representation and as an attribute table.</p>
 <figure class="align-default" id="example-geometric-vs-attribute-view">
 <a class="reference internal image-reference" href="../../_images/example_geometric_and_attribute_view.png"><img alt="../../_images/example_geometric_and_attribute_view.png" src="../../_images/example_geometric_and_attribute_view.png" style="width: 700px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 18 </span><span class="caption-text">Each polygon on the left represents one row (feature) on the right.</span><a class="headerlink" href="#example-geometric-vs-attribute-view" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 18 </span><span class="caption-text">Each polygon on the left represents one row (feature) on the right.  (Source: BRC)</span><a class="headerlink" href="#example-geometric-vs-attribute-view" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <section id="vector-file-formats">
@@ -671,15 +671,15 @@ The following table gives a short description of commonly used vector file forma
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">.shp</span></code></p></td>
 <td><p>Shapefile</p></td>
-<td><p>Old but still widely used geodata format. Can only contain one dataset. The file has to consist of at least three different files (.shp, .shx, .dbf)</p></td>
+<td><p>A shapefile is a vector data file format commonly used for geospatial analysis. Shapefiles store the location, geometry, and attribution of point, line, and polygon features. It’s a common files format used by most GIS software and online mapping platforms. The format is old but still widely used geodata format. One shapefile can only contain one dataset. A complete shapefile has to consist of at least three different files (.shp, .shx, .dbf)</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">.gpkg</span></code></p></td>
 <td><p>GeoPackage</p></td>
-<td><p>Very versatile geodata format and the new standard for geodata. Can contain multiple datafiles (vector, raster and non-spatial data like tables)</p></td>
+<td><p>The new standard for geodata. GPKG files are an open, portable SQLite-based format for storing vector and raster geospatial data, compatible with various GIS platforms on desktop, web, and mobile. Can contain multiple datafiles (vector, raster and non-spatial data such as tables)</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">.kml</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">.kml</span></code>/<code class="docutils literal notranslate"><span class="pre">.kmz.</span></code></p></td>
 <td><p>Keyhole Markup Language</p></td>
-<td><p>Geodata format for use with <a class="reference external" href="https://earth.google.com/web/">Google Earth</a></p></td>
+<td><p>Geodata format for use with <a class="reference external" href="https://earth.google.com/web/">Google Earth</a>. KMZ files are compressed versions of KML (Keyhole Markup Language) files used to store geographic data, such as points, paths, and polygons, along with any associated media like images and icons. Commonly used with Google Earth and other mapping software, KMZ files bundle both spatial data and resources in one compact file, making it easy to share interactive maps and visualizations.</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">.gpx</span></code></p></td>
 <td><p>GPS Exchange Format</p></td>
@@ -687,17 +687,22 @@ The following table gives a short description of commonly used vector file forma
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">.geojson</span></code></p></td>
 <td><p>GeoJSON</p></td>
-<td><p>Open data format using Javascript Object Notation (JSON) to store geographic data. Can store multiple type of geometries in one file.</p></td>
+<td><p>Open data format using Javascript Object Notation (JSON) to store geographic data. Can store multiple type of geometries in one file and is widely compatible with web and mobile applications.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">.gdb</span></code></p></td>
+<td><p>Geodatabase</p></td>
+<td><p>Sesigned for efficient data management, spatial analysis, and complex geospatial workflows. Geodatabase files are a proprietary Esri format for storing and managing large volumes of spatial data, including feature classes, tables, and relationships in a structured database.</p></td>
 </tr>
 </tbody>
 </table>
-<p>The most common file formats used in GIS applications are:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The different file formats have different use cases, as well as advantages or shortcomings.</p>
 <ul class="simple">
-<li><p><strong>Shapefile</strong>: A shapefile is a vector data file format commonly used for geospatial analysis. Shapefiles store the location, geometry, and attribution of point, line, and polygon features. It’s a common files format used by most GIS software and online mapping platforms.</p></li>
-<li><p><strong>Geodatabase</strong>: Similar to shapefile, it’s ESRI ArcGIS most used file format.</p></li>
-<li><p><strong>GeoJSON</strong>: Similar to shapefile, but based on JSON. Mostly used in mobile and online applications.</p></li>
-<li><p><strong>KML/KMZ</strong>: Initially developed to use in Google Earth, KML files are based on the XML standard. They are used in most mobile apps.</p></li>
+<li><p>For instance, <strong>GeoJSON</strong> files cannot store projection info and are conventionally limited to the WGS84 ellipsoid. This makes it difficult to use GeoJSON files in projects where you are using region-specific projections or use projections based on different ellipsoids.</p></li>
+<li><p><strong>Geodatabase</strong> and <strong>Geopackage</strong> are, unlike the other formats, databases. In GIS, databases store spatial data in structured, scalable systems that support multi-user access, complex queries, and large datasets, making them ideal for enterprise-level analysis and data management. Files, on the other hand, store data in individual, portable formats like Shapefiles, GeoJSON, or GeoPackage, which are easier to share and use offline but lack advanced querying capabilities and scalability.</p></li>
 </ul>
+</div>
 </section>
 <section id="shapefile-structure">
 <h4>Shapefile structure<a class="headerlink" href="#shapefile-structure" title="Permalink to this heading">#</a></h4>
@@ -715,8 +720,7 @@ The following table gives a short description of commonly used vector file forma
 <p>Another type of geospatial data is raster data. Raster data consists of cells that are organized into a grid with
 rows and columns, thus forming a raster. Each cell, or pixel, contains a value which holds information (for
 example, temperature, or population density). Since raster data consists of pixels, aerial photographs or satellite
-imagery can also be used as raster data, if they have geographical coordinates (see <span class="xref myst">georeferencing</span>).</p>
-<!-- FIXME: insert georeferencing link --> 
+imagery can also be used as raster data, if they have geographical coordinates (see <a class="reference internal" href="../Modul_3/en_qgis_georeferencing.html"><span class="doc std std-doc">georeferencing</span></a>).</p>
 <p>Typical uses for raster data are:</p>
 <ul class="simple">
 <li><p>elevation data (often referred to as a digital elevation model or DEM)</p></li>
@@ -793,6 +797,10 @@ Raster</div>
 </tr>
 </tbody>
 </table>
+<div class="admonition-the-advantage-of-geodatabases admonition">
+<p class="admonition-title">The advantage of geodatabases</p>
+<p>Databases such as Geodatabase (<code class="docutils literal notranslate"><span class="pre">.gdb</span></code>) or</p>
+</div>
 <hr class="docutils" />
 <p><code class="xref std std-numref docutils literal notranslate"><span class="pre">The</span> <span class="pre">main</span> <span class="pre">geographical</span> <span class="pre">data</span> <span class="pre">formats</span></code> summarizes the different data formats for raster and vector data commonly used in GIS.</p>
 <figure class="align-center" id="id1">
@@ -900,7 +908,7 @@ geometries in your delimited text file.</p>
 <figure class="align-center" id="import-delimited-text">
 <a class="reference internal image-reference" href="../../_images/en_import_delimeted_text.png"><img alt="../../_images/en_import_delimeted_text.png" src="../../_images/en_import_delimeted_text.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 25 </span><span class="caption-text">Import delimited text.</span><a class="headerlink" href="#import-delimited-text" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 25 </span><span class="caption-text">Import delimited text in QGIS 3.36.</span><a class="headerlink" href="#import-delimited-text" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple">
@@ -920,7 +928,7 @@ Excel. There you can check which delimiter is used to separate the information.<
 <figure class="align-center" id="import-delimited-text-file-format">
 <a class="reference internal image-reference" href="../../_images/en_delimited_text_fileformat.png"><img alt="../../_images/en_delimited_text_fileformat.png" src="../../_images/en_delimited_text_fileformat.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 26 </span><span class="caption-text">Import delimited text - file format.</span><a class="headerlink" href="#import-delimited-text-file-format" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 26 </span><span class="caption-text">Import delimited text in QGIS 3.36 - file format.</span><a class="headerlink" href="#import-delimited-text-file-format" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic" start="4">

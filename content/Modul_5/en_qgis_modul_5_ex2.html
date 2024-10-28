@@ -828,7 +828,7 @@ Video: Setting up folder structure <div class="sd-summary-down docutils">
 </details></section>
 <section id="step-2-download-of-the-forecast-data">
 <h3>Step 2: Download of the forecast data<a class="headerlink" href="#step-2-download-of-the-forecast-data" title="Permalink to this heading">#</a></h3>
-<p><strong>Purpose:</strong></p>
+<p><strong>Purpose:</strong> In this step, we will download the forecast data on which our triggers will be based.</p>
 <p><strong>Tool:</strong> Internet Browser</p>
 <p>The IPC data will be pulled from the FEWSNET website. FEWS NET publishes IPC data on its website.
 The main data publications, as well as the updates of the IPC data, amount to the publication of new data almost monthly.</p>
@@ -879,7 +879,7 @@ Example path: <code class="docutils literal notranslate"><span class="pre">.../M
 </section>
 <section id="step-3-loading-data-into-qgis">
 <h3>Step 3: Loading data into QGIS<a class="headerlink" href="#step-3-loading-data-into-qgis" title="Permalink to this heading">#</a></h3>
-<p><strong>Purpose:</strong> In this step, all the data needed will be loaded into QGIS.</p>
+<p><strong>Purpose:</strong> In this step, all the data needed will be loaded into a QGIS-project so we can analyse the data.</p>
 <p><strong>Tool:</strong> No specific tools are needed, only QGIS.</p>
 <ol class="arabic simple">
 <li><p>Open QGIS and create a <span class="xref myst">new project</span> by clicking on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span></code></p></li>
@@ -1204,7 +1204,7 @@ Video: Evaluate Trigger Activation <div class="sd-summary-down docutils">
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Then click on <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code></p></li>
 <li><p>Back in the “Layer Properties” Window click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
 </ol>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
 <summary class="sd-summary-title sd-card-header">
 Info: Trigger Activation Layer<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
@@ -1213,11 +1213,11 @@ Info: Trigger Activation Layer<div class="sd-summary-down docutils">
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">You will now see districts where no trigger is activated in green and districts with trigger activation in pink.</p>
 <p class="sd-card-text">The “Style_Trigger_Activation.qml” style layer is configured to show the district names only where the trigger is actually activated. If there is no trigger activation you can activate the admin 1 boundary layer for better map orientation (see <strong>Administrative 2 Boundaries</strong> below)</p>
-<figure class="align-center">
+</div>
+</details><figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/Map_yes_trigger.PNG"><img alt="../../_images/Map_yes_trigger.PNG" src="../../_images/Map_yes_trigger.PNG" style="width: 1000px;" /></a>
 </figure>
-</div>
-</details><p><strong>Administrative 2 Boundaries (Regions)</strong></p>
+<p><strong>Administrative 2 Boundaries (Regions)</strong></p>
 <ol class="arabic simple" start="6">
 <li><p>Right click on the “Som_admin1_regions_UNDP.gqkp” (Regions) layer -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Symbology</span></code></p></li>
 <li><p>In the down left corner click on <code class="docutils literal notranslate"><span class="pre">Style</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code></p></li>

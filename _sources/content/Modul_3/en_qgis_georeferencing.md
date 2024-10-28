@@ -48,49 +48,10 @@ name:
 Different transformation types: linear (left), polynomial 2nd degree (middle), polyonmial 3rd degree (right) (Source: [ESRI](https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/overview-of-georeferencing.htm))
 ```
 
-### Transformation types
+In most cases, you will use either linear, or polynomial (2nd or 3rd degree) transformations. There are many more 
+transformation types to be used in QGIS. Each works best for a specific use case. For an explanation of each 
+transformation type, check out the [QGIS Documentation](https://docs.qgis.org/3.34/en/docs/user_manual/working_with_raster/georeferencer.html)
 
-:::::{dropdown} Transformation types (from the  [QGIS Documentation](https://docs.qgis.org/3.34/en/docs/user_manual/working_with_raster/georeferencer.html))
-## Linear
-The Linear algorithm is used to create a world file and is different from the other algorithms, as it does not actually 
-transform the raster pixels. It allows positioning (translating) the image and uniform scaling, but no rotation or other 
-transformations. It is the most suitable if your image is a good quality raster map, in a known CRS, but is just missing 
-georeferencing information. At least 2 GCPs are needed.
-
-## Polynomial 1
-The Polynomial 1 algorithm allows a more general affine transformation, in particular also a uniform shear. Straight lines 
-remain straight (i.e., collinear points stay collinear) and parallel lines remain parallel. This is particularly useful for 
-georeferencing data cartograms, which may have been plotted (or data collected) with different ground pixel sizes in different 
-directions. At least 3 GCP's are required.
-
-## Polynomial 2-3
-The Polynomial algorithms 2-3 use more general 2nd or 3rd degree polynomials instead of just affine transformation. This allows 
-them to account for curvature or other systematic warping of the image, for instance photographed maps with curving edges. At 
-least 6 (respectively 10) GCP's are required. Angles and local scale are not preserved or treated uniformly across the image. 
-In particular, straight lines may become curved, and there may be significant distortion introduced at the edges or far from 
-any GCPs arising from extrapolating the data-fitted polynomials too far.
-
-## Helmert
-The Helmert transformation also allows rotation. It is particularly useful if your raster is a good quality local map or 
-orthorectified aerial image, but not aligned with the grid bearing in your CRS. At least 2 GCPs are needed.
-
-## Projective
-The Projective algorithm generalizes Polynomial 1 in a different way, allowing transformations representing a central 
-projection between 2 non-parallel planes, the image and the map canvas. Straight lines stay straight, but parallelism 
-is not preserved and scale across the image varies consistently with the change in perspective. This transformation 
-type is most useful for georeferencing angled photographs (rather than flat scans) of good quality maps, or oblique 
-aerial images. A minimum of 4 GCPs is required.
-
-## Thin Plate Spline (TPS)
-The Thin Plate Spline (TPS) algorithm “rubber sheets” the raster using multiple local polynomials to match the GCPs 
-specified, with overall surface curvature minimized. Areas away from GCPs will be moved around in the output to 
-accommodate the GCP matching, but will otherwise be minimally locally deformed.  TPS is most useful for georeferencing 
-damaged, deformed, or otherwise slightly inaccurate maps, or poorly orthorectified aerials.  It is also useful for 
-approximately georeferencing and implicitly reprojecting maps with unknown projection type or parameters, but where 
-a regular grid or dense set of ad-hoc GCPs can be matched with a reference map layer. It technically requires a minimum 
-of 10 GCPs, but usually more to be successful.
-
-:::::
 
 ### How to Georeference in QGIS
 
