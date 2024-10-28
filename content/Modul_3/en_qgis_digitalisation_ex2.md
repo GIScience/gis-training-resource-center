@@ -161,12 +161,12 @@ align: center
 Result Digitalization exercise.
 ```
 
-## Map road blocs
+## Map road blocks
 
 There is some reliable information that there is a roadblock due to construction at the junction of "Independent Avenue" and '"Tafawa Balewa Way". To visualise this on our map we want to create a polygon of this roadblock.  The Polygon should cover the entire junction.
 
 1. To do that we need again a new layer. In this case a polygon layer. The creation is basically the same as for the point.
-        1. Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#create-a-new-layer)) 
+        1. Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki](/content/Wiki/en_qgis_digitalization_wiki.md)) 
     1. Under `Database` click on ![](/fig/Three_points.png) and navigate to `temp` folder. Give the new dataset the name “Abuja_roadbloc_polygon”. Click `Save`.
     2. `Geometry type`: Select `Polygon`
     4. Select the coordinate reference system (CRS) "EPSG:4326-WGS 84".
@@ -177,7 +177,7 @@ There is some reliable information that there is a roadblock due to construction
         * Click `OK`.
 
     6. Your new layer will appear in the `Layer Panel`
-2. To digitise this area, click on your new „Abuja_roadbloc_polygon“ layer ([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#creation-of-polygon-data)). 
+2. To digitise this area, click on your new „Abuja_roadbloc_polygon“ layer ([Wiki](/content/Wiki/en_qgis_digitalization_wiki.md)). 
     - Clicking on ![](/fig/mActionToggleEditing.png) start `edit mode` and Add Feature: `Capture Polygone`![](/fig/mActionCapturePolygon.png)|. 
     - Draw geometries and enter `feature attributes`, "Roadblock_type" = "Construction_site".
     - Save edits ![](/fig/mActionSaveEdits.png) , exit `edit mode`. 
@@ -189,7 +189,7 @@ A business man drove all the way from the North of Herbert Macauley Way in the C
 Create a road line layer that will allow him to get to Zenith Bank easily.
 
 1. To do that we need again a new layer. In this case a line layer. The creation of that is nearly the same as for the point.
-        1. Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#create-a-new-layer)) 
+        1. Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki](/content/Wiki/en_qgis_digitalization_wiki.md)) 
     - Under `Database` click on ![](/fig/Three_points.png) and navigate to `temp` folder. Give the new dataset the name “Abuja_bank_road_connection_line”. Click `Save`.
     - `Geometry type`: Select `Line`.
     - Select the coordinate reference system (CRS) "EPSG:4326-WGS 84".
@@ -204,7 +204,7 @@ Create a road line layer that will allow him to get to Zenith Bank easily.
 
             ```
     * Your new layer will appear in the `Layer Panel`
-2. Select the line layer “Abuja_bank_road_connection_line” to add data to in the Layer panel [Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#creation-of-line-data). 
+2. Select the line layer “Abuja_bank_road_connection_line” to add data to in the Layer panel [Wiki](/content/Wiki/en_qgis_digitalization_wiki.md). 
     1. Go to the digitalization toolbar and click on![](/fig/mActionToggleEditing.png). Now the layer is in the editing mode.
     2.	Click on ![](/fig/mActionCaptureLine.png). 
     3.	To digitalise line features, click along the line. When you are done, right-click on the last point of the line to finish the feature.

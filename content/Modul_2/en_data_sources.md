@@ -29,10 +29,20 @@ up-to-date data available from another source.
 share it and how do you need to cite the data source? Make sure to check the 
 licensing and to follow the respective regulations to avoid difficulties.
 
-
 <!-- ADD: Would be nice to have a wiki page on licensing if possible -->
 
+```{figure} /fig/en_data_sources_examples_cartong.png
+---
+name: data sources examples
+width: 600 px
+---
+The data to create maps or perform GIS analyses can come from various sources (Source: [CartONG]())
+```
+
+
+
 :::{dropdown} Overview of useful data repositories
+:open: 
 
 ### General geodata 
 

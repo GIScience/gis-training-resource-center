@@ -380,6 +380,12 @@ An example of a warning icon while adjusting the parameters of a processing tool
 
 ## Where to find help
 
+
+```{admonition} Connect with us!
+:class: tip
+If you have more questions before or after the training or require assistance, do not hesitate to reach out to us by writing an email to `gis-training-platform@heigit.org`.
+```
+
 There is a big and vibrant QGIS community online. If you are struggling with a specific function, or have questions on how to achieve GIS operations that are not covered on this platform, you can find help on dedicated QGIS forums: 
 
 - QGIS user forum on stackexchange: https://gis.stackexchange.com/?tags=qgis
