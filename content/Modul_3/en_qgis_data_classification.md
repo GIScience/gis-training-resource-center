@@ -42,8 +42,26 @@ based on qualitative attributes. These categories don't have any inherent order 
 numerical significance: Values or labels are just names or identifiers (in some cases landcover classes can be 
 identified with numbers).
     - Examples: Land cover classes, vegetation types, soil types, amenity type (hospital, church, school, etc.)
+
+    ```{figure} /fig/nominal_scale_examples.png
+    ---
+    name: nominal_scale_example
+    width: 600 px
+    ---
+    Examples for nominal data and their representation (Source: Dickmann (2018) Kartographie, Westermann)
+    ```
+
 - The __ordinal scale__ (ranked data) involves categorizing data, but in this case, the categories have a meaningful order or rank. However, the intervals between the ranks are not necessarily equal or known. Rank order is important: Features can be ranked or ordered from lowest to highest, but the actual difference between ranks isn't measured. You can compare and rank data (i.e., which feature is ranked higher or lower).
     - Examples: Land suitability, hierarchical road network, population size classes, vulnerability classes (e.g. for administrative units)
+
+    ```{figure} /fig/ordinal_scale_example.png
+    ---
+    name: ordinal_scale_example
+    width: 600 px
+    ---
+    Examples for ordinal data and their representation (Source: Dickmann (2018) Kartographie, Westermann)
+    ```
+
 - The __metric scale__ (quantitative data) deals with data that have both order and exact differences 
 between values. Data is represented with precise numerical values and the differences between values are consistent across the scale. Metric data can be further divided into:
     - Interval scale: Numerical data where the difference between values is meaningful, but there is no true 
@@ -52,7 +70,13 @@ between values. Data is represented with precise numerical values and the differ
     point (e.g., distance, area).
     - Examples: Elevation data, distance, area, population data
 
-
+    ```{figure} /fig/interval_ratio_scale_example.png
+    ---
+    name: interval_scale_example
+    width: 600 px
+    ---
+    Examples for metric data and their representation (Source: Dickmann (2018) Kartographie, Westermann)
+    ```
 
 Depending on the type of scale, you will use different methods of classification. Below, we will go over the 
 different types of classification that are available in QGIS, and when to use them for which data. We will also 
@@ -223,7 +247,7 @@ width: 900px
 name:
 align: center
 ---
-Different classifications. Source: HeiGIT  (adapteed from [Axis Maps](https://www.axismaps.com/guide/data-classification)) 
+Different classifications. Source: HeiGIT  (adapted from [Axis Maps](https://www.axismaps.com/guide/data-classification)) 
 ```
 
 ::::{tab-set}
@@ -331,6 +355,5 @@ align: center
 ---
 Graduated classification in QGIS 3.36.
 ```
-
 :::
 
