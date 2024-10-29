@@ -34,6 +34,103 @@ These two maps use design elements differently. Topographic maps will use symbol
 
 :::
 
+## Choropleth and Graduated Symbol Maps
+
+Choropleth and Graduated symbol maps are two really common thematic map types used in humanitarian work. 
+
+:::{card} 
+:class-card: sd-text-justify sd-text-black sd-border-2
+__Choropleth Maps__
+^^^
+
+A choropleth map is a type of map that shows data using colors or shading within specific geographic areas, like 
+countries, states, or counties. It helps to visualize data patterns or distributions across regions. For example, a 
+choropleth map could show population density, where darker shades indicate higher densities and lighter shades indicate 
+lower densities.
+
+In essence:
+
+- Data is divided into areas on the map.
+- Colors or shades represent different values for each area.
+- Easy to interpret – darker or more intense colors often mean higher values, and lighter colors mean lower values.
+
+Choropleth maps are ideal for showing patterns over large areas but should be used carefully, as they don’t show exact 
+values within each region, just an overall gradient or level of intensity and they are used in almost every application 
+of mapping and GIS.
+
+```{figure} /fig/choropleth_intro_example.png
+---
+name: choropleth_intro_example
+width: 600 px
+---
+An example of a choropleth map (Source: [AxisMaps](https://www.axismaps.com/guide/choropleth))
+```
+
+__Use cases__:
+
+__Humanitarian Action__
+
+In humanitarian action, choropleth maps are used to:
+
+- Identify vulnerable regions: Maps can show areas with high poverty rates, conflict, or disaster impact, helping responders prioritize regions most in need of aid.
+- Track disease outbreaks: For instance, during an epidemic, choropleth maps can show areas with high infection rates, helping to direct medical resources and prevent further spread.
+- Monitor food insecurity and famine risks: Maps that illustrate food scarcity help humanitarian organizations focus on regions where food aid is needed the most.
+
+```{figure} /fig/choropleth_hum_example.png
+---
+name: hum_sit_monitoring_choro_example
+width: 700 px
+---
+South Sudan: Humanitarian Situation Monitoring, April-May 2024 - Damaged shelters (Source: [REACH](https://repository.impact-initiatives.org/document/impact/897badb8/REACH_SSD_Map_HSM_AprilMay2024_DamagedShelters_June2024-1.pdf))
+```
+
+__Environmental Science__
+
+- Show pollution levels: Choropleth maps can depict air or water quality across regions, helping to identify polluted areas.
+- Track deforestation: Maps highlighting forest coverage changes make it easy to spot deforestation trends.
+- Climate impact: Regions prone to temperature rise or extreme weather can be highlighted to aid climate adaptation efforts.
+
+__Public Health__
+
+- Visualize health disparities: Choropleth maps can show regions with high rates of disease, poor access to healthcare, or varying vaccination rates.
+- Resource allocation: Health authorities use these maps to allocate medical resources based on areas with higher health needs.
+
+__Urban Planning and Infrastructure__
+
+- Display population density: Maps show where populations are concentrated, helping in city planning and infrastructure development.
+- Identify socioeconomic patterns: Urban planners use these maps to see income, employment, and education levels across neighborhoods.
+
+---
+
+Choropleth maps are usually created by [classifying](/content/Modul_3/en_qgis_data_classification.md) geodata into distinct groups, either using categorised or graduated classification. The effectiveness of a choropleth map is dependent on the __colouring scheme__.  
+
+:::
+
+:::{card}
+:class-card: sd-text-justify sd-text-black sd-border-2
+__Proportional Circles/Graduated Symbols Map__
+^^^
+Another very useful type of map in humanitarian action is the proportional circle or graduated symbol map. This type of map uses circles of varying sizes to represent data values across different locations. The larger the circle, the higher the data value it represents. This makes it useful for showing quantities or comparing values across different points on a map. 
+
+
+```{figure} /fig/proportional_circles_example.png
+---
+name: prop_circles_example
+width: 600 px
+---
+Internally Displaced Persons (IDPs), 30 September 2024 (Soure: [UNHCR](https://reliefweb.int/map/sudan/regional-bureau-east-horn-africa-and-great-lakes-region-internally-displaced-persons-idps-30-september-2024)).
+```
+
+```{figure} /fig/proportional_circles_example_2.png
+---
+name: prop_circles_example_2
+width: 600 px
+---
+Cholera cases in Malawi (Source [Paul Knight](https://learn-sims.org/geospatial/creating-a-proportional-circle-map-in-qgis/)).
+```
+
+:::
+
 <!--## Graphic Semiology
 
 __Definition__: Graphic semiology refers to a set of rules allowing the use of a __graphic sign systems__ to convey information. Graphic semiology uses visual variables to construct a system of signs, allowing the graphic translation of information.
@@ -178,8 +275,9 @@ Remember that __the layer's symbology is saved within your project file, not wit
 ```
 
 :::{card} 
-### SVG-Symbols, Raster images, and Markers
-
+:class-card: sd-text-justify sd-text-black sd-border-2
+__SVG-Symbols, Raster images, and Markers__
+^^^
 QGIS let's you use different types markers for symbolization. These can be simple markers, raster images, or SVG-symbols.
 
 - __Simple markers__ are simple shapes such as rectangles, circles, or crosses that can be adjusted in the symbolization layer (colour, size, outline, etc.).
@@ -188,7 +286,7 @@ QGIS let's you use different types markers for symbolization. These can be simpl
 
 :::
 
-#### Using Simple Markers
+### Using Simple Markers
 
 Simple Markers are generally used to create the symbols for most elements on a map. For example, simple markers are used to visualise streets, building outlines, waterbodies, administrative boundaries or other polygons.
 Most simple markers consist of a __fill__ and an __outline__. The shape of the marker is generally dependent on the type of vector data (point, polygon, or line).
@@ -196,9 +294,17 @@ Most simple markers consist of a __fill__ and an __outline__. The shape of the m
 - The fill determines the fill colour of the symbol. You can change the colour and transparency. You are also able to make more complex fills such as a line pattern fill, or an SVG-symbol fill.
 - The outline determines the colour, type, and thickness of the outline. Next to the colour and transparency, the outline is the most critical for distinguishing between different elements. For example, thicker lines for roads usually signify roads of a higher order (such as highways), while thin dashed lines might signify footpaths, inaccessible to road vehicles.
 
-<!--ADD: Examples-->
 
-#### Using SVG-Symbols
+
+```{admonition} Optional: Now it's your turn
+:class: tip
+
+Check out Paul Knight's [tutorial on how to create a proportional circle map](https://learn-sims.org/geospatial/creating-a-proportional-circle-map-in-qgis/) in the SIMS learning portal. 
+```
+
+
+
+### Using SVG-Symbols
 
 1. Open the styling panel and open the `single marker` options.
 2. Under `Symbol layer type`, select __"SVG Marker"__
@@ -455,7 +561,7 @@ Some organisations may also use standarized symbols or colours in their maps.
 
 For example, if you want to send a layer to your colleague with the same styling as you, it is best to check the "__Layer properties__", "__Symbology__", and "__Labels__" categories (and any additional styling options you have set). If you only wish to save a certain colouring, line thickness, or labeling style, you only need to check the respective boxes.
 
-## Saving or exporting styling settings
+### Saving or exporting styling settings
 
 1. Open the styling panel and click on `Styles`. A dropdown menu will open with the option to export the layer styling.
 2. Since in this case, the styling is for exactly that dataset, you can leave all the boxes checked.
@@ -478,7 +584,7 @@ When working with similar data (e.g. building types or flooding risk), it is use
 When a styling is saved in the same location as the data and has the same name as the corresponding dataset, the styling will be automatically applied to the layer when loading the data into QGIS!
 ```
 
-## Loading a style into a QGIS-project
+### Loading a style into a QGIS-project
 
 1. Open the style manager: `Settings` > `Style manager`
 2. Click on `import/export` and select `import items`
