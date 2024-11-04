@@ -149,7 +149,7 @@ Another very useful type of map in humanitarian action is the proportional circl
 ```{figure} /fig/proportional_circles_example.png
 ---
 name: prop_circles_example
-width: 600 px
+width: 500 px
 ---
 Internally Displaced Persons (IDPs), 30 September 2024 (Soure: [UNHCR](https://reliefweb.int/map/sudan/regional-bureau-east-horn-africa-and-great-lakes-region-internally-displaced-persons-idps-30-september-2024)).
 ```
@@ -157,7 +157,7 @@ Internally Displaced Persons (IDPs), 30 September 2024 (Soure: [UNHCR](https://r
 ```{figure} /fig/proportional_circles_example_2.png
 ---
 name: prop_circles_example_2
-width: 600 px
+width: 450 px
 ---
 Cholera cases in Malawi (Source [Paul Knight](https://learn-sims.org/geospatial/creating-a-proportional-circle-map-in-qgis/)).
 ```
@@ -281,6 +281,8 @@ Symbolization for vector data; Source: White, T. (2017). Symbolization and the V
 Remember that __the layer's symbology is saved within your project file, not within your shapefile!__ If you share a shapefile with a colleague, it will have a different style when they add it to their own project.
 ```
 
+
+
 :::{card} 
 :class-card: sd-text-justify sd-text-black sd-border-2
 __SVG-Symbols, Raster images, and Markers__
@@ -301,8 +303,63 @@ Most simple markers consist of a __fill__ and an __outline__. The shape of the m
 - The fill determines the fill colour of the symbol. You can change the colour and transparency. You are also able to make more complex fills such as a line pattern fill, or an SVG-symbol fill.
 - The outline determines the colour, type, and thickness of the outline. Next to the colour and transparency, the outline is the most critical for distinguishing between different elements. For example, thicker lines for roads usually signify roads of a higher order (such as highways), while thin dashed lines might signify footpaths, inaccessible to road vehicles.
 
+### Styling Vector data
+
+QGIS offers various ways to visualize vector data. In the Symbology Tab, you can select between various symbolization methods
+
+::::{tab-set}
+
+:::{tab-item} Single-Symbol
+- Assigns one symbol to every feature of the dataset, no matter if the attributes are different.
+
+__For example__, assign a hospital symbol to a layer that only contains points showing the location of hospitals.
+:::
+
+:::{tab-item} Categorized  
+
+- Classifies features into categories using an attribute (`Value`). 
+- A category is created for each unique value of this attribute. 
+- Each category can be assigned to a different symbol.
+- This can be used for nominal as well as ordinal data.
+
+__For example__, assign a different symbol for each type of building (industrial, commercial, public, residential,...) 
+
+:::
+
+:::{tab-item} Graduated
+
+- Creates classes for numerical data.
+- A colour gradient can be selected to represent the distribution of the data
+
+__For example__, create 6 classes of population sizes and assign a color gradient from white to red to indicate the population size in a district.
+
+:::
+
+:::{tab-item} Rule-based
+
+- Create rules using an expression and assign a symbol for the features where the rule applies.
+- You can specify more accurately the features you want to symbolize.
+- You can use values from different attributes (e.g. building type and city district).
+- The expression builder helps you create rules by displaying the available values, fields, operators, etc...
+
+__For example__, select a symbol for every health facility that is a hospital and has exceeded it's capacity.
+
+:::
+
+::::
+
+
+
+
+
+
+<!--ADD: HOWTOS from the wiki-->
+
 <!--ADD: Examples of simple markers for Points, Lines, Polygons
 ALSO: With different thickness-->
+
+
+
 
 ```{admonition} Optional: Now it's your turn
 :class: tip
@@ -349,6 +406,8 @@ The IFRC provides icons and symbols that can be used in your maps. You can find 
 There is also a library with humanitarian icons by the [United Nations Office for the Coordination of Humanitarian affairs](https://www.unocha.org) which can be found [here](https://github.com/mapaction/ocha-humanitarian-icons-for-gis?tab=readme-ov-file). The files are available in different formats you can use in QGIS. 
 
 :::
+
+
 
 ## Labels
 
