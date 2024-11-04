@@ -9,7 +9,10 @@ In this chapter we will go over the basics of symbology, colours, and how to adj
 
 In general, there are two main types of maps: __topographic maps__ and __thematic maps__.
 
-__Topographic maps__ are intended to be exhaustive, including elements fundamental to localisation (localities, road networks, terrain, hydrography). They display the physical location of objects in the real world. The representation of elements in topographic maps is done using conventional signs (e.g. blue for water, green for forests, yellow for agricultural land). 
+__Topographic maps__ are intended to be exhaustive, including elements fundamental to localisation (localities, road 
+networks, terrain, hydrography). They display the physical location of objects in the real world. The representation of 
+elements in topographic maps is done using conventional signs (e.g. blue for water, green for forests, yellow for 
+agricultural land). 
 
 ```{figure} ../../fig/en_30.30.2_topographic_map_examples.png
 ---
@@ -19,7 +22,9 @@ name: Topographic Maps Examples
 Examples for topographic maps
 ```
 
-__Thematic maps__ display the distribution of specific data or statistically processed information, such as population size, disease incidence, flooding risk, etc. The representation of elements on thematic maps is decided according to the rules of graphic semiology. 
+__Thematic maps__ display the distribution of specific data or statistically processed information, such as population 
+size, disease incidence, flooding risk, etc. The representation of elements on thematic maps is decided according to 
+the rules of graphic semiology. 
 
 
 ```{figure} ../../fig/en_30.30.2_thematic_maps_examples.png
@@ -30,13 +35,41 @@ name: Thematic maps examples
 Examples for thematic maps
 ```
 
-These two maps use design elements differently. Topographic maps will use symbols and colours out of convention and readability, whereas in designing thematic maps, the symbols and colours you use depend on the context and the information you want to convey.
+These two maps use design elements differently. Topographic maps will use symbols and colours out of convention and 
+readability, whereas in designing thematic maps, the symbols and colours you use depend on the context and the 
+information you want to convey.
 
 :::
 
+## Visual Variables
+
+```{figure} ../../fig/en_30.30.2_graphic_semiology_signs.png
+---
+width: 500px
+name: Graphic information
+---
+You can use different graphic signs depending on the type of information you want to display.
+```
+
+Visual variables are the __graphical means for visually transcribing information__. The visual variables are __shape, size, hue, value, texture, and orientation__. You can adjust these variables to appropriately represent the data at your disposal. They allows for the expression of __relationship of difference, order, association, or quantity__ between each element, helping to display different information.
+
+```{figure} ../../fig/en_visual_variables.png
+---
+name: Visual variables
+width: 500px
+---
+Visual variables according to Bertin (1967)
+```
+
+```{Caution} 
+Visual perception varies from one person to the next according to various capabilities:
+- Physiological (e.g. colour blindness)
+- Transcultural (green = nature, blue = water)
+```
+
 ## Choropleth and Graduated Symbol Maps
 
-Choropleth and Graduated symbol maps are two really common thematic map types used in humanitarian work. 
+Based on these visual variables, cartographers are able to interpret and communicate information crucial to humanitarian operations. Choropleth and Graduated symbol maps are two common thematic map types used in humanitarian work. 
 
 :::{card} 
 :class-card: sd-text-justify sd-text-black sd-border-2
@@ -131,48 +164,22 @@ Cholera cases in Malawi (Source [Paul Knight](https://learn-sims.org/geospatial/
 
 :::
 
-<!--## Graphic Semiology
-
-__Definition__: Graphic semiology refers to a set of rules allowing the use of a __graphic sign systems__ to convey information. Graphic semiology uses visual variables to construct a system of signs, allowing the graphic translation of information.
-
-Our brain is capable of interpreting graphic relationships between entities in just seconds. Semiology attempts to theorise these interpretation to make the map more effective and relevant.
-
-EDIT: Remove this part?-->
-
-## Visual Variables
-
-```{figure} ../../fig/en_30.30.2_graphic_semiology_signs.png
----
-width: 500px
-name: Graphic information
----
-You can use different graphic signs depending on the type of information you want to display.
-```
-
-Visual variables are the __graphical means for visually transcribing information__. The visual variables are __shape, size, hue, value, texture, and orientation__. You can adjust these variables to appropriately represent the data at your disposal. They allows for the expression of __relationship of difference, order, association, or quantity__ between each element, helping to display different information.
-
-```{figure} ../../fig/en_visual_variables.png
----
-name: Visual variables
-width: 500px
----
-Visual variables according to Bertin (1967)
-```
-
-```{Caution} 
-Visual perception varies from one person to the next according to various capabilities:
-- Physiological (e.g. colour blindness)
-- Transcultural (green = nature, blue = water)
-```
-
 # Symbology and styling
 
-Depending on the use case and type of geodata at your disposal, there are multiple ways to visualise geodata in a comprehensive format:
+Depending on the use case and type of geodata at your disposal, there are multiple ways to visualise geodata in a comprehensive format. For example, you can:
 
-- You can change the 'styling' and colour of the data.
-- You can add text labels.
+- You can change the 'styling' and colour of the data
+- Change the thickness, colour of lines, or assign a dash pattern 
+- Change the colour and outlines of polygons
+- You can assign symbols or pictures to geodata
+- Change the size, colour and orientation of symbols
+- You can add text labels
+- You can change the font, colour and orientation of the text label
+- For raster data, you can assign a colour gradient for the different values
 
-Vector and raster data is visualized differently in GIS-Software. 
+The styling of a layer is how you communicate the information to your audience. Each data-layer in your QGIS-project has it's own styling rules. These can range from simple (e.g. display line data as black lines, assigning a colour to polygons) to more complex (e.g. differentiate between different types of roads, add complex fill-patterns to polygons, or add SVG-symbols of varying sizes to ). 
+
+<!-- Vector and raster data is visualized differently in GIS-Software. -->
 
 ## Styling Panel
 
@@ -294,7 +301,8 @@ Most simple markers consist of a __fill__ and an __outline__. The shape of the m
 - The fill determines the fill colour of the symbol. You can change the colour and transparency. You are also able to make more complex fills such as a line pattern fill, or an SVG-symbol fill.
 - The outline determines the colour, type, and thickness of the outline. Next to the colour and transparency, the outline is the most critical for distinguishing between different elements. For example, thicker lines for roads usually signify roads of a higher order (such as highways), while thin dashed lines might signify footpaths, inaccessible to road vehicles.
 
-
+<!--ADD: Examples of simple markers for Points, Lines, Polygons
+ALSO: With different thickness-->
 
 ```{admonition} Optional: Now it's your turn
 :class: tip
@@ -303,8 +311,10 @@ Check out Paul Knight's [tutorial on how to create a proportional circle map](ht
 ```
 
 
-
 ### Using SVG-Symbols
+
+In some cases, you might want to use more complex symbols in your map. For example, you want to use a cross to signify a hospital, a book to signify a library, or a plane to signify an airport. In these cases, you can use SVG-symbols. Keep in mind that, ordinarily, SVG-symbols work only for point data. 
+To use SVG-symbols:
 
 1. Open the styling panel and open the `single marker` options.
 2. Under `Symbol layer type`, select __"SVG Marker"__
@@ -312,8 +322,11 @@ Check out Paul Knight's [tutorial on how to create a proportional circle map](ht
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video>
 
+There is already a default library of SVG-symbols. If you are looking for a specific symbol, try searching for it in the search bar 
+
 #### Adding an external SVG-library
 
+For some maps, you might want to use different symbols. For example, the conventional symbols used by your organization, or more specific symbols
 If you have a library of SVG-symbols as a folder you can add them to your Styling manager.
 
 1. Open the style manager: `Settings` > `Style Manager`
@@ -328,27 +341,14 @@ The new SVG-symbols are in your SVG library.
 
 #### Using IFRC-Symbols
 
+:::{admonition} IFRC- and UN-Symbols repositories
+class: tip
+
 The IFRC provides icons and symbols that can be used in your maps. You can find them under [this link](https://go-user-library.ifrc.org/brand-design/iconography). 
 
 There is also a library with humanitarian icons by the [United Nations Office for the Coordination of Humanitarian affairs](https://www.unocha.org) which can be found [here](https://github.com/mapaction/ocha-humanitarian-icons-for-gis?tab=readme-ov-file). The files are available in different formats you can use in QGIS. 
 
-
-<!---With the plugin __"Plugin Resource Sharing"__, you can install symbol and icon libraries used by the Red Cross and UN, as well as other useful symbols.
-
-1. Install the __"Plugin Resource Sharing"__ by opening the plugin installation window and searching for the plugin.
-2. Once installed, open the plugin interface by clicking on `plugin` > `Plugin Resource Sharing`.
-3. Search for packages by the Red Cross and the UN.
-4. Install the packages.
-
-Now the symbols should be available in the styling manager in the SVG folder.
-
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_resource_sharing_plugin.mp4"></video>
-
-```{tip}
-Make sure to check out the other resources available in the resource sharing plugin and see if they are useful to you.
-```
--->
-
+:::
 
 ## Labels
 
@@ -505,50 +505,38 @@ By default, QGIS renders the labels so that they don't overlap with other labels
 
 ```
 
-If you are interested in how to set up and style labels further, take a look at these wiki articles:
+:::{admonition} Now it's your turn!
+
+Take the time to apply what we've learned yourself by doing one or two of the [exercises of module 4](/content/Modul_4/en_qgis_modul_4_exercises.md).
+
+```{card}
+:link: 
+```
+
+:::
+
+<!--MOVE: move admonition a bit up?--->
+
+The different visualisation methods can be combined to visualise complex situations on a map. You can combine a choropleth map with graduated symbology to display to variables at once. Additional information can be added in the form of labels or text boxes.
+
+```{figure} /fig/en_complex_bivariate_map.png
+---
+name: complex_bivariate_map_example
+width: 750 px
+---
+A map combining layer styling and different visual variables to communicate a complex situation (Source: [SIMS](https://rcrcsims.org/portfolio/view/18))
+```
+
+
+
+:::{Attention}
+
+Check out the [wiki article](/content/Wiki/en_qgis_representation_wiki.md) for detailed, step-by-step tutorials on how to use the different features of the styling panel.
 
 You can also read further in the article "[Labeling and text hierarchy in cartography](https://www.axismaps.com/guide/labeling)" by Axis Maps. 
 
-## Symbology for raster data
 
-As we have already learned, raster data are basically a grid of pixels with different (numerical) values. As such, you can't style the shape, fill or outline of raster data. Raster data is visualized by assigning a colour ramp to the pixel value. QGIS offers several options to visualise raster data. For example, you can create a hillshade with digital elevation model (DEM). 
-
-### Assigning a colour gradient to raster data
-
-To assign a colour gradient for raster data, you need to:
-
-1. Open the `styling panel` for the raster layer
-2. Navigate to the `Symbology tab`  
-3. By default, the colour scheme is set to Singleband Gray (if you only have one colour band in the data set). Click on `Singleband Gray` and switch to `Singleband Pseudocolour`
-4. Click on __the arrow to the right of the colour ramp__. Here you can choose a pre-made colour ramp
-5. You can modify the colour ramp by __clicking on the colour ramp__.
-
-``` {figure} ../../fig/en_30.30.2_raster_data_colour_gradient.png
----
-name: raster data colour gradient
-width: 600px
----
-Colour Ramp Selector
-```
-
-In the colour ramp selector, you can adjust each colour step. On the bottom, you can see a plot for the Hue, __Saturation__, __Lightness__ and __Opacity__. The last three in particular are useful to understand how your colour ramp will appear. Gradients from light to dark are easier to read: Check if the plot for the __Lightness__ has a more or less linear plot.
-
-#### Styling a digital elevation model
-
-Elevation data sets are frequently used to communicate the terrain on a map. By default, an elevation model will be displayed with a gray colour ramp. However, if you don't need the to know the elevation at certain points, you can choose to display the __hillshade__ of the terrain. Hillshading will simulate the shadow of the terrain as if it would be exposed to a light source. In this example, we will use the elevation raster data (.tiff) of Algeria from the Humanitarian Data Exchange platform (humdata.org) To achieve this,
-
- 1. Open the `symbology` tab
- 2. Click on `Render type` and select `Hillshade`. You will have an option to select the direction of the light. Conventionally, the light source is positioned in the North-West, so we can keep the default settings. In some cases with rough terrain, it can be useful to make the hillshade __Multidirectional__.
- 3. The hillshade will be very dark and cover most of the map. We need to make it lighter...
-
-<!--ADD: Video-->
-
-### Inverting the colour ramp
-
-In some cases, the colour ramp should be inverted to make it easier to read the map:
-
-1. Click on the __arrow next to the Colour ramp__ to open the dropdown menu.
-2. Click on `Invert Colour Ramp`.
+:::
 
 ## Exporting and Importing Styles
 
