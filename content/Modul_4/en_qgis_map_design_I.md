@@ -1,8 +1,11 @@
 # Visualisation of Geodata: Symbology and Colours
 
-The representation of geodata in maps is essential for providing useful location-based insights. This subchapter will cover the basics of good map design, how to create a map design in QGIS, as well as common mistakes when designing or interpreting maps.
+The representation of geodata in maps is essential for providing useful location-based insights. This subchapter will 
+cover the basics of good map design, how to create a map design in QGIS, as well as common mistakes when designing or 
+interpreting maps.
 
-In this chapter we will go over the basics of symbology, colours, and how to adjust individual layers in QGIS to create comprehensive maps.
+In this chapter we will go over the basics of symbology, colours, and how to adjust individual layers in QGIS to create 
+comprehensive maps.
 
 :::{admonition} Recap: Types of Maps
 :class: seealso
@@ -51,7 +54,10 @@ name: Graphic information
 You can use different graphic signs depending on the type of information you want to display.
 ```
 
-Visual variables are the __graphical means for visually transcribing information__. The visual variables are __shape, size, hue, value, texture, and orientation__. You can adjust these variables to appropriately represent the data at your disposal. They allows for the expression of __relationship of difference, order, association, or quantity__ between each element, helping to display different information.
+Visual variables are the __graphical means for visually transcribing information__. The visual variables are __shape, 
+size, hue, value, texture, and orientation__. You can adjust these variables to appropriately represent the data at 
+your disposal. They allows for the expression of __relationship of difference, order, association, or quantity__ 
+between each element, helping to display different information.
 
 ```{figure} ../../fig/en_visual_variables.png
 ---
@@ -69,7 +75,9 @@ Visual perception varies from one person to the next according to various capabi
 
 ## Choropleth and Graduated Symbol Maps
 
-Based on these visual variables, cartographers are able to interpret and communicate information crucial to humanitarian operations. Choropleth and Graduated symbol maps are two common thematic map types used in humanitarian work. 
+Based on these visual variables, cartographers are able to interpret and communicate information crucial to 
+humanitarian operations. Choropleth and Graduated symbol maps are two common thematic map types used in humanitarian 
+work. 
 
 :::{card} 
 :class-card: sd-text-justify sd-text-black sd-border-2
@@ -135,7 +143,9 @@ __Urban Planning and Infrastructure__
 
 ---
 
-Choropleth maps are usually created by [classifying](/content/Modul_3/en_qgis_data_classification.md) geodata into distinct groups, either using categorised or graduated classification. The effectiveness of a choropleth map is dependent on the __colouring scheme__.  
+Choropleth maps are usually created by [classifying](/content/Modul_3/en_qgis_data_classification.md) geodata into 
+distinct groups, either using categorised or graduated classification. The effectiveness of a choropleth map is 
+dependent on the __colouring scheme__.  
 
 :::
 
@@ -143,7 +153,10 @@ Choropleth maps are usually created by [classifying](/content/Modul_3/en_qgis_da
 :class-card: sd-text-justify sd-text-black sd-border-2
 __Proportional Circles/Graduated Symbols Map__
 ^^^
-Another very useful type of map in humanitarian action is the proportional circle or graduated symbol map. This type of map uses circles of varying sizes to represent data values across different locations. The larger the circle, the higher the data value it represents. This makes it useful for showing quantities or comparing values across different points on a map. 
+Another very useful type of map in humanitarian action is the proportional circle or graduated symbol map. This type of 
+map uses circles of varying sizes to represent data values across different locations. The larger the circle, the 
+higher the data value it represents. This makes it useful for showing quantities or comparing values across different 
+points on a map. 
 
 
 ```{figure} /fig/proportional_circles_example.png
@@ -166,7 +179,8 @@ Cholera cases in Malawi (Source [Paul Knight](https://learn-sims.org/geospatial/
 
 # Symbology and styling
 
-Depending on the use case and type of geodata at your disposal, there are multiple ways to visualise geodata in a comprehensive format. For example, you can:
+Depending on the use case and type of geodata at your disposal, there are multiple ways to visualise geodata in a 
+comprehensive format. For example, you can:
 
 - You can change the 'styling' and colour of the data
 - Change the thickness, colour of lines, or assign a dash pattern 
@@ -177,7 +191,10 @@ Depending on the use case and type of geodata at your disposal, there are multip
 - You can change the font, colour and orientation of the text label
 - For raster data, you can assign a colour gradient for the different values
 
-The styling of a layer is how you communicate the information to your audience. Each data-layer in your QGIS-project has it's own styling rules. These can range from simple (e.g. display line data as black lines, assigning a colour to polygons) to more complex (e.g. differentiate between different types of roads, add complex fill-patterns to polygons, or add SVG-symbols of varying sizes to ). 
+The styling of a layer is how you communicate the information to your audience. Each data-layer in your QGIS-project 
+has it's own styling rules. These can range from simple (e.g. display line data as black lines, assigning a colour to 
+polygons) to more complex (e.g. differentiate between different types of roads, add complex fill-patterns to polygons, 
+or add SVG-symbols of varying sizes to ). 
 
 <!-- Vector and raster data is visualized differently in GIS-Software. -->
 
@@ -199,7 +216,8 @@ For each layer in QGIS, there is a styling panel where you can change the symbol
 
 On the left of the styling panel you can choose the different tabs to access different styling options.
 
-In the styling panel you can change the styling for all features of a layer, set up categories for different symbols, create labels, and create colour ramps to differentiate between features with variable values.
+In the styling panel you can change the styling for all features of a layer, set up categories for different symbols, 
+create labels, and create colour ramps to differentiate between features with variable values.
 
 :::{dropdown} Video: Opening the styling panel
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_opening_the_styling_panel.mp4"></video>
@@ -217,9 +235,16 @@ In the styling panel you can change the styling for all features of a layer, set
 
 ## Colours
 
-Colours are arguably the most striking visual variables as they are easily distinguishable. However, depending on the type of data and the information you wish to convey, there are a few things to consider when choosing a colour scheme for your map. The most important variables for colours are the __hue__, the __value__ (saturation) and the __transparency__. 
+Colours are arguably the most striking visual variables as they are easily distinguishable. However, depending on the 
+type of data and the information you wish to convey, there are a few things to consider when choosing a colour scheme 
+for your map. The most important variables for colours are the __hue__, the __value__ (saturation) and the 
+__transparency__. 
 
-Colours schemes can be __categorial, sequential, or diverging__. If you wish to display different types of buildings or roads, the colour schemes should be categorial. Colour gradients, either sequential or diverging, are used for numerical data or data that can be ordered. For example, for the population sizes of districts a sequential colouring schemes is best to show the relative difference between the values. However, if the data has positive __and__ negative values, a diverging colour gradient should be used.
+Colours schemes can be __categorial, sequential, or diverging__. If you wish to display different types of buildings or 
+roads, the colour schemes should be categorial. Colour gradients, either sequential or diverging, are used for 
+numerical data or data that can be ordered. For example, for the population sizes of districts a sequential colouring 
+schemes is best to show the relative difference between the values. However, if the data has positive __and__ negative 
+values, a diverging colour gradient should be used.
 
 ``` {figure} ../../fig/en_colour_gradients_qualities.png
 ---
@@ -229,14 +254,20 @@ width: 750px
 Different types of colouring schemes
 ```
 
-When choosing colour gradients, a clear gradient from lighter to darker colours is usually the most appropriate, as the gradation is easily distinguishable and translates well into black and white. In the figure below, examples A and B are not good colour schemes, as it is difficult to make out the gradation and it does not translate well into black and white. You can achieve a clear sequence by grading the __saturation__ of the colour gradient.
+When choosing colour gradients, a clear gradient from lighter to darker colours is usually the most appropriate, as the 
+gradation is easily distinguishable and translates well into black and white. In the figure below, examples A and B are 
+not good colour schemes, as it is difficult to make out the gradation and it does not translate well into black and 
+white. You can achieve a clear sequence by grading the __saturation__ of the colour gradient.
 
 ```{figure} ../../fig/de_colour_gradients_saturation.png
 ---
 name: colour gradients saturation example
 width: 750px
 ---
-Examples for different colour gradients translated into black and white. Pay attention to the saturation gradient under each example. Source: Stauffer, Reto & Mayr, Georg & Dabernig, Markus & Zeileis, Achim. (2014). Somewhere Over the Rainbow: How to Make Effective Use of Colours in Meteorological Visualizations. Bulletin of the American Meteorological Society. 96. 140710055335002. 10.1175/BAMS-D-13-00155.1.
+Examples for different colour gradients translated into black and white. Pay attention to the saturation gradient under 
+each example. Source: Stauffer, Reto & Mayr, Georg & Dabernig, Markus & Zeileis, Achim. (2014). Somewhere Over the 
+Rainbow: How to Make Effective Use of Colours in Meteorological Visualizations. Bulletin of the American Meteorological 
+Society. 96. 140710055335002. 10.1175/BAMS-D-13-00155.1.
 ```
 
 Colour gradients can also encompass multiple hues:
@@ -267,7 +298,9 @@ Different Colour schemes for the Colour Vision Impaired; Source: Jenny, Bernhard
 
 ## Symbology for Vector Data
 
-You can use graphical variables to style vector data. As we have already learned, vector data can be either points, lines, or polygons. There are different options to symbolize these different types of vector data. In this subchapter, we will focus on a few common examples.
+You can use graphical variables to style vector data. As we have already learned, vector data can be either points, 
+lines, or polygons. There are different options to symbolize these different types of vector data. In this subchapter, 
+we will focus on a few common examples.
 
 ``` {figure} ../../fig/en_symbolization_vector_data.png
 ---
@@ -287,7 +320,8 @@ Remember that __the layer's symbology is saved within your project file, not wit
 :class-card: sd-text-justify sd-text-black sd-border-2
 __SVG-Symbols, Raster images, and Markers__
 ^^^
-QGIS let's you use different types markers for symbolization. These can be simple markers, raster images, or SVG-symbols.
+QGIS let's you use different types markers for symbolization. These can be simple markers, raster images, or 
+SVG-symbols.
 
 - __Simple markers__ are simple shapes such as rectangles, circles, or crosses that can be adjusted in the symbolization layer (colour, size, outline, etc.).
 - If you select __raster images__, the resolution of the symbol is limited by the amount of pixels in the image. It is not advisable to use high resolution images as symbols on your map because it may overload your PC.
@@ -297,15 +331,20 @@ QGIS let's you use different types markers for symbolization. These can be simpl
 
 ### Using Simple Markers
 
-Simple Markers are generally used to create the symbols for most elements on a map. For example, simple markers are used to visualise streets, building outlines, waterbodies, administrative boundaries or other polygons.
-Most simple markers consist of a __fill__ and an __outline__. The shape of the marker is generally dependent on the type of vector data (point, polygon, or line).
+Simple Markers are generally used to create the symbols for most elements on a map. For example, simple markers are 
+used to visualise streets, building outlines, waterbodies, administrative boundaries or other polygons.
+Most simple markers consist of a __fill__ and an __outline__. The shape of the marker is generally dependent on the 
+type of vector data (point, polygon, or line).
 
 - The fill determines the fill colour of the symbol. You can change the colour and transparency. You are also able to make more complex fills such as a line pattern fill, or an SVG-symbol fill.
 - The outline determines the colour, type, and thickness of the outline. Next to the colour and transparency, the outline is the most critical for distinguishing between different elements. For example, thicker lines for roads usually signify roads of a higher order (such as highways), while thin dashed lines might signify footpaths, inaccessible to road vehicles.
 
 ### Styling Vector data
 
-QGIS offers various ways to visualize vector data. In the Symbology Tab, you can select between various symbolization methods
+QGIS offers various ways to visualize vector data. In the Symbology Tab, you can select between various symbolization 
+methods:
+
+<!--CONTINUE HERE-->
 
 ::::{tab-set}
 
@@ -370,7 +409,9 @@ Check out Paul Knight's [tutorial on how to create a proportional circle map](ht
 
 ### Using SVG-Symbols
 
-In some cases, you might want to use more complex symbols in your map. For example, you want to use a cross to signify a hospital, a book to signify a library, or a plane to signify an airport. In these cases, you can use SVG-symbols. Keep in mind that, ordinarily, SVG-symbols work only for point data. 
+In some cases, you might want to use more complex symbols in your map. For example, you want to use a cross to signify 
+a hospital, a book to signify a library, or a plane to signify an airport. In these cases, you can use SVG-symbols. 
+Keep in mind that, ordinarily, SVG-symbols work only for point data. 
 To use SVG-symbols:
 
 1. Open the styling panel and open the `single marker` options.
@@ -383,7 +424,8 @@ There is already a default library of SVG-symbols. If you are looking for a spec
 
 #### Adding an external SVG-library
 
-For some maps, you might want to use different symbols. For example, the conventional symbols used by your organization, or more specific symbols
+QGIS also offers the option to add your own SVG-libraries, for example if your organisation uses a specific set of 
+icons. 
 If you have a library of SVG-symbols as a folder you can add them to your Styling manager.
 
 1. Open the style manager: `Settings` > `Style Manager`
@@ -411,7 +453,11 @@ There is also a library with humanitarian icons by the [United Nations Office fo
 
 ## Labels
 
-Labels are text that display information or values of the data. In QGIS, you can either select __Single Labels__ or __Rule-based Labelling__. For each option, an attribute (`value`) that will be displayed on the map. For example, the name of a city or region.  Additionally, you can __change the font, font size, colour and some other styling options__ for the label text. When you create a map, you can add labels to help your reader understand the map quickly. However, be aware that too much text information can overload the map with too much information for the reader to process.
+Labels are text that display information or values of the data. In QGIS, you can either select __Single Labels__ or 
+__Rule-based Labelling__. For each option, an attribute (`value`) that will be displayed on the map. For example, the 
+name of a city or region.  Additionally, you can __change the font, font size, colour and some other styling options__ 
+for the label text. When you create a map, you can add labels to help your reader understand the map quickly. However, 
+be aware that too much text information can overload the map with too much information for the reader to process.
 
 ### Single Labels and Rule-based Labeling
 
@@ -419,7 +465,9 @@ QGIS offers two methods to display labels: __Single Labels__ and __Rule-based La
 
 #### Single Labels
 
-Creates a single label style for every feature in the layer. You can select a attribute (value) which will be displayed. For example, the name of a settlement. You need to know which attribute displays the information you want to display. Look at the attribute table of the dataset to find it out.
+Creates a single label style for every feature in the layer. You can select a attribute (value) which will be 
+displayed. For example, the name of a settlement. You need to know which attribute displays the information you want to 
+display. Look at the attribute table of the dataset to find it out.
 
 ```{figure} /fig/labels_single_labels_example_nga_adm1.png
 ---
@@ -472,7 +520,9 @@ Single Labels was selected to display the names of the settlements (red dots). A
 
 #### Rule-based Labelling
 
-Create rules using expressions to select accurately which features are to be labeled. Each rule can have a different text formatting. Use this if you want to have more control over the information that will be displayed as labels. For example, you can filter your data to only display the names of regional capitals.
+Create rules using expressions to select accurately which features are to be labeled. Each rule can have a different 
+text formatting. Use this if you want to have more control over the information that will be displayed as labels. For 
+example, you can filter your data to only display the names of regional capitals.
 
 ```{figure} /fig/rule-based_labeling_example_settlements_nga.png
 ---
