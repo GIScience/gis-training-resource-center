@@ -81,15 +81,13 @@ __Wrap up:__
 
 ## Instructions
 
-### Background
-
 ### Step-by-step instructions
 
 :::{card} 
 :class-card: sd-text-justify sd-rounded-3 sd-border-2
-:link: 
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/Exercise_5/Module_5_Exercise_5_aggregating_adm.zip
 
-Click here to download the datasets for this exercise.
+__Click [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/Exercise_5/Module_5_Exercise_5_aggregating_adm.zip) to download the datasets for this exercise.__
 
 :::
 
@@ -188,7 +186,15 @@ In this step, we want to add the aggregated information we gained from the CSV f
 3. Close the joining dialogue window and investigate the new layer by opening it's attribute table. Scroll the right to find the new column "amount" that has been joined. 
 4. Notice how most of the rows have `NULL` as their value in this column? This is because the aggregated table only has 5 distinct districts (adm2) that received money. You can sort the table by clicking on the column header. 
 
-Congratulations, we have succesfully joined a CSV-file with a polygon layer!
+Congratulations, we have successfully joined a CSV-file with a polygon layer!
+
+```{figure} /fig/en_m5_ex5_results.png
+---
+name: aggregation_ex_results
+width: 750 px
+---
+The aggregated amount joined to a layer of the administrative boundaries.
+```
 
 
 <!--ADD: Optional steps to aggregate based on gender and status to create a map with additional information?-->
