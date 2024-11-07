@@ -544,7 +544,6 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristics-of-the-exercise">Characteristics of the exercise</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions-for-the-trainers">Instructions for the trainers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-by-step-instructions">Step-by-step instructions</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-aggregating-the-amount-of-transferred-money-on-admin2">Step 1: Aggregating the amount of transferred money on admin2</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-joining-the-aggregated-data-with-administrative-boundaries">Step 2: Joining the aggregated data with administrative boundaries</a></li>
@@ -671,11 +670,13 @@ document.write(`
 </details></section>
 <section id="instructions">
 <h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this heading">#</a></h2>
-<section id="background">
-<h3>Background<a class="headerlink" href="#background" title="Permalink to this heading">#</a></h3>
-</section>
 <section id="step-by-step-instructions">
 <h3>Step-by-step instructions<a class="headerlink" href="#step-by-step-instructions" title="Permalink to this heading">#</a></h3>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover sd-text-justify sd-rounded-3 sd-border-2 docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Click <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/Exercise_5/Module_5_Exercise_5_aggregating_adm.zip">here</a> to download the datasets for this exercise.</strong></p>
+</div>
+<a class="sd-stretched-link reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/Exercise_5/Module_5_Exercise_5_aggregating_adm.zip"></a></div>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-header docutils">
 <p class="sd-card-text"><strong>Available Data:</strong></p>
@@ -775,7 +776,13 @@ Solution<div class="sd-summary-down docutils">
 <li><p>Close the joining dialogue window and investigate the new layer by opening it’s attribute table. Scroll the right to find the new column “amount” that has been joined.</p></li>
 <li><p>Notice how most of the rows have <code class="docutils literal notranslate"><span class="pre">NULL</span></code> as their value in this column? This is because the aggregated table only has 5 distinct districts (adm2) that received money. You can sort the table by clicking on the column header.</p></li>
 </ol>
-<p>Congratulations, we have succesfully joined a CSV-file with a polygon layer!</p>
+<p>Congratulations, we have successfully joined a CSV-file with a polygon layer!</p>
+<figure class="align-default" id="aggregation-ex-results">
+<a class="reference internal image-reference" href="../../_images/en_m5_ex5_results.png"><img alt="../../_images/en_m5_ex5_results.png" src="../../_images/en_m5_ex5_results.png" style="width: 750px;" /></a>
+<figcaption>
+<p><span class="caption-text">The aggregated amount joined to a layer of the administrative boundaries.</span><a class="headerlink" href="#aggregation-ex-results" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <!--ADD: Optional steps to aggregate based on gender and status to create a map with additional information?--></section>
 </section>
 </section>
@@ -829,7 +836,6 @@ Solution<div class="sd-summary-down docutils">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristics-of-the-exercise">Characteristics of the exercise</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions-for-the-trainers">Instructions for the trainers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-by-step-instructions">Step-by-step instructions</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-aggregating-the-amount-of-transferred-money-on-admin2">Step 1: Aggregating the amount of transferred money on admin2</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-joining-the-aggregated-data-with-administrative-boundaries">Step 2: Joining the aggregated data with administrative boundaries</a></li>
