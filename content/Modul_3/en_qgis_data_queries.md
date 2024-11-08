@@ -10,6 +10,21 @@ Three general types of selection/queries in QGIS that will cover the majority of
 
 **3. Layer based spatial Selection:** Selecting features in one layer based on specified geometric relationships with features in another layer.
 
+
+::::{admonition} Now it's your turn!
+
+Querying data is essential to understand and manipulating your datasets. You can follow the steps outlined below by downloading [this dataset](https://datacatalog.worldbank.org/search/dataset/0038272/World-Bank-Official-Boundaries)
+
+:::{card}
+:class-card: sd-text-justify sd-rounded-3 sd-border-2
+:link: 
+
+__Download__ __[World Bank Official Boundaries](https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Module_3_world_bank_official_boundaries.zip)__
+
+:::
+
+::::
+
 ## Manual Selection
 Manual selection is done mostly using one of the click-based selection tools available under   in your project toolbar (alternative: `Edit` > `Select`). These include `Select Feature(s)`, `Select Feature by Polygon`, `Select Feature by Freehand` and `Select Feature by Radius`.
 \
