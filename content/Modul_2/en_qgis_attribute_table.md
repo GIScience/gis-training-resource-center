@@ -19,7 +19,8 @@ name: Vector Data overview
 Vector Data overview. Source: HeiGIT
 ```
 
-:::{dropdown} Trainer's corner
+:::{admonition} Now it's your turn!
+:class: note
 
 You can complement this chapter by doing the steps with a vector layer of your choice. 
 You can also do exercise 2 from this module. 

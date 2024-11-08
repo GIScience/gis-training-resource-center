@@ -385,13 +385,24 @@ An example of a warning icon while adjusting the parameters of a processing tool
 If you have more questions before or after the training or require assistance, do not hesitate to reach out to us by writing an email to `gis-training-platform@heigit.org`.
 ```
 
-There is a big and vibrant QGIS community online. If you are struggling with a specific function, or have questions on how to achieve GIS operations that are not covered on this platform, you can find help on dedicated QGIS forums: 
+:::{card}
+:class-card: sd-text-justify sd-rounded-3 sd-border-2
+:link: 
+https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html
+We have collected a list of __[Common errors and issues](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html)__. If you ever find yourself at your wits end (which can happen a lot when working with QGIS!), try finding the solution to your problem here. 
+
+:::
+
+
+There is also a big and vibrant QGIS community online. If you are struggling with a specific function, or have questions on how to achieve GIS operations that are not covered on this platform, you can find help on dedicated QGIS forums: 
 
 - QGIS user forum on stackexchange: https://gis.stackexchange.com/?tags=qgis
 - QGIS user groups: https://www.qgis.org/en/site/forusers/usergroups.html#qgis-usergroups
 - QGIS telegram channel: https://t.me/joinchat/Aq2V5RPoxYYhXqUPoxRWPQ
 
-Additionally, there is a large amount of youtube Tutorials and learning Material available online. Amongst others, the [QGIS documentation](https://docs.qgis.org/3.34/en/docs/index.html) also offers Exercises and Training Material, as well as a [Gentle Introduction to QGIS](https://docs.qgis.org/3.34/en/docs/gentle_gis_introduction/index.html). 
+Additionally, there is a large amount of youtube tutorials, online guides and learning material for specific 
+GIS-operations, so it is always a good idea to do a quick google search. Amongst others, the [QGIS documentation]
+(https://docs.qgis.org/3.34/en/docs/index.html) also offers Exercises and Training Material, as well as a [Gentle Introduction to QGIS](https://docs.qgis.org/3.34/en/docs/gentle_gis_introduction/index.html). 
 
-You can also reach out to us by writing us an email to gis-training-platform@heigit.org. 
+
 
