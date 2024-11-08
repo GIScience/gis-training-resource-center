@@ -17,9 +17,9 @@ Querying data is essential to understand and manipulating your datasets. You can
 
 :::{card}
 :class-card: sd-text-justify sd-rounded-3 sd-border-2
-:link: 
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Module_3_world_bank_official_boundaries.zip
 
-__Download__ __[World Bank Official Boundaries](https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Module_3_world_bank_official_boundaries.zip)__
+__Download World Bank Official Boundaries__
 
 :::
 
@@ -149,5 +149,6 @@ Selected features are again highlighted in bright yellow in your geospatial inte
 | Are within   | Features from the target layer are selected if they are completely within features in the source layer. | Selecting building polygons that are entirely within a polygon of a city boundary. |
 | Cross        | Features from the target layer are selected if they cross features in the source layer.               | Selecting rivers that cross a road.                                           |
 
+<!--ADD examples relevant to IM? -->
 
 [def]: /fig/mActionSelectRectangle.png
