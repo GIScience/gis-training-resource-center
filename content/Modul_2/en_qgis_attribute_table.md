@@ -19,10 +19,12 @@ name: Vector Data overview
 Vector Data overview. Source: HeiGIT
 ```
 
-:::{dropdown} Trainer's corner
+:::{admonition} Now it's your turn!
+:class: note
 
-You can complement this chapter by doing the steps with a vector layer of your choice. 
-You can also do exercise 2 from this module. 
+You can complement this chapter by doing the steps with a vector layer of your choice. When working with geodata, you 
+will always have to understand the information stored in the datasets, both the geometries as well as the attribute 
+data. 
 
 :::
 
@@ -70,7 +72,7 @@ You can also use the shortcut `F6` (in some cases `Fn` + `F6`) to open the attri
 ```
 ::::
 
-:::{dropdown} Buttons of Attribute Table
+:::{dropdown} Buttons of the attribute table
 |Icon|Description|Purpose|Shortcut|
 |---|---|-----|---|
 | ![](/fig/mActionToggleEditing.png)|__Toggle editing mode__ | Enable editing functionalities|`Ctrl+E`|
