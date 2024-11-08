@@ -13,7 +13,7 @@ Three general types of selection/queries in QGIS that will cover the majority of
 
 ::::{admonition} Now it's your turn!
 
-Querying data is essential to understand and manipulating your datasets. You can follow the steps outlined below by downloading [this dataset](https://datacatalog.worldbank.org/search/dataset/0038272/World-Bank-Official-Boundaries)
+Querying data is essential to understand and manipulating your datasets. You can follow the steps outlined below by downloading [this dataset](https://datacatalog.worldbank.org/search/dataset/0038272/World-Bank-Official-Boundaries).
 
 :::{card}
 :class-card: sd-text-justify sd-rounded-3 sd-border-2
