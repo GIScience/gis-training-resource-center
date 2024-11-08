@@ -217,13 +217,13 @@ Databases such as Geodatabase (`.gdb`) or
 
 ----
 
-{numref}`The main geographical data formats` summarizes the different data formats for raster and vector data commonly used in GIS.
+{numref}`main_geodata_formats` summarizes the different data formats for raster and vector data commonly used in GIS.
 
 ```{figure} /fig/en_data_formats.png
 ---
 width: 700px
 align: center
-name: The main geographical data formats
+name: main_geodata_formats
 ---
 The main geographical data formats. Source: [CartONG](https://cartong.pages.gitlab.cartong.org/learning-corner/en/4_data_geo/4_1_formats)
 ```
@@ -258,6 +258,7 @@ Layers in a GIS. Source: [CartONG](https://cartong.pages.gitlab.cartong.org/lear
 Practical experience is key to mastering GIS. Now is a good moment to apply what we've learned in the first exercise of module 2.
 
 :::{card}
+:class-card: sd-text-justify sd-rounded-3 sd-border-2
 :link: https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_geodata_concept_ex1.html
 
 __Module 2 Exercise 1: Understanding Geodata__

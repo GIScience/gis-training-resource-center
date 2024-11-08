@@ -1,4 +1,4 @@
-# Exercise 5: Aggregate and Assess the Cash Programs in Pakistan
+# Exercise 5: Aggregate and Assess G2P Money Transfers in Pakistan
 
 ## Characteristics of the exercise
 
@@ -30,9 +30,10 @@ __These skills are relevant for__
 
 ::::{grid} 2
 :::{grid-item-card}
+
 __Estimated time demand for the exercise__
 ^^^
-60 minutes
+~ 60 minutes
 
 :::
 
@@ -79,9 +80,7 @@ __Wrap up:__
 
 :::
 
-## Instructions
-
-### Step-by-step instructions
+## Step-by-step instructions
 
 :::{card} 
 :class-card: sd-text-justify sd-rounded-3 sd-border-2
@@ -96,7 +95,7 @@ __Available Data:__
 ^^^
 
 - `G2P_disbursement_report_cleaned.csv` - Datatable with cash transactions. This dataset has been cleaned and all information has been removed. 
-- `pak_admbnda_adm2_wfp_20220909` - Administrative boundaries on adm2 level (districts).
+- `pak_admbnda_adm2_wfp_20220909.shp` - Administrative boundaries on adm2 level (districts).
 :::
 
 ::::{margin}
@@ -104,6 +103,8 @@ __Available Data:__
 To load the CSV-file, navigate to `Layer` > `Add Layer` > `Add delimited text layer`.
 ```
 ::::
+
+### Preparing the data
 
 1. Unzip the exercise data and create a new QGIS-project.
 2. Load the data into your QGIS-project.
@@ -120,7 +121,7 @@ By comparing the values in the column `admin2_EN` from the `pak_admbnda_adm2_wfp
 
 ```
 
-#### Step 1: Aggregating the amount of transferred money on admin2
+### Step 1: Aggregating the amount of transferred money on admin2
 
 3. In the processing toolbox, search for the tool `Aggregate` under `Vector Geometry`. <kbd>Double-Click</kbd> on it. A new window will open (see {numref}`aggregate_tool`).
 
@@ -166,7 +167,7 @@ The Aggregate-tool in QGIS 3.36
     ```
 
 
-#### Step 2: Joining the aggregated data with administrative boundaries
+### Step 2: Joining the aggregated data with administrative boundaries
 
 In this step, we want to add the aggregated information we gained from the CSV file to the administrative boundaries. We need to join the aggregated table with the `pak_admbnda_adm2_wfp_20220909`-layer. 
 
