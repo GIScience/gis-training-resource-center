@@ -65,7 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/Modul_4/en_qgis_map_design_I';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Map Design: The Print layout" href="en_qgis_map_design_2.html" />
+    <link rel="next" title="Styling Vector Data" href="en_qgis_styling_vector_data.html" />
     <link rel="prev" title="Visualisation of Geodata and Map Making" href="en_module_4_overview.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -207,7 +207,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="en_module_4_overview.html">Visualisation of Geodata and Map Making</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Visualisation of Geodata: Symbology and Colours</a></li>
-
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_styling_vector_data.html">Styling Vector Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_map_design_2.html">Map Design: The Print layout</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_symbology_raster.html">Symbology for raster data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_map_examples.html">Examples of Good Map Design</a></li>
@@ -544,48 +544,13 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Visualisation of Geodata: Symbology and Colours</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visual-variables">Visual Variables</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choropleth-and-graduated-symbol-maps">Choropleth and Graduated Symbol Maps</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#symbology-and-styling">Symbology and styling</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#styling-panel">Styling Panel</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#symbology">Symbology</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#colours">Colours</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#colourblindness">Colourblindness</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#symbology-for-vector-data">Symbology for Vector Data</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-simple-markers">Using Simple Markers</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#styling-vector-data">Styling Vector data</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-svg-symbols">Using SVG-Symbols</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-an-external-svg-library">Adding an external SVG-library</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#using-ifrc-symbols">Using IFRC-Symbols</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choropleth-and-graduated-symbol-maps">Choropleth and Graduated Symbol Maps</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#choropleth-maps"><strong>Choropleth Maps</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proportional-circles-graduated-symbols-map"><strong>Proportional Circles/Graduated Symbols Map</strong></a></li>
 </ul>
 </li>
 </ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#labels">Labels</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#single-labels-and-rule-based-labeling">Single Labels and Rule-based Labeling</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#single-labels">Single Labels</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-single-labels-to-a-layer">Adding Single Labels to a Layer</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rule-based-labelling">Rule-based Labelling</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-rule-based-labels-to-a-layer">Adding Rule-based Labels to a Layer</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exporting-and-importing-styles">Exporting and Importing Styles</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#saving-or-exporting-styling-settings">Saving or exporting styling settings</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-a-style-into-a-qgis-project">Loading a style into a QGIS-project</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-resources">Further Resources</a></li>
-</ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -661,22 +626,20 @@ between each element, helping to display different information.</p>
 <p>Based on these visual variables, cartographers are able to interpret and communicate information crucial to
 humanitarian operations. Choropleth and Graduated symbol maps are two common thematic map types used in humanitarian
 work.</p>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-text-justify sd-text-black sd-border-2 docutils">
-<div class="sd-card-header docutils">
-<p class="sd-card-text"><strong>Choropleth Maps</strong></p>
-</div>
-<div class="sd-card-body docutils">
-<p class="sd-card-text">A choropleth map is a type of map that shows data using colors or shading within specific geographic areas, like
+<section id="choropleth-maps">
+<h3><strong>Choropleth Maps</strong><a class="headerlink" href="#choropleth-maps" title="Permalink to this heading">#</a></h3>
+<p>^^^</p>
+<p>A choropleth map is a type of map that shows data using colors or shading within specific geographic areas, like
 countries, states, or counties. It helps to visualize data patterns or distributions across regions. For example, a
 choropleth map could show population density, where darker shades indicate higher densities and lighter shades indicate
 lower densities.</p>
-<p class="sd-card-text">In essence:</p>
+<p>In essence:</p>
 <ul class="simple">
-<li><p class="sd-card-text">Data is divided into areas on the map.</p></li>
-<li><p class="sd-card-text">Colors or shades represent different values for each area.</p></li>
-<li><p class="sd-card-text">Easy to interpret – darker or more intense colors often mean higher values, and lighter colors mean lower values.</p></li>
+<li><p>Data is divided into areas on the map.</p></li>
+<li><p>Colors or shades represent different values for each area.</p></li>
+<li><p>Easy to interpret – darker or more intense colors often mean higher values, and lighter colors mean lower values.</p></li>
 </ul>
-<p class="sd-card-text">Choropleth maps are ideal for showing patterns over large areas but should be used carefully, as they don’t show exact
+<p>Choropleth maps are ideal for showing patterns over large areas but should be used carefully, as they don’t show exact
 values within each region, just an overall gradient or level of intensity and they are used in almost every application
 of mapping and GIS.</p>
 <figure class="align-default" id="choropleth-intro-example">
@@ -685,13 +648,13 @@ of mapping and GIS.</p>
 <p><span class="caption-number">Fig. 79 </span><span class="caption-text">An example of a choropleth map (Source: <a class="reference external" href="https://www.axismaps.com/guide/choropleth">AxisMaps</a>)</span><a class="headerlink" href="#choropleth-intro-example" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p class="sd-card-text"><strong>Use cases</strong>:</p>
-<p class="sd-card-text"><strong>Humanitarian Action</strong></p>
-<p class="sd-card-text">In humanitarian action, choropleth maps are used to:</p>
+<p><strong>Use cases</strong>:</p>
+<p><strong>Humanitarian Action</strong></p>
+<p>In humanitarian action, choropleth maps are used to:</p>
 <ul class="simple">
-<li><p class="sd-card-text">Identify vulnerable regions: Maps can show areas with high poverty rates, conflict, or disaster impact, helping responders prioritize regions most in need of aid.</p></li>
-<li><p class="sd-card-text">Track disease outbreaks: For instance, during an epidemic, choropleth maps can show areas with high infection rates, helping to direct medical resources and prevent further spread.</p></li>
-<li><p class="sd-card-text">Monitor food insecurity and famine risks: Maps that illustrate food scarcity help humanitarian organizations focus on regions where food aid is needed the most.</p></li>
+<li><p>Identify vulnerable regions: Maps can show areas with high poverty rates, conflict, or disaster impact, helping responders prioritize regions most in need of aid.</p></li>
+<li><p>Track disease outbreaks: For instance, during an epidemic, choropleth maps can show areas with high infection rates, helping to direct medical resources and prevent further spread.</p></li>
+<li><p>Monitor food insecurity and famine risks: Maps that illustrate food scarcity help humanitarian organizations focus on regions where food aid is needed the most.</p></li>
 </ul>
 <figure class="align-default" id="hum-sit-monitoring-choro-example">
 <a class="reference internal image-reference" href="../../_images/choropleth_hum_example.png"><img alt="../../_images/choropleth_hum_example.png" src="../../_images/choropleth_hum_example.png" style="width: 700px;" /></a>
@@ -699,34 +662,30 @@ of mapping and GIS.</p>
 <p><span class="caption-number">Fig. 80 </span><span class="caption-text">South Sudan: Humanitarian Situation Monitoring, April-May 2024 - Damaged shelters (Source: <a class="reference external" href="https://repository.impact-initiatives.org/document/impact/897badb8/REACH_SSD_Map_HSM_AprilMay2024_DamagedShelters_June2024-1.pdf">REACH</a>)</span><a class="headerlink" href="#hum-sit-monitoring-choro-example" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p class="sd-card-text"><strong>Environmental Science</strong></p>
+<p><strong>Environmental Science</strong></p>
 <ul class="simple">
-<li><p class="sd-card-text">Show pollution levels: Choropleth maps can depict air or water quality across regions, helping to identify polluted areas.</p></li>
-<li><p class="sd-card-text">Track deforestation: Maps highlighting forest coverage changes make it easy to spot deforestation trends.</p></li>
-<li><p class="sd-card-text">Climate impact: Regions prone to temperature rise or extreme weather can be highlighted to aid climate adaptation efforts.</p></li>
+<li><p>Show pollution levels: Choropleth maps can depict air or water quality across regions, helping to identify polluted areas.</p></li>
+<li><p>Track deforestation: Maps highlighting forest coverage changes make it easy to spot deforestation trends.</p></li>
+<li><p>Climate impact: Regions prone to temperature rise or extreme weather can be highlighted to aid climate adaptation efforts.</p></li>
 </ul>
-<p class="sd-card-text"><strong>Public Health</strong></p>
+<p><strong>Public Health</strong></p>
 <ul class="simple">
-<li><p class="sd-card-text">Visualize health disparities: Choropleth maps can show regions with high rates of disease, poor access to healthcare, or varying vaccination rates.</p></li>
-<li><p class="sd-card-text">Resource allocation: Health authorities use these maps to allocate medical resources based on areas with higher health needs.</p></li>
+<li><p>Visualize health disparities: Choropleth maps can show regions with high rates of disease, poor access to healthcare, or varying vaccination rates.</p></li>
+<li><p>Resource allocation: Health authorities use these maps to allocate medical resources based on areas with higher health needs.</p></li>
 </ul>
-<p class="sd-card-text"><strong>Urban Planning and Infrastructure</strong></p>
+<p><strong>Urban Planning and Infrastructure</strong></p>
 <ul class="simple">
-<li><p class="sd-card-text">Display population density: Maps show where populations are concentrated, helping in city planning and infrastructure development.</p></li>
-<li><p class="sd-card-text">Identify socioeconomic patterns: Urban planners use these maps to see income, employment, and education levels across neighborhoods.</p></li>
+<li><p>Display population density: Maps show where populations are concentrated, helping in city planning and infrastructure development.</p></li>
+<li><p>Identify socioeconomic patterns: Urban planners use these maps to see income, employment, and education levels across neighborhoods.</p></li>
 </ul>
 <hr class="docutils" />
-<p class="sd-card-text">Choropleth maps are usually created by <a class="reference internal" href="../Modul_3/en_qgis_data_classification.html"><span class="doc std std-doc">classifying</span></a> geodata into
+<p>Choropleth maps are usually created by <a class="reference internal" href="../Modul_3/en_qgis_data_classification.html"><span class="doc std std-doc">classifying</span></a> geodata into
 distinct groups, either using categorised or graduated classification. The effectiveness of a choropleth map is
 dependent on the <strong>colouring scheme</strong>.</p>
-</div>
-</div>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-text-justify sd-text-black sd-border-2 docutils">
-<div class="sd-card-header docutils">
-<p class="sd-card-text"><strong>Proportional Circles/Graduated Symbols Map</strong></p>
-</div>
-<div class="sd-card-body docutils">
-<p class="sd-card-text">Another very useful type of map in humanitarian action is the proportional circle or graduated symbol map. This type of
+</section>
+<section id="proportional-circles-graduated-symbols-map">
+<h3><strong>Proportional Circles/Graduated Symbols Map</strong><a class="headerlink" href="#proportional-circles-graduated-symbols-map" title="Permalink to this heading">#</a></h3>
+<p>Another very useful type of map in humanitarian action is the proportional circle or graduated symbol map. This type of
 map uses circles of varying sizes to represent data values across different locations. The larger the circle, the
 higher the data value it represents. This makes it useful for showing quantities or comparing values across different
 points on a map.</p>
@@ -742,464 +701,131 @@ points on a map.</p>
 <p><span class="caption-number">Fig. 82 </span><span class="caption-text">Cholera cases in Malawi (Source <a class="reference external" href="https://learn-sims.org/geospatial/creating-a-proportional-circle-map-in-qgis/">Paul Knight</a>).</span><a class="headerlink" href="#prop-circles-example-2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+# Symbology and styling
+
+Depending on the use case and type of geodata at your disposal, there are multiple ways to visualise geodata in a 
+comprehensive format. For example, you can:
+
+- You can change the &#39;styling&#39; and colour of the data
+- Change the thickness, colour of lines, or assign a dash pattern 
+- Change the colour and outlines of polygons
+- You can assign symbols or pictures to geodata
+- Change the size, colour and orientation of symbols
+- You can add text labels
+- You can change the font, colour and orientation of the text label
+- For raster data, you can assign a colour gradient for the different values
+
+The styling of a layer is how you communicate the information to your audience. Each data-layer in your QGIS-project 
+has it&#39;s own styling rules. These can range from simple (e.g. display line data as black lines, assigning a colour to 
+polygons) to more complex (e.g. differentiate between different types of roads, add complex fill-patterns to polygons, 
+or add SVG-symbols of varying sizes to ). 
+
+&lt;!-- Vector and raster data is visualized differently in GIS-Software. --&gt;
+
+
+## Symbology
+
+- Symbology is used to change the look of features on a map
+- It makes maps more visually appealing and easier to read
+- Colours and styles represent a specific information
+- Symbology is applied to layers, but within the same layer we can assign multiple styles to features
+- The symbology of a layer can be __changed based on one of the layer&#39;s attributes__.
+
+&lt;!---- To Do: add different visualisation for different types of data (discrete vs. continuous values, insert image). For example the amount of rainfall/temperature is a continuous value.--&gt;
+
+## Colours
+
+Colours are arguably the most striking visual variables as they are easily distinguishable. However, depending on the 
+type of data and the information you wish to convey, there are a few things to consider when choosing a colour scheme 
+for your map. The most important variables for colours are the __hue__, the __value__ (saturation) and the 
+__transparency__. 
+
+Colours schemes can be __categorial, sequential, or diverging__. If you wish to display different types of buildings or 
+roads, the colour schemes should be categorial. Colour gradients, either sequential or diverging, are used for 
+numerical data or data that can be ordered. For example, for the population sizes of districts a sequential colouring 
+schemes is best to show the relative difference between the values. However, if the data has positive __and__ negative 
+values, a diverging colour gradient should be used.
+
+``` {figure} ../../fig/en_colour_gradients_qualities.png
+---
+name: Colouring schemes
+width: 750px
+---
+Different types of colouring schemes
+```
+
+When choosing colour gradients, a clear gradient from lighter to darker colours is usually the most appropriate, as the 
+gradation is easily distinguishable and translates well into black and white. In the figure below, examples A and B are 
+not good colour schemes, as it is difficult to make out the gradation and it does not translate well into black and 
+white. You can achieve a clear sequence by grading the __saturation__ of the colour gradient.
+
+```{figure} ../../fig/de_colour_gradients_saturation.png
+---
+name: colour gradients saturation example
+width: 750px
+---
+Examples for different colour gradients translated into black and white. Pay attention to the saturation gradient under 
+each example. Source: Stauffer, Reto &amp; Mayr, Georg &amp; Dabernig, Markus &amp; Zeileis, Achim. (2014). Somewhere Over the 
+Rainbow: How to Make Effective Use of Colours in Meteorological Visualizations. Bulletin of the American Meteorological 
+Society. 96. 140710055335002. 10.1175/BAMS-D-13-00155.1.
+```
+
+Colour gradients can also encompass multiple hues:
+
+```{figure} ../../fig/colour_gradients_hues.png
+---
+name: colour gradients with multiple hues
+width: 750px
+---
+Single hue gradient on the left; Multiple hue gradient on the right.  
+```
+
+```{tip}
+The [Colourbrewer website](colorbrewer2.org) is a quick and useful tool to select and generate colour palettes for your use case. 
+```
+
+### Colourblindness
+
+When choosing the colours, you have to keep in mind that colour gradients (especially diverging Red-Green gradients) can be hard or impossible to distinguish for people with colour blindness.
+
+``` {figure} ../../fig/Colour_Blindness.png
+---
+name: colour blindness examples
+width: 750px
+---
+Different Colour schemes for the Colour Vision Impaired; Source: Jenny, Bernhard, and Nathaniel Vaughn Kelso. (2007). Color Design for the Color Vision Impaired. *Cartographic Perspectives*, no. 58 (September 1, 2007): 61-67. https://doi.org/10.14714/CP58.270 
+```
+
+## Complex Maps
+
+The different symbolisation methods discussed in this chapter can be combined in different ways to create sophisticated reports and maps. By combining several methods, you can communicate different phenomena intuitively to the reader. A classical example is a combination of a choropleth map (graduated colours) with a proportional circles map (see {numref}`bivariate_map_example_lebanon`). 
+
+
+```{figure} /fig/en_complex_map_lebanon.png
+name: bivariate_map_example_lebanon
+width: 550 px
+---
+A complex map using graduated colours and proportional circles (Source: [REACH Initiative](https://reliefweb.int/map/lebanon/lebanon-conflict-and-displacement-overview-30-september-2024))
+```
+
+
+```{figure} /fig/en_complex_bivariate_map.png
+---
+name: complex_bivariate_map_example
+width: 750 px
+---
+A complex map combining layer styling and different visual variables to communicate a complex situation (Source: [SIMS](https://rcrcsims.org/portfolio/view/18))
+```
+
+
+:::{admonition} Now it&#39;s your turn!
+:class: tip
+{numref}`bivariate_map_example_lebanon` and {numref}`complex_bivariate_map_example` both make use of graduated colours as well as graduated symbols. What other symbolisation principles can you detect on these maps? 
+</pre></div>
 </div>
-</div>
+<p>Now that we have learned the different visual variables, and know how to use them to create complex maps, the next chapter <a class="reference internal" href="en_qgis_styling_vector_data.html"><span class="doc std std-doc">Symbology for Vector data</span></a> will explain how to set up different symbolisation and styling methods in QGIS.</p>
 </section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="symbology-and-styling">
-<h1>Symbology and styling<a class="headerlink" href="#symbology-and-styling" title="Permalink to this heading">#</a></h1>
-<p>Depending on the use case and type of geodata at your disposal, there are multiple ways to visualise geodata in a
-comprehensive format. For example, you can:</p>
-<ul class="simple">
-<li><p>You can change the ‘styling’ and colour of the data</p></li>
-<li><p>Change the thickness, colour of lines, or assign a dash pattern</p></li>
-<li><p>Change the colour and outlines of polygons</p></li>
-<li><p>You can assign symbols or pictures to geodata</p></li>
-<li><p>Change the size, colour and orientation of symbols</p></li>
-<li><p>You can add text labels</p></li>
-<li><p>You can change the font, colour and orientation of the text label</p></li>
-<li><p>For raster data, you can assign a colour gradient for the different values</p></li>
-</ul>
-<p>The styling of a layer is how you communicate the information to your audience. Each data-layer in your QGIS-project
-has it’s own styling rules. These can range from simple (e.g. display line data as black lines, assigning a colour to
-polygons) to more complex (e.g. differentiate between different types of roads, add complex fill-patterns to polygons,
-or add SVG-symbols of varying sizes to ).</p>
-<!-- Vector and raster data is visualized differently in GIS-Software. -->
-<section id="styling-panel">
-<h2>Styling Panel<a class="headerlink" href="#styling-panel" title="Permalink to this heading">#</a></h2>
-<figure class="align-left" id="id2">
-<a class="reference internal image-reference" href="../../_images/en_30.30.2_styling_panel.png"><img alt="../../_images/en_30.30.2_styling_panel.png" src="../../_images/en_30.30.2_styling_panel.png" style="height: 400px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 83 </span><span class="caption-text">Styling panel in QGIS 3.30.2</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>For each layer in QGIS, there is a styling panel where you can change the symbology, colour and label for the features in that layer. There are two ways to open the layer styling options in QGIS:</p>
-<ol class="arabic simple">
-<li><p>Right click on the layer you wish to style and select <code class="docutils literal notranslate"><span class="pre">properties</span></code>. A new window will open up with a vertical tab section on the left. Navigate to the <code class="docutils literal notranslate"><span class="pre">symbology</span></code> tab.</p></li>
-<li><p>Open the layer styling panel by enabling it under <code class="docutils literal notranslate"><span class="pre">View</span></code>&gt;<code class="docutils literal notranslate"><span class="pre">Panels</span></code>&gt;<code class="docutils literal notranslate"><span class="pre">Styling</span> <span class="pre">Panel</span></code>. Usually, the panel will appear on the right side of map canvas.</p></li>
-</ol>
-<p>On the left of the styling panel you can choose the different tabs to access different styling options.</p>
-<p>In the styling panel you can change the styling for all features of a layer, set up categories for different symbols,
-create labels, and create colour ramps to differentiate between features with variable values.</p>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Video: Opening the styling panel<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_opening_the_styling_panel.mp4"></video></p>
-</div>
-</details></section>
-<section id="symbology">
-<h2>Symbology<a class="headerlink" href="#symbology" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Symbology is used to change the look of features on a map</p></li>
-<li><p>It makes maps more visually appealing and easier to read</p></li>
-<li><p>Colours and styles represent a specific information</p></li>
-<li><p>Symbology is applied to layers, but within the same layer we can assign multiple styles to features</p></li>
-<li><p>The symbology of a layer can be <strong>changed based on one of the layer’s attributes</strong></p></li>
-</ul>
-<!---- To Do: add different visualisation for different types of data (discrete vs. continuous values, insert image). For example the amount of rainfall/temperature is a continuous value.-->
-</section>
-<section id="colours">
-<h2>Colours<a class="headerlink" href="#colours" title="Permalink to this heading">#</a></h2>
-<p>Colours are arguably the most striking visual variables as they are easily distinguishable. However, depending on the
-type of data and the information you wish to convey, there are a few things to consider when choosing a colour scheme
-for your map. The most important variables for colours are the <strong>hue</strong>, the <strong>value</strong> (saturation) and the
-<strong>transparency</strong>.</p>
-<p>Colours schemes can be <strong>categorial, sequential, or diverging</strong>. If you wish to display different types of buildings or
-roads, the colour schemes should be categorial. Colour gradients, either sequential or diverging, are used for
-numerical data or data that can be ordered. For example, for the population sizes of districts a sequential colouring
-schemes is best to show the relative difference between the values. However, if the data has positive <strong>and</strong> negative
-values, a diverging colour gradient should be used.</p>
-<figure class="align-default" id="colouring-schemes">
-<a class="reference internal image-reference" href="../../_images/en_colour_gradients_qualities.png"><img alt="../../_images/en_colour_gradients_qualities.png" src="../../_images/en_colour_gradients_qualities.png" style="width: 750px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 84 </span><span class="caption-text">Different types of colouring schemes</span><a class="headerlink" href="#colouring-schemes" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>When choosing colour gradients, a clear gradient from lighter to darker colours is usually the most appropriate, as the
-gradation is easily distinguishable and translates well into black and white. In the figure below, examples A and B are
-not good colour schemes, as it is difficult to make out the gradation and it does not translate well into black and
-white. You can achieve a clear sequence by grading the <strong>saturation</strong> of the colour gradient.</p>
-<figure class="align-default" id="colour-gradients-saturation-example">
-<a class="reference internal image-reference" href="../../_images/de_colour_gradients_saturation.png"><img alt="../../_images/de_colour_gradients_saturation.png" src="../../_images/de_colour_gradients_saturation.png" style="width: 750px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 85 </span><span class="caption-text">Examples for different colour gradients translated into black and white. Pay attention to the saturation gradient under
-each example. Source: Stauffer, Reto &amp; Mayr, Georg &amp; Dabernig, Markus &amp; Zeileis, Achim. (2014). Somewhere Over the
-Rainbow: How to Make Effective Use of Colours in Meteorological Visualizations. Bulletin of the American Meteorological
-Society. 96. 140710055335002. 10.1175/BAMS-D-13-00155.1.</span><a class="headerlink" href="#colour-gradients-saturation-example" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>Colour gradients can also encompass multiple hues:</p>
-<figure class="align-default" id="colour-gradients-with-multiple-hues">
-<a class="reference internal image-reference" href="../../_images/colour_gradients_hues.png"><img alt="../../_images/colour_gradients_hues.png" src="../../_images/colour_gradients_hues.png" style="width: 750px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 86 </span><span class="caption-text">Single hue gradient on the left; Multiple hue gradient on the right.</span><a class="headerlink" href="#colour-gradients-with-multiple-hues" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>The <span class="xref myst">Colourbrewer website</span> is a quick and useful tool to select and generate colour palettes for your use case.</p>
-</div>
-<section id="colourblindness">
-<h3>Colourblindness<a class="headerlink" href="#colourblindness" title="Permalink to this heading">#</a></h3>
-<p>When choosing the colours, you have to keep in mind that colour gradients (especially diverging Red-Green gradients) can be hard or impossible to distinguish for people with colour blindness.</p>
-<figure class="align-default" id="colour-blindness-examples">
-<a class="reference internal image-reference" href="../../_images/Colour_Blindness.png"><img alt="../../_images/Colour_Blindness.png" src="../../_images/Colour_Blindness.png" style="width: 750px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 87 </span><span class="caption-text">Different Colour schemes for the Colour Vision Impaired; Source: Jenny, Bernhard, and Nathaniel Vaughn Kelso. (2007). Color Design for the Color Vision Impaired. <em>Cartographic Perspectives</em>, no. 58 (September 1, 2007): 61-67. <a class="reference external" href="https://doi.org/10.14714/CP58.270">https://doi.org/10.14714/CP58.270</a></span><a class="headerlink" href="#colour-blindness-examples" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-</section>
-<section id="symbology-for-vector-data">
-<h2>Symbology for Vector Data<a class="headerlink" href="#symbology-for-vector-data" title="Permalink to this heading">#</a></h2>
-<p>You can use graphical variables to style vector data. As we have already learned, vector data can be either points,
-lines, or polygons. There are different options to symbolize these different types of vector data. In this subchapter,
-we will focus on a few common examples.</p>
-<figure class="align-default" id="symbolization-for-vector-data">
-<a class="reference internal image-reference" href="../../_images/en_symbolization_vector_data.png"><img alt="../../_images/en_symbolization_vector_data.png" src="../../_images/en_symbolization_vector_data.png" style="width: 750px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 88 </span><span class="caption-text">Symbolization for vector data; Source: White, T. (2017). Symbolization and the Visual Variables. *The Geographic Information Science &amp; Technology Body of Knowledge (2nd Quarter 2017 Edition), John P. Wilson (ed.). DOI: 10.2222/gistbok/2017.2.3</span><a class="headerlink" href="#symbolization-for-vector-data" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Remember that <strong>the layer’s symbology is saved within your project file, not within your shapefile!</strong> If you share a shapefile with a colleague, it will have a different style when they add it to their own project.</p>
-</div>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-text-justify sd-text-black sd-border-2 docutils">
-<div class="sd-card-header docutils">
-<p class="sd-card-text"><strong>SVG-Symbols, Raster images, and Markers</strong></p>
-</div>
-<div class="sd-card-body docutils">
-<p class="sd-card-text">QGIS let’s you use different types markers for symbolization. These can be simple markers, raster images, or
-SVG-symbols.</p>
-<ul class="simple">
-<li><p class="sd-card-text"><strong>Simple markers</strong> are simple shapes such as rectangles, circles, or crosses that can be adjusted in the symbolization layer (colour, size, outline, etc.).</p></li>
-<li><p class="sd-card-text">If you select <strong>raster images</strong>, the resolution of the symbol is limited by the amount of pixels in the image. It is not advisable to use high resolution images as symbols on your map because it may overload your PC.</p></li>
-<li><p class="sd-card-text"><strong>SVG-symbols</strong> are <em>scaleable vector graphic</em> symbols. As vector files, they can be scaled to any size while keeping the same resolution. In most cases, if you want to use a more complex symbol (e.g. hospital, school, train station), SVG-symbols are the best option as they let you adjust the symbol (colours, outline, size, etc.)</p></li>
-</ul>
-</div>
-</div>
-<section id="using-simple-markers">
-<h3>Using Simple Markers<a class="headerlink" href="#using-simple-markers" title="Permalink to this heading">#</a></h3>
-<p>Simple Markers are generally used to create the symbols for most elements on a map. For example, simple markers are
-used to visualise streets, building outlines, waterbodies, administrative boundaries or other polygons.
-Most simple markers consist of a <strong>fill</strong> and an <strong>outline</strong>. The shape of the marker is generally dependent on the
-type of vector data (point, polygon, or line).</p>
-<ul class="simple">
-<li><p>The fill determines the fill colour of the symbol. You can change the colour and transparency. You are also able to make more complex fills such as a line pattern fill, or an SVG-symbol fill.</p></li>
-<li><p>The outline determines the colour, type, and thickness of the outline. Next to the colour and transparency, the outline is the most critical for distinguishing between different elements. For example, thicker lines for roads usually signify roads of a higher order (such as highways), while thin dashed lines might signify footpaths, inaccessible to road vehicles.</p></li>
-</ul>
-</section>
-<section id="styling-vector-data">
-<h3>Styling Vector data<a class="headerlink" href="#styling-vector-data" title="Permalink to this heading">#</a></h3>
-<p>QGIS offers various ways to visualize vector data. In the Symbology Tab, you can select between various symbolization
-methods:</p>
-<!--CONTINUE HERE-->
-<div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-0">
-Single-Symbol</label><div class="sd-tab-content docutils">
-<ul class="simple">
-<li><p>Assigns one symbol to every feature of the dataset, no matter if the attributes are different.</p></li>
-</ul>
-<p><strong>For example</strong>, assign a hospital symbol to a layer that only contains points showing the location of hospitals.</p>
-</div>
-<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-1">
-Categorized</label><div class="sd-tab-content docutils">
-<ul class="simple">
-<li><p>Classifies features into categories using an attribute (<code class="docutils literal notranslate"><span class="pre">Value</span></code>).</p></li>
-<li><p>A category is created for each unique value of this attribute.</p></li>
-<li><p>Each category can be assigned to a different symbol.</p></li>
-<li><p>This can be used for nominal as well as ordinal data.</p></li>
-</ul>
-<p><strong>For example</strong>, assign a different symbol for each type of building (industrial, commercial, public, residential,…)</p>
-</div>
-<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-2">
-Graduated</label><div class="sd-tab-content docutils">
-<ul class="simple">
-<li><p>Creates classes for numerical data.</p></li>
-<li><p>A colour gradient can be selected to represent the distribution of the data</p></li>
-</ul>
-<p><strong>For example</strong>, create 6 classes of population sizes and assign a color gradient from white to red to indicate the population size in a district.</p>
-</div>
-<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-3">
-Rule-based</label><div class="sd-tab-content docutils">
-<ul class="simple">
-<li><p>Create rules using an expression and assign a symbol for the features where the rule applies.</p></li>
-<li><p>You can specify more accurately the features you want to symbolize.</p></li>
-<li><p>You can use values from different attributes (e.g. building type and city district).</p></li>
-<li><p>The expression builder helps you create rules by displaying the available values, fields, operators, etc…</p></li>
-</ul>
-<p><strong>For example</strong>, select a symbol for every health facility that is a hospital and has exceeded it’s capacity.</p>
-</div>
-</div>
-<!--ADD: HOWTOS from the wiki-->
-<!--ADD: Examples of simple markers for Points, Lines, Polygons
-ALSO: With different thickness-->
-<div class="tip admonition">
-<p class="admonition-title">Optional: Now it’s your turn</p>
-<p>Check out Paul Knight’s <a class="reference external" href="https://learn-sims.org/geospatial/creating-a-proportional-circle-map-in-qgis/">tutorial on how to create a proportional circle map</a> in the SIMS learning portal.</p>
-</div>
-</section>
-<section id="using-svg-symbols">
-<h3>Using SVG-Symbols<a class="headerlink" href="#using-svg-symbols" title="Permalink to this heading">#</a></h3>
-<p>In some cases, you might want to use more complex symbols in your map. For example, you want to use a cross to signify
-a hospital, a book to signify a library, or a plane to signify an airport. In these cases, you can use SVG-symbols.
-Keep in mind that, ordinarily, SVG-symbols work only for point data.
-To use SVG-symbols:</p>
-<ol class="arabic simple">
-<li><p>Open the styling panel and open the <code class="docutils literal notranslate"><span class="pre">single</span> <span class="pre">marker</span></code> options.</p></li>
-<li><p>Under <code class="docutils literal notranslate"><span class="pre">Symbol</span> <span class="pre">layer</span> <span class="pre">type</span></code>, select <strong>“SVG Marker”</strong></p></li>
-<li><p>Scroll down to the SVG-Browser. Here you will find all the folder of your installed SVG-libraries.</p></li>
-</ol>
-<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video></p>
-<p>There is already a default library of SVG-symbols. If you are looking for a specific symbol, try searching for it in the search bar</p>
-<section id="adding-an-external-svg-library">
-<h4>Adding an external SVG-library<a class="headerlink" href="#adding-an-external-svg-library" title="Permalink to this heading">#</a></h4>
-<p>QGIS also offers the option to add your own SVG-libraries, for example if your organisation uses a specific set of
-icons.
-If you have a library of SVG-symbols as a folder you can add them to your Styling manager.</p>
-<ol class="arabic simple">
-<li><p>Open the style manager: <code class="docutils literal notranslate"><span class="pre">Settings</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Style</span> <span class="pre">Manager</span></code></p></li>
-<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Import</span> <span class="pre">/</span> <span class="pre">Export</span></code> and select <code class="docutils literal notranslate"><span class="pre">Import</span> <span class="pre">items</span></code></p></li>
-<li><p>Navigate to the location where you have saved the library or style and select the file (in most cases .qml but the file type can also be .xml)</p></li>
-<li><p>Now you can select which symbols you wish to import. In most cases, you can select all symbols.</p></li>
-<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Import</span></code></p></li>
-</ol>
-<p>The new SVG-symbols are in your SVG library.</p>
-<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video></p>
-</section>
-<section id="using-ifrc-symbols">
-<h4>Using IFRC-Symbols<a class="headerlink" href="#using-ifrc-symbols" title="Permalink to this heading">#</a></h4>
-<div class="admonition-ifrc-and-un-symbols-repositories admonition">
-<p class="admonition-title">IFRC- and UN-Symbols repositories</p>
-<p>class: tip</p>
-<p>The IFRC provides icons and symbols that can be used in your maps. You can find them under <a class="reference external" href="https://go-user-library.ifrc.org/brand-design/iconography">this link</a>.</p>
-<p>There is also a library with humanitarian icons by the <a class="reference external" href="https://www.unocha.org">United Nations Office for the Coordination of Humanitarian affairs</a> which can be found <a class="reference external" href="https://github.com/mapaction/ocha-humanitarian-icons-for-gis?tab=readme-ov-file">here</a>. The files are available in different formats you can use in QGIS.</p>
-</div>
-</section>
-</section>
-</section>
-<section id="labels">
-<h2>Labels<a class="headerlink" href="#labels" title="Permalink to this heading">#</a></h2>
-<p>Labels are text that display information or values of the data. In QGIS, you can either select <strong>Single Labels</strong> or
-<strong>Rule-based Labelling</strong>. For each option, an attribute (<code class="docutils literal notranslate"><span class="pre">value</span></code>) that will be displayed on the map. For example, the
-name of a city or region.  Additionally, you can <strong>change the font, font size, colour and some other styling options</strong>
-for the label text. When you create a map, you can add labels to help your reader understand the map quickly. However,
-be aware that too much text information can overload the map with too much information for the reader to process.</p>
-<section id="single-labels-and-rule-based-labeling">
-<h3>Single Labels and Rule-based Labeling<a class="headerlink" href="#single-labels-and-rule-based-labeling" title="Permalink to this heading">#</a></h3>
-<p>QGIS offers two methods to display labels: <strong>Single Labels</strong> and <strong>Rule-based Labeling</strong></p>
-<section id="single-labels">
-<h4>Single Labels<a class="headerlink" href="#single-labels" title="Permalink to this heading">#</a></h4>
-<p>Creates a single label style for every feature in the layer. You can select a attribute (value) which will be
-displayed. For example, the name of a settlement. You need to know which attribute displays the information you want to
-display. Look at the attribute table of the dataset to find it out.</p>
-<figure class="align-default" id="single-labels-example">
-<a class="reference internal image-reference" href="../../_images/labels_single_labels_example_nga_adm1.png"><img alt="../../_images/labels_single_labels_example_nga_adm1.png" src="../../_images/labels_single_labels_example_nga_adm1.png" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 89 </span><span class="caption-text">Single labels for each administrative region (adm1) in Nigeria. The reader is able to assign each label to the respective administrative entity.</span><a class="headerlink" href="#single-labels-example" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<figure class="align-default" id="assigning-value-to-labels">
-<a class="reference internal image-reference" href="../../_images/en_30.30.2_assigning_value_to_labels.png"><img alt="../../_images/en_30.30.2_assigning_value_to_labels.png" src="../../_images/en_30.30.2_assigning_value_to_labels.png" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 90 </span><span class="caption-text">Assigning the correct attribute value in the labeling options. QGIS needs to know which attribute (column) of the attribute table should be displayed as a label. In this case, we want the name of the administrative region (<code class="docutils literal notranslate"><span class="pre">ADM1_EN</span></code>) to be displayed.</span><a class="headerlink" href="#assigning-value-to-labels" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="adding-single-labels-to-a-layer">
-<h4>Adding Single Labels to a Layer<a class="headerlink" href="#adding-single-labels-to-a-layer" title="Permalink to this heading">#</a></h4>
-<ol class="arabic simple">
-<li><p>In the styling panel, click on the <code class="docutils literal notranslate"><span class="pre">Labels</span></code>-tab underneath the Symbology tab.</p></li>
-<li><p>Select <img alt="" src="fig/en_30.30.2_icon_single_labels" /> <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">labels</span></code>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Value</span></code> is where you choose the attribute that will be displayed as a label. For example <code class="docutils literal notranslate"><span class="pre">*ADM1_EN*</span></code> will display the English names of Nigerian states for each feature in the data set.</p></li>
-<li><p>Let’s <strong>change the font</strong>: Open the font dropdown menu and select Arial. Make the text <code class="docutils literal notranslate"><span class="pre">Bold</span></code> in the Style dropdown menu. Change the colour by clicking on <code class="docutils literal notranslate"><span class="pre">Colour</span></code>, and change the <code class="docutils literal notranslate"><span class="pre">Size</span></code> to 8 pt</p></li>
-<li><p>Let’s <strong>add a white buffer</strong> around the label. In the <code class="docutils literal notranslate"><span class="pre">Labels</span></code> tab, you will find a list with different options to style the labels. Right now, we are in the <code class="docutils literal notranslate"><span class="pre">Text</span></code> menu. Select <code class="docutils literal notranslate"><span class="pre">Buffer</span></code> and check the <code class="docutils literal notranslate"><span class="pre">Draw</span> <span class="pre">text</span> <span class="pre">buffer</span></code> option. This will make the labels stand out more on dark or crowded maps.</p></li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
-</ol>
-<figure class="align-default" id="setting-up-labels">
-<a class="reference internal image-reference" href="../../_images/en_30.30.2_setting_up_labels.png"><img alt="../../_images/en_30.30.2_setting_up_labels.png" src="../../_images/en_30.30.2_setting_up_labels.png" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 91 </span><span class="caption-text">Setting up labels in QGIS 30.30.2</span><a class="headerlink" href="#setting-up-labels" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_setting_up_labels
-.mp4"></video></p>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p>Single Labels are not always useful. For example, if the dataset is too big, or you only want to display certain features in the dataset. In the example below, there are too many settlements to display labels for each settlements. Instead, it might be useful to only display the regional and national capitals. For such a use case, Rule-based Labeling is ideal.</p>
-<figure class="align-default" id="single-labels-bad-example">
-<a class="reference internal image-reference" href="../../_images/single_labels_bad_example.png"><img alt="../../_images/single_labels_bad_example.png" src="../../_images/single_labels_bad_example.png" style="width: 400px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 92 </span><span class="caption-text">Single Labels was selected to display the names of the settlements (red dots). A map with so much text information is unreadable and the information can hardly be understood.</span><a class="headerlink" href="#single-labels-bad-example" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-</div>
-</section>
-<section id="rule-based-labelling">
-<h4>Rule-based Labelling<a class="headerlink" href="#rule-based-labelling" title="Permalink to this heading">#</a></h4>
-<p>Create rules using expressions to select accurately which features are to be labeled. Each rule can have a different
-text formatting. Use this if you want to have more control over the information that will be displayed as labels. For
-example, you can filter your data to only display the names of regional capitals.</p>
-<figure class="align-default" id="rule-based-labeling-example-settlements-nga">
-<a class="reference internal image-reference" href="../../_images/rule-based_labeling_example_settlements_nga.png"><img alt="../../_images/rule-based_labeling_example_settlements_nga.png" src="../../_images/rule-based_labeling_example_settlements_nga.png" style="width: 500px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 93 </span><span class="caption-text">Rule-based labeling allows you to filter datasets. This way, you can display the labels only for selected features without altering the dataset.</span><a class="headerlink" href="#rule-based-labeling-example-settlements-nga" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>The rules, or filters, are based on an expression. You can use the <img alt="" src="../../_images/expression_string_builder_icon.png" /> <code class="docutils literal notranslate"><span class="pre">Expression</span> <span class="pre">string</span> <span class="pre">builder</span></code> to the right of the <strong>Filter</strong> option in the label panel.</p>
-</section>
-<section id="adding-rule-based-labels-to-a-layer">
-<h4>Adding Rule-based Labels to a Layer<a class="headerlink" href="#adding-rule-based-labels-to-a-layer" title="Permalink to this heading">#</a></h4>
-<ol class="arabic simple">
-<li><p>In the styling panel, click on the <code class="docutils literal notranslate"><span class="pre">Labels</span></code> tab underneath the Symbology tab.</p></li>
-<li><p>Select <img alt="" src="../fig/30.30.2_Icon_rule_based_labeling.png" /> <code class="docutils literal notranslate"><span class="pre">Rule-based</span> <span class="pre">Labeling</span></code>.</p></li>
-<li><p>Add a Rule by clicking on the <code class="docutils literal notranslate"><span class="pre">+</span></code>-button in the left corner of the styling panel. A new window will open in the styling panel. In this window, you will enter the rule (<code class="docutils literal notranslate"><span class="pre">Filter</span></code>) and customize the label font, size, and placement. Additionally, you can enter a description.</p></li>
-<li><p>Enter a Filter (red box in the figure below). The easiest way is to use the <code class="docutils literal notranslate"><span class="pre">Expression</span> <span class="pre">string</span> <span class="pre">builder</span></code> to the right of the Filter option. Click on the <img alt="" src="../fig/expression_string_builder_icon.png" />-Symbol. A new panel will open.</p></li>
-<li><p>In the Expression String builder enter a rule. In the example in the video below, we want to only display settlements that are either national or regional capitals. This corresponds to the String <code class="docutils literal notranslate"><span class="pre">(&quot;CLASS&quot;</span> <span class="pre">=</span> <span class="pre">1</span> <span class="pre">)</span> <span class="pre">OR</span> <span class="pre">(&quot;CLASS&quot;</span> <span class="pre">=</span> <span class="pre">2)</span></code>. We know this because we know our data and have looked at the attribute table beforehand.</p></li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
-<li><p>Set the font and font size.</p></li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Apply</span></code>.</p></li>
-</ol>
-<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_rule-based_labels.mp4"></video></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>To add rules to your labels, you need to be familiar with your data! Look at the metadata (in the properties or at the source) and take a look at the attribute table. Think about what the different columns mean and identify the attributes. This might not always be easy, as they might have abbreviated names, but as you work more with data, this will become easier.</p>
-</div>
-<p>Below are some further considerations to keep in mind when using labels:</p>
-<ul class="simple">
-<li><p>Only display information that serves the purpose of the map or is helpful to the reader. Useful information can be the name of a settlement or a place, so the reader can assign a certain symbol on the map to this particular place.</p></li>
-<li><p>If you want to display different types of information as labels, the font needs to be different so the reader can differentiate between the different types of information that is displayed. A good practice is to display the labels in a similar colour to the objects it is referring to. For example, dark blue text for the labels of light blue bodies of water, or brown text for the labels of light-brown houses.</p></li>
-</ul>
-<figure class="align-default" id="axis-maps-good-labels-example">
-<a class="reference internal image-reference" href="../../_images/good_labels_example.png"><img alt="../../_images/good_labels_example.png" src="../../_images/good_labels_example.png" style="width: 400px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 94 </span><span class="caption-text">A good example of label placement and font. Pay attention to the text colours and orientation. Every label can easily be attributed to the correct cartographic feature. (Source: <a class="reference external" href="https://www.axismaps.com/guide/labeling">Axis Maps</a>)</span><a class="headerlink" href="#axis-maps-good-labels-example" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<ul class="simple">
-<li><p>In most cases, displaying numerical values as labels is confusing to the reader and makes the map to complex. In most cases, for numerical data, you can choose a different visualization such as colours or symbol size.</p></li>
-</ul>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<figure class="align-default" id="numerical-labels-bad-example">
-<img alt="../../_images/labels_numerical_values_bad_example.png" src="../../_images/labels_numerical_values_bad_example.png" />
-<figcaption>
-<p><span class="caption-number">Fig. 95 </span><span class="caption-text">Numerical Labels</span><a class="headerlink" href="#numerical-labels-bad-example" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-</div>
-</div>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<figure class="align-default" id="graduated-symbology-instead-numerical-values">
-<img alt="../../_images/labels_graduated_symbology_example.png" src="../../_images/labels_graduated_symbology_example.png" />
-<figcaption>
-<p><span class="caption-number">Fig. 96 </span><span class="caption-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_data_classification.html#graduated-classification">Graduated Symbology</a></span><a class="headerlink" href="#graduated-symbology-instead-numerical-values" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</div>
-<ul class="simple">
-<li><p>QGIS places the labels automatically. Sometimes, if you are using a lot of black outlines or dark colours, black text is hard to read on the map. In that case, you can add white buffer around the text to make it visible.</p></li>
-</ul>
-<figure class="align-default" id="label-buffer-example">
-<a class="reference internal image-reference" href="../../_images/label_text_buffer_example.png"><img alt="../../_images/label_text_buffer_example.png" src="../../_images/label_text_buffer_example.png" style="width: 500px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 97 </span><span class="caption-text">A label without a text buffer (left) and a label with a white text buffer (right)</span><a class="headerlink" href="#label-buffer-example" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>QGIS renders labels automatically.
-Sometimes labels can obstruct other symbols. In that case, you can either adjust the placement of the labels in the <strong>Label tab</strong>, or use the <img alt="" src="../../_images/30.30.2_move_a_label_diagram_callout_icon.png" /> <code class="docutils literal notranslate"><span class="pre">Move</span> <span class="pre">a</span> <span class="pre">Label,</span> <span class="pre">Diagram,</span> <span class="pre">or</span> <span class="pre">Callout</span></code>-tool in <strong>Label toolbar</strong></p>
-<p>By default, QGIS renders the labels so that they don’t overlap with other labels. This means that not all the labels will be visible if the data is dense or rendered close to each other. You can optimize the rendering under the rendering option.</p>
-</div>
-<div class="admonition-now-it-s-your-turn admonition">
-<p class="admonition-title">Now it’s your turn!</p>
-<p>Take the time to apply what we’ve learned yourself by doing one or two of the <a class="reference internal" href="en_qgis_modul_4_exercises.html"><span class="doc std std-doc">exercises of module 4</span></a>.</p>
-</div>
-<!--MOVE: move admonition a bit up?--->
-<p>The different visualisation methods can be combined to visualise complex situations on a map. You can combine a choropleth map with graduated symbology to display to variables at once. Additional information can be added in the form of labels or text boxes.</p>
-<figure class="align-default" id="complex-bivariate-map-example">
-<a class="reference internal image-reference" href="../../_images/en_complex_bivariate_map.png"><img alt="../../_images/en_complex_bivariate_map.png" src="../../_images/en_complex_bivariate_map.png" style="width: 750px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 98 </span><span class="caption-text">A map combining layer styling and different visual variables to communicate a complex situation (Source: <a class="reference external" href="https://rcrcsims.org/portfolio/view/18">SIMS</a>)</span><a class="headerlink" href="#complex-bivariate-map-example" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p>Check out the <a class="reference internal" href="../Wiki/en_qgis_representation_wiki.html"><span class="doc std std-doc">wiki article</span></a> for detailed, step-by-step tutorials on how to use the different features of the styling panel.</p>
-<p>You can also read further in the article “<a class="reference external" href="https://www.axismaps.com/guide/labeling">Labeling and text hierarchy in cartography</a>” by Axis Maps.</p>
-</div>
-</section>
-</section>
-</section>
-<section id="exporting-and-importing-styles">
-<h2>Exporting and Importing Styles<a class="headerlink" href="#exporting-and-importing-styles" title="Permalink to this heading">#</a></h2>
-<p>The layers in QGIS are saved separately from the settings and styles of a QGIS Project. This means that if you load the same layers into a different QGIS project, the symbology and styling of the data will be different. QGIS lets you save the symbology and styling of a layer as a separate file (<code class="docutils literal notranslate"><span class="pre">.qml</span></code>-files). Working with <code class="docutils literal notranslate"><span class="pre">.qml</span></code>-files saves you a lot of work and assures consistency between your maps.</p>
-<p>A <code class="docutils literal notranslate"><span class="pre">.qml</span></code>-file saves the information of a particular layer. This includes the colours, outlines, shapes, labelling, as well as the Layer configuration, attribute table settings, and other options you have set for a layer in your QGIS project that are not related done to the data files themselves. You can choose whether to save only the colour symbology or any additional information.</p>
-<p>You can export a style into the same folder as the data so your colleagues can apply the same styling when loading the data into QGIS.
-Some organisations may also use standarized symbols or colours in their maps.</p>
-<p>For example, if you want to send a layer to your colleague with the same styling as you, it is best to check the “<strong>Layer properties</strong>”, “<strong>Symbology</strong>”, and “<strong>Labels</strong>” categories (and any additional styling options you have set). If you only wish to save a certain colouring, line thickness, or labeling style, you only need to check the respective boxes.</p>
-<section id="saving-or-exporting-styling-settings">
-<h3>Saving or exporting styling settings<a class="headerlink" href="#saving-or-exporting-styling-settings" title="Permalink to this heading">#</a></h3>
-<ol class="arabic simple">
-<li><p>Open the styling panel and click on <code class="docutils literal notranslate"><span class="pre">Styles</span></code>. A dropdown menu will open with the option to export the layer styling.</p></li>
-<li><p>Since in this case, the styling is for exactly that dataset, you can leave all the boxes checked.</p></li>
-<li><p>Select a location and name for the styling. The styling will be saved as a <code class="docutils literal notranslate"><span class="pre">.qml</span></code> file. <strong>Make sure it is saved in the same folder as the dataset and give it the same name as the corresponding dataset. This way it will, when loading the data into QGIS, the styling will automatically be applied.</strong></p></li>
-</ol>
-<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_exporting_style_to_send_to_colleague
-.mp4"></video></p>
-<figure class="align-default" id="save-layer-styling-window">
-<a class="reference internal image-reference" href="../../_images/en_30.30.2_save_layer_style_window.png"><img alt="../../_images/en_30.30.2_save_layer_style_window.png" src="../../_images/en_30.30.2_save_layer_style_window.png" style="width: 350px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 99 </span><span class="caption-text">Save Layer styling window in QGIS 30.30.2.</span><a class="headerlink" href="#save-layer-styling-window" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>When working with similar data (e.g. building types or flooding risk), it is useful to have template styles, that can be quickly loaded into your QGIS-project or saved in your Styling Template library.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>When a styling is saved in the same location as the data and has the same name as the corresponding dataset, the styling will be automatically applied to the layer when loading the data into QGIS!</p>
-</div>
-</section>
-<section id="loading-a-style-into-a-qgis-project">
-<h3>Loading a style into a QGIS-project<a class="headerlink" href="#loading-a-style-into-a-qgis-project" title="Permalink to this heading">#</a></h3>
-<ol class="arabic simple">
-<li><p>Open the style manager: <code class="docutils literal notranslate"><span class="pre">Settings</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Style</span> <span class="pre">manager</span></code></p></li>
-<li><p>Click on <code class="docutils literal notranslate"><span class="pre">import/export</span></code> and select <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">items</span></code></p></li>
-<li><p>Navigate to the folder where the style is saved and click import.</p></li>
-<li><p>The style should now be available as a preset in the styling panel.</p></li>
-</ol>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>You can also import styles directly in the styling panel of a layer. But it will not be added to your style library unless you save it into your library.</p>
-</div>
-</section>
-</section>
-<section id="further-resources">
-<h2>Further Resources<a class="headerlink" href="#further-resources" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://www.axismaps.com/guide">Cartography Guide</a> by <span class="xref myst">Axis Maps</span></p></li>
-<li><p>Tutorial on <a class="reference external" href="https://learn-sims.org/geospatial/importing-sims-color-palette-to-qgis/">how to import the SIMS Colour Palette into QGIS</a></p></li>
-<li><p>Tutorial on <a class="reference external" href="https://learn-sims.org/geospatial/creating-a-shaded-relief-map-in-qgis/">how to create a shaded relief map in QGIS</a></p></li>
-<li><p><a class="reference external" href="https://learn-sims.org/information-design/creating-a-3w-who-what-where-infographic/">Creating a 3W (Who, What, Where) Infographic</a></p></li>
-</ul>
 </section>
 </section>
 
@@ -1243,11 +869,11 @@ Some organisations may also use standarized symbols or colours in their maps.</p
       </div>
     </a>
     <a class="right-next"
-       href="en_qgis_map_design_2.html"
+       href="en_qgis_styling_vector_data.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Map Design: The Print layout</p>
+        <p class="prev-next-title">Styling Vector Data</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1266,48 +892,13 @@ Some organisations may also use standarized symbols or colours in their maps.</p
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Visualisation of Geodata: Symbology and Colours</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visual-variables">Visual Variables</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choropleth-and-graduated-symbol-maps">Choropleth and Graduated Symbol Maps</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#symbology-and-styling">Symbology and styling</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#styling-panel">Styling Panel</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#symbology">Symbology</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#colours">Colours</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#colourblindness">Colourblindness</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#symbology-for-vector-data">Symbology for Vector Data</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-simple-markers">Using Simple Markers</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#styling-vector-data">Styling Vector data</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-svg-symbols">Using SVG-Symbols</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-an-external-svg-library">Adding an external SVG-library</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#using-ifrc-symbols">Using IFRC-Symbols</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choropleth-and-graduated-symbol-maps">Choropleth and Graduated Symbol Maps</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#choropleth-maps"><strong>Choropleth Maps</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proportional-circles-graduated-symbols-map"><strong>Proportional Circles/Graduated Symbols Map</strong></a></li>
 </ul>
 </li>
 </ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#labels">Labels</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#single-labels-and-rule-based-labeling">Single Labels and Rule-based Labeling</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#single-labels">Single Labels</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-single-labels-to-a-layer">Adding Single Labels to a Layer</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rule-based-labelling">Rule-based Labelling</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-rule-based-labels-to-a-layer">Adding Rule-based Labels to a Layer</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exporting-and-importing-styles">Exporting and Importing Styles</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#saving-or-exporting-styling-settings">Saving or exporting styling settings</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-a-style-into-a-qgis-project">Loading a style into a QGIS-project</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-resources">Further Resources</a></li>
-</ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>

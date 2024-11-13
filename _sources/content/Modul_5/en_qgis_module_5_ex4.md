@@ -94,7 +94,7 @@ __Click [here](https://nexus.heigit.org/repository/gis-training-resource-center/
 __Available Data:__
 ^^^
 
-- `G2P_disbursement_report_cleaned.csv` - Datatable with cash transactions. This dataset has been cleaned and all information has been removed. 
+- `G2P_disbursement_report_cleaned.csv` - Data table with cash transactions. This dataset has been cleaned and all personal information has been removed. 
 - `pak_admbnda_adm2_wfp_20220909.shp` - Administrative boundaries on adm2 level (districts).
 :::
 
