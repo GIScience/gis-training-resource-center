@@ -39,6 +39,7 @@ parts:
       - file: content/Modul_4/en_module_4_overview.md
         sections:
           - file: content/Modul_4/en_qgis_map_design_I.md
+          - file: content/Modul_4/en_qgis_styling_vector_data.md
           - file: content/Modul_4/en_qgis_map_design_2.md
           - file: content/Modul_4/en_qgis_symbology_raster.md
           - file: content/Modul_4/en_qgis_map_examples.md
