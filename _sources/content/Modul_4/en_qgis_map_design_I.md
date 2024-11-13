@@ -171,7 +171,6 @@ width: 450 px
 Cholera cases in Malawi (Source [Paul Knight](https://learn-sims.org/geospatial/creating-a-proportional-circle-map-in-qgis/)).
 ```
 
-:::
 
 # Symbology and styling
 
