@@ -81,7 +81,7 @@ work.
 
 
 ### __Choropleth Maps__
-^^^
+
 
 A choropleth map is a type of map that shows data using colors or shading within specific geographic areas, like 
 countries, states, or counties. It helps to visualize data patterns or distributions across regions. For example, a 
@@ -170,6 +170,13 @@ width: 450 px
 ---
 Cholera cases in Malawi (Source [Paul Knight](https://learn-sims.org/geospatial/creating-a-proportional-circle-map-in-qgis/)).
 ```
+
+::::{admonition} Now it's your turn!
+:class: tip
+What type of symbolisation methods can you identify in these maps? How did the cartographers communicate information? What other methods to communicate information can you imagine or do you know? You can also show a map you encountered in your work or personal life. 
+
+
+::::
 
 
 # Symbology and styling
@@ -266,6 +273,8 @@ width: 750px
 ---
 Different Colour schemes for the Colour Vision Impaired; Source: Jenny, Bernhard, and Nathaniel Vaughn Kelso. (2007). Color Design for the Color Vision Impaired. *Cartographic Perspectives*, no. 58 (September 1, 2007): 61-67. https://doi.org/10.14714/CP58.270 
 ```
+
+<!--ADD: EXAMPLES OF DIFFERENT STYLING METHODS FOR SIMPLE GEODATA (e.g. houses in different colours, roads in different thickness or colous, points as point symbols or hospital symbols)-->
 
 ## Complex Maps
 
