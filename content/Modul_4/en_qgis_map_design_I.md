@@ -175,7 +175,6 @@ Cholera cases in Malawi (Source [Paul Knight](https://learn-sims.org/geospatial/
 :class: tip
 What type of symbolisation methods can you identify in these maps? How did the cartographers communicate information? What other methods to communicate information can you imagine or do you know? You can also show a map you encountered in your work or personal life. 
 
-
 ::::
 
 
@@ -280,27 +279,48 @@ Different Colour schemes for the Colour Vision Impaired; Source: Jenny, Bernhard
 
 The different symbolisation methods discussed in this chapter can be combined in different ways to create sophisticated reports and maps. By combining several methods, you can communicate different phenomena intuitively to the reader. A classical example is a combination of a choropleth map (graduated colours) with a proportional circles map (see {numref}`bivariate_map_example_lebanon`). 
 
+__Example 1:__
 
 ```{figure} /fig/en_complex_map_lebanon.png
 name: bivariate_map_example_lebanon
-width: 550 px
+width: 750 px
 ---
+
 A complex map using graduated colours and proportional circles (Source: [REACH Initiative](https://reliefweb.int/map/lebanon/lebanon-conflict-and-displacement-overview-30-september-2024))
+
 ```
 
+TESTESTEST
+
+__Example 2:__
 
 ```{figure} /fig/en_complex_bivariate_map.png
 ---
 name: complex_bivariate_map_example
-width: 750 px
+width: 550 px
 ---
-A complex map combining layer styling and different visual variables to communicate a complex situation (Source: [SIMS](https://rcrcsims.org/portfolio/view/18))
-```
 
+A complex map combining layer styling and different visual variables to communicate a complex situation (Source: [SIMS](https://rcrcsims.org/portfolio/view/18))
+
+```
+TESTESTEST
+
+__Example 3:__
+
+```{figure} /fig/en_complex_map_example_yemen.png
+name: test_complex_map
+width: 550 px
+---
+
+A complex map using graduated colours to signify flood depth as well as the flood hazard for IDP sites (Source: [REACH Initiative](https://reliefweb.int/map/yemen/flood-hazard-idp-sites-marib-governorate-flood-depth-model-january-2024-production-date-07-may-2024))
+
+```
 
 :::{admonition} Now it's your turn!
 :class: tip
 {numref}`bivariate_map_example_lebanon` and {numref}`complex_bivariate_map_example` both make use of graduated colours as well as graduated symbols. What other symbolisation principles can you detect on these maps? 
 :::
+
+
 
 Now that we have learned the different visual variables, and know how to use them to create complex maps, the next chapter [Symbology for Vector data](/content/Modul_4/en_qgis_styling_vector_data.md) will explain how to set up different symbolisation and styling methods in QGIS. 
