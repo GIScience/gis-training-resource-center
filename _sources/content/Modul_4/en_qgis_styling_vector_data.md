@@ -1,5 +1,8 @@
 # Styling Vector Data
 
+The previous chapter went over the fundamentals of graphical symbolisation and the visual variables. In this chapter, we 
+want to apply our understanding of visual representation and learn how to use the styling panel in QGIS to customize 
+
 ## Styling Panel
 
 ```{figure} ../../fig/en_30.30.2_styling_panel.png
@@ -29,10 +32,10 @@ create labels, and create colour ramps to differentiate between features with va
 ## Symbology for Vector Data
 
 
-
 You can use graphical variables to style vector data. As we have already learned, vector data can be either points, 
-lines, or polygons. There are different options to symbolize these different types of vector data. In this subchapter, 
-we will focus on a few common examples.
+lines, or polygons. There are different options to symbolize these different types of vector data. 
+
+
 
 ``` {figure} ../../fig/en_symbolization_vector_data.png
 ---
@@ -46,12 +49,27 @@ Symbolization for vector data; Source: White, T. (2017). Symbolization and the V
 Remember that __the layer's symbology is saved within your project file, not within your shapefile!__ If you share a shapefile with a colleague, it will have a different style when they add it to their own project.
 ```
 
-### Styling Vector data
+In the symbology tab of the layer styling panel, you can set the 
 
-QGIS offers various ways to visualize vector data. In the Symbology Tab, you can select between various symbolization 
-methods:
+Simple Markers are generally used to create the symbols for most elements on a map. For example, simple markers are 
+used to visualise streets, building outlines, waterbodies, administrative boundaries or other polygons.
+Most simple markers consist of a __fill__ and an __outline__. Depending on the type of geometry in the layer, you will use have different symbology options. 
 
-<!--CONTINUE HERE-->
+
+- The fill determines the fill colour of the symbol. You can change the colour and transparency. You are also able to make more complex fills such as a line pattern fill, or an SVG-symbol fill.
+- The outline determines the colour, type, and thickness of the outline. Next to the colour and transparency, the outline is the most critical for distinguishing between different elements. For example, thicker lines for roads usually signify roads of a higher order (such as highways), while thin dashed lines might signify footpaths, inaccessible to road vehicles.
+- You can either style a single symbol for each layer or use different styles based on a [categorisation method](/content/Modul_3/en_qgis_data_classification.md). 
+
+In the Symbology Tab, you can select between various symbolization 
+methods (see {numref}`symbolisation_methods_m4`). The most important ones are 
+
+```{figure} /fig/en_3.36_m4_symbolisation_methods.png
+---
+name: symbolisation_methods_m4
+width: 500 px
+---
+
+```
 
 ::::{tab-set}
 
@@ -77,7 +95,7 @@ __For example__, assign a different symbol for each type of building (industrial
 - Creates classes for numerical data.
 - A colour gradient can be selected to represent the distribution of the data
 
-__For example__, create 6 classes of population sizes and assign a color gradient from white to red to indicate the population size in a district.
+__For example__, create 6 classes of population sizes and assign a color gradient from white to red to indicate the population size in a district (see [Module 3: Geodata Classifification](/content/Modul_3/en_qgis_data_classification.md)).
 
 :::
 
@@ -94,35 +112,142 @@ __For example__, select a symbol for every health facility that is a hospital an
 
 ::::
 
+Below, we will go over some common styling methods used in cartography. 
 
+### Styling administrative boundaries (Polygons)
 
-<!--ADD: HOWTOS from the wiki-->
+When creating situational reports, you will frequently use administrative boundaries. In the example below, we want to create an overview map using the administrative boundaries of Nigeria. In order to visualise all the three administrative boundaries at the same time, we need to set the symbology for each layer so the layers below are visible, and the hierarchy of the administrative levels is distinguishable. 
 
-<!--ADD: Examples of simple markers for Points, Lines, Polygons
-ALSO: With different thickness-->
+```{admonition} *Optional*: Now it's your turn
 
-:::{card} 
-:class-card: sd-text-justify sd-text-black sd-border-2
-__SVG-Symbols, Raster images, and Markers__
-^^^
-QGIS let's you use different types markers for symbolization. These can be simple markers, raster images, or 
-SVG-symbols.
+You can follow along by downloading the [administrative boundaries of Nigeria]() by [OCHA Nigeria]()
 
-- __Simple markers__ are simple shapes such as rectangles, circles, or crosses that can be adjusted in the symbolization layer (colour, size, outline, etc.).
-- If you select __raster images__, the resolution of the symbol is limited by the amount of pixels in the image. It is not advisable to use high resolution images as symbols on your map because it may overload your PC.
-- __SVG-symbols__ are *scaleable vector graphic* symbols. As vector files, they can be scaled to any size while keeping the same resolution. In most cases, if you want to use a more complex symbol (e.g. hospital, school, train station), SVG-symbols are the best option as they let you adjust the symbol (colours, outline, size, etc.)
+```
+
+#### Only display the outlines of polygons
+
+Now, we want to change the symbology of a layer so that __only the outlines of the polygons are visible__. This is necessary to make layers below this one visible.
+
+To change the symbology of a single layer:
+1. Open the `Styling panel` and navigate to the symbology tab. By default, the symbology will be set to `Single Symbol`. This means that the same colours and contours will be applied to all the features in that layer.
+2. Click on `Simple Fill`
+3. Click on the arrow to the right of `Fill Colour`
+4. Check the `Transparent Fill` option
+
+```{figure} ../../fig/en_30.30.2_vector_layer_styling_transparent.png
+---
+name: layer styling transparent
+width: 500 px
+---
+```
+
+:::{dropdown} Video: Making the fill colour transparent
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_make_only_outlines_visible.mp4"></video>
 
 :::
 
-### Using Simple Markers
 
-Simple Markers are generally used to create the symbols for most elements on a map. For example, simple markers are 
-used to visualise streets, building outlines, waterbodies, administrative boundaries or other polygons.
-Most simple markers consist of a __fill__ and an __outline__. The shape of the marker is generally dependent on the 
-type of vector data (point, polygon, or line).
 
-- The fill determines the fill colour of the symbol. You can change the colour and transparency. You are also able to make more complex fills such as a line pattern fill, or an SVG-symbol fill.
-- The outline determines the colour, type, and thickness of the outline. Next to the colour and transparency, the outline is the most critical for distinguishing between different elements. For example, thicker lines for roads usually signify roads of a higher order (such as highways), while thin dashed lines might signify footpaths, inaccessible to road vehicles.
+
+
+
+#### Adjusting the styles of multiple overlaying layers
+
+__Step 1: Ordering the layers__
+
+1. Import the administrative boundaries into your QGIS-project.
+2. We need to order the layers in the Layers panel so that the `adm0`-layer sits on top, followed by `adm1` and `adm2`. At first, this might look weird because `Adm0` will cover everything.
+
+```{figure} ../../fig/en_30.30.2_changing_layer_style_1.png
+---
+name: change layer style 1
+height: 400px 
+---
+Order the layers and navigate to the styling panel of the topmost layer
+```
+
+3. Change the symbology of the Adm0 layer by opening the stlying panel and navigating to the Symbology tab. 
+4. Click on `Simple Fill` to open the style options.
+5. Expand the `Fill Colour` menu and check the `Transparent Fill` option. This will make only the boundaries visible, so __we will be able to see the layer under this one__.
+6. Choose a `Stroke Colour`, and make the `Stroke Width` 0.66 Millimeters.
+7. Click OK.
+8. __Repeat the same process__ for the Adm1 layer, using the same colour as for Adm0 (it will be in "Recent colors) and leave the stroke width at 0.26.
+9. Now we can see the boundaries of the country and its states, and behind that we can see the districts (Adm2).
+10. Let's make the districts layer's style consistent with the others.
+11. Choose a `Fill Color`
+12. Use the same Stroke Colour` as for Adm0 and Adm1, but make the width 0.1 Millimeters and the Stroke Style a __Dash Line__
+13. Click OK and look at yout map: hopefully it's starting to look nicer!
+
+```{figure} ../../fig/en_30.30.2_changing_layer_style_3.png
+---
+name: change layer style 3
+---
+The styling of a vector data consists of the colour and the outline
+```
+:::{dropdown} Video: Adjusting the style for multiple layers
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_change_style_for_multiple_layers
+.mp4"></video>
+:::
+
+### Creating a choropleth map
+
+Style data based on variable ranges ("__Graduated__" styling)
+
+If a layer contains numeric values that are continuous, they can be organized in intervals. These intervals can be displayed in graduated colours. In this exercise, we assign colours to Adm1 polygons based on the total population of each State.
+
+
+1. Download the NGA_Adm1_Pop shapefile [link!!] and save it in your shapefile folder
+2. In QGIS, turn off the Adm1 and Adm2 layer, leaving only Adm0
+3. Drag the shapefile NGA_Adm1_Pop into your map
+4. Open its `Symbology` options and choose `Graduated`
+5. __Select the value you want to use to assign colours__, in this case, it will be `Population`
+
+```{figure} ../../fig/en_30.30.2_symbology_variable_ranges.png
+---
+name: symbology of variable ranges
+width: 550px
+---
+With variable ranges, select __Graduated__ symbology and choose the attribute with continuous values
+```
+
+6. Click on `Classify` to __list all values divided in classes__
+7. Choose __how many classes__ you want the data to be divided into ‒ let's say 4
+8. By default, the colour ramp will be red. However, red is not the right colour to use for population count, as it is generally used to communicate negative elements, such as food insecurity or cholera cases
+9. Click on __the arrow next to the colour ramp__ to choose another combination of colours - let's say a color ramp from white to blue
+10. Click `Apply` to preview the look of your layer, then `OK`
+
+```{figure} ../../fig/en_30.30.2_symbology_variable_ranges_2.png
+---
+name: symbology of variable ranges 2
+width: 500px
+---
+You can categorize the continuous values into classes and assign a colour ramp 
+```
+
+The following map shows the most populated States of Nigeria using a graduated colour categorization. These types of maps are called __Coropleth maps__. 
+
+```{figure} ../../fig/en_map_design_example_variable_ranges.png
+---
+name: map design example_state population Nigeria
+width: 500px
+---
+A map showing the population of Nigerian states
+```
+
+:::{dropdown} Video: How to create a choropleth map
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_graduated_styling
+.mp4"></video>
+:::
+
+
+####
+
+<!--ADD: HOWTOS from the wiki-->
+
+
+<!--ADD: Examples of simple markers for Points, Lines, Polygons
+ALSO: With different thickness-->
 
 ```{admonition} Optional: Now it's your turn
 :class: tip
@@ -130,6 +255,28 @@ type of vector data (point, polygon, or line).
 Check out Paul Knight's [tutorial on how to create a proportional circle map](https://learn-sims.org/geospatial/creating-a-proportional-circle-map-in-qgis/) in the SIMS learning portal. 
 ```
 
+
+
+
+
+
+
+
+
+:::{card} 
+:class-card: sd-text-justify sd-text-black sd-border-1
+__Simple Markers, SVG-Symbols and Raster images__
+^^^
+QGIS let's you use different types markers for vector data. These can be simple markers, raster images, or 
+SVG-symbols. Most of the time 
+
+- __Simple markers__ are simple shapes such as rectangles, circles, or crosses that can be adjusted in the symbolization layer (colour, size, outline, etc.). Most of your styling in QGIS will be done with these markers.
+- If you select __raster images__, the resolution of the symbol is limited by the amount of pixels in the image. It is not advisable to use high resolution images as symbols on your map because it may overload your PC.
+- __SVG-symbols__ are *scaleable vector graphic* symbols. As vector files, they can be scaled to any size while keeping the same resolution. In most cases, if you want to use a more complex symbol (e.g. hospital, school, train station), SVG-symbols are the best option as they let you adjust the symbol (colours, outline, size, etc.)
+
+:::
+
+:::::{dropdown} Using SVG-Symbols and IFRC symbols
 
 ### Using SVG-Symbols
 
@@ -165,13 +312,16 @@ The new SVG-symbols are in your SVG library.
 #### Using IFRC-Symbols
 
 :::{admonition} IFRC- and UN-Symbols repositories
-class: tip
+:class: tip
 
 The IFRC provides icons and symbols that can be used in your maps. You can find them under [this link](https://go-user-library.ifrc.org/brand-design/iconography). 
 
 There is also a library with humanitarian icons by the [United Nations Office for the Coordination of Humanitarian affairs](https://www.unocha.org) which can be found [here](https://github.com/mapaction/ocha-humanitarian-icons-for-gis?tab=readme-ov-file). The files are available in different formats you can use in QGIS. 
 
 :::
+
+::::: 
+
 
 ## Labels
 
@@ -347,10 +497,6 @@ Take the time to apply what we've learned yourself by doing one or two of the [e
 :::
 
 <!--MOVE: move admonition a bit up?--->
-
-
-
-
 
 
 :::{Attention}

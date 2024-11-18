@@ -374,7 +374,7 @@ A complex map using graduated colours to signify flood depth as well as the floo
 
 :::{admonition} Now it's your turn!
 :class: tip
-{numref}`bivariate_map_example_lebanon`, {numref}`complex_bivariate_map_example` and {numref}`en_complex_map_example_yemen` make use of graduated colours as well as graduated symbols. What other symbolisation principles can you detect on these maps? 
+{numref}`bivariate_map_example_lebanon`, {numref}`complex_bivariate_map_example` and {numref}`test_complex_map` make use of graduated colours as well as graduated symbols. What other symbolisation principles can you detect on these maps? 
 :::
 
 

@@ -684,17 +684,17 @@ The start screen of QGIS usually shows you the projects you worked on recently a
 </figcaption>
 </figure>
 <ol class="arabic simple">
-<li><p><strong>Layers List / Browser Panel:</strong> The <strong>layers list</strong> shows <strong>all layers/files</strong> that are <strong>loaded in the project</strong>. You can show/hide layers and set other properties.</p></li>
-<li><p><strong>Toolsbars:  <strong>Toolbars</strong> are shortcuts</strong> to execute frequently used commands. For example, there are special toolbars for <strong>vector and raster files</strong>, but also general ones for saving your project, etc. The toolbar contains, among other things, a list of all the commands you can use. The toolbar also contains the <strong>toolbox</strong>, which is used later in many of the wiki videos.</p></li>
+<li><p><strong>Layers panel:</strong> The <strong>layers list</strong> shows <strong>all layers/files</strong> that are <strong>loaded in the project</strong>. You can show/hide layers and set other properties.</p></li>
+<li><p><strong>Toolsbars:</strong>  <strong>Toolbars</strong> are shortcuts to execute frequently used commands. For example, there are special toolbars for <strong>vector and raster files</strong>, but also general ones for saving your project, etc. The toolbar contains, among other things, a list of all the commands you can use. The toolbar also contains the <strong>toolbox</strong>, which is used later in many of the wiki videos.</p></li>
 </ol>
 <figure class="align-center" id="toolbox-button">
 <a class="reference internal image-reference" href="../../_images/en_Interface_02.png"><img alt="../../_images/en_Interface_02.png" src="../../_images/en_Interface_02.png" style="height: 50px;" /></a>
 </figure>
 <ol class="arabic simple" start="3">
-<li><p><strong>Map View:</strong> The <strong>map view</strong> is the <strong>central component</strong> of every GIS programme. This is where the <strong>geodata</strong> are displayed. The map view has a projection which does not always have to correspond to the projection of the layers.</p></li>
-<li><p><strong>Status bar:</strong> In the <strong>status bar</strong> you will find <strong>central information about the current map view</strong>. Here you can set the <strong>projection of the map view and the scale</strong>. You can read the coordinates of the mouse pointer and thus quickly find out the coordinates of points on the map. You can rotate your map view, e.g. if you want to create a map facing south.</p></li>
-<li><p><strong>Side Toolbar</strong>. You may see a <strong>side toolbar</strong>. This is another way to easily open vector and raster files in QGIS.</p></li>
-<li><p><strong>Locator bar</strong>. Here you can <strong>search for tools and layers</strong>. If you don’t know where to find a tool, you can try here.</p></li>
+<li><p><strong>Map Canvas:</strong> The <strong>map canvas</strong> is the <strong>central component</strong> of every GIS programme. This is where the <strong>geodata</strong> are displayed. The map view has a projection which does not always have to correspond to the projection of the layers.</p></li>
+<li><p><strong>Coordinates and Scale:</strong> Here you can find information about the scale of the map canvas, as well as read the coordinates of the mouse pointer.</p></li>
+<li><p><strong>Browser panel:</strong> The browser panel let’s you browse the files on your computer and load datasets into your QGIS project.</p></li>
+<li><p><strong>Search bar</strong>. Here you can <strong>search for tools and layers</strong> in QGIS. If you don’t know where to find a tool, you can try here. You can also type in coordinates to find them on the map canvas.</p></li>
 </ol>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -979,6 +979,15 @@ Advanced Tools<div class="sd-summary-down docutils">
 </details></section>
 <section id="navigating-on-the-map-canvas">
 <h2>Navigating on the Map Canvas<a class="headerlink" href="#navigating-on-the-map-canvas" title="Permalink to this heading">#</a></h2>
+<div class="admonition-optional-now-it-s-your-turn admonition">
+<p class="admonition-title"><em>Optional</em>: Now it’s your turn!</p>
+<p>You can follow the steps below in your own QGIS project. Download <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_1/wb_boundaries/wb_countries_admin0_10m.gpkg">this dataset</a> and drag and drop the <code class="docutils literal notranslate"><span class="pre">wb_countries_admin0_10m.gpkg</span></code> onto the map canvas. The data set are the official country boundaries by the <a class="reference external" href="https://datacatalog.worldbank.org/search/dataset/0038272/World-Bank-Official-Boundaries">World Bank</a>.</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Download the Worldbank Official Boundaries</p>
+</div>
+<a class="sd-stretched-link reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_1/wb_boundaries/wb_countries_admin0_10m.gpkg"></a></div>
+</div>
 <section id="moving-the-map-view">
 <h3>Moving the map view<a class="headerlink" href="#moving-the-map-view" title="Permalink to this heading">#</a></h3>
 <aside class="margin sidebar">
@@ -1103,6 +1112,11 @@ In QGIS, the geodata you work with is <strong>not</strong> saved in your QGIS pr
 <p class="admonition-title">Connect with us!</p>
 <p>If you have more questions before or after the training or require assistance, do not hesitate to reach out to us by writing an email to <code class="docutils literal notranslate"><span class="pre">gis-training-platform&#64;heigit.org</span></code>.</p>
 </div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover sd-text-justify sd-rounded-3 sd-border-2 docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">We have collected a list of <strong><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html">Common errors and issues</a></strong>. If you ever find yourself at your wits end (which can happen a lot when working with QGIS!), try finding the solution to your problem here.</p>
+</div>
+<a class="sd-stretched-link reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html"></a></div>
 <p>There is also a big and vibrant QGIS community online. If you are struggling with a specific function, or have questions on how to achieve GIS operations that are not covered on this platform, you can find help on dedicated QGIS forums:</p>
 <ul class="simple">
 <li><p>QGIS user forum on stackexchange: <a class="reference external" href="https://gis.stackexchange.com/?tags=qgis">https://gis.stackexchange.com/?tags=qgis</a></p></li>
