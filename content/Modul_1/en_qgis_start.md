@@ -384,6 +384,7 @@ It can be that while working with QGIS, you come across orange warning icons. Th
 
 
 ```{figure} /fig/en_3.36_warning_icon_example.png
+---
 name: warning_icon_example
 width: 700 px
 ---
