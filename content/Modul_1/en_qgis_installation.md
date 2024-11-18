@@ -6,7 +6,8 @@ In this chapter, we will prepare the setup for the training. This includes insta
 
 ## Quick guide QGIS 3.34.12 - installation and basic setup
 
-[![QGIS 3.28 - installation and basic setup](/fig/image_QGIS_3.28_download.png)](https://www.youtube.com/watch?v=tSJMT96HsAo)
+
+<iframe width="560" height="315" src="https://youtube.com/embed/ck4PjoOIwMQ?si=8HHR03VzpyuhXOmr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## QGIS Download and Installation
 
@@ -32,11 +33,13 @@ depending on your operating system.
 
 ```{figure} /fig/QGIS_download_LTR_version.png
 ---
-height: 100px
+width: 600 px
 name: QGIS LTR Version
 align: center
 ---
+The download page for QGIS 3.34
 ```
+
 4. The download will start.
 5. Locate the downloaded file (usually in your Downloads folder) and run it to 
 start the installer
