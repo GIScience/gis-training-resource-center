@@ -3,14 +3,19 @@
 
 ## Characteristics of the exercise
 
+:::{card}
+__Aim of the exercise__
+^^^
+The aim of this exercise is to create an overview map of Ghana with its subdistricts, main roads, settlements, as well 
+as hospitals. Such information can  be of use in humanitarian work. The first part of the exercise will cover the 
+symbolisation of the data layers. The second part will focus on the design of the print layout.
+
+:::
+
 ::::{grid} 2
 :::{grid-item-card}
-
-## Aim of the exercise
-
-The aim of this exercise is to create an overview map of Ghana with its subdistricts, main roads, settlements, as well as hospitals. Such information can  be of use in humanitarian work. The first part of the exercise will cover the symbolisation of the data layers. The second part will focus on the design of the print layout.
-
-#### Type of trainings exercise:
+__Type of trainings exercise:__
+^^^
 
 - This exercise can be used in online and presence training. 
 - It can be done as a follow-along exercise or individually as a self-study.
@@ -18,27 +23,28 @@ The aim of this exercise is to create an overview map of Ghana with its subdistr
 :::
 
 :::{grid-item-card}
+__These skills are relevant for:__ 
+^^^
 
-#### These skills are relevant for 
-
-- visualising geographic data 
-- creating maps to communicate information
+- Visualising geographic data 
+- Understanding how QGIS visualises geodata
+- Creating overview maps, creating situational reports
 
 :::
 ::::
 
 ::::{grid} 2
 :::{grid-item-card}
+__Estimated time demand for the exercise__
+^^^
 
-#### Estimated time demand for the exercise.
-
-- The exercise takes around 5 hours to complete, depending on the number of participants and trainers. 
+- The exercise takes around 3 hours to complete, depending on the number of participants and trainers. 
 
 :::
 
 :::{grid-item-card}
-
-## Relevant Wiki Articles
+__Relevant Articles__
+^^^
 
 - [Visualisation](/content/Wiki/en_qgis_visualisation_wiki.md)  
 - [Module 4: Visualisation of Geodata](/content/Modul_4/en_qgis_map_design_I.md)  

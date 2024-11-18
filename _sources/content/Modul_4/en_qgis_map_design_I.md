@@ -73,28 +73,122 @@ Visual perception varies from one person to the next according to various capabi
 - Transcultural (green = nature, blue = water)
 ```
 
-## Choropleth and Graduated Symbol Maps
+## Using visual variables in cartography
 
-Based on these visual variables, cartographers are able to interpret and communicate information crucial to 
-humanitarian operations. Choropleth and Graduated symbol maps are two common thematic map types used in humanitarian 
+Based on these visual variables, cartographers are able to interpret and communicate 
+information crucial to humanitarian operations. Depending on the use case and the intended audience, you will use different stylings to communicate different data. 
+OpenStreetMap offers several map products: OSM Standard, Tracestack Topo, CyclOSM or the public transportation map, for example. The data behind the maps 
+is the same, but the styling is different. In each case, the cartographers had different goals in mind (e.g., for 
+the cycling map, show the safest biking routes, bike repair stations and resting places) and chose the styling accordingly.
+
+::::{grid} 2
+
+:::{grid-item}
+```{figure} /fig/m4_OSM_Overviewmap_example.png
+---
+name: OSM_topo
+width: 375 px
+---
+[OSM](https://www.openstreetmap.org) Standard 
+```
+:::
+
+:::{grid-item}
+```{figure} /fig/m4_OSM_bikemap.png
+---
+name: OSM_Radfahrerkarte
+width: 375 px
+---
+OSM Cycling Map
+```
+
+:::
+::::
+
+In the following dropdowns, you will 
+find different examples of maps used in humanitarian work. 
+
+:::{admonition} Now it's your turn! 
+:class: tip
+
+What type of symbolisation methods can you identify in these maps? What kind of information has been communicated in which way (e.g. information about infrastructure, natural landscapes, etc.) 
+What other methods to communicate information can you imagine or do you know? You can also show a map you encountered in your work or personal life. 
+
+You can also use maps from you encountered in your work or daily life.
+
+::::
+
+::::{dropdown} __Map Example 1__
+
+```{figure} /fig/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png
+---
+name: map_example_ethiopia
+width: 750 px
+---
+Flood affected areas and roads in the Somali Region, Ethiopia (Source: OCHA)
+``` 
+
+::::
+
+::::{dropdown} __Map Example 2__
+
+```{figure} /fig/proportional_circles_example.png
+---
+name: prop_circles_example
+width: 500 px
+---
+Internally Displaced Persons (IDPs), 30 September 2024 (Soure: [UNHCR](https://reliefweb.int/map/sudan/regional-bureau-east-horn-africa-and-great-lakes-region-internally-displaced-persons-idps-30-september-2024)).
+```
+
+::::
+
+::::{dropdown} __Map Example 3__
+
+```{figure} /fig/choropleth_hum_example.png
+---
+name: hum_sit_monitoring_choro_example
+width: 700 px
+---
+South Sudan: Humanitarian Situation Monitoring, April-May 2024 - Damaged shelters (Source: [REACH](https://repository.impact-initiatives.org/document/impact/897badb8/REACH_SSD_Map_HSM_AprilMay2024_DamagedShelters_June2024-1.pdf))
+```
+
+::::
+
+
+::::{dropdown} __Map Example 4__
+
+```{figure} /fig/en_m4_operational_overview_example.png
+---
+name: operational_overview_example
+width: 650 px
+---
+Operational overview or response activity map (Source: [Shelter Cluster Vanuata](https://reliefweb.int/map/vanuatu/vanuatu-tropical-cyclone-lola-distribution-and-gap-map-malampa-13022024))
+```
+
+::::
+
+
+
+### Choropleth & Graduated Symbol Maps 
+
+Choropleth and Graduated symbol maps are two common thematic map types used in humanitarian 
 work. 
-
-
-### __Choropleth Maps__
-^^^
-
-A choropleth map is a type of map that shows data using colors or shading within specific geographic areas, like 
-countries, states, or counties. It helps to visualize data patterns or distributions across regions. For example, a 
-choropleth map could show population density, where darker shades indicate higher densities and lighter shades indicate 
-lower densities.
 
 In essence:
 
-- Data is divided into areas on the map.
-- Colors or shades represent different values for each area.
-- Easy to interpret – darker or more intense colors often mean higher values, and lighter colors mean lower values.
 
-Choropleth maps are ideal for showing patterns over large areas but should be used carefully, as they don’t show exact 
+- Data is divided into areas on the map. 
+- __Choropleth maps__ are maps that show data using colors or shading within specific geographic areas, like 
+countries, states, or counties. It helps to visualize data patterns or distributions across regions. For example, a 
+choropleth map could show population density, where darker shades indicate higher densities and lighter shades indicate 
+lower densities. 
+- __Graduated Symbol maps__ use circles or other symbols of varying sizes to represent data values across 
+different locations. The larger the circle, the higher the data value it represents. This makes it useful for showing quantities or comparing values across different 
+points on a map. 
+ - For choropleth maps, colours or shades represent different values for each area. Usually, the darker or more intense colour signifies higher values. The effectiveness of a choropleth map is dependent on the __colouring scheme__. 
+- Graduated symbols maps are created by changing the size of a symbol in relation to a value in the attribute table. 
+
+Choropleth maps and graduated symbol maps are ideal for showing patterns over large areas but should be used carefully, as they don’t show exact 
 values within each region, just an overall gradient or level of intensity and they are used in almost every application 
 of mapping and GIS.
 
@@ -110,29 +204,22 @@ __Use cases__:
 
 __Humanitarian Action__
 
-In humanitarian action, choropleth maps are used to:
+In humanitarian action, choropleth maps or graduated symbol maps are used to:
 
 - Identify vulnerable regions: Maps can show areas with high poverty rates, conflict, or disaster impact, helping responders prioritize regions most in need of aid.
-- Track disease outbreaks: For instance, during an epidemic, choropleth maps can show areas with high infection rates, helping to direct medical resources and prevent further spread.
+- Track disease outbreaks: For instance, during an epidemic, you can show areas with high infection rates, helping to direct medical resources and prevent further spread.
 - Monitor food insecurity and famine risks: Maps that illustrate food scarcity help humanitarian organizations focus on regions where food aid is needed the most.
 
-```{figure} /fig/choropleth_hum_example.png
----
-name: hum_sit_monitoring_choro_example
-width: 700 px
----
-South Sudan: Humanitarian Situation Monitoring, April-May 2024 - Damaged shelters (Source: [REACH](https://repository.impact-initiatives.org/document/impact/897badb8/REACH_SSD_Map_HSM_AprilMay2024_DamagedShelters_June2024-1.pdf))
-```
 
 __Environmental Science__
 
-- Show pollution levels: Choropleth maps can depict air or water quality across regions, helping to identify polluted areas.
+- Show pollution levels: Depict air or water quality across regions, helping to identify polluted areas.
 - Track deforestation: Maps highlighting forest coverage changes make it easy to spot deforestation trends.
 - Climate impact: Regions prone to temperature rise or extreme weather can be highlighted to aid climate adaptation efforts.
 
 __Public Health__
 
-- Visualize health disparities: Choropleth maps can show regions with high rates of disease, poor access to healthcare, or varying vaccination rates.
+- Visualize health disparities: Show regions with high rates of disease, poor access to healthcare, or varying vaccination rates.
 - Resource allocation: Health authorities use these maps to allocate medical resources based on areas with higher health needs.
 
 __Urban Planning and Infrastructure__
@@ -141,35 +228,11 @@ __Urban Planning and Infrastructure__
 - Identify socioeconomic patterns: Urban planners use these maps to see income, employment, and education levels across neighborhoods.
 
 ---
-
+<!--ALIGN THIS-->
 Choropleth maps are usually created by [classifying](/content/Modul_3/en_qgis_data_classification.md) geodata into 
-distinct groups, either using categorised or graduated classification. The effectiveness of a choropleth map is 
-dependent on the __colouring scheme__.  
+distinct groups, either using categorised or graduated classification. 
 
-
-### __Proportional Circles/Graduated Symbols Map__
-
-Another very useful type of map in humanitarian action is the proportional circle or graduated symbol map. This type of 
-map uses circles of varying sizes to represent data values across different locations. The larger the circle, the 
-higher the data value it represents. This makes it useful for showing quantities or comparing values across different 
-points on a map. 
-
-
-```{figure} /fig/proportional_circles_example.png
----
-name: prop_circles_example
-width: 500 px
----
-Internally Displaced Persons (IDPs), 30 September 2024 (Soure: [UNHCR](https://reliefweb.int/map/sudan/regional-bureau-east-horn-africa-and-great-lakes-region-internally-displaced-persons-idps-30-september-2024)).
-```
-
-```{figure} /fig/proportional_circles_example_2.png
----
-name: prop_circles_example_2
-width: 450 px
----
-Cholera cases in Malawi (Source [Paul Knight](https://learn-sims.org/geospatial/creating-a-proportional-circle-map-in-qgis/)).
-```
+<!--In the next chapter, we will go over how to achieve both symbolisation methods-->
 
 
 # Symbology and styling
@@ -191,8 +254,6 @@ has it's own styling rules. These can range from simple (e.g. display line data 
 polygons) to more complex (e.g. differentiate between different types of roads, add complex fill-patterns to polygons, 
 or add SVG-symbols of varying sizes to ). 
 
-<!-- Vector and raster data is visualized differently in GIS-Software. -->
-
 
 ## Symbology
 
@@ -201,6 +262,8 @@ or add SVG-symbols of varying sizes to ).
 - Colours and styles represent a specific information
 - Symbology is applied to layers, but within the same layer we can assign multiple styles to features
 - The symbology of a layer can be __changed based on one of the layer's attributes__.
+
+<!--ADD: EXAMPLES OF DIFFERENT STYLING METHODS FOR SIMPLE GEODATA (e.g. houses in different colours, roads in different thickness or colous, points as point symbols or hospital symbols)-->
 
 <!---- To Do: add different visualisation for different types of data (discrete vs. continuous values, insert image). For example the amount of rainfall/temperature is a continuous value.-->
 
@@ -252,12 +315,14 @@ Single hue gradient on the left; Multiple hue gradient on the right.
 ```
 
 ```{tip}
-The [Colourbrewer website](colorbrewer2.org) is a quick and useful tool to select and generate colour palettes for your use case. 
+The [Colourbrewer website](colorbrewer2.org) is a quick and useful tool to select and 
+generate colour palettes for your use case. 
 ```
 
 ### Colourblindness
 
-When choosing the colours, you have to keep in mind that colour gradients (especially diverging Red-Green gradients) can be hard or impossible to distinguish for people with colour blindness.
+When choosing the colours, you have to keep in mind that colour gradients (especially 
+diverging Red-Green gradients) can be hard or impossible to distinguish for people with colour blindness.
 
 ``` {figure} ../../fig/Colour_Blindness.png
 ---
@@ -267,31 +332,50 @@ width: 750px
 Different Colour schemes for the Colour Vision Impaired; Source: Jenny, Bernhard, and Nathaniel Vaughn Kelso. (2007). Color Design for the Color Vision Impaired. *Cartographic Perspectives*, no. 58 (September 1, 2007): 61-67. https://doi.org/10.14714/CP58.270 
 ```
 
+
 ## Complex Maps
 
-The different symbolisation methods discussed in this chapter can be combined in different ways to create sophisticated reports and maps. By combining several methods, you can communicate different phenomena intuitively to the reader. A classical example is a combination of a choropleth map (graduated colours) with a proportional circles map (see {numref}`bivariate_map_example_lebanon`). 
+The different symbolisation methods discussed in this chapter can be combined in 
+different ways to create sophisticated reports and maps. By combining several methods, 
+you can communicate different phenomena intuitively to the reader. A classical example 
+is a combination of a choropleth map (graduated colours) with a proportional circles map 
+(see {numref}`bivariate_map_example_lebanon`). 
 
+__Complex Map 1:__
 
 ```{figure} /fig/en_complex_map_lebanon.png
+---
 name: bivariate_map_example_lebanon
 width: 550 px
 ---
-A complex map using graduated colours and proportional circles (Source: [REACH Initiative](https://reliefweb.int/map/lebanon/lebanon-conflict-and-displacement-overview-30-september-2024))
+A complex map using graduated colours and proportional circles (Source: [REACH](https://reliefweb.int/map/lebanon/lebanon-conflict-and-displacement-overview-30-september-2024))
 ```
 
+__Complex Map 2:__
 
 ```{figure} /fig/en_complex_bivariate_map.png
 ---
 name: complex_bivariate_map_example
-width: 750 px
+width: 550 px
 ---
-A complex map combining layer styling and different visual variables to communicate a complex situation (Source: [SIMS](https://rcrcsims.org/portfolio/view/18))
+A complex map combining layer styling and different visual variables to 
+communicate a complex situation (Source: [SIMS](https://rcrcsims.org/portfolio/view/18)).
 ```
 
+__Complex Map 3:__
+
+```{figure} /fig/en_complex_map_example_yemen.png
+---
+name: test_complex_map
+width: 550 px
+---
+A complex map using graduated colours to signify flood depth as well as the flood hazard for IDP sites (Source: [REACH](https://reliefweb.int/map/yemen/flood-hazard-idp-sites-marib-governorate-flood-depth-model-january-2024-production-date-07-may-2024))
+```
 
 :::{admonition} Now it's your turn!
 :class: tip
-{numref}`bivariate_map_example_lebanon` and {numref}`complex_bivariate_map_example` both make use of graduated colours as well as graduated symbols. What other symbolisation principles can you detect on these maps? 
+{numref}`bivariate_map_example_lebanon`, {numref}`complex_bivariate_map_example` and {numref}`en_complex_map_example_yemen` make use of graduated colours as well as graduated symbols. What other symbolisation principles can you detect on these maps? 
 :::
+
 
 Now that we have learned the different visual variables, and know how to use them to create complex maps, the next chapter [Symbology for Vector data](/content/Modul_4/en_qgis_styling_vector_data.md) will explain how to set up different symbolisation and styling methods in QGIS. 

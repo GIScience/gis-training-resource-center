@@ -4,7 +4,7 @@ __🔙[Back to Homepage](/content/intro.md)__
 
 In this chapter, we will prepare the setup for the training. This includes installing QGIS, setting up a folder structure for all the data in the training, and how to manage the downloaded material. The first step will be to install QGIS. After that, we will set up a folder structure for the training, as well as go over a few steps to keep your data management clean.
 
-## Quick guide QGIS 3.28 - installation and basic setup
+## Quick guide QGIS 3.34.12 - installation and basic setup
 
 [![QGIS 3.28 - installation and basic setup](/fig/image_QGIS_3.28_download.png)](https://www.youtube.com/watch?v=tSJMT96HsAo)
 
