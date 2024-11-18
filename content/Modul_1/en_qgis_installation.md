@@ -88,7 +88,7 @@ _Processing Saga NextGen Provider_ .
 Keeping your data and project-files organised is the key to successfully working with GIS-software. This exercises on this platform require you to download geodata and process them on your own. In order to keep everything organised, we advise you to create a folder structure for all the data and material downloaded in the course of this training.
 
 - Create a folder in the location of your choosing with the name `GIS_Training` 
-- When downloading data for the exercises, create subfolders for each module and training exercise (e.g. `/GIS_Training/Module_1/Exercise_1)
+- When downloading data for the exercises, create subfolders for each module and training exercise (e.g. `/GIS_Training/Module_1/Exercise_1`)
 - Save all of the QGIS-projects as well as the downloaded material for the exercises in these folders. 
 
 

@@ -130,9 +130,9 @@ name: QGIS User Interface
 QGIS User Interface. Source: CartONG
 ```
 
-1. __Layers List / Browser Panel:__ The __layers list__ shows __all layers/files__ that are __loaded in the project__. You can show/hide layers and set other properties.
+1. __Layers panel:__ The __layers list__ shows __all layers/files__ that are __loaded in the project__. You can show/hide layers and set other properties.
 
-2. __Toolsbars:  __Toolbars__ are shortcuts__ to execute frequently used commands. For example, there are special toolbars for __vector and raster files__, but also general ones for saving your project, etc. The toolbar contains, among other things, a list of all the commands you can use. The toolbar also contains the __toolbox__, which is used later in many of the wiki videos.
+2. __Toolsbars:__  __Toolbars__ are shortcuts to execute frequently used commands. For example, there are special toolbars for __vector and raster files__, but also general ones for saving your project, etc. The toolbar contains, among other things, a list of all the commands you can use. The toolbar also contains the __toolbox__, which is used later in many of the wiki videos.
 
 ```{figure} /fig/en_Interface_02.png
 ---
@@ -141,13 +141,13 @@ name: Toolbox button
 align: center
 ---
 ```
-3. __Map View:__ The __map view__ is the __central component__ of every GIS programme. This is where the __geodata__ are displayed. The map view has a projection which does not always have to correspond to the projection of the layers.
+3. __Map Canvas:__ The __map canvas__ is the __central component__ of every GIS programme. This is where the __geodata__ are displayed. The map view has a projection which does not always have to correspond to the projection of the layers.
 
-4.  __Status bar:__ In the __status bar__ you will find __central information about the current map view__. Here you can set the __projection of the map view and the scale__. You can read the coordinates of the mouse pointer and thus quickly find out the coordinates of points on the map. You can rotate your map view, e.g. if you want to create a map facing south.
+4.  __Coordinates and Scale:__ Here you can find information about the scale of the map canvas, as well as read the coordinates of the mouse pointer.
 
-5. __Side Toolbar__. You may see a __side toolbar__. This is another way to easily open vector and raster files in QGIS.
+5. __Browser panel:__ The browser panel let's you browse the files on your computer and load datasets into your QGIS project. 
 
-6. __Locator bar__. Here you can __search for tools and layers__. If you don't know where to find a tool, you can try here.
+6. __Search bar__. Here you can __search for tools and layers__ in QGIS. If you don't know where to find a tool, you can try here. You can also type in coordinates to find them on the map canvas. 
 
  :::{dropdown} Exercise: Create a new QGIS project
  1. In your “GIS_Training” folder, create a __subfolder__ called "Projects"
@@ -233,6 +233,19 @@ __Hotkeys__ in the QGIS interface provide convenient shortcuts for various comma
 ```
 
 ## Navigating on the Map Canvas
+
+```{admonition} *Optional*: Now it's your turn!
+
+You can follow the steps below in your own QGIS project. Download [this dataset](https://nexus.heigit.org/repository/gis-training-resource-center/Module_1/wb_boundaries/wb_countries_admin0_10m.gpkg) and drag and drop the `wb_countries_admin0_10m.gpkg` onto the map canvas. The data set are the official country boundaries by the [World Bank](https://datacatalog.worldbank.org/search/dataset/0038272/World-Bank-Official-Boundaries). 
+
+:::{card}
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_1/wb_boundaries/wb_countries_admin0_10m.gpkg
+
+Download the Worldbank Official Boundaries
+
+:::
+
+```
 
 ### Moving the map view
 
@@ -387,8 +400,7 @@ If you have more questions before or after the training or require assistance, d
 
 :::{card}
 :class-card: sd-text-justify sd-rounded-3 sd-border-2
-:link: 
-https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html
+:link: https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html
 We have collected a list of __[Common errors and issues](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html)__. If you ever find yourself at your wits end (which can happen a lot when working with QGIS!), try finding the solution to your problem here. 
 
 :::
