@@ -50,7 +50,7 @@ __For example__, select a symbol for every health facility that is a hospital an
 
 ::::
 
-:::{dropdown} Exercise: Only display the outlines of polygons
+:::{dropdown} Only display the outlines of polygons
 
 In this example, wewant to change the symbology of a single layer so that __only the outlines of the polygons are visible__. 
 
@@ -58,7 +58,7 @@ To change the symbology of a single layer:
 1. Open the `Styling panel` and navigate to the symbology tab. By default, the symbology will be set to `Single Symbol`. This means that the same colours and contours will be applied to all the features in that layer.
 2. Click on `Simple Fill`
 3. Click on the arrow to the right of `Fill Colour`
-4. Check the `Transparent Fill` option
+4. Check the `Transparent Fill` option.
 
 ```{figure} ../../fig/en_30.30.2_vector_layer_styling_transparent.png
 ---
@@ -102,8 +102,8 @@ Change the Fill type
 6. Choose a `Stroke Colour`, and make the `Stroke Width` 0.66 Millimeters.
 7. Click OK
 8. __Repeat the same process__ for the Adm1 layer, using the same colour as for Adm0 (it will be in "Recent colors) and leave the stroke width at 0.26.
-9. Now we can see the boundaries of the country and its states, and behind that we cann see the districs (Adm2).
-10. Let's make the districs layer's style consistent with the others.
+9. Now we can see the boundaries of the country and its states, and behind that we can see the districts (Adm2).
+10. Let's make the districts layer's style consistent with the others.
 
 <br/><br/>
 
@@ -206,7 +206,7 @@ width: 500px
 You can categorize the continuous values into classes and assign a colour ramp 
 ```
 
-The following map shows the most populated States of Nigeria using a graduated colour categorization. These types of maps are called __Coropleth maps__. 
+The following map shows the most populated States of Nigeria using a graduated colour categorization. These types of maps are called __choropleth maps__. 
 
 ```{figure} ../../fig/en_map_design_example_variable_ranges.png
 ---

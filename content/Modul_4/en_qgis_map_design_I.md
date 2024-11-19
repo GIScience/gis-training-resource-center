@@ -285,7 +285,7 @@ values, a diverging colour gradient should be used.
 name: Colouring schemes
 width: 750px
 ---
-Different types of colouring schemes
+Different types of colouring schemes.
 ```
 
 When choosing colour gradients, a clear gradient from lighter to darker colours is usually the most appropriate, as the 

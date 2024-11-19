@@ -185,16 +185,20 @@ name: change layer style 3
 ---
 The styling of a vector data consists of the colour and the outline
 ```
+
 :::{dropdown} Video: Adjusting the style for multiple layers
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_change_style_for_multiple_layers
 .mp4"></video>
 :::
 
-### Creating a choropleth map
+
+#### Creating a choropleth map
 
 Style data based on variable ranges ("__Graduated__" styling)
 
-If a layer contains numeric values that are continuous, they can be organized in intervals. These intervals can be displayed in graduated colours. In this exercise, we assign colours to Adm1 polygons based on the total population of each State.
+If a layer contains numeric values that are continuous, they can be organized in intervals. These intervals can be 
+displayed in graduated colours. In this exercise, we assign colours to Adm1 polygons based on the total population of 
+each State.
 
 
 1. Download the NGA_Adm1_Pop shapefile [link!!] and save it in your shapefile folder
@@ -240,14 +244,69 @@ A map showing the population of Nigerian states
 .mp4"></video>
 :::
 
+### Use different styles in a single layer
 
-####
+By categorizing or classifying data in a single layer, we are able to assign different styles to each classification. 
+For example, we can assign a symbol per distinct incident (political crime or accident), or assign a different line 
+style for different types of roads.
 
-<!--ADD: HOWTOS from the wiki-->
+#### Setting different point symbols for different features
+
+We can use symbology to __show the difference between features__ in the same layer. For example, it could be different types of buildings, quantities of Covid cases by district, or types of roads. We can choose a specific attribute of a dataset to assign different colors, outlines, or sizes to features:
+
+1. From your shapefile folder, __drag the ACLED security incidents shapefile onto your map__
+2. Open the `Symbology tab` for that layer and choose `Categorized` instead of Single Symbol.   
+
+```{note} 
+Categorized symbology is used when you have ***discrete*** variables.
+```
+
+```{figure} ../../fig/en_30.30.2_categorized_layer_symbology_1.png
+---
+name: categorized layer symbology 1
+width: 500px
+---
+Change the symbology type to "categorized" and choose the Value (variable) you wish to display
+```
+
+3. Now we need to __choose which attributes we want to display through the symbology__. In this case, it could be the number of casualties, or the actor who perpetrated the act. Let's categorize the features by `event_type`
+4. Click on `Classify` to __list all the unique values contained__ in the `event_type` field (i.e. all the possible types of security incidents recorded in our table)
+5. Now we can __change the style of each single value__
+6. Double click on the value `Explosions`
+7. At the bottom of the __Symbol selector__ window, choose a symbol to make Explosion points stand out.
+8. Click on `OK`, then Apply to preview what the layer will look like.
+9. Click `OK` again. 
+
+```{figure} ../../fig/en_30.30.2_categorized_layer_symbology_2.png
+---
+name: categorized layer symbology 2
+width: 500px
+---
+By double clicking on the __unique values__ in the classified list, you can change the symbol for each value
+```
+
+Now we have a map of Nigeria where you can locate the areas, that are affected by explosions more than others. On the map below, we also added text labels, which will be explained below.
+
+```{figure} ../../fig/en_exercise_map_design_example_Nigeria.png
+---
+name: map design example regions affected by explosions in Nigeria
+width: 500px
+---
+Regions affected by explosions in Nigeria
+```
+:::
+
+:::{dropdown} Video: Set up different symbols in a single layer
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_rule_based_styling
+.mp4"></video>
+
+:::
+
+#### Creating a graduated symbols map
 
 
-<!--ADD: Examples of simple markers for Points, Lines, Polygons
-ALSO: With different thickness-->
+
 
 ```{admonition} Optional: Now it's your turn
 :class: tip
@@ -256,23 +315,16 @@ Check out Paul Knight's [tutorial on how to create a proportional circle map](ht
 ```
 
 
-
-
-
-
-
-
-
 :::{card} 
-:class-card: sd-text-justify sd-text-black sd-border-1
+:class-card: sd-text-justify sd-text-black sd-border-0
 __Simple Markers, SVG-Symbols and Raster images__
 ^^^
 QGIS let's you use different types markers for vector data. These can be simple markers, raster images, or 
 SVG-symbols. Most of the time 
 
 - __Simple markers__ are simple shapes such as rectangles, circles, or crosses that can be adjusted in the symbolization layer (colour, size, outline, etc.). Most of your styling in QGIS will be done with these markers.
-- If you select __raster images__, the resolution of the symbol is limited by the amount of pixels in the image. It is not advisable to use high resolution images as symbols on your map because it may overload your PC.
 - __SVG-symbols__ are *scaleable vector graphic* symbols. As vector files, they can be scaled to any size while keeping the same resolution. In most cases, if you want to use a more complex symbol (e.g. hospital, school, train station), SVG-symbols are the best option as they let you adjust the symbol (colours, outline, size, etc.)
+- If you select __raster images__, the resolution of the symbol is limited by the amount of pixels in the image. It is not advisable to use high resolution images as symbols on your map because it may overload your PC.
 
 :::
 
