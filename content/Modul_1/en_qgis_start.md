@@ -127,12 +127,12 @@ name:
 align: center
 name: QGIS User Interface
 ---
-QGIS User Interface. Source: CartONG
+QGIS User Interface. Source: BRC
 ```
 
 1. __Layers panel:__ The __layers list__ shows __all layers/files__ that are __loaded in the project__. You can show/hide layers and set other properties.
 
-2. __Toolsbars:__  __Toolbars__ are shortcuts to execute frequently used commands. For example, there are special toolbars for __vector and raster files__, but also general ones for saving your project, etc. The toolbar contains, among other things, a list of all the commands you can use. The toolbar also contains the __toolbox__, which is used later in many of the wiki videos.
+2. __Toolbars:__  __Toolbars__ are shortcuts to execute frequently used commands. For example, there are special toolbars for __vector and raster files__, but also general ones for saving your project, etc. The toolbar contains, among other things, a list of all the commands you can use. The toolbar also contains the __processing toolbox__, which is used later in many of the wiki videos.
 
 ```{figure} /fig/en_Interface_02.png
 ---
@@ -147,7 +147,7 @@ align: center
 
 5. __Browser panel:__ The browser panel let's you browse the files on your computer and load datasets into your QGIS project. 
 
-6. __Search bar__. Here you can __search for tools and layers__ in QGIS. If you don't know where to find a tool, you can try here. You can also type in coordinates to find them on the map canvas. 
+6. __Search bar:__ Here you can __search for tools and layers__ in QGIS. If you don't know where to find a tool, you can try here. You can also type in coordinates to find them on the map canvas. 
 
  :::{dropdown} Exercise: Create a new QGIS project
  1. In your “GIS_Training” folder, create a __subfolder__ called "Projects"
@@ -409,9 +409,11 @@ We have collected a list of __[Common errors and issues](https://giscience.githu
 
 There is also a big and vibrant QGIS community online. If you are struggling with a specific function, or have questions on how to achieve GIS operations that are not covered on this platform, you can find help on dedicated QGIS forums: 
 
+- QGIS documentation: https://docs.qgis.org/3.34/en/docs/index.html 
 - QGIS user forum on stackexchange: https://gis.stackexchange.com/?tags=qgis
 - QGIS user groups: https://www.qgis.org/en/site/forusers/usergroups.html#qgis-usergroups
 - QGIS telegram channel: https://t.me/joinchat/Aq2V5RPoxYYhXqUPoxRWPQ
+
 
 Additionally, there is a large amount of youtube tutorials, online guides and learning material for specific 
 GIS-operations, so it is always a good idea to do a quick google search. Amongst others, the [QGIS documentation]

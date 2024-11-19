@@ -1,4 +1,4 @@
-# Exercises Module 4 - Visualisation of Geodata and Map Making
+# Exercises Module 4
 
 __🔙[Back to Homepage](/content/intro.md)__
 

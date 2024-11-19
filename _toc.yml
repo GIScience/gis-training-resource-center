@@ -40,8 +40,10 @@ parts:
         sections:
           - file: content/Modul_4/en_qgis_map_design_I.md
           - file: content/Modul_4/en_qgis_styling_vector_data.md
-          - file: content/Modul_4/en_qgis_map_design_2.md
+          - file: content/Modul_4/en_qgis_labels_vector.md
+          - file: content/Modul_4/en_qgis_working_with_styles.md
           - file: content/Modul_4/en_qgis_symbology_raster.md
+          - file: content/Modul_4/en_qgis_map_design_2.md
           - file: content/Modul_4/en_qgis_map_examples.md
           - file: content/Modul_4/en_qgis_modul_4_exercises.md
   - caption: Module 5
