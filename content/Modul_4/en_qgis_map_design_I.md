@@ -185,7 +185,9 @@ lower densities.
 - __Graduated Symbol maps__ use circles or other symbols of varying sizes to represent data values across 
 different locations. The larger the circle, the higher the data value it represents. This makes it useful for showing quantities or comparing values across different 
 points on a map. 
- - For choropleth maps, colours or shades represent different values for each area. Usually, the darker or more intense colour signifies higher values. The effectiveness of a choropleth map is dependent on the __colouring scheme__. 
+- For choropleth maps, colours or shades represent different values for each area. Usually, the darker or more intense colour signifies higher values. The effectiveness of a choropleth map is dependent on the __colouring scheme__. 
+- Choropleth maps are usually created by [classifying](/content/Modul_3/en_qgis_data_classification.md) geodata into 
+distinct groups, either using categorised or graduated classification. 
 - Graduated symbols maps are created by changing the size of a symbol in relation to a value in the attribute table. 
 
 Choropleth maps and graduated symbol maps are ideal for showing patterns over large areas but should be used carefully, as they don’t show exact 
@@ -200,9 +202,9 @@ width: 600 px
 An example of a choropleth map (Source: [AxisMaps](https://www.axismaps.com/guide/choropleth))
 ```
 
-__Use cases__:
+#### Use cases
 
-__Humanitarian Action__
+:::{dropdown} __Humanitarian Action__
 
 In humanitarian action, choropleth maps or graduated symbol maps are used to:
 
@@ -210,30 +212,31 @@ In humanitarian action, choropleth maps or graduated symbol maps are used to:
 - Track disease outbreaks: For instance, during an epidemic, you can show areas with high infection rates, helping to direct medical resources and prevent further spread.
 - Monitor food insecurity and famine risks: Maps that illustrate food scarcity help humanitarian organizations focus on regions where food aid is needed the most.
 
+:::
 
-__Environmental Science__
+:::{dropdown} __Environmental Science__
 
 - Show pollution levels: Depict air or water quality across regions, helping to identify polluted areas.
 - Track deforestation: Maps highlighting forest coverage changes make it easy to spot deforestation trends.
 - Climate impact: Regions prone to temperature rise or extreme weather can be highlighted to aid climate adaptation efforts.
 
-__Public Health__
+:::
+
+:::{dropdown} __Public Health__
 
 - Visualize health disparities: Show regions with high rates of disease, poor access to healthcare, or varying vaccination rates.
 - Resource allocation: Health authorities use these maps to allocate medical resources based on areas with higher health needs.
 
-__Urban Planning and Infrastructure__
+:::
+
+:::{dropdown} __Urban Planning and Infrastructure__
 
 - Display population density: Maps show where populations are concentrated, helping in city planning and infrastructure development.
 - Identify socioeconomic patterns: Urban planners use these maps to see income, employment, and education levels across neighborhoods.
 
+:::
+
 ---
-<!--ALIGN THIS-->
-Choropleth maps are usually created by [classifying](/content/Modul_3/en_qgis_data_classification.md) geodata into 
-distinct groups, either using categorised or graduated classification. 
-
-<!--In the next chapter, we will go over how to achieve both symbolisation methods-->
-
 
 # Symbology and styling
 
