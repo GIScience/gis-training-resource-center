@@ -5,7 +5,7 @@ The layers in QGIS are saved separately from the settings and styles of a QGIS P
 A `.qml`-file saves the information of a particular layer. This includes the colours, outlines, shapes, labelling, as well as the Layer configuration, attribute table settings, and other options you have set for a layer in your QGIS project that are not related done to the data files themselves. You can choose whether to save only the colour symbology or any additional information.
  
 You can export a style into the same folder as the data so your colleagues can apply the same styling when loading the data into QGIS.
-Some organisations may also use standarized symbols or colours in their maps. 
+Some organisations may also use standardised symbols or colours in their maps. 
 
 For example, if you want to send a layer to your colleague with the same styling as you, it is best to check the "__Layer properties__", "__Symbology__", and "__Labels__" categories (and any additional styling options you have set). If you only wish to save a certain colouring, line thickness, or labeling style, you only need to check the respective boxes.
 

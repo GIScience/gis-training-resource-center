@@ -148,9 +148,9 @@ Change the symbology type to "categorized" and choose the Value (variable) you w
 4. Click on `Classify` to __list all the unique values contained__ in the `event_type` field (i.e. all the possible types of security incidents recorded in our table)
 5. Now we can __change the style of each single value__
 6. Double click on the value `Explosions`
-7. At the bottom of the __Symbol selector__ window, choose a symbol to make Explosion points stand our
-8. Click on `OK`, then Apply to preview what the layer will look like
-9. Click `OK` again
+7. At the bottom of the __Symbol selector__ window, choose a symbol to make Explosion points stand out.
+8. Click on `OK`, then Apply to preview what the layer will look like.
+9. Click `OK` again.
 
 ```{figure} ../../fig/en_30.30.2_categorized_layer_symbology_2.png
 ---
