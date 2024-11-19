@@ -206,13 +206,15 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 4</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Modul_4/en_module_4_overview.html">Visualisation of Geodata and Map Making</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_map_design_I.html">Visualisation of Geodata: Symbology and Colours</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_map_design_I.html">Symbology and Colours</a></li>
 
 <li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_styling_vector_data.html">Styling Vector Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_map_design_2.html">Map Design: The Print layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_labels_vector.html">Labels for vector data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_working_with_styles.html">Exporting and Importing Styles</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_symbology_raster.html">Symbology for raster data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_map_design_2.html">Map Design: The Print layout</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_map_examples.html">Examples of Good Map Design</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_modul_4_exercises.html">Exercises Module 4 - Visualisation of Geodata and Map Making</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_modul_4_exercises.html">Exercises Module 4</a></li>
 </ul>
 </li>
 </ul>
@@ -680,12 +682,12 @@ The start screen of QGIS usually shows you the projects you worked on recently a
 <figure class="align-center" id="qgis-user-interface">
 <a class="reference internal image-reference" href="../../_images/en_QGIS_GUI.png"><img alt="../../_images/en_QGIS_GUI.png" src="../../_images/en_QGIS_GUI.png" style="width: 800px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 13 </span><span class="caption-text">QGIS User Interface. Source: CartONG</span><a class="headerlink" href="#qgis-user-interface" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 13 </span><span class="caption-text">QGIS User Interface. Source: BRC</span><a class="headerlink" href="#qgis-user-interface" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple">
 <li><p><strong>Layers panel:</strong> The <strong>layers list</strong> shows <strong>all layers/files</strong> that are <strong>loaded in the project</strong>. You can show/hide layers and set other properties.</p></li>
-<li><p><strong>Toolsbars:</strong>  <strong>Toolbars</strong> are shortcuts to execute frequently used commands. For example, there are special toolbars for <strong>vector and raster files</strong>, but also general ones for saving your project, etc. The toolbar contains, among other things, a list of all the commands you can use. The toolbar also contains the <strong>toolbox</strong>, which is used later in many of the wiki videos.</p></li>
+<li><p><strong>Toolbars:</strong>  <strong>Toolbars</strong> are shortcuts to execute frequently used commands. For example, there are special toolbars for <strong>vector and raster files</strong>, but also general ones for saving your project, etc. The toolbar contains, among other things, a list of all the commands you can use. The toolbar also contains the <strong>processing toolbox</strong>, which is used later in many of the wiki videos.</p></li>
 </ol>
 <figure class="align-center" id="toolbox-button">
 <a class="reference internal image-reference" href="../../_images/en_Interface_02.png"><img alt="../../_images/en_Interface_02.png" src="../../_images/en_Interface_02.png" style="height: 50px;" /></a>
@@ -694,7 +696,7 @@ The start screen of QGIS usually shows you the projects you worked on recently a
 <li><p><strong>Map Canvas:</strong> The <strong>map canvas</strong> is the <strong>central component</strong> of every GIS programme. This is where the <strong>geodata</strong> are displayed. The map view has a projection which does not always have to correspond to the projection of the layers.</p></li>
 <li><p><strong>Coordinates and Scale:</strong> Here you can find information about the scale of the map canvas, as well as read the coordinates of the mouse pointer.</p></li>
 <li><p><strong>Browser panel:</strong> The browser panel let’s you browse the files on your computer and load datasets into your QGIS project.</p></li>
-<li><p><strong>Search bar</strong>. Here you can <strong>search for tools and layers</strong> in QGIS. If you don’t know where to find a tool, you can try here. You can also type in coordinates to find them on the map canvas.</p></li>
+<li><p><strong>Search bar:</strong> Here you can <strong>search for tools and layers</strong> in QGIS. If you don’t know where to find a tool, you can try here. You can also type in coordinates to find them on the map canvas.</p></li>
 </ol>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -1119,6 +1121,7 @@ In QGIS, the geodata you work with is <strong>not</strong> saved in your QGIS pr
 <a class="sd-stretched-link reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html"></a></div>
 <p>There is also a big and vibrant QGIS community online. If you are struggling with a specific function, or have questions on how to achieve GIS operations that are not covered on this platform, you can find help on dedicated QGIS forums:</p>
 <ul class="simple">
+<li><p>QGIS documentation: <a class="reference external" href="https://docs.qgis.org/3.34/en/docs/index.html">https://docs.qgis.org/3.34/en/docs/index.html</a></p></li>
 <li><p>QGIS user forum on stackexchange: <a class="reference external" href="https://gis.stackexchange.com/?tags=qgis">https://gis.stackexchange.com/?tags=qgis</a></p></li>
 <li><p>QGIS user groups: <a class="reference external" href="https://www.qgis.org/en/site/forusers/usergroups.html#qgis-usergroups">https://www.qgis.org/en/site/forusers/usergroups.html#qgis-usergroups</a></p></li>
 <li><p>QGIS telegram channel: <a class="reference external" href="https://t.me/joinchat/Aq2V5RPoxYYhXqUPoxRWPQ">https://t.me/joinchat/Aq2V5RPoxYYhXqUPoxRWPQ</a></p></li>

@@ -1,4 +1,4 @@
-# Erxercise 1: Understanding the QGIS Interface
+# Exercise 1: Understanding the QGIS Interface
 
 __🔙[Back to Homepage](/content/intro.md)__
 

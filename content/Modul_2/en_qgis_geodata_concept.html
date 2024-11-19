@@ -206,13 +206,15 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 4</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Modul_4/en_module_4_overview.html">Visualisation of Geodata and Map Making</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_map_design_I.html">Visualisation of Geodata: Symbology and Colours</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_map_design_I.html">Symbology and Colours</a></li>
 
 <li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_styling_vector_data.html">Styling Vector Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_map_design_2.html">Map Design: The Print layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_labels_vector.html">Labels for vector data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_working_with_styles.html">Exporting and Importing Styles</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_symbology_raster.html">Symbology for raster data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_map_design_2.html">Map Design: The Print layout</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_map_examples.html">Examples of Good Map Design</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_modul_4_exercises.html">Exercises Module 4 - Visualisation of Geodata and Map Making</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_modul_4_exercises.html">Exercises Module 4</a></li>
 </ul>
 </li>
 </ul>
@@ -620,7 +622,7 @@ roads, lakes, trees, etc. - or represent intangible objects - such as administra
 numbers, health indicators, historical events, etc.</p>
 <section id="vector-data">
 <h3>Vector data<a class="headerlink" href="#vector-data" title="Permalink to this heading">#</a></h3>
-<p>Vector data are digital features and they can store geographic/spatial information, as well as other data attributes. As such, they are ideal to visualise information on a map. Each feature can be displayed on a maps using one out three geometries: <strong>points, lines, or polygons</strong>. A layer can only contain features with same type of geometry.</p>
+<p>Vector data are digital features and they can store geographic/spatial information, as well as other data attributes. As such, they are ideal to visualise information on a map. Each feature can be displayed on a maps using one out of three geometries: <strong>points, lines, or polygons</strong>. A layer can only contain features with same type of geometry.</p>
 <figure class="align-center" id="vector-data-overview">
 <a class="reference internal image-reference" href="../../_images/en_vector_data_overview.drawio.png"><img alt="../../_images/en_vector_data_overview.drawio.png" src="../../_images/en_vector_data_overview.drawio.png" style="width: 650px;" /></a>
 <figcaption>
@@ -634,7 +636,7 @@ numbers, health indicators, historical events, etc.</p>
 </ul>
 <p>Each feature stores the location (as address or coordinates) and further attributes, e.g. name, ID, or any other sort of
 information. Which geometry is used depends on the type of data that is represented. For example, a road might be
-represented by a line, a building might be represented by polygon and a tree might be represented by a point.</p>
+represented by a line, a building footprint might be represented by polygon and a tree might be represented by a point.</p>
 <figure class="align-default" id="geometry-geodata-example-2">
 <a class="reference internal image-reference" href="../../_images/en_geodata_example_2.png"><img alt="../../_images/en_geodata_example_2.png" src="../../_images/en_geodata_example_2.png" style="width: 700px;" /></a>
 <figcaption>
@@ -693,7 +695,7 @@ The following table gives a short description of commonly used vector file forma
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">.gdb</span></code></p></td>
 <td><p>Geodatabase</p></td>
-<td><p>Sesigned for efficient data management, spatial analysis, and complex geospatial workflows. Geodatabase files are a proprietary Esri format for storing and managing large volumes of spatial data, including feature classes, tables, and relationships in a structured database.</p></td>
+<td><p>Designed for efficient data management, spatial analysis, and complex geospatial workflows. Geodatabase files are a proprietary Esri format for storing and managing large volumes of spatial data, including feature classes, tables, and relationships in a structured database.</p></td>
 </tr>
 </tbody>
 </table>
@@ -804,13 +806,20 @@ Raster</div>
 <p>Databases such as Geodatabase (<code class="docutils literal notranslate"><span class="pre">.gdb</span></code>) or</p>
 </div>
 <hr class="docutils" />
-<p><a class="reference internal" href="#main-geodata-formats"><span class="std std-numref">Fig. 24</span></a> summarizes the different data formats for raster and vector data commonly used in GIS.</p>
-<figure class="align-center" id="main-geodata-formats">
-<a class="reference internal image-reference" href="../../_images/en_data_formats.png"><img alt="../../_images/en_data_formats.png" src="../../_images/en_data_formats.png" style="width: 700px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 24 </span><span class="caption-text">The main geographical data formats. Source: <a class="reference external" href="https://cartong.pages.gitlab.cartong.org/learning-corner/en/4_data_geo/4_1_formats">CartONG</a></span><a class="headerlink" href="#main-geodata-formats" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
+<!---REMOVED DUE TO DUPLICATION WITH THE DATA FORMAT TABLES
+
+{numref}`main_geodata_formats` summarizes the different data formats for raster and vector data commonly used in GIS.
+
+```{figure} /fig/en_data_formats.png
+---
+width: 700px
+align: center
+name: main_geodata_formats
+---
+The main geographical data formats. Source: [CartONG](https://cartong.pages.gitlab.cartong.org/learning-corner/en/4_data_geo/4_1_formats)
+```
+
+-->
 </section>
 </section>
 </section>
@@ -827,7 +836,7 @@ representation by using symbols and colors.</p>
 <figure class="align-center" id="layers-in-a-gis">
 <a class="reference internal image-reference" href="../../_images/en_layer.png"><img alt="../../_images/en_layer.png" src="../../_images/en_layer.png" style="width: 800px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 25 </span><span class="caption-text">Layers in a GIS. Source: <a class="reference external" href="https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_1_layers">CartONG</a></span><a class="headerlink" href="#layers-in-a-gis" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 24 </span><span class="caption-text">Layers in a GIS. Source: <a class="reference external" href="https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_1_layers">CartONG</a></span><a class="headerlink" href="#layers-in-a-gis" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="note admonition">
@@ -910,7 +919,7 @@ geometries in your delimited text file.</p>
 <figure class="align-center" id="import-delimited-text">
 <a class="reference internal image-reference" href="../../_images/en_import_delimeted_text.png"><img alt="../../_images/en_import_delimeted_text.png" src="../../_images/en_import_delimeted_text.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 26 </span><span class="caption-text">Import delimited text in QGIS 3.36.</span><a class="headerlink" href="#import-delimited-text" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 25 </span><span class="caption-text">Import delimited text in QGIS 3.36.</span><a class="headerlink" href="#import-delimited-text" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple">
@@ -930,7 +939,7 @@ Excel. There you can check which delimiter is used to separate the information.<
 <figure class="align-center" id="import-delimited-text-file-format">
 <a class="reference internal image-reference" href="../../_images/en_delimited_text_fileformat.png"><img alt="../../_images/en_delimited_text_fileformat.png" src="../../_images/en_delimited_text_fileformat.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 27 </span><span class="caption-text">Import delimited text in QGIS 3.36 - file format.</span><a class="headerlink" href="#import-delimited-text-file-format" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 26 </span><span class="caption-text">Import delimited text in QGIS 3.36 - file format.</span><a class="headerlink" href="#import-delimited-text-file-format" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic" start="4">

@@ -206,13 +206,15 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 4</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Modul_4/en_module_4_overview.html">Visualisation of Geodata and Map Making</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_map_design_I.html">Visualisation of Geodata: Symbology and Colours</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_map_design_I.html">Symbology and Colours</a></li>
 
 <li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_styling_vector_data.html">Styling Vector Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_map_design_2.html">Map Design: The Print layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_labels_vector.html">Labels for vector data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_working_with_styles.html">Exporting and Importing Styles</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_symbology_raster.html">Symbology for raster data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_map_design_2.html">Map Design: The Print layout</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_map_examples.html">Examples of Good Map Design</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_modul_4_exercises.html">Exercises Module 4 - Visualisation of Geodata and Map Making</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_modul_4_exercises.html">Exercises Module 4</a></li>
 </ul>
 </li>
 </ul>
@@ -3354,7 +3356,7 @@ The information below should show a green check and „The selection has matched
 <p>We also want to include the Event and Flash-floods as these types can also be associated with flooding events as a result of heavy rainfall, seasonal rainfall, etc.
 We also want to make sure that we rename the column containing the sum of the flooding events to <code class="docutils literal notranslate"><span class="pre">Sum</span> <span class="pre">flood</span> <span class="pre">events</span></code>.</p>
 <ol class="arabic simple" start="3">
-<li><p>Now we export this excel sheet as a CSV file and import it into QGIS. We will open the <code class="docutils literal notranslate"><span class="pre">Data</span> <span class="pre">Source</span> <span class="pre">Manager</span></code> and select the <code class="docutils literal notranslate"><span class="pre">Delimited</span> <span class="pre">Text</span></code> section. Here we need to do the following specifications (<a class="reference internal" href="#hia-import-csv-floods"><span class="std std-numref">Fig. 269</span></a>).</p></li>
+<li><p>Now we export this excel sheet as a CSV file and import it into QGIS. We will open the <code class="docutils literal notranslate"><span class="pre">Data</span> <span class="pre">Source</span> <span class="pre">Manager</span></code> and select the <code class="docutils literal notranslate"><span class="pre">Delimited</span> <span class="pre">Text</span></code> section. Here we need to do the following specifications (<a class="reference internal" href="#hia-import-csv-floods"><span class="std std-numref">Fig. 273</span></a>).</p></li>
 </ol>
 </section>
 <section id="task-9-data-visualization-and-analysis-in-qgis">
@@ -3378,7 +3380,7 @@ We also want to make sure that we rename the column containing the sum of the fl
 <figure class="align-default" id="hia-csv-import">
 <a class="reference internal image-reference" href="../../_images/Sudan_HIA_ex_import_csv_impact.png"><img alt="../../_images/Sudan_HIA_ex_import_csv_impact.png" src="../../_images/Sudan_HIA_ex_import_csv_impact.png" style="height: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 266 </span><span class="caption-text">Import of the CSV data impact quantity 2020 on state level</span><a class="headerlink" href="#hia-csv-import" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 270 </span><span class="caption-text">Import of the CSV data impact quantity 2020 on state level</span><a class="headerlink" href="#hia-csv-import" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="2">
@@ -3398,7 +3400,7 @@ We also want to make sure that we rename the column containing the sum of the fl
 <figure class="align-default" id="hia-join">
 <a class="reference internal image-reference" href="../../_images/Sudan_HIA_ex_join_table.png"><img alt="../../_images/Sudan_HIA_ex_join_table.png" src="../../_images/Sudan_HIA_ex_join_table.png" style="height: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 267 </span><span class="caption-text">Join the table information onto the geodata</span><a class="headerlink" href="#hia-join" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 271 </span><span class="caption-text">Join the table information onto the geodata</span><a class="headerlink" href="#hia-join" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="3">
@@ -3418,36 +3420,36 @@ We also want to make sure that we rename the column containing the sum of the fl
 <figure class="align-default" id="hia-map-houses">
 <a class="reference internal image-reference" href="../../_images/en_HIA_map_houses.png"><img alt="../../_images/en_HIA_map_houses.png" src="../../_images/en_HIA_map_houses.png" style="height: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 268 </span><span class="caption-text">Example map of destroyed houses in Sudan 2020</span><a class="headerlink" href="#hia-map-houses" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 272 </span><span class="caption-text">Example map of destroyed houses in Sudan 2020</span><a class="headerlink" href="#hia-map-houses" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p><strong>Flood events in Sudanese states for all the recorded years</strong></p>
 <p>In this section we want to analyse and visualise all recorded flooding events for all the Sudanese state. With our filter for the Impact-Type we derive information for the years 2003 until 2021.</p>
 <ol class="arabic simple">
-<li><p>Now we impoer the file “Floods_Sudan_all_years” from the input folder. We will open the <code class="docutils literal notranslate"><span class="pre">Data</span> <span class="pre">Source</span> <span class="pre">Manager</span></code> and select the <code class="docutils literal notranslate"><span class="pre">Delimited</span> <span class="pre">Text</span></code> section. Here we need to do the following specifications (<a class="reference internal" href="#hia-import-csv-floods"><span class="std std-numref">Fig. 269</span></a>).</p></li>
+<li><p>Now we impoer the file “Floods_Sudan_all_years” from the input folder. We will open the <code class="docutils literal notranslate"><span class="pre">Data</span> <span class="pre">Source</span> <span class="pre">Manager</span></code> and select the <code class="docutils literal notranslate"><span class="pre">Delimited</span> <span class="pre">Text</span></code> section. Here we need to do the following specifications (<a class="reference internal" href="#hia-import-csv-floods"><span class="std std-numref">Fig. 273</span></a>).</p></li>
 </ol>
 <figure class="align-default" id="hia-import-csv-floods">
 <a class="reference internal image-reference" href="../../_images/en_HIA_import_csv_floods.png"><img alt="../../_images/en_HIA_import_csv_floods.png" src="../../_images/en_HIA_import_csv_floods.png" style="height: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 269 </span><span class="caption-text">Import of the CSV data</span><a class="headerlink" href="#hia-import-csv-floods" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 273 </span><span class="caption-text">Import of the CSV data</span><a class="headerlink" href="#hia-import-csv-floods" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="2">
-<li><p>The next step follows the same logic as step 2 in the previous example. We will use geodata that contains information about the states of Sudan and join them with the imported CSV data. We will use the <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">attributes</span> <span class="pre">by</span> <span class="pre">field</span> <span class="pre">value</span></code> tool and select the ADM1_PCODE as the table field used for the join. An example is shown in <a class="reference internal" href="#hia-join-floods"><span class="std std-numref">Fig. 270</span></a>.</p></li>
+<li><p>The next step follows the same logic as step 2 in the previous example. We will use geodata that contains information about the states of Sudan and join them with the imported CSV data. We will use the <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">attributes</span> <span class="pre">by</span> <span class="pre">field</span> <span class="pre">value</span></code> tool and select the ADM1_PCODE as the table field used for the join. An example is shown in <a class="reference internal" href="#hia-join-floods"><span class="std std-numref">Fig. 274</span></a>.</p></li>
 </ol>
 <figure class="align-default" id="hia-join-floods">
 <a class="reference internal image-reference" href="../../_images/en_HIA_join_floods.png"><img alt="../../_images/en_HIA_join_floods.png" src="../../_images/en_HIA_join_floods.png" style="height: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 270 </span><span class="caption-text">Join the table information onto the geodata</span><a class="headerlink" href="#hia-join-floods" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 274 </span><span class="caption-text">Join the table information onto the geodata</span><a class="headerlink" href="#hia-join-floods" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="3">
-<li><p>Now we can visualise our results using <code class="docutils literal notranslate"><span class="pre">Graduated</span></code> and selecting the corresponding column of the attribute table <code class="docutils literal notranslate"><span class="pre">Sum</span> <span class="pre">flood</span> <span class="pre">events</span></code>. Select an appropriate color scheme and start creating your map. Your final product could look like <a class="reference internal" href="#hia-map-floods"><span class="std std-numref">Fig. 271</span></a>.</p></li>
+<li><p>Now we can visualise our results using <code class="docutils literal notranslate"><span class="pre">Graduated</span></code> and selecting the corresponding column of the attribute table <code class="docutils literal notranslate"><span class="pre">Sum</span> <span class="pre">flood</span> <span class="pre">events</span></code>. Select an appropriate color scheme and start creating your map. Your final product could look like <a class="reference internal" href="#hia-map-floods"><span class="std std-numref">Fig. 275</span></a>.</p></li>
 </ol>
 <figure class="align-default" id="hia-map-floods">
 <a class="reference internal image-reference" href="../../_images/en_HIA_map_floods.png"><img alt="../../_images/en_HIA_map_floods.png" src="../../_images/en_HIA_map_floods.png" style="height: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 271 </span><span class="caption-text">Example map</span><a class="headerlink" href="#hia-map-floods" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 275 </span><span class="caption-text">Example map</span><a class="headerlink" href="#hia-map-floods" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">

@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Visualisation of Geodata: Symbology and Colours &#8212; GIS Resource Training Center</title>
+    <title>Symbology and Colours &#8212; GIS Resource Training Center</title>
   
   
   
@@ -206,13 +206,15 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 4</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="en_module_4_overview.html">Visualisation of Geodata and Map Making</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Visualisation of Geodata: Symbology and Colours</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Symbology and Colours</a></li>
 
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_styling_vector_data.html">Styling Vector Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_map_design_2.html">Map Design: The Print layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_labels_vector.html">Labels for vector data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_working_with_styles.html">Exporting and Importing Styles</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_symbology_raster.html">Symbology for raster data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_map_design_2.html">Map Design: The Print layout</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_map_examples.html">Examples of Good Map Design</a></li>
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_modul_4_exercises.html">Exercises Module 4 - Visualisation of Geodata and Map Making</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_modul_4_exercises.html">Exercises Module 4</a></li>
 </ul>
 </li>
 </ul>
@@ -535,7 +537,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Visualisation of Geodata: Symbology and Colours</h1>
+    <h1>Symbology and Colours</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -545,10 +547,13 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Visualisation of Geodata: Symbology and Colours</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Symbology and Colours</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visual-variables">Visual Variables</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-visual-variables-in-cartography">Using visual variables in cartography</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#choropleth-graduated-symbol-maps">Choropleth &amp; Graduated Symbol Maps</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#choropleth-graduated-symbol-maps">Choropleth &amp; Graduated Symbol Maps</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#use-cases">Use cases</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -574,8 +579,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="visualisation-of-geodata-symbology-and-colours">
-<h1>Visualisation of Geodata: Symbology and Colours<a class="headerlink" href="#visualisation-of-geodata-symbology-and-colours" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="symbology-and-colours">
+<h1>Symbology and Colours<a class="headerlink" href="#symbology-and-colours" title="Permalink to this heading">#</a></h1>
 <p>The representation of geodata in maps is essential for providing useful location-based insights. This subchapter will
 cover the basics of good map design, how to create a map design in QGIS, as well as common mistakes when designing or
 interpreting maps.</p>
@@ -591,7 +596,7 @@ agricultural land).</p>
 <figure class="align-default" id="topographic-maps-examples">
 <a class="reference internal image-reference" href="../../_images/en_30.30.2_topographic_map_examples.png"><img alt="../../_images/en_30.30.2_topographic_map_examples.png" src="../../_images/en_30.30.2_topographic_map_examples.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 76 </span><span class="caption-text">Examples for topographic maps</span><a class="headerlink" href="#topographic-maps-examples" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 75 </span><span class="caption-text">Examples for topographic maps</span><a class="headerlink" href="#topographic-maps-examples" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p><strong>Thematic maps</strong> display the distribution of specific data or statistically processed information, such as population
@@ -600,7 +605,7 @@ the rules of graphic semiology.</p>
 <figure class="align-default" id="thematic-maps-examples">
 <a class="reference internal image-reference" href="../../_images/en_30.30.2_thematic_maps_examples.png"><img alt="../../_images/en_30.30.2_thematic_maps_examples.png" src="../../_images/en_30.30.2_thematic_maps_examples.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 77 </span><span class="caption-text">Examples for thematic maps</span><a class="headerlink" href="#thematic-maps-examples" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 76 </span><span class="caption-text">Examples for thematic maps</span><a class="headerlink" href="#thematic-maps-examples" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>These two maps use design elements differently. Topographic maps will use symbols and colours out of convention and
@@ -612,7 +617,7 @@ information you want to convey.</p>
 <figure class="align-default" id="graphic-information">
 <a class="reference internal image-reference" href="../../_images/en_30.30.2_graphic_semiology_signs.png"><img alt="../../_images/en_30.30.2_graphic_semiology_signs.png" src="../../_images/en_30.30.2_graphic_semiology_signs.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 78 </span><span class="caption-text">You can use different graphic signs depending on the type of information you want to display.</span><a class="headerlink" href="#graphic-information" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 77 </span><span class="caption-text">You can use different graphic signs depending on the type of information you want to display.</span><a class="headerlink" href="#graphic-information" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Visual variables are the <strong>graphical means for visually transcribing information</strong>. The visual variables are <strong>shape,
@@ -622,7 +627,7 @@ between each element, helping to display different information.</p>
 <figure class="align-default" id="id1">
 <a class="reference internal image-reference" href="../../_images/en_visual_variables.png"><img alt="../../_images/en_visual_variables.png" src="../../_images/en_visual_variables.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 79 </span><span class="caption-text">Visual variables according to Bertin (1967)</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 78 </span><span class="caption-text">Visual variables according to Bertin (1967)</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition caution">
@@ -647,7 +652,7 @@ the cycling map, show the safest biking routes, bike repair stations and resting
 <figure class="align-default" id="osm-topo">
 <a class="reference internal image-reference" href="../../_images/m4_OSM_Overviewmap_example.png"><img alt="../../_images/m4_OSM_Overviewmap_example.png" src="../../_images/m4_OSM_Overviewmap_example.png" style="width: 375px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 80 </span><span class="caption-text"><a class="reference external" href="https://www.openstreetmap.org">OSM</a> Standard</span><a class="headerlink" href="#osm-topo" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 79 </span><span class="caption-text"><a class="reference external" href="https://www.openstreetmap.org">OSM</a> Standard</span><a class="headerlink" href="#osm-topo" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -655,7 +660,7 @@ the cycling map, show the safest biking routes, bike repair stations and resting
 <figure class="align-default" id="osm-radfahrerkarte">
 <a class="reference internal image-reference" href="../../_images/m4_OSM_bikemap.png"><img alt="../../_images/m4_OSM_bikemap.png" src="../../_images/m4_OSM_bikemap.png" style="width: 375px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 81 </span><span class="caption-text">OSM Cycling Map</span><a class="headerlink" href="#osm-radfahrerkarte" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 80 </span><span class="caption-text">OSM Cycling Map</span><a class="headerlink" href="#osm-radfahrerkarte" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -679,7 +684,7 @@ What other methods to communicate information can you imagine or do you know? Yo
 <figure class="align-default" id="map-example-ethiopia">
 <a class="reference internal image-reference" href="../../_images/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png"><img alt="../../_images/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png" src="../../_images/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png" style="width: 750px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 82 </span><span class="caption-text">Flood affected areas and roads in the Somali Region, Ethiopia (Source: OCHA)</span><a class="headerlink" href="#map-example-ethiopia" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 81 </span><span class="caption-text">Flood affected areas and roads in the Somali Region, Ethiopia (Source: OCHA)</span><a class="headerlink" href="#map-example-ethiopia" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -693,7 +698,7 @@ What other methods to communicate information can you imagine or do you know? Yo
 <figure class="align-default" id="prop-circles-example">
 <a class="reference internal image-reference" href="../../_images/proportional_circles_example.png"><img alt="../../_images/proportional_circles_example.png" src="../../_images/proportional_circles_example.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 83 </span><span class="caption-text">Internally Displaced Persons (IDPs), 30 September 2024 (Soure: <a class="reference external" href="https://reliefweb.int/map/sudan/regional-bureau-east-horn-africa-and-great-lakes-region-internally-displaced-persons-idps-30-september-2024">UNHCR</a>).</span><a class="headerlink" href="#prop-circles-example" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 82 </span><span class="caption-text">Internally Displaced Persons (IDPs), 30 September 2024 (Soure: <a class="reference external" href="https://reliefweb.int/map/sudan/regional-bureau-east-horn-africa-and-great-lakes-region-internally-displaced-persons-idps-30-september-2024">UNHCR</a>).</span><a class="headerlink" href="#prop-circles-example" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -707,7 +712,7 @@ What other methods to communicate information can you imagine or do you know? Yo
 <figure class="align-default" id="hum-sit-monitoring-choro-example">
 <a class="reference internal image-reference" href="../../_images/choropleth_hum_example.png"><img alt="../../_images/choropleth_hum_example.png" src="../../_images/choropleth_hum_example.png" style="width: 700px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 84 </span><span class="caption-text">South Sudan: Humanitarian Situation Monitoring, April-May 2024 - Damaged shelters (Source: <a class="reference external" href="https://repository.impact-initiatives.org/document/impact/897badb8/REACH_SSD_Map_HSM_AprilMay2024_DamagedShelters_June2024-1.pdf">REACH</a>)</span><a class="headerlink" href="#hum-sit-monitoring-choro-example" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 83 </span><span class="caption-text">South Sudan: Humanitarian Situation Monitoring, April-May 2024 - Damaged shelters (Source: <a class="reference external" href="https://repository.impact-initiatives.org/document/impact/897badb8/REACH_SSD_Map_HSM_AprilMay2024_DamagedShelters_June2024-1.pdf">REACH</a>)</span><a class="headerlink" href="#hum-sit-monitoring-choro-example" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -721,7 +726,7 @@ What other methods to communicate information can you imagine or do you know? Yo
 <figure class="align-default" id="operational-overview-example">
 <a class="reference internal image-reference" href="../../_images/en_m4_operational_overview_example.png"><img alt="../../_images/en_m4_operational_overview_example.png" src="../../_images/en_m4_operational_overview_example.png" style="width: 650px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 85 </span><span class="caption-text">Operational overview or response activity map (Source: <a class="reference external" href="https://reliefweb.int/map/vanuatu/vanuatu-tropical-cyclone-lola-distribution-and-gap-map-malampa-13022024">Shelter Cluster Vanuata</a>)</span><a class="headerlink" href="#operational-overview-example" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 84 </span><span class="caption-text">Operational overview or response activity map (Source: <a class="reference external" href="https://reliefweb.int/map/vanuatu/vanuatu-tropical-cyclone-lola-distribution-and-gap-map-malampa-13022024">Shelter Cluster Vanuata</a>)</span><a class="headerlink" href="#operational-overview-example" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -740,6 +745,8 @@ lower densities.</p></li>
 different locations. The larger the circle, the higher the data value it represents. This makes it useful for showing quantities or comparing values across different
 points on a map.</p></li>
 <li><p>For choropleth maps, colours or shades represent different values for each area. Usually, the darker or more intense colour signifies higher values. The effectiveness of a choropleth map is dependent on the <strong>colouring scheme</strong>.</p></li>
+<li><p>Choropleth maps are usually created by <a class="reference internal" href="../Modul_3/en_qgis_data_classification.html"><span class="doc std std-doc">classifying</span></a> geodata into
+distinct groups, either using categorised or graduated classification.</p></li>
 <li><p>Graduated symbols maps are created by changing the size of a symbol in relation to a value in the attribute table.</p></li>
 </ul>
 <p>Choropleth maps and graduated symbol maps are ideal for showing patterns over large areas but should be used carefully, as they don’t show exact
@@ -748,41 +755,67 @@ of mapping and GIS.</p>
 <figure class="align-default" id="choropleth-intro-example">
 <a class="reference internal image-reference" href="../../_images/choropleth_intro_example.png"><img alt="../../_images/choropleth_intro_example.png" src="../../_images/choropleth_intro_example.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 86 </span><span class="caption-text">An example of a choropleth map (Source: <a class="reference external" href="https://www.axismaps.com/guide/choropleth">AxisMaps</a>)</span><a class="headerlink" href="#choropleth-intro-example" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 85 </span><span class="caption-text">An example of a choropleth map (Source: <a class="reference external" href="https://www.axismaps.com/guide/choropleth">AxisMaps</a>)</span><a class="headerlink" href="#choropleth-intro-example" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p><strong>Use cases</strong>:</p>
-<p><strong>Humanitarian Action</strong></p>
-<p>In humanitarian action, choropleth maps or graduated symbol maps are used to:</p>
+<section id="use-cases">
+<h4>Use cases<a class="headerlink" href="#use-cases" title="Permalink to this heading">#</a></h4>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Humanitarian Action</strong><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">In humanitarian action, choropleth maps or graduated symbol maps are used to:</p>
 <ul class="simple">
-<li><p>Identify vulnerable regions: Maps can show areas with high poverty rates, conflict, or disaster impact, helping responders prioritize regions most in need of aid.</p></li>
-<li><p>Track disease outbreaks: For instance, during an epidemic, you can show areas with high infection rates, helping to direct medical resources and prevent further spread.</p></li>
-<li><p>Monitor food insecurity and famine risks: Maps that illustrate food scarcity help humanitarian organizations focus on regions where food aid is needed the most.</p></li>
+<li><p class="sd-card-text">Identify vulnerable regions: Maps can show areas with high poverty rates, conflict, or disaster impact, helping responders prioritize regions most in need of aid.</p></li>
+<li><p class="sd-card-text">Track disease outbreaks: For instance, during an epidemic, you can show areas with high infection rates, helping to direct medical resources and prevent further spread.</p></li>
+<li><p class="sd-card-text">Monitor food insecurity and famine risks: Maps that illustrate food scarcity help humanitarian organizations focus on regions where food aid is needed the most.</p></li>
 </ul>
-<p><strong>Environmental Science</strong></p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Environmental Science</strong><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
 <ul class="simple">
-<li><p>Show pollution levels: Depict air or water quality across regions, helping to identify polluted areas.</p></li>
-<li><p>Track deforestation: Maps highlighting forest coverage changes make it easy to spot deforestation trends.</p></li>
-<li><p>Climate impact: Regions prone to temperature rise or extreme weather can be highlighted to aid climate adaptation efforts.</p></li>
+<li><p class="sd-card-text">Show pollution levels: Depict air or water quality across regions, helping to identify polluted areas.</p></li>
+<li><p class="sd-card-text">Track deforestation: Maps highlighting forest coverage changes make it easy to spot deforestation trends.</p></li>
+<li><p class="sd-card-text">Climate impact: Regions prone to temperature rise or extreme weather can be highlighted to aid climate adaptation efforts.</p></li>
 </ul>
-<p><strong>Public Health</strong></p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Public Health</strong><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
 <ul class="simple">
-<li><p>Visualize health disparities: Show regions with high rates of disease, poor access to healthcare, or varying vaccination rates.</p></li>
-<li><p>Resource allocation: Health authorities use these maps to allocate medical resources based on areas with higher health needs.</p></li>
+<li><p class="sd-card-text">Visualize health disparities: Show regions with high rates of disease, poor access to healthcare, or varying vaccination rates.</p></li>
+<li><p class="sd-card-text">Resource allocation: Health authorities use these maps to allocate medical resources based on areas with higher health needs.</p></li>
 </ul>
-<p><strong>Urban Planning and Infrastructure</strong></p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Urban Planning and Infrastructure</strong><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
 <ul class="simple">
-<li><p>Display population density: Maps show where populations are concentrated, helping in city planning and infrastructure development.</p></li>
-<li><p>Identify socioeconomic patterns: Urban planners use these maps to see income, employment, and education levels across neighborhoods.</p></li>
+<li><p class="sd-card-text">Display population density: Maps show where populations are concentrated, helping in city planning and infrastructure development.</p></li>
+<li><p class="sd-card-text">Identify socioeconomic patterns: Urban planners use these maps to see income, employment, and education levels across neighborhoods.</p></li>
 </ul>
+</div>
+</details></section>
+</section>
+</section>
+</section>
 <hr class="docutils" />
-<!--ALIGN THIS-->
-<p>Choropleth maps are usually created by <a class="reference internal" href="../Modul_3/en_qgis_data_classification.html"><span class="doc std std-doc">classifying</span></a> geodata into
-distinct groups, either using categorised or graduated classification.</p>
-<!--In the next chapter, we will go over how to achieve both symbolisation methods-->
-</section>
-</section>
-</section>
 <section class="tex2jax_ignore mathjax_ignore" id="symbology-and-styling">
 <h1>Symbology and styling<a class="headerlink" href="#symbology-and-styling" title="Permalink to this heading">#</a></h1>
 <p>Depending on the use case and type of geodata at your disposal, there are multiple ways to visualise geodata in a
@@ -827,7 +860,7 @@ values, a diverging colour gradient should be used.</p>
 <figure class="align-default" id="colouring-schemes">
 <a class="reference internal image-reference" href="../../_images/en_colour_gradients_qualities.png"><img alt="../../_images/en_colour_gradients_qualities.png" src="../../_images/en_colour_gradients_qualities.png" style="width: 750px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 87 </span><span class="caption-text">Different types of colouring schemes</span><a class="headerlink" href="#colouring-schemes" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 86 </span><span class="caption-text">Different types of colouring schemes.</span><a class="headerlink" href="#colouring-schemes" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>When choosing colour gradients, a clear gradient from lighter to darker colours is usually the most appropriate, as the
@@ -837,7 +870,7 @@ white. You can achieve a clear sequence by grading the <strong>saturation</stron
 <figure class="align-default" id="colour-gradients-saturation-example">
 <a class="reference internal image-reference" href="../../_images/de_colour_gradients_saturation.png"><img alt="../../_images/de_colour_gradients_saturation.png" src="../../_images/de_colour_gradients_saturation.png" style="width: 750px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 88 </span><span class="caption-text">Examples for different colour gradients translated into black and white. Pay attention to the saturation gradient under
+<p><span class="caption-number">Fig. 87 </span><span class="caption-text">Examples for different colour gradients translated into black and white. Pay attention to the saturation gradient under
 each example. Source: Stauffer, Reto &amp; Mayr, Georg &amp; Dabernig, Markus &amp; Zeileis, Achim. (2014). Somewhere Over the
 Rainbow: How to Make Effective Use of Colours in Meteorological Visualizations. Bulletin of the American Meteorological
 Society. 96. 140710055335002. 10.1175/BAMS-D-13-00155.1.</span><a class="headerlink" href="#colour-gradients-saturation-example" title="Permalink to this image">#</a></p>
@@ -847,7 +880,7 @@ Society. 96. 140710055335002. 10.1175/BAMS-D-13-00155.1.</span><a class="headerl
 <figure class="align-default" id="colour-gradients-with-multiple-hues">
 <a class="reference internal image-reference" href="../../_images/colour_gradients_hues.png"><img alt="../../_images/colour_gradients_hues.png" src="../../_images/colour_gradients_hues.png" style="width: 750px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 89 </span><span class="caption-text">Single hue gradient on the left; Multiple hue gradient on the right.</span><a class="headerlink" href="#colour-gradients-with-multiple-hues" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 88 </span><span class="caption-text">Single hue gradient on the left; Multiple hue gradient on the right.</span><a class="headerlink" href="#colour-gradients-with-multiple-hues" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition tip">
@@ -862,7 +895,7 @@ diverging Red-Green gradients) can be hard or impossible to distinguish for peop
 <figure class="align-default" id="colour-blindness-examples">
 <a class="reference internal image-reference" href="../../_images/Colour_Blindness.png"><img alt="../../_images/Colour_Blindness.png" src="../../_images/Colour_Blindness.png" style="width: 750px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 90 </span><span class="caption-text">Different Colour schemes for the Colour Vision Impaired; Source: Jenny, Bernhard, and Nathaniel Vaughn Kelso. (2007). Color Design for the Color Vision Impaired. <em>Cartographic Perspectives</em>, no. 58 (September 1, 2007): 61-67. <a class="reference external" href="https://doi.org/10.14714/CP58.270">https://doi.org/10.14714/CP58.270</a></span><a class="headerlink" href="#colour-blindness-examples" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 89 </span><span class="caption-text">Different Colour schemes for the Colour Vision Impaired; Source: Jenny, Bernhard, and Nathaniel Vaughn Kelso. (2007). Color Design for the Color Vision Impaired. <em>Cartographic Perspectives</em>, no. 58 (September 1, 2007): 61-67. <a class="reference external" href="https://doi.org/10.14714/CP58.270">https://doi.org/10.14714/CP58.270</a></span><a class="headerlink" href="#colour-blindness-examples" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -873,19 +906,19 @@ diverging Red-Green gradients) can be hard or impossible to distinguish for peop
 different ways to create sophisticated reports and maps. By combining several methods,
 you can communicate different phenomena intuitively to the reader. A classical example
 is a combination of a choropleth map (graduated colours) with a proportional circles map
-(see <a class="reference internal" href="#bivariate-map-example-lebanon"><span class="std std-numref">Fig. 91</span></a>).</p>
+(see <a class="reference internal" href="#bivariate-map-example-lebanon"><span class="std std-numref">Fig. 90</span></a>).</p>
 <p><strong>Complex Map 1:</strong></p>
 <figure class="align-default" id="bivariate-map-example-lebanon">
 <a class="reference internal image-reference" href="../../_images/en_complex_map_lebanon.png"><img alt="../../_images/en_complex_map_lebanon.png" src="../../_images/en_complex_map_lebanon.png" style="width: 550px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 91 </span><span class="caption-text">A complex map using graduated colours and proportional circles (Source: <a class="reference external" href="https://reliefweb.int/map/lebanon/lebanon-conflict-and-displacement-overview-30-september-2024">REACH</a>)</span><a class="headerlink" href="#bivariate-map-example-lebanon" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 90 </span><span class="caption-text">A complex map using graduated colours and proportional circles (Source: <a class="reference external" href="https://reliefweb.int/map/lebanon/lebanon-conflict-and-displacement-overview-30-september-2024">REACH</a>)</span><a class="headerlink" href="#bivariate-map-example-lebanon" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p><strong>Complex Map 2:</strong></p>
 <figure class="align-default" id="complex-bivariate-map-example">
 <a class="reference internal image-reference" href="../../_images/en_complex_bivariate_map.png"><img alt="../../_images/en_complex_bivariate_map.png" src="../../_images/en_complex_bivariate_map.png" style="width: 550px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 92 </span><span class="caption-text">A complex map combining layer styling and different visual variables to
+<p><span class="caption-number">Fig. 91 </span><span class="caption-text">A complex map combining layer styling and different visual variables to
 communicate a complex situation (Source: <a class="reference external" href="https://rcrcsims.org/portfolio/view/18">SIMS</a>).</span><a class="headerlink" href="#complex-bivariate-map-example" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
@@ -893,12 +926,12 @@ communicate a complex situation (Source: <a class="reference external" href="htt
 <figure class="align-default" id="test-complex-map">
 <a class="reference internal image-reference" href="../../_images/en_complex_map_example_yemen.png"><img alt="../../_images/en_complex_map_example_yemen.png" src="../../_images/en_complex_map_example_yemen.png" style="width: 550px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 93 </span><span class="caption-text">A complex map using graduated colours to signify flood depth as well as the flood hazard for IDP sites (Source: <a class="reference external" href="https://reliefweb.int/map/yemen/flood-hazard-idp-sites-marib-governorate-flood-depth-model-january-2024-production-date-07-may-2024">REACH</a>)</span><a class="headerlink" href="#test-complex-map" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 92 </span><span class="caption-text">A complex map using graduated colours to signify flood depth as well as the flood hazard for IDP sites (Source: <a class="reference external" href="https://reliefweb.int/map/yemen/flood-hazard-idp-sites-marib-governorate-flood-depth-model-january-2024-production-date-07-may-2024">REACH</a>)</span><a class="headerlink" href="#test-complex-map" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="tip admonition">
 <p class="admonition-title">Now it’s your turn!</p>
-<p><a class="reference internal" href="#bivariate-map-example-lebanon"><span class="std std-numref">Fig. 91</span></a>, <a class="reference internal" href="#complex-bivariate-map-example"><span class="std std-numref">Fig. 92</span></a> and <a class="reference internal" href="#test-complex-map"><span class="std std-numref">Fig. 93</span></a> make use of graduated colours as well as graduated symbols. What other symbolisation principles can you detect on these maps?</p>
+<p><a class="reference internal" href="#bivariate-map-example-lebanon"><span class="std std-numref">Fig. 90</span></a>, <a class="reference internal" href="#complex-bivariate-map-example"><span class="std std-numref">Fig. 91</span></a> and <a class="reference internal" href="#test-complex-map"><span class="std std-numref">Fig. 92</span></a> make use of graduated colours as well as graduated symbols. What other symbolisation principles can you detect on these maps?</p>
 </div>
 <p>Now that we have learned the different visual variables, and know how to use them to create complex maps, the next chapter <a class="reference internal" href="en_qgis_styling_vector_data.html"><span class="doc std std-doc">Symbology for Vector data</span></a> will explain how to set up different symbolisation and styling methods in QGIS.</p>
 </section>
@@ -967,10 +1000,13 @@ communicate a complex situation (Source: <a class="reference external" href="htt
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Visualisation of Geodata: Symbology and Colours</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Symbology and Colours</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visual-variables">Visual Variables</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-visual-variables-in-cartography">Using visual variables in cartography</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#choropleth-graduated-symbol-maps">Choropleth &amp; Graduated Symbol Maps</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#choropleth-graduated-symbol-maps">Choropleth &amp; Graduated Symbol Maps</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#use-cases">Use cases</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

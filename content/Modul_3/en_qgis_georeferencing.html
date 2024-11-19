@@ -206,13 +206,15 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 4</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Modul_4/en_module_4_overview.html">Visualisation of Geodata and Map Making</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_map_design_I.html">Visualisation of Geodata: Symbology and Colours</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_map_design_I.html">Symbology and Colours</a></li>
 
 <li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_styling_vector_data.html">Styling Vector Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_map_design_2.html">Map Design: The Print layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_labels_vector.html">Labels for vector data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_working_with_styles.html">Exporting and Importing Styles</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_symbology_raster.html">Symbology for raster data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_map_design_2.html">Map Design: The Print layout</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_map_examples.html">Examples of Good Map Design</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_modul_4_exercises.html">Exercises Module 4 - Visualisation of Geodata and Map Making</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_modul_4_exercises.html">Exercises Module 4</a></li>
 </ul>
 </li>
 </ul>
@@ -579,7 +581,7 @@ coordinates to each pixel in the raster.</p>
 <figure class="align-default" id="example-georeferenced-map">
 <a class="reference internal image-reference" href="../../_images/example_georefencing_hague.png"><img alt="../../_images/example_georefencing_hague.png" src="../../_images/example_georefencing_hague.png" style="width: 750px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 71 </span><span class="caption-text">A digitised old map of the Hague (Source: <a class="reference external" href="https://kokoalberti.com/articles/georeferencing-and-digitizing-old-maps-with-gdal/">Kokoalberti</a>)</span><a class="headerlink" href="#example-georeferenced-map" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 70 </span><span class="caption-text">A digitised old map of the Hague (Source: <a class="reference external" href="https://kokoalberti.com/articles/georeferencing-and-digitizing-old-maps-with-gdal/">Kokoalberti</a>)</span><a class="headerlink" href="#example-georeferenced-map" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <!--ADD: Pictures of maps available in pdf reports-->
@@ -595,7 +597,7 @@ is needed. The more complex the transformation algorithm is, the more Ground Con
 <figure class="align-default" id="id1">
 <a class="reference internal image-reference" href="../../_images/en_georef_transformations.png"><img alt="../../_images/en_georef_transformations.png" src="../../_images/en_georef_transformations.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 72 </span><span class="caption-text">Different transformation types: linear (left), polynomial 2nd degree (middle), polyonmial 3rd degree (right) (Source: <a class="reference external" href="https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/overview-of-georeferencing.htm">ESRI</a>)</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 71 </span><span class="caption-text">Different transformation types: linear (left), polynomial 2nd degree (middle), polyonmial 3rd degree (right) (Source: <a class="reference external" href="https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/overview-of-georeferencing.htm">ESRI</a>)</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>In most cases, you will use either linear, or polynomial (2nd or 3rd degree) transformations. There are many more
@@ -611,12 +613,12 @@ transformation type, check out the <a class="reference external" href="https://d
 the screenshot.</p></li>
 <li><p>In your QGIS window, add a basemap using the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html">QuickMapServices Plugin</a>.
 Ideally, use a basemap where you can identify exact locations on both the basemap and the map you want to georeference.</p></li>
-<li><p>Open the Georeferencer by navigating to the Top Bar &gt; <code class="docutils literal notranslate"><span class="pre">Layer</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Georeferencer</span></code> (see <a class="reference internal" href="#open-georeferencer"><span class="std std-numref">Fig. 73</span></a>)</p></li>
+<li><p>Open the Georeferencer by navigating to the Top Bar &gt; <code class="docutils literal notranslate"><span class="pre">Layer</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Georeferencer</span></code> (see <a class="reference internal" href="#open-georeferencer"><span class="std std-numref">Fig. 72</span></a>)</p></li>
 </ol>
 <figure class="align-default" id="open-georeferencer">
 <a class="reference internal image-reference" href="../../_images/en_3.36_open_georefencer.png"><img alt="../../_images/en_3.36_open_georefencer.png" src="../../_images/en_3.36_open_georefencer.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 73 </span><span class="caption-text">Opening the Georeferencer in QGIS 3.36</span><a class="headerlink" href="#open-georeferencer" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 72 </span><span class="caption-text">Opening the Georeferencer in QGIS 3.36</span><a class="headerlink" href="#open-georeferencer" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="4">
@@ -648,7 +650,7 @@ Ideally, use a basemap where you can identify exact locations on both the basema
 <figure class="align-default" id="georeferencer-dialogue">
 <a class="reference internal image-reference" href="../../_images/en_3.36_georef_dialogue_GCP.png"><img alt="../../_images/en_3.36_georef_dialogue_GCP.png" src="../../_images/en_3.36_georef_dialogue_GCP.png" style="width: 700px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 74 </span><span class="caption-text">Georeferencer dialogue in QGIS 3.36</span><a class="headerlink" href="#georeferencer-dialogue" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 73 </span><span class="caption-text">Georeferencer dialogue in QGIS 3.36</span><a class="headerlink" href="#georeferencer-dialogue" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="13">
@@ -659,7 +661,7 @@ Ideally, use a basemap where you can identify exact locations on both the basema
 <figure class="align-default" id="som-georef-map">
 <a class="reference internal image-reference" href="../../_images/en_3.36_finished_georef.png"><img alt="../../_images/en_3.36_finished_georef.png" src="../../_images/en_3.36_finished_georef.png" style="width: 700px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 75 </span><span class="caption-text">A georeferenced map of Somalia in the QGIS Map Canvas</span><a class="headerlink" href="#som-georef-map" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 74 </span><span class="caption-text">A georeferenced map of Somalia in the QGIS Map Canvas</span><a class="headerlink" href="#som-georef-map" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <!--Choose an appropriate CRS-->

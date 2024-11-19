@@ -46,7 +46,7 @@ numbers, health indicators, historical events, etc.
 ### Vector data
 
 
-Vector data are digital features and they can store geographic/spatial information, as well as other data attributes. As such, they are ideal to visualise information on a map. Each feature can be displayed on a maps using one out three geometries: __points, lines, or polygons__. A layer can only contain features with same type of geometry. 
+Vector data are digital features and they can store geographic/spatial information, as well as other data attributes. As such, they are ideal to visualise information on a map. Each feature can be displayed on a maps using one out of three geometries: __points, lines, or polygons__. A layer can only contain features with same type of geometry. 
 
 
 ```{figure} /fig/en_vector_data_overview.drawio.png
@@ -65,7 +65,7 @@ Vector data overview. Source: HeiGIT
 
 Each feature stores the location (as address or coordinates) and further attributes, e.g. name, ID, or any other sort of 
 information. Which geometry is used depends on the type of data that is represented. For example, a road might be 
-represented by a line, a building might be represented by polygon and a tree might be represented by a point.
+represented by a line, a building footprint might be represented by polygon and a tree might be represented by a point.
 
 
 ```{figure} /fig/en_geodata_example_2.png
@@ -110,7 +110,7 @@ The following table gives a short description of commonly used vector file forma
 |`.kml`/`.kmz.`       |Keyhole Markup Language | Geodata format for use with [Google Earth]( https://earth.google.com/web/). KMZ files are compressed versions of KML (Keyhole Markup Language) files used to store geographic data, such as points, paths, and polygons, along with any associated media like images and icons. Commonly used with Google Earth and other mapping software, KMZ files bundle both spatial data and resources in one compact file, making it easy to share interactive maps and visualizations.|
 | `.gpx`      | GPS Exchange Format    | Geodata format for the exchange of coordinates. For example for waypoints of tracks. |
 | `.geojson`  | GeoJSON                | Open data format using Javascript Object Notation (JSON) to store geographic data. Can store multiple type of geometries in one file and is widely compatible with web and mobile applications. | 
-| `.gdb`      | Geodatabase            | Sesigned for efficient data management, spatial analysis, and complex geospatial workflows. Geodatabase files are a proprietary Esri format for storing and managing large volumes of spatial data, including feature classes, tables, and relationships in a structured database. |
+| `.gdb`      | Geodatabase            | Designed for efficient data management, spatial analysis, and complex geospatial workflows. Geodatabase files are a proprietary Esri format for storing and managing large volumes of spatial data, including feature classes, tables, and relationships in a structured database. |
 
 
 ```{note}
@@ -216,6 +216,7 @@ Databases such as Geodatabase (`.gdb`) or
 ```
 
 ----
+<!---REMOVED DUE TO DUPLICATION WITH THE DATA FORMAT TABLES
 
 {numref}`main_geodata_formats` summarizes the different data formats for raster and vector data commonly used in GIS.
 
@@ -227,6 +228,8 @@ name: main_geodata_formats
 ---
 The main geographical data formats. Source: [CartONG](https://cartong.pages.gitlab.cartong.org/learning-corner/en/4_data_geo/4_1_formats)
 ```
+
+-->
 
 ## The layer concept
 
