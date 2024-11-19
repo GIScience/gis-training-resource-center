@@ -147,11 +147,6 @@ width: 500 px
 
 :::
 
-
-
-
-
-
 #### Adjusting the styles of multiple overlaying layers
 
 __Step 1: Ordering the layers__
@@ -167,7 +162,7 @@ height: 400px
 Order the layers and navigate to the styling panel of the topmost layer
 ```
 
-3. Change the symbology of the Adm0 layer by opening the stlying panel and navigating to the Symbology tab. 
+3. Change the symbology of the Adm0 layer by opening the styling panel and navigating to the Symbology tab. 
 4. Click on `Simple Fill` to open the style options.
 5. Expand the `Fill Colour` menu and check the `Transparent Fill` option. This will make only the boundaries visible, so __we will be able to see the layer under this one__.
 6. Choose a `Stroke Colour`, and make the `Stroke Width` 0.66 Millimeters.
@@ -177,10 +172,11 @@ Order the layers and navigate to the styling panel of the topmost layer
 10. Let's make the districts layer's style consistent with the others.
 11. Choose a `Fill Color`
 12. Use the same Stroke Colour` as for Adm0 and Adm1, but make the width 0.1 Millimeters and the Stroke Style a __Dash Line__
-13. Click OK and look at yout map: hopefully it's starting to look nicer!
+13. Click OK and look at your map: hopefully it's starting to look nicer!
 
 ```{figure} ../../fig/en_30.30.2_changing_layer_style_3.png
 ---
+width: 500 px
 name: change layer style 3
 ---
 The styling of a vector data consists of the colour and the outline
@@ -201,7 +197,7 @@ displayed in graduated colours. In this exercise, we assign colours to Adm1 poly
 each State.
 
 
-1. Download the NGA_Adm1_Pop shapefile [link!!] and save it in your shapefile folder
+1. Download the NGA_Adm1_Pop shapefile and save it in your shapefile folder
 2. In QGIS, turn off the Adm1 and Adm2 layer, leaving only Adm0
 3. Drag the shapefile NGA_Adm1_Pop into your map
 4. Open its `Symbology` options and choose `Graduated`
@@ -229,7 +225,7 @@ width: 500px
 You can categorize the continuous values into classes and assign a colour ramp 
 ```
 
-The following map shows the most populated States of Nigeria using a graduated colour categorization. These types of maps are called __Coropleth maps__. 
+The following map shows the most populated States of Nigeria using a graduated colour categorization. These types of maps are called __Choropleth maps__. 
 
 ```{figure} ../../fig/en_map_design_example_variable_ranges.png
 ---
@@ -244,15 +240,56 @@ A map showing the population of Nigerian states
 .mp4"></video>
 :::
 
+#### Creating a graduated symbols map
+
+Graduated Symbols are useful when you have more information on your map, and creating a choropleth map is not possible, 
+or in situations when you want to communicate two variables on a single map. For example, it is easy to combine 
+choropleth maps with graduated symbols.
+Creating graduated symbol maps is done in a similar way to creating choropleth maps, but it involves one extra step: 
+Creating Centroids of the administrative boundaries. Centroids are points that are placed at the calculated centre of 
+polygons (see [Module 5](/content/Modul_5/en_qgis_non_spatial_tools.md)).  
+We will be using the same layer as for the choropleth map (see {numref}`map design example_state population Nigeria`): 
+`NGA_Adm1_Pop`.
+
+1. In the [processing toolbox](), search for the tool `centroids`. <kbd>Double-Click</kbd> on it. A new window will open (see {numref}`m4_centroids_creation`)
+
+```{figure} /fig/en_3.36_m4_centroids.png
+---
+name: m4_centroids_creation
+width: 500 px
+---
+Creating centroids in QGIS 3.36
+```
+
+2. Under `Input Layer`, select the `NGA_Adm1_Pop`-layer. Click on `Run`.
+3. A new point layer called `Centroids` will appear in your layers panel. Open it's styling panel and navigate to the symbology tab.
+4. Set the symbolisation method to `Graduated`.
+5. Under __Value__, select `Population`.
+6. Change the __Method__ from `Colour` to `Size`.
+7. Click on `Classify`. 
+8. *Optional*: Change the Colour and Transparency of the Circles. 
+
+```{figure} /fig/en_m4_graduated_symbols_example.png
+---
+name: nigeria_graduated_symbols
+width: 550 px
+---
+A map of Nigeria displaying the same data. Once using graduated colours (choropleth) and graduated symbols (proportional circles). 
+```
+
+:::{dropdown} Video: How to create a proportional circles map
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_3.36_graduated_symbols.mp4"></video>
+
+:::
+
+
 ### Use different styles in a single layer
 
 By categorizing or classifying data in a single layer, we are able to assign different styles to each classification. 
-For example, we can assign a symbol per distinct incident (political crime or accident), or assign a different line 
-style for different types of roads.
+We can use symbology to __show the difference between features__ in the same layer. For example, it could be different types of buildings, quantities of Covid cases by district, or types of roads. We can choose a specific attribute of a dataset to assign different colors, outlines, or sizes to features:
 
 #### Setting different point symbols for different features
-
-We can use symbology to __show the difference between features__ in the same layer. For example, it could be different types of buildings, quantities of Covid cases by district, or types of roads. We can choose a specific attribute of a dataset to assign different colors, outlines, or sizes to features:
 
 1. From your shapefile folder, __drag the ACLED security incidents shapefile onto your map__
 2. Open the `Symbology tab` for that layer and choose `Categorized` instead of Single Symbol.   
@@ -266,7 +303,7 @@ Categorized symbology is used when you have ***discrete*** variables.
 name: categorized layer symbology 1
 width: 500px
 ---
-Change the symbology type to "categorized" and choose the Value (variable) you wish to display
+Change the symbology type to "categorised" and choose the Value (variable) you wish to display
 ```
 
 3. Now we need to __choose which attributes we want to display through the symbology__. In this case, it could be the number of casualties, or the actor who perpetrated the act. Let's categorize the features by `event_type`
@@ -303,32 +340,21 @@ Regions affected by explosions in Nigeria
 
 :::
 
-#### Creating a graduated symbols map
-
-
-
-
-```{admonition} Optional: Now it's your turn
-:class: tip
-
-Check out Paul Knight's [tutorial on how to create a proportional circle map](https://learn-sims.org/geospatial/creating-a-proportional-circle-map-in-qgis/) in the SIMS learning portal. 
-```
 
 
 :::{card} 
 :class-card: sd-text-justify sd-text-black sd-border-0
 __Simple Markers, SVG-Symbols and Raster images__
 ^^^
-QGIS let's you use different types markers for vector data. These can be simple markers, raster images, or 
-SVG-symbols. Most of the time 
+On top of simple markers, QGIS let's you also use SVG-symbols and raster images as symbols for your vector data.
 
 - __Simple markers__ are simple shapes such as rectangles, circles, or crosses that can be adjusted in the symbolization layer (colour, size, outline, etc.). Most of your styling in QGIS will be done with these markers.
-- __SVG-symbols__ are *scaleable vector graphic* symbols. As vector files, they can be scaled to any size while keeping the same resolution. In most cases, if you want to use a more complex symbol (e.g. hospital, school, train station), SVG-symbols are the best option as they let you adjust the symbol (colours, outline, size, etc.)
+- __SVG-symbols__ are *scalable vector graphic* symbols. As vector files, they can be scaled to any size while keeping the same resolution. In most cases, if you want to use a more complex symbol (e.g. hospital, school, train station), SVG-symbols are the best option as they let you adjust the symbol (colours, outline, size, etc.)
 - If you select __raster images__, the resolution of the symbol is limited by the amount of pixels in the image. It is not advisable to use high resolution images as symbols on your map because it may overload your PC.
 
 :::
 
-:::::{dropdown} Using SVG-Symbols and IFRC symbols
+:::::{dropdown} __Using SVG-Symbols and IFRC symbols__
 
 ### Using SVG-Symbols
 
@@ -373,237 +399,6 @@ There is also a library with humanitarian icons by the [United Nations Office fo
 :::
 
 ::::: 
-
-
-## Labels
-
-Labels are text that display information or values of the data. In QGIS, you can either select __Single Labels__ or 
-__Rule-based Labelling__. For each option, an attribute (`value`) that will be displayed on the map. For example, the 
-name of a city or region.  Additionally, you can __change the font, font size, colour and some other styling options__ 
-for the label text. When you create a map, you can add labels to help your reader understand the map quickly. However, 
-be aware that too much text information can overload the map with too much information for the reader to process.
-
-### Single Labels and Rule-based Labeling
-
-QGIS offers two methods to display labels: __Single Labels__ and __Rule-based Labeling__
-
-#### Single Labels
-
-Creates a single label style for every feature in the layer. You can select a attribute (value) which will be 
-displayed. For example, the name of a settlement. You need to know which attribute displays the information you want to 
-display. Look at the attribute table of the dataset to find it out.
-
-```{figure} /fig/labels_single_labels_example_nga_adm1.png
----
-width: 600 px
-name: single labels example
----
-Single labels for each administrative region (adm1) in Nigeria. The reader is able to assign each label to the respective administrative entity.
-```
-
-```{figure} /fig/en_30.30.2_assigning_value_to_labels.png
----
-width: 600 px
-name: assigning value to labels
----
-Assigning the correct attribute value in the labeling options. QGIS needs to know which attribute (column) of the attribute table should be displayed as a label. In this case, we want the name of the administrative region (`ADM1_EN`) to be displayed. 
-```
-
-#### Adding Single Labels to a Layer
-
-1. In the styling panel, click on the `Labels`-tab underneath the Symbology tab.
-2. Select ![](../../fig/en_30.30.2_icon_single_labels) `Single labels`.
-3. `Value` is where you choose the attribute that will be displayed as a label. For example `*ADM1_EN*` will display the English names of Nigerian states for each feature in the data set.
-4. Let's __change the font__: Open the font dropdown menu and select Arial. Make the text `Bold` in the Style dropdown menu. Change the colour by clicking on `Colour`, and change the `Size` to 8 pt
-5. Let's __add a white buffer__ around the label. In the `Labels` tab, you will find a list with different options to style the labels. Right now, we are in the `Text` menu. Select `Buffer` and check the `Draw text buffer` option. This will make the labels stand out more on dark or crowded maps.
-7. Click `Apply` and `OK`.
-
-```{figure} ../../fig/en_30.30.2_setting_up_labels.png
----
-width: 600px
-name: Setting up labels
----
-Setting up labels in QGIS 30.30.2
-```
-
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_setting_up_labels
-.mp4"></video>
-
-:::{attention}
-Single Labels are not always useful. For example, if the dataset is too big, or you only want to display certain features in the dataset. In the example below, there are too many settlements to display labels for each settlements. Instead, it might be useful to only display the regional and national capitals. For such a use case, Rule-based Labeling is ideal.
-
-```{figure} /fig/single_labels_bad_example.png
----
-name: single labels bad example
-width: 400 px
----
-Single Labels was selected to display the names of the settlements (red dots). A map with so much text information is unreadable and the information can hardly be understood. 
-```
-
-:::
-
-#### Rule-based Labelling
-
-Create rules using expressions to select accurately which features are to be labeled. Each rule can have a different 
-text formatting. Use this if you want to have more control over the information that will be displayed as labels. For 
-example, you can filter your data to only display the names of regional capitals.
-
-```{figure} /fig/rule-based_labeling_example_settlements_nga.png
----
-name: rule-based labeling example settlements nga
-width: 500 px
----
-Rule-based labeling allows you to filter datasets. This way, you can display the labels only for selected features without altering the dataset.
-```
-
-The rules, or filters, are based on an expression. You can use the ![](../../fig/expression_string_builder_icon.png) `Expression string builder` to the right of the __Filter__ option in the label panel.
-
-#### Adding Rule-based Labels to a Layer
-
-1. In the styling panel, click on the `Labels` tab underneath the Symbology tab.
-2. Select ![](/../fig/30.30.2_Icon_rule_based_labeling.png) `Rule-based Labeling`.
-3. Add a Rule by clicking on the `+`-button in the left corner of the styling panel. A new window will open in the styling panel. In this window, you will enter the rule (`Filter`) and customize the label font, size, and placement. Additionally, you can enter a description.
-4. Enter a Filter (red box in the figure below). The easiest way is to use the `Expression string builder` to the right of the Filter option. Click on the ![](/../fig/expression_string_builder_icon.png)-Symbol. A new panel will open.
-5. In the Expression String builder enter a rule. In the example in the video below, we want to only display settlements that are either national or regional capitals. This corresponds to the String `("CLASS" = 1 ) OR ("CLASS" = 2)`. We know this because we know our data and have looked at the attribute table beforehand.
-6. Click `OK`
-7. Set the font and font size.
-8. Click `Apply`.
-
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_rule-based_labels.mp4"></video>
-
-```{note}
-To add rules to your labels, you need to be familiar with your data! Look at the metadata (in the properties or at the source) and take a look at the attribute table. Think about what the different columns mean and identify the attributes. This might not always be easy, as they might have abbreviated names, but as you work more with data, this will become easier.
-```
-
-Below are some further considerations to keep in mind when using labels:
-
-- Only display information that serves the purpose of the map or is helpful to the reader. Useful information can be the name of a settlement or a place, so the reader can assign a certain symbol on the map to this particular place.
-
-- If you want to display different types of information as labels, the font needs to be different so the reader can differentiate between the different types of information that is displayed. A good practice is to display the labels in a similar colour to the objects it is referring to. For example, dark blue text for the labels of light blue bodies of water, or brown text for the labels of light-brown houses.
-
-```{figure} ../../fig/good_labels_example.png
----
-width: 400 px
-name: Axis Maps good labels example
----
-A good example of label placement and font. Pay attention to the text colours and orientation. Every label can easily be attributed to the correct cartographic feature. (Source: [Axis Maps](https://www.axismaps.com/guide/labeling))
-```
-
-```{Attention}
-
-- In most cases, displaying numerical values as labels is confusing to the reader and makes the map to complex. In most cases, for numerical data, you can choose a different visualization such as colours or symbol size.
-
-:::::{grid} 2
-::::{card}
-
-:::{figure} ../../fig/labels_numerical_values_bad_example.png
----
-name: numerical labels bad example
----
-Numerical Labels
-:::
-
-::::
-
-::::{card}
-
-:::{figure} /fig/labels_graduated_symbology_example.png
----
-name: graduated symbology instead numerical values
----
-[Graduated Symbology](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_data_classification.html#graduated-classification)
-:::
-
-::::
-
-:::::
-
-```
-
-- QGIS places the labels automatically. Sometimes, if you are using a lot of black outlines or dark colours, black text is hard to read on the map. In that case, you can add white buffer around the text to make it visible.
-
-```{figure} ../../fig/label_text_buffer_example.png
----
-width: 500 px
-name: label buffer example
----
-A label without a text buffer (left) and a label with a white text buffer (right)
-```
-
-```{note}
-QGIS renders labels automatically.
-Sometimes labels can obstruct other symbols. In that case, you can either adjust the placement of the labels in the __Label tab__, or use the ![](../../fig/30.30.2_move_a_label_diagram_callout_icon.png) `Move a Label, Diagram, or Callout`-tool in __Label toolbar__
-
-By default, QGIS renders the labels so that they don't overlap with other labels. This means that not all the labels will be visible if the data is dense or rendered close to each other. You can optimize the rendering under the rendering option. 
-
-```
-
-:::{admonition} Now it's your turn!
-
-Take the time to apply what we've learned yourself by doing one or two of the [exercises of module 4](/content/Modul_4/en_qgis_modul_4_exercises.md).
-
-```{card}
-:link: 
-```
-
-:::
-
-<!--MOVE: move admonition a bit up?--->
-
-
-:::{Attention}
-
-Check out the [wiki article](/content/Wiki/en_qgis_representation_wiki.md) for detailed, step-by-step tutorials on how to use the different features of the styling panel.
-
-You can also read further in the article "[Labeling and text hierarchy in cartography](https://www.axismaps.com/guide/labeling)" by Axis Maps. 
-
-
-:::
-
-## Exporting and Importing Styles
-
-The layers in QGIS are saved separately from the settings and styles of a QGIS Project. This means that if you load the same layers into a different QGIS project, the symbology and styling of the data will be different. QGIS lets you save the symbology and styling of a layer as a separate file (`.qml`-files). Working with `.qml`-files saves you a lot of work and assures consistency between your maps.
-
-A `.qml`-file saves the information of a particular layer. This includes the colours, outlines, shapes, labelling, as well as the Layer configuration, attribute table settings, and other options you have set for a layer in your QGIS project that are not related done to the data files themselves. You can choose whether to save only the colour symbology or any additional information.
- 
-You can export a style into the same folder as the data so your colleagues can apply the same styling when loading the data into QGIS.
-Some organisations may also use standarized symbols or colours in their maps. 
-
-For example, if you want to send a layer to your colleague with the same styling as you, it is best to check the "__Layer properties__", "__Symbology__", and "__Labels__" categories (and any additional styling options you have set). If you only wish to save a certain colouring, line thickness, or labeling style, you only need to check the respective boxes.
-
-### Saving or exporting styling settings
-
-1. Open the styling panel and click on `Styles`. A dropdown menu will open with the option to export the layer styling.
-2. Since in this case, the styling is for exactly that dataset, you can leave all the boxes checked.
-3. Select a location and name for the styling. The styling will be saved as a `.qml` file. __Make sure it is saved in the same folder as the dataset and give it the same name as the corresponding dataset. This way it will, when loading the data into QGIS, the styling will automatically be applied.__
-
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_exporting_style_to_send_to_colleague
-.mp4"></video>
-
-```{figure} ../../fig/en_30.30.2_save_layer_style_window.png
----
-width: 350px
-name: Save layer styling window
----
-Save Layer styling window in QGIS 30.30.2.
-```
-
-When working with similar data (e.g. building types or flooding risk), it is useful to have template styles, that can be quickly loaded into your QGIS-project or saved in your Styling Template library. 
-
-```{Tip}
-When a styling is saved in the same location as the data and has the same name as the corresponding dataset, the styling will be automatically applied to the layer when loading the data into QGIS!
-```
-
-### Loading a style into a QGIS-project
-
-1. Open the style manager: `Settings` > `Style manager`
-2. Click on `import/export` and select `import items`
-3. Navigate to the folder where the style is saved and click import.
-4. The style should now be available as a preset in the styling panel.
-
-```{note}
-You can also import styles directly in the styling panel of a layer. But it will not be added to your style library unless you save it into your library.
-```
 
 
 ## Further Resources
