@@ -260,6 +260,55 @@ Check out Paul Knight's [tutorial on how to create a proportional circle map](ht
 
 
 
+<<<<<<< Updated upstream
+=======
+1. From your shapefile folder, __drag the ACLED security incidents shapefile onto your map__
+2. Open the `Symbology tab` for that layer and choose `Categorized` instead of Single Symbol.   
+
+```{note} 
+Categorized symbology is used when you have ***discrete*** variables.
+```
+
+```{figure} ../../fig/en_30.30.2_categorized_layer_symbology_1.png
+---
+name: categorized layer symbology 1
+width: 500px
+---
+Change the symbology type to "categorised" and choose the Value (variable) you wish to display
+```
+
+3. Now we need to __choose which attributes we want to display through the symbology__. In this case, it could be the number of casualties, or the actor who perpetrated the act. Let's categorize the features by `event_type`
+4. Click on `Classify` to __list all the unique values contained__ in the `event_type` field (i.e. all the possible types of security incidents recorded in our table)
+5. Now we can __change the style of each single value__
+6. Double click on the value `Explosions`
+7. At the bottom of the __Symbol selector__ window, choose a symbol to make Explosion points stand out.
+8. Click on `OK`, then Apply to preview what the layer will look like.
+9. Click `OK` again. 
+
+```{figure} ../../fig/en_30.30.2_categorized_layer_symbology_2.png
+---
+name: categorized layer symbology 2
+width: 500px
+---
+By double clicking on the __unique values__ in the classified list, you can change the symbol for each value
+```
+
+Now we have a map of Nigeria where you can locate the areas, that are affected by explosions more than others. On the map below, we also added text labels, which will be explained below.
+
+```{figure} ../../fig/en_exercise_map_design_example_Nigeria.png
+---
+name: map design example regions affected by explosions in Nigeria
+width: 500px
+---
+Regions affected by explosions in Nigeria
+```
+
+:::{dropdown} Video: Set up different symbols in a single layer
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_rule_based_styling.mp4"></video>
+
+:::
+>>>>>>> Stashed changes
 
 
 
