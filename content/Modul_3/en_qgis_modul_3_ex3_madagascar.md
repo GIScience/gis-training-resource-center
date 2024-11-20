@@ -317,7 +317,7 @@ In order to get a clearer picture, we need to import the road network data for t
     * On the top you find a dropdown menu. Open it and choose `Categorized`. Under `Value` select “highway”.
     * Further down the window, click on `Classify`.  Now you should see all unique values or attributes of the selected “Flood_affacted” column.  You can adjust the colours by double-clicking on the coluors in each row in the central field.
     * Remove the tick from all categories except: `motorway`, `primary`, `secondary`, `trunk`
-    ```{figure} /fig/m3_ex6_qgis_task3_2.PNG
+    ```{figure} /fig/m3_ex6_qgis_task3_2.png
     ---
     width: 600px
     name: m3_ex6_qgis_task3_2
