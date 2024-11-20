@@ -91,11 +91,12 @@ Reprojected and fixed Flood extend layer can be downloaded __[here](https://nexu
 
 | Dataset name| Original title|Publisher|Download from| 
 | :-------------------- | :----------------- |:----------------- |:----------------- |
-| mdg_admin1.shp | [Subnational Administrative Boundaries]() ||  |
-| mdg_admin2.shp | [Subnational Administrative Boundaries]() || |
+| mdg_admin1.shp | [Subnational Administrative Boundaries]() |Humanitarian OpenStreetMap Team| HOT Export Tool |
+| mdg_admin2.shp | [Subnational Administrative Boundaries]() |Humanitarian OpenStreetMap Team| HOT Export Tool |
 | hotosm_mdg_health_facilities.gpkg |  [Madagascar Health Facilities (OpenStreetMap Export)]([https://data.humdata.org/dataset/hotosm_pak_health_facilities](https://data.humdata.org/dataset/madagascar-healthsites)) |Humanitarian OpenStreetMap Team (HOT) | HDX |
-| VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp | [Satellite detected water extents from 08 to 12 August 2024 over Pakistan)]([https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan](https://data.humdata.org/dataset/water-extent-over-sambava-and-vohemar-districts-sava-region-madagascar-as-of-01-april-2024)) |UNOSAT | HDX |
+| VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp | [Satellite detected water extent over Sambava and Vohemar Districts, Sava Region, Madagascar as of 01 April 2024 )]([[https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan](https://data.humdata.org/dataset/water-extent-over-sambava-and-vohemar-districts-sava-region-madagascar-as-of-01-april-2024](https://data.humdata.org/dataset/water-extent-over-sambava-and-vohemar-districts-sava-region-madagascar-as-of-01-april-2024))) |UNOSAT | HDX |
 |roads_sava.gpkg | Roads Sava |Humanitarian OpenStreetMap Team | HOT Export Tool |
+|buildings_sambava.gpkg | Buildings Sambava |Humanitarian OpenStreetMap Team | HOT Export Tool |
 
 <!--ADD: Add an explanation how to create the healthsite dataset by combining points and polygons -->
 
@@ -118,7 +119,7 @@ name: IFRC Surge Icon
 ```
 Context: 
 
-You have been deployed as an information manager to the flood-affected regions of Madagascar. Upon your arrival you received reports from the operations team indicating that the distrcits [Sambava and Vohemar](https://www.openstreetmap.org/search?query=Sava%2C%20Madagascar#map=8/-14.374/49.795) of the region Sava of are affected by the floods. The team needs a general overview of the affected locations.
+You have been deployed as an information manager to the flood-affected regions of Madagascar. Upon your arrival you received reports from the operations team indicating that the distrcits [Sambava and Vohemar](https://www.openstreetmap.org/search?query=Sava%2C%20Madagascar#map=8/-14.374/49.795) of the region Sava are affected by the floods. The team needs a general overview of the affected locations.
 :::
  
 1. Open QGIS and create a [new project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`
@@ -180,7 +181,7 @@ Posts on social media have indicated a significant impact on the healthcare syst
         * As `Geometric predicate` we use `intersect`. 
         * To save the output click on the three points at `Extract (location)` -> `Save to GeoPackage` and navigate to your `temp` folder. Save the new layer under the name __“Health_Facilities_Flood_2024_AOI”__. Give the new layer the same `Layer name` and click `Run`.
     * Open the Attribute table of the new layer and have a look.
-```{figure} /fig/PAK_extract_locatio_HS.png
+```{figure} /fig/m3_ex6_qgis_task2_1.png
 ---
 width: 400px
 name: m3_ex6_qgis_task2_1
@@ -207,7 +208,7 @@ Ok, now we have a good overview of the location of health facilities. We need mu
     * Delete the old layer from the layer panel by right click on the layer -> `Remove layer`.
     * Adjust the opacity of the flood layer by right-clicking on layer __"VTDX_20240401_FloodExtent_SambavaDistrict_MDG"__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab. Adjusted the opacity to around 60 % by moving the   slider.-->
 
-We have observed that certain health facilities have been impacted by the flood. In order to visualise this information on the map, we plan to include a new attribute called __"affected"__ in the attribute table of __"Health_Facilities_Flood_2024_AOI"__.
+We have observed that certain health facilities and buildings in general are located within the flooded area. In order to visualise this information on the map, we plan to include a new attribute called __"affected"__ in the attribute table of __"Health_Facilities_Flood_2024_AOI"__.
 To accomplish this, our first step will involve selecting all the affected health facilities. A new column containing this information is then appended to the __"Health_Facilities_Flood_2024_AOI"__ attribute table.
 
 5. Open the `Processing Toolbox` ([here is how](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox)) and search for the tool __"Select by Location"__.
@@ -217,7 +218,7 @@ To accomplish this, our first step will involve selecting all the affected healt
     * `Modify current selection by` = `creating new selection`.
     *  Click `Run`.
 
-```{figure} /fig/PAK_flood_select_by_location.PNG
+```{figure} /fig/m3_ex6_qgis_task2_5.PNG
 ---
 width: 400px
 name: m3_ex6_qgis_task2_5
@@ -239,7 +240,7 @@ You need to first use the tool __"Fix Geometry"__ before repeating the previousl
 * Save the new file in your `temp` folder by clicking on the three dots ![](/fig/Three_points.png), specify the file name as __"VTDX_20240401_FloodExtent_SambavaDistrict_MDG_fix"__.
 *  Click `Run`.
 
-```{figure} /fig/ PAK_flood_ngeomertrie_error.PNG
+```{figure} /fig/ m3_ex6_qgis_fix.PNG
 ---
 width: 400px
 name: m3_ex6_qgis_fix
@@ -247,14 +248,15 @@ align: center
 ---
 Fix Geometry
 ```
-
 6.  Open the attribute table of __"Health_Facilities_Flood_2024_AOI"__ by right click on the layer  -> `Open Attribute Table`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html)) and activate the editing mode by clicking on ![](/fig/mActionToggleEditing.png) ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#change-data-in-the-attribute-table)). Now you are able to edit the data directly in the table.
 7. First, we add a new column with the name __“Flood_affected”__. To do so, click on ![](/fig/mActionNewAttribute.png). In the `Add field` window, you have to add the name and set the `Type` to `Text(string)`. Click `OK` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#add-new-column))
+
+* Do the same with the __"buildings_sambava.gpkg"__ to check if any buldings are affected by the flood.
 
 ```{figure} /fig/ PAK_flood_new_column.PNG
 ---
 width: 300px
-name: New column Pakistan
+name: New column
 align: center
 ---
 Add new column
@@ -315,7 +317,7 @@ In order to get a clearer picture, we need to import the road network data for t
     * On the top you find a dropdown menu. Open it and choose `Categorized`. Under `Value` select “highway”.
     * Further down the window, click on `Classify`.  Now you should see all unique values or attributes of the selected “Flood_affacted” column.  You can adjust the colours by double-clicking on the coluors in each row in the central field.
     * Remove the tick from all categories except: `motorway`, `primary`, `secondary`, `trunk`
-    ```{figure} /fig/PAK_road_classification.PNG
+    ```{figure} /fig/m3_ex6_qgis_task3_2.PNG
     ---
     width: 600px
     name: m3_ex6_qgis_task3_2
@@ -326,7 +328,7 @@ In order to get a clearer picture, we need to import the road network data for t
     * You have the option to customize the width of the main roads' lines to improve the visualization. Open the Symbology window, then select `Symbol`. In the new window, you can adjust the width of the lines to your preference.
     
 
-    ```{figure} /fig/PAK_road_symbol_weight.png
+    ```{figure} /fig/m3_ex6_qgis_task3_2_2.png
     ---
     width: 600px
     name: m3_ex6_qgis_task3_2_2
@@ -348,7 +350,7 @@ In order to get a clearer picture, we need to import the road network data for t
         * Create another field with the `name` __"Blocked_bridge"__ and the `Type`: Select `Text Data`.
         * Click `OK`.
     * Your new layer will appear in the `Layer Panel`
-    ```{figure} /fig/PAK_blocked_road_new_layer.png
+    ```{figure} /fig/m3_ex6_qgis_Task3_3.png
     ---
     width: 400px
     name: m3_ex6_qgis_Task3_3
@@ -361,7 +363,7 @@ In order to get a clearer picture, we need to import the road network data for t
     * Look out for places where the flood layer covers the main roads or bridges. Once you have found one, left-click on the location you want to digitise.
     * Once you click on a place, a window will appear. Indicate that the road is blocked by writing `Yes` in the field `Blocked_road`.
     * Repeat this step with all the locations your can find. 
-   ```{figure} /fig/PAK_blocked_road_digitalise.png
+   ```{figure} /fig/m3_ex6_qgis_task3_4.png
     ---
     width: 200px
     name: m3_ex6_qgis_task3_4
@@ -377,28 +379,14 @@ In order to get a clearer picture, we need to import the road network data for t
     * Keep the `Single Symbol` option. Select any symbol from the list that is appropriate for marking blocked roads. 
     * Once you are done, click `Apply` and `OK` to close the symbology window.
     * After you are done, click on the icon ![](/fig/qgis_move_symbol.png) to end the feature selection mode.
-    ```{figure} /fig/PAK_blocked_road_symbol.png
+    ```{figure} /fig/m3_ex6_qgis_task3_5.png
     ---
     width: 600px
-    name: Visulsing blocked roads with icons
+    name: m3_ex6_qgis_task3_5
     align: center
     ---
     Visulsing blocked roads with icons
     ```
-Part of your assignment was to point out possible alternatives to road transport. Can you identify any?
-
-:::{dropdown} __Answer__
-BEARBEITEN In the south-west of Larkan City, you can find the [Mohenjodaro Airport](https://www.google.com/search?q=Larkana&rlz=1C1GCEA_enDE1048DE1048&oq=Larkana&gs_lcrp=EgZjaHJvbWUyDAgAEEUYORjjAhiABDIHCAEQLhiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIGCAYQRRg9MgYIBxBFGD2oAgiwAgE&sourceid=chrome&ie=UTF-8#vhid=0x0:0xf59fc8243b2b9d0e&vssid=lclsmap&eim=CAEQDhoRMjcuMzI4NDM3NTc5NDIyNjIiETY4LjE0MjA5NTk3MDUzNTQ4KhQxNzY5OTA4NTExODUyNjQzMDQ3OA). Currently, the road from Larkana City to the airport appears to be open and accessible. This means that essential supplies could potentially be transported from the airport into the city without encountering any roadblocks. 
-
-```{figure} /fig/PAK_road_access_airport.png
----
-width: 600px
-name: Road access to Mohenjodaro Airport
-align: center
----
-BEARBEITEN Road access to Mohenjodaro Airport
-```
-:::
 
 :::{card}
 
