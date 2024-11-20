@@ -45,7 +45,7 @@ Participants will work with multiple layers and conduct spatial queries. Additio
 ::::{grid} 1
 :::{grid-item-card}
 #### Context
-"The Government declared a national emergency situation, on 3 April, following the passage of the Tropical Cyclone (TS) Gamane, that hit the north and northeast of Madagascar on 27 March. It reportedly killed 18 people, injured three and left four people missing. About 535,000 people living in the 33 flooded communes have been affected including about 22,000 displaced, most of whom were sheltered in temporary sites. Humanitarian partners aim to reach 165,000 people out 220,000 in need with urgent humanitarian assistance. More than 18,830 houses have been flooded and more than 780 have been damaged or destroyed. About 22 health centres have been damaged and 165 classrooms have been affected, resulting in about 24,121 children having no access to schools." [Madagascar: Tropical Cyclone Gamane Flash Update No. 2, 4 April 2024 (reliefweb)](https://reliefweb.int/report/madagascar/madagascar-tropical-cyclone-gamane-flash-update-no-2-4-april-2024)
+"The Government declared a national emergency situation, on 3 April, following the passage of the Tropical Cyclone (TS) Gamane, that hit the north and northeast of Madagascar on 27 March" [Madagascar: Tropical Cyclone Gamane Flash Update No. 2, 4 April 2024 (reliefweb)](https://reliefweb.int/report/madagascar/madagascar-tropical-cyclone-gamane-flash-update-no-2-4-april-2024). The following analysis will utilize actual data from this natural disaster. The objective is to pinpoint the specific medical centers and healthcare facilities as well as anytype of building that were impacted by the flooding. Additionally, we will assess the viability of road access to the populated places.
 ::::
 
 ## Instructions for the trainers
@@ -95,7 +95,7 @@ Reprojected and fixed Flood extend layer can be downloaded __[here](https://nexu
 | mdg_admin2.shp | [Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-mdg) |UN OCHA| HDX |
 | hotosm_mdg_health_facilities.geojson |  [Madagascar Health Facilities (OpenStreetMap Export)]([https://data.humdata.org/dataset/hotosm_pak_health_facilities](https://data.humdata.org/dataset/madagascar-healthsites)) |Humanitarian OpenStreetMap Team (HOT) | HDX |
 | TDX_20240401_FloodExtent_SambavaDistrict_MDG.shp | [Satellite detected water extent over Sambava and Vohemar Districts, Sava Region, Madagascar as of 01 April 2024]([[https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan](https://data.humdata.org/dataset/water-extent-over-sambava-and-vohemar-districts-sava-region-madagascar-as-of-01-april-2024](https://data.humdata.org/dataset/water-extent-over-sambava-and-vohemar-districts-sava-region-madagascar-as-of-01-april-2024))) |UNOSAT | HDX |
-|roads_sava.gpkg | Roads Sava |Humanitarian OpenStreetMap Team | HOT Export Tool |
+|s_sava.gpkg | s Sava |Humanitarian OpenStreetMap Team | HOT Export Tool |
 |buildings_sambava.gpkg | Buildings Sambava |OpenStreetMap | QuickOSM(QGIS) |
 
 <!--ADD: Add an explanation how to create the healthsite dataset by combining points and polygons -->
