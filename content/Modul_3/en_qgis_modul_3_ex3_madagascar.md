@@ -95,7 +95,7 @@ Reprojected and fixed Flood extend layer can be downloaded __[here](https://nexu
 | mdg_admin2.shp | [Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-mdg) |UN OCHA| HDX |
 | hotosm_mdg_health_facilities.geojson |  [Madagascar Health Facilities (OpenStreetMap Export)]([https://data.humdata.org/dataset/hotosm_pak_health_facilities](https://data.humdata.org/dataset/madagascar-healthsites)) |Humanitarian OpenStreetMap Team (HOT) | HDX |
 | TDX_20240401_FloodExtent_SambavaDistrict_MDG.shp | [Satellite detected water extent over Sambava and Vohemar Districts, Sava Region, Madagascar as of 01 April 2024]([[https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan](https://data.humdata.org/dataset/water-extent-over-sambava-and-vohemar-districts-sava-region-madagascar-as-of-01-april-2024](https://data.humdata.org/dataset/water-extent-over-sambava-and-vohemar-districts-sava-region-madagascar-as-of-01-april-2024))) |UNOSAT | HDX |
-|s_sava.gpkg | s Sava |Humanitarian OpenStreetMap Team | HOT Export Tool |
+|roads_sava.gpkg | Roads Sava |Humanitarian OpenStreetMap Team | HOT Export Tool |
 |buildings_sambava.gpkg | Buildings Sambava |OpenStreetMap | QuickOSM(QGIS) |
 
 <!--ADD: Add an explanation how to create the healthsite dataset by combining points and polygons -->
@@ -218,7 +218,7 @@ To accomplish this, our first step will involve selecting all the affected healt
     * `Modify current selection by` = `creating new selection`.
     *  Click `Run`.
 
-```{figure} /fig/m3_ex6_qgis_task2_5.PNG
+```{figure} /fig/m3_ex6_qgis_task2_5.png
 ---
 width: 400px
 name: m3_ex6_qgis_task2_5
@@ -240,7 +240,7 @@ You need to first use the tool __"Fix Geometry"__ before repeating the previousl
 * Save the new file in your `temp` folder by clicking on the three dots ![](/fig/Three_points.png), specify the file name as __"VTDX_20240401_FloodExtent_SambavaDistrict_MDG_fix"__.
 *  Click `Run`.
 
-```{figure} /fig/ m3_ex6_qgis_fix.PNG
+```{figure} /fig/ m3_ex6_qgis_fix.png
 ---
 width: 400px
 name: m3_ex6_qgis_fix
@@ -253,7 +253,7 @@ Fix Geometry
 
 * Do the same with the __"buildings_sambava.gpkg"__ to check if any buldings are affected by the flood.
 
-```{figure} /fig/ PAK_flood_new_column.PNG
+```{figure} /fig/ PAK_flood_new_column.png
 ---
 width: 300px
 name: New column
