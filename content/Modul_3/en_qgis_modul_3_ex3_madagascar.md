@@ -45,7 +45,7 @@ Participants will work with multiple layers and conduct spatial queries. Additio
 ::::{grid} 1
 :::{grid-item-card}
 #### Context
-What happened, why are we doing this
+"The Government declared a national emergency situation, on 3 April, following the passage of the Tropical Cyclone (TS) Gamane, that hit the north and northeast of Madagascar on 27 March. It reportedly killed 18 people, injured three and left four people missing. About 535,000 people living in the 33 flooded communes have been affected including about 22,000 displaced, most of whom were sheltered in temporary sites. Humanitarian partners aim to reach 165,000 people out 220,000 in need with urgent humanitarian assistance. More than 18,830 houses have been flooded and more than 780 have been damaged or destroyed. About 22 health centres have been damaged and 165 classrooms have been affected, resulting in about 24,121 children having no access to schools." [Madagascar: Tropical Cyclone Gamane Flash Update No. 2, 4 April 2024 (reliefweb)](https://reliefweb.int/report/madagascar/madagascar-tropical-cyclone-gamane-flash-update-no-2-4-april-2024)
 ::::
 
 ## Instructions for the trainers
@@ -91,12 +91,12 @@ Reprojected and fixed Flood extend layer can be downloaded __[here](https://nexu
 
 | Dataset name| Original title|Publisher|Download from| 
 | :-------------------- | :----------------- |:----------------- |:----------------- |
-| mdg_admin1.shp | [Subnational Administrative Boundaries]() |Humanitarian OpenStreetMap Team| HOT Export Tool |
-| mdg_admin2.shp | [Subnational Administrative Boundaries]() |Humanitarian OpenStreetMap Team| HOT Export Tool |
-| hotosm_mdg_health_facilities.gpkg |  [Madagascar Health Facilities (OpenStreetMap Export)]([https://data.humdata.org/dataset/hotosm_pak_health_facilities](https://data.humdata.org/dataset/madagascar-healthsites)) |Humanitarian OpenStreetMap Team (HOT) | HDX |
-| VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp | [Satellite detected water extent over Sambava and Vohemar Districts, Sava Region, Madagascar as of 01 April 2024 )]([[https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan](https://data.humdata.org/dataset/water-extent-over-sambava-and-vohemar-districts-sava-region-madagascar-as-of-01-april-2024](https://data.humdata.org/dataset/water-extent-over-sambava-and-vohemar-districts-sava-region-madagascar-as-of-01-april-2024))) |UNOSAT | HDX |
+| mdg_admin1.shp | [Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-mdg) |UN OCHA| HDX |
+| mdg_admin2.shp | [Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-mdg) |UN OCHA| HDX |
+| hotosm_mdg_health_facilities.geojson |  [Madagascar Health Facilities (OpenStreetMap Export)]([https://data.humdata.org/dataset/hotosm_pak_health_facilities](https://data.humdata.org/dataset/madagascar-healthsites)) |Humanitarian OpenStreetMap Team (HOT) | HDX |
+| TDX_20240401_FloodExtent_SambavaDistrict_MDG.shp | [Satellite detected water extent over Sambava and Vohemar Districts, Sava Region, Madagascar as of 01 April 2024]([[https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan](https://data.humdata.org/dataset/water-extent-over-sambava-and-vohemar-districts-sava-region-madagascar-as-of-01-april-2024](https://data.humdata.org/dataset/water-extent-over-sambava-and-vohemar-districts-sava-region-madagascar-as-of-01-april-2024))) |UNOSAT | HDX |
 |roads_sava.gpkg | Roads Sava |Humanitarian OpenStreetMap Team | HOT Export Tool |
-|buildings_sambava.gpkg | Buildings Sambava |Humanitarian OpenStreetMap Team | HOT Export Tool |
+|buildings_sambava.gpkg | Buildings Sambava |OpenStreetMap | QuickOSM(QGIS) |
 
 <!--ADD: Add an explanation how to create the healthsite dataset by combining points and polygons -->
 
@@ -168,7 +168,7 @@ name: IFRC HEalth Icon
 ```
 Context: 
 
-Posts on social media have indicated a significant impact on the healthcare system in the region. You have been tasked to find out as much as you can about the situation and, if feasible, to estimate the impact on the health system.
+Posts on social media have indicated a significant impact on the healthcare system in Madgascar. You have been tasked to find out as much as you can about the situation in Sava and, if feasible, to estimate the impact on the health system.
 :::
 
 1. The first thing to do is to find out where the health facilities are located in the area. To do that, you do a quick search on HDX. You find the dataset Madagascar Health Facilities (OpenStreetMap Export). This will do for now.
@@ -187,7 +187,7 @@ width: 400px
 name: m3_ex6_qgis_task2_1
 align: center
 ---
-Extract by location Pakistan
+Extract by location 
 ```
 Ok, now we have a good overview of the location of health facilities. We need much better information about the flooded area to identify the health facilities impacted by the flood. Fortunately, the UN has just shared a dataset about the extent of floods. Satellite detected water extent over Sambava and Vohemar Districts, Sava Region, Madagascar as of 01 April 2024 .
 
@@ -323,7 +323,7 @@ In order to get a clearer picture, we need to import the road network data for t
     name: m3_ex6_qgis_task3_2
     align: center
     ---
-    Pakistan road classification
+    Road classification
     ```
     * You have the option to customize the width of the main roads' lines to improve the visualization. Open the Symbology window, then select `Symbol`. In the new window, you can adjust the width of the lines to your preference.
     
@@ -334,7 +334,7 @@ In order to get a clearer picture, we need to import the road network data for t
     name: m3_ex6_qgis_task3_2_2
     align: center
     ---
-    Pakistan road classification
+    Road classification
     ```
     * Once you are done, click `Apply` and `OK` to close the symbology window.
 3. To simplify the process, we will visually search for blocked roads and mark them with points. For this purpose, we will create an entirely new point dataset representing blocked roads.
