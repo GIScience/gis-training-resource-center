@@ -82,7 +82,7 @@ __Wrap up:__
 
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_4/Modul_3_Exercise_4_Larkana_flood.zip
-__Download all datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_4/Modul_3_Exercise_4_Larkana_flood.zip) and save the folder on your computer and unzip the file.__
+__Download all datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_4/Modul_3_Exercise_4__flood.zip) and save the folder on your computer and unzip the file.__
 :::
 
 <!--:::{hint}
@@ -253,7 +253,7 @@ Fix Geometry
 
 * Do the same with the __"buildings_sambava.gpkg"__ to check if any buldings are affected by the flood.
 
-```{figure} /fig/ PAK_flood_new_column.png
+```{figure} /fig/ PAK_flood_new_column.PNG
 ---
 width: 300px
 name: New column
@@ -286,7 +286,7 @@ Achievement:
 We've pinpointed that no health facilities have been inundated by the floods. 
 :::
 
-## Task 3: Logistical access to Larkana City
+## Task 3: Logistical access
 
 :::{card}
 
