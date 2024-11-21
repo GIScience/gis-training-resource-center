@@ -45,7 +45,7 @@ Participants will work with multiple layers and conduct spatial queries. Additio
 ::::{grid} 1
 :::{grid-item-card}
 #### Context
-"The Government declared a national emergency situation, on 3 April, following the passage of the Tropical Cyclone (TS) Gamane, that hit the north and northeast of Madagascar on 27 March" [Madagascar: Tropical Cyclone Gamane Flash Update No. 2, 4 April 2024 (reliefweb)](https://reliefweb.int/report/madagascar/madagascar-tropical-cyclone-gamane-flash-update-no-2-4-april-2024). The following analysis will utilize actual data from this natural disaster. The objective is to pinpoint the specific medical centers and healthcare facilities as well as anytype of building that were impacted by the flooding. Additionally, we will assess the viability of road access to the populated places.
+"The Government declared a national emergency situation, on 3 April, following the passage of the Tropical Cyclone (TS) Gamane, that hit the north and northeast of Madagascar on 27 March" [Madagascar: Tropical Cyclone Gamane Flash Update No. 2, 4 April 2024 (reliefweb)](https://reliefweb.int/report/madagascar/madagascar-tropical-cyclone-gamane-flash-update-no-2-4-april-2024). The following analysis will utilize actual data from this natural disaster. The objective is to pinpoint the specific medical centers and healthcare facilities that were impacted by the flooding. Additionally, we will assess the viability of road access to the populated places.
 ::::
 
 ## Instructions for the trainers
@@ -208,7 +208,7 @@ Ok, now we have a good overview of the location of health facilities. We need mu
     * Delete the old layer from the layer panel by right click on the layer -> `Remove layer`.
     * Adjust the opacity of the flood layer by right-clicking on layer __"TDX_20240401_FloodExtent_SambavaDistrict_MDG"__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab. Adjusted the opacity to around 60 % by moving the   slider.-->
 
-We have observed that certain health facilities and buildings in general are located within the flooded area. In order to visualise this information on the map, we plan to include a new attribute called __"affected"__ in the attribute table of __"Health_Facilities_Flood_2024_AOI"__.
+We have observed that certain health facilities are located within the flooded area. In order to visualise this information on the map, we plan to include a new attribute called __"affected"__ in the attribute table of __"Health_Facilities_Flood_2024_AOI"__.
 To accomplish this, our first step will involve selecting all the affected health facilities. A new column containing this information is then appended to the __"Health_Facilities_Flood_2024_AOI"__ attribute table.
 
 5. Open the `Processing Toolbox` ([here is how](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox)) and search for the tool __"Select by Location"__.
@@ -217,6 +217,11 @@ To accomplish this, our first step will involve selecting all the affected healt
     * For `By comparing to the features from` we use the layer __"TDX_20240401_FloodExtent_SambavaDistrict_MDG"__.
     * `Modify current selection by` = `creating new selection`.
     *  Click `Run`.
+
+:::{card}
+Please note: Based on the original data, no actual health facilities were affected by the flood, but for the purposes of learning QGIS, we have placed three dummy health facilities within the flooded areas.
+:::
+
 
 ```{figure} /fig/m3_ex6_qgis_task2_5.png
 ---
@@ -251,7 +256,6 @@ Fix Geometry
 6.  Open the attribute table of __"Health_Facilities_Flood_2024_AOI"__ by right click on the layer  -> `Open Attribute Table`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html)) and activate the editing mode by clicking on ![](/fig/mActionToggleEditing.png) ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#change-data-in-the-attribute-table)). Now you are able to edit the data directly in the table.
 7. First, we add a new column with the name __“Flood_affected”__. To do so, click on ![](/fig/mActionNewAttribute.png). In the `Add field` window, you have to add the name and set the `Type` to `Text(string)`. Click `OK` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#add-new-column))
 
-* Do the same with the __"buildings_sambava.gpkg"__ to check if any buldings are affected by the flood.
 
 ```{figure} /fig/ PAK_flood_new_column.PNG
 ---
@@ -283,7 +287,7 @@ Flood affected health facilities classification
 
 :::{card} 
 Achievement:
-We've pinpointed that no health facilities have been inundated by the floods. 
+We've pinpointed that 3 health facilities have been inundated by the floods. 
 :::
 
 ## Task 3: Logistical access
@@ -301,9 +305,9 @@ name: IFRC Logistics Icon
 ```
 Context: 
 
-The operations team is making plans to deliver much-needed supplies to the affected regions in Sambava and Vohemar. Currently, there is uncertainty about how the supplies can be transported there. Even if the facilities themselves are not located in flooded areas, access may be difficult due to roads that may be flooded. The operations team has asked for more information on this topic.
-
+The operations team is making plans to deliver much-needed supplies to the affected regions in Sambava and Vohemar.  Currently, there is uncertainty about how the supplies can be transported there. The operations team has asked for more information on this topic.
 They need answers to the following three questions:
+
 * Which roads leading into the affected regions are blocked, and at what specific locations are they blocked?
 <!--* Are there any bridges that can be crossed from the eastern side of the Indus to the western side, and where are these bridges located?-->
 * If transporting supplies by road into the region is not feasible, what alternative method could be used to deliver the supplies?
