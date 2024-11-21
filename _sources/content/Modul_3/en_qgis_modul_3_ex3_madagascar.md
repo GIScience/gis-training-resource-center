@@ -93,10 +93,10 @@ Reprojected and fixed Flood extend layer can be downloaded __[here](https://nexu
 | :-------------------- | :----------------- |:----------------- |:----------------- |
 | mdg_admin1.shp | [Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-mdg) |UN OCHA| HDX |
 | mdg_admin2.shp | [Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-mdg) |UN OCHA| HDX |
-| hotosm_mdg_health_facilities.geojson |  [Madagascar Health Facilities (OpenStreetMap Export)]([https://data.humdata.org/dataset/hotosm_pak_health_facilities](https://data.humdata.org/dataset/madagascar-healthsites)) |Humanitarian OpenStreetMap Team (HOT) | HDX |
+| hotosm_mdg_health_facilities.gpkg |  [Madagascar Health Facilities (OpenStreetMap Export)]([https://data.humdata.org/dataset/hotosm_pak_health_facilities](https://data.humdata.org/dataset/madagascar-healthsites)) |Humanitarian OpenStreetMap Team (HOT) | HDX |
 | TDX_20240401_FloodExtent_SambavaDistrict_MDG.shp | [Satellite detected water extent over Sambava and Vohemar Districts, Sava Region, Madagascar as of 01 April 2024]([[https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan](https://data.humdata.org/dataset/water-extent-over-sambava-and-vohemar-districts-sava-region-madagascar-as-of-01-april-2024](https://data.humdata.org/dataset/water-extent-over-sambava-and-vohemar-districts-sava-region-madagascar-as-of-01-april-2024))) |UNOSAT | HDX |
 |roads_sava.gpkg | Roads Sava |Humanitarian OpenStreetMap Team | HOT Export Tool |
-|buildings_sambava.gpkg | Buildings Sambava |OpenStreetMap | QuickOSM(QGIS) |
+
 
 <!--ADD: Add an explanation how to create the healthsite dataset by combining points and polygons -->
 
@@ -137,8 +137,8 @@ You cannot interact with a base map!
 GeoPackage files can contain multiple files and even entire QGIS projects. When you load such a file in QGIS a window will appear in which you have to select the files you want to load in your QGIS project.
 ```
 5. First, we want to export the district __Sambava__ and the neighbouring district __Vohemar__ from __mdg_admin2__ to have it as a stand-alone vector layer. To do that: 
-    * Open the attribute table of__mdg_admin2__ by right click on the layer  -> `Open Attribute Table`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html)).
-    * Find the row of Sambava and mark it by clicking on the number on the very left-hand side of the attribute table. The row will appear blue and the area of Sambava will turn yellow on the map canvas. You can right-click on the row and click `Zoom to Feature`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature)).
+    * Open the attribute table of __mdg_admin2__ by right click on the layer  -> `Open Attribute Table`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html)).
+    * Find the row of Sambava in the column __ADM2_EN__ and mark it by clicking on the number on the very left-hand side of the attribute table. The row will appear blue and the area of Sambava will turn yellow on the map canvas. You can right-click on the row and click `Zoom to Feature`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature)).
     To select the Vohemar district, click on the `Select Feature(s)` ![](/fig/selection_toolbar_feature_selection.png) icon in the QGIS Toolbar, hold the `Shift` button on your keyboard, and click on the districts either on the map or the attribute table ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_queries_wiki.html#manual-selection)).
     * After you are done selecting districts, click on the icon ![](/fig/qgis_move_symbol.png) to end the feature selection mode.
     * Now right-click on the layer in the Layer Panel and click on `Export` -> `Save Selected Features as`. We want to save the selected districts as a GeoPackage, so choose the `Format` option accordingly. Click on the three points and navigate to your `temp` folder. Here you can give it the layer the name __“Flood_2024_AOI”__ and click `Save`. Now you should see the same name in the `Layer name` field. Click `ok`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_queries_wiki.html#save-selected-features-as-a-new-file))
@@ -191,8 +191,8 @@ Extract by location
 ```
 Ok, now we have a good overview of the location of health facilities. We need much better information about the flooded area to identify the health facilities impacted by the flood. Fortunately, the UN has just shared a dataset about the extent of floods. Satellite detected water extent over Sambava and Vohemar Districts, Sava Region, Madagascar as of 01 April 2024 .
 
-2. Load the dataset __"VTDX_20240401_FloodExtent_SambavaDistrict_MDG.shp"__ into your QGIS.
-   * Adjust the opacity of the flood layer by right-clicking on layer __"VTDX_20240401_FloodExtent_SambavaDistrict_MDG"__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab. Adjusted the opacity to around 60 % by moving the slider.
+2. Load the dataset __"TDX_20240401_FloodExtent_SambavaDistrict_MDG.shp"__ into your QGIS.
+   * Adjust the opacity of the flood layer by right-clicking on layer __"TDX_20240401_FloodExtent_SambavaDistrict_MDG"__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab. Adjusted the opacity to around 60 % by moving the slider.
 <!--3. Once you have loaded the layers in QGIS, you can see that they are correctly displayed. However, upon checking the layer information, you can see that the new layers have a different Coordinate Reference System (CRS). They have the EPSG Code 9707 whereas our project has 4326 ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html#how-to-check-epsg-code-crs-of-your-qgis-project-and-change-it)).
     * Right click on the data layer, click on  “Properties”.
     * The “Layer Properties” Window of the data layer will open. Click on “Information”.
@@ -201,12 +201,12 @@ Ok, now we have a good overview of the location of health facilities. We need mu
     - __Unites:__    Here you can find whether it is possible to use meters with this data layer, degrees or latitude and longitude. 
 4. This will be a problem as soon as we do something different then just displaying the layers. Since we want to manipulate the layers in the next step we need to reproject them first ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html#changing-the-projection-of-a-vector-layer)). 
     * Click on the `Vector` tab -> `Data Management Tools` -> `Reproject Layer` or search for the tool in the `Processing Toolbox`.
-    * As `Input layer` select __"VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp"__
+    * As `Input layer` select __"TDX_20240401_FloodExtent_SambavaDistrict_MDG.shp"__
     * Select as target CRS/ EPSG-Code __4326__.
     * Save the new file in your `temp` folder by clicking on the three dots ![](/fig/Three_points.png) next to `Reprojected`, specify the file name as __"2024_MinFloodExtend_reprojected"__.
     * Click `Run`
     * Delete the old layer from the layer panel by right click on the layer -> `Remove layer`.
-    * Adjust the opacity of the flood layer by right-clicking on layer __"VTDX_20240401_FloodExtent_SambavaDistrict_MDG"__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab. Adjusted the opacity to around 60 % by moving the   slider.-->
+    * Adjust the opacity of the flood layer by right-clicking on layer __"TDX_20240401_FloodExtent_SambavaDistrict_MDG"__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab. Adjusted the opacity to around 60 % by moving the   slider.-->
 
 We have observed that certain health facilities and buildings in general are located within the flooded area. In order to visualise this information on the map, we plan to include a new attribute called __"affected"__ in the attribute table of __"Health_Facilities_Flood_2024_AOI"__.
 To accomplish this, our first step will involve selecting all the affected health facilities. A new column containing this information is then appended to the __"Health_Facilities_Flood_2024_AOI"__ attribute table.
@@ -214,7 +214,7 @@ To accomplish this, our first step will involve selecting all the affected healt
 5. Open the `Processing Toolbox` ([here is how](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox)) and search for the tool __"Select by Location"__.
     * `Select features from` = __"Health_Facilities_Flood_2024_AOI"__.
     * As `Geometric predicate` we use `intersect`.
-    * For `By comparing to the features from` we use the layer __"VTDX_20240401_FloodExtent_SambavaDistrict_MDG"__.
+    * For `By comparing to the features from` we use the layer __"TDX_20240401_FloodExtent_SambavaDistrict_MDG"__.
     * `Modify current selection by` = `creating new selection`.
     *  Click `Run`.
 
@@ -230,14 +230,14 @@ Select flood affected health facilities
 ```{warning}
 In case you encounter the error:
 
-> Feature (1) from “VTDX_20240401_FloodExtent_SambavaDistrict_MDG” has invalid geometry. Please fix the geometry or change the Processing setting to the “Ignore invalid input features” option.
+> Feature (1) from “TDX_20240401_FloodExtent_SambavaDistrict_MDG” has invalid geometry. Please fix the geometry or change the Processing setting to the “Ignore invalid input features” option.
 Execution failed after 0.07 seconds
 
 You need to first use the tool __"Fix Geometry"__ before repeating the previously failed step 5 of using the tool __"Select by Location"__.
 
 * To do so open the `Processing Toolbox` ([here is how](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox)) and search for the tool __"Fix Geometries"__.
-* `Input layer` = `VTDX_20240401_FloodExtent_SambavaDistrict_MDG`
-* Save the new file in your `temp` folder by clicking on the three dots ![](/fig/Three_points.png), specify the file name as __"VTDX_20240401_FloodExtent_SambavaDistrict_MDG_fix"__.
+* `Input layer` = `TDX_20240401_FloodExtent_SambavaDistrict_MDG`
+* Save the new file in your `temp` folder by clicking on the three dots ![](/fig/Three_points.png), specify the file name as __"TDX_20240401_FloodExtent_SambavaDistrict_MDG_fix"__.
 *  Click `Run`.
 
 ```{figure} /fig/ m3_ex6_qgis_fix.png
@@ -341,13 +341,13 @@ In order to get a clearer picture, we need to import the road network data for t
     * Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#create-a-new-layer)) 
     - Under `Database` click on ![](/fig/Three_points.png) and navigate to `temp` folder. Give the new dataset the name __“MDG_flood_2024_blocked_road”__. Click `Save`.
     - `Geometry type`: Select `Point`
-    - Under `Additional dimension` you should always make sure that you check `None`. 
+    - Under `Additional dimension` you should always make sure that you check none of them.. 
     - Select the coordinate reference system (CRS) "EPSG:4326-WGS 84". By default, QGIS selects the project CRS. 
     - Under `New Field` you can add columns to the new layer. Add the column __“Blocked_road”__.
         * `Name` = __“Blocked_road”__
-        * `Type`: Select `Text Data`
+        * `Type`: Select `Text (string)`
         * Click on `Add to Fields List` ![](/fig/mActionNewAttribute.png) to add the new column to the `Fields List`.
-        * Create another field with the `name` __"Blocked_bridge"__ and the `Type`: Select `Text Data`.
+        * Create another field with the `name` __"Blocked_bridge"__ and the `Type`: Select `Text (string)`.
         * Click `OK`.
     * Your new layer will appear in the `Layer Panel`
     ```{figure} /fig/m3_ex6_qgis_Task3_3.png
@@ -376,7 +376,7 @@ In order to get a clearer picture, we need to import the road network data for t
 5. Now, we have mapped all roads in our AOI that are blocked by the flood. We can use icons instead of just points to display the layer __“MDG_flood_2024_blocked_road”__ to visualise this fact better [wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_single_symbol_wiki.html).
 
     * Right-click on the layer __“MDG_flood_2024_blocked_road”__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
-    * Keep the `Single Symbol` option. Select any symbol from the list that is appropriate for marking blocked roads. 
+    * Keep the `Single Symbol` option. Select any symbol from the list that is appropriate for marking blocked roads (make sure the filter is set to `Favourites` or `All Symbols`.
     * Once you are done, click `Apply` and `OK` to close the symbology window.
     * After you are done, click on the icon ![](/fig/qgis_move_symbol.png) to end the feature selection mode.
     ```{figure} /fig/m3_ex6_qgis_task3_5.png
@@ -385,7 +385,7 @@ In order to get a clearer picture, we need to import the road network data for t
     name: m3_ex6_qgis_task3_5
     align: center
     ---
-    Visulsing blocked roads with icons
+    Visualising blocked roads with icons
     ```
 
 :::{card}
