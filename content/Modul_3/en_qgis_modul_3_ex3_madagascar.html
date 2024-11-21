@@ -636,7 +636,7 @@ document.write(`
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <p class="rubric">Context</p>
-<p class="sd-card-text">“The Government declared a national emergency situation, on 3 April, following the passage of the Tropical Cyclone (TS) Gamane, that hit the north and northeast of Madagascar on 27 March” <a class="reference external" href="https://reliefweb.int/report/madagascar/madagascar-tropical-cyclone-gamane-flash-update-no-2-4-april-2024">Madagascar: Tropical Cyclone Gamane Flash Update No. 2, 4 April 2024 (reliefweb)</a>. The following analysis will utilize actual data from this natural disaster. The objective is to pinpoint the specific medical centers and healthcare facilities as well as anytype of building that were impacted by the flooding. Additionally, we will assess the viability of road access to the populated places.</p>
+<p class="sd-card-text">“The Government declared a national emergency situation, on 3 April, following the passage of the Tropical Cyclone (TS) Gamane, that hit the north and northeast of Madagascar on 27 March” <a class="reference external" href="https://reliefweb.int/report/madagascar/madagascar-tropical-cyclone-gamane-flash-update-no-2-4-april-2024">Madagascar: Tropical Cyclone Gamane Flash Update No. 2, 4 April 2024 (reliefweb)</a>. The following analysis will utilize actual data from this natural disaster. The objective is to pinpoint the specific medical centers and healthcare facilities that were impacted by the flooding. Additionally, we will assess the viability of road access to the populated places.</p>
 </div>
 </div>
 </div>
@@ -836,7 +836,7 @@ To select the Vohemar district, click on the <code class="docutils literal notra
     * Click `Run`
     * Delete the old layer from the layer panel by right click on the layer -> `Remove layer`.
     * Adjust the opacity of the flood layer by right-clicking on layer __"TDX_20240401_FloodExtent_SambavaDistrict_MDG"__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab. Adjusted the opacity to around 60 % by moving the   slider.-->
-<p>We have observed that certain health facilities and buildings in general are located within the flooded area. In order to visualise this information on the map, we plan to include a new attribute called <strong>“affected”</strong> in the attribute table of <strong>“Health_Facilities_Flood_2024_AOI”</strong>.
+<p>We have observed that certain health facilities are located within the flooded area. In order to visualise this information on the map, we plan to include a new attribute called <strong>“affected”</strong> in the attribute table of <strong>“Health_Facilities_Flood_2024_AOI”</strong>.
 To accomplish this, our first step will involve selecting all the affected health facilities. A new column containing this information is then appended to the <strong>“Health_Facilities_Flood_2024_AOI”</strong> attribute table.</p>
 <ol class="arabic simple" start="5">
 <li><p>Open the <code class="docutils literal notranslate"><span class="pre">Processing</span> <span class="pre">Toolbox</span></code> (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox">here is how</a>) and search for the tool <strong>“Select by Location”</strong>.</p>
@@ -849,6 +849,11 @@ To accomplish this, our first step will involve selecting all the affected healt
 </ul>
 </li>
 </ol>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Please note: Based on the original data, no actual health facilities were affected by the flood, but for the purposes of learning QGIS, we have placed three dummy health facilities within the flooded areas.</p>
+</div>
+</div>
 <figure class="align-center" id="m3-ex6-qgis-task2-5">
 <a class="reference internal image-reference" href="../../_images/m3_ex6_qgis_task2_5.png"><img alt="../../_images/m3_ex6_qgis_task2_5.png" src="../../_images/m3_ex6_qgis_task2_5.png" style="width: 400px;" /></a>
 <figcaption>
@@ -880,9 +885,6 @@ Execution failed after 0.07 seconds</p>
 <li><p>Open the attribute table of <strong>“Health_Facilities_Flood_2024_AOI”</strong> by right click on the layer  -&gt; <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Attribute</span> <span class="pre">Table</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html">Wiki Video</a>) and activate the editing mode by clicking on <img alt="" src="../../_images/mActionToggleEditing.png" /> (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#change-data-in-the-attribute-table">Wiki Video</a>). Now you are able to edit the data directly in the table.</p></li>
 <li><p>First, we add a new column with the name <strong>“Flood_affected”</strong>. To do so, click on <img alt="" src="../../_images/mActionNewAttribute.png" />. In the <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">field</span></code> window, you have to add the name and set the <code class="docutils literal notranslate"><span class="pre">Type</span></code> to <code class="docutils literal notranslate"><span class="pre">Text(string)</span></code>. Click <code class="docutils literal notranslate"><span class="pre">OK</span></code> (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#add-new-column">Wiki Video</a>)</p></li>
 </ol>
-<ul class="simple">
-<li><p>Do the same with the <strong>“buildings_sambava.gpkg”</strong> to check if any buldings are affected by the flood.</p></li>
-</ul>
 <figure class="align-center" id="new-column">
 <a class="reference internal image-reference" href="../../_images/PAK_flood_new_column.PNG"><img alt="../../_images/PAK_flood_new_column.PNG" src="../../_images/PAK_flood_new_column.PNG" style="width: 300px;" /></a>
 <figcaption>
@@ -914,7 +916,7 @@ Fortunately, no health facilities are directly affected by the flood.</p></li>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <p class="sd-card-text">Achievement:
-We’ve pinpointed that no health facilities have been inundated by the floods.</p>
+We’ve pinpointed that 3 health facilities have been inundated by the floods.</p>
 </div>
 </div>
 </section>
@@ -926,8 +928,8 @@ We’ve pinpointed that no health facilities have been inundated by the floods.<
 <a class="reference internal image-reference" href="../../_images/IFRC-icons-colour_Logistics.svg"><img alt="../../_images/IFRC-icons-colour_Logistics.svg" src="../../_images/IFRC-icons-colour_Logistics.svg" width="100px" /></a>
 </figure>
 <p class="sd-card-text">Context:</p>
-<p class="sd-card-text">The operations team is making plans to deliver much-needed supplies to the affected regions in Sambava and Vohemar. Currently, there is uncertainty about how the supplies can be transported there. Even if the facilities themselves are not located in flooded areas, access may be difficult due to roads that may be flooded. The operations team has asked for more information on this topic.</p>
-<p class="sd-card-text">They need answers to the following three questions:</p>
+<p class="sd-card-text">The operations team is making plans to deliver much-needed supplies to the affected regions in Sambava and Vohemar.  Currently, there is uncertainty about how the supplies can be transported there. The operations team has asked for more information on this topic.
+They need answers to the following three questions:</p>
 <ul class="simple">
 <li><p class="sd-card-text">Which roads leading into the affected regions are blocked, and at what specific locations are they blocked?</p></li>
 </ul>
