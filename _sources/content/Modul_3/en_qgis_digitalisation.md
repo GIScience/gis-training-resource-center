@@ -38,7 +38,7 @@ If you want to know how community mapping and digitisation can help improve the 
 :::
 
 :::{card}
-:class-card: sd-text-justify sd-bg-success sd-text-black sd-rounded-3 sd-border-2
+:class-card: sd-text-justify sd-text-black sd-rounded-3 sd-border-2
 __Real world Scenario 1/3__
 ^^^
 There has been a flood in a village following heavy rains.  
@@ -475,7 +475,7 @@ attribute table for inconsistencies or errors. If these errors are not cleaned, 
 and you might take the wrong conclusions!
 
 :::{card}
-:class-card: sd-text-justify sd-bg-success sd-text-black sd-rounded-3 sd-border-2
+:class-card: sd-text-justify sd-text-black sd-rounded-3 sd-border-2
 __Real world Scenario 3/3__
 ^^^
 

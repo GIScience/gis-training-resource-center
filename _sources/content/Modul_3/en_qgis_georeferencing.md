@@ -84,7 +84,7 @@ Opening the Georeferencer in QGIS 3.36
 ::::{margin}
 
 ```{note}
-In most cases, you can leave the transformation type on `linear`. Regional maps are usually in a conformal projection (i.e. the angles are preserved). Satellite imagery as well. If you realise that the angles are not true, or the map is deformed, you may need to choose `polynomial` as transformation type. 
+In most cases, you can leave the transformation type on `linear`. Regional maps are usually in a conformal projection (i.e. the angles are preserved). Satellite imagery as well. If you realise that the angles are not true, or the map is deformed or distorted, you may need to choose `polynomial` as transformation type. Polynomial transformations need more Ground Control Points and the points need to be distributed evenly across the map.
 ```
 
 ::::

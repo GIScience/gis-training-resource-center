@@ -548,9 +548,10 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions-for-the-trainers">Instructions for the trainers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-by-step-instructions">Step by Step instructions</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preparing-the-data">Preparing the data</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-adding-a-basemap">Step 1: Adding a basemap</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-adding-a-basemap-and-loading-the-vector-layer">Step 1: Adding a basemap and loading the vector layer</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-georeferencing-the-map">Step 2: Georeferencing the map</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optional-step-4-adjusting-the-transparency-of-the-georeferenced-map"><em>Optional</em> Step 4: Adjusting the transparency of the georeferenced map</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optional-step-4-digitising-vector-features-using-the-georeferenced-map"><em>Optional</em> Step 4: Digitising vector features using the georeferenced map</a></li>
 </ul>
 </li>
 </ul>
@@ -677,6 +678,7 @@ analysis.</p>
 <div class="sd-card-body docutils">
 <ul class="simple">
 <li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">SOM_soil_deg.png</span></code> - A picture of a soil degradation map of Somalia taken out of a PDF report (Source: <a class="reference external" href="https://www.faoswalim.org/resources/site_files/L-14%20Land%20Degradation%20and%20a%20Monitoring%20Framework%20in%20Somalia_0.pdf">FAO SWALIM</a>)</p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">som_admbnda_adm1_ocha_20230308.gkpg</span></code> - A vector layer with the</p></li>
 </ul>
 </div>
 </div>
@@ -693,15 +695,18 @@ analysis.</p>
 </figcaption>
 </figure>
 </section>
-<section id="step-1-adding-a-basemap">
-<h3>Step 1: Adding a basemap<a class="headerlink" href="#step-1-adding-a-basemap" title="Permalink to this heading">#</a></h3>
+<section id="step-1-adding-a-basemap-and-loading-the-vector-layer">
+<h3>Step 1: Adding a basemap and loading the vector layer<a class="headerlink" href="#step-1-adding-a-basemap-and-loading-the-vector-layer" title="Permalink to this heading">#</a></h3>
+<p>Georeferencing is done by connecting the points on the map that will be georeferenced to coordinates on your map canvas in QGIS. Adding a basemap or a reference layer to your QGIS project will help you to identify the corresponding coordinates.</p>
 <ol class="arabic simple">
 <li><p>Add a basemap using either XYZ-tiles or the <a class="reference internal" href="../Wiki/en_qgis_basemaps_wiki.html"><span class="doc std std-doc">QuickMapServices Plugin</span></a></p></li>
+<li><p>Import the <code class="docutils literal notranslate"><span class="pre">som_admbnda_adm1_ocha_20230308</span></code>-layer to the QGIS project.</p></li>
 </ol>
 </section>
 <section id="step-2-georeferencing-the-map">
 <h3>Step 2: Georeferencing the map<a class="headerlink" href="#step-2-georeferencing-the-map" title="Permalink to this heading">#</a></h3>
-<ol class="arabic simple" start="2">
+<p>Now that we prepared our QGIS-project, let’s start georeferencing the map.</p>
+<ol class="arabic simple" start="3">
 <li><p>Open the Georeferencer by navigating to the Top Bar &gt; <code class="docutils literal notranslate"><span class="pre">Layer</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Georeferencer</span></code> (see <a class="reference internal" href="en_qgis_georeferencing.html#open-georeferencer"><span class="std std-numref">Fig. 72</span></a>)</p></li>
 </ol>
 <figure class="align-default" id="open-georeferencer">
@@ -710,11 +715,20 @@ analysis.</p>
 <p><span class="caption-text">Opening the Georeferencer in QGIS 3.36</span><a class="headerlink" href="#open-georeferencer" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<ol class="arabic simple" start="3">
+<ol class="arabic simple" start="4">
 <li><p>A new window will open. This is the <strong>georeferencer</strong>. To add an image to georeference, click on <img alt="" src="../../_images/3.36_add_raster_georef.png" /> <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Raster</span></code>.</p></li>
 <li><p>Select the image of the map you want to georeference. Click <code class="docutils literal notranslate"><span class="pre">Open</span></code> (<code class="docutils literal notranslate"><span class="pre">Module_3_Exercise_7_Georeferencing/data/input</span></code>).</p></li>
 <li><p>The image will appear in the middle of the georeferencer window. Click on <img alt="" src="../../_images/3.36_georef_transformation_settings.png" /> <code class="docutils literal notranslate"><span class="pre">Transformation</span> <span class="pre">settings...</span></code>.</p></li>
-<li><p>A new window will open. Here you can set the transformation type and the target CRS. Below, you can set the name and save location of the file. Make sure that the <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">in</span> <span class="pre">project</span> <span class="pre">when</span> <span class="pre">done</span></code> is checked.</p></li>
+<li><p>A new window will open. Here you can set the transformation type and the target CRS. For our purpose, we will use the linear transformation type. As the target CRS (Coordinate Reference System), we want to use the same as for our other data. In our case, we can use EPSG:4326. Below, you can set the name and save location of the file. Make sure that the <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">in</span> <span class="pre">project</span> <span class="pre">when</span> <span class="pre">done</span></code> is checked.</p></li>
+</ol>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In most cases, you can leave the transformation type on <code class="docutils literal notranslate"><span class="pre">linear</span></code>. Regional maps are usually in a conformal projection (i.e. the angles are preserved). Satellite imagery as well. If you realise that the angles are not true, or the map is deformed or distorted, you may need to choose <code class="docutils literal notranslate"><span class="pre">polynomial</span></code> as transformation type. Polynomial transformations need more Ground Control Points and the points need to be distributed evenly across the map.</p>
+</div>
+</aside>
+<ol class="arabic simple" start="8">
 <li><p>Click on <code class="docutils literal notranslate"><span class="pre">Ok</span></code>.</p></li>
 <li><p>Once you have set the transformation type, you can start adding Ground Control Points (GCP) by clicking on <img alt="" src="../../_images/3.36_georef_add_point.png" /> <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Point</span></code>. Ground Control Points are points that you ascribe specific geographic coordinates.</p></li>
 <li><p>Click on a point on the map image. This will be the precise location that you can identify on both the basemap and the map you wish you georeference.</p></li>
@@ -733,7 +747,7 @@ analysis.</p>
 <p><span class="caption-text">Georeferencer dialogue in QGIS 3.36</span><a class="headerlink" href="#georeferencer-dialogue" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<ol class="arabic simple" start="12">
+<ol class="arabic simple" start="13">
 <li><p>Once you have added enough points, click on <img alt="" src="../../_images/3.36_start_georef.png" /> <code class="docutils literal notranslate"><span class="pre">Start</span> <span class="pre">Georeferencing</span></code>. QGIS will use the Points you added to transform the image into a georeferenced image, where every pixel has GPS coordinates ascribed to it.</p></li>
 <li><p>You can close the georefencer window. Decide wether you want to save the GPC points in a file. If you are not sure if your georeferencing accuracy was precise enough, save the GPC points so you don’t have to do all the work again.</p></li>
 <li><p>Congratulations, the georeferenced map will now appear as a raster layer in your QGIS-project</p></li>
@@ -748,12 +762,50 @@ analysis.</p>
 <section id="optional-step-4-adjusting-the-transparency-of-the-georeferenced-map">
 <h3><em>Optional</em> Step 4: Adjusting the transparency of the georeferenced map<a class="headerlink" href="#optional-step-4-adjusting-the-transparency-of-the-georeferenced-map" title="Permalink to this heading">#</a></h3>
 <p>Now that we have the georeferenced map, we can <strong>set the transparency</strong> so that we can see other layers or the basemap underneath:</p>
-<ol class="arabic simple" start="15">
+<ol class="arabic simple" start="16">
 <li><p><kbd>Right-Click</kbd> on the layer of the georeferenced map.</p></li>
 <li><p>Select <code class="docutils literal notranslate"><span class="pre">Properties</span></code>.</p></li>
-<li><p>Navigate to the <strong>Symbology Tab</strong> (see <code class="xref std std-numref docutils literal notranslate"> </code>).</p></li>
-<li></li>
+<li><p>Navigate to the <strong>Transparency tab</strong>.</p></li>
+<li><p>Set the transparency to 50%.</p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Apply</span></code>.</p></li>
 </ol>
+<p>Now we are able to see the underlying layers. We can also check the accuracy of our georeferencing by comparing the lines of the administrative boundaries of both layers.</p>
+</section>
+<section id="optional-step-4-digitising-vector-features-using-the-georeferenced-map">
+<h3><em>Optional</em> Step 4: Digitising vector features using the georeferenced map<a class="headerlink" href="#optional-step-4-digitising-vector-features-using-the-georeferenced-map" title="Permalink to this heading">#</a></h3>
+<p>Now that we have the map georeferenced, we can use it as a background layer to digitise vector features, such as a polygon indicating a region where the soil degradation is severe.</p>
+<ol class="arabic simple" start="21">
+<li><p>Create a new shapefile layer (see <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation.html#creating-new-datasets">digitisation</a>). Click on <code class="docutils literal notranslate"><span class="pre">Layer</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">new</span> <span class="pre">Shapefile</span> <span class="pre">Layer</span></code> (You can also choose to create a new Geopackage Layer).</p></li>
+<li><p>A new dialogue window will open. First, we need to specify the save location of the new dataset.</p>
+<ol class="arabic simple">
+<li><p>Click on <img alt="" src="../../_images/3.36_three_dots.png" /> to the right of the <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">Name</span></code>-field.</p></li>
+<li><p>Navigate to the data output folder (<code class="docutils literal notranslate"><span class="pre">Module_3_Exercise_7_Georeferencing/data/output</span></code>).</p></li>
+<li><p>Enter a name for the dataset.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
+</ol>
+</li>
+<li><p>Set the <code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">Type</span></code> to <code class="docutils literal notranslate"><span class="pre">Polygon</span></code>.</p></li>
+<li><p>Let’s add a field (column in the attribute table) so we can add information about the soil degradation type:</p>
+<ol class="arabic simple">
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">field</span></code>, add a name, for example, <code class="docutils literal notranslate"><span class="pre">soil_deg</span></code>. We want strangers to be able to identify the type of information stored in that column.</p></li>
+<li><p>Leave the type on String (text).</p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">to</span> <span class="pre">field</span> <span class="pre">list</span></code>.</p></li>
+</ol>
+</li>
+<li><p>Finish creating the dataset by clicking on <code class="docutils literal notranslate"><span class="pre">Ok</span></code>. The layer will be added to your layers-panel.</p></li>
+<li><p>Now, let’s create a new polygon feature:</p>
+<ol class="arabic simple">
+<li><p>Select the new layer in the layers-panel.</p></li>
+<li><p>Activate the editing mode by clicking on <img alt="" src="../../_images/en_editing_mode.png" />.</p></li>
+<li><p>Click on <img alt="" src="../../_images/mActionCapturePolygon.png" /> in the digitisation toolbar to create a new polygon.</p></li>
+<li><p>Start tracing the outline of a field where the soil degradation is severe (in red) by setting multiple points (<kbd>Left-Click</kbd>)</p></li>
+<li><p>Once you are done tracing the outline, finish creating the feature by <kbd>Right-Clicking</kbd>.</p></li>
+<li><p>A new dialogue window will pop up. Here you can enter the attributes for the newly created polygon feature. Under <code class="docutils literal notranslate"><span class="pre">soil_deg</span></code>, enter “severe”.</p></li>
+<li><p>Click ok.</p></li>
+</ol>
+</li>
+</ol>
+<p>Congratulations, we now have digitised a map and digitised vector features we can now use for further analysis!</p>
 </section>
 </section>
 </section>
@@ -806,9 +858,10 @@ analysis.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions-for-the-trainers">Instructions for the trainers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-by-step-instructions">Step by Step instructions</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preparing-the-data">Preparing the data</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-adding-a-basemap">Step 1: Adding a basemap</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-adding-a-basemap-and-loading-the-vector-layer">Step 1: Adding a basemap and loading the vector layer</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-georeferencing-the-map">Step 2: Georeferencing the map</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optional-step-4-adjusting-the-transparency-of-the-georeferenced-map"><em>Optional</em> Step 4: Adjusting the transparency of the georeferenced map</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optional-step-4-digitising-vector-features-using-the-georeferenced-map"><em>Optional</em> Step 4: Digitising vector features using the georeferenced map</a></li>
 </ul>
 </li>
 </ul>
