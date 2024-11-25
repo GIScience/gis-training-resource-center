@@ -1,4 +1,4 @@
-# Exercise 5: Georeferenceing a map of Somalia
+# Exercise 7: Georeferenceing a map of Somalia
 
 :::{card}
 __Aim of the exercise:__
@@ -84,7 +84,7 @@ __Wrap up:__
 :class-card: sd-text-justify sd-rounded-3 sd-border-2
 :link: 
 
-__Click [here](    ) to download the datasets for this exercise.__
+__Click [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_7/Module_3_Exercise_7_Georeferencing.zip) to download the datasets for this exercise.__
 
 :::
 
@@ -92,16 +92,16 @@ __Click [here](    ) to download the datasets for this exercise.__
 __Available Data:__
 ^^^
 
-- `SOM_soil_deg.png` - A picture of a soil degradation map of Somalia taken out of a PDF report (Source: )
+- `SOM_soil_deg.png` - A picture of a soil degradation map of Somalia taken out of a PDF report (Source: [FAO SWALIM](https://www.faoswalim.org/resources/site_files/L-14%20Land%20Degradation%20and%20a%20Monitoring%20Framework%20in%20Somalia_0.pdf))
 
 :::
 
 ### Preparing the data
 
-1. Unzip the folder and familiarise yourself with the data by looking at the soil degradation map.
+1. Unzip the folder and familiarise yourself with the data by looking at the soil degradation map. The map is located in the `Module_3_Exercise_7_Georeferencing/data/input/`-Folder.
 2. Create a new QGIS-project.
 
-```{figure} /fig/SOM_soil_deg.png
+```{figure} /fig/SOM_Soil_deg.png
 ---
 name: SOM_soil_deg
 width: 500 px
@@ -112,6 +112,9 @@ Soil degradation in Somalia
 ### Step 1: Adding a basemap
 
 1. Add a basemap using either XYZ-tiles or the [QuickMapServices Plugin](/content/Wiki/en_qgis_basemaps_wiki.md)
+
+### Step 2: Georeferencing the map
+
 2. Open the Georeferencer by navigating to the Top Bar > `Layer` > `Georeferencer` (see {numref}`open_georeferencer`)
 
 ```{figure} /fig/en_3.36_open_georefencer.png
@@ -123,7 +126,7 @@ Opening the Georeferencer in QGIS 3.36
 ```
 
 3. A new window will open. This is the __georeferencer__. To add an image to georeference, click on ![](/fig/3.36_add_raster_georef.png) `Open Raster`.
-4. Select the image of the map you want to georeference. Click `Open`.
+4. Select the image of the map you want to georeference. Click `Open` (`Module_3_Exercise_7_Georeferencing/data/input`). 
 5. The image will appear in the middle of the georeferencer window. Click on ![](/fig/3.36_georef_transformation_settings.png) `Transformation settings...`.
 6. A new window will open. Here you can set the transformation type and the target CRS. Below, you can set the name and save location of the file. Make sure that the `Load in project when done` is checked. 
 
@@ -156,3 +159,12 @@ name: Som_georef_map
 ---
 A georeferenced map of Somalia in the QGIS Map Canvas
 ```
+
+### *Optional* Step 4: Adjusting the transparency of the georeferenced map
+
+Now that we have the georeferenced map, we can __set the transparency__ so that we can see other layers or the basemap underneath: 
+
+15. <kbd>Right-Click</kbd> on the layer of the georeferenced map. 
+16. Select `Properties`.
+17. Navigate to the __Symbology Tab__ (see {numref}` `).
+18. 
