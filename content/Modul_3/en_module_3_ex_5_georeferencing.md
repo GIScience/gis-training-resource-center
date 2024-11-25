@@ -93,8 +93,7 @@ __Available Data:__
 ^^^
 
 - `SOM_soil_deg.png` - A picture of a soil degradation map of Somalia taken out of a PDF report (Source: [FAO SWALIM](https://www.faoswalim.org/resources/site_files/L-14%20Land%20Degradation%20and%20a%20Monitoring%20Framework%20in%20Somalia_0.pdf))
-- `som_admbnda_adm1_ocha_20230308.gkpg` - A vector layer with the 
-
+- `som_admbnda_adm1_ocha_20230308.gkpg` - A vector layer with the adkministrative boundaries of the regions (adm1) of somalia (Source: OCHA)
 :::
 
 ### Preparing the data
