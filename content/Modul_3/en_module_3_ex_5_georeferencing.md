@@ -113,7 +113,7 @@ Soil degradation in Somalia
 
 Georeferencing is done by connecting the points on the map that will be georeferenced to coordinates on your map canvas in QGIS. Adding a basemap or a reference layer to your QGIS project will help you to identify the corresponding coordinates.
 
-1. Add a basemap using either XYZ-tiles or the [QuickMapServices Plugin](/content/Wiki/en_qgis_basemaps_wiki.md)
+1. Add a basemap using either XYZ-tiles or the [QuickMapServices Plugin](/content/Wiki/en_qgis_basemaps_wiki.md). 
 2. Import the `som_admbnda_adm1_ocha_20230308`-layer to the QGIS project. 
 
 ### Step 2: Georeferencing the map
@@ -134,13 +134,17 @@ Opening the Georeferencer in QGIS 3.36
 5. Select the image of the map you want to georeference. Click `Open` (`Module_3_Exercise_7_Georeferencing/data/input`). 
 6. The image will appear in the middle of the georeferencer window. Click on ![](/fig/3.36_georef_transformation_settings.png) `Transformation settings...`.
 7. A new window will open. Here you can set the transformation type and the target CRS. For our purpose, we will use the linear transformation type. As the target CRS (Coordinate Reference System), we want to use the same as for our other data. In our case, we can use EPSG:4326. Below, you can set the name and save location of the file. Make sure that the `Load in project when done` is checked. 
+
 ::::{margin}
 
 ```{note}
 In most cases, you can leave the transformation type on `linear`. Regional maps are usually in a conformal projection (i.e. the angles are preserved). Satellite imagery as well. If you realise that the angles are not true, or the map is deformed or distorted, you may need to choose `polynomial` as transformation type. Polynomial transformations need more Ground Control Points and the points need to be distributed evenly across the map.
+
+To learn more about the different transformation types in QGIS, check out the official [QGIS documentation](https://docs.qgis.org/3.34/en/docs/user_manual/working_with_raster/georeferencer.html#available-transformation-algorithms).
 ```
 
 ::::
+
 8. Click on `Ok`. 
 9. Once you have set the transformation type, you can start adding Ground Control Points (GCP) by clicking on ![](/fig/3.36_georef_add_point.png) `Add Point`. Ground Control Points are points that you ascribe specific geographic coordinates. 
 10. Click on a point on the map image. This will be the precise location that you can identify on both the basemap and the map you wish you georeference. 
