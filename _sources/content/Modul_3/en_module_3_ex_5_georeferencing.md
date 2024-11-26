@@ -1,4 +1,4 @@
-# Exercise 7: Georeferenceing a map of Somalia
+# Exercise 7: Georeferencing a map of Somalia
 
 :::{card}
 __Aim of the exercise:__
