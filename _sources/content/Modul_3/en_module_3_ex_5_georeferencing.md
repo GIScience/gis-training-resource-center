@@ -171,7 +171,7 @@ name: Som_georef_map
 A georeferenced map of Somalia in the QGIS Map Canvas
 ```
 
-### *Optional* Step 4: Adjusting the transparency of the georeferenced map
+### *Optional* Step 3: Adjusting the transparency of the georeferenced map
 
 Now that we have the georeferenced map, we can __set the transparency__ so that we can see other layers or the basemap underneath: 
 
