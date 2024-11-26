@@ -96,8 +96,8 @@ The team will be staying at the "Roomy Crossroad Hotel Peshawar" during their mi
 1. We will use the plugin in "Quick Map Service" to locate places precisely.
 To install the plugin click on `Plugins` -> `Manage and Install Plugins…` -> `All` and search for `Quick Map Service`. Once you have found it, click on it and click `Install Plugin`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html#installation-of-plugins)).
 2. Open the plugin by clicking on `Web` -> `Quick Map Service` -> `ESRI` -> `ESRI Satellite`. Now you should have a Settelite image base map in your `Layer Panel`.
-3. Add the `Google Road` base map from the `Quick Map Service` as well.
-4. Place the `Google Road` above the satellite image map and turn the layer transparent by opening the symbology window and adjusting the opacity.
+3. Add the `Google Road` base map from the `Quick Map Service` as well (see [wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#basemaps-from-quickmapservices-plugin)).
+4. Place the `Google Road` above the satellite image map and turn the layer transparent by opening the layer properties and navigating to the __Transparency__ tab and adjusting the global opacity.
 5. You will need the plugin "Lat Lon tools" to locate the coordinates you receive from the field. To install the plugin click on `Plugins` -> `Manage and Install Plugins…` -> `All` and search for `Lat Lon tools`. Once you have found it, click on it and click `Install Plugin`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html#installation-of-plugins)).
 
 Now you are ready, check the information from the field below and capture it in a new point layer. Use Google in your browser, the base maps and the Lat Lon tools plugin to locate the exact positions.
