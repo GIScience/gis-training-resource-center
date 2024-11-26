@@ -100,6 +100,8 @@ If you create a new line layer remember to change the geometry type into lines b
 
 The YouTube Video below shows the whole process of digitizing polygons in QGIS in some more detail. Note that the YouTuber is using an older version of QGIS, so things might be different in your version.
 
-<video width="100%" controls src="https://www.youtube.com/watch?v=Zer558SnKX4"></video>
+<!---
+<video width="100%" controls src="https://www.youtube.com/embded/watch?v=Zer558SnKX4"></video>
+-->
 
-
+<iframe width="560" height="315" src="https://www.youtube.com/embded/watch?v=Zer558SnKX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
