@@ -81,8 +81,8 @@ __Wrap up:__
 ### Available Data
 
 :::{card}
-:link: 
-__Download all datasets [here]() and save the folder on your computer and unzip the file.__
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module3/Exercise_6/Modul_3_Exercise_6_Sava_flood.zip
+__Download all datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module3/Exercise_6/Modul_3_Exercise_6_Sava_flood.zip) and save the folder on your computer and unzip the file.__
 :::
 
 <!--:::{hint}
