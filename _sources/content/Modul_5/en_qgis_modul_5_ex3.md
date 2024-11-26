@@ -39,13 +39,6 @@ __Click here to return to the exercise overview page for module 3__
 :::
 ::::
 
-::::{grid} 1
-:::{grid-item-card}
-#### Context
-
-:::
-::::
-
 ## Instructions for the trainers
 
 :::{dropdown} __Trainers Corner__ 
