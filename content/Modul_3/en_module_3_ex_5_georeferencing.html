@@ -281,7 +281,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_OpenStreetMap_wiki.html">OpenStreetMap (OSM) Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_layer_concept_wiki.html">Layer Concept</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_attribute_table_wiki.html">Attribute Table in QGIS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_digitalization_wiki.html">Digitization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_digitalization_wiki.html">Digitisation</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_data_classification_wiki.html">Geodata Classification</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -699,7 +699,7 @@ analysis.</p>
 <h3>Step 1: Adding a basemap and loading the vector layer<a class="headerlink" href="#step-1-adding-a-basemap-and-loading-the-vector-layer" title="Permalink to this heading">#</a></h3>
 <p>Georeferencing is done by connecting the points on the map that will be georeferenced to coordinates on your map canvas in QGIS. Adding a basemap or a reference layer to your QGIS project will help you to identify the corresponding coordinates.</p>
 <ol class="arabic simple">
-<li><p>Add a basemap using either XYZ-tiles or the <a class="reference internal" href="../Wiki/en_qgis_basemaps_wiki.html"><span class="doc std std-doc">QuickMapServices Plugin</span></a></p></li>
+<li><p>Add a basemap using either XYZ-tiles or the <a class="reference internal" href="../Wiki/en_qgis_basemaps_wiki.html"><span class="doc std std-doc">QuickMapServices Plugin</span></a>.</p></li>
 <li><p>Import the <code class="docutils literal notranslate"><span class="pre">som_admbnda_adm1_ocha_20230308</span></code>-layer to the QGIS project.</p></li>
 </ol>
 </section>
@@ -726,6 +726,7 @@ analysis.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>In most cases, you can leave the transformation type on <code class="docutils literal notranslate"><span class="pre">linear</span></code>. Regional maps are usually in a conformal projection (i.e. the angles are preserved). Satellite imagery as well. If you realise that the angles are not true, or the map is deformed or distorted, you may need to choose <code class="docutils literal notranslate"><span class="pre">polynomial</span></code> as transformation type. Polynomial transformations need more Ground Control Points and the points need to be distributed evenly across the map.</p>
+<p>To learn more about the different transformation types in QGIS, check out the official <a class="reference external" href="https://docs.qgis.org/3.34/en/docs/user_manual/working_with_raster/georeferencer.html#available-transformation-algorithms">QGIS documentation</a>.</p>
 </div>
 </aside>
 <ol class="arabic simple" start="8">
