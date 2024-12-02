@@ -2,7 +2,15 @@
 
 The print layout in QGIS is where you design and finalise the map in order to print or export it as a PDF (or file format of your choice). Here you can add important elements such as the legend, title, explanatory text, and anything you need to create a comprehensive map. By adding layout elements (legend, title, scale bar, sources, etc.) to a map, you provide your audience with the necessary information to contextualise and evaluate the information shown on the map.
 
-1. Go to __Project > New Print Layout > enter a name for the new print layout > click OK__
+::::{margin}
+
+```{tip}
+You can also click on ![](/fig/3.36_icon_create_print_layout.png) `New Print Layout` or press <kbd>Ctrl</kbd> + <kbd>P</kbd> to create and open a new print layout. 
+```
+
+::::
+
+1. Go to `Project` > `New Print Layout` > Enter a name for the new print layout > Click `OK`.
 2. A new window with a blank print layout will appear.
 
 ```{figure} ../../fig/en_30.30.2_create_print_layout.png
@@ -13,7 +21,9 @@ name: Create Print Layout
 Create a new Print Layout
 ```
 
-## Map Composition
+<!--In the [next chapter](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_examples.html), we will take a look at good map design and discuss how to recreate design elements. -->
+
+## Map Composition: 
 
 A good map guides the reader in understanding the information available on the map, makes the information easily accessible, and is not overloaded with information.
 
@@ -26,7 +36,207 @@ In general, there are a few things to keep in mind when creating a map:
     - Additional information should be smaller and moved out of the main focus of the page (e.g. at the bottom, to the sides, or in the corners).
 - A well-structure page layout helps the reader discern the different information on the map and makes it easier to know where to look for certain information. Frames and boxes can structure the page layout. For example, a legend can be put on the bottom or to the right of the map.
 
-<!--In the [next chapter](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_examples.html), we will take a look at good map design and discuss how to recreate design elements. -->
+In order to produce good maps, there are some __basic rules__ to follow and __semiological mistakes__ to avoid. The following subchapter will go over the key elements of a map as well as common design mistakes 
+
+### Key elements of a map
+
+In order to provide your audience and readers with sufficient information so they can contextualise the map, it is important to add these key map elements:
+
+- __Title__
+- __Legend__
+- __Scale__
+- __Orientation__
+- __Source__
+- __Overview Map__
+- __Author__
+
+```{figure} ../../fig/en_good_map_composition_example.png
+---
+name: good map composition example
+width: 750px
+---
+Elements of good map composition
+```
+
+---
+
+__The title__ summarises in a few words the information represented on the map, giving the reader useful contextual information. Titles should include the following information:
+
+- __The place__, with several degrees of precision according to the scale (Country, Region, Township, ...)
+- __The subject__ intelligible by all (make sure that any acronyms used are specified elsewhere on the map)
+- __the date__ of the represented data
+
+_Examples:_
+
+- _"Access to health care in Maputo, Mozambique in 2022"_
+- _"Flooding Risk in Ghardaïa, Algeria"_
+
+__The legend__ is key to interpreting the information represented on the map. Without it, it is impossible to understand the meaning of the different symbols and colours used map. In order to guide the reader, the legend must be:
+
+- __Comprehensive__: All the data on the map must be presented in the legend.
+- __Representative__: The figures on the map and in the legend must match (same size, same color, ...).
+- __Organized__: The data in the legend can be grouped by thematic categories (health, environment, background map, ...) or by type of figure (point, line, surface) to facilitate reading.
+
+```{figure} ../../fig/en_legend_good_practice.png
+---
+width: 750px
+name: Organized Legend
+---
+Example of a well organized legend
+```
+
+__The scale bar__ is essential to a map since it gives the correspondence between a distance measured on the map and the distance in the real world. There are two types of scales:
+
+- __The numerical scale__ is expressed as a fraction (1/25000 or 1:25000) that indicates the ratio between 1 centimetre on the map and the actual distance. It is a scale that can be calculated with GIS software, and is often found in topographic maps. A scale of 1:25000 means that 1 cm represents 25,000 cm (or 250 meters) on the ground.
+
+- __the graphical scale__ is expressed by a line on the map, with an associated distance value. This scale is very useful for understanding distances on the ground. The graphical scale will always be the correct size, even if a different printing format is used, since it will undergo the same transformation as the rest of the map
+
+```{figure} ../../fig/example_scale_bar.png
+---
+name: scale bar
+---
+Scale bar examples
+```
+
+### Orientation
+
+Even though the majority of the maps are oriented towards the north, it is still necessary to specify the orientation of your map. This is often indicated by an arrow pointing to the north, as sometimes a non-northwards orientation is used to represent the study area.
+
+### Sources
+
+Any data represented on a map should have its sources indicated. This provides a record of the data used, but also credits the author of the data. The reader will then be able to look for more information on the sources if he wishes. Open access geographic data, such as OpenStreetMap, are increasingly population and must also be cited on maps.  
+
+It is possible to give the source of each data under the legend, or to do so in a dedicated space in the map. The level of precision of the sources varies according to the author or the precision of the data.
+
+---
+
+```{admonition} Now it's your turn!
+:class: tip
+
+Take a look at the maps below and pay close attention to how the cartographers arranged the different elements. You can also take a look at maps you encountered in your work or daily life. 
+
+```
+
+::::{dropdown} __Map Example 1__
+
+```{figure} /fig/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png
+---
+name: map_example_ethiopia
+width: 750 px
+---
+Flood affected areas and roads in the Somali Region, Ethiopia (Source: OCHA)
+``` 
+
+::::
+
+::::{dropdown} __Map Example 2__
+
+```{figure} /fig/proportional_circles_example.png
+---
+name: prop_circles_example
+width: 500 px
+---
+Internally Displaced Persons (IDPs), 30 September 2024 (Soure: [UNHCR](https://reliefweb.int/map/sudan/regional-bureau-east-horn-africa-and-great-lakes-region-internally-displaced-persons-idps-30-september-2024)).
+```
+
+::::
+
+::::{dropdown} __Map Example 3__
+
+```{figure} /fig/choropleth_hum_example.png
+---
+name: hum_sit_monitoring_choro_example
+width: 700 px
+---
+South Sudan: Humanitarian Situation Monitoring, April-May 2024 - Damaged shelters (Source: [REACH](https://repository.impact-initiatives.org/document/impact/897badb8/REACH_SSD_Map_HSM_AprilMay2024_DamagedShelters_June2024-1.pdf))
+```
+
+::::
+
+
+::::{dropdown} __Map Example 4__
+
+```{figure} /fig/en_m4_operational_overview_example.png
+---
+name: operational_overview_example
+width: 650 px
+---
+Operational overview or response activity map (Source: [Shelter Cluster Vanuata](https://reliefweb.int/map/vanuatu/vanuatu-tropical-cyclone-lola-distribution-and-gap-map-malampa-13022024))
+```
+
+::::
+
+## The Four Semiological Errors
+
+<!---ADD: Insert Image examples for these errors-->
+
+### 1. Proportional circles vs. solid colors
+
+```{caution}
+DO NOT represent __quantitative__ data with a __solid colour__.
+```
+
+This is one of the most common mistakes in mapping. While this representation is graphically appealing, it is still false and distracts from the message of the map.
+
+It is a mistake because:
+
+- You lose the __order relationship between the data__ (a circle can be twice as big as another one, a colour cannot be "twice as dark")
+- Countries with a large surface area stand out visually (e.g. Russia in the example below)
+- We are trying to represent __data that has nothing to do with the area of a country__
+
+
+<!---Add example-->
+
+### 2. Color gradient vs. distinct color palette
+
+```{caution}
+DO NOT use a __separate__ colour palette to represent __ordered entities__
+```
+
+A representation that "feels right" because it seems logical that a "low" rate would be represented differently than a "high" rate.
+
+It is a mistake because:
+
+- By using a differentiating colour variable, __you lose the ordinal relationship between entities__. Instead, a __gradient of the same colour__ that should be used.
+- Different colours are used to differentiate between distinct entities.
+
+### 3. Gradient in a single colour vs. Gradient between two colours
+
+```{Caution}
+DO NOT use a gradient across two different colours for data that is always positive (or negative).
+```
+
+This is a mistake that often occurs because our brains are used to prioritising certain colours, especially green to red, or blue to red. We must remember that __if our values do not have a meaningful zero point, we must stay in the same single colour and use different shades of that colour to indicate different values.
+<!--What about height?-->
+
+A gradient between two colours can be used when it is necessary to show a gradation that can go from negative to positive. As for temperatures, it makes sense to distinguish negative values (in shades of blue for example) and positive values (in shades of red).
+
+It is a mistake because:
+
+- By choosing different colours for values that are linked to each other, our eyes perceive a difference between the elements, and not an order.
+- Darker colours stand out more than lighter colours, and can be perceived as more important.
+- The map will send a message of divergence, of opposition between certain values, when we are simply trying to represent a hierarchy between values
+- In this way, the colour itself directly indicates information about the trend (positive/negative or increasing/decreasing).
+
+### 4. Limited geometric symbols vs. complex icons and symbols
+
+```{Caution}
+DO NOT use __too many symbols__ in a thematic map
+```
+
+Incorporating a multitude of symbols (and data) for a informative map is a common desire. However, too many symbols can __overload the map__ and __reduce the readability__ of the map. Using too many symbols (especially geometric ones) can make it difficult to read and understand the map.  
+__The eye can easily distinguish between four to five different symbols. Beyond that, it is difficult to tell elements apart. However, This is a less serious error because it does not convey false information on the map.
+
+It is a mistake because:
+
+- It complicates the map and limits its impact.
+- Sometimes you are forced to represent several symbols, so you must be careful about overlapping points and overloading the map.
+
+<!-- ![](/../fig/en_modifiable_areal_unit_problem_example.png) -->
+
+---
+
+Now that we have covered what to keep in mind when designing maps, let's take a look at how to create maps with the print layout composer in QGIS.
 
 ## Understanding the Print Layout Composer
 
@@ -56,17 +266,17 @@ First of all, you should always set the size of your map:
 
 ### Adding a new map
 
-- Add a new map by clicking on the ![](../fig/30.30.2_print_layout_insert_map_icon.png) `Add map`-button on the __toolbar on the left__ and drag a rectangle on the map canvas.  
+- Add a new map by clicking on the ![](/fig/30.30.2_print_layout_insert_map_icon.png) `Add map`-button on the __toolbar on the left__ and drag a rectangle on the map canvas.  
 - To move the map on the canvas, simply __select the map__ and __drag__ it with your mouse
-- To move within a map select ![](../../fig/30.30.2_print_layout_move_content_icon.png) `Move item content`-button on the left toolbar.
-- To zoom in on the map, while using the `Move item content` tool, you can __Press CTRL + scroll the mouse wheel__ (gently) or enter the scale manually in the item properties.
+- To move within a map select ![](/fig/30.30.2_print_layout_move_content_icon.png) `Move item content`-button on the left toolbar.
+- To zoom in on the map, while using the ![](/fig/30.30.2_print_layout_move_content_icon.png) `Move item content` tool, you can __Press CTRL + scroll the mouse wheel__ (gently) or enter the scale manually in the item properties.
 
 ```{figure} ../../fig/en_30.30.2_adding_a_map.png
 ---
 width: 750px
 name: Add a new map
 ---
-Adding a new map to the Print Layout
+Adding a new map to the Print Layout (Source: CartONG)
 ```
 
 :::: {tab-set}
@@ -93,7 +303,7 @@ A title should describe the phenomenon represented on the map.
 width: 750px
 name: Add text to the print layout
 ---
-Adding text to the print layout
+Adding text to the print layout (Source: CartONG).
 ```
 
 :::{dropdown} Video: Adding a textbox
@@ -104,11 +314,19 @@ Adding text to the print layout
 
 If you are working for an organisation, most likely you will add the logo of that organization on the maps you produce.
 
-1. Click on the ![](../../fig/30.30.2_print_layout_add_image.png)`Add image` tool in the left toolbar.
+1. Click on the ![](../../fig/30.30.2_print_layout_add_image.png) `Add image`-tool in the left toolbar.
 2. Drag a rectangle on the canvas.
 3. In the __Item Properties__ tab, you will have the option to choose an SVG image from your SVG-library in QGIS or choose a __Raster image__. Most image files are raster images.
-4. Select `Raster image` and click on the `...` to choose the location of the image.
+4. Select `Raster image` and click on `...` to choose the location of the image.
 5. Your image will appear in the print layout. In order to make sure that the image does not get distorted, leave the `Resize Mode` on "Zoom".
+
+```{figure} /fig/3.36_print_layout_add_image.png
+---
+name: print_layout_add_image
+width: 650 px
+---
+Adding an image or logo to the print layout.
+```
 
 :::{dropdown} Video: Adding an image to the print layout
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_raster_image.mp4"></video>
@@ -245,6 +463,10 @@ Add a the extent of the main map to your overview map (the red rectangle in the 
 ``` {Caution}
 This method requires you to be sure that you are not going to modify the overview map, as once the layers are locked, they will keep the style, and any updates will not affect the overview map.
 ```
+
+## Map Composition
+
+<!--Add good map composition-->
 
 ## Exporting the print layout
 
