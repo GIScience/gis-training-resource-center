@@ -1,5 +1,6 @@
 # Exercise 7: Georeferencing a map of Somalia
 
+
 :::{card}
 __Aim of the exercise:__
 ^^^
@@ -118,9 +119,11 @@ Georeferencing is done by connecting the points on the map that will be georefer
 
 ### Step 2: Georeferencing the map
 
+
 Now that we prepared our QGIS-project, let's start georeferencing the map.
 
 3. Open the Georeferencer by navigating to the Top Bar > `Layer` > `Georeferencer` (see {numref}`open_georeferencer`)
+
 
 ```{figure} /fig/en_3.36_open_georefencer.png
 ---
@@ -139,6 +142,7 @@ Opening the Georeferencer in QGIS 3.36
 
 ```{note}
 In most cases, you can leave the transformation type on `linear`. Regional maps are usually in a conformal projection (i.e. the angles are preserved). Satellite imagery as well. If you realise that the angles are not true, or the map is deformed or distorted, you may need to choose `polynomial` as transformation type. Polynomial transformations need more Ground Control Points and the points need to be distributed evenly across the map.
+
 
 To learn more about the different transformation types in QGIS, check out the official [QGIS documentation](https://docs.qgis.org/3.34/en/docs/user_manual/working_with_raster/georeferencer.html#available-transformation-algorithms).
 ```
