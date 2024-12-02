@@ -464,9 +464,7 @@ Add a the extent of the main map to your overview map (the red rectangle in the 
 This method requires you to be sure that you are not going to modify the overview map, as once the layers are locked, they will keep the style, and any updates will not affect the overview map.
 ```
 
-## Map Composition
-
-<!--Add good map composition-->
+----
 
 ## Exporting the print layout
 
@@ -549,16 +547,18 @@ width: 500 px
 Atlas Toolbar
 ```
 
+```{note}
 If you can't see the Atlas Tools, you must first activate the Atlas Toolbar under `View` > `Toolbars` > `Atlas Toolbar`.
+```
 
-## Generating an Atlas
+### Generating an Atlas
 
 An atlas will generate a new page with the same map layout for each feature in a layer. For most purposes, it useful to first create a map layout with the elements such as legend, sources and overview map and then insert the map item that will be controlled by the Atlas. To generate an atlas:
 
 1. Click on the ![](../../fig/30.30.2_print_layout_atlas_settings.png) `Atlas Settings`-button in the Atlas Toolbar.
 2. In the new window, activate the `Generate an Atlas` option.
-3. Select the `Coverage Layer`. This will determine the features or polygons that will be displayed on a page. In our example, we will use the subnational administrative districts in Nigeria (`ADM1`).
-4. Select the `Page Name`. This should be the name of the subnational district or location that is displayed on that page. To display the name of the district, we will choose `ADM1_REF`.
+3. Select the `Coverage Layer`. This will determine the features or polygons that will be displayed on a page. In our example, we will use the subnational administrative regions in Nigeria (`ADM1`).
+4. Select the `Page Name`. This should be the name of the subnational region or location that is displayed on that page. To display the name of the region, we will choose the column `ADM1_REF`, which holds the names of the regions in english.
 5. Now let's add a map to the empty print layout.
 6. Click on the map and navigate to the __Layer Properties__ window on the right.
 7. Scroll down until you see the option `Controlled by Atlas` and activate it.

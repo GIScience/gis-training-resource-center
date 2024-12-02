@@ -570,11 +570,12 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-an-overview-map">Adding an overview map</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Map Composition</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exporting-the-print-layout">Exporting the print layout</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map-templates">Map Templates</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-atlas-function-automatic-map-generation">The Atlas function (automatic map generation)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generating-an-atlas">Generating an Atlas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-atlas-function-automatic-map-generation">The Atlas function (automatic map generation)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generating-an-atlas">Generating an Atlas</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -1046,10 +1047,7 @@ Video: Setting up an overview map<div class="sd-summary-down docutils">
 </div>
 </section>
 </section>
-<section id="id1">
-<h2>Map Composition<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
-<!--Add good map composition-->
-</section>
+<hr class="docutils" />
 <section id="exporting-the-print-layout">
 <h2>Exporting the print layout<a class="headerlink" href="#exporting-the-print-layout" title="Permalink to this heading">#</a></h2>
 <p>Once you are finished with the map composition, it is time to export export the print layout as a PDF or SVG file.</p>
@@ -1125,16 +1123,18 @@ You can also add file paths in the QGIS template settings.</p>
 <p><span class="caption-number">Fig. 134 </span><span class="caption-text">Atlas Toolbar</span><a class="headerlink" href="#atlas-toolbar" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>If you can’t see the Atlas Tools, you must first activate the Atlas Toolbar under <code class="docutils literal notranslate"><span class="pre">View</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Toolbars</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Atlas</span> <span class="pre">Toolbar</span></code>.</p>
-</section>
+</div>
 <section id="generating-an-atlas">
-<h2>Generating an Atlas<a class="headerlink" href="#generating-an-atlas" title="Permalink to this heading">#</a></h2>
+<h3>Generating an Atlas<a class="headerlink" href="#generating-an-atlas" title="Permalink to this heading">#</a></h3>
 <p>An atlas will generate a new page with the same map layout for each feature in a layer. For most purposes, it useful to first create a map layout with the elements such as legend, sources and overview map and then insert the map item that will be controlled by the Atlas. To generate an atlas:</p>
 <ol class="arabic simple">
 <li><p>Click on the <img alt="" src="../../_images/30.30.2_print_layout_atlas_settings.png" /> <code class="docutils literal notranslate"><span class="pre">Atlas</span> <span class="pre">Settings</span></code>-button in the Atlas Toolbar.</p></li>
 <li><p>In the new window, activate the <code class="docutils literal notranslate"><span class="pre">Generate</span> <span class="pre">an</span> <span class="pre">Atlas</span></code> option.</p></li>
-<li><p>Select the <code class="docutils literal notranslate"><span class="pre">Coverage</span> <span class="pre">Layer</span></code>. This will determine the features or polygons that will be displayed on a page. In our example, we will use the subnational administrative districts in Nigeria (<code class="docutils literal notranslate"><span class="pre">ADM1</span></code>).</p></li>
-<li><p>Select the <code class="docutils literal notranslate"><span class="pre">Page</span> <span class="pre">Name</span></code>. This should be the name of the subnational district or location that is displayed on that page. To display the name of the district, we will choose <code class="docutils literal notranslate"><span class="pre">ADM1_REF</span></code>.</p></li>
+<li><p>Select the <code class="docutils literal notranslate"><span class="pre">Coverage</span> <span class="pre">Layer</span></code>. This will determine the features or polygons that will be displayed on a page. In our example, we will use the subnational administrative regions in Nigeria (<code class="docutils literal notranslate"><span class="pre">ADM1</span></code>).</p></li>
+<li><p>Select the <code class="docutils literal notranslate"><span class="pre">Page</span> <span class="pre">Name</span></code>. This should be the name of the subnational region or location that is displayed on that page. To display the name of the region, we will choose the column <code class="docutils literal notranslate"><span class="pre">ADM1_REF</span></code>, which holds the names of the regions in english.</p></li>
 <li><p>Now let’s add a map to the empty print layout.</p></li>
 <li><p>Click on the map and navigate to the <strong>Layer Properties</strong> window on the right.</p></li>
 <li><p>Scroll down until you see the option <code class="docutils literal notranslate"><span class="pre">Controlled</span> <span class="pre">by</span> <span class="pre">Atlas</span></code> and activate it.</p></li>
@@ -1157,6 +1157,7 @@ Video: Setting up an Atlas<div class="sd-summary-down docutils">
 .mp4"></video></p>
 </div>
 </details></section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -1245,11 +1246,12 @@ Video: Setting up an Atlas<div class="sd-summary-down docutils">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-an-overview-map">Adding an overview map</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Map Composition</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exporting-the-print-layout">Exporting the print layout</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map-templates">Map Templates</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-atlas-function-automatic-map-generation">The Atlas function (automatic map generation)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generating-an-atlas">Generating an Atlas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-atlas-function-automatic-map-generation">The Atlas function (automatic map generation)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generating-an-atlas">Generating an Atlas</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
