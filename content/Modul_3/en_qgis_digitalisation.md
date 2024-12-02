@@ -23,11 +23,10 @@ The concept of digitisation within GIS. Source: HeiGIT
 
 ##  Digitising in QGIS
 
-In QGIS, digitization is the process of creating digital vector layers from scanned maps or aerial images. It 
-involves tracing features such as points, lines, or polygons directly on the map canvas to represent geographic 
-elements like buildings, roads, or land parcels. Additionally, you can assign attributes to each feature during 
-digitization, enabling further analysis and integration with other geospatial data. This digitized data becomes 
-a valuable asset for spatial analysis and mapping.
+In QGIS,digitisation involves tracing features such as points, lines, or polygons directly on the map canvas to 
+represent geographic elements like buildings, roads, or land parcels. Additionally, you can assign attributes to each 
+feature during digitization, enabling further analysis and integration with other geospatial data. This digitized data 
+becomes a valuable asset for spatial analysis and mapping.
 
 :::{admonition} Digitisation in humanitarian work
 :class: tip
@@ -119,6 +118,7 @@ Digitizing Toolbar in QGIS 3.36
 
 :::
 
+For more complex digitisation procedures, you will use the advanced digitisation toolbar. However, for this chapter, we will focus on the normal digitisatin toolbar. 
 
 :::{dropdown} Advanced digitizing Toolbar
 
@@ -492,7 +492,6 @@ width: 750 px
 Building Damage Assessment in Paikgachha Upazila, Khulna District, Khulna Division, Bangladesh as of 4 June 2024 (Source: [Int'l Charter, UNOSAT](https://reliefweb.int/map/bangladesh/building-damage-assessment-paikgachha-upazila-khulna-district-khulna-division-bangladesh-4-june-2024-imagery-analysis-4-june-2024-published-7-june-2024-v1))
 ```
 
-:::
 
 ## Spatial Digitisation Errors in QGIS
 
