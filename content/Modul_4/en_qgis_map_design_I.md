@@ -111,7 +111,7 @@ find different examples of maps used in humanitarian work.
 :::{admonition} Now it's your turn! 
 :class: tip
 
-What type of symbolisation methods can you identify in these maps? What kind of information has been communicated in which way (e.g. information about infrastructure, natural landscapes, etc.) 
+What type of visual variables or symbolisation methods can you identify in these maps? What kind of information has been communicated in which way (e.g. information about infrastructure, natural landscapes, etc.) 
 What other methods to communicate information can you imagine or do you know? You can also show a map you encountered in your work or personal life. 
 
 You can also use maps from you encountered in your work or daily life.

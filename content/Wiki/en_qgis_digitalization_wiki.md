@@ -1,9 +1,9 @@
-# Digitization
+# Digitisation
 
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-Digitization is the process of converting geographic data from maps or images into digital form commonly represented as vector data.
+Digitisation is the process of converting geographic data from maps or images into digital form commonly represented as vector data.
 During this procedure, spatial information from maps or images is traced, forming points, polylines, or polygons. 
 To digitize data for a new dataset you always have to start with creating the dataset before filling it with digitized data.
 
@@ -100,6 +100,8 @@ If you create a new line layer remember to change the geometry type into lines b
 
 The YouTube Video below shows the whole process of digitizing polygons in QGIS in some more detail. Note that the YouTuber is using an older version of QGIS, so things might be different in your version.
 
+<!---
 <video width="100%" controls src="https://www.youtube.com/watch?v=Zer558SnKX4"></video>
+-->
 
-
+<iframe width="560" height="315" src="https://youtu.be/embed/Zer558SnKX4?si=ELKStx6y5_B_ilRe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

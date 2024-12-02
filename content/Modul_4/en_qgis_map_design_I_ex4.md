@@ -51,10 +51,10 @@ In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced
 
 ### Available Data
 
-You have created the data for Larkana in [Module 3, Exercise 4](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_module_3_ex2.html). In order to conduct this exercise please create a folder on your computer and copy your entire folder structure of Exercise 4 in there. In case you did not do Module 3 - Exercise 4 you can download the data [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_4/Exercise_2/Modul_4_Exercise_2_Larkana_flood_map.zip). Save the folder on your computer an unzip the file.
+You have created the data for Larkana in [Module 3, Exercise 4](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_module_3_ex2.html). In order to conduct this exercise please create a folder on your computer and copy your entire folder structure of Exercise 4 in there. In case you did not do Module 3 - Exercise 4 you can download the data [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/Exercise_2/Module_4_Exercise_2_Larkana_flood_map.zip). Save the folder on your computer an unzip the file.
 
 
-| Dataset name| Origonal title|Publisher|Download from| 
+| Dataset name| Original title|Publisher|Download from| 
 | :-------------------- | :----------------- |:----------------- |:----------------- |
 | PAK_adm2_Sindh.gpkg | [Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-pak) |UN OCHA | HDX |
 | PAK_Sind_Health_Facilities.gpkg |  [Pakistan Health Facilities (OpenStreetMap Export)](https://data.humdata.org/dataset/hotosm_pak_health_facilities) |Humanitarian OpenStreetMap Team (HOT) | HDX |
@@ -73,7 +73,7 @@ The exercise data should be saved in a location where you can easily find them a
 
 ### Preparation of the data
 
-1. Load all necesary the files into a new QGIS-project:
+1. Load all necessary the files into a new QGIS-project:
 - Healthsites: `Health_Facilities_Flood_2024_AOI.gpkg`
 - Roads:`Roads_Larkana.gpkg`
 - Blocked Roads Points: `PAK_flood_2024_blocked_road.gpkg`
@@ -90,11 +90,11 @@ Save your project and give it a clear name, e.g. "Larkana_flood_response"
 ### Part 1: Symbolization
 
 Now we have assigned a symbol for each layer at our disposal. Look at the map you created and decide if you want to adjust any symbology to make the map easier to read. Do you need to change some colours? Are the layers ordered in a way that the information is visible? Is the font size appropriate, or does it cover up too much information?
-Let's go trhough the layers one by one and visualize them in a meaningful way.
+Let's go through the layers one by one and visualize them in a meaningful way.
 
 __Healthsites__
 
-Doubleclick on the point next to your healthsites vector layer. The symbology window will open. Let's create our own customized symbol for healthcare facilies.
+Double-click on the point next to your healthsites vector layer. The symbology window will open. Let's create our own customized symbol for healthcare facilities.
 - Under `Symbol layer type`, select __"SVG Marker"__
 - Scroll down to the SVG-Browser. Here you will find all the folder of your installed SVG-libraries.
 
@@ -110,7 +110,7 @@ name: SVG Marker
 Create customized SVG Marker
 ```
 - you can adjust its color and size and rotate it 180° in order to turn it around.
-- on the upper right click on the __+__ in order to add another "Simple Marker". Choose a circle and adjust its color and size in order to fit arounf the crescent moon.
+- on the upper right click on the __+__ in order to add another "Simple Marker". Choose a circle and adjust its color and size in order to fit around the crescent moon.
 
 
 Another option to use IFRC and Red Cross logos is to use the `Plugin Resource Sharing` :
@@ -132,8 +132,8 @@ Now the symbols should be available in the styling manager in the SVG folder.
 __Roads__
 
 For categorized classification of the roads right-click on the layer __Roads_Larkana__ in the `Layer Panel` -> `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
-* On the top you find a dropdown menu. Open it and choose `Categorized`. Under `Value` select “higway”.
-* Further down the window, click on `Classify`.  Now you should see all unique values or attributes of the selected “Flood_affacted” column.  You can adjust the colours by double-clicking on one row in the central field.
+* On the top you find a dropdown menu. Open it and choose `Categorized`. Under `Value` select “highway”.
+* Further down the window, click on `Classify`.  Now you should see all unique values or attributes of the selected “Flood_affected” column.  You can adjust the colours by double-clicking on one row in the central field.
 * Remove the tick from all categories except: `motorway`, `primary`, `secondary`, `trunk`
 
     ```{figure} /fig/PAK_road_classification.PNG
@@ -165,7 +165,7 @@ Open the __Symbology Tab__ for the `PAK_flood_2024_blocked_road`-layer and choos
 
 __Airport__
 
-In the [previous exercise](/content/Modul_3/en_qgis_module_3_ex2.md) you found out that the Mohenjodaro Airport in the southwest of Larkana City is still accessibible via the road network. Essential supplies could potentially be transported from the airport into the city without encountering any roadblocks. We want to point out this possibility. Let's mark the airport as a point and visualize it!
+In the [previous exercise](/content/Modul_3/en_qgis_module_3_ex2.md) you found out that the Mohenjodaro Airport in the southwest of Larkana City is still accessible via the road network. Essential supplies could potentially be transported from the airport into the city without encountering any roadblocks. We want to point out this possibility. Let's mark the airport as a point and visualize it!
 
 To do so we will create an entirely new point dataset representing airports.
 * Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#create-a-new-layer)) 
@@ -186,11 +186,11 @@ To do so we will create an entirely new point dataset representing airports.
     name: Digitalising airports
     align: center
     ---
-    Digitalising airports
+    Digitising airports
     ```
 
- Now you can create a point for the airport and if you would like additional aitports as well [wiki](/content/Wiki/en_qgis_digitalization_wiki.md#add-geometries-to-a-layer). Currently the new layer __“PAK_airports”__ is empty. To add features we can use the `Digitizing Toolbar`. If you cannot see the toolbar `View` -> `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#creation-of-point-data)).  ![](/fig/Digitizing_Toolbar.png) 
-*  Once you have found the airport, click on it![](/fig/mActionCapturePoint.png). Left-click on the feature you want to digitalise.
+ Now you can create a point for the airport and if you would like additional airports as well [wiki](/content/Wiki/en_qgis_digitalization_wiki.md#add-geometries-to-a-layer). Currently the new layer __“PAK_airports”__ is empty. To add features we can use the `Digitizing Toolbar`. If you cannot see the toolbar `View` -> `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#creation-of-point-data)).  ![](/fig/Digitizing_Toolbar.png) 
+*  Once you have found the airport, click on it![](/fig/mActionCapturePoint.png). Left-click on the feature you want to digitise.
 * Once you click on a place, a window will appear. Indicate that the road is blocked by writing `Yes` in the field `Blocked_road`.
 
     ```{figure} /fig/Feature_Att_Airport.PNG
@@ -199,7 +199,7 @@ To do so we will create an entirely new point dataset representing airports.
     name: Digitalising airports
     align: center
     ---
-    Digitalising airports
+    Digitising airports
     ```
 
 * Once you are done with digitizing click on ![](/fig/mActionSaveEdits.png) to save your edits.
@@ -217,7 +217,7 @@ Now we can use an icon instead of just a point to display the layer __“PAK_air
     name: Visulsing blocked roads with icons
     align: center
     ---
-    Visulsing blocked roads with icons
+    Visualising blocked roads with icons
     ```   
 
 __Flood Extent__
@@ -231,7 +231,7 @@ Open the __Symbology Tab__ for the `PAK_Sindh_amd1`-layer. Click on `Simple Fill
 
 __Bonus Step__: [Adding a basemap](/content/Wiki/en_qgis_basemaps_wiki.md) can help potential readers orienting themselves.
 
-If you are happy with the symobolization of your layers, the map should be ready for a print layout.
+If you are happy with the symobolisation of your layers, the map should be ready for a print layout.
 
 ``` {Attention}
 Remember the layer concept and place all layers in a logic order. The flood extents should lay under the roads and the several point layer above the roads.
@@ -318,7 +318,7 @@ Map Larkama
 
 ### Bonus Exercise!
 
-If you are finished with the main map, click on the map and navigate to the item properties. In the layer section, check the box `Lock Layers` and `Lock styles for layers`. This means that if you change the map in the main QGIS-window, the map you have added to the Now you can start working on an overview map. We will be using a shapefile with the administrative bounadries of Pakistan.  
+If you are finished with the main map, click on the map and navigate to the item properties. In the layer section, check the box `Lock Layers` and `Lock styles for layers`. This means that if you change the map in the main QGIS-window, the map you have added to the Now you can start working on an overview map. We will be using a shapefile with the administrative boundaries of Pakistan.  
 
 1. Return to the main QGIS window and load the layers from the `Bonus Exercise`-folder.
 2. In the __Layer__ panel, make the layers for the main map invisible by clicking on the ![Eye Icon](/fig/30.30.2_layer_visibility_icon.png) next to the layer name.

@@ -2,16 +2,21 @@
 
 ## Characteristics of the exercise
 
-::::{grid} 2
-:::{grid-item-card}
-#### Aim of this exercise:
+:::{card}
+__Aim of this exercise:__
+^^^
 
 The objective of this exercise is to make your first steps in QGIS. Understand the user interface and get to know the layer concept. 
 
 * Display vector data in QGIS and view the attributes of the data
 * Reproject/Change the projection of the vector data
+:::
 
-#### Type of trainings exercise:
+
+::::{grid} 2
+:::{grid-item-card}
+__Type of trainings exercise:__
+^^^
 
 - This exercise can be used in online and presence training. 
 - It can be done as a follow-along exercise or individually.
@@ -19,8 +24,8 @@ The objective of this exercise is to make your first steps in QGIS. Understand t
 :::
 
 :::{grid-item-card}
-
-#### These skills are relevant for 
+___These skills are relevant for:__ 
+^^^
 
 - QGIS-Essentials
 - Understanding spatial components of datasets
@@ -34,16 +39,16 @@ The objective of this exercise is to make your first steps in QGIS. Understand t
 
 ::::{grid} 2
 :::{grid-item-card}
-
-#### Estimated time demand for the exercise.
+__Estimated time demand for the exercise:__
+^^^
 
 - The exercise takes around 2 hours to complete, depending on the number of participants and their familiarity with computer systems.
 
 :::
 
 :::{grid-item-card}
-
-### Relevant Wiki articles
+__Relevant Wiki articles__
+^^^
 
 * [QGIS Interface](/content/Wiki/en_qgis_interface_wiki.md)
 * [Geodata Import in QGIS](/content/Wiki/en_qgis_import_geodata_wiki.md)
@@ -92,9 +97,9 @@ __Wrap up:__
 ### Available Data
 
 :::{card}
-:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_Geodata_concept.zip
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_understanding_geodata.zip
 
-__Download all datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_Geodata_concept.zip) and save the folder on your computer and unzip the file.__
+__Download all datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_understanding_geodata.zip) and save the folder on your computer and unzip the file.__
 
 :::
 

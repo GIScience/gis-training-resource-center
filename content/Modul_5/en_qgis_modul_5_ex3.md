@@ -39,13 +39,6 @@ __Click here to return to the exercise overview page for module 3__
 :::
 ::::
 
-::::{grid} 1
-:::{grid-item-card}
-#### Context
-
-:::
-::::
-
 ## Instructions for the trainers
 
 :::{dropdown} __Trainers Corner__ 
@@ -101,13 +94,13 @@ The team will be staying at the "Roomy Crossroad Hotel Peshawar" during their mi
 :::
 
 1. We will use the plugin in "Quick Map Service" to locate places precisely.
-To install the plugin click on `Plugins` -> `Manage and Install Plugins…` -> `All` and search for `Quick Map Service`. Once you have found it, click on it and click `Install Plugin`([Wiki Video](/content/Wiki/en_qgis_plugins_wiki.md#installation-of-plugins)).
+To install the plugin click on `Plugins` -> `Manage and Install Plugins…` -> `All` and search for `Quick Map Service`. Once you have found it, click on it and click `Install Plugin`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html#installation-of-plugins)).
 2. Open the plugin by clicking on `Web` -> `Quick Map Service` -> `ESRI` -> `ESRI Satellite`. Now you should have a Settelite image base map in your `Layer Panel`.
-3. Add the `Google Road` base map from the `Quick Map Service` as well.
-4. Place the `Google Road` above the satellite image map and turn the layer transparent by opening the symbology window and adjusting the opacity.
-5. You will need the plugin "Lat Lon tools" to locate the coordinates you receive from the field. To install the plugin click on `Plugins` -> `Manage and Install Plugins…` -> `All` and search for `Lat Lon tools`. Once you have found it, click on it and click `Install Plugin`([Wiki Video](/content/Wiki/en_qgis_plugins_wiki.md#installation-of-plugins)).
+3. Add the `Google Road` base map from the `Quick Map Service` as well (see [wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#basemaps-from-quickmapservices-plugin)).
+4. Place the `Google Road` above the satellite image map and turn the layer transparent by opening the layer properties and navigating to the __Transparency__ tab and adjusting the global opacity.
+5. You will need the plugin "Lat Lon tools" to locate the coordinates you receive from the field. To install the plugin click on `Plugins` -> `Manage and Install Plugins…` -> `All` and search for `Lat Lon tools`. Once you have found it, click on it and click `Install Plugin`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html#installation-of-plugins)).
 
-Now you are ready, check the information from the field below and capture it in a new point layer. Use Google in your browser, the base maps and the Lat Lon tools plugin to locate the exact positions.
+Now you have all the information you need to start digitizing the known incidents and related areas of interest (as polygons). To find the locations, check the information from the field below and capture it. Use Google in your browser, the base maps and the Lat Lon tools plugin to locate the exact positions.
 
 ```{Warning}
 When creating the point and polygon layer use the CRS UTM 42 N __EPSG: 32642__
@@ -118,23 +111,23 @@ In case the information states an exact area, create a new polygon layer and map
 
 | Number| Description |
 | :-------------------- | :----------------- |
-|1 | An IED explosion on the road N45 between Seri-Bahlol and Tableeghi Markaz Mardina near Jandy has been reported by local radio stations. | 
-|2|In a conversation with a PRCS driver, a local teacher shared that the vicinity of the Government __Girls Primary School__ in __Takkar__ is notorious for being a minefield. Specifically, the area between the main road and a smaller dirt road behind the school is known to be heavily mined. Due to this danger, local farmers are extremely reluctant to work on this particular piece of land.|
-|3|Following the recent events, it has been decided that the vicinity surrounding the __Arbab Niaz Cricket Stadium Peshawar__ is now designated as a no-go area for all staff members. This area encompasses the region bordered by the __N5__ road to the south, the __Afghan Colony road__ to the north and east, and the __Charsadda Road__ to the west.|
-|4|GPS Coordinates __(33.99519949518549, 71.66217873936723)__: A humanitarian worker was transporting medical supplies through the region when they were approached by a local farmer. The farmer mentioned that a nearby abandoned well, located at these coordinates, has become a gathering point for unexploded ordnance. Due to its proximity to a residential area, this site is now flagged as high-risk and needs immediate attention from demining teams.|
-|5| Address: __(11, Jinnah Road, Peshawar)__ :A government building at this address has recently been vacated after a bomb threat was called in. Police and bomb squads searched the premises but didn’t find any explosives. However, local business owners reported unusual activity around the building in the weeks leading up to the threat. This location  is now under surveillance, and it needs to be marked as a temporary no-go zone.|
-|6| __Qissa Khwani Bazaar, Peshawar__: A popular historical market at this address has become a focal point for local community gatherings, but recent intelligence reports suggest that the site could be at risk for political protests that have turned violent in the past. Authorities are now considering setting up temporary barriers to manage the flow of people, and it's crucial that this location is marked as a high-risk area for potential crowd control measures.|
+|1 | A bomb threat including Improvised Explosive Devices (IED) on the road N45 right between Seri-Bahlol and Tableeghi Markaz Mardina near Jandy has been reported by local radio stations. Please mark the area between the communities along the road as no-go areas. | 
+|2 | In a conversation with a PRCS driver, a local teacher shared that the vicinity of the Government Girls Primary School in Takkar is notorious for being a minefield. Specifically, the fields between the school and the Noormuhmmad hospital are known to be heavily mined. Due to this danger, local farmers are extremely reluctant to work on this particular piece of land.|
+|3 |Following the recent events, it has been decided that the vicinity surrounding the __Arbab Niaz Cricket Stadium Peshawar__ is now designated as a no-go area for all staff members. This area encompasses the region bordered by the __N5__ road to the south, the __Afghan Colony road__ to the north and east, and the __Charsadda Road__ to the west.|
+|4 |GPS Coordinates __(33.99519949518549, 71.66217873936723)__: A humanitarian worker was transporting medical supplies through the region when they were approached by a local farmer. The farmer mentioned that a nearby abandoned well, located at these coordinates, has become a gathering point for unexploded ordnance. Due to its proximity to a residential area, this site is now flagged as high-risk and needs immediate attention from demining teams.|
+|5 | Address: (34.02878398623702, 71.43081737211224) : A health unit here has recently been vacated after a bomb threat was called in. Police and bomb squads searched the premises but didn’t find any explosives. However, local business owners reported unusual activity around the building in the weeks leading up to the threat. This location is now under surveillance. The area between the health unit and the river, as well as the parks and playground behind it, need to be marked as a temporary no-go zone. |
+|6 | __Qissa Khwani Bazaar, Peshawar__: A popular historical market at this address has become a focal point for local community gatherings, but recent intelligence reports suggest that the site could be at risk for political protests that have turned violent in the past. Authorities are now considering setting up temporary barriers to manage the flow of people, and it's crucial that this location is marked as a high-risk area for potential crowd control measures.|
 
 The current SOP states that the sides of recent violent incidents are to be avoided in a 1 km radius. To reflect this on the map, we will use the buffer tool.
 
-6.  Create a ![](/fig/mAlgorithmBuffer.png) buffer around the points of violent incidents with a distance of `2.000 meters`. See the Wiki entry on [Geoprocessing](/content/Wiki/en_qgis_geoprocessing_wiki.md) for further information.
+6.  Create a ![](/fig/mAlgorithmBuffer.png) buffer around the points of violent incidents with a distance of `2.000 meters`. See the Wiki entry on [Geoprocessing](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html) for further information.
 7. Next, merge the no-go areas polygon layer and the buffer point layer.
 Use the tool `Merge vector layer`.
 8. Clip the newly created polygon out of the AOI to create a "Green" area in which the team are allowed to travel. Use the tool `Symmetrical difference`.
 
 
 
-### Task 2: Load Excel File containing conflict data into QGIS
+## Task 2: Load Excel File containing conflict data into QGIS
 
 1. Drag and Drop the ACLED conflict excel table '2024-01-01-2024-09-23-Pakistan.xlsx' into your QGIS project
 2. Navigate in the Processing Toolbox to the Tool 'Create points layer from table'.
@@ -183,7 +176,7 @@ Number of conflict events per thesil
 ```
 
 
-### Task 3: MPI data 
+## Task 3: MPI data 
 
 1. Open the excel file and export it as CSV UTF-8:
 	* Click on `File` -> `Save As` 
