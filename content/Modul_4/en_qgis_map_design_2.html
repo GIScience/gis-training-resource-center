@@ -547,19 +547,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map-composition">Map Composition:</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-elements-of-a-map">Key elements of a map</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#orientation">Orientation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sources">Sources</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-four-semiological-errors">The Four Semiological Errors</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proportional-circles-vs-solid-colors">1. Proportional circles vs. solid colors</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#color-gradient-vs-distinct-color-palette">2. Color gradient vs. distinct color palette</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gradient-in-a-single-colour-vs-gradient-between-two-colours">3. Gradient in a single colour vs. Gradient between two colours</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#limited-geometric-symbols-vs-complex-icons-and-symbols">4. Limited geometric symbols vs. complex icons and symbols</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map-composition">Map Composition</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-the-print-layout-composer">Understanding the Print Layout Composer</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-elements-to-the-print-layout">Adding Elements to the Print Layout</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-a-new-map">Adding a new map</a></li>
@@ -572,10 +560,8 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exporting-the-print-layout">Exporting the print layout</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map-templates">Map Templates</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-atlas-function-automatic-map-generation">The Atlas function (automatic map generation)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generating-an-atlas">Generating an Atlas</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-atlas-function-automatic-map-generation">The Atlas function (automatic map generation)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generating-an-atlas">Generating an Atlas</a></li>
 </ul>
             </nav>
         </div>
@@ -590,15 +576,8 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="map-design-the-print-layout">
 <h1>Map Design: The Print layout<a class="headerlink" href="#map-design-the-print-layout" title="Permalink to this heading">#</a></h1>
 <p>The print layout in QGIS is where you design and finalise the map in order to print or export it as a PDF (or file format of your choice). Here you can add important elements such as the legend, title, explanatory text, and anything you need to create a comprehensive map. By adding layout elements (legend, title, scale bar, sources, etc.) to a map, you provide your audience with the necessary information to contextualise and evaluate the information shown on the map.</p>
-<aside class="margin sidebar">
-<p class="sidebar-title"></p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>You can also click on <img alt="" src="../../_images/3.36_icon_create_print_layout.png" /> <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Print</span> <span class="pre">Layout</span></code> or press <kbd>Ctrl</kbd> + <kbd>P</kbd> to create and open a new print layout.</p>
-</div>
-</aside>
 <ol class="arabic simple">
-<li><p>Go to <code class="docutils literal notranslate"><span class="pre">Project</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Print</span> <span class="pre">Layout</span></code> &gt; Enter a name for the new print layout &gt; Click <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
+<li><p>Go to <strong>Project &gt; New Print Layout &gt; enter a name for the new print layout &gt; click OK</strong></p></li>
 <li><p>A new window with a blank print layout will appear.</p></li>
 </ol>
 <figure class="align-default" id="create-print-layout">
@@ -607,9 +586,8 @@ document.write(`
 <p><span class="caption-number">Fig. 116 </span><span class="caption-text">Create a new Print Layout</span><a class="headerlink" href="#create-print-layout" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<!--In the [next chapter](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_examples.html), we will take a look at good map design and discuss how to recreate design elements. -->
 <section id="map-composition">
-<h2>Map Composition:<a class="headerlink" href="#map-composition" title="Permalink to this heading">#</a></h2>
+<h2>Map Composition<a class="headerlink" href="#map-composition" title="Permalink to this heading">#</a></h2>
 <p>A good map guides the reader in understanding the information available on the map, makes the information easily accessible, and is not overloaded with information.</p>
 <p>In general, there are a few things to keep in mind when creating a map:</p>
 <ul class="simple">
@@ -623,204 +601,14 @@ document.write(`
 </li>
 <li><p>A well-structure page layout helps the reader discern the different information on the map and makes it easier to know where to look for certain information. Frames and boxes can structure the page layout. For example, a legend can be put on the bottom or to the right of the map.</p></li>
 </ul>
-<p>In order to produce good maps, there are some <strong>basic rules</strong> to follow and <strong>semiological mistakes</strong> to avoid. The following subchapter will go over the key elements of a map as well as common design mistakes</p>
-<section id="key-elements-of-a-map">
-<h3>Key elements of a map<a class="headerlink" href="#key-elements-of-a-map" title="Permalink to this heading">#</a></h3>
-<p>In order to provide your audience and readers with sufficient information so they can contextualise the map, it is important to add these key map elements:</p>
-<ul class="simple">
-<li><p><strong>Title</strong></p></li>
-<li><p><strong>Legend</strong></p></li>
-<li><p><strong>Scale</strong></p></li>
-<li><p><strong>Orientation</strong></p></li>
-<li><p><strong>Source</strong></p></li>
-<li><p><strong>Overview Map</strong></p></li>
-<li><p><strong>Author</strong></p></li>
-</ul>
-<figure class="align-default" id="good-map-composition-example">
-<a class="reference internal image-reference" href="../../_images/en_good_map_composition_example.png"><img alt="../../_images/en_good_map_composition_example.png" src="../../_images/en_good_map_composition_example.png" style="width: 750px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 117 </span><span class="caption-text">Elements of good map composition</span><a class="headerlink" href="#good-map-composition-example" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<hr class="docutils" />
-<p><strong>The title</strong> summarises in a few words the information represented on the map, giving the reader useful contextual information. Titles should include the following information:</p>
-<ul class="simple">
-<li><p><strong>The place</strong>, with several degrees of precision according to the scale (Country, Region, Township, …)</p></li>
-<li><p><strong>The subject</strong> intelligible by all (make sure that any acronyms used are specified elsewhere on the map)</p></li>
-<li><p><strong>the date</strong> of the represented data</p></li>
-</ul>
-<p><em>Examples:</em></p>
-<ul class="simple">
-<li><p><em>“Access to health care in Maputo, Mozambique in 2022”</em></p></li>
-<li><p><em>“Flooding Risk in Ghardaïa, Algeria”</em></p></li>
-</ul>
-<p><strong>The legend</strong> is key to interpreting the information represented on the map. Without it, it is impossible to understand the meaning of the different symbols and colours used map. In order to guide the reader, the legend must be:</p>
-<ul class="simple">
-<li><p><strong>Comprehensive</strong>: All the data on the map must be presented in the legend.</p></li>
-<li><p><strong>Representative</strong>: The figures on the map and in the legend must match (same size, same color, …).</p></li>
-<li><p><strong>Organized</strong>: The data in the legend can be grouped by thematic categories (health, environment, background map, …) or by type of figure (point, line, surface) to facilitate reading.</p></li>
-</ul>
-<figure class="align-default" id="organized-legend">
-<a class="reference internal image-reference" href="../../_images/en_legend_good_practice.png"><img alt="../../_images/en_legend_good_practice.png" src="../../_images/en_legend_good_practice.png" style="width: 750px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 118 </span><span class="caption-text">Example of a well organized legend</span><a class="headerlink" href="#organized-legend" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p><strong>The scale bar</strong> is essential to a map since it gives the correspondence between a distance measured on the map and the distance in the real world. There are two types of scales:</p>
-<ul class="simple">
-<li><p><strong>The numerical scale</strong> is expressed as a fraction (1/25000 or 1:25000) that indicates the ratio between 1 centimetre on the map and the actual distance. It is a scale that can be calculated with GIS software, and is often found in topographic maps. A scale of 1:25000 means that 1 cm represents 25,000 cm (or 250 meters) on the ground.</p></li>
-<li><p><strong>the graphical scale</strong> is expressed by a line on the map, with an associated distance value. This scale is very useful for understanding distances on the ground. The graphical scale will always be the correct size, even if a different printing format is used, since it will undergo the same transformation as the rest of the map</p></li>
-</ul>
-<figure class="align-default" id="scale-bar">
-<img alt="../../_images/example_scale_bar.png" src="../../_images/example_scale_bar.png" />
-<figcaption>
-<p><span class="caption-number">Fig. 119 </span><span class="caption-text">Scale bar examples</span><a class="headerlink" href="#scale-bar" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="orientation">
-<h3>Orientation<a class="headerlink" href="#orientation" title="Permalink to this heading">#</a></h3>
-<p>Even though the majority of the maps are oriented towards the north, it is still necessary to specify the orientation of your map. This is often indicated by an arrow pointing to the north, as sometimes a non-northwards orientation is used to represent the study area.</p>
-</section>
-<section id="sources">
-<h3>Sources<a class="headerlink" href="#sources" title="Permalink to this heading">#</a></h3>
-<p>Any data represented on a map should have its sources indicated. This provides a record of the data used, but also credits the author of the data. The reader will then be able to look for more information on the sources if he wishes. Open access geographic data, such as OpenStreetMap, are increasingly population and must also be cited on maps.</p>
-<p>It is possible to give the source of each data under the legend, or to do so in a dedicated space in the map. The level of precision of the sources varies according to the author or the precision of the data.</p>
-<hr class="docutils" />
-<div class="tip admonition">
-<p class="admonition-title">Now it’s your turn!</p>
-<p>Take a look at the maps below and pay close attention to how the cartographers arranged the different elements. You can also take a look at maps you encountered in your work or daily life.</p>
-</div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-<strong>Map Example 1</strong><div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<figure class="align-default" id="map-example-ethiopia">
-<a class="reference internal image-reference" href="../../_images/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png"><img alt="../../_images/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png" src="../../_images/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png" style="width: 750px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 120 </span><span class="caption-text">Flood affected areas and roads in the Somali Region, Ethiopia (Source: OCHA)</span><a class="headerlink" href="#map-example-ethiopia" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-</div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-<strong>Map Example 2</strong><div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<figure class="align-default" id="prop-circles-example">
-<a class="reference internal image-reference" href="../../_images/proportional_circles_example.png"><img alt="../../_images/proportional_circles_example.png" src="../../_images/proportional_circles_example.png" style="width: 500px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 121 </span><span class="caption-text">Internally Displaced Persons (IDPs), 30 September 2024 (Soure: <a class="reference external" href="https://reliefweb.int/map/sudan/regional-bureau-east-horn-africa-and-great-lakes-region-internally-displaced-persons-idps-30-september-2024">UNHCR</a>).</span><a class="headerlink" href="#prop-circles-example" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-</div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-<strong>Map Example 3</strong><div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<figure class="align-default" id="hum-sit-monitoring-choro-example">
-<a class="reference internal image-reference" href="../../_images/choropleth_hum_example.png"><img alt="../../_images/choropleth_hum_example.png" src="../../_images/choropleth_hum_example.png" style="width: 700px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 122 </span><span class="caption-text">South Sudan: Humanitarian Situation Monitoring, April-May 2024 - Damaged shelters (Source: <a class="reference external" href="https://repository.impact-initiatives.org/document/impact/897badb8/REACH_SSD_Map_HSM_AprilMay2024_DamagedShelters_June2024-1.pdf">REACH</a>)</span><a class="headerlink" href="#hum-sit-monitoring-choro-example" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-</div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-<strong>Map Example 4</strong><div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<figure class="align-default" id="operational-overview-example">
-<a class="reference internal image-reference" href="../../_images/en_m4_operational_overview_example.png"><img alt="../../_images/en_m4_operational_overview_example.png" src="../../_images/en_m4_operational_overview_example.png" style="width: 650px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 123 </span><span class="caption-text">Operational overview or response activity map (Source: <a class="reference external" href="https://reliefweb.int/map/vanuatu/vanuatu-tropical-cyclone-lola-distribution-and-gap-map-malampa-13022024">Shelter Cluster Vanuata</a>)</span><a class="headerlink" href="#operational-overview-example" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-</div>
-</details></section>
-</section>
-<section id="the-four-semiological-errors">
-<h2>The Four Semiological Errors<a class="headerlink" href="#the-four-semiological-errors" title="Permalink to this heading">#</a></h2>
-<!---ADD: Insert Image examples for these errors-->
-<section id="proportional-circles-vs-solid-colors">
-<h3>1. Proportional circles vs. solid colors<a class="headerlink" href="#proportional-circles-vs-solid-colors" title="Permalink to this heading">#</a></h3>
-<div class="admonition caution">
-<p class="admonition-title">Caution</p>
-<p>DO NOT represent <strong>quantitative</strong> data with a <strong>solid colour</strong>.</p>
-</div>
-<p>This is one of the most common mistakes in mapping. While this representation is graphically appealing, it is still false and distracts from the message of the map.</p>
-<p>It is a mistake because:</p>
-<ul class="simple">
-<li><p>You lose the <strong>order relationship between the data</strong> (a circle can be twice as big as another one, a colour cannot be “twice as dark”)</p></li>
-<li><p>Countries with a large surface area stand out visually (e.g. Russia in the example below)</p></li>
-<li><p>We are trying to represent <strong>data that has nothing to do with the area of a country</strong></p></li>
-</ul>
-<!---Add example-->
-</section>
-<section id="color-gradient-vs-distinct-color-palette">
-<h3>2. Color gradient vs. distinct color palette<a class="headerlink" href="#color-gradient-vs-distinct-color-palette" title="Permalink to this heading">#</a></h3>
-<div class="admonition caution">
-<p class="admonition-title">Caution</p>
-<p>DO NOT use a <strong>separate</strong> colour palette to represent <strong>ordered entities</strong></p>
-</div>
-<p>A representation that “feels right” because it seems logical that a “low” rate would be represented differently than a “high” rate.</p>
-<p>It is a mistake because:</p>
-<ul class="simple">
-<li><p>By using a differentiating colour variable, <strong>you lose the ordinal relationship between entities</strong>. Instead, a <strong>gradient of the same colour</strong> that should be used.</p></li>
-<li><p>Different colours are used to differentiate between distinct entities.</p></li>
-</ul>
-</section>
-<section id="gradient-in-a-single-colour-vs-gradient-between-two-colours">
-<h3>3. Gradient in a single colour vs. Gradient between two colours<a class="headerlink" href="#gradient-in-a-single-colour-vs-gradient-between-two-colours" title="Permalink to this heading">#</a></h3>
-<div class="admonition caution">
-<p class="admonition-title">Caution</p>
-<p>DO NOT use a gradient across two different colours for data that is always positive (or negative).</p>
-</div>
-<p>This is a mistake that often occurs because our brains are used to prioritising certain colours, especially green to red, or blue to red. We must remember that __if our values do not have a meaningful zero point, we must stay in the same single colour and use different shades of that colour to indicate different values.</p>
-<!--What about height?-->
-<p>A gradient between two colours can be used when it is necessary to show a gradation that can go from negative to positive. As for temperatures, it makes sense to distinguish negative values (in shades of blue for example) and positive values (in shades of red).</p>
-<p>It is a mistake because:</p>
-<ul class="simple">
-<li><p>By choosing different colours for values that are linked to each other, our eyes perceive a difference between the elements, and not an order.</p></li>
-<li><p>Darker colours stand out more than lighter colours, and can be perceived as more important.</p></li>
-<li><p>The map will send a message of divergence, of opposition between certain values, when we are simply trying to represent a hierarchy between values</p></li>
-<li><p>In this way, the colour itself directly indicates information about the trend (positive/negative or increasing/decreasing).</p></li>
-</ul>
-</section>
-<section id="limited-geometric-symbols-vs-complex-icons-and-symbols">
-<h3>4. Limited geometric symbols vs. complex icons and symbols<a class="headerlink" href="#limited-geometric-symbols-vs-complex-icons-and-symbols" title="Permalink to this heading">#</a></h3>
-<div class="admonition caution">
-<p class="admonition-title">Caution</p>
-<p>DO NOT use <strong>too many symbols</strong> in a thematic map</p>
-</div>
-<p>Incorporating a multitude of symbols (and data) for a informative map is a common desire. However, too many symbols can <strong>overload the map</strong> and <strong>reduce the readability</strong> of the map. Using too many symbols (especially geometric ones) can make it difficult to read and understand the map.<br />
-__The eye can easily distinguish between four to five different symbols. Beyond that, it is difficult to tell elements apart. However, This is a less serious error because it does not convey false information on the map.</p>
-<p>It is a mistake because:</p>
-<ul class="simple">
-<li><p>It complicates the map and limits its impact.</p></li>
-<li><p>Sometimes you are forced to represent several symbols, so you must be careful about overlapping points and overloading the map.</p></li>
-</ul>
-<!-- ![](/../fig/en_modifiable_areal_unit_problem_example.png) -->
-<hr class="docutils" />
-<p>Now that we have covered what to keep in mind when designing maps, let’s take a look at how to create maps with the print layout composer in QGIS.</p>
-</section>
+<!--In the [next chapter](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_examples.html), we will take a look at good map design and discuss how to recreate design elements. -->
 </section>
 <section id="understanding-the-print-layout-composer">
 <h2>Understanding the Print Layout Composer<a class="headerlink" href="#understanding-the-print-layout-composer" title="Permalink to this heading">#</a></h2>
 <figure class="align-default" id="new-print-layout">
 <img alt="../../_images/en_30.30.2_understanding_the_print_layout_composer.png" src="../../_images/en_30.30.2_understanding_the_print_layout_composer.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 124 </span><span class="caption-text">The interface of the Print Layout Composer</span><a class="headerlink" href="#new-print-layout" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 117 </span><span class="caption-text">The interface of the Print Layout Composer</span><a class="headerlink" href="#new-print-layout" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple">
@@ -844,15 +632,15 @@ __The eye can easily distinguish between four to five different symbols. Beyond 
 <section id="adding-a-new-map">
 <h3>Adding a new map<a class="headerlink" href="#adding-a-new-map" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
-<li><p>Add a new map by clicking on the <img alt="" src="../../_images/30.30.2_print_layout_insert_map_icon.png" /> <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">map</span></code>-button on the <strong>toolbar on the left</strong> and drag a rectangle on the map canvas.</p></li>
+<li><p>Add a new map by clicking on the <img alt="" src="content/fig/30.30.2_print_layout_insert_map_icon.png" /> <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">map</span></code>-button on the <strong>toolbar on the left</strong> and drag a rectangle on the map canvas.</p></li>
 <li><p>To move the map on the canvas, simply <strong>select the map</strong> and <strong>drag</strong> it with your mouse</p></li>
 <li><p>To move within a map select <img alt="" src="../../_images/30.30.2_print_layout_move_content_icon.png" /> <code class="docutils literal notranslate"><span class="pre">Move</span> <span class="pre">item</span> <span class="pre">content</span></code>-button on the left toolbar.</p></li>
-<li><p>To zoom in on the map, while using the <img alt="" src="../../_images/30.30.2_print_layout_move_content_icon.png" /> <code class="docutils literal notranslate"><span class="pre">Move</span> <span class="pre">item</span> <span class="pre">content</span></code> tool, you can <strong>Press CTRL + scroll the mouse wheel</strong> (gently) or enter the scale manually in the item properties.</p></li>
+<li><p>To zoom in on the map, while using the <code class="docutils literal notranslate"><span class="pre">Move</span> <span class="pre">item</span> <span class="pre">content</span></code> tool, you can <strong>Press CTRL + scroll the mouse wheel</strong> (gently) or enter the scale manually in the item properties.</p></li>
 </ul>
 <figure class="align-default" id="add-a-new-map">
 <a class="reference internal image-reference" href="../../_images/en_30.30.2_adding_a_map.png"><img alt="../../_images/en_30.30.2_adding_a_map.png" src="../../_images/en_30.30.2_adding_a_map.png" style="width: 750px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 125 </span><span class="caption-text">Adding a new map to the Print Layout (Source: CartONG)</span><a class="headerlink" href="#add-a-new-map" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 118 </span><span class="caption-text">Adding a new map to the Print Layout</span><a class="headerlink" href="#add-a-new-map" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="sd-tab-set docutils">
@@ -880,7 +668,7 @@ Moving and scaling the map</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="add-text-to-the-print-layout">
 <a class="reference internal image-reference" href="../../_images/en_30.30.2_print_layout_add_text.png"><img alt="../../_images/en_30.30.2_print_layout_add_text.png" src="../../_images/en_30.30.2_print_layout_add_text.png" style="width: 750px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 126 </span><span class="caption-text">Adding text to the print layout (Source: CartONG).</span><a class="headerlink" href="#add-text-to-the-print-layout" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 119 </span><span class="caption-text">Adding text to the print layout</span><a class="headerlink" href="#add-text-to-the-print-layout" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -897,18 +685,12 @@ Video: Adding a textbox<div class="sd-summary-down docutils">
 <h3>Adding an image or logo<a class="headerlink" href="#adding-an-image-or-logo" title="Permalink to this heading">#</a></h3>
 <p>If you are working for an organisation, most likely you will add the logo of that organization on the maps you produce.</p>
 <ol class="arabic simple">
-<li><p>Click on the <img alt="" src="../../_images/30.30.2_print_layout_add_image.png" /> <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">image</span></code>-tool in the left toolbar.</p></li>
+<li><p>Click on the <img alt="" src="../../_images/30.30.2_print_layout_add_image.png" /><code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">image</span></code> tool in the left toolbar.</p></li>
 <li><p>Drag a rectangle on the canvas.</p></li>
 <li><p>In the <strong>Item Properties</strong> tab, you will have the option to choose an SVG image from your SVG-library in QGIS or choose a <strong>Raster image</strong>. Most image files are raster images.</p></li>
-<li><p>Select <code class="docutils literal notranslate"><span class="pre">Raster</span> <span class="pre">image</span></code> and click on <code class="docutils literal notranslate"><span class="pre">...</span></code> to choose the location of the image.</p></li>
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">Raster</span> <span class="pre">image</span></code> and click on the <code class="docutils literal notranslate"><span class="pre">...</span></code> to choose the location of the image.</p></li>
 <li><p>Your image will appear in the print layout. In order to make sure that the image does not get distorted, leave the <code class="docutils literal notranslate"><span class="pre">Resize</span> <span class="pre">Mode</span></code> on “Zoom”.</p></li>
 </ol>
-<figure class="align-default" id="print-layout-add-image">
-<a class="reference internal image-reference" href="../../_images/3.36_print_layout_add_image.png"><img alt="../../_images/3.36_print_layout_add_image.png" src="../../_images/3.36_print_layout_add_image.png" style="width: 650px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 127 </span><span class="caption-text">Adding an image or logo to the print layout.</span><a class="headerlink" href="#print-layout-add-image" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Video: Adding an image to the print layout<div class="sd-summary-down docutils">
@@ -930,7 +712,7 @@ Video: Adding an image to the print layout<div class="sd-summary-down docutils">
 <figure class="align-default" id="add-a-legend-to-the-print-layout">
 <a class="reference internal image-reference" href="../../_images/en_30.30.2_print_layout_add_legend.png"><img alt="../../_images/en_30.30.2_print_layout_add_legend.png" src="../../_images/en_30.30.2_print_layout_add_legend.png" style="width: 750px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 128 </span><span class="caption-text">Adding a legend to the print layout</span><a class="headerlink" href="#add-a-legend-to-the-print-layout" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 120 </span><span class="caption-text">Adding a legend to the print layout</span><a class="headerlink" href="#add-a-legend-to-the-print-layout" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>In the <strong>Item Properties</strong> panel, if you keep the <strong><code class="docutils literal notranslate"><span class="pre">Auto</span> <span class="pre">update</span></code></strong> option checked, new layers added to your project will automatically be added to the legend but you cannot control them individually (rename if necessary, reorder ot remove items).<br />
@@ -964,7 +746,7 @@ Adding a two-column legend</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="round-number-for-scale">
 <a class="reference internal image-reference" href="../../_images/en_30.30.2_print_layout_scale.png"><img alt="../../_images/en_30.30.2_print_layout_scale.png" src="../../_images/en_30.30.2_print_layout_scale.png" style="width: 750px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 129 </span><span class="caption-text">Make sure that the scale is at a round number</span><a class="headerlink" href="#round-number-for-scale" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 121 </span><span class="caption-text">Make sure that the scale is at a round number</span><a class="headerlink" href="#round-number-for-scale" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>To add a scale bar, you can use the <img alt="" src="fig/30.30.2_print_layout_scale_bar.png" /><code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">scale</span> <span class="pre">bar</span></code>-button on the <strong>left toolbar</strong>. In the <strong>Item Properties</strong> panel, customize the following functions</p>
@@ -979,7 +761,7 @@ Adding a two-column legend</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="add-scale-bar">
 <a class="reference internal image-reference" href="../../_images/en_30.30.2_print_layout_add_scale_bar.png"><img alt="../../_images/en_30.30.2_print_layout_add_scale_bar.png" src="../../_images/en_30.30.2_print_layout_add_scale_bar.png" style="width: 750px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 130 </span><span class="caption-text">Add and customise the scale bar</span><a class="headerlink" href="#add-scale-bar" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 122 </span><span class="caption-text">Add and customise the scale bar</span><a class="headerlink" href="#add-scale-bar" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -1016,19 +798,19 @@ Adding a two-column legend</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="overview-map-preparation">
 <a class="reference internal image-reference" href="../../_images/en_30.30.2_print_layout_overview_map_preparations.png"><img alt="../../_images/en_30.30.2_print_layout_overview_map_preparations.png" src="../../_images/en_30.30.2_print_layout_overview_map_preparations.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 131 </span><span class="caption-text">An overview map should show important landmarks and borders so the reader is able to locate the region shown on the map without having specific knowledge of the region.</span><a class="headerlink" href="#overview-map-preparation" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 123 </span><span class="caption-text">An overview map should show important landmarks and borders so the reader is able to locate the region shown on the map without having specific knowledge of the region.</span><a class="headerlink" href="#overview-map-preparation" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="add-overview-map">
 <a class="reference internal image-reference" href="../../_images/en_30.30.2_print_layout_add_overview_map.png"><img alt="../../_images/en_30.30.2_print_layout_add_overview_map.png" src="../../_images/en_30.30.2_print_layout_add_overview_map.png" style="width: 750px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 132 </span><span class="caption-text">Add an overview map and <strong>lock the layer</strong></span><a class="headerlink" href="#add-overview-map" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 124 </span><span class="caption-text">Add an overview map and <strong>lock the layer</strong></span><a class="headerlink" href="#add-overview-map" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="create-an-overview">
 <a class="reference internal image-reference" href="../../_images/en_30.30.2_print_layout_add_map_extent_overview_map.png"><img alt="../../_images/en_30.30.2_print_layout_add_map_extent_overview_map.png" src="../../_images/en_30.30.2_print_layout_add_map_extent_overview_map.png" style="width: 750px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 133 </span><span class="caption-text">Add a the extent of the main map to your overview map (the red rectangle in the bottom right corner)</span><a class="headerlink" href="#create-an-overview" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 125 </span><span class="caption-text">Add a the extent of the main map to your overview map (the red rectangle in the bottom right corner)</span><a class="headerlink" href="#create-an-overview" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -1047,7 +829,6 @@ Video: Setting up an overview map<div class="sd-summary-down docutils">
 </div>
 </section>
 </section>
-<hr class="docutils" />
 <section id="exporting-the-print-layout">
 <h2>Exporting the print layout<a class="headerlink" href="#exporting-the-print-layout" title="Permalink to this heading">#</a></h2>
 <p>Once you are finished with the map composition, it is time to export export the print layout as a PDF or SVG file.</p>
@@ -1120,21 +901,19 @@ You can also add file paths in the QGIS template settings.</p>
 <figure class="align-default" id="atlas-toolbar">
 <a class="reference internal image-reference" href="../../_images/en_atlas_toolbar.png"><img alt="../../_images/en_atlas_toolbar.png" src="../../_images/en_atlas_toolbar.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 134 </span><span class="caption-text">Atlas Toolbar</span><a class="headerlink" href="#atlas-toolbar" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 126 </span><span class="caption-text">Atlas Toolbar</span><a class="headerlink" href="#atlas-toolbar" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
 <p>If you can’t see the Atlas Tools, you must first activate the Atlas Toolbar under <code class="docutils literal notranslate"><span class="pre">View</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Toolbars</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Atlas</span> <span class="pre">Toolbar</span></code>.</p>
-</div>
+</section>
 <section id="generating-an-atlas">
-<h3>Generating an Atlas<a class="headerlink" href="#generating-an-atlas" title="Permalink to this heading">#</a></h3>
+<h2>Generating an Atlas<a class="headerlink" href="#generating-an-atlas" title="Permalink to this heading">#</a></h2>
 <p>An atlas will generate a new page with the same map layout for each feature in a layer. For most purposes, it useful to first create a map layout with the elements such as legend, sources and overview map and then insert the map item that will be controlled by the Atlas. To generate an atlas:</p>
 <ol class="arabic simple">
 <li><p>Click on the <img alt="" src="../../_images/30.30.2_print_layout_atlas_settings.png" /> <code class="docutils literal notranslate"><span class="pre">Atlas</span> <span class="pre">Settings</span></code>-button in the Atlas Toolbar.</p></li>
 <li><p>In the new window, activate the <code class="docutils literal notranslate"><span class="pre">Generate</span> <span class="pre">an</span> <span class="pre">Atlas</span></code> option.</p></li>
-<li><p>Select the <code class="docutils literal notranslate"><span class="pre">Coverage</span> <span class="pre">Layer</span></code>. This will determine the features or polygons that will be displayed on a page. In our example, we will use the subnational administrative regions in Nigeria (<code class="docutils literal notranslate"><span class="pre">ADM1</span></code>).</p></li>
-<li><p>Select the <code class="docutils literal notranslate"><span class="pre">Page</span> <span class="pre">Name</span></code>. This should be the name of the subnational region or location that is displayed on that page. To display the name of the region, we will choose the column <code class="docutils literal notranslate"><span class="pre">ADM1_REF</span></code>, which holds the names of the regions in english.</p></li>
+<li><p>Select the <code class="docutils literal notranslate"><span class="pre">Coverage</span> <span class="pre">Layer</span></code>. This will determine the features or polygons that will be displayed on a page. In our example, we will use the subnational administrative districts in Nigeria (<code class="docutils literal notranslate"><span class="pre">ADM1</span></code>).</p></li>
+<li><p>Select the <code class="docutils literal notranslate"><span class="pre">Page</span> <span class="pre">Name</span></code>. This should be the name of the subnational district or location that is displayed on that page. To display the name of the district, we will choose <code class="docutils literal notranslate"><span class="pre">ADM1_REF</span></code>.</p></li>
 <li><p>Now let’s add a map to the empty print layout.</p></li>
 <li><p>Click on the map and navigate to the <strong>Layer Properties</strong> window on the right.</p></li>
 <li><p>Scroll down until you see the option <code class="docutils literal notranslate"><span class="pre">Controlled</span> <span class="pre">by</span> <span class="pre">Atlas</span></code> and activate it.</p></li>
@@ -1157,7 +936,6 @@ Video: Setting up an Atlas<div class="sd-summary-down docutils">
 .mp4"></video></p>
 </div>
 </details></section>
-</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -1223,19 +1001,7 @@ Video: Setting up an Atlas<div class="sd-summary-down docutils">
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map-composition">Map Composition:</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-elements-of-a-map">Key elements of a map</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#orientation">Orientation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sources">Sources</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-four-semiological-errors">The Four Semiological Errors</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proportional-circles-vs-solid-colors">1. Proportional circles vs. solid colors</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#color-gradient-vs-distinct-color-palette">2. Color gradient vs. distinct color palette</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gradient-in-a-single-colour-vs-gradient-between-two-colours">3. Gradient in a single colour vs. Gradient between two colours</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#limited-geometric-symbols-vs-complex-icons-and-symbols">4. Limited geometric symbols vs. complex icons and symbols</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map-composition">Map Composition</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-the-print-layout-composer">Understanding the Print Layout Composer</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-elements-to-the-print-layout">Adding Elements to the Print Layout</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-a-new-map">Adding a new map</a></li>
@@ -1248,10 +1014,8 @@ Video: Setting up an Atlas<div class="sd-summary-down docutils">
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exporting-the-print-layout">Exporting the print layout</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map-templates">Map Templates</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-atlas-function-automatic-map-generation">The Atlas function (automatic map generation)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generating-an-atlas">Generating an Atlas</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-atlas-function-automatic-map-generation">The Atlas function (automatic map generation)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generating-an-atlas">Generating an Atlas</a></li>
 </ul>
   </nav></div>
 
