@@ -213,7 +213,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_working_with_styles.html">Exporting and Importing Styles</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_symbology_raster.html">Symbology for raster data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_map_design_2.html">Map Design: The Print layout</a></li>
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_map_examples.html">Examples of Good Map Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_map_examples.html">Good Map Design &amp; Semiological Errors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_modul_4_exercises.html">Exercises Module 4</a></li>
 </ul>
 </li>
@@ -679,7 +679,7 @@ Rule-based</label><div class="sd-tab-content docutils">
 <p>When creating situational reports, you will frequently use administrative boundaries. In the example below, we want to create an overview map using the administrative boundaries of Nigeria. In order to visualise all the three administrative boundaries at the same time, we need to set the symbology for each layer so the layers below are visible, and the hierarchy of the administrative levels is distinguishable.</p>
 <div class="admonition-optional-now-it-s-your-turn admonition">
 <p class="admonition-title"><em>Optional</em>: Now it’s your turn</p>
-<p>You can follow along by downloading the <span class="xref myst">administrative boundaries of Nigeria</span> by <span class="xref myst">OCHA Nigeria</span></p>
+<p>You can follow along by downloading the <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/follow_along/nga_adm_osgof_20190417.zip">administrative boundaries of Nigeria</a> by <a class="reference external" href="https://data.humdata.org/dataset/cod-ab-nga">OCHA Nigeria</a></p>
 </div>
 <section id="only-display-the-outlines-of-polygons">
 <h4>Only display the outlines of polygons<a class="headerlink" href="#only-display-the-outlines-of-polygons" title="Permalink to this heading">#</a></h4>
@@ -754,11 +754,11 @@ Video: Adjusting the style for multiple layers<div class="sd-summary-down docuti
 displayed in graduated colours. In this exercise, we assign colours to Adm1 polygons based on the total population of
 each State.</p>
 <ol class="arabic simple">
-<li><p>Download the NGA_Adm1_Pop shapefile and save it in your shapefile folder</p></li>
+<li><p>Download the <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/follow_along/NGA_adm1_pop.zip">NGA_Adm1_Pop shapefile</a> and save it in your shapefile folder</p></li>
 <li><p>In QGIS, turn off the Adm1 and Adm2 layer, leaving only Adm0</p></li>
 <li><p>Drag the shapefile NGA_Adm1_Pop into your map</p></li>
 <li><p>Open its <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> options and choose <code class="docutils literal notranslate"><span class="pre">Graduated</span></code></p></li>
-<li><p><strong>Select the value you want to use to assign colours</strong>, in this case, it will be <code class="docutils literal notranslate"><span class="pre">Population</span></code></p></li>
+<li><p><strong>Select the value you want to use to assign colours</strong>, in this case, it will be <code class="docutils literal notranslate"><span class="pre">total_pop</span></code></p></li>
 </ol>
 <figure class="align-default" id="symbology-of-variable-ranges">
 <a class="reference internal image-reference" href="../../_images/en_30.30.2_symbology_variable_ranges.png"><img alt="../../_images/en_30.30.2_symbology_variable_ranges.png" src="../../_images/en_30.30.2_symbology_variable_ranges.png" style="width: 550px;" /></a>
@@ -820,7 +820,7 @@ We will be using the same layer as for the choropleth map (see <a class="referen
 <li><p>Under <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Layer</span></code>, select the <code class="docutils literal notranslate"><span class="pre">NGA_Adm1_Pop</span></code>-layer. Click on <code class="docutils literal notranslate"><span class="pre">Run</span></code>.</p></li>
 <li><p>A new point layer called <code class="docutils literal notranslate"><span class="pre">Centroids</span></code> will appear in your layers panel. Open it’s styling panel and navigate to the symbology tab.</p></li>
 <li><p>Set the symbolisation method to <code class="docutils literal notranslate"><span class="pre">Graduated</span></code>.</p></li>
-<li><p>Under <strong>Value</strong>, select <code class="docutils literal notranslate"><span class="pre">Population</span></code>.</p></li>
+<li><p>Under <strong>Value</strong>, select <code class="docutils literal notranslate"><span class="pre">total_pop</span></code>.</p></li>
 <li><p>Change the <strong>Method</strong> from <code class="docutils literal notranslate"><span class="pre">Colour</span></code> to <code class="docutils literal notranslate"><span class="pre">Size</span></code>.</p></li>
 <li><p>Click on <code class="docutils literal notranslate"><span class="pre">Classify</span></code>.</p></li>
 <li><p><em>Optional</em>: Change the Colour and Transparency of the Circles.</p></li>
@@ -849,7 +849,7 @@ We can use symbology to <strong>show the difference between features</strong> in
 <section id="setting-different-point-symbols-for-different-features">
 <h4>Setting different point symbols for different features<a class="headerlink" href="#setting-different-point-symbols-for-different-features" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple">
-<li><p>From your shapefile folder, <strong>drag the ACLED security incidents shapefile onto your map</strong></p></li>
+<li><p>Download the <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/follow_along/NGA_ACLED_security_incidents.zip">ACLED security incidents geopackage</a> and load it into your QGIS-project. It is a point layer with each point indicating a distinct security incident.</p></li>
 <li><p>Open the <code class="docutils literal notranslate"><span class="pre">Symbology</span> <span class="pre">tab</span></code> for that layer and choose <code class="docutils literal notranslate"><span class="pre">Categorized</span></code> instead of Single Symbol.</p></li>
 </ol>
 <div class="admonition note">

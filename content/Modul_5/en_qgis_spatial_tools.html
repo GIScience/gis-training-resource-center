@@ -213,7 +213,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_working_with_styles.html">Exporting and Importing Styles</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_symbology_raster.html">Symbology for raster data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_map_design_2.html">Map Design: The Print layout</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_map_examples.html">Examples of Good Map Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_map_examples.html">Good Map Design &amp; Semiological Errors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_modul_4_exercises.html">Exercises Module 4</a></li>
 </ul>
 </li>
@@ -578,7 +578,47 @@ document.write(`
 <h1>Spatial Geodataprocessing<a class="headerlink" href="#spatial-geodataprocessing" title="Permalink to this heading">#</a></h1>
 <section id="introduction">
 <h2>Introduction:<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
-<p>Spatial Geodataprocessing uses spatial information to extract new meaning from GIS data. This data processing is particularly important in humanitarian work and planning aid operations. For instance, the overlay operation <strong>Clip</strong> can be employed to extract specific areas of interest from multiple layers, allowing us to focus our attention where it is most needed. Similarly, the <strong>Dissolve</strong> operation allows us to simplify complex datasets, revealing broader trends and patterns that inform our decision-making process. Using <strong>Buffer</strong>, we can create zones around features to help identify vulnerable areas and plan evacuation routes in the event of a flooding event. Additionally, <strong>Spatial Joins</strong> can enrich datasets by incorporating additional information from related layers. They can be crucial for understanding the context of a crisis and tailoring our response accordingly. Finally, <strong>Spatial Selections</strong> enable us to target specific features based on their spatial relationship with other elements, facilitating focused interventions.</p>
+<p>Spatial Geodataprocessing uses spatial information to extract new meaning from GIS data.</p>
+<!---This data processing is particularly important in humanitarian work and planning aid operations. --->
+<p>Spatial geoprocessing uses the <strong>spatial relationships</strong> between data or their geometric representations. For example, the distance between two points or if a line is crossing a polygon. For example, in humanitarian aid, you might need to identify the best locations for distributing aid, assess flood risk areas, or plan evacuation routes.</p>
+<p>Spatial relationships describe how things are located in relation to one another. In humanitarian work, this helps answer critical questions like “Which communities are near a water source?” or “Which areas are isolated from health services?” We have already encountered <strong>spatial relationships</strong> in module 3 in the subchapter on <strong><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_data_queries.html#geometric-operators">geometrical operators</a></strong>. Geometrical operators explain the spatial relationship between geometries (see {numref}``).
+The table below describes spatial relationships and gives examples when these spatial relationships are relevant in humanitarian aid.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Spatial Relationship</strong></p></th>
+<th class="head"><p><strong>Description</strong></p></th>
+<th class="head"><p><strong><em>Humanitarian Example</em></strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Proximity</strong></p></td>
+<td><p>How close one thing is to another</p></td>
+<td><p><em>Find the nearest shelters to a displaced community</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Containment</strong></p></td>
+<td><p>Whether something is inside another area/polygon</p></td>
+<td><p><em>Identify which schools are within a specific conflict-affected zone</em></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Intersection</strong></p></td>
+<td><p>Identify geometric features that overlap</p></td>
+<td><p><em>Look for areas where damaged infrastructure overlaps with vulnerable populations</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Adjacency</strong></p></td>
+<td><p>Geometric features that share a point or a boundary</p></td>
+<td><p><em>Identify regions bordering a conflict zone that may be at risk of displacement</em></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Connectivity</strong></p></td>
+<td><p>How things are connected through networks such as roads, rivers, or even trade routes</p></td>
+<td><p><em>Map the shortest path between villages and hospitals to plan emergency evacuations</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Direction</strong></p></td>
+<td><p>Relative position, like north, south, east, west, or relative position to the flow of a river, for example</p></td>
+<td><p><em>Locate villages north of a river that are cut off due to flooding and inaccessibility of connecting bridges</em></p></td>
+</tr>
+</tbody>
+</table>
+<p>As with most other operations, QGIS uses algorithms that can be selected in the processing toolbox.</p>
+<p>For instance, the overlay operation <strong>Clip</strong> can be employed to extract specific areas of interest from multiple layers, allowing us to focus our attention where it is most needed. Similarly, the <strong>Dissolve</strong> operation allows us to simplify complex datasets, revealing broader trends and patterns that inform our decision-making process. Using <strong>Buffer</strong>, we can create zones around features to help identify vulnerable areas and plan evacuation routes in the event of a flooding event. Additionally, <strong>Spatial Joins</strong> can enrich datasets by incorporating additional information from related layers. They can be crucial for understanding the context of a crisis and tailoring our response accordingly. Finally, <strong>Spatial Selections</strong> enable us to target specific features based on their spatial relationship with other elements, facilitating focused interventions.</p>
 <figure class="align-default" id="module5-spatial-geodataprocessing">
 <a class="reference internal image-reference" href="../../_images/en_module5_spatial_geodataprocessing.PNG"><img alt="../../_images/en_module5_spatial_geodataprocessing.PNG" src="../../_images/en_module5_spatial_geodataprocessing.PNG" style="width: 75%;" /></a>
 <figcaption>

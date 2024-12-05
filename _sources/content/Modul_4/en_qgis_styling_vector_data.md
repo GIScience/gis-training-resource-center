@@ -120,7 +120,7 @@ When creating situational reports, you will frequently use administrative bounda
 
 ```{admonition} *Optional*: Now it's your turn
 
-You can follow along by downloading the [administrative boundaries of Nigeria]() by [OCHA Nigeria]()
+You can follow along by downloading the [administrative boundaries of Nigeria](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/follow_along/nga_adm_osgof_20190417.zip) by [OCHA Nigeria](https://data.humdata.org/dataset/cod-ab-nga)
 
 ```
 
@@ -197,11 +197,11 @@ displayed in graduated colours. In this exercise, we assign colours to Adm1 poly
 each State.
 
 
-1. Download the NGA_Adm1_Pop shapefile and save it in your shapefile folder
+1. Download the [NGA_Adm1_Pop shapefile](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/follow_along/NGA_adm1_pop.zip) and save it in your shapefile folder
 2. In QGIS, turn off the Adm1 and Adm2 layer, leaving only Adm0
 3. Drag the shapefile NGA_Adm1_Pop into your map
 4. Open its `Symbology` options and choose `Graduated`
-5. __Select the value you want to use to assign colours__, in this case, it will be `Population`
+5. __Select the value you want to use to assign colours__, in this case, it will be `total_pop`
 
 ```{figure} ../../fig/en_30.30.2_symbology_variable_ranges.png
 ---
@@ -264,7 +264,7 @@ Creating centroids in QGIS 3.36
 2. Under `Input Layer`, select the `NGA_Adm1_Pop`-layer. Click on `Run`.
 3. A new point layer called `Centroids` will appear in your layers panel. Open it's styling panel and navigate to the symbology tab.
 4. Set the symbolisation method to `Graduated`.
-5. Under __Value__, select `Population`.
+5. Under __Value__, select `total_pop`.
 6. Change the __Method__ from `Colour` to `Size`.
 7. Click on `Classify`. 
 8. *Optional*: Change the Colour and Transparency of the Circles. 
@@ -291,7 +291,7 @@ We can use symbology to __show the difference between features__ in the same lay
 
 #### Setting different point symbols for different features
 
-1. From your shapefile folder, __drag the ACLED security incidents shapefile onto your map__
+1. Download the [ACLED security incidents geopackage](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/follow_along/NGA_ACLED_security_incidents.zip) and load it into your QGIS-project. It is a point layer with each point indicating a distinct security incident.
 2. Open the `Symbology tab` for that layer and choose `Categorized` instead of Single Symbol.   
 
 ```{note} 

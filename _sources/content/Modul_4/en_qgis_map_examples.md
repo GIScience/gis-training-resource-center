@@ -1,4 +1,4 @@
-# Examples of Good Map Design
+# Good Map Design & Semiological Errors
 
 🚧This page on the training platform and the entire content is under ⚠️construction⚠️🚧
 
@@ -91,3 +91,74 @@ Infrastructure Map Kunduz Province
 ```
 -->
 
+## The Four Semiological Errors
+
+<!---ADD: Insert Image examples for these errors-->
+
+### 1. Proportional circles vs. solid colors
+
+```{caution}
+DO NOT represent __quantitative__ data with a __solid colour__.
+```
+
+This is one of the most common mistakes in mapping. While this representation is graphically appealing, it is still false and distracts from the message of the map.
+
+It is a mistake because:
+
+- You lose the __order relationship between the data__ (a circle can be twice as big as another one, a colour cannot be "twice as dark")
+- Countries with a large surface area stand out visually (e.g. Russia in the example below)
+- We are trying to represent __data that has nothing to do with the area of a country__
+
+
+<!---Add example-->
+
+### 2. Color gradient vs. distinct color palette
+
+```{caution}
+DO NOT use a __separate__ colour palette to represent __ordered entities__
+```
+
+A representation that "feels right" because it seems logical that a "low" rate would be represented differently than a "high" rate.
+
+It is a mistake because:
+
+- By using a differentiating colour variable, __you lose the ordinal relationship between entities__. Instead, a __gradient of the same colour__ that should be used.
+- Different colours are used to differentiate between distinct entities.
+
+### 3. Gradient in a single colour vs. Gradient between two colours
+
+```{Caution}
+DO NOT use a gradient across two different colours for data that is always positive (or negative).
+```
+
+This is a mistake that often occurs because our brains are used to prioritising certain colours, especially green to red, or blue to red. We must remember that __if our values do not have a meaningful zero point, we must stay in the same single colour and use different shades of that colour to indicate different values.
+<!--What about height?-->
+
+A gradient between two colours can be used when it is necessary to show a gradation that can go from negative to positive. As for temperatures, it makes sense to distinguish negative values (in shades of blue for example) and positive values (in shades of red).
+
+It is a mistake because:
+
+- By choosing different colours for values that are linked to each other, our eyes perceive a difference between the elements, and not an order.
+- Darker colours stand out more than lighter colours, and can be perceived as more important.
+- The map will send a message of divergence, of opposition between certain values, when we are simply trying to represent a hierarchy between values
+- In this way, the colour itself directly indicates information about the trend (positive/negative or increasing/decreasing).
+
+### 4. Limited geometric symbols vs. complex icons and symbols
+
+```{Caution}
+DO NOT use __too many symbols__ in a thematic map
+```
+
+Incorporating a multitude of symbols (and data) for a informative map is a common desire. However, too many symbols can __overload the map__ and __reduce the readability__ of the map. Using too many symbols (especially geometric ones) can make it difficult to read and understand the map.  
+__The eye can easily distinguish between four to five different symbols. Beyond that, it is difficult to tell elements apart. However, This is a less serious error because it does not convey false information on the map.
+
+It is a mistake because:
+
+- It complicates the map and limits its impact.
+- Sometimes you are forced to represent several symbols, so you must be careful about overlapping points and overloading the map.
+
+<!-- ![](/../fig/en_modifiable_areal_unit_problem_example.png) -->
+
+---
+
+Now that we have covered what to keep in mind when designing maps, let's take a look at how to create maps with the print layout composer in QGIS.
