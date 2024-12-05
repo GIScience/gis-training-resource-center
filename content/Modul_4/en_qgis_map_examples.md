@@ -1,14 +1,10 @@
 # Good Map Design & Semiological Errors
 
-🚧This page on the training platform and the entire content is under ⚠️construction⚠️🚧
+🚧This page on the training platform is under ⚠️construction⚠️🚧
 
 In this chapter we will discuss well designed maps and give examples of how to recreate specific design elements in QGIS. A second part of this chapter will focus on common mistakes and good practices when designing maps.
 
-<!--TO DO:  
-Insert Overview  
-Insert links to the tutorial content/wiki
-Insert examples in the 4 semiological errors part
--->
+
 
 In this section, we will present some well-designed maps and discuss how to create similar maps. If you need further examples for good map design, check out these websites/repositories:
 
@@ -91,7 +87,7 @@ Infrastructure Map Kunduz Province
 ```
 -->
 
-## The Four Semiological Errors
+## Common Semiological Errors
 
 <!---ADD: Insert Image examples for these errors-->
 
@@ -160,5 +156,3 @@ It is a mistake because:
 <!-- ![](/../fig/en_modifiable_areal_unit_problem_example.png) -->
 
 ---
-
-Now that we have covered what to keep in mind when designing maps, let's take a look at how to create maps with the print layout composer in QGIS.
