@@ -83,7 +83,7 @@ __Wrap up:__
 
 :::{card} 
 :class-card: sd-text-justify sd-rounded-3 sd-border-2
-:link: 
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_7/Module_3_Exercise_7_Georeferencing.zip 
 
 __Click [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_7/Module_3_Exercise_7_Georeferencing.zip) to download the datasets for this exercise.__
 
