@@ -2,19 +2,10 @@
 
 ## Introduction:
 
-Spatial Geodataprocessing uses spatial information to extract new meaning from GIS data. 
-<!---This data processing is particularly important in humanitarian work and planning aid operations. --->
-Spatial geoprocessing uses the __spatial relationships__ between data or their geometric representations.
-They can be crucial for understanding the context of a crisis and tailoring our response accordingly. 
+Spatial processing uses spatial information to extract new meaning from GIS data. It does so by using the __spatial relationship__ of different layers or features. Spatial relationships describe how things are located in relation to one another. In humanitarian work, this helps answer critical questions like “Which communities are near a water source?” or “Which areas are isolated from health services?”. Or, we mght want to identify the best locations for distributing aid, assess flood risk areas, or plan evacuation routes.
 
-For example, the distance between two points or if a line is crossing a polygon. For example, in humanitarian 
-aid, you might need to identify the best locations for distributing aid, assess flood risk areas, or plan evacuation routes. 
-
-Spatial relationships describe how things are located in relation to one another. In humanitarian work, this helps 
-answer critical questions like “Which communities are near a water source?” or “Which areas are isolated from health services?”. 
 We have already encountered spatial relationships in module 3 in the subchapter on __[geometrical operators](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_data_queries.html#geometric-operators)__— also called geometrical predicates in QGIS. 
 The table below describes spatial relationships and gives examples when these spatial relationships are relevant in humanitarian aid. 
-
 
 | __Spatial Relationship__ | __Description__ | __*Humanitarian Example*__ |
 | ------------------------ | --------------- | -------------------------- |
@@ -25,19 +16,7 @@ The table below describes spatial relationships and gives examples when these sp
 | __Connectivity__         | How things are connected through networks such as roads, rivers, or even trade routes | *Map the shortest path between villages and hospitals to plan emergency evacuations* |
 | __Direction__            | Relative position, like north, south, east, west, or relative position to the flow of a river, for example | *Locate villages north of a river that are cut off due to flooding and inaccessibility of connecting bridges* | 
 
-
-In general, spatial processing in QGIS works 
-In this chapter, we will first explore __spatial selections__ and __spatial joins__. Spatial joins, 
-for example, allow us to import attributes from one layer to another on the basis of their location 
-in relation to geofeatures in another layer. These Spatial relationships can also be used to select 
-features of a layer. Furthermore, we will go over the spatial processing tools __buffer__, __clip__, 
-and __dissolve__. These operations allow us to combine geometries from two layers in various ways (see 
-{numref}`module5_spatial_geodataprocessing`).
-
-<!--FIX DUPLICATION-->
-
-QGIS offers a variety of spatial processing tools that we can use to analyse and create new insights using these spatial relationships. For instance,
-<!--- __Spatial Selections__ enable us to target specific features based on their spatial relationship with other elements, facilitating focused interventions.-->
+QGIS offers a variety of spatial processing tools that we can use to analyse and create new insights using these spatial relationships. For instance:
 - __Spatial Joins__ let us join attribute values from one layer to another based on their spatial relationship. This enables us to enrich datasets and 
 incorporate additional information from  layers, which can help us understand a situation.
 - The overlay operation __Clip__ can be employed to extract specific areas of interest from multiple layers, allowing us to focus our attention where it is most needed.
@@ -53,6 +32,13 @@ name: module5_spatial_geodataprocessing
 ---
 Different spatial geoprocessing tools. Source: Adapted from [Saylor Academy](https://saylordotorg.github.io/text_essentials-of-geographic-information-systems/s11-geospatial-analysis-i-vector-o.html)
 ```
+
+In this chapter, we will first explore __spatial joins__. Spatial joins, 
+for example, allow us to import attributes from one layer to another on the basis of their location 
+in relation to geofeatures in another layer. These Spatial relationships can also be used to select 
+features of a layer. Furthermore, we will go over the spatial processing tools __buffer__, __clip__, 
+and __dissolve__. These operations allow us to combine geometries from two layers in various ways (see 
+{numref}`module5_spatial_geodataprocessing`).
 
 <!--
 
@@ -90,22 +76,40 @@ Screenshot of the Select by location tool
 
 ## Spatial joins
 
-Joins are ways to combine two different data layers.In general, there are two types of joins: __non-spatial joins__ and __spatial joins__. Non-spatial joins rely on specific attribute values, which are used as ID-fields, to combine two layers. These are covered in the chapter [non-spatial processing tools](/content/Modul_5/en_qgis_non_spatial_tools.md) in this module. 
-Sometimes we want to combine information from different layers that don't share a common value. In these cases, we can use spatial joins, which let us join data based on location rules. 
+Joins are ways to combine two different data layers.In general, there are two types of joins: 
+__non-spatial joins__ and __spatial joins__. Non-spatial joins rely on specific attribute values, 
+which are used as ID-fields, to combine two layers. These are covered in the chapter 
+"[Non-spatial processing tools](/content/Modul_5/en_qgis_non_spatial_tools.md)" in this module. 
+Sometimes we want to combine information from different layers that don't share a common value. 
+In these cases, we can use spatial joins, which let us join data based on location rules. 
+Spatial joins in QGIS enhance the attributes of the input layer by adding additional information from the join layer, relying on their
+__spatial relationship__. This process enriches your data by incorporating relevant details from one layer into another based on their 
+geographical associations. In QGIS, a spatial join creates a new layer by comparing the features of one layer to another, depending on 
+their spatial relationship. 
+
 
 For example:
 
 - Any point __within__ a polygon should inherit attributes of the polygon
 - Only keep regions which __contain__ an airport.
 
-These spatial joins rely on the geometrical operators. In the tabs below, you can find the different geometrical operators available in QGIS and how they affect the data processing. 
 
-<!---CHECK FOR DUPLICATION
-Spatial joins in QGIS enhance the attributes of the input layer by adding additional information from the join layer, relying on their
-__spatial relationship__. This process enriches your data by incorporating relevant details from one layer into another based on their 
-geographical associations. In QGIS, a spatial join creates a new layer by comparing the features of one layer to another, depending on 
-their spatial relationship. 
--->
+::::{card}
+__Humanitarian Example:__
+^^^
+
+```{figure} /fig/en_flood_building_map.png
+---
+name: test
+width: 450 px
+---
+A building footprint layer combined with a simulated flood extent layer. By joining them, we can assess which houses are at risk to be damaged by flooding (Source: Merz, B. & Thieken, Annegret & Gocht, M.. (2007). Flood Risk Mapping At The Local Scale: Concepts and Challenges. 10.1007/978-1-4020-4200-3_13.).
+```
+
+
+::::
+
+Spatial joins rely on the geometrical operators. In the tabs below, you can find the different geometrical operators available in QGIS and how they affect the data processing. 
 
 
 ::::{tab-set}
@@ -231,7 +235,7 @@ The different colours for the points indicate that they are located in a differe
 
 ### More spatial join-tools in QGIS
 
-By default, QGIS provides __three different tools__ to perform spatial joins. The first, and the most common one, is the tool 
+By default, QGIS provides three different tools to perform spatial joins. The first, and the most common one, is the tool 
 __"Join attributes by location"__. Furthermore, there are also the tools __"Join attributes by location (summary)"__ and 
 __"Join attributes by nearest"__.
 
@@ -296,12 +300,7 @@ A detailed description of the functions and settings of these tools can be found
 
 :::
 
-
-
-:::::{dropdown} Using "Join Attributes by Location (Summary)"
-
-
-__Exercise 2: Calculate sum of affected population and flooded area for the Area of interest__
+### Exercise: Calculate sum of affected population and flooded area for the Area of interest__
 
 
 In the aftermath of flooding events, data on the affected population and the extent of flooding is crucial. 
@@ -329,10 +328,9 @@ __Join attributes by location (summary)__ tool.
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_spatial_join.mp4"></video>
 ````
 
-:::::
 
 
-## Overlay Operations (Clip, Dissolve, Buffer, Intersect)
+## Overlay Operations (Clip, Dissolve, Buffer)
 
 Overlay operations allow us to combine geometries of two layers in different ways (see {numref}`overlay_operations`). The difference to spatial 
 joins is that the geometries are transformed in the process. 
@@ -345,8 +343,8 @@ width: 500 px
 Visual representation of different overlay operations. 
 ```
 
-Overlay operations include __Clipping, Buffering, and Dissolving__. In the next subchapters, we will take a look at each of these overlay operations 
-in turn and provide some examples for humanitarian work
+Overlay operations include __Clipping, Buffering, and Dissolving__. In the next subchapters, we will take a 
+look at each of these overlay operations in turn and provide some examples for humanitarian work.
 
 ### Clip
 
@@ -391,18 +389,6 @@ in order to remove data we are not interested in.
 1. Load the OSM roads data from the HOT Export tool (part of the Humanitarian OpenStreetMap Team) [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Spatial_geodataprocessing/hotosm_sdn_roads_lines_shp.zip) 
 as a new layer: __Road_infrastructure_Sudan.geojson__. 
 
-
-<!--- CAN BE REMOVED OR SHOULD WE SHOW HOT OSM EXPORT TOOL?
-
-```{figure} /fig/en_screenshot_hot_export_tool.PNG
----
-width: 550 px
-name: en_screenshot_hot_export_tool
----
-Screenshot of the HOT Export tool used to download your OSM data
-```
---->
-
 2. Filter the layer by using the __query builder__ to only show __primary and residential roads__ ("highway" = 'primary' OR "highway" = 'residential')
 3. Load the admin1 layer for Sudan which contains the district White Nile, __ne_10m_admin_1_Sudan_White_Nile.geojson__. They are downloaded from [Natural Earth Data](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/).
 4. Select the roads layer and open the __Clip__ dialogue from `Vector` > `Geoprocessing Tools`
@@ -413,6 +399,8 @@ Screenshot of the HOT Export tool used to download your OSM data
 ````{dropdown} Solution: Clipping a roads layer to administrative boundaries
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_clip_roads.mp4"></video>
 ````
+
+<!--GDAL Operators are needed?--->
 
 In addition to the standard QGIS operation __Clip__, there are two other more advanced tools for performing clipping processes. These tools are GDAL operations, which enable the definition of the clipping extent. This extent can be either a specific area or a mask layer. The second option is quite similar to the standard clipping process provided by QGIS.
 
@@ -490,22 +478,19 @@ name: buffer_dissolve
 Buffer zones with dissolved (left) and with intact boundaries (right) showing overlapping areas <br /> (Source: [QGIS Documentation](https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve), Version 3.28)
 ```
 
-
-In the section on __buffers__ we will be using the __dissolve-tool__.
+In the next section on __buffers__ we will be using the __dissolve-tool__.
 
 ### Buffer
 
-Buffering creates zones of predetermined distances around geometric features. These buffers surround the input vector features. 
-The Buffer-tool in QGIS creates a new polygon layer with these zones.This buffer zone is typically uniform and extends outward 
-from the original features, making it useful for various spatial analyses and mapping applications. Buffers can be created around points, lines, 
-and polygons as shown in {numref}`buffering_options`.
+Buffering creates zones of predetermined distances around geometric features as a new polygon layer. These buffers surround the input vector features. This buffer zone is typically uniform and extends outward 
+from the original input features, making it useful for various spatial analyses and mapping applications. Buffers can be created around points, lines, and polygons as shown in {numref}`buffering_options`.
 
-Examples for such analyses could be:
+Examples for analyses using buffers could be:
 - Creating of buffer zones to protect the environment
 - Analysing greenbelts around residential area
 - Creating risk areas for natural disasters. 
 
-:::{card}
+:::{card} 
 __Humanitarian Example:__
 ^^^
 *We need to assess which areas live close enough to clean water sources so the population can easily reach them by walking. 
@@ -524,10 +509,41 @@ Different kinds of buffer zones <br /> (Adapted after [QGIS Documentation](https
 There are several variations in buffering. The __buffer distance__ or __buffer size can vary__ according to the numerical values provided. 
 The numerical values have to be defined in map units according to the Coordinate Reference System (CRS) used with the data. 
 
-```{Attention}
-If you are trying to make a buffer on a layer with a Geographical Coordinate System, processing will warn you and suggest to 
-reproject the layer to a __metric Coordinate System__.
+````{Attention}
+
+```{figure} /fig/en_dist_in_degrees_error_msg.png
+---
+width: 450 px
+name: dist_degree_error_message
+---
+The error message QGIS displays when performing distance based calculations in a geographic coordinate system
 ```
+If...
+- You get a projection warning message 
+- Your layer(s) don't show up
+- Layers look odd ‒ e.g. squashed
+- Error message "using degrees" when using distances (as shown in {numref}`dist_degree_error_message`)
+... it might be a [projection](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_projections.html) issue.
+
+To solve it, try...
+
+- Changing the CRS for the layer
+- Reprojecting the layer
+
+For example, if you are trying to make a buffer on a layer with a Geographical Coordinate System, QGIS will warn you and suggest to reproject the layer to a __metric Coordinate System__. This is because when you are using a metric coordinate system, the algorithm will use degrees to calculate the distance of the buffer size. However, the distance between degrees are not uniform and depend on the latitude (see {numref}`distance_longitudes`)
+
+```{figure} /fig/en_dist_longitudes.png
+---
+name: distance_longitudes
+width: 450 px
+---
+This image illustrates this – 10 degrees of longitude at the equator is 1,113km, but 10 degrees of
+longitude at 70 degrees latitude is only 381km. (Source: [Ricky Angueria](https://x.com/RickyAngueira/status/1594030866132410368)).
+```
+
+This is why you’ll need to convert to a local/projected coordinate system to be able to specify distances in km/miles (e.g. when using the buffer tool).
+
+````
 
 ### Exercise: Create 10km buffer around health centres
 
@@ -566,11 +582,11 @@ They are also downloaded and adapted from [Natural Earth Data](https://www.natur
 This process creates a new point layer, with points representing the centroids of the geometries of the input layer. 
 
 The centroid is a single point that shows the middle of all the parts of a feature. It can be outside the feature or on each 
-part of it. An example would be a point, representing a polygon. 
+part of it.
 
 The attributes of the points in the output layer are the same as for the original features.
 
-Centroids can be used in spatial operations such as __spatial joins__ to represent a polygon as points.
+Centroids are especially useful when creating [graduated symbols maps](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_styling_vector_data.html#creating-a-graduated-symbols-map), as the size of the point symbols can be graded using the graduated classification method.
 
 ```{figure} /fig/en_centroids_screenshot.png
 ---
