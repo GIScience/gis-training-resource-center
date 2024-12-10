@@ -1,4 +1,4 @@
-# Exercises Module 3 - Basic GIS Operations
+# Exercises for Module 3
 
 __🔙[Back to Homepage](/content/intro.md)__
 
