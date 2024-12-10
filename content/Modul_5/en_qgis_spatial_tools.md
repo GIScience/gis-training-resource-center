@@ -1,8 +1,8 @@
-# Spatial data processing in QGIS
+# Spatial data processing
 
 ## Introduction:
 
-Spatial processing uses spatial information to extract new meaning from GIS data. It does so by using the __spatial relationship__ of different layers or features. Spatial relationships describe how things are located in relation to one another. In humanitarian work, this helps answer critical questions like “Which communities are near a water source?” or “Which areas are isolated from health services?”. Or, we mght want to identify the best locations for distributing aid, assess flood risk areas, or plan evacuation routes.
+Spatial processing uses spatial information to extract new meaning from GIS data. It does so by using the __spatial relationship__ of different layers or features. Spatial relationships describe how things are located in relation to one another. In humanitarian work, this helps answer critical questions like “Which communities are near a water source?” or “Which areas are isolated from health services?”. Or, we might want to identify the best locations for distributing aid, assess flood risk areas, or plan evacuation routes.
 
 We have already encountered spatial relationships in module 3 in the subchapter on __[geometrical operators](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_data_queries.html#geometric-operators)__— also called geometrical predicates in QGIS. 
 The table below describes spatial relationships and gives examples when these spatial relationships are relevant in humanitarian aid. 
@@ -76,7 +76,7 @@ Screenshot of the Select by location tool
 
 ## Spatial joins
 
-Joins are ways to combine two different data layers.In general, there are two types of joins: 
+Joins are ways to combine two different data layers. In general, there are two types of joins: 
 __non-spatial joins__ and __spatial joins__. Non-spatial joins rely on specific attribute values, 
 which are used as ID-fields, to combine two layers. These are covered in the chapter 
 "[Non-spatial processing tools](/content/Modul_5/en_qgis_non_spatial_tools.md)" in this module. 
@@ -97,13 +97,16 @@ For example:
 ::::{card}
 __Humanitarian Example:__
 ^^^
+*We have a flood depth model and we want to find out which buildings are flooded under this scenario. We can find this out by performing a spatial join to add the flood depth to the polygon layer with the houses*
 
-```{figure} /fig/en_flood_building_map.png
+*The resulting map could look something like this* 
+
+```{figure} /fig/en_flood_damage_assessement_libya.png
 ---
-name: test
+name: flood damage assessement
 width: 450 px
 ---
-A building footprint layer combined with a simulated flood extent layer. By joining them, we can assess which houses are at risk to be damaged by flooding (Source: Merz, B. & Thieken, Annegret & Gocht, M.. (2007). Flood Risk Mapping At The Local Scale: Concepts and Challenges. 10.1007/978-1-4020-4200-3_13.).
+A building footprint layer combined with a flood extent layer. By joining them, we can assess which houses are at risk to be damaged by flooding (Source: REACH).
 ```
 
 
