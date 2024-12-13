@@ -1,4 +1,4 @@
-# Exercises Module 1 - Introduction to GIS
+# Exercises for Module 1
 
 __🔙[Back to Homepage](/content/intro.md)__
 

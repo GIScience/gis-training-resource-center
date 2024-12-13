@@ -12,6 +12,21 @@ information into a digital format, facilitating more efficient data manipulation
 of interpreting images or paper maps. 
 
 
+:::{admonition} Digitisation in humanitarian work
+:class: tip
+
+If you want to know how community mapping and digitisation can help improve the resilience of communities and facilitate humanitarian work, take a look at Paul Knight's blogpost [“This is the first time this community is on a map…” — Digital Community Mapping in Nigeria](https://medium.com/digital-and-innovation-at-british-red-cross/first-time-this-community-has-been-on-a-map-nigeria-f592906b7be1)
+
+:::
+
+<!---:::{card}
+__Humanitarian Example:__
+^^^
+*Digitisation, and Community Mapping, is crucial to improve the resilience of communities and the effectiveness of humanitarian work. If you want to know how community mapping has helped develop vulnerability and capacity assessments, read Paul Knight blog post on [“This is the first time this community is on a map…” — Digital Community Mapping in Nigeria](https://medium.com/digital-and-innovation-at-british-red-cross/first-time-this-community-has-been-on-a-map-nigeria-f592906b7be1).*
+
+:::
+-->
+
 ```{figure} /fig/en_digitisation_concept.png
 ---
 width: 900px
@@ -21,6 +36,8 @@ name: Digitisation with GIS Concept
 The concept of digitisation within GIS. Source: HeiGIT
 ```
 
+
+
 ##  Digitising in QGIS
 
 In QGIS,digitisation involves tracing features such as points, lines, or polygons directly on the map canvas to 
@@ -28,13 +45,7 @@ represent geographic elements like buildings, roads, or land parcels. Additional
 feature during digitization, enabling further analysis and integration with other geospatial data. This digitized data 
 becomes a valuable asset for spatial analysis and mapping.
 
-:::{admonition} Digitisation in humanitarian work
-:class: tip
 
-If you want to know how community mapping and digitisation can help improve the resilience of communities and facilitate humanitarian work, take a look at Paul Knight's blogpost [“This is the first time this community is on a map…” — Digital Community Mapping in Nigeria](https://medium.com/digital-and-innovation-at-british-red-cross/first-time-this-community-has-been-on-a-map-nigeria-f592906b7be1)
-
-
-:::
 
 :::{card}
 :class-card: sd-text-justify sd-text-black sd-rounded-3 sd-border-2
@@ -492,6 +503,7 @@ width: 750 px
 Building Damage Assessment in Paikgachha Upazila, Khulna District, Khulna Division, Bangladesh as of 4 June 2024 (Source: [Int'l Charter, UNOSAT](https://reliefweb.int/map/bangladesh/building-damage-assessment-paikgachha-upazila-khulna-district-khulna-division-bangladesh-4-june-2024-imagery-analysis-4-june-2024-published-7-june-2024-v1))
 ```
 
+:::
 
 ## Spatial Digitisation Errors in QGIS
 

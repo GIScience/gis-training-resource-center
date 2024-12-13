@@ -1,4 +1,4 @@
-# Exercises Module 2 - Working with Geodata
+# Exercises for Module 2
 
 __🔙[Back to Homepage](/content/intro.md)__
 

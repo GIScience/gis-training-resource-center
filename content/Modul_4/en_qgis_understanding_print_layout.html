@@ -1,0 +1,1047 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Understanding the Print Layout Composer &#8212; GIS Resource Training Center</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/Modul_4/en_qgis_understanding_print_layout';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Good Map Design &amp; Semiological Errors" href="en_qgis_map_examples.html" />
+    <link rel="prev" title="Map Design: The Print layout" href="en_qgis_map_design_2.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-light" alt="GIS Resource Training Center - Home"/>
+    <script>document.write(`<img src="../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-dark" alt="GIS Resource Training Center - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to the IFRC Network GIS Training Platform
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 1</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Modul_1/en_module_1_overview.html">Introduction to GIS</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_1/en_qgis_theorie.html">What is GIS?</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../Modul_1/en_qgis_installation.html">Setting up</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_1/en_qgis_start.html">Getting started with QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_1/en_qgis_modul_1_exercises.html">Exercises for Module 1</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 2</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Modul_2/en_module_2_overview.html">Working with Geodata</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_2/en_qgis_geodata_concept.html">Introduction to geodata and layers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_2/en_qgis_projections.html">Projections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_2/en_qgis_basic_data_processing.html">Geodata management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_2/en_qgis_attribute_table.html">Attribute Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_2/en_data_sources.html">Data sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_2/en_qgis_basemap.html">Basemaps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_2/en_qgis_modul_2_exercises.html">Exercises for Module 2</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 3</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Modul_3/en_module_3_overview.html">Basic GIS Operations</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_3/en_qgis_digitalisation.html">Digitisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_3/en_qgis_data_classification.html">Geodata Classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_3/en_qgis_data_queries.html">Geodata Selection and Queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_3/en_qgis_georeferencing.html">Georeferencing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_3/en_qgis_modul_3_exercises.html">Exercises for Module 3</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 4</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="en_module_4_overview.html">Visualisation of Geodata and Map Making</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_map_design_I.html">Symbology and Colours</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_styling_vector_data.html">Styling Vector Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_labels_vector.html">Labels for vector data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_working_with_styles.html">Exporting and Importing Styles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_symbology_raster.html">Symbology for raster data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_map_design_2.html">Map Design: The Print layout</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Understanding the Print Layout Composer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_map_examples.html">Good Map Design &amp; Semiological Errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_modul_4_exercises.html">Exercises for Module 4</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 5</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Modul_5/en_module_5_overview.html">Intermediate GIS Operations</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_5/en_qgis_spatial_tools.html">Spatial data processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_5/en_qgis_non_spatial_tools.html">Non-Spatial processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_5/en_qgis_modul_5_exercises.html">Exercises for Module 5</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 6</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Modul_6/en_module_6_overview.html">Data Analysis with QGIS</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_6/en_qgis_data_analysis_theorie.html">Data Analysis with QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_6/en_qgis_common_data_analysis.html">Data Analysis in the Humanitarian Sector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_6/en_qgis_modul_6_exercises.html">Exercises Module 6 - Data Analysis with QGIS</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 7</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Modul_7/en_module_7_overview.html">Automation with QGIS</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_7/en_qgis_automation_theory.html">Automation theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_7/en_qgis_modul_7_ex1.html">Exercises 1: Automatisation</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 8</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Modul_8/en_module_8_overview.html">Remote Sensing and Raster Data</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_8/en_qgis_remote_sensing_raster_theorie.html">Remote Sensing and Raster data theory 🛰️</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_8/en_qgis_remote_sensing_theory.html">Introduction to Remote Sensing and Remote Sensing Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_8/en_qgis_modul_8_ex1.html">Rasterdata Exercise 1: Basic Assessment of Flood Exposure in the Indus Basin in Pakistan</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 9</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Modul_9/en_module_9_overview.html">Network Analysis</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_9/en_qgis_network_analysis_theory.html">Spatial Network Analysis Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_9/en_qgis_openrouteservice_tools.html">Plugin: Openrouteservice (ORS) tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_9/en_qgis_centrality.html">Network centrality measures and its application in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_9/en_qgis_modul_9_exercises.html">Exercises Module 9: Network Analysis</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Wiki</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_qgis_basics_wiki.html">QGIS Basics</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_installation_wiki.html">QGIS installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_interface_wiki.html">QGIS Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_projects_folder_structure_wiki.html">Projects and Folder Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_projections_wiki.html">Projections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_basemaps_wiki.html">Basemaps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_plugins_wiki.html">Plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_data_sources_wiki.html">Data sources</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_geodata_wiki.html">Geodata</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_geodata_types_wiki.html">Types of Geodata</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_import_geodata_wiki.html">Geodata Import in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_OpenStreetMap_wiki.html">OpenStreetMap (OSM) Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_layer_concept_wiki.html">Layer Concept</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_attribute_table_wiki.html">Attribute Table in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_digitalization_wiki.html">Digitisation</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_data_classification_wiki.html">Geodata Classification</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_single_symbol_wiki.html">Single symbol classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_categorized_wiki.html">Categorized classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_graduated_wiki.html">Graduated classification</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_geoprocessing_wiki.html">Geoprocessing</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_queries_wiki.html">Spatial and Non-spatial queries</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_spatial_queries_wiki.html">Spatial Queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_non_spatial_queries_wiki.html">Non-Spatial Queries</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_table_functions_wiki.html">Table function</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_joins_wiki.html">Joins</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_spatial_joins_wiki.html">Spatial Joins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_non_spatial_joins_wiki.html">Non-Spatial Joins</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_raster_wiki.html">Raster</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_raster_basic_wiki.html">Basic Raster operations</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_automatisation_wiki.html">Automatisation in QGIS</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_model_builder_wiki.html">Model Builder</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_representation_wiki.html">Map making and visualisation in QGIS</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_visualisation_wiki.html">Visualisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_map_making_wiki.html">Map making Wiki</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_common_errors_and_Issues.html">QGIS common errors and issues <!-- omit from toc --></a></li>
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">GIS in Anticipatory Action</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_drought_trigger_somalia.html">QGIS Trigger Workflow for Somalia</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_risk_assessment_plugin.html">Risk Assessment QGIS Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_historical_impact_assessment_sudan.html">Historical Impact Assessment (HIA) for Flood in Sudan</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_GIS_AA_exercises.html">Exercises- GIS in Anticipatory Action</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Mobile Data Collection</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Mobile_Data_collection/en_SMT.html">Sketch Map Tool</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_training.html">Sketch Map Tool Training</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Trainers corner</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/en_TOT_intro.html">Train of trainers introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/en_how_to_training.html">How to plan a whole GIS Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/en_training_graphical_outline.html">Training Agenda and Handout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/en_training_day_structure.html">How to plan and structure a GIS Training Session</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/en_how_to_teach_GIS.html">How to teach GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/en_how_to_assessment.html">Assessments in GIS Training: A Guide</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../About/about_1.html"><strong>Welcome at the GIS Training Resource Center!</strong></a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Glossary</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Glossary/en_glossary_1.html">Glossary (Draft)</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center/issues/new?title=Issue%20on%20page%20%2Fcontent/Modul_4/en_qgis_understanding_print_layout.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/content/Modul_4/en_qgis_understanding_print_layout.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Understanding the Print Layout Composer</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-elements-to-the-print-layout">Adding Elements to the Print Layout</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-a-new-map">Adding a new map</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-a-title-or-a-text-box">Adding a title or a text box</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-an-image-or-logo">Adding an image or logo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-a-legend">Adding a legend</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-a-scale-bar">Adding a scale bar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-an-overview-map">Adding an overview map</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exporting-the-print-layout">Exporting the print layout</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map-templates">Map Templates</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-atlas-function-automatic-map-generation">The Atlas function (automatic map generation)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generating-an-atlas">Generating an Atlas</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="understanding-the-print-layout-composer">
+<h1>Understanding the Print Layout Composer<a class="headerlink" href="#understanding-the-print-layout-composer" title="Permalink to this heading">#</a></h1>
+<figure class="align-default" id="new-print-layout">
+<img alt="../../_images/en_30.30.2_understanding_the_print_layout_composer.png" src="../../_images/en_30.30.2_understanding_the_print_layout_composer.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 124 </span><span class="caption-text">The interface of the Print Layout Composer</span><a class="headerlink" href="#new-print-layout" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p><strong>Layout Settings</strong> (Add pages, Export Map, manage panels)</p></li>
+<li><p><strong>Dialer Tools</strong> (Save, New, Duplicate, Add items from template, Save template)</p></li>
+<li><p><strong>Navigation bar</strong> (Zoom, Refresh, Lock/Unlock elements)</p></li>
+<li><p><strong>Toolbar</strong> (Zoom, Select, Move in Map, Add new map/image/text/legend/scale/shape/…)</p></li>
+<li><p><strong>Feature Panel</strong>: Displays the elements added to the print layout</p></li>
+<li><p><strong>Advanced Options</strong>: Customise each element of the layer</p></li>
+</ol>
+<p>The print layout manager also works with toolbars (on the left side of the screen), where you can select different tools (e.g. to add images) and panels (on the right side of the screen), where you can change the settings of the tools or the elements you have added to the map.</p>
+<p>First of all, you should always set the size of your map:</p>
+<ul class="simple">
+<li><p>Right-click on the blank map &gt; <code class="docutils literal notranslate"><span class="pre">Page</span> <span class="pre">Properties</span></code></p></li>
+<li><p>Choose <strong>the size of your document</strong> (A4, A3, A2). A4 and A3 are the most commonly used sizes for maps.</p></li>
+<li><p>Choose the orientation (Landscape or Portrait).</p></li>
+</ul>
+<section id="adding-elements-to-the-print-layout">
+<h2>Adding Elements to the Print Layout<a class="headerlink" href="#adding-elements-to-the-print-layout" title="Permalink to this heading">#</a></h2>
+<section id="adding-a-new-map">
+<h3>Adding a new map<a class="headerlink" href="#adding-a-new-map" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Add a new map by clicking on the <img alt="" src="../../_images/30.30.2_print_layout_insert_map_icon.png" /> <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">map</span></code>-button on the <strong>toolbar on the left</strong> and drag a rectangle on the map canvas.</p></li>
+<li><p>To move the map on the canvas, simply <strong>select the map</strong> and <strong>drag</strong> it with your mouse</p></li>
+<li><p>To move within a map select <img alt="" src="../../_images/30.30.2_print_layout_move_content_icon.png" /> <code class="docutils literal notranslate"><span class="pre">Move</span> <span class="pre">item</span> <span class="pre">content</span></code>-button on the left toolbar.</p></li>
+<li><p>To zoom in on the map, while using the <img alt="" src="../../_images/30.30.2_print_layout_move_content_icon.png" /> <code class="docutils literal notranslate"><span class="pre">Move</span> <span class="pre">item</span> <span class="pre">content</span></code> tool, you can <strong>Press CTRL + scroll the mouse wheel</strong> (gently) or enter the scale manually in the item properties.</p></li>
+</ul>
+<figure class="align-default" id="add-a-new-map">
+<a class="reference internal image-reference" href="../../_images/en_30.30.2_adding_a_map.png"><img alt="../../_images/en_30.30.2_adding_a_map.png" src="../../_images/en_30.30.2_adding_a_map.png" style="width: 750px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 125 </span><span class="caption-text">Adding a new map to the Print Layout (Source: CartONG)</span><a class="headerlink" href="#add-a-new-map" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-0">
+Adding a new map</label><div class="sd-tab-content docutils">
+<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_new_map
+.mp4"></video></p>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-1">
+Moving and scaling the map</label><div class="sd-tab-content docutils">
+<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_moving_the_map
+.mp4"></video></p>
+</div>
+</div>
+</section>
+<section id="adding-a-title-or-a-text-box">
+<h3>Adding a title or a text box<a class="headerlink" href="#adding-a-title-or-a-text-box" title="Permalink to this heading">#</a></h3>
+<p>A title should describe the phenomenon represented on the map.</p>
+<ul class="simple">
+<li><p>To add text (title, explanations), use the <img alt="" src="../../_images/30.30.2_print_layout_add_text.png" /> <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Label</span></code>-tool and draw a rectangle of the desired size.</p></li>
+<li><p>In the <strong>Item Properties</strong> panel (on the right of your screen) you can <strong>enter your text</strong> and <strong>change the font, style, colour, etc.</strong> (_Remember to use the scroll bar in the window to see all the options).</p></li>
+</ul>
+<figure class="align-default" id="add-text-to-the-print-layout">
+<a class="reference internal image-reference" href="../../_images/en_30.30.2_print_layout_add_text.png"><img alt="../../_images/en_30.30.2_print_layout_add_text.png" src="../../_images/en_30.30.2_print_layout_add_text.png" style="width: 750px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 126 </span><span class="caption-text">Adding text to the print layout (Source: CartONG).</span><a class="headerlink" href="#add-text-to-the-print-layout" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Video: Adding a textbox<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_print_layout_adding_a_title.mp4"></video></p>
+</div>
+</details></section>
+<section id="adding-an-image-or-logo">
+<h3>Adding an image or logo<a class="headerlink" href="#adding-an-image-or-logo" title="Permalink to this heading">#</a></h3>
+<p>If you are working for an organisation, most likely you will add the logo of that organization on the maps you produce.</p>
+<ol class="arabic simple">
+<li><p>Click on the <img alt="" src="../../_images/30.30.2_print_layout_add_image.png" /> <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">image</span></code>-tool in the left toolbar.</p></li>
+<li><p>Drag a rectangle on the canvas.</p></li>
+<li><p>In the <strong>Item Properties</strong> tab, you will have the option to choose an SVG image from your SVG-library in QGIS or choose a <strong>Raster image</strong>. Most image files are raster images.</p></li>
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">Raster</span> <span class="pre">image</span></code> and click on <code class="docutils literal notranslate"><span class="pre">...</span></code> to choose the location of the image.</p></li>
+<li><p>Your image will appear in the print layout. In order to make sure that the image does not get distorted, leave the <code class="docutils literal notranslate"><span class="pre">Resize</span> <span class="pre">Mode</span></code> on “Zoom”.</p></li>
+</ol>
+<figure class="align-default" id="print-layout-add-image">
+<a class="reference internal image-reference" href="../../_images/3.36_print_layout_add_image.png"><img alt="../../_images/3.36_print_layout_add_image.png" src="../../_images/3.36_print_layout_add_image.png" style="width: 650px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 127 </span><span class="caption-text">Adding an image or logo to the print layout.</span><a class="headerlink" href="#print-layout-add-image" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Video: Adding an image to the print layout<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_raster_image.mp4"></video></p>
+</div>
+</details></section>
+<section id="adding-a-legend">
+<h3>Adding a legend<a class="headerlink" href="#adding-a-legend" title="Permalink to this heading">#</a></h3>
+<p>Before adding a legend, make sure that:</p>
+<ul class="simple">
+<li><p>All your layers have an explicit name (“rivers”, “primary roads”,…)</p></li>
+<li><p>You use the final version of your map (no more layers to add, move, rename or modify). You can still modify them later but you will have to redo the legend.</p></li>
+</ul>
+<p>To add a legend, you can use the <img alt="" src="../../_images/30.30.2_print_layout_add_legend.png" /> <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">legend</span></code>-button on the <strong>left toolbar</strong>.</p>
+<figure class="align-default" id="add-a-legend-to-the-print-layout">
+<a class="reference internal image-reference" href="../../_images/en_30.30.2_print_layout_add_legend.png"><img alt="../../_images/en_30.30.2_print_layout_add_legend.png" src="../../_images/en_30.30.2_print_layout_add_legend.png" style="width: 750px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 128 </span><span class="caption-text">Adding a legend to the print layout</span><a class="headerlink" href="#add-a-legend-to-the-print-layout" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>In the <strong>Item Properties</strong> panel, if you keep the <strong><code class="docutils literal notranslate"><span class="pre">Auto</span> <span class="pre">update</span></code></strong> option checked, new layers added to your project will automatically be added to the legend but you cannot control them individually (rename if necessary, reorder ot remove items).<br />
+Once the option is unchecked, you can update the name of the layers, group them, remove or reorganise them, etc.</p>
+<p>If you have to many items on your legend, and they don’t fit on your map horizontally, you can also split the legend into several columns by navigating through the Item Properties panel, expand the <code class="docutils literal notranslate"><span class="pre">Columns</span></code>-section, and increase the <code class="docutils literal notranslate"><span class="pre">Count</span></code>.</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-2" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-2">
+Adding a legend</label><div class="sd-tab-content docutils">
+<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_legend
+.mp4"></video></p>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-3">
+Editing the legend</label><div class="sd-tab-content docutils">
+<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_editing_the_legend
+.mp4"></video></p>
+</div>
+<input id="sd-tab-item-4" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-4">
+Adding a two-column legend</label><div class="sd-tab-content docutils">
+<p>Sometimes the space on your map is not suited for a single vertical legend. In this case, it is useful to add multiple columns. Make sure to group the legend items logically so that the vertical legend is easier to read.</p>
+<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_multiple_columns_legend
+.mp4"></video></p>
+</div>
+</div>
+</section>
+<section id="adding-a-scale-bar">
+<h3>Adding a scale bar<a class="headerlink" href="#adding-a-scale-bar" title="Permalink to this heading">#</a></h3>
+<p>Before adding a scale bar, select your main map and check in the <strong>Item Properties</strong> panel that the <code class="docutils literal notranslate"><span class="pre">Scale</span></code> field has a <strong>round number</strong></p>
+<figure class="align-default" id="round-number-for-scale">
+<a class="reference internal image-reference" href="../../_images/en_30.30.2_print_layout_scale.png"><img alt="../../_images/en_30.30.2_print_layout_scale.png" src="../../_images/en_30.30.2_print_layout_scale.png" style="width: 750px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 129 </span><span class="caption-text">Make sure that the scale is at a round number</span><a class="headerlink" href="#round-number-for-scale" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>To add a scale bar, you can use the <img alt="" src="fig/30.30.2_print_layout_scale_bar.png" /><code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">scale</span> <span class="pre">bar</span></code>-button on the <strong>left toolbar</strong>. In the <strong>Item Properties</strong> panel, customize the following functions</p>
+<ul class="simple">
+<li><p>Which Map <strong>is related to the scale</strong></p></li>
+<li><p><strong>Unit system of the bar</strong> (metres, miles, degrees)</p></li>
+<li><p><strong>Segments on the left</strong>: segments shown before 0 m (always set to 0).</p></li>
+<li><p><strong>Fixed width</strong>: define the width of each segment (e.g. 1 km, 10 km, 50 km, …).</p></li>
+<li><p><strong>Height</strong>: height (thickness) of the scale bar</p></li>
+</ul>
+<p>There are many other options to customize the scale bar (change the font, colours, etc.).</p>
+<figure class="align-default" id="add-scale-bar">
+<a class="reference internal image-reference" href="../../_images/en_30.30.2_print_layout_add_scale_bar.png"><img alt="../../_images/en_30.30.2_print_layout_add_scale_bar.png" src="../../_images/en_30.30.2_print_layout_add_scale_bar.png" style="width: 750px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 130 </span><span class="caption-text">Add and customise the scale bar</span><a class="headerlink" href="#add-scale-bar" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-kebab-horizontal" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M6 12a2 2 0 11-4 0 2 2 0 014 0zm8 0a2 2 0 11-4 0 2 2 0 014 0zm6 2a2 2 0 100-4 2 2 0 000 4z"></path></svg><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_print_layout_adding_scalebar.mp4"></video></p>
+</div>
+</details></section>
+<section id="adding-an-overview-map">
+<h3>Adding an overview map<a class="headerlink" href="#adding-an-overview-map" title="Permalink to this heading">#</a></h3>
+<p>Adding an overview map in the corner of your map will help locate the area you are viewing on the main map.</p>
+<p>To create an overview map, you need to follow these steps:</p>
+<ol class="arabic simple">
+<li><p>Make sure that you <strong>lock the layers and layer styling</strong> for your main map</p>
+<ul class="simple">
+<li><p>Navigate to the <strong>item properties</strong> panel &gt;</p></li>
+</ul>
+</li>
+<li><p>Prepare a <strong>layer with national or subnational borders or important landmarks</strong> in your project (e.g: Administrative boundaries, Capitals). These should not be the same layers as your main map. If necessary, you can duplicate layers you wish to use on the overview map (such as administrative boundaries). Do not change the layers of your main map, if you intend to change the symbology later on.</p></li>
+<li><p><strong>Insert the overview map</strong> into your print layout, by using the <img alt="" src="../../_images/30.30.2_print_layout_insert_map_icon.png" /><code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Map</span></code> tool (in the bottom right corner, for example)</p></li>
+<li><p><strong>Lock the new map</strong> in the Item properties panel</p></li>
+<li><p>Add a rectangle to display the extent of your main map</p>
+<ol class="arabic simple">
+<li><p>Go to the <strong>properties</strong> of your Main map &gt; scroll down until you see <strong>“Overviews”</strong>.</p></li>
+<li><p>Add an Overview by clicking on the <code class="docutils literal notranslate"><span class="pre">+</span></code>-button.</p></li>
+<li><p><strong>Link the main map</strong> by selecting it in the <code class="docutils literal notranslate"><span class="pre">Map</span> <span class="pre">frame</span></code> option.</p></li>
+</ol>
+</li>
+</ol>
+<figure class="align-default" id="overview-map-preparation">
+<a class="reference internal image-reference" href="../../_images/en_30.30.2_print_layout_overview_map_preparations.png"><img alt="../../_images/en_30.30.2_print_layout_overview_map_preparations.png" src="../../_images/en_30.30.2_print_layout_overview_map_preparations.png" style="width: 500px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 131 </span><span class="caption-text">An overview map should show important landmarks and borders so the reader is able to locate the region shown on the map without having specific knowledge of the region.</span><a class="headerlink" href="#overview-map-preparation" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="add-overview-map">
+<a class="reference internal image-reference" href="../../_images/en_30.30.2_print_layout_add_overview_map.png"><img alt="../../_images/en_30.30.2_print_layout_add_overview_map.png" src="../../_images/en_30.30.2_print_layout_add_overview_map.png" style="width: 750px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 132 </span><span class="caption-text">Add an overview map and <strong>lock the layer</strong></span><a class="headerlink" href="#add-overview-map" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Video: Setting up an overview map<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_overview_maps
+.mp4"></video></p>
+</div>
+</details><div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>This method requires you to be sure that you are not going to modify the overview map, as once the layers are locked, they will keep the style, and any updates will not affect the overview map.</p>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="exporting-the-print-layout">
+<h2>Exporting the print layout<a class="headerlink" href="#exporting-the-print-layout" title="Permalink to this heading">#</a></h2>
+<p>Once you are finished with the map composition, it is time to export export the print layout as a PDF or SVG file.</p>
+<ol class="arabic simple">
+<li><p>In the toolbar above the canvas, click on the <img alt="" src="../../_images/30.30.2_print_layout_export_pdf.png" /> <code class="docutils literal notranslate"><span class="pre">Export</span> <span class="pre">as</span> <span class="pre">PDF</span></code>-button.</p></li>
+<li><p>Give the new file a name and select the location you want to save it.</p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
+<li><p>A new window “PDF Export Options” will open. Here you can adjust the compression algorithm. For the best results, select the lossless image compression.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Save</span></code> again.</p></li>
+<li><p>A new green bar will pop up underneath the toolbars. Click on the file link to <strong>review the exported map</strong>.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Make sure to check the map after exporting the PDF as some design elements might have changed in the exporting process.</p>
+</div>
+</section>
+<section id="map-templates">
+<h2>Map Templates<a class="headerlink" href="#map-templates" title="Permalink to this heading">#</a></h2>
+<p>Map templates can simplify and speed up the creation of a print layout by saving the arrangement of elements. However, they do not save the project’s layers and images, which will need to be reconfigured each time.
+If you work for an organisation that frequently publishes maps, or you need to create several maps on the same topics but in different regions or times, you can use map templates to skip the arrangement of elements.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The individual layers, maps and images are not saved in the template. However, if you have the same layers in the project you load the template into, the legend will update accordingly.</p>
+</div>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-5" name="sd-tab-set-2" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-5">
+Saving a template</label><div class="sd-tab-content docutils">
+<ol class="arabic simple">
+<li><p>Once you are satisfied with your map layout, click on the <img alt="" src="../../_images/en_30.30.2_save_as_template.png" /> <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">as</span> <span class="pre">template</span></code>-button in the toolbar above the canvas to save it as a new template.</p></li>
+<li><p>Choose a location where you want to save the template. Ideally, you should choose the template directory.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
+<li><p>You can open the template by dragging it into a QGIS-project.</p></li>
+</ol>
+<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_saving_layout_template
+.mp4"></video></p>
+</div>
+<input id="sd-tab-item-6" name="sd-tab-set-2" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-6">
+Opening a template</label><div class="sd-tab-content docutils">
+<p>You can drag and drop template-files (<code class="docutils literal notranslate"><span class="pre">.qpt</span></code>, QGIS template file) into QGIS or use the <strong>Layout manager</strong>.</p>
+<ol class="arabic simple">
+<li><p>Open the Layout manager under <code class="docutils literal notranslate"><span class="pre">Layout</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Layout</span> <span class="pre">Manager</span></code></p></li>
+<li><p>Navigate to the section “<strong>New from Template</strong>”</p></li>
+<li><p>Choose <code class="docutils literal notranslate"><span class="pre">Specific</span></code> and select the location where you saved your template</p></li>
+<li><p>Click open.</p></li>
+</ol>
+<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_opening_template
+.mp4"></video></p>
+</div>
+<input id="sd-tab-item-7" name="sd-tab-set-2" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-7">
+Template directory</label><div class="sd-tab-content docutils">
+<p>The template directory is where QGIS stores layout templates. If you have templates saved here, you can load templates directly through the layout manager without selecting the file.
+On Windows computers, the file path is <code class="docutils literal notranslate"><span class="pre">\Users\AppData\Roaming\QGIS\QGIS3\profiles\default\composer_templates</span></code>.</p>
+<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_template_directory.mp4"></video></p>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The layout manager in QGIS already has a dedicated location for map templates. On Windows computers, the file path is <code class="docutils literal notranslate"><span class="pre">\Users\AppData\Roaming\QGIS\QGIS3\profiles\default\composer_templates</span></code>.
+If you save templates here, you can load templates directly through the layout manager without looking for the file.
+You can also add file paths in the QGIS template settings.</p>
+</div>
+</section>
+<section id="the-atlas-function-automatic-map-generation">
+<h2>The Atlas function (automatic map generation)<a class="headerlink" href="#the-atlas-function-automatic-map-generation" title="Permalink to this heading">#</a></h2>
+<p>In some cases, it can be necessary to create multiple maps for different locations with the same layers. For example, if you have a detailed dataset on affected flood areas in Nigeria, you can create a more detailed map for each subnational district. In QGIS, this can be done automatically with the <strong>Atlas Function</strong>.</p>
+<p>The Atlas Function can be found in the <strong>Print Layout Composer</strong> on the toolbar.</p>
+<figure class="align-default" id="atlas-toolbar">
+<a class="reference internal image-reference" href="../../_images/en_atlas_toolbar.png"><img alt="../../_images/en_atlas_toolbar.png" src="../../_images/en_atlas_toolbar.png" style="width: 500px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 133 </span><span class="caption-text">Atlas Toolbar</span><a class="headerlink" href="#atlas-toolbar" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you can’t see the Atlas Tools, you must first activate the Atlas Toolbar under <code class="docutils literal notranslate"><span class="pre">View</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Toolbars</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Atlas</span> <span class="pre">Toolbar</span></code>.</p>
+</div>
+<section id="generating-an-atlas">
+<h3>Generating an Atlas<a class="headerlink" href="#generating-an-atlas" title="Permalink to this heading">#</a></h3>
+<p>An atlas will generate a new page with the same map layout for each feature in a layer. For most purposes, it useful to first create a map layout with the elements such as legend, sources and overview map and then insert the map item that will be controlled by the Atlas. To generate an atlas:</p>
+<ol class="arabic simple">
+<li><p>Click on the <img alt="" src="../../_images/30.30.2_print_layout_atlas_settings.png" /> <code class="docutils literal notranslate"><span class="pre">Atlas</span> <span class="pre">Settings</span></code>-button in the Atlas Toolbar.</p></li>
+<li><p>In the new window, activate the <code class="docutils literal notranslate"><span class="pre">Generate</span> <span class="pre">an</span> <span class="pre">Atlas</span></code> option.</p></li>
+<li><p>Select the <code class="docutils literal notranslate"><span class="pre">Coverage</span> <span class="pre">Layer</span></code>. This will determine the features or polygons that will be displayed on a page. In our example, we will use the subnational administrative regions in Nigeria (<code class="docutils literal notranslate"><span class="pre">ADM1</span></code>).</p></li>
+<li><p>Select the <code class="docutils literal notranslate"><span class="pre">Page</span> <span class="pre">Name</span></code>. This should be the name of the subnational region or location that is displayed on that page. To display the name of the region, we will choose the column <code class="docutils literal notranslate"><span class="pre">ADM1_REF</span></code>, which holds the names of the regions in english.</p></li>
+<li><p>Now let’s add a map to the empty print layout.</p></li>
+<li><p>Click on the map and navigate to the <strong>Layer Properties</strong> window on the right.</p></li>
+<li><p>Scroll down until you see the option <code class="docutils literal notranslate"><span class="pre">Controlled</span> <span class="pre">by</span> <span class="pre">Atlas</span></code> and activate it.</p></li>
+<li><p>Now activate the preview of the Atlas in the <strong>Atlas Toolbar</strong>. Otherwise, the print layout will not update to show you the atlas page. You can click through each page to see how it looks. Depending on the amount of features on your map, they may take a while to render.</p></li>
+<li><p>Now you can adjust the <strong>Margin options</strong> to best fit the readability of the map. By default, it is set to 10% and this should fit most purposes.</p></li>
+<li><p>Before printing or exporting the atlas, make sure to check every page that other elements of the map do not cover the represented region.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The only item in the print layout that is being controlled by the atlas is the map we added (unless you specify otherwise in the item properties). The other elements of the map will be the same on every page.</p>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Video: Setting up an Atlas<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_setting_up_an_atlas
+.mp4"></video></p>
+</div>
+</details></section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content/Modul_4"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="en_qgis_map_design_2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Map Design: The Print layout</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="en_qgis_map_examples.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Good Map Design &amp; Semiological Errors</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-elements-to-the-print-layout">Adding Elements to the Print Layout</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-a-new-map">Adding a new map</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-a-title-or-a-text-box">Adding a title or a text box</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-an-image-or-logo">Adding an image or logo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-a-legend">Adding a legend</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-a-scale-bar">Adding a scale bar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-an-overview-map">Adding an overview map</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exporting-the-print-layout">Exporting the print layout</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map-templates">Map Templates</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-atlas-function-automatic-map-generation">The Atlas function (automatic map generation)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generating-an-atlas">Generating an Atlas</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By HeiGIT gGmbH
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
