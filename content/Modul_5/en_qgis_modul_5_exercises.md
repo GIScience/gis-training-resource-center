@@ -1,4 +1,4 @@
-# Exercises Module 5 - Intermediate GIS operations
+# Exercises for Module 5
 
 __🔙[Back to Homepage](/content/intro.md)__
 

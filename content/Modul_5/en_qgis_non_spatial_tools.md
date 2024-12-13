@@ -1,9 +1,7 @@
-# Non-Spatial Geodataprocessing
+# Non-Spatial processing
 
 #### Introduction:
-Non-spatial geodataprocessing in QGIS refers to the manipulation, subsetting, and analysis of attribute data within a GIS environment without directly involving spatial components. It involves operations on the __non-geometric attributes__ of geospatial datasets. This can include data cleaning, transformation, enrichment, and analysis based on the associated attribute information, such as population statistics, land use classifications, or economic indicators. Non-spatial geodataprocessing can be used to perform calculations, generate statistics, and gain insights into the non-spatial aspects of geospatial datasets. QGIS offers a variety of tools for non-spatial geodataprocessing to assist users in managing and analysing attribute data effectively.
-
-This segment of Module 5 will start with the introduction of table functions. It will then progress into techniques for querying data, ultimately introducing the important concept of non-spatial joins.
+Non-spatial geodataprocessing in QGIS refers to the manipulation, subsetting, and analysis of attribute data within a GIS environment without directly involving spatial components or information. It involves operations on the __non-geometric attributes__ of geospatial datasets. This can include data cleaning, transformation, enrichment, and analysis based on the associated attribute information, such as population statistics, land use classifications, or economic indicators. Non-spatial geodataprocessing can be used to perform calculations, generate statistics, and gain insights into the non-spatial aspects of geospatial datasets. QGIS offers a variety of tools for non-spatial geodataprocessing to assist users in managing and analysing attribute data effectively.
 
 ```{figure} /fig/en_attribute_table_large.PNG
 ---
@@ -12,7 +10,93 @@ name: attribute_table_all
 ---
 Screenshot of an attribute table for QGIS version 3.28.4
 ```
+
+## Non-spatial joins
+
+```{figure} /fig/en_join_attributes_by_field_values.PNG
+---
+width: 450 px
+name: join_attributes_by_field_value
+---
+Screenshot of the Join attributes by field value tool in QGIS 3.36.
+```
+
+A lot of analysis can be done with just a single layer. But, sometimes, the necessary information we need for our analysis is __split across__ different datasets/layers. With QGIS, these layers can be __combined__ to perform the analysis we want. The simplest way to combine layers is via an __attribute join__. This operation looks up information from a second data source based on a __shared attribute value__. This value functions as a common unique identifier, also known as an ID, UID, or key (see {numref}`simple_attr_join_example`).
+
+```{figure} /fig/simple_attr_join_example.png
+---
+name: simple_attr_join_example
+width: 500 px
+---
+The entries in the two data tables can be joined via the common ID-field 
+```
+
+::::{card}
+__Humanitarian example:__
+^^^
+A common GIS workflow in humanitarian work involving non-spatial joins is joining data on administrative boundaries using P-codes as the common identifier/shared attribute.
+
+P-codes are identifying codes for administrative units (e.g. country (adm0), region (adm1), district (adm2)), that were introduced to simplify joining tabular data on administrative regions. These codes clearly identify the administrative units facilitating non-spatial joins. 
+
+For example: We have a spatial dataset containing the administrative boundaries of districts (adm2) in Nigeria and a data table containing the population per district, but without the polygons. By using the P-codes as identifying attribute, we can easily join the population data with the vector dataset.
+
+```{figure} /fig/en_attribute_join_pcode_example.png
+---
+name: pcode_example
+width: 550 px
+---
+The P-code associated with the district Edo South is NG01201
+```
+
+::::
+
+
+```{Attention} 
+- An attribute join in QGIS only works properly, when the attributes **match exactly**.
+- For example: **"S. Sudan"** will not match with **"South Sudan"**.
+- Where possible it’s best to **use attributes that have been designed for joining**, such as **P-codes** or **ID's** which are not susceptible to spelling mistakes.
+```
+
+### Exercise: Performing a non-spatial join 
+
+In this short follow along exercise, we will add the population data to the administrative boundaries layer (adm1).
+
+1. Download the necessary layers [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/non_spatial_join/non_spatial_join.zip), unzip them, and add them to your QGIS-project. 
+
+```{tip}
+The population layer needs to be [added as a delimited text layer](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_geodata_concept.html#delimited-text-import-csv-txt) (`Layer` > `Add Layer` > ) with no geometry.
+```
+
+2. Open the "Join Attributes by Field Value"-tool from the processing toolbox
+3. As the Input Layer 1, select the layer `nga_admbnda_adm1_osgof_20190417`, set the "Table Field" to `ADM1_PCODE`
+4. As Input Layer 2, select the layer `nga_adm1pop_2022`, set the "Table Field" to `ADM1_PCODE`. Additionally, under "Layer 2 fields to copy", select `F_TL`, `M_TL`, and `T_TL`.
+5. Click `Run`. A new layer will appear in your layer panel called "Joined Layer".
+
+```{figure} /fig/en_3.36_pcode_join.png
+---
+name: 36_pcode_join
+width: 450 px
+---
+Setting the parameters for the P-code join
+```
+
+6. Open the attribute table for the new layer and scroll to the right. Here you will find the joined attributes
+
+Great! We have successfully added the population data to our adminsitrative boundaries layer. Now, we can visualise the population distribution or continue to analyse our data.
+
+
+```{figure} /fig/nga_pop_join.png
+---
+name: nga_pop_join
+width: 600 px
+---
+The joined data classified using the graduated symbology for the population value.
+```
+
+
 ## Table functions
+
+Table functions usually only involve a single data layer. You can add new field, delete unwanted fields, or even calculate new field using the __field calculator__. 
 
 For a comprehensive overview on the attribute table's functionality and its purpose, you're invited to explore the [Wiki](/content/Wiki/en_qgis_attribute_table_wiki.md) article on it.
 
@@ -81,6 +165,7 @@ The most important groups and their respective functionality that are provided w
 ````
 
 ### Basic statistics for fields
+
 The tool __Basic statistics for fields__ generates statistics for a specific field of the attribute table of a vector layer. The results are generated as an HTML file and can be accessed by using the __file path link__ in the __Results Viewer__. This operation is highly valuable for gaining a comprehensive understanding of the data you intend to work with. It allows you to determine the range of values, pinpoint the minimum and maximum values. In the provided example, this operation is applied to calculate the global population density, allowing you to easily identify the most densely populated region worldwide.
 
 ````{dropdown} Example: Calculate statistics for the field population density for countries worldwide.
@@ -210,21 +295,3 @@ In this short video, you will discover the location of the query builder and lea
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_query_builder.mp4"></video>
 ````
 
-## Non-spatial joins
-A lot of analysis can be done with just a single layer. But, sometimes, the necessary information we need for our analysis is __split across__ different datasets/layers. With QGIS, these layers can be __combined__ to perform the analysis we want. The simplest way to combine layers is via an __attribute join__. This operation looks up information from a second data source based on a __shared attribute value__. This value functions as a common unique identifier, also known as an ID, UID, or key.
-
-In QGIS the tool __Join attributes by field value__ is often used for such operations:
-
-```{figure} /fig/en_join_attributes_by_field_values.PNG
----
-width: 75%
-name: join_attributes_by_field_value
----
-Screenshot of the Join attributes by field value tool
-```
-
-```{Attention} 
-- An attribute join in QGIS only works properly, when the attributes **match exactly**.
-- For example: **"S. Sudan"** will not match with **"South Sudan"**.
-- Where possible it’s best to **use attributes that have been designed for joining**, such as **P-codes** or **ID's** which are not susceptible to spelling mistakes.
-```
