@@ -2,15 +2,7 @@
 
 The print layout in QGIS is where you design and finalise the map in order to print or export it as a PDF (or file format of your choice). Here you can add important elements such as the legend, title, explanatory text, and anything you need to create a comprehensive map. By adding layout elements (legend, title, scale bar, sources, etc.) to a map, you provide your audience with the necessary information to contextualise and evaluate the information shown on the map.
 
-::::{margin}
-
-```{tip}
-You can also click on ![](/fig/3.36_icon_create_print_layout.png) `New Print Layout` or press <kbd>Ctrl</kbd> + <kbd>P</kbd> to create and open a new print layout. 
-```
-
-::::
-
-1. Go to `Project` > `New Print Layout` > Enter a name for the new print layout > Click `OK`.
+1. Go to __Project > New Print Layout > enter a name for the new print layout > click OK__
 2. A new window with a blank print layout will appear.
 
 ```{figure} ../../fig/en_30.30.2_create_print_layout.png
@@ -21,9 +13,7 @@ name: Create Print Layout
 Create a new Print Layout
 ```
 
-<!--In the [next chapter](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_examples.html), we will take a look at good map design and discuss how to recreate design elements. -->
-
-## Map Composition: 
+## Map Composition
 
 A good map guides the reader in understanding the information available on the map, makes the information easily accessible, and is not overloaded with information.
 
