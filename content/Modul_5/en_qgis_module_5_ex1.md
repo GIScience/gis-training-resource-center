@@ -85,7 +85,7 @@ All files still have their original names. However, feel free to modify their na
 
 
 
-1. Load the Somalia district boundaries (admin level 2) (`som_admbnda_adm2_ocha_20230308.shp`) and Healhsites Somalia (`WHO_health_sites.shp)  into QGIS.
+1. Load the Somalia district boundaries (admin level 2) (`som_admbnda_adm2_ocha_20230308.shp`) and Healthsites Somalia (`WHO_health_sites.shp)  into QGIS.
 
 2. Make sure to that both datasets are in the same projection. In this case we have two different projections and we will reproject  __Healthsites Somalia__ into EPSG 4326. Use the tool `Reproject layer` for this process. See the Wiki entry on __Projections__ for further information.
 

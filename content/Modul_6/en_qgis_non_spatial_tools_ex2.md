@@ -2,11 +2,15 @@
 
 ## Characteristics of the exercise
 
+:::{card}
+__Aim of the exercise:__
+^^^
+We want to create an overview of different vulnerability indicators. From the Covid-19 risk indicators dataset we take `% permanent wall type`, `% permanent roof type` and `poverty incidence`. From the Uganda population statistics we calculate the `% of under fives` and `% of elderly`. By combining the data, we are able to visualize the areas in Uganda that are most vulnerable.
+
+:::
+
 ::::{grid} 2
 :::{grid-item-card}
-
-### Aim of the exercise
-We want to create an overview of different vulnerability indicators. From the Covid-19 risk indicators dataset we take `% permanent wall type`, `% permanent roof type` and `poverty incidence`. From the Uganda population statistics we calculate the `% of under fives` and `% of elderly`. By combining the data, we are able to visualize the areas in Uganda that are most vulnerable.
 
 #### Type of trainings exercise:
 
@@ -81,6 +85,7 @@ __Wrap up:__
 
 
 ### Available Data
+
 Download all datasets and save the folder on your computer and unzip the file. The zip folder includes:
 - `uga_adm2_covid_risk.shp`: Output from Part 1 of the exercise
 - `uga_admpop_adm2_2020proj_1y.csv`: [Uganda population statistics](https://data.humdata.org/dataset/cod-ps-uga)
