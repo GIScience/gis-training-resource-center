@@ -242,9 +242,9 @@ By default, QGIS provides three different tools to perform spatial joins. The fi
 __"Join attributes by location"__. Furthermore, there are also the tools __"Join attributes by location (summary)"__ and 
 __"Join attributes by nearest"__.
 
-::::{tab-set}
+:::::{tab-set}
 
-:::{tab-item} Join attributes by location
+::::{tab-item} Join attributes by location
 
 This tool takes two input layers and creates a new vector layer which has the attributes of both layers in its attribute table.
 The first input layer (see "Join to features in" in {numref}`join_attributes_by_location`) dictates which geometric features will be copied to the new 
@@ -254,15 +254,15 @@ layer on top of the attributes of the first input layer. You can select which of
 
 ```{figure} /fig/en_join_attributes_by_location_1.png
 ---
-width: 400 px
+width: 450 px
 name: join_attributes_by_location
 ---
 The "Join Attributes by Location"-tool in QGIS 3.36.
 ```
 
-:::
+::::
 
-:::{tab-item} Join attributes by location (summary)
+::::{tab-item} Join attributes by location (summary)
 
 This tool is similar to the "Join Attributes by Location"-tool. However, on top of adding the attributes from one layer to another, this algorithms also 
 calculates statistical summaries for the values from matching features in the second layer. These summaries include a wide range of options, such as 
@@ -276,9 +276,9 @@ name: join_attribute_by_location_summary
 Screenshot of the tool Join attributes by location (summary) in QGIS 3.36
 ```
 
-:::
+::::
 
-:::{tab-item} Join attributes by nearest
+::::{tab-item} Join attributes by nearest
 
 This type of spatial join is similar to the other two joins but the joining of features occurs by 
 __identifying the closest features__ from each of these layers. Furthermore, if a maximum distance 
@@ -294,9 +294,9 @@ name: join_attribute_by_location_nearest
 Screenshot of the tool Join attributes by nearest in QGIS 3.36
 ```
 
-:::
-
 ::::
+
+:::::
 
 :::{note}
 A detailed description of the functions and settings of these tools can be found in the [QGIS documentation](https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html#join-attributes-by-location)
