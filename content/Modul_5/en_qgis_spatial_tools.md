@@ -288,7 +288,7 @@ suitable matches for the joining process.
 
 ```{figure} /fig/en_spatial_join_2.PNG
 ---
-width: 400 px
+width: 450 px
 name: join_attribute_by_location_nearest
 ---
 Screenshot of the tool Join attributes by nearest in QGIS 3.36
