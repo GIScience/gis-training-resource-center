@@ -252,7 +252,7 @@ layer. The second input layer (see "By comparing to" in {numref}`join_attributes
 layer on top of the attributes of the first input layer. You can select which of these attributes should be transferred to the new layer. 
 
 
-```{figure} /fig/en_join_attributes_by_location.png
+```{figure} /fig/en_join_attributes_by_location_1.png
 ---
 width: 400 px
 name: join_attributes_by_location
@@ -268,7 +268,7 @@ This tool is similar to the "Join Attributes by Location"-tool. However, on top 
 calculates statistical summaries for the values from matching features in the second layer. These summaries include a wide range of options, such as 
 __minimum and maximum values__, __mean values__, as well as __counts__, __sums__, __standard deviation__, and more. 
 
-```{figure} /fig/en_join_attributes_by_location_summary.png
+```{figure} /fig/en_join_attributes_by_location_summary_2.png
 ---
 width: 400 px
 name: join_attribute_by_location_summary
@@ -286,10 +286,10 @@ is specified, only the features that are within this designated distance will be
 suitable matches for the joining process.
 
 
-```{figure} /fig/en_join_attributes_by_nearest.PNG
+```{figure} /fig/en_join_attributes_by_nearest_3.PNG
 ---
 width: 400 px
-name: join_attribute_by_location_neares
+name: join_attribute_by_location_nearest
 ---
 Screenshot of the tool Join attributes by nearest in QGIS 3.36
 ```
@@ -303,7 +303,7 @@ A detailed description of the functions and settings of these tools can be found
 
 :::
 
-### Exercise: Calculate sum of affected population and flooded area for the Area of interest__
+### Exercise: Calculate sum of affected population and flooded area for the Area of interest
 
 
 In the aftermath of flooding events, data on the affected population and the extent of flooding is crucial. 
