@@ -331,7 +331,6 @@ width: 500px
 ---
 Regions affected by explosions in Nigeria
 ```
-:::
 
 :::{dropdown} Video: Set up different symbols in a single layer
 
