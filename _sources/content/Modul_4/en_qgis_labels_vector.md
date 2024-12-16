@@ -1,4 +1,4 @@
-## Labels for vector data
+## Labels for Vector Data
 
 Labels are text that display information or values of the data. In QGIS, you can either select __Single Labels__ or 
 __Rule-based Labelling__. For each option, an attribute (`value`) that will be displayed on the map. For example, the 
