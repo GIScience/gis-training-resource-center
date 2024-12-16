@@ -61,7 +61,7 @@ Most simple markers consist of a __fill__ and an __outline__. Depending on the t
 - You can either style a single symbol for each layer or use different styles based on a [categorisation method](/content/Modul_3/en_qgis_data_classification.md). 
 
 In the Symbology Tab, you can select between various symbolization 
-methods (see {numref}`symbolisation_methods_m4`). The most important ones are 
+methods (see {numref}`symbolisation_methods_m4`). The most important ones are __Single Symbol__, __Categorised__, __Graduated__, and __Rule-based__. 
 
 ```{figure} /fig/en_3.36_m4_symbolisation_methods.png
 ---
