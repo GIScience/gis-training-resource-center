@@ -254,7 +254,6 @@ layer on top of the attributes of the first input layer. You can select which of
 
 ```{figure} /fig/en_join_attributes_by_location_1.png
 ---
-width: 450 px
 name: join_attributes_by_location
 ---
 The "Join Attributes by Location"-tool in QGIS 3.36.
@@ -270,7 +269,6 @@ __minimum and maximum values__, __mean values__, as well as __counts__, __sums__
 
 ```{figure} /fig/en_join_attributes_by_location_summary_2.png
 ---
-width: 400 px
 name: join_attribute_by_location_summary
 ---
 Screenshot of the tool Join attributes by location (summary) in QGIS 3.36
@@ -418,6 +416,7 @@ The GDAL tools Clip vector by extent and Clip vector by mask layer
 ::::{tab-set}
 
 :::{tab-item} Clip vector by extent
+
 This operation clips any vector file to a given extent. This clip extent will be defined by a bounding box that should be used for the vector output file. It also has to be defined in the target CRS coordinates. There are different methods to define the bounding box, which are the great difference between this tool and the standard clipping process:
 * Calculate from a layer: this uses the extent of a layer loaded into the current project
 * Calculate from layout map: uses the extent of a layout map item in the active project
@@ -428,7 +427,7 @@ This operation clips any vector file to a given extent. This clip extent will be
 
 ```{figure} /fig/en_clip_vector_by_extent.PNG
 ---
-width: 400 px
+width: 450 px
 name: en_clip_vector_by_extent
 ---
 Screenshot of the tool Clip vector by extent
@@ -443,7 +442,7 @@ This operation uses a mask polygon layer to clip any vector layer. This operatio
 
 ```{figure} /fig/en_clip_vector_by_mask_layer.PNG
 ---
-width: 400 px
+width: 450 px
 name: clip_vector_by_mask_layer
 ---
 Screenshot of the tool Clip vector by mask layer
