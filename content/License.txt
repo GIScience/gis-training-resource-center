@@ -1,5 +1,5 @@
-This project is released under a Creative Commons BY-NC-ND license. 
+This project is released under a Creative Commons BY-NC-SA license. 
 
 For more information, please visit:
 
-https://creativecommons.org/licenses/by-nc-nd/4.0/
+https://creativecommons.org/licenses/by-nc-sa/4.0/
