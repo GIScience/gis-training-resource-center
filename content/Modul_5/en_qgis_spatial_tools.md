@@ -247,17 +247,17 @@ __"Join attributes by nearest"__.
 :::{tab-item} Join attributes by location
 
 This tool takes two input layers and creates a new vector layer which has the attributes of both layers in its attribute table.
-The first input layer (see "Join to features in" in {numref}`join_attribute_by_location`) dictates which geometric features will be copied to the new 
-layer. The second input layer (see "By comparing to" in {numref}`join_attribute_by_location`) dictates the attributes that will be added to the new 
+The first input layer (see "Join to features in" in {numref}`join_attributes_by_location`) dictates which geometric features will be copied to the new 
+layer. The second input layer (see "By comparing to" in {numref}`join_attributes_by_location`) dictates the attributes that will be added to the new 
 layer on top of the attributes of the first input layer. You can select which of these attributes should be transferred to the new layer. 
 
 
 ```{figure} /fig/en_join_attributes_by_location.png
 ---
 width: 400 px
-name: join_attribute_by_location
+name: join_attributes_by_location
 ---
-The "Join Attributes by Location"-tool in QGIS 3.36
+The "Join Attributes by Location"-tool in QGIS 3.36.
 ```
 
 :::
@@ -271,9 +271,9 @@ __minimum and maximum values__, __mean values__, as well as __counts__, __sums__
 ```{figure} /fig/en_join_attributes_by_location_summary.png
 ---
 width: 400 px
-name: join_attribute_by_location
+name: join_attribute_by_location_summary
 ---
-Screenshot of the tool Join attributes by location (summary)
+Screenshot of the tool Join attributes by location (summary) in QGIS 3.36
 ```
 
 :::
@@ -289,9 +289,9 @@ suitable matches for the joining process.
 ```{figure} /fig/en_join_attributes_by_nearest.PNG
 ---
 width: 400 px
-name: join_attribute_by_location
+name: join_attribute_by_location_neares
 ---
-Screenshot of the tool Join attributes by nearest
+Screenshot of the tool Join attributes by nearest in QGIS 3.36
 ```
 
 :::
