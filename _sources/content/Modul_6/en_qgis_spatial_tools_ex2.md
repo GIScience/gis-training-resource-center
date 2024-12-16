@@ -160,4 +160,4 @@ name: join_attribute_by_location_2
 Screenshot of the second Join attribute by location operation.
 ```
 
-The next steps of the vulnerability index calculation will be completed in the second part of this exercise, the Non-spatial Geodataprocessing section. Please refer to the [provided link](/content/Modul_5/en_qgis_non_spatial_tools_ex2.md) for this exercise.
+The next steps of the vulnerability index calculation will be completed in the second part of this exercise, the Non-spatial Geodataprocessing section. Please refer to the [provided link](/content/Modul_6/en_qgis_non_spatial_tools_ex2.md) for this exercise.
