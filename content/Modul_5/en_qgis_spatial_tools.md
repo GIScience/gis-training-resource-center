@@ -252,7 +252,7 @@ layer. The second input layer (see "By comparing to" in {numref}`join_attributes
 layer on top of the attributes of the first input layer. You can select which of these attributes should be transferred to the new layer. 
 
 
-```{figure} /fig/en_join_attributes_by_location_1.PNG
+```{figure} /fig/en_spatial_join_1.PNG
 ---
 width: 450 px
 name: join_attributes_by_location
@@ -268,7 +268,7 @@ This tool is similar to the "Join Attributes by Location"-tool. However, on top 
 calculates statistical summaries for the values from matching features in the second layer. These summaries include a wide range of options, such as 
 __minimum and maximum values__, __mean values__, as well as __counts__, __sums__, __standard deviation__, and more. 
 
-```{figure} /fig/en_join_attributes_by_location_summary_2.PNG
+```{figure} /fig/en_spatial_join_3.PNG
 ---
 width: 450 px
 name: join_attribute_by_location_summary
@@ -286,7 +286,7 @@ is specified, only the features that are within this designated distance will be
 suitable matches for the joining process.
 
 
-```{figure} /fig/en_join_attributes_by_nearest_3.PNG
+```{figure} /fig/en_spatial_join_2.PNG
 ---
 width: 400 px
 name: join_attribute_by_location_nearest
