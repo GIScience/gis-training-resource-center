@@ -1,12 +1,7 @@
 # Good Map Design & Semiological Errors
 
-🚧This page on the training platform is under ⚠️construction⚠️🚧
 
-In this chapter we will discuss well designed maps and give examples of how to recreate specific design elements in QGIS. A second part of this chapter will focus on common mistakes and good practices when designing maps.
-
-
-
-In this section, we will present some well-designed maps and discuss how to create similar maps. If you need further examples for good map design, check out these websites/repositories:
+In this chapter we will discuss well designed maps and give examples of how to recreate specific design elements in QGIS. A second part of this chapter will focus on common semiological missteps. If you need further examples for good map design, check out these websites/repositories:
 
 - [impact-initiatives.org/resource-centre maps](https://www.impact-initiatives.org/resource-centre/?category%5B%5D=information_products&category%5B%5D=data_methods&type%5B%5D=281&order=latest&limit=10)
 - [geo.msf.org maps](https://geo.msf.org/catalogue/DOCID-1877329211-4979?from=0&sort=_score&desc=true)
@@ -87,19 +82,53 @@ Infrastructure Map Kunduz Province
 ```
 -->
 
-## Common Semiological Errors
+## Common Missteps in Semiology
 
 <!---ADD: Insert Image examples for these errors-->
 
-### 1. Proportional circles vs. solid colors
+### 1. The Modifiable Areal Unit Problem
 
 ```{caution}
-DO NOT represent __quantitative__ data with a __solid colour__.
+Be careful when representing data in administrative regions. 
 ```
 
-This is one of the most common mistakes in mapping. While this representation is graphically appealing, it is still false and distracts from the message of the map.
+The Modifiable Areal Unit Problem (MAUP) is a statistical bias that arises when spatial data is aggregated into regions. It highlights how the results of spatial analysis can change depending on how data is grouped into areal units (spatial zones).
 
-It is a mistake because:
+The Modifiable Areal Unit Problem has two key components:
+
+__Scale Effect:__
+
+The scale of aggregation (small vs. large areas) affects the results.
+
+- When smaller units (e.g., census blocks) are used, the analysis may capture fine-grained local variations.
+- When larger units (e.g., counties or states) are used, local variations get smoothed out, and the results may show broader trends. For example, average income might vary significantly at the neighborhood level but look more uniform at the county level.
+
+__Zoning Effect:__
+
+The shape and arrangement of the zones used for aggregation can also affect the results.
+
+- Changing the boundaries of zones (e.g., splitting a city into east-west vs. north-south regions) can lead to different outcomes, even if the total population or data remains the same. This happens because boundaries influence how values are averaged or summed.
+
+__Why is this important in GIS?__
+
+- Policy Decisions: If the analysis depends on arbitrary boundaries, decisions (e.g., allocating resources) might be based on misleading results.
+- Spatial Statistics: Correlations, regressions, and other analyses involving spatial data can be biased due to MAUP.
+
+```{figure} /fig/en_modifiable_areal_unit_problem_diagram.png
+---
+name: modifiable_areal_unit_problem
+width: 500 px
+---
+Visualising the Modifiable Areal Unit Problem: The same indicator represented at three different scales (Source: Kitchin, Rob & Lauriault, Tracey & McArdle, Gavin. (2015). Knowing and governing cities through urban indicators, city benchmarking and real-time dashboards. Regional Studies, Regional Science. 2. 6-28. 10.1080/21681376.2014.983149. )
+```
+
+### 2. Proportional circles vs. solid colors
+
+```{caution}
+Be cautious when representing __quantitative__ data with a __solid colour__.
+```
+
+While it is graphically appealing, representing quantitative data with solid colours can lead to problems and distract from the message of the map:
 
 - You lose the __order relationship between the data__ (a circle can be twice as big as another one, a colour cannot be "twice as dark")
 - Countries with a large surface area stand out visually (e.g. Russia in the example below)
@@ -108,7 +137,7 @@ It is a mistake because:
 
 <!---Add example-->
 
-### 2. Color gradient vs. distinct color palette
+### 3. Color gradient vs. distinct color palette
 
 ```{caution}
 DO NOT use a __separate__ colour palette to represent __ordered entities__
@@ -121,16 +150,16 @@ It is a mistake because:
 - By using a differentiating colour variable, __you lose the ordinal relationship between entities__. Instead, a __gradient of the same colour__ that should be used.
 - Different colours are used to differentiate between distinct entities.
 
-### 3. Gradient in a single colour vs. Gradient between two colours
+### 4. Gradient in a single colour vs. Gradient between two colours
 
 ```{Caution}
-DO NOT use a gradient across two different colours for data that is always positive (or negative).
+Be cautious when using a __gradient across two different colours__ for data that is __always positive__ (or negative).
 ```
 
-This is a mistake that often occurs because our brains are used to prioritising certain colours, especially green to red, or blue to red. We must remember that __if our values do not have a meaningful zero point, we must stay in the same single colour and use different shades of that colour to indicate different values.
+This is a difficult because our brains are used to prioritising certain colours, especially green to red, or blue to red. We must remember that __if our values do not have a meaningful zero point__, it might be better to stay in the same single colour and use different shades of that colour to indicate different values. Alternatively, a colour gradient that is not diverging can be used. 
 <!--What about height?-->
 
-A gradient between two colours can be used when it is necessary to show a gradation that can go from negative to positive. As for temperatures, it makes sense to distinguish negative values (in shades of blue for example) and positive values (in shades of red).
+A diverging gradient between two colours can be used when it is necessary to show a gradation that can go from negative to positive. As for temperatures, it makes sense to distinguish negative values (in shades of blue for example) and positive values (in shades of red).
 
 It is a mistake because:
 
@@ -139,7 +168,7 @@ It is a mistake because:
 - The map will send a message of divergence, of opposition between certain values, when we are simply trying to represent a hierarchy between values
 - In this way, the colour itself directly indicates information about the trend (positive/negative or increasing/decreasing).
 
-### 4. Limited geometric symbols vs. complex icons and symbols
+### 5. Limited geometric symbols vs. complex icons and symbols
 
 ```{Caution}
 DO NOT use __too many symbols__ in a thematic map

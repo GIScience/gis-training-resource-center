@@ -581,18 +581,18 @@ document.write(`
 <p>The <img alt="" src="../../_images/processingModel.png" /> <code class="docutils literal notranslate"><span class="pre">Graphical</span> <span class="pre">Modeler</span></code> also known as the Model Builder allows users to create complex models using a simple and intuitive interface. Most analysis tasks in a GIS are not isolated, but part of a chain of operations resulting in a series of inputs and outputs (e.g. clipping the area of interest, performing a spatial join and applying some table functions). Using the Graphical Modeler, this chain of operations can be combined into a single process, which can then be easily re-run with a different set of inputs. Regardless of how many steps and different algorithms are involved in the analysis, a model is executed as a single algorithm, saving time and effort.</p>
 <section id="graphical-user-interface">
 <h3>Graphical User Interface<a class="headerlink" href="#graphical-user-interface" title="Permalink to this heading">#</a></h3>
-<p>The Graphical Modeler can be accessed from the Processing menu <code class="docutils literal notranslate"><span class="pre">Processing</span> <span class="pre">-&gt;</span> <span class="pre">Graphical</span> <span class="pre">Modeler</span></code> as shown in <a class="reference internal" href="#open-graphical-modeler"><span class="std std-numref">Fig. 180</span></a>.</p>
+<p>The Graphical Modeler can be accessed from the Processing menu <code class="docutils literal notranslate"><span class="pre">Processing</span> <span class="pre">-&gt;</span> <span class="pre">Graphical</span> <span class="pre">Modeler</span></code> as shown in <a class="reference internal" href="#open-graphical-modeler"><span class="std std-numref">Fig. 181</span></a>.</p>
 <figure class="align-default" id="open-graphical-modeler">
 <a class="reference internal image-reference" href="../../_images/en_open_graphical_modeler.png"><img alt="../../_images/en_open_graphical_modeler.png" src="../../_images/en_open_graphical_modeler.png" style="height: 150px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 180 </span><span class="caption-text">How to open the Graphical Modeler in QGIS</span><a class="headerlink" href="#open-graphical-modeler" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 181 </span><span class="caption-text">How to open the Graphical Modeler in QGIS</span><a class="headerlink" href="#open-graphical-modeler" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>This will open the following window, which contains everything we need to build a model.</p>
 <figure class="align-default" id="gui-graphical-modeler">
 <a class="reference internal image-reference" href="../../_images/en_gui_graphical_modeler.PNG"><img alt="../../_images/en_gui_graphical_modeler.PNG" src="../../_images/en_gui_graphical_modeler.PNG" style="height: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 181 </span><span class="caption-text">Screenshot of the Graphical Modeler window for QGIS version 3.28.4</span><a class="headerlink" href="#gui-graphical-modeler" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 182 </span><span class="caption-text">Screenshot of the Graphical Modeler window for QGIS version 3.28.4</span><a class="headerlink" href="#gui-graphical-modeler" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>In the Graphical Modeler window we can see several icons and menus. Firstly, we will focus on the left window for the <code class="docutils literal notranslate"><span class="pre">Inputs</span></code> and <code class="docutils literal notranslate"><span class="pre">Algorithms</span></code> section. Inputs are all the input variables or layers for a model, such as a Vector Layer, Raster Layer, String, Boolean, Expression and many others. The Algorithms are all the tools that are used to process the input variables. In the processing chain, one algorithm/tool will return an output that will be used by another/the following tool until the final output is created.</p>
@@ -610,27 +610,27 @@ document.write(`
 <p>We will build our first simple model by buffering road segments. This process is based on a vector layer containing the road data and the buffer algorithm.</p>
 <section id="selection-of-inputs">
 <h4>Selection of Inputs<a class="headerlink" href="#selection-of-inputs" title="Permalink to this heading">#</a></h4>
-<p>Select the <code class="docutils literal notranslate"><span class="pre">Inputs</span></code> tab from the left window and then select the <code class="docutils literal notranslate"><span class="pre">Vector</span> <span class="pre">Layer</span></code> by either double-clicking or dragging and dropping it onto the model canvas (<a class="reference internal" href="#vector-layer-modeler"><span class="std std-numref">Fig. 182</span></a>). This will open the input Parameter Definition window (<a class="reference internal" href="#input-vector-modeler"><span class="std std-numref">Fig. 183</span></a>). In this window we can customize some vector input parameters such as <code class="docutils literal notranslate"><span class="pre">Description</span></code> (the name that the user will see when executing the model), <code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">type</span></code> (Point, Line, Polygon) and can also define your input as mandatory for your model by ticking the <code class="docutils literal notranslate"><span class="pre">Mandatory</span></code> box. It is also possible to select the <code class="docutils literal notranslate"><span class="pre">Advanced</span></code> checkbox to set the input to be within the Advanced section. This is particularly useful when the model has many parameters and some of them are not trivial, but you still want to be able to select  them.</p>
+<p>Select the <code class="docutils literal notranslate"><span class="pre">Inputs</span></code> tab from the left window and then select the <code class="docutils literal notranslate"><span class="pre">Vector</span> <span class="pre">Layer</span></code> by either double-clicking or dragging and dropping it onto the model canvas (<a class="reference internal" href="#vector-layer-modeler"><span class="std std-numref">Fig. 183</span></a>). This will open the input Parameter Definition window (<a class="reference internal" href="#input-vector-modeler"><span class="std std-numref">Fig. 184</span></a>). In this window we can customize some vector input parameters such as <code class="docutils literal notranslate"><span class="pre">Description</span></code> (the name that the user will see when executing the model), <code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">type</span></code> (Point, Line, Polygon) and can also define your input as mandatory for your model by ticking the <code class="docutils literal notranslate"><span class="pre">Mandatory</span></code> box. It is also possible to select the <code class="docutils literal notranslate"><span class="pre">Advanced</span></code> checkbox to set the input to be within the Advanced section. This is particularly useful when the model has many parameters and some of them are not trivial, but you still want to be able to select  them.</p>
 <figure class="align-default" id="vector-layer-modeler">
 <a class="reference internal image-reference" href="../../_images/en_vector_layer_modeler.PNG"><img alt="../../_images/en_vector_layer_modeler.PNG" src="../../_images/en_vector_layer_modeler.PNG" style="height: 300px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 182 </span><span class="caption-text">Vector Layer as input</span><a class="headerlink" href="#vector-layer-modeler" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 183 </span><span class="caption-text">Vector Layer as input</span><a class="headerlink" href="#vector-layer-modeler" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="input-vector-modeler">
 <a class="reference internal image-reference" href="../../_images/en_input_vector_modeler.PNG"><img alt="../../_images/en_input_vector_modeler.PNG" src="../../_images/en_input_vector_modeler.PNG" style="height: 300px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 183 </span><span class="caption-text">Vector Layer Parameter Definition</span><a class="headerlink" href="#input-vector-modeler" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 184 </span><span class="caption-text">Vector Layer Parameter Definition</span><a class="headerlink" href="#input-vector-modeler" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="selection-of-algorithms">
 <h4>Selection of Algorithms<a class="headerlink" href="#selection-of-algorithms" title="Permalink to this heading">#</a></h4>
-<p>Now select the <code class="docutils literal notranslate"><span class="pre">Algorithms</span></code> tab. There are many algorithms which are grouped together. If you know where an algorithm is, you can select it directly, otherwise search for it using the search toolbar. For this example we will search for the <code class="docutils literal notranslate"><span class="pre">Buffer</span></code> algorithm as shown in <a class="reference internal" href="#model-buffer"><span class="std std-numref">Fig. 184</span></a>. Add it to the model canvas.</p>
+<p>Now select the <code class="docutils literal notranslate"><span class="pre">Algorithms</span></code> tab. There are many algorithms which are grouped together. If you know where an algorithm is, you can select it directly, otherwise search for it using the search toolbar. For this example we will search for the <code class="docutils literal notranslate"><span class="pre">Buffer</span></code> algorithm as shown in <a class="reference internal" href="#model-buffer"><span class="std std-numref">Fig. 185</span></a>. Add it to the model canvas.</p>
 <figure class="align-default" id="model-buffer">
 <a class="reference internal image-reference" href="../../_images/en_model_buffer.PNG"><img alt="../../_images/en_model_buffer.PNG" src="../../_images/en_model_buffer.PNG" style="height: 300px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 184 </span><span class="caption-text">Selection of Buffer algorithm</span><a class="headerlink" href="#model-buffer" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 185 </span><span class="caption-text">Selection of Buffer algorithm</span><a class="headerlink" href="#model-buffer" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>When we double-click on it, the Buffer Algorithm window appears, as shown in the figure below.</p>
