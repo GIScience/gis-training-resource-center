@@ -578,7 +578,7 @@ __Administrative 2 Boundaries (Regions)__
 ``````
 
 ```{Attention}
-Remember the [layer concept](/content/Modul_2/en_qgis_geodata_concept.md) and make sure the basemap layer is at the bottom of your layers panel.
+Remember the [layer concept](/content/Module_2/en_qgis_geodata_concept.md) and make sure the basemap layer is at the bottom of your layers panel.
 ```
 
 ### Step 11: Making print map
