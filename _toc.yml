@@ -10,10 +10,10 @@ parts:
     chapters:
       - file: content/Modul_1/en_module_1_overview.md
         sections: 
-          - file: content/Modul_1/en_qgis_theorie.md
-          - file: content/Modul_1/en_qgis_installation.md
-          - file: content/Modul_1/en_qgis_start.md
-          - file: content/Modul_1/en_qgis_modul_1_exercises.md      
+          - file: content/Module_1/en_qgis_theorie.md
+          - file: content/Module_1/en_qgis_installation.md
+          - file: content/Module_1/en_qgis_start.md
+          - file: content/Module_1/en_qgis_module_1_exercises.md      
   - caption: Module 2
     chapters:
       - file: content/Modul_2/en_module_2_overview.md
