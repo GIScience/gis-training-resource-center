@@ -1,4 +1,4 @@
-# Geodata Classification Exercise 2: Map of food insecurity in Sierra Leone
+# Exercise 2 (Geodata Classification): Map of food insecurity in Sierra Leone
 
 
 ## Characteristics of the exercise

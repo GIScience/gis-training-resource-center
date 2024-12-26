@@ -1,4 +1,4 @@
-# Selection and Queries Exercise 1
+# Exercise 3: Data queries
 
 __🔙[Back to Homepage](/content/intro.md)__
 
@@ -24,7 +24,7 @@ Download all the datasets [here](), save the folder on your computer, and unzip 
 - `GF2_20231123_FloodExtent_BeledweyneCity_HiraanRegion.shp`: This shapefile illustrates satellite-detected surface waters in Beledweyne City, Beledweyne District, Hiraan Region, Somalia, on 12th of November 2023 at 07:32 UTC. The data is also available on [HDX](https://data.humdata.org/dataset/water-extent-in-beledweyne-city-beledweyne-district-hiraan-region-somalia-12-november-2023).
 - `Buildings_Belete_Weyne.geojson`: This dataset is downloaded using [HOT Export Tool](https://export.hotosm.org/v3/exports/new/describe) and contains information about buildings in the Beledweyne district.
 
-The folder is called **Modul_3_Exercise_1_Queries_Somalia** and contains the entire [standard folder structure](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure) with all data in the input folder.
+The folder is called **Module_3_Exercise_1_Queries_Somalia** and contains the entire [standard folder structure](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure) with all data in the input folder.
 
 ``` {Note}
 The naming of the districts and states is not consistent across the different datasets. You will find different spellings for the district name **Beledweyne** which we will be focusing on. Other spellings might be **Belet Weyne** or **Belete Weyne**. 
@@ -33,7 +33,7 @@ The naming of the districts and states is not consistent across the different da
 ## Tasks
 1. Open QGIS and create a [new project](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` --> `New`.
 
-2. Once the project is created, [save the project](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#save) in the **project folder** of the exercise **Modul_3_Exercise_1_Queries_Somalia**. To do that click on `Project` --> `Save as` and navigate to the folder. Name the project **Somalia_flood_affected_Beledweyne_2023**.
+2. Once the project is created, [save the project](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#save) in the **project folder** of the exercise **Module_3_Exercise_1_Queries_Somalia**. To do that click on `Project` --> `Save as` and navigate to the folder. Name the project **Somalia_flood_affected_Beledweyne_2023**.
 
 3. To load the following files into your project, drag and drop them ([Wiki Video](/content/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). Or click on `Layer` --> `Add Layer` --> `Add Vector Layer`. Click on the three points ![](/fig/Three_points.png) and navigate to the file. Select the file and click `Open`. Back in QGIS click `Add` ([Wiki Video](/content/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab)).
     - `som_admbnda_adm2_ocha_20230308.shp`
