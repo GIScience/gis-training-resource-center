@@ -8,7 +8,7 @@ options:  # The options key will be applied to all chapters, but not sub-section
 parts:
   - caption: Module 1
     chapters:
-      - file: content/Modul_1/en_module_1_overview.md
+      - file: content/Module_1/en_module_1_overview.md
         sections: 
           - file: content/Module_1/en_qgis_theorie.md
           - file: content/Module_1/en_qgis_installation.md
@@ -16,15 +16,15 @@ parts:
           - file: content/Module_1/en_qgis_module_1_exercises.md      
   - caption: Module 2
     chapters:
-      - file: content/Modul_2/en_module_2_overview.md
+      - file: content/Module_2/en_module_2_overview.md
         sections:
-          - file: content/Modul_2/en_qgis_geodata_concept.md
-          - file: content/Modul_2/en_qgis_projections.md
-          - file: content/Modul_2/en_qgis_basic_data_processing.md
-          - file: content/Modul_2/en_qgis_attribute_table.md
-          - file: content/Modul_2/en_data_sources.md
-          - file: content/Modul_2/en_qgis_basemap.md
-          - file: content/Modul_2/en_qgis_modul_2_exercises.md
+          - file: content/Module_2/en_qgis_geodata_concept.md
+          - file: content/Module_2/en_qgis_projections.md
+          - file: content/Module_2/en_qgis_geodata_management.md
+          - file: content/Module_2/en_qgis_attribute_table.md
+          - file: content/Module_2/en_data_sources.md
+          - file: content/Module_2/en_qgis_basemap.md
+          - file: content/Module_2/en_qgis_module_2_exercises.md
   - caption: Module 3
     chapters:
       - file: content/Modul_3/en_module_3_overview.md
