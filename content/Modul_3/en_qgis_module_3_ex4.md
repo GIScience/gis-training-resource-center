@@ -1,4 +1,4 @@
-# Exercise: Nigeria Floods
+# Exercise 4: Nigeria Floods
 
 __🔙[Back to Homepage](/content/intro.md)__
 
@@ -89,8 +89,8 @@ __Wrap up:__
 
 
 ## Data sources
-Download the data folder [here](hhttps://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_1/Module_3_Exercise_1_Flood_Nigeria.zip) and save it on your PC. Unzip the .zip file.
-The folder is called “Modul_3_Exercise_1_Flood_Nigeria" and contains the entire [standard folder structure](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure) with all data in the input folder and the additional documentation in the documentation folder.
+Download the data folder [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_1/Module_3_Exercise_1_Flood_Nigeria.zip) and save it on your PC. Unzip the .zip file.
+The folder is called “Module_3_Exercise_1_Flood_Nigeria" and contains the entire [standard folder structure](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure) with all data in the input folder and the additional documentation in the documentation folder.
 
 * [Nigeria: Administrative Division with Aggregated Population ("kontur_boundaries_NG_20230628.gpkg")](https://data.humdata.org/dataset/kontur-boundaries-nigeria)-Kontor
 * [Nigeria : Flood data (“Nigeria_flood_2022_affacted_population”) ](https://data.humdata.org/dataset/nigeria-nema-flood-affected-geographical-areasnorth-east-nigeria-flood-affected-geographical-areas)- UN OCHA. This dataset was manipulated for training purposes.

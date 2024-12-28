@@ -1,4 +1,4 @@
-# Digitisation Exercise 2: Access to financial institutions 
+# Exercise 1 (Digitisation): Access to financial institutions 
 
 
 ## Characteristics of the exercise

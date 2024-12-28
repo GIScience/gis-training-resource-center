@@ -2,9 +2,11 @@
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-In this chapter, we will have a close look at how to work with geodata in QGIS. 
+In this chapter, we will have a closer look at how to store geodata on your computer to work in 
+QGIS or other GIS applications. 
 Since vector data is the primary geodata type you will work with at the beginning 
-of your GIS career, we will focus on vector geodata. We will learn how to set up a coherent folder structure for your GIS-data and projects and how to name geodata correctly. 
+of your GIS career, we will focus on vector geodata. We will learn how to set up a coherent 
+folder structure for your GIS-data and projects and how to name geodata correctly. 
 
 ## Fundamentals of Geodata Management
 

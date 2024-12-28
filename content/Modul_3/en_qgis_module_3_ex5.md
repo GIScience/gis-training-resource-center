@@ -1,8 +1,8 @@
-# Exercise: Larkana Flood response
+# Exercise 5: Larkana Flood response
 __🔙[Back to Homepage](/content/intro.md)__
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_modul_3_exercises.html
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_exercises.html
 __Click here to return to the exercise overview page for module 3__ 
 :::
 ::::{grid} 2
