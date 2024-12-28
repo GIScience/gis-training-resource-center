@@ -590,7 +590,7 @@ part of it.
 
 The attributes of the points in the output layer are the same as for the original features.
 
-Centroids are especially useful when creating [graduated symbols maps](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_styling_vector_data.html#creating-a-graduated-symbols-map), as the size of the point symbols can be graded using the graduated classification method.
+Centroids are especially useful when creating [graduated symbols maps](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#creating-a-graduated-symbols-map), as the size of the point symbols can be graded using the graduated classification method.
 
 ```{figure} /fig/en_centroids_screenshot.png
 ---
