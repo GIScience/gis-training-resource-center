@@ -58,7 +58,7 @@ Most simple markers consist of a __fill__ and an __outline__. Depending on the t
 
 - The fill determines the fill colour of the symbol. You can change the colour and transparency. You are also able to make more complex fills such as a line pattern fill, or an SVG-symbol fill.
 - The outline determines the colour, type, and thickness of the outline. Next to the colour and transparency, the outline is the most critical for distinguishing between different elements. For example, thicker lines for roads usually signify roads of a higher order (such as highways), while thin dashed lines might signify footpaths, inaccessible to road vehicles.
-- You can either style a single symbol for each layer or use different styles based on a [categorisation method](/content/Modul_3/en_qgis_data_classification.md). 
+- You can either style a single symbol for each layer or use different styles based on a [categorisation method](/content/Module_3/en_qgis_data_classification.md). 
 
 In the Symbology Tab, you can select between various symbolization 
 methods (see {numref}`symbolisation_methods_m4`). The most important ones are __Single Symbol__, __Categorised__, __Graduated__, and __Rule-based__. 
@@ -95,7 +95,7 @@ __For example__, assign a different symbol for each type of building (industrial
 - Creates classes for numerical data.
 - A colour gradient can be selected to represent the distribution of the data
 
-__For example__, create 6 classes of population sizes and assign a color gradient from white to red to indicate the population size in a district (see [Module 3: Geodata Classifification](/content/Modul_3/en_qgis_data_classification.md)).
+__For example__, create 6 classes of population sizes and assign a color gradient from white to red to indicate the population size in a district (see [Module 3: Geodata Classifification](/content/Module_3/en_qgis_data_classification.md)).
 
 :::
 

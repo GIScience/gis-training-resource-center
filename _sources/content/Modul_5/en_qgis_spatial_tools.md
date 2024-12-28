@@ -4,7 +4,7 @@
 
 Spatial processing uses spatial information to extract new meaning from GIS data. It does so by using the __spatial relationship__ of different layers or features. Spatial relationships describe how things are located in relation to one another. In humanitarian work, this helps answer critical questions like “Which communities are near a water source?” or “Which areas are isolated from health services?”. Or, we might want to identify the best locations for distributing aid, assess flood risk areas, or plan evacuation routes.
 
-We have already encountered spatial relationships in module 3 in the subchapter on __[geometrical operators](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_data_queries.html#geometric-operators)__— also called geometrical predicates in QGIS. 
+We have already encountered spatial relationships in module 3 in the subchapter on __[geometrical operators](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_data_queries.html#geometric-operators)__— also called geometrical predicates in QGIS. 
 The table below describes spatial relationships and gives examples when these spatial relationships are relevant in humanitarian aid. 
 
 | __Spatial Relationship__ | __Description__ | __*Humanitarian Example*__ |

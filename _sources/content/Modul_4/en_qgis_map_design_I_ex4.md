@@ -1,8 +1,8 @@
 # Map design Exercise : Creating a Map of Pakistan
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_modul_3_exercises.html
-__Click here to return to the exercise overview page for module 3__ 
+:link: https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_modul_4_exercises.html
+__Click here to return to the exercise overview page for module 4__ 
 :::
 ::::{grid} 2
 :::{grid-item-card}
@@ -51,8 +51,9 @@ In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced
 
 ### Available Data
 
-You have created the data for Larkana in [Module 3, Exercise 4](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_module_3_ex2.html). In order to conduct this exercise please create a folder on your computer and copy your entire folder structure of Exercise 4 in there. In case you did not do Module 3 - Exercise 4 you can download the data [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/Exercise_2/Module_4_Exercise_2_Larkana_flood_map.zip). Save the folder on your computer an unzip the file.
+You have created the data for Larkana in [Module 3, Exercise 4](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex2.html). In order to conduct this exercise please create a folder on your computer and copy your entire folder structure of Exercise 4 in there. In case you did not do Module 3 - Exercise 4 you can download the data [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/Exercise_2/Module_4_Exercise_2_Larkana_flood_map.zip). Save the folder on your computer an unzip the file.
 
+<!--CHECK: Is the link to the nexus correct?-->
 
 | Dataset name| Original title|Publisher|Download from| 
 | :-------------------- | :----------------- |:----------------- |:----------------- |
@@ -165,7 +166,7 @@ Open the __Symbology Tab__ for the `PAK_flood_2024_blocked_road`-layer and choos
 
 __Airport__
 
-In the [previous exercise](/content/Modul_3/en_qgis_module_3_ex2.md) you found out that the Mohenjodaro Airport in the southwest of Larkana City is still accessible via the road network. Essential supplies could potentially be transported from the airport into the city without encountering any roadblocks. We want to point out this possibility. Let's mark the airport as a point and visualize it!
+In the [previous exercise](/content/Module_3/en_qgis_module_3_ex2.md) you found out that the Mohenjodaro Airport in the southwest of Larkana City is still accessible via the road network. Essential supplies could potentially be transported from the airport into the city without encountering any roadblocks. We want to point out this possibility. Let's mark the airport as a point and visualize it!
 
 To do so we will create an entirely new point dataset representing airports.
 * Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#create-a-new-layer)) 

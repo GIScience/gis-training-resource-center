@@ -85,7 +85,7 @@ Keep in mind that you don't need to follow the module structure. It is there to 
         QGIS installation  
         QGIS interface  
     - 
-        [Exercise 1: Understanding the Interface](https://giscience.github.io/gis-training-resource-center/content/Modul_1/en_qgis_interface_ex2.html)
+        [Exercise 1: Understanding the Interface](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_interface_ex1.html)
     - 
         [QGIS Basics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_qgis_basics_wiki.html)
 *   - __Module 2: Working with Geodata__
@@ -98,7 +98,7 @@ Keep in mind that you don't need to follow the module structure. It is there to 
         Data sources  
         Attribute table
     - 
-        [Exercise 1: Geodata Concept](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_geodata_concept_ex1.html)  
+        [Exercise 1: Geodata Concept](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept_ex1.html)  
         [Exercise 2: The World](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_modul_2_ex_1.html)  
     - 
         [Geodata](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_wiki.html)  
@@ -112,10 +112,10 @@ Keep in mind that you don't need to follow the module structure. It is there to 
         Geodata selection and queries  
         Geodata classification  
     - 
-        [Exercise 1: Access to financial institutions](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation_ex2.html)  
-        [Exercise 2: Overview map of the prevalence of stunting in Sierra Leone](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_classification_ex1.html)  
+        [Exercise 1: Access to financial institutions](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_digitalisation_ex.html)  
+        [Exercise 2: Overview map of the prevalence of stunting in Sierra Leone](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_classification_exe.html)  
         Big Exercise: 
-        [Exercise 3: Nigeria Floods](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_modul_3_ex1.html)  
+        [Exercise 3: Nigeria Floods](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex4.html)  
     - 
         [Digitization](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html)  
         [Geodata classification](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_data_classification_wiki.html)  
