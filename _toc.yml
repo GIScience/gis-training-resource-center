@@ -27,13 +27,13 @@ parts:
           - file: content/Module_2/en_qgis_module_2_exercises.md
   - caption: Module 3
     chapters:
-      - file: content/Modul_3/en_module_3_overview.md
+      - file: content/Module_3/en_module_3_overview.md
         sections:
-          - file: content/Modul_3/en_qgis_digitalisation.md
-          - file: content/Modul_3/en_qgis_data_classification.md
-          - file: content/Modul_3/en_qgis_data_queries.md
-          - file: content/Modul_3/en_qgis_georeferencing.md
-          - file: content/Modul_3/en_qgis_modul_3_exercises.md
+          - file: content/Module_3/en_qgis_digitalisation.md
+          - file: content/Module_3/en_qgis_data_classification.md
+          - file: content/Module_3/en_qgis_data_queries.md
+          - file: content/Module_3/en_qgis_georeferencing.md
+          - file: content/Module_3/en_qgis_module_3_exercises.md
   - caption: Module 4 
     chapters:
       - file: content/Modul_4/en_module_4_overview.md

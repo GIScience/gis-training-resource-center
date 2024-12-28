@@ -186,7 +186,7 @@ lower densities.
 different locations. The larger the circle, the higher the data value it represents. This makes it useful for showing quantities or comparing values across different 
 points on a map. 
 - For choropleth maps, colours or shades represent different values for each area. Usually, the darker or more intense colour signifies higher values. The effectiveness of a choropleth map is dependent on the __colouring scheme__. 
-- Choropleth maps are usually created by [classifying](/content/Modul_3/en_qgis_data_classification.md) geodata into 
+- Choropleth maps are usually created by [classifying](/content/Module_3/en_qgis_data_classification.md) geodata into 
 distinct groups, either using categorised or graduated classification. 
 - Graduated symbols maps are created by changing the size of a symbol in relation to a value in the attribute table. 
 

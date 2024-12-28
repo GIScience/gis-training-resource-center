@@ -143,8 +143,8 @@ Open the Excel or pdf file “Nigeria_flood_2022_affacted_population” and open
     * When you are done, click ![](/fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by again clicking on ![](/fig/mActionToggleEditing.png)([Wiki Video](/content/Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)). 
 8. To visualise the enriched data set, we use the function "Categorized Classification" function. This means that we select a column from the attribute table and use the content as categories to sort and display the data ([Wiki Video](/content/Wiki/en_qgis_categorized_wiki.md)).
     * Right-click on the layer “Borno_admin2_pop” in the `Layer Panel` -> `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
-    * On the top you find a dropdown menu. Open it and choose `Categorized`. Under `Value` select “Flood_affacted”.
-    * Further down the window, click on `Classify`.  Now you should see all unique values or attributes of the selected “Flood_affacted” column.  You can adjust the colours by double-clicking on one row in the central field. Once you are done, click `Apply` and `OK` to close the symbology window.
+    * On the top you find a dropdown menu. Open it and choose `Categorized`. Under `Value` select “Flood_affected”.
+    * Further down the window, click on `Classify`.  Now you should see all unique values or attributes of the selected “Flood_affected” column.  You can adjust the colours by double-clicking on one row in the central field. Once you are done, click `Apply` and `OK` to close the symbology window.
 ```{figure} /fig/en_qgis_categorized_classification_nigeria_flood_exercise.png
 ---
 width: 600px
@@ -152,7 +152,7 @@ name:
 align: center
 ---
 ```
-9. Next, we want to visualise the affected communities which are listed in the Nigeria_flood_2022_affacted_population table. To find these communities in QGIS, we need two things. An OpenStreetMap base map and the plugin `OSM Place Search`. 
+9. Next, we want to visualise the affected communities which are listed in the Nigeria_flood_2022_affected_population table. To find these communities in QGIS, we need two things. An OpenStreetMap base map and the plugin `OSM Place Search`. 
     * To add the OSM as a base map click on `Layer` -> `Add Layer` -> `Add XYZ Layer…`. Choose `OpenStreetMap` and click `Add`. 
     Arrange your layer in the `Layer Panel` so the OSM is at the bottom ([Wiki Video](/content/Wiki/en_qgis_basemaps_wiki.md))
 . 
