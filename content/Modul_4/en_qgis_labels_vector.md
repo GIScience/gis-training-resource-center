@@ -134,7 +134,7 @@ Numerical Labels
 ---
 name: graduated symbology instead numerical values
 ---
-[Graduated Symbology](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_data_classification.html#graduated-classification)
+[Graduated Symbology](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_data_classification.html#graduated-classification)
 :::
 
 ::::
