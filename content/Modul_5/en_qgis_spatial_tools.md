@@ -242,9 +242,9 @@ By default, QGIS provides three different tools to perform spatial joins. The fi
 __"Join attributes by location"__. Furthermore, there are also the tools __"Join attributes by location (summary)"__ and 
 __"Join attributes by nearest"__.
 
-::::{tab-set}
+:::::{tab-set}
 
-:::{tab-item} Join attributes by location
+::::{tab-item} Join attributes by location
 
 This tool takes two input layers and creates a new vector layer which has the attributes of both layers in its attribute table.
 The first input layer (see "Join to features in" in {numref}`join_attributes_by_location`) dictates which geometric features will be copied to the new 
@@ -252,33 +252,33 @@ layer. The second input layer (see "By comparing to" in {numref}`join_attributes
 layer on top of the attributes of the first input layer. You can select which of these attributes should be transferred to the new layer. 
 
 
-```{figure} /fig/en_join_attributes_by_location.png
+```{figure} /fig/en_spatial_join_1.PNG
 ---
-width: 400 px
+width: 450 px
 name: join_attributes_by_location
 ---
 The "Join Attributes by Location"-tool in QGIS 3.36.
 ```
 
-:::
+::::
 
-:::{tab-item} Join attributes by location (summary)
+::::{tab-item} Join attributes by location (summary)
 
 This tool is similar to the "Join Attributes by Location"-tool. However, on top of adding the attributes from one layer to another, this algorithms also 
 calculates statistical summaries for the values from matching features in the second layer. These summaries include a wide range of options, such as 
 __minimum and maximum values__, __mean values__, as well as __counts__, __sums__, __standard deviation__, and more. 
 
-```{figure} /fig/en_join_attributes_by_location_summary.png
+```{figure} /fig/en_spatial_join_3.PNG
 ---
-width: 400 px
+width: 450 px
 name: join_attribute_by_location_summary
 ---
 Screenshot of the tool Join attributes by location (summary) in QGIS 3.36
 ```
 
-:::
+::::
 
-:::{tab-item} Join attributes by nearest
+::::{tab-item} Join attributes by nearest
 
 This type of spatial join is similar to the other two joins but the joining of features occurs by 
 __identifying the closest features__ from each of these layers. Furthermore, if a maximum distance 
@@ -286,24 +286,24 @@ is specified, only the features that are within this designated distance will be
 suitable matches for the joining process.
 
 
-```{figure} /fig/en_join_attributes_by_nearest.PNG
+```{figure} /fig/en_spatial_join_2.PNG
 ---
-width: 400 px
-name: join_attribute_by_location_neares
+width: 450 px
+name: join_attribute_by_location_nearest
 ---
 Screenshot of the tool Join attributes by nearest in QGIS 3.36
 ```
 
-:::
-
 ::::
+
+:::::
 
 :::{note}
 A detailed description of the functions and settings of these tools can be found in the [QGIS documentation](https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html#join-attributes-by-location)
 
 :::
 
-### Exercise: Calculate sum of affected population and flooded area for the Area of interest__
+### Exercise: Calculate sum of affected population and flooded area for the Area of interest
 
 
 In the aftermath of flooding events, data on the affected population and the extent of flooding is crucial. 
@@ -418,6 +418,7 @@ The GDAL tools Clip vector by extent and Clip vector by mask layer
 ::::{tab-set}
 
 :::{tab-item} Clip vector by extent
+
 This operation clips any vector file to a given extent. This clip extent will be defined by a bounding box that should be used for the vector output file. It also has to be defined in the target CRS coordinates. There are different methods to define the bounding box, which are the great difference between this tool and the standard clipping process:
 * Calculate from a layer: this uses the extent of a layer loaded into the current project
 * Calculate from layout map: uses the extent of a layout map item in the active project
@@ -428,7 +429,7 @@ This operation clips any vector file to a given extent. This clip extent will be
 
 ```{figure} /fig/en_clip_vector_by_extent.PNG
 ---
-width: 400 px
+width: 450 px
 name: en_clip_vector_by_extent
 ---
 Screenshot of the tool Clip vector by extent
@@ -443,7 +444,7 @@ This operation uses a mask polygon layer to clip any vector layer. This operatio
 
 ```{figure} /fig/en_clip_vector_by_mask_layer.PNG
 ---
-width: 400 px
+width: 450 px
 name: clip_vector_by_mask_layer
 ---
 Screenshot of the tool Clip vector by mask layer
