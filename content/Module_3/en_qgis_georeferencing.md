@@ -77,7 +77,7 @@ Opening the Georeferencer in QGIS 3.36
 
 ```{note} Setting the appropriate Coordinate Reference System 
 :class: tip
-Ideally, you want to set the CRS of the georeferenced map to the same as your project/the other layers in your project. To learn how to choose an appropriate CRS, check out the [chapter on projections](/content/Modul_2/en_qgis_projections.md) in module 1.
+Ideally, you want to set the CRS of the georeferenced map to the same as your project/the other layers in your project. To learn how to choose an appropriate CRS, check out the [chapter on projections](/content/Module_2/en_qgis_projections.md) in module 1.
 ```
 
 ::::{margin}

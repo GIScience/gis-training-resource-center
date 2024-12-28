@@ -156,20 +156,21 @@ Do not forget to save your project from time to time!
 
 ## Task 2: Estimation of Flood Impact on the Health Sector in Larkana
 
-:::{card}
+::::{card}
+
 ```{figure} /fig/IFRC-icons-colour_Health.svg
 ---
 width: 100px
-name: 
 align: right
-
 name: IFRC HEalth Icon
 ---
 ```
+
 Context: 
 
 Posts on social media have indicated a significant impact on the healthcare system in the region. You have been tasked to find out as much as you can about the situation and, if feasible, to estimate the impact on the health system.
-:::
+
+::::
 
 1. The first thing to do is to find out where the health facilities are located in the area. To do that, you do a quick search on HDX. You find the dataset Pakistan Health Facilities (OpenStreetMap Export). This will do for now.
 

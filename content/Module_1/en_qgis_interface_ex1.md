@@ -1,6 +1,6 @@
 # Exercise 1: Understanding the QGIS Interface
 
-__🔙[Back to Homepage](/content/intro.md)__
+__[🔙🏠](/content/intro.md)__
 
 ## Aim of the exercise
 

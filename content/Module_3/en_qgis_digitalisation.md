@@ -113,23 +113,23 @@ Digitizing Toolbar in QGIS 3.36
 ```
 
 :::{dropdown} Digitalization Toolbar
-|Tool|Purpose|Tool|Purpose|
+| Tool | Purpose | Tool | Purpose |
 |---|---|-----|---|
-|![](/fig/mActionAllEdits.png) |Access to save, rollback or cancel changes in all or selected layers simultaneously | ![](/fig/mActionToggleEditing.png)|Turn on or off edit status of selected layer(s) based on the active layer status|
-|![](/fig/mActionSaveEdits.png) |Save edits   | |
-|![](/fig/mActionDigitizeWithSegment.png) |Digitise using straight segments |![](/fig/mActionDigitizeWithCurve.png)|Digitize using curve lines|
-|![](/fig/mActionStreamingDigitize.png)|Enable freehand digitising|![](/fig/mActionDigitizeShape.png) |Digitise polygon of regular shape  |
-|![](/fig/mActionNewTableRow.png)  |Add new record   | ![](/fig/mActionCapturePoint.png)| Add Feature: Capture Point |
-|![](/fig/mActionCaptureLine.png) |Add Feature: Capture Line   |![](/fig/mActionCapturePolygon.png)|Add Feature: Capture Polygon  |
-|![](/fig/mActionVertexTool.png) |Vertex Tool (All Layers) | ![](/fig/mActionVertexToolActiveLayer.png)|Vertex Tool (Current Layer)  |
-|![](/fig/checkbox.png)|Set whether the vertex editor panel should auto-open|![](/fig/mActionMultiEdit.png)|Modify the attributes of all selected features simultaneously |
-|![](/fig/mActionDeleteSelectedFeatures.png) |Delete selected features from the active layer   |![](/fig/mActionEditCut.png) |Cut features from the active layer  |
-|![](/fig/mActionCopySelected.png) |Copy selected features from the active layer   |![](/fig/mActionEditPaste.png) |Paste features into the active layer  |
-|![](/fig/mActionUndo.png) |Undo changes in the active layer   | ![](/fig/mActionRedo.png)|Redo changes in active layer  |
+| ![](/fig/mActionAllEdits.png) | Access to save, rollback or cancel changes in all or selected layers simultaneously | ![](/fig/mActionToggleEditing.png) | Turn on or off edit status of selected layer(s) based on the active layer status |
+| ![](/fig/mActionSaveEdits.png) |Save edits   | |
+| ![](/fig/mActionDigitizeWithSegment.png) | Digitise using straight segments | ![](/fig/mActionDigitizeWithCurve.png) | Digitize using curve lines |
+| ![](/fig/mActionStreamingDigitize.png) | Enable freehand digitising|![](/fig/mActionDigitizeShape.png) |Digitise polygon of regular shape  |
+| ![](/fig/mActionNewTableRow.png)  | Add new record   | ![](/fig/mActionCapturePoint.png) | Add Feature: Capture Point |
+| ![](/fig/mActionCaptureLine.png) | Add Feature: Capture Line   | ![](/fig/mActionCapturePolygon.png) | Add Feature: Capture Polygon |
+| ![](/fig/mActionVertexTool.png) | Vertex Tool (All Layers) | ![](/fig/mActionVertexToolActiveLayer.png) |Vertex Tool (Current Layer) |
+| ![](/fig/checkbox.png) | Set whether the vertex editor panel should auto-open | ![](/fig/mActionMultiEdit.png) | Modify the attributes of all selected features simultaneously |
+| ![](/fig/mActionDeleteSelectedFeatures.png) | Delete selected features from the active layer | ![](/fig/mActionEditCut.png) | Cut features from the active layer |
+| ![](/fig/mActionCopySelected.png) | Copy selected features from the active layer | ![](/fig/mActionEditPaste.png) | Paste features into the active layer |
+| ![](/fig/mActionUndo.png) | Undo changes in the active layer | ![](/fig/mActionRedo.png) | Redo changes in active layer |
 
 :::
 
-For more complex digitisation procedures, you will use the advanced digitisation toolbar. However, for this chapter, we will focus on the normal digitisatin toolbar. 
+For more complex digitisation procedures, you will use the advanced digitisation toolbar. However, for this chapter, we will focus on the normal digitisation toolbar. 
 
 :::{dropdown} Advanced digitizing Toolbar
 
@@ -192,7 +192,7 @@ indicators. You can discuss in groups and write it down on paper or add it to a 
 ```{figure} /fig/New_GeoPackage_Layer.png
 ---
 width: 500px
-name: Digitalisation Toolbar 
+name: new_gpgk_layer
 align: center
 ---
 The Layer Creation window in QGIS 3.36.
@@ -209,8 +209,8 @@ After you are done manipulating the layer click on ![](/fig/mActionSaveEdits.png
 your edits. 
 ```
 
-Once you have set up the new layer, you can start adding geofeatures. The process for the three geometric types 
-is basically the same: 
+Once you have set up the new layer, you can start adding geometrical features. The process for the three geometric 
+types is basically the same: 
 
 ### Creating new data entries
 
@@ -309,8 +309,8 @@ name: gmaps_rightclick_coords
 
 The process of creating line or polygon layers is essentially the same as creating point data. The main difference is 
 that instead of only adding one point, line and polygon geometries require several points (vertices). Each point you 
-add is a vertext between two lines. In QGIS, you create lines and polygons by setting one point, and then another point 
-connected to the previously added point. To finish adding the feature use the <kbd>Right mouse botton</kbd>. 
+add is a vertex between two lines. In QGIS, you create lines and polygons by setting one point, and then another point 
+connected to the previously added point. To finish adding the feature use the <kbd>Right mouse button</kbd>. 
 
 ```{attention} 
 Remember to change the geometry type into lines if you want to create a new line layer.
