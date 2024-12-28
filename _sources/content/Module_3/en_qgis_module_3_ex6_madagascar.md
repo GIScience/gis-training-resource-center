@@ -30,6 +30,7 @@ Participants will work with multiple layers and conduct spatial queries. Additio
 :::
 
 :::{grid-item-card}
+
 ### Relevant wiki articles
 
 * [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)
@@ -103,6 +104,7 @@ Reprojected and fixed Flood extend layer can be downloaded __[here](https://nexu
 ```{hint} Folder structure
 
 To keep your data organized and easily accessible, it's important to establish a clear folder structure on your computer for your QGIS projects and geodata. Ensure that your exercise data are saved in a location that allows for easy retrieval and association with the corresponding QGIS project.
+
 ```
 
 
@@ -380,7 +382,7 @@ In order to get a clearer picture, we need to import the road network data for t
 5. Now, we have mapped all roads in our AOI that are blocked by the flood. We can use icons instead of just points to display the layer __“MDG_flood_2024_blocked_road”__ to visualise this fact better [wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_single_symbol_wiki.html).
 
     * Right-click on the layer __“MDG_flood_2024_blocked_road”__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
-    * Keep the `Single Symbol` option. Select any symbol from the list that is appropriate for marking blocked roads (make sure the filter is set to `Favourites` or `All Symbols`.
+    * Keep the `Single Symbol` option. Select any symbol from the list that is appropriate for marking blocked roads (make sure the filter is set to `Favourites` or `All Symbols`).
     * Once you are done, click `Apply` and `OK` to close the symbology window.
     * After you are done, click on the icon ![](/fig/qgis_move_symbol.png) to end the feature selection mode.
     ```{figure} /fig/m3_ex6_qgis_task3_5.png

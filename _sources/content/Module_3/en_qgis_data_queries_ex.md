@@ -20,6 +20,7 @@ __🔙[Back to Homepage](/content/intro.md)__
 
 ## Data
 Download all the datasets [here](), save the folder on your computer, and unzip the file. The zip folder includes:
+
 - `som_admbnda_adm2_ocha_20230308.shp`: This file contains information about the Somali administrative level 0-2, state, and operational zone level 1 and 2 boundary as shapefiles. The data can also be found on [HDX](https://data.humdata.org/dataset/cod-ab-som).
 - `GF2_20231123_FloodExtent_BeledweyneCity_HiraanRegion.shp`: This shapefile illustrates satellite-detected surface waters in Beledweyne City, Beledweyne District, Hiraan Region, Somalia, on 12th of November 2023 at 07:32 UTC. The data is also available on [HDX](https://data.humdata.org/dataset/water-extent-in-beledweyne-city-beledweyne-district-hiraan-region-somalia-12-november-2023).
 - `Buildings_Belete_Weyne.geojson`: This dataset is downloaded using [HOT Export Tool](https://export.hotosm.org/v3/exports/new/describe) and contains information about buildings in the Beledweyne district.
@@ -27,7 +28,7 @@ Download all the datasets [here](), save the folder on your computer, and unzip 
 The folder is called **Module_3_Exercise_1_Queries_Somalia** and contains the entire [standard folder structure](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure) with all data in the input folder.
 
 ``` {Note}
-The naming of the districts and states is not consistent across the different datasets. You will find different spellings for the district name **Beledweyne** which we will be focusing on. Other spellings might be **Belet Weyne** or **Belete Weyne**. 
+The naming of the districts and states is not consistent across the different datasets. You will find different spellings for the district name **Beledweyne** which we will be focusing on. Other spellings might be **Belet Weyne** or **Belete Weyne**. In many cases, you will have to edit the values in the datasets to remove different spelling of spelling mistakes. This process is called "data cleaning".
 ```
 
 ## Tasks
