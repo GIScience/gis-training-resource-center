@@ -23,4 +23,5 @@ values and see their spatial distribution.
 | __[Chapter 4: Georeferencing](/content/Modul_3/en_qgis_georeferencing.md)__ | At the end of this chapter, you should: Know how to georeference a map in QGIS; know how to set the transparency of a georeferenced (raster) layer; Know how to digitise vector features from a georeferenced map. | 
 | __[Exercises for Module 3](/content/Modul_3/en_qgis_modul_3_exercises.md)__ | Here, you can find all the exercises for module 3. | 
 
+
 <!--ADD: after revamp of chapter 2 this needs to be adjusted-->

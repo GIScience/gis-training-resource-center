@@ -1,0 +1,880 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Exercise 2 (Geodata Classification): Map of food insecurity in Sierra Leone &#8212; GIS Resource Training Center</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/Modul_3/en_qgis_classification_ex';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-light" alt="GIS Resource Training Center - Home"/>
+    <script>document.write(`<img src="../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-dark" alt="GIS Resource Training Center - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to the IFRC Network GIS Training Platform
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 1</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_1/en_module_1_overview.html">Introduction to GIS</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_theorie.html">What is GIS?</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_installation.html">Setting up</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_start.html">Getting started with QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_module_1_exercises.html">Exercises for Module 1</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 2</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_2/en_module_2_overview.html">Working with Geodata</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_geodata_concept.html">Introduction to geodata and layers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_projections.html">Projections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_geodata_management.html">Geodata management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_attribute_table.html">Attribute Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/en_data_sources.html">Data sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_basemap.html">Basemaps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_module_2_exercises.html">Exercises for Module 2</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 3</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="en_module_3_overview.html">Basic GIS Operations</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_digitalisation.html">Digitisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_data_classification.html">Geodata Classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_data_queries.html">Geodata Selection and Queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_georeferencing.html">Georeferencing</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 4</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Modul_4/en_module_4_overview.html">Visualisation of Geodata and Map Making</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_map_design_I.html">Symbology and Colours</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_styling_vector_data.html">Styling Vector Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_labels_vector.html">Labels for Vector Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_working_with_styles.html">Exporting and Importing Styles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_symbology_raster.html">Symbology for Raster Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_map_design_2.html">The Print layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_understanding_print_layout.html">Understanding the Print Layout Composer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_map_examples.html">Good Map Design &amp; Semiological Errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_4/en_qgis_modul_4_exercises.html">Exercises for Module 4</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 5</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Modul_5/en_module_5_overview.html">Intermediate GIS Operations</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_5/en_qgis_spatial_tools.html">Spatial data processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_5/en_qgis_non_spatial_tools.html">Non-Spatial processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_5/en_qgis_modul_5_exercises.html">Exercises for Module 5</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 6</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Modul_6/en_module_6_overview.html">Data Analysis with QGIS</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_6/en_qgis_data_analysis_theorie.html">Data Analysis with QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_6/en_qgis_common_data_analysis.html">Data Analysis in the Humanitarian Sector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_6/en_qgis_modul_6_exercises.html">Exercises Module 6 - Data Analysis with QGIS</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 7</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Modul_7/en_module_7_overview.html">Automation with QGIS</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_7/en_qgis_automation_theory.html">Automation theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_7/en_qgis_modul_7_ex1.html">Exercises 1: Automatisation</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 8</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Modul_8/en_module_8_overview.html">Remote Sensing and Raster Data</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_8/en_qgis_remote_sensing_raster_theorie.html">Remote Sensing and Raster data theory 🛰️</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_8/en_qgis_remote_sensing_theory.html">Introduction to Remote Sensing and Remote Sensing Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_8/en_qgis_modul_8_ex1.html">Rasterdata Exercise 1: Basic Assessment of Flood Exposure in the Indus Basin in Pakistan</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Module 9</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Modul_9/en_module_9_overview.html">Network Analysis</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_9/en_qgis_network_analysis_theory.html">Spatial Network Analysis Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_9/en_qgis_openrouteservice_tools.html">Plugin: Openrouteservice (ORS) tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_9/en_qgis_centrality.html">Network centrality measures and its application in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Modul_9/en_qgis_modul_9_exercises.html">Exercises Module 9: Network Analysis</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Wiki</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_qgis_basics_wiki.html">QGIS Basics</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_installation_wiki.html">QGIS installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_interface_wiki.html">QGIS Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_projects_folder_structure_wiki.html">Projects and Folder Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_projections_wiki.html">Projections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_basemaps_wiki.html">Basemaps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_plugins_wiki.html">Plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_data_sources_wiki.html">Data sources</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_geodata_wiki.html">Geodata</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_geodata_types_wiki.html">Types of Geodata</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_import_geodata_wiki.html">Geodata Import in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_OpenStreetMap_wiki.html">OpenStreetMap (OSM) Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_layer_concept_wiki.html">Layer Concept</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_attribute_table_wiki.html">Attribute Table in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_digitalization_wiki.html">Digitisation</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_data_classification_wiki.html">Geodata Classification</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_single_symbol_wiki.html">Single symbol classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_categorized_wiki.html">Categorized classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_graduated_wiki.html">Graduated classification</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_geoprocessing_wiki.html">Geoprocessing</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_queries_wiki.html">Spatial and Non-spatial queries</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_spatial_queries_wiki.html">Spatial Queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_non_spatial_queries_wiki.html">Non-Spatial Queries</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_table_functions_wiki.html">Table function</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_joins_wiki.html">Joins</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_spatial_joins_wiki.html">Spatial Joins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_non_spatial_joins_wiki.html">Non-Spatial Joins</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_raster_wiki.html">Raster</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_raster_basic_wiki.html">Basic Raster operations</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_automatisation_wiki.html">Automatisation in QGIS</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_model_builder_wiki.html">Model Builder</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_representation_wiki.html">Map making and visualisation in QGIS</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_visualisation_wiki.html">Visualisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_map_making_wiki.html">Map making Wiki</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_common_errors_and_Issues.html">QGIS common errors and issues <!-- omit from toc --></a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/en_web_and_mobile_apps_wiki.html">Web &amp; mobile GIS applications</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">GIS in Anticipatory Action</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_drought_trigger_somalia.html">QGIS Trigger Workflow for Somalia</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_risk_assessment_plugin.html">Risk Assessment QGIS Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_historical_impact_assessment_sudan.html">Historical Impact Assessment (HIA) for Flood in Sudan</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_GIS_AA_exercises.html">Exercises- GIS in Anticipatory Action</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Mobile Data Collection</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Mobile_Data_collection/en_SMT.html">Sketch Map Tool</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_training.html">Sketch Map Tool Training</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Trainers corner</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/en_TOT_intro.html">Train of trainers introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/en_how_to_training.html">How to plan a whole GIS Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/en_training_graphical_outline.html">Training Agenda and Handout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/en_training_day_structure.html">How to plan and structure a GIS Training Session</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/en_how_to_teach_GIS.html">How to teach GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/en_how_to_assessment.html">Assessments in GIS Training: A Guide</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../About/about_1.html"><strong>Welcome at the GIS Training Resource Center!</strong></a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Glossary</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Glossary/en_glossary_1.html">Glossary (Draft)</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center/issues/new?title=Issue%20on%20page%20%2Fcontent/Modul_3/en_qgis_classification_ex.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/content/Modul_3/en_qgis_classification_ex.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Exercise 2 (Geodata Classification): Map of food insecurity in Sierra Leone</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristics-of-the-exercise">Characteristics of the exercise</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions-for-the-trainers">Instructions for the trainers</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="exercise-2-geodata-classification-map-of-food-insecurity-in-sierra-leone">
+<h1>Exercise 2 (Geodata Classification): Map of food insecurity in Sierra Leone<a class="headerlink" href="#exercise-2-geodata-classification-map-of-food-insecurity-in-sierra-leone" title="Permalink to this heading">#</a></h1>
+<section id="characteristics-of-the-exercise">
+<h2>Characteristics of the exercise<a class="headerlink" href="#characteristics-of-the-exercise" title="Permalink to this heading">#</a></h2>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="rubric">Aim of the exercise</p>
+<p class="sd-card-text">This exercise aims to create an overview map of the distribution of food insecurity in Sierra Leone at district level. To do this, we will visualise both the distribution of food insecurity and key infrastructure elements such as hospitals, airports and roads.</p>
+<p class="rubric">Type of trainings exercise:</p>
+<ul class="simple">
+<li><p class="sd-card-text">This exercise can be used in online and presence training.</p></li>
+<li><p class="sd-card-text">It can be done as a follow-along exercise or individually as a self-study.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="rubric">These skills are relevant for</p>
+<ul class="simple">
+<li><p class="sd-card-text">QGIS Essentials</p></li>
+<li><p class="sd-card-text">The skills tested in this exercise are necessary for all GIS-users.</p></li>
+<li><p class="sd-card-text">Classifying geographic data</p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="rubric">Estimated time demand for the exercise.</p>
+<ul class="simple">
+<li><p class="sd-card-text">The exercise takes around 1 hour to complete, depending on the number of participants and trainers.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="rubric">Relevant Wiki Articles</p>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_interface_wiki.html"><span class="doc std std-doc">QGIS Interface</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_geodata_types_wiki.html"><span class="doc std std-doc">Types of Geodata</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_import_geodata_wiki.html"><span class="doc std std-doc">Geodata Import in QGIS</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_layer_concept_wiki.html"><span class="doc std std-doc">Layer Concept</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_attribute_table_wiki.html"><span class="doc std std-doc">Attribute table</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_table_functions_wiki.html"><span class="doc std std-doc">Table function - Add field</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_categorized_wiki.html"><span class="doc std std-doc">Geodata Classification- Categorized</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_graduated_wiki.html"><span class="doc std std-doc">Geodata Classification- Graduated</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_digitalization_wiki.html"><span class="doc std std-doc">Digitization- Point data</span></a></p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="instructions-for-the-trainers">
+<h2>Instructions for the trainers<a class="headerlink" href="#instructions-for-the-trainers" title="Permalink to this heading">#</a></h2>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Trainers Corner</strong> <div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="rubric">Prepare the training</p>
+<ul class="simple">
+<li><p class="sd-card-text">Take the time to familiarise yourself with the exercise and the provided material.</p></li>
+<li><p class="sd-card-text">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</p></li>
+<li><p class="sd-card-text">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <strong>and unzipped</strong> the data folder.</p></li>
+<li><p class="sd-card-text">Check out <span class="xref myst">How to do trainings?</span> for some general tips on training conduction</p></li>
+</ul>
+<p class="rubric">Conduct the training</p>
+<p class="sd-card-text"><strong>Introduction:</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Introduce the idea and aim of the exercise.</p></li>
+<li><p class="sd-card-text">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</p></li>
+</ul>
+<p class="sd-card-text"><strong>Follow-along:</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</p></li>
+<li><p class="sd-card-text">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</p></li>
+<li><p class="sd-card-text">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</p></li>
+</ul>
+<p class="sd-card-text"><strong>Wrap up:</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Leave time for any issues or questions concerning the tasks at the end of the exercise.</p></li>
+<li><p class="sd-card-text">Leave some time for open questions.</p></li>
+</ul>
+</div>
+</details><section id="available-data">
+<h3>Available Data<a class="headerlink" href="#available-data" title="Permalink to this heading">#</a></h3>
+<p>Download all datasets <strong><a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_1/Module_3_Exercise_1_Flood_Nigeria.zip">here</a></strong> and save the folder on your computer. Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects. Under “data &gt; input” you will find the following files:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Sierra_leone_foodinsecurity_2015.shp</span></code> (Polygon) Shapefile</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Sierra_leone_borders.gpkg</span></code> (MultiLineString) GeoPackage</p>
+<ul>
+<li><p>Sierra_Leone_national_borders (Lines)</p></li>
+<li><p>Sierra_Leone_provinces (Lines)</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Sierra_leone_roads.gpd</span></code> (Lines) GeoPackage</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Sierra_leone_healthsites.gpkg</span></code> (Points) Geopackage</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sl_airports.gpkg</span></code> (Points) GeoPackage</p></li>
+</ul>
+</section>
+<section id="tasks">
+<h3>Tasks<a class="headerlink" href="#tasks" title="Permalink to this heading">#</a></h3>
+<p>Our goal is to produce an overview of the 2015 food insecurity situation in Sierra Leone together with the display of main infrastructure elements. To achieve this, we will visualise total food insecurity classifications alongside airports, hospitals, and primary roads in a map.</p>
+<ol class="arabic simple">
+<li><p>Open QGIS and create a <span class="xref myst">new project</span> by clicking on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span></code></p></li>
+<li><p>Once the project is created save the project in the “project” folder of the “Ex_Sierra_Leone_foodinsecurity”. To do that click on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">as</span></code> and navigate to the folder. Name the project “Sierra_Leone_foodinsecurity”.</p></li>
+<li><p>Import the GeoPackages <code class="docutils literal notranslate"><span class="pre">Sierra_leone_borders.gpkg</span></code>, <code class="docutils literal notranslate"><span class="pre">Sierra_leone_airports</span></code>, <code class="docutils literal notranslate"><span class="pre">Sierra_leone_healthsites</span></code> and <code class="docutils literal notranslate"><span class="pre">Sierra_leone_roads.gpkg</span></code> as well as the shapefile <code class="docutils literal notranslate"><span class="pre">Sierra_leone_foodinsecurity_2015.shp</span></code> into your project via drag and drop (<span class="xref myst">Wiki Video</span>).
+Or by clicking <code class="docutils literal notranslate"><span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code>: Click on the three dots <img alt="" src="../../_images/Three_points.png" /> and navigate to “Sierra_leone_borders.gpkg” in your file Browser. Select the file and click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Back in QGIS click <code class="docutils literal notranslate"><span class="pre">Add</span></code> (<span class="xref myst">Wiki Video</span>).</p></li>
+</ol>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>GeoPackages can contain multiple files and even whole QGIS projects. When you load such a file in QGIS a window will appear in which you have to select the files you want to load in your QGIS project.</p>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>First, let’s add a basemap to your map canvas using the plugin <code class="docutils literal notranslate"><span class="pre">QuickMapServices</span></code> by clicking on the <img alt="" src="../../_images/QMS_search_icon.png" /> symbol in you project toolbar. Search for “Bing Maps Satellite Imagery” in the QMS panel and add the base map layer via double click.  For an optimised view <a class="reference external" href="https://www.youtube.com/watch?v=WguUkN1YRzY&amp;ab_channel=GISBigfootAnswers">adjust the opacity</a> of your layers to optimise the use of the base map.</p></li>
+<li><p>Using  the attribute table of the airports layer zoom to Tongo Airport by right-clicking on the row in the attribute table and selecting <code class="docutils literal notranslate"><span class="pre">Zoom</span> <span class="pre">to</span> <span class="pre">Feature</span></code>(<span class="xref myst">Wiki Video</span>). Check the Basemap. Do you think the airstrip is still operational? The answer is no, according to Wikipedia. Delete Tongo Airport in the <a class="reference internal" href="../Wiki/en_qgis_attribute_table_wiki.html"><span class="doc std std-doc">Attribute table</span></a>. Delete Kabala airport too, since it is also not operational anymore.</p></li>
+<li><p>Now we want to check out the airports of the cities of Bo and Kenema. Are these airstrips in better shape? If yes, add them to the airport layer. To find these cities on your map interface use the QGIS Plugin <code class="docutils literal notranslate"><span class="pre">OSM</span> <span class="pre">Place</span> <span class="pre">Search</span></code>.
+To add the plugin <code class="docutils literal notranslate"><span class="pre">OSM</span> <span class="pre">Place</span> <span class="pre">Search</span></code>, click on <code class="docutils literal notranslate"><span class="pre">Plugins</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Manage</span> <span class="pre">and</span> <span class="pre">Install</span> <span class="pre">Plugins…</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">All</span></code> and search for “OSM Place Search”. Once you have found it click on it and select <code class="docutils literal notranslate"><span class="pre">Install</span> <span class="pre">Plugin</span></code>. You can open the <code class="docutils literal notranslate"><span class="pre">OSM</span> <span class="pre">Place</span> <span class="pre">Search</span> <span class="pre">Panel</span></code> like every other panel by clicking on <code class="docutils literal notranslate"><span class="pre">View</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Panels</span></code> and checking <code class="docutils literal notranslate"><span class="pre">OSM</span> <span class="pre">Place</span> <span class="pre">Search</span> <span class="pre">Panel</span></code>(<span class="xref myst">Wiki Video</span>).</p>
+<ul class="simple">
+<li><p>In the panel, you can search for places on the OpenStreetMap by typing the name in the search bar. Often it makes sense to add additional information like the name of the country. Try for example “Bo, Sierra Leone”.</p></li>
+</ul>
+</li>
+</ol>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="../../_images/mod3_classification_ex_OSMsearch.png"><img alt="../../_images/mod3_classification_ex_OSMsearch.png" src="../../_images/mod3_classification_ex_OSMsearch.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-text">OSM place search.</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Add the airports of Bo and Kenema as points to the layer <code class="docutils literal notranslate"><span class="pre">Sierra_Leone_airports</span></code>. Find help on the addition of features to a point layer <a class="reference internal" href="../Wiki/en_qgis_digitalization_wiki.html"><span class="doc std std-doc">here</span></a>.</p>
+<ol class="arabic simple" start="8">
+<li><p><em>Optional:</em> In the attribute table, create a new column <code class="docutils literal notranslate"><span class="pre">Runway_length</span></code> and add the length of the runways of Bo and Kenema by measuring them approximately with the measuring tool <img alt="" src="../../_images/measuring_tool_icon.png" />.</p></li>
+<li><p>Now we want to create a intuitive visualisation of the differences in food insecurity. To achieve this we use the “<a class="reference internal" href="../Wiki/en_qgis_graduated_wiki.html"><span class="doc std std-doc">Graduated Classification</span></a>” visualization option for the layer <code class="docutils literal notranslate"><span class="pre">Sierra_leone_foodinsecurity_2015</span></code> by displaying the polygons according to classes created based on the “Total_FI” column in the attribute table.</p>
+<ul class="simple">
+<li><p>Right-click on the layer <code class="docutils literal notranslate"><span class="pre">Sierra_leone_foodinsecurity_2015.shp</span></code> in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. A new window will open up with a vertical tab section on the left. Navigate to the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> tab.</p></li>
+<li><p>In the topmost dropdown menu choose <code class="docutils literal notranslate"><span class="pre">Graduated</span></code>. Under <code class="docutils literal notranslate"><span class="pre">Value</span></code> select “Total_FI”.</p></li>
+<li><p>Further down the window click on <code class="docutils literal notranslate"><span class="pre">Classify</span></code>. You now should see multiple classes based on the value range of the “TotalFI” column represented with different colours.  You can adjust the colours by picking different colour palettes in the drop down menu <code class="docutils literal notranslate"><span class="pre">Color</span> <span class="pre">ramp</span></code>. Also, you can modify the value distribution of the classes by selecting different classification modes (<a class="reference internal" href="../Wiki/en_qgis_graduated_wiki.html"><span class="doc std std-doc">Wiki</span></a>) in the <code class="docutils literal notranslate"><span class="pre">Mode</span></code> dropdown menu.</p></li>
+<li><p>Play around with these options to achieve a colour scheme that suits the data. Once you are done, click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code> to close the symbology window.</p></li>
+</ul>
+</li>
+</ol>
+<figure class="align-center" id="basic-classification">
+<a class="reference internal image-reference" href="../../_images/mod3_classification_ex_Graduatedclassification.png"><img alt="../../_images/mod3_classification_ex_Graduatedclassification.png" src="../../_images/mod3_classification_ex_Graduatedclassification.png" style="width: 900px;" /></a>
+<figcaption>
+<p><span class="caption-text">Sierra Leone food insecurity classification.</span><a class="headerlink" href="#basic-classification" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p>To give the hospitals and airports a more distinctive visualization, open the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> tab again for the respective layers and choose “Topology” in the dropdown menu above the bottom panel top panel. Search for the airport/hospital symbol and select it by clicking on it. Again, apply your changes by clicking <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
+</ol>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../../_images/mod3_classification_ex_Topology.png"><img alt="../../_images/mod3_classification_ex_Topology.png" src="../../_images/mod3_classification_ex_Topology.png" style="width: 900px;" /></a>
+<figcaption>
+<p><span class="caption-text">Symbol for hospital.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="11">
+<li><p>As a last visualisation step open the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> tab <code class="docutils literal notranslate"><span class="pre">Sierra_Leone_roads</span> <span class="pre">(Lines)</span></code> and like in step 9 open the top dropdown menu. Now instead of <code class="docutils literal notranslate"><span class="pre">Graduated</span></code> choose <a class="reference internal" href="../Wiki/en_qgis_categorized_wiki.html"><span class="doc std std-doc">Categorized Classification</span></a> and select “highway” in the <code class="docutils literal notranslate"><span class="pre">Value</span></code> menu. Click <code class="docutils literal notranslate"><span class="pre">Classify</span></code> to get a classification with individual colours for all unique values of the “highway” column. In the squares next to the classes, deselect all classes except for “primary”. You can change the colour of the classes by manually clicking and adjusting the colour in the drop “Symbol” dropdown menu near the top of the window.</p></li>
+</ol>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../../_images/mod3_classification_ex_Categorizedclassification.png"><img alt="../../_images/mod3_classification_ex_Categorizedclassification.png" src="../../_images/mod3_classification_ex_Categorizedclassification.png" style="width: 900px;" /></a>
+<figcaption>
+<p><span class="caption-text">Categorized highways Sierra Leone.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="12">
+<li><p>Set all the layers you loaded into your project to visible and arrange them in an order that is suitable for a good visualization of the food insecurity as well as the infrastructure elements. Choose a basemap that you think is suitable. Your final result could look like this:</p></li>
+</ol>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../../_images/mod3_classification_ex_Result.png"><img alt="../../_images/mod3_classification_ex_Result.png" src="../../_images/mod3_classification_ex_Result.png" style="width: 900px;" /></a>
+<figcaption>
+<p><span class="caption-text">Example for the result of this exercise.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The layer order here from top to bottom is:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Sierra_Leone_health</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Sierra_Leone_airports</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Sierra_Leone_roads</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Sierra_Leone_national_borders</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Sierra_leone_foodinsecurity_2015</span></code></p></li>
+<li><p>Basemap: <code class="docutils literal notranslate"><span class="pre">OpenStreetMap</span></code></p></li>
+</ul>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="../../_images/mod3_classification_ex_LayerOrder.png"><img alt="../../_images/mod3_classification_ex_LayerOrder.png" src="../../_images/mod3_classification_ex_LayerOrder.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Layer order.</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content/Modul_3"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristics-of-the-exercise">Characteristics of the exercise</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions-for-the-trainers">Instructions for the trainers</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By HeiGIT gGmbH
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024 CC BY-NC-SA 4.0.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
