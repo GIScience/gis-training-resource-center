@@ -1,7 +1,7 @@
 # Map design Exercise : Creating a Map of Pakistan
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_modul_4_exercises.html
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_module_4_exercises.html
 __Click here to return to the exercise overview page for module 4__ 
 :::
 ::::{grid} 2
@@ -260,7 +260,7 @@ Create a new Print Layout
     - On the left, you will find a toolbar with tools to add and move items on the print layout canvas.
     - On the right you will find a list of items you added to the print layout (it is still empty). Beneath this, you will find a tab called __"item properties"__. This is where you modify the items on your print layout (e.g. enter the text for a text box or change the font).
 
-2. Insert a new map by clicking on ![New Map Icon](/fig/30.30.2_print_layout_insert_map_icon.png) (`Add Map`) on the left toolbar, and drawing a rectangle on the print canvas. [Video](/content/Modul_4/en_qgis_map_design_2.md#adding-a-new-map)
+2. Insert a new map by clicking on ![New Map Icon](/fig/30.30.2_print_layout_insert_map_icon.png) (`Add Map`) on the left toolbar, and drawing a rectangle on the print canvas. [Video](/content/Module_4/en_qgis_map_design_2.md#adding-a-new-map)
 
 3. Move and position the map so that the area of interest is visible at a reasonable scale.
 
