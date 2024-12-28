@@ -508,7 +508,7 @@ align: center
 
 __Purpose:__ Definition of how features are represented visually on the map.
 
-__Tool:__ [Symbology](/content/Modul_4/en_qgis_map_design_I.md#symbology-for-vector-data)
+__Tool:__ [Symbology](/content/Module_4/en_qgis_map_design_I.md#symbology-for-vector-data)
 
 __Trigger Activation__
 
@@ -585,7 +585,7 @@ Remember the [layer concept](/content/Module_2/en_qgis_geodata_concept.md) and m
 
 __Purpose:__ Visualisation of the map features in a printable map layout
 
-__Tool:__  [Print Layout](/content/Modul_4/en_qgis_map_design_2.md)
+__Tool:__  [Print Layout](/content/Module_4/en_qgis_map_design_2.md)
 
 
 1. If not done before, delete all layers expect __Trigger_activation__, __Som_admin1_regions_UNDP__ and __OpenStreetMap__
@@ -606,7 +606,7 @@ __Tool:__  [Print Layout](/content/Modul_4/en_qgis_map_design_2.md)
 Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.
 ```
 
-You can also adapt the template to your needs and preferences. You can find help [here](/content/Modul_4/en_qgis_map_design_2.md#print-layout).
+You can also adapt the template to your needs and preferences. You can find help [here](/content/Module_4/en_qgis_map_design_2.md#print-layout).
 
 ```{Attention}
 Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.
@@ -618,7 +618,7 @@ Make sure you edit the Map Information on the template, e.g. current date. Also 
 __Purpose:__ Export the designed and finalised map layout in order to print it as a pdf or format of your choice.
 
 
-__Tool:__ [Print Layout](/content/Modul_4/en_qgis_map_design_2.md)
+__Tool:__ [Print Layout](/content/Module_4/en_qgis_map_design_2.md)
 
 When you have finished the design of you map, you can export it as pdf or image file in different data types.
 

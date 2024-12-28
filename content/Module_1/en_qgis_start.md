@@ -62,7 +62,7 @@ You will learn more about data processing and manipulation in [module 2](https:/
 QGIS let's you visualise geodata and create maps to communicate information. It does so by assigning symbols and colours 
 to different elements in your geodata. Assigning a symbology to the geodata is one of the main skills you will develop 
 as a GIS-user and a good visualisation of data is immensely useful when communicating insights. You will learn how to 
-assign symbols in [Module 4: Visualisation of Geodata and Map Making](/content/Modul_4/en_qgis_map_design_I.md)
+assign symbols in [Module 4: Visualisation of Geodata and Map Making](/content/Module_4/en_qgis_map_design_I.md)
 
 <!--ADD: Insert example for visualisation-->
 <!--FIXME: Insert link to overview page on module 3-->

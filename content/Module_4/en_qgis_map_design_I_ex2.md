@@ -27,7 +27,7 @@ The data provided contains shapefiles detailing the flood extent in October 2023
 
 
 ```{Tip}
-If you need inspiration on how to style certain elements of your map, make sure to check out the chapter [Examples for Food Map Design](/gis-training-resource-center/content/Modul_4/en_qgis_map_examples.md) 
+If you need inspiration on how to style certain elements of your map, make sure to check out the chapter [Examples for Flood Map Design](/gis-training-resource-center/content/Module_4/en_qgis_map_examples.md) 
 ```
 
 ## Step 1: Preparing the layers

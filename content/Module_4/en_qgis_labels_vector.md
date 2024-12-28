@@ -163,7 +163,7 @@ By default, QGIS renders the labels so that they don't overlap with other labels
 
 :::{admonition} Now it's your turn!
 
-Take the time to apply what we've learned yourself by doing one or two of the [exercises of module 4](/content/Modul_4/en_qgis_modul_4_exercises.md).
+Take the time to apply what we've learned yourself by doing one or two of the [exercises of module 4](/content/Module_4/en_qgis_module_4_exercises.md).
 
 ```{card}
 :link: 

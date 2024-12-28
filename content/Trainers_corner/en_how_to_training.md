@@ -130,7 +130,7 @@ Keep in mind that you don't need to follow the module structure. It is there to 
         Map composition   
         Atlas function
     - 
-        [Exercise 1: Creating a Map of Ghana](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_I_ex2.html)   
+        [Exercise 1: Creating a Map of Ghana](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I_ex2.html)   
     - 
         [Visualization](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_visualisation_wiki.html)  
         [Map making](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_map_making_wiki.html)  
