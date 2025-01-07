@@ -36,24 +36,24 @@ parts:
           - file: content/Module_3/en_qgis_module_3_exercises.md
   - caption: Module 4 
     chapters:
-      - file: content/Modul_4/en_module_4_overview.md
+      - file: content/Module_4/en_module_4_overview.md
         sections:
-          - file: content/Modul_4/en_qgis_map_design_I.md
-          - file: content/Modul_4/en_qgis_styling_vector_data.md
-          - file: content/Modul_4/en_qgis_labels_vector.md
-          - file: content/Modul_4/en_qgis_working_with_styles.md
-          - file: content/Modul_4/en_qgis_symbology_raster.md
-          - file: content/Modul_4/en_qgis_map_design_2.md
-          - file: content/Modul_4/en_qgis_understanding_print_layout.md
-          - file: content/Modul_4/en_qgis_map_examples.md
-          - file: content/Modul_4/en_qgis_modul_4_exercises.md
+          - file: content/Module_4/en_qgis_map_design_I.md
+          - file: content/Module_4/en_qgis_styling_vector_data.md
+          - file: content/Module_4/en_qgis_labels_vector.md
+          - file: content/Module_4/en_qgis_working_with_styles.md
+          - file: content/Module_4/en_qgis_symbology_raster.md
+          - file: content/Module_4/en_qgis_map_design_2.md
+          - file: content/Module_4/en_qgis_understanding_print_layout.md
+          - file: content/Module_4/en_qgis_map_examples.md
+          - file: content/Module_4/en_qgis_module_4_exercises.md
   - caption: Module 5
     chapters:
-      - file: content/Modul_5/en_module_5_overview.md
+      - file: content/Module_5/en_module_5_overview.md
         sections: 
-        - file: content/Modul_5/en_qgis_spatial_tools.md
-        - file: content/Modul_5/en_qgis_non_spatial_tools.md
-        - file: content/Modul_5/en_qgis_modul_5_exercises.md
+        - file: content/Module_5/en_qgis_spatial_tools.md
+        - file: content/Module_5/en_qgis_non_spatial_tools.md
+        - file: content/Module_5/en_qgis_module_5_exercises.md
   - caption: Module 6
     chapters:
       - file: content/Modul_6/en_module_6_overview.md
