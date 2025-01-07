@@ -17,7 +17,6 @@ However we focus on betweenness and closeness centrality
 
 ## Betweenness
 
-
 Betweenness centrality is a measure that quantifies the importance or influence of a node within a network by assessing the extent to which the node lies on the shortest paths between other pairs of nodes. In other words, it captures how frequently a node acts as a bridge or intermediary in connecting different parts of the network.
 
 * Graph representation: nodes & edges
@@ -27,7 +26,7 @@ Betweenness centrality is a measure that quantifies the importance or influence 
 ### Limitations of standard betweenness centrality and modification
 
 
-The following describes betweeness centrality in a standard and modified way exemplary.
+The following describes betweenness centrality in a standard and modified way exemplary.
 
 ```{figure} /fig/targeted_centrality06.png
 ---
@@ -59,7 +58,7 @@ Modified betweenness centrality every node towards one (subset) of nodes. In thi
 * Modification: shortest paths between all nodes and subset
   - Departure: all nodes
   - Destination: hospital
-* Limitation: Biased towards roadnetwork density.
+* Limitation: Biased towards road network density.
 
 ---
 
@@ -69,7 +68,7 @@ alt: Modified betweenness centrality every populated node
 width: 400px
 align: center
 ---
-Modified betweenness centrality. Simliar to above but only nodes are considered where data indicates population is located nearby.
+Modified betweenness centrality. Similar to above but only nodes are considered where data indicates population is located nearby.
 ```
 
 * Further modification: shortest paths between subset and subset
@@ -84,7 +83,7 @@ alt: Modified betweenness centrality every populated node, weighted by pop count
 width: 400px
 align: center
 ---
-Modified betweenness centrality. Simliar to above but every route from a population center is weighted by the population count of the center.
+Modified betweenness centrality. Similar to above but every route from a population center is weighted by the population count of the center.
 ```
 
 * Possibility to include population counts as weights
@@ -111,7 +110,7 @@ alt:
 width: 700px
 align: center
 ---
-Comparision of road network centrality for non flooded (left) and flooded (center) scenario during cyclone Idai in Mozambique. The area shown covers the coastal city of Beira in the lower left loacted at the mouth of Pungwe river. The difference in betweenness centrality scores (right) hints at which roads became less and which became more important for reaching healthcare facilities.
+Comparison of road network centrality for non flooded (left) and flooded (center) scenario during cyclone Idai in Mozambique. The area shown covers the coastal city of Beira in the lower left located at the mouth of Pungwe river. The difference in betweenness centrality scores (right) hints at which roads became less and which became more important for reaching healthcare facilities.
 ```
 
 
@@ -139,7 +138,7 @@ alt: Result of a closeness centrality analysis in Rio de Janeiro
 width: 700px
 align: center
 ---
-Closeness centrality analysis for Rio de Janeiro. Represented in a grid, every cell is 500 x 500m wide. The color ramp from dark violet over blue, green and yellow represents closeness values from low to high. Cells with high closeness centrlaity indicate areas from which one can faster reach every other cell in the network, and therefore is considered closer.
+Closeness centrality analysis for Rio de Janeiro. Represented in a grid, every cell is 500 x 500m wide. The color ramp from dark violet over blue, green and yellow represents closeness values from low to high. Cells with high closeness centrality indicate areas from which one can faster reach every other cell in the network, and therefore is considered closer.
 ```
 
 

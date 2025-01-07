@@ -4,7 +4,7 @@
 
 ## STEP 1: Data Preparation
 
-1. download population density layer here: https://hub.worldpop.org/geodata/summary?id=49708  and open in QGIS.
+1. Download population density layer here: https://hub.worldpop.org/geodata/summary?id=49708  and open in QGIS.
 
 The units are the number of people per pixel. Country totals have been adjusted to match the corresponding official United Nations population estimates produced by the Population Division of the  Economic and Social Affairs Department of the United Nations Secretariat (2019 Revision of World Population Prospects). "NoData" values represent areas that have been mapped unpopulated. This was done based on building footprints from the Digitize Africa project by Ecopia.AI and Maxar Technologies (2020).
 
@@ -37,12 +37,12 @@ The units are the number of people per pixel. Country totals have been adjusted 
     where the features: intersect
     by comparing to the features from: Rwanda border layer
 
-ADDIT: In addition it makes sense to have a look on the a basemap like OSM to check if there are any big water surfaces etc. Herefore you can also use the tool QuickOSM and use the name of the water body. If so, you should cut them out, as water areas are uninhabited (population layer). Use the tool select by location.
+ADDIT: In addition, it makes sense to have a look on the a basemap like OSM to check if there are any big water surfaces etc. Therefore, you can also use the tool QuickOSM and use the name of the water body. If so, you should cut them out, as water areas are uninhabited (population layer). Use the tool select by location.
 
 
 4. Creation of hospital layer by using the the tool QuickOSM
 
-    key = amenity … value = hospital … in … Rwanda → Result: point-, line- & polygonlayer
+    key = amenity … value = hospital … in … Rwanda → Result: point-, line- & polygon layer
 
     using the tool „select by location“ we can check if there are objects from the polygon or line layer that are not included in the point layer
 

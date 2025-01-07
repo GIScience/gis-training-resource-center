@@ -16,7 +16,7 @@ Download all datasets __[here](https://nexus.heigit.org/repository/gis-training-
   - `rwa_healthcare` (points): Hospital locations in Rwanda (based of OpenStreetMap)
   - `rwa_adm0_boundary` (polygons): Country boundary of Rwanda
   - `rwa_adm1_boundary` (polygons): Administrative boundaries for the second level of Rwanda. In Rwandas case these are called provinces
-  - `rwa_adm2_boundary` (polygons):  Thirs level administrative boundaries of Rwanda. In Rwandas case these are called prefectures
+  - `rwa_adm2_boundary` (polygons):  Third level administrative boundaries of Rwanda. In Rwandas case these are called prefectures
 
 
 **Rasterlayer**
