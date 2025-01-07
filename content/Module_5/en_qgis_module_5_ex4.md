@@ -1,19 +1,26 @@
-# Exercise: Security Peshawar
+# Exercise 4: Security Peshawar
 __🔙[Back to Homepage](/content/intro.md)__
 
 :::{card}
 :link: https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_5_exercises.html
 __Click here to return to the exercise overview page for module 3__ 
 :::
+
+:::{card}
+__Aim of the exercise:__
+^^^
+
+:::
+
 ::::{grid} 2
 :::{grid-item-card}
-## Aim of the exercise:
-
-#### Type of trainings exercise:
+__Type of trainings exercise:__
+^^^
 - This exercise can be used in online and presence training. 
 :::
 :::{grid-item-card}
-#### These skills are relevant for 
+__These skills are relevant for__
+^^^ 
 
 - QGIS Essentials
 - Working with multiple layers
@@ -25,12 +32,16 @@ __Click here to return to the exercise overview page for module 3__
 
 ::::{grid} 2
 :::{grid-item-card}
-#### Estimated time demand for the exercise.
+__Estimated time demand for the exercise:__
+^^^
+
 - The exercise takes around 3 hours to complete, depending on the number of participants and their familiarity with computer systems.
+
 :::
 
 :::{grid-item-card}
-### Relevant wiki articles
+__Relevant wiki articles:__
+^^^
 
 * [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)
 * [Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html)
