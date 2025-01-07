@@ -1,42 +1,57 @@
-# Exercise: Security Peshawar
+# Exercise 3: Trigger & Intervention Map for Forecast-based-Action
+
 __🔙[Back to Homepage](/content/intro.md)__
 
-:::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_5_exercises.html
-__Click here to return to the exercise overview page for module 3__ 
-:::
+🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+
+## Characteristics of the exercise
+
 ::::{grid} 2
 :::{grid-item-card}
+
 ## Aim of the exercise:
 
+This exercise is based on the monitoring and triggering process used by the Somalia Red Crescent Society (SRCS) in the framework of a drought Early Action Protocol (EAP).
+
+Within this exercise, you will build a simplified version of the monitoring and trigger mechanism for the FEWSNET projection pillar.
+
 #### Type of trainings exercise:
+
 - This exercise can be used in online and presence training. 
+- It can be done as a follow-along exercise or individually as a self-study.
+
 :::
+
 :::{grid-item-card}
+
 #### These skills are relevant for 
 
-- QGIS Essentials
-- Working with multiple layers
-- Conduct spatial queries
-- Creation of geodata
 
 :::
 ::::
 
 ::::{grid} 2
 :::{grid-item-card}
+
 #### Estimated time demand for the exercise.
-- The exercise takes around 3 hours to complete, depending on the number of participants and their familiarity with computer systems.
+
+ 
+
 :::
 
 :::{grid-item-card}
-### Relevant wiki articles
 
-* [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)
-* [Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html)
-* [Geodata Classification- Categorized](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html)
-* [Digitisation- Point data](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#add-geometries-to-a-layer)
+## Relevant Wiki Articles
+
+* [Geodata Import in QGIS](/content/Wiki/en_qgis_import_geodata_wiki.md)
+* [Intersection](/content/Wiki/en_qgis_geoprocessing_wiki.md#intersection)
+* [Zonal Statistics](/content/Wiki/en_qgis_raster_basic_wiki.md#zonal-statistics)
+* [Join Attributes by location (summary](/content/Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
+* [Table functions](/content/Wiki/en_qgis_raster_basic_wiki.md#zonal-statistics)
+
+
 :::
+
 ::::
 
 ## Instructions for the trainers
@@ -48,7 +63,7 @@ __Click here to return to the exercise overview page for module 3__
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
+- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction
 
 ### Conduct the training
 
@@ -69,199 +84,567 @@ __Wrap up:__
 - Leave some time for open questions. 
 
 :::
-### Available Data
-
-:::{card}
-:link: https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Exercise_4_Security_Peshawar/Modul_5_Exercise_4_Security_Peshawar.zip
-__Download all datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Exercise_4_Security_Peshawar/Modul_5_Exercise_4_Security_Peshawar.zip) and save the folder on your computer and unzip the file.__
-:::
-
-| Dataset name| Original title|Publisher|Download from| 
-| :-------------------- | :----------------- |:----------------- |:----------------- |
-| 2024-01-01-2024-09-23-Pakistan.xlsx |Conflict data for Pakistan 01/2024-09/2024  |ACLAD| HDX |
-| PAK_KP_admin_3.gpkg |Administrative Boundaries level 3 of KP |UN OCHA | HDX |
-| Pak_adm2_Khyber Pakhtunkhwa.gpkg |Administrative Boundaries level 1 of KP |UN OCHA | HDX |
-|20240605_PAK_MPI.xlsx|Pakistan Multi Poverty Index (MPI)|Pakistan Bureau of Statistics|Pakistan Bureau of Statistics|
-|AOI_Peshawar.gpkg|Area of Interest (AOI) around Peshawar|||
 
 
 
-## Task 1: Geolocate security-related information of the last days
+## Background 
 
-:::{card} Context: 
-In response to a recent cholera outbreak in Khyber Pakhtunkhwa (KP), the Pakistan Red Crescent Society (PRCS) and other Partner National Societies (PNS) have mobilized a team to this region. The primary objective of the team is to conduct a comprehensive assessment on the ground and facilitate coordination for any necessary future responses.
-The team will be staying at the "Roomy Crossroad Hotel Peshawar" during their mission in the affected area.
-:::
+Setting triggers is one of the cornerstones of the __Forecast-based Financing (FbF) system__. For a National Society to have access to automatically released funding for their early actions, their Early Action Protocol needs to clearly define where and when funds will be allocated, and assistance will be provided. In FbF, this is decided according to specific threshold values, so-called __triggers__, based on weather and climate forecasts, which are defined for each region (see [FbF Manual](https://manual.forecast-based-financing.org/en/chapter/set-the-trigger/)).
 
-1. We will use the plugin in "Quick Map Service" to locate places precisely.
-To install the plugin click on `Plugins` -> `Manage and Install Plugins…` -> `All` and search for `Quick Map Service`. Once you have found it, click on it and click `Install Plugin`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html#installation-of-plugins)).
-2. Open the plugin by clicking on `Web` -> `Quick Map Service` -> `ESRI` -> `ESRI Satellite`. Now you should have a Settelite image base map in your `Layer Panel`.
-3. Add the `Google Road` base map from the `Quick Map Service` as well (see [wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#basemaps-from-quickmapservices-plugin)).
-4. Place the `Google Road` above the satellite image map and turn the layer transparent by opening the layer properties and navigating to the __Transparency__ tab and adjusting the global opacity.
-5. You will need the plugin "Lat Lon tools" to locate the coordinates you receive from the field. To install the plugin click on `Plugins` -> `Manage and Install Plugins…` -> `All` and search for `Lat Lon tools`. Once you have found it, click on it and click `Install Plugin`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html#installation-of-plugins)).
+For the development of the Somaliland-Somalia Drought Trigger mechanism, various datasources were thoroughly analysed.
+Finally, the main parameters chosen for the trigger based on the __historical impact assessment__ are the twelve month Standard Precipitation Index (SPI12) and the IPC acute food insecurity classification. The exact data used are the documented and forecasted SPI12 (source: ICPAC) and the forecasted IPC classification (8 month forecast, source: FEWSNET), that is used to calculate a population weighted index of food insecurity. The trigger thresholds for both components were optimised towards the most favourable proportion of hit rate and false alarm rate. The emerging thresholds were <-1 for the SPI12 and >=0,7 for the IPC based index. The triggering is done on district level and per district just one trigger initiation per year is possible.
 
-Now you have all the information you need to start digitizing the known incidents and related areas of interest (as polygons). To find the locations, check the information from the field below and capture it. Use Google in your browser, the base maps and the Lat Lon tools plugin to locate the exact positions.
+```{admonition} Trigger Statement
+When ICPAC issues a SPI-12 forecast of less than -1 for a district AND the current FEWSNET food insecurity projection reaches at least 0.7 in its 
+derived population weighted index in the same district, then we will act in this district. We expect the lead-time to be 90 days.
+```
+
+
+
+
+## Available Data
+
+### Food Insecurity Projection data
+
+The drought trigger mechanism is based on two variable monitoring datasets. One of them Food Insecurity projection produced by FEWSNET which is updated ruffly every month.
+
+| Dataset| Source | Description |
+| ----- | --- | --- |
+|IPC Projections| [FEWSNET](https://fews.net/) | five-phase scale providing common standards for classifying the severity of acute or anticipated acute food insecurity. |
+
+#### What is IPC Food Security Projection Data?
+ 
+The IPC is a commonly accepted measure and classification to describe the current and anticipated severity of acute food insecurity. 
+The classification is based on a convergence of available data and evidence, including indicators related to food consumption, livelihoods, malnutrition and mortality. Food Insecurity is one of the prioritised impacts of droughts in Somalia which is why it is also used for the triggering mechanism, in a population-weighted index. 
+
+Three times a year (February, June, and October) FEWSNET estimates most likely IPC classes for the upcoming 8 month (near-term and mid-term projection), available from 2019-current. The near-term projection is called ML1 and is a projection for the upcoming 4 month, the mid-term projection is called ML2 and projects the IPC classes for the 4 subsequent months. For the triggering ML1 (near-term) as well as ML2 (mid-term) projections will be considered. 
+
+Outlook updates are produced almost every month and are also taken into account.
+
+| Colour| Phase | Descriptions |
+| ----- | --- | --- |
+|![](/fig/IPC_Class_1.drawio.svg)|1. Minimal   |Households are able to meet essential food and non-food needs without engaging in atypical and unsustainable strategies to access food and income.   |
+|![](/fig/IPC_Class_2.drawio.svg)|2. Stressed   |Households have minimally adequate food consumption but are unable to afford some essential non-food expenditures without engaging in stress-coping strategies.  |
+|![](/fig/IPC_Class_3.drawio.svg)|3. Crisis   |Households either have food consumption gaps that are reflected by high or above-usual acute malnutrition __OR__ are marginally able to meet minimum food needs but only by depleting essential livelihood assets or through crisis-coping strategies.  |
+|![](/fig/IPC_Class_4.drawio.svg)|4. Emergency|Households either have large food consumption gaps which are reflected in very high acute malnutrition and excess mortality; __OR__ are able to mitigate large food consumption gaps but only by employing emergency livelihood strategies and asset liquidation.|
+|![](/fig/IPC_Class_5.drawio.svg)|5. Famine |Households have an extreme lack of food and/or other basic needs even after full employment of coping strategies. Starvation, death, destitution, and extremely critical acute malnutrition levels are evident. (For Famine Classification, area needs to have extreme critical levels of acute malnutrition and mortality.)  |
+
+### Training Data
+
+Download the data folder __[here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Modul_5_Exercise2_Drought_Monitoring_Trigger/Modul_5_Exercise2_Drought_Monitoring_Trigger.zip)__ and save it on your PC. Unzip the .zip file!
+
+For this particular exercise, we will use a combination of pre-processed data and the download of real data from FEWS.net.
+The preprocessed datasets are:
+
+| Dataset| Source | Description |
+| ----- | --- | --- |
+|Administrative boundaries | [HDX](https://data.humdata.org/dataset/cod-ab-som?) |The administrative boundaries on level 0-2 for Somalia and Somaliland can be accessed via HDX. For this trigger mechanism we provide the administrative boundaries on level 2 (district level) as a shapefile. We have added the population number for each district derived from Worldpop.|
+|Population Counts| [Worldpop](https://hub.worldpop.org/doi/10.5258/SOTON/WP00534) |The worldpop dataset in .geotif raster format provides population estimates per hectare for the year 2020 |
+
+Whereas the IPC-Projections data will be downloaded by the participants directly from FEWS.net.
+
+| Dataset| Source | Description |
+| ----- | --- | --- |
+|IPC Projections| [FEWSNET](https://fews.net/) | five-phase scale providing common standards for classifying the severity of acute or anticipated acute food insecurity. |
+
+## Task
+
+
+```{Attention}
+Some of the images and videos are not 100 % accurate for this particular exercise since they were take from the real trigger workflow of SRCS, which is more complex.
+```
+
+### Step 1: Setting up folder structure 
+
+__Purpose:__ In this step, we set up the correct folder structure to make the analysis easier and to ensure consistent results. 
+
+__Tool:__ No special tools or programs are needed.
+
+``````{list-table}
+:header-rows: 1
+:widths: 10 25
+
+* - Instruction
+  - Folder Structure
+* - 1. Open the Folder “Modul_5_Exercise2_Drought_Monitoring_Trigger"
+    2. Open the subfolder "Monitoring"
+    3. Copy the Template folder “TEMPLATE_Year_Month” and change the name to the current year and month `2024_01`.
+    
+  -
+    ```{figure} /fig/Exercise_Folder_structure_Drought_Monitoring_Trigger.drawio.svg
+    ---
+    width: 450px
+    name: 
+    align: center
+    ---
+    ```
+``````
+
+The Video below shows the process for setting up the folder for December 2023.
+
+```{dropdown} Video: Setting up folder structure 
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_folder_setup.mp4"></video>
+```
+
+### Step 2: Download of the forecast data
+
+
+__Purpose:__ In this step, we will download the forecast data on which our triggers will be based.
+
+__Tool:__ Internet Browser
+
+The IPC data will be pulled from the FEWSNET website. FEWS NET publishes IPC data on its website. 
+The main data publications, as well as the updates of the IPC data, amount to the publication of new data almost monthly.
+
+### IPC Data
+
+The IPC Projection data is provided and regularly updated on the [FEWSNET Website](https://fews.net/).
+On the website, you will have to click on Somalia to access the data. Alternatively, you can  navigate through `Data` -> `Acute Food Insecurity Data` and enter „Somalia". In the menu you will see different data formats for different timestamps. Once you find out which timestamp is the most current one, find the ZIP download. We need the data in shapefile (.shp) format, which is only included in the ZIP file and not provided as single download file. 
+
 
 ```{Warning}
-When creating the point and polygon layer use the CRS UTM 42 N __EPSG: 32642__
+The FEWSNET pages change often!
 ```
 
+1. Go to [FEWSNET Website](https://fews.net/). Click on `Data` -> `Acute Food Insecurity`.
+2. Scroll down. In `Geographic Area`, type in “Somalia” and click `Apply`
+3. Choose the newest dataset.
 
-In case the information states an exact area, create a new polygon layer and map it exactly.
-
-| Number| Description |
-| :-------------------- | :----------------- |
-|1 | A __bomb threat__ including Improvised Explosive Devices (IED) on the road N45 right between __Seri-Bahlol__ and Tableeghi Markaz Mardina near Jandy has been reported by local radio stations. Please mark the area between the communities along the road as no-go areas. | 
-|2 | In a conversation with a PRCS driver, a local teacher shared that the vicinity of the __Government Girls Primary School in Takkar__ is notorious for being a minefield. Specifically, the fields between the school and the __Noormuhmmad hospital__ are known to be heavily mined. Due to this danger, local farmers are extremely reluctant to work on this particular piece of land.|
-|3 |Following the recent events, it has been decided that the vicinity surrounding the __Arbab Niaz Cricket Stadium Peshawar__ is now designated as a no-go area for all staff members. This area encompasses the region bordered by the __N5__ road to the south, the __Afghan Colony road__ to the north and east, and the __Charsadda Road__ to the west.|
-|4 | GPS Coordinates: __(33.99519949518549, 71.66217873936723)__. A humanitarian worker was transporting medical supplies through the region when they were approached by a local farmer. The farmer mentioned that a nearby abandoned well, located at these coordinates, has become a gathering point for __unexploded ordnance__. Due to its proximity to a residential area, this site is now flagged as high-risk and needs immediate attention from demining teams.|
-|5 | GPS Coordinagtes: __(34.02878398623702, 71.43081737211224)__. A health unit here has recently been vacated after a bomb threat was called in. Police and bomb squads searched the premises but didn’t find any explosives. However, local business owners reported unusual activity around the building in the weeks leading up to the threat. This location is now under surveillance. The area between the health unit and the river, as well as the parks and playground behind it, need to be marked as a temporary no-go zone. |
-|6 | __Qissa Khwani Bazaar, Peshawar__: A popular historical market at this address has become a focal point for local community gatherings, but recent intelligence reports suggest that the site could be at risk for political protests that have turned violent in the past. Authorities are now considering setting up temporary barriers to manage the flow of people, and it's crucial that this location is marked as a high-risk area for potential crowd control measures.|
-
-The current SOP states that the sides of recent violent incidents are to be avoided in a 1 km radius. To reflect this on the map, we will use the buffer tool.
-
-6.  Create a ![](/fig/mAlgorithmBuffer.png) buffer around the points of violent incidents with a distance of `2.000 meters`. See the Wiki entry on [Geoprocessing](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html) for further information.
-7. Next, merge the no-go areas polygon layer and the buffer point layer.
-Use the tool `Merge vector layer`.
-8. Clip the newly created polygon out of the AOI to create a "Green" area in which the team are allowed to travel. Use the tool `Symmetrical difference`.
-
-
-
-## Task 2: Load Excel File containing conflict data into QGIS
-
-1. Drag and Drop the ACLED conflict excel table '2024-01-01-2024-09-23-Pakistan.xlsx' into your QGIS project
-2. Navigate in the Processing Toolbox to the Tool 'Create points layer from table'.
-    - Choose as 'X Field' "longitude" and as 'Y Field' "latitude".
-    - Under 'Points from Table' , click on the three dots, choose 'Save to GeoPackage' and navigate to you temp folder. Save the layer with the name "Pak_Conflict_points_2024".
-
-```{figure} ../../fig/Create_ponts_from_table.PNG
+```{figure} /fig/IPC_Projections_website.png
 ---
-width: 700px
-name: SVG Marker
----
-Create points from table
-```
-
-3. Get number of events per thesil
-    - Load the "KP admin 3" layer.
-4. We are now interested to know the number of conflict incidents per thesil. For this:
-    - Go to the Processing Toolbox and search for the Tool 'Count points in polygon'. Choose 'KP_adm3' layer as Polygon input and the 'Pak_Conflict_points_2024' layer as Points input
-
-    - Under `Count` save your new layer under "Pak_num_events_adm3".
-
-```{figure} ../../fig/count_point_polygon.PNG
----
-width: 700px
-name: SVG Marker
----
-Count points from polygon
-```
-
-5. Open the attribute of your 'Pak_num_events_adm3' layer and scroll to the right. You will find a column with the name "NUMPOINTS". Here you find the number of events per thesil.
-    - Right-click on the layer and navigate to 'Properties' --> 'Symbology'. On the top change Single Symbol to "Graduated".
-    	- In the 'Value' field choose "NUMPOINTS". 
-	- Then below click on "Classify"
-	- You can adjust the Mode and the number of classes if wanted. Also you can choose your preferred color ramp.You can play around a bit here.
-	- Click 'Apply' and then 'OK'
-
-Your result could look similar to this.
-
-```{figure} ../../fig/Number_events_graduated.PNG
----
-width: 700px
-name: SVG Marker
----
-Number of conflict events per thesil
-
-```
-
-
-## Task 3: MPI data 
-
-1. Open the excel file and export it as CSV UTF-8:
-	* Click on `File` -> `Save As` 
-	* Chosse an output folder, where it will be saved (the `data` > `temp` folder is recommended here) and give the file a meaningful name, for instance __20240605_PAK_MPI__.
-	* Choose the option __CSV UTF-8 (Comma delimited) (*.csv)__ and `Save` 
-	
-	```{figure} /fig/PAK_Excel_to_CSV.png
-	---
-	width: 400px
-	name: Convert Excel to CSV
-	align: center
-	---
-	Convert Excel to CSV
-	```
-	
-2. Open QGIS and create a new project. Save the project in your project folder. 
-3. Add the __20240605_PAK_MPI.csv__ file to QGIS by: 
-	* Click on the `Layer` tab -> `Add Layer` > `Add Delimited Text` 
-	* Browse for your __20240605_PAK_MPI.csv__ file. 
-	* Choose the correct `File Fromat`: `Custom delimters` -> `Semicolon` 
-	* Go to	the tab `Geometry Definition` and choose `No geometry`. We don't have a column with coordinates or geoemtry information, but only the admin2 name and P-Code.
-	* Add layer and close the window. 
-	
-	```{figure} /fig/PAK_Load_CSVfile.PNG
-	---
-	width: 400px
-	name: Load CSV file to QGIS
-	align: center
-	---
-	Load CSV file to QGIS
-	```
-	
-To visualize the data now on the map we have to link it to existing geometries and district boundaries. To do that: 
-
-3. Open the attribute table of the attribute table and detect the column which contains the information you want to use to join the data with the location. E.g. City name, district name, or best the P-Code. In our case it is `ADM2_PCODE`.
-	* __Hint__: Each administrative level and area contains a worldwide unique code number. This helps to determine the exact administrative boundary without misspelling the name of the area.
-4. We now need an admin layer with an column containing the exact same information as the column of our CSV file. This is needed to link the information provided in the CSV to the district areas. 
-	* Load the layer __Pak_adm2_Khyber Pakhtunkhwa.gpkg__ via drag and drop to QGIS. 
-4. To link the two layers, open the Toolbox and search for the tool __Join attributes by field value__. Open it. 
-	* `Input layer`: __Pak_adm2_Khyber Pakhtunkhwa.gpkg__
-	* `Table field`: __admin2Pcode__
-	* `Input layer 2`: __20240605_PAK_MPI.csv__
-	* `Table field 2`: __ADM2_PCOCDE__
-	* Choose a location to save the file as GeoPackachge and give it a meaningful name, for instance __MPI_Admin2_joined.gpkg__
-	* `Run` and close.
-	
-	```{figure} /fig/PAK_joined_MPI_csv_admin2.PNG
-	---
-	width: 400px
-	name: Join the districts with the MPI data
-	align: center
-	---
-	Join the districts with the MPI data
-	```
-	
-	__Info__: You can see that not all areas are visible. Since we don't have data for all districts, only the districts were linked with the csv on which we have MPI data. 
-	
-	```{figure} /fig/PAK_joined_MPI_csv_admin2_info.PNG
-	---
-	width: 400px
-	name: Information of not joined and linked data
-	align: center
-	---
-	Information of not joined and linked data
-	```
-	
-5. Visualize __MPI_Admin2_joined.gpkg__ file: We have a new file, showing the district boundaries, but having the MPI information in the attribute table. The MPI value per district we now want to visualize. 
-	* Open the `Symbology` window of the file __MPI_Admin2_joined.gpkg__.
-	* Decide which column you want to visualize. For instance the values of the year 2014 in the column __A_2014_15__. 
-	* Choose `Graduate` visualization. 
-	* Choose `Value` __A_2014_15__.
-	* Click `Classify`.
-	* Choose Mode `Pretty Breaks`.
-	* Click okay and close the window. 
-6. Visualize __Pak_adm2_Khyber Pakhtunkhwa.gpkg__ layer for districts we don't have MPI data on. 
-	* Open the `Symbology` window of the file __Pak_adm2_Khyber Pakhtunkhwa.gpkg__.
-	* Change the color, maybe to dark grey, so we can differentiate between the districts we have and don't have MPI data for. 
-7. Add OpenStreetMap as a baselayer for better orientation. 
-
-
-```{figure} /fig/PAK_visualized_MPI.PNG
----
-width: 400px
-name: Visualized MPI data on district level
+height: 250px
+name: FEWSNET IPC - Download IPC Projections
 align: center
 ---
-Visualized MPI data on district level
+```
+4. Download the one with the __ZIP__ Data
+5. When you have downloaded the data, right-click on the file and click on `Extract all` -> `Extract`
+6. Open the extracted folder and copy the ML1 data in the IPC_ML1 folder you have created in step 1. 
+  * The filename is composed of "SO" for Somalia, year and month of the report month e.g `SO_202308_ML1.shp`
+  Example path: `.../Modul_5_Exercise2_Drought_Monitoring_Trigger/Monitoring/Year_Month_template/IPC_ML1`
+```{Warning}
+Make sure to __not__ use the ML1_IDP data which comes in the .zip folder as well!
+```
+
+```{Warning}
+Remember that you need to copy over all components that the respective [shapefile](/content/Wiki/en_qgis_geodata_types_wiki.md#vector-data) is composed of. Most probably it has 5 components: .cpg, .dbf, .prj, .shp, and .shx.
+```{figure} /fig/IPC_zip.PNG
+---
+height: 300px
+name: Content of .zip file downloaded containing ML1 and ML2 IPC projections
+align: center
+---
+```
+
+```{tip}
+On the [main FEWSNET page](https://fews.net/), you can also sign up for information on latest updates via email. For this option scroll down to the end of the page and click on `Sign up for Emails`. You will get the option to choose updates only for Somalia.
+
+```{figure} /fig/IPC_Newsletter.png
+---
+height: 60px
+name: FEWSNET Newsletter
+align: center
+---
+```
+
+
+### Step 3: Loading data into QGIS
+
+
+
+__Purpose:__ In this step, all the data needed will be loaded into a QGIS-project so we can analyse the data. 
+
+__Tool:__ No specific tools are needed, only QGIS.
+
+1. Open QGIS and create a [new project](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`
+2. Once the project is created, save the project in the folder you created in Step 1 (e.g. 2022_05). To do that, click on `Project` -> `Save as` and navigate to the folder. Give the project the same name as the folder you created (e.g. 2022_05). Then click `Save`
+3. Load all input data in QGIS by [drag and drop](/content/Wiki/en_qgis_import_geodata_wiki.md#open-raster-data-via-drag-and-drop). Click on `Project` -> `Save` 
+  * From the folder you created in step 1
+    * ML1
+  * From the `Fixes_data` folder:
+    * district_pop_som
+    * WorldPop_som.tif
+
+__Result:__ QGIS project with all necessary data ready to be analysed. 
+
+### Step 4: Intersection of ML 1 data with the district polygons 
+
+__Purpose:__ The goal is to receive polygon layers which share both the borders and the attributes of both input layers.
+
+
+__Tool:__ [`Intersection`](/content/Wiki/en_qgis_geoprocessing_wiki.md#intersection)
+
+
+``````{list-table}
+:header-rows: 1
+:widths: 20 25
+
+* - Instruction
+  - Screenshot of the Intersection window
+* - 1. Click on `Vector` -> `Geoprocessing Tools` -> [`Intersection`](/content/Wiki/en_qgis_geoprocessing_wiki.md#intersection)
+    2. `Input Layer`: ML 1 
+    3. `Overlay layer`: district_pop_sum
+    4. Under `Intersection` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to your monitoring folder [Year_Month]. Give the output the name "ML1_Intersection" and click `Save`
+    5. Click `Run`
+  -
+    ```{figure} /fig/SRCS_Trigger_step_4_Intersection.png
+    ---
+    width: 450px
+    name: 
+    align: center
+    ---
+    ```
+``````
+
+__Result:__ After doing this for ML1, you should have one polygon layer containing all columns of ML1 and district_pop_sum.
+
+```{Note}
+The resulting layer can have more rows than the original layers.
+```
+
+```{dropdown} Video: Intersection of ML 1 data with the district polygons 
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_4_Intersection.mp4"></video>
+```
+
+### Step 5: Calculation of Population per Intersection Polygon
+
+__Purpose:__ Here we calculate the population in each polygon of the intersection layer from step 4.
+
+
+__Tool:__  [`Zonal Statistics`](/content/Wiki/en_qgis_raster_basic_wiki.md#zonal-statistics)
+
+``````{list-table}
+:header-rows: 1
+:widths: 20 25
+
+* - Instruction
+  - Screenshot of the Zonal Statistics window
+* - 1.  In the `Toolbox` -> Search for [`Zonal Statistics`](/content/Wiki/en_qgis_raster_basic_wiki.md#zonal-statistics)
+    * Tip: If the `Toolbox` is not open, click `Processing`-> `Toolbox`
+    2. `Input Layer`: "ML1_Intersection" 
+    3. `Raster Layer`: "som_ppp_2020_UNadj_constrained.tif"
+    4. Statistics to calculate: Only `Sum`
+    5.  Under `Zonal Statistics`, click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "ML1_zonal_statistic" and click `Save`
+    5. Click `Run
+  -
+    ```{figure} /fig/SRCS_Trigger_step_5_zonal_statistic.png
+    ---
+    width: 450px
+    name: 
+    align: center
+    ---
+    ```
+``````
+
+__Result:__ The result should be the “ML1_zonal_statistic” as a polygon layer. This layer should have the same columns in the attribute table like ML1_Intersection __plus__ the column “_sum”, which is the number of people living in the single parts of the polygons.
+
+
+```{dropdown} Video:  Calculation of Population per Intersection Polygon
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_5_zonal_statistic.mp4"></video>
+```
+### Step 6: Weighting of the Population based on IPC-Phase
+
+
+__Purpose:__ The purpose of this step is the weighting of the population in the five IPC phases as described in [IPC Data](/content/GIS_AA/en_qgis_drought_trigger_somalia.md#ipc-population-weighted-index).
+
+```{Note} 
+The IPC Index treats low-population districts the same as high-population districts, ensuring that small districts with high food insecurity are not underrepresented.
+```
+
+```{dropdown}  IPC-Population Weighted Index
+
+To better utilize the IPC data, a straightforward population-weighted index was created. This index assigns weights to relative population numbers based on their respective IPC classes, emphasizing the number of people in each IPC class rather than just the class itself. Additionally, populations in higher IPC classes are given more importance than those in lower classes. The index is calculated as follows:
+
+`$ IPC\ Index =  Weights \times \frac{District\ Pop\ per\ IPC\ Phase}{Total\ District\ Pop}$`
+
+Where the weights are defined as:
+
+| IPC Phase| Weight |
+| ----- | --- |
+|IPC 1  |0  |
+|IPC 2  |0  |
+|IPC 3  |1  |
+|IPC 4  |3  |
+|IPC 5  |6  |
+
+The IPC Index represents low-population districts equal to high-population districts. No underrepresentation of high food insecurity of small districts occurs.
+```
+__Tool:__  [`Field Calculator`](/content/Wiki/en_qgis_table_functions_wiki.md#calculate-field)
+
+
+1. Right-click on the layer “ML1_zonal_statistic”  -> `Open Attribute Table`-> click on [`Field Calculator`](/content/Wiki/en_qgis_table_functions_wiki.md#calculate-field) ![](/fig/mActionCalculateField.png) to open the field calculator
+2. Check `Create new field`
+3. `Output field name`: Name the new column “pop_sum_weighted”
+4. `Result field type`: Decimal number (real)
+5. Add the code block from Input into the `Expression` field
+Click `ok`
+
+```md
+CASE
+
+WHEN "ML1" = 3 THEN "_sum" * 1
+WHEN "ML1" = 4 THEN "_sum" * 3
+WHEN "ML1" = 5 THEN "_sum" * 6
+ELSE "_sum"
+
+END
+```
+6.  When you are done, click ![](/fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by again clicking on ![](/fig/mActionToggleEditing.png)([Wiki Video](/content/Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)). 
+
+## Step 7: Calculation of Population Proportion per Intersection Polygon
+
+__Purpose:__ In this step, we calculating the [IPC-Population Weighted Index](/content/GIS_AA/en_qgis_drought_trigger_somalia.md#ipc-population-weighted-index) for every small part of the polygon layer. 
+
+
+__Tool:__[`Field Calculator`](/content/Wiki/en_qgis_table_functions_wiki.md#calculate-field)
+
+1. Right-click on "ML1_zonal_statistic" layer -> “Attribute Table”-> click on [`Field Calculator`](/content/Wiki/en_qgis_table_functions_wiki.md#calculate-field) ![](/fig/mActionCalculateField.png) to open the field calculator
+2. Check `Create new field`
+3. `Output field name`: Name the new column “Index_per_IPCPolygon_ML1”
+4. `Result field type`: Decimal number (real)
+5. Add the following code into the `Expression` field
+```md
+"pop_sum_weighted"/"districtpo"
+```
+6. Click `ok`
+7. Save the new column by clicking on ![](/fig/mActionSaveEdits.png) in the attribute table and turn off editing mode by clicking on ![](/fig/mActionToggleEditing.png)
+
+```{figure} /fig/SRCS_Trigger_step_8_field_calculator.png
+---
+width: 500px
+name: 
+align: center
+---
+```
+
+__Result:__ The layer “ML1_zonal_statistic” should now have the column “Index_per_IPCPolygon_ML1”. The numbers in this column have to be smaller than in the “district” column.
+
+
+```{dropdown} Video: Calculation of Population Proportion per Intersection Polygon
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_TRigger_step_8_field_calculator.mp4"></video>
+```
+
+### Step 8: Calculate IPC Index per District
+
+__Purpose:__ The purpose of this step is to calculate a population-weighted mean over the IPC classes per district. In this way, the amount of people living in a certain IPC class will be given more importance than just the area affected by a certain IPC class. The result is an IPC Index value for each district.
+
+__Tool:__ `Join attribute by location (summary)`
+
+``````{list-table}
+:header-rows: 1
+:widths: 20 25
+
+* - Instruction
+  - Join attribute by location (summary)
+* - 1. In the `Toolbox`-> Search for `Join attribute by location (summary)`
+      * Tip: If the `Toolbox` is not open, click `Processing`-> `Toolbox` 
+    2. `Input Layer`: Select your “district_pop_som” layer
+    3. `Input Layer 2`: Select “ML1_zonal_statistic"
+    4. `Geometric predicate`: Select “Intersection”
+    5. `Field to summarise`: Select “Index_per_IPCPolygon_ML1” 
+    6. `Summaries to calculate`: Only check the option “mean”
+    7. Under `Join Layer`, click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "ML1_IPC_Index" and click `Save`
+    8. Click `Run`
+  -
+    ```{figure} /fig/Exercise_trigger_join_attributes_location.png
+    ---
+    width: 450px
+    name: 
+    align: center
+    ---
+    ```
+``````
+
+__Result:__ As a result, your layer "ML1_IPC_Index" should have the column “Index_per_IPCPolygon_ML1_mean”. Furthermore, the number of rows should be the exact number of districts in Somalia and the polygons should have the exact shape of the districts.
+
+```{dropdown} Video: Calculate IPC Index per District
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_9_join_location.mp4"></video>
+```
+### Step 9: Evaluate Trigger Activation 
+
+__Purpose:__ The purpose of this step is to gain a quick overview of possible trigger activation without having to revise the actual data. Instead, we will have a binary column with trigger = yes or trigger=no values.
+
+__Tool:__ [`Field Calculator`](/content/Wiki/en_qgis_table_functions_wiki.md#calculate-field)
+
+1. Right-click on "ML1_IPC_Index" layer -> `Attribute Table`-> click on  [`Field Calculator`](/content/Wiki/en_qgis_table_functions_wiki.md#calculate-field) ![](/fig/mActionCalculateField.png) to open the field calculator
+2. Check `Create new field`
+3. `Output field name`: Name the new column “Trigger_activation”
+4. `Result field type`: Text (string)
+5. Add the code below into the `Expression` field
+6. Save the new column by clicking on ![](/fig/mActionSaveEdits.png) in the attribute table and end the editing mode by clicking on ![](/fig/mActionToggleEditing.png)
+``````{list-table}
+:header-rows: 1
+:widths: 15
+
+* - Code
+* - ```md
+    CASE
+
+    WHEN "Index_per_IPCPolygon_ML1_mean" >0.7 
+    THEN 'yes'
+    ELSE 'no'
+
+    END
+    ```
+``````
+6. Click `ok`
+7. Save the new column by clicking on ![](/fig/mActionSaveEdits.png) in the attribute table and end the editing mode by clicking on ![](/fig/mActionToggleEditing.png)
+
+__Result:__ A layer with all districts of Somalia with a column of "Yes" and "No" values indicating whether the trigger levels have been reached or not.
+
+```{figure} /fig/Exercise_trigger_evaluation.png
+---
+width: 600px
+name: 
+align: center
+---
+```
+
+```{dropdown} Video: Evaluate Trigger Activation 
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_13_trigger_activation.mp4"></video>
+```
+
+### Step 10.: Visualisation of results
+
+__Purpose:__ Definition of how features are represented visually on the map.
+
+__Tool:__ [Symbology](/content/Module_4/en_qgis_map_design_I.md#symbology-for-vector-data)
+
+__Trigger Activation__
+
+1. Right-click on the “ML1_IPC_Index” layer -> `Properties` -> `Symbology`
+2. In the down left corner click on `Style` -> `Load Style`
+3. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file __“Style_Trigger_Activation_ex.qml”__.
+4. Click `Open`. Then click on `Load Style`
+5. Back in the “Layer Properties” Window click `Apply` and `OK`
+
+::::{dropdown} Info: Trigger Activation Layer
+:open:
+You will now see districts where no trigger is activated in green and districts with trigger activation in pink.
+
+The “Style_Trigger_Activation.qml” style layer is configured to show the district names only where the trigger is actually activated. If there is no trigger activation you can activate the admin 1 boundary layer for better map orientation (see __Administrative 2 Boundaries__ below)
+::::
+
+```{figure} /fig/Map_yes_trigger.PNG
+---
+width: 1000px
+name: 
+align: center
+---
+```
+
+
+__Administrative 2 Boundaries (Regions)__
+
+6. Right click on the "Som_admin1_regions_UNDP.gqkp" (Regions) layer -> `Properties` -> `Symbology`
+7. In the down left corner click on `Style` -> `Load Style`
+8. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file __“SOM_regions_style_ex.qml”__.
+9. Click `Open`. Then click on `Load Style` 
+10. Back in the “Layer Properties” Window click `Apply` and `OK`
+11. Add a the OpenStreetMap basemap by clicking on `Layer` -> `Add Layer` -> `Add XYZ layer...` -> Select the OpenStreetMap. Click `Add`. ([Wiki basemap](/content/Wiki/en_qgis_basemaps_wiki.md))
+12. Place the OpenStreetMap basemap on the bottom.
+13. Delet all layers __exept__:
+    * Trigger_activation
+    * Som_admin1_regions_UNDP
+    * OpenStreetMap
+
+```{dropdown} Video: Visualisation of results
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Trigger_model_style.mp4"></video>
+```
+
+``````{list-table}
+:header-rows: 1
+:widths: 20 20
+
+* - Intervention Map __without__ Trigger activation
+  - Intervention Map __with__ Trigger activation
+* - 
+    ```{figure} /fig/Map_no_trigger.PNG
+    ---
+    width: 1000px
+    name: 
+    align: center
+    ---
+    ```
+    
+  -
+    ```{figure} /fig/Map_yes_trigger.PNG
+    ---
+    width: 450px
+    name: 
+    align: center
+    ---
+    ```
+``````
+
+```{Attention}
+Remember the [layer concept](/content/Module_2/en_qgis_geodata_concept.md) and make sure the basemap layer is at the bottom of your layers panel.
+```
+
+### Step 11: Making print map
+
+__Purpose:__ Visualisation of the map features in a printable map layout
+
+__Tool:__  [Print Layout](/content/Module_4/en_qgis_map_design_2.md)
+
+
+1. If not done before, delete all layers expect __Trigger_activation__, __Som_admin1_regions_UNDP__ and __OpenStreetMap__
+2. Open a new print layout by clicking on `Project` -> `New Print Layout` -> enter the name of your current Project e.g "2024_01".
+3. Go the the `Modul_5_Exercise2_Drought_Monitoring_Trigger` folder and drag and drop the file `Trigger_activation_Intervention_map_ex.qpt` in the print layout
+4. Change the date to the current date by clicking on "Further map info…" in the items panel. Click on the `Item Properties` tab and scroll down. Here you can change the date in the `Main Properties` field.
+5. If necessary, adjust the legend by clicking on the legend in the `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there check if you have to open the dropdown. Make sure `Auto update` is not checked.
+    * Remove all items in the legend be clicking on the item and then on the red minus icon below.
+    * Add __Trigger_activation__ to the legend by clicking on the green plus and click on the layer and click `ok`
+    * Add __Som_admin1_regions_UNDP__ to the legend by clicking on the green plus and click on the layer and click `ok`
+ 
+
+```{dropdown} Video: Making a print map
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_print_map.mp4"></video>
+```
+
+```{Attention}
+Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.
+```
+
+You can also adapt the template to your needs and preferences. You can find help [here](/content/Module_4/en_qgis_map_design_2.md#print-layout).
+
+```{Attention}
+Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.
+```
+
+### Step 13.: Exporting Map 
+
+
+__Purpose:__ Export the designed and finalised map layout in order to print it as a pdf or format of your choice.
+
+
+__Tool:__ [Print Layout](/content/Module_4/en_qgis_map_design_2.md)
+
+When you have finished the design of you map, you can export it as pdf or image file in different data types.
+
+__Export as Image__
+
+1. In the print layout click on `Layer` -> `Export as Image`
+2. Chose the __Result__ folder in the folder you have created in step 1. Give the file the name of the project e.g 2022_04
+3. Click on `Save`
+4. The window "Image Export Options" will appear. Click `Save`
+Now the image can be found in the result folder in the folder you created in Step 1
+
+
+__Export as PDF__
+
+1. In the print layout click on `Layer` -> `Export as PDF`
+2. Chose the __Result__ folder in the folder you have created in step 1. Give the file the name of the project e.g 2022_04
+3.  Click on `Save`
+4. The window "PDF Export Options" will appear.  For the best results, select the `lossless` image compression.
+5. Click `Save`
+Now the image can be found in the result folder in the folder you created in Step 1
+
+
+```{figure} /fig/map_output_example_ex.png
+---
+width: 1000px
+name: 
+align: center
+---
 ```
