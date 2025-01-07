@@ -1,6 +1,6 @@
 # Data Analysis with QGIS
 
-The last modules introduced the operations and tools necessary to perform geographic data analysis within QGIS. This module takes the knowledge from the previous modules and applies them to create an understanding of spatial analysis. The first chapter discusses what spatial analysis means, and how it can help us understand phenomenons and answer questions. In this chapter, basic analysis methods, such as basic statistics, buffer analysis, Denstity maps, or interpolation, are explained. The second chapter focuses more in depth at data analysis methods within the humanitarian sector. 
+The last modules introduced the operations and tools necessary to perform geographic data analysis within QGIS. This module takes the knowledge from the previous modules and applies them to create an understanding of spatial analysis. The first chapter discusses what spatial analysis means, and how it can help us understand phenomenons and answer questions. In this chapter, basic analysis methods, such as basic statistics, buffer analysis, Density maps, or interpolation, are explained. The second chapter focuses more in depth at data analysis methods within the humanitarian sector. 
 
 
 | __Chapter__ | __Competences & Objectives__ | 
