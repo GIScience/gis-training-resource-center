@@ -121,7 +121,7 @@ Example of a flood risk map. Source: Frank, Enrico & Ramsbottom, David & Avanzi,
 
 Simply knowing the size of an area or the length of a road section is valuable information. For example, you can determine how much of a road network is inaccessible or how much area is affected by flooding.
 
-These geometrical attributes can be calculated using the [__field calculator__](/content/Modul_5/en_qgis_non_spatial_tools.md#calculate-field) or the processing tool __"Add geometry attributes"__. 
+These geometrical attributes can be calculated using the [__field calculator__](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_non_spatial_tools.html#calculate-field) or the processing tool __"Add geometry attributes"__. 
 
 The field calculators has the following functions to calculate geometry attributes as new fields in the attribute table:
 
@@ -205,7 +205,7 @@ It is important to consider that most demographic or economic data needs to be _
 
 There are a few different types of density maps. The most common are heatmaps and hexagon grid maps. In both cases, the intensity of a phenomenon is calculated with point data (rarely with lines or polygons). 
 
->discrete vs. continuous?
+<!---discrete vs. continuous?-->
 
 ### Heatmaps
 
@@ -351,7 +351,7 @@ Red = Pivot field; Blue = Input field; Green = Values field
 
 ## Interpolation 
 
->insert links
+<!---insert links-->
 
 Spatial interpolation uses point data to estimate values at other unknown points. This is extremely useful for spatial phenomena that are [continuous](link), such as rainfall or temperature. For example, you have point data of the temperatures at weather stations, but you want to estimate the temperatures in between these points. Spatial Interpolation can estimate the temperature in between those points. This form of interpolation is called a __statistical surface__. Interpolation can be used to calculate missing elevation data, precipitation, snow accumulation, water table, and population density.
 
@@ -384,17 +384,17 @@ width: 500px
 Inverse Distance Weighted interpolation based on weighted sample point distance (left). Interpolated IDW surface from elevation vector points (right). (Source: Mitas, L., Mitasova, H. (1999). Spatial Interpolation. In: P.Longley, M.F. Goodchild, D.J. Maguire, D.W.Rhind (Eds.), Geographical Information Systems: Principles, Techniques, Management and Applications, Wiley.)
 ```
 
-Keep in mind that IDW interpolation has a few __disadvantages__. For example, the quality of the calculated statistical surface decreases, if the distribution of sample points is uneven. Additionally, the highest and lowest values in the interpolated surface only occur at sample points, which is probably not the case in the real world. This often results in peaks or pits around the sample data points (see [IDW interpolation example](/content/Modul_6/en_qgis_data_analysis_theorie.md#Interpolation)) (adopted from the [QGIS documentation](https://docs.qgis.org/2.18/de/docs/gentle_gis_introduction/spatial_analysis_interpolation.html)). 
+Keep in mind that IDW interpolation has a few __disadvantages__. For example, the quality of the calculated statistical surface decreases, if the distribution of sample points is uneven. Additionally, the highest and lowest values in the interpolated surface only occur at sample points, which is probably not the case in the real world. This often results in peaks or pits around the sample data points (see [IDW interpolation example](/content/Module_6/en_qgis_data_analysis_theorie.md#Interpolation)) (adopted from the [QGIS documentation](https://docs.qgis.org/2.18/de/docs/gentle_gis_introduction/spatial_analysis_interpolation.html)). 
 
 ### Spline Interpolation
 
 ### Triangulated Irregular Network
 
-TIN interpolation is commonly called __Delauny triangulation__. This interpolation methods creates a triangular surface with its nearest neighbour points. In order to achieve this, circles are added around known sample points and the intersection of these circles are used as corners of the triangle (see [figure]). TIN interpolation is usually used to compute __digital elevation models__ (DEM).  
+TIN interpolation is commonly called __Delauny triangulation__. This interpolation methods creates a triangular surface with its nearest neighbour points. In order to achieve this, circles are added around known sample points and the intersection of these circles are used as corners of the triangle (see {numref}`TIN_interpolation_example`). TIN interpolation is usually used to compute __digital elevation models__ (DEM).  
 
 ```{figure} ../../fig/tin_interpolation_example.png
 ---
-name: TIN interpolation example
+name: TIN_interpolation_example
 width: 500 px
 ---
 Delaunay triangulation with circumcircles around the red sample data. The resulting interpolated TIN surface created from elevation vector points is shown on the right. (Source: Mitas, L., Mitasova, H. (1999). Spatial Interpolation. In: P.Longley, M.F. Goodchild, D.J. Maguire, D.W.Rhind (Eds.), Geographical Information Systems: Principles, Techniques, Management and Applications, Wiley)
@@ -408,4 +408,4 @@ Kriging is a method of geostatistics used to estimate values for spatial units w
 
 ## Outlook
 
-There are many analysis methods in GIS. However, setting up an analysis method can be quite time consuming, and creating a new analysis method for every research question makes it hard to compare the results of different analyses. This is why __model building__ and __automation__ are used frequently when working with GIS data. A model can be seen as a analysis blueprint that only needs input data to perform a certain type of analysis. Since the parameters are the same and similar datasets are needed for the model to work properly, the results can be compared. If you are interested in model building and automation, check out [module 7](/content/Modul_7/en_qgis_automation_theory.md).
+There are many analysis methods in GIS. However, setting up an analysis method can be quite time consuming, and creating a new analysis method for every research question makes it hard to compare the results of different analyses. This is why __model building__ and __automation__ are used frequently when working with GIS data. A model can be seen as a analysis blueprint that only needs input data to perform a certain type of analysis. Since the parameters are the same and similar datasets are needed for the model to work properly, the results can be compared. If you are interested in model building and automation, check out [module 7](/content/Module_7/en_qgis_automation_theory.md).
