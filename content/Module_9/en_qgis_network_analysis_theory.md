@@ -13,7 +13,7 @@ Creating a graph involves defining its nodes (vertices) and edges (connections b
  
 **Defining Nodes:** entities, objects, locations **&rarr;** Features in OpenStreetMap (hospitals, schools etc.)
 
-**Identifying Edges:** roads or pathways between locations **&rarr;** Ways in OpenStreetMap (roads, paths, cicleways)
+**Identifying Edges:** roads or pathways between locations **&rarr;** Ways in OpenStreetMap (roads, paths, cycleways)
 
 **Additional Information**
 Edges can be endowed with diverse weights. OpenStreetMap features tags such as road type, segment length, speed limit, and surface condition, which can be interpreted as weight attributes. Depending on your requirements, you  can compute the shortest route or opt for the route with minimal elevation gain.
@@ -50,7 +50,7 @@ You can determine directions or standard routes, which unveil the shortest path 
 
 #### General Information
 - Graphhopper based routing machine since 2008
-- Completly Open-Source
+- Completely Open-Source
 - Global public API
   - updates every week
   - more than 100GB RAM per routing profile
@@ -63,7 +63,7 @@ You can determine directions or standard routes, which unveil the shortest path 
 #### Services
 - **Directions/standard routing**: Shortest path between two locations
 - **Isochrones**: Area reachable within a limit (time | distance)
-- **Matrix**: Times / Distances bewteen a set of locations
+- **Matrix**: Times / Distances between a set of locations
 - **Optimization**: Best order to visit a set of points
 
 >This module provides an accessibility analysis based on Openrouteservice isochrones.
@@ -71,7 +71,7 @@ You can determine directions or standard routes, which unveil the shortest path 
 #### Isochrones
 - Different profiles: car, pedestrian, bike, heavy goods vehicles (HGV)
 - Avoid areas, avoid, road types
-- Further dynamic prefernces: green routing, noise aware routing, landmark routing, (heat aware routing)
+- Further dynamic preferences: green routing, noise aware routing, landmark routing, (heat aware routing)
 - Based on profile and preferences what area is reachable within a given time limit?
 - Determine: reachability, catchment areas
 -  Max. 60minutes on the public API

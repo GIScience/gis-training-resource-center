@@ -89,7 +89,7 @@ __Download all datasets [here](https://nexus.heigit.org/repository/gis-training-
 
 | Dataset name| Original title|Publisher|Download from| 
 | :-------------------- | :----------------- |:----------------- |:----------------- |
-| 2024-01-01-2024-09-23-Pakistan.xlsx |Conflict data for Pakistan 01/2024-09/2024  |ACLAD| HDX |
+| 2024-01-01-2024-09-23-Pakistan.xlsx |Conflict data for Pakistan 01/2024-09/2024  |ACLED| HDX |
 | PAK_KP_admin_3.gpkg |Administrative Boundaries level 3 of KP |UN OCHA | HDX |
 | Pak_adm2_Khyber Pakhtunkhwa.gpkg |Administrative Boundaries level 1 of KP |UN OCHA | HDX |
 |20240605_PAK_MPI.xlsx|Pakistan Multi Poverty Index (MPI)|Pakistan Bureau of Statistics|Pakistan Bureau of Statistics|

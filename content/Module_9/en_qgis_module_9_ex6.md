@@ -14,7 +14,7 @@ Download all datasets __[here](https://nexus.heigit.org/repository/gis-training-
 
 
 -   `nuerburgring.gpkg` (points): Point location of the disaster relief staging area or base camp during the emergency response.
--   `affected_places.gpkg` (points): Communities affected by the flood in the Ahr valley represented as indvidual points.
+-   `affected_places.gpkg` (points): Communities affected by the flood in the Ahr valley represented as individual points.
 -   `affected_municipalities.gpkg` (points): Municipal boundaries affected by the flood in the Ahr valley represented as polygons.
 -   `affected_roads_buff2m_WGS84.gpkg` (polygons): Road and bridge infrastructure damaged or destroyed by the flood represented as polygons
 -   `physicians.gpkg` (points): Physicians located in and close to the Ahr valley represented as points.
@@ -24,7 +24,7 @@ Download all datasets __[here](https://nexus.heigit.org/repository/gis-training-
 
 ### STEP 1: Creating a Simple Route using the ORS Tools Plugin in QGIS
 
-In this first task, we will focus on creating a single, straightforward route using the ORS Tools plugin within the QGIS software. Your objective is to define an origin/source and a destination, and utilize the plugin to generate a route between these two points. To get started, you can choose Nürburgring in Germany as the source location since it served as the staging area for disaster relief during the emergency response. For the destination, you can select Bad Neuenahr-Ahrweiler, the largest city affected by the Ahr Valley flood.
+In this first task, we will focus on creating a single, straightforward route using the ORS Tools plugin within the QGIS software. Your objective is to define an origin/source and a destination, and utilize the plugin to generate a route between these two points. To get started, you can choose Nürnburgring in Germany as the source location since it served as the staging area for disaster relief during the emergency response. For the destination, you can select Bad Neuenahr-Ahrweiler, the largest city affected by the Ahr Valley flood.
 
 To accomplish this task, refer to the available resources provided above to familiarize yourself with the functionality and features of the ORS Tools plugin. Explore the plugin's interface, study the options available, and apply the necessary settings to successfully generate the desired route. Feel free to experiment and troubleshoot any challenges you may encounter along the way.
 
@@ -49,7 +49,7 @@ align: center
 Routes from Nürnbergring to Bad Neuenahr-Ahrweiler
 ```
 
-Do you spot any difference in the isochrone shapes? Try playing around and changing the shape of your avoid area. 
+Do you spot any difference in the shapes of the isochrones? Try playing around and changing the shape of your avoid area. 
 
 ## PART 2 - Multiple routes with ORS Tools
 

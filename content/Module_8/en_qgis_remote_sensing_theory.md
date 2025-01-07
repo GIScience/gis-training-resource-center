@@ -9,28 +9,29 @@ The information provided by the radiation emitted from the Earth's surface can b
 
 
 ## Electromagnetic Radiation and its interaction with the Earths Surface
+
 ```{figure} /fig/en_m8_rs_spectrum.png
 ---
-name: Basic concept of a spatial raster
+name: electromagnetic_spectrum_raster
 width: 350px
 align: right
 ---
 
 ```
 
-An important component of remote sensing is that different sensors can measure and process a much wider range of electromagnetic radiation than the human eye, which is limited to the visible spectrum. The electromagnetic spectrum can be divided into multiple wavelegth intervals like the visible spectrum, the infra-red spectrum or microwaves (see fig X). <br>
+An important component of remote sensing is that different sensors can measure and process a much wider range of electromagnetic radiation than the human eye, which is limited to the visible spectrum. The electromagnetic spectrum can be divided into multiple wavelength intervals like the visible spectrum, the infra-red spectrum or microwaves (see {numref}`electromagnetic_spectrum_raster`). <br>
 
 
 Objects and the Earth's surface reflect and absorb EMR across the wavelength spectrum and with distinct patterns that are unique to the type of object/surface. These unique patterns are called "spectral signatures" and are visualised in signature graphs.
 Signatures vary with variations in an object/surface's material composition, structure and surface properties. For example:
 
 - Vegetation typically has a high reflectance in the near-infrared region of the spectrum due to the absorption characteristics of chlorophyll, resulting in a prominent peak in this region.
-- Water bodies tend to have low reflectance over most of the spectrum, with higher ab-sorption at visible wavelengths and lower absorption in the NIR.
+- Water bodies tend to have low reflectance over most of the spectrum, with higher absorption at visible wavelengths and lower absorption in the NIR.
 - Urban areas can have complex spectral signatures due to the variety of materials pre-sent, such as asphalt, concrete and metal, each with its own reflectance characteristics across the spectrum.
 
 ```{figure} /fig/en_m8_rs_specsigs.jpeg
 ---
-name: Basic concept of a spatial raster
+name: Basic concept of a spatial raster 2
 width: 600px
 
 ---
@@ -45,6 +46,8 @@ By analysing these spectral signatures it is possible to identify and classify s
 The main source of electromagnetic radiation on Earth is the Sun, whose reflected radiation is also the dominant source of information for remote sensing imagery in general. Sensors can measure this electromagnetic radiation in specific ranges, called "bands", which are usually represented individually by a raster file when acquiring remote sensing data. <br>
 
 For example, the standard data from the Landsat 8 satellite mission, which is one of the most commonly used datasets, has X different bands ranging from X over X to X.
+
+<!--FIX: X and X to X-->
 
 ```{figure} /fig/en_m8_rs_landsatbands.png
 ---
@@ -76,8 +79,8 @@ All general attributes of raster data, such as spatial resolution, extent or the
 
 
 
-## Visulization of Multi Spectral Remote Sensing Data
-The fact that the bands of the individual spectral ranges are available in the files of multispectral remote sensing scenes as individual rasters allows various possible combinations of these bands to create so-called false colour composites: the optical perception of the human eye can be divid-ed into the three spectral ranges of visible light (red, blue and green, R-G-B for short). In a "true colour display", i.e. the optical display of a satellite image as the human eye would perceive it (e.g. Google Maps Satellite), these bands are also assigned to the corresponding bands: R = Red, G = Green, B = Blue.
+## Visulisation of Multi Spectral Remote Sensing Data
+The fact that the bands of the individual spectral ranges are available in the files of multispectral remote sensing scenes as individual rasters allows various possible combinations of these bands to create so-called false colour composites: the optical perception of the human eye can be divided into the three spectral ranges of visible light (red, blue and green, R-G-B for short). In a "true colour display", i.e. the optical display of a satellite image as the human eye would perceive it (e.g. Google Maps Satellite), these bands are also assigned to the corresponding bands: R = Red, G = Green, B = Blue.
 
 ```{figure} /fig/en_m8_rs_bandsconcept.png
 ---
@@ -108,7 +111,7 @@ align: right
 
 ```
 
-This false colour composit for example strongly highlights vegetation and especially healthy vegetation which appears bright red. This is because red visualizes the near infrared spectrum-which displays high reflectance by vegetation, particularly compared to other surfaces like soil or water. This makes it easier to identify and analyze vegetation cover, health, and distribution.
+This false colour composite for example strongly highlights vegetation and especially healthy vegetation which appears bright red. This is because red visualizes the near infrared spectrum-which displays high reflectance by vegetation, particularly compared to other surfaces like soil or water. This makes it easier to identify and analyze vegetation cover, health, and distribution.
 
 ```{figure} /fig/en_m8_rs_SWIR_NIR_RED.png
 ---

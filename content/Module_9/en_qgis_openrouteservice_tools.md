@@ -38,7 +38,7 @@ width: 700px
 name: locate ors tools plugin in qgis
 align: center
 ---
-Where to open the ORS Tools plugin    Source: HeiGIT
+Where to open the ORS Tools plugin (Source: HeiGIT)
 ```
 -  Open the "ORS tools" plugin - click on the ORS Tolls icon in the toolbar <img src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/icon_ORS_tools_plugin.png" alt="Icon" width="20" height="20">
 -  To make use of the ORS tools, you first need to sign up. Therefore click `Sign Up`
@@ -63,7 +63,7 @@ align: center
 How to sign up for Openrouteservice    Source: HeiGIT
 ```
 
--  After submitting your profile, a confirmtaion e-mail will be sent to your mail    adress
+-  After submitting your profile, a confirmation e-mail will be sent to your mail address
 -  Please confirm your account
 -  You are now able to create tokens (API keys) which allow you to run queries through the ORS Tools plugin in QGIS
 -  Click into the field under "Request a token" and choose "Free"
@@ -78,7 +78,7 @@ align: center
 ---
 How to create a token (API key)    Source: HeiGIT
 ```
--  Click on the token, it will directly be copied. You can now go back into QGIS     for further setup
+- Click on the token, it will directly be copied. You can now go back into QGIS for further setup
 
 ### Configure the plugin
 
@@ -94,8 +94,7 @@ width: 350px
 name: plugin config
 align: center
 ---
-Where to add API key     Source: HeiGIT
-
+Where to add API key (Source: HeiGIT)
 ```
 
 For further information: [https://github.com/GIScience/orstools-qgis-plugin]
