@@ -10,7 +10,7 @@ In this task, we will load a CSV file in QGIS and do some analysis.
 ## Task 1: Load data in QGIS
 1.	Open the folder “Exercise 2”. Go into the “data” folder and copy all data from the “input” folder into the “temp” folder
 2.	To load the file “Water_sources.csv” into QGIS click on `Layer` -> `Add layer` -> `Open Delimited Text Layer`. Next to `File name` click on the three points ![](/fig/Three_points.png) and navigate to your "temp" folder. Her select the file "water_sources.csv".
-3. Use the setings like in the image below. 
+3. Use the settings as in the image below. 
 ```{figure} /fig/add_csv.png
 ---
 width: 400px
@@ -72,7 +72,7 @@ align: center
 ```
 6. Click `ok`
 7. Save the new column by clicking on ![](/fig/mActionSaveEdits.png) in the attribute table and end the editing mode by clicking on ![](/fig/mActionToggleEditing.png)
-8. Sorte the new column “Watersources_pop" and finde out wich districts have the highest and lowest number of water sources per 10.000 people
+8. Sort the new column “Watersources_pop" and find out which districts have the highest and lowest number of water sources per 10.000 people
 
 
 
@@ -149,7 +149,7 @@ You can find more infos in the __[Wiki Layer concept](https://giscience.github.i
 :::{dropdown} Video: Change Layer Name
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_rename_layer.mp4"></video>
 :::
-5. To the properties of a layer right click on your layer -> `Properies` -> `Information`. 
+5. To the properties of a layer right click on your layer -> `Properties` -> `Information`. 
     1. When was the layer "Somaliland_district_pop" last modified?
     2. How many features does the airport layer have?
     3. What geometry does the Somalia_country layer have?
@@ -194,7 +194,7 @@ __[Wiki Attribute Table](https://giscience.github.io/gis-training-resource-cente
 Depending on the use case and type of geodata at your disposal, there are multiple ways to visualise geodata in a comprehensive format:
 
 - You can change the 'styling' and color of the data
-- You can add textlabels 
+- You can add text labels 
 
 All the styling in QGIS happens in `Symbology`
 
@@ -248,7 +248,7 @@ align: center
 
 Categorized classification in QGIS groups spatial data into distinct categories based on specific attributes. This classification enhances the organization and interpretation of geospatial information for clearer insights.
 1. Open the attribute table of "Somaliland_health_facilities_OSM" by right clicking on "Somaliland_health_facilities_OSM" -> `Open Attribute Table`
-2. Check out the column “Facility t”. This column has the data on the type of the health facility. As you can see there are not just hospitals but many different typs of facilities like Health posts.
+2. Check out the column “Facility t”. This column has the data on the type of the health facility. As you can see there are not just hospitals but many different types of facilities like Health posts.
 3. To categorise all facilities by type on the map, open the symbology window. Right-click on the "Somaliland_health_facilities_OSM" layer -> `Properties`-> `symbology`
 4. Click on `Categorized`
 5. `Value`: “Facility t”.
@@ -266,7 +266,7 @@ align: center
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Classify_by_categorized.mp4"></video>
 :::
 7. To use a prearranged style for the hospitals go to the Symbology window. In the down left corner click on `Style` -> `Load Style`
-4. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the "Project" folder -> "Style" folder and select the file “Hospital_style_training.qml. ([Wiki](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_I.html#exporting-and-importing-styles))
+4. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the "Project" folder -> "Style" folder and select the file “Hospital_style_training.qml. ([Wiki](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I.html#exporting-and-importing-styles))
 5. Click `Open`. Then click on `Load Style`
 6. Back in the “Layer Properties” Window click `Apply` and `OK`
 

@@ -1,6 +1,5 @@
 # Risk Assessment QGIS Plugin
 
-🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
 ## Introduction & Purpose
 
@@ -22,8 +21,9 @@ __Open the Python Console in QGIS__
 
 __Check if Pandas is installed__
 
-1. In the Python Console type the following command and press ENTER:`       Import pandas`
+1. In the Python Console type the following command and press ENTER:`Import pandas`
 
+<!--This is not the correct -->
 
 If the library is installed, this command will execute without error, and you won’t see any error messages.
 If pandas is not installed, you will see error messages indicating that the respective module cannot be found. In that case, you will need to install the missing library. You can install pandas using pip:
@@ -196,7 +196,7 @@ In the context of this analysis, risk is defined as the interaction of the two d
 
 ### Transformation by Population
 
-By means of the Population-file the user is enabled to create population based indicators and to offset certain indicators with the population numbers. By indicating an existing indicator, creating a new name and setting a factor, the variables are offsetted in the following manner:
+By means of the Population-file the user is enabled to create population based indicators and to offset certain indicators with the population numbers. By indicating an existing indicator, creating a new name and setting a factor, the variables are offset in the following manner:
 
 $ new\ Indicator=   \frac{indicators\ to\ be\ transformed}{Total\ Population} \times factor$
 
