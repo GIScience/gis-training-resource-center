@@ -56,32 +56,32 @@ parts:
         - file: content/Module_5/en_qgis_module_5_exercises.md
   - caption: Module 6
     chapters:
-      - file: content/Modul_6/en_module_6_overview.md
+      - file: content/Module_6/en_module_6_overview.md
         sections:
-          - file: content/Modul_6/en_qgis_data_analysis_theorie.md
-          - file: content/Modul_6/en_qgis_common_data_analysis.md
-          - file: content/Modul_6/en_qgis_modul_6_exercises.md  
+          - file: content/Module_6/en_qgis_data_analysis_theorie.md
+          - file: content/Module_6/en_qgis_common_data_analysis.md
+          - file: content/Module_6/en_qgis_modul_6_exercises.md  
   - caption: Module 7
     chapters:
-      - file: content/Modul_7/en_module_7_overview.md
+      - file: content/Module_7/en_module_7_overview.md
         sections: 
-          - file: content/Modul_7/en_qgis_automation_theory.md
-          - file: content/Modul_7/en_qgis_modul_7_ex1.md
+          - file: content/Module_7/en_qgis_automation_theory.md
+          - file: content/Module_7/en_qgis_modul_7_ex1.md
   - caption: Module 8
     chapters:
-      - file: content/Modul_8/en_module_8_overview.md
+      - file: content/Module_8/en_module_8_overview.md
         sections: 
-          - file: content/Modul_8/en_qgis_remote_sensing_raster_theorie.md
-          - file: content/Modul_8/en_qgis_remote_sensing_theory.md  
-          - file: content/Modul_8/en_qgis_modul_8_ex1.md
+          - file: content/Module_8/en_qgis_remote_sensing_raster_theorie.md
+          - file: content/Module_8/en_qgis_remote_sensing_theory.md  
+          - file: content/Module_8/en_qgis_modul_8_ex1.md
   - caption: Module 9
     chapters:
-      - file: content/Modul_9/en_module_9_overview.md
+      - file: content/Module_9/en_module_9_overview.md
         sections:
-          - file: content/Modul_9/en_qgis_network_analysis_theory.md
-          - file: content/Modul_9/en_qgis_openrouteservice_tools.md
-          - file: content/Modul_9/en_qgis_centrality.md
-          - file: content/Modul_9/en_qgis_modul_9_exercises.md
+          - file: content/Module_9/en_qgis_network_analysis_theory.md
+          - file: content/Module_9/en_qgis_openrouteservice_tools.md
+          - file: content/Module_9/en_qgis_centrality.md
+          - file: content/Module_9/en_qgis_modul_9_exercises.md
   - caption: Wiki
     chapters:
       - file: content/Wiki/en_qgis_qgis_basics_wiki.md
