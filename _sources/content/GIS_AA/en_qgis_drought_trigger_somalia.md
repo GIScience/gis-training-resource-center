@@ -28,8 +28,8 @@ By fixed data we mean datasets that are needed for the trigger to work, that wil
 
 | Dataset| Source | Description |
 | ----- | --- | --- |
-|Adminstrative bounderies | [HDX](https://data.humdata.org/dataset/cod-ab-som?) |The administrative bounderies on level 0-2 for Somalia and Somaliland can be accessed via HDX. For this trigger mechanism we provide the administrative bounderies on level 2 (district level) as a shapefile. We have added the population number for each district derived from Worldpop.|
-|Population Counts| [Worldpop](https://hub.worldpop.org/doi/10.5258/SOTON/WP00534) |The worldpop dataset in .geotif rasterformat provides population estimates per hectar for the year 2020 |
+| Administrative boundaries | [HDX](https://data.humdata.org/dataset/cod-ab-som?) | The administrative boundaries on level 0-2 for Somalia and Somaliland can be accessed via HDX. For this trigger mechanism we provide the administrative boundaries on level 2 (district level) as a shapefile. We have added the population number for each district derived from Worldpop. |
+| Population Counts | [Worldpop](https://hub.worldpop.org/doi/10.5258/SOTON/WP00534) | The worldpop dataset in `.geotif` raster format provides population estimates per hectar for the year 2020. |
 
 
 
@@ -40,31 +40,29 @@ In this way upcoming drought events (SPI) that most probably will lead to food i
 
 | Dataset| Source | Description |
 | ----- | --- | --- |
-|SPI-12 forecast| [ICPAC](https://www.icpac.net/) |meteorological drought indicator to monitor precipitation anomalies over 12-month accumulation periods|
-|IPC Projections| [FEWSNET](https://fews.net/) | five-phase scale providing common standards for classifying the severity of acute or anticipated acute food insecurity. |
+| SPI-12 forecast| [ICPAC](https://www.icpac.net/) | meteorological drought indicator to monitor precipitation anomalies over 12-month accumulation periods|
+| IPC Projections| [FEWSNET](https://fews.net/) | five-phase scale providing common standards for classifying the severity of acute or anticipated acute food insecurity. |
 
 
 
 ### What is the Standarized Precipitation Index (SPI-12)?
 
 The Standardized Precipitation Index (SPI) is a widely used index to characterize meteorological drought.
-The Standarized Precipitation Index (SPI-12) compares the total rainfall received at a particular location during the last 12 months with the long-term rainfall mean (42 years) for the same period of time at that location.
-
-
+The Standardized Precipitation Index (SPI-12) compares the total rainfall received at a particular location during the last 12 months with the long-term rainfall mean (42 years) for the same period of time at that location.
 
 
 ### What is IPC Food Security Projection Data?
  
-The IPC is a commonly acceepted measure and classification to describe the current and anticipated severity of acute food insecurity. 
+The IPC is a commonly accepted measure and classification to describe the current and anticipated severity of acute food insecurity. 
 The classification is based on a convergence of available data and evidence, including indicators related to food consumption, livelihoods, malnutrition and mortality. Food Insecurity is one of the prioritized impacts of droughts in Somalia which is why it is also used for the triggering mechanism, in a population-weighted index. 
 
-| Colour| Phase | Descriptions |
+| Colour | Phase | Descriptions |
 | ----- | --- | --- |
-|![](/fig/IPC_Class_1.drawio.svg)|1. Minimal   |Households are able to meet essential food and non-food needs without engaging in atypical and unsustainable strategies to access food and income.   |
-|![](/fig/IPC_Class_2.drawio.svg)|2. Stressed   |Households have minimally adequate food consumption but are unable to afford some essential non-food expenditures without engaging in stress-coping strategies.  |
-|![](/fig/IPC_Class_3.drawio.svg)|3. Crisis   |Households either have food consumption gaps that are reflected by high or above-usual acute malnutrition __OR__ are marginally able to meet minimum food needs but only by depleting essential livelihood assets or through crisis-coping strategies.  |
-|![](/fig/IPC_Class_4.drawio.svg)|4. Emergency|Households either have large food consumption gaps which are reflected in very high acute malnutrition and excess mortality; __OR__ are able to mitigate large food consumption gaps but only by employing emergency livelihood strategies and asset liquidation.|
-|![](/fig/IPC_Class_5.drawio.svg)|5. Famine |Households have an extreme lack of food and/or other basic needs even after full employment of coping strategies. Starvation, death, destitution, and extremely critical acute malnutrition levels are evident. (For Famine Classification, area needs to have extreme critical levels of acute malnutrition and mortality.)  |
+| ![](/fig/IPC_Class_1.drawio.svg)| 1. Minimal   | Households are able to meet essential food and non-food needs without engaging in atypical and unsustainable strategies to access food and income.   |
+| ![](/fig/IPC_Class_2.drawio.svg)| 2. Stressed   | Households have minimally adequate food consumption but are unable to afford some essential non-food expenditures without engaging in stress-coping strategies.  |
+| ![](/fig/IPC_Class_3.drawio.svg)| 3. Crisis   | Households either have food consumption gaps that are reflected by high or above-usual acute malnutrition __OR__ are marginally able to meet minimum food needs but only by depleting essential livelihood assets or through crisis-coping strategies.  |
+| ![](/fig/IPC_Class_4.drawio.svg)| 4. Emergency | Households either have large food consumption gaps which are reflected in very high acute malnutrition and excess mortality; __OR__ are able to mitigate large food consumption gaps but only by employing emergency livelihood strategies and asset liquidation.|
+| ![](/fig/IPC_Class_5.drawio.svg)| 5. Famine | Households have an extreme lack of food and/or other basic needs even after full employment of coping strategies. Starvation, death, destitution, and extremely critical acute malnutrition levels are evident. (For Famine Classification, area needs to have extreme critical levels of acute malnutrition and mortality.)  |
 
 
 #### IPC Food Security Projection:
@@ -76,7 +74,7 @@ Outlook updates are produced almost every month and are also taken into account.
 
 #### IPC-Population Weighted Index
 
-To better operationalise the IPC data a simple population-weigthed index was developed. Relative population numbers are weighted based on the respective IPC class they fallin, in order to give the amount of people in a certain IPC class the importance instead of the IPC class only.
+To better operationalise the IPC data a simple population-weighted index was developed. Relative population numbers are weighted based on the respective IPC class they falling, in order to give the amount of people in a certain IPC class the importance instead of the IPC class only.
 Furthermore, population located in a higher IPC class is more important than population located in a lower class. The index is calculated as follows:
 
 $ IPC\ Index =  Weights \times \frac{District\ Pop\ per\ IPC\ Phase}{Total\ District\ Pop}$
@@ -92,7 +90,7 @@ Where the weights are defined as:
 |IPC 5  |6  |
 
 
-The IPC Index represents low-population districts equal to high-population districts. No underrepresentation of high food insecurity of small districts occurs.
+The IPC Index represents low-population districts equal to high-population districts. No under-representation of high food insecurity of small districts occurs.
 
 
 # Trigger Workflow Automated 
@@ -111,7 +109,7 @@ name:
 align: center
 ---
 ```
-__Purpose:__ In this step we set up the correct folder structure to make the analysis easier and to ensure consitent results. 
+__Purpose:__ In this step we set up the correct folder structure to make the analysis easier and to ensure consistent results. 
 
 __Tool:__ No special tools or programs are needed
 
@@ -126,7 +124,7 @@ __Tool:__ No special tools or programs are needed
     3. Copy the Template folder “TEMPLATE_Year_Month” and change the name to the current year and month. The result could be the folder "2022_05"
     
   -
-    ```{figure} /fig/          Folder_structure_FbF_Drought_Monitoring_Trigger.drawio.svg
+    ```{figure} /fig/Folder_structure_FbF_Drought_Monitoring_Trigger.drawio.svg
     ---
     width: 450px
     name: 
@@ -135,7 +133,7 @@ __Tool:__ No special tools or programs are needed
     ```
 ``````
 
-The Video below shows the process for setting up the folder for decmber 2023.
+The Video below shows the process for setting up the folder for december 2023.
 
 
 ```{dropdown} Video: Setting up folder structure 
@@ -153,9 +151,9 @@ align: center
 ```
 
 
-__Tool:__ FileZilla and Interent Browser
+__Tool:__ FileZilla and Internet Browser
 
-The current plans provide that ICPAC will monthly provide the SPI-12 forcast whereas the IPC data will be pulled from the FEWSNET website. FEWS NET publishes IPC data on its website. 
+The current plans provide that ICPAC will monthly provide the SPI-12 forecast whereas the IPC data will be pulled from the FEWSNET website. FEWS NET publishes IPC data on its website. 
 The main data publications plus the updates of the IPC data amount to the publication of new data almost monthly.
 
 ### SPI-12 Data
@@ -168,13 +166,13 @@ ICPAC will provide the SPI-12 forecasts on their FTP (File Transfer Protocol). T
 3. Open FileZilla
 
 
-4. Establish a connection to the FTP Server by insterting the credentials you have been passed (Host, Username and Password) and clicking `Quickconnect`.
+4. Establish a connection to the FTP Server by inserting the credentials you have been passed (Host, Username and Password) and clicking `Quickconnect`.
 
 
 In FileZilla you have four windows. On the left hand side you will see the folder on your computer in the upper window. By clicking on a folder, the documents in the folder will be shown in the lower left window.
 On the right hand side, you will see in the upper window the FTP data folder and by clicking on it, the data will be shown in the lower right window.
 
-In order to pass the data from the FTP Server to your own machine you can simply drag and drop the folder or data from the righthandside windows (FTP-Server) to the lefthandside windows (your Computer). To do so, firstly navigate to your folder where you wneed the latest SPI-12 data to be located `.../FbF_Drought_Monitoring_Trigger/Monitoring/Year_Month_template/SPI_12`. Then drag and drop the latest SPI-12 into the folder.
+In order to pass the data from the FTP Server to your own machine you can simply drag and drop the folder or data from the right hand side windows (FTP-Server) to the left hand side windows (your Computer). To do so, firstly navigate to your folder where you need the latest SPI-12 data to be located `.../FbF_Drought_Monitoring_Trigger/Monitoring/Year_Month_template/SPI_12`. Then drag and drop the latest SPI-12 into the folder.
 
 
 
@@ -188,8 +186,8 @@ align: center
 
 ### IPC Data
 
-The IPC Projection data is provided and regulary updated on the [FEWSNET Website](https://fews.net/).
-On the website you will have to click on Somalia to acess the data. Alternativley, you can  navigate through `Data` -> `Acute Food Insecurity Data` and enter „Somalia". In the menu you will see different dataformats for different timestamps. Once you find out which timestamp is the most current one find the ZIP download. We need the data in shapefile (.shp) format, which is only included in the ZIP file and not provided as single download file. 
+The IPC Projection data is provided and regularly updated on the [FEWSNET Website](https://fews.net/).
+On the website you will have to click on Somalia to access the data. Alternatively, you can  navigate through `Data` -> `Acute Food Insecurity Data` and enter „Somalia". In the menu you will see different data formats for different timestamps. Once you find out which timestamp is the most current one find the ZIP download. We need the data in shapefile (.shp) format, which is only included in the ZIP file and not provided as single download file. 
 
 
 ```{Warning}
@@ -197,7 +195,7 @@ The FEWSNET pages change often !
 ```
 
 1. Go to [FEWSNET Website](https://fews.net/). Click on `Data` -> `Acute Food Insecurity`.
-2. Scroll down. In `Geograhic Area` typ in “Somalia” and click `Apply`
+2. Scroll down. In `Geographic Area` typ in “Somalia” and click `Apply`
 3. Choose the newest dataset.
 
 ```{figure} /fig/IPC_Projections_website.png
@@ -287,7 +285,7 @@ align: center
 
 
 1. Open the tool under `Processing` -> `Graphical Modeler`
-2. In the upper panel click `Model` -> `Open Model` and naviageto your folder "FbF_Drought_Monitoring_Trigger", mark the "Triggermodel_Somalia.model3" file an click on `Open`. The model will open and you will see yellow, white and green boxes.
+2. In the upper panel click `Model` -> `Open Model` and navigate to your folder "FbF_Drought_Monitoring_Trigger", mark the "Triggermodel_Somalia.model3" file an click on `Open`. The model will open and you will see yellow, white and green boxes.
 
 ```{dropdown} Video: Open Model
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/load_model.mp4"></video>
@@ -304,7 +302,7 @@ align: center
 
 | Box | Significance | Description |
 | ----- | --- | --- |
-|Yellow| Model Input |Definition of the Inut data for the model the model will perform on|
+|Yellow| Model Input |Definition of the input data for the model the model will perform on|
 |White| Algorithms | Algorithms or Tools are specific geoprocessing steps that perform specific tasks, such as clipping, reprojecting or buffering. |
 |Green| Model Output| The results created by the model (Output layers) are automatically added to your layers panel in your QGIS project interface|
 
@@ -334,7 +332,7 @@ The model needs the follow 5 inputs:
     3. `Pop_per_district`: district_pop_sum
     4. `SPI12` (SPI12 forecast): SPI-12 data
     5. `Worldpop` (Population Raster data): Worldpop data
-3. Futherdown you have to specify where to save the output: 
+3. Further down, you have to specify where to save the output: 
     1. `Trigger_activation`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
     ```md
     Trigger_activation
@@ -365,6 +363,7 @@ align: center
 
 
 ### Step 6.: Visualisation of results
+
 ```{figure} /fig/Drought_EAP_Worklow_Step_14_1.png
 ---
 width: 1000px
@@ -375,11 +374,11 @@ align: center
 
 __Purpose:__ Definition of how features are represented visually on the map.
 
-__Tool:__ [Symbology](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_I.html#symbology-for-vector-data)
+__Tool:__ [Symbology](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I.html#symbology-for-vector-data)
 
 __Trigger Activation__
 
-1. Right cklick on the “Trigger_activation” layer -> `Properties` -> `Symbology`
+1. Right click on the “Trigger_activation” layer -> `Properties` -> `Symbology`
 2. In the down left corner click on `Style` -> `Load Style`
 3. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file __“Style_Trigger_Activation.qml”__.
 4. Click `Open`. Then click on `Load Style`
@@ -404,13 +403,13 @@ __Risk Assessment__
 7. Right click on the "risk_assessment_districts" layer -> `Properties` -> `Symbology`
 8. In the down left corner click on `Style` -> `Load Style`
 9. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file __“somalia_risk_assessment_style.qml”__ style layer.
-10. Move the "risk_assessment_district" layer __below__ "Trigger_Activation" layer ([Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_geodata_concept.html?highlight=layer#layer-concept)).
+10. Move the "risk_assessment_district" layer __below__ "Trigger_Activation" layer ([Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept.html?highlight=layer#layer-concept)).
 11. Back in the “Layer Properties” Window click `Apply` and `OK`
 
 
 ```{dropdown} Info: Risk Assessment Layer
 For the creation of an __Intervention Map__ we will have to add the risk assessment data and the respective style file.
-For this first of all load from "FbF_Drought_Monitoring_Trigger/Fixed_data/Risk_Assessment" the file "risk_assessment_districts.gpkg". This file is the output of the conducted risk assessment and contains a risk value for each district of Simaliland and Somalia.  In order to visualize it 
+For this first of all load from "FbF_Drought_Monitoring_Trigger/Fixed_data/Risk_Assessment" the file "risk_assessment_districts.gpkg". This file is the output of the conducted risk assessment and contains a risk value for each district of Somaliland and Somalia.  In order to visualize it 
 ```
 
 __Administrative 2 Boundaries (Regions)__
@@ -458,7 +457,7 @@ __Administrative 2 Boundaries (Regions)__
 ``````
 
 ```{Attention}
-Remember the [layer concept](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_geodata_concept.html?highlight=layer#layer-concept) and make sure the basemap layer is at the bottom of your layers panel.
+Remember the [layer concept](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept.html?highlight=layer#layer-concept) and make sure the basemap layer is at the bottom of your layers panel.
 ```
 
 
@@ -474,7 +473,7 @@ align: center
 ```
 __Purpose:__ Viualization of the map features in a printable map layout
 
-__Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
+__Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
 
 
 1. If not done before, delet all layers expect __Trigger_activation__, __risk_assessment_districts__ and __OpenStreetMap__
@@ -496,9 +495,9 @@ Make sure you edit the Map Information on the template, e.g. current date. Also 
 
 
 In order to easily visualize the output of the trigger analysis we provide you with a 
-[map template](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html#map-templates) that can be used as a base for your visualization. You can find the template in the following directory: ".../FbF_Drought_Monitoring_Trigger/maps_somalia_template_risk_assessment.qpt".
+[map template](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#map-templates) that can be used as a base for your visualization. You can find the template in the following directory: ".../FbF_Drought_Monitoring_Trigger/maps_somalia_template_risk_assessment.qpt".
 
-You can also adapt the template to your needs and preferences. You can find help [here](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html#print-layout).
+You can also adapt the template to your needs and preferences. You can find help [here](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#print-layout).
 
 ```{Attention}
 Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.
@@ -518,7 +517,7 @@ align: center
 __Purpose:__ Export the designed and finalized map layout in order tp print it as a pdf or format of your choice.
 
 
-__Tool:__ [Print Layout](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
+__Tool:__ [Print Layout](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
 
 When you have finished the design of you map you can export it as pdf or image file in different datafromats.
 
@@ -582,7 +581,7 @@ __Tool:__ No special tools or programs are needed
     3. Copy the Template folder “TEMPLATE_Year_Month” and change the name to the current year and month. The result could be the folder "2022_05"
     
   -
-    ```{figure} /fig/          Folder_structure_FbF_Drought_Monitoring_Trigger.drawio.svg
+    ```{figure} /fig/Folder_structure_FbF_Drought_Monitoring_Trigger.drawio.svg
     ---
     width: 450px
     name: 
@@ -1242,7 +1241,7 @@ align: center
 
 __Purpose:__ Definition of how features are represented visually on the map.
 
-__Tool:__ [Symbology](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_I.html#symbology-for-vector-data)
+__Tool:__ [Symbology](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I.html#symbology-for-vector-data)
 
 __Trigger Activation__
 
@@ -1271,7 +1270,7 @@ __Risk Assessment__
 7. Right click on the "risk_assessment_districts" layer -> `Properties` -> `Symbology`
 8. In the down left corner click on `Style` -> `Load Style`
 9. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file __“somalia_risk_assessment_style.qml”__ style layer.
-10. Move the "risk_assessment_district" layer __below__ "Trigger_Activation" layer ([Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_geodata_concept.html?highlight=layer#layer-concept)).
+10. Move the "risk_assessment_district" layer __below__ "Trigger_Activation" layer ([Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept.html?highlight=layer#layer-concept)).
 11. Back in the “Layer Properties” Window click `Apply` and `OK`
 
 
@@ -1283,8 +1282,8 @@ For this first of all load from "FbF_Drought_Monitoring_Trigger/Fixed_data/Risk_
 __Administrative 2 Boundaries (Regions)__
 
 12. Right click on the "Som_Admbnda_Adm1_UNDP" (Regiond) layer -> `Properties` -> `Symbology`
-13. In the down left corner click on `Style` -> `Load Style`
-14. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file __“somalia_risk_assessment_style.qml”__.
+13. In the lower right corner click on `Style` -> `Load Style`
+14. In the new window, click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file __“somalia_risk_assessment_style.qml”__.
 15. Click `Open`. Then click on `Load Style` 
 16. Back in the “Layer Properties” Window click `Apply` and `OK`
 17. Add a the OpenStreetMap basemap by clicking on `Layer` -> `Add Layer` -> `Add XYZ layer...` -> Select the OpenStreetMap. Click `Add`. ([Wiki basemap](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html?highlight=osm#basemaps))
@@ -1325,7 +1324,7 @@ __Administrative 2 Boundaries (Regions)__
 ``````
 
 ```{Attention}
-Remember the [layer concept](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_geodata_concept.html?highlight=layer#layer-concept) and make sure the basemap layer is at the bottom of your layers panel.
+Remember the [layer concept](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept.html?highlight=layer#layer-concept) and make sure the basemap layer is at the bottom of your layers panel.
 ```
 
 
@@ -1341,7 +1340,7 @@ align: center
 ```
 __Purpose:__ Viualization of the map features in a printable map layout
 
-__Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
+__Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
 
 
 1. If not done before, delet all layers expect __Trigger_activation__, __risk_assessment_districts__ and __OpenStreetMap__
@@ -1363,9 +1362,9 @@ Make sure you edit the Map Information on the template, e.g. current date. Also 
 
 
 In order to easily visualize the output of the trigger analysis we provide you with a 
-[map template](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html#map-templates) that can be used as a base for your visualization. You can find the template in the following directory: ".../FbF_Drought_Monitoring_Trigger/maps_somalia_template_risk_assessment.qpt".
+[map template](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#map-templates) that can be used as a base for your visualization. You can find the template in the following directory: ".../FbF_Drought_Monitoring_Trigger/maps_somalia_template_risk_assessment.qpt".
 
-You can also adapt the template to your needs and preferences. You can find help [here](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html#print-layout).
+You can also adapt the template to your needs and preferences. You can find help [here](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#print-layout).
 
 ```{Attention}
 Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.
@@ -1385,7 +1384,7 @@ align: center
 __Purpose:__ Export the designed and finalized map layout in order tp print it as a pdf or format of your choice.
 
 
-__Tool:__ [Print Layout](https://giscience.github.io/gis-training-resource-center/content/Modul_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
+__Tool:__ [Print Layout](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
 
 When you have finished the design of you map you can export it as pdf or image file in different datafromats.
 

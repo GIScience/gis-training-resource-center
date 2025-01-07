@@ -62,7 +62,7 @@ width: 600px
 name: map service area ways healthcare within camp
 align: center
 ---
-Network representation of paths within  camp18. The color symbolizes groups of ways that are within 500m of the next healthcare facility.
+Network representation of paths within camp18. The color symbolizes groups of ways that are within 500m of the next healthcare facility.
 ```
 
 
@@ -90,7 +90,7 @@ Compare the results of both catchments. What differences can you spot?
 ## STEP 4: Healthcare catchment - Isochrones avoid flood
 In this part we will again calculate catchments based on the same configured isochrones. But we will include a polygon for the avoid area functionality in openrouteservice. For the **avoid area** we will use the water streams that run through the main camp area. The avoid areas function of openrouteservice only allows polygons as input, not line geometries. Therefore we need to conduct some preprocessing steps:
 
-1. Reproject the the camp_stream layer to be able to use a metric distanz to buffer. Like before use **WGS 84 / UTM zone 46N** as the target projection.
+1. Reproject the the camp_stream layer to be able to use a metric distance to buffer. Like before use **WGS 84 / UTM zone 46N** as the target projection.
 2. Now buffer the reprojected stream layer into a polygon layer with a distance of 2 meters
 3. We are set to use the buffered stream layer as avoid area or exclusion layer for the routing.
 

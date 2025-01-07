@@ -1,6 +1,5 @@
 # Exercise 1: Flooding in Cambodia
 
-🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
 This exercise is designed to apply the basics of map design from Chapters 1, 2, and 3. Make sure to go through these chapters before starting this exercise. The corresponding subchapters and wiki-pages are linked if you need to refresh your memory.
 

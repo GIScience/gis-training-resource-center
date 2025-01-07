@@ -42,7 +42,7 @@ __Relevant Wiki Articles__
 ^^^
 
 * [Geodata Import in QGIS](/content/Wiki/en_qgis_import_geodata_wiki.md)
-* [Statistics by Categories](/content/Modul_5/en_qgis_non_spatial_tools.md)
+* [Statistics by Categories](/content/Module_5/en_qgis_non_spatial_tools.md)
 * [Non-Spatial Join](/content/Wiki/en_qgis_joins_wiki.md)
 
 :::

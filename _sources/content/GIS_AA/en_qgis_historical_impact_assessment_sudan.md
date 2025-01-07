@@ -2,12 +2,13 @@
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-In 2023, the Sudan Red Cresent (SRCS), German Red Cross (GRC),  the Red Cross Red Crescent Climate Center (RCRCCC) and the Heidelberg Institute for Geoinformation Technology (HeiGIT) worked on an Early Action Protocol (EAP) for riverine floods along the River Nile in Sudan.
+In 2023, the Sudan Red Crescent (SRCS), German Red Cross (GRC),  the Red Cross Red Crescent Climate Center (RCRCCC) and the Heidelberg Institute for Geoinformation Technology (HeiGIT) worked on an Early Action Protocol (EAP) for riverine floods along the River Nile in Sudan.
 One of the fundamental tasks while working on an EAP is to conduct a Historical Impact Assessment (HIA), for the particular hazard. The team of HeiGIT was responsible for this particular task and this article will tell the story of how they tackled the task.
 Due to the outbreak of hostilities in Sudan in 2023, the team could only rely on public data from the internet and some reports and data provided by SRCS.
 By the end of 2023, the team had collected, 3.204 rows of data from 60 sources, covering the timeframe from 2012 to 2023.
 
 ## Why is a Historical Impact Assessment (HIA) Important?
+
 A HIA has two purposes. First, understanding in detail what kind of problems are caused by a particular hazard, allows people to make informed decisions on the selection of early actions to counter those problems.
 Secondly, without a good understanding of which magnitude of flood causes significant humanitarian impact, one can not adjust trigger levels accordingly to tackle those significant events.
 
@@ -18,15 +19,15 @@ Conduct an HIA to gain a detailed understanding of the impact of past flood even
 
 What were the main problems and challenges we faced while conducting the HIA?
 
-__Challange 1: Scatert information on flood impacts__
+__Challenge 1: Scattered information on flood impacts__
 
-The one BIG challenge in this case was that there are no good datasets on flood impacts in Sudan. Practically, all information is scattered across a huge number of reports, maps, tables, dashboards and newspaper articles. Such documents can be found for example on RelifeWeb.
+The one BIG challenge in this case was that there are no good datasets on flood impacts in Sudan. Practically, all information is scattered across a huge number of reports, maps, tables, dashboards and newspaper articles. Such documents can be found for example on ReliefWeb.
 
-__Challange 2: How to get diverse data in one easy-to-use data format__
+__Challenge 2: How to get diverse data in one easy-to-use data format__
 
 Since all information about flood impacts is contained in such a diverse range of documents and formats, it is difficult to bring the information together in one dataset.
 
-__Challange 3: Differentiating between riverine flood impacts and flash flood impacts__
+__Challenge 3: Differentiating between riverine flood impacts and flash flood impacts__
 
 Riverine and flash floods often occur at the same time in the same place, so it is almost impossible to state what was the exact cause of the impact. 
 And even when there was a single flash flood event, in reports it is often referred to as a flood. Hence, there is the real risk that impacts caused by flash floods are listed as river flood impacts.
@@ -75,8 +76,8 @@ align: center
 ```
 ## Step 2. Finding Flood Disaster Timeframes
 
-We want to tie single pieces of information like impacts, to knowen flood events in Sudan. Thus we first need a comprehensive list of such events. In the case of Sudan, there are two sources, EM-DAT and RelifeWeb. EM-DAT is a disaster database that lists events above a certain severity. 
-RelifeWeb is actually an information platform for humanitarian response. But it has a list of active and past disasters as well. 
+We want to tie single pieces of information like impacts, to known flood events in Sudan. Thus we first need a comprehensive list of such events. In the case of Sudan, there are two sources, EM-DAT and ReliefWeb. EM-DAT is a disaster database that lists events above a certain severity. 
+ReliefWeb is actually an information platform for humanitarian response. But it has a list of active and past disasters as well. 
 Both databases list the same events for the most part. By comparing the two datasets and only selecting unique events, we receive a list of all significant flood events in Sudan and the timeframes of all events.
 
 * EM-Dat lists 21 flood events in Sudan from 2000 to 2024
@@ -120,7 +121,7 @@ In some cases, the start and end dates cannot precisely be identified. This is n
 
 Now we search for datasets and other information for each of the flood events identified in step 2. Naturally, it will be much easier to find information on more recent events. This process can take a lot of time and sometimes needs multiple iterations.
 
-There are three principal sources of datasets. The Sudan Red Cresent Society (SRCS), RelifeWeb and Floodlist.
+There are three principal sources of datasets. The Sudan Red Crescent Society (SRCS), ReliefWeb and Floodlist.
 
 <style>
   .container {
@@ -147,7 +148,7 @@ There are three principal sources of datasets. The Sudan Red Cresent Society (SR
 <div class="container">
   <div class="organization">
     <p><strong>Sudan Red Crescent Society (SRCS)</strong><br>
-      SRCS has documentation about flood impacts and past operations. Furthermore, SRCS was able to source some datasets from the Sudan National Council for Civil Defence (NCCD)  and the Sudan Humanitarian Aid Commission (HAC).
+      SRCS has documentation about flood impacts and past operations. Furthermore, SRCS was able to source some datasets from the Sudan National Council for Civil Defense (NCCD)  and the Sudan Humanitarian Aid Commission (HAC).
     </p>
   </div>
 
@@ -214,7 +215,7 @@ __Currentness__
 The assumption is that later after the event, the picture of what happens becomes clearer, thus the data report is more reliable.
 This means., if you have multiple similar datasets containing similar data, chose the newer one.
 
-In this example, the later map from the [13th of November](https://reliefweb.int/report/sudan/sudan-situation-report-13-nov-2020-enar) shows more affected people for instance in Central Darfur the the map publihsed on the [9th of November](https://reliefweb.int/report/sudan/sudan-situation-report-9-nov-2020-enar).
+In this example, the later map from the [13th of November](https://reliefweb.int/report/sudan/sudan-situation-report-13-nov-2020-enar) shows more affected people for instance in Central Darfur the the map published on the [9th of November](https://reliefweb.int/report/sudan/sudan-situation-report-9-nov-2020-enar).
 
 
 ::::{grid} 2
@@ -237,12 +238,13 @@ width: 4500px
 ::::
 
 __Uniqueness__
-It is important to not only use data from one source becaus of confience. 
+
+It is important to not only use data from one source because of confidence. <!--what confidence-->
 The assumption is that different organisations have different capacities and work in different areas, thus they may have better information in some locations of sectors than other organisations.
 
 ### Dataset ID
 When selecting datasets it is important to save the datasets on your computer. To be able to later retrace which piece of information was taken from which datasets, we have to give the datasets unique identification codes.
-In the Sudan project, we used the simple structure year of the flood the document is referring to (for example 2019), the publishing organisation (for example IFRC) and the publishing date (for example 20191003).
+In the Sudan project, we used the simple structure year of the flood the document is referring to (for example 2019), the publishing organisation (for example IFRC) and the publishing date (for example `20191003`).
 
 ```{figure} /fig/Sudan_HIA_ID.drawio.svg
 ---
@@ -330,7 +332,11 @@ In the Sudan HIA, most of the information has been on the state level, whereas t
 | Town/ Village     | 565                    |
 | IDP & Refugee Camp| 63                     |
 
-Tipp: We highly recommend using the English names of states and localities which are compatible with P-codes. Those can be found [here](https://data.humdata.org/dataset/cod-ab-sdn?).
+
+```{tip}
+We highly recommend using the English names of states and localities which are compatible with P-codes. Those can be found [here](https://data.humdata.org/dataset/cod-ab-sdn?).
+```
+
 
 :::{dropdown} Admin 1 - States
 | ADM1_EN        | ADM1_AR      | ADM1_PCODE |
@@ -905,17 +911,17 @@ The resulting table can easily be adjusted in Excel.
 
 ## Step 6: HIA Data Cleaning
 
-When creating such a dataset there will be errors like misspellings of names or wrong numbers. To address that you will need to clean the dataset before actually using it. To clean the dataset you can use Excel or specialized tools like [OpenRefein](https://openrefine.org/).
+When creating such a dataset there will be errors like misspellings of names or wrong numbers. To address that you will need to clean the dataset before actually using it. To clean the dataset you can use Excel or specialized tools like [OpenRefine](https://openrefine.org/).
 
-```{Tipp} OpenRefein
-OpenRefein is a free and open-source specialized data cleaning software.
-You download once the folder with the installation files. To start OpenRefein you need to double-click openrefine.exe. The software will run in your browser! -> [Installation Video](https://www.youtube.com/watch?v=nTlTboXoGj4)
+```{Tip} OpenRefine
+OpenRefine is a free and open-source specialized data cleaning software.
+You download once the folder with the installation files. To start OpenRefine you need to double-click openrefine.exe. The software will run in your browser! -> [Installation Video](https://www.youtube.com/watch?v=nTlTboXoGj4)
 
-OpenRefein Beginner Tutorials -> __[Video](https://www.youtube.com/watch?v=wfS1qTKFQoI)__
+OpenRefine Beginner Tutorials -> __[Video](https://www.youtube.com/watch?v=wfS1qTKFQoI)__
 ```
 
 
-Independently on which tool you will use, here are some important points you have to check when cleaning the data:
+Independent of which tool you will use, here are some important points you have to check when cleaning the data:
 
 1. **Year and Columns:**
    - Check if all values are within the expected range of years.
@@ -1042,6 +1048,7 @@ Example map
 
 
 ### Flood events in Sudanese states for all the recorded years
+
 In this section we want to analyse and visualise all recorded flooding events for all the Sudanese state. With our filter for the Impact-Type we derive information for the years 2003 until 2021. 
 
 1. In the first step we will create a new `pivot table` and store it in a new sheet. Here we will specify the following:

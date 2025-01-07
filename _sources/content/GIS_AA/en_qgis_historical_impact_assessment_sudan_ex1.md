@@ -2,9 +2,11 @@
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-A HIA has two purposes. First, understanding in detail what kind of problems are caused by a particular hazard, allows people to make informed decisions on the selection of early actions to counter those problems. Secondly, without a good understanding of which magnitude of flood causes significant humanitarian impact, one can not adjust trigger levels accordingly to tackle those significant events.
-This exercise is based on the article Historical Impact Assessment (HIA) for Flood in Suda. In this article, there are seven steps listed for the HIA in Sudan. This exercise will start with step 3- Selecting datasets.
+A HIA has two purposes: First, understanding in detail what kind of problems are caused by a particular hazard, allows people to make informed decisions on the selection of early actions to counter those problems. Secondly, without a good understanding of which magnitude of flood causes significant humanitarian impact, one can not adjust trigger levels accordingly to tackle those significant events.
+This exercise is based on the article Historical Impact Assessment (HIA) for Flood in Sudan. In this article, there are seven steps listed for the HIA in Sudan. This exercise will start with step 3- Selecting datasets.
+
 ## Aim of the exercise:
+
 In this exercise, you will be introduced to the fundamental principles of this quantitative HIA approach. You will build a simplified HIA dataset with real-world data. Furthermore, you will visualize the produced dataset in QGIS.
 To analyse the data in QGIS is just one thing you can do with a HIA dataset. The wide range of other options like the production of a timeline infographic will not be covered in this exercise.
 
@@ -14,16 +16,17 @@ To analyse the data in QGIS is just one thing you can do with a HIA dataset. The
 Download the training data folder __[here](https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/Sudan_HIA_Ex/GIS_AA_HIA_Sudan_ex1.zip)__ and save it on your PC. Unzip the .zip file!
 The folder is called __GIS_AA_HIA_Sudan_ex1__ and contains the whole [standard folder structure](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure) with all data in the input folder and the additional documentation in the documentation folder.
 
-# Task
+# Tasks
 
 ### Step 1: Area of interest ✅
-This step is outlined in the article Historical Impact Assessment (HIA) for Flood in Suda will not be the subject of this exercise. 
 
-### Task 2: Finding Flood Disaster Timeframes ✅
+This step is outlined in the article Historical Impact Assessment (HIA) for Flood in Sudan will not be the subject of this exercise. 
+
+### Step 2: Finding Flood Disaster Timeframes ✅
 
 
 ```{attention} 
-This step is outlined in the article Historical Impact Assessment (HIA) for Flood in Suda will not be the subject of this exercise. 
+This step is outlined in the article Historical Impact Assessment (HIA) for Flood in Sudan will not be the subject of this exercise. 
 ```
 We want to tie single pieces of information, like impacts, to known flood events in Sudan. Thus, we first need a comprehensive list of such events. In the case of Sudan, there are two sources: EM-DAT and ReliefWeb. [EM-DAT](https://www.emdat.be/) is a disaster database that lists events above a certain severity.
 
@@ -35,9 +38,9 @@ We want to tie single pieces of information, like impacts, to known flood events
 
 [ReliefWeb](https://reliefweb.int/) is actually an information platform for humanitarian response, but it also has a list of active and past disasters. 
 
-Both databases list the same events for the most part. By comparing the two datasets and only selecting unique events, we receive a list of all significant flood events in Sudan and the timeframes of each event. This can easily be done in Excel
+Both databases list the same events for the most part. By comparing the two datasets and only selecting unique events, we receive a list of all significant flood events in Sudan and the time frames of each event. This can easily be done in Excel
 
-```{note} EM-Date and RelifeWeb data overview
+```{note} EM-Date and ReliefWeb data overview
 In total, there were 35 flood events reported between 1988 and 2021
 
 * EM-Dat lists 21 flood events in Sudan from 2000 to 2024
@@ -94,7 +97,7 @@ In the 'Input' folder of the exercise data, you can find the folder 'reports_art
 
 
     ```{dropdown} Example 
-    In this example, the later map from the [13th of November](https://reliefweb.int/report/sudan/sudan-situation-report-13-nov-2020-enar) shows more affected people for instance in Central Darfur the the map publihsed on the [9th of November](https://reliefweb.int/report/sudan/sudan-situation-report-9-nov-2020-enar).
+    In this example, the later map from the [13th of November](https://reliefweb.int/report/sudan/sudan-situation-report-13-nov-2020-enar) shows more affected people for instance in Central Darfur the the map published on the [9th of November](https://reliefweb.int/report/sudan/sudan-situation-report-9-nov-2020-enar).
     ::::{grid} 2
     :::{card} SUDAN Situation Report 09 Nov 2020
 
@@ -753,13 +756,13 @@ __Data extracted from dataset__
 In this exercise, you can skip this step by using the provided data in the folder task_7
 ```
 When creating such a dataset there will be errors like misspellings of names or wrong numbers. To not create faulty analysis products, we need to make sure that our data is consistent. Especially location names are vital in this context since we use these columns to join the data later on a geodata set in QGIS. If for example state names are spelled wrong, this data will be lost.
-To make sure our data is consistent, we need to clean it. Although this can be done using many different programs like Excel, R or Python, we recommend using [OpenRefein](https://openrefine.org/).
+To make sure our data is consistent, we need to clean it. Although this can be done using many different programs like Excel, R or Python, we recommend using [OpenRefine](https://openrefine.org/).
 
-```{Tipp} OpenRefein
-OpenRefein is a free and open-source specialized data cleaning software.
-You download once the folder with the installation files. To start OpenRefein you need to double-click openrefine.exe. The software will run in your browser! -> [Installation Video](https://www.youtube.com/watch?v=nTlTboXoGj4)
+```{Tipp} OpenRefine
+OpenRefine is a free and open-source specialized data cleaning software.
+You download once the folder with the installation files. To start OpenRefine you need to double-click openrefine.exe. The software will run in your browser! -> [Installation Video](https://www.youtube.com/watch?v=nTlTboXoGj4)
 
-OpenRefein Beginner Tutorials -> __[Video](https://www.youtube.com/watch?v=wfS1qTKFQoI)__
+OpenRefine Beginner Tutorials -> __[Video](https://www.youtube.com/watch?v=wfS1qTKFQoI)__
 ```
 
 You can do this step task by cleaning the data you compiled in the previous steps or the data from the folder task_6.

@@ -1,4 +1,4 @@
-# Rasterdata Exercise 1: Basic Assessment of Flood Exposure in the Indus Basin in Pakistan
+# Raster data Exercise 1: Basic Assessment of Flood Exposure in the Indus Basin in Pakistan
 
 ### Aim of the exercise
 The aim of this exercise is to gain a basic understanding of working with raster data and its visualisation and advantages. To achieve this, several datasets such as a digital elevation model, population data and mapped flood extents are processed to create a simple flood risk map for the Indus River basin in Pakistan.
@@ -47,7 +47,7 @@ Or by clicking `Layer`-> `Add Layer`-> `Add Vector Layer`/ `Add Raster Layer`
 If a raster is displayed mostly or completely black upon loading it into QGIS, most of the time the reason is not an error or corrupted data but just the initial visualisation style
 ```
 
-4. First have a look at the DEM layer (`Pakistan_DEM`). The rastercells of the DEM display the elevation above sea level, where are high and low lying areas located in Pakistan occording to the expandable layer legend on the left? Use the ![](/fig/mod8_ex1_informationtool.png) to click on a couple of rastercells to obtain their values, that are the displayed in a panel on the right. 
+4. First have a look at the DEM layer (`Pakistan_DEM`). The raster-cells of the DEM display the elevation above sea level, where are high and low lying areas located in Pakistan occording to the expandable layer legend on the left? Use the ![](/fig/mod8_ex1_informationtool.png) to click on a couple of raster-cells to obtain their values, that are the displayed in a panel on the right. 
  - What do you think is the highest and lowest elevation approximately?
  - Can you identify areas with different terrain characteristics in your DEM?
 
@@ -61,12 +61,13 @@ align: center
 
 
 
-5. to get some basic information about your raster right click on the layer and select  `Properties`. Under the tab "Information" various different attributes of the raster like its Coordinate Reference Systeme (CRS), spatial resolution or basic statistical parameters are listed. 
-    - What is the cellsize of the DEM?
+5. To get some basic information about your raster right click on the layer and select `Properties`. Under the tab "Information" various different attributes of the raster, such as the Coordinate Reference System (CRS), the spatial resolution or the basic statistical parameters, are listed. 
+    - What is the cell size of the DEM?
     - What are the minimum and the maximum values?
-    - Whats the used CRS?
+    - Which CRS is being?
+    - What is the extent of the raster layer?
 
-6. Now we want to explore the different ways of visualizing a raster and find the optimal visualization for our DEM. Open the layer styling panel by right clicking on the top toolbar and ticking the box `Layer Styling Panel`. The panel very similar to the one dislayed when visualizing Vectordata.
+6. Let's explore the different ways to visualise a raster layer and find the optimal visualisation for our DEM. Open the layer styling panel by right clicking on the top toolbar and ticking the box `Layer Styling Panel`. The panel very similar to the one displayed when visualizing vector data.
     1. Open the dropdown menu right below the layer name. There are six visualization modes you can choose from. Try each of them and take a guess which one would be suitable. 
 
 ```{figure} /fig/mod8_ex1_visualisationmodes.png
@@ -77,37 +78,38 @@ align: center
 ---
 ```
 
-7. Choose "Singleband pseudocolour" and selct a colour palette you like just like with the visualization of vectorlayers. Below the classification window you can choose from three classification modes ("Continous", "Equal Interval" and "Quantile") for the visual classification of the raster. Which one seems to suit the diplay of elevation the best?
+7. Choose "Singleband pseudocolour" and select a colour palette you like just like with the visualization of vector layers. Below the classification window you can choose from three classification modes ("Continuous", "Equal Interval" and "Quantile") for the visual classification of the raster. Which one seems to suit the display of elevation the best?
 
 8. Finally you can choose between the interpolation methods "Linear" (smooth display) and "Discrete" (display in distinct classes). Choose one of them. If you choose "Discrete" you can alter the number of visual breaks in your data display by changing the number of classes in the "Classes" menu.
 
 
- ```{figure} /fig/mod8_ex1_symbologypanel.png
+```{figure} /fig/mod8_ex1_symbologypanel.png
 ---
 width: 400px
-name: Symbologypanel
+name: Symbology panel
 align: center
 ---
-Symbologypanel of rasterlayers
+The symbology panel of raster layers in QGIS 3.36
 ```
+
 ```{Attention}
-In all following figures regarding tool interfaces in this exercise, menues or prompts that have to be altered for the given task are highlighted with red boxes.
+In all following figures regarding tool interfaces in this exercise, menus or prompts that have to be altered for the given task are highlighted with red boxes.
 ```
 
 Your DEM (`Pakistan_DEM`) could look something like this now (Colour palette "Spectral" and interpolation "Linear")
 
- ```{figure} /fig/mod8_ex1_dem.png
+```{figure} /fig/mod8_ex1_dem.png
 ---
 width: 600px
 name: DEM Example
 align: center
 ---
-Exemplary visualization of the DEM with linear interpolation
+Exemplary visualization of the DEM with linear interpolation.
 ```
 
-9. Now we want to have a look at a different raster: Make the `Pakistan_pop_density_1km` layer visible. This raster stores values of population density per kilometer in 1km x 1km cells, so effectively the approximate population count per area. The initial visualization seems not to display the information of the different population densities very well, as it is mostly black. We will fix this with the following steps:
+9. Now, we want to have a look at a different raster: Make the `Pakistan_pop_density_1km` layer visible. This raster stores values of population density per kilometer in 1km x 1km cells, so effectively the approximate population count per area. The initial visualization seems not to display the information of the different population densities very well, as it is mostly black. We will fix this with the following steps:
     1. Have a look of the value range of the raster in the raster properties and check some values in different areas with the ![](/fig/mod8_ex1_informationtool.png) tool. 
-    2. The raster covers a very large value range from around 0,2 - 31300. This is the case because of the disparity in population between very remote areas and extremely densly populated megacities that are both present in Pakistan. To have a closer look at the value distribution among the cells of the raster generate a histogramm in the layer styling panel by selecting the ![](/fig/mod8_ex1_histogrammicon.png) icon on the left and click on `Compute histogramm`. Have a closer look at the histogramm by zoomin in to the range of "Pixel Value" = 5000 and "Frequency" = 2000. A few things are visible:
+    2. The raster covers a very large value range from around 0,2 - 31300. This is the case because of the disparity in population between very remote areas and extremely densely populated mega-cities that are both present in Pakistan. To have a closer look at the value distribution among the cells of the raster generate a histogram in the layer styling panel by selecting the ![](/fig/mod8_ex1_histogrammicon.png) icon on the left and click on `Compute histogram`. Have a closer look at the histogram by zooming in to the range of "Pixel Value" = 5000 and "Frequency" = 2000. A few things are visible:
       - The Raster values are extremely tailed with very few cells higher than 2000 but extent into ay higher ranges.
       - There are extremely many values in the very low value range
       - The vast majority of the values seem to be between around 0 to 3000.
@@ -115,13 +117,13 @@ Exemplary visualization of the DEM with linear interpolation
     ```{figure} /fig/en_3.34_m8ex1_histogramm.png
     ---
     width: 600px
-    name: Histogramm
+    name: Histogram
     align: center
     ---
-    Histogramm of the value distribution of "Pakistan_pop_density_1km"
+    Histogram of the value distribution of "Pakistan_pop_density_1km"
     ```
 
-    3. Based on the exploration of the histogramm try a few value boundaries for visualisation at the top of your layer styling panel (select the ![](/fig/mod8_ex1_symbologyicon.png) menu). Keep in mind that we look at population data and that population distribution is very spatially heterogenic most of the time. Try the following combinations and choose the one that suits the data best:
+    3. Based on the exploration of the histogram try a few value boundaries for visualisation at the top of your layer styling panel (select the ![](/fig/mod8_ex1_symbologyicon.png) menu). Keep in mind that we look at population data and that population distribution is very spatially heterogenous most of the time. Try the following combinations and choose the one that suits the data best:
       - Min = 0    Max = 1000
       - Min = 0    Max = 3000
       - Min = 0    Max = 5000
@@ -129,19 +131,19 @@ Exemplary visualization of the DEM with linear interpolation
 ```{figure} /fig/en_3.34_m8ex1_valuerange.png
 ---
 width: 400px
-name: Valuerange panel
+name: Value range panel
 align: center
 ---
-Prompts to adjust die valuerange for visualization
+Prompts to adjust die value range for visualization
 ```
 
 
-10. Have a look at the histogramm of the DEM and adjust the visualization range for the DEM too if you deem it necessary.
+10. Have a look at the histogram of the DEM and adjust the visualization range for the DEM too if you deem it necessary.
 
-11. A common and easy method to enhance the visuals of a map you generate with QGIS is the addition of a trasparent "Hillshade" layer. You can generate it with the `Hillshade` tool that you can find in your Processing toolbox panel or via `Raster` > `Analyse` > `Hillshade`. 
+11. A common and easy method to enhance the visuals of a map you generate with QGIS is the addition of a transparent "Hillshade" layer. You can generate it with the `Hillshade` tool that you can find in your Processing toolbox panel or via `Raster` > `Analyse` > `Hillshade`. 
     1. Open the Hillshade tool and select your DEM layer in the dropdown menu of "Elevation layer"
     2. The next modifiable Parameter is the "Z factor". It is used to adjust the vertical exaggeration of elevation data, influencing the steepness of slopes in the visualization. You can just use the default od one or change it to to "2" or "3" if you want a more pronounced shading.
-    3. The paramters "Azimuth" and "Vertical angle" determine the direction and angle above the horizon of the imaginary lightsource creating the shading. We recommend to leave the default values.
+    3. The parameters "Azimuth" and "Vertical angle" determine the direction and angle above the horizon of the imaginary light source creating the shading. We recommend to leave the default values.
     4. Name the output "Hillshade_Pakistan" and select your "temp" folder to save it. Click `Run` to generate the Hillshade.
     5. When the Hillshade layer is generated set its "global opacity" to 20% in your layer styling panel and position it over the DEM in your layer panel to combine the Hillshade with the DEM. You can also enhance the contrast of the Hillshade layer when you scroll down in the symbology tab ![](/fig/mod8_ex1_symbologyicon.png) in the layer styling panel to optimize the visualisation.
         
@@ -161,29 +163,29 @@ Interface of the hillshade tool
 
 
 ```{Note}
-One general advantage of rasterdata over vectordata is that that they are better suited for deriving further data sets, such as a hillshade raster. There are a multitude of tools in QGIS for the derivation of topographical paramters such as slope or aspect, hydrological paramters such as stream networks or flow accumulaton and varius different indices.
+One general advantage of raster data over vector data is that that they are better suited for deriving further data sets, such as a hillshade raster. There are a multitude of tools in QGIS for the derivation of topographical parameters such as slope or aspect, hydrological parameters such as stream networks or flow accumulation and various different indices.
 ```
 
 
 ### Task 2 
-Now as you have gained a proper understanding of the fundamental visulization options of rasterdata, we will start to explore some basic methods of processing rasterdata and generating new datasets with the combination of different rasters and also vectorlayers.
+Now as you have gained a proper understanding of the fundamental visualisation options of raste rdata, we will start to explore some basic methods of processing raster data and generating new datasets with the combination of different rasters and also vector layers.
 
 You will conduct a basic analysis of flood exposure in the Indus river basin in Pakistan based on the raster layers you already worked with and further datasets.
 
-1. Import the Shapefiles `Pakistan_floodextents_2023.shp` and `Pakistan_indusbasin_streams`  as well as the raster `Pakistan_precip.tif` into your project via drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)). 
+1. Import the Shapefiles `Pakistan_floodextents_2023.shp` and `Pakistan_indusbasin_streams` as well as the raster `Pakistan_precip.tif` into your project via drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)). 
 Or by clicking `Layer`-> `Add Layer`-> `Add Vector Layer`/ `Add Raster Layer`.
     - The layer `Pakistan_indusbasin_streams` contains line geometries of the main streams of the Indus basin of Pakistan which experienced multiple devastating floods in the last decades.
-    - The layer contains a multi polygon geometry of the mapped floodextens of the recent 2023 flood.
+    - The layer contains a multi polygon geometry of the mapped flood extent of the recent 2023 flood.
 
 
-To get a aproximation of flood exposure our first goal is to create a layer displaying the population that was directly affected by the recent floods. This involves several steps:
+To get a approximation of flood exposure our first goal is to create a layer displaying the population that was directly affected by the recent floods. This involves several steps:
     
-2. First we will covert the `Pakistan_floodextents_2023.shp` vectorlayer to the rasterformat. To achieve this first create an empty raster that will be the base layer for our rasterization. 
+2. First we will covert the `Pakistan_floodextents_2023.shp` vector layer to the raster format. To achieve this first create an empty raster that will be the base layer for our rasterization. 
     1. Open the tool `Create constant raster layer` from your Processing toolbox panel. 
-    2. Under "Desired extent" choose "Calculate from layer" > `Pakistan_pop_dens_1km` to set the layer extent to the extent of xour floodextent layer.
-    3.  Under "Target CRS" choose "EPSG:32642 - WGS 84 / UTM zone 42N" from the dropdoen menu. If the CRS does not pop up search it by clicking the ![](/fig/mod8_ex1_crsicon.png) icon next to the prompt.
-    4. As "Pixel size" choose "1000" as the unit of the chosen CRS is meters and the resolution should match our population raster with a cellsize of 1 x 1km.
-    5. Under "Constant value" choose "0". This is the value that will be assigned to all rastercells of the created raster.
+    2. Under "Desired extent" choose "Calculate from layer" > `Pakistan_pop_dens_1km` to set the layer extent to the extent of your flood extent layer.
+    3.  Under "Target CRS" choose "EPSG:32642 - WGS 84 / UTM zone 42N" from the dropdown menu. If the CRS does not pop up search it by clicking the ![](/fig/mod8_ex1_crsicon.png) icon next to the prompt.
+    4. As "Pixel size" choose "1000" as the unit of the chosen CRS is meters and the resolution should match our population raster with a cell size of 1 x 1km.
+    5. Under "Constant value" choose "0". This is the value that will be assigned to all raster cells of the created raster.
     6. Save the raster as "Rastermask_floods" in your "temp" folder and click `Run` to generate the empty raster.
 
  ```{figure} /fig/en_3.34_m8ex1_createraster.png
@@ -195,14 +197,14 @@ align: center
 Interface of the "Create constant raster layer" tool
 ```
 
-3. Now we will convert our Floodextent-Multipolygon ("Pakistan_floodextents_2023.shp") to the raster format. This process is called "Rasterization".
+3. Now we will convert our Flood extent multipolygon ("Pakistan_floodextents_2023.shp") to the raster format. This process is called "Rasterization".
     1. Open the tool `Rasterize (overwrite with fixed value)` from your processing toolbox panel
-    2. As "Input vector layer " choose you floodextent layer "Pakistan_floodextents_2023"
+    2. As "Input vector layer " choose you flood extent layer "Pakistan_floodextents_2023"
     3. As "Input raster layer " choose your empty raster "Rastermask_floods"
-    4. Under "A fixed value to burn" type in "1". This means that all rastercells of your input rasters that are covered by geometries of your input vector layer will be changed to the value "1".
-    5. Click on `Run` to rasterize your floodextents.
+    4. Under "A fixed value to burn" type in "1". This means that all raster cells of your input rasters that are covered by geometries of your input vector layer will be changed to the value "1".
+    5. Click on `Run` to rasterize your flood extents.
 
-4. The layer `Rastermask_floods` should now have values of "1" instead of "0" in the cells covered by the flood of 2023. Change the visualization range in your Layer styling panel under "Symbology" ![](/fig/mod8_ex1_symbologyicon.png) to Min = 0 and Max = 1 and check if the rasterization was succesful. Youl layer should look something like this (Singleband grey" visualization):
+4. The layer `Rastermask_floods` should now have values of "1" instead of "0" in the cells covered by the flood of 2023. Change the visualization range in your Layer styling panel under "Symbology" ![](/fig/mod8_ex1_symbologyicon.png) to Min = 0 and Max = 1 and check if the rasterization was successful. Your layer should look something like this (Singleband grey" visualization):
 
  ```{figure} /fig/en_3.34_m8ex1_floodmask.png
 ---
@@ -210,24 +212,25 @@ width: 600px
 name: Example Floodmask
 align: center
 ---
-Example rastermask of flooded areas
+Example raster mask of flooded areas
 ```
 
 ```{Attention}
-It is possible that due to an error the raster values are not updating after rasterizing. To fix this delete the layer from your project, rename it in your temp folder and import in again.
+It is possible that due to an error the raster values are not updating after rasterising. To fix this delete the layer from your project, rename it in your temp folder and import in again.
 ```
 
 5. Now we want to extract the population count within the flood zones. We do this by processing two rasters with the `Raster Calculator`.
     1. Open the raster Calculator from your processing toolbox Panel or via `Raster` > `Raster Calculator`.
-    2. As "Input Layers" layers select your rastermask "Rastermask_floods" and the population layer "Pakistan_pop_dens_1km.tif" by clicking on the ![](/fig/mod8_ex1_optionsicon.png) icon and ticking the boxes next to the two layers.
+    2. As "Input Layers" layers select your raster mask "Rastermask_floods" and the population layer "Pakistan_pop_dens_1km.tif" by clicking on the ![](/fig/mod8_ex1_optionsicon.png) icon and ticking the boxes next to the two layers.
     3. Click on the ![](/fig/mod8_ex1_expressionicon.png) icon to open the expression interface. You might know a very similar panel from the "field calculator" for conducting calculations in the attribute table of vector layers.
     4. Enter the following expression to  "Raster Calculator Expression" Panel:
 
     ```md
     "Rastermask_floods@1" * "Pakistan_pop_dens_1km@1"
     ```
+
     ```{Note}
-    You can add your Input layers to your expression in the "Raster caculator Expression" Interface by double clicking on them in the "Layers" Panel. The "@1" behind the layer name indicates, that the first band of the layer is used for the calculation. Most rasters just have one band, but there are a few exceptions like multispectral remote sensing data.
+    You can add your Input layers to your expression in the "Raster calculator Expression" Interface by double clicking on them in the "Layers" Panel. The "@1" behind the layer name indicates, that the first band of the layer is used for the calculation. Most rasters just have one band, but there are a few exceptions like multispectral remote sensing data.
     ```
 
     5. All we doing with this expression is a simple mathematical operation: We multiply the value of each cell of the first raster with the value of the cell in the same location of the second raster. The output cell stores the resulting value. Because our `Rastermask_floods` is "0" in all cells outside the flood extents all cells in these areas are multiplied by "0" and become = 0. The cells of `Pakistan_pop_dens_1km.tif`  within the flooded areas get multiplied by 1 and keep their values.
@@ -256,7 +259,7 @@ align: center
 Raster of Population density in flooded areas
 ```
 
-Now we have teached our goal of generating a dataset displaying flood affected population. In the context of real world application in the humanitarian sector or the visualisation of data for people/institutions not familiar with GIS, it can be sensible to aggregate rasterdata on the level of administrative units. 
+Now we have reached our goal of generating a dataset displaying flood affected population. In the context of real world application in the humanitarian sector or the visualisation of data for people/institutions not familiar with GIS, it can be sensible to aggregate raster data on the level of administrative units. 
 
 6. We will achieve this with our produced dataset on the admin 2 level  (districts) in Pakistan by calculating the total population affected by floods per district.
     1. Open the tool `Zonal Statistics` ([Wiki Article](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html##zonal-statistics)) from your Processing Toolbox Panel.
@@ -264,7 +267,7 @@ Now we have teached our goal of generating a dataset displaying flood affected p
     3. As "Raster Layer" choose "Pop_floodextent".
     4. Defining a prefix for your output column is optional but can be helpful for finding the calculated values in large attribute tables. Choose "pop_" as "Output column prefix".
     5. Below "Statistics to calculate" click on the ![](/fig/mod8_ex1_optionsicon.png) icon to access the different options of statistical operations available for calculating polygon values based on your raster.
-        - Which statistical operation woud suit the task of calculating flood affected population per district?
+        - Which statistical operation would suit the task of calculating flood affected population per district?
 
     :::{dropdown} Solution
     :open:
@@ -298,12 +301,12 @@ width: 600px
 name: Example popflood per district
 align: center
 ---
-Polygonlayer of flood affected population per district
+Polygon layer of flood affected population per district
 ```
 
 
 
-As we now have a rough idea which in which districts large populations where affected by floods we want to explore if precipitation data of 2023 shows similar patterns, as heavy rainfall is a major predisposing factor for the occurence of riverine floods: Are the districts experiencing flooding also experiencing the most rainfall?
+As we now have a rough idea which in which districts large populations where affected by floods we want to explore if precipitation data of 2023 shows similar patterns, as heavy rainfall is a major predisposing factor for the occurrence of riverine floods: Are the districts experiencing flooding also experiencing the most rainfall?
 
 8. We will explore this by firstly calculating the the precipitation intensity per district for all of Pakistan in 2023.
 

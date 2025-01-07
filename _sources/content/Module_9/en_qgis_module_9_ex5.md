@@ -10,7 +10,7 @@ Download all datasets __[here](https://nexus.heigit.org/repository/gis-training-
  Under "data > input" you find the following datasets:
 
 
-- `highways.gpkg` (points): Road netowrk of Heidelberg
+- `highways.gpkg` (points): Road network of Heidelberg
 - `flood_area.gpkg` (polygons): Flood simulation of Heidelberg
 
 
