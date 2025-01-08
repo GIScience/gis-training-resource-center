@@ -68,6 +68,7 @@ Different spatial resolutions of the same raster
 ```
 
 ### Coordinate Reference Sytem (CRS)
+
 As with vector data, the Coordinate Reference System (CRS) of a raster dataset refers to the spatial reference framework used to define the geographic location and orientation of the raster on the Earth's surface (CRS WIKI link). It provides a standardised way of representing spatial coordinates and ensures that raster data can be accurately geolocated and integrated with other geo-spatial datasets.<br><br>
 The CRS includes a number of different parameters:<br>
 1. **Coordinate system**: This defines how spatial coordinates are represented. Common coordinate systems include geographic (latitude and longitude) and projected (e.g. Universal Transverse Mercator - UTM).
@@ -121,18 +122,18 @@ The Zonal Statistics tool calculates statistics (like mean, median, sum, etc.) f
 
 Example: We have a raster layer with population count affected by a recent flood in Pakistan and a polygon layer with administrative districts. We want to calculate the number of flood affected people per district.
 
-    1. As "Input Layer" choose your polygon layer with district extents. "Pakistan_admin2" in this case.
-    3. As "Raster Layer" choose the layer with the cell values you want to base your statistics on. "Pop_floodextent" in this case.
-    4. Defining a prefix for your output column is optional but can be helpful for finding the calculated values in large attribute tables. For population counts you can for example choose "pop_" as "Output column prefix".
-    5. Below "Statistics to calculate" click on the ![](/fig/mod8_ex1_optionsicon.png) icon to access the different options of statistical operations available for calculating polygon values based on your raster. In this case "sum" would be the operation of choice as we want the total sum of flood affected people per district.
+1. As "Input Layer" choose your polygon layer with district extents. "Pakistan_admin2" in this case.
+3. As "Raster Layer" choose the layer with the cell values you want to base your statistics on. "Pop_floodextent" in this case.
+4. Defining a prefix for your output column is optional but can be helpful for finding the calculated values in large attribute tables. For population counts you can for example choose "pop_" as "Output column prefix".
+5. Below "Statistics to calculate" click on the ![](/fig/mod8_ex1_optionsicon.png) icon to access the different options of statistical operations available for calculating polygon values based on your raster. In this case "sum" would be the operation of choice as we want the total sum of flood affected people per district.
 
-    :::{dropdown} Solution
-    :open:
-    "Sum" is the appropriate method, as we want the total population count per district that results from the additions of the values of all cells with affected population per district.
-    :::
+:::{dropdown} Solution
+:open:
+"Sum" is the appropriate method, as we want the total population count per district that results from the additions of the values of all cells with affected population per district.
+:::
     
     
-    6. Name your layer "Floodaffected_pop_admin2", save it to your "output" folder and click `Run`.
+6. Name your layer "Floodaffected_pop_admin2", save it to your "output" folder and click `Run`.
 
 ```{figure} /fig/en_3.34_m8ex1_zonalstat.png
 ---

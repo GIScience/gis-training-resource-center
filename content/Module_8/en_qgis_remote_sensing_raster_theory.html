@@ -593,7 +593,7 @@ document.write(`
 <figure class="align-default" id="basic-concept-of-a-spatial-raster">
 <a class="reference internal image-reference" href="../../_images/mod8_rasterdata_rasterbasics.png"><img alt="../../_images/mod8_rasterdata_rasterbasics.png" src="../../_images/mod8_rasterdata_rasterbasics.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 186 </span><span class="caption-text">Basic concept of a spatial raster</span><a class="headerlink" href="#basic-concept-of-a-spatial-raster" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 189 </span><span class="caption-text">Basic concept of a spatial raster</span><a class="headerlink" href="#basic-concept-of-a-spatial-raster" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -609,7 +609,7 @@ document.write(`
 <figure class="align-default" id="id2">
 <a class="reference internal image-reference" href="../../_images/mod8_rasterdata_DEM.png"><img alt="../../_images/mod8_rasterdata_DEM.png" src="../../_images/mod8_rasterdata_DEM.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 187 </span><span class="caption-text">Exemplary Digital Elevation Model of an area in the Indian Himalayas</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 190 </span><span class="caption-text">Exemplary Digital Elevation Model of an area in the Indian Himalayas</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p><strong>Discontinuous</strong> rasters contain categorical data, where each pixel represents a discrete class value rather than a value on a continuous scale. The information in these types of raster is sometimes also suitable for the storage with vector data. Some examples of classified maps include:</p>
@@ -621,7 +621,7 @@ document.write(`
 <figure class="align-default" id="example-land-cover">
 <a class="reference internal image-reference" href="../../_images/mod8_rasterdata_lulcexample.png"><img alt="../../_images/mod8_rasterdata_lulcexample.png" src="../../_images/mod8_rasterdata_lulcexample.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 188 </span><span class="caption-text">Exemplary land cover classification raster of the USA</span><a class="headerlink" href="#example-land-cover" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 191 </span><span class="caption-text">Exemplary land cover classification raster of the USA</span><a class="headerlink" href="#example-land-cover" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -638,7 +638,7 @@ document.write(`
 <figure class="align-default" id="different-spatial-resolutions-of-the-same-raster">
 <a class="reference internal image-reference" href="../../_images/mod8_rasterdata_spatialresolution.png"><img alt="../../_images/mod8_rasterdata_spatialresolution.png" src="../../_images/mod8_rasterdata_spatialresolution.png" style="width: 900px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 189 </span><span class="caption-text">Different spatial resolutions of the same raster</span><a class="headerlink" href="#different-spatial-resolutions-of-the-same-raster" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 192 </span><span class="caption-text">Different spatial resolutions of the same raster</span><a class="headerlink" href="#different-spatial-resolutions-of-the-same-raster" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -660,7 +660,7 @@ This metadata helps users to understand the content, origin, quality and appropr
 <figure class="align-default" id="metadata-example">
 <a class="reference internal image-reference" href="../../_images/mod8_rasterdata_metadata.png"><img alt="../../_images/mod8_rasterdata_metadata.png" src="../../_images/mod8_rasterdata_metadata.png" style="width: 900px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 190 </span><span class="caption-text">Metadata of raster dataset of population counts (Worldpop)</span><a class="headerlink" href="#metadata-example" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 193 </span><span class="caption-text">Metadata of raster dataset of population counts (Worldpop)</span><a class="headerlink" href="#metadata-example" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -686,7 +686,7 @@ You have a Digital Elevation Model with the Altitude in m and a land cover class
 <figure class="align-default" id="id1">
 <a class="reference internal image-reference" href="../../_images/mod8_rasterdata_rastercalculator.png"><img alt="../../_images/mod8_rasterdata_rastercalculator.png" src="../../_images/mod8_rasterdata_rastercalculator.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 191 </span><span class="caption-text">Interface of the “Raster calculator” tool</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 194 </span><span class="caption-text">Interface of the “Raster calculator” tool</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The wanted result can be achieved by firstly selecting both of the relevant rasters as inputs for the raster calculator and then using the expression interface to select all pixels with a elevation above 1500m ( “( “DEM&#64;1” &gt;  1500)”) and a land cover value of “5” (”( “Landcover&#64;1” = 5 ) “) by connecting both expression with the logical operator “AND”. In the calculated raster all pixels that fulfill the condition will have the value “1”, all other pixels the value “0”.</p>
@@ -695,24 +695,28 @@ You have a Digital Elevation Model with the Altitude in m and a land cover class
 <h3>Zonal Statistics<a class="headerlink" href="#zonal-statistics" title="Permalink to this heading">#</a></h3>
 <p>The Zonal Statistics tool calculates statistics (like mean, median, sum, etc.) for each zone (= polygon) in a specified zone layer based on the cell values of a raster layer. This is particularly useful for analyzing raster data within defined geographic zones, such as administrative boundaries or land use classes.</p>
 <p>Example: We have a raster layer with population count affected by a recent flood in Pakistan and a polygon layer with administrative districts. We want to calculate the number of flood affected people per district.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1. As &quot;Input Layer&quot; choose your polygon layer with district extents. &quot;Pakistan_admin2&quot; in this case.
-3. As &quot;Raster Layer&quot; choose the layer with the cell values you want to base your statistics on. &quot;Pop_floodextent&quot; in this case.
-4. Defining a prefix for your output column is optional but can be helpful for finding the calculated values in large attribute tables. For population counts you can for example choose &quot;pop_&quot; as &quot;Output column prefix&quot;.
-5. Below &quot;Statistics to calculate&quot; click on the ![](/fig/mod8_ex1_optionsicon.png) icon to access the different options of statistical operations available for calculating polygon values based on your raster. In this case &quot;sum&quot; would be the operation of choice as we want the total sum of flood affected people per district.
-
-:::{dropdown} Solution
-:open:
-&quot;Sum&quot; is the appropriate method, as we want the total population count per district that results from the additions of the values of all cells with affected population per district.
-:::
-
-
-6. Name your layer &quot;Floodaffected_pop_admin2&quot;, save it to your &quot;output&quot; folder and click `Run`.
-</pre></div>
+<ol class="arabic simple">
+<li><p>As “Input Layer” choose your polygon layer with district extents. “Pakistan_admin2” in this case.</p></li>
+<li><p>As “Raster Layer” choose the layer with the cell values you want to base your statistics on. “Pop_floodextent” in this case.</p></li>
+<li><p>Defining a prefix for your output column is optional but can be helpful for finding the calculated values in large attribute tables. For population counts you can for example choose “pop_” as “Output column prefix”.</p></li>
+<li><p>Below “Statistics to calculate” click on the <img alt="" src="fig/mod8_ex1_optionsicon.png" /> icon to access the different options of statistical operations available for calculating polygon values based on your raster. In this case “sum” would be the operation of choice as we want the total sum of flood affected people per district.</p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+<summary class="sd-summary-title sd-card-header">
+Solution<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">“Sum” is the appropriate method, as we want the total population count per district that results from the additions of the values of all cells with affected population per district.</p>
 </div>
+</details><ol class="arabic simple" start="6">
+<li><p>Name your layer “Floodaffected_pop_admin2”, save it to your “output” folder and click <code class="docutils literal notranslate"><span class="pre">Run</span></code>.</p></li>
+</ol>
 <figure class="align-center" id="zonalstatistics-interface">
 <a class="reference internal image-reference" href="../../_images/en_3.34_m8ex1_zonalstat.png"><img alt="../../_images/en_3.34_m8ex1_zonalstat.png" src="../../_images/en_3.34_m8ex1_zonalstat.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 192 </span><span class="caption-text">Interface of the “Zonal statistics” tool</span><a class="headerlink" href="#zonalstatistics-interface" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 195 </span><span class="caption-text">Interface of the “Zonal statistics” tool</span><a class="headerlink" href="#zonalstatistics-interface" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -726,7 +730,7 @@ You have a Digital Elevation Model with the Altitude in m and a land cover class
 <figure class="align-center" id="align-rasters-interface">
 <a class="reference internal image-reference" href="../../_images/en_3.34_m8_alignrasters.png"><img alt="../../_images/en_3.34_m8_alignrasters.png" src="../../_images/en_3.34_m8_alignrasters.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 193 </span><span class="caption-text">Interface of the “Align Rasters” tool</span><a class="headerlink" href="#align-rasters-interface" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 196 </span><span class="caption-text">Interface of the “Align Rasters” tool</span><a class="headerlink" href="#align-rasters-interface" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
@@ -896,7 +900,9 @@ By HeiGIT gGmbH
 
   <p class="copyright">
     
-      © Copyright 2024 CC BY-NC-SA 4.0.
+      © Copyright This project is released under a Creative Commons BY-NC-SA license.
+For more information, please visit:
+https://creativecommons.org/licenses/by-nc-sa/4.0/.
       <br/>
     
   </p>
