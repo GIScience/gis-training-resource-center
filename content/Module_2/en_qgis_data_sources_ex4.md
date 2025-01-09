@@ -4,24 +4,27 @@ __🔙[Back to Homepage](/content/intro.md)__
 __🔙[Back to Exercise overview](/content/Modul_2/en_qgis_modul_2_exercises.md)__
 
 
-::::{grid} 2
-:::{grid-item-card}
-
-## Aim of the exercise:
+:::{card}
+__Aim of the exercise:__
+^^^
 
 This exercise aims to show multiple ways how to get OpenStreetMap(OSM) as a vector 
 file into QGIS.
 
+:::
 
-#### Type of trainings exercise:
+::::{grid} 2
+:::{grid-item-card}
+__Type of trainings exercise:__
+^^^
 
 - This exercise can be used in online and presence training. 
 
 :::
 
 :::{grid-item-card}
-
-#### These skills are relevant for 
+__These skills are relevant for__
+^^^ 
 
 - QGIS Essentials
 - Finding and downloading relevant datasets and preparing them for further analysis
@@ -31,22 +34,22 @@ file into QGIS.
 
 ::::{grid} 2
 :::{grid-item-card}
-
-#### Estimated time demand for the exercise.
+__Estimated time demand for the exercise__
+^^^
 
 - The exercise takes around 2 hours to complete, depending on the number of participants and their familiarity with computer systems.
 
 :::
 
 :::{grid-item-card}
-### Relevant wiki articles
+__Relevant wiki articles__
+^^^
 
 * [QGIS Interface](/content/Wiki/en_qgis_interface_wiki.md)
 * [Types of Geodata](/content/Wiki/en_qgis_geodata_types_wiki.md)
 * [Geodata Import in QGIS](/content/Wiki/en_qgis_import_geodata_wiki.md)
 * [Layer Concept](/content/Wiki/en_qgis_layer_concept_wiki.md)
 * [Geodata Classification - Graduated](/content/Wiki/en_qgis_graduated_wiki.md)
-
 
 :::
 
@@ -153,7 +156,7 @@ HOT offers a browser-based tool to download OSM data with good options to specif
 region, time, feature type and data format.
 
 1. Go to the HOT Export tool. To use the tool you need an OSM account. If you 
-   don’t have one you need to create one. Click on `Log in`. In the new window 
+   don't have one you need to create one. Click on `Log in`. In the new window 
    select the option to create a new account. 
 2. If you have an OSM account you can log in directly into the HOT Export tool by 
    clicking on `Log in`.
@@ -191,7 +194,7 @@ Hot Export tool download of Mauritius financial institutions. Adapted screenshot
     * Right-click on the layer `Mauritius_finical_institution` in the `Layer Panel` 
       -> `Properties`. A new window will open up with a vertical tab section on 
       the left. Navigate to the `Symbology` tab.
-    * On the top you find a dropdown menue. Open it and choose `Categorized`. 
+    * On the top you find a dropdown menu. Open it and choose `Categorized`. 
       Under `Value` select “amenity”.
     * Further down the window click on `Classify`.  Now you should see all unique 
       values or attributes of the selected “fclass” column.  You can adjust the 

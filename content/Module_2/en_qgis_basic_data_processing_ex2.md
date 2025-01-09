@@ -4,13 +4,19 @@ __🔙[Back to Homepage](/content/intro.md)__
 
 ## Characteristics of the exercise
 
-::::{grid} 2
-:::{grid-item-card}
-#### Aim of this exercise:
+:::{card}
+__Aim of this exercise:__
+^^^
 
 The objective of this exercise is to get a feeling for geodata and start working 
 with it. Understand the attribute table, sort it, select manually and export the 
-selection, as well as load a basemap
+selection, as well as load a basemap.
+
+:::
+
+::::{grid} 2
+:::{grid-item-card}
+
 
 #### Type of trainings exercise:
 
@@ -122,7 +128,7 @@ As no calculations are involved, e.g. area, WGS84 (EPSG:4326) is a good choice.
 
 :::{dropdown} How do I know which CRS to choose?
 [EPSG.io](http://epsg.io) has a database that you can search to find the appropriate CRS 
-to use for a country. More information on [projections](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html) can be found in the Wiki or in the corresponding section in [module 2 on projections](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_geodata_concept.html#projections).
+to use for a country. More information on [projections](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html) can be found in the Wiki or in the corresponding section in [module 2 on projections](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_projections.html).
 :::
 <!-- CLARIFY: is it important to choose an appropriate CRS or should people use 
 	the default? Part of this section can be removed. --> 

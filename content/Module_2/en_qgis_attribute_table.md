@@ -101,7 +101,7 @@ You can also use the shortcut `F6` (in some cases `Fn` + `F6`) to open the attri
 |![](/fig/mAction.png)| Actions | Lists the actions related to the layer           | |
 :::
 
-<!-- ADD: What will be the most important of these. Needs more explanation. EN-->
+<!-- ADD: What will be the most important of these. Needs more explanation.-->
 
 
 ### Sort the attribute table
@@ -162,6 +162,7 @@ to select features is via the attribute table.
 :::
 
 ### Zoom to selected area
+
 Now that you know how to select features, you can zoom onto your area of 
 interest. To do so you can click on the symbol on the toolbar or right click 
 on the layer and select `Zoom to Selection`.
@@ -206,8 +207,7 @@ Now, you can choose the format, layer name and CRS.
 
 ```{tip}
 We recommend use GeoPackage (.gpkg) instead of shapefile (.shp) in most cases. 
-If you are unsure which format is most appropriate, check out the [geodata types](/content/Wiki/en_qgis_geodata_types_wiki.md)
-page on the wiki.
+If you are unsure which format is most appropriate, check out the [geodata types](/content/Wiki/en_qgis_geodata_types_wiki.md) page on the wiki.
 ```
 
 
