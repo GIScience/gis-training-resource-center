@@ -82,7 +82,7 @@ __Wrap up:__
 ## Step by Step instructions
 
 :::{card} 
-:class-card: sd-text-justify sd-rounded-3 sd-border-2
+:class-card: sd-text-justify sd-rounded-2 sd-border-1
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_7/Module_3_Exercise_7_Georeferencing.zip 
 
 
@@ -95,7 +95,7 @@ __Available Data:__
 ^^^
 
 - `SOM_soil_deg.png` - A picture of a soil degradation map of Somalia taken out of a PDF report (Source: [FAO SWALIM](https://www.faoswalim.org/resources/site_files/L-14%20Land%20Degradation%20and%20a%20Monitoring%20Framework%20in%20Somalia_0.pdf))
-- `som_admbnda_adm1_ocha_20230308.gkpg` - A vector layer with the adkministrative boundaries of the regions (adm1) of somalia (Source: OCHA)
+- `som_admbnda_adm1_ocha_20230308.gkpg` - A vector layer with the administrative boundaries of the regions (adm1) of somalia (Source: OCHA)
 :::
 
 ### Preparing the data
@@ -123,7 +123,7 @@ Georeferencing is done by connecting the points on the map that will be georefer
 
 Now that we prepared our QGIS-project, let's start georeferencing the map.
 
-3. Open the Georeferencer by navigating to the Top Bar > `Layer` > `Georeferencer` (see {numref}`open_georeferencer`)
+3. Open the Georeferencer by navigating to the Top Bar > `Layer` > `Georeferencer` <!---(see {numref}`open_georeferencer`)-->
 
 
 ```{figure} /fig/en_3.36_open_georefencer.png

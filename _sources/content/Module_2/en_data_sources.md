@@ -40,7 +40,6 @@ The data to create maps or perform GIS analyses can come from various sources (S
 ```
 
 
-
 :::{dropdown} Overview of useful data repositories
 :open: 
 
@@ -119,7 +118,7 @@ There a multiple ways to get OpenStreetMap (OSM) data as a vector file into QGIS
 
 
 ```{Tip}
-If you wish to practice how to export OSM data, you can do the __[Exercise 4: Exporting OSM Data](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_data_sources_ex2.html)__
+If you wish to practice how to export OSM data, you can do the __[Exercise 4: Exporting OSM Data](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_data_sources_ex4.html)__
 
 ```
 

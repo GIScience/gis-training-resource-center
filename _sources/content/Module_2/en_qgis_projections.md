@@ -64,7 +64,7 @@ It is crucial that you are aware that your data can be in one CRS and your QGIS
 project in another CRS. 
 
 The project CRS is displayed on the bottom right
-corner of the [QGIS interface](/content/Modul_1/en_qgis_start.md#overview-of-qgis-interface).  
+corner of the [QGIS interface](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_start.html#overview-of-qgis-interface).  
 Here, you can see the EPSG code. EPSG stands for European Petroleum Survey Group, and it refers to a standardized code 
 system for coordinate reference systems (CRS) and projections. Each EPSG code (e.g., EPSG:4326 for WGS84) uniquely 
 identifies a specific CRS, helping ensure consistency and interoperability in geospatial data across different 

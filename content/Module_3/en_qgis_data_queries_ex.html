@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Exercise 3: Data queries &#8212; GIS Resource Training Center</title>
+    <title>Exercise 3: Data Queries &#8212; GIS Resource Training Center</title>
   
   
   
@@ -537,7 +537,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Exercise 3: Data queries</h1>
+    <h1>Exercise 3: Data Queries</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -565,7 +565,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="exercise-3-data-queries">
-<h1>Exercise 3: Data queries<a class="headerlink" href="#exercise-3-data-queries" title="Permalink to this heading">#</a></h1>
+<h1>Exercise 3: Data Queries<a class="headerlink" href="#exercise-3-data-queries" title="Permalink to this heading">#</a></h1>
 <p><strong>🔙<a class="reference internal" href="../intro.html"><span class="doc std std-doc">Back to Homepage</span></a></strong></p>
 <section id="aim-of-the-exercise">
 <h2>Aim of the exercise<a class="headerlink" href="#aim-of-the-exercise" title="Permalink to this heading">#</a></h2>
@@ -579,19 +579,20 @@ document.write(`
 <li><p><a class="reference internal" href="../Wiki/en_qgis_non_spatial_queries_wiki.html"><span class="doc std std-doc">Non-Spatial Queries</span></a></p></li>
 <li><p><a class="reference internal" href="../Wiki/en_qgis_spatial_queries_wiki.html"><span class="doc std std-doc">Spatial Queries</span></a></p></li>
 <li><p><a class="reference internal" href="../Wiki/en_qgis_table_functions_wiki.html"><span class="doc std std-doc">Table function - Add field</span></a></p></li>
-<li><p><a class="reference internal" href="../Wiki/en_qgis_geoprocessing_wiki.html"><span class="doc std std-doc">Geoprocessing - Clip</span></a></p></li>
+<li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#clip">Geoprocessing - Clip</a></p></li>
 </ul>
 </section>
 </section>
 <section id="data">
 <h2>Data<a class="headerlink" href="#data" title="Permalink to this heading">#</a></h2>
-<p>Download all the datasets <span class="xref myst">here</span>, save the folder on your computer, and unzip the file. The zip folder includes:</p>
+<p>Download all the datasets <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_3/Module_3_Exercise_3_Data_Queries.zip">here</a>, save the folder on your computer, and unzip the file. The zip folder includes:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">som_admbnda_adm2_ocha_20230308.shp</span></code>: This file contains information about the Somali administrative level 0-2, state, and operational zone level 1 and 2 boundary as shapefiles. The data can also be found on <a class="reference external" href="https://data.humdata.org/dataset/cod-ab-som">HDX</a>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">GF2_20231123_FloodExtent_BeledweyneCity_HiraanRegion.shp</span></code>: This shapefile illustrates satellite-detected surface waters in Beledweyne City, Beledweyne District, Hiraan Region, Somalia, on 12th of November 2023 at 07:32 UTC. The data is also available on <a class="reference external" href="https://data.humdata.org/dataset/water-extent-in-beledweyne-city-beledweyne-district-hiraan-region-somalia-12-november-2023">HDX</a>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Buildings_Belete_Weyne.geojson</span></code>: This dataset is downloaded using <a class="reference external" href="https://export.hotosm.org/v3/exports/new/describe">HOT Export Tool</a> and contains information about buildings in the Beledweyne district.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">buildings_belet_weyne.geojson</span></code>: This dataset is downloaded using <a class="reference external" href="https://export.hotosm.org/v3/exports/new/describe">HOT Export Tool</a> and contains information about buildings in the Beledweyne district.</p></li>
 </ul>
-<p>The folder is called <strong>Module_3_Exercise_1_Queries_Somalia</strong> and contains the entire <span class="xref myst">standard folder structure</span> with all data in the input folder.</p>
+<!--EDIT: We could add an optional step for trainees to download the data from the HOT Export Tool themselves (requires HOT Export Tool Exercise from Module 2)-->
+<p>The folder is called <strong>Module_3_Exercise_3_Data_Queries</strong> and contains the entire <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure">standard folder structure</a> with all data in the input folder.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The naming of the districts and states is not consistent across the different datasets. You will find different spellings for the district name <strong>Beledweyne</strong> which we will be focusing on. Other spellings might be <strong>Belet Weyne</strong> or <strong>Belete Weyne</strong>. In many cases, you will have to edit the values in the datasets to remove different spelling of spelling mistakes. This process is called “data cleaning”.</p>
@@ -599,21 +600,27 @@ document.write(`
 </section>
 <section id="tasks">
 <h2>Tasks<a class="headerlink" href="#tasks" title="Permalink to this heading">#</a></h2>
-<ol class="arabic">
-<li><p>Open QGIS and create a <span class="xref myst">new project</span> by clicking on <code class="docutils literal notranslate"><span class="pre">Project</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">New</span></code>.</p></li>
-<li><p>Once the project is created, <span class="xref myst">save the project</span> in the <strong>project folder</strong> of the exercise <strong>Module_3_Exercise_1_Queries_Somalia</strong>. To do that click on <code class="docutils literal notranslate"><span class="pre">Project</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">as</span></code> and navigate to the folder. Name the project <strong>Somalia_flood_affected_Beledweyne_2023</strong>.</p></li>
-<li><p>To load the following files into your project, drag and drop them (<span class="xref myst">Wiki Video</span>). Or click on <code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code>. Click on the three points <img alt="" src="../../_images/Three_points.png" /> and navigate to the file. Select the file and click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Back in QGIS click <code class="docutils literal notranslate"><span class="pre">Add</span></code> (<span class="xref myst">Wiki Video</span>).</p>
+<ol class="arabic simple">
+<li><p>Open QGIS and create a <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch">new project</a> by clicking on <code class="docutils literal notranslate"><span class="pre">Project</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">New</span></code>.</p></li>
+<li><p>Once the project is created, <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#save-project">save the project</a> in the <strong>project folder</strong> of the exercise <strong>Module_3_Exercise_1_Queries_Somalia</strong>. To do that click on <code class="docutils literal notranslate"><span class="pre">Project</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">as</span></code> and navigate to the folder. Name the project <strong>Somalia_flood_affected_Beledweyne_2023</strong>.</p></li>
+<li><p>To load the following files into your project, drag and drop them (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop">Wiki Video</a>). Or click on <code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code>. Click on the three points <img alt="" src="../../_images/Three_points.png" /> and navigate to the file. Select the file and click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Back in QGIS click <code class="docutils literal notranslate"><span class="pre">Add</span></code> (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab">Wiki Video</a>).</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">som_admbnda_adm2_ocha_20230308.shp</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">GF2_20231123_FloodExtent_BeledweyneCity_HiraanRegion.shp</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Buildings_Belete_Weyne.geojson</span></code>: A pop-up window will appear for this file and you will need to decide which data to import. Select the polygons.</p></li>
 </ul>
 </li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Make sure you <strong>unzip</strong> the exercise folder before loading the layers into QGIS. QGIS does not accept compressed files.</p>
+</div>
+<ol class="arabic" start="4">
 <li><p>First, we want to export the district <strong>Beledweyne</strong> from the Hiraan region from <code class="docutils literal notranslate"><span class="pre">som_admbnda_adm2_ocha_20230308.shp</span></code> to have it as a stand-alone vector layer. To do that:</p>
 <ol class="arabic simple">
 <li><p>Open the attribute table of <code class="docutils literal notranslate"><span class="pre">som_admbnda_adm2_ocha_20230308.shp</span></code> by right clicking on the layer  –&gt; <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Attribute</span> <span class="pre">Table</span></code>(<a class="reference internal" href="../Wiki/en_qgis_attribute_table_wiki.html"><span class="doc std std-doc">Wiki Video</span></a>).</p></li>
-<li><p>Find the row of <code class="docutils literal notranslate"><span class="pre">Belet</span> <span class="pre">Weyne</span></code> and mark it by clicking on the number on the very left-hand side of the attribute table. The row will be highlighted in blue and the district will turn yellow on the map canvas. You can right-click on the row and click <code class="docutils literal notranslate"><span class="pre">Zoom</span> <span class="pre">to</span> <span class="pre">Feature</span></code>(<span class="xref myst">Wiki Video</span>).</p></li>
-<li><p>Now right-click on the layer in the Layer Panel and click on <code class="docutils literal notranslate"><span class="pre">Export</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Selected</span> <span class="pre">Features</span> <span class="pre">as</span></code>. We want to save Beledweyne as a GeoPackage, so adjust <code class="docutils literal notranslate"><span class="pre">Format</span></code> accordingly. Click on the three points and navigate to your <strong>temp folder</strong>. Here you can give the layer the name <strong>AOI_Beledweyne</strong> and click <code class="docutils literal notranslate"><span class="pre">Save</span></code>. Now click <code class="docutils literal notranslate"><span class="pre">OK</span></code>(<span class="xref myst">Wiki Video</span>). In this exercise, we will not reproject the layers and work with the data in <code class="docutils literal notranslate"><span class="pre">ESPG:4326</span> <span class="pre">-</span> <span class="pre">WGS84</span></code>.</p></li>
+<li><p>Find the row of <code class="docutils literal notranslate"><span class="pre">Belet</span> <span class="pre">Weyne</span></code> and mark it by clicking on the number on the very left-hand side of the attribute table. The row will be highlighted in blue and the district will turn yellow on the map canvas. You can right-click on the row and click <code class="docutils literal notranslate"><span class="pre">Zoom</span> <span class="pre">to</span> <span class="pre">Feature</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature">Wiki Video</a>).</p></li>
+<li><p>Now right-click on the layer in the Layer Panel and click on <code class="docutils literal notranslate"><span class="pre">Export</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Selected</span> <span class="pre">Features</span> <span class="pre">as</span></code>. We want to save Beledweyne as a GeoPackage, so adjust <code class="docutils literal notranslate"><span class="pre">Format</span></code> accordingly. Click on the three points and navigate to your <strong>temp folder</strong>. Here you can give the layer the name <strong>AOI_Beledweyne</strong> and click <code class="docutils literal notranslate"><span class="pre">Save</span></code>. Now click <code class="docutils literal notranslate"><span class="pre">OK</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_queries_wiki.html#save-selected-features-as-a-new-file">Wiki Video</a>). In this exercise, we will not reproject the layers and work with the data in <code class="docutils literal notranslate"><span class="pre">ESPG:4326</span> <span class="pre">-</span> <span class="pre">WGS84</span></code>.</p></li>
 </ol>
 </li>
 <li><p>In the following steps, we want to identify all buildings that are likely to be affected by the recent flooding. To do that we will use the tool <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">by</span> <span class="pre">Location</span></code>.</p>
@@ -628,7 +635,7 @@ document.write(`
 </ol>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
-<p>The tool <span class="xref myst"><code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">by</span> <span class="pre">Location</span></code></span> is very similar. This tool functions in the same way, but instead of directly extracting the features, it selects them.</p>
+<p>The tool <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_queries_wiki.html#select-by-location"><code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">by</span> <span class="pre">Location</span></code></a> is very similar. This tool functions in the same way, but instead of directly extracting the features, it selects them.</p>
 </div>
 </li>
 </ol>
@@ -645,14 +652,14 @@ To extract “hospitals”, “schools”, and “mosques”, we can use the too
 <li><p>Find the tool <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">by</span> <span class="pre">Expression</span></code> in the <code class="docutils literal notranslate"><span class="pre">Toolbox</span></code>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Expression</span></code>: click on <img alt="" src="fig/miconexpression.png" />.</p></li>
 <li><p>The window “Expression” will open. Here we can build a very specific query. In the central panel open <code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">and</span> <span class="pre">values</span></code>. Here you can see all the columns oft he the layer. Click on <code class="docutils literal notranslate"><span class="pre">building</span></code>. On the right-hand side, you should now see the option <code class="docutils literal notranslate"><span class="pre">All</span> <span class="pre">unique</span></code>. Click on it. Here you can see now all unique values in the column „building“.</p></li>
-<li><p>In the <code class="docutils literal notranslate"><span class="pre">Expression</span></code> field, enter the following expression (see <code class="xref std std-numref docutils literal notranslate"><span class="pre">extract_by_expression1</span></code>):</p>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">Expression</span></code> field, enter the following expression (see the figure below):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;building&quot;</span> <span class="o">=</span> <span class="s1">&#39;hospital&#39;</span> <span class="ow">or</span>
 <span class="s2">&quot;building&quot;</span> <span class="o">=</span> <span class="s1">&#39;school&#39;</span> <span class="ow">or</span>
 <span class="s2">&quot;building&quot;</span> <span class="o">=</span> <span class="s1">&#39;mosque&#39;</span> 
 </pre></div>
 </div>
 </li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Ok</span></code>. The window will close and you will see the expression you created in the <code class="docutils literal notranslate"><span class="pre">Expression</span></code>-field in the <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">by</span> <span class="pre">Expression</span></code> window (see <code class="xref std std-numref docutils literal notranslate"><span class="pre">extract_by_expression2</span></code>).</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Ok</span></code>. The window will close and you will see the expression you created in the <code class="docutils literal notranslate"><span class="pre">Expression</span></code>-field in the <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">by</span> <span class="pre">Expression</span></code> window (see figure below).</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Run</span></code>. A new temporary layer called <code class="docutils literal notranslate"><span class="pre">Matching</span> <span class="pre">Features</span></code> will be added to your QGIS-project. Close the <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">by</span> <span class="pre">Expression</span></code> window.</p></li>
 </ol>
 </li>

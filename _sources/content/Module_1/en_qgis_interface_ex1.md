@@ -18,7 +18,7 @@ The exercise covers:
 ## Related wiki articles
 
 - [QGIS interface](/content/Wiki/en_qgis_interface_wiki.md)
-- [Projects and folder structure](/content/Wiki/en_qgis_interface_wiki.md)
+- [Projects and folder structure](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html)
 
 
 ## Data preparation
@@ -57,7 +57,7 @@ align: Left
 
 - Toolbars are at the top of the screen by default. They include the controls that let you switch between different ways of interacting with the interface. 
 - Panels are at the sides of the screen by default. They include the file browser and layer navigation panels to the left of the screen. Other panels can be toggled to search and use processing tools. In the layer panel, you will see the data we will add later on.
-On the right of the screen, you will most likely have the __Processing Toolbox__ panel. If it is missing for you, check out this [wiki page](content/Wiki/en_qgis_common_errors_and_Issues.md).
+On the right of the screen, you will most likely have the __Processing Toolbox__ panel. If it is missing for you, check out this [wiki page](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#missing-toolbox).
 
 ```{figure} /fig/en_QGIS_GUI.png
 ---

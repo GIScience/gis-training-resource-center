@@ -567,14 +567,22 @@ document.write(`
 <p><strong>🔙<a class="reference internal" href="../intro.html"><span class="doc std std-doc">Back to Homepage</span></a></strong></p>
 <section id="characteristics-of-the-exercise">
 <h2>Characteristics of the exercise<a class="headerlink" href="#characteristics-of-the-exercise" title="Permalink to this heading">#</a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Aim of the exercise:</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">This exercise will help you to get to know the interface of QGIS a bit better. Furthermore, you will load your first data in QGIS and gain some hands-on experience with the layer concept and learn how to reproject layers.</p>
+</div>
+</div>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Type of trainings exercise:</strong></p>
+</div>
 <div class="sd-card-body docutils">
-<p class="rubric">Aim of the exercise</p>
-<p class="sd-card-text">This exercise will help you to get to know the interface of QGIS a bit better. Furthermore, you will load your first data in QGIS and gain some hands-on experience with the layer concept and learn how to reproject layers.</p>
-<p class="rubric">Type of trainings exercise:</p>
 <ul class="simple">
 <li><p class="sd-card-text">This exercise can be used in online and presence training.</p></li>
 <li><p class="sd-card-text">It can be done as a follow-along exercise or individually as a self-study.</p></li>
@@ -665,24 +673,22 @@ The folder is called “Module_2_Exercise_4_The_World” and contains the whole 
 </section>
 <section id="tasks">
 <h2>Tasks<a class="headerlink" href="#tasks" title="Permalink to this heading">#</a></h2>
-<ol class="arabic simple">
+<ol class="arabic">
 <li><p>Open QGIS and create a <span class="xref myst">new project</span> by clicking on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span></code></p></li>
 <li><p>Once the project is created save the project in the “project” folder of the “Ex_The_world”.  To do that click on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">as</span></code> and navigate to the folder. Name the project “Ex_The_World”.</p></li>
-<li><p>Load the shape file “World_countries__generalized” in your project by drag and drop (<span class="xref myst">Wiki Video</span>). Or click on <code class="docutils literal notranslate"><span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code>. Click on the three points <img alt="" src="../../_images/Three_points.png" /> and navigate to “World_countries__generalized”. Select the file and click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Back in QGIS click <code class="docutils literal notranslate"><span class="pre">Add</span></code> (<span class="xref myst">Wiki Video</span>).</p></li>
-</ol>
+<li><p>Load the shape file “World_countries__generalized” in your project by drag and drop (<span class="xref myst">Wiki Video</span>). Or click on <code class="docutils literal notranslate"><span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code>. Click on the three points <img alt="" src="../../_images/Three_points.png" /> and navigate to “World_countries__generalized”. Select the file and click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Back in QGIS click <code class="docutils literal notranslate"><span class="pre">Add</span></code> (<span class="xref myst">Wiki Video</span>).</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>With both methods, you need to select the file with the ending <code class="docutils literal notranslate"><span class="pre">.shp</span></code> !</p>
 </div>
-<ol class="arabic simple" start="4">
-<li><p>Load the GeoPackage file “global_power_plant_database_nuclear.gpkg” in the QGIS project. You can use one of the methods above. Either drag and drop (<span class="xref myst">Wiki Video</span>) the file or click on <code class="docutils literal notranslate"><span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code>. Click on the three points <img alt="" src="../../_images/Three_points.png" /> and navigate to “global_power_plant_database_nuclear.gpkg”. Select the file and click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Back in QGIS click <code class="docutils literal notranslate"><span class="pre">Add</span></code>(<span class="xref myst">Wiki Video</span>).</p></li>
-</ol>
+</li>
+<li><p>Load the GeoPackage file “global_power_plant_database_nuclear.gpkg” in the QGIS project. You can use one of the methods above. Either drag and drop (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop">Wiki Video</a>) the file or click on <code class="docutils literal notranslate"><span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code>. Click on the three points <img alt="" src="../../_images/Three_points.png" /> and navigate to “global_power_plant_database_nuclear.gpkg”. Select the file and click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Back in QGIS click <code class="docutils literal notranslate"><span class="pre">Add</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab">Wiki Video</a>).</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>GeoPackage file can contain multiple files and even whole QGIS projects. When you load such a file in QGIS a window will appear in which you have to select the files you want to load in your QGIS project.</p>
 </div>
-<ol class="arabic" start="5">
-<li><p>Now we want to load the file “Significant_earthquake_data.txt” into QGIS. Since this is vector data in text format we need to follow a certain process (<span class="xref myst">Wiki Video</span>).</p>
+</li>
+<li><p>Now we want to load the file “Significant_earthquake_data.txt” into QGIS. Since this is vector data in text format we need to follow specific steps (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-csv-data-in-qgis">Wiki Video</a>).</p>
 <ul class="simple">
 <li><p>Click on <code class="docutils literal notranslate"><span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Delimited</span> <span class="pre">text</span> <span class="pre">Layer</span></code>. Click on the three points <img alt="" src="../../_images/Three_points.png" /> and navigate to “Significant_earthquake_data.txt”. Select the file and click <code class="docutils literal notranslate"><span class="pre">Open</span></code>.</p></li>
 <li><p>In the window “Data Source manager| Delimited Text” in QGIS open the dropdown menu <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">Format</span></code> and check <code class="docutils literal notranslate"><span class="pre">Custom</span> <span class="pre">delimiter</span></code> and <code class="docutils literal notranslate"><span class="pre">Tab</span></code></p></li>
@@ -698,24 +704,21 @@ The folder is called “Module_2_Exercise_4_The_World” and contains the whole 
 <li><p><code class="docutils literal notranslate"><span class="pre">Y</span> <span class="pre">field</span></code> = “LATITUDE”.</p></li>
 </ul>
 </div>
-</li>
-</ol>
-<figure class="align-center">
+<figure class="align-center" id="ex5-import-text-layer">
 <a class="reference internal image-reference" href="../../_images/en_ex_The_world_add_text_layer_import.png"><img alt="../../_images/en_ex_The_world_add_text_layer_import.png" src="../../_images/en_ex_The_world_add_text_layer_import.png" style="width: 600px;" /></a>
 </figure>
-<ol class="arabic simple" start="6">
+</li>
 <li><p>Arrange the three layers in a practical order. Remember the  <a class="reference internal" href="../Wiki/en_qgis_layer_concept_wiki.html"><span class="doc std std-doc">Layer Concept</span></a>.</p></li>
 <li><p>Interact with the map and explore the data sets. Use the zoom tool and move the map.</p></li>
-<li><p>Save your project by clicking on the <img alt="" src="../../_images/mActionFileSave.png" /> or use the hotkey combination <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> + <code class="docutils literal notranslate"><span class="pre">S</span></code></p></li>
-</ol>
+<li><p>Save your project by clicking on the <img alt="" src="../../_images/mActionFileSave.png" /> or use the hotkey combination <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> + <code class="docutils literal notranslate"><span class="pre">S</span></code></p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>If you see <code class="docutils literal notranslate"><span class="pre">*</span></code> before the name of your project on the top left corner of QGIS this means there are unsaved changes in your project. Save your progress!</p>
 </div>
-<ol class="arabic simple" start="9">
+</li>
 <li><p>Your results should look something like this:</p></li>
 </ol>
-<figure class="align-center">
+<figure class="align-center" id="the-world-result">
 <a class="reference internal image-reference" href="../../_images/en_ex_The_world_result.png"><img alt="../../_images/en_ex_The_world_result.png" src="../../_images/en_ex_The_world_result.png" style="width: 600px;" /></a>
 </figure>
 </section>

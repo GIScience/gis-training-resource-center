@@ -10,6 +10,7 @@ The objective of this exercise is to make your first steps in QGIS. Understand t
 
 * Display vector data in QGIS and view the attributes of the data
 * Reproject/Change the projection of the vector data
+
 :::
 
 
@@ -191,7 +192,9 @@ Screenshot of the Export window
    under `XYZ Tiles`. 
 
 ```{Note}
+
 Combining layers in different projections with online basemaps (typically have their own projections) can lead to display issues due to CRS conflicts. When layers have a distinct CRS, they may not align correctly or appear distorted when overlaid with an online basemap. To mitigate these problems, it's advisable to either reproject the layers to match the CRS of the basemap (which is often not applicable) or temporarily remove the basemap before saving the project. This ensures that the map is displayed accurately and avoids potential visual discrepancies caused by CRS inconsistencies.
+
 ```
 <!-- CLARIFY: What issues? Is there another workaround? EDIT: -->
 

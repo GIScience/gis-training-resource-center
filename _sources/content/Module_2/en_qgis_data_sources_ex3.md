@@ -1,50 +1,59 @@
 # Exercise 3: Data sources
-## Characteristics of the exercise
+
 
 <!--This exercise is quite minimal with the explanation of steps (most should be looked up) so it is not suited for a follow along session -->
 
 :::{card}
-:link: /content/Modul_2/en_qgis_modul_2_exercises.md
+:link: 
 
 __Click here to return to the exercise overview page for module 2__ 
 
 :::
 
-::::{grid} 2
-:::{grid-item-card}
-#### Aim of the exercise
+## Characteristics of the exercise
+
+:::{card}
+__Aim of the exercise:__
+^^^
+
 The aim of this exercise is to navigate various data sources, gain an 
 understanding of where and how to access relevant data, and identify potential problems. It is important to use reliable, up-to-date, and appropriate data sources** that fit the purpose of the analysis to ensure a successful and meaningful results. Always consider your analysis objectives and requirements and search for data accordingly.
 
+:::
 
-#### Type of trainings exercise:
+::::{grid} 2
+:::{grid-item-card}
+__Type of trainings exercise:__
+^^^
 
-- This exercise can be used in online and presence training. 
+- This exercise can be done in small groups presenting their work in a plenum at the end.
+<!--For Follow along, this exercise needs to be updated or another follow along exercise needs to be created-->
 
 :::
 
 :::{grid-item-card}
+__These skills are relevant for__
+^^^ 
 
-#### These skills are relevant for 
-
-- QGIS Essentials
+- QGIS essentials
 - Finding and downloading relevant datasets and preparing them for further analysis
+- Data literacy
 
 :::
 ::::
 
 ::::{grid} 2
 :::{grid-item-card}
-
-#### Estimated time demand for the exercise.
+__Estimated time demand for the exercise:__
+^^^
 
 - The exercise takes around 1 hour to complete, depending on the number of participants and their familiarity with computer systems.
 
 :::
 
 :::{grid-item-card}
-
-### Relevant Wiki articles
+__Relevant Wiki articles__
+^^^
 
 * [QGIS Interface](/content/Wiki/en_qgis_interface_wiki.md)
 * [Types of Geodata](/content/Wiki/en_qgis_geodata_types_wiki.md)
@@ -87,12 +96,16 @@ __Wrap up:__
 
 :::
 
-
 ## Exercise 
+
 ### Available Data
+
+:::{card}
 
 Since the exercise is about finding data, there won't be any data to download. 
 Instead download the usual folder structure [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip) and insert your data as you download it.
+
+:::
 
 ### Tasks
 
@@ -108,11 +121,14 @@ and the healthsites on [healthsites.io](https://healthsites.io).
    that are being used, instead of just examples. Can we just ask people to use these
    datasets, so that the rest of the instructions make sense? -->
 
-2. Download the data and save the administrative boundaries as `bolivia` and the healthsites `healthsites_bolivia` into the 
-   `data\input` folder.
+2. Download the data and save the administrative boundaries as `bolivia` and the healthsites `healthsites_bolivia` into the `data\input` folder.
 
 ```{Note}
-Make sure to only use the point data from the healthsites dataset. Other data shapes such as lines or polygons can be ignored in this example. Depending on the data source, information can be provided as points, but also as lines or polygons.
+
+Make sure to only use the point data from the healthsites dataset. Other data shapes such as lines or polygons can be 
+ignored in this example. Depending on the data source, information can be provided as points, but also as lines or 
+polygons.
+
 ```
 
 3. Load both vector files into QGIS.  
@@ -128,7 +144,9 @@ Make sure to only use the point data from the healthsites dataset. Other data sh
 6. If your dataset contains information about the type of healthsite (e.g. clinic, hospital, doctor, etc.), we can extract these and save them in a new layer. We can do this by selecting the hospitals and then copying them to a new layer.
 
 ```{Hint}
+
 For information on how to easily filter your data by manually selecting features in the attribute table after it has been sorted based on a particular column, see the __[attribute table](/content/Wiki/en_qgis_attribute_table_wiki.md)__ page on the wiki.
+
 ```
 <!-- Should we direct people to instructions on filters rather than attribute table?
 EN: The information on how to filter is in this wiki page. Add the heading to the link -->

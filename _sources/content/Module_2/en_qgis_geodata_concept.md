@@ -153,7 +153,26 @@ The value of each cell is usually visualised by assigning a
 color to a value. For elevation data, for example, a color ramp is usually used. For categorical data, such as 
 landuse, color categories (such as green = forest; yellow = agricultural landuse, red = residential). 
 
-<!--- ADD: insert example of raster data -->
+::::{grid} 2
+
+```{figure} /fig/raster_data_example_corine_LC.png
+---
+name: corine_landcover_example
+width: 300 px
+align: left
+---
+The Copernicus CORINE Landcover Dataset (Source: [EEA/Copernicus](https://land.copernicus.eu/en/map-viewer?product=130299ac96e54c30a12edd575eff80f7))
+```
+
+```{figure} /fig/NASADEM_Alps_example.png
+---
+name: NASA_DEM_example
+width 300 px
+---
+The NASA DEM showing the alps (Source: [NASA/USGS/JPL-CALTECH](https://lpdaac.usgs.gov/products/nasadem_hgtv001/))
+```
+
+::::
 
 Raster values usually have only one value per cell, however, it can also have multiple (color) bands. Satellite 
 imagery usually offers several bands to represent data collected from different parts of the light spectrum, which we can use to analyze different phenomena,  
@@ -261,7 +280,7 @@ Layers in a GIS. Source: [CartONG](https://cartong.pages.gitlab.cartong.org/lear
 Practical experience is key to mastering GIS. Now is a good moment to apply what we've learned in the first exercise of module 2.
 
 :::{card}
-:class-card: sd-text-justify sd-rounded-3 sd-border-2
+:class-card: sd-text-justify sd-rounded-2 sd-border-1
 :link: https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_geodata_concept_ex1.html
 
 __Module 2 Exercise 1: Understanding Geodata__
@@ -275,7 +294,7 @@ Before you can start creating maps in QGIS, you will need to load your data into
 
 ### Vector data import
 
-Typical [vector data formats](/content/Modul_2/en_qgis_geodata_concept.md#vector-file-formats) are Shapefile (`.shp`) and GeoPackage (`.gpkg`). 
+Typical vector data formats are Shapefile (`.shp`) and GeoPackage (`.gpkg`). 
 The process of importing vector data in either of the two formats is the same. 
 
 QGIS offers a few ways to load vector data. The most immediate is via drag-and-drop, where you simply 
