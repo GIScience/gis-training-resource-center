@@ -11,7 +11,7 @@ making QGIS a free application. The entire source code can be viewed and downloa
 you can click, forms you can fill out to do tasks, and it's generally a visual interactive experience. 
 - You may __view, edit, capture and analyze spatial data or create printable maps__ with it. QGIS was created in 2002 
 and is a project of volunteers. And it is __constantly changing__.
-- QGIS is backed by a __large community of users__, so it’s easy to find solutions to technical issues by using QGIS forums, blogs, or sub-reddits. The official QGIS community can be found [here](https://qgis.org/en/site/forusers/support.html#support). Additionally, a list of helpful websites can be found on the [wiki here](content/Wiki/en_qgis_common_errors_and_Issues.md).
+- QGIS is backed by a __large community of users__, so it’s easy to find solutions to technical issues by using QGIS forums, blogs, or sub-reddits. The official QGIS community can be found [here](https://qgis.org/en/site/forusers/support.html#support). Additionally, a list of helpful websites can be found on the [wiki here](/content/Wiki/en_qgis_common_errors_and_Issues.md).
 
 
 ```{note}
@@ -39,7 +39,7 @@ There is a lot of complex math involved in the GIS, but QGIS takes care of it on
 
 QGIS offer tools to create your own geodata. For example, with the digitizing tools, you can create points, polygons, and lines with information which can represent spatial information. Furthermore, georeferencing let's you add geographic information to various types of data, such as satellite imagery or hand-drawn maps. You will learn how to create geodata and how to georeference data in __[module 2](/content/Modul_2/en_module_2_overview.md)__. 
 
-Sometimes working with GIS requires you to go and collect the data in the field. In this case, you can use [web and mobile apps](content\Wiki\en_web_and_mobile_apps_wiki.md). 
+Sometimes working with GIS requires you to go and collect the data in the field. In this case, you can use [web and mobile apps](/content/Wiki/en_web_and_mobile_apps_wiki.md). 
 
 
 
@@ -117,7 +117,8 @@ A QGIS project file has the format ending `.qgz`
 
 The interface of QGIS is at first glance quite complex. However, once you know all the components you will be able to orientate yourself quickly. Here you can find a description of all components of the interface.
 
-```{tip} When you hover with your mouse cursor over icons, text will appear which explains the function of the button.
+```{tip}
+When you hover with your mouse cursor over icons, text will appear which explains the function of the button.
 ```
 
 ```{figure} /fig/en_QGIS_GUI.png
