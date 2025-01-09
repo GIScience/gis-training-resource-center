@@ -82,11 +82,12 @@ Depending on the type of scale, you will use different methods of classification
 different types of classification that are available in QGIS, and when to use them for which data. We will also 
 go over some scenarios you might come across in your GIS career. 
 
+<!--EDIT: REMOVE THE DATA SCALES? MIGHT BE TOO COMPLEX-->
+
 ## Single symbol classification
 
 By default, QGIS visualises all layers in the `Single symbol` setting. This means all the features of a layer 
-are visualised the same. In this setting, you can change many parameters like colour or opacity __but you can 
-not classify the data into multiple groups!__
+are visualised the same. In this setting, you can change many parameters like colour or opacity __but you can not classify the data into multiple groups!__
 
 Single Symbol classification is useful when you have a simple dataset. For example, you load a polygon layer 
 with the administrative boundaries of a region, and a point layer with the major cities. In this case, you can 
@@ -249,6 +250,8 @@ align: center
 ---
 Different classifications. Source: HeiGIT  (adapted from [Axis Maps](https://www.axismaps.com/guide/data-classification)) 
 ```
+
+<!--EDIT: The different classification methods could be moved to the wiki and also put into the exercise to make trainees choose the right classification method. -->
 
 ::::{tab-set}
 
