@@ -1,6 +1,5 @@
 # Repo for the 📚 GIS Training Resource Center [TRC]
 
-:warning:
 :construction: Under Construction :construction: 
 
 
