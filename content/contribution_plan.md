@@ -125,7 +125,7 @@ Follow these guidelines when creating and formatting content:
         {numref}`name`
         ```
         - This does not work in pages that are not included in the `TOC.yml`-file
-    - ``width` specifies the pixel width. The maximum amount of pixels for width is 750 px. Alternatively, you can use `height`. Be careful to set high values as this will distort the image once it reaches the 750 px width cap.
+    - `width` specifies the pixel width. The maximum amount of pixels for width is 750 px. Alternatively, you can use `height`. Be careful to set high values as this will distort the image once it reaches the 750 px width cap.
     - align specifies where the image should be rendered on the markdown page. E.g., `align: left` can be used to align the image to the left part of the page and leave space for text on the right.
     - The caption should describe what is seen on the figure in the context of the section. The image sources must be specified as precisely as possible.
     - It is possible to embed icons into the text by using `![](/fig/FILENAME)`. Make sure the icon height does not exceed 30 pixels. 
@@ -202,7 +202,7 @@ CAPTION
 
 - __Embedding Videos:__ Videos need to be embedded using HTML-code: 
     ```
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_change_project_CRS.mp4"></video>
+    <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_change_project_CRS.mp4"></video>
     ```
     - copy the code and enter the name of the video file you want to embed.
 
