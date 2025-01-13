@@ -1,5 +1,7 @@
-# Glossary (Draft)
+# Glossary
  
+Draft
+
 | Term| Description | 
 | -------- | --- | 
 |Analysis Map | Analyses data in respect to their geographic location.|
