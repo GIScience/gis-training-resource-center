@@ -118,7 +118,9 @@ A QGIS project file has the format ending `.qgz`
 The interface of QGIS is at first glance quite complex. However, once you know all the components you will be able to orientate yourself quickly. Here you can find a description of all components of the interface.
 
 ```{tip}
+
 When you hover with your mouse cursor over icons, text will appear which explains the function of the button.
+
 ```
 
 ```{figure} /fig/en_QGIS_GUI.png
@@ -309,7 +311,10 @@ To open the Toolbox in QGIS click on the gearwheel button. Or click on `Processi
 
 You can use the search bar to find specific tools.
 
-```{tip} There are cases when you want to do something in QGIS but do not know the exact tool. Sometimes it's worth just looking for what you think the name of the tool might be.
+```{tip} 
+
+There are cases when you want to do something in QGIS but do not know the exact tool. Sometimes it's worth just looking for what you think the name of the tool might be.
+
 ```
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_toolbars.mp4"></video>
@@ -340,7 +345,9 @@ In QGIS, the geodata you work with is __not__ saved in your QGIS project file. I
 Good data organisation with a fixed and well-thought-out folder structure prevents such problems.
 
 ```{Warning} 
+
 Always organize your data! Check out the Wiki article on [Standard Folder Structure](/content/Wiki/en_qgis_projects_folder_structure_wiki.md) for more info. 
+
 ```
 
 
