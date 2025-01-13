@@ -13,20 +13,23 @@ ___
 :::{card}
 # Teach GIS for Humanitarian Work
 
-The One-Stop-Shop for teaching Geoinformation System (GIS) skills for the work in the Red Cross Red Cresent Network
+The One-Stop-Shop for teaching Geoinformation System (GIS) skills for the work in the Red Cross Red Crescent Network
 :::
 ::::
 
 
 ::::{grid} 2
 :::{card}
-__[Start Teaching](/content/Trainers_corner/en_TOT_intro.md)__ ➡️
+:link: https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_TOT_intro.html
+
+__[Start Teaching](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_TOT_intro.html)__ ➡️
 
 :::
 
 :::{card}
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_1/en_module_1_overview.html
 
-__[Start Learning](/content/Modul_1/en_qgis_theorie.md)__ ➡️
+__[Start Learning](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_module_1_overview.html)__ ➡️
 
 :::
 
@@ -54,7 +57,7 @@ ___
 
 ## What's Inside
 
-Trainers for QGIS are the principal audience of the IFRC Network GIS Training Platform. Here you can find training materials for teaching QGIS specific for the work in the Red Cross Red Cresent network for total beginners up to an intermediate level.
+Trainers for QGIS are the principal audience of the IFRC Network GIS Training Platform. Here you can find training materials for teaching QGIS specific for the work in the Red Cross Red Crescent network for total beginners up to an intermediate level.
 
 🙌 The training material is centred around the extensive use of practical follow-along exercises and hands-on training. 
 
@@ -67,7 +70,7 @@ The primary objective is to empower individuals across various roles within the 
 The QGIS skills offered on this platform span basic, intermediate, and advanced proficiency levels, with each level comprising three dedicated modules.
 
 :::{dropdown} Basic Skills
-| Modul 1 -  Introduction GIS ✨| Modul 2 - Working with Geodata 🌍 | Modul 3 - Basic GIS operations 📍 |
+| Modul 1e -  Introduction GIS ✨| Module 2 - Working with Geodata 🌍 | Module 3 - Basic GIS operations 📍 |
 |-------------------------------|------------------------------------|-----------------------------------|
 | Installation QGIS            | Layer Concept in GIS    |        Digital data editing  and creation   |
 | Paper maps and cartography, digital maps distinction |  Data Import |Feature attribute selection and editing |
@@ -80,13 +83,13 @@ The QGIS skills offered on this platform span basic, intermediate, and advanced 
 |  |Data Sources|   |
 ::::
   
-:::{dropdown} Intermidate Skills
+:::{dropdown} Intermediate Skills
 
-|Modul 4 - Representation 🗺️ |  Modul 5 - Intermidate GIS Operations 🌐| Modul 6 - Data analysis with QGIS 📊  |
+|Module 4 - Representation 🗺️ |  Module 5 - Intermediate GIS Operations 🌐| Module 6 - Data analysis with QGIS 📊  |
 |-----------------------|---------------------|-------------------------------------|
-|Visualisation |Geoprocessing: Buffer||
-|Graphical variables|Geoprocessing: Clip |Data access   |
-|Styling in QGIS |Geoprocessing: Dissolve   |QGIS Plugins Example: QuickOSM  |
+|Visualisation | Geoprocessing: Buffer||
+|Graphical variables| Geoprocessing: Clip | Data access   |
+|Styling in QGIS | Geoprocessing: Dissolve   | QGIS Plugins Example: QuickOSM  |
 |Symbology and Colors |Clip by Mask|Remote Sensing/ Raster Data Intro|
 |Export/Import styles|Clip by Extent  |||
 |Print layout|Non-spatial queries ||
@@ -95,7 +98,7 @@ The QGIS skills offered on this platform span basic, intermediate, and advanced 
 :::
 
 :::{dropdown} Advanced Skills
-|Modul 7 - Automatisation 💻| Modul 8 - Remote Sensing and Raster data 🛰️ |Modul 9 - Accessbility 🚑|
+|Module 7 - Automatisation 💻| Module 8 - Remote Sensing and Raster data 🛰️ |Module 9 - Accessibility 🚑|
 |-----------------------|---------------------|-------------------------------------|
 |Automation intro|Zonal Statistics|Accessibility analyses|
 ||Extraction of raster values|Spatial analysis |
