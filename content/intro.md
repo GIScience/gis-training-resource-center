@@ -9,13 +9,13 @@ ___
 # Welcome to the IFRC Network GIS Training Platform
  
 
-::::{grid} 1
 :::{card}
-# Teach GIS for Humanitarian Work
-
+:class-card: sd-text-justify sd-border-1
+__Teach GIS for Humanitarian Work__
+^^^
 The One-Stop-Shop for teaching Geoinformation System (GIS) skills for the work in the Red Cross Red Crescent Network
 :::
-::::
+
 
 
 ::::{grid} 2
@@ -111,16 +111,17 @@ The QGIS skills offered on this platform span basic, intermediate, and advanced 
 
 
 ::::{grid} 2
-:::{card} __[Trainer's](/content/Trainers_corner/en_TOT_intro.md)__ 
+:::{card} __[Trainers](/content/Trainers_corner/en_TOT_intro.md)__ 
 There is a dedicated [section for trainers](/content/Trainers_corner/en_how_to_training.md) who want to use the platform.
 
 The most important component is the training plans. These give you an orientation on when to use what in your training cycle.
 Nevertheless, every component of the training material is designed to be utilized independently. In addition to the training plans, you'll discover a wealth of resources, ranging from best practices for training to innovative methods for teaching GIS.   
+
 :::
 
-:::{card} __[Trainee's](/content/Modul_1/en_qgis_theorie.md)__ 
+:::{card} __[Trainees](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_module_1_overview.html)__ 
 Your trainers will be your guides for this platform. If you have any questions, feel free to ask them any questions about this training platform.
-This is not a self-learning platform. If you want to learn QGIS, it is always better to participate in a course and learn from an experienced trainer. However, you are welcome to use this platform for homing your QGIS skills, just beaware that selflearning ist not the objective of the platform.
+This is not a self-learning platform. If you want to learn QGIS, it is always better to participate in a course and learn from an experienced trainer. However, you are welcome to use this platform for homing your QGIS skills, just be aware that self-learning ist not the objective of the platform.
 :::
 ::::
 ___
@@ -136,10 +137,13 @@ ___
 
 ## Contact
 
-```{admonition} Contact the IFRC GIS Training Plattform Team
-You have questions, feedback or comments on the platform and the content. We are allways happy to hear from you. You can contact us via email   __gis-training-platform@heigit.org__
+```{admonition} Contact the IFRC GIS Training Platform Team
+You have questions, feedback or comments on the platform and the content. We are always happy to hear from you. You can contact us via email under __gis-training-platform@heigit.org__
 ```
 
+## Contributing
+
+We warmly welcome everyone to contribute and collaborate in advancing the IFRC GIS Training Platform, fostering shared knowledge and growth. Before contributing, please read through the [Contribution Plan](https://giscience.github.io/gis-training-resource-center/content/contribution_plan.html)
 
 ## Join the Community
 
