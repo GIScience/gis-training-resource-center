@@ -159,6 +159,7 @@ parts:
   - caption: About
     chapters:
       - file: content/About/about_1.md
+      - file: content/contribution_plan.md
   - caption: Glossary
     chapters:
       - file: content/Glossary/en_glossary_1.md
