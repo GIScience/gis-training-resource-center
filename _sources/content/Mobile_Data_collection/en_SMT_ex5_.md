@@ -1,11 +1,16 @@
 # Sketch Map Tool Exercise 5 - Heat Map Visualization
 
 ## Characteristics of the exercise 
+
+:::{card}
+__Aim of this exercise:__
+^^^
+Learn how to analyze your Sketch Map Tool Outputs by creating a heatmap.
+:::
+
+
 ::::{grid} 2
 :::{grid-item-card}
-#### Aim of this exercise:
-Learn how to analyze your Sketch Map Tool Outputs by creating a heatmap.
-
 #### Type of trainings exercise:
 This exercise can be used in online and presence training and is focused on an hands-on experience with QGIS spatial analysis tools.
 
@@ -249,7 +254,7 @@ Raster Transparency
 ```
 
 ```{note}
-Keep in mind that what you are seeing on your screen is not a map that is ready to be printed or distributed. You could now create a printable map. Take a look at the chapter on the [print layout](/content/Modul_4/en_qgis_map_design_2.md) and the [wiki](/content/Wiki/en_qgis_map_making_wiki.md) to do so.
+Keep in mind that what you are seeing on your screen is not a map that is ready to be printed or distributed. You could now create a printable map. Take a look at the chapter on the [print layout](/content/Module_4/en_qgis_map_design_2.md) and the [wiki](/content/Wiki/en_qgis_map_making_wiki.md) to do so.
 ```
 
 

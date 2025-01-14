@@ -740,7 +740,7 @@ This page <!--Document-->outline the contribution process and guideline for coll
 <li><p>This does not work in pages that are not included in the <code class="docutils literal notranslate"><span class="pre">TOC.yml</span></code>-file</p></li>
 </ul>
 </li>
-<li><p>``width<code class="docutils literal notranslate"><span class="pre">specifies</span> <span class="pre">the</span> <span class="pre">pixel</span> <span class="pre">width.</span> <span class="pre">The</span> <span class="pre">maximum</span> <span class="pre">amount</span> <span class="pre">of</span> <span class="pre">pixels</span> <span class="pre">for</span> <span class="pre">width</span> <span class="pre">is</span> <span class="pre">750</span> <span class="pre">px.</span> <span class="pre">Alternatively,</span> <span class="pre">you</span> <span class="pre">can</span> <span class="pre">use</span></code>height`. Be careful to set high values as this will distort the image once it reaches the 750 px width cap.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">width</span></code> specifies the pixel width. The maximum amount of pixels for width is 750 px. Alternatively, you can use <code class="docutils literal notranslate"><span class="pre">height</span></code>. Be careful to set high values as this will distort the image once it reaches the 750 px width cap.</p></li>
 <li><p>align specifies where the image should be rendered on the markdown page. E.g., <code class="docutils literal notranslate"><span class="pre">align:</span> <span class="pre">left</span></code> can be used to align the image to the left part of the page and leave space for text on the right.</p></li>
 <li><p>The caption should describe what is seen on the figure in the context of the section. The image sources must be specified as precisely as possible.</p></li>
 <li><p>It is possible to embed icons into the text by using <code class="docutils literal notranslate"><span class="pre">![](/fig/FILENAME)</span></code>. Make sure the icon height does not exceed 30 pixels.</p></li>
@@ -823,15 +823,13 @@ This page <!--Document-->outline the contribution process and guideline for coll
 </div>
 <ul>
 <li><p><strong>Embedding Videos:</strong> Videos need to be embedded using HTML-code:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>&lt;video width=&quot;100%&quot; controls src=&quot;https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_change_project_CRS.mp4&quot;&gt;&lt;/video&gt;
 </pre></div>
 </div>
-</li>
+<ul class="simple">
+<li><p>copy the code and enter the name of the video file you want to embed.</p></li>
 </ul>
-<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_change_project_CRS.mp4"></video>
-```
-- copy the code and enter the name of the video file you want to embed.</p>
-<ul>
+</li>
 <li><p><strong>Text formatting standards:</strong></p>
 <ul>
 <li><p>When describing a process, use numbers. For example:</p>

@@ -14,23 +14,27 @@ SMT Traffic light
 ```
 
 ## Characteristics of the exercise 
-::::{grid} 2
-:::{grid-item-card}
 
-#### Aim of this exercise:
+:::{card}
+__Aim of this exercise:__
+^^^
 - Get familiar with the OSM and Satellite-image base maps and the Quality reports.
 - Get a feeling about how to assess the suitability of a basemaps and familiarise yourself with possible problems.
+:::
 
-#### Type of trainings exercise:
+::::{grid} 2
+:::{grid-item-card}
+__Type of trainings exercise:__
+^^^
 This exercise can be used in online and in presence, and is focused on group discussions.
 :::
 
 :::{grid-item-card}
-
-#### Focus group (GIS-Knowlege Level)
+__Focus group (GIS-Knowlege Level):__
+^^^
 Planners/Facilitators  (Beginners-level: no knowledge required about QGIS)
 
-#### Phase of participatory/community mapping 
+__Phase of participatory/community mapping__ 
 preparing participatory mapping
 
 :::
@@ -38,14 +42,15 @@ preparing participatory mapping
 
 ::::{grid} 2
 :::{grid-item-card}
-
-#### Estimated time demand for the exercise.
+__Estimated time demand for the exercise:__
+^^^
 In general: about 1 h to 1,5 h (depending on number of groups) 
 
 :::
 
 :::{grid-item-card}
-#### Available data
+__Available data__
+^^^
 
 - [Introductory slides on the Sketch Map Tool](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/Introduction_Sketch_Map_Tool_21_03.pptx)
 
@@ -66,7 +71,7 @@ In general: about 1 h to 1,5 h (depending on number of groups)
 - Online access and devices (PC) to be able to use the Sketch Map Tool and create maps online.
 - For each group one individual set of the Sketch Maps (OSM + satellite) digitally or as a print and reports of one area OSM + satellite-map and the fitting report.
 - Take a look and make yourself familiar on the provided material for the exercise and the Sketch Map Tool in general. There are 5 case study maps available which contain each two sketch maps (one based on OSM, one on satellite imagery) and the respective Quality Report
-- Prepare a board (it can be a white board/flipchart/or digital e.g. mirro-board) where the participants can add their findings.
+- Prepare a board (it can be a white board/flipchart/or digital e.g. Miro-board) where the participants can add their findings.
 - Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction
 
 
@@ -96,11 +101,11 @@ __Wrap up:__
 | Data source | [World Imagery ESRI](https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9#!) |  [OpenStreetMap Community](https://www.openstreetmap.org/#map=6/51.330/10.453)  | 
 | Example map | ![](/fig/SMT_Satelite_Heidelberg_empty.jpg) | ![](/fig/SMT_Heidelberg_empty.jpg) | 
 | Currentness | The satellite imagery is typically within 3-5 years of currency. | Current OSM-data is used in the base map. | 
-| Biggest benefit | Impression of the landscape and topography | Clear outlines and at times labels especially of important infrastructure e.g. hospitals, possibilty to improve the map by contributing to OSM.| 
+| Biggest benefit | Impression of the landscape and topography | Clear outlines and at times labels especially of important infrastructure e.g. hospitals, possibility to improve the map by contributing to OSM.| 
 
 ### What does georeferenced mean?
 
-| non-georeferenced image | georeferenced image – GeoTIFF |
+| Non-Georeferenced image | Georeferenced image – GeoTIFF |
 | :-------------------- | :----------------- | 
 | This is just an image, even if you load it into QGIS and give it a coordination system it can´t be located and the image is shown somewhere in the Atlantic. | The file contains information about its coordinate system and its location, so you can combine it with other geodata e.g. with GPS data.| 
 | ![](/fig/SMT_Map_Not_georefferenced.png) | ![](/fig/SMT_Geofrefference_map.png) | 
@@ -121,9 +126,9 @@ The Map Quality Check assists in evaluating the suitability of the area of inter
 
 ## Step-by step introduction for participants 
 
-Download [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_2.pdf) a printabel factsheet to guide you through this exercise.
+Download [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_2.pdf) a printable factsheet to guide you through this exercise.
 
-If you expieriences any problems during your use of the [Sketch Map Tool](https://sketch-map-tool.heigit.org/) please take a look at the [Help page](https://sketch-map-tool.heigit.org/help).
+If you experiences any problems during your use of the [Sketch Map Tool](https://sketch-map-tool.heigit.org/) please take a look at the [Help page](https://sketch-map-tool.heigit.org/help).
 
 
 ### 1.	Create the maps and reports
@@ -133,7 +138,7 @@ If you expieriences any problems during your use of the [Sketch Map Tool](https:
 - Zoom in and select your map area: Try different zoom levels and change the orientation. 
 - Create several maps of the same area with different orientation, zoom-level or basemaps. 
 
-| Sketch Map with a satelite base map| Sketch Map with a OSM base map | Map Quality Check |
+| Sketch Map with a satellite base map| Sketch Map with a OSM base map | Map Quality Check |
 | :-------------------- | :----------------- | :------------------ |
 | ![](/fig/SMT_Satelite_Heidelberg_empty.jpg) | ![](/fig/SMT_Heidelberg_empty.jpg) | ![](/fig/SMT_Heidelberg_report_1.jpg)|
 
@@ -145,7 +150,7 @@ To shorten the time, you can work with [prepared cases](https://nexus.heigit.org
 Add your insights to a presentation or share it on a (digital) board:
 
 ```{Note}
-The provided case studies are fictious example locations selected for training purposes without further knowledge about the communities in the displayed areas. In this exercise we focus on the comparison of OSM and satellite imagery base maps, regardless of the exact location of the map section on the world map.
+The provided case studies are fictitious example locations selected for training purposes without further knowledge about the communities in the displayed areas. In this exercise we focus on the comparison of OSM and satellite imagery base maps, regardless of the exact location of the map section on the world map.
 ```
 
 

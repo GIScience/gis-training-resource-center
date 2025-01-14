@@ -5,22 +5,28 @@ Explore the whole workflow of mapping with the Sketch Map Tool, from first ideas
 
 ## Characteristics of the exercise 
 
+:::{card}
+__Aim of this exercise:__
+^^^
+Get familiar with the Sketch Map Tool and its whole workflow from map creation to the results.
+:::
+
 ::::{grid} 2
 :::{grid-item-card}
-#### Aim of this exercise:
-Get familiar with the Sketch Map Tool and its whole workflow from map creation to the results.
-
-#### Type of trainings exercise:
+__Type of trainings exercise:__
+^^^
 This exercise can be used in online and presence training and is focused on an hands-on experience with the Sketch Map Tool.
 :::
 
 :::{grid-item-card}
+__Focus group (GIS-Knowlege Level)__
+^^^
 
-#### Focus group (GIS-Knowlege Level)
 - planners/facilitators, as well as practitioners involved in the preparation of the field campaign or collecting the data 
 - GIS Beginners-level: no specific knowledge about QGIS/uMAP required
 
-#### Phase of participatory /community mapping 
+__Phase of participatory / community mapping__ 
+
 preparing participatory mapping / facilitating participatory mapping/ analysing participatory mapping
 
 :::
@@ -28,8 +34,8 @@ preparing participatory mapping / facilitating participatory mapping/ analysing 
 
 ::::{grid} 2
 :::{grid-item-card}
+__Estimated time demand for the exercise:__
 
-#### Estimated time demand for the exercise.
 - Between 2 and 2,5 hours (depending on number of groups).
 
 :::
@@ -105,7 +111,7 @@ SKetch Map Tool workflow
 
 - The first step is the creation of the paper-based maps. Participants can choose between basemaps containing [OpenStreetMap (OSM)](www.openstreetmap.org) data or basemaps containing satellite images. In addition, the tool can evaluate how well-suited an area of the OpenStreetMap (OSM) basemap is for participatory mapping. This evaluation is based on a quality analysis of the OpenStreetMap (OSM) data using the [HeiGIT ohsome quality analyst](https://heigit.org/de/big-spatial-data-analytics/ohsome-3/ohsome-quality-analyst-oqt/). 
 - Usually, the data is collected on site and offline through participatory mapping. For this, you only need participants, printed Sketch Maps and pens to draw markings on the Sketch Maps.
-- After mapping, the Sketch Map Tool supports the digitisation of the Sketch Maps. Upon uploading the pictures or scans of the marked Sketch Maps, the Sketch Map Tool initiates an automatic georefferencing and colour-detection process. The tool uses a combination of computer vision algorithms and novel AI models to extract Sketch Maps from photos and detect markings on them. The results can be downloaded in various geodata formats.  The results can then be used for further analysis in Geographic Information System software (such as QGIS).
+- After mapping, the Sketch Map Tool supports the digitisation of the Sketch Maps. Upon uploading the pictures or scans of the marked Sketch Maps, the Sketch Map Tool initiates an automatic georeferencing and colour-detection process. The tool uses a combination of computer vision algorithms and novel AI models to extract Sketch Maps from photos and detect markings on them. The results can be downloaded in various geodata formats.  The results can then be used for further analysis in Geographic Information System software (such as QGIS).
 
 
 ### What does 'georeferenced' mean?
@@ -115,6 +121,7 @@ SKetch Map Tool workflow
 | :-------------------- | :----------------- | 
 | Just an image, even if you load it in QGis and give it a coordination system it can´t be located and the image is shown somewhere in the Atlantic. | The file contains information about its coordinate system and its location, so you can combine it other geodata e.g. with GPS data.| 
 | ![](/fig/SMT_Map_Not_georefferenced.png) | ![](/fig/SMT_Geofrefference_map.png) | 
+
 
 ### Background Information on UMAP and QGIS in comparison
 
@@ -129,7 +136,7 @@ Users can customize the appearance of the map and share it with others. It's par
 | Purpose | Comprehensive GIS software for spatial data analysis | Interactive mapping tool for creating custom maps |
 | Data Import | Supports various data formats (shapefiles, geodatabases, raster data, etc.) | Vector data only, user input via map canvas, some geodata formats (geojson, .gpx, .kml, .osm) |
 | Data Visualisation and Analysis |Offers extensive visualisation and analysis capabilities; Provides a wide range of geospatial analysis tools  | Focuses on the creation of interactive maps with custom elements; No analysis tools |
-| Output | Printable map with all necesary map elements | URL to share map online |
+| Output | Printable map with all necessary map elements | URL to share map online |
 
 
 ```{Hint}
@@ -143,7 +150,7 @@ If you experience any problems during your use of the [Sketch Map Tool](https://
 ### 1.	Start discussion
 Prepare and discuss in your group.
 - Take a look at information about your case-study. The images included might give you an idea of how the community might look like.
-- What would do you want to map? Which data do you want to collect? You can decide if you want to map hazards (e.g. the flood extent), vulnerablities (e.g. poor infrastructure) or capacities.
+- What would do you want to map? Which data do you want to collect? You can decide if you want to map hazards (e.g. the flood extent), vulnerabilities (e.g. poor infrastructure) or capacities.
 - Scroll through the help-page of the Sketch Map Tool
 
 ```{Tip}
@@ -156,7 +163,7 @@ The Geojson output of the Sketch Map Tool cannot be opened and inspected with co
 - Create a map in an A4-size (in future cases, you can choose other Sketch Map sizes).
 
 ```{Tip}
-To shorten the time, you can work with prepared maps (case-maps). You can even skip the marking and work with images of already marked Sketch Maps to explore only the digitalising of the marked maps.
+To shorten the time, you can work with prepared maps (case-maps). You can even skip the marking and work with images of already marked Sketch Maps to explore only the digitising of the marked maps.
 ```
 
 ### 3.	Mapping
@@ -171,7 +178,7 @@ Print your maps and mark with real pens to experience the real use of the Sketch
 
 ### 4.	Digitise
 
-- Take a photo of your map. Please take a look at our [help page](https://sketch-map-tool.heigit.org/help) for tips on how to take the picutre.
+- Take a photo of your map. Please take a look at our [help page](https://sketch-map-tool.heigit.org/help) for tips on how to take the picture.
 - Upload the photo or scan to the [Sketch Map Tool](https://sketch-map-tool.heigit.org/).
 - Download the results to the Sketch Map Tool.
 
@@ -180,7 +187,7 @@ Print your maps and mark with real pens to experience the real use of the Sketch
 - You can choose to use either QGIS (__Option A__) or [uMap](https://umap.openstreetmap.fr/en/) (__Option B__) for the next part of the exercise.
 
 ```{Tip}
-If you like to learn more about the visualisation and one possible analysis of the Sketch Maps explore exercise [4](https://giscience.github.io/gis-training-resource-center/content/Mobile_Data_collection/en_SMT_ex4_.html) and [5](https://giscience.github.io/gis-training-resource-center/content/Mobile_Data_collection/en_SMT_ex5_.html).
+If you like to learn more about the [visualisation](/content/Module_4/en_module_4_overview.md) and one possible analysis of the Sketch Maps explore exercise [4](https://giscience.github.io/gis-training-resource-center/content/Mobile_Data_collection/en_SMT_ex4_.html) and [5](https://giscience.github.io/gis-training-resource-center/content/Mobile_Data_collection/en_SMT_ex5_.html).
 ```
 
 :::{dropdown} Option A: Open your results in QGIS

@@ -2,15 +2,19 @@
 
 ## Characteristics of the exercise
 
-::::{grid} 2
-:::{grid-item-card}
 
-#### Aim of this exercise:
+:::{card}
+__Aim of this exercise:__
+^^^
 Learn how you can visualize your Sketch Map Tool Outputs in either [QGIS](/content/Wiki/en_qgis_installation_wiki.md) or [uMAP](https://umap.openstreetmap.fr/en/).
 
-#### Type of trainings exercise:
-This exercise can be used in online and presence training and is focused on an hands-on experience with the basic of QGIS or UMAP.
+:::
 
+::::{grid} 2
+:::{grid-item-card}
+__Type of trainings exercise:__
+^^^
+This exercise can be used in online and presence training and is focused on an hands-on experience with the basic of QGIS or UMAP.
 
 :::
 
@@ -75,7 +79,7 @@ Decide together with the responsible working group which GIS system is preferred
 
 ### Conduct the training:  
 __Introduction:__ 
-- Introduce the idea, the aim and the general workflow of the Skech Map Tool beforehand 
+- Introduce the idea, the aim and the general workflow of the Sketch Map Tool beforehand 
 - Provide access to the needed material 
 - check-in if there are questions or problems.
 
@@ -129,7 +133,7 @@ Map the critical infrastructure and historical flood extent using Sketch Maps
 #### 1. Data Collection
 
 Please download the prepared maps [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_4.zip).
-Unzip the .zip folder in order and vaigate to `data/Input`.
+Unzip the .zip folder in order and navigate to `data/Input`.
 
 Optional: You find the empty map in the data input folder: `\Sketch_Map_Tool_Exercise_4\data\input`. Feel free to draw some additional flood maps by printing the template out and drawing on it or by using a simple graphics editor.
 
@@ -142,7 +146,7 @@ The sketch maps are now being processed and georeferenced with the annotations e
 
 #### 3. Start your QGIS Project
 
-Open QGIS and navigate to `Project` -> `New` and click on `Save`. Naviagte to where you want to save your project, give it a name and clikc `Save` again. When working in QGIS always remember to save your project every now and then.
+Open QGIS and navigate to `Project` -> `New` and click on `Save`. Navigate to where you want to save your project, give it a name and click `Save` again. When working in QGIS always remember to save your project every now and then.
 
 Now load your vector file ("Schuld_Ahr-tal_sketch-map_Ex4.geojson") and geotiff file ("Schuld_Ahr-tal_sketch-map_Ex4.geotiff") by dragging and dropping them into the layer panel.
 
@@ -208,7 +212,7 @@ Now load your vector file ("Schuld_Ahr-tal_sketch-map_Ex4.geojson") and geotiff 
 
 __1. Digitization: Add a marking manually__
 
-So what can we do if a marking has not been detected? We can add missing markings manually by tracking the drawing on the geotiff file. This process is also called [digitisation](/content/Modul_3/en_qgis_digitalisation.md). 
+So what can we do if a marking has not been detected? We can add missing markings manually by tracking the drawing on the geotiff file. This process is also called [digitisation](/content/Module_3/en_qgis_digitalisation.md). 
 
 Right-click on your vector file and click on `Toggle Editing`. The `Digitizing Toolbox` in your menu bar on top of your QGIS will be activated:
 
@@ -218,7 +222,7 @@ width: 700px
 name: digitizing toolbox
 align: center
 ---
-Digitzing Toolbox
+Digitsing Toolbox in QGIS 3.36
 ```
 
 Click on `Add Feature: Capture Polygon`![](/fig/mActionCapturePolygon.png). You will note that your mouse market now changed its symbol into a target. This means you can now start tracing the missing polygon my left-clicking. You finish your polygon by a right-click and you will be asked to enter the descriptions. Enter the information and click ok.
@@ -305,7 +309,7 @@ align: center
 Adjusting the symbology with the [symbology tab](/content/Modul_4/en_qgis_map_design_I.md#styling-panel)
 ```
 
-In the `Symbol Selector`, you can also click on `Simple line` in the upper window and change the `Symbol Layer Type`. In this example, we would like to symbolize the critical Infrastructure with red outlines, so we choose "Outline: Simple Line". Just below we can adjust the color, stroke width, stroke line type, etc. You can find more information about the visualization of vector data [here](/content/Wiki/en_qgis_visualisation_wiki.md#visualisation-of-vector-data).
+In the `Symbol Selector`, you can also click on `Simple line` in the upper window and change the `Symbol Layer Type`. In this example, we would like to symbolize the critical Infrastructure with red outlines, so we choose "Outline: Simple Line". Just below we can adjust the color, stroke width, stroke line type, etc. You can find more information about the visualization of vector data [here](/content/Wiki/en_qgis_visualisation_wiki.md).
 
 
 ```{figure} /fig/en_SMT_ex4_dig_Symbology.PNG
@@ -357,20 +361,20 @@ Example of a finished map using the Sketch Map Tool
 
 
 
-You can find Videos along with all the necessary information about making printable maps and the print layout composer in the [Print Layout Chapter](/content/Modul_4/en_qgis_map_design_2.md#understanding-the-print-layout-composer), the [Symbology Chapter](/content/Modul_4/en_qgis_map_design_I.md), and in the [Map Making Wiki](/content/Wiki/en_qgis_map_making_wiki.md)
+You can find Videos along with all the necessary information about making printable maps and the print layout composer in the [Print Layout Chapter](/content/Module_4/en_qgis_map_design_2.md#understanding-the-print-layout-composer), the [Symbology Chapter](/content/Module_4/en_qgis_map_design_I.md), and in the [Map Making Wiki](/content/Wiki/en_qgis_map_making_wiki.md)
  
 ::::
 
 
 
-## Exercise B: Basic visualization of Sketch Map Tool outputs in UMAP
+## Exercise B: Basic visualization of Sketch Map Tool outputs in uMap
 
-::::{dropdown} Exercise B: Basic visualization of Sketch Map Tool outputs in UMAP
+::::{dropdown} Exercise B: Basic visualization of Sketch Map Tool outputs in uMap
 :open:
 
 ### 1. Background Information on UMAP
 
-UMAP is an online platform that allows users to create custom maps with OpenStreetMap (OSM) as basemap layer. No installation nor registration is necessary. This enables users to quickly gain an intuitive overview of their data.
+uMap is an online platform that allows users to create custom maps with OpenStreetMap (OSM) as basemap layer. No installation nor registration is necessary. This enables users to quickly gain an intuitive overview of their data.
 Users can customize the appearance of the map and share it with others. It's particularly useful for collaborative mapping projects, quick visualization of geographic data, and creating custom maps tailored to specific needs.
 
 | Feature| QGIS | UMAP |
@@ -390,12 +394,12 @@ The Geojson output of the Sketch Map Tool cannot be opened and inspected with co
 #### 2. Data Collection
 
 Please download the prepared maps [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_4.zip).
-Unzip the .zip folder in order to be able to acess the geotiff output.
+Unzip the .zip folder in order to be able to access the geotiff output.
 
 Optional: You find the empty map in the data input folder: `\Sketch_Map_Tool_Exercise_4\data\input`. Feel free to draw some additional flood maps by printing the template out and drawing on it or by using a simple graphics editor.
 
 
-#### 3. Georeferencing and autoextraction with the Sketch Map tool
+#### 3. Georeferencing and auto-extraction with the Sketch Map tool
 
 Upload the sketch maps back to the tool’s website. Head to [sketch-map-tool.heigit.org](https://sketch-map-tool.heigit.org/) and choose 'Digitize your Sketch maps' on the right. Upload all your sketches in .png or .jpg format. You can mark your sketches and simply drag and drop them into the window.
 
@@ -418,7 +422,7 @@ align: center
 Editing the map properties
 ```
 
-3. You can load your data into the map frame by clicking on the arrow button. The `Import data` window will open on the right hand side. CLick on `Select file` and navigate to your vector output from the SKetch Map Tool ("Schuld_Ahr-tal_sketch-map_Ex4.geojson") and click on `Open`. UMAP will automatically detect that your vector is a geojason format. Click on `Import` to load your data to your map canvas.
+3. You can load your data into the map frame by clicking on the arrow button. The `Import data` window will open on the right hand side. CLick on `Select file` and navigate to your vector output from the SKetch Map Tool ("Schuld_Ahr-tal_sketch-map_Ex4.geojson") and click on `Open`. uMap will automatically detect that your vector is a geojason format. Click on `Import` to load your data to your map canvas.
 
 ```{figure} /fig/en_SMT_ex4_UMAP_Data_Loaded.PNG
 ---
@@ -426,7 +430,7 @@ height: 400px
 name: UMAP Data Loaded
 align: center
 ---
-UMAP interface with the Sketch Map vectors
+uMap interface with the Sketch Map vectors
 ```
 
 
@@ -463,10 +467,10 @@ height: 150px
 name: Umap Manage layer Interface
 align: center
 ---
-Manage Layers Interface in UMAP
+Manage Layers Interface in uMap
 ```
 
-You can click on the table button ![](/fig/en_SMT_ex4_UMAP_Table.PNG) in order to view or edit properties in the attribute table of your layer. The table has one entry (row) for each detected marking. In our example 6 markings where detecetd. The column "color" describes the color which has been detected for each marking and the column "name" contains the name of your uploaded Sketch Map.
+You can click on the table button ![](/fig/en_SMT_ex4_UMAP_Table.PNG) in order to view or edit properties in the attribute table of your layer. The table has one entry (row) for each detected marking. In our example 6 markings where detected. The column "color" describes the color which has been detected for each marking and the column "name" contains the name of your uploaded Sketch Map.
 
 ```{Note}
 Sketch Map Vector Output always have this same attribute table structure.
@@ -478,12 +482,12 @@ Sketch Map Vector Output always have this same attribute table structure.
 width: 1000px
 name: SMT Ex4 Attribute Table
 ---
-Attribute Table in UMAP
+Attribute Table in uMap
 ```
 
 __2. Customize your visualization__
 
-Now we want to display the criticial infrastructure in red and the past flood extents in blue. For this we first have to create a group for each:
+Now we want to display the critical infrastructure in red and the past flood extents in blue. For this we first have to create a group for each:
 
 - Click on `Manage Layers`![](/fig/en_SMT_ex4_UMAP_layers.PNG) `Add Layers`
 - We name the first new layer "Critical Infrastructure" and choose as `Type of layer` -> `Clustered` 
@@ -571,7 +575,7 @@ height: 400px
 name: UMAP Share
 align: center
 ---
-Share and download interface in UMAP
+Share and download interface in uMap
 ```
 
 On the top beneath `Link to view the map`, you receive a URL that you can share with other people so they can view the map you have created.
