@@ -17,7 +17,6 @@ The One-Stop-Shop for teaching Geoinformation System (GIS) skills for the work i
 :::
 
 
-
 ::::{grid} 2
 :::{card}
 :link: https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_TOT_intro.html
@@ -34,9 +33,6 @@ __[Start Learning](https://giscience.github.io/gis-training-resource-center/cont
 :::
 
 ::::
-___
-
-
 
 ::::{grid} 3
 :::{card} Wiki 📖
@@ -52,8 +48,6 @@ In the exercises, essential concepts and practical techniques are presented, pro
 :::
 
 ::::
-___
-
 
 ## What's Inside
 
@@ -143,7 +137,7 @@ You have questions, feedback or comments on the platform and the content. We are
 
 ## Contributing
 
-We warmly welcome everyone to contribute and collaborate in advancing the IFRC GIS Training Platform, fostering shared knowledge and growth. Before contributing, please read through the [Contribution Plan](https://giscience.github.io/gis-training-resource-center/content/contribution_plan.html)
+We warmly welcome everyone to contribute and collaborate in advancing the IFRC GIS Training Platform, fostering shared knowledge and growth. Before contributing, please read through the [Contribution Plan](https://giscience.github.io/gis-training-resource-center/content/contribution_plan.html).
 
 ## Join the Community
 
