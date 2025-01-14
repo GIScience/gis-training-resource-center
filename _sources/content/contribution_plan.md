@@ -5,10 +5,6 @@
 Thank you for your interest in contributing to the IFRC GIS Training Resource Center.
 This page <!--Document-->outline the contribution process and guideline for collaborating with the GIS Training Resource Center. It provides details for contributions and related best practices. Whether you're looking to add new content, contribute to existing material, or collaborate on enhancing the platform overall as a partner, this guide will help to understand the necessary steps.
 
-:::{admonition} TEST
-:class: note
-:::
-
 ## Collaborations
 
 ### Content
@@ -33,7 +29,7 @@ In addition to content contributions, this consortium welcomes new partners from
 
 ### Your contribution
 
-- __Markdown MyST and Jupyter Book:__ In addition to CommonMark Markdown, Jupyter Book also supports a more fully-featured version of Markdown called __MyST Markdown__. This is a superset of CommonMark that includes syntactic pieces that are useful for publishing computational narratives. For more information about MyST Markdown, see [MyST Markdown overview].(https://jupyterbook.org/en/stable/content/myst.html).
+- __Markdown MyST and Jupyter Book:__ In addition to CommonMark Markdown, Jupyter Book also supports a more fully-featured version of Markdown called __MyST Markdown__. This is a superset of CommonMark that includes syntactic pieces that are useful for publishing computational narratives. For more information about MyST Markdown, see [MyST Markdown overview](https://jupyterbook.org/en/stable/content/myst.html).
 - __Changes on the Dev-Branch:__
     - All changes must be pushed to the `dev` branch. These changes will be reviewed by HeiGIT and/or RC before a pull request is merged.
     - Currently, only HeiGIT or RC are authorized to create pull requests and contributors can request reviews from HeiGIT and/or RC via GitHub.
@@ -95,7 +91,7 @@ Follow these guidelines for naming files and structuring directories:
     - In the case of a screenshot of QGIS or another program, additional rules apply.  First, the abbreviation of the used language has to be included (e.g. en). Second, the QGIS version (e.g. 3.28).
         - Screenshots name example: en_3.29_clip_tool.png
     - In instances of pictures of the OSM or satellite imagery, one has to include the year and place.
-        - Picture of maps or satellite imagrey example: OSM_Heidelberg_2023.png
+        - Picture of maps or satellite imagery example: OSM_Heidelberg_2023.png
 
 Follow these guidelines when creating and formatting content: 
 
@@ -144,27 +140,27 @@ Follow these guidelines when creating and formatting content:
     :::
     ```
 - __Cards:__ Use the card directives to highlight content in a "card": 
-```
-:::{card}
-HEADER
-^^^
-CONTENT
-:::
-```
+    ```
+    :::{card}
+    HEADER
+    ^^^
+    CONTENT
+    :::
+    ```
 - __Grids:__ To create several columns to display content or images side by side, you can create grids:
-```
-::::{grid} 2
+    ```
+    ::::{grid} 2
 
-:::{card}
+    :::{card}
 
-:::
+    :::
 
-:::{card}
+    :::{card}
 
-:::
+    :::
 
-::::
-```
+    ::::
+    ```
 
 - __Margins:__ Sometimes, it can be useful to put hints or additional information into the margin to the right. This can be achieved with the following directive:
     ```
