@@ -201,7 +201,7 @@ CAPTION
 
 
 - __Embedding Videos:__ Videos need to be embedded using HTML-code: 
-    ```
+    ```md
     <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_change_project_CRS.mp4"></video>
     ```
     - copy the code and enter the name of the video file you want to embed.
