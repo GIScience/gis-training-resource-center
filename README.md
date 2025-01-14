@@ -33,7 +33,7 @@ We warmly welcome everyone to contribute and collaborate in advancing the IFRC G
 Before contributing:
 
 * Contact us on `gis-training-platform@heigit.org`
-* Make sure to read through the [Contribution Plan](https://giscience.github.io/gis-training-resource-center/content/contribution_plan.md)
+* Make sure to read through the [Contribution Plan](https://giscience.github.io/gis-training-resource-center/content/contribution_plan.html)
 
 ## CI / CD
 * to be considered in the future
