@@ -155,15 +155,19 @@ landuse, color categories (such as green = forest; yellow = agricultural landuse
 
 ::::{grid} 2
 
+
+:::{grid-item-card}
 ```{figure} /fig/raster_data_example_corine_LC.png
 ---
 name: corine_landcover_example
-width: 300 px
+width: 350 px
 align: left
 ---
 The Copernicus CORINE Landcover Dataset (Source: [EEA/Copernicus](https://land.copernicus.eu/en/map-viewer?product=130299ac96e54c30a12edd575eff80f7))
 ```
+:::
 
+:::{grid-item-card}
 ```{figure} /fig/NASADEM_Alps_example.png
 ---
 name: NASA_DEM_example
@@ -171,7 +175,7 @@ width 300 px
 ---
 The NASA DEM showing the alps (Source: [NASA/USGS/JPL-CALTECH](https://lpdaac.usgs.gov/products/nasadem_hgtv001/))
 ```
-
+:::
 ::::
 
 Raster values usually have only one value per cell, however, it can also have multiple (color) bands. Satellite 
@@ -229,8 +233,7 @@ Raster data can have the following data formats:
 
 ```{admonition} The advantage of geodatabases
 
-Databases such as Geodatabase (`.gdb`) or 
-
+Databases such as Geodatabase (`.gdb`) or Geopackage (`gkpg`) can also hold raster layers
 
 ```
 

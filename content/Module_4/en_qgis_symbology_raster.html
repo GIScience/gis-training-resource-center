@@ -329,7 +329,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_risk_assessment_plugin.html">Risk Assessment QGIS Plugin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_historical_impact_assessment_sudan.html">Historical Impact Assessment (HIA) for Flood in Sudan</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_GIS_AA_exercises.html">Exercises- GIS in Anticipatory Action</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_GIS_AA_exercises.html">Exercises - GIS in Anticipatory Action</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Mobile Data Collection</span></p>
 <ul class="nav bd-sidenav">
@@ -552,10 +552,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assigning-a-colour-gradient-to-raster-data">Assigning a colour gradient to raster data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inverting-the-colour-ramp">Inverting the colour ramp</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-better-colour-palettes">Using better colour palettes</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#styling-a-terrain-model">Styling a terrain model</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-better-colour-palettes">Using better colour palettes</a></li>
 </ul>
             </nav>
         </div>
@@ -602,10 +599,10 @@ document.write(`
 <p class="admonition-title">Note</p>
 <p>The default colour ramps available in QGIS are limited and do not fit a lot of cartography purposes. However, QGIS includes the <code class="docutils literal notranslate"><span class="pre">cpt-city</span></code> colour palette catalogue with many carefully crafted colour ramps and palettes. Amongst other, you can find colour ramps specifically created for terrain or elevation models.</p>
 </div>
-<figure class="align-right" id="cpty-city-cat-1">
-<a class="reference internal image-reference" href="../../_images/en_3.36_cpt-city_cat_1.png"><img alt="../../_images/en_3.36_cpt-city_cat_1.png" src="../../_images/en_3.36_cpt-city_cat_1.png" style="width: 300px;" /></a>
+<figure class="align-default" id="cpty-city-cat-1">
+<a class="reference internal image-reference" href="../../_images/en_3.36_cpt-city_cat_1.png"><img alt="../../_images/en_3.36_cpt-city_cat_1.png" src="../../_images/en_3.36_cpt-city_cat_1.png" style="width: 350px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 117 </span><span class="caption-text">Select the “Singleband Pseudocolor” and navigate to the “Create New Color Ramp”-button.</span><a class="headerlink" href="#cpty-city-cat-1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 117 </span><span class="caption-text">Accessing the colour catalogue.</span><a class="headerlink" href="#cpty-city-cat-1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>To access the <code class="docutils literal notranslate"><span class="pre">cpt-city</span></code> catalogue,</p>
@@ -633,21 +630,19 @@ document.write(`
 <p class="admonition-title">Tip</p>
 <p>The cpt-city colour catalogue also offers colour ramps for other applications such as precipitation, NDVI, or surface temperature.</p>
 </div>
-<section id="styling-a-terrain-model">
-<h3>Styling a terrain model<a class="headerlink" href="#styling-a-terrain-model" title="Permalink to this heading">#</a></h3>
-<p>Elevation data sets are frequently used to communicate the terrain on a map. By default, an elevation model will be displayed with a gray colour ramp. However, if you don’t need the to know the elevation at certain points, you can choose to display the <strong>hillshade</strong> of the terrain. Hillshading will simulate the shadow of the terrain as if it would be exposed to a light source. In this example, we will use the elevation raster data (.tiff) of Algeria from the Humanitarian Data Exchange platform (<a class="reference external" href="http://humdata.org">humdata.org</a>) To achieve this,</p>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-</div>
-</div>
-<ol class="arabic simple">
-<li><p>Open the <code class="docutils literal notranslate"><span class="pre">symbology</span></code> tab</p></li>
-<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Render</span> <span class="pre">type</span></code> and select <code class="docutils literal notranslate"><span class="pre">Hillshade</span></code>. You will have an option to select the direction of the light. Conventionally, the light source is positioned in the North-West, so we can keep the default settings. In some cases with rough terrain, it can be useful to make the hillshade <strong>Multidirectional</strong>.</p></li>
-<li><p>The hillshade will be very dark and cover most of the map. We need to make it lighter…</p></li>
-</ol>
-<!--Add -->
-</section>
-</section>
+<!---
+#### Styling a terrain model
+
+Elevation data sets are frequently used to communicate the terrain on a map. By default, an elevation model will be displayed with a gray colour ramp. However, if you don't need the to know the elevation at certain points, you can choose to display the __hillshade__ of the terrain. Hillshading will simulate the shadow of the terrain as if it would be exposed to a light source. In this example, we will use the elevation raster data (`.geotiff`) of [Ecuador from the MERIT DEM](https://developers.google.com/earth-engine/datasets/catalog/MERIT_DEM_v1_0_3#description). 
+
+To achieve this,
+
+1. Add the OSM Standard as a [basemap](/content/Module_2/en_qgis_basemap.md)
+2. Open the Symbology-tab of the .
+3. Click on `Render type` and select `Hillshade`. You will have an option to select the direction of the light. Conventionally, the light source is positioned in the North-West, so we can keep the default settings. In some cases with rough terrain, it can be useful to make the hillshade __Multidirectional__.
+3. The hillshade will be very dark and cover most of the map. We need to make it lighter. Set the `Blending mode` to "Overlay". 
+
+--></section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -715,10 +710,7 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assigning-a-colour-gradient-to-raster-data">Assigning a colour gradient to raster data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inverting-the-colour-ramp">Inverting the colour ramp</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-better-colour-palettes">Using better colour palettes</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#styling-a-terrain-model">Styling a terrain model</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-better-colour-palettes">Using better colour palettes</a></li>
 </ul>
   </nav></div>
 
