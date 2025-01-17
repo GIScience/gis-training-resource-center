@@ -1,4 +1,4 @@
-# Exercises- GIS in Anticipatory Action
+# Exercises - GIS in Anticipatory Action
 
 __🔙[Back to Homepage](/content/intro.md)__
 

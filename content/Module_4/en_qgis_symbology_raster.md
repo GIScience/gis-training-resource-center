@@ -40,10 +40,9 @@ The default colour ramps available in QGIS are limited and do not fit a lot of c
 ```{figure} /fig/en_3.36_cpt-city_cat_1.png
 ---
 name: cpty_city_cat_1
-width: 300 px
-align: right
+width: 350 px
 ---
-Select the "Singleband Pseudocolor" and navigate to the "Create New Color Ramp"-button.
+Accessing the colour catalogue.
 ```
 
 To access the `cpt-city` catalogue, 
@@ -57,7 +56,7 @@ To access the `cpt-city` catalogue,
     width: 200 px
     ---
     Selecting the colour ramp catalogue
-    ```
+   ```
 4. A new window will open. Here you can find a multitude of colour palettes. For example, for a digital elevation model you can select a colour ramp for topography or specifically digital elevation models. 
 
 ```{figure} /fig/en_3.36_cpt-city_cat_3.png
@@ -74,17 +73,16 @@ The cpt-city colour ramp catalogue in QGIS 3.36
 The cpt-city colour catalogue also offers colour ramps for other applications such as precipitation, NDVI, or surface temperature.
 ```
 
+<!---
 #### Styling a terrain model
 
-Elevation data sets are frequently used to communicate the terrain on a map. By default, an elevation model will be displayed with a gray colour ramp. However, if you don't need the to know the elevation at certain points, you can choose to display the __hillshade__ of the terrain. Hillshading will simulate the shadow of the terrain as if it would be exposed to a light source. In this example, we will use the elevation raster data (.tiff) of Algeria from the Humanitarian Data Exchange platform (humdata.org) To achieve this,
+Elevation data sets are frequently used to communicate the terrain on a map. By default, an elevation model will be displayed with a gray colour ramp. However, if you don't need the to know the elevation at certain points, you can choose to display the __hillshade__ of the terrain. Hillshading will simulate the shadow of the terrain as if it would be exposed to a light source. In this example, we will use the elevation raster data (`.geotiff`) of [Ecuador from the MERIT DEM](https://developers.google.com/earth-engine/datasets/catalog/MERIT_DEM_v1_0_3#description). 
 
-:::{card}
+To achieve this,
 
-:::
+1. Add the OSM Standard as a [basemap](/content/Module_2/en_qgis_basemap.md)
+2. Open the Symbology-tab of the .
+3. Click on `Render type` and select `Hillshade`. You will have an option to select the direction of the light. Conventionally, the light source is positioned in the North-West, so we can keep the default settings. In some cases with rough terrain, it can be useful to make the hillshade __Multidirectional__.
+3. The hillshade will be very dark and cover most of the map. We need to make it lighter. Set the `Blending mode` to "Overlay". 
 
-1. Open the `symbology` tab
-2. Click on `Render type` and select `Hillshade`. You will have an option to select the direction of the light. Conventionally, the light source is positioned in the North-West, so we can keep the default settings. In some cases with rough terrain, it can be useful to make the hillshade __Multidirectional__.
-3. The hillshade will be very dark and cover most of the map. We need to make it lighter...
-
-
-<!--Add -->
+-->
