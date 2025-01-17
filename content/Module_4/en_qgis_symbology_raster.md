@@ -40,10 +40,9 @@ The default colour ramps available in QGIS are limited and do not fit a lot of c
 ```{figure} /fig/en_3.36_cpt-city_cat_1.png
 ---
 name: cpty_city_cat_1
-width: 300 px
-align: right
+width: 350 px
 ---
-Select the "Singleband Pseudocolor" and navigate to the "Create New Color Ramp"-button.
+Accessing the colour catalogue.
 ```
 
 To access the `cpt-city` catalogue, 
@@ -57,7 +56,7 @@ To access the `cpt-city` catalogue,
     width: 200 px
     ---
     Selecting the colour ramp catalogue
-    ```
+   ```
 4. A new window will open. Here you can find a multitude of colour palettes. For example, for a digital elevation model you can select a colour ramp for topography or specifically digital elevation models. 
 
 ```{figure} /fig/en_3.36_cpt-city_cat_3.png
