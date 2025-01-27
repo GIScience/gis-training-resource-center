@@ -627,7 +627,7 @@ numbers, health indicators, historical events, etc.</p>
 <h3>Vector data<a class="headerlink" href="#vector-data" title="Permalink to this heading">#</a></h3>
 <p>Vector data are digital features and they can store geographic/spatial information, as well as other data attributes. As such, they are ideal to visualise information on a map. Each feature can be displayed on a maps using one out of three geometries: <strong>points, lines, or polygons</strong>. A layer can only contain features with same type of geometry.</p>
 <figure class="align-center" id="vector-data-overview">
-<a class="reference internal image-reference" href="../../_images/en_vector_data_overview.drawio.png"><img alt="../../_images/en_vector_data_overview.drawio.png" src="../../_images/en_vector_data_overview.drawio.png" style="width: 650px;" /></a>
+<a class="reference internal image-reference" href="../../_images/en_vector_data_overview.png"><img alt="../../_images/en_vector_data_overview.png" src="../../_images/en_vector_data_overview.png" style="width: 650px;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 16 </span><span class="caption-text">Vector data overview. Source: HeiGIT</span><a class="headerlink" href="#vector-data-overview" title="Permalink to this image">#</a></p>
 </figcaption>
@@ -727,7 +727,7 @@ The following table gives a short description of commonly used vector file forma
 <p>Another type of geospatial data is raster data. Raster data consists of cells that are organized into a grid with
 rows and columns, thus forming a raster. Each cell, or pixel, contains a value which holds information (for
 example, temperature, or population density). Since raster data consists of pixels, aerial photographs or satellite
-imagery can also be used as raster data, if they have geographical coordinates (see <a class="reference internal" href="../Module_3/en_qgis_georeferencing.html"><span class="doc std std-doc">georeferencing</span></a>).</p>
+imagery can also be used as raster data, if they have geographical coordinates (see <a class="reference internal" href="../Module_3/en_qgis_georeferencing.html"><span class="doc std std-doc">module 3: Georeferencing</span></a>).</p>
 <p>Typical uses for raster data are:</p>
 <ul class="simple">
 <li><p>elevation data (often referred to as a digital elevation model or DEM)</p></li>
@@ -755,23 +755,27 @@ landuse, color categories (such as green = forest; yellow = agricultural landuse
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
+<figure class="align-default" id="nasa-dem-example">
+<a class="reference internal image-reference" href="../../_images/NASADEM_Alps_example.png"><img alt="../../_images/NASADEM_Alps_example.png" src="../../_images/NASADEM_Alps_example.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 22 </span><span class="caption-text">The NASA DEM showing the alps (Source: <a class="reference external" href="https://lpdaac.usgs.gov/products/nasadem_hgtv001/">NASA/USGS/JPL-CALTECH</a>)</span><a class="headerlink" href="#nasa-dem-example" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
 </div>
 </div>
 </div>
 </div>
 <p>Raster values usually have only one value per cell, however, it can also have multiple (color) bands. Satellite
-imagery usually offers several bands to represent data collected from different parts of the light spectrum, which we can use to analyze different phenomena,<br />
-such as the humidity of plants. Multiple bands means that you have more than one value per cell.</p>
-<p>The main spatial characteristics are the extent - the area the grid represents in the real world (10km², 100km²) - and the raster resolution - the size of each pixel. In <a class="reference internal" href="#the-main-geographical-data-formats"><span class="std std-numref">Fig. 22</span></a>, you can see two raster datasets with different resolutions.</p>
+imagery usually offers several bands to represent data collected from different parts of the light spectrum, which we can use to analyze different phenomena, such as the humidity of plants. Multiple bands means that you have more than one value per cell.</p>
+<p>The main spatial characteristics are the extent - the area the grid represents in the real world (10km², 100km²) - and the raster resolution - the size of each pixel. In <a class="reference internal" href="#the-main-geographical-data-formats"><span class="std std-numref">Fig. 23</span></a>, you can see two raster datasets with different resolutions.</p>
 <figure class="align-center" id="the-main-geographical-data-formats">
 <a class="reference internal image-reference" href="../../_images/en_quality_raster.png"><img alt="../../_images/en_quality_raster.png" src="../../_images/en_quality_raster.png" style="width: 800px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 22 </span><span class="caption-text">Two raster datasets with different resolution covering the same region. Source: <a class="reference external" href="https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_3_vector_raster_data">CartONG</a></span><a class="headerlink" href="#the-main-geographical-data-formats" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 23 </span><span class="caption-text">Two raster datasets with different resolution covering the same region. Source: <a class="reference external" href="https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_3_vector_raster_data">CartONG</a></span><a class="headerlink" href="#the-main-geographical-data-formats" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>In <a class="reference internal" href="#vector"><span class="std std-numref">Fig. 23</span></a> and <a class="reference internal" href="#raster"><span class="std std-numref">Fig. 24</span></a> you can see the same location, on the left as vector data, visualising streets and urban area, and
-on the right hand as raster data (satellite image), showing the land cover.</p>
+<p>In <a class="reference internal" href="#vector"><span class="std std-numref">Fig. 24</span></a> and <a class="reference internal" href="#raster"><span class="std std-numref">Fig. 25</span></a> you can see the same location, on the left as vector data, visualising streets and urban area, and on the right hand as raster data (satellite image), showing the land cover.</p>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
@@ -781,19 +785,17 @@ Vector</div>
 <figure class="align-center" id="vector">
 <a class="reference internal image-reference" href="../../_images/en_same_location_vector.png"><img alt="../../_images/en_same_location_vector.png" src="../../_images/en_same_location_vector.png" style="width: 400px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 23 </span><span class="caption-text">Features represented with vector data. Source: British Red Cross (BRC)</span><a class="headerlink" href="#vector" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 24 </span><span class="caption-text">Features represented with vector data. Source: British Red Cross (BRC)</span><a class="headerlink" href="#vector" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 </div>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Raster</div>
 <figure class="align-center" id="raster">
 <a class="reference internal image-reference" href="../../_images/en_same_location_raster.png"><img alt="../../_images/en_same_location_raster.png" src="../../_images/en_same_location_raster.png" style="width: 400px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 24 </span><span class="caption-text">The same location represented as a raster image. Source: British Red Cross (BRC)</span><a class="headerlink" href="#raster" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 25 </span><span class="caption-text">The same location represented as a raster image. Source: British Red Cross (BRC)</span><a class="headerlink" href="#raster" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -827,7 +829,7 @@ Raster</div>
 </table>
 <div class="admonition-the-advantage-of-geodatabases admonition">
 <p class="admonition-title">The advantage of geodatabases</p>
-<p>Databases such as Geodatabase (<code class="docutils literal notranslate"><span class="pre">.gdb</span></code>) or Geopackage (<code class="docutils literal notranslate"><span class="pre">gkpg</span></code>) can also hold raster layers</p>
+<p>Databases such as Geodatabase (<code class="docutils literal notranslate"><span class="pre">.gdb</span></code>) or Geopackage (<code class="docutils literal notranslate"><span class="pre">gkpg</span></code>) can also hold raster layers.</p>
 </div>
 <hr class="docutils" />
 <!---REMOVED DUE TO DUPLICATION WITH THE DATA FORMAT TABLES
@@ -860,17 +862,17 @@ representation by using symbols and colors.</p>
 <figure class="align-center" id="layers-in-a-gis">
 <a class="reference internal image-reference" href="../../_images/en_layer.png"><img alt="../../_images/en_layer.png" src="../../_images/en_layer.png" style="width: 800px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 25 </span><span class="caption-text">Layers in a GIS. Source: <a class="reference external" href="https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_1_layers">CartONG</a></span><a class="headerlink" href="#layers-in-a-gis" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 26 </span><span class="caption-text">Layers in a GIS. Source: <a class="reference external" href="https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_1_layers">CartONG</a></span><a class="headerlink" href="#layers-in-a-gis" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="note admonition">
 <p class="admonition-title">Now it’s your turn!</p>
 <p>Practical experience is key to mastering GIS. Now is a good moment to apply what we’ve learned in the first exercise of module 2.</p>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover sd-text-justify sd-rounded-2 sd-border-1 docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover sd-text-center sd-rounded-2 sd-border-1 docutils">
 <div class="sd-card-body docutils">
 <p class="sd-card-text"><strong>Module 2 Exercise 1: Understanding Geodata</strong></p>
 </div>
-<a class="sd-stretched-link reference external" href="https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_geodata_concept_ex1.html"></a></div>
+<a class="sd-stretched-link reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept_ex1.html"></a></div>
 </div>
 </section>
 <section id="data-import">
@@ -943,7 +945,7 @@ geometries in your delimited text file.</p>
 <figure class="align-center" id="import-delimited-text">
 <a class="reference internal image-reference" href="../../_images/en_import_delimeted_text.png"><img alt="../../_images/en_import_delimeted_text.png" src="../../_images/en_import_delimeted_text.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 26 </span><span class="caption-text">Import delimited text in QGIS 3.36.</span><a class="headerlink" href="#import-delimited-text" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 27 </span><span class="caption-text">Import delimited text in QGIS 3.36.</span><a class="headerlink" href="#import-delimited-text" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple">
@@ -963,7 +965,7 @@ Excel. There you can check which delimiter is used to separate the information.<
 <figure class="align-center" id="import-delimited-text-file-format">
 <a class="reference internal image-reference" href="../../_images/en_delimited_text_fileformat.png"><img alt="../../_images/en_delimited_text_fileformat.png" src="../../_images/en_delimited_text_fileformat.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 27 </span><span class="caption-text">Import delimited text in QGIS 3.36 - file format.</span><a class="headerlink" href="#import-delimited-text-file-format" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 28 </span><span class="caption-text">Import delimited text in QGIS 3.36 - file format.</span><a class="headerlink" href="#import-delimited-text-file-format" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic" start="4">
