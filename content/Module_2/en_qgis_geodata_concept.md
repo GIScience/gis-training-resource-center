@@ -49,7 +49,7 @@ numbers, health indicators, historical events, etc.
 Vector data are digital features and they can store geographic/spatial information, as well as other data attributes. As such, they are ideal to visualise information on a map. Each feature can be displayed on a maps using one out of three geometries: __points, lines, or polygons__. A layer can only contain features with same type of geometry. 
 
 
-```{figure} /fig/en_vector_data_overview.drawio.png
+```{figure} /fig/en_vector_data_overview.png
 ---
 width: 650px
 align: center
@@ -140,7 +140,7 @@ __SHP, SHX__ and __DBF__ are the __mandatory__ files that every shapefile must c
 Another type of geospatial data is raster data. Raster data consists of cells that are organized into a grid with 
 rows and columns, thus forming a raster. Each cell, or pixel, contains a value which holds information (for 
 example, temperature, or population density). Since raster data consists of pixels, aerial photographs or satellite 
-imagery can also be used as raster data, if they have geographical coordinates (see [georeferencing](/content/Module_3/en_qgis_georeferencing.md)).
+imagery can also be used as raster data, if they have geographical coordinates (see [module 3: Georeferencing](/content/Module_3/en_qgis_georeferencing.md)).
 
 Typical uses for raster data are: 
 
@@ -171,7 +171,7 @@ The Copernicus CORINE Landcover Dataset (Source: [EEA/Copernicus](https://land.c
 ```{figure} /fig/NASADEM_Alps_example.png
 ---
 name: NASA_DEM_example
-width 300 px
+width: 300 px
 ---
 The NASA DEM showing the alps (Source: [NASA/USGS/JPL-CALTECH](https://lpdaac.usgs.gov/products/nasadem_hgtv001/))
 ```
@@ -179,8 +179,7 @@ The NASA DEM showing the alps (Source: [NASA/USGS/JPL-CALTECH](https://lpdaac.us
 ::::
 
 Raster values usually have only one value per cell, however, it can also have multiple (color) bands. Satellite 
-imagery usually offers several bands to represent data collected from different parts of the light spectrum, which we can use to analyze different phenomena,  
-such as the humidity of plants. Multiple bands means that you have more than one value per cell.
+imagery usually offers several bands to represent data collected from different parts of the light spectrum, which we can use to analyze different phenomena, such as the humidity of plants. Multiple bands means that you have more than one value per cell.
 
 The main spatial characteristics are the extent - the area the grid represents in the real world (10km², 100km²) - and the raster resolution - the size of each pixel. In {numref}`The main geographical data formats`, you can see two raster datasets with different resolutions.
 
@@ -193,8 +192,7 @@ name: The main geographical data formats
 Two raster datasets with different resolution covering the same region. Source: [CartONG](https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_3_vector_raster_data)
 ```
 
-In {numref}`Vector` and {numref}`Raster` you can see the same location, on the left as vector data, visualising streets and urban area, and 
-on the right hand as raster data (satellite image), showing the land cover.
+In {numref}`Vector` and {numref}`Raster` you can see the same location, on the left as vector data, visualising streets and urban area, and on the right hand as raster data (satellite image), showing the land cover.
 
 
 ::::{grid} 2
@@ -209,7 +207,7 @@ Features represented with vector data. Source: British Red Cross (BRC)
 ```
 :::
 
-:::{card} Raster
+:::{card} 
 ```{figure} /fig/en_same_location_raster.png
 ---
 width: 400px
@@ -233,7 +231,7 @@ Raster data can have the following data formats:
 
 ```{admonition} The advantage of geodatabases
 
-Databases such as Geodatabase (`.gdb`) or Geopackage (`gkpg`) can also hold raster layers
+Databases such as Geodatabase (`.gdb`) or Geopackage (`gkpg`) can also hold raster layers.
 
 ```
 
@@ -283,8 +281,8 @@ Layers in a GIS. Source: [CartONG](https://cartong.pages.gitlab.cartong.org/lear
 Practical experience is key to mastering GIS. Now is a good moment to apply what we've learned in the first exercise of module 2.
 
 :::{card}
-:class-card: sd-text-justify sd-rounded-2 sd-border-1
-:link: https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_geodata_concept_ex1.html
+:class-card: sd-text-center sd-rounded-2 sd-border-1
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept_ex1.html
 
 __Module 2 Exercise 1: Understanding Geodata__
 
