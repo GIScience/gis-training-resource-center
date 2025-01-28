@@ -1,6 +1,5 @@
 # Repo for the 📚 GIS Training Resource Center [TRC]
 
-:warning:
 :construction: Under Construction :construction: 
 
 
@@ -28,8 +27,13 @@ The markdown files are built to a static webpage via `jupyter-book`.
   * when you are finished with your changes, create a pull request to merge `dev` with `main`. 
 * push rendered html files to branch `gh-pages` via the command `ghp-import -n -p -f _build/html`. This will automatically delete the branch and recreate it to avoid a bloated history.
 
+## 🌐 Contributions
 
+We warmly welcome everyone to contribute and collaborate in advancing the IFRC GIS Training Platform, fostering shared knowledge and growth.
+Before contributing:
 
+* Contact us on `gis-training-platform@heigit.org`
+* Make sure to read through the [Contribution Plan](https://giscience.github.io/gis-training-resource-center/content/contribution_plan.html)
 
 ## CI / CD
 * to be considered in the future

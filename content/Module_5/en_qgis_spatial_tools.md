@@ -177,7 +177,7 @@ Looking for spatial relations between layers <br /> (Source: [QGIS Documentation
 ```{admonition} Now it's your turn!
 :class: tip
 
-Practical exercise is crucial to understand how GIS, and QGIS, works. You can follow along by download the necessary data.
+Practical exercise is crucial to understand how GIS, and QGIS, works. You can follow along by downloading the necessary data.
 
 ```
 
@@ -196,8 +196,8 @@ To do this, we need to use the tool "Join Attributes by Location":
 ::::{margin}
 
 ```{tip}
-You can find activate the processing toolbox panel by navigating to `View` > `Panels` > `Processing Toolbox`. It should appear on 
-the right side of your screen
+You can find and activate the processing toolbox panel by navigating to `View` > `Panels` > `Processing Toolbox`. It should appear on 
+the right side of your screen.
 ```
 
 ::::
