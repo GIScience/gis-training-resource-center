@@ -550,10 +550,10 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions-for-the-trainers">Instructions for the trainers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task">Task</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-geofabrik">Task: Geofabrik</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-hot-export-tool">Task: HOT Export Tool</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-quickosm">Task: QuickOSM</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-geofabrik">Task 1: Geofabrik</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-hot-export-tool">Task 2: HOT Export Tool</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-quickosm">Task 3: QuickOSM</a></li>
 </ul>
 </li>
 </ul>
@@ -570,14 +570,18 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="exercise-openstreetmap-data-export">
 <h1>Exercise: OpenStreetMap data export<a class="headerlink" href="#exercise-openstreetmap-data-export" title="Permalink to this heading">#</a></h1>
 <p><strong>🔙<a class="reference internal" href="../intro.html"><span class="doc std std-doc">Back to Homepage</span></a></strong></p>
-<p><strong>🔙<span class="xref myst">Back to Exercise overview</span></strong></p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Click here to return to the exercise overview page for module 2</strong></p>
+</div>
+<a class="sd-stretched-link reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_module_2_exercises.html"></a></div>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-header docutils">
 <p class="sd-card-text"><strong>Aim of the exercise:</strong></p>
 </div>
 <div class="sd-card-body docutils">
-<p class="sd-card-text">This exercise aims to show multiple ways how to get OpenStreetMap(OSM) as a vector
-file into QGIS.</p>
+<p class="sd-card-text">This exercise aims to show two ways how to get OpenStreetMap(OSM) as a vector
+file into QGIS. We will go through the workflow using Geofabrik, the HOT (Humanitarian OpenStreetMap Team) export tool and the QuickOSM QGIS-plugin.</p>
 </div>
 </div>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
@@ -678,18 +682,22 @@ file into QGIS.</p>
 </details></section>
 <section id="available-data">
 <h2>Available Data<a class="headerlink" href="#available-data" title="Permalink to this heading">#</a></h2>
-<p>Since the exercise is about finding data, there won’t be any data to download.
-Instead download the usual folder structure <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip">here</a> and insert your data as you download it.</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Since the exercise is about finding data, there won’t be any data to download.
+Instead download the <strong>standard folder structure</strong> <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip">here</a> and insert your data as you download it.</p>
+</div>
+<a class="sd-stretched-link reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip"></a></div>
 </section>
-<section id="task">
-<h2>Task<a class="headerlink" href="#task" title="Permalink to this heading">#</a></h2>
+<section id="tasks">
+<h2>Tasks<a class="headerlink" href="#tasks" title="Permalink to this heading">#</a></h2>
 <p>There are multiple ways how to get data from OpenStreetMap (OSM). In this exercise, we will go over a few methods to extract data from OSM. Depending on your use-case, you might only want very specific data from OSM, whereas in others, you might want to download almost all the regional OSM data.</p>
 <!-- FIXME: This task needs more information. what is the user trying to achieve 
    and why?
    
    ADD: Maybe a discussion step for each extraction method? in which scenarios would you choose which extraction method? -->
-<section id="task-geofabrik">
-<h3>Task: Geofabrik<a class="headerlink" href="#task-geofabrik" title="Permalink to this heading">#</a></h3>
+<section id="task-1-geofabrik">
+<h3>Task 1: Geofabrik<a class="headerlink" href="#task-1-geofabrik" title="Permalink to this heading">#</a></h3>
 <p>The Geofabrik website offers downloads of OSM data by region.</p>
 <ol class="arabic simple">
 <li><p>Go to <strong><a class="reference external" href="https://download.geofabrik.de/">https://download.geofabrik.de/</a></strong> and navigate to the Mauritius<br />
@@ -749,8 +757,8 @@ whole countries or regions.</p>
 </tbody>
 </table>
 </section>
-<section id="task-hot-export-tool">
-<h3>Task: HOT Export Tool<a class="headerlink" href="#task-hot-export-tool" title="Permalink to this heading">#</a></h3>
+<section id="task-2-hot-export-tool">
+<h3>Task 2: HOT Export Tool<a class="headerlink" href="#task-2-hot-export-tool" title="Permalink to this heading">#</a></h3>
 <p>The <a class="reference external" href="https://export.hotosm.org/v3/">HOT Export Tool</a>
 is a tool for accessing OSM data offered by Humanitarian OpenStreetMap Team (HOT).
 HOT offers a browser-based tool to download OSM data with good options to specify
@@ -836,8 +844,8 @@ is in QGIS.</p>
 </tbody>
 </table>
 </section>
-<section id="task-quickosm">
-<h3>Task: QuickOSM<a class="headerlink" href="#task-quickosm" title="Permalink to this heading">#</a></h3>
+<section id="task-3-quickosm">
+<h3>Task 3: QuickOSM<a class="headerlink" href="#task-3-quickosm" title="Permalink to this heading">#</a></h3>
 <p>The QuickOSM plugin allows you to load OSM data directly into QGIS.
 However, the plugin requires the deepest knowledge of the OSM data model,
 compared to the previous two options. To tailor your query based on the exact
@@ -980,10 +988,10 @@ Solution accommodation query<div class="sd-summary-down docutils">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions-for-the-trainers">Instructions for the trainers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task">Task</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-geofabrik">Task: Geofabrik</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-hot-export-tool">Task: HOT Export Tool</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-quickosm">Task: QuickOSM</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-geofabrik">Task 1: Geofabrik</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-hot-export-tool">Task 2: HOT Export Tool</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-quickosm">Task 3: QuickOSM</a></li>
 </ul>
 </li>
 </ul>

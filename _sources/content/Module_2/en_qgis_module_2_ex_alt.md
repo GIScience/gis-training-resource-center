@@ -2,6 +2,11 @@
 
 __🔙[Back to Homepage](/content/intro.md)__
 
+:::{card}
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_module_2_exercises.html
+__Click here to return to the exercise overview page for module 2__ 
+:::
+
 ## Characteristics of the exercise
 
 :::{card}
@@ -85,7 +90,13 @@ __Wrap up:__
 
 ## Available Data
 
-Download the data folder [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_4/Module_2_Exercise_4_The_World.zip) and save it on your PC. Unzip the .zip file!
+:::{card}
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_4/Module_2_Exercise_4_The_World.zip
+
+__Download all datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_4/Module_2_Exercise_4_The_World.zip), save the folder on your computer and unzip the file.__ 
+
+:::
+
 The folder is called “Module_2_Exercise_4_The_World" and contains the whole [standard folder structure](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure) with all data in the input folder and the additional documentation in the documentation folder.
 
 - [World Countries (Generalized)](https://hub.arcgis.com/datasets/2b93b06dc0dc4e809d3c8db5cb96ba69_0/explore) (Polygon/Shapefile)

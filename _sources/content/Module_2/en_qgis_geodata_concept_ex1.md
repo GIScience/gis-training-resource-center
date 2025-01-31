@@ -1,16 +1,19 @@
 # Exercise 1: Understanding Geodata
 
+__🔙[Back to Homepage](/content/intro.md)__
+
+:::{card}
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_module_2_exercises.html
+__Click here to return to the exercise overview page for module 2__ 
+:::
+
 ## Characteristics of the exercise
 
 :::{card}
 __Aim of this exercise:__
 ^^^
 
-The objective of this exercise is to make your first steps in QGIS. Understand the user interface and get to know the layer concept. 
-
-* Display vector data in QGIS and view the attributes of the data
-* Reproject/Change the projection of the vector data
-
+The objective of this exercise is to make your first steps in QGIS. Understand the user interface and get to know the layer concept. You will learn to import and display vector data into QGIS and open the attribute table. Furthermore, we will learn to reproject or change the projection of the vector datasets.
 :::
 
 
@@ -25,7 +28,7 @@ __Type of trainings exercise:__
 :::
 
 :::{grid-item-card}
-___These skills are relevant for:__ 
+__These skills are relevant for:__ 
 ^^^
 
 - QGIS-Essentials
@@ -43,7 +46,7 @@ ___These skills are relevant for:__
 __Estimated time demand for the exercise:__
 ^^^
 
-- The exercise takes around 2 hours to complete, depending on the number of participants and their familiarity with computer systems.
+- The exercise takes around 30 to 60 minutes to complete, depending on the number of participants and their familiarity with computer systems.
 
 :::
 
@@ -98,6 +101,7 @@ __Wrap up:__
 ### Available Data
 
 :::{card}
+:class-card: sd-text-center
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_understanding_geodata.zip
 
 __Download all datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_understanding_geodata.zip) and save the folder on your computer and unzip the file.__
@@ -106,11 +110,12 @@ __Download all datasets [here](https://nexus.heigit.org/repository/gis-training-
 
 The zip folder includes:
 
-- `Sierra_leone_borders.gpkg` (MultiLineString) GeoPackage
-    - Sierra Leone national borders (Lines)
-    - Sierra Leone provinces (Lines)
-- `sierra_leone_health_HOT.shp` (Points) Shapefile
-- `sl-airports.csv` (CSV)
+| Dataset name | Original title | Publisher | Downloaded from | 
+| :-------------- | :----------------- |:----------------- |:----------------- |
+| `Sierra_leone_border.gpkg` (MultiLineString) |  |  |  |
+| `sierra_leone_health_HOT.shp` (Points) | Sierra Leone Health Facilities (OpenStreetMap Export) | Humanitarian OpenStreetMap Team (HOT) | [HDX](https://data.humdata.org/dataset/hotosm_sle_health_facilities) | 
+| `sl-airports.csv` (CSV) | Airports in Sierra Leone | Our Airports | [HDX](https://data.humdata.org/dataset/ourairports-sle) | 
+
 
 The borders GeoPackage contains administrative information for Sierra Leone at both national and provincial level. Additionally, the shapefile `sierra_leone_health_HOT.shp` provides information on various health facilities within the country, while the `sl-airports.csv` CSV-file offers information on airports.
 
@@ -122,7 +127,7 @@ The exercise data should be saved in a location where you can easily find them a
 ### Tasks
 1. Open the files you have downloaded in QGIS. 
    - Unzip the folder with the exercise data. 
-   - The geopackage (.gpkg) and shapefile (.shp) can be dragged and dropped onto the map canvas in QGIS. 
+   - The geopackage (`.gpkg`) and shapefile (`.shp`) can be dragged and dropped onto the map canvas in QGIS. 
    - The .csv file needs to be imported via the layer menu.
       - Navigate to `Layer`> `Add Layer` > `Add delimited text layer`. A new window will open. Here you can select the file you want to import by clicking on `...` to the right of the __File name__  field at the top.
       - Navigate to the folder with the exercise files and select `sl-airports.csv`. 
@@ -139,7 +144,8 @@ name: navigation to add csv layer
 Opening the CSV-import window
 :::
 
-<!-- FIXME: We haven't shown people how to open files yet. EDIT: Move this Exercise after geodata management -->
+<!-- FIXME: We haven't shown people how to open files yet. 
+EDIT: Moved this Exercise after geodata management -->
 
 ```{figure} /fig/en_delimited_text_screenshot.PNG
 ---
@@ -193,10 +199,11 @@ Screenshot of the Export window
 
 ```{Note}
 
-Combining layers in different projections with online basemaps (typically have their own projections) can lead to display issues due to CRS conflicts. When layers have a distinct CRS, they may not align correctly or appear distorted when overlaid with an online basemap. To mitigate these problems, it's advisable to either reproject the layers to match the CRS of the basemap (which is often not applicable) or temporarily remove the basemap before saving the project. This ensures that the map is displayed accurately and avoids potential visual discrepancies caused by CRS inconsistencies.
+Combining layers in different projections with online basemaps (typically have their own projections) can lead to display issues due to [CRS conflicts](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_projections.html#how-to-choose-an-appropriate-projected-coordinate-system). When layers have a distinct CRS, they may not align correctly or appear distorted when overlaid with an online basemap. To mitigate these problems, it's advisable to either reproject the layers to match the CRS of the basemap (which is often not applicable) or temporarily remove the basemap before saving the project. This ensures that the map is displayed accurately and avoids potential visual discrepancies caused by CRS inconsistencies.
 
 ```
-<!-- CLARIFY: What issues? Is there another workaround? EDIT: -->
+<!-- CLARIFY: What issues? Is there another workaround?
+UPDATE: FIXED -->
 
 ```{figure} /fig/en_result_geodata_concept_exercise.png
 ---

@@ -1,6 +1,11 @@
 # Exercise 2: Basic geodata processing
 
-__🔙[Back to Homepage](/content/intro.md)__
+__[🔙🏠 Back to Homepage](/content/intro.md)__
+
+:::{card}
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_module_2_exercises.html
+__Click here to return to the exercise overview page for module 2__ 
+:::
 
 ## Characteristics of the exercise
 
@@ -95,12 +100,34 @@ __Wrap up:__
 
 ## Exercise
 ### Available Data
-Download all datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_2/Module_2_Exercise_2_Basic_geodata_processing.zip), save the folder on your computer and unzip the file. The zip folder includes:
+:::{card}
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_2/Module_2_Exercise_2_Basic_geodata_processing.zip 
+
+__Download all datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_2/Module_2_Exercise_2_Basic_geodata_processing.zip), save the folder on your computer and unzip the file.__ 
+
+:::
+
+The zip folder includes:
+
+| Dataset name | Original title | Publisher | Downloaded from | 
+| :-------------- | :----------------- |:----------------- |:----------------- |
+| `nigeria_populated_places.shp` | Nigeria Populated Places (OpenStreetMap Export) | Humanitarian OpenStreetMap Team (HOT) | [HDX](https://data.humdata.org/dataset/hotosm_nga_populated_places) | 
+| `nigeria_boundaries.geojson` |   |   |   |
+
+
+The zip folder includes:
 
 - `nigeria_populated_places.shp` (Points) Shapefile
 - `nigeria_boundaries.geojson` GeoJSON
 
-The shapefile for populated places contains data on human settlements in Nigeria, including cities, villages and others. The GeoJSON file for the boundaries of Nigeria contains information on the administrative boundaries at levels 2 and 4 with level 2 representing the whole country and level 4 being the states.
+The shapefile for populated places contains __point data__ on human settlements in Nigeria, including cities, villages and others. The GeoJSON file for the boundaries of Nigeria contains information on the administrative boundaries at levels 2 and 4 with level 2 representing the whole country and level 4 being the states.
+
+:::{note}
+
+GeoJSON does not support multiple layers, so the polygons for the country boundaries and the states are merged into one layer __where the different polygons overlap__. 
+
+:::
+<!--ADD: Explanation about how GeoJSON apparently merges different layers?-->
 
 ### Tasks
 
@@ -126,10 +153,12 @@ descending order.
 As no calculations are involved, e.g. area, WGS84 (EPSG:4326) is a good choice.
 ```
 
-:::{dropdown} How do I know which CRS to choose?
+<!----:::{dropdown} How do I know which CRS to choose?
 [EPSG.io](http://epsg.io) has a database that you can search to find the appropriate CRS 
 to use for a country. More information on [projections](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html) can be found in the Wiki or in the corresponding section in [module 2 on projections](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_projections.html).
 :::
+-->
+
 <!-- CLARIFY: is it important to choose an appropriate CRS or should people use 
 	the default? Part of this section can be removed. --> 
 
@@ -138,8 +167,7 @@ the district in which **Zuyel** is located. Name it accordingly. To find the dis
 <!-- FIXME: Exercises should be used to test what has been shown in a section, 
 	rather than introduce new functionality -->
 
-7. Remove all the initial layers and then open the attribute table for each of your new layers and check that each layer 
-   only contains one feature.
+7. Remove all the initial layers and then open the attribute table for each of your new layers and check that each layer only contains one feature.
 
 8. Save your project.
 

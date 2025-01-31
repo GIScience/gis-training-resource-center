@@ -59,15 +59,10 @@ Comparison Greenland - Africa. Source: [The True Size of](https://www.thetruesiz
 
 ## How to choose an appropriate projected coordinate system
 
-In GIS, we project the earth onto a flat coordinate system (hence the name coordinate reference system or CRS). 
-It is crucial that you are aware that your data can be in one CRS and your QGIS 
-project in another CRS. 
+In GIS, we project the earth onto a flat coordinate system (hence the name coordinate reference system or CRS). It is crucial that you are aware that your data can be in one CRS and your QGIS project in another CRS. 
 
 The project CRS is displayed on the bottom right
-corner of the [QGIS interface](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_start.html#overview-of-qgis-interface).  
-Here, you can see the EPSG code. EPSG stands for European Petroleum Survey Group, and it refers to a standardized code 
-system for coordinate reference systems (CRS) and projections. Each EPSG code (e.g., EPSG:4326 for WGS84) uniquely 
-identifies a specific CRS, helping ensure consistency and interoperability in geospatial data across different 
+corner of the [QGIS interface](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_start.html#overview-of-qgis-interface). Here, you can see the EPSG code. EPSG stands for European Petroleum Survey Group, and it refers to a standardized code system for coordinate reference systems (CRS) and projections. Each EPSG code (e.g., EPSG:4326 for WGS84) uniquely identifies a specific CRS, helping ensure consistency and interoperability in geospatial data across different 
 platforms and applications. 
 
 - __EPSG Codes:__ These are numerical identifiers assigned by the EPSG database to specific coordinate reference systems, making them concise and unambiguous (e.g., EPSG:4326 for WGS84). They provide a standardized way to reference CRS across various GIS applications.

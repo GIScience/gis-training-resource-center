@@ -577,7 +577,7 @@ Each <strong>row</strong> in the table represents a <strong>feature</strong>, wh
 <strong>attributes</strong> of that feature. You can use the attribute table to search, sort,
 filter, edit and select data.</p>
 <figure class="align-center" id="vector-data-overview">
-<a class="reference internal image-reference" href="../../_images/en_vector_data_overview.drawio.png"><img alt="../../_images/en_vector_data_overview.drawio.png" src="../../_images/en_vector_data_overview.drawio.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../_images/en_vector_data_overview.png"><img alt="../../_images/en_vector_data_overview.png" src="../../_images/en_vector_data_overview.png" style="width: 600px;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 38 </span><span class="caption-text">Vector Data overview. Source: HeiGIT</span><a class="headerlink" href="#vector-data-overview" title="Permalink to this image">#</a></p>
 </figcaption>
@@ -592,18 +592,26 @@ data.</p>
 <h2>Opening the attribute table<a class="headerlink" href="#opening-the-attribute-table" title="Permalink to this heading">#</a></h2>
 <p>Having a look into the attribute table is essential to understand and get an overview of the
 data you are working with. After downloading and import a dataset into QGIS, you will most likely open the attribute table to understand the data and see what information is available. Understanding what kind of information is available is indispensable when working with GIS software.</p>
-<p>You can open the attribute table in two ways.</p>
+<p>You can open the attribute table in two ways:</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can also use the shortcut <kbd>F6</kbd> (in some cases <kbd>Fn</kbd> + <kbd>F6</kbd>) to open the attribute.</p>
+</div>
+</aside>
 <ol class="arabic simple">
-<li><p>Right click on a layer in the Layers panel and select <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Attribute</span> <span class="pre">Table</span></code></p></li>
-<li><p>Select a layer in the Layers panel and click on the attribute table symbol in
-the toolbar.</p></li>
+<li><p>Right click on a layer in the Layers panel and select <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Attribute</span> <span class="pre">Table</span></code>.</p></li>
 </ol>
 <figure class="align-center" id="open-attribute-table-with-right-click">
 <a class="reference internal image-reference" href="../../_images/en_attributetable_right_click.png"><img alt="../../_images/en_attributetable_right_click.png" src="../../_images/en_attributetable_right_click.png" style="height: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 39 </span><span class="caption-text">Screenshot of Opening the Attribute Table with right click</span><a class="headerlink" href="#open-attribute-table-with-right-click" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 39 </span><span class="caption-text">Opening the attribute table via right-click in QGIS 3.36</span><a class="headerlink" href="#open-attribute-table-with-right-click" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+<ol class="arabic simple" start="2">
+<li><p>Select a layer in the Layers panel and click on the attribute table symbol in the toolbar.</p></li>
+</ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If you have multiple layers, only the attribute table of the layer currently
@@ -612,17 +620,10 @@ selected in the layer panel will open.</p>
 <figure class="align-center" id="open-attribute-table-top-right">
 <a class="reference internal image-reference" href="../../_images/en_attributetable_top_right.png"><img alt="../../_images/en_attributetable_top_right.png" src="../../_images/en_attributetable_top_right.png" style="height: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 40 </span><span class="caption-text">Screenshot of Opening the Attribute Table</span><a class="headerlink" href="#open-attribute-table-top-right" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 40 </span><span class="caption-text">Opening the attribute table in QGIS 3.36</span><a class="headerlink" href="#open-attribute-table-top-right" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<aside class="margin sidebar">
-<p class="sidebar-title"></p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>You can also use the shortcut <code class="docutils literal notranslate"><span class="pre">F6</span></code> (in some cases <code class="docutils literal notranslate"><span class="pre">Fn</span></code> + <code class="docutils literal notranslate"><span class="pre">F6</span></code>) to open the attribute.</p>
-</div>
-</aside>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
 <summary class="sd-summary-title sd-card-header">
 Buttons of the attribute table<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
@@ -641,7 +642,7 @@ Buttons of the attribute table<div class="sd-summary-down docutils">
 <tr class="row-even"><td><p class="sd-card-text"><img alt="" src="../../_images/mActionToggleEditing.png" /></p></td>
 <td><p class="sd-card-text"><strong>Toggle editing mode</strong></p></td>
 <td><p class="sd-card-text">Enable editing functionalities</p></td>
-<td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">Ctrl+E</span></code></p></td>
+<td><p class="sd-card-text"><kbd>Ctrl</kbd> + <kbd>E</kbd></p></td>
 </tr>
 <tr class="row-odd"><td><p class="sd-card-text"><img alt="" src="../../_images/mActionMultiEdit.png" /></p></td>
 <td><p class="sd-card-text">Toggle multi-edit mode</p></td>
@@ -671,17 +672,17 @@ Buttons of the attribute table<div class="sd-summary-down docutils">
 <tr class="row-even"><td><p class="sd-card-text"><img alt="" src="../../_images/mActionEditCut.png" /></p></td>
 <td><p class="sd-card-text">Cut selected features to clipboard</p></td>
 <td><p class="sd-card-text"></p></td>
-<td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">Ctrl+X</span></code></p></td>
+<td><p class="sd-card-text"><kbd>Ctrl</kbd> + <kbd>X</kbd></p></td>
 </tr>
 <tr class="row-odd"><td><p class="sd-card-text"><img alt="" src="../../_images/mActionCopySelected.png" /></p></td>
 <td><p class="sd-card-text">Copy selected features to clipboard</p></td>
 <td><p class="sd-card-text"></p></td>
-<td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">Ctrl+C</span></code></p></td>
+<td><p class="sd-card-text"><kbd>Ctrl</kbd> + <kbd>C</kbd></p></td>
 </tr>
 <tr class="row-even"><td><p class="sd-card-text"><img alt="" src="../../_images/mActionEditPaste.png" /></p></td>
 <td><p class="sd-card-text">Paste features from clipboard</p></td>
 <td><p class="sd-card-text">Insert new features from copied ones</p></td>
-<td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">Ctrl+V</span></code></p></td>
+<td><p class="sd-card-text"><kbd>Ctrl</kbd> + <kbd>V</kbd></p></td>
 </tr>
 <tr class="row-odd"><td><p class="sd-card-text"><img alt="" src="../../_images/mIconExpressionSelect.png" /></p></td>
 <td><p class="sd-card-text">Select features using an Expression</p></td>
@@ -691,22 +692,22 @@ Buttons of the attribute table<div class="sd-summary-down docutils">
 <tr class="row-even"><td><p class="sd-card-text"><img alt="" src="../../_images/mActionSelectAll.png" /></p></td>
 <td><p class="sd-card-text">Select All</p></td>
 <td><p class="sd-card-text">Select all features in the layer</p></td>
-<td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">Ctrl+A</span></code></p></td>
+<td><p class="sd-card-text"><kbd>Ctrl</kbd> + <kbd>A</kbd></p></td>
 </tr>
 <tr class="row-odd"><td><p class="sd-card-text"><img alt="" src="../../_images/mActionInvertSelection.png" /></p></td>
 <td><p class="sd-card-text">Invert selection</p></td>
 <td><p class="sd-card-text">Invert the current selection in the layer</p></td>
-<td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">Ctrl+R</span></code></p></td>
+<td><p class="sd-card-text"><kbd>Ctrl</kbd> + <kbd>R</kbd></p></td>
 </tr>
 <tr class="row-even"><td><p class="sd-card-text"><img alt="" src="../../_images/mActionDeselectActiveLayer.png" /></p></td>
 <td><p class="sd-card-text">Deselect all</p></td>
 <td><p class="sd-card-text">Deselect all features in the current layer</p></td>
-<td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">Ctrl+Shift+A</span></code></p></td>
+<td><p class="sd-card-text"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd></p></td>
 </tr>
 <tr class="row-odd"><td><p class="sd-card-text"><img alt="" src="../../_images/mActionFilterMap.png" /></p></td>
 <td><p class="sd-card-text">Filter/Select features using form</p></td>
 <td><p class="sd-card-text"></p></td>
-<td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">Ctrl+F</span></code></p></td>
+<td><p class="sd-card-text"><kbd>Ctrl</kbd> + <kbd>F</kbd></p></td>
 </tr>
 <tr class="row-even"><td><p class="sd-card-text"><img alt="" src="../../_images/mActionSelectedToTop.png" /></p></td>
 <td><p class="sd-card-text">Move selected to top</p></td>
@@ -716,17 +717,17 @@ Buttons of the attribute table<div class="sd-summary-down docutils">
 <tr class="row-odd"><td><p class="sd-card-text"><img alt="" src="../../_images/mActionPanToSelected.png" /></p></td>
 <td><p class="sd-card-text">Pan map to the selected rows</p></td>
 <td><p class="sd-card-text"></p></td>
-<td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">Ctrl+P</span></code></p></td>
+<td><p class="sd-card-text"><kbd>Ctrl</kbd> + <kbd>P</kbd></p></td>
 </tr>
 <tr class="row-even"><td><p class="sd-card-text"><img alt="" src="../../_images/mActionZoomToSelected.png" /></p></td>
 <td><p class="sd-card-text">Zoom map to the selected rows</p></td>
 <td><p class="sd-card-text"></p></td>
-<td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">Ctrl+J</span></code></p></td>
+<td><p class="sd-card-text"><kbd>Ctrl</kbd> + <kbd>J</kbd></p></td>
 </tr>
 <tr class="row-odd"><td><p class="sd-card-text"><img alt="" src="../../_images/mActionNewAttribute.png" /></p></td>
 <td><p class="sd-card-text">New field</p></td>
 <td><p class="sd-card-text">Add a new field to the data source</p></td>
-<td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">Ctrl+W</span></code></p></td>
+<td><p class="sd-card-text"><Kbd>Ctrl</kbd> + <kbd>W</kbd></p></td>
 </tr>
 <tr class="row-even"><td><p class="sd-card-text"><img alt="" src="../../_images/mActionDeleteAttribute.png" /></p></td>
 <td><p class="sd-card-text">Delete field</p></td>
@@ -741,7 +742,7 @@ Buttons of the attribute table<div class="sd-summary-down docutils">
 <tr class="row-even"><td><p class="sd-card-text"><img alt="" src="../../_images/mActionCalculateField.png" /></p></td>
 <td><p class="sd-card-text"><strong>Open field calculator</strong></p></td>
 <td><p class="sd-card-text">Update field for many features in a row</p></td>
-<td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">Ctrl+I</span></code></p></td>
+<td><p class="sd-card-text"><kbd>Ctrl</kbd> + <kbd>I</kbd></p></td>
 </tr>
 <tr class="row-odd"><td><p class="sd-card-text"><img alt="" src="../../_images/mActionConditionalFormatting.png" /></p></td>
 <td><p class="sd-card-text">Conditional formatting</p></td>

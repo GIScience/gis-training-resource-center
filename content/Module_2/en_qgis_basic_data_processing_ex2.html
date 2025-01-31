@@ -569,7 +569,12 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="exercise-2-basic-geodata-processing">
 <h1>Exercise 2: Basic geodata processing<a class="headerlink" href="#exercise-2-basic-geodata-processing" title="Permalink to this heading">#</a></h1>
-<p><strong>🔙<a class="reference internal" href="../intro.html"><span class="doc std std-doc">Back to Homepage</span></a></strong></p>
+<p><strong><a class="reference internal" href="../intro.html"><span class="doc std std-doc">🔙🏠 Back to Homepage</span></a></strong></p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Click here to return to the exercise overview page for module 2</strong></p>
+</div>
+<a class="sd-stretched-link reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_module_2_exercises.html"></a></div>
 <section id="characteristics-of-the-exercise">
 <h2>Characteristics of the exercise<a class="headerlink" href="#characteristics-of-the-exercise" title="Permalink to this heading">#</a></h2>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
@@ -680,12 +685,44 @@ selection, as well as load a basemap.</p>
 <h2>Exercise<a class="headerlink" href="#exercise" title="Permalink to this heading">#</a></h2>
 <section id="available-data">
 <h3>Available Data<a class="headerlink" href="#available-data" title="Permalink to this heading">#</a></h3>
-<p>Download all datasets <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_2/Module_2_Exercise_2_Basic_geodata_processing.zip">here</a>, save the folder on your computer and unzip the file. The zip folder includes:</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Download all datasets <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_2/Module_2_Exercise_2_Basic_geodata_processing.zip">here</a>, save the folder on your computer and unzip the file.</strong></p>
+</div>
+<a class="sd-stretched-link reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_2/Module_2_Exercise_2_Basic_geodata_processing.zip"></a></div>
+<p>The zip folder includes:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Dataset name</p></th>
+<th class="head text-left"><p>Original title</p></th>
+<th class="head text-left"><p>Publisher</p></th>
+<th class="head text-left"><p>Downloaded from</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">nigeria_populated_places.shp</span></code></p></td>
+<td class="text-left"><p>Nigeria Populated Places (OpenStreetMap Export)</p></td>
+<td class="text-left"><p>Humanitarian OpenStreetMap Team (HOT)</p></td>
+<td class="text-left"><p><a class="reference external" href="https://data.humdata.org/dataset/hotosm_nga_populated_places">HDX</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">nigeria_boundaries.geojson</span></code></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>The zip folder includes:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">nigeria_populated_places.shp</span></code> (Points) Shapefile</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">nigeria_boundaries.geojson</span></code> GeoJSON</p></li>
 </ul>
-<p>The shapefile for populated places contains data on human settlements in Nigeria, including cities, villages and others. The GeoJSON file for the boundaries of Nigeria contains information on the administrative boundaries at levels 2 and 4 with level 2 representing the whole country and level 4 being the states.</p>
+<p>The shapefile for populated places contains <strong>point data</strong> on human settlements in Nigeria, including cities, villages and others. The GeoJSON file for the boundaries of Nigeria contains information on the administrative boundaries at levels 2 and 4 with level 2 representing the whole country and level 4 being the states.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>GeoJSON does not support multiple layers, so the polygons for the country boundaries and the states are merged into one layer <strong>where the different polygons overlap</strong>.</p>
+</div>
+<!--ADD: Explanation about how GeoJSON apparently merges different layers?-->
 </section>
 <section id="tasks">
 <h3>Tasks<a class="headerlink" href="#tasks" title="Permalink to this heading">#</a></h3>
@@ -710,17 +747,12 @@ appropriate CRS. Name it <code class="docutils literal notranslate"><span class=
 <p class="admonition-title">Note</p>
 <p>As no calculations are involved, e.g. area, WGS84 (EPSG:4326) is a good choice.</p>
 </div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-How do I know which CRS to choose?<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><a class="reference external" href="http://epsg.io">EPSG.io</a> has a database that you can search to find the appropriate CRS
-to use for a country. More information on <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html">projections</a> can be found in the Wiki or in the corresponding section in <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_projections.html">module 2 on projections</a>.</p>
-</div>
-</details><!-- CLARIFY: is it important to choose an appropriate CRS or should people use 
+<!----:::{dropdown} How do I know which CRS to choose?
+[EPSG.io](http://epsg.io) has a database that you can search to find the appropriate CRS 
+to use for a country. More information on [projections](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html) can be found in the Wiki or in the corresponding section in [module 2 on projections](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_projections.html).
+:::
+-->
+<!-- CLARIFY: is it important to choose an appropriate CRS or should people use 
 	the default? Part of this section can be removed. --> 
 <ol class="arabic simple" start="6">
 <li><p>Repeat the steps for the layer <code class="docutils literal notranslate"><span class="pre">nigeria_boundaries.geojson</span></code> and only export
@@ -729,8 +761,7 @@ the district in which <strong>Zuyel</strong> is located. Name it accordingly. To
 <!-- FIXME: Exercises should be used to test what has been shown in a section, 
 	rather than introduce new functionality -->
 <ol class="arabic simple" start="7">
-<li><p>Remove all the initial layers and then open the attribute table for each of your new layers and check that each layer
-only contains one feature.</p></li>
+<li><p>Remove all the initial layers and then open the attribute table for each of your new layers and check that each layer only contains one feature.</p></li>
 <li><p>Save your project.</p></li>
 </ol>
 </section>
