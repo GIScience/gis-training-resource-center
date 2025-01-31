@@ -10,7 +10,7 @@ __attributes__ of that feature. You can use the attribute table to search, sort,
 filter, edit and select data. 
 
 
-```{figure} /fig/en_vector_data_overview.drawio.png
+```{figure} /fig/en_vector_data_overview.png
 ---
 width: 600px
 align: center
@@ -33,21 +33,28 @@ data.
 Having a look into the attribute table is essential to understand and get an overview of the 
 data you are working with. After downloading and import a dataset into QGIS, you will most likely open the attribute table to understand the data and see what information is available. Understanding what kind of information is available is indispensable when working with GIS software.
 
-You can open the attribute table in two ways. 
+You can open the attribute table in two ways:
 
-1. Right click on a layer in the Layers panel and select `Open Attribute Table` 
-2. Select a layer in the Layers panel and click on the attribute table symbol in 
-   the toolbar. 
+::::{margin}
+```{tip}
+
+You can also use the shortcut <kbd>F6</kbd> (in some cases <kbd>Fn</kbd> + <kbd>F6</kbd>) to open the attribute.
+
+```
+::::
+1. Right click on a layer in the Layers panel and select `Open Attribute Table`. 
 
 ```{figure} /fig/en_attributetable_right_click.png
 ---
 height: 500px
-name:
 align: center
 name: Open Attribute Table with right click
 ---
-Screenshot of Opening the Attribute Table with right click
+Opening the attribute table via right-click in QGIS 3.36
 ```
+
+
+2. Select a layer in the Layers panel and click on the attribute table symbol in the toolbar. 
 
 ```{note} 
 If you have multiple layers, only the attribute table of the layer currently 
@@ -56,46 +63,39 @@ selected in the layer panel will open.
 
 ```{figure} /fig/en_attributetable_top_right.png
 ---
-height: 500px
-name: 
+height: 500px 
 align: center
 name: Open Attribute Table top right
 ---
-Screenshot of Opening the Attribute Table
+Opening the attribute table in QGIS 3.36
 ```
 
-::::{margin}
-```{tip}
-
-You can also use the shortcut `F6` (in some cases `Fn` + `F6`) to open the attribute.
-
-```
-::::
 
 :::{dropdown} Buttons of the attribute table
+:open:
 |Icon|Description|Purpose|Shortcut|
 |---|---|-----|---|
-| ![](/fig/mActionToggleEditing.png)|__Toggle editing mode__ | Enable editing functionalities|`Ctrl+E`|
+| ![](/fig/mActionToggleEditing.png)|__Toggle editing mode__ | Enable editing functionalities|<kbd>Ctrl</kbd> + <kbd>E</kbd> |
 | ![](/fig/mActionMultiEdit.png)| Toggle multi-edit mode| Update multiple fields of many features          |  |
 |![](/fig/mActionSaveEdits.png)| __Save edits__| Save current modifications                        | |
 |![](/fig/mActionRefresh.png)| Reload the table  | | |
 |![](/fig/mActionNewTableRow.png)| Add feature | Add new geometry-less feature |  |
 |![](/fig/mActionDeleteSelectedFeatures.png)| Delete selected features| Remove selected features from the layer|  |
-|![](/fig/mActionEditCut.png)| Cut selected features to clipboard    |  | `Ctrl+X` |
-|![](/fig/mActionCopySelected.png)| Copy selected features to clipboard   |   | `Ctrl+C`      |
-|![](/fig/mActionEditPaste.png)| Paste features from clipboard| Insert new features from copied ones |`Ctrl+V`|
+|![](/fig/mActionEditCut.png)| Cut selected features to clipboard    |  | <kbd>Ctrl</kbd> + <kbd>X</kbd> |
+|![](/fig/mActionCopySelected.png)| Copy selected features to clipboard   |   | <kbd>Ctrl</kbd> + <kbd>C</kbd>      |
+|![](/fig/mActionEditPaste.png)| Paste features from clipboard| Insert new features from copied ones | <kbd>Ctrl</kbd> + <kbd>V</kbd> |
 |![](/fig/mIconExpressionSelect.png)| Select features using an Expression|| | 
-|![](/fig/mActionSelectAll.png)| Select All| Select all features in the layer|`Ctrl+A`      |
-|![](/fig/mActionInvertSelection.png)| Invert selection| Invert the current selection in the layer |`Ctrl+R`|
-|![](/fig/mActionDeselectActiveLayer.png)| Deselect all| Deselect all features in the current layer|`Ctrl+Shift+A`|
-|![](/fig/mActionFilterMap.png)|Filter/Select features using form     | |`Ctrl+F`|
+|![](/fig/mActionSelectAll.png)| Select All| Select all features in the layer| <kbd>Ctrl</kbd> + <kbd>A</kbd>     |
+|![](/fig/mActionInvertSelection.png)| Invert selection| Invert the current selection in the layer | <kbd>Ctrl</kbd> + <kbd>R</kbd> |
+|![](/fig/mActionDeselectActiveLayer.png)| Deselect all| Deselect all features in the current layer| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd> |
+|![](/fig/mActionFilterMap.png)|Filter/Select features using form     | | <kbd>Ctrl</kbd> + <kbd>F</kbd> |
 |![](/fig/mActionSelectedToTop.png)| Move selected to top| Move selected rows to the top of the table|  |
-|![](/fig/mActionPanToSelected.png)| Pan map to the selected rows|  | `Ctrl+P`|
-|![](/fig/mActionZoomToSelected.png)| Zoom map to the selected rows | |`Ctrl+J`      |
-|![](/fig/mActionNewAttribute.png)| New field | Add a new field to the data source | `Ctrl+W`|
+|![](/fig/mActionPanToSelected.png)| Pan map to the selected rows|  | <kbd>Ctrl</kbd> + <kbd>P</kbd> |
+|![](/fig/mActionZoomToSelected.png)| Zoom map to the selected rows | | <kbd>Ctrl</kbd> + <kbd>J</kbd>     |
+|![](/fig/mActionNewAttribute.png)| New field | Add a new field to the data source | <Kbd>Ctrl</kbd> + <kbd>W</kbd>  |
 |![](/fig/mActionDeleteAttribute.png)| Delete field  | Remove a field from the data source | |
 |![](/fig/mActionEditTable.png)| Organize columns | Show/hide fields from the attribute table||
-|![](/fig/mActionCalculateField.png)| __Open field calculator__| Update field for many features in a row |`Ctrl+I`      |
+|![](/fig/mActionCalculateField.png)| __Open field calculator__| Update field for many features in a row | <kbd>Ctrl</kbd> + <kbd>I</kbd>      |
 |![](/fig/mActionConditionalFormatting.png)| Conditional formatting | Enable table formatting| |
 |![](/fig/dock.png)| Dock attribute table | Allows to dock or undock the attribute table||
 |![](/fig/mAction.png)| Actions | Lists the actions related to the layer           | |

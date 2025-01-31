@@ -82,7 +82,7 @@ Setting the parameters for the P-code join
 
 6. Open the attribute table for the new layer and scroll to the right. Here you will find the joined attributes
 
-Great! We have successfully added the population data to our adminsitrative boundaries layer. Now, we can visualise the population distribution or continue to analyse our data.
+Great! We have successfully added the population data to our administrative boundaries layer. Now, we can visualise the population distribution or continue to analyse our data.
 
 
 ```{figure} /fig/nga_pop_join.png

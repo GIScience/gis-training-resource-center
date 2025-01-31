@@ -1,10 +1,11 @@
 # Exercise 3: Data sources
 
-
 <!--This exercise is quite minimal with the explanation of steps (most should be looked up) so it is not suited for a follow along session -->
 
+__🔙[Back to Homepage](/content/intro.md)__
+
 :::{card}
-:link: 
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_module_2_exercises.html 
 
 __Click here to return to the exercise overview page for module 2__ 
 
@@ -13,6 +14,7 @@ __Click here to return to the exercise overview page for module 2__
 ## Characteristics of the exercise
 
 :::{card}
+:class-card: sd-text-justify
 __Aim of the exercise:__
 ^^^
 
@@ -101,9 +103,10 @@ __Wrap up:__
 ### Available Data
 
 :::{card}
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip
 
 Since the exercise is about finding data, there won't be any data to download. 
-Instead download the usual folder structure [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip) and insert your data as you download it.
+Instead download the __standard folder structure__ [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip) and insert your data as you download it.
 
 :::
 
