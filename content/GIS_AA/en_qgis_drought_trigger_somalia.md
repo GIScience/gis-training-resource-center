@@ -1293,6 +1293,7 @@ __Result:__ Layer with the districts of Somalia and the IPC-Index of each distri
 ```
 
 ## Step 13: Calculation of SPI-12 Mean per District
+
 ```{figure} /fig/Drought_EAP_Worklow_Step_13_1_NEW.png
 ---
 width: 1000px
@@ -1337,6 +1338,7 @@ __Result:__ A layer of all districts of Somalia with the mean SPI-12.
 ```
 
 ## Step 14: Join SPI-12 Mean to the IPC Index
+
 ```{figure} /fig/Drought_EAP_Worklow_Step_14_1_NEW.png
 ---
 width: 1000px
@@ -1381,7 +1383,8 @@ __Result:__ The result will be a layer of all districts of Somalia with the mean
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_12_join_IPC_SPI12.mp4"></video>
 ```
 
-### Step 15: Evaluate the Trigger Activation 
+## Step 15: Evaluate the Trigger Activation 
+
 ```{figure} /fig/Drought_EAP_Worklow_Step_15_1_NEW.png
 ---
 width: 1000px
@@ -2071,7 +2074,7 @@ __Result:__ The result will be a layer of all districts of Somalia with the mean
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_12_join_IPC_SPI12.mp4"></video>
 ```
 
-### Step 13: Evaluate the Trigger Activation 
+## Step 13: Evaluate the Trigger Activation 
 ```{figure} /fig/Drought_EAP_Worklow_Step_13_1.png
 ---
 width: 1000px
