@@ -107,7 +107,7 @@ The [QGIS Model Designer](https://giscience.github.io/gis-training-resource-cent
 When updating the monitoring, make sure you compare the new input layers with the previous input layers.
 It can happen that the data structure from FEWSNET or ICPAC changes. For example, the attribute columns are called differently, or the values for the classes change. In these cases, the model can break and output error messages. 
 
-To fix these issues, take a look at the subsection on [Troubleshooting the model]().
+To fix these issues, take a look at the subsection on [Troubleshooting the model](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_drought_trigger_somalia.html#troubleshooting-the-model).
 
 :::
 
@@ -642,7 +642,7 @@ __For example__,
 
 FEWSNET changed the structure of the IPC Food Security Projection Data:
 - The data for ML1 and ML2 is no longer available as two distinct shapefiles, but the (overlapping) polygons for both scenarios are contained in a single geojson file. 
-- Furthermore, the values for the [different food insecurity phase]() (1 to 5: Minimal, Stressed, Crisis, Emergency, Famine) are no longer in a column called "ML1" and "ML2" respectively, but in a column with the name __"value"__.
+- Furthermore, the values for the [different food insecurity phase](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_drought_trigger_somalia.html#what-is-ipc-food-security-projection-data) (1 to 5: Minimal, Stressed, Crisis, Emergency, Famine) are no longer in a column called "ML1" and "ML2" respectively, but in a column with the name __"value"__.
 - The model components "weighing pop-sum based on IPC phase" are expecting a column with the name "ML1" and "ML2", but the columns with this information (IPC Phase) with the new input layers are no longer called "ML1" and "ML2" and are called "value".
 
 ```{figure} /fig/troubleshooting_model_example.png
@@ -906,7 +906,7 @@ align: center
 ---
 ```
 
-__Purpose:__ The aim is to fix the [errors in the geometries]() of each layer. Otherwise, we would receive error messages in the further steps.
+__Purpose:__ The aim is to fix the [errors in the geometries](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_digitalisation.html#spatial-digitisation-errors-in-qgis) of each layer. Otherwise, we would receive error messages in the further steps.
 
 ```{Attention}
 You need to perform this step two times. One time for ML 1 and a second time for ML 2.
@@ -1293,6 +1293,7 @@ __Result:__ Layer with the districts of Somalia and the IPC-Index of each distri
 ```
 
 ## Step 13: Calculation of SPI-12 Mean per District
+
 ```{figure} /fig/Drought_EAP_Worklow_Step_13_1_NEW.png
 ---
 width: 1000px
@@ -1337,6 +1338,7 @@ __Result:__ A layer of all districts of Somalia with the mean SPI-12.
 ```
 
 ## Step 14: Join SPI-12 Mean to the IPC Index
+
 ```{figure} /fig/Drought_EAP_Worklow_Step_14_1_NEW.png
 ---
 width: 1000px
@@ -1381,7 +1383,8 @@ __Result:__ The result will be a layer of all districts of Somalia with the mean
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_12_join_IPC_SPI12.mp4"></video>
 ```
 
-### Step 15: Evaluate the Trigger Activation 
+## Step 15: Evaluate the Trigger Activation 
+
 ```{figure} /fig/Drought_EAP_Worklow_Step_15_1_NEW.png
 ---
 width: 1000px
@@ -2071,7 +2074,7 @@ __Result:__ The result will be a layer of all districts of Somalia with the mean
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_12_join_IPC_SPI12.mp4"></video>
 ```
 
-### Step 13: Evaluate the Trigger Activation 
+## Step 13: Evaluate the Trigger Activation 
 ```{figure} /fig/Drought_EAP_Worklow_Step_13_1.png
 ---
 width: 1000px

@@ -603,10 +603,8 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-11-calculate-the-ipc-index-per-district">Step 11: Calculate the IPC Index per District</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-12-join-ml1-and-ml2">Step 12.: Join ML1 and ML2</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-13-calculation-of-spi-12-mean-per-district">Step 13: Calculation of SPI-12 Mean per District</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-14-join-spi-12-mean-to-the-ipc-index">Step 14: Join SPI-12 Mean to the IPC Index</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-15-evaluate-the-trigger-activation">Step 15: Evaluate the Trigger Activation</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-14-join-spi-12-mean-to-the-ipc-index">Step 14: Join SPI-12 Mean to the IPC Index</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-15-evaluate-the-trigger-activation">Step 15: Evaluate the Trigger Activation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-16-visualisation-of-results">Step 16: Visualisation of results</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-17-making-the-print-map">Step 17: Making the print map</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-18-exporting-the-map">Step 18: Exporting the Map</a></li>
@@ -776,7 +774,7 @@ Furthermore, population located in a higher IPC class is more important than pop
 <p class="admonition-title">Troubleshooting the model</p>
 <p>When updating the monitoring, make sure you compare the new input layers with the previous input layers.
 It can happen that the data structure from FEWSNET or ICPAC changes. For example, the attribute columns are called differently, or the values for the classes change. In these cases, the model can break and output error messages.</p>
-<p>To fix these issues, take a look at the subsection on <span class="xref myst">Troubleshooting the model</span>.</p>
+<p>To fix these issues, take a look at the subsection on <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_drought_trigger_somalia.html#troubleshooting-the-model">Troubleshooting the model</a>.</p>
 </div>
 <section id="step-1-setting-up-folder-structure">
 <h2>Step 1: Setting up folder structure<a class="headerlink" href="#step-1-setting-up-folder-structure" title="Permalink to this heading">#</a></h2>
@@ -1302,7 +1300,7 @@ Video: Export image and PDF<div class="sd-summary-down docutils">
 <p>FEWSNET changed the structure of the IPC Food Security Projection Data:</p>
 <ul class="simple">
 <li><p>The data for ML1 and ML2 is no longer available as two distinct shapefiles, but the (overlapping) polygons for both scenarios are contained in a single geojson file.</p></li>
-<li><p>Furthermore, the values for the <span class="xref myst">different food insecurity phase</span> (1 to 5: Minimal, Stressed, Crisis, Emergency, Famine) are no longer in a column called “ML1” and “ML2” respectively, but in a column with the name <strong>“value”</strong>.</p></li>
+<li><p>Furthermore, the values for the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_drought_trigger_somalia.html#what-is-ipc-food-security-projection-data">different food insecurity phase</a> (1 to 5: Minimal, Stressed, Crisis, Emergency, Famine) are no longer in a column called “ML1” and “ML2” respectively, but in a column with the name <strong>“value”</strong>.</p></li>
 <li><p>The model components “weighing pop-sum based on IPC phase” are expecting a column with the name “ML1” and “ML2”, but the columns with this information (IPC Phase) with the new input layers are no longer called “ML1” and “ML2” and are called “value”.</p></li>
 </ul>
 <p>To fix the model, we need to do the following:</p>
@@ -1532,7 +1530,7 @@ Video: Loading data into QGIS<div class="sd-summary-down docutils">
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/Drought_EAP_Worklow_Step_5_1_NEW.png"><img alt="../../_images/Drought_EAP_Worklow_Step_5_1_NEW.png" src="../../_images/Drought_EAP_Worklow_Step_5_1_NEW.png" style="width: 1000px;" /></a>
 </figure>
-<p><strong>Purpose:</strong> The aim is to fix the <span class="xref myst">errors in the geometries</span> of each layer. Otherwise, we would receive error messages in the further steps.</p>
+<p><strong>Purpose:</strong> The aim is to fix the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_digitalisation.html#spatial-digitisation-errors-in-qgis">errors in the geometries</a> of each layer. Otherwise, we would receive error messages in the further steps.</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>You need to perform this step two times. One time for ML 1 and a second time for ML 2.</p>
@@ -2049,8 +2047,9 @@ Video: Join SPI12 Mean to the IPC Index<div class="sd-summary-down docutils">
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_12_join_IPC_SPI12.mp4"></video></p>
 </div>
-</details><section id="step-15-evaluate-the-trigger-activation">
-<h3>Step 15: Evaluate the Trigger Activation<a class="headerlink" href="#step-15-evaluate-the-trigger-activation" title="Permalink to this heading">#</a></h3>
+</details></section>
+<section id="step-15-evaluate-the-trigger-activation">
+<h2>Step 15: Evaluate the Trigger Activation<a class="headerlink" href="#step-15-evaluate-the-trigger-activation" title="Permalink to this heading">#</a></h2>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/Drought_EAP_Worklow_Step_15_1_NEW.png"><img alt="../../_images/Drought_EAP_Worklow_Step_15_1_NEW.png" src="../../_images/Drought_EAP_Worklow_Step_15_1_NEW.png" style="width: 1000px;" /></a>
 </figure>
@@ -2105,7 +2104,6 @@ Video: Evaluate Trigger Activation <div class="sd-summary-down docutils">
 <p class="sd-card-text"><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_13_trigger_activation.mp4"></video></p>
 </div>
 </details></section>
-</section>
 <section id="step-16-visualisation-of-results">
 <h2>Step 16: Visualisation of results<a class="headerlink" href="#step-16-visualisation-of-results" title="Permalink to this heading">#</a></h2>
 <figure class="align-center">
@@ -3087,10 +3085,8 @@ Video: Making print map<div class="sd-summary-down docutils">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-11-calculate-the-ipc-index-per-district">Step 11: Calculate the IPC Index per District</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-12-join-ml1-and-ml2">Step 12.: Join ML1 and ML2</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-13-calculation-of-spi-12-mean-per-district">Step 13: Calculation of SPI-12 Mean per District</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-14-join-spi-12-mean-to-the-ipc-index">Step 14: Join SPI-12 Mean to the IPC Index</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-15-evaluate-the-trigger-activation">Step 15: Evaluate the Trigger Activation</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-14-join-spi-12-mean-to-the-ipc-index">Step 14: Join SPI-12 Mean to the IPC Index</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-15-evaluate-the-trigger-activation">Step 15: Evaluate the Trigger Activation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-16-visualisation-of-results">Step 16: Visualisation of results</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-17-making-the-print-map">Step 17: Making the print map</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-18-exporting-the-map">Step 18: Exporting the Map</a></li>
