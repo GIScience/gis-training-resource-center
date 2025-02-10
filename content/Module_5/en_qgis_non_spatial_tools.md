@@ -11,17 +11,13 @@ name: attribute_table_all
 Screenshot of an attribute table for QGIS version 3.28.4
 ```
 
-## Non-spatial joins
+## Non-spatial joins (Join Attributes by Field Value)
 
-```{figure} /fig/en_join_attributes_by_field_values.PNG
----
-width: 450 px
-name: join_attributes_by_field_value
----
-Screenshot of the Join attributes by field value tool in QGIS 3.36.
-```
+
 
 A lot of analysis can be done with just a single layer. But, sometimes, the necessary information we need for our analysis is __split across__ different datasets/layers. With QGIS, these layers can be __combined__ to perform the analysis we want. The simplest way to combine layers is via an __attribute join__. This operation looks up information from a second data source based on a __shared attribute value__. This value functions as a common unique identifier, also known as an ID, UID, or key (see {numref}`simple_attr_join_example`).
+
+
 
 ```{figure} /fig/simple_attr_join_example.png
 ---
@@ -34,11 +30,11 @@ The entries in the two data tables can be joined via the common ID-field
 ::::{card}
 __Humanitarian example:__
 ^^^
-A common GIS workflow in humanitarian work involving non-spatial joins is joining data on administrative boundaries using P-codes as the common identifier/shared attribute.
+*A common GIS workflow in humanitarian work involving non-spatial joins is joining data on administrative boundaries using P-codes as the common identifier/shared attribute.
 
 P-codes are identifying codes for administrative units (e.g. country (adm0), region (adm1), district (adm2)), that were introduced to simplify joining tabular data on administrative regions. These codes clearly identify the administrative units facilitating non-spatial joins. 
 
-For example: We have a spatial dataset containing the administrative boundaries of districts (adm2) in Nigeria and a data table containing the population per district, but without the polygons. By using the P-codes as identifying attribute, we can easily join the population data with the vector dataset.
+For example: We have a spatial dataset containing the administrative boundaries of districts (adm2) in Nigeria and a data table containing the population per district, but without the polygons. By using the P-codes as identifying attribute, we can easily join the population data with the vector dataset.*
 
 ```{figure} /fig/en_attribute_join_pcode_example.png
 ---
