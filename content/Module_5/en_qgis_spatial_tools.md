@@ -1,6 +1,6 @@
 # Spatial data processing
 
-## Introduction:
+## Introduction
 
 Spatial processing uses spatial information to extract new meaning from GIS data. It does so by using the __spatial relationship__ of different layers or features. Spatial relationships describe how things are located in relation to one another. In humanitarian work, this helps answer critical questions like “Which communities are near a water source?” or “Which areas are isolated from health services?”. Or, we might want to identify the best locations for distributing aid, assess flood risk areas, or plan evacuation routes.
 
@@ -104,7 +104,7 @@ __Humanitarian Example:__
 name: flood damage assessement
 width: 450 px
 ---
-A building footprint layer combined with a flood extent layer. By joining them, we can assess which houses are at risk to be damaged by flooding (Source: REACH).
+A building footprint layer combined with a flood extent layer. By joining them, we can assess which houses are at risk to be damaged by flooding (Source: IFRC).
 ```
 
 
@@ -170,7 +170,7 @@ name: spatial_relations
 Looking for spatial relations between layers <br /> (Source: [QGIS Documentation](https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html?highlight=join%20attributes%20location), Version 3.28)
 ```
 
-### Performing a spatial join
+### Exercise: Performing a spatial join
 
 
 ```{admonition} Now it's your turn!
@@ -201,9 +201,7 @@ the right side of your screen.
 
 ::::
 
-:::{dropdown}
-
-### Join attributes by location
+:::{dropdown} Join attributes by location
 
 This tool takes two input layers and creates a new vector layer which has the attributes of both layers in its attribute table.
 The first input layer (see "Join to features in" in {numref}`join_attributes_by_location`) dictates which geometric features will be copied to the new 
@@ -256,11 +254,12 @@ The different colours for the points indicate that they are located in a differe
 ```
 
 
-<!--### More spatial join-tools in QGIS
+### More spatial join-tools in QGIS
 
-By default, QGIS provides three different tools to perform spatial joins. The first, and the most common one, is the tool 
-__"Join attributes by location"__. Furthermore, there are also the tools __"Join attributes by location (summary)"__ and 
-__"Join attributes by nearest"__.
+By default, QGIS provides three different tools to perform spatial joins. 
+
+- The first, and the most common one, is the tool __"Join attributes by location"__ which we used in the previous exercise. 
+- Furthermore, there are also the tools __"Join attributes by location (summary)"__ and __"Join attributes by nearest"__.
 
 :::::{tab-set}
 
@@ -305,8 +304,34 @@ A detailed description of the functions and settings of these tools can be found
 
 :::
 
--->
 
+## Exercise 6: Calculate sum of affected population and flooded area for the Area of interest
+
+
+In the aftermath of flooding events, data on the affected population and the extent of flooding is crucial. 
+This information can be refined from a nationwide dataset to provide specific numbers for individual districts 
+or states. This can aid in identifying the areas most heavily impacted, leading to more efficient relief 
+operations. In the upcoming exercise, we will calculate the total flooding extent in square kilometers and 
+the affected population for Unity State, South Sudan. To accomplish this, we will utilize the 
+__Join attributes by location (summary)__ tool.
+
+1. Load the necessary data for this exercise into your QGIS. Both datasets were downloaded from HDX:
+    - [South Sudan - Subnational Administrative Boundaries](https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/Spatial_Join/State_Unity_South_Sudan.zip):<br /> __State_Unity_South_Sudan.shp__
+    - [Satellite detected water extents between 11 and 15 August 2023 over South Sudan](https://data.humdata.org/dataset/satellite-detected-water-extents-between-11-and-15-august-2023-over-south-sudan): Download the folder __FL20220424SSD_SHP.zip__, unzip it, and search for the file __VIIRS_20230811_20230815_MaximumFloodWaterExtent_SouthSudan.shp__
+2. Locate the tool named __Join attribute by location (summary)__
+    - Choose __state boundaries__ as the target layer for joining features
+    - Set __intersect__ as the spatial relationship
+    - Select  __flood extent layer__ as the comparison layer
+    - Specify the fields to be summarized as __Area_km2__ and __Pop__
+    - Choose __sum__ as the type of summaries to be calculated
+    - Click Run to start the process
+3. Once completed, you will have access to information on the __total affected population__ and __flooded areas__ for the entire state of Unity.
+
+
+````{dropdown} Solution: Calculate sum of affected population and flooded area for the Area of interest
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_spatial_join.mp4"></video>
+````
 
 
 
