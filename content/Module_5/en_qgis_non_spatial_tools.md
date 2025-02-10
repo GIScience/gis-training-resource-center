@@ -1,7 +1,7 @@
 # Non-Spatial processing
 
 #### Introduction:
-Non-spatial geodataprocessing in QGIS refers to the manipulation, subsetting, and analysis of attribute data within a GIS environment without directly involving spatial components or information. It involves operations on the __non-geometric attributes__ of geospatial datasets. This can include data cleaning, transformation, enrichment, and analysis based on the associated attribute information, such as population statistics, land use classifications, or economic indicators. Non-spatial geodataprocessing can be used to perform calculations, generate statistics, and gain insights into the non-spatial aspects of geospatial datasets. QGIS offers a variety of tools for non-spatial geodataprocessing to assist users in managing and analysing attribute data effectively.
+Non-spatial data processing in QGIS refers to the manipulation, subsetting, and analysis of attribute data within a GIS environment without directly involving spatial components or information. It involves operations on the __non-geometric attributes__ of geospatial datasets. This can include data cleaning, transformation, enrichment, and analysis based on the associated attribute information, such as population statistics, land use classifications, or economic indicators. Non-spatial processing can be used to perform calculations, generate statistics, and gain insights into the non-spatial aspects of geospatial datasets. QGIS offers a variety of tools for non-spatial processing to assist users in managing and analysing attribute data effectively.
 
 ```{figure} /fig/en_attribute_table_large.PNG
 ---
