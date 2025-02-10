@@ -1,6 +1,11 @@
 # Intermediate GIS Operations
 
-This chapter introduces more intermediate GIS operations that you will most likely use in your work with QGIS. The first chapter covers spatial geoprocessing, such clipping, buffering, dissolving, spatial joins, or selecting by location. Spatial operations manipulate data according to their spatial characteristics and distribution. For example, you can select the hospitals within a certain distance of an area, or delete all the roads that are not within a part of the city. The second chapter introduces non-spatial geoprocessing, which includes table functions, non-spatial queries and joins. These operations manipulate the non-spatial information. 
+This chapter introduces more intermediate GIS operations that you will most likely use in your work with QGIS. 
+
+- The first chapter covers Spatial operations that manipulate data according to their spatial characteristics and distribution, such as __clipping__, __buffering__, __dissolving__, __spatial joins__, or __selecting by location__.
+    - For example, you can select the hospitals within a certain distance of an area, or delete all the roads that are not within a part of the city. 
+- The second chapter introduces operations that manipulate the non-spatial information, such as __table functions__, __non-spatial joins__ or __non-spatial queries__.
+
 <!--ADD examples-->
 
 | __Chapter__ | __Competences & Objectives__ | 
