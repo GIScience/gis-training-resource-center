@@ -6,16 +6,14 @@ root: content/intro
 options:  # The options key will be applied to all chapters, but not sub-sections
   numbered: True
 parts:
-  - caption: Module 1
+  - caption: Modules
     chapters:
       - file: content/Module_1/en_module_1_overview.md
         sections: 
           - file: content/Module_1/en_qgis_theory.md
           - file: content/Module_1/en_qgis_installation.md
           - file: content/Module_1/en_qgis_start.md
-          - file: content/Module_1/en_qgis_module_1_exercises.md      
-  - caption: Module 2
-    chapters:
+          - file: content/Module_1/en_qgis_module_1_exercises.md
       - file: content/Module_2/en_module_2_overview.md
         sections:
           - file: content/Module_2/en_qgis_geodata_concept.md
@@ -25,8 +23,6 @@ parts:
           - file: content/Module_2/en_data_sources.md
           - file: content/Module_2/en_qgis_basemap.md
           - file: content/Module_2/en_qgis_module_2_exercises.md
-  - caption: Module 3
-    chapters:
       - file: content/Module_3/en_module_3_overview.md
         sections:
           - file: content/Module_3/en_qgis_digitalisation.md
@@ -34,10 +30,8 @@ parts:
           - file: content/Module_3/en_qgis_data_queries.md
           - file: content/Module_3/en_qgis_georeferencing.md
           - file: content/Module_3/en_qgis_module_3_exercises.md
-  - caption: Module 4 
-    chapters:
       - file: content/Module_4/en_module_4_overview.md
-        sections:
+        sections: 
           - file: content/Module_4/en_qgis_map_design_I.md
           - file: content/Module_4/en_qgis_styling_vector_data.md
           - file: content/Module_4/en_qgis_labels_vector.md
@@ -47,35 +41,25 @@ parts:
           - file: content/Module_4/en_qgis_understanding_print_layout.md
           - file: content/Module_4/en_qgis_map_examples.md
           - file: content/Module_4/en_qgis_module_4_exercises.md
-  - caption: Module 5
-    chapters:
       - file: content/Module_5/en_module_5_overview.md
-        sections: 
-        - file: content/Module_5/en_qgis_spatial_tools.md
-        - file: content/Module_5/en_qgis_non_spatial_tools.md
-        - file: content/Module_5/en_qgis_module_5_exercises.md
-  - caption: Module 6
-    chapters:
+        sections:
+          - file: content/Module_5/en_qgis_spatial_tools.md
+          - file: content/Module_5/en_qgis_non_spatial_tools.md
+          - file: content/Module_5/en_qgis_module_5_exercises.md
       - file: content/Module_6/en_module_6_overview.md
         sections:
           - file: content/Module_6/en_qgis_data_analysis_theory.md
           - file: content/Module_6/en_qgis_common_data_analysis.md
-          - file: content/Module_6/en_qgis_module_6_exercises.md  
-  - caption: Module 7
-    chapters:
+          - file: content/Module_6/en_qgis_module_6_exercises.md 
       - file: content/Module_7/en_module_7_overview.md
         sections: 
           - file: content/Module_7/en_qgis_automation_theory.md
           - file: content/Module_7/en_qgis_module_7_ex1.md
-  - caption: Module 8
-    chapters:
       - file: content/Module_8/en_module_8_overview.md
         sections: 
           - file: content/Module_8/en_qgis_remote_sensing_raster_theory.md
           - file: content/Module_8/en_qgis_remote_sensing_theory.md  
           - file: content/Module_8/en_qgis_module_8_ex1.md
-  - caption: Module 9
-    chapters:
       - file: content/Module_9/en_module_9_overview.md
         sections:
           - file: content/Module_9/en_qgis_network_analysis_theory.md
@@ -160,7 +144,5 @@ parts:
     chapters:
       - file: content/About/about_1.md
       - file: content/contribution_plan.md
-  - caption: Glossary
-    chapters:
       - file: content/Glossary/en_glossary_1.md
 
