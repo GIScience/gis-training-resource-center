@@ -1,4 +1,4 @@
-# Basic GIS Operations
+# 3. Basic GIS Operations
 
 The third module addresses operations and data manipulation that GIS practitioners will undertake 
 frequently. The first chapter teaches the process of digitisation, which is the process of creating 

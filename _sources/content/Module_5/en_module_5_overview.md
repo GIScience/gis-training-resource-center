@@ -1,4 +1,4 @@
-# Intermediate GIS Operations
+# 5. Intermediate GIS Operations
 
 This chapter introduces more intermediate GIS operations that you will most likely use in your work with QGIS. 
 

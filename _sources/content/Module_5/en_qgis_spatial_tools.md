@@ -29,7 +29,7 @@ incorporate additional information from  layers, which can help us understand a 
 
 ```{figure} /fig/en_module5_spatial_geodataprocessing.PNG
 ---
-width: 550 px
+width: 750 px
 name: module5_spatial_geodataprocessing
 ---
 Different spatial geoprocessing tools. Source: Adapted from [Saylor Academy](https://saylordotorg.github.io/text_essentials-of-geographic-information-systems/s11-geospatial-analysis-i-vector-o.html)
@@ -95,8 +95,10 @@ For example:
 ::::{card}
 __Humanitarian Example:__
 ^^^
+*A flood depth model is available, and the goal is to determine which buildings are flooded under this scenario. This can be achieved by performing a spatial join to add the flood depth to the polygon layer containing the houses.*
+<!--
 *We have a flood depth model and we want to find out which buildings are flooded under this scenario. We can find this out by performing a spatial join to add the flood depth to the polygon layer with the houses.*
-
+-->
 *The resulting map could look something like this:* 
 
 ```{figure} /fig/en_flood_damage_assessement_libya.png
@@ -180,6 +182,10 @@ Practical exercise is crucial to understand how GIS, and QGIS, works. You can fo
 
 ```
 
+In the example above ({numref}`spatial_join_example_healthsites`), we have a dataset containing the healthsites by healthsite.io
+and a dataset with the administrative boundaries (adm2) of Nigeria. We want to know in which state each healthsite is located. 
+To do this, we need to use the tool "Join Attributes by Location".
+
 ```{figure} /fig/en_spatial_join_example.png
 ---
 name: spatial_join_example_healthsites
@@ -187,10 +193,6 @@ width: 400 px
 ---
 An example of a situation where you will use a spatial join (Source: BRC)
 ```
-
-In the example above ({numref}`spatial_join_example_healthsites`), we have a dataset containing the healthsites by healthsite.io
-and a dataset with the administrative boundaries (adm2) of Nigeria. We want to know in which state each healthsite is located. 
-To do this, we need to use the tool "Join Attributes by Location":
 
 ::::{margin}
 
@@ -201,12 +203,11 @@ the right side of your screen.
 
 ::::
 
-:::{dropdown} Join attributes by location
+:::{dropdown} __Tool:__ Join attributes by location
 
 This tool takes two input layers and creates a new vector layer which has the attributes of both layers in its attribute table.
-The first input layer (see "Join to features in" in {numref}`join_attributes_by_location`) dictates which geometric features will be copied to the new 
-layer. The second input layer (see "By comparing to" in {numref}`join_attributes_by_location`) dictates the attributes that will be added to the new 
-layer on top of the attributes of the first input layer. You can select which of these attributes should be transferred to the new layer. 
+- The first input layer (see "Join to features in" in {numref}`join_attributes_by_location`) dictates which geometric features will be copied to the new layer.
+- The second input layer (see "By comparing to" in {numref}`join_attributes_by_location`) dictates the attributes that will be added to the new layer on top of the attributes of the first input layer. You can select which of these attributes should be transferred to the new layer. 
 
 
 ```{figure} /fig/en_spatial_join_1.PNG
@@ -233,13 +234,32 @@ The "Join Attributes by Location"-tool in QGIS 3.36.
 9. A new (temporary) layer called "Joined features" will appear in your layers-panel
 10. <kbd>Right-click</kbd> on the layer and select "Export" or "Make Permanent" to save the new layer.
 
-```{figure} /fig/en_3.36_join_by_location_ex1.png
----
-name: join_by_location_ex1
-width: 500 px
----
-Setting the parameters to perform the spatial join in QGIS 3.36
-```
+``````{list-table}
+:header-rows: 1
+:widths: 20 25
+
+* - Instruction
+  - Join Attributes by Location
+* - 1.  Download the necessary datasets [here]()
+    2. Unzip the files, create a new QGIS-project, and load the files into the QGIS-project. 
+    3. Search for the tool __"Join Attributes by Location"__ in the processing toolbox and <kbd>Double-Click</kbd> on it. A new window will open (see {numref}`join_by_location_ex1`).
+    4. Use the health facilities layer as the target ("Join to feature in") and the adm2 layer as the comparison layer ("By comparing to"). 
+    5. Use the `are within` geometrical predicate. 
+    6. Select the fields to add: `ADM2_EN`, `ADM2_PCODE`
+    7. Select `Discard records that could not be joined`
+    8. Click `Run` to proceed; the log should confirm success.
+    9. A new (temporary) layer called "Joined features" will appear in your layers-panel
+    10. <kbd>Right-click</kbd> on the layer and select "Export" or "Make Permanent" to save the new layer.
+  -
+    ```{figure} /fig/en_3.36_join_by_location_ex1.png
+    ---
+    name: join_by_location_ex1
+    width: 500 px
+    ---
+    Setting the parameters to perform the spatial join in QGIS 3.36
+    ```
+``````
+
 
 Congratulations, we now have added the information about the administrative region to the health facilities layer!
 We can symbolise the joined layer with the categorised symbology to verify if it worked (see {numref}`spatial_join_ex1_results_categorised`). Note that 
@@ -259,7 +279,7 @@ The different colours for the points indicate that they are located in a differe
 By default, QGIS provides three different tools to perform spatial joins. 
 
 - The first, and the most common one, is the tool __"Join attributes by location"__ which we used in the previous exercise. 
-- Furthermore, there are also the tools __"Join attributes by location (summary)"__ and __"Join attributes by nearest"__.
+- There are also the tools __"Join attributes by location (summary)"__ and __"Join attributes by nearest"__.
 
 :::::{tab-set}
 
@@ -305,7 +325,7 @@ A detailed description of the functions and settings of these tools can be found
 :::
 
 
-## Exercise 6: Calculate sum of affected population and flooded area for the Area of interest
+### Exercise: Calculate sum of affected population and flooded area for the Area of interest
 
 
 In the aftermath of flooding events, data on the affected population and the extent of flooding is crucial. 
@@ -329,7 +349,6 @@ __Join attributes by location (summary)__ tool.
 
 
 ````{dropdown} Solution: Calculate sum of affected population and flooded area for the Area of interest
-
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_spatial_join.mp4"></video>
 ````
 

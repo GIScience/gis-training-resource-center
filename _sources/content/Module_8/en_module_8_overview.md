@@ -1,4 +1,4 @@
-# Remote Sensing and Raster Data
+# 8. Remote Sensing and Raster Data
 
 Working with raster data is inherently different from working with vector data. Instead of an attribute table associated with geometric features, raster data is a grid of squares, where each square holds a value. Spatial analyses frequently use raster data, as it is useful format to describe discrete phenomena, such as elevation, slope, temperature, etc. A common type of raster data all of us have come worked with or seen is satellite imagery. The benefit of satellite imagery is that you can perform analyses remotely. The first chapter in this module introduces raster data in depth and presents the basic workflow when using raster data in QGIS and humanitarian work. The second chapter introduces the concept of remote sensing and how it can be used to gain information from satellite imagery. 
 

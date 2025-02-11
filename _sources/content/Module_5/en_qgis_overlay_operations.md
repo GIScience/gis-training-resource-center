@@ -23,9 +23,8 @@ look at each of these overlay operations in turn and provide some examples for h
 :::{card}
 __Humanitarian Example:__
 ^^^
-
-*We have flood extent data for Pakistan, but we are currently working on a map showing the flood damage in a specific administrative region. In this case,
-we can take the flood layer and clip it to the administrative boundaries of the area of interest.*
+*Flood extent data for Pakistan is available, but the focus is on mapping flood damage in a specific administrative region. In this case, the flood layer can be clipped to the administrative boundaries of the area of interest.*
+<!---*We have flood extent data for Pakistan, but we are currently working on a map showing the flood damage in a specific administrative region. In this case, we can take the flood layer and clip it to the administrative boundaries of the area of interest.*-->
 :::
 
 <!--CHECK IF THIS EXAMPLE IS NEEDED--->
@@ -66,7 +65,10 @@ as a new layer: __Road_infrastructure_Sudan.geojson__.
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_clip_roads.mp4"></video>
 ````
 
-<!--GDAL Operators are needed?--->
+
+<!--REMOVED: GDAL Operators as not used frequently enough to need inclusion in this section-->
+
+<!--GDAL Operators are needed?--
 
 In addition to the standard QGIS operation __Clip__, there are two other more advanced tools for performing clipping processes. These tools are GDAL operations, which enable the definition of the clipping extent. This extent can be either a specific area or a mask layer. The second option is quite similar to the standard clipping process provided by QGIS.
 
@@ -117,6 +119,8 @@ Screenshot of the tool Clip vector by mask layer
 
 ::::
 
+-->
+
 ### Dissolve
 
 The ![](/fig/mAlgorithmDissolve.png) `Dissolve`-tool creates a new layer and merges overlapping features from 
@@ -131,10 +135,7 @@ you to create several vector layers.
 :::{card}
 __Humanitarian Example:__
 ^^^
-
-*Our data shows roads in segments by type. We dissolve the segments to 
-create a single road layer, categorized by road type.*
-
+*Two datasets show the flood extent of two different flood events in the past year. Both layers overlap but show differences. Dissolve can create polygons that show the flooded area in the past year.*
 :::
 
 ```{figure} /fig/en_buffer_dissolve.png
@@ -160,8 +161,7 @@ Examples for analyses using buffers could be:
 :::{card} 
 __Humanitarian Example:__
 ^^^
-*We need to assess which areas live close enough to clean water sources so the population can easily reach them by walking. 
-In this case, we can create buffer zones of 2 km around a dataset with wells to see which areas are covered*
+To analyze access to clean water sources, a scenario considers how far the population can walk to reach them. A 2 km buffer is created around a dataset of wells to visualize which areas fall within this distance. This method helps assess coverage and identify gaps in access to clean water.
 
 :::
 

@@ -1,4 +1,4 @@
-# Working with Geodata
+# 2. Working with Geodata
 
 The second module develops a deeper understanding of geodata, layers and projections. These three concepts 
 lie at the core of geoinformation systems and you will need a solid understanding in order to develop 

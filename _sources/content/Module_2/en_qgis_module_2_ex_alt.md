@@ -1,6 +1,43 @@
 # Exercise 5: The world
 
+coloured icon: {octicon}`report;1em;sd-text-info`, some more text.
+
+
+```{article-info}
+:avatar: /HeiGIT_Logo_compact.svg
+:avatar-link: https://heigit.org/
+:avatar-outline: muted
+:author: Elias Naujoks
+:date: "{sub-ref}`today`"
+:read-time: "{sub-ref}`wordcount-minutes` min read"
+:class-container: sd-p-2 sd-outline-muted sd-rounded-1
+```
+
+::::{grid} auto
+:::{grid-item-card}
+:class-card: sd-text-center 
+:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
 __🔙[Back to Homepage](/content/intro.md)__
+:::
+
++++
+
+::::
+
+::::{grid} auto
+:::{grid-item-card}
+:class-card: sd-text-center 
+:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+{octicon}`home-fill;1em;sd-text-info` __Back to the Homepage__
+:::
+
++++
+
+::::
+
+:::{card} TEST
+hello
+:::
 
 :::{card}
 :link: https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_module_2_exercises.html
@@ -144,9 +181,11 @@ The folder is called “Module_2_Exercise_4_The_World" and contains the whole [s
 6. Arrange the three layers in a practical order. Remember the  [Layer Concept](/content/Wiki/en_qgis_layer_concept_wiki.md).
 7. Interact with the map and explore the data sets. Use the zoom tool and move the map.
 8. Save your project by clicking on the ![](/fig/mActionFileSave.png) or use the hotkey combination `Ctrl` + `S`
-    ```{Tip}
-    If you see `*` before the name of your project on the top left corner of QGIS this means there are unsaved changes in your project. Save your progress!
-    ```
+::::{margin}
+```{Tip}
+If you see `*` before the name of your project on the top left corner of QGIS this means there are unsaved changes in your project. Save your progress!
+```
+::::
 9. Your results should look something like this: 
 
 ```{figure} /fig/en_ex_The_world_result.png
