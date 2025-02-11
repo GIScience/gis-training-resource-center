@@ -1,4 +1,4 @@
-# Geodata management
+# 2.3. Geodata management
 
 __🔙[Back to Homepage](/content/intro.md)__
 

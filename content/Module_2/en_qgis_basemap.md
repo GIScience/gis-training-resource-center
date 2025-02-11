@@ -1,4 +1,4 @@
-# Basemaps
+# 2.6. Basemaps
 
 __🔙[Back to Homepage](/content/intro.md)__
 
