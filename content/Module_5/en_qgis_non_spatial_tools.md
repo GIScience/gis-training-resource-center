@@ -1,7 +1,13 @@
 # Non-Spatial processing
 
-#### Introduction:
-Non-spatial data processing in QGIS refers to the manipulation, subsetting, and analysis of attribute data within a GIS environment without directly involving spatial components or information. It involves operations on the __non-geometric attributes__ of geospatial datasets. This can include data cleaning, transformation, enrichment, and analysis based on the associated attribute information, such as population statistics, land use classifications, or economic indicators. Non-spatial processing can be used to perform calculations, generate statistics, and gain insights into the non-spatial aspects of geospatial datasets. QGIS offers a variety of tools for non-spatial processing to assist users in managing and analysing attribute data effectively.
+#### Introduction
+
+Non-spatial data processing in QGIS refers to the manipulation of attribute data without directly involving spatial components or information, such as the spatial relationships or geometries. 
+- It changes the non-geometric attributes of datasets (i.e., the attribute table)
+- Non-spatial processing can be used to perform calculations, generate statistics, and gain insights into the non-spatial aspects of geospatial datasets. 
+- QGIS offers a variety of tools for non-spatial processing to assist users in managing and analysing attribute data effectively.
+
+<!---This can include data cleaning, transformation, enrichment, and analysis based on the associated attribute information, such as population statistics, land use classifications, or economic indicators.-->
 
 ```{figure} /fig/en_attribute_table_large.PNG
 ---
@@ -11,17 +17,10 @@ name: attribute_table_all
 Screenshot of an attribute table for QGIS version 3.28.4
 ```
 
-## Non-spatial joins
+## Non-spatial joins (Join Attributes by Field Value)
 
-```{figure} /fig/en_join_attributes_by_field_values.PNG
----
-width: 450 px
-name: join_attributes_by_field_value
----
-Screenshot of the Join attributes by field value tool in QGIS 3.36.
-```
-
-A lot of analysis can be done with just a single layer. But, sometimes, the necessary information we need for our analysis is __split across__ different datasets/layers. With QGIS, these layers can be __combined__ to perform the analysis we want. The simplest way to combine layers is via an __attribute join__. This operation looks up information from a second data source based on a __shared attribute value__. This value functions as a common unique identifier, also known as an ID, UID, or key (see {numref}`simple_attr_join_example`).
+- A lot of analysis can be done with just a single layer. But, sometimes, the necessary information we need for our analysis is __split across__ different datasets/layers. 
+- With QGIS, these layers can be __combined__ to perform the analysis we want. The simplest way to combine layers is via an __attribute join__. This operation looks up information from a second data source based on a __shared attribute value__. This value functions as a common unique identifier, also known as an ID, UID, or key (see {numref}`simple_attr_join_example`).
 
 ```{figure} /fig/simple_attr_join_example.png
 ---
@@ -34,11 +33,11 @@ The entries in the two data tables can be joined via the common ID-field
 ::::{card}
 __Humanitarian example:__
 ^^^
-A common GIS workflow in humanitarian work involving non-spatial joins is joining data on administrative boundaries using P-codes as the common identifier/shared attribute.
+*A common GIS workflow in humanitarian work involving non-spatial joins is joining data on administrative boundaries using P-codes as the common identifier/shared attribute.
 
 P-codes are identifying codes for administrative units (e.g. country (adm0), region (adm1), district (adm2)), that were introduced to simplify joining tabular data on administrative regions. These codes clearly identify the administrative units facilitating non-spatial joins. 
 
-For example: We have a spatial dataset containing the administrative boundaries of districts (adm2) in Nigeria and a data table containing the population per district, but without the polygons. By using the P-codes as identifying attribute, we can easily join the population data with the vector dataset.
+For example: We have a spatial dataset containing the administrative boundaries of districts (adm2) in Nigeria and a data table containing the population per district, but without the polygons. By using the P-codes as identifying attribute, we can easily join the population data with the vector dataset.*
 
 ```{figure} /fig/en_attribute_join_pcode_example.png
 ---
@@ -96,7 +95,7 @@ The joined data classified using the graduated symbology for the population valu
 
 ## Table functions
 
-Table functions usually only involve a single data layer. You can add new field, delete unwanted fields, or even calculate new field using the __field calculator__. 
+Table functions usually only involve a single data layer and are manipulating the attribute table. You can add new field, delete unwanted fields, or even calculate new field using the __field calculator__. 
 
 For a comprehensive overview on the attribute table's functionality and its purpose, you're invited to explore the [Wiki](/content/Wiki/en_qgis_attribute_table_wiki.md) article on it.
 
@@ -163,6 +162,11 @@ The most important groups and their respective functionality that are provided w
 ````{dropdown} Example: Calculate the population density
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_calculate_field.mp4"></video>
 ````
+
+:::{admonition} Get Statistics
+:class: tip
+
+:::
 
 ### Basic statistics for fields
 

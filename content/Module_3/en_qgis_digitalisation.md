@@ -472,7 +472,7 @@ You can open the attribute table of the selected layer by pressing <kbd>F6</kbd>
 
 ::::
 
-1. Open the [attribute table](/content/Modul_2/en_qgis_attribute_table.md)
+1. Open the [attribute table](/content/Module_2/en_qgis_attribute_table.md)
 2. Click on ![](/fig/mActionToggleEditing.png) to enter into the editing mode.
 3. Choose the field that you want to edit. 
 4. Enter the corrected value.
