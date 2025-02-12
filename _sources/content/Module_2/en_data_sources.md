@@ -1,4 +1,4 @@
-# Data sources
+# 2.5. Data sources
 
 __🔙[Back to Homepage](/content/intro.md)__
 

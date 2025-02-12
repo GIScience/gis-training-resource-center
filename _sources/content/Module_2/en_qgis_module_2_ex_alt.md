@@ -1,52 +1,23 @@
+::::{grid} auto
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+{octicon}`home-fill;2em;sd-text-danger`
+:::
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/module_2/en_qgis_module_2_exercises.html 
+{octicon}`undo;2em;sd-text-danger`
+:::
+::::
+
 # Exercise 5: The world
 
-coloured icon: {octicon}`report;1em;sd-text-info`, some more text.
-
-
-```{article-info}
-:avatar: /HeiGIT_Logo_compact.svg
-:avatar-link: https://heigit.org/
-:avatar-outline: muted
-:author: Elias Naujoks
-:date: "{sub-ref}`today`"
-:read-time: "{sub-ref}`wordcount-minutes` min read"
-:class-container: sd-p-2 sd-outline-muted sd-rounded-1
-```
-
-::::{grid} auto
-:::{grid-item-card}
-:class-card: sd-text-center 
-:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
-__🔙[Back to Homepage](/content/intro.md)__
-:::
-
-+++
-
-::::
-
-::::{grid} auto
-:::{grid-item-card}
-:class-card: sd-text-center 
-:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
-{octicon}`home-fill;1em;sd-text-info` __Back to the Homepage__
-:::
-
-+++
-
-::::
-
-:::{card} TEST
-hello
-:::
-
-:::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_module_2_exercises.html
-__Click here to return to the exercise overview page for module 2__ 
-:::
 
 ## Characteristics of the exercise
 
 :::{card}
+:class-card: sd-border-0 sd-shadow-none
 __Aim of the exercise:__
 ^^^
 

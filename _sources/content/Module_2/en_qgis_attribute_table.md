@@ -1,4 +1,4 @@
-# Attribute Table
+# 2.4. Attribute Table
 
 __🔙[Back to Homepage](/content/intro.md)__
 

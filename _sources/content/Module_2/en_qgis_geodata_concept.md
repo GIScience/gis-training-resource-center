@@ -1,4 +1,4 @@
-# Introduction to geodata and layers
+# 2.1. Introduction to geodata and layers
 
 __🔙[Back to Homepage](/content/intro.md)__
 
