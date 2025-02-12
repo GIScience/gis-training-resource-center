@@ -1,4 +1,4 @@
-## Symbology for Raster Data
+## 4.5. Symbology for Raster Data
 
 As we have already learned, raster data are basically a grid of pixels with different (numerical) values. As such, you can't style the shape, fill or outline of raster data. Raster data is visualized by assigning a colour ramp to the pixel value. QGIS offers several options to visualise raster data. For example, you can create a hillshade with digital elevation model (DEM). This small chapter only covers the basics of visualising raster data. If you want to learn more about raster data and how to work with raster layers, take a look at [module 8](/content/Module_8/en_module_8_overview.md). 
 

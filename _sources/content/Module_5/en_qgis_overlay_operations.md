@@ -1,4 +1,4 @@
-## Overlay Operations (Clip, Dissolve, Buffer)
+## 5.2. Overlay Operations (Clip, Dissolve, Buffer)
 
 - Overlay operations allow us to combine the geometries of two layers in different ways (see {numref}`overlay_operations`). 
 - The difference to spatial joins is that the __geometries are transformed in the process__, and not primarily the attributes. 

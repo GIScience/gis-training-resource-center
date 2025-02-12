@@ -1,4 +1,4 @@
-# Digitisation
+# 3.1. Digitisation
 
 :::{button-link}
 __🔙[Back to Homepage](/content/intro.md)__

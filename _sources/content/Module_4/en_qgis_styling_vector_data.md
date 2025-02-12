@@ -1,4 +1,4 @@
-# Styling Vector Data
+# 4.2. Styling Vector Data
 
 The previous chapter went over the fundamentals of graphical symbolisation and the visual variables. In this chapter, we 
 want to apply our understanding of visual representation and learn how to use the styling panel in QGIS to customize 
