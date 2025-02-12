@@ -1,4 +1,4 @@
-## Exporting and Importing Styles
+## 4.4. Exporting and Importing Styles
 
 The layers in QGIS are saved separately from the settings and styles of a QGIS Project. This means that if you load the same layers into a different QGIS project, the symbology and styling of the data will be different. QGIS lets you save the symbology and styling of a layer as a separate file (`.qml`-files). Working with `.qml`-files saves you a lot of work and assures consistency between your maps.
 
