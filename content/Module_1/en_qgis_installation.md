@@ -1,4 +1,4 @@
-# Setting up
+# 1.2. Setting up
 
 __🔙[Back to Homepage](/content/intro.md)__
 

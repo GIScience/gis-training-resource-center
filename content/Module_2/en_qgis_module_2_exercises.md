@@ -1,4 +1,4 @@
-# Exercises for Module 2
+# 2.7. Exercises for Module 2
 
 __🔙[Back to Homepage](/content/intro.md)__
 

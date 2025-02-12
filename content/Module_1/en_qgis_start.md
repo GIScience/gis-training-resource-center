@@ -1,4 +1,4 @@
-# Getting started with QGIS
+# 1.3. Getting started with QGIS
 
 __🔙[Back to Homepage](/content/intro.md)__
 

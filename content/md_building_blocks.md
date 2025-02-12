@@ -14,6 +14,39 @@ Here are the different header blocks used in the chapters
 
 ### Exercises Headers:
 
+::::{grid} auto
+:::{grid-item-card}
+:class-card: sd-text-center 
+:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+__🔙[Back to Homepage](/content/intro.md)__
+:::
+
++++
+
+::::
+
+:::{card}
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_module_2_exercises.html
+__Click here to return to the exercise overview page for module 2__ 
+:::
+
+OR
+
+::::{grid} auto
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+{octicon}`home-fill;2em;sd-text-danger`
+:::
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/module_2/en_qgis_module_2_exercises.html 
+{octicon}`undo;2em;sd-text-danger`
+:::
+::::
+
+
+
 ### Module Chapter Headers:
 
 __[Article info:](https://sphinx-design.readthedocs.io/en/pydata-theme/additional.html)__
@@ -34,25 +67,3 @@ __[Article info:](https://sphinx-design.readthedocs.io/en/pydata-theme/additiona
 ````
 ::::
 
-
-
-
-  - caption: Module 1
-    chapters:
-      - file: content/Module_1/en_module_1_overview.md
-        sections: 
-          - file: content/Module_1/en_qgis_theory.md
-          - file: content/Module_1/en_qgis_installation.md
-          - file: content/Module_1/en_qgis_start.md
-          - file: content/Module_1/en_qgis_module_1_exercises.md      
-  - caption: Module 2
-    chapters:
-      - file: content/Module_2/en_module_2_overview.md
-        sections:
-          - file: content/Module_2/en_qgis_geodata_concept.md
-          - file: content/Module_2/en_qgis_projections.md
-          - file: content/Module_2/en_qgis_geodata_management.md
-          - file: content/Module_2/en_qgis_attribute_table.md
-          - file: content/Module_2/en_data_sources.md
-          - file: content/Module_2/en_qgis_basemap.md
-          - file: content/Module_2/en_qgis_module_2_exercises.md

@@ -1,4 +1,4 @@
-# What is GIS?
+# 1.1. What is GIS?
 
 __🔙[Back to Homepage](/content/intro.md)__
 
@@ -7,9 +7,11 @@ __🔙[Back to Homepage](/content/intro.md)__
 At its core, GIS is a computer-based system to organise data with a spatial 
 component (_geodata_). There are three core functions of GIS: 
 
-1. Connecting data to maps 
-2. Visualisation, organisation and processing of spatial data
-3. Analysing spatial data
+:::{div} sd-text-center sd-text-italic sd-text-primary
+1. Connecting data to maps  
+2. Visualisation, organisation and processing of spatial data  
+3. Analysing spatial   
+:::
 
 
 ```{figure} /fig/GIS_Core_functunality.drawio.svg
