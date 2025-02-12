@@ -1,4 +1,4 @@
-# Geodata Selection and Queries
+# 3.3. Geodata Selection and Queries
 
 Geodata selection and queries in QGIS allow targeted parts of geospatial datasets to be selected. This can be utilized for filtering and analyzing geospatial information, which are essential tasks when working with spatial data.
 \
