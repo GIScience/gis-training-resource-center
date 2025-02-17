@@ -115,10 +115,11 @@ The zip folder includes:
 | `nigeria_boundaries.geojson` |   |   |   |
 
 
-The zip folder includes:
+<!---The zip folder includes:
 
 - `nigeria_populated_places.shp` (Points) Shapefile
 - `nigeria_boundaries.geojson` GeoJSON
+--->
 
 The shapefile for populated places contains __point data__ on human settlements in Nigeria, including cities, villages and others. The GeoJSON file for the boundaries of Nigeria contains information on the administrative boundaries at levels 2 and 4 with level 2 representing the whole country and level 4 being the states.
 
