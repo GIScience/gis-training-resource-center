@@ -3,12 +3,9 @@
 
 title: GIS Resource Training Center
 author: HeiGIT gGmbH
-copyright: "This project is released under a Creative Commons BY-NC-SA license. 
-
-For more information, please visit:
-
-https://creativecommons.org/licenses/by-nc-sa/4.0/"
+copyright: HeiGIT gGmbH
 logo: IFRC_Logo_Horizontal_RGB.svg
+
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -35,5 +32,9 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
-
+  extra_footer: |
+        <p>
+        This project is released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Creative Commons BY-NC-SA 4.0 license</a>.
+        </p>
+  announcement: "Looking to contribute? Take a look at the contribution guidelines and contact us!"
 exclude_patterns: [.venv/*]
