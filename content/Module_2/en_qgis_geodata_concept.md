@@ -6,7 +6,7 @@
 :::
 ::::
 
-# 2.1. Introduction to geodata and layers
+# Introduction to geodata and layers
 
 **Competences:**
 

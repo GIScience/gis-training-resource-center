@@ -6,7 +6,7 @@
 :::
 ::::
 
-# 2.2. Projections 
+# Projections 
 
 ## Introduction
 

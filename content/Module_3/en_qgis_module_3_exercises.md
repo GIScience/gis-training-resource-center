@@ -7,7 +7,7 @@
 ::::
 
 
-# 3.5. Exercises for Module 3
+# Exercises for Module 3
 
 These exercises cover all the content in Module 3.
 

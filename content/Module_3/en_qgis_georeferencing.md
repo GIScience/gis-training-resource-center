@@ -7,7 +7,7 @@
 ::::
 
 
-# 3.4. Georeferencing 
+# Georeferencing 
 
 Georeferencing in QGIS is the process of aligning a raster image, such as a scanned map or aerial photograph, to a 
 known coordinate system so that it can be used in spatial analysis. This involves assigning real-world coordinates to 

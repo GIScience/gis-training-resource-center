@@ -7,7 +7,7 @@
 ::::
 
 
-# 3.1. Digitisation
+# Digitisation
 
 Digitisation is the process of converting geographic data from maps or images into a digital form commonly 
 represented as vector data.

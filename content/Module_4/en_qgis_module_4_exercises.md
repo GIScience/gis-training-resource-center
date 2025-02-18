@@ -6,7 +6,7 @@
 :::
 ::::
 
-# 4.9. Exercises for Module 4
+# Exercises for Module 4
 
 
 These exercises touch on all the content of Module 4.
