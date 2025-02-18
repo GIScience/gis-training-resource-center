@@ -1,3 +1,11 @@
+::::{grid} auto
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+{octicon}`home-fill;1.5em;sd-text-danger`
+:::
+::::
+
 # 9. Network Analysis
 
 This module explores the principles and practical applications of spatial network analysis within a GIS framework. The first chapter introduces spatial network theory, where you will learn the foundational concepts of how spatial relationships are modeled and analyzed. The second chapter delves into the use of OpenRouteService (ORS), a powerful tool for calculating routes and analyzing accessibility in real-world geographic networks. Finally, the module concludes with an examination of network centrality measures, equipping you with the ability to evaluate the importance and influence of individual elements within a spatial network. By the end of this module, you'll be able to apply these tools and theories to solve complex spatial network problems.

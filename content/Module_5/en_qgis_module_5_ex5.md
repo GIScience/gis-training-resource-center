@@ -1,3 +1,16 @@
+::::{grid} auto
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+{octicon}`home-fill;1.5em;sd-text-danger`
+:::
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_module_5_exercises.html 
+{octicon}`undo;1.5em;sd-text-danger`
+:::
+::::
+
 # Exercise 5: Aggregate and Assess G2P Money Transfers in Pakistan
 
 ## Characteristics of the exercise

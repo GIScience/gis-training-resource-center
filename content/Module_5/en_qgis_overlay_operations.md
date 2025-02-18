@@ -1,3 +1,11 @@
+::::{grid} auto
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+{octicon}`home-fill;1.5em;sd-text-danger`
+:::
+::::
+
 ## 5.2. Overlay Operations (Clip, Dissolve, Buffer)
 
 - Overlay operations allow us to combine the geometries of two layers in different ways (see {numref}`overlay_operations`). 

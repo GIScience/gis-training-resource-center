@@ -1,6 +1,18 @@
-# Exercise 3: Trigger & Intervention Map for Forecast-based-Action
+::::{grid} auto
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+{octicon}`home-fill;1.5em;sd-text-danger`
+:::
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_module_5_exercises.html 
+{octicon}`undo;1.5em;sd-text-danger`
+:::
+::::
 
-__🔙[Back to Homepage](/content/intro.md)__
+
+# Exercise 3: Trigger & Intervention Map for Forecast-based-Action
 
 🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
