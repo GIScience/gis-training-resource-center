@@ -1,10 +1,26 @@
+::::{grid} auto
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+{octicon}`home-fill;1.5em;sd-text-danger`
+:::
+::::
+
 # 1.3. Getting started with QGIS
-
-__🔙[Back to Homepage](/content/intro.md)__
-
 
 ## Introducing QGIS
 
+
+```{image} /fig/en_qgis_banner_website.png
+---
+name: qgis_banner
+width: 300 px
+align: right
+---
+[qgis.org](https://qgis.org/)
+```
+
+```{div} sd-text-justify
 - QGIS is an __open source geoinformation system software__. That means the source code is available for everyone, 
 making QGIS a free application. The entire source code can be viewed and downloaded on https://github.com/qgis/QGIS.
 - QGIS is a __desktop software__: that means you get a program that opens up on your computer as a window with buttons 
@@ -12,15 +28,15 @@ you can click, forms you can fill out to do tasks, and it's generally a visual i
 - You may __view, edit, capture and analyze spatial data or create printable maps__ with it. QGIS was created in 2002 
 and is a project of volunteers. And it is __constantly changing__.
 - QGIS is backed by a __large community of users__, so it’s easy to find solutions to technical issues by using QGIS forums, blogs, or sub-reddits. The official QGIS community can be found [here](https://qgis.org/en/site/forusers/support.html#support). Additionally, a list of helpful websites can be found on the [wiki here](/content/Wiki/en_qgis_common_errors_and_Issues.md).
-
-
-```{note}
-QGIS is constantly changing, with new features being added. Because of this, the newer versions can have changes or even bugs (such as crashes). However, there is always a stable version available, which is supported for longer.
 ```
+
 
 ```{note}
 Keep in mind that as QGIS gets developed further, the interface and functions of QGIS are subject to changes. The material written for this platform is referring to QGIS Version 3.36. If the training material is no longer up to date, take a look at the [QGIS Documentation](https://docs.qgis.org/3.34/en/docs/index.html).
+```
 
+```{attention}
+QGIS is constantly changing, with new features being added. Because of this, the newer versions can have changes or even bugs (such as crashes). However, there is always a stable version available, which is supported for longer. This version is called __Long-term release (LTR)__. 
 ```
 
 
@@ -37,7 +53,7 @@ There is a lot of complex math involved in the GIS, but QGIS takes care of it on
 
 :::{tab-item} Data Collection and Creation
 
-QGIS offer tools to create your own geodata. For example, with the digitizing tools, you can create points, polygons, and lines with information which can represent spatial information. Furthermore, georeferencing let's you add geographic information to various types of data, such as satellite imagery or hand-drawn maps. You will learn how to create geodata and how to georeference data in __[module 2](/content/Modul_2/en_module_2_overview.md)__. 
+QGIS offer tools to create your own geodata. For example, with the digitizing tools, you can create points, polygons, and lines with information which can represent spatial information. Furthermore, georeferencing let's you add geographic information to various types of data, such as satellite imagery or hand-drawn maps. You will learn how to create geodata and how to georeference data in __[module 2](/content/Module_2/en_module_2_overview.md)__. 
 
 Sometimes working with GIS requires you to go and collect the data in the field. In this case, you can use [web and mobile apps](/content/Wiki/en_web_and_mobile_apps_wiki.md). 
 

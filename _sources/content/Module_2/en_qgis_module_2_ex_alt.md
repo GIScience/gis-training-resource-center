@@ -2,14 +2,16 @@
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
 :link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
-{octicon}`home-fill;2em;sd-text-danger`
+{octicon}`home-fill;1.5em;sd-text-danger`
 :::
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/module_2/en_qgis_module_2_exercises.html 
-{octicon}`undo;2em;sd-text-danger`
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_module_2_exercises.html 
+{octicon}`undo;1.5em;sd-text-danger`
 :::
 ::::
+
+
 
 # Exercise 5: The world
 
@@ -17,7 +19,7 @@
 ## Characteristics of the exercise
 
 :::{card}
-:class-card: sd-border-0 sd-shadow-none
+:class-card: sd-border-1 sd-shadow-none
 __Aim of the exercise:__
 ^^^
 
@@ -45,16 +47,15 @@ __Type of trainings exercise:__
 
 ::::{grid} 2
 :::{grid-item-card}
-
-##### Estimated time demand for the exercise.
-
+__Estimated time demand for the exercise__
+^^^
 - The exercise takes around 30 minutes to complete, depending on the number of participants and trainers. 
 
 :::
 
 :::{grid-item-card}
-
-##### Relevant Wiki Articles
+__Relevant Wiki Articles__
+^^^
 
 * [QGIS Interface](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
 * [Types of Geodata](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_types_wiki.html)

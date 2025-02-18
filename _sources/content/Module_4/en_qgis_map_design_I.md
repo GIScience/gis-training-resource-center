@@ -1,3 +1,11 @@
+::::{grid} auto
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+{octicon}`home-fill;1.5em;sd-text-danger`
+:::
+::::
+
 # 4.1. Symbology and Colours
 
 The representation of geodata in maps is essential for providing useful location-based insights. This subchapter will 

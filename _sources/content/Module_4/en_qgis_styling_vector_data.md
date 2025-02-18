@@ -1,3 +1,11 @@
+::::{grid} auto
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+{octicon}`home-fill;1.5em;sd-text-danger`
+:::
+::::
+
 # 4.2. Styling Vector Data
 
 The previous chapter went over the fundamentals of graphical symbolisation and the visual variables. In this chapter, we 

@@ -117,6 +117,12 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+
+  <div class="bd-header-announcement container-fluid bd-header-announcement">
+    <div class="bd-header-announcement__content">Looking to contribute? Take a look at the [contribution guidelines](https://giscience.github.io/gis-training-resource-center/content/contribution_plan.html) and contact us!</div>
+  </div>
+
   
     <nav class="bd-header navbar navbar-expand-lg bd-navbar">
     </nav>
@@ -209,6 +215,8 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Module_5/en_module_5_overview.html">5. Intermediate GIS Operations</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_spatial_tools.html">5.1. Spatial data processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_overlay_operations.html">5.2. Overlay Operations (Clip, Dissolve, Buffer)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_centroids.html">5.3. Centroids</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_non_spatial_tools.html">5.4. Non-Spatial processing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_module_5_exercises.html">Exercises for Module 5</a></li>
 </ul>
@@ -539,7 +547,25 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="exercise-2-geodata-classification-map-of-food-insecurity-in-sierra-leone">
+  <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center sd-rounded-circle docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-home-fill sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.97 2.59a1.5 1.5 0 00-1.94 0l-7.5 6.363A1.5 1.5 0 003 10.097V19.5A1.5 1.5 0 004.5 21h4.75a.75.75 0 00.75-.75V14h4v6.25c0 .414.336.75.75.75h4.75a1.5 1.5 0 001.5-1.5v-9.403a1.5 1.5 0 00-.53-1.144l-7.5-6.363z"></path></svg></p>
+</div>
+<a class="sd-stretched-link reference external" href="https://giscience.github.io/gis-training-resource-center/content/intro.html"></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center sd-rounded-circle docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><a href="#id1"><span class="problematic" id="id2">:octicon:`undo;1.5em;sd-text-danger`</span></a></p>
+</div>
+<a class="sd-stretched-link reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_exercises.html"></a></div>
+</div>
+</div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="exercise-2-geodata-classification-map-of-food-insecurity-in-sierra-leone">
 <h1>Exercise 2 (Geodata Classification): Map of food insecurity in Sierra Leone<a class="headerlink" href="#exercise-2-geodata-classification-map-of-food-insecurity-in-sierra-leone" title="Permalink to this heading">#</a></h1>
 <section id="characteristics-of-the-exercise">
 <h2>Characteristics of the exercise<a class="headerlink" href="#characteristics-of-the-exercise" title="Permalink to this heading">#</a></h2>
@@ -690,10 +716,10 @@ To add the plugin <code class="docutils literal notranslate"><span class="pre">O
 </ul>
 </li>
 </ol>
-<figure class="align-center" id="id5">
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../_images/mod3_classification_ex_OSMsearch.png"><img alt="../../_images/mod3_classification_ex_OSMsearch.png" src="../../_images/mod3_classification_ex_OSMsearch.png" style="width: 400px;" /></a>
 <figcaption>
-<p><span class="caption-text">OSM place search.</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">OSM place search.</span><a class="headerlink" href="#id7" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Add the airports of Bo and Kenema as points to the layer <code class="docutils literal notranslate"><span class="pre">Sierra_Leone_airports</span></code>. Find help on the addition of features to a point layer <a class="reference internal" href="../Wiki/en_qgis_digitalization_wiki.html"><span class="doc std std-doc">here</span></a>.</p>
@@ -717,28 +743,28 @@ To add the plugin <code class="docutils literal notranslate"><span class="pre">O
 <ol class="arabic simple">
 <li><p>To give the hospitals and airports a more distinctive visualization, open the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> tab again for the respective layers and choose “Topology” in the dropdown menu above the bottom panel top panel. Search for the airport/hospital symbol and select it by clicking on it. Again, apply your changes by clicking <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
 </ol>
-<figure class="align-center" id="id1">
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../_images/mod3_classification_ex_Topology.png"><img alt="../../_images/mod3_classification_ex_Topology.png" src="../../_images/mod3_classification_ex_Topology.png" style="width: 900px;" /></a>
 <figcaption>
-<p><span class="caption-text">Symbol for hospital.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Symbol for hospital.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="11">
 <li><p>As a last visualisation step open the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> tab <code class="docutils literal notranslate"><span class="pre">Sierra_Leone_roads</span> <span class="pre">(Lines)</span></code> and like in step 9 open the top dropdown menu. Now instead of <code class="docutils literal notranslate"><span class="pre">Graduated</span></code> choose <a class="reference internal" href="../Wiki/en_qgis_categorized_wiki.html"><span class="doc std std-doc">Categorized Classification</span></a> and select “highway” in the <code class="docutils literal notranslate"><span class="pre">Value</span></code> menu. Click <code class="docutils literal notranslate"><span class="pre">Classify</span></code> to get a classification with individual colours for all unique values of the “highway” column. In the squares next to the classes, deselect all classes except for “primary”. You can change the colour of the classes by manually clicking and adjusting the colour in the drop “Symbol” dropdown menu near the top of the window.</p></li>
 </ol>
-<figure class="align-center" id="id2">
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../_images/mod3_classification_ex_Categorizedclassification.png"><img alt="../../_images/mod3_classification_ex_Categorizedclassification.png" src="../../_images/mod3_classification_ex_Categorizedclassification.png" style="width: 900px;" /></a>
 <figcaption>
-<p><span class="caption-text">Categorized highways Sierra Leone.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Categorized highways Sierra Leone.</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="12">
 <li><p>Set all the layers you loaded into your project to visible and arrange them in an order that is suitable for a good visualization of the food insecurity as well as the infrastructure elements. Choose a basemap that you think is suitable. Your final result could look like this:</p></li>
 </ol>
-<figure class="align-center" id="id3">
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../_images/mod3_classification_ex_Result.png"><img alt="../../_images/mod3_classification_ex_Result.png" src="../../_images/mod3_classification_ex_Result.png" style="width: 900px;" /></a>
 <figcaption>
-<p><span class="caption-text">Example for the result of this exercise.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Example for the result of this exercise.</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The layer order here from top to bottom is:</p>
@@ -750,10 +776,10 @@ To add the plugin <code class="docutils literal notranslate"><span class="pre">O
 <li><p><code class="docutils literal notranslate"><span class="pre">Sierra_leone_foodinsecurity_2015</span></code></p></li>
 <li><p>Basemap: <code class="docutils literal notranslate"><span class="pre">OpenStreetMap</span></code></p></li>
 </ul>
-<figure class="align-center" id="id4">
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../_images/mod3_classification_ex_LayerOrder.png"><img alt="../../_images/mod3_classification_ex_LayerOrder.png" src="../../_images/mod3_classification_ex_LayerOrder.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Layer order.</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Layer order.</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -835,9 +861,7 @@ By HeiGIT gGmbH
 
   <p class="copyright">
     
-      © Copyright This project is released under a Creative Commons BY-NC-SA license.
-For more information, please visit:
-https://creativecommons.org/licenses/by-nc-sa/4.0/.
+      © Copyright HeiGIT gGmbH.
       <br/>
     
   </p>
@@ -850,6 +874,12 @@ https://creativecommons.org/licenses/by-nc-sa/4.0/.
   
   <div class="footer-item">
     
+<div class="extra_footer">
+  <p>
+This project is released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Creative Commons BY-NC-SA 4.0 license</a>.
+</p>
+
+</div>
   </div>
   
 </div>

@@ -1,6 +1,12 @@
-# 2.4. Attribute Table
+::::{grid} auto
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+{octicon}`home-fill;1.5em;sd-text-danger`
+:::
+::::
 
-__🔙[Back to Homepage](/content/intro.md)__
+# 2.4. Attribute Table
 
 Each vector layer consists of geometric features (points, lines or polygons) and 
 an __attribute table__. The attribute table contains information on each feature 

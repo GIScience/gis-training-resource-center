@@ -1,6 +1,12 @@
-# Exercises for Module 5
+::::{grid} auto
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+{octicon}`home-fill;1.5em;sd-text-danger`
+:::
+::::
 
-__🔙[Back to Homepage](/content/intro.md)__
+# Exercises for Module 5
 
 These exercises touch on all the content of module 5.
 

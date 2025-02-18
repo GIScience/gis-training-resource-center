@@ -1,4 +1,12 @@
-# Exercise 2: Part 2: Calculate vulnerability index
+::::{grid} auto
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+{octicon}`home-fill;1.5em;sd-text-danger`
+:::
+::::
+
+# Exercise 1: Part 2: Calculate vulnerability index
 
 ## Characteristics of the exercise
 

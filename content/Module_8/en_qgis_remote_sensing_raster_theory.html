@@ -119,6 +119,12 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+
+  <div class="bd-header-announcement container-fluid bd-header-announcement">
+    <div class="bd-header-announcement__content">Looking to contribute? Take a look at the [contribution guidelines](https://giscience.github.io/gis-training-resource-center/content/contribution_plan.html) and contact us!</div>
+  </div>
+
   
     <nav class="bd-header navbar navbar-expand-lg bd-navbar">
     </nav>
@@ -211,6 +217,8 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Module_5/en_module_5_overview.html">5. Intermediate GIS Operations</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_spatial_tools.html">5.1. Spatial data processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_overlay_operations.html">5.2. Overlay Operations (Clip, Dissolve, Buffer)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_centroids.html">5.3. Centroids</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_non_spatial_tools.html">5.4. Non-Spatial processing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_module_5_exercises.html">Exercises for Module 5</a></li>
 </ul>
@@ -557,7 +565,18 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="remote-sensing-and-raster-data-theory">
+  <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center sd-rounded-circle docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-home-fill sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.97 2.59a1.5 1.5 0 00-1.94 0l-7.5 6.363A1.5 1.5 0 003 10.097V19.5A1.5 1.5 0 004.5 21h4.75a.75.75 0 00.75-.75V14h4v6.25c0 .414.336.75.75.75h4.75a1.5 1.5 0 001.5-1.5v-9.403a1.5 1.5 0 00-.53-1.144l-7.5-6.363z"></path></svg></p>
+</div>
+<a class="sd-stretched-link reference external" href="https://giscience.github.io/gis-training-resource-center/content/intro.html"></a></div>
+</div>
+</div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="remote-sensing-and-raster-data-theory">
 <h1>Remote Sensing and Raster data theory 🛰️<a class="headerlink" href="#remote-sensing-and-raster-data-theory" title="Permalink to this heading">#</a></h1>
 <p>🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧</p>
 <section id="what-is-raster-data">
@@ -568,7 +587,7 @@ document.write(`
 <figure class="align-default" id="basic-concept-of-a-spatial-raster">
 <a class="reference internal image-reference" href="../../_images/mod8_rasterdata_rasterbasics.png"><img alt="../../_images/mod8_rasterdata_rasterbasics.png" src="../../_images/mod8_rasterdata_rasterbasics.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 180 </span><span class="caption-text">Basic concept of a spatial raster</span><a class="headerlink" href="#basic-concept-of-a-spatial-raster" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 187 </span><span class="caption-text">Basic concept of a spatial raster</span><a class="headerlink" href="#basic-concept-of-a-spatial-raster" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -584,7 +603,7 @@ document.write(`
 <figure class="align-default" id="id2">
 <a class="reference internal image-reference" href="../../_images/mod8_rasterdata_DEM.png"><img alt="../../_images/mod8_rasterdata_DEM.png" src="../../_images/mod8_rasterdata_DEM.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 181 </span><span class="caption-text">Exemplary Digital Elevation Model of an area in the Indian Himalayas</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 188 </span><span class="caption-text">Exemplary Digital Elevation Model of an area in the Indian Himalayas</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p><strong>Discontinuous</strong> rasters contain categorical data, where each pixel represents a discrete class value rather than a value on a continuous scale. The information in these types of raster is sometimes also suitable for the storage with vector data. Some examples of classified maps include:</p>
@@ -596,7 +615,7 @@ document.write(`
 <figure class="align-default" id="example-land-cover">
 <a class="reference internal image-reference" href="../../_images/mod8_rasterdata_lulcexample.png"><img alt="../../_images/mod8_rasterdata_lulcexample.png" src="../../_images/mod8_rasterdata_lulcexample.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 182 </span><span class="caption-text">Exemplary land cover classification raster of the USA</span><a class="headerlink" href="#example-land-cover" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 189 </span><span class="caption-text">Exemplary land cover classification raster of the USA</span><a class="headerlink" href="#example-land-cover" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -613,7 +632,7 @@ document.write(`
 <figure class="align-default" id="different-spatial-resolutions-of-the-same-raster">
 <a class="reference internal image-reference" href="../../_images/mod8_rasterdata_spatialresolution.png"><img alt="../../_images/mod8_rasterdata_spatialresolution.png" src="../../_images/mod8_rasterdata_spatialresolution.png" style="width: 900px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 183 </span><span class="caption-text">Different spatial resolutions of the same raster</span><a class="headerlink" href="#different-spatial-resolutions-of-the-same-raster" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 190 </span><span class="caption-text">Different spatial resolutions of the same raster</span><a class="headerlink" href="#different-spatial-resolutions-of-the-same-raster" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -635,7 +654,7 @@ This metadata helps users to understand the content, origin, quality and appropr
 <figure class="align-default" id="metadata-example">
 <a class="reference internal image-reference" href="../../_images/mod8_rasterdata_metadata.png"><img alt="../../_images/mod8_rasterdata_metadata.png" src="../../_images/mod8_rasterdata_metadata.png" style="width: 900px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 184 </span><span class="caption-text">Metadata of raster dataset of population counts (Worldpop)</span><a class="headerlink" href="#metadata-example" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 191 </span><span class="caption-text">Metadata of raster dataset of population counts (Worldpop)</span><a class="headerlink" href="#metadata-example" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -661,7 +680,7 @@ You have a Digital Elevation Model with the Altitude in m and a land cover class
 <figure class="align-default" id="id1">
 <a class="reference internal image-reference" href="../../_images/mod8_rasterdata_rastercalculator.png"><img alt="../../_images/mod8_rasterdata_rastercalculator.png" src="../../_images/mod8_rasterdata_rastercalculator.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 185 </span><span class="caption-text">Interface of the “Raster calculator” tool</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 192 </span><span class="caption-text">Interface of the “Raster calculator” tool</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The wanted result can be achieved by firstly selecting both of the relevant rasters as inputs for the raster calculator and then using the expression interface to select all pixels with a elevation above 1500m ( “( “DEM&#64;1” &gt;  1500)”) and a land cover value of “5” (”( “Landcover&#64;1” = 5 ) “) by connecting both expression with the logical operator “AND”. In the calculated raster all pixels that fulfill the condition will have the value “1”, all other pixels the value “0”.</p>
@@ -691,7 +710,7 @@ Solution<div class="sd-summary-down docutils">
 <figure class="align-center" id="zonalstatistics-interface">
 <a class="reference internal image-reference" href="../../_images/en_3.34_m8ex1_zonalstat.png"><img alt="../../_images/en_3.34_m8ex1_zonalstat.png" src="../../_images/en_3.34_m8ex1_zonalstat.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 186 </span><span class="caption-text">Interface of the “Zonal statistics” tool</span><a class="headerlink" href="#zonalstatistics-interface" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 193 </span><span class="caption-text">Interface of the “Zonal statistics” tool</span><a class="headerlink" href="#zonalstatistics-interface" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -705,7 +724,7 @@ Solution<div class="sd-summary-down docutils">
 <figure class="align-center" id="align-rasters-interface">
 <a class="reference internal image-reference" href="../../_images/en_3.34_m8_alignrasters.png"><img alt="../../_images/en_3.34_m8_alignrasters.png" src="../../_images/en_3.34_m8_alignrasters.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 187 </span><span class="caption-text">Interface of the “Align Rasters” tool</span><a class="headerlink" href="#align-rasters-interface" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 194 </span><span class="caption-text">Interface of the “Align Rasters” tool</span><a class="headerlink" href="#align-rasters-interface" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
@@ -875,9 +894,7 @@ By HeiGIT gGmbH
 
   <p class="copyright">
     
-      © Copyright This project is released under a Creative Commons BY-NC-SA license.
-For more information, please visit:
-https://creativecommons.org/licenses/by-nc-sa/4.0/.
+      © Copyright HeiGIT gGmbH.
       <br/>
     
   </p>
@@ -890,6 +907,12 @@ https://creativecommons.org/licenses/by-nc-sa/4.0/.
   
   <div class="footer-item">
     
+<div class="extra_footer">
+  <p>
+This project is released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Creative Commons BY-NC-SA 4.0 license</a>.
+</p>
+
+</div>
   </div>
   
 </div>

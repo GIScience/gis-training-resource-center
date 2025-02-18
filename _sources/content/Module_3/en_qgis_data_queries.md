@@ -1,3 +1,13 @@
+::::{grid} auto
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+{octicon}`home-fill;1.5em;sd-text-danger`
+:::
+::::
+
+
+
 # 3.3. Geodata Selection and Queries
 
 Geodata selection and queries in QGIS allow targeted parts of geospatial datasets to be selected. This can be utilized for filtering and analyzing geospatial information, which are essential tasks when working with spatial data.

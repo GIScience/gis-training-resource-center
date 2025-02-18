@@ -1,3 +1,11 @@
+::::{grid} auto
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+{octicon}`home-fill;1.5em;sd-text-danger`
+:::
+::::
+
 # Network centrality measures and its application in QGIS
 
 In chapter {ref}`content:references:module9:network-theory` we introduced the concept of spatial networks for the application of routing and accessibility. This chapter aims at extending our understanding of networks encompassing metrics to describe their shape, function and general properties.

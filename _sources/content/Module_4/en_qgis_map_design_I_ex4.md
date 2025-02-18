@@ -1,9 +1,18 @@
+::::{grid} auto
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+{octicon}`home-fill;1.5em;sd-text-danger`
+:::
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_module_4_exercises.html 
+{octicon}`undo;1.5em;sd-text-danger`
+:::
+::::
+
 # Map design Exercise : Creating a Map of Pakistan
 
-:::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_module_4_exercises.html
-__Click here to return to the exercise overview page for module 4__ 
-:::
 ::::{grid} 2
 :::{grid-item-card}
 ## Aim of the exercise:
