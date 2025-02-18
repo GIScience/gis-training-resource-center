@@ -1,3 +1,12 @@
+::::{grid} auto
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+{octicon}`home-fill;1.5em;sd-text-danger`
+:::
+::::
+
+
 # 3. Basic GIS Operations
 
 The third module addresses operations and data manipulation that GIS practitioners will undertake 

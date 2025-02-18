@@ -1,11 +1,17 @@
-# Exercise 2: Basic geodata processing
-
-__[🔙🏠 Back to Homepage](/content/intro.md)__
-
-:::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_module_2_exercises.html
-__Click here to return to the exercise overview page for module 2__ 
+::::{grid} auto
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+{octicon}`home-fill;1.5em;sd-text-danger`
 :::
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_module_2_exercises.html 
+{octicon}`undo;1.5em;sd-text-danger`
+:::
+::::
+
+# Exercise 2: Basic geodata processing
 
 ## Characteristics of the exercise
 

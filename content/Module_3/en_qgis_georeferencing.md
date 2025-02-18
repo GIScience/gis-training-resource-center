@@ -1,3 +1,12 @@
+::::{grid} auto
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+{octicon}`home-fill;1.5em;sd-text-danger`
+:::
+::::
+
+
 # 3.4. Georeferencing 
 
 Georeferencing in QGIS is the process of aligning a raster image, such as a scanned map or aerial photograph, to a 

@@ -11,8 +11,6 @@
 :::
 ::::
 
-
-
 # Exercise 1: Understanding the QGIS Interface
 
 ## Aim of the exercise
