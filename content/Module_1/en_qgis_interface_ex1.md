@@ -1,6 +1,17 @@
-# Exercise 1: Understanding the QGIS Interface
+::::{grid} auto
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+{octicon}`home-fill;1.5em;sd-text-danger`
+:::
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_module_1_exercises.html 
+{octicon}`undo;1.5em;sd-text-danger`
+:::
+::::
 
-__[🔙🏠](/content/intro.md)__
+# Exercise 1: Understanding the QGIS Interface
 
 ## Aim of the exercise
 

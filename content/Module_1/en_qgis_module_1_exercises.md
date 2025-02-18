@@ -1,6 +1,12 @@
-# 1.4. Exercises for Module 1
+::::{grid} auto
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+{octicon}`home-fill;1.5em;sd-text-danger`
+:::
+::::
 
-__🔙[Back to Homepage](/content/intro.md)__
+# 1.4. Exercises for Module 1
 
 This page has all the exercises from Module 1 - Introduction to GIS.
 

@@ -1,6 +1,13 @@
+::::{grid} auto
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+{octicon}`home-fill;1.5em;sd-text-danger`
+:::
+::::
+
 # 2.7. Exercises for Module 2
 
-__🔙[Back to Homepage](/content/intro.md)__
 
 These exercises are designed to support a QGIS-training and can be done with participants as follow-along exercises or as homework before the next training. 
 - Exercise 1 and 2 cover the basics to familiarise beginners with geodata and how to import, inspect, and save vector data in QGIS. These exercises are suited for follow-along sessions. 

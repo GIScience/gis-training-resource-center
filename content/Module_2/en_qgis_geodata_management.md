@@ -1,6 +1,13 @@
+::::{grid} auto
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+{octicon}`home-fill;1.5em;sd-text-danger`
+:::
+::::
+
 # 2.3. Geodata management
 
-__🔙[Back to Homepage](/content/intro.md)__
 
 In this chapter, we will have a closer look at how to store geodata on your computer to work in 
 QGIS or other GIS applications. 

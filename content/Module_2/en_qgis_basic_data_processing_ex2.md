@@ -1,11 +1,17 @@
-# Exercise 2: Basic geodata processing
-
-__[🔙🏠 Back to Homepage](/content/intro.md)__
-
-:::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_module_2_exercises.html
-__Click here to return to the exercise overview page for module 2__ 
+::::{grid} auto
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+{octicon}`home-fill;1.5em;sd-text-danger`
 :::
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_module_2_exercises.html 
+{octicon}`undo;1.5em;sd-text-danger`
+:::
+::::
+
+# Exercise 2: Basic geodata processing
 
 ## Characteristics of the exercise
 
@@ -115,10 +121,11 @@ The zip folder includes:
 | `nigeria_boundaries.geojson` |   |   |   |
 
 
-The zip folder includes:
+<!---The zip folder includes:
 
 - `nigeria_populated_places.shp` (Points) Shapefile
 - `nigeria_boundaries.geojson` GeoJSON
+--->
 
 The shapefile for populated places contains __point data__ on human settlements in Nigeria, including cities, villages and others. The GeoJSON file for the boundaries of Nigeria contains information on the administrative boundaries at levels 2 and 4 with level 2 representing the whole country and level 4 being the states.
 

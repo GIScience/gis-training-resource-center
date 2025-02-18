@@ -1,8 +1,12 @@
+::::{grid} auto
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+{octicon}`home-fill;1.5em;sd-text-danger`
+:::
+::::
+
 # 1.1. What is GIS?
-
-__🔙[Back to Homepage](/content/intro.md)__
-
-
 
 At its core, GIS is a computer-based system to organise data with a spatial 
 component (_geodata_). There are three core functions of GIS: 

@@ -1,3 +1,11 @@
+::::{grid} auto
+:::{grid-item-card}
+:class-card: sd-text-center sd-rounded-circle
+:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+{octicon}`home-fill;1.5em;sd-text-danger`
+:::
+::::
+
 # 5. Intermediate GIS Operations
 
 This chapter introduces more intermediate GIS operations that you will most likely use in your work with QGIS. 
