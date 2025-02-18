@@ -36,5 +36,5 @@ html:
         <p>
         This project is released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Creative Commons BY-NC-SA 4.0 license</a>.
         </p>
-  announcement: "Looking to contribute? Take a look at the [contribution guidelines](https://giscience.github.io/gis-training-resource-center/content/contribution_plan.html) and contact us!"
+  announcement: "Looking to contribute? Take a look at the contribution guidelines and contact us!"
 exclude_patterns: [.venv/*]
