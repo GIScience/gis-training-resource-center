@@ -1,19 +1,25 @@
 # Markdown building blocks for the platform
 
-This page is a collection of syntaxes for the different building blocks used in the jupyterbook for standard markdown, markdown Myst and Sphynx design
+This page is a collection of syntaxes for the different building blocks used in the jupyterbook for standard markdown, markdown Myst and Sphynx design.
 
-## Websites
+## Websites with information
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/display
 
+https://mystmd.org/guide/figures
+
+https://jupyterbook.org/en/stable/advanced/html.html
+
+https://docs.readthedocs.com/platform/stable/addons.html?utm_content=flyout&utm_source=myst-parser
 
 
-## Headers
+## Headers 
 
-Here are the different header blocks used in the chapters
+Here are the different header blocks used in the chapters at the beginning of pages.
 
 ### Exercises Headers:
 
+<!--OUTDATED
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center 
@@ -21,14 +27,13 @@ Here are the different header blocks used in the chapters
 __🔙[Back to Homepage](/content/intro.md)__
 :::
 
-+++
-
 ::::
 
 :::{card}
 :link: https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_module_2_exercises.html
 __Click here to return to the exercise overview page for module 2__ 
 :::
+-->
 
 OR
 
@@ -44,7 +49,6 @@ OR
 {octicon}`undo;2em;sd-text-danger`
 :::
 ::::
-
 
 
 ### Module Chapter Headers:
@@ -67,3 +71,16 @@ __[Article info:](https://sphinx-design.readthedocs.io/en/pydata-theme/additiona
 ````
 ::::
 
+
+
+## Real World Scenarios
+
+:::{topic} This is an optional topic title
+:header: test
+This is an topic, with standalone ideas.
+:::
+
+(my-paragraph)=
+Test test test!
+
+Please see [me](#my-paragraph)

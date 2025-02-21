@@ -6,7 +6,7 @@
 :::
 ::::
 
-# 5.1. Spatial data processing
+# Spatial data processing
 
 ## Introduction
 

@@ -6,7 +6,7 @@
 :::
 ::::
 
-# 2.6. Basemaps
+# Basemaps
 
 
 <!-- CLARIFY: This section could be rewritten more clearly; 

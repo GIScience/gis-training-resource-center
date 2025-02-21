@@ -6,7 +6,7 @@
 :::
 ::::
 
-# 1.1. What is GIS?
+# What is GIS?
 
 At its core, GIS is a computer-based system to organise data with a spatial 
 component (_geodata_). There are three core functions of GIS: 
@@ -236,7 +236,7 @@ Street Pump__, identified as the __source of contamination__ in the 1854 outbrea
 <iframe src="https://www.arcgis.com/apps/PublicInformation/index.html?appid=d7deb67f810d46dfacb80ff80ac224e9" width="750" height="500"></iframe>
 :::
 
-# Common map types in humanitarian response
+## Common map types in humanitarian response
 
 :::{note}
 

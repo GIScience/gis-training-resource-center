@@ -7,7 +7,7 @@
 ::::
 
 
-# 3.2. Geodata Classification
+# Geodata Classification
 
 
 Spatial data classification in GIS involves categorising geographic information into distinct groups or 

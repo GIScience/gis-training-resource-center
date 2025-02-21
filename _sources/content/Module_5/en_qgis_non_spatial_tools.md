@@ -6,7 +6,7 @@
 :::
 ::::
 
-# 5.4. Non-Spatial processing
+# Non-Spatial processing
 
 #### Introduction
 

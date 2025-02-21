@@ -12,7 +12,7 @@
 ::::
 
 
-# Digitization Exercise 1
+# Digitisation Exercise 1
 
 # Aim of the exercise:
 

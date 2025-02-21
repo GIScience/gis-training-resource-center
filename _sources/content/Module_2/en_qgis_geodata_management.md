@@ -6,7 +6,7 @@
 :::
 ::::
 
-# 2.3. Geodata management
+# Geodata management
 
 
 In this chapter, we will have a closer look at how to store geodata on your computer to work in 
