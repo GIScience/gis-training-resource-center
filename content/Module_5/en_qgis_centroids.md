@@ -6,7 +6,7 @@
 :::
 ::::
 
-# 5.3. Centroids
+# Centroids
 
 This process creates a new point layer, with points representing the centroids of the geometries of the input layer. 
 

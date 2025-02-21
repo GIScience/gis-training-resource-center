@@ -6,7 +6,7 @@
 :::
 ::::
 
-# 2.4. Attribute Table
+# Attribute Table
 
 Each vector layer consists of geometric features (points, lines or polygons) and 
 an __attribute table__. The attribute table contains information on each feature 

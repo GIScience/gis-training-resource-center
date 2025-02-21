@@ -1,3 +1,7 @@
+<script data-goatcounter="https://gtrc.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+
 ```{figure} /fig/HeiGIT_Logo_base.svg
 ---
 height: 75 
@@ -6,19 +10,28 @@ align: center
 ---
 ```
 ___
-# Welcome to the IFRC Network GIS Training Platform
- 
 
-:::{card}
+```{div} sd-text-center
+# Welcome to the IFRC Network GIS Training Platform
+```
+
+:::{card} Teach GIS for Humanitarian Work
+:class-card: sd-bg-white sd-border-0
+:header: Teach GIS for Humanitarian Work
+The One-Stop-Shop for teaching Geoinformation System (GIS) skills for the work in the Red Cross Red Crescent Network.
+:::
+
+<!---:::{card}
 :class-card: sd-text-justify sd-border-1
 __Teach GIS for Humanitarian Work__
 ^^^
 The One-Stop-Shop for teaching Geoinformation System (GIS) skills for the work in the Red Cross Red Crescent Network
 :::
-
+-->
 
 ::::{grid} 2
 :::{card}
+:class-card: sd-text-center
 :link: https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_TOT_intro.html
 
 __[Start Teaching](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_TOT_intro.html)__ ➡️
@@ -26,6 +39,7 @@ __[Start Teaching](https://giscience.github.io/gis-training-resource-center/cont
 :::
 
 :::{card}
+:class-card: sd-text-center
 :link: https://giscience.github.io/gis-training-resource-center/content/Module_1/en_module_1_overview.html
 
 __[Start Learning](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_module_1_overview.html)__ ➡️

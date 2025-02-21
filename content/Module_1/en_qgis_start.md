@@ -6,7 +6,8 @@
 :::
 ::::
 
-# 1.3. Getting started with QGIS
+# Getting started with QGIS
+
 
 ## Introducing QGIS
 
@@ -133,11 +134,13 @@ A QGIS project file has the format ending `.qgz`
 
 The interface of QGIS is at first glance quite complex. However, once you know all the components you will be able to orientate yourself quickly. Here you can find a description of all components of the interface.
 
+::::{sidebar}
 ```{tip}
 
 When you hover with your mouse cursor over icons, text will appear which explains the function of the button.
 
 ```
+::::
 
 ```{figure} /fig/en_QGIS_GUI.png
 ---

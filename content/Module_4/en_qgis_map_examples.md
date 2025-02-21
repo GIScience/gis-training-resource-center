@@ -6,7 +6,7 @@
 :::
 ::::
 
-# 4.8. Good Map Design & Semiological Errors
+# Good Map Design & Semiological Errors
 
 
 In this chapter we will discuss well designed maps and give examples of how to recreate specific design elements in QGIS. A second part of this chapter will focus on common semiological missteps. If you need further examples for good map design, check out these websites/repositories:
