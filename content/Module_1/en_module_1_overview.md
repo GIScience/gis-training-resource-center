@@ -1,3 +1,6 @@
+<script data-goatcounter="https://gtrc.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
@@ -9,8 +12,6 @@
 # Introduction to GIS
 
 The first module is aimed to familiarise beginners with the concept of geographic information systems (GIS) by providing an overview and a definition of GIS, and introduce the open-source application QGIS. The first chapter "What is GIS?" explains in basic terms the concept of geographic information systems and provides examples of GIS being used in humanitarian work. The second chapter addresses the installation of QGIS. The third chapter introduces QGIS as an open-source program. The main functionality and interface are explained. The first module has only one exercise where participants will learn how to navigate the QGIS interface and create, save and open QGIS-projects. 
-
-## Content
 
 | __Chapter__ | __Competences & Objectives__ |
 | ----------- | ---------------------------- |
