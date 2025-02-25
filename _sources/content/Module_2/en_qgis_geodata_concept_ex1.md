@@ -131,6 +131,7 @@ The exercise data should be saved in a location where you can easily find them a
 ```
 
 ### Tasks
+
 1. Open the files you have downloaded in QGIS. 
    - Unzip the folder with the exercise data. 
    - The geopackage (`.gpkg`) and shapefile (`.shp`) can be dragged and dropped onto the map canvas in QGIS. 
@@ -142,13 +143,14 @@ The exercise data should be saved in a location where you can easily find them a
          - Click on `Point Coordinates` and select `longitude_deg` as your __"X field"__ and `latitude_deg` as your __"Y field"__.
       - Click add. a new point layer with the airports should appear on your map canvas.
 
-:::{figure} /fig/en_3.36_add_csv.png
+
+```{figure} /fig/en_3.36_add_csv.png
 ---
 width: 500 px
 name: navigation to add csv layer
 ---
 Opening the CSV-import window
-:::
+```
 
 <!-- FIXME: We haven't shown people how to open files yet. 
 EDIT: Moved this Exercise after geodata management -->

@@ -130,7 +130,7 @@ A QGIS project file has the format ending `.qgz`
 ```
 
 
-## Overview of QGIS Interface
+## Overview of the QGIS Interface
 
 The interface of QGIS is at first glance quite complex. However, once you know all the components you will be able to orientate yourself quickly. Here you can find a description of all components of the interface.
 

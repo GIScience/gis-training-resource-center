@@ -49,7 +49,7 @@ The data to create maps or perform GIS analyses can come from various sources (S
 :::{dropdown} Overview of useful data repositories
 :open: 
 
-### General geodata 
+## General geodata 
 
 | Name | Data | Link |
 | :-------------------- | :----------------- | :---------- |
@@ -61,7 +61,7 @@ The data to create maps or perform GIS analyses can come from various sources (S
 | OSM Boundaries | Administrative boundaries (need to authenticate via your osm account) | https://osm-boundaries.com |
 | GDAM | Administrative boundaries | gadm.org |
 
-### Humanitarian data
+## Humanitarian data
 
 | Name | Data | Link |
 | :-------------------- | :----------------- | :---------- |
@@ -71,7 +71,7 @@ The data to create maps or perform GIS analyses can come from various sources (S
 | Waterpoint | Data on waterpoints | https://www.waterpointdata.org | 
 
 
-### Disaster data
+## Disaster data
 
 | Name | Data | Link |
 | :-------------------- | :----------------- | :---------- |
@@ -83,7 +83,7 @@ The data to create maps or perform GIS analyses can come from various sources (S
 | WFP Vulnerability Analysis and Mapping | Data on food security, hazards, conflicts, climate | https://dataviz.vam.wfp.org/ |
 
 
-### Population data
+## Population data
 
 | Name | Data | Link |
 | :-------------------- | :----------------- | :---------- |
@@ -94,7 +94,7 @@ The data to create maps or perform GIS analyses can come from various sources (S
 | Pangea | Environmental & biosciences data | https://www.pangaea.de/ |
 | United Nations Population Fund | Data on sexual and reproductive health and population trends | https://www.unfpa.org/data
 
-### Buildings data
+## Buildings data
 
 | Name | Data | Link |
 | :-------------------- | :----------------- | :---------- |
@@ -102,7 +102,7 @@ The data to create maps or perform GIS analyses can come from various sources (S
 | VIDA building footprint | Combined Google and Microsoft building footprint datasets | https://beta.source.coop/repositories/vida/google-microsoft-open-buildings/download/ |
 | Open-building | Google building footprints | https://sites.research.google/open-buildings/#download |
 
-### Remote sensing/earth observation data
+## Remote sensing/earth observation data
 
 | Name | Data | Link |
 | :-------------------- | :----------------- | :---------- |

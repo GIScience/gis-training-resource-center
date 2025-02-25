@@ -34,7 +34,7 @@ data.
 
 :::
 
-### Opening the attribute table
+## Opening the attribute table
 
 Having a look into the attribute table is essential to understand and get an overview of the 
 data you are working with. After downloading and import a dataset into QGIS, you will most likely open the attribute table to understand the data and see what information is available. Understanding what kind of information is available is indispensable when working with GIS software.
@@ -110,7 +110,7 @@ Opening the attribute table in QGIS 3.36
 <!-- ADD: What will be the most important of these. Needs more explanation.-->
 
 
-### Sort the attribute table
+## Sort the attribute table
 
 You can sort data in the attribute table by clicking on a column header. Text data will 
 be sorted alphabetically and numeric data will be sorted by value. To reverse 
@@ -140,7 +140,7 @@ Attribute table sorted descendingly.
 ```
 ::::
 
-### Zoom in on a specific feature via attribute table
+## Zoom in on a specific feature via attribute table
 
 You can zoom in on a specific feature if you need to locate it geographically or you want to get a closer look: 
 
@@ -151,7 +151,7 @@ You can zoom in on a specific feature if you need to locate it geographically or
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zoom_to_feature.mp4"></video>
 :::
 
-### Manually select features in the attribute table
+## Manually select features in the attribute table
 
 To interact with features in a layer you have to select these features. One way 
 to select features is via the attribute table.
@@ -167,7 +167,7 @@ to select features is via the attribute table.
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_attribute_table_select.mp4"></video>
 :::
 
-### Zoom to selected area
+## Zoom to selected area
 
 Now that you know how to select features, you can zoom onto your area of 
 interest. To do so you can click on the symbol on the toolbar or right click 
@@ -191,7 +191,7 @@ name: Zoom to Selection, right-click.
 Screenshot of how to zoom to Selection by clicking right.
 ```
 
-### Save only selected features as a new file
+## Save only selected features as a new file
 
 After you have selected your data, you might want to proceed with only the 
 selection. You can save your selection as new layer. To do so right click on the 
