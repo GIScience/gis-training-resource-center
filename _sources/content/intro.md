@@ -9,11 +9,10 @@ name: HeiGIT Logo
 align: center
 ---
 ```
+
 ___
 
-```{div} sd-text-center
 # Welcome to the IFRC Network GIS Training Platform
-```
 
 :::{card} Teach GIS for Humanitarian Work
 :class-card: sd-bg-white sd-border-0
