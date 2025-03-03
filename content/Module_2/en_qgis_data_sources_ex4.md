@@ -269,6 +269,7 @@ Have a look at both.
     ---
     QuickOSM hospital query
     ```
+
 3. Check out the new layers in the layer panel. Open the attribute table of the 
    point layer. Check the “healthcare” and “amenity” columns. Which data would be 
    missing if you would have used only one of the keys?
@@ -287,14 +288,14 @@ Have a look at both.
     ---
     QuickOSM hospital with emergency  capacity query
     ```
+
 <!-- SUGGESTION: This exercise is already long - suggest leaving out the hotels query -->
 6.	Now try to create a query that shows all accommodations like hotels on 
    the island. To do that, use this [wiki page](https://wiki.openstreetmap.org/wiki/DE:Key:tourism). 
    The solution can be found in the dropdown menu below.
 
 
-
-```{dropdown}  Solution accommodation query
+::::{dropdown}  Solution accommodation query
 
 ```{figure} /fig/en_quick_OSM_accomedation_key.png
 ---
@@ -304,6 +305,7 @@ name: QuickOSM accommodation query
 ---
 QuickOSM accommodation query
 ```
+::::
 
 | Advantages  |  Disadvantages |
 |---|---|

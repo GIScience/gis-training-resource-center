@@ -51,7 +51,6 @@ numbers, health indicators, historical events, etc.
 
 ### Vector data
 
-
 Vector data are digital features and they can store geographic/spatial information, as well as other data attributes. As such, they are ideal to visualise information on a map. Each feature can be displayed on a maps using one out of three geometries: __points, lines, or polygons__. A layer can only contain features with same type of geometry. 
 
 
@@ -85,6 +84,7 @@ Geographic information can be an address and/or GPS coordinates. (Source: BRC)
 - Features are displayed on maps with a geometric representation, but they are made of information organized in tables (see {numref}`geodata example`). 
 - Each row in the table will be one feature on the map, while each column will contain one attribute information (field). 
 - Multiple attributes can be associated to each feature. 
+
 
 ```{figure} /fig/Geodata_attribute_table_example.png
 ---
@@ -120,6 +120,7 @@ The following table gives a short description of commonly used vector file forma
 
 
 ```{note}
+
 The different file formats have different use cases, as well as advantages or shortcomings. 
 
 - For instance, __GeoJSON__ files cannot store projection info and are conventionally limited to the WGS84 ellipsoid. This makes it difficult to use GeoJSON files in projects where you are using region-specific projections or use projections based on different ellipsoids.
@@ -160,9 +161,8 @@ color to a value. For elevation data, for example, a color ramp is usually used.
 landuse, color categories (such as green = forest; yellow = agricultural landuse, red = residential). 
 
 ::::{grid} 2
-
-
 :::{grid-item-card}
+
 ```{figure} /fig/raster_data_example_corine_LC.png
 ---
 name: corine_landcover_example
@@ -171,9 +171,11 @@ align: left
 ---
 The Copernicus CORINE Landcover Dataset (Source: [EEA/Copernicus](https://land.copernicus.eu/en/map-viewer?product=130299ac96e54c30a12edd575eff80f7))
 ```
+
 :::
 
 :::{grid-item-card}
+
 ```{figure} /fig/NASADEM_Alps_example.png
 ---
 name: NASA_DEM_example
@@ -181,6 +183,7 @@ width: 300 px
 ---
 The NASA DEM showing the alps (Source: [NASA/USGS/JPL-CALTECH](https://lpdaac.usgs.gov/products/nasadem_hgtv001/))
 ```
+
 :::
 ::::
 
@@ -203,6 +206,7 @@ In {numref}`Vector` and {numref}`Raster` you can see the same location, on the l
 
 ::::{grid} 2
 :::{card} Vector
+
 ```{figure} /fig/en_same_location_vector.png
 ---
 width: 400px
@@ -211,9 +215,11 @@ align: center
 ---
 Features represented with vector data. Source: British Red Cross (BRC)
 ```
+
 :::
 
-:::{card} 
+:::{card} Raster
+
 ```{figure} /fig/en_same_location_raster.png
 ---
 width: 400px
@@ -222,6 +228,7 @@ align: center
 ---
 The same location represented as a raster image. Source: British Red Cross (BRC)
 ```
+
 :::
 ::::
 
@@ -272,8 +279,7 @@ representation by using symbols and colors.
 
 ```{figure} /fig/en_layer.png
 ---
-width: 800px
-name: 
+width: 800px 
 align: center
 name: Layers in a GIS
 ---
@@ -328,7 +334,9 @@ QGIS only lets you import __unzipped__ shapefiles. Make sure to unzip your data 
 ```
 
 :::{dropdown} Video: Importing vector data via the Data Source Manager
+
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_vector.mp4"></video>
+
 :::
 
 #### Open vector data via drag-and-drop
@@ -357,8 +365,7 @@ geometries in your delimited text file.
 
 ```{figure} /fig/en_import_delimeted_text.png
 ---
-width: 600px
-name: 
+width: 600px 
 align: center
 name: Import delimited text
 ---
@@ -381,7 +388,6 @@ Excel. There you can check which delimiter is used to separate the information.
 ```{figure} /fig/en_delimited_text_fileformat.png
 ---
 width: 600px
-name: 
 align: center
 name: Import delimited text - file format
 ---
@@ -395,13 +401,14 @@ Import delimited text in QGIS 3.36 - file format.
    Select for `X field` “LONGITUDE” and for `Y field` “LATITUDE”.
 5. Under `Geometry CRS` select the coordinate reference system (CRS). By default, 
    QGIS will select the CRS of the project. 
-
    If the file does not have spatial information choose the option `No geometry 
    (attribute only table)`.
 6. Click `Add`
 
 :::{dropdown} Video: Opening delimited text files in QGIS
+
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_textfile.mp4"></video>
+
 :::
 
 ### Raster data import
@@ -423,7 +430,9 @@ onto your QGIS window, or open then through the "Data Source Manager".
 :::
 
 :::{dropdown} Video: Open raster data via drag-and-drop
+
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_raster_d_d.mp4"></video>
+
 :::
 
 
