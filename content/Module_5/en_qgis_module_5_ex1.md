@@ -17,12 +17,12 @@
 
 ::::{grid} 2
 :::{grid-item-card}
-
-## Aim of the exercise:
+__Aim of the exercise:__
+^^^
 
 In this exercise, you will go through the different steps requiring QGIS in order to conduct a spatial risk assessment.
 
-#### Type of trainings exercise:
+__Type of trainings exercise:__
 
 - This exercise can be used in online and presence training. 
 - It can be done as a follow-along exercise or individually as a self-study.
@@ -30,8 +30,8 @@ In this exercise, you will go through the different steps requiring QGIS in orde
 :::
 
 :::{grid-item-card}
-
-#### These skills are relevant for 
+__These skills are relevant for:__
+^^^ 
 
 
 :::
@@ -39,22 +39,20 @@ In this exercise, you will go through the different steps requiring QGIS in orde
 
 ::::{grid} 2
 :::{grid-item-card}
-
-#### Estimated time demand for the exercise.
-
- 
+__Estimated time demand for the exercise:__
+^^^
 
 :::
 
 :::{grid-item-card}
-
-## Relevant Wiki Articles
+__Relevant Wiki Articles:__
+^^^
 
 * [Geodata Import in QGIS](/content/Wiki/en_qgis_import_geodata_wiki.md)
-* [Intersection](/content/Wiki/en_qgis_geoprocessing_wiki.md#intersection)
-* [Zonal Statistics](/content/Wiki/en_qgis_raster_basic_wiki.md#zonal-statistics)
-* [Join Attributes by location (summary](/content/Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
-* [Table functions](/content/Wiki/en_qgis_raster_basic_wiki.md#zonal-statistics)
+* [Intersection](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
+* [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html)
+* [Join Attributes by location (summary](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
+* [Table functions](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)
 
 <!--FIME: Check if these wiki articles are relevant-->
 
@@ -72,19 +70,17 @@ Somalia is significantly exposed to droughts. We will showcase a risk assessment
 ## Part 1: Indicator Processing
 
 ### Task
-The first part of the exercise will prepare the data in order to serve as indicator values. Raw data will be processed into meaningful indicators, and the vulnerability index will be calculated. Finally, all risk relevant data will be joined into a single vector layer using spatial data geoprocessing.
 
+The first part of the exercise will prepare the data in order to serve as indicator values. Raw data will be processed into meaningful indicators, and the vulnerability index will be calculated. Finally, all risk relevant data will be joined into a single vector layer using spatial data geoprocessing.
 
 ## Data
 
 
 Download the data folder for "Modul_5_Exercise2_Drought_Monitoring_Trigger.zip" __[Here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Modul_5_Exercise1_Risk_Assessment/Modul_5_Exercise1_Risk_Assessment.zip)__. In the folder, you can find two folders. One for the first part ("Modul_5_Ex1_Part_1") of the exercise and one for the second part ("Modul_5_Ex1_Part_2").
 
-Download the data folder for the first part of the exercise: "Modul_5_Ex1_Part_1".
+Open the data folder for the first part of the exercise: "Modul_5_Ex1_Part_1".
 
-
-
-Download all datasets and save the folder on your computer and unzip the file. The zip folder includes:
+Save the folder on your computer and unzip the file. The zip folder includes:
 - `som_admbnda_adm2_ocha_20230308.shp`: [Somalia district boundaries (Admin level 2)](https://data.humdata.org/dataset/cod-ab-som)
 - `WHO_health_sites.shp`: [Healthsites Somalia](https://data.humdata.org/dataset/somalia-health-facilities-data )
 - `som_ppp_2020_UNadj_constrained.tif` : [Worldpop Population Counts Somalia ](https://hub.worldpop.org/geodata/summary?id=28892)
@@ -94,12 +90,9 @@ Download all datasets and save the folder on your computer and unzip the file. T
 All files still have their original names. However, feel free to modify their names if necessary to identify them more easily.
 ```
 
-
-
-1. Load the Somalia district boundaries (admin level 2) (`som_admbnda_adm2_ocha_20230308.shp`) and Healthsites Somalia (`WHO_health_sites.shp)  into QGIS.
+1. Load the Somalia district boundaries (admin level 2) (`som_admbnda_adm2_ocha_20230308.shp`) and Healthsites Somalia (`WHO_health_sites.shp) into QGIS.
 
 2. Make sure to that both datasets are in the same projection. In this case we have two different projections and we will reproject  __Healthsites Somalia__ into EPSG 4326. Use the tool `Reproject layer` for this process. See the Wiki entry on __Projections__ for further information.
-
 
 ```{Attention}
 Before you start doing any GIS operations, __always explore the data__. Always check if the projections of the different layers are the same.
@@ -115,8 +108,7 @@ name: count_points_polygon
 Count healthsites per district
 ```
 
-4. Now we have the number of health sites per district. Nevertheless, it would be interesting to know how many health sites exist per 10.000 people. For this task we firstly need to know how many inhabitants has each district. We can process this information by using the __Zonal statistics__ tool from the Processing Toolbox. See the Wiki entry for [Zonal Statistics](/content/Wiki/en_qgis_raster_basic_wiki.md#basic-raster-operations) for further information. Specify your inout layer (Output of step 3 e.g. __Num_healtsites__) and your raster layer (Worldpop Raster), specify the column prefix (e.g. ___wpop__) and select the statistics to caclulate (__sum__). For each district all pixel values of the Worldpop Raster that fall inside of it will be summed up. Explore the output.
-
+4. Now we have the number of health sites per district. Nevertheless, it would be interesting to know how many health sites exist per 10.000 people. For this task we firstly need to know how many inhabitants has each district. We can process this information by using the __Zonal statistics__ tool from the Processing Toolbox. See the Wiki entry for [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html) for further information. Specify your inout layer (Output of step 3 e.g. __Num_healtsites__) and your raster layer (Worldpop Raster), specify the column prefix (e.g. ___wpop__) and select the statistics to caclulate (__sum__). For each district all pixel values of the Worldpop Raster that fall inside of it will be summed up. Explore the output.
 
 
 ```{figure} /fig/en_qgis_modul_5_ex1_zonal_statistics.PNG
@@ -143,7 +135,7 @@ Throughout the indicator processing process you will have several interim result
 ```
     
 
-* When you are down click ![](/fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by again clicking on ![](/fig/mActionToggleEditing.png)([Wiki Video](/content/Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)).
+* When you are down click ![](/fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by again clicking on ![](/fig/mActionToggleEditing.png)([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)).
 
 ```{figure} /fig/en_qgis_modul_5_ex1_field_calc.PNG
 ---
@@ -153,8 +145,7 @@ name: Field Calculator
 Calculate health sites per 10000 inhabitants
 ```
 
-
-#### 6. Land Degradation
+#### Land Degradation
 
 A very important factor for areas vulnerable to drought is the level of land degradation. It is an important factor not only for agriculture, but also for livestock herds, as both are primary sources of income. We will try to add this information to our dataset:
 
@@ -178,7 +169,7 @@ Explore the data. We have a column "LandD_CLas" which indicators the severity of
 * as `Join Type` set `Take attributes of the feature with largest overlap only (one-to-one)`
 * Save as Layer
 
-See the Wiki entry [Spatial Joins ](/content/Wiki/en_qgis_spatial_joins_wiki.md#spatial-joins) for further information.
+See the Wiki entry [Spatial Joins](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html) for further information.
 
 
 
@@ -191,7 +182,7 @@ Join Attributes by Location
 ```
 
 
-#### 7. Malnutrition
+#### Malnutrition
 
 Another very important indicator to describe vulnerability in a district is acute malnutrition, especially for children under 5 years old.
 
@@ -241,8 +232,8 @@ You can edit the names in 6 cases in the Attribute Table of the CSV file by togg
 ## Part 2: Risk Calculation
 
 ### Task
-In the second part of the exercise we will showcase the steps how to come from indicators to a risk analysis.
 
+In the second part of the exercise we will showcase the steps how to come from indicators to a risk analysis.
 
 You can find all the data for the second part of the exercise in the "Modul_5_Ex1_Part_2".
 Download the data folder for the second part of the exercise: "Modul_5_Ex1_Part_2". We processed the vulnerability layer in the first part of the exercise; simplified exposure and lack of coping capacity layers have been prepared in advance for this exercise. These layers have only 3 to 4 indicators for complexity reasons. See below an example of indicators that were used for Somalia:
@@ -254,8 +245,6 @@ name: Indicators Risk Assessment
 ---
 Indicators Risk Assessment
 ```
-
-
 
 #### 1. Normalisation
 
@@ -272,7 +261,7 @@ $ Normalised\ Value\ = \frac{value\ -\ min value}{max\ value \ - \ min } $
 ```md
 ("LandD_Clas" - minimum( "LandD_Clas" ))/( maximum( "LandD_Clas") - minimum( "LandD_Clas" ))
 ```
-* When you are done click ![](/fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by clicking on ![](/fig/mActionToggleEditing.png)([Wiki Video](/content/Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)).
+* When you are done click ![](/fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by clicking on ![](/fig/mActionToggleEditing.png)([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)).
 
 ```{figure} /fig/en_qgis_modul_5_ex1_Part2_normalization.PNG
 ---
@@ -303,7 +292,7 @@ $ weighted=   (1 - value)  \times weight $
 
 The second formula inverts the value $(1 - value)$ before applying the weight, resulting in a different calculation for variables with negative weights.
 
- We will not go further into this in this module but you can find more information [here](/content/GIS_AA/en_qgis_risk_assessment_plugin.md#risk).
+We will not go further into this in this module but you can find more information [here](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_risk_assessment_plugin.html#risk).
 
 ```{Hint}
 It is recommended to properly check the logic of each indicator. Often the indicators of a certain dimension follow the same logic but there are always exceptions. After the directions have been applied to the data, we can using the language “lack of coping capacity” instead of “coping capacity” since we have forced the respective indicators to another direction following the predefined logic (the higher the value = the worse the circumstances).
@@ -448,7 +437,7 @@ Possible Map Result
 #### 7. Automating the Process
 
 HeiGIT has developed a a QGIS Risk Assessment Plugin in order to simplify this process and safe time.
-You can find more information about the risk methodology and the usage of the plugin [here](/content/GIS_AA/en_qgis_risk_assessment_plugin.md#risk-assessment-qgis-plugin).
+You can find more information about the risk methodology and the usage of the plugin [here](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_risk_assessment_plugin.html).
 
 
 In order to try out the plugin and see the result, use the provided input data in your folder: "Modul_5_Ex1_Part_2\Input data\QGIS Plugin Risk Assessment\input"
