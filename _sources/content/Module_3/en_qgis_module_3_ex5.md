@@ -20,13 +20,16 @@ __Click here to return to the exercise overview page for module 3__
 :::
 ::::{grid} 2
 :::{grid-item-card}
-## Aim of the exercise:
+__Aim of the exercise:__
+^^^
 Participants will work with multiple layers and conduct spatial queries. Additionally, they will learn how to create their own geodata.
-#### Type of trainings exercise:
+__Type of training exercise:__
 - This exercise can be used in online and presence training. 
 :::
+
 :::{grid-item-card}
-#### These skills are relevant for 
+__These skills are relevant for__
+^^^ 
 
 - QGIS Essentials
 - Working with multiple layers
@@ -38,12 +41,16 @@ Participants will work with multiple layers and conduct spatial queries. Additio
 
 ::::{grid} 2
 :::{grid-item-card}
-#### Estimated time demand for the exercise.
+__Estimated time demand for the exercise__
+^^^
+
 - The exercise takes around 3 hours to complete, depending on the number of participants and their familiarity with computer systems.
+
 :::
 
 :::{grid-item-card}
-### Relevant wiki articles
+__Relevant wiki articles__
+^^^
 
 * [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)
 * [Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html)
@@ -57,8 +64,11 @@ Participants will work with multiple layers and conduct spatial queries. Additio
 
 ::::{grid} 1
 :::{grid-item-card}
-#### Context
+__Context__
+^^^
+
 In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. The following analysis will utilize actual data from this natural disaster. The objective is to pinpoint the specific medical centers and healthcare facilities that were impacted by the flooding. Additionally, we will assess the viability of road access to the city of Larkana throughout the flood period.
+
 :::
 ::::
 
@@ -97,11 +107,15 @@ __Wrap up:__
 
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_4/Modul_3_Exercise_4_Larkana_flood.zip
+
 __Download all datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_4/Modul_3_Exercise_4_Larkana_flood.zip) and save the folder on your computer and unzip the file.__
+
 :::
 
 :::{hint}
+
 Reprojected and fixed Flood extend layer can be downloaded __[here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_4/Module_3_Exercise_4_Larkana_flood_Day2.zip)__
+
 :::
 
 | Dataset name| Original title|Publisher|Download from| 
@@ -115,7 +129,6 @@ Reprojected and fixed Flood extend layer can be downloaded __[here](https://nexu
 <!--ADD: Add an explanation how to create the healthsite dataset by combining points and polygons -->
 
 ```{hint} Folder structure
-
 To keep your data organized and easily accessible, it's important to establish a clear folder structure on your computer for your QGIS projects and geodata. Ensure that your exercise data are saved in a location that allows for easy retrieval and association with the corresponding QGIS project.
 ```
 
@@ -123,17 +136,19 @@ To keep your data organized and easily accessible, it's important to establish a
 ## Task 1: Gain an overview of the situation around Larkana 
 
 :::{card}
+
 ```{figure} /fig/IFRC-icons-colour_SURGE.png
 ---
 width: 100px
-name: 
 align: right
 name: IFRC Surge Icon
 ---
 ```
-Context: 
+
+__Context:__ 
 
 You have been deployed as an information manager to the flood-affected regions of Pakistan. Upon your arrival you received reports from the operations team indicating that the city of [Larkana](https://www.openstreetmap.org/#map=12/27.5565/68.1672) and its surrounding areas have been severely affected by the floods. The team needs a general overview of the location of the city.
+
 :::
  
 1. Open QGIS and create a [new project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`
@@ -150,6 +165,7 @@ You cannot interact with a base map!
 ``` {Attention}
 GeoPackage files can contain multiple files and even entire QGIS projects. When you load such a file in QGIS a window will appear in which you have to select the files you want to load in your QGIS project.
 ```
+
 5. First, we want to export __Larkana District__ and the neighbouring districts __Kambar Shahdad Kot__, __Shikarpur__  and __Sukkur__ from __PAK_adm2_Sindh__ to have it as a stand-alone vector layer. To do that: 
     * Open the attribute table of __PAK_adm2_Sindh__ by right click on the layer  -> `Open Attribute Table`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html)).
     * Find the row of Larkana and mark it by clicking on the number on the very left-hand side of the attribute table. The row will appear blue and the area of Larkana will turn yellow on the map canvas. You can right-click on the row and click `Zoom to Feature`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature)).
@@ -159,9 +175,11 @@ GeoPackage files can contain multiple files and even entire QGIS projects. When 
     * Click on the icon ![](/fig/selection_toolbar_feature_deselection.png) in the toolbar to end the feature selection.
 
 :::{card}
-Achievement:
+__Achievement:__
+^^^
 
 Now you have an overview of where the district of Larkana is located in Sindh. The operations team can use this information. 
+
 :::
 
 ```{Tip}
@@ -180,7 +198,7 @@ name: IFRC HEalth Icon
 ---
 ```
 
-Context: 
+__Context:__ 
 
 Posts on social media have indicated a significant impact on the healthcare system in the region. You have been tasked to find out as much as you can about the situation and, if feasible, to estimate the impact on the health system.
 
@@ -196,6 +214,7 @@ Posts on social media have indicated a significant impact on the healthcare syst
         * As `Geometric predicate` we use `intersect`. 
         * To save the output click on the three points at `Extract (location)` -> `Save to GeoPackage` and navigate to your `temp` folder. Save the new layer under the name __“Health_Facilities_Flood_2024_AOI”__. Give the new layer the same `Layer name` and click `Run`.
     * Open the Attribute table of the new layer and have a look.
+
 ```{figure} /fig/PAK_extract_locatio_HS.png
 ---
 width: 400px
@@ -204,6 +223,7 @@ align: center
 ---
 Extract by location Pakistan
 ```
+
 Ok, now we have a good overview of the location of health facilities. We need much better information about the flooded area to identify the health facilities impacted by the flood. Fortunately, the UN has just shared a dataset about the extent of floods. Satellite detected water extents from 08 to 12 August 2024 over Pakistan.
 
 2. Load the dataset __"VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp"__ into your QGIS.
@@ -241,7 +261,7 @@ align: center
 Select flood affected health facilities
 ```
 
-```{warning}
+::::{warning}
 In case you encounter the error:
 
 > Feature (1) from “2024_MinFloodExtend_reprojected” has invalid geometry. Please fix the geometry or change the Processing setting to the “Ignore invalid input features” option.
@@ -263,7 +283,10 @@ align: center
 Fix Geometry
 ```
 
+::::
+
 6.  Open the attribute table of __"Health_Facilities_Flood_2024_AOI"__ by right click on the layer  -> `Open Attribute Table`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html)) and activate the editing mode by clicking on ![](/fig/mActionToggleEditing.png) ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#change-data-in-the-attribute-table)). Now you are able to edit the data directly in the table.
+
 7. First, we add a new column with the name __“Flood_affected”__. To do so, click on ![](/fig/mActionNewAttribute.png). In the `Add field` window, you have to add the name and set the `Type` to `Text(string)`. Click `OK` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#add-new-column))
 
 ```{figure} /fig/ PAK_flood_new_column.PNG
@@ -274,6 +297,7 @@ align: center
 ---
 Add new column
 ```
+
 8. Now look for the `Show all Features` option in the lower left corner and click on it. Then, select the option `Show selected features` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#manually-select-features-in-the-attribute-table)). This will filter the table to display only the rows that represent the health facilities directly impacted by the flood.
 Now, you can write `Yes` in the __"Flood_affected"__ column.
  * When you are done, click ![](/fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by again clicking on ![](/fig/mActionToggleEditing.png)([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#change-data-in-the-attribute-table)).
@@ -294,9 +318,11 @@ Flood affected health facilities classification
 ```
 
 :::{card} 
-Achievement:
+__Achievement:__
+^^^
 
 We've pinpointed the specific health facilities that have been inundated by the floods. Our findings indicate that a total of four facilities have been completely flooded and are currently non-operational. Considering we assessed the minimum flood impact, it's highly probable that more health facilities will also be impacted. This data is crucial for our operational team as it will enable them to strategize and execute an effective response.
+
 :::
 
 ## Task 3: Logistical access to Larkana City
@@ -312,7 +338,8 @@ align: right
 name: IFRC Logistics Icon
 ---
 ```
-Context: 
+
+__Context:__ 
 
 The operations team is making plans to deliver much-needed supplies to the affected region around Larkana. Currently, there is uncertainty about how the supplies can be transported there. The operations team has asked for more information on this topic.
 
@@ -320,7 +347,6 @@ They need answers to the following three questions:
 * Which roads leading into Larkana are blocked, and at what specific locations are they blocked?
 * Are there any bridges that can be crossed from the eastern side of the Indus to the western side, and where are these bridges located?
 * If transporting supplies by road into the region is not feasible, what alternative method could be used to deliver the supplies?
-
 
 In order to get a clearer picture, we need to import the road network data for the region into QGIS. Look for the file in the input folder. The road network is initially displayed without showing any road types or other relevant details. We should apply a categorized classification technique only to display the specific roads that we are interested in.
 :::
@@ -340,7 +366,6 @@ In order to get a clearer picture, we need to import the road network data for t
     ```
     * You have the option to customize the width of the main roads' lines to improve the visualization. Open the Symbology window, then select `Symbol`. In the new window, you can adjust the width of the lines to your preference.
     
-
     ```{figure} /fig/PAK_road_symbol_weight.png
     ---
     width: 600px
@@ -349,7 +374,9 @@ In order to get a clearer picture, we need to import the road network data for t
     ---
     Pakistan road classification
     ```
+
     * Once you are done, click `Apply` and `OK` to close the symbology window.
+
 3. To simplify the process, we will visually search for blocked roads and mark them with points. For this purpose, we will create an entirely new point dataset representing blocked roads.
     * Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#create-a-new-layer)) 
     - Under `Database` click on ![](/fig/Three_points.png) and navigate to `temp` folder. Give the new dataset the name __“PAK_flood_2024_blocked_road”__. Click `Save`.
@@ -363,6 +390,7 @@ In order to get a clearer picture, we need to import the road network data for t
         * Create another field with the `name` __"Blocked_bridge"__ and the `Type`: Select `Text Data`.
         * Click `OK`.
     * Your new layer will appear in the `Layer Panel`
+
     ```{figure} /fig/PAK_blocked_road_new_layer.png
     ---
     width: 400px
@@ -371,12 +399,14 @@ In order to get a clearer picture, we need to import the road network data for t
     ---
     New layer blocked roads
     ```
+
 4. Now you can create a point for each place where the flood layer covers the main roads leading out of Larkana [wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#creation-of-point-data). Currently the new layer __“PAK_flood_2024_blocked_road”__ is empty. To add features we can use the `Digitizing Toolbar`. If you cannot see the toolbar, click on the tab `View` -> `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#creation-of-point-data)).  ![](/fig/Digitizing_Toolbar.png) 
     * Activate the editing mode by clicking on ![](/fig/mActionToggleEditing.png). Activate then the option to add new points by clicking on ![](/fig/mActionCapturePoint.png).
     * Look out for places where the flood layer covers the main roads or bridges leading out of Larkana. Once you have found one, left-click on the location you want to digitise.
     * Once you click on a place, a window will appear. Indicate that the road is blocked by writing `Yes` in the field `Blocked_road`.
     * Repeat this step with all the locations your can find. 
-   ```{figure} /fig/PAK_blocked_road_digitalise.png
+
+    ```{figure} /fig/PAK_blocked_road_digitalise.png
     ---
     width: 200px
     name: Digitalising blocked roads
@@ -384,14 +414,17 @@ In order to get a clearer picture, we need to import the road network data for t
     ---
     Digitalising blocked roads
     ```
+
     * Once you are done with digitizing click on ![](/fig/mActionSaveEdits.png) to save your edits.
     * Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
+
 5. Now, we have mapped all blocked main access roads into Larkana. We can use icons instead of just points to display the layer __“PAK_flood_2024_blocked_road”__ to visualise this fact better [wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_single_symbol_wiki.html).
 
     * Right-click on the layer __“PAK_flood_2024_blocked_road”__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
     * Keep the `Single Symbol` option. Select any symbol from the list that is appropriate for marking blocked roads. 
     * Once you are done, click `Apply` and `OK` to close the symbology window.
     * After you are done, click on the icon ![](/fig/qgis_move_symbol.png) to end the feature selection mode.
+
     ```{figure} /fig/PAK_blocked_road_symbol.png
     ---
     width: 600px
@@ -400,9 +433,11 @@ In order to get a clearer picture, we need to import the road network data for t
     ---
     Visulsing blocked roads with icons
     ```
+
 Part of your assignment was to point out possible alternatives to road transport. Can you identify any?
 
 :::{dropdown} __Answer__
+
 In the south-west of Larkan City, you can find the [Mohenjodaro Airport](https://www.google.com/search?q=Larkana&rlz=1C1GCEA_enDE1048DE1048&oq=Larkana&gs_lcrp=EgZjaHJvbWUyDAgAEEUYORjjAhiABDIHCAEQLhiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIGCAYQRRg9MgYIBxBFGD2oAgiwAgE&sourceid=chrome&ie=UTF-8#vhid=0x0:0xf59fc8243b2b9d0e&vssid=lclsmap&eim=CAEQDhoRMjcuMzI4NDM3NTc5NDIyNjIiETY4LjE0MjA5NTk3MDUzNTQ4KhQxNzY5OTA4NTExODUyNjQzMDQ3OA). Currently, the road from Larkana City to the airport appears to be open and accessible. This means that essential supplies could potentially be transported from the airport into the city without encountering any roadblocks. 
 
 ```{figure} /fig/PAK_road_access_airport.png
@@ -418,4 +453,5 @@ Road access to Mohenjodaro Airport
 :::{card}
 
 The operations team has now all the information they need to plan their logistics. Good Job!
+
 :::

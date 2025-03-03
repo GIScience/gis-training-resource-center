@@ -16,7 +16,6 @@
 
 ## Aim of the exercise
 
-
 ### Links to Wiki articles
 
 * [QGIS Interface](/content/Wiki/en_qgis_interface_wiki.md)
@@ -119,13 +118,11 @@ width: 400 px
 The `Extract by Expression` window in QGIS 3.36
 ```
 
-
-
 :::{attention}
 A temporary layer will not be saved to your QGIS-project, even after saving the project. Temporary layers are marked by a ![](/fig/icon_scratch_layer.png). In order to save the layer permanently, <kbd>Right Click</kbd> on the layer you wish to make permanent. Then, select the save location for the new layer. Make sure you to save it in the correct folder (see [standard folder structure](/content/Wiki/en_qgis_projects_folder_structure_wiki.md)). 
 :::
 
-    
+ 
 7. Explore the new layer by opening the attribute table, activating and deactivating the layer in the Layers panel. 
 8. <kbd>Right Click</kbd> on the `Matching Features` layer and save it to your project folder under  `/data/output/` with the name `Belet_Weyne_POI_affected.gpkg`. 
 

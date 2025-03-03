@@ -6,14 +6,11 @@
 :::
 ::::
 
-
 # Geodata Classification
-
 
 Spatial data classification in GIS involves categorising geographic information into distinct groups or 
 classes based on shared characteristics or attributes. Each class can be assigned a distinct symbol or 
 colour. This process enhances the organization and interpretation of spatial data.
-
 
 The attributes of geospatial data are stored in a specific column within the attribute table.
 Essentially, we choose a column containing the specific characteristics of interest, allowing 
@@ -32,7 +29,6 @@ Basic classification. Source: HeiGIT
 
 In geographic data classification, __nominal__, __ordinal__, and __metric__ scales are used to categorize and 
 measure spatial features based on different levels of precision and hierarchy:
-
 
 ::::{margin}
 ```{attention}
@@ -182,8 +178,6 @@ __To classify data in categories…__
 
 :::
 
-
-
 ## Graduated classification
 
 Graduated classification in GIS involves categorising spatial data into classes or ranges based on a 
@@ -210,10 +204,10 @@ read and understand the map quicker.
 
 Graduated classification is usually used for quantitative data that is __interval__ or __ratio__ scaled.
 
-| Data Scale                  | Definition                                               | Example                     | Typical Data Format  |
-|-----------------------------|----------------------------------------------------------|-----------------------------|----------------------|
-| Interval Scale               | Equal intervals between values, no true zero point       | Temperature (Celsius)       | Float (44.5 Degree)                |
-| Ratio Scale                  | Equal intervals with a true zero point                    | Population, Length, Number of trees          | Integer (5 Trees) or Float (12.5 km of Road)     |
+| Data Scale     | Definition                                         | Example                             | Typical Data Format                          |
+| -------------- | -------------------------------------------------- | ----------------------------------- | -------------------------------------------- |
+| Interval Scale | Equal intervals between values, no true zero point | Temperature (Celsius)               | Float (44.5 Degree)                          |
+| Ratio Scale    | Equal intervals with a true zero point             | Population, Length, Number of trees | Integer (5 Trees) or Float (12.5 km of Road) |
 
 To classify quantitative data there are many methods how to set up the classes. There is no single best way to select a method or to decide how many classes you like to use. It all comes down to what you want to show.
 
@@ -232,12 +226,12 @@ can make a few general statements.
 
 ```{figure} /fig/Histogramm_example.drawio.svg
 ---
-width: 900px
-name: 
+width: 900px 
 align: center
 ---
 Histogramm of population data. Source: [Axis Maps](https://www.axismaps.com/guide/data-classification)
 ```
+
 However, if we want to show which districts have a higher population than others on a map, 
 we need to classify the districts.
 
@@ -250,7 +244,6 @@ the data into three classes using these methods.
 ```{figure} /fig/classification_method_map.drawio.svg
 ---
 width: 900px
-name:
 align: center
 ---
 Different classifications. Source: HeiGIT  (adapted from [Axis Maps](https://www.axismaps.com/guide/data-classification)) 

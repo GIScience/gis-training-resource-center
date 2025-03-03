@@ -39,7 +39,6 @@ In this exercise, we will not be using any geodata. Instead, we will be learning
 ```{figure} /fig/Standard_project_folder_structure.drawio.svg
 ---
 width: 800px
-name: 
 align: center
 name: Standard folder structure
 ---
@@ -62,6 +61,7 @@ name: Project Template
 align: Left
 ---
 ```
+
 - In the `Project Templates` panel, __Double click on the `New Empty Project` option__ (it should be the only template visible). You will see a blank canvas in the main interface since there is no data loaded yet. 
 
 2. Get to know the QGIS interface: Above the canvas, you will find the __toolbar__ with a lot of different functions. To the left and right of the canvas you will find the panels. In QGIS, you will mostly access tools by finding them in the __toolbars__ or __panels__. 
@@ -82,8 +82,10 @@ QGIS User Interface. Source:
 
 3. You can undock panels from their location by clicking and dragging the panel title. You can either dock it to another panel (it will appear as another tab), or turn it into its own window. You can also resize the panels. Try this by moving the Layer panel to the right ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#move-and-arrange-toolbars)). 
 
-```{TIP}
+```{tip}
+
 In QGIS, the interface may appear slightly different depending on your screen resolution. Occasionally, certain elements may be hidden due to default rendering settings. If you encounter this, try resizing the panels and exploring the various options and functions they provide. This can help ensure that all essential tools and features are easily accessible during your workflow.
+
 ```
 
 4. QGIS has other panels you can use that aren't shown by default. Let's see how we can find and activate the other panels and toolbars.
@@ -111,12 +113,16 @@ Take time to make yourself familiar with the different ways you can arrange the 
 This will also launch QGIS and load the project. 
 
 ```{Tip}
+
 Keeping your folder structure organised goes a long way in helping you work efficiently and without frustration.
+
 ```
 
 ```{Warning}
+
 __Remember__: Project files in QGIS are saved separately from the data you are using in the project, which is why it is advisable to keep all the 
 files related to a project in a folder.
+
 ```
 
 

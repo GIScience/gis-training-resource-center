@@ -10,9 +10,7 @@
 
 ## Introduction
 
-
 <iframe width="800" height="500" src="https://www.youtube.com/embed/kIID5FDi2JQ?si=C0tYz7nteMF_xqvr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
 
 An important issue when creating a map of a region, is that it is impossible to create a representation of a sphere 
 on a 2D plane without distorting the map. The transformation of a 3D object onto a flat surface can be done with the 
@@ -128,11 +126,11 @@ The World Equidistant cylindrical CRS is equidistant (not distorting the length)
 This table shows an overview on which projections to use for which needed 
 characteristic:
 
-| Characteristic  | Mercator (cylindrical) | Lambert cylindrical | Albers conic |
-| :----------- |:--------------------: | :-----------------: | :----------: |
-| Shape | ✅            |  ❌          |  ✅   |
-| Rotation | ✅          |  ✅      |  ❌  |
-| Area | ❌             |  ✅           |  ✅   |
+| Characteristic | Mercator (cylindrical) | Lambert cylindrical | Albers conic |
+| :------------- | :--------------------: | :-----------------: | :----------: |
+| Shape          |           ✅           |         ❌          |      ✅      |
+| Rotation       |           ✅           |         ✅          |      ❌      |
+| Area           |           ❌           |         ✅          |      ✅      |
 
 Another very important consideration when choosing the Coordinate reference system is that, depending on the ellipsoid and the method used to project the same point can be located at different locations (see {numref}`wrong_CRS_points`). In the figure below, the same point is encoded in 3 different reference systems.  
 
@@ -143,7 +141,6 @@ width: 750 px
 ---
 The same point in three different reference systems (Source: HeiGIT).
 ```
-
 
 ### Metric and Geographic Coordinate Reference Systems
 
@@ -213,7 +210,9 @@ CRS/EPSG-Code and their properties.
 
 
 :::{dropdown} Video: How to check and change the CRS in your QGIS project
+
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_change_project_CRS.mp4"></video>
+
 :::
 
 

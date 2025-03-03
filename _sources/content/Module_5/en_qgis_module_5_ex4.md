@@ -124,7 +124,6 @@ Now you have all the information you need to start digitizing the known incident
 When creating the point and polygon layer use the CRS UTM 42 N __EPSG: 32642__
 ```
 
-
 In case the information states an exact area, create a new polygon layer and map it exactly.
 
 | Number| Description |
@@ -238,7 +237,7 @@ To visualize the data now on the map we have to link it to existing geometries a
 	* `Table field`: __admin2Pcode__
 	* `Input layer 2`: __20240605_PAK_MPI.csv__
 	* `Table field 2`: __ADM2_PCOCDE__
-	* Choose a location to save the file as GeoPackachge and give it a meaningful name, for instance __MPI_Admin2_joined.gpkg__
+	* Choose a location to save the file as GeoPackage and give it a meaningful name, for instance __MPI_Admin2_joined.gpkg__
 	* `Run` and close.
 	
 	```{figure} /fig/PAK_joined_MPI_csv_admin2.PNG

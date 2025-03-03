@@ -126,8 +126,10 @@ The zip folder includes:
 The borders GeoPackage contains administrative information for Sierra Leone at both national and provincial level. Additionally, the shapefile `sierra_leone_health_HOT.shp` provides information on various health facilities within the country, while the `sl-airports.csv` CSV-file offers information on airports.
 
 ```{hint} Folder structure
+
 Keep your data management clean by creating a folder structure on your computer for your QGIS-projects and geodata. 
 The exercise data should be saved in a location where you can easily find them and the corresponding QGIS-project
+
 ```
 
 ### Tasks

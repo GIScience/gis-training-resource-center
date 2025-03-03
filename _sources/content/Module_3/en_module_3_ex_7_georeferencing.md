@@ -16,10 +16,10 @@
 :::{card}
 __Aim of the exercise:__
 ^^^
+
 The aim of this exercise is to learn how to georeference a map. In many cases, (governmental) institution might only 
-publish data or maps in a pdf format. However, by georeferencing the map, we can import the map as a raster dataset into 
-our QGIS-project. After that, we can either use it to digitise vector features, or use the raster values in raster data 
-analysis. 
+publish data or maps in a pdf format. However, by georeferencing the map, we can import the map as a raster dataset into our QGIS-project. After that, we can either use it to digitise vector features, or use the raster values in raster data analysis. 
+
 :::
 
 ::::{grid} 2
@@ -35,16 +35,15 @@ __Type of trainings exercise:__
 :::{grid-item-card}
 __These skills are relevant for__ 
 ^^^
+
 - Digitising maps
 - Preparing data for spatial analysis
-
 
 :::
 ::::
 
 ::::{grid} 2
 :::{grid-item-card}
-
 __Estimated time demand for the exercise__
 ^^^
 ~ 90 minutes
@@ -108,6 +107,7 @@ __Available Data:__
 
 - `SOM_soil_deg.png` - A picture of a soil degradation map of Somalia taken out of a PDF report (Source: [FAO SWALIM](https://www.faoswalim.org/resources/site_files/L-14%20Land%20Degradation%20and%20a%20Monitoring%20Framework%20in%20Somalia_0.pdf))
 - `som_admbnda_adm1_ocha_20230308.gkpg` - A vector layer with the administrative boundaries of the regions (adm1) of somalia (Source: OCHA)
+
 :::
 
 ### Preparing the data
@@ -132,11 +132,9 @@ Georeferencing is done by connecting the points on the map that will be georefer
 
 ### Step 2: Georeferencing the map
 
-
 Now that we prepared our QGIS-project, let's start georeferencing the map.
 
 3. Open the Georeferencer by navigating to the Top Bar > `Layer` > `Georeferencer` <!---(see {numref}`open_georeferencer`)-->
-
 
 ```{figure} /fig/en_3.36_open_georefencer.png
 ---
@@ -155,7 +153,6 @@ Opening the Georeferencer in QGIS 3.36
 
 ```{note}
 In most cases, you can leave the transformation type on `linear`. Regional maps are usually in a conformal projection (i.e. the angles are preserved). Satellite imagery as well. If you realise that the angles are not true, or the map is deformed or distorted, you may need to choose `polynomial` as transformation type. Polynomial transformations need more Ground Control Points and the points need to be distributed evenly across the map.
-
 
 To learn more about the different transformation types in QGIS, check out the official [QGIS documentation](https://docs.qgis.org/3.34/en/docs/user_manual/working_with_raster/georeferencer.html#available-transformation-algorithms).
 ```

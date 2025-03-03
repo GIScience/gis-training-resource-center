@@ -61,6 +61,7 @@ Setting up labels in QGIS 30.30.2
 .mp4"></video>
 
 :::{attention}
+
 Single Labels are not always useful. For example, if the dataset is too big, or you only want to display certain features in the dataset. In the example below, there are too many settlements to display labels for each settlements. Instead, it might be useful to only display the regional and national capitals. For such a use case, Rule-based Labeling is ideal.
 
 ```{figure} /fig/single_labels_bad_example.png
@@ -169,7 +170,7 @@ By default, QGIS renders the labels so that they don't overlap with other labels
 
 ```
 
-:::{admonition} Now it's your turn!
+<!----:::{admonition} Now it's your turn!
 
 Take the time to apply what we've learned yourself by doing one or two of the [exercises of module 4](/content/Module_4/en_qgis_module_4_exercises.md).
 
@@ -178,6 +179,7 @@ Take the time to apply what we've learned yourself by doing one or two of the [e
 ```
 
 :::
+--->
 
 <!--MOVE: move admonition a bit up?--->
 

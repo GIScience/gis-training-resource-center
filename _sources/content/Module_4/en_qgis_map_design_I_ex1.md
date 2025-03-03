@@ -13,7 +13,6 @@
 
 # Map design Exercise 1: Creating a Map of Ghana
 
-
 ## Characteristics of the exercise
 
 :::{card}

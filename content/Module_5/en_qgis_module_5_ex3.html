@@ -596,11 +596,13 @@ document.write(`
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Aim of the exercise:</strong></p>
+</div>
 <div class="sd-card-body docutils">
-<p class="rubric">Aim of the exercise:</p>
 <p class="sd-card-text">This exercise is based on the monitoring and triggering process used by the Somalia Red Crescent Society (SRCS) in the framework of a drought Early Action Protocol (EAP).</p>
 <p class="sd-card-text">Within this exercise, you will build a simplified version of the monitoring and trigger mechanism for the FEWSNET projection pillar.</p>
-<p class="rubric">Type of trainings exercise:</p>
+<p class="sd-card-text"><strong>Type of trainings exercise:</strong></p>
 <ul class="simple">
 <li><p class="sd-card-text">This exercise can be used in online and presence training.</p></li>
 <li><p class="sd-card-text">It can be done as a follow-along exercise or individually as a self-study.</p></li>
@@ -610,8 +612,10 @@ document.write(`
 </div>
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>These skills are relevant for:</strong></p>
+</div>
 <div class="sd-card-body docutils">
-<p class="rubric">These skills are relevant for</p>
 </div>
 </div>
 </div>
@@ -621,21 +625,25 @@ document.write(`
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Estimated time demand for the exercise:</strong></p>
+</div>
 <div class="sd-card-body docutils">
-<p class="rubric">Estimated time demand for the exercise.</p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Relevant Wiki Articles:</strong></p>
+</div>
 <div class="sd-card-body docutils">
-<p class="rubric">Relevant Wiki Articles</p>
 <ul class="simple">
 <li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_import_geodata_wiki.html"><span class="doc std std-doc">Geodata Import in QGIS</span></a></p></li>
-<li><p class="sd-card-text"><span class="xref myst">Intersection</span></p></li>
-<li><p class="sd-card-text"><span class="xref myst">Zonal Statistics</span></p></li>
-<li><p class="sd-card-text"><span class="xref myst">Join Attributes by location (summary</span></p></li>
-<li><p class="sd-card-text"><span class="xref myst">Table functions</span></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary">Intersection</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html">Zonal Statistics</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary">Join Attributes by location (summary</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing">Table functions</a></p></li>
 </ul>
 </div>
 </div>
@@ -823,7 +831,7 @@ The preprocessed datasets are:</p>
 <p>The Video below shows the process for setting up the folder for December 2023.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Video: Setting up folder structure <div class="sd-summary-down docutils">
+Video: Setting up folder structure<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
@@ -887,9 +895,9 @@ Example path: <code class="docutils literal notranslate"><span class="pre">.../M
 <p><strong>Purpose:</strong> In this step, all the data needed will be loaded into a QGIS-project so we can analyse the data.</p>
 <p><strong>Tool:</strong> No specific tools are needed, only QGIS.</p>
 <ol class="arabic simple">
-<li><p>Open QGIS and create a <span class="xref myst">new project</span> by clicking on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span></code></p></li>
+<li><p>Open QGIS and create a <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch">new project</a> by clicking on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span></code></p></li>
 <li><p>Once the project is created, save the project in the folder you created in Step 1 (e.g. 2022_05). To do that, click on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">as</span></code> and navigate to the folder. Give the project the same name as the folder you created (e.g. 2022_05). Then click <code class="docutils literal notranslate"><span class="pre">Save</span></code></p></li>
-<li><p>Load all input data in QGIS by <span class="xref myst">drag and drop</span>. Click on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span></code></p></li>
+<li><p>Load all input data in QGIS by <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop">drag and drop</a>. Click on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span></code></p></li>
 </ol>
 <ul class="simple">
 <li><p>From the folder you created in step 1</p>
@@ -909,7 +917,7 @@ Example path: <code class="docutils literal notranslate"><span class="pre">.../M
 <section id="step-4-intersection-of-ml-1-data-with-the-district-polygons">
 <h3>Step 4: Intersection of ML 1 data with the district polygons<a class="headerlink" href="#step-4-intersection-of-ml-1-data-with-the-district-polygons" title="Permalink to this heading">#</a></h3>
 <p><strong>Purpose:</strong> The goal is to receive polygon layers which share both the borders and the attributes of both input layers.</p>
-<p><strong>Tool:</strong> <span class="xref myst"><code class="docutils literal notranslate"><span class="pre">Intersection</span></code></span></p>
+<p><strong>Tool:</strong> <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#intersection"><code class="docutils literal notranslate"><span class="pre">Intersection</span></code></a></p>
 <table class="table">
 <colgroup>
 <col style="width: 44%" />
@@ -922,7 +930,7 @@ Example path: <code class="docutils literal notranslate"><span class="pre">.../M
 </thead>
 <tbody>
 <tr class="row-even"><td><ol class="arabic simple">
-<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Vector</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Geoprocessing</span> <span class="pre">Tools</span></code> -&gt; <span class="xref myst"><code class="docutils literal notranslate"><span class="pre">Intersection</span></code></span></p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Vector</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Geoprocessing</span> <span class="pre">Tools</span></code> -&gt; <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#intersection"><code class="docutils literal notranslate"><span class="pre">Intersection</span></code></a></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Layer</span></code>: ML 1</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Overlay</span> <span class="pre">layer</span></code>: district_pop_sum</p></li>
 <li><p>Under <code class="docutils literal notranslate"><span class="pre">Intersection</span></code> click on the three points <img alt="" src="../../_images/Three_points.png" />-&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">to</span> <span class="pre">File</span></code> and navigate to your monitoring folder [Year_Month]. Give the output the name “ML1_Intersection” and click <code class="docutils literal notranslate"><span class="pre">Save</span></code></p></li>
@@ -954,7 +962,7 @@ Video: Intersection of ML 1 data with the district polygons <div class="sd-summa
 <section id="step-5-calculation-of-population-per-intersection-polygon">
 <h3>Step 5: Calculation of Population per Intersection Polygon<a class="headerlink" href="#step-5-calculation-of-population-per-intersection-polygon" title="Permalink to this heading">#</a></h3>
 <p><strong>Purpose:</strong> Here we calculate the population in each polygon of the intersection layer from step 4.</p>
-<p><strong>Tool:</strong>  <span class="xref myst"><code class="docutils literal notranslate"><span class="pre">Zonal</span> <span class="pre">Statistics</span></code></span></p>
+<p><strong>Tool:</strong>  <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics"><code class="docutils literal notranslate"><span class="pre">Zonal</span> <span class="pre">Statistics</span></code></a></p>
 <table class="table">
 <colgroup>
 <col style="width: 44%" />
@@ -967,7 +975,7 @@ Video: Intersection of ML 1 data with the district polygons <div class="sd-summa
 </thead>
 <tbody>
 <tr class="row-even"><td><ol class="arabic simple">
-<li><p>In the <code class="docutils literal notranslate"><span class="pre">Toolbox</span></code> -&gt; Search for <span class="xref myst"><code class="docutils literal notranslate"><span class="pre">Zonal</span> <span class="pre">Statistics</span></code></span></p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">Toolbox</span></code> -&gt; Search for <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics"><code class="docutils literal notranslate"><span class="pre">Zonal</span> <span class="pre">Statistics</span></code></a></p></li>
 </ol>
 <ul class="simple">
 <li><p>Tip: If the <code class="docutils literal notranslate"><span class="pre">Toolbox</span></code> is not open, click <code class="docutils literal notranslate"><span class="pre">Processing</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Toolbox</span></code></p></li>
@@ -1000,7 +1008,7 @@ Video:  Calculation of Population per Intersection Polygon<div class="sd-summary
 </details></section>
 <section id="step-6-weighting-of-the-population-based-on-ipc-phase">
 <h3>Step 6: Weighting of the Population based on IPC-Phase<a class="headerlink" href="#step-6-weighting-of-the-population-based-on-ipc-phase" title="Permalink to this heading">#</a></h3>
-<p><strong>Purpose:</strong> The purpose of this step is the weighting of the population in the five IPC phases as described in <span class="xref myst">IPC Data</span>.</p>
+<p><strong>Purpose:</strong> The purpose of this step is the weighting of the population in the five IPC phases as described in <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_drought_trigger_somalia.html#ipc-population-weighted-index">IPC Data</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The IPC Index treats low-population districts the same as high-population districts, ensuring that small districts with high food insecurity are not underrepresented.</p>
@@ -1041,9 +1049,9 @@ IPC-Population Weighted Index<div class="sd-summary-down docutils">
 </table>
 <p class="sd-card-text">The IPC Index represents low-population districts equal to high-population districts. No underrepresentation of high food insecurity of small districts occurs.</p>
 </div>
-</details><p><strong>Tool:</strong>  <span class="xref myst"><code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code></span></p>
+</details><p><strong>Tool:</strong>  <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field"><code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code></a></p>
 <ol class="arabic simple">
-<li><p>Right-click on the layer “ML1_zonal_statistic”  -&gt; <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Attribute</span> <span class="pre">Table</span></code>-&gt; click on <span class="xref myst"><code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code></span> <img alt="" src="../../_images/mActionCalculateField.png" /> to open the field calculator</p></li>
+<li><p>Right-click on the layer “ML1_zonal_statistic”  -&gt; <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Attribute</span> <span class="pre">Table</span></code>-&gt; click on <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field"><code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code></a> <img alt="" src="../../_images/mActionCalculateField.png" /> to open the field calculator</p></li>
 <li><p>Check <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">new</span> <span class="pre">field</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Output</span> <span class="pre">field</span> <span class="pre">name</span></code>: Name the new column “pop_sum_weighted”</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Result</span> <span class="pre">field</span> <span class="pre">type</span></code>: Decimal number (real)</p></li>
@@ -1068,9 +1076,9 @@ END
 <section id="step-7-calculation-of-population-proportion-per-intersection-polygon">
 <h2>Step 7: Calculation of Population Proportion per Intersection Polygon<a class="headerlink" href="#step-7-calculation-of-population-proportion-per-intersection-polygon" title="Permalink to this heading">#</a></h2>
 <p><strong>Purpose:</strong> In this step, we calculating the <span class="xref myst">IPC-Population Weighted Index</span> for every small part of the polygon layer.</p>
-<p><strong>Tool:</strong><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code></span></p>
+<p><strong>Tool:</strong><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing"><code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code></a></p>
 <ol class="arabic simple">
-<li><p>Right-click on “ML1_zonal_statistic” layer -&gt; “Attribute Table”-&gt; click on <span class="xref myst"><code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code></span> <img alt="" src="../../_images/mActionCalculateField.png" /> to open the field calculator</p></li>
+<li><p>Right-click on “ML1_zonal_statistic” layer -&gt; “Attribute Table”-&gt; click on <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing"><code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code></a> <img alt="" src="../../_images/mActionCalculateField.png" /> to open the field calculator</p></li>
 <li><p>Check <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">new</span> <span class="pre">field</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Output</span> <span class="pre">field</span> <span class="pre">name</span></code>: Name the new column “Index_per_IPCPolygon_ML1”</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Result</span> <span class="pre">field</span> <span class="pre">type</span></code>: Decimal number (real)</p></li>
@@ -1148,9 +1156,9 @@ Video: Calculate IPC Index per District<div class="sd-summary-down docutils">
 <section id="step-9-evaluate-trigger-activation">
 <h3>Step 9: Evaluate Trigger Activation<a class="headerlink" href="#step-9-evaluate-trigger-activation" title="Permalink to this heading">#</a></h3>
 <p><strong>Purpose:</strong> The purpose of this step is to gain a quick overview of possible trigger activation without having to revise the actual data. Instead, we will have a binary column with trigger = yes or trigger=no values.</p>
-<p><strong>Tool:</strong> <span class="xref myst"><code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code></span></p>
+<p><strong>Tool:</strong> <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field"><code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code></a></p>
 <ol class="arabic simple">
-<li><p>Right-click on “ML1_IPC_Index” layer -&gt; <code class="docutils literal notranslate"><span class="pre">Attribute</span> <span class="pre">Table</span></code>-&gt; click on  <span class="xref myst"><code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code></span> <img alt="" src="../../_images/mActionCalculateField.png" /> to open the field calculator</p></li>
+<li><p>Right-click on “ML1_IPC_Index” layer -&gt; <code class="docutils literal notranslate"><span class="pre">Attribute</span> <span class="pre">Table</span></code>-&gt; click on  <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field"><code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code></a> <img alt="" src="../../_images/mActionCalculateField.png" /> to open the field calculator</p></li>
 <li><p>Check <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">new</span> <span class="pre">field</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Output</span> <span class="pre">field</span> <span class="pre">name</span></code>: Name the new column “Trigger_activation”</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Result</span> <span class="pre">field</span> <span class="pre">type</span></code>: Text (string)</p></li>
@@ -1200,7 +1208,7 @@ Video: Evaluate Trigger Activation <div class="sd-summary-down docutils">
 <section id="step-10-visualisation-of-results">
 <h3>Step 10.: Visualisation of results<a class="headerlink" href="#step-10-visualisation-of-results" title="Permalink to this heading">#</a></h3>
 <p><strong>Purpose:</strong> Definition of how features are represented visually on the map.</p>
-<p><strong>Tool:</strong> <span class="xref myst">Symbology</span></p>
+<p><strong>Tool:</strong> <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#symbology-for-vector-data">Symbology</a></p>
 <p><strong>Trigger Activation</strong></p>
 <ol class="arabic simple">
 <li><p>Right-click on the “ML1_IPC_Index” layer -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Symbology</span></code></p></li>
@@ -1278,7 +1286,7 @@ Video: Visualisation of results<div class="sd-summary-down docutils">
 <section id="step-11-making-print-map">
 <h3>Step 11: Making print map<a class="headerlink" href="#step-11-making-print-map" title="Permalink to this heading">#</a></h3>
 <p><strong>Purpose:</strong> Visualisation of the map features in a printable map layout</p>
-<p><strong>Tool:</strong>  <a class="reference internal" href="../Module_4/en_qgis_map_design_2.html"><span class="doc std std-doc">Print Layout</span></a></p>
+<p><strong>Tool:</strong>  <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html">Print Layout</a></p>
 <ol class="arabic simple">
 <li><p>If not done before, delete all layers expect <strong>Trigger_activation</strong>, <strong>Som_admin1_regions_UNDP</strong> and <strong>OpenStreetMap</strong></p></li>
 <li><p>Open a new print layout by clicking on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Print</span> <span class="pre">Layout</span></code> -&gt; enter the name of your current Project e.g “2024_01”.</p></li>
@@ -1305,7 +1313,7 @@ Video: Making a print map<div class="sd-summary-down docutils">
 <p class="admonition-title">Attention</p>
 <p>Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.</p>
 </div>
-<p>You can also adapt the template to your needs and preferences. You can find help <span class="xref myst">here</span>.</p>
+<p>You can also adapt the template to your needs and preferences. You can find help <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html">here</a>.</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.</p>
@@ -1314,7 +1322,7 @@ Video: Making a print map<div class="sd-summary-down docutils">
 <section id="step-13-exporting-map">
 <h3>Step 13.: Exporting Map<a class="headerlink" href="#step-13-exporting-map" title="Permalink to this heading">#</a></h3>
 <p><strong>Purpose:</strong> Export the designed and finalised map layout in order to print it as a pdf or format of your choice.</p>
-<p><strong>Tool:</strong> <a class="reference internal" href="../Module_4/en_qgis_map_design_2.html"><span class="doc std std-doc">Print Layout</span></a></p>
+<p><strong>Tool:</strong> <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html">Print Layout</a></p>
 <p>When you have finished the design of you map, you can export it as pdf or image file in different data types.</p>
 <p><strong>Export as Image</strong></p>
 <ol class="arabic simple">

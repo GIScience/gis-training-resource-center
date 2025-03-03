@@ -10,7 +10,7 @@
 
 As we have already learned, raster data are basically a grid of pixels with different (numerical) values. As such, you can't style the shape, fill or outline of raster data. Raster data is visualized by assigning a colour ramp to the pixel value. QGIS offers several options to visualise raster data. For example, you can create a hillshade with digital elevation model (DEM). This small chapter only covers the basics of visualising raster data. If you want to learn more about raster data and how to work with raster layers, take a look at [module 8](/content/Module_8/en_module_8_overview.md). 
 
-### Assigning a colour gradient to raster data
+## Assigning a colour gradient to raster data
 
 To assign a colour gradient for raster data, you need to:
 
@@ -30,14 +30,14 @@ Colour Ramp Selector in QGIS 3.36.
 
 In the colour ramp selector, you can adjust each colour step. On the bottom, you can see a plot for the Hue, __Saturation__, __Lightness__ and __Opacity__. The last three in particular are useful to understand how your colour ramp will appear. Gradients from light to dark are easier to read: Check if the plot for the __Lightness__ has a more or less linear plot.
 
-### Inverting the colour ramp
+## Inverting the colour ramp
 
 In some cases, the colour ramp should be inverted to make it easier to read the map:
 
 1. Click on the __arrow next to the Colour ramp__ to open the dropdown menu.
 2. Click on `Invert Colour Ramp`.
 
-### Using better colour palettes
+## Using better colour palettes
 
 ```{note}
 

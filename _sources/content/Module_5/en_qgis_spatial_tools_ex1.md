@@ -17,11 +17,12 @@
 
 ::::{grid} 2
 :::{grid-item-card}
+__Aim of the exercise:__
+^^^
 
-## Aim of the exercise
 Become familiar with different types of spatial analysis and geoprocessing tools. Understand the process of discovering relationships and connections between features in spatial data. 
 
-#### Type of trainings exercise:
+__Type of trainings exercise:__
 
 - This exercise can be used in online and presence training. 
 - It can be done as a follow-along exercise or individually as a self-study.
@@ -29,11 +30,10 @@ Become familiar with different types of spatial analysis and geoprocessing tools
 :::
 
 :::{grid-item-card}
+__Focus group (GIS-Knowledge Level):__
+^^^
 
-#### Focus group (GIS-Knowledge Level)
-
-
-#### These skills are relevant for 
+__These skills are relevant for:__
 
 
 :::
@@ -41,16 +41,14 @@ Become familiar with different types of spatial analysis and geoprocessing tools
 
 ::::{grid} 2
 :::{grid-item-card}
-
-#### Estimated time demand for the exercise.
-
- 
+__Estimated time demand for the exercise:__
+^^^ 
 
 :::
 
 :::{grid-item-card}
-
-## Relevant Wiki Articles
+__Relevant Wiki Articles:__
+^^^
 
 * [Geodata Import in QGIS](/content/Wiki/en_qgis_import_geodata_wiki.md)
 * [Projections](/content/Wiki/en_qgis_projections_wiki.md)
@@ -93,11 +91,9 @@ __Wrap up:__
 
 :::
 
-
 ### Data
 
 Download the datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/Exercise_1/Module_5_Exercise_1_Healthsite_distribution_Saint_Louis_region.zip) and unzip the files.
-
 
 <!---Download all datasets and save the folder on your computer and unzip the file. The zip folder includes:
 - `sen_healthsites.shp`: [Senegal health site data](https://data.humdata.org/dataset/senegal-healthsites)
@@ -118,7 +114,8 @@ The projected coordinate system for Senegal is `EPSG:32628 WGS 84 / UTM zone 28N
 
 1. Load the health sites layer (`sen_healthsites.shp`) and the administrative boundary data (`sen_admbnda_adm1_1m_gov_ocha_20190426.shp`) into your QGIS project. Add OpenStreetMap as a background layer (Hint: XYZ via the browser window or the QuickMapServices plugin).
 
-```{attention} Always make sure that your datasets are provided in the correct projection. If this it not the case, it is necessary to reproject the data in the desired coordinates reference system. See the Wiki entry on [projections](/content/Wiki/en_qgis_projections_wiki.md) for further information.
+```{attention} 
+Always make sure that your datasets are provided in the correct projection. If this it not the case, it is necessary to reproject the data in the desired coordinates reference system. See the Wiki entry on [projections](/content/Wiki/en_qgis_projections_wiki.md) for further information.
 ```
 
 2. Select all health sites which are located within the Saint Louis region:

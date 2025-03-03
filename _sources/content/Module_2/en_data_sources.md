@@ -13,7 +13,6 @@ sharing platforms. Some important ones are highlighted below.
 
 __What to look out for when looking for data:__
 
-
 *Data source:* Always make sure to use data from trusted data sources. The 
 organisation that shared the data is the best indicator. Apart from that, use of 
 the data in trusted contexts or also download counts can be good indicators. 
@@ -45,7 +44,6 @@ width: 600 px
 The data to create maps or perform GIS analyses can come from various sources (Source: [CartONG]())
 ```
 
-
 :::{dropdown} Overview of useful data repositories
 :open: 
 
@@ -70,18 +68,16 @@ The data to create maps or perform GIS analyses can come from various sources (S
 | UNHCR Geoservices | Data on displaced populations | https://data.unhcr.org/en/situations |
 | Waterpoint | Data on waterpoints | https://www.waterpointdata.org | 
 
-
 ## Disaster data
 
 | Name | Data | Link |
 | :-------------------- | :----------------- | :---------- |
 | MapAction | Emergency mapping resources | https://maps.mapaction.org/ | 
 | Fieldmaps.io | Data and map download platform for humanitarian use | https://fieldmaps.io | 
-| Acled | Conflict data | https://acleddata.com/data-export-tool |
+| ACLED | Conflict data | https://acleddata.com/data-export-tool |
 | GDACS | Disaster database | https://www.gdacs.org |
 | ZKI/DLR | Flood extents, damage extents, earth observation data | https://activations.zki.dlr.de/en/activations/ |
 | WFP Vulnerability Analysis and Mapping | Data on food security, hazards, conflicts, climate | https://dataviz.vam.wfp.org/ |
-
 
 ## Population data
 
@@ -122,8 +118,8 @@ OpenStreetMap (OSM) is a collaborative project that aims to create a free and ed
 
 There a multiple ways to get OpenStreetMap (OSM) data as a vector file into QGIS. The three most common and easy-to-use ways are geofabrik.de, HOT Export Tool and QuickOSM. Each of the options has both advantages and disadvantages.
 
-
 ```{Tip}
+
 If you wish to practice how to export OSM data, you can do the __[Exercise 4: Exporting OSM Data](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_data_sources_ex4.html)__
 
 ```
@@ -161,6 +157,7 @@ __QuickOSM Plugin__
 
 
 ```{tip}
+
 It is by default possible to add the OSM base map to your project.  Click on `Layer` -> `Add Layer` -> `Add XYZ Layer…`. Choose `OpenStreetMap` and click `Add` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#standard-qgis-basemaps)). 
 
 ```
@@ -174,7 +171,6 @@ to your QGIS project.
 1. Install the QuickOSM plugin by clicking on the `Plugin` tab, -> `Manage and 
    Install Plugins…` -> `All` -> Search for "QuickOSM" -> `Install Plugin`
 2. To open QuickOSM click on the `Vector`tab -> `QuickOSM` ->  `QuickOSM`
-
 
 To work efficiently with QuickOSM, it's essential to have a basic understanding of the OSM data model. Here's a brief explanation:
 
@@ -190,11 +186,9 @@ Follow the steps to fetch for data:
 
 1. Select a Key and Value from the dropdown list. If you are unsure, check here: 
 
-
 ```{figure} /fig/key_value_quickosm.png
 ---
 width: 800px
-name: 
 align: center
 name: Choosing key and value
 ---
@@ -250,7 +244,6 @@ to specify region, time, feature type and data format.
 ```{figure} /fig/hot_export.png
 ---
 height: 400px
-name:
 align: center
 name: HOT Export Tool
 ---
@@ -274,7 +267,6 @@ The HOT Export Tool.
 ```{figure} /fig/hot_export_example.png
 ---
 height: 400px
-name:
 align: center
 name: HOT Export Tool Example
 ---
@@ -287,19 +279,18 @@ An Example for the HOT Export Tool.
 ```{figure} /fig/hot_export_running.png
 ---
 height: 400px
-name:
 align: center
 name: HOT Export Tool running
 ---
 The HOT Export Tool is running.
 ```
+
 10. After being finished, the status will change to `COMPLETED` and you can 
     download your file by clicking on the link:
 
 ```{figure} /fig/hot_export_done.png
 ---
 height: 400px
-name:
 align: center
 name: HOT Export Tool done
 ---

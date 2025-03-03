@@ -18,9 +18,6 @@ In many cases, governmental institutions publish maps only as PDFs, without publ
 these cases, knowing how to correctly georeference a map allows you to access and use the information in your GIS 
 analyses. In the case discussed in this chapter, the soil degradation map of Somalia is only available in a PDF report. In order to use the information in a GIS analysis, we can use the georeferencer to assign geographic coordinates to the pixels of the image. After georeferencing the image, the result is a raster file (`.tiff`). This dataset can be vectorized (converted into vector data) or joined with other raster data, to gain additional information.
 
-
-
-
 ```{figure} /fig/example_georefencing_hague.png
 ---
 width: 750 px
@@ -29,8 +26,8 @@ name: example_georeferenced_map
 A digitised old map of the Hague (Source: [Kokoalberti](https://kokoalberti.com/articles/georeferencing-and-digitizing-old-maps-with-gdal/))
 ```
 
-
 <!--ADD: Pictures of maps available in pdf reports-->
+
 ## Georeferencing in QGIS
 
 In QGIS, the Georeferencer tool is used for this process. T Users manually place control points on the raster image and 
@@ -47,7 +44,7 @@ is needed. The more complex the transformation algorithm is, the more Ground Con
 ```{figure} /fig/en_georef_transformations.png
 ---
 width: 600 px
-name: 
+name: georef_transform_types
 ---
 Different transformation types: linear (left), polynomial 2nd degree (middle), polyonmial 3rd degree (right) (Source: [ESRI](https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/overview-of-georeferencing.htm))
 ```

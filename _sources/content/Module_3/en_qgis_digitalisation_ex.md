@@ -11,19 +11,18 @@
 :::
 ::::
 
-
 # Exercise 1 (Digitisation): Access to financial institutions 
-
 
 ## Characteristics of the exercise
 
 ::::{grid} 2
 :::{grid-item-card}
-#### Aim of the exercise:
+__Aim of the exercise:__
+^^^
 
 In this exercise, you will learn how to digitise points, lines, and polygons of features in settlements by creating new datasets. 
 
-#### Type of trainings exercise:
+__Type of trainings exercise:__
 
 - This exercise can be used in online and presence training. 
 - It can be done as a follow-along exercise or individually as a self-study.
@@ -31,8 +30,8 @@ In this exercise, you will learn how to digitise points, lines, and polygons of 
 :::
 
 :::{grid-item-card}
-
-#### These skills are relevant for 
+__These skills are relevant for:__
+^^^ 
 
 - Data collection and digitisation
 - Fixing spatial information
@@ -42,16 +41,16 @@ In this exercise, you will learn how to digitise points, lines, and polygons of 
 
 ::::{grid} 2
 :::{grid-item-card}
-
-#### Estimated time demand for the exercise.
+__Estimated time demand for the exercise:__
+^^^
 
 - The exercise takes around 2 hour to complete, depending on the number of participants and their familiarity with computer systems.
 
 :::
 
 :::{grid-item-card}
-
-### Relevant Wiki articles
+__Relevant Wiki articles:__
+^^^
 
 * [QGIS Interface](/content/Wiki/en_qgis_interface_wiki.md)
 * [Types of Geodata](/content/Wiki/en_qgis_geodata_types_wiki.md)
@@ -66,9 +65,11 @@ In this exercise, you will learn how to digitise points, lines, and polygons of 
 
 :::{admonition} A note on plugins
 class: attention
+
 This exercise makes use of a plugin which is not installed by default: `OSM Place Search`
 Make sure you take a little bit of time to explain the role of plugins in QGIS and how to install them in QGIS.
 Furthermore, instead of using XYZ-tiles for the basemap, you can decide to use the plugin __"QuickMapServices"__. 
+
 :::
 
 :::{dropdown} __Trainers Corner__ 
@@ -105,8 +106,8 @@ __Wrap up:__
 Try to always use the standard folder structure. You can find a template __[here](/content/Wiki/en_qgis_projects_folder_structure_wiki.mf#standard-folder-structure)__.
 ```
 
-
 ## Background: Cash crunch in Abuja
+
 In 2022 there was a cash shortage in Nigeria. Small businesses heavily rely on cash transactions and cash-based services. This lead to a cash crunch in Abuja, the capital city of Nigeria. [No cash article in Abuja](https://businessday.ng/news/article/business-groan-as-cash-crunch-hits-banks-in-abuja/). 
 
 ## Task: Map the banks
@@ -124,7 +125,6 @@ Arrange your layer in the `Layer Panel` so the OSM is at the bottom ([Wiki Video
 You cannot interact with a base map!
 ```
 
-
 2. To add the plugin `OSM Place Search`, click on `Plugins` -> `Manage and Install Plugins…` -> `All` and search for `OSM Place Search`. Once you have found it, click on it and click `Install Plugin`. You can open the `OSM Place Search Panel` like every other panel by clicking on `View` -> `Panels` and checking `OSM Place Search Panel`([Wiki Video](/content/Wiki/en_qgis_plugins_wiki.md)).
 3. In the `OSM place search` panel, search "Abuja Central Business District" and choose Abuja Municipality Area Council, City. Zoom to the Central Business District. We want to digitise the location of banks in this region. 
 For this, we will need to create a new point layer: 
@@ -138,6 +138,7 @@ For this, we will need to create a new point layer:
         * Click on `Add to Fields List` ![](/fig/mActionNewAttribute.png) to add the new column to the `Fields List`.
         * Click `OK`.
     * Your new layer will appear in the `Layer Panel`
+
 
 ```{admonition} Adding more information
 class: tip
@@ -198,6 +199,7 @@ There is some reliable information that there is a roadblock due to construction
 
     
 ## Map the connection routes
+
 A business man drove all the way from the North of Herbert Macauley Way in the Central Business District of Abuja to do transaction at the Bank of Industry on Monday morning. Unfortunately, he found that the network server of the bank is down and needed to proceed to the Zenith Bank as the only functioning Bank. He later discovered that there is a road blocked at the junction of independence avenue and Tafawa Balewa way due to road construction. 
 
 Create a road line layer that will allow him to get to Zenith Bank easily.

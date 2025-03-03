@@ -572,10 +572,12 @@ document.write(`
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Aim of the exercise:</strong></p>
+</div>
 <div class="sd-card-body docutils">
-<p class="rubric">Aim of the exercise:</p>
 <p class="sd-card-text">Participants will work with multiple layers and conduct spatial queries. Additionally, they will learn how to create their own geodata.</p>
-<p class="rubric">Type of trainings exercise:</p>
+<p class="sd-card-text"><strong>Type of trainings exercise:</strong></p>
 <ul class="simple">
 <li><p class="sd-card-text">This exercise can be used in online and presence training.</p></li>
 </ul>
@@ -584,8 +586,10 @@ document.write(`
 </div>
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>These skills are relevant for:</strong></p>
+</div>
 <div class="sd-card-body docutils">
-<p class="rubric">These skills are relevant for</p>
 <ul class="simple">
 <li><p class="sd-card-text">QGIS Essentials</p></li>
 <li><p class="sd-card-text">Working with multiple layers</p></li>
@@ -601,8 +605,10 @@ document.write(`
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Estimated time demand for the exercise:</strong></p>
+</div>
 <div class="sd-card-body docutils">
-<p class="rubric">Estimated time demand for the exercise.</p>
 <ul class="simple">
 <li><p class="sd-card-text">The exercise takes around 3 hours to complete, depending on the number of participants and their familiarity with computer systems.</p></li>
 </ul>
@@ -611,8 +617,10 @@ document.write(`
 </div>
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Relevant wiki articles:</strong></p>
+</div>
 <div class="sd-card-body docutils">
-<p class="rubric">Relevant wiki articles</p>
 <ul class="simple">
 <li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_visualisation_wiki.html">Visualisation of Vector Data</a></p></li>
 <li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_map_making_wiki.html">Map Making</a></p></li>
@@ -629,8 +637,10 @@ document.write(`
 <div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-1 sd-row-cols-lg-1 docutils">
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Context:</strong></p>
+</div>
 <div class="sd-card-body docutils">
-<p class="rubric">Context</p>
 <p class="sd-card-text">In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. You have already conducted an analysis utilizing actual data from this natural disaster. We now want to visualize our findings on an appealing map that can be printed out or shared with different stakeholders. The map will show specific medical centers and healthcare facilities that where impacted by the flooding. Additionally, we will visualize the viability of road access to the city of Larkana throughout the flood period.</p>
 </div>
 </div>
@@ -702,7 +712,7 @@ The exercise data should be saved in a location where you can easily find them a
 <h3>Part 1: Symbolization<a class="headerlink" href="#part-1-symbolization" title="Permalink to this heading">#</a></h3>
 <p>Now we have assigned a symbol for each layer at our disposal. Look at the map you created and decide if you want to adjust any symbology to make the map easier to read. Do you need to change some colours? Are the layers ordered in a way that the information is visible? Is the font size appropriate, or does it cover up too much information?
 Let’s go through the layers one by one and visualize them in a meaningful way.</p>
-<p><strong>Healthsites</strong></p>
+<p><strong>Healthsites:</strong></p>
 <p>Double-click on the point next to your healthsites vector layer. The symbology window will open. Let’s create our own customized symbol for healthcare facilities.</p>
 <ul class="simple">
 <li><p>Under <code class="docutils literal notranslate"><span class="pre">Symbol</span> <span class="pre">layer</span> <span class="pre">type</span></code>, select <strong>“SVG Marker”</strong></p></li>
@@ -722,7 +732,7 @@ Let’s go through the layers one by one and visualize them in a meaningful way.
 <li><p>you can adjust its color and size and rotate it 180° in order to turn it around.</p></li>
 <li><p>on the upper right click on the <strong>+</strong> in order to add another “Simple Marker”. Choose a circle and adjust its color and size in order to fit around the crescent moon.</p></li>
 </ul>
-<p>Another option to use IFRC and Red Cross logos is to use the <code class="docutils literal notranslate"><span class="pre">Plugin</span> <span class="pre">Resource</span> <span class="pre">Sharing</span></code> :</p>
+<p>Another option to use IFRC and Red Cross logos is to use the <code class="docutils literal notranslate"><span class="pre">Plugin</span> <span class="pre">Resource</span> <span class="pre">Sharing</span></code>:</p>
 <p>With the plugin <strong>“Plugin Resource Sharing”</strong>, you can install symbol and icon libraries used by the Red Cross and UN, as well as other useful symbols.</p>
 <ol class="arabic simple">
 <li><p>Install the <strong>“Plugin Resource Sharing”</strong> by opening the plugin installation window and searching for the plugin.</p></li>
@@ -732,7 +742,7 @@ Let’s go through the layers one by one and visualize them in a meaningful way.
 </ol>
 <p>Now the symbols should be available in the styling manager in the SVG folder.</p>
 <p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_resource_sharing_plugin.mp4"></video></p>
-<p><strong>Roads</strong></p>
+<p><strong>Roads:</strong></p>
 <p>For categorized classification of the roads right-click on the layer <strong>Roads_Larkana</strong> in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. A new window will open up with a vertical tab section on the left. Navigate to the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> tab.</p>
 <ul>
 <li><p>On the top you find a dropdown menu. Open it and choose <code class="docutils literal notranslate"><span class="pre">Categorized</span></code>. Under <code class="docutils literal notranslate"><span class="pre">Value</span></code> select “highway”.</p></li>
@@ -755,9 +765,9 @@ Let’s go through the layers one by one and visualize them in a meaningful way.
 </li>
 <li><p>Once you are done, click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code> to close the symbology window.</p></li>
 </ul>
-<p><strong>Blocked Roads Points</strong></p>
+<p><strong>Blocked Roads Points:</strong></p>
 <p>Open the <strong>Symbology Tab</strong> for the <code class="docutils literal notranslate"><span class="pre">PAK_flood_2024_blocked_road</span></code>-layer and choose a meaningful symbol for flood related blocked roads.</p>
-<p><strong>Airport</strong></p>
+<p><strong>Airports:</strong></p>
 <p>In the <span class="xref myst">previous exercise</span> you found out that the Mohenjodaro Airport in the southwest of Larkana City is still accessible via the road network. Essential supplies could potentially be transported from the airport into the city without encountering any roadblocks. We want to point out this possibility. Let’s mark the airport as a point and visualize it!</p>
 <p>To do so we will create an entirely new point dataset representing airports.</p>
 <ul>
@@ -778,9 +788,7 @@ Let’s go through the layers one by one and visualize them in a meaningful way.
 </figcaption>
 </figure>
 </li>
-</ul>
-<p>Now you can create a point for the airport and if you would like additional airports as well <span class="xref myst">wiki</span>. Currently the new layer <strong>“PAK_airports”</strong> is empty. To add features we can use the <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code>. If you cannot see the toolbar <code class="docutils literal notranslate"><span class="pre">View</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Toolbars</span></code> and check <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code> (<span class="xref myst">Wiki Video</span>).  <img alt="" src="../../_images/Digitizing_Toolbar.png" /></p>
-<ul>
+<li><p>Now you can create a point for the airport and if you would like additional airports as well <span class="xref myst">wiki</span>. Currently the new layer <strong>“PAK_airports”</strong> is empty. To add features we can use the <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code>. If you cannot see the toolbar <code class="docutils literal notranslate"><span class="pre">View</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Toolbars</span></code> and check <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code> (<span class="xref myst">Wiki Video</span>).  <img alt="" src="../../_images/Digitizing_Toolbar.png" /></p></li>
 <li><p>Once you have found the airport, click on it<img alt="" src="../../_images/mActionCapturePoint.png" />. Left-click on the feature you want to digitise.</p></li>
 <li><p>Once you click on a place, a window will appear. Indicate that the road is blocked by writing <code class="docutils literal notranslate"><span class="pre">Yes</span></code> in the field <code class="docutils literal notranslate"><span class="pre">Blocked_road</span></code>.</p>
 <figure class="align-center" id="id4">
@@ -806,9 +814,9 @@ Let’s go through the layers one by one and visualize them in a meaningful way.
 </figure>
 </li>
 </ul>
-<p><strong>Flood Extent</strong></p>
+<p><strong>Flood Extent:</strong></p>
 <p>Open the <strong>Symbology Tab</strong> for the <code class="docutils literal notranslate"><span class="pre">PAK_2024_Minimum_Flood_Extend_reprojected</span></code>-layer. Choose a light-blue as color and adjust the opacity to about 30%.</p>
-<p><strong>Administrative Boundaries</strong></p>
+<p><strong>Administrative Boundaries:</strong></p>
 <p>Open the <strong>Symbology Tab</strong> for the <code class="docutils literal notranslate"><span class="pre">PAK_Sindh_amd1</span></code>-layer. Click on <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">Fill</span></code> and adjust the <code class="docutils literal notranslate"><span class="pre">Symbol</span> <span class="pre">layer</span> <span class="pre">type</span></code> to <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">Line</span></code>. You can furthermore adjust now the outline colour and stroke width.</p>
 <p><strong>Bonus Step</strong>: <a class="reference internal" href="../Wiki/en_qgis_basemaps_wiki.html"><span class="doc std std-doc">Adding a basemap</span></a> can help potential readers orienting themselves.</p>
 <p>If you are happy with the symobolisation of your layers, the map should be ready for a print layout.</p>
@@ -842,7 +850,7 @@ Let’s go through the layers one by one and visualize them in a meaningful way.
 </li>
 </ul>
 <ol class="arabic simple" start="2">
-<li><p>Insert a new map by clicking on <img alt="New Map Icon" src="../../_images/30.30.2_print_layout_insert_map_icon.png" /> (<code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Map</span></code>) on the left toolbar, and drawing a rectangle on the print canvas. <span class="xref myst">Video</span></p></li>
+<li><p>Insert a new map by clicking on <img alt="New Map Icon" src="../../_images/30.30.2_print_layout_insert_map_icon.png" /> (<code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Map</span></code>) on the left toolbar, and drawing a rectangle on the print canvas. <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.md#adding-a-new-map">Video</a></p></li>
 <li><p>Move and position the map so that the area of interest is visible at a reasonable scale.</p></li>
 <li><p>Let’s add a title:</p>
 <ul class="simple">
