@@ -12,11 +12,12 @@ At its core, GIS is a computer-based system to organise data with a spatial
 component (_geodata_). There are three core functions of GIS: 
 
 :::{div} sd-text-center sd-text-italic sd-text-primary
+
 1. Connecting data to maps  
 2. Visualisation, organisation and processing of spatial data  
 3. Analysing spatial   
-:::
 
+:::
 
 ```{figure} /fig/GIS_Core_functunality.drawio.svg
 ---
@@ -33,7 +34,7 @@ __A more formal definition:__
 
 A Geographic Information System (GIS) is a digital tool that integrates data with maps. It enables the collection, management, analysis, and visualization of data by associating them with specific locations on the Earth's surface. By leveraging GIS, we gain deeper insights into data, revealing patterns and providing a better understanding of the geographic context. This leads to more insightful analysis, improved communication, and ultimately facilitates better evidence-based decision-making. GIS is deeply rooted in geography, the scientific field dedicated to studying Earth's lands, features, inhabitants, and phenomena. GIS software is capable of displaying various types of data simultaneously on a map, enhancing our ability to comprehend complex spatial relationships.
 
-### GIS components
+## GIS components
 
 GIS is more than a software. It’s a system and it includes
 multiple elements:
@@ -46,8 +47,6 @@ align: center
 ---
 GIS components
 ```
- 
-
 
 ## Examples of GIS used by humanitarian organisations
 
@@ -79,13 +78,16 @@ or on the IFRC GO platform's [Emergency pages](https://go.ifrc.org/emergencies/a
 :::
 
 :::{tab-item} ICRC
+
 The International Committee of the Red Cross (ICRC) has a specialised GIS Support 
 Unit that runs their [GIS Resource Center](https://gisupporticrc.github.io/GISResourceCenter/#portfolio) 
 and ICRC GeoPortal. The ICRC resource centre portfolio gives an idea of the 
 kinds of analysis the GIS unit produces, although much of it is not public. 
+
 :::
 
 :::{tab-item} REACH Initiative
+
 REACH Initiative is a humanitarian data collection and analysis NGO that has a 
 strong GIS specialism. The [REACH Resource Centre](https://www.impact-initiatives.org/resource-centre/) 
 is where the organisation publishes content, including 
@@ -101,9 +103,11 @@ align: center
 ---
 Example Map: REACH, Ukraine, IDP Collective Site Monitoring, Map, Active Sites, February 2024. Source: [REACH](https://repository.impact-initiatives.org/document/reach/794cd686/REACH_UKR_Map_CSM_SituationOverview_ActiveSites_FEB2024_EN_A4.pdf)
 ```
+
 :::
 
 :::{tab-item} Médecins Sans Frontières
+
 Médecins Sans Frontières (MSF) has a [GIS Unit](https://geo.msf.org/home) that 
 publishes geospatial products on the [GeoMSF platform](https://geo.msf.org/catalogue) 
 to support MSF activities. 
@@ -124,6 +128,7 @@ allowfullscreen></iframe>
 :::
 
 :::{tab-item} World Food Programme (WFP)
+
 The World Food Programme (WFP) produces maps and publishes geodata both on their 
 own data platform - [WFP Geonode](https://geonode.wfp.org/) and on the 
 [Humanitarian Data Exchange (HDX)](https://data.humdata.org/organization/wfp?). 
@@ -135,9 +140,11 @@ WFP also builds dashboards for advocacy, like HungerMap Live:
 
 %%html
 <iframe src="https://hungermap.wfp.org/" width="750" height="500"></iframe>
+
 :::
 
 :::{tab-item} iMMAP
+
 iMAAP is an information management NGO that provides support to the UN and 
 international NGOs. Their [product portfolio](https://immap.org/products/) 
 includes examples of maps used in sitaution overviews, interactive dashboards 
@@ -152,10 +159,10 @@ align: center
 Example Map: Afghanistan Earthquake Events Overview February 2024. Source: [iMMAP](https://immap.org/product/afghanistan-earthquake-events-overview-february-2024/)
 ```
 
-
 :::
 
 :::{tab-item} MapAction
+
 MapAction produces maps and geospatial data support decision-making in emergency 
 response. Their [maps and data](https://maps.mapaction.org/) page shows recent products they have published, and their [product catalogue](https://guides.mapaction.org/) 
 gives an overview of the types of services they provide. 
@@ -168,6 +175,7 @@ align: center
 ---
 Example Map: Philippines - TS Washi (Sendong) - Evacuation centre amd transitory site population, Cagayan de Or. Source: [MapAction](https://guides.mapaction.org/images/examples/cluster-camp-coordination.jpg)
 ```
+
 :::
 
 ::::
@@ -225,6 +233,7 @@ align: center
 ---
 John Snow Cholera map of London (1854). Source: https://giscience.github.io/gis-training-resource-center/_images/John_snow_zoom_map2.png
 ```
+
 __Using GIS__, several measures of spatial central tendency have been applied to 
 the dataset, revealing that the Spatial Mean (the geographic center of the 
 distribution of deaths) of the outbreak lies __within 35 meters of the Broad 
@@ -234,6 +243,7 @@ Street Pump__, identified as the __source of contamination__ in the 1854 outbrea
 
 %%html
 <iframe src="https://www.arcgis.com/apps/PublicInformation/index.html?appid=d7deb67f810d46dfacb80ff80ac224e9" width="750" height="500"></iframe>
+
 :::
 
 ## Common map types in humanitarian response
@@ -272,7 +282,6 @@ Infrastructure maps in the humanitarian context provide visual representations o
  - High level of __detail__
  - Produced after field __data collection__
 
-
 ```{figure} /fig/en_Infrastructure_Map_Nigeria.png
 ---
 height: 600px
@@ -282,7 +291,6 @@ align: center
 Example Map:  Nigeria - Borno State - Mogcolis Camp, General Infrastructure - Updated 24 July 2017
 align: center. Source: [REACH](https://reliefweb.int/map/nigeria/nigeria-borno-state-mogcolis-camp-general-infrastructure-updated-24-july-2017)
 ```
-
 
 ### Thematic maps
 
@@ -302,7 +310,6 @@ align: center
 Example Map: Shelter Sector Turkiye: Rental prices changes, February - April 2023 (Source: [IFRC](https://reliefweb.int/map/turkiye/shelter-sector-turkiye-rental-prices-changes-february-april-2023))
 ```
 
-
 ### Analysis maps
 
 Analysis maps are used to examine and interpret data, revealing patterns, trends, and relationships within a geographic area. They facilitate in-depth understanding of complex situations, enabling decision-makers to derive insights and make informed decisions for effective humanitarian responses.
@@ -312,8 +319,6 @@ Analysis maps are used to examine and interpret data, revealing patterns, trends
 - Use colours and shapes __to help users__ understand specific events
 - __Support__ decision makers
 - Generally display a greater __level of detail__
-  
-
 
 ```{figure} /fig/en_Analysis_Map_Yemen.png
 ---
@@ -331,7 +336,6 @@ Situation or descriptive maps provide a snapshot of specific conditions or event
 - Used to __better visualize__ a specific ongoing and/or past situation 
 - Maps can include __narrative__ and graphic elements 
 - Can be used in reports and/or to __raise awareness__ on a specific event 
-
 
 ```{figure} /fig/en_Pop_Syrian_Refugees_2023.png
 ---

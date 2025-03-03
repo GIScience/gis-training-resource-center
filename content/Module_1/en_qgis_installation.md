@@ -12,7 +12,7 @@ In this chapter, we will prepare the setup for the training. This includes insta
 
 ## Quick guide QGIS 3.34.12 - installation and basic setup
 
-<iframe width="800" height="315" src="https://youtube.com/embed/ck4PjoOIwMQ?si=8HHR03VzpyuhXOmr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="800" height="515" src="https://youtube.com/embed/ck4PjoOIwMQ?si=8HHR03VzpyuhXOmr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## QGIS Download and Installation
 
@@ -23,10 +23,12 @@ things to look out for. You can find advice below on how to install QGIS on
 different operating systems. 
 
 ```{Warning} 
-There are many versions of QGIS. It is recommended to use the __Long Term 
-Release__ versions  because it is the most stable and contains the fewest bugs.
 
-The current __Long Term Release__ is __[QGIS 3.34.12 'Prizren'](https://qgis.org/download/)__
+There are several versions of QGIS available to download. It is recommended to use the __Long Term 
+Release__ versions because it is the most stable and contains the fewest bugs.
+
+The current __Long Term Release__ is __[QGIS 3.40.4. 'Bratislava'](https://qgis.org/download/)__
+
 ```
 
 ### QGIS Download
@@ -55,6 +57,7 @@ start the installer
 ::::{tab-set}
 
 :::{tab-item} Windows installation
+
 __32 Bit or 64 Bit?__
 For __Windows operating systems__, there is always a 32-bit version and a 64-bit 
 version of each QGIS version available for download. Which version to install 
@@ -80,10 +83,11 @@ sudo apt install qgis qgis-plugin-grass
 
 In the conventional apt package sources, an older version of QGIS will probably 
 be installed. If you are using the package source [Ubuntugis](https://launchpad.net/~ubuntugis/+archive/ubuntu/ppa), 
-observe the following installation [notes](https://qgis.org/en/site/forusers/alldownloads.html#repositories)
+observe the following installation [notes](https://qgis.org/en/site/forusers/alldownloads.html#repositories).
 
 If you install a QGIS version 3.30 or higher you have to install the plugin 
-_Processing Saga NextGen Provider_ . 
+_Processing Saga NextGen Provider_.
+
 :::
 
 ::::
@@ -96,12 +100,12 @@ Keeping your data and project-files organised is the key to successfully working
 - When downloading data for the exercises, create subfolders for each module and training exercise (e.g. `/GIS_Training/Module_1/Exercise_1`)
 - Save all of the QGIS-projects as well as the downloaded material for the exercises in these folders. 
 
-
-
 [Module 2](/content/Modul_2/en_qgis_geodata_concept.md) will go into more into depth about geodata management and introduce a standard folder structure for QGIS-projects. 
 
 ```{note}
+
 Make sure to unzip the exercise files before starting the exercises. 
+
 ```
 
 

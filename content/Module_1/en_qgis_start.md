@@ -8,9 +8,7 @@
 
 # Getting started with QGIS
 
-
 ## Introducing QGIS
-
 
 ```{image} /fig/en_qgis_banner_website.png
 ---
@@ -33,11 +31,15 @@ and is a project of volunteers. And it is __constantly changing__.
 
 
 ```{note}
+
 Keep in mind that as QGIS gets developed further, the interface and functions of QGIS are subject to changes. The material written for this platform is referring to QGIS Version 3.36. If the training material is no longer up to date, take a look at the [QGIS Documentation](https://docs.qgis.org/3.34/en/docs/index.html).
+
 ```
 
 ```{attention}
+
 QGIS is constantly changing, with new features being added. Because of this, the newer versions can have changes or even bugs (such as crashes). However, there is always a stable version available, which is supported for longer. This version is called __Long-term release (LTR)__. 
+
 ```
 
 
@@ -46,8 +48,10 @@ QGIS is constantly changing, with new features being added. Because of this, the
 
 In QGIS, you create projects where you visualise and manipulate geodata. There are three main workflows you will use: __Data collection and creation, data processing, and data visualisation__. Geodata is loaded into QGIS projects which will represented as layers on a map canvas.
 
-```{hint} 
+```{hint}
+
 There is a lot of complex math involved in the GIS, but QGIS takes care of it on it's own and you don't need to have a deep understanding of maths and algorithms to use QGIS. __As long as you can use Excel and Powerpoint, you shouldn't have trouble learning how to use QGIS__. 
+
 ```
 
 ::::{tab-set}
@@ -57,8 +61,6 @@ There is a lot of complex math involved in the GIS, but QGIS takes care of it on
 QGIS offer tools to create your own geodata. For example, with the digitizing tools, you can create points, polygons, and lines with information which can represent spatial information. Furthermore, georeferencing let's you add geographic information to various types of data, such as satellite imagery or hand-drawn maps. You will learn how to create geodata and how to georeference data in __[module 2](/content/Module_2/en_module_2_overview.md)__. 
 
 Sometimes working with GIS requires you to go and collect the data in the field. In this case, you can use [web and mobile apps](/content/Wiki/en_web_and_mobile_apps_wiki.md). 
-
-
 
 :::
 
@@ -71,7 +73,6 @@ You will learn more about data processing and manipulation in [module 2](https:/
 <!--ADD: more examples-->
 <!--ADD: add link to basic data processing and visualisation chapters-->
 
-
 :::
 
 :::{tab-item} Visualisation
@@ -83,7 +84,6 @@ assign symbols in [Module 4: Visualisation of Geodata and Map Making](/content/M
 
 <!--ADD: Insert example for visualisation-->
 <!--FIXME: Insert link to overview page on module 3-->
-
 
 :::
 ::::
@@ -100,7 +100,6 @@ For example, plugins let you connect to online services such as OpenStreetMap, o
 data. These can be very useful for certain use cases. There are also plugins specifically designed for humanitarian 
 work. You will learn more about plugins in the following modules. If you want to know how to install them, look into the [wiki](/content/Wiki/en_qgis_plugins_wiki.md). 
 
-
 :::
 
 ## Opening a new project in QGIS
@@ -111,7 +110,6 @@ The start screen of QGIS usually shows you the projects you worked on recently a
 There are __two__ options to create a new project:
 
 1. On the start screen click on `Project Template`
-
 
 ```{figure} /fig/en_project_template_BRC.png
 ---
@@ -125,27 +123,29 @@ align: center
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_new_project.mp4"></video>
 
-```{tip} 
-A QGIS project file has the format ending `.qgz`
-```
+::::{margin}
+:::{tip}
 
+A QGIS project file has the format ending `.qgz`.
+
+:::
+::::
 
 ## Overview of the QGIS Interface
 
 The interface of QGIS is at first glance quite complex. However, once you know all the components you will be able to orientate yourself quickly. Here you can find a description of all components of the interface.
 
 ::::{sidebar}
-```{tip}
+:::{tip}
 
 When you hover with your mouse cursor over icons, text will appear which explains the function of the button.
 
-```
+:::
 ::::
 
 ```{figure} /fig/en_QGIS_GUI.png
 ---
-width: 800px
-name: 
+width: 800px 
 align: center
 name: QGIS User Interface
 ---
@@ -163,6 +163,7 @@ name: Toolbox button
 align: center
 ---
 ```
+
 3. __Map Canvas:__ The __map canvas__ is the __central component__ of every GIS programme. This is where the __geodata__ are displayed. The map view has a projection which does not always have to correspond to the projection of the layers.
 
 4.  __Coordinates and Scale:__ Here you can find information about the scale of the map canvas, as well as read the coordinates of the mouse pointer.
@@ -171,17 +172,21 @@ align: center
 
 6. __Search bar:__ Here you can __search for tools and layers__ in QGIS. If you don't know where to find a tool, you can try here. You can also type in coordinates to find them on the map canvas. 
 
- :::{dropdown} Exercise: Create a new QGIS project
- 1. In your “GIS_Training” folder, create a __subfolder__ called "Projects"
- 2.  Open __QGIS__
- 3. Click on `Project` -> ` New Project `
- 4. In the top-left corner, click on `Project` -> `Save as`, browse to your Projects folder and save the project as "Session1”
- 5. Click on __Save as__, browse to your Projects folder and save the project as “Session1”
- 6. Open your “Projects” folder and check the __.qgz file__ that you just created
+:::{dropdown} Exercise: Create a new QGIS project
+
+1. In your “GIS_Training” folder, create a __subfolder__ called "Projects"
+2.  Open __QGIS__
+3. Click on `Project` -> ` New Project `
+4. In the top-left corner, click on `Project` -> `Save as`, browse to your Projects folder and save the project as "Session1”
+5. Click on __Save as__, browse to your Projects folder and save the project as “Session1”
+6. Open your “Projects” folder and check the __.qgz file__ that you just created
+
 :::
 
 ```{attention}
+
 If you see a `*` in the title bar, to the left of the name of your project, this means that the project has changes which are __unsaved__. Since QGIS can crash from time to time, make sure to save your project periodically to avoid losing progress.
+
 ```
 
 ## Buttons and Shortcuts
@@ -208,6 +213,7 @@ __Hotkeys__ in the QGIS interface provide convenient shortcuts for various comma
 ```
 
 ```{dropdown} Project managment
+
 | Name            | Menu option                        | Shortcut         | Description                             |
 |-----------------|------------------------------------|------------------|-----------------------------------------|
 | New Project     | ![](/fig/qgis_new.png)             | <kbd>Ctrl</kbd> + <kbd>N</kbd>   | Create a new project                    |
@@ -221,6 +227,7 @@ __Hotkeys__ in the QGIS interface provide convenient shortcuts for various comma
 ```
 
 ```{dropdown} Layer management
+
 | Name                        | Menu option                                  | Shortcut            | Description                       |
 |-----------------------------|----------------------------------------------|----------------------|-----------------------------------|
 | Data source manager         | ![](/fig/qgis_data_source_manager.png)       | <kbd>Ctrl</kbd> + <kbd>L</kbd>        | Add a new layer                   |
@@ -231,10 +238,10 @@ __Hotkeys__ in the QGIS interface provide convenient shortcuts for various comma
 | Toggle layers view          |                                              | <kbd>Ctrl</kbd> + <kbd>1</kbd>        | Toggle the layers view           |
 | Toggle browser view         |                                              | <kbd>Ctrl</kbd> + <kbd>2</kbd>       | Toggle the browser view          |
 
-
 ```
 
 ```{dropdown} Analysis Tools
+
 | Name                                     | Menu option                                 | Shortcut                   | Description                                            |
 |------------------------------------------|---------------------------------------------|-----------------------------|--------------------------------------------------------|
 | Identify Features | ![](/fig/qgis_identify_features.png) | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd>  | Identify features on the map view by clicking on them |
@@ -247,6 +254,7 @@ __Hotkeys__ in the QGIS interface provide convenient shortcuts for various comma
 ```
 
 ```{dropdown} Advanced Tools
+
 | Name                    | Menu option                            | Shortcut          | Description                  |
 |-------------------------|----------------------------------------|--------------------|------------------------------|
 | Processing Toolbox      | ![](/fig/qgis_processing_toolbox.png) | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> | Opens the Processing Toolbox |
@@ -256,7 +264,7 @@ __Hotkeys__ in the QGIS interface provide convenient shortcuts for various comma
 
 ## Navigating on the Map Canvas
 
-```{admonition} *Optional*: Now it's your turn!
+::::{admonition} *Optional*: Now it's your turn!
 
 You can follow the steps below in your own QGIS project. Download [this dataset](https://nexus.heigit.org/repository/gis-training-resource-center/Module_1/wb_boundaries/wb_countries_admin0_10m.gpkg) and drag and drop the `wb_countries_admin0_10m.gpkg` onto the map canvas. The data set are the official country boundaries by the [World Bank](https://datacatalog.worldbank.org/search/dataset/0038272/World-Bank-Official-Boundaries). 
 
@@ -267,7 +275,7 @@ Download the Worldbank Official Boundaries
 
 :::
 
-```
+::::
 
 ### Moving the map view
 
@@ -317,11 +325,11 @@ Basically, all the functionality, tools and applications of QGIS are organised i
 ### Open Toolbox
 
 ::::{margin}
+:::{tip}
 
-```{tip}
 Holding <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> opens and closes the toolbox. 
-```
 
+:::
 ::::
 
 To open the Toolbox in QGIS click on the gearwheel button. Or click on `Processing` -> `Toolbox`
@@ -363,11 +371,9 @@ In QGIS, the geodata you work with is __not__ saved in your QGIS project file. I
 
 Good data organisation with a fixed and well-thought-out folder structure prevents such problems.
 
-```{Warning} 
-
+:::{Warning} 
 Always organize your data! Check out the Wiki article on [Standard Folder Structure](/content/Wiki/en_qgis_projects_folder_structure_wiki.md) for more info. 
-
-```
+:::
 
 
 ### Open Projects
@@ -409,7 +415,6 @@ Pressing <kbd>Ctrl</kbd> + <kbd>S</kbd> saves the project, whereas pressing <kbd
 
 It can be that while working with QGIS, you come across orange warning icons. This indicates that you should pay attention. To understand what the warning icon means, __hover over it with your mouse__ and explanatory text will appear. For example, in {numref}`warning_icon_example`, the warning icon indicates that the units of measurements are degrees, which are not constant (the distance between 1⁰ of longitude is much greater at the equator than at the poles).
 
-
 ```{figure} /fig/en_3.36_warning_icon_example.png
 ---
 name: warning_icon_example
@@ -420,7 +425,6 @@ An example of a warning icon while adjusting the parameters of a processing tool
 
 ## Where to find help
 
-
 ```{admonition} Connect with us!
 :class: tip
 If you have more questions before or after the training or require assistance, do not hesitate to reach out to us by writing an email to `gis-training-platform@heigit.org`.
@@ -429,6 +433,7 @@ If you have more questions before or after the training or require assistance, d
 :::{card}
 :class-card: sd-text-justify sd-rounded-3 sd-border-2
 :link: https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html
+
 We have collected a list of __[Common errors and issues](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html)__. If you ever find yourself at your wits end (which can happen a lot when working with QGIS!), try finding the solution to your problem here. 
 
 :::
