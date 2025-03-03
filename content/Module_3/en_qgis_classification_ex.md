@@ -105,6 +105,7 @@ __Wrap up:__
 
 
 ### Available Data
+
 Download all datasets __[here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_1/Module_3_Exercise_1_Flood_Nigeria.zip)__ and save the folder on your computer. Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects. Under "data > input" you will find the following files:
 
 - `Sierra_leone_foodinsecurity_2015.shp` (Polygon) Shapefile
@@ -141,7 +142,6 @@ To add the plugin `OSM Place Search`, click on `Plugins` -> `Manage and Install 
 ```{figure} /fig/mod3_classification_ex_OSMsearch.png
 ---
 width: 400px
-name: 
 align: center
 ---
 OSM place search.
