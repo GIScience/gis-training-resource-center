@@ -16,7 +16,7 @@ want to apply our understanding of visual representation and learn how to use th
 ```{figure} ../../fig/en_30.30.2_styling_panel.png
 ---
 height: 400px
-name: styling panel
+name: styling_panel
 align: left
 ---
 Styling panel in QGIS 3.30.2
@@ -36,16 +36,12 @@ create labels, and create colour ramps to differentiate between features with va
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_opening_the_styling_panel.mp4"></video>
 :::
 
-
 ## Symbology for Vector Data
-
 
 You can use graphical variables to style vector data. As we have already learned, vector data can be either points, 
 lines, or polygons. There are different options to symbolize these different types of vector data. 
 
-
-
-``` {figure} ../../fig/en_symbolization_vector_data.png
+```{figure} ../../fig/en_symbolization_vector_data.png
 ---
 name: symbolization for vector data
 width: 750px

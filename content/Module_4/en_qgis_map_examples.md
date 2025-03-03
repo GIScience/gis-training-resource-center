@@ -8,7 +8,6 @@
 
 # Good Map Design & Semiological Errors
 
-
 In this chapter we will discuss well designed maps and give examples of how to recreate specific design elements in QGIS. A second part of this chapter will focus on common semiological missteps. If you need further examples for good map design, check out these websites/repositories:
 
 - [impact-initiatives.org/resource-centre maps](https://www.impact-initiatives.org/resource-centre/?category%5B%5D=information_products&category%5B%5D=data_methods&type%5B%5D=281&order=latest&limit=10)
@@ -28,6 +27,7 @@ Flood affected areas and roads in the Somali Region, Ethiopia (Source: OCHA)
 ```
 
 :::{dropdown} Context: Situation in Ethiopia
+
 The Greater Horn of Africa receives 20 to 70 percent of the annual total rainfall in the months from October to December. The IFRC reports a exceptionally high forecast probability (over 80%) of experiencing wetter than normal rainfall condition. Additionally, El Niño conditions started between July and August, which further accrued the possibility of high rainfall conditions in Ethiopia.
 
 Since October, floods have affected at least 763,000 people in the region, taken 33 lives in the Somali Region alone, and killed 4,806 livestock. The flooding has also resulted in immense damage to infrastructure, transportation, and schooling. The population's livelihood and health have been greatly affected.

@@ -11,10 +11,7 @@
 :::
 ::::
 
-
-
 # Exercise 5: The world
-
 
 ## Characteristics of the exercise
 
@@ -38,7 +35,6 @@ __Type of trainings exercise:__
 :::
 
 :::{grid-item-card}
-
 
 
 :::

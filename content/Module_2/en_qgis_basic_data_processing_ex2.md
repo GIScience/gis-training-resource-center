@@ -27,9 +27,8 @@ selection, as well as load a basemap.
 
 ::::{grid} 2
 :::{grid-item-card}
-
-
-#### Type of trainings exercise:
+__Type of trainings exercise:__
+^^^
 
 - This exercise can be used in online and presence training. 
 - It can be done as a follow-along exercise or individually as a self-study.
@@ -37,8 +36,8 @@ selection, as well as load a basemap.
 :::
 
 :::{grid-item-card}
-
-#### These skills are relevant for 
+__These skills are relevant for__
+^^^ 
 
 - QGIS Essentials
 - Navigating the QGIS-interface 
@@ -51,16 +50,16 @@ selection, as well as load a basemap.
 
 ::::{grid} 2
 :::{grid-item-card}
-
-#### Estimated time demand for the exercise.
+__Estimated time demand for the exercise:__
+^^^
 
 - The exercise takes around 1 hour to complete, depending on the number of participants and their familiarity with computer systems.
 
 :::
 
 :::{grid-item-card}
-
-### Relevant Wiki articles
+__Relevant Wiki articles:__
+^^^
 
 * [QGIS Interface](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
 * [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)
@@ -76,15 +75,14 @@ selection, as well as load a basemap.
 ## Instructions for the trainers
 
 :::{dropdown} __Trainers Corner__ 
-
-### Prepare the training
+__Prepare the training:__
 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
 - Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
 
-### Conduct the training
+__Conduct the training:__
 
 __Introduction:__
 
@@ -105,7 +103,9 @@ __Wrap up:__
 :::
 
 ## Exercise
+
 ### Available Data
+
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_2/Module_2_Exercise_2_Basic_geodata_processing.zip 
 
@@ -120,7 +120,6 @@ The zip folder includes:
 | `nigeria_populated_places.shp` | Nigeria Populated Places (OpenStreetMap Export) | Humanitarian OpenStreetMap Team (HOT) | [HDX](https://data.humdata.org/dataset/hotosm_nga_populated_places) | 
 | `nigeria_boundaries.geojson` |   |   |   |
 
-
 <!---The zip folder includes:
 
 - `nigeria_populated_places.shp` (Points) Shapefile
@@ -134,6 +133,7 @@ The shapefile for populated places contains __point data__ on human settlements 
 GeoJSON does not support multiple layers, so the polygons for the country boundaries and the states are merged into one layer __where the different polygons overlap__. 
 
 :::
+
 <!--ADD: Explanation about how GeoJSON apparently merges different layers?-->
 
 ### Tasks
@@ -187,5 +187,6 @@ name: en_result_geodata_processing_exercise
 ---
 This is how your output could look like in the end
 ```
+
 <!-- FIXME: We have not asked people to remove the initial layers so they would 
 	also show in the layers list --> 

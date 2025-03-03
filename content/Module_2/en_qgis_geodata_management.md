@@ -8,7 +8,6 @@
 
 # Geodata management
 
-
 In this chapter, we will have a closer look at how to store geodata on your computer to work in 
 QGIS or other GIS applications. 
 Since vector data is the primary geodata type you will work with at the beginning 
@@ -46,7 +45,7 @@ The version of a standardized folder structure that is used for all exercises
 in this training is explained below. A template of the folder structure can be 
 downloaded [__here__](https://github.com/GIScience/gis-training-resource-center/blob/main/fig/GIS_Project_folder_template.zip).
 
- A standard folder structure has two principal advantages:
+A standard folder structure has two principal advantages:
 
 1. If we share the whole project folder, we can expect the project to run 
    without problems on a different computer

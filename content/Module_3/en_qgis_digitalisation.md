@@ -15,7 +15,6 @@ Proficiency in digitisation stands as a cornerstone for GIS specialists. It empo
 information into a digital format, facilitating more efficient data manipulation compared to traditional methods 
 of interpreting images or paper maps. 
 
-
 :::{admonition} Digitisation in humanitarian work
 :class: tip
 
@@ -40,16 +39,12 @@ name: Digitisation with GIS Concept
 The concept of digitisation within GIS. Source: HeiGIT
 ```
 
-
-
 ##  Digitising in QGIS
 
 In QGIS,digitisation involves tracing features such as points, lines, or polygons directly on the map canvas to 
 represent geographic elements like buildings, roads, or land parcels. Additionally, you can assign attributes to each 
 feature during digitization, enabling further analysis and integration with other geospatial data. This digitized data 
 becomes a valuable asset for spatial analysis and mapping.
-
-
 
 :::{card}
 :class-card: sd-text-justify sd-text-black sd-rounded-3 sd-border-2
@@ -82,16 +77,12 @@ name: Activate digitising Toolbar
 The Digitisation Toolbar in QGIS 3.36.
 ```
 
-
-
 Digitising is done with the `Digitizing Toolbar` and on the map canvas. 
 First, you need to check if the `Digitizing Toolbar` is activated. To do that 
 * Click on the `View` tab in the menu bar and click `Toolbars`. Check if the `Digitizing` and `Advanced Digitizing` toolbar is activated.
 
-
 First, you need to check if the `Digitizing Toolbox` is activated. To do that 
 1.  Click on the `View` tab in the menu bar and click `Toolbars`. Check if the `Digitizing` and `Advanced Digitizing` toolbox is activated.
-
 
 2. A tool box like this should appear on top of the QGIS interface
 
@@ -100,7 +91,6 @@ First, you need to check if the `Digitizing Toolbox` is activated. To do that
 <br>  
 
 <br>  
-
 
 The digitisation toolbar offers the basic tools to create, save, and edit features. However, for everything that 
 goes above just creating new features and deleting features, the Advanced Digitalization toolbar is needed (see {numref}`digitising_toolbar`). 
@@ -255,7 +245,7 @@ information you can add at this stage-->
 
 
 
-```{admonition} Getting coordinates from google maps
+::::{admonition} Getting coordinates from google maps
 :class: tip
 
 Sometimes, the easiest way to get the coordinates for a location, such as the office of a national Red Cross or Red Crescent branch or simply ofa house, is to use google maps. In Google Maps, you can right click on any location to get the coordinates (in degrees). 
@@ -274,7 +264,7 @@ name: gmaps_rightclick_coords
 4. Select `Go to [Your coordinates] (EPSG 4326: WGS 84)`. 
 5. The coordinate point will flash red on the map canvas. 
 
-```
+::::
 
 
 <!---
@@ -359,13 +349,13 @@ The creation of polygon layers works in the same way as for point and line data.
 
 :::
 
-
 ::::
 
 :::{card} 
 :class-card: sd-text-justify sd-rounded-3 sd-border-2
 __Real World Scenario 2/3__
 ^^^
+
 The first thing you do is locate the village using GPS-coordinates that you enter in the bottom right corner of 
 the QGIS window. 
 Thankfully, the process of digitising is relatively easy since there is a recent satellite image provided by 
@@ -473,7 +463,6 @@ Sometimes, you will have to edit the values in the columns of the attribute tabl
 ```{tip}
 You can open the attribute table of the selected layer by pressing <kbd>F6</kbd>. 
 ```
-
 ::::
 
 1. Open the [attribute table](/content/Module_2/en_qgis_attribute_table.md)
@@ -521,7 +510,6 @@ nodes, lines and/or vertices.
 ```{figure} /fig/Digitization_Errors.PNG
 ---
 width: 500px
-name: 
 align: center
 name: Digitizing Errors in QGIS
 ---

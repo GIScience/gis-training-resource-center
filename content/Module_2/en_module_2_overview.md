@@ -20,10 +20,7 @@ but very useful feature when looking at geodata or creating maps. Basemaps let y
 (for example, satellite imagery or topographic maps) without having all the different layers of geodata 
 necessary for such a map on your computer. 
 
-
-
 ## Content
-
 
 | __Chapter__ | __Competences & Objectives__ |
 | ----------- | ---------------------------- | 

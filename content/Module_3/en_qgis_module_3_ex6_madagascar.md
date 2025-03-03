@@ -16,13 +16,20 @@
 
 ::::{grid} 2
 :::{grid-item-card}
-## Aim of the exercise:
+__Aim of the exercise:__
+^^^
+
 Participants will work with multiple layers and conduct spatial queries. Additionally, they will learn how to create their own geodata.
-#### Type of trainings exercise:
+
+__Type of trainings exercise:__
+
 - This exercise can be used in online and presence training. 
+
 :::
+
 :::{grid-item-card}
-#### These skills are relevant for 
+__These skills are relevant for__
+^^^ 
 
 - QGIS Essentials
 - Working with multiple layers
@@ -34,13 +41,16 @@ Participants will work with multiple layers and conduct spatial queries. Additio
 
 ::::{grid} 2
 :::{grid-item-card}
-#### Estimated time demand for the exercise.
+__Estimated time demand for the exercise:__
+^^^
+
 - The exercise takes around 3 hours to complete, depending on the number of participants and their familiarity with computer systems.
+
 :::
 
 :::{grid-item-card}
-
-### Relevant wiki articles
+__Relevant wiki articles:__
+^^^
 
 * [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)
 * [Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html)
@@ -49,13 +59,18 @@ Participants will work with multiple layers and conduct spatial queries. Additio
 * [Spatial Queries](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_queries_wiki.html)
 * [Table function - Add field](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#add-field)
 * [Digitisation- Point data](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#add-geometries-to-a-layer)
+
 :::
 ::::
 
 ::::{grid} 1
 :::{grid-item-card}
-#### Context
+__Context:__
+^^^
+
 "The Government declared a national emergency situation, on 3 April, following the passage of the Tropical Cyclone (TS) Gamane, that hit the north and northeast of Madagascar on 27 March" [Madagascar: Tropical Cyclone Gamane Flash Update No. 2, 4 April 2024 (reliefweb)](https://reliefweb.int/report/madagascar/madagascar-tropical-cyclone-gamane-flash-update-no-2-4-april-2024). The following analysis will utilize actual data from this natural disaster. The objective is to pinpoint the specific medical centers and healthcare facilities that were impacted by the flooding. Additionally, we will assess the viability of road access to the populated places.
+
+:::
 ::::
 
 ## Instructions for the trainers
@@ -88,11 +103,14 @@ __Wrap up:__
 - Leave some time for open questions. 
 
 :::
+
 ### Available Data
 
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/Module3/Exercise_6/Modul_3_Exercise_6_Sava_flood.zip
+
 __Download all datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module3/Exercise_6/Modul_3_Exercise_6_Sava_flood.zip) and save the folder on your computer and unzip the file.__
+
 :::
 
 <!--:::{hint}
@@ -120,6 +138,7 @@ To keep your data organized and easily accessible, it's important to establish a
 ## Task 1: Gain an overview of the situation around Sambava and Vehomar 
 
 :::{card}
+
 ```{figure} /fig/IFRC-icons-colour_SURGE.png
 ---
 width: 100px
@@ -128,9 +147,11 @@ align: right
 name: IFRC Surge Icon
 ---
 ```
-Context: 
+
+__Context:__
 
 You have been deployed as an information manager to the flood-affected regions of Madagascar. Upon your arrival you received reports from the operations team indicating that the distrcits [Sambava and Vohemar](https://www.openstreetmap.org/search?query=Sava%2C%20Madagascar#map=8/-14.374/49.795) of the region Sava are affected by the floods. The team needs a general overview of the affected locations.
+
 :::
  
 1. Open QGIS and create a [new project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`
@@ -144,9 +165,10 @@ You cannot interact with a base map!
 4. Next, load the GeoPackage __"mdg_admin2.gpkg"__ in your project by drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)). Or click on `Layer`-> `Add Layer`-> `Add Vector Layer`. Click on the three points ![](/fig/Three_points.png) and navigate to __"mdg_admin2.gpkg"__. Select the file and click `Open`. Back in QGIS click `Add` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)).
 
 
-``` {Attention}
+```{Attention}
 GeoPackage files can contain multiple files and even entire QGIS projects. When you load such a file in QGIS a window will appear in which you have to select the files you want to load in your QGIS project.
 ```
+
 5. First, we want to export the district __Sambava__ and the neighbouring district __Vohemar__ from __mdg_admin2__ to have it as a stand-alone vector layer. To do that: 
     * Open the attribute table of __mdg_admin2__ by right click on the layer  -> `Open Attribute Table`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html)).
     * Find the row of Sambava in the column __ADM2_EN__ and mark it by clicking on the number on the very left-hand side of the attribute table. The row will appear blue and the area of Sambava will turn yellow on the map canvas. You can right-click on the row and click `Zoom to Feature`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature)).
@@ -156,9 +178,11 @@ GeoPackage files can contain multiple files and even entire QGIS projects. When 
     * Click on the icon ![](/fig/selection_toolbar_feature_deselection.png) in the toolbar to end the feature selection.
 
 :::{card}
-Achievement:
+__Achievement:__
+^^^
 
 Now you have an overview of where the districts Sambava and Vohemar in Sava are located. The operations team can use this information. 
+
 :::
 
 ```{Tip}
@@ -168,18 +192,19 @@ Do not forget to save your project from time to time!
 ## Task 2: Estimation of Flood Impact on the Health Sector in Sambava and Vohemar
 
 :::{card}
+
 ```{figure} /fig/IFRC-icons-colour_Health.svg
 ---
 width: 100px
-name: 
 align: right
-
 name: IFRC HEalth Icon
 ---
 ```
-Context: 
+
+__Context:__
 
 Posts on social media have indicated a significant impact on the healthcare system in Madgascar. You have been tasked to find out as much as you can about the situation in Sava and, if feasible, to estimate the impact on the health system.
+
 :::
 
 1. The first thing to do is to find out where the health facilities are located in the area. To do that, you do a quick search on HDX. You find the dataset Madagascar Health Facilities (OpenStreetMap Export). This will do for now.
@@ -192,6 +217,7 @@ Posts on social media have indicated a significant impact on the healthcare syst
         * As `Geometric predicate` we use `intersect`. 
         * To save the output click on the three points at `Extract (location)` -> `Save to GeoPackage` and navigate to your `temp` folder. Save the new layer under the name __“Health_Facilities_Flood_2024_AOI”__. Give the new layer the same `Layer name` and click `Run`.
     * Open the Attribute table of the new layer and have a look.
+
 ```{figure} /fig/m3_ex6_qgis_task2_1.png
 ---
 width: 400px
@@ -200,6 +226,7 @@ align: center
 ---
 Extract by location 
 ```
+
 Ok, now we have a good overview of the location of health facilities. We need much better information about the flooded area to identify the health facilities impacted by the flood. Fortunately, the UN has just shared a dataset about the extent of floods. Satellite detected water extent over Sambava and Vohemar Districts, Sava Region, Madagascar as of 01 April 2024 .
 
 2. Load the dataset __"TDX_20240401_FloodExtent_SambavaDistrict_MDG.shp"__ into your QGIS.
@@ -243,7 +270,8 @@ align: center
 Select flood affected health facilities
 ```
 
-```{warning}
+::::{warning}
+
 In case you encounter the error:
 
 > Feature (1) from “TDX_20240401_FloodExtent_SambavaDistrict_MDG” has invalid geometry. Please fix the geometry or change the Processing setting to the “Ignore invalid input features” option.
@@ -264,6 +292,9 @@ align: center
 ---
 Fix Geometry
 ```
+
+::::
+
 6.  Open the attribute table of __"Health_Facilities_Flood_2024_AOI"__ by right click on the layer  -> `Open Attribute Table`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html)) and activate the editing mode by clicking on ![](/fig/mActionToggleEditing.png) ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#change-data-in-the-attribute-table)). Now you are able to edit the data directly in the table.
 7. First, we add a new column with the name __“Flood_affected”__. To do so, click on ![](/fig/mActionNewAttribute.png). In the `Add field` window, you have to add the name and set the `Type` to `Text(string)`. Click `OK` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#add-new-column))
 
@@ -276,6 +307,7 @@ align: center
 ---
 Add new column
 ```
+
 8. Now look for the `Show all Features` option in the lower left corner and click on it. Then, select the option `Show selected features` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#manually-select-features-in-the-attribute-table)). This will filter the table to display only the rows that represent the health facilities directly impacted by the flood.
 Fortunately, no health facilities are directly affected by the flood.
 9. If any were affected: Write `Yes` in the __"Flood_affected"__ column.
@@ -297,7 +329,7 @@ Flood affected health facilities classification
 ```
 
 :::{card} 
-Achievement:
+__Achievement:__
 We've pinpointed that 3 health facilities have been inundated by the floods. 
 :::
 
@@ -308,12 +340,11 @@ We've pinpointed that 3 health facilities have been inundated by the floods.
 ```{figure} /fig/IFRC-icons-colour_Logistics.svg
 ---
 width: 100px
-name: 
 align: right
-
 name: IFRC Logistics Icon
 ---
 ```
+
 Context: 
 
 The operations team is making plans to deliver much-needed supplies to the affected regions in Sambava and Vohemar.  Currently, there is uncertainty about how the supplies can be transported there. The operations team has asked for more information on this topic.
@@ -406,4 +437,5 @@ In order to get a clearer picture, we need to import the road network data for t
 :::{card}
 
 The operations team has now all the information they need to plan their logistics. Good Job!
+
 :::

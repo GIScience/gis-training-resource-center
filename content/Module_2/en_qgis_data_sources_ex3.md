@@ -74,15 +74,14 @@ __Relevant Wiki articles__
 ## Instructions for the trainers
 
 :::{dropdown} __Trainers Corner__ 
-
-### Prepare the training
+## Prepare the training:
 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
 - Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction
 
-### Conduct the training
+## Conduct the training
 
 __Introduction:__
 
@@ -121,9 +120,12 @@ The objective of this exercise is to find out how many hospitals are located in 
 1. Find a data source to download the **administrative boundaries** and **healthsites** of Bolivia. The following instructions are designed for the example of Bolivia. If you wish to perform the same analysis for another country, some instructions may differ, but the general workflow will remain the same.
 
 :::{dropdown} Possible data sources
+
 Test downloading the administrative boundaries on [OSM Boundaries](https://osm-boundaries.com) 
 and the healthsites on [healthsites.io](https://healthsites.io).
+
 :::
+
 <!-- SUGGESTION: some of the instructions below assume that these are the datasets
    that are being used, instead of just examples. Can we just ask people to use these
    datasets, so that the rest of the instructions make sense? -->
@@ -155,6 +157,7 @@ polygons.
 For information on how to easily filter your data by manually selecting features in the attribute table after it has been sorted based on a particular column, see the __[attribute table](/content/Wiki/en_qgis_attribute_table_wiki.md)__ page on the wiki.
 
 ```
+
 <!-- Should we direct people to instructions on filters rather than attribute table?
 EN: The information on how to filter is in this wiki page. Add the heading to the link -->
 

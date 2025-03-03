@@ -57,7 +57,7 @@ information you want to convey.
 ```{figure} ../../fig/en_30.30.2_graphic_semiology_signs.png
 ---
 width: 500px
-name: Graphic information
+name: Graphic_information
 ---
 You can use different graphic signs depending on the type of information you want to display.
 ```
@@ -69,7 +69,7 @@ between each element, helping to display different information.
 
 ```{figure} ../../fig/en_visual_variables.png
 ---
-name: Visual variables
+name: Visual_variables
 width: 500px
 ---
 Visual variables according to Bertin (1967)
@@ -90,8 +90,8 @@ is the same, but the styling is different. In each case, the cartographers had d
 the cycling map, show the safest biking routes, bike repair stations and resting places) and chose the styling accordingly.
 
 ::::{grid} 2
-
 :::{grid-item}
+
 ```{figure} /fig/m4_OSM_Overviewmap_example.png
 ---
 name: OSM_topo
@@ -99,9 +99,11 @@ width: 375 px
 ---
 [OSM](https://www.openstreetmap.org) Standard 
 ```
+
 :::
 
 :::{grid-item}
+
 ```{figure} /fig/m4_OSM_bikemap.png
 ---
 name: OSM_Radfahrerkarte
@@ -175,15 +177,12 @@ Operational overview or response activity map (Source: [Shelter Cluster Vanuata]
 
 ::::
 
-
-
 ### Choropleth & Graduated Symbol Maps 
 
 Choropleth and Graduated symbol maps are two common thematic map types used in humanitarian 
 work. 
 
 In essence:
-
 
 - Data is divided into areas on the map. 
 - __Choropleth maps__ are maps that show data using colors or shading within specific geographic areas, like 
@@ -342,7 +341,6 @@ width: 750px
 ---
 Different Colour schemes for the Colour Vision Impaired; Source: Jenny, Bernhard, and Nathaniel Vaughn Kelso. (2007). Color Design for the Color Vision Impaired. *Cartographic Perspectives*, no. 58 (September 1, 2007): 61-67. https://doi.org/10.14714/CP58.270 
 ```
-
 
 ## Complex Maps
 

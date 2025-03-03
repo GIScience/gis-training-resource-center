@@ -15,13 +15,19 @@
 
 ::::{grid} 2
 :::{grid-item-card}
-## Aim of the exercise:
+__Aim of the exercise:__
+^^^
+
 Participants will work with multiple layers and conduct spatial queries. Additionally, they will learn how to create their own geodata.
-#### Type of trainings exercise:
+
+__Type of trainings exercise:__
+
 - This exercise can be used in online and presence training. 
+
 :::
 :::{grid-item-card}
-#### These skills are relevant for 
+__These skills are relevant for:__
+^^^ 
 
 - QGIS Essentials
 - Working with multiple layers
@@ -33,12 +39,16 @@ Participants will work with multiple layers and conduct spatial queries. Additio
 
 ::::{grid} 2
 :::{grid-item-card}
-#### Estimated time demand for the exercise.
+__Estimated time demand for the exercise:__
+^^^
+
 - The exercise takes around 3 hours to complete, depending on the number of participants and their familiarity with computer systems.
+
 :::
 
 :::{grid-item-card}
-### Relevant wiki articles
+__Relevant wiki articles:__
+^^^
 
 * [Visualisation of Vector Data](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_visualisation_wiki.html)
 * [Map Making](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_map_making_wiki.html)
@@ -51,9 +61,11 @@ Participants will work with multiple layers and conduct spatial queries. Additio
 
 ::::{grid} 1
 :::{grid-item-card}
+__Context:__
+^^^
 
-#### Context
 In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. You have already conducted an analysis utilizing actual data from this natural disaster. We now want to visualize our findings on an appealing map that can be printed out or shared with different stakeholders. The map will show specific medical centers and healthcare facilities that where impacted by the flooding. Additionally, we will visualize the viability of road access to the city of Larkana throughout the flood period.
+
 :::
 ::::
 
@@ -71,13 +83,10 @@ You have created the data for Larkana in [Module 3, Exercise 4](https://giscienc
 | VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp | [Satellite detected water extents from 08 to 12 August 2024 over Pakistan)](https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan) |UNO SAT | HDX |
 
 
-
 ```{hint} Folder structure
 Keep your data management clean by creating a folder structure on your computer for your QGIS-projects and geodata. 
 The exercise data should be saved in a location where you can easily find them and the corresponding QGIS-project
 ```
-
-
 
 ## Tasks
 
@@ -102,7 +111,7 @@ Save your project and give it a clear name, e.g. "Larkana_flood_response"
 Now we have assigned a symbol for each layer at our disposal. Look at the map you created and decide if you want to adjust any symbology to make the map easier to read. Do you need to change some colours? Are the layers ordered in a way that the information is visible? Is the font size appropriate, or does it cover up too much information?
 Let's go through the layers one by one and visualize them in a meaningful way.
 
-__Healthsites__
+__Healthsites:__
 
 Double-click on the point next to your healthsites vector layer. The symbology window will open. Let's create our own customized symbol for healthcare facilities.
 - Under `Symbol layer type`, select __"SVG Marker"__
@@ -119,12 +128,11 @@ name: SVG Marker
 ---
 Create customized SVG Marker
 ```
+
 - you can adjust its color and size and rotate it 180° in order to turn it around.
 - on the upper right click on the __+__ in order to add another "Simple Marker". Choose a circle and adjust its color and size in order to fit around the crescent moon.
 
-
-Another option to use IFRC and Red Cross logos is to use the `Plugin Resource Sharing` :
-
+Another option to use IFRC and Red Cross logos is to use the `Plugin Resource Sharing`:
 
 With the plugin __"Plugin Resource Sharing"__, you can install symbol and icon libraries used by the Red Cross and UN, as well as other useful symbols.
 
@@ -137,9 +145,7 @@ Now the symbols should be available in the styling manager in the SVG folder.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_resource_sharing_plugin.mp4"></video>
 
-
-
-__Roads__
+__Roads:__
 
 For categorized classification of the roads right-click on the layer __Roads_Larkana__ in the `Layer Panel` -> `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
 * On the top you find a dropdown menu. Open it and choose `Categorized`. Under `Value` select “highway”.
@@ -154,9 +160,9 @@ For categorized classification of the roads right-click on the layer __Roads_Lar
     ---
     Pakistan road classification
     ```
+
 * You have the option to customize the width of the main roads' lines to improve the visualization. Open the Symbology window, then select 'Symbol'. In the new window, you can adjust the width of the lines to your preference.
     
-
     ```{figure} /fig/PAK_road_symbol_weight.png
     ---
     width: 600px
@@ -165,15 +171,15 @@ For categorized classification of the roads right-click on the layer __Roads_Lar
     ---
     Pakistan road classification
     ```
+
 * Once you are done, click `Apply` and `OK` to close the symbology window.
 
-
-__Blocked Roads Points__
+__Blocked Roads Points:__
 
 Open the __Symbology Tab__ for the `PAK_flood_2024_blocked_road`-layer and choose a meaningful symbol for flood related blocked roads.
 
 
-__Airport__
+__Airports:__
 
 In the [previous exercise](/content/Module_3/en_qgis_module_3_ex2.md) you found out that the Mohenjodaro Airport in the southwest of Larkana City is still accessible via the road network. Essential supplies could potentially be transported from the airport into the city without encountering any roadblocks. We want to point out this possibility. Let's mark the airport as a point and visualize it!
 
@@ -189,7 +195,6 @@ To do so we will create an entirely new point dataset representing airports.
 * Click `OK`.
 * Your new layer will appear in the `Layer Panel`
 
- 
     ```{figure} /fig/Create_Geopackagelayer_airport.PNG
     ---
     width: 400px
@@ -199,7 +204,8 @@ To do so we will create an entirely new point dataset representing airports.
     Digitising airports
     ```
 
- Now you can create a point for the airport and if you would like additional airports as well [wiki](/content/Wiki/en_qgis_digitalization_wiki.md#add-geometries-to-a-layer). Currently the new layer __“PAK_airports”__ is empty. To add features we can use the `Digitizing Toolbar`. If you cannot see the toolbar `View` -> `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#creation-of-point-data)).  ![](/fig/Digitizing_Toolbar.png) 
+* Now you can create a point for the airport and if you would like additional airports as well [wiki](/content/Wiki/en_qgis_digitalization_wiki.md#add-geometries-to-a-layer). Currently the new layer __“PAK_airports”__ is empty. To add features we can use the `Digitizing Toolbar`. If you cannot see the toolbar `View` -> `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#creation-of-point-data)).  ![](/fig/Digitizing_Toolbar.png)
+
 *  Once you have found the airport, click on it![](/fig/mActionCapturePoint.png). Left-click on the feature you want to digitise.
 * Once you click on a place, a window will appear. Indicate that the road is blocked by writing `Yes` in the field `Blocked_road`.
 
@@ -219,7 +225,7 @@ Now we can use an icon instead of just a point to display the layer __“PAK_air
 
 * Right-click on the layer__“PAK_flood_2024_blocked_road”__in the `Layer Panel` -> `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
 * Keep the single symbol option. Select any symbol from the list that is appropriate for marking blocked roads. 
-*  Once you are done, click `Apply` and `OK` to close the symbology window.
+* Once you are done, click `Apply` and `OK` to close the symbology window.
 
     ```{figure} /fig/PAK_blocked_road_symbol.png
     ---
@@ -230,11 +236,11 @@ Now we can use an icon instead of just a point to display the layer __“PAK_air
     Visualising blocked roads with icons
     ```   
 
-__Flood Extent__
+__Flood Extent:__
 
 Open the __Symbology Tab__ for the `PAK_2024_Minimum_Flood_Extend_reprojected`-layer. Choose a light-blue as color and adjust the opacity to about 30%.
 
-__Administrative Boundaries__
+__Administrative Boundaries:__
 
 Open the __Symbology Tab__ for the `PAK_Sindh_amd1`-layer. Click on `Simple Fill` and adjust the `Symbol layer type` to `Simple Line`. You can furthermore adjust now the outline colour and stroke width.
 
@@ -243,11 +249,11 @@ __Bonus Step__: [Adding a basemap](/content/Wiki/en_qgis_basemaps_wiki.md) can h
 
 If you are happy with the symobolisation of your layers, the map should be ready for a print layout.
 
-``` {Attention}
+```{Attention}
+
 Remember the layer concept and place all layers in a logic order. The flood extents should lay under the roads and the several point layer above the roads.
+
 ```
-
-
 
 ### Part 2: Creating the print layout
 
@@ -269,7 +275,7 @@ Create a new Print Layout
     - On the left, you will find a toolbar with tools to add and move items on the print layout canvas.
     - On the right you will find a list of items you added to the print layout (it is still empty). Beneath this, you will find a tab called __"item properties"__. This is where you modify the items on your print layout (e.g. enter the text for a text box or change the font).
 
-2. Insert a new map by clicking on ![New Map Icon](/fig/30.30.2_print_layout_insert_map_icon.png) (`Add Map`) on the left toolbar, and drawing a rectangle on the print canvas. [Video](/content/Module_4/en_qgis_map_design_2.md#adding-a-new-map)
+2. Insert a new map by clicking on ![New Map Icon](/fig/30.30.2_print_layout_insert_map_icon.png) (`Add Map`) on the left toolbar, and drawing a rectangle on the print canvas. [Video](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.md#adding-a-new-map)
 
 3. Move and position the map so that the area of interest is visible at a reasonable scale.
 

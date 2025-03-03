@@ -42,12 +42,13 @@ data you are working with. After downloading and import a dataset into QGIS, you
 You can open the attribute table in two ways:
 
 ::::{margin}
-```{tip}
+:::{tip}
 
 You can also use the shortcut <kbd>F6</kbd> (in some cases <kbd>Fn</kbd> + <kbd>F6</kbd>) to open the attribute.
 
-```
+:::
 ::::
+
 1. Right click on a layer in the Layers panel and select `Open Attribute Table`. 
 
 ```{figure} /fig/en_attributetable_right_click.png
@@ -59,12 +60,13 @@ name: Open Attribute Table with right click
 Opening the attribute table via right-click in QGIS 3.36
 ```
 
-
 2. Select a layer in the Layers panel and click on the attribute table symbol in the toolbar. 
 
 ```{note} 
+
 If you have multiple layers, only the attribute table of the layer currently 
 selected in the layer panel will open. 
+
 ```
 
 ```{figure} /fig/en_attributetable_top_right.png
@@ -76,9 +78,9 @@ name: Open Attribute Table top right
 Opening the attribute table in QGIS 3.36
 ```
 
-
 :::{dropdown} Buttons of the attribute table
 :open:
+
 |Icon|Description|Purpose|Shortcut|
 |---|---|-----|---|
 | ![](/fig/mActionToggleEditing.png)|__Toggle editing mode__ | Enable editing functionalities|<kbd>Ctrl</kbd> + <kbd>E</kbd> |
@@ -105,10 +107,10 @@ Opening the attribute table in QGIS 3.36
 |![](/fig/mActionConditionalFormatting.png)| Conditional formatting | Enable table formatting| |
 |![](/fig/dock.png)| Dock attribute table | Allows to dock or undock the attribute table||
 |![](/fig/mAction.png)| Actions | Lists the actions related to the layer           | |
+
 :::
 
 <!-- ADD: What will be the most important of these. Needs more explanation.-->
-
 
 ## Sort the attribute table
 
@@ -120,8 +122,8 @@ indicates whether it is sorted in ascending or descending order.
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_show_attribute_table.mp4"></video>
 
 ::::{grid} 2
-
 :::{grid-item-card} 
+
 ```{figure} /fig/en_ascending.png
 ---
 width: 300px
@@ -129,8 +131,11 @@ name: attribute table ascending sort
 ---
 Attribute table sorted ascendingly. 
 ```
+
 :::
+
 :::{grid-item-card}
+
 ```{figure} /fig/en_descending.png
 ---
 width: 300px
@@ -138,6 +143,7 @@ name: attribute table descending sort
 ---
 Attribute table sorted descendingly.  
 ```
+
 ::::
 
 ## Zoom in on a specific feature via attribute table
@@ -148,7 +154,9 @@ You can zoom in on a specific feature if you need to locate it geographically or
 2. Close your attribute table. The map canvas will now show the selected feature. 
 
 :::{dropdown} Video: Zoom in on a feature
+
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zoom_to_feature.mp4"></video>
+
 :::
 
 ## Manually select features in the attribute table
@@ -164,7 +172,9 @@ to select features is via the attribute table.
 * __Only show unselected features:__ Select features and click on ![](/fig/mActionInvertSelection.png)
 
 :::{dropdown} Video: Manually select features in the attribute table
+
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_attribute_table_select.mp4"></video>
+
 :::
 
 ## Zoom to selected area
@@ -200,7 +210,6 @@ layer - `Export` -> `Save only selected features`
 ```{figure} /fig/en_save_selection.png
 ---
 height: 500px
-name:
 align: center
 name: Save selection, right-click.
 ---
@@ -212,8 +221,10 @@ Now, you can choose the format, layer name and CRS.
 <!--ADD IMAGE-->
 
 ```{tip}
+
 We recommend use GeoPackage (.gpkg) instead of shapefile (.shp) in most cases. 
 If you are unsure which format is most appropriate, check out the [geodata types](/content/Wiki/en_qgis_geodata_types_wiki.md) page on the wiki.
+
 ```
 
 

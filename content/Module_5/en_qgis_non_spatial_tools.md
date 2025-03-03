@@ -216,7 +216,7 @@ In this dialog, you can build your expressions to query the data. There are seve
 | operator | functionality          |
 |----------|------------------------|
 | __+__    | addition               |
-| __-__    | substraction           |
+| __-__    | subtraction           |
 | __*__    | multiplication         |
 | __/__    | division               |
 | __%__    | remainder of division  |
