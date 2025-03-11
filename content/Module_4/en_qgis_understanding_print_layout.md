@@ -47,15 +47,17 @@ name: Add a new map
 Adding a new map to the Print Layout (Source: CartONG)
 ```
 
-:::: {tab-set}
-::: {tab-item} Adding a new map
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_new_map
-.mp4"></video>
+::::{tab-set}
+:::{tab-item} Adding a new map
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_new_map.mp4"></video>
+
 :::
 
-::: {tab-item} Moving and scaling the map
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_moving_the_map
-.mp4"></video>
+:::{tab-item} Moving and scaling the map
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_moving_the_map.mp4"></video>
+
 :::
 ::::
 
@@ -75,7 +77,9 @@ Adding text to the print layout (Source: CartONG).
 ```
 
 :::{dropdown} Video: Adding a textbox
+
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_print_layout_adding_a_title.mp4"></video>
+
 :::
 
 ### Adding an image or logo
@@ -122,8 +126,8 @@ Once the option is unchecked, you can update the name of the layers, group them,
 
 If you have to many items on your legend, and they don't fit on your map horizontally, you can also split the legend into several columns by navigating through the Item Properties panel, expand the `Columns`-section, and increase the `Count`.
 
-:::: {tab-set}
-::: {tab-item} Adding a legend
+::::{tab-set}
+:::{tab-item} Adding a legend
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_legend
 .mp4"></video>
@@ -187,14 +191,12 @@ Adding an overview map in the corner of your map will help locate the area you a
 
 To create an overview map, you need to follow these steps:
 
-
 1. Make sure that you __lock the layers and layer styling__ for your main map
     - Navigate to the __item properties__ panel > 
 2. Prepare a __layer with national or subnational borders or important landmarks__ in your project (e.g: Administrative boundaries, Capitals). These should not be the same layers as your main map. If necessary, you can duplicate layers you wish to use on the overview map (such as administrative boundaries). Do not change the layers of your main map, if you intend to change the symbology later on.
 3. __Insert the overview map__ into your print layout, by using the ![](../../fig/30.30.2_print_layout_insert_map_icon.png)`Add Map` tool (in the bottom right corner, for example)
 4. __Lock the new map__ in the Item properties panel
 5. Add a rectangle to display the extent of your main map
-
     1. Go to the __properties__ of your Main map > scroll down until you see __"Overviews"__.
     2. Add an Overview by clicking on the `+`-button.
     3. __Link the main map__ by selecting it in the `Map frame` option.
@@ -221,7 +223,7 @@ Add an overview map and __lock the layer__
 .mp4"></video>
 :::
 
-``` {Caution}
+```{Caution}
 This method requires you to be sure that you are not going to modify the overview map, as once the layers are locked, they will keep the style, and any updates will not affect the overview map.
 ```
 
