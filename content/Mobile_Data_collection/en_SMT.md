@@ -16,9 +16,9 @@ The [Sketch Map Tool](https://sketch-map-tool.heigit.org/) simplifies participat
 
 ## What is a Sketch Map?
 
-| | Satellite imagery| OSM data|
-| :-------------------- |:-------------------- | :----------------- | 
-| Data source | [World Imagery ESRI](https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9#!) |  [OpenStreetMap Community](https://www.openstreetmap.org/#map=6/51.330/10.453)  | 
+| | Satellite imagery | OSM data|
+| :-------------------- | :-------------------- | :----------------- | 
+| Data source | [World Imagery ESRI](https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9#!) | [OpenStreetMap Community](https://www.openstreetmap.org/#map=6/51.330/10.453)  | 
 | Example map | ![](/fig/SMT_Satelite_Heidelberg_empty.jpg) | ![](/fig/SMT_Heidelberg_empty.jpg) | 
 | Currentness | The satellite imagery is typically within 3-5 years of currency. | Current OSM-data is used in the base map. | 
 | Biggest benefit | Impression of the landscape and topography | Clear outlines and at times labels especially of important infrastructure e.g. hospitals, possibility to improve the map by contributing to OSM.| 
