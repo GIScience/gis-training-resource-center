@@ -128,6 +128,8 @@ __Wrap up:__
 
 ### Workflow 1: Tabula and QGIS
 
+---
+
 #### Task 1: Get the data from the PDF file into a CSV file
 
 :::{Topic} Context
@@ -155,7 +157,7 @@ The Tabula.technology website with the download links to the left
 2. Unzip the downloaded file into a location of your choosing (e.g., Programs, Desktop, ...).
 3. Open the folder where you unzipped the file and open the "Tabula" application
 
-```{figure} /fig/tabula_folder.png
+```{figure} /fig/en_tabula_folder.png
 ---
 name: Tabula_folder
 width: 450 px
@@ -189,6 +191,7 @@ width: 550 px
 6. Here we will select the portion of the PDF that contains the data table. Tabula expects a table with one row of headers at the top for each column, followed by the rows with the data. By dragging a rectangle on the PDF, we can create a selection where tabula should look for the data table. Drag a rectangle and adjust the boarders so the table fits as precisely as possible into selection. Make sure to only capture the relevant information. Since the headers in this table has an unconventional formatting, it should be left out so the resulting csv table is easier to adjust. We will add the headers manually once extracted. F
 
 ```{figure} /fig/en_tabula_selection.png
+---
 name: tabula_selection
 width: 550 px
 ---
@@ -201,6 +204,7 @@ width: 550 px
 10. A new window will appear where the data will show up. At first, nothing will be visible. First, click on `Stream` on the left.
 
 ```{figure} /fig/en_tabula_preview_extracted_1.png
+---
 name: tabule_preview_1
 width: 550 px
 ---
@@ -208,10 +212,8 @@ width: 550 px
 ```
 
 11. The data from the PDF table will appear in the main window. Review the table.
-12. Click on `Export`, this will save the `.csv` into your downloads folder. 
-13. Move the file to the `/data/interim/`-folder.
 
-```{figure} /figure/en_tabula_data_preview.png
+```{figure} /fig/en_tabula_data_preview.png
 ---
 name: tabula_data_preview
 width: 550 px
@@ -219,8 +221,38 @@ width: 550 px
 
 ```
 
+12. Click on `Export`, this will save the `.csv` into your downloads folder. 
+13. Move the file to the `/data/interim/`-folder.
+
+
 Congratulations, the data from the PDF has been extracted into a CSV file!
 
+#### Task 2: Clean the data from errors and unwanted entries
+
+:::{topic} Context
+The data has been extracted from the PDF. However, there are a few formatting errors and unwanted information. Before loading the extracted CSV into QGIS, we need to clean the formatting and remove unwanted entries. This can be done in many ways, for example in a spreadsheet editor such as Microsoft Excel or Libreoffice Calc.
+:::
+
+:::{note} 
+The necessary steps to filter the data might be different depending on the editor you use. In this exercise, we will go through the workflow with the free version of Microsoft Excel. 
+:::
+
+1. Open the extracted CSV file in Excel. It might look like this:
+
+```{figure} /fig/en_tabula_csv_excel.png
+---
+name: tabula_csv_excel
+width: 300 px
+---
+
+```
+
+2. Excel does not automatically recognise the comma delimited format. We can fix this by selecting the column A, navigating to `Data` > `Text to Columns`. A new window will open:
+
+```
+
+
+```
 
 ### Workflow 2: Microsoft Excel and Power Query
 
@@ -259,7 +291,7 @@ Before starting manipulating the data, make yourself familiar with the PDF-file.
 
 Congratulations, the data from the PDF has been extracted and saved to a usable `.csv`-file!
 
-### Step 2: Prepare and clean the data for import into QGIS
+#### Task 2: Prepare and clean the data for import into QGIS
 
 :::{topic} Context
 The data has been extracted from the PDF-file, but cannot be used for an attribute join in QGIS yet. First, we need to make sure that the attribute values are formatted correctly and correspond to the attribute values of the identifying key in the vector layer.

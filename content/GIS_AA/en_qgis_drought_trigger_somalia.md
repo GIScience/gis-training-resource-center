@@ -1,5 +1,11 @@
 # QGIS Trigger Workflow for Somalia 
 
+:::{attention}
+
+Due to the changes in the availability of FEWSNET data, we are using IPC food insecurity classification instead of the FEWSNET classification. We are currently updating the documentation for the updated trigger model. 
+
+:::
+
 The QGIS workflow presented in this article was developed in the framework of the Forecast-based-Action (FbF) Project of the Somalia Red Cresent Society (SRCS), the German Red Cross (GRC) and the Heidelberg Institute for Geoinformation Technology (HeiGIT).
 
 The workflow consists of 15 steps of which 9 are automated in the form of a QGIS Model. In this article, we explain how all 15 steps can be done manually. In practice one needs to do only 6 steps manually, the rest is done by the QGSI Model.
