@@ -535,13 +535,14 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow-1-tabula-and-qgis">Workflow 1: Tabula and QGIS</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-get-the-data-from-the-pdf-file-into-a-csv-file">Task 1: Get the data from the PDF file into a CSV file</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-clean-the-data-from-errors-and-unwanted-entries">Task 2: Clean the data from errors and unwanted entries</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow-2-microsoft-excel-and-power-query">Workflow 2: Microsoft Excel and Power Query</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-get-the-data-from-the-pdf-file-into-excel">Task 1: Get the data from the PDF file into Excel</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-prepare-and-clean-the-data-for-import-into-qgis">Task 2: Prepare and clean the data for import into QGIS</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-prepare-and-clean-the-data-for-import-into-qgis">Step 2: Prepare and clean the data for import into QGIS</a></li>
 </ul>
 </li>
 </ul>
@@ -663,6 +664,7 @@ First, we need to extract the data from the PDF-file and save it to a <code clas
 </section>
 <section id="workflow-1-tabula-and-qgis">
 <h3>Workflow 1: Tabula and QGIS<a class="headerlink" href="#workflow-1-tabula-and-qgis" title="Permalink to this heading">#</a></h3>
+<hr class="docutils" />
 <section id="task-1-get-the-data-from-the-pdf-file-into-a-csv-file">
 <h4>Task 1: Get the data from the PDF file into a CSV file<a class="headerlink" href="#task-1-get-the-data-from-the-pdf-file-into-a-csv-file" title="Permalink to this heading">#</a></h4>
 <aside class="topic">
@@ -683,7 +685,7 @@ First, we need to extract the data from the PDF-file and save it to a <code clas
 <li><p>Open the folder where you unzipped the file and open the “Tabula” application</p></li>
 </ol>
 <figure class="align-default" id="tabula-folder">
-<a class="reference internal image-reference" href="fig/tabula_folder.png"><img alt="fig/tabula_folder.png" src="fig/tabula_folder.png" style="width: 450px;" /></a>
+<a class="reference internal image-reference" href="../../_images/en_tabula_folder.png"><img alt="../../_images/en_tabula_folder.png" src="../../_images/en_tabula_folder.png" style="width: 450px;" /></a>
 </figure>
 <ol class="arabic simple" start="4">
 <li><p>A new browser window will open with this address: <a class="reference external" href="http://localhost:8080">http://localhost:8080</a>. This is the application. If the browser does not open automatically, you can open the browser and enter this go to this address manually.</p></li>
@@ -705,8 +707,8 @@ First, we need to extract the data from the PDF-file and save it to a <code clas
 <ol class="arabic simple" start="6">
 <li><p>Here we will select the portion of the PDF that contains the data table. Tabula expects a table with one row of headers at the top for each column, followed by the rows with the data. By dragging a rectangle on the PDF, we can create a selection where tabula should look for the data table. Drag a rectangle and adjust the boarders so the table fits as precisely as possible into selection. Make sure to only capture the relevant information. Since the headers in this table has an unconventional formatting, it should be left out so the resulting csv table is easier to adjust. We will add the headers manually once extracted. F</p></li>
 </ol>
-<figure class="align-default">
-<img alt="../../_images/en_tabula_selection.png" src="../../_images/en_tabula_selection.png" />
+<figure class="align-default" id="tabula-selection">
+<a class="reference internal image-reference" href="../../_images/en_tabula_selection.png"><img alt="../../_images/en_tabula_selection.png" src="../../_images/en_tabula_selection.png" style="width: 550px;" /></a>
 </figure>
 <ol class="arabic simple" start="7">
 <li><p>Once you are satisfied with the selection, you can click on <code class="docutils literal notranslate"><span class="pre">Repeat</span> <span class="pre">this</span> <span class="pre">Selection</span></code> to duplicate the selection on the next pages.</p></li>
@@ -714,18 +716,44 @@ First, we need to extract the data from the PDF-file and save it to a <code clas
 <li><p>Click on <code class="docutils literal notranslate"><span class="pre">Preview</span> <span class="pre">&amp;</span> <span class="pre">Export</span> <span class="pre">Extracted</span> <span class="pre">Data</span></code> on the top right of the window.</p></li>
 <li><p>A new window will appear where the data will show up. At first, nothing will be visible. First, click on <code class="docutils literal notranslate"><span class="pre">Stream</span></code> on the left.</p></li>
 </ol>
-<figure class="align-default">
-<img alt="../../_images/en_tabula_preview_extracted_1.png" src="../../_images/en_tabula_preview_extracted_1.png" />
+<figure class="align-default" id="tabule-preview-1">
+<a class="reference internal image-reference" href="../../_images/en_tabula_preview_extracted_1.png"><img alt="../../_images/en_tabula_preview_extracted_1.png" src="../../_images/en_tabula_preview_extracted_1.png" style="width: 550px;" /></a>
 </figure>
 <ol class="arabic simple" start="11">
 <li><p>The data from the PDF table will appear in the main window. Review the table.</p></li>
+</ol>
+<figure class="align-default" id="tabula-data-preview">
+<a class="reference internal image-reference" href="../../_images/en_tabula_data_preview.png"><img alt="../../_images/en_tabula_data_preview.png" src="../../_images/en_tabula_data_preview.png" style="width: 550px;" /></a>
+</figure>
+<ol class="arabic simple" start="12">
 <li><p>Click on <code class="docutils literal notranslate"><span class="pre">Export</span></code>, this will save the <code class="docutils literal notranslate"><span class="pre">.csv</span></code> into your downloads folder.</p></li>
 <li><p>Move the file to the <code class="docutils literal notranslate"><span class="pre">/data/interim/</span></code>-folder.</p></li>
 </ol>
-<figure class="align-default" id="tabula-data-preview">
-<a class="reference internal image-reference" href="figure/en_tabula_data_preview.png"><img alt="figure/en_tabula_data_preview.png" src="figure/en_tabula_data_preview.png" style="width: 550px;" /></a>
-</figure>
 <p>Congratulations, the data from the PDF has been extracted into a CSV file!</p>
+</section>
+<section id="task-2-clean-the-data-from-errors-and-unwanted-entries">
+<h4>Task 2: Clean the data from errors and unwanted entries<a class="headerlink" href="#task-2-clean-the-data-from-errors-and-unwanted-entries" title="Permalink to this heading">#</a></h4>
+<aside class="topic">
+<p class="topic-title">Context</p>
+<p>The data has been extracted from the PDF. However, there are a few formatting errors and unwanted information. Before loading the extracted CSV into QGIS, we need to clean the formatting and remove unwanted entries. This can be done in many ways, for example in a spreadsheet editor such as Microsoft Excel or Libreoffice Calc.</p>
+</aside>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The necessary steps to filter the data might be different depending on the editor you use. In this exercise, we will go through the workflow with the free version of Microsoft Excel.</p>
+</div>
+<ol class="arabic simple">
+<li><p>Open the extracted CSV file in Excel. It might look like this:</p></li>
+</ol>
+<figure class="align-default" id="tabula-csv-excel">
+<a class="reference internal image-reference" href="../../_images/en_tabula_csv_excel.png"><img alt="../../_images/en_tabula_csv_excel.png" src="../../_images/en_tabula_csv_excel.png" style="width: 300px;" /></a>
+</figure>
+<ol class="arabic simple" start="2">
+<li><p>Excel does not automatically recognise the comma delimited format. We can fix this by selecting the column A, navigating to <code class="docutils literal notranslate"><span class="pre">Data</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">to</span> <span class="pre">Columns</span></code>. A new window will open:</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+
+</pre></div>
+</div>
 </section>
 </section>
 <section id="workflow-2-microsoft-excel-and-power-query">
@@ -762,9 +790,8 @@ We can extract the table from the PDF-file using the Microsoft Excel, and then s
 </ol>
 <p>Congratulations, the data from the PDF has been extracted and saved to a usable <code class="docutils literal notranslate"><span class="pre">.csv</span></code>-file!</p>
 </section>
-</section>
-<section id="step-2-prepare-and-clean-the-data-for-import-into-qgis">
-<h3>Step 2: Prepare and clean the data for import into QGIS<a class="headerlink" href="#step-2-prepare-and-clean-the-data-for-import-into-qgis" title="Permalink to this heading">#</a></h3>
+<section id="task-2-prepare-and-clean-the-data-for-import-into-qgis">
+<h4>Task 2: Prepare and clean the data for import into QGIS<a class="headerlink" href="#task-2-prepare-and-clean-the-data-for-import-into-qgis" title="Permalink to this heading">#</a></h4>
 <aside class="topic">
 <p class="topic-title">Context</p>
 <p>The data has been extracted from the PDF-file, but cannot be used for an attribute join in QGIS yet. First, we need to make sure that the attribute values are formatted correctly and correspond to the attribute values of the identifying key in the vector layer.</p>
@@ -782,6 +809,7 @@ We can extract the table from the PDF-file using the Microsoft Excel, and then s
 <ol class="arabic simple" start="9">
 <li></li>
 </ol>
+</section>
 </section>
 </section>
 </section>
@@ -837,13 +865,14 @@ We can extract the table from the PDF-file using the Microsoft Excel, and then s
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow-1-tabula-and-qgis">Workflow 1: Tabula and QGIS</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-get-the-data-from-the-pdf-file-into-a-csv-file">Task 1: Get the data from the PDF file into a CSV file</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-clean-the-data-from-errors-and-unwanted-entries">Task 2: Clean the data from errors and unwanted entries</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow-2-microsoft-excel-and-power-query">Workflow 2: Microsoft Excel and Power Query</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-get-the-data-from-the-pdf-file-into-excel">Task 1: Get the data from the PDF file into Excel</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-prepare-and-clean-the-data-for-import-into-qgis">Task 2: Prepare and clean the data for import into QGIS</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-prepare-and-clean-the-data-for-import-into-qgis">Step 2: Prepare and clean the data for import into QGIS</a></li>
 </ul>
 </li>
 </ul>
