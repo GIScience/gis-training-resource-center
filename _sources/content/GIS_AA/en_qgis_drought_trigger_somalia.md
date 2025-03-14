@@ -20,7 +20,7 @@ Finally, the main parameters chosen for the trigger based on the historical impa
 
 ## Trigger Statement
 
-When ICPAC issues a SPI-12 forecast of less than -1 for a district AND the current FEWSNET food insecurity projection reaches at least 0.7 in its 
+When ICPAC issues a SPI-12 forecast of less than -1 for a district AND the current IPC food insecurity projection reaches at least 0.7 in its 
 derived population weighted index in the same district, then we will act in this district. We expect the lead-time to be 90 days.
 
 
@@ -34,12 +34,20 @@ By fixed data we mean datasets that are needed for the trigger to work, that wil
 
 | Dataset| Source | Description |
 | ----- | --- | --- |
-| Administrative boundaries | [HDX](https://data.humdata.org/dataset/cod-ab-som?) | The administrative boundaries on level 0-2 for Somalia and Somaliland can be accessed via HDX. For this trigger mechanism we provide the administrative boundaries on level 2 (district level) as a shapefile. We have added the population number for each district derived from Worldpop. |
+| Administrative boundaries | [HDX](https://data.humdata.org/dataset/cod-ab-som?) | The administrative boundaries on level 0-2 for Somalia and Somaliland can be accessed via HDX. For this trigger mechanism we provide the administrative boundaries on level 2 (district level) as a shapefile.  |
 | Population Counts | [Worldpop](https://hub.worldpop.org/doi/10.5258/SOTON/WP00534) | The worldpop dataset in `.geotif` raster format provides population estimates per hectar for the year 2020. |
 
+<!--OUTDATED: admin boundaries (keep in for visualisation?)
+"We have added the population number for each district derived from Worldpop."-->
 
 
 ### Monitoring Data
+
+:::{attention}
+
+The dataset used for monitoring the food insecurity phase has been updated to the classification and forecast published by the [Integrated Food Security Phase Classification](https://www.ipcinfo.org) as of March 2025. Prior to this, the food insecurity forecast published by FEWSNET had been used. 
+
+:::
 
 The drought trigger mechanism is based on two variable monitoring datasets updated monthly: The SPI-12 forecast produced by ICPAC and the Food Insecurity projection produced by FEWSNET. The SPI-12 is used to capture hazard forecasts while the Food Insecurity Projection captures the dynamic vulnerability. 
 In this way upcoming drought events (SPI) that most probably will lead to food insecurity (IPC) will be captured.
@@ -47,7 +55,7 @@ In this way upcoming drought events (SPI) that most probably will lead to food i
 | Dataset| Source | Description |
 | ----- | --- | --- |
 | SPI-12 forecast| [ICPAC](https://www.icpac.net/) | meteorological drought indicator to monitor precipitation anomalies over 12-month accumulation periods|
-| IPC Projections| [FEWSNET](https://fews.net/) | five-phase scale providing common standards for classifying the severity of acute or anticipated acute food insecurity. |
+| IPC Projections | [IPC](https://www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1159510/?iso3=SOM) | five-phase scale providing common standards for classifying the severity of acute or anticipated acute food insecurity. |
 
 
 
@@ -73,7 +81,15 @@ The classification is based on a convergence of available data and evidence, inc
 
 #### IPC Food Security Projection:
 
+
 Three times a year (February, June, and October) FEWSNET estimates most likely IPC classes for the upcoming 8 month (near-term and mid-term projection), available from 2019-current. The near-term projection is called ML1 and is a projection for the upcoming 4 month, the mid-term projection is called ML2 and projects the IPC classes for the 4 subsequent months. For the triggering ML1 (near-term) as well as ML2 (mid-term) projections will be considered. 
+
+:::{admonition} UPDATE: IPC Classification Data
+:type: attention
+
+The food security classification projections are generally published twice a year and usually includes a projection for a period of three months and a current phase, which also spans three months. Due to the unavailability of FEWSNET projections, the trigger model is using the [IPC data](www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1156097/?iso3=SOM)
+
+:::
 
 Outlook updates are produced almost every month and are also taken into account.
 
@@ -87,7 +103,7 @@ $ IPC\ Index =  Weights \times \frac{District\ Pop\ per\ IPC\ Phase}{Total\ Dist
 
 Where the weights are defined as:
 
-| IPC Pahse| Weight |
+| IPC Phase | Weight |
 | ----- | --- |
 |IPC 1  |0  |
 |IPC 2  |0  |
@@ -204,11 +220,10 @@ align: center
 
 ### IPC Data
 
-The IPC Projection data is provided and regularly updated on the [FEWSNET Website](https://fews.net/).
-On the website you will have to click on Somalia to access the data. Alternatively, you can  navigate through `Data` -> `Acute Food Insecurity Data` and enter „Somalia". In the menu you will see different data formats for different timestamps. Once you find out which timestamp is the most current one find the ZIP download. We need the data in shapefile (.shp) format, which is only included in the ZIP file and not provided as single download file. 
+The IPC Projection data is provided and regularly updated on the [IPC Website](https://www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1159510/?iso3=SOM). 
+To navigate to the latest IPC Projection data on Somalia, navigate to `Latest Analyses` in the top bar > `IPC Analyses` > `Acute Food Insecurity Classification`. Here you look for the latest analysis for Somalia. 
 
-
-```{Warning}
+<!---```{Warning}
 The FEWSNET pages change often!
 ```
 
@@ -218,25 +233,36 @@ The FEWSNET pages change often!
 As of December 2024, the FEWSNET Website does not offer the IPC data for ML1 and ML2 as two distinct shapefiles contained in a zip-file. Instead, you can download the GeoJSON-file, which contains a polygon layer with both the ML1 and ML2 polygons. The model and the documentation has been updated to work with the GeoJSON-file.
 
 ```
+-->
 
-1. Go to [FEWSNET Website](https://fews.net/). Click on `Data` -> `Acute Food Insecurity`.
-2. Scroll down. In `Geographic Area` typ in “Somalia” and click `Apply`
-3. Choose the newest dataset.
+1. Go to the [IPC website](https://www.ipcinfo.org)
+2. In the top bar, navigate to `Latest Analyses` > `IPC Analyses` > `Acute Food Insecurity Classification`.
+3. On the new website, select Somalia as a country and select the newest dataset.
+4. On this website, you will see both a map of the current and the projected IPC phase classifications, as well as some metadata. On the right side of the map, click on the button `Download GIS format`. This will download the analysis in a GeoJSON format, containing polygons for the administrative boundaries and IPC phases, as well as points for the IPC phase classification for IDP camps. 
 
-```{figure} /fig/IPC_Projections_website.png
+
+```{figure} /fig/en_IPCinfo_website_dl_som.png
 ---
-height: 250px
-name: FEWSNET IPC - Download IPC Projections
+height: 350px
+name: IPCinfo_download_projections
 align: center
 ---
 ```
 
-4. Download the __GeoJSON file__. The filename is composed of "SO" for Somalia, year and month of the report, as well as the projection type. E.g., `SO_202412_ML1ML2.geojson`
+4. Download the __GeoJSON file__. The filename is composed of the country name, the analysis type, and Year and month of publication. E.g., `Somalia-Acute Food Insecurity January 2025.geoJSON`
+
+:::{note}
+
+In some cases, your operating system (Windows) misidentifies the GeoJSON-file as a `.customization`-file. This does not change anything and can be loaded into your QGIS-project.
+
+:::
+
 5. Copy the GeoJSON-file into the input monitoring folder.
-  * Example path: `/FbF_Drought_Monitoring_Trigger/Input_monitoring/Year_Month_template/IPC_ML1ML2`
+  * Example path: `/FbF_Drought_Monitoring_Trigger/Input_monitoring/Year_Month_template/Somalia-Acute Food Insecurity January 2025.geoJSON`
 
 
-:::::{dropdown} Download workflow for shapefiles (if available)
+<!---
+::::::{dropdown} Download workflow for shapefiles (if available)
 
 4. Download the one with the __ZIP__ Data
 5. When you have downloaded the data, right-click on the file and click on `Extract all` -> `Extract`
@@ -264,7 +290,9 @@ align: center
 ::::
 
 :::::
+--->
 
+<!---
 ```{tip}
 On the [main FEWSNET page](https://fews.net/) you can also sign up for information on latest updates via email. For this option scroll down to the end of the page and click on `Sign up for Emails`. You will then get the option to choose updates only for Somalia.
 
@@ -275,6 +303,7 @@ name: FEWSNET Newsletter
 align: center
 ---
 ```
+--->
 
 ## Step 3: Loading data into QGIS
 
@@ -293,8 +322,8 @@ __Tool:__ No specific tools are needed, only QGIS.
 1. Open QGIS and create a [new project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`
 2. Once the project is created save the project in the folder you created in Step 1 (e.g. 2022_05). To do that click on `Project` -> `Save as` and navigate to the folder. Give the project the same name as the folder you created (e.g. 2022_05). Then click `Save`
 3. Load all input data in QGIS by [drag and drop](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-raster-data-via-drag-and-drop). Click on `Project` -> `Save` 
-  * From the folder you created in step 1:
-    * ML1 and ML2 (the `.geojson` has both in one file: e.g., `)
+  * From the input monitoring folder you created in step 1:
+    * IPC Phase Classification
     * SPI-12
   * From the `Fixed_data` folder:
     * district_pop_som
@@ -322,21 +351,19 @@ align: center
 
 
 1. Open the tool under `Processing` -> `Graphical Modeler`
-2. In the upper panel click `Model` -> `Open Model` and navigate to your folder "FbF_Drought_Monitoring_Trigger", mark the "Triggermodel_Somalia.model3" file an click on `Open`. The model will open and you will see yellow, white and green boxes.
+2. In the upper panel click `Model` -> `Open Model` and navigate to your folder "FbF_Drought_Monitoring_Trigger", mark the "Triggermodel_Somalia.model3" (or the updated model: "IPC_Som_drought_revision_2.1.model3") file an click on `Open`. The model will open and you will see yellow, white and green boxes.
 
 ```{dropdown} Video: Open Model
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/load_model.mp4"></video>
 ```
 
-```{figure} /fig/SOM_model_designer_2.png
+```{figure} /fig/SOM_model_designer_2.1.png
 ---
 width: 700 px
-name: Triggermodel_Somalia_2
+name: Triggermodel_Somalia_3
 align: center
 ---
 ```
-
-
 
 | Box | Significance | Description |
 | ----- | --- | --- |
@@ -362,28 +389,33 @@ In the dropdown list, only layers that are currently loaded in your QGIS Project
 ```
 
 For each of these mandatory inputs, you click on the dropdown arrow and choose the respective file.
-The model needs the follow 5 inputs:
+
 1. In the upper panel click on `Model` -> `Run Model`. A window will open where you need to define the model input and output.
-2. The model needs the following 5 inputs:
-    1. `SO_202412_ML1ML2`: IPC ML1 and ML2 data
-    2. `Pop_per_district`: district_pop_sum
-    3. `SPI12` (SPI12 forecast): SPI-12 data
-    4. `Worldpop` (Population Raster data): Worldpop data
+2. The model needs the following 3 inputs:
+    1. `Somalia-Acute Food Insecurity January 2025`: IPC Projection
+    3. `SPI12` (SPI12 forecast): SPI-12 raster data
+    4. `Worldpop` (Population Raster data): Worldpop raster data
 3. Further down, you have to specify where to save the output: 
     1. `Trigger_activation`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
     ```md
     Trigger_activation
     ```
 
-    2. `ML2_ML1_Indices_joined`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
+    2. `Indices`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
     ```md
-    ML2_ML1_Indices_joined
+    Indices
     ```
 
-    3. `SPI12_mean_IPC_Indices_joined`:Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
+    3. `IPC_Phase_C`:Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
     ```md
-    SPI12_mean_IPC_Indices_joined
+    IPC_Phase_C
     ```
+
+    4. `IPC_Phase_P`:Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
+    ```md
+    IPC_Phase_P
+    ```
+
 4. Click `Run`. Your results layer will appear in the main QGIS window. You can close the graphical modeller window.
 
 ```{dropdown} Video: Input and output Model
@@ -398,6 +430,7 @@ align: center
 ---
 ```
 
+<!---
 ::::{dropdown} Workflow for the old model (with shapefiles)
 
 ```{figure} /fig/Model_Designer.PNG
@@ -444,6 +477,7 @@ align: center
 ```
 
 ::::
+-->
 
 ## Step 6.: Visualisation of results
 
@@ -674,6 +708,14 @@ widht: 750 px
 
 
 # Trigger Workflow Manually 
+
+:::{attention}
+
+As of may 2025, the trigger model uses the IPC Phase Classification analysis by the IPC and no longer by FEWSNET. 
+The data format has changed and the manual workflow no longer works as described below. 
+The updated workflow will be added soon. For now, please use the automated workflow above. 
+
+:::
 
 ## Step 1: Setting up folder structure 
 

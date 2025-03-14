@@ -572,7 +572,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">IPC Data</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Step 3: Loading data into QGIS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Step 3: Loading data into QGIS</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-extracting-ml1-and-ml2-from-the-geojson-layer">Step 4: Extracting ML1 and ML2 from the GeoJSON layer</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-fixing-the-geometries-for-the-ml-1-ml-2-layers">Step 5: Fixing the Geometries for the ML 1 &amp; ML 2 layers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-intersection-of-ml-1-ml-2-data-with-the-district-polygons">Step 6: Intersection of ML 1 &amp; ML 2 data with the district polygons</a></li>
@@ -619,7 +619,7 @@ Finally, the main parameters chosen for the trigger based on the historical impa
 </section>
 <section id="trigger-statement">
 <h2>Trigger Statement<a class="headerlink" href="#trigger-statement" title="Permalink to this heading">#</a></h2>
-<p>When ICPAC issues a SPI-12 forecast of less than -1 for a district AND the current FEWSNET food insecurity projection reaches at least 0.7 in its
+<p>When ICPAC issues a SPI-12 forecast of less than -1 for a district AND the current IPC food insecurity projection reaches at least 0.7 in its
 derived population weighted index in the same district, then we will act in this district. We expect the lead-time to be 90 days.</p>
 </section>
 <section id="trigger-input-data">
@@ -638,7 +638,7 @@ derived population weighted index in the same district, then we will act in this
 <tbody>
 <tr class="row-even"><td><p>Administrative boundaries</p></td>
 <td><p><a class="reference external" href="https://data.humdata.org/dataset/cod-ab-som?">HDX</a></p></td>
-<td><p>The administrative boundaries on level 0-2 for Somalia and Somaliland can be accessed via HDX. For this trigger mechanism we provide the administrative boundaries on level 2 (district level) as a shapefile. We have added the population number for each district derived from Worldpop.</p></td>
+<td><p>The administrative boundaries on level 0-2 for Somalia and Somaliland can be accessed via HDX. For this trigger mechanism we provide the administrative boundaries on level 2 (district level) as a shapefile.</p></td>
 </tr>
 <tr class="row-odd"><td><p>Population Counts</p></td>
 <td><p><a class="reference external" href="https://hub.worldpop.org/doi/10.5258/SOTON/WP00534">Worldpop</a></p></td>
@@ -646,9 +646,15 @@ derived population weighted index in the same district, then we will act in this
 </tr>
 </tbody>
 </table>
+<!--OUTDATED: admin boundaries (keep in for visualisation?)
+"We have added the population number for each district derived from Worldpop."-->
 </section>
 <section id="monitoring-data">
 <h3>Monitoring Data<a class="headerlink" href="#monitoring-data" title="Permalink to this heading">#</a></h3>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>The dataset used for monitoring the food insecurity phase has been updated to the classification and forecast published by the <a class="reference external" href="https://www.ipcinfo.org">Integrated Food Security Phase Classification</a> as of March 2025. Prior to this, the food insecurity forecast published by FEWSNET had been used.</p>
+</div>
 <p>The drought trigger mechanism is based on two variable monitoring datasets updated monthly: The SPI-12 forecast produced by ICPAC and the Food Insecurity projection produced by FEWSNET. The SPI-12 is used to capture hazard forecasts while the Food Insecurity Projection captures the dynamic vulnerability.
 In this way upcoming drought events (SPI) that most probably will lead to food insecurity (IPC) will be captured.</p>
 <table class="table">
@@ -664,7 +670,7 @@ In this way upcoming drought events (SPI) that most probably will lead to food i
 <td><p>meteorological drought indicator to monitor precipitation anomalies over 12-month accumulation periods</p></td>
 </tr>
 <tr class="row-odd"><td><p>IPC Projections</p></td>
-<td><p><a class="reference external" href="https://fews.net/">FEWSNET</a></p></td>
+<td><p><a class="reference external" href="https://www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1159510/?iso3=SOM">IPC</a></p></td>
 <td><p>five-phase scale providing common standards for classifying the severity of acute or anticipated acute food insecurity.</p></td>
 </tr>
 </tbody>
@@ -722,7 +728,7 @@ Furthermore, population located in a higher IPC class is more important than pop
 <p>Where the weights are defined as:</p>
 <table class="table">
 <thead>
-<tr class="row-odd"><th class="head"><p>IPC Pahse</p></th>
+<tr class="row-odd"><th class="head"><p>IPC Phase</p></th>
 <th class="head"><p>Weight</p></th>
 </tr>
 </thead>
@@ -828,73 +834,83 @@ On the right hand side, you will see in the upper window the FTP data folder and
 </section>
 <section id="ipc-data">
 <h3>IPC Data<a class="headerlink" href="#ipc-data" title="Permalink to this heading">#</a></h3>
-<p>The IPC Projection data is provided and regularly updated on the <a class="reference external" href="https://fews.net/">FEWSNET Website</a>.
-On the website you will have to click on Somalia to access the data. Alternatively, you can  navigate through <code class="docutils literal notranslate"><span class="pre">Data</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Acute</span> <span class="pre">Food</span> <span class="pre">Insecurity</span> <span class="pre">Data</span></code> and enter „Somalia”. In the menu you will see different data formats for different timestamps. Once you find out which timestamp is the most current one find the ZIP download. We need the data in shapefile (.shp) format, which is only included in the ZIP file and not provided as single download file.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>The FEWSNET pages change often!</p>
-</div>
-<div class="warning admonition">
-<p class="admonition-title">Updates to FEWSNET</p>
-<p>As of December 2024, the FEWSNET Website does not offer the IPC data for ML1 and ML2 as two distinct shapefiles contained in a zip-file. Instead, you can download the GeoJSON-file, which contains a polygon layer with both the ML1 and ML2 polygons. The model and the documentation has been updated to work with the GeoJSON-file.</p>
-</div>
+<p>The IPC Projection data is provided and regularly updated on the <a class="reference external" href="https://www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1159510/?iso3=SOM">IPC Website</a>.
+To navigate to the latest IPC Projection data on Somalia, navigate to <code class="docutils literal notranslate"><span class="pre">Latest</span> <span class="pre">Analyses</span></code> in the top bar &gt; <code class="docutils literal notranslate"><span class="pre">IPC</span> <span class="pre">Analyses</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Acute</span> <span class="pre">Food</span> <span class="pre">Insecurity</span> <span class="pre">Classification</span></code>. Here you look for the latest analysis for Somalia.</p>
+<!---```{Warning}
+The FEWSNET pages change often!
+```
+
+```{admonition} Updates to FEWSNET
+:class: warning
+
+As of December 2024, the FEWSNET Website does not offer the IPC data for ML1 and ML2 as two distinct shapefiles contained in a zip-file. Instead, you can download the GeoJSON-file, which contains a polygon layer with both the ML1 and ML2 polygons. The model and the documentation has been updated to work with the GeoJSON-file.
+
+```
+-->
 <ol class="arabic simple">
-<li><p>Go to <a class="reference external" href="https://fews.net/">FEWSNET Website</a>. Click on <code class="docutils literal notranslate"><span class="pre">Data</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Acute</span> <span class="pre">Food</span> <span class="pre">Insecurity</span></code>.</p></li>
-<li><p>Scroll down. In <code class="docutils literal notranslate"><span class="pre">Geographic</span> <span class="pre">Area</span></code> typ in “Somalia” and click <code class="docutils literal notranslate"><span class="pre">Apply</span></code></p></li>
-<li><p>Choose the newest dataset.</p></li>
+<li><p>Go to the <a class="reference external" href="https://www.ipcinfo.org">IPC website</a></p></li>
+<li><p>In the top bar, navigate to <code class="docutils literal notranslate"><span class="pre">Latest</span> <span class="pre">Analyses</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">IPC</span> <span class="pre">Analyses</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Acute</span> <span class="pre">Food</span> <span class="pre">Insecurity</span> <span class="pre">Classification</span></code>.</p></li>
+<li><p>On the new website, select Somalia as a country and select the newest dataset.</p></li>
+<li><p>On this website, you will see both a map of the current and the projected IPC phase classifications, as well as some metadata. On the right side of the map, click on the button <code class="docutils literal notranslate"><span class="pre">Download</span> <span class="pre">GIS</span> <span class="pre">format</span></code>. This will download the analysis in a GeoJSON format, containing polygons for the administrative boundaries and IPC phases, as well as points for the IPC phase classification for IDP camps.</p></li>
 </ol>
-<figure class="align-center" id="fewsnet-ipc-download-ipc-projections">
-<a class="reference internal image-reference" href="../../_images/IPC_Projections_website.png"><img alt="../../_images/IPC_Projections_website.png" src="../../_images/IPC_Projections_website.png" style="height: 250px;" /></a>
+<figure class="align-center" id="ipcinfo-download-projections">
+<a class="reference internal image-reference" href="../../_images/en_IPCinfo_website_dl_som.png"><img alt="../../_images/en_IPCinfo_website_dl_som.png" src="../../_images/en_IPCinfo_website_dl_som.png" style="height: 350px;" /></a>
 </figure>
 <ol class="arabic simple" start="4">
-<li><p>Download the <strong>GeoJSON file</strong>. The filename is composed of “SO” for Somalia, year and month of the report, as well as the projection type. E.g., <code class="docutils literal notranslate"><span class="pre">SO_202412_ML1ML2.geojson</span></code></p></li>
+<li><p>Download the <strong>GeoJSON file</strong>. The filename is composed of the country name, the analysis type, and Year and month of publication. E.g., <code class="docutils literal notranslate"><span class="pre">Somalia-Acute</span> <span class="pre">Food</span> <span class="pre">Insecurity</span> <span class="pre">January</span> <span class="pre">2025.geoJSON</span></code></p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In some cases, your operating system (Windows) misidentifies the GeoJSON-file as a <code class="docutils literal notranslate"><span class="pre">.customization</span></code>-file. This does not change anything and can be loaded into your QGIS-project.</p>
+</div>
+<ol class="arabic simple" start="5">
 <li><p>Copy the GeoJSON-file into the input monitoring folder.</p></li>
 </ol>
 <ul class="simple">
-<li><p>Example path: <code class="docutils literal notranslate"><span class="pre">/FbF_Drought_Monitoring_Trigger/Input_monitoring/Year_Month_template/IPC_ML1ML2</span></code></p></li>
+<li><p>Example path: <code class="docutils literal notranslate"><span class="pre">/FbF_Drought_Monitoring_Trigger/Input_monitoring/Year_Month_template/Somalia-Acute</span> <span class="pre">Food</span> <span class="pre">Insecurity</span> <span class="pre">January</span> <span class="pre">2025.geoJSON</span></code></p></li>
 </ul>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Download workflow for shapefiles (if available)<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<ol class="arabic simple" start="4">
-<li><p class="sd-card-text">Download the one with the <strong>ZIP</strong> Data</p></li>
-<li><p class="sd-card-text">When you have downloaded the data, right-click on the file and click on <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">all</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Extract</span></code></p></li>
-<li><p class="sd-card-text">Open the extracted folder and copy the ML1 data in the IPC_ML1 folder you have created in step 1.</p></li>
-</ol>
-<ul class="simple">
-<li><p class="sd-card-text">The filename is composed of “SO” for Somalia, year and month of the report month e.g <code class="docutils literal notranslate"><span class="pre">SO_202308_ML1.shp</span></code>
-Example path: <code class="docutils literal notranslate"><span class="pre">.../FbF_Drought_Monitoring_Trigger/Monitoring/Year_Month_template/IPC_ML1</span></code></p></li>
-</ul>
-<ol class="arabic simple" start="7">
-<li><p class="sd-card-text">Copy the ML2 data into IPC_ML2 folder you have created in step 1.</p></li>
-</ol>
-<ul class="simple">
-<li><p class="sd-card-text">The filename is composed of “SO” for Somalia, year and month of the report month e.g <code class="docutils literal notranslate"><span class="pre">SO_202308_ML2.shp</span></code>
-Example path: <code class="docutils literal notranslate"><span class="pre">.../FbF_Drought_Monitoring_Trigger/Monitoring/Year_Month_template/IPC_ML2</span></code></p></li>
-</ul>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p class="sd-card-text">Make sure to not use the ML1_IDP data which comes in the .zip folder as well!</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p class="sd-card-text">Remember that you need to copy over all components that the respective <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_types_wiki.html#vector-data">shapefile</a> is composed of. Most probably it has 5 components: .cpg, .dbf, .prj, .shp, and .shx.</p>
-<figure class="align-center" id="content-of-zip-file-downloaded-containing-ml1-and-ml2-ipc-projections">
-<a class="reference internal image-reference" href="../../_images/IPC_zip.PNG"><img alt="../../_images/IPC_zip.PNG" src="../../_images/IPC_zip.PNG" style="height: 300px;" /></a>
-</figure>
-</div>
-</div>
-</details><div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>On the <a class="reference external" href="https://fews.net/">main FEWSNET page</a> you can also sign up for information on latest updates via email. For this option scroll down to the end of the page and click on <code class="docutils literal notranslate"><span class="pre">Sign</span> <span class="pre">up</span> <span class="pre">for</span> <span class="pre">Emails</span></code>. You will then get the option to choose updates only for Somalia.</p>
-<figure class="align-center" id="fewsnet-newsletter">
-<a class="reference internal image-reference" href="../../_images/IPC_Newsletter.png"><img alt="../../_images/IPC_Newsletter.png" src="../../_images/IPC_Newsletter.png" style="height: 60px;" /></a>
-</figure>
-</div>
+<!---
+::::::{dropdown} Download workflow for shapefiles (if available)
+
+4. Download the one with the __ZIP__ Data
+5. When you have downloaded the data, right-click on the file and click on `Extract all` -> `Extract`
+6. Open the extracted folder and copy the ML1 data in the IPC_ML1 folder you have created in step 1. 
+  * The filename is composed of "SO" for Somalia, year and month of the report month e.g `SO_202308_ML1.shp`
+  Example path: `.../FbF_Drought_Monitoring_Trigger/Monitoring/Year_Month_template/IPC_ML1`
+7. Copy the ML2 data into IPC_ML2 folder you have created in step 1.
+  * The filename is composed of "SO" for Somalia, year and month of the report month e.g `SO_202308_ML2.shp`
+  Example path: `.../FbF_Drought_Monitoring_Trigger/Monitoring/Year_Month_template/IPC_ML2`
+```{Warning}
+Make sure to not use the ML1_IDP data which comes in the .zip folder as well!
+```
+
+::::{Warning}
+Remember that you need to copy over all components that the respective [shapefile](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_types_wiki.html#vector-data) is composed of. Most probably it has 5 components: .cpg, .dbf, .prj, .shp, and .shx.
+
+```{figure} /fig/IPC_zip.PNG
+---
+height: 300px
+name: Content of .zip file downloaded containing ML1 and ML2 IPC projections
+align: center
+---
+```
+
+::::
+
+:::::
+--->
+<!---
+```{tip}
+On the [main FEWSNET page](https://fews.net/) you can also sign up for information on latest updates via email. For this option scroll down to the end of the page and click on `Sign up for Emails`. You will then get the option to choose updates only for Somalia.
+
+```{figure} /fig/IPC_Newsletter.png
+---
+height: 60px
+name: FEWSNET Newsletter
+align: center
+---
+```
+--->
 </section>
 </section>
 <section id="step-3-loading-data-into-qgis">
@@ -910,9 +926,9 @@ Example path: <code class="docutils literal notranslate"><span class="pre">.../F
 <li><p>Load all input data in QGIS by <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-raster-data-via-drag-and-drop">drag and drop</a>. Click on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span></code></p></li>
 </ol>
 <ul class="simple">
-<li><p>From the folder you created in step 1:</p>
+<li><p>From the input monitoring folder you created in step 1:</p>
 <ul>
-<li><p>ML1 and ML2 (the <code class="docutils literal notranslate"><span class="pre">.geojson</span></code> has both in one file: e.g., `)</p></li>
+<li><p>IPC Phase Classification</p></li>
 <li><p>SPI-12</p></li>
 </ul>
 </li>
@@ -944,7 +960,7 @@ Video: Loading data into QGIS<div class="sd-summary-down docutils">
 </figure>
 <ol class="arabic simple">
 <li><p>Open the tool under <code class="docutils literal notranslate"><span class="pre">Processing</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Graphical</span> <span class="pre">Modeler</span></code></p></li>
-<li><p>In the upper panel click <code class="docutils literal notranslate"><span class="pre">Model</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Model</span></code> and navigate to your folder “FbF_Drought_Monitoring_Trigger”, mark the “Triggermodel_Somalia.model3” file an click on <code class="docutils literal notranslate"><span class="pre">Open</span></code>. The model will open and you will see yellow, white and green boxes.</p></li>
+<li><p>In the upper panel click <code class="docutils literal notranslate"><span class="pre">Model</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Model</span></code> and navigate to your folder “FbF_Drought_Monitoring_Trigger”, mark the “Triggermodel_Somalia.model3” (or the updated model: “IPC_Som_drought_revision_2.1.model3”) file an click on <code class="docutils literal notranslate"><span class="pre">Open</span></code>. The model will open and you will see yellow, white and green boxes.</p></li>
 </ol>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -955,8 +971,8 @@ Video: Open Model<div class="sd-summary-down docutils">
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/load_model.mp4"></video></p>
 </div>
-</details><figure class="align-center" id="triggermodel-somalia-2">
-<a class="reference internal image-reference" href="../../_images/SOM_model_designer_2.png"><img alt="../../_images/SOM_model_designer_2.png" src="../../_images/SOM_model_designer_2.png" style="width: 700px;" /></a>
+</details><figure class="align-center" id="triggermodel-somalia-3">
+<a class="reference internal image-reference" href="../../_images/SOM_model_designer_2.1.png"><img alt="../../_images/SOM_model_designer_2.1.png" src="../../_images/SOM_model_designer_2.1.png" style="width: 700px;" /></a>
 </figure>
 <table class="table">
 <thead>
@@ -991,16 +1007,14 @@ Video: Open Model<div class="sd-summary-down docutils">
 <p class="admonition-title">Attention</p>
 <p>In the dropdown list, only layers that are currently loaded in your QGIS Project will be displayed.</p>
 </div>
-<p>For each of these mandatory inputs, you click on the dropdown arrow and choose the respective file.
-The model needs the follow 5 inputs:</p>
+<p>For each of these mandatory inputs, you click on the dropdown arrow and choose the respective file.</p>
 <ol class="arabic">
 <li><p>In the upper panel click on <code class="docutils literal notranslate"><span class="pre">Model</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">Model</span></code>. A window will open where you need to define the model input and output.</p></li>
-<li><p>The model needs the following 5 inputs:</p>
+<li><p>The model needs the following 3 inputs:</p>
 <ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SO_202412_ML1ML2</span></code>: IPC ML1 and ML2 data</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Pop_per_district</span></code>: district_pop_sum</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SPI12</span></code> (SPI12 forecast): SPI-12 data</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Worldpop</span></code> (Population Raster data): Worldpop data</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Somalia-Acute</span> <span class="pre">Food</span> <span class="pre">Insecurity</span> <span class="pre">January</span> <span class="pre">2025</span></code>: IPC Projection</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SPI12</span></code> (SPI12 forecast): SPI-12 raster data</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Worldpop</span></code> (Population Raster data): Worldpop raster data</p></li>
 </ol>
 </li>
 <li><p>Further down, you have to specify where to save the output:</p>
@@ -1011,15 +1025,21 @@ The model needs the follow 5 inputs:</p>
 </pre></div>
 </div>
 <ol class="arabic simple" start="2">
-<li><p><code class="docutils literal notranslate"><span class="pre">ML2_ML1_Indices_joined</span></code>: Click on the three points <img alt="" src="../../_images/Three_points.png" />-&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">to</span> <span class="pre">File</span></code> and navigate to <code class="docutils literal notranslate"><span class="pre">Results</span></code>folder in the folder you created in step 1 (Year_month). Give the output the name:</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Indices</span></code>: Click on the three points <img alt="" src="../../_images/Three_points.png" />-&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">to</span> <span class="pre">File</span></code> and navigate to <code class="docutils literal notranslate"><span class="pre">Results</span></code>folder in the folder you created in step 1 (Year_month). Give the output the name:</p></li>
 </ol>
-<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>ML2_ML1_Indices_joined
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Indices
 </pre></div>
 </div>
 <ol class="arabic simple" start="3">
-<li><p><code class="docutils literal notranslate"><span class="pre">SPI12_mean_IPC_Indices_joined</span></code>:Click on the three points <img alt="" src="../../_images/Three_points.png" />-&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">to</span> <span class="pre">File</span></code> and navigate to <code class="docutils literal notranslate"><span class="pre">Results</span></code>folder in the folder you created in step 1 (Year_month). Give the output the name:</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">IPC_Phase_C</span></code>:Click on the three points <img alt="" src="../../_images/Three_points.png" />-&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">to</span> <span class="pre">File</span></code> and navigate to <code class="docutils literal notranslate"><span class="pre">Results</span></code>folder in the folder you created in step 1 (Year_month). Give the output the name:</p></li>
 </ol>
-<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>SPI12_mean_IPC_Indices_joined
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>IPC_Phase_C
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p><code class="docutils literal notranslate"><span class="pre">IPC_Phase_P</span></code>:Click on the three points <img alt="" src="../../_images/Three_points.png" />-&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">to</span> <span class="pre">File</span></code> and navigate to <code class="docutils literal notranslate"><span class="pre">Results</span></code>folder in the folder you created in step 1 (Year_month). Give the output the name:</p></li>
+</ol>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>IPC_Phase_P
 </pre></div>
 </div>
 </li>
@@ -1037,62 +1057,55 @@ Video: Input and output Model<div class="sd-summary-down docutils">
 </details><figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/SRCS_Model_input.png"><img alt="../../_images/SRCS_Model_input.png" src="../../_images/SRCS_Model_input.png" style="width: 500px;" /></a>
 </figure>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Workflow for the old model (with shapefiles)<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<figure class="align-center" id="triggermodel-somalia-1">
-<a class="reference internal image-reference" href="../../_images/Model_Designer.PNG"><img alt="../../_images/Model_Designer.PNG" src="../../_images/Model_Designer.PNG" style="width: 700px;" /></a>
-</figure>
-<ol class="arabic" start="2">
-<li><p class="sd-card-text">The model needs these 5 inputs:</p>
-<ol class="arabic simple">
-<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">IPC_Projection_ML1</span></code>: ML 1 data</p></li>
-<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">IPC_Projection_ML2</span></code>: ML 2 data</p></li>
-<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">Pop_per_district</span></code>: district_pop_sum</p></li>
-<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">SPI12</span></code> (SPI12 forecast): SPI-12 data</p></li>
-<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">Worldpop</span></code> (Population Raster data): Worldpop data</p></li>
-</ol>
-</li>
-<li><p class="sd-card-text">Further down, you have to specify where to save the output:</p>
-<ol class="arabic simple">
-<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">Trigger_activation</span></code>: Click on the three points <img alt="" src="../../_images/Three_points.png" />-&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">to</span> <span class="pre">File</span></code> and navigate to <code class="docutils literal notranslate"><span class="pre">Results</span></code>folder in the folder you created in step 1 (Year_month). Give the output the name:</p></li>
-</ol>
-<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Trigger_activation
-</pre></div>
-</div>
-<ol class="arabic simple" start="2">
-<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">ML2_ML1_Indices_joined</span></code>: Click on the three points <img alt="" src="../../_images/Three_points.png" />-&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">to</span> <span class="pre">File</span></code> and navigate to <code class="docutils literal notranslate"><span class="pre">Results</span></code>folder in the folder you created in step 1 (Year_month). Give the output the name:</p></li>
-</ol>
-<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>ML2_ML1_Indices_joined
-</pre></div>
-</div>
-<ol class="arabic simple" start="3">
-<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">SPI12_mean_IPC_Indices_joined</span></code>:Click on the three points <img alt="" src="../../_images/Three_points.png" />-&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">to</span> <span class="pre">File</span></code> and navigate to <code class="docutils literal notranslate"><span class="pre">Results</span></code>folder in the folder you created in step 1 (Year_month). Give the output the name:</p></li>
-</ol>
-<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>SPI12_mean_IPC_Indices_joined
-</pre></div>
-</div>
-</li>
-<li><p class="sd-card-text">Click <code class="docutils literal notranslate"><span class="pre">Run</span></code>. Your results layer will appear in the main QGIS window. You can close the graphical modeller window.</p></li>
-</ol>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Video: Input and output Model<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/model_input_output.mp4"></video></p>
-</div>
-</details><figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/SRCS_Model_input.png"><img alt="../../_images/SRCS_Model_input.png" src="../../_images/SRCS_Model_input.png" style="width: 500px;" /></a>
-</figure>
-</div>
-</details></section>
+<!---
+::::{dropdown} Workflow for the old model (with shapefiles)
+
+```{figure} /fig/Model_Designer.PNG
+---
+width: 700px
+name: Triggermodel_Somalia_1
+align: center
+---
+```
+
+2. The model needs these 5 inputs:
+    1. `IPC_Projection_ML1`: ML 1 data
+    2. `IPC_Projection_ML2`: ML 2 data
+    3. `Pop_per_district`: district_pop_sum
+    4. `SPI12` (SPI12 forecast): SPI-12 data
+    5. `Worldpop` (Population Raster data): Worldpop data
+3. Further down, you have to specify where to save the output: 
+    1. `Trigger_activation`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
+    ```md
+    Trigger_activation
+    ```
+
+    2. `ML2_ML1_Indices_joined`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
+    ```md
+    ML2_ML1_Indices_joined
+    ```
+
+    3. `SPI12_mean_IPC_Indices_joined`:Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
+    ```md
+    SPI12_mean_IPC_Indices_joined
+    ```
+4. Click `Run`. Your results layer will appear in the main QGIS window. You can close the graphical modeller window.
+
+```{dropdown} Video: Input and output Model
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/model_input_output.mp4"></video>
+```
+
+```{figure} /fig/SRCS_Model_input.png
+---
+width: 500px
+name: 
+align: center
+---
+```
+
+::::
+-->
+</section>
 <section id="step-6-visualisation-of-results">
 <h2>Step 6.: Visualisation of results<a class="headerlink" href="#step-6-visualisation-of-results" title="Permalink to this heading">#</a></h2>
 <figure class="align-center">
@@ -1296,6 +1309,12 @@ Video: Export image and PDF<div class="sd-summary-down docutils">
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="trigger-workflow-manually">
 <h1>Trigger Workflow Manually<a class="headerlink" href="#trigger-workflow-manually" title="Permalink to this heading">#</a></h1>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>As of may 2025, the trigger model uses the IPC Phase Classification analysis by the IPC and no longer by FEWSNET.
+The data format has changed and the manual workflow no longer works as described below.
+The updated workflow will be added soon. For now, please use the automated workflow above.</p>
+</div>
 <section id="id1">
 <h2>Step 1: Setting up folder structure<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
 <figure class="align-center">
@@ -1379,7 +1398,7 @@ On the website you will have to click on Somalia to acess the data. Alternativle
 <li><p>Scroll down. In <code class="docutils literal notranslate"><span class="pre">Geograhic</span> <span class="pre">Area</span></code> typ in “Somalia” and click <code class="docutils literal notranslate"><span class="pre">Apply</span></code></p></li>
 <li><p>Choose the newest dataset.</p></li>
 </ol>
-<figure class="align-center" id="id6">
+<figure class="align-center" id="fewsnet-ipc-download-ipc-projections">
 <a class="reference internal image-reference" href="../../_images/IPC_Projections_website.png"><img alt="../../_images/IPC_Projections_website.png" src="../../_images/IPC_Projections_website.png" style="height: 250px;" /></a>
 </figure>
 <ol class="arabic simple" start="4">
@@ -1419,7 +1438,7 @@ Example path: <code class="docutils literal notranslate"><span class="pre">.../F
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p class="sd-card-text">Remember that you need to copy over all components that the respective <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_types_wiki.html#vector-data">shapefile</a> is composed of. Most probably it has 5 components: .cpg, .dbf, .prj, .shp, and .shx.</p>
-<figure class="align-center" id="id7">
+<figure class="align-center" id="content-of-zip-file-downloaded-containing-ml1-and-ml2-ipc-projections">
 <a class="reference internal image-reference" href="../../_images/IPC_zip.PNG"><img alt="../../_images/IPC_zip.PNG" src="../../_images/IPC_zip.PNG" style="height: 300px;" /></a>
 </figure>
 </div>
@@ -1427,14 +1446,14 @@ Example path: <code class="docutils literal notranslate"><span class="pre">.../F
 </details><div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>On the <a class="reference external" href="https://fews.net/">main FEWSNET page</a> you can also sign up for information on latest updates via email. For this option scroll down to the end of the page and click on <code class="docutils literal notranslate"><span class="pre">Sign</span> <span class="pre">up</span> <span class="pre">for</span> <span class="pre">Emails</span></code>. You will then get the option to choose updates only for Somalia.</p>
-<figure class="align-center" id="id8">
+<figure class="align-center" id="fewsnet-newsletter">
 <a class="reference internal image-reference" href="../../_images/IPC_Newsletter.png"><img alt="../../_images/IPC_Newsletter.png" src="../../_images/IPC_Newsletter.png" style="height: 60px;" /></a>
 </figure>
 </div>
 </section>
 </section>
-<section id="id9">
-<h2>Step 3: Loading data into QGIS<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h2>
+<section id="id6">
+<h2>Step 3: Loading data into QGIS<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h2>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/Drought_EAP_Worklow_Step_3_1.png"><img alt="../../_images/Drought_EAP_Worklow_Step_3_1.png" src="../../_images/Drought_EAP_Worklow_Step_3_1.png" style="width: 1000px;" /></a>
 </figure>
@@ -3058,7 +3077,7 @@ Video: Making print map<div class="sd-summary-down docutils">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">IPC Data</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Step 3: Loading data into QGIS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Step 3: Loading data into QGIS</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-extracting-ml1-and-ml2-from-the-geojson-layer">Step 4: Extracting ML1 and ML2 from the GeoJSON layer</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-fixing-the-geometries-for-the-ml-1-ml-2-layers">Step 5: Fixing the Geometries for the ML 1 &amp; ML 2 layers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-intersection-of-ml-1-ml-2-data-with-the-district-polygons">Step 6: Intersection of ML 1 &amp; ML 2 data with the district polygons</a></li>
