@@ -536,11 +536,8 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow-1-tabula-and-qgis">Workflow 1: Tabula and QGIS</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-get-the-data-from-the-pdf-file-into-a-csv-file">Task 1: Get the data from the PDF file into a CSV file</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-clean-the-data-from-errors-and-unwanted-entries">Task 2: Clean the data from errors and unwanted entries</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow-2-microsoft-excel-and-power-query">Workflow 2: Microsoft Excel and Power Query</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-get-the-data-from-the-pdf-file-into-excel">Task 1: Get the data from the PDF file into Excel</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-prepare-and-clean-the-data-for-import-into-qgis">Task 2: Prepare and clean the data for import into QGIS</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-import-the-data-into-qgis">Task 3: Import the Data into QGIS</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-visualisation-of-the-data">Task 4: Visualisation of the Data</a></li>
 </ul>
 </li>
 </ul>
@@ -605,14 +602,14 @@ __Relevant Wiki articles:__
 <p>In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. The flood impact on infrastructure is highly dependent on the building material of houses.  To determine the vulnerability of the infrastructure to flood damage, we will use data on the wall material of the houses in each province. The objective is to create a dataset indicating which provinces are more prone to flood damage due to the durability of the material used for buildings.
 First, we need to extract the data from the PDF-file and save it to a <code class="docutils literal notranslate"><span class="pre">.csv</span></code>- file. Then, we need to clean and prepare the <code class="docutils literal notranslate"><span class="pre">.csv</span></code>-file to remove errors and inconsistencies. Finally, we can import the <code class="docutils literal notranslate"><span class="pre">.csv</span></code>-file and perform an attribute join to attach the information on wall material to a vector-layer containing the polygons of the pakistani provinces.</p>
 </aside>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p>This exercise has two different solution methods:</p>
-<ul class="simple">
-<li><p>The first one uses Microsoft Excel with an active Microsoft 365 Subscription, making use of the advanced features “Get Data From PDF” and the Fuzzy Merge Function in the Power Query Editor.</p></li>
-<li><p>The second solution uses Open-Source Software to achieve the same result. However, the workflow is quite different.</p></li>
-</ul>
-</div>
+<!---
+:::{attention}
+This exercise has two different solution methods:
+- The first one uses Microsoft Excel with an active Microsoft 365 Subscription, making use of the advanced features "Get Data From PDF" and the Fuzzy Merge Function in the Power Query Editor.
+- The second solution uses Open-Source Software to achieve the same result. However, the workflow is quite different.
+
+:::
+-->
 </section>
 <section id="instructions-for-the-trainers">
 <h2>Instructions for the Trainers<a class="headerlink" href="#instructions-for-the-trainers" title="Permalink to this heading">#</a></h2>
@@ -748,68 +745,177 @@ First, we need to extract the data from the PDF-file and save it to a <code clas
 <a class="reference internal image-reference" href="../../_images/en_tabula_csv_excel.png"><img alt="../../_images/en_tabula_csv_excel.png" src="../../_images/en_tabula_csv_excel.png" style="width: 300px;" /></a>
 </figure>
 <ol class="arabic simple" start="2">
-<li><p>Excel does not automatically recognise the comma delimited format. We can fix this by selecting the column A, navigating to <code class="docutils literal notranslate"><span class="pre">Data</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">to</span> <span class="pre">Columns</span></code>. A new window will open:</p></li>
+<li><p>Excel does not automatically recognise the comma delimited format. We can fix this by selecting the column A, navigating to <code class="docutils literal notranslate"><span class="pre">Data</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">to</span> <span class="pre">Columns</span></code>. A new window will open. Leave the settings as they are and click <code class="docutils literal notranslate"><span class="pre">Ok</span></code>.</p></li>
 </ol>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-
-</pre></div>
-</div>
-</section>
-</section>
-<section id="workflow-2-microsoft-excel-and-power-query">
-<h3>Workflow 2: Microsoft Excel and Power Query<a class="headerlink" href="#workflow-2-microsoft-excel-and-power-query" title="Permalink to this heading">#</a></h3>
-<section id="task-1-get-the-data-from-the-pdf-file-into-excel">
-<h4>Task 1: Get the data from the PDF file into Excel<a class="headerlink" href="#task-1-get-the-data-from-the-pdf-file-into-excel" title="Permalink to this heading">#</a></h4>
-<aside class="topic">
-<p class="topic-title">Context</p>
-<p>The data on the wall materials has been published by the [STATISTICAL BUREAU PAKISTAN] as a table in a pdf-file. The table in the pdf-file cannot be imported into QGIS as is, but needs to be converted into a <code class="docutils literal notranslate"><span class="pre">.csv</span></code>-file beforehand.
-We can extract the table from the PDF-file using the Microsoft Excel, and then save it as a <code class="docutils literal notranslate"><span class="pre">.csv</span></code>-file.</p>
-</aside>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Before starting manipulating the data, make yourself familiar with the PDF-file. Open it and look at how the data is presented. How are the columns &amp; rows organised? What kind of measurements units have been used? On how many pages is the data distributed?</p>
+<p>In the web version of excel, you can fix the columns by selecting column A, navigating to <code class="docutils literal notranslate"><span class="pre">Data</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Split</span> <span class="pre">Text</span> <span class="pre">to</span> <span class="pre">Columns</span></code></p>
+</div>
+<figure class="align-default" id="formatted-csv-excel-web">
+<a class="reference internal image-reference" href="../../_images/en_m5_data_cleaning_ex_task2.png"><img alt="../../_images/en_m5_data_cleaning_ex_task2.png" src="../../_images/en_m5_data_cleaning_ex_task2.png" style="width: 450px;" /></a>
+<figcaption>
+<p><span class="caption-text">The data table should now look like this. It is still missing column headers (red)</span><a class="headerlink" href="#formatted-csv-excel-web" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="3">
+<li><p>We have to add the column names back, as we did not extract them with tabular. <kbd>Right-click</kbd> on the first row and select <code class="docutils literal notranslate"><span class="pre">Insert</span> <span class="pre">1</span> <span class="pre">Row</span> <span class="pre">Above</span></code>. A new row should appear.</p></li>
+<li><p>Enter the column headings as they are in the PDF-file:</p></li>
+</ol>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Province &amp; District</p></th>
+<th class="head text-left"><p>Burnt Bricks/Blocks</p></th>
+<th class="head text-left"><p>Mud Bricks/Mud</p></th>
+<th class="head text-left"><p>Wood</p></th>
+<th class="head text-left"><p>Other</p></th>
+<th class="head text-left"><p>Total</p></th>
+</tr>
+</thead>
+</table>
+<ol class="arabic simple" start="5">
+<li><p>Now we can format the data into an excel table. This will allow us to apply filters to remove the unwanted entries. Select the columns A to F and navigate to <code class="docutils literal notranslate"><span class="pre">Home</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Format</span> <span class="pre">as</span> <span class="pre">Table</span></code> and select a table styling of your choosing.</p></li>
+</ol>
+<p>Now we have a usable .csv file with the information. However, there are still some unwanted entries and a few formatting mistakes. First, let’s remove all the rows with the data on rural and urban distribution. We want to visualise the distribution on district level, so a distinction between urban and rural is not necessary.</p>
+<ol class="arabic simple" start="6">
+<li><p>Click on the small arrow next to the “Province &amp; District” column. A dropdown-menu will open.</p></li>
+<li><p>In the dropdown-menu, uncheck the <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">All</span></code>-Box and scroll down to check all the entries with the value <code class="docutils literal notranslate"><span class="pre">Urban</span></code> and <code class="docutils literal notranslate"><span class="pre">Rural</span></code>. Also add the entries that have numerical values attached to <code class="docutils literal notranslate"><span class="pre">Urban</span></code> or <code class="docutils literal notranslate"><span class="pre">Rural</span></code>. Click <code class="docutils literal notranslate"><span class="pre">Apply</span></code>.</p></li>
+</ol>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="data-cleaning-fiter-excel">
+<a class="reference internal image-reference" href="../../_images/en_m5_data_cleaning_ex_filter_excel.png"><img alt="../../_images/en_m5_data_cleaning_ex_filter_excel.png" src="../../_images/en_m5_data_cleaning_ex_filter_excel.png" style="width: 350px;" /></a>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="data-cleaning-filter-excel-2">
+<a class="reference internal image-reference" href="../../_images/en_m5_data_cleaning_ex_filter_excel_2.png"><img alt="../../_images/en_m5_data_cleaning_ex_filter_excel_2.png" src="../../_images/en_m5_data_cleaning_ex_filter_excel_2.png" style="width: 350px;" /></a>
+</figure>
+</div>
+</div>
+</div>
+<ol class="arabic simple" start="8">
+<li><p>The table should now only show the entries with rural or urban in the “Province &amp; District”. Select them all and click on <code class="docutils literal notranslate"><span class="pre">Remove</span> <span class="pre">selected</span> <span class="pre">rows</span></code>.</p></li>
+<li><p>Now, we have to remove the filter we applied.</p></li>
+<li><p>Lets go through the resulting table and see if we need to fix more entries. There are a few entries where the the values for the percentages are not formatted correctly. Copy the values from the columns <strong>Burnt Bricks/Blocks</strong>, <strong>Mud Bricks/Mud</strong>, <strong>Wood</strong>, <strong>Other</strong> one cell to the right and enter the numerical value that mistakenly got added to the <strong>Provinces &amp; District</strong> column.</p></li>
+<li><p>Save the formatted csv file in the input data folder (<code class="docutils literal notranslate"><span class="pre">.../module_5_ex_7_data_cleansing/data/input/</span></code>) under the name <code class="docutils literal notranslate"><span class="pre">tabula-pakistan_wall_type7.7</span></code>.</p></li>
+</ol>
+<p>Great! Now we are ready to import the CSV-file into QGIS!</p>
+</section>
+<section id="task-3-import-the-data-into-qgis">
+<h4>Task 3: Import the Data into QGIS<a class="headerlink" href="#task-3-import-the-data-into-qgis" title="Permalink to this heading">#</a></h4>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Fuzzy merge is a technique used in data processing to combine two datasets based on similar, but not necessarily identical, values. This is particularly useful when dealing with data that may have inconsistencies, such as typos or different formats.</p>
+<p>Instead of looking for exact matches, fuzzy merge uses algorithms to compare values and determine how similar they are. For example, “Jon” and John” might be considered a match because how similar they are. Each comparison generates a similarity score, which indicates how closely the two values match.</p>
 </div>
 <ol class="arabic">
-<li><p>Open Microsoft Excel and open a new workbook.</p></li>
-<li><p>In the navigation bar, navigate to <code class="docutils literal notranslate"><span class="pre">Data</span></code> and click on the tool <code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">Data</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">From</span> <span class="pre">file</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">From</span> <span class="pre">PDF</span></code>.</p></li>
-<li><p>A new window will open. Select the file from your download folder and click <code class="docutils literal notranslate"><span class="pre">Open</span></code>.</p></li>
-<li><p>Another window called “Navigator” will open. Here you can select the page from which excel will extract the data.</p></li>
-<li><p>Check the box <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">Multiple</span> <span class="pre">Items</span></code> and select the tables  <strong>Select Page 1</strong> and click <code class="docutils literal notranslate"><span class="pre">Load</span></code>.</p></li>
-<li><p>The data will be loaded onto a new Excel-sheet.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>You will notice that the table is not formatted correctly. This has to be fixed manually.</p>
-<blockquote>
-<div><p>Insert Image</p>
-</div></blockquote>
+<li><p>Open QGIS and create a new project.</p></li>
+<li><p>Save the project in the exercise folder.</p></li>
+<li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#text-data-import">Import the CSV layer into QGIS</a>.</p></li>
+<li><p>Import the administrative boundaries located in the data input folder: <code class="docutils literal notranslate"><span class="pre">.../module_5_ex_7_data_cleansing/data/input/</span></code></p></li>
+<li><p>Now let’s perform a fuzzy merge: Open the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field">field calculator</a> <strong>for the layer called <code class="docutils literal notranslate"><span class="pre">tabula-pakistan_wall_type7.7</span></code></strong> and enter the following expression:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">array_first</span><span class="p">(</span><span class="n">aggregate</span><span class="p">(</span>
+<span class="n">layer</span><span class="o">:=</span> <span class="s1">&#39;pak_admbnda_adm2_wfp_20220909&#39;</span><span class="p">,</span>
+<span class="n">aggregate</span><span class="o">:=</span><span class="s1">&#39;array_agg&#39;</span><span class="p">,</span>
+<span class="n">expression</span><span class="o">:=</span><span class="n">ADM2_EN</span><span class="p">,</span>
+<span class="nb">filter</span><span class="o">:=</span><span class="n">levenshtein</span><span class="p">(</span><span class="n">ADM2_EN</span><span class="p">,</span> <span class="n">attribute</span><span class="p">(</span><span class="nd">@parent</span><span class="p">,</span> <span class="s1">&#39;Province &amp; Disctrict&#39;</span><span class="p">))</span> <span class="o">&lt;=</span> <span class="mi">2</span><span class="p">,</span>
+<span class="n">order_by</span><span class="o">:=</span><span class="n">levenshtein</span><span class="p">(</span><span class="n">Province</span> <span class="o">&amp;</span> <span class="n">District</span><span class="p">,</span> <span class="n">attribute</span><span class="p">(</span><span class="nd">@parent</span><span class="p">,</span> <span class="s1">&#39;ADM2_EN&#39;</span><span class="p">))</span>
+<span class="p">))</span>
+</pre></div>
 </div>
 </li>
-<li><p>Give the columns the correct names, as they are presented in the PDF file (Province &amp; District, Burnt Bricks/Blocks, Mud Bricks/Mud, Wood, Other, Total) on <strong>each page</strong>.</p></li>
-<li><p>Delete the first two rows so the table starts with the provinces and the percentage values.</p></li>
-<li><p>Save the file as a “Comma delimited text”-file (<code class="docutils literal notranslate"><span class="pre">.csv</span></code>). Click <code class="docutils literal notranslate"><span class="pre">Yes</span></code>.</p></li>
+<li><p>Enter an <code class="docutils literal notranslate"><span class="pre">Output</span> <span class="pre">field</span> <span class="pre">name</span></code>, set the <code class="docutils literal notranslate"><span class="pre">Output</span> <span class="pre">field</span> <span class="pre">type</span></code> to <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">(string)</span></code> and increase the <code class="docutils literal notranslate"><span class="pre">output</span> <span class="pre">field</span> <span class="pre">length</span></code> to 40.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Ok</span></code>. The CSV file should now have a new column. In this column you will find the values from the adm2 polygon layer which have been matched using the fuzzy merge algorithm.</p></li>
+<li><p>We can now perform an attribute join by selecting the <code class="docutils literal notranslate"><span class="pre">ADM2_EN</span></code> and newly created fuzzy merge column as identifying column. In the processing toolbox, search for the tool <strong>“Join attributes by field value”</strong>. <kbd>Double-click</kbd> on it.</p></li>
+<li><p>A new window will open. Here, set the following parameters:</p>
+<ol class="arabic simple">
+<li><p><strong>Input layer:</strong> ADM2 polygon layer</p></li>
+<li><p><strong>Table field:</strong> <code class="docutils literal notranslate"><span class="pre">ADM2_EN</span></code></p></li>
+<li><p><strong>Input layer 2:</strong> <code class="docutils literal notranslate"><span class="pre">tabula-pakistan_wall_type7.7</span></code></p></li>
+<li><p><strong>Table field 2:</strong> <code class="docutils literal notranslate"><span class="pre">Fuzzy_match</span></code></p></li>
+<li><p><strong>Layer 2 fields to copy:</strong> <code class="docutils literal notranslate"><span class="pre">Burnt</span> <span class="pre">Bricks/Blocks,</span> <span class="pre">Mud</span> <span class="pre">Bricks/Mud,</span> <span class="pre">Wood,</span> <span class="pre">Other</span></code></p></li>
 </ol>
-<p>Congratulations, the data from the PDF has been extracted and saved to a usable <code class="docutils literal notranslate"><span class="pre">.csv</span></code>-file!</p>
+</li>
+</ol>
+<figure class="align-default" id="m5-ex7-attr-join">
+<a class="reference internal image-reference" href="../../_images/en_3.36_m5_ex_7_attr_join.png"><img alt="../../_images/en_3.36_m5_ex_7_attr_join.png" src="../../_images/en_3.36_m5_ex_7_attr_join.png" style="width: 450px;" /></a>
+<figcaption>
+<p><span class="caption-text">The “Join attributes by field value” parameters</span><a class="headerlink" href="#m5-ex7-attr-join" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="10">
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Run</span></code>.</p></li>
+</ol>
+<p>Congratulations, we have now successfully joined the information from the PDF file to a polygon layer!</p>
 </section>
-<section id="task-2-prepare-and-clean-the-data-for-import-into-qgis">
-<h4>Task 2: Prepare and clean the data for import into QGIS<a class="headerlink" href="#task-2-prepare-and-clean-the-data-for-import-into-qgis" title="Permalink to this heading">#</a></h4>
-<aside class="topic">
-<p class="topic-title">Context</p>
-<p>The data has been extracted from the PDF-file, but cannot be used for an attribute join in QGIS yet. First, we need to make sure that the attribute values are formatted correctly and correspond to the attribute values of the identifying key in the vector layer.</p>
-</aside>
-<div class="admonition caution">
-<p class="admonition-title">Caution</p>
-<p>The key identifiers need to <strong>match exactly</strong>. Otherwise, QGIS will not be able to join two layers. We need to prepare the files so the attributes will match.</p>
-</div>
-<ol class="arabic simple" start="12">
-<li><p>Delete each row with the value “Urban” and “Rural” in the column “Province &amp; District”. Check for district names where the “Urban” or “Rural” has been added at the end.</p></li>
+<section id="task-4-visualisation-of-the-data">
+<h4>Task 4: Visualisation of the Data<a class="headerlink" href="#task-4-visualisation-of-the-data" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>Open the layer styling panel and select the <strong>Graduated</strong> symbolisation method.</p></li>
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">Value</span></code>, select <code class="docutils literal notranslate"><span class="pre">Burnt</span> <span class="pre">Bricks/Blocks</span></code>.</p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Classify</span></code>.</p></li>
 </ol>
-<blockquote>
-<div><p>Image</p>
-</div></blockquote>
-<ol class="arabic simple" start="9">
-<li></li>
-</ol>
-</section>
+<p>The resulting symbolisation could look something like this:</p>
+<figure class="align-default" id="m5-ex-7-visualisation-results">
+<a class="reference internal image-reference" href="../../_images/m5_ex_7_visualisation_result.png"><img alt="../../_images/m5_ex_7_visualisation_result.png" src="../../_images/m5_ex_7_visualisation_result.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">The darker the colour, the higher the percentage of buildings having burnt bricks or blocks as wall type. The grey areas are the districts where we there is no data available.</span><a class="headerlink" href="#m5-ex-7-visualisation-results" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<!---
+### Workflow 2: Microsoft Excel and Power Query
+
+#### Task 1: Get the data from the PDF file into Excel
+
+:::{Topic} Context
+The data on the wall materials has been published by the [STATISTICAL BUREAU PAKISTAN] as a table in a pdf-file. The table in the pdf-file cannot be imported into QGIS as is, but needs to be converted into a `.csv`-file beforehand. 
+We can extract the table from the PDF-file using the Microsoft Excel, and then save it as a `.csv`-file. 
+:::
+
+:::{note}
+Before starting manipulating the data, make yourself familiar with the PDF-file. Open it and look at how the data is presented. How are the columns & rows organised? What kind of measurements units have been used? On how many pages is the data distributed? 
+:::
+
+
+
+1. Open Microsoft Excel and open a new workbook.
+2. In the navigation bar, navigate to `Data` and click on the tool `Get Data` > `From file` > `From PDF`. 
+3. A new window will open. Select the file from your download folder and click `Open`.
+4. Another window called "Navigator" will open. Here you can select the page from which excel will extract the data.
+5. Check the box `Select Multiple Items` and select the tables  __Select Page 1__ and click `Load`. 
+5. The data will be loaded onto a new Excel-sheet. 
+
+    :::{note}
+    You will notice that the table is not formatted correctly. This has to be fixed manually.
+    >Insert Image
+    :::
+
+6. Give the columns the correct names, as they are presented in the PDF file (Province & District, Burnt Bricks/Blocks, Mud Bricks/Mud, Wood, Other, Total) on __each page__.
+7. Delete the first two rows so the table starts with the provinces and the percentage values.
+
+
+
+
+11. Save the file as a "Comma delimited text"-file (`.csv`). Click `Yes`.
+
+Congratulations, the data from the PDF has been extracted and saved to a usable `.csv`-file!
+
+#### Task 2: Prepare and clean the data for import into QGIS
+
+:::{topic} Context
+The data has been extracted from the PDF-file, but cannot be used for an attribute join in QGIS yet. First, we need to make sure that the attribute values are formatted correctly and correspond to the attribute values of the identifying key in the vector layer.
+:::
+
+:::{caution}
+The key identifiers need to __match exactly__. Otherwise, QGIS will not be able to join two layers. We need to prepare the files so the attributes will match.
+:::
+
+
+12. Delete each row with the value "Urban" and "Rural" in the column "Province & District". Check for district names where the "Urban" or "Rural" has been added at the end.
+>Image
+9. 
+--></section>
 </section>
 </section>
 </section>
@@ -866,11 +972,8 @@ We can extract the table from the PDF-file using the Microsoft Excel, and then s
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow-1-tabula-and-qgis">Workflow 1: Tabula and QGIS</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-get-the-data-from-the-pdf-file-into-a-csv-file">Task 1: Get the data from the PDF file into a CSV file</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-clean-the-data-from-errors-and-unwanted-entries">Task 2: Clean the data from errors and unwanted entries</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow-2-microsoft-excel-and-power-query">Workflow 2: Microsoft Excel and Power Query</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-get-the-data-from-the-pdf-file-into-excel">Task 1: Get the data from the PDF file into Excel</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-prepare-and-clean-the-data-for-import-into-qgis">Task 2: Prepare and clean the data for import into QGIS</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-import-the-data-into-qgis">Task 3: Import the Data into QGIS</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-visualisation-of-the-data">Task 4: Visualisation of the Data</a></li>
 </ul>
 </li>
 </ul>
