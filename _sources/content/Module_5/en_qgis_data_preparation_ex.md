@@ -124,8 +124,17 @@ __Wrap up:__
 
 ### Available Data
 
-- Administrative Boundaries for pakistan
-- Excel files
+:::{card}
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/Exercise_7/Module_5_Exercise_7_data_cleaning.zip
+
+Download the datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/Exercise_7/Module_5_Exercise_7_data_cleaning.zip) and unzip them. 
+
+:::
+
+| Dataset| Source | Description |
+| ----- | --- | --- |
+| Administrative boundaries for pakistan | [HDX](https://data.humdata.org/dataset/cod-ab-pak) | The administrative boundaries (adm0-adm3) for pakistan can be accessed via the humanitarian data exchange. For this exercise, we are interested in the districts (adm2) | 
+| Percent distribution of households by material used for walls | [Pakistan Bureau of Statistics](https://www.pbs.gov.pk/content/statistical-tables-pslm-2019-20) | Table 7.7 in the *Pakistan Social and living Standards Measurement Survey (2019-20)* shows the materials used for walls per household in percents. | 
 
 
 ### Task 1: Get the data from the PDF file into a CSV file
