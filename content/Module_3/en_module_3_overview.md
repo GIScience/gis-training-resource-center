@@ -22,7 +22,6 @@ entries that are under a certain distance from a point, or you could simply sele
 values and see their spatial distribution. 
 
 
-## Content
 
 | __Chapter__ | __Competences & Objectives__ |
 | ----------- | ---------------------------- |
