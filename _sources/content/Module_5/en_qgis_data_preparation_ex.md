@@ -127,11 +127,8 @@ __Wrap up:__
 - Administrative Boundaries for pakistan
 - Excel files
 
-### Workflow 1: Tabula and QGIS
 
----
-
-#### Task 1: Get the data from the PDF file into a CSV file
+### Task 1: Get the data from the PDF file into a CSV file
 
 :::{Topic} Context
 
@@ -228,7 +225,7 @@ width: 550 px
 
 Congratulations, the data from the PDF has been extracted into a CSV file!
 
-#### Task 2: Clean the data from errors and unwanted entries
+### Task 2: Clean the data from errors and unwanted entries
 
 :::{topic} Context
 The data has been extracted from the PDF. However, there are a few formatting errors and unwanted information. Before loading the extracted CSV into QGIS, we need to clean the formatting and remove unwanted entries. This can be done in many ways, for example in a spreadsheet editor such as Microsoft Excel or Libreoffice Calc.
@@ -307,7 +304,7 @@ width: 350 px
 
 Great! Now we are ready to import the CSV-file into QGIS!
 
-#### Task 3: Import the Data into QGIS
+### Task 3: Import the Data into QGIS
 
 :::{topic}
 With the data formatted as a usable CSV-file, we can import it into QGIS and join it with a polygon layer containing the districts (adm2) by using the columns containing the district names in english. However, in this step, we might encounter the problem that the district names are written differently. In this case, we can't simply perform a attribute join [LINK] as the attributes need to __match exactly__. To fix this, we have to perform a __fuzzy merge__. 
@@ -333,7 +330,7 @@ Instead of looking for exact matches, fuzzy merge uses algorithms to compare val
     aggregate:='array_agg',
     expression:=ADM2_EN,
     filter:=levenshtein(ADM2_EN, attribute(@parent, 'Province & Disctrict')) <= 2,
-    order_by:=levenshtein(Province & District, attribute(@parent, 'ADM2_EN'))
+    order_by:=levenshtein(ADM2_EN, attribute(@parent, 'Province & Disctrict'))
     ))
     ```
 
@@ -362,7 +359,7 @@ The "Join attributes by field value" parameters
 
 Congratulations, we have now successfully joined the information from the PDF file to a polygon layer!
 
-#### Task 4: Visualisation of the Data
+### Task 4: Visualisation of the Data
 
 :::{topic}
 

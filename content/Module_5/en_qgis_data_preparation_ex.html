@@ -533,13 +533,10 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions-for-the-trainers">Instructions for the Trainers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise">Exercise</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow-1-tabula-and-qgis">Workflow 1: Tabula and QGIS</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-get-the-data-from-the-pdf-file-into-a-csv-file">Task 1: Get the data from the PDF file into a CSV file</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-clean-the-data-from-errors-and-unwanted-entries">Task 2: Clean the data from errors and unwanted entries</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-import-the-data-into-qgis">Task 3: Import the Data into QGIS</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-visualisation-of-the-data">Task 4: Visualisation of the Data</a></li>
-</ul>
-</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-get-the-data-from-the-pdf-file-into-a-csv-file">Task 1: Get the data from the PDF file into a CSV file</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-clean-the-data-from-errors-and-unwanted-entries">Task 2: Clean the data from errors and unwanted entries</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-import-the-data-into-qgis">Task 3: Import the Data into QGIS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-visualisation-of-the-data">Task 4: Visualisation of the Data</a></li>
 </ul>
 </li>
 </ul>
@@ -659,11 +656,8 @@ This exercise has two different solution methods:
 <li><p>Excel files</p></li>
 </ul>
 </section>
-<section id="workflow-1-tabula-and-qgis">
-<h3>Workflow 1: Tabula and QGIS<a class="headerlink" href="#workflow-1-tabula-and-qgis" title="Permalink to this heading">#</a></h3>
-<hr class="docutils" />
 <section id="task-1-get-the-data-from-the-pdf-file-into-a-csv-file">
-<h4>Task 1: Get the data from the PDF file into a CSV file<a class="headerlink" href="#task-1-get-the-data-from-the-pdf-file-into-a-csv-file" title="Permalink to this heading">#</a></h4>
+<h3>Task 1: Get the data from the PDF file into a CSV file<a class="headerlink" href="#task-1-get-the-data-from-the-pdf-file-into-a-csv-file" title="Permalink to this heading">#</a></h3>
 <aside class="topic">
 <p class="topic-title">Context</p>
 <p>The data on wall materials has been published by the [STATISTICAL BUREAU PAKISTAN] as a table in a pdf-file. The table in the pdf-file cannot be imported into QGIS as is. First, the table in the PDF needs to be converted into a <code class="docutils literal notranslate"><span class="pre">.csv</span></code>-file.</p>
@@ -729,7 +723,7 @@ This exercise has two different solution methods:
 <p>Congratulations, the data from the PDF has been extracted into a CSV file!</p>
 </section>
 <section id="task-2-clean-the-data-from-errors-and-unwanted-entries">
-<h4>Task 2: Clean the data from errors and unwanted entries<a class="headerlink" href="#task-2-clean-the-data-from-errors-and-unwanted-entries" title="Permalink to this heading">#</a></h4>
+<h3>Task 2: Clean the data from errors and unwanted entries<a class="headerlink" href="#task-2-clean-the-data-from-errors-and-unwanted-entries" title="Permalink to this heading">#</a></h3>
 <aside class="topic">
 <p class="topic-title">Context</p>
 <p>The data has been extracted from the PDF. However, there are a few formatting errors and unwanted information. Before loading the extracted CSV into QGIS, we need to clean the formatting and remove unwanted entries. This can be done in many ways, for example in a spreadsheet editor such as Microsoft Excel or Libreoffice Calc.</p>
@@ -803,7 +797,7 @@ This exercise has two different solution methods:
 <p>Great! Now we are ready to import the CSV-file into QGIS!</p>
 </section>
 <section id="task-3-import-the-data-into-qgis">
-<h4>Task 3: Import the Data into QGIS<a class="headerlink" href="#task-3-import-the-data-into-qgis" title="Permalink to this heading">#</a></h4>
+<h3>Task 3: Import the Data into QGIS<a class="headerlink" href="#task-3-import-the-data-into-qgis" title="Permalink to this heading">#</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Fuzzy merge is a technique used in data processing to combine two datasets based on similar, but not necessarily identical, values. This is particularly useful when dealing with data that may have inconsistencies, such as typos or different formats.</p>
@@ -820,7 +814,7 @@ This exercise has two different solution methods:
 <span class="n">aggregate</span><span class="o">:=</span><span class="s1">&#39;array_agg&#39;</span><span class="p">,</span>
 <span class="n">expression</span><span class="o">:=</span><span class="n">ADM2_EN</span><span class="p">,</span>
 <span class="nb">filter</span><span class="o">:=</span><span class="n">levenshtein</span><span class="p">(</span><span class="n">ADM2_EN</span><span class="p">,</span> <span class="n">attribute</span><span class="p">(</span><span class="nd">@parent</span><span class="p">,</span> <span class="s1">&#39;Province &amp; Disctrict&#39;</span><span class="p">))</span> <span class="o">&lt;=</span> <span class="mi">2</span><span class="p">,</span>
-<span class="n">order_by</span><span class="o">:=</span><span class="n">levenshtein</span><span class="p">(</span><span class="n">Province</span> <span class="o">&amp;</span> <span class="n">District</span><span class="p">,</span> <span class="n">attribute</span><span class="p">(</span><span class="nd">@parent</span><span class="p">,</span> <span class="s1">&#39;ADM2_EN&#39;</span><span class="p">))</span>
+<span class="n">order_by</span><span class="o">:=</span><span class="n">levenshtein</span><span class="p">(</span><span class="n">ADM2_EN</span><span class="p">,</span> <span class="n">attribute</span><span class="p">(</span><span class="nd">@parent</span><span class="p">,</span> <span class="s1">&#39;Province &amp; Disctrict&#39;</span><span class="p">))</span>
 <span class="p">))</span>
 </pre></div>
 </div>
@@ -850,7 +844,7 @@ This exercise has two different solution methods:
 <p>Congratulations, we have now successfully joined the information from the PDF file to a polygon layer!</p>
 </section>
 <section id="task-4-visualisation-of-the-data">
-<h4>Task 4: Visualisation of the Data<a class="headerlink" href="#task-4-visualisation-of-the-data" title="Permalink to this heading">#</a></h4>
+<h3>Task 4: Visualisation of the Data<a class="headerlink" href="#task-4-visualisation-of-the-data" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Open the layer styling panel and select the <strong>Graduated</strong> symbolisation method.</p></li>
 <li><p>Under <code class="docutils literal notranslate"><span class="pre">Value</span></code>, select <code class="docutils literal notranslate"><span class="pre">Burnt</span> <span class="pre">Bricks/Blocks</span></code>.</p></li>
@@ -918,7 +912,6 @@ The key identifiers need to __match exactly__. Otherwise, QGIS will not be able 
 --></section>
 </section>
 </section>
-</section>
 
     <script type="text/x-thebe-config">
     {
@@ -969,13 +962,10 @@ The key identifiers need to __match exactly__. Otherwise, QGIS will not be able 
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions-for-the-trainers">Instructions for the Trainers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise">Exercise</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow-1-tabula-and-qgis">Workflow 1: Tabula and QGIS</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-get-the-data-from-the-pdf-file-into-a-csv-file">Task 1: Get the data from the PDF file into a CSV file</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-clean-the-data-from-errors-and-unwanted-entries">Task 2: Clean the data from errors and unwanted entries</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-import-the-data-into-qgis">Task 3: Import the Data into QGIS</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-visualisation-of-the-data">Task 4: Visualisation of the Data</a></li>
-</ul>
-</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-get-the-data-from-the-pdf-file-into-a-csv-file">Task 1: Get the data from the PDF file into a CSV file</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-clean-the-data-from-errors-and-unwanted-entries">Task 2: Clean the data from errors and unwanted entries</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-import-the-data-into-qgis">Task 3: Import the Data into QGIS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-visualisation-of-the-data">Task 4: Visualisation of the Data</a></li>
 </ul>
 </li>
 </ul>
