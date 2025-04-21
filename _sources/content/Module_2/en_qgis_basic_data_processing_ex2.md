@@ -107,7 +107,7 @@ __Wrap up:__
 ### Available Data
 
 :::{card}
-:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_2/Module_2_Exercise_2_Basic_geodata_processing.zip 
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_2/Module_2_Exercise_2_Basic_Geodata_Processing.zip 
 
 __Download all datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_2/Module_2_Exercise_2_Basic_geodata_processing.zip), save the folder on your computer and unzip the file.__ 
 

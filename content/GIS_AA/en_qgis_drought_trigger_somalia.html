@@ -559,7 +559,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-loading-data-into-qgis">Step 3: Loading data into QGIS</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-load-the-model-in-the-qgis-model-designer">Step 4: Load the model in the QGIS Model Designer</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-run-the-model">Step 5: Run the model</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-visualisation-of-results">Step 6.: Visualisation of results</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-visualisation-of-results">Step 6: Visualisation of results</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-making-the-print-map">Step 7: Making the Print Map</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-8-exporting-the-map">Step 8: Exporting the Map</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-the-model">Troubleshooting the Model</a></li>
@@ -572,7 +572,10 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">IPC Data</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Step 3: Loading data into QGIS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Step 3: Loading data into QGIS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-formatting-the-adm2-names">Step 4: Formatting the ADM2-names</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-dissolving-admin-2-polygons">Step 5: Dissolving admin 2 polygons</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-add-population-statistics-to-the-adm2-layer">Step 6: Add population statistics to the adm2 layer</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-extracting-ml1-and-ml2-from-the-geojson-layer">Step 4: Extracting ML1 and ML2 from the GeoJSON layer</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-fixing-the-geometries-for-the-ml-1-ml-2-layers">Step 5: Fixing the Geometries for the ML 1 &amp; ML 2 layers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-intersection-of-ml-1-ml-2-data-with-the-district-polygons">Step 6: Intersection of ML 1 &amp; ML 2 data with the district polygons</a></li>
@@ -1107,7 +1110,7 @@ align: center
 -->
 </section>
 <section id="step-6-visualisation-of-results">
-<h2>Step 6.: Visualisation of results<a class="headerlink" href="#step-6-visualisation-of-results" title="Permalink to this heading">#</a></h2>
+<h2>Step 6: Visualisation of results<a class="headerlink" href="#step-6-visualisation-of-results" title="Permalink to this heading">#</a></h2>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/Drought_EAP_Worklow_Step_14_1.png"><img alt="../../_images/Drought_EAP_Worklow_Step_14_1.png" src="../../_images/Drought_EAP_Worklow_Step_14_1.png" style="width: 1000px;" /></a>
 </figure>
@@ -1313,7 +1316,7 @@ Video: Export image and PDF<div class="sd-summary-down docutils">
 <p class="admonition-title">Attention</p>
 <p>As of may 2025, the trigger model uses the IPC Phase Classification analysis by the IPC and no longer by FEWSNET.
 The data format has changed and the manual workflow no longer works as described below.
-The updated workflow will be added soon. For now, please use the automated workflow above.</p>
+Due to differences in the data structure as well as the extent of the geometries, the manual workflow has changed considerably.</p>
 </div>
 <section id="id1">
 <h2>Step 1: Setting up folder structure<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
@@ -1383,77 +1386,117 @@ On the right hand side, you will see in the upper window the FTP data folder and
 </section>
 <section id="id5">
 <h3>IPC Data<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
-<p>The IPC Projection data is provided and regulary updated on the <a class="reference external" href="https://fews.net/">FEWSNET Website</a>.
-On the website you will have to click on Somalia to acess the data. Alternativley, you can  navigate through <code class="docutils literal notranslate"><span class="pre">Data</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Acute</span> <span class="pre">Food</span> <span class="pre">Insecurity</span> <span class="pre">Data</span></code> and enter „Somalia”. In the menu you will see different dataformats for different timestamps. Once you find out which timestamp is the most current one find the ZIP download. We need the data in shapefile (.shp) format, which is only included in the ZIP file and not provided as single download file.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>The FEWSNET pages change often!</p>
-</div>
-<div class="warning admonition">
-<p class="admonition-title">Updates to FEWSNET</p>
-<p>As of December 2024, the FEWSNET Website does not offer the IPC data for ML1 and ML2 as two distinct shapefiles contained in a zip-file. Instead, you can download the GeoJSON-file, which contains a polygon layer with both the ML1 and ML2 polygons. The model and the documentation has been updated to work with the GeoJSON-file.</p>
-</div>
+<p>The IPC Projection data is provided and regularly updated on the <a class="reference external" href="https://www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1159510/?iso3=SOM">IPC Website</a>.
+To navigate to the latest IPC Projection data on Somalia, navigate to <code class="docutils literal notranslate"><span class="pre">Latest</span> <span class="pre">Analyses</span></code> in the top bar &gt; <code class="docutils literal notranslate"><span class="pre">IPC</span> <span class="pre">Analyses</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Acute</span> <span class="pre">Food</span> <span class="pre">Insecurity</span> <span class="pre">Classification</span></code>. Here you look for the latest analysis for Somalia.</p>
+<!---```{Warning}
+The FEWSNET pages change often!
+```
+
+```{admonition} Updates to FEWSNET
+:class: warning
+
+As of December 2024, the FEWSNET Website does not offer the IPC data for ML1 and ML2 as two distinct shapefiles contained in a zip-file. Instead, you can download the GeoJSON-file, which contains a polygon layer with both the ML1 and ML2 polygons. The model and the documentation has been updated to work with the GeoJSON-file.
+
+```
+-->
 <ol class="arabic simple">
-<li><p>Go to <a class="reference external" href="https://fews.net/">FEWSNET Website</a>. Click on <code class="docutils literal notranslate"><span class="pre">Data</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Acute</span> <span class="pre">Food</span> <span class="pre">Insecurity</span></code>.</p></li>
-<li><p>Scroll down. In <code class="docutils literal notranslate"><span class="pre">Geograhic</span> <span class="pre">Area</span></code> typ in “Somalia” and click <code class="docutils literal notranslate"><span class="pre">Apply</span></code></p></li>
-<li><p>Choose the newest dataset.</p></li>
+<li><p>Go to the <a class="reference external" href="https://www.ipcinfo.org">IPC website</a></p></li>
+<li><p>In the top bar, navigate to <code class="docutils literal notranslate"><span class="pre">Latest</span> <span class="pre">Analyses</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">IPC</span> <span class="pre">Analyses</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Acute</span> <span class="pre">Food</span> <span class="pre">Insecurity</span> <span class="pre">Classification</span></code>.</p></li>
+<li><p>On the new website, select Somalia as a country and select the newest dataset.</p></li>
+<li><p>On this website, you will see both a map of the current and the projected IPC phase classifications, as well as some metadata. On the right side of the map, click on the button <code class="docutils literal notranslate"><span class="pre">Download</span> <span class="pre">GIS</span> <span class="pre">format</span></code>. This will download the analysis in a GeoJSON format, containing polygons for the administrative boundaries and IPC phases, as well as points for the IPC phase classification for IDP camps.</p></li>
 </ol>
-<figure class="align-center" id="fewsnet-ipc-download-ipc-projections">
-<a class="reference internal image-reference" href="../../_images/IPC_Projections_website.png"><img alt="../../_images/IPC_Projections_website.png" src="../../_images/IPC_Projections_website.png" style="height: 250px;" /></a>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="../../_images/en_IPCinfo_website_dl_som.png"><img alt="../../_images/en_IPCinfo_website_dl_som.png" src="../../_images/en_IPCinfo_website_dl_som.png" style="height: 350px;" /></a>
 </figure>
 <ol class="arabic simple" start="4">
-<li><p>Download the GeoJSON file. The filename is composed of “SO” for Somalia, year and month of the report, as well as the projection type. E.g., <code class="docutils literal notranslate"><span class="pre">SO_202412_ML1ML2.geojson</span></code></p></li>
+<li><p>Download the <strong>GeoJSON file</strong>. The filename is composed of the country name, the analysis type, and Year and month of publication. E.g., <code class="docutils literal notranslate"><span class="pre">Somalia-Acute</span> <span class="pre">Food</span> <span class="pre">Insecurity</span> <span class="pre">January</span> <span class="pre">2025.geoJSON</span></code></p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In some cases, your operating system (Windows) misidentifies the GeoJSON-file as a <code class="docutils literal notranslate"><span class="pre">.customization</span></code>-file. This does not change anything and can be loaded into your QGIS-project.</p>
+</div>
+<ol class="arabic simple" start="5">
 <li><p>Copy the GeoJSON-file into the input monitoring folder.</p></li>
 </ol>
 <ul class="simple">
-<li><p>Example path: <code class="docutils literal notranslate"><span class="pre">/FbF_Drought_Monitoring_Trigger/Input_monitoring/Year_Month_template/IPC_ML1ML2</span></code></p></li>
+<li><p>Example path: <code class="docutils literal notranslate"><span class="pre">/FbF_Drought_Monitoring_Trigger/Input_monitoring/Year_Month_template/Somalia-Acute</span> <span class="pre">Food</span> <span class="pre">Insecurity</span> <span class="pre">January</span> <span class="pre">2025.geoJSON</span></code></p></li>
 </ul>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Download workflow for shapefiles (if available)<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<ol class="arabic simple" start="4">
-<li><p class="sd-card-text">Download the one with the <strong>ZIP</strong> Data</p></li>
-<li><p class="sd-card-text">When you have downloaded the data, right-click on the file and click on <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">all</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Extract</span></code></p></li>
-<li><p class="sd-card-text">Open the extracted folder and copy the ML1 data in the IPC_ML1 folder you have created in step 1.</p></li>
-</ol>
-<ul class="simple">
-<li><p class="sd-card-text">The filename is composed of “SO” for Somalia, year and month of the report month e.g <code class="docutils literal notranslate"><span class="pre">SO_202308_ML1.shp</span></code>
-Example path: <code class="docutils literal notranslate"><span class="pre">.../FbF_Drought_Monitoring_Trigger/Monitoring/Year_Month_template/IPC_ML1</span></code></p></li>
-</ul>
-<ol class="arabic simple" start="7">
-<li><p class="sd-card-text">Copy the ML2 data into IPC_ML2 folder you have created in step 1.</p></li>
-</ol>
-<ul class="simple">
-<li><p class="sd-card-text">The filename is composed of “SO” for Somalia, year and month of the report month e.g <code class="docutils literal notranslate"><span class="pre">SO_202308_ML2.shp</span></code>
-Example path: <code class="docutils literal notranslate"><span class="pre">.../FbF_Drought_Monitoring_Trigger/Monitoring/Year_Month_template/IPC_ML2</span></code></p></li>
-</ul>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p class="sd-card-text">Make sure to not use the ML1_IDP data which comes in the .zip folder as well!</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p class="sd-card-text">Remember that you need to copy over all components that the respective <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_types_wiki.html#vector-data">shapefile</a> is composed of. Most probably it has 5 components: .cpg, .dbf, .prj, .shp, and .shx.</p>
-<figure class="align-center" id="content-of-zip-file-downloaded-containing-ml1-and-ml2-ipc-projections">
-<a class="reference internal image-reference" href="../../_images/IPC_zip.PNG"><img alt="../../_images/IPC_zip.PNG" src="../../_images/IPC_zip.PNG" style="height: 300px;" /></a>
-</figure>
-</div>
-</div>
-</details><div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>On the <a class="reference external" href="https://fews.net/">main FEWSNET page</a> you can also sign up for information on latest updates via email. For this option scroll down to the end of the page and click on <code class="docutils literal notranslate"><span class="pre">Sign</span> <span class="pre">up</span> <span class="pre">for</span> <span class="pre">Emails</span></code>. You will then get the option to choose updates only for Somalia.</p>
-<figure class="align-center" id="fewsnet-newsletter">
-<a class="reference internal image-reference" href="../../_images/IPC_Newsletter.png"><img alt="../../_images/IPC_Newsletter.png" src="../../_images/IPC_Newsletter.png" style="height: 60px;" /></a>
-</figure>
-</div>
+<!--- REMOVED OLD WORKFLOW WITH FEWSNET DATA
+
+The IPC Projection data is provided and regulary updated on the [FEWSNET Website](https://fews.net/).
+On the website you will have to click on Somalia to acess the data. Alternativley, you can  navigate through `Data` -> `Acute Food Insecurity Data` and enter „Somalia". In the menu you will see different dataformats for different timestamps. Once you find out which timestamp is the most current one find the ZIP download. We need the data in shapefile (.shp) format, which is only included in the ZIP file and not provided as single download file. 
+
+
+```{Warning}
+The FEWSNET pages change often!
+```
+
+```{admonition} Updates to FEWSNET
+:class: warning
+
+As of December 2024, the FEWSNET Website does not offer the IPC data for ML1 and ML2 as two distinct shapefiles contained in a zip-file. Instead, you can download the GeoJSON-file, which contains a polygon layer with both the ML1 and ML2 polygons. The model and the documentation has been updated to work with the GeoJSON-file.
+
+```
+
+
+1. Go to [FEWSNET Website](https://fews.net/). Click on `Data` -> `Acute Food Insecurity`.
+2. Scroll down. In `Geograhic Area` typ in “Somalia” and click `Apply`
+3. Choose the newest dataset.
+
+```{figure} /fig/IPC_Projections_website.png
+---
+height: 250px
+name: FEWSNET IPC - Download IPC Projections
+align: center
+---
+```
+
+4. Download the GeoJSON file. The filename is composed of "SO" for Somalia, year and month of the report, as well as the projection type. E.g., `SO_202412_ML1ML2.geojson`
+5. Copy the GeoJSON-file into the input monitoring folder.
+  * Example path: `/FbF_Drought_Monitoring_Trigger/Input_monitoring/Year_Month_template/IPC_ML1ML2`
+
+
+:::::{dropdown} Download workflow for shapefiles (if available)
+
+4. Download the one with the __ZIP__ Data
+5. When you have downloaded the data, right-click on the file and click on `Extract all` -> `Extract`
+6. Open the extracted folder and copy the ML1 data in the IPC_ML1 folder you have created in step 1. 
+  * The filename is composed of "SO" for Somalia, year and month of the report month e.g `SO_202308_ML1.shp`
+  Example path: `.../FbF_Drought_Monitoring_Trigger/Monitoring/Year_Month_template/IPC_ML1`
+7. Copy the ML2 data into IPC_ML2 folder you have created in step 1.
+  * The filename is composed of "SO" for Somalia, year and month of the report month e.g `SO_202308_ML2.shp`
+  Example path: `.../FbF_Drought_Monitoring_Trigger/Monitoring/Year_Month_template/IPC_ML2`
+```{Warning}
+Make sure to not use the ML1_IDP data which comes in the .zip folder as well!
+```
+
+```{Warning}
+Remember that you need to copy over all components that the respective [shapefile](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_types_wiki.html#vector-data) is composed of. Most probably it has 5 components: .cpg, .dbf, .prj, .shp, and .shx.
+```{figure} /fig/IPC_zip.PNG
+---
+height: 300px
+name: Content of .zip file downloaded containing ML1 and ML2 IPC projections
+align: center
+---
+```
+
+:::::
+
+```{tip}
+On the [main FEWSNET page](https://fews.net/) you can also sign up for information on latest updates via email. For this option scroll down to the end of the page and click on `Sign up for Emails`. You will then get the option to choose updates only for Somalia.
+
+```{figure} /fig/IPC_Newsletter.png
+---
+height: 60px
+name: FEWSNET Newsletter
+align: center
+---
+```
+-->
 </section>
 </section>
-<section id="id6">
-<h2>Step 3: Loading data into QGIS<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h2>
+<section id="id7">
+<h2>Step 3: Loading data into QGIS<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h2>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/Drought_EAP_Worklow_Step_3_1.png"><img alt="../../_images/Drought_EAP_Worklow_Step_3_1.png" src="../../_images/Drought_EAP_Worklow_Step_3_1.png" style="width: 1000px;" /></a>
 </figure>
@@ -1467,7 +1510,7 @@ Example path: <code class="docutils literal notranslate"><span class="pre">.../F
 <ul class="simple">
 <li><p>From the folder you created in step 1</p>
 <ul>
-<li><p>ML1 and ML2 (the GeoJSON-format contains both ML1 and ML2 in one layer)</p></li>
+<li><p>IPC Phase Classification</p></li>
 <li><p>SPI-12</p></li>
 </ul>
 </li>
@@ -1492,6 +1535,94 @@ Video: Loading data into QGIS<div class="sd-summary-down docutils">
 <p class="sd-card-text"><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_3.mp4"></video></p>
 </div>
 </details></section>
+<section id="step-4-formatting-the-adm2-names">
+<h2>Step 4: Formatting the ADM2-names<a class="headerlink" href="#step-4-formatting-the-adm2-names" title="Permalink to this heading">#</a></h2>
+<p><strong>Purpose:</strong> The GeoJSON file from IPC contains a polygon layer that contains the administrative boundaries and the IPC phase for the current analysis (C) and the projection (P). However, it is all contained in one layer. To be able to perform our analysis steps, we need to prepare the data. In the column where the adm2-names are saved, there are several polygons with the same adm names, but have a “(1)” or “(2)” added at the end. We need to remove number in the parantheses so we can dissolve the polygons in the next step.</p>
+<p><strong>Tool:</strong> Field Calculator</p>
+<table class="table">
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 56%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Instruction</p></th>
+<th class="head"><p>Field Calculator</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><ol class="arabic simple">
+<li><p>Select the IPC Phase classification layer and open the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_non_spatial_tools.html#calculate-field">field calculator</a></p></li>
+<li><p>Check the box <code class="docutils literal notranslate"><span class="pre">Update</span> <span class="pre">existing</span> <span class="pre">field</span></code> and select the field “area”.</p></li>
+<li><p>Enter the following expression in the expression box:</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">replace</span><span class="p">(</span>
+    <span class="n">replace</span><span class="p">(</span>
+        <span class="n">replace</span><span class="p">(</span>
+            <span class="n">replace</span><span class="p">(</span>
+                <span class="n">replace</span><span class="p">(</span><span class="s2">&quot;area&quot;</span><span class="p">,</span> <span class="s1">&#39; (1)&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">),</span>
+                <span class="s1">&#39; (2)&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span>
+            <span class="p">),</span>
+            <span class="s1">&#39; (3)&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span>
+        <span class="p">),</span>
+        <span class="s1">&#39; (4)&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span>
+    <span class="p">),</span>
+    <span class="s1">&#39; (5)&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Ok</span></code>.</p></li>
+</ol>
+</td>
+<td><figure class="align-default">
+<img alt="../../_images/drought_EAP_workflow_step_4_march2025.png" src="../../_images/drought_EAP_workflow_step_4_march2025.png" />
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="step-5-dissolving-admin-2-polygons">
+<h2>Step 5: Dissolving admin 2 polygons<a class="headerlink" href="#step-5-dissolving-admin-2-polygons" title="Permalink to this heading">#</a></h2>
+<figure class="align-default">
+<img alt="fig/ADD" src="fig/ADD" />
+</figure>
+<p><strong>Purpose:</strong> To get a layer of the administrative boundaries for the district, we need to dissolve the polygons  from the formatted layer from the previous step using the field “area”. This will output one polygon per distinct “area” value. In other words a layer withe adm2 boundaries.</p>
+<p><strong>Tool:</strong> Dissolve</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We cannot use a different polygon layer with the adm2 boundaries as we are calculating the population per polygon in the following steps and the polygons need to match exactly in order to get the correct population weighing.</p>
+</div>
+<table class="table">
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 56%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Instruction</p></th>
+<th class="head"><p>Dissolve</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><ol class="arabic simple">
+<li><p>In the <span class="xref myst">processing toolbox</span>, search for “Dissolve”. Click on it.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Layer</span></code>: IPC Phase Classification (formatted as in step 4)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Dissolve</span> <span class="pre">field(s)</span></code>: “area”</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Run</span></code>.</p></li>
+</ol>
+</td>
+<td><figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/drought_EAP_workflow_step_5_march2025.png"><img alt="../../_images/drought_EAP_workflow_step_5_march2025.png" src="../../_images/drought_EAP_workflow_step_5_march2025.png" style="width: 450px;" /></a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="step-6-add-population-statistics-to-the-adm2-layer">
+<h2>Step 6: Add population statistics to the adm2 layer<a class="headerlink" href="#step-6-add-population-statistics-to-the-adm2-layer" title="Permalink to this heading">#</a></h2>
+<p><strong>Purpose:</strong> For the calculation of the IPC index, we need to have the population per adm2 polygon. Using the worldpop raster layer, we can calculate the population</p>
+</section>
 <section id="step-4-extracting-ml1-and-ml2-from-the-geojson-layer">
 <h2>Step 4: Extracting ML1 and ML2 from the GeoJSON layer<a class="headerlink" href="#step-4-extracting-ml1-and-ml2-from-the-geojson-layer" title="Permalink to this heading">#</a></h2>
 <figure class="align-center">
@@ -3064,7 +3195,7 @@ Video: Making print map<div class="sd-summary-down docutils">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-loading-data-into-qgis">Step 3: Loading data into QGIS</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-load-the-model-in-the-qgis-model-designer">Step 4: Load the model in the QGIS Model Designer</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-run-the-model">Step 5: Run the model</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-visualisation-of-results">Step 6.: Visualisation of results</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-visualisation-of-results">Step 6: Visualisation of results</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-making-the-print-map">Step 7: Making the Print Map</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-8-exporting-the-map">Step 8: Exporting the Map</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-the-model">Troubleshooting the Model</a></li>
@@ -3077,7 +3208,10 @@ Video: Making print map<div class="sd-summary-down docutils">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">IPC Data</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Step 3: Loading data into QGIS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Step 3: Loading data into QGIS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-formatting-the-adm2-names">Step 4: Formatting the ADM2-names</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-dissolving-admin-2-polygons">Step 5: Dissolving admin 2 polygons</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-add-population-statistics-to-the-adm2-layer">Step 6: Add population statistics to the adm2 layer</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-extracting-ml1-and-ml2-from-the-geojson-layer">Step 4: Extracting ML1 and ML2 from the GeoJSON layer</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-fixing-the-geometries-for-the-ml-1-ml-2-layers">Step 5: Fixing the Geometries for the ML 1 &amp; ML 2 layers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-intersection-of-ml-1-ml-2-data-with-the-district-polygons">Step 6: Intersection of ML 1 &amp; ML 2 data with the district polygons</a></li>

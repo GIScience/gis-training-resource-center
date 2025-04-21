@@ -108,9 +108,9 @@ __Wrap up:__
 
 :::{card}
 :class-card: sd-text-center
-:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_understanding_geodata.zip
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_Understanding_Geodata.zip
 
-__Download all datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_understanding_geodata.zip) and save the folder on your computer and unzip the file.__
+__Download all datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_Understanding_Geodata.zip) and unzip the folder.__
 
 :::
 
@@ -118,16 +118,17 @@ The zip folder includes:
 
 | Dataset name | Original title | Publisher | Downloaded from | 
 | :-------------- | :----------------- |:----------------- |:----------------- |
-| `Sierra_leone_border.gpkg` (MultiLineString) |  |  |  |
+| `sle_admbnda_adm0_adm1_gov_ocha.gpkg` (Polygons) | Sierra Leone - Subnational Administrative Boundaries | United Nations Office for the Coordination of Humanitarian Affairs (OCHA) | [HDX](https://data.humdata.org/dataset/cod-ab-sle) |
 | `sierra_leone_health_HOT.shp` (Points) | Sierra Leone Health Facilities (OpenStreetMap Export) | Humanitarian OpenStreetMap Team (HOT) | [HDX](https://data.humdata.org/dataset/hotosm_sle_health_facilities) | 
 | `sl-airports.csv` (CSV) | Airports in Sierra Leone | Our Airports | [HDX](https://data.humdata.org/dataset/ourairports-sle) | 
 
 
-The borders GeoPackage contains administrative information for Sierra Leone at both national and provincial level. Additionally, the shapefile `sierra_leone_health_HOT.shp` provides information on various health facilities within the country, while the `sl-airports.csv` CSV-file offers information on airports.
+The GeoPackage `Sierra_leone_administrative_boundaries.gpkg` contains administrative information for Sierra Leone at both national and provincial level. Additionally, the shapefile `sierra_leone_health_HOT.shp` provides information on various health facilities within the country, while the `sl-airports.csv` CSV-file offers information on airports.
 
-```{hint} Folder structure
+```{admonition} Folder structure
+:type: hint
 
-Keep your data management clean by creating a folder structure on your computer for your QGIS-projects and geodata. 
+Keep your data management clean by creating a [standard folder structure]() on your computer for your QGIS-projects and geodata. 
 The exercise data should be saved in a location where you can easily find them and the corresponding QGIS-project
 
 ```
@@ -135,7 +136,7 @@ The exercise data should be saved in a location where you can easily find them a
 ### Tasks
 
 1. Open the files you have downloaded in QGIS. 
-   - Unzip the folder with the exercise data. 
+   - __Unzip the folder__ with the exercise data. 
    - The geopackage (`.gpkg`) and shapefile (`.shp`) can be dragged and dropped onto the map canvas in QGIS. 
    - The .csv file needs to be imported via the layer menu.
       - Navigate to `Layer`> `Add Layer` > `Add delimited text layer`. A new window will open. Here you can select the file you want to import by clicking on `...` to the right of the __File name__  field at the top.

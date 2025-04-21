@@ -49,20 +49,18 @@ __Estimated time demand for the exercise__
 :::
 
 :::{grid-item-card}
-__Relevant Wiki Articles__
+__Relevant Wiki Articles__:
 ^^^
 
 * [QGIS Interface](/content/Wiki/en_qgis_interface_wiki.md)
 * [Types of Geodata](/content/Wiki/en_qgis_geodata_types_wiki.md)
 * [Geodata Import in QGIS](/content/Wiki/en_qgis_import_geodata_wiki.md)
 * [Layer Concept](/content/Wiki/en_qgis_layer_concept_wiki.md)
-* [Non-Spatial Querie](/content/Wiki/en_qgis_non_spatial_queries_wiki.md)
-* [Spatial Queries](/content/Wiki/en_qgis_spatial_queries_wiki.md)
-* [Table function - Add field](/content/Wiki/en_qgis_table_functions_wiki.md#add-field)
+* [Attribute table](/content/Wiki/en_qgis_attribute_table_wiki.md)
+* [Table function - Add field](/content/Wiki/en_qgis_table_functions_wiki.md)
 * [Geodata Classification- Categorized](/content/Wiki/en_qgis_categorized_wiki.md)
 * [Geodata Classification- Graduated](/content/Wiki/en_qgis_graduated_wiki.md)
-* [Digitisation- Point data](/content/Wiki/en_qgis_digitalization_wiki.md#add-geometries-to-a-layer)
-* [Geoprocessing - Clip](/content/Wiki/en_qgis_geoprocessing_wiki.md#clip) 
+* [Digitization- Point data](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#add-geometries-to-a-layer)
 
 :::
 

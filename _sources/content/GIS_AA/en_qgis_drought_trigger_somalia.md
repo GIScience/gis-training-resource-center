@@ -479,7 +479,7 @@ align: center
 ::::
 -->
 
-## Step 6.: Visualisation of results
+## Step 6: Visualisation of results
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_14_1.png
 ---
@@ -713,7 +713,7 @@ widht: 750 px
 
 As of may 2025, the trigger model uses the IPC Phase Classification analysis by the IPC and no longer by FEWSNET. 
 The data format has changed and the manual workflow no longer works as described below. 
-The updated workflow will be added soon. For now, please use the automated workflow above. 
+Due to differences in the data structure as well as the extent of the geometries, the manual workflow has changed considerably.
 
 :::
 
@@ -803,6 +803,48 @@ align: center
 
 ### IPC Data
 
+The IPC Projection data is provided and regularly updated on the [IPC Website](https://www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1159510/?iso3=SOM). 
+To navigate to the latest IPC Projection data on Somalia, navigate to `Latest Analyses` in the top bar > `IPC Analyses` > `Acute Food Insecurity Classification`. Here you look for the latest analysis for Somalia. 
+
+<!---```{Warning}
+The FEWSNET pages change often!
+```
+
+```{admonition} Updates to FEWSNET
+:class: warning
+
+As of December 2024, the FEWSNET Website does not offer the IPC data for ML1 and ML2 as two distinct shapefiles contained in a zip-file. Instead, you can download the GeoJSON-file, which contains a polygon layer with both the ML1 and ML2 polygons. The model and the documentation has been updated to work with the GeoJSON-file.
+
+```
+-->
+
+1. Go to the [IPC website](https://www.ipcinfo.org)
+2. In the top bar, navigate to `Latest Analyses` > `IPC Analyses` > `Acute Food Insecurity Classification`.
+3. On the new website, select Somalia as a country and select the newest dataset.
+4. On this website, you will see both a map of the current and the projected IPC phase classifications, as well as some metadata. On the right side of the map, click on the button `Download GIS format`. This will download the analysis in a GeoJSON format, containing polygons for the administrative boundaries and IPC phases, as well as points for the IPC phase classification for IDP camps. 
+
+
+```{figure} /fig/en_IPCinfo_website_dl_som.png
+---
+height: 350px
+name: IPCinfo_download_projections
+align: center
+---
+```
+
+4. Download the __GeoJSON file__. The filename is composed of the country name, the analysis type, and Year and month of publication. E.g., `Somalia-Acute Food Insecurity January 2025.geoJSON`
+
+:::{note}
+
+In some cases, your operating system (Windows) misidentifies the GeoJSON-file as a `.customization`-file. This does not change anything and can be loaded into your QGIS-project.
+
+:::
+
+5. Copy the GeoJSON-file into the input monitoring folder.
+  * Example path: `/FbF_Drought_Monitoring_Trigger/Input_monitoring/Year_Month_template/Somalia-Acute Food Insecurity January 2025.geoJSON`
+
+<!--- REMOVED OLD WORKFLOW WITH FEWSNET DATA
+
 The IPC Projection data is provided and regulary updated on the [FEWSNET Website](https://fews.net/).
 On the website you will have to click on Somalia to acess the data. Alternativley, you can  navigate through `Data` -> `Acute Food Insecurity Data` and enter „Somalia". In the menu you will see different dataformats for different timestamps. Once you find out which timestamp is the most current one find the ZIP download. We need the data in shapefile (.shp) format, which is only included in the ZIP file and not provided as single download file. 
 
@@ -872,6 +914,7 @@ name: FEWSNET Newsletter
 align: center
 ---
 ```
+-->
 
 ## Step 3: Loading data into QGIS
 
@@ -891,7 +934,7 @@ __Tool:__ No specific tools are needed, only QGIS.
 2. Once the project is created save the project in the folder you created in Step 1 (e.g. 2022_05). To do that click on `Project` -> `Save as` and navigate to the folder. Give the project the same name as the folder you created (e.g. 2022_05). Then click `Save`
 3. Load all input data in QGIS by [drag and drop](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-raster-data-via-drag-and-drop). Click on `Project` -> `Save` 
   * From the folder you created in step 1
-    * ML1 and ML2 (the GeoJSON-format contains both ML1 and ML2 in one layer)
+    * IPC Phase Classification
     * SPI-12
   * From the `Fixed_data` folder:
     * district_pop_som
@@ -906,6 +949,93 @@ This video shows how to setup the QGIS project for April 2022 and how to import 
 ```{dropdown} Video: Loading data into QGIS
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_3.mp4"></video>
 ```
+
+
+## Step 4: Formatting the ADM2-names
+
+
+```{figure}
+
+
+```
+
+__Purpose:__ The GeoJSON file from IPC contains a polygon layer that contains the administrative boundaries and the IPC phase for the current analysis (C) and the projection (P). However, it is all contained in one layer. To be able to perform our analysis steps, we need to prepare the data. In the column where the adm2-names are saved, there are several polygons with the same adm names, but have a "(1)" or "(2)" added at the end. We need to remove number in the parantheses so we can dissolve the polygons in the next step. 
+
+__Tool:__ Field Calculator
+
+`````{list-table}
+:header-rows: 1
+:widths: 20 25
+
+* - Instruction
+  - Field Calculator
+* - 1. Select the IPC Phase classification layer and open the [field calculator](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_non_spatial_tools.html#calculate-field)
+    2. Check the box `Update existing field` and select the field "area".
+    3. Enter the following expression in the expression box:
+    ```
+    replace(
+        replace(
+            replace(
+                replace(
+                    replace("area", ' (1)', ''),
+                    ' (2)', ''
+                ),
+                ' (3)', ''
+            ),
+            ' (4)', ''
+        ),
+        ' (5)', ''
+    )
+    ```
+    4. Click `Ok`. 
+  - 
+    ```{figure} /fig/drought_EAP_workflow_step_4_march2025.png
+    width: 450 px
+    align: center
+    ---
+    
+    ```
+`````
+
+## Step 5: Dissolving admin 2 polygons
+
+```{figure} /fig/ADD
+---
+
+```
+
+__Purpose:__ To get a layer of the administrative boundaries for the district, we need to dissolve the polygons  from the formatted layer from the previous step using the field "area". This will output one polygon per distinct "area" value. In other words a layer withe adm2 boundaries. 
+
+__Tool:__ Dissolve
+
+:::{note} 
+
+We cannot use a different polygon layer with the adm2 boundaries as we are calculating the population per polygon in the following steps and the polygons need to match exactly in order to get the correct population weighing. 
+
+:::
+
+`````{list-table}
+:header-rows: 1
+:widths: 20 25
+
+* - Instruction
+  - Dissolve
+* - 1. In the [processing toolbox](), search for "Dissolve". Click on it.
+    2. `Input Layer`: IPC Phase Classification (formatted as in step 4)
+    3. `Dissolve field(s)`: "area"
+    4. Click `Run`.
+  -
+    ```{figure} /fig/drought_EAP_workflow_step_5_march2025.png
+    ---
+    width: 450px
+    align: center
+    ---
+    ```
+`````
+
+## Step 6: Add population statistics to the adm2 layer
+
+__Purpose:__ For the calculation of the IPC index, we need to have the population per adm2 polygon. Using the worldpop raster layer, we can calculate the population 
 
 
 ## Step 4: Extracting ML1 and ML2 from the GeoJSON layer

@@ -685,9 +685,9 @@ document.write(`
 <h3>Available Data<a class="headerlink" href="#available-data" title="Permalink to this heading">#</a></h3>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover sd-text-center docutils">
 <div class="sd-card-body docutils">
-<p class="sd-card-text"><strong>Download all datasets <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_understanding_geodata.zip">here</a> and save the folder on your computer and unzip the file.</strong></p>
+<p class="sd-card-text"><strong>Download all datasets <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_Understanding_Geodata.zip">here</a> and unzip the folder.</strong></p>
 </div>
-<a class="sd-stretched-link reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_understanding_geodata.zip"></a></div>
+<a class="sd-stretched-link reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_Understanding_Geodata.zip"></a></div>
 <p>The zip folder includes:</p>
 <table class="table">
 <thead>
@@ -698,10 +698,10 @@ document.write(`
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Sierra_leone_border.gpkg</span></code> (MultiLineString)</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">sle_admbnda_adm0_adm1_gov_ocha.gpkg</span></code> (Polygons)</p></td>
+<td class="text-left"><p>Sierra Leone - Subnational Administrative Boundaries</p></td>
+<td class="text-left"><p>United Nations Office for the Coordination of Humanitarian Affairs (OCHA)</p></td>
+<td class="text-left"><p><a class="reference external" href="https://data.humdata.org/dataset/cod-ab-sle">HDX</a></p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">sierra_leone_health_HOT.shp</span></code> (Points)</p></td>
 <td class="text-left"><p>Sierra Leone Health Facilities (OpenStreetMap Export)</p></td>
@@ -715,20 +715,14 @@ document.write(`
 </tr>
 </tbody>
 </table>
-<p>The borders GeoPackage contains administrative information for Sierra Leone at both national and provincial level. Additionally, the shapefile <code class="docutils literal notranslate"><span class="pre">sierra_leone_health_HOT.shp</span></code> provides information on various health facilities within the country, while the <code class="docutils literal notranslate"><span class="pre">sl-airports.csv</span></code> CSV-file offers information on airports.</p>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p>Folder structure</p>
-<p>Keep your data management clean by creating a folder structure on your computer for your QGIS-projects and geodata.
-The exercise data should be saved in a location where you can easily find them and the corresponding QGIS-project</p>
-</div>
+<p>The GeoPackage <code class="docutils literal notranslate"><span class="pre">Sierra_leone_administrative_boundaries.gpkg</span></code> contains administrative information for Sierra Leone at both national and provincial level. Additionally, the shapefile <code class="docutils literal notranslate"><span class="pre">sierra_leone_health_HOT.shp</span></code> provides information on various health facilities within the country, while the <code class="docutils literal notranslate"><span class="pre">sl-airports.csv</span></code> CSV-file offers information on airports.</p>
 </section>
 <section id="tasks">
 <h3>Tasks<a class="headerlink" href="#tasks" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Open the files you have downloaded in QGIS.</p>
 <ul class="simple">
-<li><p>Unzip the folder with the exercise data.</p></li>
+<li><p><strong>Unzip the folder</strong> with the exercise data.</p></li>
 <li><p>The geopackage (<code class="docutils literal notranslate"><span class="pre">.gpkg</span></code>) and shapefile (<code class="docutils literal notranslate"><span class="pre">.shp</span></code>) can be dragged and dropped onto the map canvas in QGIS.</p></li>
 <li><p>The .csv file needs to be imported via the layer menu.</p>
 <ul>

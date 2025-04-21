@@ -166,3 +166,7 @@ Operational overview or response activity map (Source: [Shelter Cluster Vanuata]
 
 
 Now that we have covered what to keep in mind when designing maps, let's take a look at how to create maps with the print layout composer in QGIS.
+
+## Further Resources
+
+- [Data Visualization Accessibility Checklist](https://learn-sims.org/style-guidance/data-visualization-accessibility-checklist/)
