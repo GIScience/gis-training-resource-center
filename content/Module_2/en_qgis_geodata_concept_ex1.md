@@ -118,16 +118,17 @@ The zip folder includes:
 
 | Dataset name | Original title | Publisher | Downloaded from | 
 | :-------------- | :----------------- |:----------------- |:----------------- |
-| `Sierra_leone_border.gpkg` (MultiLineString) |  |  |  |
+| `sle_admbnda_adm0_adm1_gov_ocha.gpkg` (Polygons) | Sierra Leone - Subnational Administrative Boundaries | United Nations Office for the Coordination of Humanitarian Affairs (OCHA) | [HDX](https://data.humdata.org/dataset/cod-ab-sle) |
 | `sierra_leone_health_HOT.shp` (Points) | Sierra Leone Health Facilities (OpenStreetMap Export) | Humanitarian OpenStreetMap Team (HOT) | [HDX](https://data.humdata.org/dataset/hotosm_sle_health_facilities) | 
 | `sl-airports.csv` (CSV) | Airports in Sierra Leone | Our Airports | [HDX](https://data.humdata.org/dataset/ourairports-sle) | 
 
 
-The borders GeoPackage contains administrative information for Sierra Leone at both national and provincial level. Additionally, the shapefile `sierra_leone_health_HOT.shp` provides information on various health facilities within the country, while the `sl-airports.csv` CSV-file offers information on airports.
+The GeoPackage `Sierra_leone_administrative_boundaries.gpkg` contains administrative information for Sierra Leone at both national and provincial level. Additionally, the shapefile `sierra_leone_health_HOT.shp` provides information on various health facilities within the country, while the `sl-airports.csv` CSV-file offers information on airports.
 
-```{hint} Folder structure
+```{admonition} Folder structure
+:type: hint
 
-Keep your data management clean by creating a folder structure on your computer for your QGIS-projects and geodata. 
+Keep your data management clean by creating a [standard folder structure]() on your computer for your QGIS-projects and geodata. 
 The exercise data should be saved in a location where you can easily find them and the corresponding QGIS-project
 
 ```
