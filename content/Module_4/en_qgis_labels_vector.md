@@ -192,3 +192,7 @@ You can also read further in the article "[Labeling and text hierarchy in cartog
 
 
 :::
+
+## Further Resources
+
+- [IFRC brand-compliant fonts](https://learn-sims.org/style-guidance/standard-fonts/)
