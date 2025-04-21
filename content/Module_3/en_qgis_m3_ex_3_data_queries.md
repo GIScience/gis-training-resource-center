@@ -4,17 +4,24 @@
 :link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
+
 :::{grid-item-card}
-:class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_exercises.html 
-{octicon}`undo;1.5em;sd-text-danger`
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_exercises.html
+
+__Click here to return to the exercise overview for module 3.__ 
 :::
 ::::
 
-
 # Exercise 3: Data Queries
 
-## Aim of the exercise
+## Characteristics of the exercise
+
+:::{topic}
+__Aim of the exercise:__
+^^^
+The aim of this exercise is to learn how to manipulate secondary data to generate insights. In this exercise, we will determine which buildings have been affected by a flood and apply a filter to determine which buildings are part of the critical infrastructure. 
+:::
+
 
 ### Links to Wiki articles
 
@@ -60,32 +67,37 @@ The naming of the districts and states is not consistent across the different da
 Make sure you __unzip__ the exercise folder before loading the layers into QGIS. QGIS does not accept compressed files.
 ```
 
+### Extract the district (adm2) from the administrative boundaries layer
+
 4. First, we want to export the district __Beledweyne__ from the Hiraan region from `som_admbnda_adm2_ocha_20230308.shp` to have it as a stand-alone vector layer. To do that:
     1. Open the attribute table of `som_admbnda_adm2_ocha_20230308.shp` by right clicking on the layer  --> `Open Attribute Table`([Wiki Video](/content/Wiki/en_qgis_attribute_table_wiki.md)).
     2. Find the row of `Belet Weyne` and mark it by clicking on the number on the very left-hand side of the attribute table. The row will be highlighted in blue and the district will turn yellow on the map canvas. You can right-click on the row and click `Zoom to Feature`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature)).
     3. Now right-click on the layer in the Layer Panel and click on `Export` -> `Save Selected Features as`. We want to save Beledweyne as a GeoPackage, so adjust `Format` accordingly. Click on the three points and navigate to your **temp folder**. Here you can give the layer the name **AOI_Beledweyne** and click `Save`. Now click `OK`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_queries_wiki.html#save-selected-features-as-a-new-file)). In this exercise, we will not reproject the layers and work with the data in `ESPG:4326 - WGS84`.
 
+### Identify the building that might be affected by the flooding
+
 5. In the following steps, we want to identify all buildings that are likely to be affected by the recent flooding. To do that we will use the tool `Extract by Location`.
-    1. In the `Processing Toolbox` --> Search for `Extract by Location`
-    2. `Extract features from`: Buildings_Belete_Weyne.geojson
-    3. `Where the features (geometric predicate)`: `are within`
-    4. `By comparing to the features from`: GF2_20231123_FloodExtent_BeledweyneCity_HiraanRegion.shp
+    ```{figure} /fig/Extract_by_location_Belet_Weyne.png
+    ---
+    width: 500 px
+    name: extract_by_location
+    align: center
+    ---
+    The extract by extraction window in QGIS 3.36
+    ```
+    1. In the __"Processing Toolbox"__ --> Search for `Extract by Location`
+    2. __"Extract features from"__: `Buildings_Belete_Weyne.geojson`
+    3. __"Where the features (geometric predicate)"__: `are within`
+    4. __"By comparing to the features from"__: `GF2_20231123_FloodExtent_BeledweyneCity_HiraanRegion.shp`
     5. Under `Extracted` click on the three points ![](/fig/Three_points.png) --> `Save to File...` and navigate to your **temp folder** and save the new layer under the name **Beledweyne_buildings_affected** and click `Save`. 
-    6. Now click `Run`
+    6. Now, click `Run`.
     7. Adjust your layers in a way that you only see the flooded areas and your new layer **Beledweyne_buildings_affected**. Remove the `som_admbnda_adm2_ocha_20230308.shp` and `Buildings_Belete_Weyne.geojson` layer.
 
     ```{Attention}
     The tool [`Select by Location`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_queries_wiki.html#select-by-location) is very similar. This tool functions in the same way, but instead of directly extracting the features, it selects them.
     ```
 
-```{figure} /fig/Extract_by_location_Belet_Weyne.png
----
-width: 500 px
-name: extract_by_location
-align: center
----
-The extract by extraction window in QGIS 3.36
-```
+### Identify critical infrastructure affected by the floods
 
 6. In the next step, we want to identify special buildings among the affected buildings. Open the attribute table and check what kind of buildings can be found in the layer. This information can be found in the column "building". You can sort this column.
 To extract "hospitals", "schools", and "mosques", we can use the tool `Extract by Expression`.
@@ -129,3 +141,10 @@ A temporary layer will not be saved to your QGIS-project, even after saving the 
 Congratulations! The extracted information can now be used to perform further analyses or create comprehensive maps of the affected points of interest. 
 
 <!--ADD picture of this step-->
+
+```{note}
+This exercise has an optional part 2 in module 4, covering the visualisation of the processed data. 
+
+You can find the exercise [here].
+
+```
