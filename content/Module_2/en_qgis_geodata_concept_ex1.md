@@ -108,9 +108,9 @@ __Wrap up:__
 
 :::{card}
 :class-card: sd-text-center
-:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_understanding_geodata.zip
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_Understanding_Geodata.zip
 
-__Download all datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_understanding_geodata.zip) and save the folder on your computer and unzip the file.__
+__Download all datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_Understanding_Geodata.zip) and unzip the folder.__
 
 :::
 
@@ -136,7 +136,7 @@ The exercise data should be saved in a location where you can easily find them a
 ### Tasks
 
 1. Open the files you have downloaded in QGIS. 
-   - Unzip the folder with the exercise data. 
+   - __Unzip the folder__ with the exercise data. 
    - The geopackage (`.gpkg`) and shapefile (`.shp`) can be dragged and dropped onto the map canvas in QGIS. 
    - The .csv file needs to be imported via the layer menu.
       - Navigate to `Layer`> `Add Layer` > `Add delimited text layer`. A new window will open. Here you can select the file you want to import by clicking on `...` to the right of the __File name__  field at the top.
