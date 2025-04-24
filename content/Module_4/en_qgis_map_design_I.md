@@ -245,7 +245,7 @@ In humanitarian action, choropleth maps or graduated symbol maps are used to:
 
 ---
 
-# Symbology and styling
+## Symbology and styling
 
 Depending on the use case and type of geodata at your disposal, there are multiple ways to visualise geodata in a 
 comprehensive format. For example, you can:
