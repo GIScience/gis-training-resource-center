@@ -29,7 +29,7 @@ values and see their spatial distribution.
 | __[Chapter 2: Geodata Classification](/content/Module_3/en_qgis_data_classification.md)__ | At the end of this chapter, you should: Know how to classify geodata in order to gain useful insights; Know how and when to use categorised classification; Know how and when to use graduated classification. |
 | __[Chapter 3: Geodata Selection and Queries](/content/Module_3/en_qgis_data_queries.md)__ | At the end of this chapter, you should: Know how to select features manually; Know how to select features based on attributes; Know how to formulate a data query with the Expression builder; Know how to select features by location; Know the geometric operators. | 
 | __[Chapter 4: Georeferencing](/content/Module_3/en_qgis_georeferencing.md)__ | At the end of this chapter, you should: Know how to georeference a map in QGIS; know how to set the transparency of a georeferenced (raster) layer; Know how to digitise vector features from a georeferenced map. | 
-| __[Exercises for Module 3](/content/Module_3/en_qgis_module_3_exercises.md)__ | Here, you can find all the exercises for module 3. | 
+| __[Exercises for Module 3](/content/Module_3/en_qgis_module_3_exercises.md)__ | Here you can find all the exercises for module 3. | 
 
 
 <!--ADD: after revamp of chapter 2 this needs to be adjusted-->
