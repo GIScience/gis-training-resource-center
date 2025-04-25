@@ -18,7 +18,7 @@ These exercises touch on all the content of module 5.
 | __[Exercise 3: Trigger & Intervention Map for Forecast-based-Action](/content/Module_5/en_qgis_module_5_ex3.md)__ | This exercise is based on the monitoring and triggering process used by the Somalia Red Cresent Society (SRCS) in the framework of a drought Early Action Protocol (EAP). In this exercise, you will build a simplified version of the monitoring and trigger mechanism for the FEWSNET projection pillar. | Data analysis, Early Action Protocol, Monitoring & Triggering | 6 hours |
 | __[Exercise 4: Security Peshawar](/content/Module_5/en_qgis_module_5_ex4.md)__ |  | Data analysis | 3 hours | 
 | __[Exercise 5: Aggregate and Assess G2P Money Transfers in Pakistan](/content/Module_5/en_qgis_module_5_ex5.md)__ | The exercise teaches how to aggregate data on administrative levels and subsequently join the aggregated data with a polygon dataset. | Data analysis and creating reports | 60 minutes |
-| __[Exercise 6: Calculate sum of affected population and flooded area for the Area of interest](/content/Module_5/en_qgis_module_5_ex6.md)__ | The exercise teaches you how to perform a spatial join and create statistics based on the attributes. | Data analysis | 45-60 minutes | 
+<!---| __[Exercise 6: Calculate sum of affected population and flooded area for the Area of interest](/content/Module_5/en_qgis_module_5_ex6.md)__ | The exercise teaches you how to perform a spatial join and create statistics based on the attributes. | Data analysis | 45-60 minutes | -->
 | __[Exercise 7: Data cleaning](/content/Module_5/en_qgis_data_preparation_ex.md)__ | | | | 
 
 
