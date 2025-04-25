@@ -94,7 +94,7 @@ Infrastructure Map Kunduz Province
 
 <!---ADD: Insert Image examples for these errors-->
 
-### 1. The Modifiable Areal Unit Problem
+### The Modifiable Areal Unit Problem
 
 ```{caution}
 Be careful when representing data in administrative regions. 
@@ -130,7 +130,7 @@ width: 500 px
 Visualising the Modifiable Areal Unit Problem: The same indicator represented at three different scales (Source: Kitchin, Rob & Lauriault, Tracey & McArdle, Gavin. (2015). Knowing and governing cities through urban indicators, city benchmarking and real-time dashboards. Regional Studies, Regional Science. 2. 6-28. 10.1080/21681376.2014.983149. )
 ```
 
-### 2. Proportional circles vs. solid colors
+### Proportional circles vs. solid colors
 
 ```{caution}
 Be cautious when representing __quantitative__ data with a __solid colour__.
@@ -145,7 +145,7 @@ While it is graphically appealing, representing quantitative data with solid col
 
 <!---Add example-->
 
-### 3. Color gradient vs. distinct color palette
+### Color gradient vs. distinct color palette
 
 ```{caution}
 DO NOT use a __separate__ colour palette to represent __ordered entities__
@@ -158,7 +158,7 @@ It is a mistake because:
 - By using a differentiating colour variable, __you lose the ordinal relationship between entities__. Instead, a __gradient of the same colour__ that should be used.
 - Different colours are used to differentiate between distinct entities.
 
-### 4. Gradient in a single colour vs. Gradient between two colours
+### Gradient in a single colour vs. Gradient between two colours
 
 ```{Caution}
 Be cautious when using a __gradient across two different colours__ for data that is __always positive__ (or negative).
@@ -176,7 +176,7 @@ It is a mistake because:
 - The map will send a message of divergence, of opposition between certain values, when we are simply trying to represent a hierarchy between values
 - In this way, the colour itself directly indicates information about the trend (positive/negative or increasing/decreasing).
 
-### 5. Limited geometric symbols vs. complex icons and symbols
+### Limited geometric symbols vs. complex icons and symbols
 
 ```{Caution}
 DO NOT use __too many symbols__ in a thematic map
