@@ -653,32 +653,10 @@ The plugin will provide the user with two outputs. The Risk Assessment results o
 </section>
 <section id="weights-file">
 <h3>Weights-file<a class="headerlink" href="#weights-file" title="Permalink to this heading">#</a></h3>
-<p>A “csv”-file containing a column “variable_name” with all the column names of the previous “csv”-files, which are to be weighted differently in the calculation. A factor for “weight” and “direction” can be determined.</p>
+<p>A “csv”-file containing a column “variable_name” with all the column names of the previous “csv”-files, which are to be weighted differently in the calculation. The file must also contain the columns “category”, “weight” and “direction”. The category column indicates the category of the indicator: “exp” for exposure, “cop” for coping capacity and “vul” for vulnerability. The weight determines the importance of each indicator. For each category (exp, cop and vul), the sum of the weights must add up to 1. If this is not the case, the plugin will automatically normalize the weights in order to make the sum equal to 1 within each category. A message will be printed with the value of the transformed weights. For more information about weights and directions see chapter weight and directions.</p>
 <figure class="align-center" id="weights-example">
 <a class="reference internal image-reference" href="../../_images/weights_example.PNG"><img alt="../../_images/weights_example.PNG" src="../../_images/weights_example.PNG" style="height: 400px;" /></a>
 </figure>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p>The column name must be given the appropriate prefix (vul_, cop_, exp_) depending on which dimension it comes from. The file must also contain the columns “weight” and “direction”, which indicate the weight and direction of the variable (e.g. schools = cop_schools). For more information about weights and directions see chapter weight and directions..</p>
-</div>
-<table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Dimension</p></th>
-<th class="head"><p>Prefix</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Exposure</p></td>
-<td><p>exp_</p></td>
-</tr>
-<tr class="row-odd"><td><p>Vulnerability</p></td>
-<td><p>vul_</p></td>
-</tr>
-<tr class="row-even"><td><p>Coping Capacity</p></td>
-<td><p>cop_</p></td>
-</tr>
-</tbody>
-</table>
 </section>
 <section id="data-output">
 <h3>Data Output<a class="headerlink" href="#data-output" title="Permalink to this heading">#</a></h3>
@@ -766,6 +744,7 @@ Nevertheless, we recommend the following weights structure ranging between less 
 </tr>
 </tbody>
 </table>
+<p>For each category, the sum of the weights must add up to 1. If not, the plugin will automatically normalize the weights in order to make the sum equal to 1 among weights belonging to the same category (exp cop and vul respectively).</p>
 <p><strong>Directions</strong></p>
 <p>The direction indicates if an indicator follows the predefined logic: “the higher the value, the worse the circumstances” meaning that higher values would result in a higher risk. The logic is adapted for all three dimensions, since it is generally logical to think about high values = high risk.
 If a respective indicator follows the logic the direction would be 1(default), if it does not, the direction would be = -1.</p>

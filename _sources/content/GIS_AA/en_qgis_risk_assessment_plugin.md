@@ -117,7 +117,7 @@ align: center
 
 ### Weights-file
 
-A "csv"-file containing a column "variable_name" with all the column names of the previous "csv"-files, which are to be weighted differently in the calculation. A factor for “weight” and “direction” can be determined. 
+A "csv"-file containing a column "variable_name" with all the column names of the previous "csv"-files, which are to be weighted differently in the calculation. The file must also contain the columns “category”, “weight” and “direction”. The category column indicates the category of the indicator: “exp” for exposure, “cop” for coping capacity and “vul” for vulnerability. The weight determines the importance of each indicator. For each category (exp, cop and vul), the sum of the weights must add up to 1. If this is not the case, the plugin will automatically normalize the weights in order to make the sum equal to 1 within each category. A message will be printed with the value of the transformed weights. For more information about weights and directions see chapter weight and directions.
 
 ```{figure} /fig/weights_example.PNG
 ---
@@ -126,16 +126,6 @@ name: weights_example
 align: center
 ---
 ```
-
-```{attention} 
-The column name must be given the appropriate prefix (vul_, cop_, exp_) depending on which dimension it comes from. The file must also contain the columns "weight" and "direction", which indicate the weight and direction of the variable (e.g. schools = cop_schools). For more information about weights and directions see chapter weight and directions..
-```
-
-| Dimension| Prefix | 
-| ----- | --- | 
-|Exposure| exp_|
-|Vulnerability| vul_| 
-|Coping Capacity|cop_|
 
 
 ### Data Output
@@ -205,6 +195,8 @@ Nevertheless, we recommend the following weights structure ranging between less 
 |0.5|Moderately Important|
 |0.75|Fairly Important|
 |1|Very Important|
+
+For each category, the sum of the weights must add up to 1. If not, the plugin will automatically normalize the weights in order to make the sum equal to 1 among weights belonging to the same category (exp cop and vul respectively).
 
 
 __Directions__
