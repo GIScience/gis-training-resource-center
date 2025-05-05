@@ -92,19 +92,19 @@ align: center
 
 The required input files must follow a given structure. You find below  the required input files to conduct the risk assessment and specifications they must follow:
 
-### 1. Administrative boundaries level 2
+### 1. Administrative boundaries 
 
-A geospatial vector format (geojson, geopackage, shapefile,…) containing the administrative boundaries on admin level 2 and P-Codes of the respective countries. These can be found on the websites of national governments or on Humanitarian Data Exchange, for example. This dataset has two obligatory columns: “ADM2_PCODE” containing the P_Codes and “ADM2_EN” containing the district names. The administrative boundary data does not require a specific coordinate reference system (CRS), but the output and result will have the same CRS as the input.
+A geospatial vector format (geojson, geopackage, shapefile,…) containing the administrative boundaries and P-Codes of the respective countries. These can be found on the websites of national governments or on Humanitarian Data Exchange, for example. This dataset has two obligatory columns: “ADM_PCODE” containing the P_Codes and “ADM_EN” containing the names of the administrative boundaries. The administrative boundary data does not require a specific coordinate reference system (CRS), but the output and result will have the same CRS as the input.
 
 ### 2. Risk Assessment indicators
 
 For the Risk Assessment indicators the following 3 “csv”-files are mandatory:
 
-a) __Exposure indicators:__ A "csv"-file containing a mandatory column "ADM2_PCODE" with the district codes and all columns that are included in the calculation of the exposure-indicator. All columns that are not included in the calculation must start with the expression "ADM..." (for example “ADM_NAMES”)./
+a) __Exposure indicators:__ A "csv"-file containing a mandatory column "ADM_PCODE" with the P_codes of the administrative boundaries and all columns that are included in the calculation of the exposure-indicator. All columns that are not included in the calculation must start with the expression "ADM..." (for example “ADM_NAMES”)./
 
-b.) __Vulnerability indicators:__ A "csv"-file containing a mandatory column "ADM2_PCODE" with the district codes and all columns that are included in the calculation of the vulnerability-indicator. All columns that are not included in the calculation must start with the expression "ADM..."./
+b.) __Vulnerability indicators:__ A "csv"-file containing a mandatory column "ADM_PCODE" with the P_codes of the administrative boundaries and all columns that are included in the calculation of the vulnerability-indicator. All columns that are not included in the calculation must start with the expression "ADM..."./
 
-c) __Coping Capacity indicators:__ A "csv"-file containing a mandatory column "ADM2_PCODE" with the district codes and all columns that are included in the calculation of the coping-indicator. All columns that are not included in the calculation must start with the expression "ADM...".
+c) __Coping Capacity indicators:__ A "csv"-file containing a mandatory column "ADM_PCODE" with the P_codes of the administrative boundaries and all columns that are included in the calculation of the coping-indicator. All columns that are not included in the calculation must start with the expression "ADM...".
 
 
 ```{figure} /fig/Indicators_Vulnerability.png
@@ -172,7 +172,7 @@ align: center
 ### Data Output
 
 The plugin provides the user with the following output:
-Geospatial data format to be chosen by user (geojson, shapefile, geopackage) with admin level 2 boundaries for the respective country including the following values for each admin level 2 polygon:
+Geospatial data format to be chosen by user (geojson, shapefile, geopackage) with the administrative boundaries for the respective country including the following values for each polygon:
 
 - P-Code
 - Region name
@@ -191,7 +191,7 @@ The output data will contain No Data Values. By default in QGIS these Values are
 ## Methodology
 
 The methodology for the Risk Calculation is based on [Weltrisikoindex](https://weltrisikobericht.de/) and is also inspired by the [INFORM Risk framework](drmkc.jrc.ec.europa.eu/inform-index/INFORM-Risk/Methodology). The basic model of the WorldRiskIndex with its modular structure was developed jointly with the United Nations University Institute for Environment and Human Security (UNU-EHS). Since 2018, the Institute for International Law of Peace and Humanitarian Law (IFHV) at the Ruhr University Bochum has taken over the calculation and continuously developed the model conceptually and methodologically.
-In the context of this analysis, risk is defined as the interaction of the two dimensions of exposure and susceptibility, which arises only where the two spheres meet. In this respect, risk is only present where there are hazards from extreme natural events and where populations without sufficient resilience, coping or adaptation capacities live in these hazard areas. The risk assessment is conducted on admin level 2, so it can easily be summed up on coarser levels.
+In the context of this analysis, risk is defined as the interaction of the two dimensions of exposure and susceptibility, which arises only where the two spheres meet. In this respect, risk is only present where there are hazards from extreme natural events and where populations without sufficient resilience, coping or adaptation capacities live in these hazard areas. 
 
 
 ### Transformation by Population
