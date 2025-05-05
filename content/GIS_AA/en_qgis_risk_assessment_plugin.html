@@ -544,7 +544,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology">Methodology</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normalization">Normalization</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#indicator-normalization">Indicator normalization</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imputation">Imputation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#weights-and-directions">Weights and Directions</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#risk">Risk</a></li>
@@ -681,13 +681,10 @@ Geospatial data format to be chosen by user (geojson, shapefile, geopackage) wit
 <h2>Methodology<a class="headerlink" href="#methodology" title="Permalink to this heading">#</a></h2>
 <p>The methodology for the Risk Calculation is based on <a class="reference external" href="https://weltrisikobericht.de/">Weltrisikoindex</a> and is also inspired by the <span class="xref myst">INFORM Risk framework</span>. The basic model of the WorldRiskIndex with its modular structure was developed jointly with the United Nations University Institute for Environment and Human Security (UNU-EHS). Since 2018, the Institute for International Law of Peace and Humanitarian Law (IFHV) at the Ruhr University Bochum has taken over the calculation and continuously developed the model conceptually and methodologically.
 In the context of this analysis, risk is defined as the interaction of the two dimensions of exposure and susceptibility, which arises only where the two spheres meet. In this respect, risk is only present where there are hazards from extreme natural events and where populations without sufficient resilience, coping or adaptation capacities live in these hazard areas.</p>
-<section id="normalization">
-<h3>Normalization<a class="headerlink" href="#normalization" title="Permalink to this heading">#</a></h3>
-<p>Throughout the risk calculation values need to be normalized at two points: First the indicators must be normalized in order to calculate the scores for the three dimensions vulnerability, coping capacity and exposure and these resulting scores must be normalized in order to process them further into a risk score.</p>
-<p><strong>Indicator normalization</strong></p>
-<p>Depending on the context and content of the data, the value range of the indicators is wide. In order to make them comparable, in a first step all indicators are normalized to a value range between 0 to 1. Each value is scaled so that the minimum value in the series becomes 0, and the maximum value becomes 1. Values in between are linearly scaled based on their position within the range. A common Min-Max Normalization is used:</p>
+<section id="indicator-normalization">
+<h3>Indicator normalization<a class="headerlink" href="#indicator-normalization" title="Permalink to this heading">#</a></h3>
+<p>Depending on the context and content of the data, the value range of the indicators is wide. In order to make them comparable, all indicators are normalized to a value range between 0 to 1. Each value is scaled so that the minimum value in the series becomes 0, and the maximum value becomes 1. Values in between are linearly scaled based on their position within the range. A common Min-Max Normalization is used:</p>
 <p><span class="math notranslate nohighlight">\( Normalized\ Value\ = \frac{value\ -\ min value}{max\ value \ - \ min } \)</span></p>
-<p>The second normalization takes place when the scores need to be normalized in order to calculate the final risk score (see section Score Normalization).</p>
 </section>
 <section id="imputation">
 <h3>Imputation<a class="headerlink" href="#imputation" title="Permalink to this heading">#</a></h3>
@@ -784,9 +781,6 @@ The weighted score for a specific variable is calculated using the following for
 <p>The second formula inverts the value <span class="math notranslate nohighlight">\((1 - value)\)</span> before applying the weight, resulting in a different calculation for variables with negative weights.\</p>
 <p>After considering weights and directions, the weighted variables are summed up to scores for each dimension (Exposure, Vulnerability, Lack of Coping Capacity):</p>
 <p><span class="math notranslate nohighlight">\( score=   \sum weighted\ values \)</span></p>
-<p><strong>Scores normalization</strong></p>
-<p>After the calculation of the scores, they are normalized based on the number of indicators they consist of (see 2nd normalization in chapter Normalization 5.1). This makes the scores relative to the number of indicators:</p>
-<p><span class="math notranslate nohighlight">\( normalized \ scores =  \frac {scores}{number of indicators} \)</span></p>
 <p><strong>Calculation of risk</strong></p>
 <p>The risk is calculated by the geometric mean of the dimensions Exposure and Susceptibility, while Susceptibility is defined by the geometric mean of Vulnerability and the Lack of Coping Capacity. The geometric mean is chosen since it offers the advantage of rewarding balanced developments and equal reduction of deficits at all levels of the model:</p>
 <p><span class="math notranslate nohighlight">\( susceptibility =   \sqrt vulnerability  \times lack\ of\ coping\ capacity \)</span></p>
@@ -883,7 +877,7 @@ In general, many input files are required to use the plugin, which makes it high
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology">Methodology</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normalization">Normalization</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#indicator-normalization">Indicator normalization</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imputation">Imputation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#weights-and-directions">Weights and Directions</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#risk">Risk</a></li>
