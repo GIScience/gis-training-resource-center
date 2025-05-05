@@ -540,13 +540,10 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#administrative-boundaries">1. Administrative boundaries</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-assessment-indicators">2. Risk Assessment indicators</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#weights-file">Weights-file</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transform-file">Transform-file</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#population-file">Population-file</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-output">Data Output</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology">Methodology</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformation-by-population">Transformation by Population</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normalization">Normalization</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imputation">Imputation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#weights-and-directions">Weights and Directions</a></li>
@@ -629,7 +626,7 @@ you can also search for “Risk Assessment” using the Search function of the P
 </section>
 <section id="user-interface">
 <h2>User Interface<a class="headerlink" href="#user-interface" title="Permalink to this heading">#</a></h2>
-<p>The plugin needs 7 inputs, from which 6 are csv text files and 1 is a vector file. The input of these 7 files is mandatory. The majority of the files can be produced and adjusted in Excel. This allows for flexibility to adjust input to local contexts.
+<p>The plugin needs 5 inputs, from which 4 are csv text files and 1 is a vector file. The input of these 5 files is mandatory. The majority of the files can be produced and adjusted in Excel. This allows for flexibility to adjust input to local contexts.
 The requested input information can be browsed for via the button on the right. These files need to be present on the user’s computer.
 It is important to follow the input file specifications exactly (see chapter 4.1.).
 The plugin will provide the user with two outputs. The Risk Assessment results on the administrative boundaries as a vector file containing geometries ready to be displayed in QGIS and the Risk Assessment results in a table format. The desired data format of the vector and text outputs can be chosen during the saving process.</p>
@@ -683,24 +680,6 @@ The plugin will provide the user with two outputs. The Risk Assessment results o
 </tbody>
 </table>
 </section>
-<section id="transform-file">
-<h3>Transform-file<a class="headerlink" href="#transform-file" title="Permalink to this heading">#</a></h3>
-<p>A “csv”-file containing a column “variable_name” with all the column names of the previous “csv”-files, that are to be divided by population.</p>
-<figure class="align-center" id="transfrom-example">
-<a class="reference internal image-reference" href="../../_images/transfrom_example.png"><img alt="../../_images/transfrom_example.png" src="../../_images/transfrom_example.png" style="height: 400px;" /></a>
-</figure>
-<p>The transform-file is used to offset certain indicators against the worldpop population. The column “variable_name” provides names of the indicator columns of the indicator files of one of the dimension exposure, vulnerability or coping capacity,  that are to be divided by population. These variables are existent, they must be consistent with the respective variable names in the indicator input or population “csv”-files.
-The column “new_name” provides the name of the column with the transformed values. It is important to aggregate the prefix describing the dimension it comes from (vul_, exp_, cop_). The column “factor” (default to 1) provides the factor by which the specific indicator value will be divided.
-Example: if you assign the indicator „healthsites“  the factor 1 it will give you a value on how many healthsites the admin district has per person. Assigning the factor 10.000 will result in the number of healthsites per 10.000 inhabitants.</p>
-</section>
-<section id="population-file">
-<h3>Population-file<a class="headerlink" href="#population-file" title="Permalink to this heading">#</a></h3>
-<p>The required “csv”-file containing population information based on <a class="reference external" href="https://hub.worldpop.org/geodata/listing?id=65">Worldpop Sex &amp; Age 2020</a> will be provided globally on admin level 2 with this plugin in the near future. To use the experimental plugin, please contact HeiGIT so that HeiGIT can provide the “csv”-file for your country.
-Alternatively, the population-file can also be created independently according to the following pattern. The “csv”-file based on the worldpop data contains the following columns (see Fig. 5), where the columns  “ADM2_PCODE” and “wpop_total” are mandatory and names cannot be changed. All other columns can be adjusted, but they need to be picked up and be consistent with the variable names in the Transform-file. This means that a population “csv”-file can be generated based on other available population data by the user as long as the two former mentioned columns exist.</p>
-<figure class="align-center" id="tpopulationfile-example">
-<a class="reference internal image-reference" href="../../_images/populationfile_example.png"><img alt="../../_images/populationfile_example.png" src="../../_images/populationfile_example.png" style="width: 500px;" /></a>
-</figure>
-</section>
 <section id="data-output">
 <h3>Data Output<a class="headerlink" href="#data-output" title="Permalink to this heading">#</a></h3>
 <p>The plugin provides the user with the following output:
@@ -724,11 +703,6 @@ Geospatial data format to be chosen by user (geojson, shapefile, geopackage) wit
 <h2>Methodology<a class="headerlink" href="#methodology" title="Permalink to this heading">#</a></h2>
 <p>The methodology for the Risk Calculation is based on <a class="reference external" href="https://weltrisikobericht.de/">Weltrisikoindex</a> and is also inspired by the <span class="xref myst">INFORM Risk framework</span>. The basic model of the WorldRiskIndex with its modular structure was developed jointly with the United Nations University Institute for Environment and Human Security (UNU-EHS). Since 2018, the Institute for International Law of Peace and Humanitarian Law (IFHV) at the Ruhr University Bochum has taken over the calculation and continuously developed the model conceptually and methodologically.
 In the context of this analysis, risk is defined as the interaction of the two dimensions of exposure and susceptibility, which arises only where the two spheres meet. In this respect, risk is only present where there are hazards from extreme natural events and where populations without sufficient resilience, coping or adaptation capacities live in these hazard areas.</p>
-<section id="transformation-by-population">
-<h3>Transformation by Population<a class="headerlink" href="#transformation-by-population" title="Permalink to this heading">#</a></h3>
-<p>By means of the Population-file the user is enabled to create population based indicators and to offset certain indicators with the population numbers. By indicating an existing indicator, creating a new name and setting a factor, the variables are offset in the following manner:</p>
-<p><span class="math notranslate nohighlight">\( new\ Indicator=   \frac{indicators\ to\ be\ transformed}{Total\ Population} \times factor\)</span></p>
-</section>
 <section id="normalization">
 <h3>Normalization<a class="headerlink" href="#normalization" title="Permalink to this heading">#</a></h3>
 <p>Throughout the risk calculation values need to be normalized at two points: First the indicators must be normalized in order to calculate the scores for the three dimensions vulnerability, coping capacity and exposure and these resulting scores must be normalized in order to process them further into a risk score.</p>
@@ -926,13 +900,10 @@ In general, many input files are required to use the plugin, which makes it high
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#administrative-boundaries">1. Administrative boundaries</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-assessment-indicators">2. Risk Assessment indicators</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#weights-file">Weights-file</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transform-file">Transform-file</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#population-file">Population-file</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-output">Data Output</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology">Methodology</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformation-by-population">Transformation by Population</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normalization">Normalization</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imputation">Imputation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#weights-and-directions">Weights and Directions</a></li>

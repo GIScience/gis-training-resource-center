@@ -73,7 +73,7 @@ For further information about installation and usage of plugins visit the [QGIS 
 
 ## User Interface
 
-The plugin needs 7 inputs, from which 6 are csv text files and 1 is a vector file. The input of these 7 files is mandatory. The majority of the files can be produced and adjusted in Excel. This allows for flexibility to adjust input to local contexts.
+The plugin needs 5 inputs, from which 4 are csv text files and 1 is a vector file. The input of these 5 files is mandatory. The majority of the files can be produced and adjusted in Excel. This allows for flexibility to adjust input to local contexts.
 The requested input information can be browsed for via the button on the right. These files need to be present on the user's computer.
 It is important to follow the input file specifications exactly (see chapter 4.1.).
 The plugin will provide the user with two outputs. The Risk Assessment results on the administrative boundaries as a vector file containing geometries ready to be displayed in QGIS and the Risk Assessment results in a table format. The desired data format of the vector and text outputs can be chosen during the saving process. 
@@ -138,37 +138,6 @@ The column name must be given the appropriate prefix (vul_, cop_, exp_) dependin
 |Coping Capacity|cop_|
 
 
-### Transform-file
-
-A "csv"-file containing a column "variable_name" with all the column names of the previous "csv"-files, that are to be divided by population.
-
-
-```{figure} /fig/transfrom_example.png
----
-height: 400px
-name: transfrom_example
-align: center
----
-```
-
-The transform-file is used to offset certain indicators against the worldpop population. The column “variable_name” provides names of the indicator columns of the indicator files of one of the dimension exposure, vulnerability or coping capacity,  that are to be divided by population. These variables are existent, they must be consistent with the respective variable names in the indicator input or population "csv"-files.
-The column “new_name” provides the name of the column with the transformed values. It is important to aggregate the prefix describing the dimension it comes from (vul_, exp_, cop_). The column "factor" (default to 1) provides the factor by which the specific indicator value will be divided. 
-Example: if you assign the indicator „healthsites“  the factor 1 it will give you a value on how many healthsites the admin district has per person. Assigning the factor 10.000 will result in the number of healthsites per 10.000 inhabitants.
-
-### Population-file
-
-The required "csv"-file containing population information based on [Worldpop Sex & Age 2020](https://hub.worldpop.org/geodata/listing?id=65) will be provided globally on admin level 2 with this plugin in the near future. To use the experimental plugin, please contact HeiGIT so that HeiGIT can provide the "csv"-file for your country. 
-Alternatively, the population-file can also be created independently according to the following pattern. The "csv"-file based on the worldpop data contains the following columns (see Fig. 5), where the columns  “ADM2_PCODE” and “wpop_total” are mandatory and names cannot be changed. All other columns can be adjusted, but they need to be picked up and be consistent with the variable names in the Transform-file. This means that a population "csv"-file can be generated based on other available population data by the user as long as the two former mentioned columns exist.
-
-
-```{figure} /fig/populationfile_example.png
----
-width: 500px
-name: tpopulationfile_example
-align: center
----
-```
-
 ### Data Output
 
 The plugin provides the user with the following output:
@@ -192,13 +161,6 @@ The output data will contain No Data Values. By default in QGIS these Values are
 
 The methodology for the Risk Calculation is based on [Weltrisikoindex](https://weltrisikobericht.de/) and is also inspired by the [INFORM Risk framework](drmkc.jrc.ec.europa.eu/inform-index/INFORM-Risk/Methodology). The basic model of the WorldRiskIndex with its modular structure was developed jointly with the United Nations University Institute for Environment and Human Security (UNU-EHS). Since 2018, the Institute for International Law of Peace and Humanitarian Law (IFHV) at the Ruhr University Bochum has taken over the calculation and continuously developed the model conceptually and methodologically.
 In the context of this analysis, risk is defined as the interaction of the two dimensions of exposure and susceptibility, which arises only where the two spheres meet. In this respect, risk is only present where there are hazards from extreme natural events and where populations without sufficient resilience, coping or adaptation capacities live in these hazard areas. 
-
-
-### Transformation by Population
-
-By means of the Population-file the user is enabled to create population based indicators and to offset certain indicators with the population numbers. By indicating an existing indicator, creating a new name and setting a factor, the variables are offset in the following manner:
-
-$ new\ Indicator=   \frac{indicators\ to\ be\ transformed}{Total\ Population} \times factor$
 
 
 ### Normalization
