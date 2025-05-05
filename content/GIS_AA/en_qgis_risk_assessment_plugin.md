@@ -152,18 +152,11 @@ The output data will contain No Data Values. By default in QGIS these Values are
 The methodology for the Risk Calculation is based on [Weltrisikoindex](https://weltrisikobericht.de/) and is also inspired by the [INFORM Risk framework](drmkc.jrc.ec.europa.eu/inform-index/INFORM-Risk/Methodology). The basic model of the WorldRiskIndex with its modular structure was developed jointly with the United Nations University Institute for Environment and Human Security (UNU-EHS). Since 2018, the Institute for International Law of Peace and Humanitarian Law (IFHV) at the Ruhr University Bochum has taken over the calculation and continuously developed the model conceptually and methodologically.
 In the context of this analysis, risk is defined as the interaction of the two dimensions of exposure and susceptibility, which arises only where the two spheres meet. In this respect, risk is only present where there are hazards from extreme natural events and where populations without sufficient resilience, coping or adaptation capacities live in these hazard areas. 
 
+### Indicator normalization
 
-### Normalization
-
-Throughout the risk calculation values need to be normalized at two points: First the indicators must be normalized in order to calculate the scores for the three dimensions vulnerability, coping capacity and exposure and these resulting scores must be normalized in order to process them further into a risk score. 
-
-__Indicator normalization__
-
-Depending on the context and content of the data, the value range of the indicators is wide. In order to make them comparable, in a first step all indicators are normalized to a value range between 0 to 1. Each value is scaled so that the minimum value in the series becomes 0, and the maximum value becomes 1. Values in between are linearly scaled based on their position within the range. A common Min-Max Normalization is used:
+Depending on the context and content of the data, the value range of the indicators is wide. In order to make them comparable, all indicators are normalized to a value range between 0 to 1. Each value is scaled so that the minimum value in the series becomes 0, and the maximum value becomes 1. Values in between are linearly scaled based on their position within the range. A common Min-Max Normalization is used:
 
 $ Normalized\ Value\ = \frac{value\ -\ min value}{max\ value \ - \ min } $
-
-The second normalization takes place when the scores need to be normalized in order to calculate the final risk score (see section Score Normalization).
 
 ### Imputation
 
@@ -240,12 +233,6 @@ The second formula inverts the value $(1 - value)$ before applying the weight, r
 After considering weights and directions, the weighted variables are summed up to scores for each dimension (Exposure, Vulnerability, Lack of Coping Capacity):
 
 $ score=   \sum weighted\ values $
-
-__Scores normalization__
-
-After the calculation of the scores, they are normalized based on the number of indicators they consist of (see 2nd normalization in chapter Normalization 5.1). This makes the scores relative to the number of indicators:
-
-$ normalized \ scores =  \frac {scores}{number of indicators} $
 
 
 __Calculation of risk__
