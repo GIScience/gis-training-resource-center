@@ -62,6 +62,11 @@ align: center
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/risk_assessment_download.mp4"></video>
 
 
+For further information about installation and usage of plugins visit the [QGIS Training Platform](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html).
+
+
+## User Interface
+
 How to open the plugin interface:
 
 - To use the Risk Assessment plugin open the `Processing Toolbox`.
@@ -74,29 +79,14 @@ you can also search for “Risk Assessment” using the Search function of the P
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/risk_assessment_interface.mp4"></video>
 
 
-For further information about installation and usage of plugins visit the [QGIS Training Platform](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html).
-
-
-## User Interface
+## Data Input
 
 The plugin needs 5 inputs, from which 4 are csv text files and 1 is a vector file. The input of these 5 files is mandatory. The majority of the files can be produced and adjusted in Excel. This allows for flexibility to adjust input to local contexts.
 The requested input information can be browsed for via the button on the right. These files need to be present on the user's computer.
 It is important to follow the input file specifications exactly (see chapter 4.1.).
 The plugin will provide the user with two outputs. The Risk Assessment results on the administrative boundaries as a vector file containing geometries ready to be displayed in QGIS and the Risk Assessment results in a table format. The desired data format of the vector and text outputs can be chosen during the saving process. 
 
-
-```{figure} /fig/Interface.png
----
-height: 600px
-name: Interface
-align: center
----
-```
-
-
-## Data Input
-
-The required input files must follow a given structure. You find below  the required input files to conduct the risk assessment and specifications they must follow:
+The required input files must follow a given structure. Here you find the required input files to conduct the risk assessment and specifications they must follow:
 
 ### 1. Administrative boundaries 
 
