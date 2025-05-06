@@ -71,6 +71,9 @@ you can also search for “Risk Assessment” using the Search function of the P
 - To execute the plugin, just double-click on its name.
 - A dialog called Calculate Risk Assessment should appear.
 
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/risk_assessment_interface.mp4"></video>
+
+
 For further information about installation and usage of plugins visit the [QGIS Training Platform](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html).
 
 
