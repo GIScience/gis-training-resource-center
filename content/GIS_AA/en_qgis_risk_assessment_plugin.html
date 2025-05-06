@@ -614,6 +614,10 @@ pip install pandas</p></li>
 <li><p>Close the dialog. The Risk Assessment plugin should now be available.</p></li>
 </ul>
 <p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/risk_assessment_download.mp4"></video></p>
+<p>For further information about installation and usage of plugins visit the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html">QGIS Training Platform</a>.</p>
+</section>
+<section id="user-interface">
+<h2>User Interface<a class="headerlink" href="#user-interface" title="Permalink to this heading">#</a></h2>
 <p>How to open the plugin interface:</p>
 <ul class="simple">
 <li><p>To use the Risk Assessment plugin open the <code class="docutils literal notranslate"><span class="pre">Processing</span> <span class="pre">Toolbox</span></code>.</p></li>
@@ -624,21 +628,14 @@ you can also search for “Risk Assessment” using the Search function of the P
 <li><p>A dialog called Calculate Risk Assessment should appear.</p></li>
 </ul>
 <p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/risk_assessment_interface.mp4"></video></p>
-<p>For further information about installation and usage of plugins visit the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html">QGIS Training Platform</a>.</p>
 </section>
-<section id="user-interface">
-<h2>User Interface<a class="headerlink" href="#user-interface" title="Permalink to this heading">#</a></h2>
+<section id="data-input">
+<h2>Data Input<a class="headerlink" href="#data-input" title="Permalink to this heading">#</a></h2>
 <p>The plugin needs 5 inputs, from which 4 are csv text files and 1 is a vector file. The input of these 5 files is mandatory. The majority of the files can be produced and adjusted in Excel. This allows for flexibility to adjust input to local contexts.
 The requested input information can be browsed for via the button on the right. These files need to be present on the user’s computer.
 It is important to follow the input file specifications exactly (see chapter 4.1.).
 The plugin will provide the user with two outputs. The Risk Assessment results on the administrative boundaries as a vector file containing geometries ready to be displayed in QGIS and the Risk Assessment results in a table format. The desired data format of the vector and text outputs can be chosen during the saving process.</p>
-<figure class="align-center" id="interface">
-<a class="reference internal image-reference" href="../../_images/Interface.png"><img alt="../../_images/Interface.png" src="../../_images/Interface.png" style="height: 600px;" /></a>
-</figure>
-</section>
-<section id="data-input">
-<h2>Data Input<a class="headerlink" href="#data-input" title="Permalink to this heading">#</a></h2>
-<p>The required input files must follow a given structure. You find below  the required input files to conduct the risk assessment and specifications they must follow:</p>
+<p>The required input files must follow a given structure. Here you find the required input files to conduct the risk assessment and specifications they must follow:</p>
 <section id="administrative-boundaries">
 <h3>1. Administrative boundaries<a class="headerlink" href="#administrative-boundaries" title="Permalink to this heading">#</a></h3>
 <p>A geospatial vector format (geojson, geopackage, shapefile,…) containing the administrative boundaries and P-Codes of the respective countries. These can be found on the websites of national governments or on Humanitarian Data Exchange, for example. This dataset has two obligatory columns: “ADM_PCODE” containing the P_Codes and “ADM_EN” containing the names of the administrative boundaries. The administrative boundary data does not require a specific coordinate reference system (CRS), but the output and result will have the same CRS as the input.</p>
