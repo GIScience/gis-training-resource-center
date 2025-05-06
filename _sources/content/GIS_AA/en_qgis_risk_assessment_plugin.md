@@ -70,6 +70,8 @@ you can also search for “Risk Assessment” using the Search function of the P
 
 For further information about installation and usage of plugins visit the [QGIS Training Platform](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html).
 
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/risk_assessment_download.mp4"></video>
+
 
 ## User Interface
 
