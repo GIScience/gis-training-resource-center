@@ -43,17 +43,6 @@ The Plugin is available for QGIS Version 3.28 onwards.
 To install plugins, you need to open the Plugin Manager:
 - Click on the menu item Plugins > Manage and install Plugins.
 - Click on Settings and check the box “Show also experimental plugins”
-
-
-```{figure} /fig/experimental_plugins.png
----
-width: 500px
-name: experimental_plugins
-align: center
----
-```
-
-
 - In the dialog that opens, find the Risk Assessment plugin.
 - Find information about the plugin by selecting it in the list.
 - Install it by clicking the Install Plugin button below the plugin information panel.
