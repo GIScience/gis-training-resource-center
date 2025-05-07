@@ -635,6 +635,9 @@ The plugin will provide the user with two outputs. The Risk Assessment results o
 <section id="administrative-boundaries">
 <h3>1. Administrative boundaries<a class="headerlink" href="#administrative-boundaries" title="Permalink to this heading">#</a></h3>
 <p>A geospatial vector format (geojson, geopackage, shapefile,…) containing the administrative boundaries and P-Codes of the respective countries. These can be found on the websites of national governments or on Humanitarian Data Exchange, for example. This dataset has two obligatory columns: “ADM_PCODE” containing the P_Codes and “ADM_EN” containing the names of the administrative boundaries. The administrative boundary data does not require a specific coordinate reference system (CRS), but the output and result will have the same CRS as the input.</p>
+<figure class="align-center" id="mada-adm">
+<a class="reference internal image-reference" href="fig/mada_adm.PNG"><img alt="fig/mada_adm.PNG" src="fig/mada_adm.PNG" style="height: 400px;" /></a>
+</figure>
 </section>
 <section id="risk-assessment-indicators">
 <h3>2. Risk Assessment indicators<a class="headerlink" href="#risk-assessment-indicators" title="Permalink to this heading">#</a></h3>
@@ -649,8 +652,8 @@ The plugin will provide the user with two outputs. The Risk Assessment results o
 <section id="weights-file">
 <h3>Weights-file<a class="headerlink" href="#weights-file" title="Permalink to this heading">#</a></h3>
 <p>A “csv”-file containing a column “variable_name” with all the column names of the previous “csv”-files, which are to be weighted differently in the calculation. The file must also contain the columns “category”, “weight” and “direction”. The category column indicates the category of the indicator: “exp” for exposure, “cop” for coping capacity and “vul” for vulnerability. The weight determines the importance of each indicator. For each category (exp, cop and vul), the sum of the weights must add up to 1. If this is not the case, the plugin will automatically normalize the weights in order to make the sum equal to 1 within each category. A message will be printed with the value of the transformed weights. For more information about weights and directions see chapter weight and directions.</p>
-<figure class="align-center" id="weights-example">
-<a class="reference internal image-reference" href="../../_images/weights_example.PNG"><img alt="../../_images/weights_example.PNG" src="../../_images/weights_example.PNG" style="height: 400px;" /></a>
+<figure class="align-center" id="mada-weights">
+<a class="reference internal image-reference" href="fig/mada_weights.PNG"><img alt="fig/mada_weights.PNG" src="fig/mada_weights.PNG" style="height: 400px;" /></a>
 </figure>
 </section>
 <section id="data-output">
