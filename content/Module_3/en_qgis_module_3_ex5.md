@@ -58,15 +58,14 @@ __Relevant wiki articles and module chapters__
 :::
 ::::
 
-::::{grid} 1
-:::{grid-item-card}
+:::{topic}
 __Context__
 ^^^
 
 In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. The following analysis will utilize actual data from this natural disaster. The objective is to pinpoint the specific medical centers and healthcare facilities that were impacted by the flooding. Additionally, we will assess the viability of road access to the city of Larkana throughout the flood period.
 
 :::
-::::
+
 
 ## Instructions for the trainers
 
@@ -108,24 +107,22 @@ __Download all datasets [here](https://nexus.heigit.org/repository/gis-training-
 
 :::
 
+
+| Dataset | Original title | Publisher | Downloaded from | 
+| :-------------------- | :----------------- |:----------------- |:----------------- |
+| PAK_Sindh_adm1.gpkg | [Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-pak) |UN OCHA | HDX |
+| PAK_Sindh_adm2.gpkg | [Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-pak) |UN OCHA | HDX |
+| PAK_Sind_Health_Facilities.gpkg |  [Pakistan Health Facilities (OpenStreetMap Export)](https://data.humdata.org/dataset/hotosm_pak_health_facilities) |Humanitarian OpenStreetMap Team (HOT) | HDX |
+| VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp | [Satellite detected water extents from 08 to 12 August 2024 over Pakistan)](https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan) |UNO SAT | HDX |
+| Roads_Larkana.gpkg | [Roads Larkana](https://export.hotosm.org/v3/exports/7f1e78c7-f671-41e3-9ec3-6fc6ac31c929) |Humanitarian OpenStreetMap Team | HOT Export Tool (Export created in September 2024) |
+
+<!--ADD: Add an explanation how to create the healthsite dataset by combining points and polygons -->
+
 :::{hint}
 
 Reprojected and fixed Flood extend layer can be downloaded __[here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_4/Module_3_Exercise_4_Larkana_flood_Day2.zip)__
 
 :::
-
-
-| Dataset name| Original title|Publisher|Download from| 
-| :-------------------- | :----------------- |:----------------- |:----------------- |
-| PAK_Sindh_adm1.gpkg | [Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-pak) |UN OCHA | HDX |
-| PAK_Sindh_adm2.gpkg | [Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-pak) |UN OCHA | HDX |
-| PAK_Sind_Health_Facilities.gpkg |  [Pakistan Health Facilities (OpenStreetMap Export)](https://data.humdata.org/dataset/hotosm_pak_health_facilities) |Humanitarian OpenStreetMap Team (HOT) | HDX |
-|VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp | [Satellite detected water extents from 08 to 12 August 2024 over Pakistan)](https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan) |UNO SAT | HDX |
-|Roads_Larkana.gpkg | [Roads Larkana](https://export.hotosm.org/v3/exports/7f1e78c7-f671-41e3-9ec3-6fc6ac31c929) |Humanitarian OpenStreetMap Team | HOT Export Tool (Export created in September 2024) |
-
-<!--ADD: Add an explanation how to create the healthsite dataset by combining points and polygons -->
-
-
 
 ```{hint} Folder structure
 To keep your data organized and easily accessible, it's important to establish a clear folder structure on your computer for your QGIS projects and geodata. Ensure that your exercise data are saved in a location that allows for easy retrieval and association with the corresponding QGIS project.
@@ -140,7 +137,7 @@ width: 450 px
 
 ## Task 1: Gain an overview of the situation around Larkana 
 
-:::{card}
+:::{topic}
 
 ```{figure} /fig/IFRC-icons-colour_SURGE.png
 ---
@@ -158,7 +155,8 @@ You have been deployed as an information manager to the flood-affected regions o
 
 
 ::::{margin}
-```{Tip}
+```{admonition} Tip
+:class: note
 You cannot interact with a base map!
 ```
 ::::
@@ -195,7 +193,7 @@ Do not forget to save your project from time to time!
 
 ## Task 2: Estimation of Flood Impact on the Health Sector in Larkana
 
-::::{card}
+::::{topic}
 
 ```{figure} /fig/IFRC-icons-colour_Health.svg
 ---
@@ -325,7 +323,7 @@ align: center
 Flood affected health facilities classification
 ```
 
-:::{card} 
+:::{topic} 
 __Achievement:__
 ^^^
 
@@ -335,7 +333,7 @@ We've pinpointed the specific health facilities that have been inundated by the 
 
 ## Task 3: Logistical access to Larkana City
 
-:::{card}
+:::{topic}
 
 ```{figure} /fig/IFRC-icons-colour_Logistics.svg
 ---
@@ -370,7 +368,7 @@ In order to get a clearer picture, we need to import the road network data for t
     name: Pakistan road classification
     align: center
     ---
-    Pakistan road classification
+    The symbolisation window for the Roads_Larkana.gpkg layer.
     ```
     * You have the option to customize the width of the main roads' lines to improve the visualization. Open the Symbology window, then select `Symbol`. In the new window, you can adjust the width of the lines to your preference.
     
@@ -380,7 +378,7 @@ In order to get a clearer picture, we need to import the road network data for t
     name: Pakistan road classification
     align: center
     ---
-    Pakistan road classification
+    Adjusting the symbolisation of the different road types
     ```
 
     * Once you are done, click `Apply` and `OK` to close the symbology window.
@@ -388,7 +386,7 @@ In order to get a clearer picture, we need to import the road network data for t
 ::::{margin}
 :::{tip}
 
-There are methods to automate this process which will be covered in [module 5: Intermediate GIS Operations](file:///C:/Projekte/02_Arbeit/HeiGIT/RCRC_QGIS_Training_Platform/gis-training-resource-center/_build/html/content/Module_5/en_module_5_overview.html)
+There are methods to automate this process which will be covered in [module 5: Intermediate GIS Operations](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_module_5_overview.html)
 :::
 ::::
 
@@ -412,22 +410,29 @@ There are methods to automate this process which will be covered in [module 5: I
     name: Pakistan road classification
     align: center
     ---
-    New layer blocked roads
+    Creating a new point layer. Make sure to specify a location using the three points at the top.
     ```
 
-4. Now you can create a point for each place where the flood layer covers the main roads leading out of Larkana [wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#creation-of-point-data). Currently the new layer __“PAK_flood_2024_blocked_road”__ is empty. To add features we can use the `Digitizing Toolbar`. If you cannot see the toolbar, click on the tab `View` -> `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#creation-of-point-data)).  ![](/fig/Digitizing_Toolbar.png) 
-    * Activate the editing mode by clicking on ![](/fig/mActionToggleEditing.png). Activate then the option to add new points by clicking on ![](/fig/mActionCapturePoint.png).
+::::{margin}
+:::{tip}
+If you cannot see the toolbar, click on the tab `View` -> `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#creation-of-point-data))
+:::
+::::
+
+4. Now you can create a point for each place where the flood layer covers the main roads leading out of Larkana [wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#creation-of-point-data). 
+    * Currently the new layer __“PAK_flood_2024_blocked_road”__ is empty. To add features we can use the `Digitizing Toolbar`.  ![](/fig/Digitizing_Toolbar.png) 
+    * Activate the editing mode by clicking on ![](/fig/mActionToggleEditing.png). Next, activate the option to add new points by clicking on ![](/fig/mActionCapturePoint.png) `Add Point Feature` .
     * Look out for places where the flood layer covers the main roads or bridges leading out of Larkana. Once you have found one, left-click on the location you want to digitise.
     * Once you click on a place, a window will appear. Indicate that the road is blocked by writing `Yes` in the field `Blocked_road`.
     * Repeat this step with all the locations your can find. 
 
     ```{figure} /fig/PAK_blocked_road_digitalise.png
     ---
-    width: 200px
+    width: 400px
     name: Digitalising blocked roads
     align: center
     ---
-    Digitalising blocked roads
+    This pop-up will open once you have selected a location to add a point. Make sure to enter the relevant information in the columns. 
     ```
 
     * Once you are done with digitizing click on ![](/fig/mActionSaveEdits.png) to save your edits.
@@ -446,7 +451,7 @@ There are methods to automate this process which will be covered in [module 5: I
     name: Visulsing blocked roads with icons
     align: center
     ---
-    Visulsing blocked roads with icons
+    Adjusting the symbolisation for the new point layer. Make sure to choose a marker that can be easily identified. 
     ```
 
 Part of your assignment was to point out possible alternatives to road transport. Can you identify any?
@@ -465,7 +470,7 @@ Road access to Mohenjodaro Airport
 ```
 :::
 
-:::{card}
+:::{topic}
 
 The operations team has now all the information they need to plan their logistics. Good Job!
 
@@ -480,3 +485,4 @@ This exercise is part of the __Larkana Flood Response Exercise track__ and conti
 Click [here] if you want to continue to the next exercise of this exercise track.
 
 :::
+
