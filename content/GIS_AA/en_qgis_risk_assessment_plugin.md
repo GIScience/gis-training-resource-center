@@ -75,6 +75,9 @@ The requested input information can be browsed for via the button on the right. 
 It is important to follow the input file specifications exactly (see chapter 4.1.).
 The plugin will provide the user with two outputs. The Risk Assessment results on the administrative boundaries as a vector file containing geometries ready to be displayed in QGIS and the Risk Assessment results in a table format. The desired data format of the vector and text outputs can be chosen during the saving process. 
 
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/risk_assessment_data_input.mp4"></video>
+
+
 The required input files must follow a given structure. Here you find the required input files to conduct the risk assessment and specifications they must follow:
 
 ### 1. Administrative boundaries 
