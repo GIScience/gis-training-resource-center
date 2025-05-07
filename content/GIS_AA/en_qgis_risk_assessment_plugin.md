@@ -242,8 +242,7 @@ $ risk=   \sqrt exposure  \times susceptibility $
 
 ## Known Limitations
 
-The Population-file must be provided by HeiGIT gGmbH in the experimental version of the plugin. A global Population-file from HeiGIT gGmbH will soon be provided for the plugin.
-Another notable limitation of the system is that the self created “csv”-files must conform exactly to the specified format outlined in the provided examples. For instance users should be aware that their custom population data may need to be converted to match the specific structure and administrative level.
+A notable limitation of the system is that the self created “csv”-files must conform exactly to the specified format outlined in the provided examples.
 It is also important to know that no placeholders or default values can be assigned in the "csv"-files in the plugin application. Each cell must be filled with relevant data before the plugin is used.
 In general, many input files are required to use the plugin, which makes it highly prone to errors.
 
