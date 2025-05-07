@@ -77,31 +77,31 @@ The primary objective is to empower individuals across various roles within the 
 The QGIS skills offered on this platform span basic, intermediate, and advanced proficiency levels, with each level comprising three dedicated modules.
 
 :::{dropdown} Basic Skills
-| Modul 1e -  Introduction GIS ✨| Module 2 - Working with Geodata 🌍 | Module 3 - Basic GIS operations 📍 |
-|-------------------------------|------------------------------------|-----------------------------------|
-| Installation QGIS            | Layer Concept in GIS    |        Digital data editing  and creation   |
-| Paper maps and cartography, digital maps distinction |  Data Import |Feature attribute selection and editing |
-| Introduction to GIS  | Geo features and attributes | Feature Selection      |
-| QGIS Interface Description |Vector and Raster data- Basic concepts | Spatial Queries: Select by polygon + location                                |
-|     WebGIS Platform  | Vector data |   Data  Classification  |
-| Mobile Apps overview | Vector file formats  |    |
-|   Examples of maps created with GIS | Basemap selection |Introduction to non-spatial queries |
-|   |  Projections    |    |
-|  |Data Sources|   |
+| Module 1 -  Introduction GIS ✨                       | Module 2 - Working with Geodata 🌍    | Module 3 - Basic GIS operations 📍           |
+| ---------------------------------------------------- | -------------------------------------- | --------------------------------------------- |
+| Installation QGIS                                    | Layer Concept in GIS                   | Data editing and creation                     |
+| Paper maps and cartography, digital maps distinction | Data Import                            | Feature attribute selection and editing       |
+| Introduction to GIS                                  | Geo features and attributes            | Feature Selection                             |
+| QGIS Interface Description                           | Vector and Raster data- Basic concepts | Spatial Queries: Select by polygon + location |
+| WebGIS Platform                                      | Vector data                            | Data  Classification                          |
+| Mobile Apps overview                                 | Vector file formats                    | Introduction to non-spatial queries           |
+| Examples of maps created with GIS                    | Basemap selection                      |                                               |
+|                                                      | Projections                            |                                               |
+|                                                      | Data Sources                           |                                               |
 ::::
   
 :::{dropdown} Intermediate Skills
 
-|Module 4 - Representation 🗺️ |  Module 5 - Intermediate GIS Operations 🌐| Module 6 - Data analysis with QGIS 📊  |
-|-----------------------|---------------------|-------------------------------------|
-|Visualisation | Geoprocessing: Buffer||
-|Graphical variables| Geoprocessing: Clip | Data access   |
-|Styling in QGIS | Geoprocessing: Dissolve   | QGIS Plugins Example: QuickOSM  |
-|Symbology and Colors |Clip by Mask|Remote Sensing/ Raster Data Intro|
-|Export/Import styles|Clip by Extent  |||
-|Print layout|Non-spatial queries ||
-|Map composition|Table functions: Attribute table operations||
-|Atlas function|Non-Spatial Joins  ||
+| Module 4 - Representation 🗺️ | Module 5 - Intermediate GIS Operations 🌐  | Module 6 - Data analysis with QGIS 📊 |
+| ------------------------------- | ------------------------------------------- | -------------------------------------- |
+| Visualisation                   | Geoprocessing: Buffer                       |                                        |
+| Graphical variables             | Geoprocessing: Clip                         |                                        |
+| Styling in QGIS                 | Geoprocessing: Dissolve                     | QGIS Plugins Example: QuickOSM         |
+| Symbology and Colors            | Clip by Mask                                | Remote Sensing/ Raster Data Intro      |
+| Export/Import styles            | Clip by Extent                              |                                        |
+| Print layout                    | Non-spatial queries                         |                                        |
+| Map composition                 | Table functions: Attribute table operations |                                        |
+| Atlas                           | Non-Spatial Joins                           |                                        |
 :::
 
 :::{dropdown} Advanced Skills
