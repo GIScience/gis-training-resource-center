@@ -4,14 +4,15 @@
 :link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
-
-
-# Exercise 5: Larkana Flood response
-
-:::{card}
+:::{gird-item-card}
 :link: https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_exercises.html
 __Click here to return to the exercise overview page for module 3__ 
 :::
+::::
+
+# Exercise 5: Larkana Flood response
+
+
 ::::{grid} 2
 :::{grid-item-card}
 __Aim of the exercise:__
@@ -21,13 +22,15 @@ Participants will work with multiple layers and conduct spatial queries. Additio
 :::
 
 :::{grid-item-card}
-__These skills are relevant for__
+__Competences covered in this exercise__
 ^^^ 
 
-- QGIS Essentials
-- Working with multiple layers
-- Conduct spatial queries
-- Creation of geodata
+- Select features and export to new file
+- Extract by Location
+- Reproject Layer
+- Editing the Attribute Table
+- Classification
+- Digitising a point Layer
 
 :::
 ::::
@@ -42,7 +45,7 @@ __Estimated time demand for the exercise__
 :::
 
 :::{grid-item-card}
-__Relevant wiki articles__
+__Relevant wiki articles and module chapters__
 ^^^
 
 * [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)
@@ -128,7 +131,7 @@ Reprojected and fixed Flood extend layer can be downloaded __[here](https://nexu
 To keep your data organized and easily accessible, it's important to establish a clear folder structure on your computer for your QGIS projects and geodata. Ensure that your exercise data are saved in a location that allows for easy retrieval and association with the corresponding QGIS project.
 ```
 
-:::{figure} /fig/M3_Ex5_workflow_chart.drawio
+:::{figure} /fig/M3_Ex5_workflow_chart.drawio.png
 ---
 name: M5_Ex5_Workflow_chart
 width: 450 px
@@ -274,7 +277,7 @@ Execution failed after 0.07 seconds
 
 You need to first use the tool __"Fix Geometry"__ before repeating the previously failed step 5 of using the tool __"Select by Location"__.
 
-* To do so open the `Processing Toolbox` ([here is how](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox)) and search for the tool __"Fix Geometries"__.
+* To do so open the [`Processing Toolbox`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox) and search for the tool __"Fix Geometries"__.
 * `Input layer` = `2024_MinFloodExtend_reprojected`
 * Save the new file in your `temp` folder by clicking on the three dots ![](/fig/Three_points.png), specify the file name as __"2024_MinFloodExtend_reprojected_fix"__.
 *  Click `Run`.
@@ -285,7 +288,7 @@ width: 400px
 name: Fix Geometry
 align: center
 ---
-Fix Geometry
+The error message indicating invalid geometries
 ```
 
 ::::
