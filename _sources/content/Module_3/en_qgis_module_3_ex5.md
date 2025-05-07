@@ -4,12 +4,6 @@
 :link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
-:::{grid-item-card}
-:class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_exercises.html 
-{octicon}`undo;1.5em;sd-text-danger`
-:::
-::::
 
 
 # Exercise 5: Larkana Flood response
@@ -23,8 +17,7 @@ __Click here to return to the exercise overview page for module 3__
 __Aim of the exercise:__
 ^^^
 Participants will work with multiple layers and conduct spatial queries. Additionally, they will learn how to create their own geodata.
-__Type of training exercise:__
-- This exercise can be used in online and presence training. 
+<!--ADD: Add the steps and tools which will be used-->
 :::
 
 :::{grid-item-card}
@@ -118,20 +111,29 @@ Reprojected and fixed Flood extend layer can be downloaded __[here](https://nexu
 
 :::
 
+
 | Dataset name| Original title|Publisher|Download from| 
 | :-------------------- | :----------------- |:----------------- |:----------------- |
 | PAK_Sindh_adm1.gpkg | [Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-pak) |UN OCHA | HDX |
 | PAK_Sindh_adm2.gpkg | [Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-pak) |UN OCHA | HDX |
 | PAK_Sind_Health_Facilities.gpkg |  [Pakistan Health Facilities (OpenStreetMap Export)](https://data.humdata.org/dataset/hotosm_pak_health_facilities) |Humanitarian OpenStreetMap Team (HOT) | HDX |
 |VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp | [Satellite detected water extents from 08 to 12 August 2024 over Pakistan)](https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan) |UNO SAT | HDX |
-|Roads_Larkana.gpkg | Roads Larkana |Humanitarian OpenStreetMap Team | HOT Export Tool |
+|Roads_Larkana.gpkg | [Roads Larkana](https://export.hotosm.org/v3/exports/7f1e78c7-f671-41e3-9ec3-6fc6ac31c929) |Humanitarian OpenStreetMap Team | HOT Export Tool (Export created in September 2024) |
 
 <!--ADD: Add an explanation how to create the healthsite dataset by combining points and polygons -->
+
+
 
 ```{hint} Folder structure
 To keep your data organized and easily accessible, it's important to establish a clear folder structure on your computer for your QGIS projects and geodata. Ensure that your exercise data are saved in a location that allows for easy retrieval and association with the corresponding QGIS project.
 ```
 
+:::{figure} /fig/M3_Ex5_workflow_chart.drawio
+---
+name: M5_Ex5_Workflow_chart
+width: 450 px
+---
+:::
 
 ## Task 1: Gain an overview of the situation around Larkana 
 
@@ -150,15 +152,17 @@ __Context:__
 You have been deployed as an information manager to the flood-affected regions of Pakistan. Upon your arrival you received reports from the operations team indicating that the city of [Larkana](https://www.openstreetmap.org/#map=12/27.5565/68.1672) and its surrounding areas have been severely affected by the floods. The team needs a general overview of the location of the city.
 
 :::
- 
-1. Open QGIS and create a [new project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`
-2. Once the project is created [save the project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#save) in the “project” folder of the exercise “Modul3_Exercise_2_Flood_Larkana”. To do that click on `Project` -> `Save as` and navigate to the folder. Name the project “PAK_Larkana_flood_2024”.
-3. First, we want to add the OpenStreetMap as a base map for orientation. To add the OSM as a base map click on `Layer` -> `Add Layer` -> `Add XYZ Layer…`. Choose `OpenStreetMap` and click `Add`. 
 
+
+::::{margin}
 ```{Tip}
 You cannot interact with a base map!
 ```
+::::
 
+1. Open QGIS and create a [new project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`
+2. Once the project is created [save the project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#save) in the “project” folder of the exercise “Modul3_Exercise_2_Flood_Larkana”. To do that click on `Project` -> `Save as` and navigate to the folder. Name the project “PAK_Larkana_flood_2024”.
+3. First, we want to add the OpenStreetMap as a base map for orientation. To add the OSM as a base map click on `Layer` -> `Add Layer` -> `Add XYZ Layer…`. Choose `OpenStreetMap` and click `Add`. 
 4. Next, load the GeoPackage __"PAK_Sindh_adm2.gpkg"__ in your project by drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)). Or click on `Layer`-> `Add Layer`-> `Add Vector Layer`. Click on the three points ![](/fig/Three_points.png) and navigate to __"PAK_Sindh_adm2.gpkg"__. Select the file and click `Open`. Back in QGIS click `Add` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)).
 
 
@@ -232,7 +236,7 @@ Ok, now we have a good overview of the location of health facilities. We need mu
     * The “Layer Properties” Window of the data layer will open. Click on “Information”.
     * Under the headline “Coordinate Reference System (CRS)” you find all information about the CRS. The most important are:
     - __Name:__     Here you find the EPSG Code.
-    - __Unites:__    Here you can find whether it is possible to use meters with this data layer, degrees or latitude and longitude. 
+    - __Unites:__    Here you can find whether it is possible to use meters with this data layer, degrees or latitude and longitude. <!--ADD: Why is it a problem? Add explanation-->
 4. This will be a problem as soon as we do something different then just displaying the layers. Since we want to manipulate the layers in the next step we need to reproject them first ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html#changing-the-projection-of-a-vector-layer)). 
     * Click on the `Vector` tab -> `Data Management Tools` -> `Reproject Layer` or search for the tool in the `Processing Toolbox`.
     * As `Input layer` select __"VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp"__
@@ -248,7 +252,7 @@ To accomplish this, our first step will involve selecting all the affected healt
 5. Open the `Processing Toolbox` ([here is how](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox)) and search for the tool __"Select by Location"__.
     * `Select features from` = __"Health_Facilities_Flood_2024_AOI"__.
     * As `Geometric predicate` we use `intersect`.
-    * For `By comparing to the features from` we use the layer __"2024_MinFloodExtend_reprojected"__.
+    * For `By comparing to the features from` we use the layer __"2024_MinFloodExtent_reprojected"__.
     * `Modify current selection by` = `creating new selection`.
     *  Click `Run`.
 
@@ -261,7 +265,8 @@ align: center
 Select flood affected health facilities
 ```
 
-::::{warning}
+::::{admonition} Possible Error Message
+:class: warning, dropdown
 In case you encounter the error:
 
 > Feature (1) from “2024_MinFloodExtend_reprojected” has invalid geometry. Please fix the geometry or change the Processing setting to the “Ignore invalid input features” option.
@@ -353,8 +358,8 @@ In order to get a clearer picture, we need to import the road network data for t
 
 1. Load the dataset __"Roads_Larkana.gpkg"__ from your input folder into your QGIS.
 2. For categorized classification right-click on the layer __"Roads_Larkana"__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html)).
-    * On the top you find a dropdown menu. Open it and choose `Categorized`. Under `Value` select “highway”.
-    * Further down the window, click on `Classify`.  Now you should see all unique values or attributes of the selected “Flood_affacted” column.  You can adjust the colours by double-clicking on the coluors in each row in the central field.
+    * On the top you find a dropdown menu. Open it and choose `Categorized`. Under `Value` select "highway".
+    * Further down the window, click on `Classify`.  Now you should see all unique values or attributes of the selected "highway" column.  You can adjust the colours by double-clicking on the colours in each row in the central field.
     * Remove the tick from all categories except: `motorway`, `primary`, `secondary`, `trunk`
     ```{figure} /fig/PAK_road_classification.PNG
     ---
@@ -376,6 +381,13 @@ In order to get a clearer picture, we need to import the road network data for t
     ```
 
     * Once you are done, click `Apply` and `OK` to close the symbology window.
+
+::::{margin}
+:::{tip}
+
+There are methods to automate this process which will be covered in [module 5: Intermediate GIS Operations](file:///C:/Projekte/02_Arbeit/HeiGIT/RCRC_QGIS_Training_Platform/gis-training-resource-center/_build/html/content/Module_5/en_module_5_overview.html)
+:::
+::::
 
 3. To simplify the process, we will visually search for blocked roads and mark them with points. For this purpose, we will create an entirely new point dataset representing blocked roads.
     * Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#create-a-new-layer)) 
@@ -453,5 +465,15 @@ Road access to Mohenjodaro Airport
 :::{card}
 
 The operations team has now all the information they need to plan their logistics. Good Job!
+
+:::
+
+
+:::{admonition} Continue along this exercise track
+:class: note
+
+This exercise is part of the __Larkana Flood Response Exercise track__ and continues with an exercise in module 4.
+
+Click [here] if you want to continue to the next exercise of this exercise track.
 
 :::

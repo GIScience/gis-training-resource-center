@@ -1023,7 +1023,7 @@ We cannot use a different polygon layer with the adm2 boundaries as we are calcu
 * - 1. In the [processing toolbox](), search for "Dissolve". Click on it.
     2. `Input Layer`: IPC Phase Classification (formatted as in step 4)
     3. `Dissolve field(s)`: "area"
-    4. Click `Run`.
+    4. Click `Run`. A new layer called "Dissolved" will appear in your layers panel. 
   -
     ```{figure} /fig/drought_EAP_workflow_step_5_march2025.png
     ---
@@ -1035,7 +1035,7 @@ We cannot use a different polygon layer with the adm2 boundaries as we are calcu
 
 ## Step 6: Add population statistics to the adm2 layer
 
-__Purpose:__ For the calculation of the IPC index, we need to have the population per adm2 polygon. Using the worldpop raster layer, we can calculate the population 
+__Purpose:__ For the calculation of the IPC index, we need to have the population per adm2 polygon. Using the worldpop raster layer, we can calculate the population inside each district using the output from the previous step
 
 
 ## Step 4: Extracting ML1 and ML2 from the GeoJSON layer
