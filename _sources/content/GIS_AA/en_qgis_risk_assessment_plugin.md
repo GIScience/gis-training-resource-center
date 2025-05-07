@@ -98,7 +98,7 @@ c) __Coping Capacity indicators:__ A "csv"-file containing a mandatory column "A
 ```{figure} /fig/Indicators_Vulnerability.png
 ---
 height: 400px
-name: Indicators_Vulnerability
+name: mada_coping
 align: center
 ---
 ```
