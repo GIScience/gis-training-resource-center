@@ -95,7 +95,7 @@ b.) __Vulnerability indicators:__ A "csv"-file containing a mandatory column "AD
 c) __Coping Capacity indicators:__ A "csv"-file containing a mandatory column "ADM_PCODE" with the P_codes of the administrative boundaries and all columns that are included in the calculation of the coping-indicator. All columns that are not included in the calculation must start with the expression "ADM...".
 
 
-```{figure} /fig/Indicators_Vulnerability.png
+```{figure} /fig/mada_coping.png
 ---
 height: 400px
 name: mada_coping
