@@ -623,20 +623,6 @@ document.write(`
 </div>
 </div>
 </div>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-1 sd-row-cols-lg-1 docutils">
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-header docutils">
-<p class="sd-card-text"><strong>Context</strong></p>
-</div>
-<div class="sd-card-body docutils">
-<p class="sd-card-text">In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. The following analysis will utilize actual data from this natural disaster. The objective is to pinpoint the specific medical centers and healthcare facilities that were impacted by the flooding. Additionally, we will assess the viability of road access to the city of Larkana throughout the flood period.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
 <section id="instructions-for-the-trainers">
 <h2>Instructions for the trainers<a class="headerlink" href="#instructions-for-the-trainers" title="Permalink to this heading">#</a></h2>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -679,16 +665,12 @@ document.write(`
 <p class="sd-card-text"><strong>Download all datasets <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_4/Modul_3_Exercise_4_Larkana_flood.zip">here</a> and save the folder on your computer and unzip the file.</strong></p>
 </div>
 <a class="sd-stretched-link reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_4/Modul_3_Exercise_4_Larkana_flood.zip"></a></div>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p>Reprojected and fixed Flood extend layer can be downloaded <strong><a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_4/Module_3_Exercise_4_Larkana_flood_Day2.zip">here</a></strong></p>
-</div>
 <table class="table">
 <thead>
-<tr class="row-odd"><th class="head text-left"><p>Dataset name</p></th>
+<tr class="row-odd"><th class="head text-left"><p>Dataset</p></th>
 <th class="head text-left"><p>Original title</p></th>
 <th class="head text-left"><p>Publisher</p></th>
-<th class="head text-left"><p>Download from</p></th>
+<th class="head text-left"><p>Downloaded from</p></th>
 </tr>
 </thead>
 <tbody>
@@ -722,6 +704,10 @@ document.write(`
 <!--ADD: Add an explanation how to create the healthsite dataset by combining points and polygons -->
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
+<p>Reprojected and fixed Flood extend layer can be downloaded <strong><a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_4/Module_3_Exercise_4_Larkana_flood_Day2.zip">here</a></strong></p>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
 <p>Folder structure
 To keep your data organized and easily accessible, it’s important to establish a clear folder structure on your computer for your QGIS projects and geodata. Ensure that your exercise data are saved in a location that allows for easy retrieval and association with the corresponding QGIS project.</p>
 </div>
@@ -731,18 +717,9 @@ To keep your data organized and easily accessible, it’s important to establish
 </section>
 <section id="task-1-gain-an-overview-of-the-situation-around-larkana">
 <h2>Task 1: Gain an overview of the situation around Larkana<a class="headerlink" href="#task-1-gain-an-overview-of-the-situation-around-larkana" title="Permalink to this heading">#</a></h2>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<figure class="align-right" id="ifrc-surge-icon">
-<a class="reference internal image-reference" href="../../_images/IFRC-icons-colour_SURGE.png"><img alt="../../_images/IFRC-icons-colour_SURGE.png" src="../../_images/IFRC-icons-colour_SURGE.png" style="width: 100px;" /></a>
-</figure>
-<p class="sd-card-text"><strong>Context:</strong></p>
-<p class="sd-card-text">You have been deployed as an information manager to the flood-affected regions of Pakistan. Upon your arrival you received reports from the operations team indicating that the city of <a class="reference external" href="https://www.openstreetmap.org/#map=12/27.5565/68.1672">Larkana</a> and its surrounding areas have been severely affected by the floods. The team needs a general overview of the location of the city.</p>
-</div>
-</div>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
-<div class="admonition tip">
+<div class="note admonition">
 <p class="admonition-title">Tip</p>
 <p>You cannot interact with a base map!</p>
 </div>
@@ -784,15 +761,6 @@ To select the surrounding districts, click on the <code class="docutils literal 
 </section>
 <section id="task-2-estimation-of-flood-impact-on-the-health-sector-in-larkana">
 <h2>Task 2: Estimation of Flood Impact on the Health Sector in Larkana<a class="headerlink" href="#task-2-estimation-of-flood-impact-on-the-health-sector-in-larkana" title="Permalink to this heading">#</a></h2>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<figure class="align-right" id="ifrc-health-icon">
-<a class="reference internal image-reference" href="../../_images/IFRC-icons-colour_Health.svg"><img alt="../../_images/IFRC-icons-colour_Health.svg" src="../../_images/IFRC-icons-colour_Health.svg" width="100px" /></a>
-</figure>
-<p class="sd-card-text"><strong>Context:</strong></p>
-<p class="sd-card-text">Posts on social media have indicated a significant impact on the healthcare system in the region. You have been tasked to find out as much as you can about the situation and, if feasible, to estimate the impact on the health system.</p>
-</div>
-</div>
 <ol class="arabic simple">
 <li><p>The first thing to do is to find out where the health facilities are located in the area. To do that, you do a quick search on HDX. You find the dataset Pakistan Health Facilities (OpenStreetMap Export). This will do for now.</p>
 <ul class="simple">
@@ -915,33 +883,9 @@ Now, you can write <code class="docutils literal notranslate"><span class="pre">
 <p><span class="caption-text">Flood affected health facilities classification</span><a class="headerlink" href="#flood-affected-health-facilities-classification" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-header docutils">
-<p class="sd-card-text"><strong>Achievement:</strong></p>
-</div>
-<div class="sd-card-body docutils">
-<p class="sd-card-text">We’ve pinpointed the specific health facilities that have been inundated by the floods. Our findings indicate that a total of four facilities have been completely flooded and are currently non-operational. Considering we assessed the minimum flood impact, it’s highly probable that more health facilities will also be impacted. This data is crucial for our operational team as it will enable them to strategize and execute an effective response.</p>
-</div>
-</div>
 </section>
 <section id="task-3-logistical-access-to-larkana-city">
 <h2>Task 3: Logistical access to Larkana City<a class="headerlink" href="#task-3-logistical-access-to-larkana-city" title="Permalink to this heading">#</a></h2>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<figure class="align-right" id="ifrc-logistics-icon">
-<a class="reference internal image-reference" href="../../_images/IFRC-icons-colour_Logistics.svg"><img alt="../../_images/IFRC-icons-colour_Logistics.svg" src="../../_images/IFRC-icons-colour_Logistics.svg" width="100px" /></a>
-</figure>
-<p class="sd-card-text"><strong>Context:</strong></p>
-<p class="sd-card-text">The operations team is making plans to deliver much-needed supplies to the affected region around Larkana. Currently, there is uncertainty about how the supplies can be transported there. The operations team has asked for more information on this topic.</p>
-<p class="sd-card-text">They need answers to the following three questions:</p>
-<ul class="simple">
-<li><p class="sd-card-text">Which roads leading into Larkana are blocked, and at what specific locations are they blocked?</p></li>
-<li><p class="sd-card-text">Are there any bridges that can be crossed from the eastern side of the Indus to the western side, and where are these bridges located?</p></li>
-<li><p class="sd-card-text">If transporting supplies by road into the region is not feasible, what alternative method could be used to deliver the supplies?</p></li>
-</ul>
-<p class="sd-card-text">In order to get a clearer picture, we need to import the road network data for the region into QGIS. Look for the file in the input folder. The road network is initially displayed without showing any road types or other relevant details. We should apply a categorized classification technique only to display the specific roads that we are interested in.</p>
-</div>
-</div>
 <ol class="arabic">
 <li><p>Load the dataset <strong>“Roads_Larkana.gpkg”</strong> from your input folder into your QGIS.</p></li>
 <li><p>For categorized classification right-click on the layer <strong>“Roads_Larkana”</strong> in the Layer Panel and click on <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. A new window will open up with a vertical tab section on the left. Navigate to the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> tab (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html">Wiki Video</a>).</p>
@@ -953,7 +897,7 @@ Now, you can write <code class="docutils literal notranslate"><span class="pre">
 <figure class="align-center" id="pakistan-road-classification">
 <a class="reference internal image-reference" href="../../_images/PAK_road_classification.PNG"><img alt="../../_images/PAK_road_classification.PNG" src="../../_images/PAK_road_classification.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Pakistan road classification</span><a class="headerlink" href="#pakistan-road-classification" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">The symbolisation window for the Roads_Larkana.gpkg layer.</span><a class="headerlink" href="#pakistan-road-classification" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
@@ -962,7 +906,7 @@ Now, you can write <code class="docutils literal notranslate"><span class="pre">
 <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../_images/PAK_road_symbol_weight.png"><img alt="../../_images/PAK_road_symbol_weight.png" src="../../_images/PAK_road_symbol_weight.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Pakistan road classification</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Adjusting the symbolisation of the different road types</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
@@ -974,7 +918,7 @@ Now, you can write <code class="docutils literal notranslate"><span class="pre">
 <p class="sidebar-title"></p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>There are methods to automate this process which will be covered in [module 5: Intermediate GIS Operations](file:///C:/Projekte/02_Arbeit/HeiGIT/RCRC_QGIS_Training_Platform/gis-training-resource-center/_build/html/content/Module_5/en_module_5_overview.html)</p>
+<p>There are methods to automate this process which will be covered in <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_5/en_module_5_overview.html">module 5: Intermediate GIS Operations</a></p>
 </div>
 </aside>
 <ol class="arabic" start="3">
@@ -1003,21 +947,31 @@ Now, you can write <code class="docutils literal notranslate"><span class="pre">
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../_images/PAK_blocked_road_new_layer.png"><img alt="../../_images/PAK_blocked_road_new_layer.png" src="../../_images/PAK_blocked_road_new_layer.png" style="width: 400px;" /></a>
 <figcaption>
-<p><span class="caption-text">New layer blocked roads</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Creating a new point layer. Make sure to specify a location using the three points at the top.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </li>
-<li><p>Now you can create a point for each place where the flood layer covers the main roads leading out of Larkana <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#creation-of-point-data">wiki</a>. Currently the new layer <strong>“PAK_flood_2024_blocked_road”</strong> is empty. To add features we can use the <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code>. If you cannot see the toolbar, click on the tab <code class="docutils literal notranslate"><span class="pre">View</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Toolbars</span></code> and check <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code> (<span class="xref myst">Wiki Video</span>).  <img alt="" src="../../_images/Digitizing_Toolbar.png" /></p>
+</ol>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you cannot see the toolbar, click on the tab <code class="docutils literal notranslate"><span class="pre">View</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Toolbars</span></code> and check <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code> (<span class="xref myst">Wiki Video</span>)</p>
+</div>
+</aside>
+<ol class="arabic" start="4">
+<li><p>Now you can create a point for each place where the flood layer covers the main roads leading out of Larkana <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#creation-of-point-data">wiki</a>.</p>
 <ul class="simple">
-<li><p>Activate the editing mode by clicking on <img alt="" src="../../_images/mActionToggleEditing.png" />. Activate then the option to add new points by clicking on <img alt="" src="../../_images/mActionCapturePoint.png" />.</p></li>
+<li><p>Currently the new layer <strong>“PAK_flood_2024_blocked_road”</strong> is empty. To add features we can use the <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code>.  <img alt="" src="../../_images/Digitizing_Toolbar.png" /></p></li>
+<li><p>Activate the editing mode by clicking on <img alt="" src="../../_images/mActionToggleEditing.png" />. Next, activate the option to add new points by clicking on <img alt="" src="../../_images/mActionCapturePoint.png" /> <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Point</span> <span class="pre">Feature</span></code> .</p></li>
 <li><p>Look out for places where the flood layer covers the main roads or bridges leading out of Larkana. Once you have found one, left-click on the location you want to digitise.</p></li>
 <li><p>Once you click on a place, a window will appear. Indicate that the road is blocked by writing <code class="docutils literal notranslate"><span class="pre">Yes</span></code> in the field <code class="docutils literal notranslate"><span class="pre">Blocked_road</span></code>.</p></li>
 <li><p>Repeat this step with all the locations your can find.</p></li>
 </ul>
 <figure class="align-center" id="digitalising-blocked-roads">
-<a class="reference internal image-reference" href="../../_images/PAK_blocked_road_digitalise.png"><img alt="../../_images/PAK_blocked_road_digitalise.png" src="../../_images/PAK_blocked_road_digitalise.png" style="width: 200px;" /></a>
+<a class="reference internal image-reference" href="../../_images/PAK_blocked_road_digitalise.png"><img alt="../../_images/PAK_blocked_road_digitalise.png" src="../../_images/PAK_blocked_road_digitalise.png" style="width: 400px;" /></a>
 <figcaption>
-<p><span class="caption-text">Digitalising blocked roads</span><a class="headerlink" href="#digitalising-blocked-roads" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">This pop-up will open once you have selected a location to add a point. Make sure to enter the relevant information in the columns.</span><a class="headerlink" href="#digitalising-blocked-roads" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
@@ -1035,7 +989,7 @@ Now, you can write <code class="docutils literal notranslate"><span class="pre">
 <figure class="align-center" id="visulsing-blocked-roads-with-icons">
 <a class="reference internal image-reference" href="../../_images/PAK_blocked_road_symbol.png"><img alt="../../_images/PAK_blocked_road_symbol.png" src="../../_images/PAK_blocked_road_symbol.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Visulsing blocked roads with icons</span><a class="headerlink" href="#visulsing-blocked-roads-with-icons" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Adjusting the symbolisation for the new point layer. Make sure to choose a marker that can be easily identified.</span><a class="headerlink" href="#visulsing-blocked-roads-with-icons" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </li>
@@ -1056,13 +1010,11 @@ Now, you can write <code class="docutils literal notranslate"><span class="pre">
 </figcaption>
 </figure>
 </div>
-</details><div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<p class="sd-card-text">The operations team has now all the information they need to plan their logistics. Good Job!</p>
-</div>
-</div>
-<div class="note admonition">
+</details><div class="note admonition">
 <p class="admonition-title">Continue along this exercise track</p>
+<figure class="align-right" id="ifrc-map-icon">
+<a class="reference internal image-reference" href="../../_images/IFRC-icons-colour_Map.png"><img alt="../../_images/IFRC-icons-colour_Map.png" src="../../_images/IFRC-icons-colour_Map.png" style="width: 100px;" /></a>
+</figure>
 <p>This exercise is part of the <strong>Larkana Flood Response Exercise track</strong> and continues with an exercise in module 4.</p>
 <p>Click [here] if you want to continue to the next exercise of this exercise track.</p>
 </div>
