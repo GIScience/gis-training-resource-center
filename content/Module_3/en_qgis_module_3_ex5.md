@@ -480,6 +480,14 @@ The operations team has now all the information they need to plan their logistic
 :::{admonition} Continue along this exercise track
 :class: note
 
+```{figure} /fig/IFRC-icons-colour_Map.png
+---
+width: 100px
+align: right
+name: IFRC map icon
+---
+```
+
 This exercise is part of the __Larkana Flood Response Exercise track__ and continues with an exercise in module 4.
 
 Click [here] if you want to continue to the next exercise of this exercise track.
