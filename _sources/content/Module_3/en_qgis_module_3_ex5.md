@@ -490,7 +490,13 @@ name: IFRC map icon
 
 This exercise is part of the __Larkana Flood Response Exercise track__ and continues with an exercise in module 4.
 
-Click [here] if you want to continue to the next exercise of this exercise track.
+Click [here](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I_ex4.html) if you want to continue to the next exercise of this exercise track.
 
 :::
 
+
+
+:::{topic} HELLO
+TESTESTESTEST
+
+:::
