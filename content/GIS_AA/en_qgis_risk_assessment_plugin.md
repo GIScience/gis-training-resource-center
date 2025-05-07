@@ -84,6 +84,14 @@ The required input files must follow a given structure. Here you find the requir
 
 A geospatial vector format (geojson, geopackage, shapefile,…) containing the administrative boundaries and P-Codes of the respective countries. These can be found on the websites of national governments or on Humanitarian Data Exchange, for example. This dataset has two obligatory columns: “ADM_PCODE” containing the P_Codes and “ADM_EN” containing the names of the administrative boundaries. The administrative boundary data does not require a specific coordinate reference system (CRS), but the output and result will have the same CRS as the input.
 
+```{figure} /fig/mada_adm.PNG
+---
+height: 400px
+name: mada_adm
+align: center
+---
+```
+
 ### 2. Risk Assessment indicators
 
 For the Risk Assessment indicators the following 3 “csv”-files are mandatory:
@@ -107,10 +115,10 @@ align: center
 
 A "csv"-file containing a column "variable_name" with all the column names of the previous "csv"-files, which are to be weighted differently in the calculation. The file must also contain the columns “category”, “weight” and “direction”. The category column indicates the category of the indicator: “exp” for exposure, “cop” for coping capacity and “vul” for vulnerability. The weight determines the importance of each indicator. For each category (exp, cop and vul), the sum of the weights must add up to 1. If this is not the case, the plugin will automatically normalize the weights in order to make the sum equal to 1 within each category. A message will be printed with the value of the transformed weights. For more information about weights and directions see chapter weight and directions.
 
-```{figure} /fig/weights_example.PNG
+```{figure} /fig/mada_weights.PNG
 ---
 height: 400px
-name: weights_example
+name: mada_weights
 align: center
 ---
 ```
