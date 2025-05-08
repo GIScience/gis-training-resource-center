@@ -123,6 +123,8 @@ align: center
 ---
 ```
 
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/risk_assessment_weight_generator.mp4"></video>
+
 
 ### Data Output
 
