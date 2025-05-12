@@ -623,6 +623,10 @@ document.write(`
 </div>
 </div>
 </div>
+<aside class="topic">
+<p class="topic-title">Context</p>
+<p>In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. The following analysis will utilize actual data from this natural disaster. The objective is to pinpoint the specific medical centers and healthcare facilities that were impacted by the flooding. Additionally, we will assess the viability of road access to the city of Larkana throughout the flood period.</p>
+</aside>
 <section id="instructions-for-the-trainers">
 <h2>Instructions for the trainers<a class="headerlink" href="#instructions-for-the-trainers" title="Permalink to this heading">#</a></h2>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -717,6 +721,13 @@ To keep your data organized and easily accessible, it’s important to establish
 </section>
 <section id="task-1-gain-an-overview-of-the-situation-around-larkana">
 <h2>Task 1: Gain an overview of the situation around Larkana<a class="headerlink" href="#task-1-gain-an-overview-of-the-situation-around-larkana" title="Permalink to this heading">#</a></h2>
+<aside class="topic">
+<p class="topic-title">Context</p>
+<figure class="align-right" id="ifrc-surge-icon">
+<a class="reference internal image-reference" href="../../_images/IFRC-icons-colour_SURGE.png"><img alt="../../_images/IFRC-icons-colour_SURGE.png" src="../../_images/IFRC-icons-colour_SURGE.png" style="width: 100px;" /></a>
+</figure>
+<p>You have been deployed as an information manager to the flood-affected regions of Pakistan. Upon your arrival you received reports from the operations team indicating that the city of <a class="reference external" href="https://www.openstreetmap.org/#map=12/27.5565/68.1672">Larkana</a> and its surrounding areas have been severely affected by the floods. The team needs a general overview of the location of the city.</p>
+</aside>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <div class="note admonition">
@@ -761,6 +772,13 @@ To select the surrounding districts, click on the <code class="docutils literal 
 </section>
 <section id="task-2-estimation-of-flood-impact-on-the-health-sector-in-larkana">
 <h2>Task 2: Estimation of Flood Impact on the Health Sector in Larkana<a class="headerlink" href="#task-2-estimation-of-flood-impact-on-the-health-sector-in-larkana" title="Permalink to this heading">#</a></h2>
+<aside class="topic">
+<p class="topic-title">Context</p>
+<figure class="align-right" id="ifrc-health-icon">
+<a class="reference internal image-reference" href="../../_images/IFRC-icons-colour_Health.svg"><img alt="../../_images/IFRC-icons-colour_Health.svg" src="../../_images/IFRC-icons-colour_Health.svg" width="100px" /></a>
+</figure>
+<p>Posts on social media have indicated a significant impact on the healthcare system in the region. You have been tasked to find out as much as you can about the situation and, if feasible, to estimate the impact on the health system.</p>
+</aside>
 <ol class="arabic simple">
 <li><p>The first thing to do is to find out where the health facilities are located in the area. To do that, you do a quick search on HDX. You find the dataset Pakistan Health Facilities (OpenStreetMap Export). This will do for now.</p>
 <ul class="simple">
@@ -883,9 +901,31 @@ Now, you can write <code class="docutils literal notranslate"><span class="pre">
 <p><span class="caption-text">Flood affected health facilities classification</span><a class="headerlink" href="#flood-affected-health-facilities-classification" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Achievement:</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">We’ve pinpointed the specific health facilities that have been inundated by the floods. Our findings indicate that a total of four facilities have been completely flooded and are currently non-operational. Considering we assessed the minimum flood impact, it’s highly probable that more health facilities will also be impacted. This data is crucial for our operational team as it will enable them to strategize and execute an effective response.</p>
+</div>
+</div>
 </section>
 <section id="task-3-logistical-access-to-larkana-city">
 <h2>Task 3: Logistical access to Larkana City<a class="headerlink" href="#task-3-logistical-access-to-larkana-city" title="Permalink to this heading">#</a></h2>
+<aside class="topic">
+<p class="topic-title">Context</p>
+<figure class="align-right" id="ifrc-logistics-icon">
+<a class="reference internal image-reference" href="../../_images/IFRC-icons-colour_Logistics.svg"><img alt="../../_images/IFRC-icons-colour_Logistics.svg" src="../../_images/IFRC-icons-colour_Logistics.svg" width="100px" /></a>
+</figure>
+<p>The operations team is making plans to deliver much-needed supplies to the affected region around Larkana. Currently, there is uncertainty about how the supplies can be transported there. The operations team has asked for more information on this topic.</p>
+<p>They need answers to the following three questions:</p>
+<ul class="simple">
+<li><p>Which roads leading into Larkana are blocked, and at what specific locations are they blocked?</p></li>
+<li><p>Are there any bridges that can be crossed from the eastern side of the Indus to the western side, and where are these bridges located?</p></li>
+<li><p>If transporting supplies by road into the region is not feasible, what alternative method could be used to deliver the supplies?</p></li>
+</ul>
+<p>In order to get a clearer picture, we need to import the road network data for the region into QGIS. Look for the file in the input folder. The road network is initially displayed without showing any road types or other relevant details. We should apply a categorized classification technique only to display the specific roads that we are interested in.</p>
+</aside>
 <ol class="arabic">
 <li><p>Load the dataset <strong>“Roads_Larkana.gpkg”</strong> from your input folder into your QGIS.</p></li>
 <li><p>For categorized classification right-click on the layer <strong>“Roads_Larkana”</strong> in the Layer Panel and click on <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. A new window will open up with a vertical tab section on the left. Navigate to the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> tab (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html">Wiki Video</a>).</p>
@@ -918,7 +958,7 @@ Now, you can write <code class="docutils literal notranslate"><span class="pre">
 <p class="sidebar-title"></p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>There are methods to automate this process which will be covered in <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_5/en_module_5_overview.html">module 5: Intermediate GIS Operations</a></p>
+<p>There are methods to automate the digitisation process which will be covered in <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_5/en_module_5_overview.html">module 5: Intermediate GIS Operations</a></p>
 </div>
 </aside>
 <ol class="arabic" start="3">
@@ -1010,7 +1050,12 @@ Now, you can write <code class="docutils literal notranslate"><span class="pre">
 </figcaption>
 </figure>
 </div>
-</details><div class="note admonition">
+</details><div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">The operations team has now all the information they need to plan their logistics. Good Job!</p>
+</div>
+</div>
+<div class="note admonition">
 <p class="admonition-title">Continue along this exercise track</p>
 <figure class="align-right" id="ifrc-map-icon">
 <a class="reference internal image-reference" href="../../_images/IFRC-icons-colour_Map.png"><img alt="../../_images/IFRC-icons-colour_Map.png" src="../../_images/IFRC-icons-colour_Map.png" style="width: 100px;" /></a>
@@ -1018,10 +1063,6 @@ Now, you can write <code class="docutils literal notranslate"><span class="pre">
 <p>This exercise is part of the <strong>Larkana Flood Response Exercise track</strong> and continues with an exercise in module 4.</p>
 <p>Click <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I_ex4.html">here</a> if you want to continue to the next exercise of this exercise track.</p>
 </div>
-<aside class="topic">
-<p class="topic-title">HELLO</p>
-<p>TESTESTESTEST</p>
-</aside>
 </section>
 </section>
 

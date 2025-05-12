@@ -58,9 +58,7 @@ __Relevant wiki articles and module chapters__
 :::
 ::::
 
-:::{topic}
-__Context__
-^^^
+:::{topic} Context
 
 In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. The following analysis will utilize actual data from this natural disaster. The objective is to pinpoint the specific medical centers and healthcare facilities that were impacted by the flooding. Additionally, we will assess the viability of road access to the city of Larkana throughout the flood period.
 
@@ -137,7 +135,7 @@ width: 450 px
 
 ## Task 1: Gain an overview of the situation around Larkana 
 
-:::{topic}
+:::{topic} Context
 
 ```{figure} /fig/IFRC-icons-colour_SURGE.png
 ---
@@ -147,7 +145,6 @@ name: IFRC Surge Icon
 ---
 ```
 
-__Context:__ 
 
 You have been deployed as an information manager to the flood-affected regions of Pakistan. Upon your arrival you received reports from the operations team indicating that the city of [Larkana](https://www.openstreetmap.org/#map=12/27.5565/68.1672) and its surrounding areas have been severely affected by the floods. The team needs a general overview of the location of the city.
 
@@ -193,7 +190,7 @@ Do not forget to save your project from time to time!
 
 ## Task 2: Estimation of Flood Impact on the Health Sector in Larkana
 
-::::{topic}
+::::{topic} Context
 
 ```{figure} /fig/IFRC-icons-colour_Health.svg
 ---
@@ -202,8 +199,6 @@ align: right
 name: IFRC HEalth Icon
 ---
 ```
-
-__Context:__ 
 
 Posts on social media have indicated a significant impact on the healthcare system in the region. You have been tasked to find out as much as you can about the situation and, if feasible, to estimate the impact on the health system.
 
@@ -323,7 +318,7 @@ align: center
 Flood affected health facilities classification
 ```
 
-:::{topic} 
+:::{card} 
 __Achievement:__
 ^^^
 
@@ -333,7 +328,7 @@ We've pinpointed the specific health facilities that have been inundated by the 
 
 ## Task 3: Logistical access to Larkana City
 
-:::{topic}
+::::{topic} Context
 
 ```{figure} /fig/IFRC-icons-colour_Logistics.svg
 ---
@@ -345,8 +340,6 @@ name: IFRC Logistics Icon
 ---
 ```
 
-__Context:__ 
-
 The operations team is making plans to deliver much-needed supplies to the affected region around Larkana. Currently, there is uncertainty about how the supplies can be transported there. The operations team has asked for more information on this topic.
 
 They need answers to the following three questions:
@@ -355,7 +348,7 @@ They need answers to the following three questions:
 * If transporting supplies by road into the region is not feasible, what alternative method could be used to deliver the supplies?
 
 In order to get a clearer picture, we need to import the road network data for the region into QGIS. Look for the file in the input folder. The road network is initially displayed without showing any road types or other relevant details. We should apply a categorized classification technique only to display the specific roads that we are interested in.
-:::
+::::
 
 1. Load the dataset __"Roads_Larkana.gpkg"__ from your input folder into your QGIS.
 2. For categorized classification right-click on the layer __"Roads_Larkana"__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html)).
@@ -386,7 +379,7 @@ In order to get a clearer picture, we need to import the road network data for t
 ::::{margin}
 :::{tip}
 
-There are methods to automate this process which will be covered in [module 5: Intermediate GIS Operations](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_module_5_overview.html)
+There are methods to automate the digitisation process which will be covered in [module 5: Intermediate GIS Operations](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_module_5_overview.html)
 :::
 ::::
 
@@ -470,7 +463,7 @@ Road access to Mohenjodaro Airport
 ```
 :::
 
-:::{topic}
+:::{card} 
 
 The operations team has now all the information they need to plan their logistics. Good Job!
 
@@ -491,12 +484,5 @@ name: IFRC map icon
 This exercise is part of the __Larkana Flood Response Exercise track__ and continues with an exercise in module 4.
 
 Click [here](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I_ex4.html) if you want to continue to the next exercise of this exercise track.
-
-:::
-
-
-
-:::{topic} HELLO
-TESTESTESTEST
 
 :::
