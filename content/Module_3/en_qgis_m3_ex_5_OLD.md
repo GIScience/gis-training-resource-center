@@ -140,7 +140,6 @@ name: IFRC Surge Icon
 ---
 ```
 
-
 You have been deployed as an information manager to the flood-affected regions of Pakistan. Upon your arrival you received reports from the operations team indicating that the city of [Larkana](https://www.openstreetmap.org/#map=12/27.5565/68.1672) and its surrounding areas have been severely affected by the floods. The team needs a general overview of the location of the city.
 
 :::
@@ -159,7 +158,7 @@ You cannot interact with a base map!
 4. Next, load the GeoPackage __"PAK_Sindh_adm2.gpkg"__ in your project by drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)). Or click on `Layer`-> `Add Layer`-> `Add Vector Layer`. Click on the three points ![](/fig/Three_points.png) and navigate to __"PAK_Sindh_adm2.gpkg"__. Select the file and click `Open`. Back in QGIS click `Add` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)).
 
 
-``` {Attention}
+```{Attention}
 GeoPackage files can contain multiple files and even entire QGIS projects. When you load such a file in QGIS a window will appear in which you have to select the files you want to load in your QGIS project.
 ```
 
@@ -171,17 +170,17 @@ GeoPackage files can contain multiple files and even entire QGIS projects. When 
     * Now right-click on the layer in the Layer Panel and click on `Export` -> `Save Selected Features as`. We want to save the selected districts as a GeoPackage, so choose the `Format` option accordingly. Click on the three points and navigate to your `temp` folder. Here you can give it the layer the name __“Flood_2024_AOI”__ and click `Save`. Now you should see the same name in the `Layer name` field. Click `ok`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_queries_wiki.html#save-selected-features-as-a-new-file))
     * Click on the icon ![](/fig/selection_toolbar_feature_deselection.png) in the toolbar to end the feature selection.
 
-:::{card}
-__Achievement:__
-^^^
+:::{topic} Achievement
 
 Now you have an overview of where the district of Larkana is located in Sindh. The operations team can use this information. 
 
 :::
 
+::::{margin}
 ```{Tip}
 Do not forget to save your project from time to time!
 ```
+::::
 
 ## Task 2: Estimation of Flood Impact on the Health Sector in Larkana
 
