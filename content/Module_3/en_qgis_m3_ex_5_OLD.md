@@ -140,7 +140,6 @@ name: IFRC Surge Icon
 ---
 ```
 
-
 You have been deployed as an information manager to the flood-affected regions of Pakistan. Upon your arrival you received reports from the operations team indicating that the city of [Larkana](https://www.openstreetmap.org/#map=12/27.5565/68.1672) and its surrounding areas have been severely affected by the floods. The team needs a general overview of the location of the city.
 
 :::
@@ -159,29 +158,50 @@ You cannot interact with a base map!
 4. Next, load the GeoPackage __"PAK_Sindh_adm2.gpkg"__ in your project by drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)). Or click on `Layer`-> `Add Layer`-> `Add Vector Layer`. Click on the three points ![](/fig/Three_points.png) and navigate to __"PAK_Sindh_adm2.gpkg"__. Select the file and click `Open`. Back in QGIS click `Add` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)).
 
 
-``` {Attention}
+```{Attention}
 GeoPackage files can contain multiple files and even entire QGIS projects. When you load such a file in QGIS a window will appear in which you have to select the files you want to load in your QGIS project.
 ```
 
-5. First, we want to export __Larkana District__ and the neighbouring districts __Kambar Shahdad Kot__, __Shikarpur__  and __Sukkur__ from __PAK_adm2_Sindh__ to have it as a stand-alone vector layer. To do that: 
-    * Open the attribute table of __PAK_adm2_Sindh__ by right click on the layer  -> `Open Attribute Table`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html)).
-    * Find the row of Larkana and mark it by clicking on the number on the very left-hand side of the attribute table. The row will appear blue and the area of Larkana will turn yellow on the map canvas. You can right-click on the row and click `Zoom to Feature`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature)).
-    To select the surrounding districts, click on the `Select Feature(s)` ![](/fig/selection_toolbar_feature_selection.png) icon in the QGIS Toolbar, hold the `Shift` button on your keyboard, and click on the districts either on the map or the attribute table ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_queries_wiki.html#manual-selection)).
-    * After you are done selecting districts, click on the icon ![](/fig/qgis_move_symbol.png) to end the feature selection mode.
-    * Now right-click on the layer in the Layer Panel and click on `Export` -> `Save Selected Features as`. We want to save the selected districts as a GeoPackage, so choose the `Format` option accordingly. Click on the three points and navigate to your `temp` folder. Here you can give it the layer the name __“Flood_2024_AOI”__ and click `Save`. Now you should see the same name in the `Layer name` field. Click `ok`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_queries_wiki.html#save-selected-features-as-a-new-file))
-    * Click on the icon ![](/fig/selection_toolbar_feature_deselection.png) in the toolbar to end the feature selection.
-
-:::{card}
-__Achievement:__
-^^^
+5. To get an overview of the situation, we want to export the administrative boundaries for our Area of Interest (AOI). To do this, we want to export the district __Larkana__, as well as the neighbouring districts __Kambar Shahdad Kot__, __Shikarpur__ and __Sukkur__ from the `PAK_adm2_Sindh`-layer. 
+    - <kbd>Right-Click</kbd> on the `PAK_adm2_Sindh`-layer and select [`Open Attribute table`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html).
+    - Find the the column `ADM2_EN` and find the row for the district of Larkana.
+    - <kbd>Click</kbd> on the numbers all the way to the left of the attribute table window to select the Larkana feature. The row will appear blue and the area of Larkana will turn yellow on the map canvas. 
+    - <kbd>Click</kbd> on `Zoom Map to selected rows` in the top bar of the attribute table window. ![](/fig/qgis_3.36_zoom_to_selected_rows_at.png)
+    - Close the attribute table. 
+    ::::{margin}
+    :::{tip}
+    Holding <kbd>Ctrl</kbd> while selecting features let's you add more features to your current selection. Otherwise, you will deselect the previous polygon. 
+    Keep in mind that you can only select features from the layer you have currently selected in the layers panel. 
+    ::::
+    - In the toolbar at the top of the QGIS-window, select the tool `Select Feature(s)` ![](/fig/selection_toolbar_feature_selection.png). Hold <kbd>Ctrl</kbd> and <kbd>Click</kbd> on the districts that are surrounding the district of Larkana ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_queries_wiki.html#manual-selection)). The four selected districts should appear yellow on your map canvas. 
+    <!--FIX: The districts named are not the only ones surrounding the -->
+    - Deactivate the `Select Feature(s)`-tool by clicking on the icon ![](/fig/qgis_move_symbol.png) in the toolbar at the top of your QGIS-window. 
+    - We can now export the selected features and save them to a new file. Right click on the `PAK_adm2_Sindh` layer and select `Export` > `Save Selected Features as`. 
+    - A new window will open. Here, you can select how and where the selected features are saved. 
+    ```{figure} /fig/en_qgis_3.36_m3_ex5_export_features.png
+    ---
+    name: m3_ex5_export_selection
+    width: 450 px
+    ---
+    Make sure to save the geopackage in the correct location by clicking on the three dots to the right of the `File name`-field
+    ```
+    - Under `Format`, select geopackage.
+    - To the right of the `File name`-field, click on the three dots. Navigate to the folder with the exercise data and save it in the `data/temp/` folder. 
+    - Enter a layer name. For example, "__Flood_2024_AOI__". 
+    - Click `Ok`. The exported layer should appear in your layers panel. 
+     
+   
+:::{topic} Achievement
 
 Now you have an overview of where the district of Larkana is located in Sindh. The operations team can use this information. 
 
 :::
 
+::::{margin}
 ```{Tip}
 Do not forget to save your project from time to time!
 ```
+::::
 
 ## Task 2: Estimation of Flood Impact on the Health Sector in Larkana
 
@@ -199,9 +219,23 @@ Posts on social media have indicated a significant impact on the healthcare syst
 
 ::::
 
-1. The first thing to do is to find out where the health facilities are located in the area. To do that, you do a quick search on HDX. You find the dataset Pakistan Health Facilities (OpenStreetMap Export). This will do for now.
+1. The first thing to do is to find out where the health facilities are located in the area. To do that, you do a quick search on HDX. You find the dataset Pakistan Health Facilities (OpenStreetMap Export). This will do for now. The dataset is already available in the downloaded folder. 
 
-    * Load the GeoPackage __"PAK_Health_Facilities_complete.gpkg"__ in your project by drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)). Or click on `Layer`-> `Add Layer`-> `Add Vector Layer`. Click on the three points ![](/fig/Three_points.png) and navigate to __"PAK_Sindh_adm2.gpkg"__. Select the file and click `Open`. Back in QGIS click `Add` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)).
+    - Import the GeoPackage `PAK_Health_Facilities_complete.gpgk` into your project. You can either drag it onto the map canvas, or open the import window by clicking on `Layer` > `Add Layer` > `Add Vector Layer` in the top bar of QGIS ([see wiki page](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)). A new layer with point data will appear on your map canvas. 
+    - Once we have the imported the healthsites, we can extract the healthsites that are located inside of our Area of Interest. We can achieve this with the tool `Extract by Location`. 
+    - In the __Processing Toolbox__ ([Opening the toolbox](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox)), search for the tool "Extract by Location". <kbd>Double-Click</kbd> on it. A new window will open.
+    ```{figure} /fig/PAK_extract_locatio_HS.png
+    ---
+    width: 400px
+    name: Extract by location Pakistan
+    align: center
+    ---
+    Extract by location Pakistan
+    ```
+    - As `Input Layer`, select the layer `PAK_Health_Facilities_complete`. 
+    - Under `By comparing to the features from`, select the area of interest layer "__Flood_2024_AOI__".
+    - 
+
     * First, we must extract the health facilities in our area of interest. We will use the tool __"Extract by Location"__ to do that.
     * Open the `Processing Toolbox` ([here is how](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox)) and search for the tool.
         * As `Input Layer` we will use “PAK_Health_Facilities_complete”.
