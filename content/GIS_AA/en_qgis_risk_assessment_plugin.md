@@ -123,12 +123,29 @@ align: center
 ---
 ```
 
+### WeightsGenerator Plugin
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/risk_assessment_open_weight_generator.mp4"></video>
+When you install the Risk Assessment plugin, another plugin is automatically installed alongside it: the WeightsGenerator plugin. This tool allows you to manually assign weights and directions to indicators, without the need to load a pre-prepared weights CSV file.
 
+To verify that the plugin was installed correctly, look for the following icon on the QGIS toolbar:
+
+```{figure} /fig/weightsgenerator.png
+---
+height: 400px
+name: weightsgenerator
+align: center
+---
+```
+
+Clicking the icon opens a window where you can browse exposure, coping, and vulnerability indicators using the button on the right. Once selected, the indicators will appear in the table below.
+
+You can manually enter the weight and direction values in the corresponding rows. If you click the "Default weights" button in the bottom-right corner, each indicator will be assigned a weight value of 1. This means that no weighting is applied—all indicators are treated as equally important in the risk calculation.
+
+By clicking "OK", you save the weights file locally as a CSV file. At the same time, it will appear as a layer in the QGIS Layers panel.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/risk_assessment_weight_generator.mp4"></video>
 
+In the bottom-left corner of the window, there is also a "Load Weights File" button. This allows you to load an existing weights CSV file, which you can edit—for example, by changing individual values or adding new indicators.
 
 ### Data Output
 
