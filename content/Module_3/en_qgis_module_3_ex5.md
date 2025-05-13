@@ -204,7 +204,9 @@ Do not forget to save your project from time to time!
 
 ## Task 2: Estimation of Flood Impact on the Health Sector in Larkana
 
-::::{topic} Context
+::::{card} 
+__Context__
+^^^
 
 ```{figure} /fig/IFRC-icons-colour_Health.svg
 ---
@@ -219,7 +221,6 @@ Posts on social media have indicated a significant impact on the healthcare syst
 ::::
 
 1. The first thing to do is to find out where the health facilities are located in the area. To do that, you do a quick search on HDX. You find the dataset Pakistan Health Facilities (OpenStreetMap Export). This will do for now. The dataset is already available in the downloaded folder. 
-
     - Import the GeoPackage `PAK_Health_Facilities_complete.gpgk` into your project. You can either drag it onto the map canvas, or open the import window by clicking on `Layer` > `Add Layer` > `Add Vector Layer` in the top bar of QGIS ([see wiki page](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)). A new layer with point data will appear on your map canvas. 
     - Once we have the imported the healthsites, we can extract the healthsites that are located inside of our Area of Interest. We can achieve this with the tool `Extract by Location`. 
     - In the __Processing Toolbox__ ([Opening the toolbox](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox)), search for the tool "Extract by Location". <kbd>Double-Click</kbd> on it. A new window will open.
@@ -249,23 +250,27 @@ align: center
 Extract by location Pakistan
 ```
 
-Ok, now we have a good overview of the location of health facilities. We need much better information about the flooded area to identify the health facilities impacted by the flood. Fortunately, the UN has just shared a dataset about the extent of floods. Satellite detected water extents from 08 to 12 August 2024 over Pakistan.
+Now we have an overview of the location of health facilities. However, we want to know which health facilities are impacted by the flood. Fortunately, the UN has just shared a dataset about the extent of floods from the 8th to the 12th of August, which we can overlay with our layer with the healthsites to identify the healthsites that are in the flooded area.
 
-2. Load the dataset __"VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp"__ into your QGIS.
+2. Import the dataset __"VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp"__ into your QGIS project.
 3. Once you have loaded the layers in QGIS, you can see that they are correctly displayed. However, upon checking the layer information, you can see that the new layers have a different Coordinate Reference System (CRS). They have the EPSG Code 9707 whereas our project has 4326 ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html#how-to-check-epsg-code-crs-of-your-qgis-project-and-change-it)).
     * Right click on the data layer, click on  “Properties”.
     * The “Layer Properties” Window of the data layer will open. Click on “Information”.
     * Under the headline “Coordinate Reference System (CRS)” you find all information about the CRS. The most important are:
-    - __Name:__     Here you find the EPSG Code.
-    - __Unites:__    Here you can find whether it is possible to use meters with this data layer, degrees or latitude and longitude. <!--ADD: Why is it a problem? Add explanation-->
+    - __Name:__     Here you find the EPSG-Code.
+    - __Units:__    Here you find information about the units of measurements used in the dataset. For example, either meters or degrees. <!--ADD: Why is it a problem? Add explanation-->
 4. This will be a problem as soon as we do something different then just displaying the layers. Since we want to manipulate the layers in the next step we need to reproject them first ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html#changing-the-projection-of-a-vector-layer)). 
     * Click on the `Vector` tab -> `Data Management Tools` -> `Reproject Layer` or search for the tool in the `Processing Toolbox`.
     * As `Input layer` select __"VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp"__
-    * Select as target CRS/ EPSG-Code __4326__.
+    * Select as target CRS/EPSG-Code __4326__.
     * Save the new file in your `temp` folder by clicking on the three dots ![](/fig/Three_points.png) next to `Reprojected`, specify the file name as __"2024_MinFloodExtend_reprojected"__.
-    * Click `Run`
-    * Delete the old layer from the layer panel by right click on the layer -> `Remove layer`.
-    * Adjust the opacity of the flood layer by right-clicking on layer __"2024_MinFloodExtend_reprojected"__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab. Adjusted the opacity to around 60 % by moving the slider.
+    * Click `Run`.
+    * Delete the old layer from the layer panel by right-clicking on the layer -> `Remove layer`.
+    * Adjust the opacity of the flood layer by right-clicking on layer __"2024_MinFloodExtend_reprojected"__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. 
+    - Navigate to the `Symbology`-tab.
+    - Adjust the opacity to around 60% by moving the slider.
+
+<!--Symbology tab has not been covered in the modules yet.-->
 
 We have observed that certain health facilities have been impacted by the flood. In order to visualise this information on the map, we plan to include a new attribute called __"affected"__ in the attribute table of __"Health_Facilities_Flood_2024_AOI"__.
 To accomplish this, our first step will involve selecting all the affected health facilities. A new column containing this information is then appended to the __"Health_Facilities_Flood_2024_AOI"__ attribute table.
@@ -311,9 +316,14 @@ The error message indicating invalid geometries
 
 ::::
 
-6.  Open the attribute table of __"Health_Facilities_Flood_2024_AOI"__ by right click on the layer  -> `Open Attribute Table`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html)) and activate the editing mode by clicking on ![](/fig/mActionToggleEditing.png) ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#change-data-in-the-attribute-table)). Now you are able to edit the data directly in the table.
+6.  We can edit the attribute table for the features that we have selected:
+    - Open the attribute table of __"Health_Facilities_Flood_2024_AOI"__ by right clicking on the layer  -> `Open Attribute Table`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html))
+    - Activate the editing mode by clicking on ![](/fig/mActionToggleEditing.png) ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#change-data-in-the-attribute-table)). Now you are able to edit the data directly in the table.
+    - We want to add a new column with the name __"Flood_affected"__ to identify which healthsites are located inside of the flood extent. Click on ![](/fig/mActionNewAttribute.png). A new window will open.
+    - In the `Add field`-window, add the name of the column and specify the `Type` to `Text (string)` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#add-new-column)). 
+    - 
+    - Click `Ok` . 
 
-7. First, we add a new column with the name __“Flood_affected”__. To do so, click on ![](/fig/mActionNewAttribute.png). In the `Add field` window, you have to add the name and set the `Type` to `Text(string)`. Click `OK` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#add-new-column))
 
 ```{figure} /fig/ PAK_flood_new_column.PNG
 ---
@@ -321,18 +331,24 @@ width: 300px
 name: New column Pakistan
 align: center
 ---
-Add new column
+Adding a new column to the attribute table
 ```
 
-8. Now look for the `Show all Features` option in the lower left corner and click on it. Then, select the option `Show selected features` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#manually-select-features-in-the-attribute-table)). This will filter the table to display only the rows that represent the health facilities directly impacted by the flood.
-Now, you can write `Yes` in the __"Flood_affected"__ column.
- * When you are done, click ![](/fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by again clicking on ![](/fig/mActionToggleEditing.png)([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#change-data-in-the-attribute-table)).
- * Click on the icon ![](/fig/selection_toolbar_feature_deselection.png) in the toolbar to end the feature selection.
+7. Next, we want to edit the rows in the attribute table for the features we have selected. 
+    - Look for the `Show all Features` option in the lower left corner and click on it.
+    - Select the option `Show selected features` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#manually-select-features-in-the-attribute-table)). This will filter the table to display only the rows that represent the health facilities directly impacted by the flood.
+    - Write `Yes` in the __"Flood_affected"__ column in each selected row. 
+    - When you are done, click ![](/fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by again clicking on ![](/fig/mActionToggleEditing.png)([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#change-data-in-the-attribute-table)).
+    - Click on the icon ![](/fig/selection_toolbar_feature_deselection.png) in the toolbar to end the feature selection.
 
-9. To visualise the enriched data set, we use the function "Categorized Classification" function. This means that we select a column from the attribute table and use the content as categories to sort and display the data ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html)).
-    * Right-click on the layer __"Health_Facilities_Flood_2024_AOI"__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
-    * On the top you find a dropdown menu. Open it and choose `Categorized`. Under `Value` select “Flood_affacted”.
-    * Further down the window, click on `Classify`.  Now you should see all unique values or attributes of the selected “Flood_affacted” column.  You can adjust the colours by double-clicking on each colour in the central field. Once you are done, click `Apply` and `OK` to close the symbology window.
+8. We can display the enriched dataset by visualising it using the categorised classification symbolisation method. This means that we select a column from the attribute table and use the values/content as categories to sort and display the data ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html)):
+    - In the layers panel, right-click on the layer __"Health_Facilities_Flood_2024_AOI"__ and select `Properties`. A new window will open up with a vertical tab section on the left.
+    - Navigate to the `Symbology` tab.
+    - At the top of the window, there is a dropdown menu. Open it and choose `Categorized`.
+    - Under `Value`, select the column we added, "Flood_affected".
+    - Further down in the window, click on `Classify`. The unique values of the column "Flood_affected" should appear.
+    - You can adjust the symbolisation and colour of each value by double-clicking on each color in the table. 
+    - Once you are done adjusting the colours, click `Apply`, then `Ok` to close the symbolisation window.  
 
 ```{figure} /fig/en_qgis_categorized_classification_Pakistan_flood_exercise.png
 ---
@@ -353,14 +369,14 @@ We've pinpointed the specific health facilities that have been inundated by the 
 
 ## Task 3: Logistical access to Larkana City
 
-::::{topic} Context
+::::{card}
+__Context__
+^^^
 
 ```{figure} /fig/IFRC-icons-colour_Logistics.svg
 ---
 width: 100px
-name: 
 align: right
-
 name: IFRC Logistics Icon
 ---
 ```
@@ -375,11 +391,16 @@ They need answers to the following three questions:
 In order to get a clearer picture, we need to import the road network data for the region into QGIS. Look for the file in the input folder. The road network is initially displayed without showing any road types or other relevant details. We should apply a categorized classification technique only to display the specific roads that we are interested in.
 ::::
 
-1. Load the dataset __"Roads_Larkana.gpkg"__ from your input folder into your QGIS.
-2. For categorized classification right-click on the layer __"Roads_Larkana"__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html)).
-    * On the top you find a dropdown menu. Open it and choose `Categorized`. Under `Value` select "highway".
-    * Further down the window, click on `Classify`.  Now you should see all unique values or attributes of the selected "highway" column.  You can adjust the colours by double-clicking on the colours in each row in the central field.
-    * Remove the tick from all categories except: `motorway`, `primary`, `secondary`, `trunk`
+
+1. Load the dataset __"Roads_Larkana.gpkg"__ from your input folder into your QGIS-project.
+2. Lets set up the categorised classification. OpenStreetMap data distinguishes between different road types using the column "highway". 
+    - Right-click on the layer __"Roads_Larkana"__ and select `Properties`. The properties window will open up. 
+    - Navigate to the `Symbology`-tab.
+    - At the top, select `Categorized` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html)).
+    - Under `Value`, select "highway".
+    - Click on `Classify`. You should see all the unique values for the "highway" column. 
+    - Remove the ticks for all categories except for `motorway`, `primary`, `secondary`, and `trunk`.
+    - You can adjust the colours by double-clicking on the categories. 
     ```{figure} /fig/PAK_road_classification.PNG
     ---
     width: 600px
@@ -388,8 +409,7 @@ In order to get a clearer picture, we need to import the road network data for t
     ---
     The symbolisation window for the Roads_Larkana.gpkg layer.
     ```
-    * You have the option to customize the width of the main roads' lines to improve the visualization. Open the Symbology window, then select `Symbol`. In the new window, you can adjust the width of the lines to your preference.
-    
+    - You have the option to customize the width of the main roads' lines to improve the visualization. Open the Symbology window, then select `Symbol`. In the new window, you can adjust the width of the lines to your preference.
     ```{figure} /fig/PAK_road_symbol_weight.png
     ---
     width: 600px
@@ -398,17 +418,15 @@ In order to get a clearer picture, we need to import the road network data for t
     ---
     Adjusting the symbolisation of the different road types
     ```
-
-    * Once you are done, click `Apply` and `OK` to close the symbology window.
+    - Once you are done, click `Apply` and `OK` to close the symbology window.
 
 ::::{margin}
 :::{tip}
-
 There are methods to automate the digitisation process which will be covered in [module 5: Intermediate GIS Operations](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_module_5_overview.html)
 :::
 ::::
 
-3. To simplify the process, we will visually search for blocked roads and mark them with points. For this purpose, we will create an entirely new point dataset representing blocked roads.
+3. Finally, we want to visualise the roads that are flooded. To simplify the process, we will manually search for the roads intersecting with the flood extent layer and mark them with points. For this purpose, we will create a new point dataset representing the blocked roads. 
     * Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#create-a-new-layer)) 
     - Under `Database` click on ![](/fig/Three_points.png) and navigate to `temp` folder. Give the new dataset the name __“PAK_flood_2024_blocked_road”__. Click `Save`.
     - `Geometry type`: Select `Point`
@@ -420,8 +438,7 @@ There are methods to automate the digitisation process which will be covered in 
         * Click on `Add to Fields List` ![](/fig/mActionNewAttribute.png) to add the new column to the `Fields List`.
         * Create another field with the `name` __"Blocked_bridge"__ and the `Type`: Select `Text Data`.
         * Click `OK`.
-    * Your new layer will appear in the `Layer Panel`
-
+    * Your new layer will appear in the layers panel.
     ```{figure} /fig/PAK_blocked_road_new_layer.png
     ---
     width: 400px
@@ -490,7 +507,7 @@ Road access to Mohenjodaro Airport
 
 :::{card} 
 
-The operations team has now all the information they need to plan their logistics. Good Job!
+The operations team has now all the information they need to plan their logistics. Good Job! 
 
 :::
 
