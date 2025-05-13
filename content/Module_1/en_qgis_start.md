@@ -10,7 +10,7 @@
 
 ## Introducing QGIS
 
-```{image} /fig/en_qgis_banner_website.png
+```{figure} /fig/en_qgis_banner_website.png
 ---
 name: qgis_banner
 width: 300 px
@@ -109,6 +109,14 @@ The start screen of QGIS usually shows you the projects you worked on recently a
 
 There are __two__ options to create a new project:
 
+::::{margin}
+:::{tip}
+
+A QGIS project file has the format ending `.qgz`.
+
+:::
+
+::::
 1. On the start screen click on `Project Template`
 
 ```{figure} /fig/en_project_template_BRC.png
@@ -123,19 +131,13 @@ align: center
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_new_project.mp4"></video>
 
-::::{margin}
-:::{tip}
 
-A QGIS project file has the format ending `.qgz`.
-
-:::
-::::
 
 ## Overview of the QGIS Interface
 
 The interface of QGIS is at first glance quite complex. However, once you know all the components you will be able to orientate yourself quickly. Here you can find a description of all components of the interface.
 
-::::{sidebar}
+::::{margin}
 :::{tip}
 
 When you hover with your mouse cursor over icons, text will appear which explains the function of the button.
@@ -158,7 +160,7 @@ QGIS User Interface. Source: BRC
 
 ```{figure} /fig/en_Interface_02.png
 ---
-height: 50px
+height: 75 px
 name: Toolbox button
 align: center
 ---
@@ -174,12 +176,12 @@ align: center
 
 :::{dropdown} Exercise: Create a new QGIS project
 
-1. In your “GIS_Training” folder, create a __subfolder__ called "Projects"
-2.  Open __QGIS__
+1. In your “GIS_Training” folder, create a __subfolder__ called "My_First_Project".
+2. Open __QGIS__
 3. Click on `Project` -> ` New Project `
 4. In the top-left corner, click on `Project` -> `Save as`, browse to your Projects folder and save the project as "Session1”
-5. Click on __Save as__, browse to your Projects folder and save the project as “Session1”
-6. Open your “Projects” folder and check the __.qgz file__ that you just created
+5. Click on __Save as__, browse to your Projects folder and save the project as "My_First_Project"
+6. Open your your folder and check the __.qgz file__ that you just created.
 
 :::
 
@@ -291,7 +293,12 @@ Holding the <kbd>Space</kbd>-button on your keyboard activates the ![](/fig/qgis
 
 To move on the map canvas with your mouse cursor you need to toggle the hand button. 
 
-![](/fig/qgis_move_symbol.png)
+:::{image} /fig/qgis_move_symbol.png
+---
+name: move_symbol
+height: 80 px
+---
+:::
 
 You can always move on the map canvas with arrow keys on your keyboard.
 
@@ -430,6 +437,12 @@ An example of a warning icon while adjusting the parameters of a processing tool
 If you have more questions before or after the training or require assistance, do not hesitate to reach out to us by writing an email to `gis-training-platform@heigit.org`.
 ```
 
+:::{admonition} Common errors and issues
+:class: tip
+:link: https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html
+We have collected a list of __[Common errors and issues](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html)__. If you ever find yourself at your wits end (which can happen a lot when working with QGIS!), try finding the solution to your problem here. 
+:::
+
 :::{card}
 :class-card: sd-text-justify sd-rounded-3 sd-border-2
 :link: https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html
@@ -448,8 +461,7 @@ There is also a big and vibrant QGIS community online. If you are struggling wit
 
 
 Additionally, there is a large amount of youtube tutorials, online guides and learning material for specific 
-GIS-operations, so it is always a good idea to do a quick google search. Amongst others, the [QGIS documentation]
-(https://docs.qgis.org/3.34/en/docs/index.html) also offers Exercises and Training Material, as well as a [Gentle Introduction to QGIS](https://docs.qgis.org/3.34/en/docs/gentle_gis_introduction/index.html). 
+GIS-operations, so it is always a good idea to do a quick google search. Amongst others, the [QGIS documentation](https://docs.qgis.org/3.34/en/docs/index.html) also offers Exercises and Training Material, as well as a [Gentle Introduction to QGIS](https://docs.qgis.org/3.34/en/docs/gentle_gis_introduction/index.html). 
 
 
 
