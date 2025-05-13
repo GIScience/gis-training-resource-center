@@ -4,11 +4,6 @@
 :link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
-:::{grid-item-card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_exercises.html
-__Click here to return to the exercise overview page for module 3__ 
-:::
-::::
 
 # Exercise 5: Larkana Flood response
 
@@ -19,8 +14,11 @@ In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced
 Participants will work with multiple layers and conduct spatial queries. Additionally, they will learn how to create their own geodata. The exercise is divided into three tasks. In the first part, we will export the administrative boundaries in our area of interest (AOI). In the second task, the health facilities located in our AOI will be extracted and we will identify which health facilities are located inside the flood extent layer. In the third task, the road access will be determined by identifying which roads are potentially flooded. 
 :::
 
-::::{grid} 1
+<br>
 
+</br>
+
+::::{grid} 2
 :::{grid-item-card}
 __Competences covered in this exercise__
 ^^^ 
@@ -31,6 +29,16 @@ __Competences covered in this exercise__
 - Editing the Attribute Table
 - Classification
 - Digitising a point Layer
+
+:::
+
+:::{grid-item-card}
+__Larkana Flood Response Exercise track__
+^^^
+
+This exercise is part of the Larkana flood response exercise track
+
+- [Next exercise](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I_ex4.html)
 
 :::
 ::::
@@ -456,7 +464,7 @@ If you cannot see the toolbar, click on the tab `View` -> `Toolbars` and check `
 :::
 ::::
 
-4. Now you can create a point for each place where the flood layer covers the main roads leading out of Larkana [wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#creation-of-point-data). 
+4. Now you can create a point for each place where the flood layer covers the main roads leading out of Larkana ([wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#creation-of-point-data)). 
     * Currently the new layer __“PAK_flood_2024_blocked_road”__ is empty. To add features we can use the `Digitizing Toolbar`.  ![](/fig/Digitizing_Toolbar.png) 
     * Activate the editing mode by clicking on ![](/fig/mActionToggleEditing.png). Next, activate the option to add new points by clicking on ![](/fig/mActionCapturePoint.png) `Add Point Feature` .
     * Look out for places where the flood layer covers the main roads or bridges leading out of Larkana. Once you have found one, left-click on the location you want to digitise.
