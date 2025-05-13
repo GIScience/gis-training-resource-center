@@ -43,7 +43,7 @@ when the data and the project are in a fixed folder structure, you can move the
 whole structure without impacting the QGIS project or the paths to the data.
 The version of a standardized folder structure that is used for all exercises 
 in this training is explained below. A template of the folder structure can be 
-downloaded [__here__](https://github.com/GIScience/gis-training-resource-center/blob/main/fig/GIS_Project_folder_template.zip).
+downloaded [__here__](https://nexus.heigit.org/repository/gis-training-resource-center/Templates/GIS_project_folder_template.zip).
 
 A standard folder structure has two principal advantages:
 
@@ -52,10 +52,9 @@ A standard folder structure has two principal advantages:
 2. The folder structure supports the proper organisation of project data and 
    helps ensure the QGIS project will work as intended
 
-```{figure} /fig/Standard_project_folder_structure.drawio.svg
+```{figure} /fig/standard_folder_structure_new_2025.drawio.png
 ---
 width: 600px
-name: 
 align: center
 name: Standard folder structure
 ---
