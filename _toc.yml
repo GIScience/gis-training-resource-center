@@ -68,6 +68,11 @@ parts:
           - file: content/Module_9/en_qgis_openrouteservice_tools.md
           - file: content/Module_9/en_qgis_centrality.md
           - file: content/Module_9/en_qgis_module_9_exercises.md
+  - caption: Exercises
+    chapters: 
+      - file: content/Exercises/en_qgis_exercises_overview.md
+        sections:
+          - file: content/Exercises/en_larkana_flood_response.md
   - caption: Wiki
     chapters:
       - file: content/Wiki/en_qgis_qgis_basics_wiki.md
