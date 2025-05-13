@@ -305,7 +305,9 @@ Select flood affected health facilities
 In case you encounter the error:
 
 ```
-Feature (1) from “2024_MinFloodExtend_reprojected” has invalid geometry. Please fix the geometry or change the Processing setting to the “Ignore invalid input features” option.
+Feature (1) from “2024_MinFloodExtend_reprojected” has invalid geometry. 
+Please fix the geometry or change the Processing setting to the “Ignore 
+invalid input features” option.
 Execution failed after 0.07 seconds
 ```
 
@@ -432,7 +434,7 @@ In order to get a clearer picture, we need to import the road network data for t
 
 ::::{margin}
 :::{tip}
-There are methods to automate the digitisation process which will be covered in [module 5: Intermediate GIS Operations](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_module_5_overview.html)
+There are methods to automate the digitisation process which will be covered in [module 5: Intermediate GIS Operations](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_module_5_overview.html).
 :::
 ::::
 
@@ -460,7 +462,7 @@ There are methods to automate the digitisation process which will be covered in 
 
 ::::{margin}
 :::{tip}
-If you cannot see the toolbar, click on the tab `View` -> `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#creation-of-point-data))
+If you cannot see the toolbar, click on the tab `View` -> `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#creation-of-point-data)).
 :::
 ::::
 
@@ -474,7 +476,7 @@ If you cannot see the toolbar, click on the tab `View` -> `Toolbars` and check `
     ```{figure} /fig/PAK_blocked_road_digitalise.png
     ---
     width: 400px
-    name: Digitalising blocked roads
+    name: Digitising blocked roads
     align: center
     ---
     This pop-up will open once you have selected a location to add a point. Make sure to enter the relevant information in the columns. 
@@ -493,7 +495,7 @@ If you cannot see the toolbar, click on the tab `View` -> `Toolbars` and check `
     ```{figure} /fig/PAK_blocked_road_symbol.png
     ---
     width: 600px
-    name: Visulsing blocked roads with icons
+    name: Visualising blocked roads with icons
     align: center
     ---
     Adjusting the symbolisation for the new point layer. Make sure to choose a marker that can be easily identified. 
