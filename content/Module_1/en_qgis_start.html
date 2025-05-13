@@ -579,6 +579,12 @@ document.write(`
 <h1><span class="section-number">1.3. </span>Getting started with QGIS<a class="headerlink" href="#getting-started-with-qgis" title="Permalink to this heading">#</a></h1>
 <section id="introducing-qgis">
 <h2><span class="section-number">1.3.1. </span>Introducing QGIS<a class="headerlink" href="#introducing-qgis" title="Permalink to this heading">#</a></h2>
+<figure class="align-right" id="qgis-banner">
+<a class="reference internal image-reference" href="../../_images/en_qgis_banner_website.png"><img alt="../../_images/en_qgis_banner_website.png" src="../../_images/en_qgis_banner_website.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.13 </span><span class="caption-text"><a class="reference external" href="https://qgis.org/">qgis.org</a></span><a class="headerlink" href="#qgis-banner" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <div class="sd-text-justify docutils">
 <ul class="simple">
 <li><p>QGIS is an <strong>open source geoinformation system software</strong>. That means the source code is available for everyone,
@@ -652,6 +658,13 @@ work. You will learn more about plugins in the following modules. If you want to
 <p>Open QGIS like any other program on your computer.
 The start screen of QGIS usually shows you the projects you worked on recently and the option to create a new project.</p>
 <p>There are <strong>two</strong> options to create a new project:</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>A QGIS project file has the format ending <code class="docutils literal notranslate"><span class="pre">.qgz</span></code>.</p>
+</div>
+</aside>
 <ol class="arabic simple">
 <li><p>On the start screen click on <code class="docutils literal notranslate"><span class="pre">Project</span> <span class="pre">Template</span></code></p></li>
 </ol>
@@ -662,18 +675,12 @@ The start screen of QGIS usually shows you the projects you worked on recently a
 <li><p>In the upper left corner click on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Project</span></code></p></li>
 </ol>
 <p><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_new_project.mp4"></video></p>
-<aside class="margin sidebar">
-<p class="sidebar-title"></p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>A QGIS project file has the format ending <code class="docutils literal notranslate"><span class="pre">.qgz</span></code>.</p>
-</div>
-</aside>
 </section>
 <section id="overview-of-the-qgis-interface">
 <h2><span class="section-number">1.3.4. </span>Overview of the QGIS Interface<a class="headerlink" href="#overview-of-the-qgis-interface" title="Permalink to this heading">#</a></h2>
 <p>The interface of QGIS is at first glance quite complex. However, once you know all the components you will be able to orientate yourself quickly. Here you can find a description of all components of the interface.</p>
-<aside class="sidebar">
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>When you hover with your mouse cursor over icons, text will appear which explains the function of the button.</p>
@@ -682,7 +689,7 @@ The start screen of QGIS usually shows you the projects you worked on recently a
 <figure class="align-center" id="qgis-user-interface">
 <a class="reference internal image-reference" href="../../_images/en_QGIS_GUI.png"><img alt="../../_images/en_QGIS_GUI.png" src="../../_images/en_QGIS_GUI.png" style="width: 800px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 1.13 </span><span class="caption-text">QGIS User Interface. Source: BRC</span><a class="headerlink" href="#qgis-user-interface" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 1.14 </span><span class="caption-text">QGIS User Interface. Source: BRC</span><a class="headerlink" href="#qgis-user-interface" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple">
@@ -690,7 +697,7 @@ The start screen of QGIS usually shows you the projects you worked on recently a
 <li><p><strong>Toolbars:</strong>  <strong>Toolbars</strong> are shortcuts to execute frequently used commands. For example, there are special toolbars for <strong>vector and raster files</strong>, but also general ones for saving your project, etc. The toolbar contains, among other things, a list of all the commands you can use. The toolbar also contains the <strong>processing toolbox</strong>, which is used later in many of the wiki videos.</p></li>
 </ol>
 <figure class="align-center" id="toolbox-button">
-<a class="reference internal image-reference" href="../../_images/en_Interface_02.png"><img alt="../../_images/en_Interface_02.png" src="../../_images/en_Interface_02.png" style="height: 50px;" /></a>
+<a class="reference internal image-reference" href="../../_images/en_Interface_02.png"><img alt="../../_images/en_Interface_02.png" src="../../_images/en_Interface_02.png" style="height: 75px;" /></a>
 </figure>
 <ol class="arabic simple" start="3">
 <li><p><strong>Map Canvas:</strong> The <strong>map canvas</strong> is the <strong>central component</strong> of every GIS programme. This is where the <strong>geodata</strong> are displayed. The map view has a projection which does not always have to correspond to the projection of the layers.</p></li>
@@ -706,12 +713,12 @@ Exercise: Create a new QGIS project<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <ol class="arabic simple">
-<li><p class="sd-card-text">In your “GIS_Training” folder, create a <strong>subfolder</strong> called “Projects”</p></li>
+<li><p class="sd-card-text">In your “GIS_Training” folder, create a <strong>subfolder</strong> called “My_First_Project”.</p></li>
 <li><p class="sd-card-text">Open <strong>QGIS</strong></p></li>
 <li><p class="sd-card-text">Click on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Project</span></code></p></li>
 <li><p class="sd-card-text">In the top-left corner, click on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">as</span></code>, browse to your Projects folder and save the project as “Session1”</p></li>
-<li><p class="sd-card-text">Click on <strong>Save as</strong>, browse to your Projects folder and save the project as “Session1”</p></li>
-<li><p class="sd-card-text">Open your “Projects” folder and check the <strong>.qgz file</strong> that you just created</p></li>
+<li><p class="sd-card-text">Click on <strong>Save as</strong>, browse to your Projects folder and save the project as “My_First_Project”</p></li>
+<li><p class="sd-card-text">Open your your folder and check the <strong>.qgz file</strong> that you just created.</p></li>
 </ol>
 </div>
 </details><div class="admonition attention">
@@ -1000,7 +1007,7 @@ Advanced Tools<div class="sd-summary-down docutils">
 </div>
 </aside>
 <p>To move on the map canvas with your mouse cursor you need to toggle the hand button.</p>
-<p><img alt="" src="../../_images/qgis_move_symbol.png" /></p>
+<a class="reference internal image-reference" href="../../_images/qgis_move_symbol.png" id="move-symbol"><img alt="../../_images/qgis_move_symbol.png" id="move-symbol" src="../../_images/qgis_move_symbol.png" style="height: 80px;" /></a>
 <p>You can always move on the map canvas with arrow keys on your keyboard.</p>
 <p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_move.mp4"></video></p>
 </section>
@@ -1100,11 +1107,11 @@ In QGIS, the geodata you work with is <strong>not</strong> saved in your QGIS pr
 </section>
 <section id="warning-icons">
 <h2><span class="section-number">1.3.9. </span>Warning icons<a class="headerlink" href="#warning-icons" title="Permalink to this heading">#</a></h2>
-<p>It can be that while working with QGIS, you come across orange warning icons. This indicates that you should pay attention. To understand what the warning icon means, <strong>hover over it with your mouse</strong> and explanatory text will appear. For example, in <a class="reference internal" href="#warning-icon-example"><span class="std std-numref">Fig. 1.14</span></a>, the warning icon indicates that the units of measurements are degrees, which are not constant (the distance between 1⁰ of longitude is much greater at the equator than at the poles).</p>
+<p>It can be that while working with QGIS, you come across orange warning icons. This indicates that you should pay attention. To understand what the warning icon means, <strong>hover over it with your mouse</strong> and explanatory text will appear. For example, in <a class="reference internal" href="#warning-icon-example"><span class="std std-numref">Fig. 1.15</span></a>, the warning icon indicates that the units of measurements are degrees, which are not constant (the distance between 1⁰ of longitude is much greater at the equator than at the poles).</p>
 <figure class="align-default" id="warning-icon-example">
 <a class="reference internal image-reference" href="../../_images/en_3.36_warning_icon_example.png"><img alt="../../_images/en_3.36_warning_icon_example.png" src="../../_images/en_3.36_warning_icon_example.png" style="width: 700px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 1.14 </span><span class="caption-text">An example of a warning icon while adjusting the parameters of a processing tool.</span><a class="headerlink" href="#warning-icon-example" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 1.15 </span><span class="caption-text">An example of a warning icon while adjusting the parameters of a processing tool.</span><a class="headerlink" href="#warning-icon-example" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -1127,8 +1134,7 @@ In QGIS, the geodata you work with is <strong>not</strong> saved in your QGIS pr
 <li><p>QGIS telegram channel: <a class="reference external" href="https://t.me/joinchat/Aq2V5RPoxYYhXqUPoxRWPQ">https://t.me/joinchat/Aq2V5RPoxYYhXqUPoxRWPQ</a></p></li>
 </ul>
 <p>Additionally, there is a large amount of youtube tutorials, online guides and learning material for specific
-GIS-operations, so it is always a good idea to do a quick google search. Amongst others, the [QGIS documentation]
-(<a class="reference external" href="https://docs.qgis.org/3.34/en/docs/index.html">https://docs.qgis.org/3.34/en/docs/index.html</a>) also offers Exercises and Training Material, as well as a <a class="reference external" href="https://docs.qgis.org/3.34/en/docs/gentle_gis_introduction/index.html">Gentle Introduction to QGIS</a>.</p>
+GIS-operations, so it is always a good idea to do a quick google search. Amongst others, the <a class="reference external" href="https://docs.qgis.org/3.34/en/docs/index.html">QGIS documentation</a> also offers Exercises and Training Material, as well as a <a class="reference external" href="https://docs.qgis.org/3.34/en/docs/gentle_gis_introduction/index.html">Gentle Introduction to QGIS</a>.</p>
 </section>
 </section>
 

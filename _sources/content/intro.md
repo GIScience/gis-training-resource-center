@@ -16,7 +16,6 @@ ___
 
 :::{card} Teach GIS for Humanitarian Work
 :class-card: sd-bg-white sd-border-0
-:header: Teach GIS for Humanitarian Work
 The One-Stop-Shop for teaching Geoinformation System (GIS) skills for the work in the Red Cross Red Crescent Network.
 :::
 
