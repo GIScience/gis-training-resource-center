@@ -4,11 +4,6 @@
 :link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
-:::{grid-item-card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_exercises.html
-__Click here to return to the exercise overview page for module 3__ 
-:::
-::::
 
 # Exercise 5: Larkana Flood response
 
@@ -19,8 +14,11 @@ In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced
 Participants will work with multiple layers and conduct spatial queries. Additionally, they will learn how to create their own geodata. The exercise is divided into three tasks. In the first part, we will export the administrative boundaries in our area of interest (AOI). In the second task, the health facilities located in our AOI will be extracted and we will identify which health facilities are located inside the flood extent layer. In the third task, the road access will be determined by identifying which roads are potentially flooded. 
 :::
 
-::::{grid} 1
+<br>
 
+</br>
+
+::::{grid} 2
 :::{grid-item-card}
 __Competences covered in this exercise__
 ^^^ 
@@ -31,6 +29,16 @@ __Competences covered in this exercise__
 - Editing the Attribute Table
 - Classification
 - Digitising a point Layer
+
+:::
+
+:::{grid-item-card}
+__Larkana Flood Response Exercise track__
+^^^
+
+This exercise is part of the Larkana flood response exercise track
+
+- [Next exercise](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I_ex4.html)
 
 :::
 ::::
@@ -130,7 +138,9 @@ width: 450 px
 
 ## Task 1: Gain an overview of the situation around Larkana 
 
-:::{topic} Context
+:::{card} 
+__Context__
+^^^
 
 ```{figure} /fig/IFRC-icons-colour_SURGE.png
 ---
@@ -220,10 +230,10 @@ Posts on social media have indicated a significant impact on the healthcare syst
 
 ::::
 
-1. The first thing to do is to find out where the health facilities are located in the area. To do that, you do a quick search on HDX. You find the dataset Pakistan Health Facilities (OpenStreetMap Export). This will do for now. The dataset is already available in the downloaded folder. 
+1. First, we need to find out where the health facilities are located in the area. We can find datasets by doing a quick search on the [humanitarian data exchange (HDX)](https://data.humdata.org). Here you can find the dataset "Pakistan Health Facilities (OpenStreetMap Export). This will do for now. The dataset is already available in the download folder for this exercise. 
     - Import the GeoPackage `PAK_Health_Facilities_complete.gpgk` into your project. You can either drag it onto the map canvas, or open the import window by clicking on `Layer` > `Add Layer` > `Add Vector Layer` in the top bar of QGIS ([see wiki page](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)). A new layer with point data will appear on your map canvas. 
     - Once we have the imported the healthsites, we can extract the healthsites that are located inside of our Area of Interest. We can achieve this with the tool `Extract by Location`. 
-    - In the __Processing Toolbox__ ([Opening the toolbox](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox)), search for the tool "Extract by Location". <kbd>Double-Click</kbd> on it. A new window will open.
+    - In the __Processing Toolbox__ ([opening the toolbox](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox)), search for the tool "Extract by Location". <kbd>Double-Click</kbd> on it. A new window will open.
     ```{figure} /fig/PAK_extract_locatio_HS.png
     ---
     width: 400px
@@ -266,16 +276,15 @@ Now we have an overview of the location of health facilities. However, we want t
     * Save the new file in your `temp` folder by clicking on the three dots ![](/fig/Three_points.png) next to `Reprojected`, specify the file name as __"2024_MinFloodExtend_reprojected"__.
     * Click `Run`.
     * Delete the old layer from the layer panel by right-clicking on the layer -> `Remove layer`.
-    * Adjust the opacity of the flood layer by right-clicking on layer __"2024_MinFloodExtend_reprojected"__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. 
+    * Adjust the opacity of the flood layer by right-clicking on layer __"2024_MinFloodExtend_reprojected"__ in the Layer Panel and selecting `Properties`. A new window will open up with a vertical tab section on the left. 
     - Navigate to the `Symbology`-tab.
     - Adjust the opacity to around 60% by moving the slider.
 
 <!--Symbology tab has not been covered in the modules yet.-->
 
-We have observed that certain health facilities have been impacted by the flood. In order to visualise this information on the map, we plan to include a new attribute called __"affected"__ in the attribute table of __"Health_Facilities_Flood_2024_AOI"__.
-To accomplish this, our first step will involve selecting all the affected health facilities. A new column containing this information is then appended to the __"Health_Facilities_Flood_2024_AOI"__ attribute table.
+We have observed that certain health facilities have been impacted by the flood. In order to visualise this information on the map, we plan to include a new attribute called __"Flood_affected"__ in the attribute table of __"Health_Facilities_Flood_2024_AOI"__. To accomplish this, we will select all the health facilities that are located inside the flood extent by using the tool "Select by Location". In a next step, we will add a new column to the attribute table and add information into our selected healthsites. 
 
-5. Open the `Processing Toolbox` ([here is how](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox)) and search for the tool __"Select by Location"__.
+5. Open the `Processing Toolbox` ([wiki video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox)) and search for the tool __"Select by Location"__.
     * `Select features from` = __"Health_Facilities_Flood_2024_AOI"__.
     * As `Geometric predicate` we use `intersect`.
     * For `By comparing to the features from` we use the layer __"2024_MinFloodExtent_reprojected"__.
@@ -295,8 +304,10 @@ Select flood affected health facilities
 :class: warning, dropdown
 In case you encounter the error:
 
-> Feature (1) from “2024_MinFloodExtend_reprojected” has invalid geometry. Please fix the geometry or change the Processing setting to the “Ignore invalid input features” option.
+```
+Feature (1) from “2024_MinFloodExtend_reprojected” has invalid geometry. Please fix the geometry or change the Processing setting to the “Ignore invalid input features” option.
 Execution failed after 0.07 seconds
+```
 
 You need to first use the tool __"Fix Geometry"__ before repeating the previously failed step 5 of using the tool __"Select by Location"__.
 
@@ -321,7 +332,6 @@ The error message indicating invalid geometries
     - Activate the editing mode by clicking on ![](/fig/mActionToggleEditing.png) ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#change-data-in-the-attribute-table)). Now you are able to edit the data directly in the table.
     - We want to add a new column with the name __"Flood_affected"__ to identify which healthsites are located inside of the flood extent. Click on ![](/fig/mActionNewAttribute.png). A new window will open.
     - In the `Add field`-window, add the name of the column and specify the `Type` to `Text (string)` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#add-new-column)). 
-    - 
     - Click `Ok` . 
 
 
@@ -454,7 +464,7 @@ If you cannot see the toolbar, click on the tab `View` -> `Toolbars` and check `
 :::
 ::::
 
-4. Now you can create a point for each place where the flood layer covers the main roads leading out of Larkana [wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#creation-of-point-data). 
+4. Now you can create a point for each place where the flood layer covers the main roads leading out of Larkana ([wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#creation-of-point-data)). 
     * Currently the new layer __“PAK_flood_2024_blocked_road”__ is empty. To add features we can use the `Digitizing Toolbar`.  ![](/fig/Digitizing_Toolbar.png) 
     * Activate the editing mode by clicking on ![](/fig/mActionToggleEditing.png). Next, activate the option to add new points by clicking on ![](/fig/mActionCapturePoint.png) `Add Point Feature` .
     * Look out for places where the flood layer covers the main roads or bridges leading out of Larkana. Once you have found one, left-click on the location you want to digitise.
