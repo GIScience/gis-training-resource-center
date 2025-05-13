@@ -570,7 +570,7 @@ document.write(`
 <p>Participants will work with multiple layers and conduct spatial queries. Additionally, they will learn how to create their own geodata. The exercise is divided into three tasks. In the first part, we will export the administrative boundaries in our area of interest (AOI). In the second task, the health facilities located in our AOI will be extracted and we will identify which health facilities are located inside the flood extent layer. In the third task, the road access will be determined by identifying which roads are potentially flooded.</p>
 </aside>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-1 sd-row-cols-lg-1 docutils">
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-header docutils">
@@ -734,7 +734,7 @@ To keep your data organized and easily accessible, it’s important to establish
 </aside>
 <ol class="arabic simple">
 <li><p>Open QGIS and create a <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch">new project</a> by clicking on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span></code></p></li>
-<li><p>Once the project is created <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#save">save the project</a> in the “project” folder of the exercise “Modul3_Exercise_2_Flood_Larkana”. To do that click on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">as</span></code> and navigate to the folder. Name the project “PAK_Larkana_flood_2024”.</p></li>
+<li><p>Once the project is created <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#save">save the project</a> in the folder of the exercise “Modul3_Exercise_2_Flood_Larkana”. To do that click on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">as</span></code> and navigate to the folder. Name the project “PAK_Larkana_flood_2024”.</p></li>
 <li><p>First, we want to add the OpenStreetMap as a base map for orientation. To add the OSM as a base map click on <code class="docutils literal notranslate"><span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">XYZ</span> <span class="pre">Layer…</span></code>. Choose <code class="docutils literal notranslate"><span class="pre">OpenStreetMap</span></code> and click <code class="docutils literal notranslate"><span class="pre">Add</span></code>.</p></li>
 <li><p>Next, load the GeoPackage <strong>“PAK_Sindh_adm2.gpkg”</strong> in your project by drag and drop (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop">Wiki Video</a>). Or click on <code class="docutils literal notranslate"><span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code>. Click on the three points <img alt="" src="../../_images/Three_points.png" /> and navigate to <strong>“PAK_Sindh_adm2.gpkg”</strong>. Select the file and click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Back in QGIS click <code class="docutils literal notranslate"><span class="pre">Add</span></code> (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab">Wiki Video</a>).</p></li>
 </ol>
@@ -742,66 +742,105 @@ To keep your data organized and easily accessible, it’s important to establish
 <p class="admonition-title">Attention</p>
 <p>GeoPackage files can contain multiple files and even entire QGIS projects. When you load such a file in QGIS a window will appear in which you have to select the files you want to load in your QGIS project.</p>
 </div>
-<ol class="arabic simple" start="5">
-<li><p>First, we want to export <strong>Larkana District</strong> and the neighbouring districts <strong>Kambar Shahdad Kot</strong>, <strong>Shikarpur</strong>  and <strong>Sukkur</strong> from <strong>PAK_adm2_Sindh</strong> to have it as a stand-alone vector layer. To do that:</p>
+<ol class="arabic" start="5">
+<li><p>To get an overview of the situation, we want to export the administrative boundaries for our Area of Interest (AOI). To do this, we want to export the district <strong>Larkana</strong>, as well as the neighbouring districts <strong>Kambar Shahdad Kot</strong>, <strong>Shikarpur</strong> and <strong>Sukkur</strong> from the <code class="docutils literal notranslate"><span class="pre">PAK_adm2_Sindh</span></code>-layer.</p>
 <ul class="simple">
-<li><p>Open the attribute table of <strong>PAK_adm2_Sindh</strong> by right click on the layer  -&gt; <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Attribute</span> <span class="pre">Table</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html">Wiki Video</a>).</p></li>
-<li><p>Find the row of Larkana and mark it by clicking on the number on the very left-hand side of the attribute table. The row will appear blue and the area of Larkana will turn yellow on the map canvas. You can right-click on the row and click <code class="docutils literal notranslate"><span class="pre">Zoom</span> <span class="pre">to</span> <span class="pre">Feature</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature">Wiki Video</a>).
-To select the surrounding districts, click on the <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">Feature(s)</span></code> <img alt="" src="../../_images/selection_toolbar_feature_selection.png" /> icon in the QGIS Toolbar, hold the <code class="docutils literal notranslate"><span class="pre">Shift</span></code> button on your keyboard, and click on the districts either on the map or the attribute table (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_queries_wiki.html#manual-selection">Wiki Video</a>).</p></li>
-<li><p>After you are done selecting districts, click on the icon <img alt="" src="../../_images/qgis_move_symbol.png" /> to end the feature selection mode.</p></li>
-<li><p>Now right-click on the layer in the Layer Panel and click on <code class="docutils literal notranslate"><span class="pre">Export</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Selected</span> <span class="pre">Features</span> <span class="pre">as</span></code>. We want to save the selected districts as a GeoPackage, so choose the <code class="docutils literal notranslate"><span class="pre">Format</span></code> option accordingly. Click on the three points and navigate to your <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder. Here you can give it the layer the name <strong>“Flood_2024_AOI”</strong> and click <code class="docutils literal notranslate"><span class="pre">Save</span></code>. Now you should see the same name in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">name</span></code> field. Click <code class="docutils literal notranslate"><span class="pre">ok</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_queries_wiki.html#save-selected-features-as-a-new-file">Wiki Video</a>)</p></li>
-<li><p>Click on the icon <img alt="" src="../../_images/selection_toolbar_feature_deselection.png" /> in the toolbar to end the feature selection.</p></li>
+<li><p><kbd>Right-Click</kbd> on the <code class="docutils literal notranslate"><span class="pre">PAK_adm2_Sindh</span></code>-layer and select <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html"><code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Attribute</span> <span class="pre">table</span></code></a>.</p></li>
+<li><p>Find the the column <code class="docutils literal notranslate"><span class="pre">ADM2_EN</span></code> and find the row for the district of Larkana.</p></li>
+<li><p><kbd>Click</kbd> on the numbers all the way to the left of the attribute table window to select the Larkana feature. The row will appear blue and the area of Larkana will turn yellow on the map canvas.</p></li>
+<li><p><kbd>Click</kbd> on <code class="docutils literal notranslate"><span class="pre">Zoom</span> <span class="pre">Map</span> <span class="pre">to</span> <span class="pre">selected</span> <span class="pre">rows</span></code> in the top bar of the attribute table window. <img alt="" src="../../_images/qgis_3.36_zoom_to_selected_rows_at.png" /></p></li>
+<li><p>Close the attribute table.</p></li>
+</ul>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Holding <kbd>Ctrl</kbd> while selecting features let’s you add more features to your current selection. Otherwise, you will deselect the previous polygon.
+Keep in mind that you can only select features from the layer you have currently selected in the layers panel.</p>
+</div>
+</aside>
+<ul class="simple">
+<li><p>In the toolbar at the top of the QGIS-window, select the tool <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">Feature(s)</span></code> <img alt="" src="../../_images/selection_toolbar_feature_selection.png" />. Hold <kbd>Ctrl</kbd> and <kbd>Click</kbd> on the districts that are surrounding the district of Larkana (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_queries_wiki.html#manual-selection">Wiki Video</a>). The four selected districts should appear yellow on your map canvas.</p></li>
+</ul>
+ <!--FIX: The districts named are not the only ones surrounding the -->
+<ul class="simple">
+<li><p>Deactivate the <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">Feature(s)</span></code>-tool by clicking on the icon <img alt="" src="../../_images/qgis_move_symbol.png" /> in the toolbar at the top of your QGIS-window.</p></li>
+<li><p>We can now export the selected features and save them to a new file. Right click on the <code class="docutils literal notranslate"><span class="pre">PAK_adm2_Sindh</span></code> layer and select <code class="docutils literal notranslate"><span class="pre">Export</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Selected</span> <span class="pre">Features</span> <span class="pre">as</span></code>.</p></li>
+<li><p>A new window will open. Here, you can select how and where the selected features are saved.</p></li>
+</ul>
+<figure class="align-default" id="m3-ex5-export-selection">
+<a class="reference internal image-reference" href="../../_images/en_qgis_3.36_m3_ex5_export_features.png"><img alt="../../_images/en_qgis_3.36_m3_ex5_export_features.png" src="../../_images/en_qgis_3.36_m3_ex5_export_features.png" style="width: 450px;" /></a>
+<figcaption>
+<p><span class="caption-text">Make sure to save the geopackage in the correct location by clicking on the three dots to the right of the <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">name</span></code>-field</span><a class="headerlink" href="#m3-ex5-export-selection" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">Format</span></code>, select geopackage.</p></li>
+<li><p>To the right of the <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">name</span></code>-field, click on the three dots. Navigate to the folder with the exercise data and save it in the <code class="docutils literal notranslate"><span class="pre">data/temp/</span></code> folder.</p></li>
+<li><p>Enter a layer name. For example, “<strong>Flood_2024_AOI</strong>”.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Ok</span></code>. The exported layer should appear in your layers panel.</p></li>
 </ul>
 </li>
 </ol>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-header docutils">
-<p class="sd-card-text"><strong>Achievement:</strong></p>
-</div>
-<div class="sd-card-body docutils">
-<p class="sd-card-text">Now you have an overview of where the district of Larkana is located in Sindh. The operations team can use this information.</p>
-</div>
-</div>
+<aside class="topic">
+<p class="topic-title">Achievement</p>
+<p>Now you have an overview of where the district of Larkana is located in Sindh. The operations team can use this information.</p>
+</aside>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Do not forget to save your project from time to time!</p>
 </div>
+</aside>
 </section>
 <section id="task-2-estimation-of-flood-impact-on-the-health-sector-in-larkana">
 <h2>Task 2: Estimation of Flood Impact on the Health Sector in Larkana<a class="headerlink" href="#task-2-estimation-of-flood-impact-on-the-health-sector-in-larkana" title="Permalink to this heading">#</a></h2>
-<aside class="topic">
-<p class="topic-title">Context</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Context</strong></p>
+</div>
+<div class="sd-card-body docutils">
 <figure class="align-right" id="ifrc-health-icon">
 <a class="reference internal image-reference" href="../../_images/IFRC-icons-colour_Health.svg"><img alt="../../_images/IFRC-icons-colour_Health.svg" src="../../_images/IFRC-icons-colour_Health.svg" width="100px" /></a>
 </figure>
-<p>Posts on social media have indicated a significant impact on the healthcare system in the region. You have been tasked to find out as much as you can about the situation and, if feasible, to estimate the impact on the health system.</p>
-</aside>
-<ol class="arabic simple">
-<li><p>The first thing to do is to find out where the health facilities are located in the area. To do that, you do a quick search on HDX. You find the dataset Pakistan Health Facilities (OpenStreetMap Export). This will do for now.</p>
+<p class="sd-card-text">Posts on social media have indicated a significant impact on the healthcare system in the region. You have been tasked to find out as much as you can about the situation and, if feasible, to estimate the impact on the health system.</p>
+</div>
+</div>
+<ol class="arabic">
+<li><p>The first thing to do is to find out where the health facilities are located in the area. To do that, you do a quick search on HDX. You find the dataset Pakistan Health Facilities (OpenStreetMap Export). This will do for now. The dataset is already available in the downloaded folder.</p>
 <ul class="simple">
-<li><p>Load the GeoPackage <strong>“PAK_Health_Facilities_complete.gpkg”</strong> in your project by drag and drop (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop">Wiki Video</a>). Or click on <code class="docutils literal notranslate"><span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code>. Click on the three points <img alt="" src="../../_images/Three_points.png" /> and navigate to <strong>“PAK_Sindh_adm2.gpkg”</strong>. Select the file and click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Back in QGIS click <code class="docutils literal notranslate"><span class="pre">Add</span></code> (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab">Wiki Video</a>).</p></li>
-<li><p>First, we must extract the health facilities in our area of interest. We will use the tool <strong>“Extract by Location”</strong> to do that.</p></li>
-<li><p>Open the <code class="docutils literal notranslate"><span class="pre">Processing</span> <span class="pre">Toolbox</span></code> (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox">here is how</a>) and search for the tool.</p>
-<ul>
-<li><p>As <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Layer</span></code> we will use “PAK_Health_Facilities_complete”.</p></li>
-<li><p>For <code class="docutils literal notranslate"><span class="pre">By</span> <span class="pre">comparing</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">features</span> <span class="pre">from</span></code> we use the layer “Flood_2024_AOI”.</p></li>
-<li><p>As <code class="docutils literal notranslate"><span class="pre">Geometric</span> <span class="pre">predicate</span></code> we use <code class="docutils literal notranslate"><span class="pre">intersect</span></code>.</p></li>
-<li><p>To save the output click on the three points at <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">(location)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">to</span> <span class="pre">GeoPackage</span></code> and navigate to your <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder. Save the new layer under the name <strong>“Health_Facilities_Flood_2024_AOI”</strong>. Give the new layer the same <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">name</span></code> and click <code class="docutils literal notranslate"><span class="pre">Run</span></code>.</p></li>
+<li><p>Import the GeoPackage <code class="docutils literal notranslate"><span class="pre">PAK_Health_Facilities_complete.gpgk</span></code> into your project. You can either drag it onto the map canvas, or open the import window by clicking on <code class="docutils literal notranslate"><span class="pre">Layer</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code> in the top bar of QGIS (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html">see wiki page</a>). A new layer with point data will appear on your map canvas.</p></li>
+<li><p>Once we have the imported the healthsites, we can extract the healthsites that are located inside of our Area of Interest. We can achieve this with the tool <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">by</span> <span class="pre">Location</span></code>.</p></li>
+<li><p>In the <strong>Processing Toolbox</strong> (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox">Opening the toolbox</a>), search for the tool “Extract by Location”. <kbd>Double-Click</kbd> on it. A new window will open.</p></li>
 </ul>
-</li>
-<li><p>Open the Attribute table of the new layer and have a look.</p></li>
-</ul>
-</li>
-</ol>
 <figure class="align-center" id="extract-by-location-pakistan">
 <a class="reference internal image-reference" href="../../_images/PAK_extract_locatio_HS.png"><img alt="../../_images/PAK_extract_locatio_HS.png" src="../../_images/PAK_extract_locatio_HS.png" style="width: 400px;" /></a>
 <figcaption>
 <p><span class="caption-text">Extract by location Pakistan</span><a class="headerlink" href="#extract-by-location-pakistan" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Ok, now we have a good overview of the location of health facilities. We need much better information about the flooded area to identify the health facilities impacted by the flood. Fortunately, the UN has just shared a dataset about the extent of floods. Satellite detected water extents from 08 to 12 August 2024 over Pakistan.</p>
+<ul class="simple">
+<li><p>As <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Layer</span></code>, select the layer <code class="docutils literal notranslate"><span class="pre">PAK_Health_Facilities_complete</span></code>.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">Geometric</span> <span class="pre">predicate</span></code> should be set to <code class="docutils literal notranslate"><span class="pre">Intersect</span></code></p></li>
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">By</span> <span class="pre">comparing</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">features</span> <span class="pre">from</span></code>, select the area of interest layer “<strong>Flood_2024_AOI</strong>”.</p></li>
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">Extracted</span> <span class="pre">(location)</span></code>, click on the three dots and select <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">to</span> <span class="pre">Geopackage</span></code>.</p></li>
+<li><p>Navigate to the <code class="docutils literal notranslate"><span class="pre">/Module_3_Exercise_5_Larkana_Flood/data/temp/</span></code>-folder.</p></li>
+<li><p>Give the file the name <strong>“Health_Facilities_Flood_2024_AOI”</strong> and click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
+<li><p>You will be prompted to enter a layer name. Give it the same name as the file and click <code class="docutils literal notranslate"><span class="pre">Ok</span></code>.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Run</span></code>. The new layer will appear in your layers tab.</p></li>
+</ul>
+</li>
+</ol>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../../_images/PAK_extract_locatio_HS.png"><img alt="../../_images/PAK_extract_locatio_HS.png" src="../../_images/PAK_extract_locatio_HS.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-text">Extract by location Pakistan</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Now we have an overview of the location of health facilities. However, we want to know which health facilities are impacted by the flood. Fortunately, the UN has just shared a dataset about the extent of floods from the 8th to the 12th of August, which we can overlay with our layer with the healthsites to identify the healthsites that are in the flooded area.</p>
 <ol class="arabic" start="2">
-<li><p>Load the dataset <strong>“VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp”</strong> into your QGIS.</p></li>
+<li><p>Import the dataset <strong>“VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp”</strong> into your QGIS project.</p></li>
 <li><p>Once you have loaded the layers in QGIS, you can see that they are correctly displayed. However, upon checking the layer information, you can see that the new layers have a different Coordinate Reference System (CRS). They have the EPSG Code 9707 whereas our project has 4326 (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html#how-to-check-epsg-code-crs-of-your-qgis-project-and-change-it">Wiki Video</a>).</p>
 <ul class="simple">
 <li><p>Right click on the data layer, click on  “Properties”.</p></li>
@@ -809,22 +848,27 @@ To select the surrounding districts, click on the <code class="docutils literal 
 <li><p>Under the headline “Coordinate Reference System (CRS)” you find all information about the CRS. The most important are:</p></li>
 </ul>
 <ul class="simple">
-<li><p><strong>Name:</strong>     Here you find the EPSG Code.</p></li>
-<li><p><strong>Unites:</strong>    Here you can find whether it is possible to use meters with this data layer, degrees or latitude and longitude. <!--ADD: Why is it a problem? Add explanation--></p></li>
+<li><p><strong>Name:</strong>     Here you find the EPSG-Code.</p></li>
+<li><p><strong>Units:</strong>    Here you find information about the units of measurements used in the dataset. For example, either meters or degrees. <!--ADD: Why is it a problem? Add explanation--></p></li>
 </ul>
 </li>
 <li><p>This will be a problem as soon as we do something different then just displaying the layers. Since we want to manipulate the layers in the next step we need to reproject them first (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html#changing-the-projection-of-a-vector-layer">Wiki Video</a>).</p>
 <ul class="simple">
 <li><p>Click on the <code class="docutils literal notranslate"><span class="pre">Vector</span></code> tab -&gt; <code class="docutils literal notranslate"><span class="pre">Data</span> <span class="pre">Management</span> <span class="pre">Tools</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Reproject</span> <span class="pre">Layer</span></code> or search for the tool in the <code class="docutils literal notranslate"><span class="pre">Processing</span> <span class="pre">Toolbox</span></code>.</p></li>
 <li><p>As <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">layer</span></code> select <strong>“VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp”</strong></p></li>
-<li><p>Select as target CRS/ EPSG-Code <strong>4326</strong>.</p></li>
+<li><p>Select as target CRS/EPSG-Code <strong>4326</strong>.</p></li>
 <li><p>Save the new file in your <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder by clicking on the three dots <img alt="" src="../../_images/Three_points.png" /> next to <code class="docutils literal notranslate"><span class="pre">Reprojected</span></code>, specify the file name as <strong>“2024_MinFloodExtend_reprojected”</strong>.</p></li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Run</span></code></p></li>
-<li><p>Delete the old layer from the layer panel by right click on the layer -&gt; <code class="docutils literal notranslate"><span class="pre">Remove</span> <span class="pre">layer</span></code>.</p></li>
-<li><p>Adjust the opacity of the flood layer by right-clicking on layer <strong>“2024_MinFloodExtend_reprojected”</strong> in the Layer Panel and click on <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. A new window will open up with a vertical tab section on the left. Navigate to the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> tab. Adjusted the opacity to around 60 % by moving the slider.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Run</span></code>.</p></li>
+<li><p>Delete the old layer from the layer panel by right-clicking on the layer -&gt; <code class="docutils literal notranslate"><span class="pre">Remove</span> <span class="pre">layer</span></code>.</p></li>
+<li><p>Adjust the opacity of the flood layer by right-clicking on layer <strong>“2024_MinFloodExtend_reprojected”</strong> in the Layer Panel and click on <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. A new window will open up with a vertical tab section on the left.</p></li>
+</ul>
+<ul class="simple">
+<li><p>Navigate to the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code>-tab.</p></li>
+<li><p>Adjust the opacity to around 60% by moving the slider.</p></li>
 </ul>
 </li>
 </ol>
+<!--Symbology tab has not been covered in the modules yet.-->
 <p>We have observed that certain health facilities have been impacted by the flood. In order to visualise this information on the map, we plan to include a new attribute called <strong>“affected”</strong> in the attribute table of <strong>“Health_Facilities_Flood_2024_AOI”</strong>.
 To accomplish this, our first step will involve selecting all the affected health facilities. A new column containing this information is then appended to the <strong>“Health_Facilities_Flood_2024_AOI”</strong> attribute table.</p>
 <ol class="arabic simple" start="5">
@@ -866,29 +910,42 @@ Execution failed after 0.07 seconds</p>
 </figure>
 </div>
 <ol class="arabic simple" start="6">
-<li><p>Open the attribute table of <strong>“Health_Facilities_Flood_2024_AOI”</strong> by right click on the layer  -&gt; <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Attribute</span> <span class="pre">Table</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html">Wiki Video</a>) and activate the editing mode by clicking on <img alt="" src="../../_images/mActionToggleEditing.png" /> (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#change-data-in-the-attribute-table">Wiki Video</a>). Now you are able to edit the data directly in the table.</p></li>
-<li><p>First, we add a new column with the name <strong>“Flood_affected”</strong>. To do so, click on <img alt="" src="../../_images/mActionNewAttribute.png" />. In the <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">field</span></code> window, you have to add the name and set the <code class="docutils literal notranslate"><span class="pre">Type</span></code> to <code class="docutils literal notranslate"><span class="pre">Text(string)</span></code>. Click <code class="docutils literal notranslate"><span class="pre">OK</span></code> (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#add-new-column">Wiki Video</a>)</p></li>
+<li><p>We can edit the attribute table for the features that we have selected:</p>
+<ul class="simple">
+<li><p>Open the attribute table of <strong>“Health_Facilities_Flood_2024_AOI”</strong> by right clicking on the layer  -&gt; <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Attribute</span> <span class="pre">Table</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html">Wiki Video</a>)</p></li>
+<li><p>Activate the editing mode by clicking on <img alt="" src="../../_images/mActionToggleEditing.png" /> (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#change-data-in-the-attribute-table">Wiki Video</a>). Now you are able to edit the data directly in the table.</p></li>
+<li><p>We want to add a new column with the name <strong>“Flood_affected”</strong> to identify which healthsites are located inside of the flood extent. Click on <img alt="" src="../../_images/mActionNewAttribute.png" />. A new window will open.</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">field</span></code>-window, add the name of the column and specify the <code class="docutils literal notranslate"><span class="pre">Type</span></code> to <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">(string)</span></code> (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#add-new-column">Wiki Video</a>).</p></li>
+<li></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Ok</span></code> .</p></li>
+</ul>
+</li>
 </ol>
 <figure class="align-center" id="new-column-pakistan">
 <a class="reference internal image-reference" href="../../_images/PAK_flood_new_column.PNG"><img alt="../../_images/PAK_flood_new_column.PNG" src="../../_images/PAK_flood_new_column.PNG" style="width: 300px;" /></a>
 <figcaption>
-<p><span class="caption-text">Add new column</span><a class="headerlink" href="#new-column-pakistan" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Adding a new column to the attribute table</span><a class="headerlink" href="#new-column-pakistan" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<ol class="arabic simple" start="8">
-<li><p>Now look for the <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">all</span> <span class="pre">Features</span></code> option in the lower left corner and click on it. Then, select the option <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">selected</span> <span class="pre">features</span></code> (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#manually-select-features-in-the-attribute-table">Wiki Video</a>). This will filter the table to display only the rows that represent the health facilities directly impacted by the flood.
-Now, you can write <code class="docutils literal notranslate"><span class="pre">Yes</span></code> in the <strong>“Flood_affected”</strong> column.</p></li>
-</ol>
+<ol class="arabic simple" start="7">
+<li><p>Next, we want to edit the rows in the attribute table for the features we have selected.</p>
 <ul class="simple">
+<li><p>Look for the <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">all</span> <span class="pre">Features</span></code> option in the lower left corner and click on it.</p></li>
+<li><p>Select the option <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">selected</span> <span class="pre">features</span></code> (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#manually-select-features-in-the-attribute-table">Wiki Video</a>). This will filter the table to display only the rows that represent the health facilities directly impacted by the flood.</p></li>
+<li><p>Write <code class="docutils literal notranslate"><span class="pre">Yes</span></code> in the <strong>“Flood_affected”</strong> column in each selected row.</p></li>
 <li><p>When you are done, click <img alt="" src="../../_images/mActionSaveEdits.png" /> to save your edits and switch off the editing mode by again clicking on <img alt="" src="../../_images/mActionToggleEditing.png" />(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#change-data-in-the-attribute-table">Wiki Video</a>).</p></li>
 <li><p>Click on the icon <img alt="" src="../../_images/selection_toolbar_feature_deselection.png" /> in the toolbar to end the feature selection.</p></li>
 </ul>
-<ol class="arabic simple" start="9">
-<li><p>To visualise the enriched data set, we use the function “Categorized Classification” function. This means that we select a column from the attribute table and use the content as categories to sort and display the data (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html">Wiki Video</a>).</p>
+</li>
+<li><p>We can display the enriched dataset by visualising it using the categorised classification symbolisation method. This means that we select a column from the attribute table and use the values/content as categories to sort and display the data (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html">Wiki Video</a>):</p>
 <ul class="simple">
-<li><p>Right-click on the layer <strong>“Health_Facilities_Flood_2024_AOI”</strong> in the Layer Panel and click on <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. A new window will open up with a vertical tab section on the left. Navigate to the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> tab.</p></li>
-<li><p>On the top you find a dropdown menu. Open it and choose <code class="docutils literal notranslate"><span class="pre">Categorized</span></code>. Under <code class="docutils literal notranslate"><span class="pre">Value</span></code> select “Flood_affacted”.</p></li>
-<li><p>Further down the window, click on <code class="docutils literal notranslate"><span class="pre">Classify</span></code>.  Now you should see all unique values or attributes of the selected “Flood_affacted” column.  You can adjust the colours by double-clicking on each colour in the central field. Once you are done, click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code> to close the symbology window.</p></li>
+<li><p>In the layers panel, right-click on the layer <strong>“Health_Facilities_Flood_2024_AOI”</strong> and select <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. A new window will open up with a vertical tab section on the left.</p></li>
+<li><p>Navigate to the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> tab.</p></li>
+<li><p>At the top of the window, there is a dropdown menu. Open it and choose <code class="docutils literal notranslate"><span class="pre">Categorized</span></code>.</p></li>
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">Value</span></code>, select the column we added, “Flood_affected”.</p></li>
+<li><p>Further down in the window, click on <code class="docutils literal notranslate"><span class="pre">Classify</span></code>. The unique values of the column “Flood_affected” should appear.</p></li>
+<li><p>You can adjust the symbolisation and colour of each value by double-clicking on each color in the table.</p></li>
+<li><p>Once you are done adjusting the colours, click <code class="docutils literal notranslate"><span class="pre">Apply</span></code>, then <code class="docutils literal notranslate"><span class="pre">Ok</span></code> to close the symbolisation window.</p></li>
 </ul>
 </li>
 </ol>
@@ -909,27 +966,35 @@ Now, you can write <code class="docutils literal notranslate"><span class="pre">
 </section>
 <section id="task-3-logistical-access-to-larkana-city">
 <h2>Task 3: Logistical access to Larkana City<a class="headerlink" href="#task-3-logistical-access-to-larkana-city" title="Permalink to this heading">#</a></h2>
-<aside class="topic">
-<p class="topic-title">Context</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Context</strong></p>
+</div>
+<div class="sd-card-body docutils">
 <figure class="align-right" id="ifrc-logistics-icon">
 <a class="reference internal image-reference" href="../../_images/IFRC-icons-colour_Logistics.svg"><img alt="../../_images/IFRC-icons-colour_Logistics.svg" src="../../_images/IFRC-icons-colour_Logistics.svg" width="100px" /></a>
 </figure>
-<p>The operations team is making plans to deliver much-needed supplies to the affected region around Larkana. Currently, there is uncertainty about how the supplies can be transported there. The operations team has asked for more information on this topic.</p>
-<p>They need answers to the following three questions:</p>
+<p class="sd-card-text">The operations team is making plans to deliver much-needed supplies to the affected region around Larkana. Currently, there is uncertainty about how the supplies can be transported there. The operations team has asked for more information on this topic.</p>
+<p class="sd-card-text">They need answers to the following three questions:</p>
 <ul class="simple">
-<li><p>Which roads leading into Larkana are blocked, and at what specific locations are they blocked?</p></li>
-<li><p>Are there any bridges that can be crossed from the eastern side of the Indus to the western side, and where are these bridges located?</p></li>
-<li><p>If transporting supplies by road into the region is not feasible, what alternative method could be used to deliver the supplies?</p></li>
+<li><p class="sd-card-text">Which roads leading into Larkana are blocked, and at what specific locations are they blocked?</p></li>
+<li><p class="sd-card-text">Are there any bridges that can be crossed from the eastern side of the Indus to the western side, and where are these bridges located?</p></li>
+<li><p class="sd-card-text">If transporting supplies by road into the region is not feasible, what alternative method could be used to deliver the supplies?</p></li>
 </ul>
-<p>In order to get a clearer picture, we need to import the road network data for the region into QGIS. Look for the file in the input folder. The road network is initially displayed without showing any road types or other relevant details. We should apply a categorized classification technique only to display the specific roads that we are interested in.</p>
-</aside>
+<p class="sd-card-text">In order to get a clearer picture, we need to import the road network data for the region into QGIS. Look for the file in the input folder. The road network is initially displayed without showing any road types or other relevant details. We should apply a categorized classification technique only to display the specific roads that we are interested in.</p>
+</div>
+</div>
 <ol class="arabic">
-<li><p>Load the dataset <strong>“Roads_Larkana.gpkg”</strong> from your input folder into your QGIS.</p></li>
-<li><p>For categorized classification right-click on the layer <strong>“Roads_Larkana”</strong> in the Layer Panel and click on <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. A new window will open up with a vertical tab section on the left. Navigate to the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> tab (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html">Wiki Video</a>).</p>
+<li><p>Load the dataset <strong>“Roads_Larkana.gpkg”</strong> from your input folder into your QGIS-project.</p></li>
+<li><p>Lets set up the categorised classification. OpenStreetMap data distinguishes between different road types using the column “highway”.</p>
 <ul class="simple">
-<li><p>On the top you find a dropdown menu. Open it and choose <code class="docutils literal notranslate"><span class="pre">Categorized</span></code>. Under <code class="docutils literal notranslate"><span class="pre">Value</span></code> select “highway”.</p></li>
-<li><p>Further down the window, click on <code class="docutils literal notranslate"><span class="pre">Classify</span></code>.  Now you should see all unique values or attributes of the selected “highway” column.  You can adjust the colours by double-clicking on the colours in each row in the central field.</p></li>
-<li><p>Remove the tick from all categories except: <code class="docutils literal notranslate"><span class="pre">motorway</span></code>, <code class="docutils literal notranslate"><span class="pre">primary</span></code>, <code class="docutils literal notranslate"><span class="pre">secondary</span></code>, <code class="docutils literal notranslate"><span class="pre">trunk</span></code></p></li>
+<li><p>Right-click on the layer <strong>“Roads_Larkana”</strong> and select <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. The properties window will open up.</p></li>
+<li><p>Navigate to the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code>-tab.</p></li>
+<li><p>At the top, select <code class="docutils literal notranslate"><span class="pre">Categorized</span></code> (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html">Wiki Video</a>).</p></li>
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">Value</span></code>, select “highway”.</p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Classify</span></code>. You should see all the unique values for the “highway” column.</p></li>
+<li><p>Remove the ticks for all categories except for <code class="docutils literal notranslate"><span class="pre">motorway</span></code>, <code class="docutils literal notranslate"><span class="pre">primary</span></code>, <code class="docutils literal notranslate"><span class="pre">secondary</span></code>, and <code class="docutils literal notranslate"><span class="pre">trunk</span></code>.</p></li>
+<li><p>You can adjust the colours by double-clicking on the categories.</p></li>
 </ul>
 <figure class="align-center" id="pakistan-road-classification">
 <a class="reference internal image-reference" href="../../_images/PAK_road_classification.PNG"><img alt="../../_images/PAK_road_classification.PNG" src="../../_images/PAK_road_classification.PNG" style="width: 600px;" /></a>
@@ -940,10 +1005,10 @@ Now, you can write <code class="docutils literal notranslate"><span class="pre">
 <ul class="simple">
 <li><p>You have the option to customize the width of the main roads’ lines to improve the visualization. Open the Symbology window, then select <code class="docutils literal notranslate"><span class="pre">Symbol</span></code>. In the new window, you can adjust the width of the lines to your preference.</p></li>
 </ul>
-<figure class="align-center" id="id1">
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../_images/PAK_road_symbol_weight.png"><img alt="../../_images/PAK_road_symbol_weight.png" src="../../_images/PAK_road_symbol_weight.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Adjusting the symbolisation of the different road types</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Adjusting the symbolisation of the different road types</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
@@ -959,7 +1024,7 @@ Now, you can write <code class="docutils literal notranslate"><span class="pre">
 </div>
 </aside>
 <ol class="arabic" start="3">
-<li><p>To simplify the process, we will visually search for blocked roads and mark them with points. For this purpose, we will create an entirely new point dataset representing blocked roads.</p>
+<li><p>Finally, we want to visualise the roads that are flooded. To simplify the process, we will manually search for the roads intersecting with the flood extent layer and mark them with points. For this purpose, we will create a new point dataset representing the blocked roads.</p>
 <ul class="simple">
 <li><p>Click on  <code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">GeoPackage</span> <span class="pre">Layer</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#create-a-new-layer">Wiki Video</a>)</p></li>
 </ul>
@@ -979,12 +1044,12 @@ Now, you can write <code class="docutils literal notranslate"><span class="pre">
 </li>
 </ul>
 <ul class="simple">
-<li><p>Your new layer will appear in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code></p></li>
+<li><p>Your new layer will appear in the layers panel.</p></li>
 </ul>
-<figure class="align-center" id="id2">
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../_images/PAK_blocked_road_new_layer.png"><img alt="../../_images/PAK_blocked_road_new_layer.png" src="../../_images/PAK_blocked_road_new_layer.png" style="width: 400px;" /></a>
 <figcaption>
-<p><span class="caption-text">Creating a new point layer. Make sure to specify a location using the three points at the top.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Creating a new point layer. Make sure to specify a location using the three points at the top.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </li>
