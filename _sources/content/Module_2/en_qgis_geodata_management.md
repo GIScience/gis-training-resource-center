@@ -109,17 +109,17 @@ adhering to a logical structure can help writing and reading your documentation.
 documentation __while__ you are performing the analysis. QGIS offers a lot of options and settings while performing 
 an analysis, and it can be easy to forget the parameters you have used for an analysis step. 
 
-1. Project overview
+1. __Project overview:__
    - Add the title and purpose of the project.
    - Add a brief summary of the analysis.
-2. Data sources
+2. __Data sources:__
    - List of all the input datasets (with links if possible)
    - Coordinate system used
    - Notes on data quality or limitations
-3. Software & Tools
+3. __Software & Tools:__
    - QGIS version
    - Plugins used
-4. Workflow & Methodology
+4. __Workflow & Methodology:__
    - Step-by-step process with screenshots or diagrams where helpful
    - Describe each processing step (these can be in bullet points)
    - Mention key parameters or decisions made
