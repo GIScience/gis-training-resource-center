@@ -11,91 +11,350 @@
 :::
 ::::
 
-# Exercise 1: Flooding in Cambodia
+# Map design Exercise : Creating a Map of Pakistan
 
-This exercise is designed to apply the basics of map design from Chapters 1, 2, and 3. Make sure to go through these chapters before starting this exercise. The corresponding subchapters and wiki-pages are linked if you need to refresh your memory.
+::::{grid} 2
+:::{grid-item-card}
+__Aim of the exercise:__
+^^^
 
-Read the guide carefully and download the exercise data from the Nexus.
+Participants will work with multiple layers and conduct spatial queries. Additionally, they will learn how to create their own geodata.
 
-In the data folder, you will find several datasets.  The objective is to create a comprehensive atlas with maps for each region in Cambodia showing the flood extent and road network (including affected roads), with all the necessary map elements. 
+__Type of trainings exercise:__
 
-:::{dropdown} Context: Flooding in Cambodia  
+- This exercise can be used in online and presence training. 
 
-The floodplains of the Mekong and the Tonle Sap System in Cambodia experience yearly flood pulses that bring nutrients which sustain agriculture and fisheries. With the changing climate, the water levels of these floods have decreased, leading to a reduced reverse flow and a decrease in the flood duration of about 26 days (De Xun Cha et al. 2022). This trend will strain the food security in the region, affecting the livelihoods of a large portion of the population. Combined with the decline of the yearly flood pulse, major flood events can cause national health crises, damage infrastructure, displace thousands of people, and further exacerbate food insecurity in the region.
-In 2013, following continuous rainfall in September, the Mekong and Tonle Sap Deltas flooded, displacing 144 thousand people. In 2011, more than 200,000 people have been displaced due to floods. Cambodia has experienced major flood events in 2020, 2022 and 2023 (IDMC 2023). 
+:::
+:::{grid-item-card}
+__These skills are relevant for:__
+^^^ 
 
-Sources: 
-Chua, S. D. X., Lu, X. X., Oeurng, C., Sok, T., & Grundy-Warr, C. (2022). Drastic decline of flood pulse in the Cambodian floodplains (Mekong River and Tonle Sap system). Hydrology and Earth System Sciences, 26(3), 609–625. https://doi.org/10.5194/hess-26-609-2022  
-IDMC (International Displacement Monitoring Centre). (2022). Cambodia - Internal displacements (New Displacements) - IDPs. https://data.humdata.org/dataset/idmc-idp-data-khm (accessed 04.12.2023)
+- QGIS Essentials
+- Working with multiple layers
+- Conduct spatial queries
+- Creation of geodata
+
+:::
+::::
+
+::::{grid} 2
+:::{grid-item-card}
+__Estimated time demand for the exercise:__
+^^^
+
+- The exercise takes around 3 hours to complete, depending on the number of participants and their familiarity with computer systems.
 
 :::
 
-## Objectives
+:::{grid-item-card}
+__Relevant wiki articles:__
+^^^
 
-The data provided contains shapefiles detailing the flood extent in October 2023, the road network, administrative boundaries, the Mekong and Tonle Sap Systems, as well as health facilities and airports. The goal is to design a map where the flood extent, road accessibility, and important landmarks such as health facilities, settlements, and airports are visible.
+* [Visualisation of Vector Data](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_visualisation_wiki.html)
+* [Map Making](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_map_making_wiki.html)
+* [Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html)
+* [Geodata Classification- Categorized](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html)
+* [Geodata Classification - Graduated](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html)
 
-## Available Datasets
+:::
+::::
+
+::::{grid} 1
+:::{grid-item-card}
+__Context:__
+^^^
+
+In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. You have already conducted an analysis utilizing actual data from this natural disaster. We now want to visualize our findings on an appealing map that can be printed out or shared with different stakeholders. The map will show specific medical centers and healthcare facilities that where impacted by the flooding. Additionally, we will visualize the viability of road access to the city of Larkana throughout the flood period.
+
+:::
+::::
 
 
-```{Tip}
-If you need inspiration on how to style certain elements of your map, make sure to check out the chapter [Examples for Flood Map Design](/gis-training-resource-center/content/Module_4/en_qgis_map_examples.md) 
+### Available Data
+
+You have created the data for Larkana in [Module 3, Exercise 4](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex2.html). In order to conduct this exercise please create a folder on your computer and copy your entire folder structure of Exercise 4 in there. In case you did not do Module 3 - Exercise 4 you can download the data [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/Exercise_2/Module_4_Exercise_2_Larkana_flood_map.zip). Save the folder on your computer an unzip the file.
+
+<!--CHECK: Is the link to the nexus correct?-->
+
+| Dataset name| Original title|Publisher|Download from| 
+| :-------------------- | :----------------- |:----------------- |:----------------- |
+| PAK_adm2_Sindh.gpkg | [Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-pak) |UN OCHA | HDX |
+| PAK_Sind_Health_Facilities.gpkg |  [Pakistan Health Facilities (OpenStreetMap Export)](https://data.humdata.org/dataset/hotosm_pak_health_facilities) |Humanitarian OpenStreetMap Team (HOT) | HDX |
+| VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp | [Satellite detected water extents from 08 to 12 August 2024 over Pakistan)](https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan) |UNO SAT | HDX |
+
+
+```{hint} Folder structure
+Keep your data management clean by creating a folder structure on your computer for your QGIS-projects and geodata. 
+The exercise data should be saved in a location where you can easily find them and the corresponding QGIS-project
 ```
 
-## Step 1: Preparing the layers
+## Tasks
 
-1. Load the layers into QGIS and make yourself familiar with the data by opening the attribute table () 
-2. Arrange the layers such that no layer is blocked 
+### Preparation of the data
 
-## Step 2: Set the symbology for the individual layers
+1. Load all necessary the files into a new QGIS-project:
+- Healthsites: `Health_Facilities_Flood_2024_AOI.gpkg`
+- Roads:`Roads_Larkana.gpkg`
+- Blocked Roads Points: `PAK_flood_2024_blocked_road.gpkg`
+- Flood Extent 2024 reprojected: `PAK_2024_Minimum_Flood_Extend_reprojected.gpkg`
+- Administrative Boundaries Sindh: `PAK_Sindh_adm1.shp`
 
-1. First, let's style the administrative boundaries. We want to keep it simple and keep the polygon of the adm1 with a transparent filling, but with a thicker outline. On top of that layer, we want to see the adm2 boundaries, but with a thinner (or even dashed) outline
-2. The flood extent needs to be immediately recognizable. Choose a colour and filling style (Simple Fill or hashed line fill)
-3. The river system and lake should be symbolised with a associative colour to be immediately recognizable.
-4. The road network shapefile has the attribute `Flooded` with the Value `Y` if the extent of the flood crosses the road. Set the symbology of the road network so roads are easily distinguishable and that the reader can identify which roads are potentially flooded.
-5. Decide how you want to display settlements and health facilities (link to SVG-symbols)
-6. Set up the labels for the settlements and administrative districts
-7. Set up the background to make the area of focus stand out.
-8. In mountainous areas, it can be helpful to add a hillshade to determine the accessibility and travel time by car. 
+Save your project and give it a clear name, e.g. "Larkana_flood_response"
 
-```{Tip} Saving the styles
-If you are happy with the styles you have set up for your layers, you can save the style and add it to your style library.
+2. Look into the attribute table of the different layers and look what information is available and how the attributes are named.
+
+3. We want to make a comprehensible map, think about which data we need and what data we can leave out.
+    - For example, the layer `Roads_Larkana` contains too many roads for a map on a national scale. Let's open the attribute table and look at how the roads are classified. The data is using the conventional OpenStreetMap classification: The type of road is described under the attribute `highway`. In our case, it might be useful to only display the primary and secondary roads, so all the features where `highway=primary` OR `highway=secondary`.
+
+### Part 1: Symbolization
+
+Now we have assigned a symbol for each layer at our disposal. Look at the map you created and decide if you want to adjust any symbology to make the map easier to read. Do you need to change some colours? Are the layers ordered in a way that the information is visible? Is the font size appropriate, or does it cover up too much information?
+Let's go through the layers one by one and visualize them in a meaningful way.
+
+__Healthsites:__
+
+Double-click on the point next to your healthsites vector layer. The symbology window will open. Let's create our own customized symbol for healthcare facilities.
+- Under `Symbol layer type`, select __"SVG Marker"__
+- Scroll down to the SVG-Browser. Here you will find all the folder of your installed SVG-libraries.
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video>
+
+- Under `landmark` you will find the crescent moon, click on it.
+
+```{figure} ../../fig/crescent_moon.PNG
+---
+width: 700px
+name: SVG Marker
+---
+Create customized SVG Marker
 ```
 
-## Step 2: Starting the Print Layout
+- you can adjust its color and size and rotate it 180° in order to turn it around.
+- on the upper right click on the __+__ in order to add another "Simple Marker". Choose a circle and adjust its color and size in order to fit around the crescent moon.
 
-1. Add your Map to the Print Layout. Make sure to leave some space for the other map elements such as sources, legend, overview map, logo, etc.
-2. Adjust the Scale of the Map in the Item properties (if possible to a round number)
-3. Add a scale bar
-5. Add a title. The title should make it clear what the map displays.
-4. Add a legend. Make sure to remove layers which are not visible on the map and rename the elements accordingly.
-5. Add a compass to show map orientation.
+Another option to use IFRC and Red Cross logos is to use the `Plugin Resource Sharing`:
 
-## Step 3: Setting up the Overview Map
+With the plugin __"Plugin Resource Sharing"__, you can install symbol and icon libraries used by the Red Cross and UN, as well as other useful symbols.
 
-1. Once you are done with the main map, __make sure to lock the layer and the styles for your main map (`Map 1`)__. Otherwise the map will update when setting up the overview map.
-3. Navigate back to the main QGIS-Window.
-4. Copy the layers for the overview map. In this case, the `Adm1`-layer. This way, you will not loose the style for the layers on your main map. Adjust the style on the copied layer for your overview map.
-5. Navigate back to the print layout.
-6. Add a second map as your overview map (preferably somewhere in the corner)
-7. Set it up as an overview map.
-8. Lock the layers and lock the styles.
+1. Install the __"Plugin Resource Sharing"__ by opening the plugin installation window and searching for the plugin.
+2. Once installed, open the plugin interface by clicking on `plugin` > `Plugin Resource Sharing`
+3. Search for packages by the Red Cross and UN
+4. Install the packages.
 
-## Step 5: Adding the other elements of a map
+Now the symbols should be available in the styling manager in the SVG folder.
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_resource_sharing_plugin.mp4"></video>
+
+__Roads:__
+
+For categorized classification of the roads right-click on the layer __Roads_Larkana__ in the `Layer Panel` -> `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
+* On the top you find a dropdown menu. Open it and choose `Categorized`. Under `Value` select “highway”.
+* Further down the window, click on `Classify`.  Now you should see all unique values or attributes of the selected “Flood_affected” column.  You can adjust the colours by double-clicking on one row in the central field.
+* Remove the tick from all categories except: `motorway`, `primary`, `secondary`, `trunk`
+
+    ```{figure} /fig/PAK_road_classification.PNG
+    ---
+    width: 600px
+    name: Pakistan road classification
+    align: center
+    ---
+    Pakistan road classification
+    ```
+
+* You have the option to customize the width of the main roads' lines to improve the visualization. Open the Symbology window, then select 'Symbol'. In the new window, you can adjust the width of the lines to your preference.
+    
+    ```{figure} /fig/PAK_road_symbol_weight.png
+    ---
+    width: 600px
+    name: Pakistan road classification
+    align: center
+    ---
+    Pakistan road classification
+    ```
+
+* Once you are done, click `Apply` and `OK` to close the symbology window.
+
+__Blocked Roads Points:__
+
+Open the __Symbology Tab__ for the `PAK_flood_2024_blocked_road`-layer and choose a meaningful symbol for flood related blocked roads.
 
 
-1. Add the sources of the datasets
-2. Add a text to describe what the map shows.
-3. Add your name and/or organisation as authors.
+__Airports:__
+
+In the [previous exercise](/content/Module_3/en_qgis_module_3_ex2.md) you found out that the Mohenjodaro Airport in the southwest of Larkana City is still accessible via the road network. Essential supplies could potentially be transported from the airport into the city without encountering any roadblocks. We want to point out this possibility. Let's mark the airport as a point and visualize it!
+
+To do so we will create an entirely new point dataset representing airports.
+* Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#create-a-new-layer)) 
+* Under `Database` click on ![](/fig/Three_points.png) and navigate to `temp` folder. Give the new dataset the name __“PAK_airports”__. Click `Save`.
+* `Geometry type`: Select `Point`
+* Under `Additional dimension` you should always make sure that you check `None`. 
+* Select the coordinate reference system (CRS) "EPSG:4326-WGS 84". By default, the QGIS selects the project CRS. 
+* Under `New Field` you can add columns to the new layer. Add the column __“Airport”__.
+* `Type`: Select `Text Data`
+* Click on `Add to Fields List` ![](/fig/mActionNewAttribute.png) to add the new column to the `Fields List`.
+* Click `OK`.
+* Your new layer will appear in the `Layer Panel`
+
+    ```{figure} /fig/Create_Geopackagelayer_airport.PNG
+    ---
+    width: 400px
+    name: Digitalising airports
+    align: center
+    ---
+    Digitising airports
+    ```
+
+* Now you can create a point for the airport and if you would like additional airports as well [wiki](/content/Wiki/en_qgis_digitalization_wiki.md#add-geometries-to-a-layer). Currently the new layer __“PAK_airports”__ is empty. To add features we can use the `Digitizing Toolbar`. If you cannot see the toolbar `View` -> `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#creation-of-point-data)).  ![](/fig/Digitizing_Toolbar.png)
+
+*  Once you have found the airport, click on it![](/fig/mActionCapturePoint.png). Left-click on the feature you want to digitise.
+* Once you click on a place, a window will appear. Indicate that the road is blocked by writing `Yes` in the field `Blocked_road`.
+
+    ```{figure} /fig/Feature_Att_Airport.PNG
+    ---
+    width: 400px
+    name: Digitalising airports
+    align: center
+    ---
+    Digitising airports
+    ```
+
+* Once you are done with digitizing click on ![](/fig/mActionSaveEdits.png) to save your edits.
+* Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
+
+Now we can use an icon instead of just a point to display the layer __“PAK_airports”__ to visualise this fact better.
+
+* Right-click on the layer__“PAK_flood_2024_blocked_road”__in the `Layer Panel` -> `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
+* Keep the single symbol option. Select any symbol from the list that is appropriate for marking blocked roads. 
+* Once you are done, click `Apply` and `OK` to close the symbology window.
+
+    ```{figure} /fig/PAK_blocked_road_symbol.png
+    ---
+    width: 600px
+    name: Visulsing blocked roads with icons
+    align: center
+    ---
+    Visualising blocked roads with icons
+    ```   
+
+__Flood Extent:__
+
+Open the __Symbology Tab__ for the `PAK_2024_Minimum_Flood_Extend_reprojected`-layer. Choose a light-blue as color and adjust the opacity to about 30%.
+
+__Administrative Boundaries:__
+
+Open the __Symbology Tab__ for the `PAK_Sindh_amd1`-layer. Click on `Simple Fill` and adjust the `Symbol layer type` to `Simple Line`. You can furthermore adjust now the outline colour and stroke width.
 
 
-```{Tip}
-If you are happy with the layout of your print layout, don't forget to save it as a preset for future use.
+__Bonus Step__: [Adding a basemap](/content/Wiki/en_qgis_basemaps_wiki.md) can help potential readers orienting themselves.
+
+If you are happy with the symobolisation of your layers, the map should be ready for a print layout.
+
+```{Attention}
+
+Remember the layer concept and place all layers in a logic order. The flood extents should lay under the roads and the several point layer above the roads.
+
 ```
 
-## Step 6: Exporting the map
+### Part 2: Creating the print layout
 
-Once you are happy with the print layout, it is time to export the map as a PDF-file (link). Once exported, open the file in your PDF viewer and check if everything looks as intended. In QGIS, some elements of the map might change slightly in the exporting process, so it is important to check before sending the map to your colleagues or publishing. 
+Once you are happy with the symbolization and colours of your data, the next step is to create a print layout. By adding additional information such as a title, data sources, projection, description, etc. you provide your audience with the means to contextualise and evaluate the map and it's content by themselves.
 
-```{Tip}
-To avoid too many changes when exporting the map, set the 
+1. Open a new print layout and give it a name (e.g. Larkana_floods).
+    - Go to __Project > New Print Layout > enter a name for the new print layout > click OK__
+
+
+```{figure} ../../fig/en_30.30.2_create_print_layout.png
+---
+width: 700px
+name: Create Print Layout
+---
+Create a new Print Layout
 ```
+
+- A new window with a blank print layout will appear. This is the print layout designer.
+    - On the left, you will find a toolbar with tools to add and move items on the print layout canvas.
+    - On the right you will find a list of items you added to the print layout (it is still empty). Beneath this, you will find a tab called __"item properties"__. This is where you modify the items on your print layout (e.g. enter the text for a text box or change the font).
+
+2. Insert a new map by clicking on ![New Map Icon](/fig/30.30.2_print_layout_insert_map_icon.png) (`Add Map`) on the left toolbar, and drawing a rectangle on the print canvas. [Video](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.md#adding-a-new-map)
+
+3. Move and position the map so that the area of interest is visible at a reasonable scale.
+
+4. Let's add a title:
+    - Click on ![Add text icon](/fig/30.30.2_print_layout_add_text.png) (`Add text`)
+    - Drag a rectangle on the canvas
+    - In the item properties window on the right, you will find a text box with the text "Lorem ipsum". Here you can enter your map title (e.g. Larkama Flood Response 2024).
+    - Adjust the font size: Click on the __Font__ dropdown menu and adjust the font size for a title (25p or more). Adjust the text box if necessary.
+
+5. Let's add a legend:
+    - Click on  ![Add legend icon](/fig/30.30.2_print_layout_add_legend.png) (`Add legend`). 
+    - Navigate to the __Item Properties__ panel on the right. 
+    - Scroll down a bit and check turn off `Auto Update` by unchecking the check box. Now you can freely edit every item on the legend
+    - Adjust the legend by removing unnecessary layers (which are not seen on the map) and rename the layer in the legend by clicking on ![Edit Icon](/fig/30.30.2_print_layout_legend_edit.png) (`Edit selected item properties`) below the legend entries.
+    - Under the upper `Main Properties`, insert "Legend" as title
+
+```{figure} ../../fig/Larkana_Legend.PNG
+---
+width: 700px
+name: Create Print Layout
+---
+Create a new Print Layout
+```
+
+6. Now, let's add a scale bar:
+    - Click on ![Add Scale bar icon](/fig/30.30.2_print_layout_add_scale_bar.png) (`Add Scale bar`)
+    - Draw a rectangle on the map and position the scale bar on the edge of the map. You can adjust the scale bar units (meters, kilometers, ...), the fixed segment width (50 km, 75 km, 100 km, ...) and the number of segments (to the right).
+
+7. Let's add a north arrow:
+    - Click on ![Add North Arrow Icon](/fig/30.30.2_print_layout_add_orientation.png) (`Add North Arrow`). 
+    - Drag a rectangle on the print layout. Adjust the size and location of the north arrow. You can also change the icon in the item properties.
+
+8. Let's add a logo (for example, your national society):
+    - Click on ![Add Picture](/fig/30.30.2_print_layout_add_image.png) (`Add picture`)
+    - Drag a rectangle in the spot where you want to add the logo
+    - Navigate to the `Item properties` panel on the right and switch to `Raster image`. 
+    - Click on the three dots `...` and select the file with your logo
+    - If necessary, resize or move the picture on the print layout.
+
+9. Add some additional information as text.
+    - Click on ![Add text icon](/fig/30.30.2_print_layout_add_text.png) (`Add text`)
+    - Drag a rectangle on the canvas
+    - In the item properties window on the right, you will find a text box with the text "Lorem ipsum". Here you can enter some additional information of the map, e.g. the coordinate system, basemap information or date.
+
+When you are finished with your map design you can export your printable map as image or pdf under `Layout`--> `Export as Image` or `Export as PDF`
+
+You could now have as a result a map similar to this one. Here, some space has been left in order to implement an overview map. If you are still have time go for the bonus exercise and add an overview map!
+
+```{figure} ../../fig/Larkama_Map_withoutOverview.PNG
+---
+width: 700px
+name: Map Larkama
+---
+Map Larkama
+```
+
+### Bonus Exercise!
+
+If you are finished with the main map, click on the map and navigate to the item properties. In the layer section, check the box `Lock Layers` and `Lock styles for layers`. This means that if you change the map in the main QGIS-window, the map you have added to the Now you can start working on an overview map. We will be using a shapefile with the administrative boundaries of Pakistan.  
+
+1. Return to the main QGIS window and load the layers from the `Bonus Exercise`-folder.
+2. In the __Layer__ panel, make the layers for the main map invisible by clicking on the ![Eye Icon](/fig/30.30.2_layer_visibility_icon.png) next to the layer name.
+3. Style the countries in an neutral, unobtrusive color. For example, you can use the "__Gray 3 Fill__" from the styling templates.
+4. Once you are happy with the styling of your overview map, navigate back to the __Print Layout window__.
+5. Add a second map and position it in a corner.
+6. In the __Item properties__ panel for the second Map ("__Map 2__"), scroll down and open the `Overview`-options.
+7. Click on the `+`-button to add a new overview.
+8. In the "__Map Frame__"-option, select "__Map 1__". This will show the frame of the main map on your overview map.
+9. You can add a scale bar and a northj arrow to your overview map as well.
+
+```{figure} ../../fig/Larkana_Map_Overview.png
+---
+width: 700px
+name: Map Larkama
+---
+Map Larkama
+```
+
+
+Congratulations! You have finished your first map.
+
+
