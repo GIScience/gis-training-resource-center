@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Exercise 1: Flooding in Cambodia &#8212; GIS Resource Training Center</title>
+    <title>Map design Exercise : Creating a Map of Pakistan &#8212; GIS Resource Training Center</title>
   
   
   
@@ -525,7 +525,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Exercise 1: Flooding in Cambodia</h1>
+    <h1>Map design Exercise : Creating a Map of Pakistan</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -535,14 +535,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objectives">Objectives</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-datasets">Available Datasets</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-preparing-the-layers">Step 1: Preparing the layers</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-set-the-symbology-for-the-individual-layers">Step 2: Set the symbology for the individual layers</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-starting-the-print-layout">Step 2: Starting the Print Layout</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-setting-up-the-overview-map">Step 3: Setting up the Overview Map</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-adding-the-other-elements-of-a-map">Step 5: Adding the other elements of a map</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-exporting-the-map">Step 6: Exporting the map</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preparation-of-the-data">Preparation of the data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-symbolization">Part 1: Symbolization</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-creating-the-print-layout">Part 2: Creating the print layout</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-exercise">Bonus Exercise!</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -572,102 +572,377 @@ document.write(`
 </div>
 </div>
 </div>
-<section class="tex2jax_ignore mathjax_ignore" id="exercise-1-flooding-in-cambodia">
-<h1>Exercise 1: Flooding in Cambodia<a class="headerlink" href="#exercise-1-flooding-in-cambodia" title="Permalink to this heading">#</a></h1>
-<p>This exercise is designed to apply the basics of map design from Chapters 1, 2, and 3. Make sure to go through these chapters before starting this exercise. The corresponding subchapters and wiki-pages are linked if you need to refresh your memory.</p>
-<p>Read the guide carefully and download the exercise data from the Nexus.</p>
-<p>In the data folder, you will find several datasets.  The objective is to create a comprehensive atlas with maps for each region in Cambodia showing the flood extent and road network (including affected roads), with all the necessary map elements.</p>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Context: Flooding in Cambodia  <div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">The floodplains of the Mekong and the Tonle Sap System in Cambodia experience yearly flood pulses that bring nutrients which sustain agriculture and fisheries. With the changing climate, the water levels of these floods have decreased, leading to a reduced reverse flow and a decrease in the flood duration of about 26 days (De Xun Cha et al. 2022). This trend will strain the food security in the region, affecting the livelihoods of a large portion of the population. Combined with the decline of the yearly flood pulse, major flood events can cause national health crises, damage infrastructure, displace thousands of people, and further exacerbate food insecurity in the region.
-In 2013, following continuous rainfall in September, the Mekong and Tonle Sap Deltas flooded, displacing 144 thousand people. In 2011, more than 200,000 people have been displaced due to floods. Cambodia has experienced major flood events in 2020, 2022 and 2023 (IDMC 2023).</p>
-<p class="sd-card-text">Sources:
-Chua, S. D. X., Lu, X. X., Oeurng, C., Sok, T., &amp; Grundy-Warr, C. (2022). Drastic decline of flood pulse in the Cambodian floodplains (Mekong River and Tonle Sap system). Hydrology and Earth System Sciences, 26(3), 609–625. <a class="reference external" href="https://doi.org/10.5194/hess-26-609-2022">https://doi.org/10.5194/hess-26-609-2022</a><br />
-IDMC (International Displacement Monitoring Centre). (2022). Cambodia - Internal displacements (New Displacements) - IDPs. <a class="reference external" href="https://data.humdata.org/dataset/idmc-idp-data-khm">https://data.humdata.org/dataset/idmc-idp-data-khm</a> (accessed 04.12.2023)</p>
+<section class="tex2jax_ignore mathjax_ignore" id="map-design-exercise-creating-a-map-of-pakistan">
+<h1>Map design Exercise : Creating a Map of Pakistan<a class="headerlink" href="#map-design-exercise-creating-a-map-of-pakistan" title="Permalink to this heading">#</a></h1>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Aim of the exercise:</strong></p>
 </div>
-</details><section id="objectives">
-<h2>Objectives<a class="headerlink" href="#objectives" title="Permalink to this heading">#</a></h2>
-<p>The data provided contains shapefiles detailing the flood extent in October 2023, the road network, administrative boundaries, the Mekong and Tonle Sap Systems, as well as health facilities and airports. The goal is to design a map where the flood extent, road accessibility, and important landmarks such as health facilities, settlements, and airports are visible.</p>
-</section>
-<section id="available-datasets">
-<h2>Available Datasets<a class="headerlink" href="#available-datasets" title="Permalink to this heading">#</a></h2>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>If you need inspiration on how to style certain elements of your map, make sure to check out the chapter <span class="xref myst">Examples for Flood Map Design</span></p>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Participants will work with multiple layers and conduct spatial queries. Additionally, they will learn how to create their own geodata.</p>
+<p class="sd-card-text"><strong>Type of trainings exercise:</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">This exercise can be used in online and presence training.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>These skills are relevant for:</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">QGIS Essentials</p></li>
+<li><p class="sd-card-text">Working with multiple layers</p></li>
+<li><p class="sd-card-text">Conduct spatial queries</p></li>
+<li><p class="sd-card-text">Creation of geodata</p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Estimated time demand for the exercise:</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">The exercise takes around 3 hours to complete, depending on the number of participants and their familiarity with computer systems.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Relevant wiki articles:</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_visualisation_wiki.html">Visualisation of Vector Data</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_map_making_wiki.html">Map Making</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html">Layer Concept</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html">Geodata Classification- Categorized</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html">Geodata Classification - Graduated</a></p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-1 sd-row-cols-lg-1 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Context:</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. You have already conducted an analysis utilizing actual data from this natural disaster. We now want to visualize our findings on an appealing map that can be printed out or shared with different stakeholders. The map will show specific medical centers and healthcare facilities that where impacted by the flooding. Additionally, we will visualize the viability of road access to the city of Larkana throughout the flood period.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section id="available-data">
+<h2>Available Data<a class="headerlink" href="#available-data" title="Permalink to this heading">#</a></h2>
+<p>You have created the data for Larkana in <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex2.html">Module 3, Exercise 4</a>. In order to conduct this exercise please create a folder on your computer and copy your entire folder structure of Exercise 4 in there. In case you did not do Module 3 - Exercise 4 you can download the data <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/Exercise_2/Module_4_Exercise_2_Larkana_flood_map.zip">here</a>. Save the folder on your computer an unzip the file.</p>
+<!--CHECK: Is the link to the nexus correct?-->
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Dataset name</p></th>
+<th class="head text-left"><p>Original title</p></th>
+<th class="head text-left"><p>Publisher</p></th>
+<th class="head text-left"><p>Download from</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>PAK_adm2_Sindh.gpkg</p></td>
+<td class="text-left"><p><a class="reference external" href="https://data.humdata.org/dataset/cod-ab-pak">Subnational Administrative Boundaries</a></p></td>
+<td class="text-left"><p>UN OCHA</p></td>
+<td class="text-left"><p>HDX</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>PAK_Sind_Health_Facilities.gpkg</p></td>
+<td class="text-left"><p><a class="reference external" href="https://data.humdata.org/dataset/hotosm_pak_health_facilities">Pakistan Health Facilities (OpenStreetMap Export)</a></p></td>
+<td class="text-left"><p>Humanitarian OpenStreetMap Team (HOT)</p></td>
+<td class="text-left"><p>HDX</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp</p></td>
+<td class="text-left"><p><a class="reference external" href="https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan">Satellite detected water extents from 08 to 12 August 2024 over Pakistan)</a></p></td>
+<td class="text-left"><p>UNO SAT</p></td>
+<td class="text-left"><p>HDX</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Folder structure
+Keep your data management clean by creating a folder structure on your computer for your QGIS-projects and geodata.
+The exercise data should be saved in a location where you can easily find them and the corresponding QGIS-project</p>
 </div>
 </section>
-<section id="step-1-preparing-the-layers">
-<h2>Step 1: Preparing the layers<a class="headerlink" href="#step-1-preparing-the-layers" title="Permalink to this heading">#</a></h2>
+<section id="tasks">
+<h2>Tasks<a class="headerlink" href="#tasks" title="Permalink to this heading">#</a></h2>
+<section id="preparation-of-the-data">
+<h3>Preparation of the data<a class="headerlink" href="#preparation-of-the-data" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
-<li><p>Load the layers into QGIS and make yourself familiar with the data by opening the attribute table ()</p></li>
-<li><p>Arrange the layers such that no layer is blocked</p></li>
+<li><p>Load all necessary the files into a new QGIS-project:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Healthsites: <code class="docutils literal notranslate"><span class="pre">Health_Facilities_Flood_2024_AOI.gpkg</span></code></p></li>
+<li><p>Roads:<code class="docutils literal notranslate"><span class="pre">Roads_Larkana.gpkg</span></code></p></li>
+<li><p>Blocked Roads Points: <code class="docutils literal notranslate"><span class="pre">PAK_flood_2024_blocked_road.gpkg</span></code></p></li>
+<li><p>Flood Extent 2024 reprojected: <code class="docutils literal notranslate"><span class="pre">PAK_2024_Minimum_Flood_Extend_reprojected.gpkg</span></code></p></li>
+<li><p>Administrative Boundaries Sindh: <code class="docutils literal notranslate"><span class="pre">PAK_Sindh_adm1.shp</span></code></p></li>
+</ul>
+<p>Save your project and give it a clear name, e.g. “Larkana_flood_response”</p>
+<ol class="arabic simple" start="2">
+<li><p>Look into the attribute table of the different layers and look what information is available and how the attributes are named.</p></li>
+<li><p>We want to make a comprehensible map, think about which data we need and what data we can leave out.</p>
+<ul class="simple">
+<li><p>For example, the layer <code class="docutils literal notranslate"><span class="pre">Roads_Larkana</span></code> contains too many roads for a map on a national scale. Let’s open the attribute table and look at how the roads are classified. The data is using the conventional OpenStreetMap classification: The type of road is described under the attribute <code class="docutils literal notranslate"><span class="pre">highway</span></code>. In our case, it might be useful to only display the primary and secondary roads, so all the features where <code class="docutils literal notranslate"><span class="pre">highway=primary</span></code> OR <code class="docutils literal notranslate"><span class="pre">highway=secondary</span></code>.</p></li>
+</ul>
+</li>
 </ol>
 </section>
-<section id="step-2-set-the-symbology-for-the-individual-layers">
-<h2>Step 2: Set the symbology for the individual layers<a class="headerlink" href="#step-2-set-the-symbology-for-the-individual-layers" title="Permalink to this heading">#</a></h2>
+<section id="part-1-symbolization">
+<h3>Part 1: Symbolization<a class="headerlink" href="#part-1-symbolization" title="Permalink to this heading">#</a></h3>
+<p>Now we have assigned a symbol for each layer at our disposal. Look at the map you created and decide if you want to adjust any symbology to make the map easier to read. Do you need to change some colours? Are the layers ordered in a way that the information is visible? Is the font size appropriate, or does it cover up too much information?
+Let’s go through the layers one by one and visualize them in a meaningful way.</p>
+<p><strong>Healthsites:</strong></p>
+<p>Double-click on the point next to your healthsites vector layer. The symbology window will open. Let’s create our own customized symbol for healthcare facilities.</p>
+<ul class="simple">
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">Symbol</span> <span class="pre">layer</span> <span class="pre">type</span></code>, select <strong>“SVG Marker”</strong></p></li>
+<li><p>Scroll down to the SVG-Browser. Here you will find all the folder of your installed SVG-libraries.</p></li>
+</ul>
+<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video></p>
+<ul class="simple">
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">landmark</span></code> you will find the crescent moon, click on it.</p></li>
+</ul>
+<figure class="align-default" id="svg-marker">
+<a class="reference internal image-reference" href="../../_images/crescent_moon.PNG"><img alt="../../_images/crescent_moon.PNG" src="../../_images/crescent_moon.PNG" style="width: 700px;" /></a>
+<figcaption>
+<p><span class="caption-text">Create customized SVG Marker</span><a class="headerlink" href="#svg-marker" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p>you can adjust its color and size and rotate it 180° in order to turn it around.</p></li>
+<li><p>on the upper right click on the <strong>+</strong> in order to add another “Simple Marker”. Choose a circle and adjust its color and size in order to fit around the crescent moon.</p></li>
+</ul>
+<p>Another option to use IFRC and Red Cross logos is to use the <code class="docutils literal notranslate"><span class="pre">Plugin</span> <span class="pre">Resource</span> <span class="pre">Sharing</span></code>:</p>
+<p>With the plugin <strong>“Plugin Resource Sharing”</strong>, you can install symbol and icon libraries used by the Red Cross and UN, as well as other useful symbols.</p>
 <ol class="arabic simple">
-<li><p>First, let’s style the administrative boundaries. We want to keep it simple and keep the polygon of the adm1 with a transparent filling, but with a thicker outline. On top of that layer, we want to see the adm2 boundaries, but with a thinner (or even dashed) outline</p></li>
-<li><p>The flood extent needs to be immediately recognizable. Choose a colour and filling style (Simple Fill or hashed line fill)</p></li>
-<li><p>The river system and lake should be symbolised with a associative colour to be immediately recognizable.</p></li>
-<li><p>The road network shapefile has the attribute <code class="docutils literal notranslate"><span class="pre">Flooded</span></code> with the Value <code class="docutils literal notranslate"><span class="pre">Y</span></code> if the extent of the flood crosses the road. Set the symbology of the road network so roads are easily distinguishable and that the reader can identify which roads are potentially flooded.</p></li>
-<li><p>Decide how you want to display settlements and health facilities (link to SVG-symbols)</p></li>
-<li><p>Set up the labels for the settlements and administrative districts</p></li>
-<li><p>Set up the background to make the area of focus stand out.</p></li>
-<li><p>In mountainous areas, it can be helpful to add a hillshade to determine the accessibility and travel time by car.</p></li>
+<li><p>Install the <strong>“Plugin Resource Sharing”</strong> by opening the plugin installation window and searching for the plugin.</p></li>
+<li><p>Once installed, open the plugin interface by clicking on <code class="docutils literal notranslate"><span class="pre">plugin</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Plugin</span> <span class="pre">Resource</span> <span class="pre">Sharing</span></code></p></li>
+<li><p>Search for packages by the Red Cross and UN</p></li>
+<li><p>Install the packages.</p></li>
 </ol>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Saving the styles
-If you are happy with the styles you have set up for your layers, you can save the style and add it to your style library.</p>
+<p>Now the symbols should be available in the styling manager in the SVG folder.</p>
+<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_resource_sharing_plugin.mp4"></video></p>
+<p><strong>Roads:</strong></p>
+<p>For categorized classification of the roads right-click on the layer <strong>Roads_Larkana</strong> in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. A new window will open up with a vertical tab section on the left. Navigate to the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> tab.</p>
+<ul>
+<li><p>On the top you find a dropdown menu. Open it and choose <code class="docutils literal notranslate"><span class="pre">Categorized</span></code>. Under <code class="docutils literal notranslate"><span class="pre">Value</span></code> select “highway”.</p></li>
+<li><p>Further down the window, click on <code class="docutils literal notranslate"><span class="pre">Classify</span></code>.  Now you should see all unique values or attributes of the selected “Flood_affected” column.  You can adjust the colours by double-clicking on one row in the central field.</p></li>
+<li><p>Remove the tick from all categories except: <code class="docutils literal notranslate"><span class="pre">motorway</span></code>, <code class="docutils literal notranslate"><span class="pre">primary</span></code>, <code class="docutils literal notranslate"><span class="pre">secondary</span></code>, <code class="docutils literal notranslate"><span class="pre">trunk</span></code></p>
+<figure class="align-center" id="pakistan-road-classification">
+<a class="reference internal image-reference" href="../../_images/PAK_road_classification.PNG"><img alt="../../_images/PAK_road_classification.PNG" src="../../_images/PAK_road_classification.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Pakistan road classification</span><a class="headerlink" href="#pakistan-road-classification" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>You have the option to customize the width of the main roads’ lines to improve the visualization. Open the Symbology window, then select ‘Symbol’. In the new window, you can adjust the width of the lines to your preference.</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../../_images/PAK_road_symbol_weight.png"><img alt="../../_images/PAK_road_symbol_weight.png" src="../../_images/PAK_road_symbol_weight.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Pakistan road classification</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Once you are done, click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code> to close the symbology window.</p></li>
+</ul>
+<p><strong>Blocked Roads Points:</strong></p>
+<p>Open the <strong>Symbology Tab</strong> for the <code class="docutils literal notranslate"><span class="pre">PAK_flood_2024_blocked_road</span></code>-layer and choose a meaningful symbol for flood related blocked roads.</p>
+<p><strong>Airports:</strong></p>
+<p>In the <span class="xref myst">previous exercise</span> you found out that the Mohenjodaro Airport in the southwest of Larkana City is still accessible via the road network. Essential supplies could potentially be transported from the airport into the city without encountering any roadblocks. We want to point out this possibility. Let’s mark the airport as a point and visualize it!</p>
+<p>To do so we will create an entirely new point dataset representing airports.</p>
+<ul>
+<li><p>Click on  <code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">GeoPackage</span> <span class="pre">Layer</span></code>(<span class="xref myst">Wiki Video</span>)</p></li>
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">Database</span></code> click on <img alt="" src="../../_images/Three_points.png" /> and navigate to <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder. Give the new dataset the name <strong>“PAK_airports”</strong>. Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">type</span></code>: Select <code class="docutils literal notranslate"><span class="pre">Point</span></code></p></li>
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">Additional</span> <span class="pre">dimension</span></code> you should always make sure that you check <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p></li>
+<li><p>Select the coordinate reference system (CRS) “EPSG:4326-WGS 84”. By default, the QGIS selects the project CRS.</p></li>
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Field</span></code> you can add columns to the new layer. Add the column <strong>“Airport”</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Type</span></code>: Select <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">Data</span></code></p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">to</span> <span class="pre">Fields</span> <span class="pre">List</span></code> <img alt="" src="../../_images/mActionNewAttribute.png" /> to add the new column to the <code class="docutils literal notranslate"><span class="pre">Fields</span> <span class="pre">List</span></code>.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
+<li><p>Your new layer will appear in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code></p>
+<figure class="align-center" id="digitalising-airports">
+<a class="reference internal image-reference" href="../../_images/Create_Geopackagelayer_airport.PNG"><img alt="../../_images/Create_Geopackagelayer_airport.PNG" src="../../_images/Create_Geopackagelayer_airport.PNG" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-text">Digitising airports</span><a class="headerlink" href="#digitalising-airports" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Now you can create a point for the airport and if you would like additional airports as well <span class="xref myst">wiki</span>. Currently the new layer <strong>“PAK_airports”</strong> is empty. To add features we can use the <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code>. If you cannot see the toolbar <code class="docutils literal notranslate"><span class="pre">View</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Toolbars</span></code> and check <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code> (<span class="xref myst">Wiki Video</span>).  <img alt="" src="../../_images/Digitizing_Toolbar.png" /></p></li>
+<li><p>Once you have found the airport, click on it<img alt="" src="../../_images/mActionCapturePoint.png" />. Left-click on the feature you want to digitise.</p></li>
+<li><p>Once you click on a place, a window will appear. Indicate that the road is blocked by writing <code class="docutils literal notranslate"><span class="pre">Yes</span></code> in the field <code class="docutils literal notranslate"><span class="pre">Blocked_road</span></code>.</p>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="../../_images/Feature_Att_Airport.PNG"><img alt="../../_images/Feature_Att_Airport.PNG" src="../../_images/Feature_Att_Airport.PNG" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-text">Digitising airports</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Once you are done with digitizing click on <img alt="" src="../../_images/mActionSaveEdits.png" /> to save your edits.</p></li>
+<li><p>Click again on <img alt="" src="../../_images/mActionToggleEditing.png" /> to end the editing mode.</p></li>
+</ul>
+<p>Now we can use an icon instead of just a point to display the layer <strong>“PAK_airports”</strong> to visualise this fact better.</p>
+<ul>
+<li><p>Right-click on the layer__“PAK_flood_2024_blocked_road”__in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. A new window will open up with a vertical tab section on the left. Navigate to the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> tab.</p></li>
+<li><p>Keep the single symbol option. Select any symbol from the list that is appropriate for marking blocked roads.</p></li>
+<li><p>Once you are done, click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code> to close the symbology window.</p>
+<figure class="align-center" id="visulsing-blocked-roads-with-icons">
+<a class="reference internal image-reference" href="../../_images/PAK_blocked_road_symbol.png"><img alt="../../_images/PAK_blocked_road_symbol.png" src="../../_images/PAK_blocked_road_symbol.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Visualising blocked roads with icons</span><a class="headerlink" href="#visulsing-blocked-roads-with-icons" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+</ul>
+<p><strong>Flood Extent:</strong></p>
+<p>Open the <strong>Symbology Tab</strong> for the <code class="docutils literal notranslate"><span class="pre">PAK_2024_Minimum_Flood_Extend_reprojected</span></code>-layer. Choose a light-blue as color and adjust the opacity to about 30%.</p>
+<p><strong>Administrative Boundaries:</strong></p>
+<p>Open the <strong>Symbology Tab</strong> for the <code class="docutils literal notranslate"><span class="pre">PAK_Sindh_amd1</span></code>-layer. Click on <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">Fill</span></code> and adjust the <code class="docutils literal notranslate"><span class="pre">Symbol</span> <span class="pre">layer</span> <span class="pre">type</span></code> to <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">Line</span></code>. You can furthermore adjust now the outline colour and stroke width.</p>
+<p><strong>Bonus Step</strong>: <a class="reference internal" href="../Wiki/en_qgis_basemaps_wiki.html"><span class="doc std std-doc">Adding a basemap</span></a> can help potential readers orienting themselves.</p>
+<p>If you are happy with the symobolisation of your layers, the map should be ready for a print layout.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Remember the layer concept and place all layers in a logic order. The flood extents should lay under the roads and the several point layer above the roads.</p>
 </div>
 </section>
-<section id="step-2-starting-the-print-layout">
-<h2>Step 2: Starting the Print Layout<a class="headerlink" href="#step-2-starting-the-print-layout" title="Permalink to this heading">#</a></h2>
+<section id="part-2-creating-the-print-layout">
+<h3>Part 2: Creating the print layout<a class="headerlink" href="#part-2-creating-the-print-layout" title="Permalink to this heading">#</a></h3>
+<p>Once you are happy with the symbolization and colours of your data, the next step is to create a print layout. By adding additional information such as a title, data sources, projection, description, etc. you provide your audience with the means to contextualise and evaluate the map and it’s content by themselves.</p>
 <ol class="arabic simple">
-<li><p>Add your Map to the Print Layout. Make sure to leave some space for the other map elements such as sources, legend, overview map, logo, etc.</p></li>
-<li><p>Adjust the Scale of the Map in the Item properties (if possible to a round number)</p></li>
-<li><p>Add a scale bar</p></li>
-<li><p>Add a title. The title should make it clear what the map displays.</p></li>
-<li><p>Add a legend. Make sure to remove layers which are not visible on the map and rename the elements accordingly.</p></li>
-<li><p>Add a compass to show map orientation.</p></li>
+<li><p>Open a new print layout and give it a name (e.g. Larkana_floods).</p>
+<ul class="simple">
+<li><p>Go to <strong>Project &gt; New Print Layout &gt; enter a name for the new print layout &gt; click OK</strong></p></li>
+</ul>
+</li>
 </ol>
+<figure class="align-default" id="create-print-layout">
+<a class="reference internal image-reference" href="../../_images/en_30.30.2_create_print_layout.png"><img alt="../../_images/en_30.30.2_create_print_layout.png" src="../../_images/en_30.30.2_create_print_layout.png" style="width: 700px;" /></a>
+<figcaption>
+<p><span class="caption-text">Create a new Print Layout</span><a class="headerlink" href="#create-print-layout" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p>A new window with a blank print layout will appear. This is the print layout designer.</p>
+<ul>
+<li><p>On the left, you will find a toolbar with tools to add and move items on the print layout canvas.</p></li>
+<li><p>On the right you will find a list of items you added to the print layout (it is still empty). Beneath this, you will find a tab called <strong>“item properties”</strong>. This is where you modify the items on your print layout (e.g. enter the text for a text box or change the font).</p></li>
+</ul>
+</li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>Insert a new map by clicking on <img alt="New Map Icon" src="../../_images/30.30.2_print_layout_insert_map_icon.png" /> (<code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Map</span></code>) on the left toolbar, and drawing a rectangle on the print canvas. <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.md#adding-a-new-map">Video</a></p></li>
+<li><p>Move and position the map so that the area of interest is visible at a reasonable scale.</p></li>
+<li><p>Let’s add a title:</p>
+<ul class="simple">
+<li><p>Click on <img alt="Add text icon" src="../../_images/30.30.2_print_layout_add_text.png" /> (<code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">text</span></code>)</p></li>
+<li><p>Drag a rectangle on the canvas</p></li>
+<li><p>In the item properties window on the right, you will find a text box with the text “Lorem ipsum”. Here you can enter your map title (e.g. Larkama Flood Response 2024).</p></li>
+<li><p>Adjust the font size: Click on the <strong>Font</strong> dropdown menu and adjust the font size for a title (25p or more). Adjust the text box if necessary.</p></li>
+</ul>
+</li>
+<li><p>Let’s add a legend:</p>
+<ul class="simple">
+<li><p>Click on  <img alt="Add legend icon" src="../../_images/30.30.2_print_layout_add_legend.png" /> (<code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">legend</span></code>).</p></li>
+<li><p>Navigate to the <strong>Item Properties</strong> panel on the right.</p></li>
+<li><p>Scroll down a bit and check turn off <code class="docutils literal notranslate"><span class="pre">Auto</span> <span class="pre">Update</span></code> by unchecking the check box. Now you can freely edit every item on the legend</p></li>
+<li><p>Adjust the legend by removing unnecessary layers (which are not seen on the map) and rename the layer in the legend by clicking on <img alt="Edit Icon" src="../../_images/30.30.2_print_layout_legend_edit.png" /> (<code class="docutils literal notranslate"><span class="pre">Edit</span> <span class="pre">selected</span> <span class="pre">item</span> <span class="pre">properties</span></code>) below the legend entries.</p></li>
+<li><p>Under the upper <code class="docutils literal notranslate"><span class="pre">Main</span> <span class="pre">Properties</span></code>, insert “Legend” as title</p></li>
+</ul>
+</li>
+</ol>
+<figure class="align-default" id="id5">
+<a class="reference internal image-reference" href="../../_images/Larkana_Legend.PNG"><img alt="../../_images/Larkana_Legend.PNG" src="../../_images/Larkana_Legend.PNG" style="width: 700px;" /></a>
+<figcaption>
+<p><span class="caption-text">Create a new Print Layout</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="6">
+<li><p>Now, let’s add a scale bar:</p>
+<ul class="simple">
+<li><p>Click on <img alt="Add Scale bar icon" src="../../_images/30.30.2_print_layout_add_scale_bar.png" /> (<code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Scale</span> <span class="pre">bar</span></code>)</p></li>
+<li><p>Draw a rectangle on the map and position the scale bar on the edge of the map. You can adjust the scale bar units (meters, kilometers, …), the fixed segment width (50 km, 75 km, 100 km, …) and the number of segments (to the right).</p></li>
+</ul>
+</li>
+<li><p>Let’s add a north arrow:</p>
+<ul class="simple">
+<li><p>Click on <img alt="Add North Arrow Icon" src="../../_images/30.30.2_print_layout_add_orientation.png" /> (<code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">North</span> <span class="pre">Arrow</span></code>).</p></li>
+<li><p>Drag a rectangle on the print layout. Adjust the size and location of the north arrow. You can also change the icon in the item properties.</p></li>
+</ul>
+</li>
+<li><p>Let’s add a logo (for example, your national society):</p>
+<ul class="simple">
+<li><p>Click on <img alt="Add Picture" src="../../_images/30.30.2_print_layout_add_image.png" /> (<code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">picture</span></code>)</p></li>
+<li><p>Drag a rectangle in the spot where you want to add the logo</p></li>
+<li><p>Navigate to the <code class="docutils literal notranslate"><span class="pre">Item</span> <span class="pre">properties</span></code> panel on the right and switch to <code class="docutils literal notranslate"><span class="pre">Raster</span> <span class="pre">image</span></code>.</p></li>
+<li><p>Click on the three dots <code class="docutils literal notranslate"><span class="pre">...</span></code> and select the file with your logo</p></li>
+<li><p>If necessary, resize or move the picture on the print layout.</p></li>
+</ul>
+</li>
+<li><p>Add some additional information as text.</p>
+<ul class="simple">
+<li><p>Click on <img alt="Add text icon" src="../../_images/30.30.2_print_layout_add_text.png" /> (<code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">text</span></code>)</p></li>
+<li><p>Drag a rectangle on the canvas</p></li>
+<li><p>In the item properties window on the right, you will find a text box with the text “Lorem ipsum”. Here you can enter some additional information of the map, e.g. the coordinate system, basemap information or date.</p></li>
+</ul>
+</li>
+</ol>
+<p>When you are finished with your map design you can export your printable map as image or pdf under <code class="docutils literal notranslate"><span class="pre">Layout</span></code>–&gt; <code class="docutils literal notranslate"><span class="pre">Export</span> <span class="pre">as</span> <span class="pre">Image</span></code> or <code class="docutils literal notranslate"><span class="pre">Export</span> <span class="pre">as</span> <span class="pre">PDF</span></code></p>
+<p>You could now have as a result a map similar to this one. Here, some space has been left in order to implement an overview map. If you are still have time go for the bonus exercise and add an overview map!</p>
+<figure class="align-default" id="map-larkama">
+<a class="reference internal image-reference" href="../../_images/Larkama_Map_withoutOverview.PNG"><img alt="../../_images/Larkama_Map_withoutOverview.PNG" src="../../_images/Larkama_Map_withoutOverview.PNG" style="width: 700px;" /></a>
+<figcaption>
+<p><span class="caption-text">Map Larkama</span><a class="headerlink" href="#map-larkama" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </section>
-<section id="step-3-setting-up-the-overview-map">
-<h2>Step 3: Setting up the Overview Map<a class="headerlink" href="#step-3-setting-up-the-overview-map" title="Permalink to this heading">#</a></h2>
+<section id="bonus-exercise">
+<h3>Bonus Exercise!<a class="headerlink" href="#bonus-exercise" title="Permalink to this heading">#</a></h3>
+<p>If you are finished with the main map, click on the map and navigate to the item properties. In the layer section, check the box <code class="docutils literal notranslate"><span class="pre">Lock</span> <span class="pre">Layers</span></code> and <code class="docutils literal notranslate"><span class="pre">Lock</span> <span class="pre">styles</span> <span class="pre">for</span> <span class="pre">layers</span></code>. This means that if you change the map in the main QGIS-window, the map you have added to the Now you can start working on an overview map. We will be using a shapefile with the administrative boundaries of Pakistan.</p>
 <ol class="arabic simple">
-<li><p>Once you are done with the main map, <strong>make sure to lock the layer and the styles for your main map (<code class="docutils literal notranslate"><span class="pre">Map</span> <span class="pre">1</span></code>)</strong>. Otherwise the map will update when setting up the overview map.</p></li>
-<li><p>Navigate back to the main QGIS-Window.</p></li>
-<li><p>Copy the layers for the overview map. In this case, the <code class="docutils literal notranslate"><span class="pre">Adm1</span></code>-layer. This way, you will not loose the style for the layers on your main map. Adjust the style on the copied layer for your overview map.</p></li>
-<li><p>Navigate back to the print layout.</p></li>
-<li><p>Add a second map as your overview map (preferably somewhere in the corner)</p></li>
-<li><p>Set it up as an overview map.</p></li>
-<li><p>Lock the layers and lock the styles.</p></li>
+<li><p>Return to the main QGIS window and load the layers from the <code class="docutils literal notranslate"><span class="pre">Bonus</span> <span class="pre">Exercise</span></code>-folder.</p></li>
+<li><p>In the <strong>Layer</strong> panel, make the layers for the main map invisible by clicking on the <img alt="Eye Icon" src="../../_images/30.30.2_layer_visibility_icon.png" /> next to the layer name.</p></li>
+<li><p>Style the countries in an neutral, unobtrusive color. For example, you can use the “<strong>Gray 3 Fill</strong>” from the styling templates.</p></li>
+<li><p>Once you are happy with the styling of your overview map, navigate back to the <strong>Print Layout window</strong>.</p></li>
+<li><p>Add a second map and position it in a corner.</p></li>
+<li><p>In the <strong>Item properties</strong> panel for the second Map (”<strong>Map 2</strong>”), scroll down and open the <code class="docutils literal notranslate"><span class="pre">Overview</span></code>-options.</p></li>
+<li><p>Click on the <code class="docutils literal notranslate"><span class="pre">+</span></code>-button to add a new overview.</p></li>
+<li><p>In the “<strong>Map Frame</strong>”-option, select “<strong>Map 1</strong>”. This will show the frame of the main map on your overview map.</p></li>
+<li><p>You can add a scale bar and a northj arrow to your overview map as well.</p></li>
 </ol>
+<figure class="align-default" id="id6">
+<a class="reference internal image-reference" href="../../_images/Larkana_Map_Overview.png"><img alt="../../_images/Larkana_Map_Overview.png" src="../../_images/Larkana_Map_Overview.png" style="width: 700px;" /></a>
+<figcaption>
+<p><span class="caption-text">Map Larkama</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Congratulations! You have finished your first map.</p>
 </section>
-<section id="step-5-adding-the-other-elements-of-a-map">
-<h2>Step 5: Adding the other elements of a map<a class="headerlink" href="#step-5-adding-the-other-elements-of-a-map" title="Permalink to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p>Add the sources of the datasets</p></li>
-<li><p>Add a text to describe what the map shows.</p></li>
-<li><p>Add your name and/or organisation as authors.</p></li>
-</ol>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>If you are happy with the layout of your print layout, don’t forget to save it as a preset for future use.</p>
-</div>
-</section>
-<section id="step-6-exporting-the-map">
-<h2>Step 6: Exporting the map<a class="headerlink" href="#step-6-exporting-the-map" title="Permalink to this heading">#</a></h2>
-<p>Once you are happy with the print layout, it is time to export the map as a PDF-file (link). Once exported, open the file in your PDF viewer and check if everything looks as intended. In QGIS, some elements of the map might change slightly in the exporting process, so it is important to check before sending the map to your colleagues or publishing.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>To avoid too many changes when exporting the map, set the</p>
-</div>
 </section>
 </section>
 
@@ -716,14 +991,14 @@ If you are happy with the styles you have set up for your layers, you can save t
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objectives">Objectives</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-datasets">Available Datasets</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-preparing-the-layers">Step 1: Preparing the layers</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-set-the-symbology-for-the-individual-layers">Step 2: Set the symbology for the individual layers</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-starting-the-print-layout">Step 2: Starting the Print Layout</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-setting-up-the-overview-map">Step 3: Setting up the Overview Map</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-adding-the-other-elements-of-a-map">Step 5: Adding the other elements of a map</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-exporting-the-map">Step 6: Exporting the map</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preparation-of-the-data">Preparation of the data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-symbolization">Part 1: Symbolization</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-creating-the-print-layout">Part 2: Creating the print layout</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-exercise">Bonus Exercise!</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
