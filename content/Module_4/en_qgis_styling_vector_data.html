@@ -548,6 +548,12 @@ document.write(`
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-different-styles-in-a-single-layer">4.2.2.2. Use different styles in a single layer</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-different-point-symbols-for-different-features">4.2.2.2.1. Setting different point symbols for different features</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#using-svg-symbols-and-ifrc-symbols">4.2.2.2.2. <strong>Using SVG-Symbols and IFRC symbols</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-svg-symbols">4.2.2.3. Using SVG-Symbols</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-an-external-svg-library">4.2.2.3.1. Adding an external SVG-library</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#using-ifrc-symbols">4.2.2.3.2. Using IFRC-Symbols</a></li>
 </ul>
 </li>
 </ul>
@@ -908,46 +914,47 @@ Video: Set up different symbols in a single layer<div class="sd-summary-down doc
 </ul>
 </div>
 </div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-<strong>Using SVG-Symbols and IFRC symbols</strong><div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="rubric">Using SVG-Symbols</p>
-<p class="sd-card-text">In some cases, you might want to use more complex symbols in your map. For example, you want to use a cross to signify
+</section>
+<section id="using-svg-symbols-and-ifrc-symbols">
+<h4><span class="section-number">4.2.2.2.2. </span><strong>Using SVG-Symbols and IFRC symbols</strong><a class="headerlink" href="#using-svg-symbols-and-ifrc-symbols" title="Permalink to this heading">#</a></h4>
+</section>
+</section>
+<section id="using-svg-symbols">
+<h3><span class="section-number">4.2.2.3. </span>Using SVG-Symbols<a class="headerlink" href="#using-svg-symbols" title="Permalink to this heading">#</a></h3>
+<p>In some cases, you might want to use more complex symbols in your map. For example, you want to use a cross to signify
 a hospital, a book to signify a library, or a plane to signify an airport. In these cases, you can use SVG-symbols.
 Keep in mind that, ordinarily, SVG-symbols work only for point data.
 To use SVG-symbols:</p>
 <ol class="arabic simple">
-<li><p class="sd-card-text">Open the styling panel and open the <code class="docutils literal notranslate"><span class="pre">single</span> <span class="pre">marker</span></code> options.</p></li>
-<li><p class="sd-card-text">Under <code class="docutils literal notranslate"><span class="pre">Symbol</span> <span class="pre">layer</span> <span class="pre">type</span></code>, select <strong>“SVG Marker”</strong></p></li>
-<li><p class="sd-card-text">Scroll down to the SVG-Browser. Here you will find all the folder of your installed SVG-libraries.</p></li>
+<li><p>Open the styling panel and open the <code class="docutils literal notranslate"><span class="pre">single</span> <span class="pre">marker</span></code> options.</p></li>
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">Symbol</span> <span class="pre">layer</span> <span class="pre">type</span></code>, select <strong>“SVG Marker”</strong></p></li>
+<li><p>Scroll down to the SVG-Browser. Here you will find all the folder of your installed SVG-libraries.</p></li>
 </ol>
-<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video></p>
-<p class="sd-card-text">There is already a default library of SVG-symbols. If you are looking for a specific symbol, try searching for it in the search bar</p>
-<p class="rubric">Adding an external SVG-library</p>
-<p class="sd-card-text">QGIS also offers the option to add your own SVG-libraries, for example if your organisation uses a specific set of
+<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video></p>
+<p>There is already a default library of SVG-symbols. If you are looking for a specific symbol, try searching for it in the search bar</p>
+<section id="adding-an-external-svg-library">
+<h4><span class="section-number">4.2.2.3.1. </span>Adding an external SVG-library<a class="headerlink" href="#adding-an-external-svg-library" title="Permalink to this heading">#</a></h4>
+<p>QGIS also offers the option to add your own SVG-libraries, for example if your organisation uses a specific set of
 icons.
 If you have a library of SVG-symbols as a folder you can add them to your Styling manager.</p>
 <ol class="arabic simple">
-<li><p class="sd-card-text">Open the style manager: <code class="docutils literal notranslate"><span class="pre">Settings</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Style</span> <span class="pre">Manager</span></code></p></li>
-<li><p class="sd-card-text">Click on <code class="docutils literal notranslate"><span class="pre">Import</span> <span class="pre">/</span> <span class="pre">Export</span></code> and select <code class="docutils literal notranslate"><span class="pre">Import</span> <span class="pre">items</span></code></p></li>
-<li><p class="sd-card-text">Navigate to the location where you have saved the library or style and select the file (in most cases .qml but the file type can also be .xml)</p></li>
-<li><p class="sd-card-text">Now you can select which symbols you wish to import. In most cases, you can select all symbols.</p></li>
-<li><p class="sd-card-text">Click on <code class="docutils literal notranslate"><span class="pre">Import</span></code></p></li>
+<li><p>Open the style manager: <code class="docutils literal notranslate"><span class="pre">Settings</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Style</span> <span class="pre">Manager</span></code></p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Import</span> <span class="pre">/</span> <span class="pre">Export</span></code> and select <code class="docutils literal notranslate"><span class="pre">Import</span> <span class="pre">items</span></code></p></li>
+<li><p>Navigate to the location where you have saved the library or style and select the file (in most cases .qml but the file type can also be .xml)</p></li>
+<li><p>Now you can select which symbols you wish to import. In most cases, you can select all symbols.</p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Import</span></code></p></li>
 </ol>
-<p class="sd-card-text">The new SVG-symbols are in your SVG library.</p>
-<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video></p>
-<p class="rubric">Using IFRC-Symbols</p>
+<p>The new SVG-symbols are in your SVG library.</p>
+<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video></p>
+</section>
+<section id="using-ifrc-symbols">
+<h4><span class="section-number">4.2.2.3.2. </span>Using IFRC-Symbols<a class="headerlink" href="#using-ifrc-symbols" title="Permalink to this heading">#</a></h4>
 <div class="tip admonition">
 <p class="admonition-title">IFRC- and UN-Symbols repositories</p>
-<p class="sd-card-text">The IFRC provides icons and symbols that can be used in your maps. You can find them under <a class="reference external" href="https://go-user-library.ifrc.org/brand-design/iconography">this link</a>.</p>
-<p class="sd-card-text">There is also a library with humanitarian icons by the <a class="reference external" href="https://www.unocha.org">United Nations Office for the Coordination of Humanitarian affairs</a> which can be found <a class="reference external" href="https://github.com/mapaction/ocha-humanitarian-icons-for-gis?tab=readme-ov-file">here</a>. The files are available in different formats you can use in QGIS.</p>
+<p>The IFRC provides icons and symbols that can be used in your maps. You can find them under <a class="reference external" href="https://go-user-library.ifrc.org/brand-design/iconography">this link</a>.</p>
+<p>There is also a library with humanitarian icons by the <a class="reference external" href="https://www.unocha.org">United Nations Office for the Coordination of Humanitarian affairs</a> which can be found <a class="reference external" href="https://github.com/mapaction/ocha-humanitarian-icons-for-gis?tab=readme-ov-file">here</a>. The files are available in different formats you can use in QGIS.</p>
 </div>
-</div>
-</details></section>
+</section>
 </section>
 </section>
 <section id="further-resources">
@@ -1036,6 +1043,12 @@ If you have a library of SVG-symbols as a folder you can add them to your Stylin
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-different-styles-in-a-single-layer">4.2.2.2. Use different styles in a single layer</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-different-point-symbols-for-different-features">4.2.2.2.1. Setting different point symbols for different features</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#using-svg-symbols-and-ifrc-symbols">4.2.2.2.2. <strong>Using SVG-Symbols and IFRC symbols</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-svg-symbols">4.2.2.3. Using SVG-Symbols</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-an-external-svg-library">4.2.2.3.1. Adding an external SVG-library</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#using-ifrc-symbols">4.2.2.3.2. Using IFRC-Symbols</a></li>
 </ul>
 </li>
 </ul>

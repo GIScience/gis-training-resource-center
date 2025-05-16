@@ -357,7 +357,7 @@ On top of simple markers, QGIS let's you also use SVG-symbols and raster images 
 
 :::
 
-:::::{dropdown} __Using SVG-Symbols and IFRC symbols__
+#### __Using SVG-Symbols and IFRC symbols__
 
 ### Using SVG-Symbols
 
@@ -401,7 +401,6 @@ There is also a library with humanitarian icons by the [United Nations Office fo
 
 :::
 
-::::: 
 
 
 ## Further Resources
