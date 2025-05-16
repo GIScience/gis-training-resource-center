@@ -15,11 +15,16 @@ In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced
 Participants will work with multiple layers and conduct spatial queries. Additionally, they will learn how to create their own geodata. The exercise is divided into three tasks. In the first part, we will export the administrative boundaries in our area of interest (AOI). In the second task, the health facilities located in our AOI will be extracted and we will identify which health facilities are located inside the flood extent layer. In the third task, the road access will be determined by identifying which roads are potentially flooded. 
 :::
 
-<br>
-
-</br>
-
 ::::{grid} 2
+:::{grid-item-card}
+__Larkana flood response exercise track:__
+^^^
+
+This exercise is part of the Larkana flood response exercise track
+
+- [Next exercise](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I_ex4.html)
+:::
+
 :::{grid-item-card}
 __Competences covered in this exercise__
 ^^^ 
@@ -30,16 +35,6 @@ __Competences covered in this exercise__
 - Editing the Attribute Table
 - Classification
 - Digitising a point Layer
-
-:::
-
-:::{grid-item-card}
-__Larkana Flood Response Exercise track__
-^^^
-
-This exercise is part of the Larkana flood response exercise track
-
-- [Next exercise](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I_ex4.html)
 
 :::
 ::::
