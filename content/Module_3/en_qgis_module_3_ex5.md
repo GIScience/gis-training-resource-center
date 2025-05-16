@@ -4,6 +4,7 @@
 :link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
+::::
 
 # Exercise 5: Larkana Flood response
 
@@ -171,7 +172,7 @@ You cannot interact with a base map!
 GeoPackage files can contain multiple files and even entire QGIS projects. When you load such a file in QGIS a window will appear in which you have to select the files you want to load in your QGIS project.
 ```
 
-5. To get an overview of the situation, we want to export the administrative boundaries for our Area of Interest (AOI). To do this, we want to export the district __Larkana__, as well as the neighbouring districts __Kambar Shahdad Kot__, __Shikarpur__ and __Sukkur__ from the `PAK_adm2_Sindh`-layer. 
+5. To get an overview of the situation, we want to export the administrative boundaries for our Area of Interest (AOI). To do this, we want to export the district __Larkana__, as well as the neighbouring districts from the `PAK_adm2_Sindh`-layer. 
     - <kbd>Right-Click</kbd> on the `PAK_adm2_Sindh`-layer and select [`Open Attribute table`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html).
     - Find the the column `ADM2_EN` and find the row for the district of Larkana.
     - <kbd>Click</kbd> on the numbers all the way to the left of the attribute table window to select the Larkana feature. The row will appear blue and the area of Larkana will turn yellow on the map canvas. 
