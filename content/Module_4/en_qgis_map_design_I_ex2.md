@@ -10,18 +10,14 @@
 
 ::::{grid} 2
 :::{grid-item-card}
-__Aim of the exercise:__
+__Larkana flood response exercise track:__
 ^^^
 
-Participants will work with multiple layers and conduct spatial queries. Additionally, they will learn how to create their own geodata.
-
-__Type of trainings exercise:__
-
-- This exercise can be used in online and presence training. 
+This exercise is part of the Larkana Flood 
 
 :::
 :::{grid-item-card}
-__These skills are relevant for:__
+__Competences covered in this exercise:__
 ^^^ 
 
 - QGIS Essentials
@@ -85,7 +81,7 @@ The exercise data should be saved in a location where you can easily find them a
 
 ## Tasks
 
-### Preparation of the data
+### Prepararing the data
 
 1. Load all necessary the files into a new QGIS-project:
 - Healthsites: `Health_Facilities_Flood_2024_AOI.gpkg`
@@ -101,10 +97,18 @@ Save your project and give it a clear name, e.g. "Larkana_flood_response"
 3. We want to make a comprehensible map, think about which data we need and what data we can leave out.
     - For example, the layer `Roads_Larkana` contains too many roads for a map on a national scale. Let's open the attribute table and look at how the roads are classified. The data is using the conventional OpenStreetMap classification: The type of road is described under the attribute `highway`. In our case, it might be useful to only display the primary and secondary roads, so all the features where `highway=primary` OR `highway=secondary`.
 
+<!--REMOVE THIS?-->
+
+- We will use IFRC symbols in this exercise. We can [import an SVG library into QGIS]() so we can access the IFRC-symbols inside QGIS. 
+
+
 ### Part 1: Symbolization
+
 
 Now we have assigned a symbol for each layer at our disposal. Look at the map you created and decide if you want to adjust any symbology to make the map easier to read. Do you need to change some colours? Are the layers ordered in a way that the information is visible? Is the font size appropriate, or does it cover up too much information?
 Let's go through the layers one by one and visualize them in a meaningful way.
+<!--REWRITE THE PARAGRAGH ABOVE-->
+
 
 __Healthsites:__
 
