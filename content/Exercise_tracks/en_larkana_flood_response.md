@@ -30,3 +30,45 @@ __Module 2 Exercise 4: Exporting OSM Data__
 :::
 
 :::{card}
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex5.html 
+__Module 3 Exercise 5: Larkana Flood Response__
+^^^
+
+- Selecting and exporting data entries
+- Select and Extract by Location
+- Reprojecting layers
+- Editing the attribute table
+- Classification
+- Create new layer and digitise point data
+
+:::
+
+:::{card} 
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I_ex2.html
+__Module 4 Exercise 2: Creating a Flood Situation Map of Larkana, Pakistan__
+^^^
+
+- Using SVG markers
+- Importing SVG library
+- Classification
+- Create point layer
+- Using the Print Layout to create a map
+- Adding an overview map
+
+:::
+
+:::{card} 
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_module_5_ex4.html
+__Module 5 Exercise 3: Security in Peshwar, Pakistan__
+^^^
+
+- Using the QuickMapServices plugin
+- Digitising points with additional information
+- Using buffers
+- Creating point layers from CSV-files
+- Count points in polygons
+- classification
+- join by field value
+
+:::
+
