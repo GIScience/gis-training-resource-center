@@ -168,7 +168,7 @@ GeoPackage files can contain multiple files and even entire QGIS projects. When 
 ```
 
 5. To get an overview of the situation, we want to export the administrative boundaries for our Area of Interest (AOI). To do this, we want to export the district __Larkana__, as well as the neighbouring districts from the `PAK_adm2_Sindh`-layer. 
-    - <kbd>Right-Click</kbd> on the `PAK_adm2_Sindh`-layer and select [`Open Attribute table`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html).
+    - <kbd>Right-Click</kbd> on the `PAK_adm2_Sindh`-layer and select [Open Attribute table](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html).
     - Find the the column `ADM2_EN` and find the row for the district of Larkana.
     - <kbd>Click</kbd> on the numbers all the way to the left of the attribute table window to select the Larkana feature. The row will appear blue and the area of Larkana will turn yellow on the map canvas. 
     - <kbd>Click</kbd> on `Zoom Map to selected rows` in the top bar of the attribute table window. ![](/fig/qgis_3.36_zoom_to_selected_rows_at.png)
@@ -280,7 +280,7 @@ Now we have an overview of the location of health facilities. However, we want t
 
 We have observed that certain health facilities have been impacted by the flood. In order to visualise this information on the map, we plan to include a new attribute called __"Flood_affected"__ in the attribute table of __"Health_Facilities_Flood_2024_AOI"__. To accomplish this, we will select all the health facilities that are located inside the flood extent by using the tool "Select by Location". In a next step, we will add a new column to the attribute table and add information into our selected healthsites. 
 
-5. Open the `Processing Toolbox` ([wiki video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox)) and search for the tool __"Select by Location"__.
+5. Open the `Processing Toolbox` ([Wiki video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox)) and search for the tool __"Select by Location"__.
     * `Select features from` = __"Health_Facilities_Flood_2024_AOI"__.
     * As `Geometric predicate` we use `intersect`.
     * For `By comparing to the features from` we use the layer __"2024_MinFloodExtent_reprojected"__.
@@ -462,7 +462,7 @@ If you cannot see the toolbar, click on the tab `View` -> `Toolbars` and check `
 :::
 ::::
 
-4. Now you can create a point for each place where the flood layer covers the main roads leading out of Larkana ([wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#creation-of-point-data)). 
+4. Now you can create a point for each place where the flood layer covers the main roads leading out of Larkana ([Wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#creation-of-point-data)). 
     * Currently the new layer __“PAK_flood_2024_blocked_road”__ is empty. To add features we can use the `Digitizing Toolbar`.  ![](/fig/Digitizing_Toolbar.png) 
     * Activate the editing mode by clicking on ![](/fig/mActionToggleEditing.png). Next, activate the option to add new points by clicking on ![](/fig/mActionCapturePoint.png) `Add Point Feature` .
     * Look out for places where the flood layer covers the main roads or bridges leading out of Larkana. Once you have found one, left-click on the location you want to digitise.
@@ -481,7 +481,7 @@ If you cannot see the toolbar, click on the tab `View` -> `Toolbars` and check `
     * Once you are done with digitizing click on ![](/fig/mActionSaveEdits.png) to save your edits.
     * Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
 
-5. Now, we have mapped all blocked main access roads into Larkana. We can use icons instead of just points to display the layer __“PAK_flood_2024_blocked_road”__ to visualise this fact better [wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_single_symbol_wiki.html).
+5. Now, we have mapped all blocked main access roads into Larkana. We can use icons instead of just points to display the layer __“PAK_flood_2024_blocked_road”__ to visualise this fact better ([Wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_single_symbol_wiki.html)).
 
     * Right-click on the layer __“PAK_flood_2024_blocked_road”__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
     * Keep the `Single Symbol` option. Select any symbol from the list that is appropriate for marking blocked roads. 
