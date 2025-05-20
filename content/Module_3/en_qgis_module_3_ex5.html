@@ -763,7 +763,7 @@ To keep your data organized and easily accessible, it’s important to establish
 <ol class="arabic" start="5">
 <li><p>To get an overview of the situation, we want to export the administrative boundaries for our Area of Interest (AOI). To do this, we want to export the district <strong>Larkana</strong>, as well as the neighbouring districts from the <code class="docutils literal notranslate"><span class="pre">PAK_adm2_Sindh</span></code>-layer.</p>
 <ul class="simple">
-<li><p><kbd>Right-Click</kbd> on the <code class="docutils literal notranslate"><span class="pre">PAK_adm2_Sindh</span></code>-layer and select <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html"><code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Attribute</span> <span class="pre">table</span></code></a>.</p></li>
+<li><p><kbd>Right-Click</kbd> on the <code class="docutils literal notranslate"><span class="pre">PAK_adm2_Sindh</span></code>-layer and select <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html">Open Attribute table</a>.</p></li>
 <li><p>Find the the column <code class="docutils literal notranslate"><span class="pre">ADM2_EN</span></code> and find the row for the district of Larkana.</p></li>
 <li><p><kbd>Click</kbd> on the numbers all the way to the left of the attribute table window to select the Larkana feature. The row will appear blue and the area of Larkana will turn yellow on the map canvas.</p></li>
 <li><p><kbd>Click</kbd> on <code class="docutils literal notranslate"><span class="pre">Zoom</span> <span class="pre">Map</span> <span class="pre">to</span> <span class="pre">selected</span> <span class="pre">rows</span></code> in the top bar of the attribute table window. <img alt="" src="../../_images/qgis_3.36_zoom_to_selected_rows_at.png" /></p></li>
@@ -889,7 +889,7 @@ Keep in mind that you can only select features from the layer you have currently
 <!--Symbology tab has not been covered in the modules yet.-->
 <p>We have observed that certain health facilities have been impacted by the flood. In order to visualise this information on the map, we plan to include a new attribute called <strong>“Flood_affected”</strong> in the attribute table of <strong>“Health_Facilities_Flood_2024_AOI”</strong>. To accomplish this, we will select all the health facilities that are located inside the flood extent by using the tool “Select by Location”. In a next step, we will add a new column to the attribute table and add information into our selected healthsites.</p>
 <ol class="arabic simple" start="5">
-<li><p>Open the <code class="docutils literal notranslate"><span class="pre">Processing</span> <span class="pre">Toolbox</span></code> (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox">wiki video</a>) and search for the tool <strong>“Select by Location”</strong>.</p>
+<li><p>Open the <code class="docutils literal notranslate"><span class="pre">Processing</span> <span class="pre">Toolbox</span></code> (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox">Wiki video</a>) and search for the tool <strong>“Select by Location”</strong>.</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">features</span> <span class="pre">from</span></code> = <strong>“Health_Facilities_Flood_2024_AOI”</strong>.</p></li>
 <li><p>As <code class="docutils literal notranslate"><span class="pre">Geometric</span> <span class="pre">predicate</span></code> we use <code class="docutils literal notranslate"><span class="pre">intersect</span></code>.</p></li>
@@ -1080,7 +1080,7 @@ Execution failed after 0.07 seconds
 </div>
 </aside>
 <ol class="arabic" start="4">
-<li><p>Now you can create a point for each place where the flood layer covers the main roads leading out of Larkana (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#creation-of-point-data">wiki</a>).</p>
+<li><p>Now you can create a point for each place where the flood layer covers the main roads leading out of Larkana (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#creation-of-point-data">Wiki</a>).</p>
 <ul class="simple">
 <li><p>Currently the new layer <strong>“PAK_flood_2024_blocked_road”</strong> is empty. To add features we can use the <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code>.  <img alt="" src="../../_images/Digitizing_Toolbar.png" /></p></li>
 <li><p>Activate the editing mode by clicking on <img alt="" src="../../_images/mActionToggleEditing.png" />. Next, activate the option to add new points by clicking on <img alt="" src="../../_images/mActionCapturePoint.png" /> <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Point</span> <span class="pre">Feature</span></code> .</p></li>
@@ -1099,7 +1099,7 @@ Execution failed after 0.07 seconds
 <li><p>Click again on <img alt="" src="../../_images/mActionToggleEditing.png" /> to end the editing mode.</p></li>
 </ul>
 </li>
-<li><p>Now, we have mapped all blocked main access roads into Larkana. We can use icons instead of just points to display the layer <strong>“PAK_flood_2024_blocked_road”</strong> to visualise this fact better <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_single_symbol_wiki.html">wiki</a>.</p>
+<li><p>Now, we have mapped all blocked main access roads into Larkana. We can use icons instead of just points to display the layer <strong>“PAK_flood_2024_blocked_road”</strong> to visualise this fact better (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_single_symbol_wiki.html">Wiki</a>).</p>
 <ul class="simple">
 <li><p>Right-click on the layer <strong>“PAK_flood_2024_blocked_road”</strong> in the Layer Panel and click on <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. A new window will open up with a vertical tab section on the left. Navigate to the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> tab.</p></li>
 <li><p>Keep the <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">Symbol</span></code> option. Select any symbol from the list that is appropriate for marking blocked roads.</p></li>
