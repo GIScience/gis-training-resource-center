@@ -547,7 +547,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-input">Data Input</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#administrative-boundaries">1. Administrative boundaries</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-assessment-indicators">2. Risk Assessment indicators</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#weights-file">Weights-file</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#weights">3. Weights</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#weightsgenerator-plugin">WeightsGenerator Plugin</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-output">Data Output</a></li>
 </ul>
@@ -658,8 +658,8 @@ The plugin will provide the user with two outputs. The Risk Assessment results o
 <a class="reference internal image-reference" href="../../_images/mada_coping.png"><img alt="../../_images/mada_coping.png" src="../../_images/mada_coping.png" style="height: 400px;" /></a>
 </figure>
 </section>
-<section id="weights-file">
-<h3>Weights-file<a class="headerlink" href="#weights-file" title="Permalink to this heading">#</a></h3>
+<section id="weights">
+<h3>3. Weights<a class="headerlink" href="#weights" title="Permalink to this heading">#</a></h3>
 <p>A “csv”-file containing a column “variable_name” with all the column names of the previous “csv”-files, which are to be weighted differently in the calculation. The file must also contain the columns “category”, “weight” and “direction”. The category column indicates the category of the indicator: “exp” for exposure, “cop” for coping capacity and “vul” for vulnerability. The weight determines the importance of each indicator. For each category (exp, cop and vul), the sum of the weights must add up to 1. If this is not the case, the plugin will automatically normalize the weights in order to make the sum equal to 1 within each category. A message will be printed with the value of the transformed weights. For more information about weights and directions see chapter weight and directions.</p>
 <figure class="align-center" id="mada-weights">
 <a class="reference internal image-reference" href="../../_images/mada_weights.png"><img alt="../../_images/mada_weights.png" src="../../_images/mada_weights.png" style="height: 400px;" /></a>
@@ -798,7 +798,7 @@ The weighted score for a specific variable is calculated using the following for
 <p><span class="math notranslate nohighlight">\( weighted=   value  \times weight \)</span></p>
 <p>If the <strong>direction is -1</strong> (indicating a negative weight), the formula adjusts the value by subtracting it from 1 before applying the weight:</p>
 <p><span class="math notranslate nohighlight">\( weighted=   (1 - value)  \times weight \)</span></p>
-<p>The second formula inverts the value <span class="math notranslate nohighlight">\((1 - value)\)</span> before applying the weight, resulting in a different calculation for variables with negative weights.\</p>
+<p>The second formula inverts the value <span class="math notranslate nohighlight">\((1 - value)\)</span> before applying the weight, resulting in a different calculation for variables with negative weights.</p>
 <p>After considering weights and directions, the weighted variables are summed up to scores for each dimension (Exposure, Vulnerability, Lack of Coping Capacity):</p>
 <p><span class="math notranslate nohighlight">\( score=   \sum weighted\ values \)</span></p>
 <p><strong>Calculation of risk</strong></p>
@@ -894,7 +894,7 @@ In general, many input files are required to use the plugin, which makes it high
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-input">Data Input</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#administrative-boundaries">1. Administrative boundaries</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-assessment-indicators">2. Risk Assessment indicators</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#weights-file">Weights-file</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#weights">3. Weights</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#weightsgenerator-plugin">WeightsGenerator Plugin</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-output">Data Output</a></li>
 </ul>

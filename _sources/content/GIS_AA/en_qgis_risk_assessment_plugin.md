@@ -111,7 +111,7 @@ align: center
 ---
 ```
 
-### Weights-file
+### 3. Weights
 
 A "csv"-file containing a column "variable_name" with all the column names of the previous "csv"-files, which are to be weighted differently in the calculation. The file must also contain the columns “category”, “weight” and “direction”. The category column indicates the category of the indicator: “exp” for exposure, “cop” for coping capacity and “vul” for vulnerability. The weight determines the importance of each indicator. For each category (exp, cop and vul), the sum of the weights must add up to 1. If this is not the case, the plugin will automatically normalize the weights in order to make the sum equal to 1 within each category. A message will be printed with the value of the transformed weights. For more information about weights and directions see chapter weight and directions.
 
@@ -247,7 +247,7 @@ If the __direction is -1__ (indicating a negative weight), the formula adjusts t
 
 $ weighted=   (1 - value)  \times weight $
 
-The second formula inverts the value $(1 - value)$ before applying the weight, resulting in a different calculation for variables with negative weights.\
+The second formula inverts the value $(1 - value)$ before applying the weight, resulting in a different calculation for variables with negative weights.
 
 After considering weights and directions, the weighted variables are summed up to scores for each dimension (Exposure, Vulnerability, Lack of Coping Capacity):
 
