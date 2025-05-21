@@ -70,7 +70,7 @@ you can also search for “Risk Assessment” using the Search function of the P
 
 ## Data Input
 
-The plugin needs 5 inputs, from which 4 are csv text files and 1 is a vector file. The input of these 5 files is mandatory. The majority of the files can be produced and adjusted in Excel. This allows for flexibility to adjust input to local contexts.
+The plugin needs 5 inputs, from which 4 are csv text files and 1 is a vector file. The entry of 4 of these 5 files is mandatory. The coping capacity file is optional, but is strongly recommended for a more comprehensive and realistic risk assessment. The majority of the files can be produced and adjusted in Excel. This allows for flexibility to adjust input to local contexts.
 The requested input information can be browsed for via the button on the right. These files need to be present on the user's computer.
 It is important to follow the input file specifications exactly (see chapter 4.1.).
 The plugin will provide the user with two outputs. The Risk Assessment results on the administrative boundaries as a vector file containing geometries ready to be displayed in QGIS and the Risk Assessment results in a table format. The desired data format of the vector and text outputs can be chosen during the saving process. 
@@ -100,7 +100,7 @@ a) __Exposure indicators:__ A "csv"-file containing a mandatory column "ADM_PCOD
 
 b.) __Vulnerability indicators:__ A "csv"-file containing a mandatory column "ADM_PCODE" with the P_codes of the administrative boundaries and all columns that are included in the calculation of the vulnerability-indicator. All columns that are not included in the calculation must start with the expression "ADM..."./
 
-c) __Coping Capacity indicators:__ A "csv"-file containing a mandatory column "ADM_PCODE" with the P_codes of the administrative boundaries and all columns that are included in the calculation of the coping-indicator. All columns that are not included in the calculation must start with the expression "ADM...".
+c) __Coping Capacity indicators [optional]:__ A "csv"-file containing a mandatory column "ADM_PCODE" with the P_codes of the administrative boundaries and all columns that are included in the calculation of the coping-indicator. All columns that are not included in the calculation must start with the expression "ADM...".
 
 
 ```{figure} /fig/mada_coping.png
@@ -262,6 +262,13 @@ $ susceptibility =   \sqrt vulnerability  \times lack\ of\ coping\ capacity $
 
 
 $ risk=   \sqrt exposure  \times susceptibility $
+
+
+If no coping capacity file has been provided, the risk is calculated as follows:
+
+$ risk=   \sqrt exposure  \times vulnerability $
+
+Please remember that it is highly recommended to take the coping capacity into account.
 
 ## Known Limitations
 
