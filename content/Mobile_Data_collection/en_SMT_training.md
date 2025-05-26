@@ -7,12 +7,12 @@ These five training exercises are designed to support the training with the Sket
 | Exercise| Description |Focus Group|Estimated time| 
 | :-------------------- | :----------------- |:----------------- |:----------------- |
 |__[1](/content/Mobile_Data_collection/en_SMT_ex1_.md)__| The __[“Workflow Exercise”](/content/Mobile_Data_collection/en_SMT_ex1_.md)__ guides you through the whole workflow of mapping with the Sketch Map Tool, from first ideas about what you like to map to the possible digital results. | Planners, Facilitators, and Practitioners (basic QGIS and uMap knowledge can be helpful) |2,5 h | 
-| __[2](/content/Mobile_Data_collection/en_SMT_ex2_.md)__ | In the __[„Traffic Light exercise”](/content/Mobile_Data_collection/en_SMT_ex2_.md)__ you  can explore different base maps and discuss what makes a Sketch map good for mapping. |Planners, Facilitators, and Practitioners (no QGIS or uMap required) | 1,5 h |
+| __[2]()__ | This exercise is currently being reworked |   |   | 
 |__[3](/content/Mobile_Data_collection/en_SMT_ex3_.md)__| In this __["Roleplay exercise"](/content/Mobile_Data_collection/en_SMT_ex3_.md)__ you can try participatory mapping with Sketch Maps yourself with a prepared scenario.  |Planners, Facilitators, and Practitioners (no QGIS or uMap required) | 1,5 h|
 |__[4](/content/Mobile_Data_collection/en_SMT_ex4_.md)__| This __["Visualization Exercise"](/content/Mobile_Data_collection/en_SMT_ex4_.md)__ will guide you through the basic visualization of your Sketch Map Tool Results in either QGIS or uMAP.| Planners, Facilitators, Practitioners (basic QGIS or Umap knowledge can be helpful) |2,5 h |
 |__[5](/content/Mobile_Data_collection/en_SMT_ex5_.md)__| In the __["Heat Map Exercise"](/content/Mobile_Data_collection/en_SMT_ex5_.md)__ you will learn how to analyze your Sketch Map Tool Outputs by creating a heatmap. |Facilitators and Data analysts (Medium-advanced QGIS knowledge required)|1h|
 
 
 <!--
-
+| __[2](/content/Mobile_Data_collection/en_SMT_ex2_.md)__ | In the __[„Traffic Light exercise”](/content/Mobile_Data_collection/en_SMT_ex2_.md)__ you  can explore different base maps and discuss what makes a Sketch map good for mapping. |Planners, Facilitators, and Practitioners (no QGIS or uMap required) | 1,5 h |
 -->
