@@ -132,7 +132,7 @@ This is not a self-learning platform. If you want to learn QGIS, it is always be
 ::::
 ___
 
-## Upcoming trainings
+## Upcoming public trainings
 
 | Title | Date | Application | Organization | Format | Language | Skill Level | Info |
 |-------|------|--------------|--------------|--------|----------|-------------|------|
