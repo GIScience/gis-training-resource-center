@@ -119,13 +119,6 @@ parts:
           - file: content/Wiki/en_qgis_map_making_wiki.md
       - file: content/Wiki/en_qgis_common_errors_and_Issues.md   
       - file: content/Wiki/en_web_and_mobile_apps_wiki.md
-  - caption: 
-    chapters: 
-      - file: content/Exercise_list.md
-        sections: 
-          - file: content/Module_1/en_qgis_interface_ex_alt.md
-          - file: content/Module_2/en_qgis_geodata_concept_ex.md
-          - file: content/Module_2/en_qgis
   - caption: GIS in Anticipatory Action
     chapters:
       - file: content/GIS_AA/en_qgis_drought_trigger_somalia.md
@@ -141,10 +134,10 @@ parts:
       - file: content/Mobile_Data_collection/en_SMT.md
       - file: content/Mobile_Data_collection/en_SMT_training.md
         sections:
-          - file: content/Mobile_Data_collection/en_SMT_ex1.md
-          - file: content/Mobile_Data_collection/en_SMT_ex3.md
-          - file: content/Mobile_Data_collection/en_SMT_ex4.md
-          - file: content/Mobile_Data_collection/en_SMT_ex5.md
+          - file: content/Mobile_Data_collection/en_SMT_ex1_.md
+          - file: content/Mobile_Data_collection/en_SMT_ex3_.md
+          - file: content/Mobile_Data_collection/en_SMT_ex4_.md
+          - file: content/Mobile_Data_collection/en_SMT_ex5_.md
   - caption: Trainers corner
     chapters:
       - file: content/Trainers_corner/en_TOT_intro.md  
