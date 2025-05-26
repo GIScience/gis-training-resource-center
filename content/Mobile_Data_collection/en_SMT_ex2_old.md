@@ -2,6 +2,7 @@
 
 This exercise focuses on the first step of working with the Sketch Map Tool “Create a Sketch Map” and especially the characteristics, differences, weaknesses and strengths of the satellite and the OSM basemap. 
 
+<!--INFO: Kept as a reference, DELETE-->
 
 
 ```{figure} ../../fig/SMT_Idee_traffic_light_exerices.png
