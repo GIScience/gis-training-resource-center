@@ -223,7 +223,7 @@ width: 350 px
 
 ```
 
-    - Then run the analysis by clicking the green button, then the analysis will start and your new results will show up on top.
+- Then run the analysis by clicking the green button, then the analysis will start and your new results will show up on top.
 
 ```{figure} /fig/en_SMT_ex2_ohsome_run_query.png
 ---
