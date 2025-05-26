@@ -20,6 +20,7 @@ __Aim of this exercise:__
 ^^^
 - Get familiar with the OSM and Satellite-image base maps and the Quality reports.
 - Get a feeling about how to assess the suitability of a basemaps and familiarise yourself with possible problems.
+- Get a first introduction to quality analysis
 :::
 
 ::::{grid} 2
@@ -34,9 +35,6 @@ __Focus group (GIS-Knowlege Level):__
 ^^^
 Planners/Facilitators  (Beginners-level: no knowledge required about QGIS)
 
-__Phase of participatory/community mapping__ 
-preparing participatory mapping
-
 :::
 ::::
 
@@ -44,7 +42,7 @@ preparing participatory mapping
 :::{grid-item-card}
 __Estimated time demand for the exercise:__
 ^^^
-In general: about 1 h to 1,5 h (depending on number of groups) 
+About 20 min in groups + each group 5 min to present + 10 min general discussion/buffer
 
 :::
 
@@ -54,7 +52,12 @@ __Available data__
 
 - [Introductory slides on the Sketch Map Tool](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/Introduction_Sketch_Map_Tool_21_03.pptx)
 
-- Case Studies Maps: [Case Study Map 1]( https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_1_Sudan.zip), [Case Study Map 2](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_2_Bolivien.zip), [Case Study Map 3](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_3_Port_Harcourt.zip), [Case Study Map 4](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_4_Borgo_San_Lorenzo.zip), [Case Study Map 5](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_5_Adelaide.zip)
+- Case Studies Maps: 
+    - [Case Study Map 1]( https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_1_Sudan.zip), 
+    - [Case Study Map 2](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_2_Bolivien.zip), 
+    - [Case Study Map 3](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_3_Port_Harcourt.zip), 
+    - [Case Study Map 4](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2_and_3/Case_4_Borgo_San_Lorenzo.zip), 
+    - [Case Study Map 5](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2_and_3/Case_5_Adelaide.zip)
 - [Printable exercise factsheet](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_2.pdf)
 
 

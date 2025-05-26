@@ -15,7 +15,7 @@ ___
 # Welcome to the IFRC Network GIS Training Platform
 
 :::{card} Teach GIS for Humanitarian Work
-:class-card: sd-bg-white sd-border-0
+
 The One-Stop-Shop for teaching Geoinformation System (GIS) skills for the work in the Red Cross Red Crescent Network.
 :::
 
@@ -132,7 +132,7 @@ This is not a self-learning platform. If you want to learn QGIS, it is always be
 ::::
 ___
 
-## Upcoming trainings
+## Upcoming public trainings
 
 | Title | Date | Application | Organization | Format | Language | Skill Level | Info |
 |-------|------|--------------|--------------|--------|----------|-------------|------|
