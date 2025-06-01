@@ -23,7 +23,15 @@ sensible symbolisation and follow the map making steps outlined in chapter [4.6.
 
 :::
 
-## Available exercise tracks.
+## Exercises per module
+
+- __[Module 1 Exercises](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_module_1_exercises.html)__
+- __[Module 2 Exercises](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_module_2_exercises.html)__
+- __[Module 3 Exercises](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_exercises.html)__
+- __[Module 4 Exercises](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_module_4_exercises.html)__
+- __[Module 5 Exercises](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_module_5_exercises.html)__
+
+## Available exercise tracks:
 
 - [Larkana Flood Response](/content/Exercise_tracks/en_larkana_flood_response.md)
 
