@@ -13,7 +13,7 @@
 __Larkana flood response exercise track:__
 ^^^
 
-This exercise is part of the Larkana flood response exercise track
+This exercise is the third exercise in the [Larkana flood response exercise track](https://giscience.github.io/gis-training-resource-center/content/Exercise_tracks/en_larkana_flood_response.html).
 
 - [Next exercise](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I_ex4.html)
 :::
