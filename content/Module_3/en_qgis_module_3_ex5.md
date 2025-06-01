@@ -8,13 +8,6 @@
 
 # Exercise 5: Larkana Flood response
 
-:::{topic} Aim of the exercise
-
-In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. The following analysis will utilize actual data from this natural disaster. The objective is to pinpoint the specific medical centers and healthcare facilities that were impacted by the flooding. Additionally, we will assess the viability of road access to the city of Larkana throughout the flood period.
-
-Participants will work with multiple layers and conduct spatial queries. Additionally, they will learn how to create their own geodata. The exercise is divided into three tasks. In the first part, we will export the administrative boundaries in our area of interest (AOI). In the second task, the health facilities located in our AOI will be extracted and we will identify which health facilities are located inside the flood extent layer. In the third task, the road access will be determined by identifying which roads are potentially flooded. 
-:::
-
 ::::{grid} 2
 :::{grid-item-card}
 __Larkana flood response exercise track:__
@@ -62,7 +55,12 @@ __Relevant wiki articles and module chapters__
 :::
 ::::
 
+:::{topic} Aim of the exercise
 
+In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. The following analysis will utilize actual data from this natural disaster. The objective is to pinpoint the specific medical centers and healthcare facilities that were impacted by the flooding. Additionally, we will assess the viability of road access to the city of Larkana throughout the flood period.
+
+Participants will work with multiple layers and conduct spatial queries. Additionally, they will learn how to create their own geodata. The exercise is divided into three tasks. In the first part, we will export the administrative boundaries in our area of interest (AOI). In the second task, the health facilities located in our AOI will be extracted and we will identify which health facilities are located inside the flood extent layer. In the third task, the road access will be determined by identifying which roads are potentially flooded. 
+:::
 
 ## Instructions for the trainers
 
