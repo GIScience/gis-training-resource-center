@@ -60,7 +60,6 @@ In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced
 
 The exercise is split into two parts. In the first part, you will adjust the symbolisation of the layers for the final map. In the second part, you will use the print layout composer to create a finished map that can be printed and distributed. 
 
-:::
 ::::
 
 
