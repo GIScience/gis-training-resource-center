@@ -206,7 +206,7 @@ To categorize the roads, double-click on the layer `Roads_Larkana`. The properti
     name: Pakistan road classification
     align: center
     ---
-    Pakistan road classification
+    Classifying the roads: By unchecking the boxes you can hide the unnecessary information.
     ```
 
 * You have the option to customize the width of the main roads' lines to improve the visualization. Open the Symbology window, then select 'Symbol'. In the new window, you can adjust the width of the lines to your preference.
@@ -217,7 +217,7 @@ To categorize the roads, double-click on the layer `Roads_Larkana`. The properti
     name: Pakistan road classification
     align: center
     ---
-    Pakistan road classification
+    Classifying the roads: You can adjust the width of a single category.
     ```
 
 * Once you are done, click `Apply` and `OK` to close the symbology window.
@@ -248,7 +248,7 @@ To do so we will create an entirely new point dataset representing airports.
     name: Digitalising airports
     align: center
     ---
-    Digitising airports
+    Creating a new point layer for the airports.
     ```
 
 ::::{margin}
@@ -268,7 +268,7 @@ If you cannot see the toolbar `View` -> `Toolbars` and check `Digitizing Toolbar
     name: Digitalising airports
     align: center
     ---
-    Digitising airports
+    Digitising new point features
     ```
 
 * Once you are done with digitizing click on ![](/fig/mActionSaveEdits.png) to save your edits.
@@ -320,7 +320,7 @@ Once you are happy with the symbolization and colours of your data, the next ste
 width: 700px
 name: Create Print Layout
 ---
-Create a new Print Layout
+Creating a new print layout.
 ```
 
 - A new window with a blank print layout will appear. This is the print layout composer.
@@ -349,7 +349,7 @@ Create a new Print Layout
 width: 700px
 name: Create Print Layout
 ---
-Create a new Print Layout
+Using the print layout.
 ```
 
 6. Now, let's add a scale bar:
@@ -381,7 +381,7 @@ You could now have as a result a map similar to this one. Here, some space has b
 width: 700px
 name: Map Larkama
 ---
-Map Larkama
+Your final map could look something like this.
 ```
 
 ### Bonus Exercise!
