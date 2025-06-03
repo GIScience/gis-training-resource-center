@@ -6,7 +6,7 @@
 :::
 ::::
 
-# Map design Exercise : Creating a Flood Situation Map of Larkana, Pakistan
+# Exercise 2: Creating a Flood Situation Map of Larkana, Pakistan
 
 ::::{grid} 2
 :::{grid-item-card}
@@ -72,9 +72,11 @@ You have created the data for Larkana in [Module 3 Exercise 5](https://giscience
 
 | Dataset name | Original title | Publisher | Downloaded from | 
 | :-------------------- | :----------------- |:----------------- |:----------------- |
-| PAK_adm2_Sindh.gpkg | [Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-pak) |UN OCHA | HDX |
-| PAK_Sind_Health_Facilities.gpkg |  [Pakistan Health Facilities (OpenStreetMap Export)](https://data.humdata.org/dataset/hotosm_pak_health_facilities) |Humanitarian OpenStreetMap Team (HOT) | HDX |
-| VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp | [Satellite detected water extents from 08 to 12 August 2024 over Pakistan)](https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan) | UNO SAT | HDX |
+| Flood_2024_AOI.gpkg | [Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-pak) | UN OCHA | HDX (This dataset has been modified in the [previous exercise](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex2.html)) |
+| Health_Facilities_Flood_2024_AOI.gpkg |  [Pakistan Health Facilities (OpenStreetMap Export)](https://data.humdata.org/dataset/hotosm_pak_health_facilities) |Humanitarian OpenStreetMap Team (HOT) | HDX |
+| PAK_2024_Minimum_Flood_Extend_reprojected.gpkg | [Satellite detected water extents from 08 to 12 August 2024 over Pakistan)](https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan) | UNO SAT | HDX |
+| PAK_flood_2024_blocked_road.gpkg | PAK_flood_2024_blocked_road | Yourself | This dataset was created in the [previous exercise](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex2.html) | 
+
 
 <!--FIX: add all datasets used in this exercise to the table-->
 
@@ -95,7 +97,7 @@ Keep your data management clean by creating a standard folder structure on your 
     - Roads: `Roads_Larkana.gpkg`
     - Blocked Roads Points: `PAK_flood_2024_blocked_road.gpkg`
     - Flood Extent 2024 reprojected: `PAK_2024_Minimum_Flood_Extend_reprojected.gpkg`
-    - Administrative Boundaries Sindh: `PAK_Sindh_adm1.shp`
+    - Administrative Boundaries for the Area of interest (AOI): `Flood_2024_AOI.gpkg`
 
 4. Take a moment to familiarise yourself with the available data. Look into the attribute table of the different layers and look what information is available and how the attributes are named.
 
@@ -294,7 +296,7 @@ Open the __Symbology Tab__ for the `PAK_2024_Minimum_Flood_Extend_reprojected`-l
 
 __Administrative Boundaries:__
 
-Open the __Symbology Tab__ for the `PAK_Sindh_amd1`-layer. Click on `Simple Fill` and adjust the `Symbol layer type` to `Simple Line`. You can furthermore adjust now the outline colour and stroke width.
+Open the __Symbology Tab__ for the `Flood_2024_AOI`-layer. Click on `Simple Fill` and adjust the `Symbol layer type` to `Simple Line`. You can furthermore adjust now the outline colour and stroke width.
 
 __Bonus Step__: [Adding a basemap](/content/Wiki/en_qgis_basemaps_wiki.md) can help potential readers orienting themselves.
 
