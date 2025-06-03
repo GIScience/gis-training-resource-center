@@ -194,18 +194,19 @@ GeoPackage files can contain multiple files and even entire QGIS projects. When 
     - Enter a layer name. For example, "__Flood_2024_AOI__". 
     - Click `Ok`. The exported layer should appear in your layers panel. 
      
-   
+::::{margin}
+```{Tip}
+Do not forget to save your project from time to time!
+```
+::::
+
 :::{topic} Achievement
 
 Now you have an overview of where the district of Larkana is located in Sindh. The operations team can use this information. 
 
 :::
 
-::::{margin}
-```{Tip}
-Do not forget to save your project from time to time!
-```
-::::
+
 
 ## Task 2: Estimation of Flood Impact on the Health Sector in Larkana
 
@@ -225,7 +226,7 @@ Posts on social media have indicated a significant impact on the healthcare syst
 
 ::::
 
-1. First, we need to find out where the health facilities are located in the area. We can find datasets by doing a quick search on the [humanitarian data exchange (HDX)](https://data.humdata.org). Here you can find the dataset "Pakistan Health Facilities (OpenStreetMap Export). This will do for now. The dataset is already available in the download folder for this exercise. 
+1. First, we need to find out where the health facilities are located in the area. We can find datasets by doing a quick search on the [humanitarian data exchange (HDX)](https://data.humdata.org). Here you can find the dataset "Pakistan Health Facilities (OpenStreetMap Export)". We will be using this dataset. The dataset is already available in the download folder for this exercise. 
     - Import the GeoPackage `PAK_Health_Facilities_complete.gpgk` into your project. You can either drag it onto the map canvas, or open the import window by clicking on `Layer` > `Add Layer` > `Add Vector Layer` in the top bar of QGIS ([see wiki page](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)). A new layer with point data will appear on your map canvas. 
     - Once we have the imported the healthsites, we can extract the healthsites that are located inside of our Area of Interest. We can achieve this with the tool `Extract by Location`. 
     - In the __Processing Toolbox__ ([opening the toolbox](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox)), search for the tool "Extract by Location". <kbd>Double-Click</kbd> on it. A new window will open.
@@ -259,19 +260,19 @@ Now we have an overview of the location of health facilities. However, we want t
 
 2. Import the dataset __"VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp"__ into your QGIS project.
 3. Once you have loaded the layers in QGIS, you can see that they are correctly displayed. However, upon checking the layer information, you can see that the new layers have a different Coordinate Reference System (CRS). They have the EPSG Code 9707 whereas our project has 4326 ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html#how-to-check-epsg-code-crs-of-your-qgis-project-and-change-it)).
-    * <kbd>Right-click</kbd> on the layer and select `Properties`.
-    * The “Layer Properties” Window of the data layer will open. Click on “Information”.
-    * Under the headline “Coordinate Reference System (CRS)” you find all information about the CRS. The most important are:
+    * <kbd>Right-click</kbd> on the layer and select `Properties`. The properties window will open.
+    -  In the vertical tab bar on the left, navigate to `Information`. Here you will find additional information about the selected dataset. 
+    * Under the headline "Coordinate Reference System (CRS)", you can find all the information about the CRS. The most important are:
     - __Name:__     Here you find the EPSG-Code.
     - __Units:__    Here you find information about the units of measurements used in the dataset. For example, either meters or degrees. <!--ADD: Why is it a problem? Add explanation-->
-4. This will be a problem as soon as we do something different then just displaying the layers. Since we want to manipulate the layers in the next step we need to reproject them first ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html#changing-the-projection-of-a-vector-layer)). 
-    * Click on the `Vector` tab -> `Data Management Tools` -> `Reproject Layer` or search for the tool in the `Processing Toolbox`.
+4. This will be a problem as soon as we do something different then just displaying the layers. Since we want to manipulate the layers in the next step, we need to reproject them first ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html#changing-the-projection-of-a-vector-layer)). 
+    * At the top of your QGIS-window, </kbd>click</kbd> on the `Vector` tab > `Data Management Tools` -> `Reproject Layer`, or search for the tool in the `Processing Toolbox`.
     * As `Input layer` select __"VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp"__
     * Select as target CRS/EPSG-Code __4326__.
     * Save the new file in your `temp` folder by clicking on the three dots ![](/fig/Three_points.png) next to `Reprojected`, specify the file name as __"2024_MinFloodExtend_reprojected"__.
     * Click `Run`.
     * Delete the old layer from the layer panel by right-clicking on the layer -> `Remove layer`.
-    * Adjust the opacity of the flood layer by right-clicking on layer __"2024_MinFloodExtend_reprojected"__ in the Layer Panel and selecting `Properties`. A new window will open up with a vertical tab section on the left. 
+    * Adjust the opacity of the flood layer by right-clicking on layer __"2024_MinFloodExtend_reprojected"__ in the Layer Panel and selecting `Properties`. The properties window will open up with a vertical tab section on the left. 
     - Navigate to the `Symbology`-tab.
     - Adjust the opacity to around 60% by moving the slider.
 
