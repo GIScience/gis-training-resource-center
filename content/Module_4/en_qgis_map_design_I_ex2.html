@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Map design Exercise : Creating a Flood Situation Map of Larkana, Pakistan &#8212; GIS Resource Training Center</title>
+    <title>Exercise 2: Creating a Flood Situation Map of Larkana, Pakistan &#8212; GIS Resource Training Center</title>
   
   
   
@@ -530,7 +530,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Map design Exercise : Creating a Flood Situation Map of Larkana, Pakistan</h1>
+    <h1>Exercise 2: Creating a Flood Situation Map of Larkana, Pakistan</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -570,8 +570,8 @@ document.write(`
 </div>
 </div>
 </div>
-<section class="tex2jax_ignore mathjax_ignore" id="map-design-exercise-creating-a-flood-situation-map-of-larkana-pakistan">
-<h1>Map design Exercise : Creating a Flood Situation Map of Larkana, Pakistan<a class="headerlink" href="#map-design-exercise-creating-a-flood-situation-map-of-larkana-pakistan" title="Permalink to this heading">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="exercise-2-creating-a-flood-situation-map-of-larkana-pakistan">
+<h1>Exercise 2: Creating a Flood Situation Map of Larkana, Pakistan<a class="headerlink" href="#exercise-2-creating-a-flood-situation-map-of-larkana-pakistan" title="Permalink to this heading">#</a></h1>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
 <div class="sd-col sd-d-flex-row docutils">
@@ -657,20 +657,25 @@ document.write(`
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>PAK_adm2_Sindh.gpkg</p></td>
+<tr class="row-even"><td class="text-left"><p>Flood_2024_AOI.gpkg</p></td>
 <td class="text-left"><p><a class="reference external" href="https://data.humdata.org/dataset/cod-ab-pak">Subnational Administrative Boundaries</a></p></td>
 <td class="text-left"><p>UN OCHA</p></td>
-<td class="text-left"><p>HDX</p></td>
+<td class="text-left"><p>HDX (This dataset has been modified in the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex2.html">previous exercise</a>)</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>PAK_Sind_Health_Facilities.gpkg</p></td>
+<tr class="row-odd"><td class="text-left"><p>Health_Facilities_Flood_2024_AOI.gpkg</p></td>
 <td class="text-left"><p><a class="reference external" href="https://data.humdata.org/dataset/hotosm_pak_health_facilities">Pakistan Health Facilities (OpenStreetMap Export)</a></p></td>
 <td class="text-left"><p>Humanitarian OpenStreetMap Team (HOT)</p></td>
 <td class="text-left"><p>HDX</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp</p></td>
+<tr class="row-even"><td class="text-left"><p>PAK_2024_Minimum_Flood_Extend_reprojected.gpkg</p></td>
 <td class="text-left"><p><a class="reference external" href="https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan">Satellite detected water extents from 08 to 12 August 2024 over Pakistan)</a></p></td>
 <td class="text-left"><p>UNO SAT</p></td>
 <td class="text-left"><p>HDX</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>PAK_flood_2024_blocked_road.gpkg</p></td>
+<td class="text-left"><p>PAK_flood_2024_blocked_road</p></td>
+<td class="text-left"><p>Yourself</p></td>
+<td class="text-left"><p>This dataset was created in the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex2.html">previous exercise</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -694,7 +699,7 @@ Keep your data management clean by creating a standard folder structure on your 
 <li><p>Roads: <code class="docutils literal notranslate"><span class="pre">Roads_Larkana.gpkg</span></code></p></li>
 <li><p>Blocked Roads Points: <code class="docutils literal notranslate"><span class="pre">PAK_flood_2024_blocked_road.gpkg</span></code></p></li>
 <li><p>Flood Extent 2024 reprojected: <code class="docutils literal notranslate"><span class="pre">PAK_2024_Minimum_Flood_Extend_reprojected.gpkg</span></code></p></li>
-<li><p>Administrative Boundaries Sindh: <code class="docutils literal notranslate"><span class="pre">PAK_Sindh_adm1.shp</span></code></p></li>
+<li><p>Administrative Boundaries for the Area of interest (AOI): <code class="docutils literal notranslate"><span class="pre">Flood_2024_AOI.gpkg</span></code></p></li>
 </ul>
 </li>
 <li><p>Take a moment to familiarise yourself with the available data. Look into the attribute table of the different layers and look what information is available and how the attributes are named.</p></li>
@@ -870,7 +875,7 @@ To categorize the roads, double-click on the layer <code class="docutils literal
 <p><strong>Flood Extent:</strong></p>
 <p>Open the <strong>Symbology Tab</strong> for the <code class="docutils literal notranslate"><span class="pre">PAK_2024_Minimum_Flood_Extend_reprojected</span></code>-layer. Choose a light-blue as color and adjust the opacity to about 30%.</p>
 <p><strong>Administrative Boundaries:</strong></p>
-<p>Open the <strong>Symbology Tab</strong> for the <code class="docutils literal notranslate"><span class="pre">PAK_Sindh_amd1</span></code>-layer. Click on <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">Fill</span></code> and adjust the <code class="docutils literal notranslate"><span class="pre">Symbol</span> <span class="pre">layer</span> <span class="pre">type</span></code> to <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">Line</span></code>. You can furthermore adjust now the outline colour and stroke width.</p>
+<p>Open the <strong>Symbology Tab</strong> for the <code class="docutils literal notranslate"><span class="pre">Flood_2024_AOI</span></code>-layer. Click on <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">Fill</span></code> and adjust the <code class="docutils literal notranslate"><span class="pre">Symbol</span> <span class="pre">layer</span> <span class="pre">type</span></code> to <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">Line</span></code>. You can furthermore adjust now the outline colour and stroke width.</p>
 <p><strong>Bonus Step</strong>: <a class="reference internal" href="../Wiki/en_qgis_basemaps_wiki.html"><span class="doc std std-doc">Adding a basemap</span></a> can help potential readers orienting themselves.</p>
 <p>If you are happy with the symobolisation of your layers, the map should be ready for a print layout.</p>
 <div class="admonition attention">

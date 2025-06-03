@@ -15,6 +15,7 @@ __Larkana flood response exercise track:__
 
 This exercise is the third exercise in the [Larkana flood response exercise track](https://giscience.github.io/gis-training-resource-center/content/Exercise_tracks/en_larkana_flood_response.html).
 
+- [Previous exercise](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_data_sources_ex4.html)
 - [Next exercise](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I_ex4.html)
 :::
 
@@ -258,7 +259,7 @@ Now we have an overview of the location of health facilities. However, we want t
 
 2. Import the dataset __"VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp"__ into your QGIS project.
 3. Once you have loaded the layers in QGIS, you can see that they are correctly displayed. However, upon checking the layer information, you can see that the new layers have a different Coordinate Reference System (CRS). They have the EPSG Code 9707 whereas our project has 4326 ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html#how-to-check-epsg-code-crs-of-your-qgis-project-and-change-it)).
-    * Right click on the data layer, click on  “Properties”.
+    * <kbd>Right-click</kbd> on the layer and select `Properties`.
     * The “Layer Properties” Window of the data layer will open. Click on “Information”.
     * Under the headline “Coordinate Reference System (CRS)” you find all information about the CRS. The most important are:
     - __Name:__     Here you find the EPSG-Code.
