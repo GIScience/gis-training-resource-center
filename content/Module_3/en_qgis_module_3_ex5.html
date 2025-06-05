@@ -805,16 +805,16 @@ Keep in mind that you can only select features from the layer you have currently
 </ul>
 </li>
 </ol>
-<aside class="topic">
-<p class="topic-title">Achievement</p>
-<p>Now you have an overview of where the district of Larkana is located in Sindh. The operations team can use this information.</p>
-</aside>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Do not forget to save your project from time to time!</p>
 </div>
+</aside>
+<aside class="topic">
+<p class="topic-title">Achievement</p>
+<p>Now you have an overview of where the district of Larkana is located in Sindh. The operations team can use this information.</p>
 </aside>
 </section>
 <section id="task-2-estimation-of-flood-impact-on-the-health-sector-in-larkana">
@@ -831,7 +831,7 @@ Keep in mind that you can only select features from the layer you have currently
 </div>
 </div>
 <ol class="arabic">
-<li><p>First, we need to find out where the health facilities are located in the area. We can find datasets by doing a quick search on the <a class="reference external" href="https://data.humdata.org">humanitarian data exchange (HDX)</a>. Here you can find the dataset “Pakistan Health Facilities (OpenStreetMap Export). This will do for now. The dataset is already available in the download folder for this exercise.</p>
+<li><p>First, we need to find out where the health facilities are located in the area. We can find datasets by doing a quick search on the <a class="reference external" href="https://data.humdata.org">humanitarian data exchange (HDX)</a>. Here you can find the dataset “Pakistan Health Facilities (OpenStreetMap Export)”. We will be using this dataset. The dataset is already available in the download folder for this exercise.</p>
 <ul class="simple">
 <li><p>Import the GeoPackage <code class="docutils literal notranslate"><span class="pre">PAK_Health_Facilities_complete.gpgk</span></code> into your project. You can either drag it onto the map canvas, or open the import window by clicking on <code class="docutils literal notranslate"><span class="pre">Layer</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code> in the top bar of QGIS (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html">see wiki page</a>). A new layer with point data will appear on your map canvas.</p></li>
 <li><p>Once we have the imported the healthsites, we can extract the healthsites that are located inside of our Area of Interest. We can achieve this with the tool <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">by</span> <span class="pre">Location</span></code>.</p></li>
@@ -866,24 +866,28 @@ Keep in mind that you can only select features from the layer you have currently
 <li><p>Import the dataset <strong>“VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp”</strong> into your QGIS project.</p></li>
 <li><p>Once you have loaded the layers in QGIS, you can see that they are correctly displayed. However, upon checking the layer information, you can see that the new layers have a different Coordinate Reference System (CRS). They have the EPSG Code 9707 whereas our project has 4326 (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html#how-to-check-epsg-code-crs-of-your-qgis-project-and-change-it">Wiki Video</a>).</p>
 <ul class="simple">
-<li><p><kbd>Right-click</kbd> on the layer and select <code class="docutils literal notranslate"><span class="pre">Properties</span></code>.</p></li>
-<li><p>The “Layer Properties” Window of the data layer will open. Click on “Information”.</p></li>
-<li><p>Under the headline “Coordinate Reference System (CRS)” you find all information about the CRS. The most important are:</p></li>
+<li><p><kbd>Right-click</kbd> on the layer and select <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. The properties window will open.</p></li>
+</ul>
+<ul class="simple">
+<li><p>In the vertical tab bar on the left, navigate to <code class="docutils literal notranslate"><span class="pre">Information</span></code>. Here you will find additional information about the selected dataset.</p></li>
+</ul>
+<ul class="simple">
+<li><p>Under the headline “Coordinate Reference System (CRS)”, you can find all the information about the CRS. The most important are:</p></li>
 </ul>
 <ul class="simple">
 <li><p><strong>Name:</strong>     Here you find the EPSG-Code.</p></li>
 <li><p><strong>Units:</strong>    Here you find information about the units of measurements used in the dataset. For example, either meters or degrees. <!--ADD: Why is it a problem? Add explanation--></p></li>
 </ul>
 </li>
-<li><p>This will be a problem as soon as we do something different then just displaying the layers. Since we want to manipulate the layers in the next step we need to reproject them first (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html#changing-the-projection-of-a-vector-layer">Wiki Video</a>).</p>
+<li><p>This will be a problem as soon as we do something different then just displaying the layers. Since we want to manipulate the layers in the next step, we need to reproject them first (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html#changing-the-projection-of-a-vector-layer">Wiki Video</a>).</p>
 <ul class="simple">
-<li><p>Click on the <code class="docutils literal notranslate"><span class="pre">Vector</span></code> tab -&gt; <code class="docutils literal notranslate"><span class="pre">Data</span> <span class="pre">Management</span> <span class="pre">Tools</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Reproject</span> <span class="pre">Layer</span></code> or search for the tool in the <code class="docutils literal notranslate"><span class="pre">Processing</span> <span class="pre">Toolbox</span></code>.</p></li>
+<li><p>At the top of your QGIS-window, </kbd>click</kbd> on the <code class="docutils literal notranslate"><span class="pre">Vector</span></code> tab &gt; <code class="docutils literal notranslate"><span class="pre">Data</span> <span class="pre">Management</span> <span class="pre">Tools</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Reproject</span> <span class="pre">Layer</span></code>, or search for the tool in the <code class="docutils literal notranslate"><span class="pre">Processing</span> <span class="pre">Toolbox</span></code>.</p></li>
 <li><p>As <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">layer</span></code> select <strong>“VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp”</strong></p></li>
 <li><p>Select as target CRS/EPSG-Code <strong>4326</strong>.</p></li>
 <li><p>Save the new file in your <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder by clicking on the three dots <img alt="" src="../../_images/Three_points.png" /> next to <code class="docutils literal notranslate"><span class="pre">Reprojected</span></code>, specify the file name as <strong>“2024_MinFloodExtend_reprojected”</strong>.</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Run</span></code>.</p></li>
 <li><p>Delete the old layer from the layer panel by right-clicking on the layer -&gt; <code class="docutils literal notranslate"><span class="pre">Remove</span> <span class="pre">layer</span></code>.</p></li>
-<li><p>Adjust the opacity of the flood layer by right-clicking on layer <strong>“2024_MinFloodExtend_reprojected”</strong> in the Layer Panel and selecting <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. A new window will open up with a vertical tab section on the left.</p></li>
+<li><p>Adjust the opacity of the flood layer by right-clicking on layer <strong>“2024_MinFloodExtend_reprojected”</strong> in the Layer Panel and selecting <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. The properties window will open up with a vertical tab section on the left.</p></li>
 </ul>
 <ul class="simple">
 <li><p>Navigate to the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code>-tab.</p></li>
@@ -1146,7 +1150,7 @@ Execution failed after 0.07 seconds
 <a class="reference internal image-reference" href="../../_images/IFRC-icons-colour_Map.png"><img alt="../../_images/IFRC-icons-colour_Map.png" src="../../_images/IFRC-icons-colour_Map.png" style="width: 100px;" /></a>
 </figure>
 <p>This exercise is part of the <strong>Larkana Flood Response Exercise track</strong> and continues with an exercise in module 4.</p>
-<p>Click <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I_ex4.html">here</a> if you want to continue to the next exercise of this exercise track.</p>
+<p>Click <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I_ex2.html">here</a> if you want to continue to the next exercise of this exercise track.</p>
 </div>
 </section>
 </section>
