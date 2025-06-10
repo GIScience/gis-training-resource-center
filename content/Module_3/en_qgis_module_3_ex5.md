@@ -124,12 +124,15 @@ Reprojected and fixed Flood extend layer can be downloaded __[here](https://nexu
 To keep your data organized and easily accessible, it's important to establish a clear folder structure on your computer for your QGIS projects and geodata. Ensure that your exercise data are saved in a location that allows for easy retrieval and association with the corresponding QGIS project.
 ```
 
+
+<!---
 :::{figure} /fig/M3_Ex5_workflow_chart.drawio.png
 ---
 name: M5_Ex5_Workflow_chart
 width: 450 px
 ---
 :::
+-->
 
 ## Task 1: Gain an overview of the situation around Larkana 
 
