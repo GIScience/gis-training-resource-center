@@ -23,7 +23,7 @@ __Aim of the exercise:__
 ^^^
 
 The aim of this exercise is to navigate various data sources, gain an 
-understanding of where and how to access relevant data, and identify potential problems. It is important to use reliable, up-to-date, and appropriate data sources** that fit the purpose of the analysis to ensure a successful and meaningful results. Always consider your analysis objectives and requirements and search for data accordingly.
+understanding of where and how to access relevant data, and identify potential problems. It is important to **use reliable, up-to-date, and appropriate data sources** that fit the purpose of the analysis to ensure a successful and meaningful results. Always consider your analysis objectives and requirements and search for data accordingly.
 
 :::
 
@@ -33,7 +33,6 @@ __Type of trainings exercise:__
 ^^^
 
 - This exercise can be done in small groups presenting their work in a plenum at the end.
-<!--For Follow along, this exercise needs to be updated or another follow along exercise needs to be created-->
 
 :::
 
@@ -109,20 +108,37 @@ __Wrap up:__
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip
 
 Since the exercise is about finding data, there won't be any data to download. 
-Instead download the __standard folder structure__ [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip) and insert your data as you download it.
+Instead download the __[standard folder structure](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_management.html#standard-folder-structure)__ [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip) and insert your data as you download it.
 
 :::
+
+::::{dropdown} Standard folder structure
+```{figure} /fig/standard_folder_structure_new_2025.drawio.png
+name: standard_folder_struc
+width: 500 px
+---
+Standard folder structure. Source: HeiGIT
+```
+::::
 
 ### Tasks
 
 The objective of this exercise is to find out how many hospitals are located in **Bolivia** and how they are distributed across the country. 
 
-1. Find a data source to download the **administrative boundaries** and **healthsites** of Bolivia. The following instructions are designed for the example of Bolivia. If you wish to perform the same analysis for another country, some instructions may differ, but the general workflow will remain the same.
+1. Download the folder structure and unzip it.
+2. Create a copy of the folder structure and name the folder `module_2_exercise_3_data_sources`.
+3. Open a new QGIS project and save it into the folder. 
+
+4. Find a data source to download the **administrative boundaries** and **healthsites** of Bolivia. The following instructions are designed for the example of Bolivia. If you wish to perform the same analysis for another country, some instructions may differ, but the general workflow will remain the same.
 
 :::{dropdown} Possible data sources
 
-Test downloading the administrative boundaries on [OSM Boundaries](https://osm-boundaries.com) 
-and the healthsites on [healthsites.io](https://healthsites.io).
+There are many different data repositories on the web where you can find suitable data. You can find a list of possible data sources [here](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_data_sources.html).
+
+For most humanitarian data, you can search on the __[Humanitarian Data Exchange/HDX](https://data.humdata.org/)__
+The Humanitarian Data Exchange (HDX) is a primary platform for accessing and sharing geospatial data relevant to humanitarian crises. It's a centralized repository offering a wide range of datasets from various sources, making it an invaluable resource for aid organizations and researchers.
+
+
 
 :::
 
@@ -130,7 +146,7 @@ and the healthsites on [healthsites.io](https://healthsites.io).
    that are being used, instead of just examples. Can we just ask people to use these
    datasets, so that the rest of the instructions make sense? -->
 
-2. Download the data and save the administrative boundaries as `bolivia` and the healthsites `healthsites_bolivia` into the `data\input` folder.
+5. Download the data and save the **administrative boundaries** as `bolivia_adm` and the **healthsites** `healthsites_bolivia` into the `data\input` folder.
 
 ```{Note}
 
@@ -140,17 +156,18 @@ polygons.
 
 ```
 
-3. Load both vector files into QGIS.  
+6. [Load both vector files into QGIS](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept.html#data-import).
 
-4. Now add the OpenStreetMap basemap via the browser window > 
+
+7. Now add the OpenStreetMap basemap via the browser window > 
    `XYZ Tiles`. Adding basemaps can help you orient yourself, gain a better understanding of the area of interest, and create more informative maps. 
 
-5. Familiarise yourself with the data by opening the attribute table and identify the different types of healthcare that are included in the dataset. Get an overview of the information that is stored in each column. For example, there could be information indicating the type of healthsite.
+8. Familiarise yourself with the data by opening the attribute table and identify the different types of healthcare that are included in the dataset. Get an overview of the information that is stored in each column. For example, there could be information indicating the type of healthsite.
 
 <!--ADD: Context: Having this exercise in the 
    context of a scenario could help with things like this --> 
 
-6. If your dataset contains information about the type of healthsite (e.g. clinic, hospital, doctor, etc.), we can extract these and save them in a new layer. We can do this by selecting the hospitals and then copying them to a new layer.
+9. If your dataset contains information about the type of healthsite (e.g. clinic, hospital, doctor, etc.), we can extract these and save them in a new layer. We can do this by selecting the hospitals and then copying them to a new layer.
 
 ```{Hint}
 
@@ -158,12 +175,9 @@ For information on how to easily filter your data by manually selecting features
 
 ```
 
-<!-- Should we direct people to instructions on filters rather than attribute table?
-EN: The information on how to filter is in this wiki page. Add the heading to the link -->
+10. To view only the selected features (hospitals) and apply the filtering, we can first display these features in the attribute table by clicking on `Show Selected Features` in the bottom left corner, and then export only the selected features and save them as `hospitals_bolivia` in your `data\output` folder.
 
-7. To view only the selected features (hospitals) and apply the filtering, we can first display these features in the attribute table by clicking on `Show Selected Features` in the bottom left corner, and then export only the selected features and save them as `hospitals_bolivia` in your `data\output` folder.
-
-8. Save your project and display your results. Ensure that both the country of Bolivia and the hospitals are visible.
+11. Save your project and display your results. Ensure that both the country of Bolivia and the hospitals are visible.
 
 
 ### Result

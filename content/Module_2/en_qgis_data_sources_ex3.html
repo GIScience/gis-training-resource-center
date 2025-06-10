@@ -588,7 +588,7 @@ document.write(`
 </div>
 <div class="sd-card-body docutils">
 <p class="sd-card-text">The aim of this exercise is to navigate various data sources, gain an
-understanding of where and how to access relevant data, and identify potential problems. It is important to use reliable, up-to-date, and appropriate data sources** that fit the purpose of the analysis to ensure a successful and meaningful results. Always consider your analysis objectives and requirements and search for data accordingly.</p>
+understanding of where and how to access relevant data, and identify potential problems. It is important to <strong>use reliable, up-to-date, and appropriate data sources</strong> that fit the purpose of the analysis to ensure a successful and meaningful results. Always consider your analysis objectives and requirements and search for data accordingly.</p>
 </div>
 </div>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
@@ -602,7 +602,6 @@ understanding of where and how to access relevant data, and identify potential p
 <ul class="simple">
 <li><p class="sd-card-text">This exercise can be done in small groups presenting their work in a plenum at the end.</p></li>
 </ul>
-<!--For Follow along, this exercise needs to be updated or another follow along exercise needs to be created-->
 </div>
 </div>
 </div>
@@ -697,14 +696,28 @@ understanding of where and how to access relevant data, and identify potential p
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover docutils">
 <div class="sd-card-body docutils">
 <p class="sd-card-text">Since the exercise is about finding data, there won’t be any data to download.
-Instead download the <strong>standard folder structure</strong> <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip">here</a> and insert your data as you download it.</p>
+Instead download the <strong><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_management.html#standard-folder-structure">standard folder structure</a></strong> <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip">here</a> and insert your data as you download it.</p>
 </div>
 <a class="sd-stretched-link reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip"></a></div>
-</section>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Standard folder structure<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<figure class="align-default">
+<img alt="../../_images/standard_folder_structure_new_2025.drawio.png" src="../../_images/standard_folder_structure_new_2025.drawio.png" />
+</figure>
+</div>
+</details></section>
 <section id="tasks">
 <h3>Tasks<a class="headerlink" href="#tasks" title="Permalink to this heading">#</a></h3>
 <p>The objective of this exercise is to find out how many hospitals are located in <strong>Bolivia</strong> and how they are distributed across the country.</p>
 <ol class="arabic simple">
+<li><p>Download the folder structure and unzip it.</p></li>
+<li><p>Create a copy of the folder structure and name the folder <code class="docutils literal notranslate"><span class="pre">module_2_exercise_3_data_sources</span></code>.</p></li>
+<li><p>Open a new QGIS project and save it into the folder.</p></li>
 <li><p>Find a data source to download the <strong>administrative boundaries</strong> and <strong>healthsites</strong> of Bolivia. The following instructions are designed for the example of Bolivia. If you wish to perform the same analysis for another country, some instructions may differ, but the general workflow will remain the same.</p></li>
 </ol>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -714,14 +727,15 @@ Possible data sources<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Test downloading the administrative boundaries on <a class="reference external" href="https://osm-boundaries.com">OSM Boundaries</a>
-and the healthsites on <a class="reference external" href="https://healthsites.io">healthsites.io</a>.</p>
+<p class="sd-card-text">There are many different data repositories on the web where you can find suitable data. You can find a list of possible data sources <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_2/en_data_sources.html">here</a>.</p>
+<p class="sd-card-text">For most humanitarian data, you can search on the <strong><a class="reference external" href="https://data.humdata.org/">Humanitarian Data Exchange/HDX</a></strong>
+The Humanitarian Data Exchange (HDX) is a primary platform for accessing and sharing geospatial data relevant to humanitarian crises. It’s a centralized repository offering a wide range of datasets from various sources, making it an invaluable resource for aid organizations and researchers.</p>
 </div>
 </details><!-- SUGGESTION: some of the instructions below assume that these are the datasets
    that are being used, instead of just examples. Can we just ask people to use these
    datasets, so that the rest of the instructions make sense? -->
-<ol class="arabic simple" start="2">
-<li><p>Download the data and save the administrative boundaries as <code class="docutils literal notranslate"><span class="pre">bolivia</span></code> and the healthsites <code class="docutils literal notranslate"><span class="pre">healthsites_bolivia</span></code> into the <code class="docutils literal notranslate"><span class="pre">data\input</span></code> folder.</p></li>
+<ol class="arabic simple" start="5">
+<li><p>Download the data and save the <strong>administrative boundaries</strong> as <code class="docutils literal notranslate"><span class="pre">bolivia_adm</span></code> and the <strong>healthsites</strong> <code class="docutils literal notranslate"><span class="pre">healthsites_bolivia</span></code> into the <code class="docutils literal notranslate"><span class="pre">data\input</span></code> folder.</p></li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -729,24 +743,22 @@ and the healthsites on <a class="reference external" href="https://healthsites.i
 ignored in this example. Depending on the data source, information can be provided as points, but also as lines or
 polygons.</p>
 </div>
-<ol class="arabic simple" start="3">
-<li><p>Load both vector files into QGIS.</p></li>
+<ol class="arabic simple" start="6">
+<li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept.html#data-import">Load both vector files into QGIS</a>.</p></li>
 <li><p>Now add the OpenStreetMap basemap via the browser window &gt;
 <code class="docutils literal notranslate"><span class="pre">XYZ</span> <span class="pre">Tiles</span></code>. Adding basemaps can help you orient yourself, gain a better understanding of the area of interest, and create more informative maps.</p></li>
 <li><p>Familiarise yourself with the data by opening the attribute table and identify the different types of healthcare that are included in the dataset. Get an overview of the information that is stored in each column. For example, there could be information indicating the type of healthsite.</p></li>
 </ol>
 <!--ADD: Context: Having this exercise in the 
    context of a scenario could help with things like this --> 
-<ol class="arabic simple" start="6">
+<ol class="arabic simple" start="9">
 <li><p>If your dataset contains information about the type of healthsite (e.g. clinic, hospital, doctor, etc.), we can extract these and save them in a new layer. We can do this by selecting the hospitals and then copying them to a new layer.</p></li>
 </ol>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>For information on how to easily filter your data by manually selecting features in the attribute table after it has been sorted based on a particular column, see the <strong><a class="reference internal" href="../Wiki/en_qgis_attribute_table_wiki.html"><span class="doc std std-doc">attribute table</span></a></strong> page on the wiki.</p>
 </div>
-<!-- Should we direct people to instructions on filters rather than attribute table?
-EN: The information on how to filter is in this wiki page. Add the heading to the link -->
-<ol class="arabic simple" start="7">
+<ol class="arabic simple" start="10">
 <li><p>To view only the selected features (hospitals) and apply the filtering, we can first display these features in the attribute table by clicking on <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">Selected</span> <span class="pre">Features</span></code> in the bottom left corner, and then export only the selected features and save them as <code class="docutils literal notranslate"><span class="pre">hospitals_bolivia</span></code> in your <code class="docutils literal notranslate"><span class="pre">data\output</span></code> folder.</p></li>
 <li><p>Save your project and display your results. Ensure that both the country of Bolivia and the hospitals are visible.</p></li>
 </ol>
