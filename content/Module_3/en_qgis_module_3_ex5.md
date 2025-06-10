@@ -233,6 +233,14 @@ Posts on social media have indicated a significant impact on the healthcare syst
 
 ::::
 
+```{figure} /fig/Module_3/en_m3_ex5_Task_2.png
+---
+name: task_2_workflow
+width: 750 px
+---
+
+```
+
 1. First, we need to find out where the health facilities are located in the area. We can find datasets by doing a quick search on the [humanitarian data exchange (HDX)](https://data.humdata.org). Here you can find the dataset "Pakistan Health Facilities (OpenStreetMap Export)". We will be using this dataset. The dataset is already available in the download folder for this exercise. 
     - Import the GeoPackage `PAK_Health_Facilities_complete.gpgk` into your project. You can either drag it onto the map canvas, or open the import window by clicking on `Layer` > `Add Layer` > `Add Vector Layer` in the top bar of QGIS ([see wiki page](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)). A new layer with point data will appear on your map canvas. 
     - Once we have the imported the healthsites, we can extract the healthsites that are located inside of our Area of Interest. We can achieve this with the tool `Extract by Location`. 
@@ -405,6 +413,14 @@ They need answers to the following three questions:
 
 In order to get a clearer picture, we need to import the road network data for the region into QGIS. Look for the file in the input folder. The road network is initially displayed without showing any road types or other relevant details. We should apply a categorized classification technique only to display the specific roads that we are interested in.
 ::::
+
+```{figure} /fig/Module_3/en_m3_ex5_Task_3.png
+---
+name: Task_3_workflow
+width: 750 px
+---
+
+```
 
 
 1. Load the dataset __"Roads_Larkana.gpkg"__ from your input folder into your QGIS-project.
