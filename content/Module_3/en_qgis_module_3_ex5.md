@@ -149,6 +149,13 @@ You have been deployed as an information manager to the flood-affected regions o
 
 :::
 
+```{figure} /fig/Module_3/en_m3_ex5_Task_1.png
+---
+name: Task_1_workflow
+width: 750 px
+---
+
+```
 
 ::::{margin}
 ```{admonition} Tip
