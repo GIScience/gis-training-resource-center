@@ -109,30 +109,61 @@ OpenStreetMap (OSM) is a collaborative, open-source project that creates free, e
 The [HOT Export Tool](https://export.hotosm.org/v3/) 
 is a tool for accessing OSM data offered by Humanitarian OpenStreetMap Team (HOT).
 HOT offers a browser-based tool to download OSM data with good options to specify 
-region, time, feature type and data format.
+region, time, feature type and data format. 
+For our following analysis, we want to export the road network for the Larkana district in Pakistan. 
+
 
 1. Go to the HOT Export tool. To use the tool you need an OSM account. If you 
    don't have an account yet, you will need to create one. Click on `Log in`. In the new window 
    select the option to create a new account. 
 2. If you have an OSM account, you can log in directly into the HOT Export tool by 
    clicking on `Log in`.
-3. In this example, we want to download all banking and finance features from OSM 
-   in Mauritius. 
-    1. Select area or location: Zoom to Mauritius on the map or use the search 
-       bar. To mark the main island there are three options. You can draw a box, 
-       draw a polygon or upload a GeoJSON file with your boundaries. In this case, 
-       use one of the first two options to mark Mauritius.
-    2. Name and description: give your export the name “Mauritius financial 
-       institutions” and add a short description of your export.
-    3. Format tab: The HOT Export tool offers many data formats in which you can 
-       export data. Select GeoPackage (`.gpkg`) and leave the other 
-       options unchecked.
-    4. Data tab: The easiest way to select the data you want to download is the Tag 
-       Tree. Since we want to download financial institutions, find the “Financial” 
-       category and select all options (ATM, Bank, Bureau de Change).
-    5. Summary tab: Click on `Create Export`. You will be forwarded to a page to 
-       wait until the export is finished. When the processing is finished, the 
-       page will show a download link for your file. 
+3. Now we can start creating an OSM export. To do so, click on `Start Exporting`. You will be directed to the export tool.
+
+```{figure} /fig/en_m2_ex4_HOT_Export_Tool1.png
+---
+name: HOT_Export_Tool_1
+width: 750 pc
+---
+
+```
+
+In the export tool, you have a map canvas on the right and an input area on the left. On the map canvas, you determine the geographic location of the data you want to export. On the left side you determine the metadata of the export, the file format, and select which data will be downloaded (e.g., buildings, roads, hospitals, settlements, etc.)
+
+4. On the left side, give your Export a name such as `Larkana Roads export 20250314` and add a short description of what you are intending to download. In our case, we want to download the road network for Larkana in Pakistan. You can enter a project if you wish (e.g. GIS Training). 
+
+::::{margin}
+:::{tip}
+There are two entries for Larkana in OpenStreetMap. One refers to the city, and the other to the district. Our area of interest is the __district__. We can choose the entry that has a larger box. 
+Alternatively, once you zoomed into the area, you can draw a box or a polygon to select the area. 
+:::
+::::
+
+5. On the map canvas, search for Larkana in the search bar and select the district. The map will zoom in to show the district. This will also select the district as our area of interest. You can see this by the blue polygon. Our export will only download data that is located within this area.
+
+```{figure} /fig/Module_2/en_m2_ex_4_HOT_Export_Tool3.png
+---
+name: HOT_Export_3
+width: 500 px
+---
+
+```
+
+6. Click `Next`.
+
+7. Select the format you want to download. We recommend using GeoPackage `.gpkg` but GeoJSON and Shapefile are also fine. Click `Next`.
+
+8. Under the data tab, we can select the key values we are interested in. We want to download to download the road network so we have to open the dropdown under `Transportation` and check the box for `Roads`
+
+```{figure} /fig/Module_2/en_m2_ex4_HOT_export_tool4.png
+---
+name: Hot Export Tool 5
+width: 500 px
+---
+
+```
+
+9. We are done adjusting the export. Click `Next`. A summary page will open. Click on `Create Export`. Your new export will begin 
 
 ```{figure} /fig/en_Hot_Export.png
 ---
@@ -143,7 +174,17 @@ name: Hot Export tool download of Mauritius financial institutions
 Hot Export tool download of Mauritius financial institutions. Adapted screenshot from [HOT Export Tool](https://export.hotosm.org/v3/exports/new/describe)
 ```
 
-4. [Import the new file in QGIS]().
+::::{dropdown} Bonus Exercise
+:class: tip
+
+In the next exercise of the Larkana Flood Response Exercise track, we want to identify health facilities located in Larkana. Can you think of a way to export health facilities using the HOT Export Tool?
+
+:::{dropdown} Solution
+You can download the health facilities by checking the `Healthcare` option.
+:::
+::::
+
+4. [Import the new file into your QGIS project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html).
 5. Arrange the layers on the map so you can see the new layer.
 6. (optional) Use the classification function to get a better overview to get a better 
    overview:
