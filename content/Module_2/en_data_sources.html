@@ -542,9 +542,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#openstreetmap-data">2.5.1. OpenStreetMap data</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quickosm-plugin">2.5.1.1. QuickOSM plugin</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hot-export-tool">2.5.1.2. HOT Export Tool</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-to-look-out-for-when-looking-for-data">2.5.1. What to look out for when looking for data:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview-of-useful-data-repositories">2.5.2. Overview of useful data repositories</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#openstreetmap-data">2.5.3. OpenStreetMap data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quickosm-plugin">2.5.3.1. QuickOSM plugin</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hot-export-tool">2.5.3.2. HOT Export Tool</a></li>
 </ul>
 </li>
 </ul>
@@ -573,7 +575,8 @@ document.write(`
 <h1><span class="section-number">2.5. </span>Data sources<a class="headerlink" href="#data-sources" title="Permalink to this heading">#</a></h1>
 <p>To find the appropriate data you are looking for, you can search online data
 sharing platforms. Some important ones are highlighted below.</p>
-<p><strong>What to look out for when looking for data:</strong></p>
+<section id="what-to-look-out-for-when-looking-for-data">
+<h2><span class="section-number">2.5.1. </span>What to look out for when looking for data:<a class="headerlink" href="#what-to-look-out-for-when-looking-for-data" title="Permalink to this heading">#</a></h2>
 <p><em>Data source:</em> Always make sure to use data from trusted data sources. The
 organisation that shared the data is the best indicator. Apart from that, use of
 the data in trusted contexts or also download counts can be good indicators.</p>
@@ -590,13 +593,15 @@ up-to-date data available from another source.</p>
 <p><em>Data license:</em> What kind of license does the data have? How can you use and
 share it and how do you need to cite the data source? Make sure to check the
 licensing and to follow the respective regulations to avoid difficulties.</p>
-<!-- ADD: Would be nice to have a wiki page on licensing if possible -->
 <figure class="align-default" id="data-sources-examples">
 <a class="reference internal image-reference" href="../../_images/en_data_sources_examples_cartong.png"><img alt="../../_images/en_data_sources_examples_cartong.png" src="../../_images/en_data_sources_examples_cartong.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.32 </span><span class="caption-text">The data to create maps or perform GIS analyses can come from various sources (Source: <span class="xref myst">CartONG</span>)</span><a class="headerlink" href="#data-sources-examples" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.32 </span><span class="caption-text">The data to create maps or perform GIS analyses can come from various sources (Source: <a class="reference external" href="https://www.cartong.org/en/">CartONG</a>)</span><a class="headerlink" href="#data-sources-examples" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+</section>
+<section id="overview-of-useful-data-repositories">
+<h2><span class="section-number">2.5.2. </span>Overview of useful data repositories<a class="headerlink" href="#overview-of-useful-data-repositories" title="Permalink to this heading">#</a></h2>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
 <summary class="sd-summary-title sd-card-header">
 Overview of useful data repositories<div class="sd-summary-down docutils">
@@ -803,8 +808,9 @@ Overview of useful data repositories<div class="sd-summary-down docutils">
 </tbody>
 </table>
 </div>
-</details><section id="openstreetmap-data">
-<h2><span class="section-number">2.5.1. </span>OpenStreetMap data<a class="headerlink" href="#openstreetmap-data" title="Permalink to this heading">#</a></h2>
+</details></section>
+<section id="openstreetmap-data">
+<h2><span class="section-number">2.5.3. </span>OpenStreetMap data<a class="headerlink" href="#openstreetmap-data" title="Permalink to this heading">#</a></h2>
 <p>OpenStreetMap (OSM) is a collaborative project that aims to create a free and editable map of the world. Unlike traditional maps, which are often proprietary and controlled by commercial entities, OSM allows anyone to contribute and edit map data, resulting in a detailed and constantly evolving map of roads, trails, landmarks, and more. With its open-source nature and global community of contributors, OpenStreetMap has become a valuable resource for a wide range of applications, from navigation and urban planning to disaster response and humanitarian aid.</p>
 <p>There a multiple ways to get OpenStreetMap (OSM) data as a vector file into QGIS. The three most common and easy-to-use ways are <a class="reference external" href="http://geofabrik.de">geofabrik.de</a>, HOT Export Tool and QuickOSM. Each of the options has both advantages and disadvantages.</p>
 <div class="admonition tip">
@@ -880,7 +886,7 @@ is in QGIS.</p>
 <p>It is by default possible to add the OSM base map to your project.  Click on <code class="docutils literal notranslate"><span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">XYZ</span> <span class="pre">Layer…</span></code>. Choose <code class="docutils literal notranslate"><span class="pre">OpenStreetMap</span></code> and click <code class="docutils literal notranslate"><span class="pre">Add</span></code> (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#standard-qgis-basemaps">Wiki Video</a>).</p>
 </div>
 <section id="quickosm-plugin">
-<h3><span class="section-number">2.5.1.1. </span>QuickOSM plugin<a class="headerlink" href="#quickosm-plugin" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">2.5.3.1. </span>QuickOSM plugin<a class="headerlink" href="#quickosm-plugin" title="Permalink to this heading">#</a></h3>
 <p>The QuickOSM plugin makes it easy to download data from OpenStreetMap and add it
 to your QGIS project.</p>
 <ol class="arabic simple">
@@ -938,7 +944,7 @@ on the wiki. There is an example of this in the Module 2 <a class="reference ext
 </div>
 </details></section>
 <section id="hot-export-tool">
-<h3><span class="section-number">2.5.1.2. </span>HOT Export Tool<a class="headerlink" href="#hot-export-tool" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">2.5.3.2. </span>HOT Export Tool<a class="headerlink" href="#hot-export-tool" title="Permalink to this heading">#</a></h3>
 <p>With the <a class="reference external" href="https://export.hotosm.org/v3/">Humanitarian OpenStreetMap Team (HOT) Export Tool</a>
 you can download customized extracts of up-to-date OSM data in different file
 formats. It offers a browser-based tool to download OSM data with good options
@@ -1070,9 +1076,11 @@ download your file by clicking on the link:</p></li>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#openstreetmap-data">2.5.1. OpenStreetMap data</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quickosm-plugin">2.5.1.1. QuickOSM plugin</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hot-export-tool">2.5.1.2. HOT Export Tool</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-to-look-out-for-when-looking-for-data">2.5.1. What to look out for when looking for data:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview-of-useful-data-repositories">2.5.2. Overview of useful data repositories</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#openstreetmap-data">2.5.3. OpenStreetMap data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quickosm-plugin">2.5.3.1. QuickOSM plugin</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hot-export-tool">2.5.3.2. HOT Export Tool</a></li>
 </ul>
 </li>
 </ul>
