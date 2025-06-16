@@ -148,8 +148,8 @@ This method has the advantage that you can specifically download the data that y
 | Advantages  |  Disadvantages |
 |---|---|
 |+ Query can be tailored for very specific data|- Requires knowledge of OSM data model |
-|+ Data loads directly in QGIS|- Building queries can quickly become complex|
-|+ Query can easily be repeated||
+|+ Data loads directly in QGIS|- Building queries can quickly become complex |
+|+ Query can easily be repeated | |
 
 :::
 
@@ -157,7 +157,7 @@ This method has the advantage that you can specifically download the data that y
 `````
 
 
-### Task 2: HOT Export Tool
+### Task: Using the HOT Export Tool
 
 The [HOT Export Tool](https://export.hotosm.org/v3/) 
 is a tool for accessing OSM data offered by Humanitarian OpenStreetMap Team (HOT).
@@ -165,9 +165,9 @@ HOT offers a browser-based tool to download OSM data with good options to specif
 region, time, feature type and data format.
 
 1. Go to the HOT Export tool. To use the tool you need an OSM account. If you 
-   don't have one you need to create one. Click on `Log in`. In the new window 
+   don't have an account yet, you will need to create one. Click on `Log in`. In the new window 
    select the option to create a new account. 
-2. If you have an OSM account you can log in directly into the HOT Export tool by 
+2. If you have an OSM account, you can log in directly into the HOT Export tool by 
    clicking on `Log in`.
 3. In this example, we want to download all banking and finance features from OSM 
    in Mauritius. 
@@ -209,14 +209,9 @@ Hot Export tool download of Mauritius financial institutions. Adapted screenshot
       values or attributes of the selected “fclass” column.  You can adjust the 
       colours by double-clicking on one row in the central field. Once you are 
       done, click `Apply` and `OK` to close the symbology window.
-      <!-- SUGGESTION: I don't think the symbology instructions need to be repeated 
-         if they are already provided above -->
 
 As you can see, the HOT Export tool offers a good mix of flexibility and quick 
-access to OSM data. However, there are quite some steps involved until the data 
-is in QGIS. 
-<!-- note: is it quick or are there lots of steps? doesn't make sense if
-   both are true! -->
+access to OSM data.
 
 | Advantages  |  Disadvantages |
 |---|---|
@@ -224,82 +219,3 @@ is in QGIS.
 |+ Many different data formats available|- Only fixed option for data selection|
 |+ Easy to use||
 |+ Query can easily be repeated | |
-
-### Task 3: QuickOSM
-
-The QuickOSM plugin allows you to load OSM data directly into QGIS. 
-However, the plugin requires the deepest knowledge of the OSM data model, 
-compared to the previous two options. To tailor your query based on the exact 
-key and value you need there are two great resources: 
-
-1. [OSM Wiki](https://wiki.openstreetmap.org/wiki/Main_Page), and especially the 
-   [Map features](https://wiki.openstreetmap.org/wiki/Map_features) article. 
-2. [Taginfo](https://taginfo.openstreetmap.org/)
-
-Have a look at both.
-<!-- NOTE: this feels like info that is best dealt with outside of an exercise -->
-
-1. Install the QuickOSM plugin by clicking on the `Plugin` tab, -> `Manage and 
-   Install Plugins…` -> `All` -> Search for "QuickOSM" -> `Install Plugin`
-2. Now we want to find all health facilities on the island of Mauritius.
-    1. Position the island of Mauritius in a way that the island is completely 
-       visible in your map canvas.
-    2. Open the QuickOSM plugin by clicking on the `Vector` menu -> `QuickOSM` -> 
-       `QuickOSM`
-    3. Click on `Quick query`.
-    4. In the table, add "amenity" as the key and "hospital" as the value. This 
-       query will return hospital data.
-    5. Click on the green plus icon to add another line to the table. In this 
-       line select “OR” in the small dropdown menu on the left-hand side of the 
-       new line
-    6. Add "healthcare" as a new key with "hospital" as the value. 
-    7. Below the table set the small dropdown menu to “Canvas Extent”
-    8. Click on `Run query`
-
-    ```{figure} /fig/en_quick_OSM_hospital_key.png
-    ---
-    width: 800px
-    align: center
-    name: QuickOSM hospital query
-    ---
-    QuickOSM hospital query
-    ```
-
-3. Check out the new layers in the layer panel. Open the attribute table of the 
-   point layer. Check the “healthcare” and “amenity” columns. Which data would be 
-   missing if you would have used only one of the keys?
-4. Do the same query for La Reunion which is to the southwest of Mauritius. 
-   Move the island in the middle of your map canvas and click `Run query`. Does 
-   the attribute table of this new point layer look different?
-5. What if we only want hospitals with an emergency room? In this case, we would 
-   need to build a query using a combination of the operators “OR” and “AND”. 
-   Look at the image below.
-
-    ```{figure} /fig/en_quick_OSM_hospital_emgerency_key.png
-    ---
-    width: 800px
-    align: center
-    name: QuickOSM hospital with emergency  query
-    ---
-    QuickOSM hospital with emergency  capacity query
-    ```
-
-<!-- SUGGESTION: This exercise is already long - suggest leaving out the hotels query -->
-6.	Now try to create a query that shows all accommodations like hotels on 
-   the island. To do that, use this [wiki page](https://wiki.openstreetmap.org/wiki/DE:Key:tourism). 
-   The solution can be found in the dropdown menu below.
-
-
-::::{dropdown}  Solution accommodation query
-
-```{figure} /fig/en_quick_OSM_accomedation_key.png
----
-width: 800px
-align: center
-name: QuickOSM accommodation query
----
-QuickOSM accommodation query
-```
-::::
-
-
