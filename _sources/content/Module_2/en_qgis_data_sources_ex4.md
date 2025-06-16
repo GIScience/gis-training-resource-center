@@ -12,26 +12,25 @@
 __Aim of the exercise:__
 ^^^
 
-This exercise aims to show two ways how to get OpenStreetMap(OSM) as a vector 
-file into QGIS. We will go through the workflow using Geofabrik, the HOT (Humanitarian OpenStreetMap Team) export tool and the QuickOSM QGIS-plugin.
+This exercise aims to show two ways how to get [OpenStreetMap (OSM)](https://www.openstreetmap.org) as a vector 
+file into QGIS. We will use the [HOT Export Tool](https://export.hotosm.org/v3/) to download specific data from Open
 
 :::
 
 ::::{grid} 2
 :::{grid-item-card}
-__Type of trainings exercise:__
-^^^
+__Larkana Flood Response Exercise Track__
 
-- This exercise can be used in online and presence training. 
+This exercise is part of the [Larkana Flood Response Exercise Track](https://giscience.github.io/gis-training-resource-center/content/Exercise_tracks/en_larkana_flood_response.html)
 
 :::
 
 :::{grid-item-card}
-__These skills are relevant for__
+__Competences covered in this exercise__
 ^^^ 
-
-- QGIS Essentials
-- Finding and downloading relevant datasets and preparing them for further analysis
+- Export OSM data using the HOT Export Tool.
+- Importing files into a QGIS project.
+- Adjusting the symbology of a layer.
 
 :::
 ::::
@@ -41,7 +40,7 @@ __These skills are relevant for__
 __Estimated time demand for the exercise__
 ^^^
 
-- The exercise takes around 2 hours to complete, depending on the number of participants and their familiarity with computer systems.
+- The exercise takes around 45 hours to complete and discuss, depending on the number of participants and their familiarity with computer systems.
 
 :::
 
@@ -103,9 +102,9 @@ Instead download the __standard folder structure__ [here](https://nexus.heigit.o
 
 ## Tasks
 
-OpenStreetMap (OSM) is a collaborative, open-source project that creates free, editable maps of the world, built by a global community of mappers. There are multiple different ways how to download or export data from OpenStreetMap (OSM), each with it's own advantage. In this exercise, we will go over the [HOT Export Tool](https://export.hotosm.org/v3/).
+OpenStreetMap (OSM) is a collaborative, open-source project that creates free, editable maps of the world, built by a global community of mappers. There are multiple different ways how to download or export data from OpenStreetMap (OSM), each with it's own advantage. In this exercise, we will go over the [HOT Export Tool](https://export.hotosm.org/v3/). [At the bottom of this exercise](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_data_sources_ex4.html#alternative-tools), you can find a list of alternative tools.
 
-### Task: Using the HOT Export Tool
+### Using the HOT Export Tool
 
 The [HOT Export Tool](https://export.hotosm.org/v3/) 
 is a tool for accessing OSM data offered by Humanitarian OpenStreetMap Team (HOT).
@@ -144,7 +143,7 @@ name: Hot Export tool download of Mauritius financial institutions
 Hot Export tool download of Mauritius financial institutions. Adapted screenshot from [HOT Export Tool](https://export.hotosm.org/v3/exports/new/describe)
 ```
 
-4. Load the new file in QGIS.
+4. [Import the new file in QGIS]().
 5. Arrange the layers on the map so you can see the new layer.
 6. (optional) Use the classification function to get a better overview to get a better 
    overview:
@@ -169,11 +168,13 @@ access to OSM data.
 |+ Query can easily be repeated | |
 
 
+## Alternative Tools
+
 `````{tip}
 
-The HOT Export Tool is a simple tool to use, but in some use cases, you might want to choose a different 
+The HOT Export Tool is a good way to export tailored OSM data for your personal use. However, in some use cases, you might want to choose a different tool such as Geofabrik, QuickOSM, or even just the humanitarian data exchange website. Below, you can find a short description of the tool and it's advantages. You can find out how to use the different tools step by step on [this wiki page](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_OpenStreetMap_wiki.html).
 
-::::{dropdown} Other methods
+::::{dropdown} Geofabrik, QuickOSM, HDX
 
 :::{card}
 __Geofabrik__

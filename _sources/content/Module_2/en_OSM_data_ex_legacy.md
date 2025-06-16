@@ -285,7 +285,7 @@ Have a look at both.
     QuickOSM hospital with emergency  capacity query
     ```
 
-<!-- SUGGESTION: This exercise is already long - suggest leaving out the hotels query -->
+<!-- SUGGESTION: This exercise is already long - suggest leaving out the hotels query 
 6.	Now try to create a query that shows all accommodations like hotels on 
    the island. To do that, use this [wiki page](https://wiki.openstreetmap.org/wiki/DE:Key:tourism). 
    The solution can be found in the dropdown menu below.
@@ -302,6 +302,7 @@ name: QuickOSM accommodation query
 QuickOSM accommodation query
 ```
 ::::
+-->
 
 | Advantages  |  Disadvantages |
 |---|---|

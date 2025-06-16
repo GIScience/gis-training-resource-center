@@ -29,10 +29,10 @@ understanding of where and how to access relevant data, and identify potential p
 
 ::::{grid} 2
 :::{grid-item-card}
-__Type of trainings exercise:__
+__Larkana Flood Response Exercise Track__
 ^^^
 
-- This exercise can be done in small groups presenting their work in a plenum at the end.
+This exercise is part of the [Larkana Flood Response Exercise Track](https://giscience.github.io/gis-training-resource-center/content/Exercise_tracks/en_larkana_flood_response.html).
 
 :::
 
@@ -57,7 +57,7 @@ __Estimated time demand for the exercise:__
 :::
 
 :::{grid-item-card}
-__Relevant Wiki articles__
+__Relevant Wiki articles and module chapters__
 ^^^
 
 * [QGIS Interface](/content/Wiki/en_qgis_interface_wiki.md)
@@ -65,6 +65,7 @@ __Relevant Wiki articles__
 * [Geodata Import in QGIS](/content/Wiki/en_qgis_import_geodata_wiki.md)
 * [Layer Concept](/content/Wiki/en_qgis_layer_concept_wiki.md)
 * [Geodata Classification - Graduated](/content/Wiki/en_qgis_graduated_wiki.md)
+* [Data Sources](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_data_sources.html)
 
 :::
 
