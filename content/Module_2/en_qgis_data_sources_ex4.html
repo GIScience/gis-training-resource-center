@@ -680,93 +680,13 @@ file into QGIS. We will go through the workflow using Geofabrik, the HOT (Humani
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover docutils">
 <div class="sd-card-body docutils">
 <p class="sd-card-text">Since the exercise is about finding data, there won’t be any data to download.
-Instead download the <strong>standard folder structure</strong> <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip">here</a> and insert your data as you download it.</p>
+Instead download the <strong>standard folder structure</strong> <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip">here</a> and save your data into the <code class="docutils literal notranslate"><span class="pre">data/input</span></code>-folder as you download it.</p>
 </div>
 <a class="sd-stretched-link reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip"></a></div>
 </section>
 <section id="tasks">
 <h2>Tasks<a class="headerlink" href="#tasks" title="Permalink to this heading">#</a></h2>
-<p>OpenStreetMap (OSM) is a collaborative, open-source project that creates free, editable maps of the world, built by a global community of mappers. There are multiple different ways how to download or export data from OpenStreetMap (OSM), each with it’s own advantage. In this exercise, we will go over the HOT export tool</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Depending on your use-case, you might only want very specific data from OSM, whereas in others, you might want to download almost all the regional OSM data.</p>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Other methods<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-header docutils">
-<p class="sd-card-text"><strong>Humanitarian Data Exchange (HOT Exports)</strong></p>
-</div>
-<div class="sd-card-body docutils">
-<p class="sd-card-text">A quick and easy way to get specific OSM data, such as the road network, or the locations of health facilities, is to search for the data on the <a class="reference external" href="https://data.humdata.org/">humanitarian data exchange (HDX)</a>.</p>
-<p class="sd-card-text">Here, the Humanitarian OpenStreetMap Team provides OSM exports for countries.</p>
-</div>
-</div>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-header docutils">
-<p class="sd-card-text"><strong>Geofabrik</strong></p>
-</div>
-<div class="sd-card-body docutils">
-<p class="sd-card-text">The <a class="reference external" href="https://download.geofabrik.de/">Geofabrik website</a> offers downloads for OSM data by regions. You can select a region of interest and download all the OSM data inside of that region. This is the most extensive method. We recommend using this method if you want to explore the OSM data or you need a lot of OSM data. However, if you only need specific data, such as roads, or settlement points, or buildings, it might be better to choose the HOT export tool or QuickOSM.</p>
-<table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p class="sd-card-text">Advantages</p></th>
-<th class="head"><p class="sd-card-text">Disadvantages</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p class="sd-card-text">+ Quick access to complete OSM datasets</p></td>
-<td><p class="sd-card-text">- If one is only interested in specific features or regions (other then countries), not optimal</p></td>
-</tr>
-<tr class="row-odd"><td><p class="sd-card-text">+ Very up-to-date OSM exports</p></td>
-<td><p class="sd-card-text">- Large file size</p></td>
-</tr>
-<tr class="row-even"><td><p class="sd-card-text">+ Clear documentation of which OSM features are contained in each shapefile</p></td>
-<td><p class="sd-card-text">- Only available as shapefile</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-header docutils">
-<p class="sd-card-text"><strong>QuickOSM</strong></p>
-</div>
-<div class="sd-card-body docutils">
-<p class="sd-card-text">The QuickOSM plugin allows you to load OSM data from inside your QGIS window. It is a quick and easy method, but requires the deepest knowledge about the OSM data model compared to the other options.<br />
-You will need to formulate a data query to find the data that you are looking for. To tailor your query based on the exact key and value you need there are two great resources:</p>
-<ol class="arabic simple">
-<li><p class="sd-card-text"><a class="reference external" href="https://wiki.openstreetmap.org/wiki/Main_Page">OSM Wiki</a>, and especially the
-<a class="reference external" href="https://wiki.openstreetmap.org/wiki/Map_features">Map features</a> article.</p></li>
-<li><p class="sd-card-text"><a class="reference external" href="https://taginfo.openstreetmap.org/">Taginfo</a></p></li>
-</ol>
-<p class="sd-card-text">This method has the advantage that you can specifically download the data that you need but you need to know how to formulate queries. To use QuickOSM, you have to <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html">install the QGIS plugin</a>.</p>
-<table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p class="sd-card-text">Advantages</p></th>
-<th class="head"><p class="sd-card-text">Disadvantages</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p class="sd-card-text">+ Query can be tailored for very specific data</p></td>
-<td><p class="sd-card-text">- Requires knowledge of OSM data model</p></td>
-</tr>
-<tr class="row-odd"><td><p class="sd-card-text">+ Data loads directly in QGIS</p></td>
-<td><p class="sd-card-text">- Building queries can quickly become complex</p></td>
-</tr>
-<tr class="row-even"><td><p class="sd-card-text">+ Query can easily be repeated</p></td>
-<td><p class="sd-card-text"></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</details></div>
+<p>OpenStreetMap (OSM) is a collaborative, open-source project that creates free, editable maps of the world, built by a global community of mappers. There are multiple different ways how to download or export data from OpenStreetMap (OSM), each with it’s own advantage. In this exercise, we will go over the <a class="reference external" href="https://export.hotosm.org/v3/">HOT Export Tool</a>.</p>
 <section id="task-using-the-hot-export-tool">
 <h3>Task: Using the HOT Export Tool<a class="headerlink" href="#task-using-the-hot-export-tool" title="Permalink to this heading">#</a></h3>
 <p>The <a class="reference external" href="https://export.hotosm.org/v3/">HOT Export Tool</a>
@@ -847,6 +767,86 @@ access to OSM data.</p>
 </tr>
 </tbody>
 </table>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The HOT Export Tool is a simple tool to use, but in some use cases, you might want to choose a different</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Other methods<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Geofabrik</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">The <a class="reference external" href="https://download.geofabrik.de/">Geofabrik website</a> offers downloads for OSM data by regions. You can select a region of interest and download all the OSM data inside of that region. This is the most extensive method. We recommend using this method if you want to explore the OSM data or you need a lot of OSM data. However, if you only need specific data, such as roads, or settlement points, or buildings, it might be better to choose the HOT export tool or QuickOSM.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Advantages</p></th>
+<th class="head"><p class="sd-card-text">Disadvantages</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">+ Quick access to complete OSM datasets</p></td>
+<td><p class="sd-card-text">- If one is only interested in specific features or regions (other then countries), not optimal</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">+ Very up-to-date OSM exports</p></td>
+<td><p class="sd-card-text">- Large file size</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">+ Clear documentation of which OSM features are contained in each shapefile</p></td>
+<td><p class="sd-card-text">- Only available as shapefile</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>QuickOSM</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">The QuickOSM plugin allows you to load OSM data from inside your QGIS window. It is a quick and easy method, but requires the deepest knowledge about the OSM data model compared to the other options.<br />
+You will need to formulate a data query to find the data that you are looking for. To tailor your query based on the exact key and value you need there are two great resources:</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text"><a class="reference external" href="https://wiki.openstreetmap.org/wiki/Main_Page">OSM Wiki</a>, and especially the
+<a class="reference external" href="https://wiki.openstreetmap.org/wiki/Map_features">Map features</a> article.</p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://taginfo.openstreetmap.org/">Taginfo</a></p></li>
+</ol>
+<p class="sd-card-text">This method has the advantage that you can specifically download the data that you need but you need to know how to formulate queries. To use QuickOSM, you have to <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html">install the QGIS plugin</a>.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Advantages</p></th>
+<th class="head"><p class="sd-card-text">Disadvantages</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">+ Query can be tailored for very specific data</p></td>
+<td><p class="sd-card-text">- Requires knowledge of OSM data model</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">+ Data loads directly in QGIS</p></td>
+<td><p class="sd-card-text">- Building queries can quickly become complex</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">+ Query can easily be repeated</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Humanitarian Data Exchange (HOT Exports)</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">A quick and easy way to get specific OSM data, such as the road network, or the locations of health facilities, is to search for the data on the <a class="reference external" href="https://data.humdata.org/">humanitarian data exchange (HDX)</a>.</p>
+<p class="sd-card-text">Here, the Humanitarian OpenStreetMap Team provides OSM exports for countries.</p>
+</div>
+</div>
+</div>
+</details></div>
 </section>
 </section>
 </section>

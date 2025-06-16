@@ -97,65 +97,13 @@ __Wrap up:__
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip
 
 Since the exercise is about finding data, there won't be any data to download. 
-Instead download the __standard folder structure__ [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip) and insert your data as you download it.
+Instead download the __standard folder structure__ [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip) and save your data into the `data/input`-folder as you download it.
 
 :::
 
 ## Tasks
 
-OpenStreetMap (OSM) is a collaborative, open-source project that creates free, editable maps of the world, built by a global community of mappers. There are multiple different ways how to download or export data from OpenStreetMap (OSM), each with it's own advantage. In this exercise, we will go over the HOT export tool 
-
-`````{note}
-Depending on your use-case, you might only want very specific data from OSM, whereas in others, you might want to download almost all the regional OSM data.
-
-::::{dropdown} Other methods
-
-:::{card}
-__Humanitarian Data Exchange (HOT Exports)__
-^^^
-A quick and easy way to get specific OSM data, such as the road network, or the locations of health facilities, is to search for the data on the [humanitarian data exchange (HDX)](https://data.humdata.org/).
-
-Here, the Humanitarian OpenStreetMap Team provides OSM exports for countries.
-
-:::
-
-:::{card}
-__Geofabrik__
-^^^
-The [Geofabrik website](https://download.geofabrik.de/) offers downloads for OSM data by regions. You can select a region of interest and download all the OSM data inside of that region. This is the most extensive method. We recommend using this method if you want to explore the OSM data or you need a lot of OSM data. However, if you only need specific data, such as roads, or settlement points, or buildings, it might be better to choose the HOT export tool or QuickOSM. 
-
-| Advantages  |  Disadvantages |
-|---|---|
-|+ Quick access to complete OSM datasets|- If one is only interested in specific features or regions (other then countries), not optimal|
-|+ Very up-to-date OSM exports|- Large file size|
-|+ Clear documentation of which OSM features are contained in each shapefile|- Only available as shapefile|
-
-:::
-
-
-:::{card}
-__QuickOSM__
-^^^
-The QuickOSM plugin allows you to load OSM data from inside your QGIS window. It is a quick and easy method, but requires the deepest knowledge about the OSM data model compared to the other options.  
-You will need to formulate a data query to find the data that you are looking for. To tailor your query based on the exact key and value you need there are two great resources: 
-
-1. [OSM Wiki](https://wiki.openstreetmap.org/wiki/Main_Page), and especially the 
-   [Map features](https://wiki.openstreetmap.org/wiki/Map_features) article. 
-2. [Taginfo](https://taginfo.openstreetmap.org/)
-
-This method has the advantage that you can specifically download the data that you need but you need to know how to formulate queries. To use QuickOSM, you have to [install the QGIS plugin](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html). 
-
-| Advantages  |  Disadvantages |
-|---|---|
-|+ Query can be tailored for very specific data|- Requires knowledge of OSM data model |
-|+ Data loads directly in QGIS|- Building queries can quickly become complex |
-|+ Query can easily be repeated | |
-
-:::
-
-::::
-`````
-
+OpenStreetMap (OSM) is a collaborative, open-source project that creates free, editable maps of the world, built by a global community of mappers. There are multiple different ways how to download or export data from OpenStreetMap (OSM), each with it's own advantage. In this exercise, we will go over the [HOT Export Tool](https://export.hotosm.org/v3/).
 
 ### Task: Using the HOT Export Tool
 
@@ -219,3 +167,56 @@ access to OSM data.
 |+ Many different data formats available|- Only fixed option for data selection|
 |+ Easy to use||
 |+ Query can easily be repeated | |
+
+
+`````{tip}
+
+The HOT Export Tool is a simple tool to use, but in some use cases, you might want to choose a different 
+
+::::{dropdown} Other methods
+
+:::{card}
+__Geofabrik__
+^^^
+The [Geofabrik website](https://download.geofabrik.de/) offers downloads for OSM data by regions. You can select a region of interest and download all the OSM data inside of that region. This is the most extensive method. We recommend using this method if you want to explore the OSM data or you need a lot of OSM data. However, if you only need specific data, such as roads, or settlement points, or buildings, it might be better to choose the HOT export tool or QuickOSM. 
+
+| Advantages  |  Disadvantages |
+|---|---|
+|+ Quick access to complete OSM datasets|- If one is only interested in specific features or regions (other then countries), not optimal|
+|+ Very up-to-date OSM exports|- Large file size|
+|+ Clear documentation of which OSM features are contained in each shapefile|- Only available as shapefile|
+
+:::
+
+
+:::{card}
+__QuickOSM__
+^^^
+The QuickOSM plugin allows you to load OSM data from inside your QGIS window. It is a quick and easy method, but requires the deepest knowledge about the OSM data model compared to the other options.  
+You will need to formulate a data query to find the data that you are looking for. To tailor your query based on the exact key and value you need there are two great resources: 
+
+1. [OSM Wiki](https://wiki.openstreetmap.org/wiki/Main_Page), and especially the 
+   [Map features](https://wiki.openstreetmap.org/wiki/Map_features) article. 
+2. [Taginfo](https://taginfo.openstreetmap.org/)
+
+This method has the advantage that you can specifically download the data that you need but you need to know how to formulate queries. To use QuickOSM, you have to [install the QGIS plugin](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html). 
+
+| Advantages  |  Disadvantages |
+|---|---|
+|+ Query can be tailored for very specific data|- Requires knowledge of OSM data model |
+|+ Data loads directly in QGIS|- Building queries can quickly become complex |
+|+ Query can easily be repeated | |
+
+:::
+
+:::{card}
+__Humanitarian Data Exchange (HOT Exports)__
+^^^
+A quick and easy way to get specific OSM data, such as the road network, or the locations of health facilities, is to search for the data on the [humanitarian data exchange (HDX)](https://data.humdata.org/).
+
+Here, the Humanitarian OpenStreetMap Team provides OSM exports for countries.
+
+:::
+
+::::
+`````
