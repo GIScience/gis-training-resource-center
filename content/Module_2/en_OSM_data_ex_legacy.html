@@ -62,7 +62,7 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'content/Module_2/en_qgis_data_sources_ex4';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/Module_2/en_OSM_data_ex_legacy';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -416,7 +416,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/GIScience/gis-training-resource-center/issues/new?title=Issue%20on%20page%20%2Fcontent/Module_2/en_qgis_data_sources_ex4.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/GIScience/gis-training-resource-center/issues/new?title=Issue%20on%20page%20%2Fcontent/Module_2/en_OSM_data_ex_legacy.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -446,7 +446,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/content/Module_2/en_qgis_data_sources_ex4.md" target="_blank"
+      <li><a href="../../_sources/content/Module_2/en_OSM_data_ex_legacy.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -543,6 +543,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions-for-the-trainers">Instructions for the trainers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-geofabrik">Task 1: Geofabrik</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-hot-export-tool">Task 2: HOT Export Tool</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-quickosm">Task 3: QuickOSM</a></li>
 </ul>
@@ -687,87 +688,72 @@ Instead download the <strong>standard folder structure</strong> <a class="refere
 </section>
 <section id="tasks">
 <h2>Tasks<a class="headerlink" href="#tasks" title="Permalink to this heading">#</a></h2>
-<p>OpenStreetMap (OSM) is a collaborative, open-source project that creates free, editable maps of the world, built by a global community of mappers. There are multiple different ways how to download or export data from OpenStreetMap (OSM), each with it’s own advantage. In this exercise, we will go over the HOT export tool</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Depending on your use-case, you might only want very specific data from OSM, whereas in others, you might want to download almost all the regional OSM data.</p>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Other methods<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-header docutils">
-<p class="sd-card-text"><strong>Humanitarian Data Exchange (HOT Exports)</strong></p>
-</div>
-<div class="sd-card-body docutils">
-<p class="sd-card-text">A quick and easy way to get specific OSM data, such as the road network, or the locations of health facilities, is to search for the data on the <a class="reference external" href="https://data.humdata.org/">humanitarian data exchange (HDX)</a>.</p>
-<p class="sd-card-text">Here, the Humanitarian OpenStreetMap Team provides OSM exports for countries.</p>
-</div>
-</div>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-header docutils">
-<p class="sd-card-text"><strong>Geofabrik</strong></p>
-</div>
-<div class="sd-card-body docutils">
-<p class="sd-card-text">The <a class="reference external" href="https://download.geofabrik.de/">Geofabrik website</a> offers downloads for OSM data by regions. You can select a region of interest and download all the OSM data inside of that region. This is the most extensive method. We recommend using this method if you want to explore the OSM data or you need a lot of OSM data. However, if you only need specific data, such as roads, or settlement points, or buildings, it might be better to choose the HOT export tool or QuickOSM.</p>
-<table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p class="sd-card-text">Advantages</p></th>
-<th class="head"><p class="sd-card-text">Disadvantages</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p class="sd-card-text">+ Quick access to complete OSM datasets</p></td>
-<td><p class="sd-card-text">- If one is only interested in specific features or regions (other then countries), not optimal</p></td>
-</tr>
-<tr class="row-odd"><td><p class="sd-card-text">+ Very up-to-date OSM exports</p></td>
-<td><p class="sd-card-text">- Large file size</p></td>
-</tr>
-<tr class="row-even"><td><p class="sd-card-text">+ Clear documentation of which OSM features are contained in each shapefile</p></td>
-<td><p class="sd-card-text">- Only available as shapefile</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-header docutils">
-<p class="sd-card-text"><strong>QuickOSM</strong></p>
-</div>
-<div class="sd-card-body docutils">
-<p class="sd-card-text">The QuickOSM plugin allows you to load OSM data from inside your QGIS window. It is a quick and easy method, but requires the deepest knowledge about the OSM data model compared to the other options.<br />
-You will need to formulate a data query to find the data that you are looking for. To tailor your query based on the exact key and value you need there are two great resources:</p>
+<p>OpenStreetMap (OSM) is a collaborative, open-source project that creates free, editable maps of the world, built by a global community of mappers. There are multiple different ways how to download or export data from OpenStreetMap (OSM), each with it’s own advantage. In this exercise, we will go over a few of these methods and discuss their advantages.</p>
+<!-- FIXME: This task needs more information. what is the user trying to achieve 
+   and why?
+   
+   ADD: Maybe a discussion step for each extraction method? in which scenarios would you choose which extraction method? -->
+<section id="task-1-geofabrik">
+<h3>Task 1: Geofabrik<a class="headerlink" href="#task-1-geofabrik" title="Permalink to this heading">#</a></h3>
+<p>The Geofabrik website offers downloads of OSM data by region.</p>
 <ol class="arabic simple">
-<li><p class="sd-card-text"><a class="reference external" href="https://wiki.openstreetmap.org/wiki/Main_Page">OSM Wiki</a>, and especially the
-<a class="reference external" href="https://wiki.openstreetmap.org/wiki/Map_features">Map features</a> article.</p></li>
-<li><p class="sd-card-text"><a class="reference external" href="https://taginfo.openstreetmap.org/">Taginfo</a></p></li>
+<li><p>Go to <strong><a class="reference external" href="https://download.geofabrik.de/">https://download.geofabrik.de/</a></strong> and navigate to the Mauritius<br />
+dataset by clicking on <code class="docutils literal notranslate"><span class="pre">Africa</span></code> -&gt; <code class="docutils literal notranslate"> <span class="pre">Mauritius</span></code></p></li>
+<li><p>Under <strong>Commonly Used Formats</strong> select the option <code class="docutils literal notranslate"><span class="pre">mauritius-latest-free.shp.zip</span></code>
+and download the file. Place it somewhere on your computer where you can find
+it again and unzip it.</p></li>
+<li><p>Check out the content of the folder. There are many different shapefiles,
+each containing one kind of OSM data. The whole list of layers and what they
+include can be found <a class="reference external" href="https://download.geofabrik.de/osm-data-in-gis-formats-free.pdf">here</a>.</p></li>
+<li><p>Open a new QGIS project and save it in the <code class="docutils literal notranslate"><span class="pre">project</span></code> folder of your exercise
+folder.</p></li>
+<li><p>Load the file <code class="docutils literal notranslate"><span class="pre">gis_osm_places_a_free_1.shp</span></code>. This polygon
+layer contains the boundaries of different features. Take some time to explore
+the data by using the attribute table.</p></li>
+<li><p>(Optional) You can select all features within the layer with the
+“fclass” = “island” and export them as a new layer.  This will allow you to
+start creating a map of the islands of Mauritius.</p></li>
+<li><p>Load the file <code class="docutils literal notranslate"><span class="pre">gis_osm_buildings_a_free_1.shp</span></code>. This polygon
+layer contains all buildings in Mauritius mapped on OSM. Take some time
+to explore the layer.</p></li>
+<li><p>Add a satellite base map by using the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#basemaps-from-quickmapservices-plugin">QuickMapServices plugin</a>
+to check if there are unmapped buildings.</p></li>
+<li><p>Load the file <code class="docutils literal notranslate"><span class="pre">gis_osm_landuse_a_free_1.shp</span></code>. Check out the
+dataset and use the classification function to get a better overview.</p>
+<ul class="simple">
+<li><p>Right-click on the layer <code class="docutils literal notranslate"><span class="pre">gis_osm_landuse_a_free_1</span></code> in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code>
+-&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. A new window will open up with a vertical tab section on
+the left. Navigate to the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> tab.</p></li>
+<li><p>On the top you find a dropdown menu. Open it and choose <code class="docutils literal notranslate"><span class="pre">Categorized</span></code>.
+Under <code class="docutils literal notranslate"><span class="pre">Value</span></code> select “fclass” (short for <em>featureclass</em>).</p></li>
+<li><p>Further down the window click on <code class="docutils literal notranslate"><span class="pre">Classify</span></code>.  You will see all unique
+values of the “fclass” column.  You can adjust the
+colours by double-clicking on one row in the central field. Once you are
+done, click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code> to close the symbology window.</p></li>
+</ul>
+</li>
 </ol>
-<p class="sd-card-text">This method has the advantage that you can specifically download the data that you need but you need to know how to formulate queries. To use QuickOSM, you have to <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html">install the QGIS plugin</a>.</p>
+<p>As you can see, Geofabrik is great if you want to get complete OSM datasets for
+whole countries or regions.</p>
 <table class="table">
 <thead>
-<tr class="row-odd"><th class="head"><p class="sd-card-text">Advantages</p></th>
-<th class="head"><p class="sd-card-text">Disadvantages</p></th>
+<tr class="row-odd"><th class="head"><p>Advantages</p></th>
+<th class="head"><p>Disadvantages</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p class="sd-card-text">+ Query can be tailored for very specific data</p></td>
-<td><p class="sd-card-text">- Requires knowledge of OSM data model</p></td>
+<tr class="row-even"><td><p>+ Quick access to complete OSM datasets</p></td>
+<td><p>- If one is only interested in specific features or regions (other then countries), not optimal</p></td>
 </tr>
-<tr class="row-odd"><td><p class="sd-card-text">+ Data loads directly in QGIS</p></td>
-<td><p class="sd-card-text">- Building queries can quickly become complex</p></td>
+<tr class="row-odd"><td><p>+ Very up-to-date OSM exports</p></td>
+<td><p>- Large file size</p></td>
 </tr>
-<tr class="row-even"><td><p class="sd-card-text">+ Query can easily be repeated</p></td>
-<td><p class="sd-card-text"></p></td>
+<tr class="row-even"><td><p>+ Clear documentation of which OSM features are contained in each shapefile</p></td>
+<td><p>- Only available as shapefile</p></td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-</div>
-</details></div>
+</section>
 <section id="task-2-hot-export-tool">
 <h3>Task 2: HOT Export Tool<a class="headerlink" href="#task-2-hot-export-tool" title="Permalink to this heading">#</a></h3>
 <p>The <a class="reference external" href="https://export.hotosm.org/v3/">HOT Export Tool</a>
@@ -930,7 +916,25 @@ Solution accommodation query<div class="sd-summary-down docutils">
 </figcaption>
 </figure>
 </div>
-</details></section>
+</details><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Advantages</p></th>
+<th class="head"><p>Disadvantages</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>+ Query can be tailored for very specific data</p></td>
+<td><p>- Requires knowledge of OSM data model</p></td>
+</tr>
+<tr class="row-odd"><td><p>+ Data loads directly in QGIS</p></td>
+<td><p>- Building queries can quickly become complex</p></td>
+</tr>
+<tr class="row-even"><td><p>+ Query can easily be repeated</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</section>
 </section>
 </section>
 
@@ -982,6 +986,7 @@ Solution accommodation query<div class="sd-summary-down docutils">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions-for-the-trainers">Instructions for the trainers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-geofabrik">Task 1: Geofabrik</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-hot-export-tool">Task 2: HOT Export Tool</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-quickosm">Task 3: QuickOSM</a></li>
 </ul>
