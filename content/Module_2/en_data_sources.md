@@ -8,10 +8,12 @@
 
 # Data sources
 
+
+
 To find the appropriate data you are looking for, you can search online data 
 sharing platforms. Some important ones are highlighted below. 
 
-__What to look out for when looking for data:__
+## What to look out for when looking for data:
 
 *Data source:* Always make sure to use data from trusted data sources. The 
 organisation that shared the data is the best indicator. Apart from that, use of 
@@ -34,15 +36,16 @@ up-to-date data available from another source.
 share it and how do you need to cite the data source? Make sure to check the 
 licensing and to follow the respective regulations to avoid difficulties.
 
-<!-- ADD: Would be nice to have a wiki page on licensing if possible -->
 
 ```{figure} /fig/en_data_sources_examples_cartong.png
 ---
 name: data sources examples
 width: 600 px
 ---
-The data to create maps or perform GIS analyses can come from various sources (Source: [CartONG]())
+The data to create maps or perform GIS analyses can come from various sources (Source: [CartONG](https://www.cartong.org/en/))
 ```
+
+## Overview of useful data repositories
 
 :::{dropdown} Overview of useful data repositories
 :open: 
