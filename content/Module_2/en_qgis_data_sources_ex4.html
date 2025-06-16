@@ -690,33 +690,47 @@ Instead download the <strong>standard folder structure</strong> <a class="refere
 <p>The <a class="reference external" href="https://export.hotosm.org/v3/">HOT Export Tool</a>
 is a tool for accessing OSM data offered by Humanitarian OpenStreetMap Team (HOT).
 HOT offers a browser-based tool to download OSM data with good options to specify
-region, time, feature type and data format.</p>
+region, time, feature type and data format.
+For our following analysis, we want to export the road network for the Larkana district in Pakistan.</p>
 <ol class="arabic simple">
 <li><p>Go to the HOT Export tool. To use the tool you need an OSM account. If you
 don’t have an account yet, you will need to create one. Click on <code class="docutils literal notranslate"><span class="pre">Log</span> <span class="pre">in</span></code>. In the new window
 select the option to create a new account.</p></li>
 <li><p>If you have an OSM account, you can log in directly into the HOT Export tool by
 clicking on <code class="docutils literal notranslate"><span class="pre">Log</span> <span class="pre">in</span></code>.</p></li>
-<li><p>In this example, we want to download all banking and finance features from OSM
-in Mauritius.</p>
-<ol class="arabic simple">
-<li><p>Select area or location: Zoom to Mauritius on the map or use the search
-bar. To mark the main island there are three options. You can draw a box,
-draw a polygon or upload a GeoJSON file with your boundaries. In this case,
-use one of the first two options to mark Mauritius.</p></li>
-<li><p>Name and description: give your export the name “Mauritius financial
-institutions” and add a short description of your export.</p></li>
-<li><p>Format tab: The HOT Export tool offers many data formats in which you can
-export data. Select GeoPackage (<code class="docutils literal notranslate"><span class="pre">.gpkg</span></code>) and leave the other
-options unchecked.</p></li>
-<li><p>Data tab: The easiest way to select the data you want to download is the Tag
-Tree. Since we want to download financial institutions, find the “Financial”
-category and select all options (ATM, Bank, Bureau de Change).</p></li>
-<li><p>Summary tab: Click on <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Export</span></code>. You will be forwarded to a page to
-wait until the export is finished. When the processing is finished, the
-page will show a download link for your file.</p></li>
+<li><p>Now we can start creating an OSM export. To do so, click on <code class="docutils literal notranslate"><span class="pre">Start</span> <span class="pre">Exporting</span></code>. You will be directed to the export tool.</p></li>
 </ol>
-</li>
+<figure class="align-default" id="hot-export-tool-1">
+<a class="reference internal image-reference" href="../../_images/en_m2_ex4_HOT_Export_Tool1.png"><img alt="../../_images/en_m2_ex4_HOT_Export_Tool1.png" src="../../_images/en_m2_ex4_HOT_Export_Tool1.png" style="width: 750pc;" /></a>
+</figure>
+<p>In the export tool, you have a map canvas on the right and an input area on the left. On the map canvas, you determine the geographic location of the data you want to export. On the left side you determine the metadata of the export, the file format, and select which data will be downloaded (e.g., buildings, roads, hospitals, settlements, etc.)</p>
+<ol class="arabic simple" start="4">
+<li><p>On the left side, give your Export a name such as <code class="docutils literal notranslate"><span class="pre">Larkana</span> <span class="pre">Roads</span> <span class="pre">export</span> <span class="pre">20250314</span></code> and add a short description of what you are intending to download. In our case, we want to download the road network for Larkana in Pakistan. You can enter a project if you wish (e.g. GIS Training).</p></li>
+</ol>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>There are two entries for Larkana in OpenStreetMap. One refers to the city, and the other to the district. Our area of interest is the <strong>district</strong>. We can choose the entry that has a larger box.
+Alternatively, once you zoomed into the area, you can draw a box or a polygon to select the area.</p>
+</div>
+</aside>
+<ol class="arabic simple" start="5">
+<li><p>On the map canvas, search for Larkana in the search bar and select the district. The map will zoom in to show the district. This will also select the district as our area of interest. You can see this by the blue polygon. Our export will only download data that is located within this area.</p></li>
+</ol>
+<figure class="align-default" id="hot-export-3">
+<a class="reference internal image-reference" href="../../_images/en_m2_ex_4_HOT_Export_Tool3.png"><img alt="../../_images/en_m2_ex_4_HOT_Export_Tool3.png" src="../../_images/en_m2_ex_4_HOT_Export_Tool3.png" style="width: 500px;" /></a>
+</figure>
+<ol class="arabic simple" start="6">
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Next</span></code>.</p></li>
+<li><p>Select the format you want to download. We recommend using GeoPackage <code class="docutils literal notranslate"><span class="pre">.gpkg</span></code> but GeoJSON and Shapefile are also fine. Click <code class="docutils literal notranslate"><span class="pre">Next</span></code>.</p></li>
+<li><p>Under the data tab, we can select the key values we are interested in. We want to download to download the road network so we have to open the dropdown under <code class="docutils literal notranslate"><span class="pre">Transportation</span></code> and check the box for <code class="docutils literal notranslate"><span class="pre">Roads</span></code></p></li>
+</ol>
+<figure class="align-default" id="hot-export-tool-5">
+<a class="reference internal image-reference" href="../../_images/en_m2_ex4_HOT_export_tool4.png"><img alt="../../_images/en_m2_ex4_HOT_export_tool4.png" src="../../_images/en_m2_ex4_HOT_export_tool4.png" style="width: 500px;" /></a>
+</figure>
+<ol class="arabic simple" start="9">
+<li><p>We are done adjusting the export. Click <code class="docutils literal notranslate"><span class="pre">Next</span></code>. A summary page will open. Click on <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Export</span></code>. Your new export will begin</p></li>
 </ol>
 <figure class="align-center" id="hot-export-tool-download-of-mauritius-financial-institutions">
 <a class="reference internal image-reference" href="../../_images/en_Hot_Export.png"><img alt="../../_images/en_Hot_Export.png" src="../../_images/en_Hot_Export.png" style="width: 800px;" /></a>
@@ -725,7 +739,7 @@ page will show a download link for your file.</p></li>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="4">
-<li><p><span class="xref myst">Import the new file in QGIS</span>.</p></li>
+<li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html">Import the new file into your QGIS project</a>.</p></li>
 <li><p>Arrange the layers on the map so you can see the new layer.</p></li>
 <li><p>(optional) Use the classification function to get a better overview to get a better
 overview:</p>
