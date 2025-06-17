@@ -175,7 +175,6 @@ Hot Export tool download of Mauritius financial institutions. Adapted screenshot
 ```
 
 ::::{dropdown} Bonus Exercise
-:class: tip
 
 In the next exercise of the Larkana Flood Response Exercise track, we want to identify health facilities located in Larkana. Can you think of a way to export health facilities using the HOT Export Tool?
 
