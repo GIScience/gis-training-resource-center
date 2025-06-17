@@ -4,11 +4,6 @@
 :link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
-:::{grid-item-card}
-:class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_module_2_exercises.html 
-{octicon}`undo;1.5em;sd-text-danger`
-:::
 ::::
 
 # Exercise 3: Data sources
@@ -37,7 +32,7 @@ This exercise is part of the [Larkana Flood Response Exercise Track](https://gis
 :::
 
 :::{grid-item-card}
-__These skills are relevant for__
+__Competences covered in this exercise__
 ^^^ 
 
 - QGIS essentials
@@ -122,15 +117,24 @@ Standard folder structure. Source: HeiGIT
 ```
 ::::
 
-### Tasks
+### Task 1: Download the administrative boundaries and healthsites for Pakistan 
 
-The objective of this exercise is to find out how many hospitals are located in **Bolivia** and how they are distributed across the country. 
+For our flood response map, we will need a few datasets from the web. In this exercise, we will be looking for the __administrative boundaries__ of Pakistan, the __healthsites__, as well as the __flood extent__ of the flood in Pakistan in 2024. 
+First, let us set up a new QGIS project along with the standard folder structure: 
+
+::::{margin}
+:::{tip}
+Take a look at the standard folder structure and save the QGIS project file in the correct place.
+:::
+::::
 
 1. Download the folder structure and unzip it.
 2. Create a copy of the folder structure and name the folder `module_2_exercise_3_data_sources`.
 3. Open a new QGIS project and save it into the folder. 
 
-4. Find a data source to download the **administrative boundaries** and **healthsites** of Bolivia. The following instructions are designed for the example of Bolivia. If you wish to perform the same analysis for another country, some instructions may differ, but the general workflow will remain the same.
+Now that we have the QGIS project set up, we can start looking for the datasets
+
+4. Find a data source to download the **administrative boundaries** and **healthsites** of Pakistan. The following instructions are designed for the example of Pakistan. If you wish to perform the same analysis for another country, some instructions may differ, but the general workflow will remain the same.
 
 :::{dropdown} Possible data sources
 
@@ -139,7 +143,11 @@ There are many different data repositories on the web where you can find suitabl
 For most humanitarian data, you can search on the __[Humanitarian Data Exchange/HDX](https://data.humdata.org/)__
 The Humanitarian Data Exchange (HDX) is a primary platform for accessing and sharing geospatial data relevant to humanitarian crises. It's a centralized repository offering a wide range of datasets from various sources, making it an invaluable resource for aid organizations and researchers.
 
+:::
 
+:::{admonition} Which data format to choose
+
+Most datasets on HDX are available in various dataformats such as xlsx, csv, shapefile, or GeoJSON. We are looking for spatial data that we can use in QGIS, so we will need a spatial data format such as `.shp` (Shapefile), `.gpkg` (GeoPackage), `.geojson` (GeoJSON), or `.gdb` (GeoDatabase)
 
 :::
 
@@ -147,15 +155,18 @@ The Humanitarian Data Exchange (HDX) is a primary platform for accessing and sha
    that are being used, instead of just examples. Can we just ask people to use these
    datasets, so that the rest of the instructions make sense? -->
 
-5. Download the data and save the **administrative boundaries** as `bolivia_adm` and the **healthsites** `healthsites_bolivia` into the `data\input` folder.
+5. Download the data and save the **administrative boundaries** and the **healthsites** into the `data\input` folder.
 
 ```{Note}
-
-Make sure to only use the point data from the healthsites dataset. Other data shapes such as lines or polygons can be 
-ignored in this example. Depending on the data source, information can be provided as points, but also as lines or 
+Make sure to only use the point data from the healthsites dataset. Other data shapes such as lines or polygons can be ignored in this example. Depending on the data source, information can be provided as points, but also as lines or 
 polygons.
-
 ```
+
+::::{margin}
+:::{tip}
+Most of the times, the datasets you download from the web are compressed as `.zip`-files. Before you can use them in QGIS, __you need to unzip the datasets__.
+:::
+::::
 
 6. [Load both vector files into QGIS](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept.html#data-import).
 
@@ -165,8 +176,6 @@ polygons.
 
 8. Familiarise yourself with the data by opening the attribute table and identify the different types of healthcare that are included in the dataset. Get an overview of the information that is stored in each column. For example, there could be information indicating the type of healthsite.
 
-<!--ADD: Context: Having this exercise in the 
-   context of a scenario could help with things like this --> 
 
 9. If your dataset contains information about the type of healthsite (e.g. clinic, hospital, doctor, etc.), we can extract these and save them in a new layer. We can do this by selecting the hospitals and then copying them to a new layer.
 
@@ -176,11 +185,22 @@ For information on how to easily filter your data by manually selecting features
 
 ```
 
+### Task 2: Download the flood extent for Pakistan for August 2024
+
+Now, let us download the flood extent for Pakistan from the 8 to 12 August 2024.
+
+Go back to the humanitarian data exchange and search for __"Pakistan Flood"__. You will find a list of datasets containing the satellite detected water extents for different periods. Choose the dataset with the title __"Satellite detected water extents from 08 to 12 August 2024 over Pakistan"__ and download the shapefile. 
+
+
+
+<!---
 10. To view only the selected features (hospitals) and apply the filtering, we can first display these features in the attribute table by clicking on `Show Selected Features` in the bottom left corner, and then export only the selected features and save them as `hospitals_bolivia` in your `data\output` folder.
 
 11. Save your project and display your results. Ensure that both the country of Bolivia and the hospitals are visible.
 
+-->
 
+<!---
 ### Result
 
 ```{figure} /fig/en_result_data_sources_exercise.png
@@ -192,6 +212,7 @@ Your map could look like this when you have finished the exercise.
 ```
 
 The distribution of hospitals across Bolivia is uneven. It is noticeable that there are significantly less hospitals in the northern and eastern parts of Bolivia.
+-->
 
 <!-- FIXME: if the aim of the exercise is to understand the distribution of hospitals
    in Bolivia, this should be clear in the introduction so that people can understand
