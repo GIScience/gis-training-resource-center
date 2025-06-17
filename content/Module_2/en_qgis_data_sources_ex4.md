@@ -174,13 +174,10 @@ name: Hot Export tool download of Mauritius financial institutions
 Hot Export tool download of Mauritius financial institutions. Adapted screenshot from [HOT Export Tool](https://export.hotosm.org/v3/exports/new/describe)
 ```
 
-::::{dropdown} Bonus Exercise
-
+::::{dropdown} Bonus Exercise!
+:class: tip
 In the next exercise of the Larkana Flood Response Exercise track, we want to identify health facilities located in Larkana. Can you think of a way to export health facilities using the HOT Export Tool?
 
-:::{dropdown} Solution
-You can download the health facilities by checking the `Healthcare` option.
-:::
 ::::
 
 4. [Import the new file into your QGIS project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html).
@@ -255,7 +252,7 @@ __Humanitarian Data Exchange (HOT Exports)__
 ^^^
 A quick and easy way to get specific OSM data, such as the road network, or the locations of health facilities, is to search for the data on the [humanitarian data exchange (HDX)](https://data.humdata.org/).
 
-Here, the Humanitarian OpenStreetMap Team provides OSM exports for countries.
+Here, the Humanitarian OpenStreetMap Team provides OSM exports for countries. The disadvantage of this method is that since the exports are for countries, the datasets are generally quite large and difficult to handle with QGIS. 
 
 :::
 
