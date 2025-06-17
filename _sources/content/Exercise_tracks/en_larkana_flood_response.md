@@ -23,7 +23,7 @@ __Module 2 Exercise 3: Data Sources__
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_data_sources_ex3.html
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_data_sources_ex4.html
 __Module 2 Exercise 4: Exporting OSM Data__
 ^^^
 - Export OSM Data using the HOT Export Tool
