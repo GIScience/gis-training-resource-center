@@ -188,13 +188,13 @@ You can download the health facilities by checking the `Healthcare` option.
 5. Arrange the layers on the map so you can see the new layer.
 6. (optional) Use the classification function to get a better overview to get a better 
    overview:
-    * Right-click on the layer `Mauritius_finical_institution` in the `Layer Panel` 
+    * Right-click on the layer `Larkana_Roads` in the `Layer Panel` 
       -> `Properties`. A new window will open up with a vertical tab section on 
       the left. Navigate to the `Symbology` tab.
     * On the top you find a dropdown menu. Open it and choose `Categorized`. 
-      Under `Value` select “amenity”.
+      Under `Value` select "highway".
     * Further down the window click on `Classify`.  Now you should see all unique 
-      values or attributes of the selected “fclass” column.  You can adjust the 
+      values or attributes of the selected column.  You can adjust the 
       colours by double-clicking on one row in the central field. Once you are 
       done, click `Apply` and `OK` to close the symbology window.
 
