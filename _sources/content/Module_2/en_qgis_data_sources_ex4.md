@@ -171,11 +171,10 @@ width: 800px
 align: center
 name: Hot Export tool download of Mauritius financial institutions
 ---
-Hot Export tool download of Mauritius financial institutions. Adapted screenshot from [HOT Export Tool](https://export.hotosm.org/v3/exports/new/describe)
 ```
 
 ::::{dropdown} Bonus Exercise!
-:class: tip
+
 In the next exercise of the Larkana Flood Response Exercise track, we want to identify health facilities located in Larkana. Can you think of a way to export health facilities using the HOT Export Tool?
 
 ::::
