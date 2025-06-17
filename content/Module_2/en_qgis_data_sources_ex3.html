@@ -771,7 +771,15 @@ polygons.</p>
 <section id="task-2-download-the-flood-extent-for-pakistan-for-august-2024">
 <h3>Task 2: Download the flood extent for Pakistan for August 2024<a class="headerlink" href="#task-2-download-the-flood-extent-for-pakistan-for-august-2024" title="Permalink to this heading">#</a></h3>
 <p>Now, let us download the flood extent for Pakistan from the 8 to 12 August 2024.</p>
-<p>Go back to the humanitarian data exchange and search for <strong>“Pakistan Flood”</strong>. You will find a list of datasets containing the satellite detected water extents for different periods. Choose the dataset with the title <strong>“Satellite detected water extents from 08 to 12 August 2024 over Pakistan”</strong> and download the shapefile.</p>
+<ol class="arabic simple">
+<li><p>Go back to the humanitarian data exchange and search for <strong>“Pakistan Flood”</strong>. You will find a list of datasets containing the satellite detected water extents for different periods.</p></li>
+<li><p>Choose the dataset with the title <strong>“Satellite detected water extents from 08 to 12 August 2024 over Pakistan”</strong> and download the zip-folder.</p></li>
+<li><p>Unzip the folder and look at it’s content. There are a few different shapefiles. We are looking for the <strong>minimum flood extent</strong>. Locate the files called <code class="docutils literal notranslate"><span class="pre">VIIRS_20240721_20240803_MinimumFloodExtent_PAK</span></code> and copy them to the <code class="docutils literal notranslate"><span class="pre">data\input</span></code>-folder.</p></li>
+</ol>
+<div class="attention admonition">
+<p class="admonition-title">Working with shapefiles</p>
+<p>Shapefiles consist of several files (<code class="docutils literal notranslate"><span class="pre">.shp</span></code>, <code class="docutils literal notranslate"><span class="pre">.shx</span></code>, <code class="docutils literal notranslate"><span class="pre">.sbx</span></code>, <code class="docutils literal notranslate"><span class="pre">.sbn</span></code>, <code class="docutils literal notranslate"><span class="pre">.prj</span></code>, <code class="docutils literal notranslate"><span class="pre">cpg</span></code>). In order to copy the entire shapefile to the new location, <strong>make sure to copy all the files with the exact name to the new folder</strong>.</p>
+</div>
 <!---
 10. To view only the selected features (hospitals) and apply the filtering, we can first display these features in the attribute table by clicking on `Show Selected Features` in the bottom left corner, and then export only the selected features and save them as `hospitals_bolivia` in your `data\output` folder.
 
