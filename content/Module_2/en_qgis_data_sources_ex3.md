@@ -189,9 +189,15 @@ For information on how to easily filter your data by manually selecting features
 
 Now, let us download the flood extent for Pakistan from the 8 to 12 August 2024.
 
-Go back to the humanitarian data exchange and search for __"Pakistan Flood"__. You will find a list of datasets containing the satellite detected water extents for different periods. Choose the dataset with the title __"Satellite detected water extents from 08 to 12 August 2024 over Pakistan"__ and download the shapefile. 
+1. Go back to the humanitarian data exchange and search for __"Pakistan Flood"__. You will find a list of datasets containing the satellite detected water extents for different periods. 
+2. Choose the dataset with the title __"Satellite detected water extents from 08 to 12 August 2024 over Pakistan"__ and download the zip-folder. 
+3. Unzip the folder and look at it's content. There are a few different shapefiles. We are looking for the __minimum flood extent__. Locate the files called `VIIRS_20240721_20240803_MinimumFloodExtent_PAK` and copy them to the `data\input`-folder. 
 
+:::{admonition} Working with shapefiles
+:class: attention
+Shapefiles consist of several files (`.shp`, `.shx`, `.sbx`, `.sbn`, `.prj`, `cpg`). In order to copy the entire shapefile to the new location, __make sure to copy all the files with the exact name to the new folder__. 
 
+:::
 
 <!---
 10. To view only the selected features (hospitals) and apply the filtering, we can first display these features in the attribute table by clicking on `Show Selected Features` in the bottom left corner, and then export only the selected features and save them as `hospitals_bolivia` in your `data\output` folder.
