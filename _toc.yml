@@ -84,6 +84,7 @@ parts:
           - file: content/Wiki/en_qgis_basemaps_wiki.md
           - file: content/Wiki/en_qgis_plugins_wiki.md
           - file: content/Wiki/en_qgis_data_sources_wiki.md
+          - file: content/Wiki/en_licensing_data.md
       - file: content/Wiki/en_qgis_geodata_wiki.md
         sections:
           - file: content/Wiki/en_qgis_geodata_types_wiki.md      
