@@ -545,6 +545,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preparation">Preparation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-geolocate-security-related-information-of-the-last-days">Task 1: Geolocate security-related information of the last days</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-load-excel-file-containing-conflict-data-into-qgis">Task 2: Load Excel File containing conflict data into QGIS</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-mpi-data">Task 3: MPI data</a></li>
@@ -568,13 +569,6 @@ document.write(`
 </div>
 <a class="sd-stretched-link reference external" href="https://giscience.github.io/gis-training-resource-center/content/intro.html"></a></div>
 </div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center sd-rounded-circle docutils">
-<div class="sd-card-body docutils">
-<p class="sd-card-text"><a href="#id1"><span class="problematic" id="id2">:octicon:`undo;1.5em;sd-text-danger`</span></a></p>
-</div>
-<a class="sd-stretched-link reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_module_5_exercises.html"></a></div>
-</div>
 </div>
 </div>
 <section class="tex2jax_ignore mathjax_ignore" id="exercise-4-security-peshawar">
@@ -584,6 +578,15 @@ document.write(`
 <p class="sd-card-text"><strong>Aim of the exercise:</strong></p>
 </div>
 <div class="sd-card-body docutils">
+<p class="sd-card-text">In this exercise, we will create a security map for a humanitarian team. In response to a recent cholera outbreak in Khyber Pakhtunkhwa (KP), the Pakistan Red Crescent Society (PRCS) and other Partner National Societies (PNS) have mobilized a team to this region. The primary objective of the team is to conduct a comprehensive assessment on the ground and facilitate coordination for any necessary future responses.</p>
+<p class="sd-card-text">In order to ensure the safety of our team, we will create a map displaying security related information such as bomb threats. Additionally, we will take a look at data on armed conflicts and create an overview map showing the conflicts per thesil (subdistrict/ADM3).</p>
+<p class="sd-card-text">In order to achieve this, we will use more advanced geoprocessing tools such as buffers and intersection tools and join two datasets using attribute table joins.</p>
+<p class="sd-card-text">The exercise is split into <strong>three tasks</strong>:</p>
+<ul class="simple">
+<li><p class="sd-card-text">In the first task, we will digitise security-related information as point data and create buffer zones to indicate high-risk zones.</p></li>
+<li><p class="sd-card-text">In the second task, we will load a csv-file with data on conflict events that happened in Pakistan. We will use this dataset to find out the number of conflict events per thesil (subdistrict).</p></li>
+<li><p class="sd-card-text">In the third task, we will load another csv-file with data on the multi-poverty-index (MPI) per district (ADM2). The Multidimensional Poverty Index (MPI) measures poverty by looking at more than just income. It includes things like education, health, and living standards to understand how people are poor in different ways. The csv-file does not contain explicit spatial information. We will add spatial information by joining it to a polygon layer containing the district boundaries.</p></li>
+</ul>
 </div>
 </div>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
@@ -591,12 +594,11 @@ document.write(`
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-header docutils">
-<p class="sd-card-text"><strong>Type of trainings exercise:</strong></p>
+<p class="sd-card-text"><strong>Larkana Flood Response Exercise Track:</strong></p>
 </div>
 <div class="sd-card-body docutils">
-<ul class="simple">
-<li><p class="sd-card-text">This exercise can be used in online and presence training.</p></li>
-</ul>
+<p class="sd-card-text">This exercise is part of the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Exercise_tracks/en_larkana_flood_response.html">Larkana Flood Response Exercise Track</a>.</p>
+<p class="sd-card-text">However, the exercise <strong>can</strong> be done without completing the previous exercises.</p>
 </div>
 </div>
 </div>
@@ -727,6 +729,12 @@ document.write(`
 </table>
 </section>
 </section>
+<section id="preparation">
+<h2>Preparation<a class="headerlink" href="#preparation" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Create a new QGIS project and save it into the exercise folder.</p></li>
+</ul>
+</section>
 <section id="task-1-geolocate-security-related-information-of-the-last-days">
 <h2>Task 1: Geolocate security-related information of the last days<a class="headerlink" href="#task-1-geolocate-security-related-information-of-the-last-days" title="Permalink to this heading">#</a></h2>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
@@ -734,23 +742,33 @@ document.write(`
 <div class="sd-card-title sd-font-weight-bold docutils">
 Context:</div>
 <p class="sd-card-text">In response to a recent cholera outbreak in Khyber Pakhtunkhwa (KP), the Pakistan Red Crescent Society (PRCS) and other Partner National Societies (PNS) have mobilized a team to this region. The primary objective of the team is to conduct a comprehensive assessment on the ground and facilitate coordination for any necessary future responses.
-The team will be staying at the “Roomy Crossroad Hotel Peshawar” during their mission in the affected area.</p>
+The team will be staying at the “Roomy Crossroad Hotel Peshawar” during their mission in the affected area.
+We have received security-related information from various sources. Our task is to digitise this information into spatial data that can be represented on a map.</p>
 </div>
 </div>
+<p>For this exercise, we will be using the <strong>plugin “QuickMapService”</strong> to locate places precisely. The QuickMapServices plugins allows you to easily add basemaps or other map services as a layer to your QGIS-project. To <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html#installation-of-plugins">install the plugin</a>:</p>
 <ol class="arabic simple">
-<li><p>We will use the plugin in “Quick Map Service” to locate places precisely.
-To install the plugin click on <code class="docutils literal notranslate"><span class="pre">Plugins</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Manage</span> <span class="pre">and</span> <span class="pre">Install</span> <span class="pre">Plugins…</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">All</span></code> and search for <code class="docutils literal notranslate"><span class="pre">Quick</span> <span class="pre">Map</span> <span class="pre">Service</span></code>. Once you have found it, click on it and click <code class="docutils literal notranslate"><span class="pre">Install</span> <span class="pre">Plugin</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html#installation-of-plugins">Wiki Video</a>).</p></li>
-<li><p>Open the plugin by clicking on <code class="docutils literal notranslate"><span class="pre">Web</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Quick</span> <span class="pre">Map</span> <span class="pre">Service</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">ESRI</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">ESRI</span> <span class="pre">Satellite</span></code>. Now you should have a Settelite image base map in your <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code>.</p></li>
-<li><p>Add the <code class="docutils literal notranslate"><span class="pre">Google</span> <span class="pre">Road</span></code> base map from the <code class="docutils literal notranslate"><span class="pre">Quick</span> <span class="pre">Map</span> <span class="pre">Service</span></code> as well (see <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#basemaps-from-quickmapservices-plugin">wiki</a>).</p></li>
-<li><p>Place the <code class="docutils literal notranslate"><span class="pre">Google</span> <span class="pre">Road</span></code> above the satellite image map and turn the layer transparent by opening the layer properties and navigating to the <strong>Transparency</strong> tab and adjusting the global opacity.</p></li>
-<li><p>You will need the plugin “Lat Lon tools” to locate the coordinates you receive from the field. To install the plugin click on <code class="docutils literal notranslate"><span class="pre">Plugins</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Manage</span> <span class="pre">and</span> <span class="pre">Install</span> <span class="pre">Plugins…</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">All</span></code> and search for <code class="docutils literal notranslate"><span class="pre">Lat</span> <span class="pre">Lon</span> <span class="pre">tools</span></code>. Once you have found it, click on it and click <code class="docutils literal notranslate"><span class="pre">Install</span> <span class="pre">Plugin</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html#installation-of-plugins">Wiki Video</a>).</p></li>
+<li><p>In the menu bar, click on <code class="docutils literal notranslate"><span class="pre">Plugins</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Manage</span> <span class="pre">and</span> <span class="pre">Install</span> <span class="pre">Plugins...</span></code>. A new window will open.</p></li>
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">All</span></code>, search for “QuickMapServices”. Click on it and select <code class="docutils literal notranslate"><span class="pre">Install</span> <span class="pre">Plugin</span></code> in the bottom right corner.</p></li>
 </ol>
-<p>Now you have all the information you need to start digitizing the known incidents and related areas of interest (as polygons). To find the locations, check the information from the field below and capture it. Use Google in your browser, the base maps and the Lat Lon tools plugin to locate the exact positions.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>When creating the point and polygon layer use the CRS UTM 42 N <strong>EPSG: 32642</strong></p>
-</div>
-<p>In case the information states an exact area, create a new polygon layer and map it exactly.</p>
+<p>After installing the plugin, we can add basemaps:</p>
+<ol class="arabic simple" start="3">
+<li><p>In the menu bar, navigate to <code class="docutils literal notranslate"><span class="pre">Web</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">QuickMapServices</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">ESRI</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">ESRI</span> <span class="pre">Satellite</span></code>. This will add Satellite image basemap in your <strong>Layer panel</strong>.</p></li>
+<li><p>Let us also add a roads layer to make the orientation easier: <code class="docutils literal notranslate"><span class="pre">Web</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">QuickMapServices</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Google</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Google</span> <span class="pre">Road</span></code>.</p></li>
+<li><p>In the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html">layers panel</a>, make sure the <code class="docutils literal notranslate"><span class="pre">Google</span> <span class="pre">Road</span></code> layer is above the satellite imagery.</p></li>
+<li><p>For easier navigation, make the satellite imagery transparent by navigating to the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel">symbology tab</a> and adjusting the global opacity.</p></li>
+</ol>
+<!---
+:::{dropdown} Video: Adjusting the global opacity
+
+
+:::
+-->
+<ol class="arabic simple" start="7">
+<li><p>We will be needing the plugin <strong>“Lat Lon Tools”</strong> to locate the coordinates we receive from the field. To <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html#installation-of-plugins">install the plugin</a>, follow the same instructions as for the QuickMapServices plugin but search for “Lat Lon Tools” instead.</p></li>
+</ol>
+<p>Great, now we have set up our QGIS-project and can start to digitise the known incidents and related areas of interest (as polygons).
+Below, you will find a table with the information and locations. Read through the table once and think about what kind of geometry type can represent the information.</p>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p>Number</p></th>
@@ -778,22 +796,79 @@ To install the plugin click on <code class="docutils literal notranslate"><span 
 </tr>
 </tbody>
 </table>
-<p>The current SOP states that the sides of recent violent incidents are to be avoided in a 1 km radius. To reflect this on the map, we will use the buffer tool.</p>
-<ol class="arabic simple" start="6">
-<li><p>Create a <img alt="" src="../../_images/mAlgorithmBuffer.png" /> buffer around the points of violent incidents with a distance of <code class="docutils literal notranslate"><span class="pre">2.000</span> <span class="pre">meters</span></code>. See the Wiki entry on <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html">Geoprocessing</a> for further information.</p></li>
-<li><p>Next, merge the no-go areas polygon layer and the buffer point layer.
-Use the tool <code class="docutils literal notranslate"><span class="pre">Merge</span> <span class="pre">vector</span> <span class="pre">layer</span></code>.</p></li>
-<li><p>Clip the newly created polygon out of the AOI to create a “Green” area in which the team are allowed to travel. Use the tool <code class="docutils literal notranslate"><span class="pre">Symmetrical</span> <span class="pre">difference</span></code>.</p></li>
+<p>In order to digitise the information, we will need two new layers: A point layer and a polygon layer.
+In case the information states an exact area, create a new polygon layer and map it exactly.</p>
+<ol class="arabic simple" start="8">
+<li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_digitalisation.html#creating-new-datasets">Create a new point and a new polygon layer</a></p></li>
 </ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>When creating the point and polygon layer use the CRS UTM 42 N <strong>EPSG: 32642</strong>. This Coordinate reference system is ideal for Pakistan and the <strong>units of measurement are in meters</strong>.</p>
+</div>
+<ol class="arabic simple" start="9">
+<li><p>Find the locations from the table and create new features using the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_digitalisation.html#digitisation-toolbars">digitisation toolbar</a>. Capture the information in the table and Use Google or another search engine in your browser, the base map, and the Lat Lon Tools plugin to locate the exact position.</p></li>
+<li><p>Once you are done, make sure to save the edits to your layers by clicking on the <img alt="" src="../../_images/3.44_digitisation_save_edits.png" /> <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Layer</span> <span class="pre">Edits</span></code>-button.</p></li>
+</ol>
+<p>Great, we have successfully digitised the important security information. However, to make the information useful, we need to process the geodata.</p>
+<p>The current SOP states that the sides of recent violent incidents are to be avoided in a 1 km radius. To reflect this on the map, we will use the <img alt="" src="../../_images/mAlgorithmBuffer.png" /> buffer tool.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>{admonition} Reminder
+:class: tldr</p>
+<p>If you see a <img alt="" src="../../_images/3.44_caution_symbol.png" />-symbol next to the <code class="docutils literal notranslate"><span class="pre">Distance</span></code> parameter, this means that the layer you want to buffer is in a geographic coordinate reference system. This means the units of measurements are in <strong>degrees, and not in meters</strong>. If that is the case, you need to <span class="xref myst">reproject your layer</span> into a metric coordinate reference system.</p>
+<p>Tip: EPSG:32642 is an ideal CRS for Pakistan.</p>
+</aside>
+<ol class="arabic simple" start="6">
+<li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html">Create a buffer around the points</a> of violent incidents with a distance of <strong>2.000 meters</strong>.</p></li>
+<li><p>We now have two polygon layers (the point buffers and the digitised areas). In order to visualise the No-Go Area in Peshwar, we can merge the polygons from both layers into a single layer with the tool <code class="docutils literal notranslate"><span class="pre">Merge</span> <span class="pre">vector</span> <span class="pre">layer</span></code> and select both layers we want to merge as inputs.</p></li>
+<li><p>Load the layer <code class="docutils literal notranslate"><span class="pre">AOI_Peshawar.gpkg</span></code> into your project.</p></li>
+</ol>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>There are several clipping algorithms to be found in the toolbox. Make sure to choose the <img alt="" src="content/Module_5/3.44_clip_vector.png" /> clipping tool grouped under “Vector overlay”.</p>
+</div>
+</aside>
+<ol class="arabic simple" start="9">
+<li><p>We want to create a polygon indicating the safe area where the team is allowed to travel. To do this, we need to “invert” the polygon. We can achieve this by using the tool <code class="docutils literal notranslate"><span class="pre">Symmetrical</span> <span class="pre">difference</span></code>:</p>
+<ul class="simple">
+<li><p>In the processing toolbox, search for the tool “Symmetrical difference” and open it.</p></li>
+<li><p>As <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Layer</span></code>, select your layer containing the security information.</p></li>
+<li><p>As <code class="docutils literal notranslate"><span class="pre">Overlay</span> <span class="pre">Layer</span></code>, select the layer <code class="docutils literal notranslate"><span class="pre">AOI_Peshawar.gpkg</span></code>.</p></li>
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">Symmetrical</span> <span class="pre">Difference</span></code>, click on <code class="docutils literal notranslate"><span class="pre">...</span></code> and navigate to the <code class="docutils literal notranslate"><span class="pre">data/results/</span></code>-folder for this exercise and save the layer.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Run</span></code>.</p></li>
+</ul>
+</li>
+<li><p>Let’s do a quick symbolisation of the resulting layer so we can understand the information more easily:</p>
+<ul class="simple">
+<li><p>Open the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel">styling panel</a> for the safe area.</p></li>
+<li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#only-display-the-outlines-of-polygons">Adjust the symbology</a> for the layer so that the polygons are <strong>semi-transparent and green</strong>.</p></li>
+</ul>
+</li>
+</ol>
+<p>Congratulations! We now have a map to help the team on the ground stay safe.</p>
+<!--ADD: Images of the different steps and results.-->
 </section>
 <section id="task-2-load-excel-file-containing-conflict-data-into-qgis">
 <h2>Task 2: Load Excel File containing conflict data into QGIS<a class="headerlink" href="#task-2-load-excel-file-containing-conflict-data-into-qgis" title="Permalink to this heading">#</a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Context:</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">In this step, we want to get a broader overview of conflict events in Pakistan. The <a class="reference external" href="https://acleddata.com/">Armed Conflict Location and Event Data project (ACLED)</a> distributes datasets on conflict events per country as excel spreadsheets. The datasets include dates, actors, <strong>locations</strong>, fatalities, and types of reported conflict events.</p>
+<p class="sd-card-text">The dataset also includes geographic coordinates for each reported event. In QGIS, we can transform the datatable into a spatial dataset, such as a GeoPackage.
+Once we have the conflict events as point data, we can aggregate the data on subdistrict level and create a map showing the subdistricts (ADM3) most affected by conflict.</p>
+</div>
+</div>
 <ol class="arabic simple">
-<li><p>Drag and Drop the ACLED conflict excel table ‘2024-01-01-2024-09-23-Pakistan.xlsx’ into your QGIS project</p></li>
-<li><p>Navigate in the Processing Toolbox to the Tool ‘Create points layer from table’.</p>
+<li><p>Drag and Drop the ACLED conflict excel table <code class="docutils literal notranslate"><span class="pre">2024-01-01-2024-09-23-Pakistan.xlsx</span></code> into your QGIS project.</p></li>
+<li><p>In the processing toolbox, find the tool <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">points</span> <span class="pre">layer</span> <span class="pre">from</span> <span class="pre">table</span></code> and open it.</p>
 <ul class="simple">
-<li><p>Choose as ‘X Field’ “longitude” and as ‘Y Field’ “latitude”.</p></li>
-<li><p>Under ‘Points from Table’ , click on the three dots, choose ‘Save to GeoPackage’ and navigate to you temp folder. Save the layer with the name “Pak_Conflict_points_2024”.</p></li>
+<li><p>As <code class="docutils literal notranslate"><span class="pre">X</span> <span class="pre">Field</span></code> select the column “longitude”, and as <code class="docutils literal notranslate"><span class="pre">Y</span> <span class="pre">Field</span></code> select “latitude”.</p></li>
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">Points</span> <span class="pre">from</span> <span class="pre">Table</span></code> , click on the three dots, choose ‘Save to GeoPackage’ and navigate to you temp folder. Save the layer with the name “Pak_Conflict_points_2024”.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Run</span></code>.</p></li>
 </ul>
 </li>
 </ol>
@@ -803,55 +878,68 @@ Use the tool <code class="docutils literal notranslate"><span class="pre">Merge<
 <p><span class="caption-text">Create points from table</span><a class="headerlink" href="#svg-marker" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+<p>Great! We now have a point layer showing the conflict events in Pakistan. Now, we could investigate this dataset further by taking a look at the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_attribute_table.html">attribute table</a> and see what kind of information is represented. However, we want to know the number of conflict incidents per thesil (subdistrict/ADM3). To calculate this:</p>
 <ol class="arabic simple" start="3">
-<li><p>Get number of events per thesil</p>
+<li><p>Import the layer <code class="docutils literal notranslate"><span class="pre">PAK_KP_admin_3.gpkg</span></code> from your <code class="docutils literal notranslate"><span class="pre">data/input</span></code>-folder into your QGIS-project.</p></li>
+<li><p>We want to count the number of conflict events per thesil (subdistrict/ADM3). To do this:</p>
 <ul class="simple">
-<li><p>Load the “KP admin 3” layer.</p></li>
-</ul>
-</li>
-<li><p>We are now interested to know the number of conflict incidents per thesil. For this:</p>
-<ul class="simple">
-<li><p>Go to the Processing Toolbox and search for the Tool ‘Count points in polygon’. Choose ‘KP_adm3’ layer as Polygon input and the ‘Pak_Conflict_points_2024’ layer as Points input</p></li>
-<li><p>Under <code class="docutils literal notranslate"><span class="pre">Count</span></code> save your new layer under “Pak_num_events_adm3”.</p></li>
+<li><p>In the processing toolbox, find the tool <code class="docutils literal notranslate"><span class="pre">Count</span> <span class="pre">points</span> <span class="pre">in</span> <span class="pre">polygon</span></code> and open it.</p></li>
+<li><p>As <code class="docutils literal notranslate"><span class="pre">Polygons</span></code>, select <code class="docutils literal notranslate"><span class="pre">PAK_KP_admin_3</span></code>-layer.</p></li>
+<li><p>As <code class="docutils literal notranslate"><span class="pre">Point</span> <span class="pre">Input</span></code>, select the <code class="docutils literal notranslate"><span class="pre">PAK_Conflict_points_2024</span></code>.</p></li>
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">Count</span></code>, click on the <code class="docutils literal notranslate"><span class="pre">...</span></code> and save the layer in your <code class="docutils literal notranslate"><span class="pre">data/results/</span></code>-folder as “PAK_num_events_adm3”.</p></li>
 </ul>
 </li>
 </ol>
-<figure class="align-default" id="id3">
+<figure class="align-default" id="id1">
 <a class="reference internal image-reference" href="../../_images/count_point_polygon.PNG"><img alt="../../_images/count_point_polygon.PNG" src="../../_images/count_point_polygon.PNG" style="width: 700px;" /></a>
 <figcaption>
-<p><span class="caption-text">Count points from polygon</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Count points in polygon</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="5">
 <li><p>Open the attribute of your ‘Pak_num_events_adm3’ layer and scroll to the right. You will find a column with the name “NUMPOINTS”. Here you find the number of events per thesil.</p>
 <ul class="simple">
-<li><p>Right-click on the layer and navigate to ‘Properties’ –&gt; ‘Symbology’. On the top change Single Symbol to “Graduated”.</p>
+<li><p>Right-click on the layer and navigate to <code class="docutils literal notranslate"><span class="pre">Properties</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Symbology</span></code>. On the top change Single Symbol to “Graduated”.</p>
 <ul>
-<li><p>In the ‘Value’ field choose “NUMPOINTS”.</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">Value</span></code> field choose “NUMPOINTS”.</p></li>
 </ul>
 </li>
-<li><p>Then below click on “Classify”</p></li>
-<li><p>You can adjust the Mode and the number of classes if wanted. Also you can choose your preferred color ramp.You can play around a bit here.</p></li>
-<li><p>Click ‘Apply’ and then ‘OK’</p></li>
+<li><p>Then below click on <code class="docutils literal notranslate"><span class="pre">Classify</span></code>.</p></li>
+<li><p>You can adjust the Mode and the number of classes if wanted. Also you can choose your preferred color ramp. You can try out different coloring options.</p></li>
+<li><p>Once you are satisfied with the look, click ‘Apply’ and then ‘OK’.</p></li>
 </ul>
 </li>
 </ol>
-<p>Your result could look similar to this.</p>
-<figure class="align-default" id="id4">
+<p>Your result could look similar to this:</p>
+<figure class="align-default" id="id2">
 <a class="reference internal image-reference" href="../../_images/Number_events_graduated.PNG"><img alt="../../_images/Number_events_graduated.PNG" src="../../_images/Number_events_graduated.PNG" style="width: 700px;" /></a>
 <figcaption>
-<p><span class="caption-text">Number of conflict events per thesil</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Number of conflict events per thesil</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="task-3-mpi-data">
 <h2>Task 3: MPI data<a class="headerlink" href="#task-3-mpi-data" title="Permalink to this heading">#</a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Context:</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">In this step, we want to visualise the Multi-Poverty index on district level (ADM2).</p>
+<p class="sd-card-text">This can help us understand the economic and social vulnerability geographically. The data with the MPI index is available in an excel spreadsheet. However, it does not contain columns with the specific geographic data (such as coordinates). We have to find a way to join the data table with a spatial dataset.</p>
+</div>
+</div>
 <ol class="arabic">
-<li><p>Open the excel file and export it as CSV UTF-8:</p>
+<li><p>First, let us open the spreadsheet with Microsoft Excel or a similar program (such as LibreOffice Calc):</p>
 <ul class="simple">
+<li><p>Here, you can already investigate the information that is stored in the different columns. Can you identify columns that contain spatial information?</p></li>
+<li><p>For now, let us export the file as a CSV UTF-8.</p>
+<ul>
 <li><p>Click on <code class="docutils literal notranslate"><span class="pre">File</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">As</span></code></p></li>
 <li><p>Chosse an output folder, where it will be saved (the <code class="docutils literal notranslate"><span class="pre">data</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder is recommended here) and give the file a meaningful name, for instance <strong>20240605_PAK_MPI</strong>.</p></li>
-<li><p>Choose the option <strong>CSV UTF-8 (Comma delimited) (*.csv)</strong> and <code class="docutils literal notranslate"><span class="pre">Save</span></code></p></li>
+<li><p>Choose the option <strong>CSV UTF-8 (Comma delimited) (*.csv)</strong> and <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
+</ul>
+</li>
 </ul>
 <figure class="align-center" id="convert-excel-to-csv">
 <a class="reference internal image-reference" href="../../_images/PAK_Excel_to_CSV.png"><img alt="../../_images/PAK_Excel_to_CSV.png" src="../../_images/PAK_Excel_to_CSV.png" style="width: 400px;" /></a>
@@ -861,11 +949,12 @@ Use the tool <code class="docutils literal notranslate"><span class="pre">Merge<
 </figure>
 </li>
 <li><p>Open QGIS and create a new project. Save the project in your project folder.</p></li>
-<li><p>Add the <strong>20240605_PAK_MPI.csv</strong> file to QGIS by:</p>
+<li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html">Import the layers</a> <code class="docutils literal notranslate"><span class="pre">__20240605_PAK_MPI.csv__</span></code> and <code class="docutils literal notranslate"><span class="pre">Pak_adm2_Khyber</span> <span class="pre">Pakhtunkhwa.gpkg</span></code> to QGIS:</p>
 <ul class="simple">
-<li><p>Click on the <code class="docutils literal notranslate"><span class="pre">Layer</span></code> tab -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Delimited</span> <span class="pre">Text</span></code></p></li>
+<li><p>Drag and drop the ADM2-layer into your QGIS-window.</p></li>
+<li><p>To import the CSV-file, click on the <code class="docutils literal notranslate"><span class="pre">Layer</span></code> tab -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Delimited</span> <span class="pre">Text</span></code>.</p></li>
 <li><p>Browse for your <strong>20240605_PAK_MPI.csv</strong> file.</p></li>
-<li><p>Choose the correct <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">Fromat</span></code>: <code class="docutils literal notranslate"><span class="pre">Custom</span> <span class="pre">delimters</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Semicolon</span></code></p></li>
+<li><p>Choose the correct <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">Fromat</span></code>: <code class="docutils literal notranslate"><span class="pre">Custom</span> <span class="pre">delimters</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Semicolon</span></code>.</p></li>
 <li><p>Go to	the tab <code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">Definition</span></code> and choose <code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">geometry</span></code>. We don’t have a column with coordinates or geoemtry information, but only the admin2 name and P-Code.</p></li>
 <li><p>Add layer and close the window.</p></li>
 </ul>
@@ -877,16 +966,17 @@ Use the tool <code class="docutils literal notranslate"><span class="pre">Merge<
 </figure>
 </li>
 </ol>
-<p>To visualize the data now on the map we have to link it to existing geometries and district boundaries. To do that:</p>
-<ol class="arabic" start="3">
+<p>Now, we need to join the data to existing to the existing district boundaries (ADM2). This process is called a <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_spatial_tools.html#spatial-joins">non-spatial join</a> and it allows us enrich datasets using attribute data. In our case, the MPI dataset contains a column with the district names (admin2) and the P-Codes. P-Codes are international codes for administrative boundaries and are generally the best way to identify an administrative units, as names can have several spellings. Our polygon-layer also has columns with the p-codes.</p>
+<p>So, we need to perform a non-spatial join using the P-Codes Columns as identifiers. To do this,</p>
+<ol class="arabic" start="4">
 <li><p>Open the attribute table of the attribute table and detect the column which contains the information you want to use to join the data with the location. E.g. City name, district name, or best the P-Code. In our case it is <code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code>.</p>
 <ul class="simple">
 <li><p><strong>Hint</strong>: Each administrative level and area contains a worldwide unique code number. This helps to determine the exact administrative boundary without misspelling the name of the area.</p></li>
 </ul>
 </li>
-<li><p>We now need an admin layer with an column containing the exact same information as the column of our CSV file. This is needed to link the information provided in the CSV to the district areas.</p>
+<li><p>Now, we need the polygon layer with the administrative boundaries.</p>
 <ul class="simple">
-<li><p>Load the layer <strong>Pak_adm2_Khyber Pakhtunkhwa.gpkg</strong> via drag and drop to QGIS.</p></li>
+<li><p>Open the attribute table for the layer <strong>Pak_adm2_Khyber Pakhtunkhwa.gpkg</strong> and locate the column containing the P-Code. How is it called?</p></li>
 </ul>
 </li>
 <li><p>To link the two layers, open the Toolbox and search for the tool <strong>Join attributes by field value</strong>. Open it.</p>
@@ -920,7 +1010,7 @@ Use the tool <code class="docutils literal notranslate"><span class="pre">Merge<
 <li><p>Choose <code class="docutils literal notranslate"><span class="pre">Value</span></code> <strong>A_2014_15</strong>.</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Classify</span></code>.</p></li>
 <li><p>Choose Mode <code class="docutils literal notranslate"><span class="pre">Pretty</span> <span class="pre">Breaks</span></code>.</p></li>
-<li><p>Click okay and close the window.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">OK</span></code> and close the window.</p></li>
 </ul>
 </li>
 <li><p>Visualize <strong>Pak_adm2_Khyber Pakhtunkhwa.gpkg</strong> layer for districts we don’t have MPI data on.</p>
@@ -989,6 +1079,7 @@ Use the tool <code class="docutils literal notranslate"><span class="pre">Merge<
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preparation">Preparation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-geolocate-security-related-information-of-the-last-days">Task 1: Geolocate security-related information of the last days</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-load-excel-file-containing-conflict-data-into-qgis">Task 2: Load Excel File containing conflict data into QGIS</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-mpi-data">Task 3: MPI data</a></li>
