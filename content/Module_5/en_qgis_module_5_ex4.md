@@ -159,7 +159,7 @@ Below, you will find a table with the information and locations. Read through th
 In order to digitise the information, we will need two new layers: A point layer and a polygon layer. 
 In case the information states an exact area, create a new polygon layer and map it exactly.
 
-8. [Create a new point and a new polygon layer](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_digitalisation.html#creating-new-datasets)
+8. [Create a new point and a new polygon layer](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_digitalisation.html#creating-new-datasets) to digitise point and polygon information. 
 
 ```{tip}
 When creating the point and polygon layer use the CRS UTM 42 N __EPSG: 32642__. This Coordinate reference system is ideal for Pakistan and the __units of measurement are in meters__. 
@@ -175,9 +175,9 @@ The current SOP states that the sides of recent violent incidents are to be avoi
 
 ::::{margin}
 {admonition} Reminder
-:class: tldr
+:class: seealso
 
-If you see a ![](/fig/3.44_caution_symbol.png)-symbol next to the `Distance` parameter, this means that the layer you want to buffer is in a geographic coordinate reference system. This means the units of measurements are in __degrees, and not in meters__. If that is the case, you need to [reproject your layer]() into a metric coordinate reference system. 
+If you see a ![](/fig/3.44_caution_symbol.png)-symbol next to the `Distance` parameter, this means that the layer you want to buffer is in a geographic coordinate reference system. This means the units of measurements are in __degrees, and not in meters__. If that is the case, you need to [reproject your layer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html#changing-the-projection-of-a-vector-layer) into a metric coordinate reference system. 
 
 Tip: EPSG:32642 is an ideal CRS for Pakistan. 
 
