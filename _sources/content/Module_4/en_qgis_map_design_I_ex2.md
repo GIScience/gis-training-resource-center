@@ -103,9 +103,9 @@ Keep your data management clean by creating a standard folder structure on your 
 
 4. Take a moment to familiarise yourself with the available data. Look into the attribute table of the different layers and look what information is available and how the attributes are named.
 
-<!---3. We want to make a comprehensible map, think about which data we need and what data we can leave out.
-    
-REMOVE THIS? PUT SOMEWHERE ELSE BELOW-->
+5. [Add a basemap](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#standard-qgis-basemaps):
+    - Navigating to the menu bar -> `Layer` -> `Add Layer` -> `Add XYZ-Layer...` and add a OpenStreetMap basemap. 
+
 
 :::{admonition} Adding symbols to your SVG-collection
 :class: tip
@@ -123,12 +123,6 @@ While QGIS offers a variety of markers and SVG-symbols you can use in your maps 
     - Now we will be able to access the additional SVG-files in the symbolisation window. 
     
     
-:::{dropdown} Check if the folder was imported correctly
-You can check if the files were imported correctly:
-        - Right-Click on a layer in the layers-tab > `Properties`
-        - Navigate to the `Symbology`-tab. 
-:::
-
 ### Part 1: Symbolization
 
 Creating a good map involves selecting appropriate icons and colours to transmit the information in your data. 
@@ -281,7 +275,7 @@ If you cannot see the toolbar `View` -> `Toolbars` and check `Digitizing Toolbar
 
 * Now you can create a point for the airport and if you would like additional airports as well ([wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#add-geometries-to-a-layer)). Currently the new layer __“PAK_airports”__ is empty. To add features we can use the `Digitizing Toolbar`. 
 
-*  Once you have found the airport, click on ![](/fig/mActionCapturePoint.png). Left-click on the feature you want to digitise.
+*  Look for the Mohenjodaro Airport in Google. Once you have found the airport, click on ![](/fig/mActionCapturePoint.png). Left-click on the feature you want to digitise.
 
     ```{figure} /fig/Feature_Att_Airport.PNG
     ---
@@ -312,9 +306,8 @@ Open the __Symbology Tab__ for the `PAK_2024_Minimum_Flood_Extend_reprojected`-l
 
 __Administrative Boundaries:__
 
-Open the __Symbology Tab__ for the `Flood_2024_AOI`-layer. Click on `Simple Fill` and adjust the `Symbol layer type` to `Simple Line`. You can furthermore adjust now the outline colour and stroke width.
+Open the __Symbology Tab__ for the `Flood_2024_AOI`-layer. Click on `Simple Fill` and adjust the `Symbol layer type` to `Simple Line`. You can furthermore adjust now the outline colour and stroke width (e.g., make the Fill Transparent)
 
-__Bonus Step__: [Adding a basemap](/content/Wiki/en_qgis_basemaps_wiki.md) can help potential readers orienting themselves.
 
 If you are happy with the symobolisation of your layers, the map should be ready for a print layout.
 

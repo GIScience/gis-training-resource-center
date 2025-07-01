@@ -704,10 +704,12 @@ Keep your data management clean by creating a standard folder structure on your 
 </ul>
 </li>
 <li><p>Take a moment to familiarise yourself with the available data. Look into the attribute table of the different layers and look what information is available and how the attributes are named.</p></li>
+<li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#standard-qgis-basemaps">Add a basemap</a>:</p>
+<ul class="simple">
+<li><p>Navigating to the menu bar -&gt; <code class="docutils literal notranslate"><span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">XYZ-Layer...</span></code> and add a OpenStreetMap basemap.</p></li>
+</ul>
+</li>
 </ol>
-<!---3. We want to make a comprehensible map, think about which data we need and what data we can leave out.
-    
-REMOVE THIS? PUT SOMEWHERE ELSE BELOW-->
 <div class="tip admonition">
 <p class="admonition-title">Adding symbols to your SVG-collection</p>
 <p>While QGIS offers a variety of markers and SVG-symbols you can use in your maps by default, the selection of symbols is limited, especially if you work for organisations that have their own symbols, such as the Red Cross Movement.</p>
@@ -726,18 +728,7 @@ REMOVE THIS? PUT SOMEWHERE ELSE BELOW-->
 </ul>
 </li>
 </ol>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Check if the folder was imported correctly<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">You can check if the files were imported correctly:
-- Right-Click on a layer in the layers-tab &gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code>
-- Navigate to the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code>-tab.</p>
-</div>
-</details></section>
+</section>
 <section id="part-1-symbolization">
 <h3>Part 1: Symbolization<a class="headerlink" href="#part-1-symbolization" title="Permalink to this heading">#</a></h3>
 <p>Creating a good map involves selecting appropriate icons and colours to transmit the information in your data.
@@ -870,7 +861,7 @@ To categorize the roads, double-click on the layer <code class="docutils literal
 </aside>
 <ul>
 <li><p>Now you can create a point for the airport and if you would like additional airports as well (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#add-geometries-to-a-layer">wiki</a>). Currently the new layer <strong>“PAK_airports”</strong> is empty. To add features we can use the <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code>.</p></li>
-<li><p>Once you have found the airport, click on <img alt="" src="../../_images/mActionCapturePoint.png" />. Left-click on the feature you want to digitise.</p>
+<li><p>Look for the Mohenjodaro Airport in Google. Once you have found the airport, click on <img alt="" src="../../_images/mActionCapturePoint.png" />. Left-click on the feature you want to digitise.</p>
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../_images/Feature_Att_Airport.PNG"><img alt="../../_images/Feature_Att_Airport.PNG" src="../../_images/Feature_Att_Airport.PNG" style="width: 400px;" /></a>
 <figcaption>
@@ -894,8 +885,7 @@ To categorize the roads, double-click on the layer <code class="docutils literal
 <p><strong>Flood Extent:</strong></p>
 <p>Open the <strong>Symbology Tab</strong> for the <code class="docutils literal notranslate"><span class="pre">PAK_2024_Minimum_Flood_Extend_reprojected</span></code>-layer. Choose a light-blue as color and adjust the opacity to about 30%.</p>
 <p><strong>Administrative Boundaries:</strong></p>
-<p>Open the <strong>Symbology Tab</strong> for the <code class="docutils literal notranslate"><span class="pre">Flood_2024_AOI</span></code>-layer. Click on <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">Fill</span></code> and adjust the <code class="docutils literal notranslate"><span class="pre">Symbol</span> <span class="pre">layer</span> <span class="pre">type</span></code> to <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">Line</span></code>. You can furthermore adjust now the outline colour and stroke width.</p>
-<p><strong>Bonus Step</strong>: <a class="reference internal" href="../Wiki/en_qgis_basemaps_wiki.html"><span class="doc std std-doc">Adding a basemap</span></a> can help potential readers orienting themselves.</p>
+<p>Open the <strong>Symbology Tab</strong> for the <code class="docutils literal notranslate"><span class="pre">Flood_2024_AOI</span></code>-layer. Click on <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">Fill</span></code> and adjust the <code class="docutils literal notranslate"><span class="pre">Symbol</span> <span class="pre">layer</span> <span class="pre">type</span></code> to <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">Line</span></code>. You can furthermore adjust now the outline colour and stroke width (e.g., make the Fill Transparent)</p>
 <p>If you are happy with the symobolisation of your layers, the map should be ready for a print layout.</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
