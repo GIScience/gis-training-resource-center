@@ -187,7 +187,7 @@ GeoPackage files can contain multiple files and even entire QGIS projects. When 
     Holding <kbd>Ctrl</kbd> while selecting features let's you add more features to your current selection. Otherwise, you will deselect the previous polygon. 
     Keep in mind that you can only select features from the layer you have currently selected in the layers panel. 
     ::::
-    - In the toolbar at the top of the QGIS-window, select the tool `Select Feature(s)` ![](/fig/selection_toolbar_feature_selection.png). Hold <kbd>Ctrl</kbd> and <kbd>Click</kbd> on the districts that are surrounding the district of Larkana ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_queries_wiki.html#manual-selection)). The four selected districts should appear yellow on your map canvas. 
+    - In the toolbar at the top of the QGIS-window, select the tool `Select Feature(s)` ![](/fig/selection_toolbar_feature_selection.png). Hold <kbd>Ctrl</kbd> and <kbd>Click</kbd> on the districts that are surrounding the district of Larkana ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_queries_wiki.html#manual-selection)). The six selected districts should appear yellow on your map canvas. 
     <!--FIX: The districts named are not the only ones surrounding the -->
     - Deactivate the `Select Feature(s)`-tool by clicking on the icon ![](/fig/qgis_move_symbol.png) in the toolbar at the top of your QGIS-window. 
     - We can now export the selected features and save them to a new file. Right click on the `PAK_adm2_Sindh` layer and select `Export` > `Save Selected Features as`. 
@@ -246,7 +246,7 @@ width: 750 px
 
 1. First, we need to find out where the health facilities are located in the area. We can find datasets by doing a quick search on the [humanitarian data exchange (HDX)](https://data.humdata.org). Here you can find the dataset "Pakistan Health Facilities (OpenStreetMap Export)". We will be using this dataset. The dataset is already available in the download folder for this exercise. 
     - Import the GeoPackage `PAK_Health_Facilities_complete.gpgk` into your project. You can either drag it onto the map canvas, or open the import window by clicking on `Layer` > `Add Layer` > `Add Vector Layer` in the top bar of QGIS ([see wiki page](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)). A new layer with point data will appear on your map canvas. 
-    - Once we have the imported the healthsites, we can extract the healthsites that are located inside of our Area of Interest. We can achieve this with the tool `Extract by Location`. 
+    - Once we have imported the healthsites, we can extract those that are located inside of our Area of Interest. We can achieve this with the tool `Extract by Location`. 
     - In the __Processing Toolbox__ ([opening the toolbox](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox)), search for the tool "Extract by Location". <kbd>Double-Click</kbd> on it. A new window will open.
     ```{figure} /fig/PAK_extract_locatio_HS.png
     ---
@@ -468,9 +468,9 @@ There are methods to automate the digitisation process which will be covered in 
     - Select the coordinate reference system (CRS) "EPSG:4326-WGS 84". By default, QGIS selects the project CRS. 
     - Under `New Field` you can add columns to the new layer. Add the column __“Blocked_road”__.
         * `Name` = __“Blocked_road”__
-        * `Type`: Select `Text Data`
+        * `Type`: Select `Text(string)`
         * Click on `Add to Fields List` ![](/fig/mActionNewAttribute.png) to add the new column to the `Fields List`.
-        * Create another field with the `name` __"Blocked_bridge"__ and the `Type`: Select `Text Data`.
+        * Create another field with the `name` __"Blocked_bridge"__ and the `Type`: Select `Text(string)`.
         * Click `OK`.
     * Your new layer will appear in the layers panel.
     ```{figure} /fig/PAK_blocked_road_new_layer.png
