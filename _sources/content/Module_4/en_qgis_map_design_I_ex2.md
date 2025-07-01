@@ -56,7 +56,7 @@ __Relevant wiki articles:__
 
 ::::{topic} Context
 
-In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. You have already conducted an analysis utilizing actual data from this natural disaster in the [previous exercise](). We now want to visualize our findings on an appealing map that can be printed out or shared with different stakeholders. The map will show specific medical centers and healthcare facilities that where impacted by the flooding. Additionally, we will visualize the viability of road access to the city of Larkana throughout the flood period.
+In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. You have already conducted an analysis utilizing actual data from this natural disaster in the [previous exercise](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex5.html). We now want to visualize our findings on an appealing map that can be printed out or shared with different stakeholders. The map will show specific medical centers and healthcare facilities that where impacted by the flooding. Additionally, we will visualize the viability of road access to the city of Larkana throughout the flood period.
 
 The exercise is split into two parts. In the first part, you will adjust the symbolisation of the layers for the final map. In the second part, you will use the print layout composer to create a finished map that can be printed and distributed. 
 
@@ -66,7 +66,9 @@ The exercise is split into two parts. In the first part, you will adjust the sym
 ### Available Data
 
 :::{card}
-You have created the data for Larkana in [Module 3 Exercise 5](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex2.html). In order to conduct this exercise please create a folder on your computer and copy your entire folder structure of Exercise 4 in there. In case you did not do Module 3 - Exercise 4 you can download the data [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/Exercise_2/Module_4_Exercise_2_Larkana_flood_map.zip). Save the folder on your computer an unzip the file.
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/Exercise_2/Module_4_Exercise_2_Larkana_flood_map.zip
+
+You have created the data for Larkana in [Module 3 Exercise 5](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex2.html). In order to conduct this exercise please create a folder on your computer and copy your entire folder structure of Exercise 4 in there. __In case you did not do Module 3 - Exercise 4 you can download the data [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/Exercise_2/Module_4_Exercise_2_Larkana_flood_map.zip)__. Save the folder on your computer an unzip the file.
 :::
 
 
@@ -119,7 +121,13 @@ While QGIS offers a variety of markers and SVG-symbols you can use in your maps 
     - In the field for `SVG-paths`, click on `+`-Symbol. A new window will open.
     - Navigate to the folder where you saved the SVG library. Click on `Select Folder`. 
     - Now we will be able to access the additional SVG-files in the symbolisation window. 
-
+    
+    
+:::{dropdown} Check if the folder was imported correctly
+You can check if the files were imported correctly:
+        - Right-Click on a layer in the layers-tab > `Properties`
+        - Navigate to the `Symbology`-tab. 
+:::
 
 ### Part 1: Symbolization
 
@@ -128,8 +136,8 @@ The first step into creating a comprehensible map is to order the layers logical
 
 In the layers panel: 
 - Put the administrative boundaries layer at the bottom,
-- put the roads and flood extent layers in the middle
-- and put the point layers (healthsites and blocked roads)
+- put the roads and flood extent layers in the middle,
+- and put the point layers (healthsites and blocked roads) to the top.
 
 Each layer has it's own [symbology panel](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel) where you can adjust the symbology, colours and labels for the features in that layer. Do you need to change some colours? Are the layers ordered in a way that the information is visible? Think about which data we need and what data we can leave out. 
 For example, the layer `Roads_Larkana` contains too many roads for a map on a national scale. Let's open the attribute table and look at how the roads are classified. The data is using the conventional OpenStreetMap classification: The type of road is described under the attribute `highway`. In our case, it might be useful to only display the primary and secondary roads, so all the features where `highway=primary` OR `highway=secondary`.
@@ -225,7 +233,20 @@ To categorize the roads, double-click on the layer `Roads_Larkana`. The properti
 
 __Blocked Roads Points:__
 
-Open the __Symbology Tab__ for the `PAK_flood_2024_blocked_road`-layer and choose a meaningful symbol for flood related blocked roads.
+
+* Right-click on the layer __“PAK_flood_2024_blocked_road”__ in the `Layer Panel` -> `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
+* Keep the single symbol option. Select any symbol from the list that is appropriate for marking blocked roads. 
+* Once you are done, click `Apply` and `OK` to close the symbology window.
+
+    ```{figure} /fig/PAK_blocked_road_symbol.png
+    ---
+    width: 600px
+    name: Visulsing blocked roads with icons
+    align: center
+    ---
+    Visualising blocked roads with icons
+    ```   
+
 
 __Airports:__
 
@@ -238,10 +259,10 @@ To do so we will create an entirely new point dataset representing airports.
 * Under `Additional dimension` you should always make sure that you check `None`. 
 * Select the coordinate reference system (CRS) "EPSG:4326-WGS 84". By default, the QGIS selects the project CRS. 
 * Under `New Field` you can add columns to the new layer. Add the column __“Airport”__.
-* `Type`: Select `Text Data`
+* `Type`: Select `Text(string)`
 * Click on `Add to Fields List` ![](/fig/mActionNewAttribute.png) to add the new column to the `Fields List`.
 * Click `OK`.
-* Your new layer will appear in the `Layer Panel`
+* Your new layer will appear in the `Layer Panel`.
 
     ```{figure} /fig/Create_Geopackagelayer_airport.PNG
     ---
@@ -258,10 +279,9 @@ If you cannot see the toolbar `View` -> `Toolbars` and check `Digitizing Toolbar
 :::
 ::::
 
-* Now you can create a point for the airport and if you would like additional airports as well [wiki](/content/Wiki/en_qgis_digitalization_wiki.md#add-geometries-to-a-layer). Currently the new layer __“PAK_airports”__ is empty. To add features we can use the `Digitizing Toolbar`. 
+* Now you can create a point for the airport and if you would like additional airports as well ([wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#add-geometries-to-a-layer)). Currently the new layer __“PAK_airports”__ is empty. To add features we can use the `Digitizing Toolbar`. 
 
-*  Once you have found the airport, click on it![](/fig/mActionCapturePoint.png). Left-click on the feature you want to digitise.
-* Once you click on a place, a window will appear. Indicate that the road is blocked by writing `Yes` in the field `Blocked_road`.
+*  Once you have found the airport, click on ![](/fig/mActionCapturePoint.png). Left-click on the feature you want to digitise.
 
     ```{figure} /fig/Feature_Att_Airport.PNG
     ---
@@ -275,20 +295,16 @@ If you cannot see the toolbar `View` -> `Toolbars` and check `Digitizing Toolbar
 * Once you are done with digitizing click on ![](/fig/mActionSaveEdits.png) to save your edits.
 * Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
 
-In order to transmit the information quickly, we can use a plane icon to display the layer __"PAK_airports"__, instead of just a point.
+In order to transmit the information quickly, we can use a plane icon to display the layer __"PAK_airports"__, instead of just a point. 
 
-* Right-click on the layer__“PAK_flood_2024_blocked_road”__in the `Layer Panel` -> `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
-* Keep the single symbol option. Select any symbol from the list that is appropriate for marking blocked roads. 
-* Once you are done, click `Apply` and `OK` to close the symbology window.
+* Right-click on the layer __"PAK_airports"__ in the `Layer Panel` -> `Properties`. A new window ill open up with a vertical tab section on the left. Navigate to the [`Symbology`-tab](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel).
+* Click on `Simple Marker`.
+* Under `Symbol layer type`, select __SVG-Marker__.
+* Scroll down a bit and you will find a box with all the SVG-symbols available.
+* In the search bar under the box, search for "Plane". 
+* Select a plane symbol.
+* Click `Apply`, then `Ok`.
 
-    ```{figure} /fig/PAK_blocked_road_symbol.png
-    ---
-    width: 600px
-    name: Visulsing blocked roads with icons
-    align: center
-    ---
-    Visualising blocked roads with icons
-    ```   
 
 __Flood Extent:__
 
@@ -333,13 +349,14 @@ Creating a new print layout.
 3. Move and position the map so that the area of interest is visible at a reasonable scale.
 
 4. Let's add a title:
-    - Click on ![Add text icon](/fig/30.30.2_print_layout_add_text.png) (`Add text`)
-    - Drag a rectangle on the canvas
+    - Click on ![Add text icon](/fig/30.30.2_print_layout_add_text.png) (`Add text`).
+    - Drag a rectangle on the canvas.
     - In the item properties window on the right, you will find a text box with the text "Lorem ipsum". Here you can enter your map title (e.g. Larkama Flood Response 2024).
     - Adjust the font size: Click on the __Font__ dropdown menu and adjust the font size for a title (25p or more). Adjust the text box if necessary.
 
 5. Let's add a legend:
     - Click on  ![Add legend icon](/fig/30.30.2_print_layout_add_legend.png) (`Add legend`). 
+    - Drag a rectangle on the canvas.
     - Navigate to the __Item Properties__ panel on the right. 
     - Scroll down a bit and check turn off `Auto Update` by unchecking the check box. Now you can freely edit every item on the legend
     - Adjust the legend by removing unnecessary layers (which are not seen on the map) and rename the layer in the legend by clicking on ![Edit Icon](/fig/30.30.2_print_layout_legend_edit.png) (`Edit selected item properties`) below the legend entries.

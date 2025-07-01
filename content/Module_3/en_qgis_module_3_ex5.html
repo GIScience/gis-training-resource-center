@@ -792,7 +792,7 @@ Keep in mind that you can only select features from the layer you have currently
 </div>
 </aside>
 <ul class="simple">
-<li><p>In the toolbar at the top of the QGIS-window, select the tool <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">Feature(s)</span></code> <img alt="" src="../../_images/selection_toolbar_feature_selection.png" />. Hold <kbd>Ctrl</kbd> and <kbd>Click</kbd> on the districts that are surrounding the district of Larkana (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_queries_wiki.html#manual-selection">Wiki Video</a>). The four selected districts should appear yellow on your map canvas.</p></li>
+<li><p>In the toolbar at the top of the QGIS-window, select the tool <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">Feature(s)</span></code> <img alt="" src="../../_images/selection_toolbar_feature_selection.png" />. Hold <kbd>Ctrl</kbd> and <kbd>Click</kbd> on the districts that are surrounding the district of Larkana (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_queries_wiki.html#manual-selection">Wiki Video</a>). The six selected districts should appear yellow on your map canvas.</p></li>
 </ul>
  <!--FIX: The districts named are not the only ones surrounding the -->
 <ul class="simple">
@@ -846,7 +846,7 @@ Keep in mind that you can only select features from the layer you have currently
 <li><p>First, we need to find out where the health facilities are located in the area. We can find datasets by doing a quick search on the <a class="reference external" href="https://data.humdata.org">humanitarian data exchange (HDX)</a>. Here you can find the dataset “Pakistan Health Facilities (OpenStreetMap Export)”. We will be using this dataset. The dataset is already available in the download folder for this exercise.</p>
 <ul class="simple">
 <li><p>Import the GeoPackage <code class="docutils literal notranslate"><span class="pre">PAK_Health_Facilities_complete.gpgk</span></code> into your project. You can either drag it onto the map canvas, or open the import window by clicking on <code class="docutils literal notranslate"><span class="pre">Layer</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code> in the top bar of QGIS (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html">see wiki page</a>). A new layer with point data will appear on your map canvas.</p></li>
-<li><p>Once we have the imported the healthsites, we can extract the healthsites that are located inside of our Area of Interest. We can achieve this with the tool <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">by</span> <span class="pre">Location</span></code>.</p></li>
+<li><p>Once we have imported the healthsites, we can extract those that are located inside of our Area of Interest. We can achieve this with the tool <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">by</span> <span class="pre">Location</span></code>.</p></li>
 <li><p>In the <strong>Processing Toolbox</strong> (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox">opening the toolbox</a>), search for the tool “Extract by Location”. <kbd>Double-Click</kbd> on it. A new window will open.</p></li>
 </ul>
 <figure class="align-center" id="extract-by-location-pakistan">
@@ -1078,9 +1078,9 @@ Execution failed after 0.07 seconds
 <li><p>Under <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Field</span></code> you can add columns to the new layer. Add the column <strong>“Blocked_road”</strong>.</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">Name</span></code> = <strong>“Blocked_road”</strong></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Type</span></code>: Select <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">Data</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Type</span></code>: Select <code class="docutils literal notranslate"><span class="pre">Text(string)</span></code></p></li>
 <li><p>Click on <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">to</span> <span class="pre">Fields</span> <span class="pre">List</span></code> <img alt="" src="../../_images/mActionNewAttribute.png" /> to add the new column to the <code class="docutils literal notranslate"><span class="pre">Fields</span> <span class="pre">List</span></code>.</p></li>
-<li><p>Create another field with the <code class="docutils literal notranslate"><span class="pre">name</span></code> <strong>“Blocked_bridge”</strong> and the <code class="docutils literal notranslate"><span class="pre">Type</span></code>: Select <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">Data</span></code>.</p></li>
+<li><p>Create another field with the <code class="docutils literal notranslate"><span class="pre">name</span></code> <strong>“Blocked_bridge”</strong> and the <code class="docutils literal notranslate"><span class="pre">Type</span></code>: Select <code class="docutils literal notranslate"><span class="pre">Text(string)</span></code>.</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
 </ul>
 </li>
