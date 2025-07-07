@@ -56,7 +56,7 @@ __Relevant wiki articles:__
 
 ::::{topic} Context
 
-In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. You have already conducted an analysis utilizing actual data from this natural disaster in the [previous exercise](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex5.html). We now want to visualize our findings on an appealing map that can be printed out or shared with different stakeholders. The map will show specific medical centers and healthcare facilities that where impacted by the flooding. Additionally, we will visualize the viability of road access to the city of Larkana throughout the flood period.
+In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. As a result, critical infrastructure, such as health facilities, were impacted and road access to the city of Larkana was severly limited. You have already conducted an analysis utilizing actual data from this natural disaster in the [previous exercise](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex5.html). We now want to visualize our findings on an appealing map that can be printed out or shared with different stakeholders. The map will show specific medical centers and healthcare facilities that where impacted by the flooding. Additionally, we will visualize the viability of road access to the city of Larkana throughout the flood period.
 
 The exercise is split into two parts. In the first part, you will adjust the symbolisation of the layers for the final map. In the second part, you will use the print layout composer to create a finished map that can be printed and distributed. 
 
@@ -87,9 +87,8 @@ You have created the data for Larkana in [Module 3 Exercise 5](https://giscience
 Keep your data management clean by creating a standard folder structure on your computer for your QGIS-projects and geodata. 
 ```
 
-## Tasks
+## Task 1: Preparing the Data
 
-### Preparing the data
 
 1. Create a new QGIS-project and save it to your exercise folder. Give it a clear name, e.g. "Larkana_flood_response_map".
 
@@ -122,8 +121,10 @@ While QGIS offers a variety of markers and SVG-symbols you can use in your maps 
     - Navigate to the folder where you saved the SVG library. Click on `Select Folder`. 
     - Now we will be able to access the additional SVG-files in the symbolisation window. 
     
-    
-### Part 1: Symbolization
+
+<!--CHECK: Are we actually using external SVG-symbols?-->
+
+## Task 2: Symbolization
 
 Creating a good map involves selecting appropriate icons and colours to transmit the information in your data. 
 The first step into creating a comprehensible map is to order the layers logically so you can see the information:
@@ -138,12 +139,12 @@ For example, the layer `Roads_Larkana` contains too many roads for a map on a na
 
 Let's go through the layers one by one and visualize them in a meaningful way.
 
-__Healthsites:__
+### __Healthsites:__
 
 In the __layers panel__, right click on the layer `Health_Facilities_Flood_2024_AOI` > `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
 Let's create our own customized symbol for healthcare facilities:
-- Under `Symbol layer type`, select __"SVG Marker"__
-- Scroll down to the SVG-Browser. Here you will find all the folders of your installed SVG-libraries.
+1. Under `Symbol layer type`, select __"SVG Marker"__
+2. Scroll down to the SVG-Browser. Here you will find all the folders of your installed SVG-libraries.
 
 :::{dropwodn} Video: Using SVG symbols 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video>
@@ -194,10 +195,49 @@ Now the symbols should be available in the styling manager in the SVG folder.
 
 
 -->
-__Roads:__
+### __Roads:__
 
-The roads dataset contains a lot of information that we do not necessarily want to display on our final map. We can categorise the data and hide the unwanted information. 
-To categorize the roads, double-click on the layer `Roads_Larkana`. The properties window will open with a vertical tab bar on the left. Navigate to the __Symbology tab__.
+The roads dataset contains a lot of information that we do not necessarily want to display on our final map. We can categorise the data and hide the unwanted information. We already identified the important roads in the previous exercise: The roads where __"highway"__ equals `motorway`, `primary`, `secondary`, `trunk`. These roads are the __major roads__. 
+
+
+
+<!--
+To make the visualisation simple, let's extract the roads we are interested in and save them in a new layer:
+
+1. In the processing toolbar, search for the tool "Extract by Expression". The tool window will open.
+2. As `Input Layer`, select `Roads_Larkana`.
+3. Next to the `Expression`-field, click on the ![](/fig/expression_string_builder_icon.png) `Expression Builder`. The __Expression Editor will open.
+4. In the middle tab, locate the subfolder called `Fields and Values`. Here, you will find all the attribute columns for the layer.
+5. We are interested in the "highway"-column. <kbd>Double-click</kbd> on it to add it to the expression editor. 
+6. While you have the "highway" field selected in the middle tab, in the right tab, click on `All Unique`. This will list all the unique values in the "highway"-column. 
+7. Build the following expression (you can also just copy and paste it):
+    ```
+     (  "highway"  =  'motorway'  ) OR ( "highway"  =  'primary'  ) OR  (  "highway"  =  'secondary'  ) OR ( "highway"  =  'trunk'  ) 
+    ```
+8. Click `OK`.
+9. Under `Matching features` click on `...` and navigate to the `/data/temp/`-folder and save the dataset as __"Larkana_major_roads.gpkg"__.
+9. Click `Run`. 
+10. A new layer will be added to your layers panel.
+
+Now we can adjust the symbology for the major roads:
+
+11. <kbd>Right-Click</kbd> on the "Larkana_major_roads" layer > `Properties`.
+12. Navigate to the `Symbology`-tab.
+13. Here, you can adjust the colour and thickness of the lines.
+
+```{figure} /fig/Module_4/m4_ex2_symbology_roads.png
+---
+name: Road symbolisation
+width: 550 px
+---
+The symbolisation tab for line data in QGIS 3.42
+```
+
+14. Once you are satisfied with the look, click `Apply`, then `OK`.
+
+-->
+
+We can categorise the roads and then select the relevant roads to be displayed. To categorize the roads, double-click on the layer `Roads_Larkana`. The properties window will open with a vertical tab bar on the left. Navigate to the __Symbology tab__.
 - On the top you find a dropdown menu. Open it and choose `Categorized`. 
 - Under `Value` select “highway”.
 - Further down the window, click on `Classify`.  Now you should see all unique values or attributes of the selected “Flood_affected” column.  You can adjust the colours by double-clicking on one row in the central field.
@@ -225,8 +265,7 @@ To categorize the roads, double-click on the layer `Roads_Larkana`. The properti
 
 * Once you are done, click `Apply` and `OK` to close the symbology window.
 
-__Blocked Roads Points:__
-
+### __Blocked Roads Points:__
 
 * Right-click on the layer __“PAK_flood_2024_blocked_road”__ in the `Layer Panel` -> `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
 * Keep the single symbol option. Select any symbol from the list that is appropriate for marking blocked roads. 
@@ -242,7 +281,7 @@ __Blocked Roads Points:__
     ```   
 
 
-__Airports:__
+### __Airports:__
 
 In the [previous exercise](/content/Module_3/en_qgis_module_3_ex2.md) you found out that the Mohenjodaro Airport in the southwest of Larkana City is still accessible via the road network. Essential supplies could potentially be transported from the airport into the city without encountering any roadblocks. We want to point out this possibility. Let's mark the airport as a point and visualize it!
 
@@ -289,7 +328,7 @@ If you cannot see the toolbar `View` -> `Toolbars` and check `Digitizing Toolbar
 * Once you are done with digitizing click on ![](/fig/mActionSaveEdits.png) to save your edits.
 * Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
 
-In order to transmit the information quickly, we can use a plane icon to display the layer __"PAK_airports"__, instead of just a point. 
+Let's symbolise the airport with a plane icon, so we can identify it quickly.  
 
 * Right-click on the layer __"PAK_airports"__ in the `Layer Panel` -> `Properties`. A new window ill open up with a vertical tab section on the left. Navigate to the [`Symbology`-tab](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel).
 * Click on `Simple Marker`.
@@ -300,30 +339,24 @@ In order to transmit the information quickly, we can use a plane icon to display
 * Click `Apply`, then `Ok`.
 
 
-__Flood Extent:__
+### __Flood Extent:__
 
 Open the __Symbology Tab__ for the `PAK_2024_Minimum_Flood_Extend_reprojected`-layer. Choose a light-blue as color and adjust the opacity to about 30%.
 
-__Administrative Boundaries:__
-
-Open the __Symbology Tab__ for the `Flood_2024_AOI`-layer. Click on `Simple Fill` and adjust the `Symbol layer type` to `Simple Line`. You can furthermore adjust now the outline colour and stroke width (e.g., make the Fill Transparent)
-
-
-If you are happy with the symobolisation of your layers, the map should be ready for a print layout.
-
-```{Attention}
-
-Remember the layer concept and place all layers in a logic order. The flood extents should lay under the roads and the several point layer above the roads.
-
+```{figure} /fig/Module_4/m4_ex2_symbology_flood.png
+---
+name: m4_ex2_symbology_flood.png
+width: 550 px
+---
+Adjusting the symbology to indicate the flooded area. 
 ```
 
-### Part 2: Creating the print layout
+## Task 3: Creating the print layout
 
-Once you are happy with the symbolization and colours of your data, the next step is to create a print layout. By adding additional information such as a title, data sources, projection, description, etc. you provide your audience with the means to contextualise and evaluate the map and it's content by themselves.
+Once you are happy with the symbolization and colours of your data, the next step is to create a __print layout__. The print layout is where you put all the elements from you map together with additional information to create a comprehensive map. By adding additional information such as a title, data sources, projection, description, etc. you provide your audience with the means to contextualise and evaluate the map and it's content by themselves.
 
 1. Open a new print layout and give it a name (e.g. Larkana_floods).
     - Go to `Project` > `New Print Layout` > enter a name for the new print layout > click `OK`.
-
 
 ```{figure} ../../fig/en_30.30.2_create_print_layout.png
 ---
@@ -339,33 +372,66 @@ Creating a new print layout.
 
 2. Insert a new map by clicking on ![New Map Icon](/fig/30.30.2_print_layout_insert_map_icon.png) (`Add Map`) on the left toolbar, and drawing a rectangle on the print canvas. [Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.md#adding-a-new-map)
 
-3. Move and position the map so that the area of interest is visible at a reasonable scale.
+3. Move and position the map so that the area of interest is visible at a reasonable scale. To move the map content, use the tool ![](30.30.2_print_layout_move_content_icon) `Move item content`. 
+
+
+```{figure} /fig/Module_4/m4_ex2_print_layout_add_map.png
+---
+name: m4_ex2_print_layout_add_map
+width: 650 px
+---
+Adding the map to the print layout.
+```
+
+4. Let's add a label for the city of Larkana. This will help your audience that might be unfamiliar with the region orientate themselves. 
+    - Click on the ![Add text icon](/fig/30.30.2_print_layout_add_text.png) (`Add text`).
+    - Draw a small rectangle next to the city of Larkana.
+    - In the item properties window on the right, you will find a text box with the text "Lorem ipsum". Enter "Larkana" instead. 
+    - Click on the __Font__ dropdown menu and adjust the font size so it can be read easily.
+    
+```{figure} /fig/Module_4/m4_ex2_print_layout_label_city
+---
+name: m4_ex2_print_layout_label_city
+width: 600 px
+---
+Adding a label for the city of Larkana.
+```
 
 4. Let's add a title:
     - Click on ![Add text icon](/fig/30.30.2_print_layout_add_text.png) (`Add text`).
     - Drag a rectangle on the canvas.
-    - In the item properties window on the right, you will find a text box with the text "Lorem ipsum". Here you can enter your map title (e.g. Larkama Flood Response 2024).
+    - In the item properties window on the right, you will find a text box with the text "Lorem ipsum". Here you can enter your map title (e.g. "Larkana, Flood-affected Healthsites and Roads").
     - Adjust the font size: Click on the __Font__ dropdown menu and adjust the font size for a title (25p or more). Adjust the text box if necessary.
+    - Below the font dropdown menu, add a little bit of horizontal and vertical margin. 
+
+```{figure} /fig/Module_4/m4_ex2_print_layout_add_title.png
+---
+name: m4_ex2_print_layout_add_title
+width: 600 px
+---
+Adding a title to the print layout.
+```
+
 
 5. Let's add a legend:
     - Click on  ![Add legend icon](/fig/30.30.2_print_layout_add_legend.png) (`Add legend`). 
     - Drag a rectangle on the canvas.
     - Navigate to the __Item Properties__ panel on the right. 
     - Scroll down a bit and check turn off `Auto Update` by unchecking the check box. Now you can freely edit every item on the legend
-    - Adjust the legend by removing unnecessary layers (which are not seen on the map) and rename the layer in the legend by clicking on ![Edit Icon](/fig/30.30.2_print_layout_legend_edit.png) (`Edit selected item properties`) below the legend entries.
-    - Under the upper `Main Properties`, insert "Legend" as title
+    - Adjust the legend by removing unnecessary layers (which are not seen on the map) and rename the layer in the legend by clicking on ![Edit Icon](/fig/30.30.2_print_layout_legend_edit.png) (`Edit selected item properties`) below the legend entries. Use the ![](/fig/Module_4/m4_ex2_print_layout_add_to_legend.png)-icon to add or remove layers from the legend.
+    - Under the upper `Main Properties`, insert "Legend" as title. 
 
 ```{figure} ../../fig/Larkana_Legend.PNG
 ---
 width: 700px
 name: Create Print Layout
 ---
-Using the print layout.
+Adjusting the legend.
 ```
 
 6. Now, let's add a scale bar:
     - Click on ![Add Scale bar icon](/fig/30.30.2_print_layout_add_scale_bar.png) (`Add Scale bar`)
-    - Draw a rectangle on the map and position the scale bar on the edge of the map. You can adjust the scale bar units (meters, kilometers, ...), the fixed segment width (50 km, 75 km, 100 km, ...) and the number of segments (to the right).
+    - Draw a rectangle on the map and position the scale bar on the edge of the map. You can adjust the scale bar units (meters, kilometers, ...), the fixed segment width (e.g. 10 km, 20 km, 50 km, ...) and the number of segments (to the right). 
 
 7. Let's add a north arrow:
     - Click on ![Add North Arrow Icon](/fig/30.30.2_print_layout_add_orientation.png) (`Add North Arrow`). 
@@ -375,19 +441,19 @@ Using the print layout.
     - Click on ![Add Picture](/fig/30.30.2_print_layout_add_image.png) (`Add picture`)
     - Drag a rectangle in the spot where you want to add the logo
     - Navigate to the `Item properties` panel on the right and switch to `Raster image`. 
-    - Click on the three dots `...` and select the file with your logo
+    - Click on the three dots `...` and select the file with your logo (for this exercise the logo for the Pakistani Red Crescent Society is saved here: `/Module_4_Exercise_2_Larkana_flood_map/img/`).
     - If necessary, resize or move the picture on the print layout.
 
-9. Add some additional information as text.
+9. Add some additional information in a text box. 
     - Click on ![Add text icon](/fig/30.30.2_print_layout_add_text.png) (`Add text`)
     - Drag a rectangle on the canvas
-    - In the item properties window on the right, you will find a text box with the text "Lorem ipsum". Here you can enter some additional information of the map, e.g. the coordinate system, basemap information or date.
+    - In the item properties window on the right, you will find a text box with the text "Lorem ipsum". Here you can enter some additional information of the map, e.g. the coordinate system, basemap information or date. 
 
 When you are finished with your map design you can export your printable map as image or pdf under `Layout`--> `Export as Image` or `Export as PDF`
 
 You could now have as a result a map similar to this one. Here, some space has been left in order to implement an overview map. If you are still have time go for the bonus exercise and add an overview map!
 
-```{figure} ../../fig/Larkama_Map_withoutOverview.PNG
+```{figure} ../../fig/Larkana_Map_withoutOverview.PNG
 ---
 width: 700px
 name: Map Larkama
