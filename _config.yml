@@ -32,11 +32,5 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
-  extra_footer: |
-        <script data-goatcounter="https://gtrc.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-        <p>
-        This project is released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Creative Commons BY-NC-SA 4.0 license</a>.
-        </p>
   announcement: "Looking to contribute? Take a look at the contribution guidelines and contact us!"
 exclude_patterns: [.venv/*]
