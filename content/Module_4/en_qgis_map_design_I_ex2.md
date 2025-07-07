@@ -56,13 +56,19 @@ __Relevant wiki articles:__
 
 ::::{topic} Context
 
-In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. As a result, critical infrastructure, such as health facilities, were impacted and road access to the city of Larkana was severly limited. You have already conducted an analysis utilizing actual data from this natural disaster in the [previous exercise](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex5.html). We now want to visualize our findings on an appealing map that can be printed out or shared with different stakeholders. The map will show specific medical centers and healthcare facilities that where impacted by the flooding. Additionally, we will visualize the viability of road access to the city of Larkana throughout the flood period.
-
+In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. As a result, critical infrastructure, such as health facilities, were impacted and road access to the city of Larkana was severly limited. You have already conducted an analysis utilizing actual data from this natural disaster in the [previous exercise](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex5.html). We now want to visualize our findings on an appealing map that can be printed out or shared with different stakeholders. The map will show specific medical centers and healthcare facilities that where impacted by the flooding. Additionally, we will visualize the road access to the city of Larkana on August 12 2024. This information is crucial to assess the logistical access to the city. 
+ 
 The exercise is split into two parts. In the first part, you will adjust the symbolisation of the layers for the final map. In the second part, you will use the print layout composer to create a finished map that can be printed and distributed. 
 
 ::::
 
-
+```{figure} ../../fig/Larkana_Map_Overview.png
+---
+width: 700px
+name: Map Larkama
+---
+The map we will be making in this exercise (Source: HeiGIT).
+```
 ### Available Data
 
 :::{card}
@@ -74,7 +80,6 @@ You have created the data for Larkana in [Module 3 Exercise 5](https://giscience
 
 | Dataset name | Original title | Publisher | Downloaded from | 
 | :-------------------- | :----------------- |:----------------- |:----------------- |
-| Flood_2024_AOI.gpkg | [Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-pak) | UN OCHA | HDX (This dataset has been modified in the [previous exercise](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex2.html)) |
 | Health_Facilities_Flood_2024_AOI.gpkg |  [Pakistan Health Facilities (OpenStreetMap Export)](https://data.humdata.org/dataset/hotosm_pak_health_facilities) |Humanitarian OpenStreetMap Team (HOT) | HDX |
 | PAK_2024_Minimum_Flood_Extend_reprojected.gpkg | [Satellite detected water extents from 08 to 12 August 2024 over Pakistan)](https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan) | UNO SAT | HDX |
 | PAK_flood_2024_blocked_road.gpkg | PAK_flood_2024_blocked_road | Yourself | This dataset was created in the [previous exercise](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex2.html) | 
@@ -98,13 +103,13 @@ Keep your data management clean by creating a standard folder structure on your 
     - Roads: `Roads_Larkana.gpkg`
     - Blocked Roads Points: `PAK_flood_2024_blocked_road.gpkg`
     - Flood Extent 2024 reprojected: `PAK_2024_Minimum_Flood_Extend_reprojected.gpkg`
-    - Administrative Boundaries for the Area of interest (AOI): `Flood_2024_AOI.gpkg`
 
 4. Take a moment to familiarise yourself with the available data. Look into the attribute table of the different layers and look what information is available and how the attributes are named.
 
 5. [Add a basemap](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#standard-qgis-basemaps):
     - Navigating to the menu bar -> `Layer` -> `Add Layer` -> `Add XYZ-Layer...` and add a OpenStreetMap basemap. 
 
+<!---
 
 :::{admonition} Adding symbols to your SVG-collection
 :class: tip
@@ -461,13 +466,13 @@ name: Map Larkama
 Your final map could look something like this.
 ```
 
-### Bonus Exercise!
+### Bonus Exercise
 
 If you are finished with the main map, click on the map and navigate to the item properties. In the layer section, check the box `Lock Layers` and `Lock styles for layers`. This means that if you change the map in the main QGIS-window, the first map you have added to the print layout will not be affected by these changes. Now you can start working on an overview map. We will be using a shapefile with the administrative boundaries of Pakistan.  
 
-1. Return to the main QGIS window and load the layers from the `Bonus Exercise`-folder. They include a polygon layer with the outlines of countries (alternatively, you can use the OSM basemap).
+1. Return to the main QGIS window. Navigate to the folder `Module_4_Exerise_2_Larkana_flood_map/data/Bonus_exercise/` and load the layer `PAK_admbnda_adm0_wfp_20220909` into your QGIS-project.
 2. In the __Layer__ panel, make the layers for the main map invisible by clicking on the ![Eye Icon](/fig/30.30.2_layer_visibility_icon.png) next to the layer name.
-3. Style the countries in an neutral, unobtrusive color. For example, you can use the "__Gray 3 Fill__" from the styling templates.
+3. Style the country boundary (ADM0) in a neutral, unobtrusive color. For example, you can use the "__Gray 3 Fill__" from the styling templates.
 4. Once you are happy with the styling of your overview map, navigate back to the __Print Layout window__.
 5. Add a second map and position it in a corner.
 6. In the __Item properties__ panel for the second Map ("__Map 2__"), scroll down and open the `Overview`-options.
@@ -483,6 +488,6 @@ name: Map Larkama
 The finished map could look something like this (Source: HeiGIT).
 ```
 
-Congratulations! You have created a finished map that is ready to be printed and distributed. 
+> Congratulations! You have created a finished map that is ready to be printed and distributed. 
 
 
