@@ -4,11 +4,7 @@
 :link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
-:::{grid-item-card}
-:class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_module_4_exercises.html 
-{octicon}`undo;1.5em;sd-text-danger`
-:::
+
 ::::
 
 # Map design Exercise 1: Creating a Map of Ghana

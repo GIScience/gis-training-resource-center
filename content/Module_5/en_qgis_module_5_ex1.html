@@ -555,7 +555,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-risk-calculation">Part 2: Risk Calculation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Task</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Task</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisation">1. Normalisation</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#directions">2. Directions</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#weighting-of-indicators">3. Weighting of Indicators</a></li>
@@ -587,13 +587,6 @@ document.write(`
 <p class="sd-card-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-home-fill sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.97 2.59a1.5 1.5 0 00-1.94 0l-7.5 6.363A1.5 1.5 0 003 10.097V19.5A1.5 1.5 0 004.5 21h4.75a.75.75 0 00.75-.75V14h4v6.25c0 .414.336.75.75.75h4.75a1.5 1.5 0 001.5-1.5v-9.403a1.5 1.5 0 00-.53-1.144l-7.5-6.363z"></path></svg></p>
 </div>
 <a class="sd-stretched-link reference external" href="https://giscience.github.io/gis-training-resource-center/content/intro.html"></a></div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center sd-rounded-circle docutils">
-<div class="sd-card-body docutils">
-<p class="sd-card-text"><a href="#id1"><span class="problematic" id="id2">:octicon:`undo;1.5em;sd-text-danger`</span></a></p>
-</div>
-<a class="sd-stretched-link reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_module_5_exercises.html"></a></div>
 </div>
 </div>
 </div>
@@ -742,10 +735,10 @@ The collection and processing of this information varies based on the problem, b
 <h3>Land Degradation<a class="headerlink" href="#land-degradation" title="Permalink to this heading">#</a></h3>
 <p>A very important factor for areas vulnerable to drought is the level of land degradation. It is an important factor not only for agriculture, but also for livestock herds, as both are primary sources of income. We will try to add this information to our dataset:</p>
 <p>-<a class="reference external" href="https://spatial.faoswalim.org/layers/geonode:SOM_Land_Degradation_FAOSWALIM#/">Somalia Land degradation</a></p>
-<figure class="align-default" id="id3">
+<figure class="align-default" id="id1">
 <a class="reference internal image-reference" href="../../_images/land_degradation.PNG"><img alt="../../_images/land_degradation.PNG" src="../../_images/land_degradation.PNG" style="width: 60%;" /></a>
 <figcaption>
-<p><span class="caption-text">Land Degradation</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Land Degradation</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>You will see that we can only download the information as an image. This is a very common case when working with open data. We have to digitise the information in order to be able to use it for further processing. Find the digitised version in “Modul_5_Ex1_Part_1\land_degradation_somalia”.</p>
@@ -790,10 +783,10 @@ The collection and processing of this information varies based on the problem, b
 <p class="admonition-title">Attention</p>
 <p>It is possible that the CSV file the column headers of the attribute table will not have the correct names (instead they may have “field 1”, “field 2” etc.) after importing. In this case, the correct field names is usually located below the header.</p>
 </div>
-<figure class="align-default" id="id4">
+<figure class="align-default" id="id2">
 <a class="reference internal image-reference" href="../../_images/en_qgis_module_5_ex1_error.PNG"><img alt="../../_images/en_qgis_module_5_ex1_error.PNG" src="../../_images/en_qgis_module_5_ex1_error.PNG" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-text">Log File Join Attribute by Field Value</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Log File Join Attribute by Field Value</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Open the attribute tables from both, your output layer and the CSV file in order to find out the roots of the problem. In the output layer double-click on <code class="docutils literal notranslate"><span class="pre">affunderfive</span></code> and bring <code class="docutils literal notranslate"><span class="pre">NULL</span></code> Values to the top. Check the joining attribute “ADM2_EN” and compare it with the joining attribute “adm2name” from the CSV file.
@@ -806,8 +799,8 @@ You can edit the names in 6 cases in the Attribute Table of the CSV file by togg
 </section>
 <section id="part-2-risk-calculation">
 <h2>Part 2: Risk Calculation<a class="headerlink" href="#part-2-risk-calculation" title="Permalink to this heading">#</a></h2>
-<section id="id5">
-<h3>Task<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
+<section id="id3">
+<h3>Task<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
 <p>In the second part of the exercise we will showcase the steps how to come from indicators to a risk analysis.</p>
 <p>You can find all the data for the second part of the exercise in the “Modul_5_Ex1_Part_2”.
 Download the data folder for the second part of the exercise: “Modul_5_Ex1_Part_2”. We processed the vulnerability layer in the first part of the exercise; simplified exposure and lack of coping capacity layers have been prepared in advance for this exercise. These layers have only 3 to 4 indicators for complexity reasons. See below an example of indicators that were used for Somalia:</p>
@@ -833,10 +826,10 @@ Download the data folder for the second part of the exercise: “Modul_5_Ex1_Par
 <ul class="simple">
 <li><p>When you are done click <img alt="" src="../../_images/mActionSaveEdits.png" /> to save your edits and switch off the editing mode by clicking on <img alt="" src="../../_images/mActionToggleEditing.png" />(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing">Wiki Video</a>).</p></li>
 </ul>
-<figure class="align-default" id="id6">
+<figure class="align-default" id="id4">
 <a class="reference internal image-reference" href="../../_images/en_qgis_modul_5_ex1_Part2_normalization.PNG"><img alt="../../_images/en_qgis_modul_5_ex1_Part2_normalization.PNG" src="../../_images/en_qgis_modul_5_ex1_Part2_normalization.PNG" style="width: 80%;" /></a>
 <figcaption>
-<p><span class="caption-text">Normalisation of indicators</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Normalisation of indicators</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
@@ -1060,7 +1053,7 @@ You can find more information about the risk methodology and the usage of the pl
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-risk-calculation">Part 2: Risk Calculation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Task</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Task</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisation">1. Normalisation</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#directions">2. Directions</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#weighting-of-indicators">3. Weighting of Indicators</a></li>
