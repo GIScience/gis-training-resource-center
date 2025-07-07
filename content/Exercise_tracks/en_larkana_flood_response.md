@@ -27,7 +27,7 @@ __Module 2 Exercise 3: Data Sources__
 __Module 2 Exercise 4: Exporting OSM Data__
 ^^^
 - Export OSM Data using the HOT Export Tool
-- FOrmulate simple queries to find relevant data
+- Formulate simple queries to find relevant data
 
 :::
 
