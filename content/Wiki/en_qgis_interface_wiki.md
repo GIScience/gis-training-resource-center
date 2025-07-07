@@ -115,10 +115,9 @@ Another way is to use the zoom buttons in the toolbox panel.
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zoom.mp4"></video>
 ___
 
-## Toolbox & Toolbars
+## The Processing Toolbox
 
-
-All the functionality, tools and applications of QGIS are organised in the Toolbox. 
+All the functionality, tools and applications of QGIS are organised in the __Processing toolbox__. 
 If you ever need to find a tool, or an algorithm, you can open the toolbox and use the search function to find it. 
 
 
@@ -132,10 +131,14 @@ You can use the search bar to find specific tools.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_toolbars.mp4"></video>
 
+## Toolbars
+
+Some Tools have their own toolbars which you can add to your QGIS interface. They appear above the map canvas as icons which let you quickly access specific functionalities.
+To avoid an overcrowded interface it is smart to only activate specific toolbars or panels only when you really need them.
+
 ### Show and hide displays and toolbars
 
-Some Tools have their own toolbars which you can add to your QGIS interface.
-To avoid an overcrowded interface it is smart to only activate specific toolbars or panels only when you really need them.
+
 
 To add or remove toolbars from your interface click on `View` -> `Toolbars` -> Check or uncheck the toolboxes you want to add or remove
 
