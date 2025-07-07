@@ -552,7 +552,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-creating-the-print-layout">Task 3: Creating the print layout</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-exercise">Bonus Exercise!</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-exercise">Bonus Exercise</a></li>
 </ul>
 </li>
 </ul>
@@ -645,9 +645,15 @@ document.write(`
 </div>
 <aside class="topic">
 <p class="topic-title">Context</p>
-<p>In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. As a result, critical infrastructure, such as health facilities, were impacted and road access to the city of Larkana was severly limited. You have already conducted an analysis utilizing actual data from this natural disaster in the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex5.html">previous exercise</a>. We now want to visualize our findings on an appealing map that can be printed out or shared with different stakeholders. The map will show specific medical centers and healthcare facilities that where impacted by the flooding. Additionally, we will visualize the viability of road access to the city of Larkana throughout the flood period.</p>
+<p>In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. As a result, critical infrastructure, such as health facilities, were impacted and road access to the city of Larkana was severly limited. You have already conducted an analysis utilizing actual data from this natural disaster in the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex5.html">previous exercise</a>. We now want to visualize our findings on an appealing map that can be printed out or shared with different stakeholders. The map will show specific medical centers and healthcare facilities that where impacted by the flooding. Additionally, we will visualize the road access to the city of Larkana on August 12 2024. This information is crucial to assess the logistical access to the city.</p>
 <p>The exercise is split into two parts. In the first part, you will adjust the symbolisation of the layers for the final map. In the second part, you will use the print layout composer to create a finished map that can be printed and distributed.</p>
 </aside>
+<figure class="align-default" id="map-larkama">
+<a class="reference internal image-reference" href="../../_images/Larkana_Map_Overview.png"><img alt="../../_images/Larkana_Map_Overview.png" src="../../_images/Larkana_Map_Overview.png" style="width: 700px;" /></a>
+<figcaption>
+<p><span class="caption-text">The map we will be making in this exercise (Source: HeiGIT).</span><a class="headerlink" href="#map-larkama" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <section id="available-data">
 <h2>Available Data<a class="headerlink" href="#available-data" title="Permalink to this heading">#</a></h2>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover docutils">
@@ -664,22 +670,17 @@ document.write(`
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>Flood_2024_AOI.gpkg</p></td>
-<td class="text-left"><p><a class="reference external" href="https://data.humdata.org/dataset/cod-ab-pak">Subnational Administrative Boundaries</a></p></td>
-<td class="text-left"><p>UN OCHA</p></td>
-<td class="text-left"><p>HDX (This dataset has been modified in the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex2.html">previous exercise</a>)</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>Health_Facilities_Flood_2024_AOI.gpkg</p></td>
+<tr class="row-even"><td class="text-left"><p>Health_Facilities_Flood_2024_AOI.gpkg</p></td>
 <td class="text-left"><p><a class="reference external" href="https://data.humdata.org/dataset/hotosm_pak_health_facilities">Pakistan Health Facilities (OpenStreetMap Export)</a></p></td>
 <td class="text-left"><p>Humanitarian OpenStreetMap Team (HOT)</p></td>
 <td class="text-left"><p>HDX</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>PAK_2024_Minimum_Flood_Extend_reprojected.gpkg</p></td>
+<tr class="row-odd"><td class="text-left"><p>PAK_2024_Minimum_Flood_Extend_reprojected.gpkg</p></td>
 <td class="text-left"><p><a class="reference external" href="https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan">Satellite detected water extents from 08 to 12 August 2024 over Pakistan)</a></p></td>
 <td class="text-left"><p>UNO SAT</p></td>
 <td class="text-left"><p>HDX</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>PAK_flood_2024_blocked_road.gpkg</p></td>
+<tr class="row-even"><td class="text-left"><p>PAK_flood_2024_blocked_road.gpkg</p></td>
 <td class="text-left"><p>PAK_flood_2024_blocked_road</p></td>
 <td class="text-left"><p>Yourself</p></td>
 <td class="text-left"><p>This dataset was created in the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex2.html">previous exercise</a></p></td>
@@ -704,7 +705,6 @@ Keep your data management clean by creating a standard folder structure on your 
 <li><p>Roads: <code class="docutils literal notranslate"><span class="pre">Roads_Larkana.gpkg</span></code></p></li>
 <li><p>Blocked Roads Points: <code class="docutils literal notranslate"><span class="pre">PAK_flood_2024_blocked_road.gpkg</span></code></p></li>
 <li><p>Flood Extent 2024 reprojected: <code class="docutils literal notranslate"><span class="pre">PAK_2024_Minimum_Flood_Extend_reprojected.gpkg</span></code></p></li>
-<li><p>Administrative Boundaries for the Area of interest (AOI): <code class="docutils literal notranslate"><span class="pre">Flood_2024_AOI.gpkg</span></code></p></li>
 </ul>
 </li>
 <li><p>Take a moment to familiarise yourself with the available data. Look into the attribute table of the different layers and look what information is available and how the attributes are named.</p></li>
@@ -714,24 +714,24 @@ Keep your data management clean by creating a standard folder structure on your 
 </ul>
 </li>
 </ol>
-<div class="tip admonition">
-<p class="admonition-title">Adding symbols to your SVG-collection</p>
-<p>While QGIS offers a variety of markers and SVG-symbols you can use in your maps by default, the selection of symbols is limited, especially if you work for organisations that have their own symbols, such as the Red Cross Movement.</p>
-</div>
-<ol class="arabic simple" start="5">
-<li><p>We will use IFRC symbols in this exercise. We can <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#adding-an-external-svg-library">import an SVG library into QGIS</a> so we can access the IFRC-symbols QGIS.</p>
-<ul class="simple">
-<li><p>Go to this website: <a class="reference external" href="https://learn-sims.org/style-guidance/logos-and-icons/">https://learn-sims.org/style-guidance/logos-and-icons/</a></p></li>
-<li><p>Under <strong>IFRC Icons</strong>, click on <code class="docutils literal notranslate"><span class="pre">Download</span> <span class="pre">the</span> <span class="pre">full</span> <span class="pre">set</span> <span class="pre">here</span></code>. You will be redirected to a dropbox folder with a zip-file containing all the IFRC icons in various formats.</p></li>
-<li><p>In the top-right corner, click on download.</p></li>
-<li><p><a class="reference external" href="https://www.dropbox.com/scl/fi/8snphmxuncdvajvu1iqh8/IFRC-Icons.zip?rlkey=vtsahvsuhepor8oicmkd7e9s1&amp;dl=0">Download the IFRC symbols</a>, unzip them and save them in a folder on your computer where you will find them again.</p></li>
-<li><p>In the top bar of your QGIS-window, navigate to <code class="docutils literal notranslate"><span class="pre">Settings</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Options</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">System</span></code></p></li>
-<li><p>In the field for <code class="docutils literal notranslate"><span class="pre">SVG-paths</span></code>, click on <code class="docutils literal notranslate"><span class="pre">+</span></code>-Symbol. A new window will open.</p></li>
-<li><p>Navigate to the folder where you saved the SVG library. Click on <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">Folder</span></code>.</p></li>
-<li><p>Now we will be able to access the additional SVG-files in the symbolisation window.</p></li>
-</ul>
-</li>
-</ol>
+<!---
+
+:::{admonition} Adding symbols to your SVG-collection
+:class: tip
+While QGIS offers a variety of markers and SVG-symbols you can use in your maps by default, the selection of symbols is limited, especially if you work for organisations that have their own symbols, such as the Red Cross Movement. 
+:::
+
+5. We will use IFRC symbols in this exercise. We can [import an SVG library into QGIS](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#adding-an-external-svg-library) so we can access the IFRC-symbols QGIS. 
+    - Go to this website: https://learn-sims.org/style-guidance/logos-and-icons/ 
+    - Under __IFRC Icons__, click on `Download the full set here`. You will be redirected to a dropbox folder with a zip-file containing all the IFRC icons in various formats.
+    - In the top-right corner, click on download. 
+    - [Download the IFRC symbols](https://www.dropbox.com/scl/fi/8snphmxuncdvajvu1iqh8/IFRC-Icons.zip?rlkey=vtsahvsuhepor8oicmkd7e9s1&dl=0), unzip them and save them in a folder on your computer where you will find them again. 
+    - In the top bar of your QGIS-window, navigate to `Settings` > `Options` > `System`
+    - In the field for `SVG-paths`, click on `+`-Symbol. A new window will open.
+    - Navigate to the folder where you saved the SVG library. Click on `Select Folder`. 
+    - Now we will be able to access the additional SVG-files in the symbolisation window. 
+    
+
 <!--CHECK: Are we actually using external SVG-symbols?-->
 </section>
 <section id="task-2-symbolization">
@@ -1058,19 +1058,19 @@ The symbolisation tab for line data in QGIS 3.42
 </ol>
 <p>When you are finished with your map design you can export your printable map as image or pdf under <code class="docutils literal notranslate"><span class="pre">Layout</span></code>–&gt; <code class="docutils literal notranslate"><span class="pre">Export</span> <span class="pre">as</span> <span class="pre">Image</span></code> or <code class="docutils literal notranslate"><span class="pre">Export</span> <span class="pre">as</span> <span class="pre">PDF</span></code></p>
 <p>You could now have as a result a map similar to this one. Here, some space has been left in order to implement an overview map. If you are still have time go for the bonus exercise and add an overview map!</p>
-<figure class="align-default" id="map-larkama">
+<figure class="align-default" id="id4">
 <a class="reference internal image-reference" href="../../_images/Larkana_Map_withoutOverview.png"><img alt="../../_images/Larkana_Map_withoutOverview.png" src="../../_images/Larkana_Map_withoutOverview.png" style="width: 700px;" /></a>
 <figcaption>
-<p><span class="caption-text">Your final map could look something like this.</span><a class="headerlink" href="#map-larkama" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Your final map could look something like this.</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <section id="bonus-exercise">
-<h3>Bonus Exercise!<a class="headerlink" href="#bonus-exercise" title="Permalink to this heading">#</a></h3>
+<h3>Bonus Exercise<a class="headerlink" href="#bonus-exercise" title="Permalink to this heading">#</a></h3>
 <p>If you are finished with the main map, click on the map and navigate to the item properties. In the layer section, check the box <code class="docutils literal notranslate"><span class="pre">Lock</span> <span class="pre">Layers</span></code> and <code class="docutils literal notranslate"><span class="pre">Lock</span> <span class="pre">styles</span> <span class="pre">for</span> <span class="pre">layers</span></code>. This means that if you change the map in the main QGIS-window, the first map you have added to the print layout will not be affected by these changes. Now you can start working on an overview map. We will be using a shapefile with the administrative boundaries of Pakistan.</p>
 <ol class="arabic simple">
-<li><p>Return to the main QGIS window and load the layers from the <code class="docutils literal notranslate"><span class="pre">Bonus</span> <span class="pre">Exercise</span></code>-folder. They include a polygon layer with the outlines of countries (alternatively, you can use the OSM basemap).</p></li>
+<li><p>Return to the main QGIS window. Navigate to the folder <code class="docutils literal notranslate"><span class="pre">Module_4_Exerise_2_Larkana_flood_map/data/Bonus_exercise/</span></code> and load the layer <code class="docutils literal notranslate"><span class="pre">PAK_admbnda_adm0_wfp_20220909</span></code> into your QGIS-project.</p></li>
 <li><p>In the <strong>Layer</strong> panel, make the layers for the main map invisible by clicking on the <img alt="Eye Icon" src="../../_images/30.30.2_layer_visibility_icon.png" /> next to the layer name.</p></li>
-<li><p>Style the countries in an neutral, unobtrusive color. For example, you can use the “<strong>Gray 3 Fill</strong>” from the styling templates.</p></li>
+<li><p>Style the country boundary (ADM0) in a neutral, unobtrusive color. For example, you can use the “<strong>Gray 3 Fill</strong>” from the styling templates.</p></li>
 <li><p>Once you are happy with the styling of your overview map, navigate back to the <strong>Print Layout window</strong>.</p></li>
 <li><p>Add a second map and position it in a corner.</p></li>
 <li><p>In the <strong>Item properties</strong> panel for the second Map (”<strong>Map 2</strong>”), scroll down and open the <code class="docutils literal notranslate"><span class="pre">Overview</span></code>-options.</p></li>
@@ -1078,13 +1078,15 @@ The symbolisation tab for line data in QGIS 3.42
 <li><p>In the “<strong>Map Frame</strong>”-option, select “<strong>Map 1</strong>”. This will show the frame of the main map on your overview map.</p></li>
 <li><p>You can add a scale bar and a northj arrow to your overview map as well.</p></li>
 </ol>
-<figure class="align-default" id="id4">
+<figure class="align-default" id="id5">
 <a class="reference internal image-reference" href="../../_images/Larkana_Map_Overview.png"><img alt="../../_images/Larkana_Map_Overview.png" src="../../_images/Larkana_Map_Overview.png" style="width: 700px;" /></a>
 <figcaption>
-<p><span class="caption-text">The finished map could look something like this (Source: HeiGIT).</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">The finished map could look something like this (Source: HeiGIT).</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Congratulations! You have created a finished map that is ready to be printed and distributed.</p>
+<blockquote>
+<div><p>Congratulations! You have created a finished map that is ready to be printed and distributed.</p>
+</div></blockquote>
 </section>
 </section>
 </section>
@@ -1145,7 +1147,7 @@ The symbolisation tab for line data in QGIS 3.42
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-creating-the-print-layout">Task 3: Creating the print layout</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-exercise">Bonus Exercise!</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-exercise">Bonus Exercise</a></li>
 </ul>
 </li>
 </ul>
