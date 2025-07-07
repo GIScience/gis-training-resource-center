@@ -453,7 +453,7 @@ When you are finished with your map design you can export your printable map as 
 
 You could now have as a result a map similar to this one. Here, some space has been left in order to implement an overview map. If you are still have time go for the bonus exercise and add an overview map!
 
-```{figure} ../../fig/Larkana_Map_withoutOverview.PNG
+```{figure} ../../fig/Larkana_Map_withoutOverview.png
 ---
 width: 700px
 name: Map Larkama
