@@ -296,7 +296,7 @@ To move on the map canvas with your mouse cursor you need to toggle the hand but
 :::{image} /fig/qgis_move_symbol.png
 ---
 name: move_symbol
-height: 80 px
+height: 40 px
 ---
 :::
 
