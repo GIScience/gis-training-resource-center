@@ -31,7 +31,7 @@ The exercise covers:
 
 In this exercise, we will not be using any geodata. Instead, we will be learning how to navigate through the different interfaces and how to save and load a QGIS project. You can download the zipped template folder structure [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_1/Modul_1_Exercise_1_Understanding_the_interface/Modul_1_Exercise_1_Understanding_the_interface.zip).
 
-```{figure} /fig/Standard_project_folder_structure.drawio.svg
+```{figure} /fig/standard_folder_structure_new_2025.drawio.png
 ---
 width: 800px
 align: center
@@ -101,9 +101,9 @@ In QGIS, the interface may appear slightly different depending on your screen re
 Take time to make yourself familiar with the different ways you can arrange the QGIS interface. Knowing where to find the different functions can save you a lot of time and frustration in the future!
 
 6. Let's save the project now. Click on the save icon on the toolbar or open the  `Project` menu and choose `Save As...`
-    1. Choose a location for the project file. An ideal place would be in the project subfolder in the template folder structure. Navigate to the folder called `Module_1_Exercise_1` and open the subfolder called `Project`. Select this location and give the QGIS project a name (for example: `QGIS_Training_Exercise_1`). The project will be saved as a `.qqz` file.
+    1. Choose a location for the project file. An ideal place would be in the project subfolder in the template folder structure. Navigate to the folder called `Module_1_Exercise_1`. Give the QGIS project a name (for example: `QGIS_Training_Exercise_1`). The project will be saved as a `.qqz` file.
     2. Click `Save` 
-     Close the QGIS application and reopen it.
+    3. Close the QGIS application and reopen it.
 7.  Close the QGIS application and reopen it. When QGIS restarts, the project we just saved will appear in the `Recent Projects` panel. You can double-click it to open it. You can also navigate to the `.qgz` file in your file explorer and double click on it. 
 This will also launch QGIS and load the project. 
 
