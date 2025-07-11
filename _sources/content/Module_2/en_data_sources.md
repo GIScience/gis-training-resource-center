@@ -108,7 +108,6 @@ The data to create maps or perform GIS analyses can come from various sources (S
 | Copernicus | Earth observation data | https://scihub.copernicus.eu/ | 
 | GlobCover | Raster data on land cover | http://due.esrin.esa.int/page_globcover.php |
 
-:::
 
 ## OpenStreetMap data
 
