@@ -16,3 +16,16 @@ By fixed data we mean datasets that are needed for the trigger to work, that wil
 | ----- | --- | --- |
 | Administrative Boundaries | [HDX](https://data.humdata.org/dataset/cod-ab-mdg) | The administrative boundaries on level 0-4 for Madagascar can be accessed via HDX provided by OCHA. For this trigger mechanism we provide the administrative boundaries on level 2 (district level) as a shapefile.  |
 | Population Counts | [WorldPop](https://hub.worldpop.org/geodata/summary?id=49646) | The worldpop dataset in `.geotif` raster format provides the estimated total number of people per grid-cell for the year 2020. We will be working with the Constrained Individual countries 2020 at a resolution of 100m. |
+| Buildings Counts | [Global ML Building Footprints](https://gee-community-catalog.org/projects/msbuildings/) | The building counts dataset in `.geotif` raster format counts the number of buildings per 100m grid cell. The workflow on how this dataset was created can be found in this [GitLab repo](https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar) |
+| Land Cover | [ Copernicus Land Cover](https://land.copernicus.eu/en/products/global-dynamic-land-cover/copernicus-global-land-service-land-cover-100m-collection-3-epoch-2019-globe) | The land cover dataset in `.geotif` raster format provides an overview over the dominant land cover type at a resolution of 100m. This dataset was downloaded using the Google Earth Engine. The workflow on how this dataset was downloaded can be found in this [GitLab repo](https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar) |
+
+The three raster datasets are joined together in a Master Raster which will be a raster layer with three channels and a resolution of 100 m. It will include the following information:
+1. Population counts from Worldpop constrained (2020)
+2. Building counts derived from ML Building Footprints (2021)
+3. Land Cover derived from Copernicus Land Cover (2019)
+
+### Monitoring Data
+
+The cyclone trigger mechanism is based on the data provided by NOAA (National Centers for Environmental Information). The cyclone storm tracks are provided within the [International Best Track Archive for Climate Stewardship (IBTrACS)](https://www.ncei.noaa.gov/products/international-best-track-archive) project. It is the most complete global collection of tropical cyclones available and merges recent and historical tropical cyclone data from multiple agencies to create a unified, publicly available, best-track dataset. IBTrACS was developed collaboratively with all the World Meteorological Organization (WMO) Regional Specialized Meteorological Centres, as well as other organizations and individuals from around the world.
+
+Tropical cyclone track data is available in various subsets, depending on the temporal scale of interest. Regional subsets can also be generated, with data for the South Indian Ocean being particularly relevant for this trigger mechanism.
