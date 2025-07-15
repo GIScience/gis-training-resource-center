@@ -140,10 +140,25 @@ The Video below shows the process for setting up the folder for december 2023.
 
 The International Best Track Archive for Climate Stewardship (IBTrACS) v04r01 data is updated three times a week (usually on Sunday, Tuesday, and Thursday), and could be updated more frequently to address specific needs and use cases. The latest updates in the correct file format can be found on their [website](https://www.ncei.noaa.gov/products/international-best-track-archive):
 
-1. Look for the `Access Methods` section and click on the `Shapefiles` section. The link leads to the following [website](https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r01/access/shapefile/).
-2. As we don't need the storm track data for the entire world and the entire archive we will only download a subset of the data. Look for the file named `IBTrACS.ACTIVE.list.v04r01.lines.zip` and click on it. The download will start automatically. This subset includes all the **storms active in the last 7 days**.
+1. Look for the `Access Methods` section and click on the `Shapefiles` section. The link leads to the following [website](https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r01/access/shapefile/) which can also be seen in the figure below.
+2. As we don't need the storm track data for the entire world and the entire archive we will only download a subset of the data. Look for the file named `IBTrACS.ACTIVE.list.v04r01.lines.zip` and click on it. The download will start automatically.
 3. Unzip this file and open it in QGIS.
 4. Open the attribute table and delete all the storm tracks that are not relevant for this analysis. Safe the updated storm track file.
+
+:::{note}
+
+The storm track subset `IBTrACS.ACTIVE.list.v04r01.lines.zip` contains all **storms active in the last 7 days**. If more comprehensive data is needed, it is advisable to download a subset by basin. For Madagascar, the most relevant region is **SI – South Indian**, which includes our Area of Interest. This dataset can be downloaded from the same website under the name `IBTrACS.SI.list.v04r01.lines.zip`. 
+
+:::
+
+
+```{figure} /fig/MAD_Trigger_stromtrack_download.PNG
+---
+width: 1000px
+name: 
+align: center
+---
+```
 
 
 ## Step 3: Open the project in QGIS and load the model in the QGIS Model Designer
