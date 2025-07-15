@@ -50,3 +50,331 @@ Tropical cyclone track data is available in various subsets, depending on the te
 As explained at the start of this chapter the developed trigger workflow is done automatically by a QGIS model. In this chapter it is explained how to run the automated model.
 
 The [QGIS Model Designer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html#the-qgis-model-designer) is a visual tool that allows users to create and edit a workflow with all tools available in QGIS that can be used repeatedly in a simple and time-efficient manner. It provides a graphical interface to build workflows by connecting geoprocessing tools and algorithms. The user can define inputs, outputs, and the flow of data between different processing steps.
+
+
+## Step 1: Setting up folder structure 
+
+
+```{figure} /fig/Drought_EAP_Worklow_Step_1_1.png
+---
+width: 1000px
+name: 
+align: center
+---
+```
+__Purpose:__ In this step we set up the correct folder structure to make the analysis easier and to ensure consistent results. 
+
+__Tool:__ No special tools or programs are needed
+
+``````{list-table}
+:header-rows: 1
+:widths: 10 25
+
+* - Instruction
+  - Folder Structure
+* - 1. Open the Folder “FbF_Cyclone_Monitoring_Trigger"
+    2. Open the subfolder "AA_Madagascar"
+    3. Copy the Template folder “TEMPLATE_Year_Month” and change the name to the current year and month. The result could be the folder "2022_05"
+    
+  -
+    ```{figure} /fig/Folder_structure_FbF_Drought_Monitoring_Trigger.drawio.svg
+    ---
+    width: 450px
+    name: 
+    align: center
+    ---
+    ```
+``````
+
+The Video below shows the process for setting up the folder for december 2023.
+
+
+## Step 2: Download of the storm track data
+
+The International Best Track Archive for Climate Stewardship (IBTrACS) v04r01 data is updated three times a week (usually on Sunday, Tuesday, and Thursday), and could be updated more frequently to address specific needs and use cases. The latest updates in the correct file format can be found on their [website](https://www.ncei.noaa.gov/products/international-best-track-archive):
+
+1. Look for the `Access Methods` section and click on the `Shapefiles` section. The link would be [this](https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r01/access/shapefile/).
+2. As we don't need the storm track data for the entire world and the entire archive we will only download a subset of the data. Look for the file named `IBTrACS.ACTIVE.list.v04r01.lines.zip` and click on it. The download will start automatically. This subset includes all the **storms active in the last 7 days**.
+3. Unzip this file and open it in QGIS.
+4. Open the attribute table and delete all the storm tracks that are not relevant for this analysis. Safe the updated storm track file.
+
+
+## Step 3: Open the project in QGIS and load the model in the QGIS Model Designer
+
+In this step we will open our Trigger project in QGIS and load the QGIS model which will automatically run the analysis for us.
+
+1. Open the file `Trigger_Model.qgz` by double clicking it.
+2. The file will open and you will lots of data pre-loaded. This data is required for running the QGIS model.
+3. Now open the QGIS Model Designer. The tool can be accessed under `Processing` -> `Modeler Designer`
+4. In the upper panel click `Model` -> `Open Model` and navigate to your folder "FbF_Cyclone_Monitoring_Trigger", mark the "Cyclones_EAP_MAD_Trigger.model3" file an click on `Open`. The model will open and you will see yellow, white, green and grey boxes.
+
+
+| Box | Significance | Description |
+| ----- | --- | --- |
+|Yellow| Model Input | Definition of the input data for the model the model will perform on. |
+|White| Algorithms | Algorithms or Tools are specific geoprocessing steps that perform specific tasks, such as clipping, reprojecting or buffering. |
+|Green| Model Output| The results created by the model (Output layers) are automatically added to your layers panel in your QGIS project interface. |
+|Grey| Comments| The boxes are used to further explain the specific processes. |
+
+
+## Step 4: Run the model
+
+```{figure} /fig/Drought_EAP_Worklow_Step_5_1_automated_model.png
+---
+width: 1000px
+name: 
+align: center
+---
+```
+
+__Model Input & Output__
+
+```{Attention}  
+In the dropdown list, only layers that are currently loaded in your QGIS Project will be displayed.
+```
+
+For each of these mandatory inputs, you click on the dropdown arrow and choose the respective file.
+
+1. In the upper panel click on `Model` -> `Run Model`. A window will open where you need to define the model input and output.
+2. The model needs the following 7 inputs:
+    1. `mdg_admbnda_adm1_BNGRC_OCHA_20181031`: ADM1
+    2. `ADM2_RISK`: ADM2 & Risk
+    3. `Isochrones`: CRM warehouse isochrones
+    4. `20240108_MAD_CRM_Warehouses_updated`: CRM warehouses
+    5. `IBTrACS.ACTIVE.list.v04r01.lines`: Cyclone Tracks
+    6. `hotosm_master_poi`: Master_POI
+    7. `MAD_pop_constrained_buildings_landcover`: Master Raster
+
+3. Further down, you have to specify where to save the output: 
+    1. `Trigger_activation`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
+    ```md
+    Trigger_activation
+    ```
+
+    2. `Indices`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
+    ```md
+    Indices
+    ```
+
+    3. `IPC_Phase_C`:Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
+    ```md
+    IPC_Phase_C
+    ```
+
+    4. `IPC_Phase_P`:Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
+    ```md
+    IPC_Phase_P
+    ```
+
+4. Click `Run`. Your results layer will appear in the main QGIS window. You can close the graphical modeller window.
+
+```{dropdown} Video: Input and output Model
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/model_input_output.mp4"></video>
+```
+
+```{figure} /fig/SRCS_Model_input.png
+---
+width: 500px
+name: 
+align: center
+---
+```
+
+
+## Step 5: Visualisation of results
+
+We will create two output maps.
+
+```{figure} /fig/Drought_EAP_Worklow_Step_14_1.png
+---
+width: 1000px
+name: 
+align: center
+---
+```
+
+__Purpose:__ Definition of how features are represented visually on the map.
+
+__Tool:__ [Symbology tab](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I.html#symbology-for-vector-data)
+
+__Impact of the Cyclone Event__
+
+
+
+1. Right click on the “Affected_districts” layer -> `Properties` -> `Symbology`
+2. In the down left corner click on `Style` -> `Load Style`
+3. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Cyclone_Monitoring_Trigger/layer_styles” folder and select the file __“affected_districts_style.qml”__.
+4. Click `Open`. Then click on `Load Style`
+5. Back in the “Layer Properties” Window click `Apply` and `OK`
+
+Do this same process for the following outputs:
+- relevant warehouses
+- the input storm track
+
+```{dropdown} Info: Trigger Activation Layer
+You will now see districts where no trigger is activated in green and districts with trigger activation in pink.
+
+The “Style_Trigger_Activation.qml” style layer is configured to show the district names only where the trigger is actually activated. If there is no trigger activation you can activate the admin 1 boundary layer for better map orientation (see __Administrative 2 Boundaries__ below)
+
+```{figure} /fig/Map_yes_trigger.PNG
+---
+width: 1000px
+name: 
+align: center
+---
+```
+
+__Risk Assessment__
+
+
+7. Right click on the "risk_assessment_districts" layer -> `Properties` -> `Symbology`
+8. In the down left corner click on `Style` -> `Load Style`
+9. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file __“somalia_risk_assessment_style.qml”__ style layer.
+10. Move the "risk_assessment_district" layer __below__ "Trigger_Activation" layer ([Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept.html?highlight=layer#layer-concept)).
+11. Back in the “Layer Properties” Window click `Apply` and `OK`
+
+
+```{dropdown} Info: Risk Assessment Layer
+For the creation of an __Intervention Map__ we will have to add the risk assessment data and the respective style file.
+For this first of all load from "FbF_Drought_Monitoring_Trigger/Fixed_data/Risk_Assessment" the file "risk_assessment_districts.gpkg". This file is the output of the conducted risk assessment and contains a risk value for each district of Somaliland and Somalia.  In order to visualize it 
+```
+
+__Administrative 2 Boundaries (Regions)__
+
+12. Right click on the "Som_Admbnda_Adm1_UNDP" (Regiond) layer -> `Properties` -> `Symbology`
+13. In the down left corner click on `Style` -> `Load Style`
+14. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file __“somalia_risk_assessment_style.qml”__.
+15. Click `Open`. Then click on `Load Style` 
+16. Back in the “Layer Properties” Window click `Apply` and `OK`
+17. Add a the OpenStreetMap basemap by clicking on `Layer` -> `Add Layer` -> `Add XYZ layer...` -> Select the OpenStreetMap. Click `Add`. ([Wiki basemap](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html?highlight=osm#basemaps))
+18. Place the OpenStreetMap basemap on the bottom.
+19. Delet all layers exept:
+    * Trigger_activation
+    * risk_assessment_districts
+    * Som_Admbnda_Adm1_UNDP
+    * OpenStreetMap
+
+```{dropdown} Video: Visualisation of results
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Trigger_model_style.mp4"></video>
+```
+
+``````{list-table}
+:header-rows: 1
+:widths: 20 20
+
+* - Intervention Map __without__ Trigger activation
+  - Intervention Map __with__ Trigger activation
+* - 
+    ```{figure} /fig/Map_no_trigger.PNG
+    ---
+    width: 1000px
+    name: 
+    align: center
+    ---
+    ```
+    
+  -
+    ```{figure} /fig/Map_yes_trigger.PNG
+    ---
+    width: 450px
+    name: 
+    align: center
+    ---
+    ```
+``````
+
+```{Attention}
+Remember the [layer concept](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept.html?highlight=layer#layer-concept) and make sure the basemap layer is at the bottom of your layers panel.
+```
+
+
+
+## Step 6: Making the Print Map
+
+```{figure} /fig/Drought_EAP_Worklow_Step_15_1.png
+---
+width: 1000px
+name: 
+align: center
+---
+```
+__Purpose:__ Viualisation of the map features in a printable map layout
+
+__Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
+
+
+1. If not done before, delet all layers expect __Trigger_activation__, __risk_assessment_districts__ and __OpenStreetMap__
+2. Open a new print layout by clicking on `Project` -> `New Print Layout` -> enter the name of your current Project e.g "2022_04".
+3. Go the the __FbF_Drought_Monitoring_Trigger__` folder and drag and drop the file `Trigger_activation_Intervention_map.qpt` in the print layout
+4. Change the date to the current date by clicking on "Further map info…" in the items panel. Click on the `Item Properties` tab and scroll down. Here you can change the date in the `Main Properties` field.
+5. Adjust the Lgend by clicking on the legend in the  `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there check if you have to open the dropdown. Make sure `Auto update` is not checked.
+    * Remove all itemes in the legend be clicking on the item and then on the red minus icon below.
+    * Add __Trigger_activation__ and __risk_assessment_districts__ to the legend by clicking on the green plus and click on the layer and click `ok`
+ 
+
+```{dropdown} Video: Making print map
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_print_map.mp4"></video>
+```
+
+```{Attention}
+Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.
+```
+
+
+In order to easily visualize the output of the trigger analysis we provide you with a 
+[map template](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#map-templates) that can be used as a base for your visualization. You can find the template in the following directory: ".../FbF_Drought_Monitoring_Trigger/maps_somalia_template_risk_assessment.qpt".
+
+You can also adapt the template to your needs and preferences. You can find help [here](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#print-layout).
+
+```{Attention}
+Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.
+```
+
+## Step 7: Exporting the Map 
+
+
+```{figure} /fig/Drought_EAP_Worklow_Step_16_1.png
+---
+width: 1000px
+name: 
+align: center
+---
+```
+
+__Purpose:__ Export the designed and finalized map layout in order tp print it as a pdf or format of your choice.
+
+
+__Tool:__ [Print Layout](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
+
+When you have finished the design of you map you can export it as pdf or image file in different datafromats.
+
+__Export as Image__
+
+1. In the print layout click on `Layer` -> `Export as Image`
+2. Chose the __Result__ folder in the folder you have created in step 1. Give the file the name of the project e.g 2022_04
+3.  Click on `Save`
+4. The window "Image Export Options" will appear. Click `Save`
+Now the image can be found in the result folder in the folder you created in Step 1
+
+
+__Export as PDF__
+
+1. In the print layout click on `Layer` -> `Export as PDF`
+2. Chose the __Result__ folder in the folder you have created in step 1. Give the file the name of the project e.g 2022_04
+3.  Click on `Save`
+4. The window "PDF Export Options" will appear.  For the best results, select the `lossless` image compression.
+5. Click `Save`
+Now the image can be found in the result folder in the folder you created in Step 1
+
+```{dropdown} Video: Export image and PDF
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_trigger_export_image_pdf.mp4"></video>
+```
+
+
+```{figure} /fig/map_output_example2.png
+---
+width: 1000px
+name: 
+align: center
+---
+```
