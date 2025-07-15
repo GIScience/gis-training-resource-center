@@ -45,6 +45,19 @@ The cyclone trigger mechanism is based on the data provided by NOAA (National Ce
 
 Tropical cyclone track data is available in various subsets, depending on the temporal scale of interest. Regional subsets can also be generated, with data for the South Indian Ocean being particularly relevant for this trigger mechanism.
 
+
+# Functionality of the Trigger Workflow
+
+The Trigger Process concept is displayed in {ref}`fig-trigger-concept`.
+
+```{figure} /fig/MAD_Trigger_concept.png
+---
+width: 1000px
+name: fig-trigger-concept
+align: center
+---
+```
+
 # Automated Trigger Workflow
 
 As explained at the start of this chapter the developed trigger workflow is done automatically by a QGIS model. In this chapter it is explained how to run the automated model.
@@ -93,7 +106,7 @@ The Video below shows the process for setting up the folder for december 2023.
 
 The International Best Track Archive for Climate Stewardship (IBTrACS) v04r01 data is updated three times a week (usually on Sunday, Tuesday, and Thursday), and could be updated more frequently to address specific needs and use cases. The latest updates in the correct file format can be found on their [website](https://www.ncei.noaa.gov/products/international-best-track-archive):
 
-1. Look for the `Access Methods` section and click on the `Shapefiles` section. The link would be [this](https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r01/access/shapefile/).
+1. Look for the `Access Methods` section and click on the `Shapefiles` section. The link leads to the following [website](https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r01/access/shapefile/).
 2. As we don't need the storm track data for the entire world and the entire archive we will only download a subset of the data. Look for the file named `IBTrACS.ACTIVE.list.v04r01.lines.zip` and click on it. The download will start automatically. This subset includes all the **storms active in the last 7 days**.
 3. Unzip this file and open it in QGIS.
 4. Open the attribute table and delete all the storm tracks that are not relevant for this analysis. Safe the updated storm track file.
@@ -135,7 +148,7 @@ In the dropdown list, only layers that are currently loaded in your QGIS Project
 
 For each of these mandatory inputs, you click on the dropdown arrow and choose the respective file.
 
-1. In the upper panel click on `Model` -> `Run Model`. A window will open where you need to define the model input and output.
+1. In the upper panel click on `Model` -> `Run Model`. A new window will open where you need to define the model input and output.
 2. The model needs the following 7 inputs:
     1. `mdg_admbnda_adm1_BNGRC_OCHA_20181031`: ADM1
     2. `ADM2_RISK`: ADM2 & Risk
