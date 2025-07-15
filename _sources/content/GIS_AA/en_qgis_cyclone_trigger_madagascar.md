@@ -14,6 +14,22 @@ Setting triggers is one of the cornerstones of the Forecast-based Financing syst
 
 **Activation Trigger:** if the Meteo Madagascar (DGM) forecast indicates landfall of a tropical cyclone with wind speeds in excess of 118 km/h within the next 48-72 hours.
 
+
+# Functionality of the Trigger Workflow
+
+The Trigger Process concept is displayed in the following figure.
+
+```{figure} /fig/MAD_Trigger_concept.png
+---
+width: 1000px
+name: fig-trigger-concept
+align: center
+---
+```
+
+The entire trigger workflow will be run in a QGIS model, which automates the spatial analysis for assessing the impact of tropical cyclones. It integrates cyclone storm track data with administrative boundaries, population data, infrastructure, and service locations to identify and quantify affected areas and resources. 
+
+
 ## Trigger Input Data
 
 For the trigger mechanism to work properly we currently use different datasets: data that we assume to be fixed in the near term, and variable data which describe the datasets that will be checked for triggering on a regular basis depending on the occurrence of anticipated cyclone events. 
@@ -24,7 +40,7 @@ By fixed data we mean datasets that are needed for the trigger to work, that wil
 
 | Dataset| Source | Description |
 | ----- | --- | --- |
-| Administrative Boundaries | [HDX](https://data.humdata.org/dataset/cod-ab-mdg) | The administrative boundaries on level 0-4 for Madagascar can be accessed via HDX provided by OCHA. For this trigger mechanism we provide the administrative boundaries on level 2 (district level) as a shapefile.  |
+| Administrative Boundaries | [HDX](https://data.humdata.org/dataset/cod-ab-mdg) | The administrative boundaries on level 0-4 for Madagascar can be accessed via HDX provided by OCHA. For this trigger mechanism we provide the administrative boundaries on level 1 (regional level) and 2 (district level) as a shapefile. |
 | Population Counts | [WorldPop](https://hub.worldpop.org/geodata/summary?id=49646) | The worldpop dataset in `.geotif` raster format provides the estimated total number of people per grid-cell for the year 2020. We will be working with the Constrained Individual countries 2020 at a resolution of 100m. |
 | Buildings Counts | [Global ML Building Footprints](https://gee-community-catalog.org/projects/msbuildings/) | The building counts dataset in `.geotif` raster format counts the number of buildings per 100m grid cell. The workflow on how this dataset was created can be found in this [GitLab repo](https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar) |
 | Land Cover | [ Copernicus Land Cover](https://land.copernicus.eu/en/products/global-dynamic-land-cover/copernicus-global-land-service-land-cover-100m-collection-3-epoch-2019-globe) | The land cover dataset in `.geotif` raster format provides an overview over the dominant land cover type at a resolution of 100m. This dataset was downloaded using the Google Earth Engine. The workflow on how this dataset was downloaded can be found in this [GitLab repo](https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar) |
@@ -46,21 +62,39 @@ The cyclone trigger mechanism is based on the data provided by NOAA (National Ce
 Tropical cyclone track data is available in various subsets, depending on the temporal scale of interest. Regional subsets can also be generated, with data for the South Indian Ocean being particularly relevant for this trigger mechanism.
 
 
-# Functionality of the Trigger Workflow
-
-The Trigger Process concept is displayed in {ref}`fig-trigger-concept`.
-
-```{figure} /fig/MAD_Trigger_concept.png
----
-width: 1000px
-name: fig-trigger-concept
-align: center
----
-```
-
 # Automated Trigger Workflow
 
-As explained at the start of this chapter the developed trigger workflow is done automatically by a QGIS model. In this chapter it is explained how to run the automated model.
+As explained at the start of this chapter the developed trigger workflow is done automatically by a QGIS model. In this chapter we will explain its functionality and in a subsequent step it is explained how to run the automated model.
+
+## Functionality of the model
+
+The following key processing steps are run inside the model:
+
+1. Cyclone Buffering & Impact Area Extraction
+The new cyclone track is buffered to create a zone of potential impact. This buffer is dissolved to form a single affected area polygon. The resulting layer is the output cyclone area, used throughout the rest of the model.
+
+2. Administrative Units Affected
+Admin 2 (district-level) polygons are intersected with the cyclone buffer to extract the Affected districts. Admin 1 (region-level) boundaries are also extracted and used to identify neighboring regions that may still be at risk.
+
+3. Population Impact
+Zonal statistics are used to calculate the total affected population within the cyclone area. The result is saved as Affected Population and exported to a spreadsheet.
+
+4. Infrastructure Impact
+The model intersects the cyclone area with:
+- Building data to count number of affected buildings.
+- POIs (Points of interest) to identify affected education facilities and health site infrastructure.
+The results are exported as:
+- Affected Buildings
+- Affected POIs Table, including a count of impacted education and health sites.
+
+5. Warehouse Accessibility
+Using the affected regions and buffered road data, the model identifies:
+- Relevant Technicians
+- Warehouses within reach of the affected area.
+The output layer is relevant warehouses, indicating logistical support readiness.
+
+
+## How to run the model
 
 The [QGIS Model Designer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html#the-qgis-model-designer) is a visual tool that allows users to create and edit a workflow with all tools available in QGIS that can be used repeatedly in a simple and time-efficient manner. It provides a graphical interface to build workflows by connecting geoprocessing tools and algorithms. The user can define inputs, outputs, and the flow of data between different processing steps.
 

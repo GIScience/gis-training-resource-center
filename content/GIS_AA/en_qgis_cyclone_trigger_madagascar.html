@@ -550,6 +550,9 @@ document.write(`
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">QGIS Trigger Workflow for Madagascar</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trigger-statement">Trigger Statement</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#functionality-of-the-trigger-workflow">Functionality of the Trigger Workflow</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trigger-input-data">Trigger Input Data</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fixed-data">Fixed Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#monitoring-data">Monitoring Data</a></li>
@@ -557,8 +560,9 @@ document.write(`
 </li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#functionality-of-the-trigger-workflow">Functionality of the Trigger Workflow</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#automated-trigger-workflow">Automated Trigger Workflow</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functionality-of-the-model">Functionality of the model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-run-the-model">How to run the model</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-setting-up-folder-structure">Step 1: Setting up folder structure</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-download-of-the-storm-track-data">Step 2: Download of the storm track data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-open-the-project-in-qgis-and-load-the-model-in-the-qgis-model-designer">Step 3: Open the project in QGIS and load the model in the QGIS Model Designer</a></li>
@@ -593,6 +597,14 @@ document.write(`
 <p><strong>Pre-Activation Trigger:</strong> at least one of the meteorological forecasts from Meteo Madagascar, RMSC La Reunion, or ECMWF projects a greater than 50% likelihood of landfall by a tropical cyclone of tropical storm strength or higher within the next 7 days.</p>
 <p><strong>Activation Trigger:</strong> if the Meteo Madagascar (DGM) forecast indicates landfall of a tropical cyclone with wind speeds in excess of 118 km/h within the next 48-72 hours.</p>
 </section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="functionality-of-the-trigger-workflow">
+<h1>Functionality of the Trigger Workflow<a class="headerlink" href="#functionality-of-the-trigger-workflow" title="Permalink to this heading">#</a></h1>
+<p>The Trigger Process concept is displayed in the following figure.</p>
+<figure class="align-center" id="fig-trigger-concept">
+<a class="reference internal image-reference" href="../../_images/MAD_Trigger_concept.png"><img alt="../../_images/MAD_Trigger_concept.png" src="../../_images/MAD_Trigger_concept.png" style="width: 1000px;" /></a>
+</figure>
+<p>The entire trigger workflow will be run in a QGIS model, which automates the spatial analysis for assessing the impact of tropical cyclones. It integrates cyclone storm track data with administrative boundaries, population data, infrastructure, and service locations to identify and quantify affected areas and resources.</p>
 <section id="trigger-input-data">
 <h2>Trigger Input Data<a class="headerlink" href="#trigger-input-data" title="Permalink to this heading">#</a></h2>
 <p>For the trigger mechanism to work properly we currently use different datasets: data that we assume to be fixed in the near term, and variable data which describe the datasets that will be checked for triggering on a regular basis depending on the occurrence of anticipated cyclone events.</p>
@@ -609,7 +621,7 @@ document.write(`
 <tbody>
 <tr class="row-even"><td><p>Administrative Boundaries</p></td>
 <td><p><a class="reference external" href="https://data.humdata.org/dataset/cod-ab-mdg">HDX</a></p></td>
-<td><p>The administrative boundaries on level 0-4 for Madagascar can be accessed via HDX provided by OCHA. For this trigger mechanism we provide the administrative boundaries on level 2 (district level) as a shapefile.</p></td>
+<td><p>The administrative boundaries on level 0-4 for Madagascar can be accessed via HDX provided by OCHA. For this trigger mechanism we provide the administrative boundaries on level 1 (regional level) and 2 (district level) as a shapefile.</p></td>
 </tr>
 <tr class="row-odd"><td><p>Population Counts</p></td>
 <td><p><a class="reference external" href="https://hub.worldpop.org/geodata/summary?id=49646">WorldPop</a></p></td>
@@ -642,17 +654,43 @@ document.write(`
 </section>
 </section>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="functionality-of-the-trigger-workflow">
-<h1>Functionality of the Trigger Workflow<a class="headerlink" href="#functionality-of-the-trigger-workflow" title="Permalink to this heading">#</a></h1>
-<p>The Trigger Process concept is displayed in <span class="xref std std-ref">fig-trigger-concept</span>.</p>
-<figure class="align-center" id="fig-trigger-concept">
-<a class="reference internal image-reference" href="../../_images/MAD_Trigger_concept.png"><img alt="../../_images/MAD_Trigger_concept.png" src="../../_images/MAD_Trigger_concept.png" style="width: 1000px;" /></a>
-</figure>
-</section>
 <section class="tex2jax_ignore mathjax_ignore" id="automated-trigger-workflow">
 <h1>Automated Trigger Workflow<a class="headerlink" href="#automated-trigger-workflow" title="Permalink to this heading">#</a></h1>
-<p>As explained at the start of this chapter the developed trigger workflow is done automatically by a QGIS model. In this chapter it is explained how to run the automated model.</p>
+<p>As explained at the start of this chapter the developed trigger workflow is done automatically by a QGIS model. In this chapter we will explain its functionality and in a subsequent step it is explained how to run the automated model.</p>
+<section id="functionality-of-the-model">
+<h2>Functionality of the model<a class="headerlink" href="#functionality-of-the-model" title="Permalink to this heading">#</a></h2>
+<p>The following key processing steps are run inside the model:</p>
+<ol class="arabic simple">
+<li><p>Cyclone Buffering &amp; Impact Area Extraction
+The new cyclone track is buffered to create a zone of potential impact. This buffer is dissolved to form a single affected area polygon. The resulting layer is the output cyclone area, used throughout the rest of the model.</p></li>
+<li><p>Administrative Units Affected
+Admin 2 (district-level) polygons are intersected with the cyclone buffer to extract the Affected districts. Admin 1 (region-level) boundaries are also extracted and used to identify neighboring regions that may still be at risk.</p></li>
+<li><p>Population Impact
+Zonal statistics are used to calculate the total affected population within the cyclone area. The result is saved as Affected Population and exported to a spreadsheet.</p></li>
+<li><p>Infrastructure Impact
+The model intersects the cyclone area with:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Building data to count number of affected buildings.</p></li>
+<li><p>POIs (Points of interest) to identify affected education facilities and health site infrastructure.
+The results are exported as:</p></li>
+<li><p>Affected Buildings</p></li>
+<li><p>Affected POIs Table, including a count of impacted education and health sites.</p></li>
+</ul>
+<ol class="arabic simple" start="5">
+<li><p>Warehouse Accessibility
+Using the affected regions and buffered road data, the model identifies:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Relevant Technicians</p></li>
+<li><p>Warehouses within reach of the affected area.
+The output layer is relevant warehouses, indicating logistical support readiness.</p></li>
+</ul>
+</section>
+<section id="how-to-run-the-model">
+<h2>How to run the model<a class="headerlink" href="#how-to-run-the-model" title="Permalink to this heading">#</a></h2>
 <p>The <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html#the-qgis-model-designer">QGIS Model Designer</a> is a visual tool that allows users to create and edit a workflow with all tools available in QGIS that can be used repeatedly in a simple and time-efficient manner. It provides a graphical interface to build workflows by connecting geoprocessing tools and algorithms. The user can define inputs, outputs, and the flow of data between different processing steps.</p>
+</section>
 <section id="step-1-setting-up-folder-structure">
 <h2>Step 1: Setting up folder structure<a class="headerlink" href="#step-1-setting-up-folder-structure" title="Permalink to this heading">#</a></h2>
 <figure class="align-center">
@@ -1049,6 +1087,9 @@ Video: Export image and PDF<div class="sd-summary-down docutils">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">QGIS Trigger Workflow for Madagascar</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trigger-statement">Trigger Statement</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#functionality-of-the-trigger-workflow">Functionality of the Trigger Workflow</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trigger-input-data">Trigger Input Data</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fixed-data">Fixed Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#monitoring-data">Monitoring Data</a></li>
@@ -1056,8 +1097,9 @@ Video: Export image and PDF<div class="sd-summary-down docutils">
 </li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#functionality-of-the-trigger-workflow">Functionality of the Trigger Workflow</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#automated-trigger-workflow">Automated Trigger Workflow</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functionality-of-the-model">Functionality of the model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-run-the-model">How to run the model</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-setting-up-folder-structure">Step 1: Setting up folder structure</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-download-of-the-storm-track-data">Step 2: Download of the storm track data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-open-the-project-in-qgis-and-load-the-model-in-the-qgis-model-designer">Step 3: Open the project in QGIS and load the model in the QGIS Model Designer</a></li>
