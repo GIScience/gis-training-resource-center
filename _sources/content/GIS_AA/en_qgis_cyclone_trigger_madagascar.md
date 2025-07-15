@@ -99,7 +99,7 @@ The output layer is relevant warehouses, indicating logistical support readiness
 The [QGIS Model Designer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html#the-qgis-model-designer) is a visual tool that allows users to create and edit a workflow with all tools available in QGIS that can be used repeatedly in a simple and time-efficient manner. It provides a graphical interface to build workflows by connecting geoprocessing tools and algorithms. The user can define inputs, outputs, and the flow of data between different processing steps.
 
 
-## Step 1: Setting up folder structure 
+## Step 1: Setting up folder structure !!NEEDS TO BE FIXED!!
 
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_1_1.png
@@ -138,11 +138,11 @@ The Video below shows the process for setting up the folder for december 2023.
 
 ## Step 2: Download of the storm track data
 
-The International Best Track Archive for Climate Stewardship (IBTrACS) v04r01 data is updated three times a week (usually on Sunday, Tuesday, and Thursday), and could be updated more frequently to address specific needs and use cases. The latest updates in the correct file format can be found on their [website](https://www.ncei.noaa.gov/products/international-best-track-archive):
+The **International Best Track Archive for Climate Stewardship (IBTrACS)** v04r01 data is updated three times a week (usually on Sunday, Tuesday, and Thursday), and could be updated more frequently to address specific needs and use cases. The latest updates in the correct file format can be found on their [website](https://www.ncei.noaa.gov/products/international-best-track-archive):
 
-1. Look for the `Access Methods` section and click on the `Shapefiles` section. The link leads to the following [website](https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r01/access/shapefile/) which can also be seen in the figure below.
-2. As we don't need the storm track data for the entire world and the entire archive we will only download a subset of the data. Look for the file named `IBTrACS.ACTIVE.list.v04r01.lines.zip` and click on it. The download will start automatically.
-3. Unzip this file and open it in QGIS.
+1. Look for the `Access Methods` section and click on `Shapefiles`. The link leads to the following [website](https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r01/access/shapefile/) which can also be seen in the figure below.
+2. Since we don’t need storm track data for the entire world or the full archive, we will download only a relevant subset. Locate for the file named `IBTrACS.ACTIVE.list.v04r01.lines.zip` and click on it - the download should begin automatically.
+3. Unzip the file and open it in QGIS.
 4. Open the attribute table and delete all the storm tracks that are not relevant for this analysis. Safe the updated storm track file.
 
 :::{note}
@@ -179,7 +179,7 @@ In this step we will open our Trigger project in QGIS and load the QGIS model wh
 |Grey| Comments| The boxes are used to further explain the specific processes. |
 
 
-## Step 4: Run the model
+## Step 4: Run the model !!NAMES IN THIS SECTION NEED TO BE FINALIZED!!
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_5_1_automated_model.png
 ---
@@ -206,6 +206,8 @@ For each of these mandatory inputs, you click on the dropdown arrow and choose t
     5. `IBTrACS.ACTIVE.list.v04r01.lines`: Cyclone Tracks
     6. `hotosm_master_poi`: Master_POI
     7. `MAD_pop_constrained_buildings_landcover`: Master Raster
+
+THIS ENTIRE LIST NEEDS UPDATED NAMES
 
 3. Further down, you have to specify where to save the output: 
     1. `Trigger_activation`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
@@ -259,7 +261,7 @@ __Purpose:__ Definition of how features are represented visually on the map.
 
 __Tool:__ [Symbology tab](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I.html#symbology-for-vector-data)
 
-__Impact of the Cyclone Event__
+__Affected regions of the Cyclone Event and relevant warehouses__
 
 
 
@@ -272,11 +274,10 @@ __Impact of the Cyclone Event__
 Do this same process for the following outputs:
 - relevant warehouses
 - the input storm track
+- and the output cyclone area
 
-```{dropdown} Info: Trigger Activation Layer
-You will now see districts where no trigger is activated in green and districts with trigger activation in pink.
-
-The “Style_Trigger_Activation.qml” style layer is configured to show the district names only where the trigger is actually activated. If there is no trigger activation you can activate the admin 1 boundary layer for better map orientation (see __Administrative 2 Boundaries__ below)
+```{dropdown} Output after styling the layer
+You will now see affected districts and the relevant warehouses clearly visible. The outline of the input storm track can also be seen on the map. 
 
 ```{figure} /fig/Map_yes_trigger.PNG
 ---
@@ -286,7 +287,7 @@ align: center
 ---
 ```
 
-__Risk Assessment__
+__Cyclone Impact on Population and Infrastructure__
 
 
 7. Right click on the "risk_assessment_districts" layer -> `Properties` -> `Symbology`
