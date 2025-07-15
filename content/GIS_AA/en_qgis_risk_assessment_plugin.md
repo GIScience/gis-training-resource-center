@@ -3,9 +3,9 @@
 
 ## Introduction & Purpose
 
-In the context of the Forecast based Financing methodology the conduction of a robust risk assessment is a crucial step towards the development of an Early Action Protocol. A risk analysis serves to understand what kinds of disaster impacts can be expected from a particular type of hazard and to identify who and what is exposed and vulnerable to this hazard and why. By overlaying the information on exposure, vulnerability and lack of coping capacity, it will become clear which areas are predicted to be most severely impacted. These areas can then be targeted as priority areas for early action to ensure the most at-risk communities receive assistance before the event happens.
+In the context of the Anticipatory Action methodology the conduction of a robust risk assessment is a crucial step towards the development of an Early Action Protocol. A risk analysis serves to understand what kinds of disaster impacts can be expected from a particular type of hazard and to identify who and what is exposed and vulnerable to this hazard and why. By overlaying the information on exposure, vulnerability and lack of coping capacity, it will become clear which areas are predicted to be most severely impacted. These areas can then be targeted as priority areas for early action to ensure the most at-risk communities receive assistance before the event happens.
 The collection and processing of this information varies throughout different contexts but the calculation scheme to combine the information to a risk score remains consistent. At HeiGIT we have developed a risk assessment workflow that is applicable across different countries and disaster contexts. To make the process more user-friendly, we have chosen to convert it into a QGIS Plugin. This makes it more accessible and easier to use, especially for individuals with limited technical knowledge.
-The plugin automatically calculates the risk based on the exposure, susceptibility and coping capacity indicators entered by the user. Hereby the user cannot only assign different weights and directions to the indicators but also receive different population measures based on worldpop data (sex and age structures) and offset them against chosen indicators.
+The plugin automatically calculates the risk based on the exposure, vulnerability and coping capacity indicators entered by the user. 
 
 
 ## Requirements & Installation
@@ -43,21 +43,18 @@ The Plugin is available for QGIS Version 3.28 onwards.
 To install plugins, you need to open the Plugin Manager:
 - Click on the menu item Plugins > Manage and install Plugins.
 - Click on Settings and check the box “Show also experimental plugins”
-
-
-```{figure} /fig/experimental_plugins.png
----
-width: 500px
-name: experimental_plugins
-align: center
----
-```
-
-
 - In the dialog that opens, find the Risk Assessment plugin.
 - Find information about the plugin by selecting it in the list.
 - Install it by clicking the Install Plugin button below the plugin information panel.
 - Close the dialog. The Risk Assessment plugin should now be available.
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/risk_assessment_download.mp4"></video>
+
+
+For further information about installation and usage of plugins visit the [QGIS Training Platform](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html).
+
+
+## User Interface
 
 How to open the plugin interface:
 
@@ -68,111 +65,92 @@ you can also search for “Risk Assessment” using the Search function of the P
 - To execute the plugin, just double-click on its name.
 - A dialog called Calculate Risk Assessment should appear.
 
-For further information about installation and usage of plugins visit the [QGIS Training Platform](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html).
-
-
-## User Interface
-
-The plugin needs 7 inputs, from which 6 are csv text files and 1 is a vector file. The input of these 7 files is mandatory. The majority of the files can be produced and adjusted in Excel. This allows for flexibility to adjust input to local contexts.
-The requested input information can be browsed for via the button on the right. These files need to be present on the user's computer.
-It is important to follow the input file specifications exactly (see chapter 4.1.).
-The plugin will provide the user with two outputs. The Risk Assessment results on the administrative boundaries as a vector file containing geometries ready to be displayed in QGIS and the Risk Assessment results in a table format. The desired data format of the vector and text outputs can be chosen during the saving process. 
-
-
-```{figure} /fig/Interface.png
----
-height: 600px
-name: Interface
-align: center
----
-```
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/risk_assessment_interface.mp4"></video>
 
 
 ## Data Input
 
-The required input files must follow a given structure. You find below  the required input files to conduct the risk assessment and specifications they must follow:
+The plugin needs 5 inputs, from which 4 are csv text files and 1 is a vector file. The entry of 4 of these 5 files is mandatory. The coping capacity file is optional, but is strongly recommended for a more comprehensive and realistic risk assessment. The majority of the files can be produced and adjusted in Excel. This allows for flexibility to adjust input to local contexts.
+The requested input information can be browsed for via the button on the right. These files need to be present on the user's computer.
+It is important to follow the input file specifications exactly (see chapter 4.1.).
+The plugin will provide the user with two outputs. The Risk Assessment results on the administrative boundaries as a vector file containing geometries ready to be displayed in QGIS and the Risk Assessment results in a table format. The desired data format of the vector and text outputs can be chosen during the saving process. 
 
-### 1. Administrative boundaries level 2
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/risk_assessment_data_input.mp4"></video>
 
-A geospatial vector format (geojson, geopackage, shapefile,…) containing the administrative boundaries on admin level 2 and P-Codes of the respective countries. These can be found on the websites of national governments or on Humanitarian Data Exchange, for example. This dataset has two obligatory columns: “ADM2_PCODE” containing the P_Codes and “ADM2_EN” containing the district names. The administrative boundary data does not require a specific coordinate reference system (CRS), but the output and result will have the same CRS as the input.
+
+The required input files must follow a given structure. Here you find the required input files to conduct the risk assessment and specifications they must follow:
+
+### 1. Administrative boundaries 
+
+A geospatial vector format (geojson, geopackage, shapefile,…) containing the administrative boundaries and P-Codes of the respective countries. These can be found on the websites of national governments or on Humanitarian Data Exchange, for example. This dataset has two obligatory columns: “ADM_PCODE” containing the P_Codes and “ADM_EN” containing the names of the administrative boundaries. The administrative boundary data does not require a specific coordinate reference system (CRS), but the output and result will have the same CRS as the input.
+
+```{figure} /fig/mada_adm.png
+---
+height: 400px
+name: mada_adm
+align: center
+---
+```
 
 ### 2. Risk Assessment indicators
 
 For the Risk Assessment indicators the following 3 “csv”-files are mandatory:
 
-a) __Exposure indicators:__ A "csv"-file containing a mandatory column "ADM2_PCODE" with the district codes and all columns that are included in the calculation of the exposure-indicator. All columns that are not included in the calculation must start with the expression "ADM..." (for example “ADM_NAMES”)./
+a) __Exposure indicators:__ A "csv"-file containing a mandatory column "ADM_PCODE" with the P_codes of the administrative boundaries and all columns that are included in the calculation of the exposure-indicator. All columns that are not included in the calculation must start with the expression "ADM..." (for example “ADM_NAMES”)./
 
-b.) __Vulnerability indicators:__ A "csv"-file containing a mandatory column "ADM2_PCODE" with the district codes and all columns that are included in the calculation of the vulnerability-indicator. All columns that are not included in the calculation must start with the expression "ADM..."./
+b.) __Vulnerability indicators:__ A "csv"-file containing a mandatory column "ADM_PCODE" with the P_codes of the administrative boundaries and all columns that are included in the calculation of the vulnerability-indicator. All columns that are not included in the calculation must start with the expression "ADM..."./
 
-c) __Coping Capacity indicators:__ A "csv"-file containing a mandatory column "ADM2_PCODE" with the district codes and all columns that are included in the calculation of the coping-indicator. All columns that are not included in the calculation must start with the expression "ADM...".
+c) __Coping Capacity indicators [optional]:__ A "csv"-file containing a mandatory column "ADM_PCODE" with the P_codes of the administrative boundaries and all columns that are included in the calculation of the coping-indicator. All columns that are not included in the calculation must start with the expression "ADM...".
 
 
-```{figure} /fig/Indicators_Vulnerability.png
+```{figure} /fig/mada_coping.png
 ---
 height: 400px
-name: Indicators_Vulnerability
+name: mada_coping
 align: center
 ---
 ```
 
-### Weights-file
+### 3. Weights
 
-A "csv"-file containing a column "variable_name" with all the column names of the previous "csv"-files, which are to be weighted differently in the calculation. A factor for “weight” and “direction” can be determined. 
+A "csv"-file containing a column "variable_name" with all the column names of the previous "csv"-files, which are to be weighted differently in the calculation. The file must also contain the columns “category”, “weight” and “direction”. The category column indicates the category of the indicator: “exp” for exposure, “cop” for coping capacity and “vul” for vulnerability. The weight determines the importance of each indicator. For each category (exp, cop and vul), the sum of the weights must add up to 1. If this is not the case, the plugin will automatically normalize the weights in order to make the sum equal to 1 within each category. A message will be printed with the value of the transformed weights. For more information about weights and directions see chapter weight and directions.
 
-```{figure} /fig/weights_example.PNG
+```{figure} /fig/mada_weights.png
 ---
 height: 400px
-name: weights_example
+name: mada_weights
 align: center
 ---
 ```
 
-```{attention} 
-The column name must be given the appropriate prefix (vul_, cop_, exp_) depending on which dimension it comes from. The file must also contain the columns "weight" and "direction", which indicate the weight and direction of the variable (e.g. schools = cop_schools). For more information about weights and directions see chapter weight and directions..
-```
+### WeightsGenerator Plugin
 
-| Dimension| Prefix | 
-| ----- | --- | 
-|Exposure| exp_|
-|Vulnerability| vul_| 
-|Coping Capacity|cop_|
+When you install the Risk Assessment plugin, another plugin is automatically installed alongside it: the WeightsGenerator plugin. This tool allows you to manually assign weights and directions to indicators, without the need to load a pre-prepared weights CSV file.
 
+To verify that the plugin was installed correctly, look for the following icon on the QGIS toolbar:
 
-### Transform-file
-
-A "csv"-file containing a column "variable_name" with all the column names of the previous "csv"-files, that are to be divided by population.
-
-
-```{figure} /fig/transfrom_example.png
+```{figure} /fig/weightsgenerator.png
 ---
 height: 400px
-name: transfrom_example
+name: weightsgenerator
 align: center
 ---
 ```
 
-The transform-file is used to offset certain indicators against the worldpop population. The column “variable_name” provides names of the indicator columns of the indicator files of one of the dimension exposure, vulnerability or coping capacity,  that are to be divided by population. These variables are existent, they must be consistent with the respective variable names in the indicator input or population "csv"-files.
-The column “new_name” provides the name of the column with the transformed values. It is important to aggregate the prefix describing the dimension it comes from (vul_, exp_, cop_). The column "factor" (default to 1) provides the factor by which the specific indicator value will be divided. 
-Example: if you assign the indicator „healthsites“  the factor 1 it will give you a value on how many healthsites the admin district has per person. Assigning the factor 10.000 will result in the number of healthsites per 10.000 inhabitants.
+Clicking the icon opens a window where you can browse exposure, coping, and vulnerability indicators using the button on the right. Once selected, the indicators will appear in the table below.
 
-### Population-file
+You can manually enter the weight and direction values in the corresponding rows. If you click the "Default weights" button in the bottom-right corner, each indicator will be assigned a weight value of 1. This means that no weighting is applied—all indicators are treated as equally important in the risk calculation.
 
-The required "csv"-file containing population information based on [Worldpop Sex & Age 2020](https://hub.worldpop.org/geodata/listing?id=65) will be provided globally on admin level 2 with this plugin in the near future. To use the experimental plugin, please contact HeiGIT so that HeiGIT can provide the "csv"-file for your country. 
-Alternatively, the population-file can also be created independently according to the following pattern. The "csv"-file based on the worldpop data contains the following columns (see Fig. 5), where the columns  “ADM2_PCODE” and “wpop_total” are mandatory and names cannot be changed. All other columns can be adjusted, but they need to be picked up and be consistent with the variable names in the Transform-file. This means that a population "csv"-file can be generated based on other available population data by the user as long as the two former mentioned columns exist.
+By clicking "OK", you save the weights file locally as a CSV file. At the same time, it will appear as a layer in the QGIS Layers panel.
 
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/risk_assessment_weight_generator.mp4"></video>
 
-```{figure} /fig/populationfile_example.png
----
-width: 500px
-name: tpopulationfile_example
-align: center
----
-```
+In the bottom-left corner of the window, there is also a "Load Weights File" button. This allows you to load an existing weights CSV file, which you can edit—for example, by changing individual values or adding new indicators.
 
 ### Data Output
 
 The plugin provides the user with the following output:
-Geospatial data format to be chosen by user (geojson, shapefile, geopackage) with admin level 2 boundaries for the respective country including the following values for each admin level 2 polygon:
+Geospatial data format to be chosen by user (geojson, shapefile, geopackage) with the administrative boundaries for the respective country including the following values for each polygon:
 
 - P-Code
 - Region name
@@ -191,27 +169,13 @@ The output data will contain No Data Values. By default in QGIS these Values are
 ## Methodology
 
 The methodology for the Risk Calculation is based on [Weltrisikoindex](https://weltrisikobericht.de/) and is also inspired by the [INFORM Risk framework](drmkc.jrc.ec.europa.eu/inform-index/INFORM-Risk/Methodology). The basic model of the WorldRiskIndex with its modular structure was developed jointly with the United Nations University Institute for Environment and Human Security (UNU-EHS). Since 2018, the Institute for International Law of Peace and Humanitarian Law (IFHV) at the Ruhr University Bochum has taken over the calculation and continuously developed the model conceptually and methodologically.
-In the context of this analysis, risk is defined as the interaction of the two dimensions of exposure and susceptibility, which arises only where the two spheres meet. In this respect, risk is only present where there are hazards from extreme natural events and where populations without sufficient resilience, coping or adaptation capacities live in these hazard areas. The risk assessment is conducted on admin level 2, so it can easily be summed up on coarser levels.
+In the context of this analysis, risk is defined as the interaction of the two dimensions of exposure and susceptibility, which arises only where the two spheres meet. In this respect, risk is only present where there are hazards from extreme natural events and where populations without sufficient resilience, coping or adaptation capacities live in these hazard areas. 
 
+### Indicator normalization
 
-### Transformation by Population
-
-By means of the Population-file the user is enabled to create population based indicators and to offset certain indicators with the population numbers. By indicating an existing indicator, creating a new name and setting a factor, the variables are offset in the following manner:
-
-$ new\ Indicator=   \frac{indicators\ to\ be\ transformed}{Total\ Population} \times factor$
-
-
-### Normalization
-
-Throughout the risk calculation values need to be normalized at two points: First the indicators must be normalized in order to calculate the scores for the three dimensions vulnerability, coping capacity and exposure and these resulting scores must be normalized in order to process them further into a risk score. 
-
-__Indicator normalization__
-
-Depending on the context and content of the data, the value range of the indicators is wide. In order to make them comparable, in a first step all indicators are normalized to a value range between 0 to 1. Each value is scaled so that the minimum value in the series becomes 0, and the maximum value becomes 1. Values in between are linearly scaled based on their position within the range. A common Min-Max Normalization is used:
+Depending on the context and content of the data, the value range of the indicators is wide. In order to make them comparable, all indicators are normalized to a value range between 0 to 1. Each value is scaled so that the minimum value in the series becomes 0, and the maximum value becomes 1. Values in between are linearly scaled based on their position within the range. A common Min-Max Normalization is used:
 
 $ Normalized\ Value\ = \frac{value\ -\ min value}{max\ value \ - \ min } $
-
-The second normalization takes place when the scores need to be normalized in order to calculate the final risk score (see section Score Normalization).
 
 ### Imputation
 
@@ -243,6 +207,8 @@ Nevertheless, we recommend the following weights structure ranging between less 
 |0.5|Moderately Important|
 |0.75|Fairly Important|
 |1|Very Important|
+
+For each category, the sum of the weights must add up to 1. If not, the plugin will automatically normalize the weights in order to make the sum equal to 1 among weights belonging to the same category (exp cop and vul respectively).
 
 
 __Directions__
@@ -281,17 +247,11 @@ If the __direction is -1__ (indicating a negative weight), the formula adjusts t
 
 $ weighted=   (1 - value)  \times weight $
 
-The second formula inverts the value $(1 - value)$ before applying the weight, resulting in a different calculation for variables with negative weights.\
+The second formula inverts the value $(1 - value)$ before applying the weight, resulting in a different calculation for variables with negative weights.
 
 After considering weights and directions, the weighted variables are summed up to scores for each dimension (Exposure, Vulnerability, Lack of Coping Capacity):
 
 $ score=   \sum weighted\ values $
-
-__Scores normalization__
-
-After the calculation of the scores, they are normalized based on the number of indicators they consist of (see 2nd normalization in chapter Normalization 5.1). This makes the scores relative to the number of indicators:
-
-$ normalized \ scores =  \frac {scores}{number of indicators} $
 
 
 __Calculation of risk__
@@ -303,10 +263,16 @@ $ susceptibility =   \sqrt vulnerability  \times lack\ of\ coping\ capacity $
 
 $ risk=   \sqrt exposure  \times susceptibility $
 
+
+If no coping capacity file has been provided, the risk is calculated as follows:
+
+$ risk=   \sqrt exposure  \times vulnerability $
+
+Please remember that it is highly recommended to take the coping capacity into account.
+
 ## Known Limitations
 
-The Population-file must be provided by HeiGIT gGmbH in the experimental version of the plugin. A global Population-file from HeiGIT gGmbH will soon be provided for the plugin.
-Another notable limitation of the system is that the self created “csv”-files must conform exactly to the specified format outlined in the provided examples. For instance users should be aware that their custom population data may need to be converted to match the specific structure and administrative level.
+A notable limitation of the system is that the self created “csv”-files must conform exactly to the specified format outlined in the provided examples.
 It is also important to know that no placeholders or default values can be assigned in the "csv"-files in the plugin application. Each cell must be filled with relevant data before the plugin is used.
 In general, many input files are required to use the plugin, which makes it highly prone to errors.
 

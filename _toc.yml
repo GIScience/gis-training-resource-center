@@ -68,6 +68,11 @@ parts:
           - file: content/Module_9/en_qgis_openrouteservice_tools.md
           - file: content/Module_9/en_qgis_centrality.md
           - file: content/Module_9/en_qgis_module_9_exercises.md
+  - caption: Exercises
+    chapters: 
+      - file: content/Exercise_tracks/en_exercise_tracks_overview.md
+        sections:
+          - file: content/Exercise_tracks/en_larkana_flood_response.md
   - caption: Wiki
     chapters:
       - file: content/Wiki/en_qgis_qgis_basics_wiki.md
@@ -79,6 +84,7 @@ parts:
           - file: content/Wiki/en_qgis_basemaps_wiki.md
           - file: content/Wiki/en_qgis_plugins_wiki.md
           - file: content/Wiki/en_qgis_data_sources_wiki.md
+          - file: content/Wiki/en_licensing_data.md
       - file: content/Wiki/en_qgis_geodata_wiki.md
         sections:
           - file: content/Wiki/en_qgis_geodata_types_wiki.md      
@@ -114,13 +120,6 @@ parts:
           - file: content/Wiki/en_qgis_map_making_wiki.md
       - file: content/Wiki/en_qgis_common_errors_and_Issues.md   
       - file: content/Wiki/en_web_and_mobile_apps_wiki.md
-  - caption: 
-    chapters: 
-      - file: content/Exercise_list.md
-        sections: 
-          - file: content/Module_1/en_qgis_interface_ex_alt.md
-          - file: content/Module_2/en_qgis_geodata_concept_ex.md
-          - file: content/Module_2/en_qgis
   - caption: GIS in Anticipatory Action
     chapters:
       - file: content/GIS_AA/en_qgis_drought_trigger_somalia.md
@@ -136,10 +135,11 @@ parts:
       - file: content/Mobile_Data_collection/en_SMT.md
       - file: content/Mobile_Data_collection/en_SMT_training.md
         sections:
-          - file: content/Mobile_Data_collection/en_SMT_ex1.md
-          - file: content/Mobile_Data_collection/en_SMT_ex3.md
-          - file: content/Mobile_Data_collection/en_SMT_ex4.md
-          - file: content/Mobile_Data_collection/en_SMT_ex5.md
+          - file: content/Mobile_Data_collection/en_SMT_ex1_.md
+          - file: content/Mobile_Data_collection/en_SMT_ex2_.md
+          - file: content/Mobile_Data_collection/en_SMT_ex3_.md
+          - file: content/Mobile_Data_collection/en_SMT_ex4_.md
+          - file: content/Mobile_Data_collection/en_SMT_ex5_.md
   - caption: Trainers corner
     chapters:
       - file: content/Trainers_corner/en_TOT_intro.md  
@@ -153,4 +153,3 @@ parts:
       - file: content/About/about_1.md
       - file: content/contribution_plan.md
       - file: content/Glossary/en_glossary_1.md
-

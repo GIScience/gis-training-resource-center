@@ -11,7 +11,7 @@
 To find the appropriate data you are looking for, you can search online data 
 sharing platforms. Some important ones are highlighted below. 
 
-__What to look out for when looking for data:__
+## What to look out for when looking for data
 
 *Data source:* Always make sure to use data from trusted data sources. The 
 organisation that shared the data is the best indicator. Apart from that, use of 
@@ -34,20 +34,18 @@ up-to-date data available from another source.
 share it and how do you need to cite the data source? Make sure to check the 
 licensing and to follow the respective regulations to avoid difficulties.
 
-<!-- ADD: Would be nice to have a wiki page on licensing if possible -->
 
 ```{figure} /fig/en_data_sources_examples_cartong.png
 ---
 name: data sources examples
 width: 600 px
 ---
-The data to create maps or perform GIS analyses can come from various sources (Source: [CartONG]())
+The data to create maps or perform GIS analyses can come from various sources (Source: [CartONG](https://www.cartong.org/en/))
 ```
 
-:::{dropdown} Overview of useful data repositories
-:open: 
+## Overview of useful data repositories
 
-## General geodata 
+### General geodata 
 
 | Name | Data | Link |
 | :-------------------- | :----------------- | :---------- |
@@ -59,7 +57,7 @@ The data to create maps or perform GIS analyses can come from various sources (S
 | OSM Boundaries | Administrative boundaries (need to authenticate via your osm account) | https://osm-boundaries.com |
 | GDAM | Administrative boundaries | gadm.org |
 
-## Humanitarian data
+### Humanitarian data
 
 | Name | Data | Link |
 | :-------------------- | :----------------- | :---------- |
@@ -68,7 +66,7 @@ The data to create maps or perform GIS analyses can come from various sources (S
 | UNHCR Geoservices | Data on displaced populations | https://data.unhcr.org/en/situations |
 | Waterpoint | Data on waterpoints | https://www.waterpointdata.org | 
 
-## Disaster data
+### Disaster data
 
 | Name | Data | Link |
 | :-------------------- | :----------------- | :---------- |
@@ -79,7 +77,7 @@ The data to create maps or perform GIS analyses can come from various sources (S
 | ZKI/DLR | Flood extents, damage extents, earth observation data | https://activations.zki.dlr.de/en/activations/ |
 | WFP Vulnerability Analysis and Mapping | Data on food security, hazards, conflicts, climate | https://dataviz.vam.wfp.org/ |
 
-## Population data
+### Population data
 
 | Name | Data | Link |
 | :-------------------- | :----------------- | :---------- |
@@ -90,7 +88,7 @@ The data to create maps or perform GIS analyses can come from various sources (S
 | Pangea | Environmental & biosciences data | https://www.pangaea.de/ |
 | United Nations Population Fund | Data on sexual and reproductive health and population trends | https://www.unfpa.org/data
 
-## Buildings data
+### Buildings data
 
 | Name | Data | Link |
 | :-------------------- | :----------------- | :---------- |
@@ -98,7 +96,7 @@ The data to create maps or perform GIS analyses can come from various sources (S
 | VIDA building footprint | Combined Google and Microsoft building footprint datasets | https://beta.source.coop/repositories/vida/google-microsoft-open-buildings/download/ |
 | Open-building | Google building footprints | https://sites.research.google/open-buildings/#download |
 
-## Remote sensing/earth observation data
+### Remote sensing/earth observation data
 
 | Name | Data | Link |
 | :-------------------- | :----------------- | :---------- |
@@ -110,13 +108,12 @@ The data to create maps or perform GIS analyses can come from various sources (S
 | Copernicus | Earth observation data | https://scihub.copernicus.eu/ | 
 | GlobCover | Raster data on land cover | http://due.esrin.esa.int/page_globcover.php |
 
-:::
 
 ## OpenStreetMap data
 
 OpenStreetMap (OSM) is a collaborative project that aims to create a free and editable map of the world. Unlike traditional maps, which are often proprietary and controlled by commercial entities, OSM allows anyone to contribute and edit map data, resulting in a detailed and constantly evolving map of roads, trails, landmarks, and more. With its open-source nature and global community of contributors, OpenStreetMap has become a valuable resource for a wide range of applications, from navigation and urban planning to disaster response and humanitarian aid.
 
-There a multiple ways to get OpenStreetMap (OSM) data as a vector file into QGIS. The three most common and easy-to-use ways are geofabrik.de, HOT Export Tool and QuickOSM. Each of the options has both advantages and disadvantages.
+There a multiple ways to get OpenStreetMap (OSM) data as a vector file into QGIS. The three most common and easy-to-use ways are geofabrik.de, HOT Export Tool and QuickOSM [QGIS Plugin](). Each of the options has both advantages and disadvantages.
 
 ```{Tip}
 

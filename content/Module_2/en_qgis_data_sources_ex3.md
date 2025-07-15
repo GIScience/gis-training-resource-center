@@ -4,11 +4,6 @@
 :link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
-:::{grid-item-card}
-:class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_module_2_exercises.html 
-{octicon}`undo;1.5em;sd-text-danger`
-:::
 ::::
 
 # Exercise 3: Data sources
@@ -23,22 +18,21 @@ __Aim of the exercise:__
 ^^^
 
 The aim of this exercise is to navigate various data sources, gain an 
-understanding of where and how to access relevant data, and identify potential problems. It is important to use reliable, up-to-date, and appropriate data sources** that fit the purpose of the analysis to ensure a successful and meaningful results. Always consider your analysis objectives and requirements and search for data accordingly.
+understanding of where and how to access relevant data, and identify potential problems. It is important to **use reliable, up-to-date, and appropriate data sources** that fit the purpose of the analysis to ensure a successful and meaningful results. Always consider your analysis objectives and requirements and search for data accordingly.
 
 :::
 
 ::::{grid} 2
 :::{grid-item-card}
-__Type of trainings exercise:__
+__Larkana Flood Response Exercise Track__
 ^^^
 
-- This exercise can be done in small groups presenting their work in a plenum at the end.
-<!--For Follow along, this exercise needs to be updated or another follow along exercise needs to be created-->
+This exercise is part of the [Larkana Flood Response Exercise Track](https://giscience.github.io/gis-training-resource-center/content/Exercise_tracks/en_larkana_flood_response.html).
 
 :::
 
 :::{grid-item-card}
-__These skills are relevant for__
+__Competences covered in this exercise__
 ^^^ 
 
 - QGIS essentials
@@ -58,7 +52,7 @@ __Estimated time demand for the exercise:__
 :::
 
 :::{grid-item-card}
-__Relevant Wiki articles__
+__Relevant Wiki articles and module chapters__
 ^^^
 
 * [QGIS Interface](/content/Wiki/en_qgis_interface_wiki.md)
@@ -66,6 +60,7 @@ __Relevant Wiki articles__
 * [Geodata Import in QGIS](/content/Wiki/en_qgis_import_geodata_wiki.md)
 * [Layer Concept](/content/Wiki/en_qgis_layer_concept_wiki.md)
 * [Geodata Classification - Graduated](/content/Wiki/en_qgis_graduated_wiki.md)
+* [Data Sources](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_data_sources.html)
 
 :::
 
@@ -109,20 +104,50 @@ __Wrap up:__
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip
 
 Since the exercise is about finding data, there won't be any data to download. 
-Instead download the __standard folder structure__ [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip) and insert your data as you download it.
+Instead download the __[standard folder structure](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_management.html#standard-folder-structure)__ [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip) and insert your data as you download it.
 
 :::
 
-### Tasks
+::::{dropdown} Standard folder structure
+```{figure} /fig/standard_folder_structure_new_2025.drawio.png
+name: standard_folder_struc
+width: 500 px
+---
+Standard folder structure. Source: HeiGIT
+```
+::::
 
-The objective of this exercise is to find out how many hospitals are located in **Bolivia** and how they are distributed across the country. 
+### Task 1: Download the administrative boundaries and healthsites for Pakistan 
 
-1. Find a data source to download the **administrative boundaries** and **healthsites** of Bolivia. The following instructions are designed for the example of Bolivia. If you wish to perform the same analysis for another country, some instructions may differ, but the general workflow will remain the same.
+For our flood response map, we will need a few datasets from the web. In this exercise, we will be looking for the __administrative boundaries__ of Pakistan, the __healthsites__, as well as the __flood extent__ of the flood in Pakistan in 2024. 
+First, let us set up a new QGIS project along with the standard folder structure: 
+
+::::{margin}
+:::{tip}
+Take a look at the standard folder structure and save the QGIS project file in the correct place.
+:::
+::::
+
+1. Download the folder structure and unzip it.
+2. Create a copy of the folder structure and name the folder `module_2_exercise_3_data_sources`.
+3. Open a new QGIS project and save it into the folder. 
+
+Now that we have the QGIS project set up, we can start looking for the datasets
+
+4. Find a data source to download the **administrative boundaries** and **healthsites** of Pakistan. The following instructions are designed for the example of Pakistan. If you wish to perform the same analysis for another country, some instructions may differ, but the general workflow will remain the same.
 
 :::{dropdown} Possible data sources
 
-Test downloading the administrative boundaries on [OSM Boundaries](https://osm-boundaries.com) 
-and the healthsites on [healthsites.io](https://healthsites.io).
+There are many different data repositories on the web where you can find suitable data. You can find a list of possible data sources [here](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_data_sources.html).
+
+For most humanitarian data, you can search on the __[Humanitarian Data Exchange/HDX](https://data.humdata.org/)__
+The Humanitarian Data Exchange (HDX) is a primary platform for accessing and sharing geospatial data relevant to humanitarian crises. It's a centralized repository offering a wide range of datasets from various sources, making it an invaluable resource for aid organizations and researchers.
+
+:::
+
+:::{admonition} Which data format to choose
+
+Most datasets on HDX are available in various dataformats such as xlsx, csv, shapefile, or GeoJSON. We are looking for spatial data that we can use in QGIS, so we will need a spatial data format such as `.shp` (Shapefile), `.gpkg` (GeoPackage), `.geojson` (GeoJSON), or `.gdb` (GeoDatabase)
 
 :::
 
@@ -130,27 +155,29 @@ and the healthsites on [healthsites.io](https://healthsites.io).
    that are being used, instead of just examples. Can we just ask people to use these
    datasets, so that the rest of the instructions make sense? -->
 
-2. Download the data and save the administrative boundaries as `bolivia` and the healthsites `healthsites_bolivia` into the `data\input` folder.
+5. Download the data and save the **administrative boundaries** and the **healthsites** into the `data\input` folder.
 
 ```{Note}
-
-Make sure to only use the point data from the healthsites dataset. Other data shapes such as lines or polygons can be 
-ignored in this example. Depending on the data source, information can be provided as points, but also as lines or 
+Make sure to only use the point data from the healthsites dataset. Other data shapes such as lines or polygons can be ignored in this example. Depending on the data source, information can be provided as points, but also as lines or 
 polygons.
-
 ```
 
-3. Load both vector files into QGIS.  
+::::{margin}
+:::{tip}
+Most of the times, the datasets you download from the web are compressed as `.zip`-files. Before you can use them in QGIS, __you need to unzip the datasets__.
+:::
+::::
 
-4. Now add the OpenStreetMap basemap via the browser window > 
+6. [Load both vector files into QGIS](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept.html#data-import).
+
+
+7. Now add the OpenStreetMap basemap via the browser window > 
    `XYZ Tiles`. Adding basemaps can help you orient yourself, gain a better understanding of the area of interest, and create more informative maps. 
 
-5. Familiarise yourself with the data by opening the attribute table and identify the different types of healthcare that are included in the dataset. Get an overview of the information that is stored in each column. For example, there could be information indicating the type of healthsite.
+8. Familiarise yourself with the data by opening the attribute table and identify the different types of healthcare that are included in the dataset. Get an overview of the information that is stored in each column. For example, there could be information indicating the type of healthsite.
 
-<!--ADD: Context: Having this exercise in the 
-   context of a scenario could help with things like this --> 
 
-6. If your dataset contains information about the type of healthsite (e.g. clinic, hospital, doctor, etc.), we can extract these and save them in a new layer. We can do this by selecting the hospitals and then copying them to a new layer.
+9. If your dataset contains information about the type of healthsite (e.g. clinic, hospital, doctor, etc.), we can extract these and save them in a new layer. We can do this by selecting the hospitals and then copying them to a new layer.
 
 ```{Hint}
 
@@ -158,14 +185,28 @@ For information on how to easily filter your data by manually selecting features
 
 ```
 
-<!-- Should we direct people to instructions on filters rather than attribute table?
-EN: The information on how to filter is in this wiki page. Add the heading to the link -->
+### Task 2: Download the flood extent for Pakistan for August 2024
 
-7. To view only the selected features (hospitals) and apply the filtering, we can first display these features in the attribute table by clicking on `Show Selected Features` in the bottom left corner, and then export only the selected features and save them as `hospitals_bolivia` in your `data\output` folder.
+Now, let us download the flood extent for Pakistan from the 8 to 12 August 2024.
 
-8. Save your project and display your results. Ensure that both the country of Bolivia and the hospitals are visible.
+1. Go back to the humanitarian data exchange and search for __"Pakistan Flood"__. You will find a list of datasets containing the satellite detected water extents for different periods. 
+2. Choose the dataset with the title __"Satellite detected water extents from 08 to 12 August 2024 over Pakistan"__ and download the zip-folder. 
+3. Unzip the folder and look at it's content. There are a few different shapefiles. We are looking for the __minimum flood extent__. Locate the files called `VIIRS_20240721_20240803_MinimumFloodExtent_PAK` and copy them to the `data\input`-folder. 
 
+:::{admonition} Working with shapefiles
+:class: attention
+Shapefiles consist of several files (`.shp`, `.shx`, `.sbx`, `.sbn`, `.prj`, `cpg`). In order to copy the entire shapefile to the new location, __make sure to copy all the files with the exact name to the new folder__. 
 
+:::
+
+<!---
+10. To view only the selected features (hospitals) and apply the filtering, we can first display these features in the attribute table by clicking on `Show Selected Features` in the bottom left corner, and then export only the selected features and save them as `hospitals_bolivia` in your `data\output` folder.
+
+11. Save your project and display your results. Ensure that both the country of Bolivia and the hospitals are visible.
+
+-->
+
+<!---
 ### Result
 
 ```{figure} /fig/en_result_data_sources_exercise.png
@@ -177,6 +218,7 @@ Your map could look like this when you have finished the exercise.
 ```
 
 The distribution of hospitals across Bolivia is uneven. It is noticeable that there are significantly less hospitals in the northern and eastern parts of Bolivia.
+-->
 
 <!-- FIXME: if the aim of the exercise is to understand the distribution of hospitals
    in Bolivia, this should be clear in the introduction so that people can understand

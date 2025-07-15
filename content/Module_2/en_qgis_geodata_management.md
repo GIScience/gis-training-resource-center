@@ -91,3 +91,39 @@ whether they are needed in the final project.
 
 `adm0 >> adm0_projUTM >> adm0_projUTM_clipUrban >> adm0_projUTM_clipUrban_intersectFacilities >> facilities_processed`
 
+### Documentation
+
+Documentation is an important step when working with geodata or performing analyses. It ensures clarity, 
+reproducibility, and enables collaboration. Spatial data analysis often involves complex processes, data cleaning, 
+data transformations, and specific data sources. Without proper documentation, it becomes difficult for yourself and 
+others to understand, replicate, or build upon your work. Documentation helps organising the purpose, the methods or 
+tools, the data inputs and outputs, as well as the the assumptions and limitations. 
+In general, good documentation allows GIS-practitioners to reproduce the analysis steps to get the exact same result. 
+In collaborative work, good documentation serves as a roadmap and is essential when working on GIS-projects. In 
+humanitarian work, and in decision-making processes, good documentation is essential as it helps informed decision 
+making which enables humanitarian teams to allocate resources. 
+
+You can document your projects using markdown editors or just simply creating a word document. Make sure it is saved 
+in he documentation subfolder in your project folder. There are not set rules to write a documentation, however, 
+adhering to a logical structure can help writing and reading your documentation. It is also advisable to write the 
+documentation __while__ you are performing the analysis. QGIS offers a lot of options and settings while performing 
+an analysis, and it can be easy to forget the parameters you have used for an analysis step. 
+
+1. __Project overview:__
+   - Add the title and purpose of the project.
+   - Add a brief summary of the analysis.
+2. __Data sources:__
+   - List of all the input datasets (with links if possible)
+   - Coordinate system used
+   - Notes on data quality or limitations
+3. __Software & Tools:__
+   - QGIS version
+   - Plugins used
+4. __Workflow & Methodology:__
+   - Step-by-step process with screenshots or diagrams where helpful
+   - Describe each processing step (these can be in bullet points)
+   - Mention key parameters or decisions made
+
+Make sure yourself and other persons can understand and replicate the analysis steps. 
+Good documentation turns your QGIS project from a black box into a transparent, shareable, and professional piece of work. 
+

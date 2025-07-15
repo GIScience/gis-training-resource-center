@@ -103,7 +103,7 @@ German Red Cross:
   </div>
 
   <div class="logo">
-    <img src="https://heigit.org/wp-content/uploads/2018/01/HeiGIT_Logo_cut-505x100.png" alt="HeiGIT Logo">
+    <img src="/HeiGIT_Logo_compact.svg" alt="HeiGIT Logo">
   </div>
 </div>
 
