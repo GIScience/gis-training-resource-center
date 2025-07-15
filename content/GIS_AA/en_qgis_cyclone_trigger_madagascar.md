@@ -247,7 +247,11 @@ align: center
 
 ## Step 5: Visualisation of results
 
-We will create two output maps.
+We will generate two output maps to support the analysis:
+- Map 1 will provide an overview of the **affected districts, the extent of the cyclone event, and the locations of relevant warehouses**.
+- Map 2 will focus on the impact to infrastructure and population, displaying the **number of affected people, buildings, health sites, and education facilities**.
+
+Additionally, a map showing the **warehouse isochrones** for all 13 warehouses will be provided by HeiGIT.
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_14_1.png
 ---
@@ -261,9 +265,7 @@ __Purpose:__ Definition of how features are represented visually on the map.
 
 __Tool:__ [Symbology tab](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I.html#symbology-for-vector-data)
 
-__Affected regions of the Cyclone Event and relevant warehouses__
-
-
+__Cyclone Impact Area with Affected Districts and Warehouse Locations__
 
 1. Right click on the “Affected_districts” layer -> `Properties` -> `Symbology`
 2. In the down left corner click on `Style` -> `Load Style`
