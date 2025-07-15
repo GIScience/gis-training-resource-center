@@ -122,6 +122,7 @@ parts:
       - file: content/Wiki/en_web_and_mobile_apps_wiki.md
   - caption: GIS in Anticipatory Action
     chapters:
+      - file: content/GIS_AA/en_qgis_cyclone_trigger_madagascar.md
       - file: content/GIS_AA/en_qgis_drought_trigger_somalia.md
         sections:
           - file: content/GIS_AA/en_qgis_srcs_basic_ex.md
