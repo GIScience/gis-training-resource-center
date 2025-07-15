@@ -2,6 +2,9 @@
 
 The QGIS workflow presented in this article was developed in the framework of the Forecast-based-Action (FbF) Project of the Croix-Rouge Malagasy (CRM), the German Red Cross (GRC) and the Heidelberg Institute for Geoinformation Technology (HeiGIT).
 
+The workflow is almost fully automated through a QGIS model, requiring no manual intervention. The chapter Automated Trigger Workflow outlines the process and its practical implementation. Each step included in the model is explained in detail to provide a complete understanding of the workflow and how the analysis was carried out.
+
+
 ## Background
 
 Setting triggers is one of the cornerstones of the Forecast-based Financing system. For a National Society to have access to automatically released funding for their early actions, their Early Action Protocol needs to clearly define where and when funds will be allocated, and assistance will be provided. In FbF, this is decided according to specific threshold values, so-called triggers, based on weather and climate forecasts, which are defined for each region (see [FbF Manual](https://manual.forecast-based-financing.org/en/chapter/set-the-trigger/)).
@@ -43,8 +46,53 @@ The cyclone trigger mechanism is based on the data provided by NOAA (National Ce
 
 Tropical cyclone track data is available in various subsets, depending on the temporal scale of interest. Regional subsets can also be generated, with data for the South Indian Ocean being particularly relevant for this trigger mechanism.
 
-# Trigger Workflow Automated 
+# Automated Trigger Workflow
 
-As explained in the beginning of this [chapter](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_drought_trigger_somalia.html#qgis-trigger-workflow-for-somalia), the 9 main steps of the developed trigger workflow are done automatically by a QGIS model. In the previous chapters you have learned the purpose and needed tools of each step and how to perform them manually. In this chapter it is explained how to run the automated model.
+As explained at the start of this chapter the developed trigger workflow is done automatically by a QGIS model. In this chapter it is explained how to run the automated model.
 
 The [QGIS Model Designer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html#the-qgis-model-designer) is a visual tool that allows users to create and edit a workflow with all tools available in QGIS that can be used repeatedly in a simple and time-efficient manner. It provides a graphical interface to build workflows by connecting geoprocessing tools and algorithms. The user can define inputs, outputs, and the flow of data between different processing steps.
+
+:::{admonition} Troubleshooting the model
+:class: note
+
+When updating the monitoring, make sure you compare the new input layers with the previous input layers.
+It can happen that the data structure changes. For example, the attribute columns are called differently, or the values for the classes change. In these cases, the model can break and output error messages. 
+
+To fix these issues, take a look at the subsection on [Troubleshooting the model].
+
+:::
+
+## Step 1: Setting up folder structure 
+
+```{figure} /fig/Drought_EAP_Worklow_Step_1_1.png
+---
+width: 1000px
+name: 
+align: center
+---
+```
+__Purpose:__ In this step we set up the correct folder structure to make the analysis easier and to ensure consistent results. 
+
+__Tool:__ No special tools or programs are needed
+
+``````{list-table}
+:header-rows: 1
+:widths: 10 25
+
+* - Instruction
+  - Folder Structure
+* - 1. Open the Folder “FbF_Drought_Monitoring_Trigger"
+    2. Open the subfolder "Monitoring"
+    3. Copy the Template folder “TEMPLATE_Year_Month” and change the name to the current year and month. The result could be the folder "2022_05"
+    
+  -
+    ```{figure} /fig/Folder_structure_FbF_Drought_Monitoring_Trigger.drawio.svg
+    ---
+    width: 450px
+    name: 
+    align: center
+    ---
+    ```
+``````
+
+The Video below shows the process for setting up the folder for december 2023.
