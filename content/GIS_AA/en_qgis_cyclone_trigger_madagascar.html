@@ -542,13 +542,19 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">QGIS Trigger Workflow for Madagascar</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trigger-statement">Trigger Statement</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trigger-input-data">Trigger Input Data</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fixed-data">Fixed Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#monitoring-data">Monitoring Data</a></li>
 </ul>
 </li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#trigger-workflow-automated">Trigger Workflow Automated</a></li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -561,9 +567,15 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="qgis-trigger-workflow-for-madagascar">
 <h1>QGIS Trigger Workflow for Madagascar<a class="headerlink" href="#qgis-trigger-workflow-for-madagascar" title="Permalink to this heading">#</a></h1>
+<p>The QGIS workflow presented in this article was developed in the framework of the Forecast-based-Action (FbF) Project of the Croix-Rouge Malagasy (CRM), the German Red Cross (GRC) and the Heidelberg Institute for Geoinformation Technology (HeiGIT).</p>
 <section id="background">
 <h2>Background<a class="headerlink" href="#background" title="Permalink to this heading">#</a></h2>
 <p>Setting triggers is one of the cornerstones of the Forecast-based Financing system. For a National Society to have access to automatically released funding for their early actions, their Early Action Protocol needs to clearly define where and when funds will be allocated, and assistance will be provided. In FbF, this is decided according to specific threshold values, so-called triggers, based on weather and climate forecasts, which are defined for each region (see <a class="reference external" href="https://manual.forecast-based-financing.org/en/chapter/set-the-trigger/">FbF Manual</a>).</p>
+</section>
+<section id="trigger-statement">
+<h2>Trigger Statement<a class="headerlink" href="#trigger-statement" title="Permalink to this heading">#</a></h2>
+<p><strong>Pre-Activation Trigger:</strong> at least one of the meteorological forecasts from Meteo Madagascar, RMSC La Reunion, or ECMWF projects a greater than 50% likelihood of landfall by a tropical cyclone of tropical storm strength or higher within the next 7 days.</p>
+<p><strong>Activation Trigger:</strong> if the Meteo Madagascar (DGM) forecast indicates landfall of a tropical cyclone with wind speeds in excess of 118 km/h within the next 48-72 hours.</p>
 </section>
 <section id="trigger-input-data">
 <h2>Trigger Input Data<a class="headerlink" href="#trigger-input-data" title="Permalink to this heading">#</a></h2>
@@ -597,12 +609,15 @@ document.write(`
 </tr>
 </tbody>
 </table>
+<div class="note admonition">
+<p class="admonition-title">Master Raster</p>
 <p>The three raster datasets are joined together in a Master Raster which will be a raster layer with three channels and a resolution of 100 m. It will include the following information:</p>
 <ol class="arabic simple">
 <li><p>Population counts from Worldpop constrained (2020)</p></li>
 <li><p>Building counts derived from ML Building Footprints (2021)</p></li>
 <li><p>Land Cover derived from Copernicus Land Cover (2019)</p></li>
 </ol>
+</div>
 </section>
 <section id="monitoring-data">
 <h3>Monitoring Data<a class="headerlink" href="#monitoring-data" title="Permalink to this heading">#</a></h3>
@@ -610,6 +625,11 @@ document.write(`
 <p>Tropical cyclone track data is available in various subsets, depending on the temporal scale of interest. Regional subsets can also be generated, with data for the South Indian Ocean being particularly relevant for this trigger mechanism.</p>
 </section>
 </section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="trigger-workflow-automated">
+<h1>Trigger Workflow Automated<a class="headerlink" href="#trigger-workflow-automated" title="Permalink to this heading">#</a></h1>
+<p>As explained in the beginning of this <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_drought_trigger_somalia.html#qgis-trigger-workflow-for-somalia">chapter</a>, the 9 main steps of the developed trigger workflow are done automatically by a QGIS model. In the previous chapters you have learned the purpose and needed tools of each step and how to perform them manually. In this chapter it is explained how to run the automated model.</p>
+<p>The <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html#the-qgis-model-designer">QGIS Model Designer</a> is a visual tool that allows users to create and edit a workflow with all tools available in QGIS that can be used repeatedly in a simple and time-efficient manner. It provides a graphical interface to build workflows by connecting geoprocessing tools and algorithms. The user can define inputs, outputs, and the flow of data between different processing steps.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -657,13 +677,19 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">QGIS Trigger Workflow for Madagascar</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trigger-statement">Trigger Statement</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trigger-input-data">Trigger Input Data</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fixed-data">Fixed Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#monitoring-data">Monitoring Data</a></li>
 </ul>
 </li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#trigger-workflow-automated">Trigger Workflow Automated</a></li>
+</ul>
+
   </nav></div>
 
 </div></div>
