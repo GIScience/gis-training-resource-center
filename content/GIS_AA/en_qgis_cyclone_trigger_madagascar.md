@@ -171,6 +171,48 @@ In this step we will open our Trigger project in QGIS and load the QGIS model wh
 
 1. Open the file `Trigger_Model.qgz` by double clicking it.
 2. The file will open and you will lots of data pre-loaded. This data is required for running the QGIS model.
+
+The data will be structured in three Groups:
+
+IMAGE OF A SCREENSHOT OF THE THREE GROUPS WITH ALL THE PRE-LOADED DATA
+```{figure} /fig/MAD_Trigger_stromtrack_download.PNG
+---
+width: 1000px
+name: 
+align: center
+---
+```
+
+1. Group 1: Model_Input
+This group will contain all the input data that is required to successfully run the model. All the data that is stored in this section is fixed except the storm track.
+
+:::{attention}
+
+Always ensure you are using the most recently updated storm track for this process. To import the new layer, simply drag and drop it into the `Layers panel`, and place it at the top of the **Model_Input** group for clarity.
+
+For better data management, assign the storm track a descriptive name, such as `storm_track_Freddy_2023`. This naming convention clearly identifies the event and year, helping you stay organized and ensuring the correct data is used in the analysis.
+
+:::
+
+2. Group 2: Map_Cyclone_Impact_Overview
+This group will contain all the layers needed to create the following map. 
+
+SCREENSHOT OF THE OUTPUT MAP
+```{figure} /fig/MAD_Trigger_stromtrack_download.PNG
+---
+width: 1000px
+name: 
+align: center
+---
+```
+
+The following layers are required to create this map:
+Pre-loaded:
+- input storm track
+- admin 1 boundaries
+
+3. Group 3: Map_Cyclone_Impact_Assessment
+
 3. Now open the QGIS Model Designer. The tool can be accessed under `Processing` -> `Modeler Designer`
 4. In the upper panel click `Model` -> `Open Model` and navigate to your folder "FbF_Cyclone_Monitoring_Trigger", mark the "Cyclones_EAP_MAD_Trigger.model3" file an click on `Open`. The model will open and you will see yellow, white, green and grey boxes.
 
@@ -249,13 +291,15 @@ align: center
 ```
 
 
-## Step 5: Visualisation of results
+## Step 5: Visualisation and Styling of the Model Outputs
 
 We will generate two output maps to support the analysis:
 - Map 1 will provide an overview of the **affected districts, the extent of the cyclone event, and the locations of relevant warehouses**.
 - Map 2 will focus on the impact to infrastructure and population, displaying the **number of affected people, buildings, health sites, and education facilities**.
 
 Additionally, a map showing the **warehouse isochrones** for all 13 warehouses will be provided by HeiGIT.
+
+NEED NEW IMAGE
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_14_1.png
 ---
@@ -269,7 +313,7 @@ __Purpose:__ Definition of how features are represented visually on the map.
 
 __Tool:__ [Symbology tab](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I.html#symbology-for-vector-data)
 
-__Cyclone Impact Area with Affected Districts and Warehouse Locations__
+__Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations__
 
 1. Right click on the “Affected_districts” layer -> `Properties` -> `Symbology`
 2. In the down left corner click on `Style` -> `Load Style`
@@ -282,7 +326,9 @@ Do this same process for the following output layers:
 - the input line storm track
 - and the buffered output cyclone area
 
-```{dropdown} Output after styling the layer
+NEED NEW IMAGE
+
+```{dropdown} Your final output should look like this after styling the layer
 You will now see the affected districts and the locations of relevant warehouses clearly displayed on the map. Additionally, the original storm track line — used as input data — is highlighted, along with the buffered impact area, which serves as a proxy for identifying affected districts.
 
 ```{figure} /fig/Map_yes_trigger.PNG
@@ -293,20 +339,22 @@ align: center
 ---
 ```
 
-__Cyclone Impact on Population and Infrastructure__
+__Impact Assessment: Affected Population and Critical Infrastructure__
 
 
-7. Right click on the "risk_assessment_districts" layer -> `Properties` -> `Symbology`
-8. In the down left corner click on `Style` -> `Load Style`
-9. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file __“somalia_risk_assessment_style.qml”__ style layer.
-10. Move the "risk_assessment_district" layer __below__ "Trigger_Activation" layer ([Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept.html?highlight=layer#layer-concept)).
-11. Back in the “Layer Properties” Window click `Apply` and `OK`
+6. Right click on the "affected_population" layer -> `Properties` -> `Symbology`
+7. In the down left corner click on `Style` -> `Load Style`
+8. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Cyclone_Monitoring_Trigger/layer_styles” folder and select the file __“affected_population.qml”__ style layer.
+9. Click `Open`. Then click on `Load Style`
+10. Back in the “Layer Properties” Window click `Apply` and `OK`
 
+Do this same process for the following output layers:
+- affected_buildings
+- affected_education_facilities
+- affected_healthsites
+- the input line storm track
+- and the buffered output cyclone area
 
-```{dropdown} Info: Risk Assessment Layer
-For the creation of an __Intervention Map__ we will have to add the risk assessment data and the respective style file.
-For this first of all load from "FbF_Drought_Monitoring_Trigger/Fixed_data/Risk_Assessment" the file "risk_assessment_districts.gpkg". This file is the output of the conducted risk assessment and contains a risk value for each district of Somaliland and Somalia.  In order to visualize it 
-```
 
 __Administrative 2 Boundaries (Regions)__
 
