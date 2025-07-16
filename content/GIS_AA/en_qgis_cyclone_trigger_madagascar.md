@@ -41,17 +41,19 @@ By fixed data we mean datasets that are needed for the trigger to work, that wil
 | Dataset| Source | Description |
 | ----- | --- | --- |
 | Administrative Boundaries | [HDX](https://data.humdata.org/dataset/cod-ab-mdg) | The administrative boundaries on level 0-4 for Madagascar can be accessed via HDX provided by OCHA. For this trigger mechanism we provide the administrative boundaries on level 1 (regional level) and 2 (district level) as a shapefile. |
-| Population Counts | [WorldPop](https://hub.worldpop.org/geodata/summary?id=49646) | The worldpop dataset in `.geotif` raster format provides the estimated total number of people per grid-cell for the year 2020. We will be working with the Constrained Individual countries 2020 at a resolution of 100m. |
-| Buildings Counts | [Global ML Building Footprints](https://gee-community-catalog.org/projects/msbuildings/) | The building counts dataset in `.geotif` raster format counts the number of buildings per 100m grid cell. The workflow on how this dataset was created can be found in this [GitLab repo](https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar) |
-| Land Cover | [ Copernicus Land Cover](https://land.copernicus.eu/en/products/global-dynamic-land-cover/copernicus-global-land-service-land-cover-100m-collection-3-epoch-2019-globe) | The land cover dataset in `.geotif` raster format provides an overview over the dominant land cover type at a resolution of 100m. This dataset was downloaded using the Google Earth Engine. The workflow on how this dataset was downloaded can be found in this [GitLab repo](https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar) |
+| POI counts | [HOT Export Tool](https://export.hotosm.org/vi/v3/exports/new/describe) | The POI data (education facilities and health sites) is downloaded using the HOT Export Tool based on OpenStreetMap data. |
+| CRM Warehouses | [HOT Export Tool](https://export.hotosm.org/vi/v3/exports/new/describe) |  |
+| Population Counts | [WorldPop](https://hub.worldpop.org/geodata/summary?id=49646) | The worldpop dataset in raster format provides the estimated total number of people per grid-cell for the year 2020. We will be working with the Constrained Individual countries 2020 dataset at a resolution of 100m. |
+| Buildings Counts | [Global ML Building Footprints](https://gee-community-catalog.org/projects/msbuildings/) | The building counts dataset in raster format counts the number of buildings per 100m grid cell. The workflow on how this dataset was created can be found on [GitLab](https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar) |
+| Land Cover | [ Copernicus Land Cover](https://land.copernicus.eu/en/products/global-dynamic-land-cover/copernicus-global-land-service-land-cover-100m-collection-3-epoch-2019-globe) | The land cover dataset in raster format provides an overview over the dominant land cover type at a resolution of 100m. The workflow on how this dataset was downloaded can be found on [GitLab](https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar) |
 
 :::{admonition} Master Raster
 :class: note
 
-The three raster datasets are joined together in a Master Raster which will be a raster layer with three channels and a resolution of 100 m. It will include the following information:
-1. Population counts from Worldpop constrained (2020)
-2. Building counts derived from ML Building Footprints (2021)
-3. Land Cover derived from Copernicus Land Cover (2019)
+The three raster datasets are combined into a **Master Raster** — a multi-band raster layer with a spatial resolution of 100 meters. This composite layer includes the following information across three channels:
+1. Population counts per grid cell from Worldpop constrained (2020)
+2. Building counts per grid cell derived from ML Building Footprints (2021)
+3. Land Cover type per grid cell derived from Copernicus Land Cover (2019)
 
 :::
 
