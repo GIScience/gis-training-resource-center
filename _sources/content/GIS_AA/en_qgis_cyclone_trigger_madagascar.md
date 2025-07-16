@@ -14,7 +14,6 @@ Setting triggers is one of the cornerstones of the Forecast-based Financing syst
 
 **Activation Trigger:** if the Meteo Madagascar (DGM) forecast indicates landfall of a tropical cyclone with wind speeds in excess of 118 km/h within the next 48-72 hours.
 
-
 # Functionality of the Trigger Workflow
 
 The Trigger Process concept is displayed in the following figure.
@@ -28,7 +27,6 @@ align: center
 ```
 
 The entire trigger workflow will be run in a QGIS model, which automates the spatial analysis for assessing the impact of tropical cyclones. It integrates cyclone storm track data with administrative boundaries, population data, infrastructure, and service locations to identify and quantify affected areas and resources. 
-
 
 ## Trigger Input Data
 
@@ -61,8 +59,12 @@ The three raster datasets are combined into a **Master Raster** — a multi-band
 
 The cyclone trigger mechanism is based on the data provided by NOAA (National Centers for Environmental Information). The cyclone storm tracks are provided within the [International Best Track Archive for Climate Stewardship (IBTrACS)](https://www.ncei.noaa.gov/products/international-best-track-archive) project. It is the most complete global collection of tropical cyclones available and merges recent and historical tropical cyclone data from multiple agencies to create a unified, publicly available, best-track dataset. IBTrACS was developed collaboratively with all the World Meteorological Organization (WMO) Regional Specialized Meteorological Centres, as well as other organizations and individuals from around the world.
 
-Tropical cyclone track data is available in various subsets, depending on the temporal scale of interest. Regional subsets can also be generated, with data for the South Indian Ocean being particularly relevant for this trigger mechanism.
+:::{admonition} Master Raster
+:class: hint
 
+Tropical cyclone track data is available in various subsets, depending on the temporal scale of interest. Regional subsets can also be generated, with data for the **South Indian Ocean** being particularly relevant for this trigger mechanism.
+
+:::
 
 # Automated Trigger Workflow
 
@@ -275,13 +277,13 @@ __Cyclone Impact Area with Affected Districts and Warehouse Locations__
 4. Click `Open`. Then click on `Load Style`
 5. Back in the “Layer Properties” Window click `Apply` and `OK`
 
-Do this same process for the following outputs:
+Do this same process for the following output layers:
 - relevant warehouses
-- the input storm track
-- and the output cyclone area
+- the input line storm track
+- and the buffered output cyclone area
 
 ```{dropdown} Output after styling the layer
-You will now see affected districts and the relevant warehouses clearly visible. The outline of the input storm track can also be seen on the map. 
+You will now see the affected districts and the locations of relevant warehouses clearly displayed on the map. Additionally, the original storm track line — used as input data — is highlighted, along with the buffered impact area, which serves as a proxy for identifying affected districts.
 
 ```{figure} /fig/Map_yes_trigger.PNG
 ---

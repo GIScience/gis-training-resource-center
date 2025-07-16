@@ -658,7 +658,10 @@ document.write(`
 <section id="monitoring-data">
 <h3>Monitoring Data<a class="headerlink" href="#monitoring-data" title="Permalink to this heading">#</a></h3>
 <p>The cyclone trigger mechanism is based on the data provided by NOAA (National Centers for Environmental Information). The cyclone storm tracks are provided within the <a class="reference external" href="https://www.ncei.noaa.gov/products/international-best-track-archive">International Best Track Archive for Climate Stewardship (IBTrACS)</a> project. It is the most complete global collection of tropical cyclones available and merges recent and historical tropical cyclone data from multiple agencies to create a unified, publicly available, best-track dataset. IBTrACS was developed collaboratively with all the World Meteorological Organization (WMO) Regional Specialized Meteorological Centres, as well as other organizations and individuals from around the world.</p>
-<p>Tropical cyclone track data is available in various subsets, depending on the temporal scale of interest. Regional subsets can also be generated, with data for the South Indian Ocean being particularly relevant for this trigger mechanism.</p>
+<div class="hint admonition">
+<p class="admonition-title">Master Raster</p>
+<p>Tropical cyclone track data is available in various subsets, depending on the temporal scale of interest. Regional subsets can also be generated, with data for the <strong>South Indian Ocean</strong> being particularly relevant for this trigger mechanism.</p>
+</div>
 </section>
 </section>
 </section>
@@ -874,11 +877,11 @@ Video: Input and output Model<div class="sd-summary-down docutils">
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Then click on <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code></p></li>
 <li><p>Back in the “Layer Properties” Window click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
 </ol>
-<p>Do this same process for the following outputs:</p>
+<p>Do this same process for the following output layers:</p>
 <ul class="simple">
 <li><p>relevant warehouses</p></li>
-<li><p>the input storm track</p></li>
-<li><p>and the output cyclone area</p></li>
+<li><p>the input line storm track</p></li>
+<li><p>and the buffered output cyclone area</p></li>
 </ul>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -887,7 +890,7 @@ Output after styling the layer<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">You will now see affected districts and the relevant warehouses clearly visible. The outline of the input storm track can also be seen on the map.</p>
+<p class="sd-card-text">You will now see the affected districts and the locations of relevant warehouses clearly displayed on the map. Additionally, the original storm track line — used as input data — is highlighted, along with the buffered impact area, which serves as a proxy for identifying affected districts.</p>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/Map_yes_trigger.PNG"><img alt="../../_images/Map_yes_trigger.PNG" src="../../_images/Map_yes_trigger.PNG" style="width: 1000px;" /></a>
 </figure>
