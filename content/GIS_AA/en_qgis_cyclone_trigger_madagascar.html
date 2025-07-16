@@ -567,7 +567,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-download-of-the-storm-track-data">Step 2: Download of the storm track data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-open-the-project-in-qgis-and-load-the-model-in-the-qgis-model-designer">Step 3: Open the project in QGIS and load the model in the QGIS Model Designer</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-run-the-model-names-in-this-section-need-to-be-finalized">Step 4: Run the model !!NAMES IN THIS SECTION NEED TO BE FINALIZED!!</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-visualisation-of-results">Step 5: Visualisation of results</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-visualisation-and-styling-of-the-model-outputs">Step 5: Visualisation and Styling of the Model Outputs</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-making-the-print-map">Step 6: Making the Print Map</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-exporting-the-map">Step 7: Exporting the Map</a></li>
 </ul>
@@ -758,6 +758,37 @@ The output layer is relevant warehouses, indicating logistical support readiness
 <ol class="arabic simple">
 <li><p>Open the file <code class="docutils literal notranslate"><span class="pre">Trigger_Model.qgz</span></code> by double clicking it.</p></li>
 <li><p>The file will open and you will lots of data pre-loaded. This data is required for running the QGIS model.</p></li>
+</ol>
+<p>The data will be structured in three Groups:</p>
+<p>IMAGE OF A SCREENSHOT OF THE THREE GROUPS WITH ALL THE PRE-LOADED DATA</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/MAD_Trigger_stromtrack_download.PNG"><img alt="../../_images/MAD_Trigger_stromtrack_download.PNG" src="../../_images/MAD_Trigger_stromtrack_download.PNG" style="width: 1000px;" /></a>
+</figure>
+<ol class="arabic simple">
+<li><p>Group 1: Model_Input
+This group will contain all the input data that is required to successfully run the model. All the data that is stored in this section is fixed except the storm track.</p></li>
+</ol>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Always ensure you are using the most recently updated storm track for this process. To import the new layer, simply drag and drop it into the <code class="docutils literal notranslate"><span class="pre">Layers</span> <span class="pre">panel</span></code>, and place it at the top of the <strong>Model_Input</strong> group for clarity.</p>
+<p>For better data management, assign the storm track a descriptive name, such as <code class="docutils literal notranslate"><span class="pre">storm_track_Freddy_2023</span></code>. This naming convention clearly identifies the event and year, helping you stay organized and ensuring the correct data is used in the analysis.</p>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Group 2: Map_Cyclone_Impact_Overview
+This group will contain all the layers needed to create the following map.</p></li>
+</ol>
+<p>SCREENSHOT OF THE OUTPUT MAP</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/MAD_Trigger_stromtrack_download.PNG"><img alt="../../_images/MAD_Trigger_stromtrack_download.PNG" src="../../_images/MAD_Trigger_stromtrack_download.PNG" style="width: 1000px;" /></a>
+</figure>
+<p>The following layers are required to create this map:
+Pre-loaded:</p>
+<ul class="simple">
+<li><p>input storm track</p></li>
+<li><p>admin 1 boundaries</p></li>
+</ul>
+<ol class="arabic simple" start="3">
+<li><p>Group 3: Map_Cyclone_Impact_Assessment</p></li>
 <li><p>Now open the QGIS Model Designer. The tool can be accessed under <code class="docutils literal notranslate"><span class="pre">Processing</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Modeler</span> <span class="pre">Designer</span></code></p></li>
 <li><p>In the upper panel click <code class="docutils literal notranslate"><span class="pre">Model</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Model</span></code> and navigate to your folder “FbF_Cyclone_Monitoring_Trigger”, mark the “Cyclones_EAP_MAD_Trigger.model3” file an click on <code class="docutils literal notranslate"><span class="pre">Open</span></code>. The model will open and you will see yellow, white, green and grey boxes.</p></li>
 </ol>
@@ -856,20 +887,21 @@ Video: Input and output Model<div class="sd-summary-down docutils">
 <a class="reference internal image-reference" href="../../_images/SRCS_Model_input.png"><img alt="../../_images/SRCS_Model_input.png" src="../../_images/SRCS_Model_input.png" style="width: 500px;" /></a>
 </figure>
 </section>
-<section id="step-5-visualisation-of-results">
-<h2>Step 5: Visualisation of results<a class="headerlink" href="#step-5-visualisation-of-results" title="Permalink to this heading">#</a></h2>
+<section id="step-5-visualisation-and-styling-of-the-model-outputs">
+<h2>Step 5: Visualisation and Styling of the Model Outputs<a class="headerlink" href="#step-5-visualisation-and-styling-of-the-model-outputs" title="Permalink to this heading">#</a></h2>
 <p>We will generate two output maps to support the analysis:</p>
 <ul class="simple">
 <li><p>Map 1 will provide an overview of the <strong>affected districts, the extent of the cyclone event, and the locations of relevant warehouses</strong>.</p></li>
 <li><p>Map 2 will focus on the impact to infrastructure and population, displaying the <strong>number of affected people, buildings, health sites, and education facilities</strong>.</p></li>
 </ul>
 <p>Additionally, a map showing the <strong>warehouse isochrones</strong> for all 13 warehouses will be provided by HeiGIT.</p>
+<p>NEED NEW IMAGE</p>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/Drought_EAP_Worklow_Step_14_1.png"><img alt="../../_images/Drought_EAP_Worklow_Step_14_1.png" src="../../_images/Drought_EAP_Worklow_Step_14_1.png" style="width: 1000px;" /></a>
 </figure>
 <p><strong>Purpose:</strong> Definition of how features are represented visually on the map.</p>
 <p><strong>Tool:</strong> <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I.html#symbology-for-vector-data">Symbology tab</a></p>
-<p><strong>Cyclone Impact Area with Affected Districts and Warehouse Locations</strong></p>
+<p><strong>Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations</strong></p>
 <ol class="arabic simple">
 <li><p>Right click on the “Affected_districts” layer -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Symbology</span></code></p></li>
 <li><p>In the down left corner click on <code class="docutils literal notranslate"><span class="pre">Style</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code></p></li>
@@ -883,9 +915,10 @@ Video: Input and output Model<div class="sd-summary-down docutils">
 <li><p>the input line storm track</p></li>
 <li><p>and the buffered output cyclone area</p></li>
 </ul>
+<p>NEED NEW IMAGE</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Output after styling the layer<div class="sd-summary-down docutils">
+Your final output should look like this after styling the layer<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
@@ -895,25 +928,23 @@ Output after styling the layer<div class="sd-summary-down docutils">
 <a class="reference internal image-reference" href="../../_images/Map_yes_trigger.PNG"><img alt="../../_images/Map_yes_trigger.PNG" src="../../_images/Map_yes_trigger.PNG" style="width: 1000px;" /></a>
 </figure>
 </div>
-</details><p><strong>Cyclone Impact on Population and Infrastructure</strong></p>
-<ol class="arabic simple" start="7">
-<li><p>Right click on the “risk_assessment_districts” layer -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Symbology</span></code></p></li>
+</details><p><strong>Impact Assessment: Affected Population and Critical Infrastructure</strong></p>
+<ol class="arabic simple" start="6">
+<li><p>Right click on the “affected_population” layer -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Symbology</span></code></p></li>
 <li><p>In the down left corner click on <code class="docutils literal notranslate"><span class="pre">Style</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code></p></li>
-<li><p>In the new window click on the three points <img alt="" src="../../_images/Three_points.png" />. Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file <strong>“somalia_risk_assessment_style.qml”</strong> style layer.</p></li>
-<li><p>Move the “risk_assessment_district” layer <strong>below</strong> “Trigger_Activation” layer (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept.html?highlight=layer#layer-concept">Layer Concept</a>).</p></li>
+<li><p>In the new window click on the three points <img alt="" src="../../_images/Three_points.png" />. Navigate to the “FbF_Cyclone_Monitoring_Trigger/layer_styles” folder and select the file <strong>“affected_population.qml”</strong> style layer.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Then click on <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code></p></li>
 <li><p>Back in the “Layer Properties” Window click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
 </ol>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Info: Risk Assessment Layer<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">For the creation of an <strong>Intervention Map</strong> we will have to add the risk assessment data and the respective style file.
-For this first of all load from “FbF_Drought_Monitoring_Trigger/Fixed_data/Risk_Assessment” the file “risk_assessment_districts.gpkg”. This file is the output of the conducted risk assessment and contains a risk value for each district of Somaliland and Somalia.  In order to visualize it</p>
-</div>
-</details><p><strong>Administrative 2 Boundaries (Regions)</strong></p>
+<p>Do this same process for the following output layers:</p>
+<ul class="simple">
+<li><p>affected_buildings</p></li>
+<li><p>affected_education_facilities</p></li>
+<li><p>affected_healthsites</p></li>
+<li><p>the input line storm track</p></li>
+<li><p>and the buffered output cyclone area</p></li>
+</ul>
+<p><strong>Administrative 2 Boundaries (Regions)</strong></p>
 <ol class="arabic simple" start="12">
 <li><p>Right click on the “Som_Admbnda_Adm1_UNDP” (Regiond) layer -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Symbology</span></code></p></li>
 <li><p>In the down left corner click on <code class="docutils literal notranslate"><span class="pre">Style</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code></p></li>
@@ -1130,7 +1161,7 @@ Video: Export image and PDF<div class="sd-summary-down docutils">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-download-of-the-storm-track-data">Step 2: Download of the storm track data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-open-the-project-in-qgis-and-load-the-model-in-the-qgis-model-designer">Step 3: Open the project in QGIS and load the model in the QGIS Model Designer</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-run-the-model-names-in-this-section-need-to-be-finalized">Step 4: Run the model !!NAMES IN THIS SECTION NEED TO BE FINALIZED!!</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-visualisation-of-results">Step 5: Visualisation of results</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-visualisation-and-styling-of-the-model-outputs">Step 5: Visualisation and Styling of the Model Outputs</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-making-the-print-map">Step 6: Making the Print Map</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-exporting-the-map">Step 7: Exporting the Map</a></li>
 </ul>
