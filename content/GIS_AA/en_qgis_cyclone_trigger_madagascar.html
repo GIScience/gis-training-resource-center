@@ -623,27 +623,35 @@ document.write(`
 <td><p><a class="reference external" href="https://data.humdata.org/dataset/cod-ab-mdg">HDX</a></p></td>
 <td><p>The administrative boundaries on level 0-4 for Madagascar can be accessed via HDX provided by OCHA. For this trigger mechanism we provide the administrative boundaries on level 1 (regional level) and 2 (district level) as a shapefile.</p></td>
 </tr>
+<tr class="row-odd"><td><p>POI counts</p></td>
+<td><p><a class="reference external" href="https://export.hotosm.org/vi/v3/exports/new/describe">HOT Export Tool</a></p></td>
+<td><p>The POI data (education facilities and health sites) is downloaded using the HOT Export Tool based on OpenStreetMap data.</p></td>
+</tr>
+<tr class="row-even"><td><p>CRM Warehouses</p></td>
+<td><p><a class="reference external" href="https://export.hotosm.org/vi/v3/exports/new/describe">HOT Export Tool</a></p></td>
+<td><p></p></td>
+</tr>
 <tr class="row-odd"><td><p>Population Counts</p></td>
 <td><p><a class="reference external" href="https://hub.worldpop.org/geodata/summary?id=49646">WorldPop</a></p></td>
-<td><p>The worldpop dataset in <code class="docutils literal notranslate"><span class="pre">.geotif</span></code> raster format provides the estimated total number of people per grid-cell for the year 2020. We will be working with the Constrained Individual countries 2020 at a resolution of 100m.</p></td>
+<td><p>The worldpop dataset in raster format provides the estimated total number of people per grid-cell for the year 2020. We will be working with the Constrained Individual countries 2020 dataset at a resolution of 100m.</p></td>
 </tr>
 <tr class="row-even"><td><p>Buildings Counts</p></td>
 <td><p><a class="reference external" href="https://gee-community-catalog.org/projects/msbuildings/">Global ML Building Footprints</a></p></td>
-<td><p>The building counts dataset in <code class="docutils literal notranslate"><span class="pre">.geotif</span></code> raster format counts the number of buildings per 100m grid cell. The workflow on how this dataset was created can be found in this <a class="reference external" href="https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar">GitLab repo</a></p></td>
+<td><p>The building counts dataset in raster format counts the number of buildings per 100m grid cell. The workflow on how this dataset was created can be found on <a class="reference external" href="https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar">GitLab</a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Land Cover</p></td>
 <td><p><a class="reference external" href="https://land.copernicus.eu/en/products/global-dynamic-land-cover/copernicus-global-land-service-land-cover-100m-collection-3-epoch-2019-globe"> Copernicus Land Cover</a></p></td>
-<td><p>The land cover dataset in <code class="docutils literal notranslate"><span class="pre">.geotif</span></code> raster format provides an overview over the dominant land cover type at a resolution of 100m. This dataset was downloaded using the Google Earth Engine. The workflow on how this dataset was downloaded can be found in this <a class="reference external" href="https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar">GitLab repo</a></p></td>
+<td><p>The land cover dataset in raster format provides an overview over the dominant land cover type at a resolution of 100m. The workflow on how this dataset was downloaded can be found on <a class="reference external" href="https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar">GitLab</a></p></td>
 </tr>
 </tbody>
 </table>
 <div class="note admonition">
 <p class="admonition-title">Master Raster</p>
-<p>The three raster datasets are joined together in a Master Raster which will be a raster layer with three channels and a resolution of 100 m. It will include the following information:</p>
+<p>The three raster datasets are combined into a <strong>Master Raster</strong> — a multi-band raster layer with a spatial resolution of 100 meters. This composite layer includes the following information across three channels:</p>
 <ol class="arabic simple">
-<li><p>Population counts from Worldpop constrained (2020)</p></li>
-<li><p>Building counts derived from ML Building Footprints (2021)</p></li>
-<li><p>Land Cover derived from Copernicus Land Cover (2019)</p></li>
+<li><p>Population counts per grid cell from Worldpop constrained (2020)</p></li>
+<li><p>Building counts per grid cell derived from ML Building Footprints (2021)</p></li>
+<li><p>Land Cover type per grid cell derived from Copernicus Land Cover (2019)</p></li>
 </ol>
 </div>
 </section>
