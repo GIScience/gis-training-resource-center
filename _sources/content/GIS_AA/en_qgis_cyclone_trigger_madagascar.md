@@ -256,37 +256,37 @@ For each of these mandatory inputs, you click on the dropdown arrow and choose t
 THIS ENTIRE LIST NEEDS UPDATED NAMES
 
 3. Further down, you have to specify where to save the output: 
-    1. `Affected_Districts`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
+    1. `Affected_Districts`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
     ```md
-    Trigger_activation
+    affected_districts
     ```
   
-    1. `Relevant_Warehouses`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
+    2. `Relevant_Warehouses`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
     ```md
-    Trigger_activation
+    relevant_warehouses
     ```
 
-    2. `Affected_Cyclone_Area`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
+    3. `Affected_Cyclone_Area`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
     ```md
-    Trigger_activation
+    affected_cyclone_area
     ```
 
-    3. `Affected_Population`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
+    4. `Affected_Population`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
     ```md
-    Indices
+    affected_population
     ```
 
-    4. `Affected_Buildings`:Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
+    5. `Affected_Buildings`:Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
     ```md
-    IPC_Phase_C
+    affected_buildings
     ```
 
-    4. `Number_Affected_POIs`:Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
+    6. `Number_Affected_POIs`:Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
     ```md
-    IPC_Phase_P
+    number_affected_pois
     ```
 
-4. Click `Run`. Your results layer will appear in the main QGIS window. You can close the graphical modeller window.
+4. Click `Run` to execute the model. The output result layers will be automatically added to the main QGIS window upon completion. Once the process has finished, you can close the `Model Designer` window.
 
 ```{dropdown} Video: Input and output Model
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/model_input_output.mp4"></video>
