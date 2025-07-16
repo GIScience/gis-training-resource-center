@@ -256,22 +256,32 @@ For each of these mandatory inputs, you click on the dropdown arrow and choose t
 THIS ENTIRE LIST NEEDS UPDATED NAMES
 
 3. Further down, you have to specify where to save the output: 
-    1. `Trigger_activation`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
+    1. `Affected_Districts`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
+    ```md
+    Trigger_activation
+    ```
+  
+    1. `Relevant_Warehouses`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
     ```md
     Trigger_activation
     ```
 
-    2. `Indices`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
+    2. `Affected_Cyclone_Area`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
+    ```md
+    Trigger_activation
+    ```
+
+    3. `Affected_Population`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
     ```md
     Indices
     ```
 
-    3. `IPC_Phase_C`:Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
+    4. `Affected_Buildings`:Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
     ```md
     IPC_Phase_C
     ```
 
-    4. `IPC_Phase_P`:Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
+    4. `Number_Affected_POIs`:Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
     ```md
     IPC_Phase_P
     ```
