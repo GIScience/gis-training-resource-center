@@ -101,12 +101,15 @@ __Wrap up:__
 ### Available Data
 
 :::{card}
-:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Backup/Module_2_Exercise_3_Data_Sources.zip
 
-Since the exercise is about finding data, there won't be any data to download. 
-Instead download the __[standard folder structure](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_management.html#standard-folder-structure)__ [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip) and insert your data as you download it.
+Download the data and project file for this exercise [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Backup/Module_2_Exercise_3_Data_Sources.zip) and unzip the folder.
+
 
 :::
+
+<!---Since the exercise is about finding data, there won't be any data to download. 
+Instead download the __[standard folder structure](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_management.html#standard-folder-structure)__ [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip) and insert your data as you download it.-->
 
 ::::{dropdown} Standard folder structure
 ```{figure} /fig/standard_folder_structure_new_2025.drawio.png
