@@ -254,7 +254,7 @@ width: 750 px
     name: Extract by location Pakistan
     align: center
     ---
-    Extract by location Pakistan
+    Extracting the health facilities in our Area of Interest using the tool "Extract by Location". 
     ```
     - As `Input Layer`, select the layer `PAK_Health_Facilities_complete`. 
     - The `Geometric predicate` should be set to `Intersect`
@@ -265,14 +265,6 @@ width: 750 px
     - You will be prompted to enter a layer name. Give it the same name as the file and click `Ok`. 
     - Click `Run`. The new layer will appear in your layers tab.
 
-```{figure} /fig/PAK_extract_locatio_HS.png
----
-width: 400px
-name: Extract by location Pakistan
-align: center
----
-Extract by location Pakistan
-```
 
 Now we have an overview of the location of health facilities. However, we want to know which health facilities are impacted by the flood. Fortunately, the UN has just shared a dataset about the extent of floods from the 8th to the 12th of August, which we can overlay with our layer with the healthsites to identify the healthsites that are in the flooded area.
 
@@ -311,7 +303,7 @@ width: 400px
 name: Select flood affected health facilities
 align: center
 ---
-Select flood affected health facilities
+Selecting the flood affected health facilities using the tool "Select by Location"
 ```
 
 ::::{admonition} Possible Error Message
@@ -338,7 +330,7 @@ width: 400px
 name: Fix Geometry
 align: center
 ---
-The error message indicating invalid geometries
+The error message indicating invalid geometries.
 ```
 
 ::::
@@ -357,7 +349,7 @@ width: 300px
 name: New column Pakistan
 align: center
 ---
-Adding a new column to the attribute table
+Adding a new column to the attribute table for the healthsites layer
 ```
 
 7. Next, we want to edit the rows in the attribute table for the features we have selected. 
@@ -382,7 +374,7 @@ width: 600px
 name: Flood affected health facilities classification
 align: center
 ---
-Flood affected health facilities classification
+Classifying the flood affected health facilities.
 ```
 
 :::{card} 
