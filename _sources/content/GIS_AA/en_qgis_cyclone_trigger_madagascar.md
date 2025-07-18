@@ -346,7 +346,7 @@ Layers needed for this map:
 Do this same process for the other following output layers:
 
 | Layer name | Style | 
-| ----- | --- | --- |
+| ----- | --- |
 |`mdg_admbnda_adm1_BNGRC_OCHA_20181031`| `adm1_style.qml` |
 |`Relevant_Warehouses` | `relevant_warehouses_style.qml` |
 |`Affected_Cyclone_Area`|`cyclone_area_style.qml`|
