@@ -343,7 +343,7 @@ Layers needed for this map:
 4. Click `Open`. Then click on `Load Style`
 5. Back in the “Layer Properties” Window click `Apply` and `OK`
 
-Do this same process for the other following output layers:
+Repeat this process for the following output layers, along with their corresponding style sheets:
 
 | Layer name | Style | 
 | ----- | --- |
@@ -352,6 +352,11 @@ Do this same process for the other following output layers:
 |`Affected_Cyclone_Area`|`cyclone_area_style.qml`|
 |`Cyclone_track`| `cyclone_area_style.qml`|
 
+```{Attention}
+Ensure that all relevant output layers are properly added to the QGIS project. If any layers are missing, try re-running the model or check your Model Outputs folder to see if the files were created successfully.
+
+To maintain a clear and organized workspace, group the output layers in the Layers panel under the appropriate group (e.g., Map_Cyclone_Impact_Overview). This helps keep your project structured and makes navigation easier during the map creation process.
+```
 NEED NEW IMAGE
 
 ```{dropdown} Your final output should look like this after styling the layer
@@ -365,14 +370,22 @@ align: center
 ---
 ```
 
-__Impact Assessment: Affected Population and Critical Infrastructure__
+### Map 2: Impact Assessment: Affected Population and Critical Infrastructure
 
+Layers needed for this map:
+- `Relevant_Warehouses`
+- `mdg_admbnda_adm1_BNGRC_OCHA_20181031`
+- `Affected_Population`
+- `Affected_Buildings`
+- `Number_Affected_POIs`
+- `Affected_Cyclone_Area`
+- `Cyclone_track`
 
-6. Right click on the "affected_population" layer -> `Properties` -> `Symbology`
-7. In the down left corner click on `Style` -> `Load Style`
-8. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Cyclone_Monitoring_Trigger/layer_styles” folder and select the file __“affected_population.qml”__ style layer.
-9. Click `Open`. Then click on `Load Style`
-10. Back in the “Layer Properties” Window click `Apply` and `OK`
+1. Right click on the "affected_population" layer -> `Properties` -> `Symbology`
+2. In the down left corner click on `Style` -> `Load Style`
+3. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Cyclone_Monitoring_Trigger/layer_styles” folder and select the file __“affected_population.qml”__ style layer.
+4. Click `Open`. Then click on `Load Style`
+5. Back in the “Layer Properties” Window click `Apply` and `OK`
 
 Do this same process for the following output layers:
 - affected_buildings
