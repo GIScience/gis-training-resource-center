@@ -303,9 +303,14 @@ align: center
 
 ## Step 5: Visualisation and Styling of the Model Outputs
 
+:::{admonition} Output maps
+:class: note
+
 We will generate two output maps to support the analysis:
-- Map 1 will provide an overview of the **affected districts, the extent of the cyclone event, and the locations of relevant warehouses**.
+- Map 1 will provide an cyclone impact overview of the **affected districts, the extent of the cyclone event, and the locations of relevant warehouses**.
 - Map 2 will focus on the impact to infrastructure and population, displaying the **number of affected people, buildings, health sites, and education facilities**.
+
+:::
 
 Additionally, a map showing the **warehouse isochrones** for all 13 warehouses will be provided by HeiGIT.
 
@@ -323,18 +328,29 @@ __Purpose:__ Definition of how features are represented visually on the map.
 
 __Tool:__ [Symbology tab](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I.html#symbology-for-vector-data)
 
-__Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations__
+### Map 1: Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations
 
-1. Right click on the “Affected_districts” layer -> `Properties` -> `Symbology`
+Layers needed for this map:
+- `Affected_Districts`
+- `mdg_admbnda_adm1_BNGRC_OCHA_20181031`
+- `Relevant_Warehouses`
+- `Affected_Cyclone_Area`
+- `Cyclone_track`
+
+1. Right click on the Affected_Districts layer -> `Properties` -> `Symbology`
 2. In the down left corner click on `Style` -> `Load Style`
 3. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Cyclone_Monitoring_Trigger/layer_styles” folder and select the file __“affected_districts_style.qml”__.
 4. Click `Open`. Then click on `Load Style`
 5. Back in the “Layer Properties” Window click `Apply` and `OK`
 
-Do this same process for the following output layers:
-- relevant warehouses
-- the input line storm track
-- and the buffered output cyclone area
+Do this same process for the other following output layers:
+
+| Layer name | Style | 
+| ----- | --- | --- |
+|`mdg_admbnda_adm1_BNGRC_OCHA_20181031`| `adm1_style.qml` |
+|`Relevant_Warehouses` | `relevant_warehouses_style.qml` |
+|`Affected_Cyclone_Area`|`cyclone_area_style.qml`|
+|`Cyclone_track`| `cyclone_area_style.qml`|
 
 NEED NEW IMAGE
 
@@ -456,6 +472,9 @@ You can also adapt the template to your needs and preferences. You can find help
 ```{Attention}
 Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.
 ```
+
+The info box on the top right corner needs to be adapted manually. The list of the affected districts can be taken from the .csv output of the model.
+
 
 ## Step 7: Exporting the Map 
 
