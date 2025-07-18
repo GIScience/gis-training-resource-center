@@ -416,6 +416,18 @@ To maintain a clear and organized workspace, group the output layers in the Laye
 
 :::
 
+NEED NEW IMAGE
+
+```{dropdown} Your final output should look like this after styling the layer
+You will now see the affected districts and the locations of relevant warehouses clearly displayed on the map. Additionally, the original storm track line — used as input data — is highlighted, along with the buffered impact area, which serves as a proxy for identifying affected districts.
+
+```{figure} /fig/Map_yes_trigger.PNG
+---
+width: 1000px
+name: 
+align: center
+---
+```
 
 ## Step 6: Making the Print Map
 
@@ -431,13 +443,15 @@ __Purpose:__ Viualisation of the map features in a printable map layout
 __Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
 
 
-1. If not done before, delet all layers expect __Trigger_activation__, __risk_assessment_districts__ and __OpenStreetMap__
-2. Open a new print layout by clicking on `Project` -> `New Print Layout` -> enter the name of your current Project e.g "2022_04".
-3. Go the the __FbF_Drought_Monitoring_Trigger__` folder and drag and drop the file `Trigger_activation_Intervention_map.qpt` in the print layout
-4. Change the date to the current date by clicking on "Further map info…" in the items panel. Click on the `Item Properties` tab and scroll down. Here you can change the date in the `Main Properties` field.
-5. Adjust the Lgend by clicking on the legend in the  `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there check if you have to open the dropdown. Make sure `Auto update` is not checked.
-    * Remove all itemes in the legend be clicking on the item and then on the red minus icon below.
-    * Add __Trigger_activation__ and __risk_assessment_districts__ to the legend by clicking on the green plus and click on the layer and click `ok`
+1. Deactivate all Layer Groups except the group `Map_Cyclone_Impact_Overview`.
+2. Open a new print layout by clicking on `Project` -> `New Print Layout` -> enter the name of your current Project e.g "Feddy_2023_Overview".
+3. Right click on the white canvas and select `Page Properties`. In the bottom right section of the print layout, you'll see the page specifications. Set the Size to `A3` and the Orientation to `Landscape` to ensure that the map template fits correctly within the page layout.
+4. Go to the **FbF_Cyclone_Monitoring_Trigger and then Map_templates** folder and drag and drop the file `cyclone_impact_overview_map_template.qpt` into the print layout.
+5. Change the title to fit the current Cyclone Event and also adapt the **List of Affected Districts** for the current event.
+5. Adjust the Legend by clicking on it in the map layout and have a look at the `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there, check if you have to open the dropdown. Make sure `Auto update` is **not checked**.
+    * Remove all items in the legend be clicking on the item and then on the red minus icon below.
+    * Add **Relevant_Warehouses**, **Affected_Cyclone_Area**, **Affected_Districts** and **mdg_admbnda_adm1_BNGRC_OCHA_20181031** to the legend by clicking on the green plus and click on the layer, then click `OK`
+    * Change the names to fit with the names provided in the Print Layout.
  
 
 ```{dropdown} Video: Making print map
@@ -445,7 +459,14 @@ __Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-cent
 ```
 
 ```{Attention}
-Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.
+Checklist for final map output:
+- Update Map Information 
+    • Edit any text as needed
+- Check the Legend
+    • Remove unnecessary items
+    • Rename layers to clear, meaningful descriptions
+- Adapt the List of Affected Districts
+    • Include only districts that are actually affected in your output
 ```
 
 
