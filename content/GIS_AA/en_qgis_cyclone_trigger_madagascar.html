@@ -984,79 +984,58 @@ Your final output should look like this after styling the layer<div class="sd-su
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Relevant_Warehouses</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">mdg_admbnda_adm1_BNGRC_OCHA_20181031</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Affected_Cyclone_Area</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Cyclone_track</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Affected_Population</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Affected_Buildings</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Number_Affected_POIs</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Affected_Cyclone_Area</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Cyclone_track</span></code></p></li>
 </ul>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>If you already created Map 1 earlier in the process, you can reuse the first four layers with their existing styling for Map 2—and vice versa. This ensures consistency across both maps and saves time by avoiding duplicate styling efforts.</p>
+</div>
 <ol class="arabic simple">
-<li><p>Right click on the “affected_population” layer -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Symbology</span></code></p></li>
+<li><p>Right click on the “Affected_Population” layer -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Symbology</span></code></p></li>
 <li><p>In the down left corner click on <code class="docutils literal notranslate"><span class="pre">Style</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code></p></li>
 <li><p>In the new window click on the three points <img alt="" src="../../_images/Three_points.png" />. Navigate to the “FbF_Cyclone_Monitoring_Trigger/layer_styles” folder and select the file <strong>“affected_population.qml”</strong> style layer.</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Then click on <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code></p></li>
 <li><p>Back in the “Layer Properties” Window click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
 </ol>
-<p>Do this same process for the following output layers:</p>
-<ul class="simple">
-<li><p>affected_buildings</p></li>
-<li><p>affected_education_facilities</p></li>
-<li><p>affected_healthsites</p></li>
-<li><p>the input line storm track</p></li>
-<li><p>and the buffered output cyclone area</p></li>
-</ul>
-<p><strong>Administrative 2 Boundaries (Regions)</strong></p>
-<ol class="arabic simple" start="12">
-<li><p>Right click on the “Som_Admbnda_Adm1_UNDP” (Regiond) layer -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Symbology</span></code></p></li>
-<li><p>In the down left corner click on <code class="docutils literal notranslate"><span class="pre">Style</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code></p></li>
-<li><p>In the new window click on the three points <img alt="" src="../../_images/Three_points.png" />. Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file <strong>“somalia_risk_assessment_style.qml”</strong>.</p></li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Then click on <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code></p></li>
-<li><p>Back in the “Layer Properties” Window click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
-<li><p>Add a the OpenStreetMap basemap by clicking on <code class="docutils literal notranslate"><span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">XYZ</span> <span class="pre">layer...</span></code> -&gt; Select the OpenStreetMap. Click <code class="docutils literal notranslate"><span class="pre">Add</span></code>. (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html?highlight=osm#basemaps">Wiki basemap</a>)</p></li>
-<li><p>Place the OpenStreetMap basemap on the bottom.</p></li>
-<li><p>Delet all layers exept:</p>
-<ul class="simple">
-<li><p>Trigger_activation</p></li>
-<li><p>risk_assessment_districts</p></li>
-<li><p>Som_Admbnda_Adm1_UNDP</p></li>
-<li><p>OpenStreetMap</p></li>
-</ul>
-</li>
-</ol>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Video: Visualisation of results<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Trigger_model_style.mp4"></video></p>
-</div>
-</details><table class="table">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
+<p>Repeat this process for the following output layers, along with their corresponding style sheets:</p>
+<table class="table">
 <thead>
-<tr class="row-odd"><th class="head"><p>Intervention Map <strong>without</strong> Trigger activation</p></th>
-<th class="head"><p>Intervention Map <strong>with</strong> Trigger activation</p></th>
+<tr class="row-odd"><th class="head"><p>Layer name</p></th>
+<th class="head"><p>Style</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/Map_no_trigger.PNG"><img alt="../../_images/Map_no_trigger.PNG" src="../../_images/Map_no_trigger.PNG" style="width: 1000px;" /></a>
-</figure>
-</td>
-<td><figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/Map_yes_trigger.PNG"><img alt="../../_images/Map_yes_trigger.PNG" src="../../_images/Map_yes_trigger.PNG" style="width: 450px;" /></a>
-</figure>
-</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">mdg_admbnda_adm1_BNGRC_OCHA_20181031</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">adm1_style.qml</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">Relevant_Warehouses</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">relevant_warehouses_style.qml</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Affected_Cyclone_Area</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">cyclone_area_style.qml</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">Cyclone_track</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">cyclone_area_style.qml</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Affected_Buildings</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">affected_buildings.qml</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">Number_Affected_POIs</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">affected_education_facilities.qml</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Number_Affected_POIs</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">affected_healthsites.qml</span></code></p></td>
 </tr>
 </tbody>
 </table>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
-<p>Remember the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept.html?highlight=layer#layer-concept">layer concept</a> and make sure the basemap layer is at the bottom of your layers panel.</p>
+<p>Ensure that all relevant output layers are properly added to the QGIS project. If any layers are missing, try re-running the model or check your Model Outputs folder to see if the files were created successfully.</p>
+<p>To maintain a clear and organized workspace, group the output layers in the Layers panel under the appropriate group (e.g., Map_Cyclone_Impact_Overview). This helps keep your project structured and makes navigation easier during the map creation process.</p>
 </div>
 </section>
 </section>

@@ -352,11 +352,14 @@ Repeat this process for the following output layers, along with their correspond
 |`Affected_Cyclone_Area`|`cyclone_area_style.qml`|
 |`Cyclone_track`| `cyclone_area_style.qml`|
 
-```{Attention}
+:::{attention}
+
 Ensure that all relevant output layers are properly added to the QGIS project. If any layers are missing, try re-running the model or check your Model Outputs folder to see if the files were created successfully.
 
 To maintain a clear and organized workspace, group the output layers in the Layers panel under the appropriate group (e.g., Map_Cyclone_Impact_Overview). This helps keep your project structured and makes navigation easier during the map creation process.
-```
+
+:::
+
 NEED NEW IMAGE
 
 ```{dropdown} Your final output should look like this after styling the layer
@@ -375,74 +378,43 @@ align: center
 Layers needed for this map:
 - `Relevant_Warehouses`
 - `mdg_admbnda_adm1_BNGRC_OCHA_20181031`
+- `Affected_Cyclone_Area`
+- `Cyclone_track`
 - `Affected_Population`
 - `Affected_Buildings`
 - `Number_Affected_POIs`
-- `Affected_Cyclone_Area`
-- `Cyclone_track`
 
-1. Right click on the "affected_population" layer -> `Properties` -> `Symbology`
+:::{attention}
+
+If you already created Map 1 earlier in the process, you can reuse the first four layers with their existing styling for Map 2—and vice versa. This ensures consistency across both maps and saves time by avoiding duplicate styling efforts.
+
+:::
+
+1. Right click on the "Affected_Population" layer -> `Properties` -> `Symbology`
 2. In the down left corner click on `Style` -> `Load Style`
 3. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Cyclone_Monitoring_Trigger/layer_styles” folder and select the file __“affected_population.qml”__ style layer.
 4. Click `Open`. Then click on `Load Style`
 5. Back in the “Layer Properties” Window click `Apply` and `OK`
 
-Do this same process for the following output layers:
-- affected_buildings
-- affected_education_facilities
-- affected_healthsites
-- the input line storm track
-- and the buffered output cyclone area
+Repeat this process for the following output layers, along with their corresponding style sheets:
 
+| Layer name | Style | 
+| ----- | --- |
+|`mdg_admbnda_adm1_BNGRC_OCHA_20181031`| `adm1_style.qml` |
+|`Relevant_Warehouses` | `relevant_warehouses_style.qml` |
+|`Affected_Cyclone_Area`|`cyclone_area_style.qml`|
+|`Cyclone_track`| `cyclone_area_style.qml`|
+|`Affected_Buildings`| `affected_buildings.qml`|
+|`Number_Affected_POIs`| `affected_education_facilities.qml`|
+|`Number_Affected_POIs`| `affected_healthsites.qml`|
 
-__Administrative 2 Boundaries (Regions)__
+:::{attention}
 
-12. Right click on the "Som_Admbnda_Adm1_UNDP" (Regiond) layer -> `Properties` -> `Symbology`
-13. In the down left corner click on `Style` -> `Load Style`
-14. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file __“somalia_risk_assessment_style.qml”__.
-15. Click `Open`. Then click on `Load Style` 
-16. Back in the “Layer Properties” Window click `Apply` and `OK`
-17. Add a the OpenStreetMap basemap by clicking on `Layer` -> `Add Layer` -> `Add XYZ layer...` -> Select the OpenStreetMap. Click `Add`. ([Wiki basemap](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html?highlight=osm#basemaps))
-18. Place the OpenStreetMap basemap on the bottom.
-19. Delet all layers exept:
-    * Trigger_activation
-    * risk_assessment_districts
-    * Som_Admbnda_Adm1_UNDP
-    * OpenStreetMap
+Ensure that all relevant output layers are properly added to the QGIS project. If any layers are missing, try re-running the model or check your Model Outputs folder to see if the files were created successfully.
 
-```{dropdown} Video: Visualisation of results
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Trigger_model_style.mp4"></video>
-```
+To maintain a clear and organized workspace, group the output layers in the Layers panel under the appropriate group (e.g., Map_Cyclone_Impact_Overview). This helps keep your project structured and makes navigation easier during the map creation process.
 
-``````{list-table}
-:header-rows: 1
-:widths: 20 20
-
-* - Intervention Map __without__ Trigger activation
-  - Intervention Map __with__ Trigger activation
-* - 
-    ```{figure} /fig/Map_no_trigger.PNG
-    ---
-    width: 1000px
-    name: 
-    align: center
-    ---
-    ```
-    
-  -
-    ```{figure} /fig/Map_yes_trigger.PNG
-    ---
-    width: 450px
-    name: 
-    align: center
-    ---
-    ```
-``````
-
-```{Attention}
-Remember the [layer concept](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept.html?highlight=layer#layer-concept) and make sure the basemap layer is at the bottom of your layers panel.
-```
-
+:::
 
 
 ## Step 6: Making the Print Map
