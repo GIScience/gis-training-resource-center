@@ -567,7 +567,10 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-download-of-the-storm-track-data">Step 2: Download of the storm track data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-open-the-project-in-qgis-and-load-the-model-in-the-qgis-model-designer">Step 3: Open the project in QGIS and load the model in the QGIS Model Designer</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-run-the-model-names-in-this-section-need-to-be-finalized">Step 4: Run the model !!NAMES IN THIS SECTION NEED TO BE FINALIZED!!</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-visualisation-and-styling-of-the-model-outputs">Step 5: Visualisation and Styling of the Model Outputs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-visualisation-and-styling-of-the-model-outputs">Step 5: Visualisation and Styling of the Model Outputs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map-1-cyclone-impact-overview-affected-districts-event-extent-and-warehouse-locations">Map 1: Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-making-the-print-map">Step 6: Making the Print Map</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-exporting-the-map">Step 7: Exporting the Map</a></li>
 </ul>
@@ -901,11 +904,14 @@ Video: Input and output Model<div class="sd-summary-down docutils">
 </section>
 <section id="step-5-visualisation-and-styling-of-the-model-outputs">
 <h2>Step 5: Visualisation and Styling of the Model Outputs<a class="headerlink" href="#step-5-visualisation-and-styling-of-the-model-outputs" title="Permalink to this heading">#</a></h2>
+<div class="note admonition">
+<p class="admonition-title">Output maps</p>
 <p>We will generate two output maps to support the analysis:</p>
 <ul class="simple">
-<li><p>Map 1 will provide an overview of the <strong>affected districts, the extent of the cyclone event, and the locations of relevant warehouses</strong>.</p></li>
+<li><p>Map 1 will provide an cyclone impact overview of the <strong>affected districts, the extent of the cyclone event, and the locations of relevant warehouses</strong>.</p></li>
 <li><p>Map 2 will focus on the impact to infrastructure and population, displaying the <strong>number of affected people, buildings, health sites, and education facilities</strong>.</p></li>
 </ul>
+</div>
 <p>Additionally, a map showing the <strong>warehouse isochrones</strong> for all 13 warehouses will be provided by HeiGIT.</p>
 <p>NEED NEW IMAGE</p>
 <figure class="align-center">
@@ -913,20 +919,30 @@ Video: Input and output Model<div class="sd-summary-down docutils">
 </figure>
 <p><strong>Purpose:</strong> Definition of how features are represented visually on the map.</p>
 <p><strong>Tool:</strong> <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I.html#symbology-for-vector-data">Symbology tab</a></p>
-<p><strong>Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations</strong></p>
+<section id="map-1-cyclone-impact-overview-affected-districts-event-extent-and-warehouse-locations">
+<h3>Map 1: Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations<a class="headerlink" href="#map-1-cyclone-impact-overview-affected-districts-event-extent-and-warehouse-locations" title="Permalink to this heading">#</a></h3>
+<p>Layers needed for this map:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Affected_Districts</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">mdg_admbnda_adm1_BNGRC_OCHA_20181031</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Relevant_Warehouses</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Affected_Cyclone_Area</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Cyclone_track</span></code></p></li>
+</ul>
 <ol class="arabic simple">
-<li><p>Right click on the “Affected_districts” layer -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Symbology</span></code></p></li>
+<li><p>Right click on the Affected_Districts layer -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Symbology</span></code></p></li>
 <li><p>In the down left corner click on <code class="docutils literal notranslate"><span class="pre">Style</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code></p></li>
 <li><p>In the new window click on the three points <img alt="" src="../../_images/Three_points.png" />. Navigate to the “FbF_Cyclone_Monitoring_Trigger/layer_styles” folder and select the file <strong>“affected_districts_style.qml”</strong>.</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Then click on <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code></p></li>
 <li><p>Back in the “Layer Properties” Window click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
 </ol>
-<p>Do this same process for the following output layers:</p>
-<ul class="simple">
-<li><p>relevant warehouses</p></li>
-<li><p>the input line storm track</p></li>
-<li><p>and the buffered output cyclone area</p></li>
-</ul>
+<p>Do this same process for the other following output layers:</p>
+<p>| Layer name | Style |
+| —– | — | — |
+|<code class="docutils literal notranslate"><span class="pre">mdg_admbnda_adm1_BNGRC_OCHA_20181031</span></code>| <code class="docutils literal notranslate"><span class="pre">adm1_style.qml</span></code> |
+|<code class="docutils literal notranslate"><span class="pre">Relevant_Warehouses</span></code> | <code class="docutils literal notranslate"><span class="pre">relevant_warehouses_style.qml</span></code> |
+|<code class="docutils literal notranslate"><span class="pre">Affected_Cyclone_Area</span></code>|<code class="docutils literal notranslate"><span class="pre">cyclone_area_style.qml</span></code>|
+|<code class="docutils literal notranslate"><span class="pre">Cyclone_track</span></code>| <code class="docutils literal notranslate"><span class="pre">cyclone_area_style.qml</span></code>|</p>
 <p>NEED NEW IMAGE</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -1010,6 +1026,7 @@ Video: Visualisation of results<div class="sd-summary-down docutils">
 <p>Remember the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept.html?highlight=layer#layer-concept">layer concept</a> and make sure the basemap layer is at the bottom of your layers panel.</p>
 </div>
 </section>
+</section>
 <section id="step-6-making-the-print-map">
 <h2>Step 6: Making the Print Map<a class="headerlink" href="#step-6-making-the-print-map" title="Permalink to this heading">#</a></h2>
 <figure class="align-center">
@@ -1049,6 +1066,7 @@ Video: Making print map<div class="sd-summary-down docutils">
 <p class="admonition-title">Attention</p>
 <p>Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.</p>
 </div>
+<p>The info box on the top right corner needs to be adapted manually. The list of the affected districts can be taken from the .csv output of the model.</p>
 </section>
 <section id="step-7-exporting-the-map">
 <h2>Step 7: Exporting the Map<a class="headerlink" href="#step-7-exporting-the-map" title="Permalink to this heading">#</a></h2>
@@ -1173,7 +1191,10 @@ Video: Export image and PDF<div class="sd-summary-down docutils">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-download-of-the-storm-track-data">Step 2: Download of the storm track data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-open-the-project-in-qgis-and-load-the-model-in-the-qgis-model-designer">Step 3: Open the project in QGIS and load the model in the QGIS Model Designer</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-run-the-model-names-in-this-section-need-to-be-finalized">Step 4: Run the model !!NAMES IN THIS SECTION NEED TO BE FINALIZED!!</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-visualisation-and-styling-of-the-model-outputs">Step 5: Visualisation and Styling of the Model Outputs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-visualisation-and-styling-of-the-model-outputs">Step 5: Visualisation and Styling of the Model Outputs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map-1-cyclone-impact-overview-affected-districts-event-extent-and-warehouse-locations">Map 1: Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-making-the-print-map">Step 6: Making the Print Map</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-exporting-the-map">Step 7: Exporting the Map</a></li>
 </ul>
