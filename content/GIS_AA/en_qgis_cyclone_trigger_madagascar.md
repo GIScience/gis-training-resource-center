@@ -16,7 +16,7 @@ Setting triggers is one of the cornerstones of the Forecast-based Financing syst
 
 # Functionality of the Trigger Workflow
 
-The Trigger Process concept is displayed in the following figure.
+The Trigger Process concept is displayed in {ref}`fig-trigger-concept`.
 
 ```{figure} /fig/MAD_Trigger_concept.png
 ---
@@ -24,6 +24,7 @@ width: 1000px
 name: fig-trigger-concept
 align: center
 ---
+The Trigger Process concept.
 ```
 
 The entire trigger workflow will be run in a QGIS model, which automates the spatial analysis for assessing the impact of tropical cyclones. It integrates cyclone storm track data with administrative boundaries, population data, infrastructure, and service locations to identify and quantify affected areas and resources. 
@@ -144,7 +145,7 @@ The Video below shows the process for setting up the folder for december 2023.
 
 The **International Best Track Archive for Climate Stewardship (IBTrACS)** v04r01 data is updated three times a week (usually on Sunday, Tuesday, and Thursday), and could be updated more frequently to address specific needs and use cases. The latest updates in the correct file format can be found on their [website](https://www.ncei.noaa.gov/products/international-best-track-archive):
 
-1. Look for the `Access Methods` section and click on `Shapefiles`. The link leads to the following [website](https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r01/access/shapefile/) which can also be seen in the figure below.
+1. Look for the `Access Methods` section and click on `Shapefiles`. The link leads to the following [website](https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r01/access/shapefile/) which can also be seen in {ref}`MAD_Trigger_stromtrack_download`.
 2. Since we don’t need storm track data for the entire world or the full archive, we will download only a relevant subset. Locate for the file named `IBTrACS.ACTIVE.list.v04r01.lines.zip` and click on it - the download should begin automatically.
 3. Unzip the file and open it in QGIS.
 4. Open the attribute table and delete all the storm tracks that are not relevant for this analysis. Safe the updated storm track file.
@@ -159,7 +160,7 @@ The storm track subset `IBTrACS.ACTIVE.list.v04r01.lines.zip` contains all **sto
 ```{figure} /fig/MAD_Trigger_stromtrack_download.PNG
 ---
 width: 1000px
-name: 
+name: MAD_Trigger_stromtrack_download
 align: center
 ---
 ```
@@ -170,7 +171,7 @@ align: center
 In this step we will open our Trigger project in QGIS and load the QGIS model which will automatically run the analysis for us.
 
 1. Open the file `Trigger_Model.qgz` by double clicking it.
-2. The file will open and you will lots of data pre-loaded. This data is required for running the QGIS model.
+2. The QGIS project will open with lots of data pre-loaded. This data is required for running the QGIS model and create some output maps.
 
 The data will be structured in three Groups:
 
