@@ -504,28 +504,28 @@ align: center
 ---
 ```
 
-__Purpose:__ Export the designed and finalized map layout in order tp print it as a pdf or format of your choice.
+__Purpose:__ Export the designed and finalized map layout in order to print it as a pdf or format of your choice.
 
 
 __Tool:__ [Print Layout](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
 
-When you have finished the design of you map you can export it as pdf or image file in different datafromats.
+When you have finished the design of you map you can export it as pdf or image file in different data formats.
 
 __Export as Image__
 
 1. In the print layout click on `Layer` -> `Export as Image`
-2. Chose the __Result__ folder in the folder you have created in step 1. Give the file the name of the project e.g 2022_04
-3.  Click on `Save`
-4. The window "Image Export Options" will appear. Click `Save`
-Now the image can be found in the result folder in the folder you created in Step 1
+2. Choose the __Map_outputs__ folder. Give the file the name of the event e.g storm_track_Freddy_2023_overview (if its the impact map change insert this instead of overview).
+3. Click on `Save`
+4. The window `Image Export Options` will appear. Click `Save`
+Now the image can be found in the result folder.
 
 
 __Export as PDF__
 
 1. In the print layout click on `Layer` -> `Export as PDF`
-2. Chose the __Result__ folder in the folder you have created in step 1. Give the file the name of the project e.g 2022_04
-3.  Click on `Save`
-4. The window "PDF Export Options" will appear.  For the best results, select the `lossless` image compression.
+2. Choose the __Map_outputs__ folder. Give the file the name of the event e.g storm_track_Freddy_2023_overview (if its the impact map change insert this instead of overview).
+3. Click on `Save`
+4. The window `PDF Export Options` will appear. For the best results, select the `lossless` image compression.
 5. Click `Save`
 Now the image can be found in the result folder in the folder you created in Step 1
 
