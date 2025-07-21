@@ -572,7 +572,11 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map-2-impact-assessment-affected-population-and-critical-infrastructure">Map 2: Impact Assessment: Affected Population and Critical Infrastructure</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-making-the-print-map">Step 6: Making the Print Map</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-making-the-print-map">Step 6: Making the Print Map</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Map 1: Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Map 2: Impact Assessment: Affected Population and Critical Infrastructure</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-exporting-the-map">Step 7: Exporting the Map</a></li>
 </ul>
 </li>
@@ -778,7 +782,7 @@ This group will contain all the input data that is required to successfully run 
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>Always ensure you are using the most recently updated storm track for this process. To import the new layer, simply drag and drop it into the <code class="docutils literal notranslate"><span class="pre">Layers</span> <span class="pre">panel</span></code>, and place it at the top of the <strong>Model_Input</strong> group for clarity.</p>
-<p>For better data management, assign the storm track a descriptive name, such as <code class="docutils literal notranslate"><span class="pre">storm_track_Freddy_2023</span></code>. This naming convention clearly identifies the event and year, helping you stay organized and ensuring the correct data is used in the analysis.</p>
+<p>For better data management, assign the storm track a descriptive name, such as <code class="docutils literal notranslate"><span class="pre">storm_track_eventname_year</span></code>. This naming convention clearly identifies the event and year, helping you stay organized and ensuring the correct data is used in the analysis.</p>
 </div>
 <ol class="arabic simple" start="2">
 <li><p>Group 2: Map_Cyclone_Impact_Overview
@@ -1062,6 +1066,8 @@ Your final output should look like this after styling the layer<div class="sd-su
 </figure>
 <p><strong>Purpose:</strong> Viualisation of the map features in a printable map layout</p>
 <p><strong>Tool:</strong>  <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout">Print Layout</a></p>
+<section id="id1">
+<h3>Map 1: Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Deactivate all Layer Groups except the group <code class="docutils literal notranslate"><span class="pre">Map_Cyclone_Impact_Overview</span></code>.</p></li>
 <li><p>Open a new print layout by clicking on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Print</span> <span class="pre">Layout</span></code> -&gt; enter the name of your current Project e.g “Feddy_2023_Overview”.</p></li>
@@ -1089,23 +1095,43 @@ Video: Making print map<div class="sd-summary-down docutils">
 <p class="admonition-title">Attention</p>
 <p>Checklist for final map output:</p>
 <ul class="simple">
-<li><p>Update Map Information
-• Edit any text as needed</p></li>
-<li><p>Check the Legend
-• Remove unnecessary items
-• Rename layers to clear, meaningful descriptions</p></li>
-<li><p>Adapt the List of Affected Districts
-• Include only districts that are actually affected in your output</p></li>
+<li><p>Map Information: Review and update all text elements as needed.</p></li>
+<li><p>Legend: Remove unnecessary items and rename layers with clear, meaningful descriptions.</p></li>
+<li><p>Affected Districts: Include only districts that are actually impacted in your “List of Affected Districts”.</p></li>
 </ul>
 </div>
-<p>In order to easily visualize the output of the trigger analysis we provide you with a
-<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#map-templates">map template</a> that can be used as a base for your visualization. You can find the template in the following directory: “…/FbF_Drought_Monitoring_Trigger/maps_somalia_template_risk_assessment.qpt”.</p>
-<p>You can also adapt the template to your needs and preferences. You can find help <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#print-layout">here</a>.</p>
+</section>
+<section id="id2">
+<h3>Map 2: Impact Assessment: Affected Population and Critical Infrastructure<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Deactivate all Layer Groups except the group <code class="docutils literal notranslate"><span class="pre">Map_Cyclone_Impact_Overview</span></code>.</p></li>
+<li><p>Open a new print layout by clicking on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Print</span> <span class="pre">Layout</span></code> -&gt; enter the name of your current Project e.g “Feddy_2023_Impact”.</p></li>
+<li><p>Right click on the white canvas and select <code class="docutils literal notranslate"><span class="pre">Page</span> <span class="pre">Properties</span></code>. In the bottom right section of the print layout, you’ll see the page specifications. Set the Size to <code class="docutils literal notranslate"><span class="pre">A2</span></code> and the Orientation to <code class="docutils literal notranslate"><span class="pre">Landscape</span></code> to ensure that the map template fits correctly within the page layout.</p></li>
+<li><p>Go to the <strong>FbF_Cyclone_Monitoring_Trigger and then Map_templates</strong> folder and drag and drop the file <code class="docutils literal notranslate"><span class="pre">cyclone_impact_assessment_map_template.qpt</span></code> into the print layout.</p></li>
+<li><p>Change the title to fit the current Cyclone Event and also adapt the <strong>List of Affected Districts</strong> for the current event.</p></li>
+<li><p>Adjust the Legend by clicking on it in the map layout and have a look at the <code class="docutils literal notranslate"><span class="pre">Item</span> <span class="pre">Properties</span></code> tab and scroll down until you see the <code class="docutils literal notranslate"><span class="pre">Legend</span> <span class="pre">items</span></code> field. If it is not there, check if you have to open the dropdown. Make sure <code class="docutils literal notranslate"><span class="pre">Auto</span> <span class="pre">update</span></code> is <strong>not checked</strong>.</p>
+<ul class="simple">
+<li><p>Remove all items in the legend be clicking on the item and then on the red minus icon below.</p></li>
+<li><p>Add <strong>Relevant_Warehouses</strong>, <strong>Affected_Cyclone_Area</strong>, <strong>Affected_Districts</strong> and <strong>mdg_admbnda_adm1_BNGRC_OCHA_20181031</strong> to the legend by clicking on the green plus and click on the layer, then click <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
+<li><p>Change the names to fit with the names provided in the Print Layout.</p></li>
+</ul>
+</li>
+<li><p>The map template includes four separate maps, each displaying the impact assessment for a different variable. These maps should be updated one at a time.</p>
+<ul class="simple">
+<li><p>To ensure correct updates, first deactivate all other impact assessment layers (e.g., Affected Buildings, Affected Healthsites, etc.). Focus on one map at a time: identify the visualized layer, then locate the corresponding map in the impact template.</p></li>
+<li><p>Click on the map frame and check the <code class="docutils literal notranslate"><span class="pre">Item</span> <span class="pre">Properties</span></code> panel in the bottom-right corner. Under the Layers section, you’ll see options for <code class="docutils literal notranslate"><span class="pre">Lock</span> <span class="pre">layers</span></code> and <code class="docutils literal notranslate"><span class="pre">Lock</span> <span class="pre">styles</span> <span class="pre">for</span> <span class="pre">layers</span></code>. These options should be disabled while updating the map — they prevent changes by locking the current layer and style.</p></li>
+<li><p>Once the map is correctly updated, <strong>re-enable both checkboxes</strong> to lock the layer and style again. This ensures the map remains unchanged as you proceed to update the remaining three maps.</p></li>
+<li><p>Repeat this process for all four maps, always remembering to: (1) Disable layer/style locks before editing. (2) Re-enable them after updating each map.</p></li>
+</ul>
+</li>
+</ol>
+<p>For easier visualization, we have created <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#map-templates">map templates</a> for presenting the results of the trigger analysis. These templates serve as a base for your own visualizations and are available in the following directory: <code class="docutils literal notranslate"><span class="pre">.../FbF_Cyclone_Monitoring_Trigger/Map_templates</span></code>. You can customize the templates to suit your needs and preferences. You can find help <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#print-layout">here</a>.</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.</p>
 </div>
 <p>The info box on the top right corner needs to be adapted manually. The list of the affected districts can be taken from the .csv output of the model.</p>
+</section>
 </section>
 <section id="step-7-exporting-the-map">
 <h2>Step 7: Exporting the Map<a class="headerlink" href="#step-7-exporting-the-map" title="Permalink to this heading">#</a></h2>
@@ -1235,7 +1261,11 @@ Video: Export image and PDF<div class="sd-summary-down docutils">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map-2-impact-assessment-affected-population-and-critical-infrastructure">Map 2: Impact Assessment: Affected Population and Critical Infrastructure</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-making-the-print-map">Step 6: Making the Print Map</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-making-the-print-map">Step 6: Making the Print Map</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Map 1: Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Map 2: Impact Assessment: Affected Population and Critical Infrastructure</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-exporting-the-map">Step 7: Exporting the Map</a></li>
 </ul>
 </li>
