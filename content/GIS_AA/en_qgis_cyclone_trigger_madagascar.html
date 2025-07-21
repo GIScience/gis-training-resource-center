@@ -608,7 +608,7 @@ document.write(`
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="functionality-of-the-trigger-workflow">
 <h1>Functionality of the Trigger Workflow<a class="headerlink" href="#functionality-of-the-trigger-workflow" title="Permalink to this heading">#</a></h1>
-<p>The Trigger Process concept is displayed in <a class="reference internal" href="#fig-trigger-concept"><span class="std std-ref">The Trigger Process concept.</span></a>.</p>
+<p><a class="reference internal" href="#fig-trigger-concept"><span class="std std-ref">The Trigger Process concept.</span></a> is displayed in the figure below.</p>
 <figure class="align-center" id="fig-trigger-concept">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_concept.png"><img alt="../../_images/MAD_Trigger_concept.png" src="../../_images/MAD_Trigger_concept.png" style="width: 1000px;" /></a>
 <figcaption>
@@ -716,7 +716,7 @@ The output layer is relevant warehouses, indicating logistical support readiness
 <section id="step-1-setting-up-folder-structure-needs-to-be-fixed">
 <h2>Step 1: Setting up folder structure !!NEEDS TO BE FIXED!!<a class="headerlink" href="#step-1-setting-up-folder-structure-needs-to-be-fixed" title="Permalink to this heading">#</a></h2>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/Drought_EAP_Worklow_Step_1_1.png"><img alt="../../_images/Drought_EAP_Worklow_Step_1_1.png" src="../../_images/Drought_EAP_Worklow_Step_1_1.png" style="width: 1000px;" /></a>
+<a class="reference internal image-reference" href="fig/MAD_Trigger_workflow_Step1.png"><img alt="fig/MAD_Trigger_workflow_Step1.png" src="fig/MAD_Trigger_workflow_Step1.png" style="width: 1000px;" /></a>
 </figure>
 <p><strong>Purpose:</strong> In this step we set up the correct folder structure to make the analysis easier and to ensure consistent results.</p>
 <p><strong>Tool:</strong> No special tools or programs are needed</p>
@@ -748,9 +748,12 @@ The output layer is relevant warehouses, indicating logistical support readiness
 </section>
 <section id="step-2-download-of-the-storm-track-data">
 <h2>Step 2: Download of the storm track data<a class="headerlink" href="#step-2-download-of-the-storm-track-data" title="Permalink to this heading">#</a></h2>
+<figure class="align-center">
+<a class="reference internal image-reference" href="fig/MAD_Trigger_workflow_Step2.png"><img alt="fig/MAD_Trigger_workflow_Step2.png" src="fig/MAD_Trigger_workflow_Step2.png" style="width: 1000px;" /></a>
+</figure>
 <p>The <strong>International Best Track Archive for Climate Stewardship (IBTrACS)</strong> v04r01 data is updated three times a week (usually on Sunday, Tuesday, and Thursday), and could be updated more frequently to address specific needs and use cases. The latest updates in the correct file format can be found on their <a class="reference external" href="https://www.ncei.noaa.gov/products/international-best-track-archive">website</a>:</p>
 <ol class="arabic simple">
-<li><p>Look for the <code class="docutils literal notranslate"><span class="pre">Access</span> <span class="pre">Methods</span></code> section and click on <code class="docutils literal notranslate"><span class="pre">Shapefiles</span></code>. The link leads to the following <a class="reference external" href="https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r01/access/shapefile/">website</a> which can also be seen in <span class="xref std std-ref">MAD_Trigger_stromtrack_download</span>.</p></li>
+<li><p>Look for the <code class="docutils literal notranslate"><span class="pre">Access</span> <span class="pre">Methods</span></code> section and click on <code class="docutils literal notranslate"><span class="pre">Shapefiles</span></code>. The link leads to the following <a class="reference external" href="https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r01/access/shapefile/">website</a> which can also be seen in the figure below.</p></li>
 <li><p>Since we don’t need storm track data for the entire world or the full archive, we will download only a relevant subset. Locate for the file named <code class="docutils literal notranslate"><span class="pre">IBTrACS.ACTIVE.list.v04r01.lines.zip</span></code> and click on it - the download should begin automatically.</p></li>
 <li><p>Unzip the file and open it in QGIS.</p></li>
 <li><p>Open the attribute table and delete all the storm tracks that are not relevant for this analysis. Safe the updated storm track file.</p></li>
@@ -765,6 +768,9 @@ The output layer is relevant warehouses, indicating logistical support readiness
 </section>
 <section id="step-3-open-the-project-in-qgis-and-load-the-model-in-the-qgis-model-designer">
 <h2>Step 3: Open the project in QGIS and load the model in the QGIS Model Designer<a class="headerlink" href="#step-3-open-the-project-in-qgis-and-load-the-model-in-the-qgis-model-designer" title="Permalink to this heading">#</a></h2>
+<figure class="align-center">
+<a class="reference internal image-reference" href="fig/MAD_Trigger_workflow_Step3.png"><img alt="fig/MAD_Trigger_workflow_Step3.png" src="fig/MAD_Trigger_workflow_Step3.png" style="width: 1000px;" /></a>
+</figure>
 <p>In this step we will open our Trigger project in QGIS and load the QGIS model which will automatically run the analysis for us.</p>
 <ol class="arabic simple">
 <li><p>Open the file <code class="docutils literal notranslate"><span class="pre">Trigger_Model.qgz</span></code> by double clicking it.</p></li>
@@ -833,7 +839,7 @@ Pre-loaded:</p>
 <section id="step-4-run-the-model-names-in-this-section-need-to-be-finalized">
 <h2>Step 4: Run the model !!NAMES IN THIS SECTION NEED TO BE FINALIZED!!<a class="headerlink" href="#step-4-run-the-model-names-in-this-section-need-to-be-finalized" title="Permalink to this heading">#</a></h2>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/Drought_EAP_Worklow_Step_5_1_automated_model.png"><img alt="../../_images/Drought_EAP_Worklow_Step_5_1_automated_model.png" src="../../_images/Drought_EAP_Worklow_Step_5_1_automated_model.png" style="width: 1000px;" /></a>
+<a class="reference internal image-reference" href="fig/MAD_Trigger_workflow_Step4.png"><img alt="fig/MAD_Trigger_workflow_Step4.png" src="fig/MAD_Trigger_workflow_Step4.png" style="width: 1000px;" /></a>
 </figure>
 <p><strong>Model Input &amp; Output</strong></p>
 <div class="admonition attention">
@@ -923,7 +929,7 @@ Video: Input and output Model<div class="sd-summary-down docutils">
 <p>Additionally, a map showing the <strong>warehouse isochrones</strong> for all 13 warehouses will be provided by HeiGIT.</p>
 <p>NEED NEW IMAGE</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/Drought_EAP_Worklow_Step_14_1.png"><img alt="../../_images/Drought_EAP_Worklow_Step_14_1.png" src="../../_images/Drought_EAP_Worklow_Step_14_1.png" style="width: 1000px;" /></a>
+<a class="reference internal image-reference" href="fig/MAD_Trigger_workflow_Step5.png"><img alt="fig/MAD_Trigger_workflow_Step5.png" src="fig/MAD_Trigger_workflow_Step5.png" style="width: 1000px;" /></a>
 </figure>
 <p><strong>Purpose:</strong> Definition of how features are represented visually on the map.</p>
 <p><strong>Tool:</strong> <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I.html#symbology-for-vector-data">Symbology tab</a></p>
@@ -1062,7 +1068,7 @@ Your final output should look like this after styling the layer<div class="sd-su
 <section id="step-6-making-the-print-map">
 <h2>Step 6: Making the Print Map<a class="headerlink" href="#step-6-making-the-print-map" title="Permalink to this heading">#</a></h2>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/Drought_EAP_Worklow_Step_15_1.png"><img alt="../../_images/Drought_EAP_Worklow_Step_15_1.png" src="../../_images/Drought_EAP_Worklow_Step_15_1.png" style="width: 1000px;" /></a>
+<a class="reference internal image-reference" href="fig/MAD_Trigger_workflow_Step6.png"><img alt="fig/MAD_Trigger_workflow_Step6.png" src="fig/MAD_Trigger_workflow_Step6.png" style="width: 1000px;" /></a>
 </figure>
 <p><strong>Purpose:</strong> Viualisation of the map features in a printable map layout</p>
 <p><strong>Tool:</strong>  <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout">Print Layout</a></p>
@@ -1136,7 +1142,7 @@ Video: Making print map<div class="sd-summary-down docutils">
 <section id="step-7-exporting-the-map">
 <h2>Step 7: Exporting the Map<a class="headerlink" href="#step-7-exporting-the-map" title="Permalink to this heading">#</a></h2>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/Drought_EAP_Worklow_Step_16_1.png"><img alt="../../_images/Drought_EAP_Worklow_Step_16_1.png" src="../../_images/Drought_EAP_Worklow_Step_16_1.png" style="width: 1000px;" /></a>
+<a class="reference internal image-reference" href="fig/MAD_Trigger_workflow_Step7.png"><img alt="fig/MAD_Trigger_workflow_Step7.png" src="fig/MAD_Trigger_workflow_Step7.png" style="width: 1000px;" /></a>
 </figure>
 <p><strong>Purpose:</strong> Export the designed and finalized map layout in order to print it as a pdf or format of your choice.</p>
 <p><strong>Tool:</strong> <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout">Print Layout</a></p>

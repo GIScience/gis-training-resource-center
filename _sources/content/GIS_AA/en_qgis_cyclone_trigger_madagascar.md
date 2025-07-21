@@ -16,7 +16,7 @@ Setting triggers is one of the cornerstones of the Forecast-based Financing syst
 
 # Functionality of the Trigger Workflow
 
-The Trigger Process concept is displayed in {ref}`fig-trigger-concept`.
+{ref}`fig-trigger-concept` is displayed in the figure below.
 
 ```{figure} /fig/MAD_Trigger_concept.png
 ---
@@ -107,7 +107,7 @@ The [QGIS Model Designer](https://giscience.github.io/gis-training-resource-cent
 ## Step 1: Setting up folder structure !!NEEDS TO BE FIXED!!
 
 
-```{figure} /fig/Drought_EAP_Worklow_Step_1_1.png
+```{figure} /fig/MAD_Trigger_workflow_Step1.png
 ---
 width: 1000px
 name: 
@@ -143,9 +143,17 @@ The Video below shows the process for setting up the folder for december 2023.
 
 ## Step 2: Download of the storm track data
 
+```{figure} /fig/MAD_Trigger_workflow_Step2.png
+---
+width: 1000px
+name: 
+align: center
+---
+```
+
 The **International Best Track Archive for Climate Stewardship (IBTrACS)** v04r01 data is updated three times a week (usually on Sunday, Tuesday, and Thursday), and could be updated more frequently to address specific needs and use cases. The latest updates in the correct file format can be found on their [website](https://www.ncei.noaa.gov/products/international-best-track-archive):
 
-1. Look for the `Access Methods` section and click on `Shapefiles`. The link leads to the following [website](https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r01/access/shapefile/) which can also be seen in {ref}`MAD_Trigger_stromtrack_download`.
+1. Look for the `Access Methods` section and click on `Shapefiles`. The link leads to the following [website](https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r01/access/shapefile/) which can also be seen in the figure below.
 2. Since we don’t need storm track data for the entire world or the full archive, we will download only a relevant subset. Locate for the file named `IBTrACS.ACTIVE.list.v04r01.lines.zip` and click on it - the download should begin automatically.
 3. Unzip the file and open it in QGIS.
 4. Open the attribute table and delete all the storm tracks that are not relevant for this analysis. Safe the updated storm track file.
@@ -167,6 +175,14 @@ align: center
 
 
 ## Step 3: Open the project in QGIS and load the model in the QGIS Model Designer
+
+```{figure} /fig/MAD_Trigger_workflow_Step3.png
+---
+width: 1000px
+name: 
+align: center
+---
+```
 
 In this step we will open our Trigger project in QGIS and load the QGIS model which will automatically run the analysis for us.
 
@@ -228,7 +244,7 @@ Pre-loaded:
 
 ## Step 4: Run the model !!NAMES IN THIS SECTION NEED TO BE FINALIZED!!
 
-```{figure} /fig/Drought_EAP_Worklow_Step_5_1_automated_model.png
+```{figure} /fig/MAD_Trigger_workflow_Step4.png
 ---
 width: 1000px
 name: 
@@ -317,7 +333,7 @@ Additionally, a map showing the **warehouse isochrones** for all 13 warehouses w
 
 NEED NEW IMAGE
 
-```{figure} /fig/Drought_EAP_Worklow_Step_14_1.png
+```{figure} /fig/MAD_Trigger_workflow_Step5.png
 ---
 width: 1000px
 name: 
@@ -432,7 +448,7 @@ align: center
 
 ## Step 6: Making the Print Map
 
-```{figure} /fig/Drought_EAP_Worklow_Step_15_1.png
+```{figure} /fig/MAD_Trigger_workflow_Step6.png
 ---
 width: 1000px
 name: 
@@ -496,7 +512,7 @@ The info box on the top right corner needs to be adapted manually. The list of t
 ## Step 7: Exporting the Map 
 
 
-```{figure} /fig/Drought_EAP_Worklow_Step_16_1.png
+```{figure} /fig/MAD_Trigger_workflow_Step7.png
 ---
 width: 1000px
 name: 
