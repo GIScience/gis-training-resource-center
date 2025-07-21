@@ -56,7 +56,7 @@ parts:
       - file: content/Module_7/en_module_7_overview.md
         sections: 
           - file: content/Module_7/en_qgis_automation_theory.md
-          - file: content/Module_7/en_qgis_module_7_ex1.md
+          - file: content/Module_7/en_qgis_module_7_exercises.md
       - file: content/Module_8/en_module_8_overview.md
         sections: 
           - file: content/Module_8/en_qgis_remote_sensing_raster_theory.md
