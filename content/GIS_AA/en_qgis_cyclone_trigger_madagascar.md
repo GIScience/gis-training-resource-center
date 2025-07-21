@@ -200,7 +200,7 @@ align: center
 ---
 ```
 
-1. Group 1: Model_Input
+Group 1: Model_Input
 This group will contain all the input data that is required to successfully run the model. All the data that is stored in this section is fixed except the storm track.
 
 :::{attention}
@@ -211,7 +211,7 @@ For better data management, assign the storm track a descriptive name, such as `
 
 :::
 
-2. Group 2: Map_Cyclone_Impact_Overview
+Group 2: Map_Cyclone_Impact_Overview
 This group will contain all the layers needed to create the following map. 
 
 SCREENSHOT OF THE OUTPUT MAP
@@ -228,10 +228,10 @@ Pre-loaded:
 - input storm track
 - admin 1 boundaries
 
-3. Group 3: Map_Cyclone_Impact_Assessment
+Group 3: Map_Cyclone_Impact_Assessment
 
-3. Now open the QGIS Model Designer. The tool can be accessed under `Processing` -> `Modeler Designer`
-4. In the upper panel click `Model` -> `Open Model` and navigate to your folder "FbF_Cyclone_Monitoring_Trigger", mark the "Cyclones_EAP_MAD_Trigger.model3" file an click on `Open`. The model will open and you will see yellow, white, green and grey boxes.
+1. Now open the QGIS Model Designer. The tool can be accessed under `Processing` -> `Modeler Designer`
+2. In the upper panel click `Model` -> `Open Model` and navigate to your folder "FbF_Cyclone_Monitoring_Trigger", mark the "Cyclones_EAP_MAD_Trigger.model3" file an click on `Open`. The model will open and you will see yellow, white, green and grey boxes.
 
 
 | Box | Significance | Description |
@@ -543,17 +543,17 @@ __Export as PDF__
 3. Click on `Save`
 4. The window `PDF Export Options` will appear. For the best results, select the `lossless` image compression.
 5. Click `Save`
-Now the image can be found in the result folder in the folder you created in Step 1
+Now the image can be found in the result folder.
 
 ```{dropdown} Video: Export image and PDF
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_trigger_export_image_pdf.mp4"></video>
 ```
 
 
-```{figure} /fig/map_output_example2.png
+```{figure} /fig/MAD_trigger_overview.png
 ---
 width: 1000px
-name: 
+name: Impact of Cyclone Event Freddy 2023
 align: center
 ---
 ```
