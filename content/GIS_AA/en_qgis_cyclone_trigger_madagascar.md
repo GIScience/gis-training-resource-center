@@ -191,7 +191,7 @@ This group will contain all the input data that is required to successfully run 
 
 Always ensure you are using the most recently updated storm track for this process. To import the new layer, simply drag and drop it into the `Layers panel`, and place it at the top of the **Model_Input** group for clarity.
 
-For better data management, assign the storm track a descriptive name, such as `storm_track_Freddy_2023`. This naming convention clearly identifies the event and year, helping you stay organized and ensuring the correct data is used in the analysis.
+For better data management, assign the storm track a descriptive name, such as `storm_track_eventname_year`. This naming convention clearly identifies the event and year, helping you stay organized and ensuring the correct data is used in the analysis.
 
 :::
 
@@ -443,13 +443,14 @@ __Purpose:__ Viualisation of the map features in a printable map layout
 
 __Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
 
+### Map 1: Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations
 
 1. Deactivate all Layer Groups except the group `Map_Cyclone_Impact_Overview`.
 2. Open a new print layout by clicking on `Project` -> `New Print Layout` -> enter the name of your current Project e.g "Feddy_2023_Overview".
 3. Right click on the white canvas and select `Page Properties`. In the bottom right section of the print layout, you'll see the page specifications. Set the Size to `A3` and the Orientation to `Landscape` to ensure that the map template fits correctly within the page layout.
 4. Go to the **FbF_Cyclone_Monitoring_Trigger and then Map_templates** folder and drag and drop the file `cyclone_impact_overview_map_template.qpt` into the print layout.
 5. Change the title to fit the current Cyclone Event and also adapt the **List of Affected Districts** for the current event.
-5. Adjust the Legend by clicking on it in the map layout and have a look at the `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there, check if you have to open the dropdown. Make sure `Auto update` is **not checked**.
+6. Adjust the Legend by clicking on it in the map layout and have a look at the `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there, check if you have to open the dropdown. Make sure `Auto update` is **not checked**.
     * Remove all items in the legend be clicking on the item and then on the red minus icon below.
     * Add **Relevant_Warehouses**, **Affected_Cyclone_Area**, **Affected_Districts** and **mdg_admbnda_adm1_BNGRC_OCHA_20181031** to the legend by clicking on the green plus and click on the layer, then click `OK`
     * Change the names to fit with the names provided in the Print Layout.
@@ -461,20 +462,29 @@ __Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-cent
 
 ```{Attention}
 Checklist for final map output:
-- Update Map Information 
-    • Edit any text as needed
-- Check the Legend
-    • Remove unnecessary items
-    • Rename layers to clear, meaningful descriptions
-- Adapt the List of Affected Districts
-    • Include only districts that are actually affected in your output
+- Map Information: Review and update all text elements as needed.
+- Legend: Remove unnecessary items and rename layers with clear, meaningful descriptions.
+- Affected Districts: Include only districts that are actually impacted in your "List of Affected Districts".
 ```
 
+### Map 2: Impact Assessment: Affected Population and Critical Infrastructure
 
-In order to easily visualize the output of the trigger analysis we provide you with a 
-[map template](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#map-templates) that can be used as a base for your visualization. You can find the template in the following directory: ".../FbF_Drought_Monitoring_Trigger/maps_somalia_template_risk_assessment.qpt".
+1. Deactivate all Layer Groups except the group `Map_Cyclone_Impact_Overview`.
+2. Open a new print layout by clicking on `Project` -> `New Print Layout` -> enter the name of your current Project e.g "Feddy_2023_Impact".
+3. Right click on the white canvas and select `Page Properties`. In the bottom right section of the print layout, you'll see the page specifications. Set the Size to `A2` and the Orientation to `Landscape` to ensure that the map template fits correctly within the page layout.
+4. Go to the **FbF_Cyclone_Monitoring_Trigger and then Map_templates** folder and drag and drop the file `cyclone_impact_assessment_map_template.qpt` into the print layout.
+5. Change the title to fit the current Cyclone Event and also adapt the **List of Affected Districts** for the current event.
+6. Adjust the Legend by clicking on it in the map layout and have a look at the `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there, check if you have to open the dropdown. Make sure `Auto update` is **not checked**.
+    * Remove all items in the legend be clicking on the item and then on the red minus icon below.
+    * Add **Relevant_Warehouses**, **Affected_Cyclone_Area**, **Affected_Districts** and **mdg_admbnda_adm1_BNGRC_OCHA_20181031** to the legend by clicking on the green plus and click on the layer, then click `OK`
+    * Change the names to fit with the names provided in the Print Layout.
+7. The map template includes four separate maps, each displaying the impact assessment for a different variable. These maps should be updated one at a time.
+    * To ensure correct updates, first deactivate all other impact assessment layers (e.g., Affected Buildings, Affected Healthsites, etc.). Focus on one map at a time: identify the visualized layer, then locate the corresponding map in the impact template.
+    * Click on the map frame and check the `Item Properties` panel in the bottom-right corner. Under the Layers section, you’ll see options for `Lock layers` and `Lock styles for layers`. These options should be disabled while updating the map — they prevent changes by locking the current layer and style.
+    * Once the map is correctly updated, **re-enable both checkboxes** to lock the layer and style again. This ensures the map remains unchanged as you proceed to update the remaining three maps.
+    * Repeat this process for all four maps, always remembering to: (1) Disable layer/style locks before editing. (2) Re-enable them after updating each map.
 
-You can also adapt the template to your needs and preferences. You can find help [here](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#print-layout).
+For easier visualization, we have created [map templates](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#map-templates) for presenting the results of the trigger analysis. These templates serve as a base for your own visualizations and are available in the following directory: `.../FbF_Cyclone_Monitoring_Trigger/Map_templates`. You can customize the templates to suit your needs and preferences. You can find help [here](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#print-layout).
 
 ```{Attention}
 Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.
