@@ -4,6 +4,7 @@
 :link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
+
 ::::
 
 # Exercises 1: Automatisation
@@ -12,14 +13,7 @@
 
 ## Characteristics of the exercise
 
-:::{card}
-:class-card: sd-border-1 sd-shadow-none
-__Aim of the exercise:__
-^^^
 
-
-
-:::
 
 ::::{grid} 2
 :::{grid-item-card}
@@ -50,11 +44,8 @@ __Estimated time demand for the exercise__
 __Relevant Wiki Articles__
 ^^^
 
-* [QGIS Interface](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
-* [Types of Geodata](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_types_wiki.html)
-* [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.
 * [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html)
-* [Intersection](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)html)
+* [Intersection](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
 * [Projections](/content/Wiki/en_qgis_projections_wiki.md)
 * [Buffer](/content/Wiki/en_qgis_projections_wiki.md)
 * [Clip](/content/Wiki/en_qgis_projections_wiki.md)
@@ -63,6 +54,15 @@ __Relevant Wiki Articles__
 :::
 
 ::::
+
+:::{card}
+:class-card: sd-border-1 sd-shadow-none
+__Aim of the exercise:__
+^^^
+
+
+
+:::
 
 ## Instructions for the trainers
 
@@ -158,7 +158,7 @@ You will manually buffer the cyclone track, clip the population raster, and calc
 
 2. **Save the project** in the “project” folder. To do that click on `Project` -> `Save as` and navigate to the folder. Name the project “Cyclon_Harald_Exposure”.
 
-3. **Load the GeoJOSN** file "Harald_2025_Track.geojson" in your project by drag and drop ([Wiki Video](/content/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). Or click on `Layer`-> `Add Layer`-> `Add Vector Layer`. Click on the three points ![](/fig/Three_points.png) and navigate to "Harald_2025_Track.geojson". Select the file and click `Open`. Back in QGIS click `Add` ([Wiki Video](/content/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab)).
+3. **Load the GeoJOSN** file "Harald_2025_Track.geojson" in your project by drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)) .
 
 
 4. **Reproject the cyclone track** to use meters instead of degrees (important for accurate buffering):
