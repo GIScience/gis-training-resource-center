@@ -164,7 +164,7 @@ You will manually buffer the cyclone track, clip the population raster, and calc
 4. **Reproject the cyclone track** to use meters instead of degrees (important for accurate buffering):
    - In the **Processing Toolbox**, search for `Reproject Layer`.
    - Input: `Harald_2025_Track`
-   - Target CRS: `EPSG:3857 – Pseudo-Mercator` or another meter-based CRS appropriate for Madagascar.
+   - Target CRS: `EPSG:29738` or another meter-based CRS appropriate for Madagascar.
    - Save the result in the `temp` folder as: **`Harald_Track_Reprojected`**
 ```{Attention}
 Buffer distances must be calculated in meters. Many datasets (like GeoJSON cyclone tracks) use geographic coordinate systems like EPSG:4326, which measure in degrees — not meters. To correctly calculate a 200 km buffer, we must first reproject the track into a projected CRS that uses meters.
@@ -176,18 +176,23 @@ Buffer distances must be calculated in meters. Many datasets (like GeoJSON cyclo
    - Segments: Leave default (5)
    - Dissolve: `Yes`
    - Save output in the `temp` folder as: **`Harald_Buffer_200km`**
-6. **Load the administrative boundaries**:
+6. **Reproject the buffer back to EPSG:4326 (to match the raster's CRS):**
+   - In the Processing Toolbox, search for Reproject Layer.
+   - Input: Harald_Buffer_200km_29738
+   - Target CRS: EPSG:4326 – WGS 84
+   - Save the output in the temp folder as: Harald_Buffer_200km_4326
+7. **Load the administrative boundaries**:
    - File: `MDG_adm2.gpkg`
    - Add using drag and drop or `Add Vector Layer`.
-7. **Load the population raster**:
+8. **Load the population raster**:
    - File: `MDG_WorldPop_2020_constrained.tif`
    - Add using `Layer` → `Add Raster Layer`.
-8. **Clip the population raster** using the buffered impact zone:
+9. **Clip the population raster** using the buffered impact zone:
    - In the **Processing Toolbox**, search for `Clip Raster by Mask Layer`.
    - Input raster: `MDG_WorldPop_2020_constrained.tif`
    - Mask layer: `Harald_Buffer_200km`
    - Save output in the `temp` folder as: **`Harald_Pop_Clip.tif`**
-9. **Calculate total exposed population**:
+10. **Calculate total exposed population**:
    - In the **Processing Toolbox**, search for `Zonal Statistics`.
    - Input vector layer: `MDG_adm2.gpkg`
    - Raster layer: `Harald_Pop_Clip.tif`
@@ -195,7 +200,24 @@ Buffer distances must be calculated in meters. Many datasets (like GeoJSON cyclo
    - Field prefix: e.g., `pop_`
    - Save the updated vector layer in the `result` folder as: **`Harald_Exposed_Population.gpkg`**
    - The result will be a new column in the attribute table of the `MDG_adm2.gpkg` layer, showing the total population within the cyclone buffer per district.
-10. Your results should look something like this: 
+11. **Visualise the affected population by classifying the results**:
+Now that Aina has estimated the exposed population in each district, she wants to clearly show the differences across regions on the map.
+To do this, we'll apply a **graduated classification** to the `Harald_Exposed_Population.gpkg` layer using the new population field created by the Zonal Statistics tool.
+- In the **Layers panel**, right-click on the layer `Harald_Exposed_Population` and choose `Properties`.
+- Go to the **Symbology** tab on the left.
+- At the top of the window, change the style from `Single Symbol` to `Graduated`.
+- In the **Value** drop-down menu, select the field that contains the population sum. It typically starts with the prefix you defined earlier, e.g. `pop_sum`.
+- Set the **color ramp** to one that suits your map (e.g. `Reds`).
+- Choose a **classification mode** (e.g. `Quantile`, `Natural Breaks`, or `Equal Interval`) and select the number of classes (e.g. 5).
+- Click `Classify` to generate the classification.
+- Click `Apply` and then `OK` to display the classified map.
+
+```{tip}
+You can adjust class boundaries or labels by double-clicking on each class entry.
+```
+
+
+Your results should look something like this: 
 
 ```{figure} /fig/
 ---
@@ -204,3 +226,5 @@ name: the_world_result
 align: center
 ---
 ```
+
+## Task 2: Auto
