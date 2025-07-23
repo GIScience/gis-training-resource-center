@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Generating Risk Indicators &#8212; GIS Resource Training Center</title>
+    <title>How to generate Risk Indicators &#8212; GIS Resource Training Center</title>
   
   
   
@@ -328,7 +328,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="en_qgis_risk_assessment_plugin.html">Risk Assessment QGIS Plugin</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Generating Risk Indicators</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">How to generate Risk Indicators</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="en_qgis_historical_impact_assessment_sudan.html">Historical Impact Assessment (HIA) for Flood in Sudan</a></li>
@@ -546,7 +546,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Generating Risk Indicators</h1>
+    <h1>How to generate Risk Indicators</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -581,8 +581,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="generating-risk-indicators">
-<h1>Generating Risk Indicators<a class="headerlink" href="#generating-risk-indicators" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="how-to-generate-risk-indicators">
+<h1>How to generate Risk Indicators<a class="headerlink" href="#how-to-generate-risk-indicators" title="Permalink to this heading">#</a></h1>
 <p>To conduct a meaningful risk assessment with the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_risk_assessment_plugin.html">Risk Assessment QGIS Plugin</a>, it is essential to prepare input indicator files that represent the three main dimensions:</p>
 <ul class="simple">
 <li><p><strong>Exposure</strong> (mandatory)</p></li>
@@ -590,6 +590,14 @@ document.write(`
 <li><p><strong>Coping Capacity</strong> (optional, but strongly recommended)</p></li>
 </ul>
 <p>This page provides detailed video examples of how to generate each of these indicators using commonly available geospatial data of Ethiopia. The goal is to support users in creating well-structured and valid inputs that align with the plugin’s requirements.</p>
+<div class="tip admonition">
+<p class="admonition-title">Key Takeaways</p>
+<ul class="simple">
+<li><p>Ensure the file contains an <code class="docutils literal notranslate"><span class="pre">ADM_PCODE</span></code> column.</p></li>
+<li><p>Only include indicator columns relevant for the specific dimension.</p></li>
+<li><p>Choose unique column names that describe the content of the column briefly but efficiently.</p></li>
+</ul>
+</div>
 <hr class="docutils" />
 <section id="exposure-indicators">
 <h2>Exposure Indicators<a class="headerlink" href="#exposure-indicators" title="Permalink to this heading">#</a></h2>
@@ -631,14 +639,6 @@ document.write(`
 <h3>Health and Ecudation Facilities<a class="headerlink" href="#health-and-ecudation-facilities" title="Permalink to this heading">#</a></h3>
 <p>The dataset was processed in QGIS to count the number of facilities per administrative unit using the <code class="docutils literal notranslate"><span class="pre">Count</span> <span class="pre">Points</span> <span class="pre">in</span> <span class="pre">Polygon</span></code> tool:
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Coping_indicator.mp4"></video></p>
-<div class="tip admonition">
-<p class="admonition-title">Key Takeaways</p>
-<ul class="simple">
-<li><p>Ensure the file contains an <code class="docutils literal notranslate"><span class="pre">ADM_PCODE</span></code> column.</p></li>
-<li><p>Only include indicator columns relevant for the specific dimension.</p></li>
-<li><p>Choose unique column names that describe the content of the column briefly but efficiently.</p></li>
-</ul>
-</div>
 </section>
 </section>
 </section>

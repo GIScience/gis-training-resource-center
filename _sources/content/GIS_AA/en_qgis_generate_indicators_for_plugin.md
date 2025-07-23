@@ -1,4 +1,4 @@
-# Generating Risk Indicators
+# How to generate Risk Indicators
 
 To conduct a meaningful risk assessment with the [Risk Assessment QGIS Plugin](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_risk_assessment_plugin.html), it is essential to prepare input indicator files that represent the three main dimensions:
 
@@ -7,6 +7,13 @@ To conduct a meaningful risk assessment with the [Risk Assessment QGIS Plugin](h
 - **Coping Capacity** (optional, but strongly recommended)
 
 This page provides detailed video examples of how to generate each of these indicators using commonly available geospatial data of Ethiopia. The goal is to support users in creating well-structured and valid inputs that align with the plugin’s requirements.
+
+:::{admonition} Key Takeaways
+:class: tip
+- Ensure the file contains an `ADM_PCODE` column.
+- Only include indicator columns relevant for the specific dimension.
+- Choose unique column names that describe the content of the column briefly but efficiently.
+:::
 
 ---
 
@@ -56,11 +63,3 @@ The Coping Capacity indicator was determined by combining the [Health Facilities
 
 The dataset was processed in QGIS to count the number of facilities per administrative unit using the `Count Points in Polygon` tool:
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Coping_indicator.mp4"></video>
-
-:::{admonition} Key Takeaways
-:class: tip
-- Ensure the file contains an `ADM_PCODE` column.
-- Only include indicator columns relevant for the specific dimension.
-- Choose unique column names that describe the content of the column briefly but efficiently.
-:::
-
