@@ -549,6 +549,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions-for-the-trainers">Instructions for the trainers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks-estimating-exposed-population-ainas-manual-approach">Tasks: Estimating Exposed Population – Aina’s Manual Approach</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-auto">Task 2: Auto</a></li>
 </ul>
             </nav>
         </div>
@@ -738,7 +739,7 @@ document.write(`
 <ul class="simple">
 <li><p>In the <strong>Processing Toolbox</strong>, search for <code class="docutils literal notranslate"><span class="pre">Reproject</span> <span class="pre">Layer</span></code>.</p></li>
 <li><p>Input: <code class="docutils literal notranslate"><span class="pre">Harald_2025_Track</span></code></p></li>
-<li><p>Target CRS: <code class="docutils literal notranslate"><span class="pre">EPSG:3857</span> <span class="pre">–</span> <span class="pre">Pseudo-Mercator</span></code> or another meter-based CRS appropriate for Madagascar.</p></li>
+<li><p>Target CRS: <code class="docutils literal notranslate"><span class="pre">EPSG:29738</span></code> or another meter-based CRS appropriate for Madagascar.</p></li>
 <li><p>Save the result in the <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder as: <strong><code class="docutils literal notranslate"><span class="pre">Harald_Track_Reprojected</span></code></strong></p></li>
 </ul>
 </li>
@@ -756,6 +757,14 @@ document.write(`
 <li><p>Segments: Leave default (5)</p></li>
 <li><p>Dissolve: <code class="docutils literal notranslate"><span class="pre">Yes</span></code></p></li>
 <li><p>Save output in the <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder as: <strong><code class="docutils literal notranslate"><span class="pre">Harald_Buffer_200km</span></code></strong></p></li>
+</ul>
+</li>
+<li><p><strong>Reproject the buffer back to EPSG:4326 (to match the raster’s CRS):</strong></p>
+<ul class="simple">
+<li><p>In the Processing Toolbox, search for Reproject Layer.</p></li>
+<li><p>Input: Harald_Buffer_200km_29738</p></li>
+<li><p>Target CRS: EPSG:4326 – WGS 84</p></li>
+<li><p>Save the output in the temp folder as: Harald_Buffer_200km_4326</p></li>
 </ul>
 </li>
 <li><p><strong>Load the administrative boundaries</strong>:</p>
@@ -778,7 +787,8 @@ document.write(`
 <li><p>Save output in the <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder as: <strong><code class="docutils literal notranslate"><span class="pre">Harald_Pop_Clip.tif</span></code></strong></p></li>
 </ul>
 </li>
-<li><p><strong>Calculate total exposed population</strong>:</p>
+<li><p><strong>Calculate total exposed population</strong>:</p></li>
+</ol>
 <ul class="simple">
 <li><p>In the <strong>Processing Toolbox</strong>, search for <code class="docutils literal notranslate"><span class="pre">Zonal</span> <span class="pre">Statistics</span></code>.</p></li>
 <li><p>Input vector layer: <code class="docutils literal notranslate"><span class="pre">MDG_adm2.gpkg</span></code></p></li>
@@ -788,12 +798,32 @@ document.write(`
 <li><p>Save the updated vector layer in the <code class="docutils literal notranslate"><span class="pre">result</span></code> folder as: <strong><code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Population.gpkg</span></code></strong></p></li>
 <li><p>The result will be a new column in the attribute table of the <code class="docutils literal notranslate"><span class="pre">MDG_adm2.gpkg</span></code> layer, showing the total population within the cyclone buffer per district.</p></li>
 </ul>
-</li>
-<li><p>Your results should look something like this:</p></li>
+<ol class="arabic simple" start="11">
+<li><p><strong>Visualise the affected population by classifying the results</strong>:
+Now that Aina has estimated the exposed population in each district, she wants to clearly show the differences across regions on the map.
+To do this, we’ll apply a <strong>graduated classification</strong> to the <code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Population.gpkg</span></code> layer using the new population field created by the Zonal Statistics tool.</p></li>
 </ol>
+<ul class="simple">
+<li><p>In the <strong>Layers panel</strong>, right-click on the layer <code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Population</span></code> and choose <code class="docutils literal notranslate"><span class="pre">Properties</span></code>.</p></li>
+<li><p>Go to the <strong>Symbology</strong> tab on the left.</p></li>
+<li><p>At the top of the window, change the style from <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">Symbol</span></code> to <code class="docutils literal notranslate"><span class="pre">Graduated</span></code>.</p></li>
+<li><p>In the <strong>Value</strong> drop-down menu, select the field that contains the population sum. It typically starts with the prefix you defined earlier, e.g. <code class="docutils literal notranslate"><span class="pre">pop_sum</span></code>.</p></li>
+<li><p>Set the <strong>color ramp</strong> to one that suits your map (e.g. <code class="docutils literal notranslate"><span class="pre">Reds</span></code>).</p></li>
+<li><p>Choose a <strong>classification mode</strong> (e.g. <code class="docutils literal notranslate"><span class="pre">Quantile</span></code>, <code class="docutils literal notranslate"><span class="pre">Natural</span> <span class="pre">Breaks</span></code>, or <code class="docutils literal notranslate"><span class="pre">Equal</span> <span class="pre">Interval</span></code>) and select the number of classes (e.g. 5).</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Classify</span></code> to generate the classification.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and then <code class="docutils literal notranslate"><span class="pre">OK</span></code> to display the classified map.</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can adjust class boundaries or labels by double-clicking on each class entry.</p>
+</div>
+<p>Your results should look something like this:</p>
 <figure class="align-center" id="the-world-result">
 <a class="reference internal image-reference" href="../../_images/fig"><img alt="../../_images/fig" src="../../_images/fig" style="width: 600px;" /></a>
 </figure>
+</section>
+<section id="task-2-auto">
+<h2>Task 2: Auto<a class="headerlink" href="#task-2-auto" title="Permalink to this heading">#</a></h2>
 </section>
 </section>
 
@@ -846,6 +876,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions-for-the-trainers">Instructions for the trainers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks-estimating-exposed-population-ainas-manual-approach">Tasks: Estimating Exposed Population – Aina’s Manual Approach</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-auto">Task 2: Auto</a></li>
 </ul>
   </nav></div>
 
