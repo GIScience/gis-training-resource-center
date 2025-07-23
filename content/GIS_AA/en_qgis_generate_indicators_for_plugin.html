@@ -584,7 +584,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="generating-risk-indicators">
 <h1>Generating Risk Indicators<a class="headerlink" href="#generating-risk-indicators" title="Permalink to this heading">#</a></h1>
-<p>To conduct a meaningful risk assessment with the Risk Assessment QGIS Plugin, it is essential to prepare input indicator files that represent the three main dimensions:</p>
+<p>To conduct a meaningful risk assessment with the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_risk_assessment_plugin.html">Risk Assessment QGIS Plugin</a>, it is essential to prepare input indicator files that represent the three main dimensions:</p>
 <ul class="simple">
 <li><p><strong>Exposure</strong> (mandatory)</p></li>
 <li><p><strong>Vulnerability</strong> (mandatory)</p></li>
@@ -608,12 +608,13 @@ document.write(`
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/PDSI_exposure_indicator_2.mp4"></video></p>
 </section>
 </section>
+<hr class="docutils" />
 <section id="vulnerability-indicators">
 <h2>Vulnerability Indicators<a class="headerlink" href="#vulnerability-indicators" title="Permalink to this heading">#</a></h2>
 <p>The Vulnerability indicator was determined by combining the <a class="reference external" href="https://data.humdata.org/dataset/ethiopia-acled-conflict-data">ACLED - Conflict Events</a> and <a class="reference external" href="https://data.humdata.org/dataset/worldpop-age-and-gender-structures-2015-2030-eth">Worldpop</a> datasets from <strong>HDX</strong>.</p>
 <section id="acled-conflict-events">
 <h3>ACLED - Conflict Events<a class="headerlink" href="#acled-conflict-events" title="Permalink to this heading">#</a></h3>
-<p>The dataset was processed in QGIS to estimate the population affected by conflict in 2024 using the <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">Attributes</span> <span class="pre">by</span> <span class="pre">Location</span> <span class="pre">(Summary)</span></code> tool. Additionally the number of conflicts per administrative unit was calculated (<code class="docutils literal notranslate"><span class="pre">Count</span> <span class="pre">Points</span> <span class="pre">in</span> <span class="pre">Polygon</span></code>):</p>
+<p>The dataset was processed in QGIS to estimate the population affected by conflicts in 2024 using the <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">Attributes</span> <span class="pre">by</span> <span class="pre">Location</span> <span class="pre">(Summary)</span></code> tool. Additionally the number of conflicts per administrative unit was calculated using the <code class="docutils literal notranslate"><span class="pre">Count</span> <span class="pre">Points</span> <span class="pre">in</span> <span class="pre">Polygon</span></code> tool:</p>
 <p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/ACLED_vulnerability_indicator.mp4"></video></p>
 </section>
 <section id="worldpop">
@@ -623,6 +624,7 @@ document.write(`
 <p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/worldpop_vulnerability_indicator_2.mp4"></video></p>
 </section>
 </section>
+<hr class="docutils" />
 <section id="coping-capacity-indicators">
 <h2>Coping Capacity Indicators<a class="headerlink" href="#coping-capacity-indicators" title="Permalink to this heading">#</a></h2>
 <p>The Coping Capacity indicator was determined by combining the <a class="reference external" href="https://data.humdata.org/dataset/hotosm_eth_health_facilities">Health Facilities</a> and the <a class="reference external" href="https://data.humdata.org/dataset/hotosm_eth_education_facilities">Education Facilities</a> from <strong>HDX</strong>.</p>
