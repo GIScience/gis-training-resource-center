@@ -102,6 +102,7 @@ b.) __Vulnerability indicators:__ A "csv"-file containing a mandatory column "AD
 
 c) __Coping Capacity indicators [optional]:__ A "csv"-file containing a mandatory column "ADM_PCODE" with the P_codes of the administrative boundaries and all columns that are included in the calculation of the coping-indicator. All columns that are not included in the calculation must start with the expression "ADM...".
 
+Further information can be found in the [How to generate Risk Indicators](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_generate_indicators_for_plugin.html) chapter. 
 
 ```{figure} /fig/mada_coping.png
 ---
