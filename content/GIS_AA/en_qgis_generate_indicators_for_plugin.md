@@ -1,6 +1,6 @@
 # Generating Risk Indicators
 
-To conduct a meaningful risk assessment with the Risk Assessment QGIS Plugin, it is essential to prepare input indicator files that represent the three main dimensions:
+To conduct a meaningful risk assessment with the [Risk Assessment QGIS Plugin](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_risk_assessment_plugin.html), it is essential to prepare input indicator files that represent the three main dimensions:
 
 - **Exposure** (mandatory)
 - **Vulnerability** (mandatory)
@@ -27,6 +27,7 @@ First, the raw data was pivoted and processed in Excel to calculate the average 
 Then, the processed data was opened in QGIS and added to the exposure indicator file:
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/PDSI_exposure_indicator_2.mp4"></video>
 
+---
 
 ## Vulnerability Indicators
 
@@ -34,7 +35,7 @@ The Vulnerability indicator was determined by combining the [ACLED - Conflict Ev
 
 ### ACLED - Conflict Events
 
-The dataset was processed in QGIS to estimate the population affected by conflict in 2024 using the `Join Attributes by Location (Summary)` tool. Additionally the number of conflicts per administrative unit was calculated (`Count Points in Polygon`):
+The dataset was processed in QGIS to estimate the population affected by conflicts in 2024 using the `Join Attributes by Location (Summary)` tool. Additionally the number of conflicts per administrative unit was calculated using the `Count Points in Polygon` tool:
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/ACLED_vulnerability_indicator.mp4"></video>
 
@@ -45,7 +46,7 @@ The dataset was processed in QGIS to estimate the vulnerable population (<15 yea
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/worldpop_vulnerability_indicator_2.mp4"></video>
 
-
+---
 
 ## Coping Capacity Indicators
 
