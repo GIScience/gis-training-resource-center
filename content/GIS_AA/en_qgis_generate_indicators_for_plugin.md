@@ -57,9 +57,10 @@ The Coping Capacity indicator was determined by combining the [Health Facilities
 The dataset was processed in QGIS to count the number of facilities per administrative unit using the `Count Points in Polygon` tool:
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Coping_indicator.mp4"></video>
 
----
-
-## Key Takeaways:
+:::{admonition} Key Takeaways
+:class: tip
 - Ensure the file contains an `ADM_PCODE` column.
 - Only include indicator columns relevant for the specific dimension.
 - Choose unique column names that describe the content of the column briefly but efficiently.
+:::
+
