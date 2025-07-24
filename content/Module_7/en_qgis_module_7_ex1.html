@@ -558,7 +558,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions-for-the-trainers">Instructions for the trainers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks-estimating-exposed-population-ainas-manual-approach">Tasks: Estimating Exposed Population – Aina’s Manual Approach</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-auto">Task 2: Auto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-automatisation-of-estimating-exposed-population-aina-s-model">🛠️ Task 2: Automatisation of Estimating Exposed Population – Aina’s Model</a></li>
 </ul>
             </nav>
         </div>
@@ -831,8 +831,145 @@ To do this, we’ll apply a <strong>graduated classification</strong> to the <co
 <a class="reference internal image-reference" href="../../_images/fig"><img alt="../../_images/fig" src="../../_images/fig" style="width: 600px;" /></a>
 </figure>
 </section>
-<section id="task-2-auto">
-<h2>Task 2: Auto<a class="headerlink" href="#task-2-auto" title="Permalink to this heading">#</a></h2>
+<section id="task-2-automatisation-of-estimating-exposed-population-aina-s-model">
+<h2>🛠️ Task 2: Automatisation of Estimating Exposed Population – Aina’s Model<a class="headerlink" href="#task-2-automatisation-of-estimating-exposed-population-aina-s-model" title="Permalink to this heading">#</a></h2>
+<p>After manually estimating exposed populations in past cyclone seasons, Aina has decided to prepare an <strong>automated model</strong> using the <strong>QGIS Graphical Modeller</strong>. This will help her move faster and avoid repeating the same steps manually each time a cyclone is forecasted.</p>
+<p>In this task, you will help Aina build a simple version of that model using the tools from Task 1. The model should:</p>
+<ul class="simple">
+<li><p>Reproject the cyclone track to EPSG:29738</p></li>
+<li><p>Buffer the cyclone track</p></li>
+<li><p>Reproject the buffer back to EPSG:4326</p></li>
+<li><p>Clip the population raster</p></li>
+<li><p>Run Zonal Statistics to get exposed population per district</p></li>
+</ul>
+<ol class="arabic">
+<li><p><strong>Set up the model structure</strong>:</p>
+<ul class="simple">
+<li><p>Open the <strong>Graphical Modeler</strong> from the top menu:<br />
+<code class="docutils literal notranslate"><span class="pre">Processing</span></code> → <code class="docutils literal notranslate"><span class="pre">Graphical</span> <span class="pre">Modeler…</span></code></p></li>
+</ul>
+</li>
+<li><p><strong>Naming the model</strong>:</p>
+<ul class="simple">
+<li><p>A new model window will open. On the <strong>left side</strong>, click on <strong><code class="docutils literal notranslate"><span class="pre">Model</span> <span class="pre">Properties</span></code></strong> to define basic information about the model:</p>
+<ul>
+<li><p><strong>Model Name</strong>: <code class="docutils literal notranslate"><span class="pre">Estimate_Exposed_Population</span></code></p></li>
+<li><p><strong>Group</strong>: <code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Trigger</span> <span class="pre">Tools</span></code></p></li>
+<li><p>Leave the description empty or write: <em>“Automated model to estimate exposed population based on cyclone buffer.”</em></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Save the model</strong></p>
+<ul class="simple">
+<li><p>To save the model:</p>
+<ul>
+<li><p>Click the <strong>Save</strong> icon (💾) or go to <code class="docutils literal notranslate"><span class="pre">Model</span></code> → <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
+<li><p>Navigate to the <strong><code class="docutils literal notranslate"><span class="pre">project</span></code> folder</strong> of your training structure.</p></li>
+<li><p>Save the model as:<br />
+<strong><code class="docutils literal notranslate"><span class="pre">Estimate_Exposed_Population</span></code></strong></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Add model inputs</strong>:</p>
+<ul>
+<li><p>On the <strong>left panel</strong>, expand the <strong>Inputs</strong> section.</p></li>
+<li><p>Add the following input layers:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code> → <strong>Label</strong>: <code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Track</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Raster</span> <span class="pre">Layer</span></code> → <strong>Label</strong>: <code class="docutils literal notranslate"><span class="pre">Population</span> <span class="pre">Raster</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code> → <strong>Label</strong>: <code class="docutils literal notranslate"><span class="pre">Admin</span> <span class="pre">Boundaries</span></code></p></li>
+</ul>
+</li>
+<li><p>These will appear at the top of your model canvas and serve as the input data when the model is run.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>All inputs should be set as <strong>mandatory</strong>, so the model always receives the necessary data to run correctly.</p>
+</div>
+</li>
+</ul>
+</li>
+<li><p><strong>Reproject the cyclone track to EPSG:29738</strong></p>
+<ul class="simple">
+<li><p>From the <strong>Algorithms</strong> panel, search for <strong>Reproject Layer</strong> and drag it into the model canvas.</p></li>
+<li><p>In the configuration window:</p>
+<ul>
+<li><p>First, set <strong>Input layer</strong> to <strong>Model Input</strong>, then select <code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Track</span></code>.</p></li>
+<li><p>Set <strong>Target CRS</strong> to <code class="docutils literal notranslate"><span class="pre">EPSG:29738</span> <span class="pre">–</span> <span class="pre">Madagascar</span> <span class="pre">/</span> <span class="pre">Laborde</span> <span class="pre">Grid</span></code>.</p></li>
+<li><p>In the <strong>Reprojected</strong> section, which defines the output, set it to <strong>Algorithm output</strong>.<br />
+This means that the result will be used in the next step but will <strong>not</strong> be the final output of the model.</p></li>
+</ul>
+</li>
+<li><p>Click <strong>OK</strong> to add the step to the model.</p></li>
+</ul>
+</li>
+<li><p><strong>Buffer the reprojected cyclone track</strong></p>
+<ul class="simple">
+<li><p>From the <strong>Algorithms</strong> panel, search for <strong>Buffer</strong> and drag it into the model canvas.</p></li>
+<li><p>In the configuration window:</p>
+<ul>
+<li><p>Set <strong>Input layer</strong> to <code class="docutils literal notranslate"><span class="pre">Reprojected</span></code> (the output from the previous step) by choosing it from the <strong>Algorithm output</strong> section.</p></li>
+<li><p>Set <strong>Distance</strong> to <code class="docutils literal notranslate"><span class="pre">200000</span></code> (this equals 200 km).</p></li>
+<li><p>Leave <strong>Segments</strong> at the default value (usually <code class="docutils literal notranslate"><span class="pre">5</span></code>).</p></li>
+<li><p>Set <strong>Dissolve result</strong> to <code class="docutils literal notranslate"><span class="pre">Yes</span></code> to merge overlapping buffers into one polygon.</p></li>
+<li><p>In the <strong>Buffered</strong> section (the output), set it to <strong>Algorithm output</strong> — since this is an intermediate step.</p></li>
+</ul>
+</li>
+<li><p>Click <strong>OK</strong> to add the step to the model.</p></li>
+</ul>
+</li>
+<li><p><strong>Reproject the buffer back to EPSG:4326</strong></p>
+<ul class="simple">
+<li><p>From the <strong>Algorithms</strong> panel, search for <strong>Reproject Layer</strong> and drag it into the model canvas.</p></li>
+<li><p>In the configuration window:</p>
+<ul>
+<li><p>Set <strong>Input layer</strong> to <code class="docutils literal notranslate"><span class="pre">Buffered</span></code> (the output from the previous step) by selecting it under <strong>Algorithm output</strong>.</p></li>
+<li><p>Set <strong>Target CRS</strong> to <code class="docutils literal notranslate"><span class="pre">EPSG:4326</span> <span class="pre">–</span> <span class="pre">WGS</span> <span class="pre">84</span></code> (to match the CRS of the population raster).</p></li>
+<li><p>Set this output to <strong>Algorithm output</strong>, as it will be used in the next processing step.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Clip the population raster using the buffered area</strong></p></li>
+</ol>
+<ul class="simple">
+<li><p>From the <strong>Algorithms</strong> panel, search for <strong>Clip Raster by Mask Layer</strong> and drag it into the model canvas.</p></li>
+<li><p>In the configuration window:</p>
+<ul>
+<li><p>Set <strong>Input layer</strong> to <code class="docutils literal notranslate"><span class="pre">Population</span> <span class="pre">Raster</span></code> by selecting it under <strong>Model Input</strong>.</p></li>
+<li><p>Set <strong>Mask layer</strong> to the output from the previous step (<code class="docutils literal notranslate"><span class="pre">Reprojected</span></code>, which is the buffer in EPSG:4326) by selecting it under <strong>Algorithm output</strong>.</p></li>
+<li><p>In the <strong>Clipped</strong> section (the output), set it to <strong>Algorithm output</strong>, as this is still an intermediate result.</p></li>
+</ul>
+</li>
+<li><p>Click <strong>OK</strong> to add the step to the model.</p></li>
+</ul>
+<ol class="arabic simple" start="9">
+<li><p><strong>Calculate zonal statistics to estimate exposed population</strong></p>
+<ul class="simple">
+<li><p>From the <strong>Algorithms</strong> panel, search for <strong>Zonal Statistics</strong> and drag it into the model canvas.</p></li>
+<li><p>In the configuration window:</p>
+<ul>
+<li><p>Set <strong>Input layer</strong> to <code class="docutils literal notranslate"><span class="pre">Admin</span> <span class="pre">Boundaries</span></code> by selecting it from <strong>Model Input</strong>.</p></li>
+<li><p>Set <strong>Raster layer</strong> to the output of the previous step (<code class="docutils literal notranslate"><span class="pre">Clipped</span> <span class="pre">(mask)</span> <span class="pre">from</span> <span class="pre">algorithm</span> <span class="pre">&quot;Clip</span> <span class="pre">raster</span> <span class="pre">by</span> <span class="pre">mask&quot;</span></code>) by selecting it from the <strong>Algorithm output</strong> section.</p></li>
+<li><p>Set <strong>Output column prefix</strong> to <code class="docutils literal notranslate"><span class="pre">pop_</span></code>.</p></li>
+<li><p>Under <strong>Statistics to calculate</strong>, select <code class="docutils literal notranslate"><span class="pre">Sum</span></code>.</p></li>
+<li><p>Leave the <strong>Output</strong> field (called <code class="docutils literal notranslate"><span class="pre">Statistics</span></code> or similar) as <strong>Model output</strong>, since this  the final model output. Name it to</p></li>
+</ul>
+</li>
+<li><p>Click <strong>OK</strong> to add the step to the model.</p></li>
+</ul>
+</li>
+<li><p><strong>Save your completed model</strong></p></li>
+</ol>
+<ul class="simple">
+<li><p>Once your model is finished and the final output is set, don’t forget to save your work.</p></li>
+<li><p>Click the <strong>Save</strong> icon (💾) or go to <code class="docutils literal notranslate"><span class="pre">Model</span></code> → <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
+<li><p>Navigate to the <strong><code class="docutils literal notranslate"><span class="pre">project</span></code> folder</strong> of your training structure.</p></li>
+<li><p>Save the model as:<br />
+<strong><code class="docutils literal notranslate"><span class="pre">Estimate_Exposed_Population.model3</span></code></strong></p></li>
+<li><p>You can now run this model any time a new cyclone track becomes available.</p></li>
+</ul>
 </section>
 </section>
 
@@ -885,7 +1022,7 @@ To do this, we’ll apply a <strong>graduated classification</strong> to the <co
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions-for-the-trainers">Instructions for the trainers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks-estimating-exposed-population-ainas-manual-approach">Tasks: Estimating Exposed Population – Aina’s Manual Approach</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-auto">Task 2: Auto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-automatisation-of-estimating-exposed-population-aina-s-model">🛠️ Task 2: Automatisation of Estimating Exposed Population – Aina’s Model</a></li>
 </ul>
   </nav></div>
 
