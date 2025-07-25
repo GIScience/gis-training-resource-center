@@ -1,12 +1,12 @@
 # QGIS Trigger Workflow for Madagascar 
 
-The QGIS workflow presented in this article was developed in the framework of the Forecast-based-Action (FbF) Project of the Croix-Rouge Malagasy (CRM), the German Red Cross (GRC) and the Heidelberg Institute for Geoinformation Technology (HeiGIT).
+The QGIS workflow presented in this article was developed in the framework of the Anticipatory-Action (AA) Project of the Croix-Rouge Malagasy (CRM), the German Red Cross (GRC) and the Heidelberg Institute for Geoinformation Technology (HeiGIT).
 
 The workflow is almost fully automated through a QGIS model, requiring no manual intervention. The chapter Automated Trigger Workflow outlines the process and its practical implementation. Each step included in the model is explained in detail to provide a complete understanding of the workflow and how the analysis was carried out.
 
 ## Background
 
-Setting triggers is one of the cornerstones of the Forecast-based Financing system. For a National Society to have access to automatically released funding for their early actions, their Early Action Protocol needs to clearly define where and when funds will be allocated, and assistance will be provided. In FbF, this is decided according to specific threshold values, so-called triggers, based on weather and climate forecasts, which are defined for each region (see [FbF Manual](https://manual.forecast-based-financing.org/en/chapter/set-the-trigger/)).
+Setting triggers is one of the cornerstones of the Forecast-based Financing system. For a National Society to have access to automatically released funding for their early actions, their Early Action Protocol needs to clearly define where and when funds will be allocated, and assistance will be provided. In AA, this is decided according to specific threshold values, so-called triggers, based on weather and climate forecasts, which are defined for each region (see [FbF Manual](https://manual.forecast-based-financing.org/en/chapter/set-the-trigger/)).
 
 ## Trigger Statement
 
@@ -141,37 +141,7 @@ __Tool:__ No special tools or programs are needed
 The Video below shows the process for setting up the folder for december 2023.
 
 
-## Step 2: Download of the storm track data
 
-```{figure} /fig/MAD_Trigger_workflow_Step2.png
----
-width: 1000px
-name: 
-align: center
----
-```
-
-The **International Best Track Archive for Climate Stewardship (IBTrACS)** v04r01 data is updated three times a week (usually on Sunday, Tuesday, and Thursday), and could be updated more frequently to address specific needs and use cases. The latest updates in the correct file format can be found on their [website](https://www.ncei.noaa.gov/products/international-best-track-archive):
-
-1. Look for the `Access Methods` section and click on `Shapefiles`. The link leads to the following [website](https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r01/access/shapefile/) which can also be seen in the figure below.
-2. Since we don’t need storm track data for the entire world or the full archive, we will download only a relevant subset. Locate for the file named `IBTrACS.ACTIVE.list.v04r01.lines.zip` and click on it - the download should begin automatically.
-3. Unzip the file and open it in QGIS.
-4. Open the attribute table and delete all the storm tracks that are not relevant for this analysis. Safe the updated storm track file.
-
-:::{note}
-
-The storm track subset `IBTrACS.ACTIVE.list.v04r01.lines.zip` contains all **storms active in the last 7 days**. If more comprehensive data is needed, it is advisable to download a subset by basin. For Madagascar, the most relevant region is **SI – South Indian**, which includes our Area of Interest. This dataset can be downloaded from the same website under the name `IBTrACS.SI.list.v04r01.lines.zip`. 
-
-:::
-
-
-```{figure} /fig/MAD_Trigger_stromtrack_download.PNG
----
-width: 1000px
-name: MAD_Trigger_stromtrack_download
-align: center
----
-```
 
 
 ## Step 3: Open the project in QGIS and load the model in the QGIS Model Designer
@@ -557,3 +527,32 @@ name: Impact of Cyclone Event Freddy 2023
 align: center
 ---
 ```
+
+# Historical Analysis of Cyclone Impacts
+
+To run the full trigger process using historical cyclone track data, you can assess the impacts of past events and gain insights into what occurred in similar scenarios. The storm track data is available from the **International Best Track Archive for Climate Stewardship (IBTrACS)**. Instructions on how to access this data are provided in the following section.
+
+## Download of historical storm track data
+
+The **International Best Track Archive for Climate Stewardship (IBTrACS)** v04r01 data is updated three times a week (usually on Sunday, Tuesday, and Thursday), and could be updated more frequently to address specific needs and use cases. The latest updates in the correct file format can be found on their [website](https://www.ncei.noaa.gov/products/international-best-track-archive):
+
+1. Look for the `Access Methods` section and click on `Shapefiles`. The link leads to the following [website](https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r01/access/shapefile/) which can also be seen in the figure below.
+2. Since we don’t need storm track data for the entire world or the full archive, we will download only a relevant subset. Locate for the file named `IBTrACS.ACTIVE.list.v04r01.lines.zip` and click on it - the download should begin automatically.
+3. Unzip the file and open it in QGIS.
+4. Open the attribute table and delete all the storm tracks that are not relevant for this analysis. Safe the updated storm track file.
+
+:::{note}
+
+The storm track subset `IBTrACS.ACTIVE.list.v04r01.lines.zip` contains all **storms active in the last 7 days**. If more comprehensive data is needed, it is advisable to download a subset by basin. For Madagascar, the most relevant region is **SI – South Indian**, which includes our Area of Interest. This dataset can be downloaded from the same website under the name `IBTrACS.SI.list.v04r01.lines.zip`. 
+
+:::
+
+
+```{figure} /fig/MAD_Trigger_stromtrack_download.PNG
+---
+width: 1000px
+name: MAD_Trigger_stromtrack_download
+align: center
+---
+```
+
