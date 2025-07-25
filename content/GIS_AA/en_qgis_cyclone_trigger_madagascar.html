@@ -574,7 +574,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functionality-of-the-model">Functionality of the model</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-run-the-model">How to run the model</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-setting-up-folder-structure-needs-to-be-fixed">Step 1: Setting up folder structure !!NEEDS TO BE FIXED!!</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-open-the-project-in-qgis-and-load-the-model-in-the-qgis-model-designer">Step 3: Open the project in QGIS and load the model in the QGIS Model Designer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-open-the-project-in-qgis-and-load-the-model-in-the-qgis-model-designer">Step 2: Open the project in QGIS and load the model in the QGIS Model Designer</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-run-the-model-names-in-this-section-need-to-be-finalized">Step 4: Run the model !!NAMES IN THIS SECTION NEED TO BE FINALIZED!!</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-visualisation-and-styling-of-the-model-outputs">Step 5: Visualisation and Styling of the Model Outputs</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map-1-cyclone-impact-overview-affected-districts-event-extent-and-warehouse-locations">Map 1: Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations</a></li>
@@ -768,41 +768,52 @@ The output layer is relevant warehouses, indicating logistical support readiness
 </tbody>
 </table>
 </section>
-<section id="step-3-open-the-project-in-qgis-and-load-the-model-in-the-qgis-model-designer">
-<h2>Step 3: Open the project in QGIS and load the model in the QGIS Model Designer<a class="headerlink" href="#step-3-open-the-project-in-qgis-and-load-the-model-in-the-qgis-model-designer" title="Permalink to this heading">#</a></h2>
+<section id="step-2-open-the-project-in-qgis-and-load-the-model-in-the-qgis-model-designer">
+<h2>Step 2: Open the project in QGIS and load the model in the QGIS Model Designer<a class="headerlink" href="#step-2-open-the-project-in-qgis-and-load-the-model-in-the-qgis-model-designer" title="Permalink to this heading">#</a></h2>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_workflow_Step3.png"><img alt="../../_images/MAD_Trigger_workflow_Step3.png" src="../../_images/MAD_Trigger_workflow_Step3.png" style="width: 1000px;" /></a>
 </figure>
 <p>In this step we will open our Trigger project in QGIS and load the QGIS model which will automatically run the analysis for us.</p>
 <ol class="arabic simple">
-<li><p>Open the file <code class="docutils literal notranslate"><span class="pre">Trigger_Model.qgz</span></code> by double clicking it.</p></li>
+<li><p>Open the file <code class="docutils literal notranslate"><span class="pre">AA_Cyclone_Monitoring_Trigger_MAD.qgz</span></code> by double clicking it.</p></li>
 <li><p>The QGIS project will open with lots of data pre-loaded. This data is required for running the QGIS model and create some output maps.</p></li>
 </ol>
-<p>The data will be structured in three Groups:</p>
-<p>IMAGE OF A SCREENSHOT OF THE THREE GROUPS WITH ALL THE PRE-LOADED DATA</p>
+<p>The data will be structured into five groups:</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/MAD_Trigger_stromtrack_download.PNG"><img alt="../../_images/MAD_Trigger_stromtrack_download.PNG" src="../../_images/MAD_Trigger_stromtrack_download.PNG" style="width: 1000px;" /></a>
+<a class="reference internal image-reference" href="fig/MMAD_trigger_QGIS_project_structure.PNG"><img alt="fig/MMAD_trigger_QGIS_project_structure.PNG" src="fig/MMAD_trigger_QGIS_project_structure.PNG" style="width: 1000px;" /></a>
 </figure>
-<p>Group 1: Model_Input
-This group will contain all the input data that is required to successfully run the model. All the data that is stored in this section is fixed except the storm track.</p>
+<p>Group 1: Fixed_Input_data
+This group contains all the <strong>fixed input data</strong> required to successfully run the model. These datasets remain constant and do not change between events. The only additional input needed is the <strong>storm track</strong> for the event under investigation, which should be added <strong>before</strong> this data group in the layer panel.</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
-<p>Always ensure you are using the most recently updated storm track for this process. To import the new layer, simply drag and drop it into the <code class="docutils literal notranslate"><span class="pre">Layers</span> <span class="pre">panel</span></code>, and place it at the top of the <strong>Model_Input</strong> group for clarity.</p>
-<p>For better data management, assign the storm track a descriptive name, such as <code class="docutils literal notranslate"><span class="pre">storm_track_eventname_year</span></code>. This naming convention clearly identifies the event and year, helping you stay organized and ensuring the correct data is used in the analysis.</p>
+<p>Always ensure you are using the <strong>most up-to-date storm track</strong> for the event being analyzed. To add the layer, simply drag and drop it into the Layers panel, placing it directly above the <strong>Fixed_Input_data</strong> group for clarity.</p>
+<p>For better data management, give the storm track a descriptive name, such as <code class="docutils literal notranslate"><span class="pre">storm_track_eventname_year</span></code> (e.g. storm_track_freddy_2023). This naming convention helps keep your workspace organized and ensures the correct data is used during the analysis.</p>
 </div>
-<p>Group 2: Map_Cyclone_Impact_Overview
-This group will contain all the layers needed to create the following map.</p>
-<p>SCREENSHOT OF THE OUTPUT MAP</p>
+<p>Group 2: Model_outputs
+This group is used to organize all <strong>output layers generated by the model</strong> after it has been run. You can review the outputs here and identify which layers are relevant for specific maps. Once identified, move them to the appropriate map group for visualization and layout.</p>
+<p>Group 3: Map_Cyclone_Impact_Overview
+This group includes all the layers required to create the <strong>Cyclone Impact Overview Map</strong> (shown below). The storm track and Admin1 boundaries (<code class="docutils literal notranslate"><span class="pre">Admin1_Impact_Overview_Map</span></code>) are pre-loaded to help you get started quickly.
+Make sure you’re working with the <strong>correct and updated storm track</strong> for the event under investigation.</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/MAD_Trigger_stromtrack_download.PNG"><img alt="../../_images/MAD_Trigger_stromtrack_download.PNG" src="../../_images/MAD_Trigger_stromtrack_download.PNG" style="width: 1000px;" /></a>
+<a class="reference internal image-reference" href="../../_images/MAD_Trigger_Impact_Overview_Map.png"><img alt="../../_images/MAD_Trigger_Impact_Overview_Map.png" src="../../_images/MAD_Trigger_Impact_Overview_Map.png" style="width: 1000px;" /></a>
 </figure>
-<p>The following layers are required to create this map:
-Pre-loaded:</p>
+<p>Group 4: Map_Cyclone_Impact_Assessment
+This group contains all the necessary layers to generate <strong>detailed impact assessment maps</strong>. As with the overview map, both the storm track and Admin1 boundaries are pre-loaded.
+Ensure you’re using the correct event data to maintain consistency and accuracy in the assessment. In this section we can create 5 different maps for different impacts:</p>
 <ul class="simple">
-<li><p>input storm track</p></li>
-<li><p>admin 1 boundaries</p></li>
+<li><p>exposed population</p></li>
+<li><p>exposed buildings</p></li>
+<li><p>exposed education facilities</p></li>
+<li><p>exposed health sites</p></li>
+<li><p>exposed agricultural land cover</p></li>
 </ul>
-<p>Group 3: Map_Cyclone_Impact_Assessment</p>
+<p>The final map outputs will look like the following.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/MAD_Trigger_Impact_Population_Map.png"><img alt="../../_images/MAD_Trigger_Impact_Population_Map.png" src="../../_images/MAD_Trigger_Impact_Population_Map.png" style="width: 1000px;" /></a>
+</figure>
+<p>Group 5:
+This group includes isochrones for all warehouses, calculated for time intervals up to 24 hours. These layers are useful for assessing accessibility of locations in emergency response planning.</p>
+<p>Now we continue working with the model:</p>
 <ol class="arabic simple">
 <li><p>Now open the QGIS Model Designer. The tool can be accessed under <code class="docutils literal notranslate"><span class="pre">Processing</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Modeler</span> <span class="pre">Designer</span></code></p></li>
 <li><p>In the upper panel click <code class="docutils literal notranslate"><span class="pre">Model</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Model</span></code> and navigate to your folder “AA_Cyclone_Monitoring_Trigger_MAD”, mark the “Cyclones_EAP_MAD_Trigger.model3” file an click on <code class="docutils literal notranslate"><span class="pre">Open</span></code>. The model will open and you will see yellow, white, green and grey boxes.</p></li>
@@ -1278,7 +1289,7 @@ Video: Export image and PDF<div class="sd-summary-down docutils">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functionality-of-the-model">Functionality of the model</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-run-the-model">How to run the model</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-setting-up-folder-structure-needs-to-be-fixed">Step 1: Setting up folder structure !!NEEDS TO BE FIXED!!</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-open-the-project-in-qgis-and-load-the-model-in-the-qgis-model-designer">Step 3: Open the project in QGIS and load the model in the QGIS Model Designer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-open-the-project-in-qgis-and-load-the-model-in-the-qgis-model-designer">Step 2: Open the project in QGIS and load the model in the QGIS Model Designer</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-run-the-model-names-in-this-section-need-to-be-finalized">Step 4: Run the model !!NAMES IN THIS SECTION NEED TO BE FINALIZED!!</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-visualisation-and-styling-of-the-model-outputs">Step 5: Visualisation and Styling of the Model Outputs</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map-1-cyclone-impact-overview-affected-districts-event-extent-and-warehouse-locations">Map 1: Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations</a></li>
