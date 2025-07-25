@@ -124,12 +124,19 @@ __Tool:__ No special tools or programs are needed
 
 * - Instruction
   - Folder Structure
-* - 1. Open the Folder “FbF_Cyclone_Monitoring_Trigger"
-    2. Open the subfolder "AA_Madagascar"
-    3. Copy the Template folder “TEMPLATE_Year_Month” and change the name to the current year and month. The result could be the folder "2022_05"
-    
+* - 1. Open the folder “AA_Cyclone_Monitoring_Trigger_MAD".
+    2. Input data is located in the folder "fixed_input_data".
+    3. The QGIS model can be found in the "trigger_model" folder.
+    4. Resources for styling and map creation are located in:
+        - layer_styles – predefined layer symbology
+        - logos_pictures – logos and visual elements
+        - map_templates – templates for final map layouts
+        - example_map_results – example outputs for orientation
+        - Save your own results in the "map_outputs" folder.
+    5. To start the process, open the QGIS project file "AA_Cyclone_Monitoring_Trigger_MAD.qgz" by double-clicking it. This will launch the full analysis workflow.
+
   -
-    ```{figure} /fig/Folder_structure_FbF_Drought_Monitoring_Trigger.drawio.svg
+    ```{figure} /fig/MAD_trigger_Folder_Structure_MAD_Trigger.png
     ---
     width: 450px
     name: 
@@ -137,11 +144,6 @@ __Tool:__ No special tools or programs are needed
     ---
     ```
 ``````
-
-The Video below shows the process for setting up the folder for december 2023.
-
-
-
 
 
 ## Step 3: Open the project in QGIS and load the model in the QGIS Model Designer
@@ -201,7 +203,7 @@ Pre-loaded:
 Group 3: Map_Cyclone_Impact_Assessment
 
 1. Now open the QGIS Model Designer. The tool can be accessed under `Processing` -> `Modeler Designer`
-2. In the upper panel click `Model` -> `Open Model` and navigate to your folder "FbF_Cyclone_Monitoring_Trigger", mark the "Cyclones_EAP_MAD_Trigger.model3" file an click on `Open`. The model will open and you will see yellow, white, green and grey boxes.
+2. In the upper panel click `Model` -> `Open Model` and navigate to your folder "AA_Cyclone_Monitoring_Trigger_MAD", mark the "Cyclones_EAP_MAD_Trigger.model3" file an click on `Open`. The model will open and you will see yellow, white, green and grey boxes.
 
 
 | Box | Significance | Description |
@@ -326,7 +328,7 @@ Layers needed for this map:
 
 1. Right click on the Affected_Districts layer -> `Properties` -> `Symbology`
 2. In the down left corner click on `Style` -> `Load Style`
-3. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Cyclone_Monitoring_Trigger/layer_styles” folder and select the file __“affected_districts_style.qml”__.
+3. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the "AA_Cyclone_Monitoring_Trigger_MAD/layer_styles” folder and select the file __“affected_districts_style.qml”__.
 4. Click `Open`. Then click on `Load Style`
 5. Back in the “Layer Properties” Window click `Apply` and `OK`
 
@@ -379,7 +381,7 @@ If you already created Map 1 earlier in the process, you can reuse the first fou
 
 1. Right click on the "Affected_Population" layer -> `Properties` -> `Symbology`
 2. In the down left corner click on `Style` -> `Load Style`
-3. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Cyclone_Monitoring_Trigger/layer_styles” folder and select the file __“affected_population.qml”__ style layer.
+3. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the "AA_Cyclone_Monitoring_Trigger_MAD/layer_styles” folder and select the file __“affected_population.qml”__ style layer.
 4. Click `Open`. Then click on `Load Style`
 5. Back in the “Layer Properties” Window click `Apply` and `OK`
 
@@ -434,7 +436,7 @@ __Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-cent
 1. Deactivate all Layer Groups except the group `Map_Cyclone_Impact_Overview`.
 2. Open a new print layout by clicking on `Project` -> `New Print Layout` -> enter the name of your current Project e.g "Feddy_2023_Overview".
 3. Right click on the white canvas and select `Page Properties`. In the bottom right section of the print layout, you'll see the page specifications. Set the Size to `A3` and the Orientation to `Landscape` to ensure that the map template fits correctly within the page layout.
-4. Go to the **FbF_Cyclone_Monitoring_Trigger and then Map_templates** folder and drag and drop the file `cyclone_impact_overview_map_template.qpt` into the print layout.
+4. Go to the **AA_Cyclone_Monitoring_Trigger_MAD and then Map_templates** folder and drag and drop the file `cyclone_impact_overview_map_template.qpt` into the print layout.
 5. Change the title to fit the current Cyclone Event and also adapt the **List of Affected Districts** for the current event.
 6. Adjust the Legend by clicking on it in the map layout and have a look at the `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there, check if you have to open the dropdown. Make sure `Auto update` is **not checked**.
     * Remove all items in the legend be clicking on the item and then on the red minus icon below.
@@ -458,7 +460,7 @@ Checklist for final map output:
 1. Deactivate all Layer Groups except the group `Map_Cyclone_Impact_Overview`.
 2. Open a new print layout by clicking on `Project` -> `New Print Layout` -> enter the name of your current Project e.g "Feddy_2023_Impact".
 3. Right click on the white canvas and select `Page Properties`. In the bottom right section of the print layout, you'll see the page specifications. Set the Size to `A2` and the Orientation to `Landscape` to ensure that the map template fits correctly within the page layout.
-4. Go to the **FbF_Cyclone_Monitoring_Trigger and then Map_templates** folder and drag and drop the file `cyclone_impact_assessment_map_template.qpt` into the print layout.
+4. Go to the **AA_Cyclone_Monitoring_Trigger_MAD and then Map_templates** folder and drag and drop the file `cyclone_impact_assessment_map_template.qpt` into the print layout.
 5. Change the title to fit the current Cyclone Event and also adapt the **List of Affected Districts** for the current event.
 6. Adjust the Legend by clicking on it in the map layout and have a look at the `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there, check if you have to open the dropdown. Make sure `Auto update` is **not checked**.
     * Remove all items in the legend be clicking on the item and then on the red minus icon below.

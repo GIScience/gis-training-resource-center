@@ -745,19 +745,28 @@ The output layer is relevant warehouses, indicating logistical support readiness
 </thead>
 <tbody>
 <tr class="row-even"><td><ol class="arabic simple">
-<li><p>Open the Folder “FbF_Cyclone_Monitoring_Trigger”</p></li>
-<li><p>Open the subfolder “AA_Madagascar”</p></li>
-<li><p>Copy the Template folder “TEMPLATE_Year_Month” and change the name to the current year and month. The result could be the folder “2022_05”</p></li>
+<li><p>Open the folder “AA_Cyclone_Monitoring_Trigger_MAD”.</p></li>
+<li><p>Input data is located in the folder “fixed_input_data”.</p></li>
+<li><p>The QGIS model can be found in the “trigger_model” folder.</p></li>
+<li><p>Resources for styling and map creation are located in:</p>
+<ul class="simple">
+<li><p>layer_styles – predefined layer symbology</p></li>
+<li><p>logos_pictures – logos and visual elements</p></li>
+<li><p>map_templates – templates for final map layouts</p></li>
+<li><p>example_map_results – example outputs for orientation</p></li>
+<li><p>Save your own results in the “map_outputs” folder.</p></li>
+</ul>
+</li>
+<li><p>To start the process, open the QGIS project file “AA_Cyclone_Monitoring_Trigger_MAD.qgz” by double-clicking it. This will launch the full analysis workflow.</p></li>
 </ol>
 </td>
 <td><figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/Folder_structure_FbF_Drought_Monitoring_Trigger.drawio.svg"><img alt="../../_images/Folder_structure_FbF_Drought_Monitoring_Trigger.drawio.svg" src="../../_images/Folder_structure_FbF_Drought_Monitoring_Trigger.drawio.svg" width="450px" /></a>
+<a class="reference internal image-reference" href="../../_images/MAD_trigger_Folder_Structure_MAD_Trigger.png"><img alt="../../_images/MAD_trigger_Folder_Structure_MAD_Trigger.png" src="../../_images/MAD_trigger_Folder_Structure_MAD_Trigger.png" style="width: 450px;" /></a>
 </figure>
 </td>
 </tr>
 </tbody>
 </table>
-<p>The Video below shows the process for setting up the folder for december 2023.</p>
 </section>
 <section id="step-3-open-the-project-in-qgis-and-load-the-model-in-the-qgis-model-designer">
 <h2>Step 3: Open the project in QGIS and load the model in the QGIS Model Designer<a class="headerlink" href="#step-3-open-the-project-in-qgis-and-load-the-model-in-the-qgis-model-designer" title="Permalink to this heading">#</a></h2>
@@ -796,7 +805,7 @@ Pre-loaded:</p>
 <p>Group 3: Map_Cyclone_Impact_Assessment</p>
 <ol class="arabic simple">
 <li><p>Now open the QGIS Model Designer. The tool can be accessed under <code class="docutils literal notranslate"><span class="pre">Processing</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Modeler</span> <span class="pre">Designer</span></code></p></li>
-<li><p>In the upper panel click <code class="docutils literal notranslate"><span class="pre">Model</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Model</span></code> and navigate to your folder “FbF_Cyclone_Monitoring_Trigger”, mark the “Cyclones_EAP_MAD_Trigger.model3” file an click on <code class="docutils literal notranslate"><span class="pre">Open</span></code>. The model will open and you will see yellow, white, green and grey boxes.</p></li>
+<li><p>In the upper panel click <code class="docutils literal notranslate"><span class="pre">Model</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Model</span></code> and navigate to your folder “AA_Cyclone_Monitoring_Trigger_MAD”, mark the “Cyclones_EAP_MAD_Trigger.model3” file an click on <code class="docutils literal notranslate"><span class="pre">Open</span></code>. The model will open and you will see yellow, white, green and grey boxes.</p></li>
 </ol>
 <table class="table">
 <thead>
@@ -935,7 +944,7 @@ Video: Input and output Model<div class="sd-summary-down docutils">
 <ol class="arabic simple">
 <li><p>Right click on the Affected_Districts layer -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Symbology</span></code></p></li>
 <li><p>In the down left corner click on <code class="docutils literal notranslate"><span class="pre">Style</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code></p></li>
-<li><p>In the new window click on the three points <img alt="" src="../../_images/Three_points.png" />. Navigate to the “FbF_Cyclone_Monitoring_Trigger/layer_styles” folder and select the file <strong>“affected_districts_style.qml”</strong>.</p></li>
+<li><p>In the new window click on the three points <img alt="" src="../../_images/Three_points.png" />. Navigate to the “AA_Cyclone_Monitoring_Trigger_MAD/layer_styles” folder and select the file <strong>“affected_districts_style.qml”</strong>.</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Then click on <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code></p></li>
 <li><p>Back in the “Layer Properties” Window click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
 </ol>
@@ -999,7 +1008,7 @@ Your final output should look like this after styling the layer<div class="sd-su
 <ol class="arabic simple">
 <li><p>Right click on the “Affected_Population” layer -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Symbology</span></code></p></li>
 <li><p>In the down left corner click on <code class="docutils literal notranslate"><span class="pre">Style</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code></p></li>
-<li><p>In the new window click on the three points <img alt="" src="../../_images/Three_points.png" />. Navigate to the “FbF_Cyclone_Monitoring_Trigger/layer_styles” folder and select the file <strong>“affected_population.qml”</strong> style layer.</p></li>
+<li><p>In the new window click on the three points <img alt="" src="../../_images/Three_points.png" />. Navigate to the “AA_Cyclone_Monitoring_Trigger_MAD/layer_styles” folder and select the file <strong>“affected_population.qml”</strong> style layer.</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Then click on <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code></p></li>
 <li><p>Back in the “Layer Properties” Window click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
 </ol>
@@ -1067,7 +1076,7 @@ Your final output should look like this after styling the layer<div class="sd-su
 <li><p>Deactivate all Layer Groups except the group <code class="docutils literal notranslate"><span class="pre">Map_Cyclone_Impact_Overview</span></code>.</p></li>
 <li><p>Open a new print layout by clicking on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Print</span> <span class="pre">Layout</span></code> -&gt; enter the name of your current Project e.g “Feddy_2023_Overview”.</p></li>
 <li><p>Right click on the white canvas and select <code class="docutils literal notranslate"><span class="pre">Page</span> <span class="pre">Properties</span></code>. In the bottom right section of the print layout, you’ll see the page specifications. Set the Size to <code class="docutils literal notranslate"><span class="pre">A3</span></code> and the Orientation to <code class="docutils literal notranslate"><span class="pre">Landscape</span></code> to ensure that the map template fits correctly within the page layout.</p></li>
-<li><p>Go to the <strong>FbF_Cyclone_Monitoring_Trigger and then Map_templates</strong> folder and drag and drop the file <code class="docutils literal notranslate"><span class="pre">cyclone_impact_overview_map_template.qpt</span></code> into the print layout.</p></li>
+<li><p>Go to the <strong>AA_Cyclone_Monitoring_Trigger_MAD and then Map_templates</strong> folder and drag and drop the file <code class="docutils literal notranslate"><span class="pre">cyclone_impact_overview_map_template.qpt</span></code> into the print layout.</p></li>
 <li><p>Change the title to fit the current Cyclone Event and also adapt the <strong>List of Affected Districts</strong> for the current event.</p></li>
 <li><p>Adjust the Legend by clicking on it in the map layout and have a look at the <code class="docutils literal notranslate"><span class="pre">Item</span> <span class="pre">Properties</span></code> tab and scroll down until you see the <code class="docutils literal notranslate"><span class="pre">Legend</span> <span class="pre">items</span></code> field. If it is not there, check if you have to open the dropdown. Make sure <code class="docutils literal notranslate"><span class="pre">Auto</span> <span class="pre">update</span></code> is <strong>not checked</strong>.</p>
 <ul class="simple">
@@ -1102,7 +1111,7 @@ Video: Making print map<div class="sd-summary-down docutils">
 <li><p>Deactivate all Layer Groups except the group <code class="docutils literal notranslate"><span class="pre">Map_Cyclone_Impact_Overview</span></code>.</p></li>
 <li><p>Open a new print layout by clicking on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Print</span> <span class="pre">Layout</span></code> -&gt; enter the name of your current Project e.g “Feddy_2023_Impact”.</p></li>
 <li><p>Right click on the white canvas and select <code class="docutils literal notranslate"><span class="pre">Page</span> <span class="pre">Properties</span></code>. In the bottom right section of the print layout, you’ll see the page specifications. Set the Size to <code class="docutils literal notranslate"><span class="pre">A2</span></code> and the Orientation to <code class="docutils literal notranslate"><span class="pre">Landscape</span></code> to ensure that the map template fits correctly within the page layout.</p></li>
-<li><p>Go to the <strong>FbF_Cyclone_Monitoring_Trigger and then Map_templates</strong> folder and drag and drop the file <code class="docutils literal notranslate"><span class="pre">cyclone_impact_assessment_map_template.qpt</span></code> into the print layout.</p></li>
+<li><p>Go to the <strong>AA_Cyclone_Monitoring_Trigger_MAD and then Map_templates</strong> folder and drag and drop the file <code class="docutils literal notranslate"><span class="pre">cyclone_impact_assessment_map_template.qpt</span></code> into the print layout.</p></li>
 <li><p>Change the title to fit the current Cyclone Event and also adapt the <strong>List of Affected Districts</strong> for the current event.</p></li>
 <li><p>Adjust the Legend by clicking on it in the map layout and have a look at the <code class="docutils literal notranslate"><span class="pre">Item</span> <span class="pre">Properties</span></code> tab and scroll down until you see the <code class="docutils literal notranslate"><span class="pre">Legend</span> <span class="pre">items</span></code> field. If it is not there, check if you have to open the dropdown. Make sure <code class="docutils literal notranslate"><span class="pre">Auto</span> <span class="pre">update</span></code> is <strong>not checked</strong>.</p>
 <ul class="simple">
