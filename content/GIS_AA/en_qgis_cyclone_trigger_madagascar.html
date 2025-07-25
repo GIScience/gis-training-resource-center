@@ -573,20 +573,20 @@ document.write(`
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#automated-trigger-workflow">Automated Trigger Workflow</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functionality-of-the-model">Functionality of the model</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-run-the-model">How to run the model</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-setting-up-folder-structure-needs-to-be-fixed">Step 1: Setting up folder structure !!NEEDS TO BE FIXED!!</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-setting-up-folder-structure">Step 1: Setting up folder structure</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-open-the-project-in-qgis-and-load-the-model-in-the-qgis-model-designer">Step 2: Open the project in QGIS and load the model in the QGIS Model Designer</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-run-the-model-names-in-this-section-need-to-be-finalized">Step 4: Run the model !!NAMES IN THIS SECTION NEED TO BE FINALIZED!!</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-visualisation-and-styling-of-the-model-outputs">Step 5: Visualisation and Styling of the Model Outputs</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-run-the-model-names-in-this-section-need-to-be-finalized">Step 3: Run the model !!NAMES IN THIS SECTION NEED TO BE FINALIZED!!</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-visualisation-and-styling-of-the-model-outputs">Step 4: Visualisation and Styling of the Model Outputs</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map-1-cyclone-impact-overview-affected-districts-event-extent-and-warehouse-locations">Map 1: Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map-2-impact-assessment-affected-population-and-critical-infrastructure">Map 2: Impact Assessment: Affected Population and Critical Infrastructure</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-making-the-print-map">Step 6: Making the Print Map</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-making-the-print-map">Step 5: Making the Print Map</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Map 1: Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Map 2: Impact Assessment: Affected Population and Critical Infrastructure</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-exporting-the-map">Step 7: Exporting the Map</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-exporting-the-map">Step 6: Exporting the Map</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#historical-analysis-of-cyclone-impacts">Historical Analysis of Cyclone Impacts</a><ul class="visible nav section-nav flex-column">
@@ -726,8 +726,8 @@ The output layer is relevant warehouses, indicating logistical support readiness
 <h2>How to run the model<a class="headerlink" href="#how-to-run-the-model" title="Permalink to this heading">#</a></h2>
 <p>The <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html#the-qgis-model-designer">QGIS Model Designer</a> is a visual tool that allows users to create and edit a workflow with all tools available in QGIS that can be used repeatedly in a simple and time-efficient manner. It provides a graphical interface to build workflows by connecting geoprocessing tools and algorithms. The user can define inputs, outputs, and the flow of data between different processing steps.</p>
 </section>
-<section id="step-1-setting-up-folder-structure-needs-to-be-fixed">
-<h2>Step 1: Setting up folder structure !!NEEDS TO BE FIXED!!<a class="headerlink" href="#step-1-setting-up-folder-structure-needs-to-be-fixed" title="Permalink to this heading">#</a></h2>
+<section id="step-1-setting-up-folder-structure">
+<h2>Step 1: Setting up folder structure<a class="headerlink" href="#step-1-setting-up-folder-structure" title="Permalink to this heading">#</a></h2>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_workflow_Step1.png"><img alt="../../_images/MAD_Trigger_workflow_Step1.png" src="../../_images/MAD_Trigger_workflow_Step1.png" style="width: 1000px;" /></a>
 </figure>
@@ -815,8 +815,8 @@ Ensure you’re using the correct event data to maintain consistency and accurac
 This group includes isochrones for all warehouses, calculated for time intervals up to 24 hours. These layers are useful for assessing accessibility of locations in emergency response planning.</p>
 <p>Now we continue working with the model:</p>
 <ol class="arabic simple">
-<li><p>Now open the QGIS Model Designer. The tool can be accessed under <code class="docutils literal notranslate"><span class="pre">Processing</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Modeler</span> <span class="pre">Designer</span></code></p></li>
-<li><p>In the upper panel click <code class="docutils literal notranslate"><span class="pre">Model</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Model</span></code> and navigate to your folder “AA_Cyclone_Monitoring_Trigger_MAD”, mark the “Cyclones_EAP_MAD_Trigger.model3” file an click on <code class="docutils literal notranslate"><span class="pre">Open</span></code>. The model will open and you will see yellow, white, green and grey boxes.</p></li>
+<li><p>Now open the QGIS Model Designer. The tool can be accessed under <code class="docutils literal notranslate"><span class="pre">Processing</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Model</span> <span class="pre">Designer</span></code></p></li>
+<li><p>In the upper panel click <code class="docutils literal notranslate"><span class="pre">Model</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Model</span></code> and navigate to your folder “AA_Cyclone_Monitoring_Trigger_MAD/trigger_model”, mark the “Cyclones_EAP_MAD_Trigger.model3” file and click on <code class="docutils literal notranslate"><span class="pre">Open</span></code>. The model will open and you will see yellow, white, green and grey boxes.</p></li>
 </ol>
 <table class="table">
 <thead>
@@ -845,8 +845,8 @@ This group includes isochrones for all warehouses, calculated for time intervals
 </tbody>
 </table>
 </section>
-<section id="step-4-run-the-model-names-in-this-section-need-to-be-finalized">
-<h2>Step 4: Run the model !!NAMES IN THIS SECTION NEED TO BE FINALIZED!!<a class="headerlink" href="#step-4-run-the-model-names-in-this-section-need-to-be-finalized" title="Permalink to this heading">#</a></h2>
+<section id="step-3-run-the-model-names-in-this-section-need-to-be-finalized">
+<h2>Step 3: Run the model !!NAMES IN THIS SECTION NEED TO BE FINALIZED!!<a class="headerlink" href="#step-3-run-the-model-names-in-this-section-need-to-be-finalized" title="Permalink to this heading">#</a></h2>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_workflow_Step4.png"><img alt="../../_images/MAD_Trigger_workflow_Step4.png" src="../../_images/MAD_Trigger_workflow_Step4.png" style="width: 1000px;" /></a>
 </figure>
@@ -925,8 +925,8 @@ Video: Input and output Model<div class="sd-summary-down docutils">
 <a class="reference internal image-reference" href="../../_images/SRCS_Model_input.png"><img alt="../../_images/SRCS_Model_input.png" src="../../_images/SRCS_Model_input.png" style="width: 500px;" /></a>
 </figure>
 </section>
-<section id="step-5-visualisation-and-styling-of-the-model-outputs">
-<h2>Step 5: Visualisation and Styling of the Model Outputs<a class="headerlink" href="#step-5-visualisation-and-styling-of-the-model-outputs" title="Permalink to this heading">#</a></h2>
+<section id="step-4-visualisation-and-styling-of-the-model-outputs">
+<h2>Step 4: Visualisation and Styling of the Model Outputs<a class="headerlink" href="#step-4-visualisation-and-styling-of-the-model-outputs" title="Permalink to this heading">#</a></h2>
 <div class="note admonition">
 <p class="admonition-title">Output maps</p>
 <p>We will generate two output maps to support the analysis:</p>
@@ -986,7 +986,6 @@ Video: Input and output Model<div class="sd-summary-down docutils">
 <p>Ensure that all relevant output layers are properly added to the QGIS project. If any layers are missing, try re-running the model or check your Model Outputs folder to see if the files were created successfully.</p>
 <p>To maintain a clear and organized workspace, group the output layers in the Layers panel under the appropriate group (e.g., Map_Cyclone_Impact_Overview). This helps keep your project structured and makes navigation easier during the map creation process.</p>
 </div>
-<p>NEED NEW IMAGE</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Your final output should look like this after styling the layer<div class="sd-summary-down docutils">
@@ -996,7 +995,7 @@ Your final output should look like this after styling the layer<div class="sd-su
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">You will now see the affected districts and the locations of relevant warehouses clearly displayed on the map. Additionally, the original storm track line — used as input data — is highlighted, along with the buffered impact area, which serves as a proxy for identifying affected districts.</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/Map_yes_trigger.PNG"><img alt="../../_images/Map_yes_trigger.PNG" src="../../_images/Map_yes_trigger.PNG" style="width: 1000px;" /></a>
+<a class="reference internal image-reference" href="../../_images/MAD_Trigger_Impact_Overview_Map.png"><img alt="../../_images/MAD_Trigger_Impact_Overview_Map.png" src="../../_images/MAD_Trigger_Impact_Overview_Map.png" style="width: 1000px;" /></a>
 </figure>
 </div>
 </details></section>
@@ -1059,7 +1058,6 @@ Your final output should look like this after styling the layer<div class="sd-su
 <p>Ensure that all relevant output layers are properly added to the QGIS project. If any layers are missing, try re-running the model or check your Model Outputs folder to see if the files were created successfully.</p>
 <p>To maintain a clear and organized workspace, group the output layers in the Layers panel under the appropriate group (e.g., Map_Cyclone_Impact_Overview). This helps keep your project structured and makes navigation easier during the map creation process.</p>
 </div>
-<p>NEED NEW IMAGE</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Your final output should look like this after styling the layer<div class="sd-summary-down docutils">
@@ -1069,13 +1067,13 @@ Your final output should look like this after styling the layer<div class="sd-su
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">You will now see the affected districts and the locations of relevant warehouses clearly displayed on the map. Additionally, the original storm track line — used as input data — is highlighted, along with the buffered impact area, which serves as a proxy for identifying affected districts.</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/Map_yes_trigger.PNG"><img alt="../../_images/Map_yes_trigger.PNG" src="../../_images/Map_yes_trigger.PNG" style="width: 1000px;" /></a>
+<a class="reference internal image-reference" href="../../_images/MAD_Trigger_Impact_Population_Map.png"><img alt="../../_images/MAD_Trigger_Impact_Population_Map.png" src="../../_images/MAD_Trigger_Impact_Population_Map.png" style="width: 1000px;" /></a>
 </figure>
 </div>
 </details></section>
 </section>
-<section id="step-6-making-the-print-map">
-<h2>Step 6: Making the Print Map<a class="headerlink" href="#step-6-making-the-print-map" title="Permalink to this heading">#</a></h2>
+<section id="step-5-making-the-print-map">
+<h2>Step 5: Making the Print Map<a class="headerlink" href="#step-5-making-the-print-map" title="Permalink to this heading">#</a></h2>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_workflow_Step6.png"><img alt="../../_images/MAD_Trigger_workflow_Step6.png" src="../../_images/MAD_Trigger_workflow_Step6.png" style="width: 1000px;" /></a>
 </figure>
@@ -1148,8 +1146,8 @@ Video: Making print map<div class="sd-summary-down docutils">
 <p>The info box on the top right corner needs to be adapted manually. The list of the affected districts can be taken from the .csv output of the model.</p>
 </section>
 </section>
-<section id="step-7-exporting-the-map">
-<h2>Step 7: Exporting the Map<a class="headerlink" href="#step-7-exporting-the-map" title="Permalink to this heading">#</a></h2>
+<section id="step-6-exporting-the-map">
+<h2>Step 6: Exporting the Map<a class="headerlink" href="#step-6-exporting-the-map" title="Permalink to this heading">#</a></h2>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_workflow_Step7.png"><img alt="../../_images/MAD_Trigger_workflow_Step7.png" src="../../_images/MAD_Trigger_workflow_Step7.png" style="width: 1000px;" /></a>
 </figure>
@@ -1288,20 +1286,20 @@ Video: Export image and PDF<div class="sd-summary-down docutils">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#automated-trigger-workflow">Automated Trigger Workflow</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functionality-of-the-model">Functionality of the model</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-run-the-model">How to run the model</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-setting-up-folder-structure-needs-to-be-fixed">Step 1: Setting up folder structure !!NEEDS TO BE FIXED!!</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-setting-up-folder-structure">Step 1: Setting up folder structure</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-open-the-project-in-qgis-and-load-the-model-in-the-qgis-model-designer">Step 2: Open the project in QGIS and load the model in the QGIS Model Designer</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-run-the-model-names-in-this-section-need-to-be-finalized">Step 4: Run the model !!NAMES IN THIS SECTION NEED TO BE FINALIZED!!</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-visualisation-and-styling-of-the-model-outputs">Step 5: Visualisation and Styling of the Model Outputs</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-run-the-model-names-in-this-section-need-to-be-finalized">Step 3: Run the model !!NAMES IN THIS SECTION NEED TO BE FINALIZED!!</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-visualisation-and-styling-of-the-model-outputs">Step 4: Visualisation and Styling of the Model Outputs</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map-1-cyclone-impact-overview-affected-districts-event-extent-and-warehouse-locations">Map 1: Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map-2-impact-assessment-affected-population-and-critical-infrastructure">Map 2: Impact Assessment: Affected Population and Critical Infrastructure</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-making-the-print-map">Step 6: Making the Print Map</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-making-the-print-map">Step 5: Making the Print Map</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Map 1: Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Map 2: Impact Assessment: Affected Population and Critical Infrastructure</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-exporting-the-map">Step 7: Exporting the Map</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-exporting-the-map">Step 6: Exporting the Map</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#historical-analysis-of-cyclone-impacts">Historical Analysis of Cyclone Impacts</a><ul class="visible nav section-nav flex-column">
