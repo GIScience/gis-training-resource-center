@@ -104,7 +104,7 @@ The output layer is relevant warehouses, indicating logistical support readiness
 The [QGIS Model Designer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html#the-qgis-model-designer) is a visual tool that allows users to create and edit a workflow with all tools available in QGIS that can be used repeatedly in a simple and time-efficient manner. It provides a graphical interface to build workflows by connecting geoprocessing tools and algorithms. The user can define inputs, outputs, and the flow of data between different processing steps.
 
 
-## Step 1: Setting up folder structure !!NEEDS TO BE FIXED!!
+## Step 1: Setting up folder structure
 
 
 ```{figure} /fig/MAD_Trigger_workflow_Step1.png
@@ -220,8 +220,8 @@ Group 5:
 This group includes isochrones for all warehouses, calculated for time intervals up to 24 hours. These layers are useful for assessing accessibility of locations in emergency response planning.
 
 Now we continue working with the model:
-1. Now open the QGIS Model Designer. The tool can be accessed under `Processing` -> `Modeler Designer`
-2. In the upper panel click `Model` -> `Open Model` and navigate to your folder "AA_Cyclone_Monitoring_Trigger_MAD", mark the "Cyclones_EAP_MAD_Trigger.model3" file an click on `Open`. The model will open and you will see yellow, white, green and grey boxes.
+1. Now open the QGIS Model Designer. The tool can be accessed under `Processing` -> `Model Designer`
+2. In the upper panel click `Model` -> `Open Model` and navigate to your folder "AA_Cyclone_Monitoring_Trigger_MAD/trigger_model", mark the "Cyclones_EAP_MAD_Trigger.model3" file and click on `Open`. The model will open and you will see yellow, white, green and grey boxes.
 
 
 | Box | Significance | Description |
@@ -232,7 +232,7 @@ Now we continue working with the model:
 |Grey| Comments| The boxes are used to further explain the specific processes. |
 
 
-## Step 4: Run the model !!NAMES IN THIS SECTION NEED TO BE FINALIZED!!
+## Step 3: Run the model !!NAMES IN THIS SECTION NEED TO BE FINALIZED!!
 
 ```{figure} /fig/MAD_Trigger_workflow_Step4.png
 ---
@@ -308,7 +308,7 @@ align: center
 ```
 
 
-## Step 5: Visualisation and Styling of the Model Outputs
+## Step 4: Visualisation and Styling of the Model Outputs
 
 :::{admonition} Output maps
 :class: note
@@ -367,12 +367,10 @@ To maintain a clear and organized workspace, group the output layers in the Laye
 
 :::
 
-NEED NEW IMAGE
-
 ```{dropdown} Your final output should look like this after styling the layer
 You will now see the affected districts and the locations of relevant warehouses clearly displayed on the map. Additionally, the original storm track line — used as input data — is highlighted, along with the buffered impact area, which serves as a proxy for identifying affected districts.
 
-```{figure} /fig/Map_yes_trigger.PNG
+```{figure} /fig/MAD_Trigger_Impact_Overview_Map.png
 ---
 width: 1000px
 name: 
@@ -423,12 +421,10 @@ To maintain a clear and organized workspace, group the output layers in the Laye
 
 :::
 
-NEED NEW IMAGE
-
 ```{dropdown} Your final output should look like this after styling the layer
 You will now see the affected districts and the locations of relevant warehouses clearly displayed on the map. Additionally, the original storm track line — used as input data — is highlighted, along with the buffered impact area, which serves as a proxy for identifying affected districts.
 
-```{figure} /fig/Map_yes_trigger.PNG
+```{figure} /fig/MAD_Trigger_Impact_Population_Map.png
 ---
 width: 1000px
 name: 
@@ -436,7 +432,7 @@ align: center
 ---
 ```
 
-## Step 6: Making the Print Map
+## Step 5: Making the Print Map
 
 ```{figure} /fig/MAD_Trigger_workflow_Step6.png
 ---
@@ -499,7 +495,7 @@ Make sure you edit the Map Information on the template, e.g. current date. Also 
 The info box on the top right corner needs to be adapted manually. The list of the affected districts can be taken from the .csv output of the model.
 
 
-## Step 7: Exporting the Map 
+## Step 6: Exporting the Map 
 
 
 ```{figure} /fig/MAD_Trigger_workflow_Step7.png
