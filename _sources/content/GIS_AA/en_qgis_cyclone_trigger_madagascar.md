@@ -167,7 +167,7 @@ The data will be structured into five groups:
 
 ```{figure} /fig/MAD_trigger_QGIS_project_structure.PNG
 ---
-width: 1000px
+width: 500px
 name: 
 align: center
 ---
@@ -463,7 +463,6 @@ The layer styling used in Map 2 can be applied to the following additional varia
 - **exposed agricultural landcover**
 
 Only the impact layer changes; all other map settings remain the same.
-
 :::
 
 
