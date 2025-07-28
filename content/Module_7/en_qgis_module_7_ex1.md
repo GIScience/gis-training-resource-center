@@ -239,15 +239,18 @@ In this task, you will help Aina build a simple version of that model using the 
 - Clip the population raster  
 - Run Zonal Statistics to get exposed population per district
 
+---
 
 1. **Set up the model structure**:
    - Open the **Graphical Modeler** from the top menu:  
      `Processing` → `Graphical Modeler…`
+
 2. **Naming the model**:   
    - A new model window will open. On the **left side**, click on **`Model Properties`** to define basic information about the model:
      - **Model Name**: `Estimate_Exposed_Population`
      - **Group**: `Cyclone Trigger Tools`
      - Leave the description empty or write: _“Automated model to estimate exposed population based on cyclone buffer.”_
+
 3. **Save the model**
    - To save the model:
      - Click the **Save** icon (💾) or go to `Model` → `Save`.
@@ -257,57 +260,75 @@ In this task, you will help Aina build a simple version of that model using the 
 
 4. **Add model inputs**:  
    - On the **left panel**, expand the **Inputs** section.
-   - Add the following input layers:
-     - `+ Vector Layer` → **Label**: `Cyclone Track`
-     - `+ Raster Layer` → **Label**: `Population Raster`
-     - `+ Vector Layer` → **Label**: `Admin Boundaries`
+   - Add the following input layers with type constraints:
+     - `+ Vector Layer`  
+       - **Label**: `Cyclone Track`  
+       - In the **Advanced panel**, set **geometry type** to `Line`
+     - `+ Raster Layer`  
+       - **Label**: `Population Raster`
+     - `+ Vector Layer`  
+       - **Label**: `Admin Boundaries`  
+       - In the **Advanced panel**, set **geometry type** to `Polygon`
    - These will appear at the top of your model canvas and serve as the input data when the model is run.
-       ```{tip}
-         All inputs should be set as **mandatory**, so the model always receives the necessary data to run correctly.
+
+     ```{tip}
+     All inputs should be set as **mandatory**, so the model always receives the necessary data to run correctly.
+     ```
+
 5. **Reproject the cyclone track to EPSG:29738**  
    - From the **Algorithms** panel, search for **Reproject Layer** and drag it into the model canvas.
    - In the configuration window:
-     - First, set **Input layer** to **Model Input**, then select `Cyclone Track`.
+     - Set **Input layer** to `Cyclone Track` (from **Model Input**).
      - Set **Target CRS** to `EPSG:29738 – Madagascar / Laborde Grid`.
-     - In the **Reprojected** section, which defines the output, set it to **Algorithm output**.  
-       This means that the result will be used in the next step but will **not** be the final output of the model.
+     - Set the output to **Model Output** (leave the output name **empty**).
    - Click **OK** to add the step to the model.
+
 6. **Buffer the reprojected cyclone track**  
    - From the **Algorithms** panel, search for **Buffer** and drag it into the model canvas.
    - In the configuration window:
-     - Set **Input layer** to `Reprojected` (the output from the previous step) by choosing it from the **Algorithm output** section.
-     - Set **Distance** to `200000` (this equals 200 km).
-     - Leave **Segments** at the default value (usually `5`).
-     - Set **Dissolve result** to `Yes` to merge overlapping buffers into one polygon.
-     - In the **Buffered** section (the output), set it to **Algorithm output** — since this is an intermediate step.
+     - Set **Input layer** to the output from the previous step (from **Algorithm Output**).
+     - Set **Distance** to `200000` (200 km).
+     - Leave **Segments** at the default value (`5`).
+     - Set **Dissolve result** to `Yes`.
+     - Set the output to **Model Output** (leave the output name **empty**).
    - Click **OK** to add the step to the model.
+
 7. **Reproject the buffer back to EPSG:4326**  
    - From the **Algorithms** panel, search for **Reproject Layer** and drag it into the model canvas.
    - In the configuration window:
-      - Set **Input layer** to `Buffered` (the output from the previous step) by selecting it under **Algorithm output**.
-     - Set **Target CRS** to `EPSG:4326 – WGS 84` (to match the CRS of the population raster).
-     - Set this output to **Algorithm output**, as it will be used in the next processing step.
- 8. **Clip the population raster using the buffered area**  
+     - Set **Input layer** to the output from the previous step (from **Algorithm Output**).
+     - Set **Target CRS** to `EPSG:4326 – WGS 84`.
+     - Set the output to **Model Output** (leave the output name **empty**).
+   - Click **OK** to add the step to the model.
+
+8. **Clip the population raster using the buffered area**  
    - From the **Algorithms** panel, search for **Clip Raster by Mask Layer** and drag it into the model canvas.
    - In the configuration window:
-     - Set **Input layer** to `Population Raster` by selecting it under **Model Input**.
-     - Set **Mask layer** to the output from the previous step (`Reprojected`, which is the buffer in EPSG:4326) by selecting it under **Algorithm output**.
-     - In the **Clipped** section (the output), set it to **Algorithm output**, as this is still an intermediate result.
+     - Set **Input layer** to `Population Raster` (from **Model Input**).
+     - Set **Mask layer** to the output from the previous step (from **Algorithm Output**).
+     - Set the output to **Model Output** (leave the output name **empty**).
    - Click **OK** to add the step to the model.
+
 9. **Calculate zonal statistics to estimate exposed population**  
    - From the **Algorithms** panel, search for **Zonal Statistics** and drag it into the model canvas.
    - In the configuration window:
-     - Set **Input layer** to `Admin Boundaries` by selecting it from **Model Input**.
-     - Set **Raster layer** to the output of the previous step (`Clipped (mask) from algorithm "Clip raster by mask"`) by selecting it from the **Algorithm output** section.
+     - Set **Input layer** to `Admin Boundaries` (from **Model Input**).
+     - Set **Raster layer** to the output of the previous step (from **Algorithm Output**).
      - Set **Output column prefix** to `pop_`.
      - Under **Statistics to calculate**, select `Sum`.
-     - Leave the **Output** field (called `Statistics` or similar) as **Model output**, since this  the final model output. Name it to 
+     - Set the output to **Model Output** and name it: `Exposed_Population`
    - Click **OK** to add the step to the model.
+
+10. **Validate your model (recommended)**
+   - Before saving or running, click the ✔️ **Validate Model** button in the top toolbar.
+   - Fix any warnings or errors shown in the log panel.
+   - This helps ensure your model is complete and won't break during execution.
+
 11. **Save your completed model**  
-   - Once your model is finished and the final output is set, don’t forget to save your work.
+   - Once your model is finished and the final output is set, save your work.
    - Click the **Save** icon (💾) or go to `Model` → `Save`.
    - Navigate to the **`project` folder** of your training structure.
    - Save the model as:  
      **`Estimate_Exposed_Population.model3`**
-   - You can now run this model any time a new cyclone track becomes available.
 
+You can now run this model any time a new cyclone track becomes available.
