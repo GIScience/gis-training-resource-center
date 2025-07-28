@@ -317,7 +317,7 @@ In this task, you will help Aina build a simple version of that model using the 
      - Set **Raster layer** to the output of the previous step (from **Algorithm Output**).
      - Set **Output column prefix** to `pop_`.
      - Under **Statistics to calculate**, select `Sum`.
-     - Set the output to **Model Output** and name it: `Exposed_Population`
+     - Set the output to **Model Output** and name it: `exposed_population_sum`
    - Click **OK** to add the step to the model.
 
 10. **Validate your model (recommended)**
@@ -354,10 +354,10 @@ To achieve this, she will use two point datasets from OpenStreetMap:
        **`Estimate_Exposed_Population_Health_Education.model3`**
 2. **Add new model inputs**  
    - In the **Inputs** section, add:
-     - `+ Vector Layer`  
+     - `Vector Layer`  
        - **Label**: `Health Facilities`  
        - Set **Geometry Type** to `Point`
-     - `+ Vector Layer`  
+     - `Vector Layer`  
        - **Label**: `Education Facilities`  
        - Set **Geometry Type** to `Point`
 3. **Count All Health Facilities per Admin 2**  
@@ -393,13 +393,13 @@ To achieve this, she will use two point datasets from OpenStreetMap:
      - **Polygon layer**: `Admin Boundaries`
      - **Points layer**: intersected health facilities output
      - **Count field name**: `count_health_affected`
-     - Output name: `Admin2_Affected_Health_Facilities`
+     - Output name: `sum_exposed_healthsites_POI`
 8. **Count Affected Education Facilities per Admin 2**  
    - Add **Count Points in Polygon**
    - Configuration:
      - **Points layer**: intersected education facilities output
      - **Count field name**: `count_education_affected`
-     - Output name: `Admin2_Affected_Education_Facilities`
+     - Output name: `sum_exposed_education_POI`
 9. **Validate and Save Your Extended Model**  
    - Click the ✔️ **Validate Model** button to check for errors.
    - Save again to:  

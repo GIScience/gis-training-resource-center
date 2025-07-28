@@ -970,7 +970,7 @@ To do this, we’ll apply a <strong>graduated classification</strong> to the <co
 <li><p>Set <strong>Raster layer</strong> to the output of the previous step (from <strong>Algorithm Output</strong>).</p></li>
 <li><p>Set <strong>Output column prefix</strong> to <code class="docutils literal notranslate"><span class="pre">pop_</span></code>.</p></li>
 <li><p>Under <strong>Statistics to calculate</strong>, select <code class="docutils literal notranslate"><span class="pre">Sum</span></code>.</p></li>
-<li><p>Set the output to <strong>Model Output</strong> and name it: <code class="docutils literal notranslate"><span class="pre">Exposed_Population</span></code></p></li>
+<li><p>Set the output to <strong>Model Output</strong> and name it: <code class="docutils literal notranslate"><span class="pre">exposed_population_sum</span></code></p></li>
 </ul>
 </li>
 <li><p>Click <strong>OK</strong> to add the step to the model.</p></li>
@@ -1021,13 +1021,13 @@ To do this, we’ll apply a <strong>graduated classification</strong> to the <co
 <ul class="simple">
 <li><p>In the <strong>Inputs</strong> section, add:</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code></p>
+<li><p><code class="docutils literal notranslate"><span class="pre">Vector</span> <span class="pre">Layer</span></code></p>
 <ul>
 <li><p><strong>Label</strong>: <code class="docutils literal notranslate"><span class="pre">Health</span> <span class="pre">Facilities</span></code></p></li>
 <li><p>Set <strong>Geometry Type</strong> to <code class="docutils literal notranslate"><span class="pre">Point</span></code></p></li>
 </ul>
 </li>
-<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code></p>
+<li><p><code class="docutils literal notranslate"><span class="pre">Vector</span> <span class="pre">Layer</span></code></p>
 <ul>
 <li><p><strong>Label</strong>: <code class="docutils literal notranslate"><span class="pre">Education</span> <span class="pre">Facilities</span></code></p></li>
 <li><p>Set <strong>Geometry Type</strong> to <code class="docutils literal notranslate"><span class="pre">Point</span></code></p></li>
@@ -1096,7 +1096,7 @@ To do this, we’ll apply a <strong>graduated classification</strong> to the <co
 <li><p><strong>Polygon layer</strong>: <code class="docutils literal notranslate"><span class="pre">Admin</span> <span class="pre">Boundaries</span></code></p></li>
 <li><p><strong>Points layer</strong>: intersected health facilities output</p></li>
 <li><p><strong>Count field name</strong>: <code class="docutils literal notranslate"><span class="pre">count_health_affected</span></code></p></li>
-<li><p>Output name: <code class="docutils literal notranslate"><span class="pre">Admin2_Affected_Health_Facilities</span></code></p></li>
+<li><p>Output name: <code class="docutils literal notranslate"><span class="pre">sum_exposed_healthsites_POI</span></code></p></li>
 </ul>
 </li>
 </ul>
@@ -1108,7 +1108,7 @@ To do this, we’ll apply a <strong>graduated classification</strong> to the <co
 <ul>
 <li><p><strong>Points layer</strong>: intersected education facilities output</p></li>
 <li><p><strong>Count field name</strong>: <code class="docutils literal notranslate"><span class="pre">count_education_affected</span></code></p></li>
-<li><p>Output name: <code class="docutils literal notranslate"><span class="pre">Admin2_Affected_Education_Facilities</span></code></p></li>
+<li><p>Output name: <code class="docutils literal notranslate"><span class="pre">sum_exposed_education_POI</span></code></p></li>
 </ul>
 </li>
 </ul>
