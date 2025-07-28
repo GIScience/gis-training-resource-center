@@ -575,7 +575,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-run-the-model">How to run the model</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-setting-up-folder-structure">Step 1: Setting up folder structure</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-open-the-project-in-qgis-and-load-the-model-in-the-qgis-model-designer">Step 2: Open the project in QGIS and load the model in the QGIS Model Designer</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-run-the-model-names-in-this-section-need-to-be-finalized">Step 3: Run the model !!NAMES IN THIS SECTION NEED TO BE FINALIZED!!</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-run-the-model">Step 3: Run the model</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-visualisation-and-styling-of-the-model-outputs">Step 4: Visualisation and Styling of the Model Outputs</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map-1-cyclone-impact-overview-affected-districts-event-extent-and-warehouse-locations">Map 1: Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map-2-impact-assessment-affected-population-and-critical-infrastructure">Map 2: Impact Assessment: Affected Population and Critical Infrastructure</a></li>
@@ -846,8 +846,8 @@ Ensure you’re using the correct event data to maintain consistency and accurac
 </tbody>
 </table>
 </section>
-<section id="step-3-run-the-model-names-in-this-section-need-to-be-finalized">
-<h2>Step 3: Run the model !!NAMES IN THIS SECTION NEED TO BE FINALIZED!!<a class="headerlink" href="#step-3-run-the-model-names-in-this-section-need-to-be-finalized" title="Permalink to this heading">#</a></h2>
+<section id="step-3-run-the-model">
+<h2>Step 3: Run the model<a class="headerlink" href="#step-3-run-the-model" title="Permalink to this heading">#</a></h2>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_workflow_Step4.png"><img alt="../../_images/MAD_Trigger_workflow_Step4.png" src="../../_images/MAD_Trigger_workflow_Step4.png" style="width: 1000px;" /></a>
 </figure>
@@ -943,14 +943,21 @@ Video: Input and output Model<div class="sd-summary-down docutils">
 <h2>Step 4: Visualisation and Styling of the Model Outputs<a class="headerlink" href="#step-4-visualisation-and-styling-of-the-model-outputs" title="Permalink to this heading">#</a></h2>
 <div class="note admonition">
 <p class="admonition-title">Output maps</p>
-<p>We will generate two output maps to support the analysis:</p>
+<p>We will generate two different types of output maps to support the analysis:</p>
 <ul class="simple">
 <li><p>Map 1 will provide an cyclone impact overview of the <strong>affected districts, the extent of the cyclone event, and the locations of relevant warehouses</strong>.</p></li>
-<li><p>Map 2 will focus on the impact to infrastructure and population, displaying the <strong>number of affected people, buildings, health sites, and education facilities</strong>.</p></li>
+<li><p>Map 2 will focus on the impact to infrastructure and population. We will create 5 different impact maps displaying the following information:</p>
+<ul>
+<li><p><strong>exposed population</strong></p></li>
+<li><p><strong>exposed buildings</strong></p></li>
+<li><p><strong>exposed health sites</strong></p></li>
+<li><p><strong>exposed education facilities</strong></p></li>
+<li><p><strong>exposed agricultural landcover</strong></p></li>
+</ul>
+</li>
 </ul>
 </div>
-<p>Additionally, a map showing the <strong>warehouse isochrones</strong> for all 13 warehouses will be provided by HeiGIT.</p>
-<p>NEED NEW IMAGE</p>
+<p>Additionally, a map showing the <strong>warehouse isochrones</strong> for all 13 warehouses will be provided. The map and the map template can be found in the <strong>warehouse_isochrone_matrix</strong> folder.</p>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_workflow_Step5.png"><img alt="../../_images/MAD_Trigger_workflow_Step5.png" src="../../_images/MAD_Trigger_workflow_Step5.png" style="width: 1000px;" /></a>
 </figure>
@@ -960,38 +967,43 @@ Video: Input and output Model<div class="sd-summary-down docutils">
 <h3>Map 1: Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations<a class="headerlink" href="#map-1-cyclone-impact-overview-affected-districts-event-extent-and-warehouse-locations" title="Permalink to this heading">#</a></h3>
 <p>Layers needed for this map:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Affected_Districts</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">exposed_districts</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">mdg_admbnda_adm1_BNGRC_OCHA_20181031</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Relevant_Warehouses</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Affected_Cyclone_Area</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Cyclone_track</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">relevant_warehouses</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">exposed_cyclone_area</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cyclone_track</span></code></p></li>
 </ul>
 <ol class="arabic simple">
-<li><p>Right click on the Affected_Districts layer -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Symbology</span></code></p></li>
+<li><p>Right click on the exposed_districts layer -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Symbology</span></code></p></li>
 <li><p>In the down left corner click on <code class="docutils literal notranslate"><span class="pre">Style</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code></p></li>
-<li><p>In the new window click on the three points <img alt="" src="../../_images/Three_points.png" />. Navigate to the “AA_Cyclone_Monitoring_Trigger_MAD/layer_styles” folder and select the file <strong>“affected_districts_style.qml”</strong>.</p></li>
+<li><p>In the new window click on the three points <img alt="" src="../../_images/Three_points.png" />. Navigate to the “AA_Cyclone_Monitoring_Trigger_MAD/layer_styles” folder and select the file <strong>“exposed_districts_style.qml”</strong>.</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Then click on <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code></p></li>
-<li><p>Back in the “Layer Properties” Window click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
+<li><p>Back in the “Layer Properties” window click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
 </ol>
 <p>Repeat this process for the following output layers, along with their corresponding style sheets:</p>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Layer name</p></th>
 <th class="head"><p>Style</p></th>
+<th class="head"><p>Comment</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">mdg_admbnda_adm1_BNGRC_OCHA_20181031</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Admin1_Impact_Overview_Map</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">adm1_style.qml</span></code></p></td>
+<td><p>pre-loaded</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">Relevant_Warehouses</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">relevant_warehouses</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">relevant_warehouses_style.qml</span></code></p></td>
+<td><p>model output</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Affected_Cyclone_Area</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">cyclone_area_style.qml</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">exposed_cyclone_area</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">exposed_cyclone_area_style.qml</span></code></p></td>
+<td><p>model output</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">Cyclone_track</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">cyclone_area_style.qml</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">cyclone_track</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">storm_track_cyclone_style.qml</span></code></p></td>
+<td><p>pre-loaded</p></td>
 </tr>
 </tbody>
 </table>
@@ -1007,7 +1019,7 @@ Your final output should look like this after styling the layer<div class="sd-su
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">You will now see the affected districts and the locations of relevant warehouses clearly displayed on the map. Additionally, the original storm track line — used as input data — is highlighted, along with the buffered impact area, which serves as a proxy for identifying affected districts.</p>
+<p class="sd-card-text">You will now see the exposed districts and the locations of relevant warehouses clearly displayed on the map. Additionally, the original storm track line — used as input data — is highlighted, along with the buffered impact area, which serves as a proxy for identifying exposed districts.</p>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_Impact_Overview_Map.png"><img alt="../../_images/MAD_Trigger_Impact_Overview_Map.png" src="../../_images/MAD_Trigger_Impact_Overview_Map.png" style="width: 1000px;" /></a>
 </figure>
@@ -1017,53 +1029,47 @@ Your final output should look like this after styling the layer<div class="sd-su
 <h3>Map 2: Impact Assessment: Affected Population and Critical Infrastructure<a class="headerlink" href="#map-2-impact-assessment-affected-population-and-critical-infrastructure" title="Permalink to this heading">#</a></h3>
 <p>Layers needed for this map:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Relevant_Warehouses</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">relevant_warehouses</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">mdg_admbnda_adm1_BNGRC_OCHA_20181031</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Affected_Cyclone_Area</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Cyclone_track</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Affected_Population</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Affected_Buildings</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Number_Affected_POIs</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">exposed_cyclone_area</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cyclone_track</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">exposed_population</span></code></p></li>
 </ul>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>If you already created Map 1 earlier in the process, you can reuse the first four layers with their existing styling for Map 2—and vice versa. This ensures consistency across both maps and saves time by avoiding duplicate styling efforts.</p>
 </div>
 <ol class="arabic simple">
-<li><p>Right click on the “Affected_Population” layer -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Symbology</span></code></p></li>
+<li><p>Right click on the “exposed_population” layer -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Symbology</span></code></p></li>
 <li><p>In the down left corner click on <code class="docutils literal notranslate"><span class="pre">Style</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code></p></li>
-<li><p>In the new window click on the three points <img alt="" src="../../_images/Three_points.png" />. Navigate to the “AA_Cyclone_Monitoring_Trigger_MAD/layer_styles” folder and select the file <strong>“affected_population.qml”</strong> style layer.</p></li>
+<li><p>In the new window click on the three points <img alt="" src="../../_images/Three_points.png" />. Navigate to the “AA_Cyclone_Monitoring_Trigger_MAD/layer_styles” folder and select the file <strong>“exposed_population_style.qml”</strong> style layer.</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Then click on <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code></p></li>
-<li><p>Back in the “Layer Properties” Window click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
+<li><p>Back in the “Layer Properties” window click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
 </ol>
 <p>Repeat this process for the following output layers, along with their corresponding style sheets:</p>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Layer name</p></th>
 <th class="head"><p>Style</p></th>
+<th class="head"><p>Comment</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">mdg_admbnda_adm1_BNGRC_OCHA_20181031</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Admin1_Impact_Assessment_Map</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">adm1_style.qml</span></code></p></td>
+<td><p>pre-loaded</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">Relevant_Warehouses</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">relevant_warehouses</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">relevant_warehouses_style.qml</span></code></p></td>
+<td><p>model output</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Affected_Cyclone_Area</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">cyclone_area_style.qml</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">exposed_cyclone_area</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">exposed_cyclone_area_style.qml</span></code></p></td>
+<td><p>model output</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">Cyclone_track</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">cyclone_area_style.qml</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Affected_Buildings</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">affected_buildings.qml</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">Number_Affected_POIs</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">affected_education_facilities.qml</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Number_Affected_POIs</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">affected_healthsites.qml</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">cyclone_track</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">storm_track_cyclone_style.qml</span></code></p></td>
+<td><p>pre-loaded</p></td>
 </tr>
 </tbody>
 </table>
@@ -1079,12 +1085,24 @@ Your final output should look like this after styling the layer<div class="sd-su
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">You will now see the affected districts and the locations of relevant warehouses clearly displayed on the map. Additionally, the original storm track line — used as input data — is highlighted, along with the buffered impact area, which serves as a proxy for identifying affected districts.</p>
+<p class="sd-card-text">The map now clearly displays the exposed population within the affected districts, along with the locations of relevant warehouses. The original storm track line — used as input data — is highlighted, as well as the buffered impact area, which serves as a proxy for identifying exposed districts.</p>
+<p class="sd-card-text">On the right-hand side of the map, a list shows all exposed districts, including data on total population and exposed population. The districts (Admin 2) are organized under their corresponding regions (Admin 1).</p>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_Impact_Population_Map.png"><img alt="../../_images/MAD_Trigger_Impact_Population_Map.png" src="../../_images/MAD_Trigger_Impact_Population_Map.png" style="width: 1000px;" /></a>
 </figure>
 </div>
-</details></section>
+</details><div class="hint admonition">
+<p class="admonition-title">Other Impact Assessment Maps</p>
+<p>The layer styling used in Map 2 can be applied to the following additional variables available in the model outputs:</p>
+<ul class="simple">
+<li><p><strong>exposed buildings</strong></p></li>
+<li><p><strong>exposed health sites</strong></p></li>
+<li><p><strong>exposed education facilities</strong></p></li>
+<li><p><strong>exposed agricultural landcover</strong></p></li>
+</ul>
+<p>Only the impact layer changes; all other map settings remain the same.</p>
+</div>
+</section>
 </section>
 <section id="step-5-making-the-print-map">
 <h2>Step 5: Making the Print Map<a class="headerlink" href="#step-5-making-the-print-map" title="Permalink to this heading">#</a></h2>
@@ -1302,7 +1320,7 @@ Video: Export image and PDF<div class="sd-summary-down docutils">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-run-the-model">How to run the model</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-setting-up-folder-structure">Step 1: Setting up folder structure</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-open-the-project-in-qgis-and-load-the-model-in-the-qgis-model-designer">Step 2: Open the project in QGIS and load the model in the QGIS Model Designer</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-run-the-model-names-in-this-section-need-to-be-finalized">Step 3: Run the model !!NAMES IN THIS SECTION NEED TO BE FINALIZED!!</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-run-the-model">Step 3: Run the model</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-visualisation-and-styling-of-the-model-outputs">Step 4: Visualisation and Styling of the Model Outputs</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map-1-cyclone-impact-overview-affected-districts-event-extent-and-warehouse-locations">Map 1: Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map-2-impact-assessment-affected-population-and-critical-infrastructure">Map 2: Impact Assessment: Affected Population and Critical Infrastructure</a></li>

@@ -239,7 +239,7 @@ Now we continue working with the model:
 |Grey| Comments| The boxes are used to further explain the specific processes. |
 
 
-## Step 3: Run the model !!NAMES IN THIS SECTION NEED TO BE FINALIZED!!
+## Step 3: Run the model
 
 ```{figure} /fig/MAD_Trigger_workflow_Step4.png
 ---
@@ -332,15 +332,18 @@ align: center
 :::{admonition} Output maps
 :class: note
 
-We will generate two output maps to support the analysis:
+We will generate two different types of output maps to support the analysis:
 - Map 1 will provide an cyclone impact overview of the **affected districts, the extent of the cyclone event, and the locations of relevant warehouses**.
-- Map 2 will focus on the impact to infrastructure and population, displaying the **number of affected people, buildings, health sites, and education facilities**.
-
+- Map 2 will focus on the impact to infrastructure and population. We will create 5 different impact maps displaying the following information:
+    - **exposed population**
+    - **exposed buildings**
+    - **exposed health sites**
+    - **exposed education facilities**
+    - **exposed agricultural landcover**
 :::
 
-Additionally, a map showing the **warehouse isochrones** for all 13 warehouses will be provided by HeiGIT.
+Additionally, a map showing the **warehouse isochrones** for all 13 warehouses will be provided. The map and the map template can be found in the **warehouse_isochrone_matrix** folder.
 
-NEED NEW IMAGE
 
 ```{figure} /fig/MAD_Trigger_workflow_Step5.png
 ---
@@ -357,26 +360,26 @@ __Tool:__ [Symbology tab](https://giscience.github.io/gis-training-resource-cent
 ### Map 1: Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations
 
 Layers needed for this map:
-- `Affected_Districts`
+- `exposed_districts`
 - `mdg_admbnda_adm1_BNGRC_OCHA_20181031`
-- `Relevant_Warehouses`
-- `Affected_Cyclone_Area`
-- `Cyclone_track`
+- `relevant_warehouses`
+- `exposed_cyclone_area`
+- `cyclone_track`
 
-1. Right click on the Affected_Districts layer -> `Properties` -> `Symbology`
+1. Right click on the exposed_districts layer -> `Properties` -> `Symbology`
 2. In the down left corner click on `Style` -> `Load Style`
-3. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the "AA_Cyclone_Monitoring_Trigger_MAD/layer_styles” folder and select the file __“affected_districts_style.qml”__.
+3. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the "AA_Cyclone_Monitoring_Trigger_MAD/layer_styles” folder and select the file __“exposed_districts_style.qml”__.
 4. Click `Open`. Then click on `Load Style`
-5. Back in the “Layer Properties” Window click `Apply` and `OK`
+5. Back in the “Layer Properties” window click `Apply` and `OK`
 
 Repeat this process for the following output layers, along with their corresponding style sheets:
 
-| Layer name | Style | 
-| ----- | --- |
-|`mdg_admbnda_adm1_BNGRC_OCHA_20181031`| `adm1_style.qml` |
-|`Relevant_Warehouses` | `relevant_warehouses_style.qml` |
-|`Affected_Cyclone_Area`|`cyclone_area_style.qml`|
-|`Cyclone_track`| `cyclone_area_style.qml`|
+| Layer name | Style | Comment
+| ----- | --- | --- |
+|`Admin1_Impact_Overview_Map`| `adm1_style.qml` | pre-loaded |
+|`relevant_warehouses` | `relevant_warehouses_style.qml` | model output |
+|`exposed_cyclone_area`|`exposed_cyclone_area_style.qml`| model output |
+|`cyclone_track`| `storm_track_cyclone_style.qml`| pre-loaded |
 
 :::{attention}
 
@@ -387,7 +390,7 @@ To maintain a clear and organized workspace, group the output layers in the Laye
 :::
 
 ```{dropdown} Your final output should look like this after styling the layer
-You will now see the affected districts and the locations of relevant warehouses clearly displayed on the map. Additionally, the original storm track line — used as input data — is highlighted, along with the buffered impact area, which serves as a proxy for identifying affected districts.
+You will now see the exposed districts and the locations of relevant warehouses clearly displayed on the map. Additionally, the original storm track line — used as input data — is highlighted, along with the buffered impact area, which serves as a proxy for identifying exposed districts.
 
 ```{figure} /fig/MAD_Trigger_Impact_Overview_Map.png
 ---
@@ -400,13 +403,11 @@ align: center
 ### Map 2: Impact Assessment: Affected Population and Critical Infrastructure
 
 Layers needed for this map:
-- `Relevant_Warehouses`
+- `relevant_warehouses`
 - `mdg_admbnda_adm1_BNGRC_OCHA_20181031`
-- `Affected_Cyclone_Area`
-- `Cyclone_track`
-- `Affected_Population`
-- `Affected_Buildings`
-- `Number_Affected_POIs`
+- `exposed_cyclone_area`
+- `cyclone_track`
+- `exposed_population`
 
 :::{attention}
 
@@ -414,23 +415,22 @@ If you already created Map 1 earlier in the process, you can reuse the first fou
 
 :::
 
-1. Right click on the "Affected_Population" layer -> `Properties` -> `Symbology`
+1. Right click on the "exposed_population" layer -> `Properties` -> `Symbology`
 2. In the down left corner click on `Style` -> `Load Style`
-3. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the "AA_Cyclone_Monitoring_Trigger_MAD/layer_styles” folder and select the file __“affected_population.qml”__ style layer.
+3. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the "AA_Cyclone_Monitoring_Trigger_MAD/layer_styles” folder and select the file __“exposed_population_style.qml”__ style layer.
 4. Click `Open`. Then click on `Load Style`
-5. Back in the “Layer Properties” Window click `Apply` and `OK`
+5. Back in the “Layer Properties” window click `Apply` and `OK`
 
 Repeat this process for the following output layers, along with their corresponding style sheets:
 
-| Layer name | Style | 
-| ----- | --- |
-|`mdg_admbnda_adm1_BNGRC_OCHA_20181031`| `adm1_style.qml` |
-|`Relevant_Warehouses` | `relevant_warehouses_style.qml` |
-|`Affected_Cyclone_Area`|`cyclone_area_style.qml`|
-|`Cyclone_track`| `cyclone_area_style.qml`|
-|`Affected_Buildings`| `affected_buildings.qml`|
-|`Number_Affected_POIs`| `affected_education_facilities.qml`|
-|`Number_Affected_POIs`| `affected_healthsites.qml`|
+| Layer name | Style | Comment
+| ----- | --- | --- |
+|`Admin1_Impact_Assessment_Map`| `adm1_style.qml` | pre-loaded |
+|`relevant_warehouses` | `relevant_warehouses_style.qml` | model output |
+|`exposed_cyclone_area`|`exposed_cyclone_area_style.qml`| model output |
+|`cyclone_track`| `storm_track_cyclone_style.qml`| pre-loaded |
+
+
 
 :::{attention}
 
@@ -441,7 +441,9 @@ To maintain a clear and organized workspace, group the output layers in the Laye
 :::
 
 ```{dropdown} Your final output should look like this after styling the layer
-You will now see the affected districts and the locations of relevant warehouses clearly displayed on the map. Additionally, the original storm track line — used as input data — is highlighted, along with the buffered impact area, which serves as a proxy for identifying affected districts.
+The map now clearly displays the exposed population within the affected districts, along with the locations of relevant warehouses. The original storm track line — used as input data — is highlighted, as well as the buffered impact area, which serves as a proxy for identifying exposed districts.
+
+On the right-hand side of the map, a list shows all exposed districts, including data on total population and exposed population. The districts (Admin 2) are organized under their corresponding regions (Admin 1).
 
 ```{figure} /fig/MAD_Trigger_Impact_Population_Map.png
 ---
@@ -450,6 +452,20 @@ name:
 align: center
 ---
 ```
+
+:::{admonition} Other Impact Assessment Maps
+:class: hint
+
+The layer styling used in Map 2 can be applied to the following additional variables available in the model outputs:
+- **exposed buildings**
+- **exposed health sites**
+- **exposed education facilities**
+- **exposed agricultural landcover**
+
+Only the impact layer changes; all other map settings remain the same.
+
+:::
+
 
 ## Step 5: Making the Print Map
 
