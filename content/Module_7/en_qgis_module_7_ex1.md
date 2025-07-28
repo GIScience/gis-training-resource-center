@@ -227,6 +227,7 @@ align: center
 ---
 ```
 
+
 ## 🛠️ Task 2: Automatisation of Estimating Exposed Population – Aina's Model
 
 After manually estimating exposed populations in past cyclone seasons, Aina has decided to prepare an **automated model** using the **QGIS Graphical Modeller**. This will help her move faster and avoid repeating the same steps manually each time a cyclone is forecasted.
@@ -332,3 +333,88 @@ In this task, you will help Aina build a simple version of that model using the 
      **`Estimate_Exposed_Population.model3`**
 
 You can now run this model any time a new cyclone track becomes available.
+
+
+## 🛠️ Task 3: Identifying Affected Health Facilities and Schools – Aina Adds More Layers
+
+After building her model to estimate exposed population, Aina wants to expand its usefulness. She decides to also **identify critical services** affected by cyclones — especially **health facilities** and **schools**. 
+
+Not only does she want to know *which* facilities are affected, but also *how many in total exist* per district. That way, she can calculate the **percentage of services affected** in each area — a valuable insight for prioritizing early actions.
+
+To achieve this, she will use two point datasets from OpenStreetMap:
+
+- [Health facilities](https://data.humdata.org/dataset/hotosm_mdg_health_facilities)  
+- [Education facilities](https://data.humdata.org/dataset/hotosm_mdg_education_facilities)
+
+1. **Save your model under a new name**  
+   - Open your existing model `Estimate_Exposed_Population.model3`.
+   - Immediately save it under a new name:
+     - Click `Model` → `Save As…`
+     - Save it to the `project` folder as:  
+       **`Estimate_Exposed_Population_Health_Education.model3`**
+2. **Add new model inputs**  
+   - In the **Inputs** section, add:
+     - `+ Vector Layer`  
+       - **Label**: `Health Facilities`  
+       - Set **Geometry Type** to `Point`
+     - `+ Vector Layer`  
+       - **Label**: `Education Facilities`  
+       - Set **Geometry Type** to `Point`
+3. **Count All Health Facilities per Admin 2**  
+   - From the **Algorithms** panel, search for **Count Points in Polygon** and drag it in.
+   - Configuration:
+     - **Polygon layer**: `Admin Boundaries` (Model Input)
+     - **Points layer**: full `Health Facilities` input
+     - **Count field name**: `count_health_total`
+     - Leave output as **Model Output**
+4. **Count All Education Facilities per Admin 2**  
+   - Add another **Count Points in Polygon** step.
+   - Configuration:
+     - **Points layer**: full `Education Facilities` input
+     - **Count field name**: `count_education_total`
+     - Leave output as **Model Output**
+5. **Intersect Health Facilities with Cyclone Buffer**  
+   - From the **Algorithms** panel, search for **Intersection** and drag it into the model.
+   - In the configuration window:
+     - **Input layer**: `Health Facilities` (Model Input)
+     - **Overlay layer**: buffered cyclone zone (use “Reprojected to EPSG:4326” from **Algorithm Output**)
+     - Leave output as **Model Output** 
+   - Click **OK**
+6. **Intersect Education Facilities with Cyclone Buffer**  
+   - Add another **Intersection** algorithm.
+   - Configuration:
+     - **Input layer**: `Education Facilities` (Model Input)
+     - **Overlay layer**: buffered cyclone zone (use “Reprojected to EPSG:4326” from **Algorithm Output**)
+     - Leave output as **Model Output**
+   - Click **OK**
+7. **Count Affected Health Facilities per Admin 2**  
+   - Add **Count Points in Polygon**
+   - Configuration:
+     - **Polygon layer**: `Admin Boundaries`
+     - **Points layer**: intersected health facilities output
+     - **Count field name**: `count_health_affected`
+     - Output name: `Admin2_Affected_Health_Facilities`
+8. **Count Affected Education Facilities per Admin 2**  
+   - Add **Count Points in Polygon**
+   - Configuration:
+     - **Points layer**: intersected education facilities output
+     - **Count field name**: `count_education_affected`
+     - Output name: `Admin2_Affected_Education_Facilities`
+9. **Validate and Save Your Extended Model**  
+   - Click the ✔️ **Validate Model** button to check for errors.
+   - Save again to:  
+     **`Estimate_Exposed_Population_Health_Education.model3`**
+10. **Run the model**
+   - Click the ▶️ **Run** button in the top-right corner of the Graphical Modeler window.
+   - In the popup dialog:
+     - Browse to select the required input layers:
+       - `Cyclone Track` → select the GeoJSON of the storm path (e.g. `Harald_2025_Track.geojson`)
+       - `Population Raster` → select the WorldPop raster file
+       - `Admin Boundaries` → select the Admin 2 layer (e.g. `MDG_adm2.gpkg`)
+       - `Health Facilities` → select the point dataset for health sites
+       - `Education Facilities` → select the point dataset for schools
+     - Choose a location to save the output for the final layers (you can leave intermediate layers in temporary memory).
+   - Click **Run** to execute the full model.
+   - When finished, you should see all final output layers loaded into your QGIS workspace.
+
+
