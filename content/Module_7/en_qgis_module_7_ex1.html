@@ -560,6 +560,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks-estimating-exposed-population-ainas-manual-approach">Tasks: Estimating Exposed Population – Aina’s Manual Approach</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-automatisation-of-estimating-exposed-population-aina-s-model">🛠️ Task 2: Automatisation of Estimating Exposed Population – Aina’s Model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-identifying-affected-health-facilities-and-schools-aina-adds-more-layers">🛠️ Task 3: Identifying Affected Health Facilities and Schools – Aina Adds More Layers</a></li>
 </ul>
             </nav>
         </div>
@@ -843,6 +844,7 @@ To do this, we’ll apply a <strong>graduated classification</strong> to the <co
 <li><p>Clip the population raster</p></li>
 <li><p>Run Zonal Statistics to get exposed population per district</p></li>
 </ul>
+<hr class="docutils" />
 <ol class="arabic">
 <li><p><strong>Set up the model structure</strong>:</p>
 <ul class="simple">
@@ -876,11 +878,25 @@ To do this, we’ll apply a <strong>graduated classification</strong> to the <co
 <li><p><strong>Add model inputs</strong>:</p>
 <ul>
 <li><p>On the <strong>left panel</strong>, expand the <strong>Inputs</strong> section.</p></li>
-<li><p>Add the following input layers:</p>
+<li><p>Add the following input layers with type constraints:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code> → <strong>Label</strong>: <code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Track</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Raster</span> <span class="pre">Layer</span></code> → <strong>Label</strong>: <code class="docutils literal notranslate"><span class="pre">Population</span> <span class="pre">Raster</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code> → <strong>Label</strong>: <code class="docutils literal notranslate"><span class="pre">Admin</span> <span class="pre">Boundaries</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code></p>
+<ul>
+<li><p><strong>Label</strong>: <code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Track</span></code></p></li>
+<li><p>In the <strong>Advanced panel</strong>, set <strong>geometry type</strong> to <code class="docutils literal notranslate"><span class="pre">Line</span></code></p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Raster</span> <span class="pre">Layer</span></code></p>
+<ul>
+<li><p><strong>Label</strong>: <code class="docutils literal notranslate"><span class="pre">Population</span> <span class="pre">Raster</span></code></p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code></p>
+<ul>
+<li><p><strong>Label</strong>: <code class="docutils literal notranslate"><span class="pre">Admin</span> <span class="pre">Boundaries</span></code></p></li>
+<li><p>In the <strong>Advanced panel</strong>, set <strong>geometry type</strong> to <code class="docutils literal notranslate"><span class="pre">Polygon</span></code></p></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><p>These will appear at the top of your model canvas and serve as the input data when the model is run.</p>
@@ -896,10 +912,9 @@ To do this, we’ll apply a <strong>graduated classification</strong> to the <co
 <li><p>From the <strong>Algorithms</strong> panel, search for <strong>Reproject Layer</strong> and drag it into the model canvas.</p></li>
 <li><p>In the configuration window:</p>
 <ul>
-<li><p>First, set <strong>Input layer</strong> to <strong>Model Input</strong>, then select <code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Track</span></code>.</p></li>
+<li><p>Set <strong>Input layer</strong> to <code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Track</span></code> (from <strong>Model Input</strong>).</p></li>
 <li><p>Set <strong>Target CRS</strong> to <code class="docutils literal notranslate"><span class="pre">EPSG:29738</span> <span class="pre">–</span> <span class="pre">Madagascar</span> <span class="pre">/</span> <span class="pre">Laborde</span> <span class="pre">Grid</span></code>.</p></li>
-<li><p>In the <strong>Reprojected</strong> section, which defines the output, set it to <strong>Algorithm output</strong>.<br />
-This means that the result will be used in the next step but will <strong>not</strong> be the final output of the model.</p></li>
+<li><p>Set the output to <strong>Model Output</strong> (leave the output name <strong>empty</strong>).</p></li>
 </ul>
 </li>
 <li><p>Click <strong>OK</strong> to add the step to the model.</p></li>
@@ -910,11 +925,11 @@ This means that the result will be used in the next step but will <strong>not</s
 <li><p>From the <strong>Algorithms</strong> panel, search for <strong>Buffer</strong> and drag it into the model canvas.</p></li>
 <li><p>In the configuration window:</p>
 <ul>
-<li><p>Set <strong>Input layer</strong> to <code class="docutils literal notranslate"><span class="pre">Reprojected</span></code> (the output from the previous step) by choosing it from the <strong>Algorithm output</strong> section.</p></li>
-<li><p>Set <strong>Distance</strong> to <code class="docutils literal notranslate"><span class="pre">200000</span></code> (this equals 200 km).</p></li>
-<li><p>Leave <strong>Segments</strong> at the default value (usually <code class="docutils literal notranslate"><span class="pre">5</span></code>).</p></li>
-<li><p>Set <strong>Dissolve result</strong> to <code class="docutils literal notranslate"><span class="pre">Yes</span></code> to merge overlapping buffers into one polygon.</p></li>
-<li><p>In the <strong>Buffered</strong> section (the output), set it to <strong>Algorithm output</strong> — since this is an intermediate step.</p></li>
+<li><p>Set <strong>Input layer</strong> to the output from the previous step (from <strong>Algorithm Output</strong>).</p></li>
+<li><p>Set <strong>Distance</strong> to <code class="docutils literal notranslate"><span class="pre">200000</span></code> (200 km).</p></li>
+<li><p>Leave <strong>Segments</strong> at the default value (<code class="docutils literal notranslate"><span class="pre">5</span></code>).</p></li>
+<li><p>Set <strong>Dissolve result</strong> to <code class="docutils literal notranslate"><span class="pre">Yes</span></code>.</p></li>
+<li><p>Set the output to <strong>Model Output</strong> (leave the output name <strong>empty</strong>).</p></li>
 </ul>
 </li>
 <li><p>Click <strong>OK</strong> to add the step to the model.</p></li>
@@ -925,51 +940,206 @@ This means that the result will be used in the next step but will <strong>not</s
 <li><p>From the <strong>Algorithms</strong> panel, search for <strong>Reproject Layer</strong> and drag it into the model canvas.</p></li>
 <li><p>In the configuration window:</p>
 <ul>
-<li><p>Set <strong>Input layer</strong> to <code class="docutils literal notranslate"><span class="pre">Buffered</span></code> (the output from the previous step) by selecting it under <strong>Algorithm output</strong>.</p></li>
-<li><p>Set <strong>Target CRS</strong> to <code class="docutils literal notranslate"><span class="pre">EPSG:4326</span> <span class="pre">–</span> <span class="pre">WGS</span> <span class="pre">84</span></code> (to match the CRS of the population raster).</p></li>
-<li><p>Set this output to <strong>Algorithm output</strong>, as it will be used in the next processing step.</p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><strong>Clip the population raster using the buffered area</strong></p></li>
-</ol>
-<ul class="simple">
-<li><p>From the <strong>Algorithms</strong> panel, search for <strong>Clip Raster by Mask Layer</strong> and drag it into the model canvas.</p></li>
-<li><p>In the configuration window:</p>
-<ul>
-<li><p>Set <strong>Input layer</strong> to <code class="docutils literal notranslate"><span class="pre">Population</span> <span class="pre">Raster</span></code> by selecting it under <strong>Model Input</strong>.</p></li>
-<li><p>Set <strong>Mask layer</strong> to the output from the previous step (<code class="docutils literal notranslate"><span class="pre">Reprojected</span></code>, which is the buffer in EPSG:4326) by selecting it under <strong>Algorithm output</strong>.</p></li>
-<li><p>In the <strong>Clipped</strong> section (the output), set it to <strong>Algorithm output</strong>, as this is still an intermediate result.</p></li>
+<li><p>Set <strong>Input layer</strong> to the output from the previous step (from <strong>Algorithm Output</strong>).</p></li>
+<li><p>Set <strong>Target CRS</strong> to <code class="docutils literal notranslate"><span class="pre">EPSG:4326</span> <span class="pre">–</span> <span class="pre">WGS</span> <span class="pre">84</span></code>.</p></li>
+<li><p>Set the output to <strong>Model Output</strong> (leave the output name <strong>empty</strong>).</p></li>
 </ul>
 </li>
 <li><p>Click <strong>OK</strong> to add the step to the model.</p></li>
 </ul>
-<ol class="arabic simple" start="9">
+</li>
+<li><p><strong>Clip the population raster using the buffered area</strong></p>
+<ul class="simple">
+<li><p>From the <strong>Algorithms</strong> panel, search for <strong>Clip Raster by Mask Layer</strong> and drag it into the model canvas.</p></li>
+<li><p>In the configuration window:</p>
+<ul>
+<li><p>Set <strong>Input layer</strong> to <code class="docutils literal notranslate"><span class="pre">Population</span> <span class="pre">Raster</span></code> (from <strong>Model Input</strong>).</p></li>
+<li><p>Set <strong>Mask layer</strong> to the output from the previous step (from <strong>Algorithm Output</strong>).</p></li>
+<li><p>Set the output to <strong>Model Output</strong> (leave the output name <strong>empty</strong>).</p></li>
+</ul>
+</li>
+<li><p>Click <strong>OK</strong> to add the step to the model.</p></li>
+</ul>
+</li>
 <li><p><strong>Calculate zonal statistics to estimate exposed population</strong></p>
 <ul class="simple">
 <li><p>From the <strong>Algorithms</strong> panel, search for <strong>Zonal Statistics</strong> and drag it into the model canvas.</p></li>
 <li><p>In the configuration window:</p>
 <ul>
-<li><p>Set <strong>Input layer</strong> to <code class="docutils literal notranslate"><span class="pre">Admin</span> <span class="pre">Boundaries</span></code> by selecting it from <strong>Model Input</strong>.</p></li>
-<li><p>Set <strong>Raster layer</strong> to the output of the previous step (<code class="docutils literal notranslate"><span class="pre">Clipped</span> <span class="pre">(mask)</span> <span class="pre">from</span> <span class="pre">algorithm</span> <span class="pre">&quot;Clip</span> <span class="pre">raster</span> <span class="pre">by</span> <span class="pre">mask&quot;</span></code>) by selecting it from the <strong>Algorithm output</strong> section.</p></li>
+<li><p>Set <strong>Input layer</strong> to <code class="docutils literal notranslate"><span class="pre">Admin</span> <span class="pre">Boundaries</span></code> (from <strong>Model Input</strong>).</p></li>
+<li><p>Set <strong>Raster layer</strong> to the output of the previous step (from <strong>Algorithm Output</strong>).</p></li>
 <li><p>Set <strong>Output column prefix</strong> to <code class="docutils literal notranslate"><span class="pre">pop_</span></code>.</p></li>
 <li><p>Under <strong>Statistics to calculate</strong>, select <code class="docutils literal notranslate"><span class="pre">Sum</span></code>.</p></li>
-<li><p>Leave the <strong>Output</strong> field (called <code class="docutils literal notranslate"><span class="pre">Statistics</span></code> or similar) as <strong>Model output</strong>, since this  the final model output. Name it to</p></li>
+<li><p>Set the output to <strong>Model Output</strong> and name it: <code class="docutils literal notranslate"><span class="pre">Exposed_Population</span></code></p></li>
 </ul>
 </li>
 <li><p>Click <strong>OK</strong> to add the step to the model.</p></li>
 </ul>
 </li>
+<li><p><strong>Validate your model (recommended)</strong></p></li>
+</ol>
+<ul class="simple">
+<li><p>Before saving or running, click the ✔️ <strong>Validate Model</strong> button in the top toolbar.</p></li>
+<li><p>Fix any warnings or errors shown in the log panel.</p></li>
+<li><p>This helps ensure your model is complete and won’t break during execution.</p></li>
+</ul>
+<ol class="arabic simple" start="11">
 <li><p><strong>Save your completed model</strong></p></li>
 </ol>
 <ul class="simple">
-<li><p>Once your model is finished and the final output is set, don’t forget to save your work.</p></li>
+<li><p>Once your model is finished and the final output is set, save your work.</p></li>
 <li><p>Click the <strong>Save</strong> icon (💾) or go to <code class="docutils literal notranslate"><span class="pre">Model</span></code> → <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
 <li><p>Navigate to the <strong><code class="docutils literal notranslate"><span class="pre">project</span></code> folder</strong> of your training structure.</p></li>
 <li><p>Save the model as:<br />
 <strong><code class="docutils literal notranslate"><span class="pre">Estimate_Exposed_Population.model3</span></code></strong></p></li>
-<li><p>You can now run this model any time a new cyclone track becomes available.</p></li>
+</ul>
+<p>You can now run this model any time a new cyclone track becomes available.</p>
+</section>
+<section id="task-3-identifying-affected-health-facilities-and-schools-aina-adds-more-layers">
+<h2>🛠️ Task 3: Identifying Affected Health Facilities and Schools – Aina Adds More Layers<a class="headerlink" href="#task-3-identifying-affected-health-facilities-and-schools-aina-adds-more-layers" title="Permalink to this heading">#</a></h2>
+<p>After building her model to estimate exposed population, Aina wants to expand its usefulness. She decides to also <strong>identify critical services</strong> affected by cyclones — especially <strong>health facilities</strong> and <strong>schools</strong>.</p>
+<p>Not only does she want to know <em>which</em> facilities are affected, but also <em>how many in total exist</em> per district. That way, she can calculate the <strong>percentage of services affected</strong> in each area — a valuable insight for prioritizing early actions.</p>
+<p>To achieve this, she will use two point datasets from OpenStreetMap:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://data.humdata.org/dataset/hotosm_mdg_health_facilities">Health facilities</a></p></li>
+<li><p><a class="reference external" href="https://data.humdata.org/dataset/hotosm_mdg_education_facilities">Education facilities</a></p></li>
+</ul>
+<ol class="arabic simple">
+<li><p><strong>Save your model under a new name</strong></p>
+<ul class="simple">
+<li><p>Open your existing model <code class="docutils literal notranslate"><span class="pre">Estimate_Exposed_Population.model3</span></code>.</p></li>
+<li><p>Immediately save it under a new name:</p>
+<ul>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Model</span></code> → <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">As…</span></code></p></li>
+<li><p>Save it to the <code class="docutils literal notranslate"><span class="pre">project</span></code> folder as:<br />
+<strong><code class="docutils literal notranslate"><span class="pre">Estimate_Exposed_Population_Health_Education.model3</span></code></strong></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Add new model inputs</strong></p>
+<ul class="simple">
+<li><p>In the <strong>Inputs</strong> section, add:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code></p>
+<ul>
+<li><p><strong>Label</strong>: <code class="docutils literal notranslate"><span class="pre">Health</span> <span class="pre">Facilities</span></code></p></li>
+<li><p>Set <strong>Geometry Type</strong> to <code class="docutils literal notranslate"><span class="pre">Point</span></code></p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code></p>
+<ul>
+<li><p><strong>Label</strong>: <code class="docutils literal notranslate"><span class="pre">Education</span> <span class="pre">Facilities</span></code></p></li>
+<li><p>Set <strong>Geometry Type</strong> to <code class="docutils literal notranslate"><span class="pre">Point</span></code></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Count All Health Facilities per Admin 2</strong></p>
+<ul class="simple">
+<li><p>From the <strong>Algorithms</strong> panel, search for <strong>Count Points in Polygon</strong> and drag it in.</p></li>
+<li><p>Configuration:</p>
+<ul>
+<li><p><strong>Polygon layer</strong>: <code class="docutils literal notranslate"><span class="pre">Admin</span> <span class="pre">Boundaries</span></code> (Model Input)</p></li>
+<li><p><strong>Points layer</strong>: full <code class="docutils literal notranslate"><span class="pre">Health</span> <span class="pre">Facilities</span></code> input</p></li>
+<li><p><strong>Count field name</strong>: <code class="docutils literal notranslate"><span class="pre">count_health_total</span></code></p></li>
+<li><p>Leave output as <strong>Model Output</strong></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Count All Education Facilities per Admin 2</strong></p>
+<ul class="simple">
+<li><p>Add another <strong>Count Points in Polygon</strong> step.</p></li>
+<li><p>Configuration:</p>
+<ul>
+<li><p><strong>Points layer</strong>: full <code class="docutils literal notranslate"><span class="pre">Education</span> <span class="pre">Facilities</span></code> input</p></li>
+<li><p><strong>Count field name</strong>: <code class="docutils literal notranslate"><span class="pre">count_education_total</span></code></p></li>
+<li><p>Leave output as <strong>Model Output</strong></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Intersect Health Facilities with Cyclone Buffer</strong></p>
+<ul class="simple">
+<li><p>From the <strong>Algorithms</strong> panel, search for <strong>Intersection</strong> and drag it into the model.</p></li>
+<li><p>In the configuration window:</p>
+<ul>
+<li><p><strong>Input layer</strong>: <code class="docutils literal notranslate"><span class="pre">Health</span> <span class="pre">Facilities</span></code> (Model Input)</p></li>
+<li><p><strong>Overlay layer</strong>: buffered cyclone zone (use “Reprojected to EPSG:4326” from <strong>Algorithm Output</strong>)</p></li>
+<li><p>Leave output as <strong>Model Output</strong></p></li>
+</ul>
+</li>
+<li><p>Click <strong>OK</strong></p></li>
+</ul>
+</li>
+<li><p><strong>Intersect Education Facilities with Cyclone Buffer</strong></p>
+<ul class="simple">
+<li><p>Add another <strong>Intersection</strong> algorithm.</p></li>
+<li><p>Configuration:</p>
+<ul>
+<li><p><strong>Input layer</strong>: <code class="docutils literal notranslate"><span class="pre">Education</span> <span class="pre">Facilities</span></code> (Model Input)</p></li>
+<li><p><strong>Overlay layer</strong>: buffered cyclone zone (use “Reprojected to EPSG:4326” from <strong>Algorithm Output</strong>)</p></li>
+<li><p>Leave output as <strong>Model Output</strong></p></li>
+</ul>
+</li>
+<li><p>Click <strong>OK</strong></p></li>
+</ul>
+</li>
+<li><p><strong>Count Affected Health Facilities per Admin 2</strong></p>
+<ul class="simple">
+<li><p>Add <strong>Count Points in Polygon</strong></p></li>
+<li><p>Configuration:</p>
+<ul>
+<li><p><strong>Polygon layer</strong>: <code class="docutils literal notranslate"><span class="pre">Admin</span> <span class="pre">Boundaries</span></code></p></li>
+<li><p><strong>Points layer</strong>: intersected health facilities output</p></li>
+<li><p><strong>Count field name</strong>: <code class="docutils literal notranslate"><span class="pre">count_health_affected</span></code></p></li>
+<li><p>Output name: <code class="docutils literal notranslate"><span class="pre">Admin2_Affected_Health_Facilities</span></code></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Count Affected Education Facilities per Admin 2</strong></p>
+<ul class="simple">
+<li><p>Add <strong>Count Points in Polygon</strong></p></li>
+<li><p>Configuration:</p>
+<ul>
+<li><p><strong>Points layer</strong>: intersected education facilities output</p></li>
+<li><p><strong>Count field name</strong>: <code class="docutils literal notranslate"><span class="pre">count_education_affected</span></code></p></li>
+<li><p>Output name: <code class="docutils literal notranslate"><span class="pre">Admin2_Affected_Education_Facilities</span></code></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Validate and Save Your Extended Model</strong></p>
+<ul class="simple">
+<li><p>Click the ✔️ <strong>Validate Model</strong> button to check for errors.</p></li>
+<li><p>Save again to:<br />
+<strong><code class="docutils literal notranslate"><span class="pre">Estimate_Exposed_Population_Health_Education.model3</span></code></strong></p></li>
+</ul>
+</li>
+<li><p><strong>Run the model</strong></p></li>
+</ol>
+<ul class="simple">
+<li><p>Click the ▶️ <strong>Run</strong> button in the top-right corner of the Graphical Modeler window.</p></li>
+<li><p>In the popup dialog:</p>
+<ul>
+<li><p>Browse to select the required input layers:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Track</span></code> → select the GeoJSON of the storm path (e.g. <code class="docutils literal notranslate"><span class="pre">Harald_2025_Track.geojson</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Population</span> <span class="pre">Raster</span></code> → select the WorldPop raster file</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Admin</span> <span class="pre">Boundaries</span></code> → select the Admin 2 layer (e.g. <code class="docutils literal notranslate"><span class="pre">MDG_adm2.gpkg</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Health</span> <span class="pre">Facilities</span></code> → select the point dataset for health sites</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Education</span> <span class="pre">Facilities</span></code> → select the point dataset for schools</p></li>
+</ul>
+</li>
+<li><p>Choose a location to save the output for the final layers (you can leave intermediate layers in temporary memory).</p></li>
+</ul>
+</li>
+<li><p>Click <strong>Run</strong> to execute the full model.</p></li>
+<li><p>When finished, you should see all final output layers loaded into your QGIS workspace.</p></li>
 </ul>
 </section>
 </section>
@@ -1024,6 +1194,7 @@ This means that the result will be used in the next step but will <strong>not</s
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks-estimating-exposed-population-ainas-manual-approach">Tasks: Estimating Exposed Population – Aina’s Manual Approach</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-automatisation-of-estimating-exposed-population-aina-s-model">🛠️ Task 2: Automatisation of Estimating Exposed Population – Aina’s Model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-identifying-affected-health-facilities-and-schools-aina-adds-more-layers">🛠️ Task 3: Identifying Affected Health Facilities and Schools – Aina Adds More Layers</a></li>
 </ul>
   </nav></div>
 

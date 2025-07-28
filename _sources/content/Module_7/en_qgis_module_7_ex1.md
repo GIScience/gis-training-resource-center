@@ -227,6 +227,7 @@ align: center
 ---
 ```
 
+
 ## 🛠️ Task 2: Automatisation of Estimating Exposed Population – Aina's Model
 
 After manually estimating exposed populations in past cyclone seasons, Aina has decided to prepare an **automated model** using the **QGIS Graphical Modeller**. This will help her move faster and avoid repeating the same steps manually each time a cyclone is forecasted.
@@ -239,15 +240,18 @@ In this task, you will help Aina build a simple version of that model using the 
 - Clip the population raster  
 - Run Zonal Statistics to get exposed population per district
 
+---
 
 1. **Set up the model structure**:
    - Open the **Graphical Modeler** from the top menu:  
      `Processing` → `Graphical Modeler…`
+
 2. **Naming the model**:   
    - A new model window will open. On the **left side**, click on **`Model Properties`** to define basic information about the model:
      - **Model Name**: `Estimate_Exposed_Population`
      - **Group**: `Cyclone Trigger Tools`
      - Leave the description empty or write: _“Automated model to estimate exposed population based on cyclone buffer.”_
+
 3. **Save the model**
    - To save the model:
      - Click the **Save** icon (💾) or go to `Model` → `Save`.
@@ -257,57 +261,160 @@ In this task, you will help Aina build a simple version of that model using the 
 
 4. **Add model inputs**:  
    - On the **left panel**, expand the **Inputs** section.
-   - Add the following input layers:
-     - `+ Vector Layer` → **Label**: `Cyclone Track`
-     - `+ Raster Layer` → **Label**: `Population Raster`
-     - `+ Vector Layer` → **Label**: `Admin Boundaries`
+   - Add the following input layers with type constraints:
+     - `+ Vector Layer`  
+       - **Label**: `Cyclone Track`  
+       - In the **Advanced panel**, set **geometry type** to `Line`
+     - `+ Raster Layer`  
+       - **Label**: `Population Raster`
+     - `+ Vector Layer`  
+       - **Label**: `Admin Boundaries`  
+       - In the **Advanced panel**, set **geometry type** to `Polygon`
    - These will appear at the top of your model canvas and serve as the input data when the model is run.
-       ```{tip}
-         All inputs should be set as **mandatory**, so the model always receives the necessary data to run correctly.
+
+     ```{tip}
+     All inputs should be set as **mandatory**, so the model always receives the necessary data to run correctly.
+     ```
+
 5. **Reproject the cyclone track to EPSG:29738**  
    - From the **Algorithms** panel, search for **Reproject Layer** and drag it into the model canvas.
    - In the configuration window:
-     - First, set **Input layer** to **Model Input**, then select `Cyclone Track`.
+     - Set **Input layer** to `Cyclone Track` (from **Model Input**).
      - Set **Target CRS** to `EPSG:29738 – Madagascar / Laborde Grid`.
-     - In the **Reprojected** section, which defines the output, set it to **Algorithm output**.  
-       This means that the result will be used in the next step but will **not** be the final output of the model.
+     - Set the output to **Model Output** (leave the output name **empty**).
    - Click **OK** to add the step to the model.
+
 6. **Buffer the reprojected cyclone track**  
    - From the **Algorithms** panel, search for **Buffer** and drag it into the model canvas.
    - In the configuration window:
-     - Set **Input layer** to `Reprojected` (the output from the previous step) by choosing it from the **Algorithm output** section.
-     - Set **Distance** to `200000` (this equals 200 km).
-     - Leave **Segments** at the default value (usually `5`).
-     - Set **Dissolve result** to `Yes` to merge overlapping buffers into one polygon.
-     - In the **Buffered** section (the output), set it to **Algorithm output** — since this is an intermediate step.
+     - Set **Input layer** to the output from the previous step (from **Algorithm Output**).
+     - Set **Distance** to `200000` (200 km).
+     - Leave **Segments** at the default value (`5`).
+     - Set **Dissolve result** to `Yes`.
+     - Set the output to **Model Output** (leave the output name **empty**).
    - Click **OK** to add the step to the model.
+
 7. **Reproject the buffer back to EPSG:4326**  
    - From the **Algorithms** panel, search for **Reproject Layer** and drag it into the model canvas.
    - In the configuration window:
-      - Set **Input layer** to `Buffered` (the output from the previous step) by selecting it under **Algorithm output**.
-     - Set **Target CRS** to `EPSG:4326 – WGS 84` (to match the CRS of the population raster).
-     - Set this output to **Algorithm output**, as it will be used in the next processing step.
- 8. **Clip the population raster using the buffered area**  
+     - Set **Input layer** to the output from the previous step (from **Algorithm Output**).
+     - Set **Target CRS** to `EPSG:4326 – WGS 84`.
+     - Set the output to **Model Output** (leave the output name **empty**).
+   - Click **OK** to add the step to the model.
+
+8. **Clip the population raster using the buffered area**  
    - From the **Algorithms** panel, search for **Clip Raster by Mask Layer** and drag it into the model canvas.
    - In the configuration window:
-     - Set **Input layer** to `Population Raster` by selecting it under **Model Input**.
-     - Set **Mask layer** to the output from the previous step (`Reprojected`, which is the buffer in EPSG:4326) by selecting it under **Algorithm output**.
-     - In the **Clipped** section (the output), set it to **Algorithm output**, as this is still an intermediate result.
+     - Set **Input layer** to `Population Raster` (from **Model Input**).
+     - Set **Mask layer** to the output from the previous step (from **Algorithm Output**).
+     - Set the output to **Model Output** (leave the output name **empty**).
    - Click **OK** to add the step to the model.
+
 9. **Calculate zonal statistics to estimate exposed population**  
    - From the **Algorithms** panel, search for **Zonal Statistics** and drag it into the model canvas.
    - In the configuration window:
-     - Set **Input layer** to `Admin Boundaries` by selecting it from **Model Input**.
-     - Set **Raster layer** to the output of the previous step (`Clipped (mask) from algorithm "Clip raster by mask"`) by selecting it from the **Algorithm output** section.
+     - Set **Input layer** to `Admin Boundaries` (from **Model Input**).
+     - Set **Raster layer** to the output of the previous step (from **Algorithm Output**).
      - Set **Output column prefix** to `pop_`.
      - Under **Statistics to calculate**, select `Sum`.
-     - Leave the **Output** field (called `Statistics` or similar) as **Model output**, since this  the final model output. Name it to 
+     - Set the output to **Model Output** and name it: `Exposed_Population`
    - Click **OK** to add the step to the model.
+
+10. **Validate your model (recommended)**
+   - Before saving or running, click the ✔️ **Validate Model** button in the top toolbar.
+   - Fix any warnings or errors shown in the log panel.
+   - This helps ensure your model is complete and won't break during execution.
+
 11. **Save your completed model**  
-   - Once your model is finished and the final output is set, don’t forget to save your work.
+   - Once your model is finished and the final output is set, save your work.
    - Click the **Save** icon (💾) or go to `Model` → `Save`.
    - Navigate to the **`project` folder** of your training structure.
    - Save the model as:  
      **`Estimate_Exposed_Population.model3`**
-   - You can now run this model any time a new cyclone track becomes available.
+
+You can now run this model any time a new cyclone track becomes available.
+
+
+## 🛠️ Task 3: Identifying Affected Health Facilities and Schools – Aina Adds More Layers
+
+After building her model to estimate exposed population, Aina wants to expand its usefulness. She decides to also **identify critical services** affected by cyclones — especially **health facilities** and **schools**. 
+
+Not only does she want to know *which* facilities are affected, but also *how many in total exist* per district. That way, she can calculate the **percentage of services affected** in each area — a valuable insight for prioritizing early actions.
+
+To achieve this, she will use two point datasets from OpenStreetMap:
+
+- [Health facilities](https://data.humdata.org/dataset/hotosm_mdg_health_facilities)  
+- [Education facilities](https://data.humdata.org/dataset/hotosm_mdg_education_facilities)
+
+1. **Save your model under a new name**  
+   - Open your existing model `Estimate_Exposed_Population.model3`.
+   - Immediately save it under a new name:
+     - Click `Model` → `Save As…`
+     - Save it to the `project` folder as:  
+       **`Estimate_Exposed_Population_Health_Education.model3`**
+2. **Add new model inputs**  
+   - In the **Inputs** section, add:
+     - `+ Vector Layer`  
+       - **Label**: `Health Facilities`  
+       - Set **Geometry Type** to `Point`
+     - `+ Vector Layer`  
+       - **Label**: `Education Facilities`  
+       - Set **Geometry Type** to `Point`
+3. **Count All Health Facilities per Admin 2**  
+   - From the **Algorithms** panel, search for **Count Points in Polygon** and drag it in.
+   - Configuration:
+     - **Polygon layer**: `Admin Boundaries` (Model Input)
+     - **Points layer**: full `Health Facilities` input
+     - **Count field name**: `count_health_total`
+     - Leave output as **Model Output**
+4. **Count All Education Facilities per Admin 2**  
+   - Add another **Count Points in Polygon** step.
+   - Configuration:
+     - **Points layer**: full `Education Facilities` input
+     - **Count field name**: `count_education_total`
+     - Leave output as **Model Output**
+5. **Intersect Health Facilities with Cyclone Buffer**  
+   - From the **Algorithms** panel, search for **Intersection** and drag it into the model.
+   - In the configuration window:
+     - **Input layer**: `Health Facilities` (Model Input)
+     - **Overlay layer**: buffered cyclone zone (use “Reprojected to EPSG:4326” from **Algorithm Output**)
+     - Leave output as **Model Output** 
+   - Click **OK**
+6. **Intersect Education Facilities with Cyclone Buffer**  
+   - Add another **Intersection** algorithm.
+   - Configuration:
+     - **Input layer**: `Education Facilities` (Model Input)
+     - **Overlay layer**: buffered cyclone zone (use “Reprojected to EPSG:4326” from **Algorithm Output**)
+     - Leave output as **Model Output**
+   - Click **OK**
+7. **Count Affected Health Facilities per Admin 2**  
+   - Add **Count Points in Polygon**
+   - Configuration:
+     - **Polygon layer**: `Admin Boundaries`
+     - **Points layer**: intersected health facilities output
+     - **Count field name**: `count_health_affected`
+     - Output name: `Admin2_Affected_Health_Facilities`
+8. **Count Affected Education Facilities per Admin 2**  
+   - Add **Count Points in Polygon**
+   - Configuration:
+     - **Points layer**: intersected education facilities output
+     - **Count field name**: `count_education_affected`
+     - Output name: `Admin2_Affected_Education_Facilities`
+9. **Validate and Save Your Extended Model**  
+   - Click the ✔️ **Validate Model** button to check for errors.
+   - Save again to:  
+     **`Estimate_Exposed_Population_Health_Education.model3`**
+10. **Run the model**
+   - Click the ▶️ **Run** button in the top-right corner of the Graphical Modeler window.
+   - In the popup dialog:
+     - Browse to select the required input layers:
+       - `Cyclone Track` → select the GeoJSON of the storm path (e.g. `Harald_2025_Track.geojson`)
+       - `Population Raster` → select the WorldPop raster file
+       - `Admin Boundaries` → select the Admin 2 layer (e.g. `MDG_adm2.gpkg`)
+       - `Health Facilities` → select the point dataset for health sites
+       - `Education Facilities` → select the point dataset for schools
+     - Choose a location to save the output for the final layers (you can leave intermediate layers in temporary memory).
+   - Click **Run** to execute the full model.
+   - When finished, you should see all final output layers loaded into your QGIS workspace.
+
 
