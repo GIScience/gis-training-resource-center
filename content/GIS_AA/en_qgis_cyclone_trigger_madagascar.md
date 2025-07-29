@@ -552,27 +552,29 @@ When you have finished the design of you map you can export it as pdf or image f
 __Export as Image__
 
 1. In the print layout click on `Layer` -> `Export as Image`
-2. Choose the __Map_outputs__ folder. Give the file the name of the event e.g storm_track_Freddy_2023_overview (if its the impact map change insert this instead of overview).
+2. Choose the __map_outputs__ folder. Give the file the name of the event e.g **MAD_Trigger_Impact_Overview_Map_Freddy_2023**. For the specific impact assessment change the name to something like **MAD_Trigger_Impact_Population_Map_Freddy_2023**.
 3. Click on `Save`
-4. The window `Image Export Options` will appear. Click `Save`
+4. The window `Image Export Options` will appear. Click `Save`.
 Now the image can be found in the result folder.
 
 
 __Export as PDF__
 
 1. In the print layout click on `Layer` -> `Export as PDF`
-2. Choose the __Map_outputs__ folder. Give the file the name of the event e.g storm_track_Freddy_2023_overview (if its the impact map change insert this instead of overview).
+2. Choose the __map_outputs__ folder. Give the file the name of the event e.g **MAD_Trigger_Impact_Overview_Map_Freddy_2023**. For the specific impact assessment change the name to something like **MAD_Trigger_Impact_Population_Map_Freddy_2023**.
 3. Click on `Save`
 4. The window `PDF Export Options` will appear. For the best results, select the `lossless` image compression.
-5. Click `Save`
+5. Click `Save`.
 Now the image can be found in the result folder.
+
+<!-- Maybe add a video. Might not be necessary
 
 ```{dropdown} Video: Export image and PDF
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_trigger_export_image_pdf.mp4"></video>
 ```
+-->
 
-
-```{figure} /fig/MAD_trigger_overview.png
+```{figure} /fig/MAD_Trigger_Impact_Buildings_Map.png
 ---
 width: 1000px
 name: Impact of Cyclone Event Freddy 2023
