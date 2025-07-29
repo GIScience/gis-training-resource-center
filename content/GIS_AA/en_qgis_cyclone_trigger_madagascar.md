@@ -151,7 +151,7 @@ __Tool:__ No special tools or programs are needed
 
 ## Step 2: Open the project in QGIS and load the model in the QGIS Model Designer
 
-```{figure} /fig/MAD_Trigger_workflow_Step3.png
+```{figure} /fig/MAD_Trigger_workflow_Step2.png
 ---
 width: 1000px
 name: 
@@ -243,7 +243,7 @@ Now we continue working with the model:
 
 ## Step 3: Run the model
 
-```{figure} /fig/MAD_Trigger_workflow_Step4.png
+```{figure} /fig/MAD_Trigger_workflow_Step3.png
 ---
 width: 1000px
 name: 
@@ -351,7 +351,7 @@ We will generate two different types of output maps to support the analysis:
 Additionally, a map showing the **warehouse isochrones** for all 13 warehouses will be provided. The map and the map template can be found in the **warehouse_isochrone_matrix** folder.
 
 
-```{figure} /fig/MAD_Trigger_workflow_Step5.png
+```{figure} /fig/MAD_Trigger_workflow_Step4.png
 ---
 width: 1000px
 name: 
@@ -472,7 +472,7 @@ Only the impact layer changes; all other map settings remain the same.
 
 ## Step 5: Making the Print Map
 
-```{figure} /fig/MAD_Trigger_workflow_Step6.png
+```{figure} /fig/MAD_Trigger_workflow_Step5.png
 ---
 width: 1000px
 name: 
@@ -537,7 +537,7 @@ For easier visualization, we have created these [map templates](https://giscienc
 
 ## Step 6: Exporting the Map 
 
-```{figure} /fig/MAD_Trigger_workflow_Step7.png
+```{figure} /fig/MAD_Trigger_workflow_Step6.png
 ---
 width: 1000px
 name: 
