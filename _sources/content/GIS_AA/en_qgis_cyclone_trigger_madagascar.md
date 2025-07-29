@@ -1,5 +1,7 @@
 # QGIS Trigger Workflow for Madagascar 
 
+<!-- Maybe have a final look over introduction and all the official stuff which should be included in the documentation -->
+
 The QGIS workflow presented in this article was developed in the framework of the Anticipatory-Action (AA) Project of the Croix-Rouge Malagasy (CRM), the German Red Cross (GRC) and the Heidelberg Institute for Geoinformation Technology (HeiGIT).
 
 The workflow is almost fully automated through a QGIS model, requiring no manual intervention. The chapter Automated Trigger Workflow outlines the process and its practical implementation. Each step included in the model is explained in detail to provide a complete understanding of the workflow and how the analysis was carried out.
@@ -16,7 +18,7 @@ Setting triggers is one of the cornerstones of the Forecast-based Financing syst
 
 # Functionality of the Trigger Workflow
 
-{ref}`fig-trigger-concept` is displayed in the figure below.
+The Trigger Process concept is displayed in the figure below.
 
 ```{figure} /fig/MAD_Trigger_concept.png
 ---
@@ -24,10 +26,9 @@ width: 1000px
 name: fig-trigger-concept
 align: center
 ---
-The Trigger Process concept.
 ```
 
-The entire trigger workflow will be run in a QGIS model, which automates the spatial analysis for assessing the impact of tropical cyclones. It integrates cyclone storm track data with administrative boundaries, population data, infrastructure, and service locations to identify and quantify affected areas and resources. 
+The entire trigger workflow will be run in a QGIS model, which automates the spatial analysis for assessing the impact of tropical cyclones. It integrates cyclone storm track data with administrative boundaries, population data, infrastructure, and service locations to identify and quantify exposed areas and resources. 
 
 ## Trigger Input Data
 
@@ -58,11 +59,15 @@ The three raster datasets are combined into a **Master Raster** — a multi-band
 
 ### Monitoring Data
 
+```{admonition} Attention
+:class: attention
+
 The forecast information will be sourced from DGM (Météo Madagascar), which will provide tropical cyclone track data for the trigger workflow.
+```
 
 For an analysis of past events, data provided by NOAA (National Centers for Environmental Information) can be used. The cyclone storm tracks are provided within the [International Best Track Archive for Climate Stewardship (IBTrACS)](https://www.ncei.noaa.gov/products/international-best-track-archive) project. It is the most complete global collection of tropical cyclones available and merges recent and historical tropical cyclone data from multiple agencies to create a unified, publicly available, best-track dataset. IBTrACS was developed collaboratively with all the World Meteorological Organization (WMO) Regional Specialized Meteorological Centres, as well as other organizations and individuals from around the world.
 
-:::{admonition} Master Raster
+:::{admonition} Cyclone tracks
 :class: hint
 
 Tropical cyclone track data is available in various subsets, depending on the temporal scale of interest. Regional subsets can also be generated, with data for the **South Indian Ocean** being particularly relevant for this trigger mechanism.
@@ -75,31 +80,27 @@ As explained at the start of this chapter the developed trigger workflow is done
 
 ## Functionality of the model
 
+<!-- Have a final look over this section to see if all the important information is covered -->
+
 The following key processing steps are run inside the model:
 
 1. Cyclone Buffering & Impact Area Extraction
-The new cyclone track is buffered to create a zone of potential impact. This buffer is dissolved to form a single affected area polygon. The resulting layer is the output cyclone area, used throughout the rest of the model.
+    * The input cyclone track is buffered to create an estimated zone of impact. The buffer is dissolved to generate a single polygon representing the exposed cyclone area. This layer serves as the base for subsequent exposure calculations.
 
 2. Administrative Units Affected
-Admin 2 (district-level) polygons are intersected with the cyclone buffer to extract the Affected districts. Admin 1 (region-level) boundaries are also extracted and used to identify neighboring regions that may still be at risk.
+    * The buffered cyclone area is intersected with Admin 2 boundaries to extract the exposed districts. These are further linked with Admin 1 regions using the Admin 1 names attribute to structure exposed districts by region. This hierarchy is used for reporting and map layout purposes.
 
 3. Population Impact
-Zonal statistics are used to calculate the total affected population within the cyclone area. The result is saved as Affected Population and exported to a spreadsheet.
+    * The model uses the population raster to calculate zonal statistics over the exposed districts. This determines the total population per district and the exposed population, which is then exported to a table.
 
 4. Infrastructure Impact
-The model intersects the cyclone area with:
-- Building data to count number of affected buildings.
-- POIs (Points of interest) to identify affected education facilities and health site infrastructure.
-The results are exported as:
-- Affected Buildings
-- Affected POIs Table, including a count of impacted education and health sites.
+    * The cyclone buffer is intersected with:
+        * Buildings to extract exposed buildings.
+        * Health sites and education facilities layers to extract and summarize exposed points of interest.
+    These datasets are combined into a table, summarizing exposed infrastructure.
 
 5. Warehouse Accessibility
-Using the affected regions and buffered road data, the model identifies:
-- Relevant Technicians
-- Warehouses within reach of the affected area.
-The output layer is relevant warehouses, indicating logistical support readiness.
-
+    * Warehouses are filtered based on proximity to exposed regions. The model uses road data and spatial filters to determine accessible warehouses relevant to the response.
 
 ## How to run the model
 

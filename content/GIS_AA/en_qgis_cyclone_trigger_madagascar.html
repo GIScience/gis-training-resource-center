@@ -607,6 +607,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="qgis-trigger-workflow-for-madagascar">
 <h1>QGIS Trigger Workflow for Madagascar<a class="headerlink" href="#qgis-trigger-workflow-for-madagascar" title="Permalink to this heading">#</a></h1>
+<!-- Maybe have a final look over introduction and all the official stuff which should be included in the documentation -->
 <p>The QGIS workflow presented in this article was developed in the framework of the Anticipatory-Action (AA) Project of the Croix-Rouge Malagasy (CRM), the German Red Cross (GRC) and the Heidelberg Institute for Geoinformation Technology (HeiGIT).</p>
 <p>The workflow is almost fully automated through a QGIS model, requiring no manual intervention. The chapter Automated Trigger Workflow outlines the process and its practical implementation. Each step included in the model is explained in detail to provide a complete understanding of the workflow and how the analysis was carried out.</p>
 <section id="background">
@@ -621,14 +622,11 @@ document.write(`
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="functionality-of-the-trigger-workflow">
 <h1>Functionality of the Trigger Workflow<a class="headerlink" href="#functionality-of-the-trigger-workflow" title="Permalink to this heading">#</a></h1>
-<p><a class="reference internal" href="#fig-trigger-concept"><span class="std std-ref">The Trigger Process concept.</span></a> is displayed in the figure below.</p>
+<p>The Trigger Process concept is displayed in the figure below.</p>
 <figure class="align-center" id="fig-trigger-concept">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_concept.png"><img alt="../../_images/MAD_Trigger_concept.png" src="../../_images/MAD_Trigger_concept.png" style="width: 1000px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 56 </span><span class="caption-text">The Trigger Process concept.</span><a class="headerlink" href="#fig-trigger-concept" title="Permalink to this image">#</a></p>
-</figcaption>
 </figure>
-<p>The entire trigger workflow will be run in a QGIS model, which automates the spatial analysis for assessing the impact of tropical cyclones. It integrates cyclone storm track data with administrative boundaries, population data, infrastructure, and service locations to identify and quantify affected areas and resources.</p>
+<p>The entire trigger workflow will be run in a QGIS model, which automates the spatial analysis for assessing the impact of tropical cyclones. It integrates cyclone storm track data with administrative boundaries, population data, infrastructure, and service locations to identify and quantify exposed areas and resources.</p>
 <section id="trigger-input-data">
 <h2>Trigger Input Data<a class="headerlink" href="#trigger-input-data" title="Permalink to this heading">#</a></h2>
 <p>For the trigger mechanism to work properly we currently use different datasets: data that we assume to be fixed in the near term, and variable data which describe the datasets that will be checked for triggering on a regular basis depending on the occurrence of anticipated cyclone events.</p>
@@ -681,10 +679,13 @@ document.write(`
 </section>
 <section id="monitoring-data">
 <h3>Monitoring Data<a class="headerlink" href="#monitoring-data" title="Permalink to this heading">#</a></h3>
+<div class="attention admonition">
+<p class="admonition-title">Attention</p>
 <p>The forecast information will be sourced from DGM (Météo Madagascar), which will provide tropical cyclone track data for the trigger workflow.</p>
+</div>
 <p>For an analysis of past events, data provided by NOAA (National Centers for Environmental Information) can be used. The cyclone storm tracks are provided within the <a class="reference external" href="https://www.ncei.noaa.gov/products/international-best-track-archive">International Best Track Archive for Climate Stewardship (IBTrACS)</a> project. It is the most complete global collection of tropical cyclones available and merges recent and historical tropical cyclone data from multiple agencies to create a unified, publicly available, best-track dataset. IBTrACS was developed collaboratively with all the World Meteorological Organization (WMO) Regional Specialized Meteorological Centres, as well as other organizations and individuals from around the world.</p>
 <div class="hint admonition">
-<p class="admonition-title">Master Raster</p>
+<p class="admonition-title">Cyclone tracks</p>
 <p>Tropical cyclone track data is available in various subsets, depending on the temporal scale of interest. Regional subsets can also be generated, with data for the <strong>South Indian Ocean</strong> being particularly relevant for this trigger mechanism.</p>
 </div>
 </section>
@@ -695,33 +696,41 @@ document.write(`
 <p>As explained at the start of this chapter the developed trigger workflow is done automatically by a QGIS model. In this chapter we will explain its functionality and in a subsequent step it is explained how to run the automated model.</p>
 <section id="functionality-of-the-model">
 <h2>Functionality of the model<a class="headerlink" href="#functionality-of-the-model" title="Permalink to this heading">#</a></h2>
+<!-- Have a final look over this section to see if all the important information is covered -->
 <p>The following key processing steps are run inside the model:</p>
 <ol class="arabic simple">
-<li><p>Cyclone Buffering &amp; Impact Area Extraction
-The new cyclone track is buffered to create a zone of potential impact. This buffer is dissolved to form a single affected area polygon. The resulting layer is the output cyclone area, used throughout the rest of the model.</p></li>
-<li><p>Administrative Units Affected
-Admin 2 (district-level) polygons are intersected with the cyclone buffer to extract the Affected districts. Admin 1 (region-level) boundaries are also extracted and used to identify neighboring regions that may still be at risk.</p></li>
-<li><p>Population Impact
-Zonal statistics are used to calculate the total affected population within the cyclone area. The result is saved as Affected Population and exported to a spreadsheet.</p></li>
-<li><p>Infrastructure Impact
-The model intersects the cyclone area with:</p></li>
-</ol>
+<li><p>Cyclone Buffering &amp; Impact Area Extraction</p>
 <ul class="simple">
-<li><p>Building data to count number of affected buildings.</p></li>
-<li><p>POIs (Points of interest) to identify affected education facilities and health site infrastructure.
-The results are exported as:</p></li>
-<li><p>Affected Buildings</p></li>
-<li><p>Affected POIs Table, including a count of impacted education and health sites.</p></li>
+<li><p>The input cyclone track is buffered to create an estimated zone of impact. The buffer is dissolved to generate a single polygon representing the exposed cyclone area. This layer serves as the base for subsequent exposure calculations.</p></li>
 </ul>
-<ol class="arabic simple" start="5">
-<li><p>Warehouse Accessibility
-Using the affected regions and buffered road data, the model identifies:</p></li>
-</ol>
+</li>
+<li><p>Administrative Units Affected</p>
 <ul class="simple">
-<li><p>Relevant Technicians</p></li>
-<li><p>Warehouses within reach of the affected area.
-The output layer is relevant warehouses, indicating logistical support readiness.</p></li>
+<li><p>The buffered cyclone area is intersected with Admin 2 boundaries to extract the exposed districts. These are further linked with Admin 1 regions using the Admin 1 names attribute to structure exposed districts by region. This hierarchy is used for reporting and map layout purposes.</p></li>
 </ul>
+</li>
+<li><p>Population Impact</p>
+<ul class="simple">
+<li><p>The model uses the population raster to calculate zonal statistics over the exposed districts. This determines the total population per district and the exposed population, which is then exported to a table.</p></li>
+</ul>
+</li>
+<li><p>Infrastructure Impact</p>
+<ul class="simple">
+<li><p>The cyclone buffer is intersected with:</p>
+<ul>
+<li><p>Buildings to extract exposed buildings.</p></li>
+<li><p>Health sites and education facilities layers to extract and summarize exposed points of interest.
+These datasets are combined into a table, summarizing exposed infrastructure.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Warehouse Accessibility</p>
+<ul class="simple">
+<li><p>Warehouses are filtered based on proximity to exposed regions. The model uses road data and spatial filters to determine accessible warehouses relevant to the response.</p></li>
+</ul>
+</li>
+</ol>
 </section>
 <section id="how-to-run-the-model">
 <h2>How to run the model<a class="headerlink" href="#how-to-run-the-model" title="Permalink to this heading">#</a></h2>
@@ -1182,7 +1191,7 @@ Your final output should look like this after styling the layer<div class="sd-su
 <section id="step-6-exporting-the-map">
 <h2>Step 6: Exporting the Map<a class="headerlink" href="#step-6-exporting-the-map" title="Permalink to this heading">#</a></h2>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/MAD_Trigger_workflow_Step7.png"><img alt="../../_images/MAD_Trigger_workflow_Step7.png" src="../../_images/MAD_Trigger_workflow_Step7.png" style="width: 1000px;" /></a>
+<a class="reference internal image-reference" href="fig/MAD_Trigger_workflow_Step7.png"><img alt="fig/MAD_Trigger_workflow_Step7.png" src="fig/MAD_Trigger_workflow_Step7.png" style="width: 1000px;" /></a>
 </figure>
 <p><strong>Purpose:</strong> Export the designed and finalized map layout in order to print it as a pdf or format of your choice.</p>
 <p><strong>Tool:</strong> <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout">Print Layout</a></p>
