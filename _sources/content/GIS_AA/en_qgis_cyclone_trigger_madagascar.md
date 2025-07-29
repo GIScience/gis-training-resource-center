@@ -239,6 +239,7 @@ Now we continue working with the model:
 |Green| Model Output| The results created by the model (Output layers) are automatically added to your layers panel in your QGIS project interface. |
 |Grey| Comments| The boxes are used to further explain the specific processes. |
 
+<!-- Do we need a video here? -->
 
 ## Step 3: Run the model
 
@@ -269,7 +270,7 @@ For each of these mandatory inputs, you click on the dropdown arrow and choose t
     7. Master Raster = `MAD_pop_constrained_buildings_landcover`
     8. Max_traveltime in 2 hour intervals (lead time) = `enter a number between 2 and 24`
 
-THIS ENTIRE LIST NEEDS UPDATED NAMES
+<!-- Names should be the final ones. They are given after the last model from Elias -->
 
 3. Further down, you have to specify where to save the output: 
 
@@ -315,9 +316,12 @@ THIS ENTIRE LIST NEEDS UPDATED NAMES
 
 4. Click `Run` to execute the model. The output result layers will be automatically added to the main QGIS window upon completion. Once the process has finished, you can close the `Model Designer` window. Make sure to add all newly created layers to the **Model_outputs** group in QGIS. Afterwards, relocate them to their appropriate final groups for further processing.
 
+<!-- Do we need a video here to show how to run the model?
+
 ```{dropdown} Video: Input and output Model
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/model_input_output.mp4"></video>
 ```
+-->
 
 ```{figure} /fig/MAD_Trigger_model_inputs.PNG
 ---
@@ -327,8 +331,9 @@ align: center
 ---
 ```
 
-
 ## Step 4: Visualisation and Styling of the Model Outputs
+
+<!-- Is a video necessary for this chapter? -->
 
 :::{admonition} Output maps
 :class: note
@@ -431,8 +436,6 @@ Repeat this process for the following output layers, along with their correspond
 |`exposed_cyclone_area`|`exposed_cyclone_area_style.qml`| model output |
 |`cyclone_track`| `storm_track_cyclone_style.qml`| pre-loaded |
 
-
-
 :::{attention}
 
 Ensure that all relevant output layers are properly added to the QGIS project. If any layers are missing, try re-running the model or check your Model Outputs folder to see if the files were created successfully.
@@ -533,7 +536,6 @@ For easier visualization, we have created these [map templates](https://giscienc
 
 
 ## Step 6: Exporting the Map 
-
 
 ```{figure} /fig/MAD_Trigger_workflow_Step7.png
 ---
