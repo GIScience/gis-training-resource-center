@@ -356,7 +356,7 @@ Additionally, a map showing the **warehouse isochrones** for all 13 warehouses w
 
 We will do the following steps in this section:
 
-```{figure} /fig/MAD_Trigger_workflow_Step4.png
+```{figure} /fig/MAD_Trigger_workflow_Step4a.png
 ---
 width: 1000px
 name: 
@@ -368,7 +368,7 @@ __Purpose:__ Definition of how features are represented visually on the map.
 
 __Tool:__ [Symbology tab](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I.html#symbology-for-vector-data)
 
-```{figure} /fig/MAD_Trigger_workflow_Step5.png
+```{figure} /fig/MAD_Trigger_workflow_Step4b.png
 ---
 width: 1000px
 name: 
@@ -393,7 +393,7 @@ The layers should be arranged as shown in the figure below.
 
 ```{figure} /fig/MAD_Trigger_layer_order_overview_map.PNG
 ---
-width: 1000px
+width: 500px
 name: 
 align: center
 ---
@@ -476,7 +476,7 @@ Layers needed for this map:
 
 ```{figure} /fig/MAD_Trigger_layer_order_impact_map.PNG
 ---
-width: 1000px
+width: 500px
 name: 
 align: center
 ---
@@ -559,9 +559,9 @@ align: center
 ---
 ```
 
-## Step 6: Exporting the Map 
+## Step 5: Exporting the Map 
 
-```{figure} /fig/MAD_Trigger_workflow_Step6.png
+```{figure} /fig/MAD_Trigger_workflow_Step5.png
 ---
 width: 1000px
 name: 
