@@ -393,7 +393,7 @@ The layers should be arranged as shown in the figure below.
 
 ```{figure} /fig/MAD_Trigger_layer_order_overview_map.PNG
 ---
-width: 500px
+width: 300px
 name: 
 align: center
 ---
@@ -476,7 +476,7 @@ Layers needed for this map:
 
 ```{figure} /fig/MAD_Trigger_layer_order_impact_map.PNG
 ---
-width: 500px
+width: 300px
 name: 
 align: center
 ---
