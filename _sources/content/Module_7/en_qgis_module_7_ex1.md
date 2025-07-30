@@ -400,11 +400,52 @@ To achieve this, she will use two point datasets from OpenStreetMap:
      - **Points layer**: intersected education facilities output
      - **Count field name**: `count_education_affected`
      - Output name: `sum_exposed_education_POI`
-9. **Validate and Save Your Extended Model**  
+9. **Calculate percentage of affected Health Facilities**
+To compute the percentage of affected health sites per administrative area:
+- Add **Join Attributes by Field Value**:
+  - **Target layer**: `health_total_per_admin2` (output from the total count)
+  - **Join layer**: `health_affected_per_admin2` (output from the affected count)
+  - **Table field** and **Join field**: Use the shared ID field (e.g. `ADM2_PCODE`)
+  - Leave the output unnamed (as intermediate result)
+
+- Then add **Field Calculator**:
+  - **Input layer**: the joined layer from above
+  - **Output field name**: `pct_health_affected`
+  - **Field type**: Decimal (real)
+  - **Expression**:
+    ```qgis
+    CASE WHEN "count_health_total" > 0
+    THEN "sum_exposed_healthsites_POI" / "count_health_total" * 100
+    ELSE 0
+    END
+    ```
+  - Set the output as **Model Output**
+  - Name it: `admin2_health_affected_pct`
+10. **Calculate percentage of affected Education Facilities**
+Repeat the process for schools:
+- Add **Join Attributes by Field Value**:
+  - **Target layer**: `education_total_per_admin2`
+  - **Join layer**: `education_affected_per_admin2`
+  - **Table field** and **Join field**: Use the common ID field (e.g. `ADM2_PCODE`)
+  - Leave the output unnamed (as intermediate result)
+- Then add **Field Calculator**:
+  - **Input layer**: the joined education layer
+  - **Output field name**: `pct_education_affected`
+  - **Field type**: Decimal (real)
+  - **Expression**:
+    ```qgis
+    CASE WHEN "count_education_total" > 0
+    THEN "sum_exposed_education_POI" / "count_education_total" * 100
+    ELSE 0
+    END
+    ```
+  - Set the output as **Model Output**
+  - Name it: `admin2_education_affected_pct`
+11. **Validate and Save Your Extended Model**  
    - Click the ✔️ **Validate Model** button to check for errors.
    - Save again to:  
      **`Estimate_Exposed_Population_Health_Education.model3`**
-10. **Run the model**
+12. **Run the model**
    - Click the ▶️ **Run** button in the top-right corner of the Graphical Modeler window.
    - In the popup dialog:
      - Browse to select the required input layers:
@@ -417,4 +458,203 @@ To achieve this, she will use two point datasets from OpenStreetMap:
    - Click **Run** to execute the full model.
    - When finished, you should see all final output layers loaded into your QGIS workspace.
 
+## 🖼️ Task 4: Visualizing Cyclone Impact Results – Aina Styles Her Maps
 
+After completing her model, Aina wants to **communicate the results clearly** — both to her Red Cross colleagues and external partners.
+
+She’s **tired of manually restyling every layer** every time new cyclone data comes in. Instead, she wants:
+- ✅ **Clear and consistent visuals**
+- 🔁 **Reusable templates**
+- 📂 **Standardized .qml files** shared across projects
+
+In this task, you will help Aina apply existing `.qml` styles and create new ones for layers that currently have no preset style.
+
+---
+
+### 1. **Load Required Layers (if not already loaded)**
+
+Make sure the following layers are already loaded into your QGIS project. These are outputs from **Task 3**:
+
+- `Harald_2025_Track`
+- `Harald_Buffer_200km`
+- `Harald_Exposed_Population`
+- `sum_exposed_healthsites_POI`
+- `sum_exposed_education_POI`
+- `admin2_health_affected_pct`
+- `admin2_education_affected_pct`
+
+If any are missing:
+- Load them using **drag & drop** from your `results` folder, or
+- Use `Layer` → `Add Layer` → `Add Vector Layer` or `Add Raster Layer`
+
+---
+
+### 2. **Apply Predefined Style Files**
+Apply the following `.qml` style files to the respective layers:
+
+| **Layer**                              | **Style File**                            |
+|----------------------------------------|-------------------------------------------|
+| `Harald_2025_Track`                    | `storm_track_cyclone_style.qml`           |
+| `Harald_Buffer_200km`                  | `exposed_cyclone_area_style.qml`          |
+| `Harald_Exposed_Population`            | `exposed_population_style.qml`            |
+| `sum_exposed_healthsites_POI`          | `exposed_healthsites_style.qml`           |
+| `sum_exposed_education_POI`            | `exposed_education_facilities_style.qml`  |
+
+**Steps:**
+- Open the **Layer Styling Panel**
+- Click the `Style` button → `Load Style…`
+- Navigate to the corresponding `.qml` file
+- Click **OK** to apply the style
+
+> 💡 *If the style doesn’t load correctly, double-check the column names and make sure the column name used in the `.qml` file matches the one in your layer. To do this, open the **Attribute Table** of the layer and compare field names.*
+
+---
+
+### 3. **Style Percentage Layers Manually**
+
+Now let’s style the two **percentage layers** that don’t yet have `.qml` files:
+- `admin2_health_affected_pct`
+- `admin2_education_affected_pct`
+
+**Steps:**
+- Select the layer and open the **Layer Styling Panel**
+- Set **Symbology** to `Graduated`
+- Choose the correct **field**:
+  - `pct_health_affected` or `pct_education_affected`
+- Open the **Histogram** tab to view the value distribution
+- Set:
+  - **Mode**: `Equal Interval`
+  - **Classes**: `4`
+  - **Breaks**: `0–25%`, `25–50%`, `50–75%`, `75–100%`
+- Choose a color ramp (e.g., light yellow → dark red)
+- Optionally customize class labels for clarity
+
+> 🧠 *Why 4 equal classes?*  
+> This helps visualize severity across districts using simple and interpretable risk categories. However, you can experiment with **Natural Breaks** if data is unevenly distributed.
+
+---
+
+### 4. **Save Your New Styles for Reuse**
+
+Save your manually created styles as `.qml` files for future reuse.
+
+**Steps:**
+- In the **Styling Panel**, click `Style` → `Save Style…`
+- Save the file in the same folder as the corresponding dataset
+- Use these filenames:
+  - `health_pct_affected_style.qml`
+  - `education_pct_affected_style.qml`
+---
+
+### 5. *(Optional)* Import Styles into Your QGIS Library
+
+To reuse your styles in any future project:
+
+- Go to `Settings` → `Style Manager`
+- Click `Import/Export` → `Import Items`
+- Browse to and select your saved `.qml` files
+
+The styles will now appear as presets in the **Layer Styling Panel**.
+
+---
+
+## 🗺️ Task 5: Quick Map Creation – Aina Uses Map Templates
+Background: Aina Gets Map-Ready in Minutes
+After preparing all the analysis and styling, Aina wants to present her results quickly and professionally. She doesn’t want to recreate map layouts every time — she needs a quick way to generate clean, consistent maps.
+
+That’s why she’s using map templates (.qpt files) already prepared by her team. These templates include map frames, legends, logos, titles, scale bars, and more — everything Aina needs to finish her product in just a few clicks.
+
+✅ Goal
+Use a provided QGIS map template to visualize and export maps showing cyclone exposure results, including population, health, and education impacts.
+
+### 🧩 1. Load the pre-made print layout template
+
+- Locate the template `cyclone_impact_overview_map_template.qpt` in your project folder under:  
+  `Map_Templates/`
+
+- You can load the template **by drag-and-drop**:
+  - Open your QGIS project.
+  - Navigate to the Print Layout area in the browser panel.
+  - Drag the `.qpt` file directly into QGIS — a new layout will be created automatically.
+
+- Alternatively:
+  - Go to `Project` → `New Print Layout`
+  - Enter a name (e.g. `Harald_2025_Overview`)
+  - Click `OK`
+  - In the layout, go to `Layout` → `Import from Template…`
+  - Select the file `cyclone_impact_overview_map_template.qpt` and click `Open`
+
+  
+### 🖨️ 2. Check and set page size
+
+- Right-click anywhere on the white canvas and choose `Page Properties`.
+- On the right-side panel, ensure the following:
+  - **Page Size**: A3
+  - **Orientation**: Landscape
+
+---
+
+
+### 🧾 3. Update the attribute table of exposed districts
+
+- In the **Print Layout**, click on the attribute table (right-hand side of the layout).
+- In the **Item Properties** panel:
+  - Ensure the correct layer is selected (e.g. `Exposed_Districts`)
+  - Click `Refresh Table Data`
+  - Click `Attributes…` → ➕ Add:
+    - **Attribute**: `ADM1_EN`
+    - **Sort Order**: Ascending
+  - Click `OK`
+
+---
+
+### 🧭 5. Adjust the legend
+
+- In the layout, click on the **Legend** item.
+- In the **Item Properties** panel:
+  - Uncheck **Auto update**
+  - Scroll to **Legend items** and remove all entries (🗑️)
+  - Add the following relevant layers:
+    - `Relevant_Warehouses`
+    - `Exposed_Cyclone_Area`
+    - `Exposed_Districts`
+    - `Admin1_Impact_Overview_Map`
+  - When selecting layers, check **Only visible layers**
+  - Rename legend entries to match layout naming
+---
+
+### 📝 6. Review and update layout text elements
+
+- Make sure all text elements are up to date, especially:
+  - **Map title**
+  - **Cyclone name and date**
+  - **Author/Organization** (optional)
+- Adjust font size or alignment if necessary
+
+
+### ✅ Final Checklist
+
+| Task                                           | Done |
+|------------------------------------------------|------|
+| Page set to A3 Landscape                       | ☐    |
+| Only relevant layer group active               | ☐    |
+| Exposed districts attribute table updated      | ☐    |
+| Legend cleaned and renamed                     | ☐    |
+| All text elements updated                      | ☐    |
+
+---
+
+
+
+```{dropdown} Your final output should look like this after styling the layer
+The map now clearly displays the exposed population within the affected districts, along with the locations of relevant warehouses. The original storm track line — used as input data — is highlighted, as well as the buffered impact area, which serves as a proxy for identifying exposed districts.
+
+On the right-hand side of the map, a list shows all exposed districts, including data on total population and exposed population. The districts (Admin 2) are organized under their corresponding regions (Admin 1).
+
+```{figure} /fig/MAD_Trigger_Impact_Population_Map.png
+---
+width: 1000px
+name: 
+align: center
+---
+```

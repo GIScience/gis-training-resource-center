@@ -292,30 +292,42 @@ For each of these mandatory inputs, you click on the dropdown arrow and choose t
     ```md
     exposed_health_facilities
     ```
+    4. `Exposed_Regions`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
+    ```md
+    exposed_regions
+    ```
 
-    4. `Relevant_Warehouses`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
+    5. `Relevant_Warehouses`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
     ```md
     relevant_warehouses
     ```
 
-    5. `Exposed_Districts`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
+    6. `Exposed_Districts`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
     ```md
     exposed_districts
     ```
 
-    6. `Exposed_Population`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
+    7. `Exposed_Population`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
     ```md
     exposed_population
     ```
 
-    7. `Exposed_Buildings`:Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
+    8. `Exposed_Buildings`:Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
     ```md
     exposed_buildings
     ```
 
-    8. `Exposed_Agricultural_Landcover`:Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
+    9. `Exposed_Agricultural_Landcover`:Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
     ```md
     exposed_agricultural_landcover
+    ```
+    10. `Exposed_Education_Facilities_Points`:Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
+    ```md
+    exposed_health_education_points
+    ```
+    11. `Exposed_Health_Facilities_Points`:Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
+    ```md
+    exposed_health_facilities_points
     ```
 
 4. Click `Run` to execute the model. The output result layers will be automatically added to the main QGIS window upon completion. Once the process has finished, you can close the `Model Designer` window. Make sure to add all newly created layers to the **Model_outputs** group in QGIS. Afterwards, relocate them to their appropriate final groups for further processing.
