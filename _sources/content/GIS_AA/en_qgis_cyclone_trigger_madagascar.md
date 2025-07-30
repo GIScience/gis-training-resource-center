@@ -8,13 +8,17 @@ The workflow is almost fully automated through a QGIS model, requiring no manual
 
 ## Background
 
-Setting triggers is one of the cornerstones of the Forecast-based Financing system. For a National Society to have access to automatically released funding for their early actions, their Early Action Protocol needs to clearly define where and when funds will be allocated, and assistance will be provided. In AA, this is decided according to specific threshold values, so-called triggers, based on weather and climate forecasts, which are defined for each region (see [FbF Manual](https://manual.forecast-based-financing.org/en/chapter/set-the-trigger/)).
+Setting triggers is one of the cornerstones of the Forecast-based Financing system. For a National Society to have access to automatically released funding for their early actions, their Early Action Protocol needs to clearly define where and when funds will be allocated, and assistance will be provided. In AA, this is decided according to specific threshold values, so-called triggers, based on weather and climate forecasts, which are defined for each region (see [FbF Manual](https://manual.forecast-based-financing.org/en/chapter/06-develop-a-trigger-system/)).
 
 ## Trigger Statement
 
 **Pre-Activation Trigger:** at least one of the meteorological forecasts from Meteo Madagascar, RMSC La Reunion, or ECMWF projects a greater than 50% likelihood of landfall by a tropical cyclone of tropical storm strength or higher within the next 7 days.
 
 **Activation Trigger:** if the Meteo Madagascar (DGM) forecast indicates landfall of a tropical cyclone with wind speeds in excess of 118 km/h within the next 48-72 hours.
+
+# Downloading the report
+
+<!-- This section will include information on how to download the final report as soon as its published -->
 
 # Functionality of the Trigger Workflow
 
@@ -32,7 +36,7 @@ The entire trigger workflow will be run in a QGIS model, which automates the spa
 
 ## Trigger Input Data
 
-For the trigger mechanism to work properly we currently use different datasets: data that we assume to be fixed in the near term, and variable data which describe the datasets that will be checked for triggering on a regular basis depending on the occurrence of anticipated cyclone events. 
+For the trigger mechanism to work properly we currently use different datasets: data that we assume to be static in the near term, and variable data which describe the datasets that will be checked for triggering on a regular basis depending on the occurrence of anticipated cyclone events. 
 
 ### Fixed Data
 
@@ -88,7 +92,7 @@ The following key processing steps are run inside the model:
     * The input cyclone track is buffered to create an estimated zone of impact. The buffer is dissolved to generate a single polygon representing the exposed cyclone area. This layer serves as the base for subsequent exposure calculations.
 
 2. Administrative Units Affected
-    * The buffered cyclone area is intersected with Admin 2 boundaries to extract the exposed districts. These are further linked with Admin 1 regions using the Admin 1 names attribute to structure exposed districts by region. This hierarchy is used for reporting and map layout purposes.
+    * The buffered cyclone area is intersected with district (Admin 2) boundaries to extract the exposed districts. These are further linked with regions (Admin 1) using the region (Admin 1) names attribute to structure exposed districts by region. This hierarchy is used for reporting and map layout purposes.
 
 3. Population Impact
     * The model uses the population raster to calculate zonal statistics over the exposed districts. This determines the total population per district and the exposed population, which is then exported to a table.
@@ -107,7 +111,7 @@ The following key processing steps are run inside the model:
 The [QGIS Model Designer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html#the-qgis-model-designer) is a visual tool that allows users to create and edit a workflow with all tools available in QGIS that can be used repeatedly in a simple and time-efficient manner. It provides a graphical interface to build workflows by connecting geoprocessing tools and algorithms. The user can define inputs, outputs, and the flow of data between different processing steps.
 
 
-## Step 1: Setting up folder structure
+## Step 1: Explanation of the folder structure
 
 
 ```{figure} /fig/MAD_Trigger_workflow_Step1.png
@@ -117,7 +121,7 @@ name:
 align: center
 ---
 ```
-__Purpose:__ In this step we set up the correct folder structure to make the analysis easier and to ensure consistent results. 
+__Purpose:__ This step outlines the recommended folder structure to simplify the analysis and ensure consistent, reproducible results. 
 
 __Tool:__ No special tools or programs are needed
 
@@ -192,7 +196,7 @@ This group is used to organize all **output layers generated by the model** afte
 
 **Group 3: Map_Cyclone_Impact_Overview**
 
-This group includes all the layers required to create the **Cyclone Impact Overview Map** (shown below). The storm track and Admin1 boundaries (`Admin1_Impact_Overview_Map`) are pre-loaded to help you get started quickly.
+This group includes all the layers required to create the **Cyclone Impact Overview Map** (shown below). The storm track and region (Admin1) boundaries (`Admin1_Impact_Overview_Map`) are pre-loaded to help you get started quickly.
 Make sure you're working with the **correct and updated storm track** for the event under investigation.
 
 ```{figure} /fig/MAD_Trigger_Impact_Overview_Map.png
@@ -205,7 +209,7 @@ align: center
 
 **Group 4: Map_Cyclone_Impact_Assessment**
 
-This group contains all the necessary layers to generate **detailed impact assessment maps**. As with the overview map, both the storm track and Admin1 boundaries are pre-loaded.
+This group contains all the necessary layers to generate **detailed impact assessment maps**. As with the overview map, both the storm track and region (Admin1) boundaries are pre-loaded.
 Ensure you're using the correct event data to maintain consistency and accuracy in the assessment. In this section we can create 5 different maps for different impacts:
 - exposed population
 - exposed buildings
@@ -272,7 +276,7 @@ For each of these mandatory inputs, you click on the dropdown arrow and choose t
 
 <!-- Names should be the final ones. They are given after the last model from Elias -->
 
-3. Further down, you have to specify where to save the output: 
+3. Further down, you have to specify where to save the outputs: 
 
     1. `Exposed_Cyclone_Area`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
     ```md
@@ -331,7 +335,7 @@ align: center
 ---
 ```
 
-## Step 4: Visualisation and Styling of the Model Outputs
+## Step 4: Visualization and Styling of the Model Outputs and creating the Print Map
 
 <!-- Is a video necessary for this chapter? -->
 
@@ -350,6 +354,7 @@ We will generate two different types of output maps to support the analysis:
 
 Additionally, a map showing the **warehouse isochrones** for all 13 warehouses will be provided. The map and the map template can be found in the **warehouse_isochrone_matrix** folder.
 
+We will do the following steps in this section:
 
 ```{figure} /fig/MAD_Trigger_workflow_Step4.png
 ---
@@ -363,14 +368,38 @@ __Purpose:__ Definition of how features are represented visually on the map.
 
 __Tool:__ [Symbology tab](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I.html#symbology-for-vector-data)
 
+```{figure} /fig/MAD_Trigger_workflow_Step5.png
+---
+width: 1000px
+name: 
+align: center
+---
+```
+
+__Purpose:__ Viualization of the map features in a printable map layout
+
+__Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
+
 ### Map 1: Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations
 
 Layers needed for this map:
-- `exposed_districts`
-- `mdg_admbnda_adm1_BNGRC_OCHA_20181031`
-- `relevant_warehouses`
-- `exposed_cyclone_area`
+- `Relevant_Warehouses`
 - `cyclone_track`
+- `Exposed_Cyclone_Area`
+- `Admin1_Impact_Overview_Map` already loaded and styled in QGIS 
+- `Exposed_Districts`
+
+The layers should be arranged as shown in the figure below.
+
+```{figure} /fig/MAD_Trigger_layer_order_overview_map.PNG
+---
+width: 1000px
+name: 
+align: center
+---
+```
+
+#### Styling of the layers
 
 1. Right click on the exposed_districts layer -> `Properties` -> `Symbology`
 2. In the down left corner click on `Style` -> `Load Style`
@@ -395,95 +424,7 @@ To maintain a clear and organized workspace, group the output layers in the Laye
 
 :::
 
-```{dropdown} Your final output should look like this after styling the layer
-You will now see the exposed districts and the locations of relevant warehouses clearly displayed on the map. Additionally, the original storm track line — used as input data — is highlighted, along with the buffered impact area, which serves as a proxy for identifying exposed districts.
-
-```{figure} /fig/MAD_Trigger_Impact_Overview_Map.png
----
-width: 1000px
-name: 
-align: center
----
-```
-
-### Map 2: Impact Assessment: Affected Population and Critical Infrastructure
-
-Layers needed for this map:
-- `relevant_warehouses`
-- `mdg_admbnda_adm1_BNGRC_OCHA_20181031`
-- `exposed_cyclone_area`
-- `cyclone_track`
-- `exposed_population`
-
-:::{attention}
-
-If you already created Map 1 earlier in the process, you can reuse the first four layers with their existing styling for Map 2—and vice versa. This ensures consistency across both maps and saves time by avoiding duplicate styling efforts.
-
-:::
-
-1. Right click on the "exposed_population" layer -> `Properties` -> `Symbology`
-2. In the down left corner click on `Style` -> `Load Style`
-3. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the "AA_Cyclone_Monitoring_Trigger_MAD/layer_styles” folder and select the file __“exposed_population_style.qml”__ style layer.
-4. Click `Open`. Then click on `Load Style`
-5. Back in the “Layer Properties” window click `Apply` and `OK`
-
-Repeat this process for the following output layers, along with their corresponding style sheets:
-
-| Layer name | Style | Comment
-| ----- | --- | --- |
-|`Admin1_Impact_Assessment_Map`| `adm1_style.qml` | pre-loaded |
-|`relevant_warehouses` | `relevant_warehouses_style.qml` | model output |
-|`exposed_cyclone_area`|`exposed_cyclone_area_style.qml`| model output |
-|`cyclone_track`| `storm_track_cyclone_style.qml`| pre-loaded |
-
-:::{attention}
-
-Ensure that all relevant output layers are properly added to the QGIS project. If any layers are missing, try re-running the model or check your Model Outputs folder to see if the files were created successfully.
-
-To maintain a clear and organized workspace, group the output layers in the Layers panel under the appropriate group (e.g., Map_Cyclone_Impact_Overview). This helps keep your project structured and makes navigation easier during the map creation process.
-
-:::
-
-```{dropdown} Your final output should look like this after styling the layer
-The map now clearly displays the exposed population within the affected districts, along with the locations of relevant warehouses. The original storm track line — used as input data — is highlighted, as well as the buffered impact area, which serves as a proxy for identifying exposed districts.
-
-On the right-hand side of the map, a list shows all exposed districts, including data on total population and exposed population. The districts (Admin 2) are organized under their corresponding regions (Admin 1).
-
-```{figure} /fig/MAD_Trigger_Impact_Population_Map.png
----
-width: 1000px
-name: 
-align: center
----
-```
-
-:::{admonition} Other Impact Assessment Maps
-:class: hint
-
-The layer styling used in Map 2 can be applied to the following additional variables available in the model outputs:
-- **exposed buildings**
-- **exposed health sites**
-- **exposed education facilities**
-- **exposed agricultural landcover**
-
-Only the impact layer changes; all other map settings remain the same.
-:::
-
-
-## Step 5: Making the Print Map
-
-```{figure} /fig/MAD_Trigger_workflow_Step5.png
----
-width: 1000px
-name: 
-align: center
----
-```
-__Purpose:__ Viualisation of the map features in a printable map layout
-
-__Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
-
-### Map 1: Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations
+#### Making the Print Layout
 
 1. Deactivate all Layer Groups except the group `Map_Cyclone_Impact_Overview`.
 2. Open a new print layout by clicking on `Project` -> `New Print Layout` -> enter the name of your current Project e.g "Feddy_2023_Overview".
@@ -513,8 +454,78 @@ Checklist for final map output:
 - Exposed Districts: Include only districts that are actually impacted in your "List of Exposed Districts". Update them according to the event.
 ```
 
+```{dropdown} Your final output should look like this after styling the layer
+You will now see the exposed districts and the locations of relevant warehouses clearly displayed on the map. Additionally, the original storm track line — used as input data — is highlighted, along with the buffered impact area, which serves as a proxy for identifying exposed districts.
+
+```{figure} /fig/MAD_Trigger_Impact_Overview_Map.png
+---
+width: 1000px
+name: 
+align: center
+---
+```
+
 ### Map 2: Impact Assessment: Affected Population and Critical Infrastructure
 
+Layers needed for this map:
+- `Relevant_Warehouses`
+- `cyclone_track`
+- `Exposed_Cyclone_Area`
+- `Exposed_Population`
+- `Admin1_Impact_Assessment_Map` already loaded and style in QGIS
+
+```{figure} /fig/MAD_Trigger_layer_order_impact_map.PNG
+---
+width: 1000px
+name: 
+align: center
+---
+```
+
+:::{attention}
+
+If you already created Map 1 earlier in the process, you can reuse the first four layers with their existing styling for Map 2—and vice versa. This ensures consistency across both maps and saves time by avoiding duplicate styling efforts.
+
+:::
+
+#### Styling of the layers
+
+1. Right click on the "exposed_population" layer -> `Properties` -> `Symbology`
+2. In the down left corner click on `Style` -> `Load Style`
+3. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the "AA_Cyclone_Monitoring_Trigger_MAD/layer_styles” folder and select the file __“exposed_population_style.qml”__ style layer.
+4. Click `Open`. Then click on `Load Style`
+5. Back in the “Layer Properties” window click `Apply` and `OK`
+
+Repeat this process for the following output layers, along with their corresponding style sheets:
+
+| Layer name | Style | Comment
+| ----- | --- | --- |
+|`Admin1_Impact_Assessment_Map`| `adm1_style.qml` | pre-loaded |
+|`relevant_warehouses` | `relevant_warehouses_style.qml` | model output |
+|`exposed_cyclone_area`|`exposed_cyclone_area_style.qml`| model output |
+|`cyclone_track`| `storm_track_cyclone_style.qml`| pre-loaded |
+
+:::{attention}
+
+Ensure that all relevant output layers are properly added to the QGIS project. If any layers are missing, try re-running the model or check your Model Outputs folder to see if the files were created successfully.
+
+To maintain a clear and organized workspace, group the output layers in the Layers panel under the appropriate group (e.g., Map_Cyclone_Impact_Overview). This helps keep your project structured and makes navigation easier during the map creation process.
+
+:::
+
+:::{admonition} Other Impact Assessment Maps
+:class: hint
+
+The layer styling used in Map 2 can be applied to the following additional variables available in the model outputs:
+- **exposed buildings**
+- **exposed health sites**
+- **exposed education facilities**
+- **exposed agricultural landcover**
+
+Only the impact layer changes; all other map settings remain the same.
+:::
+
+#### Making the Print Layout
 ```{Attention}
 The same workflow applies to all five impact variables: population, buildings, education facilities, health sites, and agricultural landcover. The following example demonstrates the process for creating the population impact map. The remaining maps can be generated by following the same steps.
 ```
@@ -534,6 +545,19 @@ The same workflow applies to all five impact variables: population, buildings, e
 
 For easier visualization, we have created these [map templates](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#map-templates) for presenting the results of the trigger analysis. These templates serve as a base for your own visualizations and are available in the following directory: `AA_Cyclone_Monitoring_Trigger_MAD/map_templates`. You can customize the templates to suit your needs and preferences. You can find help [here](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#print-layout).
 
+
+```{dropdown} Your final output should look like this after styling the layer
+The map now clearly displays the exposed population within the affected districts, along with the locations of relevant warehouses. The original storm track line — used as input data — is highlighted, as well as the buffered impact area, which serves as a proxy for identifying exposed districts.
+
+On the right-hand side of the map, a list shows all exposed districts, including data on total population and exposed population. The districts (Admin 2) are organized under their corresponding regions (Admin 1).
+
+```{figure} /fig/MAD_Trigger_Impact_Population_Map.png
+---
+width: 1000px
+name: 
+align: center
+---
+```
 
 ## Step 6: Exporting the Map 
 
