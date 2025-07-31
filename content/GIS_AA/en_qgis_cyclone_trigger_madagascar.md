@@ -285,12 +285,12 @@ For each of these mandatory inputs, you click on the dropdown arrow and choose t
 
     2. `Exposed_Education_Facilities`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
     ```md
-    exposed_education_facilities
+    exposed_education_facilities_points
     ```
 
     3. `Exposed_Health_Facilities`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
     ```md
-    exposed_health_facilities
+    exposed_health_facilities_points
     ```
     4. `Exposed_Regions`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
     ```md
@@ -323,11 +323,11 @@ For each of these mandatory inputs, you click on the dropdown arrow and choose t
     ```
     10. `Exposed_Education_Facilities_Points`:Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
     ```md
-    exposed_health_education_points
+    exposed_health_education
     ```
     11. `Exposed_Health_Facilities_Points`:Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
     ```md
-    exposed_health_facilities_points
+    exposed_health_facilities
     ```
 
 4. Click `Run` to execute the model. The output result layers will be automatically added to the main QGIS window upon completion. Once the process has finished, you can close the `Model Designer` window. Make sure to add all newly created layers to the **Model_outputs** group in QGIS. Afterwards, relocate them to their appropriate final groups for further processing.
@@ -437,19 +437,62 @@ To maintain a clear and organized workspace, group the output layers in the Laye
 :::
 
 #### Making the Print Layout
+For easier visualization, we have created these [map templates](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#map-templates) for presenting the results of the trigger analysis. These templates serve as a base for your own visualizations and are available in the following directory: `AA_Cyclone_Monitoring_Trigger_MAD/map_templates`. You can customize the templates to suit your needs and preferences. You can find help [here](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#print-layout).
+
 
 1. Deactivate all Layer Groups except the group `Map_Cyclone_Impact_Overview`.
 2. Open a new print layout by clicking on `Project` -> `New Print Layout` -> enter the name of your current Project e.g "Feddy_2023_Overview".
 3. Right click on the white canvas and select `Page Properties`. In the bottom right section of the print layout, you'll see the page specifications. Set the Size to `A3` and the Orientation to `Landscape` to ensure that the map template fits correctly within the page layout.
 4. Go to the **AA_Cyclone_Monitoring_Trigger_MAD and then map_templates** folder and drag and drop the file `cyclone_impact_overview_map_template.qpt` into the print layout.
-5. Update the Attribute Table on the Right-Hand Side of the Map. To update the attribute table displaying the exposed districts:
-    * In the `Item Properties` panel select the `Exposed_Districts` Layer and `Refresh Table Data` to update the content. 
-    * Now click on `Attributes...` and click on the green plus on the bottom of the pop-up window. For `Attribute` select **ADM1_EN** and for `Sort Order` choose **Ascending**. Now click OK so apply.
-    * Your attribute table should now be updated to show only the relevant information from the **Exposed_Districts** layer, sorted by region. 
+5. **Update the Map Title**  
+   - Click on the title text element at the top of the map.
+   - In the `Item Properties` panel, edit the **Main Label** text to match your event, e.g. `Cyclone Harald – 2025`.
+   - Adjust font size or alignment as needed.
+
+6. **Update the Attribute Table on the Right-Hand Side of the Map**  
+   To update the attribute table displaying the exposed districts:
+   - In the `Item Properties` panel, select the `Exposed_Districts` layer and click **Refresh Table Data**
+   - Click on `Attributes...`
+   - In the **Columns** section:
+     - Click `Clear`
+     - ➕ Add the columns: `ADM1_EN`, `ADM2_EN`, `ADM2_PCODE`
+   - In the **Sorting** section:
+     - ➕ Add `ADM1_EN` and set the sort order to `Ascending`
+   - Click **OK** to apply
+
+```{note}
+💡 If too many districts are affected, the attribute table might not fit the page. Reduce the font size in the table’s item properties to make everything visible — but be aware that this may reduce readability.
+```
 6. Adjust the Legend by clicking on it in the map layout and have a look at the `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there, check if you have to open the dropdown. Make sure `Auto update` is **not checked**.
-    * Remove all items in the legend be clicking on the item and then on the red minus icon below.
-    * Add **Relevant_Warehouses**, **Exposed_Cyclone_Area**, **Exposed_Districts** and **Admin1_Impact_Overview_Map** to the legend by clicking on the green plus and click on the layer, then click `OK`. You can display only the visible layers by checking the corresponding box in the pop-up window. This makes it easier to identify and select the correct layers.
-    * Change the names to fit with the names provided in the Print Layout.
+    * Remove all items in the legend by clicking on each item and then the red minus icon
+        * In the pop-up, check **Only show visible layers** to help you find the correct ones
+        * To rename a legend item, **double-click** on the layer name in the legend item list and enter the new name  
+    * ➕ Add the following layers by clicking the green plus:
+        * `Admin1_Impact_Overview_Map` → rename to  
+      ```md
+      Regions
+      ```
+        * `exposed_districts` → rename to  
+      ```md
+      Exposed Districts
+      ```
+        * `Cyclone Track` → rename to  
+      ```md
+      Projected Cyclone Track
+      ```
+        * `Exposed_Cyclone_Area` → rename to  
+      ```md
+      Exposed Cyclone Area
+      ```
+        * `relevant_warehouses` → rename to  
+      ```md
+      Relevant Warehouses
+      ```
+        * `Background Map: OpenStreetMap` → rename to  
+      ```md
+      Background Map:
+      OpenStreetMap
+      ```
  
 <!-- Maybe add a video on how the Print Layout is created 
 
@@ -515,7 +558,7 @@ Repeat this process for the following output layers, along with their correspond
 |`Admin1_Impact_Assessment_Map`| `adm1_style.qml` | pre-loaded |
 |`relevant_warehouses` | `relevant_warehouses_style.qml` | model output |
 |`exposed_cyclone_area`|`exposed_cyclone_area_style.qml`| model output |
-|`cyclone_track`| `storm_track_cyclone_style.qml`| pre-loaded |
+|`cyclone_track`| `storm_track_cyclone_style.qml`| loaded by user |
 
 :::{attention}
 
@@ -529,12 +572,20 @@ To maintain a clear and organized workspace, group the output layers in the Laye
 :class: hint
 
 The layer styling used in Map 2 can be applied to the following additional variables available in the model outputs:
-- **exposed buildings**
-- **exposed health sites**
-- **exposed education facilities**
-- **exposed agricultural landcover**
 
-Only the impact layer changes; all other map settings remain the same.
+| Layer name | Style | Comment
+| ----- | --- | --- |
+|`exposed_population`|`exposed_population_style.qml`|model output|
+|`exposed_building`|`exposed_building_style.qml`|model output|
+|`exposed_health_facilities`| `exposed_health_facilities_style.qml` | model output |
+|`exposed_education_facilities`| `exposed_education_facilities_style.qml` | model output |
+|`exposed_agricultural_landcover`| `exposed_agriculture_landcover_style.qml` | model output |
+|`exposed_health_facilities_points`| `points_exposed_health_facilities_style.qml` | model output |
+|`exposed_education_facilities_points`| `points_exposed_education_facilities_style.qml` | model output |
+|`relevant_warehouses` | `relevant_warehouses_style.qml` | model output |
+|`exposed_cyclone_area`|`exposed_cyclone_area_style.qml`| model output |
+|`cyclone_track`| `storm_track_cyclone_style.qml`| loaded by user |
+
 :::
 
 #### Making the Print Layout
@@ -546,16 +597,233 @@ The same workflow applies to all five impact variables: population, buildings, e
 2. Open a new print layout by clicking on `Project` -> `New Print Layout` -> enter the name of your current Project e.g "Feddy_2023_Impact_Population".
 3. Right click on the white canvas and select `Page Properties`. In the bottom right section of the print layout, you'll see the page specifications. Set the Size to `A3` and the Orientation to `Landscape` to ensure that the map template fits correctly within the page layout.
 4. Go to the **AA_Cyclone_Monitoring_Trigger_MAD and then map_templates** folder and drag and drop the file `cyclone_impact_population_map_template.qpt` into the print layout.
-5. Update the Attribute Table on the Right-Hand Side of the Map. To update the attribute table to display the exposed districts and its population:
-    * In the `Item Properties` panel select the `Exposed_Population` Layer and `Refresh Table Data` to update the content. 
-    * Now click on `Attributes...` and click on the green plus on the bottom of the pop-up window. For `Attribute` select **ADM1_EN** and for `Sort Order` choose **Ascending**. Now click OK so apply.
-    * Your attribute table should now be updated to show only the relevant information from the **Exposed_Population** layer, sorted by region. 
-6. Adjust the Legend by clicking on it in the map layout and have a look at the `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there, check if you have to open the dropdown. Make sure `Auto update` is **not checked**.
-    * Remove all items in the legend be clicking on the item and then on the red minus icon below.
-    * Add **Admin1_Impact_Assessment_Map**, the original cyclone track, **Relevant_Warehouses**, **Exposed_Cyclone_Area** and **Exposed_Population** to the legend by clicking on the green plus and click on the layer, then click `OK`. You can display only the visible layers by checking the corresponding box in the pop-up window. This makes it easier to identify and select the correct layers.
-    * Change the names to fit with the names provided in the Print Layout.
+5. **Update the Map Title**  
+   - Click on the title text element at the top of the map.
+   - In the `Item Properties` panel, edit the **Main Label** text to match your event, e.g. `Cyclone Harald – 2025`.
+   - Adjust font size or alignment as needed.
+6. **Update the Attribute Table on the Right-Hand Side of the Map**  
+   To update the attribute table displaying the exposed districts:
+   - In the `Item Properties` panel, select the `exposed_population`**Or any other layer you are working with** layer and click **Refresh Table Data**
+   - Click on `Attributes...`
+   - In the **Columns** section:
+     - Click `Clear`
+     - ➕ Add the columns: `ADM1_EN`, `ADM2_EN`, `ADM2_PCODE` and `exposed_population`**Or any other layer you are working with**
+   - In the **Sorting** section:
+     - ➕ Add `ADM1_EN` and set the sort order to `Ascending`
+   - Click **OK** to apply
 
-For easier visualization, we have created these [map templates](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#map-templates) for presenting the results of the trigger analysis. These templates serve as a base for your own visualizations and are available in the following directory: `AA_Cyclone_Monitoring_Trigger_MAD/map_templates`. You can customize the templates to suit your needs and preferences. You can find help [here](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#print-layout).
+```{note}
+If too many districts are affected, the attribute table might not fit the page. Reduce the font size in the table’s item properties to make everything visible — but be aware that this may reduce readability.
+```
+7. Adjust the Legend by clicking on it in the map layout and have a look at the `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there, check if you have to open the dropdown. Make sure `Auto update` is **not checked**.
+    * Remove all items in the legend by clicking on each item and then the red minus icon
+        * In the pop-up, check **Only show visible layers** to help you find the correct ones
+        * To rename a legend item, **double-click** on the layer name in the legend item list and enter the new name  
+    * ➕ Add the following layers by clicking the green plus:
+   - In the pop-up, check **Only show visible layers** to help you find the correct ones
+   - 💡 To rename a legend item, **double-click** on the layer name in the legend item list and enter the new name
+   - Ensure all legend entries use **clear and meaningful labels**
+::::{tab-set}
+
+:::{tab-item} Exposed Population
+* `Admin1_Impact_Overview_Map` → rename to  
+```md
+Regions
+```
+* `exposed_population` → rename to  
+```md
+Exposed Population
+```
+* `Cyclone Track` → rename to  
+```md
+Projected Cyclone Track
+```
+* `Exposed_Cyclone_Area` → rename to  
+```md
+Exposed Cyclone Area
+```
+* `relevant_warehouses` → rename to  
+```md
+Relevant Warehouses
+```
+* `Background Map: OpenStreetMap` → rename to  
+```md
+Background Map:
+OpenStreetMap
+```
+:::
+
+:::{tab-item} Exposed Buildings 
+* `Admin1_Impact_Overview_Map` → rename to  
+```md
+Regions
+```
+* `exposed_building` → rename to  
+```md
+Exposed Buildings
+```
+* `Cyclone Track` → rename to  
+```md
+Projected Cyclone Track
+```
+* `Exposed_Cyclone_Area` → rename to  
+```md
+Exposed Cyclone Area
+```
+* `relevant_warehouses` → rename to  
+```md
+Relevant Warehouses
+```
+* `Background Map: OpenStreetMap` → rename to  
+```md
+Background Map:
+OpenStreetMap
+```
+:::
+
+:::{tab-item} Exposed Health Facilities
+* `Admin1_Impact_Overview_Map` → rename to  
+```md
+Regions
+```
+* `exposed_health_facilities` → rename to  
+```md
+Exposed Health Facilities
+```
+* `Cyclone Track` → rename to  
+```md
+Projected Cyclone Track
+```
+* `Exposed_Cyclone_Area` → rename to  
+```md
+Exposed Cyclone Area
+```
+* `relevant_warehouses` → rename to  
+```md
+Relevant Warehouses
+```
+* `Background Map: OpenStreetMap` → rename to  
+```md
+Background Map:
+OpenStreetMap
+```
+:::
+
+:::{tab-item} Exposed Education Facilities
+* `Admin1_Impact_Overview_Map` → rename to  
+```md
+Regions
+```
+* `exposed_education_facilities` → rename to  
+```md
+Exposed Education Facilities
+```
+* `Cyclone Track` → rename to  
+```md
+Projected Cyclone Track
+```
+* `Exposed_Cyclone_Area` → rename to  
+```md
+Exposed Cyclone Area
+```
+* `relevant_warehouses` → rename to  
+```md
+Relevant Warehouses
+```
+* `Background Map: OpenStreetMap` → rename to  
+```md
+Background Map:
+OpenStreetMap
+```
+:::
+
+:::{tab-item} Exposed Agriculture in Hectare
+* `Admin1_Impact_Overview_Map` → rename to  
+```md
+Regions
+```
+* `exposed_agricultural_landcover` → rename to  
+```md
+Exposed Agriculture in Hectare
+```
+* `Cyclone Track` → rename to  
+```md
+Projected Cyclone Track
+```
+* `Exposed_Cyclone_Area` → rename to  
+```md
+Exposed Cyclone Area
+```
+* `relevant_warehouses` → rename to  
+```md
+Relevant Warehouses
+```
+* `Background Map: OpenStreetMap` → rename to  
+```md
+Background Map:
+OpenStreetMap
+```
+:::
+
+:::{tab-item} Exposed Health Facilities Points
+* `Admin1_Impact_Overview_Map` → rename to  
+```md
+Regions
+```
+* `exposed_health_facilities_points` → rename to  
+```md
+Exposed Health Facilities Points
+```
+* `Cyclone Track` → rename to  
+```md
+Projected Cyclone Track
+```
+* `Exposed_Cyclone_Area` → rename to  
+```md
+Exposed Cyclone Area
+```
+* `relevant_warehouses` → rename to  
+```md
+Relevant Warehouses
+```
+* `Background Map: OpenStreetMap` → rename to  
+```md
+Background Map:
+OpenStreetMap
+```
+:::
+
+:::{tab-item} Exposed Health Education Points
+* `Admin1_Impact_Overview_Map` → rename to  
+```md
+Regions
+```
+* `exposed_education_facilities_points` → rename to  
+```md
+Exposed Health Education Points
+```
+* `Cyclone Track` → rename to  
+```md
+Projected Cyclone Track
+```
+* `Exposed_Cyclone_Area` → rename to  
+```md
+Exposed Cyclone Area
+```
+* `relevant_warehouses` → rename to  
+```md
+Relevant Warehouses
+```
+* `Background Map: OpenStreetMap` → rename to  
+```md
+Background Map:
+OpenStreetMap
+```
+:::
+
+::::
+
+
 
 
 ```{dropdown} Your final output should look like this after styling the layer
@@ -591,7 +859,7 @@ When you have finished the design of you map you can export it as pdf or image f
 __Export as Image__
 
 1. In the print layout click on `Layer` -> `Export as Image`
-2. Choose the __map_outputs__ folder. Give the file the name of the event e.g **MAD_Trigger_Impact_Overview_Map_Freddy_2023**. For the specific impact assessment change the name to something like **MAD_Trigger_Impact_Population_Map_Freddy_2023**.
+2. Choose the __map_outputs__ folder. Give the file the name of the event e.g **MDG_Trigger_Impact_Overview_Map_Freddy_2023**. For the specific impact assessment change the name to something like **MDG_Trigger_Impact_Population_Map_Freddy_2023**.
 3. Click on `Save`
 4. The window `Image Export Options` will appear. Click `Save`.
 Now the image can be found in the result folder.
@@ -600,7 +868,7 @@ Now the image can be found in the result folder.
 __Export as PDF__
 
 1. In the print layout click on `Layer` -> `Export as PDF`
-2. Choose the __map_outputs__ folder. Give the file the name of the event e.g **MAD_Trigger_Impact_Overview_Map_Freddy_2023**. For the specific impact assessment change the name to something like **MAD_Trigger_Impact_Population_Map_Freddy_2023**.
+2. Choose the __map_outputs__ folder. Give the file the name of the event e.g **MDG_Trigger_Impact_Overview_Map_Freddy_2023**. For the specific impact assessment change the name to something like **MDG_Trigger_Impact_Population_Map_Freddy_2023**.
 3. Click on `Save`
 4. The window `PDF Export Options` will appear. For the best results, select the `lossless` image compression.
 5. Click `Save`.
