@@ -91,7 +91,7 @@ The following key processing steps are run inside the model:
 1. Cyclone Buffering & Impact Area Extraction
     * The input cyclone track is buffered to create an estimated zone of impact. The buffer is dissolved to generate a single polygon representing the exposed cyclone area. This layer serves as the base for subsequent exposure calculations.
 
-2. Administrative Units Affected
+2. Exposed Administrative Units
     * The buffered cyclone area is intersected with district (Admin 2) boundaries to extract the exposed districts. These are further linked with regions (Admin 1) using the region (Admin 1) names attribute to structure exposed districts by region. This hierarchy is used for reporting and map layout purposes.
 
 3. Population Impact
@@ -108,7 +108,7 @@ The following key processing steps are run inside the model:
 
 ## How to run the model
 
-The [QGIS Model Designer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html#the-qgis-model-designer) is a visual tool that allows users to create and edit a workflow with all tools available in QGIS that can be used repeatedly in a simple and time-efficient manner. It provides a graphical interface to build workflows by connecting geoprocessing tools and algorithms. The user can define inputs, outputs, and the flow of data between different processing steps.
+The [QGIS Model Designer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html#the-qgis-model-designer) is a visual tool that allows users to create and edit a workflow with all tools available in QGIS that can be used repeatedly in a simple and time-efficient manner, while ensuring reproducibility. It provides a graphical interface to build workflows by connecting geoprocessing tools and algorithms. The user can define inputs, outputs, and the flow of data between different processing steps.
 
 
 ## Step 1: Explanation of the folder structure
