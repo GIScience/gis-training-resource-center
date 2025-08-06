@@ -393,23 +393,15 @@ To achieve this, she will use two point datasets from OpenStreetMap:
      - **Polygon layer**: `Admin Boundaries`
      - **Points layer**: intersected health facilities output
      - **Count field name**: `count_health_affected`
-     - Output name: `sum_exposed_healthsites_POI`
 8. **Count Affected Education Facilities per Admin 2**  
    - Add **Count Points in Polygon**
    - Configuration:
      - **Points layer**: intersected education facilities output
      - **Count field name**: `count_education_affected`
-     - Output name: `sum_exposed_education_POI`
 9. **Calculate percentage of affected Health Facilities**
-To compute the percentage of affected health sites per administrative area:
-- Add **Join Attributes by Field Value**:
-  - **Target layer**: `health_total_per_admin2` (output from the total count)
-  - **Join layer**: `health_affected_per_admin2` (output from the affected count)
-  - **Table field** and **Join field**: Use the shared ID field (e.g. `ADM2_PCODE`)
-  - Leave the output unnamed (as intermediate result)
-
-- Then add **Field Calculator**:
-  - **Input layer**: the joined layer from above
+To compute the percentage of affected health sites per administrative area, we will use the **Field Calculator**:
+- Add the  **Field Calculator**:
+  - **Input layer**: the output of Count Affected Health Facilities per Admin 2
   - **Output field name**: `pct_health_affected`
   - **Field type**: Decimal (real)
   - **Expression**:
@@ -423,13 +415,8 @@ To compute the percentage of affected health sites per administrative area:
   - Name it: `admin2_health_affected_pct`
 10. **Calculate percentage of affected Education Facilities**
 Repeat the process for schools:
-- Add **Join Attributes by Field Value**:
-  - **Target layer**: `education_total_per_admin2`
-  - **Join layer**: `education_affected_per_admin2`
-  - **Table field** and **Join field**: Use the common ID field (e.g. `ADM2_PCODE`)
-  - Leave the output unnamed (as intermediate result)
-- Then add **Field Calculator**:
-  - **Input layer**: the joined education layer
+- Add the **Field Calculator**:
+  - **Input layer**: the output of Count Affected Education Facilities per Admin 2
   - **Output field name**: `pct_education_affected`
   - **Field type**: Decimal (real)
   - **Expression**:
@@ -567,7 +554,7 @@ That’s why she’s using map templates (.qpt files) already prepared by her te
 ✅ Goal
 Use a provided QGIS map template to visualize and export maps showing cyclone exposure results, including population, health, and education impacts.
 
-### 🧩 1. Load the pre-made print layout template
+1. Load the pre-made print layout template
 
 - Locate the template `cyclone_impact_overview_map_template.qpt` in your project folder under:  
   `Map_Templates/`
@@ -583,20 +570,12 @@ Use a provided QGIS map template to visualize and export maps showing cyclone ex
   - Click `OK`
   - In the layout, go to `Layout` → `Import from Template…`
   - Select the file `cyclone_impact_overview_map_template.qpt` and click `Open`
-
-  
-### 🖨️ 2. Check and set page size
-
+ 2. Check and set page size
 - Right-click anywhere on the white canvas and choose `Page Properties`.
 - On the right-side panel, ensure the following:
   - **Page Size**: A3
   - **Orientation**: Landscape
-
----
-
-
-### 🧾 3. Update the attribute table of exposed districts
-
+3. Update the attribute table of exposed districts
 - In the **Print Layout**, click on the attribute table (right-hand side of the layout).
 - In the **Item Properties** panel:
   - Ensure the correct layer is selected (e.g. `Exposed_Districts`)
@@ -605,11 +584,7 @@ Use a provided QGIS map template to visualize and export maps showing cyclone ex
     - **Attribute**: `ADM1_EN`
     - **Sort Order**: Ascending
   - Click `OK`
-
----
-
-### 🧭 5. Adjust the legend
-
+5. Adjust the legend
 - In the layout, click on the **Legend** item.
 - In the **Item Properties** panel:
   - Uncheck **Auto update**
@@ -621,10 +596,7 @@ Use a provided QGIS map template to visualize and export maps showing cyclone ex
     - `Admin1_Impact_Overview_Map`
   - When selecting layers, check **Only visible layers**
   - Rename legend entries to match layout naming
----
-
-### 📝 6. Review and update layout text elements
-
+6. Review and update layout text elements
 - Make sure all text elements are up to date, especially:
   - **Map title**
   - **Cyclone name and date**
@@ -658,3 +630,64 @@ name:
 align: center
 ---
 ```
+
+
+## 🛠️ Task 6: Exporting Model Results for the Operations Team
+📘 Background – Aina Supports Decision Makers
+After producing maps and visuals, Aina often gets requests from the operations team:  
+> _“Can you send us the data in table format?”_
+
+Instead of exporting these tables manually each time, Aina wants to automate this step within her model — ensuring that every run of the model produces clear, ready-to-use data files.
+
+In this task, you’ll help Aina extend her existing model to export selected layers — including:
+
+We will join the following layers step by step:
+
+- `admin2_health_affected_pct`:  
+  Contains the **total number of health facilities**, the **number of affected health facilities**, and the **percentage of affected health facilities**.
+
+- `admin2_education_affected_pct`:  
+  Contains the **total number of education facilities**, the **number of affected education facilities**, and the **percentage of affected education facilities**.
+
+- `exposed_population`:  
+  Contains the **total population per district** and the **exposed population** from the zonal statistics step.
+
+1. Open your model
+  - Open `Estimate_Exposed_Population_Health_Education.model3`
+  - Save a backup as:  
+     `Estimate_Exposed_Population_Health_Education_Export.model3`
+2. Merge Health, Education, and Population Results into One Layer:
+We will join the layers and copy the relevant indicator fields into a single table.
+* In the **Algorithms**, search for `Join Attributes by Field Value`.
+  Configure the algorithm as follows:
+   - **Input Layer**:`admin2_health_affected_pct` (select from **Algorithm Output**)
+   - **Input Layer 2**: `health_total_per_admin2` (select from **Algorithm Output**)
+   - **Table field**:`ADM2_PCODE`
+   - **Table field 2**:`ADM2_PCODE`
+   - **Layer 2 fields to copy**:  
+     *(Enter the following field names exactly as shown, comma-separated — no spaces)*  
+     ```
+     count_health_total,sum_exposed_healthsites_POI,health_affected_precentage
+     ```
+   - **Join type**: Take attributes of the dirst matching feature only (one-to-one)
+   - Leave output as **Model Output**
+> 💡 **Where to find the column names**  
+> Open the **attribute tables** of the outputs `health_total_per_admin2`, `sum_exposed_healthsites_POI`, and `admin2_health_affected_pct` in QGIS.  
+> Look at the **column headers** to find the exact names of the fields you want to copy.
+> ⚠️ **Warning – invisible spaces!**  
+> If a column name like `count_health_total` has an invisible trailing space, the join will silently fail.  
+> Always copy the field names directly from the attribute table to avoid errors.
+3. Join the **population data**:
+   - Add a second `Join Attributes by Field Value` algorithm to the model
+   - **Input Layer**: The result of the previous join (health + education)
+   - **Input Layer 2**:`exposed_population` (from **Algorithm Output** of the Zonal Statistics step)
+   - **Table field**:`ADM2_PCODE`
+   - **Table field 2**:`ADM2_PCODE`
+   - **Layer 2 fields to copy**:  
+     *(Copy from the population result’s attribute table — likely a column like this)*  
+     ```
+     pop_sum
+     ```
+   - **Join type**: Take attributes of the first matching feature only (one-to-one)
+   - **Output name**: `final_merged_admin2_indicators`
+
