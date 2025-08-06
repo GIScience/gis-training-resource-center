@@ -571,14 +571,10 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-5-quick-map-creation-aina-uses-map-templates">🗺️ Task 5: Quick Map Creation – Aina Uses Map Templates</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-the-pre-made-print-layout-template">🧩 1. Load the pre-made print layout template</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#check-and-set-page-size">🖨️ 2. Check and set page size</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#update-the-attribute-table-of-exposed-districts">🧾 3. Update the attribute table of exposed districts</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adjust-the-legend">🧭 5. Adjust the legend</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#review-and-update-layout-text-elements">📝 6. Review and update layout text elements</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#final-checklist">✅ Final Checklist</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-6-exporting-model-results-for-the-operations-team">🛠️ Task 6: Exporting Model Results for the Operations Team</a></li>
 </ul>
             </nav>
         </div>
@@ -1114,7 +1110,6 @@ To do this, we’ll apply a <strong>graduated classification</strong> to the <co
 <li><p><strong>Polygon layer</strong>: <code class="docutils literal notranslate"><span class="pre">Admin</span> <span class="pre">Boundaries</span></code></p></li>
 <li><p><strong>Points layer</strong>: intersected health facilities output</p></li>
 <li><p><strong>Count field name</strong>: <code class="docutils literal notranslate"><span class="pre">count_health_affected</span></code></p></li>
-<li><p>Output name: <code class="docutils literal notranslate"><span class="pre">sum_exposed_healthsites_POI</span></code></p></li>
 </ul>
 </li>
 </ul>
@@ -1126,26 +1121,17 @@ To do this, we’ll apply a <strong>graduated classification</strong> to the <co
 <ul>
 <li><p><strong>Points layer</strong>: intersected education facilities output</p></li>
 <li><p><strong>Count field name</strong>: <code class="docutils literal notranslate"><span class="pre">count_education_affected</span></code></p></li>
-<li><p>Output name: <code class="docutils literal notranslate"><span class="pre">sum_exposed_education_POI</span></code></p></li>
 </ul>
 </li>
 </ul>
 </li>
 <li><p><strong>Calculate percentage of affected Health Facilities</strong>
-To compute the percentage of affected health sites per administrative area:</p></li>
+To compute the percentage of affected health sites per administrative area, we will use the <strong>Field Calculator</strong>:</p></li>
 </ol>
 <ul>
-<li><p>Add <strong>Join Attributes by Field Value</strong>:</p>
-<ul class="simple">
-<li><p><strong>Target layer</strong>: <code class="docutils literal notranslate"><span class="pre">health_total_per_admin2</span></code> (output from the total count)</p></li>
-<li><p><strong>Join layer</strong>: <code class="docutils literal notranslate"><span class="pre">health_affected_per_admin2</span></code> (output from the affected count)</p></li>
-<li><p><strong>Table field</strong> and <strong>Join field</strong>: Use the shared ID field (e.g. <code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code>)</p></li>
-<li><p>Leave the output unnamed (as intermediate result)</p></li>
-</ul>
-</li>
-<li><p>Then add <strong>Field Calculator</strong>:</p>
+<li><p>Add the  <strong>Field Calculator</strong>:</p>
 <ul>
-<li><p><strong>Input layer</strong>: the joined layer from above</p></li>
+<li><p><strong>Input layer</strong>: the output of Count Affected Health Facilities per Admin 2</p></li>
 <li><p><strong>Output field name</strong>: <code class="docutils literal notranslate"><span class="pre">pct_health_affected</span></code></p></li>
 <li><p><strong>Field type</strong>: Decimal (real)</p></li>
 <li><p><strong>Expression</strong>:</p>
@@ -1166,17 +1152,9 @@ END
 Repeat the process for schools:</p></li>
 </ol>
 <ul>
-<li><p>Add <strong>Join Attributes by Field Value</strong>:</p>
-<ul class="simple">
-<li><p><strong>Target layer</strong>: <code class="docutils literal notranslate"><span class="pre">education_total_per_admin2</span></code></p></li>
-<li><p><strong>Join layer</strong>: <code class="docutils literal notranslate"><span class="pre">education_affected_per_admin2</span></code></p></li>
-<li><p><strong>Table field</strong> and <strong>Join field</strong>: Use the common ID field (e.g. <code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code>)</p></li>
-<li><p>Leave the output unnamed (as intermediate result)</p></li>
-</ul>
-</li>
-<li><p>Then add <strong>Field Calculator</strong>:</p>
+<li><p>Add the <strong>Field Calculator</strong>:</p>
 <ul>
-<li><p><strong>Input layer</strong>: the joined education layer</p></li>
+<li><p><strong>Input layer</strong>: the output of Count Affected Education Facilities per Admin 2</p></li>
 <li><p><strong>Output field name</strong>: <code class="docutils literal notranslate"><span class="pre">pct_education_affected</span></code></p></li>
 <li><p><strong>Field type</strong>: Decimal (real)</p></li>
 <li><p><strong>Expression</strong>:</p>
@@ -1360,8 +1338,9 @@ After preparing all the analysis and styling, Aina wants to present her results 
 <p>That’s why she’s using map templates (.qpt files) already prepared by her team. These templates include map frames, legends, logos, titles, scale bars, and more — everything Aina needs to finish her product in just a few clicks.</p>
 <p>✅ Goal
 Use a provided QGIS map template to visualize and export maps showing cyclone exposure results, including population, health, and education impacts.</p>
-<section id="load-the-pre-made-print-layout-template">
-<h3>🧩 1. Load the pre-made print layout template<a class="headerlink" href="#load-the-pre-made-print-layout-template" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Load the pre-made print layout template</p></li>
+</ol>
 <ul class="simple">
 <li><p>Locate the template <code class="docutils literal notranslate"><span class="pre">cyclone_impact_overview_map_template.qpt</span></code> in your project folder under:<br />
 <code class="docutils literal notranslate"><span class="pre">Map_Templates/</span></code></p></li>
@@ -1382,9 +1361,9 @@ Use a provided QGIS map template to visualize and export maps showing cyclone ex
 </ul>
 </li>
 </ul>
-</section>
-<section id="check-and-set-page-size">
-<h3>🖨️ 2. Check and set page size<a class="headerlink" href="#check-and-set-page-size" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple" start="2">
+<li><p>Check and set page size</p></li>
+</ol>
 <ul class="simple">
 <li><p>Right-click anywhere on the white canvas and choose <code class="docutils literal notranslate"><span class="pre">Page</span> <span class="pre">Properties</span></code>.</p></li>
 <li><p>On the right-side panel, ensure the following:</p>
@@ -1394,10 +1373,9 @@ Use a provided QGIS map template to visualize and export maps showing cyclone ex
 </ul>
 </li>
 </ul>
-</section>
-<hr class="docutils" />
-<section id="update-the-attribute-table-of-exposed-districts">
-<h3>🧾 3. Update the attribute table of exposed districts<a class="headerlink" href="#update-the-attribute-table-of-exposed-districts" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple" start="3">
+<li><p>Update the attribute table of exposed districts</p></li>
+</ol>
 <ul class="simple">
 <li><p>In the <strong>Print Layout</strong>, click on the attribute table (right-hand side of the layout).</p></li>
 <li><p>In the <strong>Item Properties</strong> panel:</p>
@@ -1414,10 +1392,9 @@ Use a provided QGIS map template to visualize and export maps showing cyclone ex
 </ul>
 </li>
 </ul>
-</section>
-<hr class="docutils" />
-<section id="adjust-the-legend">
-<h3>🧭 5. Adjust the legend<a class="headerlink" href="#adjust-the-legend" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple" start="5">
+<li><p>Adjust the legend</p></li>
+</ol>
 <ul class="simple">
 <li><p>In the layout, click on the <strong>Legend</strong> item.</p></li>
 <li><p>In the <strong>Item Properties</strong> panel:</p>
@@ -1437,10 +1414,9 @@ Use a provided QGIS map template to visualize and export maps showing cyclone ex
 </ul>
 </li>
 </ul>
-</section>
-<hr class="docutils" />
-<section id="review-and-update-layout-text-elements">
-<h3>📝 6. Review and update layout text elements<a class="headerlink" href="#review-and-update-layout-text-elements" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple" start="6">
+<li><p>Review and update layout text elements</p></li>
+</ol>
 <ul class="simple">
 <li><p>Make sure all text elements are up to date, especially:</p>
 <ul>
@@ -1451,7 +1427,6 @@ Use a provided QGIS map template to visualize and export maps showing cyclone ex
 </li>
 <li><p>Adjust font size or alignment if necessary</p></li>
 </ul>
-</section>
 <section id="final-checklist">
 <h3>✅ Final Checklist<a class="headerlink" href="#final-checklist" title="Permalink to this heading">#</a></h3>
 <table class="table">
@@ -1493,6 +1468,83 @@ Your final output should look like this after styling the layer<div class="sd-su
 </figure>
 </div>
 </details></section>
+</section>
+<section id="task-6-exporting-model-results-for-the-operations-team">
+<h2>🛠️ Task 6: Exporting Model Results for the Operations Team<a class="headerlink" href="#task-6-exporting-model-results-for-the-operations-team" title="Permalink to this heading">#</a></h2>
+<p>📘 Background – Aina Supports Decision Makers
+After producing maps and visuals, Aina often gets requests from the operations team:</p>
+<blockquote>
+<div><p><em>“Can you send us the data in table format?”</em></p>
+</div></blockquote>
+<p>Instead of exporting these tables manually each time, Aina wants to automate this step within her model — ensuring that every run of the model produces clear, ready-to-use data files.</p>
+<p>In this task, you’ll help Aina extend her existing model to export selected layers — including:</p>
+<p>We will join the following layers step by step:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">admin2_health_affected_pct</span></code>:<br />
+Contains the <strong>total number of health facilities</strong>, the <strong>number of affected health facilities</strong>, and the <strong>percentage of affected health facilities</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">admin2_education_affected_pct</span></code>:<br />
+Contains the <strong>total number of education facilities</strong>, the <strong>number of affected education facilities</strong>, and the <strong>percentage of affected education facilities</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">exposed_population</span></code>:<br />
+Contains the <strong>total population per district</strong> and the <strong>exposed population</strong> from the zonal statistics step.</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>Open your model</p></li>
+</ol>
+<ul class="simple">
+<li><p>Open <code class="docutils literal notranslate"><span class="pre">Estimate_Exposed_Population_Health_Education.model3</span></code></p></li>
+<li><p>Save a backup as:<br />
+<code class="docutils literal notranslate"><span class="pre">Estimate_Exposed_Population_Health_Education_Export.model3</span></code></p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>Merge Health, Education, and Population Results into One Layer:
+We will join the layers and copy the relevant indicator fields into a single table.</p></li>
+</ol>
+<ul>
+<li><p>In the <strong>Algorithms</strong>, search for <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">Attributes</span> <span class="pre">by</span> <span class="pre">Field</span> <span class="pre">Value</span></code>.
+Configure the algorithm as follows:</p>
+<ul>
+<li><p><strong>Input Layer</strong>:<code class="docutils literal notranslate"><span class="pre">admin2_health_affected_pct</span></code> (select from <strong>Algorithm Output</strong>)</p></li>
+<li><p><strong>Input Layer 2</strong>: <code class="docutils literal notranslate"><span class="pre">health_total_per_admin2</span></code> (select from <strong>Algorithm Output</strong>)</p></li>
+<li><p><strong>Table field</strong>:<code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code></p></li>
+<li><p><strong>Table field 2</strong>:<code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code></p></li>
+<li><p><strong>Layer 2 fields to copy</strong>:<br />
+<em>(Enter the following field names exactly as shown, comma-separated — no spaces)</em></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">count_health_total</span><span class="p">,</span><span class="n">sum_exposed_healthsites_POI</span><span class="p">,</span><span class="n">health_affected_precentage</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Join type</strong>: Take attributes of the dirst matching feature only (one-to-one)</p></li>
+<li><p>Leave output as <strong>Model Output</strong></p></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<div><p>💡 <strong>Where to find the column names</strong><br />
+Open the <strong>attribute tables</strong> of the outputs <code class="docutils literal notranslate"><span class="pre">health_total_per_admin2</span></code>, <code class="docutils literal notranslate"><span class="pre">sum_exposed_healthsites_POI</span></code>, and <code class="docutils literal notranslate"><span class="pre">admin2_health_affected_pct</span></code> in QGIS.<br />
+Look at the <strong>column headers</strong> to find the exact names of the fields you want to copy.
+⚠️ <strong>Warning – invisible spaces!</strong><br />
+If a column name like <code class="docutils literal notranslate"><span class="pre">count_health_total</span></code> has an invisible trailing space, the join will silently fail.<br />
+Always copy the field names directly from the attribute table to avoid errors.</p>
+</div></blockquote>
+<ol class="arabic" start="3">
+<li><p>Join the <strong>population data</strong>:</p>
+<ul>
+<li><p>Add a second <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">Attributes</span> <span class="pre">by</span> <span class="pre">Field</span> <span class="pre">Value</span></code> algorithm to the model</p></li>
+<li><p><strong>Input Layer</strong>: The result of the previous join (health + education)</p></li>
+<li><p><strong>Input Layer 2</strong>:<code class="docutils literal notranslate"><span class="pre">exposed_population</span></code> (from <strong>Algorithm Output</strong> of the Zonal Statistics step)</p></li>
+<li><p><strong>Table field</strong>:<code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code></p></li>
+<li><p><strong>Table field 2</strong>:<code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code></p></li>
+<li><p><strong>Layer 2 fields to copy</strong>:<br />
+<em>(Copy from the population result’s attribute table — likely a column like this)</em></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pop_sum</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Join type</strong>: Take attributes of the first matching feature only (one-to-one)</p></li>
+<li><p><strong>Output name</strong>: <code class="docutils literal notranslate"><span class="pre">final_merged_admin2_indicators</span></code></p></li>
+</ul>
+</li>
+</ol>
 </section>
 </section>
 
@@ -1556,14 +1608,10 @@ Your final output should look like this after styling the layer<div class="sd-su
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-5-quick-map-creation-aina-uses-map-templates">🗺️ Task 5: Quick Map Creation – Aina Uses Map Templates</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-the-pre-made-print-layout-template">🧩 1. Load the pre-made print layout template</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#check-and-set-page-size">🖨️ 2. Check and set page size</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#update-the-attribute-table-of-exposed-districts">🧾 3. Update the attribute table of exposed districts</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adjust-the-legend">🧭 5. Adjust the legend</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#review-and-update-layout-text-elements">📝 6. Review and update layout text elements</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#final-checklist">✅ Final Checklist</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-6-exporting-model-results-for-the-operations-team">🛠️ Task 6: Exporting Model Results for the Operations Team</a></li>
 </ul>
   </nav></div>
 
