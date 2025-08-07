@@ -767,7 +767,7 @@ The goal is to prepare an end-to-end analysis and visualization workflow that ca
 <ol class="arabic simple">
 <li><p><strong>Open QGIS</strong> and create a <span class="xref myst">new project</span> by clicking on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span></code></p></li>
 <li><p><strong>Save the project</strong> in the “project” folder. To do that click on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">as</span></code> and navigate to the folder. Name the project “Cyclon_Harald_Exposure”.</p></li>
-<li><p><strong>Load the GeoJOSN</strong> file “Harald_2025_Track.geojson” in your project by drag and drop (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop">Wiki Video</a>) .</p></li>
+<li><p><strong>Load the GeoJOSN</strong> file “Harald_2025_Track.geojson” in your project by drag and drop (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop">Wiki Video</a>) . Open the folder <code class="docutils literal notranslate"><span class="pre">data</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">input</span></code></p></li>
 <li><p><strong>Reproject the cyclone track</strong> to use meters instead of degrees (important for accurate buffering):</p>
 <ul class="simple">
 <li><p>In the <strong>Processing Toolbox</strong>, search for <code class="docutils literal notranslate"><span class="pre">Reproject</span> <span class="pre">Layer</span></code>.</p></li>
@@ -777,6 +777,12 @@ The goal is to prepare an end-to-end analysis and visualization workflow that ca
 </ul>
 </li>
 </ol>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_reproject_cyclon_track.PNG"><img alt="../../_images/fr_MDG_AA_reproject_cyclon_track.PNG" src="../../_images/fr_MDG_AA_reproject_cyclon_track.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Reprojetter la trajectoire du cyclone</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>Buffer distances must be calculated in meters. Many datasets (like GeoJSON cyclone tracks) use geographic coordinate systems like EPSG:4326, which measure in degrees — not meters. To correctly calculate a 200 km buffer, we must first reproject the track into a projected CRS that uses meters.</p>
@@ -792,6 +798,28 @@ The goal is to prepare an end-to-end analysis and visualization workflow that ca
 <li><p>Save output in the <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder as: <strong><code class="docutils literal notranslate"><span class="pre">Harald_Buffer_200km</span></code></strong></p></li>
 </ul>
 </li>
+</ol>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_cyclon_track_buffer.PNG"><img alt="../../_images/fr_MDG_AA_cyclon_track_buffer.PNG" src="../../_images/fr_MDG_AA_cyclon_track_buffer.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Tamponner la trajectoire du cyclone</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Intermediate Result: Buffer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_cyclon_track_buffer.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_cyclon_track_buffer.PNG" src="../../_images/fr_MDG_AA_intermediate_result_cyclon_track_buffer.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Les résultats intermédiaires doivent montrer la trajectoire du cyclone et la zone tampon de 200 kilomètres autour de celui-ci. La zone tampon doit être une seule entité.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</details><ol class="arabic simple" start="6">
 <li><p><strong>Reproject the buffer back to EPSG:4326 (to match the raster’s CRS):</strong></p>
 <ul class="simple">
 <li><p>In the Processing Toolbox, search for Reproject Layer.</p></li>
@@ -800,6 +828,14 @@ The goal is to prepare an end-to-end analysis and visualization workflow that ca
 <li><p>Save the output in the temp folder as: Harald_Buffer_200km_4326</p></li>
 </ul>
 </li>
+</ol>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_reproject_cyclon_buffer.PNG"><img alt="../../_images/fr_MDG_AA_reproject_cyclon_buffer.PNG" src="../../_images/fr_MDG_AA_reproject_cyclon_buffer.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Reprojetter la tamponner trajectoire du cyclone</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="7">
 <li><p><strong>Load the administrative boundaries</strong>:</p>
 <ul class="simple">
 <li><p>File: <code class="docutils literal notranslate"><span class="pre">MDG_adm2.gpkg</span></code></p></li>
@@ -815,17 +851,25 @@ The goal is to prepare an end-to-end analysis and visualization workflow that ca
 <li><p><strong>Clip the population raster</strong> using the buffered impact zone:</p>
 <ul class="simple">
 <li><p>In the <strong>Processing Toolbox</strong>, search for <code class="docutils literal notranslate"><span class="pre">Clip</span> <span class="pre">Raster</span> <span class="pre">by</span> <span class="pre">Mask</span> <span class="pre">Layer</span></code>.</p></li>
-<li><p>Input raster: <code class="docutils literal notranslate"><span class="pre">MDG_WorldPop_2020_constrained.tif</span></code></p></li>
+<li><p>Input raster: <code class="docutils literal notranslate"><span class="pre">MDG_WorldPop_2020_constrained</span></code></p></li>
 <li><p>Mask layer: <code class="docutils literal notranslate"><span class="pre">Harald_Buffer_200km</span></code></p></li>
-<li><p>Save output in the <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder as: <strong><code class="docutils literal notranslate"><span class="pre">Harald_Pop_Clip.tif</span></code></strong></p></li>
+<li><p>Save output in the <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder as: <strong><code class="docutils literal notranslate"><span class="pre">Harald_Pop_Clip</span></code></strong></p></li>
 </ul>
 </li>
+</ol>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_clip_pop_raster.PNG"><img alt="../../_images/fr_MDG_AA_clip_pop_raster.PNG" src="../../_images/fr_MDG_AA_clip_pop_raster.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Découpez la population ratser selon la zone affectée par le cyclone (trajectoire tampon du cyclone)</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="10">
 <li><p><strong>Calculate total exposed population</strong>:</p></li>
 </ol>
 <ul class="simple">
 <li><p>In the <strong>Processing Toolbox</strong>, search for <code class="docutils literal notranslate"><span class="pre">Zonal</span> <span class="pre">Statistics</span></code>.</p></li>
 <li><p>Input vector layer: <code class="docutils literal notranslate"><span class="pre">MDG_adm2.gpkg</span></code></p></li>
-<li><p>Raster layer: <code class="docutils literal notranslate"><span class="pre">Harald_Pop_Clip.tif</span></code></p></li>
+<li><p>Raster layer: <code class="docutils literal notranslate"><span class="pre">Harald_Pop_Clip</span></code></p></li>
 <li><p>Statistic to calculate: <code class="docutils literal notranslate"><span class="pre">Sum</span></code></p></li>
 <li><p>Field prefix: e.g., <code class="docutils literal notranslate"><span class="pre">pop_</span></code></p></li>
 <li><p>Save the updated vector layer in the <code class="docutils literal notranslate"><span class="pre">result</span></code> folder as: <strong><code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Population.gpkg</span></code></strong></p></li>
