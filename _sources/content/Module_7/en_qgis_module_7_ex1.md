@@ -315,7 +315,7 @@ In this task, you will help Aina build a simple version of that model using the 
    - In the configuration window:
      - Set **Input layer** to `Admin Boundaries` (from **Model Input**).
      - Set **Raster layer** to the output of the previous step (from **Algorithm Output**).
-     - Set **Output column prefix** to `pop_`.
+     - Set **Output column prefix** to `exposed_population_`.
      - Under **Statistics to calculate**, select `Sum`.
      - Set the output to **Model Output** and name it: `exposed_population_sum`
    - Click **OK** to add the step to the model.
@@ -656,38 +656,43 @@ We will join the following layers step by step:
   - Open `Estimate_Exposed_Population_Health_Education.model3`
   - Save a backup as:  
      `Estimate_Exposed_Population_Health_Education_Export.model3`
-2. Merge Health, Education, and Population Results into One Layer:
-We will join the layers and copy the relevant indicator fields into a single table.
+2. Join Health and Education data into One Layer:
 * In the **Algorithms**, search for `Join Attributes by Field Value`.
   Configure the algorithm as follows:
    - **Input Layer**:`admin2_health_affected_pct` (select from **Algorithm Output**)
-   - **Input Layer 2**: `health_total_per_admin2` (select from **Algorithm Output**)
+   - **Input Layer 2**: `admin2_education_affected_pct` (select from **Algorithm Output**)
    - **Table field**:`ADM2_PCODE`
    - **Table field 2**:`ADM2_PCODE`
-   - **Layer 2 fields to copy**:  
-     *(Enter the following field names exactly as shown, comma-separated — no spaces)*  
-     ```
-     count_health_total,sum_exposed_healthsites_POI,health_affected_precentage
-     ```
+   - **Layer 2 fields to copy**: leave as it is
    - **Join type**: Take attributes of the dirst matching feature only (one-to-one)
    - Leave output as **Model Output**
-> 💡 **Where to find the column names**  
-> Open the **attribute tables** of the outputs `health_total_per_admin2`, `sum_exposed_healthsites_POI`, and `admin2_health_affected_pct` in QGIS.  
-> Look at the **column headers** to find the exact names of the fields you want to copy.
-> ⚠️ **Warning – invisible spaces!**  
-> If a column name like `count_health_total` has an invisible trailing space, the join will silently fail.  
-> Always copy the field names directly from the attribute table to avoid errors.
-3. Join the **population data**:
+3. Join the combined Health and Education Facilities data to the **population data**:
    - Add a second `Join Attributes by Field Value` algorithm to the model
-   - **Input Layer**: The result of the previous join (health + education)
-   - **Input Layer 2**:`exposed_population` (from **Algorithm Output** of the Zonal Statistics step)
+   - **Input Layer**:`exposed_population` (from **Algorithm Output** of the Zonal Statistics step)
+   - **Input Layer 2**: The result of the previous join (health + education)
    - **Table field**:`ADM2_PCODE`
    - **Table field 2**:`ADM2_PCODE`
-   - **Layer 2 fields to copy**:  
-     *(Copy from the population result’s attribute table — likely a column like this)*  
+   - **Layer 2 fields to copy**:Here we specify which columns we wont to join to the population data.  
+      *(Enter the following field names exactly as shown, comma-separated — no spaces)*  
      ```
-     pop_sum
+     count_health_total;sum_exposed_healthsites_POI;health_affected_precentage;count_education_total;sum_exposed_education_POI;pct_education_affected
      ```
+     Here we specify which columns we wont to join to the population data.
    - **Join type**: Take attributes of the first matching feature only (one-to-one)
-   - **Output name**: `final_merged_admin2_indicators`
-
+   - Leave output as **Model Output**
+::::{tip} Where to find the column names  
+Open the **attribute tables** of the outputs `health_total_per_admin2`, `sum_exposed_healthsites_POI`, and `admin2_health_affected_pct` in QGIS.  
+Look at the **column headers** to find the exact names of the fields you want to copy.
+::::
+::::{warning} Invisible spaces will break the join  
+If a column name like `count_health_total` has an invisible trailing space, the join will silently fail.  
+Always copy field names **directly from the attribute table** to avoid errors.
+::::   
+4.  Add the `Export to spreadsheet` algorithm:
+   - In the **Processing Toolbox**, search for **Export to spreadsheet**, douppel click on the tool.
+   - **Input Layer**
+   Select from **Algorithm Output** the output of your **Join Attributes by Field Value operation** (from Step 3), which now contains all relevant data.
+   - **Destination spreadsheet**:
+      ```
+      exposed_indicators_apreadsheet
+      ```

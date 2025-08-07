@@ -982,7 +982,7 @@ To do this, we’ll apply a <strong>graduated classification</strong> to the <co
 <ul>
 <li><p>Set <strong>Input layer</strong> to <code class="docutils literal notranslate"><span class="pre">Admin</span> <span class="pre">Boundaries</span></code> (from <strong>Model Input</strong>).</p></li>
 <li><p>Set <strong>Raster layer</strong> to the output of the previous step (from <strong>Algorithm Output</strong>).</p></li>
-<li><p>Set <strong>Output column prefix</strong> to <code class="docutils literal notranslate"><span class="pre">pop_</span></code>.</p></li>
+<li><p>Set <strong>Output column prefix</strong> to <code class="docutils literal notranslate"><span class="pre">exposed_population_</span></code>.</p></li>
 <li><p>Under <strong>Statistics to calculate</strong>, select <code class="docutils literal notranslate"><span class="pre">Sum</span></code>.</p></li>
 <li><p>Set the output to <strong>Model Output</strong> and name it: <code class="docutils literal notranslate"><span class="pre">exposed_population_sum</span></code></p></li>
 </ul>
@@ -1496,55 +1496,67 @@ Contains the <strong>total population per district</strong> and the <strong>expo
 <code class="docutils literal notranslate"><span class="pre">Estimate_Exposed_Population_Health_Education_Export.model3</span></code></p></li>
 </ul>
 <ol class="arabic simple" start="2">
-<li><p>Merge Health, Education, and Population Results into One Layer:
-We will join the layers and copy the relevant indicator fields into a single table.</p></li>
+<li><p>Join Health and Education data into One Layer:</p></li>
 </ol>
-<ul>
+<ul class="simple">
 <li><p>In the <strong>Algorithms</strong>, search for <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">Attributes</span> <span class="pre">by</span> <span class="pre">Field</span> <span class="pre">Value</span></code>.
 Configure the algorithm as follows:</p>
 <ul>
 <li><p><strong>Input Layer</strong>:<code class="docutils literal notranslate"><span class="pre">admin2_health_affected_pct</span></code> (select from <strong>Algorithm Output</strong>)</p></li>
-<li><p><strong>Input Layer 2</strong>: <code class="docutils literal notranslate"><span class="pre">health_total_per_admin2</span></code> (select from <strong>Algorithm Output</strong>)</p></li>
+<li><p><strong>Input Layer 2</strong>: <code class="docutils literal notranslate"><span class="pre">admin2_education_affected_pct</span></code> (select from <strong>Algorithm Output</strong>)</p></li>
 <li><p><strong>Table field</strong>:<code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code></p></li>
 <li><p><strong>Table field 2</strong>:<code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code></p></li>
-<li><p><strong>Layer 2 fields to copy</strong>:<br />
-<em>(Enter the following field names exactly as shown, comma-separated — no spaces)</em></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">count_health_total</span><span class="p">,</span><span class="n">sum_exposed_healthsites_POI</span><span class="p">,</span><span class="n">health_affected_precentage</span>
-</pre></div>
-</div>
-</li>
+<li><p><strong>Layer 2 fields to copy</strong>: leave as it is</p></li>
 <li><p><strong>Join type</strong>: Take attributes of the dirst matching feature only (one-to-one)</p></li>
 <li><p>Leave output as <strong>Model Output</strong></p></li>
 </ul>
 </li>
 </ul>
-<blockquote>
-<div><p>💡 <strong>Where to find the column names</strong><br />
-Open the <strong>attribute tables</strong> of the outputs <code class="docutils literal notranslate"><span class="pre">health_total_per_admin2</span></code>, <code class="docutils literal notranslate"><span class="pre">sum_exposed_healthsites_POI</span></code>, and <code class="docutils literal notranslate"><span class="pre">admin2_health_affected_pct</span></code> in QGIS.<br />
-Look at the <strong>column headers</strong> to find the exact names of the fields you want to copy.
-⚠️ <strong>Warning – invisible spaces!</strong><br />
-If a column name like <code class="docutils literal notranslate"><span class="pre">count_health_total</span></code> has an invisible trailing space, the join will silently fail.<br />
-Always copy the field names directly from the attribute table to avoid errors.</p>
-</div></blockquote>
 <ol class="arabic" start="3">
-<li><p>Join the <strong>population data</strong>:</p>
+<li><p>Join the combined Health and Education Facilities data to the <strong>population data</strong>:</p>
 <ul>
 <li><p>Add a second <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">Attributes</span> <span class="pre">by</span> <span class="pre">Field</span> <span class="pre">Value</span></code> algorithm to the model</p></li>
-<li><p><strong>Input Layer</strong>: The result of the previous join (health + education)</p></li>
-<li><p><strong>Input Layer 2</strong>:<code class="docutils literal notranslate"><span class="pre">exposed_population</span></code> (from <strong>Algorithm Output</strong> of the Zonal Statistics step)</p></li>
+<li><p><strong>Input Layer</strong>:<code class="docutils literal notranslate"><span class="pre">exposed_population</span></code> (from <strong>Algorithm Output</strong> of the Zonal Statistics step)</p></li>
+<li><p><strong>Input Layer 2</strong>: The result of the previous join (health + education)</p></li>
 <li><p><strong>Table field</strong>:<code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code></p></li>
 <li><p><strong>Table field 2</strong>:<code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code></p></li>
-<li><p><strong>Layer 2 fields to copy</strong>:<br />
-<em>(Copy from the population result’s attribute table — likely a column like this)</em></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pop_sum</span>
+<li><p><strong>Layer 2 fields to copy</strong>:Here we specify which columns we wont to join to the population data.<br />
+<em>(Enter the following field names exactly as shown, comma-separated — no spaces)</em></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">count_health_total</span><span class="p">;</span><span class="n">sum_exposed_healthsites_POI</span><span class="p">;</span><span class="n">health_affected_precentage</span><span class="p">;</span><span class="n">count_education_total</span><span class="p">;</span><span class="n">sum_exposed_education_POI</span><span class="p">;</span><span class="n">pct_education_affected</span>
 </pre></div>
 </div>
+<p>Here we specify which columns we wont to join to the population data.</p>
 </li>
 <li><p><strong>Join type</strong>: Take attributes of the first matching feature only (one-to-one)</p></li>
-<li><p><strong>Output name</strong>: <code class="docutils literal notranslate"><span class="pre">final_merged_admin2_indicators</span></code></p></li>
+<li><p>Leave output as <strong>Model Output</strong></p></li>
 </ul>
 </li>
 </ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Where to find the column names<br />
+Open the <strong>attribute tables</strong> of the outputs <code class="docutils literal notranslate"><span class="pre">health_total_per_admin2</span></code>, <code class="docutils literal notranslate"><span class="pre">sum_exposed_healthsites_POI</span></code>, and <code class="docutils literal notranslate"><span class="pre">admin2_health_affected_pct</span></code> in QGIS.<br />
+Look at the <strong>column headers</strong> to find the exact names of the fields you want to copy.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Invisible spaces will break the join<br />
+If a column name like <code class="docutils literal notranslate"><span class="pre">count_health_total</span></code> has an invisible trailing space, the join will silently fail.<br />
+Always copy field names <strong>directly from the attribute table</strong> to avoid errors.</p>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Add the <code class="docutils literal notranslate"><span class="pre">Export</span> <span class="pre">to</span> <span class="pre">spreadsheet</span></code> algorithm:</p></li>
+</ol>
+<ul>
+<li><p>In the <strong>Processing Toolbox</strong>, search for <strong>Export to spreadsheet</strong>, douppel click on the tool.</p></li>
+<li><p><strong>Input Layer</strong>
+Select from <strong>Algorithm Output</strong> the output of your <strong>Join Attributes by Field Value operation</strong> (from Step 3), which now contains all relevant data.</p></li>
+<li><p><strong>Destination spreadsheet</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">exposed_indicators_apreadsheet</span>
+</pre></div>
+</div>
+</li>
+</ul>
 </section>
 </section>
 
