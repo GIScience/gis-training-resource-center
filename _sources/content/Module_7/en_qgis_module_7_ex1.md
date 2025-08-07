@@ -145,7 +145,7 @@ width: 750 px
 
 ```
 
-## Tasks: Estimating Exposed Population – Aina’s Manual Approach
+## Task 1: Estimating Exposed Population – Aina’s Manual Approach
 
 Before developing the automated model, Aina used to estimate the exposed population manually whenever a cyclone approached Madagascar. In this task, you will follow the steps she used in the past by working with the historical track of **Cyclone Harald**, WorldPop raster data, and administrative boundaries.
 
@@ -228,7 +228,7 @@ align: center
 ```
 
 
-## 🛠️ Task 2: Automatisation of Estimating Exposed Population – Aina's Model
+## Task 2: Automatisation of Estimating Exposed Population – Aina's Model
 
 After manually estimating exposed populations in past cyclone seasons, Aina has decided to prepare an **automated model** using the **QGIS Graphical Modeller**. This will help her move faster and avoid repeating the same steps manually each time a cyclone is forecasted.
 
@@ -335,7 +335,7 @@ In this task, you will help Aina build a simple version of that model using the 
 You can now run this model any time a new cyclone track becomes available.
 
 
-## 🛠️ Task 3: Identifying Affected Health Facilities and Schools – Aina Adds More Layers
+## Task 3: Identifying Affected Health Facilities and Schools – Aina Adds More Layers
 
 After building her model to estimate exposed population, Aina wants to expand its usefulness. She decides to also **identify critical services** affected by cyclones — especially **health facilities** and **schools**. 
 
@@ -445,7 +445,7 @@ Repeat the process for schools:
    - Click **Run** to execute the full model.
    - When finished, you should see all final output layers loaded into your QGIS workspace.
 
-## 🖼️ Task 4: Visualizing Cyclone Impact Results – Aina Styles Her Maps
+## Task 4: Visualizing Cyclone Impact Results – Aina Styles Her Maps
 
 After completing her model, Aina wants to **communicate the results clearly** — both to her Red Cross colleagues and external partners.
 
@@ -545,7 +545,7 @@ The styles will now appear as presets in the **Layer Styling Panel**.
 
 ---
 
-## 🗺️ Task 5: Quick Map Creation – Aina Uses Map Templates
+## Task 5: Quick Map Creation – Aina Uses Map Templates
 Background: Aina Gets Map-Ready in Minutes
 After preparing all the analysis and styling, Aina wants to present her results quickly and professionally. She doesn’t want to recreate map layouts every time — she needs a quick way to generate clean, consistent maps.
 
@@ -631,15 +631,16 @@ align: center
 ---
 ```
 
+## Task 6: Exporting Model Results for the Operations Team
 
-## 🛠️ Task 6: Exporting Model Results for the Operations Team
-📘 Background – Aina Supports Decision Makers
+**Background – Aina Supports Decision Makers**
+
 After producing maps and visuals, Aina often gets requests from the operations team:  
 > _“Can you send us the data in table format?”_
 
 Instead of exporting these tables manually each time, Aina wants to automate this step within her model — ensuring that every run of the model produces clear, ready-to-use data files.
 
-In this task, you’ll help Aina extend her existing model to export selected layers — including:
+In this task, you’ll help Aina extend her existing model to export selected layers.
 
 We will join the following layers step by step:
 
@@ -652,34 +653,36 @@ We will join the following layers step by step:
 - `exposed_population`:  
   Contains the **total population per district** and the **exposed population** from the zonal statistics step.
 
+---
+
 1. Open your model
-  - Open `Estimate_Exposed_Population_Health_Education.model3`
-  - Save a backup as:  
-     `Estimate_Exposed_Population_Health_Education_Export.model3`
-2. Join Health and Education data into One Layer:
-* In the **Algorithms**, search for `Join Attributes by Field Value`.
-  Configure the algorithm as follows:
-   - **Input Layer**:`admin2_health_affected_pct` (select from **Algorithm Output**)
-   - **Input Layer 2**: `admin2_education_affected_pct` (select from **Algorithm Output**)
-   - **Table field**:`ADM2_PCODE`
-   - **Table field 2**:`ADM2_PCODE`
-   - **Layer 2 fields to copy**: leave as it is
-   - **Join type**: Take attributes of the dirst matching feature only (one-to-one)
-   - Leave output as **Model Output**
-3. Join the combined Health and Education Facilities data to the **population data**:
-   - Add a second `Join Attributes by Field Value` algorithm to the model
-   - **Input Layer**:`exposed_population` (from **Algorithm Output** of the Zonal Statistics step)
-   - **Input Layer 2**: The result of the previous join (health + education)
-   - **Table field**:`ADM2_PCODE`
-   - **Table field 2**:`ADM2_PCODE`
-   - **Layer 2 fields to copy**:Here we specify which columns we wont to join to the population data.  
-      *(Enter the following field names exactly as shown, comma-separated — no spaces)*  
-     ```
-     count_health_total;sum_exposed_healthsites_POI;health_affected_precentage;count_education_total;sum_exposed_education_POI;pct_education_affected
-     ```
-     Here we specify which columns we wont to join to the population data.
-   - **Join type**: Take attributes of the first matching feature only (one-to-one)
-   - Leave output as **Model Output**
+- Open `Estimate_Exposed_Population_Health_Education.model3`
+- Save a backup as:  
+  `Estimate_Exposed_Population_Health_Education_Export.model3`
+2. Join Health and Education data into one layer
+- In the **Algorithms**, search for `Join Attributes by Field Value`.
+- Configure the algorithm as follows:
+  - **Input Layer**: `admin2_health_affected_pct` (select from **Algorithm Output**)
+  - **Input Layer 2**: `admin2_education_affected_pct` (select from **Algorithm Output**)
+  - **Table field**: `ADM2_PCODE`
+  - **Table field 2**: `ADM2_PCODE`
+  - **Layer 2 fields to copy**: Leave empty (all fields will be copied)
+  - **Join type**: Take attributes of the first matching feature only (one-to-one)
+  - Leave output as **Model Output**
+3. Join the result with the population data
+Now join the result of the previous step (health + education) to the **exposed population** data.
+- Add a second `Join Attributes by Field Value` algorithm to the model
+- Configure the algorithm as follows:
+  - **Input Layer**: `exposed_population` (select from **Algorithm Output** of the Zonal Statistics step)
+  - **Input Layer 2**: Output from Step 2 (health + education)
+  - **Table field**: `ADM2_PCODE`
+  - **Table field 2**: `ADM2_PCODE`
+  - **Layer 2 fields to copy**: *(Enter the following field names exactly as shown — comma-separated, no spaces)*
+    ```
+    count_health_total,sum_exposed_healthsites_POI,health_affected_precentage,count_education_total,sum_exposed_education_POI,pct_education_affected
+    ```
+  - **Join type**: Take attributes of the first matching feature only (one-to-one)
+  - Leave output as **Model Output**
 ::::{tip} Where to find the column names  
 Open the **attribute tables** of the outputs `health_total_per_admin2`, `sum_exposed_healthsites_POI`, and `admin2_health_affected_pct` in QGIS.  
 Look at the **column headers** to find the exact names of the fields you want to copy.
@@ -687,12 +690,139 @@ Look at the **column headers** to find the exact names of the fields you want to
 ::::{warning} Invisible spaces will break the join  
 If a column name like `count_health_total` has an invisible trailing space, the join will silently fail.  
 Always copy field names **directly from the attribute table** to avoid errors.
-::::   
-4.  Add the `Export to spreadsheet` algorithm:
-   - In the **Processing Toolbox**, search for **Export to spreadsheet**, douppel click on the tool.
-   - **Input Layer**
-   Select from **Algorithm Output** the output of your **Join Attributes by Field Value operation** (from Step 3), which now contains all relevant data.
-   - **Destination spreadsheet**:
-      ```
-      exposed_indicators_apreadsheet
-      ```
+::::
+4. Export results to a spreadsheet
+- In the **Processing Toolbox**, search for `Export to spreadsheet` and double-click to open.
+- Configure the tool as follows:
+  - **Input Layer**: Select the output of Step 3 from **Algorithm Output**
+  - **Destination spreadsheet**:
+    ```
+    exposed_indicators_spreadsheet.xlsx
+    ```
+
+  - Click **OK** to add it to the model.
+Once you run the model, this step will automatically generate a spreadsheet with all relevant indicators ready for the operations team!
+
+## Task 7: Reachability of health Posts from CRM Warehouses
+When a cyclone is forecast to make landfall, Aina works with the logistics and health teams to decide **where to send prepositioned medical kits**. However, not all CRM warehouses stock the needed items — only three do.
+
+To make fast, data-driven decisions, Aina wants to know **which health posts are reachable** from those warehouses **within 10 hours**. This analysis helps ensure that kits are sent to facilities **that can actually be reached in time**.
+
+Her goal is to create a clear visual map showing reachable vs. non-reachable health posts — and share this with decision-makers as quickly as possible.
+
+
+### 1. Filter Health Posts from the National Health Facility Dataset
+
+Before checking which facilities are reachable, Aina needs to isolate **health posts** from the broader dataset of all health facilities.
+
+1. **Load the health facilities dataset**  
+   - File: `hotosm_mdg_health_facilities_points.gpkg` (or the respective GeoPackage you are using)  
+   - Load it via drag and drop or through `Layer` → `Add Vector Layer`.
+2. **Open the attribute table** and check the column named `amenity`.
+3. **Filter by expression** to keep only health posts:  
+   - Right-click the layer → `Filter…`  
+   - Use the following expression:
+     ```qgis
+     "amenity" = 'health_post'
+     ```
+4. **Export the filtered layer**  
+   - Right-click the filtered layer in the Layers Panel → `Export` → `Save Features As…`  
+   - Format: `GeoPackage`  
+   - Save to your `project` folder as:
+     ```
+     health_posts_only.gpkg
+     ```
+   - Click `OK` to confirm export.
+5. **Remove the filter** or original layer from your project to avoid confusion.
+> 💡 **Tip**: Filtering directly in QGIS lets you work with a specific subset of features without modifying the original dataset.
+
+### 2. Load Isochrone Layers for the Three CRM Warehouses
+
+Aina knows that only **three warehouses** stock the necessary medical supplies:  
+**Antananarivo**, **Maroantsetra**, and **Tolanaro**. She will now load the isochrone layers for each of these warehouses to begin analyzing service areas.
+
+1. **Load the individual isochrone layers** for each warehouse:
+   - `CRM_warehouse_Isochrones_Antananarivo.gpkg`
+   - `CRM_warehouse_Isochrones_Maroantsetra.gpkg`
+   - `CRM_warehouse_Isochrones_Tolanaro.gpkg`
+
+   You can drag and drop each file into QGIS or go to `Layer` → `Add Layer` → `Add Vector Layer`.
+
+2. **Inspect the attribute table** of each isochrone layer  
+   Confirm that each record has a `traveltime_h` field showing the estimated travel time in **hours**.
+
+3. **Remove all features where travel time is above 10 hours**:  
+   - Right-click each layer → `Filter…`
+   - Apply the expression:
+     ```qgis
+     "traveltime_h" <= 10
+     ```
+
+4. **Export each filtered layer** to the `temp` folder :
+   At this point, Aina also ensures all exported layers are saved in the same CRS as the health post dataset — `EPSG:4326` — to avoid problems in the spatial join.
+   - Save each as:
+     ```
+     CRM_isochrones_Antananarivo_upto10h.gpkg
+     CRM_isochrones_Maroantsetra_upto10h.gpkg
+     CRM_isochrones_Tolanaro_upto10h.gpkg
+     ```
+
+5. **Style the isochrones for clarity** 
+   Aina can apply predefined style file to color the layer based on `traveltime_h` to visualize different time bands (4h, 6h, 8h, 10h) later in Step 5.
+   - Right-click each filtered layer → `Properties` → `Symbology`
+   - Click `Style` at the bottom → `Load Style…`
+   - Select the file:  
+     `CRM_warehouse_isochrones_style.qml`
+   - Click `Open`, then `Apply` and `OK`
+
+### 3. Visualizing Health Post Reachability from CRM Warehouses
+Aina needs to identify which health posts can be reached by road from three key CRM warehouses (Antananarivo, Maroantsetra, and Tolanaro) **within 10 hours of travel time**. She will do this manually by combining the 10-hour isochrones from these warehouses and comparing them to the national health post dataset.
+1. **Merge the Isochrone Layers from the Three Warehouses**  
+   - In the **Processing Toolbox**, search for `Merge Vector Layers`.  
+   - **Input layers**:  
+     - `CRM_isochrones_Antananarivo_upto10h.gpkg`  
+     - `CRM_isochrones_Maroantsetra_upto10h.gpkg`  
+     - `CRM_isochrones_Tolanaro_upto10h.gpkg`  
+   - **CRS**: `EPSG:4326`  
+   - **Save to file**:  
+     ```
+     merged_isochrones_10h.gpkg
+     ```  
+   - Click **Run**.
+2. **Select Health Posts Reachable Within 10 Hours**  
+   - In the **Processing Toolbox**, search for `Select by Location`.  
+   - Set the following parameters:  
+     - **Input layer**: `health_posts_only.gpkg`  
+     - **Predicate**: `intersects`  
+     - **Intersect layer**: `merged_isochrones_10h.gpkg`  
+   - Click **Run**.
+   > 💡 The selected points are those within the 10-hour service areas of the warehouses.
+3. **Create a Reachability Field for Selected Health Posts**  
+   - Open the **Field Calculator** ![](/fig/mActionCalculateField.png) on the `health_posts_only` layer.  
+   - Check ✅ `Only update selected features`  
+   - **Output field name**: `Reachability_time`  
+   - **Output field type**: `Text (string)`  
+   - **Expression**:
+     ```qgis
+     'reachable in 10 hours'
+     ```  
+   - Click **OK** to create and populate the new field for selected features.
+4. **Mark the Remaining Health Posts as Not Reachable**  
+   - Invert the selection:  
+     Go to `Edit` → `Invert Feature Selection` ![](/fig/mActionInvertSelection.png)  
+     or right-click the layer and select `Invert Selection`.  
+   - Open the **Field Calculator** again.  
+   - Check ✅ `Only update selected features`  
+   - Use the same field: `Reachability_time`  
+   - **Expression**:
+     ```qgis
+     'not reachable in 10 hours'
+     ```  
+   - Click **OK** to apply the update.
+
+> ✅ Now all health posts are labeled as either **reachable** or **not reachable** in the `Reachability_time` column.
+
+
+
+
+
