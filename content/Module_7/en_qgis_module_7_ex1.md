@@ -160,7 +160,7 @@ You will manually buffer the cyclone track, clip the population raster, and calc
 
 2. **Save the project** in the “project” folder. To do that click on `Project` -> `Save as` and navigate to the folder. Name the project “Cyclon_Harald_Exposure”.
 
-3. **Load the GeoJOSN** file "Harald_2025_Track.geojson" in your project by drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)) .
+3. **Load the GeoJOSN** file "Harald_2025_Track.geojson" in your project by drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)) . Open the folder `data` -> `input`
 
 
 4. **Reproject the cyclone track** to use meters instead of degrees (important for accurate buffering):
@@ -168,6 +168,14 @@ You will manually buffer the cyclone track, clip the population raster, and calc
    - Input: `Harald_2025_Track`
    - Target CRS: `EPSG:29738` or another meter-based CRS appropriate for Madagascar.
    - Save the result in the `temp` folder as: **`Harald_Track_Reprojected`**
+```{figure} /fig/fr_MDG_AA_reproject_cyclon_track.PNG
+---
+width: 600px
+align: center
+---
+Reprojetter la trajectoire du cyclone
+```
+
 ```{Attention}
 Buffer distances must be calculated in meters. Many datasets (like GeoJSON cyclone tracks) use geographic coordinate systems like EPSG:4326, which measure in degrees — not meters. To correctly calculate a 200 km buffer, we must first reproject the track into a projected CRS that uses meters.
 ```
@@ -178,11 +186,36 @@ Buffer distances must be calculated in meters. Many datasets (like GeoJSON cyclo
    - Segments: Leave default (5)
    - Dissolve: `Yes`
    - Save output in the `temp` folder as: **`Harald_Buffer_200km`**
+```{figure} /fig/fr_MDG_AA_cyclon_track_buffer.PNG
+---
+width: 600px
+align: center
+---
+Tamponner la trajectoire du cyclone
+```
+
+:::{dropdown} Intermediate Result: Buffer
+```{figure} /fig/fr_MDG_AA_intermediate_result_cyclon_track_buffer.PNG
+---
+width: 600px
+align: center
+---
+Les résultats intermédiaires doivent montrer la trajectoire du cyclone et la zone tampon de 200 kilomètres autour de celui-ci. La zone tampon doit être une seule entité.
+```
+:::
 6. **Reproject the buffer back to EPSG:4326 (to match the raster's CRS):**
    - In the Processing Toolbox, search for Reproject Layer.
    - Input: Harald_Buffer_200km_29738
    - Target CRS: EPSG:4326 – WGS 84
    - Save the output in the temp folder as: Harald_Buffer_200km_4326
+```{figure} /fig/fr_MDG_AA_reproject_cyclon_buffer.PNG
+---
+width: 600px
+align: center
+---
+Reprojetter la tamponner trajectoire du cyclone
+```
+   
 7. **Load the administrative boundaries**:
    - File: `MDG_adm2.gpkg`
    - Add using drag and drop or `Add Vector Layer`.
@@ -191,13 +224,21 @@ Buffer distances must be calculated in meters. Many datasets (like GeoJSON cyclo
    - Add using `Layer` → `Add Raster Layer`.
 9. **Clip the population raster** using the buffered impact zone:
    - In the **Processing Toolbox**, search for `Clip Raster by Mask Layer`.
-   - Input raster: `MDG_WorldPop_2020_constrained.tif`
+   - Input raster: `MDG_WorldPop_2020_constrained`
    - Mask layer: `Harald_Buffer_200km`
-   - Save output in the `temp` folder as: **`Harald_Pop_Clip.tif`**
+   - Save output in the `temp` folder as: **`Harald_Pop_Clip`**
+```{figure} /fig/fr_MDG_AA_clip_pop_raster.PNG
+---
+width: 600px
+align: center
+---
+Découpez la population ratser selon la zone affectée par le cyclone (trajectoire tampon du cyclone)
+```
+
 10. **Calculate total exposed population**:
    - In the **Processing Toolbox**, search for `Zonal Statistics`.
    - Input vector layer: `MDG_adm2.gpkg`
-   - Raster layer: `Harald_Pop_Clip.tif`
+   - Raster layer: `Harald_Pop_Clip`
    - Statistic to calculate: `Sum`
    - Field prefix: e.g., `pop_`
    - Save the updated vector layer in the `result` folder as: **`Harald_Exposed_Population.gpkg`**
