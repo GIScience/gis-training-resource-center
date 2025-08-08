@@ -587,7 +587,7 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#making-the-print-layout">Making the Print Layout</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map-2-impact-assessment-affected-population-and-critical-infrastructure">Map 2: Impact Assessment: Affected Population and Critical Infrastructure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map-2-impact-assessment-exposed-population-and-critical-infrastructure">Map 2: Impact Assessment: Exposed Population and Critical Infrastructure</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Styling of the layers</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Making the Print Layout</a></li>
 </ul>
@@ -973,22 +973,21 @@ Video: Input and output Model<div class="sd-summary-down docutils">
 </ul>
 <p>Additionally, a map showing the <strong>warehouse isochrones</strong> for all 13 warehouses will be provided. The map and the map template can be found in the <strong>warehouse_isochrone_matrix</strong> folder.</p>
 </div>
-<p>We will do the following steps in this section:</p>
+<p>We will create the maps in two steps (see Step 4a and step 4b below). In the step 4a, we will use the <strong><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel">symbolisation tab</a></strong> and the <strong>layer style files (.qml)</strong> to adjust the visualisation of the layers and map canvas.
+In step 4b, we will use the <strong><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout">print layout composer</a></strong> to create a printable map with additional information such as title, author, description and data tables.</p>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_workflow_Step4a.png"><img alt="../../_images/MAD_Trigger_workflow_Step4a.png" src="../../_images/MAD_Trigger_workflow_Step4a.png" style="width: 1000px;" /></a>
 </figure>
-<p><strong>Purpose:</strong> Definition of how features are represented visually on the map.</p>
 <p><strong>Tool:</strong> <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I.html#symbology-for-vector-data">Symbology tab</a></p>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_workflow_Step4b.png"><img alt="../../_images/MAD_Trigger_workflow_Step4b.png" src="../../_images/MAD_Trigger_workflow_Step4b.png" style="width: 1000px;" /></a>
 </figure>
-<p><strong>Purpose:</strong> Viualization of the map features in a printable map layout</p>
 <p><strong>Tool:</strong>  <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout">Print Layout</a></p>
 <section id="map-1-cyclone-impact-overview-affected-districts-event-extent-and-warehouse-locations">
 <h3>Map 1: Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations<a class="headerlink" href="#map-1-cyclone-impact-overview-affected-districts-event-extent-and-warehouse-locations" title="Permalink to this heading">#</a></h3>
 <p>Layers needed for this map:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Relevant_Warehouses</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_Warehouses</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">cyclone_track</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Cyclone_Area</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Admin1_Impact_Overview_Map</span></code> already loaded and styled in QGIS</p></li>
@@ -1160,11 +1159,11 @@ Your final output should look like this after styling the layer<div class="sd-su
 </div>
 </details></section>
 </section>
-<section id="map-2-impact-assessment-affected-population-and-critical-infrastructure">
-<h3>Map 2: Impact Assessment: Affected Population and Critical Infrastructure<a class="headerlink" href="#map-2-impact-assessment-affected-population-and-critical-infrastructure" title="Permalink to this heading">#</a></h3>
+<section id="map-2-impact-assessment-exposed-population-and-critical-infrastructure">
+<h3>Map 2: Impact Assessment: Exposed Population and Critical Infrastructure<a class="headerlink" href="#map-2-impact-assessment-exposed-population-and-critical-infrastructure" title="Permalink to this heading">#</a></h3>
 <p>Layers needed for this map:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Relevant_Warehouses</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_Warehouses</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">cyclone_track</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Cyclone_Area</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Population</span></code></p></li>
@@ -1644,7 +1643,7 @@ Your final output should look like this after styling the layer<div class="sd-su
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_workflow_Step5.png"><img alt="../../_images/MAD_Trigger_workflow_Step5.png" src="../../_images/MAD_Trigger_workflow_Step5.png" style="width: 1000px;" /></a>
 </figure>
 <p><strong>Purpose:</strong> Export the designed and finalized map layout in order to print it as a pdf or format of your choice.</p>
-<p><strong>Tool:</strong> <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout">Print Layout</a></p>
+<p><strong>Tool:</strong> <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout">Print Layout Composer</a></p>
 <p>When you have finished the design of you map you can export it as pdf or image file in different data formats.</p>
 <p><strong>Export as Image</strong></p>
 <ol class="arabic simple">
@@ -1788,7 +1787,7 @@ Now the image can be found in the result folder.</p></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#making-the-print-layout">Making the Print Layout</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map-2-impact-assessment-affected-population-and-critical-infrastructure">Map 2: Impact Assessment: Affected Population and Critical Infrastructure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map-2-impact-assessment-exposed-population-and-critical-infrastructure">Map 2: Impact Assessment: Exposed Population and Critical Infrastructure</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Styling of the layers</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Making the Print Layout</a></li>
 </ul>
