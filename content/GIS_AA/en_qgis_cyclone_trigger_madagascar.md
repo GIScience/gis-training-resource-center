@@ -353,7 +353,9 @@ We will generate two different types of output maps to support the analysis:
 Additionally, a map showing the **warehouse isochrones** for all 13 warehouses will be provided. The map and the map template can be found in the **warehouse_isochrone_matrix** folder.
 :::
 
-We will do the following steps in this section:
+We will create the maps in two steps (see Step 4a and step 4b below). In the step 4a, we will use the __[symbolisation tab](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel)__ and the __layer style files (.qml)__ to adjust the visualisation of the layers and map canvas. 
+In step 4b, we will use the __[print layout composer](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)__ to create a printable map with additional information such as title, author, description and data tables. 
+
 
 ```{figure} /fig/MAD_Trigger_workflow_Step4a.png
 ---
@@ -362,8 +364,6 @@ name:
 align: center
 ---
 ```
-
-__Purpose:__ Definition of how features are represented visually on the map.
 
 __Tool:__ [Symbology tab](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I.html#symbology-for-vector-data)
 
@@ -375,14 +375,13 @@ align: center
 ---
 ```
 
-__Purpose:__ Viualization of the map features in a printable map layout
 
 __Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
 
 ### Map 1: Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations
 
 Layers needed for this map:
-- `Relevant_Warehouses`
+- `CRM_Warehouses`
 - `cyclone_track`
 - `Exposed_Cyclone_Area`
 - `Admin1_Impact_Overview_Map` already loaded and styled in QGIS 
@@ -507,10 +506,10 @@ align: center
 ---
 ```
 
-### Map 2: Impact Assessment: Affected Population and Critical Infrastructure
+### Map 2: Impact Assessment: Exposed Population and Critical Infrastructure
 
 Layers needed for this map:
-- `Relevant_Warehouses`
+- `CRM_Warehouses`
 - `cyclone_track`
 - `Exposed_Cyclone_Area`
 - `Exposed_Population`
@@ -839,7 +838,7 @@ align: center
 __Purpose:__ Export the designed and finalized map layout in order to print it as a pdf or format of your choice.
 
 
-__Tool:__ [Print Layout](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
+__Tool:__ [Print Layout Composer](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
 
 When you have finished the design of you map you can export it as pdf or image file in different data formats.
 
