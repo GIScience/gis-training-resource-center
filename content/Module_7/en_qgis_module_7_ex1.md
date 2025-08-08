@@ -160,12 +160,12 @@ You will manually buffer the cyclone track, clip the population raster, and calc
 
 2. **Save the project** in the “project” folder. To do that click on `Project` -> `Save as` and navigate to the folder. Name the project “Cyclon_Harald_Exposure”.
 
-3. **Load the GeoJOSN** file "Harald_2025_Track.geojson" in your project by drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)) . Open the folder `data` -> `input`
+3. **Load the GeoJOSN** file "example_Harald_2025_Track.geojson" in your project by drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)) . Open the folder `data` -> `input`
 
 
 4. **Reproject the cyclone track** to use meters instead of degrees (important for accurate buffering):
    - In the **Processing Toolbox**, search for `Reproject Layer`.
-   - Input: `Harald_2025_Track`
+   - Input: `example_Harald_2025_Track`
    - Target CRS: `EPSG:29738` or another meter-based CRS appropriate for Madagascar.
    - Save the result in the `temp` folder as: **`Harald_Track_Reprojected`**
 ```{figure} /fig/fr_MDG_AA_reproject_cyclon_track.PNG
@@ -217,7 +217,7 @@ Reprojetter la tamponner trajectoire du cyclone
 ```
    
 7. **Load the administrative boundaries**:
-   - File: `MDG_adm2.gpkg`
+   - File: `mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg`
    - Add using drag and drop or `Add Vector Layer`.
 8. **Load the population raster**:
    - File: `MDG_WorldPop_2020_constrained.tif`
@@ -234,22 +234,39 @@ align: center
 ---
 Découpez la population ratser selon la zone affectée par le cyclone (trajectoire tampon du cyclone)
 ```
+:::{dropdown} Intermediate Result: Clip Population Raster Alyer
+```{figure} /fig/fr_MDG_AA_intermediate_result_clip_pop_raster.PNG
+---
+width: 600px
+align: center
+---
+Résultat intermédiaire du découpage de la couche raster de population à l'étendue de la trajectoire tamponnée du cyclone.
+```
+:::
 
 10. **Calculate total exposed population**:
    - In the **Processing Toolbox**, search for `Zonal Statistics`.
-   - Input vector layer: `MDG_adm2.gpkg`
+   - Input vector layer: `mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg`
    - Raster layer: `Harald_Pop_Clip`
    - Statistic to calculate: `Sum`
-   - Field prefix: e.g., `pop_`
-   - Save the updated vector layer in the `result` folder as: **`Harald_Exposed_Population.gpkg`**
-   - The result will be a new column in the attribute table of the `MDG_adm2.gpkg` layer, showing the total population within the cyclone buffer per district.
+   - Field prefix: e.g., `exposed_population_`
+   - Save the updated vector layer in the `result` folder as: **`Harald_Exposed_Populationg`**
+   - The result will be a new column in the attribute table of the `mdg_admbnda_adm2_BNGRC_OCHA_201810312.gpkg` layer, showing the total population within the cyclone buffer per district.
+```{figure} /fig/fr_MDG_AA_pop_zonal_statistic.PNG
+---
+width: 600px
+align: center
+---
+Calcul de la population exposée aux cyclones par district sur la base du raster de population.
+```
+   
 11. **Visualise the affected population by classifying the results**:
 Now that Aina has estimated the exposed population in each district, she wants to clearly show the differences across regions on the map.
-To do this, we'll apply a **graduated classification** to the `Harald_Exposed_Population.gpkg` layer using the new population field created by the Zonal Statistics tool.
+To do this, we'll apply a **graduated classification** to the `Harald_Exposed_Population` layer using the new population field created by the Zonal Statistics tool.
 - In the **Layers panel**, right-click on the layer `Harald_Exposed_Population` and choose `Properties`.
 - Go to the **Symbology** tab on the left.
 - At the top of the window, change the style from `Single Symbol` to `Graduated`.
-- In the **Value** drop-down menu, select the field that contains the population sum. It typically starts with the prefix you defined earlier, e.g. `pop_sum`.
+- In the **Value** drop-down menu, select the field that contains the population sum. It typically starts with the prefix you defined earlier, e.g. `exposed_population_sum`.
 - Set the **color ramp** to one that suits your map (e.g. `Reds`).
 - Choose a **classification mode** (e.g. `Quantile`, `Natural Breaks`, or `Equal Interval`) and select the number of classes (e.g. 5).
 - Click `Classify` to generate the classification.
@@ -258,16 +275,23 @@ To do this, we'll apply a **graduated classification** to the `Harald_Exposed_Po
 ```{tip}
 You can adjust class boundaries or labels by double-clicking on each class entry.
 ```
-
+```{figure} /fig/fr_MDG_AA_pop_graduadt_classification_exposed_population.PNG
+---
+width: 600px
+align: center
+---
+Configuration of the visualisation of the exposed population in five classes. 
+```
 
 Your results should look something like this: 
 
-```{figure} /fig/
+```{figure} /fig/fr_MDG_AA_intermediate_result_visualisation_exposed_population.PNG
 ---
 width: 600px
 name: the_world_result
 align: center
 ---
+Visualisation de la population exposée en cinq classes.
 ```
 
 
@@ -298,7 +322,7 @@ In this task, you will help Aina build a simple version of that model using the 
 3. **Save the model**
    - To save the model:
      - Click the **Save** icon (💾) or go to `Model` → `Save`.
-     - Navigate to the **`project` folder** of your training structure.
+     - Navigate to the **`models` folder** of your training structure.
      - Save the model as:  
        **`Estimate_Exposed_Population`**
 
@@ -319,70 +343,254 @@ In this task, you will help Aina build a simple version of that model using the 
      All inputs should be set as **mandatory**, so the model always receives the necessary data to run correctly.
      ```
 
+::::{tab-set}
+
+:::{tab-item} Input Cyclon Track
+```{figure} /fig/fr_MDG_AA_model_input_cyclon_track.PNG
+---
+width: 600px
+align: center
+---
+Definition of the model input: Cyclon Track
+```
+:::
+
+:::{tab-item} Input Admin Boundaries 
+```{figure} /fig/fr_MDG_AA_model_input_admin_bounderies.PNG
+---
+width: 600px
+align: center
+---
+Definition of the model input: Admin Bounderies
+:::
+
+:::{tab-item} Population Raster
+```{figure} /fig/fr_MDG_AA_model_input_population_raster.PNG
+---
+width: 600px
+align: center
+---
+Definition of the model input: Population Raster
+```
+:::
+::::
+**Intermediate Result**
+
+```{figure} /fig/fr_MDG_AA_intermediate_result_model_input.PNG
+---
+width: 600px
+name: the_world_result
+align: center
+---
+Résultat intermédiaire de la définition des données d'entrée du modèle
+```
+
 5. **Reproject the cyclone track to EPSG:29738**  
-   - From the **Algorithms** panel, search for **Reproject Layer** and drag it into the model canvas.
+   - From the **Algorithms** panel, search for **Reproject Layer** .
    - In the configuration window:
+     - Add a description: `Reprojecter la couche de trajectoire du cyclone a EPSG : 29738`
      - Set **Input layer** to `Cyclone Track` (from **Model Input**).
      - Set **Target CRS** to `EPSG:29738 – Madagascar / Laborde Grid`.
      - Set the output to **Model Output** (leave the output name **empty**).
    - Click **OK** to add the step to the model.
-
+```{figure} /fig/fr_MDG_AA_model_reporject_cyclon_track.PNG
+---
+width: 600px
+name: the_world_result
+align: center
+---
+Reprojecter la couche de trajectoire du cyclone vers un système de référence de coordonnées métrique (CRS) EPSG : 29738
+```
 6. **Buffer the reprojected cyclone track**  
-   - From the **Algorithms** panel, search for **Buffer** and drag it into the model canvas.
+   - From the **Algorithms** panel, search for **Buffer**.
    - In the configuration window:
+    - Add a description:  `Mettre en mémoire tampon la couche Cyclone reprojetée`
+     - Add a description: 
      - Set **Input layer** to the output from the previous step (from **Algorithm Output**).
      - Set **Distance** to `200000` (200 km).
      - Leave **Segments** at the default value (`5`).
      - Set **Dissolve result** to `Yes`.
      - Set the output to **Model Output** (leave the output name **empty**).
    - Click **OK** to add the step to the model.
-
+```{figure} /fig/fr_MDG_AA_model_buffer_cyclon_track.PNG
+---
+width: 600px
+name: the_world_result
+align: center
+---
+Mettre en mémoire tampon la couche Cyclone reprojetée
+```
 7. **Reproject the buffer back to EPSG:4326**  
-   - From the **Algorithms** panel, search for **Reproject Layer** and drag it into the model canvas.
+   - From the **Algorithms** panel, search for **Reproject Layer**.
+   - In the configuration window:
+    - Add a description:  `Reprojecter le tampon vers EPSG:4326`
    - In the configuration window:
      - Set **Input layer** to the output from the previous step (from **Algorithm Output**).
      - Set **Target CRS** to `EPSG:4326 – WGS 84`.
      - Set the output to **Model Output** (leave the output name **empty**).
    - Click **OK** to add the step to the model.
-
+```{figure} /fig/fr_MDG_AA_model_reporject_bufferd_cyclon_track.PNG
+---
+width: 600px
+name: the_world_result
+align: center
+---
+Reprojecter le tampon vers EPSG:4326
+```
 8. **Clip the population raster using the buffered area**  
-   - From the **Algorithms** panel, search for **Clip Raster by Mask Layer** and drag it into the model canvas.
+   - From the **Algorithms** panel, search for **Clip Raster by Mask Layer** .
+   - In the configuration window:
+     - Add a description: `Découper la couche raster de population pour l'étendre au tampon Cyclon`
    - In the configuration window:
      - Set **Input layer** to `Population Raster` (from **Model Input**).
      - Set **Mask layer** to the output from the previous step (from **Algorithm Output**).
      - Set the output to **Model Output** (leave the output name **empty**).
    - Click **OK** to add the step to the model.
-
+```{figure} /fig/fr_MDG_AA_model_clip_pop_raster.PNG
+---
+width: 600px
+name: the_world_result
+align: center
+---
+Découper la couche raster de population pour l'étendre au tampon Cyclon
+```
 9. **Calculate zonal statistics to estimate exposed population**  
-   - From the **Algorithms** panel, search for **Zonal Statistics** and drag it into the model canvas.
-   - In the configuration window:
+   - From the **Algorithms** panel, search for **Zonal Statistics** .
+   - In the configuration window: Calcul de la population exposée aux cyclones par district
+     - Add a description: `Calcul de la population exposée aux cyclones par district`
      - Set **Input layer** to `Admin Boundaries` (from **Model Input**).
      - Set **Raster layer** to the output of the previous step (from **Algorithm Output**).
      - Set **Output column prefix** to `exposed_population_`.
      - Under **Statistics to calculate**, select `Sum`.
-     - Set the output to **Model Output** and name it: `exposed_population_sum`
+     - Set the output to **Model Output** and name it: 
+      ```
+      exposed_population_sum
+      ```
    - Click **OK** to add the step to the model.
+```{figure} /fig/fr_MDG_AA_model_zonal_statistic_pop_admin2.PNG
+---
+width: 600px
+name: the_world_result
+align: center
+---
+Calcul de la population exposée aux cyclones par district
+```
+
+**Your results should look something like this:** 
+
+```{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms.PNG
+---
+width: 600px
+name: the_world_result
+align: center
+---
+Votre modèle devrait ressembler à ceci. Tous les algorithmes sont correctement connectés et la sortie du modèle est définie.
+```
 
 10. **Validate your model (recommended)**
    - Before saving or running, click the ✔️ **Validate Model** button in the top toolbar.
    - Fix any warnings or errors shown in the log panel.
    - This helps ensure your model is complete and won't break during execution.
 
-11. **Save your completed model**  
-   - Once your model is finished and the final output is set, save your work.
-   - Click the **Save** icon (💾) or go to `Model` → `Save`.
-   - Navigate to the **`project` folder** of your training structure.
-   - Save the model as:  
-     **`Estimate_Exposed_Population.model3`**
+11. **Run the model**  
+   - Run the model by clicking on `Model` -> `Run Model`
+   - Set **Admin Bounderies** to `mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg`
+   - Set **Cyclone Track** to `example_Harald_2025_Track`
+   - Set **Population Raster** to `MDG_WorldPop_2020_constrained.tif`
+   - Set the model output **exposed_population_sum** to `Harald_Exposed_Population`and save it in the `data` -> `output`
+
 
 You can now run this model any time a new cyclone track becomes available.
+
+```{figure} /fig/fr_MDG_AA_model_run_model_M7_e1_task2.PNG
+---
+width: 600px
+name: the_world_result
+align: center
+---
+Pour exécuter le modèle, spécifiez l'entrée comme indiqué dans l'image et définissez le nom de la couche de sortie.
+```
+
+**Your results should look something like this:**
+```{figure} /fig/fr_MDG_AA_intermediate_result_model_task1_basics.PNG
+---
+width: 600px
+name: the_world_result
+align: center
+---
+
+``` 
+12. **Add the cyclone buffer as an additional model output**  
+   - Double-click on the algorithm from step 7 (**Reproject the buffer back to EPSG:4326**) to open its configuration.  
+   - In the **Output layer** field, check the box for **Model Output**.  
+   - Give the output a clear name, for example:
+     ```
+     cyclone_harald_buffer
+     ```  
+   - Click **OK** to save the change.  
+   - This will allow the model to produce both the exposed population results and the buffered cyclone impact zone when it is run.
+13. **Run the model again**  
+   - Run the model by clicking on `Model` -> `Run Model`
+   - Set **Admin Bounderies** to `mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg`
+   - Set **Cyclone Track** to `example_Harald_2025_Track`
+   - Set **Population Raster** to `MDG_WorldPop_2020_constrained.tif`
+   - Set the model output **cyclone_harald_buffer** to `cyclone_harald_buffer`and save it in the `data` -> `output`
+   - Set the model output **exposed_population_sum** to `Harald_Exposed_Population`and save it in the `data` -> `output`
+
+
+::::{tab-set}
+
+:::{tab-item} Model Output Buffer confguration
+```{figure} /fig/fr_MDG_AA_model_output_buffer.PNG
+---
+width: 600px
+name: the_world_result
+align: center
+---
+```
+:::
+
+:::{tab-item} Graphic Modler Output Buffer 
+
+```{figure} /fig/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_graphic.PNG
+---
+width: 600px
+name: the_world_result
+align: center
+---
+```
+Definition of the model input: Admin Bounderies
+:::
+
+:::{tab-item} Run Model with Buffer Output
+```{figure} /fig/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_model_exicution.PNG
+---
+width: 600px
+align: center
+---
+Definition of the model input: Population Raster
+```
+:::
+
+:::{tab-item} Model Output
+```{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_extended_buffer.PNG
+---
+width: 600px
+align: center
+---
+Definition of the model input: Population Raster
+```
+:::
+
+::::
+
 
 
 ## Task 3: Identifying Affected Health Facilities and Schools – Aina Adds More Layers
 
 After building her model to estimate exposed population, Aina wants to expand its usefulness. She decides to also **identify critical services** affected by cyclones — especially **health facilities** and **schools**. 
 
-Not only does she want to know *which* facilities are affected, but also *how many in total exist* per district. That way, she can calculate the **percentage of services affected** in each area — a valuable insight for prioritizing early actions.
+Not only does she want to know *which* facilities are affected, but also *how many in total exist* per district. That way, she can calculate the **percentage of services affected** in each area.
 
 To achieve this, she will use two point datasets from OpenStreetMap:
 
@@ -393,39 +601,99 @@ To achieve this, she will use two point datasets from OpenStreetMap:
    - Open your existing model `Estimate_Exposed_Population.model3`.
    - Immediately save it under a new name:
      - Click `Model` → `Save As…`
-     - Save it to the `project` folder as:  
-       **`Estimate_Exposed_Population_Health_Education.model3`**
+     - Save it to the `project` folder as:
+```  
+Estimate_Exposed_Population_Health_Education
+```
 2. **Add new model inputs**  
    - In the **Inputs** section, add:
      - `Vector Layer`  
-       - **Label**: `Health Facilities`  
+       - **Description**:
+        ```
+        Health Facilities
+        ```
        - Set **Geometry Type** to `Point`
      - `Vector Layer`  
-       - **Label**: `Education Facilities`  
+       - **Description**:
+        ```
+        Education Facilities
+        ``` 
        - Set **Geometry Type** to `Point`
+
+::::{tab-set}
+
+:::{tab-item} Model Input: Health Facilities
+```{figure} /fig/fr_MDG_AA_model_input_health_facilities.PNG
+---
+width: 300px
+name: the_world_result
+align: center
+---
+Définir une nouvelle entrée de modèle : couche vectorielle de points représentant les établissements de santé
+```
+
+:::
+
+:::{tab-item} Model Input: Education Facilities
+```{figure} /fig/fr_MDG_AA_model_input_education_facilities.PNG
+---
+width: 300px
+align: center
+---
+Définir une nouvelle entrée de modèle : couche vectorielle de points représentant les établissements d'enseignement
+```
+:::
+::::
 3. **Count All Health Facilities per Admin 2**  
-   - From the **Algorithms** panel, search for **Count Points in Polygon** and drag it in.
+   - From the **Algorithms** panel, search for **Count Points in Polygon**.
    - Configuration:
+     - Add a description: `Comptez le nombre d'établissements de santé dans chaque district.`
      - **Polygon layer**: `Admin Boundaries` (Model Input)
-     - **Points layer**: full `Health Facilities` input
-     - **Count field name**: `count_health_total`
+     - **Points layer**: `Health Facilities` (Model Input)
+     - **Count field name**: 
+      ```
+      Count_health_total
+      ```
      - Leave output as **Model Output**
+```{figure} /fig/fr_MDG_AA_model_count_points_HF_admin2.PNG
+---
+width: 600px
+align: center
+---
+Configuration de l'opération : compter le nombre d'établissements de santé dans chaque district.
+```
+     
 4. **Count All Education Facilities per Admin 2**  
    - Add another **Count Points in Polygon** step.
    - Configuration:
-     - **Points layer**: full `Education Facilities` input
-     - **Count field name**: `count_education_total`
+     - Add a description: `Comptez le nombre d'établissements de education dans chaque district`
+     - **Polygon layer**: `Admin Boundaries` (Model Input)
+     - **Points layer**: `Education Facilities` (Model Input)
+     - **Count field name**: 
+      ```
+      count_education_total
+      ```
      - Leave output as **Model Output**
+```{figure} /fig/fr_MDG_AA_model_count_points_EF_admin2.PNG
+---
+width: 600px
+align: center
+---
+Configuration de l'opération : compter le nombre d'établissements scolaires dans chaque district.
+```
 5. **Intersect Health Facilities with Cyclone Buffer**  
-   - From the **Algorithms** panel, search for **Intersection** and drag it into the model.
+   - From the **Algorithms** panel, search for **Intersection**.
    - In the configuration window:
+   - Add a description: 
      - **Input layer**: `Health Facilities` (Model Input)
      - **Overlay layer**: buffered cyclone zone (use “Reprojected to EPSG:4326” from **Algorithm Output**)
      - Leave output as **Model Output** 
    - Click **OK**
+
 6. **Intersect Education Facilities with Cyclone Buffer**  
    - Add another **Intersection** algorithm.
    - Configuration:
+     - Add a description: 
      - **Input layer**: `Education Facilities` (Model Input)
      - **Overlay layer**: buffered cyclone zone (use “Reprojected to EPSG:4326” from **Algorithm Output**)
      - Leave output as **Model Output**
@@ -433,21 +701,25 @@ To achieve this, she will use two point datasets from OpenStreetMap:
 7. **Count Affected Health Facilities per Admin 2**  
    - Add **Count Points in Polygon**
    - Configuration:
+     - Add a description: 
      - **Polygon layer**: `Admin Boundaries`
      - **Points layer**: intersected health facilities output
      - **Count field name**: `count_health_affected`
 8. **Count Affected Education Facilities per Admin 2**  
    - Add **Count Points in Polygon**
    - Configuration:
+     - Add a description: 
      - **Points layer**: intersected education facilities output
      - **Count field name**: `count_education_affected`
 9. **Calculate percentage of affected Health Facilities**
 To compute the percentage of affected health sites per administrative area, we will use the **Field Calculator**:
 - Add the  **Field Calculator**:
-  - **Input layer**: the output of Count Affected Health Facilities per Admin 2
-  - **Output field name**: `pct_health_affected`
-  - **Field type**: Decimal (real)
-  - **Expression**:
+   - Configuration:
+     - Add a description: 
+    - **Input layer**: the output of Count Affected Health Facilities per Admin 2
+    - **Output field name**: `pct_health_affected`
+    - **Field type**: Decimal (real)
+    - **Expression**:
     ```qgis
     CASE WHEN "count_health_total" > 0
     THEN "sum_exposed_healthsites_POI" / "count_health_total" * 100
