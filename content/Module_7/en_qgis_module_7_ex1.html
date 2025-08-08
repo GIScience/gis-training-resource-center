@@ -767,20 +767,20 @@ The goal is to prepare an end-to-end analysis and visualization workflow that ca
 <ol class="arabic simple">
 <li><p><strong>Open QGIS</strong> and create a <span class="xref myst">new project</span> by clicking on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span></code></p></li>
 <li><p><strong>Save the project</strong> in the “project” folder. To do that click on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">as</span></code> and navigate to the folder. Name the project “Cyclon_Harald_Exposure”.</p></li>
-<li><p><strong>Load the GeoJOSN</strong> file “Harald_2025_Track.geojson” in your project by drag and drop (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop">Wiki Video</a>) . Open the folder <code class="docutils literal notranslate"><span class="pre">data</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">input</span></code></p></li>
+<li><p><strong>Load the GeoJOSN</strong> file “example_Harald_2025_Track.geojson” in your project by drag and drop (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop">Wiki Video</a>) . Open the folder <code class="docutils literal notranslate"><span class="pre">data</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">input</span></code></p></li>
 <li><p><strong>Reproject the cyclone track</strong> to use meters instead of degrees (important for accurate buffering):</p>
 <ul class="simple">
 <li><p>In the <strong>Processing Toolbox</strong>, search for <code class="docutils literal notranslate"><span class="pre">Reproject</span> <span class="pre">Layer</span></code>.</p></li>
-<li><p>Input: <code class="docutils literal notranslate"><span class="pre">Harald_2025_Track</span></code></p></li>
+<li><p>Input: <code class="docutils literal notranslate"><span class="pre">example_Harald_2025_Track</span></code></p></li>
 <li><p>Target CRS: <code class="docutils literal notranslate"><span class="pre">EPSG:29738</span></code> or another meter-based CRS appropriate for Madagascar.</p></li>
 <li><p>Save the result in the <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder as: <strong><code class="docutils literal notranslate"><span class="pre">Harald_Track_Reprojected</span></code></strong></p></li>
 </ul>
 </li>
 </ol>
-<figure class="align-center" id="id1">
+<figure class="align-center" id="id13">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_reproject_cyclon_track.PNG"><img alt="../../_images/fr_MDG_AA_reproject_cyclon_track.PNG" src="../../_images/fr_MDG_AA_reproject_cyclon_track.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Reprojetter la trajectoire du cyclone</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Reprojetter la trajectoire du cyclone</span><a class="headerlink" href="#id13" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition attention">
@@ -799,10 +799,10 @@ The goal is to prepare an end-to-end analysis and visualization workflow that ca
 </ul>
 </li>
 </ol>
-<figure class="align-center" id="id2">
+<figure class="align-center" id="id14">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_cyclon_track_buffer.PNG"><img alt="../../_images/fr_MDG_AA_cyclon_track_buffer.PNG" src="../../_images/fr_MDG_AA_cyclon_track_buffer.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Tamponner la trajectoire du cyclone</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Tamponner la trajectoire du cyclone</span><a class="headerlink" href="#id14" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -812,10 +812,10 @@ Intermediate Result: Buffer<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<figure class="align-center" id="id3">
+<figure class="align-center" id="id15">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_cyclon_track_buffer.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_cyclon_track_buffer.PNG" src="../../_images/fr_MDG_AA_intermediate_result_cyclon_track_buffer.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Les résultats intermédiaires doivent montrer la trajectoire du cyclone et la zone tampon de 200 kilomètres autour de celui-ci. La zone tampon doit être une seule entité.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Les résultats intermédiaires doivent montrer la trajectoire du cyclone et la zone tampon de 200 kilomètres autour de celui-ci. La zone tampon doit être une seule entité.</span><a class="headerlink" href="#id15" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -829,16 +829,16 @@ Intermediate Result: Buffer<div class="sd-summary-down docutils">
 </ul>
 </li>
 </ol>
-<figure class="align-center" id="id4">
+<figure class="align-center" id="id16">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_reproject_cyclon_buffer.PNG"><img alt="../../_images/fr_MDG_AA_reproject_cyclon_buffer.PNG" src="../../_images/fr_MDG_AA_reproject_cyclon_buffer.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Reprojetter la tamponner trajectoire du cyclone</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Reprojetter la tamponner trajectoire du cyclone</span><a class="headerlink" href="#id16" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="7">
 <li><p><strong>Load the administrative boundaries</strong>:</p>
 <ul class="simple">
-<li><p>File: <code class="docutils literal notranslate"><span class="pre">MDG_adm2.gpkg</span></code></p></li>
+<li><p>File: <code class="docutils literal notranslate"><span class="pre">mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg</span></code></p></li>
 <li><p>Add using drag and drop or <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code>.</p></li>
 </ul>
 </li>
@@ -857,34 +857,54 @@ Intermediate Result: Buffer<div class="sd-summary-down docutils">
 </ul>
 </li>
 </ol>
-<figure class="align-center" id="id5">
+<figure class="align-center" id="id17">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_clip_pop_raster.PNG"><img alt="../../_images/fr_MDG_AA_clip_pop_raster.PNG" src="../../_images/fr_MDG_AA_clip_pop_raster.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Découpez la population ratser selon la zone affectée par le cyclone (trajectoire tampon du cyclone)</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Découpez la population ratser selon la zone affectée par le cyclone (trajectoire tampon du cyclone)</span><a class="headerlink" href="#id17" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<ol class="arabic simple" start="10">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Intermediate Result: Clip Population Raster Alyer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<figure class="align-center" id="id18">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_clip_pop_raster.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_clip_pop_raster.PNG" src="../../_images/fr_MDG_AA_intermediate_result_clip_pop_raster.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Résultat intermédiaire du découpage de la couche raster de population à l’étendue de la trajectoire tamponnée du cyclone.</span><a class="headerlink" href="#id18" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</details><ol class="arabic simple" start="10">
 <li><p><strong>Calculate total exposed population</strong>:</p></li>
 </ol>
 <ul class="simple">
 <li><p>In the <strong>Processing Toolbox</strong>, search for <code class="docutils literal notranslate"><span class="pre">Zonal</span> <span class="pre">Statistics</span></code>.</p></li>
-<li><p>Input vector layer: <code class="docutils literal notranslate"><span class="pre">MDG_adm2.gpkg</span></code></p></li>
+<li><p>Input vector layer: <code class="docutils literal notranslate"><span class="pre">mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg</span></code></p></li>
 <li><p>Raster layer: <code class="docutils literal notranslate"><span class="pre">Harald_Pop_Clip</span></code></p></li>
 <li><p>Statistic to calculate: <code class="docutils literal notranslate"><span class="pre">Sum</span></code></p></li>
-<li><p>Field prefix: e.g., <code class="docutils literal notranslate"><span class="pre">pop_</span></code></p></li>
-<li><p>Save the updated vector layer in the <code class="docutils literal notranslate"><span class="pre">result</span></code> folder as: <strong><code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Population.gpkg</span></code></strong></p></li>
-<li><p>The result will be a new column in the attribute table of the <code class="docutils literal notranslate"><span class="pre">MDG_adm2.gpkg</span></code> layer, showing the total population within the cyclone buffer per district.</p></li>
+<li><p>Field prefix: e.g., <code class="docutils literal notranslate"><span class="pre">exposed_population_</span></code></p></li>
+<li><p>Save the updated vector layer in the <code class="docutils literal notranslate"><span class="pre">result</span></code> folder as: <strong><code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Populationg</span></code></strong></p></li>
+<li><p>The result will be a new column in the attribute table of the <code class="docutils literal notranslate"><span class="pre">mdg_admbnda_adm2_BNGRC_OCHA_201810312.gpkg</span></code> layer, showing the total population within the cyclone buffer per district.</p></li>
 </ul>
+<figure class="align-center" id="id19">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_pop_zonal_statistic.PNG"><img alt="../../_images/fr_MDG_AA_pop_zonal_statistic.PNG" src="../../_images/fr_MDG_AA_pop_zonal_statistic.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Calcul de la population exposée aux cyclones par district sur la base du raster de population.</span><a class="headerlink" href="#id19" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <ol class="arabic simple" start="11">
 <li><p><strong>Visualise the affected population by classifying the results</strong>:
 Now that Aina has estimated the exposed population in each district, she wants to clearly show the differences across regions on the map.
-To do this, we’ll apply a <strong>graduated classification</strong> to the <code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Population.gpkg</span></code> layer using the new population field created by the Zonal Statistics tool.</p></li>
+To do this, we’ll apply a <strong>graduated classification</strong> to the <code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Population</span></code> layer using the new population field created by the Zonal Statistics tool.</p></li>
 </ol>
 <ul class="simple">
 <li><p>In the <strong>Layers panel</strong>, right-click on the layer <code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Population</span></code> and choose <code class="docutils literal notranslate"><span class="pre">Properties</span></code>.</p></li>
 <li><p>Go to the <strong>Symbology</strong> tab on the left.</p></li>
 <li><p>At the top of the window, change the style from <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">Symbol</span></code> to <code class="docutils literal notranslate"><span class="pre">Graduated</span></code>.</p></li>
-<li><p>In the <strong>Value</strong> drop-down menu, select the field that contains the population sum. It typically starts with the prefix you defined earlier, e.g. <code class="docutils literal notranslate"><span class="pre">pop_sum</span></code>.</p></li>
+<li><p>In the <strong>Value</strong> drop-down menu, select the field that contains the population sum. It typically starts with the prefix you defined earlier, e.g. <code class="docutils literal notranslate"><span class="pre">exposed_population_sum</span></code>.</p></li>
 <li><p>Set the <strong>color ramp</strong> to one that suits your map (e.g. <code class="docutils literal notranslate"><span class="pre">Reds</span></code>).</p></li>
 <li><p>Choose a <strong>classification mode</strong> (e.g. <code class="docutils literal notranslate"><span class="pre">Quantile</span></code>, <code class="docutils literal notranslate"><span class="pre">Natural</span> <span class="pre">Breaks</span></code>, or <code class="docutils literal notranslate"><span class="pre">Equal</span> <span class="pre">Interval</span></code>) and select the number of classes (e.g. 5).</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Classify</span></code> to generate the classification.</p></li>
@@ -894,9 +914,18 @@ To do this, we’ll apply a <strong>graduated classification</strong> to the <co
 <p class="admonition-title">Tip</p>
 <p>You can adjust class boundaries or labels by double-clicking on each class entry.</p>
 </div>
+<figure class="align-center" id="id20">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_pop_graduadt_classification_exposed_population.PNG"><img alt="../../_images/fr_MDG_AA_pop_graduadt_classification_exposed_population.PNG" src="../../_images/fr_MDG_AA_pop_graduadt_classification_exposed_population.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Configuration of the visualisation of the exposed population in five classes.</span><a class="headerlink" href="#id20" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>Your results should look something like this:</p>
 <figure class="align-center" id="the-world-result">
-<a class="reference internal image-reference" href="../../_images/fig"><img alt="../../_images/fig" src="../../_images/fig" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_visualisation_exposed_population.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_visualisation_exposed_population.PNG" src="../../_images/fr_MDG_AA_intermediate_result_visualisation_exposed_population.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Visualisation de la population exposée en cinq classes.</span><a class="headerlink" href="#the-world-result" title="Permalink to this image">#</a></p>
+</figcaption>
 </figure>
 </section>
 <section id="task-2-automatisation-of-estimating-exposed-population-aina-s-model">
@@ -934,7 +963,7 @@ To do this, we’ll apply a <strong>graduated classification</strong> to the <co
 <li><p>To save the model:</p>
 <ul>
 <li><p>Click the <strong>Save</strong> icon (💾) or go to <code class="docutils literal notranslate"><span class="pre">Model</span></code> → <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
-<li><p>Navigate to the <strong><code class="docutils literal notranslate"><span class="pre">project</span></code> folder</strong> of your training structure.</p></li>
+<li><p>Navigate to the <strong><code class="docutils literal notranslate"><span class="pre">models</span></code> folder</strong> of your training structure.</p></li>
 <li><p>Save the model as:<br />
 <strong><code class="docutils literal notranslate"><span class="pre">Estimate_Exposed_Population</span></code></strong></p></li>
 </ul>
@@ -973,11 +1002,53 @@ To do this, we’ll apply a <strong>graduated classification</strong> to the <co
 </li>
 </ul>
 </li>
+</ol>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-0">
+Input Cyclon Track</label><div class="sd-tab-content docutils">
+<figure class="align-center" id="id21">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_input_cyclon_track.PNG"><img alt="../../_images/fr_MDG_AA_model_input_cyclon_track.PNG" src="../../_images/fr_MDG_AA_model_input_cyclon_track.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Definition of the model input: Cyclon Track</span><a class="headerlink" href="#id21" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-1">
+Input Admin Boundaries </label><div class="sd-tab-content docutils">
+<figure class="align-center" id="id22">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_input_admin_bounderies.PNG"><img alt="../../_images/fr_MDG_AA_model_input_admin_bounderies.PNG" src="../../_images/fr_MDG_AA_model_input_admin_bounderies.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Definition of the model input: Admin Bounderies</span><a class="headerlink" href="#id22" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-2">
+Population Raster</label><div class="sd-tab-content docutils">
+<figure class="align-center" id="id23">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_input_population_raster.PNG"><img alt="../../_images/fr_MDG_AA_model_input_population_raster.PNG" src="../../_images/fr_MDG_AA_model_input_population_raster.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Definition of the model input: Population Raster</span><a class="headerlink" href="#id23" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+<p><strong>Intermediate Result</strong></p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_model_input.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_model_input.PNG" src="../../_images/fr_MDG_AA_intermediate_result_model_input.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Résultat intermédiaire de la définition des données d’entrée du modèle</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="5">
 <li><p><strong>Reproject the cyclone track to EPSG:29738</strong></p>
 <ul class="simple">
-<li><p>From the <strong>Algorithms</strong> panel, search for <strong>Reproject Layer</strong> and drag it into the model canvas.</p></li>
+<li><p>From the <strong>Algorithms</strong> panel, search for <strong>Reproject Layer</strong> .</p></li>
 <li><p>In the configuration window:</p>
 <ul>
+<li><p>Add a description: <code class="docutils literal notranslate"><span class="pre">Reprojecter</span> <span class="pre">la</span> <span class="pre">couche</span> <span class="pre">de</span> <span class="pre">trajectoire</span> <span class="pre">du</span> <span class="pre">cyclone</span> <span class="pre">a</span> <span class="pre">EPSG</span> <span class="pre">:</span> <span class="pre">29738</span></code></p></li>
 <li><p>Set <strong>Input layer</strong> to <code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Track</span></code> (from <strong>Model Input</strong>).</p></li>
 <li><p>Set <strong>Target CRS</strong> to <code class="docutils literal notranslate"><span class="pre">EPSG:29738</span> <span class="pre">–</span> <span class="pre">Madagascar</span> <span class="pre">/</span> <span class="pre">Laborde</span> <span class="pre">Grid</span></code>.</p></li>
 <li><p>Set the output to <strong>Model Output</strong> (leave the output name <strong>empty</strong>).</p></li>
@@ -986,24 +1057,41 @@ To do this, we’ll apply a <strong>graduated classification</strong> to the <co
 <li><p>Click <strong>OK</strong> to add the step to the model.</p></li>
 </ul>
 </li>
+</ol>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_reporject_cyclon_track.PNG"><img alt="../../_images/fr_MDG_AA_model_reporject_cyclon_track.PNG" src="../../_images/fr_MDG_AA_model_reporject_cyclon_track.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Reprojecter la couche de trajectoire du cyclone vers un système de référence de coordonnées métrique (CRS) EPSG : 29738</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="6">
 <li><p><strong>Buffer the reprojected cyclone track</strong></p>
 <ul class="simple">
-<li><p>From the <strong>Algorithms</strong> panel, search for <strong>Buffer</strong> and drag it into the model canvas.</p></li>
-<li><p>In the configuration window:</p>
-<ul>
+<li><p>From the <strong>Algorithms</strong> panel, search for <strong>Buffer</strong>.</p></li>
+<li><p>In the configuration window:</p></li>
+<li><p>Add a description:  <code class="docutils literal notranslate"><span class="pre">Mettre</span> <span class="pre">en</span> <span class="pre">mémoire</span> <span class="pre">tampon</span> <span class="pre">la</span> <span class="pre">couche</span> <span class="pre">Cyclone</span> <span class="pre">reprojetée</span></code></p></li>
+<li><p>Add a description:</p></li>
 <li><p>Set <strong>Input layer</strong> to the output from the previous step (from <strong>Algorithm Output</strong>).</p></li>
 <li><p>Set <strong>Distance</strong> to <code class="docutils literal notranslate"><span class="pre">200000</span></code> (200 km).</p></li>
 <li><p>Leave <strong>Segments</strong> at the default value (<code class="docutils literal notranslate"><span class="pre">5</span></code>).</p></li>
 <li><p>Set <strong>Dissolve result</strong> to <code class="docutils literal notranslate"><span class="pre">Yes</span></code>.</p></li>
 <li><p>Set the output to <strong>Model Output</strong> (leave the output name <strong>empty</strong>).</p></li>
-</ul>
-</li>
 <li><p>Click <strong>OK</strong> to add the step to the model.</p></li>
 </ul>
 </li>
+</ol>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_buffer_cyclon_track.PNG"><img alt="../../_images/fr_MDG_AA_model_buffer_cyclon_track.PNG" src="../../_images/fr_MDG_AA_model_buffer_cyclon_track.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Mettre en mémoire tampon la couche Cyclone reprojetée</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="7">
 <li><p><strong>Reproject the buffer back to EPSG:4326</strong></p>
 <ul class="simple">
-<li><p>From the <strong>Algorithms</strong> panel, search for <strong>Reproject Layer</strong> and drag it into the model canvas.</p></li>
+<li><p>From the <strong>Algorithms</strong> panel, search for <strong>Reproject Layer</strong>.</p></li>
+<li><p>In the configuration window:</p></li>
+<li><p>Add a description:  <code class="docutils literal notranslate"><span class="pre">Reprojecter</span> <span class="pre">le</span> <span class="pre">tampon</span> <span class="pre">vers</span> <span class="pre">EPSG:4326</span></code></p></li>
 <li><p>In the configuration window:</p>
 <ul>
 <li><p>Set <strong>Input layer</strong> to the output from the previous step (from <strong>Algorithm Output</strong>).</p></li>
@@ -1014,9 +1102,22 @@ To do this, we’ll apply a <strong>graduated classification</strong> to the <co
 <li><p>Click <strong>OK</strong> to add the step to the model.</p></li>
 </ul>
 </li>
+</ol>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_reporject_bufferd_cyclon_track.PNG"><img alt="../../_images/fr_MDG_AA_model_reporject_bufferd_cyclon_track.PNG" src="../../_images/fr_MDG_AA_model_reporject_bufferd_cyclon_track.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Reprojecter le tampon vers EPSG:4326</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="8">
 <li><p><strong>Clip the population raster using the buffered area</strong></p>
 <ul class="simple">
-<li><p>From the <strong>Algorithms</strong> panel, search for <strong>Clip Raster by Mask Layer</strong> and drag it into the model canvas.</p></li>
+<li><p>From the <strong>Algorithms</strong> panel, search for <strong>Clip Raster by Mask Layer</strong> .</p></li>
+<li><p>In the configuration window:</p>
+<ul>
+<li><p>Add a description: <code class="docutils literal notranslate"><span class="pre">Découper</span> <span class="pre">la</span> <span class="pre">couche</span> <span class="pre">raster</span> <span class="pre">de</span> <span class="pre">population</span> <span class="pre">pour</span> <span class="pre">l'étendre</span> <span class="pre">au</span> <span class="pre">tampon</span> <span class="pre">Cyclon</span></code></p></li>
+</ul>
+</li>
 <li><p>In the configuration window:</p>
 <ul>
 <li><p>Set <strong>Input layer</strong> to <code class="docutils literal notranslate"><span class="pre">Population</span> <span class="pre">Raster</span></code> (from <strong>Model Input</strong>).</p></li>
@@ -1027,21 +1128,48 @@ To do this, we’ll apply a <strong>graduated classification</strong> to the <co
 <li><p>Click <strong>OK</strong> to add the step to the model.</p></li>
 </ul>
 </li>
+</ol>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_clip_pop_raster.PNG"><img alt="../../_images/fr_MDG_AA_model_clip_pop_raster.PNG" src="../../_images/fr_MDG_AA_model_clip_pop_raster.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Découper la couche raster de population pour l’étendre au tampon Cyclon</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic" start="9">
 <li><p><strong>Calculate zonal statistics to estimate exposed population</strong></p>
-<ul class="simple">
-<li><p>From the <strong>Algorithms</strong> panel, search for <strong>Zonal Statistics</strong> and drag it into the model canvas.</p></li>
-<li><p>In the configuration window:</p>
 <ul>
+<li><p>From the <strong>Algorithms</strong> panel, search for <strong>Zonal Statistics</strong> .</p></li>
+<li><p>In the configuration window: Calcul de la population exposée aux cyclones par district</p>
+<ul class="simple">
+<li><p>Add a description: <code class="docutils literal notranslate"><span class="pre">Calcul</span> <span class="pre">de</span> <span class="pre">la</span> <span class="pre">population</span> <span class="pre">exposée</span> <span class="pre">aux</span> <span class="pre">cyclones</span> <span class="pre">par</span> <span class="pre">district</span></code></p></li>
 <li><p>Set <strong>Input layer</strong> to <code class="docutils literal notranslate"><span class="pre">Admin</span> <span class="pre">Boundaries</span></code> (from <strong>Model Input</strong>).</p></li>
 <li><p>Set <strong>Raster layer</strong> to the output of the previous step (from <strong>Algorithm Output</strong>).</p></li>
 <li><p>Set <strong>Output column prefix</strong> to <code class="docutils literal notranslate"><span class="pre">exposed_population_</span></code>.</p></li>
 <li><p>Under <strong>Statistics to calculate</strong>, select <code class="docutils literal notranslate"><span class="pre">Sum</span></code>.</p></li>
-<li><p>Set the output to <strong>Model Output</strong> and name it: <code class="docutils literal notranslate"><span class="pre">exposed_population_sum</span></code></p></li>
+<li><p>Set the output to <strong>Model Output</strong> and name it:</p></li>
 </ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">exposed_population_sum</span>
+</pre></div>
+</div>
 </li>
 <li><p>Click <strong>OK</strong> to add the step to the model.</p></li>
 </ul>
 </li>
+</ol>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_zonal_statistic_pop_admin2.PNG"><img alt="../../_images/fr_MDG_AA_model_zonal_statistic_pop_admin2.PNG" src="../../_images/fr_MDG_AA_model_zonal_statistic_pop_admin2.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Calcul de la population exposée aux cyclones par district</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p><strong>Your results should look something like this:</strong></p>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_model_algorythms.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_model_algorythms.PNG" src="../../_images/fr_MDG_AA_intermediate_result_model_algorythms.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Votre modèle devrait ressembler à ceci. Tous les algorithmes sont correctement connectés et la sortie du modèle est définie.</span><a class="headerlink" href="#id7" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="10">
 <li><p><strong>Validate your model (recommended)</strong></p></li>
 </ol>
 <ul class="simple">
@@ -1050,21 +1178,93 @@ To do this, we’ll apply a <strong>graduated classification</strong> to the <co
 <li><p>This helps ensure your model is complete and won’t break during execution.</p></li>
 </ul>
 <ol class="arabic simple" start="11">
-<li><p><strong>Save your completed model</strong></p></li>
+<li><p><strong>Run the model</strong></p></li>
 </ol>
 <ul class="simple">
-<li><p>Once your model is finished and the final output is set, save your work.</p></li>
-<li><p>Click the <strong>Save</strong> icon (💾) or go to <code class="docutils literal notranslate"><span class="pre">Model</span></code> → <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
-<li><p>Navigate to the <strong><code class="docutils literal notranslate"><span class="pre">project</span></code> folder</strong> of your training structure.</p></li>
-<li><p>Save the model as:<br />
-<strong><code class="docutils literal notranslate"><span class="pre">Estimate_Exposed_Population.model3</span></code></strong></p></li>
+<li><p>Run the model by clicking on <code class="docutils literal notranslate"><span class="pre">Model</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">Model</span></code></p></li>
+<li><p>Set <strong>Admin Bounderies</strong> to <code class="docutils literal notranslate"><span class="pre">mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg</span></code></p></li>
+<li><p>Set <strong>Cyclone Track</strong> to <code class="docutils literal notranslate"><span class="pre">example_Harald_2025_Track</span></code></p></li>
+<li><p>Set <strong>Population Raster</strong> to <code class="docutils literal notranslate"><span class="pre">MDG_WorldPop_2020_constrained.tif</span></code></p></li>
+<li><p>Set the model output <strong>exposed_population_sum</strong> to <code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Population</span></code>and save it in the <code class="docutils literal notranslate"><span class="pre">data</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">output</span></code></p></li>
 </ul>
 <p>You can now run this model any time a new cyclone track becomes available.</p>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_run_model_M7_e1_task2.PNG"><img alt="../../_images/fr_MDG_AA_model_run_model_M7_e1_task2.PNG" src="../../_images/fr_MDG_AA_model_run_model_M7_e1_task2.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Pour exécuter le modèle, spécifiez l’entrée comme indiqué dans l’image et définissez le nom de la couche de sortie.</span><a class="headerlink" href="#id8" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p><strong>Your results should look something like this:</strong></p>
+<figure class="align-center" id="id9">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_model_task1_basics.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_model_task1_basics.PNG" src="../../_images/fr_MDG_AA_intermediate_result_model_task1_basics.PNG" style="width: 600px;" /></a>
+</figure>
+<ol class="arabic simple" start="12">
+<li><p><strong>Add the cyclone buffer as an additional model output</strong></p></li>
+</ol>
+<ul>
+<li><p>Double-click on the algorithm from step 7 (<strong>Reproject the buffer back to EPSG:4326</strong>) to open its configuration.</p></li>
+<li><p>In the <strong>Output layer</strong> field, check the box for <strong>Model Output</strong>.</p></li>
+<li><p>Give the output a clear name, for example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cyclone_harald_buffer</span>
+</pre></div>
+</div>
+</li>
+<li><p>Click <strong>OK</strong> to save the change.</p></li>
+<li><p>This will allow the model to produce both the exposed population results and the buffered cyclone impact zone when it is run.</p></li>
+</ul>
+<ol class="arabic simple" start="13">
+<li><p><strong>Run the model again</strong></p></li>
+</ol>
+<ul class="simple">
+<li><p>Run the model by clicking on <code class="docutils literal notranslate"><span class="pre">Model</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">Model</span></code></p></li>
+<li><p>Set <strong>Admin Bounderies</strong> to <code class="docutils literal notranslate"><span class="pre">mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg</span></code></p></li>
+<li><p>Set <strong>Cyclone Track</strong> to <code class="docutils literal notranslate"><span class="pre">example_Harald_2025_Track</span></code></p></li>
+<li><p>Set <strong>Population Raster</strong> to <code class="docutils literal notranslate"><span class="pre">MDG_WorldPop_2020_constrained.tif</span></code></p></li>
+<li><p>Set the model output <strong>cyclone_harald_buffer</strong> to <code class="docutils literal notranslate"><span class="pre">cyclone_harald_buffer</span></code>and save it in the <code class="docutils literal notranslate"><span class="pre">data</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">output</span></code></p></li>
+<li><p>Set the model output <strong>exposed_population_sum</strong> to <code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Population</span></code>and save it in the <code class="docutils literal notranslate"><span class="pre">data</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">output</span></code></p></li>
+</ul>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-3">
+Model Output Buffer confguration</label><div class="sd-tab-content docutils">
+<figure class="align-center" id="id10">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_output_buffer.PNG"><img alt="../../_images/fr_MDG_AA_model_output_buffer.PNG" src="../../_images/fr_MDG_AA_model_output_buffer.PNG" style="width: 600px;" /></a>
+</figure>
+</div>
+<input id="sd-tab-item-4" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-4">
+Graphic Modler Output Buffer </label><div class="sd-tab-content docutils">
+<figure class="align-center" id="id11">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_graphic.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_graphic.PNG" src="../../_images/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_graphic.PNG" style="width: 600px;" /></a>
+</figure>
+<p>Definition of the model input: Admin Bounderies</p>
+</div>
+<input id="sd-tab-item-5" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-5">
+Run Model with Buffer Output</label><div class="sd-tab-content docutils">
+<figure class="align-center" id="id24">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_model_exicution.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_model_exicution.PNG" src="../../_images/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_model_exicution.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Definition of the model input: Population Raster</span><a class="headerlink" href="#id24" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<input id="sd-tab-item-6" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-6">
+Model Output</label><div class="sd-tab-content docutils">
+<figure class="align-center" id="id25">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_extended_buffer.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_extended_buffer.PNG" src="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_extended_buffer.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Definition of the model input: Population Raster</span><a class="headerlink" href="#id25" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
 </section>
 <section id="task-3-identifying-affected-health-facilities-and-schools-aina-adds-more-layers">
 <h2>Task 3: Identifying Affected Health Facilities and Schools – Aina Adds More Layers<a class="headerlink" href="#task-3-identifying-affected-health-facilities-and-schools-aina-adds-more-layers" title="Permalink to this heading">#</a></h2>
 <p>After building her model to estimate exposed population, Aina wants to expand its usefulness. She decides to also <strong>identify critical services</strong> affected by cyclones — especially <strong>health facilities</strong> and <strong>schools</strong>.</p>
-<p>Not only does she want to know <em>which</em> facilities are affected, but also <em>how many in total exist</em> per district. That way, she can calculate the <strong>percentage of services affected</strong> in each area — a valuable insight for prioritizing early actions.</p>
+<p>Not only does she want to know <em>which</em> facilities are affected, but also <em>how many in total exist</em> per district. That way, she can calculate the <strong>percentage of services affected</strong> in each area.</p>
 <p>To achieve this, she will use two point datasets from OpenStreetMap:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://data.humdata.org/dataset/hotosm_mdg_health_facilities">Health facilities</a></p></li>
@@ -1077,25 +1277,39 @@ To do this, we’ll apply a <strong>graduated classification</strong> to the <co
 <li><p>Immediately save it under a new name:</p>
 <ul>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Model</span></code> → <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">As…</span></code></p></li>
-<li><p>Save it to the <code class="docutils literal notranslate"><span class="pre">project</span></code> folder as:<br />
-<strong><code class="docutils literal notranslate"><span class="pre">Estimate_Exposed_Population_Health_Education.model3</span></code></strong></p></li>
+<li><p>Save it to the <code class="docutils literal notranslate"><span class="pre">project</span></code> folder as:</p></li>
 </ul>
 </li>
 </ul>
 </li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Estimate_Exposed_Population_Health_Education</span>
+</pre></div>
+</div>
+<ol class="arabic" start="2">
 <li><p><strong>Add new model inputs</strong></p>
-<ul class="simple">
+<ul>
 <li><p>In the <strong>Inputs</strong> section, add:</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">Vector</span> <span class="pre">Layer</span></code></p>
-<ul>
-<li><p><strong>Label</strong>: <code class="docutils literal notranslate"><span class="pre">Health</span> <span class="pre">Facilities</span></code></p></li>
+<ul class="simple">
+<li><p><strong>Description</strong>:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Health</span> <span class="n">Facilities</span>
+</pre></div>
+</div>
+<ul class="simple">
 <li><p>Set <strong>Geometry Type</strong> to <code class="docutils literal notranslate"><span class="pre">Point</span></code></p></li>
 </ul>
 </li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Vector</span> <span class="pre">Layer</span></code></p>
-<ul>
-<li><p><strong>Label</strong>: <code class="docutils literal notranslate"><span class="pre">Education</span> <span class="pre">Facilities</span></code></p></li>
+<ul class="simple">
+<li><p><strong>Description</strong>:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Education</span> <span class="n">Facilities</span>
+</pre></div>
+</div>
+<ul class="simple">
 <li><p>Set <strong>Geometry Type</strong> to <code class="docutils literal notranslate"><span class="pre">Point</span></code></p></li>
 </ul>
 </li>
@@ -1103,35 +1317,89 @@ To do this, we’ll apply a <strong>graduated classification</strong> to the <co
 </li>
 </ul>
 </li>
+</ol>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-7" name="sd-tab-set-2" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-7">
+Model Input: Health Facilities</label><div class="sd-tab-content docutils">
+<figure class="align-center" id="id12">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_input_health_facilities.PNG"><img alt="../../_images/fr_MDG_AA_model_input_health_facilities.PNG" src="../../_images/fr_MDG_AA_model_input_health_facilities.PNG" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-text">Définir une nouvelle entrée de modèle : couche vectorielle de points représentant les établissements de santé</span><a class="headerlink" href="#id12" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<input id="sd-tab-item-8" name="sd-tab-set-2" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-8">
+Model Input: Education Facilities</label><div class="sd-tab-content docutils">
+<figure class="align-center" id="id26">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_input_education_facilities.PNG"><img alt="../../_images/fr_MDG_AA_model_input_education_facilities.PNG" src="../../_images/fr_MDG_AA_model_input_education_facilities.PNG" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-text">Définir une nouvelle entrée de modèle : couche vectorielle de points représentant les établissements d’enseignement</span><a class="headerlink" href="#id26" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+<ol class="arabic" start="3">
 <li><p><strong>Count All Health Facilities per Admin 2</strong></p>
-<ul class="simple">
-<li><p>From the <strong>Algorithms</strong> panel, search for <strong>Count Points in Polygon</strong> and drag it in.</p></li>
-<li><p>Configuration:</p>
 <ul>
+<li><p>From the <strong>Algorithms</strong> panel, search for <strong>Count Points in Polygon</strong>.</p></li>
+<li><p>Configuration:</p>
+<ul class="simple">
+<li><p>Add a description: <code class="docutils literal notranslate"><span class="pre">Comptez</span> <span class="pre">le</span> <span class="pre">nombre</span> <span class="pre">d'établissements</span> <span class="pre">de</span> <span class="pre">santé</span> <span class="pre">dans</span> <span class="pre">chaque</span> <span class="pre">district.</span></code></p></li>
 <li><p><strong>Polygon layer</strong>: <code class="docutils literal notranslate"><span class="pre">Admin</span> <span class="pre">Boundaries</span></code> (Model Input)</p></li>
-<li><p><strong>Points layer</strong>: full <code class="docutils literal notranslate"><span class="pre">Health</span> <span class="pre">Facilities</span></code> input</p></li>
-<li><p><strong>Count field name</strong>: <code class="docutils literal notranslate"><span class="pre">count_health_total</span></code></p></li>
+<li><p><strong>Points layer</strong>: <code class="docutils literal notranslate"><span class="pre">Health</span> <span class="pre">Facilities</span></code> (Model Input)</p></li>
+<li><p><strong>Count field name</strong>:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Count_health_total</span>
+</pre></div>
+</div>
+<ul class="simple">
 <li><p>Leave output as <strong>Model Output</strong></p></li>
 </ul>
 </li>
 </ul>
 </li>
+</ol>
+<figure class="align-center" id="id27">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_count_points_HF_admin2.PNG"><img alt="../../_images/fr_MDG_AA_model_count_points_HF_admin2.PNG" src="../../_images/fr_MDG_AA_model_count_points_HF_admin2.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Configuration de l’opération : compter le nombre d’établissements de santé dans chaque district.</span><a class="headerlink" href="#id27" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic" start="4">
 <li><p><strong>Count All Education Facilities per Admin 2</strong></p>
-<ul class="simple">
+<ul>
 <li><p>Add another <strong>Count Points in Polygon</strong> step.</p></li>
 <li><p>Configuration:</p>
-<ul>
-<li><p><strong>Points layer</strong>: full <code class="docutils literal notranslate"><span class="pre">Education</span> <span class="pre">Facilities</span></code> input</p></li>
-<li><p><strong>Count field name</strong>: <code class="docutils literal notranslate"><span class="pre">count_education_total</span></code></p></li>
+<ul class="simple">
+<li><p>Add a description: <code class="docutils literal notranslate"><span class="pre">Comptez</span> <span class="pre">le</span> <span class="pre">nombre</span> <span class="pre">d'établissements</span> <span class="pre">de</span> <span class="pre">education</span> <span class="pre">dans</span> <span class="pre">chaque</span> <span class="pre">district</span></code></p></li>
+<li><p><strong>Polygon layer</strong>: <code class="docutils literal notranslate"><span class="pre">Admin</span> <span class="pre">Boundaries</span></code> (Model Input)</p></li>
+<li><p><strong>Points layer</strong>: <code class="docutils literal notranslate"><span class="pre">Education</span> <span class="pre">Facilities</span></code> (Model Input)</p></li>
+<li><p><strong>Count field name</strong>:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">count_education_total</span>
+</pre></div>
+</div>
+<ul class="simple">
 <li><p>Leave output as <strong>Model Output</strong></p></li>
 </ul>
 </li>
 </ul>
 </li>
+</ol>
+<figure class="align-center" id="id28">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_count_points_EF_admin2.PNG"><img alt="../../_images/fr_MDG_AA_model_count_points_EF_admin2.PNG" src="../../_images/fr_MDG_AA_model_count_points_EF_admin2.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Configuration de l’opération : compter le nombre d’établissements scolaires dans chaque district.</span><a class="headerlink" href="#id28" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="5">
 <li><p><strong>Intersect Health Facilities with Cyclone Buffer</strong></p>
 <ul class="simple">
-<li><p>From the <strong>Algorithms</strong> panel, search for <strong>Intersection</strong> and drag it into the model.</p></li>
-<li><p>In the configuration window:</p>
+<li><p>From the <strong>Algorithms</strong> panel, search for <strong>Intersection</strong>.</p></li>
+<li><p>In the configuration window:</p></li>
+<li><p>Add a description:</p>
 <ul>
 <li><p><strong>Input layer</strong>: <code class="docutils literal notranslate"><span class="pre">Health</span> <span class="pre">Facilities</span></code> (Model Input)</p></li>
 <li><p><strong>Overlay layer</strong>: buffered cyclone zone (use “Reprojected to EPSG:4326” from <strong>Algorithm Output</strong>)</p></li>
@@ -1146,6 +1414,7 @@ To do this, we’ll apply a <strong>graduated classification</strong> to the <co
 <li><p>Add another <strong>Intersection</strong> algorithm.</p></li>
 <li><p>Configuration:</p>
 <ul>
+<li><p>Add a description:</p></li>
 <li><p><strong>Input layer</strong>: <code class="docutils literal notranslate"><span class="pre">Education</span> <span class="pre">Facilities</span></code> (Model Input)</p></li>
 <li><p><strong>Overlay layer</strong>: buffered cyclone zone (use “Reprojected to EPSG:4326” from <strong>Algorithm Output</strong>)</p></li>
 <li><p>Leave output as <strong>Model Output</strong></p></li>
@@ -1159,6 +1428,7 @@ To do this, we’ll apply a <strong>graduated classification</strong> to the <co
 <li><p>Add <strong>Count Points in Polygon</strong></p></li>
 <li><p>Configuration:</p>
 <ul>
+<li><p>Add a description:</p></li>
 <li><p><strong>Polygon layer</strong>: <code class="docutils literal notranslate"><span class="pre">Admin</span> <span class="pre">Boundaries</span></code></p></li>
 <li><p><strong>Points layer</strong>: intersected health facilities output</p></li>
 <li><p><strong>Count field name</strong>: <code class="docutils literal notranslate"><span class="pre">count_health_affected</span></code></p></li>
@@ -1171,6 +1441,7 @@ To do this, we’ll apply a <strong>graduated classification</strong> to the <co
 <li><p>Add <strong>Count Points in Polygon</strong></p></li>
 <li><p>Configuration:</p>
 <ul>
+<li><p>Add a description:</p></li>
 <li><p><strong>Points layer</strong>: intersected education facilities output</p></li>
 <li><p><strong>Count field name</strong>: <code class="docutils literal notranslate"><span class="pre">count_education_affected</span></code></p></li>
 </ul>
@@ -1182,18 +1453,24 @@ To compute the percentage of affected health sites per administrative area, we w
 </ol>
 <ul>
 <li><p>Add the  <strong>Field Calculator</strong>:</p>
+<ul class="simple">
+<li><p>Configuration:</p>
 <ul>
+<li><p>Add a description:</p></li>
+</ul>
+</li>
 <li><p><strong>Input layer</strong>: the output of Count Affected Health Facilities per Admin 2</p></li>
 <li><p><strong>Output field name</strong>: <code class="docutils literal notranslate"><span class="pre">pct_health_affected</span></code></p></li>
 <li><p><strong>Field type</strong>: Decimal (real)</p></li>
-<li><p><strong>Expression</strong>:</p>
+<li><p><strong>Expression</strong>:</p></li>
+</ul>
 <div class="highlight-qgis notranslate"><div class="highlight"><pre><span></span>CASE WHEN &quot;count_health_total&quot; &gt; 0
 THEN &quot;sum_exposed_healthsites_POI&quot; / &quot;count_health_total&quot; * 100
 ELSE 0
 END
 </pre></div>
 </div>
-</li>
+<ul class="simple">
 <li><p>Set the output as <strong>Model Output</strong></p></li>
 <li><p>Name it: <code class="docutils literal notranslate"><span class="pre">admin2_health_affected_pct</span></code></p></li>
 </ul>
