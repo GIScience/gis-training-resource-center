@@ -103,8 +103,9 @@ The following key processing steps are run inside the model:
         * Health sites and education facilities layers to extract and summarize exposed points of interest.
     These datasets are combined into a table, summarizing exposed infrastructure.
 
-5. Warehouse Accessibility
+<!---5. Warehouse Accessibility
     * Warehouses are filtered based on proximity to exposed regions. The model uses road data and spatial filters to determine accessible warehouses relevant to the response.
+-->
 
 ## How to run the model
 
@@ -231,10 +232,25 @@ align: center
 
 This group includes isochrones for all warehouses, calculated for time intervals up to 24 hours. These layers are useful for assessing accessibility of locations in emergency response planning.
 
-Now we continue working with the model:
-1. Now open the QGIS Model Designer. The tool can be accessed under `Processing` -> `Model Designer`
-2. In the upper panel click `Model` -> `Open Model` and navigate to your folder "AA_Cyclone_Monitoring_Trigger_MAD/trigger_model", mark the "Cyclones_EAP_MAD_Trigger.model3" file and click on `Open`. The model will open and you will see yellow, white, green and grey boxes.
+----
 
+### Opening the model in QGIS
+
+Let's open the QGIS model designer
+1. In the tob bar of your QGIS window, navigate to `Processing` -> `Model Designer`. A new window will open. This is the model designer.
+2. In the upper panel click `Model` -> `Open Model` and navigate to your folder "AA_Cyclone_Monitoring_Trigger_MAD/trigger_model".
+3. Select the "Cyclones_EAP_MAD_Trigger.model3" file and click on `Open`. The model will open and you will see yellow, white, green and grey boxes.
+
+<!--ADD PICTURE
+-->
+
+:::{figure} /fig/AA/fr_qgis_3.44_opening_model_builder.png
+---
+width: 600 px
+name: fr_qgis_ouvrir_modeleur
+---
+Opening the graphical modeler in QGIS 3.44
+:::
 
 | Box | Significance | Description |
 | ----- | --- | --- |
@@ -255,97 +271,68 @@ align: center
 ---
 ```
 
-__Model Input & Output__
+__Model Inputs & Outputs__
 
-```{Attention}  
+
+1. A QGIS model can be run by navigating to the top bar > `Model` (`Modèle`) > `Run Model` (`Exécuter le modèle`) or by clicking on the ![](/fig/Module_7/qgis_3.44_run_model.png) icon. 
+
+
+2. A new window will open. Here you need to define the model's inputs and outputs. For each of these mandatory inputs, you click on the dropdown arrow and choose the respective file.
+
+:::{figure} /fig/AA/fr_qgis_3.44_executer_modele.png
+---
+width: 600 px
+name: fr_qgis_executer_modele
+---
+Selecting the inputs and defining the outputs before running the model.
+:::
+
+::::{margin}
+:::{note}  
 In the dropdown list, only layers that are currently loaded in your QGIS Project will be displayed.
-```
+:::
+::::
 
-For each of these mandatory inputs, you click on the dropdown arrow and choose the respective file.
-
-1. In the upper panel click on `Model` -> `Run Model`. A new window will open where you need to define the model input and output.
-2. The model needs the following 7 input layers:
+3. To run the model, select the following 5 input layers:
     1. ADM1 = `mdg_admbnda_adm1_BNGRC_OCHA_20181031`
     2. ADM2 & Risk = `mdg_adm2_risk - mad_adm2_risk`
-    3. CRM_warehouse_isochrones_250709_ALL = `crm_warehouse_isochrones_250709_ALL`
-    4. CRM warehouses = `20240108_MAD_CRM_Warehouses_updated`
-    5. Cyclone_monitoring_data = `cyclone track of the current event` 
-    6. Madagascar_Health_and_Education_Facilities = `Madagascar_Health_and_Education_Facilities`
-    7. Master Raster = `MAD_pop_constrained_buildings_landcover`
-    8. Max_traveltime in 2 hour intervals (lead time) = `enter a number between 2 and 24`
+    3. Cyclone_monitoring_data = `cyclone track of the current event` 
+    4. Madagascar_Health_and_Education_Facilities = `Madagascar_Health_and_Education_Facilities`
+    5. Master Raster = `MAD_pop_constrained_buildings_landcover`
+
 
 <!-- Names should be the final ones. They are given after the last model from Elias -->
 
-3. Further down, you have to specify where to save the outputs: 
+::::{margin}
+:::{attention}
+If you don't specify the location to save the output files, the outputs will be loaded as __temporary layers__ after running the model and __disappear even after saving the project file__.
+:::
+::::
 
-    1. `Exposed_Cyclone_Area`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
-    ```md
-    exposed_cyclone_area
-    ```
+3. Further down, you have to specify where to save the outputs. For each output, click on the three points ![](/fig/Three_points.png) > `Save to Geopackage` (`Enregistrer dans un Geopackage...`). A File explorer window will open. Navigate to the folder `.../AA_Cyclone_Monitoring_Trigger_MDG/model_outputs/` and give it the __name of the output layer and the date__ (YYYYMMDD). 
+    1. `Exposed_Cyclone_Area_YYYYMMDD`, for example, `Exposed_Cyclone_Area_YYYYMMDD_20250805`
+    2. One output is called `Spreadsheet_Exposed_District` for which the model will ouput a `.csv`-file. For this layer, choose `Save to file` (`Enregistrer vers un fichier...`), navigate to the folder `.../AA_Cyclone_Monitoring_Trigger_MDG/model_outputs/` and give it the name `Spreadsheet_Exposed_Districts_YYYYMMDD`
+    3. `Exposed_Education_Facilities_points_YYYYMMDD`
+    4. `Exposed_Health_Facilities_points_YYYYMMDD`
+    5. `Exposed_Regions_YYYYMMDD`
+    6. `Exposed_Districts_YYYYMMDD`
+    7. `Exposed_Population_YYYYMMDD`
+    8. `Exposed_Buildings_YYYYMMDD`
+    9. `Exposed_Agricultural_Landcover_YYYYMMDD`
+    10. `Exposed_Education_Facilities_YYYYMMDD`
+    11. `Exposed_Health_Facilities_YYYYMMDD`
 
-    2. `Exposed_Education_Facilities`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
-    ```md
-    exposed_education_facilities_points
-    ```
 
-    3. `Exposed_Health_Facilities`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
-    ```md
-    exposed_health_facilities_points
-    ```
-    4. `Exposed_Regions`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
-    ```md
-    exposed_regions
-    ```
+4. Once you have set the names and saving locations for the output layers, click `Run` to execute the model. The output result layers will be automatically added to the main QGIS window upon completion. Once the process has finished, you can close the `Model Designer` window. Make sure to add all newly created layers to the **Model_outputs** group in QGIS. Afterwards, relocate them to their appropriate final groups for further processing.
 
-    5. `Relevant_Warehouses`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
-    ```md
-    relevant_warehouses
-    ```
-
-    6. `Exposed_Districts`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
-    ```md
-    exposed_districts
-    ```
-
-    7. `Exposed_Population`: Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
-    ```md
-    exposed_population
-    ```
-
-    8. `Exposed_Buildings`:Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
-    ```md
-    exposed_buildings
-    ```
-
-    9. `Exposed_Agricultural_Landcover`:Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
-    ```md
-    exposed_agricultural_landcover
-    ```
-    10. `Exposed_Education_Facilities_Points`:Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
-    ```md
-    exposed_health_education
-    ```
-    11. `Exposed_Health_Facilities_Points`:Click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to `Model_outputs` folder. Save the file in `.geojson` format. Give the output the name: 
-    ```md
-    exposed_health_facilities
-    ```
-
-4. Click `Run` to execute the model. The output result layers will be automatically added to the main QGIS window upon completion. Once the process has finished, you can close the `Model Designer` window. Make sure to add all newly created layers to the **Model_outputs** group in QGIS. Afterwards, relocate them to their appropriate final groups for further processing.
-
-<!-- Do we need a video here to show how to run the model?
+<!-- Do we need a video here to show how to run the model? -->
 
 ```{dropdown} Video: Input and output Model
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/model_input_output.mp4"></video>
 ```
--->
 
-```{figure} /fig/MAD_Trigger_model_inputs.PNG
----
-width: 500px
-name: 
-align: center
----
-```
+> We have all the necessary layers to create the individual maps. The next section will cover how to use the predetermined and calculated layers to create the maps using the map templates and layer style files. 
+
 
 ## Step 4: Visualization and Styling of the Model Outputs and creating the Print Map
 
@@ -362,9 +349,9 @@ We will generate two different types of output maps to support the analysis:
     - **exposed health sites**
     - **exposed education facilities**
     - **exposed agricultural landcover**
-:::
 
 Additionally, a map showing the **warehouse isochrones** for all 13 warehouses will be provided. The map and the map template can be found in the **warehouse_isochrone_matrix** folder.
+:::
 
 We will do the following steps in this section:
 
