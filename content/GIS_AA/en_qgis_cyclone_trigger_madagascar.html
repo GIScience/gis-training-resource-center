@@ -1124,7 +1124,7 @@ To update the attribute table displaying the exposed districts:</p>
 <p class="admonition-title">Note</p>
 <p>💡 If too many districts are affected, the attribute table might not fit the page. Reduce the font size in the table’s item properties to make everything visible — but be aware that this may reduce readability.</p>
 </div>
-<ol class="arabic" start="6">
+<ol class="arabic" start="8">
 <li><p>Adjust the Legend by clicking on it in the map layout and have a look at the <code class="docutils literal notranslate"><span class="pre">Item</span> <span class="pre">Properties</span></code> tab and scroll down until you see the <code class="docutils literal notranslate"><span class="pre">Legend</span> <span class="pre">items</span></code> field. If it is not there, check if you have to open the dropdown. Make sure <code class="docutils literal notranslate"><span class="pre">Auto</span> <span class="pre">update</span></code> is <strong>not checked</strong>.</p>
 <ul>
 <li><p>Remove all items in the legend by clicking on each item and then the red minus icon</p>
@@ -1174,7 +1174,18 @@ OpenStreetMap
 </li>
 </ul>
 </li>
+<li><p>Adjust the icons by clicking on the <Picture> field in the items list or on the red cross in the map template.</p></li>
 </ol>
+<ul class="simple">
+<li><p>In the Item Properties, correct the path to the CRM logo by clicking on the three dots <img alt="" src="../../_images/Three_points.png" /> and navigate to <code class="docutils literal notranslate"><span class="pre">\aa_madagascar\AA_Cyclone_Monitoring_Trigger_MAD\logos_pictures</span></code> and selecting the CRM logo file.</p></li>
+<li><p>Repeat the process for the second missing image. This time, select the HeiGIT Logo</p></li>
+</ul>
+<ol class="arabic simple" start="10">
+<li><p>Below the logos, adjust the information in the text box by selecting the text box and navigating to the Item properties.</p></li>
+</ol>
+<ul class="simple">
+<li></li>
+</ul>
 <!-- Maybe add a video on how the Print Layout is created 
 
 ```{dropdown} Video: Making print map
@@ -1215,9 +1226,11 @@ Your final output should look like this after styling the layer<div class="sd-su
 <li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Population</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Admin1_Impact_Assessment_Map</span></code> already loaded and style in QGIS</p></li>
 </ul>
+<p>Copy the layers and move them to the group “Map_Cyclone_Impact_Assessment”</p>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_layer_order_impact_map.PNG"><img alt="../../_images/MAD_Trigger_layer_order_impact_map.PNG" src="../../_images/MAD_Trigger_layer_order_impact_map.PNG" style="width: 300px;" /></a>
 </figure>
+<!--Remove the comment as duplicating and loading the style ensures that previous map layouts are not broken. also add that you can fix layer styles and layers in the map items-->
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>If you already created Map 1 earlier in the process, you can reuse the first four layers with their existing styling for Map 2—and vice versa. This ensures consistency across both maps and saves time by avoiding duplicate styling efforts.</p>

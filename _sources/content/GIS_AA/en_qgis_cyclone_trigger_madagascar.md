@@ -494,7 +494,8 @@ The print layout composer after opening the template file.
 ```{note}
 💡 If too many districts are affected, the attribute table might not fit the page. Reduce the font size in the table’s item properties to make everything visible — but be aware that this may reduce readability.
 ```
-6. Adjust the Legend by clicking on it in the map layout and have a look at the `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there, check if you have to open the dropdown. Make sure `Auto update` is **not checked**.
+
+8. Adjust the Legend by clicking on it in the map layout and have a look at the `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there, check if you have to open the dropdown. Make sure `Auto update` is **not checked**.
     * Remove all items in the legend by clicking on each item and then the red minus icon
         * In the pop-up, check **Only show visible layers** to help you find the correct ones
         * To rename a legend item, **double-click** on the layer name in the legend item list and enter the new name  
@@ -524,7 +525,14 @@ The print layout composer after opening the template file.
       Background Map:
       OpenStreetMap
       ```
- 
+
+9. Adjust the icons by clicking on the <Picture> field in the items list or on the red cross in the map template. 
+  * In the Item Properties, correct the path to the CRM logo by clicking on the three dots ![](/fig/Three_points.png) and navigate to `\aa_madagascar\AA_Cyclone_Monitoring_Trigger_MAD\logos_pictures` and selecting the CRM logo file.
+  * Repeat the process for the second missing image. This time, select the HeiGIT Logo
+
+10. Below the logos, adjust the information in the text box by selecting the text box and navigating to the Item properties.
+  * 
+
 <!-- Maybe add a video on how the Print Layout is created 
 
 ```{dropdown} Video: Making print map
@@ -560,6 +568,8 @@ Layers needed for this map:
 - `Exposed_Population`
 - `Admin1_Impact_Assessment_Map` already loaded and style in QGIS
 
+Copy the layers and move them to the group "Map_Cyclone_Impact_Assessment"
+
 ```{figure} /fig/MAD_Trigger_layer_order_impact_map.PNG
 ---
 width: 300px
@@ -567,6 +577,8 @@ name:
 align: center
 ---
 ```
+
+<!--Remove the comment as duplicating and loading the style ensures that previous map layouts are not broken. also add that you can fix layer styles and layers in the map items-->
 
 :::{attention}
 
