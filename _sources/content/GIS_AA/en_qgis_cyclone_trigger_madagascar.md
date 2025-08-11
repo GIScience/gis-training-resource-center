@@ -12,7 +12,7 @@ Setting triggers is one of the cornerstones of the Forecast-based Financing syst
 
 ## Trigger Statement
 
-**Pre-Activation Trigger:** at least one of the meteorological forecasts from Meteo Madagascar, RMSC La Reunion, or ECMWF projects a greater than 50% likelihood of landfall by a tropical cyclone of tropical storm strength or higher within the next 7 days.
+**Pre-Activation Trigger:** at least one of the meteorological forecasts from Météo Madagascar, RMSC La Reunion, or ECMWF projects a greater than 50% likelihood of landfall by a tropical cyclone of tropical storm strength or higher within the next 7 days.
 
 **Activation Trigger:** if the Meteo Madagascar (DGM) forecast indicates landfall of a tropical cyclone with wind speeds in excess of 118 km/h within the next 48-72 hours.
 
@@ -20,7 +20,7 @@ Setting triggers is one of the cornerstones of the Forecast-based Financing syst
 
 <!-- This section will include information on how to download the final report as soon as its published -->
 
-# Functionality of the Trigger Workflow
+# Functionality of the Workflow
 
 The Trigger Process concept is displayed in the figure below.
 
@@ -32,21 +32,30 @@ align: center
 ---
 ```
 
-The entire trigger workflow will be run in a QGIS model, which automates the spatial analysis for assessing the impact of tropical cyclones. It integrates cyclone storm track data with administrative boundaries, population data, infrastructure, and service locations to identify and quantify exposed areas and resources. 
+The provided QGIS project contains the necessary layers and a QGIS model file to perform an assessment of the potential impact of the predicted cyclone event. The analysis workflow will be run in the QGIS model, which automates the steps for assessing the impact of a tropical cyclone event.  It integrates cyclone storm track data with administrative boundaries, population data, infrastructure, and service locations to identify and quantify exposed areas and resources. 
+Based on the cyclone forecast by Météo Madagascar, the model calculates the area likely to be  exposed to the cyclone, the potentially exposed population, number of exposed buildings, exposed agricultural land, and potentially exposed health and education facilities. 
 
-## Trigger Input Data
+Additionally, the QGIS file includes layers with the CRM warehouses and the areas they can service, allowing for a quick accessibilty assessement. The provided folder also contains map templates and style files to generate map reports based on the model calculations. 
+
+The documentation is separated into two parts. The first part covers the spatial analysis using the automated QGIS model. The second part documents how to create the map reports using the map templates and style files. 
+
+<!--Insert image of report?-->
+
+
+## Available Data
 
 For the trigger mechanism to work properly we currently use different datasets: data that we assume to be static in the near term, and variable data which describe the datasets that will be checked for triggering on a regular basis depending on the occurrence of anticipated cyclone events. 
 
 ### Fixed Data
 
-By fixed data we mean datasets that are needed for the trigger to work, that will most probably not change in the near term. In the long term these datasets can be adapted easily.
+By fixed data we mean datasets that are needed to create the map reports, that will most probably not change in the near term. In the long term these datasets can be adapted easily.
 
 | Dataset| Source | Descriptions |
 | ----- | --- | --- |
 | Administrative Boundaries | [HDX](https://data.humdata.org/dataset/cod-ab-mdg) | The administrative boundaries on level 0-4 for Madagascar can be accessed via HDX provided by OCHA. For this trigger mechanism we provide the administrative boundaries on level 1 (regional level) and 2 (district level) as a shapefile. |
 | POI counts | [HOT Export Tool](https://export.hotosm.org/vi/v3/exports/new/describe) | The POI data (education facilities and health sites) is downloaded using the HOT Export Tool based on OpenStreetMap data. |
-| CRM Warehouses | Croix-Rouge Malagasy |  |
+| CRM Warehouses | Croix-Rouge Malagasy | This layer contains points representing the locations of the CRM warehouses  |
+| CRM Warehouse Isochrones | HeiGIT | Using the [Global Friction Surface](https://developers.google.com/earth-engine/datasets/catalog/Oxford_MAP_friction_surface_2019#bands), we calculated the area which can be reached within a specific amount of time from a given warehouse by car.  | 
 | Population Counts | [WorldPop](https://hub.worldpop.org/geodata/summary?id=49646) | The worldpop dataset in raster format provides the estimated total number of people per grid-cell for the year 2020. We will be working with the Constrained Individual countries 2020 dataset at a resolution of 100m. |
 | Buildings Counts | [Global ML Building Footprints](https://gee-community-catalog.org/projects/msbuildings/) | The building counts dataset in raster format counts the number of buildings per 100m grid cell. The workflow on how this dataset was created can be found on [GitLab](https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar) |
 | Land Cover | [ Copernicus Land Cover](https://land.copernicus.eu/en/products/global-dynamic-land-cover/copernicus-global-land-service-land-cover-100m-collection-3-epoch-2019-globe) | The land cover dataset in raster format provides an overview over the dominant land cover type at a resolution of 100m. The workflow on how this dataset was downloaded can be found on [GitLab](https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar) |
@@ -78,9 +87,9 @@ Tropical cyclone track data is available in various subsets, depending on the te
 
 :::
 
-# Automated Trigger Workflow
+# Estimating the impact of the cyclone using the QGIS model
 
-As explained at the start of this chapter the developed trigger workflow is done automatically by a QGIS model. In this chapter we will explain its functionality and in a subsequent step it is explained how to run the automated model.
+As explained at the start of this chapter the developed trigger workflow is done automatically by a QGIS model. In this chapter we will explain its functionality and in a subsequent step it is explained how to run the automated model. The workflow is divided into five steps. The first step explains the folder structure
 
 ## Functionality of the model
 
@@ -166,7 +175,7 @@ align: center
 
 In this step we will open our Trigger project in QGIS and load the QGIS model which will automatically run the analysis for us.
 
-1. Open the file `AA_Cyclone_Monitoring_Trigger_MAD.qgz` by double clicking it.
+1. Open the file `AA_Cyclone_Monitoring_Trigger_MAD.qgz` by double clicking on it.
 2. The QGIS project will open with lots of data pre-loaded. This data is required for running the QGIS model and create some output maps.
 
 The data will be structured into five groups:
@@ -206,6 +215,7 @@ width: 1000px
 name: 
 align: center
 ---
+This map will be created using the layers in group 3.
 ```
 
 **Group 4: Map_Cyclone_Impact_Assessment**
@@ -226,17 +236,23 @@ width: 1000px
 name: 
 align: center
 ---
+This map will be created using the layers in group 4
 ```
+
+<!--EDIT: ADD THE CORRECT PICTURE FOR THIS MAP-->
 
 **Group 5: CRM_Warehouse_Isochrones**
 
 This group includes isochrones for all warehouses, calculated for time intervals up to 24 hours. These layers are useful for assessing accessibility of locations in emergency response planning.
+This group is used to create the CRM warehouse accessibility matrix map. 
+It is also possible to add a specific warehouse isochrone to one of the previous maps. We will cover this further below. 
+
 
 ----
 
 ### Opening the model in QGIS
 
-Let's open the QGIS model designer
+Let's open the QGIS model:
 1. In the tob bar of your QGIS window, navigate to `Processing` -> `Model Designer`. A new window will open. This is the model designer.
 2. In the upper panel click `Model` -> `Open Model` and navigate to your folder "AA_Cyclone_Monitoring_Trigger_MAD/trigger_model".
 3. Select the "Cyclones_EAP_MAD_Trigger.model3" file and click on `Open`. The model will open and you will see yellow, white, green and grey boxes.
@@ -331,10 +347,15 @@ If you don't specify the location to save the output files, the outputs will be 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/model_input_output.mp4"></video>
 ```
 
-> We have all the necessary layers to create the individual maps. The next section will cover how to use the predetermined and calculated layers to create the maps using the map templates and layer style files. 
+:::{card}
+Results
+^^^
+We have all the necessary layers to create the individual maps. The next section will cover how to use the predetermined and calculated layers to create the maps using the map templates and layer style files. 
+:::
 
+# Creating the map reports using the map templates
 
-## Step 4: Visualization and Styling of the Model Outputs and creating the Print Map
+## Step 1: Visualization and Styling of the Model Outputs and creating the Print Map
 
 <!-- Is a video necessary for this chapter? -->
 
@@ -825,7 +846,7 @@ align: center
 ---
 ```
 
-## Step 5: Exporting the Map 
+## Step 2: Exporting the Map 
 
 ```{figure} /fig/MAD_Trigger_workflow_Step5.png
 ---
