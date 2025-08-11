@@ -41,6 +41,11 @@ The documentation is separated into two parts. The first part covers the spatial
 
 <!--Insert image of report?-->
 
+:::{attention}
+
+The QGIS project and QGIS model have been created using QGIS version 3.40.9 (LTR) Bratislava. To ensure that the model is working correctly, do not use older QGIS versions. 
+
+:::
 
 ## Available Data
 
@@ -89,7 +94,7 @@ Tropical cyclone track data is available in various subsets, depending on the te
 
 # Estimating the impact of the cyclone using the QGIS model
 
-As explained at the start of this chapter the developed trigger workflow is done automatically by a QGIS model. In this chapter we will explain its functionality and in a subsequent step it is explained how to run the automated model. The workflow is divided into five steps. The first step explains the folder structure
+As explained at the start of this chapter the developed trigger workflow is done automatically by a QGIS model. In this chapter we will explain its functionality and in a subsequent step it is explained how to run the automated model. 
 
 ## Functionality of the model
 
@@ -362,7 +367,7 @@ We have all the necessary layers to create the individual maps. The next section
 :::{admonition} Output maps
 :class: note
 
-We will generate two different types of output maps to support the analysis:
+We will generate three different types of output maps to support the analysis:
 - Map 1 will provide an cyclone impact overview of the **affected districts, the extent of the cyclone event, and the locations of relevant warehouses**.
 - Map 2 will focus on the impact to infrastructure and population. We will create 5 different impact maps displaying the following information:
     - **exposed population**
@@ -374,8 +379,11 @@ We will generate two different types of output maps to support the analysis:
 Additionally, a map showing the **warehouse isochrones** for all 13 warehouses will be provided. The map and the map template can be found in the **warehouse_isochrone_matrix** folder.
 :::
 
-We will create the maps in two steps (see Step 4a and step 4b below). In the step 4a, we will use the __[symbolisation tab](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel)__ and the __layer style files (.qml)__ to adjust the visualisation of the layers and map canvas. 
-In step 4b, we will use the __[print layout composer](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)__ to create a printable map with additional information such as title, author, description and data tables. 
+We will create the maps in two steps:
+First, we will use the __[layer styling panel](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel)__ and the __layer style files (.qml)__ to adjust the visualisation of the layers on the map canvas.
+
+In a second step, we will use the __[print layout composer](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)__ to create printable maps with additional datatables. 
+
 
 
 ```{figure} /fig/MAD_Trigger_workflow_Step4a.png
@@ -408,6 +416,8 @@ Layers needed for this map:
 - `Admin1_Impact_Overview_Map` already loaded and styled in QGIS 
 - `Exposed_Districts`
 
+Right-click on each of the layers and select `Duplicate this layer`. Move the copy to the group "Map_Cyclone_Impact_Overview". 
+
 The layers should be arranged as shown in the figure below.
 
 ```{figure} /fig/MAD_Trigger_layer_order_overview_map.PNG
@@ -431,9 +441,11 @@ Repeat this process for the following output layers, along with their correspond
 | Layer name | Style | Comment
 | ----- | --- | --- |
 |`Admin1_Impact_Overview_Map`| `adm1_style.qml` | pre-loaded |
-|`relevant_warehouses` | `relevant_warehouses_style.qml` | model output |
+|`CRM_warehouses` | `relevant_warehouses_style.qml` | model output |
 |`exposed_cyclone_area`|`exposed_cyclone_area_style.qml`| model output |
 |`cyclone_track`| `storm_track_cyclone_style.qml`| pre-loaded |
+
+<!--EDIT: Add that the picture location for the CRM warehouse icon needs to specified again. It is located in the logos_pictures folder.-->
 
 :::{attention}
 
@@ -444,19 +456,31 @@ To maintain a clear and organized workspace, group the output layers in the Laye
 :::
 
 #### Making the Print Layout
+
 For easier visualization, we have created these [map templates](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#map-templates) for presenting the results of the trigger analysis. These templates serve as a base for your own visualizations and are available in the following directory: `AA_Cyclone_Monitoring_Trigger_MAD/map_templates`. You can customize the templates to suit your needs and preferences. You can find help [here](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#print-layout).
 
 
-1. Deactivate all Layer Groups except the group `Map_Cyclone_Impact_Overview`.
-2. Open a new print layout by clicking on `Project` -> `New Print Layout` -> enter the name of your current Project e.g "Feddy_2023_Overview".
-3. Right click on the white canvas and select `Page Properties`. In the bottom right section of the print layout, you'll see the page specifications. Set the Size to `A3` and the Orientation to `Landscape` to ensure that the map template fits correctly within the page layout.
-4. Go to the **AA_Cyclone_Monitoring_Trigger_MAD and then map_templates** folder and drag and drop the file `cyclone_impact_overview_map_template.qpt` into the print layout.
-5. **Update the Map Title**  
+1. Deactivate all Layer Groups except the group `Map_Cyclone_Impact_Overview` and the `OpenStreetMap` basemap.
+2. Open a new print layout by clicking on `Project` -> `Layout Manager`. A small new window will appear. Here you can select an existing layout or create a new layout from a template. 
+3. We want to create a new layout from a template. Click on the `Empty Layout` dropdown menu and select `Specific`. 
+4. Below, click on the three dots ![](/fig/Three_points.png) and navigate to the folder `../AA_Cyclone_Monitoring_Trigger_MAD/map_templates/` and select the file with the name `cyclone_impact_overview_map_template`. Click `Open`, then `Create`. 
+5. QGIS will ask you to name the new layout. Give it a name such as "Cyclone_Overview_Map_Freddy_2023". Click `OK`. A new window will open. This is the print layout composer. It should look similar to the figure below.
+
+:::{figure} /fig/AA/overview_map_template.png
+---
+name: overview_map_template
+width: 700 px
+---
+The print layout composer after opening the template file.
+:::
+
+6. **Update the Map Title**  
    - Click on the title text element at the top of the map.
    - In the `Item Properties` panel, edit the **Main Label** text to match your event, e.g. `Cyclone Harald – 2025`.
    - Adjust font size or alignment as needed.
 
-6. **Update the Attribute Table on the Right-Hand Side of the Map**  
+7. **Update the Attribute Table on the Right-Hand Side of the Map**  
+   On the right side, there is a attribute table that did not fully load 
    To update the attribute table displaying the exposed districts:
    - In the `Item Properties` panel, select the `Exposed_Districts` layer and click **Refresh Table Data**
    - Click on `Attributes...`

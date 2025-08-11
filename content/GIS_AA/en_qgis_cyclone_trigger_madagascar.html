@@ -647,6 +647,10 @@ Based on the cyclone forecast by Météo Madagascar, the model calculates the ar
 <p>Additionally, the QGIS file includes layers with the CRM warehouses and the areas they can service, allowing for a quick accessibilty assessement. The provided folder also contains map templates and style files to generate map reports based on the model calculations.</p>
 <p>The documentation is separated into two parts. The first part covers the spatial analysis using the automated QGIS model. The second part documents how to create the map reports using the map templates and style files.</p>
 <!--Insert image of report?-->
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>The QGIS project and QGIS model have been created using QGIS version 3.40.9 (LTR) Bratislava. To ensure that the model is working correctly, do not use older QGIS versions.</p>
+</div>
 <section id="available-data">
 <h2>Available Data<a class="headerlink" href="#available-data" title="Permalink to this heading">#</a></h2>
 <p>For the trigger mechanism to work properly we currently use different datasets: data that we assume to be static in the near term, and variable data which describe the datasets that will be checked for triggering on a regular basis depending on the occurrence of anticipated cyclone events.</p>
@@ -717,7 +721,7 @@ Based on the cyclone forecast by Météo Madagascar, the model calculates the ar
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="estimating-the-impact-of-the-cyclone-using-the-qgis-model">
 <h1>Estimating the impact of the cyclone using the QGIS model<a class="headerlink" href="#estimating-the-impact-of-the-cyclone-using-the-qgis-model" title="Permalink to this heading">#</a></h1>
-<p>As explained at the start of this chapter the developed trigger workflow is done automatically by a QGIS model. In this chapter we will explain its functionality and in a subsequent step it is explained how to run the automated model. The workflow is divided into five steps. The first step explains the folder structure</p>
+<p>As explained at the start of this chapter the developed trigger workflow is done automatically by a QGIS model. In this chapter we will explain its functionality and in a subsequent step it is explained how to run the automated model.</p>
 <section id="functionality-of-the-model">
 <h2>Functionality of the model<a class="headerlink" href="#functionality-of-the-model" title="Permalink to this heading">#</a></h2>
 <!-- Have a final look over this section to see if all the important information is covered -->
@@ -987,7 +991,7 @@ Video: Input and output Model<div class="sd-summary-down docutils">
 <!-- Is a video necessary for this chapter? -->
 <div class="note admonition">
 <p class="admonition-title">Output maps</p>
-<p>We will generate two different types of output maps to support the analysis:</p>
+<p>We will generate three different types of output maps to support the analysis:</p>
 <ul class="simple">
 <li><p>Map 1 will provide an cyclone impact overview of the <strong>affected districts, the extent of the cyclone event, and the locations of relevant warehouses</strong>.</p></li>
 <li><p>Map 2 will focus on the impact to infrastructure and population. We will create 5 different impact maps displaying the following information:</p>
@@ -1002,8 +1006,9 @@ Video: Input and output Model<div class="sd-summary-down docutils">
 </ul>
 <p>Additionally, a map showing the <strong>warehouse isochrones</strong> for all 13 warehouses will be provided. The map and the map template can be found in the <strong>warehouse_isochrone_matrix</strong> folder.</p>
 </div>
-<p>We will create the maps in two steps (see Step 4a and step 4b below). In the step 4a, we will use the <strong><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel">symbolisation tab</a></strong> and the <strong>layer style files (.qml)</strong> to adjust the visualisation of the layers and map canvas.
-In step 4b, we will use the <strong><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout">print layout composer</a></strong> to create a printable map with additional information such as title, author, description and data tables.</p>
+<p>We will create the maps in two steps:
+First, we will use the <strong><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel">layer styling panel</a></strong> and the <strong>layer style files (.qml)</strong> to adjust the visualisation of the layers on the map canvas.</p>
+<p>In a second step, we will use the <strong><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout">print layout composer</a></strong> to create printable maps with additional datatables.</p>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_workflow_Step4a.png"><img alt="../../_images/MAD_Trigger_workflow_Step4a.png" src="../../_images/MAD_Trigger_workflow_Step4a.png" style="width: 1000px;" /></a>
 </figure>
@@ -1022,6 +1027,7 @@ In step 4b, we will use the <strong><a class="reference external" href="https://
 <li><p><code class="docutils literal notranslate"><span class="pre">Admin1_Impact_Overview_Map</span></code> already loaded and styled in QGIS</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Districts</span></code></p></li>
 </ul>
+<p>Right-click on each of the layers and select <code class="docutils literal notranslate"><span class="pre">Duplicate</span> <span class="pre">this</span> <span class="pre">layer</span></code>. Move the copy to the group “Map_Cyclone_Impact_Overview”.</p>
 <p>The layers should be arranged as shown in the figure below.</p>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_layer_order_overview_map.PNG"><img alt="../../_images/MAD_Trigger_layer_order_overview_map.PNG" src="../../_images/MAD_Trigger_layer_order_overview_map.PNG" style="width: 300px;" /></a>
@@ -1048,7 +1054,7 @@ In step 4b, we will use the <strong><a class="reference external" href="https://
 <td><p><code class="docutils literal notranslate"><span class="pre">adm1_style.qml</span></code></p></td>
 <td><p>pre-loaded</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">relevant_warehouses</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouses</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">relevant_warehouses_style.qml</span></code></p></td>
 <td><p>model output</p></td>
 </tr>
@@ -1062,6 +1068,7 @@ In step 4b, we will use the <strong><a class="reference external" href="https://
 </tr>
 </tbody>
 </table>
+<!--EDIT: Add that the picture location for the CRM warehouse icon needs to specified again. It is located in the logos_pictures folder.-->
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>Ensure that all relevant output layers are properly added to the QGIS project. If any layers are missing, try re-running the model or check your Model Outputs folder to see if the files were created successfully.</p>
@@ -1072,10 +1079,19 @@ In step 4b, we will use the <strong><a class="reference external" href="https://
 <h4>Making the Print Layout<a class="headerlink" href="#making-the-print-layout" title="Permalink to this heading">#</a></h4>
 <p>For easier visualization, we have created these <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#map-templates">map templates</a> for presenting the results of the trigger analysis. These templates serve as a base for your own visualizations and are available in the following directory: <code class="docutils literal notranslate"><span class="pre">AA_Cyclone_Monitoring_Trigger_MAD/map_templates</span></code>. You can customize the templates to suit your needs and preferences. You can find help <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#print-layout">here</a>.</p>
 <ol class="arabic simple">
-<li><p>Deactivate all Layer Groups except the group <code class="docutils literal notranslate"><span class="pre">Map_Cyclone_Impact_Overview</span></code>.</p></li>
-<li><p>Open a new print layout by clicking on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Print</span> <span class="pre">Layout</span></code> -&gt; enter the name of your current Project e.g “Feddy_2023_Overview”.</p></li>
-<li><p>Right click on the white canvas and select <code class="docutils literal notranslate"><span class="pre">Page</span> <span class="pre">Properties</span></code>. In the bottom right section of the print layout, you’ll see the page specifications. Set the Size to <code class="docutils literal notranslate"><span class="pre">A3</span></code> and the Orientation to <code class="docutils literal notranslate"><span class="pre">Landscape</span></code> to ensure that the map template fits correctly within the page layout.</p></li>
-<li><p>Go to the <strong>AA_Cyclone_Monitoring_Trigger_MAD and then map_templates</strong> folder and drag and drop the file <code class="docutils literal notranslate"><span class="pre">cyclone_impact_overview_map_template.qpt</span></code> into the print layout.</p></li>
+<li><p>Deactivate all Layer Groups except the group <code class="docutils literal notranslate"><span class="pre">Map_Cyclone_Impact_Overview</span></code> and the <code class="docutils literal notranslate"><span class="pre">OpenStreetMap</span></code> basemap.</p></li>
+<li><p>Open a new print layout by clicking on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Layout</span> <span class="pre">Manager</span></code>. A small new window will appear. Here you can select an existing layout or create a new layout from a template.</p></li>
+<li><p>We want to create a new layout from a template. Click on the <code class="docutils literal notranslate"><span class="pre">Empty</span> <span class="pre">Layout</span></code> dropdown menu and select <code class="docutils literal notranslate"><span class="pre">Specific</span></code>.</p></li>
+<li><p>Below, click on the three dots <img alt="" src="../../_images/Three_points.png" /> and navigate to the folder <code class="docutils literal notranslate"><span class="pre">../AA_Cyclone_Monitoring_Trigger_MAD/map_templates/</span></code> and select the file with the name <code class="docutils literal notranslate"><span class="pre">cyclone_impact_overview_map_template</span></code>. Click <code class="docutils literal notranslate"><span class="pre">Open</span></code>, then <code class="docutils literal notranslate"><span class="pre">Create</span></code>.</p></li>
+<li><p>QGIS will ask you to name the new layout. Give it a name such as “Cyclone_Overview_Map_Freddy_2023”. Click <code class="docutils literal notranslate"><span class="pre">OK</span></code>. A new window will open. This is the print layout composer. It should look similar to the figure below.</p></li>
+</ol>
+<figure class="align-default" id="overview-map-template">
+<a class="reference internal image-reference" href="../../_images/overview_map_template.png"><img alt="../../_images/overview_map_template.png" src="../../_images/overview_map_template.png" style="width: 700px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 60 </span><span class="caption-text">The print layout composer after opening the template file.</span><a class="headerlink" href="#overview-map-template" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="6">
 <li><p><strong>Update the Map Title</strong></p>
 <ul class="simple">
 <li><p>Click on the title text element at the top of the map.</p></li>
@@ -1084,6 +1100,7 @@ In step 4b, we will use the <strong><a class="reference external" href="https://
 </ul>
 </li>
 <li><p><strong>Update the Attribute Table on the Right-Hand Side of the Map</strong><br />
+On the right side, there is a attribute table that did not fully load
 To update the attribute table displaying the exposed districts:</p>
 <ul class="simple">
 <li><p>In the <code class="docutils literal notranslate"><span class="pre">Item</span> <span class="pre">Properties</span></code> panel, select the <code class="docutils literal notranslate"><span class="pre">Exposed_Districts</span></code> layer and click <strong>Refresh Table Data</strong></p></li>
