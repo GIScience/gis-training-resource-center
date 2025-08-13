@@ -344,7 +344,19 @@ If you don't specify the location to save the output files, the outputs will be 
     11. `Exposed_Health_Facilities_YYYYMMDD`
 
 
-4. Once you have set the names and saving locations for the output layers, click `Run` to execute the model. The output result layers will be automatically added to the main QGIS window upon completion. Once the process has finished, you can close the `Model Designer` window. Make sure to add all newly created layers to the **Model_outputs** group in QGIS. Afterwards, relocate them to their appropriate final groups for further processing.
+4. Once you have set the names and saving locations for the output layers, click `Run` to execute the model. The output result layers will be automatically added to the main QGIS window upon completion. Once the process has finished, you can close the `Model Designer` window. 
+
+
+
+5. You will see new layers added to the map canvas and the layers panel
+
+:::{figure} /fig/AA/mdg_aa_model_outputs_canvas.png
+---
+name: mdg_model_output_canvas
+width: 700 px
+---
+:::
+Make sure to add all newly created layers to the **Model_outputs** group in QGIS. Afterwards, relocate them to their appropriate final groups for further processing.
 
 <!-- Do we need a video here to show how to run the model? -->
 
@@ -474,12 +486,22 @@ width: 700 px
 The print layout composer after opening the template file.
 :::
 
+The print layout will automatically load the map canvas. However, to finish the report, we need to adjust and update some of the elements on the print layout. For example, on the right side of the map, the attribute table is not displayed correctly, the legend seems to be wrong, and the logos of the CRM and HeiGIT are displayed as red crosses.
+
 6. **Update the Map Title**  
    - Click on the title text element at the top of the map.
    - In the `Item Properties` panel, edit the **Main Label** text to match your event, e.g. `Cyclone Harald – 2025`.
    - Adjust font size or alignment as needed.
 
+
+
 7. **Update the Attribute Table on the Right-Hand Side of the Map**  
+:::{figure} /fig/AA/mdg_aa_map_1_update_attribute_table.png
+---
+name: mdg_aa_map_1_update_attribute_table
+width: 600 px
+---
+:::
    On the right side, there is a attribute table that did not fully load 
    To update the attribute table displaying the exposed districts:
    - In the `Item Properties` panel, select the `Exposed_Districts` layer and click **Refresh Table Data**
@@ -490,6 +512,9 @@ The print layout composer after opening the template file.
    - In the **Sorting** section:
      - ➕ Add `ADM1_EN` and set the sort order to `Ascending`
    - Click **OK** to apply
+
+
+
 
 ```{note}
 💡 If too many districts are affected, the attribute table might not fit the page. Reduce the font size in the table’s item properties to make everything visible — but be aware that this may reduce readability.
@@ -884,6 +909,8 @@ align: center
 
 ## Step 2: Exporting the Map 
 
+<!--Exporting the map should be done after each layout. If the maps are not locked, it will break the layouts and the work will have to be repeated-->
+
 ```{figure} /fig/MAD_Trigger_workflow_Step5.png
 ---
 width: 1000px
@@ -912,7 +939,7 @@ __Export as PDF__
 
 1. In the print layout click on `Layer` -> `Export as PDF`
 2. Choose the __map_outputs__ folder. Give the file the name of the event e.g **MDG_Trigger_Impact_Overview_Map_Freddy_2023**. For the specific impact assessment change the name to something like **MDG_Trigger_Impact_Population_Map_Freddy_2023**.
-3. Click on `Save`
+3. Click on `Save`.
 4. The window `PDF Export Options` will appear. For the best results, select the `lossless` image compression.
 5. Click `Save`.
 Now the image can be found in the result folder.
@@ -931,6 +958,10 @@ name: Impact of Cyclone Event Freddy 2023
 align: center
 ---
 ```
+
+## Working with the warehouse isochrones
+
+The project includes isochrones for each warehouse. The warehouse isochrones correspond to one warehouse and are identifiable by their location name. If you want to add an isochrone to one of the  It is possible to add individual isochrones to the map templates by simply duplicating 
 
 # Historical Analysis of Cyclone Impacts
 

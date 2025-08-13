@@ -599,6 +599,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-exporting-the-map">Step 2: Exporting the Map</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#working-with-the-warehouse-isochrones">Working with the warehouse isochrones</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#historical-analysis-of-cyclone-impacts">Historical Analysis of Cyclone Impacts</a><ul class="visible nav section-nav flex-column">
@@ -962,8 +963,13 @@ It is also possible to add a specific warehouse isochrone to one of the previous
 <li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Health_Facilities_YYYYMMDD</span></code></p></li>
 </ol>
 </li>
-<li><p>Once you have set the names and saving locations for the output layers, click <code class="docutils literal notranslate"><span class="pre">Run</span></code> to execute the model. The output result layers will be automatically added to the main QGIS window upon completion. Once the process has finished, you can close the <code class="docutils literal notranslate"><span class="pre">Model</span> <span class="pre">Designer</span></code> window. Make sure to add all newly created layers to the <strong>Model_outputs</strong> group in QGIS. Afterwards, relocate them to their appropriate final groups for further processing.</p></li>
+<li><p>Once you have set the names and saving locations for the output layers, click <code class="docutils literal notranslate"><span class="pre">Run</span></code> to execute the model. The output result layers will be automatically added to the main QGIS window upon completion. Once the process has finished, you can close the <code class="docutils literal notranslate"><span class="pre">Model</span> <span class="pre">Designer</span></code> window.</p></li>
+<li><p>You will see new layers added to the map canvas and the layers panel</p></li>
 </ol>
+<figure class="align-default" id="mdg-model-output-canvas">
+<a class="reference internal image-reference" href="../../_images/mdg_aa_model_outputs_canvas.png"><img alt="../../_images/mdg_aa_model_outputs_canvas.png" src="../../_images/mdg_aa_model_outputs_canvas.png" style="width: 700px;" /></a>
+</figure>
+<p>Make sure to add all newly created layers to the <strong>Model_outputs</strong> group in QGIS. Afterwards, relocate them to their appropriate final groups for further processing.</p>
 <!-- Do we need a video here to show how to run the model? -->
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -1091,6 +1097,7 @@ First, we will use the <strong><a class="reference external" href="https://gisci
 <p><span class="caption-number">Fig. 60 </span><span class="caption-text">The print layout composer after opening the template file.</span><a class="headerlink" href="#overview-map-template" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+<p>The print layout will automatically load the map canvas. However, to finish the report, we need to adjust and update some of the elements on the print layout. For example, on the right side of the map, the attribute table is not displayed correctly, the legend seems to be wrong, and the logos of the CRM and HeiGIT are displayed as red crosses.</p>
 <ol class="arabic simple" start="6">
 <li><p><strong>Update the Map Title</strong></p>
 <ul class="simple">
@@ -1099,8 +1106,12 @@ First, we will use the <strong><a class="reference external" href="https://gisci
 <li><p>Adjust font size or alignment as needed.</p></li>
 </ul>
 </li>
-<li><p><strong>Update the Attribute Table on the Right-Hand Side of the Map</strong><br />
-On the right side, there is a attribute table that did not fully load
+<li><p><strong>Update the Attribute Table on the Right-Hand Side of the Map</strong></p></li>
+</ol>
+<figure class="align-default" id="mdg-aa-map-1-update-attribute-table">
+<a class="reference internal image-reference" href="../../_images/mdg_aa_map_1_update_attribute_table.png"><img alt="../../_images/mdg_aa_map_1_update_attribute_table.png" src="../../_images/mdg_aa_map_1_update_attribute_table.png" style="width: 600px;" /></a>
+</figure>
+<p>On the right side, there is a attribute table that did not fully load
 To update the attribute table displaying the exposed districts:</p>
 <ul class="simple">
 <li><p>In the <code class="docutils literal notranslate"><span class="pre">Item</span> <span class="pre">Properties</span></code> panel, select the <code class="docutils literal notranslate"><span class="pre">Exposed_Districts</span></code> layer and click <strong>Refresh Table Data</strong></p></li>
@@ -1118,8 +1129,6 @@ To update the attribute table displaying the exposed districts:</p>
 </li>
 <li><p>Click <strong>OK</strong> to apply</p></li>
 </ul>
-</li>
-</ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>💡 If too many districts are affected, the attribute table might not fit the page. Reduce the font size in the table’s item properties to make everything visible — but be aware that this may reduce readability.</p>
@@ -1698,6 +1707,7 @@ Your final output should look like this after styling the layer<div class="sd-su
 </section>
 <section id="step-2-exporting-the-map">
 <h2>Step 2: Exporting the Map<a class="headerlink" href="#step-2-exporting-the-map" title="Permalink to this heading">#</a></h2>
+<!--Exporting the map should be done after each layout. If the maps are not locked, it will break the layouts and the work will have to be repeated-->
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_workflow_Step5.png"><img alt="../../_images/MAD_Trigger_workflow_Step5.png" src="../../_images/MAD_Trigger_workflow_Step5.png" style="width: 1000px;" /></a>
 </figure>
@@ -1716,7 +1726,7 @@ Now the image can be found in the result folder.</p></li>
 <ol class="arabic simple">
 <li><p>In the print layout click on <code class="docutils literal notranslate"><span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Export</span> <span class="pre">as</span> <span class="pre">PDF</span></code></p></li>
 <li><p>Choose the <strong>map_outputs</strong> folder. Give the file the name of the event e.g <strong>MDG_Trigger_Impact_Overview_Map_Freddy_2023</strong>. For the specific impact assessment change the name to something like <strong>MDG_Trigger_Impact_Population_Map_Freddy_2023</strong>.</p></li>
-<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Save</span></code></p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
 <li><p>The window <code class="docutils literal notranslate"><span class="pre">PDF</span> <span class="pre">Export</span> <span class="pre">Options</span></code> will appear. For the best results, select the <code class="docutils literal notranslate"><span class="pre">lossless</span></code> image compression.</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.
 Now the image can be found in the result folder.</p></li>
@@ -1730,6 +1740,10 @@ Now the image can be found in the result folder.</p></li>
 <figure class="align-center" id="impact-of-cyclone-event-freddy-2023">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_Impact_Buildings_Map.png"><img alt="../../_images/MAD_Trigger_Impact_Buildings_Map.png" src="../../_images/MAD_Trigger_Impact_Buildings_Map.png" style="width: 1000px;" /></a>
 </figure>
+</section>
+<section id="working-with-the-warehouse-isochrones">
+<h2>Working with the warehouse isochrones<a class="headerlink" href="#working-with-the-warehouse-isochrones" title="Permalink to this heading">#</a></h2>
+<p>The project includes isochrones for each warehouse. The warehouse isochrones correspond to one warehouse and are identifiable by their location name. If you want to add an isochrone to one of the  It is possible to add individual isochrones to the map templates by simply duplicating</p>
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="historical-analysis-of-cyclone-impacts">
@@ -1857,6 +1871,7 @@ Now the image can be found in the result folder.</p></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-exporting-the-map">Step 2: Exporting the Map</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#working-with-the-warehouse-isochrones">Working with the warehouse isochrones</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#historical-analysis-of-cyclone-impacts">Historical Analysis of Cyclone Impacts</a><ul class="visible nav section-nav flex-column">
