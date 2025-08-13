@@ -529,6 +529,15 @@ align: center
      ```  
    - Click **OK** to save the change.  
    - This will allow the model to produce both the exposed population results and the buffered cyclone impact zone when it is run.
+
+```{figure} /fig/fr_MDG_AA_model_output_buffer.PNG
+---
+width: 600px
+name: the_world_result
+align: center
+---
+```
+
 13. **Run the model again**  
    - Run the model by clicking on `Model` -> `Run Model`
    - Set **Admin Bounderies** to `mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg`
@@ -540,15 +549,6 @@ align: center
 
 ::::{tab-set}
 
-:::{tab-item} Model Output Buffer confguration
-```{figure} /fig/fr_MDG_AA_model_output_buffer.PNG
----
-width: 600px
-name: the_world_result
-align: center
----
-```
-:::
 
 :::{tab-item} Graphic Modler Output Buffer 
 
@@ -597,7 +597,14 @@ To achieve this, she will use two point datasets from OpenStreetMap:
 - [Health facilities](https://data.humdata.org/dataset/hotosm_mdg_health_facilities)  
 - [Education facilities](https://data.humdata.org/dataset/hotosm_mdg_education_facilities)
 
-1. **Save your model under a new name**  
+1. **Load the health and education facilities datasets**
+First, let's have a look at the data we want to work with.
+- Navigate to your `input` data folder.  
+- Drag and drop the following layers into your QGIS project:  
+  - `hotosm_mdg_health_facilities`  
+  - `hotosm_mdg_education_facilities`  
+- Confirm that both layers are visible in the **Layers Panel** 
+2. **Save your model under a new name**  
    - Open your existing model `Estimate_Exposed_Population.model3`.
    - Immediately save it under a new name:
      - Click `Model` → `Save As…`
@@ -605,7 +612,7 @@ To achieve this, she will use two point datasets from OpenStreetMap:
 ```  
 Estimate_Exposed_Population_Health_Education
 ```
-2. **Add new model inputs**  
+3. **Add new model inputs**  
    - In the **Inputs** section, add:
      - `Vector Layer`  
        - **Description**:
@@ -619,7 +626,6 @@ Estimate_Exposed_Population_Health_Education
         Education Facilities
         ``` 
        - Set **Geometry Type** to `Point`
-
 ::::{tab-set}
 
 :::{tab-item} Model Input: Health Facilities
@@ -631,9 +637,7 @@ align: center
 ---
 Définir une nouvelle entrée de modèle : couche vectorielle de points représentant les établissements de santé
 ```
-
 :::
-
 :::{tab-item} Model Input: Education Facilities
 ```{figure} /fig/fr_MDG_AA_model_input_education_facilities.PNG
 ---
@@ -661,8 +665,7 @@ width: 600px
 align: center
 ---
 Configuration de l'opération : compter le nombre d'établissements de santé dans chaque district.
-```
-     
+```    
 4. **Count All Education Facilities per Admin 2**  
    - Add another **Count Points in Polygon** step.
    - Configuration:
@@ -685,39 +688,91 @@ Configuration de l'opération : compter le nombre d'établissements scolaires da
    - From the **Algorithms** panel, search for **Intersection**.
    - In the configuration window:
    - Add a description: 
+      ```
+      Établissements de santé dans la zone d'impact du cyclone
+      ```  
      - **Input layer**: `Health Facilities` (Model Input)
      - **Overlay layer**: buffered cyclone zone (use “Reprojected to EPSG:4326” from **Algorithm Output**)
      - Leave output as **Model Output** 
    - Click **OK**
-
+```{figure} /fig/fr_MDG_AA_model_clip_intersect_HF_cyclone_buffer.PNG
+---
+width: 600px
+align: center
+---
+Configuration de l'opération : intersecter les établissements de santé avec la zone d'impact du cyclone.
+```
 6. **Intersect Education Facilities with Cyclone Buffer**  
    - Add another **Intersection** algorithm.
    - Configuration:
-     - Add a description: 
+     - Add a description:
+       ```
+       Établissements de education dans la zone d'impact du cyclone.
+       ```  
      - **Input layer**: `Education Facilities` (Model Input)
      - **Overlay layer**: buffered cyclone zone (use “Reprojected to EPSG:4326” from **Algorithm Output**)
      - Leave output as **Model Output**
    - Click **OK**
+```{figure} /fig/fr_MDG_AA_model_clip_intersect_EF_cyclone_buffer.PNG
+---
+width: 600px
+align: center
+---
+Configuration de l'opération : intersecter les établissements de education avec la zone d'impact du cyclone.
+```
 7. **Count Affected Health Facilities per Admin 2**  
    - Add **Count Points in Polygon**
    - Configuration:
      - Add a description: 
-     - **Polygon layer**: `Admin Boundaries`
+       ```
+       Compter les établissements de santé touchés par district
+       ```  
+     - **Polygon layer**: Count total health facilities output
      - **Points layer**: intersected health facilities output
-     - **Count field name**: `count_health_affected`
+     - **Count field name**: 
+       ```
+       sum_exposed_healthsites_POI
+       ```  
+```{figure} /fig/fr_MDG_AA_model_count_points_HF_affected_admin2.PNG
+---
+width: 600px
+align: center
+---
+Configuration de l'opération : compter les établissements de santé touchés par district.
+```
 8. **Count Affected Education Facilities per Admin 2**  
    - Add **Count Points in Polygon**
    - Configuration:
      - Add a description: 
+       ```
+       Compter les établissements education touchés par district
+       ```   
+     - **Polygon layer**: Count total education facilities output
      - **Points layer**: intersected education facilities output
-     - **Count field name**: `count_education_affected`
+     - **Count field name**: 
+       ```
+       sum_exposed_education_POI
+       ```  
+```{figure} /fig/fr_MDG_AA_model_count_points_EF_affected_admin2.PNG
+---
+width: 600px
+align: center
+---
+Configuration de l'opération : compter les établissements de santé touchés par district.
+```
 9. **Calculate percentage of affected Health Facilities**
 To compute the percentage of affected health sites per administrative area, we will use the **Field Calculator**:
 - Add the  **Field Calculator**:
    - Configuration:
-     - Add a description: 
+     - Add a description:
+       ```
+       Calculer le pourcentage d’établissements de santé touchés par district
+       ```  
     - **Input layer**: the output of Count Affected Health Facilities per Admin 2
-    - **Output field name**: `pct_health_affected`
+    - **Output field name**:  
+       ```
+       pct_health_affected
+       ``` 
     - **Field type**: Decimal (real)
     - **Expression**:
     ```qgis
@@ -727,22 +782,50 @@ To compute the percentage of affected health sites per administrative area, we w
     END
     ```
   - Set the output as **Model Output**
-  - Name it: `admin2_health_affected_pct`
+  - Name it:
+   ```
+   admin2_health_affected_pct
+   ```
+```{figure} /fig/fr_MDG_AA_model_field_calc_pct_health_exposed.PNG
+---
+width: 600px
+align: center
+---
+Configuration de l’opération : calculer le pourcentage d’établissements de santé touchés par district.
+```
 10. **Calculate percentage of affected Education Facilities**
-Repeat the process for schools:
-- Add the **Field Calculator**:
-  - **Input layer**: the output of Count Affected Education Facilities per Admin 2
-  - **Output field name**: `pct_education_affected`
-  - **Field type**: Decimal (real)
-  - **Expression**:
-    ```qgis
-    CASE WHEN "count_education_total" > 0
-    THEN "sum_exposed_education_POI" / "count_education_total" * 100
-    ELSE 0
-    END
-    ```
-  - Set the output as **Model Output**
-  - Name it: `admin2_education_affected_pct`
+To compute the percentage of affected education sites per administrative area, we will use the **Field Calculator**:  
+- Add the **Field Calculator**:  
+   - Configuration:  
+     - Add a description:  
+       ```
+       Calculer le pourcentage d’établissements d’éducation touchés par district
+       ```  
+     - **Input layer**: the output of Count Affected Education Facilities per Admin 2  
+     - **Output field name**:  
+       ```
+       pct_education_affected
+       ```  
+     - **Field type**: Decimal (real)  
+     - **Expression**:  
+       ```qgis
+       CASE WHEN "count_education_total" > 0
+       THEN "sum_exposed_education_POI" / "count_education_total" * 100
+       ELSE 0
+       END
+       ```  
+   - Set the output as **Model Output**  
+   - Name it:  
+     ```
+     admin2_education_affected_pct
+     ```
+```{figure} /fig/fr_MDG_AA_model_field_calc_pct_education_exposed.PNG
+---
+width: 600px
+align: center
+---
+Configuration de l’opération : calculer le pourcentage d’établissements d’éducation touchés par district.
+```
 11. **Validate and Save Your Extended Model**  
    - Click the ✔️ **Validate Model** button to check for errors.
    - Save again to:  
@@ -759,6 +842,39 @@ Repeat the process for schools:
      - Choose a location to save the output for the final layers (you can leave intermediate layers in temporary memory).
    - Click **Run** to execute the full model.
    - When finished, you should see all final output layers loaded into your QGIS workspace.
+
+::::{tab-set}
+
+:::{tab-item} Graphic Modler
+
+```{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model.PNG
+---
+width: 600px
+align: center
+---
+Vue d’ensemble du Modèle Graphique de la tâche 3 montrant tous les algorithmes connectés et les sorties définies.
+```
+:::
+:::{tab-item} Run Model Configuration
+```{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_run_configurations.PNG
+---
+width: 600px
+align: center
+---
+Configuration des paramètres pour exécuter le modèle de la tâche 3 avec toutes les couches d’entrée requises.
+```
+:::
+:::{tab-item} Model Output
+```{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model_results_AT.PNG
+---
+width: 600px
+align: center
+---
+Résultats du modèle de la tâche 3 affichés dans QGIS, y compris les pourcentages d’établissements de santé et d’éducation touchés par district.
+```
+:::
+::::
+
 
 ## Task 4: Visualizing Cyclone Impact Results – Aina Styles Her Maps
 
