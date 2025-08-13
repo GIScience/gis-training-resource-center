@@ -348,7 +348,7 @@ If you don't specify the location to save the output files, the outputs will be 
 
 
 
-5. You will see new layers added to the map canvas and the layers panel
+5. You will see new layers added to the map canvas and the layers panel (on the bottom left). Move the new layers to the group "Model_Outputs".
 
 :::{figure} /fig/AA/mdg_aa_model_outputs_canvas.png
 ---
@@ -356,7 +356,7 @@ name: mdg_model_output_canvas
 width: 700 px
 ---
 :::
-Make sure to add all newly created layers to the **Model_outputs** group in QGIS. Afterwards, relocate them to their appropriate final groups for further processing.
+
 
 <!-- Do we need a video here to show how to run the model? -->
 
@@ -372,7 +372,7 @@ We have all the necessary layers to create the individual maps. The next section
 
 # Creating the map reports using the map templates
 
-## Step 1: Visualization and Styling of the Model Outputs and creating the Print Map
+## Visualization and Styling of the Model Outputs and creating the Print Map
 
 <!-- Is a video necessary for this chapter? -->
 
@@ -396,7 +396,7 @@ First, we will use the __[layer styling panel](https://giscience.github.io/gis-t
 
 In a second step, we will use the __[print layout composer](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)__ to create printable maps with additional datatables. 
 
-
+<!---
 
 ```{figure} /fig/MAD_Trigger_workflow_Step4a.png
 ---
@@ -419,7 +419,17 @@ align: center
 
 __Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
 
+-->
+
 ### Map 1: Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations
+
+:::{figure} /fig/MAD_Trigger_Impact_Overview_Map.png
+---
+width: 1000px
+name: 
+align: center
+---
+:::
 
 Layers needed for this map:
 - `CRM_Warehouses`
@@ -428,7 +438,7 @@ Layers needed for this map:
 - `Admin1_Impact_Overview_Map` already loaded and styled in QGIS 
 - `Exposed_Districts`
 
-Right-click on each of the layers and select `Duplicate this layer`. Move the copy to the group "Map_Cyclone_Impact_Overview". 
+__Right-click on each of the layers and select `Duplicate this layer`. Move the copy to the group "Map_Cyclone_Impact_Overview".__ 
 
 The layers should be arranged as shown in the figure below.
 
@@ -456,6 +466,17 @@ Repeat this process for the following output layers, along with their correspond
 |`CRM_warehouses` | `relevant_warehouses_style.qml` | model output |
 |`exposed_cyclone_area`|`exposed_cyclone_area_style.qml`| model output |
 |`cyclone_track`| `storm_track_cyclone_style.qml`| pre-loaded |
+
+6. The styling for the layer `CRM_warehouses` is not fixed yet. Right-click on the layer `CRM_warehouses` > `Properties` and navigate to the symbology tab.
+  :::{figure} /fig/AA/mdg_aa_fix_warehouse_icon.png
+  ---
+  name: fix_warehouse_icon
+  width: 550px
+  ---
+  :::
+  * Select `Raster Image Marker` and then click on the three points ![](/fig/Three_points.png).
+  * In the project folder, navigate to the subfolder called `logo_pictures`. Here you will find a png-file called "ngo-office". Select it and click `Open`.
+
 
 <!--EDIT: Add that the picture location for the CRM warehouse icon needs to specified again. It is located in the logos_pictures folder.-->
 
@@ -502,8 +523,7 @@ name: mdg_aa_map_1_update_attribute_table
 width: 600 px
 ---
 :::
-   On the right side, there is a attribute table that did not fully load 
-   To update the attribute table displaying the exposed districts:
+   - On the right side, there is a attribute table that did not fully load. We want to update the attribute table to display the exposed districts.
    - In the `Item Properties` panel, select the `Exposed_Districts` layer and click **Refresh Table Data**
    - Click on `Attributes...`
    - In the **Columns** section:
@@ -514,49 +534,66 @@ width: 600 px
    - Click **OK** to apply
 
 
-
-
 ```{note}
 💡 If too many districts are affected, the attribute table might not fit the page. Reduce the font size in the table’s item properties to make everything visible — but be aware that this may reduce readability.
 ```
 
-8. Adjust the Legend by clicking on it in the map layout and have a look at the `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there, check if you have to open the dropdown. Make sure `Auto update` is **not checked**.
+8. **Adjust the Legend**
+    * Select the legend item, navigate to the `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there, check if you have to open the dropdown. Make sure `Auto update` is **not checked**.
     * Remove all items in the legend by clicking on each item and then the red minus icon
         * In the pop-up, check **Only show visible layers** to help you find the correct ones
         * To rename a legend item, **double-click** on the layer name in the legend item list and enter the new name  
     * ➕ Add the following layers by clicking the green plus:
+        * `Admin1_Impact_Overview_Map`
+        * `exposed_districts`
+        * `Cyclone Track`
+        * `Exposed_Cyclone_Area`
+        * `CRM_warehouses`  
+        * `OpenStreetMap`
+      * Now, let's rename the layers in the legend. In the __Item properties__, below the list of the legend layers, there is a ![](/fig/AA/mdg_aa_edit_legend.png) `Edit selected item properties`-button. By clicking on it, you can edit the label of the icon in the legend. Rename the layers as follows:
         * `Admin1_Impact_Overview_Map` → rename to  
-      ```md
-      Regions
-      ```
+        ```md
+       Regions
+        ```
         * `exposed_districts` → rename to  
-      ```md
-      Exposed Districts
-      ```
+        ```md
+        Exposed Districts
+        ```
         * `Cyclone Track` → rename to  
-      ```md
-      Projected Cyclone Track
-      ```
+        ```md
+        Projected Cyclone Track
+        ```
         * `Exposed_Cyclone_Area` → rename to  
-      ```md
-      Exposed Cyclone Area
-      ```
+        ```md
+        Exposed Cyclone Area
+        ```
         * `relevant_warehouses` → rename to  
-      ```md
-      Relevant Warehouses
-      ```
+        ```md
+        Relevant Warehouses
+        ```
         * `Background Map: OpenStreetMap` → rename to  
-      ```md
-      Background Map:
-      OpenStreetMap
-      ```
+        ```md
+        Background Map:
+        OpenStreetMap
+        ```
 
 9. Adjust the icons by clicking on the <Picture> field in the items list or on the red cross in the map template. 
   * In the Item Properties, correct the path to the CRM logo by clicking on the three dots ![](/fig/Three_points.png) and navigate to `\aa_madagascar\AA_Cyclone_Monitoring_Trigger_MAD\logos_pictures` and selecting the CRM logo file.
   * Repeat the process for the second missing image. This time, select the HeiGIT Logo
 
+
 10. Below the logos, adjust the information in the text box by selecting the text box and navigating to the Item properties.
-  * 
+
+11. Finally, let's lock the layers and layer styles so that changes in the main QGIS window do not affect our print layout:
+  * In the item list, select __Map 1__.
+  * In the item properties, check the boxes for __lock layers__ and __lock styles for layers__. This will prevent the map to automatically when we make changes to the map canvas
+
+```{figure} /fig/AA/mdg_aa_lock_layers.png
+---
+name: mdg_aa_lock_layers
+width: 600 px
+---
+```
 
 <!-- Maybe add a video on how the Print Layout is created 
 
@@ -573,16 +610,59 @@ Checklist for final map output:
 - Exposed Districts: Include only districts that are actually impacted in your "List of Exposed Districts". Update them according to the event.
 ```
 
-```{dropdown} Your final output should look like this after styling the layer
+::::{dropdown} Your final output should look like this after styling the layer
 You will now see the exposed districts and the locations of relevant warehouses clearly displayed on the map. Additionally, the original storm track line — used as input data — is highlighted, along with the buffered impact area, which serves as a proxy for identifying exposed districts.
 
-```{figure} /fig/MAD_Trigger_Impact_Overview_Map.png
+:::{figure} /fig/MAD_Trigger_Impact_Overview_Map.png
+---
+width: 1000px
+name: 
+align: center
+---
+:::
+::::
+
+
+#### Exporting the Map 
+
+<!--Exporting the map should be done after each layout. If the maps are not locked, it will break the layouts and the work will have to be repeated-->
+
+
+<!---
+```{figure} /fig/MAD_Trigger_workflow_Step5.png
 ---
 width: 1000px
 name: 
 align: center
 ---
 ```
+
+__Purpose:__ Export the designed and finalized map layout in order to print it as a pdf or format of your choice.
+
+
+__Tool:__ [Print Layout Composer](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
+
+-->
+
+When you have finished the design of your map, you can export it as pdf or image file in different data formats.
+
+__Export as Image__
+
+1. In the print layout click on `Layer` -> `Export as Image`
+2. Choose the __map_outputs__ folder. Give the file the name of the event e.g **MDG_Trigger_Impact_Overview_Map_Freddy_2023**. For the specific impact assessment change the name to something like **MDG_Trigger_Impact_Population_Map_Freddy_2023**.
+3. Click on `Save`
+4. The window `Image Export Options` will appear. Click `Save`.
+Now the image can be found in the result folder.
+
+
+__Export as PDF__
+
+1. In the print layout click on `Layer` -> `Export as PDF`
+2. Choose the __map_outputs__ folder. Give the file the name of the event e.g **MDG_Trigger_Impact_Overview_Map_Freddy_2023**. For the specific impact assessment change the name to something like **MDG_Trigger_Impact_Population_Map_Freddy_2023**.
+3. Click on `Save`.
+4. The window `PDF Export Options` will appear. For the best results, select the `lossless` image compression.
+5. Click `Save`.
+Now the image can be found in the result folder.
 
 ### Map 2: Impact Assessment: Exposed Population and Critical Infrastructure
 
@@ -593,7 +673,7 @@ Layers needed for this map:
 - `Exposed_Population`
 - `Admin1_Impact_Assessment_Map` already loaded and style in QGIS
 
-Copy the layers and move them to the group "Map_Cyclone_Impact_Assessment"
+Right click on each layer > `Duplicate this layer` and move the copies to the group "Map_Cyclone_Impact_Assessment"
 
 ```{figure} /fig/MAD_Trigger_layer_order_impact_map.PNG
 ---
@@ -605,11 +685,6 @@ align: center
 
 <!--Remove the comment as duplicating and loading the style ensures that previous map layouts are not broken. also add that you can fix layer styles and layers in the map items-->
 
-:::{attention}
-
-If you already created Map 1 earlier in the process, you can reuse the first four layers with their existing styling for Map 2—and vice versa. This ensures consistency across both maps and saves time by avoiding duplicate styling efforts.
-
-:::
 
 #### Styling of the layers
 
@@ -624,7 +699,7 @@ Repeat this process for the following output layers, along with their correspond
 | Layer name | Style | Comment
 | ----- | --- | --- |
 |`Admin1_Impact_Assessment_Map`| `adm1_style.qml` | pre-loaded |
-|`relevant_warehouses` | `relevant_warehouses_style.qml` | model output |
+|`CRM_warehouses` | `relevant_warehouses_style.qml` | model output |
 |`exposed_cyclone_area`|`exposed_cyclone_area_style.qml`| model output |
 |`cyclone_track`| `storm_track_cyclone_style.qml`| loaded by user |
 

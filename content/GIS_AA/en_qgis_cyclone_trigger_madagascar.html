@@ -585,10 +585,11 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-the-map-reports-using-the-map-templates">Creating the map reports using the map templates</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-visualization-and-styling-of-the-model-outputs-and-creating-the-print-map">Step 1: Visualization and Styling of the Model Outputs and creating the Print Map</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualization-and-styling-of-the-model-outputs-and-creating-the-print-map">Visualization and Styling of the Model Outputs and creating the Print Map</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map-1-cyclone-impact-overview-affected-districts-event-extent-and-warehouse-locations">Map 1: Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#styling-of-the-layers">Styling of the layers</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#making-the-print-layout">Making the Print Layout</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exporting-the-map">Exporting the Map</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map-2-impact-assessment-exposed-population-and-critical-infrastructure">Map 2: Impact Assessment: Exposed Population and Critical Infrastructure</a><ul class="nav section-nav flex-column">
@@ -964,12 +965,11 @@ It is also possible to add a specific warehouse isochrone to one of the previous
 </ol>
 </li>
 <li><p>Once you have set the names and saving locations for the output layers, click <code class="docutils literal notranslate"><span class="pre">Run</span></code> to execute the model. The output result layers will be automatically added to the main QGIS window upon completion. Once the process has finished, you can close the <code class="docutils literal notranslate"><span class="pre">Model</span> <span class="pre">Designer</span></code> window.</p></li>
-<li><p>You will see new layers added to the map canvas and the layers panel</p></li>
+<li><p>You will see new layers added to the map canvas and the layers panel (on the bottom left). Move the new layers to the group “Model_Outputs”.</p></li>
 </ol>
 <figure class="align-default" id="mdg-model-output-canvas">
 <a class="reference internal image-reference" href="../../_images/mdg_aa_model_outputs_canvas.png"><img alt="../../_images/mdg_aa_model_outputs_canvas.png" src="../../_images/mdg_aa_model_outputs_canvas.png" style="width: 700px;" /></a>
 </figure>
-<p>Make sure to add all newly created layers to the <strong>Model_outputs</strong> group in QGIS. Afterwards, relocate them to their appropriate final groups for further processing.</p>
 <!-- Do we need a video here to show how to run the model? -->
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -992,8 +992,8 @@ Video: Input and output Model<div class="sd-summary-down docutils">
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="creating-the-map-reports-using-the-map-templates">
 <h1>Creating the map reports using the map templates<a class="headerlink" href="#creating-the-map-reports-using-the-map-templates" title="Permalink to this heading">#</a></h1>
-<section id="step-1-visualization-and-styling-of-the-model-outputs-and-creating-the-print-map">
-<h2>Step 1: Visualization and Styling of the Model Outputs and creating the Print Map<a class="headerlink" href="#step-1-visualization-and-styling-of-the-model-outputs-and-creating-the-print-map" title="Permalink to this heading">#</a></h2>
+<section id="visualization-and-styling-of-the-model-outputs-and-creating-the-print-map">
+<h2>Visualization and Styling of the Model Outputs and creating the Print Map<a class="headerlink" href="#visualization-and-styling-of-the-model-outputs-and-creating-the-print-map" title="Permalink to this heading">#</a></h2>
 <!-- Is a video necessary for this chapter? -->
 <div class="note admonition">
 <p class="admonition-title">Output maps</p>
@@ -1015,16 +1015,35 @@ Video: Input and output Model<div class="sd-summary-down docutils">
 <p>We will create the maps in two steps:
 First, we will use the <strong><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel">layer styling panel</a></strong> and the <strong>layer style files (.qml)</strong> to adjust the visualisation of the layers on the map canvas.</p>
 <p>In a second step, we will use the <strong><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout">print layout composer</a></strong> to create printable maps with additional datatables.</p>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/MAD_Trigger_workflow_Step4a.png"><img alt="../../_images/MAD_Trigger_workflow_Step4a.png" src="../../_images/MAD_Trigger_workflow_Step4a.png" style="width: 1000px;" /></a>
-</figure>
-<p><strong>Tool:</strong> <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I.html#symbology-for-vector-data">Symbology tab</a></p>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/MAD_Trigger_workflow_Step4b.png"><img alt="../../_images/MAD_Trigger_workflow_Step4b.png" src="../../_images/MAD_Trigger_workflow_Step4b.png" style="width: 1000px;" /></a>
-</figure>
-<p><strong>Tool:</strong>  <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout">Print Layout</a></p>
+<!---
+
+```{figure} /fig/MAD_Trigger_workflow_Step4a.png
+---
+width: 1000px
+name: 
+align: center
+---
+```
+
+__Tool:__ [Symbology tab](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I.html#symbology-for-vector-data)
+
+```{figure} /fig/MAD_Trigger_workflow_Step4b.png
+---
+width: 1000px
+name: 
+align: center
+---
+```
+
+
+__Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
+
+-->
 <section id="map-1-cyclone-impact-overview-affected-districts-event-extent-and-warehouse-locations">
 <h3>Map 1: Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations<a class="headerlink" href="#map-1-cyclone-impact-overview-affected-districts-event-extent-and-warehouse-locations" title="Permalink to this heading">#</a></h3>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/MAD_Trigger_Impact_Overview_Map.png"><img alt="../../_images/MAD_Trigger_Impact_Overview_Map.png" src="../../_images/MAD_Trigger_Impact_Overview_Map.png" style="width: 1000px;" /></a>
+</figure>
 <p>Layers needed for this map:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">CRM_Warehouses</span></code></p></li>
@@ -1033,7 +1052,7 @@ First, we will use the <strong><a class="reference external" href="https://gisci
 <li><p><code class="docutils literal notranslate"><span class="pre">Admin1_Impact_Overview_Map</span></code> already loaded and styled in QGIS</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Districts</span></code></p></li>
 </ul>
-<p>Right-click on each of the layers and select <code class="docutils literal notranslate"><span class="pre">Duplicate</span> <span class="pre">this</span> <span class="pre">layer</span></code>. Move the copy to the group “Map_Cyclone_Impact_Overview”.</p>
+<p><strong>Right-click on each of the layers and select <code class="docutils literal notranslate"><span class="pre">Duplicate</span> <span class="pre">this</span> <span class="pre">layer</span></code>. Move the copy to the group “Map_Cyclone_Impact_Overview”.</strong></p>
 <p>The layers should be arranged as shown in the figure below.</p>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_layer_order_overview_map.PNG"><img alt="../../_images/MAD_Trigger_layer_order_overview_map.PNG" src="../../_images/MAD_Trigger_layer_order_overview_map.PNG" style="width: 300px;" /></a>
@@ -1074,6 +1093,16 @@ First, we will use the <strong><a class="reference external" href="https://gisci
 </tr>
 </tbody>
 </table>
+<ol class="arabic simple" start="6">
+<li><p>The styling for the layer <code class="docutils literal notranslate"><span class="pre">CRM_warehouses</span></code> is not fixed yet. Right-click on the layer <code class="docutils literal notranslate"><span class="pre">CRM_warehouses</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code> and navigate to the symbology tab.</p></li>
+</ol>
+<figure class="align-default" id="fix-warehouse-icon">
+<a class="reference internal image-reference" href="../../_images/mdg_aa_fix_warehouse_icon.png"><img alt="../../_images/mdg_aa_fix_warehouse_icon.png" src="../../_images/mdg_aa_fix_warehouse_icon.png" style="width: 550px;" /></a>
+</figure>
+<ul class="simple">
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">Raster</span> <span class="pre">Image</span> <span class="pre">Marker</span></code> and then click on the three points <img alt="" src="../../_images/Three_points.png" />.</p></li>
+<li><p>In the project folder, navigate to the subfolder called <code class="docutils literal notranslate"><span class="pre">logo_pictures</span></code>. Here you will find a png-file called “ngo-office”. Select it and click <code class="docutils literal notranslate"><span class="pre">Open</span></code>.</p></li>
+</ul>
 <!--EDIT: Add that the picture location for the CRM warehouse icon needs to specified again. It is located in the logos_pictures folder.-->
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
@@ -1111,9 +1140,8 @@ First, we will use the <strong><a class="reference external" href="https://gisci
 <figure class="align-default" id="mdg-aa-map-1-update-attribute-table">
 <a class="reference internal image-reference" href="../../_images/mdg_aa_map_1_update_attribute_table.png"><img alt="../../_images/mdg_aa_map_1_update_attribute_table.png" src="../../_images/mdg_aa_map_1_update_attribute_table.png" style="width: 600px;" /></a>
 </figure>
-<p>On the right side, there is a attribute table that did not fully load
-To update the attribute table displaying the exposed districts:</p>
 <ul class="simple">
+<li><p>On the right side, there is a attribute table that did not fully load. We want to update the attribute table to display the exposed districts.</p></li>
 <li><p>In the <code class="docutils literal notranslate"><span class="pre">Item</span> <span class="pre">Properties</span></code> panel, select the <code class="docutils literal notranslate"><span class="pre">Exposed_Districts</span></code> layer and click <strong>Refresh Table Data</strong></p></li>
 <li><p>Click on <code class="docutils literal notranslate"><span class="pre">Attributes...</span></code></p></li>
 <li><p>In the <strong>Columns</strong> section:</p>
@@ -1134,8 +1162,9 @@ To update the attribute table displaying the exposed districts:</p>
 <p>💡 If too many districts are affected, the attribute table might not fit the page. Reduce the font size in the table’s item properties to make everything visible — but be aware that this may reduce readability.</p>
 </div>
 <ol class="arabic" start="8">
-<li><p>Adjust the Legend by clicking on it in the map layout and have a look at the <code class="docutils literal notranslate"><span class="pre">Item</span> <span class="pre">Properties</span></code> tab and scroll down until you see the <code class="docutils literal notranslate"><span class="pre">Legend</span> <span class="pre">items</span></code> field. If it is not there, check if you have to open the dropdown. Make sure <code class="docutils literal notranslate"><span class="pre">Auto</span> <span class="pre">update</span></code> is <strong>not checked</strong>.</p>
+<li><p><strong>Adjust the Legend</strong></p>
 <ul>
+<li><p>Select the legend item, navigate to the <code class="docutils literal notranslate"><span class="pre">Item</span> <span class="pre">Properties</span></code> tab and scroll down until you see the <code class="docutils literal notranslate"><span class="pre">Legend</span> <span class="pre">items</span></code> field. If it is not there, check if you have to open the dropdown. Make sure <code class="docutils literal notranslate"><span class="pre">Auto</span> <span class="pre">update</span></code> is <strong>not checked</strong>.</p></li>
 <li><p>Remove all items in the legend by clicking on each item and then the red minus icon</p>
 <ul class="simple">
 <li><p>In the pop-up, check <strong>Only show visible layers</strong> to help you find the correct ones</p></li>
@@ -1143,16 +1172,26 @@ To update the attribute table displaying the exposed districts:</p>
 </ul>
 </li>
 <li><p>➕ Add the following layers by clicking the green plus:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Admin1_Impact_Overview_Map</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">exposed_districts</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Track</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Cyclone_Area</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouses</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">OpenStreetMap</span></code></p></li>
+<li><p>Now, let’s rename the layers in the legend. In the <strong>Item properties</strong>, below the list of the legend layers, there is a <img alt="" src="../../_images/mdg_aa_edit_legend.png" /> <code class="docutils literal notranslate"><span class="pre">Edit</span> <span class="pre">selected</span> <span class="pre">item</span> <span class="pre">properties</span></code>-button. By clicking on it, you can edit the label of the icon in the legend. Rename the layers as follows:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Admin1_Impact_Overview_Map</span></code> → rename to</p></li>
 </ul>
-<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Regions
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">exposed_districts</span></code> → rename to</p></li>
+</li>
 </ul>
-<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Exposed Districts
+<p>Regions</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>* `exposed_districts` → rename to  
+```md
+Exposed Districts
 </pre></div>
 </div>
 <ul class="simple">
@@ -1191,10 +1230,15 @@ OpenStreetMap
 </ul>
 <ol class="arabic simple" start="10">
 <li><p>Below the logos, adjust the information in the text box by selecting the text box and navigating to the Item properties.</p></li>
+<li><p>Finally, let’s lock the layers and layer styles so that changes in the main QGIS window do not affect our print layout:</p></li>
 </ol>
 <ul class="simple">
-<li></li>
+<li><p>In the item list, select <strong>Map 1</strong>.</p></li>
+<li><p>In the item properties, check the boxes for <strong>lock layers</strong> and <strong>lock styles for layers</strong>. This will prevent the map to automatically when we make changes to the map canvas</p></li>
 </ul>
+<figure class="align-default" id="mdg-aa-lock-layers">
+<a class="reference internal image-reference" href="../../_images/mdg_aa_lock_layers.png"><img alt="../../_images/mdg_aa_lock_layers.png" src="../../_images/mdg_aa_lock_layers.png" style="width: 600px;" /></a>
+</figure>
 <!-- Maybe add a video on how the Print Layout is created 
 
 ```{dropdown} Video: Making print map
@@ -1224,6 +1268,43 @@ Your final output should look like this after styling the layer<div class="sd-su
 </figure>
 </div>
 </details></section>
+<section id="exporting-the-map">
+<h4>Exporting the Map<a class="headerlink" href="#exporting-the-map" title="Permalink to this heading">#</a></h4>
+<!--Exporting the map should be done after each layout. If the maps are not locked, it will break the layouts and the work will have to be repeated-->
+<!---
+```{figure} /fig/MAD_Trigger_workflow_Step5.png
+---
+width: 1000px
+name: 
+align: center
+---
+```
+
+__Purpose:__ Export the designed and finalized map layout in order to print it as a pdf or format of your choice.
+
+
+__Tool:__ [Print Layout Composer](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
+
+-->
+<p>When you have finished the design of your map, you can export it as pdf or image file in different data formats.</p>
+<p><strong>Export as Image</strong></p>
+<ol class="arabic simple">
+<li><p>In the print layout click on <code class="docutils literal notranslate"><span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Export</span> <span class="pre">as</span> <span class="pre">Image</span></code></p></li>
+<li><p>Choose the <strong>map_outputs</strong> folder. Give the file the name of the event e.g <strong>MDG_Trigger_Impact_Overview_Map_Freddy_2023</strong>. For the specific impact assessment change the name to something like <strong>MDG_Trigger_Impact_Population_Map_Freddy_2023</strong>.</p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Save</span></code></p></li>
+<li><p>The window <code class="docutils literal notranslate"><span class="pre">Image</span> <span class="pre">Export</span> <span class="pre">Options</span></code> will appear. Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.
+Now the image can be found in the result folder.</p></li>
+</ol>
+<p><strong>Export as PDF</strong></p>
+<ol class="arabic simple">
+<li><p>In the print layout click on <code class="docutils literal notranslate"><span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Export</span> <span class="pre">as</span> <span class="pre">PDF</span></code></p></li>
+<li><p>Choose the <strong>map_outputs</strong> folder. Give the file the name of the event e.g <strong>MDG_Trigger_Impact_Overview_Map_Freddy_2023</strong>. For the specific impact assessment change the name to something like <strong>MDG_Trigger_Impact_Population_Map_Freddy_2023</strong>.</p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
+<li><p>The window <code class="docutils literal notranslate"><span class="pre">PDF</span> <span class="pre">Export</span> <span class="pre">Options</span></code> will appear. For the best results, select the <code class="docutils literal notranslate"><span class="pre">lossless</span></code> image compression.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.
+Now the image can be found in the result folder.</p></li>
+</ol>
+</section>
 </section>
 <section id="map-2-impact-assessment-exposed-population-and-critical-infrastructure">
 <h3>Map 2: Impact Assessment: Exposed Population and Critical Infrastructure<a class="headerlink" href="#map-2-impact-assessment-exposed-population-and-critical-infrastructure" title="Permalink to this heading">#</a></h3>
@@ -1235,15 +1316,11 @@ Your final output should look like this after styling the layer<div class="sd-su
 <li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Population</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Admin1_Impact_Assessment_Map</span></code> already loaded and style in QGIS</p></li>
 </ul>
-<p>Copy the layers and move them to the group “Map_Cyclone_Impact_Assessment”</p>
+<p>Right click on each layer &gt; <code class="docutils literal notranslate"><span class="pre">Duplicate</span> <span class="pre">this</span> <span class="pre">layer</span></code> and move the copies to the group “Map_Cyclone_Impact_Assessment”</p>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_layer_order_impact_map.PNG"><img alt="../../_images/MAD_Trigger_layer_order_impact_map.PNG" src="../../_images/MAD_Trigger_layer_order_impact_map.PNG" style="width: 300px;" /></a>
 </figure>
 <!--Remove the comment as duplicating and loading the style ensures that previous map layouts are not broken. also add that you can fix layer styles and layers in the map items-->
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p>If you already created Map 1 earlier in the process, you can reuse the first four layers with their existing styling for Map 2—and vice versa. This ensures consistency across both maps and saves time by avoiding duplicate styling efforts.</p>
-</div>
 <section id="id1">
 <h4>Styling of the layers<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple">
@@ -1266,7 +1343,7 @@ Your final output should look like this after styling the layer<div class="sd-su
 <td><p><code class="docutils literal notranslate"><span class="pre">adm1_style.qml</span></code></p></td>
 <td><p>pre-loaded</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">relevant_warehouses</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouses</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">relevant_warehouses_style.qml</span></code></p></td>
 <td><p>model output</p></td>
 </tr>
@@ -1857,10 +1934,11 @@ Now the image can be found in the result folder.</p></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-the-map-reports-using-the-map-templates">Creating the map reports using the map templates</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-visualization-and-styling-of-the-model-outputs-and-creating-the-print-map">Step 1: Visualization and Styling of the Model Outputs and creating the Print Map</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualization-and-styling-of-the-model-outputs-and-creating-the-print-map">Visualization and Styling of the Model Outputs and creating the Print Map</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map-1-cyclone-impact-overview-affected-districts-event-extent-and-warehouse-locations">Map 1: Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#styling-of-the-layers">Styling of the layers</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#making-the-print-layout">Making the Print Layout</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exporting-the-map">Exporting the Map</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map-2-impact-assessment-exposed-population-and-critical-infrastructure">Map 2: Impact Assessment: Exposed Population and Critical Infrastructure</a><ul class="nav section-nav flex-column">
