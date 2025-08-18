@@ -731,7 +731,7 @@ Configuration de l'opération : intersecter les établissements de education ave
      - **Points layer**: intersected health facilities output
      - **Count field name**: 
        ```
-       sum_exposed_healthsites_POI
+       sum_exposed_healthsites
        ```  
 ```{figure} /fig/fr_MDG_AA_model_count_points_HF_affected_admin2.PNG
 ---
@@ -751,7 +751,7 @@ Configuration de l'opération : compter les établissements de santé touchés p
      - **Points layer**: intersected education facilities output
      - **Count field name**: 
        ```
-       sum_exposed_education_POI
+       sum_exposed_education
        ```  
 ```{figure} /fig/fr_MDG_AA_model_count_points_EF_affected_admin2.PNG
 ---
@@ -784,7 +784,7 @@ To compute the percentage of affected health sites per administrative area, we w
   - Set the output as **Model Output**
   - Name it:
    ```
-   admin2_health_affected_pct
+   admin2_health_affected
    ```
 ```{figure} /fig/fr_MDG_AA_model_field_calc_pct_health_exposed.PNG
 ---
@@ -817,7 +817,7 @@ To compute the percentage of affected education sites per administrative area, w
    - Set the output as **Model Output**  
    - Name it:  
      ```
-     admin2_education_affected_pct
+     admin2_education_affected
      ```
 ```{figure} /fig/fr_MDG_AA_model_field_calc_pct_education_exposed.PNG
 ---
@@ -832,16 +832,32 @@ Configuration de l’opération : calculer le pourcentage d’établissements d�
      **`Estimate_Exposed_Population_Health_Education.model3`**
 12. **Run the model**
    - Click the ▶️ **Run** button in the top-right corner of the Graphical Modeler window.
-   - In the popup dialog:
-     - Browse to select the required input layers:
+   - **Input:**
+     - Click on the three dots for each input dataset and select the correct input:
        - `Cyclone Track` → select the GeoJSON of the storm path (e.g. `Harald_2025_Track.geojson`)
        - `Population Raster` → select the WorldPop raster file
        - `Admin Boundaries` → select the Admin 2 layer (e.g. `MDG_adm2.gpkg`)
        - `Health Facilities` → select the point dataset for health sites
        - `Education Facilities` → select the point dataset for schools
-     - Choose a location to save the output for the final layers (you can leave intermediate layers in temporary memory).
+   - **Output:**
+     - Save all output layers in the output folder and use the names below.
+       - `admin2_health_affacted` -> 
+        ```
+        admin2_health_affected
+        ```
+       - `admin2_education_affected` ->
+        ```
+        admin2_education_affected
+        ```
+       - `cyclone_harald_buffer` ->  
+        ```
+        cyclone_harald_buffer
+        ```
+       - `exposed_population_sum` ->
+        ```
+        Harald_Exposed_Population
+        ```
    - Click **Run** to execute the full model.
-   - When finished, you should see all final output layers loaded into your QGIS workspace.
 
 ::::{tab-set}
 
@@ -878,28 +894,21 @@ Résultats du modèle de la tâche 3 affichés dans QGIS, y compris les pourcent
 
 ## Task 4: Visualizing Cyclone Impact Results – Aina Styles Her Maps
 
-After completing her model, Aina wants to **communicate the results clearly** — both to her Red Cross colleagues and external partners.
+Aina now has all the analysis results she needs — but numbers and tables alone won’t convince her colleagues or decision-makers. What they need are clear and easy-to-read maps that can be used directly in meetings and reports.
 
-She’s **tired of manually restyling every layer** every time new cyclone data comes in. Instead, she wants:
-- ✅ **Clear and consistent visuals**
-- 🔁 **Reusable templates**
-- 📂 **Standardized .qml files** shared across projects
+To save time, Aina doesn’t want to adjust colors and legends manually each time a new cyclone comes in. Instead, she will use ready-made style files (.qml) that instantly give layers a professional and consistent look. Where no style exists yet, she will create one herself, so that next time the map can be updated with just a few clicks.
 
-In this task, you will help Aina apply existing `.qml` styles and create new ones for layers that currently have no preset style.
-
----
+In this task, you will help Aina make her cyclone impact maps both informative and visually compelling by applying and creating QGIS style files.
 
 ### 1. **Load Required Layers (if not already loaded)**
 
 Make sure the following layers are already loaded into your QGIS project. These are outputs from **Task 3**:
 
-- `Harald_2025_Track`
-- `Harald_Buffer_200km`
+- `example_Harald_2025_Track`
+- `cyclone_harald_buffer`
 - `Harald_Exposed_Population`
-- `sum_exposed_healthsites_POI`
-- `sum_exposed_education_POI`
-- `admin2_health_affected_pct`
-- `admin2_education_affected_pct`
+- `admin2_health_affected`
+- `admin2_education_affected`
 
 If any are missing:
 - Load them using **drag & drop** from your `results` folder, or
@@ -908,44 +917,105 @@ If any are missing:
 ---
 
 ### 2. **Apply Predefined Style Files**
-Apply the following `.qml` style files to the respective layers:
+Apply the following`.qml` style files to the respective layers:
 
 | **Layer**                              | **Style File**                            |
 |----------------------------------------|-------------------------------------------|
-| `Harald_2025_Track`                    | `storm_track_cyclone_style.qml`           |
-| `Harald_Buffer_200km`                  | `exposed_cyclone_area_style.qml`          |
+| `example_Harald_2025_Track`                    | `storm_track_cyclone_style.qml`           |
+| `cyclone_harald_buffer`                  | `exposed_cyclone_area_style.qml`          |
 | `Harald_Exposed_Population`            | `exposed_population_style.qml`            |
-| `sum_exposed_healthsites_POI`          | `exposed_healthsites_style.qml`           |
-| `sum_exposed_education_POI`            | `exposed_education_facilities_style.qml`  |
+| `admin2_health_affected`          | `exposed_healthsites_style.qml`           |
+| `admin2_education_affected`            | `exposed_education_facilities_style.qml`  |
+
+```{note}
+⚠️ For the **health** and **education facilities**, the provided style files are linked to the column containing the **sum of exposed facilities**.  
+They are **not** based on the percentage column.  
+```
+
 
 **Steps:**
-- Open the **Layer Styling Panel**
-- Click the `Style` button → `Load Style…`
-- Navigate to the corresponding `.qml` file
-- Click **OK** to apply the style
+- Right-click on the layer in the **Layers Panel**  
+- Select **Properties**  
+- In the window that opens, go to the **Symbology** tab  
+- At the bottom left, click **Style** → **Load Style…**
+- Click on the three points ![](/fig/Three_points.png)  
+- Navigate to the corresponding `.qml` file in the folder `layer_sytle`and select it  
+- Click **Open**, then **Apply** and **OK** to confirm  
+
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_output_style.mp4"></video>
 
 > 💡 *If the style doesn’t load correctly, double-check the column names and make sure the column name used in the `.qml` file matches the one in your layer. To do this, open the **Attribute Table** of the layer and compare field names.*
 
 ---
 
+
+::::{tab-set}
+
+:::{tab-item} Intermediate result: Exposed Population
+
+```{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_pop_style.PNG
+---
+width: 600px
+align: center
+---
+Carte montrant le nombre de personnes exposées par district après l’application du style .qml.
+```
+:::
+:::{tab-item} Intermediate result: Exposed Health Facilities
+```{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_HS_sum_style.PNG
+---
+width: 600px
+align: center
+---
+Carte indiquant le nombre total d’établissements de santé exposés par district, représentés avec le style prédéfini.
+```
+:::
+:::{tab-item} Intermediate result: Exposed Education Facilities
+```{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_ES_sum_style.PNG
+---
+width: 600px
+align: center
+---
+Carte affichant le nombre total d’établissements scolaires exposés par district, après application du fichier de style .qml.
+```
+:::
+::::
+
+
+
 ### 3. **Style Percentage Layers Manually**
 
-Now let’s style the two **percentage layers** that don’t yet have `.qml` files:
-- `admin2_health_affected_pct`
-- `admin2_education_affected_pct`
+Aina also wants to visualise the percentage of exposed health and education facilities. However, since there is no prepared style available, she must complete the process manually.
 
 **Steps:**
-- Select the layer and open the **Layer Styling Panel**
+- **Right-click** on the layer `admin2_health_affected` → select **Duplicate Layer**  
+- **Rename** the duplicated layer to:
+  ```
+  admin2_health_affected_percentage
+  ```
+- Right-click on the layer in the **Layers Panel**  
+- Select **Properties**  
+- In the window that opens, go to the **Symbology** tab  
 - Set **Symbology** to `Graduated`
 - Choose the correct **field**:
-  - `pct_health_affected` or `pct_education_affected`
-- Open the **Histogram** tab to view the value distribution
-- Set:
+  - `pct_health_affected`
+- Open the **Histogram** tab to view the value distribution by clicking on `calculate histogram`
+- Next go back to `Classes` and set the following configuration:
   - **Mode**: `Equal Interval`
   - **Classes**: `4`
-  - **Breaks**: `0–25%`, `25–50%`, `50–75%`, `75–100%`
+- Click `OK`.This will create four classes (`0–25%`, `25–50%`, `50–75%`, `75–100%`)
 - Choose a color ramp (e.g., light yellow → dark red)
 - Optionally customize class labels for clarity
+- Click `Apply`
+
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_style_affacted_HS_pct.mp4"></video>
+
+- Repeat the same process for the layer `admin2_education_affected`.
+After duplicating the layer, rename the new one to:
+ ```
+ admin2_health_affected_percentage
+``` 
+
 
 > 🧠 *Why 4 equal classes?*  
 > This helps visualize severity across districts using simple and interpretable risk categories. However, you can experiment with **Natural Breaks** if data is unevenly distributed.
@@ -957,11 +1027,20 @@ Now let’s style the two **percentage layers** that don’t yet have `.qml` fil
 Save your manually created styles as `.qml` files for future reuse.
 
 **Steps:**
-- In the **Styling Panel**, click `Style` → `Save Style…`
-- Save the file in the same folder as the corresponding dataset
+- Right-click on the layer in the **Layers Panel**  
+- Select **Properties**  
+- In the window that opens, go to the **Symbology** tab  
+- Click on `Style` → `Save Style…`
+- Save the file in the folder `layer_sytle`
 - Use these filenames:
-  - `health_pct_affected_style.qml`
-  - `education_pct_affected_style.qml`
+   ```
+   health_pct_affected_style
+  ```
+  ```
+  education_pct_affected_style
+  ```
+
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_style_save_new_style.mp4"></video>
 ---
 
 ### 5. *(Optional)* Import Styles into Your QGIS Library
