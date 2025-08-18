@@ -208,15 +208,15 @@ Tamponner la trajectoire du cyclone
 :::
 
 
-:::{dropdown} Résultat intermédiaire: Zone tampon
-```{figure} /fig/fr_MDG_AA_intermediate_result_cyclon_track_buffer.PNG
+::::{dropdown} Résultat intermédiaire: Zone tampon
+:::{figure} /fig/fr_MDG_AA_intermediate_result_cyclon_track_buffer.PNG  
 ---
 width: 600px
 align: center
 ---
 Les résultats intermédiaires doivent montrer la trajectoire du cyclone et la zone tampon de 200 kilomètres autour de celui-ci. La zone tampon doit être une seule entité.
-```
 :::
+::::
 
 6. **Reprojeter la zone tampon en EPDG:4326 (pour correpondre au CRS de la couche raster)**
 
@@ -330,39 +330,42 @@ Visualisation de la population exposée en cinq classes.
 ```
 
 
-## Task 2: Automatisation of Estimating Exposed Population – Aina's Model
+## Tâche 2: Automatisation de l’estimation de la population exposée – Le modèle d’Aina
 
-After manually estimating exposed populations in past cyclone seasons, Aina has decided to prepare an **automated model** using the **QGIS Graphical Modeller**. This will help her move faster and avoid repeating the same steps manually each time a cyclone is forecasted.
+Après avoir estimé manuellement les populations exposées lors des saisons cycloniques précédentes, Aina a décidé de créer un __modèle automatisé__ à l’aide du __Modeleur Graphique de QGIS__.
+Cela lui permettra d’agir plus rapidement et d’éviter de répéter les mêmes étapes à chaque fois qu’un cyclone est annoncé.
 
-In this task, you will help Aina build a simple version of that model using the tools from Task 1. The model should:
+Dans cette tâche, vous allez aider Aina à construire une version simple de ce modèle, en réutilisant les outils de la Tâche 1. Le modèle doit effectuer les étapes suivantes:
 
-- Reproject the cyclone track to EPSG:29738  
-- Buffer the cyclone track  
-- Reproject the buffer back to EPSG:4326  
-- Clip the population raster  
-- Run Zonal Statistics to get exposed population per district
+- Reprojeter la trajectoire du cyclone en EPSG:29738
+- Créer une zone tampon autour de cette trajectoire  
+- Reprojeter la zone tampon en EPSG:4326
+- Découper le raster de population  
+- Appliquer les statistiques zonales pour obtenir la population exposée par district
 
 ---
 
-1. **Set up the model structure**:
-   - Open the **Graphical Modeler** from the top menu:  
+1. **Ouvrir le modeleur**:
+   - Ouvrez le modeleur depuis le menu du haut: `Traitement` (`Processing`) -> `Modeleur` (`Graphic Modeler`)   
      `Processing` → `Graphical Modeler…`
 
-2. **Naming the model**:   
-   - A new model window will open. On the **left side**, click on **`Model Properties`** to define basic information about the model:
-     - **Model Name**: `Estimate_Exposed_Population`
-     - **Group**: `Cyclone Trigger Tools`
-     - Leave the description empty or write: _“Automated model to estimate exposed population based on cyclone buffer.”_
+2. **Nommer le modèle**:   
+    - Une nouvelle fenêtre s'ouvrira. À gauch, vous trouvez le panneau `Propriétes du modèle`. Ici, vous pouvez definir les informations du modèle: 
+        - **Nom du modèle**: `Estimation_Population_Exposée`
+        - **Groupe**: `Outils de analysis cyclones`
+        - Laissez la description vide ou ècrivez: *Modèle automatisé pour estimer la population exposée a partir d'un tampon autour du cyclone*.
 
-3. **Save the model**
-   - To save the model:
-     - Click the **Save** icon (💾) or go to `Model` → `Save`.
-     - Navigate to the **`models` folder** of your training structure.
-     - Save the model as:  
-       **`Estimate_Exposed_Population`**
 
-4. **Add model inputs**:  
-   - On the **left panel**, expand the **Inputs** section.
+3. **Enregistrer le modèle:**
+   - Pour enregistrer le modèle:
+     - Cliquez sur l'icône __Enregistrer__ (💾) ou naviguez à `Modèle` -> `Enregistrer`. 
+     - Naviguez jusqu'au dossier `/models/` de votre structure de dossier pour la formation
+     - Enregistrer le modèle sous: `Esimation_Population_Exposée`.
+
+
+4. **Ajouter les entrées du modèle**:  
+   - Dans le panneau gauche, ouvrez la section __Entrées__.
+   - Ajouter les couches d'entrées  On the **left panel**, expand the **Inputs** section.
    - Add the following input layers with type constraints:
      - `+ Vector Layer`  
        - **Label**: `Cyclone Track`  
