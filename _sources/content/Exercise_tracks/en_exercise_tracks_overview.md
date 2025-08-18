@@ -34,4 +34,5 @@ sensible symbolisation and follow the map making steps outlined in chapter [4.6.
 ## Available exercise tracks:
 
 - [Larkana Flood Response](/content/Exercise_tracks/en_larkana_flood_response.md)
+- [Anticipatory Action Analysis for Cyclones in Madagascar](/content/Exercise_tracks/en_mdg_aa_cyclones.md)
 
