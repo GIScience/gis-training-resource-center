@@ -1040,7 +1040,7 @@ Save your manually created styles as `.qml` files for future reuse.
   education_pct_affected_style
   ```
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/ffr_MDG_model_style_save_new_style.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_style_save_new_style.mp4"></video>
 ---
 
 ### 5. *(Optional)* Import Styles into Your QGIS Library
