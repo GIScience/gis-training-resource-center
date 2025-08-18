@@ -558,13 +558,13 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Workflow de déclenchement en QGIS pour Madagascar</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trigger-statement">Trigger Statement</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contexte">Contexte</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#declaration-de-declenchement">Déclaration de déclenchement</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#downloading-the-report">Downloading the report</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#functionality-of-the-workflow">Functionality of the Workflow</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#telechargement-du-rapport">Téléchargement du rapport</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fonctionnalite-du-flux-de-travail">Fonctionnalité du flux de travail</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#donnees-disponibles">Données disponibles</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fixed-data">Fixed Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#monitoring-data">Monitoring Data</a></li>
 </ul>
@@ -623,38 +623,39 @@ document.write(`
 <p>Le workflow QGIS présenté dans cet article a été développé dans le cadre du projet “Anticipatory-Action” (AA) (action anticipative) de la Croix-Rouge malgache (CRM), de la Croix-Rouge allemande (GRC) et de l’institut de Heidelberg pour les technologies de géoinformation (HeiGIT).</p>
 <p>Le workflow est presque entièrement automatisé grâce à un modèle QGIS et ne nécessite aucune intervention manuelle. Le chapitre –Automated Trigger Workflow— décrit le processus et l’application pratique. &lt;!– what chapter?? Where is it?&gt;
 Chaque étape inclut dans le modèle est expliquée en détail afin de permettre une compréhension complète du workflow et de la manière dont l’analyse a été réalisée.</p>
-<section id="background">
-<h2>Background<a class="headerlink" href="#background" title="Permalink to this heading">#</a></h2>
-<p>Setting triggers is one of the cornerstones of the Forecast-based Financing system. For a National Society to have access to automatically released funding for their early actions, their Early Action Protocol needs to clearly define where and when funds will be allocated, and assistance will be provided. In AA, this is decided according to specific threshold values, so-called triggers, based on weather and climate forecasts, which are defined for each region (see <a class="reference external" href="https://manual.forecast-based-financing.org/en/chapter/06-develop-a-trigger-system/">FbF Manual</a>).</p>
+<section id="contexte">
+<h2>Contexte<a class="headerlink" href="#contexte" title="Permalink to this heading">#</a></h2>
+<p>La définition de déclencheurs est l’un des piliers du système de financement basé sur les prévisions (anglais: Forecast-based financing (FbF)). Pour qu’une Société Nationale puisse bénéficier d’un financement automatique pour ses actions précoces, son protocole d’action précoce doit définir clairement où et quand les fonds seront alloués et l’aide fournie. Dans le cadre de l’AA, cela est décidé en fonction de valeurs seuils spécifiques, appelées « déclencheurs », basées sur les prévisions météorologiques et climatiques, qui sont définies pour chaque région (voir <a class="reference external" href="https://manual.forecast-based-financing.org/en/chapter/06-develop-a-trigger-system/">FbF Manual</a>).</p>
 </section>
-<section id="trigger-statement">
-<h2>Trigger Statement<a class="headerlink" href="#trigger-statement" title="Permalink to this heading">#</a></h2>
-<p><strong>Pre-Activation Trigger:</strong> at least one of the meteorological forecasts from Météo Madagascar, RMSC La Reunion, or ECMWF projects a greater than 50% likelihood of landfall by a tropical cyclone of tropical storm strength or higher within the next 7 days.</p>
-<p><strong>Activation Trigger:</strong> if the Meteo Madagascar (DGM) forecast indicates landfall of a tropical cyclone with wind speeds in excess of 118 km/h within the next 48-72 hours.</p>
+<section id="declaration-de-declenchement">
+<h2>Déclaration de déclenchement<a class="headerlink" href="#declaration-de-declenchement" title="Permalink to this heading">#</a></h2>
+<p><strong>Déclencheur préalable à l’activation:</strong> au moins une des prévisions météorologiques de Météo Madagascar, du RMSC La Réunion ou de l’ECMWF prévoit une probabilité supérieure à 50% qu’un cyclone tropical de force tempête tropicale ou plus atteigne les côtes dans les 7 prochains jours.</p>
+<p><strong>ADéclencheur d’activation:</strong> si les prévisions de Météo Madagascar (DGM) indiquent l’arrivée d’un cyclone tropical avec des vents dépassant 118 km/h dans les 48 à 72 heures à venir.</p>
 </section>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="downloading-the-report">
-<h1>Downloading the report<a class="headerlink" href="#downloading-the-report" title="Permalink to this heading">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="telechargement-du-rapport">
+<h1>Téléchargement du rapport<a class="headerlink" href="#telechargement-du-rapport" title="Permalink to this heading">#</a></h1>
 <!-- This section will include information on how to download the final report as soon as its published -->
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="functionality-of-the-workflow">
-<h1>Functionality of the Workflow<a class="headerlink" href="#functionality-of-the-workflow" title="Permalink to this heading">#</a></h1>
-<p>The Trigger Process concept is displayed in the figure below.</p>
+<section class="tex2jax_ignore mathjax_ignore" id="fonctionnalite-du-flux-de-travail">
+<h1>Fonctionnalité du flux de travail<a class="headerlink" href="#fonctionnalite-du-flux-de-travail" title="Permalink to this heading">#</a></h1>
+<p>Le concept de processus déclencheur est illustré dans la figure ci-dessous.</p>
 <figure class="align-center" id="fig-trigger-concept">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_concept.png"><img alt="../../_images/MAD_Trigger_concept.png" src="../../_images/MAD_Trigger_concept.png" style="width: 1000px;" /></a>
 </figure>
-<p>The provided QGIS project contains the necessary layers and a QGIS model file to perform an assessment of the potential impact of the predicted cyclone event. The analysis workflow will be run in the QGIS model, which automates the steps for assessing the impact of a tropical cyclone event.  It integrates cyclone storm track data with administrative boundaries, population data, infrastructure, and service locations to identify and quantify exposed areas and resources.
-Based on the cyclone forecast by Météo Madagascar, the model calculates the area likely to be  exposed to the cyclone, the potentially exposed population, number of exposed buildings, exposed agricultural land, and potentially exposed health and education facilities.</p>
-<p>Additionally, the QGIS file includes layers with the CRM warehouses and the areas they can service, allowing for a quick accessibilty assessement. The provided folder also contains map templates and style files to generate map reports based on the model calculations.</p>
-<p>The documentation is separated into two parts. The first part covers the spatial analysis using the automated QGIS model. The second part documents how to create the map reports using the map templates and style files.</p>
+<!--do we need french alternative text describing the figure?-->
+<p>Le projet QGIS présenté contient les couches nécessaires et un fichier modèle QGIS permettant d’évaluer l’impact potentiel du cyclone prévu. Le processus d’analyse sera exécuté dans le modèle QGIS, qui automatise les étapes d’évaluation de l’impact d’un cyclone tropical.  Il intègre les données relatives à la trajectoire du cyclone avec les frontières administratives, les données démographiques, les infrastructures et les positions des services afin d’identifier et de quantifier les zones et les ressources exposées.
+Sur la base des prévisions cycloniques de Météo Madagascar, le modèle calcule la zone susceptible d’être exposée au cyclone, la population potentiellement exposée, le nombre de bâtiments exposés, les terres agricoles exposées et les établissements de santé et d’enseignement potentiellement exposés.</p>
+<p>De plus, le fichier QGIS contient des couches représentant les entrepôts CRM et les zones qu’ils peuvent couvrir, ce qui permet d’évaluer rapidement leur accessibilité. Le dossier fourni contient également des modèles de carte et des fichiers de style permettant de générer des rapports cartographiques basés sur les calculs du modèle.</p>
+<p>La documentation est divisée en deux parties. La première partie traite de l’analyse spatiale à l’aide du modèle QGIS automatisé. La deuxième partie explique comment créer des rapports cartographiques à l’aide des modèles de carte et des fichiers de style.</p>
 <!--Insert image of report?-->
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
-<p>The QGIS project and QGIS model have been created using QGIS version 3.40.9 (LTR) Bratislava. To ensure that the model is working correctly, do not use older QGIS versions.</p>
+<p>Le projet et le modèle ont été créés à l’aide de la version 3.40.9 (LTR) Bratislava de QGIS. Afin de garantir le bon fonctionnement du modèle, n’utilisez pas de versions antérieures de QGIS.</p>
 </div>
-<section id="available-data">
-<h2>Available Data<a class="headerlink" href="#available-data" title="Permalink to this heading">#</a></h2>
-<p>For the trigger mechanism to work properly we currently use different datasets: data that we assume to be static in the near term, and variable data which describe the datasets that will be checked for triggering on a regular basis depending on the occurrence of anticipated cyclone events.</p>
+<section id="donnees-disponibles">
+<h2>Données disponibles<a class="headerlink" href="#donnees-disponibles" title="Permalink to this heading">#</a></h2>
+<p>Pour que le mécanisme de déclenchement fonctionne correctement, nous utilisons actuellement différents ensembles de données: des données que nous supposons statiques à court terme et des données variables qui décrivent les ensembles de données qui seront vérifiés régulièrement pour déclencher le mécanisme en fonction de la survenue d’événements cycloniques anticipés.</p>
 <section id="fixed-data">
 <h3>Fixed Data<a class="headerlink" href="#fixed-data" title="Permalink to this heading">#</a></h3>
 <p>By fixed data we mean datasets that are needed to create the map reports, that will most probably not change in the near term. In the long term these datasets can be adapted easily.</p>
@@ -1891,13 +1892,13 @@ Now the image can be found in the result folder.</p></li>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Workflow de déclenchement en QGIS pour Madagascar</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trigger-statement">Trigger Statement</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contexte">Contexte</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#declaration-de-declenchement">Déclaration de déclenchement</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#downloading-the-report">Downloading the report</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#functionality-of-the-workflow">Functionality of the Workflow</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#telechargement-du-rapport">Téléchargement du rapport</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fonctionnalite-du-flux-de-travail">Fonctionnalité du flux de travail</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#donnees-disponibles">Données disponibles</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fixed-data">Fixed Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#monitoring-data">Monitoring Data</a></li>
 </ul>

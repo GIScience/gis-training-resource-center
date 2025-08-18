@@ -7,23 +7,23 @@ Le workflow QGIS présenté dans cet article a été développé dans le cadre d
 Le workflow est presque entièrement automatisé grâce à un modèle QGIS et ne nécessite aucune intervention manuelle. Le chapitre --Automated Trigger Workflow--- décrit le processus et l'application pratique. <!-- what chapter?? Where is it?> 
 Chaque étape inclut dans le modèle est expliquée en détail afin de permettre une compréhension complète du workflow et de la manière dont l'analyse a été réalisée.
 
-## Background
+## Contexte
 
-Setting triggers is one of the cornerstones of the Forecast-based Financing system. For a National Society to have access to automatically released funding for their early actions, their Early Action Protocol needs to clearly define where and when funds will be allocated, and assistance will be provided. In AA, this is decided according to specific threshold values, so-called triggers, based on weather and climate forecasts, which are defined for each region (see [FbF Manual](https://manual.forecast-based-financing.org/en/chapter/06-develop-a-trigger-system/)).
+La définition de déclencheurs est l'un des piliers du système de financement basé sur les prévisions (anglais: Forecast-based financing (FbF)). Pour qu'une Société Nationale puisse bénéficier d'un financement automatique pour ses actions précoces, son protocole d'action précoce doit définir clairement où et quand les fonds seront alloués et l'aide fournie. Dans le cadre de l'AA, cela est décidé en fonction de valeurs seuils spécifiques, appelées « déclencheurs », basées sur les prévisions météorologiques et climatiques, qui sont définies pour chaque région (voir [FbF Manual](https://manual.forecast-based-financing.org/en/chapter/06-develop-a-trigger-system/)).
 
-## Trigger Statement
+## Déclaration de déclenchement
 
-**Pre-Activation Trigger:** at least one of the meteorological forecasts from Météo Madagascar, RMSC La Reunion, or ECMWF projects a greater than 50% likelihood of landfall by a tropical cyclone of tropical storm strength or higher within the next 7 days.
+**Déclencheur préalable à l'activation:** au moins une des prévisions météorologiques de Météo Madagascar, du RMSC La Réunion ou de l'ECMWF prévoit une probabilité supérieure à 50% qu'un cyclone tropical de force tempête tropicale ou plus atteigne les côtes dans les 7 prochains jours.
 
-**Activation Trigger:** if the Meteo Madagascar (DGM) forecast indicates landfall of a tropical cyclone with wind speeds in excess of 118 km/h within the next 48-72 hours.
+**ADéclencheur d'activation:** si les prévisions de Météo Madagascar (DGM) indiquent l'arrivée d'un cyclone tropical avec des vents dépassant 118 km/h dans les 48 à 72 heures à venir.
 
-# Downloading the report
+# Téléchargement du rapport
 
 <!-- This section will include information on how to download the final report as soon as its published -->
 
-# Functionality of the Workflow
+# Fonctionnalité du flux de travail
 
-The Trigger Process concept is displayed in the figure below.
+Le concept de processus déclencheur est illustré dans la figure ci-dessous.
 
 ```{figure} /fig/MAD_Trigger_concept.png
 ---
@@ -32,25 +32,26 @@ name: fig-trigger-concept
 align: center
 ---
 ```
+<!--do we need french alternative text describing the figure?-->
 
-The provided QGIS project contains the necessary layers and a QGIS model file to perform an assessment of the potential impact of the predicted cyclone event. The analysis workflow will be run in the QGIS model, which automates the steps for assessing the impact of a tropical cyclone event.  It integrates cyclone storm track data with administrative boundaries, population data, infrastructure, and service locations to identify and quantify exposed areas and resources. 
-Based on the cyclone forecast by Météo Madagascar, the model calculates the area likely to be  exposed to the cyclone, the potentially exposed population, number of exposed buildings, exposed agricultural land, and potentially exposed health and education facilities. 
+Le projet QGIS présenté contient les couches nécessaires et un fichier modèle QGIS permettant d'évaluer l'impact potentiel du cyclone prévu. Le processus d'analyse sera exécuté dans le modèle QGIS, qui automatise les étapes d'évaluation de l'impact d'un cyclone tropical.  Il intègre les données relatives à la trajectoire du cyclone avec les frontières administratives, les données démographiques, les infrastructures et les positions des services afin d'identifier et de quantifier les zones et les ressources exposées. 
+Sur la base des prévisions cycloniques de Météo Madagascar, le modèle calcule la zone susceptible d'être exposée au cyclone, la population potentiellement exposée, le nombre de bâtiments exposés, les terres agricoles exposées et les établissements de santé et d'enseignement potentiellement exposés.
 
-Additionally, the QGIS file includes layers with the CRM warehouses and the areas they can service, allowing for a quick accessibilty assessement. The provided folder also contains map templates and style files to generate map reports based on the model calculations. 
+De plus, le fichier QGIS contient des couches représentant les entrepôts CRM et les zones qu'ils peuvent couvrir, ce qui permet d'évaluer rapidement leur accessibilité. Le dossier fourni contient également des modèles de carte et des fichiers de style permettant de générer des rapports cartographiques basés sur les calculs du modèle. 
 
-The documentation is separated into two parts. The first part covers the spatial analysis using the automated QGIS model. The second part documents how to create the map reports using the map templates and style files. 
+La documentation est divisée en deux parties. La première partie traite de l'analyse spatiale à l'aide du modèle QGIS automatisé. La deuxième partie explique comment créer des rapports cartographiques à l'aide des modèles de carte et des fichiers de style.
 
 <!--Insert image of report?-->
 
 :::{attention}
 
-The QGIS project and QGIS model have been created using QGIS version 3.40.9 (LTR) Bratislava. To ensure that the model is working correctly, do not use older QGIS versions. 
+Le projet et le modèle ont été créés à l'aide de la version 3.40.9 (LTR) Bratislava de QGIS. Afin de garantir le bon fonctionnement du modèle, n'utilisez pas de versions antérieures de QGIS.
 
 :::
 
-## Available Data
+## Données disponibles
 
-For the trigger mechanism to work properly we currently use different datasets: data that we assume to be static in the near term, and variable data which describe the datasets that will be checked for triggering on a regular basis depending on the occurrence of anticipated cyclone events. 
+Pour que le mécanisme de déclenchement fonctionne correctement, nous utilisons actuellement différents ensembles de données: des données que nous supposons statiques à court terme et des données variables qui décrivent les ensembles de données qui seront vérifiés régulièrement pour déclencher le mécanisme en fonction de la survenue d'événements cycloniques anticipés.
 
 ### Fixed Data
 
