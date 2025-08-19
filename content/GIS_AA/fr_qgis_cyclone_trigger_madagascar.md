@@ -4,7 +4,7 @@
 
 Le workflow QGIS présenté dans cet article a été développé dans le cadre du projet "Anticipatory-Action" (AA) (action anticipative) de la Croix-Rouge malgache (CRM), de la Croix-Rouge allemande (GRC) et de l'institut de Heidelberg pour les technologies de géoinformation (HeiGIT).
 
-Le workflow est presque entièrement automatisé grâce à un modèle QGIS et ne nécessite aucune intervention manuelle. Le chapitre --Automated Trigger Workflow--- décrit le processus et l'application pratique. <!-- what chapter?? Where is it?> 
+Le workflow est presque entièrement automatisé grâce à un modèle QGIS et ne nécessite aucune intervention manuelle. Le chapitre --Automated Trigger Workflow--- décrit le processus et l'application pratique. <!-- what chapter?? Where is it?--> 
 Chaque étape inclut dans le modèle est expliquée en détail afin de permettre une compréhension complète du workflow et de la manière dont l'analyse a été réalisée.
 
 ## Contexte
