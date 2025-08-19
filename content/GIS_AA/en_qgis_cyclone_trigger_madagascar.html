@@ -321,6 +321,12 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+<li class="toctree-l1"><a class="reference internal" href="fr_qgis_cyclone_trigger_madagascar.html">Workflow de déclenchement en QGIS pour Madagascar</a></li>
+
+
+
+
+
 <li class="toctree-l1"><a class="reference internal" href="en_qgis_drought_trigger_somalia.html">QGIS Trigger Workflow for Somalia</a></li>
 
 
@@ -593,13 +599,13 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map-2-impact-assessment-exposed-population-and-critical-infrastructure">Map 2: Impact Assessment: Exposed Population and Critical Infrastructure</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Styling of the layers</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Making the Print Layout</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#map-2-styling-of-the-layers">Map 2: Styling of the layers</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#map-2-making-the-print-layout">Map 2: Making the Print Layout</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Exporting the Map</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-exporting-the-map">Step 2: Exporting the Map</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#working-with-the-warehouse-isochrones">Working with the warehouse isochrones</a></li>
 </ul>
 </li>
@@ -622,6 +628,11 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="qgis-trigger-workflow-for-madagascar">
 <h1>QGIS Trigger Workflow for Madagascar<a class="headerlink" href="#qgis-trigger-workflow-for-madagascar" title="Permalink to this heading">#</a></h1>
 <!-- Maybe have a final look over introduction and all the official stuff which should be included in the documentation -->
+<div class="note admonition">
+<p class="admonition-title">French Translation </p>
+<p>The french version of this page can be found <a class="reference internal" href="fr_qgis_cyclone_trigger_madagascar.html"><span class="doc std std-doc">here</span></a></p>
+<p>La version française de cet article se trouve <a class="reference internal" href="fr_qgis_cyclone_trigger_madagascar.html"><span class="doc std std-doc">ici</span></a></p>
+</div>
 <p>The QGIS workflow presented in this article was developed in the framework of the Anticipatory-Action (AA) Project of the Croix-Rouge Malagasy (CRM), the German Red Cross (GRC) and the Heidelberg Institute for Geoinformation Technology (HeiGIT).</p>
 <p>The workflow is almost fully automated through a QGIS model, requiring no manual intervention. The chapter Automated Trigger Workflow outlines the process and its practical implementation. Each step included in the model is explained in detail to provide a complete understanding of the workflow and how the analysis was carried out.</p>
 <section id="background">
@@ -832,10 +843,10 @@ These datasets are combined into a table, summarizing exposed infrastructure.</p
 <p><strong>Group 3: Map_Cyclone_Impact_Overview</strong></p>
 <p>This group includes all the layers required to create the <strong>Cyclone Impact Overview Map</strong> (shown below). The storm track and region (Admin1) boundaries (<code class="docutils literal notranslate"><span class="pre">Admin1_Impact_Overview_Map</span></code>) are pre-loaded to help you get started quickly.
 Make sure you’re working with the <strong>correct and updated storm track</strong> for the event under investigation.</p>
-<figure class="align-center" id="id3">
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_Impact_Overview_Map.png"><img alt="../../_images/MAD_Trigger_Impact_Overview_Map.png" src="../../_images/MAD_Trigger_Impact_Overview_Map.png" style="width: 1000px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 56 </span><span class="caption-text">This map will be created using the layers in group 3.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 56 </span><span class="caption-text">This map will be created using the layers in group 3.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p><strong>Group 4: Map_Cyclone_Impact_Assessment</strong></p>
@@ -849,10 +860,10 @@ Ensure you’re using the correct event data to maintain consistency and accurac
 <li><p>exposed agricultural land cover</p></li>
 </ul>
 <p>The final map outputs will look like the following.</p>
-<figure class="align-center" id="id4">
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_Impact_Population_Map.png"><img alt="../../_images/MAD_Trigger_Impact_Population_Map.png" src="../../_images/MAD_Trigger_Impact_Population_Map.png" style="width: 1000px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 57 </span><span class="caption-text">This map will be created using the layers in group 4</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 57 </span><span class="caption-text">This map will be created using the layers in group 4</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <!--EDIT: ADD THE CORRECT PICTURE FOR THIS MAP-->
@@ -1321,9 +1332,10 @@ Now the image can be found in the result folder.</p></li>
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_layer_order_impact_map.PNG"><img alt="../../_images/MAD_Trigger_layer_order_impact_map.PNG" src="../../_images/MAD_Trigger_layer_order_impact_map.PNG" style="width: 300px;" /></a>
 </figure>
 <!--Remove the comment as duplicating and loading the style ensures that previous map layouts are not broken. also add that you can fix layer styles and layers in the map items-->
-<section id="id1">
-<h4>Styling of the layers<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h4>
+<section id="map-2-styling-of-the-layers">
+<h4>Map 2: Styling of the layers<a class="headerlink" href="#map-2-styling-of-the-layers" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple">
+<li><p>Deactivate all the layers except gor the group “Map_Cyclone_Impact_Assessment” and the OpenStreetMap Basemap.</p></li>
 <li><p>Right click on the “exposed_population - copy” layer -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Symbology</span></code></p></li>
 <li><p>In the down left corner click on <code class="docutils literal notranslate"><span class="pre">Style</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code></p></li>
 <li><p>In the new window click on the three points <img alt="" src="../../_images/Three_points.png" />. Navigate to the “AA_Cyclone_Monitoring_Trigger_MAD/layer_styles” folder and select the file <strong>“exposed_population_style.qml”</strong> style layer.</p></li>
@@ -1418,17 +1430,22 @@ Now the image can be found in the result folder.</p></li>
 <!--Move this somewhere else where it is easier to understand OR add pictures to illustrate the different maps?-->
 </div>
 </section>
-<section id="id2">
-<h4>Making the Print Layout<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h4>
+<section id="map-2-making-the-print-layout">
+<h4>Map 2: Making the Print Layout<a class="headerlink" href="#map-2-making-the-print-layout" title="Permalink to this heading">#</a></h4>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>The same workflow applies to all five impact variables: population, buildings, education facilities, health sites, and agricultural landcover. The following example demonstrates the process for creating the population impact map. The remaining maps can be generated by following the same steps.</p>
 </div>
 <ol class="arabic simple">
-<li><p>Deactivate all Layer Groups except the group <code class="docutils literal notranslate"><span class="pre">Map_Cyclone_Impact_Overview</span></code>.</p></li>
-<li><p>Open a new print layout by clicking on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Print</span> <span class="pre">Layout</span></code> -&gt; enter the name of your current Project e.g “Feddy_2023_Impact_Population”.</p></li>
-<li><p>Right click on the white canvas and select <code class="docutils literal notranslate"><span class="pre">Page</span> <span class="pre">Properties</span></code>. In the bottom right section of the print layout, you’ll see the page specifications. Set the Size to <code class="docutils literal notranslate"><span class="pre">A3</span></code> and the Orientation to <code class="docutils literal notranslate"><span class="pre">Landscape</span></code> to ensure that the map template fits correctly within the page layout.</p></li>
-<li><p>Go to the <strong>AA_Cyclone_Monitoring_Trigger_MAD and then map_templates</strong> folder and drag and drop the file <code class="docutils literal notranslate"><span class="pre">cyclone_impact_population_map_template.qpt</span></code> into the print layout.</p></li>
+<li><p>Open a new print layout by clicking on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Layout</span> <span class="pre">Manager</span></code>. A small new window will appear. Here you can select an existing layout or create a new layout from a template.</p></li>
+<li><p>We want to create a new layout from a template. Click on the <code class="docutils literal notranslate"><span class="pre">Empty</span> <span class="pre">Layout</span></code> dropdown menu and select <code class="docutils literal notranslate"><span class="pre">Specific</span></code>.</p></li>
+<li><p>Below, click on the three dots <img alt="" src="../../_images/Three_points.png" /> and navigate to the folder <code class="docutils literal notranslate"><span class="pre">../AA_Cyclone_Monitoring_Trigger_MAD/map_templates/</span></code> and select the file with the name <code class="docutils literal notranslate"><span class="pre">cyclone_impact_population_map_template</span></code>. Click <code class="docutils literal notranslate"><span class="pre">Open</span></code>, then <code class="docutils literal notranslate"><span class="pre">Create</span></code>.</p></li>
+<li><p>QGIS will ask you to name the new layout. Give it a name such as “Cyclone_Overview_Map_Freddy_2023”. Click <code class="docutils literal notranslate"><span class="pre">OK</span></code>. A new window will open. This is the print layout composer. It should look similar to the figure below.</p></li>
+</ol>
+<figure class="align-default" id="mdg-aa-pop-impact-template">
+<a class="reference internal image-reference" href="../../_images/mdg_aa_pop_impact_template.png"><img alt="../../_images/mdg_aa_pop_impact_template.png" src="../../_images/mdg_aa_pop_impact_template.png" style="width: 600px;" /></a>
+</figure>
+<ol class="arabic simple" start="5">
 <li><p><strong>Update the Map Title</strong></p>
 <ul class="simple">
 <li><p>Click on the title text element at the top of the map.</p></li>
@@ -1444,7 +1461,7 @@ To update the attribute table displaying the exposed districts:</p>
 <li><p>In the <strong>Columns</strong> section:</p>
 <ul>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Clear</span></code></p></li>
-<li><p>➕ Add the columns: <code class="docutils literal notranslate"><span class="pre">ADM1_EN</span></code>, <code class="docutils literal notranslate"><span class="pre">ADM2_EN</span></code>, <code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code> and <code class="docutils literal notranslate"><span class="pre">exposed_population</span></code><strong>Or any other layer you are working with</strong></p></li>
+<li><p>➕ Add the columns: <code class="docutils literal notranslate"><span class="pre">ADM1_EN</span></code>, <code class="docutils literal notranslate"><span class="pre">ADM2_EN</span></code>, <code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code> and <code class="docutils literal notranslate"><span class="pre">exposed_population</span></code> <strong>or any other layer you are working with</strong></p></li>
 </ul>
 </li>
 <li><p>In the <strong>Sorting</strong> section:</p>
@@ -1781,16 +1798,24 @@ Your final output should look like this after styling the layer<div class="sd-su
 </figure>
 </div>
 </details></section>
-</section>
-</section>
-<section id="step-2-exporting-the-map">
-<h2>Step 2: Exporting the Map<a class="headerlink" href="#step-2-exporting-the-map" title="Permalink to this heading">#</a></h2>
-<!--Exporting the map should be done after each layout. If the maps are not locked, it will break the layouts and the work will have to be repeated-->
-<figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/MAD_Trigger_workflow_Step5.png"><img alt="../../_images/MAD_Trigger_workflow_Step5.png" src="../../_images/MAD_Trigger_workflow_Step5.png" style="width: 1000px;" /></a>
-</figure>
-<p><strong>Purpose:</strong> Export the designed and finalized map layout in order to print it as a pdf or format of your choice.</p>
-<p><strong>Tool:</strong> <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout">Print Layout Composer</a></p>
+<section id="id1">
+<h4>Exporting the Map<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h4>
+<!--Exporting the map should be done after each layout. If the maps are not locked, it will break the layouts and the work will have to be repeated
+
+```{figure} /fig/MAD_Trigger_workflow_Step5.png
+---
+width: 1000px
+name: 
+align: center
+---
+```
+
+__Purpose:__ Export the designed and finalized map layout in order to print it as a pdf or format of your choice.
+
+
+__Tool:__ [Print Layout Composer](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
+
+-->
 <p>When you have finished the design of you map you can export it as pdf or image file in different data formats.</p>
 <p><strong>Export as Image</strong></p>
 <ol class="arabic simple">
@@ -1819,9 +1844,12 @@ Now the image can be found in the result folder.</p></li>
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_Impact_Buildings_Map.png"><img alt="../../_images/MAD_Trigger_Impact_Buildings_Map.png" src="../../_images/MAD_Trigger_Impact_Buildings_Map.png" style="width: 1000px;" /></a>
 </figure>
 </section>
+</section>
+</section>
 <section id="working-with-the-warehouse-isochrones">
 <h2>Working with the warehouse isochrones<a class="headerlink" href="#working-with-the-warehouse-isochrones" title="Permalink to this heading">#</a></h2>
-<p>The project includes isochrones for each warehouse. The warehouse isochrones correspond to one warehouse and are identifiable by their location name. If you want to add an isochrone to one of the  It is possible to add individual isochrones to the map templates by simply duplicating</p>
+<p>The project includes isochrones for each warehouse. The warehouse isochrones correspond to one warehouse and are identifiable by their location name. If you want to add an isochrone to one of the  It is possible to add individual isochrones to the map templates by simply duplicating the isochrone layer and moving it to the desired map group.</p>
+<!--INSERT EXAMPLE PICTURE-->
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="historical-analysis-of-cyclone-impacts">
@@ -1844,8 +1872,6 @@ Now the image can be found in the result folder.</p></li>
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_stromtrack_download.PNG"><img alt="../../_images/MAD_Trigger_stromtrack_download.PNG" src="../../_images/MAD_Trigger_stromtrack_download.PNG" style="width: 1000px;" /></a>
 </figure>
 </section>
-<div class="toctree-wrapper compound">
-</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -1945,13 +1971,13 @@ Now the image can be found in the result folder.</p></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map-2-impact-assessment-exposed-population-and-critical-infrastructure">Map 2: Impact Assessment: Exposed Population and Critical Infrastructure</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Styling of the layers</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Making the Print Layout</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#map-2-styling-of-the-layers">Map 2: Styling of the layers</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#map-2-making-the-print-layout">Map 2: Making the Print Layout</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Exporting the Map</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-exporting-the-map">Step 2: Exporting the Map</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#working-with-the-warehouse-isochrones">Working with the warehouse isochrones</a></li>
 </ul>
 </li>
