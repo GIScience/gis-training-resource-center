@@ -4,34 +4,38 @@
 
 Before departure, ensure you have the following:
 
-| Item                 | Notes                        |
-|----------------------|------------------------------|
-| GoPro Hero 13        | Software version?            |
-| MicroSD card 1TB     | Check if empty               |
-| Powerbank            | Check if fully charged       |
-| USB-C Charging Cable | For GoPro to Powerbank       |
-| GoPro Windshield Mount |                            |
-| Printed Copy of This Guide |                        |
+GoPro Hero 13
+MicroSD card 1TB
+Powerbank
+USB-C Charging Cable
+GoPro Windshield Mount
+Printed Copy of This Guide
+
+<!-- Do we need images?  -->
 
 ---
 
-## Installing the GoPro
 
-### Choose Mounting Location
+## Installing the GoPro in a car
+
+#### Choose Mounting Location
 - Mount inside the car, center of windshield, behind rearview mirror (or alternative).
 - Avoid obstructing driver’s view.
 - Clean glass before attaching suction mount.
 
-*Images: Mounting Options*
+<!-- + Mounting options images -->
 
-### Attach Suction Mount
+#### Attach Suction Mount
 1. Press suction cup firmly against windshield.
 2. Flip lock lever to secure the mount.  
-   *Image: Suction mount locked*
+
+<!-- +Image suction mount -->
 
 ### Attach GoPro to Mount
 - Use the provided thumb screw to tighten.  
-  *Image: Screw tightening*
+
+<!-- + Image Screw tightening -->
+
 - Ensure the lens faces forward, level with the road.
 - **Does upside down matter?**  
   *Image: Proper lens orientation*
@@ -43,9 +47,9 @@ Before departure, ensure you have the following:
 
 1. Connect GoPro to Powerbank using USB-C cable.
 2. Place Powerbank securely (e.g., glove compartment or dash).
-3. Ensure connection before driving — `XXX` symbol should be visible on the GoPro screen.  
-   *Image: Screen showing power status*
+3. Ensure connection before driving — `XXX` symbol should be visible on the GoPro screen. 
 
+<!-- Image charging -->
 ---
 
 ## GoPro Setup: Timelapse Photo Mode
@@ -61,7 +65,7 @@ Before departure, ensure you have the following:
    - **Protune**: Off
 4. Tap the back arrow to save and return to the main screen.
 
-*Images: GoPro menu setup*
+<!-- Images manual/QR Setup -->
 
 ---
 
@@ -78,7 +82,7 @@ Before departure, ensure you have the following:
 - Tap **Shutter** button again to stop.
 - Hold **Power** button to turn off GoPro.
 
-*Overview graphic with all relevant buttons*
+<!-- Button overview image -->
 
 ---
 
@@ -149,3 +153,4 @@ If anything goes wrong or you're unsure:
 |------------------|------------------|-------------------|
 | [Technician Name]| Field Technician |                   |
 | [Supervisor Name]| Project Lead     |                   |
+
