@@ -111,35 +111,36 @@ If the camera already is set in the "AILAS" mode you do not have to configure th
 ## START OF DRIVE Checklist
 
 ### Physical Setup
-- [ ] Mount the camera on the windshield facing straight ahead.
-- [ ] Connect the Powerbank to the camera with the USB-C cable.
-- [ ] Store the Powerbank somewhere safe so it won’t move while driving.
+[ ] Mount the camera on the windshield facing straight ahead.  
+[ ] Connect the Powerbank to the camera with the USB-C cable.  
+[ ] Store the Powerbank somewhere safe so it won’t move while driving.  
 
 ### Start Filming
-- [ ] Hold the side power button until the screen turns on.
-- [ ] Scan the QR-code to configure settings (if not working manual setup) 
-- [ ] Press the top shutter button (big button on top) to start capturing
+[ ] Hold the side power button until the screen turns on.  
+[ ] Scan the QR-code to configure settings (if not working manual setup)  
+[ ] Press the top shutter button (big button on top) to start capturing  
 
 ### Final Pre-Drive Check
-- [ ] Is the camera firmly mounted?
-- [ ] Is camera level and facing straight ahead?
-- [ ] Is the GoPro blinking every 10 seconds (taking photos)?
-- [ ] Is the Powerbank connected and charging the GoPro?
+[ ] Is the camera firmly mounted?  
+[ ] Is camera level and facing straight ahead?  
+[ ] Is the GoPro blinking every 10 seconds (taking photos)?  
+[ ] Is the Powerbank connected and charging the GoPro?  
 
 ---
 
 ## END OF DRIVE Checklist
 
 ### Stop Filming
-- [ ] Press the top shutter button again to stop capturing.
-- [ ] Red blinking light should stop.
-- [ ] Hold the power button on the side until the screen turns off.
-- [ ] Unplug the USB-C cable from the GoPro.
+[ ] Press the top shutter button again to stop capturing.  
+[ ] Red blinking light should stop.  
+[ ] Hold the power button on the side until the screen turns off.  
+[ ] Unplug the USB-C cable from the GoPro.  
 
 ### Inspect the Equipment
-- [ ] Check that the mount is still tight and GoPro is undamaged.
-- [ ] Clean the camera lens if dusty or dirty.
-- [ ] Leave the GoPro securely mounted if safe, or store it in its case or bag.
+[ ] Check that the mount is still tight and GoPro is undamaged.  
+[ ] Clean the camera lens if dusty or dirty.  
+[ ] Leave the GoPro securely mounted if safe, or store it in its case or bag.  
+
 
 ### Charge Powerbank (if applicable)
 - Plug the Powerbank into a wall socket to charge overnight.
