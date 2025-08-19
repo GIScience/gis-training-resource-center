@@ -891,8 +891,9 @@ Résultats du modèle de la tâche 3 affichés dans QGIS, y compris les pourcent
 :::
 ::::
 
+---
 
-## Task 4: Visualizing Cyclone Impact Results – Aina Styles Her Maps
+## Task 4: Visualizing Cyclone Impact Results – Aina Styles Her Layers
 
 Aina now has all the analysis results she needs — but numbers and tables alone won’t convince her colleagues or decision-makers. What they need are clear and easy-to-read maps that can be used directly in meetings and reports.
 
@@ -1041,7 +1042,6 @@ Save your manually created styles as `.qml` files for future reuse.
   ```
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_style_save_new_style.mp4"></video>
----
 
 ### 5. *(Optional)* Import Styles into Your QGIS Library
 
@@ -1056,27 +1056,27 @@ The styles will now appear as presets in the **Layer Styling Panel**.
 ---
 
 ## Task 5: Quick Map Creation – Aina Uses Map Templates
-Background: Aina Gets Map-Ready in Minutes
-After preparing all the analysis and styling, Aina wants to present her results quickly and professionally. She doesn’t want to recreate map layouts every time — she needs a quick way to generate clean, consistent maps.
 
-That’s why she’s using map templates (.qpt files) already prepared by her team. These templates include map frames, legends, logos, titles, scale bars, and more — everything Aina needs to finish her product in just a few clicks.
+After all the hard work of analyzing data and styling layers, Aina is ready to **share her results**. But creating a professional-looking map from scratch every time would be slow and repetitive.  
 
-✅ Goal
-Use a provided QGIS map template to visualize and export maps showing cyclone exposure results, including population, health, and education impacts.
+To save time, she uses **map templates (.qpt files)** prepared by her team. These templates already contain the essential elements — map frames, legends, logos, titles, and scale bars. With them, Aina can turn her analysis into a **clean, consistent map** in just a few clicks.  
+
+✅ **Goal**  
+Apply a ready-made QGIS map template to quickly create and export maps that show cyclone impacts on population, health facilities, and schools.  
+
 
 1. Load the pre-made print layout template
 
-- Locate the template `cyclone_impact_overview_map_template.qpt` in your project folder under:  
+- Locate the template `cyclone_impact_population_map_template.qpt` in your project folder under:  
   `Map_Templates/`
 
 - You can load the template **by drag-and-drop**:
   - Open your QGIS project.
-  - Navigate to the Print Layout area in the browser panel.
   - Drag the `.qpt` file directly into QGIS — a new layout will be created automatically.
 
 - Alternatively:
   - Go to `Project` → `New Print Layout`
-  - Enter a name (e.g. `Harald_2025_Overview`)
+  - Enter a name (e.g. `Harald_2025_population`)
   - Click `OK`
   - In the layout, go to `Layout` → `Import from Template…`
   - Select the file `cyclone_impact_overview_map_template.qpt` and click `Open`
@@ -1085,34 +1085,73 @@ Use a provided QGIS map template to visualize and export maps showing cyclone ex
 - On the right-side panel, ensure the following:
   - **Page Size**: A3
   - **Orientation**: Landscape
+
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_load_mpa_template.mp4"></video>
+
 3. Update the attribute table of exposed districts
 - In the **Print Layout**, click on the attribute table (right-hand side of the layout).
 - In the **Item Properties** panel:
-  - Ensure the correct layer is selected (e.g. `Exposed_Districts`)
+  - Ensure the correct layer is selected `Harald_Exposed_population`
   - Click `Refresh Table Data`
-  - Click `Attributes…` → ➕ Add:
-    - **Attribute**: `ADM1_EN`
+  - Click `Attributes…` → in the upper part under **Fields** click on `Clear`
+    - Then add the following layer by clicking on ➕ :
+    - **Attribute**: `ADM1_EN`; `ADM2_EN`; `ADM2_PCODE`; `exposed_population_sum`
+    - To sort the tabel content, under the **Sorting**  clicking on ➕ and add the column `AMD1_EN`
     - **Sort Order**: Ascending
   - Click `OK`
+
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_map_makingadjust_AT.mp4"></video>
+
+  
+```{admonition} ⚠️ Warning – Long Tables
+If the attribute table you want to include is **longer than the map frame**, part of it will be cut off in the exported map.  
+To fix this, open the table properties in the layout and **reduce the font size** until the full table fits.  
+```
+
+
 5. Adjust the legend
 - In the layout, click on the **Legend** item.
 - In the **Item Properties** panel:
   - Uncheck **Auto update**
   - Scroll to **Legend items** and remove all entries (🗑️)
   - Add the following relevant layers:
-    - `Relevant_Warehouses`
-    - `Exposed_Cyclone_Area`
-    - `Exposed_Districts`
-    - `Admin1_Impact_Overview_Map`
+    - `example_Harald_2025_Track`
+    - `cyclone_harald_buffer`
+    - `Harald_Exposed_Population`
   - When selecting layers, check **Only visible layers**
   - Rename legend entries to match layout naming
-6. Review and update layout text elements
+    - `example_Harald_2025_Track` ->
+     ```
+     Cyclone Harald Track
+     ```
+    - `cyclone_harald_buffer`->
+     ```
+     Cyclone Harald 200 km Buffer
+     ```
+    - `Harald_Exposed_Population`->
+     ```
+     Number of exposed peopel
+     ```
+
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_adjust_map_making_Legend.mp4"></video>
+
+6. **Update Logos and Icons**  
+- The logos that need to be added to the map are represented by the red **X**.  
+- Click on the image in the **Item List**.  
+- Click on the three dots ![](/fig/Three_points.png) next to the file path.  
+- Browse to the folder `logos_pictures` and select the correct logo file.  
+
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_map_making_update_logos.mp4"></video>
+
+
+7. Review and update layout text elements
 - Make sure all text elements are up to date, especially:
   - **Map title**
   - **Cyclone name and date**
   - **Author/Organization** (optional)
 - Adjust font size or alignment if necessary
 
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_mak_making_adjust_title.mp4"></video>
 
 ### ✅ Final Checklist
 
@@ -1129,11 +1168,11 @@ Use a provided QGIS map template to visualize and export maps showing cyclone ex
 
 
 ```{dropdown} Your final output should look like this after styling the layer
-The map now clearly displays the exposed population within the affected districts, along with the locations of relevant warehouses. The original storm track line — used as input data — is highlighted, as well as the buffered impact area, which serves as a proxy for identifying exposed districts.
+The map now clearly displays the exposed population within the affected districts The original storm track line — used as input data — is highlighted, as well as the buffered impact area, which serves as a proxy for identifying exposed districts.
 
 On the right-hand side of the map, a list shows all exposed districts, including data on total population and exposed population. The districts (Admin 2) are organized under their corresponding regions (Admin 1).
 
-```{figure} /fig/MAD_Trigger_Impact_Population_Map.png
+```{figure} /fig/MAD_Trigger_Impact_Population_Map_example.png
 ---
 width: 1000px
 name: 
