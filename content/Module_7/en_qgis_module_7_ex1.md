@@ -722,8 +722,9 @@ Configuration de l'opération : intersecter les établissements de education ave
 ```
 7. **Count Affected Health Facilities per Admin 2**  
    - Add **Count Points in Polygon**
-   - Configuration:
-     - Add a description: 
+   - Add a description: `Compter les établissements de santé touchés par district`
+   - Configuration: 
+     - Add a description: Compter les établissements de santé touchés par district
        ```
        Compter les établissements de santé touchés par district
        ```  
@@ -731,7 +732,7 @@ Configuration de l'opération : intersecter les établissements de education ave
      - **Points layer**: intersected health facilities output
      - **Count field name**: 
        ```
-       sum_exposed_healthsites
+       sum_exposed_health
        ```  
 ```{figure} /fig/fr_MDG_AA_model_count_points_HF_affected_admin2.PNG
 ---
@@ -742,6 +743,7 @@ Configuration de l'opération : compter les établissements de santé touchés p
 ```
 8. **Count Affected Education Facilities per Admin 2**  
    - Add **Count Points in Polygon**
+   - Add a description: `Compter les établissements education touchés par district`
    - Configuration:
      - Add a description: 
        ```
@@ -763,6 +765,7 @@ Configuration de l'opération : compter les établissements de santé touchés p
 9. **Calculate percentage of affected Health Facilities**
 To compute the percentage of affected health sites per administrative area, we will use the **Field Calculator**:
 - Add the  **Field Calculator**:
+   - Add a description: `Calculer le pourcentage d’établissements de santé touchés par district`
    - Configuration:
      - Add a description:
        ```
@@ -771,15 +774,15 @@ To compute the percentage of affected health sites per administrative area, we w
     - **Input layer**: the output of Count Affected Health Facilities per Admin 2
     - **Output field name**:  
        ```
-       pct_health_affected
+       pct_exposed_health
        ``` 
     - **Field type**: Decimal (real)
     - **Expression**:
     ```qgis
-    CASE WHEN "count_health_total" > 0
-    THEN "sum_exposed_healthsites_POI" / "count_health_total" * 100
-    ELSE 0
-    END
+     CASE WHEN "count_health_total" > 0
+     THEN "sum_exposed_health" / "count_health_total" * 100
+     ELSE 0
+     END
     ```
   - Set the output as **Model Output**
   - Name it:
@@ -796,6 +799,7 @@ Configuration de l’opération : calculer le pourcentage d’établissements de
 10. **Calculate percentage of affected Education Facilities**
 To compute the percentage of affected education sites per administrative area, we will use the **Field Calculator**:  
 - Add the **Field Calculator**:  
+   - Add a description: `Calculer le pourcentage d’établissements d’éducation touchés par district`
    - Configuration:  
      - Add a description:  
        ```
@@ -804,7 +808,7 @@ To compute the percentage of affected education sites per administrative area, w
      - **Input layer**: the output of Count Affected Education Facilities per Admin 2  
      - **Output field name**:  
        ```
-       pct_education_affected
+       pct_exposed_education
        ```  
      - **Field type**: Decimal (real)  
      - **Expression**:  
@@ -855,7 +859,7 @@ Configuration de l’opération : calculer le pourcentage d’établissements d�
         ```
        - `exposed_population_sum` ->
         ```
-        Harald_Exposed_Population
+        admin2_harald_Exposed_Population
         ```
    - Click **Run** to execute the full model.
 
@@ -1041,7 +1045,9 @@ Save your manually created styles as `.qml` files for future reuse.
   education_pct_affected_style
   ```
 
+
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_style_save_new_style.mp4"></video>
+
 
 ### 5. *(Optional)* Import Styles into Your QGIS Library
 
@@ -1205,33 +1211,68 @@ We will join the following layers step by step:
 ---
 
 1. Open your model
-- Open `Estimate_Exposed_Population_Health_Education.model3`
-- Save a backup as:  
-  `Estimate_Exposed_Population_Health_Education_Export.model3`
+- Open `Estimate_Exposed_Population_Health_Education`
+- Save a new version as:  
+  ```
+  Estimate_Exposed_Population_Health_Education_Spreadsheet_Export
+  ```
 2. Join Health and Education data into one layer
 - In the **Algorithms**, search for `Join Attributes by Field Value`.
+- Add a description: `Joindre santé et éducation dans une seule couche par ADM2`
 - Configure the algorithm as follows:
-  - **Input Layer**: `admin2_health_affected_pct` (select from **Algorithm Output**)
-  - **Input Layer 2**: `admin2_education_affected_pct` (select from **Algorithm Output**)
-  - **Table field**: `ADM2_PCODE`
-  - **Table field 2**: `ADM2_PCODE`
+  - **Input Layer**: `admin2_health_affected` (select from **Algorithm Output**)
+  - **Input Layer 2**: `admin2_education_affected` (select from **Algorithm Output**)
+  - **Table field**: 
+   ```
+   ADM2_PCODE
+   ```
+  - **Table field 2**: 
+   ```
+   ADM2_PCODE
+   ```
   - **Layer 2 fields to copy**: Leave empty (all fields will be copied)
   - **Join type**: Take attributes of the first matching feature only (one-to-one)
   - Leave output as **Model Output**
+
+```{figure} /fig/fr_MDG_AA_model_join_affacted_pop.PNG
+---
+width: 600px
+name: the_world_result
+align: center
+---
+Configuration de l’opération : joindre les données de santé et d’éducation par le champ `ADM2_PCODE` afin de combiner les résultats dans une seule couche.
+``` 
 3. Join the result with the population data
 Now join the result of the previous step (health + education) to the **exposed population** data.
 - Add a second `Join Attributes by Field Value` algorithm to the model
+- Add a description: `Joindre les données de population avec les indicateurs santé et éducation`
 - Configure the algorithm as follows:
   - **Input Layer**: `exposed_population` (select from **Algorithm Output** of the Zonal Statistics step)
   - **Input Layer 2**: Output from Step 2 (health + education)
-  - **Table field**: `ADM2_PCODE`
-  - **Table field 2**: `ADM2_PCODE`
+  - **Table field**: 
+   ```
+   ADM2_PCODE
+   ```
+  - **Table field 2**: 
+   ```
+   ADM2_PCODE
+   ```
   - **Layer 2 fields to copy**: *(Enter the following field names exactly as shown — comma-separated, no spaces)*
     ```
-    count_health_total,sum_exposed_healthsites_POI,health_affected_precentage,count_education_total,sum_exposed_education_POI,pct_education_affected
+    count_health_total;sum_exposed_health;pct_exposed_health;count_education_total;sum_exposed_education;pct_exposed_education
     ```
   - **Join type**: Take attributes of the first matching feature only (one-to-one)
   - Leave output as **Model Output**
+
+```{figure} /fig/fr_MDG_AA_model_join_affacted_pop_HS_ES.PNG
+---
+width: 600px
+name: the_world_result
+align: center
+---
+Configuration de l’opération : joindre les données de population avec les indicateurs de santé et d’éducation.
+``` 
+
 ::::{tip} Where to find the column names  
 Open the **attribute tables** of the outputs `health_total_per_admin2`, `sum_exposed_healthsites_POI`, and `admin2_health_affected_pct` in QGIS.  
 Look at the **column headers** to find the exact names of the fields you want to copy.
@@ -1240,17 +1281,106 @@ Look at the **column headers** to find the exact names of the fields you want to
 If a column name like `count_health_total` has an invisible trailing space, the join will silently fail.  
 Always copy field names **directly from the attribute table** to avoid errors.
 ::::
+
+
 4. Export results to a spreadsheet
 - In the **Processing Toolbox**, search for `Export to spreadsheet` and double-click to open.
+- Add a description: `Exporter les données de population, d'éducation et de santé dans un seul tableau`
 - Configure the tool as follows:
   - **Input Layer**: Select the output of Step 3 from **Algorithm Output**
   - **Destination spreadsheet**:
     ```
-    exposed_indicators_spreadsheet.xlsx
+    exposure_indicators_spreadsheet
     ```
 
   - Click **OK** to add it to the model.
 Once you run the model, this step will automatically generate a spreadsheet with all relevant indicators ready for the operations team!
+
+```{figure} /fig/fr_MDG_AA_model_export_as_table.PNG
+---
+width: 600px
+name: the_world_result
+align: center
+---
+Exporter tous les indicateurs (population, santé, éducation) vers un tableau unique au format tableur.
+``` 
+
+
+
+5. **Validate and Save Your Extended Model**  
+   - Click the ✔️ **Validate Model** button to check for errors.
+   - Save again to:  
+     **`Estimate_Exposed_Population_Health_Education.model3`**
+6. **Run the model**
+   - Click the ▶️ **Run** button in the top-right corner of the Graphical Modeler window.
+   - **Input:**
+     - Click on the three dots for each input dataset and select the correct input:
+       - `Cyclone Track` → select the GeoJSON of the storm path (e.g. `Harald_2025_Track.geojson`)
+       - `Population Raster` → select the WorldPop raster file
+       - `Admin Boundaries` → select the Admin 2 layer (e.g. `MDG_adm2.gpkg`)
+       - `Health Facilities` → select the point dataset for health sites
+       - `Education Facilities` → select the point dataset for schools
+   - **Output:**
+     - Save all output layers in the output folder and use the names below.
+       - `admin2_health_affacted` -> 
+        ```
+        admin2_health_affected
+        ```
+       - `admin2_education_affected` ->
+        ```
+        admin2_education_affected
+        ```
+       - `cyclone_harald_buffer` ->  
+        ```
+        cyclone_harald_buffer
+        ```
+       - `exposed_population_sum` ->
+        ```
+        admin2_harald_Exposed_Population
+        ```
+       - `exposure_indicators_spreadsheet` ->
+        ```
+        exposure_indicators_harald
+        ```
+   - Click **Run** to execute the full model.
+
+::::{tab-set}
+
+:::{tab-item} Graphic Modler
+
+```{figure} /fig/
+---
+width: 600px
+align: center
+---
+
+```
+:::
+:::{tab-item} Run Model Configuration
+```{figure} /fig/
+---
+width: 600px
+align: center
+---
+
+```
+:::
+:::{tab-item} Model Output
+```{figure} /fig/
+---
+width: 600px
+align: center
+---
+
+```
+:::
+::::
+
+---
+
+
+
+
 
 ## Task 7: Reachability of health Posts from CRM Warehouses
 When a cyclone is forecast to make landfall, Aina works with the logistics and health teams to decide **where to send prepositioned medical kits**. However, not all CRM warehouses stock the needed items — only three do.
