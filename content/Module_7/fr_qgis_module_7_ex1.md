@@ -310,7 +310,7 @@ Vos résultats devraient ressembler à ceci:
 ```{figure} /fig/fr_MDG_AA_intermediate_result_visualisation_exposed_population.PNG
 ---
 width: 600px
-name: the_world_result
+name: mdg_visualiser_pop_exposee
 align: center
 ---
 Visualisation de la population exposée en cinq classes.
@@ -404,7 +404,7 @@ Ajouter la couche raster pour les données de population
 ```{figure} /fig/fr_MDG_AA_intermediate_result_model_input.PNG
 ---
 width: 600px
-name: the_world_result
+name: mdg_modele_resultat_intermed
 align: center
 ---
 Résultat intermédiaire de la définition des données d'entrée du modèle
@@ -421,7 +421,7 @@ Résultat intermédiaire de la définition des données d'entrée du modèle
 ```{figure} /fig/fr_MDG_AA_model_reporject_cyclon_track.PNG
 ---
 width: 600px
-name: the_world_result
+name: mdg_reproj_cyclone_track
 align: center
 ---
 Reprojeter la couche du trajectoire du cyclone vers un système de référence de coordonnées métrique (SCR) EPSG : 29738
@@ -440,7 +440,7 @@ Reprojeter la couche du trajectoire du cyclone vers un système de référence d
 ```{figure} /fig/fr_MDG_AA_model_buffer_cyclon_track.PNG
 ---
 width: 600px
-name: the_world_result
+name: fr_mdg_tamponner_cyclone
 align: center
 ---
 Ajouter l'étape pour tamponner la couche Cyclone reprojetée
@@ -457,7 +457,7 @@ Ajouter l'étape pour tamponner la couche Cyclone reprojetée
 ```{figure} /fig/fr_MDG_AA_model_reporject_bufferd_cyclon_track.PNG
 ---
 width: 600px
-name: the_world_result
+name: mdg_reprojeter_tampon_cyclone
 align: center
 ---
 Reprojeter le tampon vers EPSG:4326
@@ -469,102 +469,101 @@ Reprojeter le tampon vers EPSG:4326
    - Dans la fenêtre de configuration:
     - Ajoutez une description: `Decouper la couche raster de population avec le tampon du cyclone`.
     - Comme __"Couche source"__, choisissez la Entrée `Raster Population`
-    - Comme __"Couche de Masquage"__, choisissez
-   - In the configuration window:
-     - Add a description: `Découper la couche raster de population pour l'étendre au tampon Cyclon`
-   - In the configuration window:
-     - Set **Input layer** to `Population Raster` (from **Model Input**).
-     - Set **Mask layer** to the output from the previous step (from **Algorithm Output**).
-     - Set the output to **Model Output** (leave the output name **empty**).
-   - Click **OK** to add the step to the model.
+    - Comme __"Couche de Masquage"__, choisissez le tampon du cyclone (sous `Sortie d'un algorithme` -> `"Mis en tampon" créé par l'algorithme "Tamponner la trajectoire du cyclone reprojetée"`)
+    - Laissez la sortie de l'algorithme (`reprojeté`) vide.
+    - Cliquez sur `OK` pour ajouter l'étape au modèle.
+
 ```{figure} /fig/fr_MDG_AA_model_clip_pop_raster.PNG
 ---
 width: 600px
-name: the_world_result
+name: mdg_model_clip_pop_raster
 align: center
 ---
 Découper la couche raster de population pour l'étendre au tampon Cyclon
 ```
-9. **Calculate zonal statistics to estimate exposed population**  
-   - From the **Algorithms** panel, search for **Zonal Statistics** .
-   - In the configuration window: Calcul de la population exposée aux cyclones par district
-     - Add a description: `Calcul de la population exposée aux cyclones par district`
-     - Set **Input layer** to `Admin Boundaries` (from **Model Input**).
-     - Set **Raster layer** to the output of the previous step (from **Algorithm Output**).
-     - Set **Output column prefix** to `exposed_population_`.
-     - Under **Statistics to calculate**, select `Sum`.
-     - Set the output to **Model Output** and name it: 
+
+9. **Calul de la population exposée aux cyclone par district**
+  - Dans le panneau **Algorithme**, cherchez pour l'outil `Statistiques de zone` (eng.: `Zonal Statistics`) et ouvrez le. 
+  - Dans la fenêtre de configuration:
+    - Ajoutez une description: `Calcul de la population exposée aux cyclone par district` 
+    - Comme __"Couche source"__, choisissez la couche "Frontières administratives`.
+    - Comme __"Couche raster"__, choisissez le raster découpé (sous `Sortie d'un algorithme` -> `"Découpé (masque)" créé par l'algorithme "Decouper la couche raster de population avec le tampon du cyclone"`)
+    - Définissez le __préfixe de la colonne en sortie__ comme `exposed_population_`
+    - Sous __statistiques à calculer__, choisissez `Somme` (eng.: `Sum`).
+    - Sous __statistiques de zones__, ajoutez un nombre pour la sortie de l'algorithme:
       ```
       exposed_population_sum
       ```
-   - Click **OK** to add the step to the model.
+    - Cliquez sur `OK` pour ajouter l'étape au modèle.
+
 ```{figure} /fig/fr_MDG_AA_model_zonal_statistic_pop_admin2.PNG
 ---
 width: 600px
-name: the_world_result
+name: mdg_statistiques_de_zone
 align: center
 ---
-Calcul de la population exposée aux cyclones par district
+Calcul de la population exposée aux cyclones par district utilisant l'algorithme "Statistiques de zone".
 ```
 
-**Your results should look something like this:** 
+**Vos résultats devraient ressembler à ceci:** 
 
 ```{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms.PNG
 ---
 width: 600px
-name: the_world_result
+name: fr_resultat_modele
 align: center
 ---
 Votre modèle devrait ressembler à ceci. Tous les algorithmes sont correctement connectés et la sortie du modèle est définie.
 ```
 
-10. **Validate your model (recommended)**
-   - Before saving or running, click the ✔️ **Validate Model** button in the top toolbar.
-   - Fix any warnings or errors shown in the log panel.
-   - This helps ensure your model is complete and won't break during execution.
+10. **Valider le modèle (recommandé)**
+  - Avant d'enregistrer ou exécuter le modèle. Dans le menu en haut de la fenêtre, cliquez sur `Modèle` -> ✔️  `Valider le modèle`.  
+  - Corrigez les èventuels avertissements ou erreurs affichés dans le panneau de journal. 
+  - Cela permet de s'assurer que le modèle est complet et qu'il s'exécutera sans erreur.
 
-11. **Run the model**  
-   - Run the model by clicking on `Model` -> `Run Model`
-   - Set **Admin Bounderies** to `mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg`
-   - Set **Cyclone Track** to `example_Harald_2025_Track`
-   - Set **Population Raster** to `MDG_WorldPop_2020_constrained.tif`
-   - Set the model output **exposed_population_sum** to `Harald_Exposed_Population`and save it in the `data` -> `output`
+11. **Exécuter le modèle**
+  - Exécutez le modèle: Dans le menu en haut de la fenêtre, cliquez sur `Modèle` -> `Exècuter le modèle...`
+    - Maintenant, vous devez définir les __Couches Source__ pour le modèle. Vous pouvez choisir les couches que vous avez importées dans votre projet QGIS.
+    - Sous __Frontières Administratives__, choisissez: 
+      `mdg_admbnda_adm2_BNGRC_OCHA_20281031.gpkg`
+    - Sous __Raster Population__, choisissez:
+      `MDG_WorldPop_2020_constrained.tif`
+    - Sous __Trajectoire Cyclone__, choisissez:
+      `example_Harald_2025_Track`
+    - Definissez la sortie du modèle __"exposed_population_sum"__ comme: `Harald_Exposed_Population` et engeristrez-le dans le dossier `/data/output/` en cliquant sur les trois points ![](/fig/3.36_three_dots.png).
+    - Cliquez sur `Éxecuter`.
 
 
-You can now run this model any time a new cyclone track becomes available.
+Vous pouvez désormais exécuter ce modèle chaque fois qu’une nouvelle trajectoire de cyclone est disponible.
 
 ```{figure} /fig/fr_MDG_AA_model_run_model_M7_e1_task2.PNG
 ---
 width: 600px
-name: the_world_result
 align: center
 ---
 Pour exécuter le modèle, spécifiez l'entrée comme indiqué dans l'image et définissez le nom de la couche de sortie.
 ```
 
-**Your results should look something like this:**
+**Vos résultats devraient ressembler à ceci:**
 ```{figure} /fig/fr_MDG_AA_intermediate_result_model_task1_basics.PNG
 ---
 width: 600px
-name: the_world_result
+name: mdgtask_model_result
 align: center
 ---
 
 ``` 
-12. **Add the cyclone buffer as an additional model output**  
-   - Double-click on the algorithm from step 7 (**Reproject the buffer back to EPSG:4326**) to open its configuration.  
-   - In the **Output layer** field, check the box for **Model Output**.  
-   - Give the output a clear name, for example:
-     ```
-     cyclone_harald_buffer
-     ```  
+12. **Ajouter le tampon du cyclone comme sortie supplémentaire du modèle**  
+  - Faites un double-clic sur l'algorithme __"Reprojeter le tampon vers EPSG:4326"__ pour ouvrir sa configuration.
+  - Dans le champ `Reprojecté`, entrez un nom pour la sortie du modèle, comme: `cyclone_harald_buffer`
+  - Cliquez sur `OK` pour 
    - Click **OK** to save the change.  
    - This will allow the model to produce both the exposed population results and the buffered cyclone impact zone when it is run.
 
 ```{figure} /fig/fr_MDG_AA_model_output_buffer.PNG
 ---
 width: 600px
-name: the_world_result
+name: mdg_model_add_buffer_output
 align: center
 ---
 ```
