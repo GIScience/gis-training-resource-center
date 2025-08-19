@@ -2,7 +2,7 @@
 
 <!-- Maybe have a final look over introduction and all the official stuff which should be included in the documentation -->
 
-:::{Admonition} French Translation 
+:::{admonition} French Translation 
 :class: note
 
 The french version of this page can be found [here](/content/GIS_AA/fr_qgis_cyclone_trigger_madagascar.md)
