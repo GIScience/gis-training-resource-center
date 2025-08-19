@@ -98,10 +98,6 @@ __Exercice guidée:__
 - Prévoyez du temps à la fin pour répondre aux questions ou aborder les éventuels problèmes rencontrés lors de tâches.
 - Laissez un moment pour des questions ouvertes.
 
-- Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project. 
-- Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.  
-- Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.
-
 :::
 
 ## Données
@@ -176,7 +172,7 @@ Vous allez tamponner manuellement la trajectoire du cyclone, découper le raster
 4. __Reprojetez la trajectoire du cyclone__ pour utiliser des mètres au lieu de degrés (ceci est important pour un tampon précis):
     - Dans la __[Boîte à outils de traitement](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_start.html?highlight=processing+toolbox#toolbox-toolbars)__, cherchez `Reprojeter une couche`.
     - Couche source: example_Harald_2025_Track
-    - CRS cible : EPSG:29738 ou un autre SCR projeté en mètres adapté à Madagascar.
+    - SCR cible : EPSG:29738 ou un autre SCR projeté en mètres adapté à Madagascar.
     - Enregistrez le résultat dans le dossier temp sous le nom: `Harald_Track_Reprojected`
 
 ```{figure} /fig/fr_MDG_AA_reproject_cyclon_track.PNG
@@ -188,7 +184,7 @@ Reprojeter la trajectoire du cyclone
 ```
 
 ```{Attention}
-Les distances de tampon doivent être calculées en mètres. De nombreux jeux de données (comme les trajectoires de cyclone en GeoJSON) utilisent des systèmes de coordonnées géographiques (CRS) comme EPSG:4326, qui mesurent en degrés — et non en mètres. Pour calculer correctement un tampon de 200 km, il faut d’abord reprojeter la trajectoire dans un CRS projeté utilisant les mètres.
+Les distances de tampon doivent être calculées en mètres. De nombreux jeux de données (comme les trajectoires de cyclone en GeoJSON) utilisent des systèmes de coordonnées géographiques (CRS/SCR) comme EPSG:4326, qui mesurent en degrés — et non en mètres. Pour calculer correctement un tampon de 200 km, il faut d’abord reprojeter la trajectoire dans un CRS projeté utilisant les mètres.
 ```
 5. **Créer une zone tampon autour de la trajectoire du cyclone**:
    - Dans la __Boîte à outils de traitement__, cherchez `Tampon`.
@@ -218,12 +214,12 @@ Les résultats intermédiaires doivent montrer la trajectoire du cyclone et la z
 :::
 ::::
 
-6. **Reprojeter la zone tampon en EPDG:4326 (pour correpondre au CRS de la couche raster)**
+6. **Reprojeter la zone tampon en EPDG:4326 (pour correpondre au CRS/SCR de la couche raster)**
 
 
     - Dans la Boîte à outils de traitement, cherchez `Reprojeter une couche`
     - Couche source: `Harald_Buffer_200km_29738`
-    - CRS (système de coordonnées de référence): `EPSG:4326 - WGS 84`.
+    - CRS/SCR cible (système de coordonnées de référence): `EPSG:4326 - WGS 84`.
     - Entregistrez le résultat dans le dossier `temp` sous le nom: `Harald_Buffer_200km_4326` 
 
 
@@ -297,15 +293,6 @@ Pour cela, nous allons appliquer une __[classification graduée]()__ à la couch
 - En suite, cliquez sur `Appliquer` puis `OK` pour afficher la carte classifiée.
 
 
-- In the **Layers panel**, right-click on the layer `Harald_Exposed_Population` and choose `Properties`.
-- Go to the **Symbology** tab on the left.
-- At the top of the window, change the style from `Single Symbol` to `Graduated`.
-- In the **Value** drop-down menu, select the field that contains the population sum. It typically starts with the prefix you defined earlier, e.g. `exposed_population_sum`.
-- Set the **color ramp** to one that suits your map (e.g. `Reds`).
-- Choose a **classification mode** (e.g. `)`, `Natural Breaks`, or `Equal Interval`) and select the number of classes (e.g. 5).
-- Click `Classify` to generate the classification.
-- Click `Apply` and then `OK` to display the classified map.
-
 ```{tip}
 Vous pouvez ajuster les bornes des classes ou les étiquettes en double-cliquant sur chaque entrée de classe.
 ```
@@ -352,7 +339,7 @@ Dans cette tâche, vous allez aider Aina à construire une version simple de ce 
 2. **Nommer le modèle**:   
     - Une nouvelle fenêtre s'ouvrira. À gauch, vous trouvez le panneau `Propriétes du modèle`. Ici, vous pouvez definir les informations du modèle: 
         - **Nom du modèle**: `Estimation_Population_Exposée`
-        - **Groupe**: `Outils de analysis cyclones`
+        - **Groupe**: `Outils d'analyse cyclones`
         - Laissez la description vide ou ècrivez: *Modèle automatisé pour estimer la population exposée a partir d'un tampon autour du cyclone*.
 
 
@@ -364,55 +351,55 @@ Dans cette tâche, vous allez aider Aina à construire une version simple de ce 
 
 
 4. **Ajouter les entrées du modèle**:  
-   - Dans le panneau gauche, ouvrez la section __Entrées__.
-   - Ajouter les couches d'entrées  On the **left panel**, expand the **Inputs** section.
-   - Add the following input layers with type constraints:
-     - `+ Vector Layer`  
-       - **Label**: `Cyclone Track`  
-       - In the **Advanced panel**, set **geometry type** to `Line`
-     - `+ Raster Layer`  
-       - **Label**: `Population Raster`
-     - `+ Vector Layer`  
-       - **Label**: `Admin Boundaries`  
-       - In the **Advanced panel**, set **geometry type** to `Polygon`
-   - These will appear at the top of your model canvas and serve as the input data when the model is run.
+  - Dans le panneau gauche, ouvrez la section __Entrées__.
+  - Ajouter les couches d'entrées en cliquant sur `+ Couche Vecteur` (`+ Vector Layer`) et `+ Couche Raster` (`+ Raster Layer`) On the **left panel**, expand the **Inputs** section.
+  - Add the following input layers with type constraints:
+    - `+ Couche Vecteur`  
+      - **Description**: `Trajectoire du cyclone`  
+      - Type de géometrie: `Ligne`
+    - `+ Couche Raster`
+      - **Description**: `Raster Population`
+    - `+ Couche Vecteur`  
+      - **Description**: `Frontières adminitratives`
+      - Type de géometrie: `Polygone`
+  - Ces couches apparaîtront en haut du canevas du modèle et serviront de données d'entrée lorsque le modèle sera exécuté.
 
      ```{tip}
-     All inputs should be set as **mandatory**, so the model always receives the necessary data to run correctly.
+     Toutes les entrées doivent être définies comme **obligatoires**, afin que le modèle dispose toujours des données nécessaires pour s’exécuter correctement.
      ```
 
 ::::{tab-set}
 
-:::{tab-item} Input Cyclon Track
+:::{tab-item} Entrée: trajectoire du cylcone
 ```{figure} /fig/fr_MDG_AA_model_input_cyclon_track.PNG
 ---
 width: 600px
 align: center
 ---
-Definition of the model input: Cyclon Track
+Ajouter la entrée couche vecteur pour la trajectoire du cyclone
 ```
 :::
 
-:::{tab-item} Input Admin Boundaries 
+:::{tab-item} Entrée: Frontières administratives
 ```{figure} /fig/fr_MDG_AA_model_input_admin_bounderies.PNG
 ---
 width: 600px
 align: center
 ---
-Definition of the model input: Admin Bounderies
+Ajouter la entrée couche vecteur pour les frontières administratives
 :::
 
-:::{tab-item} Population Raster
+:::{tab-item} Entrée: Raster Population
 ```{figure} /fig/fr_MDG_AA_model_input_population_raster.PNG
 ---
 width: 600px
 align: center
 ---
-Definition of the model input: Population Raster
+Ajouter la couche raster pour les données de population
 ```
 :::
 ::::
-**Intermediate Result**
+**Résultat intermédiaire**
 
 ```{figure} /fig/fr_MDG_AA_intermediate_result_model_input.PNG
 ---
@@ -423,60 +410,66 @@ align: center
 Résultat intermédiaire de la définition des données d'entrée du modèle
 ```
 
-5. **Reproject the cyclone track to EPSG:29738**  
-   - From the **Algorithms** panel, search for **Reproject Layer** .
-   - In the configuration window:
-     - Add a description: `Reprojecter la couche de trajectoire du cyclone a EPSG : 29738`
-     - Set **Input layer** to `Cyclone Track` (from **Model Input**).
-     - Set **Target CRS** to `EPSG:29738 – Madagascar / Laborde Grid`.
-     - Set the output to **Model Output** (leave the output name **empty**).
-   - Click **OK** to add the step to the model.
+5. **Reprojetter la trajectoire du cyclone vers EPSG:29738** 
+  - Dans le panneau de **Algorithmes** a gauche, cherchez **Reprojeter une couche** et faites un double-clic dessus.
+  - Dans la fenêtre de configuration: 
+    - Ajouter une description: `Reprojeter la couche de trajectoire du cyclone à EPSG:29738`
+    - Définissez la **Couche source** sur `Trajectoir du cyclone` (depuis Entrée du modèle).
+    - Définissez la SCR cible sur `EPSG:29738 - Tananarive / UTM zone 38 S`
+    - Cliquez sur `OK` pour ajouter l'étape au model. 
+
 ```{figure} /fig/fr_MDG_AA_model_reporject_cyclon_track.PNG
 ---
 width: 600px
 name: the_world_result
 align: center
 ---
-Reprojecter la couche de trajectoire du cyclone vers un système de référence de coordonnées métrique (CRS) EPSG : 29738
+Reprojeter la couche du trajectoire du cyclone vers un système de référence de coordonnées métrique (SCR) EPSG : 29738
 ```
-6. **Buffer the reprojected cyclone track**  
-   - From the **Algorithms** panel, search for **Buffer**.
-   - In the configuration window:
-    - Add a description:  `Mettre en mémoire tampon la couche Cyclone reprojetée`
-     - Add a description: 
-     - Set **Input layer** to the output from the previous step (from **Algorithm Output**).
-     - Set **Distance** to `200000` (200 km).
-     - Leave **Segments** at the default value (`5`).
-     - Set **Dissolve result** to `Yes`.
-     - Set the output to **Model Output** (leave the output name **empty**).
-   - Click **OK** to add the step to the model.
+
+6. **Tamponner la trajectoire du cyclone reprojetée**  
+   - Dans le panneau **Algorithmes**, cherchez `Tampon` (eng.: `Buffer`)
+   - Dans la fenêtre de configuration:
+    - Ajoutez une description: `Tamponner la trajectoire du cyclone reprojetée`
+    - Choisissez, comme couche source, le résultat de l'étape précedente (sous l'option `Sortie d'un algorithme` -> `"Reprojeté" créé par l'algorithme "Reprojeter la couche de trajectoire du cyclone à EPSG:29738"`).
+    - Définissez la distance du tampon à `200000` (200 km). 
+    - Laissez les __segments__ à la valeur par défaut (`5`).
+    - Regrouper le résultat: `Oui`.
+    - Cliquez sur `OK`. L'algorithme sera ajouter au modèle. 
+
 ```{figure} /fig/fr_MDG_AA_model_buffer_cyclon_track.PNG
 ---
 width: 600px
 name: the_world_result
 align: center
 ---
-Mettre en mémoire tampon la couche Cyclone reprojetée
+Ajouter l'étape pour tamponner la couche Cyclone reprojetée
 ```
-7. **Reproject the buffer back to EPSG:4326**  
-   - From the **Algorithms** panel, search for **Reproject Layer**.
-   - In the configuration window:
-    - Add a description:  `Reprojecter le tampon vers EPSG:4326`
-   - In the configuration window:
-     - Set **Input layer** to the output from the previous step (from **Algorithm Output**).
-     - Set **Target CRS** to `EPSG:4326 – WGS 84`.
-     - Set the output to **Model Output** (leave the output name **empty**).
-   - Click **OK** to add the step to the model.
+
+7. **Reprojeter le tampon vers le SCR du projet (EPSG:4326)**
+  - Dans le panneau **Algorithmes**, cherchez `Reprojeter une couche` (eng.: `Reproject vector layer`).
+  - Dans la fenêtre de configuration:
+    - Ajoutez une description: `Reprojeter le tampon ver EPSG:4326`.
+    - Choisissez, comme couche source, le résultat de l'étape prècedente (sous l'option `Sortie d'un algorithme` -> `"Mis en tampon" créé par l'algorithme "Tamponner la trajectoire du cyclone reprojetée"`)
+    - SCR cible: `EPSG: 4326 - WGS 84`
+    - Cliquez sur `OK` pour ajouter l'étape au modèle. 
+
 ```{figure} /fig/fr_MDG_AA_model_reporject_bufferd_cyclon_track.PNG
 ---
 width: 600px
 name: the_world_result
 align: center
 ---
-Reprojecter le tampon vers EPSG:4326
+Reprojeter le tampon vers EPSG:4326
 ```
-8. **Clip the population raster using the buffered area**  
-   - From the **Algorithms** panel, search for **Clip Raster by Mask Layer** .
+
+
+8. **Découper la couche raster de population avec le tampon du cyclone**  
+   - Dans le panneau **Algorithmes**, cherchez `Découper un raster selon une couche de masque` (eng.: `Clip Raster by Mask Layer`)
+   - Dans la fenêtre de configuration:
+    - Ajoutez une description: `Decouper la couche raster de population avec le tampon du cyclone`.
+    - Comme __"Couche source"__, choisissez la Entrée `Raster Population`
+    - Comme __"Couche de Masquage"__, choisissez
    - In the configuration window:
      - Add a description: `Découper la couche raster de population pour l'étendre au tampon Cyclon`
    - In the configuration window:

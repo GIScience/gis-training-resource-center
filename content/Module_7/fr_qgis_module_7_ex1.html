@@ -711,9 +711,6 @@ L’objectif est de préparer un workflow d’analyse et de visualisation pour s
 <ul class="simple">
 <li><p class="sd-card-text">Prévoyez du temps à la fin pour répondre aux questions ou aborder les éventuels problèmes rencontrés lors de tâches.</p></li>
 <li><p class="sd-card-text">Laissez un moment pour des questions ouvertes.</p></li>
-<li><p class="sd-card-text">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</p></li>
-<li><p class="sd-card-text">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</p></li>
-<li><p class="sd-card-text">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</p></li>
 </ul>
 </div>
 </details></section>
@@ -785,7 +782,7 @@ Dans cette tâche, vous allez suivre les étapes qu’elle utilisait auparavant,
 <ul class="simple">
 <li><p>Dans la <strong><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_start.html?highlight=processing+toolbox#toolbox-toolbars">Boîte à outils de traitement</a></strong>, cherchez <code class="docutils literal notranslate"><span class="pre">Reprojeter</span> <span class="pre">une</span> <span class="pre">couche</span></code>.</p></li>
 <li><p>Couche source: example_Harald_2025_Track</p></li>
-<li><p>CRS cible : EPSG:29738 ou un autre SCR projeté en mètres adapté à Madagascar.</p></li>
+<li><p>SCR cible : EPSG:29738 ou un autre SCR projeté en mètres adapté à Madagascar.</p></li>
 <li><p>Enregistrez le résultat dans le dossier temp sous le nom: <code class="docutils literal notranslate"><span class="pre">Harald_Track_Reprojected</span></code></p></li>
 </ul>
 </li>
@@ -798,7 +795,7 @@ Dans cette tâche, vous allez suivre les étapes qu’elle utilisait auparavant,
 </figure>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
-<p>Les distances de tampon doivent être calculées en mètres. De nombreux jeux de données (comme les trajectoires de cyclone en GeoJSON) utilisent des systèmes de coordonnées géographiques (CRS) comme EPSG:4326, qui mesurent en degrés — et non en mètres. Pour calculer correctement un tampon de 200 km, il faut d’abord reprojeter la trajectoire dans un CRS projeté utilisant les mètres.</p>
+<p>Les distances de tampon doivent être calculées en mètres. De nombreux jeux de données (comme les trajectoires de cyclone en GeoJSON) utilisent des systèmes de coordonnées géographiques (CRS/SCR) comme EPSG:4326, qui mesurent en degrés — et non en mètres. Pour calculer correctement un tampon de 200 km, il faut d’abord reprojeter la trajectoire dans un CRS projeté utilisant les mètres.</p>
 </div>
 <ol class="arabic simple" start="5">
 <li><p><strong>Créer une zone tampon autour de la trajectoire du cyclone</strong>:</p>
@@ -833,11 +830,11 @@ Résultat intermédiaire: Zone tampon<div class="sd-summary-down docutils">
 </figure>
 </div>
 </details><ol class="arabic simple" start="6">
-<li><p><strong>Reprojeter la zone tampon en EPDG:4326 (pour correpondre au CRS de la couche raster)</strong></p>
+<li><p><strong>Reprojeter la zone tampon en EPDG:4326 (pour correpondre au CRS/SCR de la couche raster)</strong></p>
 <ul class="simple">
 <li><p>Dans la Boîte à outils de traitement, cherchez <code class="docutils literal notranslate"><span class="pre">Reprojeter</span> <span class="pre">une</span> <span class="pre">couche</span></code></p></li>
 <li><p>Couche source: <code class="docutils literal notranslate"><span class="pre">Harald_Buffer_200km_29738</span></code></p></li>
-<li><p>CRS (système de coordonnées de référence): <code class="docutils literal notranslate"><span class="pre">EPSG:4326</span> <span class="pre">-</span> <span class="pre">WGS</span> <span class="pre">84</span></code>.</p></li>
+<li><p>CRS/SCR cible (système de coordonnées de référence): <code class="docutils literal notranslate"><span class="pre">EPSG:4326</span> <span class="pre">-</span> <span class="pre">WGS</span> <span class="pre">84</span></code>.</p></li>
 <li><p>Entregistrez le résultat dans le dossier <code class="docutils literal notranslate"><span class="pre">temp</span></code> sous le nom: <code class="docutils literal notranslate"><span class="pre">Harald_Buffer_200km_4326</span></code></p></li>
 </ul>
 </li>
@@ -923,14 +920,6 @@ Pour cela, nous allons appliquer une <strong><span class="xref myst">classificat
 <li><p>Sélectionnez un <strong>mode de classification</strong> (par exemple, <code class="docutils literal notranslate"><span class="pre">Nombres</span> <span class="pre">égal</span> <span class="pre">(Quantile)</span></code>, <code class="docutils literal notranslate"><span class="pre">Intervalles</span> <span class="pre">égaux</span></code> ou <code class="docutils literal notranslate"><span class="pre">Ruptures</span> <span class="pre">naturelles</span> <span class="pre">(Jenks)</span></code>) et indiquez le nombre de classes (par exemple 5).</p></li>
 <li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">Classer</span></code> pour générer la classification.</p></li>
 <li><p>En suite, cliquez sur <code class="docutils literal notranslate"><span class="pre">Appliquer</span></code> puis <code class="docutils literal notranslate"><span class="pre">OK</span></code> pour afficher la carte classifiée.</p></li>
-<li><p>In the <strong>Layers panel</strong>, right-click on the layer <code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Population</span></code> and choose <code class="docutils literal notranslate"><span class="pre">Properties</span></code>.</p></li>
-<li><p>Go to the <strong>Symbology</strong> tab on the left.</p></li>
-<li><p>At the top of the window, change the style from <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">Symbol</span></code> to <code class="docutils literal notranslate"><span class="pre">Graduated</span></code>.</p></li>
-<li><p>In the <strong>Value</strong> drop-down menu, select the field that contains the population sum. It typically starts with the prefix you defined earlier, e.g. <code class="docutils literal notranslate"><span class="pre">exposed_population_sum</span></code>.</p></li>
-<li><p>Set the <strong>color ramp</strong> to one that suits your map (e.g. <code class="docutils literal notranslate"><span class="pre">Reds</span></code>).</p></li>
-<li><p>Choose a <strong>classification mode</strong> (e.g. <code class="docutils literal notranslate"><span class="pre">)</span></code>, <code class="docutils literal notranslate"><span class="pre">Natural</span> <span class="pre">Breaks</span></code>, or <code class="docutils literal notranslate"><span class="pre">Equal</span> <span class="pre">Interval</span></code>) and select the number of classes (e.g. 5).</p></li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Classify</span></code> to generate the classification.</p></li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and then <code class="docutils literal notranslate"><span class="pre">OK</span></code> to display the classified map.</p></li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -963,7 +952,7 @@ Cela lui permettra d’agir plus rapidement et d’éviter de répéter les mêm
 <li><p>Appliquer les statistiques zonales pour obtenir la population exposée par district</p></li>
 </ul>
 <hr class="docutils" />
-<ol class="arabic">
+<ol class="arabic simple">
 <li><p><strong>Ouvrir le modeleur</strong>:</p>
 <ul class="simple">
 <li><p>Ouvrez le modeleur depuis le menu du haut: <code class="docutils literal notranslate"><span class="pre">Traitement</span></code> (<code class="docutils literal notranslate"><span class="pre">Processing</span></code>) -&gt; <code class="docutils literal notranslate"><span class="pre">Modeleur</span></code> (<code class="docutils literal notranslate"><span class="pre">Graphic</span> <span class="pre">Modeler</span></code>)<br />
@@ -975,7 +964,7 @@ Cela lui permettra d’agir plus rapidement et d’éviter de répéter les mêm
 <li><p>Une nouvelle fenêtre s’ouvrira. À gauch, vous trouvez le panneau <code class="docutils literal notranslate"><span class="pre">Propriétes</span> <span class="pre">du</span> <span class="pre">modèle</span></code>. Ici, vous pouvez definir les informations du modèle:</p>
 <ul>
 <li><p><strong>Nom du modèle</strong>: <code class="docutils literal notranslate"><span class="pre">Estimation_Population_Exposée</span></code></p></li>
-<li><p><strong>Groupe</strong>: <code class="docutils literal notranslate"><span class="pre">Outils</span> <span class="pre">de</span> <span class="pre">analysis</span> <span class="pre">cyclones</span></code></p></li>
+<li><p><strong>Groupe</strong>: <code class="docutils literal notranslate"><span class="pre">Outils</span> <span class="pre">d'analyse</span> <span class="pre">cyclones</span></code></p></li>
 <li><p>Laissez la description vide ou ècrivez: <em>Modèle automatisé pour estimer la population exposée a partir d’un tampon autour du cyclone</em>.</p></li>
 </ul>
 </li>
@@ -992,73 +981,72 @@ Cela lui permettra d’agir plus rapidement et d’éviter de répéter les mêm
 </li>
 </ul>
 </li>
-<li><p><strong>Ajouter les entrées du modèle</strong>:</p>
+<li><p><strong>Ajouter les entrées du modèle</strong>:</p></li>
+</ol>
 <ul>
 <li><p>Dans le panneau gauche, ouvrez la section <strong>Entrées</strong>.</p></li>
-<li><p>Ajouter les couches d’entrées  On the <strong>left panel</strong>, expand the <strong>Inputs</strong> section.</p></li>
+<li><p>Ajouter les couches d’entrées en cliquant sur <code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Couche</span> <span class="pre">Vecteur</span></code> (<code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code>) et <code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Couche</span> <span class="pre">Raster</span></code> (<code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Raster</span> <span class="pre">Layer</span></code>) On the <strong>left panel</strong>, expand the <strong>Inputs</strong> section.</p></li>
 <li><p>Add the following input layers with type constraints:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code></p>
+<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Couche</span> <span class="pre">Vecteur</span></code></p>
 <ul>
-<li><p><strong>Label</strong>: <code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Track</span></code></p></li>
-<li><p>In the <strong>Advanced panel</strong>, set <strong>geometry type</strong> to <code class="docutils literal notranslate"><span class="pre">Line</span></code></p></li>
+<li><p><strong>Description</strong>: <code class="docutils literal notranslate"><span class="pre">Trajectoire</span> <span class="pre">du</span> <span class="pre">cyclone</span></code></p></li>
+<li><p>Type de géometrie: <code class="docutils literal notranslate"><span class="pre">Ligne</span></code></p></li>
 </ul>
 </li>
-<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Raster</span> <span class="pre">Layer</span></code></p>
+<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Couche</span> <span class="pre">Raster</span></code></p>
 <ul>
-<li><p><strong>Label</strong>: <code class="docutils literal notranslate"><span class="pre">Population</span> <span class="pre">Raster</span></code></p></li>
+<li><p><strong>Description</strong>: <code class="docutils literal notranslate"><span class="pre">Raster</span> <span class="pre">Population</span></code></p></li>
 </ul>
 </li>
-<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code></p>
+<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Couche</span> <span class="pre">Vecteur</span></code></p>
 <ul>
-<li><p><strong>Label</strong>: <code class="docutils literal notranslate"><span class="pre">Admin</span> <span class="pre">Boundaries</span></code></p></li>
-<li><p>In the <strong>Advanced panel</strong>, set <strong>geometry type</strong> to <code class="docutils literal notranslate"><span class="pre">Polygon</span></code></p></li>
+<li><p><strong>Description</strong>: <code class="docutils literal notranslate"><span class="pre">Frontières</span> <span class="pre">adminitratives</span></code></p></li>
+<li><p>Type de géometrie: <code class="docutils literal notranslate"><span class="pre">Polygone</span></code></p></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p>These will appear at the top of your model canvas and serve as the input data when the model is run.</p>
+<li><p>Ces couches apparaîtront en haut du canevas du modèle et serviront de données d’entrée lorsque le modèle sera exécuté.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>All inputs should be set as <strong>mandatory</strong>, so the model always receives the necessary data to run correctly.</p>
+<p>Toutes les entrées doivent être définies comme <strong>obligatoires</strong>, afin que le modèle dispose toujours des données nécessaires pour s’exécuter correctement.</p>
 </div>
 </li>
 </ul>
-</li>
-</ol>
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-0">
-Input Cyclon Track</label><div class="sd-tab-content docutils">
+Entrée: trajectoire du cylcone</label><div class="sd-tab-content docutils">
 <figure class="align-center" id="id21">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_input_cyclon_track.PNG"><img alt="../../_images/fr_MDG_AA_model_input_cyclon_track.PNG" src="../../_images/fr_MDG_AA_model_input_cyclon_track.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Definition of the model input: Cyclon Track</span><a class="headerlink" href="#id21" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Ajouter la entrée couche vecteur pour la trajectoire du cyclone</span><a class="headerlink" href="#id21" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-1">
-Input Admin Boundaries </label><div class="sd-tab-content docutils">
+Entrée: Frontières administratives</label><div class="sd-tab-content docutils">
 <figure class="align-center" id="id22">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_input_admin_bounderies.PNG"><img alt="../../_images/fr_MDG_AA_model_input_admin_bounderies.PNG" src="../../_images/fr_MDG_AA_model_input_admin_bounderies.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Definition of the model input: Admin Bounderies</span><a class="headerlink" href="#id22" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Ajouter la entrée couche vecteur pour les frontières administratives</span><a class="headerlink" href="#id22" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 <input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-2">
-Population Raster</label><div class="sd-tab-content docutils">
+Entrée: Raster Population</label><div class="sd-tab-content docutils">
 <figure class="align-center" id="id23">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_input_population_raster.PNG"><img alt="../../_images/fr_MDG_AA_model_input_population_raster.PNG" src="../../_images/fr_MDG_AA_model_input_population_raster.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Definition of the model input: Population Raster</span><a class="headerlink" href="#id23" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Ajouter la couche raster pour les données de population</span><a class="headerlink" href="#id23" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 </div>
-<p><strong>Intermediate Result</strong></p>
+<p><strong>Résultat intermédiaire</strong></p>
 <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_model_input.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_model_input.PNG" src="../../_images/fr_MDG_AA_intermediate_result_model_input.PNG" style="width: 600px;" /></a>
 <figcaption>
@@ -1066,76 +1054,73 @@ Population Raster</label><div class="sd-tab-content docutils">
 </figcaption>
 </figure>
 <ol class="arabic simple" start="5">
-<li><p><strong>Reproject the cyclone track to EPSG:29738</strong></p>
-<ul class="simple">
-<li><p>From the <strong>Algorithms</strong> panel, search for <strong>Reproject Layer</strong> .</p></li>
-<li><p>In the configuration window:</p>
-<ul>
-<li><p>Add a description: <code class="docutils literal notranslate"><span class="pre">Reprojecter</span> <span class="pre">la</span> <span class="pre">couche</span> <span class="pre">de</span> <span class="pre">trajectoire</span> <span class="pre">du</span> <span class="pre">cyclone</span> <span class="pre">a</span> <span class="pre">EPSG</span> <span class="pre">:</span> <span class="pre">29738</span></code></p></li>
-<li><p>Set <strong>Input layer</strong> to <code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Track</span></code> (from <strong>Model Input</strong>).</p></li>
-<li><p>Set <strong>Target CRS</strong> to <code class="docutils literal notranslate"><span class="pre">EPSG:29738</span> <span class="pre">–</span> <span class="pre">Madagascar</span> <span class="pre">/</span> <span class="pre">Laborde</span> <span class="pre">Grid</span></code>.</p></li>
-<li><p>Set the output to <strong>Model Output</strong> (leave the output name <strong>empty</strong>).</p></li>
-</ul>
-</li>
-<li><p>Click <strong>OK</strong> to add the step to the model.</p></li>
-</ul>
-</li>
+<li><p><strong>Reprojetter la trajectoire du cyclone vers EPSG:29738</strong></p></li>
 </ol>
+<ul class="simple">
+<li><p>Dans le panneau de <strong>Algorithmes</strong> a gauche, cherchez <strong>Reprojeter une couche</strong> et faites un double-clic dessus.</p></li>
+<li><p>Dans la fenêtre de configuration:</p>
+<ul>
+<li><p>Ajouter une description: <code class="docutils literal notranslate"><span class="pre">Reprojeter</span> <span class="pre">la</span> <span class="pre">couche</span> <span class="pre">de</span> <span class="pre">trajectoire</span> <span class="pre">du</span> <span class="pre">cyclone</span> <span class="pre">à</span> <span class="pre">EPSG:29738</span></code></p></li>
+<li><p>Définissez la <strong>Couche source</strong> sur <code class="docutils literal notranslate"><span class="pre">Trajectoir</span> <span class="pre">du</span> <span class="pre">cyclone</span></code> (depuis Entrée du modèle).</p></li>
+<li><p>Définissez la SCR cible sur <code class="docutils literal notranslate"><span class="pre">EPSG:29738</span> <span class="pre">-</span> <span class="pre">Tananarive</span> <span class="pre">/</span> <span class="pre">UTM</span> <span class="pre">zone</span> <span class="pre">38</span> <span class="pre">S</span></code></p></li>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">OK</span></code> pour ajouter l’étape au model.</p></li>
+</ul>
+</li>
+</ul>
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_reporject_cyclon_track.PNG"><img alt="../../_images/fr_MDG_AA_model_reporject_cyclon_track.PNG" src="../../_images/fr_MDG_AA_model_reporject_cyclon_track.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Reprojecter la couche de trajectoire du cyclone vers un système de référence de coordonnées métrique (CRS) EPSG : 29738</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Reprojeter la couche du trajectoire du cyclone vers un système de référence de coordonnées métrique (SCR) EPSG : 29738</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="6">
-<li><p><strong>Buffer the reprojected cyclone track</strong></p>
+<li><p><strong>Tamponner la trajectoire du cyclone reprojetée</strong></p>
 <ul class="simple">
-<li><p>From the <strong>Algorithms</strong> panel, search for <strong>Buffer</strong>.</p></li>
-<li><p>In the configuration window:</p></li>
-<li><p>Add a description:  <code class="docutils literal notranslate"><span class="pre">Mettre</span> <span class="pre">en</span> <span class="pre">mémoire</span> <span class="pre">tampon</span> <span class="pre">la</span> <span class="pre">couche</span> <span class="pre">Cyclone</span> <span class="pre">reprojetée</span></code></p></li>
-<li><p>Add a description:</p></li>
-<li><p>Set <strong>Input layer</strong> to the output from the previous step (from <strong>Algorithm Output</strong>).</p></li>
-<li><p>Set <strong>Distance</strong> to <code class="docutils literal notranslate"><span class="pre">200000</span></code> (200 km).</p></li>
-<li><p>Leave <strong>Segments</strong> at the default value (<code class="docutils literal notranslate"><span class="pre">5</span></code>).</p></li>
-<li><p>Set <strong>Dissolve result</strong> to <code class="docutils literal notranslate"><span class="pre">Yes</span></code>.</p></li>
-<li><p>Set the output to <strong>Model Output</strong> (leave the output name <strong>empty</strong>).</p></li>
-<li><p>Click <strong>OK</strong> to add the step to the model.</p></li>
+<li><p>Dans le panneau <strong>Algorithmes</strong>, cherchez <code class="docutils literal notranslate"><span class="pre">Tampon</span></code> (eng.: <code class="docutils literal notranslate"><span class="pre">Buffer</span></code>)</p></li>
+<li><p>Dans la fenêtre de configuration:</p></li>
+<li><p>Ajoutez une description: <code class="docutils literal notranslate"><span class="pre">Tamponner</span> <span class="pre">la</span> <span class="pre">trajectoire</span> <span class="pre">du</span> <span class="pre">cyclone</span> <span class="pre">reprojetée</span></code></p></li>
+<li><p>Choisissez, comme couche source, le résultat de l’étape précedente (sous l’option <code class="docutils literal notranslate"><span class="pre">Sortie</span> <span class="pre">d'un</span> <span class="pre">algorithme</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;Reprojeté&quot;</span> <span class="pre">créé</span> <span class="pre">par</span> <span class="pre">l'algorithme</span> <span class="pre">&quot;Reprojeter</span> <span class="pre">la</span> <span class="pre">couche</span> <span class="pre">de</span> <span class="pre">trajectoire</span> <span class="pre">du</span> <span class="pre">cyclone</span> <span class="pre">à</span> <span class="pre">EPSG:29738&quot;</span></code>).</p></li>
+<li><p>Définissez la distance du tampon à <code class="docutils literal notranslate"><span class="pre">200000</span></code> (200 km).</p></li>
+<li><p>Laissez les <strong>segments</strong> à la valeur par défaut (<code class="docutils literal notranslate"><span class="pre">5</span></code>).</p></li>
+<li><p>Regrouper le résultat: <code class="docutils literal notranslate"><span class="pre">Oui</span></code>.</p></li>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">OK</span></code>. L’algorithme sera ajouter au modèle.</p></li>
 </ul>
 </li>
 </ol>
 <figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_buffer_cyclon_track.PNG"><img alt="../../_images/fr_MDG_AA_model_buffer_cyclon_track.PNG" src="../../_images/fr_MDG_AA_model_buffer_cyclon_track.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Mettre en mémoire tampon la couche Cyclone reprojetée</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Ajouter l’étape pour tamponner la couche Cyclone reprojetée</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="7">
-<li><p><strong>Reproject the buffer back to EPSG:4326</strong></p>
-<ul class="simple">
-<li><p>From the <strong>Algorithms</strong> panel, search for <strong>Reproject Layer</strong>.</p></li>
-<li><p>In the configuration window:</p></li>
-<li><p>Add a description:  <code class="docutils literal notranslate"><span class="pre">Reprojecter</span> <span class="pre">le</span> <span class="pre">tampon</span> <span class="pre">vers</span> <span class="pre">EPSG:4326</span></code></p></li>
-<li><p>In the configuration window:</p>
-<ul>
-<li><p>Set <strong>Input layer</strong> to the output from the previous step (from <strong>Algorithm Output</strong>).</p></li>
-<li><p>Set <strong>Target CRS</strong> to <code class="docutils literal notranslate"><span class="pre">EPSG:4326</span> <span class="pre">–</span> <span class="pre">WGS</span> <span class="pre">84</span></code>.</p></li>
-<li><p>Set the output to <strong>Model Output</strong> (leave the output name <strong>empty</strong>).</p></li>
-</ul>
-</li>
-<li><p>Click <strong>OK</strong> to add the step to the model.</p></li>
-</ul>
-</li>
+<li><p><strong>Reprojeter le tampon vers le SCR du projet (EPSG:4326)</strong></p></li>
 </ol>
+<ul class="simple">
+<li><p>Dans le panneau <strong>Algorithmes</strong>, cherchez <code class="docutils literal notranslate"><span class="pre">Reprojeter</span> <span class="pre">une</span> <span class="pre">couche</span></code> (eng.: <code class="docutils literal notranslate"><span class="pre">Reproject</span> <span class="pre">vector</span> <span class="pre">layer</span></code>).</p></li>
+<li><p>Dans la fenêtre de configuration:</p>
+<ul>
+<li><p>Ajoutez une description: <code class="docutils literal notranslate"><span class="pre">Reprojeter</span> <span class="pre">le</span> <span class="pre">tampon</span> <span class="pre">ver</span> <span class="pre">EPSG:4326</span></code>.</p></li>
+<li><p>Choisissez, comme couche source, le résultat de l’étape prècedente (sous l’option <code class="docutils literal notranslate"><span class="pre">Sortie</span> <span class="pre">d'un</span> <span class="pre">algorithme</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;Mis</span> <span class="pre">en</span> <span class="pre">tampon&quot;</span> <span class="pre">créé</span> <span class="pre">par</span> <span class="pre">l'algorithme</span> <span class="pre">&quot;Tamponner</span> <span class="pre">la</span> <span class="pre">trajectoire</span> <span class="pre">du</span> <span class="pre">cyclone</span> <span class="pre">reprojetée&quot;</span></code>)</p></li>
+<li><p>SCR cible: <code class="docutils literal notranslate"><span class="pre">EPSG:</span> <span class="pre">4326</span> <span class="pre">-</span> <span class="pre">WGS</span> <span class="pre">84</span></code></p></li>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">OK</span></code> pour ajouter l’étape au modèle.</p></li>
+</ul>
+</li>
+</ul>
 <figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_reporject_bufferd_cyclon_track.PNG"><img alt="../../_images/fr_MDG_AA_model_reporject_bufferd_cyclon_track.PNG" src="../../_images/fr_MDG_AA_model_reporject_bufferd_cyclon_track.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Reprojecter le tampon vers EPSG:4326</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Reprojeter le tampon vers EPSG:4326</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="8">
-<li><p><strong>Clip the population raster using the buffered area</strong></p>
+<li><p><strong>Découper la couche raster de population avec le tampon du cyclone</strong></p>
 <ul class="simple">
-<li><p>From the <strong>Algorithms</strong> panel, search for <strong>Clip Raster by Mask Layer</strong> .</p></li>
+<li><p>Dans le panneau <strong>Algorithmes</strong>, cherchez <code class="docutils literal notranslate"><span class="pre">Découper</span> <span class="pre">un</span> <span class="pre">raster</span> <span class="pre">selon</span> <span class="pre">une</span> <span class="pre">couche</span> <span class="pre">de</span> <span class="pre">masque</span></code> (eng.: <code class="docutils literal notranslate"><span class="pre">Clip</span> <span class="pre">Raster</span> <span class="pre">by</span> <span class="pre">Mask</span> <span class="pre">Layer</span></code>)</p></li>
+<li><p>Dans la fenêtre de configuration:</p></li>
+<li><p>Ajoutez une description: <code class="docutils literal notranslate"><span class="pre">Decouper</span> <span class="pre">la</span> <span class="pre">couche</span> <span class="pre">raster</span> <span class="pre">de</span> <span class="pre">population</span> <span class="pre">avec</span> <span class="pre">le</span> <span class="pre">tampon</span> <span class="pre">du</span> <span class="pre">cyclone</span></code>.</p></li>
+<li><p>Comme <strong>“Couche source”</strong>, choisissez la Entrée <code class="docutils literal notranslate"><span class="pre">Raster</span> <span class="pre">Population</span></code></p></li>
+<li><p>Comme <strong>“Couche de Masquage”</strong>, choisissez</p></li>
 <li><p>In the configuration window:</p>
 <ul>
 <li><p>Add a description: <code class="docutils literal notranslate"><span class="pre">Découper</span> <span class="pre">la</span> <span class="pre">couche</span> <span class="pre">raster</span> <span class="pre">de</span> <span class="pre">population</span> <span class="pre">pour</span> <span class="pre">l'étendre</span> <span class="pre">au</span> <span class="pre">tampon</span> <span class="pre">Cyclon</span></code></p></li>
