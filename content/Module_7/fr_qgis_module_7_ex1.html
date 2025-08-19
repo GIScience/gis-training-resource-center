@@ -1209,50 +1209,55 @@ Entrée: Raster Population</label><div class="sd-tab-content docutils">
 <ul class="simple">
 <li><p>Faites un double-clic sur l’algorithme <strong>“Reprojeter le tampon vers EPSG:4326”</strong> pour ouvrir sa configuration.</p></li>
 <li><p>Dans le champ <code class="docutils literal notranslate"><span class="pre">Reprojecté</span></code>, entrez un nom pour la sortie du modèle, comme: <code class="docutils literal notranslate"><span class="pre">cyclone_harald_buffer</span></code></p></li>
-<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">OK</span></code> pour</p></li>
-<li><p>Click <strong>OK</strong> to save the change.</p></li>
-<li><p>This will allow the model to produce both the exposed population results and the buffered cyclone impact zone when it is run.</p></li>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">OK</span></code> pour enregistrer la modification.</p></li>
+<li><p>Maintenant, le modèle va produire à la fois les résultats de population exposée <strong>et</strong> la zone tampon du cyclone lors de son exécution.</p></li>
 </ul>
 <figure class="align-center" id="mdg-model-add-buffer-output">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_output_buffer.PNG"><img alt="../../_images/fr_MDG_AA_model_output_buffer.PNG" src="../../_images/fr_MDG_AA_model_output_buffer.PNG" style="width: 600px;" /></a>
 </figure>
 <ol class="arabic simple" start="13">
-<li><p><strong>Run the model again</strong></p></li>
+<li><p><strong>Exécuter à nouveau le modèle</strong></p></li>
 </ol>
 <ul class="simple">
-<li><p>Run the model by clicking on <code class="docutils literal notranslate"><span class="pre">Model</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">Model</span></code></p></li>
-<li><p>Set <strong>Admin Bounderies</strong> to <code class="docutils literal notranslate"><span class="pre">mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg</span></code></p></li>
-<li><p>Set <strong>Cyclone Track</strong> to <code class="docutils literal notranslate"><span class="pre">example_Harald_2025_Track</span></code></p></li>
-<li><p>Set <strong>Population Raster</strong> to <code class="docutils literal notranslate"><span class="pre">MDG_WorldPop_2020_constrained.tif</span></code></p></li>
-<li><p>Set the model output <strong>cyclone_harald_buffer</strong> to <code class="docutils literal notranslate"><span class="pre">cyclone_harald_buffer</span></code>and save it in the <code class="docutils literal notranslate"><span class="pre">data</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">output</span></code></p></li>
-<li><p>Set the model output <strong>exposed_population_sum</strong> to <code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Population</span></code>and save it in the <code class="docutils literal notranslate"><span class="pre">data</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">output</span></code></p></li>
+<li><p>Exécutez le modèle en cliquant sur <code class="docutils literal notranslate"><span class="pre">Modèle</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Exécuter</span> <span class="pre">le</span> <span class="pre">modèle...</span></code>.</p>
+<ul>
+<li><p>Sous <strong>Frontières Administratives</strong>, choisissez:
+<code class="docutils literal notranslate"><span class="pre">mdg_admbnda_adm2_BNGRC_OCHA_20281031.gpkg</span></code></p></li>
+<li><p>Sous <strong>Raster Population</strong>, choisissez:
+<code class="docutils literal notranslate"><span class="pre">MDG_WorldPop_2020_constrained.tif</span></code></p></li>
+<li><p>Sous <strong>Trajectoire Cyclone</strong>, choisissez:
+<code class="docutils literal notranslate"><span class="pre">example_Harald_2025_Track</span></code></p></li>
+<li><p>Definissez la sortie du modèle <strong>“exposed_population_sum”</strong> comme: <code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Population</span></code> et engeristrez-le dans le dossier <code class="docutils literal notranslate"><span class="pre">/data/output/</span></code> en cliquant sur les trois points <img alt="" src="../../_images/3.36_three_dots.png" />.</p></li>
+<li><p>Sous <strong>example_Harald_2025_Track</strong>, cliquez sur les trois points et naviguez au dossier <code class="docutils literal notranslate"><span class="pre">/data/output/</span></code> et nommez la sortie comme <code class="docutils literal notranslate"><span class="pre">cyclone_harald_buffer</span></code>.</p></li>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">Éxecuter</span></code>.</p></li>
+</ul>
+</li>
 </ul>
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-3">
-Graphic Modler Output Buffer </label><div class="sd-tab-content docutils">
+Le modèle modifié</label><div class="sd-tab-content docutils">
 <figure class="align-center" id="the-world-result">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_graphic.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_graphic.PNG" src="../../_images/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_graphic.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Le modèle modifié devrait resembler à ceci.</span><a class="headerlink" href="#the-world-result" title="Permalink to this image">#</a></p>
+</figcaption>
 </figure>
-<p>Definition of the model input: Admin Bounderies</p>
 </div>
 <input id="sd-tab-item-4" name="sd-tab-set-1" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-4">
-Run Model with Buffer Output</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id14">
+Exécuter le modèle avec la nouvelle sortie</label><div class="sd-tab-content docutils">
+<figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_model_exicution.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_model_exicution.PNG" src="../../_images/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_model_exicution.PNG" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-text">Definition of the model input: Population Raster</span><a class="headerlink" href="#id14" title="Permalink to this image">#</a></p>
-</figcaption>
 </figure>
 </div>
 <input id="sd-tab-item-5" name="sd-tab-set-1" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-5">
 Model Output</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id15">
+<figure class="align-center" id="id14">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_extended_buffer.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_extended_buffer.PNG" src="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_extended_buffer.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Definition of the model input: Population Raster</span><a class="headerlink" href="#id15" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Definition of the model input: Population Raster</span><a class="headerlink" href="#id14" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -1343,10 +1348,10 @@ Model Input: Health Facilities</label><div class="sd-tab-content docutils">
 <input id="sd-tab-item-7" name="sd-tab-set-2" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-7">
 Model Input: Education Facilities</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id16">
+<figure class="align-center" id="id15">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_input_education_facilities.PNG"><img alt="../../_images/fr_MDG_AA_model_input_education_facilities.PNG" src="../../_images/fr_MDG_AA_model_input_education_facilities.PNG" style="width: 300px;" /></a>
 <figcaption>
-<p><span class="caption-text">Définir une nouvelle entrée de modèle : couche vectorielle de points représentant les établissements d’enseignement</span><a class="headerlink" href="#id16" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Définir une nouvelle entrée de modèle : couche vectorielle de points représentant les établissements d’enseignement</span><a class="headerlink" href="#id15" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -1372,10 +1377,10 @@ Model Input: Education Facilities</label><div class="sd-tab-content docutils">
 </ul>
 </li>
 </ol>
-<figure class="align-center" id="id17">
+<figure class="align-center" id="id16">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_count_points_HF_admin2.PNG"><img alt="../../_images/fr_MDG_AA_model_count_points_HF_admin2.PNG" src="../../_images/fr_MDG_AA_model_count_points_HF_admin2.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Configuration de l’opération : compter le nombre d’établissements de santé dans chaque district.</span><a class="headerlink" href="#id17" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Configuration de l’opération : compter le nombre d’établissements de santé dans chaque district.</span><a class="headerlink" href="#id16" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic" start="4">
@@ -1399,10 +1404,10 @@ Model Input: Education Facilities</label><div class="sd-tab-content docutils">
 </ul>
 </li>
 </ol>
-<figure class="align-center" id="id18">
+<figure class="align-center" id="id17">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_count_points_EF_admin2.PNG"><img alt="../../_images/fr_MDG_AA_model_count_points_EF_admin2.PNG" src="../../_images/fr_MDG_AA_model_count_points_EF_admin2.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Configuration de l’opération : compter le nombre d’établissements scolaires dans chaque district.</span><a class="headerlink" href="#id18" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Configuration de l’opération : compter le nombre d’établissements scolaires dans chaque district.</span><a class="headerlink" href="#id17" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic" start="5">
@@ -1424,10 +1429,10 @@ Model Input: Education Facilities</label><div class="sd-tab-content docutils">
 </ul>
 </li>
 </ol>
-<figure class="align-center" id="id19">
+<figure class="align-center" id="id18">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_clip_intersect_HF_cyclone_buffer.PNG"><img alt="../../_images/fr_MDG_AA_model_clip_intersect_HF_cyclone_buffer.PNG" src="../../_images/fr_MDG_AA_model_clip_intersect_HF_cyclone_buffer.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Configuration de l’opération : intersecter les établissements de santé avec la zone d’impact du cyclone.</span><a class="headerlink" href="#id19" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Configuration de l’opération : intersecter les établissements de santé avec la zone d’impact du cyclone.</span><a class="headerlink" href="#id18" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic" start="6">
@@ -1450,10 +1455,10 @@ Model Input: Education Facilities</label><div class="sd-tab-content docutils">
 </ul>
 </li>
 </ol>
-<figure class="align-center" id="id20">
+<figure class="align-center" id="id19">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_clip_intersect_EF_cyclone_buffer.PNG"><img alt="../../_images/fr_MDG_AA_model_clip_intersect_EF_cyclone_buffer.PNG" src="../../_images/fr_MDG_AA_model_clip_intersect_EF_cyclone_buffer.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Configuration de l’opération : intersecter les établissements de education avec la zone d’impact du cyclone.</span><a class="headerlink" href="#id20" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Configuration de l’opération : intersecter les établissements de education avec la zone d’impact du cyclone.</span><a class="headerlink" href="#id19" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic" start="7">
@@ -1479,10 +1484,10 @@ Model Input: Education Facilities</label><div class="sd-tab-content docutils">
 </ul>
 </li>
 </ol>
-<figure class="align-center" id="id21">
+<figure class="align-center" id="id20">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_count_points_HF_affected_admin2.PNG"><img alt="../../_images/fr_MDG_AA_model_count_points_HF_affected_admin2.PNG" src="../../_images/fr_MDG_AA_model_count_points_HF_affected_admin2.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Configuration de l’opération : compter les établissements de santé touchés par district.</span><a class="headerlink" href="#id21" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Configuration de l’opération : compter les établissements de santé touchés par district.</span><a class="headerlink" href="#id20" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic" start="8">
@@ -1508,10 +1513,10 @@ Model Input: Education Facilities</label><div class="sd-tab-content docutils">
 </ul>
 </li>
 </ol>
-<figure class="align-center" id="id22">
+<figure class="align-center" id="id21">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_count_points_EF_affected_admin2.PNG"><img alt="../../_images/fr_MDG_AA_model_count_points_EF_affected_admin2.PNG" src="../../_images/fr_MDG_AA_model_count_points_EF_affected_admin2.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Configuration de l’opération : compter les établissements de santé touchés par district.</span><a class="headerlink" href="#id22" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Configuration de l’opération : compter les établissements de santé touchés par district.</span><a class="headerlink" href="#id21" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="9">
@@ -1554,10 +1559,10 @@ END
 </div>
 </li>
 </ul>
-<figure class="align-center" id="id23">
+<figure class="align-center" id="id22">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_field_calc_pct_health_exposed.PNG"><img alt="../../_images/fr_MDG_AA_model_field_calc_pct_health_exposed.PNG" src="../../_images/fr_MDG_AA_model_field_calc_pct_health_exposed.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Configuration de l’opération : calculer le pourcentage d’établissements de santé touchés par district.</span><a class="headerlink" href="#id23" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Configuration de l’opération : calculer le pourcentage d’établissements de santé touchés par district.</span><a class="headerlink" href="#id22" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="10">
@@ -1600,10 +1605,10 @@ END
 </ul>
 </li>
 </ul>
-<figure class="align-center" id="id24">
+<figure class="align-center" id="id23">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_field_calc_pct_education_exposed.PNG"><img alt="../../_images/fr_MDG_AA_model_field_calc_pct_education_exposed.PNG" src="../../_images/fr_MDG_AA_model_field_calc_pct_education_exposed.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Configuration de l’opération : calculer le pourcentage d’établissements d’éducation touchés par district.</span><a class="headerlink" href="#id24" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Configuration de l’opération : calculer le pourcentage d’établissements d’éducation touchés par district.</span><a class="headerlink" href="#id23" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="11">
@@ -1640,30 +1645,30 @@ END
 <input checked="checked" id="sd-tab-item-8" name="sd-tab-set-3" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-8">
 Graphic Modler</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id25">
+<figure class="align-center" id="id24">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model.PNG" src="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Vue d’ensemble du Modèle Graphique de la tâche 3 montrant tous les algorithmes connectés et les sorties définies.</span><a class="headerlink" href="#id25" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Vue d’ensemble du Modèle Graphique de la tâche 3 montrant tous les algorithmes connectés et les sorties définies.</span><a class="headerlink" href="#id24" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 <input id="sd-tab-item-9" name="sd-tab-set-3" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-9">
 Run Model Configuration</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id26">
+<figure class="align-center" id="id25">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_run_configurations.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_run_configurations.PNG" src="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_run_configurations.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Configuration des paramètres pour exécuter le modèle de la tâche 3 avec toutes les couches d’entrée requises.</span><a class="headerlink" href="#id26" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Configuration des paramètres pour exécuter le modèle de la tâche 3 avec toutes les couches d’entrée requises.</span><a class="headerlink" href="#id25" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 <input id="sd-tab-item-10" name="sd-tab-set-3" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-10">
 Model Output</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id27">
+<figure class="align-center" id="id26">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model_results_AT.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model_results_AT.PNG" src="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model_results_AT.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Résultats du modèle de la tâche 3 affichés dans QGIS, y compris les pourcentages d’établissements de santé et d’éducation touchés par district.</span><a class="headerlink" href="#id27" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Résultats du modèle de la tâche 3 affichés dans QGIS, y compris les pourcentages d’établissements de santé et d’éducation touchés par district.</span><a class="headerlink" href="#id26" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>

@@ -556,9 +556,8 @@ align: center
 12. **Ajouter le tampon du cyclone comme sortie supplémentaire du modèle**  
   - Faites un double-clic sur l'algorithme __"Reprojeter le tampon vers EPSG:4326"__ pour ouvrir sa configuration.
   - Dans le champ `Reprojecté`, entrez un nom pour la sortie du modèle, comme: `cyclone_harald_buffer`
-  - Cliquez sur `OK` pour 
-   - Click **OK** to save the change.  
-   - This will allow the model to produce both the exposed population results and the buffered cyclone impact zone when it is run.
+  - Cliquez sur `OK` pour enregistrer la modification. 
+  - Maintenant, le modèle va produire à la fois les résultats de population exposée __et__ la zone tampon du cyclone lors de son exécution. 
 
 ```{figure} /fig/fr_MDG_AA_model_output_buffer.PNG
 ---
@@ -568,19 +567,23 @@ align: center
 ---
 ```
 
-13. **Run the model again**  
-   - Run the model by clicking on `Model` -> `Run Model`
-   - Set **Admin Bounderies** to `mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg`
-   - Set **Cyclone Track** to `example_Harald_2025_Track`
-   - Set **Population Raster** to `MDG_WorldPop_2020_constrained.tif`
-   - Set the model output **cyclone_harald_buffer** to `cyclone_harald_buffer`and save it in the `data` -> `output`
-   - Set the model output **exposed_population_sum** to `Harald_Exposed_Population`and save it in the `data` -> `output`
+13. **Exécuter à nouveau le modèle**  
+  - Exécutez le modèle en cliquant sur `Modèle` -> `Exécuter le modèle...`.
+    - Sous __Frontières Administratives__, choisissez: 
+      `mdg_admbnda_adm2_BNGRC_OCHA_20281031.gpkg`
+    - Sous __Raster Population__, choisissez:
+      `MDG_WorldPop_2020_constrained.tif`
+    - Sous __Trajectoire Cyclone__, choisissez:
+      `example_Harald_2025_Track`
+    - Definissez la sortie du modèle __"exposed_population_sum"__ comme: `Harald_Exposed_Population` et engeristrez-le dans le dossier `/data/output/` en cliquant sur les trois points ![](/fig/3.36_three_dots.png).
+    - Sous __example_Harald_2025_Track__, cliquez sur les trois points et naviguez au dossier `/data/output/` et nommez la sortie comme `cyclone_harald_buffer`. 
+    - Cliquez sur `Éxecuter`.
 
 
 ::::{tab-set}
 
 
-:::{tab-item} Graphic Modler Output Buffer 
+:::{tab-item} Le modèle modifié
 
 ```{figure} /fig/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_graphic.PNG
 ---
@@ -588,17 +591,17 @@ width: 600px
 name: the_world_result
 align: center
 ---
+Le modèle modifié devrait resembler à ceci. 
 ```
-Definition of the model input: Admin Bounderies
+
 :::
 
-:::{tab-item} Run Model with Buffer Output
+:::{tab-item} Exécuter le modèle avec la nouvelle sortie
 ```{figure} /fig/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_model_exicution.PNG
 ---
 width: 600px
 align: center
 ---
-Definition of the model input: Population Raster
 ```
 :::
 
