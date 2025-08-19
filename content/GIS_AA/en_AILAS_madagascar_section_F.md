@@ -4,85 +4,107 @@
 
 Before departure, ensure you have the following:
 
-GoPro Hero 13
-MicroSD card 1TB
-Powerbank
-USB-C Charging Cable
-GoPro Windshield Mount
-Printed Copy of This Guide
+| Item                   |
+| :----------------------|
+| GoPro Hero 13          |
+| MicroSD card 1TB       |
+| Powerbank              |
+| USB-C Charging Cable   |
+| GoPro Windshield Mount |
+| Printed Copy of This Guide |
+
 
 <!-- Do we need images?  -->
 
 ---
+<br>
 
 
-## Installing the GoPro in a car
+## Camera Installation
 
-#### Choose Mounting Location
-- Mount inside the car, center of windshield, behind rearview mirror (or alternative).
-- Avoid obstructing driver’s view.
-- Clean glass before attaching suction mount.
+### Choose Mounting Location
+
+| Instructions                                  |Notes                                        |
+| :-------                                     | :-------                                    |
+|    1. Mount inside the car, center of windshield or behind rearview mirror      |   Avoid obstructing driver’s view.          |
+|    2. If needed clean glass before attaching suction mount                                       |                            |
+
 
 <!-- + Mounting options images -->
 
-#### Attach Suction Mount
-1. Press suction cup firmly against windshield.
-2. Flip lock lever to secure the mount.  
+
+### Attach Gopro with suction mount
+| Instructions                          | Notes                              |
+| :---------------------------------  | :---------------------------------  |
+|   1. Press suction cup firmly against windshield                          |    Make sure locking lever is in UP position            |
+|   2. Press the mounts button down with good force                         |                                                         |
+|   3. Flip lock lever down to secure the mount                             |    Wiggle the mount to check if it fits tight           |
+|   4. Attach GoPro with provided thumbscrew                                |    Make sure Gopro is equipped with clip attachment     |
+|    5. Adjust camera angle                                                 |    Ensure lens faces forward, level with the road <br> and camera field of view captures the road      |
+
 
 <!-- +Image suction mount -->
 
-### Attach GoPro to Mount
-- Use the provided thumb screw to tighten.  
-
 <!-- + Image Screw tightening -->
 
-- Ensure the lens faces forward, level with the road.
-- **Does upside down matter?**  
-  *Image: Proper lens orientation*
-- Check if camera is tightly fixed. Camera should not move when the car shakes.
+<!-- + Image Proper lens orientation -->
+333
 
+### Power Setup
+
+| Instructions | Notes |
+| :------- | :------- |
+|   Connect GoPro to Powerbank using USB-C cable                  |                                                                                    |
+|   Place Powerbank securely (e.g., glove compartment or dash)    |    Powerback should be stored safely in case of e.g. abrupt breaking               |
+|   Ensure power connection before driving                        |           Charging symbol should be visible on the top right corner of GoPro screen|
+
+
+<!-- Images charging -->
 ---
+<br>
 
-## Power Setup
+## Set up Image Capturing
 
-1. Connect GoPro to Powerbank using USB-C cable.
-2. Place Powerbank securely (e.g., glove compartment or dash).
-3. Ensure connection before driving — `XXX` symbol should be visible on the GoPro screen. 
+### Configuration of settings
 
-<!-- Image charging -->
----
+Camera settings can be easilily configured scanning the provide QR-Code with the GoPro. This is the standard setup. In the case the QR-Code setup should now work the **manual setup** is described in addition. **If possible always use the QR-Code setup.**
 
-## GoPro Setup: Timelapse Photo Mode
 
-### Configuration Steps (Before Driving)
-1. Press the **Mode** button (side) until Timelapse mode icon appears.
-2. Tap screen and select **Timelapse Photo**.
-3. Tap **Settings** (pencil icon):
-   - **Interval**: Set to 5 seconds
-   - **Lens**: Set to `XXX`
-   - **Shutter**: Auto
-   - **RAW**: Off
-   - **Protune**: Off
-4. Tap the back arrow to save and return to the main screen.
+| Instructions | Notes |
+| :------- | :------- |
+|   Hold down **Power/Mode** button to turn on the GoPro.                  |                                                                                    |
+|   Scan the following QR-Code with the Gopro by pointing the lens towards the code   |   If sucessful a QR_code icon with a red checkmark should pop up             |
+|   Check if "AILAS" is displayed in the mode overview in the bottom centre of the screen                        |         |
 
-<!-- Images manual/QR Setup -->
+If the camera already is set in the "AILAS" mode you do not have to configure the settings.
 
----
+### QR-Code configuration
 
-## Start Capturing Images
+<!-- Image QR-code -->
 
-### At the Start of Each Drive
-- Hold down **Power/Mode** button to turn on the GoPro.
-- Swipe right to confirm **Timelapse Photo mode** is selected.
-- Tap the **Shutter** button (top button) to begin shooting.
-- GoPro will now take one photo every 5 seconds.
-- Ensure Powerbank is connected and charging the GoPro.
+<!-- Image Button overview -->
 
-### To Stop Recording (End of Trip)
-- Tap **Shutter** button again to stop.
-- Hold **Power** button to turn off GoPro.
+
+### Alternative Manual Configuration
+
+| Instructions | Notes |
+| :------------------------------- | :---- |
+| 1. Press the **Mode/Power** button until the screen displays *“Timelapse”* <!-- Icon --> | |
+| 2.Tap the **settings** icon (bottom right) and configure as follows:<br> • **Format**: Photo<br> • **Digital Lens**: Wide<br> • **Capture**: Interval = 10s<br>  | Leave remaining  settings unchanged |
+| 3. Tap the **back arrow** to save and return to the main screen. | in the bottom centre of the scrren should now be displayed: "Time Lapse Photo 10s W"|
+
+### Start/Stop Capturing Images
+| Instructions | Notes |
+| :-------------------------- |  :--------------------------|
+| 1. Tap the **Shutter** button (top button) to begin shooting. | |
+| 2. GoPro will now take one photo every 5 seconds. | Red blinking every 10 seconds indicates that the camera is shooting |
+| 3. Tap the **Shutter** button again to stop. |  |
+| 4. Hold the **Power** button to turn off GoPro at the end of the drive. | The camera will beep a couple of times when turning off |
+
 
 <!-- Button overview image -->
+
+<br><br><br><br>
 
 ---
 
@@ -95,15 +117,13 @@ Printed Copy of This Guide
 
 ### Start Filming
 - [ ] Hold the side power button until the screen turns on.
-- [ ] Swipe or press the mode button until **Timelapse Photo Mode** is visible.
-- [ ] Confirm it says **Timelapse Photo** (not Video).
-- [ ] Press the top shutter button (big button on top).
-- [ ] A red light will blink every few seconds — this means it’s working.
+- [ ] Scan the QR-code to configure settings (if not working manual setup) 
+- [ ] Press the top shutter button (big button on top) to start capturing
 
 ### Final Pre-Drive Check
 - [ ] Is the camera firmly mounted?
 - [ ] Is camera level and facing straight ahead?
-- [ ] Is the GoPro blinking (taking photos)?
+- [ ] Is the GoPro blinking every 10 seconds (taking photos)?
 - [ ] Is the Powerbank connected and charging the GoPro?
 
 ---
