@@ -53,82 +53,84 @@ Le projet et le modèle ont été créés à l'aide de la version 3.40.9 (LTR) B
 
 Pour que le mécanisme de déclenchement fonctionne correctement, nous utilisons actuellement différents ensembles de données: des données que nous supposons statiques à court terme et des données variables qui décrivent les ensembles de données qui seront vérifiés régulièrement pour déclencher le mécanisme en fonction de la survenue d'événements cycloniques anticipés.
 
-### Fixed Data
+### Données fixes
 
-By fixed data we mean datasets that are needed to create the map reports, that will most probably not change in the near term. In the long term these datasets can be adapted easily.
+Par données fixes, nous entendons les ensembles de données nécessaires à la création des rapports cartographiques, qui ne sont pas susceptibles de changer à court terme. À long terme, ces ensembles de données peuvent être facilement adaptés.
 
-| Dataset| Source | Descriptions |
+| Ensemble de données | Source | Descriptions |
 | ----- | --- | --- |
-| Administrative Boundaries | [HDX](https://data.humdata.org/dataset/cod-ab-mdg) | The administrative boundaries on level 0-4 for Madagascar can be accessed via HDX provided by OCHA. For this trigger mechanism we provide the administrative boundaries on level 1 (regional level) and 2 (district level) as a shapefile. |
-| POI counts | [HOT Export Tool](https://export.hotosm.org/vi/v3/exports/new/describe) | The POI data (education facilities and health sites) is downloaded using the HOT Export Tool based on OpenStreetMap data. |
-| CRM Warehouses | Croix-Rouge Malagasy | This layer contains points representing the locations of the CRM warehouses  |
-| CRM Warehouse Isochrones | HeiGIT | Using the [Global Friction Surface](https://developers.google.com/earth-engine/datasets/catalog/Oxford_MAP_friction_surface_2019#bands), we calculated the area which can be reached within a specific amount of time from a given warehouse by car.  | 
-| Population Counts | [WorldPop](https://hub.worldpop.org/geodata/summary?id=49646) | The worldpop dataset in raster format provides the estimated total number of people per grid-cell for the year 2020. We will be working with the Constrained Individual countries 2020 dataset at a resolution of 100m. |
-| Buildings Counts | [Global ML Building Footprints](https://gee-community-catalog.org/projects/msbuildings/) | The building counts dataset in raster format counts the number of buildings per 100m grid cell. The workflow on how this dataset was created can be found on [GitLab](https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar) |
-| Land Cover | [ Copernicus Land Cover](https://land.copernicus.eu/en/products/global-dynamic-land-cover/copernicus-global-land-service-land-cover-100m-collection-3-epoch-2019-globe) | The land cover dataset in raster format provides an overview over the dominant land cover type at a resolution of 100m. The workflow on how this dataset was downloaded can be found on [GitLab](https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar) |
+| Limites administratives | [HDX](https://data.humdata.org/dataset/cod-ab-mdg) | Les limites administratives de niveau 0 à 4 pour Madagascar sont accessibles via HDX fourni par OCHA. Pour ce mécanisme de déclenchement, nous fournissons les limites administratives de niveau 1 (niveau régional) et 2 (niveau district) sous forme de fichier shapefile. |
+| Nombre de Point d'intérêt (POI) | [HOT Export Tool](https://export.hotosm.org/vi/v3/exports/new/describe) | Les données POI (établissements scolaires et sites de santé) sont téléchargées à l'aide de l'outil HOT Export Tool basé sur les données OpenStreetMap. |
+| Entrepôts CRM | Croix-Rouge Malagasy | Cette couche contient des points représentant les emplacements des entrepôts CRM. |
+| Isochrones des entrepôts CRM | HeiGIT | À l'aide de la [surface de friction globale](https://developers.google.com/earth-engine/datasets/catalog/Oxford_MAP_friction_surface_2019#bands), nous avons calculé la zone pouvant être atteinte en un temps donné en voiture à partir d'un entrepôt donné. | 
+| Chiffres de population | [WorldPop](https://hub.worldpop.org/geodata/summary?id=49646) | L'ensemble de données WorldPop au format raster fournit une estimation du nombre total d'habitants par cellule de grille pour l'année 2020. Nous travaillerons avec l'ensemble de données `Constrained Individual countries 2020` à une résolution de 100 m. |
+| Nombre de bâtiments | [Global ML Building Footprints](https://gee-community-catalog.org/projects/msbuildings/) | L'ensemble de données sur le nombre de bâtiments au format raster compte le nombre de bâtiments par cellule de grille de 100 m. Le processus de création de cet ensemble de données est disponible sur [GitLab](https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar). |
+| Couverture terrestre | [ Copernicus Land Cover](https://land.copernicus.eu/en/products/global-dynamic-land-cover/copernicus-global-land-service-land-cover-100m-collection-3-epoch-2019-globe) | L'ensemble de données sur la couverture terrestre au format raster fournit une vue d'ensemble du type de couverture terrestre dominant avec une résolution de 100 m. Le processus de téléchargement de cet ensemble de données est disponible sur [GitLab](https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar). |
 
-:::{admonition} Master Raster
+:::{admonition} Raster Principal
 :class: note
 
-The three raster datasets are combined into a **Master Raster** — a multi-band raster layer with a spatial resolution of 100 meters. This composite layer includes the following information across three channels:
-1. Population counts per grid cell from Worldpop constrained (2020)
-2. Building counts per grid cell derived from ML Building Footprints (2021)
-3. Land Cover type per grid cell derived from Copernicus Land Cover (2019)
+Les trois ensembles de données raster sont combinés en un **raster principal**, une couche raster multibande avec une résolution spatiale de 100 mètres. Cette couche composite comprend les informations suivantes sur trois canaux :
+1. Nombre d'habitants par cellule de grille d'après Worldpop constrained (2020)
+2. Nombre de bâtiments par cellule de grille d'après ML Building Footprints (2021)
+3. Type de couverture terrestre par cellule de grille d'après Copernicus Land Cover (2019)
 
 :::
 
-### Monitoring Data
+### Données de monitoring
 
 ```{admonition} Attention
 :class: attention
 
-The forecast information will be sourced from DGM (Météo Madagascar), which will provide tropical cyclone track data for the trigger workflow.
+Les informations prévisionnelles proviendront du DGM (Météo Madagascar), qui fournira les données de trajectoire des cyclones tropicaux pour le workflow de déclenchement.
 ```
 
-For an analysis of past events, data provided by NOAA (National Centers for Environmental Information) can be used. The cyclone storm tracks are provided within the [International Best Track Archive for Climate Stewardship (IBTrACS)](https://www.ncei.noaa.gov/products/international-best-track-archive) project. It is the most complete global collection of tropical cyclones available and merges recent and historical tropical cyclone data from multiple agencies to create a unified, publicly available, best-track dataset. IBTrACS was developed collaboratively with all the World Meteorological Organization (WMO) Regional Specialized Meteorological Centres, as well as other organizations and individuals from around the world.
+Pour analyser les événements passés, il est possible d'utiliser les données fournies par la NOAA (National Centers for Environmental Information). Les trajectoires des cyclones sont fournies dans le cadre du projet [International Best Track Archive for Climate Stewardship (IBTrACS)](https://www.ncei.noaa.gov/products/international-best-track-archive). Il s'agit de la collection mondiale la plus complète sur les cyclones tropicaux disponible à ce jour. Elle regroupe les données récentes et historiques sur les cyclones tropicaux provenant de plusieurs agences afin de créer un ensemble de données unifié, accessible au public et représentant les meilleures trajectoires. L'IBTrACS a été développé en collaboration avec tous les centres météorologiques régionaux spécialisés de l'Organisation météorologique mondiale (World Meteorological Organization (WMO)), ainsi qu'avec d'autres organisations et individus du monde entier.
 
-:::{admonition} Cyclone tracks
+:::{admonition} Trajectoires des cyclones
 :class: hint
 
-Tropical cyclone track data is available in various subsets, depending on the temporal scale of interest. Regional subsets can also be generated, with data for the **South Indian Ocean** being particularly relevant for this trigger mechanism.
+Les données relatives aux trajectoires des cyclones tropicaux sont disponibles sous forme de différents sous-ensembles, en fonction de l'échelle temporelle qui vous intéresse. Des sous-ensembles régionaux peuvent également être générés, les données relatives à l'**océan Indien sud** étant particulièrement importantes pour ce mécanisme de déclenchement.
 
 :::
 
-# Estimating the impact of the cyclone using the QGIS model
+# Estimation de l'impact du cyclone à l'aide du modèle QGIS
 
-As explained at the start of this chapter the developed trigger workflow is done automatically by a QGIS model. In this chapter we will explain its functionality and in a subsequent step it is explained how to run the automated model. 
+Comme expliqué au début de ce chapitre, le workflow déclencheur développé est exécuté automatiquement par un modèle QGIS. Dans ce chapitre, nous expliquerons son fonctionnement et, dans une étape ultérieure, nous expliquerons comment exécuter le modèle automatisé.
 
-## Functionality of the model
+## Fonctionnement du modèle
 
 <!-- Have a final look over this section to see if all the important information is covered -->
 
-The following key processing steps are run inside the model:
+Les étapes clés suivantes sont exécutées dans le modèle :
 
-1. Cyclone Buffering & Impact Area Extraction
-    * The input cyclone track is buffered to create an estimated zone of impact. The buffer is dissolved to generate a single polygon representing the exposed cyclone area. This layer serves as the base for subsequent exposure calculations.
+1. Mise en mémoire tampon du cyclone et extraction de la zone d'impact 
+   * La trajectoire du cyclone est mise en mémoire tampon afin de créer une zone d'impact estimée. La mémoire tampon est dissoute pour générer un polygone unique représentant la zone exposée au cyclone. Cette couche sert de base pour les calculs d'exposition ultérieurs.
 
-2. Exposed Administrative Units
-    * The buffered cyclone area is intersected with district (Admin 2) boundaries to extract the exposed districts. These are further linked with regions (Admin 1) using the region (Admin 1) names attribute to structure exposed districts by region. This hierarchy is used for reporting and map layout purposes.
+2. Unités administratives exposées  
+   * La zone tampon du cyclone est recoupée avec les limites des districts (Admin 2) afin d'extraire les districts exposés. Ceux-ci sont ensuite reliés aux régions (Admin 1) à l'aide de la région (Admin 1) afin de créer des zones de risque.
 
-3. Population Impact
-    * The model uses the population raster to calculate zonal statistics over the exposed districts. This determines the total population per district and the exposed population, which is then exported to a table.
+3. Effet sur la population
+    * Le modèle utilise le raster de population pour calculer les statistiques zonales sur les districts exposés. Cela permet de déterminer la population totale par district et la population exposée, qui sont ensuite exportées vers un tableau.
 
-4. Infrastructure Impact
-    * The cyclone buffer is intersected with:
-        * Buildings to extract exposed buildings.
-        * Health sites and education facilities layers to extract and summarize exposed points of interest.
-    These datasets are combined into a table, summarizing exposed infrastructure.
+4. Effet sur les infrastructures
+    * La zone tampon du cyclone est croisée avec:
+        * Les bâtiments pour extraire les bâtiments exposés.
+        * Les couches des sites de santé et des établissements d'enseignement pour extraire et résumer les points d'intérêt exposés.
+    Ces ensembles de données sont combinés dans un tableau qui résume les infrastructures exposées.
 
 <!---5. Warehouse Accessibility
     * Warehouses are filtered based on proximity to exposed regions. The model uses road data and spatial filters to determine accessible warehouses relevant to the response.
+5. Accessibilité des entrepôts
+   * Les entrepôts sont filtrés en fonction de leur proximité avec les régions exposées. Le modèle utilise des données routières et des filtres spatiaux pour déterminer les entrepôts accessibles pertinents pour l'intervention.
 -->
 
-## How to run the model
+## Comment exécuter le modèle
 
-The [QGIS Model Designer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html#the-qgis-model-designer) is a visual tool that allows users to create and edit a workflow with all tools available in QGIS that can be used repeatedly in a simple and time-efficient manner, while ensuring reproducibility. It provides a graphical interface to build workflows by connecting geoprocessing tools and algorithms. The user can define inputs, outputs, and the flow of data between different processing steps.
+Le [QGIS Model Designer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html#the-qgis-model-designer) est un outil visuel qui permet aux utilisateurs de créer et de modifier un flux de travail avec tous les outils disponibles dans QGIS qui peuvent être utilisés de manière répétée, simple et rapide, tout en garantissant la reproductibilité. Il fournit une interface graphique pour créer des flux de travail en connectant des outils et des algorithmes de géomatique. L'utilisateur peut définir les entrées, les sorties et le flux de données entre les différentes étapes de traitement.
 
 
-## Step 1: Explanation of the folder structure
+## Étape 1 : Explication de la structure des fichiers
 
 
 ```{figure} /fig/MAD_Trigger_workflow_Step1.png
