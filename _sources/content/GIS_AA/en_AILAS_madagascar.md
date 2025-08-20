@@ -25,7 +25,7 @@ Collecting good street-level images is essential for AILAS, because the deep lea
 ```{figure} /fig/AILAS_model_demo.png
 ---
 name: QR Code
-width: 600px
+width: 450px
 ---
 Conceptual depiction of road surface properties the deep learning model could detect to accurately classify road passability
 ```
