@@ -199,7 +199,32 @@ If the camera already is set in the "AILAS" mode you do not have to configure th
 
 <!-- Image QR-code -->
 
-<!-- Image Button overview -->
+::::{grid} 2
+
+:::{grid-item}
+
+```{figure} /fig/AILAS_QR_code.jpeg
+---
+name: 
+width: 400 px
+---
+Suction mount
+```
+Scan this QR-Code
+
+
+:::{grid-item}
+
+```{figure} /fig/AILAS_button_overview.jpeg
+---
+name: 
+width: 400 px
+---
+Button overview
+```
+Push lever down to fix mount
+:::
+
 
 
 ### Alternative Manual Configuration
@@ -217,32 +242,6 @@ If the camera already is set in the "AILAS" mode you do not have to configure th
 | 2. GoPro will now take one photo every 5 seconds. | Red blinking every 10 seconds indicates that the camera is shooting |
 | 3. Tap the **Shutter** button again to stop. |  |
 | 4. Hold the **Power** button to turn off GoPro at the end of the drive. | The camera will beep a couple of times when turning off |
-
-
-::::{grid} 2
-:::{grid-item}
-
-```{figure} /fig/AILAS_press_button.jpeg
----
-name: 
-width: 400 px
----
-GoPro camera
-```
-Press button for suction
-:::
-
-:::{grid-item}
-
-```{figure} /fig/AILAS_button_overview.jpeg
----
-name: 
-width: 400 px
----
-Suction mount
-```
-Push lever down to fix mount
-:::
 
 
 ::::
