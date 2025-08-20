@@ -399,7 +399,7 @@ Ajouter la couche raster pour les données de population
 ```
 :::
 ::::
-**Résultat intermédiaire**
+**Résultat intermédiaire:**
 
 ```{figure} /fig/fr_MDG_AA_intermediate_result_model_input.PNG
 ---
@@ -576,7 +576,7 @@ align: center
     - Sous __Trajectoire Cyclone__, choisissez:
       `example_Harald_2025_Track`
     - Definissez la sortie du modèle __"exposed_population_sum"__ comme: `Harald_Exposed_Population` et engeristrez-le dans le dossier `/data/output/` en cliquant sur les trois points ![](/fig/3.36_three_dots.png).
-    - Sous __example_Harald_2025_Track__, cliquez sur les trois points et naviguez au dossier `/data/output/` et nommez la sortie comme `cyclone_harald_buffer`. 
+    - Sous __cyclone_harald_buffer__, cliquez sur les trois points et naviguez au dossier `/data/output/` et nommez la sortie comme `cyclone_harald_buffer`. 
     - Cliquez sur `Éxecuter`.
 
 
@@ -619,49 +619,51 @@ Definition of the model input: Population Raster
 
 
 
-## Task 3: Identifying Affected Health Facilities and Schools – Aina Adds More Layers
+## Tâche 3: Identification des établissements de santé et d'éducation impactés – Aina ajoute des couches supplémentaires
 
-After building her model to estimate exposed population, Aina wants to expand its usefulness. She decides to also **identify critical services** affected by cyclones — especially **health facilities** and **schools**. 
+Après avoir construit son modèle pour estimer la population exposée, Aina souhaite améliorer son utilité. Elle décide d'identifier également les services essentiels affectés par les cclones — en particulier les établissments de santé et les écoles. 
 
-Not only does she want to know *which* facilities are affected, but also *how many in total exist* per district. That way, she can calculate the **percentage of services affected** in each area.
+Elle veut non seulement savoir quels établissements sont affectés, mais aussi combien il en existe au total par district. Cela lui permettera de calculer le __pourcentage de service affectés dans chaque zone. 
 
-To achieve this, she will use two point datasets from OpenStreetMap:
+Pour cela, elle utilisera deux jeux de données contenant des points issus d'OpenStreetMap:
 
-- [Health facilities](https://data.humdata.org/dataset/hotosm_mdg_health_facilities)  
-- [Education facilities](https://data.humdata.org/dataset/hotosm_mdg_education_facilities)
+- [Établissement de santé](https://data.humdata.org/dataset/hotosm_mdg_health_facilities)
+- [Établissement d'éducation](https://data.humdata.org/dataset/hotosm_mdg_education_facilities)
 
-1. **Load the health and education facilities datasets**
-First, let's have a look at the data we want to work with.
-- Navigate to your `input` data folder.  
-- Drag and drop the following layers into your QGIS project:  
-  - `hotosm_mdg_health_facilities`  
-  - `hotosm_mdg_education_facilities`  
-- Confirm that both layers are visible in the **Layers Panel** 
+1. **Importer les données des établissements de santé et d'éducation**
+  Tout d'abord, examinons les données avec lesquelles nous allons travailler:
+    - Accédez à votre dossier `Data/input/`
+    - Glissez-déposez les couches suivantes dans votre projet QGIS:
+      - `hotosm_mdg_health_facilities`  
+      - `hotosm_mdg_education_facilities` 
+    - Vérifiez que les deux couches sont visibles dans __le panneau Couches__. 
 2. **Save your model under a new name**  
-   - Open your existing model `Estimate_Exposed_Population.model3`.
-   - Immediately save it under a new name:
-     - Click `Model` → `Save As…`
-     - Save it to the `project` folder as:
-```  
-Estimate_Exposed_Population_Health_Education
-```
-3. **Add new model inputs**  
-   - In the **Inputs** section, add:
-     - `Vector Layer`  
-       - **Description**:
-        ```
-        Health Facilities
-        ```
-       - Set **Geometry Type** to `Point`
-     - `Vector Layer`  
-       - **Description**:
-        ```
-        Education Facilities
-        ``` 
-       - Set **Geometry Type** to `Point`
+  - Ouvrez votre modèle existant `Estimate_Exposed_Population.model3.`
+  - Immédiatement, enregistrez-le sous un nouveau nom:
+  - Cliquez sur `Modèle` → `Enregistrer le modèle sous…`
+  - Enregistrez-le dans le dossier `/project` sous le nom: 
+  ```
+  estimate_exposed_population_health_education 
+  ```
+
+3. **Ajouter de nouvelles entrées dans le modèle**  
+  - Dans la section __Entrées__ a gauche, ajoutez:
+    - `Couche vecteur`:
+      - __Description:__
+      ```
+      Établissements de santé
+      ```
+      - __Type de géometrie__: `Point`
+    - `Couche vecteur`:
+      - __Description__:
+      ```
+      Établissements d'éducation  
+      ```
+      - __Type de géometrie__: `Point`
+
 ::::{tab-set}
 
-:::{tab-item} Model Input: Health Facilities
+:::{tab-item} Entrée: établissements de santé
 ```{figure} /fig/fr_MDG_AA_model_input_health_facilities.PNG
 ---
 width: 300px
@@ -671,7 +673,7 @@ align: center
 Définir une nouvelle entrée de modèle : couche vectorielle de points représentant les établissements de santé
 ```
 :::
-:::{tab-item} Model Input: Education Facilities
+:::{tab-item} Entrée : établissements d’enseignement
 ```{figure} /fig/fr_MDG_AA_model_input_education_facilities.PNG
 ---
 width: 300px
@@ -681,17 +683,16 @@ Définir une nouvelle entrée de modèle : couche vectorielle de points représe
 ```
 :::
 ::::
-3. **Count All Health Facilities per Admin 2**  
-   - From the **Algorithms** panel, search for **Count Points in Polygon**.
-   - Configuration:
-     - Add a description: `Comptez le nombre d'établissements de santé dans chaque district.`
-     - **Polygon layer**: `Admin Boundaries` (Model Input)
-     - **Points layer**: `Health Facilities` (Model Input)
-     - **Count field name**: 
-      ```
-      Count_health_total
-      ```
-     - Leave output as **Model Output**
+
+3. **Compter tous les établissements de santé par district (ADM2)**
+  - Dans le panneau **Algorithmes**, cherchez `Compter les points dans les polygones`
+  - Configuration: 
+    - Description: `Comptez le nombre d’établissements de santé dans chaque district`
+    - __Polygones__: `Frontières administratives` (sous entrées du modèle)
+    - __Points__: `Établissements de santé` (sous entrées du modèle)
+    - **Nom du champ de dénombrement**: 
+    `count_health_total`
+    - Laisser la sortie vide.
 ```{figure} /fig/fr_MDG_AA_model_count_points_HF_admin2.PNG
 ---
 width: 600px
@@ -699,17 +700,18 @@ align: center
 ---
 Configuration de l'opération : compter le nombre d'établissements de santé dans chaque district.
 ```    
-4. **Count All Education Facilities per Admin 2**  
-   - Add another **Count Points in Polygon** step.
-   - Configuration:
-     - Add a description: `Comptez le nombre d'établissements de education dans chaque district`
-     - **Polygon layer**: `Admin Boundaries` (Model Input)
-     - **Points layer**: `Education Facilities` (Model Input)
-     - **Count field name**: 
+4. **Compter tous les établissements d’enseignement par Admin 2**  
+   - Ajouter une autre étape **Compter les points dans un polygone**.
+   - Configuration :
+     - Ajouter une description : `Comptez le nombre d'établissements d’enseignement dans chaque district`
+     - **Polygones** : `Limites administratives` (entrée du modèle)
+     - **Points** : `Établissements d’enseignement` (entrée du modèle)
+     - **Nom du champ de dénombrement**: 
       ```
       count_education_total
       ```
-     - Leave output as **Model Output**
+     - Laissez la sortie vide
+
 ```{figure} /fig/fr_MDG_AA_model_count_points_EF_admin2.PNG
 ---
 width: 600px
@@ -717,17 +719,17 @@ align: center
 ---
 Configuration de l'opération : compter le nombre d'établissements scolaires dans chaque district.
 ```
-5. **Intersect Health Facilities with Cyclone Buffer**  
-   - From the **Algorithms** panel, search for **Intersection**.
-   - In the configuration window:
-   - Add a description: 
+5. **Intersection des établissements de santé avec la zone tampon du cyclone**  
+   - Depuis le panneau **Algorithmes**, recherchez **Intersection**.
+   - Dans la fenêtre de configuration :
+   - Ajouter une description : 
       ```
       Établissements de santé dans la zone d'impact du cyclone
       ```  
-     - **Input layer**: `Health Facilities` (Model Input)
-     - **Overlay layer**: buffered cyclone zone (use “Reprojected to EPSG:4326” from **Algorithm Output**)
-     - Leave output as **Model Output** 
-   - Click **OK**
+     - **Couche source** : `Établissements de santé` (entrée du modèle)
+     - **Couche de superposition** : zone tampon du cyclone (utiliser “Reprojected to EPSG:4326” depuis la **Sortie d’algorithme**)
+     - Laissez la sortie vide. 
+   - Cliquez sur **OK** pour ajouter l'étape au modèle.
 ```{figure} /fig/fr_MDG_AA_model_clip_intersect_HF_cyclone_buffer.PNG
 ---
 width: 600px
@@ -735,17 +737,17 @@ align: center
 ---
 Configuration de l'opération : intersecter les établissements de santé avec la zone d'impact du cyclone.
 ```
-6. **Intersect Education Facilities with Cyclone Buffer**  
-   - Add another **Intersection** algorithm.
-   - Configuration:
-     - Add a description:
+6. **Intersection des établissements d’éducation avec la zone tampon du cyclone**  
+   - Ajouter un autre algorithme **Intersection**.
+   - Configuration :
+     - Ajouter une description :
        ```
-       Établissements de education dans la zone d'impact du cyclone.
+       Établissements d’éducation dans la zone d'impact du cyclone.
        ```  
-     - **Input layer**: `Education Facilities` (Model Input)
-     - **Overlay layer**: buffered cyclone zone (use “Reprojected to EPSG:4326” from **Algorithm Output**)
-     - Leave output as **Model Output**
-   - Click **OK**
+     - **Couche source** : `Établissements d’éducation` (entrée du modèle)
+     - **Couche de superposition** : zone tampon du cyclone (utiliser “Reprojected to EPSG:4326” depuis la **Sortie d’algorithme**)
+     - Laisser la sortie vide. 
+   - Cliquer sur **OK** pour ajouter l'étape au modèle. 
 ```{figure} /fig/fr_MDG_AA_model_clip_intersect_EF_cyclone_buffer.PNG
 ---
 width: 600px
@@ -753,19 +755,21 @@ align: center
 ---
 Configuration de l'opération : intersecter les établissements de education avec la zone d'impact du cyclone.
 ```
-7. **Count Affected Health Facilities per Admin 2**  
-   - Add **Count Points in Polygon**
-   - Configuration:
-     - Add a description: 
+7. **Compter les établissements de santé affectés par Admin 2**  
+   - Ajouter **Compter les points dans un polygone**
+   - Configuration :
+     - Ajouter une description : 
        ```
        Compter les établissements de santé touchés par district
        ```  
-     - **Polygon layer**: Count total health facilities output
-     - **Points layer**: intersected health facilities output
-     - **Count field name**: 
+     - **Polygones** : sortie du décompte total des établissements de santé
+     - **Points** : sortie des établissements de santé intersectés
+     - **Nom du champ de dénombrement** : 
        ```
        sum_exposed_healthsites_POI
        ```  
+     - Cliquez sur **OK** pour ajouter l'étape au modèle.
+
 ```{figure} /fig/fr_MDG_AA_model_count_points_HF_affected_admin2.PNG
 ---
 width: 600px
@@ -773,19 +777,20 @@ align: center
 ---
 Configuration de l'opération : compter les établissements de santé touchés par district.
 ```
-8. **Count Affected Education Facilities per Admin 2**  
-   - Add **Count Points in Polygon**
-   - Configuration:
-     - Add a description: 
+8. **Compter les établissements d’enseignement affectés par Admin 2**  
+   - Ajouter **Compter les points dans un polygone**
+   - Configuration :
+     - Ajouter une description : 
        ```
-       Compter les établissements education touchés par district
+       Compter les établissements d’enseignement touchés par district
        ```   
-     - **Polygon layer**: Count total education facilities output
-     - **Points layer**: intersected education facilities output
-     - **Count field name**: 
+     - **Polygones** : sortie du décompte total des établissements d’enseignement
+     - **Points** : sortie des établissements d’éducation intersectés
+     - **Nom du champ de dénombrement** : 
        ```
        sum_exposed_education_POI
        ```  
+     - Cliquez sur **OK** pour ajouter l'étape au modèle.
 ```{figure} /fig/fr_MDG_AA_model_count_points_EF_affected_admin2.PNG
 ---
 width: 600px
@@ -793,32 +798,32 @@ align: center
 ---
 Configuration de l'opération : compter les établissements de santé touchés par district.
 ```
-9. **Calculate percentage of affected Health Facilities**
-To compute the percentage of affected health sites per administrative area, we will use the **Field Calculator**:
-- Add the  **Field Calculator**:
-   - Configuration:
-     - Add a description:
+9. **Calculer le pourcentage d’établissements de santé affectés**
+Pour calculer le pourcentage d’établissements de santé affectés par zone administrative, utilisez la **Calculatrice de champ** :
+- Ajouter la **Calculatrice de champ** :
+   - Configuration :
+     - Ajouter une description :
        ```
        Calculer le pourcentage d’établissements de santé touchés par district
        ```  
-    - **Input layer**: the output of Count Affected Health Facilities per Admin 2
-    - **Output field name**:  
+    - **Couche en entrée** : sortie du comptage des établissements de santé affectés
+    - **Nom du champ de sortie** :  
        ```
        pct_health_affected
        ``` 
-    - **Field type**: Decimal (real)
-    - **Expression**:
+    - **Type de champ** : Décimal (réel)
+    - **Expression** :
     ```qgis
     CASE WHEN "count_health_total" > 0
     THEN "sum_exposed_healthsites_POI" / "count_health_total" * 100
-    ELSE 0
-    END
+    ELSE
     ```
-  - Set the output as **Model Output**
-  - Name it:
+    - Définir la sortie comme **Sortie du modèle**
+    - Nommer :
    ```
    admin2_health_affected_pct
    ```
+
 ```{figure} /fig/fr_MDG_AA_model_field_calc_pct_health_exposed.PNG
 ---
 width: 600px
@@ -826,32 +831,36 @@ align: center
 ---
 Configuration de l’opération : calculer le pourcentage d’établissements de santé touchés par district.
 ```
-10. **Calculate percentage of affected Education Facilities**
-To compute the percentage of affected education sites per administrative area, we will use the **Field Calculator**:  
-- Add the **Field Calculator**:  
-   - Configuration:  
-     - Add a description:  
+
+
+10. **Calculer le pourcentage d’établissements d’enseignement affectés**
+Pour calculer le pourcentage d’établissements d’enseignement affectés par zone administrative, utilisez la **Calculatrice de champ** :  
+- Ajouter la **Calculatrice de champ** :  
+   - Configuration :  
+     - Ajouter une description :  
        ```
        Calculer le pourcentage d’établissements d’éducation touchés par district
        ```  
-     - **Input layer**: the output of Count Affected Education Facilities per Admin 2  
-     - **Output field name**:  
+     - **Couche en entrée** : sortie du comptage des établissements d’éducation affectés  
+     - **Nom du champ de sortie** :  
        ```
        pct_education_affected
        ```  
-     - **Field type**: Decimal (real)  
-     - **Expression**:  
+     - **Type de champ** : Décimal (réel)  
+     - **Expression** :  
        ```qgis
        CASE WHEN "count_education_total" > 0
        THEN "sum_exposed_education_POI" / "count_education_total" * 100
        ELSE 0
        END
        ```  
-   - Set the output as **Model Output**  
-   - Name it:  
+   - Définir la sortie comme **Sortie du modèle**  
+   - Nommer :  
      ```
      admin2_education_affected_pct
      ```
+
+
 ```{figure} /fig/fr_MDG_AA_model_field_calc_pct_education_exposed.PNG
 ---
 width: 600px
@@ -859,26 +868,39 @@ align: center
 ---
 Configuration de l’opération : calculer le pourcentage d’établissements d’éducation touchés par district.
 ```
+
+11. **Valider et enregistrer votre modèle étendu**  
+   - Cliquez sur le bouton ✔️ **Valider le modèle** (sous `Modèle` dans le menu en haut) pour vérifier les erreurs.
+   - Enregistrez à nouveau sous :  
+     **`Estimate_Exposed_Population_Health_Education.model3`**
+
 11. **Validate and Save Your Extended Model**  
    - Click the ✔️ **Validate Model** button to check for errors.
    - Save again to:  
      **`Estimate_Exposed_Population_Health_Education.model3`**
-12. **Run the model**
-   - Click the ▶️ **Run** button in the top-right corner of the Graphical Modeler window.
-   - In the popup dialog:
-     - Browse to select the required input layers:
-       - `Cyclone Track` → select the GeoJSON of the storm path (e.g. `Harald_2025_Track.geojson`)
-       - `Population Raster` → select the WorldPop raster file
-       - `Admin Boundaries` → select the Admin 2 layer (e.g. `MDG_adm2.gpkg`)
-       - `Health Facilities` → select the point dataset for health sites
-       - `Education Facilities` → select the point dataset for schools
-     - Choose a location to save the output for the final layers (you can leave intermediate layers in temporary memory).
-   - Click **Run** to execute the full model.
-   - When finished, you should see all final output layers loaded into your QGIS workspace.
 
+12. **Exécuter le modèle**
+   - Cliquez sur le bouton ▶️ **Exécuter** en haut de la fenêtre du Modélisateur Graphique.
+   - Dans la boîte de dialogue :
+     - Sélectionnez les couches d’entrée nécessaires :
+       - `Trajectoire du cyclone` → sélectionnez le fichier GeoJSON du cyclone (ex. `Harald_2025_Track.geojson`)
+       - `Raster de population` → sélectionnez le raster WorldPop
+       - `Limites administratives` → sélectionnez la couche Admin 2 (ex. `MDG_adm2.gpkg`)
+       - `Établissements de santé` → sélectionnez la couche ponctuelle des établissements de santé
+       - `Établissements d’enseignement` → sélectionnez la couche ponctuelle des écoles
+     - Choisissez un emplacement pour enregistrer les couches finales (vous pouvez laisser les couches intermédiaires en mémoire temporaire):
+     - **Sorties:**
+     -  Enregistrez les couches de sorties dans le dossier `/data/output` comm ceci: 
+        - __"exposed_population_sum"__ comme `Harald_Exposed_Population`
+        - __"example_Harald_2025_Track"__ comme `cyclone_harald_buffer`. 
+        - __"admin2_health_affected_pct"__ comme `admin2_health_affected`
+        - __"admin2_education_affected_pct"__ comme `admin2_education_affected`
+
+   - Cliquez sur **Exécuter** pour lancer le modèle complet.
+   - Une fois terminé, toutes les couches finales seront affichées dans votre espace de travail QGIS.
 ::::{tab-set}
 
-:::{tab-item} Graphic Modler
+:::{tab-item} Modeleur
 
 ```{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model.PNG
 ---
@@ -888,7 +910,7 @@ align: center
 Vue d’ensemble du Modèle Graphique de la tâche 3 montrant tous les algorithmes connectés et les sorties définies.
 ```
 :::
-:::{tab-item} Run Model Configuration
+:::{tab-item}  Configuration de l’exécution du modèle
 ```{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_run_configurations.PNG
 ---
 width: 600px
@@ -897,7 +919,7 @@ align: center
 Configuration des paramètres pour exécuter le modèle de la tâche 3 avec toutes les couches d’entrée requises.
 ```
 :::
-:::{tab-item} Model Output
+:::{tab-item} Sortie du modèle
 ```{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model_results_AT.PNG
 ---
 width: 600px
@@ -909,22 +931,23 @@ Résultats du modèle de la tâche 3 affichés dans QGIS, y compris les pourcent
 ::::
 
 
-## Task 4: Visualizing Cyclone Impact Results – Aina Styles Her Maps
+## Tâche 4 : Visualiser les résultats de l’impact du cyclone – Aina applique des styles à ses cartes
 
-After completing her model, Aina wants to **communicate the results clearly** — both to her Red Cross colleagues and external partners.
+Après avoir terminé son modèle, Aina souhaite **communiquer clairement les résultats** — à la fois à ses collègues de la Croix-Rouge et à des partenaires externes.
 
-She’s **tired of manually restyling every layer** every time new cyclone data comes in. Instead, she wants:
-- ✅ **Clear and consistent visuals**
-- 🔁 **Reusable templates**
-- 📂 **Standardized .qml files** shared across projects
+Elle en a **assez de devoir restyler manuellement chaque couche** à chaque fois que de nouvelles données cycloniques arrivent. À la place, elle veut :
+- ✅ **Des visuels clairs et cohérents**
+- 🔁 **Des modèles réutilisables**
+- 📂 **Des fichiers .qml standardisés** partagés entre projets
 
-In this task, you will help Aina apply existing `.qml` styles and create new ones for layers that currently have no preset style.
+Dans cette tâche, vous allez aider Aina à appliquer des styles `.qml` existants et à en créer de nouveaux pour les couches qui n’ont pas encore de style défini.
 
 ---
 
-### 1. **Load Required Layers (if not already loaded)**
 
-Make sure the following layers are already loaded into your QGIS project. These are outputs from **Task 3**:
+### 1. **Charger les couches nécessaires (si ce n’est pas déjà fait)**
+
+Assurez-vous que les couches suivantes sont déjà chargées dans votre projet QGIS. Ce sont les sorties de la **Tâche 3** :
 
 - `Harald_2025_Track`
 - `Harald_Buffer_200km`
@@ -934,6 +957,43 @@ Make sure the following layers are already loaded into your QGIS project. These 
 - `admin2_health_affected_pct`
 - `admin2_education_affected_pct`
 
+Si l’une d’elles manque :
+- Chargez-la par **glisser-déposer** depuis votre dossier `results`, ou
+- Utilisez `Couche` → `Ajouter une couche` → `Ajouter une couche vectorielle` ou `Ajouter une couche raster`
+
+---
+
+### 2. **Appliquer des fichiers de style prédéfinis**
+Appliquez les fichiers de style `.qml` suivants aux couches correspondantes :
+
+| **Couche**                             | **Fichier de style**                           |
+|----------------------------------------|------------------------------------------------|
+| `Harald_2025_Track`                    | `storm_track_cyclone_style.qml`               |
+| `Harald_Buffer_200km`                  | `exposed_cyclone_area_style.qml`              |
+| `Harald_Exposed_Population`            | `exposed_population_style.qml`                |
+| `sum_exposed_healthsites_POI`          | `exposed_healthsites_style.qml`               |
+| `sum_exposed_education_POI`            | `exposed_education_facilities_style.qml`      |
+
+
+
+## Task 4: Visualizing Cyclone Impact Results – Aina Styles Her Layers
+
+Aina now has all the analysis results she needs — but numbers and tables alone won’t convince her colleagues or decision-makers. What they need are clear and easy-to-read maps that can be used directly in meetings and reports.
+
+To save time, Aina doesn’t want to adjust colors and legends manually each time a new cyclone comes in. Instead, she will use ready-made style files (.qml) that instantly give layers a professional and consistent look. Where no style exists yet, she will create one herself, so that next time the map can be updated with just a few clicks.
+
+In this task, you will help Aina make her cyclone impact maps both informative and visually compelling by applying and creating QGIS style files.
+
+### 1. **Load Required Layers (if not already loaded)**
+
+Make sure the following layers are already loaded into your QGIS project. These are outputs from **Task 3**:
+
+- `example_Harald_2025_Track`
+- `cyclone_harald_buffer`
+- `Harald_Exposed_Population`
+- `admin2_health_affected`
+- `admin2_education_affected`
+
 If any are missing:
 - Load them using **drag & drop** from your `results` folder, or
 - Use `Layer` → `Add Layer` → `Add Vector Layer` or `Add Raster Layer`
@@ -941,44 +1001,105 @@ If any are missing:
 ---
 
 ### 2. **Apply Predefined Style Files**
-Apply the following `.qml` style files to the respective layers:
+Apply the following`.qml` style files to the respective layers:
 
 | **Layer**                              | **Style File**                            |
 |----------------------------------------|-------------------------------------------|
-| `Harald_2025_Track`                    | `storm_track_cyclone_style.qml`           |
-| `Harald_Buffer_200km`                  | `exposed_cyclone_area_style.qml`          |
+| `example_Harald_2025_Track`                    | `storm_track_cyclone_style.qml`           |
+| `cyclone_harald_buffer`                  | `exposed_cyclone_area_style.qml`          |
 | `Harald_Exposed_Population`            | `exposed_population_style.qml`            |
-| `sum_exposed_healthsites_POI`          | `exposed_healthsites_style.qml`           |
-| `sum_exposed_education_POI`            | `exposed_education_facilities_style.qml`  |
+| `admin2_health_affected`          | `exposed_healthsites_style.qml`           |
+| `admin2_education_affected`            | `exposed_education_facilities_style.qml`  |
+
+```{note}
+⚠️ For the **health** and **education facilities**, the provided style files are linked to the column containing the **sum of exposed facilities**.  
+They are **not** based on the percentage column.  
+```
+
 
 **Steps:**
-- Open the **Layer Styling Panel**
-- Click the `Style` button → `Load Style…`
-- Navigate to the corresponding `.qml` file
-- Click **OK** to apply the style
+- Right-click on the layer in the **Layers Panel**  
+- Select **Properties**  
+- In the window that opens, go to the **Symbology** tab  
+- At the bottom left, click **Style** → **Load Style…**
+- Click on the three points ![](/fig/Three_points.png)  
+- Navigate to the corresponding `.qml` file in the folder `layer_sytle`and select it  
+- Click **Open**, then **Apply** and **OK** to confirm  
+
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_output_style.mp4"></video>
 
 > 💡 *If the style doesn’t load correctly, double-check the column names and make sure the column name used in the `.qml` file matches the one in your layer. To do this, open the **Attribute Table** of the layer and compare field names.*
 
 ---
 
+
+::::{tab-set}
+
+:::{tab-item} Intermediate result: Exposed Population
+
+```{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_pop_style.PNG
+---
+width: 600px
+align: center
+---
+Carte montrant le nombre de personnes exposées par district après l’application du style .qml.
+```
+:::
+:::{tab-item} Intermediate result: Exposed Health Facilities
+```{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_HS_sum_style.PNG
+---
+width: 600px
+align: center
+---
+Carte indiquant le nombre total d’établissements de santé exposés par district, représentés avec le style prédéfini.
+```
+:::
+:::{tab-item} Intermediate result: Exposed Education Facilities
+```{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_ES_sum_style.PNG
+---
+width: 600px
+align: center
+---
+Carte affichant le nombre total d’établissements scolaires exposés par district, après application du fichier de style .qml.
+```
+:::
+::::
+
+
+
 ### 3. **Style Percentage Layers Manually**
 
-Now let’s style the two **percentage layers** that don’t yet have `.qml` files:
-- `admin2_health_affected_pct`
-- `admin2_education_affected_pct`
+Aina also wants to visualise the percentage of exposed health and education facilities. However, since there is no prepared style available, she must complete the process manually.
 
 **Steps:**
-- Select the layer and open the **Layer Styling Panel**
+- **Right-click** on the layer `admin2_health_affected` → select **Duplicate Layer**  
+- **Rename** the duplicated layer to:
+  ```
+  admin2_health_affected_percentage
+  ```
+- Right-click on the layer in the **Layers Panel**  
+- Select **Properties**  
+- In the window that opens, go to the **Symbology** tab  
 - Set **Symbology** to `Graduated`
 - Choose the correct **field**:
-  - `pct_health_affected` or `pct_education_affected`
-- Open the **Histogram** tab to view the value distribution
-- Set:
+  - `pct_health_affected`
+- Open the **Histogram** tab to view the value distribution by clicking on `calculate histogram`
+- Next go back to `Classes` and set the following configuration:
   - **Mode**: `Equal Interval`
   - **Classes**: `4`
-  - **Breaks**: `0–25%`, `25–50%`, `50–75%`, `75–100%`
+- Click `OK`.This will create four classes (`0–25%`, `25–50%`, `50–75%`, `75–100%`)
 - Choose a color ramp (e.g., light yellow → dark red)
 - Optionally customize class labels for clarity
+- Click `Apply`
+
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_style_affacted_HS_pct.mp4"></video>
+
+- Repeat the same process for the layer `admin2_education_affected`.
+After duplicating the layer, rename the new one to:
+ ```
+ admin2_health_affected_percentage
+``` 
+
 
 > 🧠 *Why 4 equal classes?*  
 > This helps visualize severity across districts using simple and interpretable risk categories. However, you can experiment with **Natural Breaks** if data is unevenly distributed.
@@ -990,12 +1111,22 @@ Now let’s style the two **percentage layers** that don’t yet have `.qml` fil
 Save your manually created styles as `.qml` files for future reuse.
 
 **Steps:**
-- In the **Styling Panel**, click `Style` → `Save Style…`
-- Save the file in the same folder as the corresponding dataset
+- Right-click on the layer in the **Layers Panel**  
+- Select **Properties**  
+- In the window that opens, go to the **Symbology** tab  
+- Click on `Style` → `Save Style…`
+- Save the file in the folder `layer_sytle`
 - Use these filenames:
-  - `health_pct_affected_style.qml`
-  - `education_pct_affected_style.qml`
----
+   ```
+   health_pct_affected_style
+  ```
+  ```
+  education_pct_affected_style
+  ```
+
+
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_style_save_new_style.mp4"></video>
+
 
 ### 5. *(Optional)* Import Styles into Your QGIS Library
 
@@ -1010,27 +1141,27 @@ The styles will now appear as presets in the **Layer Styling Panel**.
 ---
 
 ## Task 5: Quick Map Creation – Aina Uses Map Templates
-Background: Aina Gets Map-Ready in Minutes
-After preparing all the analysis and styling, Aina wants to present her results quickly and professionally. She doesn’t want to recreate map layouts every time — she needs a quick way to generate clean, consistent maps.
 
-That’s why she’s using map templates (.qpt files) already prepared by her team. These templates include map frames, legends, logos, titles, scale bars, and more — everything Aina needs to finish her product in just a few clicks.
+After all the hard work of analyzing data and styling layers, Aina is ready to **share her results**. But creating a professional-looking map from scratch every time would be slow and repetitive.  
 
-✅ Goal
-Use a provided QGIS map template to visualize and export maps showing cyclone exposure results, including population, health, and education impacts.
+To save time, she uses **map templates (.qpt files)** prepared by her team. These templates already contain the essential elements — map frames, legends, logos, titles, and scale bars. With them, Aina can turn her analysis into a **clean, consistent map** in just a few clicks.  
+
+✅ **Goal**  
+Apply a ready-made QGIS map template to quickly create and export maps that show cyclone impacts on population, health facilities, and schools.  
+
 
 1. Load the pre-made print layout template
 
-- Locate the template `cyclone_impact_overview_map_template.qpt` in your project folder under:  
+- Locate the template `cyclone_impact_population_map_template.qpt` in your project folder under:  
   `Map_Templates/`
 
 - You can load the template **by drag-and-drop**:
   - Open your QGIS project.
-  - Navigate to the Print Layout area in the browser panel.
   - Drag the `.qpt` file directly into QGIS — a new layout will be created automatically.
 
 - Alternatively:
   - Go to `Project` → `New Print Layout`
-  - Enter a name (e.g. `Harald_2025_Overview`)
+  - Enter a name (e.g. `Harald_2025_population`)
   - Click `OK`
   - In the layout, go to `Layout` → `Import from Template…`
   - Select the file `cyclone_impact_overview_map_template.qpt` and click `Open`
@@ -1039,34 +1170,73 @@ Use a provided QGIS map template to visualize and export maps showing cyclone ex
 - On the right-side panel, ensure the following:
   - **Page Size**: A3
   - **Orientation**: Landscape
+
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_load_mpa_template.mp4"></video>
+
 3. Update the attribute table of exposed districts
 - In the **Print Layout**, click on the attribute table (right-hand side of the layout).
 - In the **Item Properties** panel:
-  - Ensure the correct layer is selected (e.g. `Exposed_Districts`)
+  - Ensure the correct layer is selected `Harald_Exposed_population`
   - Click `Refresh Table Data`
-  - Click `Attributes…` → ➕ Add:
-    - **Attribute**: `ADM1_EN`
+  - Click `Attributes…` → in the upper part under **Fields** click on `Clear`
+    - Then add the following layer by clicking on ➕ :
+    - **Attribute**: `ADM1_EN`; `ADM2_EN`; `ADM2_PCODE`; `exposed_population_sum`
+    - To sort the tabel content, under the **Sorting**  clicking on ➕ and add the column `AMD1_EN`
     - **Sort Order**: Ascending
   - Click `OK`
+
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_map_makingadjust_AT.mp4"></video>
+
+  
+```{admonition} ⚠️ Warning – Long Tables
+If the attribute table you want to include is **longer than the map frame**, part of it will be cut off in the exported map.  
+To fix this, open the table properties in the layout and **reduce the font size** until the full table fits.  
+```
+
+
 5. Adjust the legend
 - In the layout, click on the **Legend** item.
 - In the **Item Properties** panel:
   - Uncheck **Auto update**
   - Scroll to **Legend items** and remove all entries (🗑️)
   - Add the following relevant layers:
-    - `Relevant_Warehouses`
-    - `Exposed_Cyclone_Area`
-    - `Exposed_Districts`
-    - `Admin1_Impact_Overview_Map`
+    - `example_Harald_2025_Track`
+    - `cyclone_harald_buffer`
+    - `Harald_Exposed_Population`
   - When selecting layers, check **Only visible layers**
   - Rename legend entries to match layout naming
-6. Review and update layout text elements
+    - `example_Harald_2025_Track` ->
+     ```
+     Cyclone Harald Track
+     ```
+    - `cyclone_harald_buffer`->
+     ```
+     Cyclone Harald 200 km Buffer
+     ```
+    - `Harald_Exposed_Population`->
+     ```
+     Number of exposed peopel
+     ```
+
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_adjust_map_making_Legend.mp4"></video>
+
+6. **Update Logos and Icons**  
+- The logos that need to be added to the map are represented by the red **X**.  
+- Click on the image in the **Item List**.  
+- Click on the three dots ![](/fig/Three_points.png) next to the file path.  
+- Browse to the folder `logos_pictures` and select the correct logo file.  
+
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_map_making_update_logos.mp4"></video>
+
+
+7. Review and update layout text elements
 - Make sure all text elements are up to date, especially:
   - **Map title**
   - **Cyclone name and date**
   - **Author/Organization** (optional)
 - Adjust font size or alignment if necessary
 
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_mak_making_adjust_title.mp4"></video>
 
 ### ✅ Final Checklist
 
@@ -1083,11 +1253,11 @@ Use a provided QGIS map template to visualize and export maps showing cyclone ex
 
 
 ```{dropdown} Your final output should look like this after styling the layer
-The map now clearly displays the exposed population within the affected districts, along with the locations of relevant warehouses. The original storm track line — used as input data — is highlighted, as well as the buffered impact area, which serves as a proxy for identifying exposed districts.
+The map now clearly displays the exposed population within the affected districts The original storm track line — used as input data — is highlighted, as well as the buffered impact area, which serves as a proxy for identifying exposed districts.
 
 On the right-hand side of the map, a list shows all exposed districts, including data on total population and exposed population. The districts (Admin 2) are organized under their corresponding regions (Admin 1).
 
-```{figure} /fig/MAD_Trigger_Impact_Population_Map.png
+```{figure} /fig/MAD_Trigger_Impact_Population_Map_example.png
 ---
 width: 1000px
 name: 
@@ -1120,33 +1290,68 @@ We will join the following layers step by step:
 ---
 
 1. Open your model
-- Open `Estimate_Exposed_Population_Health_Education.model3`
-- Save a backup as:  
-  `Estimate_Exposed_Population_Health_Education_Export.model3`
+- Open `Estimate_Exposed_Population_Health_Education`
+- Save a new version as:  
+  ```
+  Estimate_Exposed_Population_Health_Education_Spreadsheet_Export
+  ```
 2. Join Health and Education data into one layer
 - In the **Algorithms**, search for `Join Attributes by Field Value`.
+- Add a description: `Joindre santé et éducation dans une seule couche par ADM2`
 - Configure the algorithm as follows:
-  - **Input Layer**: `admin2_health_affected_pct` (select from **Algorithm Output**)
-  - **Input Layer 2**: `admin2_education_affected_pct` (select from **Algorithm Output**)
-  - **Table field**: `ADM2_PCODE`
-  - **Table field 2**: `ADM2_PCODE`
+  - **Input Layer**: `admin2_health_affected` (select from **Algorithm Output**)
+  - **Input Layer 2**: `admin2_education_affected` (select from **Algorithm Output**)
+  - **Table field**: 
+   ```
+   ADM2_PCODE
+   ```
+  - **Table field 2**: 
+   ```
+   ADM2_PCODE
+   ```
   - **Layer 2 fields to copy**: Leave empty (all fields will be copied)
   - **Join type**: Take attributes of the first matching feature only (one-to-one)
   - Leave output as **Model Output**
+
+```{figure} /fig/fr_MDG_AA_model_join_affacted_pop.PNG
+---
+width: 600px
+name: the_world_result
+align: center
+---
+Configuration de l’opération : joindre les données de santé et d’éducation par le champ `ADM2_PCODE` afin de combiner les résultats dans une seule couche.
+``` 
 3. Join the result with the population data
 Now join the result of the previous step (health + education) to the **exposed population** data.
 - Add a second `Join Attributes by Field Value` algorithm to the model
+- Add a description: `Joindre les données de population avec les indicateurs santé et éducation`
 - Configure the algorithm as follows:
   - **Input Layer**: `exposed_population` (select from **Algorithm Output** of the Zonal Statistics step)
   - **Input Layer 2**: Output from Step 2 (health + education)
-  - **Table field**: `ADM2_PCODE`
-  - **Table field 2**: `ADM2_PCODE`
+  - **Table field**: 
+   ```
+   ADM2_PCODE
+   ```
+  - **Table field 2**: 
+   ```
+   ADM2_PCODE
+   ```
   - **Layer 2 fields to copy**: *(Enter the following field names exactly as shown — comma-separated, no spaces)*
     ```
-    count_health_total,sum_exposed_healthsites_POI,health_affected_precentage,count_education_total,sum_exposed_education_POI,pct_education_affected
+    count_health_total;sum_exposed_health;pct_exposed_health;count_education_total;sum_exposed_education;pct_exposed_education
     ```
   - **Join type**: Take attributes of the first matching feature only (one-to-one)
   - Leave output as **Model Output**
+
+```{figure} /fig/fr_MDG_AA_model_join_affacted_pop_HS_ES.PNG
+---
+width: 600px
+name: the_world_result
+align: center
+---
+Configuration de l’opération : joindre les données de population avec les indicateurs de santé et d’éducation.
+``` 
+
 ::::{tip} Where to find the column names  
 Open the **attribute tables** of the outputs `health_total_per_admin2`, `sum_exposed_healthsites_POI`, and `admin2_health_affected_pct` in QGIS.  
 Look at the **column headers** to find the exact names of the fields you want to copy.
@@ -1155,17 +1360,106 @@ Look at the **column headers** to find the exact names of the fields you want to
 If a column name like `count_health_total` has an invisible trailing space, the join will silently fail.  
 Always copy field names **directly from the attribute table** to avoid errors.
 ::::
+
+
 4. Export results to a spreadsheet
 - In the **Processing Toolbox**, search for `Export to spreadsheet` and double-click to open.
+- Add a description: `Exporter les données de population, d'éducation et de santé dans un seul tableau`
 - Configure the tool as follows:
   - **Input Layer**: Select the output of Step 3 from **Algorithm Output**
   - **Destination spreadsheet**:
     ```
-    exposed_indicators_spreadsheet.xlsx
+    exposure_indicators_spreadsheet
     ```
 
   - Click **OK** to add it to the model.
 Once you run the model, this step will automatically generate a spreadsheet with all relevant indicators ready for the operations team!
+
+```{figure} /fig/fr_MDG_AA_model_export_as_table.PNG
+---
+width: 600px
+name: the_world_result
+align: center
+---
+Exporter tous les indicateurs (population, santé, éducation) vers un tableau unique au format tableur.
+``` 
+
+
+
+5. **Validate and Save Your Extended Model**  
+   - Click the ✔️ **Validate Model** button to check for errors.
+   - Save again to:  
+     **`Estimate_Exposed_Population_Health_Education.model3`**
+6. **Run the model**
+   - Click the ▶️ **Run** button in the top-right corner of the Graphical Modeler window.
+   - **Input:**
+     - Click on the three dots for each input dataset and select the correct input:
+       - `Cyclone Track` → select the GeoJSON of the storm path (e.g. `Harald_2025_Track.geojson`)
+       - `Population Raster` → select the WorldPop raster file
+       - `Admin Boundaries` → select the Admin 2 layer (e.g. `MDG_adm2.gpkg`)
+       - `Health Facilities` → select the point dataset for health sites
+       - `Education Facilities` → select the point dataset for schools
+   - **Output:**
+     - Save all output layers in the output folder and use the names below.
+       - `admin2_health_affacted` -> 
+        ```
+        admin2_health_affected
+        ```
+       - `admin2_education_affected` ->
+        ```
+        admin2_education_affected
+        ```
+       - `cyclone_harald_buffer` ->  
+        ```
+        cyclone_harald_buffer
+        ```
+       - `exposed_population_sum` ->
+        ```
+        admin2_harald_Exposed_Population
+        ```
+       - `exposure_indicators_spreadsheet` ->
+        ```
+        exposure_indicators_harald
+        ```
+   - Click **Run** to execute the full model.
+
+::::{tab-set}
+
+:::{tab-item} Graphic Modler
+
+```{figure} /fig/
+---
+width: 600px
+align: center
+---
+
+```
+:::
+:::{tab-item} Run Model Configuration
+```{figure} /fig/
+---
+width: 600px
+align: center
+---
+
+```
+:::
+:::{tab-item} Model Output
+```{figure} /fig/
+---
+width: 600px
+align: center
+---
+
+```
+:::
+::::
+
+---
+
+
+
+
 
 ## Task 7: Reachability of health Posts from CRM Warehouses
 When a cyclone is forecast to make landfall, Aina works with the logistics and health teams to decide **where to send prepositioned medical kits**. However, not all CRM warehouses stock the needed items — only three do.

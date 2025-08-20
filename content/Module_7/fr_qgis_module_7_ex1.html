@@ -568,8 +568,13 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#donnees">Données</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tache-1-estimation-de-la-population-exposee-approche-manuelle-daina">Tâche 1 : Estimation de la population exposée – Approche manuelle d’Aina</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tache-2-automatisation-de-lestimation-de-la-population-exposee-le-modele-daina">Tâche 2: Automatisation de l’estimation de la population exposée – Le modèle d’Aina</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-identifying-affected-health-facilities-and-schools-aina-adds-more-layers">Task 3: Identifying Affected Health Facilities and Schools – Aina Adds More Layers</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-visualizing-cyclone-impact-results-aina-styles-her-maps">Task 4: Visualizing Cyclone Impact Results – Aina Styles Her Maps</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tache-3-identification-des-etablissements-de-sante-et-d-education-impactes-aina-ajoute-des-couches-supplementaires">Tâche 3: Identification des établissements de santé et d’éducation impactés – Aina ajoute des couches supplémentaires</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tache-4-visualiser-les-resultats-de-limpact-du-cyclone-aina-applique-des-styles-a-ses-cartes">Tâche 4 : Visualiser les résultats de l’impact du cyclone – Aina applique des styles à ses cartes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#charger-les-couches-necessaires-si-ce-nest-pas-deja-fait">1. <strong>Charger les couches nécessaires (si ce n’est pas déjà fait)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#appliquer-des-fichiers-de-style-predefinis">2. <strong>Appliquer des fichiers de style prédéfinis</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-visualizing-cyclone-impact-results-aina-styles-her-layers">Task 4: Visualizing Cyclone Impact Results – Aina Styles Her Layers</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-required-layers-if-not-already-loaded">1. <strong>Load Required Layers (if not already loaded)</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#apply-predefined-style-files">2. <strong>Apply Predefined Style Files</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#style-percentage-layers-manually">3. <strong>Style Percentage Layers Manually</strong></a></li>
@@ -787,10 +792,10 @@ Dans cette tâche, vous allez suivre les étapes qu’elle utilisait auparavant,
 </ul>
 </li>
 </ol>
-<figure class="align-center" id="id2">
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_reproject_cyclon_track.PNG"><img alt="../../_images/fr_MDG_AA_reproject_cyclon_track.PNG" src="../../_images/fr_MDG_AA_reproject_cyclon_track.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Reprojeter la trajectoire du cyclone</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Reprojeter la trajectoire du cyclone</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition attention">
@@ -809,10 +814,10 @@ Dans cette tâche, vous allez suivre les étapes qu’elle utilisait auparavant,
 </ul>
 </li>
 </ol>
-<figure class="align-center" id="id3">
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_cyclon_track_buffer.PNG"><img alt="../../_images/fr_MDG_AA_cyclon_track_buffer.PNG" src="../../_images/fr_MDG_AA_cyclon_track_buffer.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Tamponner la trajectoire du cyclone</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Tamponner la trajectoire du cyclone</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -822,10 +827,10 @@ Résultat intermédiaire: Zone tampon<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<figure class="align-center" id="id4">
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_cyclon_track_buffer.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_cyclon_track_buffer.PNG" src="../../_images/fr_MDG_AA_intermediate_result_cyclon_track_buffer.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Les résultats intermédiaires doivent montrer la trajectoire du cyclone et la zone tampon de 200 kilomètres autour de celui-ci. La zone tampon doit être une seule entité.</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Les résultats intermédiaires doivent montrer la trajectoire du cyclone et la zone tampon de 200 kilomètres autour de celui-ci. La zone tampon doit être une seule entité.</span><a class="headerlink" href="#id7" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -839,10 +844,10 @@ Résultat intermédiaire: Zone tampon<div class="sd-summary-down docutils">
 </ul>
 </li>
 </ol>
-<figure class="align-center" id="id5">
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_reproject_cyclon_buffer.PNG"><img alt="../../_images/fr_MDG_AA_reproject_cyclon_buffer.PNG" src="../../_images/fr_MDG_AA_reproject_cyclon_buffer.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Reprojetter la tamponner trajectoire du cyclone</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Reprojetter la tamponner trajectoire du cyclone</span><a class="headerlink" href="#id8" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="7">
@@ -867,10 +872,10 @@ Résultat intermédiaire: Zone tampon<div class="sd-summary-down docutils">
 </ul>
 </li>
 </ol>
-<figure class="align-center" id="id6">
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_clip_pop_raster.PNG"><img alt="../../_images/fr_MDG_AA_clip_pop_raster.PNG" src="../../_images/fr_MDG_AA_clip_pop_raster.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Découpez la population ratser selon la zone affectée par le cyclone (trajectoire tampon du cyclone)</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Découpez la population ratser selon la zone affectée par le cyclone (trajectoire tampon du cyclone)</span><a class="headerlink" href="#id9" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -880,10 +885,10 @@ Résultat intermédiaire: Raster population découpé<div class="sd-summary-down
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<figure class="align-center" id="id7">
+<figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_clip_pop_raster.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_clip_pop_raster.PNG" src="../../_images/fr_MDG_AA_intermediate_result_clip_pop_raster.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Résultat intermédiaire du découpage de la couche raster de population à l’étendue de la trajectoire tamponnée du cyclone.</span><a class="headerlink" href="#id7" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Résultat intermédiaire du découpage de la couche raster de population à l’étendue de la trajectoire tamponnée du cyclone.</span><a class="headerlink" href="#id10" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -900,10 +905,10 @@ Résultat intermédiaire: Raster population découpé<div class="sd-summary-down
 </ul>
 </li>
 </ol>
-<figure class="align-center" id="id8">
+<figure class="align-center" id="id11">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_pop_zonal_statistic.PNG"><img alt="../../_images/fr_MDG_AA_pop_zonal_statistic.PNG" src="../../_images/fr_MDG_AA_pop_zonal_statistic.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Calcul de la population exposée aux cyclones par district sur la base du raster de population.</span><a class="headerlink" href="#id8" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Calcul de la population exposée aux cyclones par district sur la base du raster de population.</span><a class="headerlink" href="#id11" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="11">
@@ -925,10 +930,10 @@ Pour cela, nous allons appliquer une <strong><span class="xref myst">classificat
 <p class="admonition-title">Tip</p>
 <p>Vous pouvez ajuster les bornes des classes ou les étiquettes en double-cliquant sur chaque entrée de classe.</p>
 </div>
-<figure class="align-center" id="id9">
+<figure class="align-center" id="id12">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_pop_graduadt_classification_exposed_population.PNG"><img alt="../../_images/fr_MDG_AA_pop_graduadt_classification_exposed_population.PNG" src="../../_images/fr_MDG_AA_pop_graduadt_classification_exposed_population.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Configuration de la visualisation de la population exposée en cinq classes.</span><a class="headerlink" href="#id9" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Configuration de la visualisation de la population exposée en cinq classes.</span><a class="headerlink" href="#id12" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Vos résultats devraient ressembler à ceci:</p>
@@ -1018,35 +1023,35 @@ Cela lui permettra d’agir plus rapidement et d’éviter de répéter les mêm
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-0">
 Entrée: trajectoire du cylcone</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id10">
+<figure class="align-center" id="id13">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_input_cyclon_track.PNG"><img alt="../../_images/fr_MDG_AA_model_input_cyclon_track.PNG" src="../../_images/fr_MDG_AA_model_input_cyclon_track.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Ajouter la entrée couche vecteur pour la trajectoire du cyclone</span><a class="headerlink" href="#id10" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Ajouter la entrée couche vecteur pour la trajectoire du cyclone</span><a class="headerlink" href="#id13" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-1">
 Entrée: Frontières administratives</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id11">
+<figure class="align-center" id="id14">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_input_admin_bounderies.PNG"><img alt="../../_images/fr_MDG_AA_model_input_admin_bounderies.PNG" src="../../_images/fr_MDG_AA_model_input_admin_bounderies.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Ajouter la entrée couche vecteur pour les frontières administratives</span><a class="headerlink" href="#id11" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Ajouter la entrée couche vecteur pour les frontières administratives</span><a class="headerlink" href="#id14" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 <input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-2">
 Entrée: Raster Population</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id12">
+<figure class="align-center" id="id15">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_input_population_raster.PNG"><img alt="../../_images/fr_MDG_AA_model_input_population_raster.PNG" src="../../_images/fr_MDG_AA_model_input_population_raster.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Ajouter la couche raster pour les données de population</span><a class="headerlink" href="#id12" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Ajouter la couche raster pour les données de population</span><a class="headerlink" href="#id15" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 </div>
-<p><strong>Résultat intermédiaire</strong></p>
+<p><strong>Résultat intermédiaire:</strong></p>
 <figure class="align-center" id="mdg-modele-resultat-intermed">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_model_input.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_model_input.PNG" src="../../_images/fr_MDG_AA_intermediate_result_model_input.PNG" style="width: 600px;" /></a>
 <figcaption>
@@ -1193,10 +1198,10 @@ Entrée: Raster Population</label><div class="sd-tab-content docutils">
 </li>
 </ul>
 <p>Vous pouvez désormais exécuter ce modèle chaque fois qu’une nouvelle trajectoire de cyclone est disponible.</p>
-<figure class="align-center" id="id13">
+<figure class="align-center" id="id16">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_run_model_M7_e1_task2.PNG"><img alt="../../_images/fr_MDG_AA_model_run_model_M7_e1_task2.PNG" src="../../_images/fr_MDG_AA_model_run_model_M7_e1_task2.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Pour exécuter le modèle, spécifiez l’entrée comme indiqué dans l’image et définissez le nom de la couche de sortie.</span><a class="headerlink" href="#id13" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Pour exécuter le modèle, spécifiez l’entrée comme indiqué dans l’image et définissez le nom de la couche de sortie.</span><a class="headerlink" href="#id16" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p><strong>Vos résultats devraient ressembler à ceci:</strong></p>
@@ -1228,7 +1233,7 @@ Entrée: Raster Population</label><div class="sd-tab-content docutils">
 <li><p>Sous <strong>Trajectoire Cyclone</strong>, choisissez:
 <code class="docutils literal notranslate"><span class="pre">example_Harald_2025_Track</span></code></p></li>
 <li><p>Definissez la sortie du modèle <strong>“exposed_population_sum”</strong> comme: <code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Population</span></code> et engeristrez-le dans le dossier <code class="docutils literal notranslate"><span class="pre">/data/output/</span></code> en cliquant sur les trois points <img alt="" src="../../_images/3.36_three_dots.png" />.</p></li>
-<li><p>Sous <strong>example_Harald_2025_Track</strong>, cliquez sur les trois points et naviguez au dossier <code class="docutils literal notranslate"><span class="pre">/data/output/</span></code> et nommez la sortie comme <code class="docutils literal notranslate"><span class="pre">cyclone_harald_buffer</span></code>.</p></li>
+<li><p>Sous <strong>cyclone_harald_buffer</strong>, cliquez sur les trois points et naviguez au dossier <code class="docutils literal notranslate"><span class="pre">/data/output/</span></code> et nommez la sortie comme <code class="docutils literal notranslate"><span class="pre">cyclone_harald_buffer</span></code>.</p></li>
 <li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">Éxecuter</span></code>.</p></li>
 </ul>
 </li>
@@ -1254,90 +1259,84 @@ Exécuter le modèle avec la nouvelle sortie</label><div class="sd-tab-content d
 <input id="sd-tab-item-5" name="sd-tab-set-1" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-5">
 Model Output</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id14">
+<figure class="align-center" id="id17">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_extended_buffer.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_extended_buffer.PNG" src="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_extended_buffer.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Definition of the model input: Population Raster</span><a class="headerlink" href="#id14" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Definition of the model input: Population Raster</span><a class="headerlink" href="#id17" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 </div>
 </section>
-<section id="task-3-identifying-affected-health-facilities-and-schools-aina-adds-more-layers">
-<h2>Task 3: Identifying Affected Health Facilities and Schools – Aina Adds More Layers<a class="headerlink" href="#task-3-identifying-affected-health-facilities-and-schools-aina-adds-more-layers" title="Permalink to this heading">#</a></h2>
-<p>After building her model to estimate exposed population, Aina wants to expand its usefulness. She decides to also <strong>identify critical services</strong> affected by cyclones — especially <strong>health facilities</strong> and <strong>schools</strong>.</p>
-<p>Not only does she want to know <em>which</em> facilities are affected, but also <em>how many in total exist</em> per district. That way, she can calculate the <strong>percentage of services affected</strong> in each area.</p>
-<p>To achieve this, she will use two point datasets from OpenStreetMap:</p>
+<section id="tache-3-identification-des-etablissements-de-sante-et-d-education-impactes-aina-ajoute-des-couches-supplementaires">
+<h2>Tâche 3: Identification des établissements de santé et d’éducation impactés – Aina ajoute des couches supplémentaires<a class="headerlink" href="#tache-3-identification-des-etablissements-de-sante-et-d-education-impactes-aina-ajoute-des-couches-supplementaires" title="Permalink to this heading">#</a></h2>
+<p>Après avoir construit son modèle pour estimer la population exposée, Aina souhaite améliorer son utilité. Elle décide d’identifier également les services essentiels affectés par les cclones — en particulier les établissments de santé et les écoles.</p>
+<p>Elle veut non seulement savoir quels établissements sont affectés, mais aussi combien il en existe au total par district. Cela lui permettera de calculer le __pourcentage de service affectés dans chaque zone.</p>
+<p>Pour cela, elle utilisera deux jeux de données contenant des points issus d’OpenStreetMap:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://data.humdata.org/dataset/hotosm_mdg_health_facilities">Health facilities</a></p></li>
-<li><p><a class="reference external" href="https://data.humdata.org/dataset/hotosm_mdg_education_facilities">Education facilities</a></p></li>
+<li><p><a class="reference external" href="https://data.humdata.org/dataset/hotosm_mdg_health_facilities">Établissement de santé</a></p></li>
+<li><p><a class="reference external" href="https://data.humdata.org/dataset/hotosm_mdg_education_facilities">Établissement d’éducation</a></p></li>
 </ul>
 <ol class="arabic simple">
-<li><p><strong>Load the health and education facilities datasets</strong>
-First, let’s have a look at the data we want to work with.</p></li>
-</ol>
+<li><p><strong>Importer les données des établissements de santé et d’éducation</strong>
+Tout d’abord, examinons les données avec lesquelles nous allons travailler:</p>
 <ul class="simple">
-<li><p>Navigate to your <code class="docutils literal notranslate"><span class="pre">input</span></code> data folder.</p></li>
-<li><p>Drag and drop the following layers into your QGIS project:</p>
+<li><p>Accédez à votre dossier <code class="docutils literal notranslate"><span class="pre">Data/input/</span></code></p></li>
+<li><p>Glissez-déposez les couches suivantes dans votre projet QGIS:</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">hotosm_mdg_health_facilities</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">hotosm_mdg_education_facilities</span></code></p></li>
 </ul>
 </li>
-<li><p>Confirm that both layers are visible in the <strong>Layers Panel</strong></p></li>
-</ul>
-<ol class="arabic simple" start="2">
-<li><p><strong>Save your model under a new name</strong></p>
-<ul class="simple">
-<li><p>Open your existing model <code class="docutils literal notranslate"><span class="pre">Estimate_Exposed_Population.model3</span></code>.</p></li>
-<li><p>Immediately save it under a new name:</p>
-<ul>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Model</span></code> → <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">As…</span></code></p></li>
-<li><p>Save it to the <code class="docutils literal notranslate"><span class="pre">project</span></code> folder as:</p></li>
+<li><p>Vérifiez que les deux couches sont visibles dans <strong>le panneau Couches</strong>.</p></li>
 </ul>
 </li>
-</ul>
-</li>
+<li><p><strong>Save your model under a new name</strong></p></li>
 </ol>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Estimate_Exposed_Population_Health_Education</span>
+<ul class="simple">
+<li><p>Ouvrez votre modèle existant <code class="docutils literal notranslate"><span class="pre">Estimate_Exposed_Population.model3.</span></code></p></li>
+<li><p>Immédiatement, enregistrez-le sous un nouveau nom:</p></li>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">Modèle</span></code> → <code class="docutils literal notranslate"><span class="pre">Enregistrer</span> <span class="pre">le</span> <span class="pre">modèle</span> <span class="pre">sous…</span></code></p></li>
+<li><p>Enregistrez-le dans le dossier <code class="docutils literal notranslate"><span class="pre">/project</span></code> sous le nom:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">estimate_exposed_population_health_education</span> 
 </pre></div>
 </div>
-<ol class="arabic" start="3">
-<li><p><strong>Add new model inputs</strong></p>
+<ol class="arabic simple" start="3">
+<li><p><strong>Ajouter de nouvelles entrées dans le modèle</strong></p></li>
+</ol>
 <ul>
-<li><p>In the <strong>Inputs</strong> section, add:</p>
+<li><p>Dans la section <strong>Entrées</strong> a gauche, ajoutez:</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">Vector</span> <span class="pre">Layer</span></code></p>
+<li><p><code class="docutils literal notranslate"><span class="pre">Couche</span> <span class="pre">vecteur</span></code>:</p>
+<ul class="simple">
+<li><p><strong>Description:</strong></p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Établissements</span> <span class="n">de</span> <span class="n">santé</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>Type de géometrie</strong>: <code class="docutils literal notranslate"><span class="pre">Point</span></code></p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Couche</span> <span class="pre">vecteur</span></code>:</p>
 <ul class="simple">
 <li><p><strong>Description</strong>:</p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Health</span> <span class="n">Facilities</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Établissements</span> <span class="n">d</span><span class="s1">&#39;éducation  </span>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>Set <strong>Geometry Type</strong> to <code class="docutils literal notranslate"><span class="pre">Point</span></code></p></li>
-</ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Vector</span> <span class="pre">Layer</span></code></p>
-<ul class="simple">
-<li><p><strong>Description</strong>:</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Education</span> <span class="n">Facilities</span>
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>Set <strong>Geometry Type</strong> to <code class="docutils literal notranslate"><span class="pre">Point</span></code></p></li>
+<li><p><strong>Type de géometrie</strong>: <code class="docutils literal notranslate"><span class="pre">Point</span></code></p></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-</li>
-</ol>
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-6" name="sd-tab-set-2" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-6">
-Model Input: Health Facilities</label><div class="sd-tab-content docutils">
+Entrée: établissements de santé</label><div class="sd-tab-content docutils">
 <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_input_health_facilities.PNG"><img alt="../../_images/fr_MDG_AA_model_input_health_facilities.PNG" src="../../_images/fr_MDG_AA_model_input_health_facilities.PNG" style="width: 300px;" /></a>
 <figcaption>
@@ -1347,246 +1346,242 @@ Model Input: Health Facilities</label><div class="sd-tab-content docutils">
 </div>
 <input id="sd-tab-item-7" name="sd-tab-set-2" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-7">
-Model Input: Education Facilities</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id15">
+Entrée : établissements d’enseignement</label><div class="sd-tab-content docutils">
+<figure class="align-center" id="id18">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_input_education_facilities.PNG"><img alt="../../_images/fr_MDG_AA_model_input_education_facilities.PNG" src="../../_images/fr_MDG_AA_model_input_education_facilities.PNG" style="width: 300px;" /></a>
 <figcaption>
-<p><span class="caption-text">Définir une nouvelle entrée de modèle : couche vectorielle de points représentant les établissements d’enseignement</span><a class="headerlink" href="#id15" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Définir une nouvelle entrée de modèle : couche vectorielle de points représentant les établissements d’enseignement</span><a class="headerlink" href="#id18" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 </div>
-<ol class="arabic" start="3">
-<li><p><strong>Count All Health Facilities per Admin 2</strong></p>
-<ul>
-<li><p>From the <strong>Algorithms</strong> panel, search for <strong>Count Points in Polygon</strong>.</p></li>
-<li><p>Configuration:</p>
-<ul class="simple">
-<li><p>Add a description: <code class="docutils literal notranslate"><span class="pre">Comptez</span> <span class="pre">le</span> <span class="pre">nombre</span> <span class="pre">d'établissements</span> <span class="pre">de</span> <span class="pre">santé</span> <span class="pre">dans</span> <span class="pre">chaque</span> <span class="pre">district.</span></code></p></li>
-<li><p><strong>Polygon layer</strong>: <code class="docutils literal notranslate"><span class="pre">Admin</span> <span class="pre">Boundaries</span></code> (Model Input)</p></li>
-<li><p><strong>Points layer</strong>: <code class="docutils literal notranslate"><span class="pre">Health</span> <span class="pre">Facilities</span></code> (Model Input)</p></li>
-<li><p><strong>Count field name</strong>:</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Count_health_total</span>
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>Leave output as <strong>Model Output</strong></p></li>
-</ul>
-</li>
-</ul>
-</li>
+<ol class="arabic simple" start="3">
+<li><p><strong>Compter tous les établissements de santé par district (ADM2)</strong></p></li>
 </ol>
-<figure class="align-center" id="id16">
+<ul class="simple">
+<li><p>Dans le panneau <strong>Algorithmes</strong>, cherchez <code class="docutils literal notranslate"><span class="pre">Compter</span> <span class="pre">les</span> <span class="pre">points</span> <span class="pre">dans</span> <span class="pre">les</span> <span class="pre">polygones</span></code></p></li>
+<li><p>Configuration:</p>
+<ul>
+<li><p>Description: <code class="docutils literal notranslate"><span class="pre">Comptez</span> <span class="pre">le</span> <span class="pre">nombre</span> <span class="pre">d’établissements</span> <span class="pre">de</span> <span class="pre">santé</span> <span class="pre">dans</span> <span class="pre">chaque</span> <span class="pre">district</span></code></p></li>
+<li><p><strong>Polygones</strong>: <code class="docutils literal notranslate"><span class="pre">Frontières</span> <span class="pre">administratives</span></code> (sous entrées du modèle)</p></li>
+<li><p><strong>Points</strong>: <code class="docutils literal notranslate"><span class="pre">Établissements</span> <span class="pre">de</span> <span class="pre">santé</span></code> (sous entrées du modèle)</p></li>
+<li><p><strong>Nom du champ de dénombrement</strong>:
+<code class="docutils literal notranslate"><span class="pre">count_health_total</span></code></p></li>
+<li><p>Laisser la sortie vide.</p></li>
+</ul>
+</li>
+</ul>
+<figure class="align-center" id="id19">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_count_points_HF_admin2.PNG"><img alt="../../_images/fr_MDG_AA_model_count_points_HF_admin2.PNG" src="../../_images/fr_MDG_AA_model_count_points_HF_admin2.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Configuration de l’opération : compter le nombre d’établissements de santé dans chaque district.</span><a class="headerlink" href="#id16" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Configuration de l’opération : compter le nombre d’établissements de santé dans chaque district.</span><a class="headerlink" href="#id19" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic" start="4">
-<li><p><strong>Count All Education Facilities per Admin 2</strong></p>
+<li><p><strong>Compter tous les établissements d’enseignement par Admin 2</strong></p>
 <ul>
-<li><p>Add another <strong>Count Points in Polygon</strong> step.</p></li>
-<li><p>Configuration:</p>
+<li><p>Ajouter une autre étape <strong>Compter les points dans un polygone</strong>.</p></li>
+<li><p>Configuration :</p>
 <ul class="simple">
-<li><p>Add a description: <code class="docutils literal notranslate"><span class="pre">Comptez</span> <span class="pre">le</span> <span class="pre">nombre</span> <span class="pre">d'établissements</span> <span class="pre">de</span> <span class="pre">education</span> <span class="pre">dans</span> <span class="pre">chaque</span> <span class="pre">district</span></code></p></li>
-<li><p><strong>Polygon layer</strong>: <code class="docutils literal notranslate"><span class="pre">Admin</span> <span class="pre">Boundaries</span></code> (Model Input)</p></li>
-<li><p><strong>Points layer</strong>: <code class="docutils literal notranslate"><span class="pre">Education</span> <span class="pre">Facilities</span></code> (Model Input)</p></li>
-<li><p><strong>Count field name</strong>:</p></li>
+<li><p>Ajouter une description : <code class="docutils literal notranslate"><span class="pre">Comptez</span> <span class="pre">le</span> <span class="pre">nombre</span> <span class="pre">d'établissements</span> <span class="pre">d’enseignement</span> <span class="pre">dans</span> <span class="pre">chaque</span> <span class="pre">district</span></code></p></li>
+<li><p><strong>Polygones</strong> : <code class="docutils literal notranslate"><span class="pre">Limites</span> <span class="pre">administratives</span></code> (entrée du modèle)</p></li>
+<li><p><strong>Points</strong> : <code class="docutils literal notranslate"><span class="pre">Établissements</span> <span class="pre">d’enseignement</span></code> (entrée du modèle)</p></li>
+<li><p><strong>Nom du champ de dénombrement</strong>:</p></li>
 </ul>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">count_education_total</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>Leave output as <strong>Model Output</strong></p></li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-<figure class="align-center" id="id17">
-<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_count_points_EF_admin2.PNG"><img alt="../../_images/fr_MDG_AA_model_count_points_EF_admin2.PNG" src="../../_images/fr_MDG_AA_model_count_points_EF_admin2.PNG" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-text">Configuration de l’opération : compter le nombre d’établissements scolaires dans chaque district.</span><a class="headerlink" href="#id17" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<ol class="arabic" start="5">
-<li><p><strong>Intersect Health Facilities with Cyclone Buffer</strong></p>
-<ul>
-<li><p>From the <strong>Algorithms</strong> panel, search for <strong>Intersection</strong>.</p></li>
-<li><p>In the configuration window:</p></li>
-<li><p>Add a description:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Établissements</span> <span class="n">de</span> <span class="n">santé</span> <span class="n">dans</span> <span class="n">la</span> <span class="n">zone</span> <span class="n">d</span><span class="s1">&#39;impact du cyclone</span>
-</pre></div>
-</div>
-<ul class="simple">
-<li><p><strong>Input layer</strong>: <code class="docutils literal notranslate"><span class="pre">Health</span> <span class="pre">Facilities</span></code> (Model Input)</p></li>
-<li><p><strong>Overlay layer</strong>: buffered cyclone zone (use “Reprojected to EPSG:4326” from <strong>Algorithm Output</strong>)</p></li>
-<li><p>Leave output as <strong>Model Output</strong></p></li>
-</ul>
-</li>
-<li><p>Click <strong>OK</strong></p></li>
-</ul>
-</li>
-</ol>
-<figure class="align-center" id="id18">
-<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_clip_intersect_HF_cyclone_buffer.PNG"><img alt="../../_images/fr_MDG_AA_model_clip_intersect_HF_cyclone_buffer.PNG" src="../../_images/fr_MDG_AA_model_clip_intersect_HF_cyclone_buffer.PNG" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-text">Configuration de l’opération : intersecter les établissements de santé avec la zone d’impact du cyclone.</span><a class="headerlink" href="#id18" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<ol class="arabic" start="6">
-<li><p><strong>Intersect Education Facilities with Cyclone Buffer</strong></p>
-<ul>
-<li><p>Add another <strong>Intersection</strong> algorithm.</p></li>
-<li><p>Configuration:</p>
-<ul>
-<li><p>Add a description:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Établissements</span> <span class="n">de</span> <span class="n">education</span> <span class="n">dans</span> <span class="n">la</span> <span class="n">zone</span> <span class="n">d</span><span class="s1">&#39;impact du cyclone.</span>
-</pre></div>
-</div>
-</li>
-<li><p><strong>Input layer</strong>: <code class="docutils literal notranslate"><span class="pre">Education</span> <span class="pre">Facilities</span></code> (Model Input)</p></li>
-<li><p><strong>Overlay layer</strong>: buffered cyclone zone (use “Reprojected to EPSG:4326” from <strong>Algorithm Output</strong>)</p></li>
-<li><p>Leave output as <strong>Model Output</strong></p></li>
-</ul>
-</li>
-<li><p>Click <strong>OK</strong></p></li>
-</ul>
-</li>
-</ol>
-<figure class="align-center" id="id19">
-<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_clip_intersect_EF_cyclone_buffer.PNG"><img alt="../../_images/fr_MDG_AA_model_clip_intersect_EF_cyclone_buffer.PNG" src="../../_images/fr_MDG_AA_model_clip_intersect_EF_cyclone_buffer.PNG" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-text">Configuration de l’opération : intersecter les établissements de education avec la zone d’impact du cyclone.</span><a class="headerlink" href="#id19" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<ol class="arabic" start="7">
-<li><p><strong>Count Affected Health Facilities per Admin 2</strong></p>
-<ul>
-<li><p>Add <strong>Count Points in Polygon</strong></p></li>
-<li><p>Configuration:</p>
-<ul>
-<li><p>Add a description:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Compter</span> <span class="n">les</span> <span class="n">établissements</span> <span class="n">de</span> <span class="n">santé</span> <span class="n">touchés</span> <span class="n">par</span> <span class="n">district</span>
-</pre></div>
-</div>
-</li>
-<li><p><strong>Polygon layer</strong>: Count total health facilities output</p></li>
-<li><p><strong>Points layer</strong>: intersected health facilities output</p></li>
-<li><p><strong>Count field name</strong>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sum_exposed_healthsites_POI</span>
-</pre></div>
-</div>
-</li>
+<li><p>Laissez la sortie vide</p></li>
 </ul>
 </li>
 </ul>
 </li>
 </ol>
 <figure class="align-center" id="id20">
-<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_count_points_HF_affected_admin2.PNG"><img alt="../../_images/fr_MDG_AA_model_count_points_HF_affected_admin2.PNG" src="../../_images/fr_MDG_AA_model_count_points_HF_affected_admin2.PNG" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_count_points_EF_admin2.PNG"><img alt="../../_images/fr_MDG_AA_model_count_points_EF_admin2.PNG" src="../../_images/fr_MDG_AA_model_count_points_EF_admin2.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Configuration de l’opération : compter les établissements de santé touchés par district.</span><a class="headerlink" href="#id20" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Configuration de l’opération : compter le nombre d’établissements scolaires dans chaque district.</span><a class="headerlink" href="#id20" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<ol class="arabic" start="8">
-<li><p><strong>Count Affected Education Facilities per Admin 2</strong></p>
+<ol class="arabic" start="5">
+<li><p><strong>Intersection des établissements de santé avec la zone tampon du cyclone</strong></p>
 <ul>
-<li><p>Add <strong>Count Points in Polygon</strong></p></li>
-<li><p>Configuration:</p>
-<ul>
-<li><p>Add a description:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Compter</span> <span class="n">les</span> <span class="n">établissements</span> <span class="n">education</span> <span class="n">touchés</span> <span class="n">par</span> <span class="n">district</span>
+<li><p>Depuis le panneau <strong>Algorithmes</strong>, recherchez <strong>Intersection</strong>.</p></li>
+<li><p>Dans la fenêtre de configuration :</p></li>
+<li><p>Ajouter une description :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Établissements</span> <span class="n">de</span> <span class="n">santé</span> <span class="n">dans</span> <span class="n">la</span> <span class="n">zone</span> <span class="n">d</span><span class="s1">&#39;impact du cyclone</span>
 </pre></div>
 </div>
-</li>
-<li><p><strong>Polygon layer</strong>: Count total education facilities output</p></li>
-<li><p><strong>Points layer</strong>: intersected education facilities output</p></li>
-<li><p><strong>Count field name</strong>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sum_exposed_education_POI</span>
-</pre></div>
-</div>
-</li>
+<ul class="simple">
+<li><p><strong>Couche source</strong> : <code class="docutils literal notranslate"><span class="pre">Établissements</span> <span class="pre">de</span> <span class="pre">santé</span></code> (entrée du modèle)</p></li>
+<li><p><strong>Couche de superposition</strong> : zone tampon du cyclone (utiliser “Reprojected to EPSG:4326” depuis la <strong>Sortie d’algorithme</strong>)</p></li>
+<li><p>Laissez la sortie vide.</p></li>
 </ul>
 </li>
+<li><p>Cliquez sur <strong>OK</strong> pour ajouter l’étape au modèle.</p></li>
 </ul>
 </li>
 </ol>
 <figure class="align-center" id="id21">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_clip_intersect_HF_cyclone_buffer.PNG"><img alt="../../_images/fr_MDG_AA_model_clip_intersect_HF_cyclone_buffer.PNG" src="../../_images/fr_MDG_AA_model_clip_intersect_HF_cyclone_buffer.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Configuration de l’opération : intersecter les établissements de santé avec la zone d’impact du cyclone.</span><a class="headerlink" href="#id21" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic" start="6">
+<li><p><strong>Intersection des établissements d’éducation avec la zone tampon du cyclone</strong></p>
+<ul>
+<li><p>Ajouter un autre algorithme <strong>Intersection</strong>.</p></li>
+<li><p>Configuration :</p>
+<ul>
+<li><p>Ajouter une description :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Établissements d’éducation dans la zone d&#39;impact du cyclone.
+</pre></div>
+</div>
+</li>
+<li><p><strong>Couche source</strong> : <code class="docutils literal notranslate"><span class="pre">Établissements</span> <span class="pre">d’éducation</span></code> (entrée du modèle)</p></li>
+<li><p><strong>Couche de superposition</strong> : zone tampon du cyclone (utiliser “Reprojected to EPSG:4326” depuis la <strong>Sortie d’algorithme</strong>)</p></li>
+<li><p>Laisser la sortie vide.</p></li>
+</ul>
+</li>
+<li><p>Cliquer sur <strong>OK</strong> pour ajouter l’étape au modèle.</p></li>
+</ul>
+</li>
+</ol>
+<figure class="align-center" id="id22">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_clip_intersect_EF_cyclone_buffer.PNG"><img alt="../../_images/fr_MDG_AA_model_clip_intersect_EF_cyclone_buffer.PNG" src="../../_images/fr_MDG_AA_model_clip_intersect_EF_cyclone_buffer.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Configuration de l’opération : intersecter les établissements de education avec la zone d’impact du cyclone.</span><a class="headerlink" href="#id22" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic" start="7">
+<li><p><strong>Compter les établissements de santé affectés par Admin 2</strong></p>
+<ul>
+<li><p>Ajouter <strong>Compter les points dans un polygone</strong></p></li>
+<li><p>Configuration :</p>
+<ul>
+<li><p>Ajouter une description :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Compter</span> <span class="n">les</span> <span class="n">établissements</span> <span class="n">de</span> <span class="n">santé</span> <span class="n">touchés</span> <span class="n">par</span> <span class="n">district</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Polygones</strong> : sortie du décompte total des établissements de santé</p></li>
+<li><p><strong>Points</strong> : sortie des établissements de santé intersectés</p></li>
+<li><p><strong>Nom du champ de dénombrement</strong> :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sum_exposed_healthsites_POI</span>
+</pre></div>
+</div>
+</li>
+<li><p>Cliquez sur <strong>OK</strong> pour ajouter l’étape au modèle.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<figure class="align-center" id="id23">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_count_points_HF_affected_admin2.PNG"><img alt="../../_images/fr_MDG_AA_model_count_points_HF_affected_admin2.PNG" src="../../_images/fr_MDG_AA_model_count_points_HF_affected_admin2.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Configuration de l’opération : compter les établissements de santé touchés par district.</span><a class="headerlink" href="#id23" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic" start="8">
+<li><p><strong>Compter les établissements d’enseignement affectés par Admin 2</strong></p>
+<ul>
+<li><p>Ajouter <strong>Compter les points dans un polygone</strong></p></li>
+<li><p>Configuration :</p>
+<ul>
+<li><p>Ajouter une description :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Compter les établissements d’enseignement touchés par district
+</pre></div>
+</div>
+</li>
+<li><p><strong>Polygones</strong> : sortie du décompte total des établissements d’enseignement</p></li>
+<li><p><strong>Points</strong> : sortie des établissements d’éducation intersectés</p></li>
+<li><p><strong>Nom du champ de dénombrement</strong> :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sum_exposed_education_POI</span>
+</pre></div>
+</div>
+</li>
+<li><p>Cliquez sur <strong>OK</strong> pour ajouter l’étape au modèle.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<figure class="align-center" id="id24">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_count_points_EF_affected_admin2.PNG"><img alt="../../_images/fr_MDG_AA_model_count_points_EF_affected_admin2.PNG" src="../../_images/fr_MDG_AA_model_count_points_EF_affected_admin2.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Configuration de l’opération : compter les établissements de santé touchés par district.</span><a class="headerlink" href="#id21" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Configuration de l’opération : compter les établissements de santé touchés par district.</span><a class="headerlink" href="#id24" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="9">
-<li><p><strong>Calculate percentage of affected Health Facilities</strong>
-To compute the percentage of affected health sites per administrative area, we will use the <strong>Field Calculator</strong>:</p></li>
+<li><p><strong>Calculer le pourcentage d’établissements de santé affectés</strong>
+Pour calculer le pourcentage d’établissements de santé affectés par zone administrative, utilisez la <strong>Calculatrice de champ</strong> :</p></li>
 </ol>
 <ul>
-<li><p>Add the  <strong>Field Calculator</strong>:</p>
+<li><p>Ajouter la <strong>Calculatrice de champ</strong> :</p>
 <ul>
-<li><p>Configuration:</p>
+<li><p>Configuration :</p>
 <ul>
-<li><p>Add a description:</p>
+<li><p>Ajouter une description :</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Calculer le pourcentage d’établissements de santé touchés par district
 </pre></div>
 </div>
 </li>
 </ul>
 </li>
-<li><p><strong>Input layer</strong>: the output of Count Affected Health Facilities per Admin 2</p></li>
-<li><p><strong>Output field name</strong>:</p>
+<li><p><strong>Couche en entrée</strong> : sortie du comptage des établissements de santé affectés</p></li>
+<li><p><strong>Nom du champ de sortie</strong> :</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pct_health_affected</span>
 </pre></div>
 </div>
 </li>
-<li><p><strong>Field type</strong>: Decimal (real)</p></li>
-<li><p><strong>Expression</strong>:</p></li>
+<li><p><strong>Type de champ</strong> : Décimal (réel)</p></li>
+<li><p><strong>Expression</strong> :</p></li>
 </ul>
 <div class="highlight-qgis notranslate"><div class="highlight"><pre><span></span>CASE WHEN &quot;count_health_total&quot; &gt; 0
 THEN &quot;sum_exposed_healthsites_POI&quot; / &quot;count_health_total&quot; * 100
-ELSE 0
-END
+ELSE
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>Set the output as <strong>Model Output</strong></p></li>
-<li><p>Name it:</p></li>
+<li><p>Définir la sortie comme <strong>Sortie du modèle</strong></p></li>
+<li><p>Nommer :</p></li>
 </ul>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">admin2_health_affected_pct</span>
 </pre></div>
 </div>
 </li>
 </ul>
-<figure class="align-center" id="id22">
+<figure class="align-center" id="id25">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_field_calc_pct_health_exposed.PNG"><img alt="../../_images/fr_MDG_AA_model_field_calc_pct_health_exposed.PNG" src="../../_images/fr_MDG_AA_model_field_calc_pct_health_exposed.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Configuration de l’opération : calculer le pourcentage d’établissements de santé touchés par district.</span><a class="headerlink" href="#id22" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Configuration de l’opération : calculer le pourcentage d’établissements de santé touchés par district.</span><a class="headerlink" href="#id25" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="10">
-<li><p><strong>Calculate percentage of affected Education Facilities</strong>
-To compute the percentage of affected education sites per administrative area, we will use the <strong>Field Calculator</strong>:</p></li>
+<li><p><strong>Calculer le pourcentage d’établissements d’enseignement affectés</strong>
+Pour calculer le pourcentage d’établissements d’enseignement affectés par zone administrative, utilisez la <strong>Calculatrice de champ</strong> :</p></li>
 </ol>
 <ul>
-<li><p>Add the <strong>Field Calculator</strong>:</p>
+<li><p>Ajouter la <strong>Calculatrice de champ</strong> :</p>
 <ul>
-<li><p>Configuration:</p>
+<li><p>Configuration :</p>
 <ul>
-<li><p>Add a description:</p>
+<li><p>Ajouter une description :</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Calculer le pourcentage d’établissements d’éducation touchés par district
 </pre></div>
 </div>
 </li>
-<li><p><strong>Input layer</strong>: the output of Count Affected Education Facilities per Admin 2</p></li>
-<li><p><strong>Output field name</strong>:</p>
+<li><p><strong>Couche en entrée</strong> : sortie du comptage des établissements d’éducation affectés</p></li>
+<li><p><strong>Nom du champ de sortie</strong> :</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pct_education_affected</span>
 </pre></div>
 </div>
 </li>
-<li><p><strong>Field type</strong>: Decimal (real)</p></li>
-<li><p><strong>Expression</strong>:</p>
+<li><p><strong>Type de champ</strong> : Décimal (réel)</p></li>
+<li><p><strong>Expression</strong> :</p>
 <div class="highlight-qgis notranslate"><div class="highlight"><pre><span></span>CASE WHEN &quot;count_education_total&quot; &gt; 0
 THEN &quot;sum_exposed_education_POI&quot; / &quot;count_education_total&quot; * 100
 ELSE 0
@@ -1596,8 +1591,8 @@ END
 </li>
 </ul>
 </li>
-<li><p>Set the output as <strong>Model Output</strong></p></li>
-<li><p>Name it:</p>
+<li><p>Définir la sortie comme <strong>Sortie du modèle</strong></p></li>
+<li><p>Nommer :</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">admin2_education_affected_pct</span>
 </pre></div>
 </div>
@@ -1605,12 +1600,20 @@ END
 </ul>
 </li>
 </ul>
-<figure class="align-center" id="id23">
+<figure class="align-center" id="id26">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_field_calc_pct_education_exposed.PNG"><img alt="../../_images/fr_MDG_AA_model_field_calc_pct_education_exposed.PNG" src="../../_images/fr_MDG_AA_model_field_calc_pct_education_exposed.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Configuration de l’opération : calculer le pourcentage d’établissements d’éducation touchés par district.</span><a class="headerlink" href="#id23" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Configuration de l’opération : calculer le pourcentage d’établissements d’éducation touchés par district.</span><a class="headerlink" href="#id26" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+<ol class="arabic simple" start="11">
+<li><p><strong>Valider et enregistrer votre modèle étendu</strong></p></li>
+</ol>
+<ul class="simple">
+<li><p>Cliquez sur le bouton ✔️ <strong>Valider le modèle</strong> (sous <code class="docutils literal notranslate"><span class="pre">Modèle</span></code> dans le menu en haut) pour vérifier les erreurs.</p></li>
+<li><p>Enregistrez à nouveau sous :<br />
+<strong><code class="docutils literal notranslate"><span class="pre">Estimate_Exposed_Population_Health_Education.model3</span></code></strong></p></li>
+</ul>
 <ol class="arabic simple" start="11">
 <li><p><strong>Validate and Save Your Extended Model</strong></p></li>
 </ol>
@@ -1620,74 +1623,83 @@ END
 <strong><code class="docutils literal notranslate"><span class="pre">Estimate_Exposed_Population_Health_Education.model3</span></code></strong></p></li>
 </ul>
 <ol class="arabic simple" start="12">
-<li><p><strong>Run the model</strong></p></li>
+<li><p><strong>Exécuter le modèle</strong></p></li>
 </ol>
 <ul class="simple">
-<li><p>Click the ▶️ <strong>Run</strong> button in the top-right corner of the Graphical Modeler window.</p></li>
-<li><p>In the popup dialog:</p>
+<li><p>Cliquez sur le bouton ▶️ <strong>Exécuter</strong> en haut de la fenêtre du Modélisateur Graphique.</p></li>
+<li><p>Dans la boîte de dialogue :</p>
 <ul>
-<li><p>Browse to select the required input layers:</p>
+<li><p>Sélectionnez les couches d’entrée nécessaires :</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Track</span></code> → select the GeoJSON of the storm path (e.g. <code class="docutils literal notranslate"><span class="pre">Harald_2025_Track.geojson</span></code>)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Population</span> <span class="pre">Raster</span></code> → select the WorldPop raster file</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Admin</span> <span class="pre">Boundaries</span></code> → select the Admin 2 layer (e.g. <code class="docutils literal notranslate"><span class="pre">MDG_adm2.gpkg</span></code>)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Health</span> <span class="pre">Facilities</span></code> → select the point dataset for health sites</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Education</span> <span class="pre">Facilities</span></code> → select the point dataset for schools</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Trajectoire</span> <span class="pre">du</span> <span class="pre">cyclone</span></code> → sélectionnez le fichier GeoJSON du cyclone (ex. <code class="docutils literal notranslate"><span class="pre">Harald_2025_Track.geojson</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Raster</span> <span class="pre">de</span> <span class="pre">population</span></code> → sélectionnez le raster WorldPop</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Limites</span> <span class="pre">administratives</span></code> → sélectionnez la couche Admin 2 (ex. <code class="docutils literal notranslate"><span class="pre">MDG_adm2.gpkg</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Établissements</span> <span class="pre">de</span> <span class="pre">santé</span></code> → sélectionnez la couche ponctuelle des établissements de santé</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Établissements</span> <span class="pre">d’enseignement</span></code> → sélectionnez la couche ponctuelle des écoles</p></li>
 </ul>
 </li>
-<li><p>Choose a location to save the output for the final layers (you can leave intermediate layers in temporary memory).</p></li>
+<li><p>Choisissez un emplacement pour enregistrer les couches finales (vous pouvez laisser les couches intermédiaires en mémoire temporaire):</p></li>
+<li><p><strong>Sorties:</strong></p></li>
+<li><p>Enregistrez les couches de sorties dans le dossier <code class="docutils literal notranslate"><span class="pre">/data/output</span></code> comm ceci:</p>
+<ul>
+<li><p><strong>“exposed_population_sum”</strong> comme <code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Population</span></code></p></li>
+<li><p><strong>“example_Harald_2025_Track”</strong> comme <code class="docutils literal notranslate"><span class="pre">cyclone_harald_buffer</span></code>.</p></li>
+<li><p><strong>“admin2_health_affected_pct”</strong> comme <code class="docutils literal notranslate"><span class="pre">admin2_health_affected</span></code></p></li>
+<li><p><strong>“admin2_education_affected_pct”</strong> comme <code class="docutils literal notranslate"><span class="pre">admin2_education_affected</span></code></p></li>
 </ul>
 </li>
-<li><p>Click <strong>Run</strong> to execute the full model.</p></li>
-<li><p>When finished, you should see all final output layers loaded into your QGIS workspace.</p></li>
+</ul>
+</li>
+<li><p>Cliquez sur <strong>Exécuter</strong> pour lancer le modèle complet.</p></li>
+<li><p>Une fois terminé, toutes les couches finales seront affichées dans votre espace de travail QGIS.</p></li>
 </ul>
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-8" name="sd-tab-set-3" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-8">
-Graphic Modler</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id24">
+Modeleur</label><div class="sd-tab-content docutils">
+<figure class="align-center" id="id27">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model.PNG" src="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Vue d’ensemble du Modèle Graphique de la tâche 3 montrant tous les algorithmes connectés et les sorties définies.</span><a class="headerlink" href="#id24" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Vue d’ensemble du Modèle Graphique de la tâche 3 montrant tous les algorithmes connectés et les sorties définies.</span><a class="headerlink" href="#id27" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 <input id="sd-tab-item-9" name="sd-tab-set-3" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-9">
-Run Model Configuration</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id25">
+Configuration de l’exécution du modèle</label><div class="sd-tab-content docutils">
+<figure class="align-center" id="id28">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_run_configurations.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_run_configurations.PNG" src="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_run_configurations.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Configuration des paramètres pour exécuter le modèle de la tâche 3 avec toutes les couches d’entrée requises.</span><a class="headerlink" href="#id25" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Configuration des paramètres pour exécuter le modèle de la tâche 3 avec toutes les couches d’entrée requises.</span><a class="headerlink" href="#id28" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 <input id="sd-tab-item-10" name="sd-tab-set-3" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-10">
-Model Output</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id26">
+Sortie du modèle</label><div class="sd-tab-content docutils">
+<figure class="align-center" id="id29">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model_results_AT.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model_results_AT.PNG" src="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model_results_AT.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Résultats du modèle de la tâche 3 affichés dans QGIS, y compris les pourcentages d’établissements de santé et d’éducation touchés par district.</span><a class="headerlink" href="#id26" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Résultats du modèle de la tâche 3 affichés dans QGIS, y compris les pourcentages d’établissements de santé et d’éducation touchés par district.</span><a class="headerlink" href="#id29" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 </div>
 </section>
-<section id="task-4-visualizing-cyclone-impact-results-aina-styles-her-maps">
-<h2>Task 4: Visualizing Cyclone Impact Results – Aina Styles Her Maps<a class="headerlink" href="#task-4-visualizing-cyclone-impact-results-aina-styles-her-maps" title="Permalink to this heading">#</a></h2>
-<p>After completing her model, Aina wants to <strong>communicate the results clearly</strong> — both to her Red Cross colleagues and external partners.</p>
-<p>She’s <strong>tired of manually restyling every layer</strong> every time new cyclone data comes in. Instead, she wants:</p>
+<section id="tache-4-visualiser-les-resultats-de-limpact-du-cyclone-aina-applique-des-styles-a-ses-cartes">
+<h2>Tâche 4 : Visualiser les résultats de l’impact du cyclone – Aina applique des styles à ses cartes<a class="headerlink" href="#tache-4-visualiser-les-resultats-de-limpact-du-cyclone-aina-applique-des-styles-a-ses-cartes" title="Permalink to this heading">#</a></h2>
+<p>Après avoir terminé son modèle, Aina souhaite <strong>communiquer clairement les résultats</strong> — à la fois à ses collègues de la Croix-Rouge et à des partenaires externes.</p>
+<p>Elle en a <strong>assez de devoir restyler manuellement chaque couche</strong> à chaque fois que de nouvelles données cycloniques arrivent. À la place, elle veut :</p>
 <ul class="simple">
-<li><p>✅ <strong>Clear and consistent visuals</strong></p></li>
-<li><p>🔁 <strong>Reusable templates</strong></p></li>
-<li><p>📂 <strong>Standardized .qml files</strong> shared across projects</p></li>
+<li><p>✅ <strong>Des visuels clairs et cohérents</strong></p></li>
+<li><p>🔁 <strong>Des modèles réutilisables</strong></p></li>
+<li><p>📂 <strong>Des fichiers .qml standardisés</strong> partagés entre projets</p></li>
 </ul>
-<p>In this task, you will help Aina apply existing <code class="docutils literal notranslate"><span class="pre">.qml</span></code> styles and create new ones for layers that currently have no preset style.</p>
+<p>Dans cette tâche, vous allez aider Aina à appliquer des styles <code class="docutils literal notranslate"><span class="pre">.qml</span></code> existants et à en créer de nouveaux pour les couches qui n’ont pas encore de style défini.</p>
 <hr class="docutils" />
-<section id="load-required-layers-if-not-already-loaded">
-<h3>1. <strong>Load Required Layers (if not already loaded)</strong><a class="headerlink" href="#load-required-layers-if-not-already-loaded" title="Permalink to this heading">#</a></h3>
-<p>Make sure the following layers are already loaded into your QGIS project. These are outputs from <strong>Task 3</strong>:</p>
+<section id="charger-les-couches-necessaires-si-ce-nest-pas-deja-fait">
+<h3>1. <strong>Charger les couches nécessaires (si ce n’est pas déjà fait)</strong><a class="headerlink" href="#charger-les-couches-necessaires-si-ce-nest-pas-deja-fait" title="Permalink to this heading">#</a></h3>
+<p>Assurez-vous que les couches suivantes sont déjà chargées dans votre projet QGIS. Ce sont les sorties de la <strong>Tâche 3</strong> :</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Harald_2025_Track</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Harald_Buffer_200km</span></code></p></li>
@@ -1697,20 +1709,20 @@ Model Output</label><div class="sd-tab-content docutils">
 <li><p><code class="docutils literal notranslate"><span class="pre">admin2_health_affected_pct</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">admin2_education_affected_pct</span></code></p></li>
 </ul>
-<p>If any are missing:</p>
+<p>Si l’une d’elles manque :</p>
 <ul class="simple">
-<li><p>Load them using <strong>drag &amp; drop</strong> from your <code class="docutils literal notranslate"><span class="pre">results</span></code> folder, or</p></li>
-<li><p>Use <code class="docutils literal notranslate"><span class="pre">Layer</span></code> → <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> → <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code> or <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Raster</span> <span class="pre">Layer</span></code></p></li>
+<li><p>Chargez-la par <strong>glisser-déposer</strong> depuis votre dossier <code class="docutils literal notranslate"><span class="pre">results</span></code>, ou</p></li>
+<li><p>Utilisez <code class="docutils literal notranslate"><span class="pre">Couche</span></code> → <code class="docutils literal notranslate"><span class="pre">Ajouter</span> <span class="pre">une</span> <span class="pre">couche</span></code> → <code class="docutils literal notranslate"><span class="pre">Ajouter</span> <span class="pre">une</span> <span class="pre">couche</span> <span class="pre">vectorielle</span></code> ou <code class="docutils literal notranslate"><span class="pre">Ajouter</span> <span class="pre">une</span> <span class="pre">couche</span> <span class="pre">raster</span></code></p></li>
 </ul>
 </section>
 <hr class="docutils" />
-<section id="apply-predefined-style-files">
-<h3>2. <strong>Apply Predefined Style Files</strong><a class="headerlink" href="#apply-predefined-style-files" title="Permalink to this heading">#</a></h3>
-<p>Apply the following <code class="docutils literal notranslate"><span class="pre">.qml</span></code> style files to the respective layers:</p>
+<section id="appliquer-des-fichiers-de-style-predefinis">
+<h3>2. <strong>Appliquer des fichiers de style prédéfinis</strong><a class="headerlink" href="#appliquer-des-fichiers-de-style-predefinis" title="Permalink to this heading">#</a></h3>
+<p>Appliquez les fichiers de style <code class="docutils literal notranslate"><span class="pre">.qml</span></code> suivants aux couches correspondantes :</p>
 <table class="table">
 <thead>
-<tr class="row-odd"><th class="head"><p><strong>Layer</strong></p></th>
-<th class="head"><p><strong>Style File</strong></p></th>
+<tr class="row-odd"><th class="head"><p><strong>Couche</strong></p></th>
+<th class="head"><p><strong>Fichier de style</strong></p></th>
 </tr>
 </thead>
 <tbody>
@@ -1731,45 +1743,150 @@ Model Output</label><div class="sd-tab-content docutils">
 </tr>
 </tbody>
 </table>
+</section>
+</section>
+<section id="task-4-visualizing-cyclone-impact-results-aina-styles-her-layers">
+<h2>Task 4: Visualizing Cyclone Impact Results – Aina Styles Her Layers<a class="headerlink" href="#task-4-visualizing-cyclone-impact-results-aina-styles-her-layers" title="Permalink to this heading">#</a></h2>
+<p>Aina now has all the analysis results she needs — but numbers and tables alone won’t convince her colleagues or decision-makers. What they need are clear and easy-to-read maps that can be used directly in meetings and reports.</p>
+<p>To save time, Aina doesn’t want to adjust colors and legends manually each time a new cyclone comes in. Instead, she will use ready-made style files (.qml) that instantly give layers a professional and consistent look. Where no style exists yet, she will create one herself, so that next time the map can be updated with just a few clicks.</p>
+<p>In this task, you will help Aina make her cyclone impact maps both informative and visually compelling by applying and creating QGIS style files.</p>
+<section id="load-required-layers-if-not-already-loaded">
+<h3>1. <strong>Load Required Layers (if not already loaded)</strong><a class="headerlink" href="#load-required-layers-if-not-already-loaded" title="Permalink to this heading">#</a></h3>
+<p>Make sure the following layers are already loaded into your QGIS project. These are outputs from <strong>Task 3</strong>:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">example_Harald_2025_Track</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cyclone_harald_buffer</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Population</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">admin2_health_affected</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">admin2_education_affected</span></code></p></li>
+</ul>
+<p>If any are missing:</p>
+<ul class="simple">
+<li><p>Load them using <strong>drag &amp; drop</strong> from your <code class="docutils literal notranslate"><span class="pre">results</span></code> folder, or</p></li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">Layer</span></code> → <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> → <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code> or <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Raster</span> <span class="pre">Layer</span></code></p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="apply-predefined-style-files">
+<h3>2. <strong>Apply Predefined Style Files</strong><a class="headerlink" href="#apply-predefined-style-files" title="Permalink to this heading">#</a></h3>
+<p>Apply the following<code class="docutils literal notranslate"><span class="pre">.qml</span></code> style files to the respective layers:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Layer</strong></p></th>
+<th class="head"><p><strong>Style File</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">example_Harald_2025_Track</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">storm_track_cyclone_style.qml</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">cyclone_harald_buffer</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">exposed_cyclone_area_style.qml</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Population</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">exposed_population_style.qml</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">admin2_health_affected</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">exposed_healthsites_style.qml</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">admin2_education_affected</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">exposed_education_facilities_style.qml</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>⚠️ For the <strong>health</strong> and <strong>education facilities</strong>, the provided style files are linked to the column containing the <strong>sum of exposed facilities</strong>.<br />
+They are <strong>not</strong> based on the percentage column.</p>
+</div>
 <p><strong>Steps:</strong></p>
 <ul class="simple">
-<li><p>Open the <strong>Layer Styling Panel</strong></p></li>
-<li><p>Click the <code class="docutils literal notranslate"><span class="pre">Style</span></code> button → <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style…</span></code></p></li>
-<li><p>Navigate to the corresponding <code class="docutils literal notranslate"><span class="pre">.qml</span></code> file</p></li>
-<li><p>Click <strong>OK</strong> to apply the style</p></li>
+<li><p>Right-click on the layer in the <strong>Layers Panel</strong></p></li>
+<li><p>Select <strong>Properties</strong></p></li>
+<li><p>In the window that opens, go to the <strong>Symbology</strong> tab</p></li>
+<li><p>At the bottom left, click <strong>Style</strong> → <strong>Load Style…</strong></p></li>
+<li><p>Click on the three points <img alt="" src="../../_images/Three_points.png" /></p></li>
+<li><p>Navigate to the corresponding <code class="docutils literal notranslate"><span class="pre">.qml</span></code> file in the folder <code class="docutils literal notranslate"><span class="pre">layer_sytle</span></code>and select it</p></li>
+<li><p>Click <strong>Open</strong>, then <strong>Apply</strong> and <strong>OK</strong> to confirm</p></li>
 </ul>
+<p><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_output_style.mp4"></video></p>
 <blockquote>
 <div><p>💡 <em>If the style doesn’t load correctly, double-check the column names and make sure the column name used in the <code class="docutils literal notranslate"><span class="pre">.qml</span></code> file matches the one in your layer. To do this, open the <strong>Attribute Table</strong> of the layer and compare field names.</em></p>
 </div></blockquote>
-</section>
 <hr class="docutils" />
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-11" name="sd-tab-set-4" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-11">
+Intermediate result: Exposed Population</label><div class="sd-tab-content docutils">
+<figure class="align-center" id="id30">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_model_task4_exposed_pop_style.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_model_task4_exposed_pop_style.PNG" src="../../_images/fr_MDG_AA_intermediate_result_model_task4_exposed_pop_style.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Carte montrant le nombre de personnes exposées par district après l’application du style .qml.</span><a class="headerlink" href="#id30" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<input id="sd-tab-item-12" name="sd-tab-set-4" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-12">
+Intermediate result: Exposed Health Facilities</label><div class="sd-tab-content docutils">
+<figure class="align-center" id="id31">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_model_task4_exposed_HS_sum_style.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_model_task4_exposed_HS_sum_style.PNG" src="../../_images/fr_MDG_AA_intermediate_result_model_task4_exposed_HS_sum_style.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Carte indiquant le nombre total d’établissements de santé exposés par district, représentés avec le style prédéfini.</span><a class="headerlink" href="#id31" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<input id="sd-tab-item-13" name="sd-tab-set-4" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-13">
+Intermediate result: Exposed Education Facilities</label><div class="sd-tab-content docutils">
+<figure class="align-center" id="id32">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_model_task4_exposed_ES_sum_style.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_model_task4_exposed_ES_sum_style.PNG" src="../../_images/fr_MDG_AA_intermediate_result_model_task4_exposed_ES_sum_style.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Carte affichant le nombre total d’établissements scolaires exposés par district, après application du fichier de style .qml.</span><a class="headerlink" href="#id32" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
 <section id="style-percentage-layers-manually">
 <h3>3. <strong>Style Percentage Layers Manually</strong><a class="headerlink" href="#style-percentage-layers-manually" title="Permalink to this heading">#</a></h3>
-<p>Now let’s style the two <strong>percentage layers</strong> that don’t yet have <code class="docutils literal notranslate"><span class="pre">.qml</span></code> files:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">admin2_health_affected_pct</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">admin2_education_affected_pct</span></code></p></li>
-</ul>
+<p>Aina also wants to visualise the percentage of exposed health and education facilities. However, since there is no prepared style available, she must complete the process manually.</p>
 <p><strong>Steps:</strong></p>
-<ul class="simple">
-<li><p>Select the layer and open the <strong>Layer Styling Panel</strong></p></li>
+<ul>
+<li><p><strong>Right-click</strong> on the layer <code class="docutils literal notranslate"><span class="pre">admin2_health_affected</span></code> → select <strong>Duplicate Layer</strong></p></li>
+<li><p><strong>Rename</strong> the duplicated layer to:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">admin2_health_affected_percentage</span>
+</pre></div>
+</div>
+</li>
+<li><p>Right-click on the layer in the <strong>Layers Panel</strong></p></li>
+<li><p>Select <strong>Properties</strong></p></li>
+<li><p>In the window that opens, go to the <strong>Symbology</strong> tab</p></li>
 <li><p>Set <strong>Symbology</strong> to <code class="docutils literal notranslate"><span class="pre">Graduated</span></code></p></li>
 <li><p>Choose the correct <strong>field</strong>:</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">pct_health_affected</span></code> or <code class="docutils literal notranslate"><span class="pre">pct_education_affected</span></code></p></li>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pct_health_affected</span></code></p></li>
 </ul>
 </li>
-<li><p>Open the <strong>Histogram</strong> tab to view the value distribution</p></li>
-<li><p>Set:</p>
-<ul>
+<li><p>Open the <strong>Histogram</strong> tab to view the value distribution by clicking on <code class="docutils literal notranslate"><span class="pre">calculate</span> <span class="pre">histogram</span></code></p></li>
+<li><p>Next go back to <code class="docutils literal notranslate"><span class="pre">Classes</span></code> and set the following configuration:</p>
+<ul class="simple">
 <li><p><strong>Mode</strong>: <code class="docutils literal notranslate"><span class="pre">Equal</span> <span class="pre">Interval</span></code></p></li>
 <li><p><strong>Classes</strong>: <code class="docutils literal notranslate"><span class="pre">4</span></code></p></li>
-<li><p><strong>Breaks</strong>: <code class="docutils literal notranslate"><span class="pre">0–25%</span></code>, <code class="docutils literal notranslate"><span class="pre">25–50%</span></code>, <code class="docutils literal notranslate"><span class="pre">50–75%</span></code>, <code class="docutils literal notranslate"><span class="pre">75–100%</span></code></p></li>
 </ul>
 </li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">OK</span></code>.This will create four classes (<code class="docutils literal notranslate"><span class="pre">0–25%</span></code>, <code class="docutils literal notranslate"><span class="pre">25–50%</span></code>, <code class="docutils literal notranslate"><span class="pre">50–75%</span></code>, <code class="docutils literal notranslate"><span class="pre">75–100%</span></code>)</p></li>
 <li><p>Choose a color ramp (e.g., light yellow → dark red)</p></li>
 <li><p>Optionally customize class labels for clarity</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Apply</span></code></p></li>
 </ul>
+<p><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_style_affacted_HS_pct.mp4"></video></p>
+<ul class="simple">
+<li><p>Repeat the same process for the layer <code class="docutils literal notranslate"><span class="pre">admin2_education_affected</span></code>.
+After duplicating the layer, rename the new one to:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">admin2_health_affected_percentage</span>
+</pre></div>
+</div>
 <blockquote>
 <div><p>🧠 <em>Why 4 equal classes?</em><br />
 This helps visualize severity across districts using simple and interpretable risk categories. However, you can experiment with <strong>Natural Breaks</strong> if data is unevenly distributed.</p>
@@ -1780,18 +1897,23 @@ This helps visualize severity across districts using simple and interpretable ri
 <h3>4. <strong>Save Your New Styles for Reuse</strong><a class="headerlink" href="#save-your-new-styles-for-reuse" title="Permalink to this heading">#</a></h3>
 <p>Save your manually created styles as <code class="docutils literal notranslate"><span class="pre">.qml</span></code> files for future reuse.</p>
 <p><strong>Steps:</strong></p>
-<ul class="simple">
-<li><p>In the <strong>Styling Panel</strong>, click <code class="docutils literal notranslate"><span class="pre">Style</span></code> → <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Style…</span></code></p></li>
-<li><p>Save the file in the same folder as the corresponding dataset</p></li>
-<li><p>Use these filenames:</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">health_pct_affected_style.qml</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">education_pct_affected_style.qml</span></code></p></li>
-</ul>
+<li><p>Right-click on the layer in the <strong>Layers Panel</strong></p></li>
+<li><p>Select <strong>Properties</strong></p></li>
+<li><p>In the window that opens, go to the <strong>Symbology</strong> tab</p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Style</span></code> → <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Style…</span></code></p></li>
+<li><p>Save the file in the folder <code class="docutils literal notranslate"><span class="pre">layer_sytle</span></code></p></li>
+<li><p>Use these filenames:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">health_pct_affected_style</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">education_pct_affected_style</span>
+</pre></div>
+</div>
 </li>
 </ul>
+<p><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_style_save_new_style.mp4"></video></p>
 </section>
-<hr class="docutils" />
 <section id="optional-import-styles-into-your-qgis-library">
 <h3>5. <em>(Optional)</em> Import Styles into Your QGIS Library<a class="headerlink" href="#optional-import-styles-into-your-qgis-library" title="Permalink to this heading">#</a></h3>
 <p>To reuse your styles in any future project:</p>
@@ -1806,28 +1928,26 @@ This helps visualize severity across districts using simple and interpretable ri
 <hr class="docutils" />
 <section id="task-5-quick-map-creation-aina-uses-map-templates">
 <h2>Task 5: Quick Map Creation – Aina Uses Map Templates<a class="headerlink" href="#task-5-quick-map-creation-aina-uses-map-templates" title="Permalink to this heading">#</a></h2>
-<p>Background: Aina Gets Map-Ready in Minutes
-After preparing all the analysis and styling, Aina wants to present her results quickly and professionally. She doesn’t want to recreate map layouts every time — she needs a quick way to generate clean, consistent maps.</p>
-<p>That’s why she’s using map templates (.qpt files) already prepared by her team. These templates include map frames, legends, logos, titles, scale bars, and more — everything Aina needs to finish her product in just a few clicks.</p>
-<p>✅ Goal
-Use a provided QGIS map template to visualize and export maps showing cyclone exposure results, including population, health, and education impacts.</p>
+<p>After all the hard work of analyzing data and styling layers, Aina is ready to <strong>share her results</strong>. But creating a professional-looking map from scratch every time would be slow and repetitive.</p>
+<p>To save time, she uses <strong>map templates (.qpt files)</strong> prepared by her team. These templates already contain the essential elements — map frames, legends, logos, titles, and scale bars. With them, Aina can turn her analysis into a <strong>clean, consistent map</strong> in just a few clicks.</p>
+<p>✅ <strong>Goal</strong><br />
+Apply a ready-made QGIS map template to quickly create and export maps that show cyclone impacts on population, health facilities, and schools.</p>
 <ol class="arabic simple">
 <li><p>Load the pre-made print layout template</p></li>
 </ol>
 <ul class="simple">
-<li><p>Locate the template <code class="docutils literal notranslate"><span class="pre">cyclone_impact_overview_map_template.qpt</span></code> in your project folder under:<br />
+<li><p>Locate the template <code class="docutils literal notranslate"><span class="pre">cyclone_impact_population_map_template.qpt</span></code> in your project folder under:<br />
 <code class="docutils literal notranslate"><span class="pre">Map_Templates/</span></code></p></li>
 <li><p>You can load the template <strong>by drag-and-drop</strong>:</p>
 <ul>
 <li><p>Open your QGIS project.</p></li>
-<li><p>Navigate to the Print Layout area in the browser panel.</p></li>
 <li><p>Drag the <code class="docutils literal notranslate"><span class="pre">.qpt</span></code> file directly into QGIS — a new layout will be created automatically.</p></li>
 </ul>
 </li>
 <li><p>Alternatively:</p>
 <ul>
 <li><p>Go to <code class="docutils literal notranslate"><span class="pre">Project</span></code> → <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Print</span> <span class="pre">Layout</span></code></p></li>
-<li><p>Enter a name (e.g. <code class="docutils literal notranslate"><span class="pre">Harald_2025_Overview</span></code>)</p></li>
+<li><p>Enter a name (e.g. <code class="docutils literal notranslate"><span class="pre">Harald_2025_population</span></code>)</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
 <li><p>In the layout, go to <code class="docutils literal notranslate"><span class="pre">Layout</span></code> → <code class="docutils literal notranslate"><span class="pre">Import</span> <span class="pre">from</span> <span class="pre">Template…</span></code></p></li>
 <li><p>Select the file <code class="docutils literal notranslate"><span class="pre">cyclone_impact_overview_map_template.qpt</span></code> and click <code class="docutils literal notranslate"><span class="pre">Open</span></code></p></li>
@@ -1846,6 +1966,7 @@ Use a provided QGIS map template to visualize and export maps showing cyclone ex
 </ul>
 </li>
 </ul>
+<p><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_load_mpa_template.mp4"></video></p>
 <ol class="arabic simple" start="3">
 <li><p>Update the attribute table of exposed districts</p></li>
 </ol>
@@ -1853,11 +1974,13 @@ Use a provided QGIS map template to visualize and export maps showing cyclone ex
 <li><p>In the <strong>Print Layout</strong>, click on the attribute table (right-hand side of the layout).</p></li>
 <li><p>In the <strong>Item Properties</strong> panel:</p>
 <ul>
-<li><p>Ensure the correct layer is selected (e.g. <code class="docutils literal notranslate"><span class="pre">Exposed_Districts</span></code>)</p></li>
+<li><p>Ensure the correct layer is selected <code class="docutils literal notranslate"><span class="pre">Harald_Exposed_population</span></code></p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Refresh</span> <span class="pre">Table</span> <span class="pre">Data</span></code></p></li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Attributes…</span></code> → ➕ Add:</p>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Attributes…</span></code> → in the upper part under <strong>Fields</strong> click on <code class="docutils literal notranslate"><span class="pre">Clear</span></code></p>
 <ul>
-<li><p><strong>Attribute</strong>: <code class="docutils literal notranslate"><span class="pre">ADM1_EN</span></code></p></li>
+<li><p>Then add the following layer by clicking on ➕ :</p></li>
+<li><p><strong>Attribute</strong>: <code class="docutils literal notranslate"><span class="pre">ADM1_EN</span></code>; <code class="docutils literal notranslate"><span class="pre">ADM2_EN</span></code>; <code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code>; <code class="docutils literal notranslate"><span class="pre">exposed_population_sum</span></code></p></li>
+<li><p>To sort the tabel content, under the <strong>Sorting</strong>  clicking on ➕ and add the column <code class="docutils literal notranslate"><span class="pre">AMD1_EN</span></code></p></li>
 <li><p><strong>Sort Order</strong>: Ascending</p></li>
 </ul>
 </li>
@@ -1865,29 +1988,64 @@ Use a provided QGIS map template to visualize and export maps showing cyclone ex
 </ul>
 </li>
 </ul>
+<p><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_map_makingadjust_AT.mp4"></video></p>
+<div class="admonition-warning-long-tables admonition">
+<p class="admonition-title">⚠️ Warning – Long Tables</p>
+<p>If the attribute table you want to include is <strong>longer than the map frame</strong>, part of it will be cut off in the exported map.<br />
+To fix this, open the table properties in the layout and <strong>reduce the font size</strong> until the full table fits.</p>
+</div>
 <ol class="arabic simple" start="5">
 <li><p>Adjust the legend</p></li>
 </ol>
-<ul class="simple">
+<ul>
 <li><p>In the layout, click on the <strong>Legend</strong> item.</p></li>
 <li><p>In the <strong>Item Properties</strong> panel:</p>
 <ul>
 <li><p>Uncheck <strong>Auto update</strong></p></li>
 <li><p>Scroll to <strong>Legend items</strong> and remove all entries (🗑️)</p></li>
 <li><p>Add the following relevant layers:</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">Relevant_Warehouses</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Cyclone_Area</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Districts</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Admin1_Impact_Overview_Map</span></code></p></li>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">example_Harald_2025_Track</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cyclone_harald_buffer</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Population</span></code></p></li>
 </ul>
 </li>
 <li><p>When selecting layers, check <strong>Only visible layers</strong></p></li>
-<li><p>Rename legend entries to match layout naming</p></li>
+<li><p>Rename legend entries to match layout naming</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">example_Harald_2025_Track</span></code> -&gt;</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Cyclone</span> <span class="n">Harald</span> <span class="n">Track</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">cyclone_harald_buffer</span></code>-&gt;</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Cyclone</span> <span class="n">Harald</span> <span class="mi">200</span> <span class="n">km</span> <span class="n">Buffer</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Population</span></code>-&gt;</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Number</span> <span class="n">of</span> <span class="n">exposed</span> <span class="n">peopel</span>
+</pre></div>
+</div>
+</li>
 </ul>
 </li>
 </ul>
+<p><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_adjust_map_making_Legend.mp4"></video></p>
 <ol class="arabic simple" start="6">
+<li><p><strong>Update Logos and Icons</strong></p></li>
+</ol>
+<ul class="simple">
+<li><p>The logos that need to be added to the map are represented by the red <strong>X</strong>.</p></li>
+<li><p>Click on the image in the <strong>Item List</strong>.</p></li>
+<li><p>Click on the three dots <img alt="" src="../../_images/Three_points.png" /> next to the file path.</p></li>
+<li><p>Browse to the folder <code class="docutils literal notranslate"><span class="pre">logos_pictures</span></code> and select the correct logo file.</p></li>
+</ul>
+<p><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_map_making_update_logos.mp4"></video></p>
+<ol class="arabic simple" start="7">
 <li><p>Review and update layout text elements</p></li>
 </ol>
 <ul class="simple">
@@ -1900,6 +2058,7 @@ Use a provided QGIS map template to visualize and export maps showing cyclone ex
 </li>
 <li><p>Adjust font size or alignment if necessary</p></li>
 </ul>
+<p><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_mak_making_adjust_title.mp4"></video></p>
 <section id="final-checklist">
 <h3>✅ Final Checklist<a class="headerlink" href="#final-checklist" title="Permalink to this heading">#</a></h3>
 <table class="table">
@@ -1934,10 +2093,10 @@ Your final output should look like this after styling the layer<div class="sd-su
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">The map now clearly displays the exposed population within the affected districts, along with the locations of relevant warehouses. The original storm track line — used as input data — is highlighted, as well as the buffered impact area, which serves as a proxy for identifying exposed districts.</p>
+<p class="sd-card-text">The map now clearly displays the exposed population within the affected districts The original storm track line — used as input data — is highlighted, as well as the buffered impact area, which serves as a proxy for identifying exposed districts.</p>
 <p class="sd-card-text">On the right-hand side of the map, a list shows all exposed districts, including data on total population and exposed population. The districts (Admin 2) are organized under their corresponding regions (Admin 1).</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/MAD_Trigger_Impact_Population_Map.png"><img alt="../../_images/MAD_Trigger_Impact_Population_Map.png" src="../../_images/MAD_Trigger_Impact_Population_Map.png" style="width: 1000px;" /></a>
+<a class="reference internal image-reference" href="../../_images/MAD_Trigger_Impact_Population_Map_example.png"><img alt="../../_images/MAD_Trigger_Impact_Population_Map_example.png" src="../../_images/MAD_Trigger_Impact_Population_Map_example.png" style="width: 1000px;" /></a>
 </figure>
 </div>
 </details></section>
@@ -1964,42 +2123,73 @@ Contains the <strong>total population per district</strong> and the <strong>expo
 <ol class="arabic simple">
 <li><p>Open your model</p></li>
 </ol>
-<ul class="simple">
-<li><p>Open <code class="docutils literal notranslate"><span class="pre">Estimate_Exposed_Population_Health_Education.model3</span></code></p></li>
-<li><p>Save a backup as:<br />
-<code class="docutils literal notranslate"><span class="pre">Estimate_Exposed_Population_Health_Education_Export.model3</span></code></p></li>
+<ul>
+<li><p>Open <code class="docutils literal notranslate"><span class="pre">Estimate_Exposed_Population_Health_Education</span></code></p></li>
+<li><p>Save a new version as:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Estimate_Exposed_Population_Health_Education_Spreadsheet_Export</span>
+</pre></div>
+</div>
+</li>
 </ul>
 <ol class="arabic simple" start="2">
 <li><p>Join Health and Education data into one layer</p></li>
 </ol>
-<ul class="simple">
-<li><p>In the <strong>Algorithms</strong>, search for <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">Attributes</span> <span class="pre">by</span> <span class="pre">Field</span> <span class="pre">Value</span></code>.</p></li>
-<li><p>Configure the algorithm as follows:</p>
 <ul>
-<li><p><strong>Input Layer</strong>: <code class="docutils literal notranslate"><span class="pre">admin2_health_affected_pct</span></code> (select from <strong>Algorithm Output</strong>)</p></li>
-<li><p><strong>Input Layer 2</strong>: <code class="docutils literal notranslate"><span class="pre">admin2_education_affected_pct</span></code> (select from <strong>Algorithm Output</strong>)</p></li>
-<li><p><strong>Table field</strong>: <code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code></p></li>
-<li><p><strong>Table field 2</strong>: <code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code></p></li>
+<li><p>In the <strong>Algorithms</strong>, search for <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">Attributes</span> <span class="pre">by</span> <span class="pre">Field</span> <span class="pre">Value</span></code>.</p></li>
+<li><p>Add a description: <code class="docutils literal notranslate"><span class="pre">Joindre</span> <span class="pre">santé</span> <span class="pre">et</span> <span class="pre">éducation</span> <span class="pre">dans</span> <span class="pre">une</span> <span class="pre">seule</span> <span class="pre">couche</span> <span class="pre">par</span> <span class="pre">ADM2</span></code></p></li>
+<li><p>Configure the algorithm as follows:</p>
+<ul class="simple">
+<li><p><strong>Input Layer</strong>: <code class="docutils literal notranslate"><span class="pre">admin2_health_affected</span></code> (select from <strong>Algorithm Output</strong>)</p></li>
+<li><p><strong>Input Layer 2</strong>: <code class="docutils literal notranslate"><span class="pre">admin2_education_affected</span></code> (select from <strong>Algorithm Output</strong>)</p></li>
+<li><p><strong>Table field</strong>:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ADM2_PCODE</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>Table field 2</strong>:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ADM2_PCODE</span>
+</pre></div>
+</div>
+<ul class="simple">
 <li><p><strong>Layer 2 fields to copy</strong>: Leave empty (all fields will be copied)</p></li>
 <li><p><strong>Join type</strong>: Take attributes of the first matching feature only (one-to-one)</p></li>
 <li><p>Leave output as <strong>Model Output</strong></p></li>
 </ul>
 </li>
 </ul>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_join_affacted_pop.PNG"><img alt="../../_images/fr_MDG_AA_model_join_affacted_pop.PNG" src="../../_images/fr_MDG_AA_model_join_affacted_pop.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Configuration de l’opération : joindre les données de santé et d’éducation par le champ <code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code> afin de combiner les résultats dans une seule couche.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <ol class="arabic simple" start="3">
 <li><p>Join the result with the population data
 Now join the result of the previous step (health + education) to the <strong>exposed population</strong> data.</p></li>
 </ol>
 <ul>
 <li><p>Add a second <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">Attributes</span> <span class="pre">by</span> <span class="pre">Field</span> <span class="pre">Value</span></code> algorithm to the model</p></li>
+<li><p>Add a description: <code class="docutils literal notranslate"><span class="pre">Joindre</span> <span class="pre">les</span> <span class="pre">données</span> <span class="pre">de</span> <span class="pre">population</span> <span class="pre">avec</span> <span class="pre">les</span> <span class="pre">indicateurs</span> <span class="pre">santé</span> <span class="pre">et</span> <span class="pre">éducation</span></code></p></li>
 <li><p>Configure the algorithm as follows:</p>
-<ul>
+<ul class="simple">
 <li><p><strong>Input Layer</strong>: <code class="docutils literal notranslate"><span class="pre">exposed_population</span></code> (select from <strong>Algorithm Output</strong> of the Zonal Statistics step)</p></li>
 <li><p><strong>Input Layer 2</strong>: Output from Step 2 (health + education)</p></li>
-<li><p><strong>Table field</strong>: <code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code></p></li>
-<li><p><strong>Table field 2</strong>: <code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code></p></li>
+<li><p><strong>Table field</strong>:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ADM2_PCODE</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>Table field 2</strong>:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ADM2_PCODE</span>
+</pre></div>
+</div>
+<ul>
 <li><p><strong>Layer 2 fields to copy</strong>: <em>(Enter the following field names exactly as shown — comma-separated, no spaces)</em></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">count_health_total</span><span class="p">,</span><span class="n">sum_exposed_healthsites_POI</span><span class="p">,</span><span class="n">health_affected_precentage</span><span class="p">,</span><span class="n">count_education_total</span><span class="p">,</span><span class="n">sum_exposed_education_POI</span><span class="p">,</span><span class="n">pct_education_affected</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">count_health_total</span><span class="p">;</span><span class="n">sum_exposed_health</span><span class="p">;</span><span class="n">pct_exposed_health</span><span class="p">;</span><span class="n">count_education_total</span><span class="p">;</span><span class="n">sum_exposed_education</span><span class="p">;</span><span class="n">pct_exposed_education</span>
 </pre></div>
 </div>
 </li>
@@ -2008,6 +2198,12 @@ Now join the result of the previous step (health + education) to the <strong>exp
 </ul>
 </li>
 </ul>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_join_affacted_pop_HS_ES.PNG"><img alt="../../_images/fr_MDG_AA_model_join_affacted_pop_HS_ES.PNG" src="../../_images/fr_MDG_AA_model_join_affacted_pop_HS_ES.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Configuration de l’opération : joindre les données de population avec les indicateurs de santé et d’éducation.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Where to find the column names<br />
@@ -2025,11 +2221,12 @@ Always copy field names <strong>directly from the attribute table</strong> to av
 </ol>
 <ul>
 <li><p>In the <strong>Processing Toolbox</strong>, search for <code class="docutils literal notranslate"><span class="pre">Export</span> <span class="pre">to</span> <span class="pre">spreadsheet</span></code> and double-click to open.</p></li>
+<li><p>Add a description: <code class="docutils literal notranslate"><span class="pre">Exporter</span> <span class="pre">les</span> <span class="pre">données</span> <span class="pre">de</span> <span class="pre">population,</span> <span class="pre">d'éducation</span> <span class="pre">et</span> <span class="pre">de</span> <span class="pre">santé</span> <span class="pre">dans</span> <span class="pre">un</span> <span class="pre">seul</span> <span class="pre">tableau</span></code></p></li>
 <li><p>Configure the tool as follows:</p>
 <ul>
 <li><p><strong>Input Layer</strong>: Select the output of Step 3 from <strong>Algorithm Output</strong></p></li>
 <li><p><strong>Destination spreadsheet</strong>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">exposed_indicators_spreadsheet</span><span class="o">.</span><span class="n">xlsx</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">exposure_indicators_spreadsheet</span>
 </pre></div>
 </div>
 </li>
@@ -2038,7 +2235,101 @@ Once you run the model, this step will automatically generate a spreadsheet with
 </ul>
 </li>
 </ul>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_export_as_table.PNG"><img alt="../../_images/fr_MDG_AA_model_export_as_table.PNG" src="../../_images/fr_MDG_AA_model_export_as_table.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Exporter tous les indicateurs (population, santé, éducation) vers un tableau unique au format tableur.</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic" start="5">
+<li><p><strong>Validate and Save Your Extended Model</strong></p>
+<ul class="simple">
+<li><p>Click the ✔️ <strong>Validate Model</strong> button to check for errors.</p></li>
+<li><p>Save again to:<br />
+<strong><code class="docutils literal notranslate"><span class="pre">Estimate_Exposed_Population_Health_Education.model3</span></code></strong></p></li>
+</ul>
+</li>
+<li><p><strong>Run the model</strong></p>
+<ul>
+<li><p>Click the ▶️ <strong>Run</strong> button in the top-right corner of the Graphical Modeler window.</p></li>
+<li><p><strong>Input:</strong></p>
+<ul class="simple">
+<li><p>Click on the three dots for each input dataset and select the correct input:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Track</span></code> → select the GeoJSON of the storm path (e.g. <code class="docutils literal notranslate"><span class="pre">Harald_2025_Track.geojson</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Population</span> <span class="pre">Raster</span></code> → select the WorldPop raster file</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Admin</span> <span class="pre">Boundaries</span></code> → select the Admin 2 layer (e.g. <code class="docutils literal notranslate"><span class="pre">MDG_adm2.gpkg</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Health</span> <span class="pre">Facilities</span></code> → select the point dataset for health sites</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Education</span> <span class="pre">Facilities</span></code> → select the point dataset for schools</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Output:</strong></p>
+<ul>
+<li><p>Save all output layers in the output folder and use the names below.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">admin2_health_affacted</span></code> -&gt;</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">admin2_health_affected</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">admin2_education_affected</span></code> -&gt;</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">admin2_education_affected</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">cyclone_harald_buffer</span></code> -&gt;</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cyclone_harald_buffer</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">exposed_population_sum</span></code> -&gt;</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">admin2_harald_Exposed_Population</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">exposure_indicators_spreadsheet</span></code> -&gt;</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">exposure_indicators_harald</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p>Click <strong>Run</strong> to execute the full model.</p></li>
+</ul>
+</li>
+</ol>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-14" name="sd-tab-set-5" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-14">
+Graphic Modler</label><div class="sd-tab-content docutils">
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/fig"><img alt="../../_images/fig" src="../../_images/fig" style="width: 600px;" /></a>
+</figure>
+</div>
+<input id="sd-tab-item-15" name="sd-tab-set-5" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-15">
+Run Model Configuration</label><div class="sd-tab-content docutils">
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/fig"><img alt="../../_images/fig" src="../../_images/fig" style="width: 600px;" /></a>
+</figure>
+</div>
+<input id="sd-tab-item-16" name="sd-tab-set-5" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-16">
+Model Output</label><div class="sd-tab-content docutils">
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/fig"><img alt="../../_images/fig" src="../../_images/fig" style="width: 600px;" /></a>
+</figure>
+</div>
+</div>
 </section>
+<hr class="docutils" />
 <section id="task-7-reachability-of-health-posts-from-crm-warehouses">
 <h2>Task 7: Reachability of health Posts from CRM Warehouses<a class="headerlink" href="#task-7-reachability-of-health-posts-from-crm-warehouses" title="Permalink to this heading">#</a></h2>
 <p>When a cyclone is forecast to make landfall, Aina works with the logistics and health teams to decide <strong>where to send prepositioned medical kits</strong>. However, not all CRM warehouses stock the needed items — only three do.</p>
@@ -2259,8 +2550,13 @@ or right-click the layer and select <code class="docutils literal notranslate"><
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#donnees">Données</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tache-1-estimation-de-la-population-exposee-approche-manuelle-daina">Tâche 1 : Estimation de la population exposée – Approche manuelle d’Aina</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tache-2-automatisation-de-lestimation-de-la-population-exposee-le-modele-daina">Tâche 2: Automatisation de l’estimation de la population exposée – Le modèle d’Aina</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-identifying-affected-health-facilities-and-schools-aina-adds-more-layers">Task 3: Identifying Affected Health Facilities and Schools – Aina Adds More Layers</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-visualizing-cyclone-impact-results-aina-styles-her-maps">Task 4: Visualizing Cyclone Impact Results – Aina Styles Her Maps</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tache-3-identification-des-etablissements-de-sante-et-d-education-impactes-aina-ajoute-des-couches-supplementaires">Tâche 3: Identification des établissements de santé et d’éducation impactés – Aina ajoute des couches supplémentaires</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tache-4-visualiser-les-resultats-de-limpact-du-cyclone-aina-applique-des-styles-a-ses-cartes">Tâche 4 : Visualiser les résultats de l’impact du cyclone – Aina applique des styles à ses cartes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#charger-les-couches-necessaires-si-ce-nest-pas-deja-fait">1. <strong>Charger les couches nécessaires (si ce n’est pas déjà fait)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#appliquer-des-fichiers-de-style-predefinis">2. <strong>Appliquer des fichiers de style prédéfinis</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-visualizing-cyclone-impact-results-aina-styles-her-layers">Task 4: Visualizing Cyclone Impact Results – Aina Styles Her Layers</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-required-layers-if-not-already-loaded">1. <strong>Load Required Layers (if not already loaded)</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#apply-predefined-style-files">2. <strong>Apply Predefined Style Files</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#style-percentage-layers-manually">3. <strong>Style Percentage Layers Manually</strong></a></li>
