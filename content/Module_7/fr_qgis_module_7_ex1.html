@@ -577,15 +577,15 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optionnel-importer-les-styles-dans-votre-bibliotheque-qgis">5. <em>(Optionnel)</em> Importer les styles dans votre bibliothèque QGIS</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-5-quick-map-creation-aina-uses-map-templates">Task 5: Quick Map Creation – Aina Uses Map Templates</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#final-checklist">✅ Final Checklist</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tache-5-creation-rapide-de-cartes-aina-utilise-des-modeles-de-carte">Tâche 5 : Création rapide de cartes – Aina utilise des modèles de carte</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#liste-de-verification-finale">✅ Liste de vérification finale</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-6-exporting-model-results-for-the-operations-team">Task 6: Exporting Model Results for the Operations Team</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-7-reachability-of-health-posts-from-crm-warehouses">Task 7: Reachability of health Posts from CRM Warehouses</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#filter-health-posts-from-the-national-health-facility-dataset">1. Filter Health Posts from the National Health Facility Dataset</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-isochrone-layers-for-the-three-crm-warehouses">2. Load Isochrone Layers for the Three CRM Warehouses</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-health-post-reachability-from-crm-warehouses">3. Visualizing Health Post Reachability from CRM Warehouses</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tache-6-exporter-les-resultats-du-modele-pour-lequipe-des-operations">Tâche 6 : Exporter les résultats du modèle pour l’équipe des opérations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tache-7-accessibilite-des-postes-de-sante-depuis-les-entrepots-crm">Tâche 7 : Accessibilité des postes de santé depuis les entrepôts CRM</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#filtrer-les-postes-de-sante-depuis-le-jeu-de-donnees-national-des-etablissements-de-sante">1. Filtrer les postes de santé depuis le jeu de données national des établissements de santé</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#charger-les-couches-isochrones-pour-les-trois-entrepots-crm">2. Charger les couches isochrones pour les trois entrepôts CRM</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualiser-laccessibilite-des-postes-de-sante-depuis-les-entrepots-crm">3. Visualiser l’accessibilité des postes de santé depuis les entrepôts CRM</a></li>
 </ul>
 </li>
 </ul>
@@ -1902,108 +1902,111 @@ Cela permet de visualiser la gravité par district en utilisant des catégories 
 </section>
 </section>
 <hr class="docutils" />
-<section id="task-5-quick-map-creation-aina-uses-map-templates">
-<h2>Task 5: Quick Map Creation – Aina Uses Map Templates<a class="headerlink" href="#task-5-quick-map-creation-aina-uses-map-templates" title="Permalink to this heading">#</a></h2>
-<p>After all the hard work of analyzing data and styling layers, Aina is ready to <strong>share her results</strong>. But creating a professional-looking map from scratch every time would be slow and repetitive.</p>
-<p>To save time, she uses <strong>map templates (.qpt files)</strong> prepared by her team. These templates already contain the essential elements — map frames, legends, logos, titles, and scale bars. With them, Aina can turn her analysis into a <strong>clean, consistent map</strong> in just a few clicks.</p>
-<p>✅ <strong>Goal</strong><br />
-Apply a ready-made QGIS map template to quickly create and export maps that show cyclone impacts on population, health facilities, and schools.</p>
+<section id="tache-5-creation-rapide-de-cartes-aina-utilise-des-modeles-de-carte">
+<h2>Tâche 5 : Création rapide de cartes – Aina utilise des modèles de carte<a class="headerlink" href="#tache-5-creation-rapide-de-cartes-aina-utilise-des-modeles-de-carte" title="Permalink to this heading">#</a></h2>
+<p>Après tout le travail d’analyse et de stylisation, Aina est prête à <strong>partager ses résultats</strong>. Mais créer une
+carte professionnelle à partir de zéro à chaque fois serait long et répétitif.</p>
+<p>Pour gagner du temps, elle utilise des <strong>modèles de carte (.qpt)</strong> préparés par son équipe. Ces modèles
+contiennent déjà les éléments essentiels — cadres cartographiques, légendes, logos, titres et barres d’échelle.
+Grâce à eux, Aina peut transformer son analyse en une <strong>carte claire et cohérente</strong> en seulement quelques clics.</p>
+<p>✅ <strong>Objectif</strong><br />
+Appliquer un modèle de carte QGIS prêt à l’emploi pour créer et exporter rapidement des cartes montrant les impacts du cyclone sur la population, les établissements de santé et les écoles.</p>
 <ol class="arabic simple">
-<li><p>Load the pre-made print layout template</p></li>
+<li><p>Charger le modèle d’impression préconçu</p></li>
 </ol>
 <ul class="simple">
-<li><p>Locate the template <code class="docutils literal notranslate"><span class="pre">cyclone_impact_population_map_template.qpt</span></code> in your project folder under:<br />
+<li><p>Localisez le modèle <code class="docutils literal notranslate"><span class="pre">cyclone_impact_population_map_template.qpt</span></code> dans votre dossier projet sous :<br />
 <code class="docutils literal notranslate"><span class="pre">Map_Templates/</span></code></p></li>
-<li><p>You can load the template <strong>by drag-and-drop</strong>:</p>
+<li><p>Vous pouvez charger le modèle <strong>par glisser-déposer</strong> :</p>
 <ul>
-<li><p>Open your QGIS project.</p></li>
-<li><p>Drag the <code class="docutils literal notranslate"><span class="pre">.qpt</span></code> file directly into QGIS — a new layout will be created automatically.</p></li>
+<li><p>Ouvrez votre projet QGIS.</p></li>
+<li><p>Glissez directement le fichier <code class="docutils literal notranslate"><span class="pre">.qpt</span></code> dans QGIS — une nouvelle mise en page sera automatiquement créée.</p></li>
 </ul>
 </li>
-<li><p>Alternatively:</p>
+<li><p>Ou bien :</p>
 <ul>
-<li><p>Go to <code class="docutils literal notranslate"><span class="pre">Project</span></code> → <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Print</span> <span class="pre">Layout</span></code></p></li>
-<li><p>Enter a name (e.g. <code class="docutils literal notranslate"><span class="pre">Harald_2025_population</span></code>)</p></li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
-<li><p>In the layout, go to <code class="docutils literal notranslate"><span class="pre">Layout</span></code> → <code class="docutils literal notranslate"><span class="pre">Import</span> <span class="pre">from</span> <span class="pre">Template…</span></code></p></li>
-<li><p>Select the file <code class="docutils literal notranslate"><span class="pre">cyclone_impact_overview_map_template.qpt</span></code> and click <code class="docutils literal notranslate"><span class="pre">Open</span></code></p></li>
+<li><p>Allez dans <code class="docutils literal notranslate"><span class="pre">Projet</span></code> → <code class="docutils literal notranslate"><span class="pre">Nouvelle</span> <span class="pre">mise</span> <span class="pre">en</span> <span class="pre">page</span></code></p></li>
+<li><p>Entrez un nom (par ex. <code class="docutils literal notranslate"><span class="pre">Harald_2025_population</span></code>)</p></li>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
+<li><p>Dans la mise en page, allez dans <code class="docutils literal notranslate"><span class="pre">Mise</span> <span class="pre">en</span> <span class="pre">page</span></code> → <code class="docutils literal notranslate"><span class="pre">Importer</span> <span class="pre">depuis</span> <span class="pre">un</span> <span class="pre">modèle…</span></code></p></li>
+<li><p>Sélectionnez le fichier <code class="docutils literal notranslate"><span class="pre">cyclone_impact_overview_map_template.qpt</span></code> et cliquez sur <code class="docutils literal notranslate"><span class="pre">Ouvrir</span></code></p></li>
 </ul>
 </li>
 </ul>
 <ol class="arabic simple" start="2">
-<li><p>Check and set page size</p></li>
+<li><p>Vérifiez et définissez le format de la page</p></li>
 </ol>
 <ul class="simple">
-<li><p>Right-click anywhere on the white canvas and choose <code class="docutils literal notranslate"><span class="pre">Page</span> <span class="pre">Properties</span></code>.</p></li>
-<li><p>On the right-side panel, ensure the following:</p>
+<li><p>Clic droit n’importe où sur le canevas blanc et choisissez <code class="docutils literal notranslate"><span class="pre">Propriétés</span> <span class="pre">de</span> <span class="pre">la</span> <span class="pre">page</span></code>.</p></li>
+<li><p>Dans le panneau de droite, assurez-vous de :</p>
 <ul>
-<li><p><strong>Page Size</strong>: A3</p></li>
-<li><p><strong>Orientation</strong>: Landscape</p></li>
+<li><p><strong>Taille de la page</strong> : A3</p></li>
+<li><p><strong>Orientation</strong> : Paysage</p></li>
 </ul>
 </li>
 </ul>
 <p><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_load_mpa_template.mp4"></video></p>
 <ol class="arabic simple" start="3">
-<li><p>Update the attribute table of exposed districts</p></li>
+<li><p>Mettre à jour le tableau attributaire des districts exposés</p></li>
 </ol>
 <ul class="simple">
-<li><p>In the <strong>Print Layout</strong>, click on the attribute table (right-hand side of the layout).</p></li>
-<li><p>In the <strong>Item Properties</strong> panel:</p>
+<li><p>Dans la <strong>Mise en page</strong>, cliquez sur le tableau attributaire (à droite dans la mise en page).</p></li>
+<li><p>Dans le panneau <strong>Propriétés de l’élément</strong> :</p>
 <ul>
-<li><p>Ensure the correct layer is selected <code class="docutils literal notranslate"><span class="pre">Harald_Exposed_population</span></code></p></li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Refresh</span> <span class="pre">Table</span> <span class="pre">Data</span></code></p></li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Attributes…</span></code> → in the upper part under <strong>Fields</strong> click on <code class="docutils literal notranslate"><span class="pre">Clear</span></code></p>
+<li><p>Assurez-vous que la bonne couche est sélectionnée : <code class="docutils literal notranslate"><span class="pre">Harald_Exposed_population</span></code></p></li>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">Actualiser</span> <span class="pre">les</span> <span class="pre">données</span> <span class="pre">du</span> <span class="pre">tableau</span></code></p></li>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">Attributs…</span></code> → dans la partie supérieure sous <strong>Champs</strong>, cliquez sur <code class="docutils literal notranslate"><span class="pre">Effacer</span></code></p>
 <ul>
-<li><p>Then add the following layer by clicking on ➕ :</p></li>
-<li><p><strong>Attribute</strong>: <code class="docutils literal notranslate"><span class="pre">ADM1_EN</span></code>; <code class="docutils literal notranslate"><span class="pre">ADM2_EN</span></code>; <code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code>; <code class="docutils literal notranslate"><span class="pre">exposed_population_sum</span></code></p></li>
-<li><p>To sort the tabel content, under the <strong>Sorting</strong>  clicking on ➕ and add the column <code class="docutils literal notranslate"><span class="pre">AMD1_EN</span></code></p></li>
-<li><p><strong>Sort Order</strong>: Ascending</p></li>
+<li><p>Puis ajoutez les champs suivants avec ➕ :</p></li>
+<li><p><strong>Champs</strong> : <code class="docutils literal notranslate"><span class="pre">ADM1_EN</span></code>; <code class="docutils literal notranslate"><span class="pre">ADM2_EN</span></code>; <code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code>; <code class="docutils literal notranslate"><span class="pre">exposed_population_sum</span></code></p></li>
+<li><p>Pour trier le contenu du tableau, sous l’onglet <strong>Trier</strong>, cliquez sur ➕ et ajoutez la colonne <code class="docutils literal notranslate"><span class="pre">AMD1_EN</span></code></p></li>
+<li><p><strong>Ordre de tri</strong> : Ascendant</p></li>
 </ul>
 </li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
 </ul>
 </li>
 </ul>
 <p><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_map_makingadjust_AT.mp4"></video></p>
-<div class="admonition-warning-long-tables admonition">
-<p class="admonition-title">⚠️ Warning – Long Tables</p>
-<p>If the attribute table you want to include is <strong>longer than the map frame</strong>, part of it will be cut off in the exported map.<br />
-To fix this, open the table properties in the layout and <strong>reduce the font size</strong> until the full table fits.</p>
+<div class="admonition-avertissement-tableaux-longs admonition">
+<p class="admonition-title">⚠️ Avertissement – Tableaux longs</p>
+<p>Si le tableau attributaire que vous souhaitez inclure est <strong>plus long que le cadre cartographique</strong>, une partie sera coupée dans la carte exportée.<br />
+Pour corriger cela, ouvrez les propriétés du tableau dans la mise en page et <strong>réduisez la taille de la police</strong> jusqu’à ce que le tableau entier tienne.</p>
 </div>
 <ol class="arabic simple" start="5">
-<li><p>Adjust the legend</p></li>
+<li><p>Ajuster la légende</p></li>
 </ol>
 <ul>
-<li><p>In the layout, click on the <strong>Legend</strong> item.</p></li>
-<li><p>In the <strong>Item Properties</strong> panel:</p>
+<li><p>Dans la mise en page, cliquez sur l’élément <strong>Légende</strong>.</p></li>
+<li><p>Dans le panneau <strong>Propriétés de l’élément</strong> :</p>
 <ul>
-<li><p>Uncheck <strong>Auto update</strong></p></li>
-<li><p>Scroll to <strong>Legend items</strong> and remove all entries (🗑️)</p></li>
-<li><p>Add the following relevant layers:</p>
+<li><p>Décochez <strong>Mise à jour automatique</strong></p></li>
+<li><p>Faites défiler jusqu’à <strong>Éléments de la légende</strong> et supprimez toutes les entrées (🗑️)</p></li>
+<li><p>Ajoutez les couches pertinentes suivantes :</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">example_Harald_2025_Track</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">cyclone_harald_buffer</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Population</span></code></p></li>
 </ul>
 </li>
-<li><p>When selecting layers, check <strong>Only visible layers</strong></p></li>
-<li><p>Rename legend entries to match layout naming</p>
+<li><p>Lors de la sélection des couches, cochez <strong>Uniquement les couches visibles</strong></p></li>
+<li><p>Renommez les entrées de légende pour correspondre aux noms sur la carte :</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">example_Harald_2025_Track</span></code> -&gt;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">example_Harald_2025_Track</span></code> →</p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Cyclone</span> <span class="n">Harald</span> <span class="n">Track</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Trace</span> <span class="n">du</span> <span class="n">cyclone</span> <span class="n">Harald</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">cyclone_harald_buffer</span></code>-&gt;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cyclone_harald_buffer</span></code> →</p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Cyclone</span> <span class="n">Harald</span> <span class="mi">200</span> <span class="n">km</span> <span class="n">Buffer</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Zone tampon de 200 km – Cyclone Harald
 </pre></div>
 </div>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Population</span></code>-&gt;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Population</span></code> →</p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Number</span> <span class="n">of</span> <span class="n">exposed</span> <span class="n">peopel</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Nombre</span> <span class="n">de</span> <span class="n">personnes</span> <span class="n">exposées</span>
 </pre></div>
 </div>
 </li>
@@ -2012,51 +2015,51 @@ To fix this, open the table properties in the layout and <strong>reduce the font
 </ul>
 <p><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_adjust_map_making_Legend.mp4"></video></p>
 <ol class="arabic simple" start="6">
-<li><p><strong>Update Logos and Icons</strong></p></li>
+<li><p><strong>Mettre à jour les logos et icônes</strong></p></li>
 </ol>
 <ul class="simple">
-<li><p>The logos that need to be added to the map are represented by the red <strong>X</strong>.</p></li>
-<li><p>Click on the image in the <strong>Item List</strong>.</p></li>
-<li><p>Click on the three dots <img alt="" src="../../_images/Three_points.png" /> next to the file path.</p></li>
-<li><p>Browse to the folder <code class="docutils literal notranslate"><span class="pre">logos_pictures</span></code> and select the correct logo file.</p></li>
+<li><p>Les logos à insérer sont représentés par des <strong>X rouges</strong>.</p></li>
+<li><p>Cliquez sur l’image dans la <strong>Liste des éléments</strong>.</p></li>
+<li><p>Cliquez sur les trois points <img alt="" src="../../_images/Three_points.png" /> à côté du chemin de fichier.</p></li>
+<li><p>Parcourez le dossier <code class="docutils literal notranslate"><span class="pre">logos_pictures</span></code> et sélectionnez le bon logo.</p></li>
 </ul>
 <p><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_map_making_update_logos.mp4"></video></p>
 <ol class="arabic simple" start="7">
-<li><p>Review and update layout text elements</p></li>
+<li><p>Revoir et mettre à jour les textes de la mise en page</p></li>
 </ol>
 <ul class="simple">
-<li><p>Make sure all text elements are up to date, especially:</p>
+<li><p>Vérifiez que tous les textes sont à jour, en particulier :</p>
 <ul>
-<li><p><strong>Map title</strong></p></li>
-<li><p><strong>Cyclone name and date</strong></p></li>
-<li><p><strong>Author/Organization</strong> (optional)</p></li>
+<li><p><strong>Titre de la carte</strong></p></li>
+<li><p><strong>Nom et date du cyclone</strong></p></li>
+<li><p><strong>Auteur/Organisation</strong> (facultatif)</p></li>
 </ul>
 </li>
-<li><p>Adjust font size or alignment if necessary</p></li>
+<li><p>Ajustez la taille de la police ou l’alignement si nécessaire</p></li>
 </ul>
 <p><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_mak_making_adjust_title.mp4"></video></p>
-<section id="final-checklist">
-<h3>✅ Final Checklist<a class="headerlink" href="#final-checklist" title="Permalink to this heading">#</a></h3>
+<section id="liste-de-verification-finale">
+<h3>✅ Liste de vérification finale<a class="headerlink" href="#liste-de-verification-finale" title="Permalink to this heading">#</a></h3>
 <table class="table">
 <thead>
-<tr class="row-odd"><th class="head"><p>Task</p></th>
-<th class="head"><p>Done</p></th>
+<tr class="row-odd"><th class="head"><p>Tâche</p></th>
+<th class="head"><p>Fait</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Page set to A3 Landscape</p></td>
+<tr class="row-even"><td><p>Page définie en format A3 Paysage</p></td>
 <td><p>☐</p></td>
 </tr>
-<tr class="row-odd"><td><p>Only relevant layer group active</p></td>
+<tr class="row-odd"><td><p>Seul le groupe de couches pertinent est actif</p></td>
 <td><p>☐</p></td>
 </tr>
-<tr class="row-even"><td><p>Exposed districts attribute table updated</p></td>
+<tr class="row-even"><td><p>Tableau attributaire des districts exposés mis à jour</p></td>
 <td><p>☐</p></td>
 </tr>
-<tr class="row-odd"><td><p>Legend cleaned and renamed</p></td>
+<tr class="row-odd"><td><p>Légende nettoyée et renommée</p></td>
 <td><p>☐</p></td>
 </tr>
-<tr class="row-even"><td><p>All text elements updated</p></td>
+<tr class="row-even"><td><p>Tous les éléments de texte mis à jour</p></td>
 <td><p>☐</p></td>
 </tr>
 </tbody>
@@ -2064,74 +2067,74 @@ To fix this, open the table properties in the layout and <strong>reduce the font
 <hr class="docutils" />
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Your final output should look like this after styling the layer<div class="sd-summary-down docutils">
+Le rendu final devrait ressembler à ceci après le stylage<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">The map now clearly displays the exposed population within the affected districts The original storm track line — used as input data — is highlighted, as well as the buffered impact area, which serves as a proxy for identifying exposed districts.</p>
-<p class="sd-card-text">On the right-hand side of the map, a list shows all exposed districts, including data on total population and exposed population. The districts (Admin 2) are organized under their corresponding regions (Admin 1).</p>
+<p class="sd-card-text">La carte montre désormais clairement la population exposée dans les districts affectés. La ligne de trajectoire du cyclone — utilisée comme donnée d’entrée — est mise en évidence, ainsi que la zone tampon, qui sert de proxy pour identifier les districts exposés.</p>
+<p class="sd-card-text">Sur le côté droit de la carte, un tableau présente tous les districts exposés, avec les données sur la population totale et la population exposée. Les districts (Admin 2) sont regroupés sous leurs régions correspondantes (Admin 1).</p>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_Impact_Population_Map_example.png"><img alt="../../_images/MAD_Trigger_Impact_Population_Map_example.png" src="../../_images/MAD_Trigger_Impact_Population_Map_example.png" style="width: 1000px;" /></a>
 </figure>
 </div>
 </details></section>
 </section>
-<section id="task-6-exporting-model-results-for-the-operations-team">
-<h2>Task 6: Exporting Model Results for the Operations Team<a class="headerlink" href="#task-6-exporting-model-results-for-the-operations-team" title="Permalink to this heading">#</a></h2>
-<p><strong>Background – Aina Supports Decision Makers</strong></p>
-<p>After producing maps and visuals, Aina often gets requests from the operations team:</p>
+<section id="tache-6-exporter-les-resultats-du-modele-pour-lequipe-des-operations">
+<h2>Tâche 6 : Exporter les résultats du modèle pour l’équipe des opérations<a class="headerlink" href="#tache-6-exporter-les-resultats-du-modele-pour-lequipe-des-operations" title="Permalink to this heading">#</a></h2>
+<p><strong>Contexte – Aina soutient les décideurs</strong></p>
+<p>Après avoir produit des cartes et des visualisations, Aina reçoit souvent des demandes de l’équipe des opérations :</p>
 <blockquote>
-<div><p><em>“Can you send us the data in table format?”</em></p>
+<div><p><em>« Peux-tu nous envoyer les données au format tableau ? »</em></p>
 </div></blockquote>
-<p>Instead of exporting these tables manually each time, Aina wants to automate this step within her model — ensuring that every run of the model produces clear, ready-to-use data files.</p>
-<p>In this task, you’ll help Aina extend her existing model to export selected layers.</p>
-<p>We will join the following layers step by step:</p>
+<p>Plutôt que d’exporter manuellement ces tableaux à chaque fois, Aina souhaite automatiser cette étape dans son modèle — afin que chaque exécution produise des fichiers de données clairs et prêts à l’emploi.</p>
+<p>Dans cette tâche, vous aiderez Aina à étendre son modèle existant pour exporter certaines couches.</p>
+<p>Nous allons joindre les couches suivantes étape par étape :</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">admin2_health_affected_pct</span></code>:<br />
-Contains the <strong>total number of health facilities</strong>, the <strong>number of affected health facilities</strong>, and the <strong>percentage of affected health facilities</strong>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">admin2_education_affected_pct</span></code>:<br />
-Contains the <strong>total number of education facilities</strong>, the <strong>number of affected education facilities</strong>, and the <strong>percentage of affected education facilities</strong>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">exposed_population</span></code>:<br />
-Contains the <strong>total population per district</strong> and the <strong>exposed population</strong> from the zonal statistics step.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">admin2_health_affected_pct</span></code> :<br />
+Contient le <strong>nombre total d’établissements de santé</strong>, le <strong>nombre d’établissements affectés</strong> et le <strong>pourcentage d’établissements affectés</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">admin2_education_affected_pct</span></code> :<br />
+Contient le <strong>nombre total d’établissements scolaires</strong>, le <strong>nombre d’établissements scolaires affectés</strong> et le <strong>pourcentage d’établissements scolaires affectés</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">exposed_population</span></code> :<br />
+Contient la <strong>population totale par district</strong> ainsi que la <strong>population exposée</strong>, issue de l’étape des statistiques zonales.</p></li>
 </ul>
 <hr class="docutils" />
 <ol class="arabic simple">
-<li><p>Open your model</p></li>
+<li><p>Ouvrir votre modèle</p></li>
 </ol>
 <ul>
-<li><p>Open <code class="docutils literal notranslate"><span class="pre">Estimate_Exposed_Population_Health_Education</span></code></p></li>
-<li><p>Save a new version as:</p>
+<li><p>Ouvrir <code class="docutils literal notranslate"><span class="pre">Estimate_Exposed_Population_Health_Education</span></code></p></li>
+<li><p>Enregistrer une nouvelle version sous :</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Estimate_Exposed_Population_Health_Education_Spreadsheet_Export</span>
 </pre></div>
 </div>
 </li>
 </ul>
 <ol class="arabic simple" start="2">
-<li><p>Join Health and Education data into one layer</p></li>
+<li><p>Joindre les données de santé et d’éducation dans une seule couche</p></li>
 </ol>
 <ul>
-<li><p>In the <strong>Algorithms</strong>, search for <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">Attributes</span> <span class="pre">by</span> <span class="pre">Field</span> <span class="pre">Value</span></code>.</p></li>
-<li><p>Add a description: <code class="docutils literal notranslate"><span class="pre">Joindre</span> <span class="pre">santé</span> <span class="pre">et</span> <span class="pre">éducation</span> <span class="pre">dans</span> <span class="pre">une</span> <span class="pre">seule</span> <span class="pre">couche</span> <span class="pre">par</span> <span class="pre">ADM2</span></code></p></li>
-<li><p>Configure the algorithm as follows:</p>
+<li><p>Dans les <strong>Algorithmes</strong>, chercher <code class="docutils literal notranslate"><span class="pre">Joindre</span> <span class="pre">les</span> <span class="pre">attributs</span> <span class="pre">par</span> <span class="pre">valeur</span> <span class="pre">de</span> <span class="pre">champ</span></code> (eng.: <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">Attributes</span> <span class="pre">by</span> <span class="pre">Field</span> <span class="pre">Value</span></code>).</p></li>
+<li><p>Ajouter une description : <code class="docutils literal notranslate"><span class="pre">Joindre</span> <span class="pre">santé</span> <span class="pre">et</span> <span class="pre">éducation</span> <span class="pre">dans</span> <span class="pre">une</span> <span class="pre">seule</span> <span class="pre">couche</span> <span class="pre">par</span> <span class="pre">ADM2</span></code></p></li>
+<li><p>Configurer l’algorithme comme suit :</p></li>
+<li><p><strong>Couche source</strong> : <code class="docutils literal notranslate"><span class="pre">admin2_health_affected</span></code> (sélectionner depuis <strong>Sortie de l’algorithme</strong>)</p></li>
+<li><p><strong>Champ de la table</strong> :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ADM2_PCODE</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Couche en entrée 2</strong> : <code class="docutils literal notranslate"><span class="pre">admin2_education_affected</span></code> (sélectionner depuis <strong>Sortie de l’algorithme</strong>)</p>
 <ul class="simple">
-<li><p><strong>Input Layer</strong>: <code class="docutils literal notranslate"><span class="pre">admin2_health_affected</span></code> (select from <strong>Algorithm Output</strong>)</p></li>
-<li><p><strong>Input Layer 2</strong>: <code class="docutils literal notranslate"><span class="pre">admin2_education_affected</span></code> (select from <strong>Algorithm Output</strong>)</p></li>
-<li><p><strong>Table field</strong>:</p></li>
+<li><p><strong>Champ de la table 2</strong>:</p></li>
 </ul>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ADM2_PCODE</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p><strong>Table field 2</strong>:</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ADM2_PCODE</span>
-</pre></div>
-</div>
-<ul class="simple">
-<li><p><strong>Layer 2 fields to copy</strong>: Leave empty (all fields will be copied)</p></li>
+<li><p><strong>Couche 2 champs à copier</strong>: Laisser vide (tous les champs seront copiés)</p></li>
+<li><p><strong>Type de jointure</strong> : Prendre uniquement les attributs de la première entité correspondante (un-à-un)</p></li>
 <li><p><strong>Join type</strong>: Take attributes of the first matching feature only (one-to-one)</p></li>
-<li><p>Leave output as <strong>Model Output</strong></p></li>
+<li><p>Laisser la sortie comme <strong>Sortie du modèle</strong> (sans entrer un nom)</p></li>
 </ul>
 </li>
 </ul>
@@ -2142,35 +2145,33 @@ Contains the <strong>total population per district</strong> and the <strong>expo
 </figcaption>
 </figure>
 <ol class="arabic simple" start="3">
-<li><p>Join the result with the population data
-Now join the result of the previous step (health + education) to the <strong>exposed population</strong> data.</p></li>
+<li><p>Joindre le résultat aux données de population
+Maintenant, joindre le résultat de l’étape précédente (santé + éducation) aux données de <strong>population exposée</strong>.</p></li>
 </ol>
 <ul>
-<li><p>Add a second <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">Attributes</span> <span class="pre">by</span> <span class="pre">Field</span> <span class="pre">Value</span></code> algorithm to the model</p></li>
-<li><p>Add a description: <code class="docutils literal notranslate"><span class="pre">Joindre</span> <span class="pre">les</span> <span class="pre">données</span> <span class="pre">de</span> <span class="pre">population</span> <span class="pre">avec</span> <span class="pre">les</span> <span class="pre">indicateurs</span> <span class="pre">santé</span> <span class="pre">et</span> <span class="pre">éducation</span></code></p></li>
-<li><p>Configure the algorithm as follows:</p>
-<ul class="simple">
-<li><p><strong>Input Layer</strong>: <code class="docutils literal notranslate"><span class="pre">exposed_population</span></code> (select from <strong>Algorithm Output</strong> of the Zonal Statistics step)</p></li>
-<li><p><strong>Input Layer 2</strong>: Output from Step 2 (health + education)</p></li>
-<li><p><strong>Table field</strong>:</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ADM2_PCODE</span>
-</pre></div>
-</div>
-<ul class="simple">
-<li><p><strong>Table field 2</strong>:</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ADM2_PCODE</span>
-</pre></div>
-</div>
+<li><p>Ajouter un deuxième algorithme <code class="docutils literal notranslate"><span class="pre">Joindre</span> <span class="pre">les</span> <span class="pre">attributs</span> <span class="pre">par</span> <span class="pre">valeur</span> <span class="pre">de</span> <span class="pre">champ</span></code> (eng.: <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">Attributes</span> <span class="pre">by</span> <span class="pre">Field</span> <span class="pre">Value</span></code>) au modèle.</p></li>
+<li><p>Ajouter une description : <code class="docutils literal notranslate"><span class="pre">Joindre</span> <span class="pre">les</span> <span class="pre">données</span> <span class="pre">de</span> <span class="pre">population</span> <span class="pre">avec</span> <span class="pre">les</span> <span class="pre">indicateurs</span> <span class="pre">santé</span> <span class="pre">et</span> <span class="pre">éducation</span></code></p></li>
+<li><p>Configurer l’algorithme comme suit :</p>
 <ul>
-<li><p><strong>Layer 2 fields to copy</strong>: <em>(Enter the following field names exactly as shown — comma-separated, no spaces)</em></p>
+<li><p><strong>Couche source</strong> : <code class="docutils literal notranslate"><span class="pre">exposed_population</span></code> (sélectionner depuis la <strong>Sortie de l’algorithme</strong> des statistiques zonales)</p></li>
+<li><p><strong>Couche d’entrée 2</strong> : Sortie de l’étape précedente (santé + éducation)</p></li>
+<li><p><strong>Champ de la table</strong> :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ADM2_PCODE</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Champ de la table 2</strong> :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ADM2_PCODE</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Champs à copier de la couche 2</strong> : <em>(Entrer les noms de champs exactement comme ci-dessous — séparés par des points-virgules, sans espaces)</em></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">count_health_total</span><span class="p">;</span><span class="n">sum_exposed_health</span><span class="p">;</span><span class="n">pct_exposed_health</span><span class="p">;</span><span class="n">count_education_total</span><span class="p">;</span><span class="n">sum_exposed_education</span><span class="p">;</span><span class="n">pct_exposed_education</span>
 </pre></div>
 </div>
 </li>
-<li><p><strong>Join type</strong>: Take attributes of the first matching feature only (one-to-one)</p></li>
-<li><p>Leave output as <strong>Model Output</strong></p></li>
+<li><p><strong>Type de jointure</strong> : Prendre uniquement les attributs de la première entité correspondante (un-à-un)</p></li>
+<li><p>Laisser la sortie comme <strong>Sortie du modèle</strong> sans nom.</p></li>
 </ul>
 </li>
 </ul>
@@ -2182,35 +2183,35 @@ Now join the result of the previous step (health + education) to the <strong>exp
 </figure>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Where to find the column names<br />
-Open the <strong>attribute tables</strong> of the outputs <code class="docutils literal notranslate"><span class="pre">health_total_per_admin2</span></code>, <code class="docutils literal notranslate"><span class="pre">sum_exposed_healthsites_POI</span></code>, and <code class="docutils literal notranslate"><span class="pre">admin2_health_affected_pct</span></code> in QGIS.<br />
-Look at the <strong>column headers</strong> to find the exact names of the fields you want to copy.</p>
+<p>Où trouver les noms des colonnes<br />
+Ouvrez les <strong>tables attributaires</strong> des couches <code class="docutils literal notranslate"><span class="pre">health_total_per_admin2</span></code>, <code class="docutils literal notranslate"><span class="pre">sum_exposed_healthsites_POI</span></code> et <code class="docutils literal notranslate"><span class="pre">admin2_health_affected_pct</span></code> dans QGIS.<br />
+Consultez les <strong>en-têtes de colonnes</strong> pour trouver les noms exacts des champs à copier.</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Invisible spaces will break the join<br />
-If a column name like <code class="docutils literal notranslate"><span class="pre">count_health_total</span></code> has an invisible trailing space, the join will silently fail.<br />
-Always copy field names <strong>directly from the attribute table</strong> to avoid errors.</p>
+<p>Les espaces invisibles feront échouer la jointure<br />
+Si un nom de colonne comme <code class="docutils literal notranslate"><span class="pre">count_health_total</span></code> contient un espace invisible à la fin, la jointure échouera silencieusement.<br />
+Copiez toujours les noms de champs <strong>directement depuis la table attributaire</strong> pour éviter les erreurs.</p>
 </div>
 <ol class="arabic simple" start="4">
-<li><p>Export results to a spreadsheet</p></li>
+<li><p>Exporter les résultats vers un tableur</p></li>
 </ol>
 <ul>
-<li><p>In the <strong>Processing Toolbox</strong>, search for <code class="docutils literal notranslate"><span class="pre">Export</span> <span class="pre">to</span> <span class="pre">spreadsheet</span></code> and double-click to open.</p></li>
-<li><p>Add a description: <code class="docutils literal notranslate"><span class="pre">Exporter</span> <span class="pre">les</span> <span class="pre">données</span> <span class="pre">de</span> <span class="pre">population,</span> <span class="pre">d'éducation</span> <span class="pre">et</span> <span class="pre">de</span> <span class="pre">santé</span> <span class="pre">dans</span> <span class="pre">un</span> <span class="pre">seul</span> <span class="pre">tableau</span></code></p></li>
-<li><p>Configure the tool as follows:</p>
+<li><p>Dans la <strong>Boîte à outils de traitement</strong>, recherchez <code class="docutils literal notranslate"><span class="pre">Exporter</span> <span class="pre">vers</span> <span class="pre">un</span> <span class="pre">tableur</span></code>(eng.: <code class="docutils literal notranslate"><span class="pre">Export</span> <span class="pre">to</span> <span class="pre">spreadsheet</span></code>) et double-cliquez pour ouvrir.</p></li>
+<li><p>Ajouter une description : <code class="docutils literal notranslate"><span class="pre">Exporter</span> <span class="pre">les</span> <span class="pre">données</span> <span class="pre">de</span> <span class="pre">population,</span> <span class="pre">d'éducation</span> <span class="pre">et</span> <span class="pre">de</span> <span class="pre">santé</span> <span class="pre">dans</span> <span class="pre">un</span> <span class="pre">seul</span> <span class="pre">tableau</span></code></p></li>
+<li><p>Configurer l’outil comme suit :</p>
 <ul>
-<li><p><strong>Input Layer</strong>: Select the output of Step 3 from <strong>Algorithm Output</strong></p></li>
-<li><p><strong>Destination spreadsheet</strong>:</p>
+<li><p><strong>Couche d’entrée</strong> : Sélectionner la sortie de l’étape précedente (3) depuis la <strong>Sortie de l’algorithme</strong></p></li>
+<li><p><strong>Tableur de destination</strong> :</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">exposure_indicators_spreadsheet</span>
 </pre></div>
 </div>
 </li>
-<li><p>Click <strong>OK</strong> to add it to the model.
-Once you run the model, this step will automatically generate a spreadsheet with all relevant indicators ready for the operations team!</p></li>
+<li><p>Cliquer sur <strong>OK</strong> pour l’ajouter au modèle.</p></li>
 </ul>
 </li>
 </ul>
+<p>Une fois que vous exécutez le modèle, cette étape génèrera automatiquement un fichier tableur contenant tous les indicateurs nécessaires pour l’équipe des opérations !</p>
 <figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_export_as_table.PNG"><img alt="../../_images/fr_MDG_AA_model_export_as_table.PNG" src="../../_images/fr_MDG_AA_model_export_as_table.PNG" style="width: 600px;" /></a>
 <figcaption>
@@ -2218,87 +2219,84 @@ Once you run the model, this step will automatically generate a spreadsheet with
 </figcaption>
 </figure>
 <ol class="arabic" start="5">
-<li><p><strong>Validate and Save Your Extended Model</strong></p>
+<li><p><strong>Valider et enregistrer votre modèle étendu</strong></p>
 <ul class="simple">
-<li><p>Click the ✔️ <strong>Validate Model</strong> button to check for errors.</p></li>
-<li><p>Save again to:<br />
+<li><p>Cliquez sur le bouton ✔️ <strong>Valider le modèle</strong> (sous <code class="docutils literal notranslate"><span class="pre">Modèle</span></code> dans le menu du haut) pour vérifier les erreurs.</p></li>
+<li><p>Enregistrez à nouveau sous :<br />
 <strong><code class="docutils literal notranslate"><span class="pre">Estimate_Exposed_Population_Health_Education.model3</span></code></strong></p></li>
 </ul>
 </li>
-<li><p><strong>Run the model</strong></p>
+<li><p><strong>Exécuter le modèle</strong></p>
 <ul>
-<li><p>Click the ▶️ <strong>Run</strong> button in the top-right corner of the Graphical Modeler window.</p></li>
-<li><p><strong>Input:</strong></p>
+<li><p>Cliquez sur le bouton ▶️ <strong>Exécuter</strong> en haut à droite de la fenêtre du Modeleur graphique.</p></li>
+<li><p><strong>Entrées :</strong></p>
 <ul class="simple">
-<li><p>Click on the three dots for each input dataset and select the correct input:</p>
+<li><p>Cliquez sur les trois points pour chaque jeu de données et sélectionnez les entrées appropriées :</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Track</span></code> → select the GeoJSON of the storm path (e.g. <code class="docutils literal notranslate"><span class="pre">Harald_2025_Track.geojson</span></code>)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Population</span> <span class="pre">Raster</span></code> → select the WorldPop raster file</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Admin</span> <span class="pre">Boundaries</span></code> → select the Admin 2 layer (e.g. <code class="docutils literal notranslate"><span class="pre">MDG_adm2.gpkg</span></code>)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Health</span> <span class="pre">Facilities</span></code> → select the point dataset for health sites</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Education</span> <span class="pre">Facilities</span></code> → select the point dataset for schools</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Track</span></code> → sélectionnez le fichier GeoJSON de la trajectoire de la tempête (ex. <code class="docutils literal notranslate"><span class="pre">Harald_2025_Track.geojson</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Population</span> <span class="pre">Raster</span></code> → sélectionnez le fichier raster WorldPop</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Admin</span> <span class="pre">Boundaries</span></code> → sélectionnez la couche Admin 2 (ex. <code class="docutils literal notranslate"><span class="pre">MDG_adm2.gpkg</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Health</span> <span class="pre">Facilities</span></code> → sélectionnez le jeu de données ponctuel des centres de santé</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Education</span> <span class="pre">Facilities</span></code> → sélectionnez le jeu de données ponctuel des écoles</p></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p><strong>Output:</strong></p>
+<li><p><strong>Sorties :</strong></p>
 <ul>
-<li><p>Save all output layers in the output folder and use the names below.</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">admin2_health_affacted</span></code> -&gt;</p></li>
-</ul>
+<li><p>Enregistrez toutes les couches de sortie dans le dossier de sortie en utilisant les noms ci-dessous :</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">admin2_health_affacted</span></code> →</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">admin2_health_affected</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">admin2_education_affected</span></code> -&gt;</p></li>
-</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">admin2_education_affected</span></code> →</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">admin2_education_affected</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">cyclone_harald_buffer</span></code> -&gt;</p></li>
-</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cyclone_harald_buffer</span></code> →</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cyclone_harald_buffer</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">exposed_population_sum</span></code> -&gt;</p></li>
-</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">exposed_population_sum</span></code> →</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">admin2_harald_Exposed_Population</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">exposure_indicators_spreadsheet</span></code> -&gt;</p></li>
-</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">exposure_indicators_spreadsheet</span></code> →</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">exposure_indicators_harald</span>
 </pre></div>
 </div>
 </li>
 </ul>
 </li>
-<li><p>Click <strong>Run</strong> to execute the full model.</p></li>
+</ul>
+</li>
+<li><p>Cliquez sur <strong>Exécuter</strong> pour lancer le modèle complet.</p></li>
 </ul>
 </li>
 </ol>
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-14" name="sd-tab-set-5" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-14">
-Graphic Modler</label><div class="sd-tab-content docutils">
+Modeleur</label><div class="sd-tab-content docutils">
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/fig"><img alt="../../_images/fig" src="../../_images/fig" style="width: 600px;" /></a>
 </figure>
 </div>
 <input id="sd-tab-item-15" name="sd-tab-set-5" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-15">
-Run Model Configuration</label><div class="sd-tab-content docutils">
+Configuration d’exécution du modèle</label><div class="sd-tab-content docutils">
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/fig"><img alt="../../_images/fig" src="../../_images/fig" style="width: 600px;" /></a>
 </figure>
 </div>
 <input id="sd-tab-item-16" name="sd-tab-set-5" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-16">
-Model Output</label><div class="sd-tab-content docutils">
+Résultat du modèle</label><div class="sd-tab-content docutils">
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/fig"><img alt="../../_images/fig" src="../../_images/fig" style="width: 600px;" /></a>
 </figure>
@@ -2306,79 +2304,83 @@ Model Output</label><div class="sd-tab-content docutils">
 </div>
 </section>
 <hr class="docutils" />
-<section id="task-7-reachability-of-health-posts-from-crm-warehouses">
-<h2>Task 7: Reachability of health Posts from CRM Warehouses<a class="headerlink" href="#task-7-reachability-of-health-posts-from-crm-warehouses" title="Permalink to this heading">#</a></h2>
-<p>When a cyclone is forecast to make landfall, Aina works with the logistics and health teams to decide <strong>where to send prepositioned medical kits</strong>. However, not all CRM warehouses stock the needed items — only three do.</p>
-<p>To make fast, data-driven decisions, Aina wants to know <strong>which health posts are reachable</strong> from those warehouses <strong>within 10 hours</strong>. This analysis helps ensure that kits are sent to facilities <strong>that can actually be reached in time</strong>.</p>
-<p>Her goal is to create a clear visual map showing reachable vs. non-reachable health posts — and share this with decision-makers as quickly as possible.</p>
-<section id="filter-health-posts-from-the-national-health-facility-dataset">
-<h3>1. Filter Health Posts from the National Health Facility Dataset<a class="headerlink" href="#filter-health-posts-from-the-national-health-facility-dataset" title="Permalink to this heading">#</a></h3>
-<p>Before checking which facilities are reachable, Aina needs to isolate <strong>health posts</strong> from the broader dataset of all health facilities.</p>
+<section id="tache-7-accessibilite-des-postes-de-sante-depuis-les-entrepots-crm">
+<h2>Tâche 7 : Accessibilité des postes de santé depuis les entrepôts CRM<a class="headerlink" href="#tache-7-accessibilite-des-postes-de-sante-depuis-les-entrepots-crm" title="Permalink to this heading">#</a></h2>
+<p>Lorsque qu’un cyclone est prévu pour un atterrissage, Aina collabore avec les équipes logistique et santé pour
+décider <strong>où envoyer les kits médicaux prépositionnés</strong>. Cependant, tous les entrepôts CRM ne stockent pas les
+articles nécessaires — seulement trois le font.</p>
+<p>Pour prendre des décisions rapides et basées sur les données, Aina souhaite savoir <strong>quels postes de santé sont accessibles</strong> à partir de ces entrepôts <strong>en moins de 10 heures</strong>. Cette analyse permet de s’assurer que les kits
+sont envoyés vers des établissements <strong>réellement accessibles à temps</strong>.</p>
+<p>Son objectif est de créer une carte visuelle claire montrant les postes de santé accessibles vs. non accessibles —
+et de la partager avec les décideurs le plus rapidement possible.</p>
+<section id="filtrer-les-postes-de-sante-depuis-le-jeu-de-donnees-national-des-etablissements-de-sante">
+<h3>1. Filtrer les postes de santé depuis le jeu de données national des établissements de santé<a class="headerlink" href="#filtrer-les-postes-de-sante-depuis-le-jeu-de-donnees-national-des-etablissements-de-sante" title="Permalink to this heading">#</a></h3>
+<p>Avant de vérifier quels établissements sont accessibles, Aina doit isoler les <strong>postes de santé</strong> à partir du jeu de données plus large de tous les établissements de santé.</p>
 <ol class="arabic">
-<li><p><strong>Load the health facilities dataset</strong></p>
+<li><p><strong>Charger le jeu de données des établissements de santé</strong></p>
 <ul class="simple">
-<li><p>File: <code class="docutils literal notranslate"><span class="pre">hotosm_mdg_health_facilities_points.gpkg</span></code> (or the respective GeoPackage you are using)</p></li>
-<li><p>Load it via drag and drop or through <code class="docutils literal notranslate"><span class="pre">Layer</span></code> → <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code>.</p></li>
+<li><p>Fichier : <code class="docutils literal notranslate"><span class="pre">hotosm_mdg_health_facilities_points.gpkg</span></code> (ou le GeoPackage utilisé)</p></li>
+<li><p>Chargez-le par glisser-déposer ou via <code class="docutils literal notranslate"><span class="pre">Couche</span></code> → <code class="docutils literal notranslate"><span class="pre">Ajouter</span> <span class="pre">une</span> <span class="pre">couche</span> <span class="pre">vecteur</span></code>.</p></li>
 </ul>
 </li>
-<li><p><strong>Open the attribute table</strong> and check the column named <code class="docutils literal notranslate"><span class="pre">amenity</span></code>.</p></li>
-<li><p><strong>Filter by expression</strong> to keep only health posts:</p>
+<li><p><strong>Ouvrir la table attributaire</strong> et vérifier la colonne nommée <code class="docutils literal notranslate"><span class="pre">amenity</span></code>.</p></li>
+<li><p><strong>Filtrer par expression</strong> pour ne garder que les postes de santé :</p>
 <ul>
-<li><p>Right-click the layer → <code class="docutils literal notranslate"><span class="pre">Filter…</span></code></p></li>
-<li><p>Use the following expression:</p>
+<li><p>Clic droit sur la couche → <code class="docutils literal notranslate"><span class="pre">Filtrer…</span></code></p></li>
+<li><p>Utiliser l’expression suivante :</p>
 <div class="highlight-qgis notranslate"><div class="highlight"><pre><span></span>&quot;amenity&quot; = &#39;health_post&#39;
 </pre></div>
 </div>
 </li>
 </ul>
 </li>
-<li><p><strong>Export the filtered layer</strong></p>
+<li><p><strong>Exporter la couche filtrée</strong></p>
 <ul>
-<li><p>Right-click the filtered layer in the Layers Panel → <code class="docutils literal notranslate"><span class="pre">Export</span></code> → <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Features</span> <span class="pre">As…</span></code></p></li>
-<li><p>Format: <code class="docutils literal notranslate"><span class="pre">GeoPackage</span></code></p></li>
-<li><p>Save to your <code class="docutils literal notranslate"><span class="pre">project</span></code> folder as:</p>
+<li><p>Clic droit sur la couche filtrée dans le panneau des couches → <code class="docutils literal notranslate"><span class="pre">Exporter</span></code> → <code class="docutils literal notranslate"><span class="pre">Enregistrer</span> <span class="pre">les</span> <span class="pre">entités</span> <span class="pre">sous…</span></code></p></li>
+<li><p>Format : <code class="docutils literal notranslate"><span class="pre">GeoPackage</span></code></p></li>
+<li><p>Enregistrez dans votre dossier <code class="docutils literal notranslate"><span class="pre">project</span></code> sous :</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">health_posts_only</span><span class="o">.</span><span class="n">gpkg</span>
 </pre></div>
 </div>
 </li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">OK</span></code> to confirm export.</p></li>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">OK</span></code> pour confirmer l’exportation.</p></li>
 </ul>
 </li>
-<li><p><strong>Remove the filter</strong> or original layer from your project to avoid confusion.</p></li>
+<li><p><strong>Retirer le filtre</strong> ou la couche originale de votre projet pour éviter toute confusion.</p></li>
 </ol>
 <blockquote>
-<div><p>💡 <strong>Tip</strong>: Filtering directly in QGIS lets you work with a specific subset of features without modifying the original dataset.</p>
+<div><p>💡 <strong>Astuce</strong> : Filtrer directement dans QGIS vous permet de travailler avec un sous-ensemble spécifique sans modifier le jeu de données original.</p>
 </div></blockquote>
 </section>
-<section id="load-isochrone-layers-for-the-three-crm-warehouses">
-<h3>2. Load Isochrone Layers for the Three CRM Warehouses<a class="headerlink" href="#load-isochrone-layers-for-the-three-crm-warehouses" title="Permalink to this heading">#</a></h3>
-<p>Aina knows that only <strong>three warehouses</strong> stock the necessary medical supplies:<br />
-<strong>Antananarivo</strong>, <strong>Maroantsetra</strong>, and <strong>Tolanaro</strong>. She will now load the isochrone layers for each of these warehouses to begin analyzing service areas.</p>
+<section id="charger-les-couches-isochrones-pour-les-trois-entrepots-crm">
+<h3>2. Charger les couches isochrones pour les trois entrepôts CRM<a class="headerlink" href="#charger-les-couches-isochrones-pour-les-trois-entrepots-crm" title="Permalink to this heading">#</a></h3>
+<p>Aina sait que seulement <strong>trois entrepôts</strong> disposent des fournitures médicales nécessaires :<br />
+<strong>Antananarivo</strong>, <strong>Maroantsetra</strong>, et <strong>Tolanaro</strong>. Elle va maintenant charger les couches isochrones pour chacun de ces entrepôts afin de commencer l’analyse des zones desservies.</p>
 <ol class="arabic">
-<li><p><strong>Load the individual isochrone layers</strong> for each warehouse:</p>
+<li><p><strong>Charger les couches isochrones individuelles</strong> pour chaque entrepôt :</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouse_Isochrones_Antananarivo.gpkg</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouse_Isochrones_Maroantsetra.gpkg</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouse_Isochrones_Tolanaro.gpkg</span></code></p></li>
 </ul>
-<p>You can drag and drop each file into QGIS or go to <code class="docutils literal notranslate"><span class="pre">Layer</span></code> → <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> → <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code>.</p>
+<p>Vous pouvez glisser-deposer chaque fichier dans QGIS ou aller dans <code class="docutils literal notranslate"><span class="pre">Couche</span></code> → <code class="docutils literal notranslate"><span class="pre">Ajouter</span> <span class="pre">une</span> <span class="pre">couche</span></code> → <code class="docutils literal notranslate"><span class="pre">Ajouter</span> <span class="pre">une</span> <span class="pre">couche</span> <span class="pre">vecteur</span></code>.</p>
 </li>
-<li><p><strong>Inspect the attribute table</strong> of each isochrone layer<br />
-Confirm that each record has a <code class="docutils literal notranslate"><span class="pre">traveltime_h</span></code> field showing the estimated travel time in <strong>hours</strong>.</p></li>
-<li><p><strong>Remove all features where travel time is above 10 hours</strong>:</p>
+<li><p><strong>Inspecter la table attributaire</strong> de chaque couche isochrone<br />
+Vérifiez que chaque enregistrement possède un champ <code class="docutils literal notranslate"><span class="pre">traveltime_h</span></code> indiquant le temps de trajet estimé en <strong>heures</strong>.</p></li>
+<li><p><strong>Retirer toutes les entités où le temps de trajet dépasse 10 heures</strong> :</p>
 <ul>
-<li><p>Right-click each layer → <code class="docutils literal notranslate"><span class="pre">Filter…</span></code></p></li>
-<li><p>Apply the expression:</p>
+<li><p>Clic droit sur chaque couche → <code class="docutils literal notranslate"><span class="pre">Filtrer…</span></code></p></li>
+<li><p>Appliquer l’expression :</p>
 <div class="highlight-qgis notranslate"><div class="highlight"><pre><span></span>&quot;traveltime_h&quot; &lt;= 10
 </pre></div>
 </div>
 </li>
 </ul>
 </li>
-<li><p><strong>Export each filtered layer</strong> to the <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder :
-At this point, Aina also ensures all exported layers are saved in the same CRS as the health post dataset — <code class="docutils literal notranslate"><span class="pre">EPSG:4326</span></code> — to avoid problems in the spatial join.</p>
+<li><p><strong>Exporter chaque couche filtrée</strong> vers le dossier <code class="docutils literal notranslate"><span class="pre">temp</span></code> :<br />
+À ce stade, Aina s’assure également que toutes les couches exportées utilisent le même SCR que la couche des postes de santé — <code class="docutils literal notranslate"><span class="pre">EPSG:4326</span></code> — pour éviter tout problème lors de la jointure spatiale.</p>
 <ul>
-<li><p>Save each as:</p>
+<li><p>Enregistrez chaque fichier sous :</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CRM_isochrones_Antananarivo_upto10h</span><span class="o">.</span><span class="n">gpkg</span>
 <span class="n">CRM_isochrones_Maroantsetra_upto10h</span><span class="o">.</span><span class="n">gpkg</span>
 <span class="n">CRM_isochrones_Tolanaro_upto10h</span><span class="o">.</span><span class="n">gpkg</span>
@@ -2387,90 +2389,91 @@ At this point, Aina also ensures all exported layers are saved in the same CRS a
 </li>
 </ul>
 </li>
-<li><p><strong>Style the isochrones for clarity</strong>
-Aina can apply predefined style file to color the layer based on <code class="docutils literal notranslate"><span class="pre">traveltime_h</span></code> to visualize different time bands (4h, 6h, 8h, 10h) later in Step 5.</p>
+<li><p><strong>Appliquer un style aux isochrones pour plus de clarté</strong><br />
+Aina peut appliquer un style prédéfini pour colorer la couche selon <code class="docutils literal notranslate"><span class="pre">traveltime_h</span></code> et visualiser différentes plages horaires (4h, 6h, 8h, 10h) à l’étape 5.</p>
 <ul class="simple">
-<li><p>Right-click each filtered layer → <code class="docutils literal notranslate"><span class="pre">Properties</span></code> → <code class="docutils literal notranslate"><span class="pre">Symbology</span></code></p></li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Style</span></code> at the bottom → <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style…</span></code></p></li>
-<li><p>Select the file:<br />
+<li><p>Clic droit sur chaque couche filtrée → <code class="docutils literal notranslate"><span class="pre">Propriétés</span></code> → <code class="docutils literal notranslate"><span class="pre">Symbologie</span></code></p></li>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">Style</span></code> en bas → <code class="docutils literal notranslate"><span class="pre">Charger</span> <span class="pre">le</span> <span class="pre">style…</span></code></p></li>
+<li><p>Sélectionnez le fichier :<br />
 <code class="docutils literal notranslate"><span class="pre">CRM_warehouse_isochrones_style.qml</span></code></p></li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Open</span></code>, then <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">Ouvrir</span></code>, puis <code class="docutils literal notranslate"><span class="pre">Appliquer</span></code> et <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
 </ul>
 </li>
 </ol>
 </section>
-<section id="visualizing-health-post-reachability-from-crm-warehouses">
-<h3>3. Visualizing Health Post Reachability from CRM Warehouses<a class="headerlink" href="#visualizing-health-post-reachability-from-crm-warehouses" title="Permalink to this heading">#</a></h3>
-<p>Aina needs to identify which health posts can be reached by road from three key CRM warehouses (Antananarivo, Maroantsetra, and Tolanaro) <strong>within 10 hours of travel time</strong>. She will do this manually by combining the 10-hour isochrones from these warehouses and comparing them to the national health post dataset.</p>
+<section id="visualiser-laccessibilite-des-postes-de-sante-depuis-les-entrepots-crm">
+<h3>3. Visualiser l’accessibilité des postes de santé depuis les entrepôts CRM<a class="headerlink" href="#visualiser-laccessibilite-des-postes-de-sante-depuis-les-entrepots-crm" title="Permalink to this heading">#</a></h3>
+<p>Aina doit identifier quels postes de santé sont accessibles par la route à partir des trois entrepôts clés (Antananarivo, Maroantsetra et Tolanaro) <strong>en moins de 10 heures de trajet</strong>. Elle va le faire manuellement en combinant les isochrones 10h de ces entrepôts et en les comparant au jeu de données national des postes de santé.</p>
 <ol class="arabic">
-<li><p><strong>Merge the Isochrone Layers from the Three Warehouses</strong></p>
+<li><p><strong>Fusionner les couches isochrones des trois entrepôts</strong></p>
 <ul>
-<li><p>In the <strong>Processing Toolbox</strong>, search for <code class="docutils literal notranslate"><span class="pre">Merge</span> <span class="pre">Vector</span> <span class="pre">Layers</span></code>.</p></li>
-<li><p><strong>Input layers</strong>:</p>
+<li><p>Dans la <strong>Boîte à outils de traitement</strong>, rechercher <code class="docutils literal notranslate"><span class="pre">Fusionner</span> <span class="pre">des</span> <span class="pre">couches</span> <span class="pre">vecteur</span></code>.</p></li>
+<li><p><strong>Couches en entrée</strong> :</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">CRM_isochrones_Antananarivo_upto10h.gpkg</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">CRM_isochrones_Maroantsetra_upto10h.gpkg</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">CRM_isochrones_Tolanaro_upto10h.gpkg</span></code></p></li>
 </ul>
 </li>
-<li><p><strong>CRS</strong>: <code class="docutils literal notranslate"><span class="pre">EPSG:4326</span></code></p></li>
-<li><p><strong>Save to file</strong>:</p>
+<li><p><strong>SCR</strong> : <code class="docutils literal notranslate"><span class="pre">EPSG:4326</span></code></p></li>
+<li><p><strong>Enregistrer sous</strong> :</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">merged_isochrones_10h</span><span class="o">.</span><span class="n">gpkg</span>
 </pre></div>
 </div>
 </li>
-<li><p>Click <strong>Run</strong>.</p></li>
+<li><p>Cliquez sur <strong>Exécuter</strong>.</p></li>
 </ul>
 </li>
-<li><p><strong>Select Health Posts Reachable Within 10 Hours</strong></p>
+<li><p><strong>Sélectionner les postes de santé accessibles en moins de 10 heures</strong></p>
 <ul class="simple">
-<li><p>In the <strong>Processing Toolbox</strong>, search for <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">by</span> <span class="pre">Location</span></code>.</p></li>
-<li><p>Set the following parameters:</p>
+<li><p>Dans la <strong>Boîte à outils de traitement</strong>, rechercher <code class="docutils literal notranslate"><span class="pre">Sélection</span> <span class="pre">par</span> <span class="pre">localisation</span></code>.</p></li>
+<li><p>Définir les paramètres suivants :</p>
 <ul>
-<li><p><strong>Input layer</strong>: <code class="docutils literal notranslate"><span class="pre">health_posts_only.gpkg</span></code></p></li>
-<li><p><strong>Predicate</strong>: <code class="docutils literal notranslate"><span class="pre">intersects</span></code></p></li>
-<li><p><strong>Intersect layer</strong>: <code class="docutils literal notranslate"><span class="pre">merged_isochrones_10h.gpkg</span></code></p></li>
+<li><p><strong>Couche source</strong> : <code class="docutils literal notranslate"><span class="pre">health_posts_only.gpkg</span></code></p></li>
+<li><p><strong>Prédicat</strong> : <code class="docutils literal notranslate"><span class="pre">intersects</span></code></p></li>
+<li><p><strong>Couche d’intersection</strong> : <code class="docutils literal notranslate"><span class="pre">merged_isochrones_10h.gpkg</span></code></p></li>
 </ul>
 </li>
-<li><p>Click <strong>Run</strong>.</p></li>
+<li><p>Cliquez sur <strong>Exécuter</strong>.</p></li>
 </ul>
 <blockquote>
-<div><p>💡 The selected points are those within the 10-hour service areas of the warehouses.</p>
+<div><p>💡 Les points sélectionnés sont ceux situés dans les zones de desserte des entrepôts à moins de 10 heures.</p>
 </div></blockquote>
 </li>
-<li><p><strong>Create a Reachability Field for Selected Health Posts</strong></p>
+</ol>
+<p>. <strong>Créer un champ d’accessibilité pour les postes sélectionnés</strong></p>
 <ul>
-<li><p>Open the <strong>Field Calculator</strong> <img alt="" src="../../_images/mActionCalculateField.png" /> on the <code class="docutils literal notranslate"><span class="pre">health_posts_only</span></code> layer.</p></li>
-<li><p>Check ✅ <code class="docutils literal notranslate"><span class="pre">Only</span> <span class="pre">update</span> <span class="pre">selected</span> <span class="pre">features</span></code></p></li>
-<li><p><strong>Output field name</strong>: <code class="docutils literal notranslate"><span class="pre">Reachability_time</span></code></p></li>
-<li><p><strong>Output field type</strong>: <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">(string)</span></code></p></li>
-<li><p><strong>Expression</strong>:</p>
+<li><p>Ouvrir la <strong>calculatrice de champs</strong> <img alt="" src="../../_images/mActionCalculateField.png" /> sur la couche <code class="docutils literal notranslate"><span class="pre">health_posts_only</span></code>.</p></li>
+<li><p>Cochez ✅ <code class="docutils literal notranslate"><span class="pre">Mettre</span> <span class="pre">à</span> <span class="pre">jour</span> <span class="pre">uniquement</span> <span class="pre">les</span> <span class="pre">entités</span> <span class="pre">sélectionnées</span></code></p></li>
+<li><p><strong>Nom du champ de sortie</strong> : <code class="docutils literal notranslate"><span class="pre">Reachability_time</span></code></p></li>
+<li><p><strong>Type du champ de sortie</strong> : <code class="docutils literal notranslate"><span class="pre">Texte</span> <span class="pre">(chaîne)</span></code></p></li>
+<li><p><strong>Expression</strong> :</p>
 <div class="highlight-qgis notranslate"><div class="highlight"><pre><span></span>&#39;reachable in 10 hours&#39;
 </pre></div>
 </div>
 </li>
-<li><p>Click <strong>OK</strong> to create and populate the new field for selected features.</p></li>
+<li><p>Cliquez sur <strong>OK</strong> pour créer et renseigner le champ pour les entités sélectionnées.</p></li>
 </ul>
-</li>
-<li><p><strong>Mark the Remaining Health Posts as Not Reachable</strong></p>
+<ol class="arabic" start="4">
+<li><p><strong>Marquer les autres postes de santé comme non accessibles</strong></p>
 <ul>
-<li><p>Invert the selection:<br />
-Go to <code class="docutils literal notranslate"><span class="pre">Edit</span></code> → <code class="docutils literal notranslate"><span class="pre">Invert</span> <span class="pre">Feature</span> <span class="pre">Selection</span></code> <img alt="" src="../../_images/mActionInvertSelection.png" /><br />
-or right-click the layer and select <code class="docutils literal notranslate"><span class="pre">Invert</span> <span class="pre">Selection</span></code>.</p></li>
-<li><p>Open the <strong>Field Calculator</strong> again.</p></li>
-<li><p>Check ✅ <code class="docutils literal notranslate"><span class="pre">Only</span> <span class="pre">update</span> <span class="pre">selected</span> <span class="pre">features</span></code></p></li>
-<li><p>Use the same field: <code class="docutils literal notranslate"><span class="pre">Reachability_time</span></code></p></li>
-<li><p><strong>Expression</strong>:</p>
+<li><p>Inverser la sélection :<br />
+Aller dans <code class="docutils literal notranslate"><span class="pre">Édition</span></code> → <code class="docutils literal notranslate"><span class="pre">Inverser</span> <span class="pre">la</span> <span class="pre">sélection</span></code> <img alt="" src="../../_images/mActionInvertSelection.png" /><br />
+ou clic droit sur la couche → <code class="docutils literal notranslate"><span class="pre">Inverser</span> <span class="pre">la</span> <span class="pre">sélection</span></code>.</p></li>
+<li><p>Ouvrir à nouveau la <strong>calculatrice de champs</strong>.</p></li>
+<li><p>Cochez ✅ <code class="docutils literal notranslate"><span class="pre">Mettre</span> <span class="pre">à</span> <span class="pre">jour</span> <span class="pre">uniquement</span> <span class="pre">les</span> <span class="pre">entités</span> <span class="pre">sélectionnées</span></code></p></li>
+<li><p>Utiliser le même champ : <code class="docutils literal notranslate"><span class="pre">Reachability_time</span></code></p></li>
+<li><p><strong>Expression</strong> :</p>
 <div class="highlight-qgis notranslate"><div class="highlight"><pre><span></span>&#39;not reachable in 10 hours&#39;
 </pre></div>
 </div>
 </li>
-<li><p>Click <strong>OK</strong> to apply the update.</p></li>
+<li><p>Cliquez sur <strong>OK</strong> pour appliquer la mise à jour.</p></li>
 </ul>
 </li>
 </ol>
 <blockquote>
-<div><p>✅ Now all health posts are labeled as either <strong>reachable</strong> or <strong>not reachable</strong> in the <code class="docutils literal notranslate"><span class="pre">Reachability_time</span></code> column.</p>
+<div><p>✅ Tous les postes de santé sont maintenant étiquetés comme <strong>accessibles</strong> ou <strong>non accessibles</strong> dans la colonne <code class="docutils literal notranslate"><span class="pre">Reachability_time</span></code>.</p>
 </div></blockquote>
 </section>
 </section>
@@ -2535,15 +2538,15 @@ or right-click the layer and select <code class="docutils literal notranslate"><
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optionnel-importer-les-styles-dans-votre-bibliotheque-qgis">5. <em>(Optionnel)</em> Importer les styles dans votre bibliothèque QGIS</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-5-quick-map-creation-aina-uses-map-templates">Task 5: Quick Map Creation – Aina Uses Map Templates</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#final-checklist">✅ Final Checklist</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tache-5-creation-rapide-de-cartes-aina-utilise-des-modeles-de-carte">Tâche 5 : Création rapide de cartes – Aina utilise des modèles de carte</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#liste-de-verification-finale">✅ Liste de vérification finale</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-6-exporting-model-results-for-the-operations-team">Task 6: Exporting Model Results for the Operations Team</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-7-reachability-of-health-posts-from-crm-warehouses">Task 7: Reachability of health Posts from CRM Warehouses</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#filter-health-posts-from-the-national-health-facility-dataset">1. Filter Health Posts from the National Health Facility Dataset</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-isochrone-layers-for-the-three-crm-warehouses">2. Load Isochrone Layers for the Three CRM Warehouses</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-health-post-reachability-from-crm-warehouses">3. Visualizing Health Post Reachability from CRM Warehouses</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tache-6-exporter-les-resultats-du-modele-pour-lequipe-des-operations">Tâche 6 : Exporter les résultats du modèle pour l’équipe des opérations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tache-7-accessibilite-des-postes-de-sante-depuis-les-entrepots-crm">Tâche 7 : Accessibilité des postes de santé depuis les entrepôts CRM</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#filtrer-les-postes-de-sante-depuis-le-jeu-de-donnees-national-des-etablissements-de-sante">1. Filtrer les postes de santé depuis le jeu de données national des établissements de santé</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#charger-les-couches-isochrones-pour-les-trois-entrepots-crm">2. Charger les couches isochrones pour les trois entrepôts CRM</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualiser-laccessibilite-des-postes-de-sante-depuis-les-entrepots-crm">3. Visualiser l’accessibilité des postes de santé depuis les entrepôts CRM</a></li>
 </ul>
 </li>
 </ul>
