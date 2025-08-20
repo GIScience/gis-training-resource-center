@@ -132,7 +132,6 @@ Le [QGIS Model Designer](https://giscience.github.io/gis-training-resource-cente
 
 ## Étape 1 : Explication de la structure des fichiers
 
-
 ```{figure} /fig/MAD_Trigger_workflow_Step1.png
 ---
 width: 1000px
@@ -140,26 +139,26 @@ name:
 align: center
 ---
 ```
-__Purpose:__ This step outlines the recommended folder structure to simplify the analysis and ensure consistent, reproducible results. 
+__Objectif :__ Cette étape décrit la structure de dossiers recommandée pour simplifier l'analyse et garantir des résultats cohérents et reproductibles.
 
-__Tool:__ No special tools or programs are needed
+__Outil :__ Aucun outil ou programme particulier n'est nécessaire.
 
 ``````{list-table}
 :header-rows: 1
 :widths: 10 25
 
-* - Instruction
-  - Folder Structure
-* - 1. Open the folder “AA_Cyclone_Monitoring_Trigger_MAD".
-    2. Input data is located in the folder "fixed_input_data".
-    3. The QGIS model can be found in the "trigger_model" folder.
-    4. Resources for styling and map creation are located in:
-        - layer_styles – predefined layer symbology
-        - logos_pictures – logos and visual elements
-        - map_templates – templates for final map layouts
-        - example_map_results – example outputs for orientation
-        - Save your own results in the "map_outputs" folder.
-    5. To start the process, open the QGIS project file "AA_Cyclone_Monitoring_Trigger_MAD.qgz" by double-clicking it. This will launch the full analysis workflow.
+* - Instructions
+  - Structure du répertoire
+* - 1. Ouvrez le dossier “AA_Cyclone_Monitoring_Trigger_MAD".
+    2. Les données d'entrée se trouvent dans le dossier "fixed_input_data".
+    3. Le modèle QGIS se trouve dans le dossier "trigger_model" folder.
+    4. Les ressources pour la mise en forme et la création de cartes se trouvent dans:
+        - layer_styles – symbologie prédéfinie des couches
+        - logos_pictures – logos et éléments visuels
+        - map_templates – modèles pour la mise en page finale des cartes
+        - example_map_results – exemples de résultats pour s'orienter
+        - Sauvegardez vos propres résultats dans le dossier "map_outputs".
+    5. Pour lancer le processus, ouvrez le fichier de projet QGIS "AA_Cyclone_Monitoring_Trigger_MAD.qgz" en double-cliquant dessus. Cela lancera le processus d'analyse complet.
 
   -
     ```{figure} /fig/MAD_trigger_Folder_Structure_MAD_Trigger.png
@@ -172,7 +171,7 @@ __Tool:__ No special tools or programs are needed
 ``````
 
 
-## Step 2: Open the project in QGIS and load the model in the QGIS Model Designer
+## Étappe 2: Ouvrez le projet dans QGIS et chargez le modèle dans le concepteur de modèles QGIS
 
 ```{figure} /fig/MAD_Trigger_workflow_Step2.png
 ---
@@ -182,12 +181,12 @@ align: center
 ---
 ```
 
-In this step we will open our Trigger project in QGIS and load the QGIS model which will automatically run the analysis for us.
+Dans cette étape, nous allons ouvrir notre projet de déclenchement dans QGIS et charger le modèle QGIS qui exécutera automatiquement l'analyse pour nous.
 
-1. Open the file `AA_Cyclone_Monitoring_Trigger_MAD.qgz` by double clicking on it.
-2. The QGIS project will open with lots of data pre-loaded. This data is required for running the QGIS model and create some output maps.
+1. Ouvrez le fichier `AA_Cyclone_Monitoring_Trigger_MAD.qgz` en double-cliquant dessus.
+2. Le projet QGIS s'ouvrira avec de nombreuses données préchargées. Ces données sont nécessaires pour exécuter le modèle QGIS et créer certaines cartes de résultats.
 
-The data will be structured into five groups:
+Les données seront structurées en cinq groupes:
 
 ```{figure} /fig/MAD_trigger_QGIS_project_structure.PNG
 ---
@@ -197,15 +196,15 @@ align: center
 ---
 ```
 
-**Group 1: Fixed_Input_data**
+**Groupe 1: Données d'entrée fixes**
 
-This group contains all the **fixed input data** required to successfully run the model. These datasets remain constant and do not change between events. The only additional input needed is the **storm track** for the event under investigation, which should be added **before** this data group in the layer panel.
+Ce groupe contient toutes les **données d'entrée fixes** nécessaires au bon fonctionnement du modèle. Ces ensembles de données restent constants et ne changent pas d'un événement à l'autre. La seule donnée supplémentaire nécessaire est la **trajectoire de la tempête** pour l'événement étudié, qui doit être ajoutée **avant** ce groupe de données dans le panneau des couches.
 
 :::{attention}
 
-Always ensure you are using the **most up-to-date storm track** for the event being analyzed. To add the layer, simply drag and drop it into the Layers panel, placing it directly above the **Fixed_Input_data** group for clarity.
+Assurez-vous toujours d'utiliser la **trajectoire de tempête la plus récente** pour l'événement analysé. Pour ajouter la couche, il suffit de la glisser-déposer dans le panneau Couches, en la plaçant directement au-dessus du groupe **Fixed_Input_data** pour plus de clarté.
 
-For better data management, give the storm track a descriptive name, such as `storm_track_eventname_year` (e.g. storm_track_freddy_2023). This naming convention helps keep your workspace organized and ensures the correct data is used during the analysis.
+Pour une meilleure gestion des données, donnez à la trajectoire de la tempête un nom descriptif, tel que `trajectoire_tempete_nom-événement_année` (par exemple, trajectoire_tempete_freddy_2023). Cette convention de nommage vous aide à organiser votre espace de travail et garantit que les données correctes sont utilisées pendant l'analyse.
 
 :::
 
@@ -690,13 +689,14 @@ align: center
 <!--Remove the comment as duplicating and loading the style ensures that previous map layouts are not broken. also add that you can fix layer styles and layers in the map items-->
 
 
-#### Styling of the layers
+#### Map 2: Styling of the layers
 
-1. Right click on the "exposed_population - copy" layer -> `Properties` -> `Symbology`
-2. In the down left corner click on `Style` -> `Load Style`
-3. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the "AA_Cyclone_Monitoring_Trigger_MAD/layer_styles” folder and select the file __“exposed_population_style.qml”__ style layer.
-4. Click `Open`. Then click on `Load Style`
-5. Back in the “Layer Properties” window click `Apply` and `OK`
+1. Deactivate all the layers except gor the group "Map_Cyclone_Impact_Assessment" and the OpenStreetMap Basemap.
+2. Right click on the "exposed_population - copy" layer -> `Properties` -> `Symbology`
+3. In the down left corner click on `Style` -> `Load Style`
+4. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the "AA_Cyclone_Monitoring_Trigger_MAD/layer_styles” folder and select the file __“exposed_population_style.qml”__ style layer.
+5. Click `Open`. Then click on `Load Style`
+6. Back in the “Layer Properties” window click `Apply` and `OK`
 
 Repeat this process for the following output layers, along with their corresponding style sheets:
 
@@ -736,16 +736,25 @@ The documentation covers the exposed population impact assessment map. However, 
 <!--Move this somewhere else where it is easier to understand OR add pictures to illustrate the different maps?-->
 ::::
 
-#### Making the Print Layout
+#### Map 2: Making the Print Layout
 
 ```{tip}
 The same workflow applies to all five impact variables: population, buildings, education facilities, health sites, and agricultural landcover. The following example demonstrates the process for creating the population impact map. The remaining maps can be generated by following the same steps.
 ```
 
-1. Deactivate all Layer Groups except the group `Map_Cyclone_Impact_Overview`.
-2. Open a new print layout by clicking on `Project` -> `New Print Layout` -> enter the name of your current Project e.g "Feddy_2023_Impact_Population".
-3. Right click on the white canvas and select `Page Properties`. In the bottom right section of the print layout, you'll see the page specifications. Set the Size to `A3` and the Orientation to `Landscape` to ensure that the map template fits correctly within the page layout.
-4. Go to the **AA_Cyclone_Monitoring_Trigger_MAD and then map_templates** folder and drag and drop the file `cyclone_impact_population_map_template.qpt` into the print layout.
+
+1. Open a new print layout by clicking on `Project` -> `Layout Manager`. A small new window will appear. Here you can select an existing layout or create a new layout from a template. 
+2. We want to create a new layout from a template. Click on the `Empty Layout` dropdown menu and select `Specific`. 
+3. Below, click on the three dots ![](/fig/Three_points.png) and navigate to the folder `../AA_Cyclone_Monitoring_Trigger_MAD/map_templates/` and select the file with the name `cyclone_impact_population_map_template`. Click `Open`, then `Create`. 
+4.  QGIS will ask you to name the new layout. Give it a name such as "Cyclone_Overview_Map_Freddy_2023". Click `OK`. A new window will open. This is the print layout composer. It should look similar to the figure below.
+
+:::{figure} /fig/AA/mdg_aa_pop_impact_template.png
+---
+name: mdg_aa_pop_impact_template
+width: 600 px
+---
+:::
+
 5. **Update the Map Title**  
    - Click on the title text element at the top of the map.
    - In the `Item Properties` panel, edit the **Main Label** text to match your event, e.g. `Cyclone Harald – 2025`.
@@ -756,7 +765,7 @@ The same workflow applies to all five impact variables: population, buildings, e
    - Click on `Attributes...`
    - In the **Columns** section:
      - Click `Clear`
-     - ➕ Add the columns: `ADM1_EN`, `ADM2_EN`, `ADM2_PCODE` and `exposed_population`**Or any other layer you are working with**
+     - ➕ Add the columns: `ADM1_EN`, `ADM2_EN`, `ADM2_PCODE` and `exposed_population` **or any other layer you are working with**
    - In the **Sorting** section:
      - ➕ Add `ADM1_EN` and set the sort order to `Ascending`
    - Click **OK** to apply
@@ -764,6 +773,7 @@ The same workflow applies to all five impact variables: population, buildings, e
 ```{note}
 If too many districts are affected, the attribute table might not fit the page. Reduce the font size in the table’s item properties to make everything visible — but be aware that this may reduce readability.
 ```
+
 7. Adjust the Legend by clicking on it in the map layout and have a look at the `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there, check if you have to open the dropdown. Make sure `Auto update` is **not checked**.
     * Remove all items in the legend by clicking on each item and then the red minus icon
         * In the pop-up, check **Only show visible layers** to help you find the correct ones
@@ -988,9 +998,9 @@ align: center
 ---
 ```
 
-## Step 2: Exporting the Map 
+#### Exporting the Map 
 
-<!--Exporting the map should be done after each layout. If the maps are not locked, it will break the layouts and the work will have to be repeated-->
+<!--Exporting the map should be done after each layout. If the maps are not locked, it will break the layouts and the work will have to be repeated
 
 ```{figure} /fig/MAD_Trigger_workflow_Step5.png
 ---
@@ -1004,6 +1014,8 @@ __Purpose:__ Export the designed and finalized map layout in order to print it a
 
 
 __Tool:__ [Print Layout Composer](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
+
+-->
 
 When you have finished the design of you map you can export it as pdf or image file in different data formats.
 
@@ -1042,7 +1054,9 @@ align: center
 
 ## Working with the warehouse isochrones
 
-The project includes isochrones for each warehouse. The warehouse isochrones correspond to one warehouse and are identifiable by their location name. If you want to add an isochrone to one of the  It is possible to add individual isochrones to the map templates by simply duplicating 
+The project includes isochrones for each warehouse. The warehouse isochrones correspond to one warehouse and are identifiable by their location name. If you want to add an isochrone to one of the  It is possible to add individual isochrones to the map templates by simply duplicating the isochrone layer and moving it to the desired map group.
+
+<!--INSERT EXAMPLE PICTURE-->
 
 # Historical Analysis of Cyclone Impacts
 
