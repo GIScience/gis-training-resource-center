@@ -1348,30 +1348,30 @@ Exporter tous les indicateurs (population, santé, éducation) vers un tableau u
 
 :::{tab-item} Graphic Modler
 
-```{figure} /fig/
+```{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task_6_export_spreadsheet__model.PNG
 ---
 width: 600px
 align: center
 ---
-
+Vue du modeleur graphique avec l’étape d’exportation vers un tableau ajoutée au modèle.
 ```
 :::
 :::{tab-item} Run Model Configuration
-```{figure} /fig/
+```{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task6_export_spreadsheet_run_configurations.PNG
 ---
 width: 600px
 align: center
 ---
-
+Fenêtre de configuration pour exécuter le modèle avec l’option d’export vers un tableau.
 ```
 :::
 :::{tab-item} Model Output
-```{figure} /fig/
+```{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task6_export_spreadsheet_results_AT.PNG
 ---
 width: 600px
 align: center
 ---
-
+Résultats finaux du modèle exportés dans un tableau prêt à être utilisé.
 ```
 :::
 ::::
