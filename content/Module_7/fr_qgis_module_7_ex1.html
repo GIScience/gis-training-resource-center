@@ -572,14 +572,9 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tache-4-visualiser-les-resultats-de-limpact-du-cyclone-aina-applique-des-styles-a-ses-cartes">Tâche 4 : Visualiser les résultats de l’impact du cyclone – Aina applique des styles à ses cartes</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#charger-les-couches-necessaires-si-ce-nest-pas-deja-fait">1. <strong>Charger les couches nécessaires (si ce n’est pas déjà fait)</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#appliquer-des-fichiers-de-style-predefinis">2. <strong>Appliquer des fichiers de style prédéfinis</strong></a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-visualizing-cyclone-impact-results-aina-styles-her-layers">Task 4: Visualizing Cyclone Impact Results – Aina Styles Her Layers</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-required-layers-if-not-already-loaded">1. <strong>Load Required Layers (if not already loaded)</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#apply-predefined-style-files">2. <strong>Apply Predefined Style Files</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#style-percentage-layers-manually">3. <strong>Style Percentage Layers Manually</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#save-your-new-styles-for-reuse">4. <strong>Save Your New Styles for Reuse</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optional-import-styles-into-your-qgis-library">5. <em>(Optional)</em> Import Styles into Your QGIS Library</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#styliser-manuellement-les-couches-de-pourcentage">3. <strong>Styliser manuellement les couches de pourcentage</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enregistrez-vos-nouveaux-styles-pour-les-reutiliser">4. <strong>Enregistrez vos nouveaux styles pour les réutiliser</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optionnel-importer-les-styles-dans-votre-bibliotheque-qgis">5. <em>(Optionnel)</em> Importer les styles dans votre bibliothèque QGIS</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-5-quick-map-creation-aina-uses-map-templates">Task 5: Quick Map Creation – Aina Uses Map Templates</a><ul class="nav section-nav flex-column">
@@ -1743,81 +1738,32 @@ Sortie du modèle</label><div class="sd-tab-content docutils">
 </tr>
 </tbody>
 </table>
-</section>
-</section>
-<section id="task-4-visualizing-cyclone-impact-results-aina-styles-her-layers">
-<h2>Task 4: Visualizing Cyclone Impact Results – Aina Styles Her Layers<a class="headerlink" href="#task-4-visualizing-cyclone-impact-results-aina-styles-her-layers" title="Permalink to this heading">#</a></h2>
-<p>Aina now has all the analysis results she needs — but numbers and tables alone won’t convince her colleagues or decision-makers. What they need are clear and easy-to-read maps that can be used directly in meetings and reports.</p>
-<p>To save time, Aina doesn’t want to adjust colors and legends manually each time a new cyclone comes in. Instead, she will use ready-made style files (.qml) that instantly give layers a professional and consistent look. Where no style exists yet, she will create one herself, so that next time the map can be updated with just a few clicks.</p>
-<p>In this task, you will help Aina make her cyclone impact maps both informative and visually compelling by applying and creating QGIS style files.</p>
-<section id="load-required-layers-if-not-already-loaded">
-<h3>1. <strong>Load Required Layers (if not already loaded)</strong><a class="headerlink" href="#load-required-layers-if-not-already-loaded" title="Permalink to this heading">#</a></h3>
-<p>Make sure the following layers are already loaded into your QGIS project. These are outputs from <strong>Task 3</strong>:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">example_Harald_2025_Track</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">cyclone_harald_buffer</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Population</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">admin2_health_affected</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">admin2_education_affected</span></code></p></li>
-</ul>
-<p>If any are missing:</p>
-<ul class="simple">
-<li><p>Load them using <strong>drag &amp; drop</strong> from your <code class="docutils literal notranslate"><span class="pre">results</span></code> folder, or</p></li>
-<li><p>Use <code class="docutils literal notranslate"><span class="pre">Layer</span></code> → <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> → <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code> or <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Raster</span> <span class="pre">Layer</span></code></p></li>
-</ul>
-</section>
-<hr class="docutils" />
-<section id="apply-predefined-style-files">
-<h3>2. <strong>Apply Predefined Style Files</strong><a class="headerlink" href="#apply-predefined-style-files" title="Permalink to this heading">#</a></h3>
-<p>Apply the following<code class="docutils literal notranslate"><span class="pre">.qml</span></code> style files to the respective layers:</p>
-<table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Layer</strong></p></th>
-<th class="head"><p><strong>Style File</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">example_Harald_2025_Track</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">storm_track_cyclone_style.qml</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">cyclone_harald_buffer</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">exposed_cyclone_area_style.qml</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Population</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">exposed_population_style.qml</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">admin2_health_affected</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">exposed_healthsites_style.qml</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">admin2_education_affected</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">exposed_education_facilities_style.qml</span></code></p></td>
-</tr>
-</tbody>
-</table>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>⚠️ For the <strong>health</strong> and <strong>education facilities</strong>, the provided style files are linked to the column containing the <strong>sum of exposed facilities</strong>.<br />
-They are <strong>not</strong> based on the percentage column.</p>
+<p>⚠️ Pour les <strong>établissements de santé</strong> et <strong>établissements d’enseignement</strong>, les fichiers de style fournis sont liés à la colonne contenant le <strong>nombre total d’établissements exposés</strong>.<br />
+Ils ne sont <strong>pas</strong> basés sur la colonne de pourcentage.</p>
 </div>
-<p><strong>Steps:</strong></p>
+<p><strong>Étapes :</strong></p>
 <ul class="simple">
-<li><p>Right-click on the layer in the <strong>Layers Panel</strong></p></li>
-<li><p>Select <strong>Properties</strong></p></li>
-<li><p>In the window that opens, go to the <strong>Symbology</strong> tab</p></li>
-<li><p>At the bottom left, click <strong>Style</strong> → <strong>Load Style…</strong></p></li>
-<li><p>Click on the three points <img alt="" src="../../_images/Three_points.png" /></p></li>
-<li><p>Navigate to the corresponding <code class="docutils literal notranslate"><span class="pre">.qml</span></code> file in the folder <code class="docutils literal notranslate"><span class="pre">layer_sytle</span></code>and select it</p></li>
-<li><p>Click <strong>Open</strong>, then <strong>Apply</strong> and <strong>OK</strong> to confirm</p></li>
+<li><p>Faites un clic droit sur la couche dans le <strong>Panneau des couches</strong></p></li>
+<li><p>Sélectionnez <strong>Propriétés</strong></p></li>
+<li><p>Dans la fenêtre qui s’ouvre, allez dans l’onglet <strong>Symbologie</strong></p></li>
+<li><p>En bas à gauche, cliquez sur <strong>Style</strong> → <strong>Charger le style…</strong></p></li>
+<li><p>Cliquez sur les trois points <img alt="" src="../../_images/Three_points.png" /></p></li>
+<li><p>Naviguez jusqu’au fichier <code class="docutils literal notranslate"><span class="pre">.qml</span></code> correspondant dans le dossier <code class="docutils literal notranslate"><span class="pre">layer_style</span></code> et sélectionnez-le</p></li>
+<li><p>Cliquez sur <strong>Ouvrir</strong>, puis <strong>Appliquer</strong> et <strong>OK</strong> pour confirmer</p></li>
 </ul>
 <p><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_output_style.mp4"></video></p>
 <blockquote>
-<div><p>💡 <em>If the style doesn’t load correctly, double-check the column names and make sure the column name used in the <code class="docutils literal notranslate"><span class="pre">.qml</span></code> file matches the one in your layer. To do this, open the <strong>Attribute Table</strong> of the layer and compare field names.</em></p>
+<div><p>💡 <em>Si le style ne se charge pas correctement, vérifiez les noms de colonnes et assurez-vous qu’ils
+correspondent à ceux utilisés dans le fichier <code class="docutils literal notranslate"><span class="pre">.qml</span></code>. Pour cela, ouvrez la <strong>table attributaire</strong> de la couche et
+comparez les noms des champs.</em></p>
 </div></blockquote>
 <hr class="docutils" />
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-11" name="sd-tab-set-4" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-11">
-Intermediate result: Exposed Population</label><div class="sd-tab-content docutils">
+Résultat intermédiaire : Population exposée</label><div class="sd-tab-content docutils">
 <figure class="align-center" id="id30">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_model_task4_exposed_pop_style.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_model_task4_exposed_pop_style.PNG" src="../../_images/fr_MDG_AA_intermediate_result_model_task4_exposed_pop_style.PNG" style="width: 600px;" /></a>
 <figcaption>
@@ -1827,7 +1773,7 @@ Intermediate result: Exposed Population</label><div class="sd-tab-content docuti
 </div>
 <input id="sd-tab-item-12" name="sd-tab-set-4" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-12">
-Intermediate result: Exposed Health Facilities</label><div class="sd-tab-content docutils">
+Résultat intermédiaire : Établissements de santé exposés</label><div class="sd-tab-content docutils">
 <figure class="align-center" id="id31">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_model_task4_exposed_HS_sum_style.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_model_task4_exposed_HS_sum_style.PNG" src="../../_images/fr_MDG_AA_intermediate_result_model_task4_exposed_HS_sum_style.PNG" style="width: 600px;" /></a>
 <figcaption>
@@ -1837,7 +1783,7 @@ Intermediate result: Exposed Health Facilities</label><div class="sd-tab-content
 </div>
 <input id="sd-tab-item-13" name="sd-tab-set-4" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-13">
-Intermediate result: Exposed Education Facilities</label><div class="sd-tab-content docutils">
+Résultat intermédiaire : Établissements scolaires exposés</label><div class="sd-tab-content docutils">
 <figure class="align-center" id="id32">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_model_task4_exposed_ES_sum_style.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_model_task4_exposed_ES_sum_style.PNG" src="../../_images/fr_MDG_AA_intermediate_result_model_task4_exposed_ES_sum_style.PNG" style="width: 600px;" /></a>
 <figcaption>
@@ -1846,9 +1792,39 @@ Intermediate result: Exposed Education Facilities</label><div class="sd-tab-cont
 </figure>
 </div>
 </div>
+<p>Aina souhaite également visualiser le pourcentage d’établissements de santé et d’éducation exposés. Toutefois, puisqu’aucun style n’est encore disponible, elle doit effectuer la procédure manuellement.</p>
+<p><strong>Étapes :</strong></p>
+<ul>
+<li><p><strong>Clique droit</strong> sur la couche <code class="docutils literal notranslate"><span class="pre">admin2_health_affected</span></code> → sélectionnez <strong>Dupliquer la couche</strong></p></li>
+<li><p><strong>Renommez</strong> la couche dupliquée :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">admin2_health_affected_percentage</span>
+</pre></div>
+</div>
+</li>
+<li><p>Faites un clic droit sur la couche dans le <strong>Panneau des couches</strong></p></li>
+<li><p>Sélectionnez <strong>Propriétés</strong></p></li>
+<li><p>Dans la fenêtre qui s’ouvre, allez à l’onglet <strong>Symbologie</strong></p></li>
+<li><p>Définissez la <strong>Symbologie</strong> sur <code class="docutils literal notranslate"><span class="pre">Graduée</span></code></p></li>
+<li><p>Choisissez le <strong>champ</strong> approprié :</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pct_health_affected</span></code></p></li>
+</ul>
+</li>
+<li><p>Ouvrez l’onglet <strong>Histogramme</strong> pour visualiser la distribution des valeurs en cliquant sur <code class="docutils literal notranslate"><span class="pre">calculer</span> <span class="pre">l’histogramme</span></code></p></li>
+<li><p>Ensuite, retournez à l’onglet <code class="docutils literal notranslate"><span class="pre">Classes</span></code> et configurez :</p>
+<ul class="simple">
+<li><p><strong>Mode</strong> : <code class="docutils literal notranslate"><span class="pre">Intervalle</span> <span class="pre">égal</span></code></p></li>
+<li><p><strong>Classes</strong> : <code class="docutils literal notranslate"><span class="pre">4</span></code></p></li>
+</ul>
+</li>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">OK</span></code>. Cela créera quatre classes (<code class="docutils literal notranslate"><span class="pre">0–25%</span></code>, <code class="docutils literal notranslate"><span class="pre">25–50%</span></code>, <code class="docutils literal notranslate"><span class="pre">50–75%</span></code>, <code class="docutils literal notranslate"><span class="pre">75–100%</span></code>)</p></li>
+<li><p>Choisissez un dégradé de couleur (ex. : jaune clair → rouge foncé)</p></li>
+<li><p>Facultativement, personnalisez les étiquettes de classes pour plus de clarté</p></li>
+<li><p>Cliquez sur <strong>Appliquer</strong></p></li>
+</ul>
 </section>
-<section id="style-percentage-layers-manually">
-<h3>3. <strong>Style Percentage Layers Manually</strong><a class="headerlink" href="#style-percentage-layers-manually" title="Permalink to this heading">#</a></h3>
+<section id="styliser-manuellement-les-couches-de-pourcentage">
+<h3>3. <strong>Styliser manuellement les couches de pourcentage</strong><a class="headerlink" href="#styliser-manuellement-les-couches-de-pourcentage" title="Permalink to this heading">#</a></h3>
 <p>Aina also wants to visualise the percentage of exposed health and education facilities. However, since there is no prepared style available, she must complete the process manually.</p>
 <p><strong>Steps:</strong></p>
 <ul>
@@ -1881,29 +1857,29 @@ Intermediate result: Exposed Education Facilities</label><div class="sd-tab-cont
 </ul>
 <p><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_style_affacted_HS_pct.mp4"></video></p>
 <ul class="simple">
-<li><p>Repeat the same process for the layer <code class="docutils literal notranslate"><span class="pre">admin2_education_affected</span></code>.
-After duplicating the layer, rename the new one to:</p></li>
+<li><p>Répétez la même procédure pour la couche <code class="docutils literal notranslate"><span class="pre">admin2_education_affected</span></code>.<br />
+Après duplication, renommez la nouvelle couche :</p></li>
 </ul>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">admin2_health_affected_percentage</span>
 </pre></div>
 </div>
 <blockquote>
-<div><p>🧠 <em>Why 4 equal classes?</em><br />
-This helps visualize severity across districts using simple and interpretable risk categories. However, you can experiment with <strong>Natural Breaks</strong> if data is unevenly distributed.</p>
+<div><p>🧠 <em>Pourquoi 4 classes égales ?</em><br />
+Cela permet de visualiser la gravité par district en utilisant des catégories de risque simples et interprétables. Cependant, vous pouvez aussi expérimenter les <strong>ruptures naturelles</strong> si les données sont inégalement réparties.</p>
 </div></blockquote>
 </section>
 <hr class="docutils" />
-<section id="save-your-new-styles-for-reuse">
-<h3>4. <strong>Save Your New Styles for Reuse</strong><a class="headerlink" href="#save-your-new-styles-for-reuse" title="Permalink to this heading">#</a></h3>
-<p>Save your manually created styles as <code class="docutils literal notranslate"><span class="pre">.qml</span></code> files for future reuse.</p>
-<p><strong>Steps:</strong></p>
+<section id="enregistrez-vos-nouveaux-styles-pour-les-reutiliser">
+<h3>4. <strong>Enregistrez vos nouveaux styles pour les réutiliser</strong><a class="headerlink" href="#enregistrez-vos-nouveaux-styles-pour-les-reutiliser" title="Permalink to this heading">#</a></h3>
+<p>Enregistrez vos styles manuels au format <code class="docutils literal notranslate"><span class="pre">.qml</span></code> pour pouvoir les réutiliser plus tard.</p>
+<p><strong>Étapes :</strong></p>
 <ul>
-<li><p>Right-click on the layer in the <strong>Layers Panel</strong></p></li>
-<li><p>Select <strong>Properties</strong></p></li>
-<li><p>In the window that opens, go to the <strong>Symbology</strong> tab</p></li>
-<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Style</span></code> → <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Style…</span></code></p></li>
-<li><p>Save the file in the folder <code class="docutils literal notranslate"><span class="pre">layer_sytle</span></code></p></li>
-<li><p>Use these filenames:</p>
+<li><p>Faites un clic droit sur la couche dans le <strong>Panneau des couches</strong></p></li>
+<li><p>Sélectionnez <strong>Propriétés</strong></p></li>
+<li><p>Dans la fenêtre qui s’ouvre, allez à l’onglet <strong>Symbologie</strong></p></li>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">Style</span></code> → <code class="docutils literal notranslate"><span class="pre">Enregistrer</span> <span class="pre">le</span> <span class="pre">style…</span></code></p></li>
+<li><p>Enregistrez le fichier dans le dossier <code class="docutils literal notranslate"><span class="pre">layer_sytle</span></code></p></li>
+<li><p>Utilisez les noms de fichiers suivants :</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">health_pct_affected_style</span>
 </pre></div>
 </div>
@@ -1914,15 +1890,15 @@ This helps visualize severity across districts using simple and interpretable ri
 </ul>
 <p><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_style_save_new_style.mp4"></video></p>
 </section>
-<section id="optional-import-styles-into-your-qgis-library">
-<h3>5. <em>(Optional)</em> Import Styles into Your QGIS Library<a class="headerlink" href="#optional-import-styles-into-your-qgis-library" title="Permalink to this heading">#</a></h3>
-<p>To reuse your styles in any future project:</p>
+<section id="optionnel-importer-les-styles-dans-votre-bibliotheque-qgis">
+<h3>5. <em>(Optionnel)</em> Importer les styles dans votre bibliothèque QGIS<a class="headerlink" href="#optionnel-importer-les-styles-dans-votre-bibliotheque-qgis" title="Permalink to this heading">#</a></h3>
+<p>Pour réutiliser vos styles dans de futurs projets :</p>
 <ul class="simple">
-<li><p>Go to <code class="docutils literal notranslate"><span class="pre">Settings</span></code> → <code class="docutils literal notranslate"><span class="pre">Style</span> <span class="pre">Manager</span></code></p></li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Import/Export</span></code> → <code class="docutils literal notranslate"><span class="pre">Import</span> <span class="pre">Items</span></code></p></li>
-<li><p>Browse to and select your saved <code class="docutils literal notranslate"><span class="pre">.qml</span></code> files</p></li>
+<li><p>Allez dans <code class="docutils literal notranslate"><span class="pre">Préférences</span></code> → <code class="docutils literal notranslate"><span class="pre">Gestionnaire</span> <span class="pre">de</span> <span class="pre">styles</span></code></p></li>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">Importer/Exporter</span></code> → <code class="docutils literal notranslate"><span class="pre">Importer</span> <span class="pre">des</span> <span class="pre">éléments</span></code></p></li>
+<li><p>Parcourez et sélectionnez vos fichiers <code class="docutils literal notranslate"><span class="pre">.qml</span></code> enregistrés</p></li>
 </ul>
-<p>The styles will now appear as presets in the <strong>Layer Styling Panel</strong>.</p>
+<p>Les styles apparaîtront désormais comme préréglages dans le <strong>Panneau de style de couche</strong>.</p>
 </section>
 </section>
 <hr class="docutils" />
@@ -2554,14 +2530,9 @@ or right-click the layer and select <code class="docutils literal notranslate"><
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tache-4-visualiser-les-resultats-de-limpact-du-cyclone-aina-applique-des-styles-a-ses-cartes">Tâche 4 : Visualiser les résultats de l’impact du cyclone – Aina applique des styles à ses cartes</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#charger-les-couches-necessaires-si-ce-nest-pas-deja-fait">1. <strong>Charger les couches nécessaires (si ce n’est pas déjà fait)</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#appliquer-des-fichiers-de-style-predefinis">2. <strong>Appliquer des fichiers de style prédéfinis</strong></a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-visualizing-cyclone-impact-results-aina-styles-her-layers">Task 4: Visualizing Cyclone Impact Results – Aina Styles Her Layers</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-required-layers-if-not-already-loaded">1. <strong>Load Required Layers (if not already loaded)</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#apply-predefined-style-files">2. <strong>Apply Predefined Style Files</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#style-percentage-layers-manually">3. <strong>Style Percentage Layers Manually</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#save-your-new-styles-for-reuse">4. <strong>Save Your New Styles for Reuse</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optional-import-styles-into-your-qgis-library">5. <em>(Optional)</em> Import Styles into Your QGIS Library</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#styliser-manuellement-les-couches-de-pourcentage">3. <strong>Styliser manuellement les couches de pourcentage</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enregistrez-vos-nouveaux-styles-pour-les-reutiliser">4. <strong>Enregistrez vos nouveaux styles pour les réutiliser</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optionnel-importer-les-styles-dans-votre-bibliotheque-qgis">5. <em>(Optionnel)</em> Importer les styles dans votre bibliothèque QGIS</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-5-quick-map-creation-aina-uses-map-templates">Task 5: Quick Map Creation – Aina Uses Map Templates</a><ul class="nav section-nav flex-column">

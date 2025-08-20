@@ -976,66 +976,34 @@ Appliquez les fichiers de style `.qml` suivants aux couches correspondantes :
 
 
 
-## Task 4: Visualizing Cyclone Impact Results – Aina Styles Her Layers
-
-Aina now has all the analysis results she needs — but numbers and tables alone won’t convince her colleagues or decision-makers. What they need are clear and easy-to-read maps that can be used directly in meetings and reports.
-
-To save time, Aina doesn’t want to adjust colors and legends manually each time a new cyclone comes in. Instead, she will use ready-made style files (.qml) that instantly give layers a professional and consistent look. Where no style exists yet, she will create one herself, so that next time the map can be updated with just a few clicks.
-
-In this task, you will help Aina make her cyclone impact maps both informative and visually compelling by applying and creating QGIS style files.
-
-### 1. **Load Required Layers (if not already loaded)**
-
-Make sure the following layers are already loaded into your QGIS project. These are outputs from **Task 3**:
-
-- `example_Harald_2025_Track`
-- `cyclone_harald_buffer`
-- `Harald_Exposed_Population`
-- `admin2_health_affected`
-- `admin2_education_affected`
-
-If any are missing:
-- Load them using **drag & drop** from your `results` folder, or
-- Use `Layer` → `Add Layer` → `Add Vector Layer` or `Add Raster Layer`
-
----
-
-### 2. **Apply Predefined Style Files**
-Apply the following`.qml` style files to the respective layers:
-
-| **Layer**                              | **Style File**                            |
-|----------------------------------------|-------------------------------------------|
-| `example_Harald_2025_Track`                    | `storm_track_cyclone_style.qml`           |
-| `cyclone_harald_buffer`                  | `exposed_cyclone_area_style.qml`          |
-| `Harald_Exposed_Population`            | `exposed_population_style.qml`            |
-| `admin2_health_affected`          | `exposed_healthsites_style.qml`           |
-| `admin2_education_affected`            | `exposed_education_facilities_style.qml`  |
 
 ```{note}
-⚠️ For the **health** and **education facilities**, the provided style files are linked to the column containing the **sum of exposed facilities**.  
-They are **not** based on the percentage column.  
+⚠️ Pour les **établissements de santé** et **établissements d’enseignement**, les fichiers de style fournis sont liés à la colonne contenant le **nombre total d’établissements exposés**.  
+Ils ne sont **pas** basés sur la colonne de pourcentage.  
 ```
 
 
-**Steps:**
-- Right-click on the layer in the **Layers Panel**  
-- Select **Properties**  
-- In the window that opens, go to the **Symbology** tab  
-- At the bottom left, click **Style** → **Load Style…**
-- Click on the three points ![](/fig/Three_points.png)  
-- Navigate to the corresponding `.qml` file in the folder `layer_sytle`and select it  
-- Click **Open**, then **Apply** and **OK** to confirm  
+**Étapes :**
+- Faites un clic droit sur la couche dans le **Panneau des couches**  
+- Sélectionnez **Propriétés**  
+- Dans la fenêtre qui s’ouvre, allez dans l’onglet **Symbologie**  
+- En bas à gauche, cliquez sur **Style** → **Charger le style…**
+- Cliquez sur les trois points ![](/fig/Three_points.png)  
+- Naviguez jusqu’au fichier `.qml` correspondant dans le dossier `layer_style` et sélectionnez-le  
+- Cliquez sur **Ouvrir**, puis **Appliquer** et **OK** pour confirmer  
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_output_style.mp4"></video>
 
-> 💡 *If the style doesn’t load correctly, double-check the column names and make sure the column name used in the `.qml` file matches the one in your layer. To do this, open the **Attribute Table** of the layer and compare field names.*
+> 💡 *Si le style ne se charge pas correctement, vérifiez les noms de colonnes et assurez-vous qu’ils 
+correspondent à ceux utilisés dans le fichier `.qml`. Pour cela, ouvrez la **table attributaire** de la couche et 
+comparez les noms des champs.*
 
 ---
 
 
 ::::{tab-set}
 
-:::{tab-item} Intermediate result: Exposed Population
+:::{tab-item} Résultat intermédiaire : Population exposée
 
 ```{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_pop_style.PNG
 ---
@@ -1045,7 +1013,7 @@ align: center
 Carte montrant le nombre de personnes exposées par district après l’application du style .qml.
 ```
 :::
-:::{tab-item} Intermediate result: Exposed Health Facilities
+:::{tab-item} Résultat intermédiaire : Établissements de santé exposés
 ```{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_HS_sum_style.PNG
 ---
 width: 600px
@@ -1054,7 +1022,7 @@ align: center
 Carte indiquant le nombre total d’établissements de santé exposés par district, représentés avec le style prédéfini.
 ```
 :::
-:::{tab-item} Intermediate result: Exposed Education Facilities
+:::{tab-item} Résultat intermédiaire : Établissements scolaires exposés
 ```{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_ES_sum_style.PNG
 ---
 width: 600px
@@ -1065,9 +1033,31 @@ Carte affichant le nombre total d’établissements scolaires exposés par distr
 :::
 ::::
 
+Aina souhaite également visualiser le pourcentage d’établissements de santé et d’éducation exposés. Toutefois, puisqu’aucun style n’est encore disponible, elle doit effectuer la procédure manuellement.
+
+**Étapes :**
+- **Clique droit** sur la couche `admin2_health_affected` → sélectionnez **Dupliquer la couche**  
+- **Renommez** la couche dupliquée :
+  ```
+  admin2_health_affected_percentage
+  ```
+- Faites un clic droit sur la couche dans le **Panneau des couches**  
+- Sélectionnez **Propriétés**  
+- Dans la fenêtre qui s’ouvre, allez à l’onglet **Symbologie**  
+- Définissez la **Symbologie** sur `Graduée`
+- Choisissez le **champ** approprié :
+  - `pct_health_affected`
+- Ouvrez l’onglet **Histogramme** pour visualiser la distribution des valeurs en cliquant sur `calculer l’histogramme`
+- Ensuite, retournez à l’onglet `Classes` et configurez :
+  - **Mode** : `Intervalle égal`
+  - **Classes** : `4`
+- Cliquez sur `OK`. Cela créera quatre classes (`0–25%`, `25–50%`, `50–75%`, `75–100%`)
+- Choisissez un dégradé de couleur (ex. : jaune clair → rouge foncé)
+- Facultativement, personnalisez les étiquettes de classes pour plus de clarté
+- Cliquez sur **Appliquer**
 
 
-### 3. **Style Percentage Layers Manually**
+### 3. **Styliser manuellement les couches de pourcentage**
 
 Aina also wants to visualise the percentage of exposed health and education facilities. However, since there is no prepared style available, she must complete the process manually.
 
@@ -1094,49 +1084,49 @@ Aina also wants to visualise the percentage of exposed health and education faci
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_style_affacted_HS_pct.mp4"></video>
 
-- Repeat the same process for the layer `admin2_education_affected`.
-After duplicating the layer, rename the new one to:
+- Répétez la même procédure pour la couche `admin2_education_affected`.  
+Après duplication, renommez la nouvelle couche :
  ```
  admin2_health_affected_percentage
-``` 
+```
 
 
-> 🧠 *Why 4 equal classes?*  
-> This helps visualize severity across districts using simple and interpretable risk categories. However, you can experiment with **Natural Breaks** if data is unevenly distributed.
+> 🧠 *Pourquoi 4 classes égales ?*  
+> Cela permet de visualiser la gravité par district en utilisant des catégories de risque simples et interprétables. Cependant, vous pouvez aussi expérimenter les **ruptures naturelles** si les données sont inégalement réparties.
 
 ---
 
-### 4. **Save Your New Styles for Reuse**
+### 4. **Enregistrez vos nouveaux styles pour les réutiliser**
 
-Save your manually created styles as `.qml` files for future reuse.
+Enregistrez vos styles manuels au format `.qml` pour pouvoir les réutiliser plus tard.
 
-**Steps:**
-- Right-click on the layer in the **Layers Panel**  
-- Select **Properties**  
-- In the window that opens, go to the **Symbology** tab  
-- Click on `Style` → `Save Style…`
-- Save the file in the folder `layer_sytle`
-- Use these filenames:
+**Étapes :**
+- Faites un clic droit sur la couche dans le **Panneau des couches**  
+- Sélectionnez **Propriétés**  
+- Dans la fenêtre qui s’ouvre, allez à l’onglet **Symbologie**  
+- Cliquez sur `Style` → `Enregistrer le style…`
+- Enregistrez le fichier dans le dossier `layer_sytle`
+- Utilisez les noms de fichiers suivants :
    ```
    health_pct_affected_style
-  ```
-  ```
-  education_pct_affected_style
-  ```
+   ```
+   ```
+   education_pct_affected_style
+   ```
 
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_style_save_new_style.mp4"></video>
 
 
-### 5. *(Optional)* Import Styles into Your QGIS Library
+### 5. *(Optionnel)* Importer les styles dans votre bibliothèque QGIS
 
-To reuse your styles in any future project:
+Pour réutiliser vos styles dans de futurs projets :
 
-- Go to `Settings` → `Style Manager`
-- Click `Import/Export` → `Import Items`
-- Browse to and select your saved `.qml` files
+- Allez dans `Préférences` → `Gestionnaire de styles`
+- Cliquez sur `Importer/Exporter` → `Importer des éléments`
+- Parcourez et sélectionnez vos fichiers `.qml` enregistrés
 
-The styles will now appear as presets in the **Layer Styling Panel**.
+Les styles apparaîtront désormais comme préréglages dans le **Panneau de style de couche**.
 
 ---
 
