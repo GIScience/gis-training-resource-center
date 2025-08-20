@@ -1,61 +1,24 @@
 🚧This part of training platform is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
 # AI Logistic Awareness System (AILAS) Street View image collection Field Experiments
+This documentation aims to consolidate all information regarding the Street View image collection field experiments for AILAS and give a consise overview over the AILAS project. It focuses on the process of collecting Street View images and is intended for use by participants in the experiments as a practical guideline.
 
-This documentation aims to consolidate all information regarding the Street View image collection field experiments for AILAS. It focuses on the process of collecting Street View images and is intended for use by participants in the experiments as a practical guideline.
+## The AILAS Project
+AILAS is a planned, weather-adaptive routing service that helps people to plan trips on unpaved roads by showing which road segments are currently passable. It combines fresh street-level images with rainfall, soil moisture, terrain and other openly available geodata, and then delivers practical route suggestions through the openrouteservice (ORS) platform. The goal is to reduce delays and risks in humanitarian operations and other logistics, especially in regions like Madagascar where many roads are unpaved. 
 
-:::{admonition} Experiment Goal
-:class: tip
-One of the key components of AILAS is the ongoing collection of street view images in the field. This experiment aims to gather experience in collecting such images in Madagascar and to obtain feedback on the usability of the cameras and the web upload process. Additionally, a secondary objective is to capture street view images in Madagascar for future use in AILAS once it becomes operational.
+:::{admonition} Technical details
+To develop the system dashcams on CRM vehicles capture geotagged street-level images along planned routes. All images are uploaded a cloud storage (Panoramax), where faces/plates are blurred and standard preprocessing prepares the data for analysis.  Each image is time-stamped and linked to its OpenStreetMap road segment and then classified into different passability classes (e.g. bad passability/ medium passabilty). The classified images will be used as training data fort he development of an AI model, whose task will be to automatically classify passability of street level images after training. These classifications are combined with dynamic weather data and further secondary data (e.g. terrain or soil classes) to develop a model that is able to estimate passability based on current weather data/forecasts.  Finally, the results are integrated into openrouteservice to account for the passability of unpaved roads when generating routes.
 :::
 
+## In Field Acquisition of Street Level Imagery
+Collecting good street-level images is essential for AILAS, because the AI model for road passability classification needs clear, georeferenced pictures of road conditions under different weather to learn and improve. For this, dashcams mounted on CRM vehicles record along planned routes; where helpful, openly licensed images from Mapillary can extend coverage. All images are uploaded to a Panoramax server, where privacy-preserving blurring and standard preprocessing prepare them for analysis. Reliable capture, sufficient image quality, and robust upload over unstable connections are the main practical challenges we will test in the field. 
 
-### AILAS Vison
-
-The AI Logistic Awareness System (AILAS) is a proposed system that enables users to view real-time road passability through a browser-based Geographic Information System (GIS). This will be accomplished by integrating current rainfall data and weather forecasts with information about the roads gathered from street view images.
-
-
-### Goal of Field Experiments
+## Experiment Goal
+This first test run in Madagascar aims to gain hands-on experience with camera handling, image quality, GPS accuracy, and the stability of the upload pipeline—then collect structured feedback from CRM teams on what works and what needs to change. We will also start building a local image base (repeated passes of the same tracks in different weather) that can be used later to train and validate the AILAS model. A secondary goal is to document a simple end-to-end workflow—from mounting the camera, driving and recording, to uploading to Panoramax and confirming that images appear correctly—so future teams can follow the same steps. The insights from this test will shape equipment choices, data volume expectations, and standard operating procedures for larger deployments and provide a first data set to develop the planned AI model.
 
 
-## Getting Started
-### Overview of the Process
-What the entire process will look like (from camera installation to data upload).
 
 
-### Key Terms and Definitions
-
-A glossary of terms used throughout the project (e.g., "Street-Level Images", "Panoramax Server", etc.).
-
-## Field Setup and Operations
-
-### GoPro Installation
-
- Step-by-step guide with images and possibly video tutorials showing how to install and set up the cameras in the vehicles.
-### Operational Guidelines
-
-Interactive checklist or embedded tutorial on using the cameras during field operations (e.g., when to start/stop recording, ensuring the camera is recording properly).
-### Recording Best Practices
-Tips for ensuring quality footage, adjusted for different weather and lighting conditions.
-### Weather and Road Conditions
-A dynamic section with tips on how to adapt based on real-time weather conditions (could include weather widgets or links to weather sources).
-### Safety Guidelines
-Embedded safety information for drivers, including best practices for operating equipment while ensuring safe driving.
-### Face and license plate blurring
-
-## Uploading and Data Management
-### Uploading Data
-
-Step-by-step instructions on how to upload footage to the Panoramax server, including images, videos, and FAQs.
-### Troubleshooting Upload Issues
-Interactive troubleshooting guide with common issues and solutions related to uploading (e.g., dealing with low internet connection).
-### Data Access
-
-How the data will be accessed and managed by the team, with direct links to server or database portals for review.
-
-
-## GoPro Model
-Specifications of the GoPro cameras used in the project (e.g., resolution, frame rate, lens specifications).
 
 ## Panoramax
 

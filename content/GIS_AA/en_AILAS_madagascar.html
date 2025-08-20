@@ -565,29 +565,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ailas-vison">AILAS Vison</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goal-of-field-experiments">Goal of Field Experiments</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-started">Getting Started</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#overview-of-the-process">Overview of the Process</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms-and-definitions">Key Terms and Definitions</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#field-setup-and-operations">Field Setup and Operations</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gopro-installation">GoPro Installation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operational-guidelines">Operational Guidelines</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recording-best-practices">Recording Best Practices</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#weather-and-road-conditions">Weather and Road Conditions</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#safety-guidelines">Safety Guidelines</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#face-and-license-plate-blurring">Face and license plate blurring</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uploading-and-data-management">Uploading and Data Management</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uploading-data">Uploading Data</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-upload-issues">Troubleshooting Upload Issues</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-access">Data Access</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gopro-model">GoPro Model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-ailas-project">The AILAS Project</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-field-acquisition-of-street-level-imagery">In Field Acquisition of Street Level Imagery</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#experiment-goal">Experiment Goal</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#panoramax">Panoramax</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-panoramax">What is Panoramax?</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#panoramax-features">Panoramax Features</a></li>
@@ -608,73 +588,22 @@ document.write(`
   <p>🚧This part of training platform is under ⚠️construction⚠️ and may not be shared or published! 🚧</p>
 <section class="tex2jax_ignore mathjax_ignore" id="ai-logistic-awareness-system-ailas-street-view-image-collection-field-experiments">
 <h1>AI Logistic Awareness System (AILAS) Street View image collection Field Experiments<a class="headerlink" href="#ai-logistic-awareness-system-ailas-street-view-image-collection-field-experiments" title="Permalink to this heading">#</a></h1>
-<p>This documentation aims to consolidate all information regarding the Street View image collection field experiments for AILAS. It focuses on the process of collecting Street View images and is intended for use by participants in the experiments as a practical guideline.</p>
-<div class="tip admonition">
-<p class="admonition-title">Experiment Goal</p>
-<p>One of the key components of AILAS is the ongoing collection of street view images in the field. This experiment aims to gather experience in collecting such images in Madagascar and to obtain feedback on the usability of the cameras and the web upload process. Additionally, a secondary objective is to capture street view images in Madagascar for future use in AILAS once it becomes operational.</p>
+<p>This documentation aims to consolidate all information regarding the Street View image collection field experiments for AILAS and give a consise overview over the AILAS project. It focuses on the process of collecting Street View images and is intended for use by participants in the experiments as a practical guideline.</p>
+<section id="the-ailas-project">
+<h2>The AILAS Project<a class="headerlink" href="#the-ailas-project" title="Permalink to this heading">#</a></h2>
+<p>AILAS is a planned, weather-adaptive routing service that helps people to plan trips on unpaved roads by showing which road segments are currently passable. It combines fresh street-level images with rainfall, soil moisture, terrain and other openly available geodata, and then delivers practical route suggestions through the openrouteservice (ORS) platform. The goal is to reduce delays and risks in humanitarian operations and other logistics, especially in regions like Madagascar where many roads are unpaved.</p>
+<div class="admonition-technical-details admonition">
+<p class="admonition-title">Technical details</p>
+<p>To develop the system dashcams on CRM vehicles capture geotagged street-level images along planned routes. All images are uploaded a cloud storage (Panoramax), where faces/plates are blurred and standard preprocessing prepares the data for analysis.  Each image is time-stamped and linked to its OpenStreetMap road segment and then classified into different passability classes (e.g. bad passability/ medium passabilty). The classified images will be used as training data fort he development of an AI model, whose task will be to automatically classify passability of street level images after training. These classifications are combined with dynamic weather data and further secondary data (e.g. terrain or soil classes) to develop a model that is able to estimate passability based on current weather data/forecasts.  Finally, the results are integrated into openrouteservice to account for the passability of unpaved roads when generating routes.</p>
 </div>
-<section id="ailas-vison">
-<h2>AILAS Vison<a class="headerlink" href="#ailas-vison" title="Permalink to this heading">#</a></h2>
-<p>The AI Logistic Awareness System (AILAS) is a proposed system that enables users to view real-time road passability through a browser-based Geographic Information System (GIS). This will be accomplished by integrating current rainfall data and weather forecasts with information about the roads gathered from street view images.</p>
 </section>
-<section id="goal-of-field-experiments">
-<h2>Goal of Field Experiments<a class="headerlink" href="#goal-of-field-experiments" title="Permalink to this heading">#</a></h2>
+<section id="in-field-acquisition-of-street-level-imagery">
+<h2>In Field Acquisition of Street Level Imagery<a class="headerlink" href="#in-field-acquisition-of-street-level-imagery" title="Permalink to this heading">#</a></h2>
+<p>Collecting good street-level images is essential for AILAS, because the AI model for road passability classification needs clear, georeferenced pictures of road conditions under different weather to learn and improve. For this, dashcams mounted on CRM vehicles record along planned routes; where helpful, openly licensed images from Mapillary can extend coverage. All images are uploaded to a Panoramax server, where privacy-preserving blurring and standard preprocessing prepare them for analysis. Reliable capture, sufficient image quality, and robust upload over unstable connections are the main practical challenges we will test in the field.</p>
 </section>
-<section id="getting-started">
-<h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this heading">#</a></h2>
-<section id="overview-of-the-process">
-<h3>Overview of the Process<a class="headerlink" href="#overview-of-the-process" title="Permalink to this heading">#</a></h3>
-<p>What the entire process will look like (from camera installation to data upload).</p>
-</section>
-<section id="key-terms-and-definitions">
-<h3>Key Terms and Definitions<a class="headerlink" href="#key-terms-and-definitions" title="Permalink to this heading">#</a></h3>
-<p>A glossary of terms used throughout the project (e.g., “Street-Level Images”, “Panoramax Server”, etc.).</p>
-</section>
-</section>
-<section id="field-setup-and-operations">
-<h2>Field Setup and Operations<a class="headerlink" href="#field-setup-and-operations" title="Permalink to this heading">#</a></h2>
-<section id="gopro-installation">
-<h3>GoPro Installation<a class="headerlink" href="#gopro-installation" title="Permalink to this heading">#</a></h3>
-<p>Step-by-step guide with images and possibly video tutorials showing how to install and set up the cameras in the vehicles.</p>
-</section>
-<section id="operational-guidelines">
-<h3>Operational Guidelines<a class="headerlink" href="#operational-guidelines" title="Permalink to this heading">#</a></h3>
-<p>Interactive checklist or embedded tutorial on using the cameras during field operations (e.g., when to start/stop recording, ensuring the camera is recording properly).</p>
-</section>
-<section id="recording-best-practices">
-<h3>Recording Best Practices<a class="headerlink" href="#recording-best-practices" title="Permalink to this heading">#</a></h3>
-<p>Tips for ensuring quality footage, adjusted for different weather and lighting conditions.</p>
-</section>
-<section id="weather-and-road-conditions">
-<h3>Weather and Road Conditions<a class="headerlink" href="#weather-and-road-conditions" title="Permalink to this heading">#</a></h3>
-<p>A dynamic section with tips on how to adapt based on real-time weather conditions (could include weather widgets or links to weather sources).</p>
-</section>
-<section id="safety-guidelines">
-<h3>Safety Guidelines<a class="headerlink" href="#safety-guidelines" title="Permalink to this heading">#</a></h3>
-<p>Embedded safety information for drivers, including best practices for operating equipment while ensuring safe driving.</p>
-</section>
-<section id="face-and-license-plate-blurring">
-<h3>Face and license plate blurring<a class="headerlink" href="#face-and-license-plate-blurring" title="Permalink to this heading">#</a></h3>
-</section>
-</section>
-<section id="uploading-and-data-management">
-<h2>Uploading and Data Management<a class="headerlink" href="#uploading-and-data-management" title="Permalink to this heading">#</a></h2>
-<section id="uploading-data">
-<h3>Uploading Data<a class="headerlink" href="#uploading-data" title="Permalink to this heading">#</a></h3>
-<p>Step-by-step instructions on how to upload footage to the Panoramax server, including images, videos, and FAQs.</p>
-</section>
-<section id="troubleshooting-upload-issues">
-<h3>Troubleshooting Upload Issues<a class="headerlink" href="#troubleshooting-upload-issues" title="Permalink to this heading">#</a></h3>
-<p>Interactive troubleshooting guide with common issues and solutions related to uploading (e.g., dealing with low internet connection).</p>
-</section>
-<section id="data-access">
-<h3>Data Access<a class="headerlink" href="#data-access" title="Permalink to this heading">#</a></h3>
-<p>How the data will be accessed and managed by the team, with direct links to server or database portals for review.</p>
-</section>
-</section>
-<section id="gopro-model">
-<h2>GoPro Model<a class="headerlink" href="#gopro-model" title="Permalink to this heading">#</a></h2>
-<p>Specifications of the GoPro cameras used in the project (e.g., resolution, frame rate, lens specifications).</p>
+<section id="experiment-goal">
+<h2>Experiment Goal<a class="headerlink" href="#experiment-goal" title="Permalink to this heading">#</a></h2>
+<p>This first test run in Madagascar aims to gain hands-on experience with camera handling, image quality, GPS accuracy, and the stability of the upload pipeline—then collect structured feedback from CRM teams on what works and what needs to change. We will also start building a local image base (repeated passes of the same tracks in different weather) that can be used later to train and validate the AILAS model. A secondary goal is to document a simple end-to-end workflow—from mounting the camera, driving and recording, to uploading to Panoramax and confirming that images appear correctly—so future teams can follow the same steps. The insights from this test will shape equipment choices, data volume expectations, and standard operating procedures for larger deployments and provide a first data set to develop the planned AI model.</p>
 </section>
 <section id="panoramax">
 <h2>Panoramax<a class="headerlink" href="#panoramax" title="Permalink to this heading">#</a></h2>
@@ -758,29 +687,9 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ailas-vison">AILAS Vison</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goal-of-field-experiments">Goal of Field Experiments</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-started">Getting Started</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#overview-of-the-process">Overview of the Process</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms-and-definitions">Key Terms and Definitions</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#field-setup-and-operations">Field Setup and Operations</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gopro-installation">GoPro Installation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operational-guidelines">Operational Guidelines</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recording-best-practices">Recording Best Practices</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#weather-and-road-conditions">Weather and Road Conditions</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#safety-guidelines">Safety Guidelines</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#face-and-license-plate-blurring">Face and license plate blurring</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uploading-and-data-management">Uploading and Data Management</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uploading-data">Uploading Data</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-upload-issues">Troubleshooting Upload Issues</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-access">Data Access</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gopro-model">GoPro Model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-ailas-project">The AILAS Project</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-field-acquisition-of-street-level-imagery">In Field Acquisition of Street Level Imagery</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#experiment-goal">Experiment Goal</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#panoramax">Panoramax</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-panoramax">What is Panoramax?</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#panoramax-features">Panoramax Features</a></li>
