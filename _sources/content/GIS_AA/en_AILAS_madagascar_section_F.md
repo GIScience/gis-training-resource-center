@@ -258,19 +258,19 @@ If the scanning of the QR-code is not working immeadiately try in different ligh
 ---
 <br><br><br><br>
 
-## START OF DRIVE Checklist
+## Start of Drive Checklist
 
-### Camera Setup
+#### Camera Setup
 - Mount the camera on the windshield facing straight ahead.  
 - Connect the Powerbank to the camera with the USB-C cable.  
 - Store the Powerbank somewhere safe so it won’t move while driving.  
 
-### Start Filming
+#### Start Filming
 - Hold the side power button until the screen turns on.  
 - Scan the QR-code to configure settings (if not working manual setup)  
 - Press the top shutter button (big button on top) to start capturing  
 
-### Final Pre-Drive Check
+#### Final Pre-Drive Check
 - Is the camera firmly mounted?  
 - Is camera level and facing straight ahead?  
 - Is the GoPro blinking every 10 seconds (taking photos)?  
@@ -278,22 +278,22 @@ If the scanning of the QR-code is not working immeadiately try in different ligh
 
 ---
 
-## END OF DRIVE Checklist
+## End of Drive Checklist
 
-### Stop Filming
+#### Stop Filming
 - Press the top shutter button to stop capturing.   
 - Hold the power button on the side until the screen turns off.  
 - Unplug the USB-C cable from the GoPro.  
 
-### Inspect the Equipment
+#### Inspect the Equipment
 - Check that the mount is still tight and GoPro is undamaged.  
 - Clean the camera lens if dusty or dirty.  
 - Leave the GoPro securely mounted if safe, or store it in its case or bag.  
 
-### Charge Powerbank (if applicable)
+#### Charge Powerbank (if applicable)
 - Plug the Powerbank into a wall socket to charge overnight.
 
-### Report Any Problems
+#### Report Any Problems
 Contact technical support immediately if:
 - The GoPro didn’t work
 - The mount fell off and can't be reinstalled
