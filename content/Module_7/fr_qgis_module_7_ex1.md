@@ -1130,122 +1130,130 @@ Les styles apparaîtront désormais comme préréglages dans le **Panneau de sty
 
 ---
 
-## Task 5: Quick Map Creation – Aina Uses Map Templates
+## Tâche 5 : Création rapide de cartes – Aina utilise des modèles de carte
 
-After all the hard work of analyzing data and styling layers, Aina is ready to **share her results**. But creating a professional-looking map from scratch every time would be slow and repetitive.  
+Après tout le travail d’analyse et de stylisation, Aina est prête à **partager ses résultats**. Mais créer une 
+carte professionnelle à partir de zéro à chaque fois serait long et répétitif.  
 
-To save time, she uses **map templates (.qpt files)** prepared by her team. These templates already contain the essential elements — map frames, legends, logos, titles, and scale bars. With them, Aina can turn her analysis into a **clean, consistent map** in just a few clicks.  
+Pour gagner du temps, elle utilise des **modèles de carte (.qpt)** préparés par son équipe. Ces modèles 
+contiennent déjà les éléments essentiels — cadres cartographiques, légendes, logos, titres et barres d’échelle. 
+Grâce à eux, Aina peut transformer son analyse en une **carte claire et cohérente** en seulement quelques clics.  
 
-✅ **Goal**  
-Apply a ready-made QGIS map template to quickly create and export maps that show cyclone impacts on population, health facilities, and schools.  
+
+✅ **Objectif**  
+Appliquer un modèle de carte QGIS prêt à l’emploi pour créer et exporter rapidement des cartes montrant les impacts du cyclone sur la population, les établissements de santé et les écoles.  
 
 
-1. Load the pre-made print layout template
+1. Charger le modèle d’impression préconçu
 
-- Locate the template `cyclone_impact_population_map_template.qpt` in your project folder under:  
+- Localisez le modèle `cyclone_impact_population_map_template.qpt` dans votre dossier projet sous :  
   `Map_Templates/`
 
-- You can load the template **by drag-and-drop**:
-  - Open your QGIS project.
-  - Drag the `.qpt` file directly into QGIS — a new layout will be created automatically.
+- Vous pouvez charger le modèle **par glisser-déposer** :
+  - Ouvrez votre projet QGIS.
+  - Glissez directement le fichier `.qpt` dans QGIS — une nouvelle mise en page sera automatiquement créée.
 
-- Alternatively:
-  - Go to `Project` → `New Print Layout`
-  - Enter a name (e.g. `Harald_2025_population`)
-  - Click `OK`
-  - In the layout, go to `Layout` → `Import from Template…`
-  - Select the file `cyclone_impact_overview_map_template.qpt` and click `Open`
- 2. Check and set page size
-- Right-click anywhere on the white canvas and choose `Page Properties`.
-- On the right-side panel, ensure the following:
-  - **Page Size**: A3
-  - **Orientation**: Landscape
+- Ou bien :
+  - Allez dans `Projet` → `Nouvelle mise en page`
+  - Entrez un nom (par ex. `Harald_2025_population`)
+  - Cliquez sur `OK`
+  - Dans la mise en page, allez dans `Mise en page` → `Importer depuis un modèle…`
+  - Sélectionnez le fichier `cyclone_impact_overview_map_template.qpt` et cliquez sur `Ouvrir`
+
+2. Vérifiez et définissez le format de la page
+- Clic droit n’importe où sur le canevas blanc et choisissez `Propriétés de la page`.
+- Dans le panneau de droite, assurez-vous de :
+  - **Taille de la page** : A3
+  - **Orientation** : Paysage
+
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_load_mpa_template.mp4"></video>
 
-3. Update the attribute table of exposed districts
-- In the **Print Layout**, click on the attribute table (right-hand side of the layout).
-- In the **Item Properties** panel:
-  - Ensure the correct layer is selected `Harald_Exposed_population`
-  - Click `Refresh Table Data`
-  - Click `Attributes…` → in the upper part under **Fields** click on `Clear`
-    - Then add the following layer by clicking on ➕ :
-    - **Attribute**: `ADM1_EN`; `ADM2_EN`; `ADM2_PCODE`; `exposed_population_sum`
-    - To sort the tabel content, under the **Sorting**  clicking on ➕ and add the column `AMD1_EN`
-    - **Sort Order**: Ascending
-  - Click `OK`
+3. Mettre à jour le tableau attributaire des districts exposés
+- Dans la **Mise en page**, cliquez sur le tableau attributaire (à droite dans la mise en page).
+- Dans le panneau **Propriétés de l’élément** :
+  - Assurez-vous que la bonne couche est sélectionnée : `Harald_Exposed_population`
+  - Cliquez sur `Actualiser les données du tableau`
+  - Cliquez sur `Attributs…` → dans la partie supérieure sous **Champs**, cliquez sur `Effacer`
+    - Puis ajoutez les champs suivants avec ➕ :
+    - **Champs** : `ADM1_EN`; `ADM2_EN`; `ADM2_PCODE`; `exposed_population_sum`
+    - Pour trier le contenu du tableau, sous l’onglet **Trier**, cliquez sur ➕ et ajoutez la colonne `AMD1_EN`
+    - **Ordre de tri** : Ascendant
+  - Cliquez sur `OK`
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_map_makingadjust_AT.mp4"></video>
 
   
-```{admonition} ⚠️ Warning – Long Tables
-If the attribute table you want to include is **longer than the map frame**, part of it will be cut off in the exported map.  
-To fix this, open the table properties in the layout and **reduce the font size** until the full table fits.  
+
+```{admonition} ⚠️ Avertissement – Tableaux longs
+Si le tableau attributaire que vous souhaitez inclure est **plus long que le cadre cartographique**, une partie sera coupée dans la carte exportée.  
+Pour corriger cela, ouvrez les propriétés du tableau dans la mise en page et **réduisez la taille de la police** jusqu’à ce que le tableau entier tienne.
 ```
 
 
-5. Adjust the legend
-- In the layout, click on the **Legend** item.
-- In the **Item Properties** panel:
-  - Uncheck **Auto update**
-  - Scroll to **Legend items** and remove all entries (🗑️)
-  - Add the following relevant layers:
+5. Ajuster la légende
+- Dans la mise en page, cliquez sur l’élément **Légende**.
+- Dans le panneau **Propriétés de l’élément** :
+  - Décochez **Mise à jour automatique**
+  - Faites défiler jusqu’à **Éléments de la légende** et supprimez toutes les entrées (🗑️)
+  - Ajoutez les couches pertinentes suivantes :
     - `example_Harald_2025_Track`
     - `cyclone_harald_buffer`
     - `Harald_Exposed_Population`
-  - When selecting layers, check **Only visible layers**
-  - Rename legend entries to match layout naming
-    - `example_Harald_2025_Track` ->
+  - Lors de la sélection des couches, cochez **Uniquement les couches visibles**
+  - Renommez les entrées de légende pour correspondre aux noms sur la carte :
+    - `example_Harald_2025_Track` →
      ```
-     Cyclone Harald Track
+     Trace du cyclone Harald
      ```
-    - `cyclone_harald_buffer`->
+    - `cyclone_harald_buffer` →
      ```
-     Cyclone Harald 200 km Buffer
+     Zone tampon de 200 km – Cyclone Harald
      ```
-    - `Harald_Exposed_Population`->
+    - `Harald_Exposed_Population` →
      ```
-     Number of exposed peopel
+     Nombre de personnes exposées
      ```
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_adjust_map_making_Legend.mp4"></video>
 
-6. **Update Logos and Icons**  
-- The logos that need to be added to the map are represented by the red **X**.  
-- Click on the image in the **Item List**.  
-- Click on the three dots ![](/fig/Three_points.png) next to the file path.  
-- Browse to the folder `logos_pictures` and select the correct logo file.  
+6. **Mettre à jour les logos et icônes**  
+- Les logos à insérer sont représentés par des **X rouges**.  
+- Cliquez sur l’image dans la **Liste des éléments**.  
+- Cliquez sur les trois points ![](/fig/Three_points.png) à côté du chemin de fichier.  
+- Parcourez le dossier `logos_pictures` et sélectionnez le bon logo.  
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_map_making_update_logos.mp4"></video>
 
 
-7. Review and update layout text elements
-- Make sure all text elements are up to date, especially:
-  - **Map title**
-  - **Cyclone name and date**
-  - **Author/Organization** (optional)
-- Adjust font size or alignment if necessary
+7. Revoir et mettre à jour les textes de la mise en page
+- Vérifiez que tous les textes sont à jour, en particulier :
+  - **Titre de la carte**
+  - **Nom et date du cyclone**
+  - **Auteur/Organisation** (facultatif)
+- Ajustez la taille de la police ou l’alignement si nécessaire
+
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_mak_making_adjust_title.mp4"></video>
 
-### ✅ Final Checklist
+### ✅ Liste de vérification finale
 
-| Task                                           | Done |
+| Tâche                                           | Fait |
 |------------------------------------------------|------|
-| Page set to A3 Landscape                       | ☐    |
-| Only relevant layer group active               | ☐    |
-| Exposed districts attribute table updated      | ☐    |
-| Legend cleaned and renamed                     | ☐    |
-| All text elements updated                      | ☐    |
+| Page définie en format A3 Paysage              | ☐    |
+| Seul le groupe de couches pertinent est actif  | ☐    |
+| Tableau attributaire des districts exposés mis à jour | ☐ |
+| Légende nettoyée et renommée                   | ☐    |
+| Tous les éléments de texte mis à jour          | ☐    |
 
 ---
 
 
 
-```{dropdown} Your final output should look like this after styling the layer
-The map now clearly displays the exposed population within the affected districts The original storm track line — used as input data — is highlighted, as well as the buffered impact area, which serves as a proxy for identifying exposed districts.
+```{dropdown} Le rendu final devrait ressembler à ceci après le stylage
+La carte montre désormais clairement la population exposée dans les districts affectés. La ligne de trajectoire du cyclone — utilisée comme donnée d’entrée — est mise en évidence, ainsi que la zone tampon, qui sert de proxy pour identifier les districts exposés.
 
-On the right-hand side of the map, a list shows all exposed districts, including data on total population and exposed population. The districts (Admin 2) are organized under their corresponding regions (Admin 1).
+Sur le côté droit de la carte, un tableau présente tous les districts exposés, avec les données sur la population totale et la population exposée. Les districts (Admin 2) sont regroupés sous leurs régions correspondantes (Admin 1).
 
 ```{figure} /fig/MAD_Trigger_Impact_Population_Map_example.png
 ---
@@ -1255,53 +1263,56 @@ align: center
 ---
 ```
 
-## Task 6: Exporting Model Results for the Operations Team
 
-**Background – Aina Supports Decision Makers**
+## Tâche 6 : Exporter les résultats du modèle pour l’équipe des opérations
 
-After producing maps and visuals, Aina often gets requests from the operations team:  
-> _“Can you send us the data in table format?”_
+**Contexte – Aina soutient les décideurs**
 
-Instead of exporting these tables manually each time, Aina wants to automate this step within her model — ensuring that every run of the model produces clear, ready-to-use data files.
+Après avoir produit des cartes et des visualisations, Aina reçoit souvent des demandes de l’équipe des opérations :  
+> _« Peux-tu nous envoyer les données au format tableau ? »_
 
-In this task, you’ll help Aina extend her existing model to export selected layers.
+Plutôt que d’exporter manuellement ces tableaux à chaque fois, Aina souhaite automatiser cette étape dans son modèle — afin que chaque exécution produise des fichiers de données clairs et prêts à l’emploi.
 
-We will join the following layers step by step:
+Dans cette tâche, vous aiderez Aina à étendre son modèle existant pour exporter certaines couches.
 
-- `admin2_health_affected_pct`:  
-  Contains the **total number of health facilities**, the **number of affected health facilities**, and the **percentage of affected health facilities**.
+Nous allons joindre les couches suivantes étape par étape :
 
-- `admin2_education_affected_pct`:  
-  Contains the **total number of education facilities**, the **number of affected education facilities**, and the **percentage of affected education facilities**.
+- `admin2_health_affected_pct` :  
+  Contient le **nombre total d’établissements de santé**, le **nombre d’établissements affectés** et le **pourcentage d’établissements affectés**.
 
-- `exposed_population`:  
-  Contains the **total population per district** and the **exposed population** from the zonal statistics step.
+- `admin2_education_affected_pct` :  
+  Contient le **nombre total d’établissements scolaires**, le **nombre d’établissements scolaires affectés** et le **pourcentage d’établissements scolaires affectés**.
+
+- `exposed_population` :  
+  Contient la **population totale par district** ainsi que la **population exposée**, issue de l’étape des statistiques zonales.
 
 ---
 
-1. Open your model
-- Open `Estimate_Exposed_Population_Health_Education`
-- Save a new version as:  
+
+1. Ouvrir votre modèle
+- Ouvrir `Estimate_Exposed_Population_Health_Education`
+- Enregistrer une nouvelle version sous :  
   ```
   Estimate_Exposed_Population_Health_Education_Spreadsheet_Export
   ```
-2. Join Health and Education data into one layer
-- In the **Algorithms**, search for `Join Attributes by Field Value`.
-- Add a description: `Joindre santé et éducation dans une seule couche par ADM2`
-- Configure the algorithm as follows:
-  - **Input Layer**: `admin2_health_affected` (select from **Algorithm Output**)
-  - **Input Layer 2**: `admin2_education_affected` (select from **Algorithm Output**)
-  - **Table field**: 
+2. Joindre les données de santé et d’éducation dans une seule couche
+- Dans les **Algorithmes**, chercher `Joindre les attributs par valeur de champ` (eng.: `Join Attributes by Field Value`).
+- Ajouter une description : `Joindre santé et éducation dans une seule couche par ADM2`
+- Configurer l’algorithme comme suit :
+- **Couche source** : `admin2_health_affected` (sélectionner depuis **Sortie de l’algorithme**)
+- **Champ de la table** :
    ```
    ADM2_PCODE
    ```
-  - **Table field 2**: 
+- **Couche en entrée 2** : `admin2_education_affected` (sélectionner depuis **Sortie de l’algorithme**)
+  - **Champ de la table 2**: 
    ```
    ADM2_PCODE
    ```
-  - **Layer 2 fields to copy**: Leave empty (all fields will be copied)
+  - **Couche 2 champs à copier**: Laisser vide (tous les champs seront copiés)
+  - **Type de jointure** : Prendre uniquement les attributs de la première entité correspondante (un-à-un)
   - **Join type**: Take attributes of the first matching feature only (one-to-one)
-  - Leave output as **Model Output**
+  - Laisser la sortie comme **Sortie du modèle** (sans entrer un nom)
 
 ```{figure} /fig/fr_MDG_AA_model_join_affacted_pop.PNG
 ---
@@ -1311,27 +1322,29 @@ align: center
 ---
 Configuration de l’opération : joindre les données de santé et d’éducation par le champ `ADM2_PCODE` afin de combiner les résultats dans une seule couche.
 ``` 
-3. Join the result with the population data
-Now join the result of the previous step (health + education) to the **exposed population** data.
-- Add a second `Join Attributes by Field Value` algorithm to the model
-- Add a description: `Joindre les données de population avec les indicateurs santé et éducation`
-- Configure the algorithm as follows:
-  - **Input Layer**: `exposed_population` (select from **Algorithm Output** of the Zonal Statistics step)
-  - **Input Layer 2**: Output from Step 2 (health + education)
-  - **Table field**: 
-   ```
-   ADM2_PCODE
-   ```
-  - **Table field 2**: 
-   ```
-   ADM2_PCODE
-   ```
-  - **Layer 2 fields to copy**: *(Enter the following field names exactly as shown — comma-separated, no spaces)*
+
+3. Joindre le résultat aux données de population
+Maintenant, joindre le résultat de l’étape précédente (santé + éducation) aux données de **population exposée**.
+
+- Ajouter un deuxième algorithme `Joindre les attributs par valeur de champ` (eng.: `Join Attributes by Field Value`) au modèle.
+- Ajouter une description : `Joindre les données de population avec les indicateurs santé et éducation`
+- Configurer l’algorithme comme suit :
+  - **Couche source** : `exposed_population` (sélectionner depuis la **Sortie de l’algorithme** des statistiques zonales)
+  - **Couche d’entrée 2** : Sortie de l’étape précedente (santé + éducation)
+  - **Champ de la table** : 
+    ```
+    ADM2_PCODE
+    ```
+  - **Champ de la table 2** : 
+    ```
+    ADM2_PCODE
+    ```
+  - **Champs à copier de la couche 2** : *(Entrer les noms de champs exactement comme ci-dessous — séparés par des points-virgules, sans espaces)*
     ```
     count_health_total;sum_exposed_health;pct_exposed_health;count_education_total;sum_exposed_education;pct_exposed_education
     ```
-  - **Join type**: Take attributes of the first matching feature only (one-to-one)
-  - Leave output as **Model Output**
+  - **Type de jointure** : Prendre uniquement les attributs de la première entité correspondante (un-à-un)
+  - Laisser la sortie comme **Sortie du modèle** sans nom. 
 
 ```{figure} /fig/fr_MDG_AA_model_join_affacted_pop_HS_ES.PNG
 ---
@@ -1342,28 +1355,29 @@ align: center
 Configuration de l’opération : joindre les données de population avec les indicateurs de santé et d’éducation.
 ``` 
 
-::::{tip} Where to find the column names  
-Open the **attribute tables** of the outputs `health_total_per_admin2`, `sum_exposed_healthsites_POI`, and `admin2_health_affected_pct` in QGIS.  
-Look at the **column headers** to find the exact names of the fields you want to copy.
+::::{tip} Où trouver les noms des colonnes  
+Ouvrez les **tables attributaires** des couches `health_total_per_admin2`, `sum_exposed_healthsites_POI` et `admin2_health_affected_pct` dans QGIS.  
+Consultez les **en-têtes de colonnes** pour trouver les noms exacts des champs à copier.
 ::::
-::::{warning} Invisible spaces will break the join  
-If a column name like `count_health_total` has an invisible trailing space, the join will silently fail.  
-Always copy field names **directly from the attribute table** to avoid errors.
+::::{warning} Les espaces invisibles feront échouer la jointure  
+Si un nom de colonne comme `count_health_total` contient un espace invisible à la fin, la jointure échouera silencieusement.  
+Copiez toujours les noms de champs **directement depuis la table attributaire** pour éviter les erreurs.
 ::::
 
-
-4. Export results to a spreadsheet
-- In the **Processing Toolbox**, search for `Export to spreadsheet` and double-click to open.
-- Add a description: `Exporter les données de population, d'éducation et de santé dans un seul tableau`
-- Configure the tool as follows:
-  - **Input Layer**: Select the output of Step 3 from **Algorithm Output**
-  - **Destination spreadsheet**:
+4. Exporter les résultats vers un tableur
+- Dans la **Boîte à outils de traitement**, recherchez `Exporter vers un tableur`(eng.: `Export to spreadsheet`) et double-cliquez pour ouvrir.
+- Ajouter une description : `Exporter les données de population, d'éducation et de santé dans un seul tableau`
+- Configurer l’outil comme suit :
+  - **Couche d’entrée** : Sélectionner la sortie de l’étape précedente (3) depuis la **Sortie de l’algorithme**
+  - **Tableur de destination** :
     ```
     exposure_indicators_spreadsheet
     ```
+  - Cliquer sur **OK** pour l’ajouter au modèle.  
 
-  - Click **OK** to add it to the model.
-Once you run the model, this step will automatically generate a spreadsheet with all relevant indicators ready for the operations team!
+
+Une fois que vous exécutez le modèle, cette étape génèrera automatiquement un fichier tableur contenant tous les indicateurs nécessaires pour l’équipe des opérations !
+
 
 ```{figure} /fig/fr_MDG_AA_model_export_as_table.PNG
 ---
@@ -1376,46 +1390,48 @@ Exporter tous les indicateurs (population, santé, éducation) vers un tableau u
 
 
 
-5. **Validate and Save Your Extended Model**  
-   - Click the ✔️ **Validate Model** button to check for errors.
-   - Save again to:  
+5. **Valider et enregistrer votre modèle étendu**  
+   - Cliquez sur le bouton ✔️ **Valider le modèle** (sous `Modèle` dans le menu du haut) pour vérifier les erreurs.
+   - Enregistrez à nouveau sous :  
      **`Estimate_Exposed_Population_Health_Education.model3`**
-6. **Run the model**
-   - Click the ▶️ **Run** button in the top-right corner of the Graphical Modeler window.
-   - **Input:**
-     - Click on the three dots for each input dataset and select the correct input:
-       - `Cyclone Track` → select the GeoJSON of the storm path (e.g. `Harald_2025_Track.geojson`)
-       - `Population Raster` → select the WorldPop raster file
-       - `Admin Boundaries` → select the Admin 2 layer (e.g. `MDG_adm2.gpkg`)
-       - `Health Facilities` → select the point dataset for health sites
-       - `Education Facilities` → select the point dataset for schools
-   - **Output:**
-     - Save all output layers in the output folder and use the names below.
-       - `admin2_health_affacted` -> 
-        ```
-        admin2_health_affected
-        ```
-       - `admin2_education_affected` ->
-        ```
-        admin2_education_affected
-        ```
-       - `cyclone_harald_buffer` ->  
-        ```
-        cyclone_harald_buffer
-        ```
-       - `exposed_population_sum` ->
-        ```
-        admin2_harald_Exposed_Population
-        ```
-       - `exposure_indicators_spreadsheet` ->
-        ```
-        exposure_indicators_harald
-        ```
-   - Click **Run** to execute the full model.
+
+6. **Exécuter le modèle**
+   - Cliquez sur le bouton ▶️ **Exécuter** en haut à droite de la fenêtre du Modeleur graphique.
+   - **Entrées :**
+     - Cliquez sur les trois points pour chaque jeu de données et sélectionnez les entrées appropriées :
+       - `Cyclone Track` → sélectionnez le fichier GeoJSON de la trajectoire de la tempête (ex. `Harald_2025_Track.geojson`)
+       - `Population Raster` → sélectionnez le fichier raster WorldPop
+       - `Admin Boundaries` → sélectionnez la couche Admin 2 (ex. `MDG_adm2.gpkg`)
+       - `Health Facilities` → sélectionnez le jeu de données ponctuel des centres de santé
+       - `Education Facilities` → sélectionnez le jeu de données ponctuel des écoles
+   - **Sorties :**
+     - Enregistrez toutes les couches de sortie dans le dossier de sortie en utilisant les noms ci-dessous :
+       - `admin2_health_affacted` → 
+         ```
+         admin2_health_affected
+         ```
+       - `admin2_education_affected` →
+         ```
+         admin2_education_affected
+         ```
+       - `cyclone_harald_buffer` →  
+         ```
+         cyclone_harald_buffer
+         ```
+       - `exposed_population_sum` →
+         ```
+         admin2_harald_Exposed_Population
+         ```
+       - `exposure_indicators_spreadsheet` →
+         ```
+         exposure_indicators_harald
+         ```
+   - Cliquez sur **Exécuter** pour lancer le modèle complet.
+
 
 ::::{tab-set}
 
-:::{tab-item} Graphic Modler
+:::{tab-item} Modeleur
 
 ```{figure} /fig/
 ---
@@ -1425,7 +1441,7 @@ align: center
 
 ```
 :::
-:::{tab-item} Run Model Configuration
+:::{tab-item} Configuration d’exécution du modèle
 ```{figure} /fig/
 ---
 width: 600px
@@ -1434,7 +1450,7 @@ align: center
 
 ```
 :::
-:::{tab-item} Model Output
+:::{tab-item} Résultat du modèle
 ```{figure} /fig/
 ---
 width: 600px
@@ -1451,124 +1467,143 @@ align: center
 
 
 
-## Task 7: Reachability of health Posts from CRM Warehouses
-When a cyclone is forecast to make landfall, Aina works with the logistics and health teams to decide **where to send prepositioned medical kits**. However, not all CRM warehouses stock the needed items — only three do.
+## Tâche 7 : Accessibilité des postes de santé depuis les entrepôts CRM
 
-To make fast, data-driven decisions, Aina wants to know **which health posts are reachable** from those warehouses **within 10 hours**. This analysis helps ensure that kits are sent to facilities **that can actually be reached in time**.
+Lorsque qu’un cyclone est prévu pour un atterrissage, Aina collabore avec les équipes logistique et santé pour 
+décider **où envoyer les kits médicaux prépositionnés**. Cependant, tous les entrepôts CRM ne stockent pas les 
+articles nécessaires — seulement trois le font.
 
-Her goal is to create a clear visual map showing reachable vs. non-reachable health posts — and share this with decision-makers as quickly as possible.
+Pour prendre des décisions rapides et basées sur les données, Aina souhaite savoir **quels postes de santé sont accessibles** à partir de ces entrepôts **en moins de 10 heures**. Cette analyse permet de s’assurer que les kits 
+sont envoyés vers des établissements **réellement accessibles à temps**.
+
+Son objectif est de créer une carte visuelle claire montrant les postes de santé accessibles vs. non accessibles — 
+et de la partager avec les décideurs le plus rapidement possible.
 
 
-### 1. Filter Health Posts from the National Health Facility Dataset
+### 1. Filtrer les postes de santé depuis le jeu de données national des établissements de santé
 
-Before checking which facilities are reachable, Aina needs to isolate **health posts** from the broader dataset of all health facilities.
+Avant de vérifier quels établissements sont accessibles, Aina doit isoler les **postes de santé** à partir du jeu de données plus large de tous les établissements de santé.
 
-1. **Load the health facilities dataset**  
-   - File: `hotosm_mdg_health_facilities_points.gpkg` (or the respective GeoPackage you are using)  
-   - Load it via drag and drop or through `Layer` → `Add Vector Layer`.
-2. **Open the attribute table** and check the column named `amenity`.
-3. **Filter by expression** to keep only health posts:  
-   - Right-click the layer → `Filter…`  
-   - Use the following expression:
+1. **Charger le jeu de données des établissements de santé**  
+   - Fichier : `hotosm_mdg_health_facilities_points.gpkg` (ou le GeoPackage utilisé)  
+   - Chargez-le par glisser-déposer ou via `Couche` → `Ajouter une couche vecteur`.
+
+2. **Ouvrir la table attributaire** et vérifier la colonne nommée `amenity`.
+
+3. **Filtrer par expression** pour ne garder que les postes de santé :  
+   - Clic droit sur la couche → `Filtrer…`  
+   - Utiliser l’expression suivante :
      ```qgis
      "amenity" = 'health_post'
      ```
-4. **Export the filtered layer**  
-   - Right-click the filtered layer in the Layers Panel → `Export` → `Save Features As…`  
-   - Format: `GeoPackage`  
-   - Save to your `project` folder as:
+
+4. **Exporter la couche filtrée**  
+   - Clic droit sur la couche filtrée dans le panneau des couches → `Exporter` → `Enregistrer les entités sous…`  
+   - Format : `GeoPackage`  
+   - Enregistrez dans votre dossier `project` sous :
      ```
      health_posts_only.gpkg
      ```
-   - Click `OK` to confirm export.
-5. **Remove the filter** or original layer from your project to avoid confusion.
-> 💡 **Tip**: Filtering directly in QGIS lets you work with a specific subset of features without modifying the original dataset.
+   - Cliquez sur `OK` pour confirmer l’exportation.
 
-### 2. Load Isochrone Layers for the Three CRM Warehouses
+5. **Retirer le filtre** ou la couche originale de votre projet pour éviter toute confusion.
 
-Aina knows that only **three warehouses** stock the necessary medical supplies:  
-**Antananarivo**, **Maroantsetra**, and **Tolanaro**. She will now load the isochrone layers for each of these warehouses to begin analyzing service areas.
+> 💡 **Astuce** : Filtrer directement dans QGIS vous permet de travailler avec un sous-ensemble spécifique sans modifier le jeu de données original.
 
-1. **Load the individual isochrone layers** for each warehouse:
+
+### 2. Charger les couches isochrones pour les trois entrepôts CRM
+
+Aina sait que seulement **trois entrepôts** disposent des fournitures médicales nécessaires :  
+**Antananarivo**, **Maroantsetra**, et **Tolanaro**. Elle va maintenant charger les couches isochrones pour chacun de ces entrepôts afin de commencer l’analyse des zones desservies.
+
+1. **Charger les couches isochrones individuelles** pour chaque entrepôt :
    - `CRM_warehouse_Isochrones_Antananarivo.gpkg`
    - `CRM_warehouse_Isochrones_Maroantsetra.gpkg`
    - `CRM_warehouse_Isochrones_Tolanaro.gpkg`
 
-   You can drag and drop each file into QGIS or go to `Layer` → `Add Layer` → `Add Vector Layer`.
+   Vous pouvez glisser-deposer chaque fichier dans QGIS ou aller dans `Couche` → `Ajouter une couche` → `Ajouter une couche vecteur`.
 
-2. **Inspect the attribute table** of each isochrone layer  
-   Confirm that each record has a `traveltime_h` field showing the estimated travel time in **hours**.
 
-3. **Remove all features where travel time is above 10 hours**:  
-   - Right-click each layer → `Filter…`
-   - Apply the expression:
+2. **Inspecter la table attributaire** de chaque couche isochrone  
+   Vérifiez que chaque enregistrement possède un champ `traveltime_h` indiquant le temps de trajet estimé en **heures**.
+
+3. **Retirer toutes les entités où le temps de trajet dépasse 10 heures** :  
+   - Clic droit sur chaque couche → `Filtrer…`  
+   - Appliquer l’expression :
      ```qgis
      "traveltime_h" <= 10
      ```
 
-4. **Export each filtered layer** to the `temp` folder :
-   At this point, Aina also ensures all exported layers are saved in the same CRS as the health post dataset — `EPSG:4326` — to avoid problems in the spatial join.
-   - Save each as:
+4. **Exporter chaque couche filtrée** vers le dossier `temp` :  
+   À ce stade, Aina s’assure également que toutes les couches exportées utilisent le même SCR que la couche des postes de santé — `EPSG:4326` — pour éviter tout problème lors de la jointure spatiale.  
+   - Enregistrez chaque fichier sous :
      ```
      CRM_isochrones_Antananarivo_upto10h.gpkg
      CRM_isochrones_Maroantsetra_upto10h.gpkg
      CRM_isochrones_Tolanaro_upto10h.gpkg
      ```
 
-5. **Style the isochrones for clarity** 
-   Aina can apply predefined style file to color the layer based on `traveltime_h` to visualize different time bands (4h, 6h, 8h, 10h) later in Step 5.
-   - Right-click each filtered layer → `Properties` → `Symbology`
-   - Click `Style` at the bottom → `Load Style…`
-   - Select the file:  
+5. **Appliquer un style aux isochrones pour plus de clarté**  
+   Aina peut appliquer un style prédéfini pour colorer la couche selon `traveltime_h` et visualiser différentes plages horaires (4h, 6h, 8h, 10h) à l’étape 5.
+   - Clic droit sur chaque couche filtrée → `Propriétés` → `Symbologie`
+   - Cliquez sur `Style` en bas → `Charger le style…`
+   - Sélectionnez le fichier :  
      `CRM_warehouse_isochrones_style.qml`
-   - Click `Open`, then `Apply` and `OK`
+   - Cliquez sur `Ouvrir`, puis `Appliquer` et `OK`
 
-### 3. Visualizing Health Post Reachability from CRM Warehouses
-Aina needs to identify which health posts can be reached by road from three key CRM warehouses (Antananarivo, Maroantsetra, and Tolanaro) **within 10 hours of travel time**. She will do this manually by combining the 10-hour isochrones from these warehouses and comparing them to the national health post dataset.
-1. **Merge the Isochrone Layers from the Three Warehouses**  
-   - In the **Processing Toolbox**, search for `Merge Vector Layers`.  
-   - **Input layers**:  
+### 3. Visualiser l’accessibilité des postes de santé depuis les entrepôts CRM
+
+Aina doit identifier quels postes de santé sont accessibles par la route à partir des trois entrepôts clés (Antananarivo, Maroantsetra et Tolanaro) **en moins de 10 heures de trajet**. Elle va le faire manuellement en combinant les isochrones 10h de ces entrepôts et en les comparant au jeu de données national des postes de santé.
+
+1. **Fusionner les couches isochrones des trois entrepôts**  
+   - Dans la **Boîte à outils de traitement**, rechercher `Fusionner des couches vecteur`.  
+   - **Couches en entrée** :  
      - `CRM_isochrones_Antananarivo_upto10h.gpkg`  
      - `CRM_isochrones_Maroantsetra_upto10h.gpkg`  
      - `CRM_isochrones_Tolanaro_upto10h.gpkg`  
-   - **CRS**: `EPSG:4326`  
-   - **Save to file**:  
+   - **SCR** : `EPSG:4326`  
+   - **Enregistrer sous** :
      ```
      merged_isochrones_10h.gpkg
-     ```  
-   - Click **Run**.
-2. **Select Health Posts Reachable Within 10 Hours**  
-   - In the **Processing Toolbox**, search for `Select by Location`.  
-   - Set the following parameters:  
-     - **Input layer**: `health_posts_only.gpkg`  
-     - **Predicate**: `intersects`  
-     - **Intersect layer**: `merged_isochrones_10h.gpkg`  
-   - Click **Run**.
-   > 💡 The selected points are those within the 10-hour service areas of the warehouses.
-3. **Create a Reachability Field for Selected Health Posts**  
-   - Open the **Field Calculator** ![](/fig/mActionCalculateField.png) on the `health_posts_only` layer.  
-   - Check ✅ `Only update selected features`  
-   - **Output field name**: `Reachability_time`  
-   - **Output field type**: `Text (string)`  
-   - **Expression**:
+     ```
+   - Cliquez sur **Exécuter**.
+
+2. **Sélectionner les postes de santé accessibles en moins de 10 heures**  
+   - Dans la **Boîte à outils de traitement**, rechercher `Sélection par localisation`.  
+   - Définir les paramètres suivants :  
+     - **Couche source** : `health_posts_only.gpkg`  
+     - **Prédicat** : `intersects`  
+     - **Couche d’intersection** : `merged_isochrones_10h.gpkg`  
+   - Cliquez sur **Exécuter**.
+   > 💡 Les points sélectionnés sont ceux situés dans les zones de desserte des entrepôts à moins de 10 heures.
+
+. **Créer un champ d’accessibilité pour les postes sélectionnés**  
+   - Ouvrir la **calculatrice de champs** ![](/fig/mActionCalculateField.png) sur la couche `health_posts_only`.  
+   - Cochez ✅ `Mettre à jour uniquement les entités sélectionnées`  
+   - **Nom du champ de sortie** : `Reachability_time`  
+   - **Type du champ de sortie** : `Texte (chaîne)`  
+   - **Expression** :
      ```qgis
      'reachable in 10 hours'
      ```  
-   - Click **OK** to create and populate the new field for selected features.
-4. **Mark the Remaining Health Posts as Not Reachable**  
-   - Invert the selection:  
-     Go to `Edit` → `Invert Feature Selection` ![](/fig/mActionInvertSelection.png)  
-     or right-click the layer and select `Invert Selection`.  
-   - Open the **Field Calculator** again.  
-   - Check ✅ `Only update selected features`  
-   - Use the same field: `Reachability_time`  
-   - **Expression**:
+   - Cliquez sur **OK** pour créer et renseigner le champ pour les entités sélectionnées.
+
+4. **Marquer les autres postes de santé comme non accessibles**  
+   - Inverser la sélection :  
+     Aller dans `Édition` → `Inverser la sélection` ![](/fig/mActionInvertSelection.png)  
+     ou clic droit sur la couche → `Inverser la sélection`.
+   - Ouvrir à nouveau la **calculatrice de champs**.  
+   - Cochez ✅ `Mettre à jour uniquement les entités sélectionnées`  
+   - Utiliser le même champ : `Reachability_time`  
+   - **Expression** :
      ```qgis
      'not reachable in 10 hours'
      ```  
-   - Click **OK** to apply the update.
+   - Cliquez sur **OK** pour appliquer la mise à jour.
 
-> ✅ Now all health posts are labeled as either **reachable** or **not reachable** in the `Reachability_time` column.
+
+> ✅ Tous les postes de santé sont maintenant étiquetés comme **accessibles** ou **non accessibles** dans la colonne `Reachability_time`.
+
 
 
 
