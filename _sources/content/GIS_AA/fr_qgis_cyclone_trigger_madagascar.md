@@ -9,7 +9,7 @@ Chaque étape inclut dans le modèle est expliquée en détail afin de permettre
 
 ## Contexte
 
-La définition de déclencheurs est l'un des piliers du système de financement basé sur les prévisions (anglais: Forecast-based financing (FbF)). Pour qu'une Société Nationale puisse bénéficier d'un financement automatique pour ses actions précoces, son protocole d'action précoce doit définir clairement où et quand les fonds seront alloués et l'aide fournie. Dans le cadre de l'AA, cela est décidé en fonction de valeurs seuils spécifiques, appelées « déclencheurs », basées sur les prévisions météorologiques et climatiques, qui sont définies pour chaque région (voir [FbF Manual](https://manual.forecast-based-financing.org/en/chapter/06-develop-a-trigger-system/)).
+La définition de déclencheurs est l'un des piliers du système de financement basé sur les prévisions (anglais: Forecast-based financing (FbF)). Pour qu'une Société Nationale puisse bénéficier d'un financement automatique pour ses actions précoces, son protocole d'action précoce doit définir clairement où et quand les fonds seront alloués et l'aide fournie. Dans le cadre de l'AA, cela est décidé en fonction de valeurs seuils spécifiques, appelées "déclencheurs", basées sur les prévisions météorologiques et climatiques, qui sont définies pour chaque région (voir [FbF Manual](https://manual.forecast-based-financing.org/en/chapter/06-develop-a-trigger-system/)).
 
 ## Déclaration de déclenchement
 
@@ -469,7 +469,7 @@ Répétez ce processus pour les couches de sortie suivantes, ainsi que pour leur
 |`cyclone_track`| `storm_track_cyclone_style.qml`| préchargé |
 
 6. Le style de la couche `CRM_warehouses` n'est pas encore défini. Cliquez avec le bouton droit sur la couche `CRM_warehouses` > `Propriétés` et naviguez à la section `Symbologie`.
-  :::{figure} /fig/AA/mdg_aa_fix_warehouse_icon.png
+  :::{figure} /fig/AA/fr_mdg_aa_fix_warehouse_icon.png
   ---
   name: fix_warehouse_icon
   width: 550px
@@ -489,35 +489,35 @@ Pour conserver un espace de travail clair et organisé, regroupez les couches de
 
 :::
 
-#### Making the Print Layout
+#### Création de la mise en page
 
-For easier visualization, we have created these [map templates](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#map-templates) for presenting the results of the trigger analysis. These templates serve as a base for your own visualizations and are available in the following directory: `AA_Cyclone_Monitoring_Trigger_MAD/map_templates`. You can customize the templates to suit your needs and preferences. You can find help [here](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#print-layout).
+Pour faciliter la visualisation, nous avons créé ces [modèles de carte](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#map-templates) afin de présenter les résultats de l'analyse des déclencheurs. Ces modèles servent de base à vos propres visualisations et sont disponibles dans le répertoire suivant: `AA_Cyclone_Monitoring_Trigger_MAD/map_templates`. Vous pouvez personnaliser les modèles en fonction de vos besoins et préférences. Vous trouverez de l'aide [ici](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#print-layout).
 
 
-1. Deactivate all Layer Groups except the group `Map_Cyclone_Impact_Overview` and the `OpenStreetMap` basemap.
-2. Open a new print layout by clicking on `Project` -> `Layout Manager`. A small new window will appear. Here you can select an existing layout or create a new layout from a template. 
-3. We want to create a new layout from a template. Click on the `Empty Layout` dropdown menu and select `Specific`. 
-4. Below, click on the three dots ![](/fig/Three_points.png) and navigate to the folder `../AA_Cyclone_Monitoring_Trigger_MAD/map_templates/` and select the file with the name `cyclone_impact_overview_map_template`. Click `Open`, then `Create`. 
-5. QGIS will ask you to name the new layout. Give it a name such as "Cyclone_Overview_Map_Freddy_2023". Click `OK`. A new window will open. This is the print layout composer. It should look similar to the figure below.
+1. Désactivez tous les groupes de couches à l'exception du groupe `Map_Cyclone_Impact_Overview` et de la carte de base `OpenStreetMap`.
+2. Ouvrez une nouvelle mise en page en cliquant sur `Projet` -> `Gestionnaire de mise en page`. Une petite fenêtre apparaîtra. Vous pouvez y sélectionner une mise en page existante ou créer une nouvelle mise en page à partir d'un modèle.
+3. Nous voulons créer une nouvelle mise en page à partir d'un modèle. Cliquez sur le menu déroulant `Mise en page vide` et sélectionnez `Spécifique`. 
+4. Ci-dessous, cliquez sur les trois points ![](/fig/Three_points.png) et naviguez jusqu'au dossier `../AA_Cyclone_Monitoring_Trigger_MAD/map_templates/` et sélectionnez le fichier nommé `cyclone_impact_overview_map_template`. Cliquez sur `Ouvrir`, enpuis sur `Créer`. 
+5. QGIS vous demandera de nommer la nouvelle mise en page. Donnez-lui un nom tel que "Cyclone_Overview_Map_Freddy_2023". Cliquez sur `OK`. Une nouvelle fenêtre s'ouvrira. Il s'agit du compositeur de mise en page. Il devrait ressembler à la figure ci-dessous.
 
 :::{figure} /fig/AA/overview_map_template.png
 ---
 name: overview_map_template
 width: 700 px
 ---
-The print layout composer after opening the template file.
+Le compositeur de mise en page après l'ouverture du fichier modèle.
 :::
 
-The print layout will automatically load the map canvas. However, to finish the report, we need to adjust and update some of the elements on the print layout. For example, on the right side of the map, the attribute table is not displayed correctly, the legend seems to be wrong, and the logos of the CRM and HeiGIT are displayed as red crosses.
+La mise en page chargera automatiquement le canevas de la carte. Cependant, pour finaliser le rapport, nous devons ajuster et mettre à jour certains éléments de la mise en page d'impression. Par exemple, sur le côté droit de la carte, le tableau des attributs ne s'affiche pas correctement, la légende semble incorrecte et les logos du CRM et de HeiGIT s'affichent sous forme de croix rouges.
 
-6. **Update the Map Title**  
-   - Click on the title text element at the top of the map.
-   - In the `Item Properties` panel, edit the **Main Label** text to match your event, e.g. `Cyclone Harald – 2025`.
-   - Adjust font size or alignment as needed.
+6. **Mettre à jour le titre de la carte** 
+   - Cliquez sur l'élément de texte du titre en haut de la carte.
+   - Dans le panneau `Propriétés de l'objet` modifiez le texte **Étiquette principale** pour qu'il corresponde à votre événement, par exemple `Cyclone Harald – 2025`.
+   - Ajustez la taille de la police ou l'alignement si nécessaire.
 
 
 
-7. **Update the Attribute Table on the Right-Hand Side of the Map**  
+7. **Mettre à jour le tableau des attributs situé à droite de la carte**
 :::{figure} /fig/AA/mdg_aa_map_1_update_attribute_table.png
 ---
 name: mdg_aa_map_1_update_attribute_table
