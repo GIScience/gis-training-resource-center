@@ -45,7 +45,7 @@ Central position behind rear mirror
 
 :::{grid-item}
 
-```{figure} /fig/AILAS_side position,jpg
+```{figure} /fig/AILAS_side position.jpg
 ---
 name: camera side position
 width: 375 px
