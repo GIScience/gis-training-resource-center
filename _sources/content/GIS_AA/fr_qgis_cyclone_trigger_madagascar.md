@@ -948,6 +948,34 @@ OpenStreetMap
 ```
 :::
 
+:::{tab-item} Points d'éducation sanitaire exposés
+* `Admin1_Impact_Overview_Map` → renommer en  
+```md
+Régions
+```
+* `exposed_education_facilities_points` → renommer en  
+```md
+Points d'éducation sanitaire exposés
+```
+* `Cyclone Track` → renommer en  
+```md
+Trajectoire prévue du cyclone
+```
+* `Exposed_Cyclone_Area` → renommer en  
+```md
+Zone exposée aux cyclones
+```
+* `relevant_warehouses` → renommer en  
+```md
+Entrepôts concernés
+```
+* `Background Map: OpenStreetMap` → renommer en  
+```md
+Carte de fond :
+OpenStreetMap
+```
+:::
+
 ::::
 
 
