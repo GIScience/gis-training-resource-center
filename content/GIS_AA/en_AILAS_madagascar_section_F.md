@@ -116,48 +116,42 @@ Side position near the passenger door
 |    5. Adjust camera angle                                                |    Ensure lens faces forward, level with the road <br> and camera field of view captures the road      |
 
 
-<!-- +Image suction mount -->
-
-<!-- + Image Screw tightening -->
-
-<!-- + Image Proper lens orientation -->
 
 
 ::::{grid} 2
 :::{grid-item}
 
-```{figure} /fig/AILAS_press_button.jpeg
+```{figure} /fig/AILAS_press_button.png
 ---
 name: 
 width: 400 px
 ---
-GoPro camera
-```
 Press button for suction
+```
 :::
+
 
 :::{grid-item}
 
-```{figure} /fig/AILAS_lever_down.jpeg
+```{figure} /fig/AILAS_lever_down.png
 ---
 name: 
 width: 400 px
 ---
-Suction mount
-```
 Push lever down to fix mount
+```
+
 :::
 
 :::{grid-item}
 
-```{figure} /fig/AILAS_alignment.jpeg
+```{figure} /fig/AILAS_camera_alignment.jpeg
 ---
 name: 
 width: 400 px
 ---
-Clip attachment
-```
 Camera correctly aligned with the road
+```
 :::
 
 
@@ -199,7 +193,31 @@ If the camera already is set in the "AILAS" mode you do not have to configure th
 
 <!-- Image QR-code -->
 
-<!-- Image Button overview -->
+::::{grid} 2
+
+:::{grid-item}
+
+```{figure} /fig/AILAS_QR_code.png
+---
+name: 
+width: 375 px
+---
+Scan this QR-Code
+```
+
+
+
+:::{grid-item}
+
+```{figure} /fig/AILAS_button_overview.png
+---
+name: 
+width: 375 px
+---
+Button overview
+```
+:::
+::::
 
 
 ### Alternative Manual Configuration
@@ -217,32 +235,6 @@ If the camera already is set in the "AILAS" mode you do not have to configure th
 | 2. GoPro will now take one photo every 5 seconds. | Red blinking every 10 seconds indicates that the camera is shooting |
 | 3. Tap the **Shutter** button again to stop. |  |
 | 4. Hold the **Power** button to turn off GoPro at the end of the drive. | The camera will beep a couple of times when turning off |
-
-
-::::{grid} 2
-:::{grid-item}
-
-```{figure} /fig/AILAS_press_button.jpeg
----
-name: 
-width: 400 px
----
-GoPro camera
-```
-Press button for suction
-:::
-
-:::{grid-item}
-
-```{figure} /fig/AILAS_button_overview.jpeg
----
-name: 
-width: 400 px
----
-Suction mount
-```
-Push lever down to fix mount
-:::
 
 
 ::::
