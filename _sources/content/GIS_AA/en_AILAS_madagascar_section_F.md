@@ -59,7 +59,7 @@ Side position near the passenger door
 ::::{grid} 2
 :::{grid-item}
 
-```{figure} /fig/AILAS_centre position.jpeg
+```{figure} /fig/AILAS_centre_position.jpeg
 ---
 name: camera centre position
 width: 375 px
@@ -71,7 +71,7 @@ Central position behind rear mirror
 
 :::{grid-item}
 
-```{figure} /fig/AILAS_side position.jpeg
+```{figure} /fig/AILAS_side_position.jpeg
 ---
 name: camera side position
 width: 375 px
