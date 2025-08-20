@@ -524,70 +524,70 @@ name: mdg_aa_map_1_update_attribute_table
 width: 600 px
 ---
 :::
-   - On the right side, there is a attribute table that did not fully load. We want to update the attribute table to display the exposed districts.
-   - In the `Item Properties` panel, select the `Exposed_Districts` layer and click **Refresh Table Data**
-   - Click on `Attributes...`
-   - In the **Columns** section:
-     - Click `Clear`
-     - ➕ Add the columns: `ADM1_EN`, `ADM2_EN`, `ADM2_PCODE`
-   - In the **Sorting** section:
-     - ➕ Add `ADM1_EN` and set the sort order to `Ascending`
-   - Click **OK** to apply
+   - Sur le côté droit, il y a un tableau d'attributs qui ne s'est pas entièrement chargé. Nous voulons mettre à jour le tableau d'attributs pour afficher les districts exposés.
+   - IDans le panneau `Propriétés de l'élément`, sélectionne la couche `Exposed_Districts` et cliquez sur **Actualiser les données du tableau**
+   - Cliquez sur on `Attributs...`
+   - Dans la section **Colonnes**:
+     - Cliquez sur `Effacer`
+     - ➕ Ajoutez les colonnes: `ADM1_EN`, `ADM2_EN`, `ADM2_PCODE`
+   - Dans la section **Trier**:
+     - ➕ Ajoutez `ADM1_EN` et définissez l'ordre de tri sur `Ascendant`
+   - Cliquez sur **OK** pour appliquer
 
 
 ```{note}
-💡 If too many districts are affected, the attribute table might not fit the page. Reduce the font size in the table’s item properties to make everything visible — but be aware that this may reduce readability.
+💡 Si trop de districts sont concernés, le tableau des attributs risque de ne pas être adapté à la page. Réduisez la taille de la fonte dans les propriétés des éléments du tableau afin que tout soit visible, mais sachez que cela peut réduire la lisibilité.
 ```
 
-8. **Adjust the Legend**
-    * Select the legend item, navigate to the `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there, check if you have to open the dropdown. Make sure `Auto update` is **not checked**.
-    * Remove all items in the legend by clicking on each item and then the red minus icon
-        * In the pop-up, check **Only show visible layers** to help you find the correct ones
-        * To rename a legend item, **double-click** on the layer name in the legend item list and enter the new name  
-    * ➕ Add the following layers by clicking the green plus:
+8. **Ajuster la légende**
+    * Sélectionnez l'élément de légende, naviguez jusqu'à la section `Propriétés de l'élément` et faites défiler vers le bas jusqu'à ce que vous voyiez `Éléments de la légende`. Si ce n'est pas le cas, vérifiez si vous devez ouvrir le menu déroulant. Assurez-vous que la case `Mise à jout auto` n'est **pas cochée**.
+    * Supprimez tous les éléments de la légende en cliquant sur chaque élément, puis sur l'icône rouge moins
+        * Dans la fenêtre contextuelle, cochez **Ne montrer que les entités à l'intérieur de la carte liée** pour vous aider à trouver les corrects.
+        * Pour renommer un élément de la légende, **double-cliquez** sur le nom de la couche dans la liste des éléments de la légende et entrez le nouveau nom
+    * ➕ Ajoutez les couches suivantes en cliquant sur le signe plus vert:
         * `Admin1_Impact_Overview_Map`
         * `exposed_districts`
         * `Cyclone Track`
         * `Exposed_Cyclone_Area`
         * `CRM_warehouses`  
         * `OpenStreetMap`
-      * Now, let's rename the layers in the legend. In the __Item properties__, below the list of the legend layers, there is a ![](/fig/AA/mdg_aa_edit_legend.png) `Edit selected item properties`-button. By clicking on it, you can edit the label of the icon in the legend. Rename the layers as follows:
-        * `Admin1_Impact_Overview_Map` → rename to  
+      * Maintenant, nous allons renommer les couches dans la légende. Dans les __propriétés de l'élément__, sous la liste des couches de la légende, se trouve un bouton ![](/fig/AA/mdg_aa_edit_legend.png) `Editer les propriétés de l'élément sélectionné`. En cliquant dessus, vous pouvez modifier le nom de l'icône dans la légende. Renommez les couches comme suit:
+        * `Admin1_Impact_Overview_Map` → renommer en  
         ```md
-        Regions
+        Régions
         ```
-        * `exposed_districts` → rename to  
+        * `exposed_districts` → renommer en  
         ```md
-        Exposed Districts
+        Districts exposés
         ```
-        * `Cyclone Track` → rename to  
+        * `Cyclone Track` → renommer en
         ```md
-        Projected Cyclone Track
+        Trajectoire prévue du cyclone
         ```
-        * `Exposed_Cyclone_Area` → rename to  
+        * `Exposed_Cyclone_Area` → renommer en
         ```md
-        Exposed Cyclone Area
+        Zone exposée aux cyclones
         ```
-        * `relevant_warehouses` → rename to  
+        * `relevant_warehouses` → renommer en
         ```md
-        Relevant Warehouses
+        Entrepôts concernés
         ```
-        * `Background Map: OpenStreetMap` → rename to  
+        * `Background Map: OpenStreetMap` → renommer en
         ```md
-        Background Map:
+        Carte de fond:
         OpenStreetMap
         ```
 
-9. Adjust the icons by clicking on the <Picture> field in the items list or on the red cross in the map template. 
-  * In the Item Properties, correct the path to the CRM logo by clicking on the three dots ![](/fig/Three_points.png) and navigate to `\aa_madagascar\AA_Cyclone_Monitoring_Trigger_MAD\logos_pictures` and selecting the CRM logo file.
-  * Repeat the process for the second missing image. This time, select the HeiGIT Logo
+9. Ajustez les icônes en cliquant sur le bouton <Image> dans la liste des éléments ou sur la croix rouge dans le modèle de carte.
+  * Dans les propriétés de l'élément, corrigez le chemin d'accès au logo CRM en cliquant sur les trois points ![](/fig/Three_points.png) et naviguez jusqu'à  `\aa_madagascar\AA_Cyclone_Monitoring_Trigger_MAD\logos_pictures` puis sélectionnez le fichier du logo CRM.
+  *  Répétez le processus pour la deuxième image manquante. Cette fois-ci, sélectionnez le logo HeiGIT.
 
 
-10. Below the logos, adjust the information in the text box by selecting the text box and navigating to the Item properties.
+10. Sous les logos, modifiez les informations dans la zone de texte en sélectionnant celle-ci et en naviguant vers les propriétés de l'élément.
 
-11. Finally, let's lock the layers and layer styles so that changes in the main QGIS window do not affect our print layout:
-  * In the item list, select __Map 1__.
-  * In the item properties, check the boxes for __lock layers__ and __lock styles for layers__. This will prevent the map to automatically when we make changes to the map canvas
+11. Enfin, verrouillons les calques et les styles de calque afin que les modifications apportées dans la fenêtre principale de QGIS n'affectent pas notre mise en page d'impression:
+  * Dans la liste des éléments, sélectionnez __Carte 1__.
+  * Dans les propriétés de l'élément, cochez les cases __verrouiller les couches__ et __verrouiller le style des couches__. Cela empêchera la carte de se mettre automatiquement à jour lorsque nous apporterons des modifications à la zone de travail de la carte.
 
 ```{figure} /fig/AA/mdg_aa_lock_layers.png
 ---
@@ -605,14 +605,14 @@ width: 600 px
 -->
 
 ```{Attention}
-Checklist for final map output:
-- Map Information: Review and update all text elements as needed.
-- Legend: Remove unnecessary items and rename layers with clear, meaningful descriptions.
-- Exposed Districts: Include only districts that are actually impacted in your "List of Exposed Districts". Update them according to the event.
+Liste de contrôle pour la version finale de la carte:
+- Informations cartographiques: vérifiez et mettez à jour tous les éléments textuels si nécessaire.
+- Légende: supprimez les éléments inutiles et renommez les couches avec des descriptions claires et significatives.
+- Districts exposés: n'incluez que les districts réellement touchés dans votre "Liste des districts exposés". Mettez-les à jour en fonction de l'événement.
 ```
 
-::::{dropdown} Your final output should look like this after styling the layer
-You will now see the exposed districts and the locations of relevant warehouses clearly displayed on the map. Additionally, the original storm track line — used as input data — is highlighted, along with the buffered impact area, which serves as a proxy for identifying exposed districts.
+::::{dropdown} Une fois la couche est stylisé, votre résultat final devrait ressembler à ceci.
+Vous pouvez voir maintenant les districts exposés et l'emplacement des entrepôts concernés clairement indiqués sur la carte. De plus, la trajectoire originale de la tempête, utilisée comme données d'entrée, est mise en évidence, ainsi que la zone d'impact tamponnée, qui sert de référence pour identifier les districts exposés.
 
 :::{figure} /fig/MAD_Trigger_Impact_Overview_Map.png
 ---
@@ -624,7 +624,7 @@ align: center
 ::::
 
 
-#### Exporting the Map 
+#### Exporter la carte 
 
 <!--Exporting the map should be done after each layout. If the maps are not locked, it will break the layouts and the work will have to be repeated-->
 
@@ -645,25 +645,26 @@ __Tool:__ [Print Layout Composer](https://giscience.github.io/gis-training-resou
 
 -->
 
-When you have finished the design of your map, you can export it as pdf or image file in different data formats.
+Une fois la conception de votre carte terminée, vous pouvez l'exporter au format PDF ou image dans différents formats.
 
-__Export as Image__
+__Exporter en tant qu'image__  
 
-1. In the print layout click on `Layer` -> `Export as Image`
-2. Choose the __map_outputs__ folder. Give the file the name of the event e.g **MDG_Trigger_Impact_Overview_Map_Freddy_2023**. 
-3. Click on `Save`
-4. The window `Image Export Options` will appear. Click `Save`.
-Now the image can be found in the result folder.
+1. Dans la mise en page, cliquez sur `Mise en page` -> `Exporter en tant qu'image`.
+2. Choisissez le dossier __map_outputs__. Donnez au fichier le nom de l'événement, par exemple **MDG_Trigger_Impact_Overview_Map_Freddy_2023**.  
+3. Cliquez sur `Sauvegarder`.  
+4. La fenêtre `Options d'exportation d'image` apparaîtra.  
+5. Cliquez sur `Sauvegarder`.
+L'image se trouve maintenant dans le dossier de résultats.
 
 
-__Export as PDF__
+__Exporter au format PDF__
 
-1. In the print layout click on `Layer` -> `Export as PDF`
-2. Choose the __map_outputs__ folder. Give the file the name of the event e.g **MDG_Trigger_Impact_Overview_Map_Freddy_2023**.
-3. Click on `Save`.
-4. The window `PDF Export Options` will appear. For the best results, select the `lossless` image compression.
-5. Click `Save`.
-Now the image can be found in the result folder.
+1. Dans la mise en page d'impression, cliquez sur `Mise en page` -> `Exporter au format PDF`
+2. Sélectionnez le dossier __map_outputs__. Donnez au fichier le nom de l'événement, par exemple **MDG_Trigger_Impact_Overview_Map_Freddy_2023**.  
+3. Cliquez sur `Sauvegarder`.
+4. La fenêtre `Options d'exportation PDF` s'affiche. Pour obtenir les meilleurs résultats, sélectionnez la compression d'image `sans perte`.
+5. Cliquez sur `Sauvegarder`.
+L'image se trouve maintenant dans le dossier de résultats.
 
 ### Map 2: Impact Assessment: Exposed Population and Critical Infrastructure
 

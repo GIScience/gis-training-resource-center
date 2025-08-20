@@ -595,13 +595,13 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-1-apercu-de-l-impact-du-cyclone-districts-touches-gravite-de-l-evenement-et-emplacement-des-entrepots">Carte 1: Aperçu de l’impact du cyclone: Districts touchés, gravité de l’événement et emplacement des entrepôts</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stylisation-des-couches">Stylisation des couches</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creation-de-la-mise-en-page">Création de la mise en page</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exporting-the-map">Exporting the Map</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exporter-la-carte">Exporter la carte</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map-2-impact-assessment-exposed-population-and-critical-infrastructure">Map 2: Impact Assessment: Exposed Population and Critical Infrastructure</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#map-2-styling-of-the-layers">Map 2: Styling of the layers</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#map-2-making-the-print-layout">Map 2: Making the Print Layout</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Exporting the Map</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exporting-the-map">Exporting the Map</a></li>
 </ul>
 </li>
 </ul>
@@ -842,10 +842,10 @@ Ces ensembles de données sont combinés dans un tableau qui résume les infrast
 <p><strong>Groupe 3: Carte Aperçu de l’impact du cyclone (Map_Cyclone_Impact_Overview)</strong></p>
 <p>Ce groupe comprend toutes les couches nécessaires à la création de la <strong>carte générale de l’impact du cyclone</strong> (illustrée ci-dessous). La trajectoire de la tempête et les limites de la région (Admin1) (<code class="docutils literal notranslate"><span class="pre">Admin1_Impact_Overview_Map</span></code>) sont préchargées pour vous aider à démarrer rapidement.
 Assurez-vous que vous travaillez avec la <strong>trajectoire correcte et mise à jour</strong> de la tempête pour l’événement étudié.</p>
-<figure class="align-center" id="id2">
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_Impact_Overview_Map.png"><img alt="../../_images/MAD_Trigger_Impact_Overview_Map.png" src="../../_images/MAD_Trigger_Impact_Overview_Map.png" style="width: 1000px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 61 </span><span class="caption-text">Cette carte sera créée à l’aide des couches du groupe 3.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 61 </span><span class="caption-text">Cette carte sera créée à l’aide des couches du groupe 3.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p><strong>Groupe 4: Carte d’évaluation de l’impact du cyclone (Map_Cyclone_Impact_Assessment)</strong></p>
@@ -859,10 +859,10 @@ Assurez-vous d’utiliser les données d’événement correctes afin de garanti
 <li><p>terres agricoles exposées</p></li>
 </ul>
 <p>Les résultats finaux de la carte ressembleront à ce qui suit.</p>
-<figure class="align-center" id="id3">
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_Impact_Population_Map.png"><img alt="../../_images/MAD_Trigger_Impact_Population_Map.png" src="../../_images/MAD_Trigger_Impact_Population_Map.png" style="width: 1000px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 62 </span><span class="caption-text">Cette carte sera créée à l’aide des couches du groupe 4.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 62 </span><span class="caption-text">Cette carte sera créée à l’aide des couches du groupe 4.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <!--EDIT: ADD THE CORRECT PICTURE FOR THIS MAP-->
@@ -1149,37 +1149,37 @@ __Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-cent
 <a class="reference internal image-reference" href="../../_images/mdg_aa_map_1_update_attribute_table.png"><img alt="../../_images/mdg_aa_map_1_update_attribute_table.png" src="../../_images/mdg_aa_map_1_update_attribute_table.png" style="width: 600px;" /></a>
 </figure>
 <ul class="simple">
-<li><p>On the right side, there is a attribute table that did not fully load. We want to update the attribute table to display the exposed districts.</p></li>
-<li><p>In the <code class="docutils literal notranslate"><span class="pre">Item</span> <span class="pre">Properties</span></code> panel, select the <code class="docutils literal notranslate"><span class="pre">Exposed_Districts</span></code> layer and click <strong>Refresh Table Data</strong></p></li>
-<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Attributes...</span></code></p></li>
-<li><p>In the <strong>Columns</strong> section:</p>
+<li><p>Sur le côté droit, il y a un tableau d’attributs qui ne s’est pas entièrement chargé. Nous voulons mettre à jour le tableau d’attributs pour afficher les districts exposés.</p></li>
+<li><p>IDans le panneau <code class="docutils literal notranslate"><span class="pre">Propriétés</span> <span class="pre">de</span> <span class="pre">l'élément</span></code>, sélectionne la couche <code class="docutils literal notranslate"><span class="pre">Exposed_Districts</span></code> et cliquez sur <strong>Actualiser les données du tableau</strong></p></li>
+<li><p>Cliquez sur on <code class="docutils literal notranslate"><span class="pre">Attributs...</span></code></p></li>
+<li><p>Dans la section <strong>Colonnes</strong>:</p>
 <ul>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Clear</span></code></p></li>
-<li><p>➕ Add the columns: <code class="docutils literal notranslate"><span class="pre">ADM1_EN</span></code>, <code class="docutils literal notranslate"><span class="pre">ADM2_EN</span></code>, <code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code></p></li>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">Effacer</span></code></p></li>
+<li><p>➕ Ajoutez les colonnes: <code class="docutils literal notranslate"><span class="pre">ADM1_EN</span></code>, <code class="docutils literal notranslate"><span class="pre">ADM2_EN</span></code>, <code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code></p></li>
 </ul>
 </li>
-<li><p>In the <strong>Sorting</strong> section:</p>
+<li><p>Dans la section <strong>Trier</strong>:</p>
 <ul>
-<li><p>➕ Add <code class="docutils literal notranslate"><span class="pre">ADM1_EN</span></code> and set the sort order to <code class="docutils literal notranslate"><span class="pre">Ascending</span></code></p></li>
+<li><p>➕ Ajoutez <code class="docutils literal notranslate"><span class="pre">ADM1_EN</span></code> et définissez l’ordre de tri sur <code class="docutils literal notranslate"><span class="pre">Ascendant</span></code></p></li>
 </ul>
 </li>
-<li><p>Click <strong>OK</strong> to apply</p></li>
+<li><p>Cliquez sur <strong>OK</strong> pour appliquer</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>💡 If too many districts are affected, the attribute table might not fit the page. Reduce the font size in the table’s item properties to make everything visible — but be aware that this may reduce readability.</p>
+<p>💡 Si trop de districts sont concernés, le tableau des attributs risque de ne pas être adapté à la page. Réduisez la taille de la fonte dans les propriétés des éléments du tableau afin que tout soit visible, mais sachez que cela peut réduire la lisibilité.</p>
 </div>
 <ol class="arabic" start="8">
-<li><p><strong>Adjust the Legend</strong></p>
+<li><p><strong>Ajuster la légende</strong></p>
 <ul>
-<li><p>Select the legend item, navigate to the <code class="docutils literal notranslate"><span class="pre">Item</span> <span class="pre">Properties</span></code> tab and scroll down until you see the <code class="docutils literal notranslate"><span class="pre">Legend</span> <span class="pre">items</span></code> field. If it is not there, check if you have to open the dropdown. Make sure <code class="docutils literal notranslate"><span class="pre">Auto</span> <span class="pre">update</span></code> is <strong>not checked</strong>.</p></li>
-<li><p>Remove all items in the legend by clicking on each item and then the red minus icon</p>
+<li><p>Sélectionnez l’élément de légende, naviguez jusqu’à la section <code class="docutils literal notranslate"><span class="pre">Propriétés</span> <span class="pre">de</span> <span class="pre">l'élément</span></code> et faites défiler vers le bas jusqu’à ce que vous voyiez <code class="docutils literal notranslate"><span class="pre">Éléments</span> <span class="pre">de</span> <span class="pre">la</span> <span class="pre">légende</span></code>. Si ce n’est pas le cas, vérifiez si vous devez ouvrir le menu déroulant. Assurez-vous que la case <code class="docutils literal notranslate"><span class="pre">Mise</span> <span class="pre">à</span> <span class="pre">jout</span> <span class="pre">auto</span></code> n’est <strong>pas cochée</strong>.</p></li>
+<li><p>Supprimez tous les éléments de la légende en cliquant sur chaque élément, puis sur l’icône rouge moins</p>
 <ul class="simple">
-<li><p>In the pop-up, check <strong>Only show visible layers</strong> to help you find the correct ones</p></li>
-<li><p>To rename a legend item, <strong>double-click</strong> on the layer name in the legend item list and enter the new name</p></li>
+<li><p>Dans la fenêtre contextuelle, cochez <strong>Ne montrer que les entités à l’intérieur de la carte liée</strong> pour vous aider à trouver les corrects.</p></li>
+<li><p>Pour renommer un élément de la légende, <strong>double-cliquez</strong> sur le nom de la couche dans la liste des éléments de la légende et entrez le nouveau nom</p></li>
 </ul>
 </li>
-<li><p>➕ Add the following layers by clicking the green plus:</p>
+<li><p>➕ Ajoutez les couches suivantes en cliquant sur le signe plus vert:</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">Admin1_Impact_Overview_Map</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">exposed_districts</span></code></p></li>
@@ -1187,41 +1187,41 @@ __Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-cent
 <li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Cyclone_Area</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouses</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">OpenStreetMap</span></code></p></li>
-<li><p>Now, let’s rename the layers in the legend. In the <strong>Item properties</strong>, below the list of the legend layers, there is a <img alt="" src="../../_images/mdg_aa_edit_legend.png" /> <code class="docutils literal notranslate"><span class="pre">Edit</span> <span class="pre">selected</span> <span class="pre">item</span> <span class="pre">properties</span></code>-button. By clicking on it, you can edit the label of the icon in the legend. Rename the layers as follows:</p>
+<li><p>Maintenant, nous allons renommer les couches dans la légende. Dans les <strong>propriétés de l’élément</strong>, sous la liste des couches de la légende, se trouve un bouton <img alt="" src="../../_images/mdg_aa_edit_legend.png" /> <code class="docutils literal notranslate"><span class="pre">Editer</span> <span class="pre">les</span> <span class="pre">propriétés</span> <span class="pre">de</span> <span class="pre">l'élément</span> <span class="pre">sélectionné</span></code>. En cliquant dessus, vous pouvez modifier le nom de l’icône dans la légende. Renommez les couches comme suit:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Admin1_Impact_Overview_Map</span></code> → rename to</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Admin1_Impact_Overview_Map</span></code> → renommer en</p></li>
 </ul>
-<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Regions
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Régions
 </pre></div>
 </div>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">exposed_districts</span></code> → rename to</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">exposed_districts</span></code> → renommer en</p></li>
 </ul>
-<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Exposed Districts
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Districts exposés
 </pre></div>
 </div>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Track</span></code> → rename to</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Track</span></code> → renommer en</p></li>
 </ul>
-<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Projected Cyclone Track
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Trajectoire prévue du cyclone
 </pre></div>
 </div>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Cyclone_Area</span></code> → rename to</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Cyclone_Area</span></code> → renommer en</p></li>
 </ul>
-<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Exposed Cyclone Area
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Zone exposée aux cyclones
 </pre></div>
 </div>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">relevant_warehouses</span></code> → rename to</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">relevant_warehouses</span></code> → renommer en</p></li>
 </ul>
-<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Relevant Warehouses
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Entrepôts concernés
 </pre></div>
 </div>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Background</span> <span class="pre">Map:</span> <span class="pre">OpenStreetMap</span></code> → rename to</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Background</span> <span class="pre">Map:</span> <span class="pre">OpenStreetMap</span></code> → renommer en</p></li>
 </ul>
-<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Background Map:
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Carte de fond:
 OpenStreetMap
 </pre></div>
 </div>
@@ -1230,19 +1230,19 @@ OpenStreetMap
 </li>
 </ul>
 </li>
-<li><p>Adjust the icons by clicking on the <Picture> field in the items list or on the red cross in the map template.</p></li>
+<li><p>Ajustez les icônes en cliquant sur le bouton <Image> dans la liste des éléments ou sur la croix rouge dans le modèle de carte.</p></li>
 </ol>
 <ul class="simple">
-<li><p>In the Item Properties, correct the path to the CRM logo by clicking on the three dots <img alt="" src="../../_images/Three_points.png" /> and navigate to <code class="docutils literal notranslate"><span class="pre">\aa_madagascar\AA_Cyclone_Monitoring_Trigger_MAD\logos_pictures</span></code> and selecting the CRM logo file.</p></li>
-<li><p>Repeat the process for the second missing image. This time, select the HeiGIT Logo</p></li>
+<li><p>Dans les propriétés de l’élément, corrigez le chemin d’accès au logo CRM en cliquant sur les trois points <img alt="" src="../../_images/Three_points.png" /> et naviguez jusqu’à  <code class="docutils literal notranslate"><span class="pre">\aa_madagascar\AA_Cyclone_Monitoring_Trigger_MAD\logos_pictures</span></code> puis sélectionnez le fichier du logo CRM.</p></li>
+<li><p>Répétez le processus pour la deuxième image manquante. Cette fois-ci, sélectionnez le logo HeiGIT.</p></li>
 </ul>
 <ol class="arabic simple" start="10">
-<li><p>Below the logos, adjust the information in the text box by selecting the text box and navigating to the Item properties.</p></li>
-<li><p>Finally, let’s lock the layers and layer styles so that changes in the main QGIS window do not affect our print layout:</p></li>
+<li><p>Sous les logos, modifiez les informations dans la zone de texte en sélectionnant celle-ci et en naviguant vers les propriétés de l’élément.</p></li>
+<li><p>Enfin, verrouillons les calques et les styles de calque afin que les modifications apportées dans la fenêtre principale de QGIS n’affectent pas notre mise en page d’impression:</p></li>
 </ol>
 <ul class="simple">
-<li><p>In the item list, select <strong>Map 1</strong>.</p></li>
-<li><p>In the item properties, check the boxes for <strong>lock layers</strong> and <strong>lock styles for layers</strong>. This will prevent the map to automatically when we make changes to the map canvas</p></li>
+<li><p>Dans la liste des éléments, sélectionnez <strong>Carte 1</strong>.</p></li>
+<li><p>Dans les propriétés de l’élément, cochez les cases <strong>verrouiller les couches</strong> et <strong>verrouiller le style des couches</strong>. Cela empêchera la carte de se mettre automatiquement à jour lorsque nous apporterons des modifications à la zone de travail de la carte.</p></li>
 </ul>
 <figure class="align-default" id="mdg-aa-lock-layers">
 <a class="reference internal image-reference" href="../../_images/mdg_aa_lock_layers.png"><img alt="../../_images/mdg_aa_lock_layers.png" src="../../_images/mdg_aa_lock_layers.png" style="width: 600px;" /></a>
@@ -1256,28 +1256,28 @@ OpenStreetMap
 -->
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
-<p>Checklist for final map output:</p>
+<p>Liste de contrôle pour la version finale de la carte:</p>
 <ul class="simple">
-<li><p>Map Information: Review and update all text elements as needed.</p></li>
-<li><p>Legend: Remove unnecessary items and rename layers with clear, meaningful descriptions.</p></li>
-<li><p>Exposed Districts: Include only districts that are actually impacted in your “List of Exposed Districts”. Update them according to the event.</p></li>
+<li><p>Informations cartographiques: vérifiez et mettez à jour tous les éléments textuels si nécessaire.</p></li>
+<li><p>Légende: supprimez les éléments inutiles et renommez les couches avec des descriptions claires et significatives.</p></li>
+<li><p>Districts exposés: n’incluez que les districts réellement touchés dans votre “Liste des districts exposés”. Mettez-les à jour en fonction de l’événement.</p></li>
 </ul>
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Your final output should look like this after styling the layer<div class="sd-summary-down docutils">
+Une fois la couche est stylisé, votre résultat final devrait ressembler à ceci.<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">You will now see the exposed districts and the locations of relevant warehouses clearly displayed on the map. Additionally, the original storm track line — used as input data — is highlighted, along with the buffered impact area, which serves as a proxy for identifying exposed districts.</p>
+<p class="sd-card-text">Vous pouvez voir maintenant les districts exposés et l’emplacement des entrepôts concernés clairement indiqués sur la carte. De plus, la trajectoire originale de la tempête, utilisée comme données d’entrée, est mise en évidence, ainsi que la zone d’impact tamponnée, qui sert de référence pour identifier les districts exposés.</p>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_Impact_Overview_Map.png"><img alt="../../_images/MAD_Trigger_Impact_Overview_Map.png" src="../../_images/MAD_Trigger_Impact_Overview_Map.png" style="width: 1000px;" /></a>
 </figure>
 </div>
 </details></section>
-<section id="exporting-the-map">
-<h4>Exporting the Map<a class="headerlink" href="#exporting-the-map" title="Permalink to this heading">#</a></h4>
+<section id="exporter-la-carte">
+<h4>Exporter la carte<a class="headerlink" href="#exporter-la-carte" title="Permalink to this heading">#</a></h4>
 <!--Exporting the map should be done after each layout. If the maps are not locked, it will break the layouts and the work will have to be repeated-->
 <!---
 ```{figure} /fig/MAD_Trigger_workflow_Step5.png
@@ -1294,23 +1294,24 @@ __Purpose:__ Export the designed and finalized map layout in order to print it a
 __Tool:__ [Print Layout Composer](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
 
 -->
-<p>When you have finished the design of your map, you can export it as pdf or image file in different data formats.</p>
-<p><strong>Export as Image</strong></p>
+<p>Une fois la conception de votre carte terminée, vous pouvez l’exporter au format PDF ou image dans différents formats.</p>
+<p><strong>Exporter en tant qu’image</strong></p>
 <ol class="arabic simple">
-<li><p>In the print layout click on <code class="docutils literal notranslate"><span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Export</span> <span class="pre">as</span> <span class="pre">Image</span></code></p></li>
-<li><p>Choose the <strong>map_outputs</strong> folder. Give the file the name of the event e.g <strong>MDG_Trigger_Impact_Overview_Map_Freddy_2023</strong>.</p></li>
-<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Save</span></code></p></li>
-<li><p>The window <code class="docutils literal notranslate"><span class="pre">Image</span> <span class="pre">Export</span> <span class="pre">Options</span></code> will appear. Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.
-Now the image can be found in the result folder.</p></li>
+<li><p>Dans la mise en page, cliquez sur <code class="docutils literal notranslate"><span class="pre">Mise</span> <span class="pre">en</span> <span class="pre">page</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Exporter</span> <span class="pre">en</span> <span class="pre">tant</span> <span class="pre">qu'image</span></code>.</p></li>
+<li><p>Choisissez le dossier <strong>map_outputs</strong>. Donnez au fichier le nom de l’événement, par exemple <strong>MDG_Trigger_Impact_Overview_Map_Freddy_2023</strong>.</p></li>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">Sauvegarder</span></code>.</p></li>
+<li><p>La fenêtre <code class="docutils literal notranslate"><span class="pre">Options</span> <span class="pre">d'exportation</span> <span class="pre">d'image</span></code> apparaîtra.</p></li>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">Sauvegarder</span></code>.
+L’image se trouve maintenant dans le dossier de résultats.</p></li>
 </ol>
-<p><strong>Export as PDF</strong></p>
+<p><strong>Exporter au format PDF</strong></p>
 <ol class="arabic simple">
-<li><p>In the print layout click on <code class="docutils literal notranslate"><span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Export</span> <span class="pre">as</span> <span class="pre">PDF</span></code></p></li>
-<li><p>Choose the <strong>map_outputs</strong> folder. Give the file the name of the event e.g <strong>MDG_Trigger_Impact_Overview_Map_Freddy_2023</strong>.</p></li>
-<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
-<li><p>The window <code class="docutils literal notranslate"><span class="pre">PDF</span> <span class="pre">Export</span> <span class="pre">Options</span></code> will appear. For the best results, select the <code class="docutils literal notranslate"><span class="pre">lossless</span></code> image compression.</p></li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.
-Now the image can be found in the result folder.</p></li>
+<li><p>Dans la mise en page d’impression, cliquez sur <code class="docutils literal notranslate"><span class="pre">Mise</span> <span class="pre">en</span> <span class="pre">page</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Exporter</span> <span class="pre">au</span> <span class="pre">format</span> <span class="pre">PDF</span></code></p></li>
+<li><p>Sélectionnez le dossier <strong>map_outputs</strong>. Donnez au fichier le nom de l’événement, par exemple <strong>MDG_Trigger_Impact_Overview_Map_Freddy_2023</strong>.</p></li>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">Sauvegarder</span></code>.</p></li>
+<li><p>La fenêtre <code class="docutils literal notranslate"><span class="pre">Options</span> <span class="pre">d'exportation</span> <span class="pre">PDF</span></code> s’affiche. Pour obtenir les meilleurs résultats, sélectionnez la compression d’image <code class="docutils literal notranslate"><span class="pre">sans</span> <span class="pre">perte</span></code>.</p></li>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">Sauvegarder</span></code>.
+L’image se trouve maintenant dans le dossier de résultats.</p></li>
 </ol>
 </section>
 </section>
@@ -1795,8 +1796,8 @@ Your final output should look like this after styling the layer<div class="sd-su
 </figure>
 </div>
 </details></section>
-<section id="id1">
-<h4>Exporting the Map<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h4>
+<section id="exporting-the-map">
+<h4>Exporting the Map<a class="headerlink" href="#exporting-the-map" title="Permalink to this heading">#</a></h4>
 <!--Exporting the map should be done after each layout. If the maps are not locked, it will break the layouts and the work will have to be repeated
 
 ```{figure} /fig/MAD_Trigger_workflow_Step5.png
@@ -1964,13 +1965,13 @@ Now the image can be found in the result folder.</p></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-1-apercu-de-l-impact-du-cyclone-districts-touches-gravite-de-l-evenement-et-emplacement-des-entrepots">Carte 1: Aperçu de l’impact du cyclone: Districts touchés, gravité de l’événement et emplacement des entrepôts</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stylisation-des-couches">Stylisation des couches</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creation-de-la-mise-en-page">Création de la mise en page</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exporting-the-map">Exporting the Map</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exporter-la-carte">Exporter la carte</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map-2-impact-assessment-exposed-population-and-critical-infrastructure">Map 2: Impact Assessment: Exposed Population and Critical Infrastructure</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#map-2-styling-of-the-layers">Map 2: Styling of the layers</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#map-2-making-the-print-layout">Map 2: Making the Print Layout</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Exporting the Map</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exporting-the-map">Exporting the Map</a></li>
 </ul>
 </li>
 </ul>
