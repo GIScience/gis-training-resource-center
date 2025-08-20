@@ -111,9 +111,9 @@ If the camera already is set in the "AILAS" mode you do not have to configure th
 ## START OF DRIVE Checklist
 
 ### Physical Setup
-[ ] Mount the camera on the windshield facing straight ahead.  
-[ ] Connect the Powerbank to the camera with the USB-C cable.  
-[ ] Store the Powerbank somewhere safe so it won’t move while driving.  
+- [ ] Mount the camera on the windshield facing straight ahead.  
+- [ ] Connect the Powerbank to the camera with the USB-C cable.  
+-[ ] Store the Powerbank somewhere safe so it won’t move while driving.  
 
 ### Start Filming
 [ ] Hold the side power button until the screen turns on.  
