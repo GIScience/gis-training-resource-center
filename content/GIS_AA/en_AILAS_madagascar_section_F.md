@@ -196,25 +196,24 @@ If the camera already is set in the "AILAS" mode you do not have to configure th
 
 <!-- Image QR-code -->
 
-::::{grid} 2
-
-:::{grid-item}
-
 ```{figure} /fig/AILAS_QR_code.png
 ---
-name: 
-width: 375 px
+name: QR Code
+width: 375px
 ---
 Scan this QR-Code
 ```
 
+
+
+::::{grid} 2
 
 :::{grid-item}
 
 ```{figure} /fig/AILAS_button_overview.png
 ---
 name: 
-width: 375 px
+width: 375px
 ---
 Button overview
 ```
@@ -225,7 +224,7 @@ Button overview
 ```{figure} /fig/AILAS_AILAS_mode.png
 ---
 name: 
-width: 375 px
+width: 375px
 ---
 Camera is in AILAS mode
 ```
