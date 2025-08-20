@@ -10,7 +10,7 @@ Before departure, ensure you have the following:
 | MicroSD card 1TB       |
 | Powerbank              |
 | USB-C Charging Cable   |
-| GoPro Windshield Mount |
+| GoPro Suction Mount |
 | Printed Copy of This Guide |
 
 
@@ -19,27 +19,52 @@ Before departure, ensure you have the following:
 ::::{grid} 3
 :::{grid-item}
 
-```{figure} /fig/AILAS_centre position.jpeg
+```{figure} /fig/AILAS_GoPro_front.jpeg
 ---
-name: camera centre position
-width: 375 px
+name: 
+width: 250 px
 ---
-Central position behind rear mirror 
+GoPro camera
 ```
 
 :::
 
 :::{grid-item}
 
-```{figure} /fig/AILAS_side position.jpg
+```{figure} /fig/AILAS_mount.jpeg
 ---
-name: camera side position
-width: 375 px
+name: 
+width: 250 px
 ---
-Side position near the passenger door
+Suction mount
 ```
 
 :::
+
+:::{grid-item}
+
+```{figure} /fig/AILAS_clip_attachment.jpeg
+---
+name: 
+width: 250 px
+---
+Clip attachment
+```
+
+:::
+
+:::{grid-item}
+
+```{figure} /fig/AILAS_powerbank.jpeg
+---
+name: 
+width: 250 px
+---
+Powerbank
+```
+
+:::
+
 ::::
 
 ---
