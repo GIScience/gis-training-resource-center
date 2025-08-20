@@ -513,7 +513,7 @@ La mise en page chargera automatiquement le canevas de la carte. Cependant, pour
 6. **Mettre à jour le titre de la carte** 
    - Cliquez sur l'élément de texte du titre en haut de la carte.
    - Dans le panneau `Propriétés de l'objet` modifiez le texte **Étiquette principale** pour qu'il corresponde à votre événement, par exemple `Cyclone Harald – 2025`.
-   - Ajustez la taille de la police ou l'alignement si nécessaire.
+   - Ajustez la taille de la font ou l'alignement si nécessaire.
 
 
 
@@ -525,7 +525,7 @@ width: 600 px
 ---
 :::
    - Sur le côté droit, il y a un tableau d'attributs qui ne s'est pas entièrement chargé. Nous voulons mettre à jour le tableau d'attributs pour afficher les districts exposés.
-   - IDans le panneau `Propriétés de l'élément`, sélectionne la couche `Exposed_Districts` et cliquez sur **Actualiser les données du tableau**
+   - Dans le panneau `Propriétés de l'élément`, sélectionne la couche `Exposed_Districts` et cliquez sur **Actualiser les données du tableau**
    - Cliquez sur on `Attributs...`
    - Dans la section **Colonnes**:
      - Cliquez sur `Effacer`
@@ -666,16 +666,16 @@ __Exporter au format PDF__
 5. Cliquez sur `Sauvegarder`.
 L'image se trouve maintenant dans le dossier de résultats.
 
-### Map 2: Impact Assessment: Exposed Population and Critical Infrastructure
+### Carte 2: Évaluation de l'impact: population exposée et infrastructures critiques
 
-Layers needed for this map:
+Couches nécessaires pour cette carte:
 - `CRM_Warehouses`
 - `cyclone_track`
 - `Exposed_Cyclone_Area`
 - `Exposed_Population`
-- `Admin1_Impact_Assessment_Map` already loaded and style in QGIS
+- `Admin1_Impact_Assessment_Map` déjà chargé et stylisé dans QGIS
 
-Right click on each layer > `Duplicate this layer` and move the copies to the group "Map_Cyclone_Impact_Assessment"
+Cliquez avec le bouton droit sur chaque couche > `Dupliquer la couche` et déplacez les copies vers le groupe "Map_Cyclone_Impact_Assessment"
 
 ```{figure} /fig/MAD_Trigger_layer_order_impact_map.PNG
 ---
@@ -688,64 +688,63 @@ align: center
 <!--Remove the comment as duplicating and loading the style ensures that previous map layouts are not broken. also add that you can fix layer styles and layers in the map items-->
 
 
-#### Map 2: Styling of the layers
+#### Carte 2: Stylisation des couches
 
-1. Deactivate all the layers except gor the group "Map_Cyclone_Impact_Assessment" and the OpenStreetMap Basemap.
-2. Right click on the "exposed_population - copy" layer -> `Properties` -> `Symbology`
-3. In the down left corner click on `Style` -> `Load Style`
-4. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the "AA_Cyclone_Monitoring_Trigger_MAD/layer_styles” folder and select the file __“exposed_population_style.qml”__ style layer.
-5. Click `Open`. Then click on `Load Style`
-6. Back in the “Layer Properties” window click `Apply` and `OK`
+1. Désactivez toutes les couches sauf le groupe "Map_Cyclone_Impact_Assessment" et la carte de base OpenStreetMap.
+2. Cliquez avec le bouton droit sur la couche "exposed_population - copy" (population_exposée copie) -> `Propriétés` -> `Symbologie`
+3. Dans le coin inférieur gauche, cliquez sur `Style` -> `Charger le Style`
+4. Dans la nouvelle fenêtre, cliquez sur les trois points ![](/fig/Three_points.png). Naviguez jusqu'au dossier "AA_Cyclone_Monitoring_Trigger_MAD/layer_styles” et sélectionnez le fichier __“exposed_population_style.qml”__.
+5. Cliquez sur `Ouvrir`. Cliquez ensuite sur `Charger le style`
+6. De retour dans la fenêtre “Propriétés de la couche” cliquez sur `Appliquer` et `OK`
 
-Repeat this process for the following output layers, along with their corresponding style sheets:
+Répétez ce processus pour les couches de sortie suivantes, ainsi que pour leurs feuilles de style correspondantes:
 
-| Layer name | Style | Comment
+| Nom de la couche | Style | Remarques
 | ----- | --- | --- |
-|`Admin1_Impact_Assessment_Map`| `adm1_style.qml` | pre-loaded |
-|`CRM_warehouses` | `relevant_warehouses_style.qml` | model output |
-|`exposed_cyclone_area`|`exposed_cyclone_area_style.qml`| model output |
-|`cyclone_track`| `storm_track_cyclone_style.qml`| loaded by user |
+|`Admin1_Impact_Assessment_Map`| `adm1_style.qml` | préchargé |
+|`CRM_warehouses` | `relevant_warehouses_style.qml` | résultat du modèle |
+|`exposed_cyclone_area`|`exposed_cyclone_area_style.qml`| résultat du modèle |
+|`cyclone_track`| `storm_track_cyclone_style.qml`| chargé par l'utilisateur |
 
 :::{attention}
 
-Ensure that all relevant output layers are properly added to the QGIS project. If any layers are missing, try re-running the model or check your Model Outputs folder to see if the files were created successfully.
+Assurez-vous que toutes les couches de résultats sont correctement ajoutées au projet QGIS. Si certaines couches manquent, essayez de relancer le modèle ou vérifiez dans le dossier Model Outputs si les fichiers ont bien été créés.
 
-To maintain a clear and organized workspace, group the output layers in the Layers panel under the appropriate group (e.g., Map_Cyclone_Impact_Overview). This helps keep your project structured and makes navigation easier during the map creation process.
+Pour conserver un espace de travail clair et organisé, regroupez les couches de sortie dans le panneau Couches sous le groupe approprié (par exemple, Map_Cyclone_Impact_Overview). Cela permet de structurer votre projet et facilite la navigation pendant le processus de création de la carte.
 
 :::
 
-::::{admonition} Other Impact Assessment Maps
+::::{admonition} Autres cartes d'évaluation d'impact
 :class: hint
 
-The documentation covers the exposed population impact assessment map. However, the model also estimates the exposed buildings, landcover, and health and education facilities. These variables can also be displayed on the map using the following style files. To keep the map easily understandable, use only one of the 
+La documentation couvre la carte d'évaluation de l'impact sur la population exposée. Cependant, le modèle estime également les bâtiments exposés, la couverture terrestre et les établissements de santé et d'enseignement. Ces variables peuvent également être affichées sur la carte à l'aide des fichiers de style suivants. Pour que la carte reste facilement compréhensible, n'utilisez qu'une seule des variables.
 
 
-| Layer name | Style | Comment
+| Nom de la couche | Style | Remarques
 | ----- | --- | --- |
-|`exposed_population`|`exposed_population_style.qml`|model output|
-|`exposed_building`|`exposed_building_style.qml`|model output|
-|`exposed_health_facilities`| `exposed_health_facilities_style.qml` | model output |
-|`exposed_education_facilities`| `exposed_education_facilities_style.qml` | model output |
-|`exposed_agricultural_landcover`| `exposed_agriculture_landcover_style.qml` | model output |
-|`exposed_health_facilities_points`| `points_exposed_health_facilities_style.qml` | model output |
-|`exposed_education_facilities_points`| `points_exposed_education_facilities_style.qml` | model output |
-|`relevant_warehouses` | `relevant_warehouses_style.qml` | model output |
-|`exposed_cyclone_area`|`exposed_cyclone_area_style.qml`| model output |
-|`cyclone_track`| `storm_track_cyclone_style.qml`| loaded by user |
+|`exposed_population`|`exposed_population_style.qml`|résultat du modèle|
+|`exposed_building`|`exposed_building_style.qml`|résultat du modèle|
+|`exposed_health_facilities`| `exposed_health_facilities_style.qml` | résultat du modèle |
+|`exposed_education_facilities`| `exposed_education_facilities_style.qml` | résultat du modèle |
+|`exposed_agricultural_landcover`| `exposed_agriculture_landcover_style.qml` | résultat du modèle |
+|`exposed_health_facilities_points`| `points_exposed_health_facilities_style.qml` | résultat du modèle |
+|`exposed_education_facilities_points`| `points_exposed_education_facilities_style.qml` | résultat du modèle |
+|`relevant_warehouses` | `relevant_warehouses_style.qml` | résultat du modèle |
+|`exposed_cyclone_area`|`exposed_cyclone_area_style.qml`| résultat du modèle |
+|`cyclone_track`| `storm_track_cyclone_style.qml`| chargé par l'utilisateur |
 <!--Move this somewhere else where it is easier to understand OR add pictures to illustrate the different maps?-->
 ::::
 
-#### Map 2: Making the Print Layout
+#### Carte 2: Création de la mise en page
 
 ```{tip}
-The same workflow applies to all five impact variables: population, buildings, education facilities, health sites, and agricultural landcover. The following example demonstrates the process for creating the population impact map. The remaining maps can be generated by following the same steps.
+Le même processus s'applique aux cinq variables d'impact: population, bâtiments, établissements scolaires, sites de santé et couverture agricole. L'exemple suivant illustre le processus de création de la carte d'impact sur la population. Les autres cartes peuvent être générées en suivant les mêmes étapes.
 ```
 
-
-1. Open a new print layout by clicking on `Project` -> `Layout Manager`. A small new window will appear. Here you can select an existing layout or create a new layout from a template. 
-2. We want to create a new layout from a template. Click on the `Empty Layout` dropdown menu and select `Specific`. 
-3. Below, click on the three dots ![](/fig/Three_points.png) and navigate to the folder `../AA_Cyclone_Monitoring_Trigger_MAD/map_templates/` and select the file with the name `cyclone_impact_population_map_template`. Click `Open`, then `Create`. 
-4.  QGIS will ask you to name the new layout. Give it a name such as "Cyclone_Overview_Map_Freddy_2023". Click `OK`. A new window will open. This is the print layout composer. It should look similar to the figure below.
+1. Ouvrez une nouvelle mise en page en cliquant sur `Projet` -> `Gestionnaire de mise en page`. Une petite fenêtre apparaîtra. Vous pouvez y sélectionner une mise en page existante ou créer une nouvelle mise en page à partir d'un modèle.
+2. Nous voulons créer une nouvelle mise en page à partir d'un modèle. Cliquez sur le menu déroulant `Mise en page vide` et sélectionnez `Spécifique`. 
+3. Ci-dessous, cliquez sur les trois points ![](/fig/Three_points.png) et naviguez jusqu'au dossier`../AA_Cyclone_Monitoring_Trigger_MAD/map_templates/` et sélectionnez le fichier nommé `cyclone_impact_population_map_template`. Cliquez sur `Ouvrir`, enpuis sur `Créer`. 
+4.  QGIS vous demandera de nommer la nouvelle mise en page. Donnez-lui un nom tel que "Cyclone_Overview_Map_Freddy_2023". Cliquez sur `OK`. Une nouvelle fenêtre s'ouvrira. Il s'agit du compositeur de mise en page. Il devrait ressembler à la figure ci-dessous.
 
 :::{figure} /fig/AA/mdg_aa_pop_impact_template.png
 ---
@@ -754,227 +753,197 @@ width: 600 px
 ---
 :::
 
-5. **Update the Map Title**  
-   - Click on the title text element at the top of the map.
-   - In the `Item Properties` panel, edit the **Main Label** text to match your event, e.g. `Cyclone Harald – 2025`.
-   - Adjust font size or alignment as needed.
-6. **Update the Attribute Table on the Right-Hand Side of the Map**  
-   To update the attribute table displaying the exposed districts:
-   - In the `Item Properties` panel, select the `exposed_population`**Or any other layer you are working with** layer and click **Refresh Table Data**
-   - Click on `Attributes...`
-   - In the **Columns** section:
-     - Click `Clear`
-     - ➕ Add the columns: `ADM1_EN`, `ADM2_EN`, `ADM2_PCODE` and `exposed_population` **or any other layer you are working with**
-   - In the **Sorting** section:
-     - ➕ Add `ADM1_EN` and set the sort order to `Ascending`
-   - Click **OK** to apply
+1. **Mettre à jour le titre de la carte** 
+   - Cliquez sur l'élément de texte du titre en haut de la carte.
+   - Dans le panneau `Propriétés de l'objet` modifiez le texte **Étiquette principale** pour qu'il corresponde à votre événement, par exemple `Cyclone Harald – 2025`.
+   - Ajustez la taille de la police ou l'alignement si nécessaire.
+2. **Mettre à jour le tableau des attributs situé à droite de la carte**
+   Pour mettre à jour le tableau des attributs affichant les districts exposés:
+   - Dans le panneau `Propriétés de l'élément`, sélectionne la couche `exposed_population`**Ou toute autre couche avec laquelle vous travaillez**, puis cliquez sur **Actualiser les données du tableau**.
+   - Cliquez sur on `Attributs...`
+   - Dans la section **Colonnes**:
+     - Cliquez sur `Effacer`
+     - ➕ Ajoutez les colonnes: `ADM1_EN`, `ADM2_EN`, `ADM2_PCODE` et `exposed_population` **Ou toute autre couche avec laquelle vous travaillez**
+   - Dans la section **Trier**:
+     - ➕ Ajoutez `ADM1_EN` et définissez l'ordre de tri sur `Ascendant`
+   - Cliquez sur **OK** pour appliquer
 
 ```{note}
-If too many districts are affected, the attribute table might not fit the page. Reduce the font size in the table’s item properties to make everything visible — but be aware that this may reduce readability.
+💡 Si trop de districts sont concernés, le tableau des attributs risque de ne pas être adapté à la page. Réduisez la taille de la fonte dans les propriétés des éléments du tableau afin que tout soit visible, mais sachez que cela peut réduire la lisibilité.
 ```
 
-7. Adjust the Legend by clicking on it in the map layout and have a look at the `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there, check if you have to open the dropdown. Make sure `Auto update` is **not checked**.
-    * Remove all items in the legend by clicking on each item and then the red minus icon
-        * In the pop-up, check **Only show visible layers** to help you find the correct ones
-        * To rename a legend item, **double-click** on the layer name in the legend item list and enter the new name  
-    * ➕ Add the following layers by clicking the green plus:
-   - In the pop-up, check **Only show visible layers** to help you find the correct ones
-   - 💡 To rename a legend item, **double-click** on the layer name in the legend item list and enter the new name
-   - Ensure all legend entries use **clear and meaningful labels**
+8. Ajustez la légende en cliquant dessus dans la mise en page de la carte, puis consultez la section « Propriétés de l'élément » et faites défiler vers le bas jusqu'à ce que vous voyiez le champ « Éléments de la légende ». S'il n'apparaît pas, vérifiez si vous devez ouvrir le menu déroulant. Assurez-vous que l'option `Mise à jout auto` n'est **pas cochée**.
+    * Supprimez tous les éléments de la légende en cliquant sur chaque élément, puis sur l'icône rouge moins
+        * Dans la fenêtre contextuelle, cochez **Ne montrer que les entités à l'intérieur de la carte liée** pour vous aider à trouver les corrects.
+        * 💡 Pour renommer un élément de la légende, **double-cliquez** sur le nom de la couche dans la liste des éléments de la légende et entrez le nouveau nom
+    * ➕ Ajoutez les couches suivantes en cliquant sur le signe plus vert:
+   - Veillez à ce que toutes les entrées de légende utilisent des **étiquettes claires et significatives**.
 ::::{tab-set}
 
-:::{tab-item} Exposed Population
-* `Admin1_Impact_Overview_Map` → rename to  
+:::{tab-item} Population exposée
+* `Admin1_Impact_Overview_Map` → renommer en  
 ```md
-Regions
+Régions
 ```
-* `exposed_population` → rename to  
+* `exposed_population` → renommer en  
 ```md
-Exposed Population
+Population exposée
 ```
-* `Cyclone Track` → rename to  
+* `Cyclone Track` → renommer en  
 ```md
-Projected Cyclone Track
+Trajectoire prévue du cyclone
 ```
-* `Exposed_Cyclone_Area` → rename to  
+* `Exposed_Cyclone_Area` → renommer en  
 ```md
-Exposed Cyclone Area
+Zone exposée aux cyclones
 ```
-* `relevant_warehouses` → rename to  
+* `relevant_warehouses` → renommer en  
 ```md
-Relevant Warehouses
+Entrepôts concernés
 ```
-* `Background Map: OpenStreetMap` → rename to  
+* `Carte de fond : OpenStreetMap` → renommer en  
 ```md
-Background Map:
+Carte de fond :
 OpenStreetMap
 ```
 :::
 
-:::{tab-item} Exposed Buildings 
-* `Admin1_Impact_Overview_Map` → rename to  
+:::{tab-item} Bâtiments exposés
+* `Admin1_Impact_Overview_Map` → renommer en  
 ```md
-Regions
+Régions
 ```
-* `exposed_building` → rename to  
+* `exposed_building` → renommer en  
 ```md
-Exposed Buildings
+Bâtiments exposés
 ```
-* `Cyclone Track` → rename to  
+* `Cyclone Track` → renommer en  
 ```md
-Projected Cyclone Track
+Trajectoire prévue du cyclone
 ```
-* `Exposed_Cyclone_Area` → rename to  
+* `Exposed_Cyclone_Area` → renommer en  
 ```md
-Exposed Cyclone Area
+Zone exposée aux cyclones
 ```
-* `relevant_warehouses` → rename to  
+* `relevant_warehouses` → renommer en  
 ```md
-Relevant Warehouses
+Entrepôts concernés
 ```
-* `Background Map: OpenStreetMap` → rename to  
+* `Carte de fond : OpenStreetMap` → renommer en  
 ```md
-Background Map:
+Carte de fond :
 OpenStreetMap
 ```
 :::
 
-:::{tab-item} Exposed Health Facilities
-* `Admin1_Impact_Overview_Map` → rename to  
+:::{tab-item} Établissements de santé exposés
+* `Admin1_Impact_Overview_Map` → renommer en  
 ```md
-Regions
+Régions
 ```
-* `exposed_health_facilities` → rename to  
+* `exposed_health_facilities` → renommer en  
 ```md
-Exposed Health Facilities
+Établissements de santé exposés
 ```
-* `Cyclone Track` → rename to  
+* `Cyclone Track` → renommer en  
 ```md
-Projected Cyclone Track
+Trajectoire prévue du cyclone
 ```
-* `Exposed_Cyclone_Area` → rename to  
+* `Exposed_Cyclone_Area` → renommer en  
 ```md
-Exposed Cyclone Area
+Zone exposée aux cyclones
 ```
-* `relevant_warehouses` → rename to  
+* `relevant_warehouses` → renommer en  
 ```md
-Relevant Warehouses
+Entrepôts concernés
 ```
-* `Background Map: OpenStreetMap` → rename to  
+* `Carte de fond : OpenStreetMap` → renommer en  
 ```md
-Background Map:
+Carte de fond :
 OpenStreetMap
 ```
 :::
 
-:::{tab-item} Exposed Education Facilities
-* `Admin1_Impact_Overview_Map` → rename to  
+:::{tab-item} Établissements scolaires exposés
+* `Admin1_Impact_Overview_Map` → renommer en  
 ```md
-Regions
+Régions
 ```
-* `exposed_education_facilities` → rename to  
+* `exposed_education_facilities` → renommer en  
 ```md
-Exposed Education Facilities
+Établissements scolaires exposés
 ```
-* `Cyclone Track` → rename to  
+* `Cyclone Track` → renommer en  
 ```md
-Projected Cyclone Track
+Trajectoire prévue du cyclone
 ```
-* `Exposed_Cyclone_Area` → rename to  
+* `Exposed_Cyclone_Area` → renommer en  
 ```md
-Exposed Cyclone Area
+Zone exposée aux cyclones
 ```
-* `relevant_warehouses` → rename to  
+* `relevant_warehouses` → renommer en  
 ```md
-Relevant Warehouses
+Entrepôts concernés
 ```
-* `Background Map: OpenStreetMap` → rename to  
+* `Carte de fond : OpenStreetMap` → renommer en  
 ```md
-Background Map:
+Carte de fond :
 OpenStreetMap
 ```
 :::
 
-:::{tab-item} Exposed Agriculture in Hectare
-* `Admin1_Impact_Overview_Map` → rename to  
+:::{tab-item} Agriculture exposée en hectares
+* `Admin1_Impact_Overview_Map` → renommer en  
 ```md
-Regions
+Régions
 ```
-* `exposed_agricultural_landcover` → rename to  
+* `exposed_agricultural_landcover` → renommer en  
 ```md
-Exposed Agriculture in Hectare
+Agriculture exposée en hectares
 ```
-* `Cyclone Track` → rename to  
+* `Cyclone Track` → renommer en  
 ```md
-Projected Cyclone Track
+Trajectoire prévue des cyclones
 ```
-* `Exposed_Cyclone_Area` → rename to  
+* `Exposed_Cyclone_Area` → renommer en  
 ```md
-Exposed Cyclone Area
+Zone cyclonique exposée
 ```
-* `relevant_warehouses` → rename to  
+* `relevant_warehouses` → renommer en  
 ```md
-Relevant Warehouses
+Entrepôts concernés
 ```
-* `Background Map: OpenStreetMap` → rename to  
+* `Carte de fond : OpenStreetMap` → renommer en  
 ```md
-Background Map:
+Carte de fond :
 OpenStreetMap
 ```
 :::
 
-:::{tab-item} Exposed Health Facilities Points
-* `Admin1_Impact_Overview_Map` → rename to  
+:::{tab-item} Points des établissements de santé exposés
+* `Admin1_Impact_Overview_Map` → renommer en  
 ```md
-Regions
+Régions
 ```
-* `exposed_health_facilities_points` → rename to  
+* `exposed_health_facilities_points` → renommer en  
 ```md
-Exposed Health Facilities Points
+Points des établissements de santé exposés
 ```
-* `Cyclone Track` → rename to  
+* `Cyclone Track` → renommer en  
 ```md
-Projected Cyclone Track
+Trajectoire prévue du cyclone
 ```
-* `Exposed_Cyclone_Area` → rename to  
+* `Exposed_Cyclone_Area` → renommer en  
 ```md
-Exposed Cyclone Area
+Zone exposée aux cyclones
 ```
-* `relevant_warehouses` → rename to  
+* `relevant_warehouses` → renommer en  
 ```md
-Relevant Warehouses
+Entrepôts concernés
 ```
-* `Background Map: OpenStreetMap` → rename to  
+* `Carte de fond : OpenStreetMap` → renommer en  
 ```md
-Background Map:
-OpenStreetMap
-```
-:::
-
-:::{tab-item} Exposed Health Education Points
-* `Admin1_Impact_Overview_Map` → rename to  
-```md
-Regions
-```
-* `exposed_education_facilities_points` → rename to  
-```md
-Exposed Health Education Points
-```
-* `Cyclone Track` → rename to  
-```md
-Projected Cyclone Track
-```
-* `Exposed_Cyclone_Area` → rename to  
-```md
-Exposed Cyclone Area
-```
-* `relevant_warehouses` → rename to  
-```md
-Relevant Warehouses
-```
-* `Background Map: OpenStreetMap` → rename to  
-```md
-Background Map:
+Carte de fond :
 OpenStreetMap
 ```
 :::
@@ -984,10 +953,10 @@ OpenStreetMap
 
 
 
-```{dropdown} Your final output should look like this after styling the layer
-The map now clearly displays the exposed population within the affected districts, along with the locations of relevant warehouses. The original storm track line — used as input data — is highlighted, as well as the buffered impact area, which serves as a proxy for identifying exposed districts.
+```{dropdown} Votre résultat final devrait ressembler à ceci après avoir stylisé la couche.
+La carte affiche maintenant clairement la population exposée dans les districts touchés, ainsi que l'emplacement des entrepôts concernés. La trajectoire originale de la tempête, utilisée comme donnée d'entrée, est mise en évidence, tout comme la zone d'impact tamponnée, qui sert de proxy pour identifier les districts exposés.
 
-On the right-hand side of the map, a list shows all exposed districts, including data on total population and exposed population. The districts (Admin 2) are organized under their corresponding regions (Admin 1).
+Sur le côté droit de la carte, une liste affiche tous les districts exposés, y compris des données sur la population totale et la population exposée. Les districts (Admin 2) sont organisés sous leurs régions correspondantes (Admin 1).
 
 ```{figure} /fig/MAD_Trigger_Impact_Population_Map.png
 ---
@@ -997,7 +966,7 @@ align: center
 ---
 ```
 
-#### Exporting the Map 
+#### Exporter la carte
 
 <!--Exporting the map should be done after each layout. If the maps are not locked, it will break the layouts and the work will have to be repeated
 
@@ -1016,25 +985,26 @@ __Tool:__ [Print Layout Composer](https://giscience.github.io/gis-training-resou
 
 -->
 
-When you have finished the design of you map you can export it as pdf or image file in different data formats.
+Une fois la conception de votre carte terminée, vous pouvez l'exporter au format PDF ou image dans différents formats.
 
-__Export as Image__
+__Exporter en tant qu'image__  
 
-1. In the print layout click on `Layer` -> `Export as Image`
-2. Choose the __map_outputs__ folder. Give the file the name of the event e.g **MDG_Trigger_Impact_Overview_Map_Freddy_2023**. For the specific impact assessment change the name to something like **MDG_Trigger_Impact_Population_Map_Freddy_2023**.
-3. Click on `Save`
-4. The window `Image Export Options` will appear. Click `Save`.
-Now the image can be found in the result folder.
+1. Dans la mise en page, cliquez sur `Mise en page` -> `Exporter en tant qu'image`.
+2. Choisissez le dossier __map_outputs__. Donnez au fichier le nom de l'événement, par exemple **MDG_Trigger_Impact_Overview_Map_Freddy_2023**.  
+3. Cliquez sur `Sauvegarder`.  
+4. La fenêtre `Options d'exportation d'image` apparaîtra.  
+5. Cliquez sur `Sauvegarder`.
+L'image se trouve maintenant dans le dossier de résultats.
 
 
-__Export as PDF__
+__Exporter au format PDF__
 
-1. In the print layout click on `Layer` -> `Export as PDF`
-2. Choose the __map_outputs__ folder. Give the file the name of the event e.g **MDG_Trigger_Impact_Overview_Map_Freddy_2023**. For the specific impact assessment change the name to something like **MDG_Trigger_Impact_Population_Map_Freddy_2023**.
-3. Click on `Save`.
-4. The window `PDF Export Options` will appear. For the best results, select the `lossless` image compression.
-5. Click `Save`.
-Now the image can be found in the result folder.
+1. Dans la mise en page d'impression, cliquez sur `Mise en page` -> `Exporter au format PDF`
+2. Sélectionnez le dossier __map_outputs__. Donnez au fichier le nom de l'événement, par exemple **MDG_Trigger_Impact_Overview_Map_Freddy_2023**.  
+3. Cliquez sur `Sauvegarder`.
+4. La fenêtre `Options d'exportation PDF` s'affiche. Pour obtenir les meilleurs résultats, sélectionnez la compression d'image `sans perte`.
+5. Cliquez sur `Sauvegarder`.
+L'image se trouve maintenant dans le dossier de résultats.
 
 <!-- Maybe add a video. Might not be necessary
 
@@ -1051,28 +1021,28 @@ align: center
 ---
 ```
 
-## Working with the warehouse isochrones
+## Utilisation des isochrones d'entrepôt
 
-The project includes isochrones for each warehouse. The warehouse isochrones correspond to one warehouse and are identifiable by their location name. If you want to add an isochrone to one of the  It is possible to add individual isochrones to the map templates by simply duplicating the isochrone layer and moving it to the desired map group.
+Le projet comprend des isochrones pour chaque entrepôt. Les isochrones d'entrepôt correspondent à un entrepôt et sont identifiables par le nom de leur emplacement. Si vous souhaitez ajouter une isochrone à l'une des cartes Il est possible d'ajouter des isochrones individuelles aux modèles de carte en dupliquant simplement la couche d'isochrones et en la déplaçant vers le groupe de cartes souhaité.
 
 <!--INSERT EXAMPLE PICTURE-->
 
-# Historical Analysis of Cyclone Impacts
+# Analyse historique des impacts des cyclones
 
-To run the full trigger process using historical cyclone track data, you can assess the impacts of past events and gain insights into what occurred in similar scenarios. The storm track data is available from the **International Best Track Archive for Climate Stewardship (IBTrACS)**. Instructions on how to access this data are provided in the following section.
+Pour exécuter le processus de déclenchement complet à l'aide des données historiques sur la trajectoire des cyclones, vous pouvez évaluer les impacts des événements passés et obtenir des informations sur ce qui s'est produit dans des scénarios similaires. Les données sur la trajectoire des tempêtes sont disponibles auprès de l'**International Best Track Archive for Climate Stewardship (IBTrACS)**. Les instructions pour accéder à ces données sont fournies dans la section suivante.
 
-## Download of historical storm track data
+## Téléchargement des données historiques sur les trajectoires des tempêtes
 
-The **International Best Track Archive for Climate Stewardship (IBTrACS)** v04r01 data is updated three times a week (usually on Sunday, Tuesday, and Thursday), and could be updated more frequently to address specific needs and use cases. The latest updates in the correct file format can be found on their [website](https://www.ncei.noaa.gov/products/international-best-track-archive):
+Les données **International Best Track Archive for Climate Stewardship (IBTrACS)** v04r01 sont mises à jour trois fois par semaine (généralement le dimanche, le mardi et le jeudi) et peuvent être mises à jour plus fréquemment pour répondre à des besoins et des cas d'utilisation spécifiques. Les dernières mises à jour dans le format de fichier approprié sont disponibles sur leur [site web](https://www.ncei.noaa.gov/products/international-best-track-archive):
 
-1. Look for the `Access Methods` section and click on `Shapefiles`. The link leads to the following [website](https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r01/access/shapefile/) which can also be seen in the figure below.
-2. Since we don’t need storm track data for the entire world or the full archive, we will download only a relevant subset. Locate for the file named `IBTrACS.ACTIVE.list.v04r01.lines.zip` and click on it - the download should begin automatically.
-3. Unzip the file and open it in QGIS.
-4. Open the attribute table and delete all the storm tracks that are not relevant for this analysis. Safe the updated storm track file.
+1. Recherchez la section `Access Methods` et cliquez sur `Shapefiles`. Le site web suivant s'ouvre alors: [site web](https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r01/access/shapefile/), que vous pouvez également voir dans l'image ci-dessous.
+2. Comme nous n'avons pas besoin des données sur les trajectoires des tempêtes pour le monde entier ni de l'archive complète, nous ne téléchargerons qu'un sous-ensemble significatif. Recherchez le fichier nommé `IBTrACS.ACTIVE.list.v04r01.lines.zip` et cliquez dessus. Le téléchargement devrait démarrer automatiquement.
+3. Décompressez le fichier et ouvrez-le dans QGIS.
+4. Ouvrez la table d'attributs et supprimez toutes les trajectoires de tempêtes qui ne sont pas pertinentes pour cette analyse. Enregistrez le fichier de trajectoires de tempêtes mis à jour.
 
 :::{note}
 
-The storm track subset `IBTrACS.ACTIVE.list.v04r01.lines.zip` contains all **storms active in the last 7 days**. If more comprehensive data is needed, it is advisable to download a subset by basin. For Madagascar, the most relevant region is **SI – South Indian**, which includes our Area of Interest. This dataset can be downloaded from the same website under the name `IBTrACS.SI.list.v04r01.lines.zip`. 
+Le sous-ensemble de trajectoires de tempêtes `IBTrACS.ACTIVE.list.v04r01.lines.zip` contient toutes les **tempêtes actives au cours des 7 derniers jours**. Si vous avez besoin de données plus complètes, il est conseillé de télécharger un sous-ensemble par bassin. Pour Madagascar, la région la plus pertinente est **SI – South Indian**, , qui comprend notre zone d'intérêt. Cet ensemble de données peut être téléchargé à partir du même site web sous le nom `IBTrACS.SI.list.v04r01.lines.zip`. 
 
 :::
 
