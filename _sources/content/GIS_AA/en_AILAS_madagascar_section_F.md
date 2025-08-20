@@ -16,6 +16,32 @@ Before departure, ensure you have the following:
 
 <!-- Do we need images?  -->
 
+::::{grid} 3
+:::{grid-item}
+
+```{figure} /fig/AILAS_centre position.jpeg
+---
+name: camera centre position
+width: 375 px
+---
+Central position behind rear mirror 
+```
+
+:::
+
+:::{grid-item}
+
+```{figure} /fig/AILAS_side position.jpg
+---
+name: camera side position
+width: 375 px
+---
+Side position near the passenger door
+```
+
+:::
+::::
+
 ---
 <br>
 
@@ -45,7 +71,7 @@ Central position behind rear mirror
 
 :::{grid-item}
 
-```{figure} /fig/AILAS_side position.jpg
+```{figure} /fig/AILAS_side position.jpeg
 ---
 name: camera side position
 width: 375 px
