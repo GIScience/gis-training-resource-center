@@ -116,11 +116,6 @@ Side position near the passenger door
 |    5. Adjust camera angle                                                |    Ensure lens faces forward, level with the road <br> and camera field of view captures the road      |
 
 
-<!-- +Image suction mount -->
-
-<!-- + Image Screw tightening -->
-
-<!-- + Image Proper lens orientation -->
 
 
 ::::{grid} 2
@@ -131,10 +126,10 @@ Side position near the passenger door
 name: 
 width: 400 px
 ---
-GoPro camera
-```
 Press button for suction
+```
 :::
+
 
 :::{grid-item}
 
@@ -143,9 +138,9 @@ Press button for suction
 name: 
 width: 400 px
 ---
-Suction mount
-```
 Push lever down to fix mount
+```
+
 :::
 
 :::{grid-item}
@@ -155,9 +150,8 @@ Push lever down to fix mount
 name: 
 width: 400 px
 ---
-Clip attachment
-```
 Camera correctly aligned with the road
+```
 :::
 
 
@@ -206,11 +200,11 @@ If the camera already is set in the "AILAS" mode you do not have to configure th
 ```{figure} /fig/AILAS_QR_code.png
 ---
 name: 
-width: 400 px
+width: 375 px
 ---
-Suction mount
-```
 Scan this QR-Code
+```
+
 
 
 :::{grid-item}
@@ -218,13 +212,12 @@ Scan this QR-Code
 ```{figure} /fig/AILAS_button_overview.png
 ---
 name: 
-width: 400 px
+width: 375 px
 ---
 Button overview
 ```
-Push lever down to fix mount
 :::
-
+::::
 
 
 ### Alternative Manual Configuration
