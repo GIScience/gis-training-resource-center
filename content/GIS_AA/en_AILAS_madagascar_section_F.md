@@ -75,7 +75,7 @@ Powerbank
 
 | Instructions                                  |Notes                                        |
 | :-------                                     | :-------                                    |
-|    1. Mount inside the car, center of windshield or behind rearview mirror      |   Avoid obstructing driver’s view.          |
+|    1. Mount inside the car, **center of windshield** or **behind rearview mirror**      |   Avoid obstructing driver’s view.          |
 |    2. If needed clean glass before attaching suction mount                                       |                            |
 
 
@@ -109,13 +109,16 @@ Side position near the passenger door
 ### Attach Gopro with suction mount
 | Instructions                          | Notes                            |
 | :---------------------------------  | :--------------------------------- |
-|   1. Press suction cup firmly against windshield                         |    Make sure locking lever is in UP position            |
+|   1. Press suction cup **firmly** against windshield                         |    Make sure locking lever is in UP position            |
 |   2. Press the mounts button down with good force                        |                                                         |
-|   3. Flip lock lever down to secure the mount                            |    Wiggle the mount to check if it fits tight           |
+|   3. Flip lock lever down to **secure** the mount                            |    Wiggle the mount to check if it fits tight           |
 |   4. Attach GoPro with the clip attachment and thumbscrew to the mount   |    Make sure Gopro is equipped with clip attachment     |
-|    5. Adjust camera angle                                                |    Ensure lens faces forward, level with the road <br> and camera field of view captures the road      |
+|   5. Adjust **camera angle**                                                |    Ensure lens faces forward, level with the road <br> and camera field of view captures the road      |
 
-
+:::{admonition} Tip for optimal camera alignment
+:class: tip
+To fine tune the camera angle for optimal alignment just barely unscrew the screw that connects the GoPro to the clip attachment and slighty adjust the camera angle. To avoid that the camera is tilted to one side make sure that the "GoPro" logo on the suction mount is facing straight up when attaching the suction mount.
+:::
 
 
 ::::{grid} 2
@@ -166,7 +169,7 @@ Camera correctly aligned with the road
 | Instructions | Notes |
 | :------- | :------- |
 |   Connect GoPro to Powerbank using USB-C cable                  |                                                                                    |
-|   Place Powerbank securely (e.g., glove compartment or dash)    |    Powerback should be stored safely in case of e.g. abrupt breaking               |
+|   Place Powerbank **securely** (e.g., glove compartment or dash)    |    Powerback should be stored safely in case of e.g. abrupt breaking               |
 |   Ensure power connection before driving                        |           Charging symbol should be visible on the top right corner of GoPro screen|
 
 
@@ -206,7 +209,6 @@ Scan this QR-Code
 ```
 
 
-
 :::{grid-item}
 
 ```{figure} /fig/AILAS_button_overview.png
@@ -217,7 +219,25 @@ width: 375 px
 Button overview
 ```
 :::
+
+:::{grid-item}
+
+```{figure} /fig/AILAS_AILAS_mode.png
+---
+name: 
+width: 375 px
+---
+Camera is in AILAS mode
+```
+:::
+
 ::::
+
+:::{admonition} QR Code Scanning
+:class: tip
+If the scanning of the QR-code is not working immeadiately try in different lighting conditions or with the camera closer to the code.
+:::
+
 
 
 ### Alternative Manual Configuration
@@ -225,23 +245,19 @@ Button overview
 | Instructions | Notes |
 | :------------------------------- | :---- |
 | 1. Press the **Mode/Power** button until the screen displays *“Timelapse”* <!-- Icon --> | |
-| 2.Tap the **settings** icon (bottom right) and configure as follows:<br> • **Format**: Photo<br> • **Digital Lens**: Wide<br> • **Capture**: Interval = 10s<br>  | Leave remaining  settings unchanged |
-| 3. Tap the **back arrow** to save and return to the main screen. | in the bottom centre of the scrren should now be displayed: "Time Lapse Photo 10s W"|
+| 2.Tap the **settings** icon (bottom right) and configure as follows:<br> • **Format**: Photo<br> • **Digital Lens**: Wide<br> • **Capture**: Interval = 5s<br>  | Leave remaining  settings unchanged |
+| 3. Tap the **back arrow** to save and return to the main screen. | in the bottom centre of the scrren should now be displayed: "Time Lapse Photo 5s W"|
 
 ### Start/Stop Capturing Images
 | Instructions | Notes |
 | :-------------------------- |  :--------------------------|
 | 1. Tap the **Shutter** button (top button) to begin shooting. | |
-| 2. GoPro will now take one photo every 5 seconds. | Red blinking every 10 seconds indicates that the camera is shooting |
+| 2. GoPro will now take one photo every 5 seconds. | Red blinking every 5 seconds indicates that the camera is shooting |
 | 3. Tap the **Shutter** button again to stop. |  |
 | 4. Hold the **Power** button to turn off GoPro at the end of the drive. | The camera will beep a couple of times when turning off |
 
-
-::::
-
-<br><br><br><br>
-
 ---
+<br><br><br><br>
 
 ## START OF DRIVE Checklist
 
@@ -293,7 +309,7 @@ Contact technical support immediately if:
 | Issue                    | Solution                                                 |
 |--------------------------|----------------------------------------------------------|
 | GoPro not turning on     | Check battery level or connect Powerbank                |
-| Photos not being taken   | Ensure "AILAS"" mode is active and Shutter is pressed |
+| Photos not being taken   | Ensure "AILAS" mode is active and Shutter is pressed |
 | Powerbank not charging   | Check cable connection; try another USB port            |
 | Suction mount falling off| Clean glass and remount (in different spot)              |
 | GoPro beeps/overheats    | Turn off for 5 mins in shade, then resume               |
