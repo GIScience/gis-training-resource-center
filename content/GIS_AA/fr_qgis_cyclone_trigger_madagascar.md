@@ -361,7 +361,7 @@ width: 700 px
 
 <!-- Do we need a video here to show how to run the model? -->
 
-```{dropdown} Video: Input and output Model
+```{dropdown} Vidéo: Modèle d'entrée et de sortie
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/model_input_output.mp4"></video>
 ```
 
@@ -371,31 +371,31 @@ Résultats
 Nous avons toutes les couches nécessaires pour créer les cartes individuelles. La section suivante explique comment utiliser les couches prédéfinies et calculées pour créer les cartes à l'aide des modèles de carte et des fichiers de style de couche.
 :::
 
-# Creating the map reports using the map templates
+# Création des cartes à l'aide des modèles de carte
 
-## Visualization and Styling of the Model Outputs and creating the Print Map
+## Visualisation et mise en forme des résultats du modèle et création de la carte imprimée
 
 <!-- Is a video necessary for this chapter? -->
 
-:::{admonition} Output maps
+:::{admonition} Cartes de résultats
 :class: note
 
-We will generate three different types of output maps to support the analysis:
-- Map 1 will provide an cyclone impact overview of the **affected districts, the extent of the cyclone event, and the locations of relevant warehouses**.
-- Map 2 will focus on the impact to infrastructure and population. We will create 5 different impact maps displaying the following information:
-    - **exposed population**
-    - **exposed buildings**
-    - **exposed health sites**
-    - **exposed education facilities**
-    - **exposed agricultural landcover**
+Nous générerons trois types de cartes différents pour faciliter l'analyse : 
+- La carte 1 donnera un aperçu de l'impact du cyclone sur les **districts touchés, la gravité du cyclone et l'emplacement des entrepôts concernés**.
+- La carte 2 se concentrera sur l'impact sur les infrastructures et la population. Nous créerons 5 cartes d'impact différentes affichant les informations suivantes:
+    - **population exposée**
+    - **bâtiments exposés**
+    - **sites de santé exposés**
+    - **établissements scolaires exposés**
+    - **couverture agricole exposée**
 
-Additionally, a map showing the **warehouse isochrones** for all 13 warehouses will be provided. The map and the map template can be found in the **warehouse_isochrone_matrix** folder.
+De plus, une carte indiquant les **isochrones des entrepôts** pour les 13 entrepôts sera fournie. La carte et le modèle de carte se trouvent dans le dossier **warehouse_isochrone_matrix**.
 :::
 
-We will create the maps in two steps:
-First, we will use the __[layer styling panel](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel)__ and the __layer style files (.qml)__ to adjust the visualisation of the layers on the map canvas.
+Nous allons créer les cartes en deux étapes:
+Tout d'abord, nous allons utiliser le __[layer styling panel (panneau de style des couches)](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel)__ et le __layer style files (fichiers de style des couches) (.qml)__ pour ajuster la visualisation des couches sur le canevas de la carte.
 
-In a second step, we will use the __[print layout composer](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)__ to create printable maps with additional datatables. 
+La deuxième étape consiste à utiliser le __[print layout composer](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)__ pour créer des cartes imprimables avec des tableaux de données supplémentaires.
 
 <!---
 
@@ -422,7 +422,7 @@ __Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-cent
 
 -->
 
-### Map 1: Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations
+### Carte 1: Aperçu de l'impact du cyclone: Districts touchés, gravité de l'événement et emplacement des entrepôts
 
 :::{figure} /fig/MAD_Trigger_Impact_Overview_Map.png
 ---
@@ -432,16 +432,16 @@ align: center
 ---
 :::
 
-Layers needed for this map:
+Couches nécessaires pour cette carte:
 - `CRM_Warehouses`
 - `cyclone_track`
 - `Exposed_Cyclone_Area`
-- `Admin1_Impact_Overview_Map` already loaded and styled in QGIS 
+- `Admin1_Impact_Overview_Map` déjà chargée et stylisée dans QGIS
 - `Exposed_Districts`
 
-__Right-click on each of the layers and select `Duplicate this layer`. Move the copy to the group "Map_Cyclone_Impact_Overview".__ 
+__Faites un clic droit sur chacun des couches et sélectionnez `Dupliquer la couche`. Déplacez la copie vers le groupe "Map_Cyclone_Impact_Overview".__ 
 
-The layers should be arranged as shown in the figure below.
+Les couches devraient être disposées comme indiqué dans la figure ci-dessous.
 
 ```{figure} /fig/MAD_Trigger_layer_order_overview_map.PNG
 ---
@@ -451,41 +451,41 @@ align: center
 ---
 ```
 
-#### Styling of the layers
+#### Stylisation des couches
 
-1. Right click on the exposed_districts layer -> `Properties` -> `Symbology`
-2. In the down left corner click on `Style` -> `Load Style`
-3. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the "AA_Cyclone_Monitoring_Trigger_MAD/layer_styles” folder and select the file __“exposed_districts_style.qml”__.
-4. Click `Open`. Then click on `Load Style`
-5. Back in the “Layer Properties” window click `Apply` and `OK`
+1. Faites un clic droit sur la couche exposed_districts -> `Propriétés` -> `Symbologie`
+2. Dans le coin inférieur gauche, cliquez sur `Style` -> `Charger le style`
+3. Dans la nouvelle fenêtre, cliquez sur les trois points ![](/fig/Three_points.png). Naviguez jusqu'au dossier "AA_Cyclone_Monitoring_Trigger_MAD/layer_styles” et sélectionnez le fichier __“exposed_districts_style.qml”__.
+4. Cliquez sur `Ouvrir`. Cliquez ensuite sur `Charger le style`
+5. De retour dans la fenêtre “Propriétés de la couche” cliquez sur `Appliquer` et `OK`
 
-Repeat this process for the following output layers, along with their corresponding style sheets:
+Répétez ce processus pour les couches de sortie suivantes, ainsi que pour leurs feuilles de style correspondantes:
 
-| Layer name | Style | Comment
+| Nom de la couche | Style | Remarques
 | ----- | --- | --- |
-|`Admin1_Impact_Overview_Map`| `adm1_style.qml` | pre-loaded |
-|`CRM_warehouses` | `relevant_warehouses_style.qml` | model output |
-|`exposed_cyclone_area`|`exposed_cyclone_area_style.qml`| model output |
-|`cyclone_track`| `storm_track_cyclone_style.qml`| pre-loaded |
+|`Admin1_Impact_Overview_Map`| `adm1_style.qml` | préchargé |
+|`CRM_warehouses` | `relevant_warehouses_style.qml` | résultat du modèle |
+|`exposed_cyclone_area`|`exposed_cyclone_area_style.qml`| résultat du modèle |
+|`cyclone_track`| `storm_track_cyclone_style.qml`| préchargé |
 
-6. The styling for the layer `CRM_warehouses` is not fixed yet. Right-click on the layer `CRM_warehouses` > `Properties` and navigate to the symbology tab.
+6. Le style de la couche `CRM_warehouses` n'est pas encore défini. Cliquez avec le bouton droit sur la couche `CRM_warehouses` > `Propriétés` et naviguez à la section `Symbologie`.
   :::{figure} /fig/AA/mdg_aa_fix_warehouse_icon.png
   ---
   name: fix_warehouse_icon
   width: 550px
   ---
   :::
-  * Select `Raster Image Marker` and then click on the three points ![](/fig/Three_points.png).
-  * In the project folder, navigate to the subfolder called `logo_pictures`. Here you will find a png-file called "ngo-office". Select it and click `Open`.
+  * Sélectionnez `Remplissage image raster` puis cliquez sur les trois points ![](/fig/Three_points.png).
+  * Dans le dossier du projet, naviguez jusqu'au sous-dossier appelé `logo_pictures`. Vous y trouverez un fichier png appelé "ngo-office". Sélectionnez-le et cliquez sur `Ouvrir`.
 
 
 <!--EDIT: Add that the picture location for the CRM warehouse icon needs to specified again. It is located in the logos_pictures folder.-->
 
 :::{attention}
 
-Ensure that all relevant output layers are properly added to the QGIS project. If any layers are missing, try re-running the model or check your Model Outputs folder to see if the files were created successfully.
+Assurez-vous que toutes les couches de sortie sont correctement ajoutées au projet QGIS. Si certaines couches manquent, essayez de relancer le modèle ou vérifiez dans le dossier Model Outputs si les fichiers ont bien été créés.
 
-To maintain a clear and organized workspace, group the output layers in the Layers panel under the appropriate group (e.g., Map_Cyclone_Impact_Overview). This helps keep your project structured and makes navigation easier during the map creation process.
+Pour conserver un espace de travail clair et organisé, regroupez les couches de sortie dans le panneau Couches sous le groupe approprié (par exemple, Map_Cyclone_Impact_Overview). Cela permet de structurer votre projet et facilite la navigation pendant le processus de création de la carte.
 
 :::
 
@@ -1083,4 +1083,3 @@ name: MAD_Trigger_stromtrack_download
 align: center
 ---
 ```
-
