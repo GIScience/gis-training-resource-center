@@ -14,8 +14,6 @@ Before departure, ensure you have the following:
 | Printed Copy of This Guide |
 
 
-<!-- Do we need images?  -->
-
 ::::{grid} 3
 :::{grid-item}
 
@@ -125,6 +123,50 @@ Side position near the passenger door
 <!-- + Image Proper lens orientation -->
 
 
+::::{grid} 2
+:::{grid-item}
+
+```{figure} /fig/AILAS_press_button.jpeg
+---
+name: 
+width: 400 px
+---
+GoPro camera
+```
+Press button for suction
+:::
+
+:::{grid-item}
+
+```{figure} /fig/AILAS_lever_down.jpeg
+---
+name: 
+width: 400 px
+---
+Suction mount
+```
+Push lever down to fix mount
+:::
+
+:::{grid-item}
+
+```{figure} /fig/AILAS_alignment.jpeg
+---
+name: 
+width: 400 px
+---
+Clip attachment
+```
+Camera correctly aligned with the road
+:::
+
+
+::::
+
+
+
+
+
 ### Power Setup
 
 | Instructions | Notes |
@@ -177,7 +219,33 @@ If the camera already is set in the "AILAS" mode you do not have to configure th
 | 4. Hold the **Power** button to turn off GoPro at the end of the drive. | The camera will beep a couple of times when turning off |
 
 
-<!-- Button overview image -->
+::::{grid} 2
+:::{grid-item}
+
+```{figure} /fig/AILAS_press_button.jpeg
+---
+name: 
+width: 400 px
+---
+GoPro camera
+```
+Press button for suction
+:::
+
+:::{grid-item}
+
+```{figure} /fig/AILAS_button_overview.jpeg
+---
+name: 
+width: 400 px
+---
+Suction mount
+```
+Push lever down to fix mount
+:::
+
+
+::::
 
 <br><br><br><br>
 
