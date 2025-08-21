@@ -282,6 +282,8 @@ align: center
 Classifying the exposed population into five classes.
 ```
 
+# Results
+
 Your results should look something like this: 
 
 ```{figure} /fig/fr_MDG_AA_intermediate_result_visualisation_exposed_population.PNG
