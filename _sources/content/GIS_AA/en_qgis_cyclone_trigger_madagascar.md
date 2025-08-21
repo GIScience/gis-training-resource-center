@@ -5,11 +5,17 @@
 ::::{admonition} French Translation 
 :class: note
 
-:::{card}
-:link: 
+
 The french version of this page can be found [here](/content/GIS_AA/fr_qgis_cyclone_trigger_madagascar.md).
 
 La version française de cet article se trouve [ici](/content/GIS_AA/fr_qgis_cyclone_trigger_madagascar.md).
+
+:::{card}
+:class-card: sd-text-center sd-border-1
+:link: https://giscience.github.io/gis-training-resource-center/content/GIS_AA/fr_qgis_cyclone_trigger_madagascar.html
+Version française
+:::
+
 ::::
 
 The QGIS workflow presented in this article was developed in the framework of the Anticipatory-Action (AA) Project of the Croix-Rouge Malagasy (CRM), the German Red Cross (GRC) and the Heidelberg Institute for Geoinformation Technology (HeiGIT).
