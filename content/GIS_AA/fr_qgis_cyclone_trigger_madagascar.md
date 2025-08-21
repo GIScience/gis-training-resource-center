@@ -4,7 +4,7 @@
 
 Le workflow QGIS présenté dans cet article a été développé dans le cadre du projet "Anticipatory-Action" (AA) (action anticipative) de la Croix-Rouge malgache (CRM), de la Croix-Rouge allemande (GRC) et de l'institut de Heidelberg pour les technologies de géoinformation (HeiGIT).
 
-Le workflow est presque entièrement automatisé grâce à un modèle QGIS et ne nécessite aucune intervention manuelle. Le chapitre --Automated Trigger Workflow--- décrit le processus et l'application pratique. <!-- what chapter?? Where is it?--> 
+Le workflow est presque entièrement automatisé grâce à un modèle QGIS et ne nécessite aucune intervention manuelle. Le chapitre "Fonctionnalité du workflow" décrit le processus et l'application pratique.
 Chaque étape inclut dans le modèle est expliquée en détail afin de permettre une compréhension complète du workflow et de la manière dont l'analyse a été réalisée.
 
 ## Contexte
@@ -15,7 +15,7 @@ La définition de déclencheurs est l'un des piliers du système de financement 
 
 **Déclencheur préalable à l'activation:** au moins une des prévisions météorologiques de Météo Madagascar, du RMSC La Réunion ou de l'ECMWF prévoit une probabilité supérieure à 50% qu'un cyclone tropical de force tempête tropicale ou plus atteigne les côtes dans les 7 prochains jours.
 
-**ADéclencheur d'activation:** si les prévisions de Météo Madagascar (DGM) indiquent l'arrivée d'un cyclone tropical avec des vents dépassant 118 km/h dans les 48 à 72 heures à venir.
+**Déclencheur d'activation:** si les prévisions de Météo Madagascar (DGM) indiquent l'arrivée d'un cyclone tropical avec des vents dépassant 118 km/h dans les 48 à 72 heures à venir.
 
 # Téléchargement du rapport
 
@@ -34,7 +34,7 @@ align: center
 ```
 <!--do we need french alternative text describing the figure?-->
 
-Le projet QGIS présenté contient les couches nécessaires et un fichier modèle QGIS permettant d'évaluer l'impact potentiel du cyclone prévu. Le processus d'analyse sera exécuté dans le modèle QGIS, qui automatise les étapes d'évaluation de l'impact d'un cyclone tropical.  Il intègre les données relatives à la trajectoire du cyclone avec les frontières administratives, les données démographiques, les infrastructures et les positions des services afin d'identifier et de quantifier les zones et les ressources exposées. 
+Le projet QGIS présenté contient les couches nécessaires et un fichier modèle QGIS permettant d'évaluer l'impact potentiel du cyclone prévu. Le processus d'analyse sera exécuté dans le modèle QGIS, qui automatise les étapes d'évaluation de l'impact d'un cyclone tropical. Il intègre les données relatives à la trajectoire du cyclone avec les frontières administratives, les données démographiques, les infrastructures et les positions des services afin d'identifier et de quantifier les zones et les ressources exposées. 
 Sur la base des prévisions cycloniques de Météo Madagascar, le modèle calcule la zone susceptible d'être exposée au cyclone, la population potentiellement exposée, le nombre de bâtiments exposés, les terres agricoles exposées et les établissements de santé et d'enseignement potentiellement exposés.
 
 De plus, le fichier QGIS contient des couches représentant les entrepôts CRM et les zones qu'ils peuvent couvrir, ce qui permet d'évaluer rapidement leur accessibilité. Le dossier fourni contient également des modèles de carte et des fichiers de style permettant de générer des rapports cartographiques basés sur les calculs du modèle. 
@@ -94,11 +94,11 @@ Les données relatives aux trajectoires des cyclones tropicaux sont disponibles 
 
 :::
 
-# Estimation de l'impact du cyclone à l'aide du modèle QGIS
+## Estimation de l'impact du cyclone à l'aide du modèle QGIS
 
 Comme expliqué au début de ce chapitre, le workflow déclencheur développé est exécuté automatiquement par un modèle QGIS. Dans ce chapitre, nous expliquerons son fonctionnement et, dans une étape ultérieure, nous expliquerons comment exécuter le modèle automatisé.
 
-## Fonctionnement du modèle
+### Fonctionnement du modèle
 
 <!-- Have a final look over this section to see if all the important information is covered -->
 
@@ -108,7 +108,7 @@ Les étapes clés suivantes sont exécutées dans le modèle :
    * La trajectoire du cyclone est mise en mémoire tampon afin de créer une zone d'impact estimée. La mémoire tampon est dissoute pour générer un polygone unique représentant la zone exposée au cyclone. Cette couche sert de base pour les calculs d'exposition ultérieurs.
 
 2. Unités administratives exposées  
-   * La zone tampon du cyclone est recoupée avec les limites des districts (Admin 2) afin d'extraire les districts exposés. Ceux-ci sont ensuite reliés aux régions (Admin 1) à l'aide de la région (Admin 1) afin de créer des zones de risque.
+   * La zone tampon du cyclone est recoupée avec les limites des districts (niveau Admin 2) afin d'extraire les districts exposés. Ceux-ci sont ensuite reliés aux régions (niveau Admin 1) à l'aide de la région (niveau Admin 1) afin de créer des zones de risque.
 
 3. Effet sur la population
     * Le modèle utilise le raster de population pour calculer les statistiques zonales sur les districts exposés. Cela permet de déterminer la population totale par district et la population exposée, qui sont ensuite exportées vers un tableau.
@@ -117,6 +117,7 @@ Les étapes clés suivantes sont exécutées dans le modèle :
     * La zone tampon du cyclone est croisée avec:
         * Les bâtiments pour extraire les bâtiments exposés.
         * Les couches des sites de santé et des établissements d'enseignement pour extraire et résumer les points d'intérêt exposés.
+        * Les terres agricoles pour estimer l'effet sur l'agriculture.
     Ces ensembles de données sont combinés dans un tableau qui résume les infrastructures exposées.
 
 <!---5. Warehouse Accessibility
@@ -125,12 +126,12 @@ Les étapes clés suivantes sont exécutées dans le modèle :
    * Les entrepôts sont filtrés en fonction de leur proximité avec les régions exposées. Le modèle utilise des données routières et des filtres spatiaux pour déterminer les entrepôts accessibles pertinents pour l'intervention.
 -->
 
-## Comment exécuter le modèle
+### Comment exécuter le modèle
 
 Le [QGIS Model Designer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html#the-qgis-model-designer) est un outil visuel qui permet aux utilisateurs de créer et de modifier un flux de travail avec tous les outils disponibles dans QGIS qui peuvent être utilisés de manière répétée, simple et rapide, tout en garantissant la reproductibilité. Il fournit une interface graphique pour créer des flux de travail en connectant des outils et des algorithmes de géomatique. L'utilisateur peut définir les entrées, les sorties et le flux de données entre les différentes étapes de traitement.
 
 
-## Étape 1 : Explication de la structure des fichiers
+### Étape 1 : Explication de la structure des fichiers
 
 ```{figure} /fig/MAD_Trigger_workflow_Step1.png
 ---
@@ -171,7 +172,7 @@ __Outil :__ Aucun outil ou programme particulier n'est nécessaire.
 ``````
 
 
-## Étappe 2: Ouvrez le projet dans QGIS et chargez le modèle dans le concepteur de modèles QGIS
+### Étappe 2: Ouvrez le projet dans QGIS et chargez le modèle dans le concepteur de modèles QGIS
 
 ```{figure} /fig/MAD_Trigger_workflow_Step2.png
 ---
@@ -181,7 +182,9 @@ align: center
 ---
 ```
 
-Dans cette étape, nous allons ouvrir notre projet de déclenchement dans QGIS et charger le modèle QGIS qui exécutera automatiquement l'analyse pour nous.
+__Objectif:__ Dans cette étape, nous allons ouvrir notre projet de déclenchement dans QGIS et charger le modèle QGIS qui exécutera automatiquement l'analyse pour nous.
+
+__Outils:__ QGIS
 
 1. Ouvrez le fichier `AA_Cyclone_Monitoring_Trigger_MAD.qgz` en double-cliquant dessus.
 2. Le projet QGIS s'ouvrira avec de nombreuses données préchargées. Ces données sont nécessaires pour exécuter le modèle QGIS et créer certaines cartes de résultats.
@@ -228,7 +231,7 @@ Cette carte sera créée à l'aide des couches du groupe 3.
 
 **Groupe 4: Carte d'évaluation de l'impact du cyclone (Map_Cyclone_Impact_Assessment)**
 
-Ce groupe contient toutes les couches nécessaires pour générer des **cartes détaillées d'évaluation d'impact**. Comme pour la carte générale, la trajectoire de la tempête et les limites de la région (Admin1) sont préchargées.
+Ce groupe contient toutes les couches nécessaires pour générer des **cartes détaillées d'évaluation d'impact**. Comme pour la carte générale, la trajectoire de la tempête et les limites de la région (niveau Admin 1) sont préchargées.
 Assurez-vous d'utiliser les données d'événement correctes afin de garantir la cohérence et la précision de l'évaluation. Dans cette section, nous pouvons créer 5 cartes différentes pour différents impacts:
 - population exposée
 - bâtiments exposés
@@ -253,10 +256,10 @@ Cette carte sera créée à l'aide des couches du groupe 4.
 
 Ce groupe comprend les isochrones pour tous les entrepôts, calculées pour des intervalles de temps allant jusqu'à 24 heures. Ces couches sont utiles pour évaluer l'accessibilité des sites dans le cadre de la planification des interventions d'urgence. Ce groupe est utilisé pour créer la carte matrice d'accessibilité des entrepôts CRM. Il est également possible d'ajouter une isochrone spécifique à l'un des entrepôts précédents. Nous y reviendrons plus bas.
 
-
+<!--ADD: Map showing the isochrones-->
 ----
 
-### Ouvrir le modèle dans QGIS  
+#### Ouvrir le modèle dans QGIS  
 
 Nous allons ouvrir le modèle QGIS :
 1. Dans la barre du haut de votre fenêtre QGIS, naviguez vers `Traîtement` -> `Modeleur`. Une nouvelle fenêtre s'ouvrira. Il s'agit du concepteur de modèles.
@@ -283,7 +286,7 @@ Ouvrir le modélisateur graphique dans QGIS 3.44
 
 <!-- Do we need a video here? -->
 
-## Étappe 3: Exécutez le modèle
+### Étappe 3: Exécutez le modèle
 
 ```{figure} /fig/MAD_Trigger_workflow_Step3.png
 ---
@@ -293,7 +296,12 @@ align: center
 ---
 ```
 
-__Entrées et sorties du modèle__
+__Objectif:__ Dans cette étappe, nous allons exécuter le modèle pour calculer les données necéssaires pour créer une carte. 
+
+__Outils:__ Modeleur de QGIS
+
+
+__Entrées et sorties du modèle:__
 
 
 1. Un modèle QGIS peut être exécuté en naviguant vers la barre du haut > `Modèle` > `Exécuter le modèle` ou en cliquant sur l'icône ![](/fig/Module_7/qgis_3.44_run_model.png). 
@@ -336,7 +344,7 @@ Si vous ne spécifiez pas l'emplacement où sauvegarder les fichiers de sortie, 
     2. Une des sorties s'appelle `Spreadsheet_Exposed_District` pour laquelle le modèle produira un fichier `.csv`. Pour cette couche, choisissez `Enregistrer vers un fichier...`, naviguez jusqu'au dossier `.../AA_Cyclone_Monitoring_Trigger_MDG/model_outputs/` et donnez-lui le nom `Spreadsheet_Exposed_Districts_AAAAMMJJ`
     3. `Exposed_Education_Facilities_points_AAAAMMJJ`
     4. `Exposed_Health_Facilities_points_AAAAMMJJ`
-    5. `Exposed_Regions_YAAAAMMJJ`
+    5. `Exposed_Regions_AAAAMMJJ`
     6. `Exposed_Districts_AAAAMMJJ`
     7. `Exposed_Population_AAAAMMJJ`
     8. `Exposed_Buildings_AAAAMMJJ`
@@ -349,7 +357,7 @@ Si vous ne spécifiez pas l'emplacement où sauvegarder les fichiers de sortie, 
 
 
 
-6. Vous verrez de nouveaux couches ajoutés à la zone de travail de la carte et au panneau des calques (en bas à gauche). Déplacez les nouveaux calques vers le groupe "Model_Outputs".
+6. Vous verrez de nouveaux couches ajoutés à la zone de travail de la carte et au panneau des couches (en bas à gauche). Déplacez les nouveaux couches vers le groupe "Model_Outputs".
 
 :::{figure} /fig/AA/mdg_aa_model_outputs_canvas.png
 ---
@@ -371,9 +379,9 @@ Résultats
 Nous avons toutes les couches nécessaires pour créer les cartes individuelles. La section suivante explique comment utiliser les couches prédéfinies et calculées pour créer les cartes à l'aide des modèles de carte et des fichiers de style de couche.
 :::
 
-# Création des cartes à l'aide des modèles de carte
+## Création des cartes à l'aide des modèles de carte
 
-## Visualisation et mise en forme des résultats du modèle et création de la carte imprimée
+### Visualisation et mise en forme des résultats du modèle et création de la carte imprimée
 
 <!-- Is a video necessary for this chapter? -->
 
@@ -451,7 +459,7 @@ align: center
 ---
 ```
 
-#### Stylisation des couches
+#### Carte 1: Stylisation des couches
 
 1. Faites un clic droit sur la couche exposed_districts -> `Propriétés` -> `Symbologie`
 2. Dans le coin inférieur gauche, cliquez sur `Style` -> `Charger le style`
@@ -479,7 +487,6 @@ Répétez ce processus pour les couches de sortie suivantes, ainsi que pour leur
   * Dans le dossier du projet, naviguez jusqu'au sous-dossier appelé `logo_pictures`. Vous y trouverez un fichier png appelé "ngo-office". Sélectionnez-le et cliquez sur `Ouvrir`.
 
 
-<!--EDIT: Add that the picture location for the CRM warehouse icon needs to specified again. It is located in the logos_pictures folder.-->
 
 :::{attention}
 
@@ -489,7 +496,7 @@ Pour conserver un espace de travail clair et organisé, regroupez les couches de
 
 :::
 
-#### Création de la mise en page
+#### Carte 1: Création de la mise en page
 
 Pour faciliter la visualisation, nous avons créé ces [modèles de carte](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#map-templates) afin de présenter les résultats de l'analyse des déclencheurs. Ces modèles servent de base à vos propres visualisations et sont disponibles dans le répertoire suivant: `AA_Cyclone_Monitoring_Trigger_MAD/map_templates`. Vous pouvez personnaliser les modèles en fonction de vos besoins et préférences. Vous trouverez de l'aide [ici](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#print-layout).
 
@@ -585,7 +592,7 @@ width: 600 px
 
 10. Sous les logos, modifiez les informations dans la zone de texte en sélectionnant celle-ci et en naviguant vers les propriétés de l'élément.
 
-11. Enfin, verrouillons les calques et les styles de calque afin que les modifications apportées dans la fenêtre principale de QGIS n'affectent pas notre mise en page d'impression:
+11. Enfin, verrouillons les couches et les styles de couches afin que les modifications apportées dans la fenêtre principale de QGIS n'affectent pas notre mise en page d'impression:
   * Dans la liste des éléments, sélectionnez __Carte 1__.
   * Dans les propriétés de l'élément, cochez les cases __verrouiller les couches__ et __verrouiller le style des couches__. Cela empêchera la carte de se mettre automatiquement à jour lorsque nous apporterons des modifications à la zone de travail de la carte.
 
@@ -624,26 +631,8 @@ align: center
 ::::
 
 
-#### Exporter la carte 
+#### Carte 1: Exporter la carte 
 
-<!--Exporting the map should be done after each layout. If the maps are not locked, it will break the layouts and the work will have to be repeated-->
-
-
-<!---
-```{figure} /fig/MAD_Trigger_workflow_Step5.png
----
-width: 1000px
-name: 
-align: center
----
-```
-
-__Purpose:__ Export the designed and finalized map layout in order to print it as a pdf or format of your choice.
-
-
-__Tool:__ [Print Layout Composer](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
-
--->
 
 Une fois la conception de votre carte terminée, vous pouvez l'exporter au format PDF ou image dans différents formats.
 
@@ -685,7 +674,7 @@ align: center
 ---
 ```
 
-<!--Remove the comment as duplicating and loading the style ensures that previous map layouts are not broken. also add that you can fix layer styles and layers in the map items-->
+
 
 
 #### Carte 2: Stylisation des couches
@@ -994,7 +983,7 @@ align: center
 ---
 ```
 
-#### Exporter la carte
+#### Carte 2: Exporter la carte
 
 <!--Exporting the map should be done after each layout. If the maps are not locked, it will break the layouts and the work will have to be repeated
 
