@@ -75,7 +75,7 @@ The QGIS project file, the model, and the datasets required for the model can be
 :::{card}
 :class-card: sd-text-center sd-rounded-2 sd-border-1
 :link: https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar/-/tree/68e58a254f12406101a398e895436ccc198f8938/AA_Cyclone_Monitoring_Trigger_MAD
-Download the project
+__Download the project.__
 :::
 
 ::::
