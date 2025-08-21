@@ -30,7 +30,7 @@ Setting triggers is one of the cornerstones of the Forecast-based Financing syst
 
 # Functionality of the Workflow
 
-The Trigger Process concept is displayed in the figure below.
+The Trigger Process concept is displayed in the figure below. 
 
 ```{figure} /fig/MAD_model_concept.png
 ---
