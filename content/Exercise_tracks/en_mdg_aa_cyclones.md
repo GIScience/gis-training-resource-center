@@ -1,6 +1,5 @@
 # Exercise Track: Anticipatory Action Analysis for Cyclones in Madagascar
 
-🚧This part of training platform is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
 This exercise track focuses on the preliminary assessment of a cyclone event in Madagascar. The goal is to create 
 an analytical workflow as a QGIS model that estimates the exposed population, exposed infrastructure, and exposed 
@@ -9,55 +8,103 @@ isochrones.
 In this track, you will build an analytical workflow as a QGIS model and visualise the results using map templates 
 and style files. 
 
-:::{topic} Context
-Placeholder
+::::{card} 
+Context
+^^^
+
+```{figure} /fig/IFRC-icons-colour_SURGE.png
+---
+width: 100px
+align: right
+name: IFRC Surge Icon
+---
+```
+
+Madagascar is frequently exposed to intense tropical cyclones, which can lead to widespread damage, displacement, and loss of life. Anticipatory analysis is essential to reduce the impact of these extreme weather events. By using forecast data and geospatial tools to predict the likely areas of impact, humanitarian actors and local authorities can take early action, such as pre-positioning supplies and issuing warnings, to protect lives and livelihoods before disaster strikes. This proactive approach strengthens preparedness and response capacities, ultimately saving time, resources, and lives.
+
+Aina, the GIS expert at the Malagasy Red Cross (CRM), is preparing for the upcoming cyclone season. She wants to improve her team’s ability to act quickly once a storm is forecasted by automating key analyses in QGIS. These include estimating exposed populations, identifying impacted services like health and education, and assessing whether health posts can be reached from key warehouses within a critical 10-hour window.
+The goal is to prepare an end-to-end analysis and visualization workflow that can support fast, data-driven anticipatory action before a cyclone makes landfall.
+
+::::
+
+:::{card}
+:link:
+__Exercise 1: Estimating the Exposed Population - Aina's Manual Approach (Module 5)__
+^^^
+
+
+- importing datasets into QGIS
+- reprojecting layers
+- buffering vector layers
+- clipping raster layers
+- calculating zonal statistics
+- applying graduated classification to results
+
 
 :::
 
 :::{card}
-__Exercise 1:__
+:link: 
+__Exercise 2: Automation of Exposed Population Estimation – Aina's Model (Module 7)__
 ^^^
-PLACEHOLDER
+
+- Using the model builder
+- reprojecting layers
+- buffering vector layers
+- clipping raster layers
+- calculating zonal statistics
+- applying graduated classification to results
+
 :::
 
 :::{card}
-__Exercise 1:__
+:link: 
+__Exercise 3: Identifying Affected Health Facilities and Schools – Aina Adds More Layers (Module 7)__
 ^^^
-PLACEHOLDER
+
+- extending the model 
+- Counting points in polygon
+- using the field calculator
+
 :::
 
 :::{card}
-__Exercise 2:__
+:link: 
+__Exercise 4: Visualizing Cyclone Impact Results – Aina Styles Her Layers (Module 4)__
 ^^^
-PLACEHOLDER
+
+- using the styling panel
+- applying style files to layers
+- saving style files
+
 :::
 
 :::{card}
-__Exercise 3:__
+:link: 
+__Exercise 5: Quick Map Creation – Aina Uses Map Templates (Module 4)__
 ^^^
-PLACEHOLDER
+
+- using the print layout composer to create a map
+- using map templates
+- using attribtue tables in the print layout composer
+
 :::
 
 :::{card}
-__Exercise 4:__
+__Exercise 6: Exporting Model Results for the Operations Team (Module 7)__
 ^^^
-PLACEHOLDER
+
+- expanding the model
+- joining model results
+- exporting the model output in spreadsheet (.csv) format
+
 :::
 
 :::{card}
-__Exercise 5:__
+__Exercise 7: Reachability of health Posts from CRM Warehouses__
 ^^^
-PLACEHOLDER
+
+- Filter 
+
 :::
 
-:::{card}
-__Exercise 6:__
-^^^
-PLACEHOLDER
-:::
-
-:::{card}
-__Exercise 7:__
-^^^
-PLACEHOLDER
-:::
