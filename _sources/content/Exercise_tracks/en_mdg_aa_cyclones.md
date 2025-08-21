@@ -62,7 +62,7 @@ __Exercise 1: Estimating the Exposed Population - Aina's Manual Approach (Module
 :::
 
 :::{card}
-:link: 
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_module_5_mdg_aa_ex_1.html#tasks
 __Exercise 2: Automation of Exposed Population Estimation – Aina's Model (Module 7)__
 ^^^
 
