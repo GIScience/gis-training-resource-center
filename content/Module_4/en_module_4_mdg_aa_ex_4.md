@@ -57,10 +57,9 @@ __Relevant Wiki Articles__
 :::{card}
 :class-card: sd-border-1 sd-shadow-none
 __Aim of the exercise:__
+^^^
 Aina, the GIS expert at the Malagasy Red Cross (CRM), is preparing for the upcoming cyclone season. She wants to improve her team’s ability to act quickly once a storm is forecasted by automating key analyses in QGIS. These include estimating exposed populations, identifying impacted services like health and education, and assessing whether health posts can be reached from key warehouses within a critical 10-hour window.
 The goal is to prepare an end-to-end analysis and visualization workflow that can support fast, data-driven anticipatory action before a cyclone makes landfall.
-^^^
-
 
 
 :::
