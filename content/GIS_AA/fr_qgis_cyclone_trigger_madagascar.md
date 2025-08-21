@@ -52,6 +52,17 @@ Le projet et le modèle ont été créés à l'aide de la version 3.40.9 (LTR) B
 
 Pour que le mécanisme de déclenchement fonctionne correctement, nous utilisons actuellement différents ensembles de données: des données que nous supposons statiques à court terme et des données variables qui décrivent les ensembles de données qui seront vérifiés régulièrement pour déclencher le mécanisme en fonction de la survenue d'événements cycloniques anticipés.
 
+::::{admonition} Télécharger les fichiers et données
+
+Le fichier de projet QGIS, le modèle et les jeux de données nécessaires pour le modèle peuvent être téléchargés depuis le GitLab de HeiGIT ici:
+
+:::{card}
+:class-card: sd-text-center sd-rounded-2 sd-border-1
+:link: https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar/-/tree/68e58a254f12406101a398e895436ccc198f8938/AA_Cyclone_Monitoring_Trigger_MAD
+__Télécharger le projet__
+
+::::
+
 ### Données fixes
 
 Par données fixes, nous entendons les ensembles de données nécessaires à la création des rapports cartographiques, qui ne sont pas susceptibles de changer à court terme. À long terme, ces ensembles de données peuvent être facilement adaptés.
