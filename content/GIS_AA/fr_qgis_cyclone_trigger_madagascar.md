@@ -25,7 +25,7 @@ La définition de déclencheurs est l'un des piliers du système de financement 
 
 Le concept de processus déclencheur est illustré dans la figure ci-dessous.
 
-```{figure} /fig/MAD_Trigger_concept.png
+```{figure} /fig/MAD_model_concept.png
 ---
 width: 1000px
 name: fig-trigger-concept

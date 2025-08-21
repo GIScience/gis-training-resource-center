@@ -32,7 +32,7 @@ Setting triggers is one of the cornerstones of the Forecast-based Financing syst
 
 The Trigger Process concept is displayed in the figure below.
 
-```{figure} /fig/MAD_Trigger_concept.png
+```{figure} /fig/MAD_model_concept.png
 ---
 width: 1000px
 name: fig-trigger-concept
