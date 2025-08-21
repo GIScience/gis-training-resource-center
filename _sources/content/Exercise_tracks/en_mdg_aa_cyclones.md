@@ -8,6 +8,21 @@ isochrones.
 In this track, you will build an analytical workflow as a QGIS model and visualise the results using map templates 
 and style files. 
 
+::::{admonition} French version - Version française
+:class: note
+
+The french version of this exercise track can be found [here]()
+
+La version française de cet article se trouve [ici]()
+
+```{card}
+:class-card: sd-text-center sd-border-1
+:link: 
+
+```
+
+::::
+
 ::::{card} 
 Context
 ^^^
@@ -27,8 +42,11 @@ The goal is to prepare an end-to-end analysis and visualization workflow that ca
 
 ::::
 
+---
+
+
 :::{card}
-:link:
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_module_5_mdg_aa_ex_1.html#tasks
 __Exercise 1: Estimating the Exposed Population - Aina's Manual Approach (Module 5)__
 ^^^
 
