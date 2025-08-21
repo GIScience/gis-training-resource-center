@@ -325,8 +325,6 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
-
-
 <li class="toctree-l1"><a class="reference internal" href="en_qgis_drought_trigger_somalia.html">QGIS Trigger Workflow for Somalia</a></li>
 
 
@@ -577,31 +575,29 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#donnees-de-monitoring">Données de monitoring</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estimation-de-l-impact-du-cyclone-a-l-aide-du-modele-qgis">Estimation de l’impact du cyclone à l’aide du modèle QGIS</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fonctionnement-du-modele">Fonctionnement du modèle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-executer-le-modele">Comment exécuter le modèle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#etape-1-explication-de-la-structure-des-fichiers">Étape 1 : Explication de la structure des fichiers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#etappe-2-ouvrez-le-projet-dans-qgis-et-chargez-le-modele-dans-le-concepteur-de-modeles-qgis">Étappe 2: Ouvrez le projet dans QGIS et chargez le modèle dans le concepteur de modèles QGIS</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ouvrir-le-modele-dans-qgis">Ouvrir le modèle dans QGIS</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#estimation-de-l-impact-du-cyclone-a-l-aide-du-modele-qgis">Estimation de l’impact du cyclone à l’aide du modèle QGIS</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fonctionnement-du-modele">Fonctionnement du modèle</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-executer-le-modele">Comment exécuter le modèle</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#etape-1-explication-de-la-structure-des-fichiers">Étape 1 : Explication de la structure des fichiers</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#etappe-2-ouvrez-le-projet-dans-qgis-et-chargez-le-modele-dans-le-concepteur-de-modeles-qgis">Étappe 2: Ouvrez le projet dans QGIS et chargez le modèle dans le concepteur de modèles QGIS</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ouvrir-le-modele-dans-qgis">Ouvrir le modèle dans QGIS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#etappe-3-executez-le-modele">Étappe 3: Exécutez le modèle</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#etappe-3-executez-le-modele">Étappe 3: Exécutez le modèle</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creation-des-cartes-a-l-aide-des-modeles-de-carte">Création des cartes à l’aide des modèles de carte</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisation-et-mise-en-forme-des-resultats-du-modele-et-creation-de-la-carte-imprimee">Visualisation et mise en forme des résultats du modèle et création de la carte imprimée</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creation-des-cartes-a-l-aide-des-modeles-de-carte">Création des cartes à l’aide des modèles de carte</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisation-et-mise-en-forme-des-resultats-du-modele-et-creation-de-la-carte-imprimee">Visualisation et mise en forme des résultats du modèle et création de la carte imprimée</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-1-apercu-de-l-impact-du-cyclone-districts-touches-gravite-de-l-evenement-et-emplacement-des-entrepots">Carte 1: Aperçu de l’impact du cyclone: Districts touchés, gravité de l’événement et emplacement des entrepôts</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stylisation-des-couches">Stylisation des couches</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creation-de-la-mise-en-page">Création de la mise en page</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exporter-la-carte">Exporter la carte</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-1-stylisation-des-couches">Carte 1: Stylisation des couches</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-1-creation-de-la-mise-en-page">Carte 1: Création de la mise en page</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-1-exporter-la-carte">Carte 1: Exporter la carte</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-2-evaluation-de-l-impact-population-exposee-et-infrastructures-critiques">Carte 2: Évaluation de l’impact: population exposée et infrastructures critiques</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-2-stylisation-des-couches">Carte 2: Stylisation des couches</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-2-creation-de-la-mise-en-page">Carte 2: Création de la mise en page</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Exporter la carte</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-2-exporter-la-carte">Carte 2: Exporter la carte</a></li>
 </ul>
 </li>
 </ul>
@@ -629,7 +625,7 @@ document.write(`
 <h1>Workflow de déclenchement en QGIS pour Madagascar<a class="headerlink" href="#workflow-de-declenchement-en-qgis-pour-madagascar" title="Permalink to this heading">#</a></h1>
 <!-- Maybe have a final look over introduction and all the official stuff which should be included in the documentation -->
 <p>Le workflow QGIS présenté dans cet article a été développé dans le cadre du projet “Anticipatory-Action” (AA) (action anticipative) de la Croix-Rouge malgache (CRM), de la Croix-Rouge allemande (GRC) et de l’institut de Heidelberg pour les technologies de géoinformation (HeiGIT).</p>
-<p>Le workflow est presque entièrement automatisé grâce à un modèle QGIS et ne nécessite aucune intervention manuelle. Le chapitre –Automated Trigger Workflow— décrit le processus et l’application pratique. <!-- what chapter?? Where is it?-->
+<p>Le workflow est presque entièrement automatisé grâce à un modèle QGIS et ne nécessite aucune intervention manuelle. Le chapitre “Fonctionnalité du workflow” décrit le processus et l’application pratique.
 Chaque étape inclut dans le modèle est expliquée en détail afin de permettre une compréhension complète du workflow et de la manière dont l’analyse a été réalisée.</p>
 <section id="contexte">
 <h2>Contexte<a class="headerlink" href="#contexte" title="Permalink to this heading">#</a></h2>
@@ -638,7 +634,7 @@ Chaque étape inclut dans le modèle est expliquée en détail afin de permettre
 <section id="declaration-de-declenchement">
 <h2>Déclaration de déclenchement<a class="headerlink" href="#declaration-de-declenchement" title="Permalink to this heading">#</a></h2>
 <p><strong>Déclencheur préalable à l’activation:</strong> au moins une des prévisions météorologiques de Météo Madagascar, du RMSC La Réunion ou de l’ECMWF prévoit une probabilité supérieure à 50% qu’un cyclone tropical de force tempête tropicale ou plus atteigne les côtes dans les 7 prochains jours.</p>
-<p><strong>ADéclencheur d’activation:</strong> si les prévisions de Météo Madagascar (DGM) indiquent l’arrivée d’un cyclone tropical avec des vents dépassant 118 km/h dans les 48 à 72 heures à venir.</p>
+<p><strong>Déclencheur d’activation:</strong> si les prévisions de Météo Madagascar (DGM) indiquent l’arrivée d’un cyclone tropical avec des vents dépassant 118 km/h dans les 48 à 72 heures à venir.</p>
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="telechargement-du-rapport">
@@ -652,7 +648,7 @@ Chaque étape inclut dans le modèle est expliquée en détail afin de permettre
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_concept.png"><img alt="../../_images/MAD_Trigger_concept.png" src="../../_images/MAD_Trigger_concept.png" style="width: 1000px;" /></a>
 </figure>
 <!--do we need french alternative text describing the figure?-->
-<p>Le projet QGIS présenté contient les couches nécessaires et un fichier modèle QGIS permettant d’évaluer l’impact potentiel du cyclone prévu. Le processus d’analyse sera exécuté dans le modèle QGIS, qui automatise les étapes d’évaluation de l’impact d’un cyclone tropical.  Il intègre les données relatives à la trajectoire du cyclone avec les frontières administratives, les données démographiques, les infrastructures et les positions des services afin d’identifier et de quantifier les zones et les ressources exposées.
+<p>Le projet QGIS présenté contient les couches nécessaires et un fichier modèle QGIS permettant d’évaluer l’impact potentiel du cyclone prévu. Le processus d’analyse sera exécuté dans le modèle QGIS, qui automatise les étapes d’évaluation de l’impact d’un cyclone tropical. Il intègre les données relatives à la trajectoire du cyclone avec les frontières administratives, les données démographiques, les infrastructures et les positions des services afin d’identifier et de quantifier les zones et les ressources exposées.
 Sur la base des prévisions cycloniques de Météo Madagascar, le modèle calcule la zone susceptible d’être exposée au cyclone, la population potentiellement exposée, le nombre de bâtiments exposés, les terres agricoles exposées et les établissements de santé et d’enseignement potentiellement exposés.</p>
 <p>De plus, le fichier QGIS contient des couches représentant les entrepôts CRM et les zones qu’ils peuvent couvrir, ce qui permet d’évaluer rapidement leur accessibilité. Le dossier fourni contient également des modèles de carte et des fichiers de style permettant de générer des rapports cartographiques basés sur les calculs du modèle.</p>
 <p>La documentation est divisée en deux parties. La première partie traite de l’analyse spatiale à l’aide du modèle QGIS automatisé. La deuxième partie explique comment créer des rapports cartographiques à l’aide des modèles de carte et des fichiers de style.</p>
@@ -728,12 +724,11 @@ Sur la base des prévisions cycloniques de Météo Madagascar, le modèle calcul
 </div>
 </section>
 </section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="estimation-de-l-impact-du-cyclone-a-l-aide-du-modele-qgis">
-<h1>Estimation de l’impact du cyclone à l’aide du modèle QGIS<a class="headerlink" href="#estimation-de-l-impact-du-cyclone-a-l-aide-du-modele-qgis" title="Permalink to this heading">#</a></h1>
+<section id="estimation-de-l-impact-du-cyclone-a-l-aide-du-modele-qgis">
+<h2>Estimation de l’impact du cyclone à l’aide du modèle QGIS<a class="headerlink" href="#estimation-de-l-impact-du-cyclone-a-l-aide-du-modele-qgis" title="Permalink to this heading">#</a></h2>
 <p>Comme expliqué au début de ce chapitre, le workflow déclencheur développé est exécuté automatiquement par un modèle QGIS. Dans ce chapitre, nous expliquerons son fonctionnement et, dans une étape ultérieure, nous expliquerons comment exécuter le modèle automatisé.</p>
 <section id="fonctionnement-du-modele">
-<h2>Fonctionnement du modèle<a class="headerlink" href="#fonctionnement-du-modele" title="Permalink to this heading">#</a></h2>
+<h3>Fonctionnement du modèle<a class="headerlink" href="#fonctionnement-du-modele" title="Permalink to this heading">#</a></h3>
 <!-- Have a final look over this section to see if all the important information is covered -->
 <p>Les étapes clés suivantes sont exécutées dans le modèle :</p>
 <ol class="arabic simple">
@@ -744,7 +739,7 @@ Sur la base des prévisions cycloniques de Météo Madagascar, le modèle calcul
 </li>
 <li><p>Unités administratives exposées</p>
 <ul class="simple">
-<li><p>La zone tampon du cyclone est recoupée avec les limites des districts (Admin 2) afin d’extraire les districts exposés. Ceux-ci sont ensuite reliés aux régions (Admin 1) à l’aide de la région (Admin 1) afin de créer des zones de risque.</p></li>
+<li><p>La zone tampon du cyclone est recoupée avec les limites des districts (niveau Admin 2) afin d’extraire les districts exposés. Ceux-ci sont ensuite reliés aux régions (niveau Admin 1) à l’aide de la région (niveau Admin 1) afin de créer des zones de risque.</p></li>
 </ul>
 </li>
 <li><p>Effet sur la population</p>
@@ -757,7 +752,8 @@ Sur la base des prévisions cycloniques de Météo Madagascar, le modèle calcul
 <li><p>La zone tampon du cyclone est croisée avec:</p>
 <ul>
 <li><p>Les bâtiments pour extraire les bâtiments exposés.</p></li>
-<li><p>Les couches des sites de santé et des établissements d’enseignement pour extraire et résumer les points d’intérêt exposés.
+<li><p>Les couches des sites de santé et des établissements d’enseignement pour extraire et résumer les points d’intérêt exposés.</p></li>
+<li><p>Les terres agricoles pour estimer l’effet sur l’agriculture.
 Ces ensembles de données sont combinés dans un tableau qui résume les infrastructures exposées.</p></li>
 </ul>
 </li>
@@ -771,11 +767,11 @@ Ces ensembles de données sont combinés dans un tableau qui résume les infrast
 -->
 </section>
 <section id="comment-executer-le-modele">
-<h2>Comment exécuter le modèle<a class="headerlink" href="#comment-executer-le-modele" title="Permalink to this heading">#</a></h2>
+<h3>Comment exécuter le modèle<a class="headerlink" href="#comment-executer-le-modele" title="Permalink to this heading">#</a></h3>
 <p>Le <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html#the-qgis-model-designer">QGIS Model Designer</a> est un outil visuel qui permet aux utilisateurs de créer et de modifier un flux de travail avec tous les outils disponibles dans QGIS qui peuvent être utilisés de manière répétée, simple et rapide, tout en garantissant la reproductibilité. Il fournit une interface graphique pour créer des flux de travail en connectant des outils et des algorithmes de géomatique. L’utilisateur peut définir les entrées, les sorties et le flux de données entre les différentes étapes de traitement.</p>
 </section>
 <section id="etape-1-explication-de-la-structure-des-fichiers">
-<h2>Étape 1 : Explication de la structure des fichiers<a class="headerlink" href="#etape-1-explication-de-la-structure-des-fichiers" title="Permalink to this heading">#</a></h2>
+<h3>Étape 1 : Explication de la structure des fichiers<a class="headerlink" href="#etape-1-explication-de-la-structure-des-fichiers" title="Permalink to this heading">#</a></h3>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_workflow_Step1.png"><img alt="../../_images/MAD_Trigger_workflow_Step1.png" src="../../_images/MAD_Trigger_workflow_Step1.png" style="width: 1000px;" /></a>
 </figure>
@@ -817,11 +813,12 @@ Ces ensembles de données sont combinés dans un tableau qui résume les infrast
 </table>
 </section>
 <section id="etappe-2-ouvrez-le-projet-dans-qgis-et-chargez-le-modele-dans-le-concepteur-de-modeles-qgis">
-<h2>Étappe 2: Ouvrez le projet dans QGIS et chargez le modèle dans le concepteur de modèles QGIS<a class="headerlink" href="#etappe-2-ouvrez-le-projet-dans-qgis-et-chargez-le-modele-dans-le-concepteur-de-modeles-qgis" title="Permalink to this heading">#</a></h2>
+<h3>Étappe 2: Ouvrez le projet dans QGIS et chargez le modèle dans le concepteur de modèles QGIS<a class="headerlink" href="#etappe-2-ouvrez-le-projet-dans-qgis-et-chargez-le-modele-dans-le-concepteur-de-modeles-qgis" title="Permalink to this heading">#</a></h3>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_workflow_Step2.png"><img alt="../../_images/MAD_Trigger_workflow_Step2.png" src="../../_images/MAD_Trigger_workflow_Step2.png" style="width: 1000px;" /></a>
 </figure>
-<p>Dans cette étape, nous allons ouvrir notre projet de déclenchement dans QGIS et charger le modèle QGIS qui exécutera automatiquement l’analyse pour nous.</p>
+<p><strong>Objectif:</strong> Dans cette étape, nous allons ouvrir notre projet de déclenchement dans QGIS et charger le modèle QGIS qui exécutera automatiquement l’analyse pour nous.</p>
+<p><strong>Outils:</strong> QGIS</p>
 <ol class="arabic simple">
 <li><p>Ouvrez le fichier <code class="docutils literal notranslate"><span class="pre">AA_Cyclone_Monitoring_Trigger_MAD.qgz</span></code> en double-cliquant dessus.</p></li>
 <li><p>Le projet QGIS s’ouvrira avec de nombreuses données préchargées. Ces données sont nécessaires pour exécuter le modèle QGIS et créer certaines cartes de résultats.</p></li>
@@ -842,14 +839,14 @@ Ces ensembles de données sont combinés dans un tableau qui résume les infrast
 <p><strong>Groupe 3: Carte Aperçu de l’impact du cyclone (Map_Cyclone_Impact_Overview)</strong></p>
 <p>Ce groupe comprend toutes les couches nécessaires à la création de la <strong>carte générale de l’impact du cyclone</strong> (illustrée ci-dessous). La trajectoire de la tempête et les limites de la région (Admin1) (<code class="docutils literal notranslate"><span class="pre">Admin1_Impact_Overview_Map</span></code>) sont préchargées pour vous aider à démarrer rapidement.
 Assurez-vous que vous travaillez avec la <strong>trajectoire correcte et mise à jour</strong> de la tempête pour l’événement étudié.</p>
-<figure class="align-center" id="id2">
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_Impact_Overview_Map.png"><img alt="../../_images/MAD_Trigger_Impact_Overview_Map.png" src="../../_images/MAD_Trigger_Impact_Overview_Map.png" style="width: 1000px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 61 </span><span class="caption-text">Cette carte sera créée à l’aide des couches du groupe 3.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 61 </span><span class="caption-text">Cette carte sera créée à l’aide des couches du groupe 3.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p><strong>Groupe 4: Carte d’évaluation de l’impact du cyclone (Map_Cyclone_Impact_Assessment)</strong></p>
-<p>Ce groupe contient toutes les couches nécessaires pour générer des <strong>cartes détaillées d’évaluation d’impact</strong>. Comme pour la carte générale, la trajectoire de la tempête et les limites de la région (Admin1) sont préchargées.
+<p>Ce groupe contient toutes les couches nécessaires pour générer des <strong>cartes détaillées d’évaluation d’impact</strong>. Comme pour la carte générale, la trajectoire de la tempête et les limites de la région (niveau Admin 1) sont préchargées.
 Assurez-vous d’utiliser les données d’événement correctes afin de garantir la cohérence et la précision de l’évaluation. Dans cette section, nous pouvons créer 5 cartes différentes pour différents impacts:</p>
 <ul class="simple">
 <li><p>population exposée</p></li>
@@ -859,18 +856,19 @@ Assurez-vous d’utiliser les données d’événement correctes afin de garanti
 <li><p>terres agricoles exposées</p></li>
 </ul>
 <p>Les résultats finaux de la carte ressembleront à ce qui suit.</p>
-<figure class="align-center" id="id3">
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_Impact_Population_Map.png"><img alt="../../_images/MAD_Trigger_Impact_Population_Map.png" src="../../_images/MAD_Trigger_Impact_Population_Map.png" style="width: 1000px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 62 </span><span class="caption-text">Cette carte sera créée à l’aide des couches du groupe 4.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 62 </span><span class="caption-text">Cette carte sera créée à l’aide des couches du groupe 4.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <!--EDIT: ADD THE CORRECT PICTURE FOR THIS MAP-->
 <p><strong>Groupe 5: Isochrones de l’entrepôt CRM (CRM_Warehouse_Isochrones)</strong></p>
 <p>Ce groupe comprend les isochrones pour tous les entrepôts, calculées pour des intervalles de temps allant jusqu’à 24 heures. Ces couches sont utiles pour évaluer l’accessibilité des sites dans le cadre de la planification des interventions d’urgence. Ce groupe est utilisé pour créer la carte matrice d’accessibilité des entrepôts CRM. Il est également possible d’ajouter une isochrone spécifique à l’un des entrepôts précédents. Nous y reviendrons plus bas.</p>
+<!--ADD: Map showing the isochrones-->
 <hr class="docutils" />
 <section id="ouvrir-le-modele-dans-qgis">
-<h3>Ouvrir le modèle dans QGIS<a class="headerlink" href="#ouvrir-le-modele-dans-qgis" title="Permalink to this heading">#</a></h3>
+<h4>Ouvrir le modèle dans QGIS<a class="headerlink" href="#ouvrir-le-modele-dans-qgis" title="Permalink to this heading">#</a></h4>
 <p>Nous allons ouvrir le modèle QGIS :</p>
 <ol class="arabic simple">
 <li><p>Dans la barre du haut de votre fenêtre QGIS, naviguez vers <code class="docutils literal notranslate"><span class="pre">Traîtement</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Modeleur</span></code>. Une nouvelle fenêtre s’ouvrira. Il s’agit du concepteur de modèles.</p></li>
@@ -915,11 +913,13 @@ Assurez-vous d’utiliser les données d’événement correctes afin de garanti
 </section>
 </section>
 <section id="etappe-3-executez-le-modele">
-<h2>Étappe 3: Exécutez le modèle<a class="headerlink" href="#etappe-3-executez-le-modele" title="Permalink to this heading">#</a></h2>
+<h3>Étappe 3: Exécutez le modèle<a class="headerlink" href="#etappe-3-executez-le-modele" title="Permalink to this heading">#</a></h3>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_workflow_Step3.png"><img alt="../../_images/MAD_Trigger_workflow_Step3.png" src="../../_images/MAD_Trigger_workflow_Step3.png" style="width: 1000px;" /></a>
 </figure>
-<p><strong>Entrées et sorties du modèle</strong></p>
+<p><strong>Objectif:</strong> Dans cette étappe, nous allons exécuter le modèle pour calculer les données necéssaires pour créer une carte.</p>
+<p><strong>Outils:</strong> Modeleur de QGIS</p>
+<p><strong>Entrées et sorties du modèle:</strong></p>
 <ol class="arabic simple">
 <li><p>Un modèle QGIS peut être exécuté en naviguant vers la barre du haut &gt; <code class="docutils literal notranslate"><span class="pre">Modèle</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Exécuter</span> <span class="pre">le</span> <span class="pre">modèle</span></code> ou en cliquant sur l’icône <img alt="" src="fig/Module_7/qgis_3.44_run_model.png" />.</p></li>
 <li><p>Une nouvelle fenêtre s’ouvrira. Vous devrez y définir les entrées et les sorties du modèle. Pour chacune de ces entrées obligatoires, cliquez sur la flèche déroulante et sélectionnez le fichier correspondant.</p></li>
@@ -963,7 +963,7 @@ Assurez-vous d’utiliser les données d’événement correctes afin de garanti
 <li><p>Une des sorties s’appelle <code class="docutils literal notranslate"><span class="pre">Spreadsheet_Exposed_District</span></code> pour laquelle le modèle produira un fichier <code class="docutils literal notranslate"><span class="pre">.csv</span></code>. Pour cette couche, choisissez <code class="docutils literal notranslate"><span class="pre">Enregistrer</span> <span class="pre">vers</span> <span class="pre">un</span> <span class="pre">fichier...</span></code>, naviguez jusqu’au dossier <code class="docutils literal notranslate"><span class="pre">.../AA_Cyclone_Monitoring_Trigger_MDG/model_outputs/</span></code> et donnez-lui le nom <code class="docutils literal notranslate"><span class="pre">Spreadsheet_Exposed_Districts_AAAAMMJJ</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Education_Facilities_points_AAAAMMJJ</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Health_Facilities_points_AAAAMMJJ</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Regions_YAAAAMMJJ</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Regions_AAAAMMJJ</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Districts_AAAAMMJJ</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Population_AAAAMMJJ</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Buildings_AAAAMMJJ</span></code></p></li>
@@ -973,7 +973,7 @@ Assurez-vous d’utiliser les données d’événement correctes afin de garanti
 </ol>
 </li>
 <li><p>Une fois que vous avez défini les noms et les emplacements de sauvegarde des couches de sortie, cliquez sur <code class="docutils literal notranslate"><span class="pre">Exécuter</span></code> to execute the model. pour exécuter le modèle. Les couches de résultats de sortie seront automatiquement ajoutées à la fenêtre principale de QGIS une fois le processus terminé. Quand le processus a terminé, vous pouvez fermer la fenêtre <code class="docutils literal notranslate"><span class="pre">Modeleur</span></code>.</p></li>
-<li><p>Vous verrez de nouveaux couches ajoutés à la zone de travail de la carte et au panneau des calques (en bas à gauche). Déplacez les nouveaux calques vers le groupe “Model_Outputs”.</p></li>
+<li><p>Vous verrez de nouveaux couches ajoutés à la zone de travail de la carte et au panneau des couches (en bas à gauche). Déplacez les nouveaux couches vers le groupe “Model_Outputs”.</p></li>
 </ol>
 <figure class="align-default" id="mdg-model-output-canvas">
 <a class="reference internal image-reference" href="../../_images/mdg_aa_model_outputs_canvas.png"><img alt="../../_images/mdg_aa_model_outputs_canvas.png" src="../../_images/mdg_aa_model_outputs_canvas.png" style="width: 700px;" /></a>
@@ -998,10 +998,10 @@ Vidéo: Modèle d’entrée et de sortie<div class="sd-summary-down docutils">
 </div>
 </section>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="creation-des-cartes-a-l-aide-des-modeles-de-carte">
-<h1>Création des cartes à l’aide des modèles de carte<a class="headerlink" href="#creation-des-cartes-a-l-aide-des-modeles-de-carte" title="Permalink to this heading">#</a></h1>
+<section id="creation-des-cartes-a-l-aide-des-modeles-de-carte">
+<h2>Création des cartes à l’aide des modèles de carte<a class="headerlink" href="#creation-des-cartes-a-l-aide-des-modeles-de-carte" title="Permalink to this heading">#</a></h2>
 <section id="visualisation-et-mise-en-forme-des-resultats-du-modele-et-creation-de-la-carte-imprimee">
-<h2>Visualisation et mise en forme des résultats du modèle et création de la carte imprimée<a class="headerlink" href="#visualisation-et-mise-en-forme-des-resultats-du-modele-et-creation-de-la-carte-imprimee" title="Permalink to this heading">#</a></h2>
+<h3>Visualisation et mise en forme des résultats du modèle et création de la carte imprimée<a class="headerlink" href="#visualisation-et-mise-en-forme-des-resultats-du-modele-et-creation-de-la-carte-imprimee" title="Permalink to this heading">#</a></h3>
 <!-- Is a video necessary for this chapter? -->
 <div class="note admonition">
 <p class="admonition-title">Cartes de résultats</p>
@@ -1047,6 +1047,7 @@ align: center
 __Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
 
 -->
+</section>
 <section id="carte-1-apercu-de-l-impact-du-cyclone-districts-touches-gravite-de-l-evenement-et-emplacement-des-entrepots">
 <h3>Carte 1: Aperçu de l’impact du cyclone: Districts touchés, gravité de l’événement et emplacement des entrepôts<a class="headerlink" href="#carte-1-apercu-de-l-impact-du-cyclone-districts-touches-gravite-de-l-evenement-et-emplacement-des-entrepots" title="Permalink to this heading">#</a></h3>
 <figure class="align-center">
@@ -1065,8 +1066,8 @@ __Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-cent
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_layer_order_overview_map.PNG"><img alt="../../_images/MAD_Trigger_layer_order_overview_map.PNG" src="../../_images/MAD_Trigger_layer_order_overview_map.PNG" style="width: 300px;" /></a>
 </figure>
-<section id="stylisation-des-couches">
-<h4>Stylisation des couches<a class="headerlink" href="#stylisation-des-couches" title="Permalink to this heading">#</a></h4>
+<section id="carte-1-stylisation-des-couches">
+<h4>Carte 1: Stylisation des couches<a class="headerlink" href="#carte-1-stylisation-des-couches" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Faites un clic droit sur la couche exposed_districts -&gt; <code class="docutils literal notranslate"><span class="pre">Propriétés</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Symbologie</span></code></p></li>
 <li><p>Dans le coin inférieur gauche, cliquez sur <code class="docutils literal notranslate"><span class="pre">Style</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Charger</span> <span class="pre">le</span> <span class="pre">style</span></code></p></li>
@@ -1111,15 +1112,14 @@ __Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-cent
 <li><p>Sélectionnez <code class="docutils literal notranslate"><span class="pre">Remplissage</span> <span class="pre">image</span> <span class="pre">raster</span></code> puis cliquez sur les trois points <img alt="" src="../../_images/Three_points.png" />.</p></li>
 <li><p>Dans le dossier du projet, naviguez jusqu’au sous-dossier appelé <code class="docutils literal notranslate"><span class="pre">logo_pictures</span></code>. Vous y trouverez un fichier png appelé “ngo-office”. Sélectionnez-le et cliquez sur <code class="docutils literal notranslate"><span class="pre">Ouvrir</span></code>.</p></li>
 </ul>
-<!--EDIT: Add that the picture location for the CRM warehouse icon needs to specified again. It is located in the logos_pictures folder.-->
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>Assurez-vous que toutes les couches de sortie sont correctement ajoutées au projet QGIS. Si certaines couches manquent, essayez de relancer le modèle ou vérifiez dans le dossier Model Outputs si les fichiers ont bien été créés.</p>
 <p>Pour conserver un espace de travail clair et organisé, regroupez les couches de sortie dans le panneau Couches sous le groupe approprié (par exemple, Map_Cyclone_Impact_Overview). Cela permet de structurer votre projet et facilite la navigation pendant le processus de création de la carte.</p>
 </div>
 </section>
-<section id="creation-de-la-mise-en-page">
-<h4>Création de la mise en page<a class="headerlink" href="#creation-de-la-mise-en-page" title="Permalink to this heading">#</a></h4>
+<section id="carte-1-creation-de-la-mise-en-page">
+<h4>Carte 1: Création de la mise en page<a class="headerlink" href="#carte-1-creation-de-la-mise-en-page" title="Permalink to this heading">#</a></h4>
 <p>Pour faciliter la visualisation, nous avons créé ces <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#map-templates">modèles de carte</a> afin de présenter les résultats de l’analyse des déclencheurs. Ces modèles servent de base à vos propres visualisations et sont disponibles dans le répertoire suivant: <code class="docutils literal notranslate"><span class="pre">AA_Cyclone_Monitoring_Trigger_MAD/map_templates</span></code>. Vous pouvez personnaliser les modèles en fonction de vos besoins et préférences. Vous trouverez de l’aide <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#print-layout">ici</a>.</p>
 <ol class="arabic simple">
 <li><p>Désactivez tous les groupes de couches à l’exception du groupe <code class="docutils literal notranslate"><span class="pre">Map_Cyclone_Impact_Overview</span></code> et de la carte de base <code class="docutils literal notranslate"><span class="pre">OpenStreetMap</span></code>.</p></li>
@@ -1238,7 +1238,7 @@ OpenStreetMap
 </ul>
 <ol class="arabic simple" start="10">
 <li><p>Sous les logos, modifiez les informations dans la zone de texte en sélectionnant celle-ci et en naviguant vers les propriétés de l’élément.</p></li>
-<li><p>Enfin, verrouillons les calques et les styles de calque afin que les modifications apportées dans la fenêtre principale de QGIS n’affectent pas notre mise en page d’impression:</p></li>
+<li><p>Enfin, verrouillons les couches et les styles de couches afin que les modifications apportées dans la fenêtre principale de QGIS n’affectent pas notre mise en page d’impression:</p></li>
 </ol>
 <ul class="simple">
 <li><p>Dans la liste des éléments, sélectionnez <strong>Carte 1</strong>.</p></li>
@@ -1276,24 +1276,8 @@ Une fois la couche est stylisé, votre résultat final devrait ressembler à cec
 </figure>
 </div>
 </details></section>
-<section id="exporter-la-carte">
-<h4>Exporter la carte<a class="headerlink" href="#exporter-la-carte" title="Permalink to this heading">#</a></h4>
-<!--Exporting the map should be done after each layout. If the maps are not locked, it will break the layouts and the work will have to be repeated-->
-<!---
-```{figure} /fig/MAD_Trigger_workflow_Step5.png
----
-width: 1000px
-name: 
-align: center
----
-```
-
-__Purpose:__ Export the designed and finalized map layout in order to print it as a pdf or format of your choice.
-
-
-__Tool:__ [Print Layout Composer](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
-
--->
+<section id="carte-1-exporter-la-carte">
+<h4>Carte 1: Exporter la carte<a class="headerlink" href="#carte-1-exporter-la-carte" title="Permalink to this heading">#</a></h4>
 <p>Une fois la conception de votre carte terminée, vous pouvez l’exporter au format PDF ou image dans différents formats.</p>
 <p><strong>Exporter en tant qu’image</strong></p>
 <ol class="arabic simple">
@@ -1329,7 +1313,6 @@ L’image se trouve maintenant dans le dossier de résultats.</p></li>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_layer_order_impact_map.PNG"><img alt="../../_images/MAD_Trigger_layer_order_impact_map.PNG" src="../../_images/MAD_Trigger_layer_order_impact_map.PNG" style="width: 300px;" /></a>
 </figure>
-<!--Remove the comment as duplicating and loading the style ensures that previous map layouts are not broken. also add that you can fix layer styles and layers in the map items-->
 <section id="carte-2-stylisation-des-couches">
 <h4>Carte 2: Stylisation des couches<a class="headerlink" href="#carte-2-stylisation-des-couches" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple">
@@ -1794,8 +1777,8 @@ Votre résultat final devrait ressembler à ceci après avoir stylisé la couche
 </figure>
 </div>
 </details></section>
-<section id="id1">
-<h4>Exporter la carte<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h4>
+<section id="carte-2-exporter-la-carte">
+<h4>Carte 2: Exporter la carte<a class="headerlink" href="#carte-2-exporter-la-carte" title="Permalink to this heading">#</a></h4>
 <!--Exporting the map should be done after each layout. If the maps are not locked, it will break the layouts and the work will have to be repeated
 
 ```{figure} /fig/MAD_Trigger_workflow_Step5.png
@@ -1946,31 +1929,29 @@ L’image se trouve maintenant dans le dossier de résultats.</p></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#donnees-de-monitoring">Données de monitoring</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estimation-de-l-impact-du-cyclone-a-l-aide-du-modele-qgis">Estimation de l’impact du cyclone à l’aide du modèle QGIS</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fonctionnement-du-modele">Fonctionnement du modèle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-executer-le-modele">Comment exécuter le modèle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#etape-1-explication-de-la-structure-des-fichiers">Étape 1 : Explication de la structure des fichiers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#etappe-2-ouvrez-le-projet-dans-qgis-et-chargez-le-modele-dans-le-concepteur-de-modeles-qgis">Étappe 2: Ouvrez le projet dans QGIS et chargez le modèle dans le concepteur de modèles QGIS</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ouvrir-le-modele-dans-qgis">Ouvrir le modèle dans QGIS</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#estimation-de-l-impact-du-cyclone-a-l-aide-du-modele-qgis">Estimation de l’impact du cyclone à l’aide du modèle QGIS</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fonctionnement-du-modele">Fonctionnement du modèle</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-executer-le-modele">Comment exécuter le modèle</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#etape-1-explication-de-la-structure-des-fichiers">Étape 1 : Explication de la structure des fichiers</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#etappe-2-ouvrez-le-projet-dans-qgis-et-chargez-le-modele-dans-le-concepteur-de-modeles-qgis">Étappe 2: Ouvrez le projet dans QGIS et chargez le modèle dans le concepteur de modèles QGIS</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ouvrir-le-modele-dans-qgis">Ouvrir le modèle dans QGIS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#etappe-3-executez-le-modele">Étappe 3: Exécutez le modèle</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#etappe-3-executez-le-modele">Étappe 3: Exécutez le modèle</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creation-des-cartes-a-l-aide-des-modeles-de-carte">Création des cartes à l’aide des modèles de carte</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisation-et-mise-en-forme-des-resultats-du-modele-et-creation-de-la-carte-imprimee">Visualisation et mise en forme des résultats du modèle et création de la carte imprimée</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creation-des-cartes-a-l-aide-des-modeles-de-carte">Création des cartes à l’aide des modèles de carte</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisation-et-mise-en-forme-des-resultats-du-modele-et-creation-de-la-carte-imprimee">Visualisation et mise en forme des résultats du modèle et création de la carte imprimée</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-1-apercu-de-l-impact-du-cyclone-districts-touches-gravite-de-l-evenement-et-emplacement-des-entrepots">Carte 1: Aperçu de l’impact du cyclone: Districts touchés, gravité de l’événement et emplacement des entrepôts</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stylisation-des-couches">Stylisation des couches</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creation-de-la-mise-en-page">Création de la mise en page</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exporter-la-carte">Exporter la carte</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-1-stylisation-des-couches">Carte 1: Stylisation des couches</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-1-creation-de-la-mise-en-page">Carte 1: Création de la mise en page</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-1-exporter-la-carte">Carte 1: Exporter la carte</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-2-evaluation-de-l-impact-population-exposee-et-infrastructures-critiques">Carte 2: Évaluation de l’impact: population exposée et infrastructures critiques</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-2-stylisation-des-couches">Carte 2: Stylisation des couches</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-2-creation-de-la-mise-en-page">Carte 2: Création de la mise en page</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Exporter la carte</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-2-exporter-la-carte">Carte 2: Exporter la carte</a></li>
 </ul>
 </li>
 </ul>
