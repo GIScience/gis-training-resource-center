@@ -5,9 +5,9 @@
 :::{admonition} French Translation 
 :class: note
 
-The french version of this page can be found [here](/content/GIS_AA/fr_qgis_cyclone_trigger_madagascar.md)
+The french version of this page can be found [here](/content/GIS_AA/fr_qgis_cyclone_trigger_madagascar.md).
 
-La version française de cet article se trouve [ici](/content/GIS_AA/fr_qgis_cyclone_trigger_madagascar.md)
+La version française de cet article se trouve [ici](/content/GIS_AA/fr_qgis_cyclone_trigger_madagascar.md).
 :::
 
 The QGIS workflow presented in this article was developed in the framework of the Anticipatory-Action (AA) Project of the Croix-Rouge Malagasy (CRM), the German Red Cross (GRC) and the Heidelberg Institute for Geoinformation Technology (HeiGIT).
@@ -100,11 +100,11 @@ Tropical cyclone track data is available in various subsets, depending on the te
 
 :::
 
-# Estimating the impact of the cyclone using the QGIS model
+## Estimating the impact of the cyclone using the QGIS model
 
 As explained at the start of this chapter the developed trigger workflow is done automatically by a QGIS model. In this chapter we will explain its functionality and in a subsequent step it is explained how to run the automated model. 
 
-## Functionality of the model
+### Functionality of the model
 
 <!-- Have a final look over this section to see if all the important information is covered -->
 
@@ -129,12 +129,12 @@ The following key processing steps are run inside the model:
     * Warehouses are filtered based on proximity to exposed regions. The model uses road data and spatial filters to determine accessible warehouses relevant to the response.
 -->
 
-## How to run the model
+### How to run the model
 
 The [QGIS Model Designer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html#the-qgis-model-designer) is a visual tool that allows users to create and edit a workflow with all tools available in QGIS that can be used repeatedly in a simple and time-efficient manner, while ensuring reproducibility. It provides a graphical interface to build workflows by connecting geoprocessing tools and algorithms. The user can define inputs, outputs, and the flow of data between different processing steps.
 
 
-## Step 1: Explanation of the folder structure
+### Step 1: Explanation of the folder structure
 
 
 ```{figure} /fig/MAD_Trigger_workflow_Step1.png
@@ -176,7 +176,7 @@ __Tool:__ No special tools or programs are needed
 ``````
 
 
-## Step 2: Open the project in QGIS and load the model in the QGIS Model Designer
+### Step 2: Open the project in QGIS and load the model in the QGIS Model Designer
 
 ```{figure} /fig/MAD_Trigger_workflow_Step2.png
 ---
@@ -263,7 +263,7 @@ It is also possible to add a specific warehouse isochrone to one of the previous
 
 ----
 
-### Opening the model in QGIS
+#### Opening the model in QGIS
 
 Let's open the QGIS model:
 1. In the tob bar of your QGIS window, navigate to `Processing` -> `Model Designer`. A new window will open. This is the model designer.
@@ -290,7 +290,7 @@ Opening the graphical modeler in QGIS 3.44
 
 <!-- Do we need a video here? -->
 
-## Step 3: Run the model
+### Step 3: Run the model
 
 ```{figure} /fig/MAD_Trigger_workflow_Step3.png
 ---
@@ -378,9 +378,9 @@ Results
 We have all the necessary layers to create the individual maps. The next section will cover how to use the predetermined and calculated layers to create the maps using the map templates and layer style files. 
 :::
 
-# Creating the map reports using the map templates
+## Creating the map reports using the map templates
 
-## Visualization and Styling of the Model Outputs and creating the Print Map
+### Visualization and Styling of the Model Outputs and creating the Print Map
 
 <!-- Is a video necessary for this chapter? -->
 
