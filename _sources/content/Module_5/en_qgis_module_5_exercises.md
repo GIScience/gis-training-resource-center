@@ -19,7 +19,7 @@ These exercises touch on all the content of module 5.
 | __[Exercise 4: Security Peshawar](/content/Module_5/en_qgis_module_5_ex4.md)__ |  | Data analysis | 3 hours | 
 | __[Exercise 5: Aggregate and Assess G2P Money Transfers in Pakistan](/content/Module_5/en_qgis_module_5_ex5.md)__ | The exercise teaches how to aggregate data on administrative levels and subsequently join the aggregated data with a polygon dataset. | Data analysis and creating reports | 60 minutes |
 | __[Exercise 6: Calculate sum of affected population and flooded area for the Area of interest](/content/Module_5/en_qgis_module_5_ex6.md)__ | The exercise teaches you how to perform a spatial join and create statistics based on the attributes. | Data analysis | 45-60 minutes | 
-| __[Exercise 7: Data cleaning](/content/Module_5/en_qgis_data_preparation_ex.md)__ | | | |
+| __[Exercise 7: Data cleaning](/content/Module_5/en_qgis_data_preparation_ex.md)__ | This exercise teaches how to clean datasets and convert pdf datatables into csv format. | Data preparation | 1 hour  |
 | __[Exercise 8: Estimating Exposed Population – Aina’s Manual Approach](/content/Module_5/en_qgis_module_5_mdg_aa_ex_1.md)__ | This exercise teaches how to buffer cyclone track and use zonal statistics to estimate the population in the cyclone buffer | Data analysis | 2 hours | 
 
 
