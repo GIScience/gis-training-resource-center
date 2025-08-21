@@ -620,11 +620,9 @@ document.write(`
 <!-- Maybe have a final look over introduction and all the official stuff which should be included in the documentation -->
 <div class="note admonition">
 <p class="admonition-title">French Translation </p>
-<p>The french version of this page can be found <a class="reference internal" href="fr_qgis_cyclone_trigger_madagascar.html"><span class="doc std std-doc">here</span></a>.</p>
-<p>La version française de cet article se trouve <a class="reference internal" href="fr_qgis_cyclone_trigger_madagascar.html"><span class="doc std std-doc">ici</span></a>.</p>
 </div>
 <p>The QGIS workflow presented in this article was developed in the framework of the Anticipatory-Action (AA) Project of the Croix-Rouge Malagasy (CRM), the German Red Cross (GRC) and the Heidelberg Institute for Geoinformation Technology (HeiGIT).</p>
-<p>The workflow is almost fully automated through a QGIS model, requiring no manual intervention. The chapter Automated Trigger Workflow outlines the process and its practical implementation. Each step included in the model is explained in detail to provide a complete understanding of the workflow and how the analysis was carried out.</p>
+<p>The workflow is almost fully automated through a QGIS model, requiring no manual intervention. The chapterFunctionality of the workflow outlines the process and its practical implementation. Each step included in the model is explained in detail to provide a complete understanding of the workflow and how the analysis was carried out.</p>
 <section id="background">
 <h2>Background<a class="headerlink" href="#background" title="Permalink to this heading">#</a></h2>
 <p>Setting triggers is one of the cornerstones of the Forecast-based Financing system. For a National Society to have access to automatically released funding for their early actions, their Early Action Protocol needs to clearly define where and when funds will be allocated, and assistance will be provided. In AA, this is decided according to specific threshold values, so-called triggers, based on weather and climate forecasts, which are defined for each region (see <a class="reference external" href="https://manual.forecast-based-financing.org/en/chapter/06-develop-a-trigger-system/">FbF Manual</a>).</p>
@@ -642,8 +640,8 @@ document.write(`
 <section class="tex2jax_ignore mathjax_ignore" id="functionality-of-the-workflow">
 <h1>Functionality of the Workflow<a class="headerlink" href="#functionality-of-the-workflow" title="Permalink to this heading">#</a></h1>
 <p>The Trigger Process concept is displayed in the figure below.</p>
-<figure class="align-center" id="fig-trigger-concept">
-<a class="reference internal image-reference" href="../../_images/MAD_model_concept.png"><img alt="../../_images/MAD_model_concept.png" src="../../_images/MAD_model_concept.png" style="width: 1000px;" /></a>
+<figure class="align-center" id="fig-model-concept">
+<a class="reference internal image-reference" href="fig/MAD_Model_concept.png"><img alt="fig/MAD_Model_concept.png" src="fig/MAD_Model_concept.png" style="width: 1000px;" /></a>
 </figure>
 <p>The provided QGIS project contains the necessary layers and a QGIS model file to perform an assessment of the potential impact of the predicted cyclone event. The analysis workflow will be run in the QGIS model, which automates the steps for assessing the impact of a tropical cyclone event.  It integrates cyclone storm track data with administrative boundaries, population data, infrastructure, and service locations to identify and quantify exposed areas and resources.
 Based on the cyclone forecast by Météo Madagascar, the model calculates the area likely to be  exposed to the cyclone, the potentially exposed population, number of exposed buildings, exposed agricultural land, and potentially exposed health and education facilities.</p>
@@ -657,6 +655,15 @@ Based on the cyclone forecast by Météo Madagascar, the model calculates the ar
 <section id="available-data">
 <h2>Available Data<a class="headerlink" href="#available-data" title="Permalink to this heading">#</a></h2>
 <p>For the trigger mechanism to work properly we currently use different datasets: data that we assume to be static in the near term, and variable data which describe the datasets that will be checked for triggering on a regular basis depending on the occurrence of anticipated cyclone events.</p>
+<div class="note admonition">
+<p class="admonition-title">Download the data and project files</p>
+<p>The QGIS project file, the model, and the datasets required for the model can be downloaded from HeiGITs Gitlab here:</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover sd-text-center sd-rounded-2 sd-border-1 docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Download the project</p>
+</div>
+<a class="sd-stretched-link reference external" href="https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar/-/tree/68e58a254f12406101a398e895436ccc198f8938/AA_Cyclone_Monitoring_Trigger_MAD"></a></div>
+</div>
 <section id="fixed-data">
 <h3>Fixed Data<a class="headerlink" href="#fixed-data" title="Permalink to this heading">#</a></h3>
 <p>By fixed data we mean datasets that are needed to create the map reports, that will most probably not change in the near term. In the long term these datasets can be adapted easily.</p>

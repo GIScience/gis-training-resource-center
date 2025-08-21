@@ -2,17 +2,19 @@
 
 <!-- Maybe have a final look over introduction and all the official stuff which should be included in the documentation -->
 
-:::{admonition} French Translation 
+::::{admonition} French Translation 
 :class: note
 
+:::{card}
+:link: 
 The french version of this page can be found [here](/content/GIS_AA/fr_qgis_cyclone_trigger_madagascar.md).
 
 La version française de cet article se trouve [ici](/content/GIS_AA/fr_qgis_cyclone_trigger_madagascar.md).
-:::
+::::
 
 The QGIS workflow presented in this article was developed in the framework of the Anticipatory-Action (AA) Project of the Croix-Rouge Malagasy (CRM), the German Red Cross (GRC) and the Heidelberg Institute for Geoinformation Technology (HeiGIT).
 
-The workflow is almost fully automated through a QGIS model, requiring no manual intervention. The chapter Automated Trigger Workflow outlines the process and its practical implementation. Each step included in the model is explained in detail to provide a complete understanding of the workflow and how the analysis was carried out.
+The workflow is almost fully automated through a QGIS model, requiring no manual intervention. The chapterFunctionality of the workflow outlines the process and its practical implementation. Each step included in the model is explained in detail to provide a complete understanding of the workflow and how the analysis was carried out.
 
 ## Background
 
@@ -30,12 +32,12 @@ Setting triggers is one of the cornerstones of the Forecast-based Financing syst
 
 # Functionality of the Workflow
 
-The Trigger Process concept is displayed in the figure below. 
+The Trigger Process concept is displayed in the figure below.
 
-```{figure} /fig/MAD_model_concept.png
+```{figure} /fig/MAD_Model_concept.png
 ---
 width: 1000px
-name: fig-trigger-concept
+name: fig-model-concept
 align: center
 ---
 ```
@@ -58,6 +60,20 @@ The QGIS project and QGIS model have been created using QGIS version 3.40.9 (LTR
 ## Available Data
 
 For the trigger mechanism to work properly we currently use different datasets: data that we assume to be static in the near term, and variable data which describe the datasets that will be checked for triggering on a regular basis depending on the occurrence of anticipated cyclone events. 
+
+::::{admonition} Download the data and project files
+:class: note
+
+The QGIS project file, the model, and the datasets required for the model can be downloaded from HeiGITs Gitlab here:
+
+:::{card}
+:class-card: sd-text-center sd-rounded-2 sd-border-1
+:link: https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar/-/tree/68e58a254f12406101a398e895436ccc198f8938/AA_Cyclone_Monitoring_Trigger_MAD
+Download the project
+:::
+
+::::
+
 
 ### Fixed Data
 
