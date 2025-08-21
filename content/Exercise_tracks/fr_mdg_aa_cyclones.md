@@ -1,12 +1,9 @@
-# Exercise Track: Anticipatory Action Analysis for Cyclones in Madagascar
+# Piste d'Exercice : Analyse d’Action Anticipative pour les Cyclones à Madagascar
 
 
-This exercise track focuses on the preliminary assessment of a cyclone event in Madagascar. The goal is to create 
-an analytical workflow as a QGIS model that estimates the exposed population, exposed infrastructure, and exposed 
-agriculture land. Additionally, the accessibility of exposed regions can be assessed using pre-calculated 
-isochrones. 
-In this track, you will build an analytical workflow as a QGIS model and visualise the results using map templates 
-and style files. 
+Cette piste d’exercice se concentre sur l’évaluation préliminaire d’un événement cyclonique à Madagascar. L’objectif est de créer un flux de travail analytique sous forme de modèle QGIS permettant d’estimer la population exposée, les infrastructures exposées et les terres agricoles exposées. De plus, l’accessibilité des régions exposées peut être évaluée à l’aide d’isochrones pré-calculées.
+Dans cette piste, vous construirez un flux de travail analytique sous forme de modèle QGIS et visualiserez les résultats à l’aide de modèles de cartes et de fichiers de style.
+
 
 ::::{admonition} French version - Version française
 :class:
@@ -16,14 +13,14 @@ The french version of this exercise track can be found [here]()
 La version française de cet article se trouve [ici]()
 
 :::{card}
-
-
+:link:
+Version française
 :::
 
 ::::
 
 ::::{card} 
-Context
+Contexte
 ^^^
 
 ```{figure} /fig/IFRC-icons-colour_SURGE.png
@@ -43,82 +40,95 @@ The goal is to prepare an end-to-end analysis and visualization workflow that ca
 
 :::{card}
 :link:
-__Exercise 1: Estimating the Exposed Population - Aina's Manual Approach (Module 5)__
+__Exercice 1 : Estimation de la population exposée – L’approche manuelle d’Aina (Module 5)__
 ^^^
 
+- importation des jeux de données dans QGIS
 
-- importing datasets into QGIS
-- reprojecting layers
-- buffering vector layers
-- clipping raster layers
-- calculating zonal statistics
-- applying graduated classification to results
+- reprojection des couches
 
+- création de zones tampons autour des couches vectorielles
+
+- découpage des couches raster
+
+- calcul des statistiques zonales
+
+- application d’une classification graduée aux résultats
 
 :::
 
 :::{card}
-:link: 
-__Exercise 2: Automation of Exposed Population Estimation – Aina's Model (Module 7)__
+:link:
+__Exercice 2 : Automatisation de l’estimation de la population exposée – Le modèle d’Aina (Module 7)__
 ^^^
 
-- Using the model builder
-- reprojecting layers
-- buffering vector layers
-- clipping raster layers
-- calculating zonal statistics
-- applying graduated classification to results
+- utilisation du générateur de modèles
+
+- reprojection des couches
+
+- création de zones tampons autour des couches vectorielles
+
+- découpage des couches raster
+
+- calcul des statistiques zonales
+
+- application d’une classification graduée aux résultats
 
 :::
 
 :::{card}
-:link: 
-__Exercise 3: Identifying Affected Health Facilities and Schools – Aina Adds More Layers (Module 7)__
+:link:
+__Exercice 3 : Identification des établissements de santé et écoles affectés – Aina ajoute des couches (Module 7)__
 ^^^
 
-- extending the model 
-- Counting points in polygon
-- using the field calculator
+- extension du modèle
+
+- comptage des points dans les polygones
+
+- utilisation de la calculatrice de champs
 
 :::
 
 :::{card}
-:link: 
-__Exercise 4: Visualizing Cyclone Impact Results – Aina Styles Her Layers (Module 4)__
+:link:
+__Exercice 4 : Visualisation des résultats d’impact du cyclone – Aina applique des styles à ses couches (Module 4)__
 ^^^
 
-- using the styling panel
-- applying style files to layers
-- saving style files
+- utilisation du panneau de style
+
+- application de fichiers de style aux couches
+
+- enregistrement de fichiers de style
 
 :::
 
 :::{card}
-:link: 
-__Exercise 5: Quick Map Creation – Aina Uses Map Templates (Module 4)__
+:link:
+__Exercice 5 : Création rapide de cartes – Aina utilise des modèles de carte (Module 4)__
 ^^^
 
-- using the print layout composer to create a map
-- using map templates
-- using attribtue tables in the print layout composer
+- utilisation du composeur de mise en page pour créer une carte
+
+- utilisation de modèles de carte
+
+- utilisation des tables attributaires dans le composeur de mise en page
 
 :::
 
 :::{card}
-__Exercise 6: Exporting Model Results for the Operations Team (Module 7)__
+__Exercice 6 : Exportation des résultats du modèle pour l’équipe des opérations (Module 7)__
 ^^^
 
-- expanding the model
-- joining model results
-- exporting the model output in spreadsheet (.csv) format
+- extension du modèle
+- jointure des résultats du modèle
+- exportation des résultats du modèle au format tableur (.csv)
 
 :::
 
 :::{card}
-__Exercise 7: Reachability of health Posts from CRM Warehouses__
+__Exercice 7 : Accessibilité des postes de santé depuis les entrepôts de la CRM__
 ^^^
 
-- Filter 
+- Filtrage des jeux de données
 
 :::
-
