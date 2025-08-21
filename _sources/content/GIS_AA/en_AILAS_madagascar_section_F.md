@@ -1,5 +1,7 @@
 # Camera Usage Guide: AILAS Project
 
+This documentation provides instructions on how to set up and use the GoPro cameras for the in field aquisition, including detailed instructions on all necessary steps, checklists for the start and end of data aquisition and tips for troubleshooting.
+
 ## Equipment Checklist
 
 Before departure, ensure you have the following:

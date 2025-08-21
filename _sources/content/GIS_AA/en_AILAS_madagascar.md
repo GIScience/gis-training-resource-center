@@ -1,7 +1,7 @@
 🚧This part of training platform is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
 # AI Logistic Awareness System (AILAS) Street View image collection Field Experiments
-This documentation aims to consolidate all information regarding the Street View image collection field experiments for AILAS and give a consise overview over the AILAS project. It focuses on the process of collecting Street View images and is intended for use by participants in the experiments as a practical guideline.
+This documentation aims to consolidate all information regarding the Street View image collection field experiments for AILAS and give a consise overview over the AILAS project. It focuses on the process of collecting Street View images and is intended for use by participants in the experiments as a practical guideline. The sub sections "Camera Usage Guide: AILAS Project" __[Camera Usage Guide: AILAS Project](/en_AILAS_madagascar_section_F.md)__ and __[Upload Guide](/en_AILAS_madagascar_section_J.md)__ provide detailed instructions on the camera setup and usage for in field data aquisition and on the upload of the generated data to a cloud.
 
 ## The AILAS Project
 AILAS is a planned, weather-adaptive routing service that helps people to plan trips on unpaved roads by showing which road segments are currently passable. It combines fresh street-level images with rainfall, soil moisture, terrain and other openly available geodata, and then delivers practical route suggestions through the openrouteservice (ORS) platform. The goal is to reduce delays and risks in humanitarian operations and other logistics, especially in regions like Madagascar where many roads are unpaved. 
@@ -33,21 +33,6 @@ Conceptual depiction of road surface properties the deep learning model could de
 ## Experiment Goal
 This first test run in Madagascar aims to gain hands-on experience with camera handling, image quality, GPS accuracy, and the stability of the upload pipeline—then collect structured feedback from CRM teams on what works and what needs to change. We will also start building a local image base (repeated passes of the same tracks in different weather) that can be used later to train and validate the AILAS model. A secondary goal is to document a simple end-to-end workflow—from mounting the camera, driving and recording, to uploading to Panoramax and confirming that images appear correctly—so future teams can follow the same steps. The insights from this test will shape equipment choices, data volume expectations, and standard operating procedures for larger deployments and provide a first data set to develop the planned deep learning model.
 
-
-
-
-
-## Panoramax
-
-### What is Panoramax?
-Introduction to the Panoramax platform and its role in the project (image storage, processing, etc.).
-
-
-### Panoramax Features
-Key features of Panoramax that are relevant for the project (e.g., image organization, access controls, and analytics).
-
-### Data Security
-Information on how Panoramax ensures the security of the collected data.
 
 
 
