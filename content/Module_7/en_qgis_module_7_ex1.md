@@ -295,7 +295,7 @@ Visualisation de la population exposée en cinq classes.
 ```
 
 
-## Task 2: Automatisation of Estimating Exposed Population – Aina's Model
+## Task 2: Automation of Exposed Population Estimation – Aina's Model
 
 After manually estimating exposed populations in past cyclone seasons, Aina has decided to prepare an **automated model** using the **QGIS Graphical Modeller**. This will help her move faster and avoid repeating the same steps manually each time a cyclone is forecasted.
 
