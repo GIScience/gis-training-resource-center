@@ -319,8 +319,6 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
-
-
 <li class="toctree-l1"><a class="reference internal" href="fr_qgis_cyclone_trigger_madagascar.html">Workflow de déclenchement en QGIS pour Madagascar</a></li>
 
 
@@ -575,21 +573,19 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#monitoring-data">Monitoring Data</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estimating-the-impact-of-the-cyclone-using-the-qgis-model">Estimating the impact of the cyclone using the QGIS model</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#functionality-of-the-model">Functionality of the model</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-run-the-model">How to run the model</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-explanation-of-the-folder-structure">Step 1: Explanation of the folder structure</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-open-the-project-in-qgis-and-load-the-model-in-the-qgis-model-designer">Step 2: Open the project in QGIS and load the model in the QGIS Model Designer</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#opening-the-model-in-qgis">Opening the model in QGIS</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#estimating-the-impact-of-the-cyclone-using-the-qgis-model">Estimating the impact of the cyclone using the QGIS model</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functionality-of-the-model">Functionality of the model</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-run-the-model">How to run the model</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-explanation-of-the-folder-structure">Step 1: Explanation of the folder structure</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-open-the-project-in-qgis-and-load-the-model-in-the-qgis-model-designer">Step 2: Open the project in QGIS and load the model in the QGIS Model Designer</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#opening-the-model-in-qgis">Opening the model in QGIS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-run-the-model">Step 3: Run the model</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-run-the-model">Step 3: Run the model</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-the-map-reports-using-the-map-templates">Creating the map reports using the map templates</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualization-and-styling-of-the-model-outputs-and-creating-the-print-map">Visualization and Styling of the Model Outputs and creating the Print Map</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-the-map-reports-using-the-map-templates">Creating the map reports using the map templates</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualization-and-styling-of-the-model-outputs-and-creating-the-print-map">Visualization and Styling of the Model Outputs and creating the Print Map</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map-1-cyclone-impact-overview-affected-districts-event-extent-and-warehouse-locations">Map 1: Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#styling-of-the-layers">Styling of the layers</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#making-the-print-layout">Making the Print Layout</a></li>
@@ -628,8 +624,8 @@ document.write(`
 <!-- Maybe have a final look over introduction and all the official stuff which should be included in the documentation -->
 <div class="note admonition">
 <p class="admonition-title">French Translation </p>
-<p>The french version of this page can be found <a class="reference internal" href="fr_qgis_cyclone_trigger_madagascar.html"><span class="doc std std-doc">here</span></a></p>
-<p>La version française de cet article se trouve <a class="reference internal" href="fr_qgis_cyclone_trigger_madagascar.html"><span class="doc std std-doc">ici</span></a></p>
+<p>The french version of this page can be found <a class="reference internal" href="fr_qgis_cyclone_trigger_madagascar.html"><span class="doc std std-doc">here</span></a>.</p>
+<p>La version française de cet article se trouve <a class="reference internal" href="fr_qgis_cyclone_trigger_madagascar.html"><span class="doc std std-doc">ici</span></a>.</p>
 </div>
 <p>The QGIS workflow presented in this article was developed in the framework of the Anticipatory-Action (AA) Project of the Croix-Rouge Malagasy (CRM), the German Red Cross (GRC) and the Heidelberg Institute for Geoinformation Technology (HeiGIT).</p>
 <p>The workflow is almost fully automated through a QGIS model, requiring no manual intervention. The chapter Automated Trigger Workflow outlines the process and its practical implementation. Each step included in the model is explained in detail to provide a complete understanding of the workflow and how the analysis was carried out.</p>
@@ -651,7 +647,7 @@ document.write(`
 <h1>Functionality of the Workflow<a class="headerlink" href="#functionality-of-the-workflow" title="Permalink to this heading">#</a></h1>
 <p>The Trigger Process concept is displayed in the figure below.</p>
 <figure class="align-center" id="fig-trigger-concept">
-<a class="reference internal image-reference" href="../../_images/MAD_Trigger_concept.png"><img alt="../../_images/MAD_Trigger_concept.png" src="../../_images/MAD_Trigger_concept.png" style="width: 1000px;" /></a>
+<a class="reference internal image-reference" href="../../_images/MAD_model_concept.png"><img alt="../../_images/MAD_model_concept.png" src="../../_images/MAD_model_concept.png" style="width: 1000px;" /></a>
 </figure>
 <p>The provided QGIS project contains the necessary layers and a QGIS model file to perform an assessment of the potential impact of the predicted cyclone event. The analysis workflow will be run in the QGIS model, which automates the steps for assessing the impact of a tropical cyclone event.  It integrates cyclone storm track data with administrative boundaries, population data, infrastructure, and service locations to identify and quantify exposed areas and resources.
 Based on the cyclone forecast by Météo Madagascar, the model calculates the area likely to be  exposed to the cyclone, the potentially exposed population, number of exposed buildings, exposed agricultural land, and potentially exposed health and education facilities.</p>
@@ -729,12 +725,11 @@ Based on the cyclone forecast by Météo Madagascar, the model calculates the ar
 </div>
 </section>
 </section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="estimating-the-impact-of-the-cyclone-using-the-qgis-model">
-<h1>Estimating the impact of the cyclone using the QGIS model<a class="headerlink" href="#estimating-the-impact-of-the-cyclone-using-the-qgis-model" title="Permalink to this heading">#</a></h1>
+<section id="estimating-the-impact-of-the-cyclone-using-the-qgis-model">
+<h2>Estimating the impact of the cyclone using the QGIS model<a class="headerlink" href="#estimating-the-impact-of-the-cyclone-using-the-qgis-model" title="Permalink to this heading">#</a></h2>
 <p>As explained at the start of this chapter the developed trigger workflow is done automatically by a QGIS model. In this chapter we will explain its functionality and in a subsequent step it is explained how to run the automated model.</p>
 <section id="functionality-of-the-model">
-<h2>Functionality of the model<a class="headerlink" href="#functionality-of-the-model" title="Permalink to this heading">#</a></h2>
+<h3>Functionality of the model<a class="headerlink" href="#functionality-of-the-model" title="Permalink to this heading">#</a></h3>
 <!-- Have a final look over this section to see if all the important information is covered -->
 <p>The following key processing steps are run inside the model:</p>
 <ol class="arabic simple">
@@ -770,11 +765,11 @@ These datasets are combined into a table, summarizing exposed infrastructure.</p
 -->
 </section>
 <section id="how-to-run-the-model">
-<h2>How to run the model<a class="headerlink" href="#how-to-run-the-model" title="Permalink to this heading">#</a></h2>
+<h3>How to run the model<a class="headerlink" href="#how-to-run-the-model" title="Permalink to this heading">#</a></h3>
 <p>The <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html#the-qgis-model-designer">QGIS Model Designer</a> is a visual tool that allows users to create and edit a workflow with all tools available in QGIS that can be used repeatedly in a simple and time-efficient manner, while ensuring reproducibility. It provides a graphical interface to build workflows by connecting geoprocessing tools and algorithms. The user can define inputs, outputs, and the flow of data between different processing steps.</p>
 </section>
 <section id="step-1-explanation-of-the-folder-structure">
-<h2>Step 1: Explanation of the folder structure<a class="headerlink" href="#step-1-explanation-of-the-folder-structure" title="Permalink to this heading">#</a></h2>
+<h3>Step 1: Explanation of the folder structure<a class="headerlink" href="#step-1-explanation-of-the-folder-structure" title="Permalink to this heading">#</a></h3>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_workflow_Step1.png"><img alt="../../_images/MAD_Trigger_workflow_Step1.png" src="../../_images/MAD_Trigger_workflow_Step1.png" style="width: 1000px;" /></a>
 </figure>
@@ -816,7 +811,7 @@ These datasets are combined into a table, summarizing exposed infrastructure.</p
 </table>
 </section>
 <section id="step-2-open-the-project-in-qgis-and-load-the-model-in-the-qgis-model-designer">
-<h2>Step 2: Open the project in QGIS and load the model in the QGIS Model Designer<a class="headerlink" href="#step-2-open-the-project-in-qgis-and-load-the-model-in-the-qgis-model-designer" title="Permalink to this heading">#</a></h2>
+<h3>Step 2: Open the project in QGIS and load the model in the QGIS Model Designer<a class="headerlink" href="#step-2-open-the-project-in-qgis-and-load-the-model-in-the-qgis-model-designer" title="Permalink to this heading">#</a></h3>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_workflow_Step2.png"><img alt="../../_images/MAD_Trigger_workflow_Step2.png" src="../../_images/MAD_Trigger_workflow_Step2.png" style="width: 1000px;" /></a>
 </figure>
@@ -871,7 +866,7 @@ This group is used to create the CRM warehouse accessibility matrix map.
 It is also possible to add a specific warehouse isochrone to one of the previous maps. We will cover this further below.</p>
 <hr class="docutils" />
 <section id="opening-the-model-in-qgis">
-<h3>Opening the model in QGIS<a class="headerlink" href="#opening-the-model-in-qgis" title="Permalink to this heading">#</a></h3>
+<h4>Opening the model in QGIS<a class="headerlink" href="#opening-the-model-in-qgis" title="Permalink to this heading">#</a></h4>
 <p>Let’s open the QGIS model:</p>
 <ol class="arabic simple">
 <li><p>In the tob bar of your QGIS window, navigate to <code class="docutils literal notranslate"><span class="pre">Processing</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Model</span> <span class="pre">Designer</span></code>. A new window will open. This is the model designer.</p></li>
@@ -916,7 +911,7 @@ It is also possible to add a specific warehouse isochrone to one of the previous
 </section>
 </section>
 <section id="step-3-run-the-model">
-<h2>Step 3: Run the model<a class="headerlink" href="#step-3-run-the-model" title="Permalink to this heading">#</a></h2>
+<h3>Step 3: Run the model<a class="headerlink" href="#step-3-run-the-model" title="Permalink to this heading">#</a></h3>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/MAD_Trigger_workflow_Step3.png"><img alt="../../_images/MAD_Trigger_workflow_Step3.png" src="../../_images/MAD_Trigger_workflow_Step3.png" style="width: 1000px;" /></a>
 </figure>
@@ -999,10 +994,10 @@ Video: Input and output Model<div class="sd-summary-down docutils">
 </div>
 </section>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="creating-the-map-reports-using-the-map-templates">
-<h1>Creating the map reports using the map templates<a class="headerlink" href="#creating-the-map-reports-using-the-map-templates" title="Permalink to this heading">#</a></h1>
+<section id="creating-the-map-reports-using-the-map-templates">
+<h2>Creating the map reports using the map templates<a class="headerlink" href="#creating-the-map-reports-using-the-map-templates" title="Permalink to this heading">#</a></h2>
 <section id="visualization-and-styling-of-the-model-outputs-and-creating-the-print-map">
-<h2>Visualization and Styling of the Model Outputs and creating the Print Map<a class="headerlink" href="#visualization-and-styling-of-the-model-outputs-and-creating-the-print-map" title="Permalink to this heading">#</a></h2>
+<h3>Visualization and Styling of the Model Outputs and creating the Print Map<a class="headerlink" href="#visualization-and-styling-of-the-model-outputs-and-creating-the-print-map" title="Permalink to this heading">#</a></h3>
 <!-- Is a video necessary for this chapter? -->
 <div class="note admonition">
 <p class="admonition-title">Output maps</p>
@@ -1048,6 +1043,7 @@ align: center
 __Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
 
 -->
+</section>
 <section id="map-1-cyclone-impact-overview-affected-districts-event-extent-and-warehouse-locations">
 <h3>Map 1: Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations<a class="headerlink" href="#map-1-cyclone-impact-overview-affected-districts-event-extent-and-warehouse-locations" title="Permalink to this heading">#</a></h3>
 <figure class="align-center">
@@ -1947,21 +1943,19 @@ Now the image can be found in the result folder.</p></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#monitoring-data">Monitoring Data</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estimating-the-impact-of-the-cyclone-using-the-qgis-model">Estimating the impact of the cyclone using the QGIS model</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#functionality-of-the-model">Functionality of the model</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-run-the-model">How to run the model</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-explanation-of-the-folder-structure">Step 1: Explanation of the folder structure</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-open-the-project-in-qgis-and-load-the-model-in-the-qgis-model-designer">Step 2: Open the project in QGIS and load the model in the QGIS Model Designer</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#opening-the-model-in-qgis">Opening the model in QGIS</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#estimating-the-impact-of-the-cyclone-using-the-qgis-model">Estimating the impact of the cyclone using the QGIS model</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functionality-of-the-model">Functionality of the model</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-run-the-model">How to run the model</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-explanation-of-the-folder-structure">Step 1: Explanation of the folder structure</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-open-the-project-in-qgis-and-load-the-model-in-the-qgis-model-designer">Step 2: Open the project in QGIS and load the model in the QGIS Model Designer</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#opening-the-model-in-qgis">Opening the model in QGIS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-run-the-model">Step 3: Run the model</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-run-the-model">Step 3: Run the model</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-the-map-reports-using-the-map-templates">Creating the map reports using the map templates</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualization-and-styling-of-the-model-outputs-and-creating-the-print-map">Visualization and Styling of the Model Outputs and creating the Print Map</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-the-map-reports-using-the-map-templates">Creating the map reports using the map templates</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualization-and-styling-of-the-model-outputs-and-creating-the-print-map">Visualization and Styling of the Model Outputs and creating the Print Map</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map-1-cyclone-impact-overview-affected-districts-event-extent-and-warehouse-locations">Map 1: Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#styling-of-the-layers">Styling of the layers</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#making-the-print-layout">Making the Print Layout</a></li>
