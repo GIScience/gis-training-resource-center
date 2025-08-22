@@ -74,6 +74,7 @@ parts:
         sections:
           - file: content/Exercise_tracks/en_larkana_flood_response.md
           - file: content/Exercise_tracks/en_mdg_aa_cyclones.md
+          - file: content/Exercise_tracks/fr_mdg_aa_cyclones.md
   - caption: Wiki
     chapters:
       - file: content/Wiki/en_qgis_qgis_basics_wiki.md
