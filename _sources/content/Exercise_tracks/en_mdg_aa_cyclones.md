@@ -11,14 +11,14 @@ and style files.
 ::::{admonition} French version - Version française
 :class: note
 
-The french version of this exercise track can be found [here](/content/Exercise_tracks/fr_mdg_aa_cyclones.md)
+The french version of this exercise track can be found here: 
 
-La version française de cet article se trouve [ici]()
+La version française de cet article se trouve ici:
 
 ```{card}
 :class-card: sd-text-center sd-border-1
-:link: 
-
+:link: https://giscience.github.io/gis-training-resource-center/content/Exercise_tracks/fr_mdg_aa_cyclones.html
+__Piste d'Exercice : Analyse d’Action Anticipative pour les Cyclones à Madagascar__ 
 ```
 
 ::::
