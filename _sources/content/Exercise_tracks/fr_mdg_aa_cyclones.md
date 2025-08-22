@@ -50,7 +50,7 @@ anticipative rapide et fondée sur les données, avant que le cyclone n’atteig
 ::::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_module_5_mdg_aa_ex_1.html 
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_5/fr_qgis_module_5_mdg_aa_ex_1.html 
 __Exercice 1 : Estimation de la population exposée – L’approche manuelle d’Aina (Module 5)__
 ^^^
 
