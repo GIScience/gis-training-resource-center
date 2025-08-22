@@ -29,10 +29,23 @@ name: IFRC Surge Icon
 ---
 ```
 
-Madagascar is frequently exposed to intense tropical cyclones, which can lead to widespread damage, displacement, and loss of life. Anticipatory analysis is essential to reduce the impact of these extreme weather events. By using forecast data and geospatial tools to predict the likely areas of impact, humanitarian actors and local authorities can take early action, such as pre-positioning supplies and issuing warnings, to protect lives and livelihoods before disaster strikes. This proactive approach strengthens preparedness and response capacities, ultimately saving time, resources, and lives.
+Madagascar est fréquemment exposé à des cyclones tropicaux intenses, qui peuvent entraîner des dégâts 
+considérables, des déplacements de population et des pertes humaines. Une analyse anticipative est essentielle pour 
+réduire l’impact de ces événements météorologiques extrêmes. En utilisant des données de prévision et des outils 
+géospatiaux pour anticiper les zones susceptibles d’être touchées, les acteurs humanitaires et les autorités 
+locales peuvent prendre des mesures précoces, telles que le prépositionnement de stocks ou la diffusion d’alertes, 
+afin de protéger les vies humaines et les moyens de subsistance avant que la catastrophe ne survienne. Cette 
+approche proactive renforce les capacités de préparation et de réponse, tout en permettant de gagner du temps, de 
+préserver des ressources et de sauver des vies.
 
-Aina, the GIS expert at the Malagasy Red Cross (CRM), is preparing for the upcoming cyclone season. She wants to improve her team’s ability to act quickly once a storm is forecasted by automating key analyses in QGIS. These include estimating exposed populations, identifying impacted services like health and education, and assessing whether health posts can be reached from key warehouses within a critical 10-hour window.
-The goal is to prepare an end-to-end analysis and visualization workflow that can support fast, data-driven anticipatory action before a cyclone makes landfall.
+Aina, experte SIG à la Croix-Rouge Malagasy (CRM), se prépare pour la prochaine saison cyclonique. Elle souhaite 
+renforcer la capacité de son équipe à réagir rapidement dès qu’un cyclone est prévu, en automatisant des analyses 
+clés dans QGIS. Celles-ci incluent l’estimation des populations exposées, l’identification des services impactés 
+comme la santé et l’éducation, ainsi que l’évaluation de l’accessibilité des postes de santé depuis les entrepôts 
+stratégiques, dans une fenêtre critique de 10 heures.
+
+L’objectif est de mettre en place un flux de travail complet d’analyse et de visualisation qui soutienne une action 
+anticipative rapide et fondée sur les données, avant que le cyclone n’atteigne les côtes.
 
 ::::
 
@@ -135,3 +148,4 @@ __Exercice 7 : Accessibilité des postes de santé depuis les entrepôts de la C
 - Visualisation de l’accessibilité des établissements de santé
 
 :::
+
