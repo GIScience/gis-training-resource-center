@@ -8,7 +8,7 @@
 ::::
 
 
-# Exercise5: Quick Map Creation - Aina Uses Map Templates
+# Exercise 5: Quick Map Creation - Aina Uses Map Templates
 
 ## Characteristics of the exercise
 
