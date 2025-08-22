@@ -10,8 +10,7 @@
 # Piste d'Exercice : Analyse d’Action Anticipative pour les Cyclones à Madagascar
 
 
-## Caractéristiques de l'exercise
-
+## Caractéristiques
 
 
 ::::{grid} 2
@@ -680,7 +679,7 @@ Définir une nouvelle entrée de modèle: couche vectorielle de points représen
 :::
 ::::
 
-3. **Compter tous les établissements de santé par district (ADM2)**
+4. **Compter tous les établissements de santé par district (ADM2)**
   - Dans le panneau **Algorithmes**, cherchez `Compter les points dans les polygones`
   - Configuration: 
     - Description: `Comptez le nombre d’établissements de santé dans chaque district`
@@ -696,7 +695,7 @@ align: center
 ---
 Configuration de l'opération : compter le nombre d'établissements de santé dans chaque district.
 ```    
-1. **Compter tous les établissements d’enseignement par Niveau 2**  
+5. **Compter tous les établissements d’enseignement par Niveau 2**  
    - Ajouter une autre étape **Compter les points dans un polygone**.
    - Configuration:
      - Ajouter une description: `Comptez le nombre d'établissements d’enseignement dans chaque district`
@@ -715,7 +714,7 @@ align: center
 ---
 Configuration de l'opération: compter le nombre d'établissements scolaires dans chaque district.
 ```
-5. **Intersection des établissements de santé avec la zone tampon du cyclone**  
+6. **Intersection des établissements de santé avec la zone tampon du cyclone**  
    - Depuis le panneau **Algorithmes**, recherchez **Intersection**.
    - Dans la fenêtre de configuration:
    - Ajouter une description: 
@@ -733,7 +732,7 @@ align: center
 ---
 Configuration de l'opération : intersecter les établissements de santé avec la zone d'impact du cyclone.
 ```
-6. **Intersection des établissements d’éducation avec la zone tampon du cyclone**  
+7. **Intersection des établissements d’éducation avec la zone tampon du cyclone**  
    - Ajouter un autre algorithme **Intersection**.
    - Configuration:
      - Ajouter une description:
@@ -751,7 +750,7 @@ align: center
 ---
 Configuration de l'opération: intersecter les établissements de education avec la zone d'impact du cyclone.
 ```
-1. **Compter les établissements de santé affectés par Niveau 2**  
+8. **Compter les établissements de santé affectés par Niveau 2**  
    - Ajouter **Compter les points dans un polygone**
    - Configuration:
      - Ajouter une description: 
@@ -773,7 +772,7 @@ align: center
 ---
 Configuration de l'opération: compter les établissements de santé touchés par district.
 ```
-1. **Compter les établissements d’enseignement affectés par Niveau 2**  
+9. **Compter les établissements d’enseignement affectés par Niveau 2**  
    - Ajouter **Compter les points dans un polygone**
    - Configuration:
      - Ajouter une description: 
@@ -794,7 +793,7 @@ align: center
 ---
 Configuration de l'opération: compter les établissements de santé touchés par district.
 ```
-1. **Calculer le pourcentage d’établissements de santé affectés**
+10. **Calculer le pourcentage d’établissements de santé affectés**
 Pour calculer le pourcentage d’établissements de santé affectés par zone administrative, utilisez la **Calculatrice de champ**:
 - Ajouter la **Calculatrice de champ**:
    - Configuration:
@@ -829,7 +828,7 @@ Configuration de l’opération: calculer le pourcentage d’établissements de 
 ```
 
 
-10. **Calculer le pourcentage d’établissements d’enseignement affectés**  
+11. **Calculer le pourcentage d’établissements d’enseignement affectés**  
 
 Pour calculer le pourcentage d’établissements d’enseignement affectés par zone administrative, utilisez la **Calculatrice de champ**:  
 - Ajouter la **Calculatrice de champ**:  
@@ -866,12 +865,12 @@ align: center
 Configuration de l’opération: calculer le pourcentage d’établissements d’éducation touchés par district.
 ```
 
-1.  **Valider et enregistrer votre modèle étendu**  
+12.  **Valider et enregistrer votre modèle étendu**  
    - Cliquez sur le bouton ✔️ **Valider le modèle** (sous `Modèle` dans le menu en haut) pour vérifier les erreurs.
    - Enregistrez à nouveau sous:  
      **`Estimate_Exposed_Population_Health_Education.model3`**
 
-2.  **Exécuter le modèle**
+13.  **Exécuter le modèle**
    - Cliquez sur le bouton ▶️ **Exécuter** en haut de la fenêtre du Modélisateur Graphique.
    - Dans la boîte de dialogue:
      - Sélectionnez les couches d’entrée nécessaires:
