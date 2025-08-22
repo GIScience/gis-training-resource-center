@@ -88,7 +88,7 @@ __Exercice 2 : Automatisation de l’estimation de la population exposée – Le
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_5/en_module_7_mdg_aa_ex_3.html
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_5/fr_module_7_mdg_aa_ex_3.html
 __Exercice 3 : Identification des établissements de santé et écoles affectés – Aina ajoute des couches (Module 7)__
 ^^^
 
@@ -101,7 +101,7 @@ __Exercice 3 : Identification des établissements de santé et écoles affectés
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_4/en_module_4_mdg_aa_ex_4.html
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_4/fr_module_4_mdg_aa_ex_4.html
 __Exercice 4 : Visualisation des résultats d’impact du cyclone – Aina applique des styles à ses couches (Module 4)__
 ^^^
 
@@ -114,7 +114,7 @@ __Exercice 4 : Visualisation des résultats d’impact du cyclone – Aina appli
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_4/en_module_4_mdg_aa_ex_5.html
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_4/fr_module_4_mdg_aa_ex_5.html
 __Exercice 5 : Création rapide de cartes – Aina utilise des modèles de carte (Module 4)__
 ^^^
 
