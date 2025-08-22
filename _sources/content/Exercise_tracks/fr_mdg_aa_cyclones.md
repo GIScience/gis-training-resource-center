@@ -127,7 +127,7 @@ __Exercice 5 : Création rapide de cartes – Aina utilise des modèles de carte
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_7/en_module_7_mdg_aa_ex_6.html
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_7/fr_module_7_mdg_aa_ex_6.html
 __Exercice 6 : Exportation des résultats du modèle pour l’équipe des opérations (Module 7)__
 ^^^
 
@@ -138,7 +138,7 @@ __Exercice 6 : Exportation des résultats du modèle pour l’équipe des opéra
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_9/en_module_9_mdg_aa_ex_7.html
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_9/fr_qgis_module_9_mdg_aa_ex_7.html
 __Exercice 7 : Accessibilité des postes de santé depuis les entrepôts de la CRM__
 ^^^
 

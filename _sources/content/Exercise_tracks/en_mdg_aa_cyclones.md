@@ -120,7 +120,7 @@ __Exercise 6: Exporting Model Results for the Operations Team (Module 7)__
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_9/en_module_9_mdg_aa_ex_7.html
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_9/en_qgis_module_9_mdg_aa_ex_7.html
 __Exercise 7: Reachability of health Posts from CRM Warehouses__
 ^^^
 
