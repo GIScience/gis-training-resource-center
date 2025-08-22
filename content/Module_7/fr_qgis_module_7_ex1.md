@@ -7,9 +7,8 @@
 
 ::::
 
-# Exercice 1: Automatisation
+# Piste d'Exercice : Analyse d’Action Anticipative pour les Cyclones à Madagascar
 
-🚧Cette partie de la plateforme de formation est en construction et ne peut pas être partagée ou publée! 🚧
 
 ## Caractéristiques de l'exercise
 
