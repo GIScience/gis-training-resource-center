@@ -11,7 +11,7 @@ and style files.
 ::::{admonition} French version - Version française
 :class: note
 
-The french version of this exercise track can be found [here]()
+The french version of this exercise track can be found [here](/content/Exercise_tracks/fr_mdg_aa_cyclones.md)
 
 La version française de cet article se trouve [ici]()
 
@@ -76,7 +76,7 @@ __Exercise 2: Automation of Exposed Population Estimation – Aina's Model (Modu
 :::
 
 :::{card}
-:link: 
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_5/en_module_7_mdg_aa_ex_3.html
 __Exercise 3: Identifying Affected Health Facilities and Schools – Aina Adds More Layers (Module 7)__
 ^^^
 
@@ -87,7 +87,7 @@ __Exercise 3: Identifying Affected Health Facilities and Schools – Aina Adds M
 :::
 
 :::{card}
-:link: 
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_4/en_module_4_mdg_aa_ex_4.html
 __Exercise 4: Visualizing Cyclone Impact Results – Aina Styles Her Layers (Module 4)__
 ^^^
 
@@ -98,7 +98,7 @@ __Exercise 4: Visualizing Cyclone Impact Results – Aina Styles Her Layers (Mod
 :::
 
 :::{card}
-:link: 
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_4/en_module_4_mdg_aa_ex_5.html
 __Exercise 5: Quick Map Creation – Aina Uses Map Templates (Module 4)__
 ^^^
 
@@ -109,6 +109,7 @@ __Exercise 5: Quick Map Creation – Aina Uses Map Templates (Module 4)__
 :::
 
 :::{card}
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_7/en_module_7_mdg_aa_ex_6.html
 __Exercise 6: Exporting Model Results for the Operations Team (Module 7)__
 ^^^
 
@@ -119,10 +120,14 @@ __Exercise 6: Exporting Model Results for the Operations Team (Module 7)__
 :::
 
 :::{card}
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_9/en_module_9_mdg_aa_ex_7.html
 __Exercise 7: Reachability of health Posts from CRM Warehouses__
 ^^^
 
-- Filter 
+- filtering datasets
+- performing a accessibility analysis
+- updating datasets with new information
+- visualising the accessibility of healthsites
 
 :::
 
