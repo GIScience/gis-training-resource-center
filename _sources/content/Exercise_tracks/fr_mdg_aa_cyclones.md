@@ -8,13 +8,11 @@ Dans cette piste, vous construirez un flux de travail analytique sous forme de m
 ::::{admonition} French version - Version française
 :class:
 
-The french version of this exercise track can be found [here]()
-
-La version française de cet article se trouve [ici]()
+We offer an english version of this exercise track which can be found here: 
 
 :::{card}
-:link:
-Version française
+:link: https://giscience.github.io/gis-training-resource-center/content/Exercise_tracks/en_mdg_aa_cyclones.html
+English version
 :::
 
 ::::
@@ -39,7 +37,7 @@ The goal is to prepare an end-to-end analysis and visualization workflow that ca
 ::::
 
 :::{card}
-:link:
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_module_5_mdg_aa_ex_1.html 
 __Exercice 1 : Estimation de la population exposée – L’approche manuelle d’Aina (Module 5)__
 ^^^
 
@@ -58,7 +56,7 @@ __Exercice 1 : Estimation de la population exposée – L’approche manuelle d�
 :::
 
 :::{card}
-:link:
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_7/en_module_7_mdg_aa_ex_2.html 
 __Exercice 2 : Automatisation de l’estimation de la population exposée – Le modèle d’Aina (Module 7)__
 ^^^
 
@@ -77,7 +75,7 @@ __Exercice 2 : Automatisation de l’estimation de la population exposée – Le
 :::
 
 :::{card}
-:link:
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_5/en_module_7_mdg_aa_ex_3.html
 __Exercice 3 : Identification des établissements de santé et écoles affectés – Aina ajoute des couches (Module 7)__
 ^^^
 
@@ -90,7 +88,7 @@ __Exercice 3 : Identification des établissements de santé et écoles affectés
 :::
 
 :::{card}
-:link:
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_4/en_module_4_mdg_aa_ex_4.html
 __Exercice 4 : Visualisation des résultats d’impact du cyclone – Aina applique des styles à ses couches (Module 4)__
 ^^^
 
@@ -103,7 +101,7 @@ __Exercice 4 : Visualisation des résultats d’impact du cyclone – Aina appli
 :::
 
 :::{card}
-:link:
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_4/en_module_4_mdg_aa_ex_5.html
 __Exercice 5 : Création rapide de cartes – Aina utilise des modèles de carte (Module 4)__
 ^^^
 
@@ -116,6 +114,7 @@ __Exercice 5 : Création rapide de cartes – Aina utilise des modèles de carte
 :::
 
 :::{card}
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_7/en_module_7_mdg_aa_ex_6.html
 __Exercice 6 : Exportation des résultats du modèle pour l’équipe des opérations (Module 7)__
 ^^^
 
@@ -126,9 +125,13 @@ __Exercice 6 : Exportation des résultats du modèle pour l’équipe des opéra
 :::
 
 :::{card}
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_9/en_module_9_mdg_aa_ex_7.html
 __Exercice 7 : Accessibilité des postes de santé depuis les entrepôts de la CRM__
 ^^^
 
 - Filtrage des jeux de données
+- Réalisation d’une analyse d’accessibilité
+- Mise à jour des ensembles de données avec de nouvelles informations
+- Visualisation de l’accessibilité des établissements de santé
 
 :::
