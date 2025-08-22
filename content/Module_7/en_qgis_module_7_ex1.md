@@ -1383,6 +1383,9 @@ Résultats finaux du modèle exportés dans un tableau prêt à être utilisé.
 
 
 ## Task 7: Reachability of health Posts from CRM Warehouses
+
+__Context:__
+
 When a cyclone is forecast to make landfall, Aina works with the logistics and health teams to decide **where to send prepositioned medical kits**. However, not all CRM warehouses stock the needed items — only three do.
 
 To make fast, data-driven decisions, Aina wants to know **which health posts are reachable** from those warehouses **within 10 hours**. This analysis helps ensure that kits are sent to facilities **that can actually be reached in time**.
