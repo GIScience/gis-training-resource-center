@@ -585,7 +585,7 @@ width: 600 px
         ```md
         Zone exposée aux cyclones
         ```
-        * `relevant_warehouses` → renommer en
+        * `CRM_warehouses` → renommer en
         ```md
         Entrepôts concernés
         ```
@@ -701,7 +701,7 @@ Répétez ce processus pour les couches de sortie suivantes, ainsi que pour leur
 | Nom de la couche | Style | Remarques
 | ----- | --- | --- |
 |`Admin1_Impact_Assessment_Map`| `adm1_style.qml` | préchargé |
-|`CRM_warehouses` | `relevant_warehouses_style.qml` | résultat du modèle |
+|`CRM_warehouses` | `CRM_warehouses_style.qml` | résultat du modèle |
 |`exposed_cyclone_area`|`exposed_cyclone_area_style.qml`| résultat du modèle |
 |`cyclone_track`| `storm_track_cyclone_style.qml`| chargé par l'utilisateur |
 
@@ -728,7 +728,7 @@ La documentation couvre la carte d'évaluation de l'impact sur la population exp
 |`exposed_agricultural_landcover`| `exposed_agriculture_landcover_style.qml` | résultat du modèle |
 |`exposed_health_facilities_points`| `points_exposed_health_facilities_style.qml` | résultat du modèle |
 |`exposed_education_facilities_points`| `points_exposed_education_facilities_style.qml` | résultat du modèle |
-|`relevant_warehouses` | `relevant_warehouses_style.qml` | résultat du modèle |
+|`CRM_warehouses` | `CRM_warehouses_style.qml` | résultat du modèle |
 |`exposed_cyclone_area`|`exposed_cyclone_area_style.qml`| résultat du modèle |
 |`cyclone_track`| `storm_track_cyclone_style.qml`| chargé par l'utilisateur |
 <!--Move this somewhere else where it is easier to understand OR add pictures to illustrate the different maps?-->
@@ -796,9 +796,9 @@ Trajectoire prévue du cyclone
 ```md
 Zone exposée aux cyclones
 ```
-* `relevant_warehouses` → renommer en  
+* `CRM_warehouses` → renommer en  
 ```md
-Entrepôts concernés
+Entrepôts de la CRM
 ```
 * `Carte de fond : OpenStreetMap` → renommer en  
 ```md
@@ -824,9 +824,9 @@ Trajectoire prévue du cyclone
 ```md
 Zone exposée aux cyclones
 ```
-* `relevant_warehouses` → renommer en  
+* `CRM_warehouses` → renommer en  
 ```md
-Entrepôts concernés
+Entrepôts de la CRM
 ```
 * `Carte de fond : OpenStreetMap` → renommer en  
 ```md
@@ -852,9 +852,9 @@ Trajectoire prévue du cyclone
 ```md
 Zone exposée aux cyclones
 ```
-* `relevant_warehouses` → renommer en  
+* `CRM_warehouses` → renommer en  
 ```md
-Entrepôts concernés
+Entrepôts de la CRM
 ```
 * `Carte de fond : OpenStreetMap` → renommer en  
 ```md
@@ -880,9 +880,9 @@ Trajectoire prévue du cyclone
 ```md
 Zone exposée aux cyclones
 ```
-* `relevant_warehouses` → renommer en  
+* `CRM_warehouses` → renommer en  
 ```md
-Entrepôts concernés
+Entrepôts de la CRM
 ```
 * `Carte de fond : OpenStreetMap` → renommer en  
 ```md
@@ -908,9 +908,9 @@ Trajectoire prévue des cyclones
 ```md
 Zone cyclonique exposée
 ```
-* `relevant_warehouses` → renommer en  
+* `CRM_warehouses` → renommer en  
 ```md
-Entrepôts concernés
+Entrepôts de la CRM
 ```
 * `Carte de fond : OpenStreetMap` → renommer en  
 ```md
@@ -936,9 +936,9 @@ Trajectoire prévue du cyclone
 ```md
 Zone exposée aux cyclones
 ```
-* `relevant_warehouses` → renommer en  
+* `CRM_warehouses` → renommer en  
 ```md
-Entrepôts concernés
+Entrepôts de la CRM
 ```
 * `Carte de fond : OpenStreetMap` → renommer en  
 ```md
@@ -964,9 +964,9 @@ Trajectoire prévue du cyclone
 ```md
 Zone exposée aux cyclones
 ```
-* `relevant_warehouses` → renommer en  
+* `CRM_warehouses` → renommer en  
 ```md
-Entrepôts concernés
+Entrepôts de la CRM
 ```
 * `Background Map: OpenStreetMap` → renommer en  
 ```md

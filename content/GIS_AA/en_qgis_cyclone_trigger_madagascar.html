@@ -1013,9 +1013,9 @@ Video: Input and output Model<div class="sd-summary-down docutils">
 <!-- Is a video necessary for this chapter? -->
 <div class="note admonition">
 <p class="admonition-title">Output maps</p>
-<p>We will generate three different types of output maps to support the analysis:</p>
+<p>We will generate two different types of output maps to support the analysis:</p>
 <ul class="simple">
-<li><p>Map 1 will provide an cyclone impact overview of the <strong>affected districts, the extent of the cyclone event, and the locations of relevant warehouses</strong>.</p></li>
+<li><p>Map 1 will provide an cyclone impact overview of the <strong>affected districts, the extent of the cyclone event, and the locations of  warehouses</strong>.</p></li>
 <li><p>Map 2 will focus on the impact to infrastructure and population. We will create 5 different impact maps displaying the following information:</p>
 <ul>
 <li><p><strong>exposed population</strong></p></li>
@@ -1026,7 +1026,7 @@ Video: Input and output Model<div class="sd-summary-down docutils">
 </ul>
 </li>
 </ul>
-<p>Additionally, a map showing the <strong>warehouse isochrones</strong> for all 13 warehouses will be provided. The map and the map template can be found in the <strong>warehouse_isochrone_matrix</strong> folder.</p>
+<!---Additionally, a map showing the **warehouse isochrones** for all 13 warehouses will be provided. The map and the map template can be found in the **warehouse_isochrone_matrix** folder.-->
 </div>
 <p>We will create the maps in two steps:
 First, we will use the <strong><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel">layer styling panel</a></strong> and the <strong>layer style files (.qml)</strong> to adjust the visualisation of the layers on the map canvas.</p>
@@ -1097,7 +1097,7 @@ __Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-cent
 <td><p>pre-loaded</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouses</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">relevant_warehouses_style.qml</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouses_style.qml</span></code></p></td>
 <td><p>model output</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">exposed_cyclone_area</span></code></p></td>
@@ -1222,9 +1222,9 @@ __Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-cent
 </pre></div>
 </div>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">relevant_warehouses</span></code> → rename to</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouses</span></code> → rename to</p></li>
 </ul>
-<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Relevant Warehouses
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>CRM Warehouses
 </pre></div>
 </div>
 <ul class="simple">
@@ -1362,7 +1362,7 @@ Now the image can be found in the result folder.</p></li>
 <td><p>pre-loaded</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouses</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">relevant_warehouses_style.qml</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouses_style.qml</span></code></p></td>
 <td><p>model output</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">exposed_cyclone_area</span></code></p></td>
@@ -1420,7 +1420,7 @@ Now the image can be found in the result folder.</p></li>
 <td><p>model output</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">relevant_warehouses</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">relevant_warehouses_style.qml</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouses_style.qml</span></code></p></td>
 <td><p>model output</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">exposed_cyclone_area</span></code></p></td>
@@ -1530,9 +1530,9 @@ Exposed Population</label><div class="sd-tab-content docutils">
 </pre></div>
 </div>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">relevant_warehouses</span></code> → rename to</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouses</span></code> → rename to</p></li>
 </ul>
-<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Relevant Warehouses
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>CRM Warehouses
 </pre></div>
 </div>
 <ul class="simple">
@@ -1571,9 +1571,9 @@ Exposed Buildings </label><div class="sd-tab-content docutils">
 </pre></div>
 </div>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">relevant_warehouses</span></code> → rename to</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouses</span></code> → rename to</p></li>
 </ul>
-<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Relevant Warehouses
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>CRM Warehouses
 </pre></div>
 </div>
 <ul class="simple">
@@ -1612,9 +1612,9 @@ Exposed Health Facilities</label><div class="sd-tab-content docutils">
 </pre></div>
 </div>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">relevant_warehouses</span></code> → rename to</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouses</span></code> → rename to</p></li>
 </ul>
-<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Relevant Warehouses
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>CRM Warehouses
 </pre></div>
 </div>
 <ul class="simple">
@@ -1653,9 +1653,9 @@ Exposed Education Facilities</label><div class="sd-tab-content docutils">
 </pre></div>
 </div>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">relevant_warehouses</span></code> → rename to</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouses</span></code> → rename to</p></li>
 </ul>
-<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Relevant Warehouses
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>CRM Warehouses
 </pre></div>
 </div>
 <ul class="simple">
@@ -1694,9 +1694,9 @@ Exposed Agriculture in Hectare</label><div class="sd-tab-content docutils">
 </pre></div>
 </div>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">relevant_warehouses</span></code> → rename to</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouses</span></code> → rename to</p></li>
 </ul>
-<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Relevant Warehouses
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>CRM Warehouses
 </pre></div>
 </div>
 <ul class="simple">
@@ -1735,9 +1735,9 @@ Exposed Health Facilities Points</label><div class="sd-tab-content docutils">
 </pre></div>
 </div>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">relevant_warehouses</span></code> → rename to</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouses</span></code> → rename to</p></li>
 </ul>
-<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Relevant Warehouses
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>CRM Warehouses
 </pre></div>
 </div>
 <ul class="simple">
@@ -1776,9 +1776,9 @@ Exposed Health Education Points</label><div class="sd-tab-content docutils">
 </pre></div>
 </div>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">relevant_warehouses</span></code> → rename to</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouses</span></code> → rename to</p></li>
 </ul>
-<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Relevant Warehouses
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>CRM Warehouses
 </pre></div>
 </div>
 <ul class="simple">
