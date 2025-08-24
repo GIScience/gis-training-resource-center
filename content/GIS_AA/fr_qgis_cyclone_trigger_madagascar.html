@@ -320,7 +320,6 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="en_qgis_cyclone_trigger_madagascar.html">QGIS Trigger Workflow for Madagascar</a></li>
 
 
-
 <li class="toctree-l1"><a class="reference internal" href="en_qgis_drought_trigger_somalia.html">QGIS Trigger Workflow for Somalia</a></li>
 
 
@@ -564,7 +563,6 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#declaration-de-declenchement">Déclaration de déclenchement</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#telechargement-du-rapport">Téléchargement du rapport</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fonctionnalite-du-flux-de-travail">Fonctionnalité du flux de travail</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#donnees-disponibles">Données disponibles</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#donnees-fixes">Données fixes</a></li>
@@ -622,6 +620,15 @@ document.write(`
 <p>Le workflow QGIS présenté dans cet article a été développé dans le cadre du projet “Anticipatory-Action” (AA) (action anticipative) de la Croix-Rouge malgache (CRM), de la Croix-Rouge allemande (GRC) et de l’institut de Heidelberg pour les technologies de géoinformation (HeiGIT).</p>
 <p>Le workflow est presque entièrement automatisé grâce à un modèle QGIS et ne nécessite aucune intervention manuelle. Le chapitre “Fonctionnalité du workflow” décrit le processus et l’application pratique.
 Chaque étape inclut dans le modèle est expliquée en détail afin de permettre une compréhension complète du workflow et de la manière dont l’analyse a été réalisée.</p>
+<div class="admonition-telecharger-les-fichiers-et-donnees admonition">
+<p class="admonition-title">Télécharger les fichiers et données</p>
+<p>Le fichier de projet QGIS, le modèle et les jeux de données nécessaires pour le modèle peuvent être téléchargés depuis le GitLab de HeiGIT ici:</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover sd-text-center sd-rounded-2 sd-border-1 docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Télécharger le projet</strong></p>
+</div>
+<a class="sd-stretched-link reference external" href="https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar/-/tree/68e58a254f12406101a398e895436ccc198f8938/AA_Cyclone_Monitoring_Trigger_MAD"></a></div>
+</div>
 <section id="contexte">
 <h2>Contexte<a class="headerlink" href="#contexte" title="Permalink to this heading">#</a></h2>
 <p>La définition de déclencheurs est l’un des piliers du système de financement basé sur les prévisions (anglais: Forecast-based financing (FbF)). Pour qu’une Société Nationale puisse bénéficier d’un financement automatique pour ses actions précoces, son protocole d’action précoce doit définir clairement où et quand les fonds seront alloués et l’aide fournie. Dans le cadre de l’AA, cela est décidé en fonction de valeurs seuils spécifiques, appelées “déclencheurs”, basées sur les prévisions météorologiques et climatiques, qui sont définies pour chaque région (voir <a class="reference external" href="https://manual.forecast-based-financing.org/en/chapter/06-develop-a-trigger-system/">FbF Manual</a>).</p>
@@ -630,11 +637,10 @@ Chaque étape inclut dans le modèle est expliquée en détail afin de permettre
 <h2>Déclaration de déclenchement<a class="headerlink" href="#declaration-de-declenchement" title="Permalink to this heading">#</a></h2>
 <p><strong>Déclencheur préalable à l’activation:</strong> au moins une des prévisions météorologiques de Météo Madagascar, du RMSC La Réunion ou de l’ECMWF prévoit une probabilité supérieure à 50% qu’un cyclone tropical de force tempête tropicale ou plus atteigne les côtes dans les 7 prochains jours.</p>
 <p><strong>Déclencheur d’activation:</strong> si les prévisions de Météo Madagascar (DGM) indiquent l’arrivée d’un cyclone tropical avec des vents dépassant 118 km/h dans les 48 à 72 heures à venir.</p>
+<!--# Téléchargement du rapport
+
+ This section will include information on how to download the final report as soon as its published -->
 </section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="telechargement-du-rapport">
-<h1>Téléchargement du rapport<a class="headerlink" href="#telechargement-du-rapport" title="Permalink to this heading">#</a></h1>
-<!-- This section will include information on how to download the final report as soon as its published -->
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="fonctionnalite-du-flux-de-travail">
 <h1>Fonctionnalité du flux de travail<a class="headerlink" href="#fonctionnalite-du-flux-de-travail" title="Permalink to this heading">#</a></h1>
@@ -1009,7 +1015,7 @@ Vidéo: Modèle d’entrée et de sortie<div class="sd-summary-down docutils">
 <!-- Is a video necessary for this chapter? -->
 <div class="note admonition">
 <p class="admonition-title">Cartes de résultats</p>
-<p>Nous générerons trois types de cartes différents pour faciliter l’analyse :</p>
+<p>Nous générerons deux types de cartes différents pour faciliter l’analyse :</p>
 <ul class="simple">
 <li><p>La carte 1 donnera un aperçu de l’impact du cyclone sur les <strong>districts touchés, la gravité du cyclone et l’emplacement des entrepôts concernés</strong>.</p></li>
 <li><p>La carte 2 se concentrera sur l’impact sur les infrastructures et la population. Nous créerons 5 cartes d’impact différentes affichant les informations suivantes:</p>
@@ -1022,7 +1028,7 @@ Vidéo: Modèle d’entrée et de sortie<div class="sd-summary-down docutils">
 </ul>
 </li>
 </ul>
-<p>De plus, une carte indiquant les <strong>isochrones des entrepôts</strong> pour les 13 entrepôts sera fournie. La carte et le modèle de carte se trouvent dans le dossier <strong>warehouse_isochrone_matrix</strong>.</p>
+<!---De plus, une carte indiquant les **isochrones des entrepôts** pour les 13 entrepôts sera fournie. La carte et le modèle de carte se trouvent dans le dossier **warehouse_isochrone_matrix**.--->
 </div>
 <p>Nous allons créer les cartes en deux étapes:
 Tout d’abord, nous allons utiliser le <strong><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel">layer styling panel (panneau de style des couches)</a></strong> et le <strong>layer style files (fichiers de style des couches) (.qml)</strong> pour ajuster la visualisation des couches sur le canevas de la carte.</p>
@@ -1926,7 +1932,6 @@ L’image se trouve maintenant dans le dossier de résultats.</p></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#declaration-de-declenchement">Déclaration de déclenchement</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#telechargement-du-rapport">Téléchargement du rapport</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fonctionnalite-du-flux-de-travail">Fonctionnalité du flux de travail</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#donnees-disponibles">Données disponibles</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#donnees-fixes">Données fixes</a></li>

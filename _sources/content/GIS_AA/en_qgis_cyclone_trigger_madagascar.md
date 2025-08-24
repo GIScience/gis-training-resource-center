@@ -17,6 +17,19 @@ Version française
 
 ::::
 
+::::{admonition} Download the data and project files
+:class: note
+
+The QGIS project file, the model, and the datasets required for the model can be downloaded from HeiGITs Gitlab here:
+
+:::{card}
+:class-card: sd-text-center sd-rounded-2 sd-border-1
+:link: https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar/-/tree/68e58a254f12406101a398e895436ccc198f8938/AA_Cyclone_Monitoring_Trigger_MAD
+__Download the project.__
+:::
+
+::::
+
 The QGIS workflow presented in this article was developed in the framework of the Anticipatory-Action (AA) Project of the Croix-Rouge Malagasy (CRM), the German Red Cross (GRC) and the Heidelberg Institute for Geoinformation Technology (HeiGIT).
 
 The workflow is almost fully automated through a QGIS model, requiring no manual intervention. The chapterFunctionality of the workflow outlines the process and its practical implementation. Each step included in the model is explained in detail to provide a complete understanding of the workflow and how the analysis was carried out.
@@ -31,9 +44,8 @@ Setting triggers is one of the cornerstones of the Forecast-based Financing syst
 
 **Activation Trigger:** if the Meteo Madagascar (DGM) forecast indicates landfall of a tropical cyclone with wind speeds in excess of 118 km/h within the next 48-72 hours.
 
-# Downloading the report
-
-<!-- This section will include information on how to download the final report as soon as its published -->
+<!---# Downloading the report
+ This section will include information on how to download the final report as soon as its published -->
 
 # Functionality of the Workflow
 
