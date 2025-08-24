@@ -5,9 +5,8 @@
 ::::{admonition} French Translation 
 :class: tip
 
-The french version of this page can be found [here](/content/GIS_AA/fr_qgis_cyclone_trigger_madagascar.md).
-
-La version française de cet article se trouve [ici](/content/GIS_AA/fr_qgis_cyclone_trigger_madagascar.md).
+The french version of this page can be found here:
+La version française de cet article se trouve ici:
 
 :::{card}
 :class-card: sd-text-center sd-border-1
@@ -24,7 +23,7 @@ The QGIS project file, the model, and the datasets required for the model can be
 
 :::{card}
 :class-card: sd-text-center sd-rounded-2 sd-border-1
-:link: https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar/-/tree/68e58a254f12406101a398e895436ccc198f8938/AA_Cyclone_Monitoring_Trigger_MAD
+:link: https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar/-/tree/b39b44f713c40f333fdb2696a5c818250a65ce25/MDG_AA_Cyclone_Monitoring_Trigger
 __Download the project.__
 :::
 

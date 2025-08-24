@@ -12,7 +12,7 @@ Le fichier de projet QGIS, le modèle et les jeux de données nécessaires pour 
 
 :::{card}
 :class-card: sd-text-center sd-rounded-2 sd-border-1
-:link: https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar/-/tree/68e58a254f12406101a398e895436ccc198f8938/AA_Cyclone_Monitoring_Trigger_MAD
+:link: https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar/-/tree/b39b44f713c40f333fdb2696a5c818250a65ce25/MDG_AA_Cyclone_Monitoring_Trigger
 __Télécharger le projet__
 
 ::::
@@ -69,7 +69,7 @@ Le fichier de projet QGIS, le modèle et les jeux de données nécessaires pour 
 
 :::{card}
 :class-card: sd-text-center sd-rounded-2 sd-border-1
-:link: https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar/-/tree/68e58a254f12406101a398e895436ccc198f8938/AA_Cyclone_Monitoring_Trigger_MAD
+:link: https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar/-/tree/b39b44f713c40f333fdb2696a5c818250a65ce25/MDG_AA_Cyclone_Monitoring_Trigger
 __Télécharger le projet__
 
 ::::
