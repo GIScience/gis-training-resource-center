@@ -46,7 +46,7 @@ The goal is to prepare an end-to-end analysis and visualization workflow that ca
 
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_module_5_mdg_aa_ex_1.html#tasks
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_module_5_mdg_aa_ex_1.html
 __Exercise 1: Estimating the Exposed Population - Aina's Manual Approach (Module 5)__
 ^^^
 
@@ -62,7 +62,7 @@ __Exercise 1: Estimating the Exposed Population - Aina's Manual Approach (Module
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_module_5_mdg_aa_ex_1.html#tasks
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_7/en_module_7_mdg_aa_ex_2.html
 __Exercise 2: Automation of Exposed Population Estimation – Aina's Model (Module 7)__
 ^^^
 
@@ -76,7 +76,7 @@ __Exercise 2: Automation of Exposed Population Estimation – Aina's Model (Modu
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_5/en_module_7_mdg_aa_ex_3.html
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_5/Module_7/en_module_7_mdg_aa_ex_2.html
 __Exercise 3: Identifying Affected Health Facilities and Schools – Aina Adds More Layers (Module 7)__
 ^^^
 

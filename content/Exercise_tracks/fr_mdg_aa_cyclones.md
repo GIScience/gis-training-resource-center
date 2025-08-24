@@ -88,7 +88,7 @@ __Exercice 2 : Automatisation de l’estimation de la population exposée – Le
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_5/fr_module_7_mdg_aa_ex_3.html
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_7/fr_module_7_mdg_aa_ex_3.html
 __Exercice 3 : Identification des établissements de santé et écoles affectés – Aina ajoute des couches (Module 7)__
 ^^^
 
