@@ -6,6 +6,17 @@ Le workflow QGIS présenté dans cet article a été développé dans le cadre d
 Le workflow est presque entièrement automatisé grâce à un modèle QGIS et ne nécessite aucune intervention manuelle. Le chapitre "Fonctionnalité du workflow" décrit le processus et l'application pratique.
 Chaque étape inclut dans le modèle est expliquée en détail afin de permettre une compréhension complète du workflow et de la manière dont l'analyse a été réalisée.
 
+::::{admonition} Télécharger les fichiers et données
+
+Le fichier de projet QGIS, le modèle et les jeux de données nécessaires pour le modèle peuvent être téléchargés depuis le GitLab de HeiGIT ici:
+
+:::{card}
+:class-card: sd-text-center sd-rounded-2 sd-border-1
+:link: https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar/-/tree/68e58a254f12406101a398e895436ccc198f8938/AA_Cyclone_Monitoring_Trigger_MAD
+__Télécharger le projet__
+
+::::
+
 ## Contexte
 
 La définition de déclencheurs est l'un des piliers du système de financement basé sur les prévisions (anglais: Forecast-based financing (FbF)). Pour qu'une Société Nationale puisse bénéficier d'un financement automatique pour ses actions précoces, son protocole d'action précoce doit définir clairement où et quand les fonds seront alloués et l'aide fournie. Dans le cadre de l'AA, cela est décidé en fonction de valeurs seuils spécifiques, appelées "déclencheurs", basées sur les prévisions météorologiques et climatiques, qui sont définies pour chaque région (voir [FbF Manual](https://manual.forecast-based-financing.org/en/chapter/06-develop-a-trigger-system/)).
@@ -16,9 +27,9 @@ La définition de déclencheurs est l'un des piliers du système de financement 
 
 **Déclencheur d'activation:** si les prévisions de Météo Madagascar (DGM) indiquent l'arrivée d'un cyclone tropical avec des vents dépassant 118 km/h dans les 48 à 72 heures à venir.
 
-# Téléchargement du rapport
+<!--# Téléchargement du rapport
 
-<!-- This section will include information on how to download the final report as soon as its published -->
+ This section will include information on how to download the final report as soon as its published -->
 
 # Fonctionnalité du flux de travail
 
@@ -398,7 +409,7 @@ Nous avons toutes les couches nécessaires pour créer les cartes individuelles.
 :::{admonition} Cartes de résultats
 :class: note
 
-Nous générerons trois types de cartes différents pour faciliter l'analyse : 
+Nous générerons deux types de cartes différents pour faciliter l'analyse : 
 - La carte 1 donnera un aperçu de l'impact du cyclone sur les **districts touchés, la gravité du cyclone et l'emplacement des entrepôts concernés**.
 - La carte 2 se concentrera sur l'impact sur les infrastructures et la population. Nous créerons 5 cartes d'impact différentes affichant les informations suivantes:
     - **population exposée**
@@ -407,7 +418,7 @@ Nous générerons trois types de cartes différents pour faciliter l'analyse :
     - **établissements scolaires exposés**
     - **couverture agricole exposée**
 
-De plus, une carte indiquant les **isochrones des entrepôts** pour les 13 entrepôts sera fournie. La carte et le modèle de carte se trouvent dans le dossier **warehouse_isochrone_matrix**.
+<!---De plus, une carte indiquant les **isochrones des entrepôts** pour les 13 entrepôts sera fournie. La carte et le modèle de carte se trouvent dans le dossier **warehouse_isochrone_matrix**.--->
 :::
 
 Nous allons créer les cartes en deux étapes:
