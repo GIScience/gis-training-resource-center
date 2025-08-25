@@ -154,7 +154,7 @@ Définir une nouvelle entrée de modèle : couche vectorielle de points représe
 width: 300px
 align: center
 ---
-Définir une nouvelle entrée de modèle : couche vectorielle de points représentant les établissements d'enseignement
+Définir une nouvelle entrée de modèle : couche vectorielle de points représentant les établissements d'éducation
 ```
 :::
 ::::
