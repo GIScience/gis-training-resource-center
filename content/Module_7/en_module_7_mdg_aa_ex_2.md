@@ -96,7 +96,15 @@ __Wrap up:__
 
 :::
 
+## Available data
 
+:::{card}
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_7_Exercise_2_AA_MDG_task_2-20250825T143513Z-1-001.zip
+
+__Download all datasets here, save the folder on your computer and unzip the file.__ 
+:::
+
+## Context
 
 
 After manually estimating exposed populations in past cyclone seasons, Aina has decided to prepare an **automated model** using the **QGIS Graphical Modeller**. This will help her move faster and avoid repeating the same steps manually each time a cyclone is forecasted.

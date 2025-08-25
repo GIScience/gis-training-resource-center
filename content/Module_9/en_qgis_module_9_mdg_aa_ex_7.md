@@ -94,8 +94,17 @@ __Wrap up:__
 
 :::
 
+## Available data
 
-__Context:__
+
+:::{card}
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_9_Exercise_7_AA_MDG_task_7-20250825T143515Z-1-001.zip
+
+__Download all datasets here, save the folder on your computer and unzip the file.__ 
+:::
+
+
+## Context
 
 When a cyclone is forecast to make landfall, Aina works with the logistics and health teams to decide **where to send prepositioned medical kits**. However, not all CRM warehouses stock the needed items — only three do.
 
@@ -103,7 +112,7 @@ To make fast, data-driven decisions, Aina wants to know **which health posts are
 
 Her goal is to create a clear visual map showing reachable vs. non-reachable health posts — and share this with decision-makers as quickly as possible.
 
-# Tasks
+## Tasks
 
 ## 1. Filter Health Posts from the National Health Facility Dataset
 
