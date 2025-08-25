@@ -76,7 +76,7 @@ __Exercise 2: Automation of Exposed Population Estimation – Aina's Model (Modu
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_5/Module_7/en_module_7_mdg_aa_ex_2.html
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_5/Module_7/en_module_7_mdg_aa_ex_3.html
 __Exercise 3: Identifying Affected Health Facilities and Schools – Aina Adds More Layers (Module 7)__
 ^^^
 
