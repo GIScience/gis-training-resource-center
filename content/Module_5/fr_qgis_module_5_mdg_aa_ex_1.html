@@ -558,8 +558,8 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caracteristiques">Caractéristiques</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instruction-pour-les-formateurs">Instruction pour les formateurs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#donnees-disponibles">Données disponibles</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#telechargement-des-donnees-pour-cet-exercice">Téléchargement des données pour cet exercice</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#taches">Tâches</a></li>
 </ul>
             </nav>
         </div>
@@ -689,61 +689,89 @@ L’objectif est de préparer un workflow d’analyse et de visualisation pour s
 <li><p class="sd-card-text">Laissez un moment pour des questions ouvertes.</p></li>
 </ul>
 </div>
-</details></section>
+</details><p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
+</section>
+<section id="donnees-disponibles">
+<h2>Données disponibles<a class="headerlink" href="#donnees-disponibles" title="Permalink to this heading">#</a></h2>
+<p>=======</p>
+</section>
 <section id="telechargement-des-donnees-pour-cet-exercice">
 <h2>Téléchargement des données pour cet exercice<a class="headerlink" href="#telechargement-des-donnees-pour-cet-exercice" title="Permalink to this heading">#</a></h2>
+<blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><p>7c5b4533cfb0a4f3ef67b7911d6595c5d093cd1a</p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover docutils">
 <div class="sd-card-body docutils">
-<p class="sd-card-text"><strong>Téléchargez les données pour cet exercice ici et dezipé le fichier.</strong></p>
+<p class="sd-card-text">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+<strong>Téléchargez tous les ensembles de données ici, enregistrez le dossier sur votre ordinateur et décompressez le fichier.</strong></p>
 </div>
 <a class="sd-stretched-link reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_5_Exercise_8_AA_MDG_task_1-20250825T143512Z-1-001.zip"></a></div>
-</section>
-<section id="taches">
-<h2>Tâches<a class="headerlink" href="#taches" title="Permalink to this heading">#</a></h2>
-<p>Avant de développer le modèle automatisé, Aina estimait manuellement la population exposée à chaque fois qu’un cyclone approchait de Madagascar.
-Dans cette tâche, vous allez suivre les étapes qu’elle utilisait auparavant, en travaillant avec la trajectoire historique du Cyclone Harald, les données raster de WorldPop et les frontières administratives.</p>
-<p>Vous allez tamponner manuellement la trajectoire du cyclone, découper le raster de population, puis calculer la population exposée à l’aide des statistiques zonales.</p>
-<ol class="arabic simple">
-<li><p><strong>Ouvrez QGIS</strong> et créez un <span class="xref myst">nouveau projet</span> en cliquant sur <code class="docutils literal notranslate"><span class="pre">Projet</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Nouveau</span> <span class="pre">Projet</span></code>.</p></li>
-<li><p><strong>Enregistrez le projet</strong> dans le dossier <code class="docutils literal notranslate"><span class="pre">/project</span></code>: Cliquez sur <code class="docutils literal notranslate"><span class="pre">Projet</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Enregistrer</span> <span class="pre">sous...</span></code> et naviguez jusqu’au dossier. Nommez le projet “Cyclon_Harald_Exposure”.</p></li>
-<li><p><strong>Importer le fichier</strong> GeoJSON “example_Harald_2025_Track.geojson” dans votre projet en le glissant-déposant (Vidéo Wiki). Le fichier se trouve dans le dossier <code class="docutils literal notranslate"><span class="pre">/data/input</span></code></p></li>
-<li><p><strong>Reprojetez la trajectoire du cyclone</strong> pour utiliser des mètres au lieu de degrés (ceci est important pour un tampon précis):</p>
-<ul class="simple">
-<li><p>Dans la <strong><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_start.html?highlight=processing+toolbox#toolbox-toolbars">Boîte à outils de traitement</a></strong>, cherchez <code class="docutils literal notranslate"><span class="pre">Reprojeter</span> <span class="pre">une</span> <span class="pre">couche</span></code>.</p></li>
-<li><p>Couche source: example_Harald_2025_Track</p></li>
-<li><p>SCR cible : EPSG:29738 ou un autre SCR projeté en mètres adapté à Madagascar.</p></li>
-<li><p>Enregistrez le résultat dans le dossier temp sous le nom: <code class="docutils literal notranslate"><span class="pre">Harald_Track_Reprojected</span></code></p></li>
-</ul>
-</li>
-</ol>
-<figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_reproject_cyclon_track.PNG"><img alt="../../_images/fr_MDG_AA_reproject_cyclon_track.PNG" src="../../_images/fr_MDG_AA_reproject_cyclon_track.PNG" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-text">Reprojeter la trajectoire du cyclone</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p>Les distances de tampon doivent être calculées en mètres. De nombreux jeux de données (comme les trajectoires de cyclone en GeoJSON) utilisent des systèmes de coordonnées géographiques (CRS/SCR) comme EPSG:4326, qui mesurent en degrés — et non en mètres. Pour calculer correctement un tampon de 200 km, il faut d’abord reprojeter la trajectoire dans un CRS projeté utilisant les mètres.</p>
+<p>=======
+<strong>Téléchargez les données pour cet exercice ici et dezipé le fichier.</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 7c5b4533cfb0a4f3ef67b7911d6595c5d093cd1a
+## Tâches
+
+Avant de développer le modèle automatisé, Aina estimait manuellement la population exposée à chaque fois qu’un cyclone approchait de Madagascar.
+Dans cette tâche, vous allez suivre les étapes qu’elle utilisait auparavant, en travaillant avec la trajectoire historique du Cyclone Harald, les données raster de WorldPop et les frontières administratives.
+
+Vous allez tamponner manuellement la trajectoire du cyclone, découper le raster de population, puis calculer la population exposée à l’aide des statistiques zonales.
+
+
+1. __Ouvrez QGIS__ et créez un [nouveau projet](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) en cliquant sur `Projet`-&gt; `Nouveau Projet`.
+
+2. __Enregistrez le projet__ dans le dossier `/project`: Cliquez sur `Projet` -&gt; `Enregistrer sous...` et naviguez jusqu’au dossier. Nommez le projet &quot;Cyclon_Harald_Exposure&quot;.
+
+3. __Importer le fichier__ GeoJSON &quot;example_Harald_2025_Track.geojson&quot; dans votre projet en le glissant-déposant (Vidéo Wiki). Le fichier se trouve dans le dossier `/data/input`
+
+4. __Reprojetez la trajectoire du cyclone__ pour utiliser des mètres au lieu de degrés (ceci est important pour un tampon précis):
+    - Dans la __[Boîte à outils de traitement](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_start.html?highlight=processing+toolbox#toolbox-toolbars)__, cherchez `Reprojeter une couche`.
+    - Couche source: example_Harald_2025_Track
+    - SCR cible : EPSG:29738 ou un autre SCR projeté en mètres adapté à Madagascar.
+    - Enregistrez le résultat dans le dossier temp sous le nom: `Harald_Track_Reprojected`
+
+```{figure} /fig/fr_MDG_AA_reproject_cyclon_track.PNG
+---
+width: 600px
+align: center
+---
+Reprojeter la trajectoire du cyclone
+```
+
+```{Attention}
+Les distances de tampon doivent être calculées en mètres. De nombreux jeux de données (comme les trajectoires de cyclone en GeoJSON) utilisent des systèmes de coordonnées géographiques (CRS/SCR) comme EPSG:4326, qui mesurent en degrés — et non en mètres. Pour calculer correctement un tampon de 200 km, il faut d’abord reprojeter la trajectoire dans un CRS projeté utilisant les mètres.
+```
+5. **Créer une zone tampon autour de la trajectoire du cyclone**:
+   - Dans la __Boîte à outils de traitement__, cherchez `Tampon`.
+   - Couche source: `Harald_Track_Reprojected`
+   - Distance du tampon: `200000` (en mêtres)
+   - Segments: Laisser par défaut (5)
+   - Regrouper le résultat: `Oui`
+   - Enregistrez la sortie dans le dossier `/data/temp/` sous le nom: `Harald_Buffer_200km`
+
+
+:::{figure} /fig/fr_MDG_AA_cyclon_track_buffer.PNG
+---
+width: 600px
+align: center
+---
+Tamponner la trajectoire du cyclone
+</pre></div>
 </div>
-<ol class="arabic simple" start="5">
-<li><p><strong>Créer une zone tampon autour de la trajectoire du cyclone</strong>:</p>
-<ul class="simple">
-<li><p>Dans la <strong>Boîte à outils de traitement</strong>, cherchez <code class="docutils literal notranslate"><span class="pre">Tampon</span></code>.</p></li>
-<li><p>Couche source: <code class="docutils literal notranslate"><span class="pre">Harald_Track_Reprojected</span></code></p></li>
-<li><p>Distance du tampon: <code class="docutils literal notranslate"><span class="pre">200000</span></code> (en mêtres)</p></li>
-<li><p>Segments: Laisser par défaut (5)</p></li>
-<li><p>Regrouper le résultat: <code class="docutils literal notranslate"><span class="pre">Oui</span></code></p></li>
-<li><p>Enregistrez la sortie dans le dossier <code class="docutils literal notranslate"><span class="pre">/data/temp/</span></code> sous le nom: <code class="docutils literal notranslate"><span class="pre">Harald_Buffer_200km</span></code></p></li>
-</ul>
-</li>
-</ol>
-<figure class="align-center" id="id2">
-<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_cyclon_track_buffer.PNG"><img alt="../../_images/fr_MDG_AA_cyclon_track_buffer.PNG" src="../../_images/fr_MDG_AA_cyclon_track_buffer.PNG" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-text">Tamponner la trajectoire du cyclone</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Résultat intermédiaire: Zone tampon<div class="sd-summary-down docutils">
@@ -751,10 +779,10 @@ Résultat intermédiaire: Zone tampon<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<figure class="align-center" id="id3">
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_cyclon_track_buffer.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_cyclon_track_buffer.PNG" src="../../_images/fr_MDG_AA_intermediate_result_cyclon_track_buffer.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Les résultats intermédiaires doivent montrer la trajectoire du cyclone et la zone tampon de 200 kilomètres autour de celui-ci. La zone tampon doit être une seule entité.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Les résultats intermédiaires doivent montrer la trajectoire du cyclone et la zone tampon de 200 kilomètres autour de celui-ci. La zone tampon doit être une seule entité.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -768,10 +796,10 @@ Résultat intermédiaire: Zone tampon<div class="sd-summary-down docutils">
 </ul>
 </li>
 </ol>
-<figure class="align-center" id="id4">
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_reproject_cyclon_buffer.PNG"><img alt="../../_images/fr_MDG_AA_reproject_cyclon_buffer.PNG" src="../../_images/fr_MDG_AA_reproject_cyclon_buffer.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Reprojetter la tamponner trajectoire du cyclone</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Reprojetter la tamponner trajectoire du cyclone</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="7">
@@ -796,10 +824,10 @@ Résultat intermédiaire: Zone tampon<div class="sd-summary-down docutils">
 </ul>
 </li>
 </ol>
-<figure class="align-center" id="id5">
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_clip_pop_raster.PNG"><img alt="../../_images/fr_MDG_AA_clip_pop_raster.PNG" src="../../_images/fr_MDG_AA_clip_pop_raster.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Découpez la population ratser selon la zone affectée par le cyclone (trajectoire tampon du cyclone)</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Découpez la population ratser selon la zone affectée par le cyclone (trajectoire tampon du cyclone)</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -809,10 +837,10 @@ Résultat intermédiaire: Raster population découpé<div class="sd-summary-down
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<figure class="align-center" id="id6">
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_clip_pop_raster.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_clip_pop_raster.PNG" src="../../_images/fr_MDG_AA_intermediate_result_clip_pop_raster.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Résultat intermédiaire du découpage de la couche raster de population à l’étendue de la trajectoire tamponnée du cyclone.</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Résultat intermédiaire du découpage de la couche raster de population à l’étendue de la trajectoire tamponnée du cyclone.</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -829,10 +857,10 @@ Résultat intermédiaire: Raster population découpé<div class="sd-summary-down
 </ul>
 </li>
 </ol>
-<figure class="align-center" id="id7">
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_pop_zonal_statistic.PNG"><img alt="../../_images/fr_MDG_AA_pop_zonal_statistic.PNG" src="../../_images/fr_MDG_AA_pop_zonal_statistic.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Calcul de la population exposée aux cyclones par district sur la base du raster de population.</span><a class="headerlink" href="#id7" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Calcul de la population exposée aux cyclones par district sur la base du raster de population.</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="11">
@@ -854,10 +882,10 @@ Pour cela, nous allons appliquer une <strong><span class="xref myst">classificat
 <p class="admonition-title">Tip</p>
 <p>Vous pouvez ajuster les bornes des classes ou les étiquettes en double-cliquant sur chaque entrée de classe.</p>
 </div>
-<figure class="align-center" id="id8">
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_pop_graduadt_classification_exposed_population.PNG"><img alt="../../_images/fr_MDG_AA_pop_graduadt_classification_exposed_population.PNG" src="../../_images/fr_MDG_AA_pop_graduadt_classification_exposed_population.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">Configuration de la visualisation de la population exposée en cinq classes.</span><a class="headerlink" href="#id8" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Configuration de la visualisation de la population exposée en cinq classes.</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Vos résultats devraient ressembler à ceci:</p>
@@ -917,8 +945,8 @@ Pour cela, nous allons appliquer une <strong><span class="xref myst">classificat
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caracteristiques">Caractéristiques</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instruction-pour-les-formateurs">Instruction pour les formateurs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#donnees-disponibles">Données disponibles</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#telechargement-des-donnees-pour-cet-exercice">Téléchargement des données pour cet exercice</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#taches">Tâches</a></li>
 </ul>
   </nav></div>
 
