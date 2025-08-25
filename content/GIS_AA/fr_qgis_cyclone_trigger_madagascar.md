@@ -1,6 +1,7 @@
 # Workflow de déclenchement en QGIS pour Madagascar
 
 
+
 Le workflow QGIS présenté dans cet article a été développé dans le cadre du projet "Anticipatory-Action" (AA) (action anticipative) de la Croix-Rouge malgache (CRM), de la Croix-Rouge allemande (GRC) et de l'institut de Heidelberg pour les technologies de géoinformation (HeiGIT).
 
 Le workflow est presque entièrement automatisé grâce à un modèle QGIS et ne nécessite aucune intervention manuelle. Le chapitre "Fonctionnalité du workflow" décrit le processus et l'application pratique.
