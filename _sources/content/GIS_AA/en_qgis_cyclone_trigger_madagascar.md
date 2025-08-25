@@ -23,7 +23,7 @@ The QGIS project file, the model, and the datasets required for the model can be
 
 :::{card}
 :class-card: sd-text-center sd-rounded-2 sd-border-1
-:link: https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar/-/tree/b39b44f713c40f333fdb2696a5c818250a65ce25/MDG_AA_Cyclone_Monitoring_Trigger
+:link:https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/MDG_AA_Cyclone_Monitoring_Trigger.zip
 __Download the project.__
 :::
 
@@ -84,10 +84,15 @@ The QGIS project file, the model, and the datasets required for the model can be
 
 :::{card}
 :class-card: sd-text-center sd-rounded-2 sd-border-1
-:link: https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar/-/tree/68e58a254f12406101a398e895436ccc198f8938/AA_Cyclone_Monitoring_Trigger_MAD
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/MDG_AA_Cyclone_Monitoring_Trigger.zip
 __Download the project.__
 :::
 
+```{dropdown} Downlaoding the project.
+
+To download the project click on the 
+
+```
 ::::
 
 
