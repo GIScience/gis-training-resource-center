@@ -5,7 +5,7 @@ Cette piste d’exercice se concentre sur l’évaluation préliminaire d’un �
 Dans cette piste, vous construirez un flux de travail analytique sous forme de modèle QGIS et visualiserez les résultats à l’aide de modèles de cartes et de fichiers de style.
 
 
-::::{admonition} French version - Version française
+::::{admonition} English version - Version anglaise
 :class:
 
 We offer an english version of this exercise track which can be found here: 
@@ -48,6 +48,7 @@ L’objectif est de mettre en place un flux de travail complet d’analyse et de
 anticipative rapide et fondée sur les données, avant que le cyclone n’atteigne les côtes.
 
 ::::
+
 
 :::{card}
 :link: https://giscience.github.io/gis-training-resource-center/content/Module_5/fr_qgis_module_5_mdg_aa_ex_1.html 
