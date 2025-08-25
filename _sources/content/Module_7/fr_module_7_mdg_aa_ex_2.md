@@ -6,7 +6,7 @@
 :::
 ::::
 
-# Exercice 2 : Automatisation de l'estimation de la population exposée - Le Modèle d'Aina
+# Exercice : Automatisation de l'estimation de la population exposée - Le Modèle d'Aina
 
 
 ## Caractéristiques
@@ -112,6 +112,14 @@ Dans cette tâche, vous allez aider Aina à construire une version simple de ce 
 - Appliquer les statistiques zonales pour obtenir la population exposée par district
 
 ---
+
+## Téléchargement des données pour cet exercice
+
+:::{card}
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_7_Exercise_2_AA_MDG_task_2-20250825T143513Z-1-001.zip
+
+__Téléchargez les données pour cet exercice ici et dezipé le fichier.__
+:::
 
 ## Tâches 
 

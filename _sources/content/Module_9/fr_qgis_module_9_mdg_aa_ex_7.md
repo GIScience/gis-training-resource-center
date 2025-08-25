@@ -101,6 +101,15 @@ __Exercice guidée:__
 
 ---
 
+## Donées disponibles
+
+:::{card}
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_9_Exercise_7_AA_MDG_task_7-20250825T143515Z-1-001.zip
+
+__Téléchargez les données pour cet exercice ici et dezipé le fichier.__
+:::
+
+
 ## Tâches
 
 Lorsque qu’un cyclone est prévu pour un atterrissage, Aina collabore avec les équipes logistique et santé pour 

@@ -556,21 +556,18 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Exercice 4 : Visualisation des résultats d’impact du cyclone - Aina applique des styles á ses couches</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caracteristiques">Caractéristiques</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instruction-pour-les-formateurs">Instruction pour les formateurs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#telechargement-des-donnees-pour-cet-exercice">Téléchargement des données pour cet exercice</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#taches">Tâches</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#charger-les-couches-necessaires-si-ce-nest-pas-deja-fait">1. <strong>Charger les couches nécessaires (si ce n’est pas déjà fait)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#appliquer-des-fichiers-de-style-predefinis">2. <strong>Appliquer des fichiers de style prédéfinis</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#styliser-manuellement-les-couches-de-pourcentage">3. <strong>Styliser manuellement les couches de pourcentage</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enregistrez-vos-nouveaux-styles-pour-les-reutiliser">4. <strong>Enregistrez vos nouveaux styles pour les réutiliser</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optionnel-importer-les-styles-dans-votre-bibliotheque-qgis">5. <em>(Optionnel)</em> Importer les styles dans votre bibliothèque QGIS</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#taches">Tâches</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#charger-les-couches-necessaires-si-ce-nest-pas-deja-fait">1. <strong>Charger les couches nécessaires (si ce n’est pas déjà fait)</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#appliquer-des-fichiers-de-style-predefinis">2. <strong>Appliquer des fichiers de style prédéfinis</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#styliser-manuellement-les-couches-de-pourcentage">3. <strong>Styliser manuellement les couches de pourcentage</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enregistrez-vos-nouveaux-styles-pour-les-reutiliser">4. <strong>Enregistrez vos nouveaux styles pour les réutiliser</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#optionnel-importer-les-styles-dans-votre-bibliotheque-qgis">5. <em>(Optionnel)</em> Importer les styles dans votre bibliothèque QGIS</a></li>
 </ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -700,9 +697,16 @@ L’objectif est de préparer un workflow d’analyse et de visualisation pour s
 </ul>
 </div>
 </details></section>
+<section id="telechargement-des-donnees-pour-cet-exercice">
+<h2>Téléchargement des données pour cet exercice<a class="headerlink" href="#telechargement-des-donnees-pour-cet-exercice" title="Permalink to this heading">#</a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Téléchargez les données pour cet exercice ici et dezipé le fichier.</strong></p>
+</div>
+<a class="sd-stretched-link reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_4_Exercise_6_AA_MDG_task_4-20250825T143508Z-1-001.zip"></a></div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="taches">
-<h1>Tâches<a class="headerlink" href="#taches" title="Permalink to this heading">#</a></h1>
+<section id="taches">
+<h2>Tâches<a class="headerlink" href="#taches" title="Permalink to this heading">#</a></h2>
 <p>Après avoir terminé son modèle, Aina souhaite <strong>communiquer clairement les résultats</strong> — à la fois à ses collègues de la Croix-Rouge et à des partenaires externes.</p>
 <p>Elle en a <strong>assez de devoir restyler manuellement chaque couche</strong> à chaque fois que de nouvelles données cycloniques arrivent. À la place, elle veut :</p>
 <ul class="simple">
@@ -713,7 +717,7 @@ L’objectif est de préparer un workflow d’analyse et de visualisation pour s
 <p>Dans cette tâche, vous allez aider Aina à appliquer des styles <code class="docutils literal notranslate"><span class="pre">.qml</span></code> existants et à en créer de nouveaux pour les couches qui n’ont pas encore de style défini.</p>
 <hr class="docutils" />
 <section id="charger-les-couches-necessaires-si-ce-nest-pas-deja-fait">
-<h2>1. <strong>Charger les couches nécessaires (si ce n’est pas déjà fait)</strong><a class="headerlink" href="#charger-les-couches-necessaires-si-ce-nest-pas-deja-fait" title="Permalink to this heading">#</a></h2>
+<h3>1. <strong>Charger les couches nécessaires (si ce n’est pas déjà fait)</strong><a class="headerlink" href="#charger-les-couches-necessaires-si-ce-nest-pas-deja-fait" title="Permalink to this heading">#</a></h3>
 <p>Assurez-vous que les couches suivantes sont déjà chargées dans votre projet QGIS. Ce sont les sorties de la <strong>Tâche 3</strong>:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Harald_2025_Track</span></code></p></li>
@@ -729,10 +733,10 @@ L’objectif est de préparer un workflow d’analyse et de visualisation pour s
 <li><p>Chargez-la par <strong>glisser-déposer</strong> depuis votre dossier <code class="docutils literal notranslate"><span class="pre">results</span></code>, ou</p></li>
 <li><p>Utilisez <code class="docutils literal notranslate"><span class="pre">Couche</span></code> → <code class="docutils literal notranslate"><span class="pre">Ajouter</span> <span class="pre">une</span> <span class="pre">couche</span></code> → <code class="docutils literal notranslate"><span class="pre">Ajouter</span> <span class="pre">une</span> <span class="pre">couche</span> <span class="pre">vectorielle</span></code> ou <code class="docutils literal notranslate"><span class="pre">Ajouter</span> <span class="pre">une</span> <span class="pre">couche</span> <span class="pre">raster</span></code></p></li>
 </ul>
-<hr class="docutils" />
 </section>
+<hr class="docutils" />
 <section id="appliquer-des-fichiers-de-style-predefinis">
-<h2>2. <strong>Appliquer des fichiers de style prédéfinis</strong><a class="headerlink" href="#appliquer-des-fichiers-de-style-predefinis" title="Permalink to this heading">#</a></h2>
+<h3>2. <strong>Appliquer des fichiers de style prédéfinis</strong><a class="headerlink" href="#appliquer-des-fichiers-de-style-predefinis" title="Permalink to this heading">#</a></h3>
 <p>Appliquez les fichiers de style <code class="docutils literal notranslate"><span class="pre">.qml</span></code> suivants aux couches correspondantes:</p>
 <table class="table">
 <thead>
@@ -814,7 +818,7 @@ Résultat intermédiaire: Établissements scolaires exposés</label><div class="
 </div>
 </section>
 <section id="styliser-manuellement-les-couches-de-pourcentage">
-<h2>3. <strong>Styliser manuellement les couches de pourcentage</strong><a class="headerlink" href="#styliser-manuellement-les-couches-de-pourcentage" title="Permalink to this heading">#</a></h2>
+<h3>3. <strong>Styliser manuellement les couches de pourcentage</strong><a class="headerlink" href="#styliser-manuellement-les-couches-de-pourcentage" title="Permalink to this heading">#</a></h3>
 <p>Aina souhaite également visualiser le pourcentage d’établissements de santé et d’éducation exposés. Toutefois, puisqu’aucun style n’est encore disponible, elle doit effectuer la procédure manuellement.</p>
 <p><strong>Étapes:</strong></p>
 <ul>
@@ -857,10 +861,10 @@ Après duplication, renommez la nouvelle couche :</p></li>
 <div><p>🧠 <em>Pourquoi 4 classes égales ?</em><br />
 Cela permet de visualiser la gravité par district en utilisant des catégories de risque simples et interprétables. Cependant, vous pouvez aussi expérimenter les <strong>ruptures naturelles</strong> si les données sont inégalement réparties.</p>
 </div></blockquote>
-<hr class="docutils" />
 </section>
+<hr class="docutils" />
 <section id="enregistrez-vos-nouveaux-styles-pour-les-reutiliser">
-<h2>4. <strong>Enregistrez vos nouveaux styles pour les réutiliser</strong><a class="headerlink" href="#enregistrez-vos-nouveaux-styles-pour-les-reutiliser" title="Permalink to this heading">#</a></h2>
+<h3>4. <strong>Enregistrez vos nouveaux styles pour les réutiliser</strong><a class="headerlink" href="#enregistrez-vos-nouveaux-styles-pour-les-reutiliser" title="Permalink to this heading">#</a></h3>
 <p>Enregistrez vos styles manuels au format <code class="docutils literal notranslate"><span class="pre">.qml</span></code> pour pouvoir les réutiliser plus tard.</p>
 <p><strong>Étapes:</strong></p>
 <ul>
@@ -881,7 +885,7 @@ Cela permet de visualiser la gravité par district en utilisant des catégories 
 <p><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_style_save_new_style.mp4"></video></p>
 </section>
 <section id="optionnel-importer-les-styles-dans-votre-bibliotheque-qgis">
-<h2>5. <em>(Optionnel)</em> Importer les styles dans votre bibliothèque QGIS<a class="headerlink" href="#optionnel-importer-les-styles-dans-votre-bibliotheque-qgis" title="Permalink to this heading">#</a></h2>
+<h3>5. <em>(Optionnel)</em> Importer les styles dans votre bibliothèque QGIS<a class="headerlink" href="#optionnel-importer-les-styles-dans-votre-bibliotheque-qgis" title="Permalink to this heading">#</a></h3>
 <p>Pour réutiliser vos styles dans de futurs projets:</p>
 <ul class="simple">
 <li><p>Allez dans <code class="docutils literal notranslate"><span class="pre">Préférences</span></code> → <code class="docutils literal notranslate"><span class="pre">Gestionnaire</span> <span class="pre">de</span> <span class="pre">styles</span></code></p></li>
@@ -890,6 +894,7 @@ Cela permet de visualiser la gravité par district en utilisant des catégories 
 </ul>
 <p>Les styles apparaîtront désormais comme préréglages dans le <strong>Panneau de style de couche</strong>.</p>
 <hr class="docutils" />
+</section>
 </section>
 </section>
 
@@ -938,21 +943,18 @@ Cela permet de visualiser la gravité par district en utilisant des catégories 
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Exercice 4 : Visualisation des résultats d’impact du cyclone - Aina applique des styles á ses couches</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caracteristiques">Caractéristiques</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instruction-pour-les-formateurs">Instruction pour les formateurs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#telechargement-des-donnees-pour-cet-exercice">Téléchargement des données pour cet exercice</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#taches">Tâches</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#charger-les-couches-necessaires-si-ce-nest-pas-deja-fait">1. <strong>Charger les couches nécessaires (si ce n’est pas déjà fait)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#appliquer-des-fichiers-de-style-predefinis">2. <strong>Appliquer des fichiers de style prédéfinis</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#styliser-manuellement-les-couches-de-pourcentage">3. <strong>Styliser manuellement les couches de pourcentage</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enregistrez-vos-nouveaux-styles-pour-les-reutiliser">4. <strong>Enregistrez vos nouveaux styles pour les réutiliser</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optionnel-importer-les-styles-dans-votre-bibliotheque-qgis">5. <em>(Optionnel)</em> Importer les styles dans votre bibliothèque QGIS</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#taches">Tâches</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#charger-les-couches-necessaires-si-ce-nest-pas-deja-fait">1. <strong>Charger les couches nécessaires (si ce n’est pas déjà fait)</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#appliquer-des-fichiers-de-style-predefinis">2. <strong>Appliquer des fichiers de style prédéfinis</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#styliser-manuellement-les-couches-de-pourcentage">3. <strong>Styliser manuellement les couches de pourcentage</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enregistrez-vos-nouveaux-styles-pour-les-reutiliser">4. <strong>Enregistrez vos nouveaux styles pour les réutiliser</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#optionnel-importer-les-styles-dans-votre-bibliotheque-qgis">5. <em>(Optionnel)</em> Importer les styles dans votre bibliothèque QGIS</a></li>
 </ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>
