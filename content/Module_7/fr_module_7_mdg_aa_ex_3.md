@@ -110,6 +110,13 @@ Pour cela, elle utilisera deux jeux de données contenant des points issus d'Ope
 - [Établissement de santé](https://data.humdata.org/dataset/hotosm_mdg_health_facilities)
 - [Établissement d'éducation](https://data.humdata.org/dataset/hotosm_mdg_education_facilities)
 
+:::{card}
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_7_Exercise_3_AA_MDG_task_3-20250825T143514Z-1-001.zip
+
+__Téléchargez tous les ensembles de données ici, enregistrez le dossier sur votre ordinateur et décompressez le fichier.__ 
+
+:::
+
 # Tâches
 
 1. **Importer les données des établissements de santé et d'éducation**

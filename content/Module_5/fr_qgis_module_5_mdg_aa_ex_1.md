@@ -100,6 +100,15 @@ __Exercice guidée:__
 
 :::
 
+## Données disponibles
+
+:::{card}
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_5_Exercise_8_AA_MDG_task_1-20250825T143512Z-1-001.zip
+
+__Téléchargez tous les ensembles de données ici, enregistrez le dossier sur votre ordinateur et décompressez le fichier.__ 
+
+:::
+
 ## Tâches
 
 Avant de développer le modèle automatisé, Aina estimait manuellement la population exposée à chaque fois qu’un cyclone approchait de Madagascar.

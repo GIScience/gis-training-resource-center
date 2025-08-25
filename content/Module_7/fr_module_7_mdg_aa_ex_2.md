@@ -113,6 +113,13 @@ Dans cette tâche, vous allez aider Aina à construire une version simple de ce 
 
 ---
 
+:::{card}
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_7_Exercise_2_AA_MDG_task_2-20250825T143513Z-1-001.zip
+
+__Téléchargez tous les ensembles de données ici, enregistrez le dossier sur votre ordinateur et décompressez le fichier.__ 
+
+:::
+
 ## Tâches 
 
 1. **Ouvrir le modeleur**:

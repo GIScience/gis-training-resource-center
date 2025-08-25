@@ -70,7 +70,7 @@ __Exercice 1 : Estimation de la population exposée – L’approche manuelle d�
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_7/en_module_7_mdg_aa_ex_2.html 
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_7/fr_module_7_mdg_aa_ex_2.html 
 __Exercice 2 : Automatisation de l’estimation de la population exposée – Le modèle d’Aina (Module 7)__
 ^^^
 

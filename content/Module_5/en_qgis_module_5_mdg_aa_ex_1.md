@@ -99,7 +99,7 @@ __Wrap up:__
 ## Available Data
 
 :::{card}
-:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_7/Exercise_1.zip
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_5_Exercise_8_AA_MDG_task_1-20250825T143512Z-1-001.zip
 
 __Download all datasets [here](), save the folder on your computer and unzip the file.__ 
 
