@@ -95,6 +95,15 @@ __Wrap up:__
 
 :::
 
+## Available data
+
+:::{card}
+:link:  https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_4_Exercise_6_AA_MDG_task_4-20250825T143508Z-1-001.zip
+
+__Download all datasets here, save the folder on your computer and unzip the file.__ 
+:::
+
+## Context
 
 Aina now has all the analysis results she needs — but numbers and tables alone won’t convince her colleagues or decision-makers. What they need are clear and easy-to-read maps that can be used directly in meetings and reports.
 

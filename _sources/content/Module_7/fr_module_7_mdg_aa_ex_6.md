@@ -108,10 +108,6 @@ __Téléchargez les données pour cet exercice ici et dezipé le fichier.__
 :::
 
 
-
-
-
-
 **Contexte – Aina soutient les décideurs**
 
 Après avoir produit des cartes et des visualisations, Aina reçoit souvent des demandes de l’équipe des opérations:  
