@@ -105,7 +105,9 @@ __Download all datasets [here](), save the folder on your computer and unzip the
 
 :::
 
-The folder is called “ and contains the whole [standard folder structure](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure) with all data in the input folder and the additional documentation in the documentation folder.
+
+
+The folder contains the whole [standard folder structure](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure) with all data in the input folder and the additional documentation in the documentation folder.
 
 | Dataset| Source | Descriptions |
 | ----- | --- | --- |
