@@ -100,23 +100,33 @@ __Exercice guidée:__
 
 :::
 
+<<<<<<< HEAD
 ## Données disponibles
+=======
+## Téléchargement des données pour cet exercice
+>>>>>>> 7c5b4533cfb0a4f3ef67b7911d6595c5d093cd1a
 
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_5_Exercise_8_AA_MDG_task_1-20250825T143512Z-1-001.zip
 
+<<<<<<< HEAD
 __Téléchargez tous les ensembles de données ici, enregistrez le dossier sur votre ordinateur et décompressez le fichier.__ 
 
 :::
 
+=======
+__Téléchargez les données pour cet exercice ici et dezipé le fichier.__
+:::
+
+
+
+>>>>>>> 7c5b4533cfb0a4f3ef67b7911d6595c5d093cd1a
 ## Tâches
 
 Avant de développer le modèle automatisé, Aina estimait manuellement la population exposée à chaque fois qu’un cyclone approchait de Madagascar.
 Dans cette tâche, vous allez suivre les étapes qu’elle utilisait auparavant, en travaillant avec la trajectoire historique du Cyclone Harald, les données raster de WorldPop et les frontières administratives.
 
 Vous allez tamponner manuellement la trajectoire du cyclone, découper le raster de population, puis calculer la population exposée à l’aide des statistiques zonales.
-
-
 
 
 1. __Ouvrez QGIS__ et créez un [nouveau projet](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) en cliquant sur `Projet`-> `Nouveau Projet`.

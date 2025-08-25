@@ -100,7 +100,15 @@ __Exercice guidée:__
 
 :::
 
-# Tâches
+## Téléchargement des données pour cet exercice
+
+:::{card}
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_4_Exercise_6_AA_MDG_task_4-20250825T143508Z-1-001.zip
+
+__Téléchargez les données pour cet exercice ici et dezipé le fichier.__
+:::
+
+## Tâches
 
 Après avoir terminé son modèle, Aina souhaite **communiquer clairement les résultats** — à la fois à ses collègues de la Croix-Rouge et à des partenaires externes.
 

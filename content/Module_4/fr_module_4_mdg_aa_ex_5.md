@@ -99,6 +99,18 @@ __Exercice guidée:__
 
 :::
 
+
+## Téléchargement des données pour cet exercice
+
+:::{card}
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_4_Exercise_7_AA_MDG_task_5-20250825T143511Z-1-001.zip
+
+__Téléchargez les données pour cet exercice ici et dezipé le fichier.__
+:::
+
+
+
+
 ## Tâches:
 
 Après tout le travail d’analyse et de stylisation, Aina est prête à **partager ses résultats**. Mais créer une 

@@ -94,7 +94,15 @@ __Wrap up:__
 
 :::
 
-**Background – Aina Supports Decision Makers**
+## Available data
+
+:::{card}
+:link:  https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_7_Exercise_4_AA_MDG_task_6-20250825T143514Z-1-001.zip
+
+__Download all datasets here, save the folder on your computer and unzip the file.__ 
+:::
+
+**Context – Aina Supports Decision Makers**
 
 After producing maps and visuals, Aina often gets requests from the operations team:  
 > _“Can you send us the data in table format?”_

@@ -101,11 +101,14 @@ __Wrap up:__
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_5_Exercise_8_AA_MDG_task_1-20250825T143512Z-1-001.zip
 
-__Download all datasets [here](), save the folder on your computer and unzip the file.__ 
+
+__Download all datasets here, save the folder on your computer and unzip the file.__ 
 
 :::
 
-The folder is called “ and contains the whole [standard folder structure](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure) with all data in the input folder and the additional documentation in the documentation folder.
+
+
+The folder contains the whole [standard folder structure](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure) with all data in the input folder and the additional documentation in the documentation folder.
 
 | Dataset| Source | Descriptions |
 | ----- | --- | --- |
