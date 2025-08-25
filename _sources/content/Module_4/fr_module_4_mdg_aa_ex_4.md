@@ -6,7 +6,7 @@
 :::
 ::::
 
-# Exercice 2 : Identification des établissements de santé et d'éducation impactés – Aina ajoute des couches supplémentaires
+# Exercice 4 : Visualisation des résultats d'impact du cyclone - Aina applique des styles á ses couches
 
 
 ## Caractéristiques
