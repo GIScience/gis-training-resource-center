@@ -113,20 +113,12 @@ Dans cette tâche, vous allez aider Aina à construire une version simple de ce 
 
 ---
 
-<<<<<<< HEAD
-:::{card}
-:link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_7_Exercise_2_AA_MDG_task_2-20250825T143513Z-1-001.zip
-
-__Téléchargez tous les ensembles de données ici, enregistrez le dossier sur votre ordinateur et décompressez le fichier.__ 
-
-=======
 ## Téléchargement des données pour cet exercice
 
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_7_Exercise_2_AA_MDG_task_2-20250825T143513Z-1-001.zip
 
 __Téléchargez les données pour cet exercice ici et dezipé le fichier.__
->>>>>>> 7c5b4533cfb0a4f3ef67b7911d6595c5d093cd1a
 :::
 
 ## Tâches 
