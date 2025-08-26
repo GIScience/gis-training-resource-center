@@ -251,7 +251,7 @@ Configuration de l'opération: intersecter les établissements de education avec
        ```
        Compter les établissements de santé touchés par district
        ```  
-     - **Polygones**: sortie du décompte total des établissements de santé
+     - __Polygones__: `Frontières administratives` (sous entrées du modèle)
      - **Points**: sortie des établissements de santé intersectés
      - **Nom du champ de dénombrement**: 
        ```
@@ -273,7 +273,7 @@ Configuration de l'opération: compter les établissements de santé touchés pa
        ```
        Compter les établissements d’enseignement touchés par district
        ```   
-     - **Polygones**: sortie du décompte total des établissements d’enseignement
+     - __Polygones__: `Frontières administratives` (sous entrées du modèle)
      - **Points**: sortie des établissements d’éducation intersectés
      - **Nom du champ de dénombrement**: 
        ```
