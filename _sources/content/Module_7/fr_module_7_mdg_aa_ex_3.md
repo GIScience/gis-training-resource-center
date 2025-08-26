@@ -303,9 +303,11 @@ Pour calculer le pourcentage d’établissements de santé affectés par zone ad
     - **Type de champ**: Décimal (réel)
     - **Expression**:
     ```qgis
-    CASE WHEN "count_health_total" > 0
-    THEN "sum_exposed_healthsites_POI" / "count_health_total" * 100
-    ELSE
+    CASE
+WHEN "count_health_total" > 0
+THEN 	"sum_exposed_healthsites_POI" / "count_health_total" * 100
+ELSE 0
+END
     ```
     - Définir la sortie comme **Sortie du modèle**
     - Nommer:

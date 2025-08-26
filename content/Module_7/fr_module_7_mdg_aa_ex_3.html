@@ -971,20 +971,21 @@ Pour calculer le pourcentage d’établissements de santé affectés par zone ad
 <li><p><strong>Type de champ</strong>: Décimal (réel)</p></li>
 <li><p><strong>Expression</strong>:</p></li>
 </ul>
-<div class="highlight-qgis notranslate"><div class="highlight"><pre><span></span>CASE WHEN &quot;count_health_total&quot; &gt; 0
-THEN &quot;sum_exposed_healthsites_POI&quot; / &quot;count_health_total&quot; * 100
-ELSE
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>Définir la sortie comme <strong>Sortie du modèle</strong></p></li>
-<li><p>Nommer:</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">admin2_health_affected_pct</span>
+<div class="highlight-qgis notranslate"><div class="highlight"><pre><span></span>CASE
 </pre></div>
 </div>
 </li>
 </ul>
+<p>WHEN “count_health_total” &gt; 0
+THEN 	“sum_exposed_healthsites_POI” / “count_health_total” * 100
+ELSE 0
+END
+```
+- Définir la sortie comme <strong>Sortie du modèle</strong>
+- Nommer:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">admin2_health_affected_pct</span>
+</pre></div>
+</div>
 <figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_field_calc_pct_health_exposed.PNG"><img alt="../../_images/fr_MDG_AA_model_field_calc_pct_health_exposed.PNG" src="../../_images/fr_MDG_AA_model_field_calc_pct_health_exposed.PNG" style="width: 600px;" /></a>
 <figcaption>
