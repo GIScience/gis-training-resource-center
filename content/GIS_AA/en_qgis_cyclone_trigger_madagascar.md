@@ -5,14 +5,26 @@
 ::::{admonition} French Translation 
 :class: tip
 
-The french version of this page can be found [here](/content/GIS_AA/fr_qgis_cyclone_trigger_madagascar.md).
-
-La version française de cet article se trouve [ici](/content/GIS_AA/fr_qgis_cyclone_trigger_madagascar.md).
+The french version of this page can be found here:
+La version française de cet article se trouve ici:
 
 :::{card}
 :class-card: sd-text-center sd-border-1
 :link: https://giscience.github.io/gis-training-resource-center/content/GIS_AA/fr_qgis_cyclone_trigger_madagascar.html
 Version française
+:::
+
+::::
+
+::::{admonition} Download the data and project files
+:class: note
+
+The QGIS project file, the model, and the datasets required for the model can be downloaded from HeiGITs Gitlab here:
+
+:::{card}
+:class-card: sd-text-center sd-rounded-2 sd-border-1
+:link:https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/MDG_AA_Cyclone_Monitoring_Trigger.zip
+__Download the project.__
 :::
 
 ::::
@@ -31,9 +43,8 @@ Setting triggers is one of the cornerstones of the Forecast-based Financing syst
 
 **Activation Trigger:** if the Meteo Madagascar (DGM) forecast indicates landfall of a tropical cyclone with wind speeds in excess of 118 km/h within the next 48-72 hours.
 
-# Downloading the report
-
-<!-- This section will include information on how to download the final report as soon as its published -->
+<!---# Downloading the report
+ This section will include information on how to download the final report as soon as its published -->
 
 # Functionality of the Workflow
 
@@ -73,10 +84,15 @@ The QGIS project file, the model, and the datasets required for the model can be
 
 :::{card}
 :class-card: sd-text-center sd-rounded-2 sd-border-1
-:link: https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar/-/tree/68e58a254f12406101a398e895436ccc198f8938/AA_Cyclone_Monitoring_Trigger_MAD
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/MDG_AA_Cyclone_Monitoring_Trigger.zip
 __Download the project.__
 :::
 
+```{dropdown} Downlaoding the project.
+
+To download the project click on the 
+
+```
 ::::
 
 
@@ -408,8 +424,8 @@ We have all the necessary layers to create the individual maps. The next section
 :::{admonition} Output maps
 :class: note
 
-We will generate three different types of output maps to support the analysis:
-- Map 1 will provide an cyclone impact overview of the **affected districts, the extent of the cyclone event, and the locations of relevant warehouses**.
+We will generate two different types of output maps to support the analysis:
+- Map 1 will provide an cyclone impact overview of the **affected districts, the extent of the cyclone event, and the locations of  warehouses**.
 - Map 2 will focus on the impact to infrastructure and population. We will create 5 different impact maps displaying the following information:
     - **exposed population**
     - **exposed buildings**
@@ -417,7 +433,7 @@ We will generate three different types of output maps to support the analysis:
     - **exposed education facilities**
     - **exposed agricultural landcover**
 
-Additionally, a map showing the **warehouse isochrones** for all 13 warehouses will be provided. The map and the map template can be found in the **warehouse_isochrone_matrix** folder.
+<!---Additionally, a map showing the **warehouse isochrones** for all 13 warehouses will be provided. The map and the map template can be found in the **warehouse_isochrone_matrix** folder.-->
 :::
 
 We will create the maps in two steps:
@@ -492,7 +508,7 @@ Repeat this process for the following output layers, along with their correspond
 | Layer name | Style | Comment
 | ----- | --- | --- |
 |`Admin1_Impact_Overview_Map`| `adm1_style.qml` | pre-loaded |
-|`CRM_warehouses` | `relevant_warehouses_style.qml` | model output |
+|`CRM_warehouses` | `CRM_warehouses_style.qml` | model output |
 |`exposed_cyclone_area`|`exposed_cyclone_area_style.qml`| model output |
 |`cyclone_track`| `storm_track_cyclone_style.qml`| pre-loaded |
 
@@ -596,9 +612,9 @@ width: 600 px
         ```md
         Exposed Cyclone Area
         ```
-        * `relevant_warehouses` → rename to  
+        * `CRM_warehouses` → rename to  
         ```md
-        Relevant Warehouses
+        CRM Warehouses
         ```
         * `Background Map: OpenStreetMap` → rename to  
         ```md
@@ -729,7 +745,7 @@ Repeat this process for the following output layers, along with their correspond
 | Layer name | Style | Comment
 | ----- | --- | --- |
 |`Admin1_Impact_Assessment_Map`| `adm1_style.qml` | pre-loaded |
-|`CRM_warehouses` | `relevant_warehouses_style.qml` | model output |
+|`CRM_warehouses` | `CRM_warehouses_style.qml` | model output |
 |`exposed_cyclone_area`|`exposed_cyclone_area_style.qml`| model output |
 |`cyclone_track`| `storm_track_cyclone_style.qml`| loaded by user |
 
@@ -756,7 +772,7 @@ The documentation covers the exposed population impact assessment map. However, 
 |`exposed_agricultural_landcover`| `exposed_agriculture_landcover_style.qml` | model output |
 |`exposed_health_facilities_points`| `points_exposed_health_facilities_style.qml` | model output |
 |`exposed_education_facilities_points`| `points_exposed_education_facilities_style.qml` | model output |
-|`relevant_warehouses` | `relevant_warehouses_style.qml` | model output |
+|`relevant_warehouses` | `CRM_warehouses_style.qml` | model output |
 |`exposed_cyclone_area`|`exposed_cyclone_area_style.qml`| model output |
 |`cyclone_track`| `storm_track_cyclone_style.qml`| loaded by user |
 <!--Move this somewhere else where it is easier to understand OR add pictures to illustrate the different maps?-->
@@ -827,9 +843,9 @@ Projected Cyclone Track
 ```md
 Exposed Cyclone Area
 ```
-* `relevant_warehouses` → rename to  
+* `CRM_warehouses` → rename to  
 ```md
-Relevant Warehouses
+CRM Warehouses
 ```
 * `Background Map: OpenStreetMap` → rename to  
 ```md
@@ -855,9 +871,9 @@ Projected Cyclone Track
 ```md
 Exposed Cyclone Area
 ```
-* `relevant_warehouses` → rename to  
+* `CRM_warehouses` → rename to  
 ```md
-Relevant Warehouses
+CRM Warehouses
 ```
 * `Background Map: OpenStreetMap` → rename to  
 ```md
@@ -883,9 +899,9 @@ Projected Cyclone Track
 ```md
 Exposed Cyclone Area
 ```
-* `relevant_warehouses` → rename to  
+* `CRM_warehouses` → rename to  
 ```md
-Relevant Warehouses
+CRM Warehouses
 ```
 * `Background Map: OpenStreetMap` → rename to  
 ```md
@@ -911,9 +927,9 @@ Projected Cyclone Track
 ```md
 Exposed Cyclone Area
 ```
-* `relevant_warehouses` → rename to  
+* `CRM_warehouses` → rename to  
 ```md
-Relevant Warehouses
+CRM Warehouses
 ```
 * `Background Map: OpenStreetMap` → rename to  
 ```md
@@ -939,9 +955,9 @@ Projected Cyclone Track
 ```md
 Exposed Cyclone Area
 ```
-* `relevant_warehouses` → rename to  
+* `CRM_warehouses` → rename to  
 ```md
-Relevant Warehouses
+CRM Warehouses
 ```
 * `Background Map: OpenStreetMap` → rename to  
 ```md
@@ -967,9 +983,9 @@ Projected Cyclone Track
 ```md
 Exposed Cyclone Area
 ```
-* `relevant_warehouses` → rename to  
+* `CRM_warehouses` → rename to  
 ```md
-Relevant Warehouses
+CRM Warehouses
 ```
 * `Background Map: OpenStreetMap` → rename to  
 ```md
@@ -995,9 +1011,9 @@ Projected Cyclone Track
 ```md
 Exposed Cyclone Area
 ```
-* `relevant_warehouses` → rename to  
+* `CRM_warehouses` → rename to  
 ```md
-Relevant Warehouses
+CRM Warehouses
 ```
 * `Background Map: OpenStreetMap` → rename to  
 ```md

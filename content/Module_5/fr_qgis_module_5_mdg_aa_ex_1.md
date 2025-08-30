@@ -100,14 +100,31 @@ __Exercice guidée:__
 
 :::
 
+## Téléchargement des données pour cet exercice
+
+:::{card}
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_5_Exercise_8_AA_MDG_task_1-20250825T143512Z-1-001.zip
+
+__Téléchargez les données pour cet exercice ici et dezipé le fichier.__
+:::
+
+Le dossier s'appelle __"__ et contient toute la [structure de dossier standard](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_management.html#standard-folder-structure) avec toutes les données dans le sous-dossier `/data/input/` et la documentation supplémentaire dans le dossier `/documentation/`. 
+
+| Ensemble de données | Source | Descriptions |
+| ----- | --- | --- |
+| Frontières administrative | [HDX](https://data.humdata.org/dataset/cod-ab-mdg) | Les limites administratives aux niveaux 0 à 4 pour Madagascar sont accessibles via HDX fourni par OCHA. Pour cette analyse, nous fournissons les limites administratives des niveaux 1 (régional) et 2 (district) au format shapefile. |
+| Trajectoires des cyclones | [International Best Track Archive for Climate Stewardship (IBTrACS)](https://www.ncei.noaa.gov/products/international-best-track-archive)  | Le projet IBTrACS est la collection mondiale des cyclones tropicaux la plus complète  disponible. Il fusionne des données récentes et historiques provenant de plusieurs agences pour créer un jeu de données unifié, public  améliorant les comparaisons inter-agences.  |
+| Établissements éducatifs et sites de santé| [HOT Export Tool](https://export.hotosm.org/vi/v3/exports/new/describe) | Les données des lieux d'intérêts (établissements éducatifs et sites de santé) sont téléchargées via l'util "HOT Export Tool" basé sur les données du projet OpenStreetMap. |
+| Population | [WorldPop](https://hub.worldpop.org/geodata/summary?id=49646) | L'ensemble de données WorldPop au format raster fournit le nombre estimé de personnes par cellule raster pour l’année 2020. Nous travaillerons avec l'ensemble de données des pays individuels contraints 2020 à une résolution de 100 m. | 
+
+
+
 ## Tâches
 
 Avant de développer le modèle automatisé, Aina estimait manuellement la population exposée à chaque fois qu’un cyclone approchait de Madagascar.
 Dans cette tâche, vous allez suivre les étapes qu’elle utilisait auparavant, en travaillant avec la trajectoire historique du Cyclone Harald, les données raster de WorldPop et les frontières administratives.
 
 Vous allez tamponner manuellement la trajectoire du cyclone, découper le raster de population, puis calculer la population exposée à l’aide des statistiques zonales.
-
-
 
 
 1. __Ouvrez QGIS__ et créez un [nouveau projet](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) en cliquant sur `Projet`-> `Nouveau Projet`.

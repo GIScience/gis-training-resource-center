@@ -94,9 +94,16 @@ __Wrap up:__
 
 :::
 
+## Available data
+
+:::{card}
+:link:  https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_4_Exercise_7_AA_MDG_task_5-20250825T143511Z-1-001.zip
+
+__Download all datasets here, save the folder on your computer and unzip the file.__ 
+:::
 
 
-# Tasks: 
+## Context
 
 After all the hard work of analyzing data and styling layers, Aina is ready to **share her results**. But creating a professional-looking map from scratch every time would be slow and repetitive.  
 
@@ -104,6 +111,10 @@ To save time, she uses **map templates (.qpt files)** prepared by her team. Thes
 
 ✅ **Goal**  
 Apply a ready-made QGIS map template to quickly create and export maps that show cyclone impacts on population, health facilities, and schools.  
+
+
+## Tasks: 
+
 
 
 1. Load the pre-made print layout template

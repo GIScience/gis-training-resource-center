@@ -6,7 +6,7 @@
 :::
 ::::
 
-# Exercice 2 : Identification des établissements de santé et d'éducation impactés – Aina ajoute des couches supplémentaires
+# Exercice 3 : Identification des établissements de santé et d'éducation impactés – Aina ajoute des couches supplémentaires
 
 
 ## Caractéristiques
@@ -109,6 +109,13 @@ Pour cela, elle utilisera deux jeux de données contenant des points issus d'Ope
 
 - [Établissement de santé](https://data.humdata.org/dataset/hotosm_mdg_health_facilities)
 - [Établissement d'éducation](https://data.humdata.org/dataset/hotosm_mdg_education_facilities)
+
+:::{card}
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_7_Exercise_3_AA_MDG_task_3-20250825T143514Z-1-001.zip
+
+__Téléchargez tous les ensembles de données ici, enregistrez le dossier sur votre ordinateur et décompressez le fichier.__ 
+
+:::
 
 # Tâches
 
@@ -244,7 +251,7 @@ Configuration de l'opération: intersecter les établissements de education avec
        ```
        Compter les établissements de santé touchés par district
        ```  
-     - **Polygones**: sortie du décompte total des établissements de santé
+     - __Polygones__: `Frontières administratives` (sous entrées du modèle)
      - **Points**: sortie des établissements de santé intersectés
      - **Nom du champ de dénombrement**: 
        ```
@@ -266,7 +273,7 @@ Configuration de l'opération: compter les établissements de santé touchés pa
        ```
        Compter les établissements d’enseignement touchés par district
        ```   
-     - **Polygones**: sortie du décompte total des établissements d’enseignement
+     - __Polygones__: `Frontières administratives` (sous entrées du modèle)
      - **Points**: sortie des établissements d’éducation intersectés
      - **Nom du champ de dénombrement**: 
        ```
@@ -296,9 +303,11 @@ Pour calculer le pourcentage d’établissements de santé affectés par zone ad
     - **Type de champ**: Décimal (réel)
     - **Expression**:
     ```qgis
-    CASE WHEN "count_health_total" > 0
-    THEN "sum_exposed_healthsites_POI" / "count_health_total" * 100
-    ELSE
+    CASE
+WHEN "count_health_total" > 0
+THEN 	"sum_exposed_healthsites_POI" / "count_health_total" * 100
+ELSE 0
+END
     ```
     - Définir la sortie comme **Sortie du modèle**
     - Nommer:

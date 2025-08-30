@@ -5,7 +5,7 @@ Cette piste d’exercice se concentre sur l’évaluation préliminaire d’un �
 Dans cette piste, vous construirez un flux de travail analytique sous forme de modèle QGIS et visualiserez les résultats à l’aide de modèles de cartes et de fichiers de style.
 
 
-::::{admonition} French version - Version française
+::::{admonition} English version - Version anglaise
 :class:
 
 We offer an english version of this exercise track which can be found here: 
@@ -49,6 +49,7 @@ anticipative rapide et fondée sur les données, avant que le cyclone n’atteig
 
 ::::
 
+
 :::{card}
 :link: https://giscience.github.io/gis-training-resource-center/content/Module_5/fr_qgis_module_5_mdg_aa_ex_1.html 
 __Exercice 1 : Estimation de la population exposée – L’approche manuelle d’Aina (Module 5)__
@@ -69,7 +70,7 @@ __Exercice 1 : Estimation de la population exposée – L’approche manuelle d�
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_7/en_module_7_mdg_aa_ex_2.html 
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_7/fr_module_7_mdg_aa_ex_2.html 
 __Exercice 2 : Automatisation de l’estimation de la population exposée – Le modèle d’Aina (Module 7)__
 ^^^
 
@@ -88,7 +89,7 @@ __Exercice 2 : Automatisation de l’estimation de la population exposée – Le
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_5/fr_module_7_mdg_aa_ex_3.html
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_7/fr_module_7_mdg_aa_ex_3.html
 __Exercice 3 : Identification des établissements de santé et écoles affectés – Aina ajoute des couches (Module 7)__
 ^^^
 

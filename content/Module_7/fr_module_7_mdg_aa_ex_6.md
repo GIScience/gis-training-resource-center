@@ -99,6 +99,13 @@ __Exercice guidée:__
 
 :::
 
+## Données disponibles
+
+:::{card}
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_7_Exercise_4_AA_MDG_task_6-20250825T143514Z-1-001.zip
+
+__Téléchargez les données pour cet exercice ici et dezipé le fichier.__
+:::
 
 
 **Contexte – Aina soutient les décideurs**

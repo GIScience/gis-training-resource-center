@@ -96,7 +96,15 @@ __Wrap up:__
 
 :::
 
-## Tasks: 
+## Available data
+
+:::{card}
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_7_Exercise_3_AA_MDG_task_3-20250825T143514Z-1-001.zip
+
+__Download all datasets here, save the folder on your computer and unzip the file.__ 
+:::
+
+## Context 
 
 After building her model to estimate exposed population, Aina wants to expand its usefulness. She decides to also **identify critical services** affected by cyclones — especially **health facilities** and **schools**. 
 
@@ -106,6 +114,8 @@ To achieve this, she will use two point datasets from OpenStreetMap:
 
 - [Health facilities](https://data.humdata.org/dataset/hotosm_mdg_health_facilities)  
 - [Education facilities](https://data.humdata.org/dataset/hotosm_mdg_education_facilities)
+
+## Tasks:
 
 1. **Load the health and education facilities datasets**
 First, let's have a look at the data we want to work with.
@@ -154,7 +164,7 @@ Définir une nouvelle entrée de modèle : couche vectorielle de points représe
 width: 300px
 align: center
 ---
-Définir une nouvelle entrée de modèle : couche vectorielle de points représentant les établissements d'enseignement
+Définir une nouvelle entrée de modèle : couche vectorielle de points représentant les établissements d'éducation
 ```
 :::
 ::::

@@ -1,10 +1,22 @@
 # Workflow de déclenchement en QGIS pour Madagascar
 
 
+
 Le workflow QGIS présenté dans cet article a été développé dans le cadre du projet "Anticipatory-Action" (AA) (action anticipative) de la Croix-Rouge malgache (CRM), de la Croix-Rouge allemande (GRC) et de l'institut de Heidelberg pour les technologies de géoinformation (HeiGIT).
 
 Le workflow est presque entièrement automatisé grâce à un modèle QGIS et ne nécessite aucune intervention manuelle. Le chapitre "Fonctionnalité du workflow" décrit le processus et l'application pratique.
 Chaque étape inclut dans le modèle est expliquée en détail afin de permettre une compréhension complète du workflow et de la manière dont l'analyse a été réalisée.
+
+::::{admonition} Télécharger les fichiers et données
+
+Le fichier de projet QGIS, le modèle et les jeux de données nécessaires pour le modèle peuvent être téléchargés depuis le GitLab de HeiGIT ici:
+
+:::{card}
+:class-card: sd-text-center sd-rounded-2 sd-border-1
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/MDG_AA_Cyclone_Monitoring_Trigger.zip
+__Télécharger le projet__
+
+::::
 
 ## Contexte
 
@@ -16,9 +28,9 @@ La définition de déclencheurs est l'un des piliers du système de financement 
 
 **Déclencheur d'activation:** si les prévisions de Météo Madagascar (DGM) indiquent l'arrivée d'un cyclone tropical avec des vents dépassant 118 km/h dans les 48 à 72 heures à venir.
 
-# Téléchargement du rapport
+<!--# Téléchargement du rapport
 
-<!-- This section will include information on how to download the final report as soon as its published -->
+ This section will include information on how to download the final report as soon as its published -->
 
 # Fonctionnalité du flux de travail
 
@@ -58,7 +70,7 @@ Le fichier de projet QGIS, le modèle et les jeux de données nécessaires pour 
 
 :::{card}
 :class-card: sd-text-center sd-rounded-2 sd-border-1
-:link: https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar/-/tree/68e58a254f12406101a398e895436ccc198f8938/AA_Cyclone_Monitoring_Trigger_MAD
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/MDG_AA_Cyclone_Monitoring_Trigger.zip
 __Télécharger le projet__
 
 ::::
@@ -398,7 +410,7 @@ Nous avons toutes les couches nécessaires pour créer les cartes individuelles.
 :::{admonition} Cartes de résultats
 :class: note
 
-Nous générerons trois types de cartes différents pour faciliter l'analyse : 
+Nous générerons deux types de cartes différents pour faciliter l'analyse : 
 - La carte 1 donnera un aperçu de l'impact du cyclone sur les **districts touchés, la gravité du cyclone et l'emplacement des entrepôts concernés**.
 - La carte 2 se concentrera sur l'impact sur les infrastructures et la population. Nous créerons 5 cartes d'impact différentes affichant les informations suivantes:
     - **population exposée**
@@ -407,7 +419,7 @@ Nous générerons trois types de cartes différents pour faciliter l'analyse :
     - **établissements scolaires exposés**
     - **couverture agricole exposée**
 
-De plus, une carte indiquant les **isochrones des entrepôts** pour les 13 entrepôts sera fournie. La carte et le modèle de carte se trouvent dans le dossier **warehouse_isochrone_matrix**.
+<!---De plus, une carte indiquant les **isochrones des entrepôts** pour les 13 entrepôts sera fournie. La carte et le modèle de carte se trouvent dans le dossier **warehouse_isochrone_matrix**.--->
 :::
 
 Nous allons créer les cartes en deux étapes:
@@ -585,7 +597,7 @@ width: 600 px
         ```md
         Zone exposée aux cyclones
         ```
-        * `relevant_warehouses` → renommer en
+        * `CRM_warehouses` → renommer en
         ```md
         Entrepôts concernés
         ```
@@ -701,7 +713,7 @@ Répétez ce processus pour les couches de sortie suivantes, ainsi que pour leur
 | Nom de la couche | Style | Remarques
 | ----- | --- | --- |
 |`Admin1_Impact_Assessment_Map`| `adm1_style.qml` | préchargé |
-|`CRM_warehouses` | `relevant_warehouses_style.qml` | résultat du modèle |
+|`CRM_warehouses` | `CRM_warehouses_style.qml` | résultat du modèle |
 |`exposed_cyclone_area`|`exposed_cyclone_area_style.qml`| résultat du modèle |
 |`cyclone_track`| `storm_track_cyclone_style.qml`| chargé par l'utilisateur |
 
@@ -728,7 +740,7 @@ La documentation couvre la carte d'évaluation de l'impact sur la population exp
 |`exposed_agricultural_landcover`| `exposed_agriculture_landcover_style.qml` | résultat du modèle |
 |`exposed_health_facilities_points`| `points_exposed_health_facilities_style.qml` | résultat du modèle |
 |`exposed_education_facilities_points`| `points_exposed_education_facilities_style.qml` | résultat du modèle |
-|`relevant_warehouses` | `relevant_warehouses_style.qml` | résultat du modèle |
+|`CRM_warehouses` | `CRM_warehouses_style.qml` | résultat du modèle |
 |`exposed_cyclone_area`|`exposed_cyclone_area_style.qml`| résultat du modèle |
 |`cyclone_track`| `storm_track_cyclone_style.qml`| chargé par l'utilisateur |
 <!--Move this somewhere else where it is easier to understand OR add pictures to illustrate the different maps?-->
@@ -796,9 +808,9 @@ Trajectoire prévue du cyclone
 ```md
 Zone exposée aux cyclones
 ```
-* `relevant_warehouses` → renommer en  
+* `CRM_warehouses` → renommer en  
 ```md
-Entrepôts concernés
+Entrepôts de la CRM
 ```
 * `Carte de fond : OpenStreetMap` → renommer en  
 ```md
@@ -824,9 +836,9 @@ Trajectoire prévue du cyclone
 ```md
 Zone exposée aux cyclones
 ```
-* `relevant_warehouses` → renommer en  
+* `CRM_warehouses` → renommer en  
 ```md
-Entrepôts concernés
+Entrepôts de la CRM
 ```
 * `Carte de fond : OpenStreetMap` → renommer en  
 ```md
@@ -852,9 +864,9 @@ Trajectoire prévue du cyclone
 ```md
 Zone exposée aux cyclones
 ```
-* `relevant_warehouses` → renommer en  
+* `CRM_warehouses` → renommer en  
 ```md
-Entrepôts concernés
+Entrepôts de la CRM
 ```
 * `Carte de fond : OpenStreetMap` → renommer en  
 ```md
@@ -880,9 +892,9 @@ Trajectoire prévue du cyclone
 ```md
 Zone exposée aux cyclones
 ```
-* `relevant_warehouses` → renommer en  
+* `CRM_warehouses` → renommer en  
 ```md
-Entrepôts concernés
+Entrepôts de la CRM
 ```
 * `Carte de fond : OpenStreetMap` → renommer en  
 ```md
@@ -908,9 +920,9 @@ Trajectoire prévue des cyclones
 ```md
 Zone cyclonique exposée
 ```
-* `relevant_warehouses` → renommer en  
+* `CRM_warehouses` → renommer en  
 ```md
-Entrepôts concernés
+Entrepôts de la CRM
 ```
 * `Carte de fond : OpenStreetMap` → renommer en  
 ```md
@@ -936,9 +948,9 @@ Trajectoire prévue du cyclone
 ```md
 Zone exposée aux cyclones
 ```
-* `relevant_warehouses` → renommer en  
+* `CRM_warehouses` → renommer en  
 ```md
-Entrepôts concernés
+Entrepôts de la CRM
 ```
 * `Carte de fond : OpenStreetMap` → renommer en  
 ```md
@@ -964,9 +976,9 @@ Trajectoire prévue du cyclone
 ```md
 Zone exposée aux cyclones
 ```
-* `relevant_warehouses` → renommer en  
+* `CRM_warehouses` → renommer en  
 ```md
-Entrepôts concernés
+Entrepôts de la CRM
 ```
 * `Background Map: OpenStreetMap` → renommer en  
 ```md
