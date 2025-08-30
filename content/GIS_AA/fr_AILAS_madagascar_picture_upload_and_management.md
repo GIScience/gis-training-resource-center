@@ -1,15 +1,18 @@
-::::{admonition} French Translation 
-:class: tip
-
-La version originale anglaise de cet article se trouve [ici](/content/GIS_AA/en_AILAS_madagascar_section_O.md).
-
-The english original version of this page can be found [here](/content/GIS_AA/en_AILAS_madagascar_section_O.md).
-
 # Téléversement et gestion des images : Projet AILAS
 
 Cette documentation fournit des instructions sur la manière de téléverser et de gérer les images au niveau de la rue qui sont capturées dans le cadre du projet AILAS.
 
 ## Contexte : Panoramax
+
+<!-- Screenshot Panoramax -->
+
+```{figure} /fig/AILAS_screenshot_panoramax.png
+---
+name: Screenshot Panoramax
+width: 400px
+---
+Capture d’écran d’une image de rue sur Panoramax
+```
 
 Toutes les images capturées dans le cadre du projet AILAS doivent être téléversées vers une instance privée de la plateforme d’imagerie au niveau de la rue **Panoramax**. Cela garantit que les images soient facilement accessibles aux parties prenantes concernées pour une utilisation ultérieure dans le projet (annotation de données d’entraînement, modélisation), tout en étant protégées contre l’accès par des utilisateurs non autorisés.
 
@@ -49,5 +52,111 @@ Panoramax empêche l’identification des personnes présentes dans les images e
 
 Alors qu’une des principales fonctionnalités de Panoramax est son **métacatalogue global public** qui permet de retrouver les images de toutes les instances fédérées, nous avons délibérément choisi de ne pas rejoindre la fédération avec l’instance Panoramax du projet AILAS. Cela signifie que les images téléversées sur notre instance ne peuvent pas être consultées via l’API globale.
 
-L’API de l’instance Panoramax du projet AILAS fonctionne sur un serveur accessible uniquement depuis notre propre réseau. Les images et leurs dérivés sont stockés dans un bucket privé MinIO. L’accès au site web qui permet le téléversement et l’exploration visuelle des images collectées est protégé par mot de passe.
+L’API de l’instance Panoramax du projet AILAS fonctionne sur un serveur accessible uniquement depuis notre propre réseau. Les images et leurs dérivés sont stockés dans un bucket privé MinIO. Le site web et l’API donnant accès aux images et aux données sont actuellement hébergés sur un réseau fermé.
+
+## Téléversement des images
+🚧 Le processus décrit ici est une solution temporaire et va changer. 🚧
+
+### 1. Retirez la carte SD de la caméra.
+
+::::{grid} 2
+:::{grid-item}
+
+```{figure} /fig/AILAS_slide_lid.jpg
+---
+name: Slide lid
+width: 375 px
+---
+Faites coulisser le couvercle
+```
+
+:::
+
+:::{grid-item}
+
+```{figure} /fig/AILAS_push_card.jpg
+---
+name: push card
+width: 375 px
+---
+Poussez délicatement la carte SD pour la retirer.
+```
+
+:::
+::::
+
+### 2. Insérez la carte dans le lecteur et connectez-le à l’ordinateur.
+
+```{figure} /fig/AILAS_insert_card.jpg
+---
+name: insert card
+width: 400 px
+---
+Insérez la carte dans le lecteur 
+```
+
+Avec la carte SD insérée, connectez le lecteur de cartes à un ordinateur.
+
+### 3. Connectez-vous au bucket de téléversement
+
+```{figure} /fig/AILAS_bucket_login.png
+---
+name: login bucket
+width: 400 px
+---
+Connectez-vous au bucket de téléversement
+```
+
+Ouvrez le  [bucket de téléversement](https://warm.storage.heigit.org/ui/browser/heigit-hum-panoramax-temp) dans votre navigateur et connectez-vous avec les identifiants qui vous ont été fournis.
+
+### 4. Téléversez les images
+
+```{figure} /fig/AILAS_upload_button.png
+---
+name: upload button
+width: 400 px
+---
+Cliquez sur le bouton de téléversement et sélectionnez « Upload file »
+```
+
+::::{grid} 2
+:::{grid-item}
+
+```{figure} /fig/AILAS_select_files.png
+---
+name: select files
+width: 375 px
+---
+Sélectionnez les fichiers d’images
+```
+
+:::
+
+:::{grid-item}
+
+```{figure} /fig/AILAS_upload_completed.png
+---
+name: upload completed
+width: 375 px
+---
+Attendez que le téléversement de tous les fichiers soit terminé
+```
+
+:::
+::::
+
+Cliquez sur le bouton de téléversement et sélectionnez « Upload file ».  
+Une fenêtre de navigation de fichiers s’ouvrira. Sélectionnez et ouvrez toutes les images de la carte SD (généralement dans le sous-dossier `/DCIM/100GOPRO`).  
+Attendez que l’état de téléversement de tous les fichiers image atteigne 100 %.
+
+### 5. Supprimez les images
+
+Une fois que vous avez téléversé avec succès les images, supprimez-les de la carte SD.
+
+### 6. Réinsérez la carte SD dans la caméra
+
+Retirez en toute sécurité le lecteur de cartes SD de votre ordinateur, puis réinsérez la carte dans la caméra.
+
+## Explorations des images sur Panoramax
+🚧 Information à venir. 🚧
 

@@ -1,15 +1,18 @@
-::::{admonition} French Translation 
-:class: tip
-
-The french version of this page can be found [here](/content/GIS_AA/fr_AILAS_madagascar_section_O.md).
-
-La version française de cet article se trouve [ici](/content/GIS_AA/fr_AILAS_madagascar_section_O.md).
-
 # Picture upload and management: AILAS Project
 
 This documentation provides instructions on how to upload and manage street-level images that are captured in the framework of the AILAS project.
 
 ## Background: Panoramax
+
+<!-- Screenshot Panoramax -->
+
+```{figure} /fig/AILAS_screenshot_panoramax.png
+---
+name: Screenshot Panoramax
+width: 400px
+---
+Screenshot of a street level image displayed on Panoramax
+```
 
 All pictures captured in the framework of the AILAS project are expected to be uploaded to a private instance of the street-level imagery platform Panoramax. This ensures that the imagery is easily available to the concerned stakeholders for the further usage in the project (labelling of training data, modelling), while being protected against access from unauthorized users.
 
@@ -49,12 +52,108 @@ Panoramax prevents the identification of people in the imagery by blurring faces
 
 While one of the main features of Panoramax is its global public meta-catalogue that makes images from all federated instances findable, we deliberately choose not to join the federation with the Panoramax instance of the AILAS project. This means that images uploaded to our instance cannot be accessed through the global API.
 
-The API of the AILAS Panoramax instance runs on a server that is only accessible from within our own network. Images and derivates are stored in a private MinIO bucket. Access to the website that allows upload and visual exploration of the collected imagery is password protected. 
+The API of the AILAS Panoramax instance runs on a server that is only accessible from within our own network. Images and derivates are stored in a private MinIO bucket. The website and the API that allow access to the images and the data currently run on a closed network.
 
 ## Picture upload
+🚧 The process described here is a temporary solution and due to change. 🚧
 
-## Picture management
+### 1. Remove the SD card from the camera.
 
-### Explore
+::::{grid} 2
+:::{grid-item}
 
-###  
+```{figure} /fig/AILAS_slide_lid.jpg
+---
+name: Slide lid
+width: 375 px
+---
+Slide open the lid 
+```
+
+:::
+
+:::{grid-item}
+
+```{figure} /fig/AILAS_push_card.jpg
+---
+name: push card
+width: 375 px
+---
+Gently push the SD card to remove it
+```
+
+:::
+::::
+
+### 2. Insert into card reader and connect to computer.
+
+```{figure} /fig/AILAS_insert_card.jpg
+---
+name: insert card
+width: 400 px
+---
+Insert the SD card into the card reader
+```
+
+With the SD card inserted, connect the card reader to a computer.
+
+### 3. Sign in to upload bucket
+
+```{figure} /fig/AILAS_bucket_login.png
+---
+name: login bucket
+width: 400 px
+---
+Sign in to upload bucket
+```
+
+Open the [upload bucket](https://warm.storage.heigit.org/ui/browser/heigit-hum-panoramax-temp) in your browser and log in with the credentials provided to you.
+
+### 4. Upload images
+
+```{figure} /fig/AILAS_upload_button.png
+---
+name: upload button
+width: 400 px
+---
+Click the upload button and select "Upload file"
+```
+
+::::{grid} 2
+:::{grid-item}
+
+```{figure} /fig/AILAS_select_files.png
+---
+name: select files
+width: 375 px
+---
+Select the image files
+```
+
+:::
+
+:::{grid-item}
+
+```{figure} /fig/AILAS_upload_completed.png
+---
+name: upload completed
+width: 375 px
+---
+Wait until the upload of all files is completed
+```
+
+:::
+::::
+
+Click the Upload button and select `Upload file`. A file browser will open. Select and open all the images on the SD card (usually in the subfolder `/DCIM/100GOPRO`). Wait until the upload status of all image files is at 100 %.
+
+### 5. Delete images
+
+Once you have successfully uploaded the images, delete them from the SD card.
+
+### 6. Re-insert sd card into camera
+
+Safely remove the SD card reader from your computer, and re-insert the card into the camera.
+
+## Picture exploration on Panoramax
+🚧 Information will follow. 🚧
