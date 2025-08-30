@@ -132,9 +132,12 @@ parts:
           - file: content/GIS_AA/en_qgis_srcs_basic_ex.md
       - file: content/GIS_AA/en_AILAS_madagascar.md
         sections:
-          - file: content/GIS_AA/en_AILAS_madagascar_section_S.md
-          - file: content/GIS_AA/en_AILAS_madagascar_section_F.md
-          - file: content/GIS_AA/en_AILAS_madagascar_section_J.md
+          - file: content/GIS_AA/en_AILAS_madagascar_camera_usage_guide.md
+          - file: content/GIS_AA/en_AILAS_madagascar_picture_upload_and_management.md
+      - file: content/GIS_AA/fr_AILAS_madagascar.md
+        sections:
+          - file: content/GIS_AA/fr_AILAS_madagascar_camera_usage_guide.md
+          - file: content/GIS_AA/fr_AILAS_madagascar_picture_upload_and_management.md
       - file: content/GIS_AA/en_qgis_risk_assessment_plugin.md
         sections:
           - file: content/GIS_AA/en_qgis_generate_indicators_for_plugin.md

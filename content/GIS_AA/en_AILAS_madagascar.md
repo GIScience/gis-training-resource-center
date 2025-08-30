@@ -1,7 +1,15 @@
 🚧This part of training platform is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
-# AI Logistic Awareness System (AILAS) Street View image collection Field Experiments
-This documentation aims to consolidate all information regarding the Street View image collection field experiments for AILAS and give a consise overview over the AILAS project. It focuses on the process of collecting Street View images and is intended for use by participants in the experiments as a practical guideline. The sub sections  __[Camera Usage Guide: AILAS Project](/content/GIS_AA/en_AILAS_madagascar_section_F.md)__ and __[Upload Guide](/content/GIS_AA/en_AILAS_madagascar_section_J.md)__ provide detailed instructions on the camera setup and usage for in field data aquisition and on the upload of the generated data to a cloud.
+::::{admonition} French Translation 
+:class: tip
+
+The french version of this page can be found [here](/content/GIS_AA/fr_AILAS_madagascar.md).
+
+La version française de cet article se trouve [ici](/content/GIS_AA/fr_AILAS_madagascar.md).
+::::
+
+# AI Logistic Awareness System (AILAS) Street level image collection Field Experiments
+This documentation aims to consolidate all information regarding the Street level image collection field experiments for AILAS and give a consise overview over the AILAS project. It focuses on the process of collecting Street level images and is intended for use by participants in the experiments as a practical guideline. The sub sections  __[Camera Usage Guide: AILAS Project](/content/GIS_AA/en_AILAS_madagascar_camera_usage_guid.md)__ and __[Picture Upload and Management Guide](/content/GIS_AA/en_AILAS_madagascar_picture_upload_and_management.md)__ provide detailed instructions on the camera setup and usage for in field data aquisition and on the upload of the generated data to a cloud.
 
 ## The AILAS Project
 AILAS is a planned, weather-adaptive routing service that helps people to plan trips on unpaved roads by showing which road segments are currently passable. It combines fresh street-level images with rainfall, soil moisture, terrain and other openly available geodata, and then delivers practical route suggestions through the openrouteservice (ORS) platform. The goal is to reduce delays and risks in humanitarian operations and other logistics, especially in regions like Madagascar where many roads are unpaved. 
