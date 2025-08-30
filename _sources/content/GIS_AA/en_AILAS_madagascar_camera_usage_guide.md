@@ -183,7 +183,7 @@ Camera correctly aligned with the road
 
 ### Configuration of settings
 
-Camera settings can be easilily configured scanning the provide QR-Code with the GoPro. This is the standard setup. In the case the QR-Code setup should now work the **manual setup** is described in addition. **If possible always use the QR-Code setup.**
+Camera settings can be easilily configured scanning the provide QR-Code with the GoPro. This is the standard setup. In the case the QR-Code setup should not work the **manual setup** is described in addition. **If possible always use the QR-Code setup.**
 
 
 | Instructions | Notes |
