@@ -174,6 +174,10 @@ Camera correctly aligned with the road
 |   Place Powerbank **securely** (e.g., glove compartment or dash)    |    Powerback should be stored safely in case of e.g. abrupt breaking               |
 |   Ensure power connection before driving                        |           Charging symbol should be visible on the top right corner of GoPro screen|
 
+:::{admonition} Using your car's power outlet
+:class: tip
+If your car has an appropriate power outlet to connect with the USB-C socket of the camera, you can use it instead the powerbank. Don't forget to unplug after the trip.
+:::
 
 <!-- Images charging -->
 ---
