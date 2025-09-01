@@ -168,6 +168,12 @@ Caméra correctement alignée avec la route
 | Placez la batterie externe **en toute sécurité** (par ex. boîte à gants ou tableau de bord) | La batterie doit être stockée de manière sûre en cas de freinage brusque |
 | Vérifiez la connexion d’alimentation avant de conduire | Le symbole de charge doit être visible en haut à droite de l’écran de la GoPro |
 
+:::{admonition} Utilisation de la prise de votre véhicule
+:class: tip
+Si votre véhicule dispose d’une prise adaptée pour se connecter au port USB-C de la caméra, vous pouvez l’utiliser à la place de la batterie externe. N’oubliez pas de débrancher après le trajet.
+:::
+
+
 ---
 <br>
 
