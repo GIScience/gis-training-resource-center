@@ -258,7 +258,6 @@ If the scanning of the QR-code is not working immeadiately try in different ligh
 | 4. Hold the **Power** button to turn off GoPro at the end of the drive. | The camera will beep a couple of times when turning off |
 
 ---
-<br><br><br><br>
 
 ## Start of Drive Checklist
 
@@ -275,7 +274,7 @@ If the scanning of the QR-code is not working immeadiately try in different ligh
 #### Final Pre-Drive Check
 - Is the camera firmly mounted?  
 - Is camera level and facing straight ahead?  
-- Is the GoPro blinking every 10 seconds (taking photos)?  
+- Is the GoPro blinking every 5 seconds (taking photos)?
 - Is the Powerbank connected and charging the GoPro?  
 
 ---
@@ -321,10 +320,8 @@ Contact technical support immediately if:
 
 ## Support Contact
 
-If anything goes wrong or you're unsure:
+If anything goes wrong or you're unsure, don't hesitate to contact:
 
-| Name             | Role             | Contact           |
-|------------------|------------------|-------------------|
-|                  | Technical Support |                   |
-|                  | Project Lead     |                   |
+Alec Schulze-Eckel & Oliver Fritz<br>
+humanitarian_gi@heigit.org
 

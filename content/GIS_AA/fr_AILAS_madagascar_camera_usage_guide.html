@@ -539,7 +539,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -555,6 +557,41 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#liste-de-verification-du-materiel">Liste de vérification du matériel</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-de-la-camera">Installation de la caméra</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#choisir-lemplacement-de-fixation">Choisir l’emplacement de fixation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fixer-la-gopro-avec-la-fixation-ventouse">Fixer la GoPro avec la fixation ventouse</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alimentation">Alimentation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration-de-la-capture-dimages">Configuration de la capture d’images</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parametrage-des-reglages">Paramétrage des réglages</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration-par-qr-code">Configuration par QR-Code</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration-manuelle-alternative">Configuration manuelle alternative</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#liste-de-verification-avant-de-prendre-la-route">Liste de vérification avant de prendre la route</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration-de-la-camera">Configuration de la caméra</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#demarrage-de-lenregistrement">Démarrage de l’enregistrement</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verifications-finales-avant-de-conduire">Vérifications finales avant de conduire</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#liste-de-verification-apres-la-conduite">Liste de vérification après la conduite</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#arret-de-lenregistrement">Arrêt de l’enregistrement</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inspection-du-materiel">Inspection du matériel</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recharger-la-powerbank-le-cas-echeant">Recharger la Powerbank (le cas échéant)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#signaler-tout-probleme">Signaler tout problème</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conseils-de-depannage">Conseils de dépannage</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contact-support">Contact support</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -566,6 +603,385 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="guide-d-utilisation-de-la-camera-projet-ailas">
 <h1>Guide d’utilisation de la caméra: projet AILAS<a class="headerlink" href="#guide-d-utilisation-de-la-camera-projet-ailas" title="Permalink to this heading">#</a></h1>
+<p>Cette documentation fournit des instructions sur la configuration et l’utilisation des caméras GoPro pour l’acquisition de données sur le terrain, incluant des instructions détaillées pour toutes les étapes nécessaires, des listes de contrôle pour le début et la fin de l’acquisition des données, ainsi que des conseils pour le dépannage.</p>
+<section id="liste-de-verification-du-materiel">
+<h2>Liste de vérification du matériel<a class="headerlink" href="#liste-de-verification-du-materiel" title="Permalink to this heading">#</a></h2>
+<p>Avant le départ, assurez-vous de disposer des éléments suivants :</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Équipement</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>GoPro Hero 13</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Carte MicroSD 1 To</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Batterie externe (Powerbank)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Câble de recharge USB-C</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Fixation ventouse pour GoPro</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Copie imprimée de ce guide</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../../_images/AILAS_GoPro_front.jpeg"><img alt="../../_images/AILAS_GoPro_front.jpeg" src="../../_images/AILAS_GoPro_front.jpeg" style="width: 250px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 88 </span><span class="caption-text">GoPro caméra</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="../../_images/AILAS_mount.jpeg"><img alt="../../_images/AILAS_mount.jpeg" src="../../_images/AILAS_mount.jpeg" style="width: 250px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 89 </span><span class="caption-text">Fixation ventouse</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="../../_images/AILAS_clip_attachment.jpeg"><img alt="../../_images/AILAS_clip_attachment.jpeg" src="../../_images/AILAS_clip_attachment.jpeg" style="width: 250px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 90 </span><span class="caption-text">Fixation clip</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id4">
+<a class="reference internal image-reference" href="../../_images/AILAS_powerbank.jpeg"><img alt="../../_images/AILAS_powerbank.jpeg" src="../../_images/AILAS_powerbank.jpeg" style="width: 250px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 91 </span><span class="caption-text">Batterie externe (Powerbank)</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<br>
+</section>
+<section id="installation-de-la-camera">
+<h2>Installation de la caméra<a class="headerlink" href="#installation-de-la-camera" title="Permalink to this heading">#</a></h2>
+<section id="choisir-lemplacement-de-fixation">
+<h3>Choisir l’emplacement de fixation<a class="headerlink" href="#choisir-lemplacement-de-fixation" title="Permalink to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Instructions</p></th>
+<th class="head text-left"><p>Notes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>1. Fixez à l’intérieur de la voiture, <strong>au centre du pare-brise</strong> ou <strong>derrière le rétroviseur</strong></p></td>
+<td class="text-left"><p>Évitez d’obstruer la vue du conducteur.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>2. Si nécessaire, nettoyez le verre avant de fixer la fixation ventouse</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="camera-centre-position">
+<a class="reference internal image-reference" href="../../_images/AILAS_centre_position.jpeg"><img alt="../../_images/AILAS_centre_position.jpeg" src="../../_images/AILAS_centre_position.jpeg" style="width: 375px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 92 </span><span class="caption-text">Position centrale derrière le rétroviseur</span><a class="headerlink" href="#camera-centre-position" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="camera-side-position">
+<a class="reference internal image-reference" href="../../_images/AILAS_side_position.jpeg"><img alt="../../_images/AILAS_side_position.jpeg" src="../../_images/AILAS_side_position.jpeg" style="width: 375px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 93 </span><span class="caption-text">Position latérale près de la portière passager</span><a class="headerlink" href="#camera-side-position" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="fixer-la-gopro-avec-la-fixation-ventouse">
+<h3>Fixer la GoPro avec la fixation ventouse<a class="headerlink" href="#fixer-la-gopro-avec-la-fixation-ventouse" title="Permalink to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Instructions</p></th>
+<th class="head text-left"><p>Notes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>1. Appuyez fermement la ventouse contre le pare-brise</p></td>
+<td class="text-left"><p>Assurez-vous que le levier de verrouillage est en position HAUTE</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>2. Appuyez sur le bouton de fixation avec une bonne force</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>3. Abaissez le levier de verrouillage pour <strong>sécuriser</strong> la fixation</p></td>
+<td class="text-left"><p>Secouez légèrement la fixation pour vérifier qu’elle tient bien</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>4. Fixez la GoPro avec la fixation clip et la vis papillon sur la fixation</p></td>
+<td class="text-left"><p>Assurez-vous que la GoPro est équipée de la fixation clip</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>5. Ajustez l’<strong>angle de la caméra</strong></p></td>
+<td class="text-left"><p>Vérifiez que l’objectif est orienté vers l’avant, parallèle à la route <br> et que le champ de vision de la caméra capture la route</p></td>
+</tr>
+</tbody>
+</table>
+<div class="tip admonition">
+<p class="admonition-title">Astuce pour un alignement optimal de la caméra</p>
+<p>Pour affiner l’angle de la caméra et obtenir un alignement optimal, dévissez légèrement la vis qui relie la GoPro à la fixation clip et ajustez légèrement l’angle de la caméra.<br />
+Pour éviter que la caméra ne soit inclinée sur un côté, assurez-vous que le logo « GoPro » sur la fixation ventouse est orienté bien droit vers le haut lors de la fixation.</p>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id5">
+<a class="reference internal image-reference" href="../../_images/AILAS_press_button.png"><img alt="../../_images/AILAS_press_button.png" src="../../_images/AILAS_press_button.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 94 </span><span class="caption-text">Press button for suction</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id6">
+<a class="reference internal image-reference" href="../../_images/AILAS_lever_down.png"><img alt="../../_images/AILAS_lever_down.png" src="../../_images/AILAS_lever_down.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 95 </span><span class="caption-text">Abaissez le levier pour fixer la fixation</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id7">
+<a class="reference internal image-reference" href="../../_images/AILAS_camera_alignment.jpeg"><img alt="../../_images/AILAS_camera_alignment.jpeg" src="../../_images/AILAS_camera_alignment.jpeg" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 96 </span><span class="caption-text">Caméra correctement alignée avec la route</span><a class="headerlink" href="#id7" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="alimentation">
+<h3>Alimentation<a class="headerlink" href="#alimentation" title="Permalink to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Instructions</p></th>
+<th class="head text-left"><p>Notes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Connectez la GoPro à la batterie externe (Powerbank) avec le câble USB-C</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Placez la batterie externe <strong>en toute sécurité</strong> (par ex. boîte à gants ou tableau de bord)</p></td>
+<td class="text-left"><p>La batterie doit être stockée de manière sûre en cas de freinage brusque</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Vérifiez la connexion d’alimentation avant de conduire</p></td>
+<td class="text-left"><p>Le symbole de charge doit être visible en haut à droite de l’écran de la GoPro</p></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<br>
+</section>
+</section>
+<section id="configuration-de-la-capture-dimages">
+<h2>Configuration de la capture d’images<a class="headerlink" href="#configuration-de-la-capture-dimages" title="Permalink to this heading">#</a></h2>
+<section id="parametrage-des-reglages">
+<h3>Paramétrage des réglages<a class="headerlink" href="#parametrage-des-reglages" title="Permalink to this heading">#</a></h3>
+<p>Les réglages de la caméra peuvent être facilement configurés en scannant le QR-Code fourni avec la GoPro. Il s’agit de la configuration standard.<br />
+Si la configuration par QR-Code ne fonctionne pas, le <strong>réglage manuel</strong> est décrit ci-dessous.<br />
+<strong>Dans la mesure du possible, utilisez toujours la configuration par QR-Code.</strong></p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Instructions</p></th>
+<th class="head text-left"><p>Notes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Maintenez enfoncé le bouton <strong>Power/Mode</strong> pour allumer la GoPro.</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Scannez le QR-Code suivant avec la GoPro en orientant l’objectif vers le code</p></td>
+<td class="text-left"><p>Si réussi, une icône QR_Code avec une coche rouge devrait apparaître</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Vérifiez que « AILAS » est affiché dans l’aperçu des modes en bas au centre de l’écran</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>Si la caméra est déjà configurée en mode « AILAS », vous n’avez pas besoin de paramétrer les réglages.</p>
+</section>
+<section id="configuration-par-qr-code">
+<h3>Configuration par QR-Code<a class="headerlink" href="#configuration-par-qr-code" title="Permalink to this heading">#</a></h3>
+<!-- Image QR-code -->
+<figure class="align-default" id="qr-code">
+<a class="reference internal image-reference" href="../../_images/AILAS_QR_code.png"><img alt="../../_images/AILAS_QR_code.png" src="../../_images/AILAS_QR_code.png" style="width: 375px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 97 </span><span class="caption-text">Scannez ce QR code</span><a class="headerlink" href="#qr-code" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id8">
+<a class="reference internal image-reference" href="../../_images/AILAS_button_overview.png"><img alt="../../_images/AILAS_button_overview.png" src="../../_images/AILAS_button_overview.png" style="width: 375px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 98 </span><span class="caption-text">Button overview</span><a class="headerlink" href="#id8" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id9">
+<a class="reference internal image-reference" href="../../_images/AILAS_AILAS_mode.png"><img alt="../../_images/AILAS_AILAS_mode.png" src="../../_images/AILAS_AILAS_mode.png" style="width: 375px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 99 </span><span class="caption-text">Camera est en mide AILAS</span><a class="headerlink" href="#id9" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Scanner le QR code</p>
+<p>Si
+Si le scan du QR code ne fonctionne pas immédiatement, essayez dans des conditions de luminosité différentes ou en rapprochant la caméra du code.</p>
+</div>
+</section>
+<section id="configuration-manuelle-alternative">
+<h3>Configuration manuelle alternative<a class="headerlink" href="#configuration-manuelle-alternative" title="Permalink to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Instructions</p></th>
+<th class="head text-left"><p>Remarques</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>1. Appuyez sur le bouton <strong>Mode/Power</strong> jusqu’à ce que l’écran affiche <em>« Accéléré »</em> <!-- Icône --></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>2. Touchez l’icône <strong>paramètres</strong> (en bas à droite) et configurez comme suit :<br> • <strong>Format</strong> : Photo<br> • <strong>Objectif numérique</strong> : Large<br> • <strong>Capture</strong> : Intervalle = 5 s</p></td>
+<td class="text-left"><p>Laissez les autres réglages inchangés</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>3. Touchez la <strong>flèche de retour</strong> pour enregistrer et revenir à l’écran principal.</p></td>
+<td class="text-left"><p>En bas au centre de l’écran doit maintenant s’afficher : « Time Lapse Photo 5s W »</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>4. Maintenez le bouton <strong>Power</strong> pour éteindre la GoPro à la fin du trajet.</p></td>
+<td class="text-left"><p>La caméra émettra quelques bips lors de l’extinction</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<hr class="docutils" />
+<section id="liste-de-verification-avant-de-prendre-la-route">
+<h2>Liste de vérification avant de prendre la route<a class="headerlink" href="#liste-de-verification-avant-de-prendre-la-route" title="Permalink to this heading">#</a></h2>
+<section id="configuration-de-la-camera">
+<h3>Configuration de la caméra<a class="headerlink" href="#configuration-de-la-camera" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Fixez la caméra sur le pare-brise, orientée droit devant.</p></li>
+<li><p>Connectez la Powerbank à la caméra avec le câble USB-C.</p></li>
+<li><p>Rangez la Powerbank dans un endroit sûr pour qu’elle ne bouge pas pendant la conduite.</p></li>
+</ul>
+</section>
+<section id="demarrage-de-lenregistrement">
+<h3>Démarrage de l’enregistrement<a class="headerlink" href="#demarrage-de-lenregistrement" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Maintenez le bouton d’alimentation latéral jusqu’à ce que l’écran s’allume.</p></li>
+<li><p>Scannez le QR code pour configurer les réglages (si cela ne fonctionne pas, utilisez la configuration manuelle).</p></li>
+<li><p>Appuyez sur le bouton déclencheur supérieur (le gros bouton sur le dessus) pour commencer la capture.</p></li>
+</ul>
+</section>
+<section id="verifications-finales-avant-de-conduire">
+<h3>Vérifications finales avant de conduire<a class="headerlink" href="#verifications-finales-avant-de-conduire" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>La caméra est-elle bien fixée ?</p></li>
+<li><p>La caméra est-elle de niveau et orientée droit devant ?</p></li>
+<li><p>La GoPro clignote-t-elle toutes les 5 secondes (prise de photos) ?</p></li>
+<li><p>La Powerbank est-elle connectée et en train de recharger la GoPro ?</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="liste-de-verification-apres-la-conduite">
+<h2>Liste de vérification après la conduite<a class="headerlink" href="#liste-de-verification-apres-la-conduite" title="Permalink to this heading">#</a></h2>
+<section id="arret-de-lenregistrement">
+<h3>Arrêt de l’enregistrement<a class="headerlink" href="#arret-de-lenregistrement" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Appuyez sur le bouton déclencheur supérieur pour arrêter la capture.</p></li>
+<li><p>Maintenez le bouton d’alimentation latéral jusqu’à ce que l’écran s’éteigne.</p></li>
+<li><p>Débranchez le câble USB-C de la GoPro.</p></li>
+</ul>
+</section>
+<section id="inspection-du-materiel">
+<h3>Inspection du matériel<a class="headerlink" href="#inspection-du-materiel" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Vérifiez que le support est toujours bien serré et que la GoPro n’a pas été endommagée.</p></li>
+<li><p>Nettoyez l’objectif de la caméra s’il est poussiéreux ou sale.</p></li>
+<li><p>Laissez la GoPro solidement fixée si c’est sûr, ou rangez-la dans son étui ou son sac.</p></li>
+</ul>
+</section>
+<section id="recharger-la-powerbank-le-cas-echeant">
+<h3>Recharger la Powerbank (le cas échéant)<a class="headerlink" href="#recharger-la-powerbank-le-cas-echeant" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Branchez la Powerbank sur une prise murale pour la recharger pendant la nuit.</p></li>
+</ul>
+</section>
+<section id="signaler-tout-probleme">
+<h3>Signaler tout problème<a class="headerlink" href="#signaler-tout-probleme" title="Permalink to this heading">#</a></h3>
+<p>Contactez immédiatement le support technique si :</p>
+<ul class="simple">
+<li><p>La GoPro n’a pas fonctionné</p></li>
+<li><p>Le support est tombé et ne peut pas être réinstallé</p></li>
+<li><p>La Powerbank ne s’est pas chargée</p></li>
+<li><p>Quelque chose semble cassé ou inhabituel</p></li>
+</ul>
+<hr class="docutils" />
+<br>
+</section>
+</section>
+<section id="conseils-de-depannage">
+<h2>Conseils de dépannage<a class="headerlink" href="#conseils-de-depannage" title="Permalink to this heading">#</a></h2>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Problème</p></th>
+<th class="head"><p>Solution</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>La GoPro ne s’allume pas</p></td>
+<td><p>Vérifiez le niveau de la batterie ou connectez la Powerbank</p></td>
+</tr>
+<tr class="row-odd"><td><p>Les photos ne sont pas prises</p></td>
+<td><p>Assurez-vous que le mode « AILAS » est actif et que le déclencheur est pressé</p></td>
+</tr>
+<tr class="row-even"><td><p>La Powerbank ne charge pas</p></td>
+<td><p>Vérifiez la connexion du câble ; essayez un autre port USB</p></td>
+</tr>
+<tr class="row-odd"><td><p>Le support à ventouse se détache</p></td>
+<td><p>Nettoyez la vitre et refixez-le (à un autre endroit)</p></td>
+</tr>
+<tr class="row-even"><td><p>La GoPro émet des bips/surchauffe</p></td>
+<td><p>Éteignez-la pendant 5 min à l’ombre, puis reprenez</p></td>
+</tr>
+<tr class="row-odd"><td><p>Le QR code n’est pas scanné</p></td>
+<td><p>Utilisez un autre code ou effectuez une configuration manuelle</p></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<br>
+</section>
+<section id="contact-support">
+<h2>Contact support<a class="headerlink" href="#contact-support" title="Permalink to this heading">#</a></h2>
+<p>En cas de problème ou de doute, n’hesitez pas à contacter :</p>
+<p>Alec Schulze-Eckel &amp; Oliver Fritz<br>
+<a class="reference external" href="mailto:humanitarian_gi&#37;&#52;&#48;heigit&#46;org">humanitarian_gi<span>&#64;</span>heigit<span>&#46;</span>org</a></p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -622,6 +1038,47 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#liste-de-verification-du-materiel">Liste de vérification du matériel</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-de-la-camera">Installation de la caméra</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#choisir-lemplacement-de-fixation">Choisir l’emplacement de fixation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fixer-la-gopro-avec-la-fixation-ventouse">Fixer la GoPro avec la fixation ventouse</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alimentation">Alimentation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration-de-la-capture-dimages">Configuration de la capture d’images</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parametrage-des-reglages">Paramétrage des réglages</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration-par-qr-code">Configuration par QR-Code</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration-manuelle-alternative">Configuration manuelle alternative</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#liste-de-verification-avant-de-prendre-la-route">Liste de vérification avant de prendre la route</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration-de-la-camera">Configuration de la caméra</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#demarrage-de-lenregistrement">Démarrage de l’enregistrement</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verifications-finales-avant-de-conduire">Vérifications finales avant de conduire</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#liste-de-verification-apres-la-conduite">Liste de vérification après la conduite</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#arret-de-lenregistrement">Arrêt de l’enregistrement</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inspection-du-materiel">Inspection du matériel</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recharger-la-powerbank-le-cas-echeant">Recharger la Powerbank (le cas échéant)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#signaler-tout-probleme">Signaler tout problème</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conseils-de-depannage">Conseils de dépannage</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contact-support">Contact support</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
