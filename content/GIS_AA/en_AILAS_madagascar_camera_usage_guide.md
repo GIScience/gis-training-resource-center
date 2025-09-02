@@ -187,18 +187,18 @@ If your car has an appropriate power outlet to connect with the USB-C socket of 
 
 ### Configuration of settings
 
-Camera settings can be easilily configured scanning the provide QR-Code with the GoPro. This is the standard setup. In the case the QR-Code setup should not work the **manual setup** is described in addition. **If possible always use the QR-Code setup.**
+Camera settings can be easilily configured scanning the provide QR code with the GoPro. This is the standard setup. In the case the QR code setup should not work the **manual setup** is described in addition. **If possible always use the QR code setup.**
 
 
 | Instructions | Notes |
 | :------- | :------- |
 |   Hold down **Power/Mode** button to turn on the GoPro.                  |                                                                                    |
-|   Scan the following QR-Code with the Gopro by pointing the lens towards the code   |   If sucessful a QR_code icon with a red checkmark should pop up             |
+|   Scan the following QR code with the Gopro by pointing the lens towards the code   |   If sucessful a QR_code icon with a red checkmark should pop up             |
 |   Check if "AILAS" is displayed in the mode overview in the bottom centre of the screen                        |         |
 
 If the camera already is set in the "AILAS" mode you do not have to configure the settings.
 
-### QR-Code configuration
+### QR code configuration
 
 <!-- Image QR-code -->
 
@@ -207,7 +207,7 @@ If the camera already is set in the "AILAS" mode you do not have to configure th
 name: QR Code
 width: 375px
 ---
-Scan this QR-Code
+Scan this QR code
 ```
 
 
@@ -240,7 +240,7 @@ Camera is in AILAS mode
 
 :::{admonition} QR Code Scanning
 :class: tip
-If the scanning of the QR-code is not working immeadiately try in different lighting conditions or with the camera closer to the code.
+If the scanning of the QR code is not working immeadiately try in different lighting conditions or with the camera closer to the code.
 :::
 
 
@@ -272,7 +272,7 @@ If the scanning of the QR-code is not working immeadiately try in different ligh
 
 #### Start Filming
 - Hold the side power button until the screen turns on.  
-- Scan the QR-code to configure settings (if not working manual setup)  
+- Scan the QR code to configure settings (if not working manual setup)  
 - Press the top shutter button (big button on top) to start capturing  
 
 #### Final Pre-Drive Check
@@ -319,6 +319,52 @@ Contact technical support immediately if:
 | GoPro beeps/overheats    | Turn off for 5 mins in shade, then resume               |
 | QR Code is not scanned   | Use alternatice code or perform manual configuarion     |
 
+### Troubleshooting: Upside down menu
+If the menu is displayed upside down on the camera screen as in the following image, the images themselves will also be saved with the wrong orientation.
+
+```{figure} /fig/AILAS_upside_down.jpg
+---
+name: 
+width: 400px
+---
+The camera menu is displayed upside down. Fix this before starting to record.
+```
+
+Do the following to fix this before starting to record:
+
+1.  Swipe down from the top of the screen to open the settings menu.
+
+2. Turn off the orientation lock:
+
+::::{grid} 2
+:::{grid-item}
+
+```{figure} /fig/AILAS_orientation_locked.jpg
+---
+name: orientation locked
+width: 375 px
+---
+Wrong setting: The orientation lock is turned on.
+```
+
+:::
+
+:::{grid-item}
+
+```{figure} /fig/AILAS_orientation_unlocked.jpg
+---
+name: orientation unlocked
+width: 375 px
+---
+Correct setting: The orientation lock is turned off.
+```
+
+:::
+::::
+
+3. Scan the QR code again to make sure that no other settings were changed by accident.
+
+<br>
 ---
 <br>
 
