@@ -111,6 +111,25 @@ Ouvrez le  [bucket de téléversement](https://warm.storage.heigit.org/ui/browse
 
 ### 4. Téléversez les images
 
+1. Choisissez le dossier de téléversement correct. Le nom du dossier doit correspondre à l’étiquette de votre caméra. Cliquez sur le dossier pour l’ouvrir.
+
+```{figure} /fig/AILAS_choose_upload_folder.png
+---
+name: upload folder
+width: 400 px
+---
+Ouvrez le bon dossier parmi ceux disponibles pour le téléversement.
+```
+
+```{figure} /fig/AILAS_camera_label.jpg
+---
+name: camera name
+width: 400 px
+---
+Le nom du dossier doit correspondre à l’étiquette de votre caméra.
+```
+2. Cliquez sur le bouton de téléversement en haut à droite et sélectionnez « Upload file ».
+
 ```{figure} /fig/AILAS_upload_button.png
 ---
 name: upload button
@@ -119,35 +138,32 @@ width: 400 px
 Cliquez sur le bouton de téléversement et sélectionnez « Upload file »
 ```
 
-::::{grid} 2
-:::{grid-item}
+3. L'explorateur de fichiers s’ouvrira. Sélectionnez et ouvrez toutes les images de la carte SD dans le dossier `/DCIM/100GOPRO`.
+
+:::{admonition} Gestion de plusieurs dossiers d’images
+:class: tip
+Si vous avez capturé plus de mille images, celles-ci sont enregistrées dans plusieurs sous-dossiers de `DCIM` appelés `100GOPRO`, `101GOPRO`, etc. Répétez les étapes 2 à 4 de cette section pour tous les sous-dossiers.
+:::
+
 
 ```{figure} /fig/AILAS_select_files.png
 ---
 name: select files
-width: 375 px
+width: 400 px
 ---
 Sélectionnez les fichiers d’images
 ```
 
-:::
+4. Attendez que le statut de téléversement de tous les fichiers image atteigne 100 %. Faites défiler le menu de statut de téléversement pour vérifier.
 
-:::{grid-item}
 
 ```{figure} /fig/AILAS_upload_completed.png
 ---
 name: upload completed
-width: 375 px
+width: 400 px
 ---
 Attendez que le téléversement de tous les fichiers soit terminé
 ```
-
-:::
-::::
-
-Cliquez sur le bouton de téléversement et sélectionnez « Upload file ».  
-Une fenêtre de navigation de fichiers s’ouvrira. Sélectionnez et ouvrez toutes les images de la carte SD (généralement dans le sous-dossier `/DCIM/100GOPRO`).  
-Attendez que l’état de téléversement de tous les fichiers image atteigne 100 %.
 
 ### 5. Supprimez les images
 

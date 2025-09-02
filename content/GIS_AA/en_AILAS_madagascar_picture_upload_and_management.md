@@ -111,6 +111,26 @@ Open the [upload bucket](https://warm.storage.heigit.org/ui/browser/heigit-hum-p
 
 ### 4. Upload images
 
+1. Choose the correct upload folder. The folder name should correspond to the label on your camera. Click the folder to open it.
+
+```{figure} /fig/AILAS_choose_upload_folder.png
+---
+name: upload folder
+width: 400 px
+---
+Open the correct one of the available upload folders.
+```
+
+```{figure} /fig/AILAS_camera_label.jpg
+---
+name: camera name
+width: 400 px
+---
+The folder name should correspond to the label on your camera.
+```
+
+2. Click the upload button in the top right and select "Upload file".
+
 ```{figure} /fig/AILAS_upload_button.png
 ---
 name: upload button
@@ -118,34 +138,29 @@ width: 400 px
 ---
 Click the upload button and select "Upload file"
 ```
+3.  A file browser will open. Select and open all the images on the SD card in the folder `/DCIM/100GOPRO`.
 
-::::{grid} 2
-:::{grid-item}
+:::{admonition} Dealing with multiple image folders
+:class: tip
+If you captured more than a thousand images, the images are saved in several subfolders of `DCIM` called `100GOPRO`, `101GOPRO`, etc. Repeat steps 2 to 4 of this section for all the subfolders.
+:::
 
 ```{figure} /fig/AILAS_select_files.png
 ---
 name: select files
-width: 375 px
+width: 400 px
 ---
 Select the image files
 ```
-
-:::
-
-:::{grid-item}
+4. Wait until the upload status of all image files is at 100 %. Scroll down the upload status menu to verify.
 
 ```{figure} /fig/AILAS_upload_completed.png
 ---
 name: upload completed
-width: 375 px
+width: 400 px
 ---
 Wait until the upload of all files is completed
 ```
-
-:::
-::::
-
-Click the Upload button and select `Upload file`. A file browser will open. Select and open all the images on the SD card (usually in the subfolder `/DCIM/100GOPRO`). Wait until the upload status of all image files is at 100 %.
 
 ### 5. Delete images
 
