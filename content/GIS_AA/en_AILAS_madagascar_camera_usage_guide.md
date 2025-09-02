@@ -272,14 +272,16 @@ If the scanning of the QR code is not working immeadiately try in different ligh
 
 #### Start Filming
 - Hold the side power button until the screen turns on.  
-- Scan the QR code to configure settings (if not working manual setup)  
+- Scan the QR code to configure settings (if not working manual setup) 
+- Wait about 1 minute for the camera to pick up GPS signal 
 - Press the top shutter button (big button on top) to start capturing  
 
 #### Final Pre-Drive Check
-- Is the camera firmly mounted?  
-- Is camera level and facing straight ahead?  
+- Is the camera firmly mounted?
+- Is camera level and facing straight ahead?
 - Is the GoPro blinking every 5 seconds (taking photos)?
-- Is the Powerbank connected and charging the GoPro?  
+- Is the Powerbank connected and charging the GoPro?
+- Is the camera orientation setting correct? If the menu on the camera back screen displays upside down, the setting is incorrect.
 
 ---
 
