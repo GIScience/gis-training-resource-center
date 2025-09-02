@@ -260,14 +260,16 @@ Si le scan du QR code ne fonctionne pas immédiatement, essayez dans des conditi
 
 #### Démarrage de l’enregistrement
 - Maintenez le bouton d’alimentation latéral jusqu’à ce que l’écran s’allume.  
-- Scannez le QR code pour configurer les réglages (si cela ne fonctionne pas, utilisez la configuration manuelle).  
+- Scannez le QR code pour configurer les réglages (si cela ne fonctionne pas, utilisez la configuration manuelle). 
+- Attendez environ 1 minute pour que la caméra capte le signal GPS
 - Appuyez sur le bouton déclencheur supérieur (le gros bouton sur le dessus) pour commencer la capture.  
 
 #### Vérifications finales avant de conduire
 - La caméra est-elle bien fixée ?  
 - La caméra est-elle de niveau et orientée droit devant ?  
 - La GoPro clignote-t-elle toutes les 5 secondes (prise de photos) ?  
-- La Powerbank est-elle connectée et en train de recharger la GoPro ?  
+- La Powerbank est-elle connectée et en train de recharger la GoPro ?
+- Le réglage de l’orientation de la caméra est-il correct ? Si le menu à l’arrière de l’écran de la caméra s’affiche à l’envers, le réglage est incorrect.
 
 ---
 
