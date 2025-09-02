@@ -181,19 +181,19 @@ Si votre véhicule dispose d’une prise adaptée pour se connecter au port USB-
 
 ### Paramétrage des réglages
 
-Les réglages de la caméra peuvent être facilement configurés en scannant le QR-Code fourni avec la GoPro. Il s’agit de la configuration standard.  
-Si la configuration par QR-Code ne fonctionne pas, le **réglage manuel** est décrit ci-dessous.  
-**Dans la mesure du possible, utilisez toujours la configuration par QR-Code.**
+Les réglages de la caméra peuvent être facilement configurés en scannant le QR code fourni avec la GoPro. Il s’agit de la configuration standard.  
+Si la configuration par QR code ne fonctionne pas, le **réglage manuel** est décrit ci-dessous.  
+**Dans la mesure du possible, utilisez toujours la configuration par QR code.**
 
 | Instructions | Notes |
 | :----------- | :---- |
 | Maintenez enfoncé le bouton **Power/Mode** pour allumer la GoPro. | |
-| Scannez le QR-Code suivant avec la GoPro en orientant l’objectif vers le code | Si réussi, une icône QR_Code avec une coche rouge devrait apparaître |
+| Scannez le QR code suivant avec la GoPro en orientant l’objectif vers le code | Si réussi, une icône QR_Code avec une coche rouge devrait apparaître |
 | Vérifiez que « AILAS » est affiché dans l’aperçu des modes en bas au centre de l’écran | |
 
 Si la caméra est déjà configurée en mode « AILAS », vous n’avez pas besoin de paramétrer les réglages.
 
-### Configuration par QR-Code
+### Configuration par QR code
 
 <!-- Image QR-code -->
 
@@ -227,7 +227,7 @@ Button overview
 name: 
 width: 375px
 ---
-Camera est en mide AILAS
+Camera est en mode AILAS
 ```
 :::
 
@@ -307,6 +307,51 @@ Contactez immédiatement le support technique si :
 | La GoPro émet des bips/surchauffe | Éteignez-la pendant 5 min à l’ombre, puis reprenez        |
 | Le QR code n’est pas scanné | Utilisez un autre code ou effectuez une configuration manuelle |
 
+### Dépannage : Menu à l’envers
+Si le menu s’affiche à l’envers sur l’écran de la caméra comme dans l’image ci-dessous, les images seront également enregistrées avec une mauvaise orientation.
+
+```{figure} /fig/AILAS_upside_down.jpg
+---
+name: 
+width: 400px
+---
+Le menu de la caméra est affiché à l’envers. Corrigez cela avant de commencer l’enregistrement.
+```
+
+Procédez comme suit pour corriger le problème avant de commencer à enregistrer :
+
+1. Faites glisser vers le bas depuis le haut de l’écran pour ouvrir le menu des paramètres.
+
+2. Désactivez le verrouillage de l’orientation :
+
+::::{grid} 2
+:::{grid-item}
+
+```{figure} /fig/AILAS_orientation_locked.jpg
+
+---
+name: orientation locked
+width: 375 px
+---
+Mauvais réglage : le verrouillage de l’orientation est activé.
+```
+:::
+
+:::{grid-item}
+```{figure} /fig/AILAS_orientation_unlocked.jpg
+---
+name: orientation unlocked
+width: 375 px
+---
+Bon réglage : le verrouillage de l’orientation est désactivé.
+```
+
+:::
+::::
+
+3. Scannez à nouveau le QR code pour vous assurer qu’aucun autre paramètre n’a été modifié par erreur.
+
+<br>
 ---
 <br>
 
