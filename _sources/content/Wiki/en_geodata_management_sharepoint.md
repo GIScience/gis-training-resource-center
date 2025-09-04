@@ -265,10 +265,7 @@ You don’t need to tag *everything*. Start with 3–4 core fields that help you
 For example: *Theme*, *Location*, *Source*, and *DateUpdated*. More can be added later if needed.
 ```
 
-<iframe width="560" height="315" src="https://youtu.be/qB2acPUSF_o?si=QpUpB3tzF9BneVrg" 
-title="YouTube video player" frameborder="0" 
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-</iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qB2acPUSF_o?si=JyjVHEqcTNHqTKUK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 ## Implementation Guide (Quick Start)
