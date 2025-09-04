@@ -13,7 +13,7 @@ This guide outlines a practical approach using **SharePoint**, which many organi
 ### The role of the Data Steward
 
 A **data steward** is a designated person (or small team) responsible for:
-- Approving and uploading new datasets into `10_Authoritative_Data` and `20_Thematic_Data`.  
+- Approving and uploading new datasets into `10_Data` and `20_Raster_Data/`.  
 - Managing permissions (e.g. who can edit vs. who can only view).  
 - Supporting colleagues with questions about dataset quality or standards.  
 
@@ -58,7 +58,7 @@ GIS_Hub/
   - `Boundaries_ADM2_MDG_2024.gpkg`  
   - `HealthFacilities_SOM_2025.csv`  
 - For projects, prefix deliverables with project name, e.g.:  
-  - `ProjectA_Map_2025-01.pdf`  
+  - `ProjectA_Map_202501.pdf`  
   - `ProjectB_QGISProject.qgz`  
 - Dates can be optional here, since the dataset volume is low.  
 
@@ -258,7 +258,8 @@ When creating or editing a SharePoint library, you can add simple columns such a
 - **Location / ISO3 code** (e.g. MDG, SOM, region name)  
 - **Source** (e.g. WFP, UNOCHA, OSM)  
 - **DateUpdated** (YYYYMMDD)  
-- **Contact / Owner** (responsible person or team)  
+- **Contact / Owner** (responsible person or team)
+- **URL** (link to the original data source or documentation) 
 
 ```{tip}
 You don’t need to tag *everything*. Start with 3–4 core fields that help your team find data quickly.  
