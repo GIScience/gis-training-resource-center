@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Geoprocessing &#8212; GIS Resource Training Center</title>
+    <title>Geodata Management with Sharepoint &#8212; GIS Resource Training Center</title>
   
   
   
@@ -62,11 +62,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'content/Wiki/en_qgis_geoprocessing_wiki';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/Wiki/en_geodata_management_sharepoint';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Spatial and Non-spatial queries" href="en_qgis_queries_wiki.html" />
-    <link rel="prev" title="Graduated classification" href="en_qgis_graduated_wiki.html" />
+    <link rel="next" title="QGIS Trigger Workflow for Madagascar" href="../GIS_AA/en_qgis_cyclone_trigger_madagascar.html" />
+    <link rel="prev" title="Web &amp; mobile GIS applications" href="en_web_and_mobile_apps_wiki.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -286,7 +286,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_graduated_wiki.html">Graduated classification</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Geoprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="en_qgis_geoprocessing_wiki.html">Geoprocessing</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="en_qgis_queries_wiki.html">Spatial and Non-spatial queries</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_spatial_queries_wiki.html">Spatial Queries</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_non_spatial_queries_wiki.html">Non-Spatial Queries</a></li>
@@ -314,7 +314,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="en_qgis_common_errors_and_Issues.html">QGIS common errors and issues <!-- omit from toc --></a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="en_web_and_mobile_apps_wiki.html">Web &amp; mobile GIS applications</a></li>
-<li class="toctree-l1"><a class="reference internal" href="en_geodata_management_sharepoint.html">Geodata Management with Sharepoint</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Geodata Management with Sharepoint</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">GIS in Anticipatory Action</span></p>
 <ul class="nav bd-sidenav">
@@ -439,7 +439,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/GIScience/gis-training-resource-center/issues/new?title=Issue%20on%20page%20%2Fcontent/Wiki/en_qgis_geoprocessing_wiki.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/GIScience/gis-training-resource-center/issues/new?title=Issue%20on%20page%20%2Fcontent/Wiki/en_geodata_management_sharepoint.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -469,7 +469,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/content/Wiki/en_qgis_geoprocessing_wiki.md" target="_blank"
+      <li><a href="../../_sources/content/Wiki/en_geodata_management_sharepoint.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -553,7 +553,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Geoprocessing</h1>
+    <h1>Geodata Management with Sharepoint</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -563,10 +563,29 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#buffer">Buffer</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clip">Clip</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dissolve">Dissolve</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#intersection">Intersection</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose-audience">Purpose &amp; Audience</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-role-of-the-data-steward">The role of the Data Steward</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-folder-structures">Example Folder Structures</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#minimalist-setup-very-small-teams">1. Minimalist Setup (very small teams)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#balanced-setup-general-small-organisations">2. Balanced Setup (general small organisations)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extended-setup-with-eap-workflows">3. Extended Setup (with EAP workflows)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#advantages-limitations-and-permissions">Advantages, Limitations, and Permissions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#advantages">Advantages</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations">Limitations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#permissions">Permissions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metadata-cataloguing">Metadata &amp; Cataloguing</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-use-metadata">Why use metadata?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#suggested-metadata-fields">Suggested metadata fields</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementation-guide-quick-start">Implementation Guide (Quick Start)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-operating-procedures-sops">Standard Operating Procedures (SOPs)</a></li>
 </ul>
             </nav>
         </div>
@@ -578,97 +597,401 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="geoprocessing">
-<h1>Geoprocessing<a class="headerlink" href="#geoprocessing" title="Permalink to this heading">#</a></h1>
-<p><strong>🔙<a class="reference internal" href="../intro.html"><span class="doc std std-doc">Back to Homepage</span></a></strong></p>
-<section id="buffer">
-<h2>Buffer<a class="headerlink" href="#buffer" title="Permalink to this heading">#</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="geodata-management-with-sharepoint">
+<h1>Geodata Management with Sharepoint<a class="headerlink" href="#geodata-management-with-sharepoint" title="Permalink to this heading">#</a></h1>
+<p>Small organisations often struggle to keep geospatial data consistent and accessible.<br />
+A simple, well-structured geodata hub helps <strong>standardise GIS work</strong>, <strong>prepare for responses</strong>, and <strong>onboard new staff</strong> efficiently.<br />
+This guide outlines a practical approach using <strong>SharePoint</strong>, which many organisations already use for document management.</p>
+<section id="purpose-audience">
+<h2>Purpose &amp; Audience<a class="headerlink" href="#purpose-audience" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Calculate a <img alt="" src="../../_images/mAlgorithmBuffer.png" /> <code class="docutils literal notranslate"><span class="pre">buffer</span></code> with a defined distance.</p></li>
-<li><p>Dissolve: if 2 or more buffer areas overlap, they can be combined.</p></li>
+<li><p><strong>Who</strong>: Small organisations starting or formalising GIS work.</p></li>
+<li><p><strong>Why</strong>: Establish a lightweight, standardised structure for <strong>data, projects, and templates</strong>.</p></li>
+<li><p><strong>Outcome</strong>: Faster onboarding, fewer broken links, consistent maps and analyses.</p></li>
 </ul>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p>The unit of distance depends on the projection of the layer. For buffering you usually need a <strong>metric coordinate system</strong> such as UTM (Universal Transverse Mercator).</p>
-</div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
-<summary class="sd-summary-title sd-card-header">
-Example: Which regions fall within a 100-kilometer radius of major cities?<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_buffer_wiki.mp4"></video></p>
-</div>
-</details><div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p>If you’re dealing with really large “megabuffers” or if you can only choose buffer distances in degrees instead of meters, it might mean there’s <strong>no metric coordinate system</strong>, or it was <strong>incorrectly reprojected</strong>. The unit of the buffer <strong>depends</strong> on the <strong>coordinate reference systems of the layer</strong>.</p>
+<section id="the-role-of-the-data-steward">
+<h3>The role of the Data Steward<a class="headerlink" href="#the-role-of-the-data-steward" title="Permalink to this heading">#</a></h3>
+<p>A <strong>data steward</strong> is a designated person (or small team) responsible for:</p>
+<ul class="simple">
+<li><p>Approving and uploading new datasets into <code class="docutils literal notranslate"><span class="pre">10_Authoritative_Data</span></code> and <code class="docutils literal notranslate"><span class="pre">20_Thematic_Data</span></code>.</p></li>
+<li><p>Managing permissions (e.g. who can edit vs. who can only view).</p></li>
+<li><p>Supporting colleagues with questions about dataset quality or standards.</p></li>
+</ul>
+<p>Having a clear steward role prevents accidental overwrites and ensures that all staff work with <strong>trusted, consistent data</strong>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If your organisation outgrows this setup (many editors, heavy edits, very large rasters), keep SharePoint for distribution and documentation, and add a spatial database (e.g., PostGIS) for multi-user editing.</p>
 </div>
 </section>
-<section id="clip">
-<h2>Clip<a class="headerlink" href="#clip" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>With the <img alt="" src="../../_images/mAlgorithmClip.png" /> <code class="docutils literal notranslate"><span class="pre">Clip</span></code> tool you can extract and retain the spatial extent of one vector layer based on the boundaries of another layer.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Layer</span></code>: refers to the specific <strong>layer to be clipped</strong>, for instance, a road network.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Overlay</span> <span class="pre">Layer</span></code>: e.g. a polygon layer of the region (e.g. borders of Heidelberg).</p></li>
-</ul>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
-<summary class="sd-summary-title sd-card-header">
-Example: Extract the rail network of Germany<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_clip_wiki.mp4"></video></p>
-</div>
-</details></section>
-<section id="dissolve">
-<h2>Dissolve<a class="headerlink" href="#dissolve" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>The <img alt="" src="../../_images/mAlgorithmDissolve.png" /> <code class="docutils literal notranslate"><span class="pre">dissolve</span></code> tool aggregates geometries with the same attribute values.</p></li>
-<li><p>When 2 or more buffer areas overlap, they can be combined using dissolve.</p></li>
-</ul>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
-<summary class="sd-summary-title sd-card-header">
-Example: Extract the rail network of Germany<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_dissolve_wiki.mp4"></video></p>
-</div>
-</details><div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p>In QGIS, only the attributes selected for the dissolve operation will receive the accurate attribute, while the remaining attributes remain unaggregated; hence, in this example, the name is not accurately represented (e.g. the name for Western Europe might be mistakenly assigned as “Netherlands”).</p>
-</div>
 </section>
-<section id="intersection">
-<h2>Intersection<a class="headerlink" href="#intersection" title="Permalink to this heading">#</a></h2>
-<p>The <img alt="" src="../../_images/intersection_icon.png" /> <code class="docutils literal notranslate"><span class="pre">interstion</span></code> tool extracts the part of layers which overlap.</p>
-<ol class="arabic simple">
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Vector</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Geoprocessing</span> <span class="pre">Tool</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Intersection</span></code> OR <code class="docutils literal notranslate"><span class="pre">Toolbox</span></code> -&gt; Search for <code class="docutils literal notranslate"><span class="pre">Intersection</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">layer</span></code>: select layer one</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Overlay</span> <span class="pre">layer</span></code>: select layer two</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Intersection</span></code>: Speficiy where you want to save the results and give it a good name</p></li>
-</ol>
+<section id="example-folder-structures">
+<h2>Example Folder Structures<a class="headerlink" href="#example-folder-structures" title="Permalink to this heading">#</a></h2>
+<p>Below are three possible structures, from simple to more advanced.<br />
+Choose the one that matches your organisation’s size and capacity.</p>
+<section id="minimalist-setup-very-small-teams">
+<h3>1. Minimalist Setup (very small teams)<a class="headerlink" href="#minimalist-setup-very-small-teams" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>GIS_Hub/
+│
+├── Data/ # All geodata in one place
+│ ├── Boundaries/ # Admin boundaries
+│ ├── Roads/ # Road networks
+│ ├── Hydro/ # Rivers, lakes
+│ ├── Exposure/ # Health facilities, schools
+│ └── Hazards/ # Cyclones, floods, droughts
+│
+├── Projects/ # Project work and outputs
+│ ├── Project_A/
+│ ├── Project_B/
+│ └── Project_C/
+│
+└── Templates/ # QGIS styles, layouts, symbols
+</pre></div>
+</div>
+<p>💡 <strong>Use when:</strong> The team is very small, with limited data and little overlap between users. This structure is quick to set up and easy for non-technical colleagues.</p>
+<p>⚠️ <strong>Limitation:</strong> Everything is mixed into one <code class="docutils literal notranslate"><span class="pre">Data/</span></code> folder — it is not obvious which datasets are authoritative vs. drafts, and scaling up later can get messy.</p>
+<p><strong>Naming conventions for Minimalist Setup</strong></p>
+<ul class="simple">
+<li><p>Keep filenames simple and descriptive, e.g.:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Boundaries_ADM2_MDG_2024.gpkg</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">HealthFacilities_SOM_2025.csv</span></code></p></li>
+</ul>
+</li>
+<li><p>For projects, prefix deliverables with project name, e.g.:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">ProjectA_Map_2025-01.pdf</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ProjectB_QGISProject.qgz</span></code></p></li>
+</ul>
+</li>
+<li><p>Dates can be optional here, since the dataset volume is low.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="balanced-setup-general-small-organisations">
+<h3>2. Balanced Setup (general small organisations)<a class="headerlink" href="#balanced-setup-general-small-organisations" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>GIS_Hub/
+│
+├── 00_Admin/                 # SOPs, guidelines, notes
+├── 10_Data/                  # All shared datasets (authoritative + thematic, read-only; managed by stewards)
+│   ├── Boundaries/           # Admin boundaries, settlement boundaries
+│   ├── Roads/                # Road networks, tracks
+│   ├── Hydro/                # Rivers, lakes, catchments
+│   ├── Settlements/          # Villages, towns, cities
+│   ├── Health/               # Health facilities, clinics
+│   ├── Logistics/            # Warehouses, airstrips
+│   └── Hazards/              # Cyclone tracks, flood zones, drought indicators
+├── 20_Raster_Data/           # WorldPop, DEM, land cover, satellite images, hazard rasters
+├── 30_Styles_Templates/      # Shared QGIS styles &amp; layouts
+│   └── Generic_Styles/       # Standard symbology and layout templates
+├── 40_Working_Data/          # Drafts &amp; temporary edits (restricted access)
+└── 50_Projects/              # Sorted by topic
+    ├── Disaster_Preparedness/
+    ├── Health/
+    └── Climate_Risk/
+</pre></div>
+</div>
+<p><strong>💡 Use when:</strong>
+The organisation wants to keep all curated data together in <code class="docutils literal notranslate"><span class="pre">10_Data/</span></code>, while separating raster data (<code class="docutils literal notranslate"><span class="pre">20_Raster_Data/</span></code>), shared styles (<code class="docutils literal notranslate"><span class="pre">30_Styles_Templates/</span></code>), drafts (<code class="docutils literal notranslate"><span class="pre">40_Working_Data/</span></code>), and project outputs (<code class="docutils literal notranslate"><span class="pre">50_Projects/</span></code>). This setup works well for most small NGOs.</p>
+<p><strong>⚠️ Limitation:</strong>
+Staff need to understand that <code class="docutils literal notranslate"><span class="pre">10_Data/</span></code> and <code class="docutils literal notranslate"><span class="pre">20_Raster_Data/</span></code> are read-only. If edits are saved there, datasets can be overwritten or corrupted.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
+<p>Large raster files (e.g., DEMs, satellite scenes, wind or rainfall rasters) can slow down OneDrive sync and fill local drives quickly.</p>
+<p>To reduce issues:</p>
 <ul class="simple">
-<li><p>Order of input layer and overlay layer does not matter here</p></li>
-<li><p>Possibility to keep only certain fields of the output layer</p></li>
-<li><p>⚠️ Attention: Attribute values that refer to output areas (e.g. population) are no longer meaningful after the intersect</p></li>
+<li><p>Keep only the most important raster layers in <code class="docutils literal notranslate"><span class="pre">20_Raster_Data/</span></code>.</p></li>
+<li><p>Archive old raster versions in a separate library if needed.</p></li>
 </ul>
 </div>
-<figure class="align-default" id="intersction-concept">
-<a class="reference internal image-reference" href="../../_images/Intersect_concept_2.png"><img alt="../../_images/Intersect_concept_2.png" src="../../_images/Intersect_concept_2.png" style="width: 500px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 12 </span><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">Intersection</span></code> operation between a two-features input layer and a single feature overlay layer (left) - resulting features are moved for clarity (right)</span><a class="headerlink" href="#intersction-concept" title="Permalink to this image">#</a></p>
-<div class="legend">
-<p>Source: <a class="reference external" href="http://GISGeography.com">GISGeography.com</a></p>
+<p><strong>Naming conventions for Balanced Setup (general use)</strong></p>
+<p>To keep files easy to find and avoid duplication, use a consistent naming pattern:</p>
+<ul class="simple">
+<li><p><strong>Data (all shared):</strong><br />
+Pattern: <code class="docutils literal notranslate"><span class="pre">[Theme]_[Location/ADMlevel]_[Source]_[YYYYMM].[ext]</span></code><br />
+<em>Example:</em> <code class="docutils literal notranslate"><span class="pre">Boundaries_ADM2_MDG_GADM_202407.gpkg</span></code></p></li>
+<li><p><strong>Raster data:</strong><br />
+Pattern: <code class="docutils literal notranslate"><span class="pre">[Theme]_[Location]_[Source]_[YYYYMM].[ext]</span></code><br />
+<em>Example:</em> <code class="docutils literal notranslate"><span class="pre">Rainfall_MDG_CHIRPS_202502.tif</span></code></p></li>
+<li><p><strong>Projects:</strong><br />
+Pattern: <code class="docutils literal notranslate"><span class="pre">[ProjectName]_[OutputType]_[Region]_[YYYYMM]_vX.[ext]</span></code><br />
+<em>Example:</em> <code class="docutils literal notranslate"><span class="pre">HealthAssessment_Report_SOM_202503_v1.pdf</span></code></p></li>
+</ul>
+</section>
+<section id="extended-setup-with-eap-workflows">
+<h3>3. Extended Setup (with EAP workflows)<a class="headerlink" href="#extended-setup-with-eap-workflows" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>GIS_Hub/
+│
+├── 00_Admin/                 # SOPs, guidelines, notes
+├── 10_Data/                  # All shared datasets (authoritative + thematic, read-only; managed by stewards)
+│   ├── Boundaries/
+│   ├── Roads/
+│   ├── Hydro/
+│   ├── Settlements/
+│   ├── Health/
+│   ├── Logistics/
+│   └── Hazards/
+├── 20_Raster_Data/           # DEM, land cover, satellite data, hazard rasters (read-only)
+├── 30_Styles_Templates/      # Shared QGIS styles &amp; layouts
+│   ├── Generic_Styles/       
+│   └── Cyclone_EAP_Styles/   # Templates for cyclone-specific outputs
+├── 40_Working_Data/          # Drafts &amp; edits (restricted)
+├── 50_Cyclone_EAP/           # Anticipatory Action (cyclone) workflows
+│   ├── Fixed_Data/           # Baseline exposure layers
+│   ├── Models/               # Trigger models, track buffers, forecast files
+│   └── Activations/          # One subfolder per cyclone activation
+│       ├── Cyclone_Freddy_2023/
+│       ├── Cyclone_Batsirai_2022/
+│       └── Cyclone_X_YYYY/
+└── 60_Projects/              # Sorted by topic
+    ├── Disaster_Preparedness/
+    ├── Health/
+    └── Climate_Risk/
+
+</pre></div>
 </div>
-</figcaption>
-</figure>
-<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_intersect.mp4"></video></p>
+<p>💡 <strong>Use when:</strong><br />
+The organisation wants to keep all curated data together in <code class="docutils literal notranslate"><span class="pre">10_Data/</span></code>, while separating <strong>heavy raster data</strong> (<code class="docutils literal notranslate"><span class="pre">20_Raster_Data/</span></code>), <strong>shared styles</strong> (<code class="docutils literal notranslate"><span class="pre">30_Styles_Templates/</span></code>), and <strong>project-specific or EAP workflows</strong>.</p>
+<p>⚠️ <strong>Limitation:</strong><br />
+Staff need to understand that <code class="docutils literal notranslate"><span class="pre">10_Data/</span></code> and <code class="docutils literal notranslate"><span class="pre">20_Raster_Data/</span></code> are <strong>read-only</strong>. If users save edits there, datasets can be overwritten or corrupted.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Large raster files (e.g. DEMs, cyclone wind or flood depth grids) can slow down OneDrive sync and fill local disks.<br />
+To reduce problems:</p>
+<ul class="simple">
+<li><p>Keep only the most important raster layers in <code class="docutils literal notranslate"><span class="pre">20_Raster_Data/</span></code>.</p></li>
+<li><p>Archive older rasters in <code class="docutils literal notranslate"><span class="pre">30_Snapshots/</span></code> if you need to keep historical versions.</p></li>
+</ul>
+</div>
+<p><strong>Naming conventions for Balanced Setup (with EAPs)</strong></p>
+<p>To keep files easy to find and avoid duplicates, use a consistent naming pattern.<br />
+Below are suggested conventions with examples:</p>
+<ul class="simple">
+<li><p><strong>Data (all shared):</strong><br />
+Pattern: <code class="docutils literal notranslate"><span class="pre">[Theme]_[Location/ADMlevel]_[Source]_[YYYYMM].[ext]</span></code><br />
+Example: <code class="docutils literal notranslate"><span class="pre">Boundaries_ADM2_MDG_GADM_202407.gpkg</span></code></p></li>
+<li><p><strong>Raster data:</strong><br />
+Pattern: <code class="docutils literal notranslate"><span class="pre">[Theme]_[Location]_[Source]_[YYYYMM].[ext]</span></code><br />
+Example: <code class="docutils literal notranslate"><span class="pre">Rainfall_MDG_CHIRPS_202502.tif</span></code></p></li>
+<li><p><strong>EAP Models:</strong><br />
+Pattern: <code class="docutils literal notranslate"><span class="pre">Model_[Hazard]_[Version]_[YYYYMM].[ext]</span></code><br />
+Example: <code class="docutils literal notranslate"><span class="pre">Model_CycloneTrigger_v3_202502.model3</span></code></p></li>
+<li><p><strong>Activations:</strong><br />
+Pattern: <code class="docutils literal notranslate"><span class="pre">Cyclone_[Name]_[Year]_[OutputType]_[Region].[ext]</span></code><br />
+Example: <code class="docutils literal notranslate"><span class="pre">Cyclone_Freddy_2023_ImpactMap_ADM2_MDG.pdf</span></code></p></li>
+<li><p><strong>Projects:</strong><br />
+Pattern: <code class="docutils literal notranslate"><span class="pre">[ProjectName]_[OutputType]_[Region]_[YYYYMM]_vX.[ext]</span></code><br />
+Example: <code class="docutils literal notranslate"><span class="pre">ClimateRiskAssessment_Map_MDG_202502_v1.pdf</span></code></p></li>
+</ul>
+</section>
+</section>
+<section id="advantages-limitations-and-permissions">
+<h2>Advantages, Limitations, and Permissions<a class="headerlink" href="#advantages-limitations-and-permissions" title="Permalink to this heading">#</a></h2>
+<p>When setting up a geodata hub in SharePoint, there are clear benefits, but also some important boundaries to be aware of.<br />
+Below is a short overview of the <strong>advantages</strong>, the <strong>limitations</strong>, and how to handle <strong>permissions</strong> effectively.</p>
+<hr class="docutils" />
+<section id="advantages">
+<h3>Advantages<a class="headerlink" href="#advantages" title="Permalink to this heading">#</a></h3>
+<p>Using SharePoint for geodata management gives small organisations a strong starting point:</p>
+<ul class="simple">
+<li><p><strong>Standardisation</strong> — all staff work with the same datasets, style files, and map templates, which reduces confusion and ensures consistent outputs.</p></li>
+<li><p><strong>Easy onboarding</strong> — new colleagues don’t waste time hunting for files; the folder structure makes it obvious where to look.</p></li>
+<li><p><strong>Built-in versioning</strong> — SharePoint automatically stores file history, so it’s easy to recover previous versions if mistakes happen.</p></li>
+<li><p><strong>Flexible permissions</strong> — you can decide who can only view, who can edit, and who has full control.</p></li>
+<li><p><strong>Integration with QGIS</strong> — through OneDrive sync, datasets can be accessed locally and reliably within QGIS projects.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="limitations">
+<h3>Limitations<a class="headerlink" href="#limitations" title="Permalink to this heading">#</a></h3>
+<p>However, SharePoint is not a GIS database, and this introduces some constraints:</p>
+<ul class="simple">
+<li><p><strong>Concurrency issues</strong> — file-based geodata formats (like GeoPackage) can corrupt if multiple people try to edit them simultaneously.</p></li>
+<li><p><strong>Performance bottlenecks</strong> — very large rasters or high-frequency edits will quickly become slow; in these cases, a spatial database such as PostGIS is better.</p></li>
+<li><p><strong>Discipline required</strong> — the system relies on users consistently following folder structures and naming conventions; otherwise, the hub loses its value.</p></li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Think of SharePoint as a <strong>distribution and coordination hub</strong>.<br />
+For <strong>multi-user editing</strong> or <strong>large-scale storage</strong>, you’ll need a database backend.</p>
+</div>
+</section>
+<section id="permissions">
+<h3>Permissions<a class="headerlink" href="#permissions" title="Permalink to this heading">#</a></h3>
+<p>Managing access well is essential to protect authoritative data while allowing collaboration.<br />
+A good practice is to differentiate between <strong>authoritative data</strong>, <strong>working data</strong>, and <strong>project outputs</strong>:</p>
+<ul class="simple">
+<li><p><strong>Authoritative_Data</strong> — read-only for most staff; only designated data stewards can upload or edit.</p></li>
+<li><p><strong>Working_Data</strong> — restricted to editors; enable check-in/check-out so files aren’t overwritten accidentally.</p></li>
+<li><p><strong>Projects</strong> — editable by project teams, but can be read-only for others to avoid unwanted edits.</p></li>
+<li><p><strong>Sensitive datasets</strong> — if distribution needs to be controlled, use <em>View-only</em> links combined with <em>Block download</em>.</p></li>
+</ul>
+<hr class="docutils" />
+<p><strong>Keep permissions simple.</strong><br />
+Instead of assigning rights to individuals, create SharePoint groups such as:</p>
+<ul class="simple">
+<li><p><em>Owners</em> (Full Control)</p></li>
+<li><p><em>Editors</em> (Edit)</p></li>
+<li><p><em>Viewers</em> (Read)</p></li>
+</ul>
+<p>This makes management much easier when staff join or leave the organisation.</p>
+</section>
+</section>
+<section id="metadata-cataloguing">
+<h2>Metadata &amp; Cataloguing<a class="headerlink" href="#metadata-cataloguing" title="Permalink to this heading">#</a></h2>
+<p>Even if your files are well-organised in folders, it can still be hard for new staff to know <strong>which dataset is the latest</strong> or <strong>what each file is used for</strong>.<br />
+This is where <em>metadata</em> comes in. In SharePoint, you can add extra information fields (columns) to your libraries. These fields make it easy to filter, sort, and search across all data — without relying only on file names.</p>
+<section id="why-use-metadata">
+<h3>Why use metadata?<a class="headerlink" href="#why-use-metadata" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Clarity</strong>: Staff can quickly see which dataset is authoritative, draft, or outdated.</p></li>
+<li><p><strong>Consistency</strong>: Everyone uses the same standard fields.</p></li>
+<li><p><strong>Search &amp; filter</strong>: Instead of browsing dozens of folders, users can filter by country, hazard, or date updated.</p></li>
+<li><p><strong>Documentation</strong>: Key context (like source and update cycle) is stored with the file itself, not just in someone’s memory.</p></li>
+</ul>
+</section>
+<section id="suggested-metadata-fields">
+<h3>Suggested metadata fields<a class="headerlink" href="#suggested-metadata-fields" title="Permalink to this heading">#</a></h3>
+<p>When creating or editing a SharePoint library, you can add simple columns such as:</p>
+<ul class="simple">
+<li><p><strong>Theme</strong> (e.g. Boundaries, Health, Logistics, Hazards)</p></li>
+<li><p><strong>Location / ISO3 code</strong> (e.g. MDG, SOM, region name)</p></li>
+<li><p><strong>Source</strong> (e.g. WFP, UNOCHA, OSM)</p></li>
+<li><p><strong>DateUpdated</strong> (YYYYMMDD)</p></li>
+<li><p><strong>Contact / Owner</strong> (responsible person or team)</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You don’t need to tag <em>everything</em>. Start with 3–4 core fields that help your team find data quickly.<br />
+For example: <em>Theme</em>, <em>Location</em>, <em>Source</em>, and <em>DateUpdated</em>. More can be added later if needed.</p>
+</div>
+<iframe width="560" height="315" src="https://youtu.be/qB2acPUSF_o?si=QpUpB3tzF9BneVrg" 
+title="YouTube video player" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+</iframe>
+</section>
+</section>
+<section id="implementation-guide-quick-start">
+<h2>Implementation Guide (Quick Start)<a class="headerlink" href="#implementation-guide-quick-start" title="Permalink to this heading">#</a></h2>
+<p>Setting up a geodata hub in SharePoint is straightforward.<br />
+Follow these steps to get started:</p>
+<ol class="arabic simple">
+<li><p><strong>Create a new SharePoint document library</strong></p>
+<ul class="simple">
+<li><p>Name it clearly, e.g., <code class="docutils literal notranslate"><span class="pre">GIS_Hub</span></code>.</p></li>
+<li><p>This will be the root space for all your geodata folders.</p></li>
+</ul>
+</li>
+<li><p><strong>Set up the folder structure</strong></p>
+<ul class="simple">
+<li><p>Recreate the agreed structure (Minimalist, Balanced, or Extended) inside the library.</p></li>
+<li><p>Example for the Balanced Setup:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">00_Admin/</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">10_Data/</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">20_Raster_Data/</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">30_Styles_Templates/</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">40_Working_Data/</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">50_Projects/</span></code></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Configure permissions</strong></p>
+<ul class="simple">
+<li><p>Use SharePoint groups: <em>Owners</em> (Full Control), <em>Editors</em> (Edit), <em>Viewers</em> (Read).</p></li>
+<li><p>Set <code class="docutils literal notranslate"><span class="pre">10_Data/</span></code> and <code class="docutils literal notranslate"><span class="pre">20_Raster_Data/</span></code> as read-only for most users.</p></li>
+<li><p>Restrict <code class="docutils literal notranslate"><span class="pre">40_Working_Data/</span></code> to editors only.</p></li>
+</ul>
+</li>
+<li><p><strong>Add initial content</strong></p>
+<ul class="simple">
+<li><p>Upload authoritative datasets into <code class="docutils literal notranslate"><span class="pre">10_Data/</span></code> (boundaries, roads, exposure layers).</p></li>
+<li><p>Upload a few DEMs or land cover rasters into <code class="docutils literal notranslate"><span class="pre">20_Raster_Data/</span></code>.</p></li>
+<li><p>Add shared QGIS styles (<code class="docutils literal notranslate"><span class="pre">.qml</span></code>) and layouts (<code class="docutils literal notranslate"><span class="pre">.qpt</span></code>) into <code class="docutils literal notranslate"><span class="pre">30_Styles_Templates/</span></code>.</p></li>
+</ul>
+</li>
+<li><p><strong>Enable OneDrive sync for offline access</strong></p>
+<ul class="simple">
+<li><p>Staff can sync the <code class="docutils literal notranslate"><span class="pre">GIS_Hub</span></code> library to their laptops.</p></li>
+<li><p>This allows QGIS to use local file paths (more stable than online links).</p></li>
+</ul>
+</li>
+<li><p>**Document SOPs in <strong><code class="docutils literal notranslate"><span class="pre">00_Admin/</span></code></strong></p>
+<ul class="simple">
+<li><p>Add a simple <code class="docutils literal notranslate"><span class="pre">ReadMe.md</span></code> or <code class="docutils literal notranslate"><span class="pre">SOPs.pdf</span></code> explaining:</p>
+<ul>
+<li><p>Which folders are read-only.</p></li>
+<li><p>How to name files.</p></li>
+<li><p>Where to save drafts vs. final outputs.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Onboard staff</strong></p>
+<ul class="simple">
+<li><p>Show new staff where to find data, projects, and styles.</p></li>
+<li><p>Emphasise that only data stewards update the <code class="docutils literal notranslate"><span class="pre">10_Data/</span></code> and <code class="docutils literal notranslate"><span class="pre">20_Raster_Data/</span></code> folders.</p></li>
+</ul>
+</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Start small. Don’t upload everything at once. Begin with the datasets most often used in your projects (e.g., admin boundaries, health facilities, WorldPop).<br />
+You can expand later as the team gets used to the system.</p>
+</div>
+</section>
+<section id="standard-operating-procedures-sops">
+<h2>Standard Operating Procedures (SOPs)<a class="headerlink" href="#standard-operating-procedures-sops" title="Permalink to this heading">#</a></h2>
+<p>A clear folder structure is only useful if everyone applies it consistently.<br />
+To avoid confusion and data loss, organisations should agree on a few simple rules.<br />
+These <strong>Standard Operating Procedures (SOPs)</strong> can serve as a starting point:</p>
+<ol class="arabic simple">
+<li><p><strong>Data upload</strong><br />
+Only data stewards may add or update files in <code class="docutils literal notranslate"><span class="pre">10_Data/</span></code> and <code class="docutils literal notranslate"><span class="pre">20_Raster_Data/</span></code>.<br />
+Other staff can download these datasets but not modify them.</p></li>
+<li><p><strong>File naming</strong><br />
+Always follow the agreed naming convention (see section on naming).<br />
+This ensures datasets are easy to find and avoids duplication.</p></li>
+<li><p><strong>Working data</strong></p>
+<ul class="simple">
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">40_Working_Data/</span></code> only for drafts, intermediate processing, or temporary edits.</p></li>
+<li><p>To avoid sync problems (especially with large files), staff can also keep working files <strong>locally on their own computer</strong>.</p></li>
+<li><p>Before weekends, or whenever results need to be shared with the team (for backup and contingencies), upload the relevant files to <code class="docutils literal notranslate"><span class="pre">40_Working_Data/</span></code>.</p></li>
+</ul>
+</li>
+<li><p><strong>Project folders</strong><br />
+Each project must have its own subfolder in <code class="docutils literal notranslate"><span class="pre">50_Projects/</span></code> (e.g., <code class="docutils literal notranslate"><span class="pre">FloodResponse_2025/</span></code>).<br />
+Store there:</p>
+<ul class="simple">
+<li><p>QGIS projects (<code class="docutils literal notranslate"><span class="pre">.qgz</span></code>)</p></li>
+<li><p>Final analysis outputs (maps, reports, tables)</p></li>
+<li><p>A copy of the <strong>datasets actually used in the project</strong> (so the work can be reproduced later).</p></li>
+</ul>
+</li>
+<li><p><strong>Templates</strong><br />
+Always apply the shared QGIS styles and layouts from <code class="docutils literal notranslate"><span class="pre">30_Styles_Templates/</span></code> when producing maps or analyses.<br />
+This keeps outputs consistent across the organisation.</p></li>
+<li><p><strong>EAP workflows (if relevant)</strong><br />
+For anticipatory action, store baseline data in <code class="docutils literal notranslate"><span class="pre">50_Cyclone_EAP/Fixed_Data/</span></code>, models in <code class="docutils literal notranslate"><span class="pre">50_Cyclone_EAP/Models/</span></code>,<br />
+and create a new folder for each activation under <code class="docutils literal notranslate"><span class="pre">50_Cyclone_EAP/Activations/</span></code>.</p></li>
+<li><p><strong>Change log</strong><br />
+Keep a simple log in <code class="docutils literal notranslate"><span class="pre">00_Admin/</span></code> (e.g., <code class="docutils literal notranslate"><span class="pre">Change_Log.xlsx</span></code>) where stewards record updates to data or templates.</p></li>
+<li><p><strong>Permissions</strong><br />
+Manage access through SharePoint groups, not individuals:</p>
+<ul class="simple">
+<li><p><em>Owners</em> → Full Control</p></li>
+<li><p><em>Editors</em> → Edit (e.g., for <code class="docutils literal notranslate"><span class="pre">40_Working_Data/</span></code> and project folders)</p></li>
+<li><p><em>Viewers</em> → Read-only (for most data folders)</p></li>
+</ul>
+</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Short SOPs are most effective if they fit on <strong>one page</strong>.<br />
+Keep them simple and review once a year to make sure they are still relevant.<br />
+Emphasise that <strong>day-to-day work files can stay on individual laptops</strong>.<br />
+Only upload to <code class="docutils literal notranslate"><span class="pre">40_Working_Data/</span></code> before weekends, handovers, or when results need to be shared for team use and contingency.</p>
+</div>
 </section>
 </section>
 
@@ -703,20 +1026,20 @@ Example: Extract the rail network of Germany<div class="sd-summary-down docutils
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="en_qgis_graduated_wiki.html"
+       href="en_web_and_mobile_apps_wiki.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Graduated classification</p>
+        <p class="prev-next-title">Web &amp; mobile GIS applications</p>
       </div>
     </a>
     <a class="right-next"
-       href="en_qgis_queries_wiki.html"
+       href="../GIS_AA/en_qgis_cyclone_trigger_madagascar.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Spatial and Non-spatial queries</p>
+        <p class="prev-next-title">QGIS Trigger Workflow for Madagascar</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -735,10 +1058,29 @@ Example: Extract the rail network of Germany<div class="sd-summary-down docutils
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#buffer">Buffer</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clip">Clip</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dissolve">Dissolve</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#intersection">Intersection</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose-audience">Purpose &amp; Audience</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-role-of-the-data-steward">The role of the Data Steward</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-folder-structures">Example Folder Structures</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#minimalist-setup-very-small-teams">1. Minimalist Setup (very small teams)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#balanced-setup-general-small-organisations">2. Balanced Setup (general small organisations)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extended-setup-with-eap-workflows">3. Extended Setup (with EAP workflows)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#advantages-limitations-and-permissions">Advantages, Limitations, and Permissions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#advantages">Advantages</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations">Limitations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#permissions">Permissions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metadata-cataloguing">Metadata &amp; Cataloguing</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-use-metadata">Why use metadata?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#suggested-metadata-fields">Suggested metadata fields</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementation-guide-quick-start">Implementation Guide (Quick Start)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-operating-procedures-sops">Standard Operating Procedures (SOPs)</a></li>
 </ul>
   </nav></div>
 
