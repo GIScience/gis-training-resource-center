@@ -22,19 +22,11 @@ If you want to know how community mapping and digitisation can help improve the 
 
 :::
 
-<!---:::{card}
-__Humanitarian Example:__
-^^^
-*Digitisation, and Community Mapping, is crucial to improve the resilience of communities and the effectiveness of humanitarian work. If you want to know how community mapping has helped develop vulnerability and capacity assessments, read Paul Knight blog post on [“This is the first time this community is on a map…” — Digital Community Mapping in Nigeria](https://medium.com/digital-and-innovation-at-british-red-cross/first-time-this-community-has-been-on-a-map-nigeria-f592906b7be1).*
-
-:::
--->
-
 ```{figure} /fig/en_digitisation_concept.png
 ---
 width: 900px
 align: center
-name: Digitisation with GIS Concept
+name: en_digitisation_concept
 ---
 The concept of digitisation within GIS. Source: HeiGIT
 ```
@@ -233,9 +225,8 @@ information about this feature to the different columns, based on the attribute 
 ```{figure} /fig/point_creation.png 
 ---
 width: 750 px
-name: Point creation
+name: point_creation
 align: center
-name: Point creation
 ---
 Point creation.
 ```
@@ -254,7 +245,7 @@ Sometimes, the easiest way to get the coordinates for a location, such as the of
 ---
 width: 250 px
 align: right
-name: gmaps_rightclick_coords
+name: en_google_maps_rightclick_coords
 ---
 :::
 
@@ -263,29 +254,20 @@ name: gmaps_rightclick_coords
 3. Navigate to your QGIS project and paste the coordinates into the search bar in the bottom left corner of the QGIS window.
 4. Select `Go to [Your coordinates] (EPSG 4326: WGS 84)`. 
 5. The coordinate point will flash red on the map canvas. 
-
 ::::
 
 
-<!---
+
 
 ```{admonition} Now it's your turn!
+ 
+Try digitising the RCRC branches in your country by following the steps below.
 
-Try digitising the RCRC branches in your country.
-
+```
 1. Create a new point dataset.
 2. Add a [basemap](/content/Modul_2/en_qgis_basemap.md) (OSM or Bing Aerial, for example)
 3. Search the RCRC branches in your country on google maps.
 4. Once you have located the branches, right-click on a branch in google maps and click on the coordinates. The coordinates will be copied to your clipboard
-
-:::{figure} /fig/en_google_maps_rightclick_coords.png
----
-width: 250 px
-align: right
-name: gmaps_rightclick_coords
----
-:::
-
 5. Paste the coordinates into the search bar on the bottom left of the QGIS window. Select navigate to coordinates. The location will be marked by a red dot
 
 6. Enable the editing mode ![](/fig/mActionToggleEditing.png) in in your new layer.
@@ -296,8 +278,7 @@ name: gmaps_rightclick_coords
 11. Click on ![](/fig/mActionSaveEdits.png) to save your edits.
 12. Click on ![](/fig/mActionToggleEditing.png) to exit the editing mode. 
 
-```
--->
+
 
 ### Creating line and polygon layers
 
@@ -511,7 +492,7 @@ nodes, lines and/or vertices.
 ---
 width: 500px
 align: center
-name: Digitizing Errors in QGIS
+name: Digitization_Errors
 ---
-Digitising Errors in QGIS. Source: SpatialPost.
+Digitising Errors (Source: SpatialPost).
 ```

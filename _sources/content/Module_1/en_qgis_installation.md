@@ -80,7 +80,9 @@ For installation on Linux systems with `apt` you can install QGIS:
 ```
 sudo apt install qgis qgis-plugin-grass
 ```
+
 :::
+
 ::::
 
 In the conventional apt package sources, an older version of QGIS will probably 

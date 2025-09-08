@@ -599,10 +599,10 @@ existing vector layers or coordinate grids as a reference.</p>
 <p>In many cases, governmental institutions publish maps only as PDFs, without public access to the underlying data. In
 these cases, knowing how to correctly georeference a map allows you to access and use the information in your GIS
 analyses. In the case discussed in this chapter, the soil degradation map of Somalia is only available in a PDF report. In order to use the information in a GIS analysis, we can use the georeferencer to assign geographic coordinates to the pixels of the image. After georeferencing the image, the result is a raster file (<code class="docutils literal notranslate"><span class="pre">.tiff</span></code>). This dataset can be vectorized (converted into vector data) or joined with other raster data, to gain additional information.</p>
-<figure class="align-default" id="example-georeferenced-map">
+<figure class="align-default" id="example-georeferencing-hague">
 <a class="reference internal image-reference" href="../../_images/example_georefencing_hague.png"><img alt="../../_images/example_georefencing_hague.png" src="../../_images/example_georefencing_hague.png" style="width: 750px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.20 </span><span class="caption-text">A digitised old map of the Hague (Source: <a class="reference external" href="https://kokoalberti.com/articles/georeferencing-and-digitizing-old-maps-with-gdal/">Kokoalberti</a>)</span><a class="headerlink" href="#example-georeferenced-map" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 3.20 </span><span class="caption-text">A digitised old map of the Hague (Source: <a class="reference external" href="https://kokoalberti.com/articles/georeferencing-and-digitizing-old-maps-with-gdal/">Kokoalberti</a>)</span><a class="headerlink" href="#example-georeferencing-hague" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <!--ADD: Pictures of maps available in pdf reports-->
@@ -617,10 +617,10 @@ images become valuable for digitizing features and conducting spatial analyses w
 <p>There are several transformation algorithms available in QGIS to gereference a map. If the map is in the same CRS and only needs to be rotated,
 a <strong>linear</strong> transformation is sufficient. However, if the image or map is in a different CRS or is visibly skewed, a <strong>polynomial</strong> transformation
 is needed. The more complex the transformation algorithm is, the more Ground Control points you need.</p>
-<figure class="align-default" id="georef-transform-types">
+<figure class="align-default" id="en-georef-transformations">
 <a class="reference internal image-reference" href="../../_images/en_georef_transformations.png"><img alt="../../_images/en_georef_transformations.png" src="../../_images/en_georef_transformations.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.21 </span><span class="caption-text">Different transformation types: linear (left), polynomial 2nd degree (middle), polyonmial 3rd degree (right) (Source: <a class="reference external" href="https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/overview-of-georeferencing.htm">ESRI</a>)</span><a class="headerlink" href="#georef-transform-types" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 3.21 </span><span class="caption-text">Different transformation types: linear (left), polynomial 2nd degree (middle), polyonmial 3rd degree (right) (Source: <a class="reference external" href="https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/overview-of-georeferencing.htm">ESRI</a>)</span><a class="headerlink" href="#en-georef-transformations" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>In most cases, you will use either linear, or polynomial (2nd or 3rd degree) transformations. There are many more

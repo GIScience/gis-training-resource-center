@@ -12,7 +12,7 @@ Spatial data classification in GIS involves categorising geographic information 
 classes based on shared characteristics or attributes. Each class can be assigned a distinct symbol or 
 colour. This process enhances the organization and interpretation of spatial data.
 
-The attributes of geospatial data are stored in a specific column within the attribute table.
+The attributes of  geodata are stored in a specific column within the attribute table.
 Essentially, we choose a column containing the specific characteristics of interest, allowing 
 QGIS to group the data based on these selected attributes. 
 
@@ -153,10 +153,10 @@ Categorised classification is usually used for __nominal__ and __ordinal__ scale
 ```{figure} /fig/Categorized_district_map_SierraLeone.png
 ---
 width: 750 px
-name: Categorised classification
+name: Categorized_district_map_SierraLeone
 align: center
 ---
-Categorised classification.
+Example for a map using categorised classification.
 ```
 
 :::{dropdown} How To: Categorised classificatation
@@ -189,13 +189,13 @@ representation of geographic phenomena.
 
 ```{figure} /fig/example_classification_hexagons.png
 ---
-name: Ukraine_hexagonal_map
+name: example_classification_hexagons
 width: 750 px
 ---
 REACH, Ukraine, IDP Collective Site Monitoring Map, Actives, July 2024 (Source: [Reach](https://repository.impact-initiatives.org/document/impact/192097a8/REACH_UKR_Map_CSM_SituationOverview_ActiveSites_JULY2024_ENG_A4-1.pdf))
 ```
 
-In {numref}`Ukraine_hexagonal_map`, each hexagonal cell holds a value for "Number of sites per 150km²" 
+In {numref}`example_classification_hexagons`, each hexagonal cell holds a value for "Number of sites per 150km²" 
 ranging from 1 to 91. The cells have been organised into 5 categories, making it easy to distinguish 
 between the different values in each cell. By keeping the amount of classes to a minimum, the reader can 
 read and understand the map quicker. 
@@ -228,6 +228,7 @@ can make a few general statements.
 ---
 width: 900px 
 align: center
+name: Histogramm_example.drawio
 ---
 Histogramm of population data. Source: [Axis Maps](https://www.axismaps.com/guide/data-classification)
 ```
@@ -245,6 +246,7 @@ the data into three classes using these methods.
 ---
 width: 900px
 align: center
+name: classification_method_map
 ---
 Different classifications. Source: HeiGIT  (adapted from [Axis Maps](https://www.axismaps.com/guide/data-classification)) 
 ```
@@ -351,7 +353,7 @@ Graduated classification. Source: [Axis Maps](https://www.axismaps.com/guide/dat
 ```{figure} /fig/classification_graduated_basic.png
 ---
 width: 900px
-name: graduated classification
+name: classification_graduated_basic
 align: center
 ---
 Graduated classification in QGIS 3.36.
