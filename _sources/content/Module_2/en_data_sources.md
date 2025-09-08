@@ -47,7 +47,7 @@ The data to create maps or perform GIS analyses can come from various sources (S
 
 ### General geodata 
 
-| Name | Data | Link |
+| Name  | Data | Link |
 | :-------------------- | :----------------- | :---------- |
 | Natural Earth | Administrative and physical geography | https://www.naturalearthdata.com/ |
 | Geonames | Administrative geodata | https://www.geonames.org/ |
@@ -55,7 +55,7 @@ The data to create maps or perform GIS analyses can come from various sources (S
 | DivaGIS | Different data, e.g. administrative, roads, population, elevation, climate | http://www.diva-gis.org/gdata |
 | Open Topography | Data on topography | https://opentopography.org/ |
 | OSM Boundaries | Administrative boundaries (need to authenticate via your osm account) | https://osm-boundaries.com |
-| GDAM | Administrative boundaries | gadm.org |
+| GADM | Administrative boundaries | gadm.org |
 
 ### Humanitarian data
 
