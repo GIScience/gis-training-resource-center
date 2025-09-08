@@ -50,7 +50,7 @@ In order to provide your audience and readers with sufficient information so the
 
 ```{figure} ../../fig/en_good_map_composition_example.png
 ---
-name: good map composition example
+name: en_good_map_composition_example
 width: 750px
 ---
 Elements of good map composition
@@ -78,7 +78,7 @@ __The legend__ is key to interpreting the information represented on the map. Wi
 ```{figure} ../../fig/en_legend_good_practice.png
 ---
 width: 750px
-name: Organized Legend
+name: en_legend_good_practice
 ---
 Example of a well organized legend
 ```
@@ -91,7 +91,7 @@ __The scale bar__ is essential to a map since it gives the correspondence betwee
 
 ```{figure} ../../fig/example_scale_bar.png
 ---
-name: scale bar
+name: example_scale_bar
 ---
 Scale bar examples
 ```
@@ -119,7 +119,7 @@ Take a look at the maps below and pay close attention to how the cartographers a
 
 ```{figure} /fig/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png
 ---
-name: map_example_ethiopia
+name: ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4
 width: 750 px
 ---
 Flood affected areas and roads in the Somali Region, Ethiopia (Source: OCHA)
@@ -131,7 +131,7 @@ Flood affected areas and roads in the Somali Region, Ethiopia (Source: OCHA)
 
 ```{figure} /fig/proportional_circles_example.png
 ---
-name: prop_circles_example
+name: proportional_circles_example
 width: 500 px
 ---
 Internally Displaced Persons (IDPs), 30 September 2024 (Soure: [UNHCR](https://reliefweb.int/map/sudan/regional-bureau-east-horn-africa-and-great-lakes-region-internally-displaced-persons-idps-30-september-2024)).
@@ -143,7 +143,7 @@ Internally Displaced Persons (IDPs), 30 September 2024 (Soure: [UNHCR](https://r
 
 ```{figure} /fig/choropleth_hum_example.png
 ---
-name: hum_sit_monitoring_choro_example
+name: choropleth_hum_example
 width: 700 px
 ---
 South Sudan: Humanitarian Situation Monitoring, April-May 2024 - Damaged shelters (Source: [REACH](https://repository.impact-initiatives.org/document/impact/897badb8/REACH_SSD_Map_HSM_AprilMay2024_DamagedShelters_June2024-1.pdf))
@@ -156,7 +156,7 @@ South Sudan: Humanitarian Situation Monitoring, April-May 2024 - Damaged shelter
 
 ```{figure} /fig/en_m4_operational_overview_example.png
 ---
-name: operational_overview_example
+name: en_m4_operational_overview_example
 width: 650 px
 ---
 Operational overview or response activity map (Source: [Shelter Cluster Vanuata](https://reliefweb.int/map/vanuatu/vanuatu-tropical-cyclone-lola-distribution-and-gap-map-malampa-13022024))

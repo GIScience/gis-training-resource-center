@@ -124,7 +124,7 @@ __Why is this important in GIS?__
 
 ```{figure} /fig/en_modifiable_areal_unit_problem_diagram.png
 ---
-name: modifiable_areal_unit_problem
+name: en_modifiable_areal_unit_problem_diagram
 width: 500 px
 ---
 Visualising the Modifiable Areal Unit Problem: The same indicator represented at three different scales (Source: Kitchin, Rob & Lauriault, Tracey & McArdle, Gavin. (2015). Knowing and governing cities through urban indicators, city benchmarking and real-time dashboards. Regional Studies, Regional Science. 2. 6-28. 10.1080/21681376.2014.983149. )
@@ -165,7 +165,7 @@ Be cautious when using a __gradient across two different colours__ for data that
 ```
 
 This is a difficult because our brains are used to prioritising certain colours, especially green to red, or blue to red. We must remember that __if our values do not have a meaningful zero point__, it might be better to stay in the same single colour and use different shades of that colour to indicate different values. Alternatively, a colour gradient that is not diverging can be used. 
-<!--What about height?-->
+
 
 A diverging gradient between two colours can be used when it is necessary to show a gradation that can go from negative to positive. As for temperatures, it makes sense to distinguish negative values (in shades of blue for example) and positive values (in shades of red).
 

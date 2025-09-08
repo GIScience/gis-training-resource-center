@@ -27,7 +27,7 @@ display. Look at the attribute table of the dataset to find it out.
 ```{figure} /fig/labels_single_labels_example_nga_adm1.png
 ---
 width: 600 px
-name: single labels example
+name: labels_single_labels_example_nga_adm1
 ---
 Single labels for each administrative region (adm1) in Nigeria. The reader is able to assign each label to the respective administrative entity.
 ```
@@ -35,7 +35,7 @@ Single labels for each administrative region (adm1) in Nigeria. The reader is ab
 ```{figure} /fig/en_30.30.2_assigning_value_to_labels.png
 ---
 width: 600 px
-name: assigning value to labels
+name: en_30.30.2_assigning_value_to_labels
 ---
 Assigning the correct attribute value in the labeling options. QGIS needs to know which attribute (column) of the attribute table should be displayed as a label. In this case, we want the name of the administrative region (`ADM1_EN`) to be displayed. 
 ```
@@ -52,13 +52,12 @@ Assigning the correct attribute value in the labeling options. QGIS needs to kno
 ```{figure} ../../fig/en_30.30.2_setting_up_labels.png
 ---
 width: 600px
-name: Setting up labels
+name: en_30.30.2_setting_up_labels
 ---
 Setting up labels in QGIS 30.30.2
 ```
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_setting_up_labels
-.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_setting_up_labels.mp4"></video>
 
 :::{attention}
 
@@ -66,7 +65,7 @@ Single Labels are not always useful. For example, if the dataset is too big, or 
 
 ```{figure} /fig/single_labels_bad_example.png
 ---
-name: single labels bad example
+name: single_labels_bad_example
 width: 400 px
 ---
 Single Labels was selected to display the names of the settlements (red dots). A map with so much text information is unreadable and the information can hardly be understood. 
@@ -82,7 +81,7 @@ example, you can filter your data to only display the names of regional capitals
 
 ```{figure} /fig/rule-based_labeling_example_settlements_nga.png
 ---
-name: rule-based labeling example settlements nga
+name: rule-based_labeling_example_settlements_nga
 width: 500 px
 ---
 Rule-based labeling allows you to filter datasets. This way, you can display the labels only for selected features without altering the dataset.
@@ -116,7 +115,7 @@ Below are some further considerations to keep in mind when using labels:
 ```{figure} ../../fig/good_labels_example.png
 ---
 width: 400 px
-name: Axis Maps good labels example
+name: good_labels_example
 ---
 A good example of label placement and font. Pay attention to the text colours and orientation. Every label can easily be attributed to the correct cartographic feature. (Source: [Axis Maps](https://www.axismaps.com/guide/labeling))
 ```
@@ -130,7 +129,7 @@ A good example of label placement and font. Pay attention to the text colours an
 
 :::{figure} ../../fig/labels_numerical_values_bad_example.png
 ---
-name: numerical labels bad example
+name: labels_numerical_values_bad_example
 ---
 Numerical Labels
 :::
@@ -141,7 +140,7 @@ Numerical Labels
 
 :::{figure} /fig/labels_graduated_symbology_example.png
 ---
-name: graduated symbology instead numerical values
+name: labels_graduated_symbology_example
 ---
 [Graduated Symbology](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_data_classification.html#graduated-classification)
 :::
@@ -157,7 +156,7 @@ name: graduated symbology instead numerical values
 ```{figure} ../../fig/label_text_buffer_example.png
 ---
 width: 500 px
-name: label buffer example
+name: label_text_buffer_example
 ---
 A label without a text buffer (left) and a label with a white text buffer (right)
 ```

@@ -29,7 +29,7 @@ For example, if you want to send a layer to your colleague with the same styling
 ```{figure} ../../fig/en_30.30.2_save_layer_style_window.png
 ---
 width: 350px
-name: Save layer styling window
+name: en_30.30.2_save_layer_style_window
 ---
 Save Layer styling window in QGIS 30.30.2.
 ```

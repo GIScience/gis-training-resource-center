@@ -70,7 +70,7 @@ Ideally, use a basemap where you can identify exact locations on both the basema
 
 ```{figure} /fig/en_3.36_open_georefencer.png
 ---
-name: open_georeferencer
+name: en_3.36_open_georefencer
 width: 500 px
 ---
 Opening the Georeferencer in QGIS 3.36
@@ -106,7 +106,7 @@ In most cases, you can leave the transformation type on `linear`. Regional maps 
 ```{figure} /fig/en_3.36_georef_dialogue_GCP.png
 ---
 width: 700 px
-name: georeferencer_dialogue
+name: en_3.36_georef_dialogue_GCP
 ---
 Georeferencer dialogue in QGIS 3.36
 ```
@@ -119,7 +119,7 @@ Georeferencer dialogue in QGIS 3.36
 ```{figure} /fig/en_3.36_finished_georef.png
 ---
 width: 700 px
-name: Som_georef_map
+name: en_3.36_finished_georef
 ---
 A georeferenced map of Somalia in the QGIS Map Canvas
 ```
