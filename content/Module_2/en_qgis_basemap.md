@@ -8,8 +8,6 @@
 
 # Basemaps
 
-<!-- CLARIFY: This section could be rewritten more clearly; 
-EN: Added a bit more context. Is this enough? -->
 
 Base maps in QGIS serve as foundational layers that provide essential geographical context for other spatial data layers. They typically include features like roads, rivers, administrative boundaries, terrain information, and in some cases, satellite imagery. The primary purpose of base maps is to offer a visual reference for spatial analysis, data visualization, and map creation within QGIS projects.
 
@@ -17,7 +15,7 @@ Advantages of using base maps in QGIS, including satellite imagery, include:
 
 * Contextual Reference: Base maps offer a backdrop against which other spatial data layers can be overlaid, providing users with valuable context for their analyses and visualizations.
 * Enhanced Visualization: Incorporating satellite imagery as base maps adds an extra layer of detail and realism to maps created in QGIS. Satellite imagery provides high-resolution views of the Earth's surface, enabling users to visualize features such as land cover, vegetation, and urban areas with precision.
-* Quick Project Setup: Incorporating pre-existing base maps, including satellite imagery, into QGIS projects allows users to quickly set up new projects without the need to digitize or create base layers from scratch.
+* Quick Project Setup: Incorporating pre-existing base maps, including satellite imagery, into QGIS projects allows users to quickly set up new projects without the need to digitise or create base layers from scratch.
 
 Limitations of base maps, including satellite imagery, in QGIS may include:
 

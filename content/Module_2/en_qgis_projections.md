@@ -27,7 +27,7 @@ width: 700px
 align: center
 name: Examples for Projections (azimuthal, cylindrical and conic)
 ---
-Examples for Projections (Source:(http://ibis.colostate.edu/webcontent/NR505/2012_Projects/Team6/GISConcepts.html)
+Examples for Projections (Source:(http://ibis.colostate.edu/webcontent/NR505/2012_Projects/Team6/GISConcepts.html)).
 ```
 
 Every projection has its use case. For example, the Mercator projection displays the angles between to points 
@@ -54,15 +54,6 @@ name: Comparison Greenland - Africa
 Comparison Greenland - Africa. Source: [The True Size of](https://www.thetruesize.com/#?borders=1~!MTYwODM1MTk.MzkyNDUyNg*MjY5NjM4Mzg(MTA1MjgyOTE~!CONTIGUOUS_US*MTAwMjQwNzU.MjUwMjM1MTc(MTc1)MQ~!IN*NTI2NDA1MQ.Nzg2MzQyMQ)MA~!CN*OTkyMTY5Nw.NzMxNDcwNQ(MjI1)Mg)
 ```
 
-<!----
-:::{dropdown} TheTrueSize.com - compare the effects of different projections
-
-%%html
-<iframe src="https://www.thetruesize.com/#?borders=1~!MTUxNjUyNzI.MzM1OTE0MQ*MzI2NDc5MjY(NjgwODA4Mg~!GL*OTQ3NTExNQ.MjkxMDYzMzM)Mw" width="750" height="500"></iframe>
-
-:::
-
--->
 
 ## How to choose an appropriate projected coordinate system
 
@@ -176,7 +167,7 @@ width: 800px
 name: Local and global coordinate reference systems (CRS)
 align: center
 ---
-Local and global coordinate reference systems (CRS). Source: British Red Cross (BRC)
+Local and global coordinate reference systems (CRS).(Source: British Red Cross)
 ```
 
 As you can see, smaller regions look skewed and distorted in a global CRS

@@ -249,20 +249,7 @@ Databases such as Geodatabase (`.gdb`) or Geopackage (`gkpg`) can also hold rast
 ```
 
 ----
-<!---REMOVED DUE TO DUPLICATION WITH THE DATA FORMAT TABLES
 
-{numref}`main_geodata_formats` summarizes the different data formats for raster and vector data commonly used in GIS.
-
-```{figure} /fig/en_data_formats.png
----
-width: 700px
-align: center
-name: main_geodata_formats
----
-The main geographical data formats. Source: [CartONG](https://cartong.pages.gitlab.cartong.org/learning-corner/en/4_data_geo/4_1_formats)
-```
-
--->
 
 ## The layer concept
 

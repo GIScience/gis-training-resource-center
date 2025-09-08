@@ -91,8 +91,9 @@ assign symbols in [Module 4: Visualisation of Geodata and Map Making](/content/M
 
 
 
-:::{dropdown} A note on plugins
-:open:
+:::{card}
+__A note on plugins__
+^^^
 
 In addition to the algorithms included in the standard installation, QGIS offers plugins which add additional 
 functionality to the QGIS application. These plugins are developed by independent organizations or the QGIS-community. 
@@ -214,7 +215,7 @@ __Hotkeys__ in the QGIS interface provide convenient shortcuts for various comma
 
 ```
 
-```{dropdown} Project managment
+```{dropdown} Project management
 
 | Name            | Menu option                        | Shortcut         | Description                             |
 |-----------------|------------------------------------|------------------|-----------------------------------------|
