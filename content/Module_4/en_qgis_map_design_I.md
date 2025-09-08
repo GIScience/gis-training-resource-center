@@ -28,7 +28,7 @@ agricultural land).
 ```{figure} ../../fig/en_30.30.2_topographic_map_examples.png
 ---
 width: 600px
-name: Topographic Maps Examples
+name: en_30.30.2_topographic_map_examples
 ---
 Examples for topographic maps
 ```
@@ -41,7 +41,7 @@ the rules of graphic semiology.
 ```{figure} ../../fig/en_30.30.2_thematic_maps_examples.png
 ---
 width: 600px
-name: Thematic maps examples
+name: en_30.30.2_thematic_maps_examples
 ---
 Examples for thematic maps
 ```
@@ -57,7 +57,7 @@ information you want to convey.
 ```{figure} ../../fig/en_30.30.2_graphic_semiology_signs.png
 ---
 width: 500px
-name: Graphic_information
+name: en_30.30.2_graphic_semiology_signs
 ---
 You can use different graphic signs depending on the type of information you want to display.
 ```
@@ -69,7 +69,7 @@ between each element, helping to display different information.
 
 ```{figure} ../../fig/en_visual_variables.png
 ---
-name: Visual_variables
+name: en_visual_variables
 width: 500px
 ---
 Visual variables according to Bertin (1967)
@@ -94,7 +94,7 @@ the cycling map, show the safest biking routes, bike repair stations and resting
 
 ```{figure} /fig/m4_OSM_Overviewmap_example.png
 ---
-name: OSM_topo
+name: m4_OSM_Overviewmap_example
 width: 375 px
 ---
 [OSM](https://www.openstreetmap.org) Standard 
@@ -106,7 +106,7 @@ width: 375 px
 
 ```{figure} /fig/m4_OSM_bikemap.png
 ---
-name: OSM_Radfahrerkarte
+name: m4_OSM_bikemap
 width: 375 px
 ---
 OSM Cycling Map
@@ -132,7 +132,7 @@ You can also use maps from you encountered in your work or daily life.
 
 ```{figure} /fig/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png
 ---
-name: map_example_ethiopia
+name: ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4
 width: 750 px
 ---
 Flood affected areas and roads in the Somali Region, Ethiopia (Source: OCHA)
@@ -144,7 +144,7 @@ Flood affected areas and roads in the Somali Region, Ethiopia (Source: OCHA)
 
 ```{figure} /fig/proportional_circles_example.png
 ---
-name: prop_circles_example
+name: proportional_circles_example
 width: 500 px
 ---
 Internally Displaced Persons (IDPs), 30 September 2024 (Soure: [UNHCR](https://reliefweb.int/map/sudan/regional-bureau-east-horn-africa-and-great-lakes-region-internally-displaced-persons-idps-30-september-2024)).
@@ -156,7 +156,7 @@ Internally Displaced Persons (IDPs), 30 September 2024 (Soure: [UNHCR](https://r
 
 ```{figure} /fig/choropleth_hum_example.png
 ---
-name: hum_sit_monitoring_choro_example
+name: choropleth_hum_example
 width: 700 px
 ---
 South Sudan: Humanitarian Situation Monitoring, April-May 2024 - Damaged shelters (Source: [REACH](https://repository.impact-initiatives.org/document/impact/897badb8/REACH_SSD_Map_HSM_AprilMay2024_DamagedShelters_June2024-1.pdf))
@@ -169,7 +169,7 @@ South Sudan: Humanitarian Situation Monitoring, April-May 2024 - Damaged shelter
 
 ```{figure} /fig/en_m4_operational_overview_example.png
 ---
-name: operational_overview_example
+name: en_m4_operational_overview_example
 width: 650 px
 ---
 Operational overview or response activity map (Source: [Shelter Cluster Vanuata](https://reliefweb.int/map/vanuatu/vanuatu-tropical-cyclone-lola-distribution-and-gap-map-malampa-13022024))
@@ -292,7 +292,7 @@ values, a diverging colour gradient should be used.
 
 ``` {figure} ../../fig/en_colour_gradients_qualities.png
 ---
-name: Colouring schemes
+name: en_colour_gradients_qualities
 width: 750px
 ---
 Different types of colouring schemes.
@@ -305,7 +305,7 @@ white. You can achieve a clear sequence by grading the __saturation__ of the col
 
 ```{figure} ../../fig/de_colour_gradients_saturation.png
 ---
-name: colour gradients saturation example
+name: de_colour_gradients_saturation
 width: 750px
 ---
 Examples for different colour gradients translated into black and white. Pay attention to the saturation gradient under 
@@ -318,7 +318,7 @@ Colour gradients can also encompass multiple hues:
 
 ```{figure} ../../fig/colour_gradients_hues.png
 ---
-name: colour gradients with multiple hues
+name: colour_gradients_hues
 width: 750px
 ---
 Single hue gradient on the left; Multiple hue gradient on the right.  
@@ -336,7 +336,7 @@ diverging Red-Green gradients) can be hard or impossible to distinguish for peop
 
 ``` {figure} ../../fig/Colour_Blindness.png
 ---
-name: colour blindness examples
+name: Colour_Blindness
 width: 750px
 ---
 Different Colour schemes for the Colour Vision Impaired; Source: Jenny, Bernhard, and Nathaniel Vaughn Kelso. (2007). Color Design for the Color Vision Impaired. *Cartographic Perspectives*, no. 58 (September 1, 2007): 61-67. https://doi.org/10.14714/CP58.270 
@@ -348,13 +348,13 @@ The different symbolisation methods discussed in this chapter can be combined in
 different ways to create sophisticated reports and maps. By combining several methods, 
 you can communicate different phenomena intuitively to the reader. A classical example 
 is a combination of a choropleth map (graduated colours) with a proportional circles map 
-(see {numref}`bivariate_map_example_lebanon`). 
+(see {numref}`en_complex_map_lebanon`). 
 
 __Complex Map 1:__
 
 ```{figure} /fig/en_complex_map_lebanon.png
 ---
-name: bivariate_map_example_lebanon
+name: en_complex_map_lebanon
 width: 550 px
 ---
 A complex map using graduated colours and proportional circles (Source: [REACH](https://reliefweb.int/map/lebanon/lebanon-conflict-and-displacement-overview-30-september-2024))
@@ -364,7 +364,7 @@ __Complex Map 2:__
 
 ```{figure} /fig/en_complex_bivariate_map.png
 ---
-name: complex_bivariate_map_example
+name: en_complex_bivariate_map
 width: 550 px
 ---
 A complex map combining layer styling and different visual variables to 
@@ -375,7 +375,7 @@ __Complex Map 3:__
 
 ```{figure} /fig/en_complex_map_example_yemen.png
 ---
-name: test_complex_map
+name: en_complex_map_example_yemen
 width: 550 px
 ---
 A complex map using graduated colours to signify flood depth as well as the flood hazard for IDP sites (Source: [REACH](https://reliefweb.int/map/yemen/flood-hazard-idp-sites-marib-governorate-flood-depth-model-january-2024-production-date-07-may-2024))
@@ -383,7 +383,7 @@ A complex map using graduated colours to signify flood depth as well as the floo
 
 :::{admonition} Now it's your turn!
 :class: tip
-{numref}`bivariate_map_example_lebanon`, {numref}`complex_bivariate_map_example` and {numref}`test_complex_map` make use of graduated colours as well as graduated symbols. What other symbolisation principles can you detect on these maps? 
+{numref}`en_complex_map_lebanon`, {numref}`en_complex_bivariate_map` and {numref}`en_complex_map_example_yemen` make use of graduated colours as well as graduated symbols. What other symbolisation principles can you detect on these maps? 
 :::
 
 

@@ -16,7 +16,7 @@ want to apply our understanding of visual representation and learn how to use th
 ```{figure} ../../fig/en_30.30.2_styling_panel.png
 ---
 height: 400px
-name: styling_panel
+name: en_30.30.2_styling_panel
 align: left
 ---
 Styling panel in QGIS 3.30.2
@@ -43,7 +43,7 @@ lines, or polygons. There are different options to symbolize these different typ
 
 ```{figure} ../../fig/en_symbolization_vector_data.png
 ---
-name: symbolization for vector data
+name: en_symbolization_vector_data
 width: 750px
 ---
 Symbolization for vector data; Source: White, T. (2017). Symbolization and the Visual Variables. *The Geographic Information Science & Technology Body of Knowledge (2nd Quarter 2017 Edition), John P. Wilson (ed.). DOI: 10.2222/gistbok/2017.2.3 
@@ -65,11 +65,11 @@ Most simple markers consist of a __fill__ and an __outline__. Depending on the t
 - You can either style a single symbol for each layer or use different styles based on a [categorisation method](/content/Module_3/en_qgis_data_classification.md). 
 
 In the Symbology Tab, you can select between various symbolization 
-methods (see {numref}`symbolisation_methods_m4`). The most important ones are __Single Symbol__, __Categorised__, __Graduated__, and __Rule-based__. 
+methods (see {numref}`en_3.36_m4_symbolisation_methods`). The most important ones are __Single Symbol__, __Categorised__, __Graduated__, and __Rule-based__. 
 
 ```{figure} /fig/en_3.36_m4_symbolisation_methods.png
 ---
-name: symbolisation_methods_m4
+name: en_3.36_m4_symbolisation_methods
 width: 500 px
 ---
 
@@ -140,7 +140,7 @@ To change the symbology of a single layer:
 
 ```{figure} ../../fig/en_30.30.2_vector_layer_styling_transparent.png
 ---
-name: layer styling transparent
+name: en_30.30.2_vector_layer_styling_transparent
 width: 500 px
 ---
 ```
@@ -160,7 +160,7 @@ __Step 1: Ordering the layers__
 
 ```{figure} ../../fig/en_30.30.2_changing_layer_style_1.png
 ---
-name: change layer style 1
+name: en_30.30.2_changing_layer_style_1
 height: 400px 
 ---
 Order the layers and navigate to the styling panel of the topmost layer
@@ -181,7 +181,7 @@ Order the layers and navigate to the styling panel of the topmost layer
 ```{figure} ../../fig/en_30.30.2_changing_layer_style_3.png
 ---
 width: 500 px
-name: change layer style 3
+name: en_30.30.2_changing_layer_style_3
 ---
 The styling of a vector data consists of the colour and the outline
 ```
@@ -209,7 +209,7 @@ each State.
 
 ```{figure} ../../fig/en_30.30.2_symbology_variable_ranges.png
 ---
-name: symbology of variable ranges
+name: en_30.30.2_symbology_variable_ranges
 width: 550px
 ---
 With variable ranges, select __Graduated__ symbology and choose the attribute with continuous values
@@ -223,7 +223,7 @@ With variable ranges, select __Graduated__ symbology and choose the attribute wi
 
 ```{figure} ../../fig/en_30.30.2_symbology_variable_ranges_2.png
 ---
-name: symbology of variable ranges 2
+name: en_30.30.2_symbology_variable_ranges_2
 width: 500px
 ---
 You can categorize the continuous values into classes and assign a colour ramp 
@@ -233,7 +233,7 @@ The following map shows the most populated States of Nigeria using a graduated c
 
 ```{figure} ../../fig/en_map_design_example_variable_ranges.png
 ---
-name: map design example_state population Nigeria
+name: en_map_design_example_variable_ranges
 width: 500px
 ---
 A map showing the population of Nigerian states
@@ -252,14 +252,14 @@ choropleth maps with graduated symbols.
 Creating graduated symbol maps is done in a similar way to creating choropleth maps, but it involves one extra step: 
 Creating Centroids of the administrative boundaries. Centroids are points that are placed at the calculated centre of 
 polygons (see [Module 5](/content/Modul_5/en_qgis_non_spatial_tools.md)).  
-We will be using the same layer as for the choropleth map (see {numref}`map design example_state population Nigeria`): 
+We will be using the same layer as for the choropleth map (see {numref}`en_map_design_example_variable_ranges`): 
 `NGA_Adm1_Pop`.
 
-1. In the [processing toolbox](), search for the tool `centroids`. <kbd>Double-Click</kbd> on it. A new window will open (see {numref}`m4_centroids_creation`)
+1. In the [processing toolbox](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_start.html?highlight=processing+toolbox#toolbox-toolbars), search for the tool `centroids`. <kbd>Double-Click</kbd> on it. A new window will open (see {numref}`en_3.36_m4_centroids`)
 
 ```{figure} /fig/en_3.36_m4_centroids.png
 ---
-name: m4_centroids_creation
+name: en_3.36_m4_centroids
 width: 500 px
 ---
 Creating centroids in QGIS 3.36
@@ -275,7 +275,7 @@ Creating centroids in QGIS 3.36
 
 ```{figure} /fig/en_m4_graduated_symbols_example.png
 ---
-name: nigeria_graduated_symbols
+name: en_m4_graduated_symbols_example
 width: 550 px
 ---
 A map of Nigeria displaying the same data. Once using graduated colours (choropleth) and graduated symbols (proportional circles). 
@@ -304,7 +304,7 @@ Categorized symbology is used when you have ***discrete*** variables.
 
 ```{figure} ../../fig/en_30.30.2_categorized_layer_symbology_1.png
 ---
-name: categorized layer symbology 1
+name: en_30.30.2_categorized_layer_symbology_1
 width: 500px
 ---
 Change the symbology type to "categorised" and choose the Value (variable) you wish to display
@@ -320,7 +320,7 @@ Change the symbology type to "categorised" and choose the Value (variable) you w
 
 ```{figure} ../../fig/en_30.30.2_categorized_layer_symbology_2.png
 ---
-name: categorized layer symbology 2
+name: en_30.30.2_categorized_layer_symbology_2
 width: 500px
 ---
 By double clicking on the __unique values__ in the classified list, you can change the symbol for each value
@@ -330,7 +330,7 @@ Now we have a map of Nigeria where you can locate the areas, that are affected b
 
 ```{figure} ../../fig/en_exercise_map_design_example_Nigeria.png
 ---
-name: map design example regions affected by explosions in Nigeria
+name: en_exercise_map_design_example_Nigeria
 width: 500px
 ---
 Regions affected by explosions in Nigeria

@@ -10,7 +10,7 @@
 
 ```{figure} ../../fig/en_30.30.2_understanding_the_print_layout_composer.png
 ---
-name: New Print Layout
+name: en_30.30.2_understanding_the_print_layout_composer
 ---
 The interface of the Print Layout Composer
 ```
@@ -42,7 +42,7 @@ First of all, you should always set the size of your map:
 ```{figure} ../../fig/en_30.30.2_adding_a_map.png
 ---
 width: 750px
-name: Add a new map
+name: en_30.30.2_adding_a_map
 ---
 Adding a new map to the Print Layout (Source: CartONG)
 ```
@@ -71,7 +71,7 @@ A title should describe the phenomenon represented on the map.
 ```{figure} ../../fig/en_30.30.2_print_layout_add_text.png
 ---
 width: 750px
-name: Add text to the print layout
+name: en_30.30.2_print_layout_add_tex
 ---
 Adding text to the print layout (Source: CartONG).
 ```
@@ -94,7 +94,7 @@ If you are working for an organisation, most likely you will add the logo of tha
 
 ```{figure} /fig/3.36_print_layout_add_image.png
 ---
-name: print_layout_add_image
+name: 3.36_print_layout_add_image
 width: 650 px
 ---
 Adding an image or logo to the print layout.
@@ -116,7 +116,7 @@ To add a legend, you can use the ![](../../fig/30.30.2_print_layout_add_legend.p
 ```{figure} ../../fig/en_30.30.2_print_layout_add_legend.png
 ---
 width: 750px
-name: Add a legend to the print layout
+name: en_30.30.2_print_layout_add_legend
 ---
 Adding a legend to the print layout
 ```
@@ -159,7 +159,7 @@ Before adding a scale bar, select your main map and check in the __Item Properti
 ```{figure} ../../fig/en_30.30.2_print_layout_scale.png
 ---
 width: 750px
-name: Round number for scale
+name: en_30.30.2_print_layout_scale
 ---
 Make sure that the scale is at a round number
 ```
@@ -177,7 +177,7 @@ There are many other options to customize the scale bar (change the font, colour
 ```{figure} ../../fig/en_30.30.2_print_layout_add_scale_bar.png
 ---
 width: 750px
-name: Add scale bar
+name: en_30.30.2_print_layout_add_scale_bar
 ---
 Add and customise the scale bar
 ```
@@ -204,7 +204,7 @@ To create an overview map, you need to follow these steps:
 ```{figure} ../../fig/en_30.30.2_print_layout_overview_map_preparations.png
 ---
 width: 500px
-name: Overview map preparation
+name: en_30.30.2_print_layout_overview_map_preparations
 ---
 An overview map should show important landmarks and borders so the reader is able to locate the region shown on the map without having specific knowledge of the region.
 ```
@@ -212,7 +212,7 @@ An overview map should show important landmarks and borders so the reader is abl
 ```{figure} ../../fig/en_30.30.2_print_layout_add_overview_map.png
 ---
 width: 750px
-name: Add Overview map
+name: en_30.30.2_print_layout_add_overview_map
 ---
 Add an overview map and __lock the layer__
 ```
@@ -304,10 +304,10 @@ The Atlas Function can be found in the __Print Layout Composer__ on the toolbar.
 
 ```{figure} ../../fig/en_atlas_toolbar.png
 ---
-name: Atlas Toolbar
+name: en_atlas_toolbar
 width: 500 px
 ---
-Atlas Toolbar
+The atlas toolbar
 ```
 
 ```{note}

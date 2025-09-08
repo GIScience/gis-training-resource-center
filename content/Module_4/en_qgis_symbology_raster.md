@@ -22,7 +22,7 @@ To assign a colour gradient for raster data, you need to:
 
 ``` {figure} ../../fig/en_30.30.2_raster_data_colour_gradient.png
 ---
-name: raster data colour gradient
+name: en_30.30.2_raster_data_colour_gradient
 width: 600px
 ---
 Colour Ramp Selector in QGIS 3.36.
@@ -47,7 +47,7 @@ The default colour ramps available in QGIS are limited and do not fit a lot of c
 
 ```{figure} /fig/en_3.36_cpt-city_cat_1.png
 ---
-name: cpty_city_cat_1
+name: en_3.36_cpt-city_cat_1
 width: 350 px
 ---
 Accessing the colour catalogue.
@@ -60,7 +60,7 @@ To access the `cpt-city` catalogue,
 3. Click on `Create New Color Ramp`. A small dialogue box will open.
     ```{figure} /fig/en_3.36_cpt-city_cat_2.png
     ---
-    name: cpt-city_cat_2
+    name: en_3.36_cpt-city_cat_2
     width: 200 px
     ---
     Selecting the colour ramp catalogue
@@ -69,7 +69,7 @@ To access the `cpt-city` catalogue,
 
 ```{figure} /fig/en_3.36_cpt-city_cat_3.png
 ---
-name: cpt-city_cat_3
+name: en_3.36_cpt-city_cat_3
 width: 600 px
 ---
 The cpt-city colour ramp catalogue in QGIS 3.36
