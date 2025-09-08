@@ -19,13 +19,6 @@ ___
 The One-Stop-Shop for teaching Geoinformation System (GIS) skills for the work in the Red Cross Red Crescent Network.
 :::
 
-<!---:::{card}
-:class-card: sd-text-justify sd-border-1
-__Teach GIS for Humanitarian Work__
-^^^
-The One-Stop-Shop for teaching Geoinformation System (GIS) skills for the work in the Red Cross Red Crescent Network
-:::
--->
 
 ::::{grid} 2
 :::{card}

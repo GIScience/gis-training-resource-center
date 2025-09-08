@@ -41,10 +41,10 @@ depending on your operating system.
 ```{figure} /fig/QGIS_download_LTR_version.png
 ---
 width: 600 px
-name: QGIS LTR Version
+name: QGIS_download_LTR_version
 align: center
 ---
-The download page for QGIS 3.34
+The download page for QGIS 3.34.
 ```
 
 4. The download will start.
@@ -80,6 +80,8 @@ For installation on Linux systems with `apt` you can install QGIS:
 ```
 sudo apt install qgis qgis-plugin-grass
 ```
+:::
+::::
 
 In the conventional apt package sources, an older version of QGIS will probably 
 be installed. If you are using the package source [Ubuntugis](https://launchpad.net/~ubuntugis/+archive/ubuntu/ppa), 
