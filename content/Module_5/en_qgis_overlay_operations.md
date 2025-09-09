@@ -32,10 +32,9 @@ look at each of these overlay operations in turn and provide some examples for h
 __Humanitarian Example:__
 ^^^
 *Flood extent data for Pakistan is available, but the focus is on mapping flood damage in a specific administrative region. In this case, the flood layer can be clipped to the administrative boundaries of the area of interest.*
-<!---*We have flood extent data for Pakistan, but we are currently working on a map showing the flood damage in a specific administrative region. In this case, we can take the flood layer and clip it to the administrative boundaries of the area of interest.*-->
+
 :::
 
-<!--CHECK IF THIS EXAMPLE IS NEEDED--->
 
 The tool has two different input options:
 * __Input layer__: Layer from which the selection is clipped
@@ -73,61 +72,6 @@ as a new layer: __Road_infrastructure_Sudan.geojson__.
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_clip_roads.mp4"></video>
 ````
 
-
-<!--REMOVED: GDAL Operators as not used frequently enough to need inclusion in this section-->
-
-<!--GDAL Operators are needed?--
-
-In addition to the standard QGIS operation __Clip__, there are two other more advanced tools for performing clipping processes. These tools are GDAL operations, which enable the definition of the clipping extent. This extent can be either a specific area or a mask layer. The second option is quite similar to the standard clipping process provided by QGIS.
-
-```{figure} /fig/en_gdal_clipping_tools.PNG
----
-width: 250 px
-name: gdal_clipping_tools
----
-The GDAL tools Clip vector by extent and Clip vector by mask layer
-```
-
-::::{tab-set}
-
-:::{tab-item} Clip vector by extent
-
-This operation clips any vector file to a given extent. This clip extent will be defined by a bounding box that should be used for the vector output file. It also has to be defined in the target CRS coordinates. There are different methods to define the bounding box, which are the great difference between this tool and the standard clipping process:
-* Calculate from a layer: this uses the extent of a layer loaded into the current project
-* Calculate from layout map: uses the extent of a layout map item in the active project
-* Calculate from bookmark: uses the extent of a saved bookmark
-* Use map canvas extent
-* Draw on canvas: click and drag a rectangle delimiting the area to take into account
-* Enter the coordinates as xmin, xmax, ymin, ymax
-
-```{figure} /fig/en_clip_vector_by_extent.PNG
----
-width: 450 px
-name: en_clip_vector_by_extent
----
-Screenshot of the tool Clip vector by extent
-```
-
-:::
-
-:::{tab-item} Clip vector by mask layer
-This operation uses a mask polygon layer to clip any vector layer. This operation only takes two input:
-1. The input layer
-2. The mask layer which is used as the clipping extent for the input vector layer
-
-```{figure} /fig/en_clip_vector_by_mask_layer.PNG
----
-width: 450 px
-name: clip_vector_by_mask_layer
----
-Screenshot of the tool Clip vector by mask layer
-```
-
-:::
-
-::::
-
--->
 
 ### Dissolve
 
@@ -253,3 +197,54 @@ They are also downloaded and adapted from [Natural Earth Data](https://www.natur
 
 ````
 
+### More advanced clipping operations
+
+
+In addition to the standard QGIS operation __Clip__, there are two other more advanced tools for performing clipping processes. These tools are GDAL operations, which enable the definition of the clipping extent. This extent can be either a specific area or a mask layer. The second option is quite similar to the standard clipping process provided by QGIS.
+
+```{figure} /fig/en_gdal_clipping_tools.PNG
+---
+width: 250 px
+name: gdal_clipping_tools
+---
+The GDAL tools Clip vector by extent and Clip vector by mask layer
+```
+
+::::{tab-set}
+
+:::{tab-item} Clip vector by extent
+
+This operation clips any vector file to a given extent. This clip extent will be defined by a bounding box that should be used for the vector output file. It also has to be defined in the target CRS coordinates. There are different methods to define the bounding box, which are the great difference between this tool and the standard clipping process:
+* Calculate from a layer: this uses the extent of a layer loaded into the current project
+* Calculate from layout map: uses the extent of a layout map item in the active project
+* Calculate from bookmark: uses the extent of a saved bookmark
+* Use map canvas extent
+* Draw on canvas: click and drag a rectangle delimiting the area to take into account
+* Enter the coordinates as xmin, xmax, ymin, ymax
+
+```{figure} /fig/en_clip_vector_by_extent.PNG
+---
+width: 450 px
+name: en_clip_vector_by_extent
+---
+Screenshot of the tool Clip vector by extent
+```
+
+:::
+
+:::{tab-item} Clip vector by mask layer
+This operation uses a mask polygon layer to clip any vector layer. This operation only takes two input:
+1. The input layer
+2. The mask layer which is used as the clipping extent for the input vector layer
+
+```{figure} /fig/en_clip_vector_by_mask_layer.PNG
+---
+width: 450 px
+name: clip_vector_by_mask_layer
+---
+Screenshot of the tool Clip vector by mask layer
+```
+
+:::
+
+::::

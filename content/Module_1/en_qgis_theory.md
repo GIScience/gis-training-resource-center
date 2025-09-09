@@ -42,7 +42,7 @@ multiple elements:
 ```{figure} /fig/GIS_definition_icons.drawio.svg
 ---
 height: 200px
-name: GIS components
+name: GIS_definition_icons
 align: center
 ---
 GIS components
@@ -98,7 +98,7 @@ which also often include maps and spatial analysis.
 ```{figure} /fig/REACH_UKR_Map_CSM_SituationOverview_ActiveSites_FEB2024_EN_A4-1.png
 ---
 height: 500px
-name: REACH Example Map
+name: REACH_UKR_Map_CSM_SituationOverview_ActiveSites_FEB2024_EN_A4
 align: center
 ---
 Example Map: REACH, Ukraine, IDP Collective Site Monitoring, Map, Active Sites, February 2024. Source: [REACH](https://repository.impact-initiatives.org/document/reach/794cd686/REACH_UKR_Map_CSM_SituationOverview_ActiveSites_FEB2024_EN_A4.pdf)
@@ -153,7 +153,7 @@ and sector-specific analysis.
 ```{figure} /fig/Afghanistan-Earthquake-Events-Overview-February-2024_page-0001-scaled.jpg
 ---
 height: 500px
-name: GIS components
+name: Afghanistan-Earthquake-Events-Overview-February-2024_page-0001-scaled
 align: center
 ---
 Example Map: Afghanistan Earthquake Events Overview February 2024. Source: [iMMAP](https://immap.org/product/afghanistan-earthquake-events-overview-february-2024/)
@@ -170,7 +170,7 @@ gives an overview of the types of services they provide.
 ```{figure} /fig/cluster-camp-coordination.jpg
 ---
 height: 500px
-name: GIS components
+name: cluster-camp-coordination
 align: center
 ---
 Example Map: Philippines - TS Washi (Sendong) - Evacuation centre amd transitory site population, Cagayan de Or. Source: [MapAction](https://guides.mapaction.org/images/examples/cluster-camp-coordination.jpg)
@@ -217,7 +217,7 @@ analyse the __number of deaths__ in every housing block in Soho. He added the
 __location of water pumps__ on the map. He found a __correlation__ between one 
 specific water pump and the number of infections.
 
-__Dr. Snow's map of the cholera outbreak of 1854__, and the reports that it 
+__Dr. Snow's map of the cholera outbreak of 1854__ ({numref}`John_snow_zoom_map2`), and the reports that it 
 accompanied, __won over the predominant "miasma theory"__ that the disease __was 
 spread through the air__. Residents were now warned to __boil their water__, and 
 so ended the last cholera outbreak London has seen.
@@ -228,7 +228,7 @@ modern London.
 ```{figure} /fig/John_snow_zoom_map2.png
 ---
 height: 600px
-name: Snow_cholera_map_original
+name: John_snow_zoom_map2
 align: center
 ---
 John Snow Cholera map of London (1854). Source: https://giscience.github.io/gis-training-resource-center/_images/John_snow_zoom_map2.png
@@ -267,7 +267,7 @@ outlined below.
 ```{figure} /fig/general_ref_map_nigeria_ogun.png
 ---
 height: 600px
-name: INigeria Ogun State reference Map
+name: general_ref_map_nigeria_ogun
 align: center
 ---
 Example Map: Nigeria: Reference Map of Ogun state (As of 26 December 2018) Source: [OCHA](https://reliefweb.int/map/nigeria/nigeria-reference-map-ogun-state-26-december-2018?_gl=1*151t3z9*_ga*MTkxOTMyNTA1Ni4xNzE4MTAzNzMz*_ga_E60ZNX2F68*MTcyNDkzNDIyMC44LjEuMTcyNDkzNDU4Ni4zNC4wLjA.)
@@ -285,7 +285,7 @@ Infrastructure maps in the humanitarian context provide visual representations o
 ```{figure} /fig/en_Infrastructure_Map_Nigeria.png
 ---
 height: 600px
-name: Nigeria - Borno State - Mogcolis Camp, General Infrastructure - Updated 24 July 2017
+name: en_Infrastructure_Map_Nigeria
 align: center
 ---
 Example Map:  Nigeria - Borno State - Mogcolis Camp, General Infrastructure - Updated 24 July 2017
@@ -304,7 +304,7 @@ Thematic maps display specific themes or topics such as population density, dise
 ```{figure} /fig/en_thematic_map_example_IFRC.png
 ---
 height: 600px
-name: Thematic map IFRC
+name: en_thematic_map_example_IFRC
 align: center
 ---
 Example Map: Shelter Sector Turkiye: Rental prices changes, February - April 2023 (Source: [IFRC](https://reliefweb.int/map/turkiye/shelter-sector-turkiye-rental-prices-changes-february-april-2023))
@@ -323,7 +323,7 @@ Analysis maps are used to examine and interpret data, revealing patterns, trends
 ```{figure} /fig/en_Analysis_Map_Yemen.png
 ---
 height: 600px
-name: CCCM Cluster Yemen - REACH - Flood Hazard of IDP Sites - Marib governorate - Flood Depth Model
+name: en_Analysis_Map_Yemen
 align: center
 ---
 Example Map:  CCCM Cluster Yemen - REACH - Flood Hazard of IDP Sites - Marib governorate - Flood Depth Model. Source: [REACH](https://data.unhcr.org/es/documents/details/98946)
@@ -340,7 +340,7 @@ Situation or descriptive maps provide a snapshot of specific conditions or event
 ```{figure} /fig/en_Pop_Syrian_Refugees_2023.png
 ---
 height: 600px
-name: UNHCR Iraq Population Profile - Breakdown Overview - Syrian Refugees Registration December 2023
+name: en_Pop_Syrian_Refugees_2023
 align: center
 ---
 Example Map: UNHCR Iraq Population Profile - Breakdown Overview - Syrian Refugees Registration December 2023. Source: [UNHCR](https://reliefweb.int/report/iraq/unhcr-iraq-population-profile-breakdown-overview-syrian-refugees-registration-december-2023)

@@ -26,61 +26,13 @@ __Relevant Wiki articles:__
 ::::
 
 
-<!---::::{grid} 2
-:::{grid-item-card}
-__Type of trainings exercise:__
-^^^
-
-- This exercise can be used in online and presence training. 
-- It can be done as a follow-along exercise or individually as a self-study.
-
-:::
-
-:::{grid-item-card}
-__These skills are relevant for:__ 
-^^^
-
-- QGIS Essentials
-- Preparing secondary data to use in your own QGIS-projects
-
-:::
-::::
-
-::::{grid} 2
-:::{grid-item-card}
-__Estimated time demand for the exercise:__
-^^^
-
-- The exercise takes around 1 hour to complete, depending on the number of participants and their familiarity with computer systems.
-
-:::
-
-:::{grid-item-card}
-__Relevant Wiki articles:__
-^^^
-* [QGIS Interface](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
-* [Import CSV-files into QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#text-data-importl)
-* [Attribute Table in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.md)
-
-:::
-
-::::
--->
-
 :::{Topic} Context
 
 In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. The flood impact on infrastructure is highly dependent on the building material of houses.  To determine the vulnerability of the infrastructure to flood damage, we will use data on the wall material of the houses in each province. The objective is to create a dataset indicating which provinces are more prone to flood damage due to the durability of the material used for buildings. 
 First, we need to extract the data from the PDF-file and save it to a `.csv`- file. Then, we need to clean and prepare the `.csv`-file to remove errors and inconsistencies. Finally, we can import the `.csv`-file and perform an attribute join to attach the information on wall material to a vector-layer containing the polygons of the pakistani provinces. 
 
 :::
-<!---
-:::{attention}
-This exercise has two different solution methods:
-- The first one uses Microsoft Excel with an active Microsoft 365 Subscription, making use of the advanced features "Get Data From PDF" and the Fuzzy Merge Function in the Power Query Editor.
-- The second solution uses Open-Source Software to achieve the same result. However, the workflow is quite different.
 
-:::
--->
 
 ## Instructions for the Trainers
 

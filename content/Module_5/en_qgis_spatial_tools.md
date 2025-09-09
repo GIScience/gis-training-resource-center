@@ -38,7 +38,7 @@ incorporate additional information from  layers, which can help us understand a 
 ```{figure} /fig/en_module5_spatial_geodataprocessing.PNG
 ---
 width: 750 px
-name: module5_spatial_geodataprocessing
+name: en_module5_spatial_geodataprocessing
 ---
 Different spatial geoprocessing tools. Source: Adapted from [Saylor Academy](https://saylordotorg.github.io/text_essentials-of-geographic-information-systems/s11-geospatial-analysis-i-vector-o.html)
 ```
@@ -48,7 +48,7 @@ for example, allow us to import attributes from one layer to another on the basi
 in relation to geofeatures in another layer. These Spatial relationships can also be used to select 
 features of a layer. Furthermore, we will go over the spatial processing tools __buffer__, __clip__, 
 and __dissolve__. These operations allow us to combine geometries from two layers in various ways (see 
-{numref}`module5_spatial_geodataprocessing`).
+{numref}`en_module5_spatial_geodataprocessing`).
 
 <!--
 
@@ -75,7 +75,7 @@ For this process, we select an input layer that defines the features, and these 
 ```{figure} /fig/en_ex2_select_by_location_health.PNG
 ---
 width: 550 px
-name: select_by_location
+name: en_ex2_select_by_location_health
 ---
 Screenshot of the Select by location tool
 ```
@@ -104,14 +104,12 @@ For example:
 __Humanitarian Example:__
 ^^^
 *A flood depth model is available, and the goal is to determine which buildings are flooded under this scenario. This can be achieved by performing a spatial join to add the flood depth to the polygon layer containing the houses.*
-<!--
-*We have a flood depth model and we want to find out which buildings are flooded under this scenario. We can find this out by performing a spatial join to add the flood depth to the polygon layer with the houses.*
--->
+
 *The resulting map could look something like this:* 
 
 ```{figure} /fig/en_flood_damage_assessement_libya.png
 ---
-name: flood damage assessement
+name: en_flood_damage_assessement_libya
 width: 450 px
 ---
 A building footprint layer combined with a flood extent layer. By joining them, we can assess which houses are at risk to be damaged by flooding (Source: IFRC).
@@ -175,7 +173,7 @@ will cross as a point (true). Two polygons cross as a polygon (false). In the pi
 ```{figure} /fig/en_select_by_location.png
 ---
 width: 600 px
-name: spatial_relations
+name: en_select_by_location
 ---
 Looking for spatial relations between layers <br /> (Source: [QGIS Documentation](https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html?highlight=join%20attributes%20location), Version 3.28)
 ```
@@ -190,13 +188,13 @@ Practical exercise is crucial to understand how GIS, and QGIS, works. You can fo
 
 ```
 
-In the example above ({numref}`spatial_join_example_healthsites`), we have a dataset containing the healthsites by healthsite.io
+In the example above ({numref}`en_spatial_join_example`), we have a dataset containing the healthsites by healthsite.io
 and a dataset with the administrative boundaries (adm2) of Nigeria. We want to know in which state each healthsite is located. 
 To do this, we need to use the tool "Join Attributes by Location".
 
 ```{figure} /fig/en_spatial_join_example.png
 ---
-name: spatial_join_example_healthsites
+name: en_spatial_join_example
 width: 400 px
 ---
 An example of a situation where you will use a spatial join (Source: BRC)
@@ -214,14 +212,14 @@ the right side of your screen.
 :::{dropdown} __Tool:__ Join attributes by location
 
 This tool takes two input layers and creates a new vector layer which has the attributes of both layers in its attribute table.
-- The first input layer (see "Join to features in" in {numref}`join_attributes_by_location`) dictates which geometric features will be copied to the new layer.
-- The second input layer (see "By comparing to" in {numref}`join_attributes_by_location`) dictates the attributes that will be added to the new layer on top of the attributes of the first input layer. You can select which of these attributes should be transferred to the new layer. 
+- The first input layer (see "Join to features in" in {numref}`en_spatial_join_1`) dictates which geometric features will be copied to the new layer.
+- The second input layer (see "By comparing to" in {numref}`en_spatial_join_1`) dictates the attributes that will be added to the new layer on top of the attributes of the first input layer. You can select which of these attributes should be transferred to the new layer. 
 
 
 ```{figure} /fig/en_spatial_join_1.PNG
 ---
 width: 450 px
-name: join_attributes_by_location
+name: en_spatial_join_1
 ---
 The "Join Attributes by Location"-tool in QGIS 3.36.
 ```
@@ -300,7 +298,7 @@ __minimum and maximum values__, __mean values__, as well as __counts__, __sums__
 ```{figure} /fig/en_spatial_join_3.PNG
 ---
 width: 450 px
-name: join_attribute_by_location_summary
+name: en_spatial_join_3
 ---
 Screenshot of the tool Join attributes by location (summary) in QGIS 3.36
 ```
@@ -318,7 +316,7 @@ suitable matches for the joining process.
 ```{figure} /fig/en_spatial_join_2.PNG
 ---
 width: 450 px
-name: join_attribute_by_location_nearest
+name: en_spatial_join_2
 ---
 Screenshot of the tool Join attributes by nearest in QGIS 3.36
 ```

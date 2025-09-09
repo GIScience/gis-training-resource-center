@@ -58,12 +58,9 @@ QGIS by default, such as Bing or Sentinel-2 satellite imagery.
 
 :::{dropdown} Installation of plugins
 
-To install a plugin `Plugins` -> `Manage and Install Plugins…` -> `All` -> 
+To [install a plugin](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html), in the top bar, navigate to `Plugins` -> `Manage and Install Plugins…` -> `All` -> 
 Search for the plugin -> `Install Plugin`
 
-<!-- FIXME: Plugin installation should be its own section, not nested under 
-   QuickMapServices 
- -->
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_plugins.mp4"></video>
 
@@ -79,7 +76,7 @@ extensions in the options (see below).
 
 ```{figure} /fig/en_30.30.2_plugin_installation_experimental_checkbox.png
 ---
-name: plugin manager allow experimental plugins
+name: en_30.30.2_plugin_installation_experimental_checkbox
 width 400 px
 ---
 Plugin Manager settings to show experimental plugins

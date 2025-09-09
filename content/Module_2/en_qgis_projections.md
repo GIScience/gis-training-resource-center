@@ -15,7 +15,7 @@
 An important issue when creating a map of a region, is that it is impossible to create a representation of a sphere 
 on a 2D plane without distorting the map. The transformation of a 3D object onto a flat surface can be done with the 
 help of a __projection__. Over the centuries, cartographers and mathematicians have developed a multitude of different 
-methods to project the earth onto a flat surface. However, it is never possible to correctly represent the world on a 
+methods to project the earth onto a flat surface ({numref}`en_examples_projections_IBIS`). However, it is never possible to correctly represent the world on a 
 flat surface (see the video above). 
 Every projection distorts either the length between two points, the angles between two lines (directions), or the size 
 of an area. A projection can only correctly represent one of these three dimensions. This means, that depending on the 
@@ -25,7 +25,7 @@ projection method, your world map will not represent the size, angles, or distan
 ---
 width: 700px
 align: center
-name: Examples for Projections (azimuthal, cylindrical and conic)
+name: en_examples_projections_IBIS
 ---
 Examples for Projections (Source:(http://ibis.colostate.edu/webcontent/NR505/2012_Projects/Team6/GISConcepts.html)).
 ```
@@ -49,7 +49,7 @@ A popular example is Greenland in comparison with Africa, which seem on the map 
 ---
 width: 600px
 align: center
-name: Comparison Greenland - Africa
+name: en_greenland_africa
 ---
 Comparison Greenland - Africa. Source: [The True Size of](https://www.thetruesize.com/#?borders=1~!MTYwODM1MTk.MzkyNDUyNg*MjY5NjM4Mzg(MTA1MjgyOTE~!CONTIGUOUS_US*MTAwMjQwNzU.MjUwMjM1MTc(MTc1)MQ~!IN*NTI2NDA1MQ.Nzg2MzQyMQ)MA~!CN*OTkyMTY5Nw.NzMxNDcwNQ(MjI1)Mg)
 ```
@@ -123,11 +123,11 @@ characteristic:
 | Rotation       |           ✅           |         ✅          |      ❌      |
 | Area           |           ❌           |         ✅          |      ✅      |
 
-Another very important consideration when choosing the Coordinate reference system is that, depending on the ellipsoid and the method used to project the same point can be located at different locations (see {numref}`wrong_CRS_points`). In the figure below, the same point is encoded in 3 different reference systems.  
+Another very important consideration when choosing the Coordinate reference system is that, depending on the ellipsoid and the method used to project the same point can be located at different locations (see {numref}`wrong_CRS`). In the figure below, the same point is encoded in 3 different reference systems.  
 
 ```{figure} /fig/wrong_CRS.png
 ---
-name: wrong_CRS_points
+name: wrong_CRS
 width: 750 px
 ---
 The same point in three different reference systems (Source: HeiGIT).
@@ -164,7 +164,7 @@ When processing geodata, QGIS always uses the units of measurements of the layer
 ```{figure} /fig/en_local_crs.png
 ---
 width: 800px
-name: Local and global coordinate reference systems (CRS)
+name: en_local_crs
 align: center
 ---
 Local and global coordinate reference systems (CRS).(Source: British Red Cross)
