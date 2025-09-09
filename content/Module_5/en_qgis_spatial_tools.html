@@ -647,10 +647,10 @@ incorporate additional information from  layers, which can help us understand a 
 <li><p>Using <strong>Buffer</strong>, we can create zones around features to help identify vulnerable areas and plan evacuation routes in the event of a flooding event.</p></li>
 <li><p><strong>Centroids</strong> creates point in the geometric centre of the geometries of a layer. This is especially useful when creating graduated symbol maps</p></li>
 </ul>
-<figure class="align-default" id="module5-spatial-geodataprocessing">
+<figure class="align-default" id="en-module5-spatial-geodataprocessing">
 <a class="reference internal image-reference" href="../../_images/en_module5_spatial_geodataprocessing.PNG"><img alt="../../_images/en_module5_spatial_geodataprocessing.PNG" src="../../_images/en_module5_spatial_geodataprocessing.PNG" style="width: 750px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.1 </span><span class="caption-text">Different spatial geoprocessing tools. Source: Adapted from <a class="reference external" href="https://saylordotorg.github.io/text_essentials-of-geographic-information-systems/s11-geospatial-analysis-i-vector-o.html">Saylor Academy</a></span><a class="headerlink" href="#module5-spatial-geodataprocessing" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.1 </span><span class="caption-text">Different spatial geoprocessing tools. Source: Adapted from <a class="reference external" href="https://saylordotorg.github.io/text_essentials-of-geographic-information-systems/s11-geospatial-analysis-i-vector-o.html">Saylor Academy</a></span><a class="headerlink" href="#en-module5-spatial-geodataprocessing" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>In this chapter, we will first explore <strong>spatial joins</strong>. Spatial joins,
@@ -658,7 +658,7 @@ for example, allow us to import attributes from one layer to another on the basi
 in relation to geofeatures in another layer. These Spatial relationships can also be used to select
 features of a layer. Furthermore, we will go over the spatial processing tools <strong>buffer</strong>, <strong>clip</strong>,
 and <strong>dissolve</strong>. These operations allow us to combine geometries from two layers in various ways (see
-<a class="reference internal" href="#module5-spatial-geodataprocessing"><span class="std std-numref">Fig. 5.1</span></a>).</p>
+<a class="reference internal" href="#en-module5-spatial-geodataprocessing"><span class="std std-numref">Fig. 5.1</span></a>).</p>
 <!--
 
 2. Spatial joins
@@ -679,7 +679,7 @@ For this process, we select an input layer that defines the features, and these 
 ```{figure} /fig/en_ex2_select_by_location_health.PNG
 ---
 width: 550 px
-name: select_by_location
+name: en_ex2_select_by_location_health
 ---
 Screenshot of the Select by location tool
 ```
@@ -708,14 +708,11 @@ their spatial relationship.</p></li>
 </div>
 <div class="sd-card-body docutils">
 <p class="sd-card-text"><em>A flood depth model is available, and the goal is to determine which buildings are flooded under this scenario. This can be achieved by performing a spatial join to add the flood depth to the polygon layer containing the houses.</em></p>
-<!--
-*We have a flood depth model and we want to find out which buildings are flooded under this scenario. We can find this out by performing a spatial join to add the flood depth to the polygon layer with the houses.*
--->
 <p class="sd-card-text"><em>The resulting map could look something like this:</em></p>
-<figure class="align-default" id="flood-damage-assessement">
+<figure class="align-default" id="en-flood-damage-assessement-libya">
 <a class="reference internal image-reference" href="../../_images/en_flood_damage_assessement_libya.png"><img alt="../../_images/en_flood_damage_assessement_libya.png" src="../../_images/en_flood_damage_assessement_libya.png" style="width: 450px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.2 </span><span class="caption-text">A building footprint layer combined with a flood extent layer. By joining them, we can assess which houses are at risk to be damaged by flooding (Source: IFRC).</span><a class="headerlink" href="#flood-damage-assessement" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.2 </span><span class="caption-text">A building footprint layer combined with a flood extent layer. By joining them, we can assess which houses are at risk to be damaged by flooding (Source: IFRC).</span><a class="headerlink" href="#en-flood-damage-assessement-libya" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -777,10 +774,10 @@ than the highest supplied geometry. For example, a line crossing a polygon will 
 will cross as a point (true). Two polygons cross as a polygon (false). In the picture below, no circles will be returned.</p>
 </div>
 </div>
-<figure class="align-default" id="spatial-relations">
+<figure class="align-default" id="en-select-by-location">
 <a class="reference internal image-reference" href="../../_images/en_select_by_location.png"><img alt="../../_images/en_select_by_location.png" src="../../_images/en_select_by_location.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.3 </span><span class="caption-text">Looking for spatial relations between layers <br /> (Source: <a class="reference external" href="https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html?highlight=join%20attributes%20location">QGIS Documentation</a>, Version 3.28)</span><a class="headerlink" href="#spatial-relations" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.3 </span><span class="caption-text">Looking for spatial relations between layers <br /> (Source: <a class="reference external" href="https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html?highlight=join%20attributes%20location">QGIS Documentation</a>, Version 3.28)</span><a class="headerlink" href="#en-select-by-location" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <section id="exercise-performing-a-spatial-join">
@@ -789,13 +786,13 @@ will cross as a point (true). Two polygons cross as a polygon (false). In the pi
 <p class="admonition-title">Now it’s your turn!</p>
 <p>Practical exercise is crucial to understand how GIS, and QGIS, works. You can follow along by downloading the necessary data.</p>
 </div>
-<p>In the example above (<a class="reference internal" href="#spatial-join-example-healthsites"><span class="std std-numref">Fig. 5.4</span></a>), we have a dataset containing the healthsites by <a class="reference external" href="http://healthsite.io">healthsite.io</a>
+<p>In the example above (<a class="reference internal" href="#en-spatial-join-example"><span class="std std-numref">Fig. 5.4</span></a>), we have a dataset containing the healthsites by <a class="reference external" href="http://healthsite.io">healthsite.io</a>
 and a dataset with the administrative boundaries (adm2) of Nigeria. We want to know in which state each healthsite is located.
 To do this, we need to use the tool “Join Attributes by Location”.</p>
-<figure class="align-default" id="spatial-join-example-healthsites">
+<figure class="align-default" id="en-spatial-join-example">
 <a class="reference internal image-reference" href="../../_images/en_spatial_join_example.png"><img alt="../../_images/en_spatial_join_example.png" src="../../_images/en_spatial_join_example.png" style="width: 400px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.4 </span><span class="caption-text">An example of a situation where you will use a spatial join (Source: BRC)</span><a class="headerlink" href="#spatial-join-example-healthsites" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.4 </span><span class="caption-text">An example of a situation where you will use a spatial join (Source: BRC)</span><a class="headerlink" href="#en-spatial-join-example" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <aside class="margin sidebar">
@@ -815,13 +812,13 @@ the right side of your screen.</p>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">This tool takes two input layers and creates a new vector layer which has the attributes of both layers in its attribute table.</p>
 <ul class="simple">
-<li><p class="sd-card-text">The first input layer (see “Join to features in” in <a class="reference internal" href="#join-attributes-by-location"><span class="std std-numref">Fig. 5.5</span></a>) dictates which geometric features will be copied to the new layer.</p></li>
-<li><p class="sd-card-text">The second input layer (see “By comparing to” in <a class="reference internal" href="#join-attributes-by-location"><span class="std std-numref">Fig. 5.5</span></a>) dictates the attributes that will be added to the new layer on top of the attributes of the first input layer. You can select which of these attributes should be transferred to the new layer.</p></li>
+<li><p class="sd-card-text">The first input layer (see “Join to features in” in <a class="reference internal" href="#en-spatial-join-1"><span class="std std-numref">Fig. 5.5</span></a>) dictates which geometric features will be copied to the new layer.</p></li>
+<li><p class="sd-card-text">The second input layer (see “By comparing to” in <a class="reference internal" href="#en-spatial-join-1"><span class="std std-numref">Fig. 5.5</span></a>) dictates the attributes that will be added to the new layer on top of the attributes of the first input layer. You can select which of these attributes should be transferred to the new layer.</p></li>
 </ul>
-<figure class="align-default" id="join-attributes-by-location">
+<figure class="align-default" id="en-spatial-join-1">
 <a class="reference internal image-reference" href="../../_images/en_spatial_join_1.PNG"><img alt="../../_images/en_spatial_join_1.PNG" src="../../_images/en_spatial_join_1.PNG" style="width: 450px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.5 </span><span class="caption-text">The “Join Attributes by Location”-tool in QGIS 3.36.</span><a class="headerlink" href="#join-attributes-by-location" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.5 </span><span class="caption-text">The “Join Attributes by Location”-tool in QGIS 3.36.</span><a class="headerlink" href="#en-spatial-join-1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -901,10 +898,10 @@ Join attributes by location (summary)</label><div class="sd-tab-content docutils
 <p>This tool is similar to the “Join Attributes by Location”-tool. However, on top of adding the attributes from one layer to another, this algorithms also
 calculates statistical summaries for the values from matching features in the second layer. These summaries include a wide range of options, such as
 <strong>minimum and maximum values</strong>, <strong>mean values</strong>, as well as <strong>counts</strong>, <strong>sums</strong>, <strong>standard deviation</strong>, and more.</p>
-<figure class="align-default" id="join-attribute-by-location-summary">
+<figure class="align-default" id="en-spatial-join-3">
 <a class="reference internal image-reference" href="../../_images/en_spatial_join_3.PNG"><img alt="../../_images/en_spatial_join_3.PNG" src="../../_images/en_spatial_join_3.PNG" style="width: 450px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.8 </span><span class="caption-text">Screenshot of the tool Join attributes by location (summary) in QGIS 3.36</span><a class="headerlink" href="#join-attribute-by-location-summary" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.8 </span><span class="caption-text">Screenshot of the tool Join attributes by location (summary) in QGIS 3.36</span><a class="headerlink" href="#en-spatial-join-3" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -915,10 +912,10 @@ Join attributes by nearest</label><div class="sd-tab-content docutils">
 <strong>identifying the closest features</strong> from each of these layers. Furthermore, if a maximum distance
 is specified, only the features that are within this designated distance will be considered as
 suitable matches for the joining process.</p>
-<figure class="align-default" id="join-attribute-by-location-nearest">
+<figure class="align-default" id="en-spatial-join-2">
 <a class="reference internal image-reference" href="../../_images/en_spatial_join_2.PNG"><img alt="../../_images/en_spatial_join_2.PNG" src="../../_images/en_spatial_join_2.PNG" style="width: 450px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.9 </span><span class="caption-text">Screenshot of the tool Join attributes by nearest in QGIS 3.36</span><a class="headerlink" href="#join-attribute-by-location-nearest" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.9 </span><span class="caption-text">Screenshot of the tool Join attributes by nearest in QGIS 3.36</span><a class="headerlink" href="#en-spatial-join-2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>

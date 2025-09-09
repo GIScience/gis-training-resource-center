@@ -14,12 +14,12 @@ colour. This process enhances the organization and interpretation of spatial dat
 
 The attributes of  geodata are stored in a specific column within the attribute table.
 Essentially, we choose a column containing the specific characteristics of interest, allowing 
-QGIS to group the data based on these selected attributes. 
+QGIS to group the data based on these selected attributes ({numref}`classification_basic`). 
 
 ```{figure} /fig/classification_basic.drawio.png
 ---
 width: 900px
-name: basic classification
+name: classification_basic
 align: center
 ---
 Basic classification. Source: HeiGIT
@@ -117,7 +117,7 @@ size, for example.
 ```{figure} /fig/Single_symbol_classify.png
 ---
 width: 900px
-name: basic classification
+name: Single_symbol_classify
 align: center
 ---
 Adjust the style of a layer.
@@ -134,7 +134,7 @@ By specifying a symbol to each category, you can facilitate the interpretation o
 
 ```{figure} /fig/fr_simple_classification_example_map.png
 ---
-name: Nigeria_simple_classification_exmaple
+name: fr_simple_classification_example_map
 width: 750px
 ---
 Niger – Régions de Tillabéri et de Tahoua Education: infrastructures scolaires fermées ou endommagées pour cause d'insécurité entre 2019 et 2022 (Source: [REACH](https://repository.impact-initiatives.org/document/impact/e6174a66/REACH_NER_Map_Ecoles_fermees_mai2022_tillaberi_tahoua.pdf))
@@ -337,7 +337,7 @@ __To classify data in classes…__
 ```{figure} /fig/Graduated_histogram.png
 ---
 width: 900px
-name: graduated classification
+name: Graduated_histogram
 align: center
 ---
 Graduated classification. Source: [Axis Maps](https://www.axismaps.com/guide/data-classification)

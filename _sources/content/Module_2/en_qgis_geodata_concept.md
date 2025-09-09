@@ -19,7 +19,7 @@ you will create.
 Geodata, geospatial data, or geographic data is data that has geographical information. This means that the data 
 refers to a location, that is defined by coordinates. It is similar to other forms of data that can be represented 
 in tables (such as Excel spreadsheets or CSV files) but each item in the data set also holds coordinate information 
-(see {numref}`Raster Vector Concept`).
+(see {numref}`en_vector_raster`).
 GIS software helps us visualise and manipulate geodata in a 2D (or even 3D) space. 
 There are two primary types of geographic data: **vector data and raster data**. Both types represent tangible or 
 intangible things in the real world. However, how they store this data is quite different. Because of this, the 
@@ -30,7 +30,7 @@ two types, and how to work with each type on its own, as well as combining both 
 ---
 width: 500px
 align: center
-name: Raster Vector Concept
+name: en_vector_raster
 ---
 Raster / vector concept. Source: Adapted from [WikiMedia](https://commons.wikimedia.org/wiki/File:Raster_vector_tikz.png)
 ```
@@ -51,14 +51,14 @@ numbers, health indicators, historical events, etc.
 
 ### Vector data
 
-Vector data are digital features and they can store geographic/spatial information, as well as other data attributes. As such, they are ideal to visualise information on a map. Each feature can be displayed on a maps using one out of three geometries: __points, lines, or polygons__. A layer can only contain features with same type of geometry. 
+Vector data are digital features and they can store geographic/spatial information, as well as other data attributes. As such, they are ideal to visualise information on a map. Each feature can be displayed on a maps using one out of three geometries: __points, lines, or polygons__ (see {numref}`en_vector_data_overview`). A layer can only contain features with same type of geometry. 
 
 
 ```{figure} /fig/en_vector_data_overview.png
 ---
 width: 650px
 align: center
-name: Vector Data overview
+name: en_vector_data_overview
 ---
 Vector data overview. Source: HeiGIT
 ```
@@ -69,26 +69,26 @@ Vector data overview. Source: HeiGIT
 
 
 Each feature stores the location (as address or coordinates) and further attributes, e.g. name, ID, or any other sort of 
-information. Which geometry is used depends on the type of data that is represented. For example, a road might be 
+information ({numref}`en_geodata_example_2`). Which geometry is used depends on the type of data that is represented. For example, a road might be 
 represented by a line, a building footprint might be represented by polygon and a tree might be represented by a point.
 
 
 ```{figure} /fig/en_geodata_example_2.png
 ---
-name: geometry geodata example 2
+name: en_geodata_example_2
 width: 700px
 ---
 Geographic information can be an address and/or GPS coordinates. (Source: BRC)
 ```
 
-- Features are displayed on maps with a geometric representation, but they are made of information organized in tables (see {numref}`geodata example`). 
+- Features are displayed on maps with a geometric representation, but they are made of information organized in tables (see {numref}`Geodata_attribute_table_example`). 
 - Each row in the table will be one feature on the map, while each column will contain one attribute information (field). 
 - Multiple attributes can be associated to each feature. 
 
 
 ```{figure} /fig/Geodata_attribute_table_example.png
 ---
-name: geodata example
+name: Geodata_attribute_table_example
 width: 750px
 ---
 A data table in Microsoft Excel with geographic information. (Source: BRC)
@@ -131,11 +131,11 @@ The different file formats have different use cases, as well as advantages or sh
 
 #### Shapefile structure
 
-A shapefile is a collection of separate files which commonly come in a single folder/directory. Some files are mandatory, others are optional. In order to have a functioning shapefile, you need to have all the mandatory files in the same folder. 
+A shapefile is a collection of separate files which commonly come in a single folder/directory. Some files are mandatory, others are optional (see {numref}`en_shapefile_structure`). In order to have a functioning shapefile, you need to have all the mandatory files in the same folder. 
 
 ```{figure} /fig/en_shapefile_structure.png
 ---
-name: shapefile_folderstructure
+name: en_shapefile_structure
 width: 400 px
 ---
 __SHP, SHX__ and __DBF__ are the __mandatory__ files that every shapefile must contain to work properly. The SHP is the main file and contains the geometry.  
@@ -165,7 +165,7 @@ landuse, color categories (such as green = forest; yellow = agricultural landuse
 
 ```{figure} /fig/raster_data_example_corine_LC.png
 ---
-name: corine_landcover_example
+name: raster_data_example_corine_LC
 width: 350 px
 align: left
 ---
@@ -178,7 +178,7 @@ The Copernicus CORINE Landcover Dataset (Source: [EEA/Copernicus](https://land.c
 
 ```{figure} /fig/NASADEM_Alps_example.png
 ---
-name: NASA_DEM_example
+name: NASADEM_Alps_example
 width: 300 px
 ---
 The NASA DEM showing the alps (Source: [NASA/USGS/JPL-CALTECH](https://lpdaac.usgs.gov/products/nasadem_hgtv001/))
@@ -190,13 +190,13 @@ The NASA DEM showing the alps (Source: [NASA/USGS/JPL-CALTECH](https://lpdaac.us
 Raster values usually have only one value per cell, however, it can also have multiple (color) bands. Satellite 
 imagery usually offers several bands to represent data collected from different parts of the light spectrum, which we can use to analyze different phenomena, such as the humidity of plants. Multiple bands means that you have more than one value per cell.
 
-The main spatial characteristics are the extent - the area the grid represents in the real world (10km², 100km²) - and the raster resolution - the size of each pixel. In {numref}`The main geographical data formats`, you can see two raster datasets with different resolutions.
+The main spatial characteristics are the extent - the area the grid represents in the real world (10km², 100km²) - and the raster resolution - the size of each pixel. In {numref}`en_quality_raster`, you can see two raster datasets with different resolutions.
 
 ```{figure} /fig/en_quality_raster.png
 ---
 width: 800px
 align: center
-name: The main geographical data formats
+name: en_quality_raster
 ---
 Two raster datasets with different resolution covering the same region. Source: [CartONG](https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_3_vector_raster_data)
 ```
@@ -257,7 +257,7 @@ GIS software helps us visualise geographic data. It does so by displaying the ge
 canvas. However, when creating a map, we are using multiple datasets at once. Every type of geographic data, such 
 as raster data, polygons, points, or lines, is usually stored inside a __layer__. Each layer consists of geographic 
 objects of the same type (line, polygon, raster, ...). GIS software displays these layers on top of each other and 
-let's you rearrange the order of these layer, in order to create insightful maps.
+let's you rearrange the order of these layer, in order to create insightful maps (see {numref}`en_layer`).
 
 
 By adding different layers, you build your map and can combine information from 
@@ -268,7 +268,7 @@ representation by using symbols and colors.
 ---
 width: 800px 
 align: center
-name: Layers in a GIS
+name: en_layer
 ---
 Layers in a GIS. Source: [CartONG](https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_1_layers)
 ```

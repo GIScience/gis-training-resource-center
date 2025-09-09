@@ -568,6 +568,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dissolve">5.2.3. Dissolve</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#buffer">5.2.4. Buffer</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-create-10km-buffer-around-health-centres">5.2.5. Exercise: Create 10km buffer around health centres</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#more-advanced-clipping-operations">5.2.6. More advanced clipping operations</a></li>
 </ul>
             </nav>
         </div>
@@ -617,10 +618,8 @@ look at each of these overlay operations in turn and provide some examples for h
 </div>
 <div class="sd-card-body docutils">
 <p class="sd-card-text"><em>Flood extent data for Pakistan is available, but the focus is on mapping flood damage in a specific administrative region. In this case, the flood layer can be clipped to the administrative boundaries of the area of interest.</em></p>
-<!---*We have flood extent data for Pakistan, but we are currently working on a map showing the flood damage in a specific administrative region. In this case, we can take the flood layer and clip it to the administrative boundaries of the area of interest.*-->
 </div>
 </div>
-<!--CHECK IF THIS EXAMPLE IS NEEDED--->
 <p>The tool has two different input options:</p>
 <ul class="simple">
 <li><p><strong>Input layer</strong>: Layer from which the selection is clipped</p></li>
@@ -664,60 +663,7 @@ Solution: Clipping a roads layer to administrative boundaries<div class="sd-summ
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_clip_roads.mp4"></video></p>
 </div>
-</details><!--REMOVED: GDAL Operators as not used frequently enough to need inclusion in this section-->
-<!--GDAL Operators are needed?--
-
-In addition to the standard QGIS operation __Clip__, there are two other more advanced tools for performing clipping processes. These tools are GDAL operations, which enable the definition of the clipping extent. This extent can be either a specific area or a mask layer. The second option is quite similar to the standard clipping process provided by QGIS.
-
-```{figure} /fig/en_gdal_clipping_tools.PNG
----
-width: 250 px
-name: gdal_clipping_tools
----
-The GDAL tools Clip vector by extent and Clip vector by mask layer
-```
-
-::::{tab-set}
-
-:::{tab-item} Clip vector by extent
-
-This operation clips any vector file to a given extent. This clip extent will be defined by a bounding box that should be used for the vector output file. It also has to be defined in the target CRS coordinates. There are different methods to define the bounding box, which are the great difference between this tool and the standard clipping process:
-* Calculate from a layer: this uses the extent of a layer loaded into the current project
-* Calculate from layout map: uses the extent of a layout map item in the active project
-* Calculate from bookmark: uses the extent of a saved bookmark
-* Use map canvas extent
-* Draw on canvas: click and drag a rectangle delimiting the area to take into account
-* Enter the coordinates as xmin, xmax, ymin, ymax
-
-```{figure} /fig/en_clip_vector_by_extent.PNG
----
-width: 450 px
-name: en_clip_vector_by_extent
----
-Screenshot of the tool Clip vector by extent
-```
-
-:::
-
-:::{tab-item} Clip vector by mask layer
-This operation uses a mask polygon layer to clip any vector layer. This operation only takes two input:
-1. The input layer
-2. The mask layer which is used as the clipping extent for the input vector layer
-
-```{figure} /fig/en_clip_vector_by_mask_layer.PNG
----
-width: 450 px
-name: clip_vector_by_mask_layer
----
-Screenshot of the tool Clip vector by mask layer
-```
-
-:::
-
-::::
-
--->
-</section>
+</details></section>
 <section id="dissolve">
 <h2><span class="section-number">5.2.3. </span>Dissolve<a class="headerlink" href="#dissolve" title="Permalink to this heading">#</a></h2>
 <p>The <img alt="" src="../../_images/mAlgorithmDissolve.png" /> <code class="docutils literal notranslate"><span class="pre">Dissolve</span></code>-tool creates a new layer and merges overlapping features from
@@ -846,6 +792,52 @@ Solution: Create 10km buffer around health centres<div class="sd-summary-down do
 </ol>
 </div>
 </details></section>
+<section id="more-advanced-clipping-operations">
+<h2><span class="section-number">5.2.6. </span>More advanced clipping operations<a class="headerlink" href="#more-advanced-clipping-operations" title="Permalink to this heading">#</a></h2>
+<p>In addition to the standard QGIS operation <strong>Clip</strong>, there are two other more advanced tools for performing clipping processes. These tools are GDAL operations, which enable the definition of the clipping extent. This extent can be either a specific area or a mask layer. The second option is quite similar to the standard clipping process provided by QGIS.</p>
+<figure class="align-default" id="gdal-clipping-tools">
+<a class="reference internal image-reference" href="../../_images/en_gdal_clipping_tools.PNG"><img alt="../../_images/en_gdal_clipping_tools.PNG" src="../../_images/en_gdal_clipping_tools.PNG" style="width: 250px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 5.16 </span><span class="caption-text">The GDAL tools Clip vector by extent and Clip vector by mask layer</span><a class="headerlink" href="#gdal-clipping-tools" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-0">
+Clip vector by extent</label><div class="sd-tab-content docutils">
+<p>This operation clips any vector file to a given extent. This clip extent will be defined by a bounding box that should be used for the vector output file. It also has to be defined in the target CRS coordinates. There are different methods to define the bounding box, which are the great difference between this tool and the standard clipping process:</p>
+<ul class="simple">
+<li><p>Calculate from a layer: this uses the extent of a layer loaded into the current project</p></li>
+<li><p>Calculate from layout map: uses the extent of a layout map item in the active project</p></li>
+<li><p>Calculate from bookmark: uses the extent of a saved bookmark</p></li>
+<li><p>Use map canvas extent</p></li>
+<li><p>Draw on canvas: click and drag a rectangle delimiting the area to take into account</p></li>
+<li><p>Enter the coordinates as xmin, xmax, ymin, ymax</p></li>
+</ul>
+<figure class="align-default" id="en-clip-vector-by-extent">
+<a class="reference internal image-reference" href="../../_images/en_clip_vector_by_extent.PNG"><img alt="../../_images/en_clip_vector_by_extent.PNG" src="../../_images/en_clip_vector_by_extent.PNG" style="width: 450px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 5.17 </span><span class="caption-text">Screenshot of the tool Clip vector by extent</span><a class="headerlink" href="#en-clip-vector-by-extent" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-1">
+Clip vector by mask layer</label><div class="sd-tab-content docutils">
+<p>This operation uses a mask polygon layer to clip any vector layer. This operation only takes two input:</p>
+<ol class="arabic simple">
+<li><p>The input layer</p></li>
+<li><p>The mask layer which is used as the clipping extent for the input vector layer</p></li>
+</ol>
+<figure class="align-default" id="clip-vector-by-mask-layer">
+<a class="reference internal image-reference" href="../../_images/en_clip_vector_by_mask_layer.PNG"><img alt="../../_images/en_clip_vector_by_mask_layer.PNG" src="../../_images/en_clip_vector_by_mask_layer.PNG" style="width: 450px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 5.18 </span><span class="caption-text">Screenshot of the tool Clip vector by mask layer</span><a class="headerlink" href="#clip-vector-by-mask-layer" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -916,6 +908,7 @@ Solution: Create 10km buffer around health centres<div class="sd-summary-down do
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dissolve">5.2.3. Dissolve</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#buffer">5.2.4. Buffer</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-create-10km-buffer-around-health-centres">5.2.5. Exercise: Create 10km buffer around health centres</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#more-advanced-clipping-operations">5.2.6. More advanced clipping operations</a></li>
 </ul>
   </nav></div>
 

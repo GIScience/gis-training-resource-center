@@ -37,7 +37,7 @@ licensing and to follow the respective regulations to avoid difficulties.
 
 ```{figure} /fig/en_data_sources_examples_cartong.png
 ---
-name: data sources examples
+name: en_data_sources_examples_cartong
 width: 600 px
 ---
 The data to create maps or perform GIS analyses can come from various sources (Source: [CartONG](https://www.cartong.org/en/))
@@ -113,7 +113,7 @@ The data to create maps or perform GIS analyses can come from various sources (S
 
 OpenStreetMap (OSM) is a collaborative project that aims to create a free and editable map of the world. Unlike traditional maps, which are often proprietary and controlled by commercial entities, OSM allows anyone to contribute and edit map data, resulting in a detailed and constantly evolving map of roads, trails, landmarks, and more. With its open-source nature and global community of contributors, OpenStreetMap has become a valuable resource for a wide range of applications, from navigation and urban planning to disaster response and humanitarian aid.
 
-There a multiple ways to get OpenStreetMap (OSM) data as a vector file into QGIS. The three most common and easy-to-use ways are geofabrik.de, HOT Export Tool and QuickOSM [QGIS Plugin](). Each of the options has both advantages and disadvantages.
+There a multiple ways to get OpenStreetMap (OSM) data as a vector file into QGIS. The three most common and easy-to-use ways are geofabrik.de, HOT Export Tool and QuickOSM [QGIS Plugin](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html). Each of the options has both advantages and disadvantages.
 
 ```{Tip}
 

@@ -56,7 +56,7 @@ A standard folder structure has two principal advantages:
 ---
 width: 600px
 align: center
-name: Standard folder structure
+name: standard_folder_structure_new_2025
 ---
 Standard folder structure. Source: HeiGIT
 ```

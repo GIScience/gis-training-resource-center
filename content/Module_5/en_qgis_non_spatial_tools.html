@@ -616,12 +616,12 @@ document.write(`
 <li><p>It changes the non-geometric attributes of datasets (i.e., the attribute table)</p></li>
 <li><p>Non-spatial processing can be used to perform calculations, generate statistics, and gain insights into the non-spatial aspects of geospatial datasets.</p></li>
 <li><p>QGIS offers a variety of tools for non-spatial processing to assist users in managing and analysing attribute data effectively.</p></li>
+<li><p>This can include data cleaning, transformation, enrichment, and analysis based on the associated attribute information, such as population statistics, land use classifications, or economic indicators.</p></li>
 </ul>
-<!---This can include data cleaning, transformation, enrichment, and analysis based on the associated attribute information, such as population statistics, land use classifications, or economic indicators.-->
-<figure class="align-default" id="attribute-table-all">
+<figure class="align-default" id="en-attribute-table-large">
 <a class="reference internal image-reference" href="../../_images/en_attribute_table_large.PNG"><img alt="../../_images/en_attribute_table_large.PNG" src="../../_images/en_attribute_table_large.PNG" style="height: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.17 </span><span class="caption-text">Screenshot of an attribute table for QGIS version 3.28.4</span><a class="headerlink" href="#attribute-table-all" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.20 </span><span class="caption-text">Screenshot of an attribute table for QGIS version 3.28.4</span><a class="headerlink" href="#en-attribute-table-large" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -629,12 +629,12 @@ document.write(`
 <h2><span class="section-number">5.4.2. </span>Non-spatial joins (Join Attributes by Field Value)<a class="headerlink" href="#non-spatial-joins-join-attributes-by-field-value" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>A lot of analysis can be done with just a single layer. But, sometimes, the necessary information we need for our analysis is <strong>split across</strong> different datasets/layers.</p></li>
-<li><p>With QGIS, these layers can be <strong>combined</strong> to perform the analysis we want. The simplest way to combine layers is via an <strong>attribute join</strong>. This operation looks up information from a second data source based on a <strong>shared attribute value</strong>. This value functions as a common unique identifier, also known as an ID, UID, or key (see <a class="reference internal" href="#simple-attr-join-example"><span class="std std-numref">Fig. 5.18</span></a>).</p></li>
+<li><p>With QGIS, these layers can be <strong>combined</strong> to perform the analysis we want. The simplest way to combine layers is via an <strong>attribute join</strong>. This operation looks up information from a second data source based on a <strong>shared attribute value</strong>. This value functions as a common unique identifier, also known as an ID, UID, or key (see <a class="reference internal" href="#simple-attr-join-example"><span class="std std-numref">Fig. 5.21</span></a>).</p></li>
 </ul>
 <figure class="align-default" id="simple-attr-join-example">
 <a class="reference internal image-reference" href="../../_images/simple_attr_join_example.png"><img alt="../../_images/simple_attr_join_example.png" src="../../_images/simple_attr_join_example.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.18 </span><span class="caption-text">The entries in the two data tables can be joined via the common ID-field</span><a class="headerlink" href="#simple-attr-join-example" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.21 </span><span class="caption-text">The entries in the two data tables can be joined via the common ID-field</span><a class="headerlink" href="#simple-attr-join-example" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
@@ -645,10 +645,10 @@ document.write(`
 <p class="sd-card-text">*A common GIS workflow in humanitarian work involving non-spatial joins is joining data on administrative boundaries using P-codes as the common identifier/shared attribute.</p>
 <p class="sd-card-text">P-codes are identifying codes for administrative units (e.g. country (adm0), region (adm1), district (adm2)), that were introduced to simplify joining tabular data on administrative regions. These codes clearly identify the administrative units facilitating non-spatial joins.</p>
 <p class="sd-card-text">For example: We have a spatial dataset containing the administrative boundaries of districts (adm2) in Nigeria and a data table containing the population per district, but without the polygons. By using the P-codes as identifying attribute, we can easily join the population data with the vector dataset.*</p>
-<figure class="align-default" id="pcode-example">
+<figure class="align-default" id="en-attribute-join-pcode-example">
 <a class="reference internal image-reference" href="../../_images/en_attribute_join_pcode_example.png"><img alt="../../_images/en_attribute_join_pcode_example.png" src="../../_images/en_attribute_join_pcode_example.png" style="width: 550px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.19 </span><span class="caption-text">The P-code associated with the district Edo South is NG01201</span><a class="headerlink" href="#pcode-example" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.22 </span><span class="caption-text">The P-code associated with the district Edo South is NG01201</span><a class="headerlink" href="#en-attribute-join-pcode-example" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -677,10 +677,10 @@ document.write(`
 <li><p>As Input Layer 2, select the layer <code class="docutils literal notranslate"><span class="pre">nga_adm1pop_2022</span></code>, set the “Table Field” to <code class="docutils literal notranslate"><span class="pre">ADM1_PCODE</span></code>. Additionally, under “Layer 2 fields to copy”, select <code class="docutils literal notranslate"><span class="pre">F_TL</span></code>, <code class="docutils literal notranslate"><span class="pre">M_TL</span></code>, and <code class="docutils literal notranslate"><span class="pre">T_TL</span></code>.</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Run</span></code>. A new layer will appear in your layer panel called “Joined Layer”.</p></li>
 </ol>
-<figure class="align-default" id="pcode-join">
+<figure class="align-default" id="en-3-36-pcode-join">
 <a class="reference internal image-reference" href="../../_images/en_3.36_pcode_join.png"><img alt="../../_images/en_3.36_pcode_join.png" src="../../_images/en_3.36_pcode_join.png" style="width: 450px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.20 </span><span class="caption-text">Setting the parameters for the P-code join</span><a class="headerlink" href="#pcode-join" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.23 </span><span class="caption-text">Setting the parameters for the P-code join</span><a class="headerlink" href="#en-3-36-pcode-join" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="6">
@@ -690,7 +690,7 @@ document.write(`
 <figure class="align-default" id="nga-pop-join">
 <a class="reference internal image-reference" href="../../_images/nga_pop_join.png"><img alt="../../_images/nga_pop_join.png" src="../../_images/nga_pop_join.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.21 </span><span class="caption-text">The joined data classified using the graduated symbology for the population value.</span><a class="headerlink" href="#nga-pop-join" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.24 </span><span class="caption-text">The joined data classified using the graduated symbology for the population value.</span><a class="headerlink" href="#nga-pop-join" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -750,10 +750,10 @@ Example: Delete all unused/unnecessary fields from a vector layer<div class="sd-
 </div>
 <p>An example could be to calculate the population density based on the already existing fields Population and Area.</p>
 <p>A very important tool for such calculations is the <strong>Field Calculator</strong>. It allows you to <strong>perform calculations based on existing attribute values or defined functions</strong>, for example, to calculate the length or area of a geometry feature or in the given example, could be used to calculate the population density based on the already existing fields Population and Area. The results of these calculations can be written into a new field or update an existing field.</p>
-<figure class="align-default" id="field-calculator">
+<figure class="align-default" id="en-field-calculator-red-boxes">
 <a class="reference internal image-reference" href="../../_images/en_field_calculator_red_boxes.png"><img alt="../../_images/en_field_calculator_red_boxes.png" src="../../_images/en_field_calculator_red_boxes.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.22 </span><span class="caption-text">Screenshot of the Field calculator</span><a class="headerlink" href="#field-calculator" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.25 </span><span class="caption-text">Screenshot of the Field calculator</span><a class="headerlink" href="#en-field-calculator-red-boxes" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The most important groups and their respective functionality that are provided with the field calculator are listed below:</p>
@@ -788,7 +788,13 @@ Example: Calculate the population density<div class="sd-summary-down docutils">
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_calculate_field.mp4"></video></p>
 </div>
-</details></section>
+</details><!---
+:::{admonition} Get Statistics
+:class: tip
+
+:::
+-->
+</section>
 <section id="basic-statistics-for-fields">
 <h3><span class="section-number">5.4.3.4. </span>Basic statistics for fields<a class="headerlink" href="#basic-statistics-for-fields" title="Permalink to this heading">#</a></h3>
 <p>The tool <strong>Basic statistics for fields</strong> generates statistics for a specific field of the attribute table of a vector layer. The results are generated as an HTML file and can be accessed by using the <strong>file path link</strong> in the <strong>Results Viewer</strong>. This operation is highly valuable for gaining a comprehensive understanding of the data you intend to work with. It allows you to determine the range of values, pinpoint the minimum and maximum values. In the provided example, this operation is applied to calculate the global population density, allowing you to easily identify the most densely populated region worldwide.</p>
@@ -983,10 +989,10 @@ SQL Cheat Sheet</label><div class="sd-tab-content docutils">
 <section id="query-builder">
 <h3><span class="section-number">5.4.4.3. </span>Query Builder<a class="headerlink" href="#query-builder" title="Permalink to this heading">#</a></h3>
 <p>The Query Builder provides an interface that allows you to define a <strong>subset of the features</strong> in the layer using SQL-like statements and to display the results in the main window. As long as the query is active, only the <strong>features corresponding</strong> to its result are available in the project. You can use one or more layer attributes to define the filter in the Query Builder. The Query Builder is built as follows:</p>
-<figure class="align-default" id="id1">
+<figure class="align-default" id="en-query-builder-comment">
 <a class="reference internal image-reference" href="../../_images/en_query_builder_comment.png"><img alt="../../_images/en_query_builder_comment.png" src="../../_images/en_query_builder_comment.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.23 </span><span class="caption-text">Screenshot of the Query Builder</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.26 </span><span class="caption-text">Screenshot of the Query Builder</span><a class="headerlink" href="#en-query-builder-comment" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple">

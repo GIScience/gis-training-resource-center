@@ -14,13 +14,12 @@ Non-spatial data processing in QGIS refers to the manipulation of attribute data
 - It changes the non-geometric attributes of datasets (i.e., the attribute table)
 - Non-spatial processing can be used to perform calculations, generate statistics, and gain insights into the non-spatial aspects of geospatial datasets. 
 - QGIS offers a variety of tools for non-spatial processing to assist users in managing and analysing attribute data effectively.
-
-<!---This can include data cleaning, transformation, enrichment, and analysis based on the associated attribute information, such as population statistics, land use classifications, or economic indicators.-->
+- This can include data cleaning, transformation, enrichment, and analysis based on the associated attribute information, such as population statistics, land use classifications, or economic indicators.
 
 ```{figure} /fig/en_attribute_table_large.PNG
 ---
 height: 500px
-name: attribute_table_all
+name: en_attribute_table_large
 ---
 Screenshot of an attribute table for QGIS version 3.28.4
 ```
@@ -49,7 +48,7 @@ For example: We have a spatial dataset containing the administrative boundaries 
 
 ```{figure} /fig/en_attribute_join_pcode_example.png
 ---
-name: pcode_example
+name: en_attribute_join_pcode_example
 width: 550 px
 ---
 The P-code associated with the district Edo South is NG01201
@@ -81,7 +80,7 @@ The population layer needs to be [added as a delimited text layer](https://gisci
 
 ```{figure} /fig/en_3.36_pcode_join.png
 ---
-name: 36_pcode_join
+name: en_3.36_pcode_join
 width: 450 px
 ---
 Setting the parameters for the P-code join
@@ -149,7 +148,7 @@ A very important tool for such calculations is the __Field Calculator__. It allo
 ```{figure} /fig/en_field_calculator_red_boxes.png
 ---
 width: 100%
-name: field_calculator
+name: en_field_calculator_red_boxes
 ---
 Screenshot of the Field calculator
 ```
@@ -171,10 +170,13 @@ The most important groups and their respective functionality that are provided w
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_calculate_field.mp4"></video>
 ````
 
+<!---
 :::{admonition} Get Statistics
 :class: tip
 
 :::
+-->
+
 
 ### Basic statistics for fields
 
@@ -283,7 +285,7 @@ The Query Builder provides an interface that allows you to define a __subset of 
 ```{figure} /fig/en_query_builder_comment.png
 ---
 width: 100%
-name: query_builder
+name: en_query_builder_comment
 ---
 Screenshot of the Query Builder
 ```

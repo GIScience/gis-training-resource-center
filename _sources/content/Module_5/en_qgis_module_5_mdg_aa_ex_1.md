@@ -128,7 +128,7 @@ __Context__
 ---
 width: 100px
 align: right
-name: IFRC Surge Icon
+name: IFRC-icons-colour_SURGE
 ---
 ```
 

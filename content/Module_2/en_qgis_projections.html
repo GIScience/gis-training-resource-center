@@ -606,15 +606,15 @@ document.write(`
 <p>An important issue when creating a map of a region, is that it is impossible to create a representation of a sphere
 on a 2D plane without distorting the map. The transformation of a 3D object onto a flat surface can be done with the
 help of a <strong>projection</strong>. Over the centuries, cartographers and mathematicians have developed a multitude of different
-methods to project the earth onto a flat surface. However, it is never possible to correctly represent the world on a
+methods to project the earth onto a flat surface (<a class="reference internal" href="#en-examples-projections-ibis"><span class="std std-numref">Fig. 2.15</span></a>). However, it is never possible to correctly represent the world on a
 flat surface (see the video above).
 Every projection distorts either the length between two points, the angles between two lines (directions), or the size
 of an area. A projection can only correctly represent one of these three dimensions. This means, that depending on the
 projection method, your world map will not represent the size, angles, or distances correctly.</p>
-<figure class="align-center" id="examples-for-projections-azimuthal-cylindrical-and-conic">
+<figure class="align-center" id="en-examples-projections-ibis">
 <a class="reference internal image-reference" href="../../_images/en_examples_projections_IBIS.png"><img alt="../../_images/en_examples_projections_IBIS.png" src="../../_images/en_examples_projections_IBIS.png" style="width: 700px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.15 </span><span class="caption-text">Examples for Projections (Source:(<a class="reference external" href="http://ibis.colostate.edu/webcontent/NR505/2012_Projects/Team6/GISConcepts.html">http://ibis.colostate.edu/webcontent/NR505/2012_Projects/Team6/GISConcepts.html</a>)).</span><a class="headerlink" href="#examples-for-projections-azimuthal-cylindrical-and-conic" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.15 </span><span class="caption-text">Examples for Projections (Source:(<a class="reference external" href="http://ibis.colostate.edu/webcontent/NR505/2012_Projects/Team6/GISConcepts.html">http://ibis.colostate.edu/webcontent/NR505/2012_Projects/Team6/GISConcepts.html</a>)).</span><a class="headerlink" href="#en-examples-projections-ibis" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Every projection has its use case. For example, the Mercator projection displays the angles between to points
@@ -631,10 +631,10 @@ The mercator projection is famous for distorting the size of different countries
 the true size in comparison to different placements on the map on <a class="reference external" href="https://www.thetruesize.com">TheTrueSize.com website</a>.
 A popular example is Greenland in comparison with Africa, which seem on the map to be about the same size, but in reality Africa is a lot bigger.</p>
 </div>
-<figure class="align-center" id="comparison-greenland-africa">
+<figure class="align-center" id="en-greenland-africa">
 <a class="reference internal image-reference" href="../../_images/en_greenland_africa.png"><img alt="../../_images/en_greenland_africa.png" src="../../_images/en_greenland_africa.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.16 </span><span class="caption-text">Comparison Greenland - Africa. Source: <a class="reference external" href="https://www.thetruesize.com/#?borders=1~!MTYwODM1MTk.MzkyNDUyNg*MjY5NjM4Mzg(MTA1MjgyOTE~!CONTIGUOUS_US*MTAwMjQwNzU.MjUwMjM1MTc(MTc1)MQ~!IN*NTI2NDA1MQ.Nzg2MzQyMQ)MA~!CN*OTkyMTY5Nw.NzMxNDcwNQ(MjI1)Mg">The True Size of</a></span><a class="headerlink" href="#comparison-greenland-africa" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.16 </span><span class="caption-text">Comparison Greenland - Africa. Source: <a class="reference external" href="https://www.thetruesize.com/#?borders=1~!MTYwODM1MTk.MzkyNDUyNg*MjY5NjM4Mzg(MTA1MjgyOTE~!CONTIGUOUS_US*MTAwMjQwNzU.MjUwMjM1MTc(MTc1)MQ~!IN*NTI2NDA1MQ.Nzg2MzQyMQ)MA~!CN*OTkyMTY5Nw.NzMxNDcwNQ(MjI1)Mg">The True Size of</a></span><a class="headerlink" href="#en-greenland-africa" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -711,11 +711,11 @@ characteristic:</p>
 </tr>
 </tbody>
 </table>
-<p>Another very important consideration when choosing the Coordinate reference system is that, depending on the ellipsoid and the method used to project the same point can be located at different locations (see <a class="reference internal" href="#wrong-crs-points"><span class="std std-numref">Fig. 2.20</span></a>). In the figure below, the same point is encoded in 3 different reference systems.</p>
-<figure class="align-default" id="wrong-crs-points">
+<p>Another very important consideration when choosing the Coordinate reference system is that, depending on the ellipsoid and the method used to project the same point can be located at different locations (see <a class="reference internal" href="#wrong-crs"><span class="std std-numref">Fig. 2.20</span></a>). In the figure below, the same point is encoded in 3 different reference systems.</p>
+<figure class="align-default" id="wrong-crs">
 <a class="reference internal image-reference" href="../../_images/wrong_CRS.png"><img alt="../../_images/wrong_CRS.png" src="../../_images/wrong_CRS.png" style="width: 750px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.20 </span><span class="caption-text">The same point in three different reference systems (Source: HeiGIT).</span><a class="headerlink" href="#wrong-crs-points" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.20 </span><span class="caption-text">The same point in three different reference systems (Source: HeiGIT).</span><a class="headerlink" href="#wrong-crs" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <section id="metric-and-geographic-coordinate-reference-systems">
@@ -748,10 +748,10 @@ characteristic:</p>
 </section>
 <section id="local-and-global-crs">
 <h3><span class="section-number">2.2.2.2. </span>Local and Global CRS<a class="headerlink" href="#local-and-global-crs" title="Permalink to this heading">#</a></h3>
-<figure class="align-center" id="local-and-global-coordinate-reference-systems-crs">
+<figure class="align-center" id="en-local-crs">
 <a class="reference internal image-reference" href="../../_images/en_local_crs.png"><img alt="../../_images/en_local_crs.png" src="../../_images/en_local_crs.png" style="width: 800px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.22 </span><span class="caption-text">Local and global coordinate reference systems (CRS).(Source: British Red Cross)</span><a class="headerlink" href="#local-and-global-coordinate-reference-systems-crs" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.22 </span><span class="caption-text">Local and global coordinate reference systems (CRS).(Source: British Red Cross)</span><a class="headerlink" href="#en-local-crs" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>As you can see, smaller regions look skewed and distorted in a global CRS
