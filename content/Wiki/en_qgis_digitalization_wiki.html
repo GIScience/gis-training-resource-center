@@ -598,7 +598,7 @@ To digitize data for a new dataset you always have to start with creating the da
 <li><p><code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">GeoPackage</span> <span class="pre">Layer</span></code> or <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Shapefile</span> <span class="pre">Layer</span></code></p></li>
 <li><p>Click on <img alt="" src="../../_images/Three_points.png" /> and navigate to the folder where you want to save the dataset.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">encoding</span></code>: Make sure this is set to UTF-8</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">type</span></code>: Select the type of feature you want to digitalise e.g. points, lines or polygones.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">type</span></code>: Select the type of feature you want to digitise e.g. points, lines or polygons.</p></li>
 <li><p>Under <code class="docutils literal notranslate"><span class="pre">Additional</span> <span class="pre">dimension</span></code> you should always make sure that you check <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p></li>
 <li><p>Select the coordinate system you want to set for the new layer. By default, the QGIS selects the project CRS. If you want to change the CRS click on <img alt="" src="../../_images/mIconProjectionEnabled.png" />.</p></li>
 <li><p>Under <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Field</span></code> you can add columns to the new layer.</p>
@@ -615,14 +615,14 @@ To digitize data for a new dataset you always have to start with creating the da
 <h2>Add geometries to a layer<a class="headerlink" href="#add-geometries-to-a-layer" title="Permalink to this heading">#</a></h2>
 <section id="creation-of-point-data">
 <h3>Creation of point data<a class="headerlink" href="#creation-of-point-data" title="Permalink to this heading">#</a></h3>
-<p>To digitalise points, first you need an existing point layer or you need to create one (check out <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation.html#digital-data-creation">Digital Data Creation</a> above).</p>
+<p>To digitise points, first you need an existing point layer or you need to create one (check out <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation.html#digital-data-creation">Digital Data Creation</a> above).</p>
 <ol class="arabic simple">
 <li><p>Select the point layer you want to add data to in the Layer panel</p></li>
-<li><p>Go to the digitalisation toolbar and click on<img alt="" src="../../_images/mActionToggleEditing.png" />. No the layer is in the editing mode.</p></li>
+<li><p>Go to the digitsation toolbar and click on<img alt="" src="../../_images/mActionToggleEditing.png" />. No the layer is in the editing mode.</p></li>
 <li><p>Click on <img alt="" src="../../_images/mActionCapturePoint.png" />.</p></li>
-<li><p>Left-click on the feature you want to digitalise.</p></li>
+<li><p>Left-click on the feature you want to digitise.</p></li>
 <li><p>Once you click, a window will appear <code class="docutils literal notranslate"><span class="pre">[Your</span> <span class="pre">Layer</span> <span class="pre">Name]-</span> <span class="pre">Feature</span> <span class="pre">Attribute</span></code>. Here you can add the information about this feature to the different columns, based on the attribute table of the layer.</p></li>
-<li><p>Once you are done with digitalisation <img alt="" src="../../_images/mActionSaveEdits.png" /> to save your edits.</p></li>
+<li><p>Once you are done with digitisation <img alt="" src="../../_images/mActionSaveEdits.png" /> to save your edits.</p></li>
 <li><p>Click again on <img alt="" src="../../_images/mActionToggleEditing.png" /> to end the editing mode.</p></li>
 </ol>
 <p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_point_feature.mp4"></video></p>
@@ -639,11 +639,11 @@ To digitize data for a new dataset you always have to start with creating the da
 </div>
 <ol class="arabic simple">
 <li><p>Select the line layer you want to add data to in the Layer panel</p></li>
-<li><p>Go to the digitalisation toolbar and click on<img alt="" src="../../_images/mActionToggleEditing.png" />. No the layer is in the editing mode.</p></li>
+<li><p>Go to the digitisation toolbar and click on<img alt="" src="../../_images/mActionToggleEditing.png" />. No the layer is in the editing mode.</p></li>
 <li><p>Click on <img alt="" src="../../_images/mActionCaptureLine.png" />.</p></li>
-<li><p>To digitalise line features, click along the line. When you are done, right-click on the last point of the line to finish the feature.</p></li>
+<li><p>To digitise line features, click along the line. When you are done, right-click on the last point of the line to finish the feature.</p></li>
 <li><p>Once you click, a window will appear <code class="docutils literal notranslate"><span class="pre">[Your</span> <span class="pre">Layer</span> <span class="pre">Name]-</span> <span class="pre">Feature</span> <span class="pre">Attribute</span></code>. Here you can add the information about this feature to the different columns, based on the attribute table of the layer.</p></li>
-<li><p>Once you are done with digitalisation <img alt="" src="../../_images/mActionSaveEdits.png" /> to save your edits.</p></li>
+<li><p>Once you are done with digitisation <img alt="" src="../../_images/mActionSaveEdits.png" /> to save your edits.</p></li>
 <li><p>Click again on <img alt="" src="../../_images/mActionToggleEditing.png" /> to end the editing mode.</p></li>
 </ol>
 <p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_line_feature.mp4"></video></p>
@@ -671,7 +671,7 @@ To digitize data for a new dataset you always have to start with creating the da
 <h3>Adding Ring to existing polygon layer<a class="headerlink" href="#adding-ring-to-existing-polygon-layer" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Clicking on <img alt="" src="../../_images/mActionToggleEditing.png" /> start <code class="docutils literal notranslate"><span class="pre">edit</span> <span class="pre">mode</span></code>.</p></li>
-<li><p>Add Feature: <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Ring</span></code><img alt="" src="../../_images/mActionAddRing.png" /> (e.g. map the inner courtyard of a building, or -  as shown in the video - create a cercle to mark an isle in the lake).</p></li>
+<li><p>Add Feature: <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Ring</span></code><img alt="" src="../../_images/mActionAddRing.png" /> (e.g. map the inner courtyard of a building, or -  as shown in the video - create a circle to mark an isle in the lake).</p></li>
 <li><p>To open the <code class="docutils literal notranslate"><span class="pre">Advanced</span> <span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code> go to <code class="docutils literal notranslate"><span class="pre">View</span> <span class="pre">&gt;</span> <span class="pre">Toolboxes</span> <span class="pre">&gt;</span> <span class="pre">Advanced</span> <span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code>.</p></li>
 <li><p>To add rectangles ‘automatically’ go to <code class="docutils literal notranslate"><span class="pre">View</span> <span class="pre">&gt;</span> <span class="pre">Toolbars</span> <span class="pre">&gt;</span> <span class="pre">Shape</span> <span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code>.</p></li>
 </ul>
