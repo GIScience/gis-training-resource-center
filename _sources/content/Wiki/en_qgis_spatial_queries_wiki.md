@@ -28,7 +28,7 @@ __🔙[Back to Homepage](/content/intro.md)__
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_location_intersect_wiki.mp4"></video>
 :::
 
-:::{dropdown} Example: Select all neighbouring countries of China (`touch`)
+:::{dropdown} Example: Select all neighboring countries of China (`touch`)
 :open:
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_location_touch_wiki.mp4"></video>
 :::

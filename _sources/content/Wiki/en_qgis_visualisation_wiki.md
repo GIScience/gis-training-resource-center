@@ -52,7 +52,7 @@ __For example__, select a symbol for every health facility that is a hospital an
 
 :::{dropdown} Only display the outlines of polygons
 
-In this example, wewant to change the symbology of a single layer so that __only the outlines of the polygons are visible__. 
+In this example, we want to change the symbology of a single layer so that __only the outlines of the polygons are visible__. 
 
 To change the symbology of a single layer:
 1. Open the `Styling panel` and navigate to the symbology tab. By default, the symbology will be set to `Single Symbol`. This means that the same colours and contours will be applied to all the features in that layer.
@@ -62,7 +62,7 @@ To change the symbology of a single layer:
 
 ```{figure} ../../fig/en_30.30.2_vector_layer_styling_transparent.png
 ---
-name: layer styling transparent
+name: en_30.30.2_vector_layer_styling_transparent_wiki
 width: 500 px
 ---
 ```
@@ -77,8 +77,8 @@ In this exercise, we will apply the same style to all features in a layer, but w
 
 ```{figure} ../../fig/en_30.30.2_changing_layer_style_1.png
 ---
-name: change layer style 1
-height: 400px 
+name: en_30.30.2_changing_layer_style_1_wiki
+height: 400 px 
 ---
 Order the layers and navigate to the styling panel of the topmost layer
 ```
@@ -90,8 +90,8 @@ Order the layers and navigate to the styling panel of the topmost layer
 
 ```{figure} ../../fig/en_30.30.2_changing_layer_style_2.png
 ---
-name: change layer style 2
-width: 350px
+name: en_30.30.2_changing_layer_style_2_wiki
+width: 350 px
 align: left
 ---
 Change the Fill type
@@ -109,11 +109,11 @@ Change the Fill type
 
 11. Choose a `Fill Color`
 12. Use the same Stroke Colour` as for Adm0 and Adm1, but make the width 0.1 Millimeters and the Stroke Style a __Dash Line__
-13. Click OK and look at yout map: hopefully it's starting to look nicer!
+13. Click OK and look at your map: hopefully it's starting to look nicer!
 
 ```{figure} ../../fig/en_30.30.2_changing_layer_style_3.png
 ---
-name: change layer style 3
+name: en_30.30.2_changing_layer_style_3_wiki
 ---
 The styling of a vector data consists of the colour and the outline
 ```
@@ -139,8 +139,8 @@ Categorized symbology is used when you have ***discrete*** variables.
 
 ```{figure} ../../fig/en_30.30.2_categorized_layer_symbology_1.png
 ---
-name: categorized layer symbology 1
-width: 500px
+name: en_30.30.2_categorized_layer_symbology_1_wiki
+width: 500 px
 ---
 Change the symbology type to "categorized" and choose the Value (variable) you wish to display
 ```
@@ -154,8 +154,8 @@ Change the symbology type to "categorized" and choose the Value (variable) you w
 
 ```{figure} ../../fig/en_30.30.2_categorized_layer_symbology_2.png
 ---
-name: categorized layer symbology 2
-width: 500px
+name: en_30.30.2_categorized_layer_symbology_2_wiki
+width: 500 px
 ---
 By double clicking on the __unique values__ in the classified list, you can change the symbol for each value
 ```
@@ -164,7 +164,7 @@ Now we have a map of Nigeria where you can locate the areas, that are affected b
 
 ```{figure} ../../fig/en_exercise_map_design_example_Nigeria.png
 ---
-name: map design example regions affected by explosions in Nigeria
+name: en_exercise_map_design_example_Nigeria_wiki
 width: 500px
 ---
 Regions affected by explosions in Nigeria
@@ -186,7 +186,7 @@ If a layer contains numeric values that are continuous, they can be organized in
 
 ```{figure} ../../fig/en_30.30.2_symbology_variable_ranges.png
 ---
-name: symbology of variable ranges
+name: en_30.30.2_symbology_variable_ranges_wiki
 width: 550px
 ---
 With variable ranges, select __Graduated__ symbology and choose the attribute with continuous values
@@ -200,8 +200,8 @@ With variable ranges, select __Graduated__ symbology and choose the attribute wi
 
 ```{figure} ../../fig/en_30.30.2_symbology_variable_ranges_2.png
 ---
-name: symbology of variable ranges 2
-width: 500px
+name: en_30.30.2_symbology_variable_ranges_2_wiki
+width: 500 px
 ---
 You can categorize the continuous values into classes and assign a colour ramp 
 ```
@@ -210,7 +210,7 @@ The following map shows the most populated States of Nigeria using a graduated c
 
 ```{figure} ../../fig/en_map_design_example_variable_ranges.png
 ---
-name: map design example_state population Nigeria
+name: en_map_design_example_variable_ranges_wiki
 width: 500px
 ---
 A map showing the population of Nigerian states
@@ -260,8 +260,8 @@ By default, QGIS renders the labels so that they don't overlap with other labels
 
 ```{figure} ../../fig/en_30.30.2_setting_up_labels.png
 ---
-width: 500px
-name: Setting up labels
+width: 500 px
+name: en_30.30.2_setting_up_labels_wiki
 ---
 Setting up labels in QGIS 30.30.2
 ```
@@ -282,8 +282,8 @@ Sometimes you will need to create two different label styles for different featu
 
 ```{figure} ../../fig/en_30.30.2_adding_rule-based_labels.png
 ---
-width: 500px
-name: adding rule-based labels
+width: 500 px
+name: en_30.30.2_adding_rule-based_labels_wiki
 ---
 To add rule-based labels, you need to enter an expression
 ```
@@ -297,8 +297,8 @@ To add rule-based labels, you need to enter an expression
 
 ```{figure} ../../fig/en_30.30.2_adding_rule-based_labels_expression_builder.png
 ---
-width: 500px
-name: rule-based labels expression builder
+width: 500 px
+name: en_30.30.2_adding_rule-based_labels_expression_builder_wiki
 ---
 The expression builder: Expression (left); building blocks, operators, fields and values(center); unique values (right)
 ```
@@ -307,10 +307,10 @@ The expression builder: Expression (left); building blocks, operators, fields an
 
 :::
 
-:::{dropdown} Add underligned labels
+:::{dropdown} Add underlined labels
 
 1. Set up the labels by following the same steps as before.
-2. TO underlign labels, click on the underlign-button
+2. TO underline labels, click on the underline-button
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_underlign_labels
 .mp4"></video>
@@ -350,7 +350,7 @@ To assign a colour gradient for raster data, you need to:
 1. Open the `styling panel` for the raster layer
 2. Navigate to the `Symbology tab`  
 3. By default, the colour scheme is set to Singleband gray (if you only have one colour band in the data set). Click on `Singleband Gray` and switch to `Singleband pseudocolour`
-4. Click on __the arrow to the right of the colour ramp__. Here you can choose a premade colour ramp
+4. Click on __the arrow to the right of the colour ramp__. Here you can choose a pre-made colour ramp
 5. You can modify the colour ramp by __clicking on the colour ramp__.
 
 ``` {figure} ../../fig/en_30.30.2_raster_data_colour_gradient.png
