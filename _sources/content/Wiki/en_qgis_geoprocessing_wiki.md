@@ -46,12 +46,12 @@ In QGIS, only the attributes selected for the dissolve operation will receive th
 
 ## Intersection
 
-The ![](/fig/intersection_icon.png) `interstion` tool extracts the part of layers which overlap.
+The ![](/fig/intersection_icon.png) `intersection` tool extracts the part of layers which overlap.
 
 1. Click `Vector` -> `Geoprocessing Tool` -> `Intersection` OR `Toolbox` -> Search for `Intersection`
 2. `Input layer`: select layer one 
 3. `Overlay layer`: select layer two
-4. `Intersection`: Speficiy where you want to save the results and give it a good name 
+4. `Intersection`: Specify where you want to save the results and give it a good name 
 
 ```{Note}
 * Order of input layer and overlay layer does not matter here
@@ -63,7 +63,7 @@ The ![](/fig/intersection_icon.png) `interstion` tool extracts the part of layer
 ```{figure} /fig/Intersect_concept_2.png
 ---
 width: 500px
-name: Intersction concept
+name: Intersect_concept_2
 ---
 `Intersection` operation between a two-features input layer and a single feature overlay layer (left) - resulting features are moved for clarity (right)
 

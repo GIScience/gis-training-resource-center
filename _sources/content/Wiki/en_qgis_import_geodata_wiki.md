@@ -65,7 +65,7 @@ When loading vector data in text format like .csv or .txt in QGIS, these data ha
 
 1.  `Layer` -> `Add Layer` ->`Open Delimited Text Layer`.
 2. Click on `File name` click on the three points ![](/fig/Three_points.png) and navigate to your csv. file and click `Open`.
-3. In the window "Data Source manager| Delimited Text" in QGIS you can find multiple drop-down menues
+3. In the window "Data Source manager| Delimited Text" in QGIS you can find multiple drop-down menus
     * `File Format`: Here you can specify which delimiter is used in the file you want to import. In a standard .csv file commas `,` is used. If this is not the case, select `Costume delimiters`. Here you can choose the exact delimiter used in your file. 
     ```{Tip}
     To find out which delimiter is used you can open your .csv file in Notepad or Excel. There you can check which delimiter is used to separate the information.
@@ -81,14 +81,14 @@ When loading vector data in text format like .csv or .txt in QGIS, these data ha
 ### Open .xlsx files in QGIS
 
 1. Drag and drop the .xlsx file in QGIS.
-2. If the file contains multible tables, select the table you want to work with. Click `add Layers`
-3. click on the `Processing` tab -> `Toolbox` -> search for the tool `Creat points layer from table`
+2. If the file contains multiple tables, select the table you want to work with. Click `add Layers`
+3. click on the `Processing` tab -> `Toolbox` -> search for the tool `Create points layer from table`
 4. Select you table as `Input Layer`
 5. Select the  longitude column for `X field` and the latitude column for `Y field`
 6. Click `Run`
 
 ```{Tip}
-A other option is always to transform the .xlsx file into a .csv, which is eaysier to open in QGIS.
+A other option is always to transform the .xlsx file into a .csv, which is easier to open in QGIS.
 ```
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_xlsx.mp4"></video>
@@ -96,5 +96,4 @@ A other option is always to transform the .xlsx file into a .csv, which is eaysi
 
 
 
-*QGGIS Version 3.22.15*
 
