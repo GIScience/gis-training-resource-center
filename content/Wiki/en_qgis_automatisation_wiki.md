@@ -21,14 +21,14 @@ You can also open a existing model via `Model` -> `Open Model` and navigating to
 **VIDEO**
 
 ### Model Components
-**Inputs/Outputs**: The model starts with input data and produces output filesi
+**Inputs/Outputs**: The model starts with input data and produces output files.
 **Algorithms**: Algorithms or Tools are specific geoprocessing steps that perform specific tasks, such as clipping, reprojecting or buffering.
 
 
 ### Create and save model
 
 **Add Inputs**
-You can add Spaces for input files via the "Inputs" Window on the left. Expand "Parameters" and choose the kind of Input type you need. For example "Vector Layer" for a layer with administrative districts or "CRS" for a coordinate refernece system that is needed for multiple reprojections in the model.
+You can add Spaces for input files via the "Inputs" Window on the left. Expand "Parameters" and choose the kind of Input type you need. For example "Vector Layer" for a layer with administrative districts or "CRS" for a coordinate reference system that is needed for multiple reprojections in the model.
 
 Addition if inputs is possible by double clicking or via drag and drop.
 
@@ -36,7 +36,7 @@ Addition if inputs is possible by double clicking or via drag and drop.
 
 
 **Add Processing Steps:**
-In the "Algorithms" panel on the left hand side you can choose procesing steps out of the QGIS toolbox. For example the "buffer" tool for buffering all administrative distrits of a input layer by 5 km.
+In the "Algorithms" panel on the left hand side you can choose processing steps out of the QGIS toolbox. For example the "buffer" tool for buffering all administrative districts of a input layer by 5 km.
 
 Addition of algorithms is possible double clicking or via "drag and drop".
 
@@ -44,11 +44,11 @@ Addition of algorithms is possible double clicking or via "drag and drop".
 
 
 **Run the Model**
-To run the model click the green arrow in the top bar and enter your inputs in the apperaing console and click "Run". Output layers are automatically added to you QGIS project interface.
+To run the model click the green arrow in the top bar, a new window will open where you will have to enter/specify your inputs, then click "Run". Output layers are automatically added to you QGIS project interface.
 
 **Export the Model**
-Models can be exported as an image (e.g. in png format), PDF, SVG and as a Python Script. Exporting the model can be benefical for documenting your work steps or to intergrate it in a Python based workflow.
+Models can be exported as an image (e.g. in png format), PDF, SVG and as a Python Script. Exporting the model can be beneficial for documenting your work steps or to integrate it in a Python based workflow.
 
 Export the model via Model > Export > Export as Image/PDF/SVG Python Script
 
-**VIDEO**
+<!---**VIDEO**-->

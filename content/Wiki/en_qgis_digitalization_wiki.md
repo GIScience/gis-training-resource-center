@@ -12,7 +12,7 @@ To digitize data for a new dataset you always have to start with creating the da
 - `Layer` --> `Create Layer` -> `New GeoPackage Layer` or `New Shapefile Layer`
 - Click on ![](/fig/Three_points.png) and navigate to the folder where you want to save the dataset.
 - `File encoding`: Make sure this is set to UTF-8
-- `Geometry type`: Select the type of feature you want to digitalise e.g. points, lines or polygones.
+- `Geometry type`: Select the type of feature you want to digitise e.g. points, lines or polygons.
 - Under `Additional dimension` you should always make sure that you check `None`. 
 - Select the coordinate system you want to set for the new layer. By default, the QGIS selects the project CRS. If you want to change the CRS click on ![](/fig/mIconProjectionEnabled.png).
 
@@ -27,14 +27,14 @@ To digitize data for a new dataset you always have to start with creating the da
 
 ### Creation of point data
 
-To digitalise points, first you need an existing point layer or you need to create one (check out [Digital Data Creation]( https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation.html#digital-data-creation) above).
+To digitise points, first you need an existing point layer or you need to create one (check out [Digital Data Creation]( https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation.html#digital-data-creation) above).
 
 1.	Select the point layer you want to add data to in the Layer panel
-2.	Go to the digitalisation toolbar and click on![](/fig/mActionToggleEditing.png). No the layer is in the editing mode.
+2.	Go to the digitsation toolbar and click on![](/fig/mActionToggleEditing.png). No the layer is in the editing mode.
 3.	Click on ![](/fig/mActionCapturePoint.png). 
-4.	Left-click on the feature you want to digitalise.
+4.	Left-click on the feature you want to digitise.
 5.	Once you click, a window will appear `[Your Layer Name]- Feature Attribute`. Here you can add the information about this feature to the different columns, based on the attribute table of the layer.
-5.	Once you are done with digitalisation ![](/fig/mActionSaveEdits.png) to save your edits.
+5.	Once you are done with digitisation ![](/fig/mActionSaveEdits.png) to save your edits.
 6.	Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_point_feature.mp4"></video>
@@ -57,11 +57,11 @@ The  method  is  similar  to  digitising  a  point  (see  above). First you have
 If you create a new line layer remember to change the geometry type into lines because we are creating lines data now.
 ```
 1.	Select the line layer you want to add data to in the Layer panel
-2.	Go to the digitalisation toolbar and click on![](/fig/mActionToggleEditing.png). No the layer is in the editing mode.
+2.	Go to the digitisation toolbar and click on![](/fig/mActionToggleEditing.png). No the layer is in the editing mode.
 3.	Click on ![](/fig/mActionCaptureLine.png). 
-4.	To digitalise line features, click along the line. When you are done, right-click on the last point of the line to finish the feature.
+4.	To digitise line features, click along the line. When you are done, right-click on the last point of the line to finish the feature.
 5.	Once you click, a window will appear `[Your Layer Name]- Feature Attribute`. Here you can add the information about this feature to the different columns, based on the attribute table of the layer.
-6.	Once you are done with digitalisation ![](/fig/mActionSaveEdits.png) to save your edits.
+6.	Once you are done with digitisation ![](/fig/mActionSaveEdits.png) to save your edits.
 7.	Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
 
 
@@ -89,7 +89,7 @@ If you create a new line layer remember to change the geometry type into lines b
 ### Adding Ring to existing polygon layer
 
 - Clicking on ![](/fig/mActionToggleEditing.png) start `edit mode`.
-- Add Feature: `Add Ring`![](/fig/mActionAddRing.png) (e.g. map the inner courtyard of a building, or -  as shown in the video - create a cercle to mark an isle in the lake).
+- Add Feature: `Add Ring`![](/fig/mActionAddRing.png) (e.g. map the inner courtyard of a building, or -  as shown in the video - create a circle to mark an isle in the lake).
 - To open the `Advanced Digitizing Toolbar` go to `View > Toolboxes > Advanced Digitizing Toolbar`.
 - To add rectangles 'automatically' go to `View > Toolbars > Shape Digitizing Toolbar`.
 

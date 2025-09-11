@@ -33,7 +33,7 @@ In the `Browser Panel`, right-click on `XYZ Tiles` -> `New Connection`.
 
 Name| Info | URL |
 | ----- | --- | --- |
-|[OpenTopoMap](https://wiki.openstreetmap.org/wiki/OpenTopoMap)|Opensource topographic map based on OSM and SRTM|https://tile.opentopomap.org/{z}/{x}/{y}.png|
+|[OpenTopoMap](https://wiki.openstreetmap.org/wiki/OpenTopoMap)|Opensource topographic map based on OSM and SRTM |https://tile.opentopomap.org/{z}/{x}/{y}.png|
 |Google Terrain||https://mt1.google.com/vt/lyrs=t&x={x}&y={y}&z={z}|
 |Google Hybrid||https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}|
 |Google Satellite||https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}|
