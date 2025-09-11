@@ -67,8 +67,10 @@ icon__ at the bottom left of the screen (alternatively, open the Windows search
 function). Type __"System"__ on the keyboard, click on the entry __"System"__ in 
 the search results. Under the item __"System type"__ you can read the bit number.
 
-```{Note} 
+```{Note}
+
 Since QGIS 3.20 there are only 64-bit Windows executables.
+
 ```
 
 :::
@@ -81,9 +83,6 @@ For installation on Linux systems with `apt` you can install QGIS:
 sudo apt install qgis qgis-plugin-grass
 ```
 
-:::
-
-::::
 
 In the conventional apt package sources, an older version of QGIS will probably 
 be installed. If you are using the package source [Ubuntugis](https://launchpad.net/~ubuntugis/+archive/ubuntu/ppa), 
