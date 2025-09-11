@@ -25,15 +25,15 @@ Raster data can have the following data formats:
 | Filename extension  | Name                  | Description                                                                                                                                                          |
 |---------------------|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | .tif/.tiff/.geotiff | Tag Image File Format | Common raster and image data format. Does not necessarily have georeferenced information. If a .tif file has georeferenced information it is referred to as GeoTIFF. |
-| .nc                 | netCDF                | Standard data format for scientific data like speed or temperature. Can be be a raster file. Can contain multible datasets                                           |
-| .asc                | Esri ASCII Grid files | Old simple raster file format, always with georeferenced informations                                                                                                |
+| .nc                 | netCDF                | Standard data format for scientific data like speed or temperature. Can be be a raster file. Can contain multiple datasets                                           |
+| .asc                | Esri ASCII Grid files | Old simple raster file format, always with georeferenced information                                                                                                |
 
 ## Text data
 
- Filename extension| Name | Description |
-| ----- | --- | --- |
-|.csv|comma-separated values|Very common data format which separates data with commas or other delimiters.|
-|.xls|EXCEL|Data format used for EXCEL. EXCEL is a widely used spreadsheet program.|
+ | Filename extension | Name                   | Description                                                                   |
+ |--------------------|------------------------|-------------------------------------------------------------------------------|
+ | .xls               | EXCEL                  | Data format used for EXCEL. EXCEL is a widely used spreadsheet program.       |
+ | .csv               | comma-separated values | Very common data format which separates data with commas or other delimiters. |
 
 ## Good practices
 
