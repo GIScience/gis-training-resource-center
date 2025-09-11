@@ -24,7 +24,7 @@ If you cannot find a specific extension, check your capitalisation and correct u
 
 ## Manage Plugins
 
-If you are currently not using installed plugins it might be usefull to deacticate these plugins to avoid crowded toolbars and to reduce open panels. 
+If you are currently not using installed plugins it might be useful to deactivate these plugins to avoid crowded toolbars and to reduce open panels. 
 
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Manage_plugins.mp4"></video>
@@ -53,9 +53,8 @@ To download data from data and import it into your QGIS the plugin **QuickOSM** 
 ```{figure} /fig/managa_install_plugins.png
 ---
 width: 400px
-name: 
 align: center
-name: Manage and Install Plugins
+name: managa_install_plugins_wiki
 ---
 Manage and Install Plugins.
 ```
@@ -63,9 +62,8 @@ Manage and Install Plugins.
 ```{figure} /fig/install_quickosm.png
 ---
 width: 800px
-name: 
+name: install_quickosm_wiki
 align: center
-name: Installing QuickOSM
 ---
 Installing QuickOSM.
 ```
@@ -75,14 +73,13 @@ To launch the newly installed plugin, click on ![](fig/quickosmplugin.png) or cl
 
 Follow the steps to fetch for data:
 
-1. Select a Key and Value from the dropdown list. If you are unsure, check here: [taginfo](https://taginfo.openstreetmap.org). 
+1. Select a Key and Value from the dropdown list. If you are unsure, check here: [taginfo.openstreetmap.org](https://taginfo.openstreetmap.org). 
 
 ```{figure} /fig/key_value_quickosm.png
 ---
 width: 800px
-name: 
 align: center
-name: Choosing key and value
+name: key_value_quickosm_wiki
 ---
 Choosing key and value in QuickOSM.
 ```
@@ -94,9 +91,8 @@ Choosing key and value in QuickOSM.
 ```{figure} /fig/quickosm_usage.png
 ---
 width: 800px
-name: 
 align: center
-name: Running the QuickOSM plugin.
+name: quickosm_usage_wiki
 ---
 Running the QuickOSM plugin.
 ```

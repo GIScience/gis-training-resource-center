@@ -111,12 +111,12 @@ If you have to many items on your legend, and they don't fit on your map horizon
 
 ### Adding a scale bar
 
-Before adding a scale bar, select your main map and check in the __Item Properties__ panel that the __Scale__ fielld has a __round number__ 
+Before adding a scale bar, select your main map and check in the __Item Properties__ panel that the __Scale__ fielld has a __round number__.
 
 ```{figure} ../../fig/en_30.30.2_print_layout_scale.png
 ---
 width: 750px
-name: Round number for scale
+name: en_30.30.2_print_layout_scale_2
 ---
 Make sure that the scale is at a round number
 ```
@@ -134,7 +134,7 @@ _There are many other options to customize the scale bar (change the font, colou
 ```{figure} ../../fig/en_30.30.2_print_layout_add_scale_bar.png
 ---
 width: 750px
-name: Add scale bar
+name: en_30.30.2_print_layout_add_scale_bar_2
 ---
 Add and customize the scale bar
 ```
@@ -162,7 +162,7 @@ To create an overview map, you need to follow these steps:
 ```{figure} ../../fig/en_30.30.2_print_layout_overview_map_preparations.png
 ---
 width: 500px
-name: Overview map preparation
+name: en_30.30.2_print_layout_overview_map_preparations_2
 ---
 An overview map should show important landmarks and borders
 ```
@@ -171,7 +171,7 @@ An overview map should show important landmarks and borders
 ```{figure} ../../fig/en_30.30.2_print_layout_add_overview_map.png
 ---
 width: 750px
-name: Add Overview map
+name: en_30.30.2_print_layout_add_overview_map_2
 ---
 Add an overview map and __lock the layer__
 ```
@@ -180,9 +180,9 @@ Add an overview map and __lock the layer__
 ```{figure} ../../fig/en_30.30.2_print_layout_add_map_extent_overview_map.png
 ---
 width: 750px
-name: Create an Overview
+name: en_30.30.2_print_layout_add_map_extent_overview_map_2
 ---
-Add a the extent of the main map to your overview map (the red rectangle on the overview)
+Add the extent of the main map to your overview map (the red rectangle on the overview)
 ```
 
 :::{dropdown} Video: Setting up an overview map
@@ -284,6 +284,9 @@ For now the only item in the print layout that is being controlled by the Atlas 
 .mp4"></video>
 :::
 
-## Setting up Overview maps with an atlas
+
+### Setting up Overview maps with an atlas
 
 Setting up Overview maps with an atlas works in the same way as setting it up for a normal map. As long as you select the Map controlled by the atlas as the `map frame`, it will update automatically.
+
+

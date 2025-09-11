@@ -61,9 +61,8 @@ The folder structure template can be downloaded [__here__](https://github.com/GI
 ```{figure} /fig/Standard_project_folder_structure.drawio.svg
 ---
 width: 800px
-name: 
 align: center
-name: Standard folder structure
+name: Standard_project_folder_structure_wikki
 ---
 Standard folder structure. Source: 
 ```

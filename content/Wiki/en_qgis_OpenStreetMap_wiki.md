@@ -73,18 +73,16 @@ own query (f. e. for your bounding box):
 ```{figure} /fig/en_wizard_overpassturbo.png
 ---
 height: 250px
-name:
 align: center
-name: overpass_turbo_wizard
+name: en_wizard_overpassturbo_wiki
 ---
 Screenshot of the Wizard in overpass turbo
 ```
 ```{figure} /fig/en_wizard_result.png
 ---
 height: 250px
-name:
 align: center
-name: overpass_turbo_wizard_result
+name: en_wizard_result_wiki
 ---
 Screenshot of the result
 ```  
@@ -125,9 +123,8 @@ project.
 ```{figure} /fig/en_overpass_turbo_data.png
 ---
 height: 250px
-name:
 align: center
-name: overpass_turbo_data
+name: en_overpass_turbo_data_wiki
 ---
 Screenshot of how to export data in overpassturbo
 ```
@@ -140,9 +137,8 @@ By exporting the query as map, you can share your current view as link or image.
 ```{figure} /fig/en_overpass_turbo_map.png
 ---
 height: 150px
-name:
+name: en_overpass_turbo_map_wiki
 align: center
-name: overpass_turbo_map
 ---
 Screenshot of how to export map in overpassturbo
 ```
@@ -150,14 +146,13 @@ Screenshot of how to export map in overpassturbo
 
 :::{tab-item} Query
 By exporting your query you can get the text or convert it to an OverpassXML or 
-OverpassQL formated query.
+OverpassQL formatted query.
 
 ```{figure} /fig/en_overpass_turbo_query.png
 ---
 height: 250px
-name:
 align: center
-name: overpass_turbo_query
+name: en_overpass_turbo_query_wiki
 ---
 Screenshot of how to export query in overpassturbo
 ```
@@ -168,5 +163,6 @@ Screenshot of how to export query in overpassturbo
 ```{tip} 
 For more information, check out the [wiki](https://wiki.openstreetmap.org/wiki/Overpass_turbo).
 ```
-
+<!---
 ### Ohsome tools
+-->
