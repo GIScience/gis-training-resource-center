@@ -108,7 +108,7 @@ Side position near the passenger door
 ::::
 
 
-### Attach Gopro with suction mount
+### Attach GoPro with suction mount
 | Instructions                          | Notes                            |
 | :---------------------------------  | :--------------------------------- |
 |   1. Press suction cup **firmly** against windshield                         |    Make sure locking lever is in UP position            |
