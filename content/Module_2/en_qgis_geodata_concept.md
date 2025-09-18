@@ -354,7 +354,7 @@ geometries in your delimited text file.
 ---
 width: 600px 
 align: center
-name: Import delimited text
+name: en_import_delimeted_text
 ---
 Import delimited text in QGIS 3.36.
 ```
@@ -376,7 +376,7 @@ Excel. There you can check which delimiter is used to separate the information.
 ---
 width: 600px
 align: center
-name: Import delimited text - file format
+name: en_delimited_text_fileformat
 ---
 Import delimited text in QGIS 3.36 - file format.
 ```

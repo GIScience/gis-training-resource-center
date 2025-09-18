@@ -38,7 +38,7 @@ First, we need to extract the data from the PDF-file and save it to a `.csv`- fi
 
 :::{attention}
 
-This exercise makes use of the [tabula.technology tool](tabula.technology), an open source application which let's you easily extract tables from a PDF-file. Keep in mind that 
+This exercise makes use of the [tabula.technology tool](tabula.technology), an open source application which let's you easily extract tables from a PDF-file. Tabula requires you to have [Java](https://www.java.com/en/download/) installed on your device. 
 
 :::
 
@@ -107,7 +107,7 @@ Tabula is an open source application that let's you extract data tables from PDF
 
 ```{figure} /fig/en_tabula_website.png
 ---
-name: tabula_website
+name: en_tabula_website
 width: 550 px
 ---
 The Tabula.technology website with the download links to the left
@@ -118,7 +118,7 @@ The Tabula.technology website with the download links to the left
 
 ```{figure} /fig/en_tabula_folder.png
 ---
-name: Tabula_folder
+name: en_tabula_folder
 width: 450 px
 ---
 
@@ -129,7 +129,7 @@ width: 450 px
 
 ```{figure} /fig/en_tabula_import.png
 ---
-name: Tabula_import
+name: en_tabula_import
 width: 550 px
 ---
 
@@ -141,7 +141,7 @@ width: 550 px
 
 ```{figure} /fig/en_Tabula_main_view.png
 ---
-name: Tabula_main_view
+name: en_Tabula_main_view
 width: 550 px
 ---
 
@@ -151,7 +151,7 @@ width: 550 px
 
 ```{figure} /fig/en_tabula_selection.png
 ---
-name: tabula_selection
+name: en_tabula_selection
 width: 550 px
 ---
 
@@ -164,7 +164,7 @@ width: 550 px
 
 ```{figure} /fig/en_tabula_preview_extracted_1.png
 ---
-name: tabule_preview_1
+name: en_tabula_preview_extracted_1
 width: 550 px
 ---
 
@@ -174,7 +174,7 @@ width: 550 px
 
 ```{figure} /fig/en_tabula_data_preview.png
 ---
-name: tabula_data_preview
+name: en_tabula_data_preview
 width: 550 px
 ---
 
@@ -200,7 +200,7 @@ The necessary steps to filter the data might be different depending on the edito
 
 ```{figure} /fig/en_tabula_csv_excel.png
 ---
-name: tabula_csv_excel
+name: en_tabula_csv_excel
 width: 300 px
 ---
 
@@ -215,7 +215,7 @@ In the web version of excel, you can fix the columns by selecting column A, navi
 
 ```{figure} /fig/en_m5_data_cleaning_ex_task2.png
 ---
-name: formatted_csv_excel_web
+name: en_m5_data_cleaning_ex_task2
 width: 450 px
 ---
 The data table should now look like this. It is still missing column headers (red)
@@ -239,7 +239,7 @@ Now we have a usable .csv file with the information. However, there are still so
 ::::{grid-item}
 :::{figure} /fig/en_m5_data_cleaning_ex_filter_excel.png
 ---
-name: data_cleaning_fiter_excel
+name: en_m5_data_cleaning_ex_filter_excel
 width: 350 px
 ---
 :::
@@ -247,7 +247,7 @@ width: 350 px
 ::::{grid-item}
 :::{figure} /fig/en_m5_data_cleaning_ex_filter_excel_2.png
 ---
-name: data_cleaning_filter_excel_2
+name: en_m5_data_cleaning_ex_filter_excel_2
 width: 350 px
 ---
 :::
