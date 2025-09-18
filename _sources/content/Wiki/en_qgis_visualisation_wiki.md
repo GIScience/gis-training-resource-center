@@ -3,7 +3,7 @@
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-## Visualisation of Vector data
+## Visualising vector data
 
 ### Symbology
 
@@ -341,7 +341,7 @@ Sometimes the placement of labels is not ideal and can obstruct the readability 
 
 ---
 
-## Visualisation of Raster data
+## Visualising raster data
 
 ### Assigning a colour gradient to raster data
 
@@ -368,7 +368,7 @@ In the colour ramp selector, you can adjust each colour step. On the bottom, you
 Elevation data sets are frequently used to communicate the terrain on a map. By default, an elevation model will be displayed with a gray colour ramp. However, if you don't need the to know the elevation at certain points, you can choose to display the __hillshade__ of the terrain. Hillshading will simulate the shadow of the terrain as if it would be exposed to a lightsource. In this example, we will use the elevation raster data (.tiff) of Algeria from the Humanitarian Data Exchange platform (humdata.org) To achieve this,
 
  1. Open the `symbology` tab
- 2. Click on `Render type` and select `Hillshade`. You will have an option to select the direction of the light. Conventionally, the lightsource is positioned in the North-West, so we can keep the default settings. In some cases with rough terrain, it can be useful to make the Hillshade __Multidirectional__.
+ 2. Click on `Render type` and select `Hillshade`. You will have an option to select the direction of the light. Conventionally, the light-source is positioned in the North-West, so we can keep the default settings. In some cases with rough terrain, it can be useful to make the Hillshade __Multidirectional__.
  3. The Hillshade will be very dark and cover most of the map. We need to make it lighter...
 
 <!--ADD: Video-->

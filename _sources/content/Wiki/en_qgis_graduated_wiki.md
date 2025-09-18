@@ -7,10 +7,10 @@ Graduated classification in GIS involves categorizing spatial data into classes 
 
 Graduated classification is used for quantitative data usually __interval__ or __ratio__ scaled.
 
-| Data Scale                  | Definition                                               | Example                     | Typical Data Format  |
-|-----------------------------|----------------------------------------------------------|-----------------------------|----------------------|
-| Interval Scale               | Equal intervals between values, no true zero point       | Temperature (Celsius)       | Float (44.5 Degree)                |
-| Ratio Scale                  | Equal intervals with a true zero point                    | Population, Length, Number of trees          | Integer (5 Trees) or Float (12.5 km of Road)     |
+| Data Scale     | Definition                                         | Example                             | Typical Data Format                          |
+|----------------|----------------------------------------------------|-------------------------------------|----------------------------------------------|
+| Interval Scale | Equal intervals between values, no true zero point | Temperature (Celsius)               | Float (44.5 Degree)                          |
+| Ratio Scale    | Equal intervals with a true zero point             | Population, Length, Number of trees | Integer (5 Trees) or Float (12.5 km of Road) |
 
 To classify quantitative data there are many methods how to set up the classes. There is no single best way to select a method or to decide how many classes you like to use. It all comes down to what you want to show.
 

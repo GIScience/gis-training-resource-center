@@ -12,7 +12,7 @@
 
 ```{figure} /fig/en_qgis_banner_website.png
 ---
-name: qgis_banner
+name: en_qgis_banner_website
 width: 300 px
 align: right
 ---
@@ -123,7 +123,7 @@ A QGIS project file has the format ending `.qgz`.
 ```{figure} /fig/en_project_template_BRC.png
 ---
 height: 400
-name: Project Template
+name: en_project_template_BRC
 align: center
 ---
 ```
@@ -150,7 +150,7 @@ When you hover with your mouse cursor over icons, text will appear which explain
 ---
 width: 800px 
 align: center
-name: QGIS User Interface
+name: en_QGIS_GUI
 ---
 QGIS User Interface. Source: BRC
 ```
@@ -162,7 +162,7 @@ QGIS User Interface. Source: BRC
 ```{figure} /fig/en_Interface_02.png
 ---
 height: 75 px
-name: Toolbox button
+name: en_Interface_02
 align: center
 ---
 ```
@@ -296,7 +296,7 @@ To move on the map canvas with your mouse cursor you need to toggle the hand but
 
 :::{image} /fig/qgis_move_symbol.png
 ---
-name: move_symbol
+name: qgis_move_symbol
 height: 40 px
 ---
 :::

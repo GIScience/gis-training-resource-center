@@ -187,7 +187,7 @@ Follow the steps to fetch for data:
 ---
 width: 800px
 align: center
-name: Choosing key and value
+name: key_value_quickosm
 ---
 Choosing key and value in QuickOSM.
 ```
@@ -203,9 +203,8 @@ Choosing key and value in QuickOSM.
 ```{figure} /fig/quickosm_usage.png
 ---
 width: 800px
-name: 
+name: quickosm_usage
 align: center
-name: Running the QuickOSM plugin.
 ---
 Running the QuickOSM plugin.
 ```
@@ -265,7 +264,7 @@ The HOT Export Tool.
 ---
 height: 400px
 align: center
-name: HOT Export Tool Example
+name: hot_export_example
 ---
 An Example for the HOT Export Tool.
 ```
@@ -277,7 +276,7 @@ An Example for the HOT Export Tool.
 ---
 height: 400px
 align: center
-name: HOT Export Tool running
+name: hot_export_running
 ---
 The HOT Export Tool is running.
 ```
@@ -289,7 +288,7 @@ The HOT Export Tool is running.
 ---
 height: 400px
 align: center
-name: HOT Export Tool done
+name: hot_export_done
 ---
 Downloading data from HOT Export Tool.
 ```
