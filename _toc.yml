@@ -123,7 +123,6 @@ parts:
       - file: content/Wiki/en_qgis_common_errors_and_Issues.md   
       - file: content/Wiki/en_web_and_mobile_apps_wiki.md
       - file: content/Wiki/en_geodata_management_sharepoint.md
-      - file: content/Wiki/en_licensing_data.md
   - caption: GIS in Anticipatory Action
     chapters:
       - file: content/GIS_AA/en_qgis_cyclone_trigger_madagascar.md
