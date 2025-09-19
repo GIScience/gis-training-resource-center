@@ -26,19 +26,20 @@ Since QGIS 3.20 there are only 64-bit Windows executables.
 
 
 ```{Note} 
-From version 3.30 SAGA must be integrated via plugin.
+From version 3.30 SAGA must be integrated via the [plugin installer](/content/wiki/plugin).
 ```
 
 ## Linux specific considerations
 
-```{Note} 
-From version 3.30 SAGA must be integrated via plugin.
-```
-
-For installation on Linux systems with apt you can install QGIS:
+You can install QGIS on Linux system through `apt` using:  
 
 ```
 sudo apt install qgis qgis-plugin-grass
 ```
 
-If you install a QGIS version 3.30 or higher you have to install the plugin _Processing Saga NextGen Provider_ . 
+```{Note} 
+From version 3.30 SAGA must be integrated via the [plugin installer](/content/wiki/en_qgis_plugins_wiki.md).
+```
+
+
+

@@ -2,6 +2,7 @@
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-## Subsection to be created:
-* Spatial Joins
-* Non-Spatial Joins
+## Subsections:
+* [Spatial Joins](/content/wiki/en_qgis_spatial_joins_wiki.md)
+* [Non-Spatial Joins](/content/wiki/en_qgis_non_spatial_joins_wiki.md)
+
