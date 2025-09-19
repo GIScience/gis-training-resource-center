@@ -9,8 +9,16 @@ The attributes of geospatial data are stored in a specific column within the att
 
 ```{figure} /fig/classification_basic.drawio.png
 ---
-width: 900px
-name: basic classification
+width: 700px
+name: classification_basic_wiki
 align: center
 ---
 ```
+
+QGIS offers several ways to classify geodata:
+
+- [Single-symbol classification](/content/wiki/en_qgis_single_symbol_wiki.md)
+- [Categorised classification](/content/wiki/en_qgis_categorized_wiki.md)
+- [Graduated Classification](/content/wiki/en_qgis_graduated_wiki.md)
+
+
