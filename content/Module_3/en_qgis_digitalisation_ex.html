@@ -275,7 +275,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_OpenStreetMap_wiki.html">OpenStreetMap (OSM) Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_layer_concept_wiki.html">Layer Concept</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_attribute_table_wiki.html">Attribute Table in QGIS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_digitalization_wiki.html">Digitisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_digitisation_wiki.html">Digitisation</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_data_classification_wiki.html">Geodata Classification</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -651,7 +651,7 @@ document.write(`
 <ul class="simple">
 <li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_interface_wiki.html"><span class="doc std std-doc">QGIS Interface</span></a></p></li>
 <li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_geodata_types_wiki.html"><span class="doc std std-doc">Types of Geodata</span></a></p></li>
-<li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_digitalization_wiki.html"><span class="doc std std-doc">Digitization</span></a></p></li>
+<li><p class="sd-card-text"><span class="xref myst">Digitization</span></p></li>
 <li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_basemaps_wiki.html"><span class="doc std std-doc">Basemaps</span></a></p></li>
 </ul>
 </div>
@@ -729,7 +729,7 @@ Arrange your layer in the <code class="docutils literal notranslate"><span class
 <li><p>In the <code class="docutils literal notranslate"><span class="pre">OSM</span> <span class="pre">place</span> <span class="pre">search</span></code> panel, search “Abuja Central Business District” and choose Abuja Municipality Area Council, City. Zoom to the Central Business District. We want to digitise the location of banks in this region.
 For this, we will need to create a new point layer:</p>
 <ol class="arabic simple">
-<li><p>Click on  <code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">GeoPackage</span> <span class="pre">Layer</span></code>(<a class="reference internal" href="../Wiki/en_qgis_digitalization_wiki.html"><span class="doc std std-doc">Wiki Video</span></a>)</p></li>
+<li><p>Click on  <code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">GeoPackage</span> <span class="pre">Layer</span></code>(<span class="xref myst">Wiki Video</span>)</p></li>
 </ol>
 <ul class="simple">
 <li><p>Under <code class="docutils literal notranslate"><span class="pre">Database</span></code> click on <img alt="" src="../../_images/Three_points.png" /> and navigate to <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder in your project folder. Give the new dataset the name “Abuja_bank_point”. Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
@@ -786,7 +786,7 @@ For this, we will need to create a new point layer:</p>
 <p>There is some reliable information that there is a roadblock due to construction at the junction of “Independent Avenue” and ‘“Tafawa Balewa Way”. To visualise this on our map we want to create a polygon of this roadblock.  The Polygon should cover the entire junction.</p>
 <ol class="arabic simple">
 <li><p>To do that we need again a new layer. In this case a polygon layer. The creation is basically the same as for the point.
-1. Click on  <code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">GeoPackage</span> <span class="pre">Layer</span></code>(<a class="reference internal" href="../Wiki/en_qgis_digitalization_wiki.html"><span class="doc std std-doc">Wiki</span></a>)</p>
+1. Click on  <code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">GeoPackage</span> <span class="pre">Layer</span></code>(<span class="xref myst">Wiki</span>)</p>
 <ol class="arabic simple">
 <li><p>Under <code class="docutils literal notranslate"><span class="pre">Database</span></code> click on <img alt="" src="../../_images/Three_points.png" /> and navigate to <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder. Give the new dataset the name “Abuja_roadbloc_polygon”. Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">type</span></code>: Select <code class="docutils literal notranslate"><span class="pre">Polygon</span></code></p></li>
@@ -802,7 +802,7 @@ For this, we will need to create a new point layer:</p>
 <li><p>Your new layer will appear in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code></p></li>
 </ol>
 </li>
-<li><p>To digitise this area, click on your new „Abuja_roadbloc_polygon“ layer (<a class="reference internal" href="../Wiki/en_qgis_digitalization_wiki.html"><span class="doc std std-doc">Wiki</span></a>).</p>
+<li><p>To digitise this area, click on your new „Abuja_roadbloc_polygon“ layer (<span class="xref myst">Wiki</span>).</p>
 <ul class="simple">
 <li><p>Clicking on <img alt="" src="../../_images/mActionToggleEditing.png" /> start <code class="docutils literal notranslate"><span class="pre">edit</span> <span class="pre">mode</span></code> and Add Feature: <code class="docutils literal notranslate"><span class="pre">Capture</span> <span class="pre">Polygone</span></code><img alt="" src="../../_images/mActionCapturePolygon.png" />|.</p></li>
 <li><p>Draw geometries and enter <code class="docutils literal notranslate"><span class="pre">feature</span> <span class="pre">attributes</span></code>, “Roadblock_type” = “Construction_site”.</p></li>
@@ -817,7 +817,7 @@ For this, we will need to create a new point layer:</p>
 <p>Create a road line layer that will allow him to get to Zenith Bank easily.</p>
 <ol class="arabic">
 <li><p>To do that we need again a new layer. In this case a line layer. The creation of that is nearly the same as for the point.
-1. Click on  <code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">GeoPackage</span> <span class="pre">Layer</span></code>(<a class="reference internal" href="../Wiki/en_qgis_digitalization_wiki.html"><span class="doc std std-doc">Wiki</span></a>)</p>
+1. Click on  <code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">GeoPackage</span> <span class="pre">Layer</span></code>(<span class="xref myst">Wiki</span>)</p>
 <ul>
 <li><p>Under <code class="docutils literal notranslate"><span class="pre">Database</span></code> click on <img alt="" src="../../_images/Three_points.png" /> and navigate to <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder. Give the new dataset the name “Abuja_bank_road_connection_line”. Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">type</span></code>: Select <code class="docutils literal notranslate"><span class="pre">Line</span></code>.</p></li>
@@ -840,7 +840,7 @@ For this, we will need to create a new point layer:</p>
 <li><p>Your new layer will appear in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code></p></li>
 </ul>
 </li>
-<li><p>Select the line layer “Abuja_bank_road_connection_line” to add data to in the Layer panel <a class="reference internal" href="../Wiki/en_qgis_digitalization_wiki.html"><span class="doc std std-doc">Wiki</span></a>.</p>
+<li><p>Select the line layer “Abuja_bank_road_connection_line” to add data to in the Layer panel <span class="xref myst">Wiki</span>.</p>
 <ol class="arabic simple">
 <li><p>Go to the digitalization toolbar and click on<img alt="" src="../../_images/mActionToggleEditing.png" />. Now the layer is in the editing mode.</p></li>
 <li><p>Click on <img alt="" src="../../_images/mActionCaptureLine.png" />.</p></li>
