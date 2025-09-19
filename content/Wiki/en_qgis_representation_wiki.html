@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Map making and visualisation in QGIS &#8212; GIS Resource Training Center</title>
+    <title>Visualisation and Map Making in QGIS &#8212; GIS Resource Training Center</title>
   
   
   
@@ -266,7 +266,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_basemaps_wiki.html">Basemaps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_plugins_wiki.html">Plugins</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_data_sources_wiki.html">Data sources</a></li>
-<li class="toctree-l2"><a class="reference internal" href="en_licensing_data.html">Data Licensing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_licensing_data.html">Data Licenses (working with licensed datasets)</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="en_qgis_geodata_wiki.html">Geodata</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -292,21 +292,21 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_non_spatial_queries_wiki.html">Non-Spatial Queries</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="en_qgis_table_functions_wiki.html">Table function</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="en_qgis_joins_wiki.html">Joins</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1"><a class="reference internal" href="en_qgis_table_functions_wiki.html">Manipulating the Attribute Table (Table functions)</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="en_qgis_joins_wiki.html">Joining Geodata (Spatial and non-spatial joins)</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_spatial_joins_wiki.html">Spatial Joins</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_non_spatial_joins_wiki.html">Non-Spatial Joins</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="en_qgis_raster_wiki.html">Raster</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_raster_basic_wiki.html">Basic Raster operations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_raster_basic_wiki.html">Basic Raster Operations</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="en_qgis_automatisation_wiki.html">Automatisation in QGIS</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_model_builder_wiki.html">Model Builder</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Map making and visualisation in QGIS</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Visualisation and Map Making in QGIS</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_visualisation_wiki.html">Visualisation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_map_making_wiki.html">The Print Layout Composer</a></li>
 </ul>
@@ -540,7 +540,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -551,11 +553,19 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Map making and visualisation in QGIS</h1>
+    <h1>Visualisation and Map Making in QGIS</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subsections">Subsections</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -565,9 +575,16 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="map-making-and-visualisation-in-qgis">
-<h1>Map making and visualisation in QGIS<a class="headerlink" href="#map-making-and-visualisation-in-qgis" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="visualisation-and-map-making-in-qgis">
+<h1>Visualisation and Map Making in QGIS<a class="headerlink" href="#visualisation-and-map-making-in-qgis" title="Permalink to this heading">#</a></h1>
 <p><strong>🔙<a class="reference internal" href="../intro.html"><span class="doc std std-doc">Back to Homepage</span></a></strong></p>
+<section id="subsections">
+<h2>Subsections<a class="headerlink" href="#subsections" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><span class="xref myst">Visualisation of geodata in QGIS</span></p></li>
+<li><p><span class="xref myst">The Print Layout Composer</span></p></li>
+</ul>
+</section>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -626,6 +643,20 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subsections">Subsections</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

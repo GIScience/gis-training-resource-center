@@ -2,6 +2,6 @@
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-## Subsection to be created:
-* Spatial Queries
-* Non-spatial Queries
+## Subsection:
+* [Spatial Queries](/content/wiki/en_qgis_spatial_queries_wiki.md)
+* [Non-spatial Queries](/content/wiki/en_qgis_non_spatial_queries_wiki.md)

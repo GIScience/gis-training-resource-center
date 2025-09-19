@@ -266,7 +266,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_basemaps_wiki.html">Basemaps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_plugins_wiki.html">Plugins</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_data_sources_wiki.html">Data sources</a></li>
-<li class="toctree-l2"><a class="reference internal" href="en_licensing_data.html">Data Licensing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_licensing_data.html">Data Licenses (working with licensed datasets)</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="en_qgis_geodata_wiki.html">Geodata</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -292,21 +292,21 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_non_spatial_queries_wiki.html">Non-Spatial Queries</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="en_qgis_table_functions_wiki.html">Table function</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="en_qgis_joins_wiki.html">Joins</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="en_qgis_table_functions_wiki.html">Manipulating the Attribute Table (Table functions)</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="en_qgis_joins_wiki.html">Joining Geodata (Spatial and non-spatial joins)</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_spatial_joins_wiki.html">Spatial Joins</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Non-Spatial Joins</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="en_qgis_raster_wiki.html">Raster</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_raster_basic_wiki.html">Basic Raster operations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_raster_basic_wiki.html">Basic Raster Operations</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="en_qgis_automatisation_wiki.html">Automatisation in QGIS</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_model_builder_wiki.html">Model Builder</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="en_qgis_representation_wiki.html">Map making and visualisation in QGIS</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="en_qgis_representation_wiki.html">Visualisation and Map Making in QGIS</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_visualisation_wiki.html">Visualisation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_map_making_wiki.html">The Print Layout Composer</a></li>
 </ul>
@@ -584,7 +584,7 @@ document.write(`
 <li><p>Adds attributes of a non-spatial table to the layer</p></li>
 <li><p>Join using a field that is present in both data sets</p></li>
 </ul>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Example: Add population figures from a table to the states layer<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
@@ -593,7 +593,8 @@ Example: Add population figures from a table to the states layer<div class="sd-s
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_non_spatial_join_wiki.mp4"></video></p>
 </div>
-</details><div class="admonition hint">
+</details><hr class="docutils" />
+<div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>If a table join does not work via the <strong>Join attributes by field value</strong> tool, a join can also be performed via the <strong>layer properties</strong> (<code class="docutils literal notranslate"><span class="pre">right-click</span></code>, <code class="docutils literal notranslate"><span class="pre">Properties</span></code>) under the <code class="docutils literal notranslate"><span class="pre">Join</span></code> tab.</p>
 </div>
