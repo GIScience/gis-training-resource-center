@@ -94,7 +94,7 @@ parts:
           - file: content/Wiki/en_qgis_OpenStreetMap_wiki.md
           - file: content/Wiki/en_qgis_layer_concept_wiki.md
           - file: content/Wiki/en_qgis_attribute_table_wiki.md
-          - file: content/Wiki/en_qgis_digitalization_wiki.md   
+          - file: content/Wiki/en_qgis_digitisation_wiki.md   
       - file: content/Wiki/en_qgis_data_classification_wiki.md
         sections:
           - file: content/Wiki/en_qgis_single_symbol_wiki.md
