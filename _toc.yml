@@ -98,7 +98,7 @@ parts:
       - file: content/Wiki/en_qgis_data_classification_wiki.md
         sections:
           - file: content/Wiki/en_qgis_single_symbol_wiki.md
-          - file: content/Wiki/en_qgis_categorized_wiki.md
+          - file: content/Wiki/en_qgis_categorised_wiki.md
           - file: content/Wiki/en_qgis_graduated_wiki.md
       - file: content/Wiki/en_qgis_geoprocessing_wiki.md
       - file: content/Wiki/en_qgis_queries_wiki.md
