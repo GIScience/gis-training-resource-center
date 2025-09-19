@@ -1,4 +1,4 @@
-## Categorized classification
+## Categorised classification
 
 
 __🔙[Back to Homepage](/content/intro.md)__
