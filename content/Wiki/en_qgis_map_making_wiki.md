@@ -1,4 +1,4 @@
-# Map making Wiki
+# The Print Layout Composer
 
 ## Adding elements to the print layout
 
@@ -118,7 +118,7 @@ Before adding a scale bar, select your main map and check in the __Item Properti
 width: 750px
 name: en_30.30.2_print_layout_scale_2
 ---
-Make sure that the scale is at a round number
+Make sure that the scale is at a round number.
 ```
 
 To add a scale bar, you can use the __add scale bar__ button on the __left toolbar__. In the __Item Properties__ panel, customize the following functions
@@ -136,7 +136,7 @@ _There are many other options to customize the scale bar (change the font, colou
 width: 750px
 name: en_30.30.2_print_layout_add_scale_bar_2
 ---
-Add and customize the scale bar
+Adding and customising the scale bar.
 ```
 :::{dropdown}
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_print_layout_adding_scalebar
@@ -164,7 +164,7 @@ To create an overview map, you need to follow these steps:
 width: 500px
 name: en_30.30.2_print_layout_overview_map_preparations_2
 ---
-An overview map should show important landmarks and borders
+An overview map should show important landmarks and borders.
 ```
 
 
@@ -173,7 +173,7 @@ An overview map should show important landmarks and borders
 width: 750px
 name: en_30.30.2_print_layout_add_overview_map_2
 ---
-Add an overview map and __lock the layer__
+Adding an overview map and __locking the layers__
 ```
 
 
@@ -260,7 +260,7 @@ If you save templates here, you can load templates directly through the layout m
 You can also add file paths in the QGIS-template setting
 ```
 
-## Generate an Atlas
+## Generating an Atlas
 
 An Atlas will generate a new page with the same map layout for each feature in a layer. For most purposes, it useful to first create a map layout with the elements such as legend, sources and overview map and then insert the map item that will be controlled by the Atlas. To generate an Atlas:
 

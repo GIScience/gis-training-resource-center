@@ -96,6 +96,7 @@ ___
 
 To move on the map canvas with your mouse cursor you need to toggle the hand button. 
 
+
 ![](/fig/qgis_move_symbol.png)
 
 You can also move on the map canvas with arrow keys on your keyboard.
