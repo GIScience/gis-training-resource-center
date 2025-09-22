@@ -77,9 +77,9 @@ name: model_buffer
 Selection of Buffer algorithm
 ```
 
-When we double-click on it, the Buffer Algorithm window appears. The algorithm window looks a bit different than when using the algorithm outside the model builder. The main difference is that you have to specify the algorithm input as either being one of the __model inputs__ you have defined or an __output of another algorithm__. By selecting the output of another algorithm, you can effectively chain different 
+When we double-click on it, the Buffer Algorithm window appears. The algorithm window looks a bit different than when using the algorithm outside the model builder. The main difference is that you have to specify the algorithm input as either being one of the __model inputs__ you have defined or an __output of another algorithm__. By selecting the output of another algorithm, you can effectively chain multiple analysis steps into each other to create a complex workflow. In our case, we want to select the road infrastructure input as the input for the buffer algorithm. Next, we want to specify the buffer size. The units of measurements will be the same as for the project CRS. Enter 200,000. This will instruct the algorithm to create a 
 
-
+Once you have added the 
 
 
 ### Tips and Tricks when working in the model designer
