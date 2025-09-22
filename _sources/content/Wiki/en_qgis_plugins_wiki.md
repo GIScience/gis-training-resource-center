@@ -8,7 +8,7 @@ There are numerous extensions for QGIS, also called plugins, which provide exten
 Plugins in QGIS are useful additional tools you can use to make some tasks easier. Plugins are written by QGIS developers and other independent users who want to extend the core functionality of the software. These plugins are made available in QGIS for all the users for free. Once installed, plugins remain available in QGIS. 
 
 ```{Note}
-You don’t have to reinstall them for every new project
+You don’t have to reinstall plugins for every new project.
 ```
 
 ## Installation of plugins
