@@ -12,7 +12,8 @@ Working with raster data is inherently different from working with vector data. 
 
 __Chapter__ | __Competences & Objectives__ |
 | ----------- | ---------------------------- |
-| __[Chapter 1: Raster Theory](/content/Module_8/en_qgis_raster_theory.md)__ | Understand how to work with raster data; know what to keep in mind when working with raster data; Know practical tools to work with raster data in QGIS. |
+| __[Chapter 1: Raster Theory](/content/Module_8/en_qgis_raster_theory.md)__ | Understand how to work with raster data; know what to keep in mind when working with raster data. |
+| __[Chapter 2: Common Raster Operations](/content/Module_8/en_qgis_raster_operations.md)__ | Understand how to use practical tools to work with raster data in QGIS; Know what to consider when working with multiple raster layers. | 
 | __[Chapter 2: Remote Sensing](/content/Module_8/en_qgis_remote_sensing_theory.md)__ | Know about remote sensing; Understand the basics about the interaction of electromagnetic radiation and the earths surface; Understand how different frequency bands can be combined to generate new information (e.g., NDVI). |
 | __[Exercise 1: Basic Assessment of Flood Exposure in the Indus Basin in Pakistan](/content/Module_8/en_qgis_module_8_ex1.md)__ | | 
 
