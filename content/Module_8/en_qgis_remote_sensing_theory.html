@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>8.2. Introduction to Remote Sensing and Remote Sensing Data &#8212; GIS Resource Training Center</title>
+    <title>8.3. Introduction to Remote Sensing and Remote Sensing Data &#8212; GIS Resource Training Center</title>
   
   
   
@@ -65,8 +65,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/Module_8/en_qgis_remote_sensing_theory';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="8.3. Raster data Exercise 1: Basic Assessment of Flood Exposure in the Indus Basin in Pakistan" href="en_qgis_module_8_ex1.html" />
-    <link rel="prev" title="8.1. Remote Sensing and Raster data theory 🛰️" href="en_qgis_remote_sensing_raster_theory.html" />
+    <link rel="next" title="8.4. Raster data Exercise 1: Basic Assessment of Flood Exposure in the Indus Basin in Pakistan" href="en_qgis_module_8_ex1.html" />
+    <link rel="prev" title="8.2. Common Raster Operations" href="en_qgis_raster_operations.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -234,8 +234,9 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="en_module_8_overview.html">8. Remote Sensing and Raster Data</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_remote_sensing_raster_theory.html">8.1. Remote Sensing and Raster data theory 🛰️</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">8.2. Introduction to Remote Sensing and Remote Sensing Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_module_8_ex1.html">8.3. Raster data Exercise 1: Basic Assessment of Flood Exposure in the Indus Basin in Pakistan</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_raster_operations.html">8.2. Common Raster Operations</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">8.3. Introduction to Remote Sensing and Remote Sensing Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_module_8_ex1.html">8.4. Raster data Exercise 1: Basic Assessment of Flood Exposure in the Indus Basin in Pakistan</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Module_9/en_module_9_overview.html">9. Network Analysis</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -563,11 +564,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-remote-sensing">8.2.1. What is Remote Sensing?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#electromagnetic-radiation-and-its-interaction-with-the-earths-surface">8.2.2. Electromagnetic Radiation and its interaction with the Earths Surface</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#remote-sensing-sensors-and-platforms">8.2.3. Remote Sensing Sensors and Platforms</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#attributes-of-remote-sensing-data">8.2.4. Attributes of Remote Sensing Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visulisation-of-multi-spectral-remote-sensing-data">8.2.5. Visulisation of Multi Spectral Remote Sensing Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-remote-sensing">8.3.1. What is Remote Sensing?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#electromagnetic-radiation-and-its-interaction-with-the-earths-surface">8.3.2. Electromagnetic Radiation and its interaction with the Earths Surface</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#remote-sensing-sensors-and-platforms">8.3.3. Remote Sensing Sensors and Platforms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#attributes-of-remote-sensing-data">8.3.4. Attributes of Remote Sensing Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visulisation-of-multi-spectral-remote-sensing-data">8.3.5. Visulisation of Multi Spectral Remote Sensing Data</a></li>
 </ul>
             </nav>
         </div>
@@ -591,14 +592,14 @@ document.write(`
 </div>
 </div>
 <section class="tex2jax_ignore mathjax_ignore" id="introduction-to-remote-sensing-and-remote-sensing-data">
-<h1><span class="section-number">8.2. </span>Introduction to Remote Sensing and Remote Sensing Data<a class="headerlink" href="#introduction-to-remote-sensing-and-remote-sensing-data" title="Permalink to this heading">#</a></h1>
+<h1><span class="section-number">8.3. </span>Introduction to Remote Sensing and Remote Sensing Data<a class="headerlink" href="#introduction-to-remote-sensing-and-remote-sensing-data" title="Permalink to this heading">#</a></h1>
 <section id="what-is-remote-sensing">
-<h2><span class="section-number">8.2.1. </span>What is Remote Sensing?<a class="headerlink" href="#what-is-remote-sensing" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">8.3.1. </span>What is Remote Sensing?<a class="headerlink" href="#what-is-remote-sensing" title="Permalink to this heading">#</a></h2>
 <p>Remote sensing can be defined as the set of methods used to obtain information about the Earth’s surface by measuring and interpreting the energy radiated from it. The electromagnetic radiation reflected or emitted by the Earth serves as a carrier of information about the state of the Earth’s surface. <br></p>
 <p>The information provided by the radiation emitted from the Earth’s surface can be measured by sensors mounted on vehicles such as drones, aircraft or satellites, and then stored in the form of gridded image data. A simple form of remote sensing data is an ordinary aerial photograph taken, for example, by a drone. The radiation measured and stored in the form of a grid (in this case a photograph) is the visible spectrum of electromagnetic radiation emitted by the Earth’s surface and the objects on it.<br></p>
 </section>
 <section id="electromagnetic-radiation-and-its-interaction-with-the-earths-surface">
-<h2><span class="section-number">8.2.2. </span>Electromagnetic Radiation and its interaction with the Earths Surface<a class="headerlink" href="#electromagnetic-radiation-and-its-interaction-with-the-earths-surface" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">8.3.2. </span>Electromagnetic Radiation and its interaction with the Earths Surface<a class="headerlink" href="#electromagnetic-radiation-and-its-interaction-with-the-earths-surface" title="Permalink to this heading">#</a></h2>
 <figure class="align-right" id="electromagnetic-spectrum-raster">
 <a class="reference internal image-reference" href="../../_images/en_m8_rs_spectrum.png"><img alt="../../_images/en_m8_rs_spectrum.png" src="../../_images/en_m8_rs_spectrum.png" style="width: 350px;" /></a>
 </figure>
@@ -616,7 +617,7 @@ Signatures vary with variations in an object/surface’s material composition, s
 <p>By analysing these spectral signatures it is possible to identify and classify surface features and materials from aerial or satellite imagery. Applications include classification of land cover types, monitoring environmental changes such as deforestation or anthropogenic processes such as urban expansion</p>
 </section>
 <section id="remote-sensing-sensors-and-platforms">
-<h2><span class="section-number">8.2.3. </span>Remote Sensing Sensors and Platforms<a class="headerlink" href="#remote-sensing-sensors-and-platforms" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">8.3.3. </span>Remote Sensing Sensors and Platforms<a class="headerlink" href="#remote-sensing-sensors-and-platforms" title="Permalink to this heading">#</a></h2>
 <p>The main source of electromagnetic radiation on Earth is the Sun, whose reflected radiation is also the dominant source of information for remote sensing imagery in general. Sensors can measure this electromagnetic radiation in specific ranges, called “bands”, which are usually represented individually by a raster file when acquiring remote sensing data. <br></p>
 <p>For example, the standard data from the Landsat 8 satellite mission, which is one of the most commonly used datasets, has X different bands ranging from X over X to X.</p>
 <!--FIX: X and X to X-->
@@ -630,7 +631,7 @@ Signatures vary with variations in an object/surface’s material composition, s
 <p>Examples of passive remote sensing include radar sensors that emit microwave radiation or LiDAR sensors that emit laser beams. However, the vast majority of remote sensing data is generated using active remote sensing.</p>
 </section>
 <section id="attributes-of-remote-sensing-data">
-<h2><span class="section-number">8.2.4. </span>Attributes of Remote Sensing Data<a class="headerlink" href="#attributes-of-remote-sensing-data" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">8.3.4. </span>Attributes of Remote Sensing Data<a class="headerlink" href="#attributes-of-remote-sensing-data" title="Permalink to this heading">#</a></h2>
 <p>All general attributes of raster data, such as spatial resolution, extent or the CRS used, presented in the previous module, also apply to remote sensing data, as it is a subcategory of raster data. However, a large proportion of remotely sensed data generally have three more important attributes:</p>
 <ul class="simple">
 <li><p><strong>Spectral resolution</strong>, which is the number and location in the electromagnetic spectrum of the spectral bands in multispectral sensors. Each band is typically represented by one raster.</p></li>
@@ -639,7 +640,7 @@ Signatures vary with variations in an object/surface’s material composition, s
 </ul>
 </section>
 <section id="visulisation-of-multi-spectral-remote-sensing-data">
-<h2><span class="section-number">8.2.5. </span>Visulisation of Multi Spectral Remote Sensing Data<a class="headerlink" href="#visulisation-of-multi-spectral-remote-sensing-data" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">8.3.5. </span>Visulisation of Multi Spectral Remote Sensing Data<a class="headerlink" href="#visulisation-of-multi-spectral-remote-sensing-data" title="Permalink to this heading">#</a></h2>
 <p>The fact that the bands of the individual spectral ranges are available in the files of multispectral remote sensing scenes as individual rasters allows various possible combinations of these bands to create so-called false colour composites: the optical perception of the human eye can be divided into the three spectral ranges of visible light (red, blue and green, R-G-B for short). In a “true colour display”, i.e. the optical display of a satellite image as the human eye would perceive it (e.g. Google Maps Satellite), these bands are also assigned to the corresponding bands: R = Red, G = Green, B = Blue.</p>
 <figure class="align-default" id="id2">
 <a class="reference internal image-reference" href="../../_images/en_m8_rs_bandsconcept.png"><img alt="../../_images/en_m8_rs_bandsconcept.png" src="../../_images/en_m8_rs_bandsconcept.png" style="width: 600px;" /></a>
@@ -692,12 +693,12 @@ Signatures vary with variations in an object/surface’s material composition, s
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="en_qgis_remote_sensing_raster_theory.html"
+       href="en_qgis_raster_operations.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">8.1. </span>Remote Sensing and Raster data theory 🛰️</p>
+        <p class="prev-next-title"><span class="section-number">8.2. </span>Common Raster Operations</p>
       </div>
     </a>
     <a class="right-next"
@@ -705,7 +706,7 @@ Signatures vary with variations in an object/surface’s material composition, s
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">8.3. </span>Raster data Exercise 1: Basic Assessment of Flood Exposure in the Indus Basin in Pakistan</p>
+        <p class="prev-next-title"><span class="section-number">8.4. </span>Raster data Exercise 1: Basic Assessment of Flood Exposure in the Indus Basin in Pakistan</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -724,11 +725,11 @@ Signatures vary with variations in an object/surface’s material composition, s
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-remote-sensing">8.2.1. What is Remote Sensing?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#electromagnetic-radiation-and-its-interaction-with-the-earths-surface">8.2.2. Electromagnetic Radiation and its interaction with the Earths Surface</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#remote-sensing-sensors-and-platforms">8.2.3. Remote Sensing Sensors and Platforms</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#attributes-of-remote-sensing-data">8.2.4. Attributes of Remote Sensing Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visulisation-of-multi-spectral-remote-sensing-data">8.2.5. Visulisation of Multi Spectral Remote Sensing Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-remote-sensing">8.3.1. What is Remote Sensing?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#electromagnetic-radiation-and-its-interaction-with-the-earths-surface">8.3.2. Electromagnetic Radiation and its interaction with the Earths Surface</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#remote-sensing-sensors-and-platforms">8.3.3. Remote Sensing Sensors and Platforms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#attributes-of-remote-sensing-data">8.3.4. Attributes of Remote Sensing Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visulisation-of-multi-spectral-remote-sensing-data">8.3.5. Visulisation of Multi Spectral Remote Sensing Data</a></li>
 </ul>
   </nav></div>
 
