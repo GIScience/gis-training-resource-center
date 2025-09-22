@@ -574,16 +574,10 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#file-format">8.1.4. File Format</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#frequently-used-tools-in-qgis">8.1.5. Frequently used Tools in QGIS</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#raster-calculator">8.1.5.1. Raster Calculator</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zonal-statistics">8.1.5.2. Zonal Statistics</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#align-rasters">8.1.5.3. Align rasters</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-and-sources-of-raster-data-in-the-humanitarian-sector">8.1.6. Use and Sources of Raster Data in the Humanitarian Sector</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hdx-the-humanitarian-data-exchange-data-portal-br">8.1.6.1. HDX (The Humanitarian Data Exchange) Data Portal:<br/></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usgs-earth-explorer">8.1.6.2. USGS Earth Explorer</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esa-earth-online">8.1.6.3. ESA Earth Online</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-and-sources-of-raster-data-in-the-humanitarian-sector">8.1.5. Use and Sources of Raster Data in the Humanitarian Sector</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hdx-the-humanitarian-data-exchange-data-portal-br">8.1.5.1. HDX (The Humanitarian Data Exchange) Data Portal:<br/></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usgs-earth-explorer">8.1.5.2. USGS Earth Explorer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esa-earth-online">8.1.5.3. ESA Earth Online</a></li>
 </ul>
 </li>
 </ul>
@@ -631,10 +625,10 @@ document.write(`
 <li><p><strong>Digital Elevation Models</strong> containing altitude values</p></li>
 <li><p><strong>Spatially variable Indices</strong> such as the Normalized Difference vegetation Index (NDVI)</p></li>
 </ol>
-<figure class="align-default" id="id2">
+<figure class="align-default" id="id1">
 <a class="reference internal image-reference" href="../../_images/mod8_rasterdata_DEM.png"><img alt="../../_images/mod8_rasterdata_DEM.png" src="../../_images/mod8_rasterdata_DEM.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 8.2 </span><span class="caption-text">Exemplary Digital Elevation Model of an area in the Indian Himalayas</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 8.2 </span><span class="caption-text">Exemplary Digital Elevation Model of an area in the Indian Himalayas</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p><strong>Discontinuous</strong> rasters contain categorical data, where each pixel represents a discrete class value rather than a value on a continuous scale. The information in these types of raster is sometimes also suitable for the storage with vector data. Some examples of classified maps include:</p>
@@ -701,71 +695,8 @@ This metadata helps users to understand the content, origin, quality and appropr
 <li><p><strong>GeoPackage (.gpkg)</strong>: Open format for storing geospatial data, supports raster and vec-tor.</p></li>
 </ol>
 </section>
-<section id="frequently-used-tools-in-qgis">
-<h2><span class="section-number">8.1.5. </span>Frequently used Tools in QGIS<a class="headerlink" href="#frequently-used-tools-in-qgis" title="Permalink to this heading">#</a></h2>
-<section id="raster-calculator">
-<h3><span class="section-number">8.1.5.1. </span>Raster Calculator<a class="headerlink" href="#raster-calculator" title="Permalink to this heading">#</a></h3>
-<p>The raster calculator enables the performing of mathematical operations on one or multiple raster layers by using different expressions. These expressions can involve arithmetic operations like multiplication, comparison operators like “&lt;” or “&gt;”, conditional expressions like “IF” “THEN” statements, and mathematical functions like “mean” or “sum”.</p>
-<p>Example:
-You have a Digital Elevation Model with the Altitude in m and a land cover classification raster. You want to produce a raster with all agricultural areas (raster value = 5) above 1500m.</p>
-<figure class="align-default" id="id1">
-<a class="reference internal image-reference" href="../../_images/mod8_rasterdata_rastercalculator.png"><img alt="../../_images/mod8_rasterdata_rastercalculator.png" src="../../_images/mod8_rasterdata_rastercalculator.png" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 8.6 </span><span class="caption-text">Interface of the “Raster calculator” tool</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>The wanted result can be achieved by firstly selecting both of the relevant rasters as inputs for the raster calculator and then using the expression interface to select all pixels with a elevation above 1500m ( “( “DEM&#64;1” &gt;  1500)”) and a land cover value of “5” (”( “Landcover&#64;1” = 5 ) “) by connecting both expression with the logical operator “AND”. In the calculated raster all pixels that fulfill the condition will have the value “1”, all other pixels the value “0”.</p>
-</section>
-<section id="zonal-statistics">
-<h3><span class="section-number">8.1.5.2. </span>Zonal Statistics<a class="headerlink" href="#zonal-statistics" title="Permalink to this heading">#</a></h3>
-<p>The Zonal Statistics tool calculates statistics (like mean, median, sum, etc.) for each zone (= polygon) in a specified zone layer based on the cell values of a raster layer. This is particularly useful for analyzing raster data within defined geographic zones, such as administrative boundaries or land use classes.</p>
-<p>Example: We have a raster layer with population count affected by a recent flood in Pakistan and a polygon layer with administrative districts. We want to calculate the number of flood affected people per district.</p>
-<ol class="arabic simple">
-<li><p>As “Input Layer” choose your polygon layer with district extents. “Pakistan_admin2” in this case.</p></li>
-<li><p>As “Raster Layer” choose the layer with the cell values you want to base your statistics on. “Pop_floodextent” in this case.</p></li>
-<li><p>Defining a prefix for your output column is optional but can be helpful for finding the calculated values in large attribute tables. For population counts you can for example choose “pop_” as “Output column prefix”.</p></li>
-<li><p>Below “Statistics to calculate” click on the <img alt="" src="fig/mod8_ex1_optionsicon.png" /> icon to access the different options of statistical operations available for calculating polygon values based on your raster. In this case “sum” would be the operation of choice as we want the total sum of flood affected people per district.</p></li>
-</ol>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
-<summary class="sd-summary-title sd-card-header">
-Solution<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">“Sum” is the appropriate method, as we want the total population count per district that results from the additions of the values of all cells with affected population per district.</p>
-</div>
-</details><ol class="arabic simple" start="6">
-<li><p>Name your layer “Floodaffected_pop_admin2”, save it to your “output” folder and click <code class="docutils literal notranslate"><span class="pre">Run</span></code>.</p></li>
-</ol>
-<figure class="align-center" id="zonalstatistics-interface">
-<a class="reference internal image-reference" href="../../_images/en_3.34_m8ex1_zonalstat.png"><img alt="../../_images/en_3.34_m8ex1_zonalstat.png" src="../../_images/en_3.34_m8ex1_zonalstat.png" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 8.7 </span><span class="caption-text">Interface of the “Zonal statistics” tool</span><a class="headerlink" href="#zonalstatistics-interface" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="align-rasters">
-<h3><span class="section-number">8.1.5.3. </span>Align rasters<a class="headerlink" href="#align-rasters" title="Permalink to this heading">#</a></h3>
-<p>With the “Align rasters” tool raster with different spatial resolutions, grid orientation and CRS can be aligned to achieve a matching configuration of these attributes. This is particularly useful to preprocess rasters for for conducting precise spatial analysis, such as overlay operations, statistical analysis, raster calculator operations in general.</p>
-<p>Example: We have a elevation and precipitation rasters with different spatial resolution and want to align the rasters for the analysis of precipitation sums in high altitude areas:
-1. Click on the three dots next to the “Input layers” prompt and choose the rasters you want to align by checking the boxes next to them.
-2. Choose the raster you want to use as blueprint for the alignment. In this cas we want to align both rasters to the parameters of the “Elevation” raster.
-3. If you want to reproject the aligned rasters to a new CRS different from the Reference layers you can choose it under “Override reference CRS”.</p>
-<figure class="align-center" id="align-rasters-interface">
-<a class="reference internal image-reference" href="../../_images/en_3.34_m8_alignrasters.png"><img alt="../../_images/en_3.34_m8_alignrasters.png" src="../../_images/en_3.34_m8_alignrasters.png" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 8.8 </span><span class="caption-text">Interface of the “Align Rasters” tool</span><a class="headerlink" href="#align-rasters-interface" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>There are further optional operations that allow you to set a specific cell size (in x and y direction) and grid offset different from the reference raster or clip the output to a defined extent. This can be handy for very specific use cases, but is not necessary in the majority of applications.</p>
-</div>
-</section>
-</section>
 <section id="use-and-sources-of-raster-data-in-the-humanitarian-sector">
-<h2><span class="section-number">8.1.6. </span>Use and Sources of Raster Data in the Humanitarian Sector<a class="headerlink" href="#use-and-sources-of-raster-data-in-the-humanitarian-sector" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">8.1.5. </span>Use and Sources of Raster Data in the Humanitarian Sector<a class="headerlink" href="#use-and-sources-of-raster-data-in-the-humanitarian-sector" title="Permalink to this heading">#</a></h2>
 <p>In the humanitarian sector, many different types of raster data are used in various application areas. The most important grid types include population grids, which can form the basis for calculating the exposure of the population to a natural hazard like floods, or precipitation grids, which can significantly help to understand droughts.</p>
 <p>If raster data is available at several points in time or even as a continuous data series, parameters such as the condition of agricultural land can be measured with data like a series of rasters of a vegetation index.</p>
 <p>Main products/raster types you may come across in the humanitarian sector include:</p>
@@ -777,7 +708,7 @@ Solution<div class="sd-summary-down docutils">
 </ol>
 <p>Popular and proven sources for raster data include:</p>
 <section id="hdx-the-humanitarian-data-exchange-data-portal-br">
-<h3><span class="section-number">8.1.6.1. </span>HDX (The Humanitarian Data Exchange) Data Portal:<br><a class="headerlink" href="#hdx-the-humanitarian-data-exchange-data-portal-br" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">8.1.5.1. </span>HDX (The Humanitarian Data Exchange) Data Portal:<br><a class="headerlink" href="#hdx-the-humanitarian-data-exchange-data-portal-br" title="Permalink to this heading">#</a></h3>
 <p><strong>Offering</strong>: Hosts a wide range of humanitarian data for a variety of countries, including raster data regarding population counts/density and demographic parameters like age and sex structures or birthrates.<br><br>
 <strong>Pros and Cons</strong></p>
 <ul class="simple">
@@ -789,7 +720,7 @@ Solution<div class="sd-summary-down docutils">
 <p>You can acces the HDX data portal (<a class="reference external" href="https://data.humdata.org">here</a>).</p>
 </section>
 <section id="usgs-earth-explorer">
-<h3><span class="section-number">8.1.6.2. </span>USGS Earth Explorer<a class="headerlink" href="#usgs-earth-explorer" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">8.1.5.2. </span>USGS Earth Explorer<a class="headerlink" href="#usgs-earth-explorer" title="Permalink to this heading">#</a></h3>
 <p><strong>Offering</strong>:The Data Portal of the US Geological Survey provides access to a vast collection of satellite imagery and derived products like DEMs and land cover data.<br><br>
 <strong>Pros and Cons:</strong></p>
 <ul class="simple">
@@ -801,7 +732,7 @@ Solution<div class="sd-summary-down docutils">
 <p>You can acces the USGS Earth Explorer (<a class="reference external" href="https://earthexplorer.usgs.gov">here</a>).</p>
 </section>
 <section id="esa-earth-online">
-<h3><span class="section-number">8.1.6.3. </span>ESA Earth Online<a class="headerlink" href="#esa-earth-online" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">8.1.5.3. </span>ESA Earth Online<a class="headerlink" href="#esa-earth-online" title="Permalink to this heading">#</a></h3>
 <p>Similar to the USGS earth explorer the data portal of the European space agency (ESA) provides access to Earth observation data from various satellites and derived datasets like climate change indicators or disaster monitoring products.
 <br><br>
 <strong>Pros and Cons:</strong></p>
@@ -889,16 +820,10 @@ Solution<div class="sd-summary-down docutils">
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#file-format">8.1.4. File Format</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#frequently-used-tools-in-qgis">8.1.5. Frequently used Tools in QGIS</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#raster-calculator">8.1.5.1. Raster Calculator</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zonal-statistics">8.1.5.2. Zonal Statistics</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#align-rasters">8.1.5.3. Align rasters</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-and-sources-of-raster-data-in-the-humanitarian-sector">8.1.6. Use and Sources of Raster Data in the Humanitarian Sector</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hdx-the-humanitarian-data-exchange-data-portal-br">8.1.6.1. HDX (The Humanitarian Data Exchange) Data Portal:<br/></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usgs-earth-explorer">8.1.6.2. USGS Earth Explorer</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esa-earth-online">8.1.6.3. ESA Earth Online</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-and-sources-of-raster-data-in-the-humanitarian-sector">8.1.5. Use and Sources of Raster Data in the Humanitarian Sector</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hdx-the-humanitarian-data-exchange-data-portal-br">8.1.5.1. HDX (The Humanitarian Data Exchange) Data Portal:<br/></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usgs-earth-explorer">8.1.5.2. USGS Earth Explorer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esa-earth-online">8.1.5.3. ESA Earth Online</a></li>
 </ul>
 </li>
 </ul>
