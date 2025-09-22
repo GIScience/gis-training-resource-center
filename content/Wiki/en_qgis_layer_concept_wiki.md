@@ -14,13 +14,10 @@ width: 750 px
 The layer concept in GIS applications. Source unknown. All rights reserved. This content is excluded from our Creative Commons license.
 :::
 
-![Layer Concept](/fig/Layer_concept.png) 
-
-<!--ADD: Source?-->
 
 ## Hide and show layers
 
-Set a tick in the Layers panel
+- Check the check-box in the Layers panel on the bottom left:
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_show_hide_layer.mp4"></video>
 
