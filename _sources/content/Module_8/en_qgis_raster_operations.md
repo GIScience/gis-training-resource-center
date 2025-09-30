@@ -17,8 +17,7 @@ To check the CRS and cell size, <kbd>Right-click</kbd> on the raster layer and s
 
 ## Reprojecting Raster Layers
 
-Reprojecting a raster layers works in a similar way as reprojecting vector layers. 
-
+Reprojecting a raster layers works in a similar way as reprojecting vector layers.
 
 1. In the top bar, navigate to `Raster` → `Projections` → `Warp (Reproject)`. The Warp (Reproject)-Tool will open. 
 2. Here, you can select the input layer, the source CRS, the Target CRS and the resampling method. The resampling method determines how the algorithm determines the value of a cell, if it's location shifts during the reprojection. Except when you are working with [continuous data](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_data_classification.html#nominal-ordinal-and-metric-scales) such as temperature or rainfall, you can leave the resampling method on `nearest neighbor`. 
@@ -27,7 +26,8 @@ Reprojecting a raster layers works in a similar way as reprojecting vector layer
 
 ## Aligning Rasters
 
-With the "Align rasters" tool raster with different spatial resolutions, grid orientation and CRS can be aligned to achieve a matching configuration of these attributes. This is particularly useful when preprocessing raster layer for conducting precise spatial analysis, such as overlay operations, statistical analysis, raster calculator operations in general.
+
+When working with multiple rasters, it is important that the raster cells are aligned. Otherwise, you might get wrong results. With the "Align rasters" tool, raster datasets with different spatial resolutions, grid orientation or Coordinate Reference systems can be aligned. This is particularly useful when preprocessing raster layer for conducting precise spatial analysis, such as overlay operations, statistical analysis, raster calculator operations in general. 
 
 Example: We have a elevation and precipitation rasters with different spatial resolution and want to align the rasters for the analysis of precipitation sums in high altitude areas:
     1. Click on the three dots next to the "Input layers" prompt and choose the rasters you want to align by checking the boxes next to them.
@@ -58,11 +58,14 @@ Performing calculations using raster layers can quickly become very CPU-intensiv
 
 To clip a raster layer: 
 
-1. In the processing toolbox, search for "Clip Raster" and select 
+1. In the processing toolbox, search for "Clip Raster" and select `Clip Raster by Mask Layer`. 
+2. A new window will open. Here you can select the vector layer containing the polygons which will be used as zones. 
+
+
 
 ### Raster Calculator
 
-The raster calculator enables the performing of mathematical operations on one or multiple raster layers by using different expressions. These expressions can involve arithmetic operations like multiplication, comparison operators like "<" or ">", conditional expressions like "IF" "THEN" statements, and mathematical functions like "mean" or "sum". 
+The raster calculator let's you perform mathematical operations with the raster values using one or multiple raster layers. Similar to the [field calculator]() for vector data, you can enter expressions. These expressions can include arithmetic operations such as multiplication, comparison operators such as `<`. `>`, `=`, conditional expressions like "IF" "THEN" statements, and statistical functions such as "mean" or "sum". 
 
 Example:
 You have a Digital Elevation Model with the Altitude in m and a land cover classification raster. You want to produce a raster with all agricultural areas (raster value = 5) above 1500m.
@@ -75,12 +78,39 @@ width: 600px
 Interface of the "Raster calculator" tool
 ```
 
-The wanted result can be achieved by firstly selecting both of the relevant rasters as inputs for the raster calculator and then using the expression interface to select all pixels with a elevation above 1500m ( "( "DEM@1" >  1500)") and a land cover value of "5" ("( "Landcover@1" = 5 ) ") by connecting both expression with the logical operator "AND". In the calculated raster all pixels that fulfill the condition will have the value "1", all other pixels the value "0".
+In the raster calculator, 
+1. click on the elevation raster layer to add it to the expression builder. 
+2. Enter the comparison operator `>` and enter 1500. This will select the raster cells representing an altitude higher than 1500 meters. 
+3. Put the expression into parentheses. The first part of the expression should be as follows
+    ```
+    ( "DEM@1" >  1500)
+    ```
+4. Enter the second part of the Expression: 
+    ```
+    AND ( "Landcover@1" = 5)
+    ```
+    This selects all the raster cells where the cell value equals 5. 
+5. The full expression should be:
+    ```
+    ( "DEM@1" > 1500) AND ( "Landcover@1" = 5 )
+    ```
+6. Click `OK`
+7. The result will be a new raster where the cells that fulfill the condition of our expression will have the value `1`, while all other pixels have the value `0`. 
+
 
 
 ### Zonal Statistics
 
-The Zonal Statistics tool calculates statistics (like mean, median, sum, etc.) for each zone (= polygon) in a specified zone layer based on the cell values of a raster layer. This is particularly useful for analyzing raster data within defined geographic zones, such as administrative boundaries or land use classes.
+The Zonal Statistics tool calculates statistics (like mean, median, sum, etc.) for each zone. A zone can be a polygon of a vector layer or another raster layer.  This is particularly useful for analyzing raster data within defined geographic zones, such as administrative boundaries or land use classes. For example, with a population raster dataset, we can calculate the population sum per district using a vector layer with administrative boundaries. Or, we could calculate the mean temperature of a country. 
+
+In the example below, we will calculate the population count affected by recent floods in Pakistan. 
+
+<!--ADD DATA FOR FOLLOW ALONG-->
+
+We have the following datasets:
+
+- administrative boundaries (adm2) for Pakistan: `Pakistan_admin2`.
+- 
 
 Example: We have a raster layer with population count affected by a recent flood in Pakistan and a polygon layer with administrative districts. We want to calculate the number of flood affected people per district.
 
@@ -109,3 +139,5 @@ Interface of the "Zonal statistics" tool
 
 
 ## Vectorise
+
+

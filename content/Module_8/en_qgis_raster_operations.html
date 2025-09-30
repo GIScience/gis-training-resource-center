@@ -607,7 +607,7 @@ document.write(`
 </section>
 <section id="aligning-rasters">
 <h2><span class="section-number">8.2.3. </span>Aligning Rasters<a class="headerlink" href="#aligning-rasters" title="Permalink to this heading">#</a></h2>
-<p>With the “Align rasters” tool raster with different spatial resolutions, grid orientation and CRS can be aligned to achieve a matching configuration of these attributes. This is particularly useful when preprocessing raster layer for conducting precise spatial analysis, such as overlay operations, statistical analysis, raster calculator operations in general.</p>
+<p>When working with multiple rasters, it is important that the raster cells are aligned. Otherwise, you might get wrong results. With the “Align rasters” tool, raster datasets with different spatial resolutions, grid orientation or Coordinate Reference systems can be aligned. This is particularly useful when preprocessing raster layer for conducting precise spatial analysis, such as overlay operations, statistical analysis, raster calculator operations in general.</p>
 <p>Example: We have a elevation and precipitation rasters with different spatial resolution and want to align the rasters for the analysis of precipitation sums in high altitude areas:
 1. Click on the three dots next to the “Input layers” prompt and choose the rasters you want to align by checking the boxes next to them.
 2. Choose the raster you want to use as blueprint for the alignment. In this cas we want to align both rasters to the parameters of the “Elevation” raster.
@@ -640,11 +640,12 @@ document.write(`
 </ol>
 <p>To clip a raster layer:</p>
 <ol class="arabic simple">
-<li><p>In the processing toolbox, search for “Clip Raster” and select</p></li>
+<li><p>In the processing toolbox, search for “Clip Raster” and select <code class="docutils literal notranslate"><span class="pre">Clip</span> <span class="pre">Raster</span> <span class="pre">by</span> <span class="pre">Mask</span> <span class="pre">Layer</span></code>.</p></li>
+<li><p>A new window will open. Here you can select the vector layer containing the polygons which will be used as zones.</p></li>
 </ol>
 <section id="raster-calculator">
 <h3><span class="section-number">8.2.4.1. </span>Raster Calculator<a class="headerlink" href="#raster-calculator" title="Permalink to this heading">#</a></h3>
-<p>The raster calculator enables the performing of mathematical operations on one or multiple raster layers by using different expressions. These expressions can involve arithmetic operations like multiplication, comparison operators like “&lt;” or “&gt;”, conditional expressions like “IF” “THEN” statements, and mathematical functions like “mean” or “sum”.</p>
+<p>The raster calculator let’s you perform mathematical operations with the raster values using one or multiple raster layers. Similar to the <span class="xref myst">field calculator</span> for vector data, you can enter expressions. These expressions can include arithmetic operations such as multiplication, comparison operators such as <code class="docutils literal notranslate"><span class="pre">&lt;</span></code>. <code class="docutils literal notranslate"><span class="pre">&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">=</span></code>, conditional expressions like “IF” “THEN” statements, and statistical functions such as “mean” or “sum”.</p>
 <p>Example:
 You have a Digital Elevation Model with the Altitude in m and a land cover classification raster. You want to produce a raster with all agricultural areas (raster value = 5) above 1500m.</p>
 <figure class="align-default" id="different-spatial-resolutions-of-the-same-raster">
@@ -653,11 +654,40 @@ You have a Digital Elevation Model with the Altitude in m and a land cover class
 <p><span class="caption-number">Fig. 8.7 </span><span class="caption-text">Interface of the “Raster calculator” tool</span><a class="headerlink" href="#different-spatial-resolutions-of-the-same-raster" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>The wanted result can be achieved by firstly selecting both of the relevant rasters as inputs for the raster calculator and then using the expression interface to select all pixels with a elevation above 1500m ( “( “DEM&#64;1” &gt;  1500)”) and a land cover value of “5” (”( “Landcover&#64;1” = 5 ) “) by connecting both expression with the logical operator “AND”. In the calculated raster all pixels that fulfill the condition will have the value “1”, all other pixels the value “0”.</p>
+<p>In the raster calculator,</p>
+<ol class="arabic">
+<li><p>click on the elevation raster layer to add it to the expression builder.</p></li>
+<li><p>Enter the comparison operator <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> and enter 1500. This will select the raster cells representing an altitude higher than 1500 meters.</p></li>
+<li><p>Put the expression into parentheses. The first part of the expression should be as follows</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span> <span class="s2">&quot;DEM@1&quot;</span> <span class="o">&gt;</span>  <span class="mi">1500</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>Enter the second part of the Expression:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">AND</span> <span class="p">(</span> <span class="s2">&quot;Landcover@1&quot;</span> <span class="o">=</span> <span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This selects all the raster cells where the cell value equals 5.</p>
+</li>
+<li><p>The full expression should be:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span> <span class="s2">&quot;DEM@1&quot;</span> <span class="o">&gt;</span> <span class="mi">1500</span><span class="p">)</span> <span class="n">AND</span> <span class="p">(</span> <span class="s2">&quot;Landcover@1&quot;</span> <span class="o">=</span> <span class="mi">5</span> <span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
+<li><p>The result will be a new raster where the cells that fulfill the condition of our expression will have the value <code class="docutils literal notranslate"><span class="pre">1</span></code>, while all other pixels have the value <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p></li>
+</ol>
 </section>
 <section id="zonal-statistics">
 <h3><span class="section-number">8.2.4.2. </span>Zonal Statistics<a class="headerlink" href="#zonal-statistics" title="Permalink to this heading">#</a></h3>
-<p>The Zonal Statistics tool calculates statistics (like mean, median, sum, etc.) for each zone (= polygon) in a specified zone layer based on the cell values of a raster layer. This is particularly useful for analyzing raster data within defined geographic zones, such as administrative boundaries or land use classes.</p>
+<p>The Zonal Statistics tool calculates statistics (like mean, median, sum, etc.) for each zone. A zone can be a polygon of a vector layer or another raster layer.  This is particularly useful for analyzing raster data within defined geographic zones, such as administrative boundaries or land use classes. For example, with a population raster dataset, we can calculate the population sum per district using a vector layer with administrative boundaries. Or, we could calculate the mean temperature of a country.</p>
+<p>In the example below, we will calculate the population count affected by recent floods in Pakistan.</p>
+<!--ADD DATA FOR FOLLOW ALONG-->
+<p>We have the following datasets:</p>
+<ul class="simple">
+<li><p>administrative boundaries (adm2) for Pakistan: <code class="docutils literal notranslate"><span class="pre">Pakistan_admin2</span></code>.</p></li>
+<li></li>
+</ul>
 <p>Example: We have a raster layer with population count affected by a recent flood in Pakistan and a polygon layer with administrative districts. We want to calculate the number of flood affected people per district.</p>
 <ol class="arabic simple">
 <li><p>As “Input Layer” choose your polygon layer with district extents. “Pakistan_admin2” in this case.</p></li>
