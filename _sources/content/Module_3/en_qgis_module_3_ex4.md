@@ -7,7 +7,7 @@
 ::::
 
 
-# Exercise 4: Nigeria Floods
+# Exercise 4: Flooding in Nigeria
 
 ## Characteristics of the exercise
 
