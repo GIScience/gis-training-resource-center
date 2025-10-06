@@ -22,7 +22,7 @@ width: 900px
 name: classification_basic
 align: center
 ---
-Basic classification. Source: HeiGIT
+Basic classification (Source: HeiGIT).
 ```
 
 ## Nominal, Ordinal and Metric scales

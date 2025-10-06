@@ -27,7 +27,7 @@ width: 700px
 align: center
 name: en_examples_projections_IBIS
 ---
-Examples for Projections (Source:(http://ibis.colostate.edu/webcontent/NR505/2012_Projects/Team6/GISConcepts.html)).
+Examples for Projections (Source:Unknown. This figure is included for illustrative purposes only and is not subject to the Creative Commons license of this platform).
 ```
 
 Every projection has its use case. For example, the Mercator projection displays the angles between to points 
@@ -51,7 +51,7 @@ width: 600px
 align: center
 name: en_greenland_africa
 ---
-Comparison Greenland - Africa. Source: [The True Size of](https://www.thetruesize.com/#?borders=1~!MTYwODM1MTk.MzkyNDUyNg*MjY5NjM4Mzg(MTA1MjgyOTE~!CONTIGUOUS_US*MTAwMjQwNzU.MjUwMjM1MTc(MTc1)MQ~!IN*NTI2NDA1MQ.Nzg2MzQyMQ)MA~!CN*OTkyMTY5Nw.NzMxNDcwNQ(MjI1)Mg)
+Comparison Greenland - Africa (Source: [The True Size of](https://www.thetruesize.com/#?borders=1~!MTYwODM1MTk.MzkyNDUyNg*MjY5NjM4Mzg(MTA1MjgyOTE~!CONTIGUOUS_US*MTAwMjQwNzU.MjUwMjM1MTc(MTc1)MQ~!IN*NTI2NDA1MQ.Nzg2MzQyMQ)MA~!CN*OTkyMTY5Nw.NzMxNDcwNQ(MjI1)Mg)).
 ```
 
 
@@ -83,7 +83,7 @@ Look at the following images and pay attention how the different Coordinate Refe
 width: 500 px
 name: world_mercator_tissot
 ---
-The Mercator Projection (EPSG:54004)
+The Mercator Projection (EPSG:54004) (Source: HeiGIT).
 ```
 
 Notice how the shape of the circle stays the same. Out of this, we can conclude that the angles stay the same. However, the circles get bigger the further away they are from the equator, and the distance between these circles change the further they they get from the equator. Therefore, we can conclude that the distances and sizes are being distorted with the mercator projection. The strength of the Mercator projection is that it conserves the angles between to lines. We can see this because the circles stay perfectly circular the further they are from the equator.
@@ -94,7 +94,7 @@ Notice how the shape of the circle stays the same. Out of this, we can conclude 
 name: WGS_84_tissots
 width: 500 px
 ---
-The World Geodetic System 1984 (EPSG:4326)
+The World Geodetic System 1984 (EPSG:4326) (Source: HeiGIT).
 ```
 
 The WGS 84 is a CRS which consists of an ellipsoid, that resembles the shape of the earth closely. Instead of metrical 
@@ -109,7 +109,7 @@ can deduce that the this CRS distorts the angles.
 name: World_equidistant_cylindrical_tissots
 width: 500 px
 ---
-The World Equidistant Cylindrical Projection (EPSG:54002)
+The World Equidistant Cylindrical Projection (EPSG:54002) (Source: HeiGIT).
 ```
 
 The World Equidistant cylindrical CRS is equidistant (not distorting the length) along any meridian (cricles of longitude; North to South), and along the two standard parallels. The shape, scale and area distort the further they are away from the standard parallels. 
@@ -149,7 +149,7 @@ There are two different types of Coordinate Reference System: __Geographic__ or 
 name: problem_distance_geographic_coords
 width: 600 px
 ---
-A geographic representation of the globe. The distance between the meridians converge towards the north and south pole. (Source: HeiGIT)
+A geographic representation of the globe. The distance between the meridians converge towards the north and south pole (Source: HeiGIT).
 ```
 
 ```{caution}
@@ -167,7 +167,7 @@ width: 800px
 name: en_local_crs
 align: center
 ---
-Local and global coordinate reference systems (CRS).(Source: British Red Cross)
+Local and global coordinate reference systems (CRS) (Source: British Red Cross).
 ```
 
 As you can see, smaller regions look skewed and distorted in a global CRS

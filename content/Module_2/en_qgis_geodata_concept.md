@@ -32,7 +32,7 @@ width: 500px
 align: center
 name: en_vector_raster
 ---
-Raster / vector concept. Source: Adapted from [WikiMedia](https://commons.wikimedia.org/wiki/File:Raster_vector_tikz.png)
+Raster / vector concept (Source: Adapted from [WikiMedia](https://commons.wikimedia.org/wiki/File:Raster_vector_tikz.png)).
 ```
 
 What type of information can be stored in geodata is almost endless. It can hold information about the physical 
@@ -60,7 +60,7 @@ width: 650px
 align: center
 name: en_vector_data_overview
 ---
-Vector data overview. Source: HeiGIT
+Vector data overview (Source: HeiGIT).
 ```
 
 - Point data usually only has one set of coordinates per data entry (longitude, latitude and sometimes elevation, usually referred to as x, y, and z).
@@ -78,7 +78,7 @@ represented by a line, a building footprint might be represented by polygon and 
 name: en_geodata_example_2
 width: 700px
 ---
-Geographic information can be an address and/or GPS coordinates. (Source: BRC)
+Geographic information can be an address and/or GPS coordinates (Source: British Red Cross).
 ```
 
 - Features are displayed on maps with a geometric representation, but they are made of information organized in tables (see {numref}`Geodata_attribute_table_example`). 
@@ -91,7 +91,7 @@ Geographic information can be an address and/or GPS coordinates. (Source: BRC)
 name: Geodata_attribute_table_example
 width: 750px
 ---
-A data table in Microsoft Excel with geographic information. (Source: BRC)
+A data table in Microsoft Excel with geographic information. (Source: British Red Cross).
 ```
 
 {numref}`example_geometric_vs_attribute_view` shows the same dataset displayed both as its geometric representation and as an attribute table. 
@@ -101,7 +101,7 @@ A data table in Microsoft Excel with geographic information. (Source: BRC)
 name: example_geometric_vs_attribute_view
 width: 700 px
 ---
-Each polygon on the left represents one row (feature) on the right.  (Source: BRC)
+Each polygon on the left represents one row (feature) on the right. (Source: British Red Cross).
 ```
 
 #### Vector file formats
@@ -169,7 +169,7 @@ name: raster_data_example_corine_LC
 width: 350 px
 align: left
 ---
-The Copernicus CORINE Landcover Dataset (Source: [EEA/Copernicus](https://land.copernicus.eu/en/map-viewer?product=130299ac96e54c30a12edd575eff80f7))
+The Copernicus CORINE Landcover Dataset (Source: [EEA/Copernicus](https://land.copernicus.eu/en/map-viewer?product=130299ac96e54c30a12edd575eff80f7)).
 ```
 
 :::
@@ -181,7 +181,7 @@ The Copernicus CORINE Landcover Dataset (Source: [EEA/Copernicus](https://land.c
 name: NASADEM_Alps_example
 width: 300 px
 ---
-The NASA DEM showing the alps (Source: [NASA/USGS/JPL-CALTECH](https://lpdaac.usgs.gov/products/nasadem_hgtv001/))
+The NASA DEM showing the alps (Source: [NASA/USGS/JPL-CALTECH](https://lpdaac.usgs.gov/products/nasadem_hgtv001/)).
 ```
 
 :::
@@ -198,7 +198,7 @@ width: 800px
 align: center
 name: en_quality_raster
 ---
-Two raster datasets with different resolution covering the same region. Source: [CartONG](https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_3_vector_raster_data)
+Two raster datasets with different resolution covering the same region. (Source: [CartONG](https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_3_vector_raster_data)).
 ```
 
 In {numref}`Vector` and {numref}`Raster` you can see the same location, on the left as vector data, visualising streets and urban area, and on the right hand as raster data (satellite image), showing the land cover.
@@ -213,7 +213,7 @@ width: 400px
 name: Vector
 align: center
 ---
-Features represented with vector data. Source: British Red Cross (BRC)
+Features represented with vector data. (Source: British Red Cross).
 ```
 
 :::
@@ -226,7 +226,7 @@ width: 400px
 name: Raster
 align: center
 ---
-The same location represented as a raster image. Source: British Red Cross (BRC)
+The same location represented as a raster image. (Source: British Red Cross).
 ```
 
 :::
@@ -270,7 +270,7 @@ width: 800px
 align: center
 name: en_layer
 ---
-Layers in a GIS. Source: [CartONG](https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_1_layers)
+Layers in a GIS (Source: [CartONG](https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_1_layers)).
 ```
 
 
@@ -378,7 +378,7 @@ width: 600px
 align: center
 name: en_delimited_text_fileformat
 ---
-Import delimited text in QGIS 3.36 - file format.
+Adjusting the file format parameters while importing a delimited text layer into QGIS.
 ```
 
 4. `Geometry definition`: In this section, you specify which columns of the file 

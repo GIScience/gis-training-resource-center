@@ -23,7 +23,7 @@ analyses. In the case discussed in this chapter, the soil degradation map of Som
 width: 750 px
 name: example_georeferencing_hague
 ---
-A digitised old map of the Hague (Source: [Kokoalberti](https://kokoalberti.com/articles/georeferencing-and-digitizing-old-maps-with-gdal/))
+A digitised old map of the Hague (Source: [Kokoalberti](https://kokoalberti.com/articles/georeferencing-and-digitizing-old-maps-with-gdal/)).
 ```
 
 <!--ADD: Pictures of maps available in pdf reports-->
@@ -46,7 +46,7 @@ is needed. The more complex the transformation algorithm is, the more Ground Con
 width: 600 px
 name: en_georef_transformations
 ---
-Different transformation types: linear (left), polynomial 2nd degree (middle), polyonmial 3rd degree (right) (Source: [ESRI](https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/overview-of-georeferencing.htm))
+Different transformation types: linear (left), polynomial 2nd degree (middle), polyonmial 3rd degree (right) (Source: [ESRI](https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/overview-of-georeferencing.htm)).
 ```
 
 In most cases, you will use either linear, or polynomial (2nd or 3rd degree) transformations. There are many more 

@@ -59,7 +59,7 @@ information you want to convey.
 width: 500px
 name: en_30.30.2_graphic_semiology_signs
 ---
-You can use different graphic signs depending on the type of information you want to display.
+You can use different graphic signs depending on the type of information you want to display (Source: Unknown. This figure is included for illustrative purposes only and is not subject to the Creative Commons license of this platform.)
 ```
 
 Visual variables are the __graphical means for visually transcribing information__. The visual variables are __shape, 
@@ -72,7 +72,7 @@ between each element, helping to display different information.
 name: en_visual_variables
 width: 500px
 ---
-Visual variables according to Bertin (1967)
+Visual variables according to Bertin (1967).
 ```
 
 ```{Caution} 
@@ -159,7 +159,7 @@ Internally Displaced Persons (IDPs), 30 September 2024 (Soure: [UNHCR](https://r
 name: choropleth_hum_example
 width: 700 px
 ---
-South Sudan: Humanitarian Situation Monitoring, April-May 2024 - Damaged shelters (Source: [REACH](https://repository.impact-initiatives.org/document/impact/897badb8/REACH_SSD_Map_HSM_AprilMay2024_DamagedShelters_June2024-1.pdf))
+South Sudan: Humanitarian Situation Monitoring, April-May 2024 - Damaged shelters (Source: [REACH](https://repository.impact-initiatives.org/document/impact/897badb8/REACH_SSD_Map_HSM_AprilMay2024_DamagedShelters_June2024-1.pdf)).
 ```
 
 ::::
@@ -172,7 +172,7 @@ South Sudan: Humanitarian Situation Monitoring, April-May 2024 - Damaged shelter
 name: en_m4_operational_overview_example
 width: 650 px
 ---
-Operational overview or response activity map (Source: [Shelter Cluster Vanuata](https://reliefweb.int/map/vanuatu/vanuatu-tropical-cyclone-lola-distribution-and-gap-map-malampa-13022024))
+Operational overview or response activity map (Source: [Shelter Cluster Vanuata](https://reliefweb.int/map/vanuatu/vanuatu-tropical-cyclone-lola-distribution-and-gap-map-malampa-13022024)).
 ```
 
 ::::
@@ -206,7 +206,7 @@ of mapping and GIS.
 name: choropleth_intro_example
 width: 600 px
 ---
-An example of a choropleth map (Source: [AxisMaps](https://www.axismaps.com/guide/choropleth))
+An example of a choropleth map (Source: [AxisMaps](https://www.axismaps.com/guide/choropleth)).
 ```
 
 #### Use cases
@@ -309,9 +309,9 @@ name: de_colour_gradients_saturation
 width: 750px
 ---
 Examples for different colour gradients translated into black and white. Pay attention to the saturation gradient under 
-each example. Source: Stauffer, Reto & Mayr, Georg & Dabernig, Markus & Zeileis, Achim. (2014). Somewhere Over the 
+each example. (Source: Stauffer, Reto & Mayr, Georg & Dabernig, Markus & Zeileis, Achim. (2014). Somewhere Over the 
 Rainbow: How to Make Effective Use of Colours in Meteorological Visualizations. Bulletin of the American Meteorological 
-Society. 96. 140710055335002. 10.1175/BAMS-D-13-00155.1.
+Society. 96. 140710055335002. 10.1175/BAMS-D-13-00155.1.)
 ```
 
 Colour gradients can also encompass multiple hues:
@@ -339,7 +339,7 @@ diverging Red-Green gradients) can be hard or impossible to distinguish for peop
 name: Colour_Blindness
 width: 750px
 ---
-Different Colour schemes for the Colour Vision Impaired; Source: Jenny, Bernhard, and Nathaniel Vaughn Kelso. (2007). Color Design for the Color Vision Impaired. *Cartographic Perspectives*, no. 58 (September 1, 2007): 61-67. https://doi.org/10.14714/CP58.270 
+Different Colour schemes for the Colour Vision Impaired (Source: Jenny, Bernhard, and Nathaniel Vaughn Kelso. (2007). Color Design for the Color Vision Impaired. *Cartographic Perspectives*, no. 58 (September 1, 2007): 61-67. https://doi.org/10.14714/CP58.270).
 ```
 
 ## Complex Maps

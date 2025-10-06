@@ -51,7 +51,13 @@ We will build our first simple model by buffering road segments. This process is
 
 #### Selection of inputs
 
-Select the `Inputs` tab from the left window and then select the `Vector Layer` by either double-clicking or dragging and dropping it onto the model canvas ({numref}`vector_layer_modeler`). This will open the input Parameter Definition window ({numref}`input_vector_modeler`). In this window we can customize some vector input parameters such as `Description` (the name that the user will see when executing the model), `Geometry type` (Point, Line, Polygon) and can also define your input as mandatory for your model by ticking the `Mandatory` box. It is also possible to select the `Advanced` checkbox to set the input to be within the Advanced section. This is particularly useful when the model has many parameters and some of them are not trivial, but you still want to be able to select  them.
+To add new inputs: 
+
+1. Select the `Inputs` tab from the left window.
+2. Next, select the `Vector Layer` by either double-clicking or dragging and dropping it onto the model canvas ({numref}`vector_layer_modeler`). This will open the input Parameter Definition window ({numref}`input_vector_modeler`). 
+3. In this window we can customize some vector input parameters such as `Description`, `Geometry type` (Point, Line, Polygon) and we can also define our input as mandatory for your model by ticking the `Mandatory` box. 
+
+<!---It is also possible to select the `Advanced` checkbox to set the input to be within the Advanced section. This is particularly useful when the model has many parameters and some of them are not trivial, but you still want to be able to select them.-->
 
 ```{figure} /fig/en_vector_layer_modeler.PNG
 ---
