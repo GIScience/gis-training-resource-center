@@ -465,4 +465,18 @@ Additionally, there is a large amount of youtube tutorials, online guides and le
 GIS-operations, so it is always a good idea to do a quick google search. Amongst others, the [QGIS documentation](https://docs.qgis.org/3.34/en/docs/index.html) also offers Exercises and Training Material, as well as a [Gentle Introduction to QGIS](https://docs.qgis.org/3.34/en/docs/gentle_gis_introduction/index.html). 
 
 
+## Self-Assessment Questions
+
+::::{topic} Test your knowledge
+
+Take a moment to recapitulate what you've learned in this chapter by answering the questions below:
+
+__1. What is QGIS, and what does it mean that it is “open source”?__
+__2. Name three things you can do working with QGIS.__
+__3. How do you know if a QGIS-project has been saved or not?__
+__4. How do you open a QGIS-project?__
+__5. How do you show and hide panels or toolbars?__
+__6. Where can you find help when you are encountering problems with QGIS?__
+
+::::
 
