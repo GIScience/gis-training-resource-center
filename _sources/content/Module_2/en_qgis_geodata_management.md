@@ -127,3 +127,19 @@ an analysis, and it can be easy to forget the parameters you have used for an an
 Make sure yourself and other persons can understand and replicate the analysis steps. 
 Good documentation turns your QGIS project from a black box into a transparent, shareable, and professional piece of work. 
 
+
+## Self-Assessment Questions
+
+::::{admonition} Test your knowledge
+:class: note
+
+Take a moment to test what you've learned in this chapter by answering the questions below:
+
+1. __Where are the layers loaded into a QGIS project saved? What implications does this have when moving or renaming files?__
+2. __When editing geodata in QGIS, why is it recommended to make a copy first?__
+3. __What are two principal advantages of using a standardized folder structure for GIS projects and data?__
+4. __Describe at least three good practices for naming geodata / layers.__
+5. __If you move the entire project folder (with its subfolders and data) to a different computer, under what conditions will the QGIS project still work without broken paths?__
+
+
+::::
