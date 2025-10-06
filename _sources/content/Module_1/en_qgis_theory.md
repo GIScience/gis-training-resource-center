@@ -25,7 +25,7 @@ height: 500px
 name: GIS_Core_functunality
 align: center
 ---
-GIS core functionality
+GIS core functionality (Source: HeiGIT).
 ```
 
 In humanitarian work, Geographic Information Systems (GIS) serve as powerful tools. They utilize maps to present complex information clearly and efficiently. For instance, during emergencies, GIS can visualize events on a map, depicting where they occur, the extent of impact, and identifying primary needs. It aids in consolidating data from various sources, enabling quick comprehension of situations and facilitating better decision-making.
@@ -45,7 +45,7 @@ height: 200px
 name: GIS_definition_icons
 align: center
 ---
-GIS components
+GIS components (Source: British Red Cross)
 ```
 
 ## Examples of GIS used by humanitarian organisations
@@ -156,7 +156,7 @@ height: 500px
 name: Afghanistan-Earthquake-Events-Overview-February-2024_page-0001-scaled
 align: center
 ---
-Example Map: Afghanistan Earthquake Events Overview February 2024. Source: [iMMAP](https://immap.org/product/afghanistan-earthquake-events-overview-february-2024/)
+Example Map: Afghanistan Earthquake Events Overview February 2024 (Source: [iMMAP](https://immap.org/product/afghanistan-earthquake-events-overview-february-2024/)).
 ```
 
 :::
@@ -173,7 +173,7 @@ height: 500px
 name: cluster-camp-coordination
 align: center
 ---
-Example Map: Philippines - TS Washi (Sendong) - Evacuation centre amd transitory site population, Cagayan de Or. Source: [MapAction](https://guides.mapaction.org/images/examples/cluster-camp-coordination.jpg)
+Example Map: Philippines - TS Washi (Sendong) - Evacuation centre amd transitory site population, Cagayan de Or (Source: [MapAction](https://guides.mapaction.org/images/examples/cluster-camp-coordination.jpg))
 ```
 
 :::
@@ -231,7 +231,7 @@ height: 600px
 name: John_snow_zoom_map2
 align: center
 ---
-John Snow Cholera map of London (1854). Source: https://giscience.github.io/gis-training-resource-center/_images/John_snow_zoom_map2.png
+John Snow's Cholera map of London (1854). 
 ```
 
 __Using GIS__, several measures of spatial central tendency have been applied to 
@@ -270,7 +270,7 @@ height: 600px
 name: general_ref_map_nigeria_ogun
 align: center
 ---
-Example Map: Nigeria: Reference Map of Ogun state (As of 26 December 2018) Source: [OCHA](https://reliefweb.int/map/nigeria/nigeria-reference-map-ogun-state-26-december-2018?_gl=1*151t3z9*_ga*MTkxOTMyNTA1Ni4xNzE4MTAzNzMz*_ga_E60ZNX2F68*MTcyNDkzNDIyMC44LjEuMTcyNDkzNDU4Ni4zNC4wLjA.)
+Example Map: Nigeria: Reference Map of Ogun state (As of 26 December 2018) (Source: [OCHA](https://reliefweb.int/map/nigeria/nigeria-reference-map-ogun-state-26-december-2018?_gl=1*151t3z9*_ga*MTkxOTMyNTA1Ni4xNzE4MTAzNzMz*_ga_E60ZNX2F68*MTcyNDkzNDIyMC44LjEuMTcyNDkzNDU4Ni4zNC4wLjA)).
 ```
 
 ### Infrastructure maps
@@ -289,7 +289,7 @@ name: en_Infrastructure_Map_Nigeria
 align: center
 ---
 Example Map:  Nigeria - Borno State - Mogcolis Camp, General Infrastructure - Updated 24 July 2017
-align: center. Source: [REACH](https://reliefweb.int/map/nigeria/nigeria-borno-state-mogcolis-camp-general-infrastructure-updated-24-july-2017)
+align: center (Source: [REACH](https://reliefweb.int/map/nigeria/nigeria-borno-state-mogcolis-camp-general-infrastructure-updated-24-july-2017))
 ```
 
 ### Thematic maps
@@ -307,7 +307,7 @@ height: 600px
 name: en_thematic_map_example_IFRC
 align: center
 ---
-Example Map: Shelter Sector Turkiye: Rental prices changes, February - April 2023 (Source: [IFRC](https://reliefweb.int/map/turkiye/shelter-sector-turkiye-rental-prices-changes-february-april-2023))
+Example Map: Shelter Sector Turkiye: Rental prices changes, February - April 2023 (Source: [IFRC](https://reliefweb.int/map/turkiye/shelter-sector-turkiye-rental-prices-changes-february-april-2023)).
 ```
 
 ### Analysis maps
@@ -326,7 +326,7 @@ height: 600px
 name: en_Analysis_Map_Yemen
 align: center
 ---
-Example Map:  CCCM Cluster Yemen - REACH - Flood Hazard of IDP Sites - Marib governorate - Flood Depth Model. Source: [REACH](https://data.unhcr.org/es/documents/details/98946)
+Example Map:  CCCM Cluster Yemen - REACH - Flood Hazard of IDP Sites - Marib governorate - Flood Depth Model (Source: [REACH](https://data.unhcr.org/es/documents/details/98946)).
 ```
 
 ### Situation/descriptive maps
@@ -343,7 +343,7 @@ height: 600px
 name: en_Pop_Syrian_Refugees_2023
 align: center
 ---
-Example Map: UNHCR Iraq Population Profile - Breakdown Overview - Syrian Refugees Registration December 2023. Source: [UNHCR](https://reliefweb.int/report/iraq/unhcr-iraq-population-profile-breakdown-overview-syrian-refugees-registration-december-2023)
+Example Map: UNHCR Iraq Population Profile - Breakdown Overview - Syrian Refugees Registration December 2023 (Source: [UNHCR](https://reliefweb.int/report/iraq/unhcr-iraq-population-profile-breakdown-overview-syrian-refugees-registration-december-2023)).
 ```
 
 
