@@ -354,7 +354,7 @@ Example Map: UNHCR Iraq Population Profile - Breakdown Overview - Syrian Refugee
 Take a moment to reflect on what you've learned in this module. The questions below are designed to help you check your understanding of key concepts and identify areas you may want to review further. You don't need to submit your answers — this is for your own learning.
 
 :::{div} sd-text-italic sd-text-primary
-__1. What are the three core functions of GIS?__  
+1. __What are the three core functions of GIS?__  
 2. __What is spatial analysis and how did John Snow use spatial analysis in his cholera outbreak map from 1854?__  
 3. __Name the five common map types used in humanitarian work.__  
 :::
