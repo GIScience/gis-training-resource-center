@@ -28,7 +28,7 @@ width: 900px
 align: center
 name: en_digitisation_concept
 ---
-The concept of digitisation within GIS. Source: HeiGIT
+The concept of digitisation within GIS (Source: HeiGIT).
 ```
 
 ##  Digitising in QGIS
