@@ -346,4 +346,13 @@ align: center
 Example Map: UNHCR Iraq Population Profile - Breakdown Overview - Syrian Refugees Registration December 2023 (Source: [UNHCR](https://reliefweb.int/report/iraq/unhcr-iraq-population-profile-breakdown-overview-syrian-refugees-registration-december-2023)).
 ```
 
+::::{admonition} Self-Assessment Questions
+:class: note
 
+Take a moment to reflect on what you've learned in this module. The questions below are designed to help you check your understanding of key concepts and identify areas you may want to review further. You don't need to submit your answers — this is for your own learning.
+
+1. What are the three core functions of GIS?
+2. What is spatial analysis and how did John Snow use spatial analysis in his cholera outbreak map from 1854?
+3. Name the five common map types used in humanitarian work.
+
+::::
