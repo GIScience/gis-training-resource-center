@@ -467,16 +467,17 @@ GIS-operations, so it is always a good idea to do a quick google search. Amongst
 
 ## Self-Assessment Questions
 
-::::{topic} Test your knowledge
+::::{admonition} Test your knowledge
+:class: note
 
 Take a moment to recapitulate what you've learned in this chapter by answering the questions below:
 
-__1. What is QGIS, and what does it mean that it is “open source”?__
-__2. Name three things you can do working with QGIS.__
-__3. How do you know if a QGIS-project has been saved or not?__
-__4. How do you open a QGIS-project?__
-__5. How do you show and hide panels or toolbars?__
-__6. Where can you find help when you are encountering problems with QGIS?__
+1. __What is QGIS, and what does it mean that it is “open source”?__  
+2. __Name three things you can do working with QGIS.__  
+3. __How do you know if a QGIS-project has been saved or not?__
+4. __How do you open a QGIS-project?__
+5. __How do you show and hide panels or toolbars?__
+6. __Where can you find help when you are encountering problems with QGIS?__
 
 ::::
 
