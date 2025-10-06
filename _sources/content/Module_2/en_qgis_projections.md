@@ -255,6 +255,24 @@ getting the CRS right --->
 
 <!-- Move this part? At this point trainees have not worked with rasterdata--->
 
+## Self-Assessment Questions
+
+
+::::{admonition}
+:class: note
+
+Take a moment to test what you've learned in this chapter by answering the questions below:
+
+1. __Why is a map projection needed when visualizing the Earth in 2D? What distortions are inevitable when you project a spherical surface to a plane?__
+2. __Explain the difference between a Geographic CRS and a Projected (or Metric) CRS. What are their advantages and disadvantages?__
+3. __Why is it important to choose a CRS appropriate to your area of interest (local vs global)? What problems may arise if you apply a local CRS to global data (or vice versa)?__
+4. __What is an EPSG code, and how is it useful in selecting or referring to a CRS?__
+5. __How do you reproject (change the CRS) of a vector layer in QGIS?__
+
+
+::::
+
+
 ## Further resources
 
 The website [__I Hate Coordinate Systems!__](https://ihatecoordinatesystems.com/) 

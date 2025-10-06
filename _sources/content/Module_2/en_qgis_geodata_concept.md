@@ -422,6 +422,20 @@ onto your QGIS window, or open then through the "Data Source Manager".
 
 :::
 
+## Self-Assessment Questions
 
+::::{admonition} Test your knowledge
+:class: note
 
+Check whether you know the key concepts from this chapter by answering the questions below.
 
+1. __Define Geodata. What does it distinguish from regular tabular data?__
+2. __What are the two main types of geodata and how do they store information?__
+3. __Give examples of real‑world phenomena or features that are better represented as vector data vs. raster data.__
+4. __Describe the structure of a shapefile. What mandatory component files must accompany it?__
+5. __Explain the concept of a “layer” in GIS. Why do GIS systems use layers when building maps?__
+6. __Do you know how to import vector data into a QGIS project?__
+7. __Where are the layers imported into a QGIS project saved?__
+8. __If you have a `.csv` file or another delimited text file, what information must it contain in order to import it into QGIS as a point layer?__
+
+::::

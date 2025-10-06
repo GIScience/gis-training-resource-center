@@ -111,5 +111,13 @@ Make sure to unzip the exercise files before starting the exercises.
 
 ```
 
+## Self-Assessment Questions
 
+:::{admonition} Test what you've learned
+:class: note
+Take a moment to recapitulate what you've learned in this module by making sure you possess the competences below:
 
+1. __You know how to download the newest version of QGIS.__
+2. __You know how to set up your own standard folder structure.__
+
+:::
