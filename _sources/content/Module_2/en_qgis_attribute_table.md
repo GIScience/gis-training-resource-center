@@ -22,7 +22,7 @@ width: 600px
 align: center
 name: en_vector_data_overview
 ---
-Vector Data overview (Source: HeiGIT.
+Vector Data overview (Source: HeiGIT).
 ```
 
 :::{admonition} Now it's your turn!
