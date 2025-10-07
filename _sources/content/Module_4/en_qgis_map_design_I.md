@@ -392,6 +392,7 @@ Now that we have learned the different visual variables, and know how to use the
 ## Self-Assessment Questions
 
 ::::{admonition} Test your knowledge
+:class: note
 
 1. __What are “visual variables” (graphic variables) and how do they help in map design?__
 2. __Why is it important to consider colour schemes (hue, value, saturation) when styling maps?__

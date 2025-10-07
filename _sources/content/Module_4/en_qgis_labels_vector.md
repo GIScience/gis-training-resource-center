@@ -196,6 +196,7 @@ You can also read further in the article "[Labeling and text hierarchy in cartog
 ## Self-Assessment Questions
 
 ::::{admonition} Test your knowledge
+:class: note
 
 1. __When using Single Labels, what must you choose in order for labels to be displayed (i.e. what does “Value” refer to)?__
 2. __What is a “rule” in rule‑based labeling, and how do you build one (e.g. using expressions)?__

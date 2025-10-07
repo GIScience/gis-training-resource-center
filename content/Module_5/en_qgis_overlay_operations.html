@@ -65,7 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/Module_5/en_qgis_overlay_operations';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="5.3. Centroids" href="en_qgis_centroids.html" />
+    <link rel="next" title="5.4. Centroids" href="en_qgis_centroids.html" />
     <link rel="prev" title="5.1. Spatial data processing" href="en_qgis_spatial_tools.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -216,9 +216,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="en_module_5_overview.html">5. Intermediate GIS Operations</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_spatial_tools.html">5.1. Spatial data processing</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">5.2. Overlay Operations (Clip, Dissolve, Buffer)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_centroids.html">5.3. Centroids</a></li>
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_non_spatial_tools.html">5.4. Non-Spatial processing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_module_5_exercises.html">5.5. Exercises for Module 5</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_centroids.html">5.4. Centroids</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_non_spatial_tools.html">5.5. Non-Spatial processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_module_5_exercises.html">5.6. Exercises for Module 5</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Module_6/en_module_6_overview.html">6. Data Analysis with QGIS</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -564,6 +565,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">5.2. Overlay Operations (Clip, Dissolve, Buffer)</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clip">5.2.1. Clip</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-clipping-a-roads-layer-to-administrative-boundaries">5.2.2. Exercise: Clipping a roads layer to administrative boundaries</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dissolve">5.2.3. Dissolve</a></li>
@@ -571,6 +573,10 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-create-10km-buffer-around-health-centres">5.2.5. Exercise: Create 10km buffer around health centres</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#more-advanced-clipping-operations">5.2.6. More advanced clipping operations</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#self-assessment-questions">5.3. Self-Assessment Questions</a></li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -840,6 +846,16 @@ Clip vector by mask layer</label><div class="sd-tab-content docutils">
 </div>
 </section>
 </section>
+<section id="self-assessment-questions">
+<h1><span class="section-number">5.3. </span>Self-Assessment Questions<a class="headerlink" href="#self-assessment-questions" title="Permalink to this heading">#</a></h1>
+<div class="note admonition">
+<p class="admonition-title">Test your knowledge</p>
+<ol class="arabic simple">
+<li><p><strong>What is an overlay operation in GIS, and when is it useful?</strong></p></li>
+<li><p><strong>When carrying out overlay operations in QGIS, how do attribute tables of input layers combine in the output layer? What happens to attributes from each input?</strong></p></li>
+</ol>
+</div>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -885,7 +901,7 @@ Clip vector by mask layer</label><div class="sd-tab-content docutils">
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">5.3. </span>Centroids</p>
+        <p class="prev-next-title"><span class="section-number">5.4. </span>Centroids</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -904,6 +920,7 @@ Clip vector by mask layer</label><div class="sd-tab-content docutils">
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">5.2. Overlay Operations (Clip, Dissolve, Buffer)</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clip">5.2.1. Clip</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-clipping-a-roads-layer-to-administrative-boundaries">5.2.2. Exercise: Clipping a roads layer to administrative boundaries</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dissolve">5.2.3. Dissolve</a></li>
@@ -911,6 +928,10 @@ Clip vector by mask layer</label><div class="sd-tab-content docutils">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-create-10km-buffer-around-health-centres">5.2.5. Exercise: Create 10km buffer around health centres</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#more-advanced-clipping-operations">5.2.6. More advanced clipping operations</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#self-assessment-questions">5.3. Self-Assessment Questions</a></li>
+</ul>
+
   </nav></div>
 
 </div></div>

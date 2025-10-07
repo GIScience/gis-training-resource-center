@@ -404,6 +404,7 @@ There is also a library with humanitarian icons by the [United Nations Office fo
 ## Self-Assessment Questions
 
 ::::{admonition} Test your knowledge
+:class: note
 
 1. __Name and describe the four main symbolisation methods used for vector layers.__
 2. __Where is a layer's symbology saved?__

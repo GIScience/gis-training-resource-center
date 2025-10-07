@@ -363,6 +363,7 @@ Graduated classification in QGIS 3.36.
 ## Self-Assessment Questions
 
 ::::{admonition} Check your knowledge
+:class: note
 
 1. __What is geodata classification, and why is it useful in GIS?__
 2. __What are the three different classification methods available in QGIS? Explain their differences.__

@@ -500,6 +500,7 @@ Digitising Errors (Source: SpatialPost).
 ## Self-Assessment Questions
 
 ::::{admonition} Recapitulate your knowledge
+:class: note 
 
 1. __What is digitisation in GIS? Why is converting features from maps or images into vector form useful?__
 2. __How do you create a new vector dataset?__

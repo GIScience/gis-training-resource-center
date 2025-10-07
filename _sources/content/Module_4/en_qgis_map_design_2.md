@@ -170,10 +170,11 @@ Now that we have covered what to keep in mind when designing maps, let's take a 
 ## Self-Assessment Questions
 
 ::::{admonition} Check your knowledge
+:class: note
 
 1. __What is the print layout manager and why do you use it to create maps in QGIS instead of the main QGIS window?__
 2. __What are the key map elements (map components) you should include in a final layout (e.g. title, legend, north arrow, scale bar, inset, northing, attribution)?__
-3. __How do you lock layer in a map you've added to the print layout?__
+
 
 :::
 

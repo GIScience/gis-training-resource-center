@@ -98,6 +98,7 @@ To achieve this,
 ## Self-Assessment Questions
 
 ::::{admonition} Test your knowledge
+:class: note
 
 1. __Why can’t you style a raster layer by changing “fill” or “outline” in the way you do with vector data?__
 2. __What is the default rendering style for a single‑band raster in QGIS, and into what style is it commonly changed for better visualisation?__
