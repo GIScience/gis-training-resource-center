@@ -94,3 +94,16 @@ To achieve this,
 3. The hillshade will be very dark and cover most of the map. We need to make it lighter. Set the `Blending mode` to "Overlay". 
 
 -->
+
+## Self-Assessment Questions
+
+::::{admonition} Test your knowledge
+
+1. __Why can’t you style a raster layer by changing “fill” or “outline” in the way you do with vector data?__
+2. __What is the default rendering style for a single‑band raster in QGIS, and into what style is it commonly changed for better visualisation?__
+3. __What is a “colour ramp” (or gradient) in the context of raster symbology, and how does it help interpret the data?__
+4. __Give an example of a raster dataset (e.g. digital elevation model, NDVI, precipitation) and propose a suitable colour ramp or palette you might use in QGIS__
+5. __When designing a colour ramp for raster data (e.g. elevation, temperature), what should you watch out for in terms of lightness, hue, or perceptual uniformity?__
+
+
+::::

@@ -145,3 +145,12 @@ Alternatively, it is also possible to remove the white background. This is done 
 
 <!--TIPS and TRICKS
 Avoid QGIS Bug, Dock the georef window,...?-->
+
+## Self-Assessment Questions
+
+::::{admonition} Test your knowledge
+
+1. __What is georeferencing, and why is it important?__
+2. __What are Ground Control Points (GCPs)? Why is it important to distribute them evenly across the image?__
+
+::::

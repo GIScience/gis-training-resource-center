@@ -388,3 +388,15 @@ A complex map using graduated colours to signify flood depth as well as the floo
 
 
 Now that we have learned the different visual variables, and know how to use them to create complex maps, the next chapter [Symbology for Vector data](/content/Module_4/en_qgis_styling_vector_data.md) will explain how to set up different symbolisation and styling methods in QGIS. 
+
+## Self-Assessment Questions
+
+::::{admonition} Test your knowledge
+
+1. __What are “visual variables” (graphic variables) and how do they help in map design?__
+2. __Why is it important to consider colour schemes (hue, value, saturation) when styling maps?__
+3. __What is the difference between categorical (qualitative), sequential, and diverging colour schemes? When is each appropriate?__
+4. __What are some common ways to style vector data (lines, points, polygons)? Give examples (e.g. changing stroke, fill, using symbols).__
+5. __What is a choropleth map? How is it different from a graduated symbol map?__
+
+::::

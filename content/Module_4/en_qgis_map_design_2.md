@@ -167,6 +167,16 @@ Operational overview or response activity map (Source: [Shelter Cluster Vanuata]
 
 Now that we have covered what to keep in mind when designing maps, let's take a look at how to create maps with the print layout composer in QGIS.
 
+## Self-Assessment Questions
+
+::::{admonition} Check your knowledge
+
+1. __What is the print layout manager and why do you use it to create maps in QGIS instead of the main QGIS window?__
+2. __What are the key map elements (map components) you should include in a final layout (e.g. title, legend, north arrow, scale bar, inset, northing, attribution)?__
+3. __How do you lock layer in a map you've added to the print layout?__
+
+:::
+
 ## Further Resources
 
 - [Data Visualization Accessibility Checklist](https://learn-sims.org/style-guidance/data-visualization-accessibility-checklist/)
