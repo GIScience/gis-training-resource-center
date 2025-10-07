@@ -248,3 +248,14 @@ Screenshot of the tool Clip vector by mask layer
 :::
 
 ::::
+
+## Self-Assessment Questions
+
+::::{admonition} Test your knowledge
+:class: note
+
+1. __What is an overlay operation in GIS, and when is it useful?__
+2. __When carrying out overlay operations in QGIS, how do attribute tables of input layers combine in the output layer? What happens to attributes from each input?__
+
+::::
+

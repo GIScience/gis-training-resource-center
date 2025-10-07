@@ -341,6 +341,7 @@ The only item in the print layout that is being controlled by the atlas is the m
 ## Self-Assessment Questions
 
 ::::{admonition} Test your knowledge
+:class: note
 
 1. __How do you create or open a new layout in QGIS?__
 2. __What is the difference between the “map item” (map frame) inside a layout and the main QGIS map canvas?__

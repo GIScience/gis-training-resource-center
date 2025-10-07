@@ -111,6 +111,7 @@ When you are using QuickMapServices, be aware that some of these maps are under 
 ## Self-Assessment Questions
 
 ::::{admonition} Check your skills
+:class: note
 
 Check whether you know the key concepts from this chapter by answering the questions below.
 

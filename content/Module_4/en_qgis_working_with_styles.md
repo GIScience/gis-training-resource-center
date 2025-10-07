@@ -56,6 +56,7 @@ You can also import styles directly in the styling panel of a layer. But it will
 
 
 ::::{admonition} Test your knowledge
+:class: note
 
 1. __What are the advantages of creating and using styles?__
 2. __How do you import or export a style?__

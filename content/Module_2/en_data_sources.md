@@ -296,6 +296,7 @@ Downloading data from HOT Export Tool.
 ## Self-Assessment Questions
 
 ::::{admonition} Test your knowledge
+:class: note
 
 Take a moment to recapitulate what you've learned in this chapter by answering the questions below:
 

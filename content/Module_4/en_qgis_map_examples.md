@@ -197,6 +197,7 @@ It is a mistake because:
 ## Self-Assessment Questions
 
 ::::{admonition} Test your knowledge
+:class: note
 
 1. __What makes a map “good” or effective? In your own words, list at least three qualities or principles illustrated by the example maps.__
 2. __Consider the intended audience and use case for one of the example maps (e.g. humanitarian, operational, public communication). How do design choices reflect that audience (e.g. simplicity, clarity, icon selection)?__

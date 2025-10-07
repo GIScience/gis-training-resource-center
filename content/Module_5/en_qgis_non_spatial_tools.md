@@ -309,3 +309,16 @@ In this short video, you will discover the location of the query builder and lea
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_query_builder.mp4"></video>
 ````
 
+## Self-Assessment Questions
+
+::::{admonition} Test your knowledge
+:class: note
+
+1. __What does “non‑spatial processing” mean in the context of GIS / QGIS? How does it differ from spatial operations?__
+2. __What is a “non‑spatial join” (Join Attributes by Field Value)? Describe how and when you would use it.__
+3. __What conditions must be true for a non‑spatial join to work correctly? (E.g. key fields, matching values, data types)__
+4. __What kinds of operations can you perform using table functions (add field, delete field, calculate field)?__
+5. __What is a non‑spatial query? How would you use “Select by expression” to filter your data?__
+
+::::
+
