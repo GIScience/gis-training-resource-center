@@ -231,3 +231,18 @@ If you are unsure which format is most appropriate, check out the [geodata types
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_export_wiki.mp4"></video>
 
 
+## Self-Assessment Questions
+
+::::{admonition} Check your knowledge
+:class: note
+
+Check whether you know the key concepts from this chapter by answering the questions below.
+
+1. __What is the attribute table in a vector layer, and how is it structured?__
+2. __How can you open the attribute table in QGIS?__
+3. __How do you zoom to a specific feature using the attribute table?__
+4. __Describe how to manually select features via the attribute table, and how to show only selected or unselected features.__
+5. __Once you have selected a subset of features, how do you save just those features into a new layer (or file)?__
+
+::::
+
