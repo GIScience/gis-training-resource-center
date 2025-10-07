@@ -496,3 +496,15 @@ name: Digitization_Errors
 ---
 Digitising Errors (Source: SpatialPost).
 ```
+
+## Self-Assessment Questions
+
+::::{admonition} Recapitulate your knowledge
+
+1. __What is digitisation in GIS? Why is converting features from maps or images into vector form useful?__
+2. __How do you create a new vector dataset?__
+3. __Why must a layer be put into “editing mode” before making changes (adding, deleting, or modifying features)?__
+4. __Imagine you’re digitising flood‑affected buildings from an aerial image. What attribute fields might you include, and what level of detail or accuracy would you try to maintain?__ 
+
+::::
+

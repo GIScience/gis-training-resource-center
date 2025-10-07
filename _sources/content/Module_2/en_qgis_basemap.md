@@ -108,4 +108,14 @@ When you are using QuickMapServices, be aware that some of these maps are under 
 
 ```
 
+## Self-Assessment Questions
 
+::::{admonition} Check your skills
+
+Check whether you know the key concepts from this chapter by answering the questions below.
+
+1. __What is a basemap, and why is it useful in GIS projects?__
+2. __How do you add a basemap to QGIS? Describe at least one method (plugin, XYZ tiles, etc.).__
+3. __What are attribution requirements, and how should you handle them when using basemaps from third‑party providers?__
+
+::::

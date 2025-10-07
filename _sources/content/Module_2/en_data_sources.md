@@ -293,4 +293,15 @@ name: hot_export_done
 Downloading data from HOT Export Tool.
 ```
 
+## Self-Assessment Questions
 
+::::{admonition} Test your knowledge
+
+Take a moment to recapitulate what you've learned in this chapter by answering the questions below:
+
+1. __What criteria should you check when selecting geodata for a project? (e.g. source trustworthiness, size / resolution, format, date, license)__
+2. __Why is the “data license” an important consideration when using geodata?__
+3. __How does the date of data capture affect its usefulness? Give an example of when older data might mislead your analysis.__
+4. __What might be the challenges when integrating data from different sources (e.g. up-to-dateness, different projections, formats, coverage, or metadata completeness)?__
+
+::::
