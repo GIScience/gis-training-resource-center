@@ -164,4 +164,16 @@ Selected features are again highlighted in bright yellow in your geospatial inte
 
 <!--ADD examples relevant to IM? -->
 
+## Self-Assessment Questions
+
+::::{admonition} Test your knowledge
+:class: note
+
+1. __What are the three general types of selection or queries in QGIS? Give a brief description of each.__
+2. __How do you perform a manual selection of features in QGIS?__
+3. __How do you perform an attribute-based selection in QGIS?__
+4. __Name at least four geometric operators in spatial queries (e.g. “Intersect”, “Within”) and explain what they do.__
+
+::::
+
 [def]: /fig/mActionSelectRectangle.png

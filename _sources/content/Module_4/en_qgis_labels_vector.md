@@ -192,6 +192,18 @@ You can also read further in the article "[Labeling and text hierarchy in cartog
 
 :::
 
+
+## Self-Assessment Questions
+
+::::{admonition} Test your knowledge
+
+1. __When using Single Labels, what must you choose in order for labels to be displayed (i.e. what does “Value” refer to)?__
+2. __What is a “rule” in rule‑based labeling, and how do you build one (e.g. using expressions)?__
+3. __Why might you prefer rule‑based labeling instead of labeling every feature (using Single Labels)? Give an example scenario.__
+4. __Why is it generally discouraged to label numerical (continuous) values directly as text labels?__
+
+::::
+
 ## Further Resources
 
 - [IFRC brand-compliant fonts](https://learn-sims.org/style-guidance/standard-fonts/)

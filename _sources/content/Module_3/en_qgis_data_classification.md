@@ -360,3 +360,15 @@ Graduated classification in QGIS 3.36.
 ```
 :::
 
+## Self-Assessment Questions
+
+::::{admonition} Check your knowledge
+
+1. __What is geodata classification, and why is it useful in GIS?__
+2. __What are the three different classification methods available in QGIS? Explain their differences.__
+3. __Name three different methods to divide quantitative data into classes. What are their differences?__
+4. __What are the trade‑offs or challenges involved in choosing the number of classes in a graduated classification?__
+
+
+::::
+

@@ -193,3 +193,15 @@ It is a mistake because:
 <!-- ![](/../fig/en_modifiable_areal_unit_problem_example.png) -->
 
 ---
+
+## Self-Assessment Questions
+
+::::{admonition} Test your knowledge
+
+1. __What makes a map “good” or effective? In your own words, list at least three qualities or principles illustrated by the example maps.__
+2. __Consider the intended audience and use case for one of the example maps (e.g. humanitarian, operational, public communication). How do design choices reflect that audience (e.g. simplicity, clarity, icon selection)?__
+3. __What mistakes should you avoid when designing a map? Name three points and explain why it is bad design.__
+
+
+::::
+

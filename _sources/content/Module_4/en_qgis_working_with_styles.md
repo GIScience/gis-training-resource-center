@@ -50,3 +50,16 @@ When a styling is saved in the same location as the data and has the same name a
 ```{note}
 You can also import styles directly in the styling panel of a layer. But it will not be added to your style library unless you save it into your library.
 ```
+
+
+## Self-Assessment Questions
+
+
+::::{admonition} Test your knowledge
+
+1. __What are the advantages of creating and using styles?__
+2. __How do you import or export a style?__
+3. __How would you share styles with colleagues or across different machines? What should you watch out for (e.g. file paths, resource dependencies)?__
+4. __If a style references an external resource (e.g. an SVG symbol or image), what could happen if that resource is missing or relocated?__ 
+
+::::

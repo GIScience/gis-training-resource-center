@@ -337,3 +337,15 @@ The only item in the print layout that is being controlled by the atlas is the m
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_setting_up_an_atlas
 .mp4"></video>
 :::
+
+## Self-Assessment Questions
+
+::::{admonition} Test your knowledge
+
+1. __How do you create or open a new layout in QGIS?__
+2. __What is the difference between the “map item” (map frame) inside a layout and the main QGIS map canvas?__
+3. __How do you lock layer in a map you've added to the print layout?__
+4. __If you update your map layers or styling in the QGIS project after creating a layout, what will happen to the layout when you re-open it?__
+
+
+::::

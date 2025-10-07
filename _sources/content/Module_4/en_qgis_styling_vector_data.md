@@ -401,7 +401,17 @@ There is also a library with humanitarian icons by the [United Nations Office fo
 
 :::
 
+## Self-Assessment Questions
 
+::::{admonition} Test your knowledge
+
+1. __Name and describe the four main symbolisation methods used for vector layers.__
+2. __Where is a layer's symbology saved?__
+3. __When styling polygon layers (e.g. administrative boundaries), what is the purpose of using transparent fill and visible outlines?__
+4. __Explain how to create a choropleth map in QGIS using graduated colours. What do you need to choose (e.g. attribute, number of classes, colour ramp)?__
+5. __What are SVG symbols, and what advantages do they offer over raster images for point symbology?__
+
+::::
 
 ## Further Resources
 

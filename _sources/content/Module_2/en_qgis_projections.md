@@ -258,7 +258,7 @@ getting the CRS right --->
 ## Self-Assessment Questions
 
 
-::::{admonition}
+::::{admonition} Test your knowledge
 :class: note
 
 Take a moment to test what you've learned in this chapter by answering the questions below:
