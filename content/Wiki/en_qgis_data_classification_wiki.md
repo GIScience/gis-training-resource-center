@@ -9,7 +9,7 @@ The attributes of geospatial data are stored in a specific column within the att
 
 ```{figure} /fig/classification_basic.drawio.png
 ---
-width: 700px
+width: 800px
 name: classification_basic_wiki
 align: center
 ---
