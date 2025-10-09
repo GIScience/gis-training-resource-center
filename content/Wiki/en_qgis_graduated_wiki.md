@@ -3,18 +3,22 @@
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-Graduated classification in GIS involves categorizing spatial data into classes or ranges based on a progression of values. This method is particularly useful for visualizing quantitative data, allowing for the differentiation of intensity, density, or magnitude across a spectrum, facilitating a nuanced representation of geographic phenomena.
+- Graduated classification in GIS involves categorizing spatial data into **classes or ranges** based on a progression of values. 
+- This method is particularly useful for visualizing quantitative data, allowing for the differentiation of intensity, density, or magnitude across a spectrum, facilitating a nuanced representation of geographic phenomena.
 
-Graduated classification is used for quantitative data usually __interval__ or __ratio__ scaled.
+- Graduated classification is used for quantitative data usually __interval__ or __ratio__ scaled.
 
 | Data Scale     | Definition                                         | Example                             | Typical Data Format                          |
 |----------------|----------------------------------------------------|-------------------------------------|----------------------------------------------|
 | Interval Scale | Equal intervals between values, no true zero point | Temperature (Celsius)               | Float (44.5 Degree)                          |
 | Ratio Scale    | Equal intervals with a true zero point             | Population, Length, Number of trees | Integer (5 Trees) or Float (12.5 km of Road) |
 
-To classify quantitative data there are many methods how to set up the classes. There is no single best way to select a method or to decide how many classes you like to use. It all comes down to what you want to show.
 
+
+:::{dropdown} Video: Applying a graduated classification to a layer
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/graduated_classification.mp4"></video>
+:::
+
 
 __To classify data in classes…__
 -  Right-click on your layer
@@ -39,3 +43,17 @@ align: center
 - Click `Apply` to put your adjustment into effect.
 - Click `OK` to close the window.
 
+## The number of classes
+
+- Deciding on the number of classes, and where the ranges for the different classes lie, has profound impact on the resulting map.
+- There are seven ways in QGIS to split quantitative data into classes. 
+- The four most important ones are: Equal intervals, Quantile, Natural breaks, Manual. 
+- In general, you should limit the number of classes between 3 to 9.
+
+:::{figure} /fig/classification_method_map.drawio.svg
+---
+width: 750 px
+name: classification_method_map_wiki
+---
+The impact of different class breaks on maps (Source: HeiGIT, adapted from [Axis Maps](https://www.axismaps.com/guide/data-classification)).
+:::
