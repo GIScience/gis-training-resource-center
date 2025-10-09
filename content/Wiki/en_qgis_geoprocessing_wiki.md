@@ -1,4 +1,12 @@
+---
+title: Test
+subtitle: A test subtitle
+authors: HeiGIT
+license: CC-BY-SA-4.0
+---
+
 # Geoprocessing
+
 
 
 __🔙[Back to Homepage](/content/intro.md)__
@@ -48,7 +56,7 @@ In QGIS, only the attributes selected for the dissolve operation will receive th
 
 The ![](/fig/intersection_icon.png) `intersection` tool extracts the part of layers which overlap.
 
-1. Click `Vector` -> `Geoprocessing Tool` -> `Intersection` OR `Toolbox` -> Search for `Intersection`
+1. In the top bar, navigate to `Vector` -> `Geoprocessing Tool` -> `Intersection` OR `Toolbox` -> Search for `Intersection`
 2. `Input layer`: select layer one 
 3. `Overlay layer`: select layer two
 4. `Intersection`: Specify where you want to save the results and give it a good name 
@@ -72,5 +80,8 @@ Source: GISGeography.com
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_intersect.mp4"></video>
 
+## Centroids
 
+With the ![](/fig/qgis_3.40_centroids.png) `Centroids`-tool, you can create a new layer with points at the centre of each polygon.  
 
+1. In the top bar, navigate to `Vector` -> `Geoprocessing Tool` -> `Intersection` OR `Toolbox` -> Search for `Intersection`
