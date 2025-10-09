@@ -358,7 +358,14 @@ __Join attributes by location (summary)__ tool.
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_spatial_join.mp4"></video>
 ````
 
+## Self-Assessment Questions
 
+::::{admonition} Test your knowledge
+:class: note
 
+1. __What differentiates a spatial processing tool from a non-spatial processing tool?__
+2. __Name and briefly describe at least three common spatial tools or operations covered (e.g. buffer, clip, dissolve, intersect, union).__ 
+3. __If you have a layer of roads and you apply a buffer of 100 m around each road, what is the resulting geometry and what is one possible use case__
+4. __Why is it important to check whether input layers have compatible projections / CRSs before running spatial tools?__
 
-
+::::
