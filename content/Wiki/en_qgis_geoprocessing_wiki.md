@@ -1,10 +1,3 @@
----
-title: Test
-subtitle: A test subtitle
-authors: HeiGIT
-license: CC-BY-SA-4.0
----
-
 # Geoprocessing
 
 
@@ -77,11 +70,20 @@ name: Intersect_concept_2
 
 Source: GISGeography.com
 ```
-
+:::{dropdown} Example: Intersect countries with timezones
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_intersect.mp4"></video>
+:::
 
 ## Centroids
 
 With the ![](/fig/qgis_3.40_centroids.png) `Centroids`-tool, you can create a new layer with points at the centre of each polygon.  
 
-1. In the top bar, navigate to `Vector` -> `Geoprocessing Tool` -> `Intersection` OR `Toolbox` -> Search for `Intersection`
+1. In the top bar, navigate to `Vector` -> `Geometry Tools` -> `Centroids`. Alternatively, search for `Centroids` in the [Processing Toolbox]. Open the tool by <kbd>Double-clicking</kbd> on it. 
+2. `Input layer`: select the polygon layer
+3. Click `Run`.
+4. The new layer will be added to your project. 
+
+
+:::{dropdown} Example: Create a centroid for each district in madagascar
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_3.40_centroids.mp4"></video>
+:::
