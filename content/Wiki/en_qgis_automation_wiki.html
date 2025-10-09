@@ -65,6 +65,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/Wiki/en_qgis_automation_wiki';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Visualisation and Map Making in QGIS" href="en_qgis_representation_wiki.html" />
+    <link rel="prev" title="Basic Raster Operations" href="en_qgis_raster_basic_wiki.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -257,7 +259,7 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Wiki</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="en_qgis_qgis_basics_wiki.html">QGIS Basics</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_installation_wiki.html">QGIS installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_interface_wiki.html">QGIS Interface</a></li>
@@ -302,6 +304,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_raster_basic_wiki.html">Basic Raster Operations</a></li>
 </ul>
 </li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Automatisation in QGIS (The Model Builder)</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="en_qgis_representation_wiki.html">Visualisation and Map Making in QGIS</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_visualisation_wiki.html">Visualisation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_map_making_wiki.html">The Print Layout Composer</a></li>
@@ -629,7 +632,7 @@ document.write(`
 <figure class="align-default" id="en-qgis-3-40-model-adding-algorithms">
 <a class="reference internal image-reference" href="../../_images/en_qgis_3.40_model_adding_algorithms.png"><img alt="../../_images/en_qgis_3.40_model_adding_algorithms.png" src="../../_images/en_qgis_3.40_model_adding_algorithms.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-text">The parameters page for the “Buffer”-algorithm in the model builder</span><a class="headerlink" href="#en-qgis-3-40-model-adding-algorithms" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 15 </span><span class="caption-text">The parameters page for the “Buffer”-algorithm in the model builder</span><a class="headerlink" href="#en-qgis-3-40-model-adding-algorithms" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
@@ -643,7 +646,7 @@ document.write(`
 <figure class="align-default" id="en-qgis-3-40-model-adding-more-steps">
 <a class="reference internal image-reference" href="../../_images/en_qgis_3.40_model_adding_more_steps.png"><img alt="../../_images/en_qgis_3.40_model_adding_more_steps.png" src="../../_images/en_qgis_3.40_model_adding_more_steps.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-text">Selecting “Algorithm output” as Input layer to chain several processing steps together.</span><a class="headerlink" href="#en-qgis-3-40-model-adding-more-steps" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 16 </span><span class="caption-text">Selecting “Algorithm output” as Input layer to chain several processing steps together.</span><a class="headerlink" href="#en-qgis-3-40-model-adding-more-steps" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p><strong>Executing the Model</strong></p>
@@ -657,7 +660,7 @@ document.write(`
 <figure class="align-default" id="en-3-40-model-run-inputs">
 <a class="reference internal image-reference" href="../../_images/en_3.40_model_run_inputs.png"><img alt="../../_images/en_3.40_model_run_inputs.png" src="../../_images/en_3.40_model_run_inputs.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-text">Selecting the inputs before running the model.</span><a class="headerlink" href="#en-3-40-model-run-inputs" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 17 </span><span class="caption-text">Selecting the inputs before running the model.</span><a class="headerlink" href="#en-3-40-model-run-inputs" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <!---
@@ -701,6 +704,24 @@ Export the model via Model > Export > Export as Image/PDF/SVG Python Script
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="en_qgis_raster_basic_wiki.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Basic Raster Operations</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="en_qgis_representation_wiki.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Visualisation and Map Making in QGIS</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
