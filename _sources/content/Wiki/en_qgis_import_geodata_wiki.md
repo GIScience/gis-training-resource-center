@@ -18,7 +18,7 @@ When importing a shapefile by drag-and-drop you have to use the file with the en
 4. Back in QGIS click `Add`
 
 
-<video width="70%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_vector.mp4"></video>
+<video width="85%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_vector.mp4"></video>
 
 
 #### Open vector data via drag-and-drop
@@ -26,7 +26,7 @@ When importing a shapefile by drag-and-drop you have to use the file with the en
 1. In your file browser, open the folder with the vector data you want to import.
 2. Drag-and-drop it onto the QGIS map canvas.
 
-<video width="70%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_vector_d_d.mp4"></video>
+<video width="85%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_vector_d_d.mp4"></video>
 
 ## Raster data Import 
 
@@ -37,7 +37,7 @@ When importing a shapefile by drag-and-drop you have to use the file with the en
 3. Select the file and click `Open`
 4. Back in QGIS click `Add`
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_raster.mp4"></video>
+<video width="85%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_raster.mp4"></video>
 
 
 ### Open raster data via drag-and-drop
