@@ -564,6 +564,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#manual-selection">Manual selection</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#select-by-location">Select by Location</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#export-selection">Export Selection</a></li>
 </ul>
             </nav>
         </div>
@@ -581,8 +582,11 @@ document.write(`
 <section id="manual-selection">
 <h2>Manual selection<a class="headerlink" href="#manual-selection" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Select features individually by clicking on each one.</p></li>
-<li><p>You can select them one after the other.</p></li>
+<li><p>In the toolbar, select the <img alt="" src="../../_images/selection_toolbar_feature_selection.png" /> <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">Features</span></code> tool.</p></li>
+<li><p>Select features individually by clicking on a feature.</p></li>
+<li><p>To select several features, you can press and hold <kbd>Ctrl</kbd> (<kbd>Cmd</kbd> on MacOS) and select one feature after the other.</p></li>
+<li><p>Selected features will be highlighted in bright yellow.</p></li>
+<li><p>If you open the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html">attribute table</a>, the selected feature will appear in blue.</p></li>
 </ul>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
 <summary class="sd-summary-title sd-card-header">
@@ -591,24 +595,17 @@ Example: Manually select countries<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_features_by_click_wiki.mp4"></video></p>
+<p class="sd-card-text"><video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_features_by_click_wiki.mp4"></video></p>
 </div>
 </details></section>
 <section id="select-by-location">
 <h2>Select by Location<a class="headerlink" href="#select-by-location" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
-<li><p>There are several spatial query operations:</p>
-<ul>
-<li><p>Intersect</p></li>
-<li><p>Contain</p></li>
-<li><p>Disjoint</p></li>
-<li><p>Equal</p></li>
-<li><p>Touch</p></li>
-<li><p>Overlap</p></li>
-<li><p>Are Within</p></li>
-<li><p>Cross</p></li>
-</ul>
-</li>
+<li><p>QGIS lets you select features based on their location using the tool <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">by</span> <span class="pre">Location</span></code>.</p></li>
+<li><p>The tool uses spatial queries to select features. These look at the spatial relations between a set of features.</p></li>
+<li><p>For example two features can intersect, or another feature is fully contained within another, or two features do not touch each other (disjoint).</p></li>
+<li><p>QGIS uses the following spatial relations: Intersect, Contain, Disjoint, Equal, Touch, Overlap, Are Within, Cross.</p></li>
+<li><p>Check out the <a class="reference external" href="https://docs.qgis.org/3.40/en/docs/user_manual/processing_algs/qgis/vectorselection.html#exploring-spatial-relations">QGIS documentation on spatial relations</a> to learn the differences between each spatial relation.</p></li>
 </ul>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
 <summary class="sd-summary-title sd-card-header">
@@ -617,7 +614,7 @@ Example: Select all cities in China (<code class="docutils literal notranslate">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_location_intersect_wiki.mp4"></video></p>
+<p class="sd-card-text"><video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_location_intersect_wiki.mp4"></video></p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
 <summary class="sd-summary-title sd-card-header">
@@ -626,9 +623,19 @@ Example: Select all neighboring countries of China (<code class="docutils litera
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_location_touch_wiki.mp4"></video></p>
+<p class="sd-card-text"><video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_location_touch_wiki.mp4"></video></p>
 </div>
 </details></section>
+<section id="export-selection">
+<h2>Export Selection<a class="headerlink" href="#export-selection" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Once selected, you can further manipulate the features by, for example, exporting them to a new layer:</p>
+<ul>
+<li><p><kbd>Right-click</kbd> on the layer with the selected features -&gt; <code class="docutils literal notranslate"><span class="pre">Export</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">selected</span> <span class="pre">features</span> <span class="pre">as..</span></code></p></li>
+</ul>
+</li>
+</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -696,6 +703,7 @@ Example: Select all neighboring countries of China (<code class="docutils litera
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#manual-selection">Manual selection</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#select-by-location">Select by Location</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#export-selection">Export Selection</a></li>
 </ul>
   </nav></div>
 
