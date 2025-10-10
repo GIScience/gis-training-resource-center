@@ -14,7 +14,7 @@ __To adjust the style of a layer...__
 - Click on `Symbology`
 - Confirm that the layer setting is on `Single Symbol`
 - Select the colour of your choice in the drop-down menu. For more colour options select in the drop-down menu `Choose Color`
-- *Optional*:. You can adjust the opacity/ transparency of the layer. This can be very useful when you want to show multiple overlapping layers.
+- *Optional*: You can adjust the opacity/ transparency of the layer. This can be very useful when you want to show multiple overlapping layers.
 - *Optional*: Here you can set the unit type. This is useful when you want for example visualize points in a certain size.
 - Optional. Here you can find standard and previously used styles quickly.
 - Click `Apply` to put your adjustment into effect.
