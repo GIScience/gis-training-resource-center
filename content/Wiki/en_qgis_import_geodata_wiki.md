@@ -17,11 +17,16 @@ When importing a shapefile by drag-and-drop you have to use the file with the en
 3. Select the file and click `Open`
 4. Back in QGIS click `Add`
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_vector.mp4"></video>
+
+<video width="70%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_vector.mp4"></video>
 
 
 #### Open vector data via drag-and-drop
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_vector_d_d.mp4"></video>
+
+1. In your file browser, open the folder with the vector data you want to import.
+2. Drag-and-drop it onto the QGIS map canvas.
+
+<video width="70%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_vector_d_d.mp4"></video>
 
 ## Raster data Import 
 
@@ -66,7 +71,7 @@ When loading vector data in text format like .csv or .txt in QGIS, these data ha
 1.  `Layer` -> `Add Layer` ->`Open Delimited Text Layer`.
 2. Click on `File name` click on the three points ![](/fig/Three_points.png) and navigate to your csv. file and click `Open`.
 3. In the window "Data Source manager| Delimited Text" in QGIS you can find multiple drop-down menus
-    * `File Format`: Here you can specify which delimiter is used in the file you want to import. In a standard .csv file commas `,` is used. If this is not the case, select `Costume delimiters`. Here you can choose the exact delimiter used in your file. 
+    * `File Format`: Here you can specify which delimiter is used in the file you want to import. In a standard `.csv` file commas `,` is used. If this is not the case, select `Custom delimiters`. Here you can choose the exact delimiter used in your file. 
     ```{Tip}
     To find out which delimiter is used you can open your .csv file in Notepad or Excel. There you can check which delimiter is used to separate the information.
     ```
