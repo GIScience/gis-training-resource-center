@@ -9,7 +9,7 @@ This is a vital concept to understand since analysis, as well as visualisation o
 :::{figure} /fig/Layer_concept.png
 ---
 name: layer_concept_wiki
-width: 750 px
+width: 500 px
 ---
 The layer concept in GIS applications. Source unknown. All rights reserved. This content is excluded from our Creative Commons license.
 :::
