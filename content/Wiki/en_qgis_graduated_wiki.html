@@ -539,7 +539,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -555,6 +557,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-number-of-classes">The number of classes</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -567,8 +577,11 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="graduated-classification">
 <h1>Graduated classification<a class="headerlink" href="#graduated-classification" title="Permalink to this heading">#</a></h1>
 <p><strong>🔙<a class="reference internal" href="../intro.html"><span class="doc std std-doc">Back to Homepage</span></a></strong></p>
-<p>Graduated classification in GIS involves categorizing spatial data into classes or ranges based on a progression of values. This method is particularly useful for visualizing quantitative data, allowing for the differentiation of intensity, density, or magnitude across a spectrum, facilitating a nuanced representation of geographic phenomena.</p>
-<p>Graduated classification is used for quantitative data usually <strong>interval</strong> or <strong>ratio</strong> scaled.</p>
+<ul class="simple">
+<li><p>Graduated classification in GIS involves categorizing spatial data into <strong>classes or ranges</strong> based on a progression of values.</p></li>
+<li><p>This method is particularly useful for visualizing quantitative data, allowing for the differentiation of intensity, density, or magnitude across a spectrum, facilitating a nuanced representation of geographic phenomena.</p></li>
+<li><p>Graduated classification is used for quantitative data usually <strong>interval</strong> or <strong>ratio</strong> scaled.</p></li>
+</ul>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Data Scale</p></th>
@@ -590,9 +603,16 @@ document.write(`
 </tr>
 </tbody>
 </table>
-<p>To classify quantitative data there are many methods how to set up the classes. There is no single best way to select a method or to decide how many classes you like to use. It all comes down to what you want to show.</p>
-<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/graduated_classification.mp4"></video></p>
-<p><strong>To classify data in classes…</strong></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Video: Applying a graduated classification to a layer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/graduated_classification.mp4"></video></p>
+</div>
+</details><p><strong>To classify data in classes…</strong></p>
 <ul class="simple">
 <li><p>Right-click on your layer</p></li>
 <li><p>Click on <code class="docutils literal notranslate"><span class="pre">Symbology</span></code></p></li>
@@ -614,6 +634,21 @@ document.write(`
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> to put your adjustment into effect.</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">OK</span></code> to close the window.</p></li>
 </ul>
+<section id="the-number-of-classes">
+<h2>The number of classes<a class="headerlink" href="#the-number-of-classes" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Deciding on the number of classes, and where the ranges for the different classes lie, has profound impact on the resulting map.</p></li>
+<li><p>There are seven ways in QGIS to split quantitative data into classes.</p></li>
+<li><p>The four most important ones are: Equal intervals, Quantile, Natural breaks, Manual.</p></li>
+<li><p>In general, you should limit the number of classes between 3 to 9.</p></li>
+</ul>
+<figure class="align-default" id="classification-method-map-wiki">
+<a class="reference internal image-reference" href="../../_images/classification_method_map.drawio.svg"><img alt="../../_images/classification_method_map.drawio.svg" src="../../_images/classification_method_map.drawio.svg" width="750px" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 13 </span><span class="caption-text">The impact of different class breaks on maps (Source: HeiGIT, adapted from <a class="reference external" href="https://www.axismaps.com/guide/data-classification">Axis Maps</a>).</span><a class="headerlink" href="#classification-method-map-wiki" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -670,6 +705,20 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-number-of-classes">The number of classes</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

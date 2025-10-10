@@ -12,7 +12,9 @@ Categorized classification is usually used for __nominal__ and __ordinal__ scale
 | Nominal Scale                | Categories without inherent order or ranking             | Land cover types, districts, livelihood zones | Text ("Desert") or Integer (5)      |
 | Ordinal Scale                | Categories with a meaningful order or ranking            | Ranks (e.g., low, medium)   | Text ("high") or Integer (5)      |
 
+:::{dropdown} Video: Classifying Data
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Classify_by_categorized.mp4"></video>
+:::
 
 __To classify data in categories…__
 - Right-click on your layer
@@ -28,7 +30,7 @@ __To classify data in categories…__
 
 ```{figure} /fig/Categorized_district_map_SierraLeone.png
 ---
-name: Categorized classification
+name: Categorized_district_map_SierraLeone
 align: center
 ---
 ```
