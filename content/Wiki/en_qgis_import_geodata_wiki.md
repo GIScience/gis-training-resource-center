@@ -45,7 +45,7 @@ When importing a shapefile by drag-and-drop you have to use the file with the en
 1. In your file browser, open the folder with the raster data you want to import.
 2. Drag-and-drop it onto the QGIS map canvas.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_raster_d_d.mp4"></video>
+<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_raster_d_d.mp4"></video>
 
 ### Open NetCDF raster files
 
@@ -53,7 +53,7 @@ When importing a shapefile by drag-and-drop you have to use the file with the en
 2. A window will open and you have to select the exact dataset you want to use. -> Click `add Layers`
 3. Click on the ? in the Layers window. The window `Coordination Reference System Select` will open. -> Select the correct reference system-> Click `OK`
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_NetCDF_raster.mp4"></video>
+<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_NetCDF_raster.mp4"></video>
 
 
 ## Text data import
@@ -83,7 +83,7 @@ When loading vector data in text format like .csv or .txt in QGIS, these data ha
     If the file does not have spatial information choose the option `No geometry (attribute only table)`.
 4. Click `Add`
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_textfile.mp4"></video>
+<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_textfile.mp4"></video>
 
 ### Open .xlsx files in QGIS
 
@@ -98,7 +98,7 @@ When loading vector data in text format like .csv or .txt in QGIS, these data ha
 A other option is always to transform the .xlsx file into a .csv, which is easier to open in QGIS.
 ```
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_xlsx.mp4"></video>
+<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_xlsx.mp4"></video>
 
 
 
