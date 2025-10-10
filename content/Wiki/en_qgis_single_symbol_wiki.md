@@ -6,7 +6,7 @@ __🔙[Back to Homepage](/content/intro.md)__
 
 - By default, QGIS visualizes all layers in the `Single symbol` setting.
 -  This means all the features of a layer are visualised the same. 
-- In this setting, you can change many parameters like colour or opacity __but you can not classify any data!__
+- In this setting, you can change many parameters like colour or opacity __but you can't classify any data!__
 
 
 __To adjust the style of a layer...__
@@ -28,5 +28,7 @@ align: center
 ---
 ```
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Single_symbol_video.mp4"></video>
+% EDIT: The green numbers are not so easy to read. Switch to red numbers.
+
+<video width="900%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Single_symbol_video.mp4"></video>
 
