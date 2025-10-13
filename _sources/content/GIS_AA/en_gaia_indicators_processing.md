@@ -4,15 +4,15 @@
 
 The Global Aggregation of Indicators for Anticipatory Action (GAIA) Pipeline produces a series of thematic files for each country at administrative level 2. Each file captures different aspects of population, infrastructure, and environmental conditions. Below is an overview of the available files:
 
-- [**Access to Services**](#access-to-services) – Population accessibility to key facilities such as education and health centers.  
-- [**Facilities**](#facilities) – Availability and distribution of essential service infrastructure.  
-- [**Coping Capacity**](#coping-capacity) – Combined indicators derived from Access and Facilities layers to assess local coping capacity.  
-- [**Demographics**](#demographics) – Distribution of vulnerable population.  
-- [**Rural Population**](#rural-population) – Demographic indicators focused specifically on rural populations.  
-- [**Vulnerability**](#vulnerability) – Composite indicators derived from Demographics and Rural Population layers.  
-- [**Crop Coverage and Change**](#crop-coverage-and-change) – Extent of agricultural land and observed changes over time.  
-- [**Vegetation Index**](#vegetation-index) – NDVI-based assessment of vegetation conditions.  
-- [**Flood Exposure**](#flood-exposure) – Exposure of populations and facilities to flood hazards.
+1. [**Access to Services**](#access-to-services) – Population accessibility to key facilities such as education and health centers.  
+2. [**Facilities**](#facilities) – Availability and distribution of essential service infrastructure.  
+3. [**Coping Capacity**](#coping-capacity) – Combined indicators derived from Access and Facilities layers to assess local coping capacity.
+4. [**Demographics**](#demographics) – Distribution of vulnerable population.
+5. [**Rural Population**](#rural-population) – Demographic indicators focused specifically on rural populations.
+6. [**Vulnerability**](#vulnerability) – Composite indicators derived from Demographics and Rural Population layers.
+7. [**Crop Coverage and Change**](#crop-coverage-and-change) – Extent of agricultural land and observed changes over time.
+8. [**Vegetation Index**](#vegetation-index) – NDVI-based assessment of vegetation conditions.
+9. [**Flood Exposure**](#flood-exposure) – Exposure of populations and facilities to flood hazards.
 ---
 ## Risk Assessment Plugin
 The datasets produced by GAIA are fully compatible with the [Risk Assessment QGIS Plugin](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_risk_assessment_plugin.html), enabling seamless integration into spatial risk analyses. They are openly available for multiple countries through [HeiGIT on HDX](https://data.humdata.org/organization/heidelberg-institute-for-geoinformation-technology?sort=metadata_modified+desc), providing ready-to-use geospatial layers for risk assessments.
@@ -24,7 +24,7 @@ The **Coping Capacity**, **Vulnerability**, and **Flood Exposure** files can be 
 
 ---
 
-## Access to Services
+## 1. Access to Services
 Represents the share of the population with access to key facilities within defined distances or travel times.
 
 ### Data Sources
@@ -199,7 +199,7 @@ def compute_access_population(country_code, admin_level, gdf_admin, work_dir, ou
 
 ---
 
-## Facilities
+## 2. Facilities
 Represents the availability and spatial distribution of essential service infrastructure such as schools, hospitals, and primary healthcare centers.
 
 ### Data Sources
@@ -471,7 +471,7 @@ def fetch_ohsome(context_log, boundary_file, output_dir, country_code, admin_lev
 
 ---
 
-## Coping Capacity
+## 3. Coping Capacity
 Represents the ability of a population to access essential services and benefit from available infrastructure.  
 This layer combines `Access to Services` and `Facilities` indicators to assess local capacity to cope with shocks or disruptions.
 
@@ -558,7 +558,7 @@ def coping_asset(context, access_asset: List[str], facilities_asset: List[str]) 
 :::
 
 ---
-## Demographics
+## 4. Demographics
 Provides population distribution indicators based on **age** and **sex**.  
 This layer is derived from the [**WorldPop**](https://www.worldpop.org/) global population dataset and quantifies vulnerable population groups across administrative boundaries.
 
@@ -809,7 +809,7 @@ def aggregate_worldpop_to_csv(country_code: str, admin_level="ADM2", context_log
 :::
 
 ---
-## Rural Population
+## 5. Rural Population
 Represents the proportion and distribution of people living in **rural areas** within each administrative unit.  
 This layer combines **WorldPop population rasters** with **Global Human Settlement Layer (GHS-SMOD)** data to estimate rural populations for each demographic group.
 
@@ -1046,7 +1046,7 @@ def compute_rural_population(country_code, admin_level, gdf, work_dir, output_di
 :::
 
 ---
-## Vulnerability
+## 6. Vulnerability
 Represents the sensitivity of a population to external shocks based on demographic composition and settlement type.  
 This layer combines **Demographics** and **Rural Population** indicators to highlight population groups more likely to experience heightened vulnerability in rural or hard-to-reach regions.
 
@@ -1134,7 +1134,7 @@ def vulnerability_asset(context, demographics_asset: List[str], rural_asset: Lis
 :::
 
 ---
-## Crop Coverage and Change
+## 7. Crop Coverage and Change
 Quantifies the extent and temporal change of cropland areas within administrative boundaries.  
 This layer assesses both **total cropland coverage** and **change in cropland area** between two years using the **Google Dynamic World (V1)** dataset derived from Sentinel-2 imagery.
 
@@ -1333,7 +1333,7 @@ def process_crops_for_admin(country_code: str, admin_level: str, config_path="co
 :::
 
 ---
-## Vegetation Index
+## 8. Vegetation Index
 Evaluates vegetation health and density using the **Normalized Difference Vegetation Index (NDVI)** derived from **Landsat** composites. NDVI values range from -1 to +1, where higher values indicate denser and healthier vegetation, while lower values reflect sparse or stressed vegetation, bare soil, or urban surfaces. 
 
 This layer provides summary statistics (mean, median, quartiles) and surface extent of high, medium, and low NDVI zones per administrative boundary.
@@ -1561,7 +1561,7 @@ def process_ndvi_for_admin(country_code: str, admin_level: str, config_path="con
 :::
 
 ---
-## Flood Exposure
+## 9. Flood Exposure
 Estimates population and facility exposure to flooding using **GLOFAS flood hazard rasters** and **WorldPop demographic layers**. Flooded areas are identified by a configurable **flood threshold**, and exposure metrics are aggregated per administrative boundary.
 
 This layer provides indicators for the number of people affected per demographic group and the percentage/count of critical facilities (education, hospitals, primary healthcare) impacted by flood events of different return periods (RPs).
