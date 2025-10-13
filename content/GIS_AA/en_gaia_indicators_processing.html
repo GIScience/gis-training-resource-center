@@ -564,6 +564,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-assessment-plugin">Risk Assessment Plugin</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#access-to-services">Access to Services</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-sources">Data Sources</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#processing-steps">Processing Steps</a></li>
@@ -616,6 +617,14 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Outputs</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#flood-exposure">Flood Exposure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">Data Sources</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">Indicators</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flood-threshold">Flood Threshold</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">Processing Steps</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">Outputs</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -643,6 +652,12 @@ document.write(`
 <li><p><span class="xref myst"><strong>Vegetation Index</strong></span> – NDVI-based assessment of vegetation conditions.</p></li>
 <li><p><span class="xref myst"><strong>Flood Exposure</strong></span> – Exposure of populations and facilities to flood hazards.</p></li>
 </ul>
+</section>
+<hr class="docutils" />
+<section id="risk-assessment-plugin">
+<h2>Risk Assessment Plugin<a class="headerlink" href="#risk-assessment-plugin" title="Permalink to this heading">#</a></h2>
+<p>The datasets produced by GAIA are fully compatible with the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_risk_assessment_plugin.html">Risk Assessment QGIS Plugin</a>, enabling seamless integration into spatial risk analyses. They are openly available for multiple countries through <a class="reference external" href="https://data.humdata.org/organization/heidelberg-institute-for-geoinformation-technology?sort=metadata_modified+desc">HeiGIT on HDX</a>, providing ready-to-use geospatial layers for risk assessments.</p>
+<p>The <strong>Coping Capacity</strong>, <strong>Vulnerability</strong>, and <strong>Flood Exposure</strong> files can be used directly as input for the Risk Assessment QGIS Plugin when analyzing flood hazards. Only minor adjustments, such as renaming the ID columns, are required for compatibility.</p>
 </section>
 <hr class="docutils" />
 <section id="access-to-services">
@@ -686,7 +701,7 @@ Categories: <code class="docutils literal notranslate"><span class="pre">educati
 </ul>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<strong>Access to Services</strong> Python Code<div class="sd-summary-down docutils">
+Python Script (Access to Services)<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
@@ -921,7 +936,7 @@ Categories: <code class="docutils literal notranslate"><span class="pre">educati
 </ul>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<strong>Facilities</strong> Python Code<div class="sd-summary-down docutils">
+Python Script (Facilities)<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
@@ -1214,7 +1229,7 @@ This layer combines <code class="docutils literal notranslate"><span class="pre"
 </ul>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<strong>Coping Capacity</strong> Python Code<div class="sd-summary-down docutils">
+Python Script (Coping Capacity)<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
@@ -1381,7 +1396,7 @@ Downloaded from the <a class="reference external" href="https://www.worldpop.org
 </ul>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<strong>Demographics</strong> Python Code<div class="sd-summary-down docutils">
+Python Script (Demographics)<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
@@ -1666,7 +1681,7 @@ GeoJSON boundary files (e.g., ADM2) define the spatial units used for population
 </ul>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<strong>Rural Population</strong> Python Code<div class="sd-summary-down docutils">
+Python Script (Rural Population)<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
@@ -1919,7 +1934,7 @@ This layer combines <strong>Demographics</strong> and <strong>Rural Population</
 </ul>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<strong>Vulnerability</strong> Python Code<div class="sd-summary-down docutils">
+Python SCript (Vulnerability)<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
@@ -2097,7 +2112,7 @@ Defines two reference years under <code class="docutils literal notranslate"><sp
 </ul>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<strong>Crop Coverage and Change</strong> Python Code<div class="sd-summary-down docutils">
+Python Script (Crop Coverage and Change)<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
@@ -2403,7 +2418,7 @@ Defines the target year under <code class="docutils literal notranslate"><span c
 </ul>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<strong>Vegetation Index</strong> Python Code<div class="sd-summary-down docutils">
+Python Script (Vegetation Index)<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
@@ -2550,6 +2565,496 @@ Defines the target year under <code class="docutils literal notranslate"><span c
 </pre></div>
 </div>
 </div>
+</details></section>
+</section>
+<hr class="docutils" />
+<section id="flood-exposure">
+<h2>Flood Exposure<a class="headerlink" href="#flood-exposure" title="Permalink to this heading">#</a></h2>
+<p>Estimates population and facility exposure to flooding using <strong>GLOFAS flood hazard rasters</strong> and <strong>WorldPop demographic layers</strong>. Flooded areas are identified by a configurable <strong>flood threshold</strong>, and exposure metrics are aggregated per administrative boundary.</p>
+<p>This layer provides indicators for the number of people affected per demographic group and the percentage/count of critical facilities (education, hospitals, primary healthcare) impacted by flood events of different return periods (RPs).</p>
+<section id="id24">
+<h3>Data Sources<a class="headerlink" href="#id24" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>GLOFAS Flood Hazard Rasters</strong> (<code class="docutils literal notranslate"><span class="pre">https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/CEMS-GLOFAS/flood_hazard/</span></code>)<br />
+Raster tiles containing flood depth values for different return periods (RPs).</p></li>
+<li><p><strong>WorldPop Population Layers</strong> (<code class="docutils literal notranslate"><span class="pre">scripts/fetch_worldpop.py</span></code>)<br />
+Demographic rasters for multiple indicators at ~100 m resolution: total population, female, children under 5, elderly, etc.</p></li>
+<li><p><strong>Facilities Data</strong> (<code class="docutils literal notranslate"><span class="pre">scripts/fetch_facilities_ohsome_overpass.py</span></code>)<br />
+Point geometries of critical infrastructure from OHSOME or Overpass APIs.</p></li>
+<li><p><strong>Administrative Boundaries</strong> (GeoJSON)<br />
+Used to aggregate flood exposure per ADM level (e.g., ADM1).</p></li>
+<li><p><strong>Configuration File</strong> (<code class="docutils literal notranslate"><span class="pre">configs/assets_config.yaml</span></code>)<br />
+Specifies:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">setup.flood_threshold</span></code> (flood depth in meters)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">setup.rps</span></code> (return periods)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">facilities_asset.api</span></code> (data source for facilities)</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id25">
+<h3>Indicators<a class="headerlink" href="#id25" title="Permalink to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Indicator</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Units</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">RP{rp}_female_pop_{thresh}</span></code></p></td>
+<td><p>Number of females affected by flood depth ≥ threshold</p></td>
+<td><p>people</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">RP{rp}_children_u5_{thresh}</span></code></p></td>
+<td><p>Number of children under 5 affected</p></td>
+<td><p>people</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">RP{rp}_female_u5_{thresh}</span></code></p></td>
+<td><p>Number of female children under 5 affected</p></td>
+<td><p>people</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">RP{rp}_elderly_{thresh}</span></code></p></td>
+<td><p>Number of elderly (&gt;65) affected</p></td>
+<td><p>people</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">RP{rp}_pop_u15_{thresh}</span></code></p></td>
+<td><p>Number of population under 15 affected</p></td>
+<td><p>people</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">RP{rp}_female_u15_{thresh}</span></code></p></td>
+<td><p>Number of female population under 15 affected</p></td>
+<td><p>people</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">RP{rp}_education_{thresh}_pct</span></code></p></td>
+<td><p>Percentage of educational facilities flooded</p></td>
+<td><p>%</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">RP{rp}_education_{thresh}_count</span></code></p></td>
+<td><p>Number of educational facilities flooded</p></td>
+<td><p>count</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">RP{rp}_hospitals_{thresh}_pct</span></code></p></td>
+<td><p>Percentage of hospitals flooded</p></td>
+<td><p>%</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">RP{rp}_hospitals_{thresh}_count</span></code></p></td>
+<td><p>Number of hospitals flooded</p></td>
+<td><p>count</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">RP{rp}_primary_healthcare_{thresh}_pct</span></code></p></td>
+<td><p>Percentage of primary healthcare facilities flooded</p></td>
+<td><p>%</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">RP{rp}_primary_healthcare_{thresh}_count</span></code></p></td>
+<td><p>Number of primary healthcare facilities flooded</p></td>
+<td><p>count</p></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">{rp}</span></code> is the return period (e.g., 10, 50, 100 years), <code class="docutils literal notranslate"><span class="pre">{thresh}</span></code> is the flood threshold in cm.</p>
+</div></blockquote>
+</section>
+<section id="flood-threshold">
+<h3>Flood Threshold<a class="headerlink" href="#flood-threshold" title="Permalink to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>Value</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">setup.flood_threshold</span></code></p></td>
+<td><p>e.g., 0.3 m</p></td>
+<td><p>Minimum flood depth considered for exposure (configurable in <code class="docutils literal notranslate"><span class="pre">assets_config.yaml</span></code>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id26">
+<h3>Processing Steps<a class="headerlink" href="#id26" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Configuration Loading</strong></p>
+<ul class="simple">
+<li><p>Reads <code class="docutils literal notranslate"><span class="pre">setup.flood_threshold</span></code> and <code class="docutils literal notranslate"><span class="pre">rps</span></code> from <code class="docutils literal notranslate"><span class="pre">assets_config.yaml</span></code>.</p></li>
+<li><p>Computes <code class="docutils literal notranslate"><span class="pre">THRESH_SUFFIX</span></code> (flood depth in cm) for indicator naming.</p></li>
+</ul>
+</li>
+<li><p><strong>Input Geometry</strong></p>
+<ul class="simple">
+<li><p>Loads administrative boundaries (<code class="docutils literal notranslate"><span class="pre">data/{country_code}/{country_code}_{admin_level}.geojson</span></code>) using GeoPandas.</p></li>
+</ul>
+</li>
+<li><p><strong>Tile Selection and Download</strong></p>
+<ul class="simple">
+<li><p>Queries GLOFAS server for all flood tiles corresponding to each RP.</p></li>
+<li><p>Selects only tiles intersecting the country boundary.</p></li>
+<li><p>Downloads missing tiles into <code class="docutils literal notranslate"><span class="pre">data/{country_code}/Temporary</span></code>.</p></li>
+</ul>
+</li>
+<li><p><strong>Raster Merging and Clipping</strong></p>
+<ul class="simple">
+<li><p>Merges selected tiles into a single raster per RP.</p></li>
+<li><p>Clips the merged raster to the country boundary and saves to <code class="docutils literal notranslate"><span class="pre">Temporary</span></code>.</p></li>
+</ul>
+</li>
+<li><p><strong>WorldPop Population Preparation</strong></p>
+<ul class="simple">
+<li><p>Fetches required demographic rasters (total population, female, children under 5, elderly, etc.).</p></li>
+<li><p>Ensures rasters exist locally for alignment with flood data.</p></li>
+</ul>
+</li>
+<li><p><strong>Facility Data Preparation</strong></p>
+<ul class="simple">
+<li><p>Downloads or loads facilities geometries from the chosen API (<code class="docutils literal notranslate"><span class="pre">ohsome-api</span></code>, <code class="docutils literal notranslate"><span class="pre">overpass</span></code>).</p></li>
+<li><p>Converts geometries to points and reprojects to match raster CRS.</p></li>
+</ul>
+</li>
+<li><p><strong>Flood Exposure Calculation per RP</strong></p>
+<ul class="simple">
+<li><p><strong>Flooded population</strong>: Multiplies population raster by flood mask (flood depth ≥ threshold) to compute the number of affected people per ADM polygon.</p></li>
+<li><p><strong>Flooded facilities</strong>: Samples flood raster at facility locations to compute flooded count and percentage per ADM polygon.</p></li>
+</ul>
+</li>
+<li><p><strong>Aggregation and CSV Output</strong></p>
+<ul class="simple">
+<li><p>Merges RP results across population and facilities into a single CSV.</p></li>
+<li><p>Fills missing values with 0 and rounds numbers to integers.</p></li>
+<li><p>Final CSV saved to <code class="docutils literal notranslate"><span class="pre">data/{country_code}/Output/{country_code}_{admin_level}_flood_exposure.csv</span></code>.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="id27">
+<h3>Outputs<a class="headerlink" href="#id27" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>File:</strong> <code class="docutils literal notranslate"><span class="pre">{country_code}_{admin_level}_flood_exposure.csv</span></code></p></li>
+<li><p><strong>Columns:</strong></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">{admin_level}_PCODE</span></code></p></li>
+<li><p>Flooded population indicators per RP</p></li>
+<li><p>Flooded facilities indicators per RP</p></li>
+</ul>
+</li>
+<li><p><strong>CRS:</strong> WGS84 (<code class="docutils literal notranslate"><span class="pre">EPSG:4326</span></code>)</p></li>
+<li><p><strong>Units:</strong> people, %, count</p></li>
+</ul>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Python Script (Flood Exposure)<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">argparse</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">geopandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">gpd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">rasterio</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">rasterio.merge</span><span class="w"> </span><span class="kn">import</span> <span class="n">merge</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">rasterio.mask</span><span class="w"> </span><span class="kn">import</span> <span class="n">mask</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">rasterstats</span><span class="w"> </span><span class="kn">import</span> <span class="n">zonal_stats</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">rasterio.enums</span><span class="w"> </span><span class="kn">import</span> <span class="n">Resampling</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">rioxarray</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">yaml</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">shapely.geometry</span><span class="w"> </span><span class="kn">import</span> <span class="n">mapping</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">scripts.fetch_worldpop</span><span class="w"> </span><span class="kn">import</span> <span class="n">fetch_worldpop</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scripts.fetch_facilities_ohsome_overpass</span><span class="w"> </span><span class="kn">import</span> <span class="n">fetch_overpass</span><span class="p">,</span> <span class="n">fetch_ohsome</span>
+
+<span class="n">ASSET_CONFIG_YAML_PATH</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">(),</span> <span class="s2">&quot;configs&quot;</span><span class="p">,</span> <span class="s2">&quot;assets_config.yaml&quot;</span><span class="p">)</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">ASSET_CONFIG_YAML_PATH</span><span class="p">)</span> <span class="k">as</span> <span class="n">_fp</span><span class="p">:</span>
+    <span class="n">_asset_config</span> <span class="o">=</span> <span class="n">yaml</span><span class="o">.</span><span class="n">safe_load</span><span class="p">(</span><span class="n">_fp</span><span class="p">)</span>
+
+<span class="n">BASE_URL_TEMPLATE</span> <span class="o">=</span> <span class="s2">&quot;https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/CEMS-GLOFAS/flood_hazard/</span><span class="si">{rp}</span><span class="s2">/&quot;</span>
+<span class="n">ALLOWED_RPS</span> <span class="o">=</span> <span class="n">_asset_config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;setup&quot;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;rps&quot;</span><span class="p">,</span> <span class="p">[])</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">FLOOD_THRESHOLD</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">_asset_config</span><span class="p">[</span><span class="s2">&quot;setup&quot;</span><span class="p">][</span><span class="s2">&quot;flood_threshold&quot;</span><span class="p">])</span>
+<span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+    <span class="k">raise</span> <span class="ne">KeyError</span><span class="p">(</span><span class="s2">&quot;Missing &#39;setup.flood_threshold&#39; in assets_config.yaml&quot;</span><span class="p">)</span>
+
+<span class="n">THRESH_SUFFIX</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">FLOOD_THRESHOLD</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span><span class="si">}</span><span class="s2">cm&quot;</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">parse_listing</span><span class="p">(</span><span class="n">rp</span><span class="p">):</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="n">BASE_URL_TEMPLATE</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">rp</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;RP</span><span class="si">{</span><span class="n">rp</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+    <span class="n">r</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;href=&quot;([^&quot;]+_RP</span><span class="si">{}</span><span class="s1">_depth\.tif)&quot;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">rp</span><span class="p">),</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">tile_bounds_from_filename</span><span class="p">(</span><span class="n">fname</span><span class="p">):</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;_(N|S)(\d+)_([EW])(\d+)_RP&#39;</span><span class="p">,</span> <span class="n">fname</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">m</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">None</span>
+    <span class="n">lat_sign</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;N&quot;</span> <span class="k">else</span> <span class="o">-</span><span class="mi">1</span>
+    <span class="n">lat</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span> <span class="o">*</span> <span class="n">lat_sign</span>
+    <span class="n">lon_sign</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;E&quot;</span> <span class="k">else</span> <span class="o">-</span><span class="mi">1</span>
+    <span class="n">lon</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span> <span class="o">*</span> <span class="n">lon_sign</span>
+    <span class="n">xmin</span> <span class="o">=</span> <span class="n">lon</span>
+    <span class="n">xmax</span> <span class="o">=</span> <span class="n">lon</span> <span class="o">+</span> <span class="mi">10</span>
+    <span class="n">ymin</span> <span class="o">=</span> <span class="n">lat</span> <span class="o">-</span> <span class="mi">10</span>
+    <span class="n">ymax</span> <span class="o">=</span> <span class="n">lat</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">xmin</span><span class="p">,</span> <span class="n">ymin</span><span class="p">,</span> <span class="n">xmax</span><span class="p">,</span> <span class="n">ymax</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">bbox_intersects</span><span class="p">(</span><span class="n">tile_bbox</span><span class="p">,</span> <span class="n">geom_bbox</span><span class="p">):</span>
+    <span class="n">txmin</span><span class="p">,</span> <span class="n">tymin</span><span class="p">,</span> <span class="n">txmax</span><span class="p">,</span> <span class="n">tymax</span> <span class="o">=</span> <span class="n">tile_bbox</span>
+    <span class="n">gxmin</span><span class="p">,</span> <span class="n">gymin</span><span class="p">,</span> <span class="n">gxmax</span><span class="p">,</span> <span class="n">gymax</span> <span class="o">=</span> <span class="n">geom_bbox</span>
+    <span class="k">return</span> <span class="ow">not</span> <span class="p">(</span><span class="n">txmax</span> <span class="o">&lt;=</span> <span class="n">gxmin</span> <span class="ow">or</span> <span class="n">txmin</span> <span class="o">&gt;=</span> <span class="n">gxmax</span> <span class="ow">or</span> <span class="n">tymax</span> <span class="o">&lt;=</span> <span class="n">gymin</span> <span class="ow">or</span> <span class="n">tymin</span> <span class="o">&gt;=</span> <span class="n">gymax</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">download_file</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">fname</span><span class="p">,</span> <span class="n">temporary_dir</span><span class="p">,</span> <span class="n">rp</span><span class="p">):</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="n">BASE_URL_TEMPLATE</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">rp</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;RP</span><span class="si">{</span><span class="n">rp</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="n">fname</span>
+    <span class="n">outpath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">temporary_dir</span><span class="p">,</span> <span class="n">fname</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">outpath</span><span class="p">):</span>
+        <span class="n">context</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Already exists: </span><span class="si">{</span><span class="n">fname</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">outpath</span>
+    <span class="n">context</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Downloading </span><span class="si">{</span><span class="n">fname</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">)</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">stream</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">r</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">outpath</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="n">r</span><span class="o">.</span><span class="n">iter_content</span><span class="p">(</span><span class="mi">1024</span> <span class="o">*</span> <span class="mi">64</span><span class="p">):</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">chunk</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">outpath</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">context</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Failed to download </span><span class="si">{</span><span class="n">fname</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">process_country_rp</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">country_code</span><span class="p">,</span> <span class="n">rp</span><span class="p">,</span> <span class="n">admin_level</span><span class="o">=</span><span class="s2">&quot;ADM0&quot;</span><span class="p">):</span>
+    <span class="n">temporary_dir</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;data/</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">/Temporary&quot;</span>
+    <span class="n">output_dir</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;data/</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">/Output&quot;</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">temporary_dir</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">output_dir</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="n">clipped_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">temporary_dir</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">_flooded_RP</span><span class="si">{</span><span class="n">rp</span><span class="si">}</span><span class="s2">.tif&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">clipped_path</span><span class="p">):</span>
+        <span class="n">context</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Clipped raster already exists: </span><span class="si">{</span><span class="n">clipped_path</span><span class="si">}</span><span class="s2">, skipping ...&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">clipped_path</span>
+
+    <span class="n">boundary_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="n">country_code</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">admin_level</span><span class="si">}</span><span class="s2">.geojson&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">boundary_file</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">FileNotFoundError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Boundary file not found: </span><span class="si">{</span><span class="n">boundary_file</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="n">gdf</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">boundary_file</span><span class="p">)</span>
+    <span class="n">gxmin</span><span class="p">,</span> <span class="n">gymin</span><span class="p">,</span> <span class="n">gxmax</span><span class="p">,</span> <span class="n">gymax</span> <span class="o">=</span> <span class="n">gdf</span><span class="o">.</span><span class="n">total_bounds</span>
+    <span class="n">geom_bbox</span> <span class="o">=</span> <span class="p">(</span><span class="n">gxmin</span><span class="p">,</span> <span class="n">gymin</span><span class="p">,</span> <span class="n">gxmax</span><span class="p">,</span> <span class="n">gymax</span><span class="p">)</span>
+    <span class="n">context</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Boundary BBOX for </span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">geom_bbox</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="n">files</span> <span class="o">=</span> <span class="n">parse_listing</span><span class="p">(</span><span class="n">rp</span><span class="p">)</span>
+    <span class="n">context</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Found </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">files</span><span class="p">)</span><span class="si">}</span><span class="s2"> tiles on server for RP</span><span class="si">{</span><span class="n">rp</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+
+    <span class="n">selected</span> <span class="o">=</span> <span class="p">[</span><span class="n">f</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">files</span> <span class="k">if</span> <span class="p">(</span><span class="n">tb</span> <span class="o">:=</span> <span class="n">tile_bounds_from_filename</span><span class="p">(</span><span class="n">f</span><span class="p">))</span> <span class="ow">and</span> <span class="n">bbox_intersects</span><span class="p">(</span><span class="n">tb</span><span class="p">,</span> <span class="n">geom_bbox</span><span class="p">)]</span>
+    <span class="n">context</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Selected </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">selected</span><span class="p">)</span><span class="si">}</span><span class="s2"> tiles to download.&quot;</span><span class="p">)</span>
+
+    <span class="n">tile_paths</span> <span class="o">=</span> <span class="p">[</span><span class="n">download_file</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">temporary_dir</span><span class="p">,</span> <span class="n">rp</span><span class="p">)</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">selected</span><span class="p">]</span>
+    <span class="n">tile_paths</span> <span class="o">=</span> <span class="p">[</span><span class="n">p</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">tile_paths</span> <span class="k">if</span> <span class="n">p</span><span class="p">]</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">tile_paths</span><span class="p">:</span>
+        <span class="n">context</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;No tiles downloaded for RP</span><span class="si">{</span><span class="n">rp</span><span class="si">}</span><span class="s2">, skipping.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="n">context</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Merging tiles...&quot;</span><span class="p">)</span>
+    <span class="n">srcs</span> <span class="o">=</span> <span class="p">[</span><span class="n">rasterio</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">p</span><span class="p">)</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">tile_paths</span><span class="p">]</span>
+    <span class="n">mosaic</span><span class="p">,</span> <span class="n">out_trans</span> <span class="o">=</span> <span class="n">merge</span><span class="p">(</span><span class="n">srcs</span><span class="p">)</span>
+
+    <span class="n">out_meta</span> <span class="o">=</span> <span class="n">srcs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">meta</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">out_meta</span><span class="o">.</span><span class="n">update</span><span class="p">({</span>
+        <span class="s2">&quot;driver&quot;</span><span class="p">:</span> <span class="s2">&quot;GTiff&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;height&quot;</span><span class="p">:</span> <span class="n">mosaic</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+        <span class="s2">&quot;width&quot;</span><span class="p">:</span> <span class="n">mosaic</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span>
+        <span class="s2">&quot;transform&quot;</span><span class="p">:</span> <span class="n">out_trans</span><span class="p">,</span>
+        <span class="s2">&quot;compress&quot;</span><span class="p">:</span> <span class="s2">&quot;lzw&quot;</span>
+    <span class="p">})</span>
+
+    <span class="n">context</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Clipping merged raster to boundary...&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">gdf</span><span class="o">.</span><span class="n">crs</span> <span class="o">!=</span> <span class="n">srcs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">crs</span><span class="p">:</span>
+        <span class="n">gdf</span> <span class="o">=</span> <span class="n">gdf</span><span class="o">.</span><span class="n">to_crs</span><span class="p">(</span><span class="n">srcs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">crs</span><span class="p">)</span>
+
+    <span class="n">geoms</span> <span class="o">=</span> <span class="p">[</span><span class="n">mapping</span><span class="p">(</span><span class="n">geom</span><span class="p">)</span> <span class="k">for</span> <span class="n">geom</span> <span class="ow">in</span> <span class="n">gdf</span><span class="o">.</span><span class="n">geometry</span><span class="p">]</span>
+    <span class="k">with</span> <span class="n">rasterio</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">MemoryFile</span><span class="p">()</span> <span class="k">as</span> <span class="n">memfile</span><span class="p">:</span>
+        <span class="k">with</span> <span class="n">memfile</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="o">**</span><span class="n">out_meta</span><span class="p">)</span> <span class="k">as</span> <span class="n">dataset</span><span class="p">:</span>
+            <span class="n">dataset</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">mosaic</span><span class="p">)</span>
+            <span class="n">out_image</span><span class="p">,</span> <span class="n">out_transform</span> <span class="o">=</span> <span class="n">mask</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">geoms</span><span class="p">,</span> <span class="n">crop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="n">out_meta</span><span class="o">.</span><span class="n">update</span><span class="p">({</span>
+        <span class="s2">&quot;height&quot;</span><span class="p">:</span> <span class="n">out_image</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+        <span class="s2">&quot;width&quot;</span><span class="p">:</span> <span class="n">out_image</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span>
+        <span class="s2">&quot;transform&quot;</span><span class="p">:</span> <span class="n">out_transform</span>
+    <span class="p">})</span>
+
+    <span class="k">with</span> <span class="n">rasterio</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">clipped_path</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">out_meta</span><span class="p">)</span> <span class="k">as</span> <span class="n">dest</span><span class="p">:</span>
+        <span class="n">dest</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">out_image</span><span class="p">)</span>
+
+    <span class="n">context</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Clipped raster saved to </span><span class="si">{</span><span class="n">clipped_path</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">src</span> <span class="ow">in</span> <span class="n">srcs</span><span class="p">:</span>
+        <span class="n">src</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+    <span class="k">return</span> <span class="n">clipped_path</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">process_flood_impact</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">country_code</span><span class="p">,</span> <span class="n">rps</span><span class="p">,</span> <span class="n">gdf</span><span class="p">,</span> <span class="n">admin_level</span><span class="p">,</span> <span class="n">output_dir</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Process flooded population for all RPs of a given country/admin_level.</span>
+<span class="sd">    Generates a single CSV with columns for each RP, indicator, threshold,</span>
+<span class="sd">    and percentage of facilities flooded.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">country_code</span> <span class="o">=</span> <span class="n">country_code</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+    <span class="n">output_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">output_dir</span><span class="p">)</span>
+    <span class="n">out_csv</span> <span class="o">=</span> <span class="n">output_dir</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">admin_level</span><span class="si">}</span><span class="s2">_flood_exposure.csv&quot;</span>
+    <span class="n">temp_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">)</span> <span class="o">/</span> <span class="n">country_code</span> <span class="o">/</span> <span class="s2">&quot;Temporary&quot;</span>
+
+    <span class="c1"># Load existing CSV if present, to append missing RPs</span>
+    <span class="k">if</span> <span class="n">out_csv</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+        <span class="n">context</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;CSV exists: </span><span class="si">{</span><span class="n">out_csv</span><span class="si">}</span><span class="s2">, will append missing RPs&quot;</span><span class="p">)</span>
+        <span class="n">final_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">out_csv</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">final_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">admin_level</span><span class="si">}</span><span class="s2">_PCODE&quot;</span><span class="p">:</span> <span class="n">gdf</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">admin_level</span><span class="si">}</span><span class="s2">_PCODE&quot;</span><span class="p">]})</span>
+
+    <span class="c1"># Ensure WorldPop files exist</span>
+    <span class="n">context</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Ensuring demographic rasters exist in </span><span class="si">{</span><span class="n">temp_dir</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">)</span>
+    <span class="n">indicator_tifs</span> <span class="o">=</span> <span class="n">fetch_worldpop</span><span class="p">(</span><span class="n">country_code</span><span class="p">)</span>
+    <span class="n">indicators</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;female_pop&quot;</span><span class="p">,</span> <span class="s2">&quot;children_u5&quot;</span><span class="p">,</span> <span class="s2">&quot;female_u5&quot;</span><span class="p">,</span> <span class="s2">&quot;elderly&quot;</span><span class="p">,</span> <span class="s2">&quot;pop_u15&quot;</span><span class="p">,</span> <span class="s2">&quot;female_u15&quot;</span><span class="p">]</span>
+    <span class="n">tif_map</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">indicators</span><span class="p">,</span> <span class="n">indicator_tifs</span><span class="p">))</span>
+
+    <span class="c1"># Ensure facilities exist</span>
+    <span class="n">context</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Ensuring facility raw geometries exist in </span><span class="si">{</span><span class="n">temp_dir</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">)</span>
+    <span class="n">base_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">)</span> <span class="o">/</span> <span class="n">country_code</span>
+    <span class="n">boundary_path</span> <span class="o">=</span> <span class="n">base_path</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">admin_level</span><span class="si">}</span><span class="s2">.geojson&quot;</span>
+    <span class="n">api_choice</span> <span class="o">=</span> <span class="n">_asset_config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;facilities_asset&quot;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;api&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="n">api_choice</span> <span class="o">==</span> <span class="s2">&quot;ohsome-api&quot;</span><span class="p">:</span>
+        <span class="n">summary_path</span> <span class="o">=</span> <span class="n">fetch_ohsome</span><span class="p">(</span>
+            <span class="n">context</span><span class="p">,</span> <span class="n">boundary_path</span><span class="p">,</span> <span class="n">base_path</span><span class="p">,</span> <span class="n">country_code</span><span class="p">,</span> <span class="n">admin_level</span>
+        <span class="p">)</span>
+    <span class="k">elif</span> <span class="n">api_choice</span> <span class="o">==</span> <span class="s2">&quot;overpass&quot;</span><span class="p">:</span>
+        <span class="n">summary_path</span> <span class="o">=</span> <span class="n">fetch_overpass</span><span class="p">(</span>
+            <span class="n">context</span><span class="p">,</span> <span class="n">boundary_path</span><span class="p">,</span> <span class="n">base_path</span><span class="p">,</span> <span class="n">country_code</span><span class="p">,</span> <span class="n">admin_level</span>
+        <span class="p">)</span>
+    <span class="k">elif</span> <span class="n">api_choice</span> <span class="o">==</span> <span class="s2">&quot;ohsome-parquet&quot;</span><span class="p">:</span>
+        <span class="n">context</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Not implemented yet: ohsome-parquet&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">context</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;No valid API configured for facilities_asset (got &#39;</span><span class="si">{</span><span class="n">api_choice</span><span class="si">}</span><span class="s2">&#39;)&quot;</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="n">geojsons_map</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">facility_categories</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;education&quot;</span><span class="p">,</span> <span class="s2">&quot;hospitals&quot;</span><span class="p">,</span> <span class="s2">&quot;primary_healthcare&quot;</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">category</span> <span class="ow">in</span> <span class="n">facility_categories</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">category</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">geojsons_map</span><span class="p">:</span>
+            <span class="n">geojsons_map</span><span class="p">[</span><span class="n">category</span><span class="p">]</span> <span class="o">=</span> <span class="n">base_path</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;Temporary/</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s2">_raw.geojson&quot;</span>
+
+    <span class="k">for</span> <span class="n">rp</span> <span class="ow">in</span> <span class="n">rps</span><span class="p">:</span>
+        <span class="n">context</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Processing RP</span><span class="si">{</span><span class="n">rp</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Skip RP if all expected columns already exist</span>
+        <span class="n">expected_cols</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="sa">f</span><span class="s2">&quot;RP</span><span class="si">{</span><span class="n">rp</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">label</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">suffix</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="n">label</span> <span class="ow">in</span> <span class="n">indicators</span> <span class="k">for</span> <span class="n">suffix</span> <span class="ow">in</span> <span class="n">THRESH_SUFFIX</span>
+        <span class="p">]</span> <span class="o">+</span> <span class="p">[</span>
+            <span class="sa">f</span><span class="s2">&quot;RP</span><span class="si">{</span><span class="n">rp</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">cat</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">suffix</span><span class="si">}</span><span class="s2">_pct&quot;</span> <span class="k">for</span> <span class="n">cat</span> <span class="ow">in</span> <span class="n">facility_categories</span> <span class="k">for</span> <span class="n">suffix</span> <span class="ow">in</span> <span class="n">THRESH_SUFFIX</span>
+        <span class="p">]</span> <span class="o">+</span> <span class="p">[</span>
+            <span class="sa">f</span><span class="s2">&quot;RP</span><span class="si">{</span><span class="n">rp</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">cat</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">suffix</span><span class="si">}</span><span class="s2">_count&quot;</span> <span class="k">for</span> <span class="n">cat</span> <span class="ow">in</span> <span class="n">facility_categories</span> <span class="k">for</span> <span class="n">suffix</span> <span class="ow">in</span> <span class="n">THRESH_SUFFIX</span>
+        <span class="p">]</span>
+        <span class="k">if</span> <span class="nb">all</span><span class="p">(</span><span class="n">col</span> <span class="ow">in</span> <span class="n">final_df</span><span class="o">.</span><span class="n">columns</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">expected_cols</span><span class="p">):</span>
+            <span class="n">context</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;RP</span><span class="si">{</span><span class="n">rp</span><span class="si">}</span><span class="s2"> already processed, skipping...&quot;</span><span class="p">)</span>
+            <span class="k">continue</span>
+
+        <span class="c1"># Flood raster clipped to country</span>
+        <span class="n">clipped_path</span> <span class="o">=</span> <span class="n">process_country_rp</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">country_code</span><span class="p">,</span> <span class="n">rp</span><span class="p">,</span> <span class="n">admin_level</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">clipped_path</span><span class="p">:</span>
+            <span class="n">context</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;No flood raster for RP</span><span class="si">{</span><span class="n">rp</span><span class="si">}</span><span class="s2">, skipping...&quot;</span><span class="p">)</span>
+            <span class="k">continue</span>
+        <span class="n">flood</span> <span class="o">=</span> <span class="n">rioxarray</span><span class="o">.</span><span class="n">open_rasterio</span><span class="p">(</span><span class="n">clipped_path</span><span class="p">,</span> <span class="n">masked</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">squeeze</span><span class="p">()</span>
+
+        <span class="n">rp_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">admin_level</span><span class="si">}</span><span class="s2">_PCODE&quot;</span><span class="p">:</span> <span class="n">gdf</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">admin_level</span><span class="si">}</span><span class="s2">_PCODE&quot;</span><span class="p">]})</span>
+
+        <span class="c1"># ---- Flooded population ----</span>
+        <span class="k">for</span> <span class="n">label</span> <span class="ow">in</span> <span class="n">indicators</span><span class="p">:</span>
+            <span class="n">pop_raster_path</span> <span class="o">=</span> <span class="n">tif_map</span><span class="p">[</span><span class="n">label</span><span class="p">]</span>
+            <span class="n">pop_raster</span> <span class="o">=</span> <span class="n">rioxarray</span><span class="o">.</span><span class="n">open_rasterio</span><span class="p">(</span><span class="n">pop_raster_path</span><span class="p">,</span> <span class="n">masked</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">squeeze</span><span class="p">()</span>
+
+            <span class="n">flood_aligned</span> <span class="o">=</span> <span class="n">flood</span><span class="o">.</span><span class="n">rio</span><span class="o">.</span><span class="n">reproject_match</span><span class="p">(</span><span class="n">pop_raster</span><span class="p">,</span> <span class="n">resampling</span><span class="o">=</span><span class="n">Resampling</span><span class="o">.</span><span class="n">bilinear</span><span class="p">)</span>
+            <span class="n">flood_mask</span> <span class="o">=</span> <span class="p">(</span><span class="n">flood_aligned</span> <span class="o">&gt;</span> <span class="n">FLOOD_THRESHOLD</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;float32&quot;</span><span class="p">)</span>
+            <span class="n">flooded_pop</span> <span class="o">=</span> <span class="n">pop_raster</span> <span class="o">*</span> <span class="n">flood_mask</span>
+
+            <span class="n">tmp_flooded</span> <span class="o">=</span> <span class="n">temp_dir</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;tmp_flooded_</span><span class="si">{</span><span class="n">label</span><span class="si">}</span><span class="s2">_RP</span><span class="si">{</span><span class="n">rp</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">THRESH_SUFFIX</span><span class="si">}</span><span class="s2">.tif&quot;</span>
+            <span class="k">with</span> <span class="n">rasterio</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">pop_raster_path</span><span class="p">)</span> <span class="k">as</span> <span class="n">src</span><span class="p">:</span>
+                <span class="n">meta</span> <span class="o">=</span> <span class="n">src</span><span class="o">.</span><span class="n">meta</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+                <span class="n">meta</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">compress</span><span class="o">=</span><span class="s2">&quot;lzw&quot;</span><span class="p">,</span> <span class="n">tiled</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                            <span class="n">bigtiff</span><span class="o">=</span><span class="s2">&quot;yes&quot;</span> <span class="k">if</span> <span class="n">src</span><span class="o">.</span><span class="n">width</span><span class="o">*</span><span class="n">src</span><span class="o">.</span><span class="n">height</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="o">**</span><span class="mi">32</span> <span class="k">else</span> <span class="s2">&quot;no&quot;</span><span class="p">)</span>
+            <span class="k">with</span> <span class="n">rasterio</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">tmp_flooded</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">meta</span><span class="p">)</span> <span class="k">as</span> <span class="n">dst</span><span class="p">:</span>
+                <span class="n">dst</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">flooded_pop</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+            <span class="n">stats</span> <span class="o">=</span> <span class="n">zonal_stats</span><span class="p">(</span><span class="n">gdf</span><span class="p">,</span> <span class="n">tmp_flooded</span><span class="p">,</span> <span class="n">stats</span><span class="o">=</span><span class="s2">&quot;sum&quot;</span><span class="p">,</span> <span class="n">nodata</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+            <span class="n">rp_df</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;RP</span><span class="si">{</span><span class="n">rp</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">label</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">THRESH_SUFFIX</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span><span class="p">[</span><span class="s2">&quot;sum&quot;</span><span class="p">]</span> <span class="k">if</span> <span class="n">s</span><span class="p">[</span><span class="s2">&quot;sum&quot;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">stats</span><span class="p">]</span>
+
+            <span class="n">context</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Processed flooded population for </span><span class="si">{</span><span class="n">label</span><span class="si">}</span><span class="s2"> &gt;</span><span class="si">{</span><span class="n">FLOOD_THRESHOLD</span><span class="si">}</span><span class="s2"> m (</span><span class="si">{</span><span class="n">THRESH_SUFFIX</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+
+        <span class="c1"># ---- Flooded facilities ----</span>
+        <span class="k">for</span> <span class="n">category</span><span class="p">,</span> <span class="n">filepath</span> <span class="ow">in</span> <span class="n">geojsons_map</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">Path</span><span class="p">(</span><span class="n">filepath</span><span class="p">)</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+                <span class="n">rp_df</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;RP</span><span class="si">{</span><span class="n">rp</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">THRESH_SUFFIX</span><span class="si">}</span><span class="s2">_pct&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="n">rp_df</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;RP</span><span class="si">{</span><span class="n">rp</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">THRESH_SUFFIX</span><span class="si">}</span><span class="s2">_count&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="k">continue</span>
+
+            <span class="n">facilities</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">filepath</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">facilities</span><span class="o">.</span><span class="n">empty</span><span class="p">:</span>
+                <span class="n">rp_df</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;RP</span><span class="si">{</span><span class="n">rp</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">THRESH_SUFFIX</span><span class="si">}</span><span class="s2">_pct&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="n">rp_df</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;RP</span><span class="si">{</span><span class="n">rp</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">THRESH_SUFFIX</span><span class="si">}</span><span class="s2">_count&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="k">continue</span>
+
+            <span class="k">if</span> <span class="ow">not</span> <span class="nb">all</span><span class="p">(</span><span class="n">facilities</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="s2">&quot;Point&quot;</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">facilities</span><span class="o">.</span><span class="n">crs</span> <span class="o">!=</span> <span class="n">flood</span><span class="o">.</span><span class="n">rio</span><span class="o">.</span><span class="n">crs</span><span class="p">:</span>
+                    <span class="n">facilities</span> <span class="o">=</span> <span class="n">facilities</span><span class="o">.</span><span class="n">to_crs</span><span class="p">(</span><span class="n">flood</span><span class="o">.</span><span class="n">rio</span><span class="o">.</span><span class="n">crs</span><span class="p">)</span>
+                <span class="n">facilities</span><span class="p">[</span><span class="s2">&quot;geometry&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">facilities</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">centroid</span>
+            <span class="k">if</span> <span class="n">facilities</span><span class="o">.</span><span class="n">crs</span> <span class="o">!=</span> <span class="n">flood</span><span class="o">.</span><span class="n">rio</span><span class="o">.</span><span class="n">crs</span><span class="p">:</span>
+                <span class="n">facilities</span> <span class="o">=</span> <span class="n">facilities</span><span class="o">.</span><span class="n">to_crs</span><span class="p">(</span><span class="n">flood</span><span class="o">.</span><span class="n">rio</span><span class="o">.</span><span class="n">crs</span><span class="p">)</span>
+
+            <span class="n">coords</span> <span class="o">=</span> <span class="p">[(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">facilities</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">facilities</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">y</span><span class="p">)]</span>
+            <span class="k">with</span> <span class="n">rasterio</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">clipped_path</span><span class="p">)</span> <span class="k">as</span> <span class="n">src</span><span class="p">:</span>
+                <span class="n">values</span> <span class="o">=</span> <span class="p">[</span><span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">src</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">coords</span><span class="p">)]</span>
+            <span class="n">facilities</span><span class="p">[</span><span class="s2">&quot;flooded&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span> <span class="k">if</span> <span class="n">v</span> <span class="o">&gt;</span> <span class="n">FLOOD_THRESHOLD</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">values</span><span class="p">]</span>
+
+            <span class="n">joined</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">sjoin</span><span class="p">(</span>
+                <span class="n">facilities</span><span class="p">,</span> <span class="n">gdf</span><span class="p">[[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">admin_level</span><span class="si">}</span><span class="s2">_PCODE&quot;</span><span class="p">,</span> <span class="s2">&quot;geometry&quot;</span><span class="p">]],</span>
+                <span class="n">how</span><span class="o">=</span><span class="s2">&quot;inner&quot;</span><span class="p">,</span> <span class="n">predicate</span><span class="o">=</span><span class="s2">&quot;within&quot;</span>
+            <span class="p">)</span>
+            <span class="n">grouped</span> <span class="o">=</span> <span class="n">joined</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">admin_level</span><span class="si">}</span><span class="s2">_PCODE&quot;</span><span class="p">)[</span><span class="s2">&quot;flooded&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">agg</span><span class="p">([</span><span class="s2">&quot;mean&quot;</span><span class="p">,</span> <span class="s2">&quot;sum&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+
+            <span class="n">grouped</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;RP</span><span class="si">{</span><span class="n">rp</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">THRESH_SUFFIX</span><span class="si">}</span><span class="s2">_pct&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">grouped</span><span class="p">[</span><span class="s2">&quot;mean&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+            <span class="n">grouped</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;RP</span><span class="si">{</span><span class="n">rp</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">THRESH_SUFFIX</span><span class="si">}</span><span class="s2">_count&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">grouped</span><span class="p">[</span><span class="s2">&quot;sum&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+            <span class="n">grouped</span> <span class="o">=</span> <span class="n">grouped</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;mean&quot;</span><span class="p">,</span> <span class="s2">&quot;sum&quot;</span><span class="p">])</span>
+
+            <span class="n">rp_df</span> <span class="o">=</span> <span class="n">rp_df</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">grouped</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">admin_level</span><span class="si">}</span><span class="s2">_PCODE&quot;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">)</span>
+            <span class="n">rp_df</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;RP</span><span class="si">{</span><span class="n">rp</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">THRESH_SUFFIX</span><span class="si">}</span><span class="s2">_pct&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">rp_df</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;RP</span><span class="si">{</span><span class="n">rp</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">THRESH_SUFFIX</span><span class="si">}</span><span class="s2">_pct&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+            <span class="n">rp_df</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;RP</span><span class="si">{</span><span class="n">rp</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">THRESH_SUFFIX</span><span class="si">}</span><span class="s2">_count&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">rp_df</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;RP</span><span class="si">{</span><span class="n">rp</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">THRESH_SUFFIX</span><span class="si">}</span><span class="s2">_count&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+
+            <span class="n">context</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Processed flooded facilities for </span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s2"> &gt;</span><span class="si">{</span><span class="n">FLOOD_THRESHOLD</span><span class="si">}</span><span class="s2"> m (</span><span class="si">{</span><span class="n">THRESH_SUFFIX</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+
+        <span class="n">final_df</span> <span class="o">=</span> <span class="n">final_df</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">rp_df</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">admin_level</span><span class="si">}</span><span class="s2">_PCODE&quot;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">)</span>
+        <span class="n">context</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Processed RP</span><span class="si">{</span><span class="n">rp</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="n">numeric_cols</span> <span class="o">=</span> <span class="n">final_df</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;float&quot;</span><span class="p">,</span> <span class="s2">&quot;int&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">columns</span>
+    <span class="n">final_df</span><span class="p">[</span><span class="n">numeric_cols</span><span class="p">]</span> <span class="o">=</span> <span class="n">final_df</span><span class="p">[</span><span class="n">numeric_cols</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+    <span class="n">output_dir</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">final_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">out_csv</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">context</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Flooded population &amp; facilities CSV written to </span><span class="si">{</span><span class="n">out_csv</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">out_csv</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
 </details><hr class="docutils" />
 </section>
 </section>
@@ -2619,6 +3124,7 @@ Defines the target year under <code class="docutils literal notranslate"><span c
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-assessment-plugin">Risk Assessment Plugin</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#access-to-services">Access to Services</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-sources">Data Sources</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#processing-steps">Processing Steps</a></li>
@@ -2669,6 +3175,14 @@ Defines the target year under <code class="docutils literal notranslate"><span c
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ndvi-thresholds">NDVI Thresholds</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Processing Steps</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Outputs</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#flood-exposure">Flood Exposure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">Data Sources</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">Indicators</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flood-threshold">Flood Threshold</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">Processing Steps</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">Outputs</a></li>
 </ul>
 </li>
 </ul>
