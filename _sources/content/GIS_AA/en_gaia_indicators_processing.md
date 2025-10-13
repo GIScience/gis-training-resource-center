@@ -225,10 +225,9 @@ The **Coping Capacity**, **Vulnerability**, and **Flood Exposure** files can be 
 Represents the share of the population with access to key facilities within defined distances or travel times.
 
 ### Data Sources
-- Accessibility data (isochrones) downloaded from:  
-  `https://warm.storage.heigit.org/heigit-hdx-public/access/{country_code}/{country_code}_{category}_access.gpkg`  
-  Categories: `education`, `hospitals`, `primary_healthcare`.
-- Population data: WorldPop raster data (vulnerable populations) via `Demographics`.
+- Accessibility data (isochrones) downloaded from **MinIO**:
+    Categories: `education`, `hospitals`, `primary_healthcare`.
+- Population data: WorldPop raster data (vulnerable populations) via *Demographics*.
 
 ### Processing Steps
 1. **Download accessibility isochrones** in GPKG format for each category.
@@ -670,16 +669,16 @@ def fetch_ohsome(context_log, boundary_file, output_dir, country_code, admin_lev
 
 ## 3. Coping Capacity
 Represents the ability of a population to access essential services and benefit from available infrastructure.  
-This layer combines `Access to Services` and `Facilities` indicators to assess local capacity to cope with shocks or disruptions.
+This layer combines *Access to Services* and *Facilities* indicators to assess local capacity to cope with shocks or disruptions.
 
 ### Data Sources
-- **Access to Services CSVs:** Derived from population accessibility analysis (see `Access to Services` chapter).  
-- **Facilities CSVs:** Derived from OpenStreetMap facility data (see `Facilities` chapter).  
+- **Access to Services CSVs:** Derived from population accessibility analysis (see *Access to Services* chapter).  
+- **Facilities CSVs:** Derived from OpenStreetMap facility data (see *Facilities* chapter).  
 - Both inputs are aggregated at the same administrative level (e.g., ADM2).
 
 ### Processing Steps
 1. **Input CSVs:**  
-   - One `Access to Services` CSV and one `Facilities` CSV are provided per administrative level.
+   - One *Access to Services* CSV and one *Facilities* CSV are provided per administrative level.
    - Each CSV includes an identifier column such as `ADM0_PCODE`, `ADM1_PCODE`, or `ADM2_PCODE`.
 2. **Column Detection:**  
    - The script automatically detects the administrative identifier column by searching for any column ending with `_PCODE`.
@@ -780,7 +779,7 @@ Each demographic indicator represents the **sum of population counts** matching 
 ### Processing Steps
 1. **Download Required WorldPop Tiles**  
    - For each indicator, the script identifies which age/sex rasters are needed (e.g., `m_0`, `f_1`, etc.).  
-   - Tiles are downloaded from `https://data.worldpop.org/GIS/AgeSex_structures/Global_2000_2020_Constrained/2020/{ISO3}/`.
+   - Tiles are downloaded from **Worldpop**.
 2. **Merge and Sum Rasters**  
    - The corresponding age/sex tiles are summed into one raster per indicator.  
    - Outputs are saved in `data/{country}/Temporary/`.
@@ -1007,13 +1006,14 @@ def aggregate_worldpop_to_csv(country_code: str, admin_level="ADM2", context_log
 
 ---
 ## 5. Rural Population
-Represents the proportion and distribution of people living in **rural areas** within each administrative unit.  
+Represents the proportion and distribution of people living in **rural areas** within each administrative unit. Rural areas are those outside urban extents, typically characterized by lower population density, agricultural or natural land use, and limited infrastructure compared to urban centers.
+
 This layer combines **WorldPop population rasters** with **Global Human Settlement Layer (GHS-SMOD)** data to estimate rural populations for each demographic group.
 
 ### Data Sources
 - **WorldPop Population Rasters:**  
   Derived from the [WorldPop Age-Sex structured datasets](https://www.worldpop.org/geodata/listing?id=77).  
-  Used to calculate population counts for various demographic indicators (see the `Demographics` chapter).  
+  Used to calculate population counts for various demographic indicators (see the *Demographics* chapter).  
 - **GHS-SMOD (Settlement Model) Raster:**  
   Downloaded from the [JRC GHSL repository](https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/) for the year 2030 projection.  
   Used to classify grid cells as **urban** or **rural** based on settlement patterns.
@@ -1245,16 +1245,16 @@ def compute_rural_population(country_code, admin_level, gdf, work_dir, output_di
 ---
 ## 6. Vulnerability
 Represents the sensitivity of a population to external shocks based on demographic composition and settlement type.  
-This layer combines **Demographics** and **Rural Population** indicators to highlight population groups more likely to experience heightened vulnerability in rural or hard-to-reach regions.
+This layer combines *Demographics* and *Rural Population* indicators to highlight population groups more likely to experience heightened vulnerability in rural or hard-to-reach regions.
 
 ### Data Sources
-- **Demographics CSVs:** Derived from [WorldPop](https://www.worldpop.org/) population datasets, disaggregated by age and sex (see `Demographics` chapter).  
-- **Rural Population CSVs:** Derived from settlement layer analysis separating rural and urban populations (see `Rural Population` chapter).  
+- **Demographics CSVs:** Derived from [WorldPop](https://www.worldpop.org/) population datasets, disaggregated by age and sex (see *Demographics* chapter).  
+- **Rural Population CSVs:** Derived from settlement layer analysis separating rural and urban populations (see *Rural Population* chapter).  
 - Both datasets are aggregated to the same administrative level (e.g., ADM2).
 
 ### Processing Steps
 1. **Input CSVs:**  
-   - One `Demographics` CSV and one `Rural Population` CSV are provided per administrative level.  
+   - One *Demographics* CSV and one *Rural Population* CSV are provided per administrative level.  
    - Each file contains an identifier column such as `ADM0_PCODE`, `ADM1_PCODE`, or `ADM2_PCODE`.
 
 2. **Column Detection:**  
@@ -1332,8 +1332,9 @@ def vulnerability_asset(context, demographics_asset: List[str], rural_asset: Lis
 
 ---
 ## 7. Crop Coverage and Change
-Quantifies the extent and temporal change of cropland areas within administrative boundaries.  
-This layer assesses both **total cropland coverage** and **change in cropland area** between two years using the **Google Dynamic World (V1)** dataset derived from Sentinel-2 imagery.
+Quantifies the extent and temporal change of cropland areas within administrative boundaries. 
+
+This layer evaluates **total cropland coverage** as well as **changes in cropland area** between 2023 and 2024 using **Google Dynamic World (V1)**. This dataset provides 10 m, near-real-time land classification derived from Sentinel-2 imagery. For each administrative unit, the proportion of pixels classified as “cropland” (class 4) is calculated for both years. These percentages are then compared to determine both absolute and relative changes in cropland area.
 
 ### Data Sources
 - **Dynamic World V1** (`GOOGLE/DYNAMICWORLD/V1`):  
@@ -1759,7 +1760,7 @@ def process_ndvi_for_admin(country_code: str, admin_level: str, config_path="con
 
 ---
 ## 9. Flood Exposure
-Estimates population and facility exposure to flooding using **GLOFAS flood hazard rasters** and **WorldPop demographic layers**. Flooded areas are identified by a configurable **flood threshold**, and exposure metrics are aggregated per administrative boundary.
+Estimates population and facility exposure to flooding using **GLOFAS flood hazard rasters** and **WorldPop demographic layers**. Flooded areas are identified by usign a threshold of 30 cm, and exposure metrics are aggregated per administrative boundary.
 
 This layer provides indicators for the number of people affected per demographic group and the percentage/count of critical facilities (education, hospitals, primary healthcare) impacted by flood events of different return periods (RPs).
 
