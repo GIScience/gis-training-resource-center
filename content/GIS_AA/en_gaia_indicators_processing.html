@@ -589,6 +589,33 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Outputs</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rural-population">Rural Population</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Data Sources</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Processing Steps</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Outputs</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vulnerability">Vulnerability</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Data Sources</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Processing Steps</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Outputs</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#crop-coverage-and-change">Crop Coverage and Change</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Data Sources</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Indicators</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Processing Steps</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Outputs</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vegetation-index">Vegetation Index</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Data Sources</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Indicators</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ndvi-thresholds">NDVI Thresholds</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Processing Steps</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Outputs</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -659,7 +686,7 @@ Categories: <code class="docutils literal notranslate"><span class="pre">educati
 </ul>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Python Code<div class="sd-summary-down docutils">
+<strong>Access to Services</strong> Python Code<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
@@ -894,7 +921,7 @@ Python Code<div class="sd-summary-down docutils">
 </ul>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Python Code<div class="sd-summary-down docutils">
+<strong>Facilities</strong> Python Code<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
@@ -1131,12 +1158,12 @@ Python Code<div class="sd-summary-down docutils">
 <section id="coping-capacity">
 <h2>Coping Capacity<a class="headerlink" href="#coping-capacity" title="Permalink to this heading">#</a></h2>
 <p>Represents the ability of a population to access essential services and benefit from available infrastructure.<br />
-This layer combines <span class="xref myst"><strong>Access to Services</strong></span> and <span class="xref myst"><strong>Facilities</strong></span> indicators to assess local capacity to cope with shocks or disruptions.</p>
+This layer combines <code class="docutils literal notranslate"><span class="pre">Access</span> <span class="pre">to</span> <span class="pre">Services</span></code> and <code class="docutils literal notranslate"><span class="pre">Facilities</span></code> indicators to assess local capacity to cope with shocks or disruptions.</p>
 <section id="id4">
 <h3>Data Sources<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
-<li><p><strong>Access to Services CSVs:</strong> Derived from population accessibility analysis (see <span class="xref myst"><em>Access to Services</em></span> chapter).</p></li>
-<li><p><strong>Facilities CSVs:</strong> Derived from OpenStreetMap facility data (see <span class="xref myst"><em>Facilities</em></span> chapter).</p></li>
+<li><p><strong>Access to Services CSVs:</strong> Derived from population accessibility analysis (see <code class="docutils literal notranslate"><span class="pre">Access</span> <span class="pre">to</span> <span class="pre">Services</span></code> chapter).</p></li>
+<li><p><strong>Facilities CSVs:</strong> Derived from OpenStreetMap facility data (see <code class="docutils literal notranslate"><span class="pre">Facilities</span></code> chapter).</p></li>
 <li><p>Both inputs are aggregated at the same administrative level (e.g., ADM2).</p></li>
 </ul>
 </section>
@@ -1145,7 +1172,7 @@ This layer combines <span class="xref myst"><strong>Access to Services</strong><
 <ol class="arabic simple">
 <li><p><strong>Input CSVs:</strong></p>
 <ul class="simple">
-<li><p>One <em>Access to Services</em> CSV and one <em>Facilities</em> CSV are provided per administrative level.</p></li>
+<li><p>One <code class="docutils literal notranslate"><span class="pre">Access</span> <span class="pre">to</span> <span class="pre">Services</span></code> CSV and one <code class="docutils literal notranslate"><span class="pre">Facilities</span></code> CSV are provided per administrative level.</p></li>
 <li><p>Each CSV includes an identifier column such as <code class="docutils literal notranslate"><span class="pre">ADM0_PCODE</span></code>, <code class="docutils literal notranslate"><span class="pre">ADM1_PCODE</span></code>, or <code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code>.</p></li>
 </ul>
 </li>
@@ -1187,7 +1214,7 @@ This layer combines <span class="xref myst"><strong>Access to Services</strong><
 </ul>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Python Code<div class="sd-summary-down docutils">
+<strong>Coping Capacity</strong> Python Code<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
@@ -1354,7 +1381,7 @@ Downloaded from the <a class="reference external" href="https://www.worldpop.org
 </ul>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Python Code<div class="sd-summary-down docutils">
+<strong>Demographics</strong> Python Code<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
@@ -1558,6 +1585,971 @@ Python Code<div class="sd-summary-down docutils">
 </pre></div>
 </div>
 </div>
+</details></section>
+</section>
+<hr class="docutils" />
+<section id="rural-population">
+<h2>Rural Population<a class="headerlink" href="#rural-population" title="Permalink to this heading">#</a></h2>
+<p>Represents the proportion and distribution of people living in <strong>rural areas</strong> within each administrative unit.<br />
+This layer combines <strong>WorldPop population rasters</strong> with <strong>Global Human Settlement Layer (GHS-SMOD)</strong> data to estimate rural populations for each demographic group.</p>
+<section id="id10">
+<h3>Data Sources<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>WorldPop Population Rasters:</strong><br />
+Derived from the <a class="reference external" href="https://www.worldpop.org/geodata/listing?id=77">WorldPop Age-Sex structured datasets</a>.<br />
+Used to calculate population counts for various demographic indicators (see the <code class="docutils literal notranslate"><span class="pre">Demographics</span></code> chapter).</p></li>
+<li><p><strong>GHS-SMOD (Settlement Model) Raster:</strong><br />
+Downloaded from the <a class="reference external" href="https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/">JRC GHSL repository</a> for the year 2030 projection.<br />
+Used to classify grid cells as <strong>urban</strong> or <strong>rural</strong> based on settlement patterns.</p></li>
+<li><p><strong>Administrative Boundaries:</strong><br />
+GeoJSON boundary files (e.g., ADM2) define the spatial units used for population aggregation.</p></li>
+</ul>
+</section>
+<section id="id11">
+<h3>Processing Steps<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Download GHS-SMOD Raster</strong></p>
+<ul class="simple">
+<li><p>The script downloads the global SMOD ZIP archive for 2030.</p></li>
+<li><p>Extracts and selects the <code class="docutils literal notranslate"><span class="pre">.tif</span></code> raster corresponding to global settlement data.</p></li>
+</ul>
+</li>
+<li><p><strong>Reclassify SMOD Raster</strong></p>
+<ul class="simple">
+<li><p>Converts original SMOD categories into two classes:</p>
+<ul>
+<li><p><strong>Rural = 1</strong> (codes 11–13)</p></li>
+<li><p><strong>Urban = 2</strong> (codes 21–30)</p></li>
+<li><p><strong>Excluded/Water = 0</strong></p></li>
+</ul>
+</li>
+<li><p>The resulting raster is saved as <code class="docutils literal notranslate"><span class="pre">smod_reclass.tif</span></code>.</p></li>
+</ul>
+</li>
+<li><p><strong>Fetch WorldPop Demographic Indicators</strong></p>
+<ul class="simple">
+<li><p>Ensures that population rasters for indicators such as <code class="docutils literal notranslate"><span class="pre">female_pop</span></code>, <code class="docutils literal notranslate"><span class="pre">children_u5</span></code>, etc., are available.</p></li>
+<li><p>Reuses outputs from the <code class="docutils literal notranslate"><span class="pre">Demographics</span></code> asset.</p></li>
+</ul>
+</li>
+<li><p><strong>Compute Rural Population</strong></p>
+<ul class="simple">
+<li><p>Reprojects the SMOD raster to match each WorldPop raster.</p></li>
+<li><p>Multiplies each population raster by the rural mask (<code class="docutils literal notranslate"><span class="pre">smod</span> <span class="pre">==</span> <span class="pre">1</span></code>).</p></li>
+<li><p>Performs zonal statistics per administrative unit (e.g., ADM2).</p></li>
+</ul>
+</li>
+<li><p><strong>Output Generation</strong></p>
+<ul class="simple">
+<li><p>Aggregates results into a CSV file per country and administrative level.</p></li>
+<li><p>Adds both absolute (<code class="docutils literal notranslate"><span class="pre">_rural</span></code>) and relative (<code class="docutils literal notranslate"><span class="pre">_rural_perc</span></code>) population values.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="id12">
+<h3>Outputs<a class="headerlink" href="#id12" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>CSV file: <code class="docutils literal notranslate"><span class="pre">{country_code}_{admin_level}_rural_population.csv</span></code></p>
+<ul>
+<li><p>Columns:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">{admin_level}_PCODE</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">{indicator}_rural</span></code> (e.g., <code class="docutils literal notranslate"><span class="pre">female_pop_rural</span></code>, <code class="docutils literal notranslate"><span class="pre">children_u5_rural</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">rural_pop_perc</span></code> (percentage of population living in rural areas)</p></li>
+</ul>
+</li>
+<li><p>CRS: WGS84 (<code class="docutils literal notranslate"><span class="pre">EPSG:4326</span></code>)</p></li>
+<li><p>Units: counts and percentages per administrative unit</p></li>
+</ul>
+</li>
+</ul>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Rural Population</strong> Python Code<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">shutil</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">zipfile</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">rioxarray</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">rasterio</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">argparse</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">geopandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">gpd</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">rasterstats</span><span class="w"> </span><span class="kn">import</span> <span class="n">zonal_stats</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scripts.fetch_worldpop</span><span class="w"> </span><span class="kn">import</span> <span class="n">fetch_worldpop</span>
+
+<span class="n">RECLASS_MAP</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="mi">10</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="mi">11</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">12</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">13</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>   <span class="c1"># rural</span>
+    <span class="mi">21</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">22</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">23</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">30</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>  <span class="c1"># urban</span>
+<span class="p">}</span>
+<span class="n">SMOD_ZIP_URL</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s2">&quot;https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/&quot;</span>
+    <span class="s2">&quot;GHS_SMOD_GLOBE_R2023A/GHS_SMOD_E2030_GLOBE_R2023A_54009_1000/&quot;</span>
+    <span class="s2">&quot;V2-0/GHS_SMOD_E2030_GLOBE_R2023A_54009_1000_V2_0.zip&quot;</span>
+<span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">download_and_unzip_smod</span><span class="p">(</span><span class="n">work_dir</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Download SMOD ZIP, unzip, return path to TIF.&quot;&quot;&quot;</span>
+    <span class="n">zip_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">work_dir</span><span class="p">)</span> <span class="o">/</span> <span class="s2">&quot;smod.zip&quot;</span>
+    <span class="n">unzip_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">work_dir</span><span class="p">)</span> <span class="o">/</span> <span class="s2">&quot;unzipped&quot;</span>
+    <span class="n">unzip_dir</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">zip_path</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+        <span class="n">context</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Downloading SMOD global raster…&quot;</span><span class="p">)</span>
+        <span class="n">resp</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">SMOD_ZIP_URL</span><span class="p">,</span> <span class="n">stream</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">resp</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">zip_path</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="n">resp</span><span class="o">.</span><span class="n">iter_content</span><span class="p">(</span><span class="mi">1024</span> <span class="o">*</span> <span class="mi">1024</span><span class="p">):</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">chunk</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">context</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;SMOD ZIP already exists, skipping download.&quot;</span><span class="p">)</span>
+
+    <span class="k">with</span> <span class="n">zipfile</span><span class="o">.</span><span class="n">ZipFile</span><span class="p">(</span><span class="n">zip_path</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">z</span><span class="p">:</span>
+        <span class="n">z</span><span class="o">.</span><span class="n">extractall</span><span class="p">(</span><span class="n">unzip_dir</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">root</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">files</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="n">unzip_dir</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">fn</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">fn</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;.tif&quot;</span><span class="p">):</span>
+                <span class="k">return</span> <span class="n">zip_path</span><span class="p">,</span> <span class="n">unzip_dir</span><span class="p">,</span> <span class="n">Path</span><span class="p">(</span><span class="n">root</span><span class="p">)</span> <span class="o">/</span> <span class="n">fn</span>
+
+    <span class="k">raise</span> <span class="ne">FileNotFoundError</span><span class="p">(</span><span class="s2">&quot;No .tif found in SMOD ZIP&quot;</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">reclassify_raster</span><span class="p">(</span><span class="n">in_tif</span><span class="p">,</span> <span class="n">out_tif</span><span class="p">,</span> <span class="n">reclass_map</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+    <span class="k">with</span> <span class="n">rasterio</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">in_tif</span><span class="p">)</span> <span class="k">as</span> <span class="n">src</span><span class="p">:</span>
+        <span class="n">meta</span> <span class="o">=</span> <span class="n">src</span><span class="o">.</span><span class="n">meta</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+        <span class="n">arr</span> <span class="o">=</span> <span class="n">src</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+        <span class="n">nodata_val</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">out</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">arr</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">nodata_val</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">old</span><span class="p">,</span> <span class="n">new</span> <span class="ow">in</span> <span class="n">reclass_map</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="n">mask_val</span> <span class="o">=</span> <span class="p">(</span><span class="n">arr</span> <span class="o">==</span> <span class="n">old</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">new</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">out</span><span class="p">[</span><span class="n">mask_val</span><span class="p">]</span> <span class="o">=</span> <span class="n">nodata_val</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">out</span><span class="p">[</span><span class="n">mask_val</span><span class="p">]</span> <span class="o">=</span> <span class="n">new</span>
+
+        <span class="n">meta</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s2">&quot;uint8&quot;</span><span class="p">,</span> <span class="n">nodata</span><span class="o">=</span><span class="n">nodata_val</span><span class="p">)</span>
+        <span class="k">with</span> <span class="n">rasterio</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">out_tif</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">meta</span><span class="p">)</span> <span class="k">as</span> <span class="n">dst</span><span class="p">:</span>
+            <span class="n">dst</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">out</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">context</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Reclassified raster saved to </span><span class="si">{</span><span class="n">out_tif</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">compute_rural_population</span><span class="p">(</span><span class="n">country_code</span><span class="p">,</span> <span class="n">admin_level</span><span class="p">,</span> <span class="n">gdf</span><span class="p">,</span> <span class="n">work_dir</span><span class="p">,</span> <span class="n">output_dir</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Compute rural population counts by admin unit for each indicator.</span>
+<span class="sd">    Generates smod_reclass.tif if missing. Skips if output CSV already exists.</span>
+<span class="sd">    Adds percentage columns (_rural_perc) for each indicator.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">country_code</span> <span class="o">=</span> <span class="n">country_code</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+    <span class="n">work_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">work_dir</span><span class="si">}</span><span class="s2">/Temporary&quot;</span><span class="p">)</span>
+    <span class="n">temp_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">work_dir</span><span class="si">}</span><span class="s2">/data/</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">/Temporary&quot;</span><span class="p">)</span>
+    <span class="n">output_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">output_dir</span><span class="p">)</span>
+    <span class="n">reclass_tif</span> <span class="o">=</span> <span class="n">work_dir</span> <span class="o">/</span> <span class="s2">&quot;smod_reclass.tif&quot;</span>
+    <span class="n">out_csv</span> <span class="o">=</span> <span class="n">output_dir</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">admin_level</span><span class="si">}</span><span class="s2">_rural_population.csv&quot;</span>
+
+    <span class="c1"># --- skip if CSV exists ---</span>
+    <span class="k">if</span> <span class="n">out_csv</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+        <span class="n">context</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;CSV already exists, skipping: </span><span class="si">{</span><span class="n">out_csv</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">out_csv</span><span class="p">)</span>
+
+    <span class="n">zip_path</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">unzip_dir</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># --- ensure smod_reclass.tif exists ---</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">reclass_tif</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+            <span class="n">context</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;smod_reclass.tif missing — will generate it&quot;</span><span class="p">)</span>
+            <span class="n">zip_path</span><span class="p">,</span> <span class="n">unzip_dir</span><span class="p">,</span> <span class="n">smod_tif</span> <span class="o">=</span> <span class="n">download_and_unzip_smod</span><span class="p">(</span><span class="n">work_dir</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span>
+            <span class="n">reclassify_raster</span><span class="p">(</span><span class="n">smod_tif</span><span class="p">,</span> <span class="n">reclass_tif</span><span class="p">,</span> <span class="n">RECLASS_MAP</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">context</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Using existing smod_reclass.tif&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Ensure WorldPop files exist</span>
+        <span class="n">context</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Ensuring demographic rasters exist in </span><span class="si">{</span><span class="n">temp_dir</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">)</span>
+        <span class="n">indicator_tifs</span> <span class="o">=</span> <span class="n">fetch_worldpop</span><span class="p">(</span><span class="n">country_code</span><span class="p">)</span>
+        <span class="n">indicators</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;female_pop&quot;</span><span class="p">,</span> <span class="s2">&quot;children_u5&quot;</span><span class="p">,</span> <span class="s2">&quot;female_u5&quot;</span><span class="p">,</span> <span class="s2">&quot;elderly&quot;</span><span class="p">,</span> <span class="s2">&quot;pop_u15&quot;</span><span class="p">,</span> <span class="s2">&quot;female_u15&quot;</span><span class="p">]</span>
+        <span class="n">tif_map</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">indicators</span><span class="p">,</span> <span class="n">indicator_tifs</span><span class="p">))</span>
+
+        <span class="c1"># --- load SMOD raster ---</span>
+        <span class="n">smod</span> <span class="o">=</span> <span class="n">rioxarray</span><span class="o">.</span><span class="n">open_rasterio</span><span class="p">(</span><span class="n">reclass_tif</span><span class="p">,</span> <span class="n">masked</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">squeeze</span><span class="p">()</span>
+
+        <span class="n">rural_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">admin_level</span><span class="si">}</span><span class="s2">_PCODE&quot;</span><span class="p">:</span> <span class="n">gdf</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">admin_level</span><span class="si">}</span><span class="s2">_PCODE&quot;</span><span class="p">]})</span>
+
+        <span class="c1"># Store total population sums</span>
+        <span class="n">total_pop_counts</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="k">for</span> <span class="n">label</span> <span class="ow">in</span> <span class="n">indicators</span><span class="p">:</span>
+            <span class="n">pop_raster_path</span> <span class="o">=</span> <span class="n">tif_map</span><span class="p">[</span><span class="n">label</span><span class="p">]</span>
+            <span class="n">pop_raster</span> <span class="o">=</span> <span class="n">rioxarray</span><span class="o">.</span><span class="n">open_rasterio</span><span class="p">(</span><span class="n">pop_raster_path</span><span class="p">,</span> <span class="n">masked</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">squeeze</span><span class="p">()</span>
+
+            <span class="c1"># Align SMOD raster to population raster</span>
+            <span class="n">smod_aligned</span> <span class="o">=</span> <span class="n">smod</span><span class="o">.</span><span class="n">rio</span><span class="o">.</span><span class="n">reproject_match</span><span class="p">(</span><span class="n">pop_raster</span><span class="p">,</span> <span class="n">resampling</span><span class="o">=</span><span class="n">rasterio</span><span class="o">.</span><span class="n">enums</span><span class="o">.</span><span class="n">Resampling</span><span class="o">.</span><span class="n">nearest</span><span class="p">)</span>
+            <span class="n">rural_mask</span> <span class="o">=</span> <span class="p">(</span><span class="n">smod_aligned</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;float32&quot;</span><span class="p">)</span>
+            <span class="n">rural_pop</span> <span class="o">=</span> <span class="n">pop_raster</span> <span class="o">*</span> <span class="n">rural_mask</span>
+
+            <span class="n">tmp_rural</span> <span class="o">=</span> <span class="n">work_dir</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;tmp_rural_</span><span class="si">{</span><span class="n">label</span><span class="si">}</span><span class="s2">.tif&quot;</span>
+            <span class="k">with</span> <span class="n">rasterio</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">pop_raster_path</span><span class="p">)</span> <span class="k">as</span> <span class="n">src</span><span class="p">:</span>
+                <span class="n">meta</span> <span class="o">=</span> <span class="n">src</span><span class="o">.</span><span class="n">meta</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+                <span class="n">meta</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">compress</span><span class="o">=</span><span class="s2">&quot;lzw&quot;</span><span class="p">,</span> <span class="n">tiled</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                            <span class="n">bigtiff</span><span class="o">=</span><span class="s2">&quot;yes&quot;</span> <span class="k">if</span> <span class="n">src</span><span class="o">.</span><span class="n">width</span> <span class="o">*</span> <span class="n">src</span><span class="o">.</span><span class="n">height</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="o">**</span><span class="mi">32</span> <span class="k">else</span> <span class="s2">&quot;no&quot;</span><span class="p">)</span>
+            <span class="k">with</span> <span class="n">rasterio</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">tmp_rural</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">meta</span><span class="p">)</span> <span class="k">as</span> <span class="n">dst</span><span class="p">:</span>
+                <span class="n">dst</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">rural_pop</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+            <span class="c1"># Rural population sums per admin unit</span>
+            <span class="n">stats</span> <span class="o">=</span> <span class="n">zonal_stats</span><span class="p">(</span><span class="n">gdf</span><span class="p">,</span> <span class="n">tmp_rural</span><span class="p">,</span> <span class="n">stats</span><span class="o">=</span><span class="s2">&quot;sum&quot;</span><span class="p">,</span> <span class="n">nodata</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+            <span class="n">rural_df</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">label</span><span class="si">}</span><span class="s2">_rural&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span><span class="p">[</span><span class="s2">&quot;sum&quot;</span><span class="p">]</span> <span class="k">if</span> <span class="n">s</span><span class="p">[</span><span class="s2">&quot;sum&quot;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">stats</span><span class="p">]</span>
+
+            <span class="c1"># Total population sums per admin unit</span>
+            <span class="n">total_stats</span> <span class="o">=</span> <span class="n">zonal_stats</span><span class="p">(</span><span class="n">gdf</span><span class="p">,</span> <span class="n">pop_raster_path</span><span class="p">,</span> <span class="n">stats</span><span class="o">=</span><span class="s2">&quot;sum&quot;</span><span class="p">,</span> <span class="n">nodata</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+            <span class="n">total_pop_counts</span><span class="p">[</span><span class="n">label</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span><span class="p">[</span><span class="s2">&quot;sum&quot;</span><span class="p">]</span> <span class="k">if</span> <span class="n">s</span><span class="p">[</span><span class="s2">&quot;sum&quot;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">total_stats</span><span class="p">]</span>
+
+            <span class="n">context</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Processed rural population for </span><span class="si">{</span><span class="n">label</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="c1"># --- calculate one overall rural percentage column ---</span>
+        <span class="c1"># Use total population (e.g. pop_u15 as proxy, or sum of all groups)</span>
+        <span class="n">total_pop</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">total_pop_counts</span><span class="p">[</span><span class="s2">&quot;female_pop&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">replace</span><span class="p">({</span><span class="mi">0</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">})</span>
+        <span class="n">rural_df</span><span class="p">[</span><span class="s2">&quot;rural_pop_perc&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="n">rural_df</span><span class="p">[</span><span class="s2">&quot;female_pop_rural&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="n">total_pop</span> <span class="o">*</span> <span class="mi">100</span>
+        <span class="p">)</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+        <span class="c1"># --- finalize ---</span>
+        <span class="n">count_cols</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">rural_df</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="n">c</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;_rural&quot;</span><span class="p">)]</span>
+        <span class="n">perc_cols</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">rural_df</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="n">c</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;_rural_perc&quot;</span><span class="p">)]</span>
+
+        <span class="c1"># Counts → integers</span>
+        <span class="n">rural_df</span><span class="p">[</span><span class="n">count_cols</span><span class="p">]</span> <span class="o">=</span> <span class="n">rural_df</span><span class="p">[</span><span class="n">count_cols</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+
+        <span class="c1"># Percentages → keep 2 decimals</span>
+        <span class="n">rural_df</span><span class="p">[</span><span class="n">perc_cols</span><span class="p">]</span> <span class="o">=</span> <span class="n">rural_df</span><span class="p">[</span><span class="n">perc_cols</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+        <span class="n">output_dir</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">rural_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">out_csv</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="n">context</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Rural population CSV written to </span><span class="si">{</span><span class="n">out_csv</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="k">finally</span><span class="p">:</span>
+        <span class="c1"># cleanup</span>
+        <span class="k">if</span> <span class="n">zip_path</span> <span class="ow">and</span> <span class="n">zip_path</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+            <span class="n">zip_path</span><span class="o">.</span><span class="n">unlink</span><span class="p">()</span>
+            <span class="n">context</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Deleted </span><span class="si">{</span><span class="n">zip_path</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">unzip_dir</span> <span class="ow">and</span> <span class="n">unzip_dir</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+            <span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="n">unzip_dir</span><span class="p">)</span>
+            <span class="n">context</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Deleted </span><span class="si">{</span><span class="n">unzip_dir</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        
+                <span class="c1"># cleanup tmp_rural rasters</span>
+        <span class="k">for</span> <span class="n">tmp_file</span> <span class="ow">in</span> <span class="n">work_dir</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s2">&quot;tmp_rural_*.tif&quot;</span><span class="p">):</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">tmp_file</span><span class="o">.</span><span class="n">unlink</span><span class="p">()</span>
+                <span class="n">context</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Deleted </span><span class="si">{</span><span class="n">tmp_file</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="n">context</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Failed to delete </span><span class="si">{</span><span class="n">tmp_file</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">out_csv</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details></section>
+</section>
+<hr class="docutils" />
+<section id="vulnerability">
+<h2>Vulnerability<a class="headerlink" href="#vulnerability" title="Permalink to this heading">#</a></h2>
+<p>Represents the sensitivity of a population to external shocks based on demographic composition and settlement type.<br />
+This layer combines <strong>Demographics</strong> and <strong>Rural Population</strong> indicators to highlight population groups more likely to experience heightened vulnerability in rural or hard-to-reach regions.</p>
+<section id="id13">
+<h3>Data Sources<a class="headerlink" href="#id13" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Demographics CSVs:</strong> Derived from <a class="reference external" href="https://www.worldpop.org/">WorldPop</a> population datasets, disaggregated by age and sex (see <code class="docutils literal notranslate"><span class="pre">Demographics</span></code> chapter).</p></li>
+<li><p><strong>Rural Population CSVs:</strong> Derived from settlement layer analysis separating rural and urban populations (see <code class="docutils literal notranslate"><span class="pre">Rural</span> <span class="pre">Population</span></code> chapter).</p></li>
+<li><p>Both datasets are aggregated to the same administrative level (e.g., ADM2).</p></li>
+</ul>
+</section>
+<section id="id14">
+<h3>Processing Steps<a class="headerlink" href="#id14" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Input CSVs:</strong></p>
+<ul class="simple">
+<li><p>One <code class="docutils literal notranslate"><span class="pre">Demographics</span></code> CSV and one <code class="docutils literal notranslate"><span class="pre">Rural</span> <span class="pre">Population</span></code> CSV are provided per administrative level.</p></li>
+<li><p>Each file contains an identifier column such as <code class="docutils literal notranslate"><span class="pre">ADM0_PCODE</span></code>, <code class="docutils literal notranslate"><span class="pre">ADM1_PCODE</span></code>, or <code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code>.</p></li>
+</ul>
+</li>
+<li><p><strong>Column Detection:</strong></p>
+<ul class="simple">
+<li><p>The script automatically detects the administrative identifier column by finding any column ending with <code class="docutils literal notranslate"><span class="pre">_PCODE</span></code>.</p></li>
+</ul>
+</li>
+<li><p><strong>Merge Operation:</strong></p>
+<ul class="simple">
+<li><p>The two datasets are merged on the identified <code class="docutils literal notranslate"><span class="pre">*_PCODE</span></code> column using a <strong>left join</strong>.</p></li>
+<li><p>This ensures demographic indicators are retained even when some administrative areas lack rural population data.</p></li>
+</ul>
+</li>
+<li><p><strong>Output Generation:</strong></p>
+<ul class="simple">
+<li><p>The merged dataset is exported as <code class="docutils literal notranslate"><span class="pre">{country_code}_{admin_level}_vulnerability.csv</span></code> to the <code class="docutils literal notranslate"><span class="pre">Output/</span></code> directory.</p></li>
+<li><p>One file is created per administrative level present in the input data.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="id15">
+<h3>Outputs<a class="headerlink" href="#id15" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>File:</strong> <code class="docutils literal notranslate"><span class="pre">{country_code}_{admin_level}_vulnerability.csv</span></code></p></li>
+<li><p><strong>Columns:</strong></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">{admin_level}_PCODE</span></code></p></li>
+<li><p>All demographic indicator columns (e.g., <code class="docutils literal notranslate"><span class="pre">female_pop</span></code>, <code class="docutils literal notranslate"><span class="pre">children_u5</span></code>, <code class="docutils literal notranslate"><span class="pre">elderly</span></code>, <code class="docutils literal notranslate"><span class="pre">pop_u15</span></code>)</p></li>
+<li><p>All rural population indicator columns (e.g., <code class="docutils literal notranslate"><span class="pre">rural_pop</span></code>, <code class="docutils literal notranslate"><span class="pre">urban_pop</span></code>, <code class="docutils literal notranslate"><span class="pre">rural_ratio</span></code>)</p></li>
+</ul>
+</li>
+<li><p><strong>CRS:</strong> WGS84 (<code class="docutils literal notranslate"><span class="pre">EPSG:4326</span></code>)</p></li>
+<li><p><strong>Units:</strong> Population counts and ratios aggregated per administrative unit</p></li>
+</ul>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Vulnerability</strong> Python Code<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">vulnerability_asset</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">demographics_asset</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">rural_asset</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Combine demographics and rural population CSVs into a single vulnerability dataset.</span>
+<span class="sd">    Joins on the ADM*_PCODE column per admin level.</span>
+<span class="sd">    Produces one vulnerability CSV per admin level in Output/.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">country_code</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">partition_key</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+    <span class="n">outputs</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">for</span> <span class="n">demo_csv</span><span class="p">,</span> <span class="n">rural_csv</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">demographics_asset</span><span class="p">,</span> <span class="n">rural_asset</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">demo_csv</span><span class="p">)</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">rural_csv</span><span class="p">):</span>
+            <span class="n">context</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Skipping merge for </span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">: missing files </span><span class="si">{</span><span class="n">demo_csv</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">rural_csv</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">continue</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">df_demo</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">demo_csv</span><span class="p">)</span>
+            <span class="n">df_rural</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">rural_csv</span><span class="p">)</span>
+
+            <span class="c1"># detect admin code column automatically (ADM0_PCODE, ADM1_PCODE, etc.)</span>
+            <span class="n">id_col</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">df_demo</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="n">c</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;_PCODE&quot;</span><span class="p">)]</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">id_col</span><span class="p">:</span>
+                <span class="n">context</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Skipping </span><span class="si">{</span><span class="n">demo_csv</span><span class="si">}</span><span class="s2">: no *_PCODE column found&quot;</span><span class="p">)</span>
+                <span class="k">continue</span>
+            <span class="n">id_col</span> <span class="o">=</span> <span class="n">id_col</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+            <span class="n">merged</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df_demo</span><span class="p">,</span> <span class="n">df_rural</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="n">id_col</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">)</span>
+
+            <span class="n">admin_level</span> <span class="o">=</span> <span class="n">id_col</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;_&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># e.g., ADM2</span>
+            <span class="n">output_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">)</span> <span class="o">/</span> <span class="n">country_code</span> <span class="o">/</span> <span class="s2">&quot;Output&quot;</span>
+            <span class="n">output_dir</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+            <span class="n">output_path</span> <span class="o">=</span> <span class="n">output_dir</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">admin_level</span><span class="si">}</span><span class="s2">_vulnerability.csv&quot;</span>
+            <span class="n">merged</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">output_path</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+            <span class="n">outputs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">output_path</span><span class="p">))</span>
+
+            <span class="n">context</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">] Wrote vulnerability CSV: </span><span class="si">{</span><span class="n">output_path</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">context</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Failed to merge </span><span class="si">{</span><span class="n">demo_csv</span><span class="si">}</span><span class="s2"> and </span><span class="si">{</span><span class="n">rural_csv</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">outputs</span><span class="p">:</span>
+        <span class="n">context</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;No vulnerability outputs created for </span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">outputs</span>
+</pre></div>
+</div>
+</div>
+</details></section>
+</section>
+<hr class="docutils" />
+<section id="crop-coverage-and-change">
+<h2>Crop Coverage and Change<a class="headerlink" href="#crop-coverage-and-change" title="Permalink to this heading">#</a></h2>
+<p>Quantifies the extent and temporal change of cropland areas within administrative boundaries.<br />
+This layer assesses both <strong>total cropland coverage</strong> and <strong>change in cropland area</strong> between two years using the <strong>Google Dynamic World (V1)</strong> dataset derived from Sentinel-2 imagery.</p>
+<section id="id16">
+<h3>Data Sources<a class="headerlink" href="#id16" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Dynamic World V1</strong> (<code class="docutils literal notranslate"><span class="pre">GOOGLE/DYNAMICWORLD/V1</span></code>):<br />
+Global, near real-time land cover dataset from Google Earth Engine, with 10 m spatial resolution and daily temporal frequency.</p></li>
+<li><p><strong>Administrative Boundaries</strong> (GeoJSON):<br />
+Used to aggregate cropland extent within each administrative area (e.g., ADM2).</p></li>
+<li><p><strong>Configuration File</strong> (<code class="docutils literal notranslate"><span class="pre">configs/assets_config.yaml</span></code>):<br />
+Defines two reference years under <code class="docutils literal notranslate"><span class="pre">crops_asset:</span> <span class="pre">years:</span> <span class="pre">[year1,</span> <span class="pre">year2]</span></code> for comparison.</p></li>
+</ul>
+</section>
+<section id="id17">
+<h3>Indicators<a class="headerlink" href="#id17" title="Permalink to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Indicator</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Units</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">crops_{year1}_pct</span></code></p></td>
+<td><p>Percentage of total area classified as crops in the first year</p></td>
+<td><p>%</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">crops_{year2}_pct</span></code></p></td>
+<td><p>Percentage of total area classified as crops in the second year</p></td>
+<td><p>%</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">crops_diff_km2</span></code></p></td>
+<td><p>Absolute change in cropland area between the two years</p></td>
+<td><p>km²</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">crops_diff_pctpts</span></code></p></td>
+<td><p>Percentage point difference in cropland coverage</p></td>
+<td><p>% points</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">crops_change_rel_pct</span></code></p></td>
+<td><p>Relative percentage change compared to the baseline year</p></td>
+<td><p>%</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id18">
+<h3>Processing Steps<a class="headerlink" href="#id18" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Configuration Parsing:</strong></p>
+<ul class="simple">
+<li><p>The script reads <code class="docutils literal notranslate"><span class="pre">assets_config.yaml</span></code> and extracts the two comparison years (e.g., 2018 and 2022).</p></li>
+<li><p>If the configuration does not define two valid years, an error is raised.</p></li>
+</ul>
+</li>
+<li><p><strong>Input Geometry:</strong></p>
+<ul class="simple">
+<li><p>The administrative boundary file <code class="docutils literal notranslate"><span class="pre">data/{country_code}/{country_code}_{admin_level}.geojson</span></code> is loaded using <code class="docutils literal notranslate"><span class="pre">GeoPandas</span></code>.</p></li>
+</ul>
+</li>
+<li><p><strong>Earth Engine Setup:</strong></p>
+<ul class="simple">
+<li><p>The script initializes Google Earth Engine (<code class="docutils literal notranslate"><span class="pre">ee.Initialize(project=&quot;aa-automatization&quot;)</span></code>).</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">GOOGLE/DYNAMICWORLD/V1</span></code> collection is used to generate yearly <strong>mode composites</strong> for each year and boundary polygon.</p></li>
+</ul>
+</li>
+<li><p><strong>Cropland Extraction:</strong></p>
+<ul class="simple">
+<li><p>Each composite image is classified into Dynamic World labels.</p></li>
+<li><p>Label <code class="docutils literal notranslate"><span class="pre">4</span></code> corresponds to <strong>cropland</strong>.</p></li>
+<li><p>For each administrative unit, the mean cropland fraction is computed (as % of total area).</p></li>
+</ul>
+</li>
+<li><p><strong>Change Calculation:</strong></p>
+<ul class="simple">
+<li><p>The following statistics are derived per polygon:</p>
+<ul>
+<li><p>Percentage of cropland per year (<code class="docutils literal notranslate"><span class="pre">crops_{year1}_pct</span></code>, <code class="docutils literal notranslate"><span class="pre">crops_{year2}_pct</span></code>)</p></li>
+<li><p>Absolute area change in km² (<code class="docutils literal notranslate"><span class="pre">crops_diff_km2</span></code>)</p></li>
+<li><p>Difference in percentage points (<code class="docutils literal notranslate"><span class="pre">crops_diff_pctpts</span></code>)</p></li>
+<li><p>Relative change compared to the first year (<code class="docutils literal notranslate"><span class="pre">crops_change_rel_pct</span></code>)</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Chunked Processing:</strong></p>
+<ul class="simple">
+<li><p>To handle large datasets, polygons are processed in chunks (default: 20 features at a time).</p></li>
+<li><p>Each chunk’s results are written to a temporary CSV, then appended to the final output.</p></li>
+</ul>
+</li>
+<li><p><strong>Output Generation:</strong></p>
+<ul class="simple">
+<li><p>The combined dataset is saved as <code class="docutils literal notranslate"><span class="pre">{country_code}_{admin_level}_crops.csv</span></code> under <code class="docutils literal notranslate"><span class="pre">data/{country_code}/Output/</span></code>.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="id19">
+<h3>Outputs<a class="headerlink" href="#id19" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>File:</strong> <code class="docutils literal notranslate"><span class="pre">{country_code}_{admin_level}_crops.csv</span></code></p></li>
+<li><p><strong>Columns:</strong></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">{admin_level}_PCODE</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">crops_{year1}_pct</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">crops_{year2}_pct</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">crops_diff_km2</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">crops_diff_pctpts</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">crops_change_rel_pct</span></code></p></li>
+</ul>
+</li>
+<li><p><strong>CRS:</strong> WGS84 (<code class="docutils literal notranslate"><span class="pre">EPSG:4326</span></code>)</p></li>
+<li><p><strong>Units:</strong> Percentages (%) and area (km²)</p></li>
+</ul>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Crop Coverage and Change</strong> Python Code<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">geopandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">gpd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">geemap</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">ee</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">yaml</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">argparse</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">load_years_from_config</span><span class="p">(</span><span class="n">config_path</span><span class="o">=</span><span class="s2">&quot;configs/assets_config.yaml&quot;</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Load years from crops_asset in assets_config.yaml&quot;&quot;&quot;</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">config_path</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">cfg</span> <span class="o">=</span> <span class="n">yaml</span><span class="o">.</span><span class="n">safe_load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+    <span class="n">years</span> <span class="o">=</span> <span class="n">cfg</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;crops_asset&quot;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;years&quot;</span><span class="p">,</span> <span class="p">[])</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">years</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">years</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;assets_config.yaml must define crops_asset: years: [year1, year2]&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">years</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">years</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">process_crops_for_admin</span><span class="p">(</span><span class="n">country_code</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">admin_level</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">config_path</span><span class="o">=</span><span class="s2">&quot;configs/assets_config.yaml&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Run crop coverage calculation for a given country/admin level and return output CSV path.&quot;&quot;&quot;</span>
+
+    <span class="c1"># Initialize Earth Engine</span>
+    <span class="n">ee</span><span class="o">.</span><span class="n">Initialize</span><span class="p">(</span><span class="n">project</span><span class="o">=</span><span class="s2">&quot;aa-automatization&quot;</span><span class="p">)</span>
+
+    <span class="n">year_prev</span><span class="p">,</span> <span class="n">year_curr</span> <span class="o">=</span> <span class="n">load_years_from_config</span><span class="p">(</span><span class="n">config_path</span><span class="p">)</span>
+
+    <span class="n">gdf</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;data/</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">admin_level</span><span class="si">}</span><span class="s2">.geojson&quot;</span><span class="p">)</span>
+
+    <span class="n">chunk_size</span> <span class="o">=</span> <span class="mi">20</span>
+    <span class="n">start_idx</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="c1"># Ensure Output folder exists</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;data/</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">/Output&quot;</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">output_csv</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;data/</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">/Output/</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">admin_level</span><span class="si">}</span><span class="s2">_crops.csv&quot;</span>
+
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">output_csv</span><span class="p">):</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">output_csv</span><span class="p">)</span>
+
+    <span class="n">col_order</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">admin_level</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="si">}</span><span class="s2">_PCODE&quot;</span><span class="p">,</span>
+        <span class="sa">f</span><span class="s2">&quot;crops_</span><span class="si">{</span><span class="n">year_prev</span><span class="si">}</span><span class="s2">_pct&quot;</span><span class="p">,</span>
+        <span class="sa">f</span><span class="s2">&quot;crops_</span><span class="si">{</span><span class="n">year_curr</span><span class="si">}</span><span class="s2">_pct&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;crops_diff_km2&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;crops_diff_pctpts&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;crops_change_rel_pct&quot;</span><span class="p">,</span>
+    <span class="p">]</span>
+
+    <span class="n">dw</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">ImageCollection</span><span class="p">(</span><span class="s2">&quot;GOOGLE/DYNAMICWORLD/V1&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">yearly_composite</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">geom</span><span class="p">):</span>
+        <span class="n">coll</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="n">dw</span><span class="o">.</span><span class="n">filterDate</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s2">-01-01&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s2">-12-31&quot;</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">filterBounds</span><span class="p">(</span><span class="n">geom</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;label&quot;</span><span class="p">)</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="n">coll</span><span class="o">.</span><span class="n">reduce</span><span class="p">(</span><span class="n">ee</span><span class="o">.</span><span class="n">Reducer</span><span class="o">.</span><span class="n">mode</span><span class="p">())</span>
+
+    <span class="k">while</span> <span class="n">start_idx</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">gdf</span><span class="p">):</span>
+        <span class="n">end_idx</span> <span class="o">=</span> <span class="n">start_idx</span> <span class="o">+</span> <span class="n">chunk_size</span>
+        <span class="n">gdf_chunk</span> <span class="o">=</span> <span class="n">gdf</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">start_idx</span><span class="p">:</span><span class="n">end_idx</span><span class="p">]</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">fc</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">geopandas_to_ee</span><span class="p">(</span><span class="n">gdf_chunk</span><span class="p">)</span>
+
+            <span class="k">def</span><span class="w"> </span><span class="nf">add_crops_stats</span><span class="p">(</span><span class="n">feature</span><span class="p">):</span>
+                <span class="n">geom</span> <span class="o">=</span> <span class="n">feature</span><span class="o">.</span><span class="n">geometry</span><span class="p">()</span>
+                <span class="n">comp_prev</span> <span class="o">=</span> <span class="n">yearly_composite</span><span class="p">(</span><span class="n">year_prev</span><span class="p">,</span> <span class="n">geom</span><span class="p">)</span>
+                <span class="n">comp_curr</span> <span class="o">=</span> <span class="n">yearly_composite</span><span class="p">(</span><span class="n">year_curr</span><span class="p">,</span> <span class="n">geom</span><span class="p">)</span>
+
+                <span class="n">polygon_area_km2</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Number</span><span class="p">(</span><span class="n">geom</span><span class="o">.</span><span class="n">area</span><span class="p">())</span><span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="mf">1e6</span><span class="p">)</span>
+
+                <span class="n">crop_prev_raw</span> <span class="o">=</span> <span class="n">comp_prev</span><span class="o">.</span><span class="n">eq</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s2">&quot;crops&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">reduceRegion</span><span class="p">(</span>
+                    <span class="n">reducer</span><span class="o">=</span><span class="n">ee</span><span class="o">.</span><span class="n">Reducer</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span>
+                    <span class="n">geometry</span><span class="o">=</span><span class="n">geom</span><span class="p">,</span>
+                    <span class="n">scale</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+                    <span class="n">bestEffort</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                <span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;crops&quot;</span><span class="p">)</span>
+
+                <span class="n">crop_curr_raw</span> <span class="o">=</span> <span class="n">comp_curr</span><span class="o">.</span><span class="n">eq</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s2">&quot;crops&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">reduceRegion</span><span class="p">(</span>
+                    <span class="n">reducer</span><span class="o">=</span><span class="n">ee</span><span class="o">.</span><span class="n">Reducer</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span>
+                    <span class="n">geometry</span><span class="o">=</span><span class="n">geom</span><span class="p">,</span>
+                    <span class="n">scale</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+                    <span class="n">bestEffort</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                <span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;crops&quot;</span><span class="p">)</span>
+
+                <span class="n">crop_prev_perc</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Number</span><span class="p">(</span><span class="n">ee</span><span class="o">.</span><span class="n">Algorithms</span><span class="o">.</span><span class="n">If</span><span class="p">(</span><span class="n">crop_prev_raw</span><span class="p">,</span> <span class="n">crop_prev_raw</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span><span class="o">.</span><span class="n">multiply</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+                <span class="n">crop_curr_perc</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Number</span><span class="p">(</span><span class="n">ee</span><span class="o">.</span><span class="n">Algorithms</span><span class="o">.</span><span class="n">If</span><span class="p">(</span><span class="n">crop_curr_raw</span><span class="p">,</span> <span class="n">crop_curr_raw</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span><span class="o">.</span><span class="n">multiply</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+
+                <span class="n">crops_perc_point_dif</span> <span class="o">=</span> <span class="n">crop_curr_perc</span><span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="n">crop_prev_perc</span><span class="p">)</span>
+                <span class="n">crops_abs_dif_km2</span> <span class="o">=</span> <span class="n">crops_perc_point_dif</span><span class="o">.</span><span class="n">multiply</span><span class="p">(</span><span class="n">polygon_area_km2</span><span class="p">)</span><span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+
+                <span class="n">crops_rel_change_perc</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Algorithms</span><span class="o">.</span><span class="n">If</span><span class="p">(</span>
+                    <span class="n">crop_prev_perc</span><span class="o">.</span><span class="n">neq</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span>
+                    <span class="n">crops_perc_point_dif</span><span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="n">crop_prev_perc</span><span class="p">)</span><span class="o">.</span><span class="n">multiply</span><span class="p">(</span><span class="mi">100</span><span class="p">),</span>
+                    <span class="kc">None</span><span class="p">,</span>
+                <span class="p">)</span>
+
+                <span class="k">return</span> <span class="n">feature</span><span class="o">.</span><span class="n">set</span><span class="p">({</span>
+                    <span class="sa">f</span><span class="s2">&quot;crops_</span><span class="si">{</span><span class="n">year_prev</span><span class="si">}</span><span class="s2">_pct&quot;</span><span class="p">:</span> <span class="n">crop_prev_perc</span><span class="p">,</span>
+                    <span class="sa">f</span><span class="s2">&quot;crops_</span><span class="si">{</span><span class="n">year_curr</span><span class="si">}</span><span class="s2">_pct&quot;</span><span class="p">:</span> <span class="n">crop_curr_perc</span><span class="p">,</span>
+                    <span class="s2">&quot;crops_diff_km2&quot;</span><span class="p">:</span> <span class="n">crops_abs_dif_km2</span><span class="p">,</span>
+                    <span class="s2">&quot;crops_diff_pctpts&quot;</span><span class="p">:</span> <span class="n">crops_perc_point_dif</span><span class="p">,</span>
+                    <span class="s2">&quot;crops_change_rel_pct&quot;</span><span class="p">:</span> <span class="n">crops_rel_change_perc</span><span class="p">,</span>
+                <span class="p">})</span>
+
+            <span class="n">fc_with_stats</span> <span class="o">=</span> <span class="n">fc</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">add_crops_stats</span><span class="p">)</span>
+            <span class="n">fc_filtered</span> <span class="o">=</span> <span class="n">fc_with_stats</span><span class="o">.</span><span class="n">select</span><span class="p">(</span>
+                <span class="n">propertySelectors</span><span class="o">=</span><span class="n">col_order</span><span class="p">,</span> <span class="n">retainGeometry</span><span class="o">=</span><span class="kc">False</span>
+            <span class="p">)</span>
+
+            <span class="n">temp_csv</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;data/</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">_crops_</span><span class="si">{</span><span class="n">admin_level</span><span class="si">}</span><span class="s2">_temp_chunk.csv&quot;</span>
+            <span class="n">geemap</span><span class="o">.</span><span class="n">ee_to_csv</span><span class="p">(</span><span class="n">fc_filtered</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="n">temp_csv</span><span class="p">)</span>
+
+            <span class="n">df_chunk</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">temp_csv</span><span class="p">)</span>
+            <span class="n">df_chunk</span> <span class="o">=</span> <span class="n">df_chunk</span><span class="p">[[</span><span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">col_order</span> <span class="k">if</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">df_chunk</span><span class="o">.</span><span class="n">columns</span><span class="p">]]</span>
+            <span class="n">df_chunk</span><span class="p">[</span><span class="n">col_order</span><span class="p">[</span><span class="mi">1</span><span class="p">:]]</span> <span class="o">=</span> <span class="n">df_chunk</span><span class="p">[</span><span class="n">col_order</span><span class="p">[</span><span class="mi">1</span><span class="p">:]]</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="n">start_idx</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">output_csv</span><span class="p">):</span>
+                <span class="n">df_chunk</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">output_csv</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">df_chunk</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">output_csv</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+            <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">temp_csv</span><span class="p">)</span>
+            <span class="n">start_idx</span> <span class="o">=</span> <span class="n">end_idx</span>
+
+        <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+            <span class="n">start_idx</span> <span class="o">=</span> <span class="n">end_idx</span>
+
+    <span class="k">return</span> <span class="n">output_csv</span>
+</pre></div>
+</div>
+</div>
+</details></section>
+</section>
+<hr class="docutils" />
+<section id="vegetation-index">
+<h2>Vegetation Index<a class="headerlink" href="#vegetation-index" title="Permalink to this heading">#</a></h2>
+<p>Evaluates vegetation health and density using the <strong>Normalized Difference Vegetation Index (NDVI)</strong> derived from <strong>Landsat</strong> composites. NDVI values range from -1 to +1, where higher values indicate denser and healthier vegetation, while lower values reflect sparse or stressed vegetation, bare soil, or urban surfaces.</p>
+<p>This layer provides summary statistics (mean, median, quartiles) and surface extent of high, medium, and low NDVI zones per administrative boundary.</p>
+<section id="id20">
+<h3>Data Sources<a class="headerlink" href="#id20" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Landsat NDVI Composite</strong> (<code class="docutils literal notranslate"><span class="pre">LANDSAT/COMPOSITES/C02/T1_L2_8DAY_NDVI</span></code>):<br />
+8-day composite product containing NDVI values at 30 m resolution.</p></li>
+<li><p><strong>Administrative Boundaries</strong> (GeoJSON):<br />
+Used for spatial aggregation at ADM levels (e.g., ADM2).</p></li>
+<li><p><strong>Configuration File</strong> (<code class="docutils literal notranslate"><span class="pre">configs/assets_config.yaml</span></code>):<br />
+Defines the target year under <code class="docutils literal notranslate"><span class="pre">ndvi_asset:</span> <span class="pre">year:</span> <span class="pre">[YYYY]</span></code>.</p></li>
+</ul>
+</section>
+<section id="id21">
+<h3>Indicators<a class="headerlink" href="#id21" title="Permalink to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Indicator</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Units</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">NDVI_mean</span></code></p></td>
+<td><p>Mean NDVI value across the administrative unit</p></td>
+<td><p>NDVI (unitless)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">NDVI_median</span></code></p></td>
+<td><p>Median NDVI value</p></td>
+<td><p>NDVI (unitless)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">NDVI_p25</span></code></p></td>
+<td><p>25th percentile NDVI</p></td>
+<td><p>NDVI (unitless)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">NDVI_p75</span></code></p></td>
+<td><p>75th percentile NDVI</p></td>
+<td><p>NDVI (unitless)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">NDVI_high_sqkm</span></code></p></td>
+<td><p>Area with NDVI ≥ 0.6</p></td>
+<td><p>km²</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">NDVI_medium_sqkm</span></code></p></td>
+<td><p>Area with 0.1 ≤ NDVI &lt; 0.6</p></td>
+<td><p>km²</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">NDVI_low_sqkm</span></code></p></td>
+<td><p>Area with NDVI &lt; 0.1</p></td>
+<td><p>km²</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="ndvi-thresholds">
+<h3>NDVI Thresholds<a class="headerlink" href="#ndvi-thresholds" title="Permalink to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Category</p></th>
+<th class="head"><p>NDVI Range</p></th>
+<th class="head"><p>Interpretation</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>High NDVI</strong></p></td>
+<td><p>≥ 0.6</p></td>
+<td><p>Dense vegetation (forests, crops, green cover)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Medium NDVI</strong></p></td>
+<td><p>0.1 – 0.6</p></td>
+<td><p>Moderate vegetation (grasslands, shrubs, mixed use)</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Low NDVI</strong></p></td>
+<td><p>&lt; 0.1</p></td>
+<td><p>Bare soil, urban areas, or degraded vegetation</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id22">
+<h3>Processing Steps<a class="headerlink" href="#id22" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Configuration Loading</strong></p>
+<ul class="simple">
+<li><p>Extracts <code class="docutils literal notranslate"><span class="pre">year</span></code> from <code class="docutils literal notranslate"><span class="pre">assets_config.yaml</span></code> (<code class="docutils literal notranslate"><span class="pre">ndvi_asset:</span> <span class="pre">year:</span> <span class="pre">[YYYY]</span></code>).</p></li>
+<li><p>The script ensures exactly one valid year is defined.</p></li>
+</ul>
+</li>
+<li><p><strong>Input Geometry</strong></p>
+<ul class="simple">
+<li><p>Loads administrative boundaries (<code class="docutils literal notranslate"><span class="pre">data/{country_code}/{country_code}_{admin_level}.geojson</span></code>) using GeoPandas.</p></li>
+</ul>
+</li>
+<li><p><strong>Earth Engine Initialization</strong></p>
+<ul class="simple">
+<li><p>Connects to Google Earth Engine under the project <code class="docutils literal notranslate"><span class="pre">aa-automatization</span></code>.</p></li>
+</ul>
+</li>
+<li><p><strong>Landsat NDVI Aggregation</strong></p>
+<ul class="simple">
+<li><p>Loads Landsat NDVI composites for the specified year.</p></li>
+<li><p>Calculates the <strong>median NDVI</strong> across the year to reduce noise from clouds and seasonal variation.</p></li>
+</ul>
+</li>
+<li><p><strong>NDVI Classification</strong></p>
+<ul class="simple">
+<li><p>Creates three NDVI masks:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">High</span></code>: NDVI ≥ 0.6</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Medium</span></code>: 0.1 ≤ NDVI &lt; 0.6</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Low</span></code>: NDVI &lt; 0.1</p></li>
+</ul>
+</li>
+<li><p>Each mask is used to compute the corresponding surface area in square kilometers.</p></li>
+</ul>
+</li>
+<li><p><strong>Statistical Summary per Polygon</strong></p>
+<ul class="simple">
+<li><p>Calculates the following metrics using <code class="docutils literal notranslate"><span class="pre">ee.Reducer</span></code>:</p>
+<ul>
+<li><p>Mean, Median, 25th and 75th Percentile NDVI</p></li>
+<li><p>Area (km²) for each NDVI category</p></li>
+</ul>
+</li>
+<li><p>Areas are calculated from pixel counts (<code class="docutils literal notranslate"><span class="pre">count</span> <span class="pre">×</span> <span class="pre">900</span> <span class="pre">/</span> <span class="pre">1,000,000</span></code>).</p></li>
+</ul>
+</li>
+<li><p><strong>Chunked Processing</strong></p>
+<ul class="simple">
+<li><p>Polygons are processed in chunks (default: 20).</p></li>
+<li><p>Reduces API payload errors when handling large datasets.</p></li>
+<li><p>If payloads exceed limits, chunk size automatically decreases.</p></li>
+</ul>
+</li>
+<li><p><strong>Output Generation</strong></p>
+<ul class="simple">
+<li><p>Each chunk’s results are exported to temporary CSVs and appended to<br />
+<code class="docutils literal notranslate"><span class="pre">data/{country_code}/Output/{country_code}_{admin_level}_ndvi.csv</span></code>.</p></li>
+<li><p>Final columns are reordered and rounded to 2 decimals for clarity.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="id23">
+<h3>Outputs<a class="headerlink" href="#id23" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>File:</strong> <code class="docutils literal notranslate"><span class="pre">{country_code}_{admin_level}_ndvi.csv</span></code></p></li>
+<li><p><strong>Columns:</strong></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">{admin_level}_PCODE</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">NDVI_mean</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">NDVI_median</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">NDVI_p25</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">NDVI_p75</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">NDVI_high_sqkm</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">NDVI_medium_sqkm</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">NDVI_low_sqkm</span></code></p></li>
+</ul>
+</li>
+<li><p><strong>CRS:</strong> WGS84 (<code class="docutils literal notranslate"><span class="pre">EPSG:4326</span></code>)</p></li>
+<li><p><strong>Units:</strong> NDVI (unitless), Area (km²)</p></li>
+</ul>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Vegetation Index</strong> Python Code<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">geopandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">gpd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">geemap</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">ee</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">yaml</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">argparse</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">load_year_from_config</span><span class="p">(</span><span class="n">config_path</span><span class="o">=</span><span class="s2">&quot;configs/assets_config.yaml&quot;</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Load year from ndvi_asset in assets_config.yaml&quot;&quot;&quot;</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">config_path</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">cfg</span> <span class="o">=</span> <span class="n">yaml</span><span class="o">.</span><span class="n">safe_load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+    <span class="n">year</span> <span class="o">=</span> <span class="n">cfg</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;ndvi_asset&quot;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;year&quot;</span><span class="p">,</span> <span class="p">[])</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">year</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">year</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;assets_config.yaml must define ndvi_asset: year: [year]&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">year</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">process_ndvi_for_admin</span><span class="p">(</span><span class="n">country_code</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">admin_level</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">config_path</span><span class="o">=</span><span class="s2">&quot;configs/assets_config.yaml&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Run NDVI calculation for a given country/admin level and return output CSV path.&quot;&quot;&quot;</span>
+    <span class="c1"># Initialize Earth Engine</span>
+    <span class="n">ee</span><span class="o">.</span><span class="n">Initialize</span><span class="p">(</span><span class="n">project</span><span class="o">=</span><span class="s1">&#39;aa-automatization&#39;</span><span class="p">)</span>
+
+    <span class="n">gdf</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;data/</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">admin_level</span><span class="si">}</span><span class="s2">.geojson&quot;</span><span class="p">)</span>
+    <span class="n">chunk_size</span> <span class="o">=</span> <span class="mi">20</span>
+    <span class="n">start_idx</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">year</span> <span class="o">=</span> <span class="n">load_year_from_config</span><span class="p">(</span><span class="n">config_path</span><span class="p">)</span>
+
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;data/</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">/Output&quot;</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">output_csv</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;data/</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">/Output/</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">admin_level</span><span class="si">}</span><span class="s2">_ndvi.csv&quot;</span>
+
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">output_csv</span><span class="p">):</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">output_csv</span><span class="p">)</span>
+
+    <span class="n">col_order</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">admin_level</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="si">}</span><span class="s2">_PCODE&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;NDVI_mean&quot;</span><span class="p">,</span> <span class="s2">&quot;NDVI_median&quot;</span><span class="p">,</span> <span class="s2">&quot;NDVI_p25&quot;</span><span class="p">,</span> <span class="s2">&quot;NDVI_p75&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;NDVI_high_sqkm&quot;</span><span class="p">,</span> <span class="s2">&quot;NDVI_medium_sqkm&quot;</span><span class="p">,</span> <span class="s2">&quot;NDVI_low_sqkm&quot;</span>
+    <span class="p">]</span>
+
+    <span class="k">while</span> <span class="n">start_idx</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">gdf</span><span class="p">):</span>
+        <span class="n">end_idx</span> <span class="o">=</span> <span class="n">start_idx</span> <span class="o">+</span> <span class="n">chunk_size</span>
+        <span class="n">gdf_chunk</span> <span class="o">=</span> <span class="n">gdf</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">start_idx</span><span class="p">:</span><span class="n">end_idx</span><span class="p">]</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">fc</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">geopandas_to_ee</span><span class="p">(</span><span class="n">gdf_chunk</span><span class="p">)</span>
+
+            <span class="n">landsat</span> <span class="o">=</span> <span class="p">(</span><span class="n">ee</span><span class="o">.</span><span class="n">ImageCollection</span><span class="p">(</span><span class="s2">&quot;LANDSAT/COMPOSITES/C02/T1_L2_8DAY_NDVI&quot;</span><span class="p">)</span>
+                       <span class="o">.</span><span class="n">filterDate</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s2">-01-01&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s2">-12-31&quot;</span><span class="p">)</span>
+                       <span class="o">.</span><span class="n">filterBounds</span><span class="p">(</span><span class="n">fc</span><span class="p">))</span>
+
+            <span class="n">ndvi_image</span> <span class="o">=</span> <span class="n">landsat</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;NDVI&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+
+            <span class="n">high_ndvi_mask</span> <span class="o">=</span> <span class="n">ndvi_image</span><span class="o">.</span><span class="n">updateMask</span><span class="p">(</span><span class="n">ndvi_image</span><span class="o">.</span><span class="n">gte</span><span class="p">(</span><span class="mf">0.6</span><span class="p">))</span>
+            <span class="n">medium_ndvi_mask</span> <span class="o">=</span> <span class="n">ndvi_image</span><span class="o">.</span><span class="n">updateMask</span><span class="p">(</span><span class="n">ndvi_image</span><span class="o">.</span><span class="n">gte</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span><span class="o">.</span><span class="n">And</span><span class="p">(</span><span class="n">ndvi_image</span><span class="o">.</span><span class="n">lt</span><span class="p">(</span><span class="mf">0.6</span><span class="p">)))</span>
+            <span class="n">low_ndvi_mask</span> <span class="o">=</span> <span class="n">ndvi_image</span><span class="o">.</span><span class="n">updateMask</span><span class="p">(</span><span class="n">ndvi_image</span><span class="o">.</span><span class="n">lt</span><span class="p">(</span><span class="mf">0.1</span><span class="p">))</span>
+
+            <span class="k">def</span><span class="w"> </span><span class="nf">add_stats</span><span class="p">(</span><span class="n">feature</span><span class="p">):</span>
+                <span class="n">stats</span> <span class="o">=</span> <span class="n">ndvi_image</span><span class="o">.</span><span class="n">reduceRegion</span><span class="p">(</span>
+                    <span class="n">reducer</span><span class="o">=</span><span class="n">ee</span><span class="o">.</span><span class="n">Reducer</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+                            <span class="o">.</span><span class="n">combine</span><span class="p">(</span><span class="n">ee</span><span class="o">.</span><span class="n">Reducer</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+                            <span class="o">.</span><span class="n">combine</span><span class="p">(</span><span class="n">ee</span><span class="o">.</span><span class="n">Reducer</span><span class="o">.</span><span class="n">percentile</span><span class="p">([</span><span class="mi">25</span><span class="p">,</span> <span class="mi">75</span><span class="p">]),</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+                    <span class="n">geometry</span><span class="o">=</span><span class="n">feature</span><span class="o">.</span><span class="n">geometry</span><span class="p">(),</span>
+                    <span class="n">scale</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span>
+                    <span class="n">bestEffort</span><span class="o">=</span><span class="kc">True</span>
+                <span class="p">)</span>
+
+                <span class="n">high_count</span> <span class="o">=</span> <span class="n">high_ndvi_mask</span><span class="o">.</span><span class="n">reduceRegion</span><span class="p">(</span>
+                    <span class="n">reducer</span><span class="o">=</span><span class="n">ee</span><span class="o">.</span><span class="n">Reducer</span><span class="o">.</span><span class="n">count</span><span class="p">(),</span>
+                    <span class="n">geometry</span><span class="o">=</span><span class="n">feature</span><span class="o">.</span><span class="n">geometry</span><span class="p">(),</span>
+                    <span class="n">scale</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span>
+                    <span class="n">bestEffort</span><span class="o">=</span><span class="kc">True</span>
+                <span class="p">)</span>
+                <span class="n">medium_count</span> <span class="o">=</span> <span class="n">medium_ndvi_mask</span><span class="o">.</span><span class="n">reduceRegion</span><span class="p">(</span>
+                    <span class="n">reducer</span><span class="o">=</span><span class="n">ee</span><span class="o">.</span><span class="n">Reducer</span><span class="o">.</span><span class="n">count</span><span class="p">(),</span>
+                    <span class="n">geometry</span><span class="o">=</span><span class="n">feature</span><span class="o">.</span><span class="n">geometry</span><span class="p">(),</span>
+                    <span class="n">scale</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span>
+                    <span class="n">bestEffort</span><span class="o">=</span><span class="kc">True</span>
+                <span class="p">)</span>
+                <span class="n">low_count</span> <span class="o">=</span> <span class="n">low_ndvi_mask</span><span class="o">.</span><span class="n">reduceRegion</span><span class="p">(</span>
+                    <span class="n">reducer</span><span class="o">=</span><span class="n">ee</span><span class="o">.</span><span class="n">Reducer</span><span class="o">.</span><span class="n">count</span><span class="p">(),</span>
+                    <span class="n">geometry</span><span class="o">=</span><span class="n">feature</span><span class="o">.</span><span class="n">geometry</span><span class="p">(),</span>
+                    <span class="n">scale</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span>
+                    <span class="n">bestEffort</span><span class="o">=</span><span class="kc">True</span>
+                <span class="p">)</span>
+
+                <span class="n">high_count</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Dictionary</span><span class="p">(</span><span class="n">high_count</span><span class="p">)</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">:</span> <span class="n">ee</span><span class="o">.</span><span class="n">Number</span><span class="p">(</span><span class="n">v</span><span class="p">)</span><span class="o">.</span><span class="n">multiply</span><span class="p">(</span><span class="mi">900</span><span class="p">)</span><span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="mi">1_000_000</span><span class="p">))</span>
+                <span class="n">medium_count</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Dictionary</span><span class="p">(</span><span class="n">medium_count</span><span class="p">)</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">:</span> <span class="n">ee</span><span class="o">.</span><span class="n">Number</span><span class="p">(</span><span class="n">v</span><span class="p">)</span><span class="o">.</span><span class="n">multiply</span><span class="p">(</span><span class="mi">900</span><span class="p">)</span><span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="mi">1_000_000</span><span class="p">))</span>
+                <span class="n">low_count</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Dictionary</span><span class="p">(</span><span class="n">low_count</span><span class="p">)</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">:</span> <span class="n">ee</span><span class="o">.</span><span class="n">Number</span><span class="p">(</span><span class="n">v</span><span class="p">)</span><span class="o">.</span><span class="n">multiply</span><span class="p">(</span><span class="mi">900</span><span class="p">)</span><span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="mi">1_000_000</span><span class="p">))</span>
+
+                <span class="n">all_stats</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">combine</span><span class="p">(</span><span class="n">high_count</span><span class="p">)</span><span class="o">.</span><span class="n">combine</span><span class="p">(</span><span class="n">medium_count</span><span class="p">)</span><span class="o">.</span><span class="n">combine</span><span class="p">(</span><span class="n">low_count</span><span class="p">)</span>
+                <span class="k">return</span> <span class="n">feature</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">all_stats</span><span class="p">)</span>
+
+            <span class="n">fc_with_stats</span> <span class="o">=</span> <span class="n">fc</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">add_stats</span><span class="p">)</span>
+            <span class="n">fc_filtered</span> <span class="o">=</span> <span class="n">fc_with_stats</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="o">**</span><span class="p">{</span>
+                <span class="s1">&#39;propertySelectors&#39;</span><span class="p">:</span> <span class="n">col_order</span><span class="p">,</span>
+                <span class="s1">&#39;retainGeometry&#39;</span><span class="p">:</span> <span class="kc">False</span>
+            <span class="p">})</span>
+
+            <span class="n">temp_csv</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;data/</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">_ndvi_</span><span class="si">{</span><span class="n">admin_level</span><span class="si">}</span><span class="s2">_temp_chunk.csv&quot;</span>
+            <span class="n">geemap</span><span class="o">.</span><span class="n">ee_to_csv</span><span class="p">(</span><span class="n">fc_filtered</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="n">temp_csv</span><span class="p">)</span>
+
+            <span class="n">df_chunk</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">temp_csv</span><span class="p">)</span>
+            <span class="n">df_chunk</span> <span class="o">=</span> <span class="n">df_chunk</span><span class="p">[[</span><span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">col_order</span> <span class="k">if</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">df_chunk</span><span class="o">.</span><span class="n">columns</span><span class="p">]]</span>
+
+            <span class="n">round_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;NDVI_mean&quot;</span><span class="p">,</span> <span class="s2">&quot;NDVI_median&quot;</span><span class="p">,</span> <span class="s2">&quot;NDVI_p25&quot;</span><span class="p">,</span> <span class="s2">&quot;NDVI_p75&quot;</span><span class="p">]</span>
+            <span class="n">df_chunk</span><span class="p">[</span><span class="n">round_cols</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_chunk</span><span class="p">[</span><span class="n">round_cols</span><span class="p">]</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="n">start_idx</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">output_csv</span><span class="p">):</span>
+                <span class="n">df_chunk</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">output_csv</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">df_chunk</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">output_csv</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+            <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">temp_csv</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Processed chunk </span><span class="si">{</span><span class="n">start_idx</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="n">end_idx</span><span class="si">}</span><span class="s2"> (size </span><span class="si">{</span><span class="n">chunk_size</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+            <span class="n">start_idx</span> <span class="o">=</span> <span class="n">end_idx</span>
+
+        <span class="k">except</span> <span class="n">ee</span><span class="o">.</span><span class="n">EEException</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+            <span class="k">if</span> <span class="s2">&quot;Request payload size exceeds the limit&quot;</span> <span class="ow">in</span> <span class="n">msg</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">chunk_size</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+                    <span class="n">chunk_size</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">chunk_size</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Payload too large. Reducing chunk size to </span><span class="si">{</span><span class="n">chunk_size</span><span class="si">}</span><span class="s2"> and retrying index </span><span class="si">{</span><span class="n">start_idx</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Chunk size 1 still too large. Skipping index </span><span class="si">{</span><span class="n">start_idx</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+                    <span class="n">start_idx</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;EEException: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">. Skipping chunk.&quot;</span><span class="p">)</span>
+                <span class="n">start_idx</span> <span class="o">=</span> <span class="n">end_idx</span>
+        <span class="k">except</span> <span class="ne">FileNotFoundError</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Temp CSV not found. Retrying index </span><span class="si">{</span><span class="n">start_idx</span><span class="si">}</span><span class="s2"> with smaller chunk...&quot;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">chunk_size</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="n">chunk_size</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">chunk_size</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">start_idx</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Unexpected error: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">. Skipping chunk </span><span class="si">{</span><span class="n">start_idx</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="n">end_idx</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+            <span class="n">start_idx</span> <span class="o">=</span> <span class="n">end_idx</span>
+
+    <span class="k">return</span> <span class="n">output_csv</span>
+</pre></div>
+</div>
+</div>
 </details><hr class="docutils" />
 </section>
 </section>
@@ -1650,6 +2642,33 @@ Python Code<div class="sd-summary-down docutils">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#indicators">Indicators</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Processing Steps</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Outputs</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rural-population">Rural Population</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Data Sources</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Processing Steps</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Outputs</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vulnerability">Vulnerability</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Data Sources</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Processing Steps</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Outputs</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#crop-coverage-and-change">Crop Coverage and Change</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Data Sources</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Indicators</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Processing Steps</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Outputs</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vegetation-index">Vegetation Index</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Data Sources</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Indicators</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ndvi-thresholds">NDVI Thresholds</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Processing Steps</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Outputs</a></li>
 </ul>
 </li>
 </ul>
