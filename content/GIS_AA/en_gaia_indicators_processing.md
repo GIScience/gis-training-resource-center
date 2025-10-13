@@ -6,7 +6,7 @@ The Global Aggregation of Indicators for Anticipatory Action (GAIA) Pipeline pro
 
 1. [**Access to Services**](#access-to-services) – Population accessibility to key facilities such as education and health centers.  
 2. [**Facilities**](#facilities) – Availability and distribution of essential service infrastructure.  
-3. [**Coping Capacity**](#coping-capacity) – Combined indicators derived from Access and Facilities layers to assess local coping capacity.
+3. [**Coping Capacity**](#coping-capacity) – Combined indicators derived from Access and Facilities layers.
 4. [**Demographics**](#demographics) – Distribution of vulnerable population.
 5. [**Rural Population**](#rural-population) – Demographic indicators focused specifically on rural populations.
 6. [**Vulnerability**](#vulnerability) – Composite indicators derived from Demographics and Rural Population layers.
