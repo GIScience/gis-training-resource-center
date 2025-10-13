@@ -640,7 +640,7 @@ document.write(`
 <h1>GAIA Pipeline Documentation<a class="headerlink" href="#gaia-pipeline-documentation" title="Permalink to this heading">#</a></h1>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h2>
-<p>The Global Aggregation of Indicators for Anticipatory Action (GAIA) Pipeline produces a series of thematic files for each country at administrative level 2. Each file captures different aspects of population, infrastructure, and environmental conditions. Below is an overview of the available files:</p>
+<p>The Global Aggregation of Indicators for Anticipatory Action (GAIA) Pipeline produces a series of thematic files for a collection from 146 countries at administrative level 2. Each file captures different aspects of population, infrastructure, and environmental conditions. Below is an overview of the available files:</p>
 <ol class="arabic simple">
 <li><p><span class="xref myst"><strong>Access to Services</strong></span> – Population accessibility to key facilities such as education and health centers.</p></li>
 <li><p><span class="xref myst"><strong>Facilities</strong></span> – Availability and distribution of essential service infrastructure.</p></li>
@@ -652,7 +652,682 @@ document.write(`
 <li><p><span class="xref myst"><strong>Vegetation Index</strong></span> – NDVI-based assessment of vegetation conditions.</p></li>
 <li><p><span class="xref myst"><strong>Flood Exposure</strong></span> – Exposure of populations and facilities to flood hazards.</p></li>
 </ol>
-</section>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Available Countries<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="rubric">Africa</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">ID</p></th>
+<th class="head"><p class="sd-card-text">Country Code</p></th>
+<th class="head"><p class="sd-card-text">Slug</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">1</p></td>
+<td><p class="sd-card-text">AGO</p></td>
+<td><p class="sd-card-text">angola</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">2</p></td>
+<td><p class="sd-card-text">BDI</p></td>
+<td><p class="sd-card-text">burundi</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">3</p></td>
+<td><p class="sd-card-text">BEN</p></td>
+<td><p class="sd-card-text">benin</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">4</p></td>
+<td><p class="sd-card-text">BFA</p></td>
+<td><p class="sd-card-text">burkina-faso</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">5</p></td>
+<td><p class="sd-card-text">BWA</p></td>
+<td><p class="sd-card-text">botswana</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">6</p></td>
+<td><p class="sd-card-text">CAF</p></td>
+<td><p class="sd-card-text">central-african-republic</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">7</p></td>
+<td><p class="sd-card-text">CIV</p></td>
+<td><p class="sd-card-text">ivory-coast</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">8</p></td>
+<td><p class="sd-card-text">CMR</p></td>
+<td><p class="sd-card-text">cameroon</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">9</p></td>
+<td><p class="sd-card-text">COD</p></td>
+<td><p class="sd-card-text">congo-democratic-republic</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">10</p></td>
+<td><p class="sd-card-text">COG</p></td>
+<td><p class="sd-card-text">congo-brazzaville</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">11</p></td>
+<td><p class="sd-card-text">COM</p></td>
+<td><p class="sd-card-text">comores</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">12</p></td>
+<td><p class="sd-card-text">CPV</p></td>
+<td><p class="sd-card-text">cape-verde</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">13</p></td>
+<td><p class="sd-card-text">DJI</p></td>
+<td><p class="sd-card-text">djibouti</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">14</p></td>
+<td><p class="sd-card-text">DZA</p></td>
+<td><p class="sd-card-text">algeria</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">15</p></td>
+<td><p class="sd-card-text">EGY</p></td>
+<td><p class="sd-card-text">egypt</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">16</p></td>
+<td><p class="sd-card-text">ERI</p></td>
+<td><p class="sd-card-text">eritrea</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">17</p></td>
+<td><p class="sd-card-text">ESH</p></td>
+<td><p class="sd-card-text">morocco</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">18</p></td>
+<td><p class="sd-card-text">ETH</p></td>
+<td><p class="sd-card-text">ethiopia</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">19</p></td>
+<td><p class="sd-card-text">GAB</p></td>
+<td><p class="sd-card-text">gabon</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">20</p></td>
+<td><p class="sd-card-text">GHA</p></td>
+<td><p class="sd-card-text">ghana</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">21</p></td>
+<td><p class="sd-card-text">GIN</p></td>
+<td><p class="sd-card-text">guinea</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">22</p></td>
+<td><p class="sd-card-text">GMB</p></td>
+<td><p class="sd-card-text">senegal-and-gambia</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">23</p></td>
+<td><p class="sd-card-text">GNB</p></td>
+<td><p class="sd-card-text">guinea-bissau</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">24</p></td>
+<td><p class="sd-card-text">GNQ</p></td>
+<td><p class="sd-card-text">equatorial-guinea</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">25</p></td>
+<td><p class="sd-card-text">KEN</p></td>
+<td><p class="sd-card-text">kenya</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">26</p></td>
+<td><p class="sd-card-text">LBR</p></td>
+<td><p class="sd-card-text">liberia</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">27</p></td>
+<td><p class="sd-card-text">LBY</p></td>
+<td><p class="sd-card-text">libya</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">28</p></td>
+<td><p class="sd-card-text">LSO</p></td>
+<td><p class="sd-card-text">lesotho</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">29</p></td>
+<td><p class="sd-card-text">MAR</p></td>
+<td><p class="sd-card-text">morocco</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">30</p></td>
+<td><p class="sd-card-text">MDG</p></td>
+<td><p class="sd-card-text">madagascar</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">31</p></td>
+<td><p class="sd-card-text">MLI</p></td>
+<td><p class="sd-card-text">mali</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">32</p></td>
+<td><p class="sd-card-text">MOZ</p></td>
+<td><p class="sd-card-text">mozambique</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">33</p></td>
+<td><p class="sd-card-text">MRT</p></td>
+<td><p class="sd-card-text">mauritania</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">34</p></td>
+<td><p class="sd-card-text">MUS</p></td>
+<td><p class="sd-card-text">mauritius</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">35</p></td>
+<td><p class="sd-card-text">MWI</p></td>
+<td><p class="sd-card-text">malawi</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">36</p></td>
+<td><p class="sd-card-text">MYS</p></td>
+<td><p class="sd-card-text">malawi</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">37</p></td>
+<td><p class="sd-card-text">NAM</p></td>
+<td><p class="sd-card-text">namibia</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">38</p></td>
+<td><p class="sd-card-text">NER</p></td>
+<td><p class="sd-card-text">niger</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">39</p></td>
+<td><p class="sd-card-text">NGA</p></td>
+<td><p class="sd-card-text">nigeria</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">40</p></td>
+<td><p class="sd-card-text">RWA</p></td>
+<td><p class="sd-card-text">rwanda</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">41</p></td>
+<td><p class="sd-card-text">SDN</p></td>
+<td><p class="sd-card-text">sudan</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">42</p></td>
+<td><p class="sd-card-text">SEN</p></td>
+<td><p class="sd-card-text">senegal-and-gambia</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">43</p></td>
+<td><p class="sd-card-text">SLE</p></td>
+<td><p class="sd-card-text">sierra-leone</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">44</p></td>
+<td><p class="sd-card-text">SOM</p></td>
+<td><p class="sd-card-text">somalia</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">45</p></td>
+<td><p class="sd-card-text">SSD</p></td>
+<td><p class="sd-card-text">south-sudan</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">46</p></td>
+<td><p class="sd-card-text">STP</p></td>
+<td><p class="sd-card-text">sao-tome-and-principe</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">47</p></td>
+<td><p class="sd-card-text">SWZ</p></td>
+<td><p class="sd-card-text">eswatini</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">48</p></td>
+<td><p class="sd-card-text">SYC</p></td>
+<td><p class="sd-card-text">seychelles</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">49</p></td>
+<td><p class="sd-card-text">TCD</p></td>
+<td><p class="sd-card-text">chad</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">50</p></td>
+<td><p class="sd-card-text">TGO</p></td>
+<td><p class="sd-card-text">togo</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">51</p></td>
+<td><p class="sd-card-text">TUN</p></td>
+<td><p class="sd-card-text">tunisia</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">52</p></td>
+<td><p class="sd-card-text">TZA</p></td>
+<td><p class="sd-card-text">tanzania</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">53</p></td>
+<td><p class="sd-card-text">UGA</p></td>
+<td><p class="sd-card-text">uganda</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">54</p></td>
+<td><p class="sd-card-text">ZAF</p></td>
+<td><p class="sd-card-text">south-africa</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">55</p></td>
+<td><p class="sd-card-text">ZMB</p></td>
+<td><p class="sd-card-text">zambia</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">56</p></td>
+<td><p class="sd-card-text">ZWE</p></td>
+<td><p class="sd-card-text">zimbabwe</p></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<p class="rubric">Asia</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">ID</p></th>
+<th class="head"><p class="sd-card-text">Country Code</p></th>
+<th class="head"><p class="sd-card-text">Slug</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">57</p></td>
+<td><p class="sd-card-text">AFG</p></td>
+<td><p class="sd-card-text">afghanistan</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">58</p></td>
+<td><p class="sd-card-text">ARE</p></td>
+<td><p class="sd-card-text">gcc-states</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">59</p></td>
+<td><p class="sd-card-text">ARM</p></td>
+<td><p class="sd-card-text">armenia</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">60</p></td>
+<td><p class="sd-card-text">AZE</p></td>
+<td><p class="sd-card-text">azerbaijan</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">61</p></td>
+<td><p class="sd-card-text">BGD</p></td>
+<td><p class="sd-card-text">bangladesh</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">62</p></td>
+<td><p class="sd-card-text">BHR</p></td>
+<td><p class="sd-card-text">gcc-states</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">63</p></td>
+<td><p class="sd-card-text">BTN</p></td>
+<td><p class="sd-card-text">bhutan</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">64</p></td>
+<td><p class="sd-card-text">CHN</p></td>
+<td><p class="sd-card-text">china</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">65</p></td>
+<td><p class="sd-card-text">IDN</p></td>
+<td><p class="sd-card-text">indonesia</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">66</p></td>
+<td><p class="sd-card-text">IRN</p></td>
+<td><p class="sd-card-text">iran</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">67</p></td>
+<td><p class="sd-card-text">IRQ</p></td>
+<td><p class="sd-card-text">iraq</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">68</p></td>
+<td><p class="sd-card-text">KAZ</p></td>
+<td><p class="sd-card-text">kazakhstan</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">69</p></td>
+<td><p class="sd-card-text">KGZ</p></td>
+<td><p class="sd-card-text">kyrgyzstan</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">70</p></td>
+<td><p class="sd-card-text">KHM</p></td>
+<td><p class="sd-card-text">cambodia</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">71</p></td>
+<td><p class="sd-card-text">KWT</p></td>
+<td><p class="sd-card-text">gcc-states</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">72</p></td>
+<td><p class="sd-card-text">LAO</p></td>
+<td><p class="sd-card-text">laos</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">73</p></td>
+<td><p class="sd-card-text">LBN</p></td>
+<td><p class="sd-card-text">lebanon</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">74</p></td>
+<td><p class="sd-card-text">LKA</p></td>
+<td><p class="sd-card-text">sri-lanka</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">75</p></td>
+<td><p class="sd-card-text">MDV</p></td>
+<td><p class="sd-card-text">maldives</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">76</p></td>
+<td><p class="sd-card-text">MMR</p></td>
+<td><p class="sd-card-text">myanmar</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">77</p></td>
+<td><p class="sd-card-text">MNG</p></td>
+<td><p class="sd-card-text">mongolia</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">78</p></td>
+<td><p class="sd-card-text">NPL</p></td>
+<td><p class="sd-card-text">nepal</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">79</p></td>
+<td><p class="sd-card-text">OMN</p></td>
+<td><p class="sd-card-text">gcc-states</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">80</p></td>
+<td><p class="sd-card-text">PAK</p></td>
+<td><p class="sd-card-text">pakistan</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">81</p></td>
+<td><p class="sd-card-text">PHL</p></td>
+<td><p class="sd-card-text">philippines</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">82</p></td>
+<td><p class="sd-card-text">PRK</p></td>
+<td><p class="sd-card-text">north-korea</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">83</p></td>
+<td><p class="sd-card-text">QAT</p></td>
+<td><p class="sd-card-text">gcc-states</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">84</p></td>
+<td><p class="sd-card-text">SAU</p></td>
+<td><p class="sd-card-text">gcc-states</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">85</p></td>
+<td><p class="sd-card-text">SYR</p></td>
+<td><p class="sd-card-text">syria</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">86</p></td>
+<td><p class="sd-card-text">THA</p></td>
+<td><p class="sd-card-text">thailand</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">87</p></td>
+<td><p class="sd-card-text">TJK</p></td>
+<td><p class="sd-card-text">tajikistan</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">88</p></td>
+<td><p class="sd-card-text">TLS</p></td>
+<td><p class="sd-card-text">indonesia</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">89</p></td>
+<td><p class="sd-card-text">UZB</p></td>
+<td><p class="sd-card-text">uzbekistan</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">90</p></td>
+<td><p class="sd-card-text">VNM</p></td>
+<td><p class="sd-card-text">vietnam</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">91</p></td>
+<td><p class="sd-card-text">YEM</p></td>
+<td><p class="sd-card-text">yemen</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">92</p></td>
+<td><p class="sd-card-text">PNG</p></td>
+<td><p class="sd-card-text">indonesia</p></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<p class="rubric">Europe</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">ID</p></th>
+<th class="head"><p class="sd-card-text">Country Code</p></th>
+<th class="head"><p class="sd-card-text">Slug</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">93</p></td>
+<td><p class="sd-card-text">ALB</p></td>
+<td><p class="sd-card-text">albania</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">94</p></td>
+<td><p class="sd-card-text">BGR</p></td>
+<td><p class="sd-card-text">bulgaria</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">95</p></td>
+<td><p class="sd-card-text">BLR</p></td>
+<td><p class="sd-card-text">belarus</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">96</p></td>
+<td><p class="sd-card-text">GEO</p></td>
+<td><p class="sd-card-text">georgia</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">97</p></td>
+<td><p class="sd-card-text">GRC</p></td>
+<td><p class="sd-card-text">greece</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">98</p></td>
+<td><p class="sd-card-text">HUN</p></td>
+<td><p class="sd-card-text">hungary</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">99</p></td>
+<td><p class="sd-card-text">MDA</p></td>
+<td><p class="sd-card-text">moldova</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">100</p></td>
+<td><p class="sd-card-text">MKD</p></td>
+<td><p class="sd-card-text">macedonia</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">101</p></td>
+<td><p class="sd-card-text">POL</p></td>
+<td><p class="sd-card-text">poland</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">102</p></td>
+<td><p class="sd-card-text">ROU</p></td>
+<td><p class="sd-card-text">romania</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">103</p></td>
+<td><p class="sd-card-text">SVK</p></td>
+<td><p class="sd-card-text">slovakia</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">104</p></td>
+<td><p class="sd-card-text">TUR</p></td>
+<td><p class="sd-card-text">turkey</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">105</p></td>
+<td><p class="sd-card-text">UKR</p></td>
+<td><p class="sd-card-text">ukraine</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">106</p></td>
+<td><p class="sd-card-text">RUS</p></td>
+<td><p class="sd-card-text">none</p></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<p class="rubric">South America</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">ID</p></th>
+<th class="head"><p class="sd-card-text">Country Code</p></th>
+<th class="head"><p class="sd-card-text">Slug</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">107</p></td>
+<td><p class="sd-card-text">ARG</p></td>
+<td><p class="sd-card-text">argentina</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">108</p></td>
+<td><p class="sd-card-text">BOL</p></td>
+<td><p class="sd-card-text">bolivia</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">109</p></td>
+<td><p class="sd-card-text">BRA</p></td>
+<td><p class="sd-card-text">brazil</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">110</p></td>
+<td><p class="sd-card-text">CHL</p></td>
+<td><p class="sd-card-text">chile</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">111</p></td>
+<td><p class="sd-card-text">COL</p></td>
+<td><p class="sd-card-text">colombia</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">112</p></td>
+<td><p class="sd-card-text">ECU</p></td>
+<td><p class="sd-card-text">ecuador</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">113</p></td>
+<td><p class="sd-card-text">GUY</p></td>
+<td><p class="sd-card-text">guyana</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">114</p></td>
+<td><p class="sd-card-text">PER</p></td>
+<td><p class="sd-card-text">peru</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">115</p></td>
+<td><p class="sd-card-text">PRY</p></td>
+<td><p class="sd-card-text">paraguay</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">116</p></td>
+<td><p class="sd-card-text">SUR</p></td>
+<td><p class="sd-card-text">suriname</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">117</p></td>
+<td><p class="sd-card-text">URY</p></td>
+<td><p class="sd-card-text">uruguay</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">118</p></td>
+<td><p class="sd-card-text">VEN</p></td>
+<td><p class="sd-card-text">venezuela</p></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<p class="rubric">Central America &amp; Caribbean</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">ID</p></th>
+<th class="head"><p class="sd-card-text">Country Code</p></th>
+<th class="head"><p class="sd-card-text">Slug</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">119</p></td>
+<td><p class="sd-card-text">ATG</p></td>
+<td><p class="sd-card-text">none</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">120</p></td>
+<td><p class="sd-card-text">BHS</p></td>
+<td><p class="sd-card-text">bahamas</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">121</p></td>
+<td><p class="sd-card-text">BLZ</p></td>
+<td><p class="sd-card-text">belize</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">122</p></td>
+<td><p class="sd-card-text">CRI</p></td>
+<td><p class="sd-card-text">costa-rica</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">123</p></td>
+<td><p class="sd-card-text">CUB</p></td>
+<td><p class="sd-card-text">cuba</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">124</p></td>
+<td><p class="sd-card-text">DMA</p></td>
+<td><p class="sd-card-text">.nan</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">125</p></td>
+<td><p class="sd-card-text">DOM</p></td>
+<td><p class="sd-card-text">haiti-and-domrep</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">126</p></td>
+<td><p class="sd-card-text">GTM</p></td>
+<td><p class="sd-card-text">guatemala</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">127</p></td>
+<td><p class="sd-card-text">HND</p></td>
+<td><p class="sd-card-text">honduras</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">128</p></td>
+<td><p class="sd-card-text">HTI</p></td>
+<td><p class="sd-card-text">haiti-and-domrep</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">129</p></td>
+<td><p class="sd-card-text">JAM</p></td>
+<td><p class="sd-card-text">jamaica</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">130</p></td>
+<td><p class="sd-card-text">NIC</p></td>
+<td><p class="sd-card-text">nicaragua</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">131</p></td>
+<td><p class="sd-card-text">PAN</p></td>
+<td><p class="sd-card-text">panama</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">132</p></td>
+<td><p class="sd-card-text">SLV</p></td>
+<td><p class="sd-card-text">el-salvador</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">133</p></td>
+<td><p class="sd-card-text">TTO</p></td>
+<td><p class="sd-card-text">none</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">134</p></td>
+<td><p class="sd-card-text">VCT</p></td>
+<td><p class="sd-card-text">none</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">135</p></td>
+<td><p class="sd-card-text">BRB</p></td>
+<td><p class="sd-card-text">central-america</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">136</p></td>
+<td><p class="sd-card-text">LCA</p></td>
+<td><p class="sd-card-text">none</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">137</p></td>
+<td><p class="sd-card-text">KNA</p></td>
+<td><p class="sd-card-text">none</p></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<p class="rubric">Australia &amp; Oceania</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">ID</p></th>
+<th class="head"><p class="sd-card-text">Country Code</p></th>
+<th class="head"><p class="sd-card-text">Slug</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">138</p></td>
+<td><p class="sd-card-text">FJI</p></td>
+<td><p class="sd-card-text">fiji</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">139</p></td>
+<td><p class="sd-card-text">FSM</p></td>
+<td><p class="sd-card-text">micronesia</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">140</p></td>
+<td><p class="sd-card-text">KIR</p></td>
+<td><p class="sd-card-text">kiribati</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">141</p></td>
+<td><p class="sd-card-text">MHL</p></td>
+<td><p class="sd-card-text">marshall-islands</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">142</p></td>
+<td><p class="sd-card-text">SLB</p></td>
+<td><p class="sd-card-text">solomon-islands</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">143</p></td>
+<td><p class="sd-card-text">TON</p></td>
+<td><p class="sd-card-text">tonga</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">144</p></td>
+<td><p class="sd-card-text">VUT</p></td>
+<td><p class="sd-card-text">vanuatu</p></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<p class="rubric">North America</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">ID</p></th>
+<th class="head"><p class="sd-card-text">Country Code</p></th>
+<th class="head"><p class="sd-card-text">Slug</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">145</p></td>
+<td><p class="sd-card-text">GRD</p></td>
+<td><p class="sd-card-text">greenland</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">146</p></td>
+<td><p class="sd-card-text">MEX</p></td>
+<td><p class="sd-card-text">mexico</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></section>
 <hr class="docutils" />
 <section id="risk-assessment-plugin">
 <h2>Risk Assessment Plugin<a class="headerlink" href="#risk-assessment-plugin" title="Permalink to this heading">#</a></h2>
