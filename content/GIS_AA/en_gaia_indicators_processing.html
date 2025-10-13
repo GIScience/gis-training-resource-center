@@ -570,8 +570,25 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#outputs">Outputs</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#facilities">Facilities</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coping-capacity">Coping Capacity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#facilities">Facilities</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Data Sources</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Processing Steps</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Outputs</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coping-capacity">Coping Capacity</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Data Sources</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Processing Steps</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Outputs</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#demographics">Demographics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Data Sources</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#indicators">Indicators</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Processing Steps</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Outputs</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -589,15 +606,15 @@ document.write(`
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h2>
 <p>The GAIA Pipeline produces a series of thematic files for each country at administrative level 2. Each file captures different aspects of population, infrastructure, and environmental conditions. Below is an overview of the available files:</p>
 <ul class="simple">
-<li><p><strong>Access to Services</strong> – Population accessibility to key facilities such as education and health centers.</p></li>
-<li><p><strong>Facilities</strong> – Availability and distribution of essential service infrastructure.</p></li>
-<li><p><strong>Coping Capacity</strong> – Combined indicators derived from Access and Facilities layers to assess local coping capacity.</p></li>
-<li><p><strong>Demographics</strong> – Distribution of vulnerable population.</p></li>
-<li><p><strong>Rural Population</strong> – Demographic indicators focused specifically on rural populations.</p></li>
-<li><p><strong>Vulnerability</strong> – Composite indicators derived from Demographics and Rural Population layers.</p></li>
-<li><p><strong>Crop Coverage and Change</strong> – Extent of agricultural land and observed changes over time.</p></li>
-<li><p><strong>Vegetation Index</strong> – NDVI-based assessment of vegetation conditions.</p></li>
-<li><p><strong>Flood Exposure</strong> – Exposure of populations and facilities to flood hazards.</p></li>
+<li><p><span class="xref myst"><strong>Access to Services</strong></span> – Population accessibility to key facilities such as education and health centers.</p></li>
+<li><p><span class="xref myst"><strong>Facilities</strong></span> – Availability and distribution of essential service infrastructure.</p></li>
+<li><p><span class="xref myst"><strong>Coping Capacity</strong></span> – Combined indicators derived from Access and Facilities layers to assess local coping capacity.</p></li>
+<li><p><span class="xref myst"><strong>Demographics</strong></span> – Distribution of vulnerable population.</p></li>
+<li><p><span class="xref myst"><strong>Rural Population</strong></span> – Demographic indicators focused specifically on rural populations.</p></li>
+<li><p><span class="xref myst"><strong>Vulnerability</strong></span> – Composite indicators derived from Demographics and Rural Population layers.</p></li>
+<li><p><span class="xref myst"><strong>Crop Coverage and Change</strong></span> – Extent of agricultural land and observed changes over time.</p></li>
+<li><p><span class="xref myst"><strong>Vegetation Index</strong></span> – NDVI-based assessment of vegetation conditions.</p></li>
+<li><p><span class="xref myst"><strong>Flood Exposure</strong></span> – Exposure of populations and facilities to flood hazards.</p></li>
 </ul>
 </section>
 <hr class="docutils" />
@@ -720,11 +737,6 @@ Python Code<div class="sd-summary-down docutils">
 <span class="sd">    Compute how much vulnerable population lives within accessibility isochrones,</span>
 <span class="sd">    grouped by chosen administrative level.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
-    <span class="kn">import</span><span class="w"> </span><span class="nn">geopandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">gpd</span>
-    <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-    <span class="kn">import</span><span class="w"> </span><span class="nn">rioxarray</span>
-    <span class="kn">from</span><span class="w"> </span><span class="nn">rasterstats</span><span class="w"> </span><span class="kn">import</span> <span class="n">zonal_stats</span>
 
     <span class="n">country_code</span> <span class="o">=</span> <span class="n">country_code</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
     <span class="n">work_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">work_dir</span><span class="p">)</span>
@@ -802,14 +814,752 @@ Python Code<div class="sd-summary-down docutils">
 <hr class="docutils" />
 <section id="facilities">
 <h2>Facilities<a class="headerlink" href="#facilities" title="Permalink to this heading">#</a></h2>
-<p><em>(Details extracted from <code class="docutils literal notranslate"><span class="pre">facilities.py</span></code>)</em></p>
-<p>…</p>
+<p>Represents the availability and spatial distribution of essential service infrastructure such as schools, hospitals, and primary healthcare centers.</p>
+<section id="id1">
+<h3>Data Sources<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>OpenStreetMap (OSM)</strong> data, accessed through either:</p>
+<ul>
+<li><p><strong>Overpass API</strong>, for direct querying of recent OSM feature data; or</p></li>
+<li><p><strong>Ohsome API</strong>, for more stable and filtered access to OSM geometries.</p></li>
+</ul>
+</li>
+<li><p><strong>Administrative boundaries</strong> (GeoJSON): Used to spatially aggregate features at administrative level 2.</p></li>
+</ul>
+</section>
+<section id="id2">
+<h3>Processing Steps<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Load administrative boundaries</strong> (GeoJSON) for the target country at the desired administrative level.</p></li>
+<li><p><strong>Define filters</strong> for each facility type:</p>
+<ul class="simple">
+<li><p><strong>Education:</strong> <code class="docutils literal notranslate"><span class="pre">amenity=school</span></code></p></li>
+<li><p><strong>Hospitals:</strong> <code class="docutils literal notranslate"><span class="pre">amenity=hospital</span></code> or <code class="docutils literal notranslate"><span class="pre">healthcare=hospital</span></code></p></li>
+<li><p><strong>Primary healthcare:</strong> Non-hospital facilities providing healthcare services, such as <code class="docutils literal notranslate"><span class="pre">clinic</span></code>, <code class="docutils literal notranslate"><span class="pre">doctors</span></code>, <code class="docutils literal notranslate"><span class="pre">midwife</span></code>, <code class="docutils literal notranslate"><span class="pre">nurse</span></code>, or <code class="docutils literal notranslate"><span class="pre">center</span></code>.</p></li>
+</ul>
+</li>
+<li><p><strong>Determine API source:</strong></p>
+<ul class="simple">
+<li><p>If Overpass is used, queries are dynamically built and executed using bounding boxes of the country boundary.</p></li>
+<li><p>If Ohsome is used, geometry data is fetched for the same bounding box and time period (if specified).</p></li>
+</ul>
+</li>
+<li><p><strong>Download and parse facility points</strong>:</p>
+<ul class="simple">
+<li><p>For Overpass: CSV results are parsed into GeoDataFrames with <code class="docutils literal notranslate"><span class="pre">lon</span></code>, <code class="docutils literal notranslate"><span class="pre">lat</span></code>, and <code class="docutils literal notranslate"><span class="pre">osmId</span></code> attributes.</p></li>
+<li><p>For Ohsome: JSON features are directly converted into GeoDataFrames.</p></li>
+</ul>
+</li>
+<li><p><strong>Assign categories and export raw results</strong>:</p>
+<ul class="simple">
+<li><p>Each facility type (education, hospitals, primary healthcare) is stored as a separate GeoJSON in a <code class="docutils literal notranslate"><span class="pre">Temporary</span></code> folder.</p></li>
+</ul>
+</li>
+<li><p><strong>Aggregate by administrative unit</strong>:</p>
+<ul class="simple">
+<li><p>Facilities are spatially joined (<code class="docutils literal notranslate"><span class="pre">sjoin</span></code>) with administrative polygons.</p></li>
+<li><p>For each category, counts are grouped by <code class="docutils literal notranslate"><span class="pre">{admin_level}_PCODE</span></code>.</p></li>
+</ul>
+</li>
+<li><p><strong>Combine and export results</strong>:</p>
+<ul class="simple">
+<li><p>Counts for all categories are merged into a single summary table.</p></li>
+<li><p>Output is saved as a CSV file in the <code class="docutils literal notranslate"><span class="pre">Output</span></code> directory.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="id3">
+<h3>Outputs<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>CSV file: <code class="docutils literal notranslate"><span class="pre">{country_code}_{admin_level}_facilities.csv</span></code></p>
+<ul>
+<li><p>Columns:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">{admin_level}_PCODE</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">education_count</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">hospitals_count</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">primary_healthcare_count</span></code></p></li>
+</ul>
+</li>
+<li><p>CRS: WGS84 (<code class="docutils literal notranslate"><span class="pre">EPSG:4326</span></code>)</p></li>
+<li><p>Units: number of facilities per administrative unit</p></li>
+</ul>
+</li>
+<li><p>Intermediate GeoJSON files:</p>
+<ul>
+<li><p>Stored in <code class="docutils literal notranslate"><span class="pre">Temporary/</span></code> folder as raw point data for each facility category.</p></li>
+</ul>
+</li>
+</ul>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Python Code<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">argparse</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">geopandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">gpd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">overpass</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">warnings</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;OGR_GEOJSON_MAX_OBJ_SIZE&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;0&quot;</span> <span class="c1"># no limits when reading complex geojsons</span>
+
+<span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">,</span> <span class="ne">UserWarning</span><span class="p">)</span>
+
+<span class="n">OVERPASS_FILTERS</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;education&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;nwr[amenity=school]&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;hospitals&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;nwr[amenity=hospital]&quot;</span><span class="p">,</span><span class="s2">&quot;nwr[healthcare=hospital]&quot;</span><span class="p">],</span>
+    
+    <span class="s2">&quot;primary_healthcare&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s1">&#39;nwr[&quot;amenity&quot;~&quot;^(doctors|clinic)$&quot;][&quot;amenity&quot;!=&quot;hospital&quot;][&quot;healthcare&quot;!=&quot;hospital&quot;]&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;nwr[&quot;healthcare&quot;~&quot;^(clinic|doctors|midwife|nurse|center)$&quot;][&quot;amenity&quot; != &quot;hospital&quot;][&quot;healthcare&quot; != &quot;hospital&quot;]&#39;</span>
+    <span class="p">]</span> 
+<span class="p">}</span>
+
+<span class="n">OHSOME_ENDPOINT</span> <span class="o">=</span> <span class="s2">&quot;https://api.ohsome.org/v1/elements/geometry&quot;</span>
+
+<span class="n">OHSOME_FILTERS</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;education&quot;</span><span class="p">:</span> <span class="s2">&quot;amenity=school&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;hospitals&quot;</span><span class="p">:</span> <span class="s2">&quot;amenity=hospital or healthcare=hospital&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;primary_healthcare&quot;</span><span class="p">:</span> <span class="p">(</span>
+        <span class="s2">&quot;not amenity=hospital and not healthcare=hospital and &quot;</span>
+        <span class="s2">&quot;(amenity=doctors or amenity=clinic or healthcare=clinic or &quot;</span>
+        <span class="s2">&quot;healthcare=doctors or healthcare=midwife or healthcare=nurse or healthcare=center)&quot;</span>
+    <span class="p">),</span>
+<span class="p">}</span>
+
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">parse_overpass_csv_to_gpd</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+    <span class="n">headers</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">rows</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">rows</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+
+    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;@lon&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;@lon&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
+    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;@lat&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;@lat&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
+    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;@id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;@id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+
+    <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;@lon&#39;</span><span class="p">:</span> <span class="s1">&#39;lon&#39;</span><span class="p">,</span> <span class="s1">&#39;@lat&#39;</span><span class="p">:</span> <span class="s1">&#39;lat&#39;</span><span class="p">,</span> <span class="s1">&#39;@id&#39;</span><span class="p">:</span> <span class="s1">&#39;osmId&#39;</span><span class="p">})</span>
+
+    <span class="n">gdf</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">(</span>
+        <span class="n">df</span><span class="p">,</span>
+        <span class="n">geometry</span><span class="o">=</span><span class="n">gpd</span><span class="o">.</span><span class="n">points_from_xy</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;lon&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;lat&#39;</span><span class="p">]),</span>
+        <span class="n">crs</span><span class="o">=</span><span class="s2">&quot;EPSG:4326&quot;</span>
+    <span class="p">)</span>
+    <span class="k">return</span> <span class="n">gdf</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">fetch_overpass</span><span class="p">(</span><span class="n">context_log</span><span class="p">,</span> <span class="n">boundary_file</span><span class="p">,</span> <span class="n">output_dir</span><span class="p">,</span> <span class="n">country_code</span><span class="p">,</span> <span class="n">admin_level</span><span class="p">,</span> <span class="n">time</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="n">context_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Using Overpass API to fetch facilities...&quot;</span><span class="p">)</span>
+    <span class="n">id_col</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">admin_level</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="si">}</span><span class="s2">_PCODE&quot;</span>
+
+    <span class="c1"># Paths for output files</span>
+    <span class="n">temp_dir</span> <span class="o">=</span> <span class="n">output_dir</span> <span class="o">/</span> <span class="s2">&quot;Temporary&quot;</span>
+    <span class="n">out_dir</span> <span class="o">=</span> <span class="n">output_dir</span> <span class="o">/</span> <span class="s2">&quot;Output&quot;</span>
+    <span class="n">expected_files</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="n">out_dir</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">admin_level</span><span class="si">}</span><span class="s2">_facilities.csv&quot;</span>
+    <span class="p">]</span> <span class="o">+</span> <span class="p">[</span>
+        <span class="n">temp_dir</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s2">_raw.geojson&quot;</span>
+        <span class="k">for</span> <span class="n">category</span> <span class="ow">in</span> <span class="n">OVERPASS_FILTERS</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+    <span class="p">]</span>
+
+    <span class="c1"># Check if all expected files exist → skip</span>
+    <span class="k">if</span> <span class="nb">all</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">exists</span><span class="p">()</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">expected_files</span><span class="p">):</span>
+        <span class="n">context_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;All Overpass output files exist. Skipping fetch_overpass.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">expected_files</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># Return main summary path</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">boundary</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">boundary_file</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="n">context_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error reading boundary: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">id_col</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">boundary</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+        <span class="n">context_log</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Expected ID column </span><span class="si">{</span><span class="n">id_col</span><span class="si">}</span><span class="s2"> not found in </span><span class="si">{</span><span class="n">boundary_file</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="n">minx</span><span class="p">,</span> <span class="n">miny</span><span class="p">,</span> <span class="n">maxx</span><span class="p">,</span> <span class="n">maxy</span> <span class="o">=</span> <span class="n">boundary</span><span class="o">.</span><span class="n">total_bounds</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+    <span class="n">bbox_str</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">miny</span><span class="si">}</span><span class="s2">,</span><span class="si">{</span><span class="n">minx</span><span class="si">}</span><span class="s2">,</span><span class="si">{</span><span class="n">maxy</span><span class="si">}</span><span class="s2">,</span><span class="si">{</span><span class="n">maxx</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="n">date_clause</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;[date:&quot;</span><span class="si">{</span><span class="n">time</span><span class="si">}</span><span class="s1">&quot;]&#39;</span> <span class="k">if</span> <span class="n">time</span> <span class="k">else</span> <span class="s1">&#39;&#39;</span>
+
+    <span class="n">api</span> <span class="o">=</span> <span class="n">overpass</span><span class="o">.</span><span class="n">API</span><span class="p">(</span><span class="n">timeout</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+    <span class="n">category_gdfs</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="k">for</span> <span class="n">category</span><span class="p">,</span> <span class="n">exprs</span> <span class="ow">in</span> <span class="n">OVERPASS_FILTERS</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">filter_parts</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">expr</span><span class="si">}</span><span class="s2">(</span><span class="si">{</span><span class="n">bbox_str</span><span class="si">}</span><span class="s2">);&quot;</span> <span class="k">for</span> <span class="n">expr</span> <span class="ow">in</span> <span class="n">exprs</span><span class="p">]</span>
+        <span class="n">query</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;[out:csv(::lon,::lat,::id,::type)]</span><span class="si">{</span><span class="n">date_clause</span><span class="si">}</span><span class="s1">;(</span><span class="si">{</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">filter_parts</span><span class="p">)</span><span class="si">}</span><span class="s1">);out center;&#39;</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">build</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">context_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Overpass query failed for </span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">continue</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">result</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+            <span class="n">context_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;No results for </span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">continue</span>
+
+        <span class="n">gdf</span> <span class="o">=</span> <span class="n">parse_overpass_csv_to_gpd</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">gdf</span><span class="o">.</span><span class="n">empty</span><span class="p">:</span>
+            <span class="n">context_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;No features found for </span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">continue</span>
+
+        <span class="n">gdf</span><span class="p">[</span><span class="s2">&quot;geometry&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">gdf</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">centroid</span>
+        <span class="n">gdf</span><span class="p">[</span><span class="s2">&quot;category&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">category</span>
+
+        <span class="n">raw_path</span> <span class="o">=</span> <span class="n">temp_dir</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s2">_raw.geojson&quot;</span>
+        <span class="n">raw_path</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">gdf</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="n">raw_path</span><span class="p">,</span> <span class="n">driver</span><span class="o">=</span><span class="s2">&quot;GeoJSON&quot;</span><span class="p">)</span>
+        <span class="n">context_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Wrote raw </span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s2"> features to </span><span class="si">{</span><span class="n">raw_path</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="n">category_gdfs</span><span class="p">[</span><span class="n">category</span><span class="p">]</span> <span class="o">=</span> <span class="n">gdf</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">category_gdfs</span><span class="p">:</span>
+        <span class="n">context_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;No Overpass features found at all.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="n">counts</span> <span class="o">=</span> <span class="n">boundary</span><span class="p">[[</span><span class="n">id_col</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">cat</span><span class="p">,</span> <span class="n">gdf</span> <span class="ow">in</span> <span class="n">category_gdfs</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">joined</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">sjoin</span><span class="p">(</span><span class="n">gdf</span><span class="p">,</span> <span class="n">boundary</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">&quot;inner&quot;</span><span class="p">,</span> <span class="n">predicate</span><span class="o">=</span><span class="s2">&quot;intersects&quot;</span><span class="p">)</span>
+        <span class="n">grouped</span> <span class="o">=</span> <span class="n">joined</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">id_col</span><span class="p">)</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">cat</span><span class="si">}</span><span class="s2">_count&quot;</span><span class="p">)</span>
+        <span class="n">counts</span> <span class="o">=</span> <span class="n">counts</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">grouped</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="n">id_col</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">)</span>
+
+    <span class="n">counts</span> <span class="o">=</span> <span class="n">counts</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">({</span><span class="n">col</span><span class="p">:</span> <span class="nb">int</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">counts</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="n">col</span> <span class="o">!=</span> <span class="n">id_col</span><span class="p">})</span>
+
+    <span class="n">summary_path</span> <span class="o">=</span> <span class="n">out_dir</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">admin_level</span><span class="si">}</span><span class="s2">_facilities.csv&quot;</span>
+    <span class="n">summary_path</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">counts</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">summary_path</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">context_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Wrote summary to </span><span class="si">{</span><span class="n">summary_path</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">summary_path</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">fetch_ohsome</span><span class="p">(</span><span class="n">context_log</span><span class="p">,</span> <span class="n">boundary_file</span><span class="p">,</span> <span class="n">output_dir</span><span class="p">,</span> <span class="n">country_code</span><span class="p">,</span> <span class="n">admin_level</span><span class="p">,</span> <span class="n">time</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="n">context_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Using Ohsome API to fetch facilities...&quot;</span><span class="p">)</span>
+
+    <span class="n">id_col</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">admin_level</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="si">}</span><span class="s2">_PCODE&quot;</span>
+
+    <span class="n">temp_dir</span> <span class="o">=</span> <span class="n">output_dir</span> <span class="o">/</span> <span class="s2">&quot;Temporary&quot;</span>
+    <span class="n">out_dir</span> <span class="o">=</span> <span class="n">output_dir</span> <span class="o">/</span> <span class="s2">&quot;Output&quot;</span>
+    <span class="n">expected_files</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="n">out_dir</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">admin_level</span><span class="si">}</span><span class="s2">_facilities.csv&quot;</span>
+    <span class="p">]</span> <span class="o">+</span> <span class="p">[</span>
+        <span class="n">temp_dir</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s2">_raw.geojson&quot;</span>
+        <span class="k">for</span> <span class="n">category</span> <span class="ow">in</span> <span class="n">OHSOME_FILTERS</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+    <span class="p">]</span>
+
+    <span class="k">if</span> <span class="nb">all</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">exists</span><span class="p">()</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">expected_files</span><span class="p">):</span>
+        <span class="n">context_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;All Ohsome output files exist. Skipping fetch_ohsome.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">expected_files</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">boundary</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">boundary_file</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="n">context_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error reading boundary: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">id_col</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">boundary</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+        <span class="n">context_log</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Expected ID column </span><span class="si">{</span><span class="n">id_col</span><span class="si">}</span><span class="s2"> not found in </span><span class="si">{</span><span class="n">boundary_file</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="n">minx</span><span class="p">,</span> <span class="n">miny</span><span class="p">,</span> <span class="n">maxx</span><span class="p">,</span> <span class="n">maxy</span> <span class="o">=</span> <span class="n">boundary</span><span class="o">.</span><span class="n">total_bounds</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+    <span class="n">bbox_str</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">minx</span><span class="si">}</span><span class="s2">,</span><span class="si">{</span><span class="n">miny</span><span class="si">}</span><span class="s2">,</span><span class="si">{</span><span class="n">maxx</span><span class="si">}</span><span class="s2">,</span><span class="si">{</span><span class="n">maxy</span><span class="si">}</span><span class="s2">&quot;</span>
+
+    <span class="n">category_gdfs</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="k">for</span> <span class="n">category</span><span class="p">,</span> <span class="n">filter_str</span> <span class="ow">in</span> <span class="n">OHSOME_FILTERS</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;bboxes&quot;</span><span class="p">:</span> <span class="n">bbox_str</span><span class="p">,</span> <span class="s2">&quot;filter&quot;</span><span class="p">:</span> <span class="n">filter_str</span><span class="p">}</span>
+        <span class="k">if</span> <span class="n">time</span><span class="p">:</span>
+            <span class="n">params</span><span class="p">[</span><span class="s2">&quot;time&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">time</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">OHSOME_ENDPOINT</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
+            <span class="n">r</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">context_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Ohsome query failed for </span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">continue</span>
+
+        <span class="n">data</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+        <span class="n">gdf</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="o">.</span><span class="n">from_features</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;features&quot;</span><span class="p">],</span> <span class="n">crs</span><span class="o">=</span><span class="s2">&quot;EPSG:4326&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">gdf</span><span class="o">.</span><span class="n">empty</span><span class="p">:</span>
+            <span class="n">context_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;No features found for </span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">continue</span>
+
+        <span class="n">gdf</span> <span class="o">=</span> <span class="n">gdf</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+        <span class="n">gdf</span><span class="p">[</span><span class="s2">&quot;geometry&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">gdf</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">centroid</span>
+        <span class="n">gdf</span><span class="p">[</span><span class="s2">&quot;category&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">category</span>
+
+        <span class="n">raw_path</span> <span class="o">=</span> <span class="n">temp_dir</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s2">_raw.geojson&quot;</span>
+        <span class="n">raw_path</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">gdf</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="n">raw_path</span><span class="p">,</span> <span class="n">driver</span><span class="o">=</span><span class="s2">&quot;GeoJSON&quot;</span><span class="p">)</span>
+        <span class="n">context_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Wrote raw </span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s2"> features to </span><span class="si">{</span><span class="n">raw_path</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="n">category_gdfs</span><span class="p">[</span><span class="n">category</span><span class="p">]</span> <span class="o">=</span> <span class="n">gdf</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">category_gdfs</span><span class="p">:</span>
+        <span class="n">context_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;No categories found, nothing to aggregate.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="n">counts</span> <span class="o">=</span> <span class="n">boundary</span><span class="p">[[</span><span class="n">id_col</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">cat</span><span class="p">,</span> <span class="n">gdf</span> <span class="ow">in</span> <span class="n">category_gdfs</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">joined</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">sjoin</span><span class="p">(</span><span class="n">gdf</span><span class="p">,</span> <span class="n">boundary</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">&quot;inner&quot;</span><span class="p">,</span> <span class="n">predicate</span><span class="o">=</span><span class="s2">&quot;intersects&quot;</span><span class="p">)</span>
+        <span class="n">grouped</span> <span class="o">=</span> <span class="n">joined</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">id_col</span><span class="p">)</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">cat</span><span class="si">}</span><span class="s2">_count&quot;</span><span class="p">)</span>
+        <span class="n">counts</span> <span class="o">=</span> <span class="n">counts</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">grouped</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="n">id_col</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">)</span>
+
+    <span class="n">counts</span> <span class="o">=</span> <span class="n">counts</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">({</span><span class="n">col</span><span class="p">:</span> <span class="nb">int</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">counts</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="n">col</span> <span class="o">!=</span> <span class="n">id_col</span><span class="p">})</span>
+
+    <span class="n">summary_path</span> <span class="o">=</span> <span class="n">out_dir</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">admin_level</span><span class="si">}</span><span class="s2">_facilities.csv&quot;</span>
+    <span class="n">summary_path</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">counts</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">summary_path</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">context_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Wrote summary to </span><span class="si">{</span><span class="n">summary_path</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">summary_path</span>
+</pre></div>
+</div>
+</div>
+</details></section>
 </section>
 <hr class="docutils" />
 <section id="coping-capacity">
 <h2>Coping Capacity<a class="headerlink" href="#coping-capacity" title="Permalink to this heading">#</a></h2>
-<p><em>(Details extracted from <code class="docutils literal notranslate"><span class="pre">coping_capacity.py</span></code>)</em></p>
-<p>…</p>
+<p>Represents the ability of a population to access essential services and benefit from available infrastructure.<br />
+This layer combines <span class="xref myst"><strong>Access to Services</strong></span> and <span class="xref myst"><strong>Facilities</strong></span> indicators to assess local capacity to cope with shocks or disruptions.</p>
+<section id="id4">
+<h3>Data Sources<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Access to Services CSVs:</strong> Derived from population accessibility analysis (see <span class="xref myst"><em>Access to Services</em></span> chapter).</p></li>
+<li><p><strong>Facilities CSVs:</strong> Derived from OpenStreetMap facility data (see <span class="xref myst"><em>Facilities</em></span> chapter).</p></li>
+<li><p>Both inputs are aggregated at the same administrative level (e.g., ADM2).</p></li>
+</ul>
+</section>
+<section id="id5">
+<h3>Processing Steps<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Input CSVs:</strong></p>
+<ul class="simple">
+<li><p>One <em>Access to Services</em> CSV and one <em>Facilities</em> CSV are provided per administrative level.</p></li>
+<li><p>Each CSV includes an identifier column such as <code class="docutils literal notranslate"><span class="pre">ADM0_PCODE</span></code>, <code class="docutils literal notranslate"><span class="pre">ADM1_PCODE</span></code>, or <code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code>.</p></li>
+</ul>
+</li>
+<li><p><strong>Column Detection:</strong></p>
+<ul class="simple">
+<li><p>The script automatically detects the administrative identifier column by searching for any column ending with <code class="docutils literal notranslate"><span class="pre">_PCODE</span></code>.</p></li>
+</ul>
+</li>
+<li><p><strong>Merge Operation:</strong></p>
+<ul class="simple">
+<li><p>The two datasets are merged on the identified <code class="docutils literal notranslate"><span class="pre">*_PCODE</span></code> column using a left join.</p></li>
+<li><p>This ensures all access indicators are retained even if some administrative areas lack facility data.</p></li>
+</ul>
+</li>
+<li><p><strong>Output Generation:</strong></p>
+<ul class="simple">
+<li><p>The merged dataset is saved as <code class="docutils literal notranslate"><span class="pre">{country_code}_{admin_level}_coping.csv</span></code> under <code class="docutils literal notranslate"><span class="pre">Output/</span></code>.</p></li>
+<li><p>One output is produced per administrative level present in the input data.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="id6">
+<h3>Outputs<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>CSV file: <code class="docutils literal notranslate"><span class="pre">{country_code}_{admin_level}_coping.csv</span></code></p>
+<ul>
+<li><p>Columns:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">{admin_level}_PCODE</span></code></p></li>
+<li><p>All accessibility indicator columns (e.g., <code class="docutils literal notranslate"><span class="pre">access_pop_education_5km</span></code>, <code class="docutils literal notranslate"><span class="pre">access_pop_hospitals_1h</span></code>)</p></li>
+<li><p>All facility count columns (e.g., <code class="docutils literal notranslate"><span class="pre">education_count</span></code>, <code class="docutils literal notranslate"><span class="pre">hospitals_count</span></code>, <code class="docutils literal notranslate"><span class="pre">primary_healthcare_count</span></code>)</p></li>
+</ul>
+</li>
+<li><p>CRS: WGS84 (<code class="docutils literal notranslate"><span class="pre">EPSG:4326</span></code>)</p></li>
+<li><p>Units: counts and population values aggregated per administrative unit</p></li>
+</ul>
+</li>
+</ul>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Python Code<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">coping_asset</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">access_asset</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">facilities_asset</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Combine accessibility and facilities CSVs into a single coping dataset.</span>
+<span class="sd">    Joins on the ADM*_PCODE column per admin level.</span>
+<span class="sd">    Produces one coping CSV per admin level in Output/.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">country_code</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">partition_key</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+    <span class="n">outputs</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">for</span> <span class="n">access_csv</span><span class="p">,</span> <span class="n">facilities_csv</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">access_asset</span><span class="p">,</span> <span class="n">facilities_asset</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">access_csv</span><span class="p">)</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">facilities_csv</span><span class="p">):</span>
+            <span class="n">context</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s2">&quot;Skipping merge for </span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">: missing files </span><span class="si">{</span><span class="n">access_csv</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">facilities_csv</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="p">)</span>
+            <span class="k">continue</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">df_access</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">access_csv</span><span class="p">)</span>
+            <span class="n">df_facilities</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">facilities_csv</span><span class="p">)</span>
+
+            <span class="c1"># detect admin code column automatically (ADM0_PCODE, ADM1_PCODE, etc.)</span>
+            <span class="n">id_col</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">df_access</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="n">c</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;_PCODE&quot;</span><span class="p">)]</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">id_col</span><span class="p">:</span>
+                <span class="n">context</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Skipping </span><span class="si">{</span><span class="n">access_csv</span><span class="si">}</span><span class="s2">: no *_PCODE column found&quot;</span><span class="p">)</span>
+                <span class="k">continue</span>
+            <span class="n">id_col</span> <span class="o">=</span> <span class="n">id_col</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+            <span class="n">merged</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df_access</span><span class="p">,</span> <span class="n">df_facilities</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="n">id_col</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">)</span>
+
+            <span class="n">admin_level</span> <span class="o">=</span> <span class="n">id_col</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;_&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># e.g., ADM2</span>
+            <span class="n">output_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">)</span> <span class="o">/</span> <span class="n">country_code</span> <span class="o">/</span> <span class="s2">&quot;Output&quot;</span>
+            <span class="n">output_dir</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+            <span class="n">output_path</span> <span class="o">=</span> <span class="n">output_dir</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">admin_level</span><span class="si">}</span><span class="s2">_coping.csv&quot;</span>
+            <span class="n">merged</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">output_path</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+            <span class="n">outputs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">output_path</span><span class="p">))</span>
+
+            <span class="n">context</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">] Wrote coping CSV: </span><span class="si">{</span><span class="n">output_path</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">context</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Failed to merge </span><span class="si">{</span><span class="n">access_csv</span><span class="si">}</span><span class="s2"> and </span><span class="si">{</span><span class="n">facilities_csv</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">outputs</span><span class="p">:</span>
+        <span class="n">context</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;No coping outputs created for </span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">outputs</span>
+</pre></div>
+</div>
+</div>
+</details></section>
+</section>
+<hr class="docutils" />
+<section id="demographics">
+<h2>Demographics<a class="headerlink" href="#demographics" title="Permalink to this heading">#</a></h2>
+<p>Provides population distribution indicators based on <strong>age</strong> and <strong>sex</strong>.<br />
+This layer is derived from the <a class="reference external" href="https://www.worldpop.org/"><strong>WorldPop</strong></a> global population dataset and quantifies vulnerable population groups across administrative boundaries.</p>
+<section id="id7">
+<h3>Data Sources<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>WorldPop Age-Sex Population Rasters:</strong><br />
+Downloaded from the <a class="reference external" href="https://www.worldpop.org/geodata/listing?id=77">WorldPop Global Constrained Population dataset</a> (<code class="docutils literal notranslate"><span class="pre">Global_2000_2020_Constrained</span></code>).</p></li>
+<li><p><strong>Administrative boundaries</strong> (GeoJSON): Used to spatially aggregate features at administrative level 2.</p></li>
+</ul>
+</section>
+<section id="indicators">
+<h3>Indicators<a class="headerlink" href="#indicators" title="Permalink to this heading">#</a></h3>
+<p>Each demographic indicator represents the <strong>sum of population counts</strong> matching specified age and sex ranges:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Indicator</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Ages (years)</p></th>
+<th class="head"><p>Sexes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">female_pop</span></code></p></td>
+<td><p>Total female population</p></td>
+<td><p>0–80+</p></td>
+<td><p>f</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">children_u5</span></code></p></td>
+<td><p>Total children under 5</p></td>
+<td><p>0–4</p></td>
+<td><p>f, m</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">female_u5</span></code></p></td>
+<td><p>Female children under 5</p></td>
+<td><p>0–4</p></td>
+<td><p>f</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">elderly</span></code></p></td>
+<td><p>Population aged 65 and above</p></td>
+<td><p>65+</p></td>
+<td><p>f, m</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">pop_u15</span></code></p></td>
+<td><p>Population under 15</p></td>
+<td><p>0–14</p></td>
+<td><p>f, m</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">female_u15</span></code></p></td>
+<td><p>Female population under 15</p></td>
+<td><p>0–14</p></td>
+<td><p>f</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id8">
+<h3>Processing Steps<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Download Required WorldPop Tiles</strong></p>
+<ul class="simple">
+<li><p>For each indicator, the script identifies which age/sex rasters are needed (e.g., <code class="docutils literal notranslate"><span class="pre">m_0</span></code>, <code class="docutils literal notranslate"><span class="pre">f_1</span></code>, etc.).</p></li>
+<li><p>Tiles are downloaded from <code class="docutils literal notranslate"><span class="pre">https://data.worldpop.org/GIS/AgeSex_structures/Global_2000_2020_Constrained/2020/{ISO3}/</span></code>.</p></li>
+</ul>
+</li>
+<li><p><strong>Merge and Sum Rasters</strong></p>
+<ul class="simple">
+<li><p>The corresponding age/sex tiles are summed into one raster per indicator.</p></li>
+<li><p>Outputs are saved in <code class="docutils literal notranslate"><span class="pre">data/{country}/Temporary/</span></code>.</p></li>
+</ul>
+</li>
+<li><p><strong>Aggregate by Administrative Units</strong></p>
+<ul class="simple">
+<li><p>Using the administrative boundary GeoJSON (e.g., <code class="docutils literal notranslate"><span class="pre">ADM2</span></code>), zonal statistics are computed for each indicator.</p></li>
+<li><p>Population counts are summed per administrative area.</p></li>
+</ul>
+</li>
+<li><p><strong>Output</strong></p>
+<ul class="simple">
+<li><p>A single CSV per country: <code class="docutils literal notranslate"><span class="pre">{country_code}_{admin_level}_demographics.csv</span></code></p></li>
+<li><p>Saved to <code class="docutils literal notranslate"><span class="pre">data/{country}/Output/</span></code></p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="id9">
+<h3>Outputs<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>File:</strong> <code class="docutils literal notranslate"><span class="pre">{country_code}_{admin_level}_demographics.csv</span></code></p></li>
+<li><p><strong>Columns:</strong></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">{admin_level}_PCODE</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">female_pop</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">children_u5</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">female_u5</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">elderly</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pop_u15</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">female_u15</span></code></p></li>
+</ul>
+</li>
+<li><p><strong>CRS:</strong> WGS84 (<code class="docutils literal notranslate"><span class="pre">EPSG:4326</span></code>)</p></li>
+<li><p><strong>Units:</strong> Population counts (integer, aggregated per administrative unit)</p></li>
+</ul>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Python Code<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">rasterio</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">geopandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">gpd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">argparse</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">shutil</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">rasterstats</span><span class="w"> </span><span class="kn">import</span> <span class="n">zonal_stats</span>
+
+<span class="c1"># Define indicators directly</span>
+<span class="n">INDICATORS</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;female_pop&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;ages&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">65</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">80</span><span class="p">],</span> <span class="s2">&quot;sexes&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;f&quot;</span><span class="p">]},</span>
+    <span class="s2">&quot;children_u5&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;ages&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;sexes&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;f&quot;</span><span class="p">,</span> <span class="s2">&quot;m&quot;</span><span class="p">]},</span>
+    <span class="s2">&quot;female_u5&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;ages&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;sexes&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;f&quot;</span><span class="p">]},</span>
+    <span class="s2">&quot;elderly&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;ages&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">65</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">80</span><span class="p">],</span> <span class="s2">&quot;sexes&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;f&quot;</span><span class="p">,</span> <span class="s2">&quot;m&quot;</span><span class="p">]},</span>
+    <span class="s2">&quot;pop_u15&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;ages&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="s2">&quot;sexes&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;f&quot;</span><span class="p">,</span> <span class="s2">&quot;m&quot;</span><span class="p">]},</span>
+    <span class="s2">&quot;female_u15&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;ages&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="s2">&quot;sexes&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;f&quot;</span><span class="p">]},</span>
+<span class="p">}</span>
+
+<span class="n">BASE_URL</span> <span class="o">=</span> <span class="s2">&quot;https://data.worldpop.org/GIS&quot;</span>
+<span class="n">POP_TIMEFRAME</span> <span class="o">=</span> <span class="s2">&quot;Global_2000_2020_Constrained&quot;</span>
+<span class="n">YEAR</span> <span class="o">=</span> <span class="s2">&quot;2020&quot;</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">download_url</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">dest_path</span><span class="p">):</span>
+    <span class="n">resp</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">stream</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">resp</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">dest_path</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fp</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="n">resp</span><span class="o">.</span><span class="n">iter_content</span><span class="p">(</span><span class="mi">1024</span> <span class="o">*</span> <span class="mi">1024</span><span class="p">):</span>
+            <span class="n">fp</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">chunk</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">merge_and_sum_rasters</span><span class="p">(</span><span class="n">raster_paths</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">out_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">context_log</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Open each path in `raster_paths`, read band 1 into memory, sum them,</span>
+<span class="sd">    and write a single‐band float32 GeoTIFF to `out_path`.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">raster_paths</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;No rasters passed for merging!&quot;</span><span class="p">)</span>
+
+    <span class="k">with</span> <span class="n">rasterio</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">raster_paths</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="k">as</span> <span class="n">src0</span><span class="p">:</span>
+        <span class="n">meta</span> <span class="o">=</span> <span class="n">src0</span><span class="o">.</span><span class="n">meta</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+        <span class="n">data_sum</span> <span class="o">=</span> <span class="n">src0</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">masked</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">filled</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;float64&quot;</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">raster_paths</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
+        <span class="k">with</span> <span class="n">rasterio</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">p</span><span class="p">)</span> <span class="k">as</span> <span class="n">src</span><span class="p">:</span>
+            <span class="n">arr</span> <span class="o">=</span> <span class="n">src</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">masked</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">filled</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;float64&quot;</span><span class="p">)</span>
+            <span class="n">data_sum</span> <span class="o">+=</span> <span class="n">arr</span>
+
+    <span class="n">meta</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">dtype</span><span class="o">=</span><span class="s2">&quot;float32&quot;</span><span class="p">,</span> <span class="n">count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">compress</span><span class="o">=</span><span class="s2">&quot;lzw&quot;</span><span class="p">,</span> <span class="n">nodata</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+    <span class="k">with</span> <span class="n">rasterio</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">out_path</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">meta</span><span class="p">)</span> <span class="k">as</span> <span class="n">dst</span><span class="p">:</span>
+        <span class="n">dst</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data_sum</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;float32&quot;</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>
+
+    <span class="n">context_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Wrote merged raster to </span><span class="si">{</span><span class="n">out_path</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">fetch_worldpop</span><span class="p">(</span><span class="n">country</span><span class="p">,</span> <span class="n">context_log</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">worldpop_code</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Download WorldPop rasters for a country and aggregate into indicator rasters.</span>
+<span class="sd">    Produces 6 GeoTIFFs: one per indicator (no total population).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">context_log</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">INFO</span><span class="p">)</span>
+        <span class="n">context_log</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s2">&quot;worldpop&quot;</span><span class="p">)</span>
+
+    <span class="n">country</span> <span class="o">=</span> <span class="n">country</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">worldpop_code</span><span class="p">:</span>
+        <span class="n">worldpop_code</span> <span class="o">=</span> <span class="n">country</span>
+        <span class="n">worldpop_code_low</span> <span class="o">=</span> <span class="n">country</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">worldpop_code_low</span> <span class="o">=</span> <span class="n">worldpop_code</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+
+    <span class="c1"># Force output directory to Temporary</span>
+    <span class="n">out_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="n">country</span><span class="p">,</span> <span class="s2">&quot;Temporary&quot;</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">out_dir</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="c1"># Pre-check: if all 6 indicator rasters already exist, skip</span>
+    <span class="n">expected_outputs</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">out_dir</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">country</span><span class="si">}</span><span class="s2">_pop_</span><span class="si">{</span><span class="n">ind_name</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">YEAR</span><span class="si">}</span><span class="s2">_constrained.tif&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">ind_name</span> <span class="ow">in</span> <span class="n">INDICATORS</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+    <span class="p">]</span>
+    <span class="k">if</span> <span class="nb">all</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">path</span><span class="p">)</span> <span class="k">for</span> <span class="n">path</span> <span class="ow">in</span> <span class="n">expected_outputs</span><span class="p">):</span>
+        <span class="n">context_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[</span><span class="si">{</span><span class="n">country</span><span class="si">}</span><span class="s2">] → all </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">expected_outputs</span><span class="p">)</span><span class="si">}</span><span class="s2"> WorldPop indicators already exist, skipping download.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">expected_outputs</span>
+    
+    <span class="n">out_dir_raw</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">out_dir</span><span class="p">,</span> <span class="s2">&quot;worldpop_raw&quot;</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">out_dir_raw</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="n">downloaded</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="c1"># 1) Download needed age/sex rasters</span>
+    <span class="n">needed_bins</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">ind</span> <span class="ow">in</span> <span class="n">INDICATORS</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+        <span class="k">for</span> <span class="n">sex</span> <span class="ow">in</span> <span class="n">ind</span><span class="p">[</span><span class="s2">&quot;sexes&quot;</span><span class="p">]:</span>
+            <span class="k">for</span> <span class="n">age</span> <span class="ow">in</span> <span class="n">ind</span><span class="p">[</span><span class="s2">&quot;ages&quot;</span><span class="p">]:</span>
+                <span class="n">needed_bins</span><span class="o">.</span><span class="n">add</span><span class="p">((</span><span class="n">sex</span><span class="p">,</span> <span class="n">age</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">sex</span><span class="p">,</span> <span class="n">age</span> <span class="ow">in</span> <span class="n">needed_bins</span><span class="p">:</span>
+        <span class="n">fname</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">worldpop_code_low</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">sex</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">age</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">YEAR</span><span class="si">}</span><span class="s2">_constrained.tif&quot;</span>
+        <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">BASE_URL</span><span class="si">}</span><span class="s2">/AgeSex_structures/</span><span class="si">{</span><span class="n">POP_TIMEFRAME</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">YEAR</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">worldpop_code</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">fname</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="n">dest</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">out_dir_raw</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">country</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">sex</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">age</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">YEAR</span><span class="si">}</span><span class="s2">_constrained.tif&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">dest</span><span class="p">):</span>
+            <span class="n">context_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[</span><span class="si">{</span><span class="n">country</span><span class="si">}</span><span class="s2">] → downloading </span><span class="si">{</span><span class="n">sex</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">age</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">download_url</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">dest</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="n">context_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[ERROR] failed to download </span><span class="si">{</span><span class="n">url</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">context_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[</span><span class="si">{</span><span class="n">country</span><span class="si">}</span><span class="s2">] → skipping existing </span><span class="si">{</span><span class="n">fname</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">downloaded</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">dest</span><span class="p">)</span>
+
+    <span class="c1"># 2) Aggregate indicators</span>
+    <span class="n">processed</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">ind_name</span><span class="p">,</span> <span class="n">ind</span> <span class="ow">in</span> <span class="n">INDICATORS</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">filtered_paths</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">out_dir_raw</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">country</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">sex</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">age</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">YEAR</span><span class="si">}</span><span class="s2">_constrained.tif&quot;</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">sex</span> <span class="ow">in</span> <span class="n">ind</span><span class="p">[</span><span class="s2">&quot;sexes&quot;</span><span class="p">]</span>
+            <span class="k">for</span> <span class="n">age</span> <span class="ow">in</span> <span class="n">ind</span><span class="p">[</span><span class="s2">&quot;ages&quot;</span><span class="p">]</span>
+        <span class="p">]</span>
+        <span class="n">merged_out</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">out_dir</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">country</span><span class="si">}</span><span class="s2">_pop_</span><span class="si">{</span><span class="n">ind_name</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">YEAR</span><span class="si">}</span><span class="s2">_constrained.tif&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">merged_out</span><span class="p">):</span>
+            <span class="n">context_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[</span><span class="si">{</span><span class="n">country</span><span class="si">}</span><span class="s2">] → processing indicator </span><span class="si">{</span><span class="n">ind_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">merge_and_sum_rasters</span><span class="p">(</span><span class="n">filtered_paths</span><span class="p">,</span> <span class="n">merged_out</span><span class="p">,</span> <span class="n">context_log</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="n">context_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[ERROR] failed to process </span><span class="si">{</span><span class="n">ind_name</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">context_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[</span><span class="si">{</span><span class="n">country</span><span class="si">}</span><span class="s2">] → skipping existing </span><span class="si">{</span><span class="n">ind_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">processed</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">merged_out</span><span class="p">)</span>
+
+    <span class="c1"># 3) Delete raw folder</span>
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">out_dir_raw</span><span class="p">):</span>
+        <span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="n">out_dir_raw</span><span class="p">)</span>
+        <span class="n">context_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[</span><span class="si">{</span><span class="n">country</span><span class="si">}</span><span class="s2">] → deleted raw folder: </span><span class="si">{</span><span class="n">out_dir_raw</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="n">context_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">✔ ∙ </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">processed</span><span class="p">)</span><span class="si">}</span><span class="s2"> indicators saved under </span><span class="si">{</span><span class="n">out_dir</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">processed</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">aggregate_worldpop_to_csv</span><span class="p">(</span><span class="n">country_code</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">admin_level</span><span class="o">=</span><span class="s2">&quot;ADM2&quot;</span><span class="p">,</span> <span class="n">context_log</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Download WorldPop indicators for a country and save CSV.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">temp_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="n">country_code</span><span class="p">,</span> <span class="s2">&quot;Temporary&quot;</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">temp_dir</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="n">output_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="n">country_code</span><span class="p">,</span> <span class="s2">&quot;Output&quot;</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">output_dir</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">context_log</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">INFO</span><span class="p">)</span>
+        <span class="n">context_log</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s2">&quot;worldpop&quot;</span><span class="p">)</span>
+
+    <span class="c1"># 1) Fetch indicators (6 GeoTIFFs) into data/{country}/Temporary</span>
+    <span class="n">tifs</span> <span class="o">=</span> <span class="n">fetch_worldpop</span><span class="p">(</span><span class="n">country</span><span class="o">=</span><span class="n">country_code</span><span class="p">,</span> <span class="n">context_log</span><span class="o">=</span><span class="n">context_log</span><span class="p">)</span>
+
+    <span class="c1"># 2) Load ADM polygons</span>
+    <span class="n">adm_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;data/</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">admin_level</span><span class="si">}</span><span class="s2">.geojson&quot;</span>
+    <span class="n">gdf</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">adm_path</span><span class="p">)</span>
+
+    <span class="n">expected_column</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">admin_level</span><span class="si">}</span><span class="s2">_PCODE&quot;</span>
+    <span class="k">if</span> <span class="n">expected_column</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">gdf</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;GeoJSON must contain column &#39;</span><span class="si">{</span><span class="n">expected_column</span><span class="si">}</span><span class="s2">&#39; &quot;</span>
+            <span class="sa">f</span><span class="s2">&quot;(found: </span><span class="si">{</span><span class="n">gdf</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span><span class="si">}</span><span class="s2">)&quot;</span>
+        <span class="p">)</span>
+
+    <span class="c1"># 3) Map indicator names to files</span>
+    <span class="n">indicators</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;female_pop&quot;</span><span class="p">,</span><span class="s2">&quot;children_u5&quot;</span><span class="p">,</span><span class="s2">&quot;female_u5&quot;</span><span class="p">,</span><span class="s2">&quot;elderly&quot;</span><span class="p">,</span><span class="s2">&quot;pop_u15&quot;</span><span class="p">,</span><span class="s2">&quot;female_u15&quot;</span><span class="p">]</span>
+    <span class="n">tif_map</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">indicators</span><span class="p">,</span> <span class="n">tifs</span><span class="p">))</span>
+
+    <span class="n">results</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+    <span class="n">results</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">admin_level</span><span class="si">}</span><span class="s2">_PCODE&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">gdf</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">admin_level</span><span class="si">}</span><span class="s2">_PCODE&quot;</span><span class="p">]</span>
+
+    <span class="c1"># 4) Compute zonal sums</span>
+    <span class="k">for</span> <span class="n">ind</span><span class="p">,</span> <span class="n">path</span> <span class="ow">in</span> <span class="n">tif_map</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">stats</span> <span class="o">=</span> <span class="n">zonal_stats</span><span class="p">(</span><span class="n">gdf</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">stats</span><span class="o">=</span><span class="s2">&quot;sum&quot;</span><span class="p">,</span> <span class="n">nodata</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">results</span><span class="p">[</span><span class="n">ind</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span><span class="p">[</span><span class="s2">&quot;sum&quot;</span><span class="p">]</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">stats</span><span class="p">]</span>
+
+    <span class="c1"># Round all numeric columns to 0 decimals</span>
+    <span class="n">numeric_cols</span> <span class="o">=</span> <span class="n">results</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">admin_level</span><span class="si">}</span><span class="s2">_PCODE&quot;</span><span class="p">)</span>
+    <span class="n">results</span><span class="p">[</span><span class="n">numeric_cols</span><span class="p">]</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="n">numeric_cols</span><span class="p">]</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+
+    <span class="c1"># 5) Save CSV</span>
+    <span class="n">out_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="n">country_code</span><span class="p">,</span> <span class="s2">&quot;Output&quot;</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">out_dir</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">csv_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">out_dir</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">admin_level</span><span class="si">}</span><span class="s2">_demographics.csv&quot;</span><span class="p">)</span>
+    <span class="n">results</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">csv_path</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">csv_path</span>
+</pre></div>
+</div>
+</div>
+</details><hr class="docutils" />
+</section>
 </section>
 </section>
 
@@ -883,8 +1633,25 @@ Python Code<div class="sd-summary-down docutils">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#outputs">Outputs</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#facilities">Facilities</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coping-capacity">Coping Capacity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#facilities">Facilities</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Data Sources</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Processing Steps</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Outputs</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coping-capacity">Coping Capacity</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Data Sources</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Processing Steps</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Outputs</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#demographics">Demographics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Data Sources</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#indicators">Indicators</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Processing Steps</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Outputs</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
