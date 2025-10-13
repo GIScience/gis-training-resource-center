@@ -14,176 +14,176 @@ The Global Aggregation of Indicators for Anticipatory Action (GAIA) Pipeline pro
 8. [**Vegetation Index**](#vegetation-index) – NDVI-based assessment of vegetation conditions.
 9. [**Flood Exposure**](#flood-exposure) – Exposure of populations and facilities to flood hazards.
 
-### Available Countries:
+### Available Country Name:
 :::{dropdown} Africa
 
-| ID  | Country Code | Slug                          |
+| ID  | Country Code | Country                          |
 |-----|--------------|-------------------------------|
-| 1   | AGO          | angola                        |
-| 2   | BDI          | burundi                       |
-| 3   | BEN          | benin                         |
-| 4   | BFA          | burkina-faso                  |
-| 5   | BWA          | botswana                      |
-| 6   | CAF          | central-african-republic      |
-| 7   | CIV          | ivory-coast                   |
-| 8   | CMR          | cameroon                      |
-| 9   | COD          | congo-democratic-republic     |
-| 10  | COG          | congo-brazzaville             |
-| 11  | COM          | comores                        |
-| 12  | CPV          | cape-verde                     |
-| 13  | DJI          | djibouti                        |
-| 14  | DZA          | algeria                        |
-| 15  | EGY          | egypt                           |
-| 16  | ERI          | eritrea                        |
-| 17  | ESH          | morocco                        |
-| 18  | ETH          | ethiopia                        |
-| 19  | GAB          | gabon                           |
-| 20  | GHA          | ghana                           |
-| 21  | GIN          | guinea                          |
-| 22  | GMB          | senegal-and-gambia              |
-| 23  | GNB          | guinea-bissau                   |
-| 24  | GNQ          | equatorial-guinea               |
-| 25  | KEN          | kenya                             |
-| 26  | LBR          | liberia                           |
-| 27  | LBY          | libya                             |
-| 28  | LSO          | lesotho                            |
-| 29  | MAR          | morocco                            |
-| 30  | MDG          | madagascar                         |
-| 31  | MLI          | mali                               |
-| 32  | MOZ          | mozambique                         |
-| 33  | MRT          | mauritania                         |
-| 34  | MUS          | mauritius                          |
-| 35  | MWI          | malawi                             |
-| 36  | MYS          | malawi                             |
-| 37  | NAM          | namibia                            |
-| 38  | NER          | niger                              |
-| 39  | NGA          | nigeria                            |
-| 40  | RWA          | rwanda                                |
-| 41  | SDN          | sudan                                  |
-| 42  | SEN          | senegal-and-gambia                     |
-| 43  | SLE          | sierra-leone                             |
-| 44  | SOM          | somalia                                   |
-| 45  | SSD          | south-sudan                               |
-| 46  | STP          | sao-tome-and-principe                     |
-| 47  | SWZ          | eswatini                                  |
-| 48  | SYC          | seychelles                                |
-| 49  | TCD          | chad                                      |
-| 50  | TGO          | togo                                      |
-| 51  | TUN          | tunisia                                   |
-| 52  | TZA          | tanzania                                  |
-| 53  | UGA          | uganda                                    |
-| 54  | ZAF          | south-africa                              |
-| 55  | ZMB          | zambia                                    |
-| 56  | ZWE          | zimbabwe                                  |
+| 1   | AGO          | Angola                        |
+| 2   | BDI          | Burundi                       |
+| 3   | BEN          | Benin                         |
+| 4   | BFA          | Burkina-Faso                  |
+| 5   | BWA          | Botswana                      |
+| 6   | CAF          | Central-African-Republic      |
+| 7   | CIV          | Ivory-Coast                   |
+| 8   | CMR          | Cameroon                      |
+| 9   | COD          | Congo-Democratic-Republic     |
+| 10  | COG          | Congo-Brazzaville             |
+| 11  | COM          | Comores                        |
+| 12  | CPV          | Cape-Verde                     |
+| 13  | DJI          | Djibouti                        |
+| 14  | DZA          | Algeria                        |
+| 15  | EGY          | Egypt                          |
+| 16  | ERI          | Eritrea                        |
+| 17  | ESH          | Morocco                        |
+| 18  | ETH          | Ethiopia                       |
+| 19  | GAB          | Gabon                          |
+| 20  | GHA          | Ghana                          |
+| 21  | GIN          | Guinea                         |
+| 22  | GMB          | Senegal-And-Gambia             |
+| 23  | GNB          | Guinea-Bissau                  |
+| 24  | GNQ          | Equatorial-Guinea              |
+| 25  | KEN          | Kenya                          |
+| 26  | LBR          | Liberia                        |
+| 27  | LBY          | Libya                          |
+| 28  | LSO          | Lesotho                        |
+| 29  | MAR          | Morocco                        |
+| 30  | MDG          | Madagascar                     |
+| 31  | MLI          | Mali                           |
+| 32  | MOZ          | Mozambique                     |
+| 33  | MRT          | Mauritania                     |
+| 34  | MUS          | Mauritius                      |
+| 35  | MWI          | Malawi                         |
+| 36  | MYS          | Malawi                         |
+| 37  | NAM          | Namibia                        |
+| 38  | NER          | Niger                          |
+| 39  | NGA          | Nigeria                        |
+| 40  | RWA          | Rwanda                         |
+| 41  | SDN          | Sudan                          |
+| 42  | SEN          | Senegal-And-Gambia             |
+| 43  | SLE          | Sierra-Leone                   |
+| 44  | SOM          | Somalia                        |
+| 45  | SSD          | South-Sudan                    |
+| 46  | STP          | Sao-Tome-And-Principe          |
+| 47  | SWZ          | Eswatini                       |
+| 48  | SYC          | Seychelles                     |
+| 49  | TCD          | Chad                           |
+| 50  | TGO          | Togo                           |
+| 51  | TUN          | Tunisia                        |
+| 52  | TZA          | Tanzania                       |
+| 53  | UGA          | Uganda                         |
+| 54  | ZAF          | South-Africa                   |
+| 55  | ZMB          | Zambia                         |
+| 56  | ZWE          | Zimbabwe                       |
 
 :::
 
 :::{dropdown} Asia
 
-| ID  | Country Code | Slug                          |
+| ID  | Country Code | Country                          |
 |-----|--------------|-------------------------------|
-| 57  | AFG          | afghanistan                  |
-| 58  | ARE          | gcc-states                    |
-| 59  | ARM          | armenia                       |
-| 60  | AZE          | azerbaijan                    |
-| 61  | BGD          | bangladesh                    |
-| 62  | BHR          | gcc-states                    |
-| 63  | BTN          | bhutan                        |
-| 64  | CHN          | china                         |
-| 65  | IDN          | indonesia                     |
-| 66  | IRN          | iran                          |
-| 67  | IRQ          | iraq                          |
-| 68  | KAZ          | kazakhstan                    |
-| 69  | KGZ          | kyrgyzstan                    |
-| 70  | KHM          | cambodia                       |
-| 71  | KWT          | gcc-states                     |
-| 72  | LAO          | laos                           |
-| 73  | LBN          | lebanon                        |
-| 74  | LKA          | sri-lanka                      |
-| 75  | MDV          | maldives                        |
-| 76  | MMR          | myanmar                         |
-| 77  | MNG          | mongolia                        |
-| 78  | NPL          | nepal                            |
-| 79  | OMN          | gcc-states                       |
-| 80  | PAK          | pakistan                         |
-| 81  | PHL          | philippines                      |
-| 82  | PRK          | north-korea                      |
-| 83  | QAT          | gcc-states                        |
-| 84  | SAU          | gcc-states                        |
-| 85  | SYR          | syria                              |
-| 86  | THA          | thailand                           |
-| 87  | TJK          | tajikistan                         |
-| 88  | TLS          | indonesia                          |
-| 89  | UZB          | uzbekistan                          |
-| 90  | VNM          | vietnam                             |
-| 91  | YEM          | yemen                               |
-| 92  | PNG          | indonesia                           |
+| 57  | AFG          | Afghanistan                  |
+| 58  | ARE          | Gcc-States                    |
+| 59  | ARM          | Armenia                       |
+| 60  | AZE          | Azerbaijan                    |
+| 61  | BGD          | Bangladesh                    |
+| 62  | BHR          | Gcc-States                    |
+| 63  | BTN          | Bhutan                        |
+| 64  | CHN          | China                         |
+| 65  | IDN          | Indonesia                     |
+| 66  | IRN          | Iran                          |
+| 67  | IRQ          | Iraq                          |
+| 68  | KAZ          | Kazakhstan                    |
+| 69  | KGZ          | Kyrgyzstan                    |
+| 70  | KHM          | Cambodia                      |
+| 71  | KWT          | Gcc-States                    |
+| 72  | LAO          | Laos                          |
+| 73  | LBN          | Lebanon                       |
+| 74  | LKA          | Sri-Lanka                     |
+| 75  | MDV          | Maldives                      |
+| 76  | MMR          | Myanmar                       |
+| 77  | MNG          | Mongolia                      |
+| 78  | NPL          | Nepal                         |
+| 79  | OMN          | Gcc-States                    |
+| 80  | PAK          | Pakistan                      |
+| 81  | PHL          | Philippines                   |
+| 82  | PRK          | North-Korea                   |
+| 83  | QAT          | Gcc-States                    |
+| 84  | SAU          | Gcc-States                    |
+| 85  | SYR          | Syria                         |
+| 86  | THA          | Thailand                      |
+| 87  | TJK          | Tajikistan                    |
+| 88  | TLS          | Indonesia                     |
+| 89  | UZB          | Uzbekistan                    |
+| 90  | VNM          | Vietnam                       |
+| 91  | YEM          | Yemen                         |
+| 92  | PNG          | Indonesia                     |
 
 :::
 
 :::{dropdown} Europe
 
-| ID  | Country Code | Slug                          |
+| ID  | Country Code | Country                          |
 |-----|--------------|-------------------------------|
-| 93  | ALB          | albania                       |
-| 94  | BGR          | bulgaria                      |
-| 95  | BLR          | belarus                       |
-| 96  | GEO          | georgia                        |
-| 97  | GRC          | greece                         |
-| 98  | HUN          | hungary                        |
-| 99  | MDA          | moldova                        |
-| 100 | MKD          | macedonia                      |
-| 101 | POL          | poland                         |
-| 102 | ROU          | romania                        |
-| 103 | SVK          | slovakia                       |
-| 104 | TUR          | turkey                         |
-| 105 | UKR          | ukraine                        |
-| 106 | RUS          | none                            |
+| 93  | ALB          | Albania                       |
+| 94  | BGR          | Bulgaria                      |
+| 95  | BLR          | Belarus                       |
+| 96  | GEO          | Georgia                       |
+| 97  | GRC          | Greece                        |
+| 98  | HUN          | Hungary                       |
+| 99  | MDA          | Moldova                       |
+| 100 | MKD          | Macedonia                     |
+| 101 | POL          | Poland                        |
+| 102 | ROU          | Romania                       |
+| 103 | SVK          | Slovakia                      |
+| 104 | TUR          | Turkey                        |
+| 105 | UKR          | Ukraine                       |
+| 106 | RUS          | Russia                          |
 
 :::
 
 :::{dropdown} South America
 
-| ID  | Country Code | Slug                          |
+| ID  | Country Code | Country                          |
 |-----|--------------|-------------------------------|
-| 107 | ARG          | argentina                     |
-| 108 | BOL          | bolivia                        |
-| 109 | BRA          | brazil                         |
-| 110 | CHL          | chile                          |
-| 111 | COL          | colombia                       |
-| 112 | ECU          | ecuador                        |
-| 113 | GUY          | guyana                         |
-| 114 | PER          | peru                           |
-| 115 | PRY          | paraguay                       |
-| 116 | SUR          | suriname                       |
-| 117 | URY          | uruguay                        |
-| 118 | VEN          | venezuela                      |
+| 107 | ARG          | Argentina                     |
+| 108 | BOL          | Bolivia                        |
+| 109 | BRA          | Brazil                         |
+| 110 | CHL          | Chile                          |
+| 111 | COL          | Colombia                       |
+| 112 | ECU          | Ecuador                        |
+| 113 | GUY          | Guyana                         |
+| 114 | PER          | Peru                           |
+| 115 | PRY          | Paraguay                       |
+| 116 | SUR          | Suriname                       |
+| 117 | URY          | Uruguay                        |
+| 118 | VEN          | Venezuela                      |
 
 :::
 
 :::{dropdown} Central America & Caribbean
 
-| ID  | Country Code | Slug                          |
+| ID  | Country Code | Country                          |
 |-----|--------------|-------------------------------|
-| 119 | ATG          | none                          |
-| 120 | BHS          | bahamas                       |
-| 121 | BLZ          | belize                        |
-| 122 | CRI          | costa-rica                    |
-| 123 | CUB          | cuba                           |
-| 124 | DMA          | .nan                           |
-| 125 | DOM          | haiti-and-domrep              |
-| 126 | GTM          | guatemala                      |
-| 127 | HND          | honduras                       |
-| 128 | HTI          | haiti-and-domrep               |
-| 129 | JAM          | jamaica                        |
-| 130 | NIC          | nicaragua                      |
-| 131 | PAN          | panama                         |
-| 132 | SLV          | el-salvador                     |
-| 133 | TTO          | none                            |
-| 134 | VCT          | none                            |
-| 135 | BRB          | central-america                 |
-| 136 | LCA          | none                            |
-| 137 | KNA          | none                            |
+| 119 | ATG          | Antigua and Barbuda           |
+| 120 | BHS          | Bahamas                       |
+| 121 | BLZ          | Belize                        |
+| 122 | CRI          | Costa-Rica                    |
+| 123 | CUB          | Cuba                           |
+| 124 | DMA          | Dominica                         |
+| 125 | DOM          | Haiti-And-DomRep              |
+| 126 | GTM          | Guatemala                      |
+| 127 | HND          | Honduras                       |
+| 128 | HTI          | Haiti-And-DomRep               |
+| 129 | JAM          | Jamaica                        |
+| 130 | NIC          | Nicaragua                      |
+| 131 | PAN          | Panama                         |
+| 132 | SLV          | El-Salvador                     |
+| 133 | TTO          | None                            |
+| 134 | VCT          | None                            |
+| 135 | BRB          | Central-America                 |
+| 136 | LCA          | None                            |
+| 137 | KNA          | None                            |
 
 :::
 
@@ -191,22 +191,22 @@ The Global Aggregation of Indicators for Anticipatory Action (GAIA) Pipeline pro
 
 | ID  | Country Code | Slug                          |
 |-----|--------------|-------------------------------|
-| 138 | FJI          | fiji                           |
-| 139 | FSM          | micronesia                     |
-| 140 | KIR          | kiribati                       |
-| 141 | MHL          | marshall-islands               |
-| 142 | SLB          | solomon-islands                |
-| 143 | TON          | tonga                           |
-| 144 | VUT          | vanuatu                         |
+| 138 | FJI          | Fiji                           |
+| 139 | FSM          | Micronesia                     |
+| 140 | KIR          | Kiribati                       |
+| 141 | MHL          | Marshall-Islands               |
+| 142 | SLB          | Solomon-Islands                |
+| 143 | TON          | Tonga                           |
+| 144 | VUT          | Vanuatu                         |
 
 :::
 
 ::: {dropdown} North America
 
-| ID  | Country Code | Slug                          |
+| ID  | Country Code | Country                          |
 |-----|--------------|-------------------------------|
-| 145 | GRD          | greenland                       |
-| 146 | MEX          | mexico                           |
+| 145 | GRD          | Greenland                       |
+| 146 | MEX          | Mexico                           |
 
 :::
 
