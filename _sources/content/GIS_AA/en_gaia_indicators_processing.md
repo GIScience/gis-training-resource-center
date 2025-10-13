@@ -2,7 +2,7 @@
 
 ## Overview
 
-The GAIA Pipeline produces a series of thematic files for each country at administrative level 2. Each file captures different aspects of population, infrastructure, and environmental conditions. Below is an overview of the available files:
+The Global Aggregation of Indicators for Anticipatory Action (GAIA) Pipeline produces a series of thematic files for each country at administrative level 2. Each file captures different aspects of population, infrastructure, and environmental conditions. Below is an overview of the available files:
 
 - [**Access to Services**](#access-to-services) – Population accessibility to key facilities such as education and health centers.  
 - [**Facilities**](#facilities) – Availability and distribution of essential service infrastructure.  
