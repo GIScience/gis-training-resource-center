@@ -14,8 +14,8 @@ The Global Aggregation of Indicators for Anticipatory Action (GAIA) Pipeline pro
 8. [**Vegetation Index**](#vegetation-index) – NDVI-based assessment of vegetation conditions.
 9. [**Flood Exposure**](#flood-exposure) – Exposure of populations and facilities to flood hazards.
 
-:::{dropdown} Available Countries
-## Africa
+### Available Countries:
+:::{dropdown} Africa
 
 | ID  | Country Code | Slug                          |
 |-----|--------------|-------------------------------|
@@ -76,9 +76,9 @@ The Global Aggregation of Indicators for Anticipatory Action (GAIA) Pipeline pro
 | 55  | ZMB          | zambia                                    |
 | 56  | ZWE          | zimbabwe                                  |
 
----
+:::
 
-## Asia
+:::{dropdown} Asia
 
 | ID  | Country Code | Slug                          |
 |-----|--------------|-------------------------------|
@@ -119,9 +119,9 @@ The Global Aggregation of Indicators for Anticipatory Action (GAIA) Pipeline pro
 | 91  | YEM          | yemen                               |
 | 92  | PNG          | indonesia                           |
 
----
+:::
 
-## Europe
+:::{dropdown} Europe
 
 | ID  | Country Code | Slug                          |
 |-----|--------------|-------------------------------|
@@ -140,9 +140,9 @@ The Global Aggregation of Indicators for Anticipatory Action (GAIA) Pipeline pro
 | 105 | UKR          | ukraine                        |
 | 106 | RUS          | none                            |
 
----
+:::
 
-## South America
+:::{dropdown} South America
 
 | ID  | Country Code | Slug                          |
 |-----|--------------|-------------------------------|
@@ -159,9 +159,9 @@ The Global Aggregation of Indicators for Anticipatory Action (GAIA) Pipeline pro
 | 117 | URY          | uruguay                        |
 | 118 | VEN          | venezuela                      |
 
----
+:::
 
-## Central America & Caribbean
+:::{dropdown} Central America & Caribbean
 
 | ID  | Country Code | Slug                          |
 |-----|--------------|-------------------------------|
@@ -185,9 +185,9 @@ The Global Aggregation of Indicators for Anticipatory Action (GAIA) Pipeline pro
 | 136 | LCA          | none                            |
 | 137 | KNA          | none                            |
 
----
+:::
 
-## Australia & Oceania
+::: {dropdown} Australia & Oceania
 
 | ID  | Country Code | Slug                          |
 |-----|--------------|-------------------------------|
@@ -199,9 +199,9 @@ The Global Aggregation of Indicators for Anticipatory Action (GAIA) Pipeline pro
 | 143 | TON          | tonga                           |
 | 144 | VUT          | vanuatu                         |
 
----
+:::
 
-## North America
+::: {dropdown} North America
 
 | ID  | Country Code | Slug                          |
 |-----|--------------|-------------------------------|
