@@ -225,8 +225,7 @@ The **Coping Capacity**, **Vulnerability**, and **Flood Exposure** files can be 
 Represents the share of the population with access to key facilities within defined distances or travel times.
 
 ### Data Sources
-- Accessibility data (isochrones) downloaded from **MinIO**:
-    Categories: `education`, `hospitals`, `primary_healthcare`.
+- Accessibility data (isochrones) downloaded from **MinIO** for the categories: `education`, `hospitals`, `primary_healthcare`.
 - Population data: WorldPop raster data (vulnerable populations) via *Demographics*.
 
 ### Processing Steps
