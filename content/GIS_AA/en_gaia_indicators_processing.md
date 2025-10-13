@@ -14,7 +14,7 @@ The Global Aggregation of Indicators for Anticipatory Action (GAIA) Pipeline pro
 8. [**Vegetation Index**](#vegetation-index) – NDVI-based assessment of vegetation conditions.
 9. [**Flood Exposure**](#flood-exposure) – Exposure of populations and facilities to flood hazards.
 
-### Available Country Name:
+### Available Countries:
 :::{dropdown} Africa
 
 | ID  | Country Code | Country                          |
