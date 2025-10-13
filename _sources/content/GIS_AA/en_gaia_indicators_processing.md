@@ -17,7 +17,10 @@ The Global Aggregation of Indicators for Anticipatory Action (GAIA) Pipeline pro
 ## Risk Assessment Plugin
 The datasets produced by GAIA are fully compatible with the [Risk Assessment QGIS Plugin](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_risk_assessment_plugin.html), enabling seamless integration into spatial risk analyses. They are openly available for multiple countries through [HeiGIT on HDX](https://data.humdata.org/organization/heidelberg-institute-for-geoinformation-technology?sort=metadata_modified+desc), providing ready-to-use geospatial layers for risk assessments.
 
+:::{admonition} Information
+:class: tip
 The **Coping Capacity**, **Vulnerability**, and **Flood Exposure** files can be used directly as input for the Risk Assessment QGIS Plugin when analyzing flood hazards. Only minor adjustments, such as renaming the ID columns, are required for compatibility.
+:::
 
 ---
 
