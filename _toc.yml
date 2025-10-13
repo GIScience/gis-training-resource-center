@@ -141,6 +141,7 @@ parts:
       - file: content/GIS_AA/en_qgis_risk_assessment_plugin.md
         sections:
           - file: content/GIS_AA/en_qgis_generate_indicators_for_plugin.md
+          - file: content/GIS_AA/en_gaia_indicators_processing.md
       - file: content/GIS_AA/en_qgis_historical_impact_assessment_sudan.md
         sections:
           - file: content/GIS_AA/en_qgis_historical_impact_assessment_sudan_ex1.md
