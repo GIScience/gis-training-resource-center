@@ -353,7 +353,6 @@ Example Map: UNHCR Iraq Population Profile - Breakdown Overview - Syrian Refugee
 
 Take a moment to reflect on what you've learned in this module. The questions below are designed to help you check your understanding of key concepts and identify areas you may want to review further. You don't need to submit your answers — this is for your own learning.
 
-::::{div} sd-text-italic sd-text-primary
 1. __What are the three core functions of GIS?__  
 
 :::{dropdown} Answer
@@ -391,6 +390,6 @@ source, which is the essence of spatial reasoning
 5. Situation Maps: Provide an overview of a humanitarian or emergency situation; show affected areas, operational activities, or needs assessments.
 :::
 
-::::
+
 
 :::::
