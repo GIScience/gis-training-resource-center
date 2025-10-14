@@ -25,20 +25,6 @@ Here you will find short **technical** descriptions and **practical** guides on 
 <!-- 👇 You can add your card/grid layout here to organize wiki entries visually -->
 
 
-
-
-```{admonition} 📌 Add Your Cards or Links Below
-:class: note
-
-You can use a grid, list, or card format to organize wiki entries here.
-For example:
-
-- [Working with Vector Layers](./vector-layers.md)
-- [Setting CRS and Projections](./crs-guide.md)
-- [QGIS Styling Examples](./styling-qgis.md)
-- [Remote Sensing for Beginners](./remote-sensing.md)
-- [Automation with Processing Toolbox](./automation-tools.md)
-
 ::::{grid} 2
 :gutter: 2
 :::{grid-item-card}
