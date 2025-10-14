@@ -6,18 +6,14 @@
 :::
 ::::
 
-#  Automation theory
+# The model designer in QGIS
 
-:::{attention}
-🚧This part of the training platform is under ⚠️construction⚠️ and is not ready to be used in a training
-:::
-
-
-## Introduction into the QGIS Graphical Modeler
+## Introduction into the QGIS Model Designer
 
 The ![](/fig/processingModel.png) `Graphical Modeler` also known as the Model Builder allows users to create complex models using a visual interface. Most analysis tasks in a GIS are not isolated, but part of a chain of operations resulting in a series of inputs and outputs (e.g. clipping the area of interest, performing a spatial join and applying some table functions). Using the Graphical Modeler, this chain of operations can be combined into a single process, which can then be easily reproduced with a different set of inputs. Regardless of how many steps and different algorithms are involved in the analysis, a model is executed as a single algorithm, saving time and effort.
 
 ### Graphical User Interface
+
 The Graphical Modeler can be accessed from the Processing menu `Processing -> Graphical Modeler` as shown in {numref}`open_graphical_modeler`.
 
 ```{figure} /fig/en_open_graphical_modeler.png
