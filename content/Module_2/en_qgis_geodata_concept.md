@@ -430,12 +430,82 @@ onto your QGIS window, or open then through the "Data Source Manager".
 Check whether you know the key concepts from this chapter by answering the questions below.
 
 1. __Define Geodata. What does it distinguish from regular tabular data?__
+
+:::{dropdown} Answer
+Geodata, or spatial data, refers to information that is associated with a specific location on the Earth's surface. It includes both the geometry (the spatial component) and the attributes (the descriptive data). Unlike regular tabular data, which consists solely of rows and columns without any spatial reference, geodata has a geographic component that allows it to be mapped and analyzed in a spatial context.
+:::
+
 2. __What are the two main types of geodata and how do they store information?__
+
+:::{dropdown} Answer
+The two main types of geodata are: 
+- Vector Data: Represents geographic features using points, lines, and polygons. Each feature has associated attribute data stored in a table. Common formats include Shapefile (.shp), GeoPackage (.gpkg), and GeoJSON (.geojson).
+- Raster Data: Represents geographic data as a matrix of cells (pixels), each with a value representing information, such as temperature or elevation. Common formats include GeoTIFF (.tif), JPEG2000 (.jp2), and Esri ASCII Grid (.asc).
+
+:::
+
 3. __Give examples of real‑world phenomena or features that are better represented as vector data vs. raster data.__
+
+:::{dropdown} Answer
+__Vector Data:__ Suitable for representing discrete features with well-defined boundaries, such as
+   - Administrative boundaries (countries, districts)
+   - Roads and rivers
+   - Land parcels
+   - Buildings and infrastructure
+__Raster Data:__ Suitable for continuous data that varies across space, such as
+   - Satellite imagery
+   - Elevation models (e.g, Digital Elevation Models or Terrain models)
+   - Temperature or precipitation maps
+   - Land cover classification
+:::
+
 4. __Describe the structure of a shapefile. What mandatory component files must accompany it?__
+
+:::{dropdown} Answer
+
+A Shapefile is a widely used vector data format that consists of at least three mandatory component files:
+- `.shp`: Contains the geometry data (points, lines, or polygons).
+- `.shx`: Contains the shape index data, enabling fast spatial queries.
+- `.dbf`: Contains attribute data in a tabular format, corresponding to each geometry.
+
+It can also contain additional files such as `.prj`. These files together, which share a name, make up the shapefile
+:::
+
 5. __Explain the concept of a “layer” in GIS. Why do GIS systems use layers when building maps?__
+
+:::{dropdown}
+In GIS, a layer is a collection of geographic data representing a specific type of information, such as roads, rivers, or land use. Layers are stacked on top of each other to create a comprehensive map. Using layers allows for:
+- __Organized data management__: Each layer can be edited or analyzed independently.
+- __Clear visualisation__: Different types of data can be styled and displayed separately.
+- __Efficient analysis__: Layers can be turned on or off to focus on specific aspects of the data.
+:::
+
 6. __Do you know how to import vector data into a QGIS project?__
+
+:::{dropdown} Answer
+Vector data can be imported into a QGIS project by:
+- In the top bar, use the `Layer` menu → `Add vector layer`.
+- Dragging and dropping the vector file directly into the QGIS map canvas.
+:::
+
 7. __Where are the layers imported into a QGIS project saved?__
+
+:::{dropdown} Answer
+The layers are not stored inside of a QGIS project. When layers are imported into a QGIS project, they are not moved or copied. Instead, QGIS stores the path to the data source in the project file (.qgz). If the data source is moved or deleted, QGIS will not be able to locate it unless the path is updated. 
+Additionally, manipulating the layer will change the original dataset.
+:::
+
+
 8. __If you have a `.csv` file or another delimited text file, what information must it contain in order to import it into QGIS as a point layer?__
+
+:::{dropdown} Answer
+To import a `.csv` or delimited text file as a point layer in QGIS, the file must:
+- Contain a header row with field names
+- Include at least two columns representing X (longitude) and Y (latitude) coordinates.
+- Ensure that the coordinate values are numeric and correctly formatted.
+
+QGIS uses the coordinate columns to plot the points on the map canvas.
+
+:::
 
 ::::
