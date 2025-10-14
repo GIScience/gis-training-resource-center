@@ -14,6 +14,7 @@
 
 
 ## Introduction into the QGIS Graphical Modeler
+
 The ![](/fig/processingModel.png) `Graphical Modeler` also known as the Model Builder allows users to create complex models using a visual interface. Most analysis tasks in a GIS are not isolated, but part of a chain of operations resulting in a series of inputs and outputs (e.g. clipping the area of interest, performing a spatial join and applying some table functions). Using the Graphical Modeler, this chain of operations can be combined into a single process, which can then be easily reproduced with a different set of inputs. Regardless of how many steps and different algorithms are involved in the analysis, a model is executed as a single algorithm, saving time and effort.
 
 ### Graphical User Interface
@@ -77,7 +78,12 @@ Vector Layer Parameter Definition
 
 #### Selecting the Algorithms
 
-Now, select the `Algorithms` tab on the left. These are the same algorithms as in the processing toolbox. If you know where an algorithm is, you can select it directly. Otherwise, you can search for it using the search toolbar. For this example we will search for the `Buffer` algorithm as shown in {numref}`model_buffer`. Add it to the model canvas. 
+The model builder is using the same algorithms that are available in the processing toolbox in the main QGIS window. 
+To add algorithms:
+
+1. select the `Algorithms` tab on the left.
+2. Using the searchbar, look the the tool `Buffer` algorithm as shown in {numref}`model_buffer`. 
+3. Add it to the model canvas by dragging it onto the canvas or double-clicking on it. 
 
 ```{figure} /fig/en_model_buffer.PNG
 ---
@@ -87,12 +93,83 @@ name: model_buffer
 Selection of Buffer algorithm
 ```
 
-When you double-click on it, the Buffer Algorithm window appears. The algorithm window looks a bit different than when using the algorithm outside the model builder. The main difference is that you have to specify the algorithm input as either being one of the __model inputs__ you have defined or an __output of another algorithm__. By selecting the output of another algorithm, you can effectively chain multiple analysis steps into each other to create a complex workflow. In our case, we want to select the road infrastructure input as the input for the buffer algorithm. Next, we want to specify the buffer size. The units of measurements will be the same as for the project CRS. Enter 200,000. This will instruct the algorithm to create a buffer of 200 meters (or units of measurement).
+4. The algorithm parameters window will open. Here we have to specify the description (title), the input, the buffer size, and the output.
 
+:::{note}
+The algorithm window looks a bit different than when using the algorithm outside the model builder. The main difference is that you have to specify the algorithm input as either being one of the __model inputs__ you have defined or an __output of another algorithm__. By selecting the output of another algorithm, you can effectively chain multiple analysis steps into each other to create a complex workflow.
+:::
 
-Once you have added the 
+5. In the `Description` field, enter a name or a description of the processing step (e.g. Buffer road network)
+6. As the `Input layer`, select an input layer for the model (e.g. road infrastructure).
+7. Next, we want to specify the buffer size. The units of measurements will be the same as for the project CRS. Enter 200,000. This will instruct the algorithm to create a buffer of 200 meters (or units of measurement).
+8. Add a name in the output field ![](/fig/qgis_3.40_model_outputs.png) to specify the output of the algorithm as an output of the model.
+
+:::{figure} /fig/en_qgis_3.40_model_adding_algorithm_buffer.png
+---
+name: en_qgis_3.40_model_adding_algorithm_buffer
+width: 500 px
+---
+Adding the buffer algorithm to the model 
+:::
+
+#### Chaining algorithms
+
+The power of the model designer lies in it's ability to chain several processing steps together, creating a complex automated workflow.
+
+To chain processing steps together:
+
+1. Add another algorithm to the model canvas (e.g., Clip)
+2. As `Input layer`, instead of ![](/fig/qgis_3.40_input_model_input.png) `Model input`, select ![](fig/qgis_3.40_input_model_algo_output.png). `Algorithm output`. 
+3. Next, select the specific input from a previous processing step. 
 
 
 ### Tips and Tricks when working in the model designer
 
-### Areas of application
+:::{admonition} Working with multiple processing steps
+:class: tip
+
+When working with multiple processing steps, it can quickly become confusing choosing the inputs when connecting processing steps. 
+__Make sure to give each step a clear name so you can identify it easily when choosing inputs for other processing steps.__
+
+:::
+
+:::{admonition} Adding comments to your model
+:class: tip
+
+The graphical model designer can be difficult to understand when looking at a medium to large model, as you can't see the the parameters of the algorithms and you can't see the attributes of the layers. 
+
+To make it easier to understand, you can add comment boxes to your processing steps or inputs. 
+
+- <kbd>Double-Click</kbd> on an algorithm to open the algorithm's parameter.
+- At the top of the algorithm window, navigate to the `Comments`-tab. Here you can enter a comment describing what the processing step is doing and what should be considered. You can also specify a colour for the comment box.
+- Click Ok. A new box connected to the algorithm will appear in your model canvas. 
+
+:::
+
+:::{admonition} Joining Attributes
+:class: tip
+When joining layers in the model designer, by default, it copies all of the attributes to the new layer. 
+This can quickly result in large, confusing attribute tables. 
+In order to copy several, but not all, attributes, you have to enter the column names with the following syntax:
+
+```
+Value_1;Value_2;Value_3
+```
+
+:::
+
+:::{admonition} Adding group boxes
+:class: tip
+
+When organising your model, you can add group boxes to group algorithms in the model canvas to visually order the different steps. 
+
+- In the top bar, navigate to `Edit` -> `Add Group Box`. A grey box will appear in the background of the model canvas
+- <kbd>Double-Click</kbd> on the group box to enter a name and customise the colour.
+
+:::
+
+:::{admonition} Testing the model
+
+When building a model, it is useful to add temporary outputs for the individual steps to verify that the processing steps or calculations are correct in the intermediary steps. 
+
+:::
