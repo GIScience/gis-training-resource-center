@@ -440,16 +440,7 @@ If you have more questions before or after the training or require assistance, d
 
 :::{admonition} Common errors and issues
 :class: tip
-:link: https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html
 We have collected a list of __[Common errors and issues](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html)__. If you ever find yourself at your wits end (which can happen a lot when working with QGIS!), try finding the solution to your problem here. 
-:::
-
-:::{card}
-:class-card: sd-text-justify sd-rounded-3 sd-border-2
-:link: https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html
-
-We have collected a list of __[Common errors and issues](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html)__. If you ever find yourself at your wits end (which can happen a lot when working with QGIS!), try finding the solution to your problem here. 
-
 :::
 
 
@@ -472,12 +463,51 @@ GIS-operations, so it is always a good idea to do a quick google search. Amongst
 
 Take a moment to recapitulate what you've learned in this chapter by answering the questions below:
 
-1. __What is QGIS, and what does it mean that it is “open source”?__  
+1. __What is QGIS, and what does it mean that it is “open source”?__
+
+:::{dropdown} Answer 
+QGIS is a Geographic Information System (GIS) software that lets users view, edit, analyze, and produce maps from spatial (geographic) and attribute data.
+Being open source means that its source code is freely available: anyone can inspect, modify, and distribute it (under license). It also implies that there is a community of users and developers contributing to it, and that the software is generally available at no cost.
+:::
+
 2. __Name three things you can do working with QGIS.__  
+
+:::{dropdown} Answer
+
+- Load spatial data (vector or raster), visualize it on a map
+- Edit or digitize features (e.g. adding points, lines, polygons)
+- Perform spatial analysis (e.g. buffer, overlay, join), or produce map outputs (export to PDF/image)
+:::
+
 3. __How do you know if a QGIS-project has been saved or not?__
+
+:::{dropdown} Answer
+Typically, QGIS will show an asterisk (*) next to the project name or in the window/tab title if there are unsaved changes. If no asterisk appears (or if “Save” is greyed out), that suggests the project is already saved (i.e. up to date).
+:::
+
 4. __How do you open a QGIS-project?__
+
+:::{dropdown} Answer
+You can open a QGIS project via the File → Open Project menu (or “Open Project” button in toolbar), then browse for a .qgs or .qgz file. Alternatively, double-clicking the project file (if associated on your system) may also open it in QGIS.
+:::
+
 5. __How do you show and hide panels or toolbars?__
+
+:::{dropdown} Answer
+In the top bar, use the `View` menu → `Panels` or `Toolbars` submenus to toggle (check/uncheck) specific panels or toolbars.
+:::
+
 6. __Where can you find help when you are encountering problems with QGIS?__
+
+:::{dropdown} Answer
+
+- On our [Common errors and issues](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html) page
+- By looking into the [QGIS documentation](https://docs.qgis.org/3.34/en/docs/index.html)
+- On the [QGIS user forum on stackexchange](https://gis.stackexchange.com/?tags=qgis)
+- In [QGIS user groups](https://www.qgis.org/en/site/forusers/usergroups.html#qgis-usergroups)
+- By searching for tutorials on youtube
+
+:::
 
 ::::
 
