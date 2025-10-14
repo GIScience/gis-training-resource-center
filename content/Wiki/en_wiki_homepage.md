@@ -41,7 +41,7 @@ For example:
 
 ::::{grid} 2
 :gutter: 2
-:::{grid-item}
+:::{grid-item-card}
 __[QGIS Basics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_qgis_basics_wiki.html):__
 
 - [QGIS Installation](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_installation_wiki.html)
@@ -53,7 +53,7 @@ __[QGIS Basics](https://giscience.github.io/gis-training-resource-center/content
 - [Data Sources](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_data_sources_wiki.html)
 :::
 
-:::{grid-item}
+:::{grid-item-card}
 
 __[General Geodata and Data Management](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_wiki.html)__
 
