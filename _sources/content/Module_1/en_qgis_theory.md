@@ -339,7 +339,7 @@ Situation or descriptive maps provide a snapshot of specific conditions or event
 
 ```{figure} /fig/en_Pop_Syrian_Refugees_2023.png
 ---
-height: 600px
+width: 600px
 name: en_Pop_Syrian_Refugees_2023
 align: center
 ---
@@ -348,15 +348,49 @@ Example Map: UNHCR Iraq Population Profile - Breakdown Overview - Syrian Refugee
 
 ## Self-Assessment Questions
 
-::::{admonition} Test your knowledge
+:::::{admonition} Test your knowledge
 :class: note
 
 Take a moment to reflect on what you've learned in this module. The questions below are designed to help you check your understanding of key concepts and identify areas you may want to review further. You don't need to submit your answers — this is for your own learning.
 
-:::{div} sd-text-italic sd-text-primary
+::::{div} sd-text-italic sd-text-primary
 1. __What are the three core functions of GIS?__  
+
+:::{dropdown} Answer
+GIS (Geographic Information System) is a system for capturing, manipulating, analysing, and visualising spatial data. The three core functions are:
+  - __Data Capture__: creating (or digitising) spatial data.
+  - __Analysis__: performing analyses or processing spatial data to gain insights or knowledge.
+  - __Visualisation__: Visualising spatial data on maps, charts, or reports to communicate information
+:::
+
 2. __What is spatial analysis and how did John Snow use spatial analysis in his cholera outbreak map from 1854?__  
+
+:::{dropdown} Answer
+Spatial analysis is the process of examining geographic (spatial) data to detect patterns, relationships, 
+trends, and spatial structures. It involves operations like overlay, buffering, proximity, clustering, 
+interpolation, and assessing how phenomena vary across space.
+
+In 1854, Dr. John Snow mapped the locations of cholera deaths in London (Soho district) alongside the 
+locations of water pumps. He noticed that the cholera cases clustered around one particular pump (on Broad 
+Street). Because there was a spatial clustering around that pump, he hypothesized that the water from that 
+pump was the source of the outbreak. He then convinced authorities to remove the pump handle, after which 
+the outbreak declined. In effect, he used spatial distribution and clustering of disease incidents to infer 
+a causal relationship. (This is a classic early example of applying spatial analysis in epidemiology.)
+His map showed that the deaths were not randomly distributed but spatially concentrated around a water 
+source, which is the essence of spatial reasoning
+
+:::
+
 3. __Name the five common map types used in humanitarian work.__  
+
+:::{dropdown} Answer
+1. General Reference Maps: Show general geographic features like roads, rivers, and administrative boundaries; used for navigation and orientation
+2. Infrastructure Maps: Thematic maps focused on physical infrastructure (e.g., hospitals, water points, roads); used for planning and logistics.
+3. Thematic Maps: Represent a specific theme or dataset (e.g., population, rainfall, conflict); uses color, shapes, or symbols to visualize non-spatial attributes.
+4. Analysis Maps: Result from spatial analysis to guide decision-making (e.g., hazard risk zones, suitability models).
+5. Situation Maps: Provide an overview of a humanitarian or emergency situation; show affected areas, operational activities, or needs assessments.
 :::
 
 ::::
+
+:::::
