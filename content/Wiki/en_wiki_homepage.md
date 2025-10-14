@@ -1,6 +1,4 @@
-# Wiki
-
-# 🌍 GIS Training Resource Center — Wiki Overview
+# Wiki Overview
 
 Welcome to the **Wiki** section of the GIS Training Resource Center.
 
@@ -10,7 +8,7 @@ Here you will find short **technical** descriptions and **practical** guides on 
 
 ---
 
-## 🧭 Purpose of the Wiki
+## Purpose of the Wiki
 
 - Provide **quick-reference documentation** to support GIS learning and teaching
 - Serve as a **knowledge base** of best practices, common pitfalls, and frequently asked questions
@@ -22,11 +20,8 @@ Here you will find short **technical** descriptions and **practical** guides on 
 
 ## Wiki Topics
 
-<!-- 👇 You can add your card/grid layout here to organize wiki entries visually -->
-
-
 ::::{grid} 2
-:gutter: 2
+
 :::{grid-item-card}
 __[QGIS Basics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_qgis_basics_wiki.html):__
 
