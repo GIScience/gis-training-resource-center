@@ -4,7 +4,9 @@
 __🔙[Back to Homepage](/content/intro.md)__
 
 ## Manual selection
+
 - Select the features manually in the __attribute table__ by clicking on it.
+- Holding <kbd>Ctrl</kbd> while selecting features lets you select multiple features at once.
 
 :::{dropdown} Example: Manually select countries with the attribute table
 :open:
@@ -12,6 +14,9 @@ __🔙[Back to Homepage](/content/intro.md)__
 :::
 
 ## Select by expression
+
+The `Select by Expression` tool let's you build an expression to select features of a layer. For example, you can select specific attributes, or select features where 
+
 ### Comparison operators 
 - `>`, `<`, `=`, `!=`
 
@@ -21,6 +26,7 @@ __🔙[Back to Homepage](/content/intro.md)__
 :::
 
 ### Special operators
+
 - `LIKE`
 
 :::{dropdown} Example: Select all countries in Asia: `"continent" LIKE 'asia'`
@@ -38,6 +44,7 @@ __🔙[Back to Homepage](/content/intro.md)__
 :::
 
 ### Save selected features as a new file
+
 - `Layer-Properties` -> `Export` -> `Save only selected features`
 
 :::{dropdown} Example: Export selected features as a new file
@@ -45,8 +52,7 @@ __🔙[Back to Homepage](/content/intro.md)__
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_export_wiki.mp4"></video>
 :::
 
-## Further resources
-You can access information about logical operators in QGIS documentation through the [following link](https://docs.qgis.org/3.28/en/docs/user_manual/working_with_vector/attribute_table.html#selecting-features).
+
 
 ## Select by expression options
 
@@ -93,3 +99,7 @@ Operators such as AND, OR can be used to combine different queries or criteria
 :::
 
 ::::
+
+## Further resources
+
+You can access information about logical operators in QGIS documentation through the [following link](https://docs.qgis.org/3.28/en/docs/user_manual/working_with_vector/attribute_table.html#selecting-features).
