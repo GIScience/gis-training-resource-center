@@ -85,8 +85,8 @@ First, you need to check if the `Digitizing Toolbox` is activated. To do that
 <br>  
 
 The digitisation toolbar offers the basic tools to create, save, and edit features. However, for everything that 
-goes above just creating new features and deleting features, the Advanced Digitalization toolbar is needed (see {numref}`digitising_toolbar`). 
-The Advanced Digitalization toolbar allows you to move features, delete parts of features, and much more. All 
+goes above just creating new features and deleting features, the Advanced Digitization toolbar is needed (see {numref}`digitising_toolbar`). 
+The Advanced Digitization toolbar allows you to move features, delete parts of features, and much more. All 
 functions are listed in the two tables below.
 
 ```{figure} /fig/Toolbox.png
@@ -98,7 +98,7 @@ align: center
 Digitizing Toolbar in QGIS 3.36
 ```
 
-:::{dropdown} Digitalization Toolbar
+:::{dropdown} Digitisation Toolbar
 | Tool | Purpose | Tool | Purpose |
 |---|---|-----|---|
 | ![](/fig/mActionAllEdits.png) | Access to save, rollback or cancel changes in all or selected layers simultaneously | ![](/fig/mActionToggleEditing.png) | Turn on or off edit status of selected layer(s) based on the active layer status |
@@ -215,7 +215,7 @@ digitisation toolbar.
 4.	Left-click on the feature you want to digitise.
 5.	Once you click, a window will appear `[Your Layer Name]- Feature Attribute`. Here you can add the 
 information about this feature to the different columns, based on the attribute table of the layer.
-5.	Once you are done with digitalization ![](/fig/mActionSaveEdits.png) to save your edits.
+5.	Once you are done with digitisation ![](/fig/mActionSaveEdits.png) to save your edits.
 6.	Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
 
 :::{dropdown} Video: How to create point data
