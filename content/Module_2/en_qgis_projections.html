@@ -856,12 +856,97 @@ Video: How to change the CRS of a raster layer<div class="sd-summary-down docuti
 <p>Take a moment to test what you’ve learned in this chapter by answering the questions below:</p>
 <ol class="arabic simple">
 <li><p><strong>Why is a map projection needed when visualizing the Earth in 2D? What distortions are inevitable when you project a spherical surface to a plane?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">Because the Earth (or more precisely the reference ellipsoid) is a three‑dimensional curved surface, you cannot represent it perfectly on a flat (2D) map without distortion. The process of “projecting” transforms the curved surface into a plane.</p></li>
+<li><p class="sd-card-text">Any projection necessarily distorts at least one of: angles (directions), areas (relative sizes), or distances (scales). You can often preserve one or two properties well, but not all simultaneously.</p></li>
+<li><p class="sd-card-text">For example, the Mercator projection preserves angles (so shapes are locally correct), which is useful for navigation, but severely distorts areas (especially towards the poles).</p></li>
+<li><p class="sd-card-text">Another example: equidistant projections preserve distances along particular lines (meridians or standard parallels), but distort shape or area in other parts</p></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="2">
 <li><p><strong>Explain the difference between a Geographic CRS and a Projected (or Metric) CRS. What are their advantages and disadvantages?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">A Geographic CRS (Coordinate Reference System) uses an ellipsoidal (or spherical) model of the Earth and expresses locations via angular coordinates (latitude, longitude) — generally in degrees.</p>
+<ul>
+<li><p class="sd-card-text">Advantages: It naturally reflects the Earth’s curvature; it works globally (you can locate anywhere on the globe). Many global datasets, GPS systems, and maps are inherently in geographic (lat/long) form, so it provides compatibility.</p></li>
+<li><p class="sd-card-text">Disadvantages: Because latitude/longitude are angular, converting them to linear measures (meters, kilometers) is non‑uniform. Distances, areas, and shapes can be distorted, especially away from the equator. You can’t reliably measure Euclidean distances or areas without first projecting</p></li>
+</ul>
+</li>
+<li><p class="sd-card-text">A Projected (Metric) CRS transforms the Earth’s surface (or part of it) into a two‑dimensional plane, with linear units (metres, feet, etc.). The projection “flattens” the surface.</p>
+<ul>
+<li><p class="sd-card-text">Advantages: Because the data are in a planar metric space, you can compute distances, areas, and angles more directly and with less distortion (within the projection’s intended extent). It’s better for most spatial analyses (buffering, measuring) when the area is limited.</p></li>
+<li><p class="sd-card-text">Disadvantages: Each projected CRS is usually optimized for a particular region or zone. Outside that region, distortion increases (in shape, scale, or area). A single projection cannot serve uniformly well over the entire globe. Also, projections may introduce distortions in directions or area even within their domain.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="3">
 <li><p><strong>Why is it important to choose a CRS appropriate to your area of interest (local vs global)? What problems may arise if you apply a local CRS to global data (or vice versa)?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">Because every projection is optimized to reduce distortion in some aspect (area, distance, shape) over a particular spatial extent (region). For a local area, a local or regionally tuned CRS will minimize distortion and allow more accurate measurements</p></li>
+<li><p class="sd-card-text">If you apply a local CRS (meant for a small area) to global data, distortions become extreme outside the intended region. Features may be skewed, stretched, or mislocated, and distance/area computations will be highly inaccurate in regions far from the projection’s optimal zone.</p></li>
+<li><p class="sd-card-text">Conversely, using a global projection (e.g. a world Mercator) for a local region may not exploit the possibility of reducing distortion, and may even yield worse local accuracy than a more specialized projection. Also, global projections often distort large areas—so local detail may suffer.</p></li>
+<li><p class="sd-card-text">In summary: applying a mismatched CRS leads to inconsistencies, misalignment of layers, errors in measurements, and misleading spatial relationships.</p></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="4">
 <li><p><strong>What is an EPSG code, and how is it useful in selecting or referring to a CRS?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">EPSG stands for the European Petroleum Survey Group, which maintains a registry (database) of coordinate reference systems and projections.</p></li>
+<li><p class="sd-card-text">An EPSG code is a numeric identifier (e.g. EPSG:4326) assigned to a particular CRS.</p></li>
+<li><p class="sd-card-text">It is useful because it provides a standardized, unambiguous way to refer to a CRS across GIS software and datasets. Rather than relying solely on possibly ambiguous names, the EPSG code ensures that the exact CRS (ellipsoid, projection parameters, units) is identified.</p></li>
+<li><p class="sd-card-text">When selecting a CRS in QGIS or other GIS tools, you often search by EPSG code or filter by region. The <a class="reference external" href="http://EPSG.io">EPSG.io</a> website is a useful resource to look up CRS codes appropriate for your region.</p></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="5">
 <li><p><strong>How do you reproject (change the CRS) of a vector layer in QGIS?</strong></p></li>
 </ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ol class="arabic simple">
+<li><p class="sd-card-text">In the top bar, navigate to the <code class="docutils literal notranslate"><span class="pre">Vector</span></code> menu → <code class="docutils literal notranslate"><span class="pre">Data</span> <span class="pre">Management</span> <span class="pre">Tools</span></code> → <code class="docutils literal notranslate"><span class="pre">Reproject</span> <span class="pre">Layer</span></code></p></li>
+<li><p class="sd-card-text">In the parameters window, select the target CRS (by searching the EPSG code or name)</p></li>
+<li><p class="sd-card-text">Click <code class="docutils literal notranslate"><span class="pre">Run</span></code>. A new layer called <code class="docutils literal notranslate"><span class="pre">Reprojected</span></code> will be added to the map canvas</p></li>
+</ol>
 </div>
+</details></div>
 </section>
 <section id="further-resources">
 <h2><span class="section-number">2.2.4. </span>Further resources<a class="headerlink" href="#further-resources" title="Permalink to this heading">#</a></h2>
