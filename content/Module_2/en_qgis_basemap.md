@@ -116,7 +116,27 @@ When you are using QuickMapServices, be aware that some of these maps are under 
 Check whether you know the key concepts from this chapter by answering the questions below.
 
 1. __What is a basemap, and why is it useful in GIS projects?__
+:::{dropdown}
+A basemap is a foundational or background map layer that provides geographic context (e.g. roads, rivers, terrain, satellite imagery, administrative boundaries) over which you overlay your thematic or analytical data. It is useful because it helps users orient themselves geographically, provides visual reference and spatial context (for example, seeing how your data sit relative to roads, cities, water bodies), and speeds up setting and delivering projects and maps.
+:::
+
 2. __How do you add a basemap to QGIS? Describe at least one method (plugin, XYZ tiles, etc.).__
+
+:::{dropdown} Answer
+- In the `Browser`-panel, expand the "*XYZ Tiles*" group and select a service such as OpenStreetMap.
+- Alternatively, [install the QuickMapServices plugin](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_basemap.html#quickmapservices) and use it to add a map.
+:::
+
 3. __What are attribution requirements, and how should you handle them when using basemaps from third‑party providers?__
+
+:::{dropdown} Answer
+- __Attribution requirements__ are obligations set by the data provider or map service regarding how you must credit (acknowledge) their work when you use their basemaps. This may include displaying a copyright notice, data source name, or logo on your map or in your project.
+- Many basemap or satellite imagery services are under copyright or restrictive licenses, meaning you cannot freely reproduce or publish maps using them without following the licensing rules.
+- To handle attribution properly: 
+   - Check the terms of service or license of the basemap provider before using their tiles.
+   - Include the required attribution somewhere visible on your map.
+For example, when using OpenStreeMap basemaps, make sure you include the attribution "© OpenStreetMap contributors" somewhere on your map. If that is done, you can freely distribute and publish the map. 
+:::
+
 
 ::::
