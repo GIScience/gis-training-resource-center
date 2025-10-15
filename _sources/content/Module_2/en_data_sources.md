@@ -301,8 +301,47 @@ Downloading data from HOT Export Tool.
 Take a moment to recapitulate what you've learned in this chapter by answering the questions below:
 
 1. __What criteria should you check when selecting geodata for a project? (e.g. source trustworthiness, size / resolution, format, date, license)__
+
+:::{dropdown} Answer
+- __Source/Trustworthiness__: Use data from reputable organizations, trusted platforms, or sources known for good quality. Check who published the data, how it was validated, and how often it is used.
+- __Data size, resolution and scale__: Make sure the spatial resolution (or detail) meets your project’s needs. Don’t pick overly coarse or overly fine data unnecessarily (which might slow processing).
+- __Format__: Some formats may be easier to use / more compatible (e.g. GeoPackage, shapefile, GeoJSON). Choose a format that is practical for your tools and sharing.
+- __Date/timeliness__: When was the data collected? You want data whose timeframe matches your project requirements. Older data may no longer reflect current conditions. 
+- __License/usage rights__: You need to check how the data can be used, shared, and whether attribution is required. The license may restrict commercial use or derivative works.
+:::
+
 2. __Why is the “data license” an important consideration when using geodata?__
+
+:::{dropdown} Answer
+- The data license dictates what you are legally allowed to do with the data: whether you can use it freely, modify it, share it, or publish derivatives.
+- Ignoring license terms can lead to legal or ethical issues (e.g. violating copyright, failing to give required attribution) or prevent you from distributing your results.
+- Some licenses are restrictive (non‑commercial only, no derivatives, or require share-alike), so you have to ensure your intended use complies with those terms.
+
+:::
+
 3. __How does the date of data capture affect its usefulness? Give an example of when older data might mislead your analysis.__
+
+:::{dropdown} Answer
+- The date matters because landscapes, infrastructure, land use, population, etc. can change over time. If data is outdated, it might no longer reflect reality.
+- Using older data may mislead your analysis if conditions have changed:
+   - For example: Suppose you use road network data from 10 years ago to model shortest paths or accessibility today. If many new roads have been built or some roads have been closed, your routing or accessibility analysis would be incorrect.
+   - Or, using land cover data from many years back: an area once forested may now be urbanized, so interpreting habitat or deforestation trends would be misleading.
+- Thus, alignment of data capture date with study period is important.
+
+:::
+
 4. __What might be the challenges when integrating data from different sources (e.g. up-to-dateness, different projections, formats, coverage, or metadata completeness)?__
+
+:::{dropdown} Answer
+When combining datasets from different sources, challenges include:
+- __Different timeliness/currency__: One dataset might be recent, another old. This mismatch can lead to misleading comparisons.
+- __Different projections/coordinate systems__: Datasets may use different Coordinate Reference Systems, so you have to reproject them to a common CRS.
+- __Coverage mismatches__: One dataset might cover only part of your area of interest or have gaps.
+- __Metadata completeness/quality__: One dataset may lack metadata (e.g. no date, no documentation of how data was collected), making it hard to assess quality or compatibility.
+- __Attribute schema differences__: Differences in attribute naming, units, field types, classifications can complicate merging or comparison. For example, slight differences in the name of a feature (e.g. a district or state) can make joining two dataset a lot more difficult, as it will have to be adjusted manually. 
+
+When performing an analysis, make sure to be transparent about the challenges or shortcomings of the different datasets. This will ensure that the decision-making process is informed better and also ensure the reproducibility and adaptability of your analysis.
+:::
+
 
 ::::
