@@ -136,10 +136,44 @@ Good documentation turns your QGIS project from a black box into a transparent, 
 Take a moment to test what you've learned in this chapter by answering the questions below:
 
 1. __Where are the layers loaded into a QGIS project saved? What implications does this have when moving or renaming files?__
+
+:::{dropdown} Answer
+- Layers loaded into a QGIS project are not embedded into the .qgz project file — they are linked via file paths to the original data sources.
+- This means that if you move, rename, or delete a source file after adding it to the project, QGIS will not be able to find it, and the layer will appear broken or missing.
+- To avoid this, maintain a consistent folder structure and avoid changing file locations once the project is set up — or update the file paths if you do.
+:::
+
 2. __When editing geodata in QGIS, why is it recommended to make a copy first?__
+
+:::{dropdown} Answer
+- Because QGIS edits the original data file directly, there is no built-in undo or automatic backup once changes are saved.
+- If you make a mistake during editing, you can’t easily revert it.
+- Creating a copy of the dataset before editing preserves the original data and gives you a fallback in case anything goes wrong.
+:::
+
 3. __What are two principal advantages of using a standardized folder structure for GIS projects and data?__
+
+:::{dropdown} Answer
+1. __Portability:__ If the entire project folder (including data subfolders) is moved to a new computer or drive, the QGIS project can still find its data as long as relative paths are used.
+2. __Organization & consistency__: A clear, consistent structure helps avoid misplaced files, makes the project easier to navigate, and ensures others can understand and work with your project more easily.
+:::
+
 4. __Describe at least three good practices for naming geodata / layers.__
+
+:::{dropdown} Answer
+1. Avoid special characters and spaces in file names — use underscores `_` instead (e.g., `land_cover_2020.shp`).
+2. Use descriptive names that indicate the content of the layer (e.g., `population_density_europe` instead of just `data1`).
+3. Indicate processing steps in the name if the layer has been modified (e.g., `rivers_clipped`, `buildings_buffered_500m`) to make your workflow transparent and reproducible.
+:::
+
 5. __If you move the entire project folder (with its subfolders and data) to a different computer, under what conditions will the QGIS project still work without broken paths?__
+
+:::{dropdown} Answer
+- The project will still work if:
+   - all of the files used in the project __are contained inside the project folder__.
+   - You do not use plugins or resources that are not available on the different computer
+- If any files were loaded using absolute paths (e.g., from a location outside the project folder), those paths will likely break after moving to a new machine.
+:::
 
 
 ::::

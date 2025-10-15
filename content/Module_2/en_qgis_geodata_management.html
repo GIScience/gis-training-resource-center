@@ -721,12 +721,88 @@ Good documentation turns your QGIS project from a black box into a transparent, 
 <p>Take a moment to test what you’ve learned in this chapter by answering the questions below:</p>
 <ol class="arabic simple">
 <li><p><strong>Where are the layers loaded into a QGIS project saved? What implications does this have when moving or renaming files?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">Layers loaded into a QGIS project are not embedded into the .qgz project file — they are linked via file paths to the original data sources.</p></li>
+<li><p class="sd-card-text">This means that if you move, rename, or delete a source file after adding it to the project, QGIS will not be able to find it, and the layer will appear broken or missing.</p></li>
+<li><p class="sd-card-text">To avoid this, maintain a consistent folder structure and avoid changing file locations once the project is set up — or update the file paths if you do.</p></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="2">
 <li><p><strong>When editing geodata in QGIS, why is it recommended to make a copy first?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">Because QGIS edits the original data file directly, there is no built-in undo or automatic backup once changes are saved.</p></li>
+<li><p class="sd-card-text">If you make a mistake during editing, you can’t easily revert it.</p></li>
+<li><p class="sd-card-text">Creating a copy of the dataset before editing preserves the original data and gives you a fallback in case anything goes wrong.</p></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="3">
 <li><p><strong>What are two principal advantages of using a standardized folder structure for GIS projects and data?</strong></p></li>
-<li><p><strong>Describe at least three good practices for naming geodata / layers.</strong></p></li>
-<li><p><strong>If you move the entire project folder (with its subfolders and data) to a different computer, under what conditions will the QGIS project still work without broken paths?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ol class="arabic simple">
+<li><p class="sd-card-text"><strong>Portability:</strong> If the entire project folder (including data subfolders) is moved to a new computer or drive, the QGIS project can still find its data as long as relative paths are used.</p></li>
+<li><p class="sd-card-text"><strong>Organization &amp; consistency</strong>: A clear, consistent structure helps avoid misplaced files, makes the project easier to navigate, and ensures others can understand and work with your project more easily.</p></li>
 </ol>
 </div>
+</details><ol class="arabic simple" start="4">
+<li><p><strong>Describe at least three good practices for naming geodata / layers.</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ol class="arabic simple">
+<li><p class="sd-card-text">Avoid special characters and spaces in file names — use underscores <code class="docutils literal notranslate"><span class="pre">_</span></code> instead (e.g., <code class="docutils literal notranslate"><span class="pre">land_cover_2020.shp</span></code>).</p></li>
+<li><p class="sd-card-text">Use descriptive names that indicate the content of the layer (e.g., <code class="docutils literal notranslate"><span class="pre">population_density_europe</span></code> instead of just <code class="docutils literal notranslate"><span class="pre">data1</span></code>).</p></li>
+<li><p class="sd-card-text">Indicate processing steps in the name if the layer has been modified (e.g., <code class="docutils literal notranslate"><span class="pre">rivers_clipped</span></code>, <code class="docutils literal notranslate"><span class="pre">buildings_buffered_500m</span></code>) to make your workflow transparent and reproducible.</p></li>
+</ol>
+</div>
+</details><ol class="arabic simple" start="5">
+<li><p><strong>If you move the entire project folder (with its subfolders and data) to a different computer, under what conditions will the QGIS project still work without broken paths?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">The project will still work if:</p>
+<ul>
+<li><p class="sd-card-text">all of the files used in the project <strong>are contained inside the project folder</strong>.</p></li>
+<li><p class="sd-card-text">You do not use plugins or resources that are not available on the different computer</p></li>
+</ul>
+</li>
+<li><p class="sd-card-text">If any files were loaded using absolute paths (e.g., from a location outside the project folder), those paths will likely break after moving to a new machine.</p></li>
+</ul>
+</div>
+</details></div>
 </section>
 </section>
 
