@@ -233,16 +233,52 @@ If you are unsure which format is most appropriate, check out the [geodata types
 
 ## Self-Assessment Questions
 
-::::{admonition} Check your knowledge
+::::{admonition} Test your knowledge
 :class: note
 
 Check whether you know the key concepts from this chapter by answering the questions below.
 
 1. __What is the attribute table in a vector layer, and how is it structured?__
+
+:::{dropdown} Answer
+The attribute table is a tabular representation of the non‑spatial (or descriptive) data for a vector layer. Each row corresponds to one feature (point, line, polygon) in the layer. Each column (also called a field or attribute) stores one attribute/property (e.g. name, population, type) for every feature.
+:::
+
 2. __How can you open the attribute table in QGIS?__
+
+:::{dropdown} Answer
+- In QGIS, right‑click on the layer in the Layers Panel and choose Open Attribute Table.
+- Alternatively, you can use the Attribute Table button ![](/fig/qgis_open_attribute_table.png) in the toolbar.
+:::
+
 3. __How do you zoom to a specific feature using the attribute table?__
+
+:::{dropdown} Answer
+- Within the attribute table, you can right‑click on a feature’s row (or in a cell) and choose “Zoom to Feature”. That changes the map view to focus on that feature.
+:::
+
 4. __Describe how to manually select features via the attribute table, and how to show only selected or unselected features.__
+
+:::{dropdown} Answer
+__Manually selecting features:__
+- Clicking on a row header of an individual feature in the attribute table selects the feature. It will be highlighted in blue.
+- To select multiple features, hold <kbd>Ctrl</kbd> or <kbd>Cmd on MacOS and click on additional row headers to add more features to the selection.
+- Holding <kbd>Shift</kbd> let's you select a range of features. 
+__Showing only selected or unselected features:__
+- At the bottom left of the attribute table dialog, there is a drop‑down menu (filter) that lets you switch between:
+  - __Show All Features__
+  - __Show Selected Features__
+  - __Show Unselected Features__
+  - Other filters: Show features visible in map, Show edited and new features, etc. 
+- You can also use the ![](/fig/qgis_3.40_move_selection_to_top.png) `Move selected features to the top`-button in the attribute table toolbar
+:::
+
 5. __Once you have selected a subset of features, how do you save just those features into a new layer (or file)?__
 
+:::{dropdown} Answer
+1. <kbd>Right-click</kbd> on the layer where you selected the features.
+2. Select `Export` → `Save Selected Features as...`. A new window will open. 
+3. Choose the data format, specify the save location and file name by clicking on the ![](/fig/Three_points.png)
+4. Click `Ok`.
 ::::
 
