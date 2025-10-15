@@ -264,10 +264,54 @@ getting the CRS right --->
 Take a moment to test what you've learned in this chapter by answering the questions below:
 
 1. __Why is a map projection needed when visualizing the Earth in 2D? What distortions are inevitable when you project a spherical surface to a plane?__
+
+:::{dropdown} Answer
+- Because the Earth (or more precisely the reference ellipsoid) is a three‑dimensional curved surface, you cannot represent it perfectly on a flat (2D) map without distortion. The process of “projecting” transforms the curved surface into a plane.
+- Any projection necessarily distorts at least one of: angles (directions), areas (relative sizes), or distances (scales). You can often preserve one or two properties well, but not all simultaneously.
+- For example, the Mercator projection preserves angles (so shapes are locally correct), which is useful for navigation, but severely distorts areas (especially towards the poles).
+- Another example: equidistant projections preserve distances along particular lines (meridians or standard parallels), but distort shape or area in other parts
+:::
+
 2. __Explain the difference between a Geographic CRS and a Projected (or Metric) CRS. What are their advantages and disadvantages?__
+:::{dropdown} Answer
+- A Geographic CRS (Coordinate Reference System) uses an ellipsoidal (or spherical) model of the Earth and expresses locations via angular coordinates (latitude, longitude) — generally in degrees.
+   - Advantages: It naturally reflects the Earth’s curvature; it works globally (you can locate anywhere on the globe). Many global datasets, GPS systems, and maps are inherently in geographic (lat/long) form, so it provides compatibility.
+   - Disadvantages: Because latitude/longitude are angular, converting them to linear measures (meters, kilometers) is non‑uniform. Distances, areas, and shapes can be distorted, especially away from the equator. You can’t reliably measure Euclidean distances or areas without first projecting
+- A Projected (Metric) CRS transforms the Earth’s surface (or part of it) into a two‑dimensional plane, with linear units (metres, feet, etc.). The projection “flattens” the surface.
+   - Advantages: Because the data are in a planar metric space, you can compute distances, areas, and angles more directly and with less distortion (within the projection’s intended extent). It’s better for most spatial analyses (buffering, measuring) when the area is limited.
+   - Disadvantages: Each projected CRS is usually optimized for a particular region or zone. Outside that region, distortion increases (in shape, scale, or area). A single projection cannot serve uniformly well over the entire globe. Also, projections may introduce distortions in directions or area even within their domain.
+
+:::
+
 3. __Why is it important to choose a CRS appropriate to your area of interest (local vs global)? What problems may arise if you apply a local CRS to global data (or vice versa)?__
+
+:::{dropdown} Answer
+- Because every projection is optimized to reduce distortion in some aspect (area, distance, shape) over a particular spatial extent (region). For a local area, a local or regionally tuned CRS will minimize distortion and allow more accurate measurements
+- If you apply a local CRS (meant for a small area) to global data, distortions become extreme outside the intended region. Features may be skewed, stretched, or mislocated, and distance/area computations will be highly inaccurate in regions far from the projection’s optimal zone.
+- Conversely, using a global projection (e.g. a world Mercator) for a local region may not exploit the possibility of reducing distortion, and may even yield worse local accuracy than a more specialized projection. Also, global projections often distort large areas—so local detail may suffer.
+- In summary: applying a mismatched CRS leads to inconsistencies, misalignment of layers, errors in measurements, and misleading spatial relationships.
+
+:::
+
 4. __What is an EPSG code, and how is it useful in selecting or referring to a CRS?__
+
+:::{dropdown} Answer
+- EPSG stands for the European Petroleum Survey Group, which maintains a registry (database) of coordinate reference systems and projections.
+- An EPSG code is a numeric identifier (e.g. EPSG:4326) assigned to a particular CRS.
+- It is useful because it provides a standardized, unambiguous way to refer to a CRS across GIS software and datasets. Rather than relying solely on possibly ambiguous names, the EPSG code ensures that the exact CRS (ellipsoid, projection parameters, units) is identified.
+- When selecting a CRS in QGIS or other GIS tools, you often search by EPSG code or filter by region. The EPSG.io website is a useful resource to look up CRS codes appropriate for your region.
+
+:::
+
 5. __How do you reproject (change the CRS) of a vector layer in QGIS?__
+
+:::{dropdown} Answer
+
+1. In the top bar, navigate to the `Vector` menu → `Data Management Tools` → `Reproject Layer`
+2. In the parameters window, select the target CRS (by searching the EPSG code or name)
+3. Click `Run`. A new layer called `Reprojected` will be added to the map canvas
+
+:::
 
 
 ::::
