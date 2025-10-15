@@ -201,7 +201,7 @@ Now we are able to see the underlying layers. We can also check the accuracy of 
 
 Now that we have the map georeferenced, we can use it as a background layer to digitise vector features, such as a polygon indicating a region where the soil degradation is severe.
 
-21. Create a new shapefile layer (see [digitisation](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_digitalisation.html#creating-new-datasets)). Click on `Layer` > `Create Layer` > `Create new Shapefile Layer` (You can also choose to create a new Geopackage Layer).
+21. Create a new shapefile layer (see [digitisation](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_digitisation.html#creating-new-datasets)). Click on `Layer` > `Create Layer` > `Create new Shapefile Layer` (You can also choose to create a new Geopackage Layer).
 22. A new dialogue window will open. First, we need to specify the save location of the new dataset. 
     1. Click on ![](/fig/3.36_three_dots.png) to the right of the `File Name`-field. 
     2. Navigate to the data output folder (`Module_3_Exercise_7_Georeferencing/data/output`).

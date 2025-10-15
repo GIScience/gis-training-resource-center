@@ -112,12 +112,12 @@ Keep in mind that you don't need to follow the module structure. It is there to 
         Geodata selection and queries  
         Geodata classification  
     - 
-        [Exercise 1: Access to financial institutions](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_digitalisation_ex.html)  
+        [Exercise 1: Access to financial institutions](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_digitisation_ex.html)  
         [Exercise 2: Overview map of the prevalence of stunting in Sierra Leone](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_classification_exe.html)  
         Big Exercise: 
         [Exercise 3: Nigeria Floods](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex4.html)  
     - 
-        [Digitization](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html)  
+        [Digitization](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitisation_wiki.html)  
         [Geodata classification](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_data_classification_wiki.html)  
         [Spatial and non-spatial queries](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_queries_wiki.html) 
 *   - __Module 4: Representation__

@@ -55,7 +55,7 @@ __Relevant Wiki Articles__:
 * [Table function - Add field](/content/Wiki/en_qgis_table_functions_wiki.md)
 * [Geodata Classification- Categorized](/content/Wiki/en_qgis_categorized_wiki.md)
 * [Geodata Classification- Graduated](/content/Wiki/en_qgis_graduated_wiki.md)
-* [Digitization- Point data](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#add-geometries-to-a-layer)
+* [Digitization- Point data](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitisation_wiki.html#add-geometries-to-a-layer)
 
 :::
 
@@ -174,7 +174,7 @@ align: center
     * In the panel, you can search for places on the OpenStreetMap by typing the name of the place in the search bar. Often it makes sense to add additional information like the name of the country. For example, try “Laujeri Bulama, Nigeria”.
 
 10. Now we have all our tools in place. In the next step, we create a new point vector layer from scratch to digitise the location of the affected communities. 
-    * Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#create-a-new-layer)) 
+    * Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki Video](/content/Wiki/en_qgis_digitisation_wiki.md#create-a-new-layer)) 
     - Under `Database` click on ![](/fig/Three_points.png) and navigate to `temp` folder. Give the new dataset the name “Borno_affected_communities_point”. Click `Save`.
     * `Geometry type`: Select `Point`
     - Under `Additional dimension` you should always make sure that you check `None`. 
@@ -194,7 +194,7 @@ align: center
 ---
 ```
 
-11. Currently the new “Borno_affected_communities_point” is empty. To add features we can use the `Digitizing Toolbar`. If you cannot see the toolbar, use `View` -> `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#creation-of-point-data)).  ![](/fig/Digitizing_Toolbar.png) 
+11. Currently the new “Borno_affected_communities_point” is empty. To add features we can use the `Digitizing Toolbar`. If you cannot see the toolbar, use `View` -> `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](/content/Wiki/en_qgis_digitisation_wiki.md#creation-of-point-data)).  ![](/fig/Digitizing_Toolbar.png) 
     * Select the point layer “Borno_affected_communities_point” in the Layer panel. Go to the digitisation toolbar and click on![](/fig/mActionToggleEditing.png). Now the layer is in the editing mode .
     * Search an affected community based on the table “Nigeria_flood_2022_affacted_population”. Once you have found one, click on ![](/fig/mActionCapturePoint.png). Left-click on the feature you want to digitise.
     * Once you click, a window will appear ` Borno_affected_communities_point Feature Attribute`. Here you can add the name of the location.

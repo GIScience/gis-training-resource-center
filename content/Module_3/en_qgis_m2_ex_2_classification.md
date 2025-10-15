@@ -61,7 +61,7 @@ __Relevant Wiki Articles__:
 * [Table function - Add field](/content/Wiki/en_qgis_table_functions_wiki.md)
 * [Geodata Classification- Categorized](/content/Wiki/en_qgis_categorized_wiki.md)
 * [Geodata Classification- Graduated](/content/Wiki/en_qgis_graduated_wiki.md)
-* [Digitization- Point data](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#add-geometries-to-a-layer)
+* [Digitization- Point data](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitisation_wiki.html#add-geometries-to-a-layer)
 
 :::
 
@@ -142,7 +142,7 @@ align: center
 OSM place search.
 ```
 
-Add the airports of Bo and Kenema as points to the layer `Sierra_Leone_airports`. Find help on the addition of features to a point layer [here](/content/Wiki/en_qgis_digitalization_wiki.md). 
+Add the airports of Bo and Kenema as points to the layer `Sierra_Leone_airports`. Find help on the addition of features to a point layer [here](/content/Wiki/en_qgis_digitisation_wiki.md). 
  
 
 8. *Optional:* In the attribute table, create a new column `Runway_length` and add the length of the runways of Bo and Kenema by measuring them approximately with the measuring tool ![](/fig/measuring_tool_icon.png).

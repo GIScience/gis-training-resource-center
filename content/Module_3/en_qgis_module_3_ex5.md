@@ -52,7 +52,7 @@ __Relevant wiki articles and module chapters__
 * [Geodata Classification - Graduated](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html)
 * [Spatial Queries](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_queries_wiki.html)
 * [Table function - Add field](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#add-field)
-* [Digitisation- Point data](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#add-geometries-to-a-layer)
+* [Digitisation- Point data](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitisation_wiki.html#add-geometries-to-a-layer)
 :::
 ::::
 
@@ -453,7 +453,7 @@ There are methods to automate the digitisation process which will be covered in 
 ::::
 
 3. Finally, we want to visualise the roads that are flooded. To simplify the process, we will manually search for the roads intersecting with the flood extent layer and mark them with points. For this purpose, we will create a new point dataset representing the blocked roads. 
-    * Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#create-a-new-layer)) 
+    * Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitisation_wiki.html#create-a-new-layer)) 
     - Under `Database` click on ![](/fig/Three_points.png) and navigate to `temp` folder. Give the new dataset the name __“PAK_flood_2024_blocked_road”__. Click `Save`.
     - `Geometry type`: Select `Point`
     - Under `Additional dimension` you should always make sure that you check `None`. 
@@ -476,11 +476,11 @@ There are methods to automate the digitisation process which will be covered in 
 
 ::::{margin}
 :::{tip}
-If you cannot see the toolbar, click on the tab `View` -> `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#creation-of-point-data)).
+If you cannot see the toolbar, click on the tab `View` -> `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitisation_wiki.html#creation-of-point-data)).
 :::
 ::::
 
-4. Now you can create a point for each place where the flood layer covers the main roads leading out of Larkana ([Wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#creation-of-point-data)). 
+4. Now you can create a point for each place where the flood layer covers the main roads leading out of Larkana ([Wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitisation_wiki.html#creation-of-point-data)). 
     * Currently the new layer __“PAK_flood_2024_blocked_road”__ is empty. To add features we can use the `Digitizing Toolbar`.  ![](/fig/Digitizing_Toolbar.png) 
     * Activate the editing mode by clicking on ![](/fig/mActionToggleEditing.png). Next, activate the option to add new points by clicking on ![](/fig/mActionCapturePoint.png) `Add Point Feature` .
     * Look out for places where the flood layer covers the main roads or bridges leading out of Larkana. Once you have found one, left-click on the location you want to digitise.
