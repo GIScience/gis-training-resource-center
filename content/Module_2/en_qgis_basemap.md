@@ -116,7 +116,8 @@ When you are using QuickMapServices, be aware that some of these maps are under 
 Check whether you know the key concepts from this chapter by answering the questions below.
 
 1. __What is a basemap, and why is it useful in GIS projects?__
-:::{dropdown}
+
+:::{dropdown} Answer
 A basemap is a foundational or background map layer that provides geographic context (e.g. roads, rivers, terrain, satellite imagery, administrative boundaries) over which you overlay your thematic or analytical data. It is useful because it helps users orient themselves geographically, provides visual reference and spatial context (for example, seeing how your data sit relative to roads, cities, water bodies), and speeds up setting and delivering projects and maps.
 :::
 
