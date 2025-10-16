@@ -152,6 +152,24 @@ Avoid QGIS Bug, Dock the georef window,...?-->
 :class: note 
 
 1. __What is georeferencing, and why is it important?__
+
+:::{dropdown} Answer
+- Georeferencing is the process of assigning real‑world spatial coordinates (in a known coordinate reference system) to an image (e.g. aerial photograph, scanned map) so that it aligns correctly with geographic (vector or raster) data.
+- This lets you overlay, compare, measure, and analyze that image together with other GIS data. Without georeferencing, the image “floats” with no spatial context.
+- It ensures spatial accuracy, integration, and consistency across datasets, and enables meaningful spatial analysis and map production.
+:::
+
 2. __What are Ground Control Points (GCPs)? Why is it important to distribute them evenly across the image?__
+
+:::{dropdown} Answer
+- Ground Control Points (GCPs) are specific points in the image for which the real-world coordinates are known (i.e. you can identify the same point both in the raster and in a reference map or vector layer).
+- In georeferencing, you collect pairs of image coordinates and ground coordinates at these control points, and from them derive the transformation that maps the entire image into the coordinate system.
+
+__Why distribute them evenly?__
+- If all GCPs cluster in one area, the transformation may be more accurate locally there but very distorted elsewhere.
+- Even distribution (across corners, edges, center) helps constrain distortions across the full image extent and produces a more stable, balanced warp.
+- It reduces extrapolation errors and ensures that all parts of the image are controlled.
+:::
+
 
 ::::

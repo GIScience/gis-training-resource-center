@@ -727,9 +727,42 @@ Avoid QGIS Bug, Dock the georef window,...?-->
 <p class="admonition-title">Test your knowledge</p>
 <ol class="arabic simple">
 <li><p><strong>What is georeferencing, and why is it important?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">Georeferencing is the process of assigning real‑world spatial coordinates (in a known coordinate reference system) to an image (e.g. aerial photograph, scanned map) so that it aligns correctly with geographic (vector or raster) data.</p></li>
+<li><p class="sd-card-text">This lets you overlay, compare, measure, and analyze that image together with other GIS data. Without georeferencing, the image “floats” with no spatial context.</p></li>
+<li><p class="sd-card-text">It ensures spatial accuracy, integration, and consistency across datasets, and enables meaningful spatial analysis and map production.</p></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="2">
 <li><p><strong>What are Ground Control Points (GCPs)? Why is it important to distribute them evenly across the image?</strong></p></li>
 </ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">Ground Control Points (GCPs) are specific points in the image for which the real-world coordinates are known (i.e. you can identify the same point both in the raster and in a reference map or vector layer).</p></li>
+<li><p class="sd-card-text">In georeferencing, you collect pairs of image coordinates and ground coordinates at these control points, and from them derive the transformation that maps the entire image into the coordinate system.</p></li>
+</ul>
+<p class="sd-card-text"><strong>Why distribute them evenly?</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">If all GCPs cluster in one area, the transformation may be more accurate locally there but very distorted elsewhere.</p></li>
+<li><p class="sd-card-text">Even distribution (across corners, edges, center) helps constrain distortions across the full image extent and produces a more stable, balanced warp.</p></li>
+<li><p class="sd-card-text">It reduces extrapolation errors and ensures that all parts of the image are controlled.</p></li>
+</ul>
 </div>
+</details></div>
 </section>
 </section>
 
