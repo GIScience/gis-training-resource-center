@@ -38,7 +38,7 @@ Sketch Map Tool workflow
 ## The Sketch Map Tool and its use in the EVCA
 
 The Enhanced Vulnerability and Capacity Assessment (EVCA) is a participatory process developed for communities to become more resilient through the assessment and analysis of the risks they face and the identification of actions to reduce these risks. The EVCA guidelines contains different tools in order to help National Societies to understand the dynamics of risk in a specific community. 
-In order to spatially assess and identify risk factors, the EVCA recommends to conduct a mapping activity throughout the process where community members jointly create a spatial map, hazard & exposure map and vulnerability & capacity map. Mapping is done with paper and pen and generally on blank paper. The Sketch Map Tool has great potential to support a sustainable participatory mapping process by digitalizing the process while, at the same time, keeping it simple.
+In order to spatially assess and identify risk factors, the EVCA recommends to conduct a mapping activity throughout the process where community members jointly create a spatial map, hazard & exposure map and vulnerability & capacity map. Mapping is done with paper and pen and generally on blank paper. The Sketch Map Tool has great potential to support a sustainable participatory mapping process by digitising the process while, at the same time, keeping it simple.
 
 ```{figure} /fig/IMG_2178.JPG
 ---
@@ -55,9 +55,9 @@ __For more information on the EVCA:__
 
 - [EVCA Guide](https://communityengagementhub.org/resource/evca-guide/)
 
-- [Sketch Map Tool for digitalization of community mapping in the EVCA process](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/EVCA-Sketch_Map_Tool_Updated_3_24.pptx): As part of the efforts to digitize the EVCA Process, we prepared a customized training package on the Sketch Map Tool for digitalization of community mapping, that can be used by trainers throughout the regional EVCA Training of Trainers workshops.
+- [Sketch Map Tool for digitisation of community mapping in the EVCA process](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/EVCA-Sketch_Map_Tool_Updated_3_24.pptx): As part of the efforts to digitize the EVCA Process, we prepared a customized training package on the Sketch Map Tool for digitisation of community mapping, that can be used by trainers throughout the regional EVCA Training of Trainers workshops.
 
-- [Digitalizing Paper-Based Community mapping in the EVCA](https://preparecenter.org/wp-content/uploads/2024/03/202403-Case-Study-DDR-in-Action-Columbia.pdf): Case Study on the SKetch Map Tool in action for Disaster Risk Reduction Activities in Colombia.
+- [Digitising Paper-Based Community mapping in the EVCA](https://preparecenter.org/wp-content/uploads/2024/03/202403-Case-Study-DDR-in-Action-Columbia.pdf): Case Study on the SKetch Map Tool in action for Disaster Risk Reduction Activities in Colombia.
 
 __For gaining experiences on the use of the Sketch Map Tool:__
 

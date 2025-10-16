@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Digitisation &#8212; GIS Resource Training Center</title>
+    <title>3.1. Digitisation &#8212; GIS Resource Training Center</title>
   
   
   
@@ -65,6 +65,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/Module_3/en_qgis_digitisation';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="3.2. Geodata Selection and Queries" href="en_qgis_data_queries.html" />
+    <link rel="prev" title="3. Basic GIS Operations" href="en_module_3_overview.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -173,7 +175,7 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Modules</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Module_1/en_module_1_overview.html">1. Introduction to GIS</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_theory.html">1.1. What is GIS?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_installation.html">1.2. Setting up</a></li>
@@ -191,11 +193,12 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_module_2_exercises.html">2.7. Exercises for Module 2</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="en_module_3_overview.html">3. Basic GIS Operations</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_data_queries.html">3.1. Geodata Selection and Queries</a></li>
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_data_classification.html">3.2. Geodata Classification</a></li>
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_georeferencing.html">3.3. Georeferencing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_module_3_exercises.html">3.4. Exercises for Module 3</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="en_module_3_overview.html">3. Basic GIS Operations</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">3.1. Digitisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_data_queries.html">3.2. Geodata Selection and Queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_data_classification.html">3.3. Geodata Classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_georeferencing.html">3.4. Georeferencing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_module_3_exercises.html">3.5. Exercises for Module 3</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Module_4/en_module_4_overview.html">4. Visualisation of Geodata and Map Making</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -561,23 +564,23 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#digitising-in-qgis">Digitising in QGIS</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#digitisation-toolbars">Digitisation toolbars</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#digitising-in-qgis">3.1.1. Digitising in QGIS</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#digitisation-toolbars">3.1.1.1. Digitisation toolbars</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-new-datasets">Creating new datasets</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-new-data-entries">Creating new data entries</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-point-data">Creating point data</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-line-and-polygon-layers">Creating line and polygon layers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-new-datasets">3.1.2. Creating new datasets</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-new-data-entries">3.1.2.1. Creating new data entries</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-point-data">3.1.2.2. Creating point data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-line-and-polygon-layers">3.1.2.3. Creating line and polygon layers</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#editing-the-data">Editing the Data</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#editing-geometries">Editing Geometries</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#editing-the-attribute-values">Editing the attribute values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#editing-the-data">3.1.3. Editing the Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#editing-geometries">3.1.3.1. Editing Geometries</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#editing-the-attribute-values">3.1.3.2. Editing the attribute values</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spatial-digitisation-errors-in-qgis">Spatial Digitisation Errors in QGIS</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#self-assessment-questions">Self-Assessment Questions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spatial-digitisation-errors-in-qgis">3.1.4. Spatial Digitisation Errors in QGIS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#self-assessment-questions">3.1.5. Self-Assessment Questions</a></li>
 </ul>
             </nav>
         </div>
@@ -601,7 +604,7 @@ document.write(`
 </div>
 </div>
 <section class="tex2jax_ignore mathjax_ignore" id="digitisation">
-<h1>Digitisation<a class="headerlink" href="#digitisation" title="Permalink to this heading">#</a></h1>
+<h1><span class="section-number">3.1. </span>Digitisation<a class="headerlink" href="#digitisation" title="Permalink to this heading">#</a></h1>
 <p>Digitisation is the process of converting geographic data from maps or images into a digital form commonly
 represented as vector data.
 Proficiency in digitisation stands as a cornerstone for GIS specialists. It empowers them to convert spatial
@@ -614,11 +617,11 @@ of interpreting images or paper maps.</p>
 <figure class="align-center" id="en-digitisation-concept">
 <a class="reference internal image-reference" href="../../_images/en_digitisation_concept.png"><img alt="../../_images/en_digitisation_concept.png" src="../../_images/en_digitisation_concept.png" style="width: 900px;" /></a>
 <figcaption>
-<p><span class="caption-text">The concept of digitisation within GIS (Source: HeiGIT).</span><a class="headerlink" href="#en-digitisation-concept" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 3.1 </span><span class="caption-text">The concept of digitisation within GIS (Source: HeiGIT).</span><a class="headerlink" href="#en-digitisation-concept" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <section id="digitising-in-qgis">
-<h2>Digitising in QGIS<a class="headerlink" href="#digitising-in-qgis" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">3.1.1. </span>Digitising in QGIS<a class="headerlink" href="#digitising-in-qgis" title="Permalink to this heading">#</a></h2>
 <p>In QGIS,digitisation involves tracing features such as points, lines, or polygons directly on the map canvas to
 represent geographic elements like buildings, roads, or land parcels. Additionally, you can assign attributes to each
 feature during digitization, enabling further analysis and integration with other geospatial data. This digitized data
@@ -643,11 +646,11 @@ To create the map, you will need to create new vector layers.</p>
 </div>
 </div>
 <section id="digitisation-toolbars">
-<h3>Digitisation toolbars<a class="headerlink" href="#digitisation-toolbars" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">3.1.1.1. </span>Digitisation toolbars<a class="headerlink" href="#digitisation-toolbars" title="Permalink to this heading">#</a></h3>
 <figure class="align-left" id="activate-digitising-toolbar">
 <a class="reference internal image-reference" href="../../_images/Activate_digitizing_toolbox.png"><img alt="../../_images/Activate_digitizing_toolbox.png" src="../../_images/Activate_digitizing_toolbox.png" style="width: 300px;" /></a>
 <figcaption>
-<p><span class="caption-text">The Digitisation Toolbar in QGIS 3.36.</span><a class="headerlink" href="#activate-digitising-toolbar" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 3.2 </span><span class="caption-text">The Digitisation Toolbar in QGIS 3.36.</span><a class="headerlink" href="#activate-digitising-toolbar" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Digitising is done with the <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code> and on the map canvas.
@@ -664,13 +667,13 @@ First, you need to check if the <code class="docutils literal notranslate"><span
 <br>  
 <br>  
 <p>The digitisation toolbar offers the basic tools to create, save, and edit features. However, for everything that
-goes above just creating new features and deleting features, the Advanced Digitization toolbar is needed (see <code class="xref std std-numref docutils literal notranslate"><span class="pre">digitising_toolbar</span></code>).
+goes above just creating new features and deleting features, the Advanced Digitization toolbar is needed (see <a class="reference internal" href="#digitising-toolbar"><span class="std std-numref">Fig. 3.3</span></a>).
 The Advanced Digitization toolbar allows you to move features, delete parts of features, and much more. All
 functions are listed in the two tables below.</p>
 <figure class="align-center" id="digitising-toolbar">
 <a class="reference internal image-reference" href="../../_images/Toolbox.png"><img alt="../../_images/Toolbox.png" src="../../_images/Toolbox.png" style="width: 700px;" /></a>
 <figcaption>
-<p><span class="caption-text">Digitizing Toolbar in QGIS 3.36</span><a class="headerlink" href="#digitising-toolbar" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 3.3 </span><span class="caption-text">Digitizing Toolbar in QGIS 3.36</span><a class="headerlink" href="#digitising-toolbar" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -830,7 +833,7 @@ Advanced digitizing Toolbar<div class="sd-summary-down docutils">
 </details></section>
 </section>
 <section id="creating-new-datasets">
-<h2>Creating new datasets<a class="headerlink" href="#creating-new-datasets" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">3.1.2. </span>Creating new datasets<a class="headerlink" href="#creating-new-datasets" title="Permalink to this heading">#</a></h2>
 <p>To digitise new data, you always have to start with creating the dataset before filling it with digitised data.
 Keep in mind that one layer can only contain one type of geometry: either points, lines, or polygons. When you
 create a dataset, you will have to choose the type of geometry. Additionally, you can add further columns with
@@ -872,7 +875,7 @@ Video: How to create a new dataset<div class="sd-summary-down docutils">
 <figure class="align-center" id="new-gpgk-layer">
 <a class="reference internal image-reference" href="../../_images/New_GeoPackage_Layer.png"><img alt="../../_images/New_GeoPackage_Layer.png" src="../../_images/New_GeoPackage_Layer.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-text">The Layer Creation window in QGIS 3.36.</span><a class="headerlink" href="#new-gpgk-layer" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 3.4 </span><span class="caption-text">The Layer Creation window in QGIS 3.36.</span><a class="headerlink" href="#new-gpgk-layer" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <!--ADD: add an explanation of the Layer creation window?-->
@@ -888,7 +891,7 @@ your edits.</p>
 <p>Once you have set up the new layer, you can start adding geometrical features. The process for the three geometric
 types is basically the same:</p>
 <section id="creating-new-data-entries">
-<h3>Creating new data entries<a class="headerlink" href="#creating-new-data-entries" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">3.1.2.1. </span>Creating new data entries<a class="headerlink" href="#creating-new-data-entries" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Select the layer you want to add data to in the Layer panel.</p></li>
 <li><p>Go to the digitisation toolbar and click on <img alt="" src="../../_images/mActionToggleEditing.png" /> <code class="docutils literal notranslate"><span class="pre">Toggle</span> <span class="pre">Editing</span></code>. Make sure
@@ -897,7 +900,7 @@ digitisation toolbar.</p></li>
 </ol>
 </section>
 <section id="creating-point-data">
-<h3>Creating point data<a class="headerlink" href="#creating-point-data" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">3.1.2.2. </span>Creating point data<a class="headerlink" href="#creating-point-data" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Select the point layer you want to add data to in the Layer panel.</p></li>
 <li><p>Go to the digitisation toolbar and click on <img alt="" src="../../_images/mActionToggleEditing.png" /> <code class="docutils literal notranslate"><span class="pre">Toggle</span> <span class="pre">Editing</span></code>. Make sure
@@ -922,7 +925,7 @@ Video: How to create point data<div class="sd-summary-down docutils">
 </details><figure class="align-center" id="point-creation">
 <a class="reference internal image-reference" href="../../_images/point_creation.png"><img alt="../../_images/point_creation.png" src="../../_images/point_creation.png" style="width: 750px;" /></a>
 <figcaption>
-<p><span class="caption-text">Point creation.</span><a class="headerlink" href="#point-creation" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 3.5 </span><span class="caption-text">Point creation.</span><a class="headerlink" href="#point-creation" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
  <!--REPLACE IMAGE showing a point creation window with more attributes and not just ID and type to show the 
@@ -961,7 +964,7 @@ information you can add at this stage-->
 </ol>
 </section>
 <section id="creating-line-and-polygon-layers">
-<h3>Creating line and polygon layers<a class="headerlink" href="#creating-line-and-polygon-layers" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">3.1.2.3. </span>Creating line and polygon layers<a class="headerlink" href="#creating-line-and-polygon-layers" title="Permalink to this heading">#</a></h3>
 <p>The process of creating line or polygon layers is essentially the same as creating point data. The main difference is
 that instead of only adding one point, line and polygon geometries require several points (vertices). Each point you
 add is a vertex between two lines. In QGIS, you create lines and polygons by setting one point, and then another point
@@ -1024,12 +1027,12 @@ the roads and one for the buildings.</p>
 </section>
 </section>
 <section id="editing-the-data">
-<h2>Editing the Data<a class="headerlink" href="#editing-the-data" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">3.1.3. </span>Editing the Data<a class="headerlink" href="#editing-the-data" title="Permalink to this heading">#</a></h2>
 <p>In some cases, you might want to modify or correct vector data because of inaccuracies or changes. Editing
 vector data is done with digitisation toolbar. In QGIS, you can edit both the geometries and the values in the
 attribute table.</p>
 <section id="editing-geometries">
-<h3>Editing Geometries<a class="headerlink" href="#editing-geometries" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">3.1.3.1. </span>Editing Geometries<a class="headerlink" href="#editing-geometries" title="Permalink to this heading">#</a></h3>
 <p>For all cases:</p>
 <ol class="arabic simple">
 <li><p>Select the layer you want to edit.</p></li>
@@ -1107,7 +1110,7 @@ The ring is an island in the lake. For a better understanding, watch the video b
 </div>
 </section>
 <section id="editing-the-attribute-values">
-<h3>Editing the attribute values<a class="headerlink" href="#editing-the-attribute-values" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">3.1.3.2. </span>Editing the attribute values<a class="headerlink" href="#editing-the-attribute-values" title="Permalink to this heading">#</a></h3>
 <p>Sometimes, you will have to edit the values in the columns of the attribute table. For example, the name of an administrative district is written incorrectly or differently, or a value has not been entered correctly. To do this, you will have to:</p>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
@@ -1141,7 +1144,7 @@ This is useful information that can be stored in the additional attributes in th
 <figure class="align-default" id="building-damage-assessement">
 <a class="reference internal image-reference" href="../../_images/Building_damage_assessement_bangladesh.png"><img alt="../../_images/Building_damage_assessement_bangladesh.png" src="../../_images/Building_damage_assessement_bangladesh.png" style="width: 750px;" /></a>
 <figcaption>
-<p><span class="caption-text">Building Damage Assessment in Paikgachha Upazila, Khulna District, Khulna Division, Bangladesh as of 4 June 2024 (Source: <a class="reference external" href="https://reliefweb.int/map/bangladesh/building-damage-assessment-paikgachha-upazila-khulna-district-khulna-division-bangladesh-4-june-2024-imagery-analysis-4-june-2024-published-7-june-2024-v1">Int’l Charter, UNOSAT</a>)</span><a class="headerlink" href="#building-damage-assessement" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 3.6 </span><span class="caption-text">Building Damage Assessment in Paikgachha Upazila, Khulna District, Khulna Division, Bangladesh as of 4 June 2024 (Source: <a class="reference external" href="https://reliefweb.int/map/bangladesh/building-damage-assessment-paikgachha-upazila-khulna-district-khulna-division-bangladesh-4-june-2024-imagery-analysis-4-june-2024-published-7-june-2024-v1">Int’l Charter, UNOSAT</a>)</span><a class="headerlink" href="#building-damage-assessement" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -1149,7 +1152,7 @@ This is useful information that can be stored in the additional attributes in th
 </section>
 </section>
 <section id="spatial-digitisation-errors-in-qgis">
-<h2>Spatial Digitisation Errors in QGIS<a class="headerlink" href="#spatial-digitisation-errors-in-qgis" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">3.1.4. </span>Spatial Digitisation Errors in QGIS<a class="headerlink" href="#spatial-digitisation-errors-in-qgis" title="Permalink to this heading">#</a></h2>
 <p>The accuracy of geodata is crucial for spatial analysis. Positional errors are inevitable when data are manually
 digitised. The most common examples include undershooting and overshooting.  When your coordinates do not
 connect as they should, and overshooting, when the lines go past where they should. Often these errors are not
@@ -1159,12 +1162,12 @@ nodes, lines and/or vertices.</p>
 <figure class="align-center" id="digitization-errors">
 <a class="reference internal image-reference" href="../../_images/Digitization_Errors.PNG"><img alt="../../_images/Digitization_Errors.PNG" src="../../_images/Digitization_Errors.PNG" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-text">Digitising Errors (Source: SpatialPost).</span><a class="headerlink" href="#digitization-errors" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 3.7 </span><span class="caption-text">Digitising Errors (Source: SpatialPost).</span><a class="headerlink" href="#digitization-errors" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="self-assessment-questions">
-<h2>Self-Assessment Questions<a class="headerlink" href="#self-assessment-questions" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">3.1.5. </span>Self-Assessment Questions<a class="headerlink" href="#self-assessment-questions" title="Permalink to this heading">#</a></h2>
 <div class="note admonition">
 <p class="admonition-title">Recapitulate your knowledge</p>
 <ol class="arabic simple">
@@ -1207,6 +1210,24 @@ nodes, lines and/or vertices.</p>
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="en_module_3_overview.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>Basic GIS Operations</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="en_qgis_data_queries.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">3.2. </span>Geodata Selection and Queries</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -1222,23 +1243,23 @@ nodes, lines and/or vertices.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#digitising-in-qgis">Digitising in QGIS</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#digitisation-toolbars">Digitisation toolbars</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#digitising-in-qgis">3.1.1. Digitising in QGIS</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#digitisation-toolbars">3.1.1.1. Digitisation toolbars</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-new-datasets">Creating new datasets</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-new-data-entries">Creating new data entries</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-point-data">Creating point data</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-line-and-polygon-layers">Creating line and polygon layers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-new-datasets">3.1.2. Creating new datasets</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-new-data-entries">3.1.2.1. Creating new data entries</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-point-data">3.1.2.2. Creating point data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-line-and-polygon-layers">3.1.2.3. Creating line and polygon layers</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#editing-the-data">Editing the Data</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#editing-geometries">Editing Geometries</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#editing-the-attribute-values">Editing the attribute values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#editing-the-data">3.1.3. Editing the Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#editing-geometries">3.1.3.1. Editing Geometries</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#editing-the-attribute-values">3.1.3.2. Editing the attribute values</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spatial-digitisation-errors-in-qgis">Spatial Digitisation Errors in QGIS</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#self-assessment-questions">Self-Assessment Questions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spatial-digitisation-errors-in-qgis">3.1.4. Spatial Digitisation Errors in QGIS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#self-assessment-questions">3.1.5. Self-Assessment Questions</a></li>
 </ul>
   </nav></div>
 

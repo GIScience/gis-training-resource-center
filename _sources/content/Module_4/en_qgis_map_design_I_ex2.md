@@ -291,7 +291,7 @@ We can categorise the roads and then select the relevant roads to be displayed. 
 In the [previous exercise](/content/Module_3/en_qgis_module_3_ex2.md) you found out that the Mohenjodaro Airport in the southwest of Larkana City is still accessible via the road network. Essential supplies could potentially be transported from the airport into the city without encountering any roadblocks. We want to point out this possibility. Let's mark the airport as a point and visualize it!
 
 To do so we will create an entirely new point dataset representing airports.
-* Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#create-a-new-layer)) 
+* Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki Video](/content/Wiki/en_qgis_digitisation_wiki.md#create-a-new-layer)) 
 * Under `Database` click on ![](/fig/Three_points.png) and navigate to `temp` folder. Give the new dataset the name __“PAK_airports”__. Click `Save`.
 * `Geometry type`: Select `Point`
 * Under `Additional dimension` you should always make sure that you check `None`. 
@@ -305,7 +305,7 @@ To do so we will create an entirely new point dataset representing airports.
     ```{figure} /fig/Create_Geopackagelayer_airport.PNG
     ---
     width: 400px
-    name: Digitalising airports
+    name: Digitising airports
     align: center
     ---
     Creating a new point layer for the airports.
@@ -313,18 +313,18 @@ To do so we will create an entirely new point dataset representing airports.
 
 ::::{margin}
 :::{tip}
-If you cannot see the toolbar `View` -> `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#creation-of-point-data)).  ![](/fig/Digitizing_Toolbar.png)
+If you cannot see the toolbar `View` -> `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](/content/Wiki/en_qgis_digitisation_wiki.md#creation-of-point-data)).  ![](/fig/Digitizing_Toolbar.png)
 :::
 ::::
 
-* Now you can create a point for the airport and if you would like additional airports as well ([wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#add-geometries-to-a-layer)). Currently the new layer __“PAK_airports”__ is empty. To add features we can use the `Digitizing Toolbar`. 
+* Now you can create a point for the airport and if you would like additional airports as well ([wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitisation_wiki.html#add-geometries-to-a-layer)). Currently the new layer __“PAK_airports”__ is empty. To add features we can use the `Digitising Toolbar`. 
 
 *  Look for the Mohenjodaro Airport in Google. Once you have found the airport, click on ![](/fig/mActionCapturePoint.png). Left-click on the feature you want to digitise.
 
     ```{figure} /fig/Feature_Att_Airport.PNG
     ---
     width: 400px
-    name: Digitalising airports
+    name: Digitising airports
     align: center
     ---
     Digitising new point features

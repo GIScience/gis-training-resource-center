@@ -62,7 +62,7 @@ __Relevant wiki articles:__
 * [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)
 * [Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html)
 * [Geodata Classification- Categorized](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html)
-* [Digitisation- Point data](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#add-geometries-to-a-layer)
+* [Digitisation- Point data](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitisation_wiki.html#add-geometries-to-a-layer)
 :::
 ::::
 
@@ -159,13 +159,13 @@ Below, you will find a table with the information and locations. Read through th
 In order to digitise the information, we will need two new layers: A point layer and a polygon layer. 
 In case the information states an exact area, create a new polygon layer and map it exactly.
 
-8. [Create a new point and a new polygon layer](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_digitalisation.html#creating-new-datasets) to digitise point and polygon information. 
+8. [Create a new point and a new polygon layer](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_digitissation.html#creating-new-datasets) to digitise point and polygon information. 
 
 ```{tip}
 When creating the point and polygon layer use the CRS UTM 42 N __EPSG: 32642__. This Coordinate reference system is ideal for Pakistan and the __units of measurement are in meters__. 
 ```
 
-9. Find the locations from the table and create new features using the [digitisation toolbar](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_digitalisation.html#digitisation-toolbars). Capture the information in the table and Use Google or another search engine in your browser, the base map, and the Lat Lon Tools plugin to locate the exact position. 
+9. Find the locations from the table and create new features using the [digitisation toolbar](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_digitisation.html#digitisation-toolbars). Capture the information in the table and Use Google or another search engine in your browser, the base map, and the Lat Lon Tools plugin to locate the exact position. 
 
 10. Once you are done, make sure to save the edits to your layers by clicking on the ![](/fig/3.44_digitisation_save_edits.png) `Save Layer Edits`-button. 
 

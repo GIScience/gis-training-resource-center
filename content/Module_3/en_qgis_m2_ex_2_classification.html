@@ -192,10 +192,11 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="en_module_3_overview.html">3. Basic GIS Operations</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_data_queries.html">3.1. Geodata Selection and Queries</a></li>
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_data_classification.html">3.2. Geodata Classification</a></li>
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_georeferencing.html">3.3. Georeferencing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_module_3_exercises.html">3.4. Exercises for Module 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_digitisation.html">3.1. Digitisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_data_queries.html">3.2. Geodata Selection and Queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_data_classification.html">3.3. Geodata Classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_georeferencing.html">3.4. Georeferencing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_module_3_exercises.html">3.5. Exercises for Module 3</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Module_4/en_module_4_overview.html">4. Visualisation of Geodata and Map Making</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -661,7 +662,7 @@ document.write(`
 <li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_table_functions_wiki.html"><span class="doc std std-doc">Table function - Add field</span></a></p></li>
 <li><p class="sd-card-text"><span class="xref myst">Geodata Classification- Categorized</span></p></li>
 <li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_graduated_wiki.html"><span class="doc std std-doc">Geodata Classification- Graduated</span></a></p></li>
-<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#add-geometries-to-a-layer">Digitization- Point data</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitisation_wiki.html#add-geometries-to-a-layer">Digitization- Point data</a></p></li>
 </ul>
 </div>
 </div>
@@ -748,7 +749,7 @@ To add the plugin <code class="docutils literal notranslate"><span class="pre">O
 <p><span class="caption-text">OSM place search.</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Add the airports of Bo and Kenema as points to the layer <code class="docutils literal notranslate"><span class="pre">Sierra_Leone_airports</span></code>. Find help on the addition of features to a point layer <span class="xref myst">here</span>.</p>
+<p>Add the airports of Bo and Kenema as points to the layer <code class="docutils literal notranslate"><span class="pre">Sierra_Leone_airports</span></code>. Find help on the addition of features to a point layer <a class="reference internal" href="../Wiki/en_qgis_digitisation_wiki.html"><span class="doc std std-doc">here</span></a>.</p>
 <ol class="arabic simple" start="8">
 <li><p><em>Optional:</em> In the attribute table, create a new column <code class="docutils literal notranslate"><span class="pre">Runway_length</span></code> and add the length of the runways of Bo and Kenema by measuring them approximately with the measuring tool <img alt="" src="../../_images/measuring_tool_icon.png" />.</p></li>
 <li><p>Now we want to create a intuitive visualisation of the differences in food insecurity. To achieve this we use the “<a class="reference internal" href="../Wiki/en_qgis_graduated_wiki.html"><span class="doc std std-doc">Graduated Classification</span></a>” visualization option for the layer <code class="docutils literal notranslate"><span class="pre">Sierra_leone_foodinsecurity_2015</span></code> by displaying the polygons according to classes created based on the “Total_FI” column in the attribute table.</p>

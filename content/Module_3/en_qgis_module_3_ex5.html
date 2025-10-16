@@ -192,10 +192,11 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="en_module_3_overview.html">3. Basic GIS Operations</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_data_queries.html">3.1. Geodata Selection and Queries</a></li>
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_data_classification.html">3.2. Geodata Classification</a></li>
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_georeferencing.html">3.3. Georeferencing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_module_3_exercises.html">3.4. Exercises for Module 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_digitisation.html">3.1. Digitisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_data_queries.html">3.2. Geodata Selection and Queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_data_classification.html">3.3. Geodata Classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_georeferencing.html">3.4. Georeferencing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_module_3_exercises.html">3.5. Exercises for Module 3</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Module_4/en_module_4_overview.html">4. Visualisation of Geodata and Map Making</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -652,7 +653,7 @@ document.write(`
 <li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html">Geodata Classification - Graduated</a></p></li>
 <li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_queries_wiki.html">Spatial Queries</a></p></li>
 <li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#add-field">Table function - Add field</a></p></li>
-<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#add-geometries-to-a-layer">Digitisation- Point data</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitisation_wiki.html#add-geometries-to-a-layer">Digitisation- Point data</a></p></li>
 </ul>
 </div>
 </div>
@@ -1082,7 +1083,7 @@ Execution failed after 0.07 seconds
 <ol class="arabic" start="3">
 <li><p>Finally, we want to visualise the roads that are flooded. To simplify the process, we will manually search for the roads intersecting with the flood extent layer and mark them with points. For this purpose, we will create a new point dataset representing the blocked roads.</p>
 <ul class="simple">
-<li><p>Click on  <code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">GeoPackage</span> <span class="pre">Layer</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#create-a-new-layer">Wiki Video</a>)</p></li>
+<li><p>Click on  <code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">GeoPackage</span> <span class="pre">Layer</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitisation_wiki.html#create-a-new-layer">Wiki Video</a>)</p></li>
 </ul>
 <ul class="simple">
 <li><p>Under <code class="docutils literal notranslate"><span class="pre">Database</span></code> click on <img alt="" src="../../_images/Three_points.png" /> and navigate to <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder. Give the new dataset the name <strong>“PAK_flood_2024_blocked_road”</strong>. Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
@@ -1114,11 +1115,11 @@ Execution failed after 0.07 seconds
 <p class="sidebar-title"></p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>If you cannot see the toolbar, click on the tab <code class="docutils literal notranslate"><span class="pre">View</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Toolbars</span></code> and check <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code> (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#creation-of-point-data">Wiki Video</a>).</p>
+<p>If you cannot see the toolbar, click on the tab <code class="docutils literal notranslate"><span class="pre">View</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Toolbars</span></code> and check <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code> (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitisation_wiki.html#creation-of-point-data">Wiki Video</a>).</p>
 </div>
 </aside>
 <ol class="arabic" start="4">
-<li><p>Now you can create a point for each place where the flood layer covers the main roads leading out of Larkana (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#creation-of-point-data">Wiki</a>).</p>
+<li><p>Now you can create a point for each place where the flood layer covers the main roads leading out of Larkana (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitisation_wiki.html#creation-of-point-data">Wiki</a>).</p>
 <ul class="simple">
 <li><p>Currently the new layer <strong>“PAK_flood_2024_blocked_road”</strong> is empty. To add features we can use the <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code>.  <img alt="" src="../../_images/Digitizing_Toolbar.png" /></p></li>
 <li><p>Activate the editing mode by clicking on <img alt="" src="../../_images/mActionToggleEditing.png" />. Next, activate the option to add new points by clicking on <img alt="" src="../../_images/mActionCapturePoint.png" /> <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Point</span> <span class="pre">Feature</span></code> .</p></li>
