@@ -488,7 +488,7 @@ Typically, QGIS will show an asterisk (*) next to the project name or in the win
 4. __How do you open a QGIS-project?__
 
 :::{dropdown} Answer
-You can open a QGIS project via the File → Open Project menu (or “Open Project” button in toolbar), then browse for a .qgs or .qgz file. Alternatively, double-clicking the project file (if associated on your system) may also open it in QGIS.
+You can open a QGIS project via the `File` menu → `Open Project` (or “Open Project” button in toolbar), then browse for a `.qgs` or `.qgz` file. Alternatively, double-clicking the project file (if associated on your system) may also open it in QGIS.
 :::
 
 5. __How do you show and hide panels or toolbars?__

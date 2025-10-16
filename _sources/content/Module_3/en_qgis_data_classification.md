@@ -377,13 +377,12 @@ Graduated classification in QGIS 3.36.
 :::{dropdown} Answer
 QGIS supports these three common classification modes:
 
-| Method                             | Use case / data type                                               | How it works / difference                                                                                                                                                                                                                            |
-| ---------------------------------- | ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Single symbol**                  | For simple datasets or when you want all features to look the same | All features receive the same symbol (colour, size). No differentiation by attribute. ([giscience.github.io][1])                                                                                                                                     |
-| **Categorised** | For **nominal** or **ordinal** (categorical) data                  | Features are grouped by unique attribute values (categories). Each category gets its own symbol. ([giscience.github.io][1])                                                                                                                          |
-| **Graduated**                      | For **quantitative / metric** data                                 | Numeric values are divided into numeric classes (ranges). Each class is symbolised differently (often by a ramp). You choose number of classes and classification method (e.g. equal interval, quantile, natural breaks). ([giscience.github.io][1]) |
+| Method            | Use case / data type                                               | How it works / difference                                                                                                                                                                                                                            |
+|-------------------|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Single symbol** | For simple datasets or when you want all features to look the same | All features receive the same symbol (colour, size). No differentiation by attribute.                                                                                                                                                                |
+| **Categorised**   | For **nominal** or **ordinal** (categorical) data                  | Features are grouped by unique attribute values (categories). Each category gets its own symbol.                                                                                                                                                     |
+| **Graduated**     | For **quantitative / metric** data                                 | Numeric values are divided into numeric classes (ranges). Each class is symbolised differently (often by a ramp). You choose number of classes and classification method (e.g. equal interval, quantile, natural breaks). |
 
-[1]: https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_data_classification.html "3.3. Geodata Classification — GIS Resource Training Center"
 
 
 :::
@@ -391,13 +390,13 @@ QGIS supports these three common classification modes:
 3. __Name three different methods to divide quantitative data into classes. What are their differences?__
 
 :::{dropdown} Answer
-| Method                     | Description / how breaks are determined                                                                                                               | Strengths & drawbacks                                                                                                                                            |
-|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Equal Interval**         | Divide the full range of data into intervals of equal size (e.g. dividing [min, max] into n equal-width bins) ([giscience.github.io][1])              | Straightforward and intuitive, but can lead to many empty or sparsely populated classes if data are skewed or have outliers. ([giscience.github.io][1])          |
-| **Quantile (Equal Count)** | Each class gets (roughly) the same number of features (i.e. equal counts per class) ([giscience.github.io][1])                                        | Good visual balance—but the numerical ranges of classes may vary greatly, and similar values may be split across classes. ([giscience.github.io][1])             |
-| **Natural Breaks (Jenks)** | Uses an algorithm to minimize within-class variance and maximize between-class differences (i.e. find “natural” groupings) ([giscience.github.io][1]) | Often gives visually meaningful breaks tailored to the data distribution. But breaks depend on dataset (less comparable across maps). ([giscience.github.io][1]) |
+| Method                     | Description / how breaks are determined                                                                                    | Strengths & drawbacks                                                                                                                 |
+|----------------------------|----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| **Equal Interval**         | Divide the full range of data into intervals of equal size (e.g. dividing [min, max] into n equal-width bins)              | Straightforward and intuitive, but can lead to many empty or sparsely populated classes if data are skewed or have outliers.          |
+| **Quantile (Equal Count)** | Each class gets (roughly) the same number of features (i.e. equal counts per class)                                        | Good visual balance—but the numerical ranges of classes may vary greatly, and similar values may be split across classes.             |
+| **Natural Breaks (Jenks)** | Uses an algorithm to minimize within-class variance and maximize between-class differences (i.e. find “natural” groupings) | Often gives visually meaningful breaks tailored to the data distribution. But breaks depend on dataset (less comparable across maps). |
 
-[1]: https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_data_classification.html "3.3. Geodata Classification — GIS Resource Training Center"
+
 :::
 
 4. __What are the trade‑offs or challenges involved in choosing the number of classes in a graduated classification?__

@@ -526,9 +526,9 @@ It is useful because it let's us perform spatial analyses and gain insights abou
 3. __Imagine you’re digitising flood‑affected buildings from an aerial image. What attribute fields might you include, and what level of detail or accuracy would you try to maintain?__ 
 
 :::{dropdown} Answer 
-Which attributes you wish to digitise always depends on the goal of your mapping effort (e.g. emergency response, damage assessment, or planning) and if you are on the ground or rely on satellite imagery. 
-__Potential attribute fields__: 
-    - __Building type/usage__: e.g. residential, commercial, industrial, public
+Which attributes you wish to digitise always depends on the goal of your mapping effort (e.g. emergency response, damage assessment, or planning) and if you are on the ground or rely on satellite imagery.   
+- __Potential attribute fields__:  
+    - __Building type/usage__: e.g. residential, commercial, industrial, public  
     - __Number of stories/floors__
     - __Roof material__
     - __Wall material__
@@ -539,7 +539,6 @@ __Potential attribute fields__:
     - __Address__
     - ...
 :::
-
 
 ::::
 
