@@ -503,9 +503,43 @@ Digitising Errors (Source: SpatialPost).
 :class: note 
 
 1. __What is digitisation in GIS? Why is converting features from maps or images into vector form useful?__
+
+:::{dropdown} Answer
+Digitisation (or “digitization”) in GIS is the process of tracing or capturing geographic features (points, lines, polygons) from maps, images (such as satellite or aerial imagery, scanned maps) __or reports__ and converting them into vector data.  
+It is useful because it let's us perform spatial analyses and gain insights about the captured phenomenon in space. Furthermore, we can combine it with other spatial data and display it on informative maps.
+:::
+
 2. __How do you create a new vector dataset?__
-3. __Why must a layer be put into “editing mode” before making changes (adding, deleting, or modifying features)?__
-4. __Imagine you’re digitising flood‑affected buildings from an aerial image. What attribute fields might you include, and what level of detail or accuracy would you try to maintain?__ 
+
+:::{dropdown} Answer
+1. In the top bar, navigate to the `Layer` menu → `Create Layer` → `New GeoPackage Layer` or `New Shapefile Layer`
+2. Specify the layer properties:
+    - Specify the file path and name
+    - **Encoding**: UTF-8 (allows for special characters)
+    - **Geometry type**: point, line, polygon (one layer supports only one geometry type)
+    - **Coordinate Reference System (CRS)**
+    - Define the __attribute fields__ (columns) that you want in the layer's attribute table.
+3. Click `Ok` to create the create the layer. 
+:::
+
+
+3. __Imagine you’re digitising flood‑affected buildings from an aerial image. What attribute fields might you include, and what level of detail or accuracy would you try to maintain?__ 
+
+:::{dropdown} Answer 
+Which attributes you wish to digitise always depends on the goal of your mapping effort (e.g. emergency response, damage assessment, or planning) and if you are on the ground or rely on satellite imagery. 
+__Potential attribute fields__: 
+    - __Building type/usage__: e.g. residential, commercial, industrial, public
+    - __Number of stories/floors__
+    - __Roof material__
+    - __Wall material__
+    - __Damage status__: e.g. "no damage", "minor damage", "severe damage", "collapsed"
+    - __Flood depth or water exposure__
+    - __Date of assessment__
+    - __Confidence/quality__
+    - __Address__
+    - ...
+:::
+
 
 ::::
 

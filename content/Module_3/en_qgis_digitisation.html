@@ -1172,11 +1172,65 @@ nodes, lines and/or vertices.</p>
 <p class="admonition-title">Recapitulate your knowledge</p>
 <ol class="arabic simple">
 <li><p><strong>What is digitisation in GIS? Why is converting features from maps or images into vector form useful?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Digitisation (or “digitization”) in GIS is the process of tracing or capturing geographic features (points, lines, polygons) from maps, images (such as satellite or aerial imagery, scanned maps) <strong>or reports</strong> and converting them into vector data.<br />
+It is useful because it let’s us perform spatial analyses and gain insights about the captured phenomenon in space. Furthermore, we can combine it with other spatial data and display it on informative maps.</p>
+</div>
+</details><ol class="arabic simple" start="2">
 <li><p><strong>How do you create a new vector dataset?</strong></p></li>
-<li><p><strong>Why must a layer be put into “editing mode” before making changes (adding, deleting, or modifying features)?</strong></p></li>
-<li><p><strong>Imagine you’re digitising flood‑affected buildings from an aerial image. What attribute fields might you include, and what level of detail or accuracy would you try to maintain?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ol class="arabic simple">
+<li><p class="sd-card-text">In the top bar, navigate to the <code class="docutils literal notranslate"><span class="pre">Layer</span></code> menu → <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> → <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">GeoPackage</span> <span class="pre">Layer</span></code> or <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Shapefile</span> <span class="pre">Layer</span></code></p></li>
+<li><p class="sd-card-text">Specify the layer properties:</p>
+<ul class="simple">
+<li><p class="sd-card-text">Specify the file path and name</p></li>
+<li><p class="sd-card-text"><strong>Encoding</strong>: UTF-8 (allows for special characters)</p></li>
+<li><p class="sd-card-text"><strong>Geometry type</strong>: point, line, polygon (one layer supports only one geometry type)</p></li>
+<li><p class="sd-card-text"><strong>Coordinate Reference System (CRS)</strong></p></li>
+<li><p class="sd-card-text">Define the <strong>attribute fields</strong> (columns) that you want in the layer’s attribute table.</p></li>
+</ul>
+</li>
+<li><p class="sd-card-text">Click <code class="docutils literal notranslate"><span class="pre">Ok</span></code> to create the create the layer.</p></li>
 </ol>
 </div>
+</details><ol class="arabic simple" start="3">
+<li><p><strong>Imagine you’re digitising flood‑affected buildings from an aerial image. What attribute fields might you include, and what level of detail or accuracy would you try to maintain?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Which attributes you wish to digitise always depends on the goal of your mapping effort (e.g. emergency response, damage assessment, or planning) and if you are on the ground or rely on satellite imagery.
+<strong>Potential attribute fields</strong>:
+- <strong>Building type/usage</strong>: e.g. residential, commercial, industrial, public
+- <strong>Number of stories/floors</strong>
+- <strong>Roof material</strong>
+- <strong>Wall material</strong>
+- <strong>Damage status</strong>: e.g. “no damage”, “minor damage”, “severe damage”, “collapsed”
+- <strong>Flood depth or water exposure</strong>
+- <strong>Date of assessment</strong>
+- <strong>Confidence/quality</strong>
+- <strong>Address</strong>
+- …</p>
+</div>
+</details></div>
 </section>
 </section>
 
