@@ -162,12 +162,12 @@ Create new point layer.
 This is what your result should look like.
 
 ```{figure} /fig/Abuja_Banks_Point_Layers.png
-
 ---
 height: 200px
 name: Result Digitisation exercise
 align: center
 ---
+The digitised features could look like this. 
 ```
 
 ## Map road blocks
