@@ -170,9 +170,34 @@ Selected features are again highlighted in bright yellow in your geospatial inte
 :class: note
 
 1. __What are the three general types of selection or queries in QGIS? Give a brief description of each.__
-2. __How do you perform a manual selection of features in QGIS?__
-3. __How do you perform an attribute-based selection in QGIS?__
-4. __Name at least four geometric operators in spatial queries (e.g. “Intersect”, “Within”) and explain what they do.__
+
+:::{dropdown} Answer
+- __Manual selection__: 
+    You select features with your mouse using the `Select Features`-tool in the map canvas or by clicking on the row column in the attribute table (the numbers on the left of the attribute table). In the map canvas, selected features will be highlighted in bright yellow, in the attribute table they are highlighted in blue. 
+- __Attribute-based queries__ (Select by Attribute or Select by Expression): 
+    You build a query selecting attributes with specific values (e.g. `"population" > 10000 AND "type" = 'urban'`).
+- __Spatial queries__ (Select by Location):  
+    You select features based on their spatial relationship to features in another layer (e.g. those that intersect, touch or are disjoint)
+:::
+
+2. __Name at least four geometric operators in spatial queries (e.g. “Intersect”, “Within”) and explain what they do.__
+
+
+
+:::{dropdown} Answer
+
+| Operator      | Meaning / Behavior                                                                                                 |
+|---------------|--------------------------------------------------------------------------------------------------------------------|
+| **Intersect** | Selects features from layer A that intersect (share any part) with features from layer B (they overlap in any way) |
+| **Within**    | Selects features of A that lie completely inside features of B                                                     |
+| **Contains**  | Selects features of A that entirely contain features of B                                                          |
+| **Touches**   | Selects features of A that touch (share a boundary or point) with features of B but do not overlap internally      |
+| **Crosses**   | Selects features of A that pass through features of B (they cross each other)                                      |
+| **Overlaps**  | Selects features of A and B that overlap but neither is completely inside the other                                |
+
+As examples: 
+- If you want all roads that cross a park boundary, use Intersect or Crosses
+- If you want all building footprints entirely inside a flood zone, use Within.
 
 ::::
 
