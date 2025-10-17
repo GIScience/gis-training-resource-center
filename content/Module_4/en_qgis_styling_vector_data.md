@@ -407,10 +407,57 @@ There is also a library with humanitarian icons by the [United Nations Office fo
 :class: note
 
 1. __Name and describe the four main symbolisation methods used for vector layers.__
+
+:::{dropdown} Answer
+1. __Single Symbol__
+    - All features use the same symbol (same colour, size, stroke) regardless of their attributes.
+2. __Categorised (Unique Values/Categorical)__
+    - Features are styled by discrete categories (attribute values). Each unique value (or class) gets its own symbol (hue, shape, etc.).
+3. __Graduated Symbols__
+    - Numeric (continuous) attributes are divided into classes (value ranges), and each class is given a symbol (often with a colour ramp). This is used to show variation in quantitative data.
+4. __Rule-based__
+    - Users define one or more rules using the expression builder that determine which features get which symbol. Rules can combine attribute and spatial logic, allowing complex conditional styling.
+
+:::
+
 2. __Where is a layer's symbology saved?__
+
+:::{dropdown}
+- The symbology of a layer is not saved in the dataset. If you share only the dataset with a colleague, the layer will not appear as on your computer.
+- The symbology is stored in the __QGIS project file__ (`.qgz` or `.qgs`).
+- It is also possible to __export__ or __save__ the style externally (as a `.qml` file) so that it can be reused or shared.
+:::
 3. __When styling polygon layers (e.g. administrative boundaries), what is the purpose of using transparent fill and visible outlines?__
+
+:::{dropdown} Answer
+- __Context:__ The transparent fill allows underlying layers (e.g. basemap, imagery, labels) to show through giving spatial context.
+- __Boundary emphasis:__ The visible outlines (strokes) clearly indicate the polygon borders, even if the fill is subtle.
+- __Hierarchy and legibility:__ If many overlapping polygons or adjacents regions are shown, transparent fills prevent areas from blocking each other, while outlines keep boundaries distinct.
+:::
+
+
 4. __Explain how to create a choropleth map in QGIS using graduated colours. What do you need to choose (e.g. attribute, number of classes, colour ramp)?__
+
+:::{dropdown} Answer
+1. <kbd>Right-Click</kbd> on the layer and select `Properties` and navigate to the `Symbology`-tab.
+2. Change the symbolisation method from `Single-Symbol` to `Graduated`.
+3. Next to `Value`, choose the numeric attribute you want to visualise in the choropleth map (e.g. population density, percentage, precipitation, normalised diseased cases, etc.). The value of this attribute will determine the colouring.
+4. Choose a classification method and set the number of classe (e.g. equal interval, quantile, natural breaks, etc.).
+5. Pick a colour ramp suitable for the information you want to visualise (light → dark)
+6. Click `Classify` and `Apply`.
+7. Take a look at the map canvas and make necessary adjustments (e.g. remove the polygon outlines).
+:::
+
 5. __What are SVG symbols, and what advantages do they offer over raster images for point symbology?__
+
+:::{dropdown} Answer
+- __SVG (Scalable Vector Graphics)__ symbols are vector‑based icons or graphics that can be used for symbolising points in QGIS.
+- __Advantages:__
+    - __Scalability without loss:__ SVGs scale smoothly (zoom in or out) without pixelation or blurring, whereas raster images degrade when resized.
+    - __Editable/styleable:__ You can change colour, stroke, fill, size dynamically because the symbol is vector-based.
+    - __Sharpness on print:__ They maintain crisp edges at any resolution, making them better for cartographic output.
+:::
+
 
 ::::
 
