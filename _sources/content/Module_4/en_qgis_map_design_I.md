@@ -395,9 +395,63 @@ Now that we have learned the different visual variables, and know how to use the
 :class: note
 
 1. __What are “visual variables” (graphic variables) and how do they help in map design?__
+
+:::{dropdown} Answer
+- Visual variables are graphical properties of map symbols (points, lines, polygons) that can be varied to encode information (e.g. hue, value, size, shape, orientation, texture).
+- They help to design the visual representation of geodata to communicate information:
+    - use the size to show the magnitude
+    - use different colours to distinguish between classes
+    - use the intensity of a colour (value) to show a progression or an increase in intensity of a phenomenon.
+- Well-chose 
+:::
+
 2. __Why is it important to consider colour schemes (hue, value, saturation) when styling maps?__
+
+:::{dropdown} Answer
+- __Hue__ is the “color family” (red, blue, green, etc.); it’s good for __distinguishing categories__.
+- __Value__ (or lightness/darkness) gives a sense of order: darker → more, lighter → less. Useful for quantitative data.
+- __Saturation__ (intensity of color) influences how vivid or muted a color appears; high saturation draws attention, low saturation recedes.
+
+Using inappropriate combinations (e.g. very saturated adjacent hues, or small value differences) can reduce contrast, make features indistinguishable, or cause color “vibrations” or optical illusions.
+The scheme must be perceptually effective, accessible (e.g. for color-blind readers), consistent, and appropriate to the type of data (nominal vs ordinal vs interval) and map purpose.
+:::
+
 3. __What is the difference between categorical (qualitative), sequential, and diverging colour schemes? When is each appropriate?__
+
+:::{dropdown} 
+
+- __Categorical (qualitative)__
+    Used for nominal (no inherent order) data. Each category gets a distinct hue (or shape) without implying magnitude. Example: land‑use types (forest, urban, water).
+- __Sequential__ 
+    Used for data that progress in one direction (low → high). Usually a single hue whose value or saturation changes gradually (e.g. light to dark). Appropriate for e.g. population density, income, temperature.
+- __Diverging__
+    Used for data that deviate around a meaningful midpoint (e.g. zero, average). Two contrasting hues diverge from a central neutral color. Example: change maps (positive growth vs negative decline), anomalies above/below average.
+:::
+
 4. __What are some common ways to style vector data (lines, points, polygons)? Give examples (e.g. changing stroke, fill, using symbols).__
+
+:::{dropdown} Answer
+- __Points:__  
+    - Change symbol shape (circle, square, star)
+    - Vary size according to attribute (proportional symbol)
+    - Use colour or fill for classification
+    - Add outline (stroke) or halo for contrast
+- __Lines:__  
+    - Adjust stroke (width) to indicate magnitude (e.g. make majord roads thicker)
+    - Use different line styles (solid, dashes, dotted) for categories
+    - Change colour of lines to distinguish types (e.g. rivers, roads, administrative boundaries)
+- __Polygons:__  
+    - Use fill color (hue + value) to indicate category or intensity
+    - Use transparency (opacity) to let background features show through
+    - Use strokes (borders) of varying width or colour (emphasis or boundary types)
+    - Add hatching, textures, or pattern fills for categorical detail
+:::
+
 5. __What is a choropleth map? How is it different from a graduated symbol map?__
+
+:::{dropdown} Answer
+- A choropleth map is a thematic map in which areas (polygons) are shaded or colored according to the value of a variable (often normalized, e.g. per capita). All of the polygon is filled, with the color (hue/value) representing the magnitude of that variable.
+- A graduated symbol map (or proportional / graduated symbols) uses symbols (usually points placed within regions or centroids) whose size (or possibly color) varies to represent the magnitude of data. The underlying polygons themselves might remain unshaded or lightly styled.
+:::
 
 ::::

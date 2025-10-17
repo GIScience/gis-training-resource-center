@@ -991,12 +991,111 @@ If you have a library of SVG-symbols as a folder you can add them to your Stylin
 <p class="admonition-title">Test your knowledge</p>
 <ol class="arabic simple">
 <li><p><strong>Name and describe the four main symbolisation methods used for vector layers.</strong></p></li>
-<li><p><strong>Where is a layer’s symbology saved?</strong></p></li>
-<li><p><strong>When styling polygon layers (e.g. administrative boundaries), what is the purpose of using transparent fill and visible outlines?</strong></p></li>
-<li><p><strong>Explain how to create a choropleth map in QGIS using graduated colours. What do you need to choose (e.g. attribute, number of classes, colour ramp)?</strong></p></li>
-<li><p><strong>What are SVG symbols, and what advantages do they offer over raster images for point symbology?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ol class="arabic simple">
+<li><p class="sd-card-text"><strong>Single Symbol</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">All features use the same symbol (same colour, size, stroke) regardless of their attributes.</p></li>
+</ul>
+</li>
+<li><p class="sd-card-text"><strong>Categorised (Unique Values/Categorical)</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Features are styled by discrete categories (attribute values). Each unique value (or class) gets its own symbol (hue, shape, etc.).</p></li>
+</ul>
+</li>
+<li><p class="sd-card-text"><strong>Graduated Symbols</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Numeric (continuous) attributes are divided into classes (value ranges), and each class is given a symbol (often with a colour ramp). This is used to show variation in quantitative data.</p></li>
+</ul>
+</li>
+<li><p class="sd-card-text"><strong>Rule-based</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Users define one or more rules using the expression builder that determine which features get which symbol. Rules can combine attribute and spatial logic, allowing complex conditional styling.</p></li>
+</ul>
+</li>
 </ol>
 </div>
+</details><ol class="arabic simple" start="2">
+<li><p><strong>Where is a layer’s symbology saved?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-kebab-horizontal" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M6 12a2 2 0 11-4 0 2 2 0 014 0zm8 0a2 2 0 11-4 0 2 2 0 014 0zm6 2a2 2 0 100-4 2 2 0 000 4z"></path></svg><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">The symbology of a layer is not saved in the dataset. If you share only the dataset with a colleague, the layer will not appear as on your computer.</p></li>
+<li><p class="sd-card-text">The symbology is stored in the <strong>QGIS project file</strong> (<code class="docutils literal notranslate"><span class="pre">.qgz</span></code> or <code class="docutils literal notranslate"><span class="pre">.qgs</span></code>).</p></li>
+<li><p class="sd-card-text">It is also possible to <strong>export</strong> or <strong>save</strong> the style externally (as a <code class="docutils literal notranslate"><span class="pre">.qml</span></code> file) so that it can be reused or shared.</p></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="3">
+<li><p><strong>When styling polygon layers (e.g. administrative boundaries), what is the purpose of using transparent fill and visible outlines?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text"><strong>Context:</strong> The transparent fill allows underlying layers (e.g. basemap, imagery, labels) to show through giving spatial context.</p></li>
+<li><p class="sd-card-text"><strong>Boundary emphasis:</strong> The visible outlines (strokes) clearly indicate the polygon borders, even if the fill is subtle.</p></li>
+<li><p class="sd-card-text"><strong>Hierarchy and legibility:</strong> If many overlapping polygons or adjacents regions are shown, transparent fills prevent areas from blocking each other, while outlines keep boundaries distinct.</p></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="4">
+<li><p><strong>Explain how to create a choropleth map in QGIS using graduated colours. What do you need to choose (e.g. attribute, number of classes, colour ramp)?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ol class="arabic simple">
+<li><p class="sd-card-text"><kbd>Right-Click</kbd> on the layer and select <code class="docutils literal notranslate"><span class="pre">Properties</span></code> and navigate to the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code>-tab.</p></li>
+<li><p class="sd-card-text">Change the symbolisation method from <code class="docutils literal notranslate"><span class="pre">Single-Symbol</span></code> to <code class="docutils literal notranslate"><span class="pre">Graduated</span></code>.</p></li>
+<li><p class="sd-card-text">Next to <code class="docutils literal notranslate"><span class="pre">Value</span></code>, choose the numeric attribute you want to visualise in the choropleth map (e.g. population density, percentage, precipitation, normalised diseased cases, etc.). The value of this attribute will determine the colouring.</p></li>
+<li><p class="sd-card-text">Choose a classification method and set the number of classe (e.g. equal interval, quantile, natural breaks, etc.).</p></li>
+<li><p class="sd-card-text">Pick a colour ramp suitable for the information you want to visualise (light → dark)</p></li>
+<li><p class="sd-card-text">Click <code class="docutils literal notranslate"><span class="pre">Classify</span></code> and <code class="docutils literal notranslate"><span class="pre">Apply</span></code>.</p></li>
+<li><p class="sd-card-text">Take a look at the map canvas and make necessary adjustments (e.g. remove the polygon outlines).</p></li>
+</ol>
+</div>
+</details><ol class="arabic simple" start="5">
+<li><p><strong>What are SVG symbols, and what advantages do they offer over raster images for point symbology?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text"><strong>SVG (Scalable Vector Graphics)</strong> symbols are vector‑based icons or graphics that can be used for symbolising points in QGIS.</p></li>
+<li><p class="sd-card-text"><strong>Advantages:</strong></p>
+<ul>
+<li><p class="sd-card-text"><strong>Scalability without loss:</strong> SVGs scale smoothly (zoom in or out) without pixelation or blurring, whereas raster images degrade when resized.</p></li>
+<li><p class="sd-card-text"><strong>Editable/styleable:</strong> You can change colour, stroke, fill, size dynamically because the symbol is vector-based.</p></li>
+<li><p class="sd-card-text"><strong>Sharpness on print:</strong> They maintain crisp edges at any resolution, making them better for cartographic output.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</details></div>
 </section>
 <section id="further-resources">
 <h2><span class="section-number">4.2.4. </span>Further Resources<a class="headerlink" href="#further-resources" title="Permalink to this heading">#</a></h2>
