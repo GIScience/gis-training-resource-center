@@ -52,6 +52,14 @@ You can also import styles directly in the styling panel of a layer. But it will
 ```
 
 
+:::{tip}
+You can copy styles from one layer to another:
+1. Right-click on the styled layer → `Styles` → `Copy Style` → `All Style Categories`.
+2. Right-click on the second layer → `Styles` → `Paste Style` → `All Style Categories`.
+
+:::
+
+
 ## Self-Assessment Questions
 
 
@@ -59,8 +67,35 @@ You can also import styles directly in the styling panel of a layer. But it will
 :class: note
 
 1. __What are the advantages of creating and using styles?__
+
+:::{dropdown} Answer
+- __Consistency:__ ensures uniform symbology across maps and projects
+- __Reusability:__ you can apply the same style to different layers or across projects without re-building from scratch.
+- __Efficiency:__ saves time when styling many layers (by just loading the style file).
+- __Shareabilty:__ you can share your visual designs (symbols, colour ramps, label settings) with colleagues. 
+:::
+
 2. __How do you import or export a style?__
+
+:::{dropdown} Answer
+1. In QGIS, right-click on the layer → `Properties` → `Symbology`
+2. In the bottom left corner, there is a dropdown menu called `Style` with options to import or export styles. 
+:::
+
 3. __How would you share styles with colleagues or across different machines? What should you watch out for (e.g. file paths, resource dependencies)?__
-4. __If a style references an external resource (e.g. an SVG symbol or image), what could happen if that resource is missing or relocated?__ 
+
+:::{dropdown} Answer
+1. Open the `Symbology` tab in the `Properties` window.  
+2. In the bottom left corner, click on `Style` → `Save Style`.
+3. Specify the name and saving location.
+4. In the file browser, find the `.qml`-file and share it with your colleague.
+
+__Things to watch out for:__
+- __File paths/references:__ If the style references external files (SVGs, images) with absolute paths, those paths may break on another machine. 
+- __Missing resources:__ If an external resource (symbol, image) is absent or moved, the style may fail or fall back to default symbols.
+- __Version compatibility__: Styles created in one version of QGIS may not fully work or may degrade in another version
+- __Data compability:__ If you have set rules or classification based on a layer's attributes, the column names and attributes must be present in the dataset on the second computer. 
+:::
+ 
 
 ::::
