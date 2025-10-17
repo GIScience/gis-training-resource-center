@@ -199,9 +199,34 @@ You can also read further in the article "[Labeling and text hierarchy in cartog
 :class: note
 
 1. __When using Single Labels, what must you choose in order for labels to be displayed (i.e. what does “Value” refer to)?__
+
+:::{dropdown} Answer
+- In Single Labels mode, you must pick an __attribute field__ (column) from the layer whose values will be shown as the labels. This is called the Value field. For example, you can choose the column storing the name of a street to display streetnames on your map.
+- You can also use an expression instead of a simple field, e.g. concatenate multiple fields or include functions, to build what the label shows.
+
 2. __What is a “rule” in rule‑based labeling, and how do you build one (e.g. using expressions)?__
+
+:::{dropdown} Answer
+- A __rule__ in rule‑based labeling is a condition (filter) that determines which features get labeled under that rule, and optionally with particular styling. Each rule can have its own label style (font, size etc.)
+- To build a rule: in the layer’s Label properties, select Rule‑based labeling. Then add a new rule, give it a description, and set a filter expression (using the expression builder) that tests some attribute(s) (and optionally scale, visibility etc.). Only features satisfying the expression are labeled under that rule.
+:::
+
 3. __Why might you prefer rule‑based labeling instead of labeling every feature (using Single Labels)? Give an example scenario.__
+
+:::{dropdown} Answer
+- __Rule‑based labeling__ lets you label selectively (only some features, e.g. only major roads, only capital cities, or features above a certain size), avoiding clutter.
+- It also lets you vary label styling per rule (different font size, color, style) depending on the feature’s attribute or scale.
+- __Example scenario__: Suppose you have a map of cities, and you want to label only large cities (population > 100,000) with their names in big bold font, medium cities in smaller font, and omit very small towns to reduce crowding. You can make rules like "population" > 100000, 10000 < "population" <= 100000, etc. Each rule labels only those features, styled appropriately. This avoids labeling every little town which could overlap and clutter.
+:::
+
 4. __Why is it generally discouraged to label numerical (continuous) values directly as text labels?__
+
+:::{dropdown} Answer
+- Continuous numerical values (e.g. precise counts, measurements) tend to produce __too many unique labels__, which can clutter the map or overlap, making it hard to read.
+- They often change continuously, so small changes (minor precision) may not be useful and can overwhelm the labeling.
+- Also, continuous values are better represented via __graded visual variables__ (e.g. graduated color, size, or choropleth) rather than text, so viewers perceive relative magnitude more naturally.
+:::
+
 
 ::::
 
