@@ -314,11 +314,54 @@ In this short video, you will discover the location of the query builder and lea
 ::::{admonition} Test your knowledge
 :class: note
 
-1. __What does “non‑spatial processing” mean in the context of GIS / QGIS? How does it differ from spatial operations?__
+1. __What does “non‑spatial processing” mean in the context of GIS/QGIS? How does it differ from spatial operations?__
+
+:::{dropdown} Answer
+- Non‑spatial processing refers to operations that act solely on the attribute side (the table or data columns) of a layer, without using or modifying the geometry (location, shape) of features. You are manipulating data about features, not their spatial relationships.
+- Examples include adding, deleting, or updating fields; filtering records based on attribute queries; performing table joins based on matching key fields; computing new values from existing attributes.
+- In contrast, spatial operations involve geometry — they use spatial relationships (proximity, intersection, containment) and often produce changes in the shape, size, or arrangement of features (for example buffer, intersect, clip, union). Spatial tools compute new geometry or restructure existing geometry.
+:::
+
 2. __What is a “non‑spatial join” (Join Attributes by Field Value)? Describe how and when you would use it.__
+
+:::{dropdown} Answer
+- A non‑spatial join (in QGIS often called Join Attributes by Field Value) links attribute data from one table (or non‑spatial data) to another feature layer based on a common key (field) value, not based on geometry. It is also called a tabular join or attribute join.
+- You'd use it when you have two datasets that share a common attribute (e.g. a region code, an ID, a name) and you want to enrich one layer with additional attributes from the other. For example: you have a layer of administrative polygons and a separate table of population statistics keyed by the same admin code; you want to bring those population figures into the polygon layer so you can map or analyze them.
+- The non-spatial join adds fields from one layer or dataset into the target layer’s attribute table where the key matches.
+- 
+:::
+
 3. __What conditions must be true for a non‑spatial join to work correctly? (E.g. key fields, matching values, data types)__
+
+:::{dropdown} Answer
+
+1. __Common key field present in both tables__
+    - Both the target layer (the one receiving the join) and the join table must have a field (column) that is the “join key,” which contains matching identifiers in corresponding rows.
+2. __Matching values in those key fields__
+    - The values in the key field must overlap: for each feature in the target layer that you want to get joined data for, there must be a matching value in the join table’s key field. If there is no match, the joined value will typically be NULL or blank.
+3. __Compatible data types__
+    - The key fields should be of the same or compatible data type (e.g. both integer, or both text) so that QGIS can match them. If one is a text field and the other is numeric, matching won’t work reliably.
+4. __Uniqueness of values__
+    - Ideally, the join table should have unique values in the join key (one-to-one join). If there are multiple matching rows (one-to-many), then you might end up with duplicates, or ambiguous matching — QGIS may either take the first match or aggregate, depending on join method.
+    - The target layer normally does not change its number of features — the join just appends fields, not duplicating geometry (unless you convert to a permanent joined file in a different way).
+
 4. __What kinds of operations can you perform using table functions (add field, delete field, calculate field)?__
+
+:::{dropdown} Answer
+- __Add field__: Create a new attribute column (of a chosen type, e.g. integer, decimal, text) to hold computed or imported values.
+- __Delete field__: Remove unwanted or redundant fields/columns from a layer’s attribute table.
+- __Calculate field (Field Calculator)__: Compute new values (for existing or new fields) using expressions (arithmetic, conditional logic, functions) based on other attributes, constants, or functions. For example: calculate population density = population / area; or classify values using CASE WHEN logic.
+- __Update/Edit existing field__: You can also update or overwrite values in an existing field, provided the layer is in edit mode.
+:::
+
 5. __What is a non‑spatial query? How would you use “Select by expression” to filter your data?__
+
+:::{dropdown} Answer
+- A non‑spatial query is a query applied to the attribute table (fields) rather than based on geometry. It filters or selects rows (features) based on attribute conditions, not spatial conditions.
+- In QGIS, “Select by expression” is a tool you can use to write logical expressions (e.g. `"population" > 10000 AND "region" = 'East'`) to select the subset of features whose attributes satisfy the criteria.
+- After selection, you can use the selected subset for further operations (e.g. export selected features, style them differently, analyze only them, etc.).
+
+:::
 
 ::::
 

@@ -1031,13 +1031,104 @@ Example: Simple usage of the Query Builder.<div class="sd-summary-down docutils"
 <div class="note admonition">
 <p class="admonition-title">Test your knowledge</p>
 <ol class="arabic simple">
-<li><p><strong>What does “non‑spatial processing” mean in the context of GIS / QGIS? How does it differ from spatial operations?</strong></p></li>
+<li><p><strong>What does “non‑spatial processing” mean in the context of GIS/QGIS? How does it differ from spatial operations?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">Non‑spatial processing refers to operations that act solely on the attribute side (the table or data columns) of a layer, without using or modifying the geometry (location, shape) of features. You are manipulating data about features, not their spatial relationships.</p></li>
+<li><p class="sd-card-text">Examples include adding, deleting, or updating fields; filtering records based on attribute queries; performing table joins based on matching key fields; computing new values from existing attributes.</p></li>
+<li><p class="sd-card-text">In contrast, spatial operations involve geometry — they use spatial relationships (proximity, intersection, containment) and often produce changes in the shape, size, or arrangement of features (for example buffer, intersect, clip, union). Spatial tools compute new geometry or restructure existing geometry.</p></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="2">
 <li><p><strong>What is a “non‑spatial join” (Join Attributes by Field Value)? Describe how and when you would use it.</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">A non‑spatial join (in QGIS often called Join Attributes by Field Value) links attribute data from one table (or non‑spatial data) to another feature layer based on a common key (field) value, not based on geometry. It is also called a tabular join or attribute join.</p></li>
+<li><p class="sd-card-text">You’d use it when you have two datasets that share a common attribute (e.g. a region code, an ID, a name) and you want to enrich one layer with additional attributes from the other. For example: you have a layer of administrative polygons and a separate table of population statistics keyed by the same admin code; you want to bring those population figures into the polygon layer so you can map or analyze them.</p></li>
+<li><p class="sd-card-text">The non-spatial join adds fields from one layer or dataset into the target layer’s attribute table where the key matches.</p></li>
+<li></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="3">
 <li><p><strong>What conditions must be true for a non‑spatial join to work correctly? (E.g. key fields, matching values, data types)</strong></p></li>
-<li><p><strong>What kinds of operations can you perform using table functions (add field, delete field, calculate field)?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ol class="arabic simple">
+<li><p class="sd-card-text"><strong>Common key field present in both tables</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Both the target layer (the one receiving the join) and the join table must have a field (column) that is the “join key,” which contains matching identifiers in corresponding rows.</p></li>
+</ul>
+</li>
+<li><p class="sd-card-text"><strong>Matching values in those key fields</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">The values in the key field must overlap: for each feature in the target layer that you want to get joined data for, there must be a matching value in the join table’s key field. If there is no match, the joined value will typically be NULL or blank.</p></li>
+</ul>
+</li>
+<li><p class="sd-card-text"><strong>Compatible data types</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">The key fields should be of the same or compatible data type (e.g. both integer, or both text) so that QGIS can match them. If one is a text field and the other is numeric, matching won’t work reliably.</p></li>
+</ul>
+</li>
+<li><p class="sd-card-text"><strong>Uniqueness of values</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Ideally, the join table should have unique values in the join key (one-to-one join). If there are multiple matching rows (one-to-many), then you might end up with duplicates, or ambiguous matching — QGIS may either take the first match or aggregate, depending on join method.</p></li>
+<li><p class="sd-card-text">The target layer normally does not change its number of features — the join just appends fields, not duplicating geometry (unless you convert to a permanent joined file in a different way).</p></li>
+</ul>
+</li>
+<li><p class="sd-card-text"><strong>What kinds of operations can you perform using table functions (add field, delete field, calculate field)?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text"><strong>Add field</strong>: Create a new attribute column (of a chosen type, e.g. integer, decimal, text) to hold computed or imported values.</p></li>
+<li><p class="sd-card-text"><strong>Delete field</strong>: Remove unwanted or redundant fields/columns from a layer’s attribute table.</p></li>
+<li><p class="sd-card-text"><strong>Calculate field (Field Calculator)</strong>: Compute new values (for existing or new fields) using expressions (arithmetic, conditional logic, functions) based on other attributes, constants, or functions. For example: calculate population density = population / area; or classify values using CASE WHEN logic.</p></li>
+<li><p class="sd-card-text"><strong>Update/Edit existing field</strong>: You can also update or overwrite values in an existing field, provided the layer is in edit mode.</p></li>
+</ul>
+</div>
+</details></div>
+</details><ol class="arabic simple" start="5">
 <li><p><strong>What is a non‑spatial query? How would you use “Select by expression” to filter your data?</strong></p></li>
 </ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">A non‑spatial query is a query applied to the attribute table (fields) rather than based on geometry. It filters or selects rows (features) based on attribute conditions, not spatial conditions.</p></li>
+<li><p class="sd-card-text">In QGIS, “Select by expression” is a tool you can use to write logical expressions (e.g. <code class="docutils literal notranslate"><span class="pre">&quot;population&quot;</span> <span class="pre">&gt;</span> <span class="pre">10000</span> <span class="pre">AND</span> <span class="pre">&quot;region&quot;</span> <span class="pre">=</span> <span class="pre">'East'</span></code>) to select the subset of features whose attributes satisfy the criteria.</p></li>
+<li><p class="sd-card-text">After selection, you can use the selected subset for further operations (e.g. export selected features, style them differently, analyze only them, etc.).</p></li>
+</ul>
 </div>
+</details></div>
 </section>
 </section>
 

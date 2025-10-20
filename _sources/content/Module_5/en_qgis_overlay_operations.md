@@ -255,7 +255,23 @@ Screenshot of the tool Clip vector by mask layer
 :class: note
 
 1. __What is an overlay operation in GIS, and when is it useful?__
+
+:::{dropdown} Answer
+- An overlay operation is a type of vector geoprocessing tool in GIS that combines or manipulates the geometries of two (or more) layers based on their spatial relationships (such as intersection, union, clipping, etc.).  
+It is useful when: 
+- When you want to extract a subset of features from a larger dataset (e.g., clip roads to an administrative boundary)
+- When you want to merge or aggregate spatial areas (e.g., dissolve overlapping flood extents into one combined area).
+- In humanitarian or operational workflows: e.g., determining the coverage area of health centres, the extent of hazard zone inside a region, or trimming large datasets to an area of interest to improve efficiency.
+
+:::
+
 2. __When carrying out overlay operations in QGIS, how do attribute tables of input layers combine in the output layer? What happens to attributes from each input?__
+
+:::{dropdown} Answer
+- In most cases, QGIS allows you to specify which attributes will be copied from which input to the algorithm output. If nothing is specified, QGIS will usually copy all attributes from both layers to the resulting layer.
+- While the core attributes of the features remain the same, some properties, like area or length, may change after the clipping operation. If you’ve stored these properties as attributes, you might need to update them in the resulting layer.
+
+:::
 
 ::::
 
