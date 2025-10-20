@@ -343,10 +343,33 @@ The only item in the print layout that is being controlled by the atlas is the m
 ::::{admonition} Test your knowledge
 :class: note
 
-1. __How do you create or open a new layout in QGIS?__
+1. __How do you create or open a layout in QGIS?__
+
+:::{dropdown} Answer
+- In QGIS, you go to `Project` → `New Print Layout` to create a new layout.
+- That opens the Print Layout Composer, a new window where you can begin composing your map layout.
+- If you already have layouts saved __in this project__, you can open them via the __Layout Manager__ (`Project` → `Layout Manager`), where you will find a list of existing layouts.
+- Additionally, you can create a layout from a template file via the Layout Manager (__"New from template"__) if you have saved a `.qpt` file.
+:::
+
+
 2. __What is the difference between the “map item” (map frame) inside a layout and the main QGIS map canvas?__
+
+:::{dropdown} Answer
+- The map item in the print layout composer is a of the map canvas in the main QGIS window and shows the layers as they are shown in the main window.
+- In the main map canvas, you are able to interact with the data whereas you can only see the data in the print layout composer.
+- The map item shows the map as it is in the map canvas (you might have to update the map item to show changed symbology), unless you lock the layers and layers styles for the specific map item. 
+::
+
 3. __How do you lock layer in a map you've added to the print layout?__
-4. __If you update your map layers or styling in the QGIS project after creating a layout, what will happen to the layout when you re-open it?__
+
+:::{dropdown} Answer
+Locking is essential if you want the layout’s map item to preserve exactly what you set, even if later you change things in the project.
+- Select the map item in the print layout composer
+- In its __Item properties panel__, there is an option to __lock layers and styling__ for that map.
+- Once locked, you can change the layer order or layer symbology in the main QGIS window without changing the map in the print layout.  
+
+:::
 
 
 ::::
