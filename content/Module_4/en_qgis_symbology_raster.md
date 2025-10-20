@@ -101,10 +101,53 @@ To achieve this,
 :class: note
 
 1. __Why can’t you style a raster layer by changing “fill” or “outline” in the way you do with vector data?__
+
+:::{dropdown} Answer
+- Raster data are made of __pixels (cells)__, each with a value (e.g. elevation, reflectance), not discrete geometries. So there is no “outline” to stroke, nor a single “fill” for the whole polygon.
+- Styling rasters is about mapping pixel values to colours, rather than applying boundary or fill styling to features.
+- Vector styling operates on geometric features (points, lines, polygons) and you can control fills, strokes, shapes etc.; but raster styling works by symbology/rendering algorithms (colour ramping, stretching, classification) on the continuous grid of values.
+:::
+
 2. __What is the default rendering style for a single‑band raster in QGIS, and into what style is it commonly changed for better visualisation?__
+
+:::{dropdown} Answer
+- The default rendering for a single‑band raster is __Singleband gray (grayscale)__ — low values are darker, high values are lighter.
+- For better visualization, it's common to change it to __Singleband pseudocolor__ (i.e. assign a color ramp) so that variations in values are more visually distinct.
+:::
+
 3. __What is a “colour ramp” (or gradient) in the context of raster symbology, and how does it help interpret the data?__
+
+:::{dropdown} Answer
+- A colour ramp (or gradient) is a continuous range of colours that are mapped to the range of raster values (from minimum to maximaum). 
+- By mapping increasing (or decreasing) values to a progression of colours, the reader can visually interpret the magnitude, gradients, and spatial patterns of the underlying numeric data.
+- The use of colour (rather than just grey) can help emphasise meaningful thresholds, critical values (e.g., very high or low), and improve readability and visual appeal.
+- A well‐designed colour ramp can highlight differences (e.g., higher vs lower values), reveal spatial structure (e.g., peaks, valleys, clusters), and make the raster meaningful rather than just a grey blob.
+
+
+:::
+
 4. __Give an example of a raster dataset (e.g. digital elevation model, NDVI, precipitation) and propose a suitable colour ramp or palette you might use in QGIS__
+
+:::{dropdown} Answer
+__Example:__ A digital elevation model (DEM) representing terrain elevation (in metres)
+__Proposed suitable colour ramp/palette:
+- Lower elevations: dark green (lowland)
+- Mid elevations: light green → yellow (gentle slopes)
+- Higher elevations: orange → brown (steep slopes/upper terrain)
+- Highest elevations/peaks: white (snow/ice caps)
+
+In QGIS you might choose a ramp like “Terrain (elevation)” or a custom ramp from the cpt‑city catalogue (the module mentions that QGIS includes the cpt‑city colour palette catalogue with many carefully crafted colour ramps, including ones for elevation models).
+
+:::
+
 5. __When designing a colour ramp for raster data (e.g. elevation, temperature), what should you watch out for in terms of lightness, hue, or perceptual uniformity?__
 
+:::{dropdown} Answer 
+
+- __Lightness/darkness progression:__ A progression from lighter to darker colours are easier to read. QGIS has a lightness plot in the colour ramp editor. If lightness jumps up and down irregularly, some segments may appear visually more prominent than others. Additionally, colours ramps with irregular lightness do not translate to black and white prints. In general, irregular colour ramps are less intuitive to read. 
+- __Hue shifts:__ Sudden changes in hue may draw undue attention and may imply categorical rather than continuous differences. If hues change dramatically while lightness remains constant, it may mislead the reader into thinking there are discrete classes.
+- __Avoiding misleading associations:__ Colours carry cultural or intuitive meanings (e.g. red = hot/danger, blue = cold, green = vegetation). If you ramp uses unusual colour, the meaning may confuse.
+- __Contrast and readability:__ Very dark segments may hide detail; very light segments may fade out. Also consider how the ramp will appear when printed, in greyscale, or by colour‐impaired readers.
+- __Interpretation of extremes and middle ranges:__ If the ramp has extreme jumps at the ends or very flat mid‐range, you might lose nuance in important segments. Also avoid ramps that place extremes at colours that are visually “loud” and overshadow moderate values.
 
 ::::
