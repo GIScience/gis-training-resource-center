@@ -676,12 +676,91 @@ To achieve this,
 <p class="admonition-title">Test your knowledge</p>
 <ol class="arabic simple">
 <li><p><strong>Why can’t you style a raster layer by changing “fill” or “outline” in the way you do with vector data?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">Raster data are made of <strong>pixels (cells)</strong>, each with a value (e.g. elevation, reflectance), not discrete geometries. So there is no “outline” to stroke, nor a single “fill” for the whole polygon.</p></li>
+<li><p class="sd-card-text">Styling rasters is about mapping pixel values to colours, rather than applying boundary or fill styling to features.</p></li>
+<li><p class="sd-card-text">Vector styling operates on geometric features (points, lines, polygons) and you can control fills, strokes, shapes etc.; but raster styling works by symbology/rendering algorithms (colour ramping, stretching, classification) on the continuous grid of values.</p></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="2">
 <li><p><strong>What is the default rendering style for a single‑band raster in QGIS, and into what style is it commonly changed for better visualisation?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">The default rendering for a single‑band raster is <strong>Singleband gray (grayscale)</strong> — low values are darker, high values are lighter.</p></li>
+<li><p class="sd-card-text">For better visualization, it’s common to change it to <strong>Singleband pseudocolor</strong> (i.e. assign a color ramp) so that variations in values are more visually distinct.</p></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="3">
 <li><p><strong>What is a “colour ramp” (or gradient) in the context of raster symbology, and how does it help interpret the data?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">A colour ramp (or gradient) is a continuous range of colours that are mapped to the range of raster values (from minimum to maximaum).</p></li>
+<li><p class="sd-card-text">By mapping increasing (or decreasing) values to a progression of colours, the reader can visually interpret the magnitude, gradients, and spatial patterns of the underlying numeric data.</p></li>
+<li><p class="sd-card-text">The use of colour (rather than just grey) can help emphasise meaningful thresholds, critical values (e.g., very high or low), and improve readability and visual appeal.</p></li>
+<li><p class="sd-card-text">A well‐designed colour ramp can highlight differences (e.g., higher vs lower values), reveal spatial structure (e.g., peaks, valleys, clusters), and make the raster meaningful rather than just a grey blob.</p></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="4">
 <li><p><strong>Give an example of a raster dataset (e.g. digital elevation model, NDVI, precipitation) and propose a suitable colour ramp or palette you might use in QGIS</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Example:</strong> A digital elevation model (DEM) representing terrain elevation (in metres)
+__Proposed suitable colour ramp/palette:</p>
+<ul class="simple">
+<li><p class="sd-card-text">Lower elevations: dark green (lowland)</p></li>
+<li><p class="sd-card-text">Mid elevations: light green → yellow (gentle slopes)</p></li>
+<li><p class="sd-card-text">Higher elevations: orange → brown (steep slopes/upper terrain)</p></li>
+<li><p class="sd-card-text">Highest elevations/peaks: white (snow/ice caps)</p></li>
+</ul>
+<p class="sd-card-text">In QGIS you might choose a ramp like “Terrain (elevation)” or a custom ramp from the cpt‑city catalogue (the module mentions that QGIS includes the cpt‑city colour palette catalogue with many carefully crafted colour ramps, including ones for elevation models).</p>
+</div>
+</details><ol class="arabic simple" start="5">
 <li><p><strong>When designing a colour ramp for raster data (e.g. elevation, temperature), what should you watch out for in terms of lightness, hue, or perceptual uniformity?</strong></p></li>
 </ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text"><strong>Lightness/darkness progression:</strong> A progression from lighter to darker colours are easier to read. QGIS has a lightness plot in the colour ramp editor. If lightness jumps up and down irregularly, some segments may appear visually more prominent than others. Additionally, colours ramps with irregular lightness do not translate to black and white prints. In general, irregular colour ramps are less intuitive to read.</p></li>
+<li><p class="sd-card-text"><strong>Hue shifts:</strong> Sudden changes in hue may draw undue attention and may imply categorical rather than continuous differences. If hues change dramatically while lightness remains constant, it may mislead the reader into thinking there are discrete classes.</p></li>
+<li><p class="sd-card-text"><strong>Avoiding misleading associations:</strong> Colours carry cultural or intuitive meanings (e.g. red = hot/danger, blue = cold, green = vegetation). If you ramp uses unusual colour, the meaning may confuse.</p></li>
+<li><p class="sd-card-text"><strong>Contrast and readability:</strong> Very dark segments may hide detail; very light segments may fade out. Also consider how the ramp will appear when printed, in greyscale, or by colour‐impaired readers.</p></li>
+<li><p class="sd-card-text"><strong>Interpretation of extremes and middle ranges:</strong> If the ramp has extreme jumps at the ends or very flat mid‐range, you might lose nuance in important segments. Also avoid ramps that place extremes at colours that are visually “loud” and overshadow moderate values.</p></li>
+</ul>
 </div>
+</details></div>
 </section>
 </section>
 

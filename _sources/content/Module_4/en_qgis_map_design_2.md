@@ -173,10 +173,36 @@ Now that we have covered what to keep in mind when designing maps, let's take a 
 :class: note
 
 1. __What is the print layout manager and why do you use it to create maps in QGIS instead of the main QGIS window?__
-2. __What are the key map elements (map components) you should include in a final layout (e.g. title, legend, north arrow, scale bar, inset, northing, attribution)?__
 
+:::{dropdown} Answer
+The Print Layout Manager (via `Project` → `New Print Layout` in QGIS) is a separate interface/window in which you assemble your map for output (print or export) rather than working only in the main map canvas.
+
+The __Print Layout composer__:
+
+- Allows you to place map elements (map frames, legends, scale bars, titles, inset maps, annotations) in a fixed layout (page size, orientation, margins) suitable for export or printing.
+- The main QGIS map canvas is designed for interactive editing, exploration and dynamic symbology, not for designing a final composition with all the additional map elements and print specifications (paper size, resolution, export format).
+- In the print layout composer, you can precisely control placement, sizing, layering and placement of map elements.
+- It enables you to create a polished map product.
 
 :::
+
+2. __What are the key map elements (map components) you should include in a final layout (e.g. title, legend, north arrow, scale bar, inset, northing, attribution)?__
+
+:::{dropdown} Answer
+
+A good map should offer additional information, that allows the contextualisation of the map and the displayed information as well as the attribution. 
+
+The basic elements for a complete map layout should include:
+
+- __Title:__ A short, concise statement of what the map shows (including the place, the subject and the date if relevant). 
+- __Legend:__ Explains the symbols, colours and layers used in the map so the reader can interpret the symbology in the map.
+- __Scale:__ Indicates the spatial relationship between map units and real-world distances.
+- __Orientation:__ Typically a north arrow.
+- __Source/Data attribution:__ A statement of the data sources, author, date of data.
+- Additional information to help contextualise the map (e.g., description, overview map, attribute table, graph,...)
+
+
+::::
 
 ## Further Resources
 

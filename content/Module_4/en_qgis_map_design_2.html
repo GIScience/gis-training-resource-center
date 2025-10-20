@@ -571,6 +571,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#self-assessment-questions">4.6.2. Self-Assessment Questions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-resources">4.6.3. Further Resources</a></li>
 </ul>
             </nav>
         </div>
@@ -754,15 +755,51 @@ document.write(`
 <p class="admonition-title">Check your knowledge</p>
 <ol class="arabic simple">
 <li><p><strong>What is the print layout manager and why do you use it to create maps in QGIS instead of the main QGIS window?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The Print Layout Manager (via <code class="docutils literal notranslate"><span class="pre">Project</span></code> → <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Print</span> <span class="pre">Layout</span></code> in QGIS) is a separate interface/window in which you assemble your map for output (print or export) rather than working only in the main map canvas.</p>
+<p class="sd-card-text">The <strong>Print Layout composer</strong>:</p>
+<ul class="simple">
+<li><p class="sd-card-text">Allows you to place map elements (map frames, legends, scale bars, titles, inset maps, annotations) in a fixed layout (page size, orientation, margins) suitable for export or printing.</p></li>
+<li><p class="sd-card-text">The main QGIS map canvas is designed for interactive editing, exploration and dynamic symbology, not for designing a final composition with all the additional map elements and print specifications (paper size, resolution, export format).</p></li>
+<li><p class="sd-card-text">In the print layout composer, you can precisely control placement, sizing, layering and placement of map elements.</p></li>
+<li><p class="sd-card-text">It enables you to create a polished map product.</p></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="2">
 <li><p><strong>What are the key map elements (map components) you should include in a final layout (e.g. title, legend, north arrow, scale bar, inset, northing, attribution)?</strong></p></li>
 </ol>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-<span class="c1">## Further Resources</span>
-
-<span class="o">-</span> <span class="p">[</span><span class="n">Data</span> <span class="n">Visualization</span> <span class="n">Accessibility</span> <span class="n">Checklist</span><span class="p">](</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">learn</span><span class="o">-</span><span class="n">sims</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">style</span><span class="o">-</span><span class="n">guidance</span><span class="o">/</span><span class="n">data</span><span class="o">-</span><span class="n">visualization</span><span class="o">-</span><span class="n">accessibility</span><span class="o">-</span><span class="n">checklist</span><span class="o">/</span><span class="p">)</span>
-</pre></div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">A good map should offer additional information, that allows the contextualisation of the map and the displayed information as well as the attribution.</p>
+<p class="sd-card-text">The basic elements for a complete map layout should include:</p>
+<ul class="simple">
+<li><p class="sd-card-text"><strong>Title:</strong> A short, concise statement of what the map shows (including the place, the subject and the date if relevant).</p></li>
+<li><p class="sd-card-text"><strong>Legend:</strong> Explains the symbols, colours and layers used in the map so the reader can interpret the symbology in the map.</p></li>
+<li><p class="sd-card-text"><strong>Scale:</strong> Indicates the spatial relationship between map units and real-world distances.</p></li>
+<li><p class="sd-card-text"><strong>Orientation:</strong> Typically a north arrow.</p></li>
+<li><p class="sd-card-text"><strong>Source/Data attribution:</strong> A statement of the data sources, author, date of data.</p></li>
+<li><p class="sd-card-text">Additional information to help contextualise the map (e.g., description, overview map, attribute table, graph,…)</p></li>
+</ul>
 </div>
-</div>
+</details></div>
+</section>
+<section id="further-resources">
+<h2><span class="section-number">4.6.3. </span>Further Resources<a class="headerlink" href="#further-resources" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://learn-sims.org/style-guidance/data-visualization-accessibility-checklist/">Data Visualization Accessibility Checklist</a></p></li>
+</ul>
 </section>
 </section>
 
@@ -836,6 +873,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#self-assessment-questions">4.6.2. Self-Assessment Questions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-resources">4.6.3. Further Resources</a></li>
 </ul>
   </nav></div>
 
