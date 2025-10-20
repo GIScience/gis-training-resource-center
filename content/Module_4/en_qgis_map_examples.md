@@ -200,8 +200,27 @@ It is a mistake because:
 :class: note
 
 1. __What makes a map “good” or effective? In your own words, list at least three qualities or principles illustrated by the example maps.__
+
+:::{dropdown} Answer
+1. __Clarity/readability at a glance__
+    - A good map allows the viewer to immediately understand the key message or distribution without having to decipher overly complex symbology. For example, the example maps use clean colour schemes (or minimal distractions) so that the spatial pattern stands out.
+2. __Appropriate visual hierarchy and focus__
+    - That means emphasising the main theme or data of the map, while de-emphasising background or context layers so they don’t compete. For example, context features (roads, boundaries, basemap) are often light, subtle, or greyed out; while the thematic layers are bold. This directs the viewer’s eye to what matters. One of the example maps shows how subsidiary layers are subdued so the main data pops out.
+3. __Fit for purpose/audience and effective design choices__
+    - A good map aligns its design (colours, symbols, labelling, orientation) with the intended audience and the purpose (operational, humanitarian, public communication, scientific). For example, using intuitive colours (e.g., red for high risk, green for safe) or simplified icons for non‑technical audiences. The module implicitly shows different example map types tailored to humanitarian use, operational decision‑making, etc.
+:::
+
 2. __Consider the intended audience and use case for one of the example maps (e.g. humanitarian, operational, public communication). How do design choices reflect that audience (e.g. simplicity, clarity, icon selection)?__
-3. __What mistakes should you avoid when designing a map? Name three points and explain why it is bad design.__
+
+:::{dropdown} Answer
+Design choices should reflect that:
+- __Simplicity and clarity__: The map avoids overly detailed or decorative features; it focuses on the essential: the affected area, safe zones/routes, relief hubs in the context of a flood-response map.
+- __Use of intuitive icons/symbology__: For instance, a shelter icon, or a triangle for hazard, arrows for movement — easily understood without needing deep legend lookup.
+- __High contrast and meaningul colours__: For instance, red/orange for hazardous zones, green for safe or cleared areas, possibly a neutral grey for context. This helps non‑technical users quickly interpret what’s urgent.
+- __Minimal distractions__: The background may be subdued, roads/boundaries muted, to make the operational layer stand out. Also large readable fonts for titles/labels because maybe viewed in the field.
+- __Clear map elements and layout for quick reference__: Big title (e.g., “Flood Damage Zones – 24 Oct 2025”), a prominent legend, scale bar, north arrow, and possibly an inset map for orientation.
+Thus, the design choices reflect the audience by prioritising readability, immediacy, and intuitive interpretability over cartographic elegance or deep detail.
+:::
 
 
 ::::
