@@ -67,7 +67,7 @@ Naming your data correctly ensures that you can identify the layers and your com
 when working with your data files. The name of your files themselves need to be clear, meaning that you or others 
 can identify what the data shows, where the data comes from, and to what time it refers. In QGIS, you should name 
 your layers so you can identify the content, as well as what you have done with the layer. For example, if you have 
-clipped a street layer of new york, do not name the layer "clipped", give it a name such as "streets_NYC_clipped".
+clipped a street layer of New York, do not name the layer "clipped", give it a name such as "streets_NYC_clipped".
 
 There are some basic principles when it comes to naming geodata that you produce 
 or manipulate:
@@ -96,18 +96,14 @@ whether they are needed in the final project.
 Documentation is an important step when working with geodata or performing analyses. It ensures clarity, 
 reproducibility, and enables collaboration. Spatial data analysis often involves complex processes, data cleaning, 
 data transformations, and specific data sources. Without proper documentation, it becomes difficult for yourself and 
-others to understand, replicate, or build upon your work. Documentation helps organising the purpose, the methods or 
-tools, the data inputs and outputs, as well as the the assumptions and limitations. 
+others to understand, replicate, or build upon your work. Documentation helps organise the purpose, the methods or 
+tools, the data inputs and outputs, as well as the assumptions and limitations. 
 In general, good documentation allows GIS-practitioners to reproduce the analysis steps to get the exact same result. 
 In collaborative work, good documentation serves as a roadmap and is essential when working on GIS-projects. In 
-humanitarian work, and in decision-making processes, good documentation is essential as it helps informed decision 
+humanitarian work, and in decision-making processes, good documentation is essential as it helps inform decision 
 making which enables humanitarian teams to allocate resources. 
 
-You can document your projects using markdown editors or just simply creating a word document. Make sure it is saved 
-in he documentation subfolder in your project folder. There are not set rules to write a documentation, however, 
-adhering to a logical structure can help writing and reading your documentation. It is also advisable to write the 
-documentation __while__ you are performing the analysis. QGIS offers a lot of options and settings while performing 
-an analysis, and it can be easy to forget the parameters you have used for an analysis step. 
+You can document your projects using markdown editors or just simply creating a word document. Make sure it is saved in the documentation subfolder in your project folder. There are no set rules to write a documentation, however, adhering to a logical structure can help writing and reading your documentation. It is also advisable to write the documentation while you are performing the analysis. QGIS offers a lot of options and settings while performing an analysis, and it can be easy to forget the parameters you have used for an analysis step.
 
 1. __Project overview:__
    - Add the title and purpose of the project.

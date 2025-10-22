@@ -113,7 +113,7 @@ The data to create maps or perform GIS analyses can come from various sources (S
 
 OpenStreetMap (OSM) is a collaborative project that aims to create a free and editable map of the world. Unlike traditional maps, which are often proprietary and controlled by commercial entities, OSM allows anyone to contribute and edit map data, resulting in a detailed and constantly evolving map of roads, trails, landmarks, and more. With its open-source nature and global community of contributors, OpenStreetMap has become a valuable resource for a wide range of applications, from navigation and urban planning to disaster response and humanitarian aid.
 
-There a multiple ways to get OpenStreetMap (OSM) data as a vector file into QGIS. The three most common and easy-to-use ways are geofabrik.de, HOT Export Tool and QuickOSM [QGIS Plugin](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html). Each of the options has both advantages and disadvantages.
+There are multiple ways to get OpenStreetMap (OSM) data as a vector file into QGIS. The three most common and easy-to-use ways are geofabrik.de, HOT Export Tool and QuickOSM [QGIS Plugin](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html). Each of the options has both advantages and disadvantages.
 
 ```{Tip}
 
@@ -127,7 +127,7 @@ As you can see, Geofabrik is great if you want to get complete OSM datasets for 
 
 | Advantages  |  Disadvantages |
 |---|---|
-|+ Quick access to complete OSM datasets|- If one is only interested in specific features or regions (other then countries), not optimal|
+|+ Quick access to complete OSM datasets|- If one is only interested in specific features or regions (other than countries), not optimal|
 |+ Very up-to-date OSM exports|- Large file size|
 |+ Clear documentation of which OSM features are contained in each shapefile|- Only available as shapefile|
 
@@ -227,7 +227,7 @@ you can download customized extracts of up-to-date OSM data in different file
 formats. It offers a browser-based tool to download OSM data with good options 
 to specify region, time, feature type and data format.
 
-1. Go to the HOT Export tool. To use the tool you need a OSM account. 
+1. Go to the HOT Export tool. To use the tool you need an OSM account. 
 
    If you have an OSM account you can log in directly into the HOT Export tool by 
    clicking on `Log in`.

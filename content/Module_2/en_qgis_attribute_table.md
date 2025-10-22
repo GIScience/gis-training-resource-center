@@ -37,7 +37,7 @@ data.
 ## Opening the attribute table
 
 Having a look into the attribute table is essential to understand and get an overview of the 
-data you are working with. After downloading and import a dataset into QGIS, you will most likely open the attribute table to understand the data and see what information is available. Understanding what kind of information is available is indispensable when working with GIS software.
+data you are working with. After downloading and importing a dataset into QGIS, you will most likely open the attribute table to understand the data and see what information is available. Understanding what kind of information is available is indispensable when working with GIS software.
 
 You can open the attribute table in two ways:
 
@@ -204,7 +204,7 @@ Screenshot of how to zoom to Selection by clicking right.
 ## Save only selected features as a new file
 
 After you have selected your data, you might want to proceed with only the 
-selection. You can save your selection as new layer. To do so right click on the 
+selection. You can save your selection as a new layer. To do so right click on the 
 layer - `Export` -> `Save only selected features`
 
 ```{figure} /fig/en_save_selection.png
@@ -222,7 +222,7 @@ Now, you can choose the format, layer name and CRS.
 
 ```{tip}
 
-We recommend use GeoPackage (.gpkg) instead of shapefile (.shp) in most cases. 
+We recommend using GeoPackage (.gpkg) instead of shapefile (.shp) in most cases. 
 If you are unsure which format is most appropriate, check out the [geodata types](/content/Wiki/en_qgis_geodata_types_wiki.md) page on the wiki.
 
 ```

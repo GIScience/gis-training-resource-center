@@ -68,15 +68,15 @@ platforms and applications.
 
 To change the CRS of your data and project, follow the steps explained below.
 The default CRS/EPSG code of every QGIS project is the World Geodetic System 84 
-(EPSG: 4326). This CRS is optimized for world maps and therefore is not ideal for most humanitarian application, as we need region-specific projections, that provide the least distortion on the scale we wish to represent. 
+(EPSG: 4326). This CRS is optimized for world maps and therefore is not ideal for most humanitarian applications, as we need region-specific projections that provide the least distortion on the scale we wish to represent. 
 
 ```{Tip}
-Choose the projection according to your area of interest. There are special CRS, that have been created to reduce 
+Choose the projection according to your area of interest. There are special CRS that have been created to reduce 
 the distortion and inaccuracy of projections for different regions on earth. You can find all the projections and 
 their CRS codes on [EPSG.io](http://epsg.io). 
 ```
 
-Look at the following images and pay attention how the different Coordinate Reference Systems change and distort the world map. 
+Look at the following images and pay attention to how the different Coordinate Reference Systems change and distort the world map. 
 
 ```{figure} /fig/world_mercator_tissots.png
 ---
@@ -86,7 +86,7 @@ name: world_mercator_tissot
 The Mercator Projection (EPSG:54004) (Source: HeiGIT).
 ```
 
-Notice how the shape of the circle stays the same. Out of this, we can conclude that the angles stay the same. However, the circles get bigger the further away they are from the equator, and the distance between these circles change the further they they get from the equator. Therefore, we can conclude that the distances and sizes are being distorted with the mercator projection. The strength of the Mercator projection is that it conserves the angles between to lines. We can see this because the circles stay perfectly circular the further they are from the equator.
+Notice how the shape of the circle stays the same. Out of this, we can conclude that the angles stay the same. However, the circles get bigger the further away they are from the equator, and the distance between these circles change the further they get from the equator. Therefore, we can conclude that the distances and sizes are being distorted with the mercator projection. The strength of the Mercator projection is that it conserves the angles between two lines. We can see this because the circles stay perfectly circular the further they are from the equator.
 
 
 ```{figure} /fig/WGS_84_tissots.png
@@ -97,11 +97,7 @@ width: 500 px
 The World Geodetic System 1984 (EPSG:4326) (Source: HeiGIT).
 ```
 
-The WGS 84 is a CRS which consists of an ellipsoid, that resembles the shape of the earth closely. Instead of metrical 
-units of measurements, it uses angular degrees (latitude and longitude). The shape of the Tissot circles is undistorted 
-near the equator, but becomes elongated on the East-West axis the further it gets away from the equator. Unlike the 
-Mercator projection, there is no distortion on the in the North-South direction. As the circles become distorted, we 
-can deduce that the this CRS distorts the angles.
+The WGS 84 is a CRS which consists of an ellipsoid that closely resembles the shape of the earth. Instead of metrical units of measurements, it uses angular degrees (latitude and longitude). The shape of the Tissot circles is undistorted near the equator, but becomes elongated on the East-West axis the further it gets away from the equator. Unlike the Mercator projection, there is no distortion in the North-South direction. As the circles become distorted, we can deduce that this CRS distorts the angles.
 
 
 ```{figure} /fig/World_equidistant_cylindrical_tissots.png
@@ -112,7 +108,7 @@ width: 500 px
 The World Equidistant Cylindrical Projection (EPSG:54002) (Source: HeiGIT).
 ```
 
-The World Equidistant cylindrical CRS is equidistant (not distorting the length) along any meridian (cricles of longitude; North to South), and along the two standard parallels. The shape, scale and area distort the further they are away from the standard parallels. 
+The World Equidistant cylindrical CRS is equidistant (not distorting the length) along any meridian (circles of longitude; North to South), and along the two standard parallels. The shape, scale and area distort the further they are away from the standard parallels. 
 
 This table shows an overview on which projections to use for which needed 
 characteristic:
@@ -138,8 +134,8 @@ The same point in three different reference systems (Source: HeiGIT).
 There are two different types of Coordinate Reference System: __Geographic__ or __Metric__ CRS. 
 
 - A Geographic CRS is based on a three-dimensional, ellipsoidal model of the Earth. It uses angular measurements (__latitude and longitude__) to define locations on the Earth's surface. The coordinates are usually expressed in degrees (e.g., 45°N, 120°W). 
-   - __Advantages__: Since it is based on the Earth's curvature, it can be used to represent locationa anywhere on the earth. Most global datasets, GPS, and mapping systems use Geographic CRS making it highly compatible with various data sources. Locations can be specified accurately with angular measurements.
-   - __Disadvantage__: Because it uses angular measurements, distances, areas, and shapes can be highly __distorted__. Since the distance between the circles of latitute and longitude change, the conversion of angles to meters is not constant 
+   - __Advantages__: Since it is based on the Earth's curvature, it can be used to represent locations anywhere on the earth. Most global datasets, GPS, and mapping systems use Geographic CRS making it highly compatible with various data sources. Locations can be specified accurately with angular measurements.
+   - __Disadvantage__: Because it uses angular measurements, distances, areas, and shapes can be highly __distorted__. Since the distance between the circles of latitude and longitude change, the conversion of angles to meters is not constant 
 - A metric CRS is a 2D representation of the earths surface. Although it is difficult to represent large areas of the globe on a 2D surface without surface, it is possible to create a 2D projection of a limited region with minimal distortion. The map units are typically metres or feet. It is created by projecting the earth onto a flat plane. 
    - __Advantages__: Since it uses a flat plane, you can calculate distances, areas, and angles accurately.
    - __Disadvantages__: A given projected CRS is usually optimized for a particular region. Using it outside its intended area can lead to significant distortions in distance, area, and shape.
@@ -149,7 +145,7 @@ There are two different types of Coordinate Reference System: __Geographic__ or 
 name: problem_distance_geographic_coords
 width: 600 px
 ---
-A geographic representation of the globe. The distance between the meridians converge towards the north and south pole (Source: HeiGIT).
+A geographic representation of the globe. The distance between the meridians converges towards the north and south pole (Source: HeiGIT).
 ```
 
 ```{caution}
@@ -187,12 +183,12 @@ Understanding projections and coordinate reference systems is not easy. The next
 One of the first things you do when starting a new QGIS project should be to check and adjust the CRS/EPSG code to 
 the region or area you are working on. If you are working on a map showing the entire globe, global projection such 
 as the mercator projection should be used. If you are working on a smaller region, such as a continent, a country, 
-or even smaller regions, __you should always use a local CRS, to avoid inaccuracies__. If you don't know which CRS to use, you can search for a suited one on EPSG.IO. Simply enter the name of your region and take a look at the available options. Make sure that the CRS you choose is in the correct unit of measurements (metres, feet, or degrees)
+or even smaller regions, __you should always use a local CRS, to avoid inaccuracies__. If you don't know which CRS to use, you can search for a suitable one on EPSG.IO. Simply enter the name of your region and take a look at the available options. Make sure that the CRS you choose is in the correct unit of measurements (metres, feet, or degrees)
 ```
 
 
 1. Open a QGIS project
-2. In the very down right corner of QGIS you find the button `EPSG`. The number 
+2. In the very bottom right corner of QGIS you find the button `EPSG`. The number 
 next to it is the EPSG Code currently used in the project. To see more information, or to change the CRS, click on the `Current CRS`-button ![](/fig/EPSG_Code.png). 
 3. The window `Project Properties` will open. Here you can view all available 
 CRS/EPSG-Code and their properties.

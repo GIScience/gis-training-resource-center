@@ -50,8 +50,7 @@ There are two ways to add OpenStreetMap as a basemap:
 ## QuickMapServices
 
 There are lots of plugins available for QGIS that provide additional tools not 
-available in a standard installation. The [plugins page](/content/Wiki/en_qgis_plugins_wiki.md) on the wiki provides a more detailed example
-information.
+available in a standard installation. The [plugins page](/content/Wiki/en_qgis_plugins_wiki.md) on the wiki provides more detailed example information.
 One useful plugin is [QuickMapServices](https://nextgis.com/blog/quickmapservices/). 
 This plugin lets you access a wide range of basemaps that are not available in 
 QGIS by default, such as Bing or Sentinel-2 satellite imagery.
@@ -92,7 +91,7 @@ To add a basemap from the QuickMapServices plugin:
 
 ```{Tip}
 
-A list of basemaps and useful search queries for the QMS-plugin can be found on [this website](https://qms.nextgis.com). This link can also be found in the "About" section of the QMS-plugin
+A list of basemaps and useful search queries for the QMS-plugin can be found on [this website](https://qms.nextgis.com). This link can also be found in the "About" section of the QMS-plugin.
 
 ```
 
@@ -104,7 +103,7 @@ A list of basemaps and useful search queries for the QMS-plugin can be found on 
 
 ```{Note}
 
-When you are using QuickMapServices, be aware that some of these maps are under copyright laws, that restrict the reproduction of these maps. Be aware of these restrictions by looking up the copyright licenses for the basemaps you are using. In general, satellite imagery is not free to use. This means you can not publish maps with all of the available base maps!
+When you are using QuickMapServices, be aware that some of these maps are under copyright laws that restrict the reproduction of these maps. Be aware of these restrictions by looking up the copyright licenses for the basemaps you are using. In general, satellite imagery is not free to use. This means you can not publish maps with all of the available base maps!
 
 ```
 
