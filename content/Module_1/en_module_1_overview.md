@@ -13,6 +13,7 @@ The first module is aimed to familiarise beginners with the concept of geographi
 
 :::{list-table} Platform material
 :header-rows: 1
+:widths: 100 600
 
 *   - __Chapter__ 
     - __Competences & Objectives__
