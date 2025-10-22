@@ -46,7 +46,7 @@ QGIS is constantly changing, with new features being added. Because of this, the
 ## Working with QGIS
 
 
-In QGIS, you create projects where you visualise and manipulate geodata. There are three main workflows you will use: __Data collection and creation, data processing, and data visualisation__. Geodata is loaded into QGIS projects which will represented as layers on a map canvas.
+In QGIS, you create projects where you visualise and manipulate geodata. There are three main workflows you will use: __data collection and creation, data processing, and data visualisation__. Geodata is loaded into QGIS projects which will be represented as layers on a map canvas.
 
 ```{hint}
 
@@ -58,7 +58,7 @@ There is a lot of complex math involved in the GIS, but QGIS takes care of it on
 
 :::{tab-item} Data Collection and Creation
 
-QGIS offer tools to create your own geodata. For example, with the digitizing tools, you can create points, polygons, and lines with information which can represent spatial information. Furthermore, georeferencing let's you add geographic information to various types of data, such as satellite imagery or hand-drawn maps. You will learn how to create geodata and how to georeference data in __[module 2](/content/Module_2/en_module_2_overview.md)__. 
+QGIS offers tools to create your own geodata. For example, with the digitizing tools, you can create points, polygons, and lines with information which can represent spatial information. Furthermore, georeferencing lets you add geographic information to various types of data, such as satellite imagery or hand-drawn maps. You will learn how to create geodata and how to georeference data in __[module 2](/content/Module_2/en_module_2_overview.md)__. 
 
 Sometimes working with GIS requires you to go and collect the data in the field. In this case, you can use [web and mobile apps](/content/Wiki/en_web_and_mobile_apps_wiki.md). 
 
@@ -77,7 +77,7 @@ You will learn more about data processing and manipulation in [module 2](https:/
 
 :::{tab-item} Visualisation
 
-QGIS let's you visualise geodata and create maps to communicate information. It does so by assigning symbols and colours 
+QGIS lets you visualise geodata and create maps to communicate information. It does so by assigning symbols and colours 
 to different elements in your geodata. Assigning a symbology to the geodata is one of the main skills you will develop 
 as a GIS-user and a good visualisation of data is immensely useful when communicating insights. You will learn how to 
 assign symbols in [Module 4: Visualisation of Geodata and Map Making](/content/Module_4/en_qgis_map_design_I.md)

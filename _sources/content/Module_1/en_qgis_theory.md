@@ -147,7 +147,7 @@ WFP also builds dashboards for advocacy, like HungerMap Live:
 
 iMAAP is an information management NGO that provides support to the UN and 
 international NGOs. Their [product portfolio](https://immap.org/products/) 
-includes examples of maps used in sitaution overviews, interactive dashboards 
+includes examples of maps used in situation overviews, interactive dashboards 
 and sector-specific analysis.
 
 ```{figure} /fig/Afghanistan-Earthquake-Events-Overview-February-2024_page-0001-scaled.jpg
