@@ -49,8 +49,8 @@ roads. However, there are no datasets with the buildings or roads available. For
 create two new layers with the road network and the buildings. However, there is recent satellite imagery available. 
 With these images, you can create vector layers representing the key infrastructure, such as buildings and roads. 
 Once you have created the layers, you can create a preliminary overview map of the village. 
-This map will be given out to community members and voluntaries on the ground to map out the damaged infrastructure.
-In a next step, the information collected by the ground team can be used to enrich the data and create an flood 
+This map will be given out to community members and volunteers on the ground to map out the damaged infrastructure.
+In a next step, the information collected by the ground team can be used to enrich the data and create a flood 
 impact assessment. 
 To create the map, you will need to create new vector layers. 
 
@@ -164,7 +164,7 @@ indicators. You can discuss in groups and write it down on paper or add it to a 
 3. `File encoding`: Make sure this is set to UTF-8
 4. `Geometry type`: Select the type of feature you want to digitise e.g. points or lines.
 5. Under `Additional dimension` you should always make sure that you check `None`. Except if there is the possibility to collect the Z-values (elevation) as well. But this is mostly not the case.
-6. CRS dropdown: Select the EPSG/CRS you want to set for the new layer. By default, the QGIS selects the project CRS. If you want to change the CRS click on ![](/fig/mIconProjectionEnabled.png).
+6. CRS dropdown: Select the EPSG/CRS you want to set for the new layer. By default, QGIS selects the project CRS. If you want to change the CRS click on ![](/fig/mIconProjectionEnabled.png).
 7. Under `New Field` you can add columns to the new layer. Here you can set up what other type of data you want to collect in this dataset.
     * `Type`: Select the data type the column will have e.g. `Text`, `Whole number`, `Decimal Number`, `Date`.
     * Click on ![](/fig/mActionNewAttribute.png) to add the new column to the `Fields List`.
@@ -202,14 +202,14 @@ types is basically the same:
 
 1. Select the layer you want to add data to in the Layer panel.
 2. Go to the digitisation toolbar and click on ![](/fig/mActionToggleEditing.png) `Toggle Editing`. Make sure 
-the the layer is in the editing mode. If not, click on the ![](/fig/mActionToggleEditing.png) icon in the 
+ the layer is in the editing mode. If not, click on the ![](/fig/mActionToggleEditing.png) icon in the 
 digitisation toolbar. 
 
 ### Creating point data
 
 1.	Select the point layer you want to add data to in the Layer panel.
 2.	Go to the digitisation toolbar and click on ![](/fig/mActionToggleEditing.png) `Toggle Editing`. Make sure 
-the the layer is in the editing mode. If not, click on the ![](/fig/mActionToggleEditing.png) icon in the 
+the layer is in the editing mode. If not, click on the ![](/fig/mActionToggleEditing.png) icon in the 
 digitisation toolbar. 
 3.	Click on ![](/fig/mActionCapturePoint.png). 
 4.	Left-click on the feature you want to digitise.
@@ -239,7 +239,7 @@ information you can add at this stage-->
 ::::{admonition} Getting coordinates from google maps
 :class: tip
 
-Sometimes, the easiest way to get the coordinates for a location, such as the office of a national Red Cross or Red Crescent branch or simply ofa house, is to use google maps. In Google Maps, you can right click on any location to get the coordinates (in degrees). 
+Sometimes, the easiest way to get the coordinates for a location, such as the office of a national Red Cross or Red Crescent branch or simply of a house, is to use google maps. In Google Maps, you can right click on any location to get the coordinates (in degrees). 
 
 :::{figure} /fig/en_google_maps_rightclick_coords.png
 ---
@@ -270,7 +270,7 @@ Try digitising the RCRC branches in your country by following the steps below.
 4. Once you have located the branches, right-click on a branch in google maps and click on the coordinates. The coordinates will be copied to your clipboard
 5. Paste the coordinates into the search bar on the bottom left of the QGIS window. Select navigate to coordinates. The location will be marked by a red dot
 
-6. Enable the editing mode ![](/fig/mActionToggleEditing.png) in in your new layer.
+6. Enable the editing mode ![](/fig/mActionToggleEditing.png) in your new layer.
 7. Click on ![](/fig/mActionCapturePoint.png)
 8. Add the point feature at the location that was indicated.
 9. Add the name of the RCRC branch.
@@ -350,7 +350,7 @@ the roads and one for the buildings.
 ## Editing the Data
 
 In some cases, you might want to modify or correct vector data because of inaccuracies or changes. Editing 
-vector data is done with digitisation toolbar. In QGIS, you can edit both the geometries and the values in the 
+vector data is done with the digitisation toolbar. In QGIS, you can edit both the geometries and the values in the 
 attribute table. 
 
 ### Editing Geometries
@@ -457,7 +457,7 @@ This process is called __"Data cleaning"__ and is important when performing data
 in any way. While collecting or digitising data, it is easy to make small mistakes, such as a wrong value, wrong 
 value type, or a spelling mistake. When performing analyses, it is therefore important to investigate the 
 attribute table for inconsistencies or errors. If these errors are not cleaned, the results will be incorrect 
-and you might take the wrong conclusions!
+and you might draw the wrong conclusions!
 
 :::{card}
 :class-card: sd-text-justify sd-text-black sd-rounded-3 sd-border-2

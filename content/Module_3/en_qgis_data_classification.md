@@ -92,7 +92,7 @@ are visualised the same. In this setting, you can change many parameters like co
 
 Single Symbol classification is useful when you have a simple dataset. For example, you load a polygon layer 
 with the administrative boundaries of a region, and a point layer with the major cities. In this case, you can 
-choose single symbol classification and adjust the symbol for the each layer.
+choose a single symbol classification and adjust the symbol for each layer.
 
 :::{dropdown} How to: Single symbol classification
 :open: 
@@ -129,7 +129,7 @@ Adjust the style of a layer.
 
 Categorised classification in QGIS groups spatial data into distinct categories based on specific attributes. 
 
-This classification organises the features into categories based specific values in the attribute table.
+This classification organises the features into categories based on specific values in the attribute table.
 By specifying a symbol to each category, you can facilitate the interpretation of geospatial information on your map for clearer insights.
 
 ```{figure} /fig/fr_simple_classification_example_map.png
@@ -137,7 +137,7 @@ By specifying a symbol to each category, you can facilitate the interpretation o
 name: fr_simple_classification_example_map
 width: 750px
 ---
-Niger – Régions de Tillabéri et de Tahoua Education: infrastructures scolaires fermées ou endommagées pour cause d'insécurité entre 2019 et 2022 (Source: [REACH](https://repository.impact-initiatives.org/document/impact/e6174a66/REACH_NER_Map_Ecoles_fermees_mai2022_tillaberi_tahoua.pdf))
+Niger – Régions de Tillabéri et de Tahoua Éducation: infrastructures scolaires fermées ou endommagées pour cause d'insécurité entre 2019 et 2022 (Source: [REACH](https://repository.impact-initiatives.org/document/impact/e6174a66/REACH_NER_Map_Ecoles_fermees_mai2022_tillaberi_tahoua.pdf))
 ```
 
 In the map above, the main roads have been assigned a single symbol. The schools have been classified into two categories: primary school (fr.: *école primaire*) and secondary school (fr.: *école secondaire*). 
@@ -209,15 +209,15 @@ Graduated classification is usually used for quantitative data that is __interva
 | Interval Scale | Equal intervals between values, no true zero point | Temperature (Celsius)               | Float (44.5 Degree)                          |
 | Ratio Scale    | Equal intervals with a true zero point             | Population, Length, Number of trees | Integer (5 Trees) or Float (12.5 km of Road) |
 
-To classify quantitative data there are many methods how to set up the classes. There is no single best way to select a method or to decide how many classes you like to use. It all comes down to what you want to show.
+To classify quantitative data there are many methods on how to set up the classes. There is no single best way to select a method or to decide how many classes you like to use. It all comes down to what you want to show.
 
 ```{tip} 
-A good range for number of classes is __3 to 7__. Do not use more than __9__ classes, as it becomes difficult to 
+A good range for the number of classes is __3 to 7__. Do not use more than __9__ classes, as it becomes difficult to 
 distinguish between the classes, making the map harder to understand. 
 ```
 
 Take the example below. You see a histogram of the district population. That means we have a dataset 
-with districts and how many people living in each district. Just based on the histogram we 
+with districts and how many people live in each district. Just based on the histogram we 
 can make a few general statements.
 
 1. There are no districts with no or zero population
@@ -228,9 +228,9 @@ can make a few general statements.
 ---
 width: 900px 
 align: center
-name: Histogramm_example.drawio
+name: Histogram_example.drawio
 ---
-Histogramm of population data. Source: [Axis Maps](https://www.axismaps.com/guide/data-classification)
+Histogram of population data. Source: [Axis Maps](https://www.axismaps.com/guide/data-classification)
 ```
 
 However, if we want to show which districts have a higher population than others on a map, 
@@ -381,7 +381,7 @@ QGIS supports these three common classification modes:
 |-------------------|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Single symbol** | For simple datasets or when you want all features to look the same | All features receive the same symbol (colour, size). No differentiation by attribute.                                                                                                                                                                |
 | **Categorised**   | For **nominal** or **ordinal** (categorical) data                  | Features are grouped by unique attribute values (categories). Each category gets its own symbol.                                                                                                                                                     |
-| **Graduated**     | For **quantitative / metric** data                                 | Numeric values are divided into numeric classes (ranges). Each class is symbolised differently (often by a ramp). You choose number of classes and classification method (e.g. equal interval, quantile, natural breaks). |
+| **Graduated**     | For **quantitative / metric** data                                 | Numeric values are divided into numeric classes (ranges). Each class is symbolised differently (often by a ramp). You choose a number of classes and classification methods (e.g. equal interval, quantile, natural breaks). |
 
 
 
@@ -394,7 +394,7 @@ QGIS supports these three common classification modes:
 |----------------------------|----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | **Equal Interval**         | Divide the full range of data into intervals of equal size (e.g. dividing [min, max] into n equal-width bins)              | Straightforward and intuitive, but can lead to many empty or sparsely populated classes if data are skewed or have outliers.          |
 | **Quantile (Equal Count)** | Each class gets (roughly) the same number of features (i.e. equal counts per class)                                        | Good visual balance—but the numerical ranges of classes may vary greatly, and similar values may be split across classes.             |
-| **Natural Breaks (Jenks)** | Uses an algorithm to minimize within-class variance and maximize between-class differences (i.e. find “natural” groupings) | Often gives visually meaningful breaks tailored to the data distribution. But breaks depend on dataset (less comparable across maps). |
+| **Natural Breaks (Jenks)** | Uses an algorithm to minimize within-class variance and maximize between-class differences (i.e. find “natural” groupings) | Often gives visually meaningful breaks tailored to the data distribution. But breaks depend on the dataset (less comparable across maps). |
 
 
 :::
