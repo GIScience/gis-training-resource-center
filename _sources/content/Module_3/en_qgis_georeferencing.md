@@ -30,23 +30,16 @@ A digitised old map of the Hague (Source: [Kokoalberti](https://kokoalberti.com/
 
 ## Georeferencing in QGIS
 
-In QGIS, the Georeferencer tool is used for this process. T Users manually place control points on the raster image and 
-and assigning them a geographic coordinate, either by enter the coordinates manually, or selecting the corresponding
-point in the QGIS map canvas. These points serve as reference points for the georeferencing algorithm to add geographic 
-coordinates to each pixel in the raster. The algorithm then transforms the 
-image, adjusting its scale, rotation, and position to accurately overlay it with other geospatial layers. Georeferenced 
-images become valuable for digitizing features and conducting spatial analyses within a GIS.
+In QGIS, the Georeferencer tool is used for this process. T Users manually place control points on the raster image and assign them a geographic coordinate, either by entering the coordinates manually, or selecting the corresponding point in the QGIS map canvas. These points serve as reference points for the georeferencing algorithm to add geographic coordinates to each pixel in the raster. The algorithm then transforms the image, adjusting its scale, rotation, and position to accurately overlay it with other geospatial layers. Georeferenced images become valuable for digitizing features and conducting spatial analyses within a GIS.  
 
-There are several transformation algorithms available in QGIS to gereference a map. If the map is in the same CRS and only needs to be rotated, 
-a __linear__ transformation is sufficient. However, if the image or map is in a different CRS or is visibly skewed, a __polynomial__ transformation 
-is needed. The more complex the transformation algorithm is, the more Ground Control points you need. 
+There are several transformation algorithms available in QGIS to reference a map. If the map is in the same CRS and only needs to be rotated, a linear transformation is sufficient. However, if the image or map is in a different CRS or is visibly skewed, a polynomial transformation is needed. The more complex the transformation algorithm is, the more Ground Control points you need.
 
 ```{figure} /fig/en_georef_transformations.png
 ---
 width: 600 px
 name: en_georef_transformations
 ---
-Different transformation types: linear (left), polynomial 2nd degree (middle), polyonmial 3rd degree (right) (Source: [ESRI](https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/overview-of-georeferencing.htm)).
+Different transformation types: linear (left), polynomial 2nd degree (middle), polynomial 3rd degree (right) (Source: [ESRI](https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/overview-of-georeferencing.htm)).
 ```
 
 In most cases, you will use either linear, or polynomial (2nd or 3rd degree) transformations. There are many more 
@@ -79,7 +72,7 @@ Opening the Georeferencer in QGIS 3.36
 4. A new window will open. This is the __georeferencer__. To add an image to georeference, click on ![](/fig/3.36_add_raster_georef.png) `Open Raster`.
 5. Select the image of the map you want to georeference. You can load image files, as well as PDFClick `Open`.
 6. The image will appear in the middle of the georeferencer window. Click on ![](/fig/3.36_georef_transformation_settings.png) `Transformation settings...`.
-7. A new window will open. Here you can set the transformation type and the target CRS. Below, you can set the name and save location of the file. Make sure that the `Load in project when done` is checked. 
+7. A new window will open. Here you can set the transformation type and the target CRS. Below, you can set the name and save location of the file. Make sure that the `Load in the project when done` is checked. 
 
 ```{note} Setting the appropriate Coordinate Reference System 
 :class: tip
@@ -89,15 +82,15 @@ Ideally, you want to set the CRS of the georeferenced map to the same as your pr
 ::::{margin}
 
 ```{note}
-In most cases, you can leave the transformation type on `linear`. Regional maps are usually in a conformal projection (i.e. the angles are preserved). Satellite imagery as well. If you realise that the angles are not true, or the map is deformed or distorted, you may need to choose `polynomial` as transformation type. Polynomial transformations need more Ground Control Points and the points need to be distributed evenly across the map.
+In most cases, you can leave the transformation type on linear. Regional maps are usually in a conformal projection (i.e. the angles are preserved). Satellite imagery as well. If you realise that the angles are not true, or the map is deformed or distorted, you may need to choose a polynomial as transformation type. Polynomial transformations need more Ground Control Points and the points need to be distributed evenly across the map.
 ```
 
 ::::
 
 8. Click on `Ok`. 
-9. Once you have set the transformation type, you can start adding Ground Control Points (GCP) by clicking on ![](/fig/3.36_georef_add_point.png) `Add Point`. Ground Control Points are points that you ascribe specific geographic coordinates. 
-10. Click on a point on the map image. This will be the precise location that you can identify on both the basemap and the map you wish you georeference. 
-11. Once you clicked on a position, a new window will appear. Here, you add the coordinates to the point you selected. There are two options to do this:  
+9. Once you have set the transformation type, you can start adding Ground Control Points (GCP) by clicking on ![](/fig/3.36_georef_add_point.png) `Add Point`. Ground Control Points are points that you ascribe specific geographic coordinates to. 
+10. Click on a point on the map image. This will be the precise location that you can identify on both the basemap and the map you wish to georeference. 
+11. Once you click on a position, a new window will appear. Here, you add the coordinates to the point you selected. There are two options to do this:  
     - Enter the coordinates manually. You will need to know the exact coordinate. Sometimes, you have a coordinate grid on maps where you can 
     - Select the points ![](/fig/en_3.36_georef_select_from_canvas.png). This mode will minimize the georeferencer and open the QGIS Map canvas. Zoom to the same location you selected on the non-georeferenced map and Click once.
     - Once the coordinates are entered, click `Ok`
@@ -112,7 +105,7 @@ Georeferencer dialogue in QGIS 3.36
 ```
 
 13. Once you have added enough points, click on ![](/fig/3.36_start_georef.png) `Start Georeferencing`. QGIS will use the Points you added to transform the image into a georeferenced image, where every pixel has GPS coordinates ascribed to it. 
-14. You can close the georefencer window. Decide wether you want to save the GPC points in a file. If you are not sure if your georeferencing accuracy was precise enough, save the GPC points so you don't have to do all the work again. 
+14. You can close the Georefencer window. Decide whether you want to save the GPC points in a file. If you are not sure if your georeferencing accuracy was precise enough, save the GPC points so you don't have to do all the work again. 
 15. Congratulations, the georeferenced map will now appear as a raster layer in your QGIS-project
 
 
@@ -132,7 +125,7 @@ It is possible to adjust the transparency of the georeferenced map so you can se
 2. Navigate to the __Transparency Tab__.
 3. Set the global opacity to 50%.
 
-Alternatively, it is also possible to remove the white background. This is done by assigning the white pixels to the Aplha value in the transparency tab under "Custom Transparency Options".
+Alternatively, it is also possible to remove the white background. This is done by assigning the white pixels to the Alpha value in the transparency tab under "Custom Transparency Options".
 
 1. Open the Layer Properties by <kbd>Right-Clicking</kbd> on the layer and selecting __Properties__
 2. Navigate to the __Transparency Tab__.

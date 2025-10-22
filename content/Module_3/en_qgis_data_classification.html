@@ -670,7 +670,7 @@ go over some scenarios you might come across in your GIS career.</p>
 are visualised the same. In this setting, you can change many parameters like colour or opacity <strong>but you can not classify the data into multiple groups!</strong></p>
 <p>Single Symbol classification is useful when you have a simple dataset. For example, you load a polygon layer
 with the administrative boundaries of a region, and a point layer with the major cities. In this case, you can
-choose single symbol classification and adjust the symbol for the each layer.</p>
+choose a single symbol classification and adjust the symbol for each layer.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
 <summary class="sd-summary-title sd-card-header">
 How to: Single symbol classification<div class="sd-summary-down docutils">
@@ -705,12 +705,12 @@ size, for example.</p></li>
 <section id="categorised-classification">
 <h2><span class="section-number">3.3.3. </span>Categorised classification<a class="headerlink" href="#categorised-classification" title="Permalink to this heading">#</a></h2>
 <p>Categorised classification in QGIS groups spatial data into distinct categories based on specific attributes.</p>
-<p>This classification organises the features into categories based specific values in the attribute table.
+<p>This classification organises the features into categories based on specific values in the attribute table.
 By specifying a symbol to each category, you can facilitate the interpretation of geospatial information on your map for clearer insights.</p>
 <figure class="align-default" id="fr-simple-classification-example-map">
 <a class="reference internal image-reference" href="../../_images/fr_simple_classification_example_map.png"><img alt="../../_images/fr_simple_classification_example_map.png" src="../../_images/fr_simple_classification_example_map.png" style="width: 750px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.13 </span><span class="caption-text">Niger – Régions de Tillabéri et de Tahoua Education: infrastructures scolaires fermées ou endommagées pour cause d’insécurité entre 2019 et 2022 (Source: <a class="reference external" href="https://repository.impact-initiatives.org/document/impact/e6174a66/REACH_NER_Map_Ecoles_fermees_mai2022_tillaberi_tahoua.pdf">REACH</a>)</span><a class="headerlink" href="#fr-simple-classification-example-map" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 3.13 </span><span class="caption-text">Niger – Régions de Tillabéri et de Tahoua Éducation: infrastructures scolaires fermées ou endommagées pour cause d’insécurité entre 2019 et 2022 (Source: <a class="reference external" href="https://repository.impact-initiatives.org/document/impact/e6174a66/REACH_NER_Map_Ecoles_fermees_mai2022_tillaberi_tahoua.pdf">REACH</a>)</span><a class="headerlink" href="#fr-simple-classification-example-map" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>In the map above, the main roads have been assigned a single symbol. The schools have been classified into two categories: primary school (fr.: <em>école primaire</em>) and secondary school (fr.: <em>école secondaire</em>).</p>
@@ -807,24 +807,24 @@ read and understand the map quicker.</p>
 </tr>
 </tbody>
 </table>
-<p>To classify quantitative data there are many methods how to set up the classes. There is no single best way to select a method or to decide how many classes you like to use. It all comes down to what you want to show.</p>
+<p>To classify quantitative data there are many methods on how to set up the classes. There is no single best way to select a method or to decide how many classes you like to use. It all comes down to what you want to show.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>A good range for number of classes is <strong>3 to 7</strong>. Do not use more than <strong>9</strong> classes, as it becomes difficult to
+<p>A good range for the number of classes is <strong>3 to 7</strong>. Do not use more than <strong>9</strong> classes, as it becomes difficult to
 distinguish between the classes, making the map harder to understand.</p>
 </div>
 <p>Take the example below. You see a histogram of the district population. That means we have a dataset
-with districts and how many people living in each district. Just based on the histogram we
+with districts and how many people live in each district. Just based on the histogram we
 can make a few general statements.</p>
 <ol class="arabic simple">
 <li><p>There are no districts with no or zero population</p></li>
 <li><p>There are just a few districts with very low population</p></li>
 <li><p>It seems that there are three general groups of districts</p></li>
 </ol>
-<figure class="align-center" id="histogramm-example-drawio">
+<figure class="align-center" id="histogram-example-drawio">
 <a class="reference internal image-reference" href="../../_images/Histogramm_example.drawio.svg"><img alt="../../_images/Histogramm_example.drawio.svg" src="../../_images/Histogramm_example.drawio.svg" width="900px" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.16 </span><span class="caption-text">Histogramm of population data. Source: <a class="reference external" href="https://www.axismaps.com/guide/data-classification">Axis Maps</a></span><a class="headerlink" href="#histogramm-example-drawio" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 3.16 </span><span class="caption-text">Histogram of population data. Source: <a class="reference external" href="https://www.axismaps.com/guide/data-classification">Axis Maps</a></span><a class="headerlink" href="#histogram-example-drawio" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>However, if we want to show which districts have a higher population than others on a map,
@@ -998,7 +998,7 @@ Answer<div class="sd-summary-down docutils">
 </tr>
 <tr class="row-even"><td><p class="sd-card-text"><strong>Graduated</strong></p></td>
 <td><p class="sd-card-text">For <strong>quantitative / metric</strong> data</p></td>
-<td><p class="sd-card-text">Numeric values are divided into numeric classes (ranges). Each class is symbolised differently (often by a ramp). You choose number of classes and classification method (e.g. equal interval, quantile, natural breaks).</p></td>
+<td><p class="sd-card-text">Numeric values are divided into numeric classes (ranges). Each class is symbolised differently (often by a ramp). You choose a number of classes and classification methods (e.g. equal interval, quantile, natural breaks).</p></td>
 </tr>
 </tbody>
 </table>
@@ -1031,7 +1031,7 @@ Answer<div class="sd-summary-down docutils">
 </tr>
 <tr class="row-even"><td><p class="sd-card-text"><strong>Natural Breaks (Jenks)</strong></p></td>
 <td><p class="sd-card-text">Uses an algorithm to minimize within-class variance and maximize between-class differences (i.e. find “natural” groupings)</p></td>
-<td><p class="sd-card-text">Often gives visually meaningful breaks tailored to the data distribution. But breaks depend on dataset (less comparable across maps).</p></td>
+<td><p class="sd-card-text">Often gives visually meaningful breaks tailored to the data distribution. But breaks depend on the dataset (less comparable across maps).</p></td>
 </tr>
 </tbody>
 </table>
