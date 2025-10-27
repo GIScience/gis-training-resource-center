@@ -9,7 +9,7 @@
 # Labels for Vector Data
 
 Labels are text that display information or values of the data. In QGIS, you can either select __Single Labels__ or 
-__Rule-based Labelling__. For each option, an attribute (`value`) that will be displayed on the map. For example, the 
+__Rule-based Labelling__. For each option, an attribute (`value`) will be displayed on the map. For example, the 
 name of a city or region.  Additionally, you can __change the font, font size, colour and some other styling options__ 
 for the label text. When you create a map, you can add labels to help your reader understand the map quickly. However, 
 be aware that too much text information can overload the map with too much information for the reader to process.
@@ -20,7 +20,7 @@ QGIS offers two methods to display labels: __Single Labels__ and __Rule-based La
 
 #### Single Labels
 
-Creates a single label style for every feature in the layer. You can select a attribute (value) which will be 
+Creates a single label style for every feature in the layer. You can select an attribute (value) which will be 
 displayed. For example, the name of a settlement. You need to know which attribute displays the information you want to 
 display. Look at the attribute table of the dataset to find it out.
 
@@ -61,14 +61,14 @@ Setting up labels in QGIS 30.30.2
 
 :::{attention}
 
-Single Labels are not always useful. For example, if the dataset is too big, or you only want to display certain features in the dataset. In the example below, there are too many settlements to display labels for each settlements. Instead, it might be useful to only display the regional and national capitals. For such a use case, Rule-based Labeling is ideal.
+Single Labels are not always useful. For example, if the dataset is too big, or you only want to display certain features in the dataset. In the example below, there are too many settlements to display labels for each settlement. Instead, it might be useful to only display the regional and national capitals. For such a use case, Rule-based Labeling is ideal.
 
 ```{figure} /fig/single_labels_bad_example.png
 ---
 name: single_labels_bad_example
 width: 400 px
 ---
-Single Labels was selected to display the names of the settlements (red dots). A map with so much text information is unreadable and the information can hardly be understood. 
+Single Labels were selected to display the names of the settlements (red dots). A map with so much text information is unreadable and the information can hardly be understood. 
 ```
 
 :::
@@ -122,7 +122,7 @@ A good example of label placement and font. Pay attention to the text colours an
 
 ```{Attention}
 
-- In most cases, displaying numerical values as labels is confusing to the reader and makes the map to complex. In most cases, for numerical data, you can choose a different visualization such as colours or symbol size.
+- In most cases, displaying numerical values as labels is confusing to the reader and makes the map too complex. In most cases, for numerical data, you can choose a different visualization such as colours or symbol size.
 
 :::::{grid} 2
 ::::{card}

@@ -25,7 +25,7 @@ Styling panel in QGIS 3.30.2
 For each layer in QGIS, there is a styling panel where you can change the symbology, colour and label for the features in that layer. There are two ways to open the layer styling options in QGIS:  
 
 1. Right click on the layer you wish to style and select `properties`. A new window will open up with a vertical tab section on the left. Navigate to the `symbology` tab. 
-2. Open the layer styling panel by enabling it under `View`>`Panels`>`Styling Panel`. Usually, the panel will appear on the right side of map canvas.
+2. Open the layer styling panel by enabling it under `View`>`Panels`>`Styling Panel`. Usually, the panel will appear on the right side of the map canvas.
 
 On the left of the styling panel you can choose the different tabs to access different styling options.
 
@@ -57,7 +57,7 @@ In the symbology tab of the layer styling panel, you can set the
 
 Simple Markers are generally used to create the symbols for most elements on a map. For example, simple markers are 
 used to visualise streets, building outlines, waterbodies, administrative boundaries or other polygons.
-Most simple markers consist of a __fill__ and an __outline__. Depending on the type of geometry in the layer, you will use have different symbology options. 
+Most simple markers consist of a __fill__ and an __outline__. Depending on the type of geometry in the layer, you will have to use have different symbology options. 
 
 
 - The fill determines the fill colour of the symbol. You can change the colour and transparency. You are also able to make more complex fills such as a line pattern fill, or an SVG-symbol fill.
@@ -173,7 +173,7 @@ Order the layers and navigate to the styling panel of the topmost layer
 7. Click OK.
 8. __Repeat the same process__ for the Adm1 layer, using the same colour as for Adm0 (it will be in "Recent colors) and leave the stroke width at 0.26.
 9. Now we can see the boundaries of the country and its states, and behind that we can see the districts (Adm2).
-10. Let's make the districts layer's style consistent with the others.
+10. Let's make the district layer's style consistent with the others.
 11. Choose a `Fill Color`
 12. Use the same Stroke Colour` as for Adm0 and Adm1, but make the width 0.1 Millimeters and the Stroke Style a __Dash Line__
 13. Click OK and look at your map: hopefully it's starting to look nicer!
@@ -266,7 +266,7 @@ Creating centroids in QGIS 3.36
 ```
 
 2. Under `Input Layer`, select the `NGA_Adm1_Pop`-layer. Click on `Run`.
-3. A new point layer called `Centroids` will appear in your layers panel. Open it's styling panel and navigate to the symbology tab.
+3. A new point layer called `Centroids` will appear in your layers panel. Open its styling panel and navigate to the symbology tab.
 4. Set the symbolisation method to `Graduated`.
 5. Under __Value__, select `total_pop`.
 6. Change the __Method__ from `Colour` to `Size`.
@@ -288,7 +288,7 @@ A map of Nigeria displaying the same data. Once using graduated colours (choropl
 :::
 
 
-### Use different styles in a single layer
+### Using different styles in a single layer
 
 By categorizing or classifying data in a single layer, we are able to assign different styles to each classification. 
 We can use symbology to __show the difference between features__ in the same layer. For example, it could be different types of buildings, quantities of Covid cases by district, or types of roads. We can choose a specific attribute of a dataset to assign different colors, outlines, or sizes to features:
@@ -326,7 +326,7 @@ width: 500px
 By double clicking on the __unique values__ in the classified list, you can change the symbol for each value
 ```
 
-Now we have a map of Nigeria where you can locate the areas, that are affected by explosions more than others. On the map below, we also added text labels, which will be explained below.
+Now we have a map of Nigeria where you can locate the areas that are affected by explosions more than others. On the map below, we also added text labels, which will be explained below.
 
 ```{figure} ../../fig/en_exercise_map_design_example_Nigeria.png
 ---
@@ -349,7 +349,7 @@ Regions affected by explosions in Nigeria
 :class-card: sd-text-justify sd-text-black sd-border-0
 __Simple Markers, SVG-Symbols and Raster images__
 ^^^
-On top of simple markers, QGIS let's you also use SVG-symbols and raster images as symbols for your vector data.
+On top of simple markers, QGIS lets you also use SVG-symbols and raster images as symbols for your vector data.
 
 - __Simple markers__ are simple shapes such as rectangles, circles, or crosses that can be adjusted in the symbolization layer (colour, size, outline, etc.). Most of your styling in QGIS will be done with these markers.
 - __SVG-symbols__ are *scalable vector graphic* symbols. As vector files, they can be scaled to any size while keeping the same resolution. In most cases, if you want to use a more complex symbol (e.g. hospital, school, train station), SVG-symbols are the best option as they let you adjust the symbol (colours, outline, size, etc.)
@@ -368,7 +368,7 @@ To use SVG-symbols:
 
 1. Open the styling panel and open the `single marker` options.
 2. Under `Symbol layer type`, select __"SVG Marker"__
-3. Scroll down to the SVG-Browser. Here you will find all the folder of your installed SVG-libraries.
+3. Scroll down to the SVG-Browser. Here you will find all the folders of your installed SVG-libraries.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video>
 

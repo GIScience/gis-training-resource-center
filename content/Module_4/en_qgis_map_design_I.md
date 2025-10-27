@@ -64,7 +64,7 @@ You can use different graphic signs depending on the type of information you wan
 
 Visual variables are the __graphical means for visually transcribing information__. The visual variables are __shape, 
 size, hue, value, texture, and orientation__. You can adjust these variables to appropriately represent the data at 
-your disposal. They allows for the expression of __relationship of difference, order, association, or quantity__ 
+your disposal. They allow for the expression of __relationship of difference, order, association, or quantity__ 
 between each element, helping to display different information.
 
 ```{figure} ../../fig/en_visual_variables.png
@@ -147,7 +147,7 @@ Flood affected areas and roads in the Somali Region, Ethiopia (Source: OCHA)
 name: proportional_circles_example
 width: 500 px
 ---
-Internally Displaced Persons (IDPs), 30 September 2024 (Soure: [UNHCR](https://reliefweb.int/map/sudan/regional-bureau-east-horn-africa-and-great-lakes-region-internally-displaced-persons-idps-30-september-2024)).
+Internally Displaced Persons (IDPs), 30 September 2024 (Source: [UNHCR](https://reliefweb.int/map/sudan/regional-bureau-east-horn-africa-and-great-lakes-region-internally-displaced-persons-idps-30-september-2024)).
 ```
 
 ::::
@@ -260,7 +260,7 @@ comprehensive format. For example, you can:
 - For raster data, you can assign a colour gradient for the different values
 
 The styling of a layer is how you communicate the information to your audience. Each data-layer in your QGIS-project 
-has it's own styling rules. These can range from simple (e.g. display line data as black lines, assigning a colour to 
+has its own styling rules. These can range from simple (e.g. display line data as black lines, assigning a colour to 
 polygons) to more complex (e.g. differentiate between different types of roads, add complex fill-patterns to polygons, 
 or add SVG-symbols of varying sizes to ). 
 
@@ -287,7 +287,7 @@ __transparency__.
 Colours schemes can be __categorial, sequential, or diverging__. If you wish to display different types of buildings or 
 roads, the colour schemes should be categorial. Colour gradients, either sequential or diverging, are used for 
 numerical data or data that can be ordered. For example, for the population sizes of districts a sequential colouring 
-schemes is best to show the relative difference between the values. However, if the data has positive __and__ negative 
+scheme is best to show the relative difference between the values. However, if the data has positive __and__ negative 
 values, a diverging colour gradient should be used.
 
 ``` {figure} ../../fig/en_colour_gradients_qualities.png
