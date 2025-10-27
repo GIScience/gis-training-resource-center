@@ -30,9 +30,9 @@ QGIS offers a variety of spatial processing tools that we can use to analyse and
 - __Spatial Joins__ let us join attribute values from one layer to another based on their spatial relationship. This enables us to enrich datasets and 
 incorporate additional information from  layers, which can help us understand a situation.
 - The overlay operation __Clip__ can be employed to extract specific areas of interest from multiple layers, allowing us to focus our attention where it is most needed.
-- The __Dissolve__ operation allows us to simplify geometries by joining geometries from two distinct layer. 
+- The __Dissolve__ operation allows us to simplify geometries by joining geometries from two distinct layers. 
 - Using __Buffer__, we can create zones around features to help identify vulnerable areas and plan evacuation routes in the event of a flooding event. 
-- __Centroids__ creates point in the geometric centre of the geometries of a layer. This is especially useful when creating graduated symbol maps
+- __Centroids__ create points in the geometric centre of the geometries of a layer. This is especially useful when creating graduated symbol maps
 
 
 ```{figure} /fig/en_module5_spatial_geodataprocessing.PNG
@@ -94,7 +94,7 @@ __non-spatial joins__ and __spatial joins__.
 - Spatial joins in QGIS enhance the attributes of the input layer by adding additional information from the join layer, relying on their __spatial relationship__. This process enriches your data by incorporating relevant details from one layer into another based on their geographical associations. 
 - In QGIS, a spatial join creates a new layer by comparing the features of one layer to another, depending on 
 their spatial relationship. 
-- The restulting joined layer __receives attributes__ from both layers based on the chosen parameters.
+- The resulting joined layer __receives attributes__ from both layers based on the chosen parameters.
 
 For example:
 
@@ -127,7 +127,7 @@ Spatial joins rely on the geometrical operators. In the tabs below, you can find
 :::{tab-item} Intersect
 Tests whether the geometry of the two layers intersects with one another. The algorithm returns the value "True" (1), 
 if the geometries intersect spatially. This means that they share any portion of space, overlap, or touch. If they don't 
-overlap, the algorithms returns the value "False" (0). In the picture below, the algorithm will return the circles __1, 2, and 3__.
+overlap, the algorithms returns the value "False" (0). In the picture below, the algorithm return the circles __1, 2, and 3__.
 :::
 
 
@@ -137,7 +137,7 @@ In the picture below, the algorithm would output a layer with only the circle 4.
 :::
 
 :::{tab-item} Equal
-The algorithms returns a layer with geometries that are exactly the same (all the points and lines are equal). In the 
+The algorithm returns a layer with geometries that are exactly the same (all the points and lines are equal). In the 
 picture below, no circles are returned (added to the output layer).  
 :::
 
@@ -164,7 +164,7 @@ way around, as it contains circle 1 completely. This is the opposite of "are wit
 
 :::{tab-item} Cross
 Returns geometries that have some, but not all, interior points in common and the actual crossing is of a lower dimension 
-than the highest supplied geometry. For example, a line crossing a polygon will cross as aline (true). Two lines crossing 
+than the highest supplied geometry. For example, a line crossing a polygon will cross as a line (true). Two lines crossing 
 will cross as a point (true). Two polygons cross as a polygon (false). In the picture below, no circles will be returned. 
 :::
 
@@ -233,38 +233,13 @@ The "Join Attributes by Location"-tool in QGIS 3.36.
 3. Search for the tool __"Join Attributes by Location"__ in the processing toolbox and <kbd>Double-Click</kbd> on it. A new window will open 
 (see {numref}`join_by_location_ex1`). 
 4. Use the health facilities layer as the target ("Join to feature in") and the adm2 layer as the comparison layer ("By comparing to"). 
-5. Use the `are within` geometrical predicate.
+5. Use the `are within` as geometrical predicate.
 6. Select the fields to add: `ADM2_EN`, `ADM2_PCODE`
 7. Select `Discard records that could not be joined`
 8. Click `Run` to proceed; the log should confirm success.
 9. A new (temporary) layer called "Joined features" will appear in your layers-panel
 10. <kbd>Right-click</kbd> on the layer and select "Export" or "Make Permanent" to save the new layer.
 
-``````{list-table}
-:header-rows: 1
-:widths: 20 25
-
-* - Instruction
-  - Join Attributes by Location
-* - 1.  Download the necessary datasets [here]()
-    2. Unzip the files, create a new QGIS-project, and load the files into the QGIS-project. 
-    3. Search for the tool __"Join Attributes by Location"__ in the processing toolbox and <kbd>Double-Click</kbd> on it. A new window will open (see {numref}`join_by_location_ex1`).
-    4. Use the health facilities layer as the target ("Join to feature in") and the adm2 layer as the comparison layer ("By comparing to"). 
-    5. Use the `are within` geometrical predicate. 
-    6. Select the fields to add: `ADM2_EN`, `ADM2_PCODE`
-    7. Select `Discard records that could not be joined`
-    8. Click `Run` to proceed; the log should confirm success.
-    9. A new (temporary) layer called "Joined features" will appear in your layers-panel
-    10. <kbd>Right-click</kbd> on the layer and select "Export" or "Make Permanent" to save the new layer.
-  -
-    ```{figure} /fig/en_3.36_join_by_location_ex1.png
-    ---
-    name: join_by_location_ex1
-    width: 500 px
-    ---
-    Setting the parameters to perform the spatial join in QGIS 3.36
-    ```
-``````
 
 
 Congratulations, we now have added the information about the administrative region to the health facilities layer!
@@ -291,7 +266,7 @@ By default, QGIS provides three different tools to perform spatial joins.
 
 ::::{tab-item} Join attributes by location (summary)
 
-This tool is similar to the "Join Attributes by Location"-tool. However, on top of adding the attributes from one layer to another, this algorithms also 
+This tool is similar to the "Join Attributes by Location"-tool. However, on top of adding the attributes from one layer to another, this algorithm also 
 calculates statistical summaries for the values from matching features in the second layer. These summaries include a wide range of options, such as 
 __minimum and maximum values__, __mean values__, as well as __counts__, __sums__, __standard deviation__, and more. 
 

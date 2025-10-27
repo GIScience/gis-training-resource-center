@@ -31,10 +31,10 @@ Adding a new map to the Print Layout
 
 ### Adding a title or a text box
 
-A title should describe the phenomenen represented on the map.
+A title should describe the phenomenon represented on the map.
 
 - To add text (title, explanations), use the __Add Label__ tool and draw a rectangle of the desired size.
-- In the __Item Properties__ panel (on the right of your screen) you can __enter your text__ and __change the font, style, colour, etc.__ (_Remember to use the scroll bar in the window to see all the options). 
+- In the __Item Properties__ panel (on the right of your screen) you can __enter your text__ and __change the font, style, colour, etc.__ (Remember to use the scroll bar in the window to see all the options). 
 
 ```{figure} ../../fig/en_30.30.2_print_layout_add_text.png
 ---
@@ -80,10 +80,10 @@ name: Add a legend to the print layout
 Adding a legend to the print layout
 ```
 
-In the __item properties__ panel, if you keep the __'Auto update'__ option checked, new layers added to your project will automatically be added to the legend but you cannot control them individually (rename if necessary, reorder ot remove items).  
+In the __item properties__ panel, if you keep the __'Auto update'__ option checked, new layers added to your project will automatically be added to the legend but you cannot control them individually (rename if necessary, reorder or remove items).  
 Once the option is unchecked, you can update the name of the layers, group them, remove or reorganise them, etc. 
 
-If you have to many items on your legend, and they don't fit on your map horizontally, you can also split the legend into several columns by navigating through the `Item Properties`-panel, expand the `Columns`-section and increase the __Count__.
+If you have too many items on your legend, and they don't fit on your map horizontally, you can also split the legend into several columns by navigating through the `Item Properties`-panel, expand the `Columns`-section and increase the __Count__.
 
 :::: {tab-set}
 ::: {tab-item} Adding a legend
@@ -111,7 +111,7 @@ If you have to many items on your legend, and they don't fit on your map horizon
 
 ### Adding a scale bar
 
-Before adding a scale bar, select your main map and check in the __Item Properties__ panel that the __Scale__ fielld has a __round number__.
+Before adding a scale bar, select your main map and check in the __Item Properties__ panel that the __Scale__ field has a __round number__.
 
 ```{figure} ../../fig/en_30.30.2_print_layout_scale.png
 ---
@@ -191,13 +191,13 @@ Add the extent of the main map to your overview map (the red rectangle on the ov
 :::
 
 ``` {Caution}
-This method requires you to be sure that you are not going to modify the oveview map, as once the layers are locked, they will keep the style, and any updates will not affect the overview map.
+This method requires you to be sure that you are not going to modify the overview map, as once the layers are locked, they will keep the style, and any updates will not affect the overview map.
 ```
 
 
 ## Exporting the print layout
 
-Once you are finished with the map composition, it is time to export export the print layout as a PDF or SVG file. 
+Once you are finished with the map composition, it is time to export the print layout as a PDF or SVG file. 
 
 1. On the Toolbar click on the `Export as PDF`-button.
 2. Give the new file a name and select the location you want to save it.
@@ -244,7 +244,7 @@ You can drag and drop template-files (`.qpt`, QGIS template file) into QGIS or u
 
 The template directory is where QGIS is looking for layout templates. If you have templates saved here, you can load templates directly through the layout manager without selecting the file.   
 On windows, the file path is `\Users\AppData\Roaming\QGIS\QGIS3\profiles\default\composer_templates`.
-On mac, 
+On mac, the file path usually is `~/Library/Application Support/QGIS/QGIS3/profiles/default/layouts/`. 
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_template_directory
 .mp4"></video>
@@ -262,7 +262,7 @@ You can also add file paths in the QGIS-template setting
 
 ## Generating an Atlas
 
-An Atlas will generate a new page with the same map layout for each feature in a layer. For most purposes, it useful to first create a map layout with the elements such as legend, sources and overview map and then insert the map item that will be controlled by the Atlas. To generate an Atlas:
+An Atlas will generate a new page with the same map layout for each feature in a layer. For most purposes, it is useful to first create a map layout with the elements such as legend, sources and overview map and then insert the map item that will be controlled by the Atlas. To generate an Atlas:
 
 1. Click on the Atlas Settings icon in the Atlas Toolbar
 2. In the new window, activate the __Generate an Atlas__ option
@@ -272,7 +272,7 @@ An Atlas will generate a new page with the same map layout for each feature in a
 6. Click on the map and navigate to the __Layer Properties__ window on the right.
 7. Scroll down until you see the option `Controlled by Atlas` and activate it.
 8. Now activate the preview of the Atlas in the __Atlas Toolbar__. Otherwise, the print layout will not update to show you the atlas page. You can click through each page to see how it looks. Depending on the amount of features on your map, they may take a while to render.
-9. Now you can adjust the __Margin options__ to best fit the readibility of the map. By default, it is set to 10% and this should fit most purposes.
+9. Now you can adjust the __Margin options__ to best fit the readability of the map. By default, it is set to 10% and this should fit most purposes.
 10. Before printing or exporting the atlas make sure to check every page that other elements of the map do not cover the represented region.
 
 ```{Note} 

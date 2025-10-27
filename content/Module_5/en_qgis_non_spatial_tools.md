@@ -44,7 +44,7 @@ __Humanitarian example:__
 
 P-codes are identifying codes for administrative units (e.g. country (adm0), region (adm1), district (adm2)), that were introduced to simplify joining tabular data on administrative regions. These codes clearly identify the administrative units facilitating non-spatial joins. 
 
-For example: We have a spatial dataset containing the administrative boundaries of districts (adm2) in Nigeria and a data table containing the population per district, but without the polygons. By using the P-codes as identifying attribute, we can easily join the population data with the vector dataset.*
+For example: We have a spatial dataset containing the administrative boundaries of districts (adm2) in Nigeria and a data table containing the population per district, but without the polygons. By using the P-codes as identifying attributes, we can easily join the population data with the vector dataset.*
 
 ```{figure} /fig/en_attribute_join_pcode_example.png
 ---
@@ -96,13 +96,13 @@ Great! We have successfully added the population data to our administrative boun
 name: nga_pop_join
 width: 600 px
 ---
-The joined data classified using the graduated symbology for the population value.
+The joined data is classified using the graduated symbology for the population value.
 ```
 
 
 ## Table functions
 
-Table functions usually only involve a single data layer and are manipulating the attribute table. You can add new field, delete unwanted fields, or even calculate new field using the __field calculator__. 
+Table functions usually only involve a single data layer and are manipulating the attribute table. You can add new fields, delete unwanted fields, or even calculate new fields using the __field calculator__. 
 
 For a comprehensive overview on the attribute table's functionality and its purpose, you're invited to explore the [Wiki](/content/Wiki/en_qgis_attribute_table_wiki.md) article on it.
 
@@ -256,7 +256,7 @@ Operators such as AND, OR can be used to combine different queries or criteria
 
 ::::
 
-Querying your data to answer more complex question is of great importance. This can be accomplished using the "Select by expression" tool. In the provided example, we aim to answer the question: Which cities, excluding those with a population of one million inhabitants in 1950, had grown to over ten million inhabitants by 2015?
+Querying your data to answer more complex questions is of great importance. This can be accomplished using the "Select by expression" tool. In the provided example, we aim to answer the question: Which cities, excluding those with a population of one million inhabitants in 1950, had grown to over ten million inhabitants by 2015?
 
 ````{dropdown} Example: Cities, excluding those with a population of one million inhabitants in 1950, that have grown to over ten million inhabitants by 2015
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_expression_and.mp4"></video>
@@ -342,7 +342,7 @@ In this short video, you will discover the location of the query builder and lea
 3. __Compatible data types__
     - The key fields should be of the same or compatible data type (e.g. both integer, or both text) so that QGIS can match them. If one is a text field and the other is numeric, matching won’t work reliably.
 4. __Uniqueness of values__
-    - Ideally, the join table should have unique values in the join key (one-to-one join). If there are multiple matching rows (one-to-many), then you might end up with duplicates, or ambiguous matching — QGIS may either take the first match or aggregate, depending on join method.
+    - Ideally, the join table should have unique values in the join key (one-to-one join). If there are multiple matching rows (one-to-many), then you might end up with duplicates, or ambiguous matching — QGIS may either take the first match or aggregate, depending on the join method.
     - The target layer normally does not change its number of features — the join just appends fields, not duplicating geometry (unless you convert to a permanent joined file in a different way).
 
 4. __What kinds of operations can you perform using table functions (add field, delete field, calculate field)?__

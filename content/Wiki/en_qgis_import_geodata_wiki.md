@@ -65,7 +65,7 @@ To directly load .csv or EXCEL data into QGIS, the datasets need to have columns
 ### Open .csv data in QGIS
 
 ```{Note}
-When loading vector data in text format like .csv or .txt in QGIS, these data has to have latitude and longitude columns. 
+When loading vector data in text format like .csv or .txt in QGIS, this data has to have latitude and longitude columns. 
 * `X field` =“LONGITUDE” 
 * `Y field` = “LATITUDE”
 ```
@@ -95,7 +95,7 @@ When loading vector data in text format like .csv or .txt in QGIS, these data ha
 6. Click `Run`
 
 ```{Tip}
-A other option is always to transform the .xlsx file into a .csv, which is easier to open in QGIS.
+Another option is always to transform the .xlsx file into a .csv, which is easier to open in QGIS.
 ```
 
 <video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_xlsx.mp4"></video>

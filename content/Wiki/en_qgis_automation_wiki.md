@@ -5,7 +5,7 @@ __🔙[Back to Homepage](/content/intro.md)__
 
 ## What is the need for Automation?
 
-Automation streamlines tasks by reducing the user effort and minimizing errors through less manual repetition. It allows for modularization, enhances reusability and reduces redundancy by repeatedly using a defined set of needed tools. In QGIS in can be achieved by using the "Model Designer".
+Automation streamlines tasks by reducing the user effort and minimizing errors through less manual repetition. It allows for modularization, enhances reusability and reduces redundancy by repeatedly using a defined set of needed tools. In QGIS it can be achieved by using the "Model Designer".
 
 ## The QGIS Model Designer
 
@@ -18,7 +18,7 @@ The Model Designer is a visual tool that allows users to create and edit a workf
 
 - Save the model file in a folder of your choosing by clicking on the ![](/fig/qgis_save_project_as.png) `Save model as`-button in the top bar. 
 
-- Open a existing model via `Model` -> `Open Model` and navigating to the model file
+- Open an existing model via `Model` -> `Open Model` and navigating to the model file
     <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_3.40_open_model_file.mp4"></video>
 
 
@@ -78,7 +78,7 @@ Selecting "Algorithm output" as Input layer to chain several processing steps to
 
 **Executing the Model**
 
-To run the model click the green arrow in the top bar, a new window will open where you will have to enter/specify your inputs, then click "Run". Output layers are automatically added to you QGIS project interface.
+To run the model click the green arrow in the top bar, a new window will open where you will have to enter/specify your inputs, then click "Run". Output layers are automatically added to your QGIS project interface.
 
 Once you are finished creating your workflow, or you want to test the result of your model, you can execute the model. This will automatically perform all the processing steps you entered into the graphical modeler, and create layers in your QGIS-project for the defined outputs:
 

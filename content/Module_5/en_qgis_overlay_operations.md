@@ -149,7 +149,7 @@ To solve it, try...
 - Changing the CRS for the layer
 - Reprojecting the layer
 
-For example, if you are trying to make a buffer on a layer with a Geographical Coordinate System, QGIS will warn you and suggest to reproject the layer to a __metric Coordinate System__. This is because when you are using a metric coordinate system, the algorithm will use degrees to calculate the distance of the buffer size. However, the distance between degrees are not uniform and depend on the latitude (see {numref}`distance_longitudes`)
+For example, if you are trying to make a buffer on a layer with a Geographical Coordinate System, QGIS will warn you and suggest to reprojecting the layer to a __metric Coordinate System__. This is because when you are using a metric coordinate system, the algorithm will use degrees to calculate the distance of the buffer size. However, the distance between degrees are not uniform and depend on the latitude (see {numref}`distance_longitudes`)
 
 ```{figure} /fig/en_dist_longitudes.png
 ---
@@ -261,7 +261,7 @@ Screenshot of the tool Clip vector by mask layer
 It is useful when: 
 - When you want to extract a subset of features from a larger dataset (e.g., clip roads to an administrative boundary)
 - When you want to merge or aggregate spatial areas (e.g., dissolve overlapping flood extents into one combined area).
-- In humanitarian or operational workflows: e.g., determining the coverage area of health centres, the extent of hazard zone inside a region, or trimming large datasets to an area of interest to improve efficiency.
+- In humanitarian or operational workflows: e.g., determining the coverage area of health centres, the extent of hazard zones inside a region, or trimming large datasets to an area of interest to improve efficiency.
 
 :::
 
