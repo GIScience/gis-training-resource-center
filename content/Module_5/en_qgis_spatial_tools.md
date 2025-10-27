@@ -364,8 +364,32 @@ __Join attributes by location (summary)__ tool.
 :class: note
 
 1. __What differentiates a spatial processing tool from a non-spatial processing tool?__
+
+:::{dropdown} Answer
+A __spatial processing__ tool operates on the geometry (location, shape, spatial relationship) of features (points, lines, polygons, or raster cells) and uses that spatial information (e.g., distance, adjacency, overlap) in its operation. A __non‑spatial processing__ tool operates only on attribute or tabular data without regard to the geometry (for example sorting a table, calculating a field, joining tables by key).
+:::
+
 2. __Name and briefly describe at least three common spatial tools or operations covered (e.g. buffer, clip, dissolve, intersect, union).__ 
+
+:::{dropdown} Answer
+- __Buffer:__ Creates a zone at a specified distance around input features (points, lines or polygons). For example, around a road line you create a 100 m buffer zone polygon that represents all area within 100 m of the road.
+- __Clip:__ Uses one layer (the “clip” layer) to trim or cut another layer so that only the portion of the input layer falling inside (or maybe outside) the clip layer remains. Effectively extracts a subset of geometry.
+- __Dissolve:__ Merges adjacent or overlapping features in a layer based on a shared attribute (or simply removes internal boundaries) so that features become larger aggregated shapes. For instance, combining many small administrative units into one larger one based on a region code.
+:::
+
 3. __If you have a layer of roads and you apply a buffer of 100 m around each road, what is the resulting geometry and what is one possible use case__
+
+:::{dropdown} Answer
+- The output will be polygon features (zones) that represent all areas within 100 m of each road. So if your input roads are line features, after the buffer you will have polygon(s) that “wrap” around each road line, extending on both sides by 100 m (assuming a simple planar buffer).
+- A buffer could be used to buffer a cyclone track to approximate the cyclone-affected region (see [QGIS Trigger Workflow for Madagascar](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_cyclone_trigger_madagascar.html)).
+
+:::
+
 4. __Why is it important to check whether input layers have compatible projections / CRSs before running spatial tools?__
+
+:::{dropdown} Answer 
+- If layers have different CRSs (or datums) and you apply a spatial tool without performing a proper reprojection, the geometry calculations (distances, areas, buffers, overlay) may be incorrect or misleading. For example a buffer of “100 m” may in fact be 100 units of a different coordinate system (degrees or feet) so the real world distance is wrong.
+- Spatial operations rely on accurate geometric relationships; if one layer is in e.g., WGS84 geographic degrees and another is in a projected metre‐based CRS, the mismatch can cause mis‐alignment, stretching, distortion, or errors in results.
+- Ensuring compatible projections helps maintain spatial accuracy, area/distance correctness, and valid topological relationships (e.g., overlays, intersections) which are critical for meaningful results.
 
 ::::
