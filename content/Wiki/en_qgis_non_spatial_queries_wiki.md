@@ -15,7 +15,17 @@ __🔙[Back to Homepage](/content/intro.md)__
 
 ## Select by expression
 
-The `Select by Expression` tool let's you build an expression to select features of a layer. For example, you can select specific attributes, or select features where 
+The `Select by Expression` tool lets you build an expression to select features of a layer. For example, you can select specific attributes, or select features where the value of an attribute in a specific range.
+
+1. Open the attribute table and select the `Select by Expression`-tool.
+
+![](/fig/en_select_features_expression.png)
+
+2. The expression builder will open.
+
+![](/fig/en_query_builder.PNG)
+
+
 
 ### Comparison operators 
 - `>`, `<`, `=`, `!=`
@@ -40,8 +50,15 @@ The `Select by Expression` tool let's you build an expression to select features
 
 :::{dropdown} Example: Cities, not having a population of one million inhabitants in 1950, had surged to over 10 million inhabitants by 2015: `"1950" < 1000 AND "2015" > 10000`
 :open:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_expression_and_wiki.mp4"></video>
+<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_expression_and_wiki.mp4"></video>
 :::
+
+## Complex Expressions
+
+It is also possible to add expressions that chain different requirements. In this case do not forget to put brackets around individual parts of the expression such as:
+```
+
+```
 
 ### Save selected features as a new file
 
@@ -49,7 +66,7 @@ The `Select by Expression` tool let's you build an expression to select features
 
 :::{dropdown} Example: Export selected features as a new file
 :open:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_export_wiki.mp4"></video>
+<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_export_wiki.mp4"></video>
 :::
 
 
@@ -61,41 +78,41 @@ The `Select by Expression` tool let's you build an expression to select features
 :::{tab-item} Arithmetic operators
 | operator | functionality          |
 |----------|------------------------|
-| __+__    | addition               |
-| __-__    | substraction           |
-| __*__    | multiplication         |
-| __/__    | division               |
-| __%__    | remainder of division  |
+| __`+`__    | addition               |
+| __`-`__    | subtraction           |
+| __`*`__    | multiplication         |
+| __`/`__    | division               |
+| __`%`__    | remainder of division  |
 :::
 
 :::{tab-item} Comparison operators
 | operator | functionality            |
 |----------|--------------------------|
-| __=__    | equals                   |
-| __!=__   | not equal                |
-| __<__    | less than                |
-| __>__    | greater than             |
-| __<=__   | less than or equal to    |
-| __>=__   | greater than or equal to |
+| __`=`__    | equals                   |
+| __`!=`__   | not equal                |
+| __`<`__    | less than                |
+| __`>`__    | greater than             |
+| __`<=`__   | less than or equal to    |
+| __`>=`__   | greater than or equal to |
 :::
 
 :::{tab-item} Logical operators
 Operators such as AND, OR can be used to combine different queries or criteria
 | operator | functionality          |
 |----------|------------------------|
-| __AND__  | logical AND            |
-| __OR__   | logical OR             |
-| __NOT__  | logical NOT            |
+| __`AND`__  | logical AND            |
+| __`OR`__   | logical OR             |
+| __`NOT`__  | logical NOT            |
 :::
 
 :::{tab-item} Special operators
 | operator      | functionality                                  |
 |---------------|------------------------------------------------|
-| __LIKE__      | pattern matching                               |
-| __IN__        | checks if a value is in a list of values       |
-| __IS NULL__   | checks for null values                         |
-| __BETWEEN__   | checks if a value is within a specified range  |
-| __CASE WHEN__ | conditional expressions                        |
+| __`LIKE`__      | pattern matching                               |
+| __`IN`__        | checks if a value is in a list of values       |
+| __`IS NULL`__   | checks for null values                         |
+| __`BETWEEN`__   | checks if a value is within a specified range  |
+| __`CASE WHEN`__ | conditional expressions                        |
 :::
 
 ::::
