@@ -625,10 +625,10 @@ Context: Situation in Ethiopia<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">The Greater Horn of Africa receives 20 to 70 percent of the annual total rainfall in the months from October to December. The IFRC reports a exceptionally high forecast probability (over 80%) of experiencing wetter than normal rainfall condition. Additionally, El Niño conditions started between July and August, which further accrued the possibility of high rainfall conditions in Ethiopia.</p>
+<p class="sd-card-text">The Greater Horn of Africa receives 20 to 70 percent of the annual total rainfall in the months from October to December. The IFRC reports an exceptionally high forecast probability (over 80%) of experiencing wetter than normal rainfall conditions. Additionally, El Niño conditions started between July and August, which further accrued the possibility of high rainfall conditions in Ethiopia.</p>
 <p class="sd-card-text">Since October, floods have affected at least 763,000 people in the region, taken 33 lives in the Somali Region alone, and killed 4,806 livestock. The flooding has also resulted in immense damage to infrastructure, transportation, and schooling. The population’s livelihood and health have been greatly affected.
-The impact of flooding is projected to increase in the next years, which will lead to more flash and river floods.</p>
-<p class="sd-card-text">Access maps, such as the one above, play a crucial role in helping informing information manager and ground staff which areas are accessible. This is especially important as a timely deployment of relief or aid operations is essential in flooding disasters.</p>
+The impact of flooding is projected to increase in the next few years, which will lead to more flash and river floods.</p>
+<p class="sd-card-text">Access maps, such as the one above, play a crucial role in helping inform information managers and ground staff which areas are accessible. This is especially important as a timely deployment of relief or aid operations is essential in flooding disasters.</p>
 <p class="sd-card-text">(Source: <a class="reference external" href="https://go.ifrc.org/emergencies/6773/details">IFRC</a>)</p>
 </div>
 </details><p>The map above shows the flood-affected areas, as well as the important road networks in the Somali Region, Ethiopia in November 2023. Maps such as these are crucial for humanitarian aid workers when planning relief or aid operations and need to be up-to-date. They display important settlements and, most importantly, the accessibility of roads and airstrips.</p>
@@ -636,7 +636,7 @@ The impact of flooding is projected to increase in the next years, which will le
 <ul class="simple">
 <li><p>A shapefile for the flood affected areas was given a hashed fill. In QGIS, you can find this symbology.</p></li>
 <li><p>A layer with the road network has been put above the layer with the flood-affected areas. The road symbology has been <strong>categorised</strong> into three categories: Accessible road (green), partially accessible road (grey), and hard-to-reach road (red).</p></li>
-<li><p>The topmost layer is a point-layer with information on unaccessible roads or bridges as well as the location of airstrips and which airstrips are accessible. The points have been symbolized with SVG-symbols.</p></li>
+<li><p>The topmost layer is a point-layer with information on inaccessible roads or bridges as well as the location of airstrips and which airstrips are accessible. The points have been symbolized with SVG-symbols.</p></li>
 <li><p>(The administrative boundaries of Ethiopia are set apart from the surrounding countries by making the polygon a clear white and the surrounding countries in a shade of grey. This can be achieved by copying the polygon of Ethiopia into a new layer, and changing the symbology respectively)</p></li>
 </ul>
 <div class="admonition note">
@@ -751,7 +751,7 @@ Infrastructure Map Kunduz Province
 <p class="admonition-title">Caution</p>
 <p>Be cautious when using a <strong>gradient across two different colours</strong> for data that is <strong>always positive</strong> (or negative).</p>
 </div>
-<p>This is a difficult because our brains are used to prioritising certain colours, especially green to red, or blue to red. We must remember that <strong>if our values do not have a meaningful zero point</strong>, it might be better to stay in the same single colour and use different shades of that colour to indicate different values. Alternatively, a colour gradient that is not diverging can be used.</p>
+<p>This is difficult because our brains are used to prioritising certain colours, especially green to red, or blue to red. We must remember that <strong>if our values do not have a meaningful zero point</strong>, it might be better to stay in the same single colour and use different shades of that colour to indicate different values. Alternatively, a colour gradient that is not diverging can be used.</p>
 <p>A diverging gradient between two colours can be used when it is necessary to show a gradation that can go from negative to positive. As for temperatures, it makes sense to distinguish negative values (in shades of blue for example) and positive values (in shades of red).</p>
 <p>It is a mistake because:</p>
 <ul class="simple">
@@ -767,8 +767,8 @@ Infrastructure Map Kunduz Province
 <p class="admonition-title">Caution</p>
 <p>DO NOT use <strong>too many symbols</strong> in a thematic map</p>
 </div>
-<p>Incorporating a multitude of symbols (and data) for a informative map is a common desire. However, too many symbols can <strong>overload the map</strong> and <strong>reduce the readability</strong> of the map. Using too many symbols (especially geometric ones) can make it difficult to read and understand the map.<br />
-__The eye can easily distinguish between four to five different symbols. Beyond that, it is difficult to tell elements apart. However, This is a less serious error because it does not convey false information on the map.</p>
+<p>Incorporating a multitude of symbols (and data) for an informative map is a common desire. However, too many symbols can <strong>overload the map</strong> and <strong>reduce the readability</strong> of the map. Using too many symbols (especially geometric ones) can make it difficult to read and understand the map.<br />
+<strong>The eye can easily distinguish between four to five different symbols.</strong> Beyond that, it is difficult to tell elements apart. However, this is a less serious error because it does not convey false information on the map.</p>
 <p>It is a mistake because:</p>
 <ul class="simple">
 <li><p>It complicates the map and limits its impact.</p></li>

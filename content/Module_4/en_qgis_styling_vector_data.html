@@ -573,7 +573,7 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-graduated-symbols-map">4.2.2.1.4. Creating a graduated symbols map</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-different-styles-in-a-single-layer">4.2.2.2. Use different styles in a single layer</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-different-styles-in-a-single-layer">4.2.2.2. Using different styles in a single layer</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-different-point-symbols-for-different-features">4.2.2.2.1. Setting different point symbols for different features</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#using-svg-symbols-and-ifrc-symbols">4.2.2.2.2. <strong>Using SVG-Symbols and IFRC symbols</strong></a></li>
 </ul>
@@ -624,7 +624,7 @@ want to apply our understanding of visual representation and learn how to use th
 <p>For each layer in QGIS, there is a styling panel where you can change the symbology, colour and label for the features in that layer. There are two ways to open the layer styling options in QGIS:</p>
 <ol class="arabic simple">
 <li><p>Right click on the layer you wish to style and select <code class="docutils literal notranslate"><span class="pre">properties</span></code>. A new window will open up with a vertical tab section on the left. Navigate to the <code class="docutils literal notranslate"><span class="pre">symbology</span></code> tab.</p></li>
-<li><p>Open the layer styling panel by enabling it under <code class="docutils literal notranslate"><span class="pre">View</span></code>&gt;<code class="docutils literal notranslate"><span class="pre">Panels</span></code>&gt;<code class="docutils literal notranslate"><span class="pre">Styling</span> <span class="pre">Panel</span></code>. Usually, the panel will appear on the right side of map canvas.</p></li>
+<li><p>Open the layer styling panel by enabling it under <code class="docutils literal notranslate"><span class="pre">View</span></code>&gt;<code class="docutils literal notranslate"><span class="pre">Panels</span></code>&gt;<code class="docutils literal notranslate"><span class="pre">Styling</span> <span class="pre">Panel</span></code>. Usually, the panel will appear on the right side of the map canvas.</p></li>
 </ol>
 <p>On the left of the styling panel you can choose the different tabs to access different styling options.</p>
 <p>In the styling panel you can change the styling for all features of a layer, set up categories for different symbols,
@@ -656,7 +656,7 @@ lines, or polygons. There are different options to symbolize these different typ
 <p>In the symbology tab of the layer styling panel, you can set the</p>
 <p>Simple Markers are generally used to create the symbols for most elements on a map. For example, simple markers are
 used to visualise streets, building outlines, waterbodies, administrative boundaries or other polygons.
-Most simple markers consist of a <strong>fill</strong> and an <strong>outline</strong>. Depending on the type of geometry in the layer, you will use have different symbology options.</p>
+Most simple markers consist of a <strong>fill</strong> and an <strong>outline</strong>. Depending on the type of geometry in the layer, you will have to use have different symbology options.</p>
 <ul class="simple">
 <li><p>The fill determines the fill colour of the symbol. You can change the colour and transparency. You are also able to make more complex fills such as a line pattern fill, or an SVG-symbol fill.</p></li>
 <li><p>The outline determines the colour, type, and thickness of the outline. Next to the colour and transparency, the outline is the most critical for distinguishing between different elements. For example, thicker lines for roads usually signify roads of a higher order (such as highways), while thin dashed lines might signify footpaths, inaccessible to road vehicles.</p></li>
@@ -760,7 +760,7 @@ Video: Making the fill colour transparent<div class="sd-summary-down docutils">
 <li><p>Click OK.</p></li>
 <li><p><strong>Repeat the same process</strong> for the Adm1 layer, using the same colour as for Adm0 (it will be in “Recent colors) and leave the stroke width at 0.26.</p></li>
 <li><p>Now we can see the boundaries of the country and its states, and behind that we can see the districts (Adm2).</p></li>
-<li><p>Let’s make the districts layer’s style consistent with the others.</p></li>
+<li><p>Let’s make the district layer’s style consistent with the others.</p></li>
 <li><p>Choose a <code class="docutils literal notranslate"><span class="pre">Fill</span> <span class="pre">Color</span></code></p></li>
 <li><p>Use the same Stroke Colour` as for Adm0 and Adm1, but make the width 0.1 Millimeters and the Stroke Style a <strong>Dash Line</strong></p></li>
 <li><p>Click OK and look at your map: hopefully it’s starting to look nicer!</p></li>
@@ -853,7 +853,7 @@ We will be using the same layer as for the choropleth map (see <a class="referen
 </figure>
 <ol class="arabic simple" start="2">
 <li><p>Under <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Layer</span></code>, select the <code class="docutils literal notranslate"><span class="pre">NGA_Adm1_Pop</span></code>-layer. Click on <code class="docutils literal notranslate"><span class="pre">Run</span></code>.</p></li>
-<li><p>A new point layer called <code class="docutils literal notranslate"><span class="pre">Centroids</span></code> will appear in your layers panel. Open it’s styling panel and navigate to the symbology tab.</p></li>
+<li><p>A new point layer called <code class="docutils literal notranslate"><span class="pre">Centroids</span></code> will appear in your layers panel. Open its styling panel and navigate to the symbology tab.</p></li>
 <li><p>Set the symbolisation method to <code class="docutils literal notranslate"><span class="pre">Graduated</span></code>.</p></li>
 <li><p>Under <strong>Value</strong>, select <code class="docutils literal notranslate"><span class="pre">total_pop</span></code>.</p></li>
 <li><p>Change the <strong>Method</strong> from <code class="docutils literal notranslate"><span class="pre">Colour</span></code> to <code class="docutils literal notranslate"><span class="pre">Size</span></code>.</p></li>
@@ -877,8 +877,8 @@ Video: How to create a proportional circles map<div class="sd-summary-down docut
 </div>
 </details></section>
 </section>
-<section id="use-different-styles-in-a-single-layer">
-<h3><span class="section-number">4.2.2.2. </span>Use different styles in a single layer<a class="headerlink" href="#use-different-styles-in-a-single-layer" title="Permalink to this heading">#</a></h3>
+<section id="using-different-styles-in-a-single-layer">
+<h3><span class="section-number">4.2.2.2. </span>Using different styles in a single layer<a class="headerlink" href="#using-different-styles-in-a-single-layer" title="Permalink to this heading">#</a></h3>
 <p>By categorizing or classifying data in a single layer, we are able to assign different styles to each classification.
 We can use symbology to <strong>show the difference between features</strong> in the same layer. For example, it could be different types of buildings, quantities of Covid cases by district, or types of roads. We can choose a specific attribute of a dataset to assign different colors, outlines, or sizes to features:</p>
 <section id="setting-different-point-symbols-for-different-features">
@@ -912,7 +912,7 @@ We can use symbology to <strong>show the difference between features</strong> in
 <p><span class="caption-number">Fig. 4.29 </span><span class="caption-text">By double clicking on the <strong>unique values</strong> in the classified list, you can change the symbol for each value</span><a class="headerlink" href="#en-30-30-2-categorized-layer-symbology-2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Now we have a map of Nigeria where you can locate the areas, that are affected by explosions more than others. On the map below, we also added text labels, which will be explained below.</p>
+<p>Now we have a map of Nigeria where you can locate the areas that are affected by explosions more than others. On the map below, we also added text labels, which will be explained below.</p>
 <figure class="align-default" id="en-exercise-map-design-example-nigeria">
 <a class="reference internal image-reference" href="../../_images/en_exercise_map_design_example_Nigeria.png"><img alt="../../_images/en_exercise_map_design_example_Nigeria.png" src="../../_images/en_exercise_map_design_example_Nigeria.png" style="width: 500px;" /></a>
 <figcaption>
@@ -934,7 +934,7 @@ Video: Set up different symbols in a single layer<div class="sd-summary-down doc
 <p class="sd-card-text"><strong>Simple Markers, SVG-Symbols and Raster images</strong></p>
 </div>
 <div class="sd-card-body docutils">
-<p class="sd-card-text">On top of simple markers, QGIS let’s you also use SVG-symbols and raster images as symbols for your vector data.</p>
+<p class="sd-card-text">On top of simple markers, QGIS lets you also use SVG-symbols and raster images as symbols for your vector data.</p>
 <ul class="simple">
 <li><p class="sd-card-text"><strong>Simple markers</strong> are simple shapes such as rectangles, circles, or crosses that can be adjusted in the symbolization layer (colour, size, outline, etc.). Most of your styling in QGIS will be done with these markers.</p></li>
 <li><p class="sd-card-text"><strong>SVG-symbols</strong> are <em>scalable vector graphic</em> symbols. As vector files, they can be scaled to any size while keeping the same resolution. In most cases, if you want to use a more complex symbol (e.g. hospital, school, train station), SVG-symbols are the best option as they let you adjust the symbol (colours, outline, size, etc.)</p></li>
@@ -956,7 +956,7 @@ To use SVG-symbols:</p>
 <ol class="arabic simple">
 <li><p>Open the styling panel and open the <code class="docutils literal notranslate"><span class="pre">single</span> <span class="pre">marker</span></code> options.</p></li>
 <li><p>Under <code class="docutils literal notranslate"><span class="pre">Symbol</span> <span class="pre">layer</span> <span class="pre">type</span></code>, select <strong>“SVG Marker”</strong></p></li>
-<li><p>Scroll down to the SVG-Browser. Here you will find all the folder of your installed SVG-libraries.</p></li>
+<li><p>Scroll down to the SVG-Browser. Here you will find all the folders of your installed SVG-libraries.</p></li>
 </ol>
 <p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video></p>
 <p>There is already a default library of SVG-symbols. If you are looking for a specific symbol, try searching for it in the search bar</p>
@@ -1181,7 +1181,7 @@ Answer<div class="sd-summary-down docutils">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-graduated-symbols-map">4.2.2.1.4. Creating a graduated symbols map</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-different-styles-in-a-single-layer">4.2.2.2. Use different styles in a single layer</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-different-styles-in-a-single-layer">4.2.2.2. Using different styles in a single layer</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-different-point-symbols-for-different-features">4.2.2.2.1. Setting different point symbols for different features</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#using-svg-symbols-and-ifrc-symbols">4.2.2.2.2. <strong>Using SVG-Symbols and IFRC symbols</strong></a></li>
 </ul>

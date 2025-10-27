@@ -66,7 +66,7 @@ Adding a new map to the Print Layout (Source: CartONG)
 A title should describe the phenomenon represented on the map.
 
 - To add text (title, explanations), use the ![](../../fig/30.30.2_print_layout_add_text.png) `Add Label`-tool and draw a rectangle of the desired size.
-- In the __Item Properties__ panel (on the right of your screen) you can __enter your text__ and __change the font, style, colour, etc.__ (_Remember to use the scroll bar in the window to see all the options).
+- In the __Item Properties__ panel (on the right of your screen) you can __enter your text__ and __change the font, style, colour, etc.__ (Remember to use the scroll bar in the window to see all the options).
 
 ```{figure} ../../fig/en_30.30.2_print_layout_add_text.png
 ---
@@ -121,10 +121,10 @@ name: en_30.30.2_print_layout_add_legend
 Adding a legend to the print layout
 ```
 
-In the __Item Properties__ panel, if you keep the __`Auto update`__ option checked, new layers added to your project will automatically be added to the legend but you cannot control them individually (rename if necessary, reorder ot remove items).  
+In the __Item Properties__ panel, if you keep the __`Auto update`__ option checked, new layers added to your project will automatically be added to the legend but you cannot control them individually (rename if necessary, reorder or remove items).  
 Once the option is unchecked, you can update the name of the layers, group them, remove or reorganise them, etc.
 
-If you have to many items on your legend, and they don't fit on your map horizontally, you can also split the legend into several columns by navigating through the Item Properties panel, expand the `Columns`-section, and increase the `Count`.
+If you have too many items on your legend, and they don't fit on your map horizontally, you can also split the legend into several columns by navigating through the Item Properties panel, expand the `Columns`-section, and increase the `Count`.
 
 ::::{tab-set}
 :::{tab-item} Adding a legend
@@ -231,7 +231,7 @@ This method requires you to be sure that you are not going to modify the overvie
 
 ## Exporting the print layout
 
-Once you are finished with the map composition, it is time to export export the print layout as a PDF or SVG file.
+Once you are finished with the map composition, it is time to export the print layout as a PDF or SVG file.
 
 1. In the toolbar above the canvas, click on the ![](../../fig/30.30.2_print_layout_export_pdf.png) `Export as PDF`-button.
 2. Give the new file a name and select the location you want to save it.
@@ -316,12 +316,12 @@ If you can't see the Atlas Tools, you must first activate the Atlas Toolbar unde
 
 ### Generating an Atlas
 
-An atlas will generate a new page with the same map layout for each feature in a layer. For most purposes, it useful to first create a map layout with the elements such as legend, sources and overview map and then insert the map item that will be controlled by the Atlas. To generate an atlas:
+An atlas will generate a new page with the same map layout for each feature in a layer. For most purposes, it is useful to first create a map layout with the elements such as legend, sources and overview map and then insert the map item that will be controlled by the Atlas. To generate an atlas:
 
 1. Click on the ![](../../fig/30.30.2_print_layout_atlas_settings.png) `Atlas Settings`-button in the Atlas Toolbar.
 2. In the new window, activate the `Generate an Atlas` option.
 3. Select the `Coverage Layer`. This will determine the features or polygons that will be displayed on a page. In our example, we will use the subnational administrative regions in Nigeria (`ADM1`).
-4. Select the `Page Name`. This should be the name of the subnational region or location that is displayed on that page. To display the name of the region, we will choose the column `ADM1_REF`, which holds the names of the regions in english.
+4. Select the `Page Name`. This should be the name of the subnational region or location that is displayed on that page. To display the name of the region, we will choose the column `ADM1_REF`, which holds the names of the regions in English.
 5. Now let's add a map to the empty print layout.
 6. Click on the map and navigate to the __Layer Properties__ window on the right.
 7. Scroll down until you see the option `Controlled by Atlas` and activate it.

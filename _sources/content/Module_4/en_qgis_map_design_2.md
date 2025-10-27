@@ -32,7 +32,7 @@ In general, there are a few things to keep in mind when creating a map:
 - Additional information, such as title, sources, scale bar, legend, orientation, etc. should be scaled accordingly.
     - Titles should be large so the reader can identify it as the main topic of the map.
     - Additional information should be smaller and moved out of the main focus of the page (e.g. at the bottom, to the sides, or in the corners).
-- A well-structure page layout helps the reader discern the different information on the map and makes it easier to know where to look for certain information. Frames and boxes can structure the page layout. For example, a legend can be put on the bottom or to the right of the map.
+- A well-structured page layout helps the reader discern the different information on the map and makes it easier to know where to look for certain information. Frames and boxes can structure the page layout. For example, a legend can be put on the bottom or to the right of the map.
 
 In order to produce good maps, there are some __basic rules__ to follow and __semiological mistakes__ to avoid. The following subchapter will go over the key elements of a map as well as common design mistakes 
 
@@ -69,7 +69,7 @@ _Examples:_
 - _"Access to health care in Maputo, Mozambique in 2022"_
 - _"Flooding Risk in Ghardaïa, Algeria"_
 
-__The legend__ is key to interpreting the information represented on the map. Without it, it is impossible to understand the meaning of the different symbols and colours used map. In order to guide the reader, the legend must be:
+__The legend__ is key to interpreting the information represented on the map. Without it, it is impossible to understand the meaning of the different symbols and colours used on the map. In order to guide the reader, the legend must be:
 
 - __Comprehensive__: All the data on the map must be presented in the legend.
 - __Representative__: The figures on the map and in the legend must match (same size, same color, ...).
@@ -87,7 +87,7 @@ __The scale bar__ is essential to a map since it gives the correspondence betwee
 
 - __The numerical scale__ is expressed as a fraction (1/25000 or 1:25000) that indicates the ratio between 1 centimetre on the map and the actual distance. It is a scale that can be calculated with GIS software, and is often found in topographic maps. A scale of 1:25000 means that 1 cm represents 25,000 cm (or 250 meters) on the ground.
 
-- __the graphical scale__ is expressed by a line on the map, with an associated distance value. This scale is very useful for understanding distances on the ground. The graphical scale will always be the correct size, even if a different printing format is used, since it will undergo the same transformation as the rest of the map
+- __The graphical scale__ is expressed by a line on the map, with an associated distance value. This scale is very useful for understanding distances on the ground. The graphical scale will always be the correct size, even if a different printing format is used, since it will undergo the same transformation as the rest of the map
 
 ```{figure} ../../fig/example_scale_bar.png
 ---
@@ -102,7 +102,7 @@ Even though the majority of the maps are oriented towards the north, it is still
 
 ### Sources
 
-Any data represented on a map should have its sources indicated. This provides a record of the data used, but also credits the author of the data. The reader will then be able to look for more information on the sources if he wishes. Open access geographic data, such as OpenStreetMap, are increasingly population and must also be cited on maps.  
+Any data represented on a map should have its sources indicated. This provides a record of the data used, but also credits the author of the data. The reader will then be able to look for more information on the sources if he wishes. Open access geographic data, such as OpenStreetMap, are increasingly populated and must also be cited on maps.  
 
 It is possible to give the source of each data under the legend, or to do so in a dedicated space in the map. The level of precision of the sources varies according to the author or the precision of the data.
 
@@ -134,7 +134,7 @@ Flood affected areas and roads in the Somali Region, Ethiopia (Source: OCHA)
 name: proportional_circles_example
 width: 500 px
 ---
-Internally Displaced Persons (IDPs), 30 September 2024 (Soure: [UNHCR](https://reliefweb.int/map/sudan/regional-bureau-east-horn-africa-and-great-lakes-region-internally-displaced-persons-idps-30-september-2024)).
+Internally Displaced Persons (IDPs), 30 September 2024 (Source: [UNHCR](https://reliefweb.int/map/sudan/regional-bureau-east-horn-africa-and-great-lakes-region-internally-displaced-persons-idps-30-september-2024)).
 ```
 
 ::::
