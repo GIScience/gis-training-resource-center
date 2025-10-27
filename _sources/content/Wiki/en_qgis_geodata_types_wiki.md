@@ -25,7 +25,7 @@ Raster data can have the following data formats:
 | Filename extension  | Name                  | Description                                                                                                                                                          |
 |---------------------|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `.tif`/`.tiff`/`.geotiff` | Tag Image File Format | Common raster and image data format. Does not necessarily have georeferenced information. If a .tif file has georeferenced information it is referred to as GeoTIFF. |
-| `.nc`                 | netCDF                | Standard data format for scientific data like speed or temperature. Can be be a raster file. Can contain multiple datasets                                           |
+| `.nc`                 | netCDF                | Standard data format for scientific data like speed or temperature. Can be a raster file. Can contain multiple datasets                                           |
 | `.asc`                | Esri ASCII Grid files | Old simple raster file format, always with georeferenced information                                                                                                |
 
 ## Text data

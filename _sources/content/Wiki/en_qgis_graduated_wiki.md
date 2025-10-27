@@ -6,7 +6,7 @@ __🔙[Back to Homepage](/content/intro.md)__
 - Graduated classification in GIS involves categorizing spatial data into **classes or ranges** based on a progression of values. 
 - This method is particularly useful for visualizing quantitative data, allowing for the differentiation of intensity, density, or magnitude across a spectrum, facilitating a nuanced representation of geographic phenomena.
 
-- Graduated classification is used for quantitative data usually __interval__ or __ratio__ scaled.
+- Graduated classification is used for quantitative data, usually __interval__ or __ratio__ scaled.
 
 | Data Scale     | Definition                                         | Example                             | Typical Data Format                          |
 |----------------|----------------------------------------------------|-------------------------------------|----------------------------------------------|
@@ -45,7 +45,7 @@ align: center
 
 ## The number of classes
 
-- Deciding on the number of classes, and where the ranges for the different classes lie, has profound impact on the resulting map.
+- Deciding on the number of classes, and where the ranges for the different classes lie, has a profound impact on the resulting map.
 - There are seven ways in QGIS to split quantitative data into classes. 
 - The four most important ones are: Equal intervals, Quantile, Natural breaks, Manual. 
 - In general, you should limit the number of classes between 3 to 9.

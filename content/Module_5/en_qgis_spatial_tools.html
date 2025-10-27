@@ -645,9 +645,9 @@ The table below describes spatial relationships and gives examples when these sp
 <li><p><strong>Spatial Joins</strong> let us join attribute values from one layer to another based on their spatial relationship. This enables us to enrich datasets and
 incorporate additional information from  layers, which can help us understand a situation.</p></li>
 <li><p>The overlay operation <strong>Clip</strong> can be employed to extract specific areas of interest from multiple layers, allowing us to focus our attention where it is most needed.</p></li>
-<li><p>The <strong>Dissolve</strong> operation allows us to simplify geometries by joining geometries from two distinct layer.</p></li>
+<li><p>The <strong>Dissolve</strong> operation allows us to simplify geometries by joining geometries from two distinct layers.</p></li>
 <li><p>Using <strong>Buffer</strong>, we can create zones around features to help identify vulnerable areas and plan evacuation routes in the event of a flooding event.</p></li>
-<li><p><strong>Centroids</strong> creates point in the geometric centre of the geometries of a layer. This is especially useful when creating graduated symbol maps</p></li>
+<li><p><strong>Centroids</strong> create points in the geometric centre of the geometries of a layer. This is especially useful when creating graduated symbol maps</p></li>
 </ul>
 <figure class="align-default" id="en-module5-spatial-geodataprocessing">
 <a class="reference internal image-reference" href="../../_images/en_module5_spatial_geodataprocessing.PNG"><img alt="../../_images/en_module5_spatial_geodataprocessing.PNG" src="../../_images/en_module5_spatial_geodataprocessing.PNG" style="width: 750px;" /></a>
@@ -698,7 +698,7 @@ Screenshot of the Select by location tool
 <li><p>Spatial joins in QGIS enhance the attributes of the input layer by adding additional information from the join layer, relying on their <strong>spatial relationship</strong>. This process enriches your data by incorporating relevant details from one layer into another based on their geographical associations.</p></li>
 <li><p>In QGIS, a spatial join creates a new layer by comparing the features of one layer to another, depending on
 their spatial relationship.</p></li>
-<li><p>The restulting joined layer <strong>receives attributes</strong> from both layers based on the chosen parameters.</p></li>
+<li><p>The resulting joined layer <strong>receives attributes</strong> from both layers based on the chosen parameters.</p></li>
 </ul>
 <p>For example:</p>
 <ul class="simple">
@@ -729,7 +729,7 @@ their spatial relationship.</p></li>
 Intersect</label><div class="sd-tab-content docutils">
 <p>Tests whether the geometry of the two layers intersects with one another. The algorithm returns the value “True” (1),
 if the geometries intersect spatially. This means that they share any portion of space, overlap, or touch. If they don’t
-overlap, the algorithms returns the value “False” (0). In the picture below, the algorithm will return the circles <strong>1, 2, and 3</strong>.</p>
+overlap, the algorithms returns the value “False” (0). In the picture below, the algorithm return the circles <strong>1, 2, and 3</strong>.</p>
 </div>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-1">
@@ -740,7 +740,7 @@ In the picture below, the algorithm would output a layer with only the circle 4.
 <input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-2">
 Equal</label><div class="sd-tab-content docutils">
-<p>The algorithms returns a layer with geometries that are exactly the same (all the points and lines are equal). In the
+<p>The algorithm returns a layer with geometries that are exactly the same (all the points and lines are equal). In the
 picture below, no circles are returned (added to the output layer).</p>
 </div>
 <input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
@@ -772,7 +772,7 @@ way around, as it contains circle 1 completely. This is the opposite of “are w
 </input><label class="sd-tab-label" for="sd-tab-item-7">
 Cross</label><div class="sd-tab-content docutils">
 <p>Returns geometries that have some, but not all, interior points in common and the actual crossing is of a lower dimension
-than the highest supplied geometry. For example, a line crossing a polygon will cross as aline (true). Two lines crossing
+than the highest supplied geometry. For example, a line crossing a polygon will cross as a line (true). Two lines crossing
 will cross as a point (true). Two polygons cross as a polygon (false). In the picture below, no circles will be returned.</p>
 </div>
 </div>
@@ -833,56 +833,22 @@ the right side of your screen.</p>
 </li>
 <li><p>Unzip the files, create a new QGIS-project, and load the files into the QGIS-project.</p></li>
 <li><p>Search for the tool <strong>“Join Attributes by Location”</strong> in the processing toolbox and <kbd>Double-Click</kbd> on it. A new window will open
-(see <a class="reference internal" href="#join-by-location-ex1"><span class="std std-numref">Fig. 5.6</span></a>).</p></li>
+(see <code class="xref std std-numref docutils literal notranslate"><span class="pre">join_by_location_ex1</span></code>).</p></li>
 <li><p>Use the health facilities layer as the target (“Join to feature in”) and the adm2 layer as the comparison layer (“By comparing to”).</p></li>
-<li><p>Use the <code class="docutils literal notranslate"><span class="pre">are</span> <span class="pre">within</span></code> geometrical predicate.</p></li>
+<li><p>Use the <code class="docutils literal notranslate"><span class="pre">are</span> <span class="pre">within</span></code> as geometrical predicate.</p></li>
 <li><p>Select the fields to add: <code class="docutils literal notranslate"><span class="pre">ADM2_EN</span></code>, <code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code></p></li>
 <li><p>Select <code class="docutils literal notranslate"><span class="pre">Discard</span> <span class="pre">records</span> <span class="pre">that</span> <span class="pre">could</span> <span class="pre">not</span> <span class="pre">be</span> <span class="pre">joined</span></code></p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Run</span></code> to proceed; the log should confirm success.</p></li>
 <li><p>A new (temporary) layer called “Joined features” will appear in your layers-panel</p></li>
 <li><p><kbd>Right-click</kbd> on the layer and select “Export” or “Make Permanent” to save the new layer.</p></li>
 </ol>
-<table class="table">
-<colgroup>
-<col style="width: 44%" />
-<col style="width: 56%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Instruction</p></th>
-<th class="head"><p>Join Attributes by Location</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><ol class="arabic simple">
-<li><p>Download the necessary datasets <span class="xref myst">here</span></p></li>
-<li><p>Unzip the files, create a new QGIS-project, and load the files into the QGIS-project.</p></li>
-<li><p>Search for the tool <strong>“Join Attributes by Location”</strong> in the processing toolbox and <kbd>Double-Click</kbd> on it. A new window will open (see <a class="reference internal" href="#join-by-location-ex1"><span class="std std-numref">Fig. 5.6</span></a>).</p></li>
-<li><p>Use the health facilities layer as the target (“Join to feature in”) and the adm2 layer as the comparison layer (“By comparing to”).</p></li>
-<li><p>Use the <code class="docutils literal notranslate"><span class="pre">are</span> <span class="pre">within</span></code> geometrical predicate.</p></li>
-<li><p>Select the fields to add: <code class="docutils literal notranslate"><span class="pre">ADM2_EN</span></code>, <code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code></p></li>
-<li><p>Select <code class="docutils literal notranslate"><span class="pre">Discard</span> <span class="pre">records</span> <span class="pre">that</span> <span class="pre">could</span> <span class="pre">not</span> <span class="pre">be</span> <span class="pre">joined</span></code></p></li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Run</span></code> to proceed; the log should confirm success.</p></li>
-<li><p>A new (temporary) layer called “Joined features” will appear in your layers-panel</p></li>
-<li><p><kbd>Right-click</kbd> on the layer and select “Export” or “Make Permanent” to save the new layer.</p></li>
-</ol>
-</td>
-<td><figure class="align-default" id="join-by-location-ex1">
-<a class="reference internal image-reference" href="../../_images/en_3.36_join_by_location_ex1.png"><img alt="../../_images/en_3.36_join_by_location_ex1.png" src="../../_images/en_3.36_join_by_location_ex1.png" style="width: 500px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 5.6 </span><span class="caption-text">Setting the parameters to perform the spatial join in QGIS 3.36</span><a class="headerlink" href="#join-by-location-ex1" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-</td>
-</tr>
-</tbody>
-</table>
 <p>Congratulations, we now have added the information about the administrative region to the health facilities layer!
-We can symbolise the joined layer with the categorised symbology to verify if it worked (see <a class="reference internal" href="#spatial-join-ex1-results-categorised"><span class="std std-numref">Fig. 5.7</span></a>). Note that
+We can symbolise the joined layer with the categorised symbology to verify if it worked (see <a class="reference internal" href="#spatial-join-ex1-results-categorised"><span class="std std-numref">Fig. 5.6</span></a>). Note that
 the points in the original dataset which were outside of Nigeria’s border have been discarded as they could not be joined.</p>
 <figure class="align-default" id="spatial-join-ex1-results-categorised">
 <a class="reference internal image-reference" href="../../_images/spatial_join_ex1_results_categorised.png"><img alt="../../_images/spatial_join_ex1_results_categorised.png" src="../../_images/spatial_join_ex1_results_categorised.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.7 </span><span class="caption-text">The different colours for the points indicate that they are located in a different state (adm2).</span><a class="headerlink" href="#spatial-join-ex1-results-categorised" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.6 </span><span class="caption-text">The different colours for the points indicate that they are located in a different state (adm2).</span><a class="headerlink" href="#spatial-join-ex1-results-categorised" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -897,13 +863,13 @@ the points in the original dataset which were outside of Nigeria’s border have
 <input checked="checked" id="sd-tab-item-8" name="sd-tab-set-1" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-8">
 Join attributes by location (summary)</label><div class="sd-tab-content docutils">
-<p>This tool is similar to the “Join Attributes by Location”-tool. However, on top of adding the attributes from one layer to another, this algorithms also
+<p>This tool is similar to the “Join Attributes by Location”-tool. However, on top of adding the attributes from one layer to another, this algorithm also
 calculates statistical summaries for the values from matching features in the second layer. These summaries include a wide range of options, such as
 <strong>minimum and maximum values</strong>, <strong>mean values</strong>, as well as <strong>counts</strong>, <strong>sums</strong>, <strong>standard deviation</strong>, and more.</p>
 <figure class="align-default" id="en-spatial-join-3">
 <a class="reference internal image-reference" href="../../_images/en_spatial_join_3.PNG"><img alt="../../_images/en_spatial_join_3.PNG" src="../../_images/en_spatial_join_3.PNG" style="width: 450px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.8 </span><span class="caption-text">Screenshot of the tool Join attributes by location (summary) in QGIS 3.36</span><a class="headerlink" href="#en-spatial-join-3" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.7 </span><span class="caption-text">Screenshot of the tool Join attributes by location (summary) in QGIS 3.36</span><a class="headerlink" href="#en-spatial-join-3" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -917,7 +883,7 @@ suitable matches for the joining process.</p>
 <figure class="align-default" id="en-spatial-join-2">
 <a class="reference internal image-reference" href="../../_images/en_spatial_join_2.PNG"><img alt="../../_images/en_spatial_join_2.PNG" src="../../_images/en_spatial_join_2.PNG" style="width: 450px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.9 </span><span class="caption-text">Screenshot of the tool Join attributes by nearest in QGIS 3.36</span><a class="headerlink" href="#en-spatial-join-2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.8 </span><span class="caption-text">Screenshot of the tool Join attributes by nearest in QGIS 3.36</span><a class="headerlink" href="#en-spatial-join-2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>

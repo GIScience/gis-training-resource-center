@@ -37,7 +37,7 @@ Here we are collecting common QGIS errors and issues as general QGIS training su
 
 
 ## Different QGIS versions 
-The Wiki and in particular the videos in it are only a snapshot in time. QGIS itself, as well as the installable extensions, are constantly being developed and improved. Therefore there may be differences between the various versions in the appearance of the user interface or, in rare cases, even in the function. Consequently, there may be differences between the Wiki and the QGIS installed on your PC. Nonetheless this cahpter focusses on common errors and issues, hopefully for many (upcoming) versions.
+The Wiki and in particular the videos in it are only a snapshot in time. QGIS itself, as well as the installable extensions, are constantly being developed and improved. Therefore there may be differences between the various versions in the appearance of the user interface or, in rare cases, even in the function. Consequently, there may be differences between the Wiki and the QGIS installed on your PC. Nonetheless this chapter focuses on common errors and issues, hopefully for many (upcoming) versions.
 
 ## QGIS on Mac doesn't open
 When opening QGIS for the first time on Mac you may get this error message:
@@ -105,7 +105,7 @@ Layer window disappeared.
 
 __Solution:__
 
-These sort of problems are usually due to a) *mismatching crs in layers and project*, or b) an *incorrect reprojection*. 
+These sorts of problems are usually due to a) *mismatching crs in layers and project*, or b) an *incorrect reprojection*. 
 
  a) 
  1. Check the layer properties (right-click on the corresponding layer).
@@ -138,9 +138,9 @@ Instead do this:
 
 1. Select the `Vector`tab.
 
-2. Activate in the pop-up menue `Data Management Tools`.
+2. Activate in the pop-up menu `Data Management Tools`.
 
-3. And in the following pop-up menue `Reproject Layer`.
+3. And in the following pop-up menu `Reproject Layer`.
 
 
 ```{figure} /fig/en_qgis_reproject_vector_layer01.png
@@ -200,7 +200,7 @@ Reproject raster layer in QGIS.
 
 ## Layer file disappeared from the layer window
 
-If a layer file is no longer displayed or active in the layer window after reopening a QGIS project, it was only a temporary layer. Temporary layers have a symbol on the right of their name, as so:
+If a layer file is no longer displayed or active in the layer window after reopening a QGIS project, it is only a temporary layer. Temporary layers have a symbol on the right of their name, as so:
  ![](/fig/en_qgis_temporary_Layer.png)
 
 __Solution:__
@@ -219,7 +219,7 @@ Save layer.
 ```
 
 
-2. Put in a _file name_ and click on the `three points` ![](/fig/Three_points.png) to save the file on the chosen directory place.
+2. Put in a _file name_ and click on the `three points` ![](/fig/Three_points.png) to save the file in the chosen directory place.
 3. Select the corresponding CRS.
 4. Click `ok`.
 
@@ -277,7 +277,7 @@ Reactivate toolbox.
 ## The North arrow is not syncing with the corresponding map
 __Solution:__
 
-There are two places where you have to define with which map the north arrow should sync with.
+There are two places where you have to define which map the north arrow should sync with.
 
  In the `Layout Tab` (of the print layout) for the map image under `General Settings` make sure that the reference map has the right map selected. 
 
@@ -289,7 +289,7 @@ name: en_qgis_correct_referenciation_to_map.png
 align: center
 name: Reactivate toolbox
 ---
-Correct referenciation to map.
+Correct reference to map.
 ```
 
 See also: Geographic Information Systems
@@ -361,7 +361,7 @@ Mercator projection.
 ```
 
 Mercator does enlarge areas farther from the equator, but at least this distortion is the same horizontally and vertically. And it's trivial to calculate a scale factor to correct measurements (See also: https://en.wikipedia.org/wiki/Mercator_projection#Scale_factor).  
-The only time the distortion is problematic, is when viewing a global-scale map with a range of different scale factors, but most maps are not global-scale and there are plenty of better projections to use for this case.
+The only time the distortion is problematic is when viewing a global-scale map with a range of different scale factors, but most maps are not global-scale and there are plenty of better projections to use for this case.
 
 ## Coordinate systems: My dataset is not located where it should be!
 Your dataset probably has the wrong coordinate system. This is the more general case of the previous problem. This can happen if the coordinate system is missing altogether, in which case GIS software often assumes that it is the same coordinate system as a previously loaded dataset, or the coordinate system set in the "project" or "map document".
@@ -405,7 +405,7 @@ Check redefining CRS.
 
 ## Coordinate systems: What coordinate system should my dataset be in?
 
-A data point's attributes gives context to where on the earth it is located. Most GIS software will display the minimum and maximum coordinates in the layer's properties as "extent" or "bounding box". 
+A data point's attributes give context to where on the earth it is located. Most GIS software will display the minimum and maximum coordinates in the layer's properties as "extent" or "bounding box". 
 
 __Solutions:__
 
@@ -460,17 +460,15 @@ You can run this sample code yourself, or use this form:
 
 
 
-+ If the coordinates have X-values between -180 and 180, and Y-values between -90 and 90, then you probably want to redefine to a longitude,latitude geographic coordinate system (GCS) like WGS84.
++ If the coordinates have X-values between -180 and 180, and Y-values between -90 and 90, then you probably want to redefine a geographic (with longitude and latitude) geographic coordinate system (GCS) like WGS84.
 
-+ If the coordinates have large absolute values, try redefining to a local coordinate system like UTM, Gauss-Krüger, State Plane, or a national grid. Also consider trying neighboring zones, e.g. if UTM Zone 19N is wrong, try UTM Zone 18N.
++ If the coordinates have large absolute values, try redefining them to a local coordinate system like UTM, Gauss-Krüger, State Plane, or a national grid. Also consider trying neighboring zones, e.g. if UTM Zone 19N is wrong, try UTM Zone 18N.
 
-+ If the attributes suggest the dataset is in the USA, then there might a problem converting to/from Freedom Units. Try multiplying/dividing a data point's coordinates by 3.28084 to convert feet to meters/meters to feet and see if that places it in the proper location.
++ If the attributes suggest the dataset is in the USA, then there might be a problem converting to/from Freedom Units. Try multiplying/dividing a data point's coordinates by 3.28084 to convert feet to meters/meters to feet and see if that places it in the proper location.
 
-+ If the minimum X/Y coordinates are both zero and the maxmimum X/Y coordinates are both positive, then the dataset may have been exported from non-geospatial software like Photoshop or Illustrator or Inkscape. This is especially likely if the dataset is flipped vertically since those editors typically have the Y-axis increasing going down. You will need to manually georeference the dataset to use it, which changes both the coordinates and the coordinate system.
++ If the minimum X/Y coordinates are both zero and the maximum X/Y coordinates are both positive, then the dataset may have been exported from non-geospatial software like Photoshop or Illustrator or Inkscape. This is especially likely if the dataset is flipped vertically since those editors typically have the Y-axis increasingly going down. You will need to manually georeference the dataset to use it, which changes both the coordinates and the coordinate system.
 
-See also the following [__Wiki_Page__]
-(../Wiki/en_qgis_projections_wiki.md)
-`Projections`.
+See also the following [__Wiki_Page__](../Wiki/en_qgis_projections_wiki.md) `Projections`.
 
 
 ## My dataset is slightly offset from where it should be!
@@ -484,21 +482,21 @@ name: qgis_wrong-gcs.png
 align: center
 name: Offset because of wrong GCS
 ---
-Offset because of wrong GCS. Source: ???
+Offset because of wrong GCS. Source: Dan Mahr. All rights reserved. This content is excluded from our Creative Commons license.
 ```
 
 __Solution__:
 
  Redefine the coordinate system, i.e. change the coordinate system but not the coordinates, to one of the following:
 
-* Try redefining to the WGS84 GCS.
-* If your dataset was collected with GPS, try redefining to WGS84.
-* If your dataset was collected with GLONASS, try redefining to PZ-90.
-* If your dataset was collected with Galileo, try redefining to ITRF.
-* If your dataset is in the USA, try redefining to NAD27, NAD83, or WGS84.
-* If your dataset is in Europe, try redefining to ED50, ETRS89, or WGS84.
-* If your dataset is in Australia, try redefining to GDA94 or GDA2020.
-* If your dataset is in China and/or collected with BeiDou, good luck. :weary:
+* Try to redefine to the WGS84 GCS.
+* If your dataset was collected with GPS, try redefining it to WGS84.
+* If your dataset was collected with GLONASS, try redefining it to PZ-90.
+* If your dataset was collected with Galileo, try redefining it to ITRF.
+* If your dataset is in the USA, try redefining it to NAD27, NAD83, or WGS84.
+* If your dataset is in Europe, try redefining it to ED50, ETRS89, or WGS84.
+* If your dataset is in Australia, try redefining it to GDA94 or GDA2020.
+* If your dataset is in China and/or collected with BeiDou, good luck. :weary: 
 
 ## Wrong data results or missing data
 
@@ -506,7 +504,7 @@ When you get wrong data results or missing data, please check your file names. Y
 
 ## File Management Issues
 
-There may be different reasons, f.e. reopening your QGIS project, not all files will be displayed correctly because some got lost or were stored on different places. In any case, there is a solution: a clear folder structure.
+There may be different reasons, e.g. reopening your QGIS project, not all files will be displayed correctly because some got lost or were stored in different places. In any case, there is a solution: a clear folder structure.
 
 __Solution:__
 
@@ -519,7 +517,7 @@ name: Standard_project_folder_structure.drawio.svg
 align: center
 name: Standard folder structure
 ---
-Standard folder structure. Source: ???
+Standard folder structure. Source: HeiGIT
 ```
 
 How it might look like on your pc:
@@ -545,9 +543,7 @@ The layer data used in the project are not saved in the project file. Instead, t
 Good data organisation with a fixed and well thought-out folder structure prevents such problems.
 ```
 
-See also the following [__Wiki_Page__]: 
-
-(https://github.com/GIScience/gis-training-resource-center/blob/main/content/Wiki/en_qgis_projects_folder_structure_wiki.md) for `How to create a new QGIS project` and `How to open an existing QGIS project`.
+See also the following [__Wiki_Page__](https://github.com/GIScience/gis-training-resource-center/blob/main/content/Wiki/en_qgis_projects_folder_structure_wiki.md) for `How to create a new QGIS project` and `How to open an existing QGIS project`.
 
 ## Specific QGIS problems 
 ### Basic settings > Deactivating the automatic projection selection
@@ -555,7 +551,7 @@ After installing QGIS, some basic settings should be changed to avoid possible s
 If a layer file does not have a projection, a projection must be defined for it when it is imported into QGIS. By deactivating the automatic projection selection, this projection can be defined manually. This prevents layers from accidentally being in the wrong projection.
 
 1. Select the `Settings` tab.
-2. Then activate in the nagivation menu `Options`.
+2. Then activate in the navigation menu `Options`.
 3. In the pop-up window select `CRS Handling`. 
 4. Under `CRS for projects` activate `Use CRS from first layer added`. 
 5. And under `CRS for layers` activate `Prompt for CRS`.
@@ -574,9 +570,7 @@ Change crs settings in QGIS.
 Unfortunately, GIS programs are notorious for freezing or crashing completely. Although there is a trend towards fewer complications with better hardware, even a "gaming PC" costing several thousand dollars is not completely safe.
 More complex tasks with longer calculation times may still cause problems. Regular saving is therefore recommended.
 
-See also the following [__Wiki_Page__]:
-
-(https://github.com/GIScience/gis-training-resource-center//content/Wiki/en_qgis_interface_wiki.html#save-open-qgis-projects) `Save and open QGIS Projects.` 
+See also the following [__Wiki_Page__](https://github.com/GIScience/gis-training-resource-center//content/Wiki/en_qgis_interface_wiki.html#save-open-qgis-projects) `Save and open QGIS Projects.` 
 
 ### GRASS applications
 

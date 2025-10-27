@@ -672,7 +672,7 @@ Change the styling for multiple overlayed layers<div class="sd-summary-down docu
 <ol class="arabic simple">
 <li><p class="sd-card-text">Add the <code class="docutils literal notranslate"><span class="pre">Adm0</span></code>, <code class="docutils literal notranslate"><span class="pre">Adm1</span></code> and <code class="docutils literal notranslate"><span class="pre">Adm2</span></code> shapefiles to your Session 2 project.</p></li>
 <li><p class="sd-card-text">Order the layers so they are all visible: Put the <code class="docutils literal notranslate"><span class="pre">Adm2</span></code> layer at the bottom, then the <code class="docutils literal notranslate"><span class="pre">Adm1</span></code> then <code class="docutils literal notranslate"><span class="pre">Adm0</span></code>. At first, this might look weird because <code class="docutils literal notranslate"><span class="pre">Adm0</span></code> will cover everything.</p></li>
-<li><p class="sd-card-text">Change the symbology of the Adm0 layer by opening the stlying panel and navigating to the Symbology tab.</p></li>
+<li><p class="sd-card-text">Change the symbology of the Adm0 layer by opening the styling panel and navigating to the Symbology tab.</p></li>
 </ol>
 <figure class="align-left" id="en-30-30-2-changing-layer-style-2-wiki">
 <a class="reference internal image-reference" href="../../_images/en_30.30.2_changing_layer_style_2.png"><img alt="../../_images/en_30.30.2_changing_layer_style_2.png" src="../../_images/en_30.30.2_changing_layer_style_2.png" style="width: 350px;" /></a>
@@ -687,7 +687,7 @@ Change the styling for multiple overlayed layers<div class="sd-summary-down docu
 <li><p class="sd-card-text">Click OK</p></li>
 <li><p class="sd-card-text"><strong>Repeat the same process</strong> for the Adm1 layer, using the same colour as for Adm0 (it will be in “Recent colors) and leave the stroke width at 0.26.</p></li>
 <li><p class="sd-card-text">Now we can see the boundaries of the country and its states, and behind that we can see the districts (Adm2).</p></li>
-<li><p class="sd-card-text">Let’s make the districts layer’s style consistent with the others.</p></li>
+<li><p class="sd-card-text">Lets make the district layer’s style consistent with the others.</p></li>
 </ol>
 <p class="sd-card-text"><br/><br/></p>
 <ol class="arabic simple" start="11">
@@ -715,7 +715,7 @@ Use different styles in a single layer<div class="sd-summary-down docutils">
 .mp4"></video></p>
 <p class="sd-card-text">We can use symbology to <strong>show the difference between features</strong> in the same layer. For example, it could be different types of buildings, quantities of Covid cases by district, or types of roads. We can choose a specific attribute of a dataset to assign different colors, outlines, or sizes to features:</p>
 <ol class="arabic simple">
-<li><p class="sd-card-text">From your shapefile folder, <strong>drag te ACLED security incidents shapefile onto your map</strong></p></li>
+<li><p class="sd-card-text">From your shapefile folder, <strong>drag the ACLED security incidents shapefile onto your map</strong></p></li>
 <li><p class="sd-card-text">Open the <code class="docutils literal notranslate"><span class="pre">Symbology</span> <span class="pre">tab</span></code> for that layer and choose <code class="docutils literal notranslate"><span class="pre">Categorized</span></code> instead of Single Symbol.</p></li>
 </ol>
 <div class="admonition note">
@@ -729,7 +729,7 @@ Use different styles in a single layer<div class="sd-summary-down docutils">
 </figcaption>
 </figure>
 <ol class="arabic simple" start="3">
-<li><p class="sd-card-text">Now we need to <strong>choose which attributes we want to display through the symbology</strong>. In this case, it could be the number of casualtiees, or the actor who perpetrated the act. Let’s categorize the features by <code class="docutils literal notranslate"><span class="pre">event_type</span></code></p></li>
+<li><p class="sd-card-text">Now we need to <strong>choose which attributes we want to display through the symbology</strong>. In this case, it could be the number of casualties, or the actor who perpetrated the act. Let’s categorize the features by <code class="docutils literal notranslate"><span class="pre">event_type</span></code></p></li>
 <li><p class="sd-card-text">Click on <code class="docutils literal notranslate"><span class="pre">Classify</span></code> to <strong>list all the unique values contained</strong> in the <code class="docutils literal notranslate"><span class="pre">event_type</span></code> field (i.e. all the possible types of security incidents recorded in our table)</p></li>
 <li><p class="sd-card-text">Now we can <strong>change the style of each single value</strong></p></li>
 <li><p class="sd-card-text">Double click on the value <code class="docutils literal notranslate"><span class="pre">Explosions</span></code></p></li>
@@ -743,7 +743,7 @@ Use different styles in a single layer<div class="sd-summary-down docutils">
 <p><span class="caption-number">Fig. 24 </span><span class="caption-text">By double clicking on the <strong>unique values</strong> in the classified list, you can change the symbol for each value</span><a class="headerlink" href="#en-30-30-2-categorized-layer-symbology-2-wiki" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p class="sd-card-text">Now we have a map of Nigeria where you can locate the areas, that are affected by explosions more than others. On the map below, we also added text labels, which will be explained below.</p>
+<p class="sd-card-text">Now we have a map of Nigeria where you can locate the areas that are affected by explosions more than others. On the map below, we also added text labels, which will be explained below.</p>
 <figure class="align-default" id="en-exercise-map-design-example-nigeria-wiki">
 <a class="reference internal image-reference" href="../../_images/en_exercise_map_design_example_Nigeria.png"><img alt="../../_images/en_exercise_map_design_example_Nigeria.png" src="../../_images/en_exercise_map_design_example_Nigeria.png" style="width: 500px;" /></a>
 <figcaption>
@@ -799,13 +799,13 @@ Style data based on variable ranges (”<strong>Graduated</strong>” styling)<d
 <hr class="docutils" />
 <section id="labels">
 <h3>Labels<a class="headerlink" href="#labels" title="Permalink to this heading">#</a></h3>
-<p>Labels are text that display information or values of the data. In QGIS, you can either select <strong>Single Labels</strong> or <strong>Rule-based Labelling</strong>. For each option, an attribute (<code class="docutils literal notranslate"><span class="pre">value</span></code>) that will be displayed on the map. Additionally, you can <strong>change the font, font size, colour and some other styling options</strong> for the label text.</p>
+<p>Labels are text that display information or values of the data. In QGIS, you can either select <strong>Single Labels</strong> or <strong>Rule-based Labelling</strong>. For each option, an attribute (<code class="docutils literal notranslate"><span class="pre">value</span></code>) will be displayed on the map. Additionally, you can <strong>change the font, font size, colour and some other styling options</strong> for the label text.</p>
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-4" name="sd-tab-set-1" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-4">
 Single Labels</label><div class="sd-tab-content docutils">
 <ul class="simple">
-<li><p>Creates a single label style for every feature in the layer. You can select a attribute (value) which will be displayed. For example, the name of a settlement. You need to know which attribute displays the information you want to display. Look at the attribute table of the dataset to find it out.</p></li>
+<li><p>Creates a single label style for every feature in the layer. You can select an attribute (value) which will be displayed. For example, the name of a settlement. You need to know which attribute displays the information you want to display. Look at the attribute table of the dataset to find it out.</p></li>
 </ul>
 </div>
 <input id="sd-tab-item-5" name="sd-tab-set-1" type="radio">
@@ -869,8 +869,8 @@ Adding different label styles to the same layer<div class="sd-summary-down docut
 </figure>
 <ol class="arabic simple" start="5">
 <li><p class="sd-card-text">In the central column, expand <code class="docutils literal notranslate"><span class="pre">Fields</span> <span class="pre">and</span> <span class="pre">Values</span></code> to display a list of all the fields in your layer and double-click on <code class="docutils literal notranslate"><span class="pre">&quot;CLASS&quot;</span></code> to <strong>add it to the expression frame</strong> on the left.</p></li>
-<li><p class="sd-card-text">In the right column, click on <code class="docutils literal notranslate"><span class="pre">All</span> <span class="pre">unique</span></code> to list all unique values contained in the Class field. In this dataset, <code class="docutils literal notranslate"><span class="pre">&quot;CLASS&quot;=1</span></code> designates the capital city, whereas <code class="docutils literal notranslate"><span class="pre">&quot;CLASS&quot;=2</span></code> designate other major cities. Make sure to familiarise yourself with the dataset at your disposal, so you know what the different attributes represent.</p></li>
-<li><p class="sd-card-text">Click on the <code class="docutils literal notranslate"><span class="pre">&quot;=&quot;</span></code> operator, then doube-click on the <code class="docutils literal notranslate"><span class="pre">value</span> <span class="pre">1</span></code> (which represent the Country capital in this case). Click <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
+<li><p class="sd-card-text">In the right column, click on <code class="docutils literal notranslate"><span class="pre">All</span> <span class="pre">unique</span></code> to list all unique values contained in the Class field. In this dataset, <code class="docutils literal notranslate"><span class="pre">&quot;CLASS&quot;=1</span></code> designates the capital city, whereas <code class="docutils literal notranslate"><span class="pre">&quot;CLASS&quot;=2</span></code> designates other major cities. Make sure to familiarise yourself with the dataset at your disposal, so you know what the different attributes represent.</p></li>
+<li><p class="sd-card-text">Click on the <code class="docutils literal notranslate"><span class="pre">&quot;=&quot;</span></code> operator, then double-click on the <code class="docutils literal notranslate"><span class="pre">value</span> <span class="pre">1</span></code> (which represents the Country capital in this case). Click <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
 <li><p class="sd-card-text">Scroll down to <strong>change the label style</strong>. Make it Arial, bold, black, 12pt and add a white buffer.</p></li>
 <li><p class="sd-card-text"><strong>Repeat steps 4 to 9</strong>, but select <code class="docutils literal notranslate"><span class="pre">Value</span> <span class="pre">2</span></code> (State capitals) and make the label black, bold, 10pt, no buffer.</p></li>
 <li><p class="sd-card-text">Click <code class="docutils literal notranslate"><span class="pre">Apply</span></code>, the <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
@@ -949,7 +949,7 @@ Add labels to roads<div class="sd-summary-down docutils">
 <p><span class="caption-number">Fig. 32 </span><span class="caption-text">Colour Ramp Selector</span><a class="headerlink" href="#raster-data-colour-gradient" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>In the colour ramp selector, you can adjust each colour step. On the bottom, you can see a plot for the Hue, <strong>Saturation</strong>, <strong>Lightness</strong> and <strong>Opacity</strong>. Especially latter three are useful to see how your colour ramp will translate. Gradients from light to dark are easier to read: Check if the plot for the <strong>Lightness</strong> has a more or less linear plot.</p>
+<p>In the colour ramp selector, you can adjust each colour step. On the bottom, you can see a plot for the Hue, <strong>Saturation</strong>, <strong>Lightness</strong> and <strong>Opacity</strong>. The latter three are especially useful to see how your colour ramp will translate. Gradients from light to dark are easier to read: Check if the plot for the <strong>Lightness</strong> has a more or less linear plot.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Styling a digital elevation model<div class="sd-summary-down docutils">
@@ -957,7 +957,7 @@ Styling a digital elevation model<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Elevation data sets are frequently used to communicate the terrain on a map. By default, an elevation model will be displayed with a gray colour ramp. However, if you don’t need the to know the elevation at certain points, you can choose to display the <strong>hillshade</strong> of the terrain. Hillshading will simulate the shadow of the terrain as if it would be exposed to a lightsource. In this example, we will use the elevation raster data (.tiff) of Algeria from the Humanitarian Data Exchange platform (<a class="reference external" href="http://humdata.org">humdata.org</a>) To achieve this,</p>
+<p class="sd-card-text">Elevation data sets are frequently used to communicate the terrain on a map. By default, an elevation model will be displayed with a gray colour ramp. However, if you don’t need to know the elevation at certain points, you can choose to display the <strong>hillshade</strong> of the terrain. Hillshading will simulate the shadow of the terrain as if it would be exposed to a lightsource. In this example, we will use the elevation raster data (.tiff) of Algeria from the Humanitarian Data Exchange platform (<a class="reference external" href="http://humdata.org">humdata.org</a>) To achieve this,</p>
 <ol class="arabic simple">
 <li><p class="sd-card-text">Open the <code class="docutils literal notranslate"><span class="pre">symbology</span></code> tab</p></li>
 <li><p class="sd-card-text">Click on <code class="docutils literal notranslate"><span class="pre">Render</span> <span class="pre">type</span></code> and select <code class="docutils literal notranslate"><span class="pre">Hillshade</span></code>. You will have an option to select the direction of the light. Conventionally, the light-source is positioned in the North-West, so we can keep the default settings. In some cases with rough terrain, it can be useful to make the Hillshade <strong>Multidirectional</strong>.</p></li>
@@ -984,7 +984,7 @@ Saving or exporting styling settings</label><div class="sd-tab-content docutils"
 <ol class="arabic simple">
 <li><p>Open the styling panel and click on <code class="docutils literal notranslate"><span class="pre">styles</span></code>. A dropdown menu will open with the option to export the layer styling.</p></li>
 <li><p>Since in this case, the styling is for exactly that dataset, you can leave all the boxes checked.</p></li>
-<li><p>Select a location and name for the styling. The styling will be saved as a <code class="docutils literal notranslate"><span class="pre">.qml</span></code> file. <strong>Make sure it is saved in the same folder as the dataset and give it the same name as the corresponding dataset. This way it will, when loading the data into QGIS, the styling will automatically be applied.</strong></p></li>
+<li><p>Select a location and name for the styling. The styling will be saved as a <code class="docutils literal notranslate"><span class="pre">.qml</span></code> file. <strong>Make sure it is saved in the same folder as the dataset and give it the same name as the corresponding dataset. This way, when loading the data into QGIS, the styling will automatically be applied.</strong></p></li>
 </ol>
 <p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_exporting_style_to_send_to_colleague
 .mp4"></video></p>

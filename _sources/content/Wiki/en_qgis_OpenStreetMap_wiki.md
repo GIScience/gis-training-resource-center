@@ -62,12 +62,12 @@ You can either run it by writing your query on the left or by using the wizard
 which will assist you in writing your queries. 
 ***Example***  
 To search for schools in your bounding box or search area you can either write 
-the query yourself or get it build by the wizard.  
+the query yourself or get it built by the wizard.  
 **1. Check Tagging Guidelines**  
 Search for it in the [OSM wiki](https://wiki.openstreetmap.org/wiki/Tags) and/or 
 [taginfo](https://taginfo.openstreetmap.org). In our example it is: *amenity=school*  
 **2.  Write or build the query**  
-Either use the wizard by tiping in *amenity=school in Heidelberg* or write your 
+Either use the wizard by typing in *amenity=school in Heidelberg* or write your 
 own query (f. e. for your bounding box):  
 **Wizard:**
 ```{figure} /fig/en_wizard_overpassturbo.png

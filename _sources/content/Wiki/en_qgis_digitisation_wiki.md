@@ -33,10 +33,10 @@ If you plan to perform distance-based calculation with the new dataset, make sur
 :::
 ::::
 6. Select the CRS (Coordinate Reference System) you want to use for the new layer. By default it is set to the project CRS. If you want to change the CRS click on ![](/fig/mIconProjectionEnabled.png).
-7. Under `New Field`, you cann add columns to the new layer. Here you can define what kind of information/data will be available in the attribute table for each feature.
+7. Under `New Field`, you can add columns to the new layer. Here you can define what kind of information/data will be available in the attribute table for each feature.
     - `Name`: Give the new column a name representing the information you want to store in it. 
     - `Type`: Here you can select the data type for the new column. For example, `Text` will add a new column with string (text) data. For numerical data you can choose `Whole number` or `Decimal number`. 
-    - `Maximum Length` defines the maximum number of characters the field can have. This is relevant for the length of text or the precision of decimal numbers. For example, you might want to set a high maximum length for text field if you want to long street names such as "Martin Luther King Jr. Boulevard" (34 characters). 
+    - `Maximum Length` defines the maximum number of characters the field can have. This is relevant for the length of text or the precision of decimal numbers. For example, you might want to set a high maximum length for text fields if you want long street names such as "Martin Luther King Jr. Boulevard" (34 characters). 
     * Click on ![](/fig/mActionNewAttribute.png) to add the new column to the `Fields List`. 
 8. Once you are done adding the fields, click `OK`.
 
@@ -47,7 +47,7 @@ If you plan to perform distance-based calculation with the new dataset, make sur
 ### Creating point data
 
 1.	Select the point layer you want to add data to in the Layer panel
-2.	Go to the digitsation toolbar and click on![](/fig/mActionToggleEditing.png). No the layer is in the editing mode.
+2.	Go to the digitisation toolbar and click on![](/fig/mActionToggleEditing.png). Now the layer is in the editing mode.
 3.	Click on ![](/fig/mActionCapturePoint.png). 
 4.	Left-click on the feature you want to digitise.
 5.	Once you click, a window named `[Your Layer Name]- Feature Attribute` will appear. Here you can add the information about this feature to the different columns, based on the attribute table of the layer.
@@ -69,7 +69,7 @@ align: center
 
 ### Creating line data
 
-The  method  is  similar  to  digitising  a  point  (see  above). First you have to created a new line layer or use an existing one. 
+The  method  is  similar  to  digitising  a  point  (see  above). First you have to create a new line layer or use an existing one. 
 
 ```{attention} 
 If you create a new line layer remember to change the geometry type into lines because we are creating lines data now.
@@ -78,7 +78,7 @@ If you create a new line layer remember to change the geometry type into lines b
 1. In the layers panel, select the line layer to which you want to add data.
 2. In the digitisation toolbar, click on ![](/fig/mActionToggleEditing.png). Now the layer is in editing mode. 
 3. Click on ![](/fig/mActionCaptureLine.png). 
-4. Create the line on the map canvas by <kbd>lef-clicking</kbd> to add vertices. When you are done, right-click on the last point to finish editing the geometry.
+4. Create the line on the map canvas by <kbd>left-clicking</kbd> to add vertices. When you are done, right-click on the last point to finish editing the geometry.
 5. A new window titled `[Your Layer Name]- Feature Attribute` will appear. Here you can fill in the column information for the feature.  
 6. Once you are done with digitisation, click on ![](/fig/mActionSaveEdits.png) to save your edits.
 7.	Click on the ![](/fig/mActionToggleEditing.png) icon again to end the editing mode.
@@ -91,7 +91,7 @@ If you create a new line layer remember to change the geometry type into lines b
 1. In the layers panel, select the polygon layer to which you want to add data.
 2. Click on ![](/fig/mActionToggleEditing.png) to start the editing mode.
 3. Click on `Capture Polygon`![](/fig/mActionCapturePolygon.png) to add polygons.
-4. Draw a polygon in the map canvas using <kbd>Lef-click</kbd>. <kbd>Right-click</kbd> will finish the polygon creation and join the first and the last point you have added. 
+4. Draw a polygon in the map canvas using <kbd>Left-click</kbd>. <kbd>Right-click</kbd> will finish the polygon creation and join the first and the last point you have added. 
 5. A new window will open. Here you can add the column information for this feature. 
 4. Save edits by clicking on the ![](/fig/mActionSaveEdits.png) icon and exiting the edit mode by clicking on the ![](/fig/mActionToggleEditing.png) icon. 
 

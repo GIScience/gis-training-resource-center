@@ -85,7 +85,7 @@ Order the layers and navigate to the styling panel of the topmost layer
 
 1. Add the `Adm0`, `Adm1` and `Adm2` shapefiles to your Session 2 project.
 2. Order the layers so they are all visible: Put the `Adm2` layer at the bottom, then the `Adm1` then `Adm0`. At first, this might look weird because `Adm0` will cover everything.
-3. Change the symbology of the Adm0 layer by opening the stlying panel and navigating to the Symbology tab. 
+3. Change the symbology of the Adm0 layer by opening the styling panel and navigating to the Symbology tab. 
 
 
 ```{figure} ../../fig/en_30.30.2_changing_layer_style_2.png
@@ -103,7 +103,7 @@ Change the Fill type
 7. Click OK
 8. __Repeat the same process__ for the Adm1 layer, using the same colour as for Adm0 (it will be in "Recent colors) and leave the stroke width at 0.26.
 9. Now we can see the boundaries of the country and its states, and behind that we can see the districts (Adm2).
-10. Let's make the districts layer's style consistent with the others.
+10. Lets make the district layer's style consistent with the others.
 
 <br/><br/>
 
@@ -131,7 +131,7 @@ The styling of a vector data consists of the colour and the outline
 
 We can use symbology to __show the difference between features__ in the same layer. For example, it could be different types of buildings, quantities of Covid cases by district, or types of roads. We can choose a specific attribute of a dataset to assign different colors, outlines, or sizes to features:
 
-1. From your shapefile folder, __drag te ACLED security incidents shapefile onto your map__
+1. From your shapefile folder, __drag the ACLED security incidents shapefile onto your map__
 2. Open the `Symbology tab` for that layer and choose `Categorized` instead of Single Symbol.   
 ```{note} 
 Categorized symbology is used when you have ***discrete*** variables.
@@ -144,7 +144,7 @@ width: 500 px
 ---
 Change the symbology type to "categorized" and choose the Value (variable) you wish to display
 ```
-3. Now we need to __choose which attributes we want to display through the symbology__. In this case, it could be the number of casualtiees, or the actor who perpetrated the act. Let's categorize the features by `event_type`
+3. Now we need to __choose which attributes we want to display through the symbology__. In this case, it could be the number of casualties, or the actor who perpetrated the act. Let's categorize the features by `event_type`
 4. Click on `Classify` to __list all the unique values contained__ in the `event_type` field (i.e. all the possible types of security incidents recorded in our table)
 5. Now we can __change the style of each single value__
 6. Double click on the value `Explosions`
@@ -160,7 +160,7 @@ width: 500 px
 By double clicking on the __unique values__ in the classified list, you can change the symbol for each value
 ```
 
-Now we have a map of Nigeria where you can locate the areas, that are affected by explosions more than others. On the map below, we also added text labels, which will be explained below.
+Now we have a map of Nigeria where you can locate the areas that are affected by explosions more than others. On the map below, we also added text labels, which will be explained below.
 
 ```{figure} ../../fig/en_exercise_map_design_example_Nigeria.png
 ---
@@ -222,13 +222,13 @@ A map showing the population of Nigerian states
 
 ### Labels
 
-Labels are text that display information or values of the data. In QGIS, you can either select __Single Labels__ or __Rule-based Labelling__. For each option, an attribute (`value`) that will be displayed on the map. Additionally, you can __change the font, font size, colour and some other styling options__ for the label text. 
+Labels are text that display information or values of the data. In QGIS, you can either select __Single Labels__ or __Rule-based Labelling__. For each option, an attribute (`value`) will be displayed on the map. Additionally, you can __change the font, font size, colour and some other styling options__ for the label text. 
 
 ::::{tab-set}
 
 :::{tab-item} Single Labels
 
-- Creates a single label style for every feature in the layer. You can select a attribute (value) which will be displayed. For example, the name of a settlement. You need to know which attribute displays the information you want to display. Look at the attribute table of the dataset to find it out. 
+- Creates a single label style for every feature in the layer. You can select an attribute (value) which will be displayed. For example, the name of a settlement. You need to know which attribute displays the information you want to display. Look at the attribute table of the dataset to find it out. 
 
 :::
 
@@ -289,8 +289,8 @@ To add rule-based labels, you need to enter an expression
 ```
 
 5. In the central column, expand `Fields and Values` to display a list of all the fields in your layer and double-click on `"CLASS"` to __add it to the expression frame__ on the left.
-6. In the right column, click on `All unique` to list all unique values contained in the Class field. In this dataset, `"CLASS"=1` designates the capital city, whereas `"CLASS"=2` designate other major cities. Make sure to familiarise yourself with the dataset at your disposal, so you know what the different attributes represent.
-7. Click on the `"="` operator, then doube-click on the `value 1` (which represent the Country capital in this case). Click `OK`.
+6. In the right column, click on `All unique` to list all unique values contained in the Class field. In this dataset, `"CLASS"=1` designates the capital city, whereas `"CLASS"=2` designates other major cities. Make sure to familiarise yourself with the dataset at your disposal, so you know what the different attributes represent.
+7. Click on the `"="` operator, then double-click on the `value 1` (which represents the Country capital in this case). Click `OK`.
 8. Scroll down to __change the label style__. Make it Arial, bold, black, 12pt and add a white buffer.
 9. __Repeat steps 4 to 9__, but select `Value 2` (State capitals) and make the label black, bold, 10pt, no buffer.
 10. Click `Apply`, the `OK`.
@@ -361,11 +361,11 @@ width: 600px
 Colour Ramp Selector
 ```
 
-In the colour ramp selector, you can adjust each colour step. On the bottom, you can see a plot for the Hue, __Saturation__, __Lightness__ and __Opacity__. Especially latter three are useful to see how your colour ramp will translate. Gradients from light to dark are easier to read: Check if the plot for the __Lightness__ has a more or less linear plot. 
+In the colour ramp selector, you can adjust each colour step. On the bottom, you can see a plot for the Hue, __Saturation__, __Lightness__ and __Opacity__. The latter three are especially useful to see how your colour ramp will translate. Gradients from light to dark are easier to read: Check if the plot for the __Lightness__ has a more or less linear plot. 
 
 :::{dropdown} Styling a digital elevation model
 
-Elevation data sets are frequently used to communicate the terrain on a map. By default, an elevation model will be displayed with a gray colour ramp. However, if you don't need the to know the elevation at certain points, you can choose to display the __hillshade__ of the terrain. Hillshading will simulate the shadow of the terrain as if it would be exposed to a lightsource. In this example, we will use the elevation raster data (.tiff) of Algeria from the Humanitarian Data Exchange platform (humdata.org) To achieve this,
+Elevation data sets are frequently used to communicate the terrain on a map. By default, an elevation model will be displayed with a gray colour ramp. However, if you don't need to know the elevation at certain points, you can choose to display the __hillshade__ of the terrain. Hillshading will simulate the shadow of the terrain as if it would be exposed to a lightsource. In this example, we will use the elevation raster data (.tiff) of Algeria from the Humanitarian Data Exchange platform (humdata.org) To achieve this,
 
  1. Open the `symbology` tab
  2. Click on `Render type` and select `Hillshade`. You will have an option to select the direction of the light. Conventionally, the light-source is positioned in the North-West, so we can keep the default settings. In some cases with rough terrain, it can be useful to make the Hillshade __Multidirectional__.
@@ -388,7 +388,7 @@ In some cases, the colour ramp should be inverted to make it easier to read the 
 
 1. Open the styling panel and click on `styles`. A dropdown menu will open with the option to export the layer styling.
 2. Since in this case, the styling is for exactly that dataset, you can leave all the boxes checked.
-3. Select a location and name for the styling. The styling will be saved as a `.qml` file. __Make sure it is saved in the same folder as the dataset and give it the same name as the corresponding dataset. This way it will, when loading the data into QGIS, the styling will automatically be applied.__
+3. Select a location and name for the styling. The styling will be saved as a `.qml` file. __Make sure it is saved in the same folder as the dataset and give it the same name as the corresponding dataset. This way, when loading the data into QGIS, the styling will automatically be applied.__
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_exporting_style_to_send_to_colleague
 .mp4"></video>

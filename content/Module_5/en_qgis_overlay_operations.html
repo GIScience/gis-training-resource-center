@@ -600,13 +600,13 @@ document.write(`
 <section id="overlay-operations-clip-dissolve-buffer">
 <h1><span class="section-number">5.2. </span>Overlay Operations (Clip, Dissolve, Buffer)<a class="headerlink" href="#overlay-operations-clip-dissolve-buffer" title="Permalink to this heading">#</a></h1>
 <ul class="simple">
-<li><p>Overlay operations allow us to combine the geometries of two layers in different ways (see <a class="reference internal" href="#overlay-operations"><span class="std std-numref">Fig. 5.10</span></a>).</p></li>
+<li><p>Overlay operations allow us to combine the geometries of two layers in different ways (see <a class="reference internal" href="#overlay-operations"><span class="std std-numref">Fig. 5.9</span></a>).</p></li>
 <li><p>The difference to spatial joins is that the <strong>geometries are transformed in the process</strong>, and not primarily the attributes.</p></li>
 </ul>
 <figure class="align-default" id="overlay-operations">
 <a class="reference internal image-reference" href="../../_images/overlay_operations.png"><img alt="../../_images/overlay_operations.png" src="../../_images/overlay_operations.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.10 </span><span class="caption-text">Visual representation of different overlay operations.</span><a class="headerlink" href="#overlay-operations" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.9 </span><span class="caption-text">Visual representation of different overlay operations.</span><a class="headerlink" href="#overlay-operations" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Overlay operations include <strong>Clipping, Buffering, and Dissolving</strong>. In the next subchapters, we will take a
@@ -634,7 +634,7 @@ look at each of these overlay operations in turn and provide some examples for h
 <figure class="align-default" id="en-clip-sudan">
 <a class="reference internal image-reference" href="../../_images/en_clip_sudan.PNG"><img alt="../../_images/en_clip_sudan.PNG" src="../../_images/en_clip_sudan.PNG" style="width: 550px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.11 </span><span class="caption-text">Screenshot of the Clip tool with the input data.</span><a class="headerlink" href="#en-clip-sudan" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.10 </span><span class="caption-text">Screenshot of the Clip tool with the input data.</span><a class="headerlink" href="#en-clip-sudan" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -690,7 +690,7 @@ you to create several vector layers.</p>
 <figure class="align-default" id="buffer-dissolve">
 <a class="reference internal image-reference" href="../../_images/en_buffer_dissolve.png"><img alt="../../_images/en_buffer_dissolve.png" src="../../_images/en_buffer_dissolve.png" style="width: 550px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.12 </span><span class="caption-text">Buffer zones with dissolved (left) and with intact boundaries (right) showing overlapping areas <br /> (Source: <a class="reference external" href="https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve">QGIS Documentation</a>, Version 3.28)</span><a class="headerlink" href="#buffer-dissolve" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.11 </span><span class="caption-text">Buffer zones with dissolved (left) and with intact boundaries (right) showing overlapping areas <br /> (Source: <a class="reference external" href="https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve">QGIS Documentation</a>, Version 3.28)</span><a class="headerlink" href="#buffer-dissolve" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>In the next section on <strong>buffers</strong> we will be using the <strong>dissolve-tool</strong>.</p>
@@ -698,7 +698,7 @@ you to create several vector layers.</p>
 <section id="buffer">
 <h2><span class="section-number">5.2.4. </span>Buffer<a class="headerlink" href="#buffer" title="Permalink to this heading">#</a></h2>
 <p>Buffering creates zones of predetermined distances around geometric features as a new polygon layer. These buffers surround the input vector features. This buffer zone is typically uniform and extends outward
-from the original input features, making it useful for various spatial analyses and mapping applications. Buffers can be created around points, lines, and polygons as shown in <a class="reference internal" href="#buffering-options"><span class="std std-numref">Fig. 5.13</span></a>.</p>
+from the original input features, making it useful for various spatial analyses and mapping applications. Buffers can be created around points, lines, and polygons as shown in <a class="reference internal" href="#buffering-options"><span class="std std-numref">Fig. 5.12</span></a>.</p>
 <p>Examples for analyses using buffers could be:</p>
 <ul class="simple">
 <li><p>Creating of buffer zones to protect the environment</p></li>
@@ -716,7 +716,7 @@ from the original input features, making it useful for various spatial analyses 
 <figure class="align-default" id="buffering-options">
 <a class="reference internal image-reference" href="../../_images/en_buffer_point_line_polygon.png"><img alt="../../_images/en_buffer_point_line_polygon.png" src="../../_images/en_buffer_point_line_polygon.png" style="width: 550px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.13 </span><span class="caption-text">Different kinds of buffer zones <br /> (Adapted after <a class="reference external" href="https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve">QGIS Documentation</a>, Version 3.28)</span><a class="headerlink" href="#buffering-options" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.12 </span><span class="caption-text">Different kinds of buffer zones <br /> (Adapted after <a class="reference external" href="https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve">QGIS Documentation</a>, Version 3.28)</span><a class="headerlink" href="#buffering-options" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>There are several variations in buffering. The <strong>buffer distance</strong> or <strong>buffer size can vary</strong> according to the numerical values provided.
@@ -726,7 +726,7 @@ The numerical values have to be defined in map units according to the Coordinate
 <figure class="align-default" id="dist-degree-error-message">
 <a class="reference internal image-reference" href="../../_images/en_dist_in_degrees_error_msg.png"><img alt="../../_images/en_dist_in_degrees_error_msg.png" src="../../_images/en_dist_in_degrees_error_msg.png" style="width: 450px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.14 </span><span class="caption-text">The error message QGIS displays when performing distance based calculations in a geographic coordinate system</span><a class="headerlink" href="#dist-degree-error-message" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.13 </span><span class="caption-text">The error message QGIS displays when performing distance based calculations in a geographic coordinate system</span><a class="headerlink" href="#dist-degree-error-message" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>If…</p>
@@ -734,7 +734,7 @@ The numerical values have to be defined in map units according to the Coordinate
 <li><p>You get a projection warning message</p></li>
 <li><p>Your layer(s) don’t show up</p></li>
 <li><p>Layers look odd ‒ e.g. squashed</p></li>
-<li><p>Error message “using degrees” when using distances (as shown in <a class="reference internal" href="#dist-degree-error-message"><span class="std std-numref">Fig. 5.14</span></a>)
+<li><p>Error message “using degrees” when using distances (as shown in <a class="reference internal" href="#dist-degree-error-message"><span class="std std-numref">Fig. 5.13</span></a>)
 … it might be a <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_projections.html">projection</a> issue.</p></li>
 </ul>
 <p>To solve it, try…</p>
@@ -742,11 +742,11 @@ The numerical values have to be defined in map units according to the Coordinate
 <li><p>Changing the CRS for the layer</p></li>
 <li><p>Reprojecting the layer</p></li>
 </ul>
-<p>For example, if you are trying to make a buffer on a layer with a Geographical Coordinate System, QGIS will warn you and suggest to reproject the layer to a <strong>metric Coordinate System</strong>. This is because when you are using a metric coordinate system, the algorithm will use degrees to calculate the distance of the buffer size. However, the distance between degrees are not uniform and depend on the latitude (see <a class="reference internal" href="#distance-longitudes"><span class="std std-numref">Fig. 5.15</span></a>)</p>
+<p>For example, if you are trying to make a buffer on a layer with a Geographical Coordinate System, QGIS will warn you and suggest to reprojecting the layer to a <strong>metric Coordinate System</strong>. This is because when you are using a metric coordinate system, the algorithm will use degrees to calculate the distance of the buffer size. However, the distance between degrees are not uniform and depend on the latitude (see <a class="reference internal" href="#distance-longitudes"><span class="std std-numref">Fig. 5.14</span></a>)</p>
 <figure class="align-default" id="distance-longitudes">
 <a class="reference internal image-reference" href="../../_images/en_dist_longitudes.png"><img alt="../../_images/en_dist_longitudes.png" src="../../_images/en_dist_longitudes.png" style="width: 450px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.15 </span><span class="caption-text">This image illustrates this – 10 degrees of longitude at the equator is 1,113km, but 10 degrees of
+<p><span class="caption-number">Fig. 5.14 </span><span class="caption-text">This image illustrates this – 10 degrees of longitude at the equator is 1,113km, but 10 degrees of
 longitude at 70 degrees latitude is only 381km. (Source: <a class="reference external" href="https://x.com/RickyAngueira/status/1594030866132410368">Ricky Angueria</a>).</span><a class="headerlink" href="#distance-longitudes" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
@@ -804,7 +804,7 @@ Solution: Create 10km buffer around health centres<div class="sd-summary-down do
 <figure class="align-default" id="gdal-clipping-tools">
 <a class="reference internal image-reference" href="../../_images/en_gdal_clipping_tools.PNG"><img alt="../../_images/en_gdal_clipping_tools.PNG" src="../../_images/en_gdal_clipping_tools.PNG" style="width: 250px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.16 </span><span class="caption-text">The GDAL tools Clip vector by extent and Clip vector by mask layer</span><a class="headerlink" href="#gdal-clipping-tools" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.15 </span><span class="caption-text">The GDAL tools Clip vector by extent and Clip vector by mask layer</span><a class="headerlink" href="#gdal-clipping-tools" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="sd-tab-set docutils">
@@ -823,7 +823,7 @@ Clip vector by extent</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="en-clip-vector-by-extent">
 <a class="reference internal image-reference" href="../../_images/en_clip_vector_by_extent.PNG"><img alt="../../_images/en_clip_vector_by_extent.PNG" src="../../_images/en_clip_vector_by_extent.PNG" style="width: 450px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.17 </span><span class="caption-text">Screenshot of the tool Clip vector by extent</span><a class="headerlink" href="#en-clip-vector-by-extent" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.16 </span><span class="caption-text">Screenshot of the tool Clip vector by extent</span><a class="headerlink" href="#en-clip-vector-by-extent" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -838,7 +838,7 @@ Clip vector by mask layer</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="clip-vector-by-mask-layer">
 <a class="reference internal image-reference" href="../../_images/en_clip_vector_by_mask_layer.PNG"><img alt="../../_images/en_clip_vector_by_mask_layer.PNG" src="../../_images/en_clip_vector_by_mask_layer.PNG" style="width: 450px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.18 </span><span class="caption-text">Screenshot of the tool Clip vector by mask layer</span><a class="headerlink" href="#clip-vector-by-mask-layer" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.17 </span><span class="caption-text">Screenshot of the tool Clip vector by mask layer</span><a class="headerlink" href="#clip-vector-by-mask-layer" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -864,7 +864,7 @@ Answer<div class="sd-summary-down docutils">
 It is useful when:</p></li>
 <li><p class="sd-card-text">When you want to extract a subset of features from a larger dataset (e.g., clip roads to an administrative boundary)</p></li>
 <li><p class="sd-card-text">When you want to merge or aggregate spatial areas (e.g., dissolve overlapping flood extents into one combined area).</p></li>
-<li><p class="sd-card-text">In humanitarian or operational workflows: e.g., determining the coverage area of health centres, the extent of hazard zone inside a region, or trimming large datasets to an area of interest to improve efficiency.</p></li>
+<li><p class="sd-card-text">In humanitarian or operational workflows: e.g., determining the coverage area of health centres, the extent of hazard zones inside a region, or trimming large datasets to an area of interest to improve efficiency.</p></li>
 </ul>
 </div>
 </details><ol class="arabic simple" start="2">

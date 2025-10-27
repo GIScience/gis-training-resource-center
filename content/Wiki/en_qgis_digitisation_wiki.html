@@ -622,11 +622,11 @@ To digitize data for a new dataset you always have to start with creating the da
 </aside>
 <ol class="arabic" start="6">
 <li><p>Select the CRS (Coordinate Reference System) you want to use for the new layer. By default it is set to the project CRS. If you want to change the CRS click on <img alt="" src="../../_images/mIconProjectionEnabled.png" />.</p></li>
-<li><p>Under <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Field</span></code>, you cann add columns to the new layer. Here you can define what kind of information/data will be available in the attribute table for each feature.</p>
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Field</span></code>, you can add columns to the new layer. Here you can define what kind of information/data will be available in the attribute table for each feature.</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Name</span></code>: Give the new column a name representing the information you want to store in it.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Type</span></code>: Here you can select the data type for the new column. For example, <code class="docutils literal notranslate"><span class="pre">Text</span></code> will add a new column with string (text) data. For numerical data you can choose <code class="docutils literal notranslate"><span class="pre">Whole</span> <span class="pre">number</span></code> or <code class="docutils literal notranslate"><span class="pre">Decimal</span> <span class="pre">number</span></code>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Maximum</span> <span class="pre">Length</span></code> defines the maximum number of characters the field can have. This is relevant for the length of text or the precision of decimal numbers. For example, you might want to set a high maximum length for text field if you want to long street names such as “Martin Luther King Jr. Boulevard” (34 characters).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Maximum</span> <span class="pre">Length</span></code> defines the maximum number of characters the field can have. This is relevant for the length of text or the precision of decimal numbers. For example, you might want to set a high maximum length for text fields if you want long street names such as “Martin Luther King Jr. Boulevard” (34 characters).</p></li>
 </ul>
 <ul class="simple">
 <li><p>Click on <img alt="" src="../../_images/mActionNewAttribute.png" /> to add the new column to the <code class="docutils literal notranslate"><span class="pre">Fields</span> <span class="pre">List</span></code>.</p></li>
@@ -642,7 +642,7 @@ To digitize data for a new dataset you always have to start with creating the da
 <h3>Creating point data<a class="headerlink" href="#creating-point-data" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Select the point layer you want to add data to in the Layer panel</p></li>
-<li><p>Go to the digitsation toolbar and click on<img alt="" src="../../_images/mActionToggleEditing.png" />. No the layer is in the editing mode.</p></li>
+<li><p>Go to the digitisation toolbar and click on<img alt="" src="../../_images/mActionToggleEditing.png" />. Now the layer is in the editing mode.</p></li>
 <li><p>Click on <img alt="" src="../../_images/mActionCapturePoint.png" />.</p></li>
 <li><p>Left-click on the feature you want to digitise.</p></li>
 <li><p>Once you click, a window named <code class="docutils literal notranslate"><span class="pre">[Your</span> <span class="pre">Layer</span> <span class="pre">Name]-</span> <span class="pre">Feature</span> <span class="pre">Attribute</span></code> will appear. Here you can add the information about this feature to the different columns, based on the attribute table of the layer.</p></li>
@@ -658,7 +658,7 @@ To digitize data for a new dataset you always have to start with creating the da
 </section>
 <section id="creating-line-data">
 <h3>Creating line data<a class="headerlink" href="#creating-line-data" title="Permalink to this heading">#</a></h3>
-<p>The  method  is  similar  to  digitising  a  point  (see  above). First you have to created a new line layer or use an existing one.</p>
+<p>The  method  is  similar  to  digitising  a  point  (see  above). First you have to create a new line layer or use an existing one.</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>If you create a new line layer remember to change the geometry type into lines because we are creating lines data now.</p>
@@ -667,7 +667,7 @@ To digitize data for a new dataset you always have to start with creating the da
 <li><p>In the layers panel, select the line layer to which you want to add data.</p></li>
 <li><p>In the digitisation toolbar, click on <img alt="" src="../../_images/mActionToggleEditing.png" />. Now the layer is in editing mode.</p></li>
 <li><p>Click on <img alt="" src="../../_images/mActionCaptureLine.png" />.</p></li>
-<li><p>Create the line on the map canvas by <kbd>lef-clicking</kbd> to add vertices. When you are done, right-click on the last point to finish editing the geometry.</p></li>
+<li><p>Create the line on the map canvas by <kbd>left-clicking</kbd> to add vertices. When you are done, right-click on the last point to finish editing the geometry.</p></li>
 <li><p>A new window titled <code class="docutils literal notranslate"><span class="pre">[Your</span> <span class="pre">Layer</span> <span class="pre">Name]-</span> <span class="pre">Feature</span> <span class="pre">Attribute</span></code> will appear. Here you can fill in the column information for the feature.</p></li>
 <li><p>Once you are done with digitisation, click on <img alt="" src="../../_images/mActionSaveEdits.png" /> to save your edits.</p></li>
 <li><p>Click on the <img alt="" src="../../_images/mActionToggleEditing.png" /> icon again to end the editing mode.</p></li>
@@ -680,7 +680,7 @@ To digitize data for a new dataset you always have to start with creating the da
 <li><p>In the layers panel, select the polygon layer to which you want to add data.</p></li>
 <li><p>Click on <img alt="" src="../../_images/mActionToggleEditing.png" /> to start the editing mode.</p></li>
 <li><p>Click on <code class="docutils literal notranslate"><span class="pre">Capture</span> <span class="pre">Polygon</span></code><img alt="" src="../../_images/mActionCapturePolygon.png" /> to add polygons.</p></li>
-<li><p>Draw a polygon in the map canvas using <kbd>Lef-click</kbd>. <kbd>Right-click</kbd> will finish the polygon creation and join the first and the last point you have added.</p></li>
+<li><p>Draw a polygon in the map canvas using <kbd>Left-click</kbd>. <kbd>Right-click</kbd> will finish the polygon creation and join the first and the last point you have added.</p></li>
 <li><p>A new window will open. Here you can add the column information for this feature.</p></li>
 <li><p>Save edits by clicking on the <img alt="" src="../../_images/mActionSaveEdits.png" /> icon and exiting the edit mode by clicking on the <img alt="" src="../../_images/mActionToggleEditing.png" /> icon.</p></li>
 </ol>
