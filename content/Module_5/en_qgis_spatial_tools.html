@@ -971,11 +971,64 @@ Solution: Calculate sum of affected population and flooded area for the Area of 
 <p class="admonition-title">Test your knowledge</p>
 <ol class="arabic simple">
 <li><p><strong>What differentiates a spatial processing tool from a non-spatial processing tool?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">A <strong>spatial processing</strong> tool operates on the geometry (location, shape, spatial relationship) of features (points, lines, polygons, or raster cells) and uses that spatial information (e.g., distance, adjacency, overlap) in its operation. A <strong>non‑spatial processing</strong> tool operates only on attribute or tabular data without regard to the geometry (for example sorting a table, calculating a field, joining tables by key).</p>
+</div>
+</details><ol class="arabic simple" start="2">
 <li><p><strong>Name and briefly describe at least three common spatial tools or operations covered (e.g. buffer, clip, dissolve, intersect, union).</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text"><strong>Buffer:</strong> Creates a zone at a specified distance around input features (points, lines or polygons). For example, around a road line you create a 100 m buffer zone polygon that represents all area within 100 m of the road.</p></li>
+<li><p class="sd-card-text"><strong>Clip:</strong> Uses one layer (the “clip” layer) to trim or cut another layer so that only the portion of the input layer falling inside (or maybe outside) the clip layer remains. Effectively extracts a subset of geometry.</p></li>
+<li><p class="sd-card-text"><strong>Dissolve:</strong> Merges adjacent or overlapping features in a layer based on a shared attribute (or simply removes internal boundaries) so that features become larger aggregated shapes. For instance, combining many small administrative units into one larger one based on a region code.</p></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="3">
 <li><p><strong>If you have a layer of roads and you apply a buffer of 100 m around each road, what is the resulting geometry and what is one possible use case</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">The output will be polygon features (zones) that represent all areas within 100 m of each road. So if your input roads are line features, after the buffer you will have polygon(s) that “wrap” around each road line, extending on both sides by 100 m (assuming a simple planar buffer).</p></li>
+<li><p class="sd-card-text">A buffer could be used to buffer a cyclone track to approximate the cyclone-affected region (see <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_cyclone_trigger_madagascar.html">QGIS Trigger Workflow for Madagascar</a>).</p></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="4">
 <li><p><strong>Why is it important to check whether input layers have compatible projections / CRSs before running spatial tools?</strong></p></li>
 </ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Answer<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">If layers have different CRSs (or datums) and you apply a spatial tool without performing a proper reprojection, the geometry calculations (distances, areas, buffers, overlay) may be incorrect or misleading. For example a buffer of “100 m” may in fact be 100 units of a different coordinate system (degrees or feet) so the real world distance is wrong.</p></li>
+<li><p class="sd-card-text">Spatial operations rely on accurate geometric relationships; if one layer is in e.g., WGS84 geographic degrees and another is in a projected metre‐based CRS, the mismatch can cause mis‐alignment, stretching, distortion, or errors in results.</p></li>
+<li><p class="sd-card-text">Ensuring compatible projections helps maintain spatial accuracy, area/distance correctness, and valid topological relationships (e.g., overlays, intersections) which are critical for meaningful results.</p></li>
+</ul>
 </div>
+</details></div>
 </section>
 </section>
 
