@@ -569,6 +569,9 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparison-operators">Comparison operators</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#special-operators">Special operators</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logical-operators">Logical operators</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#complex-expressions">Complex Expressions</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#save-selected-features-as-a-new-file">Save selected features as a new file</a></li>
 </ul>
 </li>
@@ -606,7 +609,15 @@ Example: Manually select countries with the attribute table<div class="sd-summar
 </details></section>
 <section id="select-by-expression">
 <h2>Select by expression<a class="headerlink" href="#select-by-expression" title="Permalink to this heading">#</a></h2>
-<p>The <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">by</span> <span class="pre">Expression</span></code> tool let’s you build an expression to select features of a layer. For example, you can select specific attributes, or select features where</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">by</span> <span class="pre">Expression</span></code> tool lets you build an expression to select features of a layer. For example, you can select specific attributes, or select features where the value of an attribute in a specific range.</p>
+<ol class="arabic simple">
+<li><p>Open the attribute table and select the <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">by</span> <span class="pre">Expression</span></code>-tool.</p></li>
+</ol>
+<p><img alt="" src="../../_images/en_select_features_expression.png" /></p>
+<ol class="arabic simple" start="2">
+<li><p>The expression builder will open.</p></li>
+</ol>
+<p><img alt="" src="../../_images/en_query_builder.PNG" /></p>
 <section id="comparison-operators">
 <h3>Comparison operators<a class="headerlink" href="#comparison-operators" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
@@ -650,9 +661,16 @@ Example: Cities, not having a population of one million inhabitants in 1950, had
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_expression_and_wiki.mp4"></video></p>
+<p class="sd-card-text"><video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_expression_and_wiki.mp4"></video></p>
 </div>
 </details></section>
+</section>
+<section id="complex-expressions">
+<h2>Complex Expressions<a class="headerlink" href="#complex-expressions" title="Permalink to this heading">#</a></h2>
+<p>It is also possible to add expressions that chain different requirements. In this case do not forget to put brackets around individual parts of the expression such as:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
 <section id="save-selected-features-as-a-new-file">
 <h3>Save selected features as a new file<a class="headerlink" href="#save-selected-features-as-a-new-file" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
@@ -665,7 +683,7 @@ Example: Export selected features as a new file<div class="sd-summary-down docut
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_export_wiki.mp4"></video></p>
+<p class="sd-card-text"><video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_export_wiki.mp4"></video></p>
 </div>
 </details></section>
 </section>
@@ -682,19 +700,19 @@ Arithmetic operators</label><div class="sd-tab-content docutils">
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><strong>+</strong></p></td>
+<tr class="row-even"><td><p><strong><code class="docutils literal notranslate"><span class="pre">+</span></code></strong></p></td>
 <td><p>addition</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>-</strong></p></td>
-<td><p>substraction</p></td>
+<tr class="row-odd"><td><p><strong><code class="docutils literal notranslate"><span class="pre">-</span></code></strong></p></td>
+<td><p>subtraction</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>*</strong></p></td>
+<tr class="row-even"><td><p><strong><code class="docutils literal notranslate"><span class="pre">*</span></code></strong></p></td>
 <td><p>multiplication</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>/</strong></p></td>
+<tr class="row-odd"><td><p><strong><code class="docutils literal notranslate"><span class="pre">/</span></code></strong></p></td>
 <td><p>division</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>%</strong></p></td>
+<tr class="row-even"><td><p><strong><code class="docutils literal notranslate"><span class="pre">%</span></code></strong></p></td>
 <td><p>remainder of division</p></td>
 </tr>
 </tbody>
@@ -710,22 +728,22 @@ Comparison operators</label><div class="sd-tab-content docutils">
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><strong>=</strong></p></td>
+<tr class="row-even"><td><p><strong><code class="docutils literal notranslate"><span class="pre">=</span></code></strong></p></td>
 <td><p>equals</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>!=</strong></p></td>
+<tr class="row-odd"><td><p><strong><code class="docutils literal notranslate"><span class="pre">!=</span></code></strong></p></td>
 <td><p>not equal</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>&lt;</strong></p></td>
+<tr class="row-even"><td><p><strong><code class="docutils literal notranslate"><span class="pre">&lt;</span></code></strong></p></td>
 <td><p>less than</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>&gt;</strong></p></td>
+<tr class="row-odd"><td><p><strong><code class="docutils literal notranslate"><span class="pre">&gt;</span></code></strong></p></td>
 <td><p>greater than</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>&lt;=</strong></p></td>
+<tr class="row-even"><td><p><strong><code class="docutils literal notranslate"><span class="pre">&lt;=</span></code></strong></p></td>
 <td><p>less than or equal to</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>&gt;=</strong></p></td>
+<tr class="row-odd"><td><p><strong><code class="docutils literal notranslate"><span class="pre">&gt;=</span></code></strong></p></td>
 <td><p>greater than or equal to</p></td>
 </tr>
 </tbody>
@@ -742,13 +760,13 @@ Logical operators</label><div class="sd-tab-content docutils">
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><strong>AND</strong></p></td>
+<tr class="row-even"><td><p><strong><code class="docutils literal notranslate"><span class="pre">AND</span></code></strong></p></td>
 <td><p>logical AND</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>OR</strong></p></td>
+<tr class="row-odd"><td><p><strong><code class="docutils literal notranslate"><span class="pre">OR</span></code></strong></p></td>
 <td><p>logical OR</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>NOT</strong></p></td>
+<tr class="row-even"><td><p><strong><code class="docutils literal notranslate"><span class="pre">NOT</span></code></strong></p></td>
 <td><p>logical NOT</p></td>
 </tr>
 </tbody>
@@ -764,19 +782,19 @@ Special operators</label><div class="sd-tab-content docutils">
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><strong>LIKE</strong></p></td>
+<tr class="row-even"><td><p><strong><code class="docutils literal notranslate"><span class="pre">LIKE</span></code></strong></p></td>
 <td><p>pattern matching</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>IN</strong></p></td>
+<tr class="row-odd"><td><p><strong><code class="docutils literal notranslate"><span class="pre">IN</span></code></strong></p></td>
 <td><p>checks if a value is in a list of values</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>IS NULL</strong></p></td>
+<tr class="row-even"><td><p><strong><code class="docutils literal notranslate"><span class="pre">IS</span> <span class="pre">NULL</span></code></strong></p></td>
 <td><p>checks for null values</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>BETWEEN</strong></p></td>
+<tr class="row-odd"><td><p><strong><code class="docutils literal notranslate"><span class="pre">BETWEEN</span></code></strong></p></td>
 <td><p>checks if a value is within a specified range</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>CASE WHEN</strong></p></td>
+<tr class="row-even"><td><p><strong><code class="docutils literal notranslate"><span class="pre">CASE</span> <span class="pre">WHEN</span></code></strong></p></td>
 <td><p>conditional expressions</p></td>
 </tr>
 </tbody>
@@ -858,6 +876,9 @@ Special operators</label><div class="sd-tab-content docutils">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparison-operators">Comparison operators</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#special-operators">Special operators</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logical-operators">Logical operators</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#complex-expressions">Complex Expressions</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#save-selected-features-as-a-new-file">Save selected features as a new file</a></li>
 </ul>
 </li>
