@@ -19,10 +19,10 @@ Esta plataforma tiene como objetivo facilitar tu trabajo como persona facilitado
 :::{card} Lo que ofrece la plataforma ✔️
 
 ➕ Proporciona módulos explicativos que los participantes pueden usar como referencia para reforzar y comprender el contenido.  
-➕ Ofrece ejercicios grandes y pequeños que pueden usarse para la enseñanza.
-➕ Incluye una Wiki con recursos prácticos y tareas para los participantes.
-➕ Consejos y orientación sobre cómo planificar y enseñar una capacitación en GIS.
-➕ Herramientas para evaluar las habilidades en GIS de los participantes antes y después de la capacitación.
+➕ Ofrece ejercicios grandes y pequeños que pueden usarse para la enseñanza.  
+➕ Incluye una Wiki con recursos prácticos y tareas para los participantes.  
+➕ Consejos y orientación sobre cómo planificar y enseñar una capacitación en GIS.  
+➕ Herramientas para evaluar las habilidades en GIS de los participantes antes y después de la capacitación.  
 
 :::
 

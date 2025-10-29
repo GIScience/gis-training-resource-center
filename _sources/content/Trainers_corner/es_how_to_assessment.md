@@ -1,253 +1,248 @@
-# Assessments in GIS Training: A Guide
+# Evaluaciones en la Capacitación GIS: Una Guía
 
-__🔙[Back to Homepage](/content/intro.md)__
+__🔙[Volver a la página principal](/content/intro.md)__
 
-This article will explain the assessment survey provided on this platform that can be used to assess the success of basic GIS training. This assessment is geared towards assessing the motivation to learn GIS and the participants' self-assessment of their GIS skills. The assessment is kept short and focuses on the essentials. It is meant to be extended by trainers if they see the need.
+Este artículo explica la encuesta de evaluación disponible en esta plataforma, que puede usarse para medir el éxito de una capacitación básica en GIS. La evaluación está orientada a medir la motivación por aprender GIS y la autoevaluación de las habilidades de los participantes en GIS. Se mantiene breve y centrada en lo esencial, pero puede ser ampliada por los facilitadores si lo consideran necesario.
 
-## Survey templates
+## Plantillas de encuesta
 
-
-```{card} Google survey temaplate: Pre Training Survey
- Click [here](https://docs.google.com/forms/d/1iFdc4P6Qt5YI9yRKTHCtj_pslEsWfJVcNoARGyCI32o/copy) -> Click `Make a copy`. 
-Now you can use the survey via your own Google account. 
+```{card} Plantilla Google Survey: Encuesta previa al entrenamiento
+ Haz clic [aquí](https://docs.google.com/forms/d/1iFdc4P6Qt5YI9yRKTHCtj_pslEsWfJVcNoARGyCI32o/copy) -> Haz clic en `Hacer una copia`.  
+Ahora puedes usar la encuesta con tu cuenta de Google.
 ```
 
-```{card} Kobo survey temaplate: Pre Training Survey
-[Here](https://nexus.heigit.org/repository/gis-training-resource-center/Templates/TOT_pre_training_assessment/en_pre_training_assessment.xlsx) you can download the .xlsx file for the assessment to be used in Kobo Toolbox or ODK.
+```{card} Plantilla Kobo Survey: Encuesta previa al entrenamiento
+[Descarga aquí](https://nexus.heigit.org/repository/gis-training-resource-center/Templates/TOT_pre_training_assessment/en_pre_training_assessment.xlsx) el archivo .xlsx para usarlo en Kobo Toolbox o ODK.
 ```
 
-___
+---
 
-```{card} Google survey temaplate: Post Training Survey
- Click [here](https://docs.google.com/forms/d/1PRFrsQalr1_skzM2c2KDfDPOeO_rQKzSCkSF8mlUKaA/copy) -> Click `Make a copy`. 
-Now you can use the survey via your own Google account. 
+```{card} Plantilla Google Survey: Encuesta posterior al entrenamiento
+ Haz clic [aquí](https://docs.google.com/forms/d/1PRFrsQalr1_skzM2c2KDfDPOeO_rQKzSCkSF8mlUKaA/copy) -> Haz clic en `Hacer una copia`.  
+Ahora puedes usar la encuesta con tu cuenta de Google.
 ```
 
-```{card} Kobo survey temaplate: Post Training Survey
-[Here](https://nexus.heigit.org/repository/gis-training-resource-center/Templates/TOT_post_training_assessment/en_post_training_assessment.xlsx) you can download the .xlsx file for the assessment to be used in Kobo Toolbox or ODK.
+```{card} Plantilla Kobo Survey: Encuesta posterior al entrenamiento
+[Descarga aquí](https://nexus.heigit.org/repository/gis-training-resource-center/Templates/TOT_post_training_assessment/en_post_training_assessment.xlsx) el archivo .xlsx para usarlo en Kobo Toolbox o ODK.
 ```
 
-## Why do we do assessments?
+## ¿Por qué hacemos evaluaciones?
 
-There are many reasons why assessments are an essential part of every training. In the end, we want to know how successful the training was. Assessments, before and after the training, can also provide other important information. We have listed some below:
+Las evaluaciones son esenciales en toda capacitación. Entre sus objetivos se incluyen:
 
-1. **Understanding baseline proficiency:** Before diving into the training content, it's essential to assess the participants' current knowledge, skills, and motivation related to GIS. This baseline measurement helps us tailor the training to meet the needs of our participants.
+1. **Comprender el nivel inicial:** Antes de iniciar el entrenamiento, es importante evaluar el conocimiento, habilidades y motivación de los participantes con respecto a GIS. Esto permite adaptar la capacitación a sus necesidades.  
+2. **Personalizar el contenido:** Analizar las evaluaciones previas permite a los facilitadores ajustar el contenido según el nivel de cada participante, manteniendo la relevancia y el interés.  
+3. **Establecer metas y expectativas claras:** Las evaluaciones iniciales ayudan a definir objetivos específicos de aprendizaje y expectativas tanto para facilitadores como para participantes.  
+4. **Medir progreso y eficacia:** Las evaluaciones posteriores permiten medir el aprendizaje y la eficacia del programa comparando los resultados antes y después del entrenamiento.  
+5. **Recoger retroalimentación:** Las evaluaciones posteriores ofrecen información sobre la percepción de los participantes, identifican brechas de aprendizaje y sugieren mejoras.  
+6. **Motivar el aprendizaje continuo:** Ver mejoras tangibles en habilidades y conocimientos motiva a los participantes a seguir utilizando GIS y desarrollar su experiencia.
 
-2. **Customizing training content:** By analyzing pre-training assessments, trainers can customize the training content to suit the proficiency level of each participant. This ensures that the training remains relevant and engaging for everyone, regardless of their prior experience with GIS.
+En resumen, las evaluaciones proporcionan mediciones iniciales, permiten personalizar el contenido, establecen metas claras, miden el progreso, recogen retroalimentación y fomentan el aprendizaje continuo, asegurando una experiencia de capacitación más efectiva e impactante.
 
-3. **Setting clear goals and expectations:** Assessments before the training assist in setting clear goals and expectations for both trainers and participants. By understanding the starting point of each participant, trainers can establish specific learning objectives for the training, providing a roadmap for success.
+## Cómo realizar la evaluación
 
-4. **Measuring progress and effectiveness:** Post-training assessments allow trainers to measure the progress of participants and evaluate the effectiveness of the training program. By comparing pre-training and post-training results, trainers can assess the impact of the training and identify areas for improvement.
+Con base en la encuesta estándar, existen tres opciones:
 
-5. **Gathering feedback for improvement:** Post-training assessments provide valuable feedback for trainers. They offer insights into the participants' perceptions of the training, highlight any gaps in learning, and provide suggestions for enhancing future training programs.
+1. __En papel o Word:__ Usar la versión en papel o enviar el archivo Word por correo electrónico. Los datos pueden extraerse después.  
+2. __Google Survey:__ Usar la plantilla proporcionada permite beneficiarse de la funcionalidad de Google y ver resultados de inmediato.  
+3. __Otro sistema de encuestas:__ Se pueden incorporar las preguntas a cualquier otro sistema que se prefiera.
 
-6. **Motivating continued learning:** Finally, assessments help reinforce learning and motivation among participants. Seeing tangible improvements in their skills and knowledge encourages participants to continue using GIS and further develop their expertise.
+## Introducción a la encuesta estándar
 
-In summary, assessments play a vital role in GIS training by providing baseline measurements, customizing training content, setting clear goals, measuring progress, gathering feedback, and motivating continued learning. Incorporating assessments into your training program ensures a more effective and impactful learning experience for all participants.
-<!--COMMENT: this sounds a lot like a AI text. Not saying it it's written by one but the structure (Intro, Content, Conclusion) seems AI-dry to me (EN)-->
-## How to do the assessment
-
-Based on the standard assessment survey, you have three options:
-
-1. __Paper or Word based:__ You can utilize a paper-based version or distribute the Word file via email. This allows everyone to fill out the survey, and later, you can extract the data.
-2. __Google Survey:__ Alternatively, you can use Google Surveys with the provided template. This digital approach offers the benefits of Google Surveys' functionality, and you can view the results immediately.
-3. __Use another survey system:__ Otherwise, you have the flexibility to take the questions and incorporate them into any other survey system you prefer to use.
-
-## Introduction to the standard survey
-
-Below you can find a detailed explanation of each survey section and question.
+A continuación se detalla cada sección y pregunta de la encuesta.
 
 ::::{grid} 1
-:::{card} Pre Training Survey
+:::{card} Encuesta previa al entrenamiento
 ___
 
-### Motivation
+### Motivación
 
-1. How motivated are you to learn more about QGIS? (scale 1-5)
+1. ¿Qué tan motivado estás para aprender más sobre QGIS? (escala 1-5)
 
-| Little motivated| ... | ... | ... | Highly motivated|
+| Poco motivado| ... | ... | ... | Muy motivado|
 |---------------|--------|---------|--------|-----------------|
 | 1|2|3|4|5|
 
-```{dropdown} Explanation 
-This question assesses the participants' motivation level to learn more about QGIS, providing insight into their eagerness to engage with the training content.
+```{dropdown} Explicación
+Esta pregunta evalúa el nivel de motivación de los participantes para aprender QGIS, proporcionando información sobre su disposición a participar en el entrenamiento.
 ```
 
-2. Why would you like to learn (more) about QGIS? (multiple answers possible)
-   - Thematic interest
-   - I would like to create maps for:
-     - Reports & proposals
-     - Logistic purposes
-     - Planning operations
-     - Risk analysis
-     - Competence
-   - Other: 
+2. ¿Por qué deseas aprender más sobre QGIS? (respuestas múltiples posibles)
+   - Interés temático
+   - Crear mapas para:
+     - Informes y propuestas
+     - Logística
+     - Planificación de operaciones
+     - Análisis de riesgos
+     - Competencias
+   - Otro:
 
-```{dropdown} Explanation
-Participants are asked to select the reasons why they want to learn or enhance their knowledge of QGIS. This helps trainers understand the diverse motivations driving participants' interest. Based on the context of the GIS training, the answer options can be adapted. 
+```{dropdown} Explicación
+Se busca conocer las motivaciones detrás del interés de los participantes, permitiendo adaptar el contenido de la capacitación a sus necesidades.
 ```
 
-### Competence
+### Competencias
 
-3. What is your current level of knowledge in QGIS? (scale 1-5)
+3. ¿Cuál es tu nivel actual de conocimiento en QGIS? (escala 1-5)
 
-| Little| ... | ... | ... | Expert|
+| Bajo| ... | ... | ... | Experto|
 |---------------|--------|---------|--------|--------|
 | 1|2|3|4|5|
 
-```{dropdown} Explanation 
-This question evaluates participants' self-assessed level of knowledge in QGIS on a scale of 1 to 5, allowing trainers to gauge the participants' perceived proficiency before the training begins. 
+```{dropdown} Explicación
+Evalúa el nivel de conocimiento percibido por los participantes antes del entrenamiento.
 ```
 
-4. What is your previous experience in QGIS operations? (multiple answers possible)
-   - None
-   - I used GIS once
-   - I collected geodata
-   - I participated in a mapathon
-   - I have basic knowledge in data processing
-   - I have basic knowledge in geodata (e.g. vector vs. raster data)
-   - I have basic knowledge in statistics
-   - I use maps on a regular basis
-```{dropdown} Explanation 
-Participants are prompted to indicate their past experiences with QGIS operations, including any prior usage. This helps trainers adapt the training content to accommodate varying levels of prior experience among participants. The list of answer options can be adapted.
+4. ¿Cuál es tu experiencia previa en operaciones con QGIS? (respuestas múltiples posibles)
+   - Ninguna
+   - Usé GIS una vez
+   - Recopilé geodatos
+   - Participé en un mapathon
+   - Conocimientos básicos en procesamiento de datos
+   - Conocimientos básicos de geodatos (vector vs. raster)
+   - Conocimientos básicos de estadística
+   - Uso de mapas de manera regular
+
+```{dropdown} Explicación
+Permite conocer la experiencia previa de los participantes, para adaptar el entrenamiento a distintos niveles.
 ```
 :::
 ::::
 
 ::::{grid} 1
-:::{card} Post Training Survey
+:::{card} Encuesta posterior al entrenamiento
 ___
 
-### Acquired competence
+### Competencias adquiridas
 
-1. How much did you learn during the training? (scale 1-5)
+1. ¿Cuánto aprendiste durante la capacitación? (escala 1-5)
 
-| Little| ... | ... | ... | Very much|
+| Poco| ... | ... | ... | Mucho|
 |---------------|--------|---------|--------|--------|
 | 1|2|3|4|5|
 
-```{dropdown} Explanation 
-Participants rate their perceived level of learning during the training on a scale of 1 to 5, providing insight into the effectiveness of the training program.
+```{dropdown} Explicación
+Evalúa el nivel de aprendizaje percibido durante la capacitación.
 ```
 
-2. What competence did you acquire during the training?
-   - I know how to create a basic map (e.g. overview map of a country)
-   - I know where I can get data for my project
-   - I know where to get information when a technical problem occurs
+2. ¿Qué competencias adquiriste durante la capacitación?
+   - Sé cómo crear un mapa básico (p. ej. mapa general de un país)
+   - Sé dónde obtener datos para mi proyecto
+   - Sé dónde buscar información ante un problema técnico
 
-```{dropdown} Explanation
-Participants list the competencies they acquired during the training, helping trainers understand the specific skills and knowledge gained by participants.
+```{dropdown} Explicación
+Permite identificar las habilidades y conocimientos adquiridos por los participantes.
 ```
 
-3. Did you find the training comprehensible? (scale 1-5)
+3. ¿Encontraste comprensible la capacitación? (escala 1-5)
 
-| Very comprehensible| ... | ... | ... | Hardly comprehensible|
+| Muy comprensible| ... | ... | ... | Poco comprensible|
 |---------------|--------|---------|--------|--------|
 | 1|2|3|4|5|
 
-```{dropdown} Explanation 
-Participants rate the comprehensibility of the training on a scale of 1 to 5, indicating their understanding of the training content and delivery.
+```{dropdown} Explicación
+Evalúa la claridad del contenido y la forma en que fue presentado.
 ```
 
-### Motivation
+### Motivación
 
-4. How motivated are you to work with QGIS in the future?
+4. ¿Qué tan motivado estás para trabajar con QGIS en el futuro?
 
-| Little motivated| ... | ... | ... | Highly motivated|
+| Poco motivado| ... | ... | ... | Muy motivado|
 |---------------|--------|---------|--------|--------|
 | 1|2|3|4|5|
 
-```{dropdown} Explanation 
-Participants indicate their motivation level to work with QGIS in the future, providing insight into their enthusiasm for applying their newly acquired skills.
+```{dropdown} Explicación
+Evalúa el entusiasmo de los participantes por aplicar sus nuevas habilidades.
 ```
 
-5. Will you use QGIS in your professional activity?
+5. ¿Usarás QGIS en tu actividad profesional?
 
-|Answers|
+|Respuestas|
 |---|
-|Yes|
-|Maybe|
+|Sí|
+|Tal vez|
 |No|
 
-```{dropdown} Explanation
-Participants indicate whether they plan to use QGIS in their professional activities, highlighting the practical relevance and applicability of the training.
+```{dropdown} Explicación
+Indica la relevancia práctica y aplicabilidad de la capacitación.
 ```
 
-6. Do feel prepared for your job requirements regarding QGIS? 
+6. ¿Te sientes preparado para los requerimientos de tu trabajo respecto a QGIS?
 
-|Answers|
+|Respuestas|
 |---|
-|Yes|
-|Maybe|
+|Sí|
+|Tal vez|
 |No|
 
-```{dropdown} Explanation 
-Participants assess their preparedness for meeting their job requirements related to QGIS, indicating the training's effectiveness in meeting professional needs.
+```{dropdown} Explicación
+Evalúa la efectividad del entrenamiento para cumplir necesidades profesionales.
 ```
 
-7. Did the training meet your expectations?
+7. ¿La capacitación cumplió tus expectativas?
 
-|Answers|
+|Respuestas|
 |---|
-|Yes|
-|Maybe|
+|Sí|
+|Tal vez|
 |No|
 
-- If no, what would you like to change?
+- Si no, ¿qué te gustaría cambiar?
 
     ::::{grid} 1
-    :::{card} Open Question
+    :::{card} Pregunta abierta
     :::
     ::::
 
-```{dropdown} Explanation 
-Participants evaluate whether the training met their expectations, providing feedback on the alignment between their training goals and the actual training outcomes.
+```{dropdown} Explicación
+Permite retroalimentación sobre la alineación entre expectativas y resultados del entrenamiento.
 ```
 
-8. Would you like to continue QGIS-training? (yes, no, maybe)
+8. ¿Te gustaría continuar la capacitación en QGIS? (sí, no, tal vez)
 
-|Answers|
+|Respuestas|
 |---|
-|Yes|
-|Maybe|
+|Sí|
+|Tal vez|
 |No|
 
-```{dropdown} Explanation 
-Participants indicate their interest in continuing QGIS training, informing future training program development and participant engagement strategies.
+```{dropdown} Explicación
+Indica interés en formación futura, orientando el desarrollo de programas posteriores.
 ```
 
-9. If yes, what would you like to learn?
+9. Si la respuesta es sí, ¿qué te gustaría aprender?
 
     ::::{grid} 1
-    :::{card} Open Question
+    :::{card} Pregunta abierta
     :::
     ::::
 
-```{dropdown} Explanation 
-Participants expressing interest in further training specify topics or skills they want to focus on, guiding future training content.
+```{dropdown} Explicación
+Permite orientar futuros contenidos según las necesidades de los participantes.
 ```
 
-10. What did you like about the training?
-
+10. ¿Qué te gustó de la capacitación?
 
     ::::{grid} 1
-    :::{card} Open Question
+    :::{card} Pregunta abierta
     :::
     ::::
 
-```{dropdown} Explanation
-Participants expressing interest in further training specify topics or skills they want to focus on, guiding future training content.
+```{dropdown} Explicación
+Recoge aspectos positivos destacados por los participantes.
 ```
 
-11. Where do you see a need for improvement?
+11. ¿Dónde ves necesidad de mejora?
 
     ::::{grid} 1
-    :::{card} Open Question
+    :::{card} Pregunta abierta
     :::
     ::::
 
-```{dropdown} Explanation
-Participants identify areas for enhancement, guiding adjustments to improve future training experiences.
+```{dropdown} Explicación
+Permite identificar áreas de mejora y ajustar futuras capacitaciones.
 ```
 :::
 ::::
+
