@@ -9,8 +9,8 @@ Generally, we recommend using the latest Long Term Release, because it is the mo
 You can download the latest version here:
 
 1. Go to the [__QGIS download page__](https://www.qgis.org/en/site/forusers/download.html).
-2. Select `Download for Windows`, `Download for macOS` or `Dowload for Linux`, depending on your system.
-3. Click on `Looking for the most stable version? Get QGIS 3.28 LTR`
+2. Select `Download for Windows`, `Download for macOS` or `Download for Linux`, depending on your system.
+3. Click on `Looking for the most stable version? Get QGIS 3.28 LTR`.
 
 
 ## Windows specific considerations
