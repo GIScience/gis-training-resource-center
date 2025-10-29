@@ -14,7 +14,7 @@ This platform intends to make your life as a trainer easier by providing you wit
 
 * 🎓 The modules are intended to serve as references for participants who want to delve deeper into a topic or review concepts. Think of the modules as an enhanced version of PowerPoint slides that you would normally share with participants, providing them with comprehensive information. They can also serve as a guide for trainers to assess what participants should learn at different stages of their GIS education.
 
-* ✍️ The __exercises__ encompass all the content covered in the modules. They range from smaller exercises focused on specific topics like the QGIS interface to larger-scale exercises covering entire modules. These exercises can be utilized in any order or format, including [follow-along exercises group work](handson). Additionally, trainers can assign exercises as homework for participants who are capable of completing them independently.
+* ✍️ The __exercises__ encompass all the content covered in the modules. They range from smaller exercises focused on specific topics like the QGIS interface to larger-scale exercises covering entire modules. These exercises can be utilized in any order or format, including [follow-along exercises or group work](handson). Additionally, trainers can assign exercises as homework for participants who are capable of completing them independently.
 
 * 📖 The Wiki serves as a support resource for both participants and trainers while using QGIS, whether during exercises or in day-to-day work. It provides trainers with the assurance that their participants have access to an updated, interactive resource to help solve challenges encountered while using QGIS.
 
@@ -25,7 +25,7 @@ In summary:
 ||
 |---|
 |➕ Provide explanatory modules that can be used by the trainees as a reference and for reiterating and understanding content.|
-|➕ PProvide large and small exercises that can be used for teaching.|
+|➕ Provide large and small exercises that can be used for teaching.|
 |➕ A Wiki that provides practical resources and tasks for participants. |  
 |➕ Tips and guidance on how to plan and teach a GIS training.|  
 |➕ Tools to assess the GIS skill of participants before and after a training.|  
@@ -48,8 +48,8 @@ In summary:
 
 This section will outline the function of all article in the trainer's corner and give an overview of the training platform.
 
-* The Article [__How to Plan a GIS Training__](/content/Trainers_corner/en_how_to_training.md) provides a checklist of considerations when planning a GIS training. Additionally, it includes a list of essential content for basic GIS training, aiding trainers in selecting exercises suitable for their audience.
-* [__Training Agenda and Handout__](/content/Trainers_corner/en_training_graphical_outline.md) offers insights into various methods for efficiently providing administrative information to trainees. This can range from a simple table in a email to a more elaborate Miro board.
+* The Article [__How to Plan a GIS Training__](/content/Trainers_corner/en_how_to_training.md) provides a checklist of considerations when planning a training. Additionally, it includes a list of essential content for basic GIS training, aiding trainers in selecting exercises suitable for their audience.
+* [__Training Agenda and Handout__](/content/Trainers_corner/en_training_graphical_outline.md) offers insights into various methods for efficiently providing administrative information to participants. This can range from a simple table in an email to a more elaborate Miro board.
 * [__How to Plan and Structure a GIS Training Session__](/content/Trainers_corner/en_training_day_structure.md) delves into detailed strategies for structuring training sessions, particularly beneficial for novice trainers seeking confidence in conducting training sessions.
 * [__How to Teach GIS__](/content/Trainers_corner/en_how_to_teach_GIS.md) compiles best practices, tips, and experiences in teaching GIS, providing valuable insights and strategies for trainers to enhance their teaching methodologies.
-* [__Assessments in GIS Training: A Guide__](/content/Trainers_corner/en_how_to_assessment.md) presents tools available on this platform to evaluate trainees' GIS skill levels before and after training sessions.
+* [__Assessments in GIS Training: A Guide__](/content/Trainers_corner/en_how_to_assessment.md) presents tools available on this platform to evaluate participants’ GIS skill levels before and after training sessions.

@@ -28,16 +28,15 @@ The table below summarizes each item and gives a short description of what its c
 | Timeline | Provide a timeline for the course. | 
 | Available material | Add a link for participants to find and download all the necessary material |
 
-You should adapt the graphical outline to your needs and the needs of your participants. For example, after each day, provide them with a question to reflect on what they have learnt or how they can apply their newfound skills. 
+You should adapt the agenda to your needs and the needs of your participants. For example, after each day, provide them with a question to reflect on what they have learnt or how they can apply their newfound skills.
 
 :::{Tip}
-You can also add blank sticky notes or spaces, where participants can jot down their notes, findings, ideas or questions. 
+You can also add blank sticky notes or spaces (in-person or digitally), where participants can write down their notes, findings, ideas or questions.
 :::
 
-## Graphical outline ideas
+## Agenda ideas
 
-Be creative when creating a graphical outline, as you can use it to actively engage participants with the training and make them feel more secure to ask questions. 
-Most importantly, trainings should be an open learning environment where the different needs of participants are acknowledged. 
+Be creative when preparing the agenda, since you can use it to actively engage participants during the training and make them feel more secure to ask questions. Most importantly, trainings should be an open learning environment where the different needs of participants are acknowledged.
 
 Below are some examples of graphical outlines of past training workshops:
 
