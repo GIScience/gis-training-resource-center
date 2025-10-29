@@ -1,0 +1,921 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Cómo enseñar GIS &#8212; GIS Resource Training Center</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/Trainers_corner/es_how_to_teach_GIS';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Assessments in GIS Training: A Guide" href="es_how_to_assessment.html" />
+    <link rel="prev" title="Cómo planificar y estructurar una sesión de capacitación en GIS" href="es_training_day_structure.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+
+  <div class="bd-header-announcement container-fluid bd-header-announcement">
+    <div class="bd-header-announcement__content">Looking to contribute? Take a look at the contribution guidelines and contact us!</div>
+  </div>
+
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-light" alt="GIS Resource Training Center - Home"/>
+    <script>document.write(`<img src="../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-dark" alt="GIS Resource Training Center - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to the IFRC Network GIS Training Platform
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Modules</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_1/en_module_1_overview.html">1. Introduction to GIS</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_theory.html">1.1. What is GIS?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_installation.html">1.2. Setting up</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_start.html">1.3. Getting started with QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_module_1_exercises.html">1.4. Exercises for Module 1</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_2/en_module_2_overview.html">2. Working with Geodata</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_geodata_concept.html">2.1. Introduction to geodata and layers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_projections.html">2.2. Projections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_geodata_management.html">2.3. Geodata management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_attribute_table.html">2.4. Attribute Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/en_data_sources.html">2.5. Data sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_basemap.html">2.6. Basemaps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_module_2_exercises.html">2.7. Exercises for Module 2</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_3/en_module_3_overview.html">3. Basic GIS Operations</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_digitisation.html">3.1. Digitisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_data_queries.html">3.2. Geodata Selection and Queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_data_classification.html">3.3. Geodata Classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_georeferencing.html">3.4. Georeferencing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_module_3_exercises.html">3.5. Exercises for Module 3</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_4/en_module_4_overview.html">4. Visualisation of Geodata and Map Making</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_map_design_I.html">4.1. Symbology and Colours</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_styling_vector_data.html">4.2. Styling Vector Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_labels_vector.html">4.3. Labels for Vector Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_working_with_styles.html">4.4. Exporting and Importing Styles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_symbology_raster.html">4.5. Symbology for Raster Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_map_design_2.html">4.6. The Print layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_understanding_print_layout.html">4.7. Understanding the Print Layout Composer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_map_examples.html">4.8. Good Map Design &amp; Semiological Errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_module_4_exercises.html">4.9. Exercises for Module 4</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_5/en_module_5_overview.html">5. Intermediate GIS Operations</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_spatial_tools.html">5.1. Spatial data processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_overlay_operations.html">5.2. Overlay Operations (Clip, Dissolve, Buffer)</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_centroids.html">5.4. Centroids</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_non_spatial_tools.html">5.5. Non-Spatial processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_module_5_exercises.html">5.6. Exercises for Module 5</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_6/en_module_6_overview.html">6. Data Analysis with QGIS</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_6/en_qgis_data_analysis_theory.html">6.1. Data Analysis with QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_6/en_qgis_common_data_analysis.html">6.2. Data Analysis in the Humanitarian Sector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_6/en_qgis_module_6_exercises.html">6.3. Exercises Module 6 - Data Analysis with QGIS</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_7/en_module_7_overview.html">7. Automation with QGIS</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_7/en_qgis_automation_theory.html">7.1. The model designer in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_7/en_qgis_module_7_exercises.html">7.2. Exercises for Module 7</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_8/en_module_8_overview.html">8. Remote Sensing and Raster Data</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_8/en_qgis_remote_sensing_raster_theory.html">8.1. Remote Sensing and Raster data theory 🛰️</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_8/en_qgis_raster_operations.html">8.2. Common Raster Operations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_8/en_qgis_remote_sensing_theory.html">8.3. Introduction to Remote Sensing and Remote Sensing Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_8/en_qgis_module_8_ex1.html">8.4. Raster data Exercise 1: Basic Assessment of Flood Exposure in the Indus Basin in Pakistan</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_9/en_module_9_overview.html">9. Network Analysis</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_9/en_qgis_network_analysis_theory.html">9.1. Spatial Network Analysis Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_9/en_qgis_openrouteservice_tools.html">9.2. Plugin: Openrouteservice (ORS) tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_9/en_qgis_centrality.html">9.3. Network centrality measures and its application in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_9/en_qgis_module_9_exercises.html">9.4. Exercises Module 9: Network Analysis</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercises</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Exercise_tracks/en_exercise_tracks_overview.html">Exercise Overview</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Exercise_tracks/en_larkana_flood_response.html">Exercise Track: Larkana Flood Response</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../Exercise_tracks/en_mdg_aa_cyclones.html">Exercise Track: Anticipatory Action Analysis for Cyclones in Madagascar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Exercise_tracks/fr_mdg_aa_cyclones.html">Piste d’Exercice : Analyse d’Action Anticipative pour les Cyclones à Madagascar</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Wiki</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/en_wiki_homepage.html">Wiki Overview</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_qgis_basics_wiki.html">QGIS Basics</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_installation_wiki.html">QGIS installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_interface_wiki.html">QGIS Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_projects_folder_structure_wiki.html">Projects and Folder Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_projections_wiki.html">Projections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_basemaps_wiki.html">Basemaps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_plugins_wiki.html">Plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_data_sources_wiki.html">Data sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_licensing_data.html">Data Licenses (working with licensed datasets)</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_geodata_wiki.html">General Geodata</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_geodata_types_wiki.html">Types of Geodata</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_import_geodata_wiki.html">Geodata Import in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_OpenStreetMap_wiki.html">OpenStreetMap (OSM) Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_layer_concept_wiki.html">Layer Concept</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_attribute_table_wiki.html">Attribute Table in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_digitisation_wiki.html">Digitisation</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_data_classification_wiki.html">Geodata Classification</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_single_symbol_wiki.html">Single symbol classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_categorised_wiki.html">Categorised classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_graduated_wiki.html">Graduated classification</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_geoprocessing_wiki.html">Spatial Processing</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_queries_wiki.html">Spatial and Non-spatial queries</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_spatial_queries_wiki.html">Spatial Queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_non_spatial_queries_wiki.html">Non-Spatial Queries</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_table_functions_wiki.html">Manipulating the Attribute Table</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_joins_wiki.html">Joining Geodata (Spatial and non-spatial joins)</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_spatial_joins_wiki.html">Spatial Joins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_non_spatial_joins_wiki.html">Non-Spatial Joins</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_raster_wiki.html">Raster Data</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_raster_basic_wiki.html">Basic Raster Operations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_automation_wiki.html">Automation in QGIS (The Model Builder)</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_representation_wiki.html">Visualisation and Map Making in QGIS</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_visualisation_wiki.html">Visualisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_map_making_wiki.html">The Print Layout Composer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_common_errors_and_Issues.html">QGIS common errors and issues <!-- omit from toc --></a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/en_web_and_mobile_apps_wiki.html">Web &amp; mobile GIS applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/en_geodata_management_sharepoint.html">Geodata Management with Sharepoint</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">GIS in Anticipatory Action</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_cyclone_trigger_madagascar.html">QGIS Trigger Workflow for Madagascar</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_drought_trigger_somalia.html">QGIS Trigger Workflow for Somalia</a></li>
+
+
+<li class="toctree-l1 has-children"><a class="reference internal" href="../GIS_AA/en_AILAS_madagascar.html">AI Logistic Awareness System (AILAS) Street level image collection Field Experiments</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../GIS_AA/en_AILAS_madagascar_camera_usage_guide.html">Camera Usage Guide: AILAS Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../GIS_AA/en_AILAS_madagascar_picture_upload_and_management.html">Picture upload and management: AILAS Project</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../GIS_AA/fr_AILAS_madagascar.html">Système de conscience siuationelle logistique par IA (AILAS): Expérimentations de terrain pour la collecte d’images au niveau de la rue</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../GIS_AA/fr_AILAS_madagascar_camera_usage_guide.html">Guide d’utilisation de la caméra: projet AILAS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../GIS_AA/fr_AILAS_madagascar_picture_upload_and_management.html">Téléversement et gestion des images : Projet AILAS</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../GIS_AA/en_qgis_risk_assessment_plugin.html">Risk Assessment QGIS Plugin</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../GIS_AA/en_qgis_generate_indicators_for_plugin.html">How to generate Risk Indicators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../GIS_AA/en_gaia_indicators_processing.html">GAIA Pipeline Documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_historical_impact_assessment_sudan.html">Historical Impact Assessment (HIA) for Flood in Sudan</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_GIS_AA_exercises.html">Exercises - GIS in Anticipatory Action</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Mobile Data Collection</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Mobile_Data_collection/en_SMT.html">Sketch Map Tool</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_training.html">Sketch Map Tool Training</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_ex1_.html">Sketch Map Tool Exercise 1 - Workflow Exercise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_ex2_.html">Sketch Map Tool Exercise 2 - Traffic light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_ex3_.html">Sketch Map Tool Exercise 3 - Role Play using the Sketch Map Tool in EVCA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_ex4_.html">Sketch Map Tool Exercise 4 - Basic Visualization of the results in QGIS &amp; uMAP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_ex5_.html">Sketch Map Tool Exercise 5 - Heat Map Visualization</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Trainers corner</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="en_TOT_intro.html">Train of trainers introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="en_how_to_training.html">How to plan a GIS Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="en_training_graphical_outline.html">Training Agenda and Handout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="en_training_day_structure.html">How to plan and structure a GIS Training Session</a></li>
+<li class="toctree-l1"><a class="reference internal" href="en_how_to_teach_GIS.html">How to teach GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="en_how_to_assessment.html">Assessments in GIS Training: A Guide</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Rincón de los Capacitadores</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="es_TOT_intro.html">Introducción al programa de formación de facilitadores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="es_how_to_training.html">Cómo planificar una capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="es_training_graphical_outline.html">Agenda de capacitación y material de apoyo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="es_training_day_structure.html">Cómo planificar y estructurar una sesión de capacitación en GIS</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Cómo enseñar GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="es_how_to_assessment.html">Assessments in GIS Training: A Guide</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../About/about_1.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribution_plan.html">Contribution Plan for the IFRC GIS Training Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Glossary/en_glossary_1.html">Glossary</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center/issues/new?title=Issue%20on%20page%20%2Fcontent/Trainers_corner/es_how_to_teach_GIS.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/content/Trainers_corner/es_how_to_teach_GIS.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Cómo enseñar GIS</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoria-vs-practica">Teoría vs. práctica</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios-practicos">Ejercicios prácticos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inicio-de-un-ejercicio">Inicio de un ejercicio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#durante-el-ejercicio-paso-a-paso">Durante el ejercicio: Paso a paso</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#durante-el-ejercicio-trabajo-en-grupo">Durante el ejercicio: Trabajo en grupo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#final-de-un-ejercicio">Final de un ejercicio</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discusion-y-trabajo-en-grupo">Discusión y trabajo en grupo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gis-para-resolver-problemas-reales">GIS para resolver problemas reales</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practicar-resolucion-de-problemas-que-hacer-si-estas-atascado">Practicar resolución de problemas: ¿Qué hacer si estás atascado?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#errores-problemas-y-obstaculos-comunes">Errores, problemas y obstáculos comunes</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="como-ensenar-gis">
+<h1>Cómo enseñar GIS<a class="headerlink" href="#como-ensenar-gis" title="Permalink to this heading">#</a></h1>
+<p><strong>🔙<a class="reference internal" href="../intro.html"><span class="doc std std-doc">Volver a la página principal</span></a></strong></p>
+<p>Aprender GIS puede ser un desafío, especialmente para personas que son nuevas en el tema o tienen experiencia limitada con tecnología más allá de sistemas de oficina estándar. El concepto de geodatos y todo lo que implica está bastante alejado de las actividades diarias de muchas personas en el sector humanitario. Sin embargo, comprender estos conceptos es esencial para trabajar eficazmente con GIS y resolver problemas. Dicho esto, a menudo no hay suficiente tiempo para profundizar en temas como proyecciones o algoritmos. Y aprendemos más a través de la capacitación práctica que de conferencias teóricas sobre GIS.</p>
+<p>Por ello, debemos ser conscientes de equilibrar la práctica y la teoría al enseñar GIS.<br />
+En este artículo, presentaremos buenas prácticas para enseñar GIS según nuestra experiencia. Comenzaremos discutiendo la diferencia entre enseñar teoría y enseñar mediante ejercicios prácticos, y la importancia de conectar GIS con su profesión o requerimientos laborales. Posteriormente, el artículo aborda consideraciones prácticas al enseñar GIS y métodos para evitar y resolver problemas.</p>
+<section id="teoria-vs-practica">
+<h2>Teoría vs. práctica<a class="headerlink" href="#teoria-vs-practica" title="Permalink to this heading">#</a></h2>
+<p>En general, queremos enseñar GIS de manera que las personas comprendan cómo realizar tareas específicas necesarias en su trabajo de la forma más sencilla posible. Esto significa que nos enfocamos en ejercicios prácticos con conexión al mundo real, para que sea fácil ver cómo pueden usar GIS en su trabajo. Sin embargo, a veces necesitamos enseñar cosas teóricamente. Por lo general, porque son tan esenciales que las personas deben comprender el concepto antes de realizar cualquier acción en GIS (por ejemplo, el concepto de capa) o porque no conocer el concepto genera errores y problemas al trabajar con GIS y geodatos (por ejemplo, proyecciones).</p>
+<p>Equilibrar teoría y práctica es esencial en la capacitación en GIS. A continuación, presentamos algunas buenas prácticas para incorporar ambos aspectos de manera efectiva:</p>
+<ul class="simple">
+<li><p>Hacer que las personas comprendan por qué es importante entender el concepto (por ejemplo, evitar errores o resultados incorrectos, o poder trabajar más rápido). Por ejemplo, si trabajan con geodatos proyectados en diferentes sistemas de referencia de coordenadas.</p></li>
+<li><p>Usar gráficos, videos y otros medios para explicar el concepto. Por ejemplo, para enseñar el tema de proyecciones en el módulo 1, usamos videos y gráficos. Incluso puedes llevar un modelo en papel y <a class="reference external" href="https://education.nationalgeographic.org/resource/the-cartographers-dilemma/">demostrar</a> el concepto con un ejemplo.</p></li>
+</ul>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Demostración de proyección: El dilema del cartógrafo<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<iframe src="https://res.cloudinary.com/dtpgi0zck/video/upload/q_auto/vc_vp9/v1/videos/The%20Cartographer's%20Dilemma.webm?_s=vp-1.10.1" width="750" height="500"></iframe>
+</div>
+</details><ul class="simple">
+<li><p>Hacer la conexión entre la teoría y el uso práctico de GIS. Por ejemplo, mostrar qué tipo de errores puede generar usar una proyección incorrecta y por qué es importante usar proyecciones como UTM, o la diferencia entre sistemas de coordenadas métricas y geográficas (por ejemplo, al usar metros o kilómetros al crear buffers).</p></li>
+</ul>
+</section>
+<section id="ejercicios-practicos">
+<span id="handson"></span><h2>Ejercicios prácticos<a class="headerlink" href="#ejercicios-practicos" title="Permalink to this heading">#</a></h2>
+<p>Los ejercicios prácticos son altamente efectivos al enseñar GIS en todos los niveles de habilidad. Desde explorar la interfaz hasta ejecutar un análisis espacial completo, realizar estas tareas permite comprender mejor cómo trabajar con GIS. Siempre se recomienda priorizar ejercicios prácticos sobre presentaciones teóricas.</p>
+<p>Existen dos tipos muy comunes de capacitación práctica: ejercicios paso a paso y ejercicios en grupo.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Ejercicios paso a paso</div>
+<p class="sd-card-text">Los ejercicios paso a paso son una excelente herramienta para introducir nuevas funciones y herramientas, porque el facilitador está presente para responder preguntas y resolver problemas.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Ventajas</p></th>
+<th class="head"><p class="sd-card-text">Desventajas</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">+</span></code> Bueno para introducir nuevos temas</p></td>
+<td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">-</span></code> Intercambio limitado entre participantes</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">+</span></code> Las preguntas se pueden responder de inmediato</p></td>
+<td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">-</span></code> Los participantes tienen poca iniciativa propia</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">+</span></code> Buenas posibilidades de resolución de problemas por parte del facilitador</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Ejercicios en grupo</div>
+<p class="sd-card-text">Los ejercicios en grupo dependen más del trabajo independiente de las personas participantes. Esto es excelente para fomentar discusiones e intercambio entre ellos.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Ventajas</p></th>
+<th class="head"><p class="sd-card-text">Desventajas</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">+</span></code> Gran intercambio entre participantes</p></td>
+<td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">-</span></code> No hay soporte inmediato por parte del facilitador(es)</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">+</span></code> Se fomenta la iniciativa y la resolución colaborativa de problemas</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">+</span></code> Ideal para capacitación en lugar de introducir nuevos conceptos</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<section id="inicio-de-un-ejercicio">
+<h3>Inicio de un ejercicio<a class="headerlink" href="#inicio-de-un-ejercicio" title="Permalink to this heading">#</a></h3>
+<p>Independientemente del tipo de ejercicio, se deben repasar brevemente los siguientes puntos con las personas participantes al comienzo del ejercicio:</p>
+<ol class="arabic simple">
+<li><p><strong>Objetivo del ejercicio:</strong> Generalmente, un ejercicio práctico debe comenzar explicando el objetivo del mismo. Por ejemplo: <em>“Este ejercicio tiene como objetivo enseñar el proceso de procesamiento básico de datos espaciales utilizando las herramientas Clip, Merge y Dissolve”</em>. Es una buena oportunidad para destacar la utilidad práctica de las herramientas que aprenderán, aumentando la motivación.</p></li>
+<li><p><strong>Contexto:</strong> Idealmente, el ejercicio está basado en un ejemplo real o un escenario ficticio dentro del trabajo humanitario. Debes explicar rápidamente el contexto y la historia. Un ejemplo es el ejercicio del módulo 3 (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_3/es_qgis_module_3_ex4.html">Ejercicio 4: Inundaciones en Nigeria</a>).</p></li>
+<li><p><strong>Datos del ejercicio:</strong> La mayoría de los ejercicios prácticos usan datos reales (por ejemplo, de <a class="reference external" href="https://data.humdata.org">HDX</a>). Cada conjunto de datos debe explicarse brevemente. Esta información está disponible en cada ejercicio en la plataforma. Asegúrate de que todos hayan descargado los datos antes de comenzar. Algunos participantes no están familiarizados con archivos <code class="docutils literal notranslate"><span class="pre">zip</span></code>. Asegúrate de que descompriman las carpetas antes de importarlas en QGIS y dedica tiempo a resolver otros problemas relacionados con los datos del ejercicio.</p></li>
+</ol>
+</section>
+<section id="durante-el-ejercicio-paso-a-paso">
+<h3>Durante el ejercicio: Paso a paso<a class="headerlink" href="#durante-el-ejercicio-paso-a-paso" title="Permalink to this heading">#</a></h3>
+<p>Si realizas un ejercicio paso a paso, puedes seguir estos principios básicos. Explica el propósito de cada paso, por ejemplo: <em>“En este paso cargamos los datos en QGIS”</em> o <em>“En este paso, recortamos todos los puntos excepto los del área de interés”</em>. Muestra cada paso tres veces, ya sea en pantalla grande o compartiendo tu pantalla (remoto). Esto requerirá paciencia. Las personas participantes necesitarán alternar entre observarte y orientarse en la interfaz de QGIS en su propio equipo para ejecutar los pasos. Esto llevará tiempo y no tiene sentido apresurarse. El objetivo es que nadie se quede atrás. Sé deliberado y muestra todo paso a paso, incluso lo más pequeño. Pregunta varias veces si hay problemas.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>¡No uses botones de icono!
+Usa las pestañas o la caja de herramientas de geoprocesamiento en lugar de hacer clic en los íconos. Ver iconos puede ser difícil para las personas participantes, pero buscar herramientas en la caja de procesamiento es mucho más fácil.</p>
+</div>
+<ol class="arabic simple">
+<li><p>Durante la primera demostración, anima a los participantes a solo observar lo que haces. Hazlo despacio y de manera deliberada.</p></li>
+<li><p>En la segunda demostración, deja que los participantes sigan los pasos en sus computadoras.</p></li>
+<li><p>La tercera demostración puede usarse para abordar problemas encontrados en la segunda demostración. A veces vale la pena dejar que exploren distintas opciones, por ejemplo, al estilizar capas o mapas.</p></li>
+</ol>
+<p>Una vez que todos hayan logrado los resultados deseados, se puede continuar.</p>
+</section>
+<section id="durante-el-ejercicio-trabajo-en-grupo">
+<h3>Durante el ejercicio: Trabajo en grupo<a class="headerlink" href="#durante-el-ejercicio-trabajo-en-grupo" title="Permalink to this heading">#</a></h3>
+<p>Si realizas trabajo en grupo, hay otros aspectos a considerar:</p>
+<ol class="arabic simple">
+<li><p>Distribuye a las personas participantes en grupos después de la introducción al ejercicio. Explica si y cómo deben presentar los resultados.</p></li>
+<li><p>Dales tiempo para organizarse y revisar las instrucciones.</p></li>
+<li><p>Revisa los grupos periódicamente para resolver preguntas o malentendidos.</p></li>
+<li><p>Si es necesario, visita los grupos nuevamente y ajusta el tiempo según lo requerido.</p></li>
+<li><p>Al finalizar el trabajo en grupo, reúne a los participantes y verifica si hay problemas o dudas.</p></li>
+<li><p>Permite que los grupos presenten sus resultados.</p></li>
+</ol>
+</section>
+<section id="final-de-un-ejercicio">
+<h3>Final de un ejercicio<a class="headerlink" href="#final-de-un-ejercicio" title="Permalink to this heading">#</a></h3>
+<p>Después de un ejercicio, toma tiempo para preguntar si lo encontraron relevante y si están cómodos con el nivel de complejidad. Reflexiona con ellos sobre posibles aplicaciones de lo aprendido. Fomenta la discusión entre los participantes y planifica tiempo para que intercambien experiencias.</p>
+</section>
+</section>
+<section id="discusion-y-trabajo-en-grupo">
+<h2>Discusión y trabajo en grupo<a class="headerlink" href="#discusion-y-trabajo-en-grupo" title="Permalink to this heading">#</a></h2>
+<p>La discusión y el trabajo en grupo son fundamentales en la capacitación en GIS, fomentando colaboración, pensamiento crítico e intercambio de conocimientos. Al participar en actividades colaborativas, los participantes pueden profundizar en los conceptos y metodologías de GIS, obteniendo valiosos aprendizajes de sus pares. Razones clave para incluir discusión y trabajo en grupo:</p>
+<ul class="simple">
+<li><p><strong>Intercambio de ideas y perspectivas:</strong> Permite compartir experiencias y enfoques, enriqueciendo el aprendizaje.</p></li>
+<li><p><strong>Reflexión crítica:</strong> Fomenta evaluar críticamente métodos, fuentes de datos y técnicas analíticas, mejorando la toma de decisiones en proyectos GIS reales.</p></li>
+<li><p><strong>Aprender de los pares:</strong> Ejercicios colaborativos permiten aprender de las fortalezas y conocimientos de otros.</p></li>
+<li><p><strong>Mayor participación:</strong> Promueve el aprendizaje activo mediante ejercicios prácticos, estudios de caso y tareas basadas en proyectos.</p></li>
+<li><p><strong>Desarrollo de habilidades:</strong> Facilita el desarrollo de comunicación, trabajo en equipo y resolución de problemas, habilidades transferibles a diversos contextos profesionales.</p></li>
+</ul>
+<p>Incorporar discusión y trabajo en grupo crea entornos dinámicos donde los participantes colaboran, aprenden y aplican conceptos y habilidades de GIS de manera práctica.</p>
+</section>
+<section id="gis-para-resolver-problemas-reales">
+<h2>GIS para resolver problemas reales<a class="headerlink" href="#gis-para-resolver-problemas-reales" title="Permalink to this heading">#</a></h2>
+<p>En el mundo acelerado de la ayuda humanitaria, el tiempo es un recurso valioso y asistir a quienes lo necesitan es prioritario. La motivación de los participantes depende de ver el valor que GIS aporta a su trabajo diario. Por ello, siempre se deben usar ejemplos, datos y ejercicios de la vida real. Los ejercicios abstractos son menos efectivos porque los participantes no comprenden la relevancia de los métodos y flujos de trabajo.</p>
+<p>La plataforma refleja esto. La sección principal sobre este tema es “<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_1/es_qgis_theory.html#examples-of-gis-used-by-humanitarian-organisations">Módulo 1: Ejemplos de GIS utilizados por organizaciones humanitarias</a>”.</p>
+<p>Casi todos los ejercicios se orientan a métodos, flujos de trabajo o productos estándar en el sector humanitario, como mapas generales o mapas de regiones afectadas.</p>
+<p>Consejos prácticos para hacer los ejercicios relevantes para el trabajo humanitario:</p>
+<ul class="simple">
+<li><p><strong>Audiencia:</strong> Reflexiona sobre tu audiencia y qué productos necesitarían más.</p></li>
+<li><p><strong>Productos comunes:</strong> Comienza con mapas sencillos para informes y presentaciones. Esto interesa a todos, ya que todos deben presentar o reportar su trabajo.</p></li>
+<li><p><strong>Escenarios:</strong> Personaliza los ejercicios para simular situaciones comunes, como crear mapas de situación para equipos de respuesta o analizar datos espaciales para identificar áreas de riesgo.</p></li>
+<li><p><strong>Datos reales:</strong> Incentiva a usar datos reales y desarrollar soluciones GIS para desafíos humanitarios reales, fomentando aprendizaje práctico y resolución de problemas.</p></li>
+<li><p><strong>Historias de éxito:</strong> Usa estudios de caso o historias de éxito de organizaciones como <a class="reference external" href="https://reliefweb.int">Reliefweb</a> para ilustrar el impacto tangible de GIS.</p></li>
+<li><p><strong>Cumplimiento de la misión:</strong> Presenta ejemplos donde GIS fue crucial para cumplir una misión.</p></li>
+<li><p><strong>Proceso de planificación:</strong> Permite que los participantes identifiquen mapas y productos más relevantes para su trabajo.</p></li>
+</ul>
+</section>
+<section id="practicar-resolucion-de-problemas-que-hacer-si-estas-atascado">
+<h2>Practicar resolución de problemas: ¿Qué hacer si estás atascado?<a class="headerlink" href="#practicar-resolucion-de-problemas-que-hacer-si-estas-atascado" title="Permalink to this heading">#</a></h2>
+<p>Trabajar con GIS implica que en algún momento no sabrás cómo proceder. Por ejemplo, mostrar solo ciertas partes de la tabla de atributos en tu mapa impreso.</p>
+<p>Dominar cada función de QGIS es impráctico. En cambio, desarrollar métodos de resolución de problemas es fundamental. La capacidad de enfrentar desafíos y saber dónde y cómo buscar soluciones es esencial en GIS. Toda capacitación debe priorizar esta habilidad. Estrategias para empoderar a los participantes:</p>
+<ul class="simple">
+<li><p><strong>Uso de la Wiki de la Plataforma de Capacitación en GIS de la IFRC:</strong> ¡Anima a los participantes a usar los recursos disponibles!</p></li>
+<li><p><strong>Uso efectivo de motores de búsqueda como Google:</strong> Enseña a formular búsquedas precisas con palabras clave relevantes, incluyendo nombres de software, mensajes de error y descripciones de tareas.</p></li>
+<li><p><strong>Uso de la documentación de QGIS:</strong> Aprende a navegar eficazmente <a class="reference external" href="https://docs.qgis.org/3.34/en/docs/user_manual/">la documentación de QGIS</a>, incluyendo manuales, tutoriales y FAQs.</p></li>
+<li><p><strong>Participación en la comunidad de usuarios de QGIS:</strong> Presenta <a class="reference external" href="https://www.qgis.org/en/site/forusers/support.html">foros, grupos de Telegram y comunidades</a>, como QGIS Community Forum y <a class="reference external" href="https://www.reddit.com/r/QGIS/">subreddit QGIS</a>.</p></li>
+<li><p><strong>Explorar videos tutoriales de QGIS:</strong> Recomienda videos específicos de QGIS en YouTube para ver demostraciones visuales y resolución de problemas comunes.</p></li>
+<li><p><strong>Uso de chatbots y asistentes de IA:</strong> Introduce asistentes IA como ChatGPT, entrenados para responder consultas sobre QGIS y guiar en resolución de problemas. Enseña a interactuar eficazmente con estos asistentes.</p></li>
+<li><p><strong>Participar en grupos de usuarios de QGIS:</strong> Anima a <a class="reference external" href="https://www.qgis.org/en/site/forusers/usergroups.html#qgis-usergroups">unirse a grupos de usuarios locales o en línea</a> y al grupo SIMS Geo en Slack para networking, intercambio de conocimientos y mentoría.</p></li>
+</ul>
+</section>
+<section id="errores-problemas-y-obstaculos-comunes">
+<h2>Errores, problemas y obstáculos comunes<a class="headerlink" href="#errores-problemas-y-obstaculos-comunes" title="Permalink to this heading">#</a></h2>
+<p>Las personas nuevas en GIS suelen tropezar con los mismos obstáculos. Cada aplicación GIS tiene desafíos y errores típicos, como manejar mal shapefiles, no ver datos en el lienzo por el orden de capas o usar la herramienta incorrecta por nombres similares (<code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">by</span> <span class="pre">location</span></code> y <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">by</span> <span class="pre">location</span> <span class="pre">(summary)</span></code>).</p>
+<p>Como usuario experimentado de GIS, puedes evitar estos errores automáticamente, pero los principiantes carecen de esa experiencia.</p>
+<p>Para abordar estos problemas:</p>
+<ul class="simple">
+<li><p><strong>Wiki:</strong> Indica la <span class="xref myst">lista de problemas y soluciones comunes</span> disponible en la plataforma.</p></li>
+<li><p><strong>Google y ChatGPT:</strong> Anima a usar recursos en línea como Google y ChatGPT para fortalecer la autonomía.</p></li>
+<li><p><strong>Proactividad:</strong> Señala posibles problemas durante los ejercicios y ofrece orientación paso a paso.</p></li>
+<li><p><strong>Aprendizaje colaborativo:</strong> Fomenta un entorno donde los participantes compartan experiencias y soluciones.</p></li>
+<li><p><strong>Salas de trabajo separadas:</strong> Úsalas para resolución individual sin interrumpir al grupo principal. Asegúrate de que puedan ponerse al día.</p></li>
+<li><p><strong>Buenas prácticas:</strong> Destaca la importancia de seguir buenas prácticas en gestión de datos para evitar problemas comunes y mejorar eficiencia y precisión en los flujos de trabajo GIS.</p></li>
+</ul>
+<p>Al abordar proactivamente errores y desafíos, se empodera a los participantes para manejar eficazmente las complejidades de GIS, promoviendo una experiencia de aprendizaje más productiva y satisfactoria.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content/Trainers_corner"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="es_training_day_structure.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Cómo planificar y estructurar una sesión de capacitación en GIS</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="es_how_to_assessment.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Assessments in GIS Training: A Guide</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoria-vs-practica">Teoría vs. práctica</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios-practicos">Ejercicios prácticos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inicio-de-un-ejercicio">Inicio de un ejercicio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#durante-el-ejercicio-paso-a-paso">Durante el ejercicio: Paso a paso</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#durante-el-ejercicio-trabajo-en-grupo">Durante el ejercicio: Trabajo en grupo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#final-de-un-ejercicio">Final de un ejercicio</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discusion-y-trabajo-en-grupo">Discusión y trabajo en grupo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gis-para-resolver-problemas-reales">GIS para resolver problemas reales</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practicar-resolucion-de-problemas-que-hacer-si-estas-atascado">Practicar resolución de problemas: ¿Qué hacer si estás atascado?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#errores-problemas-y-obstaculos-comunes">Errores, problemas y obstáculos comunes</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By HeiGIT gGmbH
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright HeiGIT gGmbH.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <script data-goatcounter="https://gtrc.goatcounter.com/count"
+async src="//gc.zgo.at/count.js"></script>
+<p>
+This project is released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Creative Commons BY-NC-SA 4.0 license</a>, except where otherwise noted. Figures are subject to their original copyright and are not covered by this license.
+</p>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
