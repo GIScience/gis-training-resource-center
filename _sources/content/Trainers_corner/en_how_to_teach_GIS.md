@@ -122,7 +122,7 @@ In the fast-paced world of humanitarian aid, time is a precious commodity, and t
 
 This topic is reflected on the whole platform. The principal section dealing with the topic is "[Module 1: Examples of GIS used by humanitarian organisations](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_theory.html#examples-of-gis-used-by-humanitarian-organisations)".
 
-On this training platform, nearly all exercises are oriented on methods, workflows or products that are standard in the humanitarian sector like overview maps or maps of affected regions. 
+Nearly all exercises are oriented on methods, workflows or products that are standard in the humanitarian sector like overview maps or maps of affected regions. 
 
 Practical tips to make exercise and teaching relevant for humanitarian work:
 
