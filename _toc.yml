@@ -165,8 +165,8 @@ parts:
       - file: content/Trainers_corner/en_training_day_structure.md  
       - file: content/Trainers_corner/en_how_to_teach_GIS.md
       - file: content/Trainers_corner/en_how_to_assessment.md   
-  - caption: 
-    chapters: Rincón de los Capacitadores
+  - caption: Rincón de los Capacitadores
+    chapters: 
       - file: content/Trainers_corner/es_TOT_intro.md  
       - file: content/Trainers_corner/es_how_to_training.md
       - file: content/Trainers_corner/es_training_graphical_outline.md
