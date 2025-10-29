@@ -1,4 +1,4 @@
-# Manipulating the Attribute Table (Table functions)
+# Manipulating the Attribute Table
 
 __🔙[Back to Homepage](/content/intro.md)__
 
