@@ -29,8 +29,8 @@ Esta plataforma tiene como objetivo facilitar tu trabajo como persona facilitado
 :::{card} Lo que la plataforma no ofrece ❌
 
 ➖ No incluye presentaciones listas para usar.
-➖ No gestiona participantes.
-➖ No está pensada como una plataforma de autoaprendizaje.
+➖ No gestiona participantes.  
+➖ No está pensada como una plataforma de autoaprendizaje.  
 
 :::
 
