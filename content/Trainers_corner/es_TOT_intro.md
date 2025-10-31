@@ -4,7 +4,7 @@
 En este espacio encontrarás los recursos necesarios para planificar y desarrollar actividades de formación en GIS. La sección presenta una descripción general de la plataforma y de las funciones disponibles para las personas facilitadores.
 
 ```{admonition} Contacta al equipo de la Plataforma de Capacitación en GIS de la IFRC
-Si tienes preguntas, comentarios o sugerencias sobre la plataforma y su contenido, estaremos encantados de escucharte. Puedes contactarnos por correo electrónico a __gis-training-plattform@heigit.org__.
+Si tienes preguntas, comentarios o sugerencias sobre la plataforma y su contenido, estaremos encantados de escucharte. Puedes contactarnos por correo electrónico a __gis-training-platform@heigit.org__.
 ```
 
 ## Qué ofrece esta plataforma
