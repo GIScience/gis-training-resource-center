@@ -96,7 +96,7 @@ The rules, or filters, are based on an expression. You can use the ![](../../fig
 3. Add a Rule by clicking on the `+`-button in the left corner of the styling panel. A new window will open in the styling panel. In this window, you will enter the rule (`Filter`) and customize the label font, size, and placement. Additionally, you can enter a description.
 4. Enter a Filter (red box in the figure below). The easiest way is to use the `Expression string builder` to the right of the Filter option. Click on the ![](/../fig/expression_string_builder_icon.png)-Symbol. A new panel will open.
 5. In the Expression String builder enter a rule. In the example in the video below, we want to only display settlements that are either national or regional capitals. This corresponds to the String `("CLASS" = 1 ) OR ("CLASS" = 2)`. We know this because we know our data and have looked at the attribute table beforehand.
-6. Click `OK`
+6. Click `OK`.
 7. Set the font and font size.
 8. Click `Apply`.
 
@@ -158,30 +158,16 @@ name: labels_graduated_symbology_example
 width: 500 px
 name: label_text_buffer_example
 ---
-A label without a text buffer (left) and a label with a white text buffer (right)
+A label without a text buffer (left) and a label with a white text buffer (right).
 ```
 
 ```{note}
 QGIS renders labels automatically.
-Sometimes labels can obstruct other symbols. In that case, you can either adjust the placement of the labels in the __Label tab__, or use the ![](../../fig/30.30.2_move_a_label_diagram_callout_icon.png) `Move a Label, Diagram, or Callout`-tool in __Label toolbar__
+Sometimes labels can obstruct other symbols. In that case, you can either adjust the placement of the labels in the __Label tab__, or use the ![](../../fig/30.30.2_move_a_label_diagram_callout_icon.png) `Move a Label, Diagram, or Callout`-tool in __Label toolbar__.
 
 By default, QGIS renders the labels so that they don't overlap with other labels. This means that not all the labels will be visible if the data is dense or rendered close to each other. You can optimize the rendering under the rendering option. 
 
 ```
-
-<!----:::{admonition} Now it's your turn!
-
-Take the time to apply what we've learned yourself by doing one or two of the [exercises of module 4](/content/Module_4/en_qgis_module_4_exercises.md).
-
-```{card}
-:link: 
-```
-
-:::
---->
-
-<!--MOVE: move admonition a bit up?--->
-
 
 :::{Attention}
 

@@ -17,7 +17,7 @@ Some organisations may also use standardised symbols or colours in their maps.
 
 For example, if you want to send a layer to your colleague with the same styling as you, it is best to check the "__Layer properties__", "__Symbology__", and "__Labels__" categories (and any additional styling options you have set). If you only wish to save a certain colouring, line thickness, or labeling style, you only need to check the respective boxes.
 
-### Saving or exporting styling settings
+### Saving or Exporting Styling Settings
 
 1. Open the styling panel and click on `Styles`. A dropdown menu will open with the option to export the layer styling.
 2. Since in this case, the styling is for exactly that dataset, you can leave all the boxes checked.
@@ -40,10 +40,10 @@ When working with similar data (e.g. building types or flooding risk), it is use
 When a styling is saved in the same location as the data and has the same name as the corresponding dataset, the styling will be automatically applied to the layer when loading the data into QGIS!
 ```
 
-### Loading a style into a QGIS-project
+### Loading a Style into a QGIS-project
 
-1. Open the style manager: `Settings` > `Style manager`
-2. Click on `import/export` and select `import items`
+1. Open the style manager: `Settings` > `Style manager`.
+2. Click on `import/export` and select `import items`.
 3. Navigate to the folder where the style is saved and click import.
 4. The style should now be available as a preset in the styling panel.
 
@@ -69,7 +69,7 @@ You can copy styles from one layer to another:
 1. __What are the advantages of creating and using styles?__
 
 :::{dropdown} Answer
-- __Consistency:__ ensures uniform symbology across maps and projects
+- __Consistency:__ ensures uniform symbology across maps and projects.
 - __Reusability:__ you can apply the same style to different layers or across projects without re-building from scratch.
 - __Efficiency:__ saves time when styling many layers (by just loading the style file).
 - __Shareabilty:__ you can share your visual designs (symbols, colour ramps, label settings) with colleagues. 
@@ -93,7 +93,7 @@ You can copy styles from one layer to another:
 __Things to watch out for:__
 - __File paths/references:__ If the style references external files (SVGs, images) with absolute paths, those paths may break on another machine. 
 - __Missing resources:__ If an external resource (symbol, image) is absent or moved, the style may fail or fall back to default symbols.
-- __Version compatibility__: Styles created in one version of QGIS may not fully work or may degrade in another version
+- __Version compatibility__: Styles created in one version of QGIS may not fully work or may degrade in another version.
 - __Data compability:__ If you have set rules or classification based on a layer's attributes, the column names and attributes must be present in the dataset on the second computer. 
 :::
  

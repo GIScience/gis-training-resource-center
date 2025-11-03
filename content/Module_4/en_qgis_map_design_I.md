@@ -331,8 +331,7 @@ generate colour palettes for your use case.
 
 ### Colourblindness
 
-When choosing the colours, you have to keep in mind that colour gradients (especially 
-diverging Red-Green gradients) can be hard or impossible to distinguish for people with colour blindness.
+When choosing the colours, you have to keep in mind that colour gradients (especially diverging Red-Green gradients) can be hard or impossible to distinguish for people with colour blindness.
 
 ``` {figure} ../../fig/Colour_Blindness.png
 ---
@@ -344,11 +343,7 @@ Different Colour schemes for the Colour Vision Impaired (Source: Jenny, Bernhard
 
 ## Complex Maps
 
-The different symbolisation methods discussed in this chapter can be combined in 
-different ways to create sophisticated reports and maps. By combining several methods, 
-you can communicate different phenomena intuitively to the reader. A classical example 
-is a combination of a choropleth map (graduated colours) with a proportional circles map 
-(see {numref}`en_complex_map_lebanon`). 
+The different symbolisation methods discussed in this chapter can be combined in different ways to create sophisticated reports and maps. By combining several methods, you can communicate different phenomena intuitively to the reader. A classical example is a combination of a choropleth map (graduated colours) with a proportional circles map  (see {numref}`en_complex_map_lebanon`). 
 
 __Complex Map 1:__
 
@@ -367,8 +362,7 @@ __Complex Map 2:__
 name: en_complex_bivariate_map
 width: 550 px
 ---
-A complex map combining layer styling and different visual variables to 
-communicate a complex situation (Source: [SIMS](https://rcrcsims.org/portfolio/view/18)).
+A complex map combining layer styling and different visual variables to communicate a complex situation (Source: [SIMS](https://rcrcsims.org/portfolio/view/18)).
 ```
 
 __Complex Map 3:__

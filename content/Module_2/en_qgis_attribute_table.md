@@ -8,12 +8,7 @@
 
 # Attribute Table
 
-Each vector layer consists of geometric features (points, lines or polygons) and 
-an __attribute table__ ({numref}`en_vector_data_overview`). The attribute table contains information on each feature 
-in the layer. The information is stored in rows and columns in the attribute table. 
-Each __row__ in the table represents a __feature__, while __columns__ store 
-__attributes__ of that feature. You can use the attribute table to search, sort, 
-filter, edit and select data. 
+Each vector layer consists of geometric features (points, lines or polygons) and an __attribute table__ ({numref}`en_vector_data_overview`). The attribute table contains information on each feature in the layer. The information is stored in rows and columns in the attribute table. Each __row__ in the table represents a __feature__, while __columns__ store __attributes__ of that feature. You can use the attribute table to search, sort, filter, edit and select data. 
 
 
 ```{figure} /fig/en_vector_data_overview.png
@@ -28,16 +23,13 @@ Vector Data overview (Source: HeiGIT).
 :::{admonition} Now it's your turn!
 :class: note
 
-You can complement this chapter by doing the steps with a vector layer of your choice. When working with geodata, you 
-will always have to understand the information stored in the datasets, both the geometries as well as the attribute 
-data. 
+You can complement this chapter by doing the steps with a vector layer of your choice. When working with geodata, you will always have to understand the information stored in the datasets, both the geometries as well as the attribute data. 
 
 :::
 
 ## Opening the attribute table
 
-Having a look into the attribute table is essential to understand and get an overview of the 
-data you are working with. After downloading and importing a dataset into QGIS, you will most likely open the attribute table to understand the data and see what information is available. Understanding what kind of information is available is indispensable when working with GIS software.
+Having a look into the attribute table is essential to understand and get an overview of the data you are working with. After downloading and importing a dataset into QGIS, you will most likely open the attribute table to understand the data and see what information is available. Understanding what kind of information is available is indispensable when working with GIS software.
 
 You can open the attribute table in two ways:
 
@@ -64,8 +56,7 @@ Opening the attribute table via right-click in QGIS 3.36
 
 ```{note} 
 
-If you have multiple layers, only the attribute table of the layer currently 
-selected in the layer panel will open. 
+If you have multiple layers, only the attribute table of the layer currently selected in the layer panel will open. 
 
 ```
 
@@ -114,10 +105,7 @@ Opening the attribute table in QGIS 3.36
 
 ## Sort the attribute table
 
-You can sort data in the attribute table by clicking on a column header. Text data will 
-be sorted alphabetically and numeric data will be sorted by value. To reverse 
-the sort order, click the header again. A small arrow in the column header 
-indicates whether it is sorted in ascending or descending order. 
+You can sort data in the attribute table by clicking on a column header. Text data will be sorted alphabetically and numeric data will be sorted by value. To reverse the sort order, click the header again. A small arrow in the column header indicates whether it is sorted in ascending or descending order. 
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_show_attribute_table.mp4"></video>
 
@@ -161,8 +149,7 @@ You can zoom in on a specific feature if you need to locate it geographically or
 
 ## Manually select features in the attribute table
 
-To interact with features in a layer you have to select these features. One way 
-to select features is via the attribute table.
+To interact with features in a layer you have to select these features. One way to select features is via the attribute table.
 
 * __Select:__ Click on the lines of the features. 
 * __Multi Select:__ To select multiple features press `Ctrl` and select `features`.

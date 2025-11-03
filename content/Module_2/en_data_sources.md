@@ -222,20 +222,13 @@ on the wiki. There is an example of this in the Module 2 [OSM exercise](https://
 
 ### HOT Export Tool
 
-With the [Humanitarian OpenStreetMap Team (HOT) Export Tool](https://export.hotosm.org/v3/) 
-you can download customized extracts of up-to-date OSM data in different file 
-formats. It offers a browser-based tool to download OSM data with good options 
-to specify region, time, feature type and data format.
+With the [Humanitarian OpenStreetMap Team (HOT) Export Tool](https://export.hotosm.org/v3/) you can download customized extracts of up-to-date OSM data in different file formats. It offers a browser-based tool to download OSM data with good options to specify region, time, feature type and data format.
 
 1. Go to the HOT Export tool. To use the tool you need an OSM account. 
 
-   If you have an OSM account you can log in directly into the HOT Export tool by 
-   clicking on `Log in`.
-   
-   If you don’t have one, you'll need to create one: click on `Log in` and in the 
-   new window select the option to create a new account.
-2. After logging in, click the `Start Exporting` button on the homepage to load 
-   the Export Tool 
+   If you have an OSM account you can log in directly into the HOT Export tool by clicking on `Log in`.
+   If you don’t have one, you'll need to create one: click on `Log in` and in the new window select the option to create a new account.
+2. After logging in, click the `Start Exporting` button on the homepage to load the Export Tool 
 
 ```{figure} /fig/hot_export.png
 ---
@@ -248,9 +241,7 @@ The HOT Export Tool.
 
 4. First add a name and a brief description of your export. Then click on `Next`.
 5. Choose the file format fitting to your needs. It is recommended to use GeoPackage but Geojson or shapefile can be used as well. Click on `Next`.
-6. The easiest way to choose the feature type you want to download is using the 
-   tag tree. (The YAML option is more flexible but more advanced, so we will 
-   focus on the first option.)
+6. The easiest way to choose the feature type you want to download is using the tag tree. (The YAML option is more flexible but more advanced, so we will focus on the first option.)
 7. There are multiple ways to select your area of interest. 
    1. You can search for it in the search bar in the top right corner. 
    2. Zoom in the map to your area and click on `This view`.

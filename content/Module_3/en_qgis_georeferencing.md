@@ -9,14 +9,9 @@
 
 # Georeferencing 
 
-Georeferencing in QGIS is the process of aligning a raster image, such as a scanned map or aerial photograph, to a 
-known coordinate system so that it can be used in spatial analysis. This involves assigning real-world coordinates to 
-the image by identifying control points on the raster that correspond to known locations on the earth, often using 
-existing vector layers or coordinate grids as a reference.
+Georeferencing in QGIS is the process of aligning a raster image, such as a scanned map or aerial photograph, to a known coordinate system so that it can be used in spatial analysis. This involves assigning real-world coordinates to the image by identifying control points on the raster that correspond to known locations on the earth, often using existing vector layers or coordinate grids as a reference.
 
-In many cases, governmental institutions publish maps only as PDFs, without public access to the underlying data. In 
-these cases, knowing how to correctly georeference a map allows you to access and use the information in your GIS 
-analyses. In the case discussed in this chapter, the soil degradation map of Somalia is only available in a PDF report. In order to use the information in a GIS analysis, we can use the georeferencer to assign geographic coordinates to the pixels of the image. After georeferencing the image, the result is a raster file (`.tiff`). This dataset can be vectorized (converted into vector data) or joined with other raster data, to gain additional information.
+In many cases, governmental institutions publish maps only as PDFs, without public access to the underlying data. In these cases, knowing how to correctly georeference a map allows you to access and use the information in your GIS analyses. In the case discussed in this chapter, the soil degradation map of Somalia is only available in a PDF report. In order to use the information in a GIS analysis, we can use the georeferencer to assign geographic coordinates to the pixels of the image. After georeferencing the image, the result is a raster file (`.tiff`). This dataset can be vectorized (converted into vector data) or joined with other raster data, to gain additional information.
 
 ```{figure} /fig/example_georefencing_hague.png
 ---
@@ -42,9 +37,7 @@ name: en_georef_transformations
 Different transformation types: linear (left), polynomial 2nd degree (middle), polynomial 3rd degree (right) (Source: [ESRI](https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/overview-of-georeferencing.htm)).
 ```
 
-In most cases, you will use either linear, or polynomial (2nd or 3rd degree) transformations. There are many more 
-transformation types to be used in QGIS. Each works best for a specific use case. For an explanation of each 
-transformation type, check out the [QGIS Documentation](https://docs.qgis.org/3.34/en/docs/user_manual/working_with_raster/georeferencer.html)
+In most cases, you will use either linear, or polynomial (2nd or 3rd degree) transformations. There are many more transformation types to be used in QGIS. Each works best for a specific use case. For an explanation of each transformation type, check out the [QGIS Documentation](https://docs.qgis.org/3.34/en/docs/user_manual/working_with_raster/georeferencer.html).
 
 
 ### How to Georeference in QGIS
@@ -66,7 +59,7 @@ Ideally, use a basemap where you can identify exact locations on both the basema
 name: en_3.36_open_georefencer
 width: 500 px
 ---
-Opening the Georeferencer in QGIS 3.36
+Opening the Georeferencer in QGIS 3.36.
 ```
 
 4. A new window will open. This is the __georeferencer__. To add an image to georeference, click on ![](/fig/3.36_add_raster_georef.png) `Open Raster`.

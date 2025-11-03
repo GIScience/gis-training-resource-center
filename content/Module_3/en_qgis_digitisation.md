@@ -9,16 +9,12 @@
 
 # Digitisation
 
-Digitisation is the process of converting geographic data from maps or images into a digital form commonly 
-represented as vector data.
-Proficiency in digitisation stands as a cornerstone for GIS specialists. It empowers them to convert spatial 
-information into a digital format, facilitating more efficient data manipulation compared to traditional methods 
-of interpreting images or paper maps. 
+Digitisation is the process of converting geographic data from maps or images into a digital form commonly represented as vector data. Proficiency in digitisation stands as a cornerstone for GIS specialists. It empowers them to convert spatial information into a digital format, facilitating more efficient data manipulation compared to traditional methods of interpreting images or paper maps. 
 
 :::{admonition} Digitisation in humanitarian work
 :class: tip
 
-If you want to know how community mapping and digitisation can help improve the resilience of communities and facilitate humanitarian work, take a look at Paul Knight's blogpost [“This is the first time this community is on a map…” — Digital Community Mapping in Nigeria](https://medium.com/digital-and-innovation-at-british-red-cross/first-time-this-community-has-been-on-a-map-nigeria-f592906b7be1)
+If you want to know how community mapping and digitisation can help improve the resilience of communities and facilitate humanitarian work, take a look at Paul Knight's blogpost [“This is the first time this community is on a map…” — Digital Community Mapping in Nigeria](https://medium.com/digital-and-innovation-at-british-red-cross/first-time-this-community-has-been-on-a-map-nigeria-f592906b7be1).
 
 :::
 
@@ -33,32 +29,17 @@ The concept of digitisation within GIS (Source: HeiGIT).
 
 ##  Digitising in QGIS
 
-In QGIS,digitisation involves tracing features such as points, lines, or polygons directly on the map canvas to 
-represent geographic elements like buildings, roads, or land parcels. Additionally, you can assign attributes to each 
-feature during digitization, enabling further analysis and integration with other geospatial data. This digitized data 
-becomes a valuable asset for spatial analysis and mapping.
+In QGIS,digitisation involves tracing features such as points, lines, or polygons directly on the map canvas to represent geographic elements like buildings, roads, or land parcels. Additionally, you can assign attributes to each feature during digitization, enabling further analysis and integration with other geospatial data. This digitized data becomes a valuable asset for spatial analysis and mapping.
 
 :::{card}
 :class-card: sd-text-justify sd-text-black sd-rounded-3 sd-border-2
 __Real world Scenario 1/3__
 ^^^
-There has been a flood in a village following heavy rains.  
-To assess the needs of the household and the impact on the 
-infrastructure, you are tasked to make an overview map of the region and mark the flood impacted buildings and 
-roads. However, there are no datasets with the buildings or roads available. For the map, you will have to 
-create two new layers with the road network and the buildings. However, there is recent satellite imagery available. 
-With these images, you can create vector layers representing the key infrastructure, such as buildings and roads. 
-Once you have created the layers, you can create a preliminary overview map of the village. 
-This map will be given out to community members and volunteers on the ground to map out the damaged infrastructure.
-In a next step, the information collected by the ground team can be used to enrich the data and create a flood 
-impact assessment. 
-To create the map, you will need to create new vector layers. 
-
-<!--ADD PICTURES -->
+There has been a flood in a village following heavy rains. To assess the needs of the household and the impact on the infrastructure, you are tasked to make an overview map of the region and mark the flood impacted buildings and roads. However, there are no datasets with the buildings or roads available. For the map, you will have to create two new layers with the road network and the buildings. However, there is recent satellite imagery available. With these images, you can create vector layers representing the key infrastructure, such as buildings and roads. Once you have created the layers, you can create a preliminary overview map of the village. This map will be given out to community members and volunteers on the ground to map out the damaged infrastructure.In a next step, the information collected by the ground team can be used to enrich the data and create a flood impact assessment. To create the map, you will need to create new vector layers. 
 :::
 
 
-### Digitisation toolbars
+### Digitisation Toolbars
 
 ```{figure} /fig/Activate_digitizing_toolbox.png
 ---
@@ -84,10 +65,7 @@ First, you need to check if the `Digitizing Toolbox` is activated. To do that
 
 <br>  
 
-The digitisation toolbar offers the basic tools to create, save, and edit features. However, for everything that 
-goes above just creating new features and deleting features, the Advanced Digitization toolbar is needed (see {numref}`digitising_toolbar`). 
-The Advanced Digitization toolbar allows you to move features, delete parts of features, and much more. All 
-functions are listed in the two tables below.
+The digitisation toolbar offers the basic tools to create, save, and edit features. However, for everything that goes above just creating new features and deleting features, the Advanced Digitization toolbar is needed (see {numref}`digitising_toolbar`). The Advanced Digitization toolbar allows you to move features, delete parts of features, and much more. All functions are listed in the two tables below.
 
 ```{figure} /fig/Toolbox.png
 ---
@@ -95,13 +73,13 @@ width: 700 px
 name: digitising_toolbar
 align: center
 ---
-Digitizing Toolbar in QGIS 3.36
+Digitizing Toolbar in QGIS 3.36.
 ```
 
 :::{dropdown} Digitisation Toolbar
 | Tool | Purpose | Tool | Purpose |
 |---|---|-----|---|
-| ![](/fig/mActionAllEdits.png) | Access to save, rollback or cancel changes in all or selected layers simultaneously | ![](/fig/mActionToggleEditing.png) | Turn on or off edit status of selected layer(s) based on the active layer status |
+| ![](/fig/mActionAllEdits.png) | Access to save, rollback or cancel changes in all or selected layers simultaneously | ![](/fig/mActionToggleEditing.png) | Turn edit status of selected layer(s) on or off. |
 | ![](/fig/mActionSaveEdits.png) |Save edits   | |
 | ![](/fig/mActionDigitizeWithSegment.png) | Digitise using straight segments | ![](/fig/mActionDigitizeWithCurve.png) | Digitize using curve lines |
 | ![](/fig/mActionStreamingDigitize.png) | Enable freehand digitising|![](/fig/mActionDigitizeShape.png) |Digitise polygon of regular shape  |
@@ -138,17 +116,12 @@ For more complex digitisation procedures, you will use the advanced digitisation
 
 ## Creating new datasets
 
-To digitise new data, you always have to start with creating the dataset before filling it with digitised data. 
-Keep in mind that one layer can only contain one type of geometry: either points, lines, or polygons. When you 
-create a dataset, you will have to choose the type of geometry. Additionally, you can add further columns with 
-attributes to add more data to the data table. 
+To digitise new data, you always have to start with creating the dataset before filling it with digitised data. Keep in mind that one layer can only contain one type of geometry: either points, lines, or polygons. When you create a dataset, you will have to choose the type of geometry. Additionally, you can add further columns with attributes to add more data to the data table. 
 
 :::{admonition} Now it's your turn!
 :class: note
 
-Think of a spatial dataset you could need in your humanitarian operations. What kind of additional information is 
-useful? How would you collect it? This could range from type of road, crops planted, type of vegetation or social 
-indicators. You can discuss in groups and write it down on paper or add it to a digital whiteboard. 
+Think of a spatial dataset you could need in your humanitarian operations. What kind of additional information is useful? How would you collect it? This could range from type of road, crops planted, type of vegetation or social indicators. You can discuss in groups and write it down on paper or add it to a digital whiteboard. 
 
 :::
 
@@ -170,10 +143,6 @@ indicators. You can discuss in groups and write it down on paper or add it to a 
     * Click on ![](/fig/mActionNewAttribute.png) to add the new column to the `Fields List`.
 8. Click `OK` to create the new data
 
-<!---   ```{Note} 
-    The number of options depends on the data format the layer will have. GeoPackage, for example, offers far more options than the Shapefile format.
-    ```
-    -->
 
 ```{figure} /fig/New_GeoPackage_Layer.png
 ---
@@ -184,37 +153,26 @@ align: center
 The Layer Creation window in QGIS 3.36.
 ```
 
-<!--ADD: add an explanation of the Layer creation window?-->
 
 ```{attention} 
-An important concept to understand before starting to add data to datasets is, that, whenever you make changes 
-to a dataset other than styling, you have to put it in editing mode. This is done by selecting the layer and 
-clicking on ![](/fig/mActionToggleEditing.png) `Toggle Editing`. Now, the buttons for many functions of the 
-digitisation toolbar are clickable. 
-After you are done manipulating the layer click on ![](/fig/mActionSaveEdits.png) `Save Layer Edits` to save 
-your edits. 
+An important concept to understand before starting to add data to datasets is, that, whenever you make changes to a dataset other than styling, you have to put it in editing mode. This is done by selecting the layer and clicking on ![](/fig/mActionToggleEditing.png) `Toggle Editing`. Now, the buttons for many functions of the digitisation toolbar are clickable. After you are done manipulating the layer click on ![](/fig/mActionSaveEdits.png) `Save Layer Edits` to save your edits. 
 ```
 
-Once you have set up the new layer, you can start adding geometrical features. The process for the three geometric 
-types is basically the same: 
+Once you have set up the new layer, you can start adding geometrical features. The process for the three geometric types is basically the same: 
 
 ### Creating new data entries
 
 1. Select the layer you want to add data to in the Layer panel.
-2. Go to the digitisation toolbar and click on ![](/fig/mActionToggleEditing.png) `Toggle Editing`. Make sure 
- the layer is in the editing mode. If not, click on the ![](/fig/mActionToggleEditing.png) icon in the 
+2. Go to the digitisation toolbar and click on ![](/fig/mActionToggleEditing.png) `Toggle Editing`. Make sure the layer is in the editing mode. If not, click on the ![](/fig/mActionToggleEditing.png) icon in the 
 digitisation toolbar. 
 
 ### Creating point data
 
 1.	Select the point layer you want to add data to in the Layer panel.
-2.	Go to the digitisation toolbar and click on ![](/fig/mActionToggleEditing.png) `Toggle Editing`. Make sure 
-the layer is in the editing mode. If not, click on the ![](/fig/mActionToggleEditing.png) icon in the 
-digitisation toolbar. 
+2.	Go to the digitisation toolbar and click on ![](/fig/mActionToggleEditing.png) `Toggle Editing`. Make sure the layer is in the editing mode. If not, click on the ![](/fig/mActionToggleEditing.png) icon in the digitisation toolbar. 
 3.	Click on ![](/fig/mActionCapturePoint.png). 
 4.	Left-click on the feature you want to digitise.
-5.	Once you click, a window will appear `[Your Layer Name]- Feature Attribute`. Here you can add the 
-information about this feature to the different columns, based on the attribute table of the layer.
+5.	Once you click, a window will appear `[Your Layer Name]- Feature Attribute`. Here you can add the information about this feature to the different columns, based on the attribute table of the layer.
 5.	Once you are done with digitisation ![](/fig/mActionSaveEdits.png) to save your edits.
 6.	Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
 
@@ -282,10 +240,7 @@ Try digitising the RCRC branches in your country by following the steps below.
 
 ### Creating line and polygon layers
 
-The process of creating line or polygon layers is essentially the same as creating point data. The main difference is 
-that instead of only adding one point, line and polygon geometries require several points (vertices). Each point you 
-add is a vertex between two lines. In QGIS, you create lines and polygons by setting one point, and then another point 
-connected to the previously added point. To finish adding the feature use the <kbd>Right mouse button</kbd>. 
+The process of creating line or polygon layers is essentially the same as creating point data. The main difference is that instead of only adding one point, line and polygon geometries require several points (vertices). Each point you add is a vertex between two lines. In QGIS, you create lines and polygons by setting one point, and then another point connected to the previously added point. To finish adding the feature use the <kbd>Right mouse button</kbd>. 
 
 ```{attention} 
 Remember to change the geometry type into lines if you want to create a new line layer.
@@ -295,19 +250,14 @@ Remember to change the geometry type into lines if you want to create a new line
 
 :::{tab-item} Creating line data
 
-Creating line data works in the same way as creating point data (see above). First, you must create a new line 
-layer or use an existing one. 
+Creating line data works in the same way as creating point data (see above). First, you must create a new line layer or use an existing one. 
 
 1.	Select the line layer you want to add data to in the Layer panel
-2.	Go to the digitisation toolbar and click on![](/fig/mActionToggleEditing.png). Now, the layer is in the 
-editing mode.
+2.	Go to the digitisation toolbar and click on![](/fig/mActionToggleEditing.png). Now, the layer is in the editing mode.
 3.	Click on ![](/fig/mActionCaptureLine.png). 
-4.	To digitise line features, click along the line. When you are done, right-click on the last point of the 
-line to finish the feature.
-5.	A window will appear `[Your Layer Name]- Feature Attribute`. Here you can add the information about this 
-feature to the different columns, based on the attribute table of the layer.
-6.	Once you are done with digitisation, click on ![](/fig/mActionSaveEdits.png) `Save Layer Edits` to save your 
-edits.
+4.	To digitise line features, click along the line. When you are done, right-click on the last point of the line to finish the feature.
+5.	A window will appear `[Your Layer Name]- Feature Attribute`. Here you can add the information about this feature to the different columns, based on the attribute table of the layer.
+6.	Once you are done with digitisation, click on ![](/fig/mActionSaveEdits.png) `Save Layer Edits` to save your edits.
 7.	Click on ![](/fig/mActionToggleEditing.png) `Toggle Editing` again to end the editing mode.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_line_feature.mp4"></video>
@@ -337,21 +287,13 @@ The creation of polygon layers works in the same way as for point and line data.
 __Real World Scenario 2/3__
 ^^^
 
-The first thing you do is locate the village using GPS-coordinates that you enter in the bottom right corner of 
-the QGIS window. 
-Thankfully, the process of digitising is relatively easy since there is a recent satellite image provided by 
-Microsoft Bing. You can load the satellite image using the __QuickMapServices__ and searching and adding the 
-`Bing Aerial` Basemap. 
-You can see the buildings and roads on the satellite image. The next step will be to create new layers: one for 
-the roads and one for the buildings.
+The first thing you do is locate the village using GPS-coordinates that you enter in the bottom right corner of the QGIS window. Thankfully, the process of digitising is relatively easy since there is a recent satellite image provided by Microsoft Bing. You can load the satellite image using the __QuickMapServices__ and searching and adding the `Bing Aerial` Basemap. You can see the buildings and roads on the satellite image. The next step will be to create new layers: one for the roads and one for the buildings.
 
 :::
 
 ## Editing the Data
 
-In some cases, you might want to modify or correct vector data because of inaccuracies or changes. Editing 
-vector data is done with the digitisation toolbar. In QGIS, you can edit both the geometries and the values in the 
-attribute table. 
+In some cases, you might want to modify or correct vector data because of inaccuracies or changes. Editing vector data is done with the digitisation toolbar. In QGIS, you can edit both the geometries and the values in the attribute table. 
 
 ### Editing Geometries
 
@@ -389,8 +331,7 @@ Keep in mind that once you save the changes ![](/fig/mActionSaveEdits.png), you 
 
 :::{tab-item} Moving features
 
-There are multiple methods to move features. Here we show the method that works the same for point, line, and polygon features.
-To do this, you need the Advanced Digitisation Toolbox.
+There are multiple methods to move features. Here we show the method that works the same for point, line, and polygon features. To do this, you need the Advanced Digitisation Toolbox.
 
 1.	Select the line layer you want to add data to in the Layer panel.
 2.	Go to the digitisation toolbar and click on![](/fig/mActionToggleEditing.png). 
@@ -407,8 +348,7 @@ To do this, you need the Advanced Digitisation Toolbox.
 1.	Select the line layer you want to add data to in the Layer panel.
 2.	Navigate to the digitisation toolbar and click on![](/fig/mActionToggleEditing.png). 
 3.	Click on ![](/fig/mActionVertexToolActiveLayer.png).
-4.	Now you can now move every vertex (corner) of a feature. Click on the vertex/corner you want to move and 
-then click on the location where you want to move the vertex to.
+4.	Now you can now move every vertex (corner) of a feature. Click on the vertex/corner you want to move and then click on the location where you want to move the vertex to.
 5.	Once you are done with editing click on ![](/fig/mActionSaveEdits.png) to save your edits.
 6.	Click on ![](/fig/mActionToggleEditing.png) again to end the editing mode.
 
@@ -418,8 +358,7 @@ then click on the location where you want to move the vertex to.
 
 :::{tab-item} Adding rings to polygon features
 
-A ring in QGIS is a part inside a polygon that is not part of the polygon. Image a polygon representing a lake. 
-The ring is an island in the lake. For a better understanding, watch the video below.
+A ring in QGIS is a part inside a polygon that is not part of the polygon. Image a polygon representing a lake. The ring is an island in the lake. For a better understanding, watch the video below.
 
 1.	Select the line layer you want to add data to in the Layer panel.
 2.	Go to the digitisation toolbar and click on![](/fig/mActionToggleEditing.png). 
@@ -453,21 +392,14 @@ You can open the attribute table of the selected layer by pressing <kbd>F6</kbd>
 5. Click on ![](/fig/mActionSaveEdits.png) to save your edits.
 6. Click on ![](/fig/mActionToggleEditing.png) again to exit the editing mode. 
 
-This process is called __"Data cleaning"__ and is important when performing data analysis or manipulating data 
-in any way. While collecting or digitising data, it is easy to make small mistakes, such as a wrong value, wrong 
-value type, or a spelling mistake. When performing analyses, it is therefore important to investigate the 
-attribute table for inconsistencies or errors. If these errors are not cleaned, the results will be incorrect 
-and you might draw the wrong conclusions!
+This process is called __"Data cleaning"__ and is important when performing data analysis or manipulating data in any way. While collecting or digitising data, it is easy to make small mistakes, such as a wrong value, wrong value type, or a spelling mistake. When performing analyses, it is therefore important to investigate the attribute table for inconsistencies or errors. If these errors are not cleaned, the results will be incorrect and you might draw the wrong conclusions!
 
 :::{card}
 :class-card: sd-text-justify sd-text-black sd-rounded-3 sd-border-2
 __Real world Scenario 3/3__
 ^^^
 
-With the new layers, you are ready to trace the buildings and roads in the new layers. 
-You already have some knowledge about the condition of the roads (e.g., the road surface, quality, and if it is 
-flooded) and the condition of the houses (e.g., if it is affected by a flood, if it has multiple stories, ...). 
-This is useful information that can be stored in the additional attributes in the data table. 
+With the new layers, you are ready to trace the buildings and roads in the new layers. You already have some knowledge about the condition of the roads (e.g., the road surface, quality, and if it is flooded) and the condition of the houses (e.g., if it is affected by a flood, if it has multiple stories, ...). This is useful information that can be stored in the additional attributes in the data table. 
 
 ```{figure} /fig/Building_damage_assessement_bangladesh.png
 ---
@@ -481,12 +413,7 @@ Building Damage Assessment in Paikgachha Upazila, Khulna District, Khulna Divisi
 
 ## Spatial Digitisation Errors in QGIS
 
-The accuracy of geodata is crucial for spatial analysis. Positional errors are inevitable when data are manually 
-digitised. The most common examples include undershooting and overshooting.  When your coordinates do not 
-connect as they should, and overshooting, when the lines go past where they should. Often these errors are not 
-visible unless you zoom in quite a bit on the coordinates. Setting a fuzzy tolerance (snapping tolerance) is 
-used to reduce undershoots and overshoots. The snapping tolerance is the minimum tolerated distance between 
-nodes, lines and/or vertices.
+The accuracy of geodata is crucial for spatial analysis. Positional errors are inevitable when data are manually digitised. The most common examples include undershooting and overshooting.  When your coordinates do not connect as they should, and overshooting, when the lines go past where they should. Often these errors are not visible unless you zoom in quite a bit on the coordinates. Setting a fuzzy tolerance (snapping tolerance) is used to reduce undershoots and overshoots. The snapping tolerance is the minimum tolerated distance between nodes, lines and/or vertices.
 
 ```{figure} /fig/Digitization_Errors.PNG
 ---

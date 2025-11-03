@@ -12,7 +12,7 @@
 ---
 name: en_30.30.2_understanding_the_print_layout_composer
 ---
-The interface of the Print Layout Composer
+The interface of the Print Layout Composer.
 ```
 
 1. __Layout Settings__ (Add pages, Export Map, manage panels)
@@ -26,16 +26,16 @@ The print layout manager also works with toolbars (on the left side of the scree
 
 First of all, you should always set the size of your map:
 
-- Right-click on the blank map > `Page Properties`
+- Right-click on the blank map > `Page Properties`.
 - Choose __the size of your document__ (A4, A3, A2). A4 and A3 are the most commonly used sizes for maps.
 - Choose the orientation (Landscape or Portrait).
 
 ## Adding Elements to the Print Layout
 
-### Adding a new map
+### Adding a New Map
 
 - Add a new map by clicking on the ![](/fig/30.30.2_print_layout_insert_map_icon.png) `Add map`-button on the __toolbar on the left__ and drag a rectangle on the map canvas.  
-- To move the map on the canvas, simply __select the map__ and __drag__ it with your mouse
+- To move the map on the canvas, simply __select the map__ and __drag__ it with your mouse.
 - To move within a map select ![](/fig/30.30.2_print_layout_move_content_icon.png) `Move item content`-button on the left toolbar.
 - To zoom in on the map, while using the ![](/fig/30.30.2_print_layout_move_content_icon.png) `Move item content` tool, you can __Press CTRL + scroll the mouse wheel__ (gently) or enter the scale manually in the item properties.
 
@@ -44,7 +44,7 @@ First of all, you should always set the size of your map:
 width: 750px
 name: en_30.30.2_adding_a_map
 ---
-Adding a new map to the Print Layout (Source: CartONG)
+Adding a new map to the Print Layout (Source: CartONG).
 ```
 
 ::::{tab-set}
@@ -61,7 +61,7 @@ Adding a new map to the Print Layout (Source: CartONG)
 :::
 ::::
 
-### Adding a title or a text box
+### Adding a Title or a Text Box
 
 A title should describe the phenomenon represented on the map.
 
@@ -82,7 +82,7 @@ Adding text to the print layout (Source: CartONG).
 
 :::
 
-### Adding an image or logo
+### Adding an Image or Logo
 
 If you are working for an organisation, most likely you will add the logo of that organization on the maps you produce.
 
@@ -104,11 +104,11 @@ Adding an image or logo to the print layout.
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_raster_image.mp4"></video>
 :::
 
-### Adding a legend
+### Adding a Legend
 
 Before adding a legend, make sure that:
 
-- All your layers have an explicit name ("rivers", "primary roads",...)
+- All your layers have an explicit name ("rivers", "primary roads",...).
 - You use the final version of your map (no more layers to add, move, rename or modify). You can still modify them later but you will have to redo the legend.
 
 To add a legend, you can use the ![](../../fig/30.30.2_print_layout_add_legend.png) `Add legend`-button on the __left toolbar__.
@@ -118,7 +118,7 @@ To add a legend, you can use the ![](../../fig/30.30.2_print_layout_add_legend.p
 width: 750px
 name: en_30.30.2_print_layout_add_legend
 ---
-Adding a legend to the print layout
+Adding a legend to the print layout.
 ```
 
 In the __Item Properties__ panel, if you keep the __`Auto update`__ option checked, new layers added to your project will automatically be added to the legend but you cannot control them individually (rename if necessary, reorder or remove items).  
@@ -152,25 +152,25 @@ Sometimes the space on your map is not suited for a single vertical legend. In t
 
 ::::
 
-### Adding a scale bar
+### Adding a Scale Bar
 
-Before adding a scale bar, select your main map and check in the __Item Properties__ panel that the `Scale` field has a __round number__ 
+Before adding a scale bar, select your main map and check in the __Item Properties__ panel that the `Scale` field has a __round number__ .
 
 ```{figure} ../../fig/en_30.30.2_print_layout_scale.png
 ---
 width: 750px
 name: en_30.30.2_print_layout_scale
 ---
-Make sure that the scale is at a round number
+Make sure that the scale is at a round number.
 ```
 
-To add a scale bar, you can use the ![](../../fig/30.30.2_print_layout_scale_bar.png)`Add scale bar`-button on the __left toolbar__. In the __Item Properties__ panel, customize the following functions
+To add a scale bar, you can use the ![](../../fig/30.30.2_print_layout_scale_bar.png)`Add scale bar`-button on the __left toolbar__. In the __Item Properties__ panel, customize the following functions.
 
-- Which Map __is related to the scale__
-- __Unit system of the bar__ (metres, miles, degrees)
+- Which Map __is related to the scale__.
+- __Unit system of the bar__ (metres, miles, degrees).
 - __Segments on the left__: segments shown before 0 m (always set to 0). 
 - __Fixed width__: define the width of each segment (e.g. 1 km, 10 km, 50 km, ...). 
-- __Height__: height (thickness) of the scale bar
+- __Height__: height (thickness) of the scale bar.
 
 There are many other options to customize the scale bar (change the font, colours, etc.).
 
@@ -179,24 +179,24 @@ There are many other options to customize the scale bar (change the font, colour
 width: 750px
 name: en_30.30.2_print_layout_add_scale_bar
 ---
-Add and customise the scale bar
+Adding and customising the scale bar.
 ```
 :::{dropdown}
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_print_layout_adding_scalebar.mp4"></video>
 :::
 
-### Adding an overview map
+### Adding an Overview Map
 
 Adding an overview map in the corner of your map will help locate the area you are viewing on the main map.
 
 To create an overview map, you need to follow these steps:
 
-1. Make sure that you __lock the layers and layer styling__ for your main map
-    - Navigate to the __item properties__ panel > 
+1. Make sure that you __lock the layers and layer styling__ for your main map.
+    - Navigate to the __item properties__ panel > `Lock layers` and `Lock styles for layers`.
 2. Prepare a __layer with national or subnational borders or important landmarks__ in your project (e.g: Administrative boundaries, Capitals). These should not be the same layers as your main map. If necessary, you can duplicate layers you wish to use on the overview map (such as administrative boundaries). Do not change the layers of your main map, if you intend to change the symbology later on.
-3. __Insert the overview map__ into your print layout, by using the ![](../../fig/30.30.2_print_layout_insert_map_icon.png)`Add Map` tool (in the bottom right corner, for example)
-4. __Lock the new map__ in the Item properties panel
-5. Add a rectangle to display the extent of your main map
+3. __Insert the overview map__ into your print layout, by using the ![](../../fig/30.30.2_print_layout_insert_map_icon.png)`Add Map` tool (in the bottom right corner, for example).
+4. __Lock the new map__ in the Item properties panel.
+5. Add a rectangle to display the extent of your main map.
     1. Go to the __properties__ of your Main map > scroll down until you see __"Overviews"__.
     2. Add an Overview by clicking on the `+`-button.
     3. __Link the main map__ by selecting it in the `Map frame` option.
@@ -214,7 +214,7 @@ An overview map should show important landmarks and borders so the reader is abl
 width: 750px
 name: en_30.30.2_print_layout_add_overview_map
 ---
-Add an overview map and __lock the layer__
+Add an overview map and __lock the layer__.
 ```
 
 
@@ -269,9 +269,9 @@ The individual layers, maps and images are not saved in the template. However, i
 
 You can drag and drop template-files (`.qpt`, QGIS template file) into QGIS or use the __Layout manager__.
 
-1. Open the Layout manager under `Layout` > `Layout Manager`
-2. Navigate to the section "__New from Template__"
-3. Choose `Specific` and select the location where you saved your template
+1. Open the Layout manager under `Layout` > `Layout Manager`.
+2. Navigate to the section "__New from Template__".
+3. Choose `Specific` and select the location where you saved your template.
 4. Click open.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_opening_template
@@ -296,7 +296,7 @@ If you save templates here, you can load templates directly through the layout m
 You can also add file paths in the QGIS template settings.
 ```
 
-## The Atlas function (automatic map generation)
+## The Atlas Function (Automatic Map Generation)
 
 In some cases, it can be necessary to create multiple maps for different locations with the same layers. For example, if you have a detailed dataset on affected flood areas in Nigeria, you can create a more detailed map for each subnational district. In QGIS, this can be done automatically with the __Atlas Function__.
 
@@ -307,7 +307,7 @@ The Atlas Function can be found in the __Print Layout Composer__ on the toolbar.
 name: en_atlas_toolbar
 width: 500 px
 ---
-The atlas toolbar
+The atlas toolbar.
 ```
 
 ```{note}

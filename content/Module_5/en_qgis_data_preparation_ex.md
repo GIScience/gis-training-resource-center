@@ -110,11 +110,11 @@ Tabula is an open source application that let's you extract data tables from PDF
 name: en_tabula_website
 width: 550 px
 ---
-The Tabula.technology website with the download links to the left
+The Tabula.technology website with the download links to the left.
 ```
 
 2. Unzip the downloaded file into a location of your choosing (e.g., Programs, Desktop, ...).
-3. Open the folder where you unzipped the file and open the "Tabula" application
+3. Open the folder where you unzipped the file and open the "Tabula" application.
 
 ```{figure} /fig/en_tabula_folder.png
 ---
@@ -147,7 +147,7 @@ width: 550 px
 
 ```
 
-6. Here we will select the portion of the PDF that contains the data table. Tabula expects a table with one row of headers at the top for each column, followed by the rows with the data. By dragging a rectangle on the PDF, we can create a selection where tabula should look for the data table. Drag a rectangle and adjust the boarders so the table fits as precisely as possible into selection. Make sure to only capture the relevant information. Since the headers in this table has an unconventional formatting, it should be left out so the resulting csv table is easier to adjust. We will add the headers manually once extracted. F
+6. Here we will select the portion of the PDF that contains the data table. Tabula expects a table with one row of headers at the top for each column, followed by the rows with the data. By dragging a rectangle on the PDF, we can create a selection where tabula should look for the data table. Drag a rectangle and adjust the boarders so the table fits as precisely as possible into selection. Make sure to only capture the relevant information. Since the headers in this table has an unconventional formatting, it should be left out so the resulting csv table is easier to adjust. We will add the headers manually once extracted.
 
 ```{figure} /fig/en_tabula_selection.png
 ---
@@ -218,7 +218,7 @@ In the web version of excel, you can fix the columns by selecting column A, navi
 name: en_m5_data_cleaning_ex_task2
 width: 450 px
 ---
-The data table should now look like this. It is still missing column headers (red)
+The data table should now look like this. It is still missing column headers (red).
 ```
 
 3. We have to add the column names back, as we did not extract them with tabular. <kbd>Right-click</kbd> on the first row and select `Insert 1 Row Above`. A new row should appear.
@@ -341,57 +341,3 @@ width: 600 px
 ---
 The darker the colour, the higher the percentage of buildings having burnt bricks or blocks as wall type. The grey areas are the districts where we there is no data available.
 ```
-
-<!---
-### Workflow 2: Microsoft Excel and Power Query
-
-#### Task 1: Get the data from the PDF file into Excel
-
-:::{Topic} Context
-The data on the wall materials has been published by the [STATISTICAL BUREAU PAKISTAN] as a table in a pdf-file. The table in the pdf-file cannot be imported into QGIS as is, but needs to be converted into a `.csv`-file beforehand. 
-We can extract the table from the PDF-file using the Microsoft Excel, and then save it as a `.csv`-file. 
-:::
-
-:::{note}
-Before starting manipulating the data, make yourself familiar with the PDF-file. Open it and look at how the data is presented. How are the columns & rows organised? What kind of measurements units have been used? On how many pages is the data distributed? 
-:::
-
-
-
-1. Open Microsoft Excel and open a new workbook.
-2. In the navigation bar, navigate to `Data` and click on the tool `Get Data` > `From file` > `From PDF`. 
-3. A new window will open. Select the file from your download folder and click `Open`.
-4. Another window called "Navigator" will open. Here you can select the page from which excel will extract the data.
-5. Check the box `Select Multiple Items` and select the tables  __Select Page 1__ and click `Load`. 
-5. The data will be loaded onto a new Excel-sheet. 
-
-    :::{note}
-    You will notice that the table is not formatted correctly. This has to be fixed manually.
-    >Insert Image
-    :::
-
-6. Give the columns the correct names, as they are presented in the PDF file (Province & District, Burnt Bricks/Blocks, Mud Bricks/Mud, Wood, Other, Total) on __each page__.
-7. Delete the first two rows so the table starts with the provinces and the percentage values.
-
-
-
-
-11. Save the file as a "Comma delimited text"-file (`.csv`). Click `Yes`.
-
-Congratulations, the data from the PDF has been extracted and saved to a usable `.csv`-file!
-
-#### Task 2: Prepare and clean the data for import into QGIS
-
-:::{topic} Context
-The data has been extracted from the PDF-file, but cannot be used for an attribute join in QGIS yet. First, we need to make sure that the attribute values are formatted correctly and correspond to the attribute values of the identifying key in the vector layer.
-:::
-
-:::{caution}
-The key identifiers need to __match exactly__. Otherwise, QGIS will not be able to join two layers. We need to prepare the files so the attributes will match.
-:::
-
-
-12. Delete each row with the value "Urban" and "Rural" in the column "Province & District". Check for district names where the "Urban" or "Rural" has been added at the end.
->Image
-9. 
--->

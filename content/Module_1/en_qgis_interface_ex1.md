@@ -43,11 +43,7 @@ Standard folder structure. Source: HeiGIT
 
 ## Tasks
 
-1. Create a new project. When opening QGIS, you will be greeted by 
-the start layout, which shows the QGIS interface with no project loaded. On the 
-left will be a panel with recent projects (this will probably be empty). To the 
-right will be a news panel, showing posts from the QGIS blog, and beneath this 
-is a `Project Templates` panel. 
+1. Create a new project. When opening QGIS, you will be greeted by the start layout, which shows the QGIS interface with no project loaded. On the left will be a panel with recent projects (this will probably be empty). To the right will be a news panel, showing posts from the QGIS blog, and beneath this is a `Project Templates` panel. 
 
 ```{figure} /fig/en_project_template_BRC.png
 ---
