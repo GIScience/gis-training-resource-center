@@ -578,7 +578,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#styling-administrative-boundaries-polygons">4.2.2.1. Styling administrative boundaries (Polygons)</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#only-display-the-outlines-of-polygons">4.2.2.1.1. Only display the outlines of polygons</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adjusting-the-styles-of-multiple-overlaying-layers">4.2.2.1.2. Adjusting the styles of multiple overlaying layers</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-choropleth-map">4.2.2.1.3. Creating a choropleth map</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-choropleth-map-gradudated-styling">4.2.2.1.3. Creating a Choropleth Map (“Gradudated Styling)</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-graduated-symbols-map">4.2.2.1.4. Creating a graduated symbols map</a></li>
 </ul>
 </li>
@@ -620,8 +620,7 @@ document.write(`
 </div>
 <section class="tex2jax_ignore mathjax_ignore" id="styling-vector-data">
 <h1><span class="section-number">4.2. </span>Styling Vector Data<a class="headerlink" href="#styling-vector-data" title="Permalink to this heading">#</a></h1>
-<p>The previous chapter went over the fundamentals of graphical symbolisation and the visual variables. In this chapter, we
-want to apply our understanding of visual representation and learn how to use the styling panel in QGIS to customize</p>
+<p>The previous chapter went over the fundamentals of graphical symbolisation and the visual variables. In this chapter, we want to apply our understanding of visual representation and learn how to use the styling panel in QGIS to customize how the layers in your QGIS project are visualised.</p>
 <section id="styling-panel">
 <h2><span class="section-number">4.2.1. </span>Styling Panel<a class="headerlink" href="#styling-panel" title="Permalink to this heading">#</a></h2>
 <figure class="align-left" id="en-30-30-2-styling-panel">
@@ -662,8 +661,7 @@ lines, or polygons. There are different options to symbolize these different typ
 <p class="admonition-title">Note</p>
 <p>Remember that <strong>the layer’s symbology is saved within your project file, not within your shapefile!</strong> If you share a shapefile with a colleague, it will have a different style when they add it to their own project.</p>
 </div>
-<p>In the symbology tab of the layer styling panel, you can set the</p>
-<p>Simple Markers are generally used to create the symbols for most elements on a map. For example, simple markers are
+<p>QGIS let’s you visualise data using simple markers, SVG-files or Raster-files. Most commonly, you will work with simple markers. These are generally used to create the symbols for most elements on a map. For example, simple markers are
 used to visualise streets, building outlines, waterbodies, administrative boundaries or other polygons.
 Most simple markers consist of a <strong>fill</strong> and an <strong>outline</strong>. Depending on the type of geometry in the layer, you will have to use have different symbology options.</p>
 <ul class="simple">
@@ -701,7 +699,7 @@ Categorized</label><div class="sd-tab-content docutils">
 Graduated</label><div class="sd-tab-content docutils">
 <ul class="simple">
 <li><p>Creates classes for numerical data.</p></li>
-<li><p>A colour gradient can be selected to represent the distribution of the data</p></li>
+<li><p>A colour gradient can be selected to represent the distribution of the data.</p></li>
 </ul>
 <p><strong>For example</strong>, create 6 classes of population sizes and assign a color gradient from white to red to indicate the population size in a district (see <a class="reference internal" href="../Module_3/en_qgis_data_classification.html"><span class="doc std std-doc">Module 3: Geodata Classifification</span></a>).</p>
 </div>
@@ -731,9 +729,9 @@ Rule-based</label><div class="sd-tab-content docutils">
 <p>To change the symbology of a single layer:</p>
 <ol class="arabic simple">
 <li><p>Open the <code class="docutils literal notranslate"><span class="pre">Styling</span> <span class="pre">panel</span></code> and navigate to the symbology tab. By default, the symbology will be set to <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">Symbol</span></code>. This means that the same colours and contours will be applied to all the features in that layer.</p></li>
-<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">Fill</span></code></p></li>
-<li><p>Click on the arrow to the right of <code class="docutils literal notranslate"><span class="pre">Fill</span> <span class="pre">Colour</span></code></p></li>
-<li><p>Check the <code class="docutils literal notranslate"><span class="pre">Transparent</span> <span class="pre">Fill</span></code> option</p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">Fill</span></code>.</p></li>
+<li><p>Click on the arrow to the right of <code class="docutils literal notranslate"><span class="pre">Fill</span> <span class="pre">Colour</span></code>.</p></li>
+<li><p>Check the <code class="docutils literal notranslate"><span class="pre">Transparent</span> <span class="pre">Fill</span></code> option.</p></li>
 </ol>
 <figure class="align-default" id="en-30-30-2-vector-layer-styling-transparent">
 <a class="reference internal image-reference" href="../../_images/en_30.30.2_vector_layer_styling_transparent.png"><img alt="../../_images/en_30.30.2_vector_layer_styling_transparent.png" src="../../_images/en_30.30.2_vector_layer_styling_transparent.png" style="width: 500px;" /></a>
@@ -770,14 +768,14 @@ Video: Making the fill colour transparent<div class="sd-summary-down docutils">
 <li><p><strong>Repeat the same process</strong> for the Adm1 layer, using the same colour as for Adm0 (it will be in “Recent colors) and leave the stroke width at 0.26.</p></li>
 <li><p>Now we can see the boundaries of the country and its states, and behind that we can see the districts (Adm2).</p></li>
 <li><p>Let’s make the district layer’s style consistent with the others.</p></li>
-<li><p>Choose a <code class="docutils literal notranslate"><span class="pre">Fill</span> <span class="pre">Color</span></code></p></li>
-<li><p>Use the same Stroke Colour` as for Adm0 and Adm1, but make the width 0.1 Millimeters and the Stroke Style a <strong>Dash Line</strong></p></li>
+<li><p>Choose a <code class="docutils literal notranslate"><span class="pre">Fill</span> <span class="pre">Color</span></code>.</p></li>
+<li><p>Use the same Stroke Colour` as for Adm0 and Adm1, but make the width 0.1 Millimeters and the Stroke Style a <strong>Dash Line</strong>.</p></li>
 <li><p>Click OK and look at your map: hopefully it’s starting to look nicer!</p></li>
 </ol>
 <figure class="align-default" id="en-30-30-2-changing-layer-style-3">
 <a class="reference internal image-reference" href="../../_images/en_30.30.2_changing_layer_style_3.png"><img alt="../../_images/en_30.30.2_changing_layer_style_3.png" src="../../_images/en_30.30.2_changing_layer_style_3.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.22 </span><span class="caption-text">The styling of a vector data consists of the colour and the outline</span><a class="headerlink" href="#en-30-30-2-changing-layer-style-3" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.22 </span><span class="caption-text">The styling of a vector data consists of the colour and the outline.</span><a class="headerlink" href="#en-30-30-2-changing-layer-style-3" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -791,18 +789,17 @@ Video: Adjusting the style for multiple layers<div class="sd-summary-down docuti
 .mp4"></video></p>
 </div>
 </details></section>
-<section id="creating-a-choropleth-map">
-<h4><span class="section-number">4.2.2.1.3. </span>Creating a choropleth map<a class="headerlink" href="#creating-a-choropleth-map" title="Permalink to this heading">#</a></h4>
-<p>Style data based on variable ranges (”<strong>Graduated</strong>” styling)</p>
+<section id="creating-a-choropleth-map-gradudated-styling">
+<h4><span class="section-number">4.2.2.1.3. </span>Creating a Choropleth Map (“Gradudated Styling)<a class="headerlink" href="#creating-a-choropleth-map-gradudated-styling" title="Permalink to this heading">#</a></h4>
 <p>If a layer contains numeric values that are continuous, they can be organized in intervals. These intervals can be
 displayed in graduated colours. In this exercise, we assign colours to Adm1 polygons based on the total population of
 each State.</p>
 <ol class="arabic simple">
-<li><p>Download the <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/follow_along/NGA_adm1_pop.zip">NGA_Adm1_Pop shapefile</a> and save it in your shapefile folder</p></li>
-<li><p>In QGIS, turn off the Adm1 and Adm2 layer, leaving only Adm0</p></li>
-<li><p>Drag the shapefile NGA_Adm1_Pop into your map</p></li>
-<li><p>Open its <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> options and choose <code class="docutils literal notranslate"><span class="pre">Graduated</span></code></p></li>
-<li><p><strong>Select the value you want to use to assign colours</strong>, in this case, it will be <code class="docutils literal notranslate"><span class="pre">total_pop</span></code></p></li>
+<li><p>Download the <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/follow_along/NGA_adm1_pop.zip">NGA_Adm1_Pop shapefile</a> and save it in your shapefile folder.</p></li>
+<li><p>In QGIS, turn off the Adm1 and Adm2 layer, leaving only Adm0.</p></li>
+<li><p>Drag the shapefile NGA_Adm1_Pop into your map.</p></li>
+<li><p>Open its <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> options and choose <code class="docutils literal notranslate"><span class="pre">Graduated</span></code>.</p></li>
+<li><p><strong>Select the value you want to use to assign colours</strong>, in this case, it will be <code class="docutils literal notranslate"><span class="pre">total_pop</span></code>.</p></li>
 </ol>
 <figure class="align-default" id="en-30-30-2-symbology-variable-ranges">
 <a class="reference internal image-reference" href="../../_images/en_30.30.2_symbology_variable_ranges.png"><img alt="../../_images/en_30.30.2_symbology_variable_ranges.png" src="../../_images/en_30.30.2_symbology_variable_ranges.png" style="width: 550px;" /></a>
@@ -811,23 +808,23 @@ each State.</p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="6">
-<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Classify</span></code> to <strong>list all values divided in classes</strong></p></li>
-<li><p>Choose <strong>how many classes</strong> you want the data to be divided into ‒ let’s say 4</p></li>
-<li><p>By default, the colour ramp will be red. However, red is not the right colour to use for population count, as it is generally used to communicate negative elements, such as food insecurity or cholera cases</p></li>
-<li><p>Click on <strong>the arrow next to the colour ramp</strong> to choose another combination of colours - let’s say a color ramp from white to blue</p></li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> to preview the look of your layer, then <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Classify</span></code> to <strong>list all values divided in classes</strong>.</p></li>
+<li><p>Choose <strong>how many classes</strong> you want the data to be divided into ‒ let’s say 4.</p></li>
+<li><p>By default, the colour ramp will be red. However, red is not the right colour to use for population count, as it is generally used to communicate negative elements, such as food insecurity or cholera cases.</p></li>
+<li><p>Click on <strong>the arrow next to the colour ramp</strong> to choose another combination of colours - let’s say a color ramp from white to blue.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> to preview the look of your layer, then <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
 </ol>
 <figure class="align-default" id="en-30-30-2-symbology-variable-ranges-2">
 <a class="reference internal image-reference" href="../../_images/en_30.30.2_symbology_variable_ranges_2.png"><img alt="../../_images/en_30.30.2_symbology_variable_ranges_2.png" src="../../_images/en_30.30.2_symbology_variable_ranges_2.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.24 </span><span class="caption-text">You can categorize the continuous values into classes and assign a colour ramp</span><a class="headerlink" href="#en-30-30-2-symbology-variable-ranges-2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.24 </span><span class="caption-text">You can categorize the continuous values into classes and assign a colour ramp .</span><a class="headerlink" href="#en-30-30-2-symbology-variable-ranges-2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The following map shows the most populated States of Nigeria using a graduated colour categorization. These types of maps are called <strong>Choropleth maps</strong>.</p>
 <figure class="align-default" id="en-map-design-example-variable-ranges">
 <a class="reference internal image-reference" href="../../_images/en_map_design_example_variable_ranges.png"><img alt="../../_images/en_map_design_example_variable_ranges.png" src="../../_images/en_map_design_example_variable_ranges.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.25 </span><span class="caption-text">A map showing the population of Nigerian states</span><a class="headerlink" href="#en-map-design-example-variable-ranges" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.25 </span><span class="caption-text">A map showing the population of Nigerian states.</span><a class="headerlink" href="#en-map-design-example-variable-ranges" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -857,7 +854,7 @@ We will be using the same layer as for the choropleth map (see <a class="referen
 <figure class="align-default" id="en-3-36-m4-centroids">
 <a class="reference internal image-reference" href="../../_images/en_3.36_m4_centroids.png"><img alt="../../_images/en_3.36_m4_centroids.png" src="../../_images/en_3.36_m4_centroids.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.26 </span><span class="caption-text">Creating centroids in QGIS 3.36</span><a class="headerlink" href="#en-3-36-m4-centroids" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.26 </span><span class="caption-text">Creating centroids in QGIS 3.36.</span><a class="headerlink" href="#en-3-36-m4-centroids" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="2">
@@ -903,14 +900,14 @@ We can use symbology to <strong>show the difference between features</strong> in
 <figure class="align-default" id="en-30-30-2-categorized-layer-symbology-1">
 <a class="reference internal image-reference" href="../../_images/en_30.30.2_categorized_layer_symbology_1.png"><img alt="../../_images/en_30.30.2_categorized_layer_symbology_1.png" src="../../_images/en_30.30.2_categorized_layer_symbology_1.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.28 </span><span class="caption-text">Change the symbology type to “categorised” and choose the Value (variable) you wish to display</span><a class="headerlink" href="#en-30-30-2-categorized-layer-symbology-1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.28 </span><span class="caption-text">Change the symbology type to “categorised” and choose the Value (variable) you wish to display.</span><a class="headerlink" href="#en-30-30-2-categorized-layer-symbology-1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="3">
-<li><p>Now we need to <strong>choose which attributes we want to display through the symbology</strong>. In this case, it could be the number of casualties, or the actor who perpetrated the act. Let’s categorize the features by <code class="docutils literal notranslate"><span class="pre">event_type</span></code></p></li>
-<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Classify</span></code> to <strong>list all the unique values contained</strong> in the <code class="docutils literal notranslate"><span class="pre">event_type</span></code> field (i.e. all the possible types of security incidents recorded in our table)</p></li>
-<li><p>Now we can <strong>change the style of each single value</strong></p></li>
-<li><p>Double click on the value <code class="docutils literal notranslate"><span class="pre">Explosions</span></code></p></li>
+<li><p>Now we need to <strong>choose which attributes we want to display through the symbology</strong>. In this case, it could be the number of casualties, or the actor who perpetrated the act. Let’s categorize the features by <code class="docutils literal notranslate"><span class="pre">event_type</span></code>.</p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Classify</span></code> to <strong>list all the unique values contained</strong> in the <code class="docutils literal notranslate"><span class="pre">event_type</span></code> field (i.e. all the possible types of security incidents recorded in our table).</p></li>
+<li><p>Now we can <strong>change the style of each single value</strong>.</p></li>
+<li><p>Double click on the value <code class="docutils literal notranslate"><span class="pre">Explosions</span></code>.</p></li>
 <li><p>At the bottom of the <strong>Symbol selector</strong> window, choose a symbol to make Explosion points stand out.</p></li>
 <li><p>Click on <code class="docutils literal notranslate"><span class="pre">OK</span></code>, then Apply to preview what the layer will look like.</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">OK</span></code> again.</p></li>
@@ -918,14 +915,14 @@ We can use symbology to <strong>show the difference between features</strong> in
 <figure class="align-default" id="en-30-30-2-categorized-layer-symbology-2">
 <a class="reference internal image-reference" href="../../_images/en_30.30.2_categorized_layer_symbology_2.png"><img alt="../../_images/en_30.30.2_categorized_layer_symbology_2.png" src="../../_images/en_30.30.2_categorized_layer_symbology_2.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.29 </span><span class="caption-text">By double clicking on the <strong>unique values</strong> in the classified list, you can change the symbol for each value</span><a class="headerlink" href="#en-30-30-2-categorized-layer-symbology-2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.29 </span><span class="caption-text">By double clicking on the <strong>unique values</strong> in the classified list, you can change the symbol for each value.</span><a class="headerlink" href="#en-30-30-2-categorized-layer-symbology-2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Now we have a map of Nigeria where you can locate the areas that are affected by explosions more than others. On the map below, we also added text labels, which will be explained below.</p>
 <figure class="align-default" id="en-exercise-map-design-example-nigeria">
 <a class="reference internal image-reference" href="../../_images/en_exercise_map_design_example_Nigeria.png"><img alt="../../_images/en_exercise_map_design_example_Nigeria.png" src="../../_images/en_exercise_map_design_example_Nigeria.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.30 </span><span class="caption-text">Regions affected by explosions in Nigeria</span><a class="headerlink" href="#en-exercise-map-design-example-nigeria" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.30 </span><span class="caption-text">Regions affected by explosions in Nigeria.</span><a class="headerlink" href="#en-exercise-map-design-example-nigeria" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -946,7 +943,7 @@ Video: Set up different symbols in a single layer<div class="sd-summary-down doc
 <p class="sd-card-text">On top of simple markers, QGIS lets you also use SVG-symbols and raster images as symbols for your vector data.</p>
 <ul class="simple">
 <li><p class="sd-card-text"><strong>Simple markers</strong> are simple shapes such as rectangles, circles, or crosses that can be adjusted in the symbolization layer (colour, size, outline, etc.). Most of your styling in QGIS will be done with these markers.</p></li>
-<li><p class="sd-card-text"><strong>SVG-symbols</strong> are <em>scalable vector graphic</em> symbols. As vector files, they can be scaled to any size while keeping the same resolution. In most cases, if you want to use a more complex symbol (e.g. hospital, school, train station), SVG-symbols are the best option as they let you adjust the symbol (colours, outline, size, etc.)</p></li>
+<li><p class="sd-card-text"><strong>SVG-symbols</strong> are <em>scalable vector graphic</em> symbols. As vector files, they can be scaled to any size while keeping the same resolution. In most cases, if you want to use a more complex symbol (e.g. hospital, school, train station), SVG-symbols are the best option as they let you adjust the symbol (colours, outline, size, etc.).</p></li>
 <li><p class="sd-card-text">If you select <strong>raster images</strong>, the resolution of the symbol is limited by the amount of pixels in the image. It is not advisable to use high resolution images as symbols on your map because it may overload your PC.</p></li>
 </ul>
 </div>
@@ -964,22 +961,22 @@ Keep in mind that, ordinarily, SVG-symbols work only for point data.
 To use SVG-symbols:</p>
 <ol class="arabic simple">
 <li><p>Open the styling panel and open the <code class="docutils literal notranslate"><span class="pre">single</span> <span class="pre">marker</span></code> options.</p></li>
-<li><p>Under <code class="docutils literal notranslate"><span class="pre">Symbol</span> <span class="pre">layer</span> <span class="pre">type</span></code>, select <strong>“SVG Marker”</strong></p></li>
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">Symbol</span> <span class="pre">layer</span> <span class="pre">type</span></code>, select <strong>“SVG Marker”</strong>.</p></li>
 <li><p>Scroll down to the SVG-Browser. Here you will find all the folders of your installed SVG-libraries.</p></li>
 </ol>
 <p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video></p>
-<p>There is already a default library of SVG-symbols. If you are looking for a specific symbol, try searching for it in the search bar</p>
+<p>There is already a default library of SVG-symbols. If you are looking for a specific symbol, try searching for it in the search bar.</p>
 <section id="adding-an-external-svg-library">
 <h4><span class="section-number">4.2.2.3.1. </span>Adding an external SVG-library<a class="headerlink" href="#adding-an-external-svg-library" title="Permalink to this heading">#</a></h4>
 <p>QGIS also offers the option to add your own SVG-libraries, for example if your organisation uses a specific set of
 icons.
 If you have a library of SVG-symbols as a folder you can add them to your Styling manager.</p>
 <ol class="arabic simple">
-<li><p>Open the style manager: <code class="docutils literal notranslate"><span class="pre">Settings</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Style</span> <span class="pre">Manager</span></code></p></li>
-<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Import</span> <span class="pre">/</span> <span class="pre">Export</span></code> and select <code class="docutils literal notranslate"><span class="pre">Import</span> <span class="pre">items</span></code></p></li>
-<li><p>Navigate to the location where you have saved the library or style and select the file (in most cases .qml but the file type can also be .xml)</p></li>
+<li><p>Open the style manager: <code class="docutils literal notranslate"><span class="pre">Settings</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Style</span> <span class="pre">Manager</span></code>.</p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Import</span> <span class="pre">/</span> <span class="pre">Export</span></code> and select <code class="docutils literal notranslate"><span class="pre">Import</span> <span class="pre">items</span></code>.</p></li>
+<li><p>Navigate to the location where you have saved the library or style and select the file (in most cases .qml but the file type can also be .xml).</p></li>
 <li><p>Now you can select which symbols you wish to import. In most cases, you can select all symbols.</p></li>
-<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Import</span></code></p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Import</span></code>.</p></li>
 </ol>
 <p>The new SVG-symbols are in your SVG library.</p>
 <p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video></p>
@@ -1036,7 +1033,7 @@ Answer<div class="sd-summary-down docutils">
 </ol>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-kebab-horizontal" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M6 12a2 2 0 11-4 0 2 2 0 014 0zm8 0a2 2 0 11-4 0 2 2 0 014 0zm6 2a2 2 0 100-4 2 2 0 000 4z"></path></svg><div class="sd-summary-down docutils">
+Answer<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
@@ -1078,7 +1075,7 @@ Answer<div class="sd-summary-down docutils">
 <li><p class="sd-card-text">Change the symbolisation method from <code class="docutils literal notranslate"><span class="pre">Single-Symbol</span></code> to <code class="docutils literal notranslate"><span class="pre">Graduated</span></code>.</p></li>
 <li><p class="sd-card-text">Next to <code class="docutils literal notranslate"><span class="pre">Value</span></code>, choose the numeric attribute you want to visualise in the choropleth map (e.g. population density, percentage, precipitation, normalised diseased cases, etc.). The value of this attribute will determine the colouring.</p></li>
 <li><p class="sd-card-text">Choose a classification method and set the number of classe (e.g. equal interval, quantile, natural breaks, etc.).</p></li>
-<li><p class="sd-card-text">Pick a colour ramp suitable for the information you want to visualise (light → dark)</p></li>
+<li><p class="sd-card-text">Pick a colour ramp suitable for the information you want to visualise (light → dark).</p></li>
 <li><p class="sd-card-text">Click <code class="docutils literal notranslate"><span class="pre">Classify</span></code> and <code class="docutils literal notranslate"><span class="pre">Apply</span></code>.</p></li>
 <li><p class="sd-card-text">Take a look at the map canvas and make necessary adjustments (e.g. remove the polygon outlines).</p></li>
 </ol>
@@ -1186,7 +1183,7 @@ Answer<div class="sd-summary-down docutils">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#styling-administrative-boundaries-polygons">4.2.2.1. Styling administrative boundaries (Polygons)</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#only-display-the-outlines-of-polygons">4.2.2.1.1. Only display the outlines of polygons</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adjusting-the-styles-of-multiple-overlaying-layers">4.2.2.1.2. Adjusting the styles of multiple overlaying layers</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-choropleth-map">4.2.2.1.3. Creating a choropleth map</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-choropleth-map-gradudated-styling">4.2.2.1.3. Creating a Choropleth Map (“Gradudated Styling)</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-graduated-symbols-map">4.2.2.1.4. Creating a graduated symbols map</a></li>
 </ul>
 </li>

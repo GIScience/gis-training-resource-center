@@ -8,8 +8,7 @@
 
 # Styling Vector Data
 
-The previous chapter went over the fundamentals of graphical symbolisation and the visual variables. In this chapter, we 
-want to apply our understanding of visual representation and learn how to use the styling panel in QGIS to customize 
+The previous chapter went over the fundamentals of graphical symbolisation and the visual variables. In this chapter, we want to apply our understanding of visual representation and learn how to use the styling panel in QGIS to customize how the layers in your QGIS project are visualised.
 
 ## Styling Panel
 
@@ -53,9 +52,7 @@ Symbolization for vector data; Source: White, T. (2017). Symbolization and the V
 Remember that __the layer's symbology is saved within your project file, not within your shapefile!__ If you share a shapefile with a colleague, it will have a different style when they add it to their own project.
 ```
 
-In the symbology tab of the layer styling panel, you can set the 
-
-Simple Markers are generally used to create the symbols for most elements on a map. For example, simple markers are 
+QGIS let's you visualise data using simple markers, SVG-files or Raster-files. Most commonly, you will work with simple markers. These are generally used to create the symbols for most elements on a map. For example, simple markers are 
 used to visualise streets, building outlines, waterbodies, administrative boundaries or other polygons.
 Most simple markers consist of a __fill__ and an __outline__. Depending on the type of geometry in the layer, you will have to use have different symbology options. 
 
@@ -97,7 +94,7 @@ __For example__, assign a different symbol for each type of building (industrial
 :::{tab-item} Graduated
 
 - Creates classes for numerical data.
-- A colour gradient can be selected to represent the distribution of the data
+- A colour gradient can be selected to represent the distribution of the data.
 
 __For example__, create 6 classes of population sizes and assign a color gradient from white to red to indicate the population size in a district (see [Module 3: Geodata Classifification](/content/Module_3/en_qgis_data_classification.md)).
 
@@ -134,9 +131,9 @@ Now, we want to change the symbology of a layer so that __only the outlines of t
 
 To change the symbology of a single layer:
 1. Open the `Styling panel` and navigate to the symbology tab. By default, the symbology will be set to `Single Symbol`. This means that the same colours and contours will be applied to all the features in that layer.
-2. Click on `Simple Fill`
-3. Click on the arrow to the right of `Fill Colour`
-4. Check the `Transparent Fill` option
+2. Click on `Simple Fill`.
+3. Click on the arrow to the right of `Fill Colour`.
+4. Check the `Transparent Fill` option.
 
 ```{figure} ../../fig/en_30.30.2_vector_layer_styling_transparent.png
 ---
@@ -174,8 +171,8 @@ Order the layers and navigate to the styling panel of the topmost layer
 8. __Repeat the same process__ for the Adm1 layer, using the same colour as for Adm0 (it will be in "Recent colors) and leave the stroke width at 0.26.
 9. Now we can see the boundaries of the country and its states, and behind that we can see the districts (Adm2).
 10. Let's make the district layer's style consistent with the others.
-11. Choose a `Fill Color`
-12. Use the same Stroke Colour` as for Adm0 and Adm1, but make the width 0.1 Millimeters and the Stroke Style a __Dash Line__
+11. Choose a `Fill Color`.
+12. Use the same Stroke Colour` as for Adm0 and Adm1, but make the width 0.1 Millimeters and the Stroke Style a __Dash Line__.
 13. Click OK and look at your map: hopefully it's starting to look nicer!
 
 ```{figure} ../../fig/en_30.30.2_changing_layer_style_3.png
@@ -183,7 +180,7 @@ Order the layers and navigate to the styling panel of the topmost layer
 width: 500 px
 name: en_30.30.2_changing_layer_style_3
 ---
-The styling of a vector data consists of the colour and the outline
+The styling of a vector data consists of the colour and the outline.
 ```
 
 :::{dropdown} Video: Adjusting the style for multiple layers
@@ -192,20 +189,19 @@ The styling of a vector data consists of the colour and the outline
 :::
 
 
-#### Creating a choropleth map
+#### Creating a Choropleth Map ("Gradudated Styling)
 
-Style data based on variable ranges ("__Graduated__" styling)
 
 If a layer contains numeric values that are continuous, they can be organized in intervals. These intervals can be 
 displayed in graduated colours. In this exercise, we assign colours to Adm1 polygons based on the total population of 
 each State.
 
 
-1. Download the [NGA_Adm1_Pop shapefile](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/follow_along/NGA_adm1_pop.zip) and save it in your shapefile folder
-2. In QGIS, turn off the Adm1 and Adm2 layer, leaving only Adm0
-3. Drag the shapefile NGA_Adm1_Pop into your map
-4. Open its `Symbology` options and choose `Graduated`
-5. __Select the value you want to use to assign colours__, in this case, it will be `total_pop`
+1. Download the [NGA_Adm1_Pop shapefile](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/follow_along/NGA_adm1_pop.zip) and save it in your shapefile folder.
+2. In QGIS, turn off the Adm1 and Adm2 layer, leaving only Adm0.
+3. Drag the shapefile NGA_Adm1_Pop into your map.
+4. Open its `Symbology` options and choose `Graduated`.
+5. __Select the value you want to use to assign colours__, in this case, it will be `total_pop`.
 
 ```{figure} ../../fig/en_30.30.2_symbology_variable_ranges.png
 ---
@@ -215,18 +211,18 @@ width: 550px
 With variable ranges, select __Graduated__ symbology and choose the attribute with continuous values
 ```
 
-6. Click on `Classify` to __list all values divided in classes__
-7. Choose __how many classes__ you want the data to be divided into ‒ let's say 4
-8. By default, the colour ramp will be red. However, red is not the right colour to use for population count, as it is generally used to communicate negative elements, such as food insecurity or cholera cases
-9. Click on __the arrow next to the colour ramp__ to choose another combination of colours - let's say a color ramp from white to blue
-10. Click `Apply` to preview the look of your layer, then `OK`
+6. Click on `Classify` to __list all values divided in classes__.
+7. Choose __how many classes__ you want the data to be divided into ‒ let's say 4.
+8. By default, the colour ramp will be red. However, red is not the right colour to use for population count, as it is generally used to communicate negative elements, such as food insecurity or cholera cases.
+9. Click on __the arrow next to the colour ramp__ to choose another combination of colours - let's say a color ramp from white to blue.
+10. Click `Apply` to preview the look of your layer, then `OK`.
 
 ```{figure} ../../fig/en_30.30.2_symbology_variable_ranges_2.png
 ---
 name: en_30.30.2_symbology_variable_ranges_2
 width: 500px
 ---
-You can categorize the continuous values into classes and assign a colour ramp 
+You can categorize the continuous values into classes and assign a colour ramp .
 ```
 
 The following map shows the most populated States of Nigeria using a graduated colour categorization. These types of maps are called __Choropleth maps__. 
@@ -236,7 +232,7 @@ The following map shows the most populated States of Nigeria using a graduated c
 name: en_map_design_example_variable_ranges
 width: 500px
 ---
-A map showing the population of Nigerian states
+A map showing the population of Nigerian states.
 ```
 
 :::{dropdown} Video: How to create a choropleth map
@@ -262,7 +258,7 @@ We will be using the same layer as for the choropleth map (see {numref}`en_map_d
 name: en_3.36_m4_centroids
 width: 500 px
 ---
-Creating centroids in QGIS 3.36
+Creating centroids in QGIS 3.36.
 ```
 
 2. Under `Input Layer`, select the `NGA_Adm1_Pop`-layer. Click on `Run`.
@@ -307,13 +303,13 @@ Categorized symbology is used when you have ***discrete*** variables.
 name: en_30.30.2_categorized_layer_symbology_1
 width: 500px
 ---
-Change the symbology type to "categorised" and choose the Value (variable) you wish to display
+Change the symbology type to "categorised" and choose the Value (variable) you wish to display.
 ```
 
-3. Now we need to __choose which attributes we want to display through the symbology__. In this case, it could be the number of casualties, or the actor who perpetrated the act. Let's categorize the features by `event_type`
-4. Click on `Classify` to __list all the unique values contained__ in the `event_type` field (i.e. all the possible types of security incidents recorded in our table)
-5. Now we can __change the style of each single value__
-6. Double click on the value `Explosions`
+3. Now we need to __choose which attributes we want to display through the symbology__. In this case, it could be the number of casualties, or the actor who perpetrated the act. Let's categorize the features by `event_type`.
+4. Click on `Classify` to __list all the unique values contained__ in the `event_type` field (i.e. all the possible types of security incidents recorded in our table).
+5. Now we can __change the style of each single value__.
+6. Double click on the value `Explosions`.
 7. At the bottom of the __Symbol selector__ window, choose a symbol to make Explosion points stand out.
 8. Click on `OK`, then Apply to preview what the layer will look like.
 9. Click `OK` again. 
@@ -323,7 +319,7 @@ Change the symbology type to "categorised" and choose the Value (variable) you w
 name: en_30.30.2_categorized_layer_symbology_2
 width: 500px
 ---
-By double clicking on the __unique values__ in the classified list, you can change the symbol for each value
+By double clicking on the __unique values__ in the classified list, you can change the symbol for each value.
 ```
 
 Now we have a map of Nigeria where you can locate the areas that are affected by explosions more than others. On the map below, we also added text labels, which will be explained below.
@@ -333,7 +329,7 @@ Now we have a map of Nigeria where you can locate the areas that are affected by
 name: en_exercise_map_design_example_Nigeria
 width: 500px
 ---
-Regions affected by explosions in Nigeria
+Regions affected by explosions in Nigeria.
 ```
 
 :::{dropdown} Video: Set up different symbols in a single layer
@@ -352,7 +348,7 @@ __Simple Markers, SVG-Symbols and Raster images__
 On top of simple markers, QGIS lets you also use SVG-symbols and raster images as symbols for your vector data.
 
 - __Simple markers__ are simple shapes such as rectangles, circles, or crosses that can be adjusted in the symbolization layer (colour, size, outline, etc.). Most of your styling in QGIS will be done with these markers.
-- __SVG-symbols__ are *scalable vector graphic* symbols. As vector files, they can be scaled to any size while keeping the same resolution. In most cases, if you want to use a more complex symbol (e.g. hospital, school, train station), SVG-symbols are the best option as they let you adjust the symbol (colours, outline, size, etc.)
+- __SVG-symbols__ are *scalable vector graphic* symbols. As vector files, they can be scaled to any size while keeping the same resolution. In most cases, if you want to use a more complex symbol (e.g. hospital, school, train station), SVG-symbols are the best option as they let you adjust the symbol (colours, outline, size, etc.).
 - If you select __raster images__, the resolution of the symbol is limited by the amount of pixels in the image. It is not advisable to use high resolution images as symbols on your map because it may overload your PC.
 
 :::
@@ -367,12 +363,12 @@ Keep in mind that, ordinarily, SVG-symbols work only for point data.
 To use SVG-symbols:
 
 1. Open the styling panel and open the `single marker` options.
-2. Under `Symbol layer type`, select __"SVG Marker"__
+2. Under `Symbol layer type`, select __"SVG Marker"__.
 3. Scroll down to the SVG-Browser. Here you will find all the folders of your installed SVG-libraries.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video>
 
-There is already a default library of SVG-symbols. If you are looking for a specific symbol, try searching for it in the search bar 
+There is already a default library of SVG-symbols. If you are looking for a specific symbol, try searching for it in the search bar.
 
 #### Adding an external SVG-library
 
@@ -380,11 +376,11 @@ QGIS also offers the option to add your own SVG-libraries, for example if your o
 icons. 
 If you have a library of SVG-symbols as a folder you can add them to your Styling manager.
 
-1. Open the style manager: `Settings` > `Style Manager`
-2. Click on `Import / Export` and select `Import items`
-3. Navigate to the location where you have saved the library or style and select the file (in most cases .qml but the file type can also be .xml)
+1. Open the style manager: `Settings` > `Style Manager`.
+2. Click on `Import / Export` and select `Import items`.
+3. Navigate to the location where you have saved the library or style and select the file (in most cases .qml but the file type can also be .xml).
 4. Now you can select which symbols you wish to import. In most cases, you can select all symbols.
-5. Click on `Import`
+5. Click on `Import`.
 
 The new SVG-symbols are in your SVG library.
 
@@ -422,7 +418,7 @@ There is also a library with humanitarian icons by the [United Nations Office fo
 
 2. __Where is a layer's symbology saved?__
 
-:::{dropdown}
+:::{dropdown} Answer
 - The symbology of a layer is not saved in the dataset. If you share only the dataset with a colleague, the layer will not appear as on your computer.
 - The symbology is stored in the __QGIS project file__ (`.qgz` or `.qgs`).
 - It is also possible to __export__ or __save__ the style externally (as a `.qml` file) so that it can be reused or shared.
@@ -443,7 +439,7 @@ There is also a library with humanitarian icons by the [United Nations Office fo
 2. Change the symbolisation method from `Single-Symbol` to `Graduated`.
 3. Next to `Value`, choose the numeric attribute you want to visualise in the choropleth map (e.g. population density, percentage, precipitation, normalised diseased cases, etc.). The value of this attribute will determine the colouring.
 4. Choose a classification method and set the number of classe (e.g. equal interval, quantile, natural breaks, etc.).
-5. Pick a colour ramp suitable for the information you want to visualise (light → dark)
+5. Pick a colour ramp suitable for the information you want to visualise (light → dark).
 6. Click `Classify` and `Apply`.
 7. Take a look at the map canvas and make necessary adjustments (e.g. remove the polygon outlines).
 :::
