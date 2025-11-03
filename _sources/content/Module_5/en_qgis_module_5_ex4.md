@@ -374,5 +374,5 @@ width: 400px
 name: Visualized MPI data on district level
 align: center
 ---
-Visualized MPI data on district level
+Visualized MPI data on district level.
 ```

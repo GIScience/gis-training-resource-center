@@ -1,12 +1,8 @@
 # Exercise Track: Anticipatory Action Analysis for Cyclones in Madagascar
 
 
-This exercise track focuses on the preliminary assessment of a cyclone event in Madagascar. The goal is to create 
-an analytical workflow as a QGIS model that estimates the exposed population, exposed infrastructure, and exposed 
-agriculture land. Additionally, the accessibility of exposed regions can be assessed using pre-calculated 
-isochrones. 
-In this track, you will build an analytical workflow as a QGIS model and visualise the results using map templates 
-and style files. 
+This exercise track focuses on the preliminary assessment of a cyclone event in Madagascar. The goal is to create an analytical workflow as a QGIS model that estimates the exposed population, exposed infrastructure, and exposed agriculture land. Additionally, the accessibility of exposed regions can be assessed using pre-calculated isochrones. 
+In this track, you will build an analytical workflow as a QGIS model and visualise the results using map templates and style files. 
 
 ::::{admonition} French version - Version française
 :class: note

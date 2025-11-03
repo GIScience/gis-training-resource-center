@@ -44,8 +44,6 @@ Download all the datasets [here](https://nexus.heigit.org/repository/gis-trainin
 - `buildings_belet_weyne.geojson`: This dataset is downloaded using [HOT Export Tool](https://export.hotosm.org/v3/exports/new/describe) and contains information about buildings in the Beledweyne district.
 
 
-<!--EDIT: We could add an optional step for trainees to download the data from the HOT Export Tool themselves (requires HOT Export Tool Exercise from Module 2)-->
-
 The folder is called **Module_3_Exercise_3_Data_Queries** and contains the entire [standard folder structure](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure) with all data in the input folder.
 
 ``` {Note}
