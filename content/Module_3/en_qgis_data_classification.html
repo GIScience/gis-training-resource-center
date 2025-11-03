@@ -574,9 +574,9 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nominal-ordinal-and-metric-scales">3.3.1. Nominal, Ordinal and Metric scales</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#single-symbol-classification">3.3.2. Single symbol classification</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#categorised-classification">3.3.3. Categorised classification</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graduated-classification">3.3.4. Graduated classification</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#single-symbol-classification">3.3.2. Single Symbol Classification</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#categorised-classification">3.3.3. Categorised Classification</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graduated-classification">3.3.4. Graduated Classification</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#self-assessment-questions">3.3.5. Self-Assessment Questions</a></li>
 </ul>
             </nav>
@@ -602,12 +602,8 @@ document.write(`
 </div>
 <section class="tex2jax_ignore mathjax_ignore" id="geodata-classification">
 <h1><span class="section-number">3.3. </span>Geodata Classification<a class="headerlink" href="#geodata-classification" title="Permalink to this heading">#</a></h1>
-<p>Spatial data classification in GIS involves categorising geographic information into distinct groups or
-classes based on shared characteristics or attributes. Each class can be assigned a distinct symbol or
-colour. This process enhances the organization and interpretation of spatial data.</p>
-<p>The attributes of  geodata are stored in a specific column within the attribute table.
-Essentially, we choose a column containing the specific characteristics of interest, allowing
-QGIS to group the data based on these selected attributes (<a class="reference internal" href="#classification-basic"><span class="std std-numref">Fig. 3.8</span></a>).</p>
+<p>Spatial data classification in GIS involves categorising geographic information into distinct groups or classes based on shared characteristics or attributes. Each class can be assigned a distinct symbol or colour. This process enhances the organization and interpretation of spatial data.</p>
+<p>The attributes of  geodata are stored in a specific column within the attribute table. Essentially, we choose a column containing the specific characteristics of interest, allowing QGIS to group the data based on these selected attributes (<a class="reference internal" href="#classification-basic"><span class="std std-numref">Fig. 3.8</span></a>).</p>
 <figure class="align-center" id="classification-basic">
 <a class="reference internal image-reference" href="../../_images/classification_basic.drawio.png"><img alt="../../_images/classification_basic.drawio.png" src="../../_images/classification_basic.drawio.png" style="width: 900px;" /></a>
 <figcaption>
@@ -616,8 +612,7 @@ QGIS to group the data based on these selected attributes (<a class="reference i
 </figure>
 <section id="nominal-ordinal-and-metric-scales">
 <h2><span class="section-number">3.3.1. </span>Nominal, Ordinal and Metric scales<a class="headerlink" href="#nominal-ordinal-and-metric-scales" title="Permalink to this heading">#</a></h2>
-<p>In geographic data classification, <strong>nominal</strong>, <strong>ordinal</strong>, and <strong>metric</strong> scales are used to categorize and
-measure spatial features based on different levels of precision and hierarchy:</p>
+<p>In geographic data classification, <strong>nominal</strong>, <strong>ordinal</strong>, and <strong>metric</strong> scales are used to categorize and measure spatial features based on different levels of precision and hierarchy:</p>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <div class="admonition attention">
@@ -626,17 +621,14 @@ measure spatial features based on different levels of precision and hierarchy:</
 </div>
 </aside>
 <ul>
-<li><p>The <strong>nominal scale</strong> (categorical data) is the simplest form of measurement where features are grouped into distinct categories
-based on qualitative attributes. These categories don’t have any inherent order or ranking. They don’t have any
-numerical significance: Values or labels are just names or identifiers (in some cases landcover classes can be
-identified with numbers).</p>
+<li><p>The <strong>nominal scale</strong> (categorical data) is the simplest form of measurement where features are grouped into distinct categories based on qualitative attributes. These categories don’t have any inherent order or ranking. They don’t have any numerical significance: Values or labels are just names or identifiers (in some cases landcover classes can be identified with numbers).</p>
 <ul class="simple">
 <li><p>Examples: Land cover classes, vegetation types, soil types, amenity type (hospital, church, school, etc.)</p></li>
 </ul>
 <figure class="align-default" id="nominal-scale-example">
 <a class="reference internal image-reference" href="../../_images/nominal_scale_examples.png"><img alt="../../_images/nominal_scale_examples.png" src="../../_images/nominal_scale_examples.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.9 </span><span class="caption-text">Examples for nominal data and their representation (Source: Dickmann (2018) Kartographie, Westermann)</span><a class="headerlink" href="#nominal-scale-example" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 3.9 </span><span class="caption-text">Examples for nominal data and their representation (Source: Dickmann (2018) Kartographie, Westermann).</span><a class="headerlink" href="#nominal-scale-example" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </li>
@@ -651,35 +643,26 @@ identified with numbers).</p>
 </figcaption>
 </figure>
 </li>
-<li><p>The <strong>metric scale</strong> (quantitative data) deals with data that have both order and exact differences
-between values. Data is represented with precise numerical values and the differences between values are consistent across the scale. Metric data can be further divided into:</p>
+<li><p>The <strong>metric scale</strong> (quantitative data) deals with data that have both order and exact differences between values. Data is represented with precise numerical values and the differences between values are consistent across the scale. Metric data can be further divided into:</p>
 <ul class="simple">
-<li><p>Interval scale: Numerical data where the difference between values is meaningful, but there is no true
-zero point (e.g., temperature in Celsius).</p></li>
-<li><p>Ratio scale: Numerical data where both differences and ratios are meaningful, and there is a true zero
-point (e.g., distance, area).</p></li>
-<li><p>Examples: Elevation data, distance, area, population data</p></li>
+<li><p>Interval scale: Numerical data where the difference between values is meaningful, but there is no true zero point (e.g., temperature in Celsius).</p></li>
+<li><p>Ratio scale: Numerical data where both differences and ratios are meaningful, and there is a true zero point (e.g., distance, area).</p></li>
+<li><p>Examples: Elevation data, distance, area, population data.</p></li>
 </ul>
 <figure class="align-default" id="interval-scale-example">
 <a class="reference internal image-reference" href="../../_images/interval_ratio_scale_example.png"><img alt="../../_images/interval_ratio_scale_example.png" src="../../_images/interval_ratio_scale_example.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.11 </span><span class="caption-text">Examples for metric data and their representation (Source: Dickmann (2018) Kartographie, Westermann)</span><a class="headerlink" href="#interval-scale-example" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 3.11 </span><span class="caption-text">Examples for metric data and their representation (Source: Dickmann (2018) Kartographie, Westermann).</span><a class="headerlink" href="#interval-scale-example" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </li>
 </ul>
-<p>Depending on the type of scale, you will use different methods of classification. Below, we will go over the
-different types of classification that are available in QGIS, and when to use them for which data. We will also
-go over some scenarios you might come across in your GIS career.</p>
-<!--EDIT: REMOVE THE DATA SCALES? MIGHT BE TOO COMPLEX-->
+<p>Depending on the type of scale, you will use different methods of classification. Below, we will go over the different types of classification that are available in QGIS, and when to use them for which data. We will also go over some scenarios you might come across in your GIS career.</p>
 </section>
 <section id="single-symbol-classification">
-<h2><span class="section-number">3.3.2. </span>Single symbol classification<a class="headerlink" href="#single-symbol-classification" title="Permalink to this heading">#</a></h2>
-<p>By default, QGIS visualises all layers in the <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">symbol</span></code> setting. This means all the features of a layer
-are visualised the same. In this setting, you can change many parameters like colour or opacity <strong>but you can not classify the data into multiple groups!</strong></p>
-<p>Single Symbol classification is useful when you have a simple dataset. For example, you load a polygon layer
-with the administrative boundaries of a region, and a point layer with the major cities. In this case, you can
-choose a single symbol classification and adjust the symbol for each layer.</p>
+<h2><span class="section-number">3.3.2. </span>Single Symbol Classification<a class="headerlink" href="#single-symbol-classification" title="Permalink to this heading">#</a></h2>
+<p>By default, QGIS visualises all layers in the <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">symbol</span></code> setting. This means all the features of a layer are visualised the same. In this setting, you can change many parameters like colour or opacity <strong>but you can not classify the data into multiple groups!</strong></p>
+<p>Single Symbol classification is useful when you have a simple dataset. For example, you load a polygon layer with the administrative boundaries of a region, and a point layer with the major cities. In this case, you can choose a single symbol classification and adjust the symbol for each layer.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
 <summary class="sd-summary-title sd-card-header">
 How to: Single symbol classification<div class="sd-summary-down docutils">
@@ -693,12 +676,9 @@ How to: Single symbol classification<div class="sd-summary-down docutils">
 <li><p class="sd-card-text">Right-click on your layer.</p></li>
 <li><p class="sd-card-text">Click on <code class="docutils literal notranslate"><span class="pre">Symbology</span></code>.</p></li>
 <li><p class="sd-card-text">Confirm that the layer setting is on <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">Symbol</span></code>.</p></li>
-<li><p class="sd-card-text">Select the colour of your choice in the drop-down menu. For more colour options select in the drop-down menu
-<code class="docutils literal notranslate"><span class="pre">Choose</span> <span class="pre">Color</span></code>.</p></li>
-<li><p class="sd-card-text"><em>Optional</em>: You can adjust the opacity/transparency of the layer. This can be very useful when you want to
-show multiple overlapping layers.</p></li>
-<li><p class="sd-card-text"><em>Optional</em>: Here you can set the unit type. This is useful when you want to visualise points in a certain
-size, for example.</p></li>
+<li><p class="sd-card-text">Select the colour of your choice in the drop-down menu. For more colour options select in the drop-down menu <code class="docutils literal notranslate"><span class="pre">Choose</span> <span class="pre">Color</span></code>.</p></li>
+<li><p class="sd-card-text"><em>Optional</em>: You can adjust the opacity/transparency of the layer. This can be very useful when you want to show multiple overlapping layers.</p></li>
+<li><p class="sd-card-text"><em>Optional</em>: Here you can set the unit type. This is useful when you want to visualise points in a certain size, for example.</p></li>
 <li><p class="sd-card-text"><em>Optional:</em> Here you can find standard and previously used styles quickly.</p></li>
 <li><p class="sd-card-text">Click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> to put your adjustment into effect.</p></li>
 <li><p class="sd-card-text">Click <code class="docutils literal notranslate"><span class="pre">OK</span></code> to close the window.</p></li>
@@ -706,20 +686,20 @@ size, for example.</p></li>
 <figure class="align-center" id="single-symbol-classify">
 <a class="reference internal image-reference" href="../../_images/Single_symbol_classify.png"><img alt="../../_images/Single_symbol_classify.png" src="../../_images/Single_symbol_classify.png" style="width: 900px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.12 </span><span class="caption-text">Adjust the style of a layer.</span><a class="headerlink" href="#single-symbol-classify" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 3.12 </span><span class="caption-text">Adjusting the style of a layer.</span><a class="headerlink" href="#single-symbol-classify" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 </details></section>
 <section id="categorised-classification">
-<h2><span class="section-number">3.3.3. </span>Categorised classification<a class="headerlink" href="#categorised-classification" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">3.3.3. </span>Categorised Classification<a class="headerlink" href="#categorised-classification" title="Permalink to this heading">#</a></h2>
 <p>Categorised classification in QGIS groups spatial data into distinct categories based on specific attributes.</p>
 <p>This classification organises the features into categories based on specific values in the attribute table.
 By specifying a symbol to each category, you can facilitate the interpretation of geospatial information on your map for clearer insights.</p>
 <figure class="align-default" id="fr-simple-classification-example-map">
 <a class="reference internal image-reference" href="../../_images/fr_simple_classification_example_map.png"><img alt="../../_images/fr_simple_classification_example_map.png" src="../../_images/fr_simple_classification_example_map.png" style="width: 750px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.13 </span><span class="caption-text">Niger – Régions de Tillabéri et de Tahoua Éducation: infrastructures scolaires fermées ou endommagées pour cause d’insécurité entre 2019 et 2022 (Source: <a class="reference external" href="https://repository.impact-initiatives.org/document/impact/e6174a66/REACH_NER_Map_Ecoles_fermees_mai2022_tillaberi_tahoua.pdf">REACH</a>)</span><a class="headerlink" href="#fr-simple-classification-example-map" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 3.13 </span><span class="caption-text">Niger – Régions de Tillabéri et de Tahoua Éducation: infrastructures scolaires fermées ou endommagées pour cause d’insécurité entre 2019 et 2022 (Source: <a class="reference external" href="https://repository.impact-initiatives.org/document/impact/e6174a66/REACH_NER_Map_Ecoles_fermees_mai2022_tillaberi_tahoua.pdf">REACH</a>).</span><a class="headerlink" href="#fr-simple-classification-example-map" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>In the map above, the main roads have been assigned a single symbol. The schools have been classified into two categories: primary school (fr.: <em>école primaire</em>) and secondary school (fr.: <em>école secondaire</em>).</p>
@@ -766,8 +746,8 @@ How To: Categorised classificatation<div class="sd-summary-down docutils">
 <li><p class="sd-card-text">Click on <code class="docutils literal notranslate"><span class="pre">Categorized</span></code>.</p></li>
 <li><p class="sd-card-text">In the <code class="docutils literal notranslate"><span class="pre">Value</span></code> dropdown menu, select the column based on which you want to categorise your data.</p></li>
 <li><p class="sd-card-text">Further down the window click on <code class="docutils literal notranslate"><span class="pre">Classify</span></code>.  Now you should see all unique values or attributes of the selected column in <code class="docutils literal notranslate"><span class="pre">Value</span></code>. To add or delete single values use the <code class="docutils literal notranslate"><span class="pre">-</span></code> and <code class="docutils literal notranslate"><span class="pre">+</span></code> buttons.</p></li>
-<li><p class="sd-card-text"><em>Optional</em>: In the <code class="docutils literal notranslate"><span class="pre">Symbol</span></code> dropdown menu, you can select the colours and symbols you want to use</p></li>
-<li><p class="sd-card-text"><em>Optional</em>: In the <code class="docutils literal notranslate"><span class="pre">Color</span> <span class="pre">ramp</span></code> dropdown menu, you can specify the range of colours you want to use</p></li>
+<li><p class="sd-card-text"><em>Optional</em>: In the <code class="docutils literal notranslate"><span class="pre">Symbol</span></code> dropdown menu, you can select the colours and symbols you want to use.</p></li>
+<li><p class="sd-card-text"><em>Optional</em>: In the <code class="docutils literal notranslate"><span class="pre">Color</span> <span class="pre">ramp</span></code> dropdown menu, you can specify the range of colours you want to use.</p></li>
 <li><p class="sd-card-text"><em>Optional</em>: You can open the panel <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Rendering</span></code> on the button of the window. Here you can adjust the opacity/transparency of the layer.</p></li>
 <li><p class="sd-card-text">Click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> to put your adjustment into effect.</p></li>
 <li><p class="sd-card-text">Click <code class="docutils literal notranslate"><span class="pre">OK</span></code> to close the window.</p></li>
@@ -775,23 +755,17 @@ How To: Categorised classificatation<div class="sd-summary-down docutils">
 </div>
 </details></section>
 <section id="graduated-classification">
-<h2><span class="section-number">3.3.4. </span>Graduated classification<a class="headerlink" href="#graduated-classification" title="Permalink to this heading">#</a></h2>
-<p>Graduated classification in GIS involves categorising spatial data into classes or ranges based on a
-progression of values. This method is particularly useful for visualising quantitative data, allowing
-for the differentiation of intensity, density, or magnitude across a spectrum, facilitating a nuanced
-representation of geographic phenomena.</p>
+<h2><span class="section-number">3.3.4. </span>Graduated Classification<a class="headerlink" href="#graduated-classification" title="Permalink to this heading">#</a></h2>
+<p>Graduated classification in GIS involves categorising spatial data into classes or ranges based on a progression of values. This method is particularly useful for visualising quantitative data, allowing for the differentiation of intensity, density, or magnitude across a spectrum, facilitating a nuanced representation of geographic phenomena.</p>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <figure class="align-default" id="example-classification-hexagons">
 <a class="reference internal image-reference" href="../../_images/example_classification_hexagons.png"><img alt="../../_images/example_classification_hexagons.png" src="../../_images/example_classification_hexagons.png" style="width: 750px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.15 </span><span class="caption-text">REACH, Ukraine, IDP Collective Site Monitoring Map, Actives, July 2024 (Source: <a class="reference external" href="https://repository.impact-initiatives.org/document/impact/192097a8/REACH_UKR_Map_CSM_SituationOverview_ActiveSites_JULY2024_ENG_A4-1.pdf">Reach</a>)</span><a class="headerlink" href="#example-classification-hexagons" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 3.15 </span><span class="caption-text">REACH, Ukraine, IDP Collective Site Monitoring Map, Actives, July 2024 (Source: <a class="reference external" href="https://repository.impact-initiatives.org/document/impact/192097a8/REACH_UKR_Map_CSM_SituationOverview_ActiveSites_JULY2024_ENG_A4-1.pdf">Reach</a>).</span><a class="headerlink" href="#example-classification-hexagons" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p class="sd-card-text">In <a class="reference internal" href="#example-classification-hexagons"><span class="std std-numref">Fig. 3.15</span></a>, each hexagonal cell holds a value for “Number of sites per 150km²”
-ranging from 1 to 91. The cells have been organised into 5 categories, making it easy to distinguish
-between the different values in each cell. By keeping the amount of classes to a minimum, the reader can
-read and understand the map quicker.</p>
+<p class="sd-card-text">In <a class="reference internal" href="#example-classification-hexagons"><span class="std std-numref">Fig. 3.15</span></a>, each hexagonal cell holds a value for “Number of sites per 150km²” ranging from 1 to 91. The cells have been organised into 5 categories, making it easy to distinguish between the different values in each cell. By keeping the amount of classes to a minimum, the reader can read and understand the map quicker.</p>
 </div>
 </div>
 <p>Graduated classification is usually used for quantitative data that is <strong>interval</strong> or <strong>ratio</strong> scaled.</p>
@@ -819,100 +793,63 @@ read and understand the map quicker.</p>
 <p>To classify quantitative data there are many methods on how to set up the classes. There is no single best way to select a method or to decide how many classes you like to use. It all comes down to what you want to show.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>A good range for the number of classes is <strong>3 to 7</strong>. Do not use more than <strong>9</strong> classes, as it becomes difficult to
-distinguish between the classes, making the map harder to understand.</p>
+<p>A good range for the number of classes is <strong>3 to 7</strong>. Do not use more than <strong>9</strong> classes, as it becomes difficult to distinguish between the classes, making the map harder to understand.</p>
 </div>
-<p>Take the example below. You see a histogram of the district population. That means we have a dataset
-with districts and how many people live in each district. Just based on the histogram we
-can make a few general statements.</p>
+<p>Take the example below. You see a histogram of the district population. That means we have a dataset with districts and how many people live in each district. Just based on the histogram we can make a few general statements.</p>
 <ol class="arabic simple">
-<li><p>There are no districts with no or zero population</p></li>
-<li><p>There are just a few districts with very low population</p></li>
-<li><p>It seems that there are three general groups of districts</p></li>
+<li><p>There are no districts with no or zero population.</p></li>
+<li><p>There are just a few districts with very low population.</p></li>
+<li><p>It seems that there are three general groups of districts.</p></li>
 </ol>
 <figure class="align-center" id="histogram-example-drawio">
 <a class="reference internal image-reference" href="../../_images/Histogramm_example.drawio.svg"><img alt="../../_images/Histogramm_example.drawio.svg" src="../../_images/Histogramm_example.drawio.svg" width="900px" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.16 </span><span class="caption-text">Histogram of population data. Source: <a class="reference external" href="https://www.axismaps.com/guide/data-classification">Axis Maps</a></span><a class="headerlink" href="#histogram-example-drawio" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 3.16 </span><span class="caption-text">Histogram of population data. Source: <a class="reference external" href="https://www.axismaps.com/guide/data-classification">Axis Maps</a>.</span><a class="headerlink" href="#histogram-example-drawio" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>However, if we want to show which districts have a higher population than others on a map,
-we need to classify the districts.</p>
-<p>There are <strong>seven</strong> ways in QGIS to split quantitative data into classes.
-The four most important ones are: <strong>Equal intervals</strong>, <strong>Quantile</strong>, <strong>Natural breaks</strong>, <strong>Manual</strong>.
-Let’s have a look at how the classes of the district population would look like if we split
-the data into three classes using these methods.</p>
+<p>However, if we want to show which districts have a higher population than others on a map, we need to classify the districts.</p>
+<p>There are <strong>seven</strong> ways in QGIS to split quantitative data into classes. The four most important ones are: <strong>Equal intervals</strong>, <strong>Quantile</strong>, <strong>Natural breaks</strong>, <strong>Manual</strong>.Let’s have a look at how the classes of the district population would look like if we split the data into three classes using these methods.</p>
 <figure class="align-center" id="classification-method-map">
 <a class="reference internal image-reference" href="../../_images/classification_method_map.drawio.svg"><img alt="../../_images/classification_method_map.drawio.svg" src="../../_images/classification_method_map.drawio.svg" width="900px" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 3.17 </span><span class="caption-text">Different classifications. Source: HeiGIT  (adapted from <a class="reference external" href="https://www.axismaps.com/guide/data-classification">Axis Maps</a>)</span><a class="headerlink" href="#classification-method-map" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<!--EDIT: The different classification methods could be moved to the wiki and also put into the exercise to make trainees choose the right classification method. -->
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-0">
 Equal Interval</label><div class="sd-tab-content docutils">
-<p>Equal Interval classification divides data into uniform size classes, such as 0-10, 10-20, 20-30,
-and so on. It is effective for evenly distributed data across the entire range. However,
-caution is advised when data is skewed or has significant outliers, as this may result in empty classes.
-The population data used here, lacking large outliers, is suitable for Equal Interval classification.</p>
+<p>Equal Interval classification divides data into uniform size classes, such as 0-10, 10-20, 20-30, and so on. It is effective for evenly distributed data across the entire range. However, caution is advised when data is skewed or has significant outliers, as this may result in empty classes. The population data used here, lacking large outliers, is suitable for Equal Interval classification.</p>
 </div>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-1">
 Equal Count (Quantile)</label><div class="sd-tab-content docutils">
-<p>Quantiles classification ensures an equal number of observations in each class, creating visually
-appealing maps. However, it may result in classes with significantly different numerical ranges,
-and in some cases, similar rates may be separated while different rates are grouped together.
-It’s advisable to use a histogram to assess potential issues. In the district population example,
-the quantile classification produced a questionable break, combining a portion of the third cluster
-with class 2 despite its closer numerical proximity to other observations in class 3.</p>
+<p>Quantiles classification ensures an equal number of observations in each class, creating visually appealing maps. However, it may result in classes with significantly different numerical ranges, and in some cases, similar rates may be separated while different rates are grouped together. It’s advisable to use a histogram to assess potential issues. In the district population example, the quantile classification produced a questionable break, combining a portion of the third cluster with class 2 despite its closer numerical proximity to other observations in class 3.</p>
 </div>
 <input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-2">
 Natural Breaks</label><div class="sd-tab-content docutils">
-<p>Natural Breaks is an optimal classification method that aims to minimize within-class variance and
-maximize between-class differences for a given number of classes. However, it produces a unique classification
-solution for each dataset, which can be a drawback when making comparisons across maps, such as in a series or atlas.
-In such cases, a consistent classification scheme applied across all maps might be preferable.</p>
+<p>Natural Breaks is an optimal classification method that aims to minimize within-class variance and maximize between-class differences for a given number of classes. However, it produces a unique classification solution for each dataset, which can be a drawback when making comparisons across maps, such as in a series or atlas. In such cases, a consistent classification scheme applied across all maps might be preferable.</p>
 </div>
 <input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-3">
 Manual</label><div class="sd-tab-content docutils">
-<p>Manual classification allows users to set one or all of the class breaks based on specific needs.
-This approach is useful when certain break points need to be predetermined, such as aligning with
-the mean or maintaining consistency across a series of maps. Manual classification is recommended
-when other methods provide a good solution but may benefit from slight adjustments to better suit
-specific requirements or visualisation methods.</p>
+<p>Manual classification allows users to set one or all of the class breaks based on specific needs. This approach is useful when certain break points need to be predetermined, such as aligning with the mean or maintaining consistency across a series of maps. Manual classification is recommended when other methods provide a good solution but may benefit from slight adjustments to better suit specific requirements or visualisation methods.</p>
 </div>
 <input id="sd-tab-item-4" name="sd-tab-set-0" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-4">
 Logarithmic scale</label><div class="sd-tab-content docutils">
-<p>Logarithmic scale classification is employed when the data spans multiple orders of magnitude,
-and a linear scale may not effectively represent the variations. This scale applies logarithmic
-transformation to the data, compressing larger values while expanding smaller ones. It is useful
-for visualising data with exponential growth or decay. However, interpreting values on a logarithmic
-scale may require a nuanced understanding. Consider using a logarithmic scale when there is a wide
-range of values, and a linear scale may obscure important patterns or trends.</p>
+<p>Logarithmic scale classification is employed when the data spans multiple orders of magnitude, and a linear scale may not effectively represent the variations. This scale applies logarithmic transformation to the data, compressing larger values while expanding smaller ones. It is useful for visualising data with exponential growth or decay. However, interpreting values on a logarithmic scale may require a nuanced understanding. Consider using a logarithmic scale when there is a wide range of values, and a linear scale may obscure important patterns or trends.</p>
 </div>
 <input id="sd-tab-item-5" name="sd-tab-set-0" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-5">
 Pretty Breaks</label><div class="sd-tab-content docutils">
-<p>Pretty Breaks is a classification method designed to create visually appealing and easily interpretable
-maps. This approach seeks to generate class breaks that align with “round” numbers, making the map more
-intuitive for viewers. Pretty Breaks is particularly useful when communicating complex spatial data to a
-broad audience, as it enhances the clarity and understandability of the map. Keep in mind that the choice
-of ‘pretty’ breaks may depend on the specific context and the preferences of the intended audience.</p>
+<p>Pretty Breaks is a classification method designed to create visually appealing and easily interpretable maps. This approach seeks to generate class breaks that align with “round” numbers, making the map more intuitive for viewers. Pretty Breaks is particularly useful when communicating complex spatial data to a broad audience, as it enhances the clarity and understandability of the map. Keep in mind that the choice of ‘pretty’ breaks may depend on the specific context and the preferences of the intended audience.</p>
 </div>
 <input id="sd-tab-item-6" name="sd-tab-set-0" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-6">
 Standard Deviation</label><div class="sd-tab-content docutils">
-<p>Standard Deviation classification is a method that determines class breaks based on the standard deviation
-of the data values. This approach organizes data into classes by considering the distribution of values
-around the mean. Each class represents a certain number of standard deviations from the mean, providing a
-statistical basis for categorising data. Standard Deviation classification is effective when wanting to
-highlight variability within the dataset. However, it’s important to consider the nature of the data
-distribution and whether this method aligns with the analytical goals of the map.</p>
+<p>Standard Deviation classification is a method that determines class breaks based on the standard deviation of the data values. This approach organizes data into classes by considering the distribution of values around the mean. Each class represents a certain number of standard deviations from the mean, providing a statistical basis for categorising data. Standard Deviation classification is effective when wanting to highlight variability within the dataset. However, it’s important to consider the nature of the data distribution and whether this method aligns with the analytical goals of the map.</p>
 </div>
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
@@ -922,9 +859,7 @@ How To: Graduated classification in QGIS<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Setting up a graduated classification in QGIS is similar to setting up a categorised classification.
-However, unlike the categorised classification, here you have to decide on how many classes and which
-method of graduation you want to use.</p>
+<p class="sd-card-text">Setting up a graduated classification in QGIS is similar to setting up a categorised classification. However, unlike the categorised classification, here you have to decide on how many classes and which method of graduation you want to use.</p>
 <p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/graduated_classification.mp4"></video></p>
 <p class="sd-card-text"><strong>To classify data in classes…</strong></p>
 <ol class="arabic simple">
@@ -940,7 +875,7 @@ method of graduation you want to use.</p>
 <figure class="align-center" id="graduated-histogram">
 <a class="reference internal image-reference" href="../../_images/Graduated_histogram.png"><img alt="../../_images/Graduated_histogram.png" src="../../_images/Graduated_histogram.png" style="width: 900px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.18 </span><span class="caption-text">Graduated classification. Source: <a class="reference external" href="https://www.axismaps.com/guide/data-classification">Axis Maps</a></span><a class="headerlink" href="#graduated-histogram" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 3.18 </span><span class="caption-text">Graduated classification. Source: <a class="reference external" href="https://www.axismaps.com/guide/data-classification">Axis Maps</a>.</span><a class="headerlink" href="#graduated-histogram" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="9">
@@ -1131,9 +1066,9 @@ Answer<div class="sd-summary-down docutils">
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nominal-ordinal-and-metric-scales">3.3.1. Nominal, Ordinal and Metric scales</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#single-symbol-classification">3.3.2. Single symbol classification</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#categorised-classification">3.3.3. Categorised classification</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graduated-classification">3.3.4. Graduated classification</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#single-symbol-classification">3.3.2. Single Symbol Classification</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#categorised-classification">3.3.3. Categorised Classification</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graduated-classification">3.3.4. Graduated Classification</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#self-assessment-questions">3.3.5. Self-Assessment Questions</a></li>
 </ul>
   </nav></div>

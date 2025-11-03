@@ -10,7 +10,6 @@
 
 # Exercise 3: Trigger & Intervention Map for Forecast-based-Action
 
-🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
 ## Characteristics of the exercise
 
@@ -70,7 +69,7 @@ __Relevant Wiki Articles:__
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction
+- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction.
 
 ### Conduct the training
 
@@ -212,7 +211,7 @@ The FEWSNET pages change often!
 ```
 
 1. Go to [FEWSNET Website](https://fews.net/). Click on `Data` -> `Acute Food Insecurity`.
-2. Scroll down. In `Geographic Area`, type in “Somalia” and click `Apply`
+2. Scroll down. In `Geographic Area`, type in “Somalia” and click `Apply`.
 3. Choose the newest dataset.
 
 ```{figure} /fig/IPC_Projections_website.png
@@ -441,15 +440,15 @@ __Tool:__ `Join attribute by location (summary)`
 
 * - Instruction
   - Join attribute by location (summary)
-* - 1. In the `Toolbox`-> Search for `Join attribute by location (summary)`
-      * Tip: If the `Toolbox` is not open, click `Processing`-> `Toolbox` 
-    2. `Input Layer`: Select your “district_pop_som” layer
-    3. `Input Layer 2`: Select “ML1_zonal_statistic"
-    4. `Geometric predicate`: Select “Intersection”
-    5. `Field to summarise`: Select “Index_per_IPCPolygon_ML1” 
-    6. `Summaries to calculate`: Only check the option “mean”
-    7. Under `Join Layer`, click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "ML1_IPC_Index" and click `Save`
-    8. Click `Run`
+* - 1. In the `Toolbox`-> Search for `Join attribute by location (summary)`.
+      * Tip: If the `Toolbox` is not open, click `Processing`-> `Toolbox`.
+    2. `Input Layer`: Select your “district_pop_som” layer.
+    3. `Input Layer 2`: Select “ML1_zonal_statistic".
+    4. `Geometric predicate`: Select “Intersection”.
+    5. `Field to summarise`: Select “Index_per_IPCPolygon_ML1”.
+    6. `Summaries to calculate`: Only check the option “mean”.
+    7. Under `Join Layer`, click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "ML1_IPC_Index" and click `Save`.
+    8. Click `Run`.
   -
     ```{figure} /fig/Exercise_trigger_join_attributes_location.png
     ---
@@ -473,10 +472,10 @@ __Tool:__ [`Field Calculator`](https://giscience.github.io/gis-training-resource
 
 1. Right-click on "ML1_IPC_Index" layer -> `Attribute Table`-> click on  [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field) ![](/fig/mActionCalculateField.png) to open the field calculator
 2. Check `Create new field`
-3. `Output field name`: Name the new column “Trigger_activation”
-4. `Result field type`: Text (string)
-5. Add the code below into the `Expression` field
-6. Save the new column by clicking on ![](/fig/mActionSaveEdits.png) in the attribute table and end the editing mode by clicking on ![](/fig/mActionToggleEditing.png)
+3. `Output field name`: Name the new column “Trigger_activation”.
+4. `Result field type`: Text (string).
+5. Add the code below into the `Expression` field.
+6. Save the new column by clicking on ![](/fig/mActionSaveEdits.png) in the attribute table and end the editing mode by clicking on ![](/fig/mActionToggleEditing.png).
 ``````{list-table}
 :header-rows: 1
 :widths: 15
@@ -492,8 +491,8 @@ __Tool:__ [`Field Calculator`](https://giscience.github.io/gis-training-resource
     END
     ```
 ``````
-6. Click `ok`
-7. Save the new column by clicking on ![](/fig/mActionSaveEdits.png) in the attribute table and end the editing mode by clicking on ![](/fig/mActionToggleEditing.png)
+6. Click `ok`.
+7. Save the new column by clicking on ![](/fig/mActionSaveEdits.png) in the attribute table and end the editing mode by clicking on ![](/fig/mActionToggleEditing.png).
 
 __Result:__ A layer with all districts of Somalia with a column of "Yes" and "No" values indicating whether the trigger levels have been reached or not.
 
@@ -509,7 +508,7 @@ align: center
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_13_trigger_activation.mp4"></video>
 ```
 
-### Step 10.: Visualisation of results
+### Step 10.: Visualising the Results
 
 __Purpose:__ Definition of how features are represented visually on the map.
 
@@ -517,17 +516,17 @@ __Tool:__ [Symbology](https://giscience.github.io/gis-training-resource-center/c
 
 __Trigger Activation__
 
-1. Right-click on the “ML1_IPC_Index” layer -> `Properties` -> `Symbology`
-2. In the down left corner click on `Style` -> `Load Style`
+1. Right-click on the “ML1_IPC_Index” layer -> `Properties` -> `Symbology`.
+2. In the down left corner click on `Style` -> `Load Style`.
 3. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file __“Style_Trigger_Activation_ex.qml”__.
-4. Click `Open`. Then click on `Load Style`
-5. Back in the “Layer Properties” Window click `Apply` and `OK`
+4. Click `Open`. Then click on `Load Style`.
+5. Back in the “Layer Properties” Window click `Apply` and `OK`.
 
 ::::{dropdown} Info: Trigger Activation Layer
 :open:
 You will now see districts where no trigger is activated in green and districts with trigger activation in pink.
 
-The “Style_Trigger_Activation.qml” style layer is configured to show the district names only where the trigger is actually activated. If there is no trigger activation you can activate the admin 1 boundary layer for better map orientation (see __Administrative 2 Boundaries__ below)
+The “Style_Trigger_Activation.qml” style layer is configured to show the district names only where the trigger is actually activated. If there is no trigger activation you can activate the admin 1 boundary layer for better map orientation (see __Administrative 2 Boundaries__ below).
 ::::
 
 ```{figure} /fig/Map_yes_trigger.PNG
@@ -541,12 +540,12 @@ align: center
 
 __Administrative 2 Boundaries (Regions)__
 
-6. Right click on the "Som_admin1_regions_UNDP.gqkp" (Regions) layer -> `Properties` -> `Symbology`
-7. In the down left corner click on `Style` -> `Load Style`
+6. Right click on the "Som_admin1_regions_UNDP.gqkp" (Regions) layer -> `Properties` -> `Symbology`.
+7. In the down left corner click on `Style` -> `Load Style`.
 8. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file __“SOM_regions_style_ex.qml”__.
-9. Click `Open`. Then click on `Load Style` 
-10. Back in the “Layer Properties” Window click `Apply` and `OK`
-11. Add a the OpenStreetMap basemap by clicking on `Layer` -> `Add Layer` -> `Add XYZ layer...` -> Select the OpenStreetMap. Click `Add`. ([Wiki basemap](/content/Wiki/en_qgis_basemaps_wiki.md))
+9. Click `Open`. Then click on `Load Style`.
+10. Back in the “Layer Properties” Window click `Apply` and `OK`.
+11. Add a the OpenStreetMap basemap by clicking on `Layer` -> `Add Layer` -> `Add XYZ layer...` -> Select the OpenStreetMap. Click `Add`. ([Wiki basemap](/content/Wiki/en_qgis_basemaps_wiki.md)).
 12. Place the OpenStreetMap basemap on the bottom.
 13. Delet all layers __exept__:
     * Trigger_activation
@@ -588,19 +587,19 @@ Remember the [layer concept](/content/Module_2/en_qgis_geodata_concept.md) and m
 
 ### Step 11: Making print map
 
-__Purpose:__ Visualisation of the map features in a printable map layout
+__Purpose:__ Visualisation of the map features in a printable map layout.
 
 __Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html)
 
 
-1. If not done before, delete all layers expect __Trigger_activation__, __Som_admin1_regions_UNDP__ and __OpenStreetMap__
+1. If you have not done this before, delete all layers expect __Trigger_activation__, __Som_admin1_regions_UNDP__ and __OpenStreetMap__.
 2. Open a new print layout by clicking on `Project` -> `New Print Layout` -> enter the name of your current Project e.g "2024_01".
-3. Go the the `Modul_5_Exercise2_Drought_Monitoring_Trigger` folder and drag and drop the file `Trigger_activation_Intervention_map_ex.qpt` in the print layout
+3. Go the the `Modul_5_Exercise2_Drought_Monitoring_Trigger` folder and drag and drop the file `Trigger_activation_Intervention_map_ex.qpt` in the print layout.
 4. Change the date to the current date by clicking on "Further map info…" in the items panel. Click on the `Item Properties` tab and scroll down. Here you can change the date in the `Main Properties` field.
 5. If necessary, adjust the legend by clicking on the legend in the `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there check if you have to open the dropdown. Make sure `Auto update` is not checked.
     * Remove all items in the legend be clicking on the item and then on the red minus icon below.
-    * Add __Trigger_activation__ to the legend by clicking on the green plus and click on the layer and click `ok`
-    * Add __Som_admin1_regions_UNDP__ to the legend by clicking on the green plus and click on the layer and click `ok`
+    * Add __Trigger_activation__ to the legend by clicking on the green plus and click on the layer and click `ok`.
+    * Add __Som_admin1_regions_UNDP__ to the legend by clicking on the green plus and click on the layer and click `ok`.
  
 
 ```{dropdown} Video: Making a print map
@@ -629,21 +628,22 @@ When you have finished the design of you map, you can export it as pdf or image 
 
 __Export as Image__
 
-1. In the print layout click on `Layer` -> `Export as Image`
-2. Chose the __Result__ folder in the folder you have created in step 1. Give the file the name of the project e.g 2022_04
-3. Click on `Save`
-4. The window "Image Export Options" will appear. Click `Save`
-Now the image can be found in the result folder in the folder you created in Step 1
+1. In the print layout click on `Layer` -> `Export as Image`.
+2. Chose the __Result__ folder in the folder you have created in step 1. Give the file the name of the project e.g 2022_04.
+3. Click on `Save`.
+4. The window "Image Export Options" will appear. Click `Save`.
+Now the image can be found in the result folder in the folder you created in Step 1.
 
 
 __Export as PDF__
 
-1. In the print layout click on `Layer` -> `Export as PDF`
-2. Chose the __Result__ folder in the folder you have created in step 1. Give the file the name of the project e.g 2022_04
-3.  Click on `Save`
+1. In the print layout click on `Layer` -> `Export as PDF`.
+2. Chose the __Result__ folder in the folder you have created in step 1. Give the file the name of the project e.g 2022_04.
+3. Click on `Save`.
 4. The window "PDF Export Options" will appear.  For the best results, select the `lossless` image compression.
-5. Click `Save`
-Now the image can be found in the result folder in the folder you created in Step 1
+5. Click `Save`.
+
+Now the image can be found in the result folder in the folder you created in Step 1.
 
 
 ```{figure} /fig/map_output_example_ex.png

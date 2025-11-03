@@ -19,8 +19,7 @@ width: 500 px
 Visual representation of different overlay operations. 
 ```
 
-Overlay operations include __Clipping, Buffering, and Dissolving__. In the next subchapters, we will take a 
-look at each of these overlay operations in turn and provide some examples for humanitarian work.
+Overlay operations include __Clipping, Buffering, and Dissolving__. In the next subchapters, we will take a look at each of these overlay operations in turn and provide some examples for humanitarian work.
 
 ### Clip
 
@@ -50,23 +49,17 @@ Screenshot of the Clip tool with the input data.
 
 ### Exercise: Clipping a roads layer to administrative boundaries
 
-Information on road infrastructure for humanitarian aid operations is of great importance 
-and can be easily retrieved from open-source data sources like OpenStreetMap. However, this 
-information is often included in extensive datasets that contain a significant amount of 
-irrelevant details for specific operations or it covers a lot more area than is necessary 
-for the operation. To make working with this data more efficient, it is common practice to 
-clip the data to the area of interest. In addition to clipping, data can often be filtered, 
-in order to remove data we are not interested in.
+Information on road infrastructure for humanitarian aid operations is of great importance and can be easily retrieved from open-source data sources like OpenStreetMap. However, this information is often included in extensive datasets that contain a significant amount of irrelevant details for specific operations or it covers a lot more area than is necessary for the operation. To make working with this data more efficient, it is common practice toclip the data to the area of interest. In addition to clipping, data can often be filtered, in order to remove data we are not interested in.
 
-1. Load the OSM roads data from the HOT Export tool (part of the Humanitarian OpenStreetMap Team) [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Spatial_geodataprocessing/hotosm_sdn_roads_lines_shp.zip) 
+1. Load the OSM roads data from the HOT Export tool (part of the Humanitarian OpenStreetMap Team) [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Spatial_geodataprocessing/hotosm_sdn_roads_lines_shp.zip) .
 as a new layer: __Road_infrastructure_Sudan.geojson__. 
 
-2. Filter the layer by using the __query builder__ to only show __primary and residential roads__ ("highway" = 'primary' OR "highway" = 'residential')
+2. Filter the layer by using the __query builder__ to only show __primary and residential roads__ ("highway" = 'primary' OR "highway" = 'residential').
 3. Load the admin1 layer for Sudan which contains the district White Nile, __ne_10m_admin_1_Sudan_White_Nile.geojson__. They are downloaded from [Natural Earth Data](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/).
-4. Select the roads layer and open the __Clip__ dialogue from `Vector` > `Geoprocessing Tools`
-    - Set roads as the __input layer__ and the district boundaries of White Nile as the __overlay layer__
-    - Click __Run__ to generate a temporary layer called Clipped
-7. You now have a tidy roads layer which contains the necessary information
+4. Select the roads layer and open the __Clip__ dialogue from `Vector` > `Geoprocessing Tools`.
+    - Set roads as the __input layer__ and the district boundaries of White Nile as the __overlay layer__.
+    - Click __Run__ to generate a temporary layer called Clipped.
+7. You now have a tidy roads layer which contains the necessary information.
 
 ````{dropdown} Solution: Clipping a roads layer to administrative boundaries
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_clip_roads.mp4"></video>
@@ -75,14 +68,9 @@ as a new layer: __Road_infrastructure_Sudan.geojson__.
 
 ### Dissolve
 
-The ![](/fig/mAlgorithmDissolve.png) `Dissolve`-tool creates a new layer and merges overlapping features from 
-one or two vector layers. You can pick one or more attributes to group together features that share the same 
-value for those attributes. Alternatively, you can combine all features into one. If you're working with polygons, 
-it will remove shared boundaries between them.
+The ![](/fig/mAlgorithmDissolve.png) `Dissolve`-tool creates a new layer and merges overlapping features from one or two vector layers. You can pick one or more attributes to group together features that share the same value for those attributes. Alternatively, you can combine all features into one. If you're working with polygons, it will remove shared boundaries between them.
 
-If you turn on the "Keep disjoint features separate" option when running the tool, it'll make sure that features or parts 
-that don't overlap or touch each other are saved as separate features instead of being part of one big feature. This allows 
-you to create several vector layers.
+If you turn on the "Keep disjoint features separate" option when running the tool, it'll make sure that features or parts that don't overlap or touch each other are saved as separate features instead of being part of one big feature. This allows you to create several vector layers.
 
 :::{card}
 __Humanitarian Example:__
@@ -102,8 +90,7 @@ In the next section on __buffers__ we will be using the __dissolve-tool__.
 
 ### Buffer
 
-Buffering creates zones of predetermined distances around geometric features as a new polygon layer. These buffers surround the input vector features. This buffer zone is typically uniform and extends outward 
-from the original input features, making it useful for various spatial analyses and mapping applications. Buffers can be created around points, lines, and polygons as shown in {numref}`buffering_options`.
+Buffering creates zones of predetermined distances around geometric features as a new polygon layer. These buffers surround the input vector features. This buffer zone is typically uniform and extends outward from the original input features, making it useful for various spatial analyses and mapping applications. Buffers can be created around points, lines, and polygons as shown in {numref}`buffering_options`.
 
 Examples for analyses using buffers could be:
 - Creating of buffer zones to protect the environment
@@ -125,8 +112,7 @@ name: buffering_options
 Different kinds of buffer zones <br /> (Adapted after [QGIS Documentation](https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve), Version 3.28)
 ```
 
-There are several variations in buffering. The __buffer distance__ or __buffer size can vary__ according to the numerical values provided. 
-The numerical values have to be defined in map units according to the Coordinate Reference System (CRS) used with the data. 
+There are several variations in buffering. The __buffer distance__ or __buffer size can vary__ according to the numerical values provided. The numerical values have to be defined in map units according to the Coordinate Reference System (CRS) used with the data. 
 
 ````{Attention}
 
@@ -135,7 +121,7 @@ The numerical values have to be defined in map units according to the Coordinate
 width: 450 px
 name: dist_degree_error_message
 ---
-The error message QGIS displays when performing distance based calculations in a geographic coordinate system
+The error message QGIS displays when performing distance based calculations in a geographic coordinate system.
 ```
 If...
 - You get a projection warning message 
@@ -166,34 +152,28 @@ This is why you’ll need to convert to a local/projected coordinate system to b
 
 ### Exercise: Create 10km buffer around health centres
 
-Another example relevant for humanitarian action can be the creation of a map which provides information 
-about the coverage of health sites in the distance of 10 km.
-To achieve this, a buffer of 10 km is created around points representing healthsites. In some cases, 
-this will create buffer zones which overlap. In order to create a homogenous area, we can dissolve overlapping 
-buffer zones. 
+Another example relevant for humanitarian action can be the creation of a map which provides information about the coverage of health sites in the distance of 10 km.
+To achieve this, a buffer of 10 km is created around points representing healthsites. In some cases, this will create buffer zones which overlap. In order to create a homogenous area, we can dissolve overlapping buffer zones. 
 
-1. Download the __Sudan health sites__ data from [HDX](https://data.humdata.org/dataset/sudan-healthsites) as a shapefile
+1. Download the __Sudan health sites__ data from [HDX](https://data.humdata.org/dataset/sudan-healthsites) as a shapefile.
 2. Load your new data into QGIS. Also add the district boundaries of Khartoum, __ne_10m_admin_1_Sudan_Khartoum.geojson__. 
 They are also downloaded and adapted from [Natural Earth Data](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/).
-3. Clip your health sites to the boundaries of Karthoum district
-4. __Reproject__ the health sites layer to a local coordinate system to enable setting distances in km
-    - Vector menu > Data Management Tools > __Reproject Layer__
-    - Select the __health sites__ layer as the input layer
-    - Set the target __CRS to WGS 84 / UTM zone 36N__ (click the projections icon to search the full list of options)
-    - Click  `Run` to reproject
-5. Open the __Buffer__ tool by accessing `Vector` > `Geoprocessing Tools` > `Buffer`
-    - Select the __reprojected layer__ as the input layer
-    - Set the distance to __10km__
-    - Check the option to __dissolve__ result
-    - Leave the other options as defaults and click `Run`
-6. Now you have a rough overview over the coverage with health sites for the district of Khartoum
+3. Clip your health sites to the boundaries of Karthoum district.
+4. __Reproject__ the health sites layer to a local coordinate system to enable setting distances Kilometers.
+    - Vector menu > Data Management Tools > __Reproject Layer__.
+    - Select the __health sites__ layer as the input layer.
+    - Set the target __CRS to WGS 84 / UTM zone 36N__ (click the projections icon to search the full list of options).
+    - Click  `Run` to reproject.
+5. Open the __Buffer__ tool by accessing `Vector` > `Geoprocessing Tools` > `Buffer`.
+    - Select the __reprojected layer__ as the input layer.
+    - Set the distance to __10km__.
+    - Check the option to __dissolve__ result.
+    - Leave the other options as defaults and click `Run`.
+6. Now you have a rough overview over the coverage with health sites for the district of Khartoum.
 
 ````{dropdown} Solution: Create 10km buffer around health centres
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_buffer_health.mp4"></video>
 
-1. 
-2. 
-3. 
 
 ````
 
@@ -207,7 +187,7 @@ In addition to the standard QGIS operation __Clip__, there are two other more ad
 width: 250 px
 name: gdal_clipping_tools
 ---
-The GDAL tools Clip vector by extent and Clip vector by mask layer
+The GDAL tools Clip vector by extent and Clip vector by mask layer.
 ```
 
 ::::{tab-set}
@@ -215,12 +195,12 @@ The GDAL tools Clip vector by extent and Clip vector by mask layer
 :::{tab-item} Clip vector by extent
 
 This operation clips any vector file to a given extent. This clip extent will be defined by a bounding box that should be used for the vector output file. It also has to be defined in the target CRS coordinates. There are different methods to define the bounding box, which are the great difference between this tool and the standard clipping process:
-* Calculate from a layer: this uses the extent of a layer loaded into the current project
-* Calculate from layout map: uses the extent of a layout map item in the active project
-* Calculate from bookmark: uses the extent of a saved bookmark
-* Use map canvas extent
-* Draw on canvas: click and drag a rectangle delimiting the area to take into account
-* Enter the coordinates as xmin, xmax, ymin, ymax
+* Calculate from a layer: this uses the extent of a layer loaded into the current project.
+* Calculate from layout map: uses the extent of a layout map item in the active project.
+* Calculate from bookmark: uses the extent of a saved bookmark.
+* Use map canvas extent.
+* Draw on canvas: click and drag a rectangle delimiting the area to take into account.
+* Enter the coordinates as xmin, xmax, ymin, ymax.
 
 ```{figure} /fig/en_clip_vector_by_extent.PNG
 ---
@@ -242,7 +222,7 @@ This operation uses a mask polygon layer to clip any vector layer. This operatio
 width: 450 px
 name: clip_vector_by_mask_layer
 ---
-Screenshot of the tool Clip vector by mask layer
+Screenshot of the tool Clip vector by mask layer.
 ```
 
 :::

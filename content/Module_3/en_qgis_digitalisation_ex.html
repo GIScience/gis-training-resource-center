@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Exercise 1 (Digitisation): Access to financial institutions &#8212; GIS Resource Training Center</title>
+    <title>Exercise 1 (Digitisation): Access to Financial Institutions &#8212; GIS Resource Training Center</title>
   
   
   
@@ -561,7 +561,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Exercise 1 (Digitisation): Access to financial institutions</h1>
+    <h1>Exercise 1 (Digitisation): Access to Financial Institutions</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -578,7 +578,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-a-basemap">Add a basemap</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map-road-blocks">Map road blocks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mapping-road-blocks">Mapping Road Blocks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map-the-connection-routes">Map the connection routes</a></li>
 </ul>
             </nav>
@@ -603,7 +603,7 @@ document.write(`
 </div>
 </div>
 <section class="tex2jax_ignore mathjax_ignore" id="exercise-1-digitisation-access-to-financial-institutions">
-<h1>Exercise 1 (Digitisation): Access to financial institutions<a class="headerlink" href="#exercise-1-digitisation-access-to-financial-institutions" title="Permalink to this heading">#</a></h1>
+<h1>Exercise 1 (Digitisation): Access to Financial Institutions<a class="headerlink" href="#exercise-1-digitisation-access-to-financial-institutions" title="Permalink to this heading">#</a></h1>
 <section id="characteristics-of-the-exercise">
 <h2>Characteristics of the exercise<a class="headerlink" href="#characteristics-of-the-exercise" title="Permalink to this heading">#</a></h2>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
@@ -675,9 +675,7 @@ document.write(`
 <div class="admonition-a-note-on-plugins admonition">
 <p class="admonition-title">A note on plugins</p>
 <p>class: attention</p>
-<p>This exercise makes use of a plugin which is not installed by default: <code class="docutils literal notranslate"><span class="pre">OSM</span> <span class="pre">Place</span> <span class="pre">Search</span></code>
-Make sure you take a little bit of time to explain the role of plugins in QGIS and how to install them in QGIS.
-Furthermore, instead of using XYZ-tiles for the basemap, you can decide to use the plugin <strong>“QuickMapServices”</strong>.</p>
+<p>This exercise makes use of a plugin which is not installed by default: <code class="docutils literal notranslate"><span class="pre">OSM</span> <span class="pre">Place</span> <span class="pre">Search</span></code>.Make sure you take Furthermore, instead of using XYZ-tiles for the basemap, you can decide to use the plugin <strong>“QuickMapServices”</strong>.</p>
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -739,11 +737,11 @@ Arrange your layer in the <code class="docutils literal notranslate"><span class
 <li><p>In the <code class="docutils literal notranslate"><span class="pre">OSM</span> <span class="pre">place</span> <span class="pre">search</span></code> panel, search “Abuja Central Business District” and choose Abuja Municipality Area Council, City. Zoom to the Central Business District. We want to digitise the location of banks in this region.
 For this, we will need to create a new point layer:</p>
 <ol class="arabic simple">
-<li><p>Click on  <code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">GeoPackage</span> <span class="pre">Layer</span></code>(<a class="reference internal" href="../Wiki/en_qgis_digitisation_wiki.html"><span class="doc std std-doc">Wiki Video</span></a>)</p></li>
+<li><p>Click on  <code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">GeoPackage</span> <span class="pre">Layer</span></code>(<a class="reference internal" href="../Wiki/en_qgis_digitisation_wiki.html"><span class="doc std std-doc">Wiki Video</span></a>) .</p></li>
 </ol>
 <ul class="simple">
 <li><p>Under <code class="docutils literal notranslate"><span class="pre">Database</span></code> click on <img alt="" src="../../_images/Three_points.png" /> and navigate to <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder in your project folder. Give the new dataset the name “Abuja_bank_point”. Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
-<li><p>Under <code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">type</span></code>: Select <code class="docutils literal notranslate"><span class="pre">Point</span></code></p></li>
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">type</span></code>: Select <code class="docutils literal notranslate"><span class="pre">Point</span></code> .</p></li>
 <li><p>Select the coordinate reference system (CRS) “EPSG:4326-WGS 84”. By default, the QGIS selects the project CRS.</p></li>
 <li><p>Under <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Field</span></code> you can add columns to the new layer. Add the column “Name”.</p>
 <ul>
@@ -755,7 +753,7 @@ For this, we will need to create a new point layer:</p>
 </li>
 </ul>
 <ul class="simple">
-<li><p>Your new layer will appear in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code></p></li>
+<li><p>Your new layer will appear in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code>.</p></li>
 </ul>
 </li>
 </ol>
@@ -767,7 +765,7 @@ For this, we will need to create a new point layer:</p>
 <figure class="align-center" id="new-point-layer-abuja">
 <a class="reference internal image-reference" href="../../_images/new_layer_abuja.png"><img alt="../../_images/new_layer_abuja.png" src="../../_images/new_layer_abuja.png" style="height: 400px;" /></a>
 <figcaption>
-<p><span class="caption-text">Create new point layer.</span><a class="headerlink" href="#new-point-layer-abuja" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Creating a new point layer.</span><a class="headerlink" href="#new-point-layer-abuja" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="4">
@@ -791,15 +789,15 @@ For this, we will need to create a new point layer:</p>
 </figure>
 </section>
 </section>
-<section id="map-road-blocks">
-<h2>Map road blocks<a class="headerlink" href="#map-road-blocks" title="Permalink to this heading">#</a></h2>
+<section id="mapping-road-blocks">
+<h2>Mapping Road Blocks<a class="headerlink" href="#mapping-road-blocks" title="Permalink to this heading">#</a></h2>
 <p>There is some reliable information that there is a roadblock due to construction at the junction of “Independent Avenue” and ‘“Tafawa Balewa Way”. To visualise this on our map we want to create a polygon of this roadblock.  The Polygon should cover the entire junction.</p>
 <ol class="arabic simple">
-<li><p>To do that we need again a new layer. In this case a polygon layer. The creation is basically the same as for the point.
-1. Click on  <code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">GeoPackage</span> <span class="pre">Layer</span></code>(<a class="reference internal" href="../Wiki/en_qgis_digitisation_wiki.html"><span class="doc std std-doc">Wiki</span></a>)</p>
+<li><p>To do that we need again a new layer. In this case a polygon layer. The creation is basically the same as for the point.</p>
 <ol class="arabic simple">
+<li><p>Click on  <code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">GeoPackage</span> <span class="pre">Layer</span></code>(<a class="reference internal" href="../Wiki/en_qgis_digitisation_wiki.html"><span class="doc std std-doc">Wiki</span></a>).</p></li>
 <li><p>Under <code class="docutils literal notranslate"><span class="pre">Database</span></code> click on <img alt="" src="../../_images/Three_points.png" /> and navigate to <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder. Give the new dataset the name “Abuja_roadbloc_polygon”. Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">type</span></code>: Select <code class="docutils literal notranslate"><span class="pre">Polygon</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">type</span></code>: Select <code class="docutils literal notranslate"><span class="pre">Polygon</span></code>.</p></li>
 <li><p>Select the coordinate reference system (CRS) “EPSG:4326-WGS 84”.</p></li>
 <li><p>Under <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Field</span></code> you can add columns to the new layer. Add the column “Roadblock_type”.</p>
 <ul class="simple">
@@ -809,7 +807,7 @@ For this, we will need to create a new point layer:</p>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
 </ul>
 </li>
-<li><p>Your new layer will appear in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code></p></li>
+<li><p>Your new layer will appear in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code>.</p></li>
 </ol>
 </li>
 <li><p>To digitise this area, click on your new „Abuja_roadbloc_polygon“ layer (<a class="reference internal" href="../Wiki/en_qgis_digitisation_wiki.html"><span class="doc std std-doc">Wiki</span></a>).</p>
@@ -826,9 +824,9 @@ For this, we will need to create a new point layer:</p>
 <p>A business man drove all the way from the North of Herbert Macauley Way in the Central Business District of Abuja to do transaction at the Bank of Industry on Monday morning. Unfortunately, he found that the network server of the bank is down and needed to proceed to the Zenith Bank as the only functioning Bank. He later discovered that there is a road blocked at the junction of independence avenue and Tafawa Balewa way due to road construction.</p>
 <p>Create a road line layer that will allow him to get to Zenith Bank easily.</p>
 <ol class="arabic">
-<li><p>To do that we need again a new layer. In this case a line layer. The creation of that is nearly the same as for the point.
-1. Click on  <code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">GeoPackage</span> <span class="pre">Layer</span></code>(<a class="reference internal" href="../Wiki/en_qgis_digitisation_wiki.html"><span class="doc std std-doc">Wiki</span></a>)</p>
+<li><p>To do that we need again a new layer. In this case a line layer. The creation of that is nearly the same as for the point.</p>
 <ul>
+<li><p>Click on  <code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">GeoPackage</span> <span class="pre">Layer</span></code>(<a class="reference internal" href="../Wiki/en_qgis_digitisation_wiki.html"><span class="doc std std-doc">Wiki</span></a>).</p></li>
 <li><p>Under <code class="docutils literal notranslate"><span class="pre">Database</span></code> click on <img alt="" src="../../_images/Three_points.png" /> and navigate to <code class="docutils literal notranslate"><span class="pre">temp</span></code> folder. Give the new dataset the name “Abuja_bank_road_connection_line”. Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">type</span></code>: Select <code class="docutils literal notranslate"><span class="pre">Line</span></code>.</p></li>
 <li><p>Select the coordinate reference system (CRS) “EPSG:4326-WGS 84”.</p></li>
@@ -847,7 +845,7 @@ For this, we will need to create a new point layer:</p>
 </li>
 </ul>
 <ul class="simple">
-<li><p>Your new layer will appear in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code></p></li>
+<li><p>Your new layer will appear in the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code>.</p></li>
 </ul>
 </li>
 <li><p>Select the line layer “Abuja_bank_road_connection_line” to add data to in the Layer panel <a class="reference internal" href="../Wiki/en_qgis_digitisation_wiki.html"><span class="doc std std-doc">Wiki</span></a>.</p>
@@ -855,7 +853,7 @@ For this, we will need to create a new point layer:</p>
 <li><p>Go to the digitisation toolbar and click on<img alt="" src="../../_images/mActionToggleEditing.png" />. Now the layer is in the editing mode.</p></li>
 <li><p>Click on <img alt="" src="../../_images/mActionCaptureLine.png" />.</p></li>
 <li><p>To digitise line features, click along the line. When you are done, right-click on the last point of the line to finish the feature.</p></li>
-<li><p>Once you click, a window will appear “Abuja_bank_road_connection_line- Feature Attribute”. Add the road typ which is “Secondary_road”</p></li>
+<li><p>Once you click, a window will appear “Abuja_bank_road_connection_line- Feature Attribute”. Add the road typ which is “Secondary_road”.</p></li>
 <li><p>Once you are done with digitisation, click on <img alt="" src="../../_images/mActionSaveEdits.png" /> to save your edits.</p></li>
 <li><p>Click again on <img alt="" src="../../_images/mActionToggleEditing.png" /> to end the editing mode.</p></li>
 </ol>
@@ -864,7 +862,7 @@ For this, we will need to create a new point layer:</p>
 <figure class="align-center" id="abuja-final">
 <a class="reference internal image-reference" href="../../_images/Abuja_Banks_final.png"><img alt="../../_images/Abuja_Banks_final.png" src="../../_images/Abuja_Banks_final.png" style="height: 400px;" /></a>
 <figcaption>
-<p><span class="caption-text">Exercise result example.</span><a class="headerlink" href="#abuja-final" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Your results could look something like this.</span><a class="headerlink" href="#abuja-final" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -922,7 +920,7 @@ For this, we will need to create a new point layer:</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-a-basemap">Add a basemap</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map-road-blocks">Map road blocks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mapping-road-blocks">Mapping Road Blocks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map-the-connection-routes">Map the connection routes</a></li>
 </ul>
   </nav></div>

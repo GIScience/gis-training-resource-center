@@ -595,7 +595,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-calculation-of-population-proportion-per-intersection-polygon">Step 7: Calculation of Population Proportion per Intersection Polygon</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-8-calculate-ipc-index-per-district">Step 8: Calculate IPC Index per District</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-9-evaluate-trigger-activation">Step 9: Evaluate Trigger Activation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-10-visualisation-of-results">Step 10.: Visualisation of results</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-10-visualising-the-results">Step 10.: Visualising the Results</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-11-making-print-map">Step 11: Making print map</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-13-exporting-map">Step 13.: Exporting Map</a></li>
 </ul>
@@ -624,7 +624,6 @@ document.write(`
 </div>
 <section class="tex2jax_ignore mathjax_ignore" id="exercise-3-trigger-intervention-map-for-forecast-based-action">
 <h1>Exercise 3: Trigger &amp; Intervention Map for Forecast-based-Action<a class="headerlink" href="#exercise-3-trigger-intervention-map-for-forecast-based-action" title="Permalink to this heading">#</a></h1>
-<p>🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧</p>
 <section id="characteristics-of-the-exercise">
 <h2>Characteristics of the exercise<a class="headerlink" href="#characteristics-of-the-exercise" title="Permalink to this heading">#</a></h2>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
@@ -700,7 +699,7 @@ document.write(`
 <li><p class="sd-card-text">Take the time to familiarise yourself with the exercise and the provided material.</p></li>
 <li><p class="sd-card-text">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</p></li>
 <li><p class="sd-card-text">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <strong>and unzipped</strong> the data folder.</p></li>
-<li><p class="sd-card-text">Check out <a class="reference internal" href="../Trainers_corner/en_how_to_training.html"><span class="doc std std-doc">How to do trainings?</span></a> for some general tips on training conduction</p></li>
+<li><p class="sd-card-text">Check out <a class="reference internal" href="../Trainers_corner/en_how_to_training.html"><span class="doc std std-doc">How to do trainings?</span></a> for some general tips on training conduction.</p></li>
 </ul>
 <p class="rubric">Conduct the training</p>
 <p class="sd-card-text"><strong>Introduction:</strong></p>
@@ -891,7 +890,7 @@ On the website, you will have to click on Somalia to access the data. Alternativ
 </div>
 <ol class="arabic simple">
 <li><p>Go to <a class="reference external" href="https://fews.net/">FEWSNET Website</a>. Click on <code class="docutils literal notranslate"><span class="pre">Data</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Acute</span> <span class="pre">Food</span> <span class="pre">Insecurity</span></code>.</p></li>
-<li><p>Scroll down. In <code class="docutils literal notranslate"><span class="pre">Geographic</span> <span class="pre">Area</span></code>, type in “Somalia” and click <code class="docutils literal notranslate"><span class="pre">Apply</span></code></p></li>
+<li><p>Scroll down. In <code class="docutils literal notranslate"><span class="pre">Geographic</span> <span class="pre">Area</span></code>, type in “Somalia” and click <code class="docutils literal notranslate"><span class="pre">Apply</span></code>.</p></li>
 <li><p>Choose the newest dataset.</p></li>
 </ol>
 <figure class="align-center" id="fewsnet-ipc-download-ipc-projections">
@@ -1155,19 +1154,19 @@ Video: Calculation of Population Proportion per Intersection Polygon<div class="
 </thead>
 <tbody>
 <tr class="row-even"><td><ol class="arabic simple">
-<li><p>In the <code class="docutils literal notranslate"><span class="pre">Toolbox</span></code>-&gt; Search for <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">attribute</span> <span class="pre">by</span> <span class="pre">location</span> <span class="pre">(summary)</span></code></p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">Toolbox</span></code>-&gt; Search for <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">attribute</span> <span class="pre">by</span> <span class="pre">location</span> <span class="pre">(summary)</span></code>.</p></li>
 </ol>
 <ul class="simple">
-<li><p>Tip: If the <code class="docutils literal notranslate"><span class="pre">Toolbox</span></code> is not open, click <code class="docutils literal notranslate"><span class="pre">Processing</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Toolbox</span></code></p></li>
+<li><p>Tip: If the <code class="docutils literal notranslate"><span class="pre">Toolbox</span></code> is not open, click <code class="docutils literal notranslate"><span class="pre">Processing</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Toolbox</span></code>.</p></li>
 </ul>
 <ol class="arabic simple" start="2">
-<li><p><code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Layer</span></code>: Select your “district_pop_som” layer</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Layer</span> <span class="pre">2</span></code>: Select “ML1_zonal_statistic”</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Geometric</span> <span class="pre">predicate</span></code>: Select “Intersection”</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">to</span> <span class="pre">summarise</span></code>: Select “Index_per_IPCPolygon_ML1”</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Summaries</span> <span class="pre">to</span> <span class="pre">calculate</span></code>: Only check the option “mean”</p></li>
-<li><p>Under <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">Layer</span></code>, click on the three points <img alt="" src="../../_images/Three_points.png" />-&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">to</span> <span class="pre">File</span></code> and navigate to you monitoring folder [Year_Month]. Give the output the name “ML1_IPC_Index” and click <code class="docutils literal notranslate"><span class="pre">Save</span></code></p></li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Run</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Layer</span></code>: Select your “district_pop_som” layer.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Layer</span> <span class="pre">2</span></code>: Select “ML1_zonal_statistic”.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Geometric</span> <span class="pre">predicate</span></code>: Select “Intersection”.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">to</span> <span class="pre">summarise</span></code>: Select “Index_per_IPCPolygon_ML1”.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Summaries</span> <span class="pre">to</span> <span class="pre">calculate</span></code>: Only check the option “mean”.</p></li>
+<li><p>Under <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">Layer</span></code>, click on the three points <img alt="" src="../../_images/Three_points.png" />-&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">to</span> <span class="pre">File</span></code> and navigate to you monitoring folder [Year_Month]. Give the output the name “ML1_IPC_Index” and click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Run</span></code>.</p></li>
 </ol>
 </td>
 <td><figure class="align-center">
@@ -1195,10 +1194,10 @@ Video: Calculate IPC Index per District<div class="sd-summary-down docutils">
 <ol class="arabic simple">
 <li><p>Right-click on “ML1_IPC_Index” layer -&gt; <code class="docutils literal notranslate"><span class="pre">Attribute</span> <span class="pre">Table</span></code>-&gt; click on  <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field"><code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code></a> <img alt="" src="../../_images/mActionCalculateField.png" /> to open the field calculator</p></li>
 <li><p>Check <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">new</span> <span class="pre">field</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Output</span> <span class="pre">field</span> <span class="pre">name</span></code>: Name the new column “Trigger_activation”</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Result</span> <span class="pre">field</span> <span class="pre">type</span></code>: Text (string)</p></li>
-<li><p>Add the code below into the <code class="docutils literal notranslate"><span class="pre">Expression</span></code> field</p></li>
-<li><p>Save the new column by clicking on <img alt="" src="../../_images/mActionSaveEdits.png" /> in the attribute table and end the editing mode by clicking on <img alt="" src="../../_images/mActionToggleEditing.png" /></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Output</span> <span class="pre">field</span> <span class="pre">name</span></code>: Name the new column “Trigger_activation”.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Result</span> <span class="pre">field</span> <span class="pre">type</span></code>: Text (string).</p></li>
+<li><p>Add the code below into the <code class="docutils literal notranslate"><span class="pre">Expression</span></code> field.</p></li>
+<li><p>Save the new column by clicking on <img alt="" src="../../_images/mActionSaveEdits.png" /> in the attribute table and end the editing mode by clicking on <img alt="" src="../../_images/mActionToggleEditing.png" />.</p></li>
 </ol>
 <table class="table">
 <colgroup>
@@ -1223,8 +1222,8 @@ END
 </tbody>
 </table>
 <ol class="arabic simple" start="6">
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">ok</span></code></p></li>
-<li><p>Save the new column by clicking on <img alt="" src="../../_images/mActionSaveEdits.png" /> in the attribute table and end the editing mode by clicking on <img alt="" src="../../_images/mActionToggleEditing.png" /></p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">ok</span></code>.</p></li>
+<li><p>Save the new column by clicking on <img alt="" src="../../_images/mActionSaveEdits.png" /> in the attribute table and end the editing mode by clicking on <img alt="" src="../../_images/mActionToggleEditing.png" />.</p></li>
 </ol>
 <p><strong>Result:</strong> A layer with all districts of Somalia with a column of “Yes” and “No” values indicating whether the trigger levels have been reached or not.</p>
 <figure class="align-center">
@@ -1240,17 +1239,17 @@ Video: Evaluate Trigger Activation <div class="sd-summary-down docutils">
 <p class="sd-card-text"><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_13_trigger_activation.mp4"></video></p>
 </div>
 </details></section>
-<section id="step-10-visualisation-of-results">
-<h3>Step 10.: Visualisation of results<a class="headerlink" href="#step-10-visualisation-of-results" title="Permalink to this heading">#</a></h3>
+<section id="step-10-visualising-the-results">
+<h3>Step 10.: Visualising the Results<a class="headerlink" href="#step-10-visualising-the-results" title="Permalink to this heading">#</a></h3>
 <p><strong>Purpose:</strong> Definition of how features are represented visually on the map.</p>
 <p><strong>Tool:</strong> <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#symbology-for-vector-data">Symbology</a></p>
 <p><strong>Trigger Activation</strong></p>
 <ol class="arabic simple">
-<li><p>Right-click on the “ML1_IPC_Index” layer -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Symbology</span></code></p></li>
-<li><p>In the down left corner click on <code class="docutils literal notranslate"><span class="pre">Style</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code></p></li>
+<li><p>Right-click on the “ML1_IPC_Index” layer -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Symbology</span></code>.</p></li>
+<li><p>In the down left corner click on <code class="docutils literal notranslate"><span class="pre">Style</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code>.</p></li>
 <li><p>In the new window click on the three points <img alt="" src="../../_images/Three_points.png" />. Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file <strong>“Style_Trigger_Activation_ex.qml”</strong>.</p></li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Then click on <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code></p></li>
-<li><p>Back in the “Layer Properties” Window click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Then click on <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code>.</p></li>
+<li><p>Back in the “Layer Properties” Window click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
 </ol>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
 <summary class="sd-summary-title sd-card-header">
@@ -1260,19 +1259,19 @@ Info: Trigger Activation Layer<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">You will now see districts where no trigger is activated in green and districts with trigger activation in pink.</p>
-<p class="sd-card-text">The “Style_Trigger_Activation.qml” style layer is configured to show the district names only where the trigger is actually activated. If there is no trigger activation you can activate the admin 1 boundary layer for better map orientation (see <strong>Administrative 2 Boundaries</strong> below)</p>
+<p class="sd-card-text">The “Style_Trigger_Activation.qml” style layer is configured to show the district names only where the trigger is actually activated. If there is no trigger activation you can activate the admin 1 boundary layer for better map orientation (see <strong>Administrative 2 Boundaries</strong> below).</p>
 </div>
 </details><figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/Map_yes_trigger.PNG"><img alt="../../_images/Map_yes_trigger.PNG" src="../../_images/Map_yes_trigger.PNG" style="width: 1000px;" /></a>
 </figure>
 <p><strong>Administrative 2 Boundaries (Regions)</strong></p>
 <ol class="arabic simple" start="6">
-<li><p>Right click on the “Som_admin1_regions_UNDP.gqkp” (Regions) layer -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Symbology</span></code></p></li>
-<li><p>In the down left corner click on <code class="docutils literal notranslate"><span class="pre">Style</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code></p></li>
+<li><p>Right click on the “Som_admin1_regions_UNDP.gqkp” (Regions) layer -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Symbology</span></code>.</p></li>
+<li><p>In the down left corner click on <code class="docutils literal notranslate"><span class="pre">Style</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code>.</p></li>
 <li><p>In the new window click on the three points <img alt="" src="../../_images/Three_points.png" />. Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file <strong>“SOM_regions_style_ex.qml”</strong>.</p></li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Then click on <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code></p></li>
-<li><p>Back in the “Layer Properties” Window click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
-<li><p>Add a the OpenStreetMap basemap by clicking on <code class="docutils literal notranslate"><span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">XYZ</span> <span class="pre">layer...</span></code> -&gt; Select the OpenStreetMap. Click <code class="docutils literal notranslate"><span class="pre">Add</span></code>. (<a class="reference internal" href="../Wiki/en_qgis_basemaps_wiki.html"><span class="doc std std-doc">Wiki basemap</span></a>)</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Then click on <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code>.</p></li>
+<li><p>Back in the “Layer Properties” Window click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
+<li><p>Add a the OpenStreetMap basemap by clicking on <code class="docutils literal notranslate"><span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">XYZ</span> <span class="pre">layer...</span></code> -&gt; Select the OpenStreetMap. Click <code class="docutils literal notranslate"><span class="pre">Add</span></code>. (<a class="reference internal" href="../Wiki/en_qgis_basemaps_wiki.html"><span class="doc std std-doc">Wiki basemap</span></a>).</p></li>
 <li><p>Place the OpenStreetMap basemap on the bottom.</p></li>
 <li><p>Delet all layers <strong>exept</strong>:</p>
 <ul class="simple">
@@ -1320,18 +1319,18 @@ Video: Visualisation of results<div class="sd-summary-down docutils">
 </section>
 <section id="step-11-making-print-map">
 <h3>Step 11: Making print map<a class="headerlink" href="#step-11-making-print-map" title="Permalink to this heading">#</a></h3>
-<p><strong>Purpose:</strong> Visualisation of the map features in a printable map layout</p>
+<p><strong>Purpose:</strong> Visualisation of the map features in a printable map layout.</p>
 <p><strong>Tool:</strong>  <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html">Print Layout</a></p>
 <ol class="arabic simple">
-<li><p>If not done before, delete all layers expect <strong>Trigger_activation</strong>, <strong>Som_admin1_regions_UNDP</strong> and <strong>OpenStreetMap</strong></p></li>
+<li><p>If you have not done this before, delete all layers expect <strong>Trigger_activation</strong>, <strong>Som_admin1_regions_UNDP</strong> and <strong>OpenStreetMap</strong>.</p></li>
 <li><p>Open a new print layout by clicking on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Print</span> <span class="pre">Layout</span></code> -&gt; enter the name of your current Project e.g “2024_01”.</p></li>
-<li><p>Go the the <code class="docutils literal notranslate"><span class="pre">Modul_5_Exercise2_Drought_Monitoring_Trigger</span></code> folder and drag and drop the file <code class="docutils literal notranslate"><span class="pre">Trigger_activation_Intervention_map_ex.qpt</span></code> in the print layout</p></li>
+<li><p>Go the the <code class="docutils literal notranslate"><span class="pre">Modul_5_Exercise2_Drought_Monitoring_Trigger</span></code> folder and drag and drop the file <code class="docutils literal notranslate"><span class="pre">Trigger_activation_Intervention_map_ex.qpt</span></code> in the print layout.</p></li>
 <li><p>Change the date to the current date by clicking on “Further map info…” in the items panel. Click on the <code class="docutils literal notranslate"><span class="pre">Item</span> <span class="pre">Properties</span></code> tab and scroll down. Here you can change the date in the <code class="docutils literal notranslate"><span class="pre">Main</span> <span class="pre">Properties</span></code> field.</p></li>
 <li><p>If necessary, adjust the legend by clicking on the legend in the <code class="docutils literal notranslate"><span class="pre">Item</span> <span class="pre">Properties</span></code> tab and scroll down until you see the <code class="docutils literal notranslate"><span class="pre">Legend</span> <span class="pre">items</span></code> field. If it is not there check if you have to open the dropdown. Make sure <code class="docutils literal notranslate"><span class="pre">Auto</span> <span class="pre">update</span></code> is not checked.</p>
 <ul class="simple">
 <li><p>Remove all items in the legend be clicking on the item and then on the red minus icon below.</p></li>
-<li><p>Add <strong>Trigger_activation</strong> to the legend by clicking on the green plus and click on the layer and click <code class="docutils literal notranslate"><span class="pre">ok</span></code></p></li>
-<li><p>Add <strong>Som_admin1_regions_UNDP</strong> to the legend by clicking on the green plus and click on the layer and click <code class="docutils literal notranslate"><span class="pre">ok</span></code></p></li>
+<li><p>Add <strong>Trigger_activation</strong> to the legend by clicking on the green plus and click on the layer and click <code class="docutils literal notranslate"><span class="pre">ok</span></code>.</p></li>
+<li><p>Add <strong>Som_admin1_regions_UNDP</strong> to the legend by clicking on the green plus and click on the layer and click <code class="docutils literal notranslate"><span class="pre">ok</span></code>.</p></li>
 </ul>
 </li>
 </ol>
@@ -1361,21 +1360,21 @@ Video: Making a print map<div class="sd-summary-down docutils">
 <p>When you have finished the design of you map, you can export it as pdf or image file in different data types.</p>
 <p><strong>Export as Image</strong></p>
 <ol class="arabic simple">
-<li><p>In the print layout click on <code class="docutils literal notranslate"><span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Export</span> <span class="pre">as</span> <span class="pre">Image</span></code></p></li>
-<li><p>Chose the <strong>Result</strong> folder in the folder you have created in step 1. Give the file the name of the project e.g 2022_04</p></li>
-<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Save</span></code></p></li>
-<li><p>The window “Image Export Options” will appear. Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>
-Now the image can be found in the result folder in the folder you created in Step 1</p></li>
+<li><p>In the print layout click on <code class="docutils literal notranslate"><span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Export</span> <span class="pre">as</span> <span class="pre">Image</span></code>.</p></li>
+<li><p>Chose the <strong>Result</strong> folder in the folder you have created in step 1. Give the file the name of the project e.g 2022_04.</p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
+<li><p>The window “Image Export Options” will appear. Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.
+Now the image can be found in the result folder in the folder you created in Step 1.</p></li>
 </ol>
 <p><strong>Export as PDF</strong></p>
 <ol class="arabic simple">
-<li><p>In the print layout click on <code class="docutils literal notranslate"><span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Export</span> <span class="pre">as</span> <span class="pre">PDF</span></code></p></li>
-<li><p>Chose the <strong>Result</strong> folder in the folder you have created in step 1. Give the file the name of the project e.g 2022_04</p></li>
-<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Save</span></code></p></li>
+<li><p>In the print layout click on <code class="docutils literal notranslate"><span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Export</span> <span class="pre">as</span> <span class="pre">PDF</span></code>.</p></li>
+<li><p>Chose the <strong>Result</strong> folder in the folder you have created in step 1. Give the file the name of the project e.g 2022_04.</p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
 <li><p>The window “PDF Export Options” will appear.  For the best results, select the <code class="docutils literal notranslate"><span class="pre">lossless</span></code> image compression.</p></li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>
-Now the image can be found in the result folder in the folder you created in Step 1</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
 </ol>
+<p>Now the image can be found in the result folder in the folder you created in Step 1.</p>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/map_output_example_ex.png"><img alt="../../_images/map_output_example_ex.png" src="../../_images/map_output_example_ex.png" style="width: 1000px;" /></a>
 </figure>
@@ -1452,7 +1451,7 @@ Now the image can be found in the result folder in the folder you created in Ste
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-calculation-of-population-proportion-per-intersection-polygon">Step 7: Calculation of Population Proportion per Intersection Polygon</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-8-calculate-ipc-index-per-district">Step 8: Calculate IPC Index per District</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-9-evaluate-trigger-activation">Step 9: Evaluate Trigger Activation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-10-visualisation-of-results">Step 10.: Visualisation of results</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-10-visualising-the-results">Step 10.: Visualising the Results</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-11-making-print-map">Step 11: Making print map</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-13-exporting-map">Step 13.: Exporting Map</a></li>
 </ul>

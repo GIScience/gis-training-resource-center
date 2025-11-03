@@ -12,14 +12,7 @@
 
 <iframe width="800" height="500" src="https://www.youtube.com/embed/kIID5FDi2JQ?si=C0tYz7nteMF_xqvr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-An important issue when creating a map of a region, is that it is impossible to create a representation of a sphere 
-on a 2D plane without distorting the map. The transformation of a 3D object onto a flat surface can be done with the 
-help of a __projection__. Over the centuries, cartographers and mathematicians have developed a multitude of different 
-methods to project the earth onto a flat surface ({numref}`en_examples_projections_IBIS`). However, it is never possible to correctly represent the world on a 
-flat surface (see the video above). 
-Every projection distorts either the length between two points, the angles between two lines (directions), or the size 
-of an area. A projection can only correctly represent one of these three dimensions. This means, that depending on the 
-projection method, your world map will not represent the size, angles, or distances correctly. 
+An important issue when creating a map of a region, is that it is impossible to create a representation of a sphere on a 2D plane without distorting the map. The transformation of a 3D object onto a flat surface can be done with the help of a __projection__. Over the centuries, cartographers and mathematicians have developed a multitude of different methods to project the earth onto a flat surface ({numref}`en_examples_projections_IBIS`). However, it is never possible to correctly represent the world on a flat surface (see the video above). Every projection distorts either the length between two points, the angles between two lines (directions), or the size of an area. A projection can only correctly represent one of these three dimensions. This means, that depending on the projection method, your world map will not represent the size, angles, or distances correctly. 
 
 ```{figure} /fig/en_examples_projections_IBIS.png
 ---
@@ -30,18 +23,10 @@ name: en_examples_projections_IBIS
 Examples for Projections (Source:Unknown. This figure is included for illustrative purposes only and is not subject to the Creative Commons license of this platform).
 ```
 
-Every projection has its use case. For example, the Mercator projection displays the angles between to points 
-correctly. This was used extensively during the seafaring age without satellites, as ships could navigate to a 
-destination by following a straight line on a map. For example, the Mercator projection displays road intersections 
-correctly: a road that crosses another road at a right angle, will be displayed as such on a mercator projection. 
-This is especially useful when navigating. The shape of an area remains correct, since the angles between each line 
-stay true. However, if you increase the scale of the map, the size and distances get distorted dramatically (see 
-figure below). Furthermore, the further away from the equator you get, the more distortion you get.
+Every projection has its use case. For example, the Mercator projection displays the angles between to points correctly. This was used extensively during the seafaring age without satellites, as ships could navigate to a destination by following a straight line on a map. For example, the Mercator projection displays road intersections correctly: a road that crosses another road at a right angle, will be displayed as such on a mercator projection. This is especially useful when navigating. The shape of an area remains correct, since the angles between each line stay true. However, if you increase the scale of the map, the size and distances get distorted dramatically (see figure below). Furthermore, the further away from the equator you get, the more distortion you get.
 
 ```{note} The True Size of
-The mercator projection is famous for distorting the size of different countries. You can check 
-the true size in comparison to different placements on the map on [TheTrueSize.com website](https://www.thetruesize.com).
-A popular example is Greenland in comparison with Africa, which seem on the map to be about the same size, but in reality Africa is a lot bigger.
+The mercator projection is famous for distorting the size of different countries. You can check the true size in comparison to different placements on the map on [TheTrueSize.com website](https://www.thetruesize.com).A popular example is Greenland in comparison with Africa, which seem on the map to be about the same size, but in reality Africa is a lot bigger.
 ```
 
 
@@ -59,21 +44,16 @@ Comparison Greenland - Africa (Source: [The True Size of](https://www.thetruesiz
 
 In GIS, we project the earth onto a flat coordinate system (hence the name coordinate reference system or CRS). It is crucial that you are aware that your data can be in one CRS and your QGIS project in another CRS. 
 
-The project CRS is displayed on the bottom right
-corner of the [QGIS interface](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_start.html#overview-of-qgis-interface). Here, you can see the EPSG code. EPSG stands for European Petroleum Survey Group, and it refers to a standardized code system for coordinate reference systems (CRS) and projections. Each EPSG code (e.g., EPSG:4326 for WGS84) uniquely identifies a specific CRS, helping ensure consistency and interoperability in geospatial data across different 
-platforms and applications. 
+The project CRS is displayed on the bottom rightcorner of the [QGIS interface](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_start.html#overview-of-qgis-interface). Here, you can see the EPSG code. EPSG stands for European Petroleum Survey Group, and it refers to a standardized code system for coordinate reference systems (CRS) and projections. Each EPSG code (e.g., EPSG:4326 for WGS84) uniquely identifies a specific CRS, helping ensure consistency and interoperability in geospatial data across different platforms and applications. 
 
 - __EPSG Codes:__ These are numerical identifiers assigned by the EPSG database to specific coordinate reference systems, making them concise and unambiguous (e.g., EPSG:4326 for WGS84). They provide a standardized way to reference CRS across various GIS applications.
 - __CRS Names:__ These are typically descriptive names for coordinate reference systems (e.g., "WGS 84" or "NAD83"). While names can provide insight into the system being used, they may not be unique or universally recognized, leading to potential confusion without the accompanying EPSG code.
 
-To change the CRS of your data and project, follow the steps explained below.
-The default CRS/EPSG code of every QGIS project is the World Geodetic System 84 
+To change the CRS of your data and project, follow the steps explained below. The default CRS/EPSG code of every QGIS project is the World Geodetic System 84 
 (EPSG: 4326). This CRS is optimized for world maps and therefore is not ideal for most humanitarian applications, as we need region-specific projections that provide the least distortion on the scale we wish to represent. 
 
 ```{Tip}
-Choose the projection according to your area of interest. There are special CRS that have been created to reduce 
-the distortion and inaccuracy of projections for different regions on earth. You can find all the projections and 
-their CRS codes on [EPSG.io](http://epsg.io). 
+Choose the projection according to your area of interest. There are special CRS that have been created to reduce the distortion and inaccuracy of projections for different regions on earth. You can find all the projections and their CRS codes on [EPSG.io](http://epsg.io). 
 ```
 
 Look at the following images and pay attention to how the different Coordinate Reference Systems change and distort the world map. 
@@ -110,8 +90,7 @@ The World Equidistant Cylindrical Projection (EPSG:54002) (Source: HeiGIT).
 
 The World Equidistant cylindrical CRS is equidistant (not distorting the length) along any meridian (circles of longitude; North to South), and along the two standard parallels. The shape, scale and area distort the further they are away from the standard parallels. 
 
-This table shows an overview on which projections to use for which needed 
-characteristic:
+This table shows an overview on which projections to use for which needed characteristic:
 
 | Characteristic | Mercator (cylindrical) | Lambert cylindrical | Albers conic |
 | :------------- | :--------------------: | :-----------------: | :----------: |
@@ -166,9 +145,7 @@ align: center
 Local and global coordinate reference systems (CRS) (Source: British Red Cross).
 ```
 
-As you can see, smaller regions look skewed and distorted in a global CRS
-For smaller areas local projections should be used, since they give a more 
-accurate display. However, local projections heavily distort the map on a global level. 
+As you can see, smaller regions look skewed and distorted in a global CRS. For smaller areas local projections should be used, since they give a more accurate display. However, local projections heavily distort the map on a global level. 
 
 ### How to check and change the project coordinate reference system
 
@@ -180,20 +157,14 @@ Understanding projections and coordinate reference systems is not easy. The next
 ```
 
 ```{Note}
-One of the first things you do when starting a new QGIS project should be to check and adjust the CRS/EPSG code to 
-the region or area you are working on. If you are working on a map showing the entire globe, global projection such 
-as the mercator projection should be used. If you are working on a smaller region, such as a continent, a country, 
-or even smaller regions, __you should always use a local CRS, to avoid inaccuracies__. If you don't know which CRS to use, you can search for a suitable one on EPSG.IO. Simply enter the name of your region and take a look at the available options. Make sure that the CRS you choose is in the correct unit of measurements (metres, feet, or degrees)
+One of the first things you do when starting a new QGIS project should be to check and adjust the CRS/EPSG code to the region or area you are working on. If you are working on a map showing the entire globe, global projection such as the mercator projection should be used. If you are working on a smaller region, such as a continent, a country, or even smaller regions, __you should always use a local CRS, to avoid inaccuracies__. If you don't know which CRS to use, you can search for a suitable one on EPSG.IO. Simply enter the name of your region and take a look at the available options. Make sure that the CRS you choose is in the correct unit of measurements (metres, feet, or degrees)
 ```
 
 
 1. Open a QGIS project
-2. In the very bottom right corner of QGIS you find the button `EPSG`. The number 
-next to it is the EPSG Code currently used in the project. To see more information, or to change the CRS, click on the `Current CRS`-button ![](/fig/EPSG_Code.png). 
-3. The window `Project Properties` will open. Here you can view all available 
-CRS/EPSG-Code and their properties.
+2. In the very bottom right corner of QGIS you find the button `EPSG`. The number next to it is the EPSG Code currently used in the project. To see more information, or to change the CRS, click on the `Current CRS`-button ![](/fig/EPSG_Code.png). 
+3. The window `Project Properties` will open. Here you can view all available CRS/EPSG-Code and their properties.
 4. To change the CRS/EPSG code, select the one you want to use and click `Apply`.
-
 
 
 :::{dropdown} Video: How to check and change the CRS in your QGIS project
@@ -205,22 +176,11 @@ CRS/EPSG-Code and their properties.
 
 ### Project CRS and Layer CRS
 
-The coordinate reference system of your QGIS project determines how QGIS displays the information. However, layers 
-and datasets have their own CRS. This can be seen in the metadata, or layer properties of the dataset. The layer 
-CRS refers to the coordinate system of the features or items in the dataset. The same coordinates in two different 
-coordinate reference systems do not refer to the same location on earth. This is because of the distortion of 
-distance and area.
+The coordinate reference system of your QGIS project determines how QGIS displays the information. However, layers and datasets have their own CRS. This can be seen in the metadata, or layer properties of the dataset. The layer CRS refers to the coordinate system of the features or items in the dataset. The same coordinates in two different coordinate reference systems do not refer to the same location on earth. This is because of the distortion of distance and area.
 
 ```{note}
-The first thing you should do when loading a new layer or dataset into your QGIS project, should be to check the 
-coordinate reference system of the dataset, and reproject it to the project CRS if necessary. This way, you ensure 
-consistency in your project and that the geoobjects in your layer are at the right locations. Otherwise, you will 
-create false results.
+The first thing you should do when loading a new layer or dataset into your QGIS project, should be to check the coordinate reference system of the dataset, and reproject it to the project CRS if necessary. This way, you ensure consistency in your project and that the geoobjects in your layer are at the right locations. Otherwise, you will create false results.
 ```
-
-
-<!--- ADD: insert example of layers that are in a CRS with an inaccuracy of a few meters to show the importance of 
-getting the CRS right --->
 
 
 

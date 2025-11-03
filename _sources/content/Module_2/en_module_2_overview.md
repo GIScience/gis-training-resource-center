@@ -8,17 +8,7 @@
 
 # Working with Geodata
 
-The second module develops a deeper understanding of geodata, layers and projections. These three concepts 
-lie at the core of geoinformation systems and you will need a solid understanding in order to develop 
-further GIS-skills. The module starts by explaining geodata, introducing the layer concept, and how to import geodata into QGIS. The second chapter will introduce the topic of projections and Coordinate Reference Systems. Displaying the world on a flat surface is not easy and depending on your use case, you will need to select appropriate projections. The third chapter goes over the 
-management of geodata. Keeping your projects, datasets, and files organised is essential to produce the 
-correct results, save you a lot of time, and ensure the reproducibility of your analyses. The fourth chapter 
-takes a closer look at the attribute table and how to select data entries (so called geofeatures). The next 
-chapter will introduce you to the art of finding data on the web, as well as introduce you to some 
-databases where you can start looking for data. Finally, the last chapter will introduce basemaps, a small 
-but very useful feature when looking at geodata or creating maps. Basemaps let you display a background map 
-(for example, satellite imagery or topographic maps) without having all the different layers of geodata 
-necessary for such a map on your computer. 
+The second module develops a deeper understanding of geodata, layers and projections. These three concepts lie at the core of geoinformation systems and you will need a solid understanding in order to develop further GIS-skills. The module starts by explaining geodata, introducing the layer concept, and how to import geodata into QGIS. The second chapter will introduce the topic of projections and Coordinate Reference Systems. Displaying the world on a flat surface is not easy and depending on your use case, you will need to select appropriate projections. The third chapter goes over the management of geodata. Keeping your projects, datasets, and files organised is essential to produce the correct results, save you a lot of time, and ensure the reproducibility of your analyses. The fourth chapter takes a closer look at the attribute table and how to select data entries (so called geofeatures). The next chapter will introduce you to the art of finding data on the web, as well as introduce you to some databases where you can start looking for data. Finally, the last chapter will introduce basemaps, a small but very useful feature when looking at geodata or creating maps. Basemaps let you display a background map (for example, satellite imagery or topographic maps) without having all the different layers of geodata necessary for such a map on your computer. 
 
 :::{list-table} Module 1 content
 :header-rows: 1

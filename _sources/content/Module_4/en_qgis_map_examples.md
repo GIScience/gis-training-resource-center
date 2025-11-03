@@ -60,7 +60,7 @@ The colour scheme of the roads makes it possible to read the map intuitively, as
 name: REACH Flooding Risk Ouhman Region, Central African Republic
 width: 720 px
 ---
-Flooding risk in the Ouham Region, Central African Republic (Source: REACH)
+Flooding risk in the Ouham Region, Central African Republic (Source: REACH).
 ```
 :::{dropdown} Context: Situation in the Central African Republic
 
@@ -71,7 +71,7 @@ Source: [REACH Initiative](https://reliefweb.int/report/central-african-republic
 
 This map displays the flooding risk using a raster image. The raster data was calculated using several factors, including the precipitation intensity, the maximum duration of precipitation, the height of the nearest drainage, the flow direction and river network, the topographic humidity, a digital elevation model, and the ground cover.
 
-- The raster data is displayed using a diverging colour ramp. (Here you can see how to assign a colour ramp)
+- The raster data is displayed using a diverging colour ramp. (Here you can see how to assign a colour ramp).
 - The surrounding administrative districts have been overlayed with a transparent grey.
 - The river network has been added in blue.
 - The main roads as well have been added in black.
@@ -79,20 +79,9 @@ This map displays the flooding risk using a raster image. The raster data was ca
 
 ---
 
-<!--### Map Example 3:
-
-```{figure} ../../fig/REACH_AFG_Map_ABR_infrastructure_mapping_Kunduz_Kunduz_PD-07_17May2022_A3P.png
----
-name: Infrastructure Map Kunduz District Afghanistan
-width: 800 px
----
-Infrastructure Map Kunduz Province 
-```
--->
 
 ## Common Missteps in Semiology
 
-<!---ADD: Insert Image examples for these errors-->
 
 ### The Modifiable Areal Unit Problem
 
@@ -130,7 +119,7 @@ width: 500 px
 Visualising the Modifiable Areal Unit Problem: The same indicator represented at three different scales (Source: Kitchin, Rob & Lauriault, Tracey & McArdle, Gavin. (2015). Knowing and governing cities through urban indicators, city benchmarking and real-time dashboards. Regional Studies, Regional Science. 2. 6-28. 10.1080/21681376.2014.983149. )
 ```
 
-### Proportional circles vs. solid colors
+### Proportional Circles vs. Solid Colours
 
 ```{caution}
 Be cautious when representing __quantitative__ data with a __solid colour__.
@@ -138,14 +127,14 @@ Be cautious when representing __quantitative__ data with a __solid colour__.
 
 While it is graphically appealing, representing quantitative data with solid colours can lead to problems and distract from the message of the map:
 
-- You lose the __order relationship between the data__ (a circle can be twice as big as another one, a colour cannot be "twice as dark")
-- Countries with a large surface area stand out visually (e.g. Russia in the example below)
-- We are trying to represent __data that has nothing to do with the area of a country__
+- You lose the __order relationship between the data__ (a circle can be twice as big as another one, a colour cannot be "twice as dark").
+- Countries with a large surface area stand out visually (e.g. Russia in the example below).
+- We are trying to represent __data that has nothing to do with the area of a country__.
 
 
 <!---Add example-->
 
-### Color gradient vs. distinct color palette
+### Colour Gradient vs. Distinct Colour Palette
 
 ```{caution}
 DO NOT use a __separate__ colour palette to represent __ordered entities__
@@ -158,7 +147,7 @@ It is a mistake because:
 - By using a differentiating colour variable, __you lose the ordinal relationship between entities__. Instead, a __gradient of the same colour__ that should be used.
 - Different colours are used to differentiate between distinct entities.
 
-### Gradient in a single colour vs. Gradient between two colours
+### Gradient in a Single Colour vs. Gradient between two Colours
 
 ```{Caution}
 Be cautious when using a __gradient across two different colours__ for data that is __always positive__ (or negative).
@@ -173,13 +162,13 @@ It is a mistake because:
 
 - By choosing different colours for values that are linked to each other, our eyes perceive a difference between the elements, and not an order.
 - Darker colours stand out more than lighter colours, and can be perceived as more important.
-- The map will send a message of divergence, of opposition between certain values, when we are simply trying to represent a hierarchy between values
+- The map will send a message of divergence, of opposition between certain values, when we are simply trying to represent a hierarchy between values.
 - In this way, the colour itself directly indicates information about the trend (positive/negative or increasing/decreasing).
 
-### Limited geometric symbols vs. complex icons and symbols
+### Limited Geometric Symbols vs. Complex Icons and Symbols
 
 ```{Caution}
-DO NOT use __too many symbols__ in a thematic map
+DO NOT use __too many symbols__ in a thematic map.
 ```
 
 Incorporating a multitude of symbols (and data) for an informative map is a common desire. However, too many symbols can __overload the map__ and __reduce the readability__ of the map. Using too many symbols (especially geometric ones) can make it difficult to read and understand the map.  
@@ -190,7 +179,6 @@ It is a mistake because:
 - It complicates the map and limits its impact.
 - Sometimes you are forced to represent several symbols, so you must be careful about overlapping points and overloading the map.
 
-<!-- ![](/../fig/en_modifiable_areal_unit_problem_example.png) -->
 
 ---
 

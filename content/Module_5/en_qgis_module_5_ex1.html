@@ -734,7 +734,7 @@ The collection and processing of this information varies based on the problem, b
 <figure class="align-default" id="czonal-statistics">
 <a class="reference internal image-reference" href="../../_images/en_qgis_modul_5_ex1_zonal_statistics.PNG"><img alt="../../_images/en_qgis_modul_5_ex1_zonal_statistics.PNG" src="../../_images/en_qgis_modul_5_ex1_zonal_statistics.PNG" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-text">Summarise population counts per district</span><a class="headerlink" href="#czonal-statistics" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Summarising population counts per district.</span><a class="headerlink" href="#czonal-statistics" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition hint">
@@ -758,7 +758,7 @@ The collection and processing of this information varies based on the problem, b
 <figure class="align-default" id="field-calculator">
 <a class="reference internal image-reference" href="../../_images/en_qgis_modul_5_ex1_field_calc.PNG"><img alt="../../_images/en_qgis_modul_5_ex1_field_calc.PNG" src="../../_images/en_qgis_modul_5_ex1_field_calc.PNG" style="width: 80%;" /></a>
 <figcaption>
-<p><span class="caption-text">Calculate health sites per 10000 inhabitants</span><a class="headerlink" href="#field-calculator" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Calculating health sites per 10000 inhabitants.</span><a class="headerlink" href="#field-calculator" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <section id="land-degradation">
@@ -768,7 +768,7 @@ The collection and processing of this information varies based on the problem, b
 <figure class="align-default" id="id1">
 <a class="reference internal image-reference" href="../../_images/land_degradation.PNG"><img alt="../../_images/land_degradation.PNG" src="../../_images/land_degradation.PNG" style="width: 60%;" /></a>
 <figcaption>
-<p><span class="caption-text">Land Degradation</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Land Degradation.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>You will see that we can only download the information as an image. This is a very common case when working with open data. We have to digitise the information in order to be able to use it for further processing. Find the digitised version in “Modul_5_Ex1_Part_1\land_degradation_somalia”.</p>
@@ -777,14 +777,14 @@ The collection and processing of this information varies based on the problem, b
 <li><p>Open the tool <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">attributes</span> <span class="pre">by</span> <span class="pre">location</span></code> from the Processing Toolbox.</p></li>
 <li><p>define <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Layer</span></code> (layer you want to enrich) and <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">Layer</span></code> (dataset with the additional information)</p></li>
 <li><p>select <code class="docutils literal notranslate"><span class="pre">intersects</span></code> as geometric predicate and add only the <code class="docutils literal notranslate"><span class="pre">LandD_class</span></code> as field to add to our base layer.</p></li>
-<li><p>as <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">Type</span></code> set <code class="docutils literal notranslate"><span class="pre">Take</span> <span class="pre">attributes</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">feature</span> <span class="pre">with</span> <span class="pre">largest</span> <span class="pre">overlap</span> <span class="pre">only</span> <span class="pre">(one-to-one)</span></code></p></li>
-<li><p>Save as Layer</p></li>
+<li><p>as <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">Type</span></code> set <code class="docutils literal notranslate"><span class="pre">Take</span> <span class="pre">attributes</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">feature</span> <span class="pre">with</span> <span class="pre">largest</span> <span class="pre">overlap</span> <span class="pre">only</span> <span class="pre">(one-to-one)</span></code>.</p></li>
+<li><p>Save as Layer.</p></li>
 </ul>
 <p>See the Wiki entry <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html">Spatial Joins</a> for further information.</p>
 <figure class="align-default" id="join-attributes-by-location">
 <a class="reference internal image-reference" href="../../_images/en_qgis_modul_5_ex1_join.PNG"><img alt="../../_images/en_qgis_modul_5_ex1_join.PNG" src="../../_images/en_qgis_modul_5_ex1_join.PNG" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-text">Join Attributes by Location</span><a class="headerlink" href="#join-attributes-by-location" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Joining Attributes by Location.</span><a class="headerlink" href="#join-attributes-by-location" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -794,21 +794,21 @@ The collection and processing of this information varies based on the problem, b
 <p>Download the data we need:
 <code class="docutils literal notranslate"><span class="pre">Somalia_malnutrion_district_2022_2023.xlsx</span></code>:<a class="reference external" href="https://data.humdata.org/dataset/somalia-acute-malnutrition-burden-and-prevalence?">Somalia: Acute Malnutrition</a></p>
 <p>Explore the data. In which resolution is the data available? Do you have ideas as to how we can add it to our indicator dataset?</p>
-<p>*Save the Excel file as a CSV by clicking on <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">file</span> <span class="pre">as</span></code> and choosing <code class="docutils literal notranslate"><span class="pre">CSV</span> <span class="pre">(delimiter-separated)</span></code></p>
 <ul class="simple">
-<li><p>Load the CSV file into you QGIS by drag and drop</p></li>
-<li><p>Open the tool <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">attributes</span> <span class="pre">by</span> <span class="pre">field</span> <span class="pre">value</span></code> from the Processing Toolbox</p></li>
-<li><p>specify our two datasets we want to join as well as the common field available for joining (<code class="docutils literal notranslate"><span class="pre">ADM2_EN</span></code> and <code class="docutils literal notranslate"><span class="pre">adm2name</span></code>)</p></li>
-<li><p>as <code class="docutils literal notranslate"><span class="pre">join</span> <span class="pre">type</span></code> set <code class="docutils literal notranslate"><span class="pre">Take</span> <span class="pre">attributes</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">first</span> <span class="pre">matching</span> <span class="pre">feature</span> <span class="pre">only</span> <span class="pre">(one-to-one)</span></code></p></li>
-<li><p>Save the Layer to File</p></li>
+<li><p>Save the Excel file as a CSV by clicking on <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">file</span> <span class="pre">as</span></code> and choosing <code class="docutils literal notranslate"><span class="pre">CSV</span> <span class="pre">(delimiter-separated)</span></code>.</p></li>
+<li><p>Load the CSV file into you QGIS by drag and drop.</p></li>
+<li><p>Open the tool <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">attributes</span> <span class="pre">by</span> <span class="pre">field</span> <span class="pre">value</span></code> from the Processing Toolbox.</p></li>
+<li><p>specify our two datasets we want to join as well as the common field available for joining (<code class="docutils literal notranslate"><span class="pre">ADM2_EN</span></code> and <code class="docutils literal notranslate"><span class="pre">adm2name</span></code>).</p></li>
+<li><p>as <code class="docutils literal notranslate"><span class="pre">join</span> <span class="pre">type</span></code> set <code class="docutils literal notranslate"><span class="pre">Take</span> <span class="pre">attributes</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">first</span> <span class="pre">matching</span> <span class="pre">feature</span> <span class="pre">only</span> <span class="pre">(one-to-one)</span></code>.</p></li>
+<li><p>Save the layer to file.</p></li>
 </ul>
 <figure class="align-default" id="join-attributes-by-field-value">
 <a class="reference internal image-reference" href="../../_images/en_qgis_modul_5_ex1_joinbyvalue.PNG"><img alt="../../_images/en_qgis_modul_5_ex1_joinbyvalue.PNG" src="../../_images/en_qgis_modul_5_ex1_joinbyvalue.PNG" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-text">Join attributes by field value</span><a class="headerlink" href="#join-attributes-by-field-value" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Joining attributes by field value.</span><a class="headerlink" href="#join-attributes-by-field-value" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>In the Log file you will get a message: “6 feature(s) from input layer could not be matched”</p>
+<p>In the Log file you will get a message: “6 feature(s) from input layer could not be matched”.</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>It is possible that the CSV file the column headers of the attribute table will not have the correct names (instead they may have “field 1”, “field 2” etc.) after importing. In this case, the correct field names is usually located below the header.</p>
@@ -816,7 +816,7 @@ The collection and processing of this information varies based on the problem, b
 <figure class="align-default" id="id2">
 <a class="reference internal image-reference" href="../../_images/en_qgis_module_5_ex1_error.PNG"><img alt="../../_images/en_qgis_module_5_ex1_error.PNG" src="../../_images/en_qgis_module_5_ex1_error.PNG" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-text">Log File Join Attribute by Field Value</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">The Log File for the Join Attribute by Field Value algorithm.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Open the attribute tables from both, your output layer and the CSV file in order to find out the roots of the problem. In the output layer double-click on <code class="docutils literal notranslate"><span class="pre">affunderfive</span></code> and bring <code class="docutils literal notranslate"><span class="pre">NULL</span></code> Values to the top. Check the joining attribute “ADM2_EN” and compare it with the joining attribute “adm2name” from the CSV file.
@@ -846,8 +846,8 @@ Download the data folder for the second part of the exercise: “Modul_5_Ex1_Par
 <p><span class="math notranslate nohighlight">\( Normalised\ Value\ = \frac{value\ -\ min value}{max\ value \ - \ min } \)</span></p>
 <ul class="simple">
 <li><p>Open the attribute table of “vulnerability_districts” and Open the <code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code> by clicking on the button <img alt="" src="../../_images/mActionCalculateField.png" />. By checkin the box for <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">a</span> <span class="pre">new</span> <span class="pre">field</span></code> we can conduct calculation and saving them right away in a new attribute column.</p></li>
-<li><p>start with the first indicator <code class="docutils literal notranslate"><span class="pre">LandD_class</span></code></p></li>
-<li><p>define the output field name as “LandD_class_norm” and set the <code class="docutils literal notranslate"><span class="pre">Type</span></code> to <code class="docutils literal notranslate"><span class="pre">Decimal</span> <span class="pre">Number(real)</span></code>.</p></li>
+<li><p>Start with the first indicator <code class="docutils literal notranslate"><span class="pre">LandD_class</span></code>.</p></li>
+<li><p>Define the output field name as “LandD_class_norm” and set the <code class="docutils literal notranslate"><span class="pre">Type</span></code> to <code class="docutils literal notranslate"><span class="pre">Decimal</span> <span class="pre">Number(real)</span></code>.</p></li>
 <li><p>Now we will calculate in the expression field the normalisation of the indicator:</p></li>
 </ul>
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span>(&quot;LandD_Clas&quot; - minimum( &quot;LandD_Clas&quot; ))/( maximum( &quot;LandD_Clas&quot;) - minimum( &quot;LandD_Clas&quot; ))
@@ -859,11 +859,11 @@ Download the data folder for the second part of the exercise: “Modul_5_Ex1_Par
 <figure class="align-default" id="id4">
 <a class="reference internal image-reference" href="../../_images/en_qgis_modul_5_ex1_Part2_normalization.PNG"><img alt="../../_images/en_qgis_modul_5_ex1_Part2_normalization.PNG" src="../../_images/en_qgis_modul_5_ex1_Part2_normalization.PNG" style="width: 80%;" /></a>
 <figcaption>
-<p><span class="caption-text">Normalisation of indicators</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Normalisation of indicators.</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
-<li><p>Repeat this step for the other indicators</p></li>
+<li><p>Repeat this step for the other indicators.</p></li>
 <li><p>For each indicator you have now the original column and the normalised column.</p></li>
 </ul>
 </section>
@@ -923,7 +923,7 @@ Download the data folder for the second part of the exercise: “Modul_5_Ex1_Par
 <figure class="align-default" id="add-new-field-to-weight-indicators">
 <a class="reference internal image-reference" href="../../_images/en_qgis_module_5_ex1_part2_weigthed.PNG"><img alt="../../_images/en_qgis_module_5_ex1_part2_weigthed.PNG" src="../../_images/en_qgis_module_5_ex1_part2_weigthed.PNG" style="width: 80%;" /></a>
 <figcaption>
-<p><span class="caption-text">Add new field to weight indicators</span><a class="headerlink" href="#add-new-field-to-weight-indicators" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Adding new field to weight indicators.</span><a class="headerlink" href="#add-new-field-to-weight-indicators" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
@@ -932,7 +932,7 @@ Download the data folder for the second part of the exercise: “Modul_5_Ex1_Par
 <figure class="align-default" id="attribute-table-with-norm-and-weighted-indicators">
 <a class="reference internal image-reference" href="../../_images/en_qgis_modul_5_ex1_part2_weighted_attribute.PNG"><img alt="../../_images/en_qgis_modul_5_ex1_part2_weighted_attribute.PNG" src="../../_images/en_qgis_modul_5_ex1_part2_weighted_attribute.PNG" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-text">Attribute Table with “_norm” and “_weighted” indicators</span><a class="headerlink" href="#attribute-table-with-norm-and-weighted-indicators" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Attribute Table with “_norm” and “_weighted” indicators.</span><a class="headerlink" href="#attribute-table-with-norm-and-weighted-indicators" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -950,13 +950,13 @@ Download the data folder for the second part of the exercise: “Modul_5_Ex1_Par
 <h4>5. Prepare Risk Assessment<a class="headerlink" href="#prepare-risk-assessment" title="Permalink to this heading">#</a></h4>
 <p>In order to calculate the risk we have to bring our 3 dimension exposure, vulnerability and coping capacity together.</p>
 <ul class="simple">
-<li><p>Right click om one of the layer and select <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; Go the <code class="docutils literal notranslate"><span class="pre">Joins</span></code> tab</p></li>
+<li><p>Right click om one of the layer and select <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; Go the <code class="docutils literal notranslate"><span class="pre">Joins</span></code> tab.</p></li>
 <li><p>Click on the <code class="docutils literal notranslate"><span class="pre">+</span></code> button, add a new join and select the layer you want to join. Define “admin2Name” as <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">Field</span></code>:</p></li>
 </ul>
 <figure class="align-default" id="join-layers">
 <a class="reference internal image-reference" href="../../_images/en_qgis_modul_5_ex1_part2_join_risk.PNG"><img alt="../../_images/en_qgis_modul_5_ex1_part2_join_risk.PNG" src="../../_images/en_qgis_modul_5_ex1_part2_join_risk.PNG" style="width: 90%;" /></a>
 <figcaption>
-<p><span class="caption-text">Join Layers by Join Field</span><a class="headerlink" href="#join-layers" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Joining Layers by Join Field.</span><a class="headerlink" href="#join-layers" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
@@ -966,7 +966,7 @@ Download the data folder for the second part of the exercise: “Modul_5_Ex1_Par
 <figure class="align-default" id="risk-layer-attribute-table-normalised-scores">
 <a class="reference internal image-reference" href="../../_images/en_qgis_modul_5_ex1_part2_risklayer_attributetable.PNG"><img alt="../../_images/en_qgis_modul_5_ex1_part2_risklayer_attributetable.PNG" src="../../_images/en_qgis_modul_5_ex1_part2_risklayer_attributetable.PNG" style="width: 70%;" /></a>
 <figcaption>
-<p><span class="caption-text">Risk Layer Attribute Table normalised Scores</span><a class="headerlink" href="#risk-layer-attribute-table-normalised-scores" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Risk Layer Attribute Table normalised Scores.</span><a class="headerlink" href="#risk-layer-attribute-table-normalised-scores" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -995,16 +995,16 @@ Download the data folder for the second part of the exercise: “Modul_5_Ex1_Par
 <section id="visualisation-of-the-results">
 <h4>6. Visualisation of the Results<a class="headerlink" href="#visualisation-of-the-results" title="Permalink to this heading">#</a></h4>
 <ul class="simple">
-<li><p>Right click on the “risk” layer -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Symbology</span></code></p></li>
-<li><p>In the down left corner click on <code class="docutils literal notranslate"><span class="pre">Style</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code></p></li>
+<li><p>Right click on the “risk” layer -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Symbology</span></code>.</p></li>
+<li><p>In the down left corner click on <code class="docutils literal notranslate"><span class="pre">Style</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code>.</p></li>
 <li><p>In the new window click on the three points <img alt="" src="../../_images/Three_points.png" />. Navigate to the “Map Template” folder and select the file <strong>“somalia_risk_assessment_style.qml”</strong>.</p></li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Then click on <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code></p></li>
-<li><p>Back in the “Layer Properties” Window click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Then click on <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code>.</p></li>
+<li><p>Back in the “Layer Properties” Window click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
 </ul>
 <p>Print Layout:</p>
 <ul class="simple">
 <li><p>Open a new print layout by clicking on <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Print</span> <span class="pre">Layout</span></code> -&gt; enter the name of your current Project e.g “2024_01”.</p></li>
-<li><p>Go the the <code class="docutils literal notranslate"><span class="pre">Ex_Part_2</span></code> folder and drag and drop the file <code class="docutils literal notranslate"><span class="pre">maps_somalia_template_risk_assessment.qpt</span></code> in the print layout</p></li>
+<li><p>Go the the <code class="docutils literal notranslate"><span class="pre">Ex_Part_2</span></code> folder and drag and drop the file <code class="docutils literal notranslate"><span class="pre">maps_somalia_template_risk_assessment.qpt</span></code> in the print layout.</p></li>
 <li><p>Change the date to the current date by clicking on “Further map info…” in the items panel. Click on the <code class="docutils literal notranslate"><span class="pre">Item</span> <span class="pre">Properties</span></code> tab and scroll down. Here you can change the date in the <code class="docutils literal notranslate"><span class="pre">Main</span> <span class="pre">Properties</span></code> field.</p></li>
 <li><p>If necessary, adjust the legend by clicking on the legend in the  <code class="docutils literal notranslate"><span class="pre">Item</span> <span class="pre">Properties</span></code> tab and scroll down until you see the <code class="docutils literal notranslate"><span class="pre">Legend</span> <span class="pre">items</span></code> field. If it is not there check if you have to open the dropdown. Make sure <code class="docutils literal notranslate"><span class="pre">Auto</span> <span class="pre">update</span></code> is not checked.</p></li>
 <li><p>Remove all items in the legend be clicking on the item and then on the red minus icon below.</p></li>

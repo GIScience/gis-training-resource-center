@@ -66,24 +66,15 @@ Sometimes working with GIS requires you to go and collect the data in the field.
 
 :::{tab-item} Data Processing
 
-QGIS offers a wide range of algorithms to process geodata. In the following modules, you will get to know a number of 
-algorithms that are especially useful for GIS in humanitarian work. 
-You will learn more about data processing and manipulation in [module 2](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_module_2_overview.html) onwards. 
+QGIS offers a wide range of algorithms to process geodata. In the following modules, you will get to know a number of algorithms that are especially useful for GIS in humanitarian work. You will learn more about data processing and manipulation in [module 2](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_module_2_overview.html) onwards. 
 
-<!--ADD: more examples-->
-<!--ADD: add link to basic data processing and visualisation chapters-->
 
 :::
 
 :::{tab-item} Visualisation
 
-QGIS lets you visualise geodata and create maps to communicate information. It does so by assigning symbols and colours 
-to different elements in your geodata. Assigning a symbology to the geodata is one of the main skills you will develop 
-as a GIS-user and a good visualisation of data is immensely useful when communicating insights. You will learn how to 
-assign symbols in [Module 4: Visualisation of Geodata and Map Making](/content/Module_4/en_qgis_map_design_I.md)
+QGIS lets you visualise geodata and create maps to communicate information. It does so by assigning symbols and colours to different elements in your geodata. Assigning a symbology to the geodata is one of the main skills you will develop as a GIS-user and a good visualisation of data is immensely useful when communicating insights. You will learn how to assign symbols in [Module 4: Visualisation of Geodata and Map Making](/content/Module_4/en_qgis_map_design_I.md)
 
-<!--ADD: Insert example for visualisation-->
-<!--FIXME: Insert link to overview page on module 3-->
 
 :::
 ::::
@@ -95,18 +86,13 @@ assign symbols in [Module 4: Visualisation of Geodata and Map Making](/content/M
 __A note on plugins__
 ^^^
 
-In addition to the algorithms included in the standard installation, QGIS offers plugins which add additional 
-functionality to the QGIS application. These plugins are developed by independent organizations or the QGIS-community. 
-For example, plugins let you connect to online services such as OpenStreetMap, or add more algorithms to process your 
-data. These can be very useful for certain use cases. There are also plugins specifically designed for humanitarian 
-work. You will learn more about plugins in the following modules. If you want to know how to install them, look into the [wiki](/content/Wiki/en_qgis_plugins_wiki.md). 
+In addition to the algorithms included in the standard installation, QGIS offers plugins which add additional functionality to the QGIS application. These plugins are developed by independent organizations or the QGIS-community. For example, plugins let you connect to online services such as OpenStreetMap, or add more algorithms to process your data. These can be very useful for certain use cases. There are also plugins specifically designed for humanitarian work. You will learn more about plugins in the following modules. If you want to know how to install them, look into the [wiki](/content/Wiki/en_qgis_plugins_wiki.md). 
 
 :::
 
 ## Opening a new project in QGIS
 
-Open QGIS like any other program on your computer. 
-The start screen of QGIS usually shows you the projects you worked on recently and the option to create a new project.
+Open QGIS like any other program on your computer. The start screen of QGIS usually shows you the projects you worked on recently and the option to create a new project.
 
 There are __two__ options to create a new project:
 

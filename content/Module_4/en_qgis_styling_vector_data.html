@@ -577,7 +577,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#symbology-for-vector-data">4.2.2. Symbology for Vector Data</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#styling-administrative-boundaries-polygons">4.2.2.1. Styling administrative boundaries (Polygons)</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#only-display-the-outlines-of-polygons">4.2.2.1.1. Only display the outlines of polygons</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adjusting-the-styles-of-multiple-overlaying-layers">4.2.2.1.2. Adjusting the styles of multiple overlaying layers</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adjusting-the-styles-of-multiple-overlaying-layers">4.2.2.1.2. Adjusting the Styles of Multiple Overlaying Layers</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-choropleth-map-gradudated-styling">4.2.2.1.3. Creating a Choropleth Map (“Gradudated Styling)</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-graduated-symbols-map">4.2.2.1.4. Creating a graduated symbols map</a></li>
 </ul>
@@ -626,7 +626,7 @@ document.write(`
 <figure class="align-left" id="en-30-30-2-styling-panel">
 <a class="reference internal image-reference" href="../../_images/en_30.30.2_styling_panel.png"><img alt="../../_images/en_30.30.2_styling_panel.png" src="../../_images/en_30.30.2_styling_panel.png" style="height: 400px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.19 </span><span class="caption-text">Styling panel in QGIS 3.30.2</span><a class="headerlink" href="#en-30-30-2-styling-panel" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.19 </span><span class="caption-text">Styling panel in QGIS 3.30.2.</span><a class="headerlink" href="#en-30-30-2-styling-panel" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>For each layer in QGIS, there is a styling panel where you can change the symbology, colour and label for the features in that layer. There are two ways to open the layer styling options in QGIS:</p>
@@ -654,23 +654,21 @@ lines, or polygons. There are different options to symbolize these different typ
 <figure class="align-default" id="en-symbolization-vector-data">
 <a class="reference internal image-reference" href="../../_images/en_symbolization_vector_data.png"><img alt="../../_images/en_symbolization_vector_data.png" src="../../_images/en_symbolization_vector_data.png" style="width: 750px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.20 </span><span class="caption-text">Symbolization for vector data; Source: White, T. (2017). Symbolization and the Visual Variables. *The Geographic Information Science &amp; Technology Body of Knowledge (2nd Quarter 2017 Edition), John P. Wilson (ed.). DOI: 10.2222/gistbok/2017.2.3</span><a class="headerlink" href="#en-symbolization-vector-data" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.20 </span><span class="caption-text">Symbolization for vector data; Source: White, T. (2017). Symbolization and the Visual Variables. *The Geographic Information Science &amp; Technology Body of Knowledge (2nd Quarter 2017 Edition), John P. Wilson (ed.). DOI: 10.2222/gistbok/2017.2.3 .</span><a class="headerlink" href="#en-symbolization-vector-data" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Remember that <strong>the layer’s symbology is saved within your project file, not within your shapefile!</strong> If you share a shapefile with a colleague, it will have a different style when they add it to their own project.</p>
 </div>
-<p>QGIS let’s you visualise data using simple markers, SVG-files or Raster-files. Most commonly, you will work with simple markers. These are generally used to create the symbols for most elements on a map. For example, simple markers are
-used to visualise streets, building outlines, waterbodies, administrative boundaries or other polygons.
+<p>QGIS let’s you visualise data using simple markers, SVG-files or Raster-files. Most commonly, you will work with simple markers. These are generally used to create the symbols for most elements on a map. For example, simple markers are used to visualise streets, building outlines, waterbodies, administrative boundaries or other polygons.
 Most simple markers consist of a <strong>fill</strong> and an <strong>outline</strong>. Depending on the type of geometry in the layer, you will have to use have different symbology options.</p>
 <ul class="simple">
 <li><p>The fill determines the fill colour of the symbol. You can change the colour and transparency. You are also able to make more complex fills such as a line pattern fill, or an SVG-symbol fill.</p></li>
 <li><p>The outline determines the colour, type, and thickness of the outline. Next to the colour and transparency, the outline is the most critical for distinguishing between different elements. For example, thicker lines for roads usually signify roads of a higher order (such as highways), while thin dashed lines might signify footpaths, inaccessible to road vehicles.</p></li>
 <li><p>You can either style a single symbol for each layer or use different styles based on a <a class="reference internal" href="../Module_3/en_qgis_data_classification.html"><span class="doc std std-doc">categorisation method</span></a>.</p></li>
 </ul>
-<p>In the Symbology Tab, you can select between various symbolization
-methods (see <code class="xref std std-numref docutils literal notranslate"><span class="pre">en_3.36_m4_symbolisation_methods</span></code>). The most important ones are <strong>Single Symbol</strong>, <strong>Categorised</strong>, <strong>Graduated</strong>, and <strong>Rule-based</strong>.</p>
+<p>In the Symbology Tab, you can select between various symbolization methods (see <code class="xref std std-numref docutils literal notranslate"><span class="pre">en_3.36_m4_symbolisation_methods</span></code>). The most important ones are <strong>Single Symbol</strong>, <strong>Categorised</strong>, <strong>Graduated</strong>, and <strong>Rule-based</strong>.</p>
 <figure class="align-default" id="en-3-36-m4-symbolisation-methods">
 <a class="reference internal image-reference" href="../../_images/en_3.36_m4_symbolisation_methods.png"><img alt="../../_images/en_3.36_m4_symbolisation_methods.png" src="../../_images/en_3.36_m4_symbolisation_methods.png" style="width: 500px;" /></a>
 </figure>
@@ -721,7 +719,7 @@ Rule-based</label><div class="sd-tab-content docutils">
 <p>When creating situational reports, you will frequently use administrative boundaries. In the example below, we want to create an overview map using the administrative boundaries of Nigeria. In order to visualise all the three administrative boundaries at the same time, we need to set the symbology for each layer so the layers below are visible, and the hierarchy of the administrative levels is distinguishable.</p>
 <div class="admonition-optional-now-it-s-your-turn admonition">
 <p class="admonition-title"><em>Optional</em>: Now it’s your turn</p>
-<p>You can follow along by downloading the <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/follow_along/nga_adm_osgof_20190417.zip">administrative boundaries of Nigeria</a> by <a class="reference external" href="https://data.humdata.org/dataset/cod-ab-nga">OCHA Nigeria</a></p>
+<p>You can follow along by downloading the <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/follow_along/nga_adm_osgof_20190417.zip">administrative boundaries of Nigeria</a> by <a class="reference external" href="https://data.humdata.org/dataset/cod-ab-nga">OCHA Nigeria</a>.</p>
 </div>
 <section id="only-display-the-outlines-of-polygons">
 <h4><span class="section-number">4.2.2.1.1. </span>Only display the outlines of polygons<a class="headerlink" href="#only-display-the-outlines-of-polygons" title="Permalink to this heading">#</a></h4>
@@ -747,7 +745,7 @@ Video: Making the fill colour transparent<div class="sd-summary-down docutils">
 </div>
 </details></section>
 <section id="adjusting-the-styles-of-multiple-overlaying-layers">
-<h4><span class="section-number">4.2.2.1.2. </span>Adjusting the styles of multiple overlaying layers<a class="headerlink" href="#adjusting-the-styles-of-multiple-overlaying-layers" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">4.2.2.1.2. </span>Adjusting the Styles of Multiple Overlaying Layers<a class="headerlink" href="#adjusting-the-styles-of-multiple-overlaying-layers" title="Permalink to this heading">#</a></h4>
 <p><strong>Step 1: Ordering the layers</strong></p>
 <ol class="arabic simple">
 <li><p>Import the administrative boundaries into your QGIS-project.</p></li>
@@ -791,9 +789,7 @@ Video: Adjusting the style for multiple layers<div class="sd-summary-down docuti
 </details></section>
 <section id="creating-a-choropleth-map-gradudated-styling">
 <h4><span class="section-number">4.2.2.1.3. </span>Creating a Choropleth Map (“Gradudated Styling)<a class="headerlink" href="#creating-a-choropleth-map-gradudated-styling" title="Permalink to this heading">#</a></h4>
-<p>If a layer contains numeric values that are continuous, they can be organized in intervals. These intervals can be
-displayed in graduated colours. In this exercise, we assign colours to Adm1 polygons based on the total population of
-each State.</p>
+<p>If a layer contains numeric values that are continuous, they can be organized in intervals. These intervals can be displayed in graduated colours. In this exercise, we assign colours to Adm1 polygons based on the total population of each State.</p>
 <ol class="arabic simple">
 <li><p>Download the <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/follow_along/NGA_adm1_pop.zip">NGA_Adm1_Pop shapefile</a> and save it in your shapefile folder.</p></li>
 <li><p>In QGIS, turn off the Adm1 and Adm2 layer, leaving only Adm0.</p></li>
@@ -955,9 +951,7 @@ Video: Set up different symbols in a single layer<div class="sd-summary-down doc
 </section>
 <section id="using-svg-symbols">
 <h3><span class="section-number">4.2.2.3. </span>Using SVG-Symbols<a class="headerlink" href="#using-svg-symbols" title="Permalink to this heading">#</a></h3>
-<p>In some cases, you might want to use more complex symbols in your map. For example, you want to use a cross to signify
-a hospital, a book to signify a library, or a plane to signify an airport. In these cases, you can use SVG-symbols.
-Keep in mind that, ordinarily, SVG-symbols work only for point data.
+<p>In some cases, you might want to use more complex symbols in your map. For example, you want to use a cross to signify a hospital, a book to signify a library, or a plane to signify an airport. In these cases, you can use SVG-symbols. Keep in mind that, ordinarily, SVG-symbols work only for point data.
 To use SVG-symbols:</p>
 <ol class="arabic simple">
 <li><p>Open the styling panel and open the <code class="docutils literal notranslate"><span class="pre">single</span> <span class="pre">marker</span></code> options.</p></li>
@@ -968,8 +962,7 @@ To use SVG-symbols:</p>
 <p>There is already a default library of SVG-symbols. If you are looking for a specific symbol, try searching for it in the search bar.</p>
 <section id="adding-an-external-svg-library">
 <h4><span class="section-number">4.2.2.3.1. </span>Adding an external SVG-library<a class="headerlink" href="#adding-an-external-svg-library" title="Permalink to this heading">#</a></h4>
-<p>QGIS also offers the option to add your own SVG-libraries, for example if your organisation uses a specific set of
-icons.
+<p>QGIS also offers the option to add your own SVG-libraries, for example if your organisation uses a specific set of icons.
 If you have a library of SVG-symbols as a folder you can add them to your Styling manager.</p>
 <ol class="arabic simple">
 <li><p>Open the style manager: <code class="docutils literal notranslate"><span class="pre">Settings</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Style</span> <span class="pre">Manager</span></code>.</p></li>
@@ -1182,7 +1175,7 @@ Answer<div class="sd-summary-down docutils">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#symbology-for-vector-data">4.2.2. Symbology for Vector Data</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#styling-administrative-boundaries-polygons">4.2.2.1. Styling administrative boundaries (Polygons)</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#only-display-the-outlines-of-polygons">4.2.2.1.1. Only display the outlines of polygons</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adjusting-the-styles-of-multiple-overlaying-layers">4.2.2.1.2. Adjusting the styles of multiple overlaying layers</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adjusting-the-styles-of-multiple-overlaying-layers">4.2.2.1.2. Adjusting the Styles of Multiple Overlaying Layers</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-choropleth-map-gradudated-styling">4.2.2.1.3. Creating a Choropleth Map (“Gradudated Styling)</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-graduated-symbols-map">4.2.2.1.4. Creating a graduated symbols map</a></li>
 </ul>

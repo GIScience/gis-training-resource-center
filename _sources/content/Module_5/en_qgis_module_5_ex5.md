@@ -206,5 +206,3 @@ width: 750 px
 The aggregated amount joined to a layer of the administrative boundaries.
 ```
 
-
-<!--ADD: Optional steps to aggregate based on gender and status to create a map with additional information?-->

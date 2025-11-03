@@ -135,12 +135,6 @@ After installing the plugin, we can add basemaps:
 5. In the [layers panel](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html), make sure the `Google Road` layer is above the satellite imagery. 
 6. For easier navigation, make the satellite imagery transparent by navigating to the [symbology tab](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel) and adjusting the global opacity.
 
-<!---
-:::{dropdown} Video: Adjusting the global opacity
-
-
-:::
--->
 
 7. We will be needing the plugin __"Lat Lon Tools"__ to locate the coordinates we receive from the field. To [install the plugin](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html#installation-of-plugins), follow the same instructions as for the QuickMapServices plugin but search for "Lat Lon Tools" instead. 
 

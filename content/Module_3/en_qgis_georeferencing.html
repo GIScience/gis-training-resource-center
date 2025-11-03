@@ -603,13 +603,8 @@ document.write(`
 </div>
 <section class="tex2jax_ignore mathjax_ignore" id="georeferencing">
 <h1><span class="section-number">3.4. </span>Georeferencing<a class="headerlink" href="#georeferencing" title="Permalink to this heading">#</a></h1>
-<p>Georeferencing in QGIS is the process of aligning a raster image, such as a scanned map or aerial photograph, to a
-known coordinate system so that it can be used in spatial analysis. This involves assigning real-world coordinates to
-the image by identifying control points on the raster that correspond to known locations on the earth, often using
-existing vector layers or coordinate grids as a reference.</p>
-<p>In many cases, governmental institutions publish maps only as PDFs, without public access to the underlying data. In
-these cases, knowing how to correctly georeference a map allows you to access and use the information in your GIS
-analyses. In the case discussed in this chapter, the soil degradation map of Somalia is only available in a PDF report. In order to use the information in a GIS analysis, we can use the georeferencer to assign geographic coordinates to the pixels of the image. After georeferencing the image, the result is a raster file (<code class="docutils literal notranslate"><span class="pre">.tiff</span></code>). This dataset can be vectorized (converted into vector data) or joined with other raster data, to gain additional information.</p>
+<p>Georeferencing in QGIS is the process of aligning a raster image, such as a scanned map or aerial photograph, to a known coordinate system so that it can be used in spatial analysis. This involves assigning real-world coordinates to the image by identifying control points on the raster that correspond to known locations on the earth, often using existing vector layers or coordinate grids as a reference.</p>
+<p>In many cases, governmental institutions publish maps only as PDFs, without public access to the underlying data. In these cases, knowing how to correctly georeference a map allows you to access and use the information in your GIS analyses. In the case discussed in this chapter, the soil degradation map of Somalia is only available in a PDF report. In order to use the information in a GIS analysis, we can use the georeferencer to assign geographic coordinates to the pixels of the image. After georeferencing the image, the result is a raster file (<code class="docutils literal notranslate"><span class="pre">.tiff</span></code>). This dataset can be vectorized (converted into vector data) or joined with other raster data, to gain additional information.</p>
 <figure class="align-default" id="example-georeferencing-hague">
 <a class="reference internal image-reference" href="../../_images/example_georefencing_hague.png"><img alt="../../_images/example_georefencing_hague.png" src="../../_images/example_georefencing_hague.png" style="width: 750px;" /></a>
 <figcaption>
@@ -627,9 +622,7 @@ analyses. In the case discussed in this chapter, the soil degradation map of Som
 <p><span class="caption-number">Fig. 3.21 </span><span class="caption-text">Different transformation types: linear (left), polynomial 2nd degree (middle), polynomial 3rd degree (right) (Source: <a class="reference external" href="https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/overview-of-georeferencing.htm">ESRI</a>).</span><a class="headerlink" href="#en-georef-transformations" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>In most cases, you will use either linear, or polynomial (2nd or 3rd degree) transformations. There are many more
-transformation types to be used in QGIS. Each works best for a specific use case. For an explanation of each
-transformation type, check out the <a class="reference external" href="https://docs.qgis.org/3.34/en/docs/user_manual/working_with_raster/georeferencer.html">QGIS Documentation</a></p>
+<p>In most cases, you will use either linear, or polynomial (2nd or 3rd degree) transformations. There are many more transformation types to be used in QGIS. Each works best for a specific use case. For an explanation of each transformation type, check out the <a class="reference external" href="https://docs.qgis.org/3.34/en/docs/user_manual/working_with_raster/georeferencer.html">QGIS Documentation</a>.</p>
 <section id="how-to-georeference-in-qgis">
 <h3><span class="section-number">3.4.1.1. </span>How to Georeference in QGIS<a class="headerlink" href="#how-to-georeference-in-qgis" title="Permalink to this heading">#</a></h3>
 <p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_3.36_georeferencing_howto.mp4"></video></p>
@@ -649,7 +642,7 @@ Ideally, use a basemap where you can identify exact locations on both the basema
 <figure class="align-default" id="en-3-36-open-georefencer">
 <a class="reference internal image-reference" href="../../_images/en_3.36_open_georefencer.png"><img alt="../../_images/en_3.36_open_georefencer.png" src="../../_images/en_3.36_open_georefencer.png" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.22 </span><span class="caption-text">Opening the Georeferencer in QGIS 3.36</span><a class="headerlink" href="#en-3-36-open-georefencer" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 3.22 </span><span class="caption-text">Opening the Georeferencer in QGIS 3.36.</span><a class="headerlink" href="#en-3-36-open-georefencer" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="4">

@@ -18,7 +18,7 @@ height: 400px
 name: en_30.30.2_styling_panel
 align: left
 ---
-Styling panel in QGIS 3.30.2
+Styling panel in QGIS 3.30.2.
 ```
 
 For each layer in QGIS, there is a styling panel where you can change the symbology, colour and label for the features in that layer. There are two ways to open the layer styling options in QGIS:  
@@ -45,15 +45,14 @@ lines, or polygons. There are different options to symbolize these different typ
 name: en_symbolization_vector_data
 width: 750px
 ---
-Symbolization for vector data; Source: White, T. (2017). Symbolization and the Visual Variables. *The Geographic Information Science & Technology Body of Knowledge (2nd Quarter 2017 Edition), John P. Wilson (ed.). DOI: 10.2222/gistbok/2017.2.3 
+Symbolization for vector data; Source: White, T. (2017). Symbolization and the Visual Variables. *The Geographic Information Science & Technology Body of Knowledge (2nd Quarter 2017 Edition), John P. Wilson (ed.). DOI: 10.2222/gistbok/2017.2.3 .
 ```
 
 ```{note}
 Remember that __the layer's symbology is saved within your project file, not within your shapefile!__ If you share a shapefile with a colleague, it will have a different style when they add it to their own project.
 ```
 
-QGIS let's you visualise data using simple markers, SVG-files or Raster-files. Most commonly, you will work with simple markers. These are generally used to create the symbols for most elements on a map. For example, simple markers are 
-used to visualise streets, building outlines, waterbodies, administrative boundaries or other polygons.
+QGIS let's you visualise data using simple markers, SVG-files or Raster-files. Most commonly, you will work with simple markers. These are generally used to create the symbols for most elements on a map. For example, simple markers are used to visualise streets, building outlines, waterbodies, administrative boundaries or other polygons.
 Most simple markers consist of a __fill__ and an __outline__. Depending on the type of geometry in the layer, you will have to use have different symbology options. 
 
 
@@ -61,8 +60,7 @@ Most simple markers consist of a __fill__ and an __outline__. Depending on the t
 - The outline determines the colour, type, and thickness of the outline. Next to the colour and transparency, the outline is the most critical for distinguishing between different elements. For example, thicker lines for roads usually signify roads of a higher order (such as highways), while thin dashed lines might signify footpaths, inaccessible to road vehicles.
 - You can either style a single symbol for each layer or use different styles based on a [categorisation method](/content/Module_3/en_qgis_data_classification.md). 
 
-In the Symbology Tab, you can select between various symbolization 
-methods (see {numref}`en_3.36_m4_symbolisation_methods`). The most important ones are __Single Symbol__, __Categorised__, __Graduated__, and __Rule-based__. 
+In the Symbology Tab, you can select between various symbolization methods (see {numref}`en_3.36_m4_symbolisation_methods`). The most important ones are __Single Symbol__, __Categorised__, __Graduated__, and __Rule-based__. 
 
 ```{figure} /fig/en_3.36_m4_symbolisation_methods.png
 ---
@@ -121,7 +119,7 @@ When creating situational reports, you will frequently use administrative bounda
 
 ```{admonition} *Optional*: Now it's your turn
 
-You can follow along by downloading the [administrative boundaries of Nigeria](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/follow_along/nga_adm_osgof_20190417.zip) by [OCHA Nigeria](https://data.humdata.org/dataset/cod-ab-nga)
+You can follow along by downloading the [administrative boundaries of Nigeria](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/follow_along/nga_adm_osgof_20190417.zip) by [OCHA Nigeria](https://data.humdata.org/dataset/cod-ab-nga).
 
 ```
 
@@ -148,7 +146,7 @@ width: 500 px
 
 :::
 
-#### Adjusting the styles of multiple overlaying layers
+#### Adjusting the Styles of Multiple Overlaying Layers
 
 __Step 1: Ordering the layers__
 
@@ -192,9 +190,7 @@ The styling of a vector data consists of the colour and the outline.
 #### Creating a Choropleth Map ("Gradudated Styling)
 
 
-If a layer contains numeric values that are continuous, they can be organized in intervals. These intervals can be 
-displayed in graduated colours. In this exercise, we assign colours to Adm1 polygons based on the total population of 
-each State.
+If a layer contains numeric values that are continuous, they can be organized in intervals. These intervals can be displayed in graduated colours. In this exercise, we assign colours to Adm1 polygons based on the total population of each State.
 
 
 1. Download the [NGA_Adm1_Pop shapefile](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/follow_along/NGA_adm1_pop.zip) and save it in your shapefile folder.
@@ -357,9 +353,7 @@ On top of simple markers, QGIS lets you also use SVG-symbols and raster images a
 
 ### Using SVG-Symbols
 
-In some cases, you might want to use more complex symbols in your map. For example, you want to use a cross to signify 
-a hospital, a book to signify a library, or a plane to signify an airport. In these cases, you can use SVG-symbols. 
-Keep in mind that, ordinarily, SVG-symbols work only for point data. 
+In some cases, you might want to use more complex symbols in your map. For example, you want to use a cross to signify a hospital, a book to signify a library, or a plane to signify an airport. In these cases, you can use SVG-symbols. Keep in mind that, ordinarily, SVG-symbols work only for point data. 
 To use SVG-symbols:
 
 1. Open the styling panel and open the `single marker` options.
@@ -372,8 +366,7 @@ There is already a default library of SVG-symbols. If you are looking for a spec
 
 #### Adding an external SVG-library
 
-QGIS also offers the option to add your own SVG-libraries, for example if your organisation uses a specific set of 
-icons. 
+QGIS also offers the option to add your own SVG-libraries, for example if your organisation uses a specific set of icons. 
 If you have a library of SVG-symbols as a folder you can add them to your Styling manager.
 
 1. Open the style manager: `Settings` > `Style Manager`.
