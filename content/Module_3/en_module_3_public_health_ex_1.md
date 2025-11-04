@@ -65,9 +65,9 @@ Imported files are not saved within the QGIS project. If you move or delete the 
 In this step, we want to enrich the layer containing the healthsites with additional data on the capacity of the healthsites. The layer `Healthsite_capacities.csv` contains information about the bed capacity in the pediatric care unit as well as the cold chain capacity. This information is valuable to identify the capacity of the health sector to treat acute measles cases and coordinate a vaccination campaign. However, the dataset does not contain any geographic coordinates, so QGIS can't 
 
 :::{admonition} Gathering the information on capacities
-
-In a realistic scenario, ...
-
+In a realistic scenario, these data might have been collected during a rapid facility assessment led by the Ministry of Health and Red Cross volunteers.
+Because data collection was decentralised and partially paper-based, some facility names differ slightly across datasets (e.g., spelling variants, abbreviations).
+When performing joins, pay attention to such inconsistencies.
 :::
 
 1. Let's import the `Healthsite_capacities.csv` into your QGIS project:
@@ -90,18 +90,54 @@ In a realistic scenario, ...
     ---
     Setting the parameters for the "Join Attributes by field value"-tool.
     ```
-    - As `Input Layer`, select the 
+    - As "Input layer", select the layer `hotosm_tcd_health_facilities_points`.
+    - Under "Table field", select `name`.
+    - As "Input layer 2", select `healthsite_capacities`.
+    - Under "Table field 2", select `name`.
+    - Under "Layer 2 fields to copy", we can select which columns we want to copy. Click on the ![](/fig/Three_points.png) three dots to the right of the field and select `cold_chain`, `measles_vaccination`, `measles_treatment`, `beds_total`, `pediatric_beds`, `staff_total`, and `remarks`. Then, click `OK`.
+    - Finally, to execute the algorithm, click on `Run`. 
+    :::{note}
+    After running the algorithm, the window will switch to the log file. Here you can see if the algorithm encountered any problem. In our case, we can see that 149 features were successfully joined while 183 features were unable to be joined. This happens when the identifying value (Table field) is not present in the respective column in layer 2. This can be either because there is not data available, or because there are inconsistencies in the identifying value (e.g., typos, different spelling).
+    :::
+    - After reviewing the log, we can close the tool-window. A new layer called `Joined layer` should appear in your layers panel. Rename it to "`Healthsites_points_capacities`" and move it to the top. 
+
+> We now have a new point layer with the capacities of relevant healthsites. With this information, we can create a map showing the capacities of the health sector. 
+
+4. Let's take a look at the new layer by opening the attribute table. 
+    - <kbd>Right-Click</kdd> on the layer and open the attribute table.
+    - In the attribute table, if you scroll to the right, you will see the new columns with the information we added using the "join attributes by field value"-tool.
+    - Sort the attribute table for the new columns. As you can see, not every feature has information about the capacity. 
+    - We can remove the healthsites without additional information, as they are already available in the original dataset.
+    - Sort the `total_beds` column ascendingly, so the features with "NULL"-values appear at the top. 
+    - Click on row column (on the left), and select the first feature. If selected, the feature should appear blue.
+    - Now scroll down until you see the first feature with a value different then "NULL" in the `total_beds` column.
+    - Hold <kbd>Shift</kbd> and click on the row number of the last feature with the value NULL. 
+    - In the toolbar of the attribute table, click on the ![](/fig/mActionToggleEditing.png) `Toggle Editing Mode`-button to enter the editing mode for the attribute table. 
+    - Next, click on ![](/fig/attribute_table_delete_feature.png) `Delete selected features` to delete the points with no capacity information. 
+    - Click on ![](/fig/mActionToggleEditing.png) to save and exit the editing mode.
+
+5. Now, we can classify the healthsites points to indicate which healthsites have a cold chain in order to store measles vaccines.
+    - <kbd>Right-click</kbd> on the `Healthsites_points_capacities` and select `Properties`. A new window will open.
+    - On the left, navigate to the symbology-tab.
+    :::{figure} /fig/en_3.40_m3_ex_8_pub_health_1_classifying_healthpoint_capacity.png
+    ---
+    name: en_3.40_m3_ex_8_pub_health_1_classifying_healthpoint_capacity
+    width: 600 px
+    ---
+    Classifying the symbology for the healthsites in QGIS 3.40
+    - Instead of `Single Symbol`, select `Categorised` as the visualisation method.
+    - As "Value", select `cold_chain`
+    - Next, click on `Classify`. 
+    - If you want, you can adjust the symbology for the classes by double clicking on one. 
+    - Click `Apply`, then close the properties window. 
+
+> Great, now 
+
+> CHATGPT, OPtionally, add the osm roads dataset here. 
 
 
 
 
-
-
-4. Import the administrative boundaries, the road network and the healthsites to the project.
-5. Take the time to familiarise yourself with the different datasets by opening the attribute table. 
-6. Order the layers in a logical way (e.g., polygons at the bottom, lines in the middle, points on top).
-7. Import the healthsites capacities layer. 
-8. Join 
 
 
 
