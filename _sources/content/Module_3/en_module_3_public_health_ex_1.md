@@ -1,5 +1,13 @@
 # Exercise 1: Creating an overview map of the health system
 
+% MISSING:  - MAKE ENRICHED DATASET PERMANENT
+%           - BASEMAP
+%           - SMALL SELECTION EXPORT/QUERIES?
+%           - PROJECTIONS
+%           - ADD SMALLER EASIER EXERCISES EARLIER (INCLUDING IMPORTING DATA SO HERE WE CAN INTRODUCE THE PROJECT  HOME)
+%           - ADD MORE PICTURES
+%           - REMOVE STEPS TO CLEAN HEALTHSITES AS HEALTHSITES WITHOUT INFORMATION COULD STILL BE GOOD; E.G., TO REACH OUT
+
 ## Background 
 
 Over the past month, health authorities in Chad have reported a surge in measles cases, particularly in Mandoul, Mayo-Kebbi Est, and Logone Oriental regions. The surveillance unit has provided line-list data and existing health facility data. Your first task is to create a base map showing health facility distribution and classify them by service capacity to understand the available response infrastructure.
@@ -45,7 +53,7 @@ Imported files are not saved within the QGIS project. If you move or delete the 
 
 :::
 
-## Task 4: The layers panel and the layer concept
+### Task 3: The layers panel and the layer concept
 
 5. Once we've imported all the relevant layers, lets start by arranging the layers logically so we can work with them more easily. On the left, there is the `Layers`-panel. Here you can see all the datasets we've imported so far. 
     - QGIS displays geodata in layers, where each dataset is represented in one layer. The layers are stacked on top of each other. 
@@ -60,7 +68,7 @@ Imported files are not saved within the QGIS project. If you move or delete the 
     - Open the attribute table for the layer `hotosm_tcd_health_facilities_points` and familiarise yourself with the data. 
 
 
-## Task 5: Enriching the Healthsites dataset
+### Task 4: Enriching the Healthsites dataset
 
 In this step, we want to enrich the layer containing the healthsites with additional data on the capacity of the healthsites. The layer `Healthsite_capacities.csv` contains information about the bed capacity in the pediatric care unit as well as the cold chain capacity. This information is valuable to identify the capacity of the health sector to treat acute measles cases and coordinate a vaccination campaign. However, the dataset does not contain any geographic coordinates, so QGIS can't 
 
@@ -103,6 +111,8 @@ When performing joins, pay attention to such inconsistencies.
 
 > We now have a new point layer with the capacities of relevant healthsites. With this information, we can create a map showing the capacities of the health sector. 
 
+### Task 5: Cleaning the Healthsite Data
+
 4. Let's take a look at the new layer by opening the attribute table. 
     - <kbd>Right-Click</kdd> on the layer and open the attribute table.
     - In the attribute table, if you scroll to the right, you will see the new columns with the information we added using the "join attributes by field value"-tool.
@@ -115,6 +125,8 @@ When performing joins, pay attention to such inconsistencies.
     - In the toolbar of the attribute table, click on the ![](/fig/mActionToggleEditing.png) `Toggle Editing Mode`-button to enter the editing mode for the attribute table. 
     - Next, click on ![](/fig/attribute_table_delete_feature.png) `Delete selected features` to delete the points with no capacity information. 
     - Click on ![](/fig/mActionToggleEditing.png) to save and exit the editing mode.
+
+### Task 6: Classifying the Healthsites
 
 5. Now, we can classify the healthsites points to indicate which healthsites have a cold chain in order to store measles vaccines.
     - <kbd>Right-click</kbd> on the `Healthsites_points_capacities` and select `Properties`. A new window will open.
@@ -133,9 +145,11 @@ When performing joins, pay attention to such inconsistencies.
 
 > Great, now 
 
-> CHATGPT, OPtionally, add the osm roads dataset here. 
+% Optionally, add the osm roads dataset here. 
 
+## Task 7: Adding the Road Networks
 
+1. Import the roads dataset `
 
 
 

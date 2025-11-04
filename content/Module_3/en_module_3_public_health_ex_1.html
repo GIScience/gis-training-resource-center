@@ -576,10 +576,13 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-creating-a-new-qgis-project">Task 1: Creating a new QGIS project</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-importing-the-datasets">Task 2: Importing the datasets</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-the-layers-panel-and-the-layer-concept">Task 3: The layers panel and the layer concept</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-enriching-the-healthsites-dataset">Task 4: Enriching the Healthsites dataset</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-5-cleaning-the-healthsite-data">Task 5: Cleaning the Healthsite Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-6-classifying-the-healthsites">Task 6: Classifying the Healthsites</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-the-layers-panel-and-the-layer-concept">Task 4: The layers panel and the layer concept</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-5-enriching-the-healthsites-dataset">Task 5: Enriching the Healthsites dataset</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-7-adding-the-road-networks">Task 7: Adding the Road Networks</a></li>
 </ul>
             </nav>
         </div>
@@ -672,9 +675,8 @@ document.write(`
 <p>Imported files are not saved within the QGIS project. If you move or delete the original file, QGIS will no longer find the respective dataset.</p>
 </div>
 </section>
-</section>
-<section id="task-4-the-layers-panel-and-the-layer-concept">
-<h2>Task 4: The layers panel and the layer concept<a class="headerlink" href="#task-4-the-layers-panel-and-the-layer-concept" title="Permalink to this heading">#</a></h2>
+<section id="task-3-the-layers-panel-and-the-layer-concept">
+<h3>Task 3: The layers panel and the layer concept<a class="headerlink" href="#task-3-the-layers-panel-and-the-layer-concept" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple" start="5">
 <li><p>Once we’ve imported all the relevant layers, lets start by arranging the layers logically so we can work with them more easily. On the left, there is the <code class="docutils literal notranslate"><span class="pre">Layers</span></code>-panel. Here you can see all the datasets we’ve imported so far.</p>
 <ul class="simple">
@@ -698,8 +700,8 @@ document.write(`
 </li>
 </ol>
 </section>
-<section id="task-5-enriching-the-healthsites-dataset">
-<h2>Task 5: Enriching the Healthsites dataset<a class="headerlink" href="#task-5-enriching-the-healthsites-dataset" title="Permalink to this heading">#</a></h2>
+<section id="task-4-enriching-the-healthsites-dataset">
+<h3>Task 4: Enriching the Healthsites dataset<a class="headerlink" href="#task-4-enriching-the-healthsites-dataset" title="Permalink to this heading">#</a></h3>
 <p>In this step, we want to enrich the layer containing the healthsites with additional data on the capacity of the healthsites. The layer <code class="docutils literal notranslate"><span class="pre">Healthsite_capacities.csv</span></code> contains information about the bed capacity in the pediatric care unit as well as the cold chain capacity. This information is valuable to identify the capacity of the health sector to treat acute measles cases and coordinate a vaccination campaign. However, the dataset does not contain any geographic coordinates, so QGIS can’t</p>
 <div class="admonition-gathering-the-information-on-capacities admonition">
 <p class="admonition-title">Gathering the information on capacities</p>
@@ -755,7 +757,10 @@ When performing joins, pay attention to such inconsistencies.</p>
 <blockquote>
 <div><p>We now have a new point layer with the capacities of relevant healthsites. With this information, we can create a map showing the capacities of the health sector.</p>
 </div></blockquote>
-<ol class="arabic" start="4">
+</section>
+<section id="task-5-cleaning-the-healthsite-data">
+<h3>Task 5: Cleaning the Healthsite Data<a class="headerlink" href="#task-5-cleaning-the-healthsite-data" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple" start="4">
 <li><p>Let’s take a look at the new layer by opening the attribute table.</p>
 <ul class="simple">
 <li><p><kbd>Right-Click</kdd> on the layer and open the attribute table.</p></li>
@@ -771,6 +776,11 @@ When performing joins, pay attention to such inconsistencies.</p>
 <li><p>Click on <img alt="" src="../../_images/mActionToggleEditing.png" /> to save and exit the editing mode.</p></li>
 </ul>
 </li>
+</ol>
+</section>
+<section id="task-6-classifying-the-healthsites">
+<h3>Task 6: Classifying the Healthsites<a class="headerlink" href="#task-6-classifying-the-healthsites" title="Permalink to this heading">#</a></h3>
+<ol class="arabic" start="5">
 <li><p>Now, we can classify the healthsites points to indicate which healthsites have a cold chain in order to store measles vaccines.</p>
 <ul class="simple">
 <li><p><kbd>Right-click</kbd> on the <code class="docutils literal notranslate"><span class="pre">Healthsites_points_capacities</span></code> and select <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. A new window will open.</p></li>
@@ -796,9 +806,13 @@ When performing joins, pay attention to such inconsistencies.</p>
 <blockquote>
 <div><p>Great, now</p>
 </div></blockquote>
-<blockquote>
-<div><p>CHATGPT, OPtionally, add the osm roads dataset here.</p>
-</div></blockquote>
+</section>
+</section>
+<section id="task-7-adding-the-road-networks">
+<h2>Task 7: Adding the Road Networks<a class="headerlink" href="#task-7-adding-the-road-networks" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Import the roads dataset `</p></li>
+</ol>
 <p>Now, lets configure the “Project Home” in the browser panel.</p>
 <ol class="arabic simple" start="3">
 <li><p>In the browser panel on the left, <kbd>right-click</kbd> on <code class="docutils literal notranslate"><span class="pre">Project</span> <span class="pre">Home</span></code> → <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">Project</span> <span class="pre">Home...</span></code> and set the project home folder to the training folder (with the subfolders <code class="docutils literal notranslate"><span class="pre">/data</span></code>, <code class="docutils literal notranslate"><span class="pre">/project</span></code>, etc.). Now you will be able to access all the datasets for this training through the browser.</p></li>
@@ -860,10 +874,13 @@ When performing joins, pay attention to such inconsistencies.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-creating-a-new-qgis-project">Task 1: Creating a new QGIS project</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-importing-the-datasets">Task 2: Importing the datasets</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-the-layers-panel-and-the-layer-concept">Task 3: The layers panel and the layer concept</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-enriching-the-healthsites-dataset">Task 4: Enriching the Healthsites dataset</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-5-cleaning-the-healthsite-data">Task 5: Cleaning the Healthsite Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-6-classifying-the-healthsites">Task 6: Classifying the Healthsites</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-the-layers-panel-and-the-layer-concept">Task 4: The layers panel and the layer concept</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-5-enriching-the-healthsites-dataset">Task 5: Enriching the Healthsites dataset</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-7-adding-the-road-networks">Task 7: Adding the Road Networks</a></li>
 </ul>
   </nav></div>
 
