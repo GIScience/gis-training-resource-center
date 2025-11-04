@@ -573,7 +573,13 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-creating-a-new-qgis-project">Task 1: Creating a new QGIS project</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-importing-the-datasets">Task 2: Importing the datasets</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-the-layers-panel-and-the-layer-concept">Task 4: The layers panel and the layer concept</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-5-enriching-the-healthsites-dataset">Task 5: Enriching the Healthsites dataset</a></li>
 </ul>
             </nav>
         </div>
@@ -617,7 +623,7 @@ document.write(`
 <td class="text-left"><p>United Nations Office for the Coordination of Humanitarian Affairs (OCHA)</p></td>
 <td class="text-left"><p><a class="reference external" href="https://data.humdata.org/dataset/cod-ab-tcd">HDX</a></p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">hotosm_tcd_health_facilities_points_gpkg.gpkg</span></code> (Points)</p></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">hotosm_tcd_health_facilities_points.csv</span></code> (Points)</p></td>
 <td class="text-left"><p>Chad Health Facilities (OpenStreetMap Export)</p></td>
 <td class="text-left"><p>Humanitarian OpenStreetMap Team</p></td>
 <td class="text-left"><p><a class="reference external" href="https://data.humdata.org/dataset/hotosm_tcd_health_facilities">HOTOSM</a></p></td>
@@ -633,16 +639,118 @@ document.write(`
 <hr class="docutils" />
 <section id="tasks">
 <h2>Tasks<a class="headerlink" href="#tasks" title="Permalink to this heading">#</a></h2>
+<section id="task-1-creating-a-new-qgis-project">
+<h3>Task 1: Creating a new QGIS project<a class="headerlink" href="#task-1-creating-a-new-qgis-project" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Open QGIS and create a new project.</p></li>
-<li><p>Save the project via <code class="docutils literal notranslate"><span class="pre">Project</span></code> → <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">As...</span></code>. Navigate to the folder for this training and save it in the <code class="docutils literal notranslate"><span class="pre">/project</span></code> subfolder. Give it a name.</p></li>
-<li><p>In the browser panel on the left, <kbd>right-click</kbd> on <code class="docutils literal notranslate"><span class="pre">Project</span> <span class="pre">Home</span></code> → <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">Project</span> <span class="pre">Home...</span></code> and set the project home folder to the training folder (with the subfolders <code class="docutils literal notranslate"><span class="pre">/data</span></code>, <code class="docutils literal notranslate"><span class="pre">/project</span></code>, etc.). Now you will be able to access all the datasets for this training through the browser.</p></li>
+<li><p>Save the project via <code class="docutils literal notranslate"><span class="pre">Project</span></code> → <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">As...</span></code>. Navigate to the folder for this training and save it in the <code class="docutils literal notranslate"><span class="pre">/project</span></code> subfolder. Give it a nam and click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
+</ol>
+</section>
+<section id="task-2-importing-the-datasets">
+<h3>Task 2: Importing the datasets<a class="headerlink" href="#task-2-importing-the-datasets" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple" start="3">
+<li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop">Import the following datasets</a> via drag-and-drop:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">tcd_admbnda_adm0_20250212_AB.shp</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tcd_admbnda_adm1_20250212_AB.shp</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tcd_admbnda_adm2_20250212_AB.shp</span></code></p></li>
+</ul>
+</li>
+<li><p>The file <code class="docutils literal notranslate"><span class="pre">hotosm_tcd_health_facilities_points.csv</span></code> contains point data, but it is in a delimited text format. QGIS won’t automatically recognise the geographic information and display the dataset as points. We need to import it as a <span class="xref myst">delimited text layer</span>:</p>
+<ul class="simple">
+<li><p>In the top bar, click on <code class="docutils literal notranslate"><span class="pre">Layer</span></code> → <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> → <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Delimited</span> <span class="pre">Text</span> <span class="pre">Layer...</span></code>. A new window will open. Here we need to specify the file, the file format and define the geometry information</p></li>
+<li><p>To the right of the <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">name</span></code>-field, click on the <img alt="" src="../../_images/Three_points.png" /> three points to open the file browser.</p></li>
+<li><p>Navigate to the data input folder and select the file <code class="docutils literal notranslate"><span class="pre">hotosm_tcd_health_facilities_points.csv</span></code>. Click <code class="docutils literal notranslate"><span class="pre">Open</span></code>.</p></li>
+<li><p>Make sure that QGIS uses the correct delimiter (e.g., comma, tab, semicolon, etc.). If it is the correct delimiter, a preview of the datatable should appear in the Sample Data field.</p></li>
+<li><p>Specify the <code class="docutils literal notranslate"><span class="pre">X-</span></code> and <code class="docutils literal notranslate"><span class="pre">Y-field</span></code> by selecting the respective column.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Add</span></code>. The healthsites should now appear as points on your map canvas.</p></li>
+</ul>
+</li>
+</ol>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>Imported files are not saved within the QGIS project. If you move or delete the original file, QGIS will no longer find the respective dataset.</p>
+</div>
+</section>
+</section>
+<section id="task-4-the-layers-panel-and-the-layer-concept">
+<h2>Task 4: The layers panel and the layer concept<a class="headerlink" href="#task-4-the-layers-panel-and-the-layer-concept" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple" start="5">
+<li><p>Once we’ve imported all the relevant layers, lets start by arranging the layers logically so we can work with them more easily. On the left, there is the <code class="docutils literal notranslate"><span class="pre">Layers</span></code>-panel. Here you can see all the datasets we’ve imported so far.</p>
+<ul class="simple">
+<li><p>QGIS displays geodata in layers, where each dataset is represented in one layer. The layers are stacked on top of each other.</p></li>
+<li><p>Lets arrange the layers so we work with them more easily:</p>
+<ul>
+<li><p>The ADM0-layer should go at the bottom, followed by ADM1, then ADM2.</p></li>
+<li><p>The healthsites should go on top.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Lets investigate the layers that we have added so far. Each vector layer has an attribute table, where each row represents a geometric feature on the map canvas.</p>
+<ul class="simple">
+<li><p>Open the attribute table by <kbd>right-clicking</kbd> on the ADM2 layer in the layers panel on the left → <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Attribute</span> <span class="pre">Table</span></code>.</p></li>
+<li><p>A new window will open. This is the attribute table. It shows the vector layer in a tabular format, allowing you to see the attribute values, sort the table, and edit the values using the tools in the top bar.</p></li>
+<li><p>Take a look at the different columns in the attribute table. What do they show?</p></li>
+<li><p>Try sorting the attribute table by clicking on the <img alt="" src="../../_images/sort.png" /></p></li>
+<li><p>Open the attribute table for the layer <code class="docutils literal notranslate"><span class="pre">hotosm_tcd_health_facilities_points</span></code> and familiarise yourself with the data.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="task-5-enriching-the-healthsites-dataset">
+<h2>Task 5: Enriching the Healthsites dataset<a class="headerlink" href="#task-5-enriching-the-healthsites-dataset" title="Permalink to this heading">#</a></h2>
+<p>In this step, we want to enrich the layer containing the healthsites with additional data on the capacity of the healthsites. The layer <code class="docutils literal notranslate"><span class="pre">Healthsite_capacities.csv</span></code> contains information about the bed capacity in the pediatric care unit as well as the cold chain capacity. This information is valuable to identify the capacity of the health sector to treat acute measles cases and coordinate a vaccination campaign. However, the dataset does not contain any geographic coordinates, so QGIS can’t</p>
+<div class="admonition-gathering-the-information-on-capacities admonition">
+<p class="admonition-title">Gathering the information on capacities</p>
+<p>In a realistic scenario, …</p>
+</div>
+<ol class="arabic">
+<li><p>Let’s import the <code class="docutils literal notranslate"><span class="pre">Healthsite_capacities.csv</span></code> into your QGIS project:</p>
+<ul class="simple">
+<li><p>In the top bar, navigate to <code class="docutils literal notranslate"><span class="pre">Layer</span></code> → <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> → <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Delimited</span> <span class="pre">Text</span> <span class="pre">Layer...</span></code></p></li>
+<li><p>To the right of the <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">name</span></code>-field, click on the <img alt="" src="../../_images/Three_points.png" /> three points and navigate to the <code class="docutils literal notranslate"><span class="pre">data/input/healthsite_capacities.csv</span></code> file and click <code class="docutils literal notranslate"><span class="pre">Open</span></code>.</p></li>
+<li><p>In the import window, you will see sample data in the sample data field. Take a look at the columns and data available. What kind of data is present in each column? Unfortunately, there are no coordinates for the individual healthsites.</p></li>
+<li><p>There are no columns with the coordinates in this datatable. Under <code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">Definition</span></code> select <code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">geometry</span> <span class="pre">(attribute</span> <span class="pre">only</span> <span class="pre">table)</span></code>.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Add</span></code>. The layer will appear in your layers tab as a data table, but will not be shown in the map canvas.</p></li>
+</ul>
+</li>
+<li><p>Let’s investigate the capacities table further.</p>
+<ul class="simple">
+<li><p><kbd>Right-click</kbd> on the layer and open the attribute table.</p></li>
+<li><p>In the top bar, you can see how many entries the dataset contains (<em>148 features</em>)</p></li>
+<li><p>The datatable includes a column called “name” which contains the name of the health facilities. These names are the same names that are also stored in the healthsites point layer we imported earlier.</p></li>
+<li><p>This means that we can join both tables using the attribute values of the “name”-column.</p></li>
+</ul>
+</li>
+<li><p>In the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_start.html#toolbox-toolbars">processing toolbox</a>, search for the tool <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">attributes</span> <span class="pre">by</span> <span class="pre">field</span> <span class="pre">value</span></code> and open it by <kbd>double-clicking</kbd> on it.</p>
+<ul class="simple">
+<li><p>A new window will open. Here we can specify the parameters for the <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">attributes</span> <span class="pre">by</span> <span class="pre">field</span> <span class="pre">value</span></code>-tool.</p></li>
+</ul>
+<figure class="align-default" id="en-3-40-m3-ex-8-pub-health-1-join-attr-by-field-value">
+<a class="reference internal image-reference" href="../../_images/en_3.40_m3_ex_8_pub_health_1_join_attr_by_field_value.png"><img alt="../../_images/en_3.40_m3_ex_8_pub_health_1_join_attr_by_field_value.png" src="../../_images/en_3.40_m3_ex_8_pub_health_1_join_attr_by_field_value.png" style="width: 550px;" /></a>
+<figcaption>
+<p><span class="caption-text">Setting the parameters for the “Join Attributes by field value”-tool.</span><a class="headerlink" href="#en-3-40-m3-ex-8-pub-health-1-join-attr-by-field-value" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p>As <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Layer</span></code>, select the</p></li>
+</ul>
+</li>
 <li><p>Import the administrative boundaries, the road network and the healthsites to the project.</p></li>
 <li><p>Take the time to familiarise yourself with the different datasets by opening the attribute table.</p></li>
 <li><p>Order the layers in a logical way (e.g., polygons at the bottom, lines in the middle, points on top).</p></li>
 <li><p>Import the healthsites capacities layer.</p></li>
 <li><p>Join</p></li>
 </ol>
+<p>Now, lets configure the “Project Home” in the browser panel.</p>
+<ol class="arabic simple" start="3">
+<li><p>In the browser panel on the left, <kbd>right-click</kbd> on <code class="docutils literal notranslate"><span class="pre">Project</span> <span class="pre">Home</span></code> → <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">Project</span> <span class="pre">Home...</span></code> and set the project home folder to the training folder (with the subfolders <code class="docutils literal notranslate"><span class="pre">/data</span></code>, <code class="docutils literal notranslate"><span class="pre">/project</span></code>, etc.). Now you will be able to access all the datasets for this training through the browser.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Working with the browser panel allows a much quicker access to the files and keeps the folder view organised when working with shapefiles.</p>
+</div>
 </section>
 </section>
 
@@ -693,7 +801,13 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-creating-a-new-qgis-project">Task 1: Creating a new QGIS project</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-importing-the-datasets">Task 2: Importing the datasets</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-the-layers-panel-and-the-layer-concept">Task 4: The layers panel and the layer concept</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-5-enriching-the-healthsites-dataset">Task 5: Enriching the Healthsites dataset</a></li>
 </ul>
   </nav></div>
 
