@@ -20,6 +20,7 @@ These exercises touch on all the content of module 5.
 | __[Exercise 5: Aggregate and Assess G2P Money Transfers in Pakistan](/content/Module_5/en_qgis_module_5_ex5.md)__ | The exercise teaches how to aggregate data on administrative levels and subsequently join the aggregated data with a polygon dataset. | Data analysis and creating reports | 60 minutes |
 | __[Exercise 6: Calculate sum of affected population and flooded area for the Area of interest](/content/Module_5/en_qgis_module_5_ex6.md)__ | The exercise teaches you how to perform a spatial join and create statistics based on the attributes. | Data analysis | 45-60 minutes | 
 | __[Exercise 8: Estimating Exposed Population – Aina’s Manual Approach](/content/Module_5/en_qgis_module_5_mdg_aa_ex_1.md)__ | This exercise teaches how to buffer cyclone track and use zonal statistics to estimate the population in the cyclone buffer | Data analysis | 2 hours | 
+| __[Exercise 9: Public Health Part 2](/content/Module_5/en_qgis_module_5_public_health_ex_2.md)__ | The aim of this exercise is to aggregate data on district-level, calculate zonal statistics and use the field calculator to calculate the incidence rate of measles in a fictious scenario. | Public health workers | 3 hours  | 
  
 
 <!--
