@@ -16,23 +16,23 @@ The ![](/fig/processingModel.png) `Graphical Modeler` also known as the Model Bu
 
 The Graphical Modeler can be accessed from the Processing menu `Processing -> Graphical Modeler` as shown in {numref}`open_graphical_modeler`.
 
-```{figure} /fig/en_open_graphical_modeler.png
+:::{figure} /fig/en_open_graphical_modeler.png
 ---
 height: 150px
 name: open_graphical_modeler
 ---
 How to open the Graphical Modeler in QGIS
-```
+:::
 
 This will open the following window, which contains everything we need to build a model.
 
-```{figure} /fig/en_gui_graphical_modeler.PNG
+:::{figure} /fig/en_gui_graphical_modeler.PNG
 ---
 height: 500px
 name: gui_graphical_modeler
 ---
 Screenshot of the Graphical Modeler window for QGIS version 3.28.4
-```
+:::
 
 In the Graphical Modeler window we can see several icons and menus. Firstly, we will focus on the left window for the `Inputs` and `Algorithms` section. Inputs are all the input variables or layers for a model, such as a Vector Layer, Raster Layer, String, Boolean, Expression and many others. The Algorithms are all the tools that are used to process the input variables. In the processing chain, one algorithm/tool will return an output that will be used by another/the following tool until the final output is created.
 
@@ -56,38 +56,38 @@ To add new inputs:
 
 <!---It is also possible to select the `Advanced` checkbox to set the input to be within the Advanced section. This is particularly useful when the model has many parameters and some of them are not trivial, but you still want to be able to select them.-->
 
-```{figure} /fig/en_vector_layer_modeler.PNG
+:::{figure} /fig/en_vector_layer_modeler.PNG
 ---
 height: 300px
 name: vector_layer_modeler
 ---
 Vector Layer as input
-```
+:::
 
-```{figure} /fig/en_input_vector_modeler.PNG
+:::{figure} /fig/en_input_vector_modeler.PNG
 ---
 height: 300px
 name: input_vector_modeler
 ---
 Vector Layer Parameter Definition
-```
+:::
 
 #### Selecting the Algorithms
 
 The model builder is using the same algorithms that are available in the processing toolbox in the main QGIS window. 
 To add algorithms:
 
-1. select the `Algorithms` tab on the left.
+1. Select the `Algorithms` tab on the left.
 2. Using the searchbar, look the the tool `Buffer` algorithm as shown in {numref}`model_buffer`. 
 3. Add it to the model canvas by dragging it onto the canvas or double-clicking on it. 
 
-```{figure} /fig/en_model_buffer.PNG
+:::{figure} /fig/en_model_buffer.PNG
 ---
 height: 300px
 name: model_buffer
 ---
 Selection of Buffer algorithm
-```
+:::
 
 4. The algorithm parameters window will open. Here we have to specify the description (title), the input, the buffer size, and the output.
 

@@ -111,13 +111,13 @@ __Available Data:__
 1. Unzip the folder and familiarise yourself with the data by looking at the soil degradation map. The map is located in the `Module_3_Exercise_7_Georeferencing/data/input/`-Folder.
 2. Create a new QGIS-project.
 
-```{figure} /fig/SOM_Soil_deg.png
+:::{figure} /fig/SOM_Soil_deg.png
 ---
 name: SOM_soil_deg
 width: 500 px
 ---
 Soil degradation in Somalia
-```
+:::
 
 ### Step 1: Adding a basemap and loading the vector layer
 
@@ -132,13 +132,13 @@ Now that we prepared our QGIS-project, let's start georeferencing the map.
 
 3. Open the Georeferencer by navigating to the Top Bar > `Layer` > `Georeferencer` <!---(see {numref}`open_georeferencer`)-->
 
-```{figure} /fig/en_3.36_open_georefencer.png
+:::{figure} /fig/en_3.36_open_georefencer.png
 ---
 name: open_georeferencer
 width: 500 px
 ---
-Opening the Georeferencer in QGIS 3.36
-```
+Opening the Georeferencer in QGIS 3.36.
+:::
 
 4. A new window will open. This is the __georeferencer__. To add an image to georeference, click on ![](/fig/3.36_add_raster_georef.png) `Open Raster`.
 5. Select the image of the map you want to georeference. Click `Open` (`Module_3_Exercise_7_Georeferencing/data/input`). 
@@ -147,12 +147,11 @@ Opening the Georeferencer in QGIS 3.36
 
 ::::{margin}
 
-```{note}
+:::{note}
 In most cases, you can leave the transformation type on `linear`. Regional maps are usually in a conformal projection (i.e. the angles are preserved). Satellite imagery as well. If you realise that the angles are not true, or the map is deformed or distorted, you may need to choose `polynomial` as transformation type. Polynomial transformations need more Ground Control Points and the points need to be distributed evenly across the map.
 
 To learn more about the different transformation types in QGIS, check out the official [QGIS documentation](https://docs.qgis.org/3.34/en/docs/user_manual/working_with_raster/georeferencer.html#available-transformation-algorithms).
-```
-
+:::
 ::::
 
 8. Click on `Ok`. 
@@ -164,26 +163,26 @@ To learn more about the different transformation types in QGIS, check out the of
     - Once the coordinates are entered, click `Ok`
 12. The georeferencer window will open again. This time, below the map image, you can see a point in the table. These are the Ground Control Points. Continue adding more GCP. Spread them out over the entire map. Make sure that the `Mean error` in the bottom right corner of the georeferencer window is as low as possible (below 5 is ideal). 
 
-```{figure} /fig/en_3.36_georef_dialogue_GCP.png
+:::{figure} /fig/en_3.36_georef_dialogue_GCP.png
 ---
 width: 700 px
 name: georeferencer_dialogue
 ---
 Georeferencer dialogue in QGIS 3.36
-```
+:::
 
 13. Once you have added enough points, click on ![](/fig/3.36_start_georef.png) `Start Georeferencing`. QGIS will use the Points you added to transform the image into a georeferenced image, where every pixel has GPS coordinates ascribed to it. 
 14. You can close the georefencer window. Decide wether you want to save the GPC points in a file. If you are not sure if your georeferencing accuracy was precise enough, save the GPC points so you don't have to do all the work again. 
 15. Congratulations, the georeferenced map will now appear as a raster layer in your QGIS-project
 
 
-```{figure} /fig/en_3.36_finished_georef.png
+:::{figure} /fig/en_3.36_finished_georef.png
 ---
 width: 700 px
 name: Som_georef_map
 ---
 A georeferenced map of Somalia in the QGIS Map Canvas
-```
+:::
 
 ### *Optional* Step 3: Adjusting the transparency of the georeferenced map
 

@@ -52,13 +52,13 @@ If you plan to perform distance-based calculation with the new dataset, make sur
 4.	Left-click on the feature you want to digitise.
 5.	Once you click, a window named `[Your Layer Name]- Feature Attribute` will appear. Here you can add the information about this feature to the different columns, based on the attribute table of the layer.
 
-```{figure} /fig/point_creation.png 
+:::{figure} /fig/point_creation.png 
 ---
 width: 700px
 name: Point creation
 align: center
 ---
-```
+:::
 % Add another picture with more columns
 
 5.	Once you are done with digitisation ![](/fig/mActionSaveEdits.png) to save your edits.
@@ -71,9 +71,9 @@ align: center
 
 The  method  is  similar  to  digitising  a  point  (see  above). First you have to create a new line layer or use an existing one. 
 
-```{attention} 
+:::{attention} 
 If you create a new line layer remember to change the geometry type into lines because we are creating lines data now.
-```
+:::
 
 1. In the layers panel, select the line layer to which you want to add data.
 2. In the digitisation toolbar, click on ![](/fig/mActionToggleEditing.png). Now the layer is in editing mode. 

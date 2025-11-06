@@ -35,13 +35,13 @@ share it and how do you need to cite the data source? Make sure to check the
 licensing and to follow the respective regulations to avoid difficulties.
 
 
-```{figure} /fig/en_data_sources_examples_cartong.png
+:::{figure} /fig/en_data_sources_examples_cartong.png
 ---
 name: en_data_sources_examples_cartong
 width: 600 px
 ---
 The data to create maps or perform GIS analyses can come from various sources (Source: [CartONG](https://www.cartong.org/en/))
-```
+:::
 
 ## Overview of useful data repositories
 
@@ -115,11 +115,11 @@ OpenStreetMap (OSM) is a collaborative project that aims to create a free and ed
 
 There are multiple ways to get OpenStreetMap (OSM) data as a vector file into QGIS. The three most common and easy-to-use ways are geofabrik.de, HOT Export Tool and QuickOSM [QGIS Plugin](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html). Each of the options has both advantages and disadvantages.
 
-```{Tip}
+:::{Tip}
 
 If you wish to practice how to export OSM data, you can do the __[Exercise 4: Exporting OSM Data](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_data_sources_ex4.html)__
 
-```
+:::
 
 __[Geofabrik.de](https://download.geofabrik.de/)__
 
@@ -153,11 +153,11 @@ __QuickOSM Plugin__
 
 
 
-```{tip}
+:::{tip}
 
 It is by default possible to add the OSM base map to your project.  Click on `Layer` -> `Add Layer` -> `Add XYZ Layer…`. Choose `OpenStreetMap` and click `Add` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#standard-qgis-basemaps)). 
 
-```
+:::
 
 
 ### QuickOSM plugin
@@ -183,14 +183,14 @@ Follow the steps to fetch for data:
 
 1. Select a Key and Value from the dropdown list. If you are unsure, check here: 
 
-```{figure} /fig/key_value_quickosm.png
+:::{figure} /fig/key_value_quickosm.png
 ---
 width: 800px
 align: center
 name: key_value_quickosm
 ---
 Choosing key and value in QuickOSM.
-```
+:::
 
 2. Limit the area by typing in the name of your area of interest. You can also 
    choose from the dropdown `Canvas Extent` or `Layer Extent` instead of a name 
@@ -200,14 +200,14 @@ Choosing key and value in QuickOSM.
    minimize errors.
    <!-- CLARIFY: would be useful to have an example here --> 
 
-```{figure} /fig/quickosm_usage.png
+:::{figure} /fig/quickosm_usage.png
 ---
 width: 800px
 name: quickosm_usage
 align: center
 ---
 Running the QuickOSM plugin.
-```
+:::
 
 4. Click on `Run query`.
 
@@ -230,14 +230,14 @@ With the [Humanitarian OpenStreetMap Team (HOT) Export Tool](https://export.hoto
    If you don’t have one, you'll need to create one: click on `Log in` and in the new window select the option to create a new account.
 2. After logging in, click the `Start Exporting` button on the homepage to load the Export Tool 
 
-```{figure} /fig/hot_export.png
+:::{figure} /fig/hot_export.png
 ---
 height: 400px
 align: center
 name: HOT Export Tool
 ---
 The HOT Export Tool.
-```
+:::
 
 4. First add a name and a brief description of your export. Then click on `Next`.
 5. Choose the file format fitting to your needs. It is recommended to use GeoPackage but Geojson or shapefile can be used as well. Click on `Next`.
@@ -251,38 +251,38 @@ The HOT Export Tool.
       Click on `Import`.
 8. Then click on `Next`. It will look something like this:
 
-```{figure} /fig/hot_export_example.png
+:::{figure} /fig/hot_export_example.png
 ---
 height: 400px
 align: center
 name: hot_export_example
 ---
 An Example for the HOT Export Tool.
-```
+:::
 
 9. Click on `Create Export`. It will then run for a few minutes, looking like 
    this:
 
-```{figure} /fig/hot_export_running.png
+:::{figure} /fig/hot_export_running.png
 ---
 height: 400px
 align: center
 name: hot_export_running
 ---
 The HOT Export Tool is running.
-```
+:::
 
 10. After being finished, the status will change to `COMPLETED` and you can 
     download your file by clicking on the link:
 
-```{figure} /fig/hot_export_done.png
+:::{figure} /fig/hot_export_done.png
 ---
 height: 400px
 align: center
 name: hot_export_done
 ---
 Downloading data from HOT Export Tool.
-```
+:::
 
 ## Self-Assessment Questions
 

@@ -20,13 +20,13 @@ To assign a colour gradient for raster data, you need to:
 4. Click on __the arrow to the right of the colour ramp__. Here you can choose a pre-made colour ramp.
 5. You can modify the colour ramp by __clicking on the colour ramp__.
 
-``` {figure} ../../fig/en_30.30.2_raster_data_colour_gradient.png
+:::{figure} ../../fig/en_30.30.2_raster_data_colour_gradient.png
 ---
 name: en_30.30.2_raster_data_colour_gradient
 width: 600px
 ---
 Colour Ramp Selector in QGIS 3.36.
-```
+:::
 
 In the colour ramp selector, you can adjust each colour step. On the bottom, you can see a plot for the Hue, __Saturation__, __Lightness__ and __Opacity__. The last three in particular are useful to understand how your colour ramp will appear. Gradients from light to dark are easier to read: Check if the plot for the __Lightness__ has a more or less linear plot.
 
@@ -39,41 +39,41 @@ In some cases, the colour ramp should be inverted to make it easier to read the 
 
 ## Using better colour palettes
 
-```{note}
+:::{note}
 
 The default colour ramps available in QGIS are limited and do not fit a lot of cartography purposes. However, QGIS includes the `cpt-city` colour palette catalogue with many carefully crafted colour ramps and palettes. Amongst other, you can find colour ramps specifically created for terrain or elevation models. 
 
-```
+:::
 
-```{figure} /fig/en_3.36_cpt-city_cat_1.png
+:::{figure} /fig/en_3.36_cpt-city_cat_1.png
 ---
 name: en_3.36_cpt-city_cat_1
 width: 350 px
 ---
 Accessing the colour catalogue.
-```
+:::
 
 To access the `cpt-city` catalogue, 
 
 1. Open the raster layers symbology tab and select `Singleband Pseudocolor` as the symbolisation method.
 2. Navigate to the dropdown arrow next to the colour ramp, a dropdown menu with different colour ramps will open.
 3. Click on `Create New Color Ramp`. A small dialogue box will open.
-    ```{figure} /fig/en_3.36_cpt-city_cat_2.png
+    :::{figure} /fig/en_3.36_cpt-city_cat_2.png
     ---
     name: en_3.36_cpt-city_cat_2
     width: 200 px
     ---
     Selecting the colour ramp catalogue
-   ```
+    :::
 4. A new window will open. Here you can find a multitude of colour palettes. For example, for a digital elevation model you can select a colour ramp for topography or specifically digital elevation models. 
 
-```{figure} /fig/en_3.36_cpt-city_cat_3.png
+:::{figure} /fig/en_3.36_cpt-city_cat_3.png
 ---
 name: en_3.36_cpt-city_cat_3
 width: 600 px
 ---
 The cpt-city colour ramp catalogue in QGIS 3.36
-```
+:::
 
 
 ## Self-Assessment Questions

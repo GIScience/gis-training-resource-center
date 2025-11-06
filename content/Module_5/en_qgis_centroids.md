@@ -17,12 +17,12 @@ The attributes of the points in the output layer are the same as for the origina
 
 Centroids are especially useful when creating [graduated symbols maps](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#creating-a-graduated-symbols-map), as the size of the point symbols can be graded using the graduated classification method.
 
-```{figure} /fig/en_centroids_screenshot.png
+:::{figure} /fig/en_centroids_screenshot.png
 ---
 width: 650 px
 name: en_qgis_centroids
 ---
 The black points represent the centroids of the features from the input layer.
-```
+:::
 
 

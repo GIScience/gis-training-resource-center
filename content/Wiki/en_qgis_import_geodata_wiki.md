@@ -5,9 +5,10 @@ __🔙[Back to Homepage](/content/intro.md)__
 
 ## Vector data Import 
 
-```{Tip}
+:::{Tip}
 When importing a shapefile by drag-and-drop you have to use the file with the ending .shp!
-```
+:::
+
 ### Open vector layer
 
 #### Open vector data via Layer Tab
@@ -58,25 +59,25 @@ When importing a shapefile by drag-and-drop you have to use the file with the en
 
 ## Text data import
 
-```{Tip}
+:::{tip}
 To directly load .csv or EXCEL data into QGIS, the datasets need to have columns containing geometry in the form of latitude (Y-field) and longitude (X-field). 
-```
+:::
 
 ### Open .csv data in QGIS
 
-```{Note}
+:::{mote}
 When loading vector data in text format like .csv or .txt in QGIS, this data has to have latitude and longitude columns. 
 * `X field` =“LONGITUDE” 
 * `Y field` = “LATITUDE”
-```
+:::
 
 1.  `Layer` -> `Add Layer` ->`Open Delimited Text Layer`.
 2. Click on `File name` click on the three points ![](/fig/Three_points.png) and navigate to your csv. file and click `Open`.
 3. In the window "Data Source manager| Delimited Text" in QGIS you can find multiple drop-down menus
     * `File Format`: Here you can specify which delimiter is used in the file you want to import. In a standard `.csv` file commas `,` is used. If this is not the case, select `Custom delimiters`. Here you can choose the exact delimiter used in your file. 
-    ```{Tip}
+    :::{tip}
     To find out which delimiter is used you can open your .csv file in Notepad or Excel. There you can check which delimiter is used to separate the information.
-    ```
+    ;;;
     * `Record and Fields Options`: Under this drop-down menu, you can instruct QGIS to detect the data type of the different columns of the field and to detect column headers. Usually, you do not have to make any adjustments here.
     * `Geometry definition`: In this section, you specify which columns of the file contain the spatial information to geo-referenced the data on the map. If the file has a column containing __latitude__ and another with __longitude__ data, you can use them to georeferenced the data. Check `Point Coordinates`. Select for `X field` “LONGITUDE” and for `Y field` “LATITUDE”.
     Under `Geometry CRS`select the coordinate reference system (CRS). By default, QGIS will select the CRS of the project. 
@@ -94,9 +95,9 @@ When loading vector data in text format like .csv or .txt in QGIS, this data has
 5. Select the  longitude column for `X field` and the latitude column for `Y field`
 6. Click `Run`
 
-```{Tip}
+:::{tip}
 Another option is always to transform the .xlsx file into a .csv, which is easier to open in QGIS.
-```
+:::
 
 <video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_xlsx.mp4"></video>
 

@@ -18,14 +18,14 @@ If you want to know how community mapping and digitisation can help improve the 
 
 :::
 
-```{figure} /fig/en_digitisation_concept.png
+:::{figure} /fig/en_digitisation_concept.png
 ---
 width: 900px
 align: center
 name: en_digitisation_concept
 ---
 The concept of digitisation within GIS (Source: HeiGIT).
-```
+:::
 
 ##  Digitising in QGIS
 
@@ -41,14 +41,14 @@ There has been a flood in a village following heavy rains. To assess the needs o
 
 ### Digitisation Toolbars
 
-```{figure} /fig/Activate_digitizing_toolbox.png
+:::{figure} /fig/Activate_digitizing_toolbox.png
 ---
 width: 300px
 align: left
 name: Activate digitising Toolbar 
 ---
 The Digitisation Toolbar in QGIS 3.36.
-```
+:::
 
 Digitising is done with the `Digitizing Toolbar` and on the map canvas. 
 First, you need to check if the `Digitizing Toolbar` is activated. To do that 
@@ -67,14 +67,14 @@ First, you need to check if the `Digitizing Toolbox` is activated. To do that
 
 The digitisation toolbar offers the basic tools to create, save, and edit features. However, for everything that goes above just creating new features and deleting features, the Advanced Digitization toolbar is needed (see {numref}`digitising_toolbar`). The Advanced Digitization toolbar allows you to move features, delete parts of features, and much more. All functions are listed in the two tables below.
 
-```{figure} /fig/Toolbox.png
+:::{figure} /fig/Toolbox.png
 ---
 width: 700 px
 name: digitising_toolbar
 align: center
 ---
 Digitizing Toolbar in QGIS 3.36.
-```
+:::
 
 :::{dropdown} Digitisation Toolbar
 | Tool | Purpose | Tool | Purpose |
@@ -144,19 +144,19 @@ Think of a spatial dataset you could need in your humanitarian operations. What 
 8. Click `OK` to create the new data
 
 
-```{figure} /fig/New_GeoPackage_Layer.png
+:::{figure} /fig/New_GeoPackage_Layer.png
 ---
 width: 500px
 name: new_gpgk_layer
 align: center
 ---
 The Layer Creation window in QGIS 3.36.
-```
+:::
 
 
-```{attention} 
+:::{attention} 
 An important concept to understand before starting to add data to datasets is, that, whenever you make changes to a dataset other than styling, you have to put it in editing mode. This is done by selecting the layer and clicking on ![](/fig/mActionToggleEditing.png) `Toggle Editing`. Now, the buttons for many functions of the digitisation toolbar are clickable. After you are done manipulating the layer click on ![](/fig/mActionSaveEdits.png) `Save Layer Edits` to save your edits. 
-```
+:::
 
 Once you have set up the new layer, you can start adding geometrical features. The process for the three geometric types is basically the same: 
 
@@ -180,16 +180,16 @@ digitisation toolbar.
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_point_feature.mp4"></video>
 :::
 
-```{figure} /fig/point_creation.png 
+:::{figure} /fig/point_creation.png 
 ---
 width: 750 px
 name: point_creation
 align: center
 ---
 Point creation.
-```
+:::
 
- <!--REPLACE IMAGE showing a point creation window with more attributes and not just ID and type to show the 
+<!--REPLACE IMAGE showing a point creation window with more attributes and not just ID and type to show the 
 information you can add at this stage-->
 
 
@@ -217,11 +217,12 @@ name: en_google_maps_rightclick_coords
 
 
 
-```{admonition} Now it's your turn!
+:::{admonition} Now it's your turn!
  
 Try digitising the RCRC branches in your country by following the steps below.
 
-```
+:::
+
 1. Create a new point dataset.
 2. Add a [basemap](/content/Modul_2/en_qgis_basemap.md) (OSM or Bing Aerial, for example)
 3. Search the RCRC branches in your country on google maps.
@@ -242,9 +243,9 @@ Try digitising the RCRC branches in your country by following the steps below.
 
 The process of creating line or polygon layers is essentially the same as creating point data. The main difference is that instead of only adding one point, line and polygon geometries require several points (vertices). Each point you add is a vertex between two lines. In QGIS, you create lines and polygons by setting one point, and then another point connected to the previously added point. To finish adding the feature use the <kbd>Right mouse button</kbd>. 
 
-```{attention} 
+:::{attention} 
 Remember to change the geometry type into lines if you want to create a new line layer.
-```
+:::
 
 ::::{tab-set}
 
@@ -305,15 +306,15 @@ For all cases:
 4. Save your edit by clicking on ![](/fig/mActionSaveEdits.png).
 5. Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
 
-```{Tip} 
+:::{Tip} 
 You can use the ![](/fig/mActionUndo.png) & ![](/fig/mActionRedo.png) buttons to reverse changes easily.
 
 Note that this is only possible __before__ you save the changes.
-```
+:::
 
-::::{tab-set}
+:::::{tab-set}
 
-:::{tab-item} Deleting features
+::::{tab-item} Deleting features
 
 1.	Select the layer you want to modify.
 2.	Go to the digitisation toolbar and click on![](/fig/mActionToggleEditing.png) `Toggle Editing`. 
@@ -322,14 +323,14 @@ Note that this is only possible __before__ you save the changes.
 5.	Once you are done with editing, click on ![](/fig/mActionSaveEdits.png) to save your edits.
 6.	Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
 
-```{note}
+:::{note}
 Keep in mind that once you save the changes ![](/fig/mActionSaveEdits.png), you can no longer undo or recover the deleted features. The changes permanently change the datafile in your folder. 
-```
+:::
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/delet_feature_geometry.mp4"></video>
 
-:::
+::::
 
-:::{tab-item} Moving features
+::::{tab-item} Moving features
 
 There are multiple methods to move features. Here we show the method that works the same for point, line, and polygon features. To do this, you need the Advanced Digitisation Toolbox.
 
@@ -341,9 +342,9 @@ There are multiple methods to move features. Here we show the method that works 
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/move_feature_geometry.mp4"></video>
 
-:::
+::::
 
-:::{tab-item} Modifying geometries
+::::{tab-item} Modifying geometries
 
 1.	Select the line layer you want to add data to in the Layer panel.
 2.	Navigate to the digitisation toolbar and click on![](/fig/mActionToggleEditing.png). 
@@ -354,9 +355,9 @@ There are multiple methods to move features. Here we show the method that works 
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_digitize_move_vertices.mp4"></video>
 
-:::
+::::
 
-:::{tab-item} Adding rings to polygon features
+::::{tab-item} Adding rings to polygon features
 
 A ring in QGIS is a part inside a polygon that is not part of the polygon. Image a polygon representing a lake. The ring is an island in the lake. For a better understanding, watch the video below.
 
@@ -370,9 +371,9 @@ A ring in QGIS is a part inside a polygon that is not part of the polygon. Image
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_digitize_add_ring.mp4"></video>
 
-:::
-
 ::::
+
+:::::
 
 ### Editing the attribute values
 
@@ -380,9 +381,9 @@ Sometimes, you will have to edit the values in the columns of the attribute tabl
 
 ::::{margin}
 
-```{tip}
+:::{tip}
 You can open the attribute table of the selected layer by pressing <kbd>F6</kbd>. 
-```
+:::
 ::::
 
 1. Open the [attribute table](/content/Module_2/en_qgis_attribute_table.md)
@@ -394,35 +395,35 @@ You can open the attribute table of the selected layer by pressing <kbd>F6</kbd>
 
 This process is called __"Data cleaning"__ and is important when performing data analysis or manipulating data in any way. While collecting or digitising data, it is easy to make small mistakes, such as a wrong value, wrong value type, or a spelling mistake. When performing analyses, it is therefore important to investigate the attribute table for inconsistencies or errors. If these errors are not cleaned, the results will be incorrect and you might draw the wrong conclusions!
 
-:::{card}
+::::{card}
 :class-card: sd-text-justify sd-text-black sd-rounded-3 sd-border-2
 __Real world Scenario 3/3__
 ^^^
 
 With the new layers, you are ready to trace the buildings and roads in the new layers. You already have some knowledge about the condition of the roads (e.g., the road surface, quality, and if it is flooded) and the condition of the houses (e.g., if it is affected by a flood, if it has multiple stories, ...). This is useful information that can be stored in the additional attributes in the data table. 
 
-```{figure} /fig/Building_damage_assessement_bangladesh.png
+:::{figure} /fig/Building_damage_assessement_bangladesh.png
 ---
 name: Building_damage_assessement
 width: 750 px 
 ---
 Building Damage Assessment in Paikgachha Upazila, Khulna District, Khulna Division, Bangladesh as of 4 June 2024 (Source: [Int'l Charter, UNOSAT](https://reliefweb.int/map/bangladesh/building-damage-assessment-paikgachha-upazila-khulna-district-khulna-division-bangladesh-4-june-2024-imagery-analysis-4-june-2024-published-7-june-2024-v1))
-```
-
 :::
+
+::::
 
 ## Spatial Digitisation Errors in QGIS
 
 The accuracy of geodata is crucial for spatial analysis. Positional errors are inevitable when data are manually digitised. The most common examples include undershooting and overshooting.  When your coordinates do not connect as they should, and overshooting, when the lines go past where they should. Often these errors are not visible unless you zoom in quite a bit on the coordinates. Setting a fuzzy tolerance (snapping tolerance) is used to reduce undershoots and overshoots. The snapping tolerance is the minimum tolerated distance between nodes, lines and/or vertices.
 
-```{figure} /fig/Digitization_Errors.PNG
+:::{figure} /fig/Digitization_Errors.PNG
 ---
 width: 500px
 align: center
 name: Digitization_Errors
 ---
 Digitising Errors (Source: SpatialPost).
-```
+:::
 
 ## Self-Assessment Questions
 

@@ -4,16 +4,16 @@ __🔙[Back to Homepage](/content/intro.md)__
 
 ## How to check EPSG-Code 
 
-```{Note}
+:::{Note}
 Always check that the Coordinate Reference System (CRS)/EPSG code of your data is the same as the CRS/EPSG-code of your project!
-```
+:::
 
 The default CRS/EPSG code of every QGIS project is the World Geodetic System 84 (EPSG: 4326). This CRS is optimized for world maps. So not perfect for most applications, because we mostly use maps for small areas.
 
 ### How to check EPSG-Code/CRS of your QGIS Project and change it
-```{Note}
+:::{Note}
 To check and adjust the CRS/ EPSG-Code should be the first thing you should do when starting a new QGIS project.
-```
+:::
 
 1.  Open a QGIS project
 2. In the bottom right corner of QGIS you find the button `EPSG`. The number next to it is the EPSG Code currently used in the project. For more information click on the button.
@@ -24,9 +24,9 @@ To check and adjust the CRS/ EPSG-Code should be the first thing you should do w
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_change_project_CRS.mp4"></video>
 
 ### How to check EPSG-Code/CRS of layer/ data
-```{Note}
+:::{Note}
 After loading any spatial data in QGIS, check the CRS/EPSG code of the data to make sure it is the same as the CRS/EPSG code of the project.
-```
+:::
 1. Right click on the data layer, click on  “Properties”.
 2. The “Layer Properties” Window of the data layer will open. Click on “Information”.
 3. Under the headline “Coordinate Reference System (CRS)” you find all information about the CRS. The most important are:

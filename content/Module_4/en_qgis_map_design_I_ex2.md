@@ -62,13 +62,14 @@ The exercise is split into two parts. In the first part, you will adjust the sym
 
 ::::
 
-```{figure} ../../fig/Larkana_Map_Overview.png
+:::{figure} ../../fig/Larkana_Map_Overview.png
 ---
 width: 700px
 name: Map Larkama
 ---
 The map we will be making in this exercise (Source: HeiGIT).
-```
+:::
+
 ### Available Data
 
 :::{card}
@@ -88,9 +89,9 @@ You have created the data for Larkana in [Module 3 Exercise 5](https://giscience
 <!--FIX: add all datasets used in this exercise to the table-->
 
 
-```{hint} Folder structure
+:::{hint} Folder structure
 Keep your data management clean by creating a standard folder structure on your computer for your QGIS-projects and geodata. 
-```
+:::
 
 ## Task 1: Preparing the Data
 
@@ -110,7 +111,7 @@ Keep your data management clean by creating a standard folder structure on your 
     - Navigating to the menu bar -> `Layer` -> `Add Layer` -> `Add XYZ-Layer...` and add a OpenStreetMap basemap. 
 
 
-## Task 2: Symbolization
+## Task 2: Symbolisation
 
 Creating a good map involves selecting appropriate icons and colours to transmit the information in your data. 
 The first step into creating a comprehensible map is to order the layers logically so you can see the information:
@@ -138,13 +139,13 @@ Let's create our own customized symbol for healthcare facilities:
 
 - Scroll through the folder until you find a suitable symbol (e.g. ![](/fig/en_m4_ex_2_cross_symbol.png)).
 
-```{figure} ../../fig/crescent_moon.PNG
+:::{figure} ../../fig/crescent_moon.PNG
 ---
 width: 450px
 name: SVG Marker
 ---
 Create customized SVG Marker.
-```
+:::
 
 We can customise the icon further:
 
@@ -153,13 +154,13 @@ We can customise the icon further:
 - Change the colour of the circle to white.
 - Click `Apply`, then `OK`.
 
-```{figure} /fig/en_3.36_m4_ex2_complex_symbol.png
+:::{figure} /fig/en_3.36_m4_ex2_complex_symbol.png
 ---
 name: m4ex2_complex_symbol
 width: 450 px
 ---
 You can use several symbol layers to create a complex symbol in QGIS 3.36.
-```
+:::
 
 ### __Roads:__
 
@@ -173,25 +174,25 @@ We can categorise the roads and then select the relevant roads to be displayed. 
 - Further down the window, click on `Classify`.  Now you should see all unique values or attributes of the selected “Flood_affected” column.  You can adjust the colours by double-clicking on one row in the central field.
 - Remove the tick from all categories except: `motorway`, `primary`, `secondary`, `trunk`
 
-    ```{figure} /fig/PAK_road_classification.PNG
+    :::{figure} /fig/PAK_road_classification.PNG
     ---
     width: 600px
     name: Pakistan road classification
     align: center
     ---
     Classifying the roads: By unchecking the boxes you can hide the unnecessary information.
-    ```
+    :::
 
 * You have the option to customize the width of the main roads' lines to improve the visualization. Open the Symbology window, then select 'Symbol'. In the new window, you can adjust the width of the lines to your preference.
     
-    ```{figure} /fig/PAK_road_symbol_weight.png
+    :::{figure} /fig/PAK_road_symbol_weight.png
     ---
     width: 600px
     name: Pakistan road classification
     align: center
     ---
     Classifying the roads: You can adjust the width of a single category.
-    ```
+    :::
 
 * Once you are done, click `Apply` and `OK` to close the symbology window.
 
@@ -201,14 +202,14 @@ We can categorise the roads and then select the relevant roads to be displayed. 
 * Keep the single symbol option. Select any symbol from the list that is appropriate for marking blocked roads. 
 * Once you are done, click `Apply` and `OK` to close the symbology window.
 
-    ```{figure} /fig/PAK_blocked_road_symbol.png
+    :::{figure} /fig/PAK_blocked_road_symbol.png
     ---
     width: 600px
     name: Visulsing blocked roads with icons
     align: center
     ---
     Visualising blocked roads with icons
-    ```   
+    :::   
 
 
 ### __Airports:__
@@ -227,14 +228,14 @@ To do so we will create an entirely new point dataset representing airports.
 * Click `OK`.
 * Your new layer will appear in the `Layer Panel`.
 
-    ```{figure} /fig/Create_Geopackagelayer_airport.PNG
+    :::{figure} /fig/Create_Geopackagelayer_airport.PNG
     ---
     width: 400px
     name: Digitising airports
     align: center
     ---
     Creating a new point layer for the airports.
-    ```
+    :::
 
 ::::{margin}
 :::{tip}
@@ -246,14 +247,14 @@ If you cannot see the toolbar `View` -> `Toolbars` and check `Digitizing Toolbar
 
 *  Look for the Mohenjodaro Airport in Google. Once you have found the airport, click on ![](/fig/mActionCapturePoint.png). Left-click on the feature you want to digitise.
 
-    ```{figure} /fig/Feature_Att_Airport.PNG
+    :::{figure} /fig/Feature_Att_Airport.PNG
     ---
     width: 400px
     name: Digitising airports
     align: center
     ---
     Digitising new point features.
-    ```
+    :::
 
 * Once you are done with digitizing click on ![](/fig/mActionSaveEdits.png) to save your edits.
 * Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
@@ -273,13 +274,13 @@ Let's symbolise the airport with a plane icon, so we can identify it quickly.
 
 Open the __Symbology Tab__ for the `PAK_2024_Minimum_Flood_Extend_reprojected`-layer. Choose a light-blue as color and adjust the opacity to about 30%.
 
-```{figure} /fig/Module_4/m4_ex2_symbology_flood.png
+:::{figure} /fig/Module_4/m4_ex2_symbology_flood.png
 ---
 name: m4_ex2_symbology_flood.png
 width: 550 px
 ---
 Adjusting the symbology to indicate the flooded area. 
-```
+:::
 
 ## Task 3: Creating the print layout
 
@@ -288,13 +289,13 @@ Once you are happy with the symbolization and colours of your data, the next ste
 1. Open a new print layout and give it a name (e.g. Larkana_floods).
     - Go to `Project` > `New Print Layout` > enter a name for the new print layout > click `OK`.
 
-```{figure} ../../fig/en_30.30.2_create_print_layout.png
+:::{figure} ../../fig/en_30.30.2_create_print_layout.png
 ---
 width: 700px
 name: Create Print Layout
 ---
 Creating a new print layout.
-```
+:::
 
 - A new window with a blank print layout will appear. This is the print layout composer.
     - On the left, you will find a toolbar with tools to add and move items on the print layout canvas.
@@ -305,13 +306,13 @@ Creating a new print layout.
 3. Move and position the map so that the area of interest is visible at a reasonable scale. To move the map content, use the tool ![](30.30.2_print_layout_move_content_icon) `Move item content`. 
 
 
-```{figure} /fig/Module_4/m4_ex2_print_layout_add_map.png
+:::{figure} /fig/Module_4/m4_ex2_print_layout_add_map.png
 ---
 name: m4_ex2_print_layout_add_map
 width: 650 px
 ---
 Adding the map to the print layout.
-```
+:::
 
 4. Let's add a label for the city of Larkana. This will help your audience that might be unfamiliar with the region orientate themselves. 
     - Click on the ![Add text icon](/fig/30.30.2_print_layout_add_text.png) (`Add text`).
@@ -319,13 +320,13 @@ Adding the map to the print layout.
     - In the item properties window on the right, you will find a text box with the text "Lorem ipsum". Enter "Larkana" instead. 
     - Click on the __Font__ dropdown menu and adjust the font size so it can be read easily.
     
-```{figure} /fig/Module_4/m4_ex2_print_layout_label_city
+:::{figure} /fig/Module_4/m4_ex2_print_layout_label_city
 ---
 name: m4_ex2_print_layout_label_city
 width: 600 px
 ---
 Adding a label for the city of Larkana.
-```
+:::
 
 4. Let's add a title:
     - Click on ![Add text icon](/fig/30.30.2_print_layout_add_text.png) (`Add text`).
@@ -334,13 +335,13 @@ Adding a label for the city of Larkana.
     - Adjust the font size: Click on the __Font__ dropdown menu and adjust the font size for a title (25p or more). Adjust the text box if necessary.
     - Below the font dropdown menu, add a little bit of horizontal and vertical margin. 
 
-```{figure} /fig/Module_4/m4_ex2_print_layout_add_title.png
+:::{figure} /fig/Module_4/m4_ex2_print_layout_add_title.png
 ---
 name: m4_ex2_print_layout_add_title
 width: 600 px
 ---
 Adding a title to the print layout.
-```
+:::
 
 
 5. Let's add a legend:
@@ -351,13 +352,13 @@ Adding a title to the print layout.
     - Adjust the legend by removing unnecessary layers (which are not seen on the map) and rename the layer in the legend by clicking on ![Edit Icon](/fig/30.30.2_print_layout_legend_edit.png) (`Edit selected item properties`) below the legend entries. Use the ![](/fig/Module_4/m4_ex2_print_layout_add_to_legend.png)-icon to add or remove layers from the legend.
     - Under the upper `Main Properties`, insert "Legend" as title. 
 
-```{figure} ../../fig/Larkana_Legend.PNG
+:::{figure} ../../fig/Larkana_Legend.PNG
 ---
 width: 700px
 name: Create Print Layout
 ---
 Adjusting the legend.
-```
+:::
 
 6. Now, let's add a scale bar:
     - Click on ![Add Scale bar icon](/fig/30.30.2_print_layout_add_scale_bar.png) (`Add Scale bar`)
@@ -383,13 +384,13 @@ When you are finished with your map design you can export your printable map as 
 
 You could now have as a result a map similar to this one. Here, some space has been left in order to implement an overview map. If you are still have time go for the bonus exercise and add an overview map!
 
-```{figure} ../../fig/Larkana_Map_withoutOverview.png
+:::{figure} ../../fig/Larkana_Map_withoutOverview.png
 ---
 width: 700px
 name: Map Larkama
 ---
 Your final map could look something like this.
-```
+:::
 
 ### Bonus Exercise
 
@@ -405,13 +406,13 @@ If you are finished with the main map, click on the map and navigate to the item
 8. In the "__Map Frame__"-option, select "__Map 1__". This will show the frame of the main map on your overview map.
 9. You can add a scale bar and a northj arrow to your overview map as well.
 
-```{figure} ../../fig/Larkana_Map_Overview.png
+:::{figure} ../../fig/Larkana_Map_Overview.png
 ---
 width: 700px
 name: Map Larkama
 ---
 The finished map could look something like this (Source: HeiGIT).
-```
+:::
 
 > Congratulations! You have created a finished map that is ready to be printed and distributed. 
 

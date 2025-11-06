@@ -91,13 +91,13 @@ When performing joins, pay attention to such inconsistencies.
     - This means that we can join both tables using the attribute values of the "name"-column.
 3. In the [processing toolbox](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_start.html#toolbox-toolbars), search for the tool `Join attributes by field value` and open it by <kbd>double-clicking</kbd> on it. 
     - A new window will open. Here we can specify the parameters for the `Join attributes by field value`-tool.
-    ```{figure} /fig/en_3.40_m3_ex_8_pub_health_1_join_attr_by_field_value.png
+    :::{figure} /fig/en_3.40_m3_ex_8_pub_health_1_join_attr_by_field_value.png
     ---
     width: 550 px
     name: en_3.40_m3_ex_8_pub_health_1_join_attr_by_field_value
     ---
     Setting the parameters for the "Join Attributes by field value"-tool.
-    ```
+    :::
     - As "Input layer", select the layer `hotosm_tcd_health_facilities_points`.
     - Under "Table field", select `name`.
     - As "Input layer 2", select `healthsite_capacities`.

@@ -155,10 +155,10 @@ Apply a ready-made QGIS map template to quickly create and export maps that show
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_map_makingadjust_AT.mp4"></video>
 
   
-```{admonition} ⚠️ Warning – Long Tables
+:::{admonition} ⚠️ Warning – Long Tables
 If the attribute table you want to include is **longer than the map frame**, part of it will be cut off in the exported map.  
 To fix this, open the table properties in the layout and **reduce the font size** until the full table fits.  
-```
+:::
 
 
 5. Adjust the legend
@@ -219,15 +219,16 @@ To fix this, open the table properties in the layout and **reduce the font size*
 
 
 
-```{dropdown} Your final output should look like this after styling the layer
+::::{dropdown} Your final output should look like this after styling the layer
 The map now clearly displays the exposed population within the affected districts The original storm track line — used as input data — is highlighted, as well as the buffered impact area, which serves as a proxy for identifying exposed districts.
 
 On the right-hand side of the map, a list shows all exposed districts, including data on total population and exposed population. The districts (Admin 2) are organized under their corresponding regions (Admin 1).
 
-```{figure} /fig/MAD_Trigger_Impact_Population_Map_example.png
+:::{figure} /fig/MAD_Trigger_Impact_Population_Map_example.png
 ---
 width: 1000px
 name: 
 align: center
 ---
-```
+:::
+::::

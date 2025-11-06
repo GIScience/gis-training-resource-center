@@ -24,21 +24,21 @@ Creates a single label style for every feature in the layer. You can select an a
 displayed. For example, the name of a settlement. You need to know which attribute displays the information you want to 
 display. Look at the attribute table of the dataset to find it out.
 
-```{figure} /fig/labels_single_labels_example_nga_adm1.png
+:::{figure} /fig/labels_single_labels_example_nga_adm1.png
 ---
 width: 600 px
 name: labels_single_labels_example_nga_adm1
 ---
 Single labels for each administrative region (adm1) in Nigeria. The reader is able to assign each label to the respective administrative entity.
-```
+:::
 
-```{figure} /fig/en_30.30.2_assigning_value_to_labels.png
+:::{figure} /fig/en_30.30.2_assigning_value_to_labels.png
 ---
 width: 600 px
 name: en_30.30.2_assigning_value_to_labels
 ---
 Assigning the correct attribute value in the labeling options. QGIS needs to know which attribute (column) of the attribute table should be displayed as a label. In this case, we want the name of the administrative region (`ADM1_EN`) to be displayed. 
-```
+:::
 
 #### Adding Single Labels to a Layer
 
@@ -49,29 +49,29 @@ Assigning the correct attribute value in the labeling options. QGIS needs to kno
 5. Let's __add a white buffer__ around the label. In the `Labels` tab, you will find a list with different options to style the labels. Right now, we are in the `Text` menu. Select `Buffer` and check the `Draw text buffer` option. This will make the labels stand out more on dark or crowded maps.
 7. Click `Apply` and `OK`.
 
-```{figure} ../../fig/en_30.30.2_setting_up_labels.png
+:::{figure} ../../fig/en_30.30.2_setting_up_labels.png
 ---
 width: 600px
 name: en_30.30.2_setting_up_labels
 ---
 Setting up labels in QGIS 30.30.2
-```
+:::
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_setting_up_labels.mp4"></video>
 
-:::{attention}
+::::{attention}
 
 Single Labels are not always useful. For example, if the dataset is too big, or you only want to display certain features in the dataset. In the example below, there are too many settlements to display labels for each settlement. Instead, it might be useful to only display the regional and national capitals. For such a use case, Rule-based Labeling is ideal.
 
-```{figure} /fig/single_labels_bad_example.png
+:::{figure} /fig/single_labels_bad_example.png
 ---
 name: single_labels_bad_example
 width: 400 px
 ---
 Single Labels were selected to display the names of the settlements (red dots). A map with so much text information is unreadable and the information can hardly be understood. 
-```
-
 :::
+
+::::
 
 #### Rule-based Labelling
 
@@ -79,13 +79,13 @@ Create rules using expressions to select accurately which features are to be lab
 text formatting. Use this if you want to have more control over the information that will be displayed as labels. For 
 example, you can filter your data to only display the names of regional capitals.
 
-```{figure} /fig/rule-based_labeling_example_settlements_nga.png
+:::{figure} /fig/rule-based_labeling_example_settlements_nga.png
 ---
 name: rule-based_labeling_example_settlements_nga
 width: 500 px
 ---
 Rule-based labeling allows you to filter datasets. This way, you can display the labels only for selected features without altering the dataset.
-```
+:::
 
 The rules, or filters, are based on an expression. You can use the ![](../../fig/expression_string_builder_icon.png) `Expression string builder` to the right of the __Filter__ option in the label panel.
 
@@ -102,9 +102,9 @@ The rules, or filters, are based on an expression. You can use the ![](../../fig
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_rule-based_labels.mp4"></video>
 
-```{note}
+:::{note}
 To add rules to your labels, you need to be familiar with your data! Look at the metadata (in the properties or at the source) and take a look at the attribute table. Think about what the different columns mean and identify the attributes. This might not always be easy, as they might have abbreviated names, but as you work more with data, this will become easier.
-```
+:::
 
 Below are some further considerations to keep in mind when using labels:
 
@@ -112,17 +112,18 @@ Below are some further considerations to keep in mind when using labels:
 
 - If you want to display different types of information as labels, the font needs to be different so the reader can differentiate between the different types of information that is displayed. A good practice is to display the labels in a similar colour to the objects it is referring to. For example, dark blue text for the labels of light blue bodies of water, or brown text for the labels of light-brown houses.
 
-```{figure} ../../fig/good_labels_example.png
+:::{figure} ../../fig/good_labels_example.png
 ---
 width: 400 px
 name: good_labels_example
 ---
 A good example of label placement and font. Pay attention to the text colours and orientation. Every label can easily be attributed to the correct cartographic feature. (Source: [Axis Maps](https://www.axismaps.com/guide/labeling))
-```
+:::
 
-```{Attention}
+::::::{Attention}
 
 - In most cases, displaying numerical values as labels is confusing to the reader and makes the map too complex. In most cases, for numerical data, you can choose a different visualization such as colours or symbol size.
+
 
 :::::{grid} 2
 ::::{card}
@@ -149,25 +150,25 @@ name: labels_graduated_symbology_example
 
 :::::
 
-```
+::::::
 
 - QGIS places the labels automatically. Sometimes, if you are using a lot of black outlines or dark colours, black text is hard to read on the map. In that case, you can add white buffer around the text to make it visible.
 
-```{figure} ../../fig/label_text_buffer_example.png
+:::{figure} ../../fig/label_text_buffer_example.png
 ---
 width: 500 px
 name: label_text_buffer_example
 ---
 A label without a text buffer (left) and a label with a white text buffer (right).
-```
+:::
 
-```{note}
+:::{note}
 QGIS renders labels automatically.
 Sometimes labels can obstruct other symbols. In that case, you can either adjust the placement of the labels in the __Label tab__, or use the ![](../../fig/30.30.2_move_a_label_diagram_callout_icon.png) `Move a Label, Diagram, or Callout`-tool in __Label toolbar__.
 
 By default, QGIS renders the labels so that they don't overlap with other labels. This means that not all the labels will be visible if the data is dense or rendered close to each other. You can optimize the rendering under the rendering option. 
 
-```
+:::
 
 :::{Attention}
 

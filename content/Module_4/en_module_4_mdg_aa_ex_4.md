@@ -140,11 +140,10 @@ Apply the following`.qml` style files to the respective layers:
 | `admin2_health_affected`          | `exposed_healthsites_style.qml`           |
 | `admin2_education_affected`            | `exposed_education_facilities_style.qml`  |
 
-```{note}
+:::{note}
 ⚠️ For the **health** and **education facilities**, the provided style files are linked to the column containing the **sum of exposed facilities**.  
 They are **not** based on the percentage column.  
-```
-
+:::
 
 **Steps:**
 - Right-click on the layer in the **Layers Panel**  
@@ -162,37 +161,37 @@ They are **not** based on the percentage column.
 ---
 
 
-::::{tab-set}
+:::::{tab-set}
 
-:::{tab-item} Intermediate result: Exposed Population
+::::{tab-item} Intermediate result: Exposed Population
 
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_pop_style.PNG
+:::{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_pop_style.PNG
 ---
 width: 600px
 align: center
 ---
 Carte montrant le nombre de personnes exposées par district après l’application du style .qml.
-```
 :::
-:::{tab-item} Intermediate result: Exposed Health Facilities
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_HS_sum_style.PNG
+::::
+::::{tab-item} Intermediate result: Exposed Health Facilities
+:::{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_HS_sum_style.PNG
 ---
 width: 600px
 align: center
 ---
 Carte indiquant le nombre total d’établissements de santé exposés par district, représentés avec le style prédéfini.
-```
 :::
-:::{tab-item} Intermediate result: Exposed Education Facilities
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_ES_sum_style.PNG
+::::
+::::{tab-item} Intermediate result: Exposed Education Facilities
+:::{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_ES_sum_style.PNG
 ---
 width: 600px
 align: center
 ---
 Carte affichant le nombre total d’établissements scolaires exposés par district, après application du fichier de style .qml.
-```
 :::
 ::::
+:::::
 
 
 
@@ -225,8 +224,8 @@ Aina also wants to visualise the percentage of exposed health and education faci
 
 - Repeat the same process for the layer `admin2_education_affected`.
 After duplicating the layer, rename the new one to:
- ```
- admin2_health_affected_percentage
+```
+admin2_health_affected_percentage
 ``` 
 
 
@@ -246,7 +245,7 @@ Save your manually created styles as `.qml` files for future reuse.
 - Click on `Style` → `Save Style…`
 - Save the file in the folder `layer_sytle`
 - Use these filenames:
-   ```
+  ```
    health_pct_affected_style
   ```
   ```

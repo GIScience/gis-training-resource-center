@@ -13,13 +13,13 @@ The print layout in QGIS is where you design and finalise the map in order to pr
 1. Go to __Project > New Print Layout > enter a name for the new print layout > click OK__
 2. A new window with a blank print layout will appear.
 
-```{figure} ../../fig/en_30.30.2_create_print_layout.png
+:::{figure} ../../fig/en_30.30.2_create_print_layout.png
 ---
 width: 700px
 name: Create Print Layout
 ---
 Create a new Print Layout
-```
+:::
 
 ## Map Composition
 
@@ -48,13 +48,13 @@ In order to provide your audience and readers with sufficient information so the
 - __Overview Map__
 - __Author__
 
-```{figure} ../../fig/en_good_map_composition_example.png
+:::{figure} ../../fig/en_good_map_composition_example.png
 ---
 name: en_good_map_composition_example
 width: 750px
 ---
 Elements of good map composition
-```
+:::
 
 ---
 
@@ -75,13 +75,13 @@ __The legend__ is key to interpreting the information represented on the map. Wi
 - __Representative__: The figures on the map and in the legend must match (same size, same color, ...).
 - __Organized__: The data in the legend can be grouped by thematic categories (health, environment, background map, ...) or by type of figure (point, line, surface) to facilitate reading.
 
-```{figure} ../../fig/en_legend_good_practice.png
+:::{figure} ../../fig/en_legend_good_practice.png
 ---
 width: 750px
 name: en_legend_good_practice
 ---
 Example of a well organized legend
-```
+:::
 
 __The scale bar__ is essential to a map since it gives the correspondence between a distance measured on the map and the distance in the real world. There are two types of scales:
 
@@ -89,12 +89,12 @@ __The scale bar__ is essential to a map since it gives the correspondence betwee
 
 - __The graphical scale__ is expressed by a line on the map, with an associated distance value. This scale is very useful for understanding distances on the ground. The graphical scale will always be the correct size, even if a different printing format is used, since it will undergo the same transformation as the rest of the map
 
-```{figure} ../../fig/example_scale_bar.png
+:::{figure} ../../fig/example_scale_bar.png
 ---
 name: example_scale_bar
 ---
 Scale bar examples
-```
+:::
 
 ### Orientation
 
@@ -108,59 +108,59 @@ It is possible to give the source of each data under the legend, or to do so in 
 
 ---
 
-```{admonition} Now it's your turn!
+:::{admonition} Now it's your turn!
 :class: tip
 
 Take a look at the maps below and pay close attention to how the cartographers arranged the different elements. You can also take a look at maps you encountered in your work or daily life. 
 
-```
+:::
 
 ::::{dropdown} __Map Example 1__
 
-```{figure} /fig/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png
+:::{figure} /fig/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png
 ---
 name: ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4
 width: 750 px
 ---
 Flood affected areas and roads in the Somali Region, Ethiopia (Source: OCHA)
-``` 
+::: 
 
 ::::
 
 ::::{dropdown} __Map Example 2__
 
-```{figure} /fig/proportional_circles_example.png
+:::{figure} /fig/proportional_circles_example.png
 ---
 name: proportional_circles_example
 width: 500 px
 ---
 Internally Displaced Persons (IDPs), 30 September 2024 (Source: [UNHCR](https://reliefweb.int/map/sudan/regional-bureau-east-horn-africa-and-great-lakes-region-internally-displaced-persons-idps-30-september-2024)).
-```
+:::
 
 ::::
 
 ::::{dropdown} __Map Example 3__
 
-```{figure} /fig/choropleth_hum_example.png
+:::{figure} /fig/choropleth_hum_example.png
 ---
 name: choropleth_hum_example
 width: 700 px
 ---
 South Sudan: Humanitarian Situation Monitoring, April-May 2024 - Damaged shelters (Source: [REACH](https://repository.impact-initiatives.org/document/impact/897badb8/REACH_SSD_Map_HSM_AprilMay2024_DamagedShelters_June2024-1.pdf))
-```
+:::
 
 ::::
 
 
 ::::{dropdown} __Map Example 4__
 
-```{figure} /fig/en_m4_operational_overview_example.png
+:::{figure} /fig/en_m4_operational_overview_example.png
 ---
 name: en_m4_operational_overview_example
 width: 650 px
 ---
 Operational overview or response activity map (Source: [Shelter Cluster Vanuata](https://reliefweb.int/map/vanuatu/vanuatu-tropical-cyclone-lola-distribution-and-gap-map-malampa-13022024))
-```
+:::
 
 ::::
 
@@ -200,7 +200,7 @@ The basic elements for a complete map layout should include:
 - __Orientation:__ Typically a north arrow.
 - __Source/Data attribution:__ A statement of the data sources, author, date of data.
 - Additional information to help contextualise the map (e.g., description, overview map, attribute table, graph,...)
-
+:::
 
 ::::
 

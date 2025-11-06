@@ -31,13 +31,13 @@ The following section will provide an overview on how to access and add basemaps
 
 You can always add the standard OpenStreetMap as a basemap to your map canvas. 
 
-```{tip}
+:::{tip}
 
 The [wiki article on basemaps](content/wiki/en_qgis_basemaps_wiki.md), has a tutorial 
 on adding more types of basemaps (e.g. from Google Maps) to the standard basemap 
 options in QGIS.
 
-```
+:::
 
 There are two ways to add OpenStreetMap as a basemap:
 
@@ -55,7 +55,7 @@ One useful plugin is [QuickMapServices](https://nextgis.com/blog/quickmapservice
 This plugin lets you access a wide range of basemaps that are not available in 
 QGIS by default, such as Bing or Sentinel-2 satellite imagery.
 
-:::{dropdown} Installation of plugins
+::::{dropdown} Installation of plugins
 
 To [install a plugin](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html), in the top bar, navigate to `Plugins` -> `Manage and Install Plugins…` -> `All` -> 
 Search for the plugin -> `Install Plugin`
@@ -63,25 +63,25 @@ Search for the plugin -> `Install Plugin`
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_plugins.mp4"></video>
 
-```{Tip}
+:::{Tip}
 
 If you cannot find a specific extension, check that you have not used spaces in the plugin name where they don't belong (e.g., when looking for QuickMapServices, searching “Quick Map” will not return results, but “quickmap” will). You can use an asterisk (`*`) as a
 wildcard in searches (so "quick*map" will return results with or without a space between "quick" and "map"). 
 
-```
+:::
 
 If you still cannot find an extension, you may need to allow experimental 
 extensions in the options (see below).
 
-```{figure} /fig/en_30.30.2_plugin_installation_experimental_checkbox.png
+:::{figure} /fig/en_30.30.2_plugin_installation_experimental_checkbox.png
 ---
 name: en_30.30.2_plugin_installation_experimental_checkbox
 width 400 px
 ---
 Plugin Manager settings to show experimental plugins
-```
-
 :::
+
+::::
 
 To add a basemap from the QuickMapServices plugin:
 
@@ -89,11 +89,11 @@ To add a basemap from the QuickMapServices plugin:
 2. Click on `Search QMS`. A new panel will open, most likely at the bottom right.
 3. Here, you can search for a basemap of your choice. For example, Bing Aerial, different versions of OpenStreetMap, Sentinel-2 satellite imagery. 
 
-```{Tip}
+:::{Tip}
 
 A list of basemaps and useful search queries for the QMS-plugin can be found on [this website](https://qms.nextgis.com). This link can also be found in the "About" section of the QMS-plugin.
 
-```
+:::
 
 :::{dropdown} Video: Functionality of the QuickMapServices Plugin__
 
@@ -101,11 +101,11 @@ A list of basemaps and useful search queries for the QMS-plugin can be found on 
 
 :::
 
-```{Note}
+:::{Note}
 
 When you are using QuickMapServices, be aware that some of these maps are under copyright laws that restrict the reproduction of these maps. Be aware of these restrictions by looking up the copyright licenses for the basemaps you are using. In general, satellite imagery is not free to use. This means you can not publish maps with all of the available base maps!
 
-```
+:::
 
 ## Self-Assessment Questions
 

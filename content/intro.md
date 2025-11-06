@@ -2,13 +2,13 @@
         async src="//gc.zgo.at/count.js"></script>
 
 
-```{figure} /fig/HeiGIT_Logo_base.svg
+:::{figure} /fig/HeiGIT_Logo_base.svg
 ---
 height: 75 
 name: HeiGIT Logo
 align: center
 ---
-```
+:::
 
 ___
 
@@ -136,9 +136,9 @@ ___
 
 ## Contact
 
-```{admonition} Contact the IFRC GIS Training Platform Team
+:::{admonition} Contact the IFRC GIS Training Platform Team
 You have questions, feedback or comments on the platform and the content. We are always happy to hear from you. You can contact us via email under __gis-training-platform@heigit.org__
-```
+:::
 
 ## Contributing
 
@@ -153,10 +153,10 @@ Happy Mapping!
 
 :::{card}
 
-```{figure} /fig/Training_Somalia.JPG
+:::{figure} /fig/Training_Somalia.JPG
 ---
 width: 800px
 name: 
 ---
 
-```
+:::

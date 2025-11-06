@@ -52,9 +52,10 @@ Advantages of using basemaps from XYZ Tiles are:
 
 The QuickMapServices Plugin allows to access to a wide range of basemaps. 
 
-```{Note}
+:::{Note}
 There can be problems when printing some basemaps from the QuickMapServices!
-```
+:::
+
 `Web` -> `QuickMapServices` -> select provider e.g. NASA -> select basemap
 
 __Functionality of QuickMapServices Plugin__
@@ -69,9 +70,9 @@ After installing the plugin (Plugin Wiki) you need to configure the plugin to ac
 
 With the OSM Place Search Plugin, you can find places all around the world based on OpenStreetMap. This means the place search is independent from whatever basemap you are using, it is always based on OpenStreetMap.
 
-```{Tip}
+:::{Tip}
 If the plugin is installed and activated but the panel is not visible check Wiki [Move and arrange toolbars and panels](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#show-and-hide-displays-and-toolbars)
-```
+:::
 
 __Functionality of OSM Place Search Plugin__
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/OSM_Place_Search.mp4"></video>

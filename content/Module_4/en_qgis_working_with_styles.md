@@ -26,19 +26,19 @@ For example, if you want to send a layer to your colleague with the same styling
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_exporting_style_to_send_to_colleague
 .mp4"></video>
 
-```{figure} ../../fig/en_30.30.2_save_layer_style_window.png
+:::{figure} ../../fig/en_30.30.2_save_layer_style_window.png
 ---
 width: 350px
 name: en_30.30.2_save_layer_style_window
 ---
 Save Layer styling window in QGIS 30.30.2.
-```
+:::
 
 When working with similar data (e.g. building types or flooding risk), it is useful to have template styles that can be quickly loaded into your QGIS-project or saved in your Styling Template library. 
 
-```{Tip}
+:::{Tip}
 When a styling is saved in the same location as the data and has the same name as the corresponding dataset, the styling will be automatically applied to the layer when loading the data into QGIS!
-```
+:::
 
 ### Loading a Style into a QGIS-project
 
@@ -47,9 +47,9 @@ When a styling is saved in the same location as the data and has the same name a
 3. Navigate to the folder where the style is saved and click import.
 4. The style should now be available as a preset in the styling panel.
 
-```{note}
+:::{note}
 You can also import styles directly in the styling panel of a layer. But it will not be added to your style library unless you save it into your library.
-```
+:::
 
 
 :::{tip}
