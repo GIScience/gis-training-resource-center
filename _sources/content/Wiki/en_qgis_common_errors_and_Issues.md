@@ -42,7 +42,7 @@ The Wiki and in particular the videos in it are only a snapshot in time. QGIS it
 ## QGIS on Mac doesn't open
 When opening QGIS for the first time on Mac you may get this error message:
 
-```{figure} /fig/qgis_on_mac.png
+:::{figure} /fig/qgis_on_mac.png
 ---
 width: 55%
 name: qgis_on_mac.png
@@ -50,13 +50,13 @@ align: center
 name: Error when opening QGIS on Mac for the first time
 ---
 Error when opening QGIS on Mac for the first time. 
-```
+:::
 
 To solve this, press the control button on your keyboard and right-click open.
     
 If this problem persists, you can change the settings on your device. Go in the `Settings` > `Security & Privacy` and scroll down, click `Open Anyway`
 
-```{figure} /fig/opening_qgis_mac.png
+:::{figure} /fig/opening_qgis_mac.png
 ---
 width: 55%
 name: opening_qgis_mac.png
@@ -64,7 +64,7 @@ align: center
 name: Change settings to open QGIS on Mac
 ---
 Change settings to open QGIS on Mac.
-```
+:::
 
 
 ## A layer is not displayed in QGIS 
@@ -73,7 +73,7 @@ Change settings to open QGIS on Mac.
   1. Right click on the corresponding layer. 
   2. Activate the `Zoom to Layer` function in the pop-up window. 
 
-```{figure} /fig/en_layer_display.png
+:::{figure} /fig/en_layer_display.png
 ---
 width: 55%
 name: en_layer_display.png
@@ -81,7 +81,7 @@ align: center
 name: Zoom to layer if layer is not displayed
 ---
 Zoom to layer if layer is not displayed.
-```
+:::
 
 
 ## A layer window has disappeared in QGIS
@@ -91,7 +91,7 @@ __Solution:__
  2. In the pop-up window select `Panels`. 
  3. In the sub-window hook the case `Layers`.   
 
-```{figure} /fig/en_closed_layer_view.png
+:::{figure} /fig/en_closed_layer_view.png
 ---
 width: 75%
 name: en_closed_layer_view.png
@@ -99,7 +99,7 @@ align: center
 name: Layer window disappeared
 ---
 Layer window disappeared.
-```
+:::
 
 ## Layers that should actually be in the same position are not on top of each other
 
@@ -122,7 +122,7 @@ When having two layers with different crs, then select one of the layers as the 
 It is displayed in the workspace in the same place as the other layers, as QGIS reprojects it at runtime. However, its actual coordinates are different. 
 
 
-```{figure} /fig/en_qgis_layer_with_different_KBS.png
+:::{figure} /fig/en_qgis_layer_with_different_KBS.png
 ---
 width: 75%
 name: en_qgis_layer_with_different_KBS.png
@@ -130,7 +130,7 @@ align: center
 name: Layer with different crs
 ---
 Layer with different crs.
-```
+:::
 
 You can check this using the `Add Geometry Attributes` < `Geometry Tools` algorithm. The coordinates are different from the coordinates in the other two attribute tables of the other layers.
 
@@ -143,7 +143,7 @@ Instead do this:
 3. And in the following pop-up menu `Reproject Layer`.
 
 
-```{figure} /fig/en_qgis_reproject_vector_layer01.png
+:::{figure} /fig/en_qgis_reproject_vector_layer01.png
 ---
 width: 75%
 name: en_qgis_reproject_vector_layer01.png
@@ -151,10 +151,10 @@ align: center
 name: Reproject Layer in QGIS
 ---
 Reproject Layer in QGIS.
-```
+:::
 
 
-```{figure} /fig/en_qgis_reprojected_layer.png
+:::{figure} /fig/en_qgis_reprojected_layer.png
 ---
 width: 75%
 name: en_qgis_reprojected_layer.png
@@ -162,11 +162,11 @@ align: center
 name: Tool to reproject layer in QGIS
 ---
 Tool to reproject Layer in QGIS.
-```
+:::
 
 Always save your reprojected layers by the `Export` and `Save as` functions because they are only temporarily saved and will disappear after closing the project.
 
-```{figure} /fig/en_qgis_reprojection_export.png
+:::{figure} /fig/en_qgis_reprojection_export.png
 ---
 width: 75%
 name: en_qgis_reprojection_export.png
@@ -174,7 +174,7 @@ align: center
 name: Export reprojected layer
 ---
 Export reprojected layer.
-```
+:::
 
 Similar procedure for raster layers ...
 
@@ -185,7 +185,7 @@ Similar procedure for raster layers ...
 3. And in the following pop-up menu `Warp (Reproject)`
 
 
-```{figure} /fig/en_qgis_reproject_raster_layers01.png
+:::{figure} /fig/en_qgis_reproject_raster_layers01.png
 ---
 width: 75%
 name: en_qgis_reproject_raster_layers01.png
@@ -193,10 +193,10 @@ align: center
 name: Reproject raster layer in QGIS
 ---
 Reproject raster layer in QGIS.
-```
-```{attention} 
+:::
+:::{attention} 
  Errors often occur if the crs is set and no reprojection tool has been used. If you suspect that your reprojection has gone wrong, delete all affected layers from QGIS, reload the data and then reproject and export them. 
-```
+:::
 
 ## Layer file disappeared from the layer window
 
@@ -208,7 +208,7 @@ __Solution:__
 Next time, save it: 
 1. Click on the tab `Layer` and on `Save as` in the pop-up window.
 
-```{figure} /fig/en_qgis_save_layer01.png
+:::{figure} /fig/en_qgis_save_layer01.png
 ---
 width: 65%
 name: en_qgis_save_layer01.png
@@ -216,22 +216,21 @@ align: center
 name: Save layer
 ---
 Save layer.
-```
+:::
 
 
 2. Put in a _file name_ and click on the `three points` ![](/fig/Three_points.png) to save the file in the chosen directory place.
 3. Select the corresponding CRS.
 4. Click `ok`.
 
-```{figure} /fig/en_qgis_save_layer02.png
+:::{figure} /fig/en_qgis_save_layer02.png
 ---
 width: 85%
-name: en_qgis_save_layer02.png
+name: en_qgis_save_layer02
 align: center
-name: Save layer in directory
 ---
 Save layer in your directory.
-```
+:::
 
 
 
@@ -244,15 +243,15 @@ Save layer in your directory.
   2. Select `All`. 
   3. Rehook the `Processing` function in the corresponding list.
   
-```{figure} /fig/en_missing_processing_tools.png
+:::{figure} /fig/en_missing_processing_tools.png
 ---
 width: 85%
-name: en_missing_processing_tools.png
+name: en_missing_processing_tools
 align: center
-name: Reinstall processing tool
 ---
 Reinstall processing tool.
-```
+:::
+
 See also: Geographic Information Systems
 https://gis.stackexchange.com/questions/202111/missing-processing-tools-in-vector-menu-of-qgis
 
@@ -264,15 +263,14 @@ https://gis.stackexchange.com/questions/202111/missing-processing-tools-in-vecto
   2. Select in the pop-up window `Panels`. 
   3. Set in the following pop-up window a hook for the `Processing Toolbox`.  
 
-```{figure} /fig/en_missing_toolbox.png
+:::{figure} /fig/en_missing_toolbox.png
 ---
 width: 75%
-name: en_missing_toolbox.png
+name: en_missing_toolbox
 align: center
-name: Reactivate toolbox
 ---
 Reactivate toolbox.
-```
+:::
 
 ## The North arrow is not syncing with the corresponding map
 __Solution:__
@@ -282,15 +280,14 @@ There are two places where you have to define which map the north arrow should s
  In the `Layout Tab` (of the print layout) for the map image under `General Settings` make sure that the reference map has the right map selected. 
 
 
-```{figure} /fig/en_qgis_correct_referenciation_to_map.png
+:::{figure} /fig/en_qgis_correct_referenciation_to_map.png
 ---
 width: 85%
 name: en_qgis_correct_referenciation_to_map.png
 align: center
-name: Reactivate toolbox
 ---
 Correct reference to map.
-```
+:::
 
 See also: Geographic Information Systems
 https://gis.stackexchange.com/questions/265095/north-arrow-not-syncing-with-map-qgis-2-18#:~:text=1%20Answer&text=2-,There%20are%20TWO%20places%20where%20you%20have%20to%20tell%20it,and%20tell%20it%20which%20map
@@ -323,9 +320,9 @@ For example:
 
 
 
-```{Tip}
+:::{Tip}
 For further detailed information about coordinate systems have also a look at: https://ihatecoordinatesystems.com/#correct-crs
-```
+:::
 
 ## Coordinate systems: How do I redefine a dataset's coordinate system?
 
@@ -350,15 +347,14 @@ https://gdal.org/programs/ogr2ogr.html#cmdoption-ogr2ogr-a_srs
 Mercator is the only conformal cylindrical map projection. Cylindrical map projections mean the whole earth fits into a rectangle, which is very convenient for data processing algorithms that are used to working with rectangular images. Conformal means that angles and shapes are always preserved: north is always up, squares are always square, etc.. Using a non-conformal projection would make things look stretched, squashed, and/or rotated when zooming in.
 
 
-```{figure} /fig/qgis_mercator.jpg
+:::{figure} /fig/qgis_mercator.jpg
 ---
 width: 75%
 name: qgis_mercator.jpg
 align: center
-name: Mercator projection
 ---
 Mercator projection.
-```
+:::
 
 Mercator does enlarge areas farther from the equator, but at least this distortion is the same horizontally and vertically. And it's trivial to calculate a scale factor to correct measurements (See also: https://en.wikipedia.org/wiki/Mercator_projection#Scale_factor).  
 The only time the distortion is problematic is when viewing a global-scale map with a range of different scale factors, but most maps are not global-scale and there are plenty of better projections to use for this case.
@@ -380,28 +376,26 @@ __Solution:__
 
 Apply Changes: Once you've selected the desired coordinate system, click `OK` to apply the changes. QGIS will reproject the layers in your project to match the new coordinate system.
 
-```{figure} /fig/en_qgis_redefining_CRS01.png
+:::{figure} /fig/en_qgis_redefining_CRS01.png
 ---
 width: 80%
 name: en_qgis_redefining_CRS01
 align: center
-name: Redefining CRS
 ---
 Redefining CRS.
-```
+:::
 
 5. Check and Adjust Layers: After redefining the coordinate system, it's essential to check your layers to ensure they align correctly. Some layers may require manual adjustments or reprojection if they don't align as expected.
 And have also a final look at the right bottom of the QGIS window where the actual CRS is indicated.
 
-```{figure} /fig/en_qgis_redefining_CRS02.png
+:::{figure} /fig/en_qgis_redefining_CRS02.png
 ---
 width: 80%
 name: en_qgis_redefining_CRS02
 align: center
-name: Check redefining CRS
 ---
 Check redefining CRS.
-```
+:::
 
 ## Coordinate systems: What coordinate system should my dataset be in?
 
@@ -475,7 +469,7 @@ See also the following [__Wiki_Page__](../Wiki/en_qgis_projections_wiki.md) `Pro
 
 Your dataset probably has the wrong longitude/latitude geographic coordinate system (GCS). Different GCSs define slightly different sizes/shapes of the Earth (their ellipsoids) and different positionings on the Earth (their datums). As a result, the same longitude/latitude coordinates in two different GCSs can appear offset, although typically within tens of meters of each other. This can happen even if you are using a projected coordinate system (PCS) whose units are not degrees of longitude/latitude since PCSs have a GCS embedded within them.
 
-```{figure} /fig/qgis_wrong-gcs.png
+:::{figure} /fig/qgis_wrong-gcs.png
 ---
 width: 75%
 name: qgis_wrong-gcs.png
@@ -483,7 +477,7 @@ align: center
 name: Offset because of wrong GCS
 ---
 Offset because of wrong GCS. Source: Dan Mahr. All rights reserved. This content is excluded from our Creative Commons license.
-```
+:::
 
 __Solution__:
 
@@ -510,19 +504,18 @@ __Solution:__
 
 Recommended standard folder structure:
 
-```{figure} /fig/Standard_project_folder_structure.drawio.svg
+:::{figure} /fig/Standard_project_folder_structure.drawio.svg
 ---
 width: 75%
 name: Standard_project_folder_structure.drawio.svg
 align: center
-name: Standard folder structure
 ---
 Standard folder structure. Source: HeiGIT
-```
+:::
 
 How it might look like on your pc:
 
-```{figure} /fig/en_qgis_folder_structure_pc.png
+:::{figure} /fig/en_qgis_folder_structure_pc.png
 ---
 width: 75%
 name: en_qgis_folder_structure_pc.png
@@ -530,7 +523,8 @@ align: center
 name: Standard folder structure on your PC
 ---
 Standard folder structure on your PC.
-```
+:::
+
 The standard folder structure has two principal advantages:
 1. By sharing the whole project folder, we can be certain that the project will run without problems on a different computer.
 2. The folder structure supports the proper organization of geodata and supports the stable function of a QGIS project. 
@@ -538,10 +532,10 @@ The standard folder structure has two principal advantages:
 The folder structure template can be downloaded [__here__](https://github.com/GIScience/gis-training-resource-center/blob/main/fig/GIS_Project_folder_template.zip).
 
 
-```{Tip}
+:::{Tip}
 The layer data used in the project are not saved in the project file. Instead, the project file only contains the file paths where the layer data were located at the time the project was last saved on the PC. If the location of this layer data is subsequently changed, the error message "handle unavailable layers" will appear when the project is opened again.
 Good data organisation with a fixed and well thought-out folder structure prevents such problems.
-```
+:::
 
 See also the following [__Wiki_Page__](https://github.com/GIScience/gis-training-resource-center/blob/main/content/Wiki/en_qgis_projects_folder_structure_wiki.md) for `How to create a new QGIS project` and `How to open an existing QGIS project`.
 
@@ -556,15 +550,14 @@ If a layer file does not have a projection, a projection must be defined for it 
 4. Under `CRS for projects` activate `Use CRS from first layer added`. 
 5. And under `CRS for layers` activate `Prompt for CRS`.
 
-```{figure} /fig/en_qgis_CRS_settings.png
+:::{figure} /fig/en_qgis_CRS_settings.png
 ---
 width: 95%
 name: en_qgis_CRS_settings.png
 align: center
-name: Change crs settings in QGIS
 ---
 Change crs settings in QGIS.
-```
+:::
 
 ### Saving regularly
 Unfortunately, GIS programs are notorious for freezing or crashing completely. Although there is a trend towards fewer complications with better hardware, even a "gaming PC" costing several thousand dollars is not completely safe.
@@ -576,9 +569,9 @@ See also the following [__Wiki_Page__](https://github.com/GIScience/gis-training
 
 QGIS also allows the use of tools from external GIS software, such as GRASS GIS. GRASS does not have to be downloaded separately, but is automatically installed when QGIS is installed. GRASS tools are identified by their icon. 
 
-```{attention} 
+:::{attention} 
 Please note that the GRASS software is not started when the standard QGIS application is started. Consequently, an error message may appear when using GRASS tools. This can be remedied by opening the QGIS with GRASS application (found via the computer's search function) instead of the standard application.
-```
+:::
 
 ### SAGA with Linux
 
@@ -588,9 +581,9 @@ SAGA is another external GIS software. SAGA tools are identified by their icon. 
 
 If the file path contains umlauts (ä,ö,ü), special characters (!,?, ., etc.) or spaces, this can lead to problems when these files are processed by QGIS. It is therefore recommended that you avoid these characters in your file paths (write out umlauts, replace spaces with _).
 
-```{attention} 
+:::{attention} 
 Temporary files are user-specific (if several people use one PC, each person has their own temporary files). The file path therefore contains your user name. If this contains problematic characters, it may therefore be advisable to change it.
-```
+:::
 
 ## QGIS Help Access Links
 

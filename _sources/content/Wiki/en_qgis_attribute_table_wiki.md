@@ -102,9 +102,9 @@ ___
     - Click on `OK` 
     - Click on ![](/fig/mActionSaveEdits.png)
 
-```{Hint}
+:::{Hint}
 To select multiple columns press <kbd>Ctrl</kbd> and select columns.
-```
+:::
 
 <video width="90%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_delet_column.mp4"></video>
 

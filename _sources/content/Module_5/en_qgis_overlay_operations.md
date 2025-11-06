@@ -11,13 +11,13 @@
 - Overlay operations allow us to combine the geometries of two layers in different ways (see {numref}`overlay_operations`). 
 - The difference to spatial joins is that the __geometries are transformed in the process__, and not primarily the attributes. 
 
-```{figure} /fig/overlay_operations.png
+:::{figure} /fig/overlay_operations.png
 ---
 name: overlay_operations
 width: 500 px
 ---
 Visual representation of different overlay operations. 
-```
+:::
 
 Overlay operations include __Clipping, Buffering, and Dissolving__. In the next subchapters, we will take a look at each of these overlay operations in turn and provide some examples for humanitarian work.
 
@@ -39,13 +39,13 @@ The tool has two different input options:
 * __Input layer__: Layer from which the selection is clipped
 * __Overlay layer__: Area of interest to which the input layer will be clipped
 
-```{figure} /fig/en_clip_sudan.PNG
+:::{figure} /fig/en_clip_sudan.PNG
 ---
 width: 550 px
 name: en_clip_sudan
 ---
 Screenshot of the Clip tool with the input data.
-```
+:::
 
 ### Exercise: Clipping a roads layer to administrative boundaries
 
@@ -61,9 +61,9 @@ as a new layer: __Road_infrastructure_Sudan.geojson__.
     - Click __Run__ to generate a temporary layer called Clipped.
 7. You now have a tidy roads layer which contains the necessary information.
 
-````{dropdown} Solution: Clipping a roads layer to administrative boundaries
+:::{dropdown} Solution: Clipping a roads layer to administrative boundaries
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_clip_roads.mp4"></video>
-````
+:::
 
 
 ### Dissolve
@@ -78,13 +78,13 @@ __Humanitarian Example:__
 *Two datasets show the flood extent of two different flood events in the past year. Both layers overlap but show differences. Dissolve can create polygons that show the flooded area in the past year.*
 :::
 
-```{figure} /fig/en_buffer_dissolve.png
+:::{figure} /fig/en_buffer_dissolve.png
 ---
 width: 550 px
 name: buffer_dissolve
 ---
 Buffer zones with dissolved (left) and with intact boundaries (right) showing overlapping areas <br /> (Source: [QGIS Documentation](https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve), Version 3.28)
-```
+:::
 
 In the next section on __buffers__ we will be using the __dissolve-tool__.
 
@@ -104,25 +104,25 @@ To analyze access to clean water sources, a scenario considers how far the popul
 
 :::
 
-```{figure} /fig/en_buffer_point_line_polygon.png
+:::{figure} /fig/en_buffer_point_line_polygon.png
 ---
 width: 550 px
 name: buffering_options
 ---
 Different kinds of buffer zones <br /> (Adapted after [QGIS Documentation](https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve), Version 3.28)
-```
+:::
 
 There are several variations in buffering. The __buffer distance__ or __buffer size can vary__ according to the numerical values provided. The numerical values have to be defined in map units according to the Coordinate Reference System (CRS) used with the data. 
 
-````{Attention}
+::::{Attention}
 
-```{figure} /fig/en_dist_in_degrees_error_msg.png
+:::{figure} /fig/en_dist_in_degrees_error_msg.png
 ---
 width: 450 px
 name: dist_degree_error_message
 ---
 The error message QGIS displays when performing distance based calculations in a geographic coordinate system.
-```
+:::
 If...
 - You get a projection warning message 
 - Your layer(s) don't show up
@@ -137,18 +137,18 @@ To solve it, try...
 
 For example, if you are trying to make a buffer on a layer with a Geographical Coordinate System, QGIS will warn you and suggest to reprojecting the layer to a __metric Coordinate System__. This is because when you are using a metric coordinate system, the algorithm will use degrees to calculate the distance of the buffer size. However, the distance between degrees are not uniform and depend on the latitude (see {numref}`distance_longitudes`)
 
-```{figure} /fig/en_dist_longitudes.png
+:::{figure} /fig/en_dist_longitudes.png
 ---
 name: distance_longitudes
 width: 450 px
 ---
 This image illustrates this – 10 degrees of longitude at the equator is 1,113km, but 10 degrees of
 longitude at 70 degrees latitude is only 381km. (Source: [Ricky Angueria](https://x.com/RickyAngueira/status/1594030866132410368)).
-```
+:::
 
 This is why you’ll need to convert to a local/projected coordinate system to be able to specify distances in km/miles (e.g. when using the buffer tool).
 
-````
+::::
 
 ### Exercise: Create 10km buffer around health centres
 
@@ -171,28 +171,26 @@ They are also downloaded and adapted from [Natural Earth Data](https://www.natur
     - Leave the other options as defaults and click `Run`.
 6. Now you have a rough overview over the coverage with health sites for the district of Khartoum.
 
-````{dropdown} Solution: Create 10km buffer around health centres
+:::{dropdown} Solution: Create 10km buffer around health centres
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_buffer_health.mp4"></video>
-
-
-````
+:::
 
 ### More advanced clipping operations
 
 
 In addition to the standard QGIS operation __Clip__, there are two other more advanced tools for performing clipping processes. These tools are GDAL operations, which enable the definition of the clipping extent. This extent can be either a specific area or a mask layer. The second option is quite similar to the standard clipping process provided by QGIS.
 
-```{figure} /fig/en_gdal_clipping_tools.PNG
+:::{figure} /fig/en_gdal_clipping_tools.PNG
 ---
 width: 250 px
 name: gdal_clipping_tools
 ---
 The GDAL tools Clip vector by extent and Clip vector by mask layer.
-```
+:::
 
-::::{tab-set}
+:::::{tab-set}
 
-:::{tab-item} Clip vector by extent
+::::{tab-item} Clip vector by extent
 
 This operation clips any vector file to a given extent. This clip extent will be defined by a bounding box that should be used for the vector output file. It also has to be defined in the target CRS coordinates. There are different methods to define the bounding box, which are the great difference between this tool and the standard clipping process:
 * Calculate from a layer: this uses the extent of a layer loaded into the current project.
@@ -202,32 +200,32 @@ This operation clips any vector file to a given extent. This clip extent will be
 * Draw on canvas: click and drag a rectangle delimiting the area to take into account.
 * Enter the coordinates as xmin, xmax, ymin, ymax.
 
-```{figure} /fig/en_clip_vector_by_extent.PNG
+:::{figure} /fig/en_clip_vector_by_extent.PNG
 ---
 width: 450 px
 name: en_clip_vector_by_extent
 ---
 Screenshot of the tool Clip vector by extent
-```
-
 :::
 
-:::{tab-item} Clip vector by mask layer
+::::
+
+::::{tab-item} Clip vector by mask layer
 This operation uses a mask polygon layer to clip any vector layer. This operation only takes two input:
 1. The input layer
 2. The mask layer which is used as the clipping extent for the input vector layer
 
-```{figure} /fig/en_clip_vector_by_mask_layer.PNG
+:::{figure} /fig/en_clip_vector_by_mask_layer.PNG
 ---
 width: 450 px
 name: clip_vector_by_mask_layer
 ---
 Screenshot of the tool Clip vector by mask layer.
-```
-
 :::
 
 ::::
+
+:::::
 
 ## Self-Assessment Questions
 

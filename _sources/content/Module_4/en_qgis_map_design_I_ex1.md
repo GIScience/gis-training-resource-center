@@ -213,13 +213,13 @@ Once you are happy with the symbolization and colours of your data, the next ste
     - Click on the three dots `...` and select the file with your logo.
     - If necessary, resize or move the picture on the print layout.
 
-```{figure} ../../fig/30.30.2_print_layout_add_picture_options.png
+:::{figure} ../../fig/30.30.2_print_layout_add_picture_options.png
 ---
 name: add picture item properties
 width: 600 px
 ---
 The item properties panel for pictures. You need to specify the save location of a picture in order to see it on the print layout.
-```
+:::
 
 9. Add a text box with additional information, sources, the author (you), and date of creation.
 10. When you are happy with your print layout. You can export it as a PDF. You can save it in the project folder under "results".
@@ -227,13 +227,13 @@ The item properties panel for pictures. You need to specify the save location of
 
 The finished map could look something like this:
 
-```{figure} ../../fig/en_map_design_exercise_1_results.png
+:::{figure} ../../fig/en_map_design_exercise_1_results.png
 ---
 name: Main road network and hospitals in Ghana, Africa
 width: 600px
 ---
 Some space has been left in the bottom-right corner for an overview map
-```
+:::
 
 What can we learn from this map? We can clearly identify areas that are harder to reach and where the travel time to a hospital is much longer than in the populated regions in the south of Ghana. 
 

@@ -14,9 +14,9 @@
 
 In this exercise, you will learn how to digitise points, lines, and polygons of features in settlements by creating new datasets. 
 
-```{Attention}
+:::{Attention}
 Try to always use the standard folder structure. You can find a template [__here__](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure).
-```
+:::
 
 ### Relevant Wiki Articles
 

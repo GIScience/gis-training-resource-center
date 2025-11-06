@@ -12,14 +12,14 @@ The previous chapter went over the fundamentals of graphical symbolisation and t
 
 ## Styling Panel
 
-```{figure} ../../fig/en_30.30.2_styling_panel.png
+:::{figure} ../../fig/en_30.30.2_styling_panel.png
 ---
 height: 400px
 name: en_30.30.2_styling_panel
 align: left
 ---
 Styling panel in QGIS 3.30.2.
-```
+:::
 
 For each layer in QGIS, there is a styling panel where you can change the symbology, colour and label for the features in that layer. There are two ways to open the layer styling options in QGIS:  
 
@@ -40,17 +40,17 @@ create labels, and create colour ramps to differentiate between features with va
 You can use graphical variables to style vector data. As we have already learned, vector data can be either points, 
 lines, or polygons. There are different options to symbolize these different types of vector data. 
 
-```{figure} ../../fig/en_symbolization_vector_data.png
+:::{figure} ../../fig/en_symbolization_vector_data.png
 ---
 name: en_symbolization_vector_data
 width: 750px
 ---
 Symbolization for vector data; Source: White, T. (2017). Symbolization and the Visual Variables. *The Geographic Information Science & Technology Body of Knowledge (2nd Quarter 2017 Edition), John P. Wilson (ed.). DOI: 10.2222/gistbok/2017.2.3 .
-```
+:::
 
-```{note}
+:::{note}
 Remember that __the layer's symbology is saved within your project file, not within your shapefile!__ If you share a shapefile with a colleague, it will have a different style when they add it to their own project.
-```
+:::
 
 QGIS let's you visualise data using simple markers, SVG-files or Raster-files. Most commonly, you will work with simple markers. These are generally used to create the symbols for most elements on a map. For example, simple markers are used to visualise streets, building outlines, waterbodies, administrative boundaries or other polygons.
 Most simple markers consist of a __fill__ and an __outline__. Depending on the type of geometry in the layer, you will have to use have different symbology options. 
@@ -62,13 +62,13 @@ Most simple markers consist of a __fill__ and an __outline__. Depending on the t
 
 In the Symbology Tab, you can select between various symbolization methods (see {numref}`en_3.36_m4_symbolisation_methods`). The most important ones are __Single Symbol__, __Categorised__, __Graduated__, and __Rule-based__. 
 
-```{figure} /fig/en_3.36_m4_symbolisation_methods.png
+:::{figure} /fig/en_3.36_m4_symbolisation_methods.png
 ---
 name: en_3.36_m4_symbolisation_methods
 width: 500 px
 ---
 
-```
+:::
 
 ::::{tab-set}
 
@@ -117,11 +117,11 @@ Below, we will go over some common styling methods used in cartography.
 
 When creating situational reports, you will frequently use administrative boundaries. In the example below, we want to create an overview map using the administrative boundaries of Nigeria. In order to visualise all the three administrative boundaries at the same time, we need to set the symbology for each layer so the layers below are visible, and the hierarchy of the administrative levels is distinguishable. 
 
-```{admonition} *Optional*: Now it's your turn
+:::{admonition} *Optional*: Now it's your turn
 
 You can follow along by downloading the [administrative boundaries of Nigeria](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/follow_along/nga_adm_osgof_20190417.zip) by [OCHA Nigeria](https://data.humdata.org/dataset/cod-ab-nga).
 
-```
+:::
 
 #### Only display the outlines of polygons
 
@@ -133,12 +133,12 @@ To change the symbology of a single layer:
 3. Click on the arrow to the right of `Fill Colour`.
 4. Check the `Transparent Fill` option.
 
-```{figure} ../../fig/en_30.30.2_vector_layer_styling_transparent.png
+:::{figure} ../../fig/en_30.30.2_vector_layer_styling_transparent.png
 ---
 name: en_30.30.2_vector_layer_styling_transparent
 width: 500 px
 ---
-```
+:::
 
 :::{dropdown} Video: Making the fill colour transparent
 
@@ -153,13 +153,13 @@ __Step 1: Ordering the layers__
 1. Import the administrative boundaries into your QGIS-project.
 2. We need to order the layers in the Layers panel so that the `adm0`-layer sits on top, followed by `adm1` and `adm2`. At first, this might look weird because `Adm0` will cover everything.
 
-```{figure} ../../fig/en_30.30.2_changing_layer_style_1.png
+:::{figure} ../../fig/en_30.30.2_changing_layer_style_1.png
 ---
 name: en_30.30.2_changing_layer_style_1
 height: 400px 
 ---
 Order the layers and navigate to the styling panel of the topmost layer
-```
+:::
 
 3. Change the symbology of the Adm0 layer by opening the styling panel and navigating to the Symbology tab. 
 4. Click on `Simple Fill` to open the style options.
@@ -173,13 +173,13 @@ Order the layers and navigate to the styling panel of the topmost layer
 12. Use the same Stroke Colour` as for Adm0 and Adm1, but make the width 0.1 Millimeters and the Stroke Style a __Dash Line__.
 13. Click OK and look at your map: hopefully it's starting to look nicer!
 
-```{figure} ../../fig/en_30.30.2_changing_layer_style_3.png
+:::{figure} ../../fig/en_30.30.2_changing_layer_style_3.png
 ---
 width: 500 px
 name: en_30.30.2_changing_layer_style_3
 ---
 The styling of a vector data consists of the colour and the outline.
-```
+:::
 
 :::{dropdown} Video: Adjusting the style for multiple layers
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_change_style_for_multiple_layers
@@ -199,13 +199,13 @@ If a layer contains numeric values that are continuous, they can be organized in
 4. Open its `Symbology` options and choose `Graduated`.
 5. __Select the value you want to use to assign colours__, in this case, it will be `total_pop`.
 
-```{figure} ../../fig/en_30.30.2_symbology_variable_ranges.png
+:::{figure} ../../fig/en_30.30.2_symbology_variable_ranges.png
 ---
 name: en_30.30.2_symbology_variable_ranges
 width: 550px
 ---
 With variable ranges, select __Graduated__ symbology and choose the attribute with continuous values
-```
+:::
 
 6. Click on `Classify` to __list all values divided in classes__.
 7. Choose __how many classes__ you want the data to be divided into ‒ let's say 4.
@@ -213,23 +213,23 @@ With variable ranges, select __Graduated__ symbology and choose the attribute wi
 9. Click on __the arrow next to the colour ramp__ to choose another combination of colours - let's say a color ramp from white to blue.
 10. Click `Apply` to preview the look of your layer, then `OK`.
 
-```{figure} ../../fig/en_30.30.2_symbology_variable_ranges_2.png
+:::{figure} ../../fig/en_30.30.2_symbology_variable_ranges_2.png
 ---
 name: en_30.30.2_symbology_variable_ranges_2
 width: 500px
 ---
 You can categorize the continuous values into classes and assign a colour ramp .
-```
+:::
 
 The following map shows the most populated States of Nigeria using a graduated colour categorization. These types of maps are called __Choropleth maps__. 
 
-```{figure} ../../fig/en_map_design_example_variable_ranges.png
+:::{figure} ../../fig/en_map_design_example_variable_ranges.png
 ---
 name: en_map_design_example_variable_ranges
 width: 500px
 ---
 A map showing the population of Nigerian states.
-```
+:::
 
 :::{dropdown} Video: How to create a choropleth map
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_graduated_styling
@@ -249,13 +249,13 @@ We will be using the same layer as for the choropleth map (see {numref}`en_map_d
 
 1. In the [processing toolbox](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_start.html?highlight=processing+toolbox#toolbox-toolbars), search for the tool `centroids`. <kbd>Double-Click</kbd> on it. A new window will open (see {numref}`en_3.36_m4_centroids`)
 
-```{figure} /fig/en_3.36_m4_centroids.png
+:::{figure} /fig/en_3.36_m4_centroids.png
 ---
 name: en_3.36_m4_centroids
 width: 500 px
 ---
 Creating centroids in QGIS 3.36.
-```
+:::
 
 2. Under `Input Layer`, select the `NGA_Adm1_Pop`-layer. Click on `Run`.
 3. A new point layer called `Centroids` will appear in your layers panel. Open its styling panel and navigate to the symbology tab.
@@ -265,13 +265,13 @@ Creating centroids in QGIS 3.36.
 7. Click on `Classify`. 
 8. *Optional*: Change the Colour and Transparency of the Circles. 
 
-```{figure} /fig/en_m4_graduated_symbols_example.png
+:::{figure} /fig/en_m4_graduated_symbols_example.png
 ---
 name: en_m4_graduated_symbols_example
 width: 550 px
 ---
 A map of Nigeria displaying the same data. Once using graduated colours (choropleth) and graduated symbols (proportional circles). 
-```
+:::
 
 :::{dropdown} Video: How to create a proportional circles map
 
@@ -290,17 +290,17 @@ We can use symbology to __show the difference between features__ in the same lay
 1. Download the [ACLED security incidents geopackage](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/follow_along/NGA_ACLED_security_incidents.zip) and load it into your QGIS-project. It is a point layer with each point indicating a distinct security incident.
 2. Open the `Symbology tab` for that layer and choose `Categorized` instead of Single Symbol.   
 
-```{note} 
+:::{note} 
 Categorized symbology is used when you have ***discrete*** variables.
-```
+:::
 
-```{figure} ../../fig/en_30.30.2_categorized_layer_symbology_1.png
+:::{figure} ../../fig/en_30.30.2_categorized_layer_symbology_1.png
 ---
 name: en_30.30.2_categorized_layer_symbology_1
 width: 500px
 ---
 Change the symbology type to "categorised" and choose the Value (variable) you wish to display.
-```
+:::
 
 3. Now we need to __choose which attributes we want to display through the symbology__. In this case, it could be the number of casualties, or the actor who perpetrated the act. Let's categorize the features by `event_type`.
 4. Click on `Classify` to __list all the unique values contained__ in the `event_type` field (i.e. all the possible types of security incidents recorded in our table).
@@ -310,23 +310,23 @@ Change the symbology type to "categorised" and choose the Value (variable) you w
 8. Click on `OK`, then Apply to preview what the layer will look like.
 9. Click `OK` again. 
 
-```{figure} ../../fig/en_30.30.2_categorized_layer_symbology_2.png
+:::{figure} ../../fig/en_30.30.2_categorized_layer_symbology_2.png
 ---
 name: en_30.30.2_categorized_layer_symbology_2
 width: 500px
 ---
 By double clicking on the __unique values__ in the classified list, you can change the symbol for each value.
-```
+:::
 
 Now we have a map of Nigeria where you can locate the areas that are affected by explosions more than others. On the map below, we also added text labels, which will be explained below.
 
-```{figure} ../../fig/en_exercise_map_design_example_Nigeria.png
+:::{figure} ../../fig/en_exercise_map_design_example_Nigeria.png
 ---
 name: en_exercise_map_design_example_Nigeria
 width: 500px
 ---
 Regions affected by explosions in Nigeria.
-```
+:::
 
 :::{dropdown} Video: Set up different symbols in a single layer
 

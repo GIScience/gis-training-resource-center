@@ -18,13 +18,13 @@ In this chapter we will discuss well designed maps and give examples of how to r
 
 ### Map Example 1: Flood-affected areas and roads in the Somali Region, Ethiopia
 
-```{figure} ../../fig/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png
+:::{figure} ../../fig/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png
 ---
 name: Flood affected Areas in Somali
 width: 800 px
 ---
-Flood affected areas and roads in the Somali Region, Ethiopia (Source: OCHA)
-```
+Flood affected areas and roads in the Somali Region, Ethiopia (Source: OCHA).
+:::
 
 :::{dropdown} Context: Situation in Ethiopia
 
@@ -47,21 +47,22 @@ This is a thematic map with a clear purpose, featuring only the most essential e
 - The topmost layer is a point-layer with information on inaccessible roads or bridges as well as the location of airstrips and which airstrips are accessible. The points have been symbolized with SVG-symbols. 
 - (The administrative boundaries of Ethiopia are set apart from the surrounding countries by making the polygon a clear white and the surrounding countries in a shade of grey. This can be achieved by copying the polygon of Ethiopia into a new layer, and changing the symbology respectively)
 
-```{note} 
+:::{note} 
 The colour scheme of the roads makes it possible to read the map intuitively, as red is typically associated with negative qualities and green with positive qualities. It should be noted, however, that people with colourblindness will have trouble reading the map.
-```
+:::
 
 ---
 
 ### Map Example 2: Flooding Risk in the Ouham Region, Central African Republic
 
-```{figure} ../../fig/REACH_CAF_Susceptibilite_inondations_CF32_Juillet2023_A3_FR.png
+:::{figure} ../../fig/REACH_CAF_Susceptibilite_inondations_CF32_Juillet2023_A3_FR.png
 ---
 name: REACH Flooding Risk Ouhman Region, Central African Republic
 width: 720 px
 ---
 Flooding risk in the Ouham Region, Central African Republic (Source: REACH).
-```
+:::
+
 :::{dropdown} Context: Situation in the Central African Republic
 
 The Central African Republic has been hit by destructive floods in late 2019, which displaced over 100,000 people and caused considerable damage to infrastructure. The floods have destroyed shelters, obstructed transportation routes, and have led to disease outbreaks such as cholera and malaria. Due to climate change, such floods will become more frequent, leading to increased vulnerability for towns and villages. Since natural hazards are hard to predict, the changing climate reduces community resilience.
@@ -85,9 +86,9 @@ This map displays the flooding risk using a raster image. The raster data was ca
 
 ### The Modifiable Areal Unit Problem
 
-```{caution}
+:::{caution}
 Be careful when representing data in administrative regions. 
-```
+:::
 
 The Modifiable Areal Unit Problem (MAUP) is a statistical bias that arises when spatial data is aggregated into regions. It highlights how the results of spatial analysis can change depending on how data is grouped into areal units (spatial zones).
 
@@ -111,19 +112,19 @@ __Why is this important in GIS?__
 - Policy Decisions: If the analysis depends on arbitrary boundaries, decisions (e.g., allocating resources) might be based on misleading results.
 - Spatial Statistics: Correlations, regressions, and other analyses involving spatial data can be biased due to MAUP.
 
-```{figure} /fig/en_modifiable_areal_unit_problem_diagram.png
+:::{figure} /fig/en_modifiable_areal_unit_problem_diagram.png
 ---
 name: en_modifiable_areal_unit_problem_diagram
 width: 500 px
 ---
 Visualising the Modifiable Areal Unit Problem: The same indicator represented at three different scales (Source: Kitchin, Rob & Lauriault, Tracey & McArdle, Gavin. (2015). Knowing and governing cities through urban indicators, city benchmarking and real-time dashboards. Regional Studies, Regional Science. 2. 6-28. 10.1080/21681376.2014.983149. )
-```
+:::
 
 ### Proportional Circles vs. Solid Colours
 
-```{caution}
+:::{caution}
 Be cautious when representing __quantitative__ data with a __solid colour__.
-```
+:::
 
 While it is graphically appealing, representing quantitative data with solid colours can lead to problems and distract from the message of the map:
 
@@ -136,9 +137,9 @@ While it is graphically appealing, representing quantitative data with solid col
 
 ### Colour Gradient vs. Distinct Colour Palette
 
-```{caution}
+:::{caution}
 DO NOT use a __separate__ colour palette to represent __ordered entities__
-```
+:::
 
 A representation that "feels right" because it seems logical that a "low" rate would be represented differently than a "high" rate.
 
@@ -149,9 +150,9 @@ It is a mistake because:
 
 ### Gradient in a Single Colour vs. Gradient between two Colours
 
-```{Caution}
+:::{Caution}
 Be cautious when using a __gradient across two different colours__ for data that is __always positive__ (or negative).
-```
+:::
 
 This is difficult because our brains are used to prioritising certain colours, especially green to red, or blue to red. We must remember that __if our values do not have a meaningful zero point__, it might be better to stay in the same single colour and use different shades of that colour to indicate different values. Alternatively, a colour gradient that is not diverging can be used. 
 
@@ -167,9 +168,9 @@ It is a mistake because:
 
 ### Limited Geometric Symbols vs. Complex Icons and Symbols
 
-```{Caution}
+:::{Caution}
 DO NOT use __too many symbols__ in a thematic map.
-```
+:::
 
 Incorporating a multitude of symbols (and data) for an informative map is a common desire. However, too many symbols can __overload the map__ and __reduce the readability__ of the map. Using too many symbols (especially geometric ones) can make it difficult to read and understand the map.  
 __The eye can easily distinguish between four to five different symbols.__ Beyond that, it is difficult to tell elements apart. However, this is a less serious error because it does not convey false information on the map.

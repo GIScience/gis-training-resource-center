@@ -44,9 +44,9 @@ Example: `Select Feature(s)`
 2.	Select features by clicking on the or drawing a rectangle overlapping them.
 3.	Use the tool outside of selectable features to end your selection.
 
-```{Tip}
+:::{Tip}
 Holding down “Shift” during click-based selection allows you to select multiple features.
-```
+:::
 
 :::{dropdown} Example: Manually select country polygons by click
 :open:
@@ -68,9 +68,9 @@ The other options of ![](/fig/mActionSelectRectangle.png) function in a similar 
 
 :::
 
-```{Note}
+:::{Note}
 Selected features are highlighted in bright yellow in the geospatial view and blue in the attribute table.
-```
+:::
 
 ## Attribute Based Selection
 
@@ -81,9 +81,9 @@ A query based on specific Attributes can be done utilizing the `Select Features 
 3.	Use an expression with specific operators to specify your selection in the left hand panel (e.g ""continent"  LIKE  'Asia'" to select all features with the value “Asia” in the field "continent" ).
 
 
-```{Tip}
+:::{Tip}
 Click on `Show Values` in the top right corner when a field is selected to get an overview over the different values of the respective field by clicking `All Unique`/`10 Samples`. Double click values to use them in the expression panel on the left.
-```
+:::
 
 ::::{tab-set}
 

@@ -672,14 +672,6 @@ document.write(`
 </div>
 <section id="open-csv-data-in-qgis">
 <h3>Open .csv data in QGIS<a class="headerlink" href="#open-csv-data-in-qgis" title="Permalink to this heading">#</a></h3>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>When loading vector data in text format like .csv or .txt in QGIS, this data has to have latitude and longitude columns.</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">X</span> <span class="pre">field</span></code> =“LONGITUDE”</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Y</span> <span class="pre">field</span></code> = “LATITUDE”</p></li>
-</ul>
-</div>
 <ol class="arabic">
 <li><p><code class="docutils literal notranslate"><span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> -&gt;<code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Delimited</span> <span class="pre">Text</span> <span class="pre">Layer</span></code>.</p></li>
 <li><p>Click on <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">name</span></code> click on the three points <img alt="" src="../../_images/Three_points.png" /> and navigate to your csv. file and click <code class="docutils literal notranslate"><span class="pre">Open</span></code>.</p></li>
@@ -689,14 +681,15 @@ document.write(`
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>To find out which delimiter is used you can open your .csv file in Notepad or Excel. There you can check which delimiter is used to separate the information.</p>
-</div>
+<p>To find out which delimiter is used you can open your .csv file in Notepad or Excel. There you can check which delimiter is used to separate the information.
+;;;</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Record</span> <span class="pre">and</span> <span class="pre">Fields</span> <span class="pre">Options</span></code>: Under this drop-down menu, you can instruct QGIS to detect the data type of the different columns of the field and to detect column headers. Usually, you do not have to make any adjustments here.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">definition</span></code>: In this section, you specify which columns of the file contain the spatial information to geo-referenced the data on the map. If the file has a column containing <strong>latitude</strong> and another with <strong>longitude</strong> data, you can use them to georeferenced the data. Check <code class="docutils literal notranslate"><span class="pre">Point</span> <span class="pre">Coordinates</span></code>. Select for <code class="docutils literal notranslate"><span class="pre">X</span> <span class="pre">field</span></code> “LONGITUDE” and for <code class="docutils literal notranslate"><span class="pre">Y</span> <span class="pre">field</span></code> “LATITUDE”.
 Under <code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">CRS</span></code>select the coordinate reference system (CRS). By default, QGIS will select the CRS of the project.
 If the file does not have spatial information choose the option <code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">geometry</span> <span class="pre">(attribute</span> <span class="pre">only</span> <span class="pre">table)</span></code>.</p></li>
 </ul>
+</div>
 </li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Add</span></code></p></li>
 </ol>

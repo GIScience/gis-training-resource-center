@@ -100,10 +100,10 @@ Setting triggers is one of the cornerstones of the __Forecast-based Financing (F
 For the development of the Somaliland-Somalia Drought Trigger mechanism, various datasources were thoroughly analysed.
 Finally, the main parameters chosen for the trigger based on the __historical impact assessment__ are the twelve month Standard Precipitation Index (SPI12) and the IPC acute food insecurity classification. The exact data used are the documented and forecasted SPI12 (source: ICPAC) and the forecasted IPC classification (8 month forecast, source: FEWSNET), that is used to calculate a population weighted index of food insecurity. The trigger thresholds for both components were optimised towards the most favourable proportion of hit rate and false alarm rate. The emerging thresholds were <-1 for the SPI12 and >=0,7 for the IPC based index. The triggering is done on district level and per district just one trigger initiation per year is possible.
 
-```{admonition} Trigger Statement
+:::{admonition} Trigger Statement
 When ICPAC issues a SPI-12 forecast of less than -1 for a district AND the current FEWSNET food insecurity projection reaches at least 0.7 in its 
 derived population weighted index in the same district, then we will act in this district. We expect the lead-time to be 90 days.
-```
+:::
 
 
 ## Available Data
@@ -154,9 +154,9 @@ Whereas the IPC-Projections data will be downloaded by the participants directly
 
 ## Task
 
-```{Attention}
+:::{Attention}
 Some of the images and videos are not 100 % accurate for this particular exercise since they were take from the real trigger workflow of SRCS, which is more complex.
-```
+:::
 
 ### Step 1: Setting up folder structure 
 
@@ -164,7 +164,7 @@ __Purpose:__ In this step, we set up the correct folder structure to make the an
 
 __Tool:__ No special tools or programs are needed.
 
-``````{list-table}
+::::::{list-table}
 :header-rows: 1
 :widths: 10 25
 
@@ -175,14 +175,14 @@ __Tool:__ No special tools or programs are needed.
     3. Copy the Template folder “TEMPLATE_Year_Month” and change the name to the current year and month `2024_01`.
     
   -
-    ```{figure} /fig/Exercise_Folder_structure_Drought_Monitoring_Trigger.drawio.svg
+    :::{figure} /fig/Exercise_Folder_structure_Drought_Monitoring_Trigger.drawio.svg
     ---
     width: 450px
     name: 
     align: center
     ---
-    ```
-``````
+    :::
+::::::
 
 The Video below shows the process for setting up the folder for December 2023.
 
@@ -206,52 +206,53 @@ The IPC Projection data is provided and regularly updated on the [FEWSNET Websit
 On the website, you will have to click on Somalia to access the data. Alternatively, you can  navigate through `Data` -> `Acute Food Insecurity Data` and enter „Somalia". In the menu you will see different data formats for different timestamps. Once you find out which timestamp is the most current one, find the ZIP download. We need the data in shapefile (.shp) format, which is only included in the ZIP file and not provided as single download file. 
 
 
-```{Warning}
+:::{Warning}
 The FEWSNET pages change often!
-```
+:::
 
 1. Go to [FEWSNET Website](https://fews.net/). Click on `Data` -> `Acute Food Insecurity`.
 2. Scroll down. In `Geographic Area`, type in “Somalia” and click `Apply`.
 3. Choose the newest dataset.
 
-```{figure} /fig/IPC_Projections_website.png
+:::{figure} /fig/IPC_Projections_website.png
 ---
 height: 250px
 name: FEWSNET IPC - Download IPC Projections
 align: center
 ---
-```
+:::
 
-4. Download the one with the __ZIP__ Data
-5. When you have downloaded the data, right-click on the file and click on `Extract all` -> `Extract`
+4. Download the one with the __ZIP__ Data.
+5. When you have downloaded the data, right-click on the file and click on `Extract all` -> `Extract`.
 6. Open the extracted folder and copy the ML1 data in the IPC_ML1 folder you have created in step 1. 
-  * The filename is composed of "SO" for Somalia, year and month of the report month e.g `SO_202308_ML1.shp`
-  Example path: `.../Modul_5_Exercise2_Drought_Monitoring_Trigger/Monitoring/Year_Month_template/IPC_ML1`
-```{Warning}
+  * The filename is composed of "SO" for Somalia, year and month of the report month e.g `SO_202308_ML1.shp`.
+  Example path: `.../Modul_5_Exercise2_Drought_Monitoring_Trigger/Monitoring/Year_Month_template/IPC_ML1`.
+:::{Warning}
 Make sure to __not__ use the ML1_IDP data which comes in the .zip folder as well!
-```
+:::
 
-```{Warning}
+::::{Warning}
 Remember that you need to copy over all components that the respective [shapefile](/content/Wiki/en_qgis_geodata_types_wiki.md#vector-data) is composed of. Most probably it has 5 components: .cpg, .dbf, .prj, .shp, and .shx.
+::::
 
-```{figure} /fig/IPC_zip.PNG
+:::{figure} /fig/IPC_zip.PNG
 ---
 height: 300px
 name: Content of .zip file downloaded containing ML1 and ML2 IPC projections
 align: center
 ---
-```
+:::
 
-```{tip}
+:::{tip}
 On the [main FEWSNET page](https://fews.net/), you can also sign up for information on latest updates via email. For this option scroll down to the end of the page and click on `Sign up for Emails`. You will get the option to choose updates only for Somalia.
 
-```{figure} /fig/IPC_Newsletter.png
+:::{figure} /fig/IPC_Newsletter.png
 ---
 height: 60px
 name: FEWSNET Newsletter
 align: center
 ---
-```
+:::
 
 
 ### Step 3: Loading data into QGIS
@@ -279,7 +280,7 @@ __Purpose:__ The goal is to receive polygon layers which share both the borders 
 __Tool:__ [`Intersection`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#intersection)
 
 
-``````{list-table}
+::::::{list-table}
 :header-rows: 1
 :widths: 20 25
 
@@ -291,24 +292,24 @@ __Tool:__ [`Intersection`](https://giscience.github.io/gis-training-resource-cen
     4. Under `Intersection` click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to your monitoring folder [Year_Month]. Give the output the name "ML1_Intersection" and click `Save`
     5. Click `Run`
   -
-    ```{figure} /fig/SRCS_Trigger_step_4_Intersection.png
+    :::{figure} /fig/SRCS_Trigger_step_4_Intersection.png
     ---
     width: 450px
     name: 
     align: center
     ---
-    ```
-``````
+    :::
+::::::
 
 __Result:__ After doing this for ML1, you should have one polygon layer containing all columns of ML1 and district_pop_sum.
 
-```{Note}
+:::{Note}
 The resulting layer can have more rows than the original layers.
-```
+:::
 
-```{dropdown} Video: Intersection of ML 1 data with the district polygons 
+:::{dropdown} Video: Intersection of ML 1 data with the district polygons 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_4_Intersection.mp4"></video>
-```
+:::
 
 ### Step 5: Calculation of Population per Intersection Polygon
 
@@ -317,7 +318,7 @@ __Purpose:__ Here we calculate the population in each polygon of the intersectio
 
 __Tool:__  [`Zonal Statistics`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics)
 
-``````{list-table}
+::::::{list-table}
 :header-rows: 1
 :widths: 20 25
 
@@ -331,31 +332,32 @@ __Tool:__  [`Zonal Statistics`](https://giscience.github.io/gis-training-resourc
     5.  Under `Zonal Statistics`, click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "ML1_zonal_statistic" and click `Save`
     5. Click `Run
   -
-    ```{figure} /fig/SRCS_Trigger_step_5_zonal_statistic.png
+    :::{figure} /fig/SRCS_Trigger_step_5_zonal_statistic.png
     ---
     width: 450px
     name: 
     align: center
     ---
-    ```
-``````
+    :::
+::::::
 
 __Result:__ The result should be the “ML1_zonal_statistic” as a polygon layer. This layer should have the same columns in the attribute table like ML1_Intersection __plus__ the column “_sum”, which is the number of people living in the single parts of the polygons.
 
 
-```{dropdown} Video:  Calculation of Population per Intersection Polygon
+:::{dropdown} Video:  Calculation of Population per Intersection Polygon
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_5_zonal_statistic.mp4"></video>
-```
+:::
+
 ### Step 6: Weighting of the Population based on IPC-Phase
 
 
 __Purpose:__ The purpose of this step is the weighting of the population in the five IPC phases as described in [IPC Data](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_drought_trigger_somalia.html#ipc-population-weighted-index).
 
-```{Note} 
+:::{Note} 
 The IPC Index treats low-population districts the same as high-population districts, ensuring that small districts with high food insecurity are not underrepresented.
-```
+:::
 
-```{dropdown}  IPC-Population Weighted Index
+:::{dropdown}  IPC-Population Weighted Index
 
 To better utilize the IPC data, a straightforward population-weighted index was created. This index assigns weights to relative population numbers based on their respective IPC classes, emphasizing the number of people in each IPC class rather than just the class itself. Additionally, populations in higher IPC classes are given more importance than those in lower classes. The index is calculated as follows:
 
@@ -372,7 +374,7 @@ Where the weights are defined as:
 |IPC 5  |6  |
 
 The IPC Index represents low-population districts equal to high-population districts. No underrepresentation of high food insecurity of small districts occurs.
-```
+:::
 __Tool:__  [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field)
 
 
@@ -413,20 +415,20 @@ __Tool:__[`Field Calculator`](https://giscience.github.io/gis-training-resource-
 6. Click `ok`
 7. Save the new column by clicking on ![](/fig/mActionSaveEdits.png) in the attribute table and turn off editing mode by clicking on ![](/fig/mActionToggleEditing.png)
 
-```{figure} /fig/SRCS_Trigger_step_8_field_calculator.png
+:::{figure} /fig/SRCS_Trigger_step_8_field_calculator.png
 ---
 width: 500px
-name: 
+name: SRCS_Trigger_step_8_field_calculator
 align: center
 ---
-```
+:::
 
 __Result:__ The layer “ML1_zonal_statistic” should now have the column “Index_per_IPCPolygon_ML1”. The numbers in this column have to be smaller than in the “district” column.
 
 
-```{dropdown} Video: Calculation of Population Proportion per Intersection Polygon
+:::{dropdown} Video: Calculation of Population Proportion per Intersection Polygon
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_TRigger_step_8_field_calculator.mp4"></video>
-```
+:::
 
 ### Step 8: Calculate IPC Index per District
 
@@ -434,7 +436,7 @@ __Purpose:__ The purpose of this step is to calculate a population-weighted mean
 
 __Tool:__ `Join attribute by location (summary)`
 
-``````{list-table}
+::::::{list-table}
 :header-rows: 1
 :widths: 20 25
 
@@ -450,20 +452,21 @@ __Tool:__ `Join attribute by location (summary)`
     7. Under `Join Layer`, click on the three points ![](/fig/Three_points.png)-> `Save to File` and navigate to you monitoring folder [Year_Month]. Give the output the name "ML1_IPC_Index" and click `Save`.
     8. Click `Run`.
   -
-    ```{figure} /fig/Exercise_trigger_join_attributes_location.png
+    :::{figure} /fig/Exercise_trigger_join_attributes_location.png
     ---
     width: 450px
     name: 
     align: center
     ---
-    ```
-``````
+    :::
+::::::
 
 __Result:__ As a result, your layer "ML1_IPC_Index" should have the column “Index_per_IPCPolygon_ML1_mean”. Furthermore, the number of rows should be the exact number of districts in Somalia and the polygons should have the exact shape of the districts.
 
-```{dropdown} Video: Calculate IPC Index per District
+:::{dropdown} Video: Calculate IPC Index per District
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_9_join_location.mp4"></video>
-```
+:::
+
 ### Step 9: Evaluate Trigger Activation 
 
 __Purpose:__ The purpose of this step is to gain a quick overview of possible trigger activation without having to revise the actual data. Instead, we will have a binary column with trigger = yes or trigger=no values.
@@ -476,7 +479,8 @@ __Tool:__ [`Field Calculator`](https://giscience.github.io/gis-training-resource
 4. `Result field type`: Text (string).
 5. Add the code below into the `Expression` field.
 6. Save the new column by clicking on ![](/fig/mActionSaveEdits.png) in the attribute table and end the editing mode by clicking on ![](/fig/mActionToggleEditing.png).
-``````{list-table}
+
+::::::{list-table}
 :header-rows: 1
 :widths: 15
 
@@ -490,23 +494,24 @@ __Tool:__ [`Field Calculator`](https://giscience.github.io/gis-training-resource
 
     END
     ```
-``````
+::::::
+
 6. Click `ok`.
 7. Save the new column by clicking on ![](/fig/mActionSaveEdits.png) in the attribute table and end the editing mode by clicking on ![](/fig/mActionToggleEditing.png).
 
 __Result:__ A layer with all districts of Somalia with a column of "Yes" and "No" values indicating whether the trigger levels have been reached or not.
 
-```{figure} /fig/Exercise_trigger_evaluation.png
+:::{figure} /fig/Exercise_trigger_evaluation.png
 ---
 width: 600px
 name: 
 align: center
 ---
-```
+:::
 
-```{dropdown} Video: Evaluate Trigger Activation 
+:::{dropdown} Video: Evaluate Trigger Activation 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_13_trigger_activation.mp4"></video>
-```
+:::
 
 ### Step 10.: Visualising the Results
 
@@ -529,13 +534,13 @@ You will now see districts where no trigger is activated in green and districts 
 The “Style_Trigger_Activation.qml” style layer is configured to show the district names only where the trigger is actually activated. If there is no trigger activation you can activate the admin 1 boundary layer for better map orientation (see __Administrative 2 Boundaries__ below).
 ::::
 
-```{figure} /fig/Map_yes_trigger.PNG
+:::{figure} /fig/Map_yes_trigger.PNG
 ---
 width: 1000px
-name: 
+name: Map_yes_trigger
 align: center
 ---
-```
+:::
 
 
 __Administrative 2 Boundaries (Regions)__
@@ -552,38 +557,38 @@ __Administrative 2 Boundaries (Regions)__
     * Som_admin1_regions_UNDP
     * OpenStreetMap
 
-```{dropdown} Video: Visualisation of results
+:::{dropdown} Video: Visualisation of results
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Trigger_model_style.mp4"></video>
-```
+:::
 
-``````{list-table}
+::::::{list-table}
 :header-rows: 1
 :widths: 20 20
 
 * - Intervention Map __without__ Trigger activation
   - Intervention Map __with__ Trigger activation
 * - 
-    ```{figure} /fig/Map_no_trigger.PNG
+    :::{figure} /fig/Map_no_trigger.PNG
     ---
     width: 1000px
     name: 
     align: center
     ---
-    ```
+    :::
     
   -
-    ```{figure} /fig/Map_yes_trigger.PNG
+    :::{figure} /fig/Map_yes_trigger.PNG
     ---
     width: 450px
     name: 
     align: center
     ---
-    ```
-``````
+    :::
+::::::
 
-```{Attention}
+:::{Attention}
 Remember the [layer concept](/content/Module_2/en_qgis_geodata_concept.md) and make sure the basemap layer is at the bottom of your layers panel.
-```
+:::
 
 ### Step 11: Making print map
 
@@ -602,19 +607,19 @@ __Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-cent
     * Add __Som_admin1_regions_UNDP__ to the legend by clicking on the green plus and click on the layer and click `ok`.
  
 
-```{dropdown} Video: Making a print map
+:::{dropdown} Video: Making a print map
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_print_map.mp4"></video>
-```
+:::
 
-```{Attention}
+:::{Attention}
 Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.
-```
+:::
 
 You can also adapt the template to your needs and preferences. You can find help [here](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html).
 
-```{Attention}
+:::{Attention}
 Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.
-```
+:::
 
 ### Step 13.: Exporting Map 
 
@@ -646,10 +651,10 @@ __Export as PDF__
 Now the image can be found in the result folder in the folder you created in Step 1.
 
 
-```{figure} /fig/map_output_example_ex.png
+:::{figure} /fig/map_output_example_ex.png
 ---
 width: 1000px
 name: 
 align: center
 ---
-```
+:::

@@ -105,80 +105,80 @@ Tabula is an open source application that let's you extract data tables from PDF
 
 :::
 
-```{figure} /fig/en_tabula_website.png
+:::{figure} /fig/en_tabula_website.png
 ---
 name: en_tabula_website
 width: 550 px
 ---
 The Tabula.technology website with the download links to the left.
-```
+:::
 
 2. Unzip the downloaded file into a location of your choosing (e.g., Programs, Desktop, ...).
 3. Open the folder where you unzipped the file and open the "Tabula" application.
 
-```{figure} /fig/en_tabula_folder.png
+:::{figure} /fig/en_tabula_folder.png
 ---
 name: en_tabula_folder
 width: 450 px
 ---
 
-```
+:::
 
 4. A new browser window will open with this address: http://localhost:8080. This is the application. If the browser does not open automatically, you can open the browser and enter this go to this address manually.
 
 
-```{figure} /fig/en_tabula_import.png
+:::{figure} /fig/en_tabula_import.png
 ---
 name: en_tabula_import
 width: 550 px
 ---
 
-```
+:::
 
 5. Now let's import the PDF file with the wall types into tabula:  
     1. Click on `Browse` and navigate to the exercise data folder: `...\data\input` and select the PDF "pakistan_wall_type7.7". Click `Open`.
     2. Click `Import` and wait for the PDF to load. Once loaded, it will open automatically.
 
-```{figure} /fig/en_Tabula_main_view.png
+:::{figure} /fig/en_Tabula_main_view.png
 ---
 name: en_Tabula_main_view
 width: 550 px
 ---
 
-```
+:::
 
 6. Here we will select the portion of the PDF that contains the data table. Tabula expects a table with one row of headers at the top for each column, followed by the rows with the data. By dragging a rectangle on the PDF, we can create a selection where tabula should look for the data table. Drag a rectangle and adjust the boarders so the table fits as precisely as possible into selection. Make sure to only capture the relevant information. Since the headers in this table has an unconventional formatting, it should be left out so the resulting csv table is easier to adjust. We will add the headers manually once extracted.
 
-```{figure} /fig/en_tabula_selection.png
+:::{figure} /fig/en_tabula_selection.png
 ---
 name: en_tabula_selection
 width: 550 px
 ---
 
-```
+:::
 
 7. Once you are satisfied with the selection, you can click on `Repeat this Selection` to duplicate the selection on the next pages. 
 8. Take a look on the following pages and make sure the table is still fully contained by the selection.
 9. Click on `Preview & Export Extracted Data` on the top right of the window.
 10. A new window will appear where the data will show up. At first, nothing will be visible. First, click on `Stream` on the left.
 
-```{figure} /fig/en_tabula_preview_extracted_1.png
+:::{figure} /fig/en_tabula_preview_extracted_1.png
 ---
 name: en_tabula_preview_extracted_1
 width: 550 px
 ---
 
-```
+:::
 
 11. The data from the PDF table will appear in the main window. Review the table.
 
-```{figure} /fig/en_tabula_data_preview.png
+:::{figure} /fig/en_tabula_data_preview.png
 ---
 name: en_tabula_data_preview
 width: 550 px
 ---
 
-```
+:::
 
 12. Click on `Export`, this will save the `.csv` into your downloads folder. 
 13. Move the file to the `/data/interim/`-folder.
@@ -198,28 +198,28 @@ The necessary steps to filter the data might be different depending on the edito
 
 1. Open the extracted CSV file in Excel. It might look like this:
 
-```{figure} /fig/en_tabula_csv_excel.png
+:::{figure} /fig/en_tabula_csv_excel.png
 ---
 name: en_tabula_csv_excel
 width: 300 px
 ---
 
-```
+:::
 
 2. Excel does not automatically recognise the comma delimited format. We can fix this by selecting the column A, navigating to `Data` > `Text to Columns`. A new window will open. Leave the settings as they are and click `Ok`. 
 
-```{note}
+:::{note}
 In the web version of excel, you can fix the columns by selecting column A, navigating to `Data` > `Split Text to Columns`
 
-```
+:::
 
-```{figure} /fig/en_m5_data_cleaning_ex_task2.png
+:::{figure} /fig/en_m5_data_cleaning_ex_task2.png
 ---
 name: en_m5_data_cleaning_ex_task2
 width: 450 px
 ---
 The data table should now look like this. It is still missing column headers (red).
-```
+:::
 
 3. We have to add the column names back, as we did not extract them with tabular. <kbd>Right-click</kbd> on the first row and select `Insert 1 Row Above`. A new row should appear.
 4. Enter the column headings as they are in the PDF-file:
@@ -308,13 +308,13 @@ Instead of looking for exact matches, fuzzy merge uses algorithms to compare val
     4. __Table field 2:__ `Fuzzy_match`
     5. __Layer 2 fields to copy:__ `Burnt Bricks/Blocks, Mud Bricks/Mud, Wood, Other`
 
-```{figure} /fig/en_3.36_m5_ex_7_attr_join.png
+:::{figure} /fig/en_3.36_m5_ex_7_attr_join.png
 ---
 name: m5_ex7_attr_join
 width: 450 px
 ---
 The "Join attributes by field value" parameters
-```
+:::
 
 10. Click `Run`.
 
@@ -334,10 +334,10 @@ We extracted the data from the PDF and now have a polygon layer containing the i
 
 The resulting symbolisation could look something like this:
 
-```{figure} /fig/m5_ex_7_visualisation_result.png
+:::{figure} /fig/m5_ex_7_visualisation_result.png
 ---
 name: m5_ex_7_visualisation_results
 width: 600 px
 ---
 The darker the colour, the higher the percentage of buildings having burnt bricks or blocks as wall type. The grey areas are the districts where we there is no data available.
-```
+:::

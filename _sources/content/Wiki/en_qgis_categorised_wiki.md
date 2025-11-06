@@ -28,9 +28,9 @@ __To classify data in categories…__
 - Click `Apply` to put your adjustment into effect.
 - Click `OK` to close the window.
 
-```{figure} /fig/Categorized_district_map_SierraLeone.png
+:::{figure} /fig/Categorized_district_map_SierraLeone.png
 ---
 name: Categorized_district_map_SierraLeone
 align: center
 ---
-```
+:::

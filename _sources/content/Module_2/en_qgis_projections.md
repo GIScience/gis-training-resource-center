@@ -14,30 +14,30 @@
 
 An important issue when creating a map of a region, is that it is impossible to create a representation of a sphere on a 2D plane without distorting the map. The transformation of a 3D object onto a flat surface can be done with the help of a __projection__. Over the centuries, cartographers and mathematicians have developed a multitude of different methods to project the earth onto a flat surface ({numref}`en_examples_projections_IBIS`). However, it is never possible to correctly represent the world on a flat surface (see the video above). Every projection distorts either the length between two points, the angles between two lines (directions), or the size of an area. A projection can only correctly represent one of these three dimensions. This means, that depending on the projection method, your world map will not represent the size, angles, or distances correctly. 
 
-```{figure} /fig/en_examples_projections_IBIS.png
+:::{figure} /fig/en_examples_projections_IBIS.png
 ---
 width: 700px
 align: center
 name: en_examples_projections_IBIS
 ---
 Examples for Projections (Source:Unknown. This figure is included for illustrative purposes only and is not subject to the Creative Commons license of this platform).
-```
+:::
 
 Every projection has its use case. For example, the Mercator projection displays the angles between to points correctly. This was used extensively during the seafaring age without satellites, as ships could navigate to a destination by following a straight line on a map. For example, the Mercator projection displays road intersections correctly: a road that crosses another road at a right angle, will be displayed as such on a mercator projection. This is especially useful when navigating. The shape of an area remains correct, since the angles between each line stay true. However, if you increase the scale of the map, the size and distances get distorted dramatically (see figure below). Furthermore, the further away from the equator you get, the more distortion you get.
 
-```{note} The True Size of
+:::{note} The True Size of
 The mercator projection is famous for distorting the size of different countries. You can check the true size in comparison to different placements on the map on [TheTrueSize.com website](https://www.thetruesize.com).A popular example is Greenland in comparison with Africa, which seem on the map to be about the same size, but in reality Africa is a lot bigger.
-```
+:::
 
 
-```{figure} /fig/en_greenland_africa.png
+:::{figure} /fig/en_greenland_africa.png
 ---
 width: 600px
 align: center
 name: en_greenland_africa
 ---
 Comparison Greenland - Africa (Source: [The True Size of](https://www.thetruesize.com/#?borders=1~!MTYwODM1MTk.MzkyNDUyNg*MjY5NjM4Mzg(MTA1MjgyOTE~!CONTIGUOUS_US*MTAwMjQwNzU.MjUwMjM1MTc(MTc1)MQ~!IN*NTI2NDA1MQ.Nzg2MzQyMQ)MA~!CN*OTkyMTY5Nw.NzMxNDcwNQ(MjI1)Mg)).
-```
+:::
 
 
 ## How to choose an appropriate projected coordinate system
@@ -52,41 +52,41 @@ The project CRS is displayed on the bottom rightcorner of the [QGIS interface](h
 To change the CRS of your data and project, follow the steps explained below. The default CRS/EPSG code of every QGIS project is the World Geodetic System 84 
 (EPSG: 4326). This CRS is optimized for world maps and therefore is not ideal for most humanitarian applications, as we need region-specific projections that provide the least distortion on the scale we wish to represent. 
 
-```{Tip}
+:::{Tip}
 Choose the projection according to your area of interest. There are special CRS that have been created to reduce the distortion and inaccuracy of projections for different regions on earth. You can find all the projections and their CRS codes on [EPSG.io](http://epsg.io). 
-```
+:::
 
 Look at the following images and pay attention to how the different Coordinate Reference Systems change and distort the world map. 
 
-```{figure} /fig/world_mercator_tissots.png
+:::{figure} /fig/world_mercator_tissots.png
 ---
 width: 500 px
 name: world_mercator_tissot
 ---
 The Mercator Projection (EPSG:54004) (Source: HeiGIT).
-```
+:::
 
 Notice how the shape of the circle stays the same. Out of this, we can conclude that the angles stay the same. However, the circles get bigger the further away they are from the equator, and the distance between these circles change the further they get from the equator. Therefore, we can conclude that the distances and sizes are being distorted with the mercator projection. The strength of the Mercator projection is that it conserves the angles between two lines. We can see this because the circles stay perfectly circular the further they are from the equator.
 
 
-```{figure} /fig/WGS_84_tissots.png
+:::{figure} /fig/WGS_84_tissots.png
 ---
 name: WGS_84_tissots
 width: 500 px
 ---
 The World Geodetic System 1984 (EPSG:4326) (Source: HeiGIT).
-```
+:::
 
 The WGS 84 is a CRS which consists of an ellipsoid that closely resembles the shape of the earth. Instead of metrical units of measurements, it uses angular degrees (latitude and longitude). The shape of the Tissot circles is undistorted near the equator, but becomes elongated on the East-West axis the further it gets away from the equator. Unlike the Mercator projection, there is no distortion in the North-South direction. As the circles become distorted, we can deduce that this CRS distorts the angles.
 
 
-```{figure} /fig/World_equidistant_cylindrical_tissots.png
+:::{figure} /fig/World_equidistant_cylindrical_tissots.png
 ---
 name: World_equidistant_cylindrical_tissots
 width: 500 px
 ---
 The World Equidistant Cylindrical Projection (EPSG:54002) (Source: HeiGIT).
-```
+:::
 
 The World Equidistant cylindrical CRS is equidistant (not distorting the length) along any meridian (circles of longitude; North to South), and along the two standard parallels. The shape, scale and area distort the further they are away from the standard parallels. 
 
@@ -100,13 +100,13 @@ This table shows an overview on which projections to use for which needed charac
 
 Another very important consideration when choosing the Coordinate reference system is that, depending on the ellipsoid and the method used to project the same point can be located at different locations (see {numref}`wrong_CRS`). In the figure below, the same point is encoded in 3 different reference systems.  
 
-```{figure} /fig/wrong_CRS.png
+:::{figure} /fig/wrong_CRS.png
 ---
 name: wrong_CRS
 width: 750 px
 ---
 The same point in three different reference systems (Source: HeiGIT).
-```
+:::
 
 ### Metric and Geographic Coordinate Reference Systems
 
@@ -119,46 +119,46 @@ There are two different types of Coordinate Reference System: __Geographic__ or 
    - __Advantages__: Since it uses a flat plane, you can calculate distances, areas, and angles accurately.
    - __Disadvantages__: A given projected CRS is usually optimized for a particular region. Using it outside its intended area can lead to significant distortions in distance, area, and shape.
 
-```{figure} /fig/Problem_distance_geographic_coords.png
+:::{figure} /fig/Problem_distance_geographic_coords.png
 ---
 name: problem_distance_geographic_coords
 width: 600 px
 ---
 A geographic representation of the globe. The distance between the meridians converges towards the north and south pole (Source: HeiGIT).
-```
+:::
 
-```{caution}
+:::{caution}
 
 When processing geodata, QGIS always uses the units of measurements of the layer that you are processing. This means that if you want to calculate, for example, the distance in kilometers, the layer must be in a metric CRS. You can check the units of measurements of any given layer by <kbd>Right clicking</kbd> on the layer in the layer panel > `Properties` > `Information` > `Coordinate Reference System (CRS)`. 
 
-```
+:::
 
 ### Local and Global CRS
 
 
-```{figure} /fig/en_local_crs.png
+:::{figure} /fig/en_local_crs.png
 ---
 width: 800px
 name: en_local_crs
 align: center
 ---
 Local and global coordinate reference systems (CRS) (Source: British Red Cross).
-```
+:::
 
 As you can see, smaller regions look skewed and distorted in a global CRS. For smaller areas local projections should be used, since they give a more accurate display. However, local projections heavily distort the map on a global level. 
 
 ### How to check and change the project coordinate reference system
 
-```{admonition} Now it's your turn!
+:::{admonition} Now it's your turn!
 :class: note
 
 Understanding projections and coordinate reference systems is not easy. The next steps can be followed with any geodata layer in your QGIS project. 
 
-```
+:::
 
-```{Note}
+:::{Note}
 One of the first things you do when starting a new QGIS project should be to check and adjust the CRS/EPSG code to the region or area you are working on. If you are working on a map showing the entire globe, global projection such as the mercator projection should be used. If you are working on a smaller region, such as a continent, a country, or even smaller regions, __you should always use a local CRS, to avoid inaccuracies__. If you don't know which CRS to use, you can search for a suitable one on EPSG.IO. Simply enter the name of your region and take a look at the available options. Make sure that the CRS you choose is in the correct unit of measurements (metres, feet, or degrees)
-```
+:::
 
 
 1. Open a QGIS project
@@ -178,9 +178,9 @@ One of the first things you do when starting a new QGIS project should be to che
 
 The coordinate reference system of your QGIS project determines how QGIS displays the information. However, layers and datasets have their own CRS. This can be seen in the metadata, or layer properties of the dataset. The layer CRS refers to the coordinate system of the features or items in the dataset. The same coordinates in two different coordinate reference systems do not refer to the same location on earth. This is because of the distortion of distance and area.
 
-```{note}
+:::{note}
 The first thing you should do when loading a new layer or dataset into your QGIS project, should be to check the coordinate reference system of the dataset, and reproject it to the project CRS if necessary. This way, you ensure consistency in your project and that the geoobjects in your layer are at the right locations. Otherwise, you will create false results.
-```
+:::
 
 
 

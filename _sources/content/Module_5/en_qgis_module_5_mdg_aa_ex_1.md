@@ -120,17 +120,17 @@ The folder contains the whole [standard folder structure](/content/Wiki/en_qgis_
 
 
 
-:::{card} 
+::::{card} 
 __Context__
 ^^^
 
-```{figure} /fig/IFRC-icons-colour_SURGE.png
+:::{figure} /fig/IFRC-icons-colour_SURGE.png
 ---
 width: 100px
 align: right
 name: IFRC-icons-colour_SURGE
 ---
-```
+:::
 
 **Aina** is the GIS expert at the **Croix-Rouge Malagasy (CRM)**. With the cyclone season approaching, she knows that time is of the essence once a storm is forecasted. Every hour counts when it comes to protecting communities at risk.
 
@@ -139,15 +139,15 @@ This year, Aina wants to be one step ahead. Instead of manually analyzing cyclon
 **Her goal:**  
 > Build a workflow that automatically estimates exposed populations and infrastructure at risk.
 
-:::
+::::
 
-```{figure} /fig/Module_7/en_ex_m7_cylone_automatisation.drawio.png
+:::{figure} /fig/Module_7/en_ex_m7_cylone_automatisation.drawio.png
 ---
 name: Task_1_workflow
 width: 750 px
 ---
 
-```
+:::
 
 # Tasks: 
 
@@ -170,17 +170,17 @@ You will manually buffer the cyclone track, clip the population raster, and calc
    - Input: `example_Harald_2025_Track`
    - Target CRS: `EPSG:29738` or another meter-based CRS appropriate for Madagascar.
    - Save the result in the `temp` folder as: **`Harald_Track_Reprojected`**
-```{figure} /fig/fr_MDG_AA_reproject_cyclon_track.PNG
+:::{figure} /fig/fr_MDG_AA_reproject_cyclon_track.PNG
 ---
 width: 600px
 align: center
 ---
 Reproject the cyclone track
-```
+:::
 
-```{Attention}
+:::{Attention}
 Buffer distances must be calculated in meters. Many datasets (like GeoJSON cyclone tracks) use geographic coordinate systems like EPSG:4326, which measure in degrees — not meters. To correctly calculate a 200 km buffer, we must first reproject the track into a projected CRS that uses meters.
-```
+:::
 5. **Buffer the cyclone track**:
    - In the **Processing Toolbox**, search for `Buffer`.
    - Input: `Harald_Track_Reprojected`
@@ -188,35 +188,35 @@ Buffer distances must be calculated in meters. Many datasets (like GeoJSON cyclo
    - Segments: Leave default (5)
    - Dissolve: `Yes`
    - Save output in the `temp` folder as: **`Harald_Buffer_200km`**
-```{figure} /fig/fr_MDG_AA_cyclon_track_buffer.PNG
+:::{figure} /fig/fr_MDG_AA_cyclon_track_buffer.PNG
 ---
 width: 600px
 align: center
 ---
 Buffering the cyclone track
-```
+:::
 
-:::{dropdown} Intermediate Result: Buffer
-```{figure} /fig/fr_MDG_AA_intermediate_result_cyclon_track_buffer.PNG
+::::{dropdown} Intermediate Result: Buffer
+:::{figure} /fig/fr_MDG_AA_intermediate_result_cyclon_track_buffer.PNG
 ---
 width: 600px
 align: center
 ---
 Les résultats intermédiaires doivent montrer la trajectoire du cyclone et la zone tampon de 200 kilomètres autour de celui-ci. La zone tampon doit être une seule entité.
-```
 :::
+::::
 6. **Reproject the buffer back to EPSG:4326 (to match the raster's CRS):**
    - In the Processing Toolbox, search for Reproject Layer.
    - Input: Harald_Buffer_200km_29738
    - Target CRS: EPSG:4326 – WGS 84
    - Save the output in the temp folder as: Harald_Buffer_200km_4326
-```{figure} /fig/fr_MDG_AA_reproject_cyclon_buffer.PNG
+:::{figure} /fig/fr_MDG_AA_reproject_cyclon_buffer.PNG
 ---
 width: 600px
 align: center
 ---
 Reprojecting the cyclone buffer
-```
+:::
    
 7. **Load the administrative boundaries**:
    - File: `mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg`
@@ -229,22 +229,22 @@ Reprojecting the cyclone buffer
    - Input raster: `MDG_WorldPop_2020_constrained`
    - Mask layer: `Harald_Buffer_200km`
    - Save output in the `temp` folder as: **`Harald_Pop_Clip`**
-```{figure} /fig/fr_MDG_AA_clip_pop_raster.PNG
+:::{figure} /fig/fr_MDG_AA_clip_pop_raster.PNG
 ---
 width: 600px
 align: center
 ---
 Clipping the population raster with the cyclone buffer
-```
-:::{dropdown} Intermediate Result: Clip Population Raster Alyer
-```{figure} /fig/fr_MDG_AA_intermediate_result_clip_pop_raster.PNG
+:::
+::::{dropdown} Intermediate Result: Clip Population Raster Alyer
+:::{figure} /fig/fr_MDG_AA_intermediate_result_clip_pop_raster.PNG
 ---
 width: 600px
 align: center
 ---
 Intermediate Results
-```
 :::
+::::
 
 10. **Calculate total exposed population**:
    - In the **Processing Toolbox**, search for `Zonal Statistics`.
@@ -254,13 +254,13 @@ Intermediate Results
    - Field prefix: e.g., `exposed_population_`
    - Save the updated vector layer in the `result` folder as: **`Harald_Exposed_Populationg`**
    - The result will be a new column in the attribute table of the `mdg_admbnda_adm2_BNGRC_OCHA_201810312.gpkg` layer, showing the total population within the cyclone buffer per district.
-```{figure} /fig/fr_MDG_AA_pop_zonal_statistic.PNG
+:::{figure} /fig/fr_MDG_AA_pop_zonal_statistic.PNG
 ---
 width: 600px
 align: center
 ---
 Calculating the population exposed to the cyclone per district using the worldpop raster.
-```
+:::
    
 11. **Visualise the affected population by classifying the results**:
 Now that Aina has estimated the exposed population in each district, she wants to clearly show the differences across regions on the map.
@@ -274,26 +274,27 @@ To do this, we'll apply a **graduated classification** to the `Harald_Exposed_Po
 - Click `Classify` to generate the classification.
 - Click `Apply` and then `OK` to display the classified map.
 
-```{tip}
+:::{tip}
 You can adjust class boundaries or labels by double-clicking on each class entry.
-```
-```{figure} /fig/fr_MDG_AA_pop_graduadt_classification_exposed_population.PNG
+:::
+
+:::{figure} /fig/fr_MDG_AA_pop_graduadt_classification_exposed_population.PNG
 ---
 width: 600px
 align: center
 ---
 Classifying the exposed population into five classes.
-```
+:::
 
 # Results
 
 Your results should look something like this: 
 
-```{figure} /fig/fr_MDG_AA_intermediate_result_visualisation_exposed_population.PNG
+:::{figure} /fig/fr_MDG_AA_intermediate_result_visualisation_exposed_population.PNG
 ---
 width: 600px
 name: the_world_result
 align: center
 ---
 Visualising the 5 classes. 
-```
+:::

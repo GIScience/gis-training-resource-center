@@ -20,13 +20,13 @@ __To adjust the style of a layer...__
 - Click `Apply` to put your adjustment into effect.
 - Click `OK` to close the window.
 
-```{figure} /fig/Single_symbol_classify.png
+:::{figure} /fig/Single_symbol_classify.png
 ---
 width: 900px
 name: Single_symbol_classify_wiki
 align: center
 ---
-```
+:::
 
 % EDIT: The green numbers are not so easy to read. Switch to red numbers.
 

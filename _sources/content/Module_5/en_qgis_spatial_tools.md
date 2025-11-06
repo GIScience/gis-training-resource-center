@@ -35,13 +35,13 @@ incorporate additional information from  layers, which can help us understand a 
 - __Centroids__ create points in the geometric centre of the geometries of a layer. This is especially useful when creating graduated symbol maps
 
 
-```{figure} /fig/en_module5_spatial_geodataprocessing.PNG
+:::{figure} /fig/en_module5_spatial_geodataprocessing.PNG
 ---
 width: 750 px
 name: en_module5_spatial_geodataprocessing
 ---
 Different spatial geoprocessing tools. Source: Adapted from [Saylor Academy](https://saylordotorg.github.io/text_essentials-of-geographic-information-systems/s11-geospatial-analysis-i-vector-o.html)
-```
+:::
 
 In this chapter, we will first explore __spatial joins__. Spatial joins, for example, allow us to import attributes from one layer to another on the basis of their location in relation to geofeatures in another layer. These Spatial relationships can also be used to select features of a layer. Furthermore, we will go over the spatial processing tools __buffer__, __clip__, and __dissolve__. These operations allow us to combine geometries from two layers in various ways (see {numref}`en_module5_spatial_geodataprocessing`).
 
@@ -68,14 +68,13 @@ __Humanitarian Example:__
 
 *The resulting map could look something like this:* 
 
-```{figure} /fig/en_flood_damage_assessement_libya.png
+:::{figure} /fig/en_flood_damage_assessement_libya.png
 ---
 name: en_flood_damage_assessement_libya
 width: 450 px
 ---
 A building footprint layer combined with a flood extent layer. By joining them, we can assess which houses are at risk to be damaged by flooding (Source: IFRC).
-```
-
+:::
 
 ::::
 
@@ -120,58 +119,58 @@ Returns geometries that have some, but not all, interior points in common and th
 
 ::::
 
-```{figure} /fig/en_select_by_location.png
+:::{figure} /fig/en_select_by_location.png
 ---
 width: 600 px
 name: en_select_by_location
 ---
 Looking for spatial relations between layers <br /> (Source: [QGIS Documentation](https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html?highlight=join%20attributes%20location), Version 3.28)
-```
+:::
 
 ### Exercise: Performing a spatial join
 
 
-```{admonition} Now it's your turn!
+:::{admonition} Now it's your turn!
 :class: tip
 
 Practical exercise is crucial to understand how GIS, and QGIS, works. You can follow along by downloading the necessary data.
 
-```
+:::
 
 In the example above ({numref}`en_spatial_join_example`), we have a dataset containing the healthsites by healthsite.ioand a dataset with the administrative boundaries (adm2) of Nigeria. We want to know in which state each healthsite is located. To do this, we need to use the tool "Join Attributes by Location".
 
-```{figure} /fig/en_spatial_join_example.png
+:::{figure} /fig/en_spatial_join_example.png
 ---
 name: en_spatial_join_example
 width: 400 px
 ---
 An example of a situation where you will use a spatial join (Source: BRC)
-```
+:::
 
 ::::{margin}
 
-```{tip}
+:::{tip}
 You can find and activate the processing toolbox panel by navigating to `View` > `Panels` > `Processing Toolbox`. It should appear on the right side of your screen.
-```
+:::
 
 ::::
 
-:::{dropdown} __Tool:__ Join attributes by location
+::::{dropdown} __Tool:__ Join attributes by location
 
 This tool takes two input layers and creates a new vector layer which has the attributes of both layers in its attribute table.
 - The first input layer (see "Join to features in" in {numref}`en_spatial_join_1`) dictates which geometric features will be copied to the new layer.
 - The second input layer (see "By comparing to" in {numref}`en_spatial_join_1`) dictates the attributes that will be added to the new layer on top of the attributes of the first input layer. You can select which of these attributes should be transferred to the new layer. 
 
 
-```{figure} /fig/en_spatial_join_1.PNG
+:::{figure} /fig/en_spatial_join_1.PNG
 ---
 width: 450 px
 name: en_spatial_join_1
 ---
 The "Join Attributes by Location"-tool in QGIS 3.36.
-```
-
 :::
+
+::::
 
 1. Download the necessary datasets from HDX 
     - [nigeria-healthsites-shp](https://data.humdata.org/dataset/nigeria-healthsites)
@@ -191,13 +190,13 @@ The "Join Attributes by Location"-tool in QGIS 3.36.
 
 Congratulations, we now have added the information about the administrative region to the health facilities layer! We can symbolise the joined layer with the categorised symbology to verify if it worked (see {numref}`spatial_join_ex1_results_categorised`). Note that the points in the original dataset which were outside of Nigeria's border have been discarded as they could not be joined.
 
-```{figure} /fig/spatial_join_ex1_results_categorised.png
+:::{figure} /fig/spatial_join_ex1_results_categorised.png
 ---
 name: spatial_join_ex1_results_categorised
 width: 500 px
 ---
 The different colours for the points indicate that they are located in a different state (adm2).
-```
+:::
 
 
 ### More spatial join-tools in QGIS
@@ -213,13 +212,13 @@ By default, QGIS provides three different tools to perform spatial joins.
 
 This tool is similar to the "Join Attributes by Location"-tool. However, on top of adding the attributes from one layer to another, this algorithm also calculates statistical summaries for the values from matching features in the second layer. These summaries include a wide range of options, such as __minimum and maximum values__, __mean values__, as well as __counts__, __sums__, __standard deviation__, and more. 
 
-```{figure} /fig/en_spatial_join_3.PNG
+:::{figure} /fig/en_spatial_join_3.PNG
 ---
 width: 450 px
 name: en_spatial_join_3
 ---
 Screenshot of the tool Join attributes by location (summary) in QGIS 3.36
-```
+:::
 
 ::::
 
@@ -228,13 +227,13 @@ Screenshot of the tool Join attributes by location (summary) in QGIS 3.36
 This type of spatial join is similar to the other two joins but the joining of features occurs by __identifying the closest features__ from each of these layers. Furthermore, if a maximum distance is specified, only the features that are within this designated distance will be considered as suitable matches for the joining process.
 
 
-```{figure} /fig/en_spatial_join_2.PNG
+:::{figure} /fig/en_spatial_join_2.PNG
 ---
 width: 450 px
 name: en_spatial_join_2
 ---
 Screenshot of the tool Join attributes by nearest in QGIS 3.36
-```
+:::
 
 ::::
 
@@ -264,9 +263,9 @@ In the aftermath of flooding events, data on the affected population and the ext
 3. Once completed, you will have access to information on the __total affected population__ and __flooded areas__ for the entire state of Unity.
 
 
-````{dropdown} Solution: Calculate sum of affected population and flooded area for the Area of interest
+:::{dropdown} Solution: Calculate sum of affected population and flooded area for the Area of interest
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_spatial_join.mp4"></video>
-````
+:::
 
 ## Self-Assessment Questions
 

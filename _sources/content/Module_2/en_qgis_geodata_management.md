@@ -29,14 +29,14 @@ A standard folder structure has two principal advantages:
 1. If we share the whole project folder, we can expect the project to run without problems on a different computer
 2. The folder structure supports the proper organisation of project data and helps ensure the QGIS project will work as intended
 
-```{figure} /fig/standard_folder_structure_new_2025.drawio.png
+:::{figure} /fig/standard_folder_structure_new_2025.drawio.png
 ---
 width: 600px
 align: center
 name: standard_folder_structure_new_2025
 ---
 Standard folder structure. Source: HeiGIT
-```
+:::
 
 ### Naming Geodata
 

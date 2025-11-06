@@ -146,28 +146,28 @@ Estimate_Exposed_Population_Health_Education
         Education Facilities
         ``` 
        - Set **Geometry Type** to `Point`
-::::{tab-set}
+:::::{tab-set}
 
-:::{tab-item} Model Input: Health Facilities
-```{figure} /fig/fr_MDG_AA_model_input_health_facilities.PNG
+::::{tab-item} Model Input: Health Facilities
+:::{figure} /fig/fr_MDG_AA_model_input_health_facilities.PNG
 ---
 width: 300px
 name: the_world_result
 align: center
 ---
 Définir une nouvelle entrée de modèle : couche vectorielle de points représentant les établissements de santé
-```
 :::
-:::{tab-item} Model Input: Education Facilities
-```{figure} /fig/fr_MDG_AA_model_input_education_facilities.PNG
+::::
+::::{tab-item} Model Input: Education Facilities
+:::{figure} /fig/fr_MDG_AA_model_input_education_facilities.PNG
 ---
 width: 300px
 align: center
 ---
 Définir une nouvelle entrée de modèle : couche vectorielle de points représentant les établissements d'éducation
-```
 :::
 ::::
+:::::
 3. **Count All Health Facilities per Admin 2**  
    - From the **Algorithms** panel, search for **Count Points in Polygon**.
    - Configuration:
@@ -179,13 +179,13 @@ Définir une nouvelle entrée de modèle : couche vectorielle de points représe
       Count_health_total
       ```
      - Leave output as **Model Output**
-```{figure} /fig/fr_MDG_AA_model_count_points_HF_admin2.PNG
+:::{figure} /fig/fr_MDG_AA_model_count_points_HF_admin2.PNG
 ---
 width: 600px
 align: center
 ---
 Configuration de l'opération : compter le nombre d'établissements de santé dans chaque district.
-```    
+:::    
 4. **Count All Education Facilities per Admin 2**  
    - Add another **Count Points in Polygon** step.
    - Configuration:
@@ -197,13 +197,13 @@ Configuration de l'opération : compter le nombre d'établissements de santé da
       count_education_total
       ```
      - Leave output as **Model Output**
-```{figure} /fig/fr_MDG_AA_model_count_points_EF_admin2.PNG
+:::{figure} /fig/fr_MDG_AA_model_count_points_EF_admin2.PNG
 ---
 width: 600px
 align: center
 ---
 Configuration de l'opération : compter le nombre d'établissements scolaires dans chaque district.
-```
+:::
 5. **Intersect Health Facilities with Cyclone Buffer**  
    - From the **Algorithms** panel, search for **Intersection**.
    - In the configuration window:
@@ -215,13 +215,13 @@ Configuration de l'opération : compter le nombre d'établissements scolaires da
      - **Overlay layer**: buffered cyclone zone (use “Reprojected to EPSG:4326” from **Algorithm Output**)
      - Leave output as **Model Output** 
    - Click **OK**
-```{figure} /fig/fr_MDG_AA_model_clip_intersect_HF_cyclone_buffer.PNG
+:::{figure} /fig/fr_MDG_AA_model_clip_intersect_HF_cyclone_buffer.PNG
 ---
 width: 600px
 align: center
 ---
 Configuration de l'opération : intersecter les établissements de santé avec la zone d'impact du cyclone.
-```
+:::
 6. **Intersect Education Facilities with Cyclone Buffer**  
    - Add another **Intersection** algorithm.
    - Configuration:
@@ -233,13 +233,13 @@ Configuration de l'opération : intersecter les établissements de santé avec l
      - **Overlay layer**: buffered cyclone zone (use “Reprojected to EPSG:4326” from **Algorithm Output**)
      - Leave output as **Model Output**
    - Click **OK**
-```{figure} /fig/fr_MDG_AA_model_clip_intersect_EF_cyclone_buffer.PNG
+:::{figure} /fig/fr_MDG_AA_model_clip_intersect_EF_cyclone_buffer.PNG
 ---
 width: 600px
 align: center
 ---
 Configuration de l'opération : intersecter les établissements de education avec la zone d'impact du cyclone.
-```
+:::
 7. **Count Affected Health Facilities per Admin 2**  
    - Add **Count Points in Polygon**
    - Add a description: `Compter les établissements de santé touchés par district`
@@ -254,13 +254,13 @@ Configuration de l'opération : intersecter les établissements de education ave
        ```
        sum_exposed_health
        ```  
-```{figure} /fig/fr_MDG_AA_model_count_points_HF_affected_admin2.PNG
+:::{figure} /fig/fr_MDG_AA_model_count_points_HF_affected_admin2.PNG
 ---
 width: 600px
 align: center
 ---
 Configuration de l'opération : compter les établissements de santé touchés par district.
-```
+:::
 8. **Count Affected Education Facilities per Admin 2**  
    - Add **Count Points in Polygon**
    - Add a description: `Compter les établissements education touchés par district`
@@ -275,13 +275,13 @@ Configuration de l'opération : compter les établissements de santé touchés p
        ```
        sum_exposed_education
        ```  
-```{figure} /fig/fr_MDG_AA_model_count_points_EF_affected_admin2.PNG
+:::{figure} /fig/fr_MDG_AA_model_count_points_EF_affected_admin2.PNG
 ---
 width: 600px
 align: center
 ---
 Configuration de l'opération : compter les établissements de santé touchés par district.
-```
+:::
 9. **Calculate percentage of affected Health Facilities**
 To compute the percentage of affected health sites per administrative area, we will use the **Field Calculator**:
 - Add the  **Field Calculator**:
@@ -309,13 +309,13 @@ To compute the percentage of affected health sites per administrative area, we w
    ```
    admin2_health_affected
    ```
-```{figure} /fig/fr_MDG_AA_model_field_calc_pct_health_exposed.PNG
+:::{figure} /fig/fr_MDG_AA_model_field_calc_pct_health_exposed.PNG
 ---
 width: 600px
 align: center
 ---
 Configuration de l’opération : calculer le pourcentage d’établissements de santé touchés par district.
-```
+:::
 10. **Calculate percentage of affected Education Facilities**
 To compute the percentage of affected education sites per administrative area, we will use the **Field Calculator**:  
 - Add the **Field Calculator**:  
@@ -343,13 +343,13 @@ To compute the percentage of affected education sites per administrative area, w
      ```
      admin2_education_affected
      ```
-```{figure} /fig/fr_MDG_AA_model_field_calc_pct_education_exposed.PNG
+:::{figure} /fig/fr_MDG_AA_model_field_calc_pct_education_exposed.PNG
 ---
 width: 600px
 align: center
 ---
 Configuration de l’opération : calculer le pourcentage d’établissements d’éducation touchés par district.
-```
+:::
 11. **Validate and Save Your Extended Model**  
    - Click the ✔️ **Validate Model** button to check for errors.
    - Save again to:  
@@ -383,36 +383,36 @@ Configuration de l’opération : calculer le pourcentage d’établissements d�
         ```
    - Click **Run** to execute the full model.
 
-::::{tab-set}
+:::::{tab-set}
 
-:::{tab-item} Graphic Modler
+::::{tab-item} Graphic Modler
 
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model.PNG
+:::{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model.PNG
 ---
 width: 600px
 align: center
 ---
 Vue d’ensemble du Modèle Graphique de la tâche 3 montrant tous les algorithmes connectés et les sorties définies.
-```
 :::
-:::{tab-item} Run Model Configuration
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_run_configurations.PNG
+::::
+::::{tab-item} Run Model Configuration
+:::{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_run_configurations.PNG
 ---
 width: 600px
 align: center
 ---
 Configuration des paramètres pour exécuter le modèle de la tâche 3 avec toutes les couches d’entrée requises.
-```
 :::
-:::{tab-item} Model Output
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model_results_AT.PNG
+::::
+::::{tab-item} Model Output
+:::{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model_results_AT.PNG
 ---
 width: 600px
 align: center
 ---
 Résultats du modèle de la tâche 3 affichés dans QGIS, y compris les pourcentages d’établissements de santé et d’éducation touchés par district.
-```
 :::
 ::::
+:::::
 
 ---

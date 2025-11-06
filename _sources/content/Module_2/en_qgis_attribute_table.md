@@ -11,14 +11,14 @@
 Each vector layer consists of geometric features (points, lines or polygons) and an __attribute table__ ({numref}`en_vector_data_overview`). The attribute table contains information on each feature in the layer. The information is stored in rows and columns in the attribute table. Each __row__ in the table represents a __feature__, while __columns__ store __attributes__ of that feature. You can use the attribute table to search, sort, filter, edit and select data. 
 
 
-```{figure} /fig/en_vector_data_overview.png
+:::{figure} /fig/en_vector_data_overview.png
 ---
 width: 600px
 align: center
 name: en_vector_data_overview
 ---
 Vector Data overview (Source: HeiGIT).
-```
+:::
 
 :::{admonition} Now it's your turn!
 :class: note
@@ -43,31 +43,31 @@ You can also use the shortcut <kbd>F6</kbd> (in some cases <kbd>Fn</kbd> + <kbd>
 
 1. Right click on a layer in the Layers panel and select `Open Attribute Table` ({numref}`en_attributetable_right_click`). 
 
-```{figure} /fig/en_attributetable_right_click.png
+:::{figure} /fig/en_attributetable_right_click.png
 ---
 height: 500px
 align: center
 name: en_attributetable_right_click
 ---
 Opening the attribute table via right-click in QGIS 3.36
-```
+:::
 
 2. Select a layer in the Layers panel and click on the attribute table symbol in the toolbar ({numref}`en_attributetable_top_right`). 
 
-```{note} 
+:::{note} 
 
 If you have multiple layers, only the attribute table of the layer currently selected in the layer panel will open. 
 
-```
+:::
 
-```{figure} /fig/en_attributetable_top_right.png
+:::{figure} /fig/en_attributetable_top_right.png
 ---
 height: 500px 
 align: center
 name: en_attributetable_top_right
 ---
 Opening the attribute table in QGIS 3.36
-```
+:::
 
 :::{dropdown} Buttons of the attribute table
 :open:
@@ -109,30 +109,31 @@ You can sort data in the attribute table by clicking on a column header. Text da
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_show_attribute_table.mp4"></video>
 
-::::{grid} 2
-:::{grid-item-card} 
+:::::{grid} 2
+::::{grid-item-card} 
 
-```{figure} /fig/en_ascending.png
+:::{figure} /fig/en_ascending.png
 ---
 width: 300px
 name: en_ascending
 ---
 Attribute table sorted ascendingly. 
-```
-
 :::
 
-:::{grid-item-card}
+::::
 
-```{figure} /fig/en_descending.png
+::::{grid-item-card}
+
+:::{figure} /fig/en_descending.png
 ---
 width: 300px
 name: en_descending
 ---
 Attribute table sorted descendingly.  
-```
+:::
 
 ::::
+:::::
 
 ## Zoom in on a specific feature via attribute table
 
@@ -170,23 +171,23 @@ Now that you know how to select features, you can zoom onto your area of
 interest. To do so you can click on the symbol on the toolbar or right click 
 on the layer and select `Zoom to Selection` ({numref}`en_zoom_to_selection_1`).
 
-```{figure} /fig/en_zoom_to_selection_1.png
+:::{figure} /fig/en_zoom_to_selection_1.png
 ---
 width: 800px
 align: center
 name: en_zoom_to_selection_1
 ---
 Screenshot of how to zoom to Selection on the top.
-```
+:::
 
-```{figure} /fig/en_zoom_to_selection_2.png
+:::{figure} /fig/en_zoom_to_selection_2.png
 ---
 width: 450px
 align: center
 name: en_zoom_to_selection_2
 ---
 Screenshot of how to zoom to Selection by clicking right.
-```
+:::
 
 ## Save only selected features as a new file
 
@@ -194,25 +195,25 @@ After you have selected your data, you might want to proceed with only the
 selection. You can save your selection as a new layer. To do so right click on the 
 layer - `Export` -> `Save only selected features`
 
-```{figure} /fig/en_save_selection.png
+:::{figure} /fig/en_save_selection.png
 ---
 height: 500px
 align: center
 name: en_save_selection
 ---
 Screenshot of how to save only selected features.
-```
+:::
 
 Now, you can choose the format, layer name and CRS.
 
 <!--ADD IMAGE-->
 
-```{tip}
+:::{tip}
 
 We recommend using GeoPackage (.gpkg) instead of shapefile (.shp) in most cases. 
 If you are unsure which format is most appropriate, check out the [geodata types](/content/Wiki/en_qgis_geodata_types_wiki.md) page on the wiki.
 
-```
+:::
 
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_export_wiki.mp4"></video>

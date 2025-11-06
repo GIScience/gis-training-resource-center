@@ -125,15 +125,15 @@ Make sure to __unzip__ the exercise folder before beginning the tasks. Otherwise
 
 3. Load the shape file `World_countries_generalized.shp` into your project by drag and drop ([Wiki Video](/content/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). Or click on `Layer`-> `Add Layer`-> `Add Vector Layer`. Click on the three points ![](/fig/Three_points.png) and navigate to "World_countries__generalized". Select the file and click `Open`. Back in QGIS click `Add` ([Wiki Video](/content/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab)).
 
-    ``` {Attention}
+    :::{Attention}
     With both methods, you need to select the file with the ending `.shp`! A [shapefile consists of several files](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept.html#shapefile-structure) that are referring to each other. The file that holds the geometry information is the file ending with `.shp`.
-    ```
+    :::
 
 4. Load the GeoPackage file `global_power_plant_database_nuclear.gpkg` into the QGIS project. You can use one of the methods used in the previous step: Either drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)) the file or click on `Layer`-> `Add Layer`-> `Add Vector Layer`. Click on the three points ![](/fig/Three_points.png) and navigate to `/data/input/`. Select the file and click `Open`. Back in QGIS click `Add`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)).
 
-    ```{Note}
+    :::{Note}
     GeoPackage files can contain multiple files, and even whole QGIS projects. When you load such a file in QGIS, a window will appear in which you have to select the files you want to load in your QGIS project.
-    ```
+    :::
 
 5. Next, we want to load the file `Significant_earthquake_data.txt` into QGIS. Since this is vector data in text format, we need to follow specific steps ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-csv-data-in-qgis)).
     * Click on `Layer`-> `Add Layer`-> `Add Delimited text Layer`. Click on the three points ![](/fig/Three_points.png) and navigate to `Significant_earthquake_data.txt` in the `data/input/`-subfolder. Select the file and click `Open`.
@@ -141,19 +141,19 @@ Make sure to __unzip__ the exercise folder before beginning the tasks. Otherwise
     * Open the dropdown menu `Geometry definition`. Make sure the option `Point coordinates` is checked. Furthermore, select for `X field` “LONGITUDE” and for `Y field` “LATITUDE”.
     * Select the coordinate reference system (CRS) "EPSG:4326-WGS 84".
     * Click `Add`.
-    ```{Note}
+    :::{Note}
     When loading vector data in text format like .csv or .txt in QGIS, these data has to have latitude and longitude columns. 
     * `X field` =“LONGITUDE” 
     * `Y field` = “LATITUDE”.
-    ```
+    :::
 
-    ```{figure} /fig/en_ex_The_world_add_text_layer_import.png
+    :::{figure} /fig/en_ex_The_world_add_text_layer_import.png
     ---
     width: 600px
     name: ex5_import_text_layer
     align: center
     ---
-    ```
+    :::
 
 6. In the layer panel on the left, arrange the three layers in a practical order. Remember the [Layer Concept](/content/Wiki/en_qgis_layer_concept_wiki.md). The countries-layer should sit below the earthquake and power plant layers. 
 
@@ -173,22 +173,22 @@ You can also move the map by clicking on the map canvas and holding <kbd>Space</
 7. Interact with the map and explore the data sets. Use the zoom tool and move the map. Where can you find a lot of earthquakes and where are most of the power plants located?
 
 ::::{margin}
-```{Tip}
+:::`{Tip}
 If you see `*` before the name of your project on the top left corner of QGIS this means there are unsaved changes in your project. Save your progress!
-```
+:::
 ::::
 
 8. Save your project by clicking on the ![](/fig/mActionFileSave.png) or use the hotkey combination <kbd>Ctrl</kbd> + <kbd>S</kbd>.
 
 9. Your results should look something like this: 
 
-```{figure} /fig/en_ex_The_world_result.png
+:::{figure} /fig/en_ex_The_world_result.png
 ---
 width: 600px
 name: the_world_result
 align: center
 ---
-```
+:::
 
 
 

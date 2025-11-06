@@ -70,22 +70,23 @@ Search for it in the [OSM wiki](https://wiki.openstreetmap.org/wiki/Tags) and/or
 Either use the wizard by typing in *amenity=school in Heidelberg* or write your 
 own query (f. e. for your bounding box):  
 **Wizard:**
-```{figure} /fig/en_wizard_overpassturbo.png
+:::{figure} /fig/en_wizard_overpassturbo.png
 ---
 height: 250px
 align: center
 name: en_wizard_overpassturbo_wiki
 ---
 Screenshot of the Wizard in overpass turbo
-```
-```{figure} /fig/en_wizard_result.png
+:::
+
+:::{figure} /fig/en_wizard_result.png
 ---
 height: 250px
 align: center
 name: en_wizard_result_wiki
 ---
 Screenshot of the result
-```  
+:::  
 **Query:**
 ```sql
 [out:json];  
@@ -108,61 +109,61 @@ node ["key"="value"] (s, w, n, e);
          out;
 ```
 
-```{tip} 
+:::{tip} 
 For more information on the query language check out the [Language Guide](https://wiki.openstreetmap.org/wiki/Overpass_API/Language_Guide).
-```
+:::
 **3. Download the data**  
 One can export the results in various ways.
 
-::::{tab-set}
+:::::{tab-set}
 
-:::{tab-item} Data
+::::{tab-item} Data
 By exporting the data as f.e. GeoJSON you can later on import them in your QGIS 
 project.
 
-```{figure} /fig/en_overpass_turbo_data.png
+:::{figure} /fig/en_overpass_turbo_data.png
 ---
 height: 250px
 align: center
 name: en_overpass_turbo_data_wiki
 ---
 Screenshot of how to export data in overpassturbo
-```
-
 :::
 
-:::{tab-item} Map
+::::
+
+::::{tab-item} Map
 By exporting the query as map, you can share your current view as link or image.
 
-```{figure} /fig/en_overpass_turbo_map.png
+:::{figure} /fig/en_overpass_turbo_map.png
 ---
 height: 150px
 name: en_overpass_turbo_map_wiki
 align: center
 ---
 Screenshot of how to export map in overpassturbo
-```
 :::
+::::
 
-:::{tab-item} Query
+::::{tab-item} Query
 By exporting your query you can get the text or convert it to an OverpassXML or 
 OverpassQL formatted query.
 
-```{figure} /fig/en_overpass_turbo_query.png
+:::{figure} /fig/en_overpass_turbo_query.png
 ---
 height: 250px
 align: center
 name: en_overpass_turbo_query_wiki
 ---
 Screenshot of how to export query in overpassturbo
-```
 :::
-
 ::::
 
-```{tip} 
+:::::
+
+:::{tip} 
 For more information, check out the [wiki](https://wiki.openstreetmap.org/wiki/Overpass_turbo).
-```
+:::
 <!---
 ### Ohsome tools
 -->
