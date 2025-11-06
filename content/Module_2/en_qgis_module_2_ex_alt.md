@@ -160,7 +160,7 @@ Make sure to __unzip__ the exercise folder before beginning the tasks. Otherwise
 :::{figure} /fig/Module_2/en_m2_ex_5_interface_explanation.png
 ---
 name: en_m2_ex_5_interface_explanation
-with: 750 px
+width: 750 px
 ---
 :::
 

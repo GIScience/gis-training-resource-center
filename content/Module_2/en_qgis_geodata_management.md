@@ -48,7 +48,7 @@ There are some basic principles when it comes to naming geodata that you produce
 * Do not use blank spaces, use underscores `_`
 * Give layers meaningful names so that you can understand what they represent, even if they are a temporary/intermediate step in a workflow. 
 
-Below you can see an example of a workflow to process an admin boundary dataset ()`adm0`). The purpose of the intermediate steps is not clear because the layer names are not meaningful. 
+Below you can see an example of a workflow to process an admin boundary dataset (`adm0`). The purpose of the intermediate steps is not clear because the layer names are not meaningful. 
 
 `adm0 >> adm0_temp >> adm0_temp2 >> adm0_temp3 >> facilities_final`
 

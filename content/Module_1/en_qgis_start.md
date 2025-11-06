@@ -10,16 +10,16 @@
 
 ## Introducing QGIS
 
-```{figure} /fig/en_qgis_banner_website.png
+:::{figure} /fig/en_qgis_banner_website.png
 ---
 name: en_qgis_banner_website
 width: 300 px
 align: right
 ---
 [qgis.org](https://qgis.org/)
-```
+:::
 
-```{div} sd-text-justify
+:::{div} sd-text-justify
 - QGIS is an __open source geoinformation system software__. That means the source code is available for everyone, 
 making QGIS a free application. The entire source code can be viewed and downloaded on https://github.com/qgis/QGIS.
 - QGIS is a __desktop software__: that means you get a program that opens up on your computer as a window with buttons 
@@ -27,20 +27,20 @@ you can click, forms you can fill out to do tasks, and it's generally a visual i
 - You may __view, edit, capture and analyze spatial data or create printable maps__ with it. QGIS was created in 2002 
 and is a project of volunteers. And it is __constantly changing__.
 - QGIS is backed by a __large community of users__, so it’s easy to find solutions to technical issues by using QGIS forums, blogs, or sub-reddits. The official QGIS community can be found [here](https://qgis.org/en/site/forusers/support.html#support). Additionally, a list of helpful websites can be found on the [wiki here](/content/Wiki/en_qgis_common_errors_and_Issues.md).
-```
+:::
 
 
-```{note}
+:::{note}
 
 Keep in mind that as QGIS gets developed further, the interface and functions of QGIS are subject to changes. The material written for this platform is referring to QGIS Version 3.36. If the training material is no longer up to date, take a look at the [QGIS Documentation](https://docs.qgis.org/3.34/en/docs/index.html).
 
-```
+:::
 
-```{attention}
+:::{attention}
 
 QGIS is constantly changing, with new features being added. Because of this, the newer versions can have changes or even bugs (such as crashes). However, there is always a stable version available, which is supported for longer. This version is called __Long-term release (LTR)__. 
 
-```
+:::
 
 
 ## Working with QGIS
@@ -48,11 +48,11 @@ QGIS is constantly changing, with new features being added. Because of this, the
 
 In QGIS, you create projects where you visualise and manipulate geodata. There are three main workflows you will use: __data collection and creation, data processing, and data visualisation__. Geodata is loaded into QGIS projects which will be represented as layers on a map canvas.
 
-```{hint}
+:::{hint}
 
 There is a lot of complex math involved in the GIS, but QGIS takes care of it on it's own and you don't need to have a deep understanding of maths and algorithms to use QGIS. __As long as you can use Excel and Powerpoint, you shouldn't have trouble learning how to use QGIS__. 
 
-```
+:::
 
 ::::{tab-set}
 
@@ -106,13 +106,13 @@ A QGIS project file has the format ending `.qgz`.
 ::::
 1. On the start screen click on `Project Template`
 
-```{figure} /fig/en_project_template_BRC.png
+:::{figure} /fig/en_project_template_BRC.png
 ---
 height: 400
 name: en_project_template_BRC
 align: center
 ---
-```
+:::
 
 2. In the upper left corner click on `Project` -> ` New Project `
 
@@ -132,26 +132,26 @@ When you hover with your mouse cursor over icons, text will appear which explain
 :::
 ::::
 
-```{figure} /fig/en_QGIS_GUI.png
+:::{figure} /fig/en_QGIS_GUI.png
 ---
 width: 800px 
 align: center
 name: en_QGIS_GUI
 ---
 QGIS User Interface. Source: BRC
-```
+:::
 
 1. __Layers panel:__ The __layers list__ shows __all layers/files__ that are __loaded in the project__. You can show/hide layers and set other properties.
 
 2. __Toolbars:__  __Toolbars__ are shortcuts to execute frequently used commands. For example, there are special toolbars for __vector and raster files__, but also general ones for saving your project, etc. The toolbar contains, among other things, a list of all the commands you can use. The toolbar also contains the __processing toolbox__, which is used later in many of the wiki videos.
 
-```{figure} /fig/en_Interface_02.png
+:::{figure} /fig/en_Interface_02.png
 ---
 height: 75 px
 name: en_Interface_02
 align: center
 ---
-```
+:::
 
 3. __Map Canvas:__ The __map canvas__ is the __central component__ of every GIS programme. This is where the __geodata__ are displayed. The map view has a projection which does not always have to correspond to the projection of the layers.
 
@@ -172,11 +172,11 @@ align: center
 
 :::
 
-```{attention}
+:::{attention}
 
 If you see a `*` in the title bar, to the left of the name of your project, this means that the project has changes which are __unsaved__. Since QGIS can crash from time to time, make sure to save your project periodically to avoid losing progress.
 
-```
+:::
 
 ## Buttons and Shortcuts
 
@@ -184,7 +184,7 @@ In QGIS, __mouse control__ allows users to interact with the map canvas, enablin
 
 __Hotkeys__ in the QGIS interface provide convenient shortcuts for various commands, enhancing efficiency and speeding up workflow. You can find all hotkeys below.
 
-```{dropdown} Navigation in the map view
+:::{dropdown} Navigation in the map view
 
 | Name                      | Menu option                    | Shortcut                        | Description                                 |
 |---------------------------|--------------------------------|---------------------------------|---------------------------------------------|
@@ -199,9 +199,9 @@ __Hotkeys__ in the QGIS interface provide convenient shortcuts for various comma
 | Zoom last                 | ![](/fig/qgis_zoom_last.png)   |                                 | Zoom to the last zoom                        |
 | Zoom next                 | ![](/fig/qgis_zoom_next.png)   |                                 | Zoom to the next zoom                        |
 
-```
+:::
 
-```{dropdown} Project management
+:::{dropdown} Project management
 
 | Name            | Menu option                        | Shortcut         | Description                             |
 |-----------------|------------------------------------|------------------|-----------------------------------------|
@@ -213,9 +213,9 @@ __Hotkeys__ in the QGIS interface provide convenient shortcuts for various comma
 | New print layout| ![](/fig/qgis_new_print_layerout.png) | <kbd>Ctrl</kbd> + <kbd>P</kbd>  | Opens the Dialog to create a new print layout |
 | Search          |                                    | <kbd>Ctrl</kbd> + <kbd>K</kbd>        | Opens the search bar                    |
 
-```
+:::
 
-```{dropdown} Layer management
+:::{dropdown} Layer management
 
 | Name                        | Menu option                                  | Shortcut            | Description                       |
 |-----------------------------|----------------------------------------------|----------------------|-----------------------------------|
@@ -227,9 +227,9 @@ __Hotkeys__ in the QGIS interface provide convenient shortcuts for various comma
 | Toggle layers view          |                                              | <kbd>Ctrl</kbd> + <kbd>1</kbd>        | Toggle the layers view           |
 | Toggle browser view         |                                              | <kbd>Ctrl</kbd> + <kbd>2</kbd>       | Toggle the browser view          |
 
-```
+:::
 
-```{dropdown} Analysis Tools
+:::{dropdown} Analysis Tools
 
 | Name                                     | Menu option                                 | Shortcut                   | Description                                            |
 |------------------------------------------|---------------------------------------------|-----------------------------|--------------------------------------------------------|
@@ -240,16 +240,16 @@ __Hotkeys__ in the QGIS interface provide convenient shortcuts for various comma
 | Open Attribute table with selected features only | ![](/fig/qgis_open_attribute_table.png) | <kbd>Shift</kbd> + `F6`             | Open the Attribute table with selected features only  |
 | Open Attribute table with visible features only | ![](/fig/qgis_open_attribute_table.png)  | <kbd>Ctrl</kbd> + `F6`               | Open the Attribute table with visible features only   |
 
-```
+:::
 
-```{dropdown} Advanced Tools
+:::{dropdown} Advanced Tools
 
 | Name                    | Menu option                            | Shortcut          | Description                  |
 |-------------------------|----------------------------------------|--------------------|------------------------------|
 | Processing Toolbox      | ![](/fig/qgis_processing_toolbox.png) | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> | Opens the Processing Toolbox |
 | Python Console          | ![](/fig/qgis_python_console.png)     | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd> | Opens the Python Console     |
 
-```
+:::
 
 ## Navigating on the Map Canvas
 
@@ -270,11 +270,11 @@ Download the Worldbank Official Boundaries
 
 ::::{margin}
 
-```{tip}
+:::{tip}
 
 Holding the <kbd>Space</kbd>-button on your keyboard activates the ![](/fig/qgis_pan_map.png) `Pan Map`-tool when you're mouse in on the map canvas. Simply move your mouse while holding <kbd>Space</kbd> and you can move the map view
 
-```
+:::
 
 ::::
 
@@ -295,9 +295,9 @@ You can always move on the map canvas with arrow keys on your keyboard.
 
 ::::{margin}
 
-```{tip}
+:::{tip}
 Holding <kbd>Ctrl</kbd> while scrolling allows you to scroll in smaller increments (slower). Try adjusting the map canvas to your needs using this method. 
-```
+:::
 
 ::::
 
@@ -332,11 +332,11 @@ To open the Toolbox in QGIS click on the gearwheel button. Or click on `Processi
 
 You can use the search bar to find specific tools.
 
-```{tip} 
+:::{tip} 
 
 There are cases when you want to do something in QGIS but do not know the exact tool. Sometimes it's worth just looking for what you think the name of the tool might be.
 
-```
+:::
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_toolbars.mp4"></video>
 
@@ -374,10 +374,10 @@ Always organize your data! Check out the Wiki article on [Standard Folder Struct
 
 ::::{margin}
 
-```{tip}
+:::{tip}
 Holding <kbd>Ctrl</kbd> + <kbd>O</kbd> also opens the `Open Project`-dialogue box.
 
-```
+:::
 
 ::::
 
@@ -390,10 +390,10 @@ To open an existing QGIS project click on `Project` -> `Open…` -> Navigate to 
 
 ::::{margin}
 
-```{tip}
+:::{tip}
 Pressing <kbd>Ctrl</kbd> + <kbd>S</kbd> saves the project, whereas pressing <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> let's you specify a save location on your computer. 
 
-```
+:::
 
 ::::
 
@@ -409,20 +409,20 @@ Pressing <kbd>Ctrl</kbd> + <kbd>S</kbd> saves the project, whereas pressing <kbd
 
 It can be that while working with QGIS, you come across orange warning icons. This indicates that you should pay attention. To understand what the warning icon means, __hover over it with your mouse__ and explanatory text will appear. For example, in {numref}`warning_icon_example`, the warning icon indicates that the units of measurements are degrees, which are not constant (the distance between 1⁰ of longitude is much greater at the equator than at the poles).
 
-```{figure} /fig/en_3.36_warning_icon_example.png
+:::{figure} /fig/en_3.36_warning_icon_example.png
 ---
 name: warning_icon_example
 width: 700 px
 ---
 An example of a warning icon while adjusting the parameters of a processing tool.
-```
+:::
 
 ## Where to find help
 
-```{admonition} Connect with us!
+:::{admonition} Connect with us!
 :class: tip
 If you have more questions before or after the training or require assistance, do not hesitate to reach out to us by writing an email to `gis-training-platform@heigit.org`.
-```
+:::
 
 :::{admonition} Common errors and issues
 :class: tip
