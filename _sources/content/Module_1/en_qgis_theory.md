@@ -19,14 +19,14 @@ component (_geodata_). There are three core functions of GIS:
 
 :::
 
-```{figure} /fig/GIS_Core_functunality.drawio.svg
+:::{figure} /fig/GIS_Core_functunality.drawio.svg
 ---
 height: 500px
 name: GIS_Core_functunality
 align: center
 ---
 GIS core functionality (Source: HeiGIT).
-```
+:::
 
 In humanitarian work, Geographic Information Systems (GIS) serve as powerful tools. They utilize maps to present complex information clearly and efficiently. For instance, during emergencies, GIS can visualize events on a map, depicting where they occur, the extent of impact, and identifying primary needs. It aids in consolidating data from various sources, enabling quick comprehension of situations and facilitating better decision-making.
 

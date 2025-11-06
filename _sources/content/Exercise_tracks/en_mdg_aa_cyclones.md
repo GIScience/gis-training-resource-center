@@ -11,11 +11,11 @@ The french version of this exercise track can be found here:
 
 La version française de cet article se trouve ici:
 
-```{card}
+:::{card}
 :class-card: sd-text-center sd-border-1
 :link: https://giscience.github.io/gis-training-resource-center/content/Exercise_tracks/fr_mdg_aa_cyclones.html
 __Piste d'Exercice : Analyse d’Action Anticipative pour les Cyclones à Madagascar__ 
-```
+:::
 
 ::::
 
@@ -23,13 +23,13 @@ __Piste d'Exercice : Analyse d’Action Anticipative pour les Cyclones à Madaga
 Context
 ^^^
 
-```{figure} /fig/IFRC-icons-colour_SURGE.png
+:::{figure} /fig/IFRC-icons-colour_SURGE.png
 ---
 width: 100px
 align: right
 name: IFRC Surge Icon
 ---
-```
+:::
 
 Madagascar is frequently exposed to intense tropical cyclones, which can lead to widespread damage, displacement, and loss of life. Anticipatory analysis is essential to reduce the impact of these extreme weather events. By using forecast data and geospatial tools to predict the likely areas of impact, humanitarian actors and local authorities can take early action, such as pre-positioning supplies and issuing warnings, to protect lives and livelihoods before disaster strikes. This proactive approach strengthens preparedness and response capacities, ultimately saving time, resources, and lives.
 
