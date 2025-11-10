@@ -262,7 +262,7 @@ comprehensive format. For example, you can:
 The styling of a layer is how you communicate the information to your audience. Each data-layer in your QGIS-project 
 has its own styling rules. These can range from simple (e.g. display line data as black lines, assigning a colour to 
 polygons) to more complex (e.g. differentiate between different types of roads, add complex fill-patterns to polygons, 
-or add SVG-symbols of varying sizes to ). 
+or add SVG-symbols of varying sizes). 
 
 
 ## Symbology
