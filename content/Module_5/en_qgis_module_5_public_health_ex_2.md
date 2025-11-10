@@ -160,7 +160,7 @@ Our district layer now includes both the population and measle cases. With this 
     ```
     (CASES / POP ) * 10000
     ```
-
+% ADJUST CODE TO CORRECT LAYERS
 > Great, we have calculated the incidence rate in our polygon layer. Now, we can create a map displaying the information we gained
 
 % SWITCH TO EXERCISE IN MODULE 4

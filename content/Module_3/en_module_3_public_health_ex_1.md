@@ -48,8 +48,9 @@ Over the past month, health authorities in Chad have reported a surge in measles
     - Make sure that QGIS uses the correct delimiter (e.g., comma, tab, semicolon, etc.). If it is the correct delimiter, a preview of the datatable should appear in the Sample Data field. 
     - Specify the `X-` and `Y-field` by selecting the respective column. 
     - Click `Add`. The healthsites should now appear as points on your map canvas. 
-
-
+5. Let's add a basemap:
+    - In the file browser, scrool down until you see `XYZ-Tiles`
+    - Uncollapse it and <kbd>double-click</kbd>
 :::{caution}
 
 Imported files are not saved within the QGIS project. If you move or delete the original file, QGIS will no longer find the respective dataset. 
