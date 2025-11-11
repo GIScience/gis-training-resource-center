@@ -4,15 +4,10 @@
 :link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
-:::{grid-item-card}
-:class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_exercises.html 
-{octicon}`undo;1.5em;sd-text-danger`
-:::
 ::::
 
 
-# Exercise 4: Nigeria Floods
+# Exercise 4: Flooding in Nigeria
 
 ## Characteristics of the exercise
 
@@ -60,7 +55,7 @@ __Relevant Wiki Articles__:
 * [Table function - Add field](/content/Wiki/en_qgis_table_functions_wiki.md)
 * [Geodata Classification- Categorized](/content/Wiki/en_qgis_categorized_wiki.md)
 * [Geodata Classification- Graduated](/content/Wiki/en_qgis_graduated_wiki.md)
-* [Digitization- Point data](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#add-geometries-to-a-layer)
+* [Digitization- Point data](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitisation_wiki.html#add-geometries-to-a-layer)
 
 :::
 
@@ -118,9 +113,9 @@ Our goal is to produce an overview of the impact of the 2022 flood in the state 
 3. Load the GeoPackage "kontur_boundaries_NG_20230628.gpkg" in your project by drag and drop ([Wiki Video](/content/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). Or click on `Layer`-> `Add Layer`-> `Add Vector Layer`. Click on the three points ![](/fig/Three_points.png) and navigate to "kontur_boundaries_NG_20230628.gpkg". Select the file and click `Open`. Back in QGIS click `Add` ([Wiki Video](/content/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab)).
 This dataset contains all administrative division areas (admin 0 to 5) with the respective population of the areas. 
 
-```{Attention}
+:::{Attention}
 GeoPackage files can contain multiple files and even entire QGIS projects. When you load such a file in QGIS a window will appear in which you have to select the files you want to load in your QGIS project.
-```
+:::
 
 4. First, we want to export Borno state from kontur_boundaries_NG_20230628 to have it as a stand-alone vector layer. To do that, 
     * Open the attribute table of "kontur_boundaries_NG_20230628" by right click on the layer  -> `Open Attribute Table`([Wiki Video](/content/Wiki/en_qgis_attribute_table_wiki.md)).
@@ -141,13 +136,13 @@ Since we only want the LGAs we need to export those from the original dataset.
     * To save the output click on the three points at `Extract (location)` -> `Save to GeoPackage` and navigate to your `temp` folder. Save the new layer under the name “Borno_admin2_pop”. Give the new layer the same `Layer name` and click `Run`.
     * Open the Attribute table of the new layer. You should have 27 features.
 
-```{figure} /fig/en_qgis_extract_by_location_nigeria_flood.png
+:::{figure} /fig/en_qgis_extract_by_location_nigeria_flood.png
 ---
 width: 400px
 name: m3ex4_extract_by_location
 align: center
 ---
-```
+:::
 
 7. We have our admin areas in place and can now start to enrich these layer with additional data regarding the flood of 2022.
 Open the Excel or pdf file “Nigeria_flood_2022_affacted_population” and open the sheet Borno. You find a table with the LGAs and communities which were affected by the flood. Now we want to add some of the information to our “Borno_admin2_pop” layer. For that, there are two ways. One simple, but more time-consuming, and one more complicated, but much faster. We will show the easy way, but in the dropdown below you can find the tutorial for the advanced way as well.
@@ -161,25 +156,25 @@ Open the Excel or pdf file “Nigeria_flood_2022_affacted_population” and open
     * On the top you find a dropdown menu. Open it and choose `Categorized`. Under `Value` select “Flood_affected”.
     * Further down the window, click on `Classify`.  Now you should see all unique values or attributes of the selected “Flood_affected” column.  You can adjust the colours by double-clicking on one row in the central field. Once you are done, click `Apply` and `OK` to close the symbology window.
 
-```{figure} /fig/en_qgis_categorized_classification_nigeria_flood_exercise.png
+:::{figure} /fig/en_qgis_categorized_classification_nigeria_flood_exercise.png
 ---
 width: 600px
 name: m3ex4_classification
 align: center
 ---
-```
+:::
 
 9. Next, we want to visualise the affected communities which are listed in the Nigeria_flood_2022_affected_population table. To find these communities in QGIS, we need two things. An OpenStreetMap base map and the plugin `OSM Place Search`. 
     * To add the OSM as a base map click on `Layer` -> `Add Layer` -> `Add XYZ Layer…`. Choose `OpenStreetMap` and click `Add`. 
     Arrange your layer in the `Layer Panel` so the OSM is at the bottom ([Wiki Video](/content/Wiki/en_qgis_basemaps_wiki.md)). 
-    ```{Tip}
+    :::{Tip}
     You cannot interact with a base map!
-    ```
+    :::
     * To add the plugin `OSM Place Search`, click on `Plugins` -> `Manage and Install Plugins…` -> `All` and search for `OSM Place Search`. Once you have found it, click on it and click `Install Plugin`. You can open the `OSM Place Search Panel` like every other panel by clicking on `View` -> `Panels` and checking `OSM Place Search Panel`([Wiki Video](/content/Wiki/en_qgis_plugins_wiki.md#installation-of-plugins)).
     * In the panel, you can search for places on the OpenStreetMap by typing the name of the place in the search bar. Often it makes sense to add additional information like the name of the country. For example, try “Laujeri Bulama, Nigeria”.
 
 10. Now we have all our tools in place. In the next step, we create a new point vector layer from scratch to digitise the location of the affected communities. 
-    * Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#create-a-new-layer)) 
+    * Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki Video](/content/Wiki/en_qgis_digitisation_wiki.md#create-a-new-layer)) 
     - Under `Database` click on ![](/fig/Three_points.png) and navigate to `temp` folder. Give the new dataset the name “Borno_affected_communities_point”. Click `Save`.
     * `Geometry type`: Select `Point`
     - Under `Additional dimension` you should always make sure that you check `None`. 
@@ -191,15 +186,15 @@ align: center
         * Click `OK`.
     * Your new layer will appear in the `Layer Panel`
 
-```{figure} /fig/en_qgis_create_point_layer_nigeria_flood_exercise.png
+:::{figure} /fig/en_qgis_create_point_layer_nigeria_flood_exercise.png
 ---
 width: 400px
 name: m3ex4_create_point_layer 
 align: center
 ---
-```
+:::
 
-11. Currently the new “Borno_affected_communities_point” is empty. To add features we can use the `Digitizing Toolbar`. If you cannot see the toolbar, use `View` -> `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#creation-of-point-data)).  ![](/fig/Digitizing_Toolbar.png) 
+11. Currently the new “Borno_affected_communities_point” is empty. To add features we can use the `Digitizing Toolbar`. If you cannot see the toolbar, use `View` -> `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](/content/Wiki/en_qgis_digitisation_wiki.md#creation-of-point-data)).  ![](/fig/Digitizing_Toolbar.png) 
     * Select the point layer “Borno_affected_communities_point” in the Layer panel. Go to the digitisation toolbar and click on![](/fig/mActionToggleEditing.png). Now the layer is in the editing mode .
     * Search an affected community based on the table “Nigeria_flood_2022_affacted_population”. Once you have found one, click on ![](/fig/mActionCapturePoint.png). Left-click on the feature you want to digitise.
     * Once you click, a window will appear ` Borno_affected_communities_point Feature Attribute`. Here you can add the name of the location.
@@ -221,23 +216,23 @@ Since the layer “Borno_admin2_pop” contains this information we can dublicat
     * Click `Classify`
     * Click `Apply`
 
-```{figure} /fig/en_qgis_graduated_classification_nigeria_flood_exercise.png
+:::{figure} /fig/en_qgis_graduated_classification_nigeria_flood_exercise.png
 ---
 width: 600px
 name: m3ex4_graduated_classif
 align: center
 ---
-```
+:::
 
 14. QGIS created now five classes covering the entire range of population numbers in Borno state. Click on the `Histogram` Tab -> `Load Values`. Here you see the distribution of values in the dataset and the limits of the classes. We see that most LGAs have a population below 300 people. Try out some of the other modes of classification, such as natural breaks or equal intervals.
 
-```{figure} /fig/en_qgis_graduated_classification_Histogram_nigeria_flood_exercise.png
+:::{figure} /fig/en_qgis_graduated_classification_Histogram_nigeria_flood_exercise.png
 ---
 width: 400px
 name: m3ex4_histogram
 align: center
 ---
-```
+:::
 
 15. To visualise “Borno_admin2_pop” (showing affected LGAs) and “Borno_admin2_pop_copy” (showing population data) together, we need to change the symbology of “Borno_admin2_pop”. 
 First, right-click on the layer “Borno_admin2_pop” in the `Layer Panel` -> `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
@@ -246,21 +241,21 @@ Currently, we use the `Categorized` classification. We want to keep that. Howeve
     * Then, do a double-click on the `Yes` row. Here we have two options. We can use a grid or only the borders.
     * To use a grid scroll down and select one that suits you. Then click `OK`.
 
-```{figure} /fig/en_qgis_grid_flood_exercise.png
+:::{figure} /fig/en_qgis_grid_flood_exercise.png
 ---
 width: 600px
 align: center
 ---
-```
+:::
 
 * To only use borders, click on `simple fill` -> `Fill style` and select `No Brusch`. Adjust the `Stroke Color` to a red or another bride colour. Increase the `Stroke width` to make the borders bigger. Then click `OK`.
 
-```{figure} /fig/en_qgis_now_brush_nigeria_flood_exercise.png
+:::{figure} /fig/en_qgis_now_brush_nigeria_flood_exercise.png
 ---
 width: 400px
 align: center
 ---
-```
+:::
 
 16. For a more detailed idea of the flood extend we can load the layer “VIIRS_20220901_20220930_MaximumFloodWaterExtent_Nigeria.shp” which shows the maximum extent of surface water between 9th and 30th October 2022. If you like you can also load “VIIRS_20220901_20220930_PermanentWater_Nigeria.shp”. This layer shows lakes and other permanent surface water features.
 Once you have loaded the layers in QGIS, you can see that they are correctly displayed. However, upon checking the layer information, you can see that the new layers have a different Coordinate Reference System (CRS). They have the EPSG Code 9707 whereas our project has 4326 ([Wiki Video](/content/Wiki/en_qgis_projections_wiki.md#how-to-check-epsg-code-crs-of-layer-data)).
@@ -280,29 +275,29 @@ Once you have loaded the layers in QGIS, you can see that they are correctly dis
     
 18. The flood extend layer covers the entirety of Nigeria. We can use the `Clip` tool to cut it to the shape of Borno state ([Wiki Video](/content/Wiki/en_qgis_geoprocessing_wiki.md#clip)).
     * Open the `Processing Toolbox` ([here is how](/content/Wiki/en_qgis_interface_wiki.md#toolbox-toolbars)) and search for the `Clip` tool.
-    ```{Note}
+    :::{Note}
     There are __two__ versions of the `Clip` tool. Since we work with vector data, make sure to use the one under “Vector overlay”.
-    ```
+    :::
     * `Input layer`: "VIIRS_20220901_20220930_MaximumFloodWaterExtent_Nigeria.shp”
     * `Overlay layer`: “AOI_Borno_admin1”
     * To save the output click on the three points at `Clipped`-> `Save to GeoPackage`and navigate to your `temp` folder. Save the new layer under the name “Flood_extend_october_2022_reprojected_Borno”. Give the new layer the same `Layer name` and click `Run`.
 
-```{figure} /fig/en_qgis_clip_flood_exercise.png
+:::{figure} /fig/en_qgis_clip_flood_exercise.png
 ---
 width: 400px
 align: center
 ---
-```
+:::
 
 Great, we have done our visualisation. WELL DONE!
 Your results should look similar to the image below.
 
-```{figure} /fig/en_qgis_result_flood_exercise.png
+:::{figure} /fig/en_qgis_result_flood_exercise.png
 ---
 width: 600px
 align: center
 ---
-```
+:::
 
 
 

@@ -1,6 +1,5 @@
 # Glossary
  
-Draft
 
 | Term| Description | 
 | -------- | --- | 

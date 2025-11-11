@@ -212,7 +212,7 @@ Now load your vector file ("Schuld_Ahr-tal_sketch-map_Ex4.geojson") and geotiff 
 
 __1. Digitization: Add a marking manually__
 
-So what can we do if a marking has not been detected? We can add missing markings manually by tracking the drawing on the geotiff file. This process is also called [digitisation](/content/Module_3/en_qgis_digitalisation.md). 
+So what can we do if a marking has not been detected? We can add missing markings manually by tracking the drawing on the geotiff file. This process is also called [digitisation](/content/Module_3/en_qgis_digitisation.md). 
 
 Right-click on your vector file and click on `Toggle Editing`. The `Digitizing Toolbox` in your menu bar on top of your QGIS will be activated:
 
@@ -250,9 +250,8 @@ align: center
 Attribute Table with added polygon 
 ```
 
-The whole process of Digitization is explained in detail [here](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation.html?highlight=digitize#digitalisation).
+The whole process of Digitization is explained in detail [here](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitisation.html?highlight=digitize#digitisation).
 
-[test](/content/Modul_3/en_qgis_digitalisation.md?highlight=digitize#digitalisation)
 
 __2. Add a property/column to the Attribute Table__
 

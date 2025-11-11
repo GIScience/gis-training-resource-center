@@ -4,11 +4,7 @@
 :link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
-:::{grid-item-card}
-:class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_module_4_exercises.html 
-{octicon}`undo;1.5em;sd-text-danger`
-:::
+
 ::::
 
 # Map design Exercise 1: Creating a Map of Ghana
@@ -74,7 +70,7 @@ __Relevant Articles__
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md#how-to-do-trainings) for some general tips on training conduction
+- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md#how-to-do-trainings) for some general tips on training conduction.
 
 ### Conduct the training
 
@@ -127,7 +123,7 @@ Now that we are familiar with the data at our disposal, let's choose the symbolo
 
 Let's start with the administrative boundaries. We want to show the names and outlines for the `adm_1`-layer, as well as the outlines for the `adm_2`-layer.
 
-1. Put the layers for the administrative boundaries in an ascending order with `adm_0` at the bottom, followed by `adm_1` and `adm_2`
+1. Put the layers for the administrative boundaries in an ascending order with `adm_0` at the bottom, followed by `adm_1` and `adm_2`.
 2. Open the __Symbology Tab__ for the `adm_2`-layer. Set the __Fill color__ to transparent and the __Stroke width__ to 0.16 Millimeters and the __Stroke style__ to a dashed line.
 3. Open the __Symbology Tab__ for the `adm_1`-layer and set the colour as transparent. Leave the stroke width at 0,26 Millimeters and the stroke style as a solid line.
 4.  Open the __Symboloy Tab__ for the `adm_0`-layer and set it to a neutral colour (such as a light gray).
@@ -145,8 +141,8 @@ The layer for the settlements has been cleaned up and only the towns, regional c
 4. A list of all the unique values will appear. Assign each a dark grey point marker.
 5. We want to be able to differentiate between country, regional, or district capital. The most important capital is the country capital, followed by regional capitals and finally the district capitals. Give each point marker a different size corresponding to its importance.
 6. Let us add a label for the country capital and regional capitals next.
-7. Navigate to the "__Label Tab__" and select __"Rule-based Labelling"__
-8. Add a new rule and enter the following expression in the Filter: `(  "popPlace1"  =   'Country capital'  ) OR ( "popPlace1" = 'Regional capital' )`
+7. Navigate to the "__Label Tab__" and select __"Rule-based Labelling"__.
+8. Add a new rule and enter the following expression in the Filter: `(  "popPlace1"  =   'Country capital'  ) OR ( "popPlace1" = 'Regional capital' )`.
 9. Set the "Value" to `Name`.
 10. Make the font italic and draw a text buffer in order to differentiate the settlement labels from the labels of the regions.
 
@@ -162,20 +158,20 @@ Let's move on to the road network.
 6. Under the left window, click on the `=`-sign to add it to your expression.
 7. In the list with all the unique values. Select `primary` and add it to your expression.
 8. Close the parenthesis by clicking on `)` under the expression field on the left.
-9. Add the Operator `OR` and repeat the same expression with the parenthesis but select the unique value `secondary`
-10. The finished expression should be  `(  "highway"  =  'primary' )  OR  ( "highway"  =  'secondary'  )`
+9. Add the Operator `OR` and repeat the same expression with the parenthesis but select the unique value `secondary`.
+10. The finished expression should be  `(  "highway"  =  'primary' )  OR  ( "highway"  =  'secondary'  )`.
 11. Select a colour and thickness for the line so it is distinguishable from the administrative boundaries (e.g. yellow; keep in mind that some colors have conventional associations; blue for water for example).
 
 ---
 
 Now, as a final touch, let's select a symbol for the health facilities:
 
-1. Navigate to the `hospital_GHA` layer
+1. Navigate to the `hospital_GHA` layer.
 2. Open the __Symbology Tab__ and select the `Simple Marker`.
 3. Under "Symbol Layer type", select SVG-Symbol.
 4. Scroll down until you see the SVG-Symbol browser.
-5. In the search bar, enter 'hospital'
-6. Select one of the SVG-Symbols at your disposal
+5. In the search bar, enter 'hospital'.
+6. Select one of the SVG-Symbols at your disposal.
 7. Adjust the colour to red.
 8. Click Apply and Ok.
 
@@ -196,7 +192,7 @@ Once you are happy with the symbolization and colours of your data, the next ste
 3. Move and position the map so that the entire country is visible at a reasonable scale.
 4. Let's add a title:
     - Click on ![Add text icon](/fig/30.30.2_print_layout_add_text.png) (`Add text`)
-    - Drag a rectangle on the canvas
+    - Drag a rectangle on the canvas.
     - In the item properties window on the right, you will find a text box with the text "Lorem ipsum". Here you can enter your map title (e.g. Map of Ghana with roads and hospitals).
     - Adjust the font size: Click on the __Font__ dropdown menu and adjust the font size for a title (25p or more). Adjust the text box if necessary.
 5. Let's add a legend:
@@ -212,18 +208,18 @@ Once you are happy with the symbolization and colours of your data, the next ste
     - Drag a rectangle on the print layout. Adjust the size and location of the north arrow. You can also change the icon in the item properties.
 8. Let's add a logo (for example, the IFRC logo or the logo of your national society):
     - Click on ![Add Picture](/fig/30.30.2_print_layout_add_image.png) (`Add picture`)
-    - Drag a rectangle in the spot where you want to add the logo
+    - Drag a rectangle in the spot where you want to add the logo.
     - Navigate to the `Item properties` panel on the right and switch to `Raster image`. 
-    - Click on the three dots `...` and select the file with your logo
+    - Click on the three dots `...` and select the file with your logo.
     - If necessary, resize or move the picture on the print layout.
 
-```{figure} ../../fig/30.30.2_print_layout_add_picture_options.png
+:::{figure} ../../fig/30.30.2_print_layout_add_picture_options.png
 ---
 name: add picture item properties
 width: 600 px
 ---
 The item properties panel for pictures. You need to specify the save location of a picture in order to see it on the print layout.
-```
+:::
 
 9. Add a text box with additional information, sources, the author (you), and date of creation.
 10. When you are happy with your print layout. You can export it as a PDF. You can save it in the project folder under "results".
@@ -231,13 +227,13 @@ The item properties panel for pictures. You need to specify the save location of
 
 The finished map could look something like this:
 
-```{figure} ../../fig/en_map_design_exercise_1_results.png
+:::{figure} ../../fig/en_map_design_exercise_1_results.png
 ---
 name: Main road network and hospitals in Ghana, Africa
 width: 600px
 ---
 Some space has been left in the bottom-right corner for an overview map
-```
+:::
 
 What can we learn from this map? We can clearly identify areas that are harder to reach and where the travel time to a hospital is much longer than in the populated regions in the south of Ghana. 
 

@@ -4,11 +4,7 @@
 :link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
-:::{grid-item-card}
-:class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_module_5_exercises.html 
-{octicon}`undo;1.5em;sd-text-danger`
-:::
+
 ::::
 
 # Exercise 5: Aggregate and Assess G2P Money Transfers in Pakistan
@@ -112,9 +108,9 @@ __Available Data:__
 :::
 
 ::::{margin}
-```{tip}
+:::{tip}
 To load the CSV-file, navigate to `Layer` > `Add Layer` > `Add delimited text layer`.
-```
+:::
 ::::
 
 ### Preparing the data
@@ -123,7 +119,7 @@ To load the CSV-file, navigate to `Layer` > `Add Layer` > `Add delimited text la
 2. Load the data into your QGIS-project.
 3. Let's familiarise ourselves with the data. Open the attribute table of each layer and see what kind of information is stored in the datasets. 
 
-```{note}
+::::{note}
 We want to aggregate the information about money transactions on adm3- or adm2-level. Can you identify which column in the `G2P_disbursement_report_cleaned`-layer corresponds to adm2 and adm3? 
 
 :::{dropdown} Solution
@@ -132,19 +128,19 @@ By comparing the values in the column `admin2_EN` from the `pak_admbnda_adm2_wfp
 
 :::
 
-```
+::::
 
 ### Step 1: Aggregating the amount of transferred money on admin2
 
 3. In the processing toolbox, search for the tool `Aggregate` under `Vector Geometry`. <kbd>Double-Click</kbd> on it. A new window will open (see {numref}`aggregate_tool`).
 
-```{figure} /fig/en_3.36_aggregate.png
+:::{figure} /fig/en_3.36_aggregate.png
 ---
 name: aggregate_tool
 width: 600 px
 ---
 The Aggregate-tool in QGIS 3.36
-```
+:::
 
 4. In the "Aggregate"-window,
     1. Select the `G2P_disbursement_report_cleaned`-layer as input layer.
@@ -156,28 +152,28 @@ The Aggregate-tool in QGIS 3.36
     4. Click `Run`. A new layer called "Aggregated" will appear in the layers-panel. Close the "Aggregate"-window.
  
 
-    ```{figure} /fig/en_3.36_aggregate_settings.png
+    :::{figure} /fig/en_3.36_aggregate_settings.png
     ---
     name: aggregate_settings
     width: 650 px
     ---
     Adjust the aggregation function for the relevant columns. Pay attention that the `Type` for the amount is set to "Integer". If you have imported the table correctly into QGIS, this should be set automatically. 
-    ```
+    :::
 
-    ```{admonition}
+    :::{admonition}
     :type: note
     If the `Type` for the amount column is set to "Text (string)", this means that QGIS reads the data format for this column as being a string value. QGIS can't perform mathematic operations on string values because they are being read as non-numeric data. Make sure to import the layer through the `Add delimited text layer`-dialogue (`Layer` > `Add Layer` > `Add delimited text layer...`) and make sure the `Type` for the column "Amount" is set to Integer.
-    ```
+    :::
 
     5. Let's take a look at the new layer by opening the attribute table. If you have done everything correctly, the table should look like {numref}`aggregate_results`. We can see on row for each distinct value in the `var attr 03` column (Gwardar, Jamshoro, Dadu, Kambar Shahdadkot, Shiparpur). In the column `Amount` we see the sum of all the individual transfers. In the other columns, we can see a string with the different values of the original table separated by commas (e.g. the different admin3-units, Thesils, under the column `var attr 04`). 
     
-    ```{figure} /fig/en_aggregate_results.png
+    :::{figure} /fig/en_aggregate_results.png
     ---
     name: aggregate_results
     width: 650 px
     ---
     The aggregated data from `G2P_disbursement_report_cleaned`
-    ```
+    :::
 
 
 ### Step 2: Joining the aggregated data with administrative boundaries
@@ -186,13 +182,13 @@ In this step, we want to add the aggregated information we gained from the CSV f
 
 1. In the processing toolbox, search for `Join attributes by field value`. <kbd>Double click</kbd> on it. A new window will open. 
 
-    ```{figure} /fig/en_3.36_join_by_attr.png
+    :::{figure} /fig/en_3.36_join_by_attr.png
     ---
     name: join_by_attr
     width: 700 px
     ---
     The Join attributes by field value dialogue box in QGIS 3.36.
-    ```
+    :::
 
     1. The input layer should be `pak_admbnda_adm2_wfp_20220909`-layer. This will be the layer that will receive additional information. The geometries of the input layer will be preserved. The `Table field` should be set to "ADM2_EN". These are english names for the admin2-level.
     2. The second input layer should be the `Aggregated` layer from the previous step. `Table field 2` should also be the english names for the administrative boundaries. In our case, the corresponding column is "var attr 03". Under `Layer 2 fields to copy`, only select `amount` as we are not interested in the other values. 
@@ -202,13 +198,11 @@ In this step, we want to add the aggregated information we gained from the CSV f
 
 Congratulations, we have successfully joined a CSV-file with a polygon layer!
 
-```{figure} /fig/en_m5_ex5_results.png
+:::{figure} /fig/en_m5_ex5_results.png
 ---
 name: aggregation_ex_results
 width: 750 px
 ---
 The aggregated amount joined to a layer of the administrative boundaries.
-```
+:::
 
-
-<!--ADD: Optional steps to aggregate based on gender and status to create a map with additional information?-->

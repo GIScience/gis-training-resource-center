@@ -954,11 +954,6 @@ This video shows how to setup the QGIS project for April 2022 and how to import 
 ## Step 4: Formatting the ADM2-names
 
 
-```{figure}
-
-
-```
-
 __Purpose:__ The GeoJSON file from IPC contains a polygon layer that contains the administrative boundaries and the IPC phase for the current analysis (C) and the projection (P). However, it is all contained in one layer. To be able to perform our analysis steps, we need to prepare the data. In the column where the adm2-names are saved, there are several polygons with the same adm names, but have a "(1)" or "(2)" added at the end. We need to remove number in the parantheses so we can dissolve the polygons in the next step. 
 
 __Tool:__ Field Calculator
@@ -999,10 +994,6 @@ __Tool:__ Field Calculator
 
 ## Step 5: Dissolving admin 2 polygons
 
-```{figure} /fig/ADD
----
-
-```
 
 __Purpose:__ To get a layer of the administrative boundaries for the district, we need to dissolve the polygons  from the formatted layer from the previous step using the field "area". This will output one polygon per distinct "area" value. In other words a layer withe adm2 boundaries. 
 

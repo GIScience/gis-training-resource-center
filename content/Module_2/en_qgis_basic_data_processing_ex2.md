@@ -4,11 +4,6 @@
 :link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
-:::{grid-item-card}
-:class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_module_2_exercises.html 
-{octicon}`undo;1.5em;sd-text-danger`
-:::
 ::::
 
 # Exercise 2: Basic geodata processing
@@ -148,26 +143,18 @@ GeoJSON does not support multiple layers, so the polygons for the country bounda
 4. In the `nigeria_populated_places` layer, open the attribute table, select 
    the feature for **Zuyel**, and zoom to the selected point. 
 
-```{Hint}
+:::{Hint}
 The place starts with a *Z* so it might help to sort the `name` column in
 descending order.
-```
+:::
 
 5. Export **Zuyel** as its own GeoPackage. Check the projection and choose an 
    appropriate CRS. Name it `zuyel.gpkg`.
 
-```{Note}
+:::{Note}
 As no calculations are involved, e.g. area, WGS84 (EPSG:4326) is a good choice.
-```
-
-<!----:::{dropdown} How do I know which CRS to choose?
-[EPSG.io](http://epsg.io) has a database that you can search to find the appropriate CRS 
-to use for a country. More information on [projections](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html) can be found in the Wiki or in the corresponding section in [module 2 on projections](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_projections.html).
 :::
--->
 
-<!-- CLARIFY: is it important to choose an appropriate CRS or should people use 
-	the default? Part of this section can be removed. --> 
 
 6. Repeat the steps for the layer `nigeria_boundaries.geojson` and only export 
 the district in which **Zuyel** is located. Name it accordingly. To find the district use the ![](/fig/qgis_identify_features.png) `Identify Features` tool and then manually select the correct district in the attribute table.
@@ -180,13 +167,13 @@ the district in which **Zuyel** is located. Name it accordingly. To find the dis
 
 ### Result
 
-```{figure} /fig/en_result_geodata_processing_exercise.png
+:::{figure} /fig/en_result_geodata_processing_exercise.png
 ---
 width: 80%
 name: en_result_geodata_processing_exercise
 ---
 This is how your output could look like in the end
-```
+:::
 
 <!-- FIXME: We have not asked people to remove the initial layers so they would 
 	also show in the layers list --> 
