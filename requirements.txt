@@ -1,4 +1,15 @@
-jupyter-book
+# Core Jupyter Book
+jupyter-book==1.1.2
+
+# Sphinx (required for building the book)
+sphinx<8
+
+# MyST-NB for parsing notebooks
+myst-nb==0.15.2
+
+# Data and plotting
 matplotlib
 numpy
+
+# GitHub Pages deployment helper
 ghp-import
