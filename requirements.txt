@@ -5,7 +5,7 @@ jupyter-book==1.0.4.post1
 sphinx<8
 
 # MyST-NB for parsing notebooks
-myst-nb==0.15.2
+myst-nb==1.2.0
 
 # Data and plotting
 matplotlib
