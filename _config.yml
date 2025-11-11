@@ -40,7 +40,3 @@ html:
       </p>
   announcement: "Looking to contribute? Take a look at the contribution guidelines and contact us!"
 exclude_patterns: [.venv/*, venv/*]
-
-sphinx:
-  extra_extensions:
-    - custom-launch-buttons
