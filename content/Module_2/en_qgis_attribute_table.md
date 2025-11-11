@@ -250,7 +250,7 @@ The attribute table is a tabular representation of the non‑spatial (or descrip
 :::{dropdown} Answer
 __Manually selecting features:__
 - Clicking on a row header of an individual feature in the attribute table selects the feature. It will be highlighted in blue.
-- To select multiple features, hold <kbd>Ctrl</kbd> or <kbd>Cmd on MacOS and click on additional row headers to add more features to the selection.
+- To select multiple features, hold <kbd>Ctrl</kbd> or <kbd>Cmd</kbd> on MacOS and click on additional row headers to add more features to the selection.
 - Holding <kbd>Shift</kbd> let's you select a range of features. 
 __Showing only selected or unselected features:__
 - At the bottom left of the attribute table dialog, there is a drop‑down menu (filter) that lets you switch between:
