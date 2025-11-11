@@ -6,11 +6,11 @@
             "items": [
                 {
                     "label": "English",
-                    "url": "https://giscience.github.io/gis-training-resource-center/content/intro.md"
+                    "url": "https://giscience.github.io/gis-training-resource-center/content/intro.html"
                 },
                 {
                     "label": "Espa\u00f1ol",
-                    "url": "https://giscience.github.io/gis-training-resource-center/content/es/es_intro.md"
+                    "url": "https://giscience.github.io/gis-training-resource-center/content/es/es_intro.html"
                 }
             ]
         }
