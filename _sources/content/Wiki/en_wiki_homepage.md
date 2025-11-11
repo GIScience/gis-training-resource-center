@@ -24,7 +24,7 @@ Here you will find short **technical** descriptions and **practical** guides on 
 
 :::{grid-item-card}
 __[QGIS Basics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_qgis_basics_wiki.html):__
-
+^^^
 - [QGIS Installation](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_installation_wiki.html)
 - [QGIS Interface](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
 - [Projects and Folder Structure](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html)
@@ -35,8 +35,8 @@ __[QGIS Basics](https://giscience.github.io/gis-training-resource-center/content
 :::
 
 :::{grid-item-card}
-
 __[General Geodata and Data Management](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_wiki.html)__
+^^^
 
 - [Types of Geodata](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_types_wiki.html)
 - [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)
@@ -46,3 +46,11 @@ __[General Geodata and Data Management](https://giscience.github.io/gis-training
 - [Digitisation](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitisation_wiki.html)
 :::
 ::::
+
+::::{grid} 2
+:gutter: 2
+:::{grid-item}
+__[Geodata Classification](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_data_classification_wiki.html):__
+
+- []
+
