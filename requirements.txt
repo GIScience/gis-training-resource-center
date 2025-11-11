@@ -1,5 +1,5 @@
 # Core Jupyter Book
-jupyter-book==1.1.2
+jupyter-book==1.0.4.post1
 
 # Sphinx (required for building the book)
 sphinx<8
