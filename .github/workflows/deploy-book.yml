@@ -20,14 +20,25 @@ jobs:
     - uses: actions/checkout@v2
 
     # Install dependencies
-    - name: Set up Python 3.8
+    - name: Set up Python 3.13
       uses: actions/setup-python@v2
       with:
-        python-version: 3.8
+        python-version: 3.13
         
     - name: Install dependencies
       run: |
         pip install -r requirements.txt
+
+    # Debug structure
+    - name: Debug structure
+      run: |
+        echo "Current directory: $(pwd)"
+        find . -maxdepth 3 -type f -name "_config.yml"
+
+    - name: Where am I?
+      run: |
+        pwd
+        ls -al
 
     # Build the book
     - name: Build the book
