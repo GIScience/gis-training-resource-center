@@ -34,6 +34,14 @@ jobs:
       run: |
         jupyter-book build .
 
+    # Verify build folder
+    - name: Verify build folder
+  run: |
+    if [ ! -d "_build/html" ]; then
+      echo "_build/html missing! Build failed."
+      exit 1
+    fi
+  
     # Push the book's HTML to github-pages
     - name: GitHub Pages action
       uses: peaceiris/actions-gh-pages@v3.6.1
