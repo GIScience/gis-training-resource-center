@@ -13,3 +13,6 @@ numpy
 
 # GitHub Pages deployment helper
 ghp-import
+
+# Custom Launch Buttons
+custom-launch-buttons
