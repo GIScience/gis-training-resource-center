@@ -1,0 +1,180 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: content/intro
+options:  # The options key will be applied to all chapters, but not sub-sections
+parts:
+  - caption: Modules
+    numbered: True
+    chapters:
+      - file: content/Module_1/en_module_1_overview.md
+        sections: 
+          - file: content/Module_1/en_qgis_theory.md
+          - file: content/Module_1/en_qgis_installation.md
+          - file: content/Module_1/en_qgis_start.md
+          - file: content/Module_1/en_qgis_module_1_exercises.md
+      - file: content/Module_2/en_module_2_overview.md
+        sections:
+          - file: content/Module_2/en_qgis_geodata_concept.md
+          - file: content/Module_2/en_qgis_projections.md
+          - file: content/Module_2/en_qgis_geodata_management.md
+          - file: content/Module_2/en_qgis_attribute_table.md
+          - file: content/Module_2/en_data_sources.md
+          - file: content/Module_2/en_qgis_basemap.md
+          - file: content/Module_2/en_qgis_module_2_exercises.md
+      - file: content/Module_3/en_module_3_overview.md
+        sections:
+          - file: content/Module_3/en_qgis_digitisation.md
+          - file: content/Module_3/en_qgis_data_queries.md
+          - file: content/Module_3/en_qgis_data_classification.md
+          - file: content/Module_3/en_qgis_georeferencing.md
+          - file: content/Module_3/en_qgis_module_3_exercises.md
+      - file: content/Module_4/en_module_4_overview.md
+        sections: 
+          - file: content/Module_4/en_qgis_map_design_I.md
+          - file: content/Module_4/en_qgis_styling_vector_data.md
+          - file: content/Module_4/en_qgis_labels_vector.md
+          - file: content/Module_4/en_qgis_working_with_styles.md
+          - file: content/Module_4/en_qgis_symbology_raster.md
+          - file: content/Module_4/en_qgis_map_design_2.md
+          - file: content/Module_4/en_qgis_understanding_print_layout.md
+          - file: content/Module_4/en_qgis_map_examples.md
+          - file: content/Module_4/en_qgis_module_4_exercises.md
+      - file: content/Module_5/en_module_5_overview.md
+        sections:
+          - file: content/Module_5/en_qgis_spatial_tools.md
+          - file: content/Module_5/en_qgis_overlay_operations.md
+          - file: content/Module_5/en_qgis_centroids.md
+          - file: content/Module_5/en_qgis_non_spatial_tools.md
+          - file: content/Module_5/en_qgis_module_5_exercises.md
+      - file: content/Module_6/en_module_6_overview.md
+        sections:
+          - file: content/Module_6/en_qgis_data_analysis_theory.md
+          - file: content/Module_6/en_qgis_common_data_analysis.md
+          - file: content/Module_6/en_qgis_module_6_exercises.md 
+      - file: content/Module_7/en_module_7_overview.md
+        sections: 
+          - file: content/Module_7/en_qgis_automation_theory.md
+          - file: content/Module_7/en_qgis_module_7_exercises.md
+      - file: content/Module_8/en_module_8_overview.md
+        sections: 
+          - file: content/Module_8/en_qgis_remote_sensing_raster_theory.md
+          - file: content/Module_8/en_qgis_raster_operations.md
+          - file: content/Module_8/en_qgis_remote_sensing_theory.md  
+          - file: content/Module_8/en_qgis_module_8_ex1.md
+      - file: content/Module_9/en_module_9_overview.md
+        sections:
+          - file: content/Module_9/en_qgis_network_analysis_theory.md
+          - file: content/Module_9/en_qgis_openrouteservice_tools.md
+          - file: content/Module_9/en_qgis_centrality.md
+          - file: content/Module_9/en_qgis_module_9_exercises.md
+  - caption: Exercises
+    chapters: 
+      - file: content/Exercise_tracks/en_exercise_tracks_overview.md
+        sections:
+          - file: content/Exercise_tracks/en_larkana_flood_response.md
+          - file: content/Exercise_tracks/en_mdg_aa_cyclones.md
+          - file: content/Exercise_tracks/fr_mdg_aa_cyclones.md
+  - caption: Wiki
+    chapters:
+      - file: content/Wiki/en_wiki_homepage.md
+      - file: content/Wiki/en_qgis_qgis_basics_wiki.md
+        sections:
+          - file: content/Wiki/en_qgis_installation_wiki.md
+          - file: content/Wiki/en_qgis_interface_wiki.md
+          - file: content/Wiki/en_qgis_projects_folder_structure_wiki.md
+          - file: content/Wiki/en_qgis_projections_wiki.md
+          - file: content/Wiki/en_qgis_basemaps_wiki.md
+          - file: content/Wiki/en_qgis_plugins_wiki.md
+          - file: content/Wiki/en_qgis_data_sources_wiki.md
+          - file: content/Wiki/en_licensing_data.md
+      - file: content/Wiki/en_qgis_geodata_wiki.md
+        sections:
+          - file: content/Wiki/en_qgis_geodata_types_wiki.md      
+          - file: content/Wiki/en_qgis_import_geodata_wiki.md
+          - file: content/Wiki/en_qgis_OpenStreetMap_wiki.md
+          - file: content/Wiki/en_qgis_layer_concept_wiki.md
+          - file: content/Wiki/en_qgis_attribute_table_wiki.md
+          - file: content/Wiki/en_qgis_digitisation_wiki.md   
+      - file: content/Wiki/en_qgis_data_classification_wiki.md
+        sections:
+          - file: content/Wiki/en_qgis_single_symbol_wiki.md
+          - file: content/Wiki/en_qgis_categorised_wiki.md
+          - file: content/Wiki/en_qgis_graduated_wiki.md
+      - file: content/Wiki/en_qgis_geoprocessing_wiki.md
+      - file: content/Wiki/en_qgis_queries_wiki.md
+        sections:
+          - file: content/Wiki/en_qgis_spatial_queries_wiki.md
+          - file: content/Wiki/en_qgis_non_spatial_queries_wiki.md
+      - file: content/Wiki/en_qgis_table_functions_wiki.md
+      - file: content/Wiki/en_qgis_joins_wiki.md
+        sections:
+          - file: content/Wiki/en_qgis_spatial_joins_wiki.md
+          - file: content/Wiki/en_qgis_non_spatial_joins_wiki.md      
+      - file: content/Wiki/en_qgis_raster_wiki.md
+        sections:
+          - file: content/Wiki/en_qgis_raster_basic_wiki.md
+      - file: content/Wiki/en_qgis_automation_wiki.md
+      - file: content/Wiki/en_qgis_representation_wiki.md
+        sections:
+          - file: content/Wiki/en_qgis_visualisation_wiki.md
+          - file: content/Wiki/en_qgis_map_making_wiki.md
+      - file: content/Wiki/en_qgis_common_errors_and_Issues.md   
+      - file: content/Wiki/en_web_and_mobile_apps_wiki.md
+      - file: content/Wiki/en_geodata_management_sharepoint.md
+  - caption: GIS in Anticipatory Action
+    chapters:
+      - file: content/GIS_AA/en_qgis_cyclone_trigger_madagascar.md
+        sections:
+          - file: content/GIS_AA/fr_qgis_cyclone_trigger_madagascar.md
+      - file: content/GIS_AA/en_qgis_drought_trigger_somalia.md
+        sections:
+          - file: content/GIS_AA/en_qgis_srcs_basic_ex.md
+      - file: content/GIS_AA/en_AILAS_madagascar.md
+        sections:
+          - file: content/GIS_AA/en_AILAS_madagascar_camera_usage_guide.md
+          - file: content/GIS_AA/en_AILAS_madagascar_picture_upload_and_management.md
+      - file: content/GIS_AA/fr_AILAS_madagascar.md
+        sections:
+          - file: content/GIS_AA/fr_AILAS_madagascar_camera_usage_guide.md
+          - file: content/GIS_AA/fr_AILAS_madagascar_picture_upload_and_management.md
+      - file: content/GIS_AA/en_qgis_risk_assessment_plugin.md
+        sections:
+          - file: content/GIS_AA/en_qgis_generate_indicators_for_plugin.md
+          - file: content/GIS_AA/en_gaia_indicators_processing.md
+      - file: content/GIS_AA/en_qgis_historical_impact_assessment_sudan.md
+        sections:
+          - file: content/GIS_AA/en_qgis_historical_impact_assessment_sudan_ex1.md
+      - file: content/GIS_AA/en_qgis_GIS_AA_exercises.md
+  - caption: Mobile Data Collection
+    chapters:
+      - file: content/Mobile_Data_collection/en_SMT.md
+      - file: content/Mobile_Data_collection/en_SMT_training.md
+        sections:
+          - file: content/Mobile_Data_collection/en_SMT_ex1_.md
+          - file: content/Mobile_Data_collection/en_SMT_ex2_.md
+          - file: content/Mobile_Data_collection/en_SMT_ex3_.md
+          - file: content/Mobile_Data_collection/en_SMT_ex4_.md
+          - file: content/Mobile_Data_collection/en_SMT_ex5_.md
+  - caption: Trainers corner
+    chapters:
+      - file: content/Trainers_corner/en_TOT_intro.md  
+      - file: content/Trainers_corner/en_how_to_training.md
+      - file: content/Trainers_corner/en_training_graphical_outline.md
+      - file: content/Trainers_corner/en_training_day_structure.md  
+      - file: content/Trainers_corner/en_how_to_teach_GIS.md
+      - file: content/Trainers_corner/en_how_to_assessment.md   
+  - caption: Rincón de los Capacitadores
+    chapters: 
+      - file: content/Trainers_corner/es_TOT_intro.md  
+      - file: content/Trainers_corner/es_how_to_training.md
+      - file: content/Trainers_corner/es_training_graphical_outline.md
+      - file: content/Trainers_corner/es_training_day_structure.md  
+      - file: content/Trainers_corner/es_how_to_teach_GIS.md
+      - file: content/Trainers_corner/es_how_to_assessment.md 
+  - caption: About
+    chapters:
+      - file: content/About/about_1.md
+      - file: content/contribution_plan.md
+      - file: content/Glossary/en_glossary_1.md
