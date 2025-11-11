@@ -33,7 +33,7 @@ jobs:
     - name: Build the book
       working-directory: ${{ github.workspace }}  # this should point to /home/runner/work/gis-training-resource-center
       run: |
-        jupyter-book build content/intro.md
+        jupyter-book build --pdf
 
     # Push the book's HTML to github-pages
     - name: GitHub Pages action
