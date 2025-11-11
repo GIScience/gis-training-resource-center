@@ -31,6 +31,7 @@ jobs:
 
     # Build the book
     - name: Build the book
+      working-directory: ${{ github.workspace }}  # this should point to /home/runner/work/gis-training-resource-center
       run: |
         jupyter-book build .
 
