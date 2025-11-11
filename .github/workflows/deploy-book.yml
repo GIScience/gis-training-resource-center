@@ -27,7 +27,12 @@ jobs:
         
     - name: Install dependencies
       run: |
-        pip install -r requirements.txt
+       pip install jupyter-book==0.13.1 \
+                myst-nb==1.2.0 \
+                sphinx-book-theme==1.1.4 \
+                jupyter-cache==1.0.1 \
+                nbclient==0.10.2 \
+                custom-launch-buttons
 
     # Build the book
     - name: Build the book
