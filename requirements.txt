@@ -1,5 +1,5 @@
 jupyter-book
-sphinx
 matplotlib
 numpy
 ghp-import
+custom-launch-buttons

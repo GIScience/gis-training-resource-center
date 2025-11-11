@@ -24,6 +24,7 @@ bibtex_bibfiles:
 # Information about where the book exists on the web
 repository:
   url: https://github.com/GIScience/gis-training-resource-center  # Online location of your book
+  path_to_book: docs
   branch: main  # Which branch of the repository should be used when creating links (optional)
 
 # Add GitHub buttons to your book
@@ -40,3 +41,6 @@ html:
   announcement: "Looking to contribute? Take a look at the contribution guidelines and contact us!"
 exclude_patterns: [.venv/*, venv/*]
 
+sphinx:
+  extra_extensions:
+    - custom-launch-buttons
