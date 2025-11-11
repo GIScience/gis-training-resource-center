@@ -27,12 +27,7 @@ jobs:
         
     - name: Install dependencies
       run: |
-       pip install jupyter-book
-                  myst-nb
-                  sphinx-book-theme
-                  jupyter-cache
-                  nbclient
-                  custom-launch-buttons
+       pip install jupyter-book myst-nb sphinx-book-theme jupyter-cache nbclient custom-launch-buttons
 
     # Build the book
     - name: Build the book
